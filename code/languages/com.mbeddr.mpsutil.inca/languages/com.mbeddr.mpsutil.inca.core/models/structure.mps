@@ -144,18 +144,14 @@
       <property role="IQ2ns" value="4530729936991344607" />
       <ref role="20lvS9" node="3VwoHXNAdvu" resolve="IPatternModuleContent" />
     </node>
-    <node concept="1TJgyj" id="72CZAphwyW3" role="1TKVEi">
-      <property role="IQ2ns" value="8118018043742924547" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="imports" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="SSjGGIi3iQ" resolve="IPatternModuleImport" />
-    </node>
     <node concept="PrWs8" id="3VwoHXNAdvx" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="gySDPO2jWz" role="PrDN$">
       <ref role="PrY4T" node="1YBYCQ13COO" resolve="IGenNameProvider" />
+    </node>
+    <node concept="PrWs8" id="Y78e7A6TYz" role="PrDN$">
+      <ref role="PrY4T" node="Y78e7A6TUt" resolve="IIncaModule" />
     </node>
   </node>
   <node concept="PlHQZ" id="1YBYCQ13COO">
@@ -507,7 +503,7 @@
       <property role="20kJfa" value="aggregator" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="996292992024566984" />
-      <ref role="20lvS9" node="RjyNapPtNq" resolve="Aggregator" />
+      <ref role="20lvS9" node="RjyNapPtNq" resolve="AbstractAggregator" />
     </node>
     <node concept="1TJgyj" id="RjyNapPtNr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -519,7 +515,7 @@
   </node>
   <node concept="1TIwiD" id="RjyNapPtNq">
     <property role="3GE5qa" value="values" />
-    <property role="TrG5h" value="Aggregator" />
+    <property role="TrG5h" value="AbstractAggregator" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="996292992024567002" />
@@ -555,7 +551,7 @@
     <property role="34LRSv" value="count" />
     <property role="EcuMT" value="996292992024567022" />
     <property role="R4oN_" value="count aggregator" />
-    <ref role="1TJDcQ" node="RjyNapPtNq" resolve="Aggregator" />
+    <ref role="1TJDcQ" node="RjyNapPtNq" resolve="AbstractAggregator" />
   </node>
   <node concept="1TIwiD" id="4QgsNmKMGGS">
     <property role="3GE5qa" value="values" />
@@ -971,24 +967,24 @@
   </node>
   <node concept="1TIwiD" id="SSjGGIi3iP">
     <property role="EcuMT" value="1024655549788599477" />
-    <property role="TrG5h" value="AbstractPatternModuleImport" />
-    <property role="34LRSv" value="&lt;{patternModule}&gt;" />
+    <property role="TrG5h" value="AbstractIncaModuleImport" />
+    <property role="34LRSv" value="&lt;{module}&gt;" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="SSjGGIi3iU" role="PzmwI">
-      <ref role="PrY4T" node="SSjGGIi3iQ" resolve="IPatternModuleImport" />
+      <ref role="PrY4T" node="SSjGGIi3iQ" resolve="IIncaModuleImport" />
     </node>
   </node>
   <node concept="PlHQZ" id="SSjGGIi3iQ">
     <property role="EcuMT" value="1024655549788599478" />
-    <property role="TrG5h" value="IPatternModuleImport" />
+    <property role="TrG5h" value="IIncaModuleImport" />
     <node concept="1TJgyj" id="SSjGGIi3iR" role="1TKVEi">
       <property role="IQ2ns" value="1024655549788599479" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="patternModule" />
+      <property role="20kJfa" value="module" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3VwoHXNAdmj" resolve="IPatternModule" />
+      <ref role="20lvS9" node="Y78e7A6TUt" resolve="IIncaModule" />
     </node>
   </node>
   <node concept="PlHQZ" id="SSjGGIHU5T">
@@ -1043,6 +1039,52 @@
     <property role="EcuMT" value="3410902671524324838" />
     <property role="3GE5qa" value="misc" />
     <property role="TrG5h" value="IExpressionContext" />
+  </node>
+  <node concept="PlHQZ" id="Y78e7A6TUt">
+    <property role="EcuMT" value="1118899187025157789" />
+    <property role="TrG5h" value="IIncaModule" />
+    <node concept="1TJgyj" id="72CZAphwyW3" role="1TKVEi">
+      <property role="IQ2ns" value="8118018043742924547" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="imports" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="SSjGGIi3iQ" resolve="IIncaModuleImport" />
+    </node>
+    <node concept="PrWs8" id="Y78e7A72YT" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3xDKE$EH6bv">
+    <property role="EcuMT" value="4064994170500309727" />
+    <property role="3GE5qa" value="values" />
+    <property role="TrG5h" value="MinAggregator" />
+    <property role="34LRSv" value="min" />
+    <property role="R4oN_" value="min aggregator" />
+    <ref role="1TJDcQ" node="RjyNapPtNq" resolve="AbstractAggregator" />
+  </node>
+  <node concept="1TIwiD" id="3xDKE$EH6bx">
+    <property role="EcuMT" value="4064994170500309729" />
+    <property role="3GE5qa" value="values" />
+    <property role="TrG5h" value="MaxAggregator" />
+    <property role="34LRSv" value="max" />
+    <property role="R4oN_" value="max aggregator" />
+    <ref role="1TJDcQ" node="RjyNapPtNq" resolve="AbstractAggregator" />
+  </node>
+  <node concept="1TIwiD" id="3xDKE$EJs8u">
+    <property role="EcuMT" value="4064994170500923934" />
+    <property role="3GE5qa" value="values" />
+    <property role="TrG5h" value="AggregatedValueMarker" />
+    <property role="34LRSv" value="#" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="3xDKE$EJsfv" role="lGtFl">
+      <property role="Hh88m" value="marked" />
+      <node concept="trNpa" id="3xDKE$EJsf_" role="EQaZv">
+        <ref role="trN6q" node="1i65yRAWiCQ" resolve="IValue" />
+      </node>
+      <node concept="tn0Fv" id="3xDKE$EJsfx" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+    </node>
   </node>
 </model>
 

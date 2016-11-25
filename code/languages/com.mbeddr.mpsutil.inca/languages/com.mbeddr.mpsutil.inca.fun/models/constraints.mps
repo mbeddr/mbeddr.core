@@ -279,44 +279,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="5luHlsCrxwH">
-    <property role="3GE5qa" value="misc" />
-    <ref role="1M2myG" to="ebqt:5xy6TexCYF1" resolve="PatternFunctionModule" />
-    <node concept="osYL8" id="5luHlsCr$Ym" role="1MLXOK">
-      <node concept="3clFbS" id="5luHlsCr$Yn" role="2VODD2">
-        <node concept="3cpWs6" id="5luHlsCrwnh" role="3cqZAp">
-          <node concept="22lmx$" id="SSjGGIxgIy" role="3cqZAk">
-            <node concept="2OqwBi" id="SSjGGIxha6" role="3uHU7w">
-              <node concept="otxO1" id="SSjGGIxgUW" role="2Oq$k0" />
-              <node concept="3O6GUB" id="SSjGGIxhxw" role="2OqNvi">
-                <node concept="chp4Y" id="SSjGGIxips" role="3QVz_e">
-                  <ref role="cht4Q" to="ebqt:SSjGGIxddQ" resolve="PatternFunctionModuleImport" />
-                </node>
-              </node>
-            </node>
-            <node concept="22lmx$" id="SSjGGIudb_" role="3uHU7B">
-              <node concept="2OqwBi" id="5luHlsCrww6" role="3uHU7B">
-                <node concept="otxO1" id="5luHlsCrIKJ" role="2Oq$k0" />
-                <node concept="2Zo12i" id="5luHlsCrJku" role="2OqNvi">
-                  <node concept="chp4Y" id="SSjGGIxiev" role="2Zo12j">
-                    <ref role="cht4Q" to="ebqt:5luHlsCrxe_" resolve="IPatternFunctionModuleContent" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="SSjGGIudFf" role="3uHU7w">
-                <node concept="otxO1" id="SSjGGIudmv" role="2Oq$k0" />
-                <node concept="3O6GUB" id="SSjGGIxfS1" role="2OqNvi">
-                  <node concept="chp4Y" id="SSjGGIxgiW" role="3QVz_e">
-                    <ref role="cht4Q" to="hqsm:SSjGGIi3iQ" resolve="IPatternModuleImport" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="312cEu" id="Tz5AFeKd_I">
     <property role="3GE5qa" value="constraints" />
     <property role="TrG5h" value="ConceptHelper" />
@@ -485,7 +447,7 @@
   <node concept="1M2fIO" id="SSjGGIxde6">
     <ref role="1M2myG" to="ebqt:SSjGGIxddQ" resolve="PatternFunctionModuleImport" />
     <node concept="1N5Pfh" id="SSjGGIi3iY" role="1Mr941">
-      <ref role="1N5Vy1" to="hqsm:SSjGGIi3iR" resolve="patternModule" />
+      <ref role="1N5Vy1" to="hqsm:SSjGGIi3iR" resolve="module" />
       <node concept="1MUpDS" id="SSjGGIi3j4" role="1N6uqs">
         <node concept="3clFbS" id="SSjGGIi3j6" role="2VODD2">
           <node concept="3cpWs6" id="SSjGGIi3jT" role="3cqZAp">
@@ -508,6 +470,57 @@
               <node concept="Bn53e" id="SSjGGIi9Dy" role="2Oq$k0" />
               <node concept="3TrcHB" id="SSjGGIia8D" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5luHlsCrxwH">
+    <property role="3GE5qa" value="misc" />
+    <ref role="1M2myG" to="ebqt:5xy6TexCYF1" resolve="PatternFunctionModule" />
+    <node concept="osYL8" id="5luHlsCr$Ym" role="1MLXOK">
+      <node concept="3clFbS" id="5luHlsCr$Yn" role="2VODD2">
+        <node concept="3cpWs6" id="5luHlsCrwnh" role="3cqZAp">
+          <node concept="22lmx$" id="SSjGGIudb_" role="3cqZAk">
+            <node concept="2OqwBi" id="5luHlsCrww6" role="3uHU7B">
+              <node concept="otxO1" id="5luHlsCrIKJ" role="2Oq$k0" />
+              <node concept="2Zo12i" id="5luHlsCrJku" role="2OqNvi">
+                <node concept="chp4Y" id="SSjGGIxiev" role="2Zo12j">
+                  <ref role="cht4Q" to="ebqt:5luHlsCrxe_" resolve="IPatternFunctionModuleContent" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="SSjGGIudFf" role="3uHU7w">
+              <node concept="otxO1" id="SSjGGIudmv" role="2Oq$k0" />
+              <node concept="2Zo12i" id="37SozOpTaN_" role="2OqNvi">
+                <node concept="chp4Y" id="37SozOpTaXF" role="2Zo12j">
+                  <ref role="cht4Q" to="hqsm:SSjGGIi3iQ" resolve="IIncaModuleImport" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2E6bj9tK34n">
+    <property role="3GE5qa" value="expression" />
+    <ref role="1M2myG" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
+    <node concept="nKS2y" id="2E6bj9tK34y" role="1MLUbF">
+      <node concept="3clFbS" id="2E6bj9tK34z" role="2VODD2">
+        <node concept="3cpWs6" id="2E6bj9tK3rS" role="3cqZAp">
+          <node concept="3y3z36" id="2E6bj9tK4pu" role="3cqZAk">
+            <node concept="10Nm6u" id="2E6bj9tK4pK" role="3uHU7w" />
+            <node concept="2OqwBi" id="2E6bj9tK3Fi" role="3uHU7B">
+              <node concept="nLn13" id="2E6bj9tK3sg" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="2E6bj9tK3VE" role="2OqNvi">
+                <node concept="1xMEDy" id="2E6bj9tK3VG" role="1xVPHs">
+                  <node concept="chp4Y" id="2E6bj9tK43v" role="ri$Ld">
+                    <ref role="cht4Q" to="ebqt:1ERTnBTfavv" resolve="PatternFunction" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

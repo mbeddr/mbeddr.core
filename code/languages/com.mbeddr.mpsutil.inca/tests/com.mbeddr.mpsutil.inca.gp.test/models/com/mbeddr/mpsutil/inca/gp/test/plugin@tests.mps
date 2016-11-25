@@ -192,7 +192,7 @@
       <concept id="996292992024530426" name="com.mbeddr.mpsutil.inca.core.structure.CheckConstraint" flags="ng" index="2k1Gr8">
         <child id="996292992025680416" name="expression" index="2kdl4i" />
       </concept>
-      <concept id="996292992025672789" name="com.mbeddr.mpsutil.inca.core.structure.ConceptReference" flags="ng" index="2kdjtB">
+      <concept id="996292992025672789" name="com.mbeddr.mpsutil.inca.core.structure.ConceptReferenceType" flags="ng" index="2kdjtB">
         <reference id="7241148409041409499" name="concept" index="2UGuZ7" />
       </concept>
       <concept id="2281067221947980594" name="com.mbeddr.mpsutil.inca.core.structure.VariableReference" flags="ng" index="2vme6Z">
@@ -249,6 +249,7 @@
       </concept>
       <concept id="1925259677761400360" name="com.mbeddr.mpsutil.inca.core.structure.IPathElement" flags="ng" index="3zVwHh">
         <reference id="1925259677761400369" name="interfacePart" index="3zVwH8" />
+        <child id="1925259677761400367" name="next" index="3zVwHm" />
       </concept>
       <concept id="5589093812003084634" name="com.mbeddr.mpsutil.inca.core.structure.ConceptConstraint" flags="ng" index="3XlQDJ">
         <reference id="5589093812003084769" name="type" index="3XlQFk" />
@@ -895,27 +896,18 @@
           </node>
           <node concept="727y6" id="3p0ky8L$VLg" role="3zVzRQ">
             <ref role="3zVwH8" to="tpee:fzclF7Z" resolve="body" />
+            <node concept="727y6" id="771X_ErHX3n" role="3zVwHm">
+              <ref role="3zVwH8" to="tpee:fzcqZ_x" resolve="statement" />
+            </node>
           </node>
           <node concept="2LEkIw" id="3p0ky8L$VY0" role="2kdhYP">
-            <property role="TrG5h" value="list" />
-          </node>
-        </node>
-        <node concept="2kdhWc" id="3p0ky8LCIag" role="1dgzf0">
-          <ref role="2kdhXl" to="tpee:fzclF80" resolve="StatementList" />
-          <node concept="2vme6Z" id="3p0ky8LCIOW" role="2kdhYM">
-            <ref role="XkjO9" node="3p0ky8L$VY0" resolve="list" />
-          </node>
-          <node concept="727y6" id="3p0ky8LCIoH" role="3zVzRQ">
-            <ref role="3zVwH8" to="tpee:fzcqZ_x" resolve="statement" />
-          </node>
-          <node concept="2LEkIw" id="3p0ky8LCJ3g" role="2kdhYP">
             <property role="TrG5h" value="statement" />
           </node>
         </node>
         <node concept="2kdhWc" id="3p0ky8L$WQq" role="1dgzf0">
           <ref role="2kdhXl" to="tpee:fzclF8j" resolve="ExpressionStatement" />
           <node concept="2vme6Z" id="3p0ky8LCK9v" role="2kdhYM">
-            <ref role="XkjO9" node="3p0ky8LCJ3g" resolve="statement" />
+            <ref role="XkjO9" node="3p0ky8L$VY0" resolve="statement" />
           </node>
           <node concept="727y6" id="3p0ky8L$WWQ" role="3zVzRQ">
             <ref role="3zVwH8" to="tpee:fzclF8k" resolve="expression" />

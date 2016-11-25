@@ -6,7 +6,6 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
   </languages>
   <imports>
@@ -23,7 +22,6 @@
     <import index="h57a" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.api(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="6a0m" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.matchers.psystem(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
-    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -2498,7 +2496,7 @@
               <ref role="3cqZAo" node="23tFywwenVW" resolve="ancestorPatternModule" />
             </node>
             <node concept="2qgKlT" id="SSjGGIDnGb" role="2OqNvi">
-              <ref role="37wK5l" to="gcg1:SSjGGIujxn" resolve="getImportedPatternModules" />
+              <ref role="37wK5l" to="gcg1:SSjGGIujxn" resolve="getImportedModules" />
             </node>
           </node>
           <node concept="3clFbS" id="SSjGGID9Yc" role="2LFqv$">
@@ -2512,8 +2510,11 @@
                     <node concept="X8dFx" id="SSjGGIDAfs" role="2OqNvi">
                       <node concept="2OqwBi" id="SSjGGIDKDD" role="25WWJ7">
                         <node concept="2OqwBi" id="SSjGGIDHsp" role="2Oq$k0">
-                          <node concept="2GrUjf" id="SSjGGIDBhg" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="SSjGGID9Y8" resolve="_import" />
+                          <node concept="1PxgMI" id="Y78e7AcMwp" role="2Oq$k0">
+                            <ref role="1m5ApE" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
+                            <node concept="2GrUjf" id="SSjGGIDBhg" role="1m5AlR">
+                              <ref role="2Gs0qQ" node="SSjGGID9Y8" resolve="_import" />
+                            </node>
                           </node>
                           <node concept="2qgKlT" id="SSjGGIDJON" role="2OqNvi">
                             <ref role="37wK5l" to="gcg1:3VwoHXNBzsE" resolve="getPatterns" />
@@ -2546,12 +2547,24 @@
                   </node>
                 </node>
               </node>
-              <node concept="3y3z36" id="SSjGGIDv$S" role="3clFbw">
-                <node concept="37vLTw" id="SSjGGIDxlb" role="3uHU7w">
-                  <ref role="3cqZAo" node="23tFywwenVW" resolve="ancestorPatternModule" />
+              <node concept="1Wc70l" id="Y78e7AbgSa" role="3clFbw">
+                <node concept="2OqwBi" id="Y78e7AcIii" role="3uHU7w">
+                  <node concept="2GrUjf" id="Y78e7Ab_Iu" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="SSjGGID9Y8" resolve="_import" />
+                  </node>
+                  <node concept="1mIQ4w" id="Y78e7AcJN2" role="2OqNvi">
+                    <node concept="chp4Y" id="Y78e7AcKD4" role="cj9EA">
+                      <ref role="cht4Q" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="2GrUjf" id="SSjGGIDvrj" role="3uHU7B">
-                  <ref role="2Gs0qQ" node="SSjGGID9Y8" resolve="_import" />
+                <node concept="3y3z36" id="SSjGGIDv$S" role="3uHU7B">
+                  <node concept="2GrUjf" id="SSjGGIDvrj" role="3uHU7B">
+                    <ref role="2Gs0qQ" node="SSjGGID9Y8" resolve="_import" />
+                  </node>
+                  <node concept="37vLTw" id="SSjGGIDxlb" role="3uHU7w">
+                    <ref role="3cqZAo" node="23tFywwenVW" resolve="ancestorPatternModule" />
+                  </node>
                 </node>
               </node>
             </node>

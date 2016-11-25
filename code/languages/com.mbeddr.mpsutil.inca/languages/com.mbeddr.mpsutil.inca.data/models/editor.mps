@@ -424,15 +424,15 @@
             <ref role="1NtTu8" to="uu1k:2A0WHmBl9Mp" resolve="type" />
           </node>
         </node>
-        <node concept="_tjkj" id="7tOfV2_Ep0H" role="3EZMnx">
-          <node concept="3EZMnI" id="3VjX_P5Dfxt" role="_tjki">
-            <node concept="3F0ifn" id="3VjX_P5Dfy0" role="3EZMnx">
+        <node concept="_tjkj" id="3xDKE$EUVfK" role="3EZMnx">
+          <node concept="3EZMnI" id="3xDKE$EUVfS" role="_tjki">
+            <node concept="l2Vlx" id="3xDKE$EUVfT" role="2iSdaV" />
+            <node concept="3F0ifn" id="3xDKE$EUVfY" role="3EZMnx">
               <property role="3F0ifm" value="with" />
-              <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+              <ref role="1k5W1q" to="3sc9:2CEi94dgHKA" resolve="KeyWord" />
             </node>
-            <node concept="l2Vlx" id="3VjX_P5Dfxu" role="2iSdaV" />
-            <node concept="3F1sOY" id="7tOfV2_Ep13" role="3EZMnx">
-              <ref role="1NtTu8" to="uu1k:7tOfV2_EoY_" resolve="operation" />
+            <node concept="3F1sOY" id="3xDKE$EUVg4" role="3EZMnx">
+              <ref role="1NtTu8" to="uu1k:3xDKE$EUVfy" resolve="operation" />
             </node>
           </node>
         </node>
@@ -920,6 +920,7 @@
           <node concept="l2Vlx" id="6fy2FM6llnw" role="2iSdaV" />
           <node concept="3F0ifn" id="3l0M8IaBIaA" role="3EZMnx">
             <property role="3F0ifm" value="(" />
+            <ref role="1k5W1q" to="3sc9:2CEi94dh36z" resolve="Parenthesis" />
             <node concept="11L4FC" id="3l0M8IaBIfP" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -944,6 +945,7 @@
           </node>
           <node concept="3F0ifn" id="3l0M8IaBIbp" role="3EZMnx">
             <property role="3F0ifm" value=")" />
+            <ref role="1k5W1q" to="3sc9:2CEi94dh36z" resolve="Parenthesis" />
             <node concept="11L4FC" id="3l0M8IaBIqN" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -1130,6 +1132,24 @@
       </node>
       <node concept="3F0ifn" id="2XlXuxNGEtv" role="3EZMnx">
         <property role="3F0ifm" value="}" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="606mdnYmDzz">
+    <property role="3GE5qa" value="definition" />
+    <ref role="1XX52x" to="uu1k:606mdnYmDzq" resolve="LatticeAggregator" />
+    <node concept="3EZMnI" id="606mdnYmDzC" role="2wV5jI">
+      <node concept="l2Vlx" id="606mdnYmDzD" role="2iSdaV" />
+      <node concept="3F0ifn" id="606mdnYmDz_" role="3EZMnx">
+        <property role="3F0ifm" value="lat" />
+        <ref role="1k5W1q" to="3sc9:2CEi94dgHKA" resolve="KeyWord" />
+      </node>
+      <node concept="3F0ifn" id="606mdnYmDzL" role="3EZMnx">
+        <property role="3F0ifm" value="with" />
+        <ref role="1k5W1q" to="3sc9:2CEi94dgHKA" resolve="KeyWord" />
+      </node>
+      <node concept="3F1sOY" id="606mdnYnc6a" role="3EZMnx">
+        <ref role="1NtTu8" to="uu1k:606mdnYmDzT" resolve="operation" />
       </node>
     </node>
   </node>
