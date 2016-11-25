@@ -208,6 +208,9 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
@@ -216,9 +219,13 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -274,6 +281,7 @@
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="1YbPZF" id="1i65yRAR39q">
@@ -1564,6 +1572,43 @@
     <node concept="1YaCAy" id="7BgI1pOeKVH" role="1YuTPh">
       <property role="TrG5h" value="statement" />
       <ref role="1YaFvo" to="ebqt:52HBLukNlug" resolve="AssertStatement" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="771X_ErHsdQ">
+    <property role="TrG5h" value="check_PathExpression" />
+    <property role="3GE5qa" value="expression" />
+    <node concept="3clFbS" id="771X_ErHsdR" role="18ibNy">
+      <node concept="3clFbJ" id="771X_ErHs_M" role="3cqZAp">
+        <node concept="2OqwBi" id="771X_ErHAaT" role="3clFbw">
+          <node concept="2OqwBi" id="771X_ErHsQz" role="2Oq$k0">
+            <node concept="1YBJjd" id="771X_ErHs_Y" role="2Oq$k0">
+              <ref role="1YBMHb" node="771X_ErHsdT" resolve="pathExpression" />
+            </node>
+            <node concept="2Rf3mk" id="771X_ErHtsy" role="2OqNvi">
+              <node concept="1xMEDy" id="771X_ErHts$" role="1xVPHs">
+                <node concept="chp4Y" id="771X_ErHtED" role="ri$Ld">
+                  <ref role="cht4Q" to="ebqt:RjyNapTDgY" resolve="PathExpression" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3GX2aA" id="771X_ErHG0P" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="771X_ErHs_O" role="3clFbx">
+          <node concept="2MkqsV" id="771X_ErHG1O" role="3cqZAp">
+            <node concept="Xl_RD" id="771X_ErHG20" role="2MkJ7o">
+              <property role="Xl_RC" value="path inside path" />
+            </node>
+            <node concept="1YBJjd" id="771X_ErHG2p" role="2OEOjV">
+              <ref role="1YBMHb" node="771X_ErHsdT" resolve="pathExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="771X_ErHsdT" role="1YuTPh">
+      <property role="TrG5h" value="pathExpression" />
+      <ref role="1YaFvo" to="ebqt:RjyNapTDgY" resolve="PathExpression" />
     </node>
   </node>
 </model>

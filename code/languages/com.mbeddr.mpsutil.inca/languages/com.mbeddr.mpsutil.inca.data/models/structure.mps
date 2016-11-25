@@ -110,6 +110,12 @@
     <node concept="PrWs8" id="78LWM4Vhgvx" role="PrDN$">
       <ref role="PrY4T" node="3l0M8IajNMF" resolve="ITypeConstructor" />
     </node>
+    <node concept="PrWs8" id="Y78e7A6TYp" role="PrDN$">
+      <ref role="PrY4T" to="hqsm:Y78e7A6TUt" resolve="IIncaModule" />
+    </node>
+    <node concept="PrWs8" id="7ike8KAOvgm" role="PrDN$">
+      <ref role="PrY4T" to="hqsm:1YBYCQ13COO" resolve="IGenNameProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7tOfV2_AEhe">
     <property role="EcuMT" value="8607574815737029710" />
@@ -121,18 +127,18 @@
     <property role="3GE5qa" value="definition" />
     <property role="TrG5h" value="TypeConstructorTypeWrapper" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7tOfV2_EoY_" role="1TKVEi">
-      <property role="IQ2ns" value="8607574815738007461" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="operation" />
-      <ref role="20lvS9" node="7tOfV2_AEhe" resolve="ILatticeElementCombinator" />
-    </node>
     <node concept="1TJgyj" id="2A0WHmBl9Mp" role="1TKVEi">
       <property role="IQ2ns" value="2990657152023305369" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3l0M8IaAFFW" resolve="ITypeConstructorType" />
+    </node>
+    <node concept="1TJgyj" id="3xDKE$EUVfy" role="1TKVEi">
+      <property role="IQ2ns" value="4064994170503934946" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operation" />
+      <ref role="20lvS9" node="7tOfV2_AEhe" resolve="ILatticeElementCombinator" />
     </node>
     <node concept="PrWs8" id="2A0WHmBhrxw" role="PzmwI">
       <ref role="PrY4T" to="hqsm:6VTlRjrCuQt" resolve="IVariableType" />
@@ -172,7 +178,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="patterns" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6fy2FM6rcqL" resolve="IPattern" />
+      <ref role="20lvS9" node="6fy2FM6rcqL" resolve="IMatchPattern" />
     </node>
     <node concept="1TJgyj" id="4K3_GpAs2$_" role="1TKVEi">
       <property role="IQ2ns" value="5477387350678972709" />
@@ -187,7 +193,7 @@
   </node>
   <node concept="PlHQZ" id="6fy2FM6rcqL">
     <property role="EcuMT" value="7197326959316879025" />
-    <property role="TrG5h" value="IPattern" />
+    <property role="TrG5h" value="IMatchPattern" />
     <property role="3GE5qa" value="pattern" />
     <node concept="1TJgyj" id="6fy2FM6rkmw" role="1TKVEi">
       <property role="IQ2ns" value="7197326959316911520" />
@@ -270,7 +276,7 @@
     <property role="3GE5qa" value="pattern" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6fy2FM6tE6s" role="PzmwI">
-      <ref role="PrY4T" node="6fy2FM6rcqL" resolve="IPattern" />
+      <ref role="PrY4T" node="6fy2FM6rcqL" resolve="IMatchPattern" />
     </node>
   </node>
   <node concept="1TIwiD" id="5SkQds3jfvV">
@@ -303,7 +309,7 @@
     <property role="3GE5qa" value="pattern" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6fy2FM6sD97" role="PzmwI">
-      <ref role="PrY4T" node="6fy2FM6rcqL" resolve="IPattern" />
+      <ref role="PrY4T" node="6fy2FM6rcqL" resolve="IMatchPattern" />
     </node>
   </node>
   <node concept="1TIwiD" id="3l0M8IaBI9$">
@@ -557,6 +563,35 @@
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="37SozOpSTlY">
+    <property role="EcuMT" value="3600735916649583998" />
+    <property role="3GE5qa" value="definition" />
+    <property role="TrG5h" value="LatticeDefinitionModuleImport" />
+    <property role="34LRSv" value="&lt;{module}&gt;" />
+    <ref role="1TJDcQ" to="hqsm:SSjGGIi3iP" resolve="AbstractIncaModuleImport" />
+  </node>
+  <node concept="1TIwiD" id="7ike8KAHT9k">
+    <property role="EcuMT" value="8400401379548959316" />
+    <property role="3GE5qa" value="definition" />
+    <property role="TrG5h" value="LatticeOperationCall" />
+    <property role="34LRSv" value="&lt;{method}&gt;" />
+    <ref role="1TJDcQ" to="tpee:6LFqxSRBTg4" resolve="LocalMethodCall" />
+  </node>
+  <node concept="1TIwiD" id="606mdnYmDzq">
+    <property role="EcuMT" value="6919315553619974362" />
+    <property role="3GE5qa" value="definition" />
+    <property role="TrG5h" value="LatticeAggregator" />
+    <property role="34LRSv" value="lat" />
+    <property role="R4oN_" value="lattice aggregator" />
+    <ref role="1TJDcQ" to="hqsm:RjyNapPtNq" resolve="AbstractAggregator" />
+    <node concept="1TJgyj" id="606mdnYmDzT" role="1TKVEi">
+      <property role="IQ2ns" value="6919315553619974393" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operation" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7tOfV2_AEhe" resolve="ILatticeElementCombinator" />
     </node>
   </node>
 </model>

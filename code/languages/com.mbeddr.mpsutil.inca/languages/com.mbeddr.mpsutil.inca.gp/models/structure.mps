@@ -313,8 +313,8 @@
   <node concept="1TIwiD" id="SSjGGIxddQ">
     <property role="EcuMT" value="1024655549792572278" />
     <property role="TrG5h" value="GraphPatternModuleImport" />
-    <property role="34LRSv" value="&lt;{patternModule}&gt;" />
-    <ref role="1TJDcQ" to="hqsm:SSjGGIi3iP" resolve="AbstractPatternModuleImport" />
+    <property role="34LRSv" value="&lt;{module}&gt;" />
+    <ref role="1TJDcQ" to="hqsm:SSjGGIi3iP" resolve="AbstractIncaModuleImport" />
   </node>
   <node concept="1TIwiD" id="7A0HCuGr2fn">
     <property role="EcuMT" value="8755198369437852631" />
