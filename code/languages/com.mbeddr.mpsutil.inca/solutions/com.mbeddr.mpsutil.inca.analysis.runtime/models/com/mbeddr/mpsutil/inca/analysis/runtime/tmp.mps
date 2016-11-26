@@ -4,9 +4,12 @@
   <languages>
     <use id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="com.mbeddr.mpsutil.inca.core" version="0" />
     <use id="cd2909da-ecb4-49dc-b176-33e5c619e516" name="com.mbeddr.mpsutil.inca.gp" version="0" />
+    <use id="8c9a2720-9d21-4370-a226-819eb3e76e1e" name="com.mbeddr.mpsutil.inca.fun" version="0" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="hqsm" ref="r:aa4c3470-43ab-4dad-b73e-20da0ee43be1(com.mbeddr.mpsutil.inca.core.structure)" />
   </imports>
   <registry>
     <language id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="com.mbeddr.mpsutil.inca.core">
@@ -34,7 +37,6 @@
       <concept id="1925259677759481823" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPattern" flags="ng" index="3zyOaA" />
       <concept id="1925259677761386650" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPatternBody" flags="ng" index="3zV_Rz" />
       <concept id="5458164179963307828" name="com.mbeddr.mpsutil.inca.gp.structure.GraphPatternParameter" flags="ng" index="1VLyLj" />
-      <concept id="6151553526979403289" name="com.mbeddr.mpsutil.inca.gp.structure.EmptyGraphPatternContent" flags="ng" index="1XdyHe" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -43,7 +45,7 @@
     </language>
   </registry>
   <node concept="3zyO9k" id="57LMU4Vj0Cw">
-    <property role="TrG5h" value="Instance1" />
+    <property role="TrG5h" value="TestInstance" />
     <node concept="3zyOaA" id="57LMU4Vj0Dj" role="1dubk0">
       <property role="TrG5h" value="test" />
       <node concept="3zV_Rz" id="57LMU4Vj0Dk" role="3zVECR">
@@ -78,7 +80,6 @@
         <property role="TrG5h" value="p" />
       </node>
     </node>
-    <node concept="1XdyHe" id="4RwsLJrVZuU" role="1dubk0" />
   </node>
 </model>
 

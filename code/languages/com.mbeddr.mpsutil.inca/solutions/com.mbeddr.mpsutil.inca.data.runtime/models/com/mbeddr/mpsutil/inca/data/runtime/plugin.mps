@@ -1341,7 +1341,7 @@
       <node concept="3cqZAl" id="6UZv67BfIIB" role="3clF45" />
       <node concept="3clFbS" id="6UZv67BfIID" role="3clF47">
         <node concept="XkiVB" id="6UZv67BfIL3" role="3cqZAp">
-          <ref role="37wK5l" to="wyt6:~Exception.&lt;init&gt;(java.lang.String)" resolve="Exception" />
+          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
           <node concept="37vLTw" id="6UZv67BfIMt" role="37wK5m">
             <ref role="3cqZAo" node="6UZv67BfIJ5" resolve="message" />
           </node>
@@ -1358,7 +1358,7 @@
       <node concept="3cqZAl" id="6UZv67BfINI" role="3clF45" />
       <node concept="3clFbS" id="6UZv67BfINJ" role="3clF47">
         <node concept="XkiVB" id="6UZv67BfINK" role="3cqZAp">
-          <ref role="37wK5l" to="wyt6:~Exception.&lt;init&gt;(java.lang.String)" resolve="Exception" />
+          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
           <node concept="Xl_RD" id="6UZv67BfISC" role="37wK5m">
             <property role="Xl_RC" value="Inexhaustive pattern matching construct!" />
           </node>
