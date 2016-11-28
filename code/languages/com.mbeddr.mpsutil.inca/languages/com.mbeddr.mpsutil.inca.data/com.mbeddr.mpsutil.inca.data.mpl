@@ -18,6 +18,12 @@
         <dependency reexport="false">985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)</dependency>
         <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">7766a138-716a-422a-9c88-131459fb8d6a(com.mbeddr.mpsutil.inca.core.runtime)</dependency>
+        <dependency reexport="false">44851301-9e9d-4b21-9608-3740a9f299a4(com.mbeddr.mpsutil.inca.gp#4530729936991344011)</dependency>
+        <dependency reexport="false">8f5e7b65-fd75-4aa6-b49e-44ecf418fcb5(com.mbeddr.mpsutil.inca.fun#4530729936991344015)</dependency>
+        <dependency reexport="false">cd2909da-ecb4-49dc-b176-33e5c619e516(com.mbeddr.mpsutil.inca.gp)</dependency>
+        <dependency reexport="false">1bc49cec-41e6-417f-a12b-f0e0125494e9(com.mbeddr.mpsutil.inca.core#4530729936991344007)</dependency>
+        <dependency reexport="false">b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -53,10 +59,15 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)" version="0" />
+        <module reference="1bc49cec-41e6-417f-a12b-f0e0125494e9(com.mbeddr.mpsutil.inca.core#4530729936991344007)" version="0" />
+        <module reference="7766a138-716a-422a-9c88-131459fb8d6a(com.mbeddr.mpsutil.inca.core.runtime)" version="0" />
         <module reference="bc791f96-4749-4311-a6e4-241e47ca97f9(com.mbeddr.mpsutil.inca.core.util)" version="0" />
         <module reference="e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2(com.mbeddr.mpsutil.inca.data)" version="0" />
         <module reference="d5a58d02-4ac7-4892-afde-65968670c300(com.mbeddr.mpsutil.inca.data#8607574815737030311)" version="0" />
         <module reference="c80e20e1-4247-4086-b73c-55a273900ebd(com.mbeddr.mpsutil.inca.data.runtime)" version="0" />
+        <module reference="8f5e7b65-fd75-4aa6-b49e-44ecf418fcb5(com.mbeddr.mpsutil.inca.fun#4530729936991344015)" version="0" />
+        <module reference="cd2909da-ecb4-49dc-b176-33e5c619e516(com.mbeddr.mpsutil.inca.gp)" version="0" />
+        <module reference="44851301-9e9d-4b21-9608-3740a9f299a4(com.mbeddr.mpsutil.inca.gp#4530729936991344011)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" version="0" />
         <module reference="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" version="0" />
@@ -80,6 +91,30 @@
             <external-mapping>
               <all-local-mappings />
             </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="d5a58d02-4ac7-4892-afde-65968670c300(com.mbeddr.mpsutil.inca.data#8607574815737030311)" />
+            <external-mapping>
+              <mapping-node modelUID="r:f1e81aa1-bf14-4d0c-a467-c773b57d5bbb(com.mbeddr.mpsutil.inca.data.generator.template.main@generator)" nodeID="6919315553619268587" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <mapping-set>
+              <mapping-set-element>
+                <generator generatorUID="44851301-9e9d-4b21-9608-3740a9f299a4(com.mbeddr.mpsutil.inca.gp#4530729936991344011)" />
+                <external-mapping>
+                  <all-local-mappings />
+                </external-mapping>
+              </mapping-set-element>
+              <mapping-set-element>
+                <generator generatorUID="8f5e7b65-fd75-4aa6-b49e-44ecf418fcb5(com.mbeddr.mpsutil.inca.fun#4530729936991344015)" />
+                <external-mapping>
+                  <all-local-mappings />
+                </external-mapping>
+              </mapping-set-element>
+            </mapping-set>
           </lesser-priority-mapping>
         </mapping-priority-rule>
       </mapping-priorities>

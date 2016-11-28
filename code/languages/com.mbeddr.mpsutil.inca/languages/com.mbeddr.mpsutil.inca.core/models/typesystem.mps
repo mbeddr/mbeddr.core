@@ -2247,7 +2247,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="39KhnTI7QZG">
-    <property role="TrG5h" value="check_IPatternModel" />
+    <property role="TrG5h" value="check_IPatternModule" />
     <node concept="3clFbS" id="39KhnTI7QZH" role="18ibNy">
       <node concept="3cpWs8" id="39KhnTI7R08" role="3cqZAp">
         <node concept="3cpWsn" id="39KhnTI7R09" role="3cpWs9">
@@ -2262,7 +2262,7 @@
             <ref role="1Pybhc" to="zt8v:5lmC1XhmXON" resolve="ValidationHelper" />
             <node concept="2OqwBi" id="39KhnTI7Sau" role="37wK5m">
               <node concept="1YBJjd" id="39KhnTI7S4E" role="2Oq$k0">
-                <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="patternModel" />
+                <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="module" />
               </node>
               <node concept="2qgKlT" id="39KhnTI7Sm_" role="2OqNvi">
                 <ref role="37wK5l" to="gcg1:3VwoHXNBzsE" resolve="getPatterns" />
@@ -2296,15 +2296,15 @@
           <property role="TrG5h" value="imported" />
           <node concept="2hMVRd" id="SSjGGIuWwB" role="1tU5fm">
             <node concept="3Tqbb2" id="SSjGGIuWwE" role="2hN53Y">
-              <ref role="ehGHo" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
+              <ref role="ehGHo" to="hqsm:Y78e7A6TUt" resolve="IIncaModule" />
             </node>
           </node>
           <node concept="2OqwBi" id="SSjGGIuWwN" role="33vP2m">
             <node concept="1YBJjd" id="SSjGGIuWwO" role="2Oq$k0">
-              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="patternModel" />
+              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="module" />
             </node>
             <node concept="2qgKlT" id="SSjGGIuWwP" role="2OqNvi">
-              <ref role="37wK5l" to="gcg1:SSjGGIujxn" resolve="getImportedPatternModules" />
+              <ref role="37wK5l" to="gcg1:SSjGGIujxn" resolve="getImportedModules" />
             </node>
           </node>
         </node>
@@ -2317,7 +2317,7 @@
               <property role="Xl_RC" value="The pattern module is part of a cyclic dependency chain!" />
             </node>
             <node concept="1YBJjd" id="SSjGGIuZeq" role="2OEOjV">
-              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="patternModel" />
+              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="module" />
             </node>
           </node>
         </node>
@@ -2327,14 +2327,14 @@
           </node>
           <node concept="3JPx81" id="SSjGGIuZ8D" role="2OqNvi">
             <node concept="1YBJjd" id="SSjGGIuZaP" role="25WWJ7">
-              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="patternModel" />
+              <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="module" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="39KhnTI7QZJ" role="1YuTPh">
-      <property role="TrG5h" value="patternModel" />
+      <property role="TrG5h" value="module" />
       <ref role="1YaFvo" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
     </node>
   </node>
@@ -2612,7 +2612,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1ThF9Cw0X46" role="3cqZAp" />
             <node concept="nvevp" id="1ThF9Cw0X47" role="3cqZAp">
               <node concept="3clFbS" id="1ThF9Cw0X48" role="nvhr_">
                 <node concept="3clFbJ" id="1ThF9Cw0X49" role="3cqZAp">
@@ -2795,7 +2794,7 @@
                           <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
                         </node>
                         <node concept="2YIFZM" id="7Bq0by3nycn" role="33vP2m">
-                          <ref role="37wK5l" to="zt8v:7Bq0by3nmAA" resolve="compute" />
+                          <ref role="37wK5l" to="zt8v:7Bq0by3nmAA" resolve="getMostSpecificType" />
                           <ref role="1Pybhc" to="zt8v:7Bq0by3nmpu" resolve="TypesHelper" />
                           <node concept="37vLTw" id="7Bq0by3nyco" role="37wK5m">
                             <ref role="3cqZAo" node="1ThF9Cw0X20" resolve="wrappedConstraints" />
@@ -3240,6 +3239,63 @@
     <node concept="1YaCAy" id="7A0HCuGmTwp" role="1YuTPh">
       <property role="TrG5h" value="value" />
       <ref role="1YaFvo" to="hqsm:4QgsNmKMGGS" resolve="EnumMemberValue" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3k78NV$ipLc">
+    <property role="TrG5h" value="typeof_AggregatedValue" />
+    <property role="3GE5qa" value="values" />
+    <node concept="3clFbS" id="3k78NV$ipLd" role="18ibNy">
+      <node concept="1Z5TYs" id="3k78NV$ipYj" role="3cqZAp">
+        <node concept="mw_s8" id="3k78NV$ipYB" role="1ZfhKB">
+          <node concept="1Z2H0r" id="3k78NV$ipYz" role="mwGJk">
+            <node concept="2OqwBi" id="3k78NV$iq88" role="1Z2MuG">
+              <node concept="1YBJjd" id="3k78NV$ipYS" role="2Oq$k0">
+                <ref role="1YBMHb" node="3k78NV$ipLf" resolve="value" />
+              </node>
+              <node concept="3TrEf2" id="3k78NV$iqiv" role="2OqNvi">
+                <ref role="3Tt5mk" to="hqsm:RjyNapPtN8" resolve="aggregator" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3k78NV$ipYm" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3k78NV$ipLm" role="mwGJk">
+            <node concept="1YBJjd" id="3k78NV$ipLA" role="1Z2MuG">
+              <ref role="1YBMHb" node="3k78NV$ipLf" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3k78NV$ipLf" role="1YuTPh">
+      <property role="TrG5h" value="value" />
+      <ref role="1YaFvo" to="hqsm:RjyNapPtMn" resolve="AggregatedValue" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3k78NV$iqlH">
+    <property role="TrG5h" value="typeof_CountAggregator" />
+    <property role="3GE5qa" value="values" />
+    <node concept="3clFbS" id="3k78NV$iqlI" role="18ibNy">
+      <node concept="1Z5TYs" id="3k78NV$iq$n" role="3cqZAp">
+        <node concept="mw_s8" id="3k78NV$iq$F" role="1ZfhKB">
+          <node concept="2pJPEk" id="3k78NV$iq$B" role="mwGJk">
+            <node concept="2pJPED" id="3k78NV$iq$Q" role="2pJPEn">
+              <ref role="2pJxaS" to="tpee:f_0OyhT" resolve="IntegerType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3k78NV$iq$q" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3k78NV$iqlU" role="mwGJk">
+            <node concept="1YBJjd" id="3k78NV$iqnE" role="1Z2MuG">
+              <ref role="1YBMHb" node="3k78NV$iqlK" resolve="aggregator" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3k78NV$iqlK" role="1YuTPh">
+      <property role="TrG5h" value="aggregator" />
+      <ref role="1YaFvo" to="hqsm:RjyNapPtNI" resolve="CountAggregator" />
     </node>
   </node>
 </model>
