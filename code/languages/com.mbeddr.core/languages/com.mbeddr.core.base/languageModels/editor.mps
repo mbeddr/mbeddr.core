@@ -598,6 +598,7 @@
     </language>
     <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
       <concept id="1059142979230420839" name="de.itemis.mps.editor.celllayout.structure.GridLayoutColumnSpanStyle" flags="lg" index="2tOxIa" />
+      <concept id="4682418030828725523" name="de.itemis.mps.editor.celllayout.structure.HorizontalLineCell" flags="ng" index="2T_mXK" />
       <concept id="9000758320091481718" name="de.itemis.mps.editor.celllayout.structure.GridLayoutFlattenStyle" flags="lg" index="1QQdxR" />
       <concept id="2728748097294192922" name="de.itemis.mps.editor.celllayout.structure.IntegerStyle" flags="lg" index="3To2jP">
         <property id="1221209241505" name="value" index="1lJzqX" />
@@ -3574,7 +3575,7 @@
       <node concept="3F2HdR" id="K292flwDNx" role="3EZMnx">
         <property role="S$F3r" value="true" />
         <ref role="1NtTu8" to="vs0r:K292flwDNv" resolve="results" />
-        <node concept="2iRkQZ" id="3_DFadN1tAe" role="2czzBx" />
+        <node concept="2iRkQZ" id="3ZQ1PLQv80N" role="2czzBx" />
         <node concept="1HlG4h" id="K292flx88A" role="3EmGlc">
           <node concept="1HfYo3" id="K292flx88B" role="1HlULh">
             <node concept="3TQlhw" id="K292flx88C" role="1Hhtcw">
@@ -3920,24 +3921,7 @@
             </node>
           </node>
         </node>
-        <node concept="gc7cB" id="2ka6MWOuJXn" role="3EZMnx">
-          <node concept="3VJUX4" id="2ka6MWOuJXo" role="3YsKMw">
-            <node concept="3clFbS" id="2ka6MWOuJXp" role="2VODD2">
-              <node concept="3clFbF" id="2ka6MWOuJXq" role="3cqZAp">
-                <node concept="2ShNRf" id="2ka6MWOuJXr" role="3clFbG">
-                  <node concept="1pGfFk" id="2ka6MWOuVOG" role="2ShVmc">
-                    <ref role="37wK5l" node="5gTlpakv6nY" resolve="HorizLineCell" />
-                    <node concept="pncrf" id="2ka6MWOuVOH" role="37wK5m" />
-                    <node concept="10M0yZ" id="2ka6MWOuVOT" role="37wK5m">
-                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="2T_mXK" id="3ZQ1PLQnBLv" role="3EZMnx" />
       </node>
       <node concept="3EZMnI" id="K292flwHwn" role="3EZMnx">
         <ref role="1ERwB7" node="7zJMcSxj$uX" resolve="preventDeletion" />
