@@ -336,12 +336,6 @@
         <ref role="398BVh" node="6RmoJr9tdHD" resolve="platform.artifacts" />
       </node>
     </node>
-    <node concept="2sgV4H" id="4hvHh3QXLSR" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QXMcw" role="2JcizS">
-        <ref role="398BVh" node="2Xjt3l5c8Xb" resolve="platform.sl-all" />
-      </node>
-    </node>
     <node concept="1l3spV" id="7eF9rfAuupR" role="1l3spN">
       <node concept="L2wRC" id="7eF9rfAuupS" role="39821P">
         <ref role="L2wRA" node="7eF9rfAuuoz" resolve="test.ex.core" />
@@ -781,12 +775,6 @@
         <ref role="398BVh" node="6RmoJr9tdWC" resolve="platform.artifacts" />
       </node>
     </node>
-    <node concept="2sgV4H" id="4hvHh3QXMz8" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QXMDK" role="2JcizS">
-        <ref role="398BVh" node="4hvHh3QXMqd" resolve="platform.sl-all" />
-      </node>
-    </node>
     <node concept="1l3spV" id="7eF9rfAuuva" role="1l3spN">
       <node concept="L2wRC" id="7eF9rfAuuvc" role="39821P">
         <ref role="L2wRA" node="7eF9rfAuutL" resolve="com.mbeddr.core.__spreferences.PlatformTemplates" />
@@ -1023,12 +1011,6 @@
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="6RmoJr9tdAW" role="2JcizS">
         <ref role="398BVh" node="4AnCPexDnpL" resolve="platform.artifacts" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="58DJDcMhr7m" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="58DJDcMhr7n" role="2JcizS">
-        <ref role="398BVh" node="58DJDcMhr72" resolve="platform.sl-all" />
       </node>
     </node>
     <node concept="2sgV4H" id="2coa6XmoC8T" role="1l3spa">

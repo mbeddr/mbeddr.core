@@ -272,12 +272,6 @@
         <ref role="398BVh" node="6RmoJr95Iwu" resolve="mbeddr.artifacts" />
       </node>
     </node>
-    <node concept="2sgV4H" id="4hvHh3QXTUr" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QXU3f" role="2JcizS">
-        <ref role="398BVh" node="2Xjt3l5c8Xb" resolve="platform.sl-all" />
-      </node>
-    </node>
     <node concept="1l3spV" id="5qO$P$PrIF4" role="1l3spN">
       <node concept="L2wRC" id="7Vt15sLW$2Q" role="39821P">
         <ref role="L2wRA" node="5qO$P$PrIFo" resolve="test.ex.ext.comp_mocking" />
@@ -728,12 +722,6 @@
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="5xg9PmSvo9W" role="2JcizS">
         <ref role="398BVh" node="5xg9PmSvo2M" resolve="platform.artifacts" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="4hvHh3QXUAL" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QXUFD" role="2JcizS">
-        <ref role="398BVh" node="4hvHh3QXUvs" resolve="platform.sl-all" />
       </node>
     </node>
     <node concept="1l3spV" id="7Vt15sLW_nN" role="1l3spN">
