@@ -12,7 +12,13 @@ repositories {
 }
 configurations {
     junitAnt
+    mpsArtifacts
 }
+
+ext.dependencyRepositories = [
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' ]
+
 dependencies {
     junitAnt 'junit:junit:4.12'
     junitAnt('org.apache.ant:ant-junit:1.9.7') {
@@ -21,14 +27,36 @@ dependencies {
     junitAnt('org.apache.ant:ant-junit4:1.9.7') {
         transitive = false
     }
+    mpsArtifacts "com.mbeddr:platform:$mbeddrBuildNumber"
 }
+
+
+task resolveMpsArtifacts(type: Copy) {
+    dependsOn configurations.mpsArtifacts
+    from {
+        configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+    }
+    into artifactsDir
+    doFirst { delete artifactsDir }
+}
+
+//move spawner into mbeddr script
+task build_spawner(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]) {
+    script scriptFile('com.mbeddr.build/spawner.xml')
+}
+
+task copy_spawner(type: Copy, dependsOn: build_spawner) {
+    from "artifacts/spawner/"
+    into "$mpsHomeDir/plugins"
+}
+
 ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
         classpath: configurations.junitAnt.asPath)
 ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
         classpath: configurations.junitAnt.asPath)
 
 
-task build_mbeddr(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:build_platform') {
+task build_mbeddr(type: BuildLanguages, dependsOn: copy_spawner ) {
     script script_build_mbeddr
 }
 
@@ -143,6 +171,23 @@ task test_mbeddr_analysis(dependsOn: [test_mbeddr_analysis_ts, build_mbeddr_anal
 task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
 
 
-task test_mbeddr(dependsOn: [test_mbeddr_debugger, ':build:com.mbeddr:platform:test_mbeddr_platform', test_mbeddr_core, test_mbeddr_performance, test_mbeddr_tutorial, test_mbeddr_cc, test_mbeddr_ext]) {}
+task test_mbeddr(dependsOn: [test_mbeddr_debugger, test_mbeddr_core, test_mbeddr_performance, test_mbeddr_cc, test_mbeddr_ext]) {}
+
+task publish_mbeddr(type: Zip, dependsOn: test_mbeddr) {
+    archiveName 'com.mbeddr.zip'
+    from artifactsDir
+    include "mbeddr/**"
+}
+
+publishing {
+    publications {
+        mbeddr(MavenPublication) {
+            groupId 'com.mbeddr'
+            artifactId 'mbeddr'
+            version mbeddrBuildNumber
+            artifact(publish_mbeddr) {}
+        }
+    }
+}
 
 check.dependsOn test_mbeddr
