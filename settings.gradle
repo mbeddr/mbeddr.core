@@ -1,6 +1,7 @@
 include ":build:com.mbeddr",
         ":build:com.mbeddr:platform",
         ":build:com.mbeddr:languages",
+        ":build:com.mbeddr:analyses.test",
         ":build:com.mbeddr:everythingElse",
         ":build:thirdparty",
         ":build:thirdparty:graphviz",

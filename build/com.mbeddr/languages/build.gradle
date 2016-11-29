@@ -63,8 +63,7 @@ task build_mbeddr(type: BuildLanguages, dependsOn: copy_spawner ) {
 }
 
 def script_test_mbeddrTutorial = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-tests.xml")
-def script_test_mbeddrAnalysisTs = new File(scriptsBasePath + "/com.mbeddr.analyses/" + "build-ts-tests.xml")
-def script_test_mbeddrAnalysisEx = new File(scriptsBasePath + "/com.mbeddr.analyses/" + "build-ex-tests.xml")
+
 def script_test_mbeddrPerformance = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-performance-tests.xml")
 def script_test_mbeddrDebugger = new File(scriptsBasePath + "/com.mbeddr.debugger/" + "build-tests.xml")
 def script_test_mbeddrCoreEx = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-ex-tests.xml")
@@ -93,11 +92,9 @@ task build_tutorial(dependsOn: build_tutorial_solutions) { }
 task test_mbeddr_tutorial(type: TestLanguages, dependsOn: build_tutorial) {
     script script_test_mbeddrTutorial
 }
-
-task build_mbeddr_analysis_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
-    script script_test_mbeddrAnalysisEx
+task test_mbeddr_ext_ts(type: TestLanguages, dependsOn: build_mbeddr) {
+    script script_test_mbeddrExtTs
 }
-
 task test_mbeddr_performance(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrPerformance
 }
@@ -156,18 +153,6 @@ task test_mbeddr_ext_ex << {
     ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.ext")
 }
 
-task test_mbeddr_ext_ts(type: TestLanguages, dependsOn: build_mbeddr) {
-    script script_test_mbeddrExtTs
-}
-
-task test_mbeddr_analysis_ts(type: TestLanguages, dependsOn: build_mbeddr) {
-    script script_test_mbeddrAnalysisTs
-}
-task test_mbeddr_analysis_ex << {
-    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.analyses")
-}
-
-task test_mbeddr_analysis(dependsOn: [test_mbeddr_analysis_ts, build_mbeddr_analysis_ex, test_mbeddr_analysis_ex]) { }
 
 
 task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
