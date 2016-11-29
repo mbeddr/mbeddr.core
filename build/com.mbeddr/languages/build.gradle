@@ -31,13 +31,15 @@ dependencies {
 }
 
 
-task resolveMpsArtifacts(type: Copy) {
-    dependsOn configurations.mpsArtifacts
-    from {
-        configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+task resolveMpsArtifacts() {
+    doLast {
+        copy {
+            from {
+                    configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+                 }
+            into artifactsDir
+        }
     }
-    into artifactsDir
-    doFirst { delete artifactsDir }
 }
 
 //move spawner into mbeddr script
