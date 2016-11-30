@@ -3240,7 +3240,7 @@
               <ref role="3cqZAo" node="MCpgxYb1Wq" resolve="modelRoot" />
             </node>
             <node concept="liA8E" id="MCpgxYaLqy" role="2OqNvi">
-              <ref role="37wK5l" to="ends:~ModelRootBase.setModule(org.jetbrains.mps.openapi.module.SModule):void" resolve="setModule" />
+              <ref role="37wK5l" to="ends:~ModelRootBase.setModule(jetbrains.mps.extapi.module.SModuleBase):void" resolve="setModule" />
               <node concept="37vLTw" id="MCpgxYbwvY" role="37wK5m">
                 <ref role="3cqZAo" node="MCpgxY92_X" resolve="solution" />
               </node>
