@@ -27351,64 +27351,6 @@
       <property role="TrG5h" value="T" />
     </node>
   </node>
-  <node concept="3HP615" id="3xDKE$E_hEn">
-    <property role="3GE5qa" value="lattice" />
-    <property role="TrG5h" value="IAggregationOperatorProvider" />
-    <node concept="2tJIrI" id="3xDKE$E_hEX" role="jymVt" />
-    <node concept="3clFb_" id="3xDKE$E$VFb" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="getLubOperation" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="3xDKE$E$VFe" role="3clF47" />
-      <node concept="3Tm1VV" id="3xDKE$E$UyT" role="1B3o_S" />
-      <node concept="3uibUv" id="3xDKE$E$WP1" role="3clF45">
-        <ref role="3uigEE" to="8wax:~AbstractMultisetAggregationOperator" resolve="AbstractMultisetAggregationOperator" />
-        <node concept="16syzq" id="3xDKE$E_CqD" role="11_B2D">
-          <ref role="16sUi3" node="3xDKE$E_j9O" resolve="T" />
-        </node>
-        <node concept="3uibUv" id="3xDKE$E$WP3" role="11_B2D">
-          <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-          <node concept="16syzq" id="3xDKE$E_Csb" role="11_B2D">
-            <ref role="16sUi3" node="3xDKE$E_j9O" resolve="T" />
-          </node>
-        </node>
-        <node concept="16syzq" id="3xDKE$E_CtE" role="11_B2D">
-          <ref role="16sUi3" node="3xDKE$E_j9O" resolve="T" />
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="3xDKE$E_Cvk" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="getGlbOperation" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="3xDKE$E_Cvl" role="3clF47" />
-      <node concept="3Tm1VV" id="3xDKE$E_Cvm" role="1B3o_S" />
-      <node concept="3uibUv" id="3xDKE$E_Cvn" role="3clF45">
-        <ref role="3uigEE" to="8wax:~AbstractMultisetAggregationOperator" resolve="AbstractMultisetAggregationOperator" />
-        <node concept="16syzq" id="3xDKE$E_Cvo" role="11_B2D">
-          <ref role="16sUi3" node="3xDKE$E_j9O" resolve="T" />
-        </node>
-        <node concept="3uibUv" id="3xDKE$E_Cvp" role="11_B2D">
-          <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-          <node concept="16syzq" id="3xDKE$E_Cvq" role="11_B2D">
-            <ref role="16sUi3" node="3xDKE$E_j9O" resolve="T" />
-          </node>
-        </node>
-        <node concept="16syzq" id="3xDKE$E_Cvr" role="11_B2D">
-          <ref role="16sUi3" node="3xDKE$E_j9O" resolve="T" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3xDKE$E_hEZ" role="jymVt" />
-    <node concept="3Tm1VV" id="3xDKE$E_hEo" role="1B3o_S" />
-    <node concept="16euLQ" id="3xDKE$E_j9O" role="16eVyc">
-      <property role="TrG5h" value="T" />
-    </node>
-  </node>
   <node concept="312cEu" id="yM$tZcY5nk">
     <property role="3GE5qa" value="runtime" />
     <property role="TrG5h" value="UniqueDataType" />
