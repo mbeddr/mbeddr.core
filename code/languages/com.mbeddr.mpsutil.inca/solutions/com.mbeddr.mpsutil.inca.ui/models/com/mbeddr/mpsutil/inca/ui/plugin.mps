@@ -59,6 +59,7 @@
     <import index="mnlj" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.beans(JDK/)" />
     <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
     <import index="la48" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.api.impl(com.mbeddr.mpsutil.inca.core.runtime/)" implicit="true" />
@@ -434,6 +435,10 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
+        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
+        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
+      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -451,6 +456,9 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
+        <child id="1678062499342629861" name="moduleId" index="37shsm" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -8291,8 +8299,8 @@
       </node>
       <node concept="37vLTG" id="2hKTcZ5V7KL" role="3clF46">
         <property role="TrG5h" value="cellInfo" />
-        <node concept="3uibUv" id="2hKTcZ5V7VX" role="1tU5fm">
-          <ref role="3uigEE" to="g51k:~CellInfo" resolve="CellInfo" />
+        <node concept="3uibUv" id="2EdStKBjUxP" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~CellInfo" resolve="CellInfo" />
         </node>
       </node>
       <node concept="3uibUv" id="2hKTcZ5WLco" role="Sfmx6">
@@ -8387,7 +8395,7 @@
             </node>
             <node concept="2ShNRf" id="2hKTcZ5V8Mb" role="33vP2m">
               <node concept="1pGfFk" id="2hKTcZ5V9Gk" role="2ShVmc">
-                <ref role="37wK5l" to="b8lf:~SelectionInfoImpl.&lt;init&gt;(java.lang.String)" resolve="SelectionInfoImpl" />
+                <ref role="37wK5l" to="b8lf:~SelectionInfoImpl.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="SelectionInfoImpl" />
                 <node concept="2OqwBi" id="2hKTcZ5V8KV" role="37wK5m">
                   <node concept="2OqwBi" id="2hKTcZ5V8KW" role="2Oq$k0">
                     <node concept="Xjq3P" id="2hKTcZ5V8KX" role="2Oq$k0" />
@@ -8397,6 +8405,17 @@
                   </node>
                   <node concept="liA8E" id="2hKTcZ5V8KZ" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="5M8WS0jPpou" role="37wK5m">
+                  <node concept="37shsh" id="5M8WS0jPms6" role="2Oq$k0">
+                    <node concept="20RdaH" id="5M8WS0jPnQX" role="37shsm">
+                      <property role="20Rdg5" value="50774306-a9df-40b3-8571-64880ad234e2" />
+                      <property role="20Rdg7" value="com.mbeddr.mpsutil.inca.ui" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5M8WS0jPrer" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SModuleReference.getModuleName():java.lang.String" resolve="getModuleName" />
                   </node>
                 </node>
               </node>
