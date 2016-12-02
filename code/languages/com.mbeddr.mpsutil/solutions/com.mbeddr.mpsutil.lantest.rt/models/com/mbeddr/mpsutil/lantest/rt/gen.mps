@@ -1954,28 +1954,28 @@
                         <node concept="1QHqEF" id="54ccypsZQK1" role="3cqZAp">
                           <node concept="1QHqEC" id="54ccypsZQK3" role="1QHqEI">
                             <node concept="3clFbS" id="54ccypsZQK5" role="1bW5cS">
-                              <node concept="SfApY" id="505H3_WY3Pk" role="3cqZAp">
-                                <node concept="3clFbS" id="505H3_WY3Pl" role="SfCbr">
-                                  <node concept="3cpWs8" id="6NR2kNI2FSs" role="3cqZAp">
-                                    <node concept="3cpWsn" id="6NR2kNI2FSv" role="3cpWs9">
-                                      <property role="TrG5h" value="coverageWasReached" />
-                                      <node concept="10P_77" id="6NR2kNI2FSq" role="1tU5fm" />
-                                      <node concept="3clFbT" id="6NR2kNI2ImI" role="33vP2m">
-                                        <property role="3clFbU" value="false" />
-                                      </node>
-                                    </node>
+                              <node concept="3cpWs8" id="6NR2kNI2FSs" role="3cqZAp">
+                                <node concept="3cpWsn" id="6NR2kNI2FSv" role="3cpWs9">
+                                  <property role="TrG5h" value="coverageWasReached" />
+                                  <node concept="10P_77" id="6NR2kNI2FSq" role="1tU5fm" />
+                                  <node concept="3clFbT" id="6NR2kNI2ImI" role="33vP2m">
+                                    <property role="3clFbU" value="false" />
                                   </node>
-                                  <node concept="3cpWs8" id="2P6psD9$gYT" role="3cqZAp">
-                                    <node concept="3cpWsn" id="2P6psD9$gYW" role="3cpWs9">
-                                      <property role="TrG5h" value="currentTry" />
-                                      <node concept="10Oyi0" id="2P6psD9$gYR" role="1tU5fm" />
-                                      <node concept="3cmrfG" id="2P6psD9$sv5" role="33vP2m">
-                                        <property role="3cmrfH" value="0" />
-                                      </node>
-                                    </node>
+                                </node>
+                              </node>
+                              <node concept="3cpWs8" id="2P6psD9$gYT" role="3cqZAp">
+                                <node concept="3cpWsn" id="2P6psD9$gYW" role="3cpWs9">
+                                  <property role="TrG5h" value="currentTry" />
+                                  <node concept="10Oyi0" id="2P6psD9$gYR" role="1tU5fm" />
+                                  <node concept="3cmrfG" id="2P6psD9$sv5" role="33vP2m">
+                                    <property role="3cmrfH" value="0" />
                                   </node>
-                                  <node concept="MpOyq" id="2P6psD9_scp" role="3cqZAp">
-                                    <node concept="3clFbS" id="2P6psD9_scq" role="2LFqv$">
+                                </node>
+                              </node>
+                              <node concept="MpOyq" id="2P6psD9_scp" role="3cqZAp">
+                                <node concept="3clFbS" id="2P6psD9_scq" role="2LFqv$">
+                                  <node concept="SfApY" id="4PdWDfl3ghv" role="3cqZAp">
+                                    <node concept="3clFbS" id="4PdWDfl3ghx" role="SfCbr">
                                       <node concept="3clFbF" id="433ob2TjG6I" role="3cqZAp">
                                         <node concept="37vLTI" id="433ob2TjG6K" role="3clFbG">
                                           <node concept="1rXfSq" id="433ob2TjaKP" role="37vLTx">
@@ -2014,40 +2014,47 @@
                                         </node>
                                       </node>
                                     </node>
-                                    <node concept="1Wc70l" id="6NR2kNI2VDv" role="MpTkK">
-                                      <node concept="3fqX7Q" id="6NR2kNI2Zbs" role="3uHU7w">
-                                        <node concept="37vLTw" id="6NR2kNI310W" role="3fr31v">
-                                          <ref role="3cqZAo" node="6NR2kNI2FSv" resolve="coverageWasReached" />
+                                    <node concept="TDmWw" id="4PdWDfl3ghy" role="TEbGg">
+                                      <node concept="3cpWsn" id="4PdWDfl3gh$" role="TDEfY">
+                                        <property role="TrG5h" value="e" />
+                                        <node concept="3uibUv" id="4PdWDfl3gxv" role="1tU5fm">
+                                          <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                                         </node>
                                       </node>
-                                      <node concept="3eOVzh" id="6S8iAN9Kzu2" role="3uHU7B">
-                                        <node concept="37vLTw" id="6S8iAN9Kzu4" role="3uHU7B">
-                                          <ref role="3cqZAo" node="2P6psD9$gYW" resolve="currentTry" />
+                                      <node concept="3clFbS" id="4PdWDfl3ghC" role="TDEfX">
+                                        <node concept="3clFbF" id="505H3_WY3PT" role="3cqZAp">
+                                          <node concept="2OqwBi" id="505H3_WY3PU" role="3clFbG">
+                                            <node concept="37vLTw" id="4PdWDfl3iXo" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="4PdWDfl3gh$" resolve="e" />
+                                            </node>
+                                            <node concept="liA8E" id="505H3_WY3PW" role="2OqNvi">
+                                              <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                                            </node>
+                                          </node>
                                         </node>
-                                        <node concept="37vLTw" id="6S8iAN9Kzu5" role="3uHU7w">
-                                          <ref role="3cqZAo" node="4XCJ8CcQUeT" resolve="maximumNumberOfTries" />
+                                        <node concept="3clFbF" id="4PdWDfl3jvU" role="3cqZAp">
+                                          <node concept="3uNrnE" id="4PdWDfl3khy" role="3clFbG">
+                                            <node concept="37vLTw" id="4PdWDfl3kh$" role="2$L3a6">
+                                              <ref role="3cqZAo" node="2P6psD9$gYW" resolve="currentTry" />
+                                            </node>
+                                          </node>
                                         </node>
                                       </node>
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="TDmWw" id="505H3_WY3PP" role="TEbGg">
-                                  <node concept="3cpWsn" id="505H3_WY3PQ" role="TDEfY">
-                                    <property role="TrG5h" value="e" />
-                                    <node concept="3uibUv" id="505H3_WY3PR" role="1tU5fm">
-                                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                                <node concept="1Wc70l" id="6NR2kNI2VDv" role="MpTkK">
+                                  <node concept="3fqX7Q" id="6NR2kNI2Zbs" role="3uHU7w">
+                                    <node concept="37vLTw" id="6NR2kNI310W" role="3fr31v">
+                                      <ref role="3cqZAo" node="6NR2kNI2FSv" resolve="coverageWasReached" />
                                     </node>
                                   </node>
-                                  <node concept="3clFbS" id="505H3_WY3PS" role="TDEfX">
-                                    <node concept="3clFbF" id="505H3_WY3PT" role="3cqZAp">
-                                      <node concept="2OqwBi" id="505H3_WY3PU" role="3clFbG">
-                                        <node concept="37vLTw" id="505H3_WY3PV" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="505H3_WY3PQ" resolve="e" />
-                                        </node>
-                                        <node concept="liA8E" id="505H3_WY3PW" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
-                                        </node>
-                                      </node>
+                                  <node concept="3eOVzh" id="6S8iAN9Kzu2" role="3uHU7B">
+                                    <node concept="37vLTw" id="6S8iAN9Kzu4" role="3uHU7B">
+                                      <ref role="3cqZAo" node="2P6psD9$gYW" resolve="currentTry" />
+                                    </node>
+                                    <node concept="37vLTw" id="6S8iAN9Kzu5" role="3uHU7w">
+                                      <ref role="3cqZAo" node="4XCJ8CcQUeT" resolve="maximumNumberOfTries" />
                                     </node>
                                   </node>
                                 </node>
@@ -2975,7 +2982,12 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="433ob2TjaI1" role="3cqZAp" />
+        <node concept="3clFbH" id="4PdWDfl3aTk" role="3cqZAp" />
+        <node concept="3SKdUt" id="4PdWDfl38o6" role="3cqZAp">
+          <node concept="3SKdUq" id="4PdWDfl38o8" role="3SKWNk">
+            <property role="3SKdUp" value="if exceptions are thrown while checking then save the problematic model" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="tJrHRTPWla" role="3cqZAp">
           <node concept="3cpWsn" id="tJrHRTPWld" role="3cpWs9">
             <property role="TrG5h" value="exceptionThrown" />
