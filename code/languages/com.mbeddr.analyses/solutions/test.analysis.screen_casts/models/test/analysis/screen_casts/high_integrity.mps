@@ -54,6 +54,9 @@
       </concept>
       <concept id="6111466015651074424" name="com.mbeddr.ext.units.structure.EmptyUnitContainerContent" flags="ng" index="134lye" />
     </language>
+    <language id="f47ddd18-d113-4647-938b-1d9b2e1910dc" name="com.mbeddr.analyses.acsl.cbmc.gen">
+      <concept id="6715381068726883448" name="com.mbeddr.analyses.acsl.cbmc.gen.structure.ACSLContractsGenerationForCBMC" flags="ng" index="31U8vS" />
+    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="6275792049641600983" name="com.mbeddr.core.statements.structure.IfStatement" flags="ng" index="c0U19">
         <child id="6275792049641600984" name="condition" index="c0U16" />
@@ -140,6 +143,9 @@
       <concept id="3793213301909798351" name="com.mbeddr.analyses.acsl.structure.Result" flags="ng" index="2HeCUD" />
       <concept id="3793213301909614895" name="com.mbeddr.analyses.acsl.structure.FunctionContract" flags="ng" index="2HfW99">
         <child id="3793213301909617373" name="functionContractMember" index="2HfWAV" />
+      </concept>
+      <concept id="6715381068726883387" name="com.mbeddr.analyses.acsl.structure.ACSLContractsGenerationConfigItem" flags="ng" index="31U8uV">
+        <child id="6715381068726941300" name="generationKind" index="31UYnO" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -1114,6 +1120,9 @@
     </node>
     <node concept="2Q9Fgs" id="368fPYHkqvj" role="2Q9xDr">
       <node concept="2Q9FjX" id="368fPYHkqvk" role="2Q9FjI" />
+    </node>
+    <node concept="31U8uV" id="3WMUl3DggBg" role="2Q9xDr">
+      <node concept="31U8vS" id="3WMUl3DggBr" role="31UYnO" />
     </node>
     <node concept="2eh4Hv" id="7Pk2mb7JbjC" role="2Q9xDr" />
     <node concept="2AWWZL" id="7Pk2mb7JbjN" role="2AWWZH">
