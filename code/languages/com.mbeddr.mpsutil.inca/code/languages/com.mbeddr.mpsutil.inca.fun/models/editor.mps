@@ -573,9 +573,11 @@
     <property role="3GE5qa" value="misc" />
     <ref role="1XX52x" to="ebqt:1ERTnBTfavv" resolve="PatternFunction" />
     <node concept="3EZMnI" id="RjyNapPkO9" role="2wV5jI">
-      <node concept="_tjkj" id="SSjGGIHVq4" role="3EZMnx">
-        <node concept="3F1sOY" id="SSjGGIHVIX" role="_tjki">
-          <ref role="1NtTu8" to="hqsm:SSjGGIHUFA" resolve="visibility" />
+      <node concept="1kIj98" id="6mbwRz6DU6a" role="3EZMnx">
+        <node concept="_tjkj" id="SSjGGIHVq4" role="1kIj9b">
+          <node concept="3F1sOY" id="SSjGGIHVIX" role="_tjki">
+            <ref role="1NtTu8" to="hqsm:SSjGGIHUFA" resolve="visibility" />
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="RjyNapPkOg" role="3EZMnx">

@@ -12,6 +12,7 @@
     <import index="hqsm" ref="r:aa4c3470-43ab-4dad-b73e-20da0ee43be1(com.mbeddr.mpsutil.inca.core.structure)" />
     <import index="gcg1" ref="r:d6f14cc5-a2a7-4aaf-8f86-e35059edbf3b(com.mbeddr.mpsutil.inca.core.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="zt8v" ref="r:ab008189-f07c-44e4-9434-629f972e973d(com.mbeddr.mpsutil.inca.core.util.plugin)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -22,6 +23,9 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -111,6 +115,9 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -173,21 +180,41 @@
     <ref role="1M2myG" to="55iy:1ERTnBTfasH" resolve="GraphPatternModule" />
     <node concept="osYL8" id="5luHlsCrwim" role="1MLXOK">
       <node concept="3clFbS" id="5luHlsCrwin" role="2VODD2">
-        <node concept="3cpWs6" id="5luHlsCrwnh" role="3cqZAp">
-          <node concept="22lmx$" id="SSjGGIudb_" role="3cqZAk">
-            <node concept="2OqwBi" id="5luHlsCrww6" role="3uHU7B">
-              <node concept="otxO1" id="5luHlsCrIKJ" role="2Oq$k0" />
-              <node concept="2Zo12i" id="5luHlsCrJku" role="2OqNvi">
-                <node concept="chp4Y" id="5luHlsCrJqH" role="2Zo12j">
-                  <ref role="cht4Q" to="55iy:5luHlsCrwig" resolve="IGraphPatternModuleContent" />
+        <node concept="3cpWs6" id="6mbwRz6RieY" role="3cqZAp">
+          <node concept="22lmx$" id="6mbwRz6G02R" role="3cqZAk">
+            <node concept="2OqwBi" id="6mbwRz6RieZ" role="3uHU7w">
+              <node concept="otxO1" id="6mbwRz6Rif0" role="2Oq$k0" />
+              <node concept="2Zo12i" id="6mbwRz6Rif1" role="2OqNvi">
+                <node concept="chp4Y" id="6mbwRz6Rif2" role="2Zo12j">
+                  <ref role="cht4Q" to="hqsm:SSjGGIHU5T" resolve="IPatternVisibility" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="SSjGGIudFf" role="3uHU7w">
-              <node concept="otxO1" id="SSjGGIudmv" role="2Oq$k0" />
-              <node concept="2Zo12i" id="37SozOpTbA7" role="2OqNvi">
-                <node concept="chp4Y" id="37SozOpTbKd" role="2Zo12j">
-                  <ref role="cht4Q" to="hqsm:SSjGGIi3iQ" resolve="IIncaModuleImport" />
+            <node concept="22lmx$" id="6mbwRz6RgJa" role="3uHU7B">
+              <node concept="2OqwBi" id="6mbwRz6Rhb6" role="3uHU7w">
+                <node concept="otxO1" id="6mbwRz6RgVL" role="2Oq$k0" />
+                <node concept="3O6GUB" id="6mbwRz6RhyH" role="2OqNvi">
+                  <node concept="chp4Y" id="6mbwRz6RiE1" role="3QVz_e">
+                    <ref role="cht4Q" to="55iy:SSjGGIxddQ" resolve="GraphPatternModuleImport" />
+                  </node>
+                </node>
+              </node>
+              <node concept="22lmx$" id="6mbwRz6Rif3" role="3uHU7B">
+                <node concept="2OqwBi" id="6mbwRz6Rif4" role="3uHU7B">
+                  <node concept="otxO1" id="6mbwRz6Rif5" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="6mbwRz6Rif6" role="2OqNvi">
+                    <node concept="chp4Y" id="6mbwRz6Riut" role="2Zo12j">
+                      <ref role="cht4Q" to="55iy:5luHlsCrwig" resolve="IGraphPatternModuleContent" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6mbwRz6Rif7" role="3uHU7w">
+                  <node concept="otxO1" id="6mbwRz6Rif8" role="2Oq$k0" />
+                  <node concept="3O6GUB" id="6mbwRz6Rg9f" role="2OqNvi">
+                    <node concept="chp4Y" id="6mbwRz6Rgjn" role="3QVz_e">
+                      <ref role="cht4Q" to="hqsm:SSjGGIi3iQ" resolve="IIncaModuleImport" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -330,6 +357,24 @@
               <node concept="3TrcHB" id="SSjGGIia8D" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6mbwRz6K2LT">
+    <property role="3GE5qa" value="constraints" />
+    <ref role="1M2myG" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
+    <node concept="1N5Pfh" id="6mbwRz6K2LU" role="1Mr941">
+      <ref role="1N5Vy1" to="55iy:RjyNapTDhB" resolve="type" />
+      <node concept="1MUpDS" id="6mbwRz6K2M0" role="1N6uqs">
+        <node concept="3clFbS" id="6mbwRz6K2M2" role="2VODD2">
+          <node concept="3cpWs6" id="6SzVr$NUsHe" role="3cqZAp">
+            <node concept="2YIFZM" id="6SzVr$NUDkr" role="3cqZAk">
+              <ref role="37wK5l" to="zt8v:6SzVr$NUBSD" resolve="visibleConceptDeclarations" />
+              <ref role="1Pybhc" to="zt8v:6fymoI4LNm5" resolve="Scopes" />
+              <node concept="2rP1CM" id="6SzVr$NUDNC" role="37wK5m" />
             </node>
           </node>
         </node>

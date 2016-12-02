@@ -13,6 +13,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="0" />
   </languages>
   <imports>
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
@@ -34,7 +35,6 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
     <import index="b8lf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.selection(MPS.Editor/)" />
-    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
@@ -60,6 +60,7 @@
     <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="vcmv" ref="r:0d1bf3bf-9fc9-4a6b-aa90-c180231319e3(com.mbeddr.mpsutil.inca.fun.refactorings)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
     <import index="la48" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.api.impl(com.mbeddr.mpsutil.inca.core.runtime/)" implicit="true" />
@@ -486,6 +487,21 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring">
+      <concept id="7518061998923713757" name="com.mbeddr.mpsutil.refactoring.structure.StringChooser" flags="ng" index="1loS_j" />
+      <concept id="7518061998923713755" name="com.mbeddr.mpsutil.refactoring.structure.Chooser" flags="ng" index="1loS_l">
+        <property id="7518061998923720371" name="title" index="1loUcX" />
+      </concept>
+      <concept id="7518061998923573140" name="com.mbeddr.mpsutil.refactoring.structure.RefactoringParameter" flags="ng" index="1lpA8q">
+        <reference id="7518061998923573141" name="param" index="1lpA8r" />
+        <child id="7518061998923573142" name="chooser" index="1lpA8o" />
+      </concept>
+      <concept id="7518061998923573137" name="com.mbeddr.mpsutil.refactoring.structure.RefactoringAction" flags="ng" index="1lpA8v">
+        <reference id="7518061998923573138" name="refactoring" index="1lpA8s" />
+        <child id="7518061998923573139" name="shortcut" index="1lpA8t" />
+        <child id="7518061998923573158" name="parameters" index="1lpA8C" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -14035,6 +14051,21 @@
     </node>
     <node concept="2tJIrI" id="77Ri3O54mDT" role="jymVt" />
     <node concept="3Tm1VV" id="77Ri3O54mDf" role="1B3o_S" />
+  </node>
+  <node concept="1lpA8v" id="6mbwRz6$F52">
+    <property role="3GE5qa" value="action" />
+    <property role="TrG5h" value="Introduce Temporary Variable" />
+    <ref role="1lpA8s" to="vcmv:6mbwRz6$po4" resolve="IntroduceTemporaryVariable" />
+    <node concept="1lpA8q" id="6mbwRz6$GL$" role="1lpA8C">
+      <ref role="1lpA8r" to="vcmv:6mbwRz6$vhB" resolve="name" />
+      <node concept="1loS_j" id="6mbwRz6AUIB" role="1lpA8o">
+        <property role="1loUcX" value="Variable Name" />
+      </node>
+    </node>
+    <node concept="pLAjd" id="6mbwRz6$GLB" role="1lpA8t">
+      <property role="pLAjf" value="VK_V" />
+      <property role="pLAjc" value="ctrl+alt" />
+    </node>
   </node>
 </model>
 
