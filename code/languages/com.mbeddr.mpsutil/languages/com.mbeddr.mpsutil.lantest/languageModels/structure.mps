@@ -217,6 +217,7 @@
     <property role="3GE5qa" value="seed" />
     <property role="TrG5h" value="SingleModelSeed" />
     <property role="EcuMT" value="2993027727001344799" />
+    <property role="34LRSv" value="single model seed" />
     <ref role="1TJDcQ" node="2A9nHKANPGu" resolve="AbstractSeedModel" />
     <node concept="1TJgyj" id="2A9nHKANPGS" role="1TKVEi">
       <property role="20lmBu" value="reference" />
