@@ -33,6 +33,9 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ng" index="22mbnS">
+        <child id="414384289274416996" name="parts" index="3ft7WO" />
+      </concept>
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
@@ -78,6 +81,7 @@
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="615427434521884870" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Subconcepts" flags="ng" index="2VfDsV" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
         <child id="1223387335081" name="query" index="3n$kyP" />
@@ -1875,6 +1879,9 @@
     <node concept="3F0ifn" id="SSjGGIHU68" role="2wV5jI">
       <property role="3F0ifm" value="private" />
       <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+      <node concept="VPxyj" id="6mbwRz6PsN5" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="SSjGGIHUEI">
@@ -1883,6 +1890,9 @@
     <node concept="3F0ifn" id="SSjGGIHUEK" role="2wV5jI">
       <property role="3F0ifm" value="protected" />
       <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+      <node concept="VPxyj" id="6mbwRz6PsN1" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="SSjGGIHUF0">
@@ -1891,6 +1901,9 @@
     <node concept="3F0ifn" id="SSjGGIHUF2" role="2wV5jI">
       <property role="3F0ifm" value="public" />
       <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+      <node concept="VPxyj" id="6mbwRz6PsMY" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="DubiFB4e4O">
@@ -2351,6 +2364,11 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="6mbwRz6FgAY">
+    <property role="3GE5qa" value="content" />
+    <ref role="aqKnT" to="hqsm:SSjGGIHU5T" resolve="IPatternVisibility" />
+    <node concept="2VfDsV" id="6mbwRz6FgAZ" role="3ft7WO" />
   </node>
 </model>
 
