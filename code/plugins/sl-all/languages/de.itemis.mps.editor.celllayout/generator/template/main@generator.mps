@@ -71,7 +71,6 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -112,11 +111,6 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
-      </concept>
-      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
-        <child id="1163668914799" name="condition" index="3K4Cdx" />
-        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
-        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -383,23 +377,6 @@
               <node concept="3clFbF" id="1AuRJ4GMJm2" role="3cqZAp">
                 <node concept="1rXfSq" id="1AuRJ4GMJm3" role="3clFbG">
                   <ref role="37wK5l" node="1AuRJ4GMJlM" resolve="calculateValue" />
-                  <node concept="3K4zz7" id="1AuRJ4GMJm4" role="37wK5m">
-                    <node concept="10Nm6u" id="1AuRJ4GMJm5" role="3K4E3e" />
-                    <node concept="3clFbC" id="1AuRJ4GMJm6" role="3K4Cdx">
-                      <node concept="37vLTw" id="1AuRJ4GMJm7" role="3uHU7B">
-                        <ref role="3cqZAo" node="1AuRJ4GMJlZ" resolve="editorCell" />
-                      </node>
-                      <node concept="10Nm6u" id="1AuRJ4GMJm8" role="3uHU7w" />
-                    </node>
-                    <node concept="2OqwBi" id="1AuRJ4GMJm9" role="3K4GZi">
-                      <node concept="37vLTw" id="1AuRJ4GMJma" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1AuRJ4GMJlZ" resolve="editorCell" />
-                      </node>
-                      <node concept="liA8E" id="1AuRJ4GMJmb" role="2OqNvi">
-                        <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
-                      </node>
-                    </node>
-                  </node>
                   <node concept="raruj" id="1AuRJ4GMJmc" role="lGtFl" />
                   <node concept="1ZhdrF" id="1AuRJ4GMJmd" role="lGtFl">
                     <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
