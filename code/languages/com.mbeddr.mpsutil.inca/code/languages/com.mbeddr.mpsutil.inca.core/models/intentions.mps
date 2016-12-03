@@ -113,6 +113,7 @@
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
+        <property id="2522969319638091386" name="isAvailableInChildNodes" index="2ZfUl0" />
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
@@ -175,6 +176,7 @@
   <node concept="2S6QgY" id="2LqywDhk0hH">
     <property role="TrG5h" value="IPatternComment_Add" />
     <property role="3GE5qa" value="comment" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="hqsm:3VwoHXNAdmh" resolve="IPattern" />
     <node concept="2S6ZIM" id="2LqywDhk0hI" role="2ZfVej">
       <node concept="3clFbS" id="2LqywDhk0hJ" role="2VODD2">
