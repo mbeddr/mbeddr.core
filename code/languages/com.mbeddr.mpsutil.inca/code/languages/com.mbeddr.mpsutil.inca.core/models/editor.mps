@@ -539,6 +539,17 @@
       <node concept="3F1sOY" id="6ZM2l12NP8c" role="3EZMnx">
         <ref role="1NtTu8" to="hqsm:6ZM2l12NP7U" resolve="model" />
       </node>
+      <node concept="_tjkj" id="1gckXeMlQ7n" role="3EZMnx">
+        <node concept="3EZMnI" id="1gckXeMlQ8i" role="_tjki">
+          <node concept="l2Vlx" id="1gckXeMlQ8j" role="2iSdaV" />
+          <node concept="3F0ifn" id="1gckXeMlQ7F" role="3EZMnx">
+            <property role="3F0ifm" value="with" />
+          </node>
+          <node concept="3F1sOY" id="1gckXeMlQ8x" role="3EZMnx">
+            <ref role="1NtTu8" to="hqsm:1gckXeMlQ6L" resolve="properties" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7wcU5h39kJ2">
