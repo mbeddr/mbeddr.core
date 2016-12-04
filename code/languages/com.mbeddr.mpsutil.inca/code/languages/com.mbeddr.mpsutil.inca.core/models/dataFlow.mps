@@ -157,27 +157,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="1gckXeMlSgj" role="3cqZAp">
-          <node concept="3clFbS" id="1gckXeMlSgl" role="3clFbx">
-            <node concept="3AgYrR" id="1gckXeMlSaT" role="3cqZAp">
-              <node concept="2OqwBi" id="1gckXeMlT8d" role="3Ah4Yx">
-                <node concept="3__QtB" id="1gckXeMlT0m" role="2Oq$k0" />
-                <node concept="3TrEf2" id="1gckXeMlTqc" role="2OqNvi">
-                  <ref role="3Tt5mk" to="hqsm:1gckXeMlQ6L" resolve="properties" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="1gckXeMlSTu" role="3clFbw">
-            <node concept="10Nm6u" id="1gckXeMlSTO" role="3uHU7w" />
-            <node concept="2OqwBi" id="1gckXeMlSsB" role="3uHU7B">
-              <node concept="3__QtB" id="1gckXeMlSjc" role="2Oq$k0" />
-              <node concept="3TrEf2" id="1gckXeMlS_W" role="2OqNvi">
-                <ref role="3Tt5mk" to="hqsm:1gckXeMlQ6L" resolve="properties" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>
