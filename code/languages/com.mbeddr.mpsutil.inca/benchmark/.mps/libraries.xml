@@ -27,6 +27,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="mbeddr.doc">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.doc" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mbeddr.mpsutil">
           <value>
             <Library>
