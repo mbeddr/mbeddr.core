@@ -428,6 +428,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="model" />
       <property role="IQ2ns" value="8066520122896896506" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1gckXeMlQ6L" role="1TKVEi">
+      <property role="IQ2ns" value="1444621749174362545" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="properties" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="6hXIxNuWHDO" role="1TKVEi">
