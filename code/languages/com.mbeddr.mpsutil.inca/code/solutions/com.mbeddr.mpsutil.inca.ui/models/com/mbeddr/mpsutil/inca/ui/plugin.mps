@@ -2690,34 +2690,6 @@
       <node concept="3clFbS" id="47VZ_g5dNRH" role="3clF47">
         <node concept="SfApY" id="47VZ_g5dR_h" role="3cqZAp">
           <node concept="3clFbS" id="47VZ_g5dR_i" role="SfCbr">
-            <node concept="3cpWs8" id="1gckXeMrRdF" role="3cqZAp">
-              <node concept="3cpWsn" id="1gckXeMrRdG" role="3cpWs9">
-                <property role="TrG5h" value="properties" />
-                <node concept="3uibUv" id="1gckXeMrRdB" role="1tU5fm">
-                  <ref role="3uigEE" to="pzen:2R_7gpXUKQk" resolve="RuntimeProperties" />
-                </node>
-                <node concept="2OqwBi" id="1gckXeMrRdH" role="33vP2m">
-                  <node concept="2OqwBi" id="1gckXeMrRdI" role="2Oq$k0">
-                    <node concept="2YIFZM" id="1gckXeMrRdJ" role="2Oq$k0">
-                      <ref role="37wK5l" to="pzen:1gckXeLRZ8s" resolve="createDefault" />
-                      <ref role="1Pybhc" to="pzen:2R_7gpXUKQk" resolve="RuntimeProperties" />
-                    </node>
-                    <node concept="liA8E" id="1gckXeMrRdK" role="2OqNvi">
-                      <ref role="37wK5l" to="pzen:1gckXeLJUHf" resolve="isInDebugMode" />
-                      <node concept="3clFbT" id="1gckXeMrRdL" role="37wK5m">
-                        <property role="3clFbU" value="true" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1gckXeMrRdM" role="2OqNvi">
-                    <ref role="37wK5l" to="pzen:1gckXeLJQuG" resolve="useHintGuidedCaching" />
-                    <node concept="3clFbT" id="1gckXeMrRdN" role="37wK5m">
-                      <property role="3clFbU" value="false" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="526VibMIjYq" role="3cqZAp">
               <node concept="3cpWsn" id="526VibMIjYr" role="3cpWs9">
                 <property role="TrG5h" value="engine" />
@@ -2729,7 +2701,7 @@
                   <ref role="37wK5l" to="h57a:~AdvancedViatraQueryEngine.createUnmanagedEngine(org.eclipse.viatra.query.runtime.api.scope.QueryScope):org.eclipse.viatra.query.runtime.api.AdvancedViatraQueryEngine" resolve="createUnmanagedEngine" />
                   <node concept="2YIFZM" id="526VibMIjYt" role="37wK5m">
                     <ref role="1Pybhc" to="pzen:3KgejumhMXD" resolve="MPSScope" />
-                    <ref role="37wK5l" to="pzen:1gckXeM758R" resolve="from" />
+                    <ref role="37wK5l" to="pzen:6cJttNupUNl" resolve="from" />
                     <node concept="2OqwBi" id="526VibMIjYu" role="37wK5m">
                       <node concept="37vLTw" id="526VibMIjYv" role="2Oq$k0">
                         <ref role="3cqZAo" node="4BWlfm3wFtO" resolve="key" />
@@ -2737,9 +2709,6 @@
                       <node concept="liA8E" id="526VibMIjYw" role="2OqNvi">
                         <ref role="37wK5l" node="4BWlfm3poEi" resolve="getModel" />
                       </node>
-                    </node>
-                    <node concept="37vLTw" id="1gckXeMrVEu" role="37wK5m">
-                      <ref role="3cqZAo" node="1gckXeMrRdG" resolve="properties" />
                     </node>
                   </node>
                 </node>
