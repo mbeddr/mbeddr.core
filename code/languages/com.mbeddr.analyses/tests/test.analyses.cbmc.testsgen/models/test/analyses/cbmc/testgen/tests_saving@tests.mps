@@ -218,7 +218,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1ENIgcpefJw" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
@@ -235,7 +235,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1ENIgcpefJB" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
