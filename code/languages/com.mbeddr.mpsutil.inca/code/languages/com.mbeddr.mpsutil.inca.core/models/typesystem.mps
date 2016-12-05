@@ -19,6 +19,7 @@
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
     <import index="gyfg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.base(MPS.Core/)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
+    <import index="pzen" ref="r:25bfb30f-3676-4451-9448-27a17343be80(com.mbeddr.mpsutil.inca.core.runtime.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
@@ -196,6 +197,7 @@
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
       <concept id="1185805035213" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteStatement" flags="nn" index="nvevp">
+        <property id="1233571207619" name="skipsError" index="Q$Hzs" />
         <child id="1185805047793" name="body" index="nvhr_" />
         <child id="1185805056450" name="argument" index="nvjzm" />
         <child id="1205761991995" name="argumentRepresentator" index="2X0Ygz" />
@@ -1106,7 +1108,6 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="6cJttNujQLB" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="1KfKM1YIldu" role="1YuTPh">
       <property role="TrG5h" value="expression" />
@@ -2613,6 +2614,7 @@
               </node>
             </node>
             <node concept="nvevp" id="1ThF9Cw0X47" role="3cqZAp">
+              <property role="Q$Hzs" value="true" />
               <node concept="3clFbS" id="1ThF9Cw0X48" role="nvhr_">
                 <node concept="3clFbJ" id="1ThF9Cw0X49" role="3cqZAp">
                   <node concept="3clFbS" id="1ThF9Cw0X4a" role="3clFbx">
