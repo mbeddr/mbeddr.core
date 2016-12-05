@@ -10798,7 +10798,7 @@
       <node concept="3981dG" id="6ucYLjolEtJ" role="39821P">
         <node concept="3_J27D" id="6ucYLjolEtL" role="Nbhlr">
           <node concept="3Mxwew" id="6ucYLjolFr5" role="3MwsjC">
-            <property role="3MwjfP" value="com.mebddr.mpsutil.zip" />
+            <property role="3MwjfP" value="com.mbeddr.mpsutil.zip" />
           </node>
         </node>
         <node concept="3ygNvl" id="6ucYLjolFr8" role="39821P">
