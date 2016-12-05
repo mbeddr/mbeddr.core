@@ -210,11 +210,9 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -280,13 +278,13 @@
             <property role="1dT_AB" value="A returned null value means that the match failed." />
           </node>
         </node>
-        <node concept="TUZQ0" id="2zB$jxpyIvW" role="TUOzN">
+        <node concept="TUZQ0" id="2zB$jxpyIvW" role="3nqlJM">
           <property role="TUZQ4" value="the object to match" />
           <node concept="zr_55" id="2zB$jxpyIvY" role="zr_5Q">
             <ref role="zr_51" node="2zB$jxpuHYf" resolve="value" />
           </node>
         </node>
-        <node concept="x79VA" id="2zB$jxpyIvZ" role="x79VK">
+        <node concept="x79VA" id="2zB$jxpyIvZ" role="3nqlJM">
           <property role="x79VB" value="the mappings of this matcher" />
         </node>
       </node>
@@ -895,13 +893,13 @@
             <property role="1dT_AB" value="A returned null value means that the match failed." />
           </node>
         </node>
-        <node concept="TUZQ0" id="2zB$jxpz1T2" role="TUOzN">
+        <node concept="TUZQ0" id="2zB$jxpz1T2" role="3nqlJM">
           <property role="TUZQ4" value="the object to match" />
           <node concept="zr_55" id="2zB$jxpz1T3" role="zr_5Q">
             <ref role="zr_51" node="2zB$jxpz1SV" resolve="value" />
           </node>
         </node>
-        <node concept="x79VA" id="2zB$jxpz1T4" role="x79VK">
+        <node concept="x79VA" id="2zB$jxpz1T4" role="3nqlJM">
           <property role="x79VB" value="the mappings of this matcher" />
         </node>
       </node>

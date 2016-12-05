@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="m373" ref="r:4095af4f-a097-4799-aaa9-03df087ddfa6(jetbrains.mps.baseLanguage.javadoc.structure)" />
@@ -428,6 +429,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="model" />
       <property role="IQ2ns" value="8066520122896896506" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="6hXIxNuWHDO" role="1TKVEi">
@@ -1085,6 +1087,12 @@
         <property role="tnX3d" value="false" />
       </node>
     </node>
+  </node>
+  <node concept="1TIwiD" id="3S913bg4qMY">
+    <property role="EcuMT" value="4470108721427623102" />
+    <property role="3GE5qa" value="comment" />
+    <property role="TrG5h" value="EmptyCommentTag" />
+    <ref role="1TJDcQ" to="m373:4iGwz$GTsqK" resolve="EmptyBlockDocTag" />
   </node>
 </model>
 

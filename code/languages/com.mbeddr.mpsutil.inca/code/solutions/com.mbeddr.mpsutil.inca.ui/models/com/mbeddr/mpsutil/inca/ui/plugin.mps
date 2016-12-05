@@ -4237,9 +4237,9 @@
                 <ref role="2Oxat5" node="5poffaz7571" resolve="matches" />
               </node>
             </node>
-            <node concept="liA8E" id="5poffaz7eDw" role="2OqNvi">
+            <node concept="liA8E" id="1gckXeMhaAY" role="2OqNvi">
               <ref role="37wK5l" to="3gm0:~AbstractObservableList.removeListChangeListener(org.eclipse.core.databinding.observable.list.IListChangeListener):void" resolve="removeListChangeListener" />
-              <node concept="37vLTw" id="5poffaz80Vc" role="37wK5m">
+              <node concept="37vLTw" id="1gckXeMhbAo" role="37wK5m">
                 <ref role="3cqZAo" node="5poffaz7haC" resolve="listChangeListener" />
               </node>
             </node>
@@ -4605,8 +4605,11 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="5poffaz59qY" role="1B3o_S" />
-      <node concept="3uibUv" id="2Pc1eSRyGP$" role="EKbjA">
+      <node concept="3uibUv" id="1gckXeMh8z3" role="EKbjA">
         <ref role="3uigEE" to="3gm0:~IListChangeListener" resolve="IListChangeListener" />
+        <node concept="3uibUv" id="1gckXeMhdEP" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5poffaz4DFK" role="jymVt" />
