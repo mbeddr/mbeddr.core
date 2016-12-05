@@ -79,10 +79,10 @@
       <concept id="6547237850567458268" name="jetbrains.mps.lang.plugin.structure.BaseToolDeclaration" flags="ng" index="2XNcJY">
         <property id="2498620720770664572" name="position" index="2bmUCM" />
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
-        <property id="6547237850567462701" name="number" index="2XNb$f" />
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
+        <child id="471625927503648174" name="shortcut" index="15cTzA" />
         <child id="6791676465872004185" name="toolIcon" index="1nVCmq" />
       </concept>
       <concept id="1562714432501166198" name="jetbrains.mps.lang.plugin.structure.SimpleShortcutChange" flags="lg" index="Zd509">
@@ -90,6 +90,9 @@
       </concept>
       <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
         <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
+      </concept>
+      <concept id="471625927503601927" name="jetbrains.mps.lang.plugin.structure.NumberToolShortcut" flags="ng" index="15feLf">
+        <property id="471625927503601955" name="number" index="15feLF" />
       </concept>
       <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="lg" index="1bYyw_">
         <reference id="6193305307616734326" name="action" index="1bYAoF" />
@@ -900,7 +903,6 @@
     <property role="TrG5h" value="PromelaLiftedResultsTool" />
     <property role="2XNbzY" value="Spin Lifted Results" />
     <property role="2bmUCM" value="RIGHT" />
-    <property role="2XNb$f" value="1" />
     <node concept="1QGGSu" id="3Ymokd9HSJf" role="1nVCmq">
       <property role="1iqoE4" value="${module}/icons/verify.png" />
     </node>
@@ -1099,6 +1101,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="15feLf" id="48h5VLbZEGE" role="15cTzA">
+      <property role="15feLF" value="1" />
     </node>
   </node>
 </model>
