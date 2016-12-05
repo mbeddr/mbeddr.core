@@ -349,39 +349,48 @@
       <property role="TrG5h" value="testInsertion1" />
       <node concept="3cqZAl" id="3RjqiP9Z_vK" role="3clF45" />
       <node concept="3clFbS" id="3RjqiP9Z_vO" role="3clF47">
-        <node concept="3cpWs8" id="3RjqiP9ZO3z" role="3cqZAp">
-          <node concept="3cpWsn" id="3RjqiP9ZO3$" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2RKZ" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2RL0" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="3RjqiP9ZO3x" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2RL1" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="3RjqiP9ZO8$" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2RL2" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2RL3" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="3RjqiP9ZO9B" role="33vP2m">
-              <node concept="HV5vD" id="3RjqiP9ZOit" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2RL4" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj2RL5" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="3RjqiP9ZJxd" role="3cqZAp">
-          <node concept="3cpWsn" id="3RjqiP9ZJxe" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2RL6" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2RL7" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="3RjqiP9ZJxb" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2RL8" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="3RjqiP9ZJy6" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2RL9" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2RLa" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="3RjqiP9ZJ$C" role="33vP2m">
-              <node concept="1pGfFk" id="3RjqiP9ZJDM" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2RLb" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj2RLc" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="3RjqiP9ZP34" role="37wK5m">
-                  <ref role="3cqZAo" node="3RjqiP9ZO3$" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj2RLd" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj2RL0" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="3RjqiP9ZRdL" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj2RLe" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj2RLf" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -396,7 +405,7 @@
                   <node concept="2OqwBi" id="3RjqiPa3scM" role="2Oq$k0">
                     <node concept="2OqwBi" id="3RjqiP9ZRTM" role="2Oq$k0">
                       <node concept="37vLTw" id="3RjqiP9ZRMG" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3RjqiP9ZJxe" resolve="tree" />
+                        <ref role="3cqZAo" node="4uaOjKj2RL7" resolve="tree" />
                       </node>
                       <node concept="liA8E" id="3RjqiP9ZShB" role="2OqNvi">
                         <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -449,7 +458,7 @@
               <ref role="2WH_rO" node="3RjqiPa00xg" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="3RjqiPa2YWY" role="2XxRq1">
                 <node concept="37vLTw" id="3RjqiPa2YQs" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3RjqiP9ZJxe" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj2RL7" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="3RjqiPa2ZWq" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -467,39 +476,48 @@
       <property role="TrG5h" value="testInsertion2" />
       <node concept="3cqZAl" id="3RjqiPa49v6" role="3clF45" />
       <node concept="3clFbS" id="3RjqiPa49v7" role="3clF47">
-        <node concept="3cpWs8" id="3RjqiPa49v8" role="3cqZAp">
-          <node concept="3cpWsn" id="3RjqiPa49v9" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2Stf" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2Stg" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="3RjqiPa49va" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2Sth" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="3RjqiPa49vb" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2Sti" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2Stj" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="3RjqiPa49vc" role="33vP2m">
-              <node concept="HV5vD" id="3RjqiPa49vd" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2Stk" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj2Stl" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="3RjqiPaeFQ$" role="3cqZAp">
-          <node concept="3cpWsn" id="3RjqiPaeFQ_" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2Stm" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2Stn" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="3RjqiPaeFQA" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2Sto" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="3RjqiPaeFQB" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2Stp" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2Stq" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="3RjqiPaeFQC" role="33vP2m">
-              <node concept="1pGfFk" id="3RjqiPaeFQD" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2Str" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj2Sts" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="3RjqiPaeFQE" role="37wK5m">
-                  <ref role="3cqZAo" node="3RjqiPa49v9" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj2Stt" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj2Stg" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="3RjqiPaeFQF" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj2Stu" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj2Stv" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -516,7 +534,7 @@
                       <node concept="2OqwBi" id="3RjqiPa49vz" role="2Oq$k0">
                         <node concept="2OqwBi" id="3RjqiPa49v$" role="2Oq$k0">
                           <node concept="37vLTw" id="3RjqiPa49v_" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3RjqiPaeFQ_" resolve="tree" />
+                            <ref role="3cqZAo" node="4uaOjKj2Stn" resolve="tree" />
                           </node>
                           <node concept="liA8E" id="3RjqiPa49vA" role="2OqNvi">
                             <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -583,7 +601,7 @@
               <ref role="2WH_rO" node="3RjqiPa00xg" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="3RjqiPa49vR" role="2XxRq1">
                 <node concept="37vLTw" id="3RjqiPa49vS" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3RjqiPaeFQ_" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj2Stn" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="3RjqiPa49vT" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -599,7 +617,7 @@
         <node concept="3clFbF" id="3RjqiPa5nec" role="3cqZAp">
           <node concept="2OqwBi" id="3RjqiPa5nsO" role="3clFbG">
             <node concept="37vLTw" id="3RjqiPa5nea" role="2Oq$k0">
-              <ref role="3cqZAo" node="3RjqiPaeFQ_" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj2Stn" resolve="tree" />
             </node>
             <node concept="liA8E" id="3RjqiPa5nHn" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -617,7 +635,7 @@
               <ref role="2WH_rO" node="3RjqiPa00xg" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="3RjqiPa5prd" role="2XxRq1">
                 <node concept="37vLTw" id="3RjqiPa5pre" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3RjqiPaeFQ_" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj2Stn" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="3RjqiPa5prf" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -635,39 +653,48 @@
       <property role="TrG5h" value="testInsertion_LeftLeft" />
       <node concept="3cqZAl" id="3RjqiPa5s5J" role="3clF45" />
       <node concept="3clFbS" id="3RjqiPa5s5K" role="3clF47">
-        <node concept="3cpWs8" id="3RjqiPa5s5L" role="3cqZAp">
-          <node concept="3cpWsn" id="3RjqiPa5s5M" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2W0s" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2W0t" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="3RjqiPa5s5N" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2W0u" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="3RjqiPa5s5O" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2W0v" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2W0w" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="3RjqiPa5s5P" role="33vP2m">
-              <node concept="HV5vD" id="3RjqiPa5s5Q" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2W0x" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj2W0y" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="3RjqiPaeIyn" role="3cqZAp">
-          <node concept="3cpWsn" id="3RjqiPaeIyo" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2W0z" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2W0$" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="3RjqiPaeIyp" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2W0_" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="3RjqiPaeIyq" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2W0A" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2W0B" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="3RjqiPaeIyr" role="33vP2m">
-              <node concept="1pGfFk" id="3RjqiPaeIys" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2W0C" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj2W0D" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="3RjqiPaeIyt" role="37wK5m">
-                  <ref role="3cqZAo" node="3RjqiPa5s5M" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj2W0E" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj2W0t" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="3RjqiPaeIyu" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj2W0F" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj2W0G" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -684,7 +711,7 @@
                       <node concept="2OqwBi" id="3RjqiPa5s6e" role="2Oq$k0">
                         <node concept="2OqwBi" id="3RjqiPa5s6f" role="2Oq$k0">
                           <node concept="37vLTw" id="3RjqiPa5s6g" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3RjqiPaeIyo" resolve="tree" />
+                            <ref role="3cqZAo" node="4uaOjKj2W0$" resolve="tree" />
                           </node>
                           <node concept="liA8E" id="3RjqiPa5s6h" role="2OqNvi">
                             <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -751,7 +778,7 @@
               <ref role="2WH_rO" node="3RjqiPa00xg" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="3RjqiPa5s6A" role="2XxRq1">
                 <node concept="37vLTw" id="3RjqiPa5s6B" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3RjqiPaeIyo" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj2W0$" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="3RjqiPa5s6C" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -767,7 +794,7 @@
         <node concept="3clFbF" id="3RjqiPa5s6F" role="3cqZAp">
           <node concept="2OqwBi" id="3RjqiPa5s6G" role="3clFbG">
             <node concept="37vLTw" id="3RjqiPa5s6H" role="2Oq$k0">
-              <ref role="3cqZAo" node="3RjqiPaeIyo" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj2W0$" resolve="tree" />
             </node>
             <node concept="liA8E" id="3RjqiPa5s6I" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -785,7 +812,7 @@
               <ref role="2WH_rO" node="3RjqiPa00xg" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="3RjqiPa5s6P" role="2XxRq1">
                 <node concept="37vLTw" id="3RjqiPa5s6Q" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3RjqiPaeIyo" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj2W0$" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="3RjqiPa5s6R" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -803,39 +830,48 @@
       <property role="TrG5h" value="testInsertion_RightRight" />
       <node concept="3cqZAl" id="3RjqiPa5KQs" role="3clF45" />
       <node concept="3clFbS" id="3RjqiPa5KQt" role="3clF47">
-        <node concept="3cpWs8" id="3RjqiPa5KQu" role="3cqZAp">
-          <node concept="3cpWsn" id="3RjqiPa5KQv" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2ZPr" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2ZPs" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="3RjqiPa5KQw" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2ZPt" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="3RjqiPa5KQx" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2ZPu" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2ZPv" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="3RjqiPa5KQy" role="33vP2m">
-              <node concept="HV5vD" id="3RjqiPa5KQz" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2ZPw" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj2ZPx" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="3RjqiPaeLcL" role="3cqZAp">
-          <node concept="3cpWsn" id="3RjqiPaeLcM" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2ZPy" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2ZPz" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="3RjqiPaeLcN" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2ZP$" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="3RjqiPaeLcO" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2ZP_" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2ZPA" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="3RjqiPaeLcP" role="33vP2m">
-              <node concept="1pGfFk" id="3RjqiPaeLcQ" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2ZPB" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj2ZPC" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="3RjqiPaeLcR" role="37wK5m">
-                  <ref role="3cqZAo" node="3RjqiPa5KQv" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj2ZPD" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj2ZPs" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="3RjqiPaeLcS" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj2ZPE" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj2ZPF" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -849,7 +885,7 @@
                 <node concept="2OqwBi" id="3RjqiPa5KQV" role="2Oq$k0">
                   <node concept="2OqwBi" id="3RjqiPa5KQW" role="2Oq$k0">
                     <node concept="37vLTw" id="3RjqiPa5KQX" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3RjqiPaeLcM" resolve="tree" />
+                      <ref role="3cqZAo" node="4uaOjKj2ZPz" resolve="tree" />
                     </node>
                     <node concept="liA8E" id="3RjqiPa5KQY" role="2OqNvi">
                       <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -895,7 +931,7 @@
               <ref role="2WH_rO" node="3RjqiPa00xg" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="3RjqiPa5KRj" role="2XxRq1">
                 <node concept="37vLTw" id="3RjqiPa5KRk" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3RjqiPaeLcM" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj2ZPz" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="3RjqiPa5KRl" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -911,7 +947,7 @@
         <node concept="3clFbF" id="3RjqiPa5KRo" role="3cqZAp">
           <node concept="2OqwBi" id="3RjqiPa5KRp" role="3clFbG">
             <node concept="37vLTw" id="3RjqiPa5KRq" role="2Oq$k0">
-              <ref role="3cqZAo" node="3RjqiPaeLcM" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj2ZPz" resolve="tree" />
             </node>
             <node concept="liA8E" id="3RjqiPa5KRr" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -929,7 +965,7 @@
               <ref role="2WH_rO" node="3RjqiPa00xg" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="3RjqiPa5KRy" role="2XxRq1">
                 <node concept="37vLTw" id="3RjqiPa5KRz" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3RjqiPaeLcM" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj2ZPz" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="3RjqiPa5KR$" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -947,39 +983,48 @@
       <property role="TrG5h" value="testInsertion_LeftRight" />
       <node concept="3cqZAl" id="3RjqiPa6pq7" role="3clF45" />
       <node concept="3clFbS" id="3RjqiPa6pq8" role="3clF47">
-        <node concept="3cpWs8" id="3RjqiPa6pq9" role="3cqZAp">
-          <node concept="3cpWsn" id="3RjqiPa6pqa" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj30W0" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj30W1" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="3RjqiPa6pqb" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj30W2" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="3RjqiPa6pqc" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj30W3" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj30W4" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="3RjqiPa6pqd" role="33vP2m">
-              <node concept="HV5vD" id="3RjqiPa6pqe" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj30W5" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj30W6" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="3RjqiPaeLMk" role="3cqZAp">
-          <node concept="3cpWsn" id="3RjqiPaeLMl" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj30W7" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj30W8" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="3RjqiPaeLMm" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj30W9" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="3RjqiPaeLMn" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj30Wa" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj30Wb" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="3RjqiPaeLMo" role="33vP2m">
-              <node concept="1pGfFk" id="3RjqiPaeLMp" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj30Wc" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj30Wd" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="3RjqiPaeLMq" role="37wK5m">
-                  <ref role="3cqZAo" node="3RjqiPa6pqa" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj30We" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj30W1" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="3RjqiPaeLMr" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj30Wf" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj30Wg" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -996,7 +1041,7 @@
                       <node concept="2OqwBi" id="3RjqiPa6_DA" role="2Oq$k0">
                         <node concept="2OqwBi" id="3RjqiPa6pq$" role="2Oq$k0">
                           <node concept="37vLTw" id="3RjqiPa6pq_" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3RjqiPaeLMl" resolve="tree" />
+                            <ref role="3cqZAo" node="4uaOjKj30W8" resolve="tree" />
                           </node>
                           <node concept="liA8E" id="3RjqiPa6pqA" role="2OqNvi">
                             <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -1063,7 +1108,7 @@
               <ref role="2WH_rO" node="3RjqiPa00xg" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="3RjqiPa6pqP" role="2XxRq1">
                 <node concept="37vLTw" id="3RjqiPa6pqQ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3RjqiPaeLMl" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj30W8" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="3RjqiPa6pqR" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -1079,7 +1124,7 @@
         <node concept="3clFbF" id="3RjqiPa6pqU" role="3cqZAp">
           <node concept="2OqwBi" id="3RjqiPa6pqV" role="3clFbG">
             <node concept="37vLTw" id="3RjqiPa6pqW" role="2Oq$k0">
-              <ref role="3cqZAo" node="3RjqiPaeLMl" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj30W8" resolve="tree" />
             </node>
             <node concept="liA8E" id="3RjqiPa6pqX" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -1097,7 +1142,7 @@
               <ref role="2WH_rO" node="3RjqiPa00xg" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="3RjqiPa6pr4" role="2XxRq1">
                 <node concept="37vLTw" id="3RjqiPa6pr5" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3RjqiPaeLMl" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj30W8" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="3RjqiPa6pr6" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -1115,39 +1160,48 @@
       <property role="TrG5h" value="testInsertion_RightLeft" />
       <node concept="3cqZAl" id="3RjqiPa81eA" role="3clF45" />
       <node concept="3clFbS" id="3RjqiPa81eB" role="3clF47">
-        <node concept="3cpWs8" id="3RjqiPa81eC" role="3cqZAp">
-          <node concept="3cpWsn" id="3RjqiPa81eD" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj35gQ" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj35gR" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="3RjqiPa81eE" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj35gS" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="3RjqiPa81eF" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj35gT" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj35gU" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="3RjqiPa81eG" role="33vP2m">
-              <node concept="HV5vD" id="3RjqiPa81eH" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj35gV" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj35gW" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="3RjqiPaeOq5" role="3cqZAp">
-          <node concept="3cpWsn" id="3RjqiPaeOq6" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj35gX" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj35gY" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="3RjqiPaeOq7" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj35gZ" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="3RjqiPaeOq8" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj35h0" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj35h1" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="3RjqiPaeOq9" role="33vP2m">
-              <node concept="1pGfFk" id="3RjqiPaeOqa" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj35h2" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj35h3" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="3RjqiPaeOqb" role="37wK5m">
-                  <ref role="3cqZAo" node="3RjqiPa81eD" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj35h4" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj35gR" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="3RjqiPaeOqc" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj35h5" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj35h6" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -1165,7 +1219,7 @@
                         <node concept="2OqwBi" id="3RjqiPa8g4p" role="2Oq$k0">
                           <node concept="2OqwBi" id="3RjqiPa8c9X" role="2Oq$k0">
                             <node concept="37vLTw" id="3RjqiPa8bZD" role="2Oq$k0">
-                              <ref role="3cqZAo" node="3RjqiPaeOq6" resolve="tree" />
+                              <ref role="3cqZAo" node="4uaOjKj35gY" resolve="tree" />
                             </node>
                             <node concept="liA8E" id="3RjqiPa8ejZ" role="2OqNvi">
                               <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -1239,7 +1293,7 @@
               <ref role="2WH_rO" node="3RjqiPa00xg" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="3RjqiPa81ft" role="2XxRq1">
                 <node concept="37vLTw" id="3RjqiPa81fu" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3RjqiPaeOq6" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj35gY" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="3RjqiPa81fv" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -1255,7 +1309,7 @@
         <node concept="3clFbF" id="3RjqiPa81fy" role="3cqZAp">
           <node concept="2OqwBi" id="3RjqiPa81fz" role="3clFbG">
             <node concept="37vLTw" id="3RjqiPa81f$" role="2Oq$k0">
-              <ref role="3cqZAo" node="3RjqiPaeOq6" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj35gY" resolve="tree" />
             </node>
             <node concept="liA8E" id="3RjqiPa81f_" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -1273,7 +1327,7 @@
               <ref role="2WH_rO" node="3RjqiPa00xg" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="3RjqiPa81fG" role="2XxRq1">
                 <node concept="37vLTw" id="3RjqiPa81fH" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3RjqiPaeOq6" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj35gY" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="3RjqiPa81fI" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -1291,39 +1345,48 @@
       <property role="TrG5h" value="testInsertion3" />
       <node concept="3cqZAl" id="Atm5KsxyiK" role="3clF45" />
       <node concept="3clFbS" id="Atm5KsxyiL" role="3clF47">
-        <node concept="3cpWs8" id="Atm5KsxyiM" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsxyiN" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj39Su" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj39Sv" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="Atm5KsxyiO" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj39Sw" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="Atm5KsxyiP" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj39Sx" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj39Sy" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsxyiQ" role="33vP2m">
-              <node concept="HV5vD" id="Atm5KsxyiR" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj39Sz" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj39S$" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="Atm5KsxyiS" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsxyiT" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj39S_" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj39SA" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="Atm5KsxyiU" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj39SB" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="Atm5KsxyiV" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj39SC" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj39SD" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsxyiW" role="33vP2m">
-              <node concept="1pGfFk" id="Atm5KsxyiX" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj39SE" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj39SF" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="Atm5KsxyiY" role="37wK5m">
-                  <ref role="3cqZAo" node="Atm5KsxyiN" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj39SG" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj39Sv" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="Atm5KsxyiZ" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj39SH" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj39SI" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -1341,7 +1404,7 @@
                         <node concept="2OqwBi" id="Atm5Ksxyj9" role="2Oq$k0">
                           <node concept="2OqwBi" id="Atm5Ksxyja" role="2Oq$k0">
                             <node concept="37vLTw" id="Atm5Ksxyjb" role="2Oq$k0">
-                              <ref role="3cqZAo" node="Atm5KsxyiT" resolve="tree" />
+                              <ref role="3cqZAo" node="4uaOjKj39SA" resolve="tree" />
                             </node>
                             <node concept="liA8E" id="Atm5Ksxyjc" role="2OqNvi">
                               <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -1415,7 +1478,7 @@
               <ref role="2WH_rO" node="3RjqiPa00xg" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5Ksxyjz" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5Ksxyj$" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsxyiT" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj39SA" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5Ksxyj_" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -1560,12 +1623,6 @@
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="createNode" />
       <node concept="3Tm1VV" id="3RjqiP9ZNns" role="1B3o_S" />
-      <node concept="3uibUv" id="3RjqiP9ZNnt" role="3clF45">
-        <ref role="3uigEE" to="gtp9:3azqxJjwbof" resolve="AVLTreeNode" />
-        <node concept="3uibUv" id="3RjqiP9ZNnx" role="11_B2D">
-          <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
-        </node>
-      </node>
       <node concept="37vLTG" id="3RjqiP9ZNnv" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="3RjqiP9ZNny" role="1tU5fm">
@@ -1587,6 +1644,9 @@
       <node concept="2AHcQZ" id="3RjqiP9ZNn$" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="3uibUv" id="4uaOjKj1xUC" role="3clF45">
+        <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+      </node>
     </node>
     <node concept="2tJIrI" id="3RjqiP9ZNmP" role="jymVt" />
     <node concept="3Tm1VV" id="3RjqiP9ZNkl" role="1B3o_S" />
@@ -1594,6 +1654,9 @@
       <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
       <node concept="3uibUv" id="3RjqiP9ZNmk" role="11_B2D">
         <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+      </node>
+      <node concept="3uibUv" id="4uaOjKj1xyV" role="11_B2D">
+        <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
       </node>
     </node>
   </node>
@@ -1790,6 +1853,9 @@
               <node concept="3uibUv" id="Atm5Ks$Gyy" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj1wol" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
             <node concept="2ShNRf" id="Atm5Ks$Gyz" role="33vP2m">
               <node concept="HV5vD" id="Atm5Ks$Gy$" role="2ShVmc">
@@ -1806,6 +1872,9 @@
               <node concept="3uibUv" id="Atm5Ks$GyC" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj1ATw" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
             <node concept="2ShNRf" id="Atm5Ks$GyD" role="33vP2m">
               <node concept="1pGfFk" id="Atm5Ks$GyE" role="2ShVmc">
@@ -1815,6 +1884,9 @@
                 </node>
                 <node concept="3uibUv" id="Atm5Ks$GyG" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj1C2i" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -1958,39 +2030,48 @@
       <property role="TrG5h" value="testDeletionMultiple" />
       <node concept="3cqZAl" id="Atm5KsAqfn" role="3clF45" />
       <node concept="3clFbS" id="Atm5KsAqfo" role="3clF47">
-        <node concept="3cpWs8" id="Atm5KsAqfp" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsAqfq" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj1CyI" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj1CyJ" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="Atm5KsAqfr" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj1CyK" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="Atm5KsAqfs" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj1CyL" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj1CyM" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsAqft" role="33vP2m">
-              <node concept="HV5vD" id="Atm5KsAqfu" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj1CyN" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj1CyO" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="Atm5KsAqfv" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsAqfw" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj1CyP" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj1CyQ" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="Atm5KsAqfx" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj1CyR" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="Atm5KsAqfy" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj1CyS" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj1CyT" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsAqfz" role="33vP2m">
-              <node concept="1pGfFk" id="Atm5KsAqf$" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj1CyU" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj1CyV" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="Atm5KsAqf_" role="37wK5m">
-                  <ref role="3cqZAo" node="Atm5KsAqfq" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj1CyW" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj1CyJ" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="Atm5KsAqfA" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj1CyX" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj1CyY" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -2010,7 +2091,7 @@
                             <node concept="2OqwBi" id="Atm5KsAqfK" role="2Oq$k0">
                               <node concept="2OqwBi" id="Atm5KsAqfL" role="2Oq$k0">
                                 <node concept="37vLTw" id="Atm5KsAqfM" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="Atm5KsAqfw" resolve="tree" />
+                                  <ref role="3cqZAo" node="4uaOjKj1CyQ" resolve="tree" />
                                 </node>
                                 <node concept="liA8E" id="Atm5KsAqfN" role="2OqNvi">
                                   <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -2098,7 +2179,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsAqga" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsAqgb" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsAqfw" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj1CyQ" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsAqgc" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -2114,7 +2195,7 @@
         <node concept="3clFbF" id="Atm5KsAqgf" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsAqgg" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsAqgh" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsAqfw" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj1CyQ" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsAqgi" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -2127,7 +2208,7 @@
         <node concept="3clFbF" id="Atm5KsB348" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsB349" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsB34a" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsAqfw" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj1CyQ" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsB34b" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -2140,7 +2221,7 @@
         <node concept="3clFbF" id="Atm5KsB36F" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsB36G" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsB36H" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsAqfw" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj1CyQ" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsB36I" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -2158,7 +2239,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsAqgp" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsAqgq" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsAqfw" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj1CyQ" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsAqgr" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -2176,39 +2257,48 @@
       <property role="TrG5h" value="testDeletionLeftLeft" />
       <node concept="3cqZAl" id="Atm5KsBs0L" role="3clF45" />
       <node concept="3clFbS" id="Atm5KsBs0M" role="3clF47">
-        <node concept="3cpWs8" id="Atm5KsBs0N" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsBs0O" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj1SHz" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj1SH$" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="Atm5KsBs0P" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj1SH_" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="Atm5KsBs0Q" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj1SHA" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj1SHB" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsBs0R" role="33vP2m">
-              <node concept="HV5vD" id="Atm5KsBs0S" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj1SHC" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj1SHD" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="Atm5KsBs0T" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsBs0U" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj1SHE" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj1SHF" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="Atm5KsBs0V" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj1SHG" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="Atm5KsBs0W" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj1SHH" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj1SHI" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsBs0X" role="33vP2m">
-              <node concept="1pGfFk" id="Atm5KsBs0Y" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj1SHJ" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj1SHK" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="Atm5KsBs0Z" role="37wK5m">
-                  <ref role="3cqZAo" node="Atm5KsBs0O" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj1SHL" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj1SH$" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="Atm5KsBs10" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj1SHM" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj1SHN" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -2231,7 +2321,7 @@
                                   <node concept="2OqwBi" id="Atm5KsBs1c" role="2Oq$k0">
                                     <node concept="2OqwBi" id="Atm5KsBs1d" role="2Oq$k0">
                                       <node concept="37vLTw" id="Atm5KsBs1e" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="Atm5KsBs0U" resolve="tree" />
+                                        <ref role="3cqZAo" node="4uaOjKj1SHF" resolve="tree" />
                                       </node>
                                       <node concept="liA8E" id="Atm5KsBs1f" role="2OqNvi">
                                         <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -2340,7 +2430,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsBs1E" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsBs1F" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsBs0U" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj1SHF" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsBs1G" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -2356,7 +2446,7 @@
         <node concept="3clFbF" id="Atm5KsBs1J" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsBs1K" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsBs1L" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsBs0U" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj1SHF" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsBs1M" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -2374,7 +2464,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsBs23" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsBs24" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsBs0U" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj1SHF" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsBs25" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -2392,39 +2482,48 @@
       <property role="TrG5h" value="testDeletionRightRight" />
       <node concept="3cqZAl" id="Atm5KsCOWx" role="3clF45" />
       <node concept="3clFbS" id="Atm5KsCOWy" role="3clF47">
-        <node concept="3cpWs8" id="Atm5KsCOWz" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsCOW$" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj1TP_" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj1TPA" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="Atm5KsCOW_" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj1TPB" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="Atm5KsCOWA" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj1TPC" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj1TPD" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsCOWB" role="33vP2m">
-              <node concept="HV5vD" id="Atm5KsCOWC" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj1TPE" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj1TPF" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="Atm5KsCOWD" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsCOWE" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj1TPG" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj1TPH" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="Atm5KsCOWF" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj1TPI" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="Atm5KsCOWG" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj1TPJ" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj1TPK" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsCOWH" role="33vP2m">
-              <node concept="1pGfFk" id="Atm5KsCOWI" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj1TPL" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj1TPM" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="Atm5KsCOWJ" role="37wK5m">
-                  <ref role="3cqZAo" node="Atm5KsCOW$" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj1TPN" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj1TPA" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="Atm5KsCOWK" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj1TPO" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj1TPP" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -2447,7 +2546,7 @@
                                   <node concept="2OqwBi" id="Atm5KsCOWZ" role="2Oq$k0">
                                     <node concept="2OqwBi" id="Atm5KsCOX0" role="2Oq$k0">
                                       <node concept="37vLTw" id="Atm5KsCOX1" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="Atm5KsCOWE" resolve="tree" />
+                                        <ref role="3cqZAo" node="4uaOjKj1TPH" resolve="tree" />
                                       </node>
                                       <node concept="liA8E" id="Atm5KsCOX2" role="2OqNvi">
                                         <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -2556,7 +2655,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsCOXz" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsCOX$" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsCOWE" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj1TPH" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsCOX_" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -2572,7 +2671,7 @@
         <node concept="3clFbF" id="Atm5KsCOXC" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsCOXD" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsCOXE" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsCOWE" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj1TPH" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsCOXF" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -2590,7 +2689,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsCOXM" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsCOXN" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsCOWE" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj1TPH" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsCOXO" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -2608,39 +2707,48 @@
       <property role="TrG5h" value="testDeletionLeftRight" />
       <node concept="3cqZAl" id="Atm5KsGg47" role="3clF45" />
       <node concept="3clFbS" id="Atm5KsGg48" role="3clF47">
-        <node concept="3cpWs8" id="Atm5KsGg49" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsGg4a" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj20w9" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj20wa" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="Atm5KsGg4b" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj20wb" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="Atm5KsGg4c" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj20wc" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj20wd" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsGg4d" role="33vP2m">
-              <node concept="HV5vD" id="Atm5KsGg4e" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj20we" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj20wf" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="Atm5KsGg4f" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsGg4g" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj20wg" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj20wh" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="Atm5KsGg4h" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj20wi" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="Atm5KsGg4i" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj20wj" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj20wk" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsGg4j" role="33vP2m">
-              <node concept="1pGfFk" id="Atm5KsGg4k" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj20wl" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj20wm" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="Atm5KsGg4l" role="37wK5m">
-                  <ref role="3cqZAo" node="Atm5KsGg4a" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj20wn" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj20wa" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="Atm5KsGg4m" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj20wo" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj20wp" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -2665,7 +2773,7 @@
                                       <node concept="2OqwBi" id="Atm5KsGg4_" role="2Oq$k0">
                                         <node concept="2OqwBi" id="Atm5KsGg4A" role="2Oq$k0">
                                           <node concept="37vLTw" id="Atm5KsGg4B" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="Atm5KsGg4g" resolve="tree" />
+                                            <ref role="3cqZAo" node="4uaOjKj20wh" resolve="tree" />
                                           </node>
                                           <node concept="liA8E" id="Atm5KsGg4C" role="2OqNvi">
                                             <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -2788,7 +2896,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsGg59" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsGg5a" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsGg4g" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj20wh" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsGg5b" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -2804,7 +2912,7 @@
         <node concept="3clFbF" id="Atm5KsHsta" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsHsLj" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsHst8" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsGg4g" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj20wh" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsHtgc" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -2817,7 +2925,7 @@
         <node concept="3clFbF" id="Atm5KsHxIO" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsHy3N" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsHxIM" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsGg4g" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj20wh" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsHyzy" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -2835,7 +2943,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsHArU" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsHArV" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsGg4g" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj20wh" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsHArW" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -2853,39 +2961,48 @@
       <property role="TrG5h" value="testDeletionRightLeft" />
       <node concept="3cqZAl" id="Atm5KsHH9H" role="3clF45" />
       <node concept="3clFbS" id="Atm5KsHH9I" role="3clF47">
-        <node concept="3cpWs8" id="Atm5KsHH9J" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsHH9K" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj27eW" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj27eX" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="Atm5KsHH9L" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj27eY" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="Atm5KsHH9M" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj27eZ" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj27f0" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsHH9N" role="33vP2m">
-              <node concept="HV5vD" id="Atm5KsHH9O" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj27f1" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj27f2" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="Atm5KsHH9P" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsHH9Q" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj27f3" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj27f4" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="Atm5KsHH9R" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj27f5" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="Atm5KsHH9S" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj27f6" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj27f7" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsHH9T" role="33vP2m">
-              <node concept="1pGfFk" id="Atm5KsHH9U" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj27f8" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj27f9" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="Atm5KsHH9V" role="37wK5m">
-                  <ref role="3cqZAo" node="Atm5KsHH9K" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj27fa" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj27eX" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="Atm5KsHH9W" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj27fb" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj27fc" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -2910,7 +3027,7 @@
                                       <node concept="2OqwBi" id="Atm5KsHHad" role="2Oq$k0">
                                         <node concept="2OqwBi" id="Atm5KsHHae" role="2Oq$k0">
                                           <node concept="37vLTw" id="Atm5KsHHaf" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="Atm5KsHH9Q" resolve="tree" />
+                                            <ref role="3cqZAo" node="4uaOjKj27f4" resolve="tree" />
                                           </node>
                                           <node concept="liA8E" id="Atm5KsHHag" role="2OqNvi">
                                             <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -3033,7 +3150,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsHHaP" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsHHaQ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsHH9Q" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj27f4" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsHHaR" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -3049,7 +3166,7 @@
         <node concept="3clFbF" id="Atm5KsHHaU" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsHHaV" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsHHaW" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsHH9Q" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj27f4" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsHHaX" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -3062,7 +3179,7 @@
         <node concept="3clFbF" id="Atm5KsHHaZ" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsHHb0" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsHHb1" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsHH9Q" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj27f4" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsHHb2" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -3080,7 +3197,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsHHb9" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsHHba" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsHH9Q" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj27f4" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsHHbb" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -3098,39 +3215,48 @@
       <property role="TrG5h" value="testDeletionRightCopy1" />
       <node concept="3cqZAl" id="Atm5KsIVZv" role="3clF45" />
       <node concept="3clFbS" id="Atm5KsIVZw" role="3clF47">
-        <node concept="3cpWs8" id="Atm5KsIVZx" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsIVZy" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2edE" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2edF" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="Atm5KsIVZz" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2edG" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="Atm5KsIVZ$" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2edH" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2edI" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsIVZ_" role="33vP2m">
-              <node concept="HV5vD" id="Atm5KsIVZA" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2edJ" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj2edK" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="Atm5KsIVZB" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsIVZC" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2edL" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2edM" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="Atm5KsIVZD" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2edN" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="Atm5KsIVZE" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2edO" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2edP" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsIVZF" role="33vP2m">
-              <node concept="1pGfFk" id="Atm5KsIVZG" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2edQ" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj2edR" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="Atm5KsIVZH" role="37wK5m">
-                  <ref role="3cqZAo" node="Atm5KsIVZy" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj2edS" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj2edF" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="Atm5KsIVZI" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj2edT" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj2edU" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -3157,7 +3283,7 @@
                                           <node concept="2OqwBi" id="Atm5KsIVZZ" role="2Oq$k0">
                                             <node concept="2OqwBi" id="Atm5KsIW00" role="2Oq$k0">
                                               <node concept="37vLTw" id="Atm5KsIW01" role="2Oq$k0">
-                                                <ref role="3cqZAo" node="Atm5KsIVZC" resolve="tree" />
+                                                <ref role="3cqZAo" node="4uaOjKj2edM" resolve="tree" />
                                               </node>
                                               <node concept="liA8E" id="Atm5KsIW02" role="2OqNvi">
                                                 <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -3294,7 +3420,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsIW0B" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsIW0C" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsIVZC" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj2edM" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsIW0D" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -3310,7 +3436,7 @@
         <node concept="3clFbF" id="Atm5KsIW0G" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsIW0H" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsIW0I" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsIVZC" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj2edM" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsIW0J" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -3328,7 +3454,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsIW0V" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsIW0W" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsIVZC" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj2edM" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsIW0X" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -3346,39 +3472,48 @@
       <property role="TrG5h" value="testDeletionRightCopy2" />
       <node concept="3cqZAl" id="Atm5KsKuHk" role="3clF45" />
       <node concept="3clFbS" id="Atm5KsKuHl" role="3clF47">
-        <node concept="3cpWs8" id="Atm5KsKuHm" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsKuHn" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2lt_" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2ltA" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="Atm5KsKuHo" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2ltB" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="Atm5KsKuHp" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2ltC" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2ltD" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsKuHq" role="33vP2m">
-              <node concept="HV5vD" id="Atm5KsKuHr" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2ltE" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj2ltF" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="Atm5KsKuHs" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsKuHt" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2ltG" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2ltH" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="Atm5KsKuHu" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2ltI" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="Atm5KsKuHv" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2ltJ" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2ltK" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsKuHw" role="33vP2m">
-              <node concept="1pGfFk" id="Atm5KsKuHx" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2ltL" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj2ltM" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="Atm5KsKuHy" role="37wK5m">
-                  <ref role="3cqZAo" node="Atm5KsKuHn" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj2ltN" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj2ltA" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="Atm5KsKuHz" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj2ltO" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj2ltP" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -3405,7 +3540,7 @@
                                           <node concept="2OqwBi" id="Atm5KsKuHQ" role="2Oq$k0">
                                             <node concept="2OqwBi" id="Atm5KsKuHR" role="2Oq$k0">
                                               <node concept="37vLTw" id="Atm5KsKuHS" role="2Oq$k0">
-                                                <ref role="3cqZAo" node="Atm5KsKuHt" resolve="tree" />
+                                                <ref role="3cqZAo" node="4uaOjKj2ltH" resolve="tree" />
                                               </node>
                                               <node concept="liA8E" id="Atm5KsKuHT" role="2OqNvi">
                                                 <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -3542,7 +3677,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsKuIy" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsKuIz" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsKuHt" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj2ltH" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsKuI$" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -3558,7 +3693,7 @@
         <node concept="3clFbF" id="Atm5KsKuIB" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsKuIC" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsKuID" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsKuHt" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj2ltH" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsKuIE" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -3571,7 +3706,7 @@
         <node concept="3clFbF" id="Atm5KsKQne" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsKQIB" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsKQnc" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsKuHt" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj2ltH" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsKR6B" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -3584,7 +3719,7 @@
         <node concept="3clFbF" id="Atm5KsLfCE" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsLfCF" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsLfCG" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsKuHt" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj2ltH" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsLfCH" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -3597,7 +3732,7 @@
         <node concept="3clFbF" id="Atm5KsKWEJ" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsKX2Y" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsKWEH" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsKuHt" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj2ltH" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsL0VF" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -3610,7 +3745,7 @@
         <node concept="3clFbF" id="Atm5KsL5CU" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsL63T" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsL5CS" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsKuHt" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj2ltH" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsL9Y5" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -3623,7 +3758,7 @@
         <node concept="3clFbF" id="Atm5KsLaSE" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsLaSF" role="3clFbG">
             <node concept="37vLTw" id="Atm5KsLaSG" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsKuHt" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj2ltH" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsLaSH" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -3641,7 +3776,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsKuIL" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsKuIM" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsKuHt" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj2ltH" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsKuIN" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -3659,39 +3794,48 @@
       <property role="TrG5h" value="testDeletionDestruct" />
       <node concept="3cqZAl" id="Atm5KsD8zV" role="3clF45" />
       <node concept="3clFbS" id="Atm5KsD8zW" role="3clF47">
-        <node concept="3cpWs8" id="Atm5KsD8zX" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsD8zY" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2t18" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2t19" role="3cpWs9">
             <property role="TrG5h" value="nodeFactory" />
-            <node concept="3uibUv" id="Atm5KsD8zZ" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2t1a" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
-              <node concept="3uibUv" id="Atm5KsD8$0" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2t1b" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2t1c" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsD8$1" role="33vP2m">
-              <node concept="HV5vD" id="Atm5KsD8$2" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2t1d" role="33vP2m">
+              <node concept="HV5vD" id="4uaOjKj2t1e" role="2ShVmc">
                 <ref role="HV5vE" node="3RjqiP9ZNkk" resolve="IntegerNodeFactory" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="Atm5KsD8$3" role="3cqZAp">
-          <node concept="3cpWsn" id="Atm5KsD8$4" role="3cpWs9">
+        <node concept="3cpWs8" id="4uaOjKj2t1f" role="3cqZAp">
+          <node concept="3cpWsn" id="4uaOjKj2t1g" role="3cpWs9">
             <property role="TrG5h" value="tree" />
-            <node concept="3uibUv" id="Atm5KsD8$5" role="1tU5fm">
+            <node concept="3uibUv" id="4uaOjKj2t1h" role="1tU5fm">
               <ref role="3uigEE" to="gtp9:3azqxJjwbhm" resolve="AVLTree" />
-              <node concept="3uibUv" id="Atm5KsD8$6" role="11_B2D">
+              <node concept="3uibUv" id="4uaOjKj2t1i" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="4uaOjKj2t1j" role="11_B2D">
+                <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="Atm5KsD8$7" role="33vP2m">
-              <node concept="1pGfFk" id="Atm5KsD8$8" role="2ShVmc">
+            <node concept="2ShNRf" id="4uaOjKj2t1k" role="33vP2m">
+              <node concept="1pGfFk" id="4uaOjKj2t1l" role="2ShVmc">
                 <ref role="37wK5l" to="gtp9:3azqxJjwcf5" resolve="AVLTreeImpl" />
-                <node concept="37vLTw" id="Atm5KsD8$9" role="37wK5m">
-                  <ref role="3cqZAo" node="Atm5KsD8zY" resolve="nodeFactory" />
+                <node concept="37vLTw" id="4uaOjKj2t1m" role="37wK5m">
+                  <ref role="3cqZAo" node="4uaOjKj2t19" resolve="nodeFactory" />
                 </node>
-                <node concept="3uibUv" id="Atm5KsD8$a" role="1pMfVU">
+                <node concept="3uibUv" id="4uaOjKj2t1n" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                </node>
+                <node concept="3uibUv" id="4uaOjKj2t1o" role="1pMfVU">
+                  <ref role="3uigEE" node="3RjqiP9ZJI2" resolve="IntegerNode" />
                 </node>
               </node>
             </node>
@@ -3714,7 +3858,7 @@
                                   <node concept="2OqwBi" id="Atm5KsD8$p" role="2Oq$k0">
                                     <node concept="2OqwBi" id="Atm5KsD8$q" role="2Oq$k0">
                                       <node concept="37vLTw" id="Atm5KsD8$r" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="Atm5KsD8$4" resolve="tree" />
+                                        <ref role="3cqZAo" node="4uaOjKj2t1g" resolve="tree" />
                                       </node>
                                       <node concept="liA8E" id="Atm5KsD8$s" role="2OqNvi">
                                         <ref role="37wK5l" to="gtp9:3azqxJjwbXA" resolve="insert" />
@@ -3823,7 +3967,7 @@
               <ref role="2WH_rO" node="Atm5Ks$Gxj" resolve="getPreOrderDump" />
               <node concept="2OqwBi" id="Atm5KsD8$X" role="2XxRq1">
                 <node concept="37vLTw" id="Atm5KsD8$Y" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Atm5KsD8$4" resolve="tree" />
+                  <ref role="3cqZAo" node="4uaOjKj2t1g" resolve="tree" />
                 </node>
                 <node concept="liA8E" id="Atm5KsD8$Z" role="2OqNvi">
                   <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
@@ -3852,7 +3996,7 @@
                                   <node concept="2OqwBi" id="Atm5KsDoWR" role="2Oq$k0">
                                     <node concept="2OqwBi" id="Atm5KsD8_3" role="2Oq$k0">
                                       <node concept="37vLTw" id="Atm5KsD8_4" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="Atm5KsD8$4" resolve="tree" />
+                                        <ref role="3cqZAo" node="4uaOjKj2t1g" resolve="tree" />
                                       </node>
                                       <node concept="liA8E" id="Atm5KsD8_5" role="2OqNvi">
                                         <ref role="37wK5l" to="gtp9:3azqxJjwc6N" resolve="remove" />
@@ -3957,7 +4101,7 @@
         <node concept="3vlDli" id="Atm5KsFCxa" role="3cqZAp">
           <node concept="2OqwBi" id="Atm5KsFFlK" role="3tpDZB">
             <node concept="37vLTw" id="Atm5KsFEX2" role="2Oq$k0">
-              <ref role="3cqZAo" node="Atm5KsD8$4" resolve="tree" />
+              <ref role="3cqZAo" node="4uaOjKj2t1g" resolve="tree" />
             </node>
             <node concept="liA8E" id="Atm5KsFI1z" role="2OqNvi">
               <ref role="37wK5l" to="gtp9:3azqxJjwtRT" resolve="getRoot" />
