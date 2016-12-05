@@ -21,7 +21,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="fjup" ref="r:d9560246-a400-4b05-820e-97ff6dddd2fd(com.mbeddr.analyses.prism.rt.utils)" />
     <import index="xm5f" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd290(com.mbeddr.analyses.prism.rt.runner)" />
-    <import index="odjd" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(com.mbeddr.analyses.spin.promela.rt.ui)" implicit="true" />
+    <import index="odjf" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81167(com.mbeddr.analyses.prism.rt.ui)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -346,7 +346,7 @@
               </node>
             </node>
             <node concept="liA8E" id="3Ymokd9Fl4n" role="2OqNvi">
-              <ref role="37wK5l" to="odjd:6izRX53qxjr" resolve="updateResult" />
+              <ref role="37wK5l" to="odjf:6izRX53qxjr" resolve="updateResult" />
               <node concept="37vLTw" id="4kcU3YrkTqY" role="37wK5m">
                 <ref role="3cqZAo" node="4kcU3YrkTaQ" resolve="cmd" />
               </node>
@@ -376,8 +376,8 @@
     <node concept="2BZ0e9" id="6izRX53yGHB" role="2XNbBz">
       <property role="TrG5h" value="panel" />
       <node concept="3Tm6S6" id="6izRX53yGHC" role="1B3o_S" />
-      <node concept="3uibUv" id="4kcU3YrkO1N" role="1tU5fm">
-        <ref role="3uigEE" to="odjd:6izRX53pUdc" resolve="SpinRawOutputUI" />
+      <node concept="3uibUv" id="48h5VLbLdue" role="1tU5fm">
+        <ref role="3uigEE" to="odjf:6izRX53pUdc" resolve="RawOutputUI" />
       </node>
     </node>
     <node concept="2UmK3q" id="6izRX53qGZc" role="2Um5zG">
@@ -397,8 +397,8 @@
         <node concept="3clFbF" id="6izRX53yGTI" role="3cqZAp">
           <node concept="37vLTI" id="6izRX53yHdB" role="3clFbG">
             <node concept="2ShNRf" id="6izRX53z$ZW" role="37vLTx">
-              <node concept="1pGfFk" id="6izRX53z_u6" role="2ShVmc">
-                <ref role="37wK5l" to="odjd:6izRX53q9Aq" resolve="SpinRawOutputUI" />
+              <node concept="1pGfFk" id="48h5VLbLeza" role="2ShVmc">
+                <ref role="37wK5l" to="odjf:6izRX53q9Aq" resolve="RawOutputUI" />
               </node>
             </node>
             <node concept="2OqwBi" id="6izRX53yGTC" role="37vLTJ">
