@@ -5873,13 +5873,13 @@
                   <node concept="Vb5G_" id="6CbEPf1ZJw5" role="10QFUP">
                     <ref role="37wK5l" node="3Osd_yxdUch" resolve="getBoxModel" />
                   </node>
-                  <node concept="3uibUv" id="6CbEPf1ZJw6" role="10QFUM">
-                    <ref role="3uigEE" to="rtot:3Osd_yxeiP0" resolve="EditorCellBoxModel" />
+                  <node concept="3uibUv" id="1UXS3laGX8o" role="10QFUM">
+                    <ref role="3uigEE" to="rtot:j3_OFQOzBo" resolve="IEditorCellBoxModel" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="6CbEPf1ZJw7" role="2OqNvi">
-                <ref role="37wK5l" to="rtot:7x0eTkpaBx" resolve="getAdditionalPadding" />
+                <ref role="37wK5l" to="rtot:j3_OFQPYEm" resolve="getAdditionalPadding" />
               </node>
             </node>
             <node concept="liA8E" id="6CbEPf1ZJw8" role="2OqNvi">
@@ -15608,13 +15608,13 @@
                       <ref role="37wK5l" node="3Osd_yxdUch" resolve="getBoxModel" />
                     </node>
                   </node>
-                  <node concept="3uibUv" id="7x0eTkpN_7" role="10QFUM">
-                    <ref role="3uigEE" to="rtot:3Osd_yxeiP0" resolve="EditorCellBoxModel" />
+                  <node concept="3uibUv" id="5jexlkrvU7H" role="10QFUM">
+                    <ref role="3uigEE" to="rtot:j3_OFQOzBo" resolve="IEditorCellBoxModel" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="6SVXTgIeUNP" role="2OqNvi">
-                <ref role="37wK5l" to="rtot:7x0eTkpaBx" resolve="getAdditionalPadding" />
+                <ref role="37wK5l" to="rtot:j3_OFQPYEm" resolve="getAdditionalPadding" />
               </node>
             </node>
           </node>
