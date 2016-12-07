@@ -92,7 +92,7 @@
       <property role="20kJfa" value="scope" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="5961733595647167384" />
-      <ref role="20lvS9" node="5aWlhTu2ZzL" resolve="LanguagePrefix" />
+      <ref role="20lvS9" node="5aWlhTu2ZzL" resolve="LanguageRegexReference" />
     </node>
     <node concept="1TJgyj" id="30nlpkLbz5c" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -195,11 +195,12 @@
     <property role="EcuMT" value="3516382903881171544" />
   </node>
   <node concept="1TIwiD" id="5aWlhTu2ZzL">
-    <property role="TrG5h" value="LanguagePrefix" />
+    <property role="TrG5h" value="LanguageRegexReference" />
     <property role="EcuMT" value="5961733595646916849" />
+    <property role="34LRSv" value="language name matcher based on regex" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5aWlhTu2Z$m" role="1TKVEl">
-      <property role="TrG5h" value="prefix" />
+      <property role="TrG5h" value="regex" />
       <property role="IQ2nx" value="5961733595646916886" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
@@ -216,6 +217,7 @@
     <property role="3GE5qa" value="seed" />
     <property role="TrG5h" value="SingleModelSeed" />
     <property role="EcuMT" value="2993027727001344799" />
+    <property role="34LRSv" value="single model seed" />
     <ref role="1TJDcQ" node="2A9nHKANPGu" resolve="AbstractSeedModel" />
     <node concept="1TJgyj" id="2A9nHKANPGS" role="1TKVEi">
       <property role="20lmBu" value="reference" />

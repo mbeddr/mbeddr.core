@@ -52,6 +52,7 @@
   <node concept="1TIwiD" id="2A9nHKAOvQN">
     <property role="TrG5h" value="RandomImplementationModuleFromModelSeed" />
     <property role="EcuMT" value="2993027727001517491" />
+    <property role="34LRSv" value="random implementation module from model" />
     <ref role="1TJDcQ" to="gfdq:2A9nHKANPGu" resolve="AbstractSeedModel" />
     <node concept="1TJgyj" id="2A9nHKAOvQS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -74,6 +75,7 @@
   <node concept="1TIwiD" id="52eR6w5Pjok">
     <property role="TrG5h" value="RandomImplementationModuleFromSolution" />
     <property role="EcuMT" value="5804819309059716628" />
+    <property role="34LRSv" value="random implementation module from solution" />
     <ref role="1TJDcQ" to="gfdq:2A9nHKANPGu" resolve="AbstractSeedModel" />
     <node concept="1TJgyj" id="52eR6w5Pjol" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

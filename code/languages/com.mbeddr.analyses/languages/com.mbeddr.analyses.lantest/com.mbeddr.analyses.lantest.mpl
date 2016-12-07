@@ -40,6 +40,7 @@
         <module reference="0316e52b-aaa9-47f4-9c0b-ca0d60cdc961(com.mbeddr.analyses.lantest)" version="0" />
         <module reference="e055d8ac-a8fb-43b4-a46d-ef68aee883d5(com.mbeddr.analyses.lantest#3516382903881181575)" version="0" />
         <module reference="5ef691b5-60ce-4ece-a04e-25e642dfa128(com.mbeddr.mpsutil.lantest)" version="0" />
+        <module reference="4ac576d1-143d-4250-b299-9dfff325fcb9(com.mbeddr.mpsutil.lantest.rt)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
@@ -56,7 +57,7 @@
     <dependency reexport="false">62296a07-bc38-46d2-8034-198c24063588(com.mbeddr.core.modules.gen)</dependency>
     <dependency reexport="false">a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</dependency>
     <dependency reexport="false">564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)</dependency>
-    <dependency reexport="false">4ac576d1-143d-4250-b299-9dfff325fcb9(com.mbeddr.mpsutil.lantest.rt)</dependency>
+    <dependency reexport="true">4ac576d1-143d-4250-b299-9dfff325fcb9(com.mbeddr.mpsutil.lantest.rt)</dependency>
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)</dependency>

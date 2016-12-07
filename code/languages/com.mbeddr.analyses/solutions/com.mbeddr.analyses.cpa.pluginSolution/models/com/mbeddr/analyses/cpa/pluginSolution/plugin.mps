@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
@@ -72,11 +72,14 @@
       <concept id="6547237850567458268" name="jetbrains.mps.lang.plugin.structure.BaseToolDeclaration" flags="ng" index="2XNcJY">
         <property id="2498620720770664572" name="position" index="2bmUCM" />
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
-        <property id="6547237850567462701" name="number" index="2XNb$f" />
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
+        <child id="471625927503648174" name="shortcut" index="15cTzA" />
         <child id="6791676465872004185" name="toolIcon" index="1nVCmq" />
+      </concept>
+      <concept id="471625927503601927" name="jetbrains.mps.lang.plugin.structure.NumberToolShortcut" flags="ng" index="15feLf">
+        <property id="471625927503601955" name="number" index="15feLF" />
       </concept>
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
@@ -460,7 +463,6 @@
     <property role="TrG5h" value="CPATool" />
     <property role="2XNbzY" value="CPAchecker Lifted Results" />
     <property role="2bmUCM" value="RIGHT" />
-    <property role="2XNb$f" value="1" />
     <node concept="1QGGSu" id="3Ymokd9HSJf" role="1nVCmq">
       <property role="1iqoE4" value="${module}/icons/verify.png" />
     </node>
@@ -671,6 +673,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="15feLf" id="48h5VLbOMk5" role="15cTzA">
+      <property role="15feLF" value="1" />
     </node>
   </node>
   <node concept="sEfby" id="6izRX53qGZb">
