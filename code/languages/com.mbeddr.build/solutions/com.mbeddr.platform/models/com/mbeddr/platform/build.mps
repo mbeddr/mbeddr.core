@@ -4229,6 +4229,9 @@
         <node concept="1E0d5M" id="5GUwywcVawf" role="1E1XAP">
           <ref role="1E0d5P" node="2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
         </node>
+        <node concept="1E0d5M" id="48h5VLcqgim" role="1E1XAP">
+          <ref role="1E0d5P" node="48h5VLcq9kG" resolve="com.mbeddr.mpsutil.interpreter.plugin" />
+        </node>
         <node concept="1SiIV0" id="5GUwywcVawg" role="3bR37C">
           <node concept="1Busua" id="5GUwywcVawh" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6L2l" resolve="jetbrains.mps.baseLanguage.logging" />
@@ -4266,9 +4269,6 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5GUwywcVeK8" resolve="com.mbeddr.mpsutil.common" />
           </node>
-        </node>
-        <node concept="1E0d5M" id="48h5VLcqgim" role="1E1XAP">
-          <ref role="1E0d5P" node="48h5VLcq9kG" resolve="com.mbeddr.mpsutil.interpreter.plugin" />
         </node>
         <node concept="1SiIV0" id="48h5VLcqiba" role="3bR37C">
           <node concept="3bR9La" id="48h5VLcqibb" role="1SiIV1">
@@ -10257,6 +10257,24 @@
           <node concept="3bR9La" id="4nf2Hm5iwBK" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="90a9:6SVXTgIel8z" resolve="de.itemis.mps.editor.celllayout.styles" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5kTg4zgkemH" role="3bR37C">
+          <node concept="3bR9La" id="5kTg4zgkemI" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8Y" resolve="jetbrains.mps.lang.project" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5kTg4zgkemJ" role="3bR37C">
+          <node concept="3bR9La" id="5kTg4zgkemK" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5kTg4zgkemL" role="3bR37C">
+          <node concept="3bR9La" id="5kTg4zgkemM" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="90a9:7TpiM9SsCWu" resolve="de.itemis.mps.mouselistener.runtime" />
           </node>
         </node>
       </node>
