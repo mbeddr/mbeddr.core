@@ -66,9 +66,6 @@
         <child id="2990657152023305369" name="type" index="2eP6Tc" />
         <child id="4064994170503934946" name="operation" index="iwB5b" />
       </concept>
-      <concept id="2990657152023305814" name="com.mbeddr.mpsutil.inca.data.structure.DataConstructorCallWrapper" flags="ng" index="2eP6M3">
-        <child id="2990657152023305918" name="call" index="2eP6LF" />
-      </concept>
       <concept id="7225463921150186994" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperation" flags="ig" index="hMdjl" />
       <concept id="7225463921150311746" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperationParameterDeclaration" flags="ig" index="hPFL_" />
       <concept id="8648799613703210042" name="com.mbeddr.mpsutil.inca.data.structure.EmptyLatticeDefinitionModuleContent" flags="ng" index="2slB5m" />
@@ -90,13 +87,17 @@
       </concept>
       <concept id="3837287384171340389" name="com.mbeddr.mpsutil.inca.data.structure.IDataConstructorCall" flags="ng" index="2ZRyFI">
         <reference id="3837287384171340390" name="dataConstructor" index="2ZRyFH" />
-        <child id="3837287384171340393" name="arguments" index="2ZRyFy" />
-        <child id="7197326959315955294" name="typeConstructor" index="3_Jajy" />
       </concept>
       <concept id="3837287384171340388" name="com.mbeddr.mpsutil.inca.data.structure.DataConstructorCall" flags="ng" index="2ZRyFJ" />
       <concept id="8400401379548959316" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperationCall" flags="ng" index="1i8UFo" />
       <concept id="8607574815738007253" name="com.mbeddr.mpsutil.inca.data.structure.JoinOperation" flags="ng" index="3iRr5_" />
       <concept id="8607574815738006082" name="com.mbeddr.mpsutil.inca.data.structure.MeetOperation" flags="ng" index="3iRrnM" />
+      <concept id="5848731312440774191" name="com.mbeddr.mpsutil.inca.data.structure.ILatticeMemberCall" flags="ng" index="1p__0b">
+        <child id="3837287384171340393" name="arguments" index="2ZRyFy" />
+      </concept>
+      <concept id="5848731312440203838" name="com.mbeddr.mpsutil.inca.data.structure.ILatticeOperationCall" flags="ng" index="1pAggq">
+        <reference id="4806602015086699633" name="operation" index="2RnLXx" />
+      </concept>
       <concept id="3410902671525317330" name="com.mbeddr.mpsutil.inca.data.structure.MatchCaseBlock" flags="ng" index="1sTRWU">
         <child id="3410902671525324608" name="body" index="1sTPaC" />
       </concept>
@@ -124,10 +125,6 @@
       </concept>
       <concept id="7197326959317258822" name="com.mbeddr.mpsutil.inca.data.structure.WildCardPattern" flags="ng" index="3_$9zU" />
       <concept id="7197326959317524891" name="com.mbeddr.mpsutil.inca.data.structure.Pattern" flags="ng" index="3__aGB" />
-      <concept id="7197326959315955332" name="com.mbeddr.mpsutil.inca.data.structure.TypeConstructorReference" flags="ng" index="3_JagS" />
-      <concept id="7197326959315955301" name="com.mbeddr.mpsutil.inca.data.structure.ITypeConstructorReference" flags="ng" index="3_Jajp">
-        <reference id="7197326959315955302" name="constructor" index="3_Jajq" />
-      </concept>
       <concept id="2778512680760986556" name="com.mbeddr.mpsutil.inca.data.structure.ILatticeDefinitionModule" flags="ng" index="3U8w$N">
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -501,19 +498,14 @@
             <property role="TrG5h" value="type" />
           </node>
         </node>
-        <node concept="30Nfyg" id="2A0WHmBoR8m" role="1dgzf0">
-          <node concept="2eP6M3" id="2A0WHmBoRfC" role="30Nf_D">
-            <node concept="2ZRyFJ" id="2XlXuxNGbYD" role="2eP6LF">
-              <ref role="2ZRyFH" node="6h60itPDaar" resolve="Exact" />
-              <node concept="3_JagS" id="37SozOqiW$$" role="3_Jajy">
-                <ref role="3_Jajq" node="6h60itPAxDx" resolve="ConceptLattice" />
-              </node>
-              <node concept="2YIFZM" id="2zB$jxpFO4d" role="2ZRyFy">
-                <ref role="1Pybhc" to="3o3z:~ImmutableSet" resolve="ImmutableSet" />
-                <ref role="37wK5l" to="3o3z:~ImmutableSet.of(java.lang.Object):com.google.common.collect.ImmutableSet" resolve="of" />
-                <node concept="1sjAk5" id="2zB$jxpFPoP" role="37wK5m">
-                  <ref role="1sjAk2" node="2XlXuxNGg1P" resolve="type" />
-                </node>
+        <node concept="30Nfyg" id="54ERyg8KRCU" role="1dgzf0">
+          <node concept="2ZRyFJ" id="54ERyg8KUrp" role="30Nf_D">
+            <ref role="2ZRyFH" node="6h60itPDaar" resolve="Exact" />
+            <node concept="2YIFZM" id="54ERyg8L22B" role="2ZRyFy">
+              <ref role="1Pybhc" to="3o3z:~ImmutableSet" resolve="ImmutableSet" />
+              <ref role="37wK5l" to="3o3z:~ImmutableSet.of(java.lang.Object):com.google.common.collect.ImmutableSet" resolve="of" />
+              <node concept="1sjAk5" id="54ERyg8L3NK" role="37wK5m">
+                <ref role="1sjAk2" node="2XlXuxNGg1P" resolve="type" />
               </node>
             </node>
           </node>
@@ -577,19 +569,14 @@
             <property role="TrG5h" value="type" />
           </node>
         </node>
-        <node concept="30Nfyg" id="2A0WHmBoWX5" role="1dgzf0">
-          <node concept="2eP6M3" id="2A0WHmBoX8t" role="30Nf_D">
-            <node concept="2ZRyFJ" id="2XlXuxNCNA3" role="2eP6LF">
-              <ref role="2ZRyFH" node="6h60itPDaar" resolve="Exact" />
-              <node concept="3_JagS" id="37SozOqiW$s" role="3_Jajy">
-                <ref role="3_Jajq" node="6h60itPAxDx" resolve="ConceptLattice" />
-              </node>
-              <node concept="2YIFZM" id="2zB$jxpFQYU" role="2ZRyFy">
-                <ref role="37wK5l" to="3o3z:~ImmutableSet.of(java.lang.Object):com.google.common.collect.ImmutableSet" resolve="of" />
-                <ref role="1Pybhc" to="3o3z:~ImmutableSet" resolve="ImmutableSet" />
-                <node concept="1sjAk5" id="2zB$jxpFQYV" role="37wK5m">
-                  <ref role="1sjAk2" node="2A0WHmBoYE5" resolve="type" />
-                </node>
+        <node concept="30Nfyg" id="54ERyg8IXLl" role="1dgzf0">
+          <node concept="2ZRyFJ" id="54ERyg8NHF3" role="30Nf_D">
+            <ref role="2ZRyFH" node="6h60itPDaar" resolve="Exact" />
+            <node concept="2YIFZM" id="54ERyg8NHF4" role="2ZRyFy">
+              <ref role="1Pybhc" to="3o3z:~ImmutableSet" resolve="ImmutableSet" />
+              <ref role="37wK5l" to="3o3z:~ImmutableSet.of(java.lang.Object):com.google.common.collect.ImmutableSet" resolve="of" />
+              <node concept="1sjAk5" id="54ERyg8NHF5" role="37wK5m">
+                <ref role="1sjAk2" node="2A0WHmBoYE5" resolve="type" />
               </node>
             </node>
           </node>
@@ -692,19 +679,14 @@
             <property role="TrG5h" value="type" />
           </node>
         </node>
-        <node concept="30Nfyg" id="2XlXuxNMY1D" role="1dgzf0">
-          <node concept="2eP6M3" id="2XlXuxNMY1E" role="30Nf_D">
-            <node concept="2ZRyFJ" id="2XlXuxNMY1F" role="2eP6LF">
-              <ref role="2ZRyFH" node="6h60itPDaar" resolve="Exact" />
-              <node concept="3_JagS" id="37SozOqiW$q" role="3_Jajy">
-                <ref role="3_Jajq" node="6h60itPAxDx" resolve="ConceptLattice" />
-              </node>
-              <node concept="2YIFZM" id="2zB$jxpFSMA" role="2ZRyFy">
-                <ref role="37wK5l" to="3o3z:~ImmutableSet.of(java.lang.Object):com.google.common.collect.ImmutableSet" resolve="of" />
-                <ref role="1Pybhc" to="3o3z:~ImmutableSet" resolve="ImmutableSet" />
-                <node concept="1sjAk5" id="2zB$jxpFSMB" role="37wK5m">
-                  <ref role="1sjAk2" node="2XlXuxNMHDE" resolve="type" />
-                </node>
+        <node concept="30Nfyg" id="54ERyg8J0Lv" role="1dgzf0">
+          <node concept="2ZRyFJ" id="54ERyg8MznJ" role="30Nf_D">
+            <ref role="2ZRyFH" node="6h60itPDaar" resolve="Exact" />
+            <node concept="2YIFZM" id="54ERyg8MEXs" role="2ZRyFy">
+              <ref role="1Pybhc" to="3o3z:~ImmutableSet" resolve="ImmutableSet" />
+              <ref role="37wK5l" to="3o3z:~ImmutableSet.of(java.lang.Object):com.google.common.collect.ImmutableSet" resolve="of" />
+              <node concept="1sjAk5" id="54ERyg8MI8w" role="37wK5m">
+                <ref role="1sjAk2" node="2XlXuxNMHDE" resolve="type" />
               </node>
             </node>
           </node>
@@ -954,12 +936,12 @@
                   <ref role="1tneST" node="6h60itPDaar" resolve="Exact" />
                 </node>
               </node>
-              <node concept="1i8UFo" id="7ike8KAI8hi" role="EsVZz">
-                <ref role="37wK5l" node="7ike8KAHAHm" resolve="isSubConceptOf" />
-                <node concept="1tmTer" id="7ike8KAI8iI" role="37wK5m">
+              <node concept="1i8UFo" id="4aOuL3Q0Mye" role="EsVZz">
+                <ref role="2RnLXx" node="7ike8KAHAHm" resolve="isSubConceptOf" />
+                <node concept="1tmTer" id="4aOuL3Q0O09" role="2ZRyFy">
                   <ref role="1tmTeq" node="2XlXuxNC_EX" resolve="lv" />
                 </node>
-                <node concept="1tmTer" id="7ike8KAI8ly" role="37wK5m">
+                <node concept="1tmTer" id="4aOuL3Q0Qoy" role="2ZRyFy">
                   <ref role="1tmTeq" node="2XlXuxNC_FF" resolve="rv" />
                 </node>
               </node>
@@ -1088,15 +1070,6 @@
               <node concept="1sTRWU" id="7ike8KAIcmj" role="EsVZz">
                 <node concept="3clFbS" id="7ike8KAIcml" role="1sTPaC">
                   <node concept="3clFbJ" id="7ike8KAIcnj" role="3cqZAp">
-                    <node concept="1i8UFo" id="7ike8KAIcnv" role="3clFbw">
-                      <ref role="37wK5l" node="7ike8KAHAHm" resolve="isSubConceptOf" />
-                      <node concept="1tmTer" id="7ike8KAIcob" role="37wK5m">
-                        <ref role="1tmTeq" node="2XlXuxNGCFm" resolve="lv" />
-                      </node>
-                      <node concept="1tmTer" id="7ike8KAIcpk" role="37wK5m">
-                        <ref role="1tmTeq" node="2XlXuxNGCFp" resolve="rv" />
-                      </node>
-                    </node>
                     <node concept="3clFbS" id="7ike8KAIcnl" role="3clFbx">
                       <node concept="3cpWs6" id="7ike8KAIcqb" role="3cqZAp">
                         <node concept="37vLTw" id="7ike8KAIemT" role="3cqZAk">
@@ -1105,15 +1078,6 @@
                       </node>
                     </node>
                     <node concept="3eNFk2" id="7ike8KAIcKG" role="3eNLev">
-                      <node concept="1i8UFo" id="7ike8KAIcX3" role="3eO9$A">
-                        <ref role="37wK5l" node="7ike8KAHAHm" resolve="isSubConceptOf" />
-                        <node concept="1tmTer" id="7ike8KAIcY0" role="37wK5m">
-                          <ref role="1tmTeq" node="2XlXuxNGCFp" resolve="rv" />
-                        </node>
-                        <node concept="1tmTer" id="7ike8KAIdlv" role="37wK5m">
-                          <ref role="1tmTeq" node="2XlXuxNGCFm" resolve="lv" />
-                        </node>
-                      </node>
                       <node concept="3clFbS" id="7ike8KAIcKI" role="3eOfB_">
                         <node concept="3cpWs6" id="7ike8KAIdys" role="3cqZAp">
                           <node concept="37vLTw" id="7ike8KAIgT3" role="3cqZAk">
@@ -1121,14 +1085,32 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="1i8UFo" id="4aOuL3Q1Yt3" role="3eO9$A">
+                        <ref role="2RnLXx" node="7ike8KAHAHm" resolve="isSubConceptOf" />
+                        <node concept="1tmTer" id="4aOuL3Q1Yt5" role="2ZRyFy">
+                          <ref role="1tmTeq" node="2XlXuxNGCFp" resolve="rv" />
+                        </node>
+                        <node concept="1tmTer" id="4aOuL3Q1Yt4" role="2ZRyFy">
+                          <ref role="1tmTeq" node="2XlXuxNGCFm" resolve="lv" />
+                        </node>
+                      </node>
                     </node>
                     <node concept="9aQIb" id="7ike8KAIdMl" role="9aQIa">
                       <node concept="3clFbS" id="7ike8KAIdMm" role="9aQI4">
                         <node concept="3cpWs6" id="7ike8KAIe9C" role="3cqZAp">
-                          <node concept="1i8UFo" id="7ike8KAIkQZ" role="3cqZAk">
-                            <ref role="37wK5l" node="2XlXuxNCdlb" resolve="top" />
+                          <node concept="1i8UFo" id="4aOuL3Q1Zwm" role="3cqZAk">
+                            <ref role="2RnLXx" node="2XlXuxNCdlb" resolve="top" />
                           </node>
                         </node>
+                      </node>
+                    </node>
+                    <node concept="1i8UFo" id="4aOuL3Q1XWN" role="3clFbw">
+                      <ref role="2RnLXx" node="7ike8KAHAHm" resolve="isSubConceptOf" />
+                      <node concept="1tmTer" id="4aOuL3Q1Yd3" role="2ZRyFy">
+                        <ref role="1tmTeq" node="2XlXuxNGCFm" resolve="lv" />
+                      </node>
+                      <node concept="1tmTer" id="4aOuL3Q1Ydb" role="2ZRyFy">
+                        <ref role="1tmTeq" node="2XlXuxNGCFp" resolve="rv" />
                       </node>
                     </node>
                   </node>
