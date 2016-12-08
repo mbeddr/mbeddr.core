@@ -4700,6 +4700,38 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="6h7l0fOFbfF" role="3eOfB_">
+                    <node concept="Jncv_" id="53lM3IhP5$t" role="3cqZAp">
+                      <ref role="JncvD" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+                      <node concept="3clFbS" id="53lM3IhP5$x" role="Jncv$">
+                        <node concept="3clFbF" id="53lM3IhOECW" role="3cqZAp">
+                          <node concept="2OqwBi" id="53lM3IhOHIE" role="3clFbG">
+                            <node concept="37vLTw" id="53lM3IhOECU" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1c_2vnOMqdy" resolve="result" />
+                            </node>
+                            <node concept="TSZUe" id="53lM3IhONDj" role="2OqNvi">
+                              <node concept="Jnkvi" id="53lM3IhP7xr" role="25WWJ7">
+                                <ref role="1M0zk5" node="53lM3IhP5$z" resolve="mc" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="JncvC" id="53lM3IhP5$z" role="JncvA">
+                        <property role="TrG5h" value="mc" />
+                        <node concept="2jxLKc" id="53lM3IhP5$$" role="1tU5fm" />
+                      </node>
+                      <node concept="2OqwBi" id="53lM3IhOPgD" role="JncvB">
+                        <node concept="1PxgMI" id="53lM3IhOOno" role="2Oq$k0">
+                          <ref role="1m5ApE" to="clbe:3bHYGwzt_Ut" resolve="SUType" />
+                          <node concept="37vLTw" id="53lM3IhONT1" role="1m5AlR">
+                            <ref role="3cqZAo" node="1c_2vnOMqdw" resolve="t" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="53lM3IhOQdk" role="2OqNvi">
+                          <ref role="37wK5l" node="3bHYGwztGSo" resolve="getSUDeclaration" />
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3clFbF" id="6h7l0fOFDhB" role="3cqZAp">
                       <node concept="2OqwBi" id="6h7l0fOFVMl" role="3clFbG">
                         <node concept="2OqwBi" id="6h7l0fOFHwk" role="2Oq$k0">
