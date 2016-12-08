@@ -887,25 +887,6 @@
     <ref role="1XX52x" to="uu1k:3l0M8IaBI9$" resolve="DataConstructorCall" />
     <node concept="3EZMnI" id="3l0M8IaBIab" role="2wV5jI">
       <node concept="l2Vlx" id="3l0M8IaBIac" role="2iSdaV" />
-      <node concept="_tjkj" id="7xdfKsW77TE" role="3EZMnx">
-        <node concept="3EZMnI" id="7xdfKsW77Uk" role="_tjki">
-          <node concept="l2Vlx" id="7xdfKsW77Ul" role="2iSdaV" />
-          <node concept="1kIj98" id="7xdfKsW77Uy" role="3EZMnx">
-            <node concept="3F1sOY" id="7xdfKsW77UE" role="1kIj9b">
-              <ref role="1NtTu8" to="uu1k:6fy2FM6nETu" resolve="typeConstructor" />
-            </node>
-          </node>
-          <node concept="3F0ifn" id="7xdfKsW77UP" role="3EZMnx">
-            <property role="3F0ifm" value="." />
-            <node concept="11L4FC" id="7xdfKsW78HP" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
-            <node concept="11LMrY" id="7xdfKsW78K3" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1iCGBv" id="3l0M8IaBI9V" role="3EZMnx">
         <ref role="1NtTu8" to="uu1k:3l0M8IaBI9A" resolve="dataConstructor" />
         <node concept="1sVBvm" id="3l0M8IaBI9X" role="1sWHZn">
@@ -1004,19 +985,6 @@
     <property role="3GE5qa" value="definition" />
     <ref role="aqKnT" to="uu1k:7w6HmN$kcgU" resolve="EmptyLatticeDefinitionModuleContent" />
   </node>
-  <node concept="3p36aQ" id="2A0WHmBl9WY">
-    <property role="3GE5qa" value="definition" />
-    <ref role="aqKnT" to="uu1k:2A0WHmBl9Tm" resolve="DataConstructorCallWrapper" />
-  </node>
-  <node concept="24kQdi" id="2A0WHmBl9XI">
-    <property role="3GE5qa" value="definition" />
-    <ref role="1XX52x" to="uu1k:2A0WHmBl9Tm" resolve="DataConstructorCallWrapper" />
-    <node concept="1kIj98" id="2A0WHmBl9XY" role="2wV5jI">
-      <node concept="3F1sOY" id="2A0WHmBl9Yg" role="1kIj9b">
-        <ref role="1NtTu8" to="uu1k:2A0WHmBl9UY" resolve="call" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="6h60itPzHoj">
     <property role="3GE5qa" value="definition" />
     <ref role="1XX52x" to="uu1k:6h60itPzHnM" resolve="LatticeOperation" />
@@ -1098,8 +1066,10 @@
     <ref role="1XX52x" to="uu1k:6h60itP$bP2" resolve="LatticeOperationParameterDeclaration" />
     <node concept="3EZMnI" id="6h60itP$bPz" role="2wV5jI">
       <node concept="l2Vlx" id="6h60itP$bP$" role="2iSdaV" />
-      <node concept="3F0A7n" id="6h60itPK1CG" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="1kIj98" id="5ZcZlaf5LJS" role="3EZMnx">
+        <node concept="3F0A7n" id="5ZcZlaf5LK8" role="1kIj9b">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
       <node concept="3F0ifn" id="6h60itP$bPJ" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -1150,6 +1120,80 @@
       </node>
       <node concept="3F1sOY" id="606mdnYnc6a" role="3EZMnx">
         <ref role="1NtTu8" to="uu1k:606mdnYmDzT" resolve="operation" />
+      </node>
+    </node>
+  </node>
+  <node concept="3p36aQ" id="54ERyg8J8Rv">
+    <property role="3GE5qa" value="adt" />
+    <ref role="aqKnT" to="uu1k:54ERyg8J8QQ" resolve="QualifiedLatticeMemberCall" />
+  </node>
+  <node concept="24kQdi" id="54ERyg8J8RV">
+    <property role="3GE5qa" value="adt" />
+    <ref role="1XX52x" to="uu1k:54ERyg8J8QQ" resolve="QualifiedLatticeMemberCall" />
+    <node concept="3EZMnI" id="54ERyg8J8RX" role="2wV5jI">
+      <node concept="l2Vlx" id="54ERyg8J8RY" role="2iSdaV" />
+      <node concept="1kIj98" id="54ERyg8J8Sb" role="3EZMnx">
+        <node concept="3F1sOY" id="54ERyg8J8Sj" role="1kIj9b">
+          <ref role="1NtTu8" to="uu1k:54ERyg8J8R1" resolve="typeConstructor" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="54ERyg8J8Su" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="11L4FC" id="54ERyg8JlDX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="54ERyg8JlIh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="54ERyg8Jl_B" role="3EZMnx">
+        <ref role="1NtTu8" to="uu1k:54ERyg8Jl_m" resolve="memberCall" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4aOuL3PUQo4">
+    <property role="3GE5qa" value="definition" />
+    <ref role="1XX52x" to="uu1k:7ike8KAHT9k" resolve="LatticeOperationCall" />
+    <node concept="3EZMnI" id="4aOuL3PUQoq" role="2wV5jI">
+      <node concept="l2Vlx" id="4aOuL3PUQor" role="2iSdaV" />
+      <node concept="1iCGBv" id="4aOuL3PUQoa" role="3EZMnx">
+        <ref role="1NtTu8" to="uu1k:4aOuL3PUQhL" resolve="operation" />
+        <node concept="1sVBvm" id="4aOuL3PUQoc" role="1sWHZn">
+          <node concept="3F0A7n" id="4aOuL3PUQom" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4aOuL3PUQoP" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="4aOuL3PUQyo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="4aOuL3PUQ$C" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="4aOuL3PUQpa" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="uu1k:3l0M8IaBI9D" resolve="arguments" />
+        <node concept="l2Vlx" id="4aOuL3PUQpc" role="2czzBx" />
+        <node concept="3F0ifn" id="4aOuL3PUQpS" role="2czzBI">
+          <node concept="VPxyj" id="4aOuL3PUQu7" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="tppnM" id="4aOuL3Q0RR9" role="sWeuL">
+          <node concept="11L4FC" id="4aOuL3Q0RRc" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4aOuL3PUQpC" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="4aOuL3PUQCW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
     </node>
   </node>

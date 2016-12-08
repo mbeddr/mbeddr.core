@@ -231,7 +231,9 @@
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -2058,7 +2060,8 @@
       <node concept="3clFbS" id="Tz5AFeFZfZ" role="3clF47">
         <node concept="3cpWs6" id="Tz5AFeFZgd" role="3cqZAp">
           <node concept="2OqwBi" id="Tz5AFeFZS1" role="3cqZAk">
-            <node concept="1PxgMI" id="1lNEqJZXHQv" role="2Oq$k0">
+            <node concept="1PxgMI" id="54ERyg8LYbQ" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
               <ref role="1m5ApE" to="hqsm:1i65yRATv5I" resolve="ITypeConstraintProvider" />
               <node concept="2OqwBi" id="Tz5AFeFZjh" role="1m5AlR">
                 <node concept="13iPFW" id="Tz5AFeFZgj" role="2Oq$k0" />
