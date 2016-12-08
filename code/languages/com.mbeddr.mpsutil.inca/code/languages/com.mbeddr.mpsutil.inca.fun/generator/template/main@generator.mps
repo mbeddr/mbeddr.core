@@ -19,6 +19,7 @@
     <import index="zt8v" ref="r:ab008189-f07c-44e4-9434-629f972e973d(com.mbeddr.mpsutil.inca.core.util.plugin)" />
     <import index="55iy" ref="r:6bb35df6-a651-4174-a533-ca7006eccec8(com.mbeddr.mpsutil.inca.gp.structure)" />
     <import index="gcg1" ref="r:d6f14cc5-a2a7-4aaf-8f86-e35059edbf3b(com.mbeddr.mpsutil.inca.core.behavior)" />
+    <import index="l0yr" ref="r:d7788ae3-4afe-431e-a7ca-f1369bead1e8(com.mbeddr.mpsutil.inca.gp.generator.template.main@generator)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -316,6 +317,9 @@
     </node>
     <node concept="1puMqW" id="3ybyOPMFnfM" role="1puA0r">
       <ref role="1puQsG" to="cj1d:6zEhbQQw8IS" resolve="startGeneratorSession" />
+    </node>
+    <node concept="1puMqW" id="3Cx0Htp8NNl" role="1puA0r">
+      <ref role="1puQsG" to="l0yr:3Cx0Htp8KDs" resolve="cacheVariableReferenceTypeHint" />
     </node>
     <node concept="1puMqW" id="3d69XTNdj_V" role="1puA0r">
       <ref role="1puQsG" node="3d69XTNcpvE" resolve="rewritePatternFunctions" />

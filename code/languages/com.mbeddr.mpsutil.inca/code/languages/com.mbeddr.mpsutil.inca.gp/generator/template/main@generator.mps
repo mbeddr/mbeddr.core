@@ -3904,6 +3904,9 @@
   </node>
   <node concept="bUwia" id="1DglclGLrQV">
     <property role="TrG5h" value="preprocessing" />
+    <node concept="1puMqW" id="3Cx0Htp8KJi" role="1puA0r">
+      <ref role="1puQsG" node="3Cx0Htp8KDs" resolve="cacheVariableReferenceTypeHint" />
+    </node>
     <node concept="1puMqW" id="7jWdFvMR1cZ" role="1puA0r">
       <ref role="1puQsG" node="39KhnTIh5tK" resolve="replaceBaseVariableReferences" />
     </node>
@@ -4562,31 +4565,6 @@
     <property role="3GE5qa" value="scripts" />
     <node concept="1pplIY" id="39KhnTIh5tL" role="1pqMTA">
       <node concept="3clFbS" id="39KhnTIh5tM" role="2VODD2">
-        <node concept="2Gpval" id="5te8vJ2H0O8" role="3cqZAp">
-          <node concept="2GrKxI" id="5te8vJ2H0Oa" role="2Gsz3X">
-            <property role="TrG5h" value="reference" />
-          </node>
-          <node concept="3clFbS" id="5te8vJ2H0Oc" role="2LFqv$">
-            <node concept="3clFbF" id="5te8vJ2J_B_" role="3cqZAp">
-              <node concept="2YIFZM" id="5te8vJ2J_Ql" role="3clFbG">
-                <ref role="37wK5l" to="zt8v:5te8vJ2Jmh9" resolve="putUserObjectType" />
-                <ref role="1Pybhc" to="zt8v:8FTmV8DtfS" resolve="CodeGenerationHelper" />
-                <node concept="2GrUjf" id="5te8vJ2J_R4" role="37wK5m">
-                  <ref role="2Gs0qQ" node="5te8vJ2H0Oa" resolve="reference" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="5te8vJ2H1Du" role="2GsD0m">
-            <node concept="1Q6Npb" id="5te8vJ2H1zw" role="2Oq$k0" />
-            <node concept="2SmgA7" id="5te8vJ2H1PA" role="2OqNvi">
-              <node concept="chp4Y" id="5te8vJ2H1Q0" role="1dBWTz">
-                <ref role="cht4Q" to="hqsm:39KhnTIfy1V" resolve="BaseVariableReference" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7VhsvEKg2ND" role="3cqZAp" />
         <node concept="2Gpval" id="39KhnTIh5tN" role="3cqZAp">
           <node concept="2GrKxI" id="39KhnTIh5tO" role="2Gsz3X">
             <property role="TrG5h" value="ref" />
@@ -6103,6 +6081,40 @@
               </node>
               <node concept="3TrcHB" id="wYNqCIozv9" role="2OqNvi">
                 <ref role="3TsBF5" to="hqsm:RjyNaq4vP0" resolve="transitive" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1pmfR0" id="3Cx0Htp8KDs">
+    <property role="3GE5qa" value="scripts" />
+    <property role="TrG5h" value="cacheVariableReferenceTypeHint" />
+    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3jST" value="true" />
+    <node concept="1pplIY" id="3Cx0Htp8KDt" role="1pqMTA">
+      <node concept="3clFbS" id="3Cx0Htp8KDu" role="2VODD2">
+        <node concept="2Gpval" id="5te8vJ2H0O8" role="3cqZAp">
+          <node concept="2GrKxI" id="5te8vJ2H0Oa" role="2Gsz3X">
+            <property role="TrG5h" value="reference" />
+          </node>
+          <node concept="3clFbS" id="5te8vJ2H0Oc" role="2LFqv$">
+            <node concept="3clFbF" id="5te8vJ2J_B_" role="3cqZAp">
+              <node concept="2YIFZM" id="5te8vJ2J_Ql" role="3clFbG">
+                <ref role="1Pybhc" to="zt8v:8FTmV8DtfS" resolve="CodeGenerationHelper" />
+                <ref role="37wK5l" to="zt8v:5te8vJ2Jmh9" resolve="putUserObjectType" />
+                <node concept="2GrUjf" id="5te8vJ2J_R4" role="37wK5m">
+                  <ref role="2Gs0qQ" node="5te8vJ2H0Oa" resolve="reference" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5te8vJ2H1Du" role="2GsD0m">
+            <node concept="1Q6Npb" id="5te8vJ2H1zw" role="2Oq$k0" />
+            <node concept="2SmgA7" id="5te8vJ2H1PA" role="2OqNvi">
+              <node concept="chp4Y" id="5te8vJ2H1Q0" role="1dBWTz">
+                <ref role="cht4Q" to="hqsm:39KhnTIfy1V" resolve="BaseVariableReference" />
               </node>
             </node>
           </node>
