@@ -1298,12 +1298,7 @@
         <node concept="3clFbJ" id="4uaOjKiZFoG" role="3cqZAp">
           <node concept="3clFbS" id="4uaOjKiZFoI" role="3clFbx">
             <node concept="3cpWs6" id="4uaOjKiZGuD" role="3cqZAp">
-              <node concept="2OqwBi" id="4uaOjKiZH3M" role="3cqZAk">
-                <node concept="37vLTw" id="4uaOjKiZGxc" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4uaOjKj9aTf" resolve="ifEmptyOperation" />
-                </node>
-                <node concept="1Bd96e" id="4uaOjKiZHYQ" role="2OqNvi" />
-              </node>
+              <node concept="10Nm6u" id="ziWFuXr4ka" role="3cqZAk" />
             </node>
           </node>
           <node concept="3clFbC" id="4uaOjKiZG6w" role="3clFbw">

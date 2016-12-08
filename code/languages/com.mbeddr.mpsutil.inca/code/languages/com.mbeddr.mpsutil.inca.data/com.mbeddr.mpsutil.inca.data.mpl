@@ -30,7 +30,10 @@
         <usedDevKit>a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)</usedDevKit>
       </usedDevKits>
       <languageVersions>
+        <language slang="l:b802a056-92a2-4fbc-902e-f8e5004c331f:com.mbeddr.mpsutil.inca.core" version="0" />
         <language slang="l:e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2:com.mbeddr.mpsutil.inca.data" version="-1" />
+        <language slang="l:8c9a2720-9d21-4370-a226-819eb3e76e1e:com.mbeddr.mpsutil.inca.fun" version="0" />
+        <language slang="l:cd2909da-ecb4-49dc-b176-33e5c619e516:com.mbeddr.mpsutil.inca.gp" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
         <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -65,6 +68,7 @@
         <module reference="e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2(com.mbeddr.mpsutil.inca.data)" version="0" />
         <module reference="d5a58d02-4ac7-4892-afde-65968670c300(com.mbeddr.mpsutil.inca.data#8607574815737030311)" version="0" />
         <module reference="c80e20e1-4247-4086-b73c-55a273900ebd(com.mbeddr.mpsutil.inca.data.runtime)" version="0" />
+        <module reference="8c9a2720-9d21-4370-a226-819eb3e76e1e(com.mbeddr.mpsutil.inca.fun)" version="0" />
         <module reference="8f5e7b65-fd75-4aa6-b49e-44ecf418fcb5(com.mbeddr.mpsutil.inca.fun#4530729936991344015)" version="0" />
         <module reference="cd2909da-ecb4-49dc-b176-33e5c619e516(com.mbeddr.mpsutil.inca.gp)" version="0" />
         <module reference="44851301-9e9d-4b21-9608-3740a9f299a4(com.mbeddr.mpsutil.inca.gp#4530729936991344011)" version="0" />
@@ -199,6 +203,7 @@
   <extendedLanguages>
     <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>
     <extendedLanguage>b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)</extendedLanguage>
+    <extendedLanguage>8c9a2720-9d21-4370-a226-819eb3e76e1e(com.mbeddr.mpsutil.inca.fun)</extendedLanguage>
   </extendedLanguages>
 </language>
 
