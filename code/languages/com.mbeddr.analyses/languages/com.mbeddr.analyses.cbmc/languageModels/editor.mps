@@ -7574,6 +7574,15 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="2iRkQZ" id="2cCHKvAHSi6" role="2iSdaV" />
+        <node concept="3EZMnI" id="53lM3Ii7dmD" role="3EZMnx">
+          <node concept="VPM3Z" id="53lM3Ii7dmE" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="PMmxH" id="53lM3Ii7dmF" role="3EZMnx">
+            <ref role="PMmxG" node="7kPcpiFfJ1y" resolve="PreprocessorMacrosSettings" />
+          </node>
+          <node concept="2iRfu4" id="53lM3Ii7dmG" role="2iSdaV" />
+        </node>
         <node concept="3EZMnI" id="5VnXdFkrmLi" role="3EZMnx">
           <node concept="VPM3Z" id="5VnXdFkrmLk" role="3F10Kt">
             <property role="VOm3f" value="false" />
@@ -7602,6 +7611,12 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3EZMnI" id="53lM3Ii7dqf" role="6VMZX">
+      <node concept="PMmxH" id="5tDzxi6Rs2B" role="3EZMnx">
+        <ref role="PMmxG" node="5tDzxi6RrW3" resolve="OptionalCBMCSettingsDoc" />
+      </node>
+      <node concept="2iRkQZ" id="53lM3Ii7dqg" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="6KXBYUqACk9">
@@ -8036,7 +8051,7 @@
   <node concept="PKFIW" id="5tDzxi6RrW3">
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="OptionalCBMCSettingsDoc" />
-    <ref role="1XX52x" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
+    <ref role="1XX52x" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
     <node concept="3EZMnI" id="5tDzxi6RrWB" role="2wV5jI">
       <node concept="PMmxH" id="5tDzxi6RrXP" role="3EZMnx">
         <ref role="PMmxG" node="3SmHfhIZc__" resolve="TimeoutSettingsDoc" />
