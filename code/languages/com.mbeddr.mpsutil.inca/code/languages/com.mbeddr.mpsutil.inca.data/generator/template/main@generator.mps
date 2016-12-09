@@ -5,6 +5,7 @@
     <use id="e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2" name="com.mbeddr.mpsutil.inca.data" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -451,7 +452,7 @@
     </language>
   </registry>
   <node concept="bUwia" id="7tOfV2_AEqC">
-    <property role="TrG5h" value="reductions" />
+    <property role="TrG5h" value="dataLangReductions" />
     <node concept="30QchW" id="2zB$jxpyTAC" role="30SoJX">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="uu1k:6fy2FM6rc9J" resolve="IMatchCase" />
@@ -1584,15 +1585,16 @@
             <node concept="3$xsQk" id="3kNUh8jXi6l" role="3$ytzL">
               <node concept="3clFbS" id="3kNUh8jXi6m" role="2VODD2">
                 <node concept="3cpWs6" id="3Cx0HtpcO_0" role="3cqZAp">
-                  <node concept="2OqwBi" id="3Cx0HtpcR6y" role="3cqZAk">
-                    <node concept="2OqwBi" id="3Cx0HtpcPDk" role="2Oq$k0">
-                      <node concept="30H73N" id="3Cx0HtpcOIV" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="3Cx0HtpcPYB" role="2OqNvi">
-                        <ref role="3Tt5mk" to="uu1k:3l0M8IaAFF8" resolve="constructor" />
+                  <node concept="2OqwBi" id="54OPiR9aHaI" role="3cqZAk">
+                    <node concept="1iwH7S" id="54OPiR9aHaJ" role="2Oq$k0" />
+                    <node concept="1iwH70" id="54OPiR9aHaK" role="2OqNvi">
+                      <ref role="1iwH77" node="78LWM4VgVt9" resolve="mapping_ITypeConstructor_ClassConcept" />
+                      <node concept="2OqwBi" id="54OPiR9aHzY" role="1iwH7V">
+                        <node concept="30H73N" id="54OPiR9aHp4" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="54OPiR9aHIZ" role="2OqNvi">
+                          <ref role="3Tt5mk" to="uu1k:3l0M8IaAFF8" resolve="constructor" />
+                        </node>
                       </node>
-                    </node>
-                    <node concept="3TrcHB" id="3Cx0HtpcRq4" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
                 </node>
@@ -2441,7 +2443,7 @@
     </node>
   </node>
   <node concept="bUwia" id="606mdnYjXfF">
-    <property role="TrG5h" value="rewriting" />
+    <property role="TrG5h" value="funPatternLangPreprocessing" />
     <node concept="1puMqW" id="606mdnYkASW" role="1puA0r">
       <ref role="1puQsG" node="606mdnYjXfG" resolve="rewriteLatticeAggregation" />
     </node>

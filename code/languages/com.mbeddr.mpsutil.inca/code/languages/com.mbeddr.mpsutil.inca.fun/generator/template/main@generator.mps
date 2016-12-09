@@ -267,7 +267,7 @@
     </language>
   </registry>
   <node concept="bUwia" id="3oMuSXR7IsQ">
-    <property role="TrG5h" value="reductions" />
+    <property role="TrG5h" value="funPatternLangReductions" />
     <node concept="3aamgX" id="3oMuSXR7IsR" role="3acgRq">
       <ref role="30HIoZ" to="ebqt:3oMuSXR7kAP" resolve="EvalValue" />
       <node concept="gft3U" id="3oMuSXR7IsV" role="1lVwrX">
