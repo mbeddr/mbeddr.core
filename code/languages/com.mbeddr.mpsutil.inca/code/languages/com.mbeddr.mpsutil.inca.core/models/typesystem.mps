@@ -313,6 +313,7 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -2247,7 +2248,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="39KhnTI7QZG">
-    <property role="TrG5h" value="check_IPatternModule" />
+    <property role="TrG5h" value="check_IIncaModule" />
     <node concept="3clFbS" id="39KhnTI7QZH" role="18ibNy">
       <node concept="3cpWs8" id="39KhnTI7R08" role="3cqZAp">
         <node concept="3cpWsn" id="39KhnTI7R09" role="3cpWs9">
@@ -2260,13 +2261,16 @@
           <node concept="2YIFZM" id="39KhnTI7R0c" role="33vP2m">
             <ref role="37wK5l" to="zt8v:3VwoHXNBgJ9" resolve="getNodesWithNonUniqueName" />
             <ref role="1Pybhc" to="zt8v:5lmC1XhmXON" resolve="ValidationHelper" />
-            <node concept="2OqwBi" id="39KhnTI7Sau" role="37wK5m">
-              <node concept="1YBJjd" id="39KhnTI7S4E" role="2Oq$k0">
-                <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="module" />
+            <node concept="2OqwBi" id="3Cx0HtoZ3d7" role="37wK5m">
+              <node concept="2OqwBi" id="39KhnTI7Sau" role="2Oq$k0">
+                <node concept="1YBJjd" id="39KhnTI7S4E" role="2Oq$k0">
+                  <ref role="1YBMHb" node="39KhnTI7QZJ" resolve="module" />
+                </node>
+                <node concept="2qgKlT" id="3Cx0HtoZ2GV" role="2OqNvi">
+                  <ref role="37wK5l" to="gcg1:Y78e7A6TUD" resolve="getAllContents" />
+                </node>
               </node>
-              <node concept="2qgKlT" id="39KhnTI7Sm_" role="2OqNvi">
-                <ref role="37wK5l" to="gcg1:3VwoHXNBzsE" resolve="getPatterns" />
-              </node>
+              <node concept="ANE8D" id="3Cx0HtoZ3u0" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -2335,7 +2339,7 @@
     </node>
     <node concept="1YaCAy" id="39KhnTI7QZJ" role="1YuTPh">
       <property role="TrG5h" value="module" />
-      <ref role="1YaFvo" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
+      <ref role="1YaFvo" to="hqsm:Y78e7A6TUt" resolve="IIncaModule" />
     </node>
   </node>
   <node concept="35pCF_" id="39KhnTI9ELZ">

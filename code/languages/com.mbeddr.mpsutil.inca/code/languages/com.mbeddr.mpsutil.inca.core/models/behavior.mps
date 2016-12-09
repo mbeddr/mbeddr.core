@@ -977,6 +977,35 @@
   </node>
   <node concept="13h7C7" id="3VwoHXNBzsB">
     <ref role="13h7C2" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
+    <node concept="13i0hz" id="3Cx0HtoYXRg" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getAllContents" />
+      <ref role="13i0hy" node="Y78e7A6TUD" resolve="getAllContents" />
+      <node concept="3Tm1VV" id="3Cx0HtoYXRh" role="1B3o_S" />
+      <node concept="3clFbS" id="3Cx0HtoYXRn" role="3clF47">
+        <node concept="3cpWs6" id="3Cx0HtoYXWM" role="3cqZAp">
+          <node concept="2OqwBi" id="3Cx0HtoYZDD" role="3cqZAk">
+            <node concept="2OqwBi" id="3Cx0HtoYYa5" role="2Oq$k0">
+              <node concept="13iPFW" id="3Cx0HtoYXXb" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="3Cx0HtoYYnc" role="2OqNvi">
+                <ref role="3TtcxE" to="hqsm:3VwoHXNAdvv" resolve="contents" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="3Cx0HtoZ0DU" role="2OqNvi">
+              <node concept="chp4Y" id="3Cx0HtoZ0HR" role="v3oSu">
+                <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="3Cx0HtoYXRo" role="3clF45">
+        <node concept="3Tqbb2" id="3Cx0HtoYXRp" role="A3Ik2">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="3VwoHXNBzsE" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
@@ -4944,7 +4973,7 @@
     <node concept="13i0hz" id="Y78e7A6TUD" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getVisibleContents" />
+      <property role="TrG5h" value="getAllContents" />
       <node concept="3Tm1VV" id="Y78e7A6TUE" role="1B3o_S" />
       <node concept="A3Dl8" id="Y78e7A6TUT" role="3clF45">
         <node concept="3Tqbb2" id="Y78e7A6TV6" role="A3Ik2">

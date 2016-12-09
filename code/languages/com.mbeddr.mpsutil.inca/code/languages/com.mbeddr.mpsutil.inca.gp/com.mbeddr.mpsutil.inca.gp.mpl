@@ -27,6 +27,7 @@
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
+        <language slang="l:b802a056-92a2-4fbc-902e-f8e5004c331f:com.mbeddr.mpsutil.inca.core" version="0" />
         <language slang="l:cd2909da-ecb4-49dc-b176-33e5c619e516:com.mbeddr.mpsutil.inca.gp" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
         <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
@@ -73,11 +74,11 @@
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
       </dependencyVersions>
       <mapping-priorities>
-        <mapping-priority-rule kind="strictly_after">
+        <mapping-priority-rule kind="strictly_together">
           <greater-priority-mapping>
             <generator generatorUID="44851301-9e9d-4b21-9608-3740a9f299a4(com.mbeddr.mpsutil.inca.gp#4530729936991344011)" />
             <external-mapping>
-              <all-local-mappings />
+              <mapping-node modelUID="r:d7788ae3-4afe-431e-a7ca-f1369bead1e8(com.mbeddr.mpsutil.inca.gp.generator.template.main@generator)" nodeID="4530729936991344012" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
