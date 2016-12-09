@@ -263,6 +263,7 @@
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -318,11 +319,21 @@
       <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
+        <child id="5858074156537516440" name="return" index="x79VK" />
+        <child id="8465538089690917625" name="param" index="TUOzN" />
+      </concept>
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -6829,6 +6840,28 @@
                 <property role="3clFbU" value="true" />
               </node>
             </node>
+            <node concept="3_zGKh" id="aLe9abBS9M" role="3_zGzc">
+              <node concept="3eOSWO" id="aLe9abBUKU" role="EsVZz">
+                <node concept="1tmTer" id="aLe9abBUQw" role="3uHU7w">
+                  <ref role="1tmTeq" node="aLe9abBSim" resolve="h1" />
+                </node>
+                <node concept="1tmTer" id="aLe9abBSlr" role="3uHU7B">
+                  <ref role="1tmTeq" node="aLe9abBShW" resolve="l1" />
+                </node>
+              </node>
+              <node concept="3__aGB" id="aLe9abBSha" role="3_$9z$">
+                <node concept="1tkKlP" id="aLe9abBSh9" role="3_zOWp">
+                  <ref role="1tneST" node="ziWFuXmekF" resolve="Exact" />
+                </node>
+                <node concept="1tm2WG" id="aLe9abBShW" role="3_zOWs">
+                  <property role="TrG5h" value="l1" />
+                </node>
+                <node concept="1tm2WG" id="aLe9abBSim" role="3_zOWs">
+                  <property role="TrG5h" value="h1" />
+                </node>
+              </node>
+              <node concept="3_$9zU" id="aLe9abBSjB" role="3_$9z$" />
+            </node>
             <node concept="3_zGKh" id="2XlXuxNC_An" role="3_zGzc">
               <node concept="3_$9zU" id="2XlXuxNC_AP" role="3_$9z$" />
               <node concept="3__aGB" id="2XlXuxNC_Ba" role="3_$9z$">
@@ -6896,6 +6929,29 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="P$JXv" id="aLe9abBUXd" role="lGtFl">
+        <node concept="TZ5HA" id="aLe9abBUXe" role="TZ5H$">
+          <node concept="1dT_AC" id="aLe9abBUXf" role="1dT_Ay">
+            <property role="1dT_AB" value="If the Exact is actually empty (h is smaller than l), then it should be treated as Empty. " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="aLe9abBXB8" role="TZ5H$">
+          <node concept="1dT_AC" id="aLe9abBXB9" role="1dT_Ay">
+            <property role="1dT_AB" value="TODO make use of this information everywhere in the impl." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="aLe9abBUXg" role="TUOzN">
+          <node concept="zr_55" id="aLe9abBUXi" role="zr_5Q">
+            <ref role="zr_51" node="2XlXuxNCdnN" resolve="l" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="aLe9abBUXj" role="TUOzN">
+          <node concept="zr_55" id="aLe9abBUXl" role="zr_5Q">
+            <ref role="zr_51" node="2XlXuxNCdnT" resolve="r" />
+          </node>
+        </node>
+        <node concept="x79VA" id="aLe9abBUXm" role="x79VK" />
       </node>
     </node>
     <node concept="2slB5m" id="2XlXuxNCGHs" role="_iOnB" />
@@ -7284,16 +7340,16 @@
                               <node concept="1tmTer" id="3Cx0Htp3IQt" role="3uHU7B">
                                 <ref role="1tmTeq" node="ziWFuXxgga" resolve="l1" />
                               </node>
-                              <node concept="1tmTer" id="3Cx0Htp3IQs" role="3uHU7w">
-                                <ref role="1tmTeq" node="ziWFuXxgge" resolve="l2" />
+                              <node concept="1tmTer" id="aLe9abB6xH" role="3uHU7w">
+                                <ref role="1tmTeq" node="ziWFuXxggf" resolve="h2" />
                               </node>
                             </node>
                             <node concept="3cpWsd" id="3Cx0Htp3J$b" role="2ZRyFy">
-                              <node concept="1tmTer" id="3Cx0Htp3IQw" role="3uHU7B">
+                              <node concept="1tmTer" id="aLe9abB8LG" role="3uHU7B">
                                 <ref role="1tmTeq" node="ziWFuXxggb" resolve="h1" />
                               </node>
-                              <node concept="1tmTer" id="3Cx0Htp3IQv" role="3uHU7w">
-                                <ref role="1tmTeq" node="ziWFuXxggf" resolve="h2" />
+                              <node concept="1tmTer" id="aLe9abB9sv" role="3uHU7w">
+                                <ref role="1tmTeq" node="ziWFuXxgge" resolve="l2" />
                               </node>
                             </node>
                           </node>
