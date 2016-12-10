@@ -181,7 +181,7 @@
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="chooseConcept" />
       <node concept="3Tqbb2" id="7sjDQ2_p0fs" role="3clF45">
-        <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+        <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
       </node>
       <node concept="3Tm1VV" id="7sjDQ2_p0ft" role="1B3o_S" />
       <node concept="3clFbS" id="7sjDQ2_p0fu" role="3clF47" />
@@ -196,6 +196,9 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="7sjDQ2_p0fy" role="1B3o_S" />
+    <node concept="NWlO9" id="53lM3Ii3aO$" role="lGtFl">
+      <property role="NWlVz" value="Interface implemented by different choosers of concepts." />
+    </node>
   </node>
   <node concept="312cEu" id="7sjDQ2_p0fz">
     <property role="TrG5h" value="RandomConceptChooser" />
@@ -323,7 +326,7 @@
                       <ref role="2Gs0qQ" node="2fynlmRyLQ3" resolve="c" />
                     </node>
                     <node concept="3TrEf2" id="2fynlmRzfHv" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tpce:f_TJDff" />
+                      <ref role="3Tt5mk" to="tpce:f_TJDff" resolve="extends" />
                     </node>
                   </node>
                 </node>
@@ -456,7 +459,7 @@
                               <ref role="3cqZAo" node="2fynlmR$KDQ" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="2fynlmR_c_L" role="2OqNvi">
-                              <ref role="3Tt5mk" to="tpce:f_TJDff" />
+                              <ref role="3Tt5mk" to="tpce:f_TJDff" resolve="extends" />
                             </node>
                           </node>
                         </node>
