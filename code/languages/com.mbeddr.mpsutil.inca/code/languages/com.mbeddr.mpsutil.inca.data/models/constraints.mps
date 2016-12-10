@@ -22,6 +22,7 @@
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -1246,6 +1247,54 @@
                   <node concept="chp4Y" id="54ERyg8NmF4" role="ri$Ld">
                     <ref role="cht4Q" to="hqsm:Y78e7A6TUt" resolve="IIncaModule" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3Cx0HtoX9Xo">
+    <property role="3GE5qa" value="definition" />
+    <ref role="1M2myG" to="uu1k:2qfgCZsFkG8" resolve="LatticeDefinitionModule" />
+    <node concept="osYL8" id="3Cx0HtoX9XR" role="1MLXOK">
+      <node concept="3clFbS" id="3Cx0HtoX9XS" role="2VODD2">
+        <node concept="3clFbJ" id="3Cx0HtoXa5e" role="3cqZAp">
+          <node concept="3clFbC" id="3Cx0HtoXasT" role="3clFbw">
+            <node concept="28GBK8" id="3Cx0HtoXa$G" role="3uHU7w">
+              <ref role="28GBKb" to="hqsm:Y78e7A6TUt" resolve="IIncaModule" />
+              <ref role="28H3Ia" to="hqsm:72CZAphwyW3" resolve="imports" />
+            </node>
+            <node concept="oXsJc" id="3Cx0HtoXac_" role="3uHU7B" />
+          </node>
+          <node concept="3clFbS" id="3Cx0HtoXa5g" role="3clFbx">
+            <node concept="3cpWs6" id="3Cx0HtoXaV8" role="3cqZAp">
+              <node concept="22lmx$" id="3Cx0HtoXcko" role="3cqZAk">
+                <node concept="2OqwBi" id="3Cx0HtoXcO2" role="3uHU7w">
+                  <node concept="otxO1" id="3Cx0HtoXcv4" role="2Oq$k0" />
+                  <node concept="3O6GUB" id="3Cx0HtoXdkx" role="2OqNvi">
+                    <node concept="chp4Y" id="3Cx0HtoXdv1" role="3QVz_e">
+                      <ref role="cht4Q" to="uu1k:37SozOpSTlY" resolve="LatticeDefinitionModuleImport" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="3Cx0HtoXbhF" role="3uHU7B">
+                  <node concept="otxO1" id="3Cx0HtoXb2O" role="2Oq$k0" />
+                  <node concept="3O6GUB" id="3Cx0HtoXbJj" role="2OqNvi">
+                    <node concept="chp4Y" id="3Cx0HtoXbTz" role="3QVz_e">
+                      <ref role="cht4Q" to="hqsm:SSjGGIi3iQ" resolve="IIncaModuleImport" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="3Cx0HtoXdDx" role="9aQIa">
+            <node concept="3clFbS" id="3Cx0HtoXdDy" role="9aQI4">
+              <node concept="3cpWs6" id="3Cx0HtoXdNB" role="3cqZAp">
+                <node concept="3clFbT" id="3Cx0HtoXdNR" role="3cqZAk">
+                  <property role="3clFbU" value="true" />
                 </node>
               </node>
             </node>

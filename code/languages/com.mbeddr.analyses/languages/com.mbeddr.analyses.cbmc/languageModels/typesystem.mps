@@ -2487,5 +2487,37 @@
       <ref role="1YaFvo" to="q5q6:5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
     </node>
   </node>
+  <node concept="1YbPZF" id="1VqP_Ivh4xs">
+    <property role="TrG5h" value="typeof_GuardedCall" />
+    <property role="3GE5qa" value="harness" />
+    <node concept="3clFbS" id="1VqP_Ivh4xt" role="18ibNy">
+      <node concept="1ZobV4" id="1VqP_Ivh5hT" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="1VqP_IvhoEG" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1VqP_Ivhwn1" role="mwGJk">
+            <node concept="2OqwBi" id="1VqP_IvhBIU" role="1Z2MuG">
+              <node concept="1YBJjd" id="1VqP_IvhBAZ" role="2Oq$k0">
+                <ref role="1YBMHb" node="1VqP_Ivh4xv" resolve="guardedCall" />
+              </node>
+              <node concept="3TrEf2" id="1VqP_IvhC7O" role="2OqNvi">
+                <ref role="3Tt5mk" to="q5q6:7MOa6vKJe1Q" resolve="guard" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="1VqP_Ivh5MB" role="1ZfhKB">
+          <node concept="2pJPEk" id="1VqP_Ivh5Mz" role="mwGJk">
+            <node concept="2pJPED" id="1VqP_Ivh5MM" role="2pJPEn">
+              <ref role="2pJxaS" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1VqP_Ivh4xv" role="1YuTPh">
+      <property role="TrG5h" value="guardedCall" />
+      <ref role="1YaFvo" to="q5q6:7MOa6vKJe1O" resolve="GuardedCall" />
+    </node>
+  </node>
 </model>
 
