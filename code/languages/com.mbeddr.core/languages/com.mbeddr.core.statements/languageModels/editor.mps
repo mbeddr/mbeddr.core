@@ -547,6 +547,24 @@
           </node>
         </node>
       </node>
+      <node concept="1kHk_G" id="71J$BslqIKF" role="3EZMnx">
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+        <ref role="1NtTu8" to="c4fa:71J$BslqIK_" resolve="extern" />
+        <node concept="3gMsPO" id="71J$BslqIKG" role="3gMvMa">
+          <node concept="3clFbS" id="71J$BslqIKH" role="2VODD2">
+            <node concept="3clFbF" id="71J$BslqIKI" role="3cqZAp">
+              <node concept="2OqwBi" id="71J$BslqIKJ" role="3clFbG">
+                <node concept="1Lj6YZ" id="71J$BslqIKK" role="2Oq$k0" />
+                <node concept="3O6GUB" id="71J$BslqIKL" role="2OqNvi">
+                  <node concept="chp4Y" id="71J$BslqIKM" role="3QVz_e">
+                    <ref role="cht4Q" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="PMmxH" id="52l0VUuNjO$" role="3EZMnx">
         <ref role="PMmxG" node="52l0VUuN8lr" resolve="IStoreInRegisterComponent" />
       </node>

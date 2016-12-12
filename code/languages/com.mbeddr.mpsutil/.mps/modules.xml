@@ -23,6 +23,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.contextactions.sandboxlang/com.mbeddr.mpsutil.contextactions.sandboxlang.mpl" folder="rest.contextActions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.contextactions/com.mbeddr.mpsutil.contextactions.mpl" folder="rest.contextActions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.coverage.emma/com.mbeddr.mpsutil.coverage.emma.mpl" folder="rest.lantest" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.dataflow/com.mbeddr.mpsutil.dataflow.mpl" folder="dataflow" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker.sandbox/com.mbeddr.mpsutil.datepicker.sandbox.mpl" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker/com.mbeddr.mpsutil.datepicker.mpl" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.dependenciesdiagram/com.mbeddr.mpsutil.dependenciesdiagram.mpl" folder="rest.dependenciesdiagram" />
@@ -115,6 +116,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextactions.runtime/com.mbeddr.mpsutil.contextactions.runtime.msd" folder="rest.contextActions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextactions.sandbox/com.mbeddr.mpsutil.contextactions.sandbox.msd" folder="rest.contextActions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.coverage.emma.rt/com.mbeddr.mpsutil.coverage.emma.rt.msd" folder="rest.lantest" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dataflow.runtime/com.mbeddr.mpsutil.dataflow.runtime.msd" folder="dataflow" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dataflow.ui/com.mbeddr.mpsutil.dataflow.ui.msd" folder="dataflow" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.runtime/com.mbeddr.mpsutil.datepicker.runtime.msd" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.sandbox.demo/com.mbeddr.mpsutil.datepicker.sandbox.demo.msd" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/com.mbeddr.mpsutil.dependenciesdiagram.sandbox.msd" folder="rest.dependenciesdiagram" />
@@ -134,6 +137,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpserver/com.mbeddr.mpsutil.httpserver.msd" folder="staging.httpSupport" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpsupport.rt/com.mbeddr.mpsutil.httpsupport.rt.msd" folder="staging.httpSupport" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.intentions.runtime/com.mbeddr.mpsutil.intentions.runtime.msd" folder="stable.intentions" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.interpreter.plugin/com.mbeddr.mpsutil.interpreter.plugin.msd" folder="staging.interpreter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.javainterpreter.richstring/com.mbeddr.mpsutil.javainterpreter.richstring.msd" folder="rest.richstring" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.javainterpreter/com.mbeddr.mpsutil.javainterpreter.msd" folder="staging.javainterpreter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.jfreechart.runtime/com.mbeddr.mpsutil.jfreechart.runtime.msd" folder="staging.jfreechart" />
@@ -174,6 +178,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.targetchooser/com.mbeddr.mpsutil.targetchooser.msd" folder="targetchooser" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.test.util/com.mbeddr.mpsutil.test.util.msd" folder="rest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.test/com.mbeddr.mpsutil.test.msd" folder="rest" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.toolrunner/com.mbeddr.mpsutil.toolrunner.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.treenotation.runtime/com.mbeddr.mpsutil.treenotation.runtime.msd" folder="staging.treenotation" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.treenotation.sandbox/com.mbeddr.mpsutil.treenotation.sandbox.msd" folder="staging.treenotation" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" folder="rest.typesystem.trace" />

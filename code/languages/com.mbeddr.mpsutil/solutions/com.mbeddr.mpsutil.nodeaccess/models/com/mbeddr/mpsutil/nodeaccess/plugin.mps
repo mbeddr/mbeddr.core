@@ -2,7 +2,7 @@
 <model ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
@@ -418,6 +418,24 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="_J_Jm6mkhr" role="3cqZAp">
+          <node concept="3clFbS" id="_J_Jm6mkht" role="3clFbx">
+            <node concept="3cpWs6" id="_J_Jm6mmcG" role="3cqZAp">
+              <node concept="Xl_RD" id="_J_Jm6mmg7" role="3cqZAk">
+                <property role="Xl_RC" value="NO URL" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="_J_Jm6mlSR" role="3clFbw">
+            <node concept="10Nm6u" id="_J_Jm6mm1P" role="3uHU7w" />
+            <node concept="2OqwBi" id="_J_Jm6mk__" role="3uHU7B">
+              <node concept="37vLTw" id="_J_Jm6mkrK" role="2Oq$k0">
+                <ref role="3cqZAo" node="bBMhoeybZl" resolve="n" />
+              </node>
+              <node concept="I4A8Y" id="_J_Jm6mkX6" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -2221,11 +2239,11 @@
           <node concept="3cpWsn" id="2N1CSrzm3k9" role="3cpWs9">
             <property role="TrG5h" value="s" />
             <node concept="3uibUv" id="2N1CSrzm3ka" role="1tU5fm">
-              <ref role="3uigEE" to="39al:5u_UbmjlGE" resolve="NodeSerizalizer" />
+              <ref role="3uigEE" to="39al:5u_UbmjlGE" resolve="NodeSerializer" />
             </node>
             <node concept="2ShNRf" id="2N1CSrzm3kb" role="33vP2m">
               <node concept="1pGfFk" id="2N1CSrzm3kc" role="2ShVmc">
-                <ref role="37wK5l" to="39al:5u_UbmjlHJ" resolve="NodeSerizalizer" />
+                <ref role="37wK5l" to="39al:5u_UbmjlHJ" resolve="NodeSerializer" />
                 <node concept="2OqwBi" id="2N1CSrzm3kd" role="37wK5m">
                   <node concept="2WthIp" id="2N1CSrzm3ke" role="2Oq$k0" />
                   <node concept="3gHZIF" id="2N1CSrzm3kf" role="2OqNvi">
@@ -2909,11 +2927,11 @@
           <node concept="3cpWsn" id="7rr3ESJD3Zd" role="3cpWs9">
             <property role="TrG5h" value="s" />
             <node concept="3uibUv" id="7rr3ESJD3Ze" role="1tU5fm">
-              <ref role="3uigEE" to="39al:5u_UbmjlGE" resolve="NodeSerizalizer" />
+              <ref role="3uigEE" to="39al:5u_UbmjlGE" resolve="NodeSerializer" />
             </node>
             <node concept="2ShNRf" id="7rr3ESJD3Zf" role="33vP2m">
               <node concept="1pGfFk" id="7rr3ESJD3Zg" role="2ShVmc">
-                <ref role="37wK5l" to="39al:5u_UbmjlHJ" resolve="NodeSerizalizer" />
+                <ref role="37wK5l" to="39al:5u_UbmjlHJ" resolve="NodeSerializer" />
                 <node concept="37vLTw" id="7rr3ESJD3Zh" role="37wK5m">
                   <ref role="3cqZAo" node="7rr3ESJD3YJ" resolve="resolveNode" />
                 </node>

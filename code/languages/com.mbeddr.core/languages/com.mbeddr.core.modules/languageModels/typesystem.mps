@@ -437,6 +437,7 @@
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG" />
+      <concept id="1145573345940" name="jetbrains.mps.lang.smodel.structure.Node_GetAllSiblingsOperation" flags="nn" index="2TvwIu" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
@@ -553,6 +554,7 @@
         <child id="1197687026896" name="keyType" index="3rHrn6" />
         <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
@@ -7407,6 +7409,32 @@
                       </node>
                     </node>
                     <node concept="3clFbJ" id="7u$ukFDhnXB" role="3cqZAp">
+                      <node concept="1Wc70l" id="52QwK7oF1o7" role="3clFbw">
+                        <node concept="3y3z36" id="52QwK7oF1Tv" role="3uHU7w">
+                          <node concept="10Nm6u" id="52QwK7oF1Vc" role="3uHU7w" />
+                          <node concept="2OqwBi" id="52QwK7oF1tc" role="3uHU7B">
+                            <node concept="37vLTw" id="52QwK7oF1rH" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7u$ukFDnUdw" resolve="var" />
+                            </node>
+                            <node concept="2OwXpG" id="52QwK7oF1PF" role="2OqNvi">
+                              <ref role="2Oxat5" to="9xhd:4zFXTqpFMFo" resolve="variable" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3fqX7Q" id="7u$ukFDho5T" role="3uHU7B">
+                          <node concept="2OqwBi" id="7u$ukFDho5U" role="3fr31v">
+                            <node concept="37vLTw" id="7u$ukFDho5V" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2GqtAvz8HZA" resolve="variables" />
+                            </node>
+                            <node concept="liA8E" id="7u$ukFDho5W" role="2OqNvi">
+                              <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
+                              <node concept="37vLTw" id="7u$ukFDho5X" role="37wK5m">
+                                <ref role="3cqZAo" node="7u$ukFDnUdw" resolve="var" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                       <node concept="3clFbS" id="7u$ukFDhnXD" role="3clFbx">
                         <node concept="3cpWs8" id="7u$ukFDnX6g" role="3cqZAp">
                           <node concept="3cpWsn" id="7u$ukFDnX6j" role="3cpWs9">
@@ -7531,19 +7559,6 @@
                                   </node>
                                 </node>
                               </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3fqX7Q" id="7u$ukFDho5T" role="3clFbw">
-                        <node concept="2OqwBi" id="7u$ukFDho5U" role="3fr31v">
-                          <node concept="37vLTw" id="7u$ukFDho5V" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2GqtAvz8HZA" resolve="variables" />
-                          </node>
-                          <node concept="liA8E" id="7u$ukFDho5W" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
-                            <node concept="37vLTw" id="7u$ukFDho5X" role="37wK5m">
-                              <ref role="3cqZAo" node="7u$ukFDnUdw" resolve="var" />
                             </node>
                           </node>
                         </node>
@@ -9523,7 +9538,7 @@
                 </node>
               </node>
               <node concept="2v6lVJ" id="BItIAVcMnJ" role="33vP2m">
-                <ref role="2v6lVI" to="9xhd:BItIAVbEWG" resolve="LivenessAnalyzer" />
+                <ref role="2v6lVI" to="9xhd:BItIAVbEWG" resolve="Liveness" />
                 <node concept="1YBJjd" id="BItIAVcMnK" role="3vVDej">
                   <ref role="1YBMHb" node="7U3FobbB2zZ" resolve="statements" />
                 </node>
@@ -11997,6 +12012,92 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="1UmGmQZ5qUc">
+    <property role="TrG5h" value="check_VariadicArgument" />
+    <property role="3GE5qa" value="functions" />
+    <node concept="3clFbS" id="1UmGmQZ5qUd" role="18ibNy">
+      <node concept="Jncv_" id="1UmGmQZ5rsn" role="3cqZAp">
+        <ref role="JncvD" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
+        <node concept="2OqwBi" id="1UmGmQZ9kH9" role="JncvB">
+          <node concept="1YBJjd" id="1UmGmQZ5rsQ" role="2Oq$k0">
+            <ref role="1YBMHb" node="1UmGmQZ5qUf" resolve="variadicArgument" />
+          </node>
+          <node concept="1mfA1w" id="1UmGmQZ9lTx" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="1UmGmQZ5rsp" role="Jncv$">
+          <node concept="3clFbJ" id="1UmGmQZ8tCp" role="3cqZAp">
+            <node concept="3clFbS" id="1UmGmQZ8tCr" role="3clFbx">
+              <node concept="2MkqsV" id="1UmGmQZ8uc8" role="3cqZAp">
+                <node concept="1YBJjd" id="1UmGmQZ8ucT" role="2OEOjV">
+                  <ref role="1YBMHb" node="1UmGmQZ5qUf" resolve="variadicArgument" />
+                </node>
+                <node concept="Xl_RD" id="1UmGmQZ8ucz" role="2MkJ7o">
+                  <property role="Xl_RC" value="first argument of a function cannot be variadic" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="1UmGmQZ8tTH" role="3clFbw">
+              <node concept="2OqwBi" id="1UmGmQZ8tDl" role="3uHU7B">
+                <node concept="2OqwBi" id="1UmGmQZ8tDm" role="2Oq$k0">
+                  <node concept="Jnkvi" id="1UmGmQZ8tDn" role="2Oq$k0">
+                    <ref role="1M0zk5" node="1UmGmQZ5rsq" resolve="ifl" />
+                  </node>
+                  <node concept="3Tsc0h" id="1UmGmQZ8tDo" role="2OqNvi">
+                    <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" resolve="arguments" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="1UmGmQZ8tDp" role="2OqNvi" />
+              </node>
+              <node concept="1YBJjd" id="1UmGmQZ8tDq" role="3uHU7w">
+                <ref role="1YBMHb" node="1UmGmQZ5qUf" resolve="variadicArgument" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="JncvC" id="1UmGmQZ5rsq" role="JncvA">
+          <property role="TrG5h" value="ifl" />
+          <node concept="2jxLKc" id="1UmGmQZ5rsr" role="1tU5fm" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="1UmGmQZ7Sy0" role="3cqZAp">
+        <node concept="3clFbS" id="1UmGmQZ7Sy2" role="3clFbx">
+          <node concept="2MkqsV" id="1UmGmQZ7SSr" role="3cqZAp">
+            <node concept="1YBJjd" id="1UmGmQZ7STU" role="2OEOjV">
+              <ref role="1YBMHb" node="1UmGmQZ5qUf" resolve="variadicArgument" />
+            </node>
+            <node concept="Xl_RD" id="1UmGmQZ7ST$" role="2MkJ7o">
+              <property role="Xl_RC" value="only one variadic argument is allowed" />
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="1UmGmQZ7SOb" role="3clFbw">
+          <node concept="2OqwBi" id="1UmGmQZ5HGZ" role="3uHU7B">
+            <node concept="2OqwBi" id="1UmGmQZ5Ff6" role="2Oq$k0">
+              <node concept="2OqwBi" id="1UmGmQZ5CGY" role="2Oq$k0">
+                <node concept="1YBJjd" id="1UmGmQZ5Cpg" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1UmGmQZ5qUf" resolve="variadicArgument" />
+                </node>
+                <node concept="2TvwIu" id="1UmGmQZ5DK2" role="2OqNvi" />
+              </node>
+              <node concept="v3k3i" id="1UmGmQZ5HtU" role="2OqNvi">
+                <node concept="chp4Y" id="1UmGmQZ5HuO" role="v3oSu">
+                  <ref role="cht4Q" to="x27k:UslQeyoPRa" resolve="VariadicArgument" />
+                </node>
+              </node>
+            </node>
+            <node concept="34oBXx" id="1UmGmQZ5HZM" role="2OqNvi" />
+          </node>
+          <node concept="3cmrfG" id="1UmGmQZ5IUN" role="3uHU7w">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1UmGmQZ5qUf" role="1YuTPh">
+      <property role="TrG5h" value="variadicArgument" />
+      <ref role="1YaFvo" to="x27k:UslQeyoPRa" resolve="VariadicArgument" />
     </node>
   </node>
 </model>

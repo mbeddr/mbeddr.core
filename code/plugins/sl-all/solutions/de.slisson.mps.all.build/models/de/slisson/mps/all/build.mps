@@ -113,7 +113,10 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
-      <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh" />
+      <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh">
+        <property id="7981469545489178349" name="generationMaxHeapSizeInMb" index="3UIfUI" />
+        <property id="353547257300482730" name="generationMaxPermSizeInMb" index="1YnnvL" />
+      </concept>
       <concept id="7832771629084799699" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginVendor" flags="ng" index="2iUeEo">
         <property id="7832771629084799702" name="name" index="2iUeEt" />
         <property id="7832771629084799701" name="url" index="2iUeEu" />
@@ -194,7 +197,10 @@
   <node concept="1l3spW" id="2Xjt3l56m0V">
     <property role="TrG5h" value="mps-sl-all" />
     <property role="2DA0ip" value="../../" />
-    <node concept="2igEWh" id="2MQBX6KMw95" role="1hWBAP" />
+    <node concept="2igEWh" id="2MQBX6KMw95" role="1hWBAP">
+      <property role="3UIfUI" value="2024" />
+      <property role="1YnnvL" value="1000" />
+    </node>
     <node concept="m$_wf" id="4hvHh3QW$Eh" role="3989C9">
       <property role="m$_wk" value="de.slisson.mps.all" />
       <node concept="3_J27D" id="4hvHh3QW$Ei" role="m$_yQ">
@@ -3101,6 +3107,12 @@
             <node concept="3bR9La" id="tUmIYfjy8P" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6RF5hekmSOb" role="3bR37C">
+            <node concept="3bR9La" id="6RF5hekmSOc" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
             </node>
           </node>
         </node>

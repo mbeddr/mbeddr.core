@@ -437,10 +437,15 @@
       <ref role="3GEb4d" node="oxt36$afxb" resolve="main" />
     </node>
     <node concept="1nvAUJ" id="oxt36$aePR" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
+      <property role="2lUGeZ" value="true" />
       <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="14" />
       <property role="2l50Ka" value="10" />
+      <property role="2lelRm" value="true" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUGbD" value="18" />
       <ref role="3V$Cn$" node="oxt36$aePE" resolve="analysisDepth14" />
     </node>
     <node concept="1nvAUJ" id="oxt36$adhO" role="3V$2$K">

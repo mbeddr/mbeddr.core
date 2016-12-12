@@ -2,7 +2,7 @@
 <model ref="r:96a5ae0c-9491-4650-90e1-34141035590c(com.mbeddr.mpsutil.ccmenu.runtime.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
@@ -140,8 +140,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -165,244 +175,252 @@
     </node>
     <node concept="2uRRBT" id="2Z2H3pkZ87d" role="2uRRB$">
       <node concept="3clFbS" id="2Z2H3pkZ87e" role="2VODD2">
-        <node concept="3clFbF" id="2Z2H3pkZbdc" role="3cqZAp">
-          <node concept="37vLTI" id="2Z2H3pkZbfb" role="3clFbG">
-            <node concept="2ShNRf" id="2Z2H3pkZbfB" role="37vLTx">
-              <node concept="YeOm9" id="2Z2H3pkZdua" role="2ShVmc">
-                <node concept="1Y3b0j" id="2Z2H3pkZdud" role="YeSDq">
-                  <property role="2bfB8j" value="true" />
-                  <ref role="1Y3XeK" to="kvq8:2WlJ6VKPQcy" resolve="EditorComponentCreationListener" />
-                  <ref role="37wK5l" to="kvq8:3pwG8PSjV93" resolve="EditorComponentCreationListener" />
-                  <node concept="3Tm1VV" id="2Z2H3pkZdue" role="1B3o_S" />
-                  <node concept="3clFb_" id="2Z2H3pkZduf" role="jymVt">
-                    <property role="TrG5h" value="editorComponentCreate" />
-                    <property role="1EzhhJ" value="false" />
-                    <node concept="37vLTG" id="2Z2H3pkZdug" role="3clF46">
-                      <property role="TrG5h" value="editorComponent" />
-                      <node concept="3uibUv" id="2Z2H3pkZduh" role="1tU5fm">
-                        <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+        <node concept="1X3_iC" id="2C8vy9yWfob" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="2Z2H3pkZbdc" role="8Wnug">
+            <node concept="37vLTI" id="2Z2H3pkZbfb" role="3clFbG">
+              <node concept="2ShNRf" id="2Z2H3pkZbfB" role="37vLTx">
+                <node concept="YeOm9" id="2Z2H3pkZdua" role="2ShVmc">
+                  <node concept="1Y3b0j" id="2Z2H3pkZdud" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="kvq8:2WlJ6VKPQcy" resolve="EditorComponentCreationListener" />
+                    <ref role="37wK5l" to="kvq8:3pwG8PSjV93" resolve="EditorComponentCreationListener" />
+                    <node concept="3Tm1VV" id="2Z2H3pkZdue" role="1B3o_S" />
+                    <node concept="3clFb_" id="2Z2H3pkZduf" role="jymVt">
+                      <property role="TrG5h" value="editorComponentCreate" />
+                      <property role="1EzhhJ" value="false" />
+                      <node concept="37vLTG" id="2Z2H3pkZdug" role="3clF46">
+                        <property role="TrG5h" value="editorComponent" />
+                        <node concept="3uibUv" id="2Z2H3pkZduh" role="1tU5fm">
+                          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+                        </node>
                       </node>
-                    </node>
-                    <node concept="3cqZAl" id="2Z2H3pkZdui" role="3clF45" />
-                    <node concept="3Tm1VV" id="2Z2H3pkZduj" role="1B3o_S" />
-                    <node concept="3clFbS" id="2Z2H3pkZdul" role="3clF47">
-                      <node concept="3clFbF" id="1LTChO9iZre" role="3cqZAp">
-                        <node concept="2OqwBi" id="1LTChO9iZx3" role="3clFbG">
-                          <node concept="37vLTw" id="1LTChO9iZrc" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
-                          </node>
-                          <node concept="liA8E" id="1LTChO9j1lj" role="2OqNvi">
-                            <ref role="37wK5l" to="dxuu:~JComponent.putClientProperty(java.lang.Object,java.lang.Object):void" resolve="putClientProperty" />
-                            <node concept="2OqwBi" id="1LTChO9j1mI" role="37wK5m">
-                              <node concept="2WthIp" id="1LTChO9j1mL" role="2Oq$k0">
-                                <ref role="32nkFo" node="2Z2H3pkZ87c" resolve="ProjectPlugin" />
+                      <node concept="3cqZAl" id="2Z2H3pkZdui" role="3clF45" />
+                      <node concept="3Tm1VV" id="2Z2H3pkZduj" role="1B3o_S" />
+                      <node concept="3clFbS" id="2Z2H3pkZdul" role="3clF47">
+                        <node concept="3clFbF" id="1LTChO9iZre" role="3cqZAp">
+                          <node concept="2OqwBi" id="1LTChO9iZx3" role="3clFbG">
+                            <node concept="37vLTw" id="1LTChO9iZrc" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
+                            </node>
+                            <node concept="liA8E" id="1LTChO9j1lj" role="2OqNvi">
+                              <ref role="37wK5l" to="dxuu:~JComponent.putClientProperty(java.lang.Object,java.lang.Object):void" resolve="putClientProperty" />
+                              <node concept="2OqwBi" id="1LTChO9j1mI" role="37wK5m">
+                                <node concept="2WthIp" id="1LTChO9j1mL" role="2Oq$k0">
+                                  <ref role="32nkFo" node="2Z2H3pkZ87c" resolve="ProjectPlugin" />
+                                </node>
+                                <node concept="2BZ7hE" id="1LTChO9j1mN" role="2OqNvi">
+                                  <ref role="2WH_rO" node="1LTChO9iKuB" resolve="ORIGINAL_CHOOSER_KEY" />
+                                </node>
                               </node>
-                              <node concept="2BZ7hE" id="1LTChO9j1mN" role="2OqNvi">
-                                <ref role="2WH_rO" node="1LTChO9iKuB" resolve="ORIGINAL_CHOOSER_KEY" />
+                              <node concept="2OqwBi" id="1LTChO9j1qv" role="37wK5m">
+                                <node concept="37vLTw" id="1LTChO9j1qw" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
+                                </node>
+                                <node concept="1PnCL0" id="1LTChO9j1qx" role="2OqNvi">
+                                  <ref role="2Oxat5" to="exr9:~EditorComponent.myNodeSubstituteChooser" resolve="myNodeSubstituteChooser" />
+                                </node>
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="1LTChO9j1qv" role="37wK5m">
-                              <node concept="37vLTw" id="1LTChO9j1qw" role="2Oq$k0">
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="2Z2H3pkZePh" role="3cqZAp">
+                          <node concept="37vLTI" id="2Z2H3pl0M9K" role="3clFbG">
+                            <node concept="2OqwBi" id="2Z2H3pkZg9D" role="37vLTJ">
+                              <node concept="37vLTw" id="2Z2H3pkZePg" role="2Oq$k0">
                                 <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
                               </node>
-                              <node concept="1PnCL0" id="1LTChO9j1qx" role="2OqNvi">
+                              <node concept="1PnCL0" id="2Z2H3pkZixi" role="2OqNvi">
+                                <ref role="2Oxat5" to="exr9:~EditorComponent.myNodeSubstituteChooser" resolve="myNodeSubstituteChooser" />
+                              </node>
+                            </node>
+                            <node concept="2ShNRf" id="2m7vnlrxasu" role="37vLTx">
+                              <node concept="1pGfFk" id="2m7vnlrxaBx" role="2ShVmc">
+                                <ref role="37wK5l" to="p7b3:2m7vnlruMGC" resolve="SubstituteChooserAdapter" />
+                                <node concept="37vLTw" id="2m7vnlrxaCC" role="37wK5m">
+                                  <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
+                                </node>
+                                <node concept="2ShNRf" id="2Z2H3pl18nR" role="37wK5m">
+                                  <node concept="1pGfFk" id="2Z2H3pl18BC" role="2ShVmc">
+                                    <ref role="37wK5l" to="p7b3:2Z2H3pkZiGD" resolve="GroupedSubstituteChooser" />
+                                    <node concept="37vLTw" id="2Z2H3pl1jN7" role="37wK5m">
+                                      <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="56Ema_8gp6F" role="3cqZAp">
+                          <node concept="2OqwBi" id="56Ema_8gpec" role="3clFbG">
+                            <node concept="37vLTw" id="56Ema_8gp6D" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
+                            </node>
+                            <node concept="liA8E" id="56Ema_8gr36" role="2OqNvi">
+                              <ref role="37wK5l" to="exr9:~EditorComponent.addDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="addDisposeListener" />
+                              <node concept="2ShNRf" id="56Ema_8gr43" role="37wK5m">
+                                <node concept="YeOm9" id="56Ema_8gDPH" role="2ShVmc">
+                                  <node concept="1Y3b0j" id="56Ema_8gDPK" role="YeSDq">
+                                    <property role="2bfB8j" value="true" />
+                                    <ref role="1Y3XeK" to="exr9:~EditorComponent$EditorDisposeListener" resolve="EditorComponent.EditorDisposeListener" />
+                                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                                    <node concept="3Tm1VV" id="56Ema_8gDPL" role="1B3o_S" />
+                                    <node concept="3clFb_" id="56Ema_8gDPM" role="jymVt">
+                                      <property role="1EzhhJ" value="false" />
+                                      <property role="TrG5h" value="editorWillBeDisposed" />
+                                      <property role="DiZV1" value="false" />
+                                      <property role="od$2w" value="false" />
+                                      <node concept="3Tm1VV" id="56Ema_8gDPN" role="1B3o_S" />
+                                      <node concept="3cqZAl" id="56Ema_8gDPP" role="3clF45" />
+                                      <node concept="37vLTG" id="56Ema_8gDPQ" role="3clF46">
+                                        <property role="TrG5h" value="editorComponent" />
+                                        <node concept="3uibUv" id="56Ema_8gDPR" role="1tU5fm">
+                                          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+                                        </node>
+                                      </node>
+                                      <node concept="3clFbS" id="56Ema_8gDPS" role="3clF47">
+                                        <node concept="3clFbF" id="56Ema_8gG9j" role="3cqZAp">
+                                          <node concept="2OqwBi" id="56Ema_8gGrE" role="3clFbG">
+                                            <node concept="37vLTw" id="56Ema_8gG9h" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="56Ema_8gDPQ" resolve="editorComponent" />
+                                            </node>
+                                            <node concept="liA8E" id="56Ema_8gIwV" role="2OqNvi">
+                                              <ref role="37wK5l" to="exr9:~EditorComponent.removeDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="removeDisposeListener" />
+                                              <node concept="Xjq3P" id="56Ema_8gJfo" role="37wK5m" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="3cpWs8" id="56Ema_8gE1M" role="3cqZAp">
+                                          <node concept="3cpWsn" id="56Ema_8gE1N" role="3cpWs9">
+                                            <property role="TrG5h" value="original" />
+                                            <node concept="3uibUv" id="56Ema_8gE1F" role="1tU5fm">
+                                              <ref role="3uigEE" to="6lvu:~NodeSubstituteChooser" resolve="NodeSubstituteChooser" />
+                                            </node>
+                                            <node concept="1eOMI4" id="56Ema_8gE1O" role="33vP2m">
+                                              <node concept="10QFUN" id="56Ema_8gE1P" role="1eOMHV">
+                                                <node concept="2OqwBi" id="56Ema_8gE1Q" role="10QFUP">
+                                                  <node concept="37vLTw" id="56Ema_8gE1R" role="2Oq$k0">
+                                                    <ref role="3cqZAo" node="56Ema_8gDPQ" resolve="editorComponent" />
+                                                  </node>
+                                                  <node concept="liA8E" id="56Ema_8gE1S" role="2OqNvi">
+                                                    <ref role="37wK5l" to="dxuu:~JComponent.getClientProperty(java.lang.Object):java.lang.Object" resolve="getClientProperty" />
+                                                    <node concept="2OqwBi" id="56Ema_8gE1T" role="37wK5m">
+                                                      <node concept="2WthIp" id="56Ema_8gE1U" role="2Oq$k0">
+                                                        <ref role="32nkFo" node="2Z2H3pkZ87c" resolve="ProjectPlugin" />
+                                                      </node>
+                                                      <node concept="2BZ7hE" id="56Ema_8gE1V" role="2OqNvi">
+                                                        <ref role="2WH_rO" node="1LTChO9iKuB" resolve="ORIGINAL_CHOOSER_KEY" />
+                                                      </node>
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                                <node concept="3uibUv" id="56Ema_8gE1W" role="10QFUM">
+                                                  <ref role="3uigEE" to="6lvu:~NodeSubstituteChooser" resolve="NodeSubstituteChooser" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="3clFbF" id="56Ema_8gDVo" role="3cqZAp">
+                                          <node concept="2OqwBi" id="56Ema_8gEj9" role="3clFbG">
+                                            <node concept="37vLTw" id="56Ema_8gE1X" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="56Ema_8gE1N" resolve="original" />
+                                            </node>
+                                            <node concept="liA8E" id="56Ema_8gEpc" role="2OqNvi">
+                                              <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.dispose():void" resolve="dispose" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFb_" id="2Z2H3pkZdun" role="jymVt">
+                      <property role="TrG5h" value="editorComponentDisposed" />
+                      <property role="1EzhhJ" value="false" />
+                      <node concept="37vLTG" id="2Z2H3pkZduo" role="3clF46">
+                        <property role="TrG5h" value="editorComponent" />
+                        <node concept="3uibUv" id="2Z2H3pkZdup" role="1tU5fm">
+                          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+                        </node>
+                      </node>
+                      <node concept="3cqZAl" id="2Z2H3pkZduq" role="3clF45" />
+                      <node concept="3Tm1VV" id="2Z2H3pkZdur" role="1B3o_S" />
+                      <node concept="3clFbS" id="2Z2H3pkZdut" role="3clF47">
+                        <node concept="3clFbF" id="2Z2H3pl1nqM" role="3cqZAp">
+                          <node concept="37vLTI" id="2Z2H3pl1qcg" role="3clFbG">
+                            <node concept="1eOMI4" id="1LTChO9j3yq" role="37vLTx">
+                              <node concept="10QFUN" id="1LTChO9j3yr" role="1eOMHV">
+                                <node concept="2OqwBi" id="1LTChO9j3yk" role="10QFUP">
+                                  <node concept="37vLTw" id="1LTChO9j3yl" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="2Z2H3pkZduo" resolve="editorComponent" />
+                                  </node>
+                                  <node concept="liA8E" id="1LTChO9j3ym" role="2OqNvi">
+                                    <ref role="37wK5l" to="dxuu:~JComponent.getClientProperty(java.lang.Object):java.lang.Object" resolve="getClientProperty" />
+                                    <node concept="2OqwBi" id="1LTChO9j3yn" role="37wK5m">
+                                      <node concept="2WthIp" id="1LTChO9j3yo" role="2Oq$k0">
+                                        <ref role="32nkFo" node="2Z2H3pkZ87c" resolve="ProjectPlugin" />
+                                      </node>
+                                      <node concept="2BZ7hE" id="1LTChO9j3yp" role="2OqNvi">
+                                        <ref role="2WH_rO" node="1LTChO9iKuB" resolve="ORIGINAL_CHOOSER_KEY" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3uibUv" id="1LTChO9j3yj" role="10QFUM">
+                                  <ref role="3uigEE" to="6lvu:~NodeSubstituteChooser" resolve="NodeSubstituteChooser" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="2Z2H3pl1nvW" role="37vLTJ">
+                              <node concept="37vLTw" id="2Z2H3pl1nqL" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2Z2H3pkZduo" resolve="editorComponent" />
+                              </node>
+                              <node concept="1PnCL0" id="2Z2H3pl1piH" role="2OqNvi">
                                 <ref role="2Oxat5" to="exr9:~EditorComponent.myNodeSubstituteChooser" resolve="myNodeSubstituteChooser" />
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="2Z2H3pkZePh" role="3cqZAp">
-                        <node concept="37vLTI" id="2Z2H3pl0M9K" role="3clFbG">
-                          <node concept="2OqwBi" id="2Z2H3pkZg9D" role="37vLTJ">
-                            <node concept="37vLTw" id="2Z2H3pkZePg" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
-                            </node>
-                            <node concept="1PnCL0" id="2Z2H3pkZixi" role="2OqNvi">
-                              <ref role="2Oxat5" to="exr9:~EditorComponent.myNodeSubstituteChooser" resolve="myNodeSubstituteChooser" />
-                            </node>
-                          </node>
-                          <node concept="2ShNRf" id="2m7vnlrxasu" role="37vLTx">
-                            <node concept="1pGfFk" id="2m7vnlrxaBx" role="2ShVmc">
-                              <ref role="37wK5l" to="p7b3:2m7vnlruMGC" resolve="SubstituteChooserAdapter" />
-                              <node concept="37vLTw" id="2m7vnlrxaCC" role="37wK5m">
-                                <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
-                              </node>
-                              <node concept="2ShNRf" id="2Z2H3pl18nR" role="37wK5m">
-                                <node concept="1pGfFk" id="2Z2H3pl18BC" role="2ShVmc">
-                                  <ref role="37wK5l" to="p7b3:2Z2H3pkZiGD" resolve="GroupedSubstituteChooser" />
-                                  <node concept="37vLTw" id="2Z2H3pl1jN7" role="37wK5m">
-                                    <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="56Ema_8gp6F" role="3cqZAp">
-                        <node concept="2OqwBi" id="56Ema_8gpec" role="3clFbG">
-                          <node concept="37vLTw" id="56Ema_8gp6D" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2Z2H3pkZdug" resolve="editorComponent" />
-                          </node>
-                          <node concept="liA8E" id="56Ema_8gr36" role="2OqNvi">
-                            <ref role="37wK5l" to="exr9:~EditorComponent.addDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="addDisposeListener" />
-                            <node concept="2ShNRf" id="56Ema_8gr43" role="37wK5m">
-                              <node concept="YeOm9" id="56Ema_8gDPH" role="2ShVmc">
-                                <node concept="1Y3b0j" id="56Ema_8gDPK" role="YeSDq">
-                                  <property role="2bfB8j" value="true" />
-                                  <ref role="1Y3XeK" to="exr9:~EditorComponent$EditorDisposeListener" resolve="EditorComponent.EditorDisposeListener" />
-                                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                                  <node concept="3Tm1VV" id="56Ema_8gDPL" role="1B3o_S" />
-                                  <node concept="3clFb_" id="56Ema_8gDPM" role="jymVt">
-                                    <property role="1EzhhJ" value="false" />
-                                    <property role="TrG5h" value="editorWillBeDisposed" />
-                                    <property role="DiZV1" value="false" />
-                                    <property role="od$2w" value="false" />
-                                    <node concept="3Tm1VV" id="56Ema_8gDPN" role="1B3o_S" />
-                                    <node concept="3cqZAl" id="56Ema_8gDPP" role="3clF45" />
-                                    <node concept="37vLTG" id="56Ema_8gDPQ" role="3clF46">
-                                      <property role="TrG5h" value="editorComponent" />
-                                      <node concept="3uibUv" id="56Ema_8gDPR" role="1tU5fm">
-                                        <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
-                                      </node>
-                                    </node>
-                                    <node concept="3clFbS" id="56Ema_8gDPS" role="3clF47">
-                                      <node concept="3clFbF" id="56Ema_8gG9j" role="3cqZAp">
-                                        <node concept="2OqwBi" id="56Ema_8gGrE" role="3clFbG">
-                                          <node concept="37vLTw" id="56Ema_8gG9h" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="56Ema_8gDPQ" resolve="editorComponent" />
-                                          </node>
-                                          <node concept="liA8E" id="56Ema_8gIwV" role="2OqNvi">
-                                            <ref role="37wK5l" to="exr9:~EditorComponent.removeDisposeListener(jetbrains.mps.nodeEditor.EditorComponent$EditorDisposeListener):void" resolve="removeDisposeListener" />
-                                            <node concept="Xjq3P" id="56Ema_8gJfo" role="37wK5m" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                      <node concept="3cpWs8" id="56Ema_8gE1M" role="3cqZAp">
-                                        <node concept="3cpWsn" id="56Ema_8gE1N" role="3cpWs9">
-                                          <property role="TrG5h" value="original" />
-                                          <node concept="3uibUv" id="56Ema_8gE1F" role="1tU5fm">
-                                            <ref role="3uigEE" to="6lvu:~NodeSubstituteChooser" resolve="NodeSubstituteChooser" />
-                                          </node>
-                                          <node concept="1eOMI4" id="56Ema_8gE1O" role="33vP2m">
-                                            <node concept="10QFUN" id="56Ema_8gE1P" role="1eOMHV">
-                                              <node concept="2OqwBi" id="56Ema_8gE1Q" role="10QFUP">
-                                                <node concept="37vLTw" id="56Ema_8gE1R" role="2Oq$k0">
-                                                  <ref role="3cqZAo" node="56Ema_8gDPQ" resolve="editorComponent" />
-                                                </node>
-                                                <node concept="liA8E" id="56Ema_8gE1S" role="2OqNvi">
-                                                  <ref role="37wK5l" to="dxuu:~JComponent.getClientProperty(java.lang.Object):java.lang.Object" resolve="getClientProperty" />
-                                                  <node concept="2OqwBi" id="56Ema_8gE1T" role="37wK5m">
-                                                    <node concept="2WthIp" id="56Ema_8gE1U" role="2Oq$k0">
-                                                      <ref role="32nkFo" node="2Z2H3pkZ87c" resolve="ProjectPlugin" />
-                                                    </node>
-                                                    <node concept="2BZ7hE" id="56Ema_8gE1V" role="2OqNvi">
-                                                      <ref role="2WH_rO" node="1LTChO9iKuB" resolve="ORIGINAL_CHOOSER_KEY" />
-                                                    </node>
-                                                  </node>
-                                                </node>
-                                              </node>
-                                              <node concept="3uibUv" id="56Ema_8gE1W" role="10QFUM">
-                                                <ref role="3uigEE" to="6lvu:~NodeSubstituteChooser" resolve="NodeSubstituteChooser" />
-                                              </node>
-                                            </node>
-                                          </node>
-                                        </node>
-                                      </node>
-                                      <node concept="3clFbF" id="56Ema_8gDVo" role="3cqZAp">
-                                        <node concept="2OqwBi" id="56Ema_8gEj9" role="3clFbG">
-                                          <node concept="37vLTw" id="56Ema_8gE1X" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="56Ema_8gE1N" resolve="original" />
-                                          </node>
-                                          <node concept="liA8E" id="56Ema_8gEpc" role="2OqNvi">
-                                            <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.dispose():void" resolve="dispose" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
                     </node>
+                    <node concept="1KvdUw" id="2Z2H3pkZeFz" role="37wK5m" />
                   </node>
-                  <node concept="3clFb_" id="2Z2H3pkZdun" role="jymVt">
-                    <property role="TrG5h" value="editorComponentDisposed" />
-                    <property role="1EzhhJ" value="false" />
-                    <node concept="37vLTG" id="2Z2H3pkZduo" role="3clF46">
-                      <property role="TrG5h" value="editorComponent" />
-                      <node concept="3uibUv" id="2Z2H3pkZdup" role="1tU5fm">
-                        <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
-                      </node>
-                    </node>
-                    <node concept="3cqZAl" id="2Z2H3pkZduq" role="3clF45" />
-                    <node concept="3Tm1VV" id="2Z2H3pkZdur" role="1B3o_S" />
-                    <node concept="3clFbS" id="2Z2H3pkZdut" role="3clF47">
-                      <node concept="3clFbF" id="2Z2H3pl1nqM" role="3cqZAp">
-                        <node concept="37vLTI" id="2Z2H3pl1qcg" role="3clFbG">
-                          <node concept="1eOMI4" id="1LTChO9j3yq" role="37vLTx">
-                            <node concept="10QFUN" id="1LTChO9j3yr" role="1eOMHV">
-                              <node concept="2OqwBi" id="1LTChO9j3yk" role="10QFUP">
-                                <node concept="37vLTw" id="1LTChO9j3yl" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="2Z2H3pkZduo" resolve="editorComponent" />
-                                </node>
-                                <node concept="liA8E" id="1LTChO9j3ym" role="2OqNvi">
-                                  <ref role="37wK5l" to="dxuu:~JComponent.getClientProperty(java.lang.Object):java.lang.Object" resolve="getClientProperty" />
-                                  <node concept="2OqwBi" id="1LTChO9j3yn" role="37wK5m">
-                                    <node concept="2WthIp" id="1LTChO9j3yo" role="2Oq$k0">
-                                      <ref role="32nkFo" node="2Z2H3pkZ87c" resolve="ProjectPlugin" />
-                                    </node>
-                                    <node concept="2BZ7hE" id="1LTChO9j3yp" role="2OqNvi">
-                                      <ref role="2WH_rO" node="1LTChO9iKuB" resolve="ORIGINAL_CHOOSER_KEY" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="3uibUv" id="1LTChO9j3yj" role="10QFUM">
-                                <ref role="3uigEE" to="6lvu:~NodeSubstituteChooser" resolve="NodeSubstituteChooser" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="2OqwBi" id="2Z2H3pl1nvW" role="37vLTJ">
-                            <node concept="37vLTw" id="2Z2H3pl1nqL" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2Z2H3pkZduo" resolve="editorComponent" />
-                            </node>
-                            <node concept="1PnCL0" id="2Z2H3pl1piH" role="2OqNvi">
-                              <ref role="2Oxat5" to="exr9:~EditorComponent.myNodeSubstituteChooser" resolve="myNodeSubstituteChooser" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1KvdUw" id="2Z2H3pkZeFz" role="37wK5m" />
                 </node>
               </node>
-            </node>
-            <node concept="2OqwBi" id="2Z2H3pkZbd6" role="37vLTJ">
-              <node concept="2WthIp" id="2Z2H3pkZbd9" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="2Z2H3pkZbdb" role="2OqNvi">
-                <ref role="2WH_rO" node="2Z2H3pkZ87r" resolve="myEditorComponentCreationListener" />
+              <node concept="2OqwBi" id="2Z2H3pkZbd6" role="37vLTJ">
+                <node concept="2WthIp" id="2Z2H3pkZbd9" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="2Z2H3pkZbdb" role="2OqNvi">
+                  <ref role="2WH_rO" node="2Z2H3pkZ87r" resolve="myEditorComponentCreationListener" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2Z2H3pkZdDJ" role="3cqZAp">
-          <node concept="2OqwBi" id="2Z2H3pkZdHG" role="3clFbG">
-            <node concept="2OqwBi" id="2Z2H3pkZdDD" role="2Oq$k0">
-              <node concept="2WthIp" id="2Z2H3pkZdDG" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="2Z2H3pkZdDI" role="2OqNvi">
-                <ref role="2WH_rO" node="2Z2H3pkZ87r" resolve="myEditorComponentCreationListener" />
+        <node concept="1X3_iC" id="2C8vy9yWfoc" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="2Z2H3pkZdDJ" role="8Wnug">
+            <node concept="2OqwBi" id="2Z2H3pkZdHG" role="3clFbG">
+              <node concept="2OqwBi" id="2Z2H3pkZdDD" role="2Oq$k0">
+                <node concept="2WthIp" id="2Z2H3pkZdDG" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="2Z2H3pkZdDI" role="2OqNvi">
+                  <ref role="2WH_rO" node="2Z2H3pkZ87r" resolve="myEditorComponentCreationListener" />
+                </node>
               </node>
-            </node>
-            <node concept="liA8E" id="2Z2H3pkZe6C" role="2OqNvi">
-              <ref role="37wK5l" to="kvq8:2WlJ6VKQR6W" resolve="start" />
-              <node concept="3clFbT" id="2Z2H3pkZe7V" role="37wK5m">
-                <property role="3clFbU" value="true" />
+              <node concept="liA8E" id="2Z2H3pkZe6C" role="2OqNvi">
+                <ref role="37wK5l" to="kvq8:2WlJ6VKQR6W" resolve="start" />
+                <node concept="3clFbT" id="2Z2H3pkZe7V" role="37wK5m">
+                  <property role="3clFbU" value="true" />
+                </node>
               </node>
             </node>
           </node>
@@ -411,16 +429,20 @@
     </node>
     <node concept="2uRRBN" id="2Z2H3pkZe8u" role="2uRRB_">
       <node concept="3clFbS" id="2Z2H3pkZe8v" role="2VODD2">
-        <node concept="3clFbF" id="2Z2H3pkZegO" role="3cqZAp">
-          <node concept="2OqwBi" id="2Z2H3pkZeiM" role="3clFbG">
-            <node concept="2OqwBi" id="2Z2H3pkZegI" role="2Oq$k0">
-              <node concept="2WthIp" id="2Z2H3pkZegL" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="2Z2H3pkZegN" role="2OqNvi">
-                <ref role="2WH_rO" node="2Z2H3pkZ87r" resolve="myEditorComponentCreationListener" />
+        <node concept="1X3_iC" id="2C8vy9yWg6U" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="2Z2H3pkZegO" role="8Wnug">
+            <node concept="2OqwBi" id="2Z2H3pkZeiM" role="3clFbG">
+              <node concept="2OqwBi" id="2Z2H3pkZegI" role="2Oq$k0">
+                <node concept="2WthIp" id="2Z2H3pkZegL" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="2Z2H3pkZegN" role="2OqNvi">
+                  <ref role="2WH_rO" node="2Z2H3pkZ87r" resolve="myEditorComponentCreationListener" />
+                </node>
               </node>
-            </node>
-            <node concept="liA8E" id="2Z2H3pkZekr" role="2OqNvi">
-              <ref role="37wK5l" to="kvq8:2WlJ6VKQRx4" resolve="stop" />
+              <node concept="liA8E" id="2Z2H3pkZekr" role="2OqNvi">
+                <ref role="37wK5l" to="kvq8:2WlJ6VKQRx4" resolve="stop" />
+              </node>
             </node>
           </node>
         </node>

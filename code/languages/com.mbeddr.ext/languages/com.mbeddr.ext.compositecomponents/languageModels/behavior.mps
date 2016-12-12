@@ -20,6 +20,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -2510,8 +2511,78 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="4PdWDflhBwa" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="4PdWDflhBwb" role="1B3o_S" />
+      <node concept="3clFbS" id="4PdWDflhBwy" role="3clF47">
+        <node concept="3clFbF" id="4PdWDflhC1a" role="3cqZAp">
+          <node concept="2OqwBi" id="4PdWDflhCXr" role="3clFbG">
+            <node concept="2OqwBi" id="4PdWDflhCdQ" role="2Oq$k0">
+              <node concept="13iPFW" id="4PdWDflhC19" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4PdWDflhCsK" role="2OqNvi">
+                <ref role="3Tt5mk" to="g88q:6JVEnxIjaCT" resolve="param" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="4PdWDflhDGJ" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4PdWDflhBwz" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="2LSSMkCHjBV" role="13h7CW">
       <node concept="3clFbS" id="2LSSMkCHjBW" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4PdWDflho85">
+    <ref role="13h7C2" to="g88q:4dKKrcEbMGX" resolve="ComponentRefExpr" />
+    <node concept="13hLZK" id="4PdWDflho86" role="13h7CW">
+      <node concept="3clFbS" id="4PdWDflho87" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4PdWDflho8t" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="4PdWDflho8u" role="1B3o_S" />
+      <node concept="3clFbS" id="4PdWDflho8P" role="3clF47">
+        <node concept="3clFbF" id="4PdWDflhoiM" role="3cqZAp">
+          <node concept="3cpWs3" id="4PdWDflhrWi" role="3clFbG">
+            <node concept="2OqwBi" id="4PdWDflhtFw" role="3uHU7w">
+              <node concept="2OqwBi" id="4PdWDflhsnc" role="2Oq$k0">
+                <node concept="13iPFW" id="4PdWDflhs8v" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4PdWDflht3J" role="2OqNvi">
+                  <ref role="3Tt5mk" to="g88q:4dKKrcEgM1Y" resolve="providedPort" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="4PdWDflhuCu" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="3cpWs3" id="4PdWDflhrdB" role="3uHU7B">
+              <node concept="2OqwBi" id="4PdWDflhpwa" role="3uHU7B">
+                <node concept="2OqwBi" id="4PdWDflhovm" role="2Oq$k0">
+                  <node concept="13iPFW" id="4PdWDflhoiL" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="4PdWDflhoWu" role="2OqNvi">
+                    <ref role="3Tt5mk" to="g88q:4dKKrcEbMHL" resolve="instance" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="4PdWDflhqqu" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="4PdWDflhrlm" role="3uHU7w">
+                <property role="Xl_RC" value="." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4PdWDflho8Q" role="3clF45" />
     </node>
   </node>
 </model>

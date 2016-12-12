@@ -2,13 +2,14 @@
 <model ref="r:48b6c04c-173b-45da-963f-54fbbdb59cfc(com.mbeddr.doc.self.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -77,6 +78,13 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8730648445433126847" />
       <ref role="20lvS9" to="vs0r:7gVrg_0tw6m" resolve="TextBlock" />
+    </node>
+    <node concept="1TJgyj" id="54ozzUwooJ9" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="hints" />
+      <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="5843576916143082441" />
+      <ref role="20lvS9" to="tpc2:5UHFGFk4ozs" resolve="ConceptEditorHintDeclarationReference" />
     </node>
   </node>
 </model>

@@ -4,8 +4,6 @@
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -73,11 +71,11 @@
     <property role="R4oN_" value="a Promela model" />
     <property role="EcuMT" value="799927705160518134" />
     <ref role="1TJDcQ" to="x27k:5_l8w1EmTcX" resolve="Module" />
-    <node concept="PrWs8" id="GpUw9SahP4" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
-    </node>
     <node concept="1QGGSu" id="60FTbDhBVbF" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/spin.png" />
+    </node>
+    <node concept="PrWs8" id="GpUw9SahP4" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
   </node>
   <node concept="PlHQZ" id="GpUw9S5_Xa">
@@ -168,15 +166,15 @@
     <property role="3GE5qa" value="statement" />
     <property role="EcuMT" value="2935779374999505372" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="PrWs8" id="60FTbDh$TCW" role="PzmwI">
+      <ref role="PrY4T" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+    </node>
     <node concept="1TJgyj" id="2yXYWA1KSX3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="exp" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="2935779374999506755" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="60FTbDh$TCW" role="PzmwI">
-      <ref role="PrY4T" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="2yXYWA1L5z9">

@@ -2,15 +2,18 @@
 <model ref="r:240d3229-bb70-4ba5-bcb1-799faf017402(promela@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
   <imports>
-    <import index="hr62" ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.analyses.spin.promela.rt.testing_utils)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
+    <import index="5do0" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b24(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
+    <import index="hr5x" ref="r:0f006508-b2f4-4b98-82de-5b32de29d867(com.mbeddr.analyses.spin.promela.rt.testing_utils)" />
+    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" implicit="true" />
+    <import index="hr62" ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.analyses.spin.promela.rt.testing_utils)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -355,6 +358,9 @@
                   <property role="Xl_RC" value="Output: \n\n" />
                 </node>
                 <node concept="2OqwBi" id="Rd$2EC6oxU" role="3uHU7w">
+                  <node concept="2OwXpG" id="54ptZbPT4QM" role="2OqNvi">
+                    <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                  </node>
                   <node concept="2OqwBi" id="54ptZbPSBIm" role="2Oq$k0">
                     <node concept="37vLTw" id="Rd$2EC6oxV" role="2Oq$k0">
                       <ref role="3cqZAo" node="Rd$2EC6oxI" resolve="res" />
@@ -362,9 +368,6 @@
                     <node concept="liA8E" id="54ptZbPSC6M" role="2OqNvi">
                       <ref role="37wK5l" to="5do7:7XCY$_ranFq" resolve="getRawResult" />
                     </node>
-                  </node>
-                  <node concept="2OwXpG" id="54ptZbPT4QM" role="2OqNvi">
-                    <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
                   </node>
                 </node>
               </node>
@@ -374,6 +377,9 @@
         <node concept="3vwNmj" id="Rd$2EC6oxY" role="3cqZAp">
           <node concept="2OqwBi" id="Rd$2EC6oxZ" role="3vwVQn">
             <node concept="2OqwBi" id="Rd$2EC6oy0" role="2Oq$k0">
+              <node concept="2OwXpG" id="54ptZbPSB_N" role="2OqNvi">
+                <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+              </node>
               <node concept="2OqwBi" id="54ptZbPSAKV" role="2Oq$k0">
                 <node concept="37vLTw" id="Rd$2EC6oy1" role="2Oq$k0">
                   <ref role="3cqZAo" node="Rd$2EC6oxI" resolve="res" />
@@ -381,9 +387,6 @@
                 <node concept="liA8E" id="54ptZbPSBa7" role="2OqNvi">
                   <ref role="37wK5l" to="5do7:7XCY$_ranFq" resolve="getRawResult" />
                 </node>
-              </node>
-              <node concept="2OwXpG" id="54ptZbPSB_N" role="2OqNvi">
-                <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
               </node>
             </node>
             <node concept="liA8E" id="Rd$2EC6oy3" role="2OqNvi">

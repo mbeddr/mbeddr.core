@@ -1,0 +1,106 @@
+// setting mbeddrMajor
+if (project.hasProperty('mbeddrMajor')) {
+    ext.mbeddrMajor = project.getProperty('mbeddrMajor')
+} else {
+    ext.mbeddrMajor = "1"
+}
+
+// setting mbeddrMinor
+if (project.hasProperty('mbeddrMinor')) {
+    ext.mbeddrMinor = project.getProperty('mbeddrMinor')
+} else {
+    ext.mbeddrMinor = "0"
+}
+
+// setting mbeddrBuild
+if (project.hasProperty('mbeddrBuild')) {
+    ext.mbeddrBuild = project.getProperty('mbeddrBuild')
+} else {
+    ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
+}
+
+ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor)
+
+// path variables
+ext.mpsHomeDir = new File(rootDir, "MPS/MPS-mbeddr-$mpsBuild/")
+ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
+ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
+ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()
+String buildVersion = '-Dbuild='+mbeddrBuild
+String majorVersion = '-Dmajor.version='+mbeddrMajor
+String minorVersion = '-Dminor.version='+mbeddrMinor
+ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
+ext.slall_home = ['-Dsl-all.home=' + file(rootProject.projectDir.absolutePath + '/code/plugins/sl-all').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
+ext.dependsOnMPS_scriptArgs = ['ant', '-verbose', mps_home, build_dir, artifacts_root]
+ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home]
+
+// path locations
+ext.mbeddrScripts_basePath = file(ant.properties['mbeddr.github.core.home'] + "/build").getAbsolutePath()
+ext.allScripts_buildFileLocation = file(mbeddrScripts_basePath + "/" + "com.mbeddr.allScripts").getAbsolutePath()
+ext.slAll_buildFileLocation = file(ant.properties['mbeddr.github.core.home'] + "/scripts" + "/" + "sl-all").getAbsolutePath()
+
+// ant script locations
+ext.scriptsBasePath = rootProject.file("scripts").absolutePath
+
+ant.taskdef(name: "makeTests",
+        classname: "com.mbeddr.tools.ant.MakeTestsTask",
+        classpath: file(rootProject.projectDir.absolutePath + "/tools/ant/tasks/TeamcityMakeTests.jar")
+)
+
+// mbeddr properties
+subprojects {
+    // repository urls
+    configureRepositories(it)
+
+    // configs
+    configurations {
+        mps
+    }
+
+    dependencies {
+        mps "com.jetbrains:mps:$mpsBuild"
+    }
+}
+
+
+File scriptFile(String relativePath) {
+    new File("$rootDir/scripts/$relativePath")
+}
+
+private static void configureRepositories(Project project) {
+    project.ext.repository = project.mbeddrBuild.endsWith('-SNAPSHOT') ? project.snapshotRepository : project.releaseRepository
+
+    project.publishing {
+        repositories {
+            maven {
+                url project.repository
+                if (project.hasProperty('nexusUsername')) {
+                    credentials {
+                        username project.nexusUsername
+                        password project.nexusPassword
+                    }
+                }
+            }
+        }
+    }
+    project.repositories {
+        mavenLocal()
+        for (repoUrl in [project.snapshotRepository, project.releaseRepository]) {
+            maven {
+                url repoUrl
+                if (project.hasProperty('nexusUsername')) {
+                    credentials {
+                        username project.nexusUsername
+                        password project.nexusPassword
+                    }
+                }
+            }
+        }
+    }
+}
+
+task printVersion {
+    doLast {
+        println "mbeddrBuildNumber: ${mbeddrBuildNumber}"
+    }
+}

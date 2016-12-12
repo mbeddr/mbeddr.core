@@ -2,8 +2,8 @@
 <model ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(com.mbeddr.analyses.spin.promela.rt.ui)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
   </languages>
   <imports>
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
@@ -12,6 +12,7 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="vbi4" ref="r:101c6aaa-6376-4550-a0fa-eeca066047cc(com.mbeddr.analyses.utils.results_ui)" />
     <import index="tprt" ref="r:00000000-0000-4000-0000-011c895904a5(jetbrains.mps.ide.common)" />
+    <import index="lg3m" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.search(MPS.Platform/)" />
     <import index="jajj" ref="r:9e3be8f2-82bf-43d7-8c0f-7a644fe1675e(com.mbeddr.analyses.utils.mps_workbench)" />
     <import index="rgfa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.tree(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
@@ -20,9 +21,8 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="uipx" ref="r:e7b58802-36b0-4e17-a1f6-eb5c442b040c(com.mbeddr.analyses.utils.ui)" />
-    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
-    <import index="lg3m" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.search(MPS.Platform/)" />
+    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -195,6 +195,9 @@
   <node concept="312cEu" id="6izRX53pUdc">
     <property role="TrG5h" value="SpinRawOutputUI" />
     <property role="3GE5qa" value="" />
+    <node concept="3uibUv" id="3DDJouLEILw" role="1zkMxy">
+      <ref role="3uigEE" to="vbi4:3DDJouLExSa" resolve="AnalysesRawResultsUIBase" />
+    </node>
     <node concept="2tJIrI" id="6izRX53pUYV" role="jymVt" />
     <node concept="312cEg" id="6izRX53q3SS" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -271,9 +274,6 @@
       <node concept="3clFbS" id="6izRX53q9At" role="3clF47">
         <node concept="3clFbF" id="6izRX53qhhZ" role="3cqZAp">
           <node concept="37vLTI" id="6izRX53qh$6" role="3clFbG">
-            <node concept="37vLTw" id="6izRX53qhhX" role="37vLTJ">
-              <ref role="3cqZAo" node="6izRX53q3SS" resolve="stdoutText" />
-            </node>
             <node concept="1rXfSq" id="3DDJouLFUA2" role="37vLTx">
               <ref role="37wK5l" to="vbi4:3DDJouLF9Ul" resolve="createAndAddNewTabWithTextArea" />
               <node concept="Xl_RD" id="3DDJouLHNiZ" role="37wK5m">
@@ -283,13 +283,13 @@
                 <property role="3clFbU" value="false" />
               </node>
             </node>
+            <node concept="37vLTw" id="6izRX53qhhX" role="37vLTJ">
+              <ref role="3cqZAo" node="6izRX53q3SS" resolve="stdoutText" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="7Rf0$0HTcVH" role="3cqZAp">
           <node concept="37vLTI" id="7Rf0$0HTcVI" role="3clFbG">
-            <node concept="37vLTw" id="7Rf0$0HTdeD" role="37vLTJ">
-              <ref role="3cqZAo" node="7Rf0$0HTcyL" resolve="trailText" />
-            </node>
             <node concept="1rXfSq" id="3DDJouLFWdj" role="37vLTx">
               <ref role="37wK5l" to="vbi4:3DDJouLF9Ul" resolve="createAndAddNewTabWithTextArea" />
               <node concept="Xl_RD" id="3DDJouLHOgp" role="37wK5m">
@@ -298,6 +298,9 @@
               <node concept="3clFbT" id="3DDJouLFWdk" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
+            </node>
+            <node concept="37vLTw" id="7Rf0$0HTdeD" role="37vLTJ">
+              <ref role="3cqZAo" node="7Rf0$0HTcyL" resolve="trailText" />
             </node>
           </node>
         </node>
@@ -319,9 +322,6 @@
         </node>
         <node concept="3clFbF" id="4kcU3Yrmt5Z" role="3cqZAp">
           <node concept="37vLTI" id="4kcU3Yrmt60" role="3clFbG">
-            <node concept="37vLTw" id="4kcU3YrmtmI" role="37vLTJ">
-              <ref role="3cqZAo" node="4kcU3YrmsGl" resolve="stderrText" />
-            </node>
             <node concept="1rXfSq" id="3DDJouLFXcP" role="37vLTx">
               <ref role="37wK5l" to="vbi4:3DDJouLF9Ul" resolve="createAndAddNewTabWithTextArea" />
               <node concept="Xl_RD" id="3DDJouLHRB4" role="37wK5m">
@@ -331,13 +331,13 @@
                 <property role="3clFbU" value="false" />
               </node>
             </node>
+            <node concept="37vLTw" id="4kcU3YrmtmI" role="37vLTJ">
+              <ref role="3cqZAo" node="4kcU3YrmsGl" resolve="stderrText" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="4$9c1ZyA9Ey" role="3cqZAp">
           <node concept="37vLTI" id="4$9c1ZyA9Ez" role="3clFbG">
-            <node concept="37vLTw" id="4$9c1ZyAa_O" role="37vLTJ">
-              <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
-            </node>
             <node concept="1rXfSq" id="3DDJouLFYbM" role="37vLTx">
               <ref role="37wK5l" to="vbi4:3DDJouLF9Ul" resolve="createAndAddNewTabWithTextArea" />
               <node concept="Xl_RD" id="3DDJouLHToN" role="37wK5m">
@@ -346,6 +346,9 @@
               <node concept="3clFbT" id="3DDJouLFYbN" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
+            </node>
+            <node concept="37vLTw" id="4$9c1ZyAa_O" role="37vLTJ">
+              <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
             </node>
           </node>
         </node>
@@ -727,9 +730,6 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="6izRX53pUdd" role="1B3o_S" />
-    <node concept="3uibUv" id="3DDJouLEILw" role="1zkMxy">
-      <ref role="3uigEE" to="vbi4:3DDJouLExSa" resolve="AnalysesRawResultsUIBase" />
-    </node>
     <node concept="NWlO9" id="3Ymokd9HQTr" role="lGtFl">
       <property role="NWlVz" value="UI for presenting the raw output." />
     </node>

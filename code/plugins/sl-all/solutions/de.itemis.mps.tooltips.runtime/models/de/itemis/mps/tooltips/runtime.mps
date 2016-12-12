@@ -2,10 +2,10 @@
 <model ref="r:3838bb8b-fecd-4f7c-841e-325717a43980(de.itemis.mps.tooltips.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -28,6 +28,7 @@
     <import index="kcid" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/)" />
     <import index="y49u" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.util(MPS.OpenAPI/)" />
     <import index="88dm" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tooltips(MPS.Platform/)" />
+    <import index="3qmy" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.classloading(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -85,8 +86,16 @@
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
@@ -161,7 +170,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -2029,7 +2038,16 @@
   </node>
   <node concept="312cEu" id="7XU1fOGm9dY">
     <property role="TrG5h" value="TooltipManager" />
-    <node concept="2tJIrI" id="2a194$K1m1l" role="jymVt" />
+    <node concept="Wx3nA" id="1LS0LER49Hs" role="jymVt">
+      <property role="TrG5h" value="TOOLTIP_RADAR_ENABLED" />
+      <property role="3TUv4t" value="true" />
+      <node concept="10P_77" id="1LS0LER49B6" role="1tU5fm" />
+      <node concept="3Tm6S6" id="1LS0LER489h" role="1B3o_S" />
+      <node concept="3clFbT" id="1LS0LER49Hf" role="33vP2m">
+        <property role="3clFbU" value="false" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1LS0LER46js" role="jymVt" />
     <node concept="Wx3nA" id="7XU1fOGmql5" role="jymVt">
       <property role="IEkAT" value="false" />
       <property role="TrG5h" value="ourInstances" />
@@ -2321,11 +2339,41 @@
                 </node>
               </node>
               <node concept="3clFbS" id="5VSAssGMG1n" role="3clF47">
-                <node concept="3clFbF" id="5VSAssGMG1o" role="3cqZAp">
-                  <node concept="1rXfSq" id="5VSAssGMG1p" role="3clFbG">
-                    <ref role="37wK5l" node="7XU1fOGmPfn" resolve="handleMouseMoved" />
-                    <node concept="37vLTw" id="5VSAssGMG1q" role="37wK5m">
-                      <ref role="3cqZAo" node="5VSAssGMG1l" resolve="event" />
+                <node concept="SfApY" id="4inzeUQxMR5" role="3cqZAp">
+                  <node concept="3clFbS" id="4inzeUQxMR7" role="SfCbr">
+                    <node concept="3clFbF" id="5VSAssGMG1o" role="3cqZAp">
+                      <node concept="1rXfSq" id="5VSAssGMG1p" role="3clFbG">
+                        <ref role="37wK5l" node="7XU1fOGmPfn" resolve="handleMouseMoved" />
+                        <node concept="37vLTw" id="5VSAssGMG1q" role="37wK5m">
+                          <ref role="3cqZAo" node="5VSAssGMG1l" resolve="event" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="TDmWw" id="4inzeUQxMR8" role="TEbGg">
+                    <node concept="3cpWsn" id="4inzeUQxMRa" role="TDEfY">
+                      <property role="TrG5h" value="ex" />
+                      <node concept="3uibUv" id="4inzeUQxNcI" role="1tU5fm">
+                        <ref role="3uigEE" to="3qmy:~ModuleClassLoader$ModuleClassLoaderIsDisposedException" resolve="ModuleClassLoader.ModuleClassLoaderIsDisposedException" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="4inzeUQxMRe" role="TDEfX">
+                      <node concept="3clFbF" id="3Lp5XSjy3Ru" role="3cqZAp">
+                        <node concept="2OqwBi" id="3Lp5XSjy5ii" role="3clFbG">
+                          <node concept="2OqwBi" id="3Lp5XSjy4kG" role="2Oq$k0">
+                            <node concept="37vLTw" id="3Lp5XSjy3Rt" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5VSAssGMG1l" resolve="event" />
+                            </node>
+                            <node concept="liA8E" id="3Lp5XSjy4FS" role="2OqNvi">
+                              <ref role="37wK5l" to="hyam:~ComponentEvent.getComponent():java.awt.Component" resolve="getComponent" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="3Lp5XSjy6iM" role="2OqNvi">
+                            <ref role="37wK5l" to="z60i:~Component.removeMouseMotionListener(java.awt.event.MouseMotionListener):void" resolve="removeMouseMotionListener" />
+                            <node concept="Xjq3P" id="3Lp5XSjy6Du" role="37wK5m" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2802,6 +2850,16 @@
       <node concept="3cqZAl" id="7CEHNszEick" role="3clF45" />
       <node concept="3Tm1VV" id="7CEHNszEicl" role="1B3o_S" />
       <node concept="3clFbS" id="7CEHNszEicm" role="3clF47">
+        <node concept="3clFbJ" id="1LS0LER4bJh" role="3cqZAp">
+          <node concept="3clFbS" id="1LS0LER4bJj" role="3clFbx">
+            <node concept="3cpWs6" id="1LS0LER4d08" role="3cqZAp" />
+          </node>
+          <node concept="3fqX7Q" id="1LS0LER4cjd" role="3clFbw">
+            <node concept="37vLTw" id="1LS0LER4cSU" role="3fr31v">
+              <ref role="3cqZAo" node="1LS0LER49Hs" resolve="TOOLTIP_RADAR_ENABLED" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="7CEHNszFxSl" role="3cqZAp">
           <node concept="3clFbS" id="7CEHNszFxSo" role="3clFbx">
             <node concept="3cpWs6" id="7CEHNszFzIr" role="3cqZAp" />

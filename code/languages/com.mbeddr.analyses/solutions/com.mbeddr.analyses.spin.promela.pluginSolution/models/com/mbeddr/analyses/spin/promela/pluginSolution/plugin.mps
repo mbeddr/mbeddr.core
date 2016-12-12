@@ -2,35 +2,36 @@
 <model ref="r:5078867a-a960-481e-b2ca-bd2799992b5a(com.mbeddr.analyses.spin.promela.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
   </languages>
   <imports>
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
-    <import index="odjd" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(com.mbeddr.analyses.spin.promela.rt.ui)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
-    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="npwl" ref="r:ca7aba72-9b45-4105-b4ef-5e520eda75c0(com.mbeddr.analyses.utils.results_model)" />
+    <import index="xm5e" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd291(com.mbeddr.analyses.spin.promela.rt.runner)" />
+    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
+    <import index="odjd" ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(com.mbeddr.analyses.spin.promela.rt.ui)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="vbi4" ref="r:101c6aaa-6376-4550-a0fa-eeca066047cc(com.mbeddr.analyses.utils.results_ui)" implicit="true" />
   </imports>
@@ -78,10 +79,10 @@
       <concept id="6547237850567458268" name="jetbrains.mps.lang.plugin.structure.BaseToolDeclaration" flags="ng" index="2XNcJY">
         <property id="2498620720770664572" name="position" index="2bmUCM" />
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
-        <property id="6547237850567462701" name="number" index="2XNb$f" />
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
+        <child id="471625927503648174" name="shortcut" index="15cTzA" />
         <child id="6791676465872004185" name="toolIcon" index="1nVCmq" />
       </concept>
       <concept id="1562714432501166198" name="jetbrains.mps.lang.plugin.structure.SimpleShortcutChange" flags="lg" index="Zd509">
@@ -89,6 +90,9 @@
       </concept>
       <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
         <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
+      </concept>
+      <concept id="471625927503601927" name="jetbrains.mps.lang.plugin.structure.NumberToolShortcut" flags="ng" index="15feLf">
+        <property id="471625927503601955" name="number" index="15feLF" />
       </concept>
       <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="lg" index="1bYyw_">
         <reference id="6193305307616734326" name="action" index="1bYAoF" />
@@ -345,12 +349,12 @@
           <node concept="3cpWsn" id="3lXW7OZ6VXn" role="3cpWs9">
             <property role="TrG5h" value="aa" />
             <node concept="3Tqbb2" id="3lXW7OZ6VXi" role="1tU5fm">
-              <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsAnalysis" />
+              <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
             </node>
             <node concept="2ShNRf" id="3lXW7OZ6W2T" role="33vP2m">
               <node concept="3zrR0B" id="3lXW7OZ6Wfj" role="2ShVmc">
                 <node concept="3Tqbb2" id="3lXW7OZ6Wfl" role="3zrR0E">
-                  <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsAnalysis" />
+                  <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
                 </node>
               </node>
             </node>
@@ -484,10 +488,10 @@
     </node>
     <node concept="2BZ0e9" id="6izRX53yGHB" role="2XNbBz">
       <property role="TrG5h" value="panel" />
-      <node concept="3Tm6S6" id="6izRX53yGHC" role="1B3o_S" />
-      <node concept="3uibUv" id="4kcU3YrkO1N" role="1tU5fm">
+      <node concept="3uibUv" id="1VpFeJZkP9$" role="1tU5fm">
         <ref role="3uigEE" to="odjd:6izRX53pUdc" resolve="SpinRawOutputUI" />
       </node>
+      <node concept="3Tm6S6" id="6izRX53yGHC" role="1B3o_S" />
     </node>
     <node concept="2UmK3q" id="6izRX53qGZc" role="2Um5zG">
       <node concept="3clFbS" id="6izRX53qGZd" role="2VODD2">
@@ -610,6 +614,9 @@
       <property role="TrG5h" value="appendResult" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
+      <node concept="NWlO9" id="7XCY$_raVG_" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
       <node concept="3clFbS" id="7F8$WoVMof4" role="3clF47">
         <node concept="3cpWs8" id="7XCY$_raV9f" role="3cqZAp">
           <node concept="3cpWsn" id="7XCY$_raV9g" role="3cpWs9">
@@ -655,7 +662,7 @@
                   <ref role="3cqZAo" node="7F8$WoVMoqj" resolve="res" />
                 </node>
                 <node concept="liA8E" id="71901EGI4VH" role="2OqNvi">
-                  <ref role="37wK5l" to="5do7:71901EGHZ_j" resolve="getWhiteness" />
+                  <ref role="37wK5l" to="5do7:71901EGHZ_j" resolve="getWitness" />
                 </node>
               </node>
               <node concept="2OqwBi" id="1wu5Hv6fFZl" role="2XxRq1">
@@ -702,9 +709,6 @@
       <node concept="2AHcQZ" id="7F8$WoVVmUn" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="7XCY$_raVG_" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
     </node>
     <node concept="2tJIrI" id="7F8$WoW2$45" role="jymVt" />
     <node concept="3clFb_" id="7F8$WoW2$AJ" role="jymVt">
@@ -712,6 +716,9 @@
       <property role="TrG5h" value="presentResults" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
+      <node concept="NWlO9" id="7XCY$_raVQ7" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
       <node concept="3clFbS" id="7F8$WoW2$AK" role="3clF47">
         <node concept="3clFbJ" id="6izRX53r8Hs" role="3cqZAp">
           <node concept="3clFbS" id="6izRX53r8Ht" role="3clFbx">
@@ -759,9 +766,6 @@
       <node concept="2AHcQZ" id="7F8$WoW2$AU" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="7XCY$_raVQ7" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvCNHo4" role="jymVt" />
     <node concept="3clFb_" id="2UdJgvCNFe3" role="jymVt">
@@ -769,6 +773,9 @@
       <property role="TrG5h" value="clearResults" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
+      <node concept="NWlO9" id="7XCY$_raVZp" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
       <node concept="3clFbS" id="2UdJgvCNFe4" role="3clF47">
         <node concept="3clFbF" id="1wu5Hv6fLPL" role="3cqZAp">
           <node concept="2OqwBi" id="1wu5Hv6fLS5" role="3clFbG">
@@ -810,9 +817,6 @@
       <node concept="3cqZAl" id="2UdJgvCNFeb" role="3clF45" />
       <node concept="2AHcQZ" id="2UdJgvCNFec" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-      <node concept="NWlO9" id="7XCY$_raVZp" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
       </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvD7wtL" role="jymVt" />
@@ -899,7 +903,6 @@
     <property role="TrG5h" value="PromelaLiftedResultsTool" />
     <property role="2XNbzY" value="Spin Lifted Results" />
     <property role="2bmUCM" value="RIGHT" />
-    <property role="2XNb$f" value="1" />
     <node concept="1QGGSu" id="3Ymokd9HSJf" role="1nVCmq">
       <property role="1iqoE4" value="${module}/icons/verify.png" />
     </node>
@@ -1098,6 +1101,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="15feLf" id="48h5VLbZEGE" role="15cTzA">
+      <property role="15feLF" value="1" />
     </node>
   </node>
 </model>

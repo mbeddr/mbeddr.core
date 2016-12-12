@@ -193,7 +193,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1073063089578" name="jetbrains.mps.baseLanguage.structure.SuperMethodCall" flags="nn" index="3nyPlj" />
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
@@ -568,7 +567,7 @@
                       <ref role="3cqZAo" node="MynG9Rr4vg" resolve="analysisConfig" />
                     </node>
                     <node concept="3TrEf2" id="6QX7yC5tcpO" role="2OqNvi">
-                      <ref role="3Tt5mk" to="iq83:73BQep1PU1O" />
+                      <ref role="3Tt5mk" to="iq83:73BQep1PU1O" resolve="saveIntoModule" />
                     </node>
                   </node>
                   <node concept="3x8VRR" id="6QX7yC5tcpP" role="2OqNvi" />
@@ -836,53 +835,6 @@
         <node concept="3Tqbb2" id="71I9cJUfpmP" role="1tU5fm" />
       </node>
     </node>
-    <node concept="2tJIrI" id="67iKQ7oe8n7" role="jymVt" />
-    <node concept="3clFb_" id="4QaxHTo8MvL" role="jymVt">
-      <property role="TrG5h" value="propertyHolds" />
-      <property role="1EzhhJ" value="false" />
-      <node concept="NWlO9" id="694Tbl9g4o2" role="lGtFl">
-        <property role="NWlVz" value="Property holds if we found a trace." />
-      </node>
-      <node concept="10P_77" id="4QaxHTo8MvM" role="3clF45" />
-      <node concept="3Tm1VV" id="4QaxHTo8MvN" role="1B3o_S" />
-      <node concept="3clFbS" id="4QaxHTo8MvT" role="3clF47">
-        <node concept="3clFbF" id="4QaxHTo8MvW" role="3cqZAp">
-          <node concept="1Wc70l" id="4QaxHTo8N4T" role="3clFbG">
-            <node concept="3fqX7Q" id="4QaxHTo8Nrb" role="3uHU7w">
-              <node concept="3nyPlj" id="4QaxHTo8NrR" role="3fr31v">
-                <ref role="37wK5l" to="eqhl:7kzfSagKGHX" resolve="isUnwindingFail" />
-              </node>
-            </node>
-            <node concept="3nyPlj" id="4QaxHTo8MvV" role="3uHU7B">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="4QaxHTo8MvU" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="4QaxHTo8MJ0" role="jymVt" />
-    <node concept="3clFb_" id="4QaxHTo8Q4V" role="jymVt">
-      <property role="TrG5h" value="propertyFails" />
-      <property role="1EzhhJ" value="false" />
-      <node concept="NWlO9" id="694Tbl9g4uz" role="lGtFl">
-        <property role="NWlVz" value="Property fails if that program part is not reachable." />
-      </node>
-      <node concept="10P_77" id="4QaxHTo8Q4W" role="3clF45" />
-      <node concept="3Tm1VV" id="4QaxHTo8Q4X" role="1B3o_S" />
-      <node concept="3clFbS" id="4QaxHTo8Q4Y" role="3clF47">
-        <node concept="3clFbF" id="4QaxHTo8Q4Z" role="3cqZAp">
-          <node concept="3nyPlj" id="4QaxHTo8Q53" role="3clFbG">
-            <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="4QaxHTo8Q54" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
     <node concept="2tJIrI" id="2jb6dmWOFga" role="jymVt" />
     <node concept="3clFb_" id="67iKQ7ooXwK" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -997,7 +949,7 @@
             <node concept="liA8E" id="341WyjDja9F" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
               <node concept="Xl_RD" id="341WyjDjabL" role="37wK5m">
-                <property role="Xl_RC" value="block file" />
+                <property role="Xl_RC" value="block " />
               </node>
             </node>
           </node>
@@ -1050,7 +1002,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="17QB3L" id="67iKQ7olKPW" role="1tU5fm" />
       <node concept="Xl_RD" id="67iKQ7olKXy" role="33vP2m">
-        <property role="Xl_RC" value="&lt;result description=" />
+        <property role="Xl_RC" value="&lt;goal description=" />
       </node>
     </node>
     <node concept="Wx3nA" id="67iKQ7olKYc" role="jymVt">
@@ -1060,7 +1012,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="17QB3L" id="67iKQ7olKYd" role="1tU5fm" />
       <node concept="Xl_RD" id="67iKQ7olKYe" role="33vP2m">
-        <property role="Xl_RC" value="&lt;/result&gt;" />
+        <property role="Xl_RC" value="&lt;/goal&gt;" />
       </node>
     </node>
     <node concept="2tJIrI" id="67iKQ7olKB_" role="jymVt" />
@@ -1284,9 +1236,9 @@
                       <ref role="3cqZAo" node="3YHIg3ZDHdx" resolve="line" />
                     </node>
                     <node concept="liA8E" id="2jb6dmWQ7pv" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                      <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
                       <node concept="Xl_RD" id="2jb6dmWQ7pw" role="37wK5m">
-                        <property role="Xl_RC" value="FAILED" />
+                        <property role="Xl_RC" value="status=\&quot;FAILED\&quot;&gt;" />
                       </node>
                     </node>
                   </node>
@@ -1462,14 +1414,38 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbF" id="6YSWAhTHB3z" role="3cqZAp">
+                    <node concept="2OqwBi" id="6YSWAhTHB3$" role="3clFbG">
+                      <node concept="37vLTw" id="6YSWAhTHB3_" role="2Oq$k0">
+                        <ref role="3cqZAo" node="67iKQ7olLLa" resolve="choppedOutput" />
+                      </node>
+                      <node concept="TSZUe" id="6YSWAhTHB3A" role="2OqNvi">
+                        <node concept="Xl_RD" id="6YSWAhTHBcU" role="25WWJ7">
+                          <property role="Xl_RC" value="&lt;goto_trace&gt;" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="6YSWAhTHBqZ" role="3cqZAp">
+                    <node concept="2OqwBi" id="6YSWAhTHBr0" role="3clFbG">
+                      <node concept="37vLTw" id="6YSWAhTHBr1" role="2Oq$k0">
+                        <ref role="3cqZAo" node="67iKQ7olLLa" resolve="choppedOutput" />
+                      </node>
+                      <node concept="TSZUe" id="6YSWAhTHBr2" role="2OqNvi">
+                        <node concept="Xl_RD" id="6YSWAhTHBr3" role="25WWJ7">
+                          <property role="Xl_RC" value="&lt;/goto_trace&gt;" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="3YHIg3ZFjhL" role="3cqZAp">
                     <node concept="2OqwBi" id="3YHIg3ZFjhM" role="3clFbG">
                       <node concept="37vLTw" id="3YHIg3ZFjhN" role="2Oq$k0">
                         <ref role="3cqZAo" node="67iKQ7olLLa" resolve="choppedOutput" />
                       </node>
                       <node concept="TSZUe" id="3YHIg3ZFjhO" role="2OqNvi">
-                        <node concept="Xl_RD" id="3YHIg3ZFjhP" role="25WWJ7">
-                          <property role="Xl_RC" value="&lt;/result&gt;" />
+                        <node concept="37vLTw" id="58bmuEAxxcC" role="25WWJ7">
+                          <ref role="3cqZAo" node="67iKQ7olKYc" resolve="RESULT_END_MARKER" />
                         </node>
                       </node>
                     </node>
@@ -1505,17 +1481,6 @@
                   </node>
                 </node>
                 <node concept="1Wc70l" id="2jb6dmWPKP0" role="3eO9$A">
-                  <node concept="2OqwBi" id="2jb6dmWPLxd" role="3uHU7w">
-                    <node concept="37vLTw" id="3YHIg3ZDSrh" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3YHIg3ZDHdx" resolve="line" />
-                    </node>
-                    <node concept="liA8E" id="2jb6dmWPOqW" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                      <node concept="Xl_RD" id="2jb6dmWPOHI" role="37wK5m">
-                        <property role="Xl_RC" value="FAILED" />
-                      </node>
-                    </node>
-                  </node>
                   <node concept="2OqwBi" id="2jb6dmWPKGd" role="3uHU7B">
                     <node concept="2OqwBi" id="2jb6dmWPKGe" role="2Oq$k0">
                       <node concept="37vLTw" id="3YHIg3ZDSdQ" role="2Oq$k0">
@@ -1529,6 +1494,17 @@
                       <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                       <node concept="37vLTw" id="3YHIg3ZDMjZ" role="37wK5m">
                         <ref role="3cqZAo" node="67iKQ7olKQ1" resolve="RESULT_START_MARKER" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="58bmuEAxwlP" role="3uHU7w">
+                    <node concept="37vLTw" id="58bmuEAxwlQ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3YHIg3ZDHdx" resolve="line" />
+                    </node>
+                    <node concept="liA8E" id="58bmuEAxwlR" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                      <node concept="Xl_RD" id="58bmuEAxwlS" role="37wK5m">
+                        <property role="Xl_RC" value="status=\&quot;FAILED\&quot;&gt;" />
                       </node>
                     </node>
                   </node>

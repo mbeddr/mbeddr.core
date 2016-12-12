@@ -34,6 +34,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -146,6 +147,7 @@
   </registry>
   <node concept="1lH9Xt" id="3rqorKKj4C_">
     <property role="TrG5h" value="BasicTestsSaving" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="1ENIgcpefJ1" role="1SL9yI">
       <property role="TrG5h" value="testEnv01" />
       <node concept="3cqZAl" id="1ENIgcpefJ2" role="3clF45" />
@@ -218,7 +220,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1ENIgcpefJw" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
@@ -235,7 +237,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1ENIgcpefJB" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>

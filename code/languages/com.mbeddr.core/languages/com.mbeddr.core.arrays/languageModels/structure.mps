@@ -2,7 +2,7 @@
 <model ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
@@ -268,6 +268,11 @@
     <node concept="PrWs8" id="CNkpdzSb_C" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="324QByoHCxI">
+    <property role="3GE5qa" value="arrays" />
+    <property role="TrG5h" value="ISpecialArrayTypeOperationContext" />
+    <property role="EcuMT" value="3496159422239377518" />
   </node>
 </model>
 

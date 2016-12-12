@@ -1,1 +1,9 @@
-include "build:com.jetbrains.mps", "build:com.mbeddr.allScripts", "build:com.mbeddr.build", "build:com.mbeddr.tests", "build:com.mbeddr.analyses.cbmc", "build:com.mbeddr.allInOne", "build:com.mbeddr.platform", "build:com.mbeddr.rcp", "build:com.mbeddr.release", "build:com.mbeddr.tutorial"
+include ":build:com.mbeddr",
+        ":build:com.mbeddr:platform",
+        ":build:com.mbeddr:languages",
+        ":build:com.mbeddr:everythingElse",
+        ":build:thirdparty",
+        ":build:thirdparty:graphviz",
+        ":build:thirdparty:jdk",
+        ":build:thirdparty:mps"
+rootProject.name = 'mbeddr.core'

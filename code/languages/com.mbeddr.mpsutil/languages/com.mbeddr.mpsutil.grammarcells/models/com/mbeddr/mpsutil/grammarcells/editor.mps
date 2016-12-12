@@ -937,6 +937,23 @@
           </node>
           <node concept="2iRfu4" id="qT5MFmsg5R" role="2iSdaV" />
         </node>
+        <node concept="3EZMnI" id="yuUZPu3Zne" role="3EZMnx">
+          <property role="3EZMnw" value="false" />
+          <node concept="3F0ifn" id="yuUZPu3Znf" role="3EZMnx">
+            <property role="3F0ifm" value="side transform condition" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+          </node>
+          <node concept="3F1sOY" id="yuUZPu3Zng" role="3EZMnx">
+            <ref role="1NtTu8" to="teg0:yuUZPu3Zn9" resolve="sideTransformCondition" />
+          </node>
+          <node concept="VPM3Z" id="yuUZPu3Znh" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="yuUZPu3Zni" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="2iRfu4" id="yuUZPu3Znj" role="2iSdaV" />
+        </node>
         <node concept="3EZMnI" id="78yXNxdi317" role="3EZMnx">
           <property role="3EZMnw" value="false" />
           <node concept="3F0ifn" id="78yXNxdi318" role="3EZMnx">

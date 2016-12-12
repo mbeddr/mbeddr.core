@@ -317,6 +317,8 @@
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
@@ -351,6 +353,7 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
+      <concept id="1171391069720" name="jetbrains.mps.baseLanguage.collections.structure.GetIndexOfOperation" flags="nn" index="2WmjW8" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
@@ -1133,7 +1136,45 @@
     <ref role="1XX52x" to="q5q6:7MOa6vKJe1O" resolve="GuardedCall" />
     <node concept="3EZMnI" id="7MOa6vKJgZ1" role="2wV5jI">
       <node concept="3F0ifn" id="7MOa6vKJgZ4" role="3EZMnx">
-        <property role="3F0ifm" value="choice:" />
+        <property role="3F0ifm" value="choice" />
+      </node>
+      <node concept="1HlG4h" id="7pDJl$PXaCt" role="3EZMnx">
+        <node concept="1HfYo3" id="7pDJl$PXaCv" role="1HlULh">
+          <node concept="3TQlhw" id="7pDJl$PXaCx" role="1Hhtcw">
+            <node concept="3clFbS" id="7pDJl$PXaCz" role="2VODD2">
+              <node concept="3clFbF" id="7pDJl$PXbnN" role="3cqZAp">
+                <node concept="3cpWs3" id="7pDJl$PXdKL" role="3clFbG">
+                  <node concept="Xl_RD" id="7pDJl$PXd6x" role="3uHU7w">
+                    <property role="Xl_RC" value=")" />
+                  </node>
+                  <node concept="3cpWs3" id="7pDJl$PXcXN" role="3uHU7B">
+                    <node concept="Xl_RD" id="7pDJl$PXbnM" role="3uHU7B">
+                      <property role="Xl_RC" value="(" />
+                    </node>
+                    <node concept="2OqwBi" id="7pDJl$PXgB7" role="3uHU7w">
+                      <node concept="2OqwBi" id="7pDJl$PXf4s" role="2Oq$k0">
+                        <node concept="2OqwBi" id="7pDJl$PXedq" role="2Oq$k0">
+                          <node concept="pncrf" id="7pDJl$PXdXU" role="2Oq$k0" />
+                          <node concept="1mfA1w" id="7pDJl$PXeCb" role="2OqNvi" />
+                        </node>
+                        <node concept="32TBzR" id="7pDJl$PXfsE" role="2OqNvi" />
+                      </node>
+                      <node concept="2WmjW8" id="7pDJl$PXiVu" role="2OqNvi">
+                        <node concept="pncrf" id="7pDJl$PXj9$" role="25WWJ7" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7pDJl$PXb7R" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="7pDJl$PXbnC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="2h3YlM50I0B" role="3EZMnx">
         <property role="3F0ifm" value="if" />
@@ -7977,6 +8018,9 @@
       <node concept="PMmxH" id="5tDzxi6RrVB" role="3EZMnx">
         <ref role="PMmxG" node="2OfxaHaxQ5D" resolve="ExternalFilesSettings" />
       </node>
+      <node concept="PMmxH" id="7kPcpiFfJvH" role="3EZMnx">
+        <ref role="PMmxG" node="7kPcpiFfJ1y" resolve="PreprocessorMacrosSettings" />
+      </node>
       <node concept="PMmxH" id="5tDzxi6RrUY" role="3EZMnx">
         <ref role="PMmxG" node="fjZ33TpCB9" resolve="CBMCSpecificSettings" />
       </node>
@@ -7999,6 +8043,9 @@
       </node>
       <node concept="PMmxH" id="5tDzxi6RrZ5" role="3EZMnx">
         <ref role="PMmxG" node="5tDzxi6Rdl3" resolve="ExternalFilesSettingsDoc" />
+      </node>
+      <node concept="PMmxH" id="7kPcpiFgp4H" role="3EZMnx">
+        <ref role="PMmxG" node="7kPcpiFgo_6" resolve="PreprocessorMacrosSettingsDoc" />
       </node>
       <node concept="PMmxH" id="5tDzxi6RrYs" role="3EZMnx">
         <ref role="PMmxG" node="3SmHfhJ39aB" resolve="CBMCSpecificSettingsDoc" />
@@ -8112,6 +8159,90 @@
   </node>
   <node concept="3p36aQ" id="3cUcim$dss5">
     <ref role="aqKnT" to="q5q6:72mSD5R_OCr" resolve="ValidEnumerationValue_old" />
+  </node>
+  <node concept="24kQdi" id="7kPcpiFfE5$">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <ref role="1XX52x" to="q5q6:7kPcpiFfDY_" resolve="PreprocessorMacro" />
+    <node concept="3EZMnI" id="7kPcpiFfIJp" role="2wV5jI">
+      <node concept="3F0ifn" id="7kPcpiFfIJH" role="3EZMnx">
+        <property role="3F0ifm" value="#define" />
+      </node>
+      <node concept="3F0A7n" id="7kPcpiFfIK0" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="7kPcpiFfIKn" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F0A7n" id="7kPcpiFfIL6" role="3EZMnx">
+        <ref role="1NtTu8" to="q5q6:7kPcpiFfE0T" resolve="value" />
+      </node>
+      <node concept="l2Vlx" id="7kPcpiFfIJs" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="7kPcpiFfJ1y">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="PreprocessorMacrosSettings" />
+    <ref role="1XX52x" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+    <node concept="3EZMnI" id="7kPcpiFfJbc" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
+      <node concept="3F0ifn" id="7kPcpiFfJbd" role="AHCbl">
+        <property role="3F0ifm" value="Preprocessor Macros ..." />
+        <node concept="VechU" id="7kPcpiFfJbe" role="3F10Kt">
+          <property role="Vb096" value="darkGray" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7kPcpiFfJbf" role="3EZMnx">
+        <property role="3F0ifm" value="Preprocessor Macros:" />
+      </node>
+      <node concept="3EZMnI" id="7kPcpiFfJbg" role="3EZMnx">
+        <node concept="VPM3Z" id="7kPcpiFfJbh" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="7kPcpiFfJbi" role="3EZMnx" />
+        <node concept="3F2HdR" id="7kPcpiFfJbj" role="3EZMnx">
+          <ref role="1NtTu8" to="q5q6:7kPcpiFfIYK" resolve="preprocessorMacros" />
+          <node concept="2iRkQZ" id="7kPcpiFfJbk" role="2czzBx" />
+          <node concept="VPM3Z" id="7kPcpiFfJbl" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="7kPcpiFfJbm" role="2iSdaV" />
+      </node>
+      <node concept="2EHx9g" id="7kPcpiFfJbn" role="2iSdaV" />
+      <node concept="pkWqt" id="7kPcpiFfJbo" role="pqm2j">
+        <node concept="3clFbS" id="7kPcpiFfJbp" role="2VODD2">
+          <node concept="3clFbF" id="7kPcpiFfJbq" role="3cqZAp">
+            <node concept="2OqwBi" id="7kPcpiFfJbr" role="3clFbG">
+              <node concept="pncrf" id="7kPcpiFfJbs" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7kPcpiFfKyL" role="2OqNvi">
+                <ref role="3TsBF5" to="q5q6:7kPcpiFfJpW" resolve="hasPreprocessorMacroSettings" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="7kPcpiFgo_6">
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="PreprocessorMacrosSettingsDoc" />
+    <ref role="1XX52x" to="q5q6:7ehmsbAuQbH" resolve="ICbmcSettings" />
+    <node concept="3EZMnI" id="7kPcpiFgo_7" role="2wV5jI">
+      <node concept="3EZMnI" id="7kPcpiFgo_8" role="3EZMnx">
+        <node concept="VPM3Z" id="7kPcpiFgo_9" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="7kPcpiFgo_a" role="3EZMnx">
+          <property role="3F0ifm" value="macro               " />
+        </node>
+        <node concept="3F0ifn" id="7kPcpiFgo_b" role="3EZMnx">
+          <property role="3F0ifm" value="- defines macros to be passed to the preprocessor via CBMC" />
+          <node concept="Vb9p2" id="7kPcpiFgo_c" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="7kPcpiFgo_d" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="7kPcpiFgo_u" role="2iSdaV" />
+    </node>
   </node>
 </model>
 

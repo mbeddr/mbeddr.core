@@ -205,6 +205,7 @@
         <child id="5641871277849477942" name="children" index="16YnsZ" />
       </concept>
       <concept id="4193597469137492644" name="com.mbeddr.core.debug.test.structure.MarkerRef" flags="ng" index="3cQ7K9">
+        <property id="105850086903157559" name="name" index="3sdDOw" />
         <reference id="4193597469137492645" name="marker" index="3cQ7K8" />
       </concept>
       <concept id="4193597469137492628" name="com.mbeddr.core.debug.test.structure.ProgramMarkerAnnotation" flags="ng" index="3cQ7KT" />
@@ -418,8 +419,8 @@
       <node concept="3cqZAl" id="7Jr7T0w2lYm" role="3clF45" />
       <node concept="3clFbS" id="7Jr7T0w2lYn" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lYo" role="3scror">
-        <node concept="3sdZbA" id="7Jr7T0w2lYp" role="3sdZbB">
-          <ref role="3sa5fj" node="bKKma6Ieff" resolve="stmntInside1stClosure" />
+        <node concept="3sdZbA" id="16$HA_jakjp" role="3sdZbB">
+          <ref role="3sa5fj" node="1KSABIutHoG" resolve="assertWithClosure" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lYq" role="3savwP">
@@ -484,15 +485,16 @@
       <node concept="3cqZAl" id="7Jr7T0w2m7e" role="3clF45" />
       <node concept="3clFbS" id="7Jr7T0w2m7f" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m7g" role="3scror">
-        <node concept="3sdZbA" id="7Jr7T0w2m7h" role="3sdZbB">
-          <ref role="3sa5fj" node="bKKma6Ieff" resolve="stmntInside1stClosure" />
+        <node concept="3sdZbA" id="16$HA_jakje" role="3sdZbB">
+          <ref role="3sa5fj" node="1KSABIutHoG" resolve="assertWithClosure" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m7i" role="3savwP" />
       <node concept="3F5Y_J" id="7Jr7T0w2m7j" role="3F5AM1">
         <node concept="30a7bf" id="7Jr7T0w2m7k" role="3F5Y$9">
-          <node concept="3cQ7K9" id="7Jr7T0w2m7l" role="30a7be">
-            <ref role="3cQ7K8" node="bKKma6Ieff" resolve="stmntInside1stClosure" />
+          <node concept="3cQ7K9" id="16$HA_jakj3" role="30a7be">
+            <property role="3sdDOw" value="marker" />
+            <ref role="3cQ7K8" node="1KSABIutHoG" resolve="assertWithClosure" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKG$PDq" role="3F5Y$9">
@@ -561,8 +563,9 @@
           </node>
         </node>
         <node concept="30a7bf" id="7Jr7T0w2maG" role="3F5Y$9">
-          <node concept="3cQ7K9" id="7Jr7T0w2maH" role="30a7be">
-            <ref role="3cQ7K8" node="bKKma6Ieff" resolve="stmntInside1stClosure" />
+          <node concept="3cQ7K9" id="16$HA_jakiS" role="30a7be">
+            <property role="3sdDOw" value="marker" />
+            <ref role="3cQ7K8" node="1KSABIutHoG" resolve="assertWithClosure" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$PCy" role="3F5Y$9">
@@ -576,8 +579,8 @@
       <node concept="3cqZAl" id="7Jr7T0w2meV" role="3clF45" />
       <node concept="3clFbS" id="7Jr7T0w2meW" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2meX" role="3scror">
-        <node concept="3sdZbA" id="7Jr7T0w2meY" role="3sdZbB">
-          <ref role="3sa5fj" node="bKKma6IeRX" resolve="1stStmntinside2ndClosure" />
+        <node concept="3sdZbA" id="16$HA_jajQb" role="3sdZbB">
+          <ref role="3sa5fj" node="bKKma6IeSg" resolve="invokationOf2ndClosure" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2meZ" role="3savwP">
@@ -607,8 +610,8 @@
       <node concept="3cqZAl" id="7Jr7T0w2mhd" role="3clF45" />
       <node concept="3clFbS" id="7Jr7T0w2mhe" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mhf" role="3scror">
-        <node concept="3sdZbA" id="7Jr7T0w2mhg" role="3sdZbB">
-          <ref role="3sa5fj" node="bKKma6Ieff" resolve="stmntInside1stClosure" />
+        <node concept="3sdZbA" id="16$HA_jakiH" role="3sdZbB">
+          <ref role="3sa5fj" node="1KSABIutHoG" resolve="assertWithClosure" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mhh" role="3savwP">

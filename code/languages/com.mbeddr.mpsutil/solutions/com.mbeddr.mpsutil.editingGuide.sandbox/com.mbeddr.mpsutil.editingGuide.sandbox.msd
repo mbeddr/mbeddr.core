@@ -15,7 +15,7 @@
     <usedDevKit>1ca21c70-6e61-4b62-8771-dfd96620ef7c(com.mbeddr.mpsutil.guides)</usedDevKit>
   </usedDevKits>
   <languageVersions>
-    <language slang="l:67506b1e-43ad-47fe-a8e6-bc7837e9e11f:com.mbeddr.mpsutil.editingGuide" version="-1" />
+    <language slang="l:67506b1e-43ad-47fe-a8e6-bc7837e9e11f:com.mbeddr.mpsutil.editingGuide" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
     <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
