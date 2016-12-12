@@ -8259,5 +8259,36 @@
       <node concept="2iRkQZ" id="7kPcpiFgo_u" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3aDyPAXVGI$">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <ref role="1XX52x" to="q5q6:3aDyPAXVGIl" resolve="CPROVERinput" />
+    <node concept="3EZMnI" id="3aDyPAXVGIA" role="2wV5jI">
+      <node concept="3F0ifn" id="3aDyPAXVGIB" role="3EZMnx">
+        <property role="3F0ifm" value="__CPROVER_input(" />
+      </node>
+      <node concept="3F1sOY" id="3aDyPAXYTTh" role="3EZMnx">
+        <ref role="1NtTu8" to="q5q6:3aDyPAXYTSH" resolve="name" />
+        <node concept="11L4FC" id="3aDyPAXYTXH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="3aDyPAXYU25" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3aDyPAXVGID" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F1sOY" id="3aDyPAXVGK7" role="3EZMnx">
+        <ref role="1NtTu8" to="q5q6:3aDyPAXVGIm" resolve="varRef" />
+      </node>
+      <node concept="3F0ifn" id="3aDyPAXVGIF" role="3EZMnx">
+        <property role="3F0ifm" value=");" />
+        <node concept="11L4FC" id="3aDyPAXYU6r" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="3aDyPAXVGIG" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

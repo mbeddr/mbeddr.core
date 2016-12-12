@@ -14,6 +14,7 @@
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" implicit="true" />
+    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -793,6 +794,28 @@
     </node>
     <node concept="PrWs8" id="7kPcpiFfE0Q" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aDyPAXVGIl">
+    <property role="EcuMT" value="3650602190515391381" />
+    <property role="3GE5qa" value="cbmc_macros" />
+    <property role="TrG5h" value="CPROVERinput" />
+    <property role="34LRSv" value="__CPROVER_input" />
+    <property role="R4oN_" value="mark a variable as input for CBMC" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="3aDyPAXVGIm" role="1TKVEi">
+      <property role="IQ2ns" value="3650602190515391382" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="varRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
+    </node>
+    <node concept="1TJgyj" id="3aDyPAXYTSH" role="1TKVEi">
+      <property role="IQ2ns" value="3650602190516231725" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="name" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
     </node>
   </node>
 </model>
