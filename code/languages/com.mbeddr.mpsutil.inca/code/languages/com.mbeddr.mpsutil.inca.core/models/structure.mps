@@ -1093,5 +1093,40 @@
     <property role="TrG5h" value="EmptyCommentTag" />
     <ref role="1TJDcQ" to="m373:4iGwz$GTsqK" resolve="EmptyBlockDocTag" />
   </node>
+  <node concept="1TIwiD" id="5u4fwtOD5TI">
+    <property role="EcuMT" value="6306233579968159342" />
+    <property role="TrG5h" value="UserObjectMap" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="5u4fwtOD63c" role="1TKVEi">
+      <property role="IQ2ns" value="6306233579968159948" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="entries" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5u4fwtOD5TT" resolve="UserObjectEntry" />
+    </node>
+    <node concept="M6xJ_" id="5u4fwtOD5TJ" role="lGtFl">
+      <property role="Hh88m" value="userObjects" />
+      <node concept="trNpa" id="5u4fwtOD5TP" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5u4fwtOD5TT">
+    <property role="EcuMT" value="6306233579968159353" />
+    <property role="TrG5h" value="UserObjectEntry" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5u4fwtOD5TX" role="1TKVEi">
+      <property role="IQ2ns" value="6306233579968159357" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyi" id="5u4fwtOD5TU" role="1TKVEl">
+      <property role="IQ2nx" value="6306233579968159354" />
+      <property role="TrG5h" value="key" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
