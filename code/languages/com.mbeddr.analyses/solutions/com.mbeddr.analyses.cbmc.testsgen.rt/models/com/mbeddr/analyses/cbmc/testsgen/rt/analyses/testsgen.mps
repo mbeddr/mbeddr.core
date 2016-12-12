@@ -2728,6 +2728,18 @@
         <property role="NWlVz" value="The imbrication level of the current struct value." />
       </node>
     </node>
+    <node concept="2tJIrI" id="3aDyPAY3yre" role="jymVt" />
+    <node concept="312cEg" id="3aDyPAY3xcA" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="arrayImbricationLevel" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="3aDyPAY3xcB" role="1B3o_S" />
+      <node concept="10Oyi0" id="3aDyPAY3xcC" role="1tU5fm" />
+      <node concept="NWlO9" id="3aDyPAY3xcD" role="lGtFl">
+        <property role="NWlVz" value="The imbrication level of the current array value." />
+      </node>
+    </node>
     <node concept="2tJIrI" id="3aDyPAY2uHr" role="jymVt" />
     <node concept="312cEg" id="3aDyPAXTQeO" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -3196,6 +3208,28 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="3aDyPAY3$98" role="3cqZAp">
+          <node concept="3clFbS" id="3aDyPAY3$99" role="3clFbx">
+            <node concept="3clFbF" id="3aDyPAY3$9a" role="3cqZAp">
+              <node concept="3uNrnE" id="3aDyPAY3$9b" role="3clFbG">
+                <node concept="37vLTw" id="3aDyPAY3_iH" role="2$L3a6">
+                  <ref role="3cqZAo" node="3aDyPAY3xcA" resolve="arrayImbricationLevel" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3aDyPAY3$9d" role="3clFbw">
+            <node concept="37vLTw" id="3aDyPAY3$9e" role="2Oq$k0">
+              <ref role="3cqZAo" node="3aDyPAXQY5k" resolve="qName" />
+            </node>
+            <node concept="liA8E" id="3aDyPAY3$9f" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="Xl_RD" id="3aDyPAY3$9g" role="37wK5m">
+                <property role="Xl_RC" value="array" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="3aDyPAY2onx" role="3cqZAp">
           <node concept="3clFbS" id="3aDyPAY2ony" role="3clFbx">
             <node concept="3clFbF" id="3aDyPAY2onz" role="3cqZAp">
@@ -3239,6 +3273,59 @@
                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="Xl_RD" id="3aDyPAY2onH" role="37wK5m">
                   <property role="Xl_RC" value="member" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3aDyPAY3D5h" role="3cqZAp">
+          <node concept="3clFbS" id="3aDyPAY3D5i" role="3clFbx">
+            <node concept="3clFbF" id="3aDyPAY3D5j" role="3cqZAp">
+              <node concept="d57v9" id="3aDyPAY3D5k" role="3clFbG">
+                <node concept="37vLTw" id="3aDyPAY3D5l" role="37vLTJ">
+                  <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
+                </node>
+                <node concept="3cpWs3" id="3aDyPAY3Ffp" role="37vLTx">
+                  <node concept="Xl_RD" id="3aDyPAY3FDR" role="3uHU7w">
+                    <property role="Xl_RC" value="]" />
+                  </node>
+                  <node concept="3cpWs3" id="3aDyPAY3D5m" role="3uHU7B">
+                    <node concept="Xl_RD" id="3aDyPAY3D5n" role="3uHU7B">
+                      <property role="Xl_RC" value="[" />
+                    </node>
+                    <node concept="2OqwBi" id="3aDyPAY3D5o" role="3uHU7w">
+                      <node concept="37vLTw" id="3aDyPAY3D5p" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3aDyPAXQY5m" resolve="attributes" />
+                      </node>
+                      <node concept="liA8E" id="3aDyPAY3D5q" role="2OqNvi">
+                        <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                        <node concept="Xl_RD" id="3aDyPAY3D5r" role="37wK5m">
+                          <property role="Xl_RC" value="index" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="3aDyPAY3D5s" role="3clFbw">
+            <node concept="3eOSWO" id="3aDyPAY3D5t" role="3uHU7w">
+              <node concept="3cmrfG" id="3aDyPAY3D5u" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="37vLTw" id="3aDyPAY3EAL" role="3uHU7B">
+                <ref role="3cqZAo" node="3aDyPAY3xcA" resolve="arrayImbricationLevel" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3aDyPAY3D5w" role="3uHU7B">
+              <node concept="37vLTw" id="3aDyPAY3D5x" role="2Oq$k0">
+                <ref role="3cqZAo" node="3aDyPAXQY5k" resolve="qName" />
+              </node>
+              <node concept="liA8E" id="3aDyPAY3D5y" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="Xl_RD" id="3aDyPAY3D5z" role="37wK5m">
+                  <property role="Xl_RC" value="element" />
                 </node>
               </node>
             </node>
@@ -3321,6 +3408,28 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="3aDyPAY3G5W" role="3cqZAp">
+          <node concept="3clFbS" id="3aDyPAY3G5X" role="3clFbx">
+            <node concept="3clFbF" id="3aDyPAY3G5Y" role="3cqZAp">
+              <node concept="3uO5VW" id="3aDyPAY3G5Z" role="3clFbG">
+                <node concept="37vLTw" id="3aDyPAY3Hmd" role="2$L3a6">
+                  <ref role="3cqZAo" node="3aDyPAY3xcA" resolve="arrayImbricationLevel" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3aDyPAY3G61" role="3clFbw">
+            <node concept="37vLTw" id="3aDyPAY3G62" role="2Oq$k0">
+              <ref role="3cqZAo" node="3aDyPAXRiyn" resolve="qName" />
+            </node>
+            <node concept="liA8E" id="3aDyPAY3G63" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="Xl_RD" id="3aDyPAY3G64" role="37wK5m">
+                <property role="Xl_RC" value="array" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="3aDyPAY2CBP" role="3cqZAp">
           <node concept="3clFbS" id="3aDyPAY2CBQ" role="3clFbx">
             <node concept="3clFbF" id="3aDyPAY2CBR" role="3cqZAp">
@@ -3370,6 +3479,60 @@
                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="Xl_RD" id="3aDyPAY2CC5" role="37wK5m">
                   <property role="Xl_RC" value="member" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3aDyPAY3AfZ" role="3cqZAp">
+          <node concept="3clFbS" id="3aDyPAY3Ag0" role="3clFbx">
+            <node concept="3clFbF" id="3aDyPAY3Ag1" role="3cqZAp">
+              <node concept="37vLTI" id="3aDyPAY3Ag2" role="3clFbG">
+                <node concept="37vLTw" id="3aDyPAY3Ag3" role="37vLTJ">
+                  <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
+                </node>
+                <node concept="2OqwBi" id="3aDyPAY3Ag4" role="37vLTx">
+                  <node concept="37vLTw" id="3aDyPAY3Ag5" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
+                  </node>
+                  <node concept="liA8E" id="3aDyPAY3Ag6" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <node concept="3cmrfG" id="3aDyPAY3Ag7" role="37wK5m">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                    <node concept="2OqwBi" id="3aDyPAY3Ag8" role="37wK5m">
+                      <node concept="37vLTw" id="3aDyPAY3Ag9" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
+                      </node>
+                      <node concept="liA8E" id="3aDyPAY3Aga" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.lastIndexOf(java.lang.String):int" resolve="lastIndexOf" />
+                        <node concept="Xl_RD" id="3aDyPAY3Agb" role="37wK5m">
+                          <property role="Xl_RC" value="[" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="3aDyPAY3Agc" role="3clFbw">
+            <node concept="3eOSWO" id="3aDyPAY3Agd" role="3uHU7w">
+              <node concept="3cmrfG" id="3aDyPAY3Age" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="37vLTw" id="3aDyPAY3CNX" role="3uHU7B">
+                <ref role="3cqZAo" node="3aDyPAY3xcA" resolve="arrayImbricationLevel" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3aDyPAY3Agg" role="3uHU7B">
+              <node concept="37vLTw" id="3aDyPAY3Agh" role="2Oq$k0">
+                <ref role="3cqZAo" node="3aDyPAXRiyn" resolve="qName" />
+              </node>
+              <node concept="liA8E" id="3aDyPAY3Agi" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="Xl_RD" id="3aDyPAY3Agj" role="37wK5m">
+                  <property role="Xl_RC" value="element" />
                 </node>
               </node>
             </node>
