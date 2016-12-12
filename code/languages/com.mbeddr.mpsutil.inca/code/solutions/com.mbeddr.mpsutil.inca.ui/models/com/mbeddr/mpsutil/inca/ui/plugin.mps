@@ -61,6 +61,9 @@
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="vcmv" ref="r:0d1bf3bf-9fc9-4a6b-aa90-c180231319e3(com.mbeddr.mpsutil.inca.fun.refactorings)" />
+    <import index="wduz" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.matchers.backend(com.mbeddr.mpsutil.inca.core.runtime/)" />
+    <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
+    <import index="gg94" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.rete.util(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
     <import index="la48" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.api.impl(com.mbeddr.mpsutil.inca.core.runtime/)" implicit="true" />
@@ -2690,6 +2693,57 @@
       <node concept="3clFbS" id="47VZ_g5dNRH" role="3clF47">
         <node concept="SfApY" id="47VZ_g5dR_h" role="3cqZAp">
           <node concept="3clFbS" id="47VZ_g5dR_i" role="SfCbr">
+            <node concept="3cpWs8" id="4gXnpRrZta8" role="3cqZAp">
+              <node concept="3cpWsn" id="4gXnpRrZta9" role="3cpWs9">
+                <property role="TrG5h" value="hint" />
+                <node concept="3uibUv" id="4gXnpRrZtaa" role="1tU5fm">
+                  <ref role="3uigEE" to="wduz:~QueryEvaluationHint" resolve="QueryEvaluationHint" />
+                </node>
+                <node concept="2ShNRf" id="4gXnpRrZuJQ" role="33vP2m">
+                  <node concept="1pGfFk" id="4gXnpRrZUgD" role="2ShVmc">
+                    <ref role="37wK5l" to="wduz:~QueryEvaluationHint.&lt;init&gt;(java.util.Map,org.eclipse.viatra.query.runtime.matchers.backend.IQueryBackendFactory)" resolve="QueryEvaluationHint" />
+                    <node concept="2YIFZM" id="4gXnpRrZZ9W" role="37wK5m">
+                      <ref role="1Pybhc" to="3o3z:~ImmutableMap" resolve="ImmutableMap" />
+                      <ref role="37wK5l" to="3o3z:~ImmutableMap.of(java.lang.Object,java.lang.Object):com.google.common.collect.ImmutableMap" resolve="of" />
+                      <node concept="10M0yZ" id="4gXnpRs01iV" role="37wK5m">
+                        <ref role="1PxDUh" to="gg94:~ReteHintOptions" resolve="ReteHintOptions" />
+                        <ref role="3cqZAo" to="gg94:~ReteHintOptions.deleteRederiveEvaluation" resolve="deleteRederiveEvaluation" />
+                      </node>
+                      <node concept="3clFbT" id="4gXnpRs01YP" role="37wK5m">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                    </node>
+                    <node concept="10Nm6u" id="4gXnpRs02RF" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="4gXnpRrZmDl" role="3cqZAp">
+              <node concept="3cpWsn" id="4gXnpRrZmDm" role="3cpWs9">
+                <property role="TrG5h" value="options" />
+                <node concept="3uibUv" id="4gXnpRrZmDn" role="1tU5fm">
+                  <ref role="3uigEE" to="h57a:~ViatraQueryEngineOptions" resolve="ViatraQueryEngineOptions" />
+                </node>
+                <node concept="2OqwBi" id="4gXnpRs03Bk" role="33vP2m">
+                  <node concept="2OqwBi" id="4gXnpRrZpoK" role="2Oq$k0">
+                    <node concept="2YIFZM" id="4gXnpRrZpj1" role="2Oq$k0">
+                      <ref role="37wK5l" to="h57a:~ViatraQueryEngineOptions.defineOptions():org.eclipse.viatra.query.runtime.api.ViatraQueryEngineOptions$Builder" resolve="defineOptions" />
+                      <ref role="1Pybhc" to="h57a:~ViatraQueryEngineOptions" resolve="ViatraQueryEngineOptions" />
+                    </node>
+                    <node concept="liA8E" id="4gXnpRrZpxm" role="2OqNvi">
+                      <ref role="37wK5l" to="h57a:~ViatraQueryEngineOptions$Builder.withDefaultHint(org.eclipse.viatra.query.runtime.matchers.backend.QueryEvaluationHint):org.eclipse.viatra.query.runtime.api.ViatraQueryEngineOptions$Builder" resolve="withDefaultHint" />
+                      <node concept="37vLTw" id="4gXnpRs03va" role="37wK5m">
+                        <ref role="3cqZAo" node="4gXnpRrZta9" resolve="hint" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4gXnpRs03LU" role="2OqNvi">
+                    <ref role="37wK5l" to="h57a:~ViatraQueryEngineOptions$Builder.build():org.eclipse.viatra.query.runtime.api.ViatraQueryEngineOptions" resolve="build" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="4gXnpRrZ5UE" role="3cqZAp" />
             <node concept="3cpWs8" id="526VibMIjYq" role="3cqZAp">
               <node concept="3cpWsn" id="526VibMIjYr" role="3cpWs9">
                 <property role="TrG5h" value="engine" />
