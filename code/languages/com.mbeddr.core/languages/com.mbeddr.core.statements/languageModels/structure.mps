@@ -167,6 +167,9 @@
     <node concept="PrWs8" id="4i3qqBgx2f2" role="PzmwI">
       <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
     </node>
+    <node concept="PrWs8" id="5PRxzt63EYn" role="PzmwI">
+      <ref role="PrY4T" node="2K9A72Iio1v" resolve="ICFGRelevantNode" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1OcdQnyStpU">
     <property role="TrG5h" value="LocalVarRef" />
@@ -927,7 +930,7 @@
       <ref role="PrY4T" node="5Xsg2EBpBVN" resolve="IStatmentListContainer" />
     </node>
     <node concept="PrWs8" id="2K9A72Iio1E" role="PzmwI">
-      <ref role="PrY4T" node="2K9A72Iio1v" resolve="IAncestorCFGNode" />
+      <ref role="PrY4T" node="2K9A72Iio1v" resolve="ICFGRelevantNode" />
     </node>
     <node concept="1TJgyj" id="1iWV611dFCL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -997,12 +1000,15 @@
     <property role="EcuMT" value="3173235022185995074" />
     <property role="TrG5h" value="ICFGNode" />
     <node concept="PrWs8" id="2K9A72Iio1w" role="PrDN$">
-      <ref role="PrY4T" node="2K9A72Iio1v" resolve="IAncestorCFGNode" />
+      <ref role="PrY4T" node="2K9A72Iio1v" resolve="ICFGRelevantNode" />
     </node>
   </node>
   <node concept="PlHQZ" id="2K9A72Iio1v">
     <property role="EcuMT" value="3173235022187036767" />
-    <property role="TrG5h" value="IAncestorCFGNode" />
+    <property role="TrG5h" value="ICFGRelevantNode" />
+    <node concept="PrWs8" id="48EaKWpVOBt" role="PrDN$">
+      <ref role="PrY4T" to="mj1l:48EaKWpVO_d" resolve="IAncestorRelevantNode" />
+    </node>
   </node>
 </model>
 
