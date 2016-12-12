@@ -12,9 +12,6 @@
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>9cc84fda-50d7-4269-ac01-968f17bbd3e9(com.mbeddr.mpsutil.inca.devkit)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:b802a056-92a2-4fbc-902e-f8e5004c331f:com.mbeddr.mpsutil.inca.core" version="0" />
     <language slang="l:e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2:com.mbeddr.mpsutil.inca.data" version="-1" />
