@@ -1006,6 +1006,9 @@
   <node concept="PlHQZ" id="2K9A72Iio1v">
     <property role="EcuMT" value="3173235022187036767" />
     <property role="TrG5h" value="ICFGRelevantNode" />
+    <node concept="PrWs8" id="48EaKWpVOBt" role="PrDN$">
+      <ref role="PrY4T" to="mj1l:48EaKWpVO_d" resolve="IAncestorRelevantNode" />
+    </node>
   </node>
 </model>
 
