@@ -806,9 +806,9 @@
     <node concept="1TJgyj" id="3aDyPAXVGIm" role="1TKVEi">
       <property role="IQ2ns" value="3650602190515391382" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="varRef" />
+      <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="3aDyPAXYTSH" role="1TKVEi">
       <property role="IQ2ns" value="3650602190516231725" />

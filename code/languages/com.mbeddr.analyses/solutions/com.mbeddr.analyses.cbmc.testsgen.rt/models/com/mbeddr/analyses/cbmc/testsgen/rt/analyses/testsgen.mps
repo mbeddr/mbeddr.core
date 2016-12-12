@@ -732,6 +732,24 @@
       </node>
     </node>
     <node concept="2tJIrI" id="ttBj3nNddP" role="jymVt" />
+    <node concept="312cEg" id="3aDyPAY5HP0" role="jymVt">
+      <property role="TrG5h" value="inputs2Values" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="3aDyPAY5HP1" role="1B3o_S" />
+      <node concept="_YKpA" id="3aDyPAY5Grv" role="1tU5fm">
+        <node concept="3uibUv" id="3aDyPAY5GrE" role="_ZDj9">
+          <ref role="3uigEE" to="1qo3:~Pair" resolve="Pair" />
+          <node concept="17QB3L" id="3aDyPAY5GrF" role="11_B2D" />
+          <node concept="3uibUv" id="3aDyPAY5GrG" role="11_B2D">
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+          </node>
+        </node>
+      </node>
+      <node concept="NWlO9" id="3aDyPAY5IcU" role="lGtFl">
+        <property role="NWlVz" value="Inputs and their values" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3aDyPAY5Hu3" role="jymVt" />
     <node concept="3clFbW" id="67iKQ7ofSdu" role="jymVt">
       <node concept="NWlO9" id="694Tbl9g4jl" role="lGtFl">
         <property role="NWlVz" value="Constructor" />
@@ -809,6 +827,21 @@
               <node concept="2OwXpG" id="694Tbl9fqsB" role="2OqNvi">
                 <ref role="2Oxat5" node="694Tbl9fpuF" resolve="lineNumber" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3aDyPAY5GKs" role="3cqZAp">
+          <node concept="37vLTI" id="3aDyPAY5GKu" role="3clFbG">
+            <node concept="2OqwBi" id="3aDyPAY5GrJ" role="37vLTx">
+              <node concept="37vLTw" id="3aDyPAY5GrK" role="2Oq$k0">
+                <ref role="3cqZAo" node="67iKQ7owFbs" resolve="tgi" />
+              </node>
+              <node concept="2OwXpG" id="3aDyPAY5GrL" role="2OqNvi">
+                <ref role="2Oxat5" node="3aDyPAXUcTk" resolve="inputs2Values" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="3aDyPAY5Jl0" role="37vLTJ">
+              <ref role="3cqZAo" node="3aDyPAY5HP0" resolve="inputs2Values" />
             </node>
           </node>
         </node>
@@ -995,6 +1028,34 @@
       </node>
       <node concept="3Tm1VV" id="ttBj3nNf8N" role="1B3o_S" />
       <node concept="3Tqbb2" id="ttBj3nNfni" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="3aDyPAY5Dny" role="jymVt" />
+    <node concept="3clFb_" id="3aDyPAY5Ej7" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getInputsAndValues" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="3aDyPAY5Eja" role="3clF47">
+        <node concept="3clFbF" id="3aDyPAY5Kmm" role="3cqZAp">
+          <node concept="37vLTw" id="3aDyPAY5Kml" role="3clFbG">
+            <ref role="3cqZAo" node="3aDyPAY5HP0" resolve="inputs2Values" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3aDyPAY5DNQ" role="1B3o_S" />
+      <node concept="NWlO9" id="3aDyPAY5F3r" role="lGtFl">
+        <property role="NWlVz" value="Returns the inputs and values" />
+      </node>
+      <node concept="_YKpA" id="3aDyPAY5Jx9" role="3clF45">
+        <node concept="3uibUv" id="3aDyPAY5Jxa" role="_ZDj9">
+          <ref role="3uigEE" to="1qo3:~Pair" resolve="Pair" />
+          <node concept="17QB3L" id="3aDyPAY5Jxb" role="11_B2D" />
+          <node concept="3uibUv" id="3aDyPAY5Jxc" role="11_B2D">
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="67iKQ7oe8kg" role="1B3o_S" />
     <node concept="3uibUv" id="67iKQ7oe8nr" role="1zkMxy">
