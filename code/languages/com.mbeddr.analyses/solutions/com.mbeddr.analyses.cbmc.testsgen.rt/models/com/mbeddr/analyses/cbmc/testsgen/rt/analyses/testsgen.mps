@@ -198,6 +198,7 @@
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -223,6 +224,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
+      <concept id="1214918975462" name="jetbrains.mps.baseLanguage.structure.PostfixDecrementExpression" flags="nn" index="3uO5VW" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -2715,6 +2717,18 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3aDyPAXTGdn" role="jymVt" />
+    <node concept="312cEg" id="3aDyPAY2t9L" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="structImbricationLevel" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="3aDyPAY2rGW" role="1B3o_S" />
+      <node concept="10Oyi0" id="3aDyPAY2t5k" role="1tU5fm" />
+      <node concept="NWlO9" id="3aDyPAY2uer" role="lGtFl">
+        <property role="NWlVz" value="The imbrication level of the current struct value." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3aDyPAY2uHr" role="jymVt" />
     <node concept="312cEg" id="3aDyPAXTQeO" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -3072,7 +3086,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3aDyPAXUsAw" role="3cqZAp" />
         <node concept="3clFbJ" id="3aDyPAXReWg" role="3cqZAp">
           <node concept="3clFbS" id="3aDyPAXReWh" role="3clFbx">
             <node concept="3clFbF" id="3aDyPAXReWi" role="3cqZAp">
@@ -3161,7 +3174,76 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3aDyPAXTO1U" role="3cqZAp" />
+        <node concept="3clFbJ" id="3aDyPAY2pW6" role="3cqZAp">
+          <node concept="3clFbS" id="3aDyPAY2pW7" role="3clFbx">
+            <node concept="3clFbF" id="3aDyPAY2wmD" role="3cqZAp">
+              <node concept="3uNrnE" id="3aDyPAY2xbU" role="3clFbG">
+                <node concept="37vLTw" id="3aDyPAY2xbW" role="2$L3a6">
+                  <ref role="3cqZAo" node="3aDyPAY2t9L" resolve="structImbricationLevel" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3aDyPAY2pWf" role="3clFbw">
+            <node concept="37vLTw" id="3aDyPAY2pWg" role="2Oq$k0">
+              <ref role="3cqZAo" node="3aDyPAXQY5k" resolve="qName" />
+            </node>
+            <node concept="liA8E" id="3aDyPAY2pWh" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="Xl_RD" id="3aDyPAY2pWi" role="37wK5m">
+                <property role="Xl_RC" value="struct" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3aDyPAY2onx" role="3cqZAp">
+          <node concept="3clFbS" id="3aDyPAY2ony" role="3clFbx">
+            <node concept="3clFbF" id="3aDyPAY2onz" role="3cqZAp">
+              <node concept="d57v9" id="3aDyPAY2_2A" role="3clFbG">
+                <node concept="37vLTw" id="3aDyPAY2_2G" role="37vLTJ">
+                  <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
+                </node>
+                <node concept="3cpWs3" id="3aDyPAY2DFf" role="37vLTx">
+                  <node concept="Xl_RD" id="3aDyPAY2DYP" role="3uHU7B">
+                    <property role="Xl_RC" value="." />
+                  </node>
+                  <node concept="2OqwBi" id="3aDyPAY2_2C" role="3uHU7w">
+                    <node concept="37vLTw" id="3aDyPAY2_2D" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3aDyPAXQY5m" resolve="attributes" />
+                    </node>
+                    <node concept="liA8E" id="3aDyPAY2_2E" role="2OqNvi">
+                      <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                      <node concept="Xl_RD" id="3aDyPAY2_2F" role="37wK5m">
+                        <property role="Xl_RC" value="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="3aDyPAY2_uC" role="3clFbw">
+            <node concept="3eOSWO" id="3aDyPAY2Ba1" role="3uHU7w">
+              <node concept="3cmrfG" id="3aDyPAY2BDp" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="37vLTw" id="3aDyPAY2AaX" role="3uHU7B">
+                <ref role="3cqZAo" node="3aDyPAY2t9L" resolve="structImbricationLevel" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3aDyPAY2onE" role="3uHU7B">
+              <node concept="37vLTw" id="3aDyPAY2onF" role="2Oq$k0">
+                <ref role="3cqZAo" node="3aDyPAXQY5k" resolve="qName" />
+              </node>
+              <node concept="liA8E" id="3aDyPAY2onG" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="Xl_RD" id="3aDyPAY2onH" role="37wK5m">
+                  <property role="Xl_RC" value="member" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2AHcQZ" id="3aDyPAXQY5q" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -3217,6 +3299,83 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="3aDyPAY2xYN" role="3cqZAp">
+          <node concept="3clFbS" id="3aDyPAY2xYO" role="3clFbx">
+            <node concept="3clFbF" id="3aDyPAY2xYP" role="3cqZAp">
+              <node concept="3uO5VW" id="3aDyPAY2z$9" role="3clFbG">
+                <node concept="37vLTw" id="3aDyPAY2z$b" role="2$L3a6">
+                  <ref role="3cqZAo" node="3aDyPAY2t9L" resolve="structImbricationLevel" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3aDyPAY2xYS" role="3clFbw">
+            <node concept="37vLTw" id="3aDyPAY2xYT" role="2Oq$k0">
+              <ref role="3cqZAo" node="3aDyPAXRiyn" resolve="qName" />
+            </node>
+            <node concept="liA8E" id="3aDyPAY2xYU" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="Xl_RD" id="3aDyPAY2xYV" role="37wK5m">
+                <property role="Xl_RC" value="struct" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3aDyPAY2CBP" role="3cqZAp">
+          <node concept="3clFbS" id="3aDyPAY2CBQ" role="3clFbx">
+            <node concept="3clFbF" id="3aDyPAY2CBR" role="3cqZAp">
+              <node concept="37vLTI" id="3aDyPAY2Ecy" role="3clFbG">
+                <node concept="37vLTw" id="3aDyPAY2Ec$" role="37vLTJ">
+                  <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
+                </node>
+                <node concept="2OqwBi" id="3aDyPAY2Fgp" role="37vLTx">
+                  <node concept="37vLTw" id="3aDyPAY2EMq" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
+                  </node>
+                  <node concept="liA8E" id="3aDyPAY2FUw" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <node concept="3cmrfG" id="3aDyPAY2GbR" role="37wK5m">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                    <node concept="2OqwBi" id="3aDyPAY2HXO" role="37wK5m">
+                      <node concept="37vLTw" id="3aDyPAY2HjE" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
+                      </node>
+                      <node concept="liA8E" id="3aDyPAY2IKa" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.lastIndexOf(java.lang.String):int" resolve="lastIndexOf" />
+                        <node concept="Xl_RD" id="3aDyPAY2J1T" role="37wK5m">
+                          <property role="Xl_RC" value="." />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="3aDyPAY2CBY" role="3clFbw">
+            <node concept="3eOSWO" id="3aDyPAY2CBZ" role="3uHU7w">
+              <node concept="3cmrfG" id="3aDyPAY2CC0" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="37vLTw" id="3aDyPAY2CC1" role="3uHU7B">
+                <ref role="3cqZAo" node="3aDyPAY2t9L" resolve="structImbricationLevel" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3aDyPAY2CC2" role="3uHU7B">
+              <node concept="37vLTw" id="3aDyPAY2CC3" role="2Oq$k0">
+                <ref role="3cqZAo" node="3aDyPAXRiyn" resolve="qName" />
+              </node>
+              <node concept="liA8E" id="3aDyPAY2CC4" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="Xl_RD" id="3aDyPAY2CC5" role="37wK5m">
+                  <property role="Xl_RC" value="member" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3aDyPAY2BXL" role="3cqZAp" />
         <node concept="3clFbJ" id="3aDyPAXRkZI" role="3cqZAp">
           <node concept="1Wc70l" id="3aDyPAXTN5F" role="3clFbw">
             <node concept="3fqX7Q" id="3aDyPAXTNyv" role="3uHU7w">
