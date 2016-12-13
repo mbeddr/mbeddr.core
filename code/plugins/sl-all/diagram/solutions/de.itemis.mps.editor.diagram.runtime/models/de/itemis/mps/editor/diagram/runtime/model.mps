@@ -559,6 +559,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1235566831861" name="jetbrains.mps.baseLanguage.collections.structure.AllOperation" flags="nn" index="2HxqBE" />
       <concept id="1235573135402" name="jetbrains.mps.baseLanguage.collections.structure.SingletonSequenceCreator" flags="nn" index="2HTt$P">
         <child id="1235573175711" name="elementType" index="2HTBi0" />
         <child id="1235573187520" name="singletonValue" index="2HTEbv" />
@@ -38250,26 +38251,68 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="2OqwBi" id="7MH10IUREOy" role="3clFbw">
-                                <node concept="2GrUjf" id="7MH10IUREOz" role="2Oq$k0">
-                                  <ref role="2Gs0qQ" node="7MH10IUREOi" resolve="c" />
+                              <node concept="1Wc70l" id="6WzFyNCWoGQ" role="3clFbw">
+                                <node concept="2OqwBi" id="6WzFyNCWr4x" role="3uHU7w">
+                                  <node concept="37vLTw" id="6WzFyNCWq3Z" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="7MH10IURENm" resolve="result" />
+                                  </node>
+                                  <node concept="2HxqBE" id="6WzFyNCWvw5" role="2OqNvi">
+                                    <node concept="1bVj0M" id="6WzFyNCWvw7" role="23t8la">
+                                      <node concept="3clFbS" id="6WzFyNCWvw8" role="1bW5cS">
+                                        <node concept="3SKdUt" id="79Jt56EYnev" role="3cqZAp">
+                                          <node concept="3SKdUq" id="79Jt56EYnex" role="3SKWNk">
+                                            <property role="3SKdUp" value="fixme: temporal workaround for disabling same connection types with equal names (from different active diagrams)" />
+                                          </node>
+                                        </node>
+                                        <node concept="3clFbF" id="6WzFyNCWvQc" role="3cqZAp">
+                                          <node concept="17QLQc" id="6WzFyNCWy$Y" role="3clFbG">
+                                            <node concept="2OqwBi" id="6WzFyNCWzHc" role="3uHU7w">
+                                              <node concept="2GrUjf" id="6WzFyNCWzi9" role="2Oq$k0">
+                                                <ref role="2Gs0qQ" node="7MH10IUREOi" resolve="c" />
+                                              </node>
+                                              <node concept="liA8E" id="6WzFyNCW$hJ" role="2OqNvi">
+                                                <ref role="37wK5l" node="7vufT$m8Lj1" resolve="getName" />
+                                              </node>
+                                            </node>
+                                            <node concept="2OqwBi" id="6WzFyNCWwbe" role="3uHU7B">
+                                              <node concept="37vLTw" id="6WzFyNCWvQb" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="6WzFyNCWvw9" resolve="it" />
+                                              </node>
+                                              <node concept="liA8E" id="6WzFyNCWwHp" role="2OqNvi">
+                                                <ref role="37wK5l" node="7vufT$m8Lj1" resolve="getName" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="Rh6nW" id="6WzFyNCWvw9" role="1bW2Oz">
+                                        <property role="TrG5h" value="it" />
+                                        <node concept="2jxLKc" id="6WzFyNCWvwa" role="1tU5fm" />
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
-                                <node concept="liA8E" id="7MH10IUREO$" role="2OqNvi">
-                                  <ref role="37wK5l" node="7vufT$m8LiD" resolve="canCreate" />
-                                  <node concept="37vLTw" id="7MH10IUREO_" role="37wK5m">
-                                    <ref role="3cqZAo" node="7MH10IUREN2" resolve="fromBox" />
+                                <node concept="2OqwBi" id="7MH10IUREOy" role="3uHU7B">
+                                  <node concept="2GrUjf" id="7MH10IUREOz" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="7MH10IUREOi" resolve="c" />
                                   </node>
-                                  <node concept="37vLTw" id="7MH10IUREOA" role="37wK5m">
-                                    <ref role="3cqZAo" node="7MH10IUREN5" resolve="fromPort" />
-                                  </node>
-                                  <node concept="37vLTw" id="7MH10IUREOB" role="37wK5m">
-                                    <ref role="3cqZAo" node="7MH10IUREN8" resolve="toBox" />
-                                  </node>
-                                  <node concept="37vLTw" id="7MH10IUREOC" role="37wK5m">
-                                    <ref role="3cqZAo" node="7MH10IURENb" resolve="toPort" />
-                                  </node>
-                                  <node concept="37vLTw" id="7MH10IUREOD" role="37wK5m">
-                                    <ref role="3cqZAo" node="7MH10IURENe" resolve="reasons" />
+                                  <node concept="liA8E" id="7MH10IUREO$" role="2OqNvi">
+                                    <ref role="37wK5l" node="7vufT$m8LiD" resolve="canCreate" />
+                                    <node concept="37vLTw" id="7MH10IUREO_" role="37wK5m">
+                                      <ref role="3cqZAo" node="7MH10IUREN2" resolve="fromBox" />
+                                    </node>
+                                    <node concept="37vLTw" id="7MH10IUREOA" role="37wK5m">
+                                      <ref role="3cqZAo" node="7MH10IUREN5" resolve="fromPort" />
+                                    </node>
+                                    <node concept="37vLTw" id="7MH10IUREOB" role="37wK5m">
+                                      <ref role="3cqZAo" node="7MH10IUREN8" resolve="toBox" />
+                                    </node>
+                                    <node concept="37vLTw" id="7MH10IUREOC" role="37wK5m">
+                                      <ref role="3cqZAo" node="7MH10IURENb" resolve="toPort" />
+                                    </node>
+                                    <node concept="37vLTw" id="7MH10IUREOD" role="37wK5m">
+                                      <ref role="3cqZAo" node="7MH10IURENe" resolve="reasons" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>

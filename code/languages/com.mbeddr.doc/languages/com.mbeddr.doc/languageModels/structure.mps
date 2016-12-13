@@ -11,9 +11,11 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
+    <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -1633,6 +1635,21 @@
     </node>
     <node concept="PrWs8" id="2NM$qy7VV$F" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5IsbCt$w6j_">
+    <property role="EcuMT" value="6601202312859903205" />
+    <property role="3GE5qa" value="modelContent" />
+    <property role="TrG5h" value="ModuleRefWord" />
+    <property role="34LRSv" value="@module" />
+    <property role="R4oN_" value="module reference" />
+    <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
+    <node concept="1TJgyj" id="66AQhBxN1Tt" role="1TKVEi">
+      <property role="IQ2ns" value="7036550172998639197" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="identity" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp25:nJmxU5cSSu" resolve="ModuleIdentity" />
     </node>
   </node>
 </model>

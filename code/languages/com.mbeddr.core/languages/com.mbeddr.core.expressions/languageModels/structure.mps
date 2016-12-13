@@ -97,6 +97,12 @@
     <node concept="PrWs8" id="$bJ0jgXxo3" role="PzmwI">
       <ref role="PrY4T" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
     </node>
+    <node concept="PrWs8" id="5cz2Y91jmyq" role="PzmwI">
+      <ref role="PrY4T" node="5cz2Y91jmyg" resolve="IAssignmentSide" />
+    </node>
+    <node concept="PrWs8" id="48EaKWpVOAv" role="PzmwI">
+      <ref role="PrY4T" node="48EaKWpVO_d" resolve="IAncestorRelevantNode" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCO">
     <property role="TrG5h" value="BinaryExpression" />
@@ -1734,6 +1740,14 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="ITypeTextGenContext" />
     <property role="EcuMT" value="7605115369190914955" />
+  </node>
+  <node concept="PlHQZ" id="5cz2Y91jmyg">
+    <property role="EcuMT" value="5990644995718998160" />
+    <property role="TrG5h" value="IAssignmentSide" />
+  </node>
+  <node concept="PlHQZ" id="48EaKWpVO_d">
+    <property role="EcuMT" value="4767670499384707405" />
+    <property role="TrG5h" value="IAncestorRelevantNode" />
   </node>
 </model>
 

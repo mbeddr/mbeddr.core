@@ -34,6 +34,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -146,6 +147,7 @@
   </registry>
   <node concept="1lH9Xt" id="3rqorKKj4C_">
     <property role="TrG5h" value="BasicTestsSaving" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="1ENIgcpefJ1" role="1SL9yI">
       <property role="TrG5h" value="testEnv01" />
       <node concept="3cqZAl" id="1ENIgcpefJ2" role="3clF45" />
@@ -166,7 +168,7 @@
             <property role="TrG5h" value="results" />
             <node concept="_YKpA" id="1ENIgcpefJa" role="1tU5fm">
               <node concept="3uibUv" id="1ENIgcpefJb" role="_ZDj9">
-                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
               </node>
             </node>
             <node concept="NRdvd" id="1ENIgcpefJc" role="33vP2m">
@@ -202,7 +204,7 @@
             <node concept="34oBXx" id="1ENIgcpefJo" role="2OqNvi" />
           </node>
           <node concept="3cmrfG" id="1ENIgcpefJp" role="3tpDZB">
-            <property role="3cmrfH" value="2" />
+            <property role="3cmrfH" value="4" />
           </node>
         </node>
         <node concept="3vwNmj" id="1ENIgcpefJq" role="3cqZAp">
@@ -218,7 +220,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1ENIgcpefJw" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
@@ -235,7 +237,41 @@
               </node>
             </node>
             <node concept="liA8E" id="1ENIgcpefJB" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="3aDyPAY6Kt$" role="3cqZAp">
+          <node concept="2OqwBi" id="3aDyPAY6Kt_" role="3vwVQn">
+            <node concept="2OqwBi" id="3aDyPAY6KtA" role="2Oq$k0">
+              <node concept="37vLTw" id="3aDyPAY6KtB" role="2Oq$k0">
+                <ref role="3cqZAo" node="1ENIgcpefJ9" resolve="results" />
+              </node>
+              <node concept="34jXtK" id="3aDyPAY6KtC" role="2OqNvi">
+                <node concept="3cmrfG" id="3aDyPAY6KZ0" role="25WWJ7">
+                  <property role="3cmrfH" value="2" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3aDyPAY6KtE" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="3aDyPAY6KHG" role="3cqZAp">
+          <node concept="2OqwBi" id="3aDyPAY6KHH" role="3vwVQn">
+            <node concept="2OqwBi" id="3aDyPAY6KHI" role="2Oq$k0">
+              <node concept="37vLTw" id="3aDyPAY6KHJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="1ENIgcpefJ9" resolve="results" />
+              </node>
+              <node concept="34jXtK" id="3aDyPAY6KHK" role="2OqNvi">
+                <node concept="3cmrfG" id="3aDyPAY6L0t" role="25WWJ7">
+                  <property role="3cmrfH" value="3" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3aDyPAY6KHM" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
@@ -265,7 +301,7 @@
           <node concept="3cpWsn" id="1ENIgcpefJL" role="3cpWs9">
             <property role="TrG5h" value="r0" />
             <node concept="3uibUv" id="1ENIgcpefJM" role="1tU5fm">
-              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
             </node>
             <node concept="2YIFZM" id="1ENIgcpefJN" role="33vP2m">
               <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
@@ -274,7 +310,7 @@
                 <ref role="3cqZAo" node="1ENIgcpefJ9" resolve="results" />
               </node>
               <node concept="Xl_RD" id="1ENIgcpefJP" role="37wK5m">
-                <property role="Xl_RC" value="function env01_smoke_simpleBranch block 1 branch not taken" />
+                <property role="Xl_RC" value="function env01_smoke_simpleBranch block 1 branch true" />
               </node>
             </node>
           </node>
@@ -311,7 +347,7 @@
         <node concept="L1MeC" id="1ENIgcpefK1" role="3cqZAp">
           <ref role="L3x8Z" node="1ENIgcpefJR" resolve="synthethisedVector" />
           <node concept="L1FwG" id="1ENIgcpefK2" role="L1FwL">
-            <property role="L1FwH" value="x = 3" />
+            <property role="L1FwH" value="x = 2" />
           </node>
           <node concept="L1FwG" id="1ENIgcpefK3" role="L1FwL">
             <property role="L1FwH" value="simpleBranch(x)" />
@@ -340,7 +376,7 @@
             <property role="TrG5h" value="results" />
             <node concept="_YKpA" id="1ENIgcpgiXo" role="1tU5fm">
               <node concept="3uibUv" id="1ENIgcpgiXp" role="_ZDj9">
-                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
               </node>
             </node>
             <node concept="NRdvd" id="1ENIgcpgiXq" role="33vP2m">
@@ -393,7 +429,7 @@
           <node concept="3cpWsn" id="1ENIgcpgiXE" role="3cpWs9">
             <property role="TrG5h" value="r0" />
             <node concept="3uibUv" id="1ENIgcpgiXF" role="1tU5fm">
-              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
             </node>
             <node concept="2YIFZM" id="1ENIgcpgiXG" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
@@ -474,7 +510,7 @@
             <property role="TrG5h" value="results" />
             <node concept="_YKpA" id="3rqorKKj4CJ" role="1tU5fm">
               <node concept="3uibUv" id="3rqorKKj4CK" role="_ZDj9">
-                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
               </node>
             </node>
             <node concept="NRdvd" id="3rqorKKj4CL" role="33vP2m">
@@ -527,7 +563,7 @@
           <node concept="3cpWsn" id="3rqorKKkhx1" role="3cpWs9">
             <property role="TrG5h" value="r0" />
             <node concept="3uibUv" id="3rqorKKkhwU" role="1tU5fm">
-              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
             </node>
             <node concept="2YIFZM" id="3rqorKKkhx2" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
@@ -607,7 +643,7 @@
             <property role="TrG5h" value="results" />
             <node concept="_YKpA" id="1ENIgcphmDr" role="1tU5fm">
               <node concept="3uibUv" id="1ENIgcphmDs" role="_ZDj9">
-                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
               </node>
             </node>
             <node concept="NRdvd" id="1ENIgcphmDt" role="33vP2m">
@@ -660,7 +696,7 @@
           <node concept="3cpWsn" id="1ENIgcphmDH" role="3cpWs9">
             <property role="TrG5h" value="r0" />
             <node concept="3uibUv" id="1ENIgcphmDI" role="1tU5fm">
-              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
             </node>
             <node concept="2YIFZM" id="1ENIgcphmDJ" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
@@ -749,7 +785,7 @@
             <property role="TrG5h" value="results" />
             <node concept="_YKpA" id="1ENIgcphxQp" role="1tU5fm">
               <node concept="3uibUv" id="1ENIgcphxQq" role="_ZDj9">
-                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
               </node>
             </node>
             <node concept="NRdvd" id="1ENIgcphxQr" role="33vP2m">
@@ -802,7 +838,7 @@
           <node concept="3cpWsn" id="1ENIgcphxQF" role="3cpWs9">
             <property role="TrG5h" value="r0" />
             <node concept="3uibUv" id="1ENIgcphxQG" role="1tU5fm">
-              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
             </node>
             <node concept="2YIFZM" id="1ENIgcphxQH" role="33vP2m">
               <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
@@ -879,7 +915,7 @@
             <property role="TrG5h" value="results" />
             <node concept="_YKpA" id="1ENIgcplphs" role="1tU5fm">
               <node concept="3uibUv" id="1ENIgcplpht" role="_ZDj9">
-                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
               </node>
             </node>
             <node concept="NRdvd" id="1ENIgcplphu" role="33vP2m">
@@ -932,7 +968,7 @@
           <node concept="3cpWsn" id="1ENIgcplphI" role="3cpWs9">
             <property role="TrG5h" value="r0" />
             <node concept="3uibUv" id="1ENIgcplphJ" role="1tU5fm">
-              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
             </node>
             <node concept="2YIFZM" id="1ENIgcplphK" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
@@ -1015,7 +1051,7 @@
             <property role="TrG5h" value="results" />
             <node concept="_YKpA" id="1ENIgcpnvVV" role="1tU5fm">
               <node concept="3uibUv" id="1ENIgcpnvVW" role="_ZDj9">
-                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
               </node>
             </node>
             <node concept="NRdvd" id="1ENIgcpnvVX" role="33vP2m">
@@ -1068,7 +1104,7 @@
           <node concept="3cpWsn" id="1ENIgcpnvWd" role="3cpWs9">
             <property role="TrG5h" value="r0" />
             <node concept="3uibUv" id="1ENIgcpnvWe" role="1tU5fm">
-              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
             </node>
             <node concept="2YIFZM" id="1ENIgcpnvWf" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
@@ -1157,7 +1193,7 @@
             <property role="TrG5h" value="results" />
             <node concept="_YKpA" id="1ENIgcppHQ0" role="1tU5fm">
               <node concept="3uibUv" id="1ENIgcppHQ1" role="_ZDj9">
-                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
               </node>
             </node>
             <node concept="NRdvd" id="1ENIgcppHQ2" role="33vP2m">
@@ -1210,7 +1246,7 @@
           <node concept="3cpWsn" id="1ENIgcppHQi" role="3cpWs9">
             <property role="TrG5h" value="r0" />
             <node concept="3uibUv" id="1ENIgcppHQj" role="1tU5fm">
-              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
             </node>
             <node concept="2YIFZM" id="1ENIgcppHQk" role="33vP2m">
               <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
@@ -1273,7 +1309,7 @@
           <node concept="3cpWsn" id="694Tbl9gMWE" role="3cpWs9">
             <property role="TrG5h" value="r1" />
             <node concept="3uibUv" id="694Tbl9gMWF" role="1tU5fm">
-              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
             </node>
             <node concept="2YIFZM" id="694Tbl9gMWG" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
@@ -1326,7 +1362,7 @@
             <property role="TrG5h" value="results" />
             <node concept="_YKpA" id="71I9cJUfXP8" role="1tU5fm">
               <node concept="3uibUv" id="71I9cJUfXP9" role="_ZDj9">
-                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
               </node>
             </node>
             <node concept="NRdvd" id="71I9cJUfXPa" role="33vP2m">
@@ -1379,7 +1415,7 @@
           <node concept="3cpWsn" id="71I9cJUfXPq" role="3cpWs9">
             <property role="TrG5h" value="r0" />
             <node concept="3uibUv" id="71I9cJUfXPr" role="1tU5fm">
-              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
             </node>
             <node concept="2YIFZM" id="71I9cJUfXPs" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
@@ -1459,7 +1495,7 @@
             <property role="TrG5h" value="results" />
             <node concept="_YKpA" id="2g2rJI86f0t" role="1tU5fm">
               <node concept="3uibUv" id="2g2rJI86f0u" role="_ZDj9">
-                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+                <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
               </node>
             </node>
             <node concept="NRdvd" id="2g2rJI86f0v" role="33vP2m">
@@ -1513,7 +1549,7 @@
           <node concept="3cpWsn" id="2g2rJI86f0J" role="3cpWs9">
             <property role="TrG5h" value="r0" />
             <node concept="3uibUv" id="2g2rJI86f0K" role="1tU5fm">
-              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />
             </node>
             <node concept="2YIFZM" id="2g2rJI86f0L" role="33vP2m">
               <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
