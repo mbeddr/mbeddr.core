@@ -1,0 +1,47 @@
+
+configurations {
+    junitAnt
+    mpsArtifacts
+}
+
+ext.dependencyRepositories = [
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' ]
+
+dependencies {
+    mpsArtifacts "com.mbeddr:mbeddr:$mbeddrBuildNumber"
+}
+
+task resolveMpsArtifacts() {
+    doLast {
+        copy {
+            from {
+                    configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+                 }
+            into artifactsDir
+        }
+    }
+}
+
+
+
+def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
+
+task build_all_in_one(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]) {
+    script script_build_mbeddrAllInOne
+}
+
+task build_platform_distribution(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]) {
+    script scriptFile('com.mbeddr.platform/build-distribution.xml')
+    // Support incremental build
+    inputs.file(script)
+}
+
+task package_tutorial(type: Zip) {
+    from rootProject.projectDir.absolutePath + "/code/applications/tutorial"
+    destinationDir  new File(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
+    archiveName "com.mbeddr.tutorial.zip"
+}
+
+task prepare_distribution(dependsOn: [build_all_in_one, build_platform_distribution, package_tutorial])
+
