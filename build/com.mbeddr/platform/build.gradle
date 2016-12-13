@@ -73,11 +73,13 @@ publishing {
             version mbeddrBuildNumber
             artifact publish_mbeddrPlatform
             pom.withXml {
-                asNode().dependencies.'*'.findAll() {
-                it.scope.text() == 'runtime' && project.configurations.mps.allDependencies.find { dep ->
-                    dep.name == it.artifactId.text()
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.mps.allDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.group)
+                    dependencyNode.appendNode('artifactId', it.name)
+                    dependencyNode.appendNode('version', it.version)
                 }
-                }.each { it.scope*.value = 'compile'}
             }
         }
     }
