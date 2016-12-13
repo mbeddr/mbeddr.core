@@ -138,65 +138,6 @@ task publish_JRE(type: Zip, dependsOn: download_JRE) {
     include "jdk..tar.gz"
 }
 
-// :build:com.mbeddr.release
-publishing {
-    publications {
-        mbeddrDmg(MavenPublication) {
-            groupId 'com.mbeddr'
-            artifactId 'dmg'
-            version mbeddrBuildNumber
-            artifact(publish_mbeddr_dmg) {}
-        }
-        mbeddrInstaller(MavenPublication) {
-            groupId 'com.mbeddr'
-            artifactId 'installer'
-            version mbeddrBuildNumber
-            artifact(publish_installer) {}
-        }
-    }
-}
-def script_build_mbeddrDMG = new File(rootProject.projectDir.absolutePath + "/buildUtil/" + "build.xml")
-def script_build_installer = new File(rootProject.projectDir.absolutePath + "/build/com.mbeddr.release/" + "build-installer.bat")
-
-
-task resolveMacRCP(type: Copy) {
-    from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/"
-    into rootProject.projectDir.absolutePath + "/buildUtil"
-}
-
-task package_dmg(type: Exec, dependsOn: resolveMacRCP) {
-    workingDir rootProject.projectDir.absolutePath + "/buildUtil"
-    def args = buildProcSpawnArgList(['ant', '-f', script_build_mbeddrDMG, 'macbuild'])
-    commandLine (args)
-}
-
-task publish_mbeddr_dmg(type: Zip, dependsOn: package_dmg) {
-    from rootProject.projectDir.absolutePath + "/buildUtil"
-    include "*.dmg"
-}
-
-task copy_jdk(type: Copy) {
-    from {
-        zipTree(rootProject.projectDir.absolutePath + "/buildUtil/" + "jdk.zip")
-    }
-    into rootProject.projectDir.absolutePath + "/build/com.mbeddr.release/files/mbeddr/"
-}
-
-
-task unzip_nsis(type: Copy) {
-    from(zipTree(rootProject.projectDir.absolutePath + "/NSIS/NSIS.zip")) { }
-    into rootProject.projectDir.absolutePath + "/build/com.mbeddr.release/NSIS/"
-}
-
-task build_installer(type: Exec, dependsOn: ['copy_jdk', 'copy_rcp', 'unzip_nsis', 'unzip_cbmcWinZipForInstaller']) {
-    workingDir rootProject.projectDir.absolutePath + "/build/com.mbeddr.release"
-    commandLine 'cmd', '/C', 'start', 'NSIS\\NSIS\\makensis.exe', 'mbeddr.nsi'
-}
-
-task publish_installer(type: Zip, dependsOn: build_installer) {
-    from rootProject.projectDir.absolutePath + "/build/com.mbeddr.release/"
-    include "*.exe"
-}
 // :build:com.mbeddr.analyses.cbmc
 publishing {
     publications {
