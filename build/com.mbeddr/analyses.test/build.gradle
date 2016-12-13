@@ -27,7 +27,6 @@ dependencies {
     junitAnt('org.apache.ant:ant-junit4:1.9.7') {
         transitive = false
     }
-    mpsArtifacts "com.mbeddr:platform:$mbeddrBuildNumber"
     mpsArtifacts "com.mbeddr:mbeddr:$mbeddrBuildNumber"
 }
 
