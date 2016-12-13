@@ -2,6 +2,9 @@
 configurations {
     junitAnt
     mpsArtifacts
+    cbmcWin {
+        description = 'cbmc windows'
+    }
 }
 
 ext.dependencyRepositories = [
@@ -45,3 +48,63 @@ task package_tutorial(type: Zip) {
 
 task prepare_distribution(dependsOn: [build_all_in_one, build_platform_distribution, package_tutorial])
 
+
+def script_build_mbeddr_branding = new File(scriptsBasePath + "/com.mbeddr.rcp/" + "mps.xml")
+def script_build_mbeddrRCP = new File(scriptsBasePath + "/com.mbeddr.rcp/" + "mpsDistribution.xml")
+
+task build_mbeddr_branding(type: BuildLanguages, dependsOn: prepare_distribution) {
+    script script_build_mbeddr_branding
+}
+
+task build_mbeddrRCP(type: RunMbeddrAntScript, dependsOn: build_mbeddr_branding) {
+    script script_build_mbeddrRCP
+    targets 'clean', 'assemble'
+}
+
+def installer_repo = project.hasProperty('InstallerRepo') ? project.getProperty('InstallerRepo') : '../mbeddr.installer.win'
+
+task prepare_installer(type: Copy, dependsOn: build_mbeddrRCP) {
+    from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/mbeddr-win.zip"    from {
+        zipTree(rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/" + "mbeddr-win.zip")
+    }
+    into installer_repo + "/files/mbeddr/"
+}
+
+task resolve_cbmcWinForInstaller(type: Copy)  {
+    from {
+        configurations.cbmcWin.collect { zipTree(it) }
+    }
+    into rootProject.projectDir.absolutePath + "/artifacts/cbmc"
+}
+
+task unzip_cbmcWinZipForInstaller(type: Copy, dependsOn: resolve_cbmcWinForInstaller)  {
+    from zipTree(rootProject.projectDir.absolutePath + "/artifacts/cbmc/"+ "cbmc-win.zip")
+    into file(installer_repo +"/files/3rd-party/cbmc")
+}
+
+task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipForInstaller]) {
+  workingDir installer_repo
+
+  //on windows:
+  commandLine 'cmd', '/c', "NSIS/makensis.exe", installer_repo + "/mbeddr.nsi"
+
+  //store the output instead of printing to the console:
+  standardOutput = new ByteArrayOutputStream()
+
+  //extension method stopTomcat.output() can be used to obtain the output:
+  ext.output = {
+    return standardOutput.toString()
+  }
+}
+
+def script_build_dmg = new File(rootDir , "/buildUtil/build.xml")
+
+task prepare_dmg(type:Copy, dependsOn: build_mbeddrRCP) {
+    from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/"
+    into rootProject.projectDir.absolutePath + "/buildUtil"
+}
+
+task build_dmg(type: RunMbeddrAntScript, dependsOn: prepare_dmg) {
+    script script_build_dmg
+    targets 'macbuild'
+}
