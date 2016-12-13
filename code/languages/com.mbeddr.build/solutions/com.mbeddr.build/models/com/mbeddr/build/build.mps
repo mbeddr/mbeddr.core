@@ -214,7 +214,7 @@
       </node>
       <node concept="3_J27D" id="5qO$P$Prhtd" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2N$Ve" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$_yC" id="FO2MHUhOC2" role="m$_yJ">
@@ -247,7 +247,7 @@
       </node>
       <node concept="3_J27D" id="7uZw0yZ43JA" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NBpM" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="WadEn6EeV7" role="m$_yh">
@@ -326,7 +326,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAuANj" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NCfe" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="7eF9rfAuANl" role="m$_yh">
@@ -359,7 +359,7 @@
       </node>
       <node concept="3_J27D" id="4i9pOwKZpph" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2ND4D" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="4i9pOwKZppj" role="m$_yh">
@@ -380,7 +380,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAu$ox" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NDU4" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="7eF9rfAu$oz" role="m$_yh">
@@ -422,7 +422,7 @@
       </node>
       <node concept="3_J27D" id="vg5qBC2gGe" role="m$_w8">
         <node concept="3Mxwey" id="vg5qBC2gGf" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="vg5qBC2jvK" role="m$_yh">
@@ -464,7 +464,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAuyUu" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NEJv" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="7eF9rfAuyUw" role="m$_yh">
@@ -509,7 +509,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAuv$Y" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NF$U" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="7eF9rfAuv_0" role="m$_yh">
@@ -554,7 +554,7 @@
       </node>
       <node concept="3_J27D" id="3p0OY6VwW6a" role="m$_w8">
         <node concept="3Mxwey" id="3p0OY6VwW6b" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="3p0OY6Vx1NF" role="m$_yh">
@@ -593,7 +593,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAnuiD" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NGql" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="7eF9rfAnuiF" role="m$_yh">
@@ -639,7 +639,7 @@
       </node>
       <node concept="3_J27D" id="5qO$P$PrHai" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NHfK" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="5qO$P$PrHak" role="m$_yh">
@@ -676,7 +676,7 @@
       </node>
       <node concept="3_J27D" id="2$$_2GRaiCa" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NI5b" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="2$$_2GRalCA" role="m$_yh">
@@ -719,7 +719,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAuDVk" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NIUA" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="4hvHh3R1BO9" role="m$_yh">
@@ -777,7 +777,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAuFwa" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NJK1" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="58S6eLQIvi8" role="m$_yh">
@@ -869,7 +869,7 @@
       </node>
       <node concept="3_J27D" id="7eF9rfAuSOa" role="m$_w8">
         <node concept="3Mxwey" id="2HHioL2NK_s" role="3MwsjC">
-          <ref role="3Mxwex" to="al5i:2HHioL2Nii3" resolve="mbeddr.version" />
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="7eF9rfAuSOc" role="m$_yh">
@@ -11415,6 +11415,58 @@
         <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="6YaWssNY6MM" role="iGT6I">
           <property role="2Ry0Am" value="spawner" />
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="7TN8EE6trcP" role="1l3spd">
+      <property role="TrG5h" value="major.version" />
+      <node concept="aVJcg" id="7TN8EE6trcQ" role="aVJcv">
+        <node concept="NbPM2" id="7TN8EE6trcR" role="aVJcq">
+          <node concept="3Mxwew" id="7TN8EE6trcS" role="3MwsjC">
+            <property role="3MwjfP" value="1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="7TN8EE6trcT" role="1l3spd">
+      <property role="TrG5h" value="minor.version" />
+      <node concept="aVJcg" id="7TN8EE6trcU" role="aVJcv">
+        <node concept="NbPM2" id="7TN8EE6trcV" role="aVJcq">
+          <node concept="3Mxwew" id="7TN8EE6trcW" role="3MwsjC">
+            <property role="3MwjfP" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="7TN8EE6trcX" role="1l3spd">
+      <property role="TrG5h" value="build" />
+      <node concept="aVJcg" id="7TN8EE6trcY" role="aVJcv">
+        <node concept="NbPM2" id="7TN8EE6trcZ" role="aVJcq">
+          <node concept="3Mxwew" id="7TN8EE6trd0" role="3MwsjC">
+            <property role="3MwjfP" value="0000" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="7TN8EE6trd1" role="1l3spd">
+      <property role="TrG5h" value="mbeddr.version" />
+      <node concept="aVJcg" id="7TN8EE6trd2" role="aVJcv">
+        <node concept="NbPM2" id="7TN8EE6trd3" role="aVJcq">
+          <node concept="3Mxwey" id="7TN8EE6trd4" role="3MwsjC">
+            <ref role="3Mxwex" node="7TN8EE6trcP" resolve="major.version" />
+          </node>
+          <node concept="3Mxwew" id="7TN8EE6trd5" role="3MwsjC">
+            <property role="3MwjfP" value="." />
+          </node>
+          <node concept="3Mxwey" id="7TN8EE6trd6" role="3MwsjC">
+            <ref role="3Mxwex" node="7TN8EE6trcT" resolve="minor.version" />
+          </node>
+          <node concept="3Mxwew" id="7TN8EE6trd7" role="3MwsjC">
+            <property role="3MwjfP" value="-" />
+          </node>
+          <node concept="3Mxwey" id="7TN8EE6trd8" role="3MwsjC">
+            <ref role="3Mxwex" node="7TN8EE6trcX" resolve="build" />
+          </node>
         </node>
       </node>
     </node>
