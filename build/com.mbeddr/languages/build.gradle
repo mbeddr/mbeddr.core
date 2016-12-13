@@ -158,7 +158,7 @@ task test_mbeddr_ext_ex << {
 task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
 
 
-task test_mbeddr(dependsOn: [test_mbeddr_debugger, test_mbeddr_core, test_mbeddr_performance, test_mbeddr_cc, test_mbeddr_ext]) {}
+task test_mbeddr(dependsOn: [test_mbeddr_core, test_mbeddr_performance, test_mbeddr_cc, test_mbeddr_ext]) {}
 
 task publish_mbeddr(type: Zip, dependsOn: test_mbeddr) {
     archiveName 'com.mbeddr.zip'
