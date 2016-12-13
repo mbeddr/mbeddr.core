@@ -108,38 +108,11 @@ task unzip_cbmcWinZip(type: Copy, dependsOn: resolve_cbmcWin)  {
     into file(rootProject.projectDir.absolutePath + cbmc_resolveDir)
 }
 
-// :build:com.mbeddr.allInOne
-publishing {
-    publications {
-        mbeddrAllInOne(MavenPublication) {
-            groupId 'com.mbeddr'
-            artifactId 'allInOne'
-            version mbeddrBuildNumber
-            artifact(publish_all_in_one) {}
-        }
-    }
-}
 
-def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
-
-    task build_all_in_one(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
-    script script_build_mbeddrAllInOne
-}
-
-task publish_all_in_one(type: Zip, dependsOn: build_all_in_one) {
-    from rootProject.projectDir.absolutePath + "/artifacts/"
-    include "com.mbeddr.allInOne/com.mbeddr.allInOne.zip"
-}
 
 // :build:com.mbeddr.rcp
 publishing {
     publications {
-        mbeddrRcp(MavenPublication) {
-            groupId 'com.mbeddr'
-            artifactId 'rcp'
-            version mbeddrBuildNumber
-            artifact(publish_mbeddrRCP) {}
-        }
         mbeddrJre(MavenPublication) {
             groupId 'com.mbeddr'
             artifactId 'jre'
@@ -148,26 +121,9 @@ publishing {
         }
     }
 }
-def script_build_mbeddrRCPMPS = new File(scriptsBasePath + "/com.mbeddr.rcp/" + "mps.xml")
-def script_build_mbeddrRCPDistribution = new File(scriptsBasePath + "/com.mbeddr.rcp/" + "mpsDistribution.xml")
+
 def script_build_mbeddrJRE = new File(rootProject.projectDir.absolutePath + "/buildUtil/" + "build.xml")
 
-task build_mbeddrRCP(type: BuildLanguages, dependsOn: [
-        ':build:com.mbeddr:platform:resolve_mps', ':build:com.mbeddr:platform:build_allScripts',
-        'resolveAllInOne', 'unzipTutorial']) {
-    script script_build_mbeddrRCPMPS
-}
-
-task build_mbeddrRCPDistributuion(type: RunMbeddrAntScript, dependsOn: build_mbeddrRCP) {
-    script script_build_mbeddrRCPDistribution
-    targets 'clean', 'assemble'
-}
-
-task publish_mbeddrRCP(type: Zip, dependsOn: build_mbeddrRCPDistributuion) {
-    from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution"
-    include "*.zip"
-    include "*.tar.gz"
-}
 
 // invoke this task from the cmd via 'gradle download_jre -PserverUser=<user> -PserverPassword=<password>'
 task download_JRE(type: Exec) {
@@ -226,24 +182,6 @@ task copy_jdk(type: Copy) {
     into rootProject.projectDir.absolutePath + "/build/com.mbeddr.release/files/mbeddr/"
 }
 
-task copy_rcp(type: Copy) {
-    from {
-        zipTree(rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/" + "mbeddr-win.zip")
-    }
-    into rootProject.projectDir.absolutePath + "/build/com.mbeddr.release/files/mbeddr/"
-}
-
-task resolve_cbmcWinForInstaller(type: Copy)  {
-    from {
-        configurations.cbmcWin.collect { zipTree(it) }
-    }
-    into rootProject.projectDir.absolutePath + "/artifacts/cbmc"
-}
-
-task unzip_cbmcWinZipForInstaller(type: Copy, dependsOn: resolve_cbmcWinForInstaller)  {
-    from zipTree(rootProject.projectDir.absolutePath + "/artifacts/cbmc/"+ "cbmc-win.zip")
-    into file(rootProject.projectDir.absolutePath + "/build/com.mbeddr.release/files/3rd-party/cbmc")
-}
 
 task unzip_nsis(type: Copy) {
     from(zipTree(rootProject.projectDir.absolutePath + "/NSIS/NSIS.zip")) { }
@@ -325,17 +263,6 @@ task resolveAllInOne(type: Copy) {
     into rootProject.projectDir.absolutePath + "/artifacts/"
 }
 
-task resolveTutorial(type: Copy)  {
-    from {
-        configurations.mbeddrTutorial.collect { zipTree(it) }
-    }
-    into rootProject.projectDir.absolutePath + "/artifacts"
-}
-
-task unzipTutorial(type: Copy, dependsOn: resolveTutorial)  {
-    from zipTree(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial.zip")
-    into file(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
-}
 
 def getVersionName = { ->
     def stdout = new ByteArrayOutputStream()
@@ -346,30 +273,6 @@ def getVersionName = { ->
     return stdout.toString().trim()
 }
 
-// :build:com.mbeddr.tutorial
-
-publishing {
-    publications {
-        mbeddrTutorial(MavenPublication) {
-            groupId 'com.mbeddr'
-            artifactId 'tutorial'
-            version mbeddrBuildNumber
-            artifact(publish_mbeddrTutorial) {}
-        }
-    }
-}
-
-
-
-task package_tutorial(type: Zip) {
-    from rootProject.projectDir.absolutePath + "/code/applications/tutorial"
-    destinationDir  new File(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
-    archiveName "com.mbeddr.tutorial.zip"
-}
-
-task publish_mbeddrTutorial(type: Zip, dependsOn: package_tutorial) {
-    from rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial"
-}
 
 // constructs the argument list that is used for spawning processes on linux/mac and windows
 Iterable<String> buildProcSpawnArgList(Iterable<String> args) {
