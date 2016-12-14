@@ -11,15 +11,16 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern" version="0" />
     <use id="36590f48-d68b-4c16-bfba-c769260bbac0" name="com.mbeddr.mpsutil.compare.pattern.baselang" version="0" />
+    <use id="1a857f23-abc6-4154-8fb9-f23dbfc65145" name="com.mbeddr.analyses.acsl.assertions.gen" version="0" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="8n8r" ref="r:ccf077c7-78b3-4987-ad14-e1221b6e22c9(com.mbeddr.analyses.lantest.pluginSolution.semantic_checker)" />
     <import index="clqz" ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="y7ls" ref="r:09385047-cf06-45e4-811d-16939c044930(com.mbeddr.mpsutil.lantest.rt.checker.semantic_checker)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -121,6 +122,14 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="ccdc24b1-37a8-44ac-8a87-b53bd9c96407" name="com.mbeddr.mpsutil.lantest.assertions">
+      <concept id="4758317971060523595" name="com.mbeddr.mpsutil.lantest.assertions.structure.Foreach" flags="ng" index="2FoRaK">
+        <child id="9204327004997885641" name="nodeSource" index="26OOxH" />
+        <child id="8387762789678437196" name="nodeDecl" index="1noCat" />
+        <child id="8387762789678434935" name="concept" index="1noDIA" />
+      </concept>
+      <concept id="8387762789678443954" name="com.mbeddr.mpsutil.lantest.assertions.structure.NodeVariable" flags="ng" index="1noFLz" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -188,8 +197,8 @@
     <property role="TrG5h" value="SemanticCheckerStatemachines" />
     <node concept="2tJIrI" id="59PiwCJ2tn3" role="jymVt" />
     <node concept="3Tm1VV" id="59PiwCJ2tpc" role="1B3o_S" />
-    <node concept="3uibUv" id="59PiwCJ2waT" role="EKbjA">
-      <ref role="3uigEE" to="8n8r:59PiwCJ2vZq" resolve="ISemanticChecker" />
+    <node concept="3uibUv" id="5oO2AcZyWjn" role="EKbjA">
+      <ref role="3uigEE" to="y7ls:59PiwCJ2vZq" resolve="ISemanticChecker" />
     </node>
     <node concept="3clFb_" id="59PiwCJ2wgi" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -225,7 +234,26 @@
           </node>
         </node>
         <node concept="3clFbH" id="1Xy3YuQYD3n" role="3cqZAp" />
-        <node concept="3clFbH" id="5sNDy3b_F2$" role="3cqZAp" />
+        <node concept="2FoRaK" id="4N7zjci1nEB" role="3cqZAp">
+          <node concept="chp4Y" id="4N7zjci1nFd" role="1noDIA">
+            <ref role="cht4Q" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
+          </node>
+          <node concept="1noFLz" id="4N7zjci1nEG" role="1noCat">
+            <property role="TrG5h" value="sm" />
+          </node>
+          <node concept="2OqwBi" id="4N7zjci1o7W" role="26OOxH">
+            <node concept="37vLTw" id="4N7zjci1nKn" role="2Oq$k0">
+              <ref role="3cqZAo" node="59PiwCJ2wgj" resolve="original" />
+            </node>
+            <node concept="2Rf3mk" id="4N7zjci1plB" role="2OqNvi">
+              <node concept="1xMEDy" id="4N7zjci1plD" role="1xVPHs">
+                <node concept="chp4Y" id="4N7zjci1pmS" role="ri$Ld">
+                  <ref role="cht4Q" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="1Xy3YuQYDvy" role="3cqZAp" />
         <node concept="1X3_iC" id="6fGXG$6ot$T" role="lGtFl">
           <property role="3V$3am" value="statement" />
