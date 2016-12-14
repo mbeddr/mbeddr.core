@@ -142,8 +142,10 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.javainterpreter/com.mbeddr.mpsutil.javainterpreter.msd" folder="staging.javainterpreter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.jfreechart.runtime/com.mbeddr.mpsutil.jfreechart.runtime.msd" folder="staging.jfreechart" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.jfreechart.sandbox/com.mbeddr.mpsutil.jfreechart.sandbox.msd" folder="staging.jfreechart" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.assertions.sandbox/com.mbeddr.mpsutil.lantest.assertions.sandbox.msd" folder="rest.lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.pluginSolution/com.mbeddr.mpsutil.lantest.pluginSolution.msd" folder="rest.lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.msd" folder="rest.lantest" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.sandbox/com.mbeddr.mpsutil.lantest.sandbox.msd" folder="rest.lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.licensemanager.common.runtime/com.mbeddr.mpsutil.licensemanager.common.runtime.msd" folder="stable.licensemanager" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.make/com.mbeddr.mpsutil.make.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.margincell.runtime/com.mbeddr.mpsutil.margincell.runtime.msd" folder="staging.margincell_review" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:b8065b2e-a033-48ba-9ab9-5b1ff3550962(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.coverage)">
+<model ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:b8065b2e-a033-48ba-9ab9-5b1ff3550962(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.coverage)">
   <persistence version="9" />
   <languages>
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />

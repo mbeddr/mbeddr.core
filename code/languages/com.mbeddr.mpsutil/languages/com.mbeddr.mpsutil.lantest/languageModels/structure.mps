@@ -193,6 +193,7 @@
   <node concept="PlHQZ" id="33cGTVo609o">
     <property role="TrG5h" value="ILanguageSpecificConfig" />
     <property role="EcuMT" value="3516382903881171544" />
+    <property role="3GE5qa" value="language_specific_config" />
   </node>
   <node concept="1TIwiD" id="5aWlhTu2ZzL">
     <property role="TrG5h" value="LanguageRegexReference" />
@@ -283,6 +284,16 @@
       <node concept="trNpa" id="tJrHRTVPJD" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Ts5Ln3HLxL">
+    <property role="EcuMT" value="4493491910454220913" />
+    <property role="TrG5h" value="GenericConfig" />
+    <property role="3GE5qa" value="language_specific_config" />
+    <property role="34LRSv" value="generic config" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3Ts5Ln3HLxM" role="PzmwI">
+      <ref role="PrY4T" node="33cGTVo609o" resolve="ILanguageSpecificConfig" />
     </node>
   </node>
 </model>

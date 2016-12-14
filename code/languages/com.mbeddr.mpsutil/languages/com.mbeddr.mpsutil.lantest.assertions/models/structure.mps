@@ -43,7 +43,7 @@
   </registry>
   <node concept="1TIwiD" id="488WfJDqS9b">
     <property role="TrG5h" value="Foreach" />
-    <property role="34LRSv" value="foreach" />
+    <property role="34LRSv" value="foreach node" />
     <property role="EcuMT" value="4758317971060523595" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="7hBkt4z1sDR" role="1TKVEi">
@@ -158,6 +158,14 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="9204327004997901196" />
       <ref role="20lvS9" node="7YWlEjTs4dp" resolve="IAssertPart" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4N7zjci1iO6">
+    <property role="EcuMT" value="5532545917733121286" />
+    <property role="TrG5h" value="EmptyAssert" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4N7zjci1iOL" role="PzmwI">
+      <ref role="PrY4T" node="7YWlEjTs4dp" resolve="IAssertPart" />
     </node>
   </node>
 </model>
