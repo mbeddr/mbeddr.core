@@ -849,6 +849,9 @@
     <ref role="1XX52x" to="clbe:2ZsiEbEC2" resolve="OpaqueTypeDecl" />
     <node concept="3EZMnI" id="2ZsiEbEC8" role="2wV5jI">
       <node concept="l2Vlx" id="2ZsiEbEC9" role="2iSdaV" />
+      <node concept="PMmxH" id="x7DaR3YWvG" role="3EZMnx">
+        <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+      </node>
       <node concept="3F0ifn" id="2ZsiEbEC7" role="3EZMnx">
         <property role="3F0ifm" value="opaque type" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
@@ -1010,7 +1013,7 @@
   </node>
   <node concept="24kQdi" id="3qdsM6yQqbp">
     <property role="3GE5qa" value="su" />
-    <ref role="1XX52x" to="clbe:3qdsM6yQbcF" resolve="ArbitraryMemeberRef" />
+    <ref role="1XX52x" to="clbe:3qdsM6yQbcF" resolve="ArbitraryMemberRef" />
     <node concept="3F0A7n" id="3qdsM6yQqbr" role="2wV5jI">
       <ref role="1NtTu8" to="clbe:3qdsM6yQbf8" resolve="membername" />
     </node>
