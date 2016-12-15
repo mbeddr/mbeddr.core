@@ -7854,6 +7854,43 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="3nGPbHrrcBz" role="3cqZAp">
+          <node concept="3clFbS" id="3nGPbHrrcB_" role="3clFbx">
+            <node concept="3cpWs6" id="3nGPbHrrwhi" role="3cqZAp">
+              <node concept="3clFbT" id="3nGPbHrrwnr" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="22lmx$" id="3nGPbHrrusU" role="3clFbw">
+            <node concept="2OqwBi" id="3nGPbHrrv$1" role="3uHU7w">
+              <node concept="37vLTw" id="3nGPbHrrv6G" role="2Oq$k0">
+                <ref role="3cqZAo" node="50SGaRJH2iq" resolve="event" />
+              </node>
+              <node concept="liA8E" id="3nGPbHrrw8i" role="2OqNvi">
+                <ref role="37wK5l" to="hyam:~InputEvent.isAltDown():boolean" resolve="isAltDown" />
+              </node>
+            </node>
+            <node concept="22lmx$" id="3nGPbHrrsyM" role="3uHU7B">
+              <node concept="2OqwBi" id="3nGPbHrrre2" role="3uHU7B">
+                <node concept="37vLTw" id="3nGPbHrrqie" role="2Oq$k0">
+                  <ref role="3cqZAo" node="50SGaRJH2iq" resolve="event" />
+                </node>
+                <node concept="liA8E" id="3nGPbHrrsgT" role="2OqNvi">
+                  <ref role="37wK5l" to="hyam:~InputEvent.isControlDown():boolean" resolve="isControlDown" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3nGPbHrrtyg" role="3uHU7w">
+                <node concept="37vLTw" id="3nGPbHrrt5i" role="2Oq$k0">
+                  <ref role="3cqZAo" node="50SGaRJH2iq" resolve="event" />
+                </node>
+                <node concept="liA8E" id="3nGPbHrruaE" role="2OqNvi">
+                  <ref role="37wK5l" to="hyam:~InputEvent.isMetaDown():boolean" resolve="isMetaDown" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="50SGaRK57Vg" role="3cqZAp">
           <node concept="3cpWsn" id="50SGaRK57Vh" role="3cpWs9">
             <property role="TrG5h" value="pos" />
