@@ -537,12 +537,5 @@
       <node concept="2iRkQZ" id="tJrHRTVPJQ" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="3Ts5Ln3I1T$">
-    <property role="3GE5qa" value="language_specific_config" />
-    <ref role="1XX52x" to="gfdq:3Ts5Ln3HLxL" resolve="GenericConfig" />
-    <node concept="3F0ifn" id="3Ts5Ln3I1TA" role="2wV5jI">
-      <property role="3F0ifm" value="generic config" />
-    </node>
-  </node>
 </model>
 

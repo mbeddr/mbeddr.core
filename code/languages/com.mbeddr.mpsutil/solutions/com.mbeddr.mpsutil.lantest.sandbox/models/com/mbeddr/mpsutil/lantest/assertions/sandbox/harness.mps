@@ -7,6 +7,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="0617b2ed-f9cf-44b7-b91d-b3a8e60bae7f" name="com.mbeddr.mpsutil.lantest.baselang" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -32,6 +33,13 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
+    <language id="0617b2ed-f9cf-44b7-b91d-b3a8e60bae7f" name="com.mbeddr.mpsutil.lantest.baselang">
+      <concept id="4493491910454220913" name="com.mbeddr.mpsutil.lantest.baselang.structure.GenericConfig" flags="ng" index="3XUKX$">
+        <child id="4493491910455648175" name="tempModel" index="3X$cyU" />
+        <child id="4493491910455121569" name="originalModel" index="3XAc6O" />
+        <child id="4493491910455121568" name="modelWithBuggyRoots" index="3XAc6P" />
+      </concept>
+    </language>
     <language id="5ef691b5-60ce-4ece-a04e-25e642dfa128" name="com.mbeddr.mpsutil.lantest">
       <concept id="3465332537548487647" name="com.mbeddr.mpsutil.lantest.structure.RandomConceptChooser" flags="ng" index="1emTa" />
       <concept id="5961733595646916849" name="com.mbeddr.mpsutil.lantest.structure.LanguageRegexReference" flags="ng" index="cHURJ">
@@ -54,7 +62,6 @@
         <child id="3516382903881173796" name="langSpecificConfig" index="3CPbyU" />
       </concept>
       <concept id="3262406899569270472" name="com.mbeddr.mpsutil.lantest.structure.RandomDescendantSeed" flags="ng" index="1$QBG2" />
-      <concept id="4493491910454220913" name="com.mbeddr.mpsutil.lantest.structure.GenericConfig" flags="ng" index="3XUKX$" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
@@ -70,7 +77,7 @@
   </registry>
   <node concept="13Gd1p" id="6fGXG$6dmgU">
     <property role="13GOwg" value="3" />
-    <property role="13Gz9I" value="150" />
+    <property role="13Gz9I" value="350" />
     <property role="TrG5h" value="config" />
     <property role="1s6Q3N" value="2" />
     <property role="20wqWe" value="1" />
@@ -90,7 +97,20 @@
     <node concept="fhwn3" id="3Ts5Ln3HLtA" role="fhwmk">
       <ref role="fhwn$" node="3Ts5Ln3HLtD" resolve="Seed" />
     </node>
-    <node concept="3XUKX$" id="3Ts5Ln3IakA" role="3CPbyU" />
+    <node concept="3XUKX$" id="3Ts5Ln3IakA" role="3CPbyU">
+      <node concept="BaHAS" id="3Ts5Ln3Mpq4" role="3XAc6P">
+        <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.assertions.sandbox.buggy_classes" />
+        <property role="BaGAP" value="" />
+      </node>
+      <node concept="BaHAS" id="3Ts5Ln3Mpqj" role="3XAc6O">
+        <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.assertions.sandbox.res" />
+        <property role="BaGAP" value="" />
+      </node>
+      <node concept="BaHAS" id="3Ts5Ln3NpTN" role="3X$cyU">
+        <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.assertions.sandbox.temp" />
+        <property role="BaGAP" value="" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="3Ts5Ln3HLtD">
     <property role="TrG5h" value="Seed" />

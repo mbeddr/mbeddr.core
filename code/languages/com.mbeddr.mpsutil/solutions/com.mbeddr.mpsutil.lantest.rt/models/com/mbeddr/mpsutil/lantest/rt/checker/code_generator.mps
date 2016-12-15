@@ -1546,6 +1546,18 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5oO2AcZyq3n" role="jymVt" />
+    <node concept="312cEg" id="3Ts5Ln3KX5W" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="currentModel" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tmbuc" id="3Ts5Ln3KWJ8" role="1B3o_S" />
+      <node concept="H_c77" id="3Ts5Ln3KX5z" role="1tU5fm" />
+      <node concept="NWlO9" id="3Ts5Ln3KXsn" role="lGtFl">
+        <property role="NWlVz" value="Model on which the generation is triggered." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3Ts5Ln3KWoN" role="jymVt" />
     <node concept="3clFbW" id="5oO2AcZyoOd" role="jymVt">
       <node concept="3cqZAl" id="5oO2AcZyoOf" role="3clF45" />
       <node concept="3Tm1VV" id="5oO2AcZyoOg" role="1B3o_S" />
@@ -1581,6 +1593,16 @@
       <property role="od$2w" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="5oO2AcYig5F" role="3clF47">
+        <node concept="3clFbF" id="3Ts5Ln3KXHx" role="3cqZAp">
+          <node concept="37vLTI" id="3Ts5Ln3KY1h" role="3clFbG">
+            <node concept="37vLTw" id="3Ts5Ln3KYcz" role="37vLTx">
+              <ref role="3cqZAo" node="5oO2AcYig9I" resolve="m" />
+            </node>
+            <node concept="37vLTw" id="3Ts5Ln3KXHv" role="37vLTJ">
+              <ref role="3cqZAo" node="3Ts5Ln3KX5W" resolve="currentModel" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="5oO2AcYig5G" role="3cqZAp">
           <node concept="3cpWsn" id="5oO2AcYig5H" role="3cpWs9">
             <property role="TrG5h" value="allRoots" />
@@ -1592,9 +1614,6 @@
             <node concept="37vLTI" id="5oO2AcZAnDg" role="3clFbG">
               <node concept="1rXfSq" id="5oO2AcYi_Z0" role="37vLTx">
                 <ref role="37wK5l" node="5oO2AcYizc5" resolve="collectRoots" />
-                <node concept="37vLTw" id="5oO2AcYiBw$" role="37wK5m">
-                  <ref role="3cqZAo" node="5oO2AcYig9I" resolve="m" />
-                </node>
               </node>
               <node concept="37vLTw" id="5oO2AcZAnDk" role="37vLTJ">
                 <ref role="3cqZAo" node="5oO2AcYig5H" resolve="allRoots" />
@@ -1639,6 +1658,26 @@
             <property role="TrG5h" value="currentRootNode" />
           </node>
           <node concept="3clFbS" id="5oO2AcYig6n" role="2LFqv$">
+            <node concept="3clFbF" id="3Ts5Ln3MCtG" role="3cqZAp">
+              <node concept="1rXfSq" id="3Ts5Ln3MCtH" role="3clFbG">
+                <ref role="37wK5l" node="5oO2AcYiwN1" resolve="printInfo" />
+                <node concept="37vLTw" id="3Ts5Ln3MCtI" role="37wK5m">
+                  <ref role="3cqZAo" node="5oO2AcYig68" resolve="rootNodesSize" />
+                </node>
+                <node concept="37vLTw" id="3Ts5Ln3MCtJ" role="37wK5m">
+                  <ref role="3cqZAo" node="5oO2AcYig6e" resolve="crtIndex" />
+                </node>
+                <node concept="37vLTw" id="3Ts5Ln3MCtK" role="37wK5m">
+                  <ref role="3cqZAo" node="5oO2AcYig6i" resolve="buggyModels" />
+                </node>
+                <node concept="Xl_RD" id="3Ts5Ln3MCtL" role="37wK5m">
+                  <property role="Xl_RC" value=" -------- Checking: " />
+                </node>
+                <node concept="2GrUjf" id="3Ts5Ln3MCtM" role="37wK5m">
+                  <ref role="2Gs0qQ" node="5oO2AcYig6m" resolve="currentRootNode" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="5oO2AcYig6o" role="3cqZAp">
               <node concept="3uNrnE" id="5oO2AcYig6p" role="3clFbG">
                 <node concept="37vLTw" id="5oO2AcYig6q" role="2$L3a6">
@@ -1920,10 +1959,6 @@
       <node concept="2I9FWS" id="5oO2AcYizbU" role="3clF45" />
       <node concept="NWlO9" id="5oO2AcYi$My" role="lGtFl">
         <property role="NWlVz" value="Collects the root nodes from the given model and which are to be checked." />
-      </node>
-      <node concept="37vLTG" id="5oO2AcYiCEs" role="3clF46">
-        <property role="TrG5h" value="m" />
-        <node concept="H_c77" id="5oO2AcYiCEr" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="5oO2AcYizZw" role="jymVt" />
