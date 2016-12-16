@@ -5706,8 +5706,9 @@
         <node concept="3clFbJ" id="2etktb3RTFG" role="3cqZAp">
           <node concept="3clFbS" id="2etktb3RTFI" role="3clFbx">
             <node concept="3cpWs6" id="2etktb3S3_T" role="3cqZAp">
-              <node concept="3cmrfG" id="2etktb3S3Pc" role="3cqZAk">
-                <property role="3cmrfH" value="0" />
+              <node concept="10M0yZ" id="33$Pd7DRiDP" role="3cqZAk">
+                <ref role="1PxDUh" to="xlxw:~BigInteger" resolve="BigInteger" />
+                <ref role="3cqZAo" to="xlxw:~BigInteger.ZERO" resolve="ZERO" />
               </node>
             </node>
           </node>
@@ -5721,11 +5722,8 @@
           </node>
         </node>
         <node concept="3cpWs6" id="2etktb3S4ue" role="3cqZAp">
-          <node concept="3cpWs3" id="2etktb3Uw4z" role="3cqZAk">
-            <node concept="3cmrfG" id="2etktb3Uw4A" role="3uHU7w">
-              <property role="3cmrfH" value="1" />
-            </node>
-            <node concept="1eOMI4" id="2etktb3UwJ_" role="3uHU7B">
+          <node concept="2OqwBi" id="33$Pd7DRtZL" role="3cqZAk">
+            <node concept="1eOMI4" id="2etktb3UwJ_" role="2Oq$k0">
               <node concept="10QFUN" id="2etktb3UwJA" role="1eOMHV">
                 <node concept="2OqwBi" id="2etktb3UwJr" role="10QFUP">
                   <node concept="2OqwBi" id="2etktb3UwJs" role="2Oq$k0">
@@ -5752,9 +5750,16 @@
                     <ref role="37wK5l" node="2etktb3RPbd" resolve="integerStaticValue" />
                   </node>
                 </node>
-                <node concept="3uibUv" id="2etktb3UxSa" role="10QFUM">
-                  <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+                <node concept="3uibUv" id="33$Pd7DRt7w" role="10QFUM">
+                  <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
                 </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="33$Pd7DRuTO" role="2OqNvi">
+              <ref role="37wK5l" to="xlxw:~BigInteger.add(java.math.BigInteger):java.math.BigInteger" resolve="add" />
+              <node concept="10M0yZ" id="33$Pd7DRyZN" role="37wK5m">
+                <ref role="1PxDUh" to="xlxw:~BigInteger" resolve="BigInteger" />
+                <ref role="3cqZAo" to="xlxw:~BigInteger.ONE" resolve="ONE" />
               </node>
             </node>
           </node>
