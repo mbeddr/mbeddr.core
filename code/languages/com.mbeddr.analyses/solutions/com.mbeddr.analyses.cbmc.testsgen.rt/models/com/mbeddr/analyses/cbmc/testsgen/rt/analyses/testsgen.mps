@@ -36,6 +36,7 @@
     <import index="kart" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.xml.sax(JDK/)" />
     <import index="vpqd" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.parsers(JDK/)" />
     <import index="1qo3" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.tuple(org.apache.commons/)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -117,6 +118,7 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534555686" name="jetbrains.mps.baseLanguage.structure.CharType" flags="in" index="10Pfzv" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
@@ -3056,6 +3058,30 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3aDyPAXR$kt" role="jymVt" />
+    <node concept="312cEg" id="33$Pd7DuBKX" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="currentCType" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="33$Pd7DuBKY" role="1B3o_S" />
+      <node concept="17QB3L" id="33$Pd7DuBKZ" role="1tU5fm" />
+      <node concept="NWlO9" id="33$Pd7DuBL0" role="lGtFl">
+        <property role="NWlVz" value="The current ctype field." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="33$Pd7Du_Az" role="jymVt" />
+    <node concept="312cEg" id="33$Pd7Dvlmm" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="currentBinary" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="33$Pd7Dvlmn" role="1B3o_S" />
+      <node concept="17QB3L" id="33$Pd7Dvlmo" role="1tU5fm" />
+      <node concept="NWlO9" id="33$Pd7Dvlmp" role="lGtFl">
+        <property role="NWlVz" value="The current value as binary." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="33$Pd7DviHa" role="jymVt" />
     <node concept="3clFbW" id="3aDyPAXRz1D" role="jymVt">
       <node concept="3cqZAl" id="3aDyPAXRz1F" role="3clF45" />
       <node concept="3Tm1VV" id="3aDyPAXRz1G" role="1B3o_S" />
@@ -3604,6 +3630,82 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="33$Pd7Du$vl" role="3cqZAp">
+          <node concept="3clFbS" id="33$Pd7Du$vm" role="3clFbx">
+            <node concept="3clFbF" id="33$Pd7DuFyW" role="3cqZAp">
+              <node concept="37vLTI" id="33$Pd7DuG0K" role="3clFbG">
+                <node concept="2OqwBi" id="33$Pd7DuGMd" role="37vLTx">
+                  <node concept="37vLTw" id="33$Pd7DuGs0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3aDyPAXQY5m" resolve="attributes" />
+                  </node>
+                  <node concept="liA8E" id="33$Pd7DuH4G" role="2OqNvi">
+                    <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                    <node concept="Xl_RD" id="33$Pd7DuHi$" role="37wK5m">
+                      <property role="Xl_RC" value="c_type" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="33$Pd7DuFyV" role="37vLTJ">
+                  <ref role="3cqZAo" node="33$Pd7DuBKX" resolve="currentCType" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="33$Pd7DuHJG" role="3clFbw">
+            <node concept="37vLTw" id="33$Pd7DuIqj" role="3uHU7w">
+              <ref role="3cqZAo" node="3aDyPAXTGT4" resolve="inTestVectors" />
+            </node>
+            <node concept="2OqwBi" id="33$Pd7Du$vq" role="3uHU7B">
+              <node concept="37vLTw" id="33$Pd7Du$vr" role="2Oq$k0">
+                <ref role="3cqZAo" node="3aDyPAXQY5k" resolve="qName" />
+              </node>
+              <node concept="liA8E" id="33$Pd7Du$vs" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="Xl_RD" id="33$Pd7Du$vt" role="37wK5m">
+                  <property role="Xl_RC" value="integer" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="33$Pd7DvqpM" role="3cqZAp">
+          <node concept="3clFbS" id="33$Pd7DvqpN" role="3clFbx">
+            <node concept="3clFbF" id="33$Pd7DvqpO" role="3cqZAp">
+              <node concept="37vLTI" id="33$Pd7DvqpP" role="3clFbG">
+                <node concept="2OqwBi" id="33$Pd7DvqpQ" role="37vLTx">
+                  <node concept="37vLTw" id="33$Pd7DvqpR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3aDyPAXQY5m" resolve="attributes" />
+                  </node>
+                  <node concept="liA8E" id="33$Pd7DvqpS" role="2OqNvi">
+                    <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                    <node concept="Xl_RD" id="33$Pd7DvqpT" role="37wK5m">
+                      <property role="Xl_RC" value="binary" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="33$Pd7DvqpU" role="37vLTJ">
+                  <ref role="3cqZAo" node="33$Pd7DuBKX" resolve="currentCType" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="33$Pd7DvqpV" role="3clFbw">
+            <node concept="37vLTw" id="33$Pd7DvqpW" role="3uHU7w">
+              <ref role="3cqZAo" node="3aDyPAXTGT4" resolve="inTestVectors" />
+            </node>
+            <node concept="2OqwBi" id="33$Pd7DvqpX" role="3uHU7B">
+              <node concept="37vLTw" id="33$Pd7DvqpY" role="2Oq$k0">
+                <ref role="3cqZAo" node="3aDyPAXQY5k" resolve="qName" />
+              </node>
+              <node concept="liA8E" id="33$Pd7DvqpZ" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="Xl_RD" id="33$Pd7Dvqq0" role="37wK5m">
+                  <property role="Xl_RC" value="float" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2AHcQZ" id="3aDyPAXQY5q" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -3994,54 +4096,6 @@
             <property role="3SKdUp" value="take care of values" />
           </node>
         </node>
-        <node concept="3clFbJ" id="3aDyPAXZYVU" role="3cqZAp">
-          <node concept="1Wc70l" id="3aDyPAXZYVV" role="3clFbw">
-            <node concept="37vLTw" id="3aDyPAXZYVW" role="3uHU7w">
-              <ref role="3cqZAo" node="3aDyPAXTGT4" resolve="inTestVectors" />
-            </node>
-            <node concept="2OqwBi" id="3aDyPAXZYVX" role="3uHU7B">
-              <node concept="37vLTw" id="3aDyPAXZYVY" role="2Oq$k0">
-                <ref role="3cqZAo" node="3aDyPAXRiyn" resolve="qName" />
-              </node>
-              <node concept="liA8E" id="3aDyPAXZYVZ" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                <node concept="Xl_RD" id="3aDyPAXZYW0" role="37wK5m">
-                  <property role="Xl_RC" value="char" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="3aDyPAXZYW1" role="3clFbx">
-            <node concept="3clFbF" id="3aDyPAY4_LH" role="3cqZAp">
-              <node concept="2OqwBi" id="3aDyPAY4AL5" role="3clFbG">
-                <node concept="37vLTw" id="3aDyPAY4_LF" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3aDyPAXTVH1" resolve="inputs2Values" />
-                </node>
-                <node concept="TSZUe" id="3aDyPAY4Cp9" role="2OqNvi">
-                  <node concept="2ShNRf" id="3aDyPAY4CHw" role="25WWJ7">
-                    <node concept="1pGfFk" id="3aDyPAY4DQ1" role="2ShVmc">
-                      <ref role="37wK5l" to="1qo3:~ImmutablePair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="ImmutablePair" />
-                      <node concept="37vLTw" id="3aDyPAY4Eqa" role="37wK5m">
-                        <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
-                      </node>
-                      <node concept="2YIFZM" id="3aDyPAY4Fa$" role="37wK5m">
-                        <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                        <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-                        <node concept="37vLTw" id="3aDyPAY4Fa_" role="37wK5m">
-                          <ref role="3cqZAo" node="WwTuEsv1_G" resolve="currentCharacters" />
-                        </node>
-                      </node>
-                      <node concept="17QB3L" id="3aDyPAY4GP3" role="1pMfVU" />
-                      <node concept="3uibUv" id="3aDyPAY4HVw" role="1pMfVU">
-                        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="3aDyPAXU6pN" role="3cqZAp">
           <node concept="1Wc70l" id="3aDyPAXU6pO" role="3clFbw">
             <node concept="37vLTw" id="3aDyPAXU6pP" role="3uHU7w">
@@ -4060,28 +4114,80 @@
             </node>
           </node>
           <node concept="3clFbS" id="3aDyPAXU6pU" role="3clFbx">
-            <node concept="3clFbF" id="3aDyPAY4IL$" role="3cqZAp">
-              <node concept="2OqwBi" id="3aDyPAY4IL_" role="3clFbG">
-                <node concept="37vLTw" id="3aDyPAY4ILA" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3aDyPAXTVH1" resolve="inputs2Values" />
-                </node>
-                <node concept="TSZUe" id="3aDyPAY4ILB" role="2OqNvi">
-                  <node concept="2ShNRf" id="3aDyPAY4ILC" role="25WWJ7">
-                    <node concept="1pGfFk" id="3aDyPAY4ILD" role="2ShVmc">
-                      <ref role="37wK5l" to="1qo3:~ImmutablePair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="ImmutablePair" />
-                      <node concept="37vLTw" id="3aDyPAY4ILE" role="37wK5m">
-                        <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
-                      </node>
-                      <node concept="2YIFZM" id="3aDyPAY4ILF" role="37wK5m">
-                        <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                        <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-                        <node concept="37vLTw" id="3aDyPAY4ILG" role="37wK5m">
-                          <ref role="3cqZAo" node="WwTuEsv1_G" resolve="currentCharacters" />
+            <node concept="3clFbJ" id="33$Pd7DuJqB" role="3cqZAp">
+              <node concept="3clFbS" id="33$Pd7DuJqD" role="3clFbx">
+                <node concept="3clFbF" id="33$Pd7Du7Bc" role="3cqZAp">
+                  <node concept="2OqwBi" id="33$Pd7Du7Bd" role="3clFbG">
+                    <node concept="37vLTw" id="33$Pd7Du7Be" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3aDyPAXTVH1" resolve="inputs2Values" />
+                    </node>
+                    <node concept="TSZUe" id="33$Pd7Du7Bf" role="2OqNvi">
+                      <node concept="2ShNRf" id="33$Pd7Du7Bg" role="25WWJ7">
+                        <node concept="1pGfFk" id="33$Pd7Du7Bh" role="2ShVmc">
+                          <ref role="37wK5l" to="1qo3:~ImmutablePair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="ImmutablePair" />
+                          <node concept="37vLTw" id="33$Pd7Du7Bi" role="37wK5m">
+                            <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
+                          </node>
+                          <node concept="2YIFZM" id="33$Pd7Du9Vy" role="37wK5m">
+                            <ref role="37wK5l" to="wyt6:~Boolean.parseBoolean(java.lang.String):boolean" resolve="parseBoolean" />
+                            <ref role="1Pybhc" to="wyt6:~Boolean" resolve="Boolean" />
+                            <node concept="2OqwBi" id="33$Pd7DuaHc" role="37wK5m">
+                              <node concept="37vLTw" id="33$Pd7Du9Vz" role="2Oq$k0">
+                                <ref role="3cqZAo" node="WwTuEsv1_G" resolve="currentCharacters" />
+                              </node>
+                              <node concept="liA8E" id="33$Pd7Dub$0" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="17QB3L" id="33$Pd7Du7Bl" role="1pMfVU" />
+                          <node concept="3uibUv" id="33$Pd7Du7Bm" role="1pMfVU">
+                            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                          </node>
                         </node>
                       </node>
-                      <node concept="17QB3L" id="3aDyPAY4ILH" role="1pMfVU" />
-                      <node concept="3uibUv" id="3aDyPAY4ILI" role="1pMfVU">
-                        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="33$Pd7DuKFe" role="3clFbw">
+                <node concept="37vLTw" id="33$Pd7DuK9q" role="2Oq$k0">
+                  <ref role="3cqZAo" node="33$Pd7DuBKX" resolve="currentCType" />
+                </node>
+                <node concept="liA8E" id="33$Pd7DuL3O" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="33$Pd7DuLy5" role="37wK5m">
+                    <property role="Xl_RC" value="_Bool" />
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="33$Pd7DuQxM" role="9aQIa">
+                <node concept="3clFbS" id="33$Pd7DuQxN" role="9aQI4">
+                  <node concept="3clFbF" id="3aDyPAY4IL$" role="3cqZAp">
+                    <node concept="2OqwBi" id="3aDyPAY4IL_" role="3clFbG">
+                      <node concept="37vLTw" id="3aDyPAY4ILA" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3aDyPAXTVH1" resolve="inputs2Values" />
+                      </node>
+                      <node concept="TSZUe" id="3aDyPAY4ILB" role="2OqNvi">
+                        <node concept="2ShNRf" id="3aDyPAY4ILC" role="25WWJ7">
+                          <node concept="1pGfFk" id="3aDyPAY4ILD" role="2ShVmc">
+                            <ref role="37wK5l" to="1qo3:~ImmutablePair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="ImmutablePair" />
+                            <node concept="37vLTw" id="3aDyPAY4ILE" role="37wK5m">
+                              <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
+                            </node>
+                            <node concept="2YIFZM" id="3aDyPAY4ILF" role="37wK5m">
+                              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                              <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                              <node concept="37vLTw" id="3aDyPAY4ILG" role="37wK5m">
+                                <ref role="3cqZAo" node="WwTuEsv1_G" resolve="currentCharacters" />
+                              </node>
+                            </node>
+                            <node concept="17QB3L" id="3aDyPAY4ILH" role="1pMfVU" />
+                            <node concept="3uibUv" id="3aDyPAY4ILI" role="1pMfVU">
+                              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -4108,76 +4214,119 @@
             </node>
           </node>
           <node concept="3clFbS" id="3aDyPAXZWD4" role="3clFbx">
-            <node concept="3clFbF" id="3aDyPAY4L_8" role="3cqZAp">
-              <node concept="2OqwBi" id="3aDyPAY4L_9" role="3clFbG">
-                <node concept="37vLTw" id="3aDyPAY4L_a" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3aDyPAXTVH1" resolve="inputs2Values" />
-                </node>
-                <node concept="TSZUe" id="3aDyPAY4L_b" role="2OqNvi">
-                  <node concept="2ShNRf" id="3aDyPAY4L_c" role="25WWJ7">
-                    <node concept="1pGfFk" id="3aDyPAY4L_d" role="2ShVmc">
-                      <ref role="37wK5l" to="1qo3:~ImmutablePair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="ImmutablePair" />
-                      <node concept="37vLTw" id="3aDyPAY4L_e" role="37wK5m">
-                        <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
-                      </node>
-                      <node concept="2YIFZM" id="3aDyPAY4Mkw" role="37wK5m">
-                        <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String):float" resolve="parseFloat" />
-                        <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
-                        <node concept="37vLTw" id="3aDyPAY4Mkx" role="37wK5m">
-                          <ref role="3cqZAo" node="WwTuEsv1_G" resolve="currentCharacters" />
+            <node concept="3clFbJ" id="33$Pd7DuY1u" role="3cqZAp">
+              <node concept="3clFbS" id="33$Pd7DuY1v" role="3clFbx">
+                <node concept="3cpWs8" id="33$Pd7DvDWB" role="3cqZAp">
+                  <node concept="3cpWsn" id="33$Pd7DvDWC" role="3cpWs9">
+                    <property role="TrG5h" value="myFloat" />
+                    <node concept="10P55v" id="33$Pd7DvDWD" role="1tU5fm" />
+                    <node concept="2YIFZM" id="33$Pd7DvHUz" role="33vP2m">
+                      <ref role="37wK5l" to="wyt6:~Float.intBitsToFloat(int):float" resolve="intBitsToFloat" />
+                      <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+                      <node concept="2OqwBi" id="33$Pd7DvHU$" role="37wK5m">
+                        <node concept="2ShNRf" id="33$Pd7DvHU_" role="2Oq$k0">
+                          <node concept="1pGfFk" id="33$Pd7DvHUA" role="2ShVmc">
+                            <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String,int)" resolve="BigInteger" />
+                            <node concept="37vLTw" id="33$Pd7DvHUB" role="37wK5m">
+                              <ref role="3cqZAo" node="33$Pd7Dvlmm" resolve="currentBinary" />
+                            </node>
+                            <node concept="3cmrfG" id="33$Pd7DvHUC" role="37wK5m">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="33$Pd7DvIMz" role="2OqNvi">
+                          <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
                         </node>
                       </node>
-                      <node concept="17QB3L" id="3aDyPAY4L_h" role="1pMfVU" />
-                      <node concept="3uibUv" id="3aDyPAY4L_i" role="1pMfVU">
-                        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="3aDyPAY4L_8" role="3cqZAp">
+                  <node concept="2OqwBi" id="3aDyPAY4L_9" role="3clFbG">
+                    <node concept="37vLTw" id="3aDyPAY4L_a" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3aDyPAXTVH1" resolve="inputs2Values" />
+                    </node>
+                    <node concept="TSZUe" id="3aDyPAY4L_b" role="2OqNvi">
+                      <node concept="2ShNRf" id="3aDyPAY4L_c" role="25WWJ7">
+                        <node concept="1pGfFk" id="3aDyPAY4L_d" role="2ShVmc">
+                          <ref role="37wK5l" to="1qo3:~ImmutablePair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="ImmutablePair" />
+                          <node concept="37vLTw" id="3aDyPAY4L_e" role="37wK5m">
+                            <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
+                          </node>
+                          <node concept="37vLTw" id="33$Pd7DvJAr" role="37wK5m">
+                            <ref role="3cqZAo" node="33$Pd7DvDWC" resolve="myFloat" />
+                          </node>
+                          <node concept="17QB3L" id="3aDyPAY4L_h" role="1pMfVU" />
+                          <node concept="3uibUv" id="3aDyPAY4L_i" role="1pMfVU">
+                            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="3aDyPAXUaSY" role="3cqZAp">
-          <node concept="1Wc70l" id="3aDyPAXUaSZ" role="3clFbw">
-            <node concept="37vLTw" id="3aDyPAXUaT0" role="3uHU7w">
-              <ref role="3cqZAo" node="3aDyPAXTGT4" resolve="inTestVectors" />
-            </node>
-            <node concept="2OqwBi" id="3aDyPAXUaT1" role="3uHU7B">
-              <node concept="37vLTw" id="3aDyPAXUaT2" role="2Oq$k0">
-                <ref role="3cqZAo" node="3aDyPAXRiyn" resolve="qName" />
-              </node>
-              <node concept="liA8E" id="3aDyPAXUaT3" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                <node concept="Xl_RD" id="3aDyPAXUaT4" role="37wK5m">
-                  <property role="Xl_RC" value="double" />
+              <node concept="2OqwBi" id="33$Pd7DuY1H" role="3clFbw">
+                <node concept="37vLTw" id="33$Pd7DuY1I" role="2Oq$k0">
+                  <ref role="3cqZAo" node="33$Pd7DuBKX" resolve="currentCType" />
+                </node>
+                <node concept="liA8E" id="33$Pd7DuY1J" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="33$Pd7DuY1K" role="37wK5m">
+                    <property role="Xl_RC" value="32" />
+                  </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="3aDyPAXUaT5" role="3clFbx">
-            <node concept="3clFbF" id="3aDyPAY4Pfc" role="3cqZAp">
-              <node concept="2OqwBi" id="3aDyPAY4Pfd" role="3clFbG">
-                <node concept="37vLTw" id="3aDyPAY4Pfe" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3aDyPAXTVH1" resolve="inputs2Values" />
-                </node>
-                <node concept="TSZUe" id="3aDyPAY4Pff" role="2OqNvi">
-                  <node concept="2ShNRf" id="3aDyPAY4Pfg" role="25WWJ7">
-                    <node concept="1pGfFk" id="3aDyPAY4Pfh" role="2ShVmc">
-                      <ref role="37wK5l" to="1qo3:~ImmutablePair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="ImmutablePair" />
-                      <node concept="37vLTw" id="3aDyPAY4Pfi" role="37wK5m">
-                        <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
-                      </node>
-                      <node concept="2YIFZM" id="3aDyPAY4Te_" role="37wK5m">
-                        <ref role="37wK5l" to="wyt6:~Double.parseDouble(java.lang.String):double" resolve="parseDouble" />
+              <node concept="9aQIb" id="33$Pd7DuY1L" role="9aQIa">
+                <node concept="3clFbS" id="33$Pd7DuY1M" role="9aQI4">
+                  <node concept="3cpWs8" id="33$Pd7DvAyZ" role="3cqZAp">
+                    <node concept="3cpWsn" id="33$Pd7DvAz0" role="3cpWs9">
+                      <property role="TrG5h" value="myDouble" />
+                      <node concept="10P55v" id="33$Pd7DvAyW" role="1tU5fm" />
+                      <node concept="2YIFZM" id="33$Pd7DvAz1" role="33vP2m">
                         <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
-                        <node concept="37vLTw" id="3aDyPAY4TeA" role="37wK5m">
-                          <ref role="3cqZAo" node="WwTuEsv1_G" resolve="currentCharacters" />
+                        <ref role="37wK5l" to="wyt6:~Double.longBitsToDouble(long):double" resolve="longBitsToDouble" />
+                        <node concept="2OqwBi" id="33$Pd7DvAz2" role="37wK5m">
+                          <node concept="2ShNRf" id="33$Pd7DvAz3" role="2Oq$k0">
+                            <node concept="1pGfFk" id="33$Pd7DvAz4" role="2ShVmc">
+                              <ref role="37wK5l" to="xlxw:~BigInteger.&lt;init&gt;(java.lang.String,int)" resolve="BigInteger" />
+                              <node concept="37vLTw" id="33$Pd7DvAz5" role="37wK5m">
+                                <ref role="3cqZAo" node="33$Pd7Dvlmm" resolve="currentBinary" />
+                              </node>
+                              <node concept="3cmrfG" id="33$Pd7DvAz6" role="37wK5m">
+                                <property role="3cmrfH" value="2" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="33$Pd7DvAz7" role="2OqNvi">
+                            <ref role="37wK5l" to="xlxw:~BigInteger.longValue():long" resolve="longValue" />
+                          </node>
                         </node>
                       </node>
-                      <node concept="17QB3L" id="3aDyPAY4Pfl" role="1pMfVU" />
-                      <node concept="3uibUv" id="3aDyPAY4Pfm" role="1pMfVU">
-                        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="33$Pd7Dv0ty" role="3cqZAp">
+                    <node concept="2OqwBi" id="33$Pd7Dv0tz" role="3clFbG">
+                      <node concept="37vLTw" id="33$Pd7Dv0t$" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3aDyPAXTVH1" resolve="inputs2Values" />
+                      </node>
+                      <node concept="TSZUe" id="33$Pd7Dv0t_" role="2OqNvi">
+                        <node concept="2ShNRf" id="33$Pd7Dv0tA" role="25WWJ7">
+                          <node concept="1pGfFk" id="33$Pd7Dv0tB" role="2ShVmc">
+                            <ref role="37wK5l" to="1qo3:~ImmutablePair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="ImmutablePair" />
+                            <node concept="37vLTw" id="33$Pd7Dv0tC" role="37wK5m">
+                              <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
+                            </node>
+                            <node concept="37vLTw" id="33$Pd7DvCG_" role="37wK5m">
+                              <ref role="3cqZAo" node="33$Pd7DvAz0" resolve="myDouble" />
+                            </node>
+                            <node concept="17QB3L" id="33$Pd7Dv0tF" role="1pMfVU" />
+                            <node concept="3uibUv" id="33$Pd7Dv0tG" role="1pMfVU">
+                              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
