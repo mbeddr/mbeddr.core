@@ -8,8 +8,8 @@
   </languages>
   <imports>
     <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -45,6 +45,13 @@
     <property role="34LRSv" value="mbeddr.core.config" />
     <property role="EcuMT" value="3516382903881191515" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3Ts5Ln3NdYJ" role="1TKVEi">
+      <property role="IQ2ns" value="4493491910455648175" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tempModel" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+    </node>
     <node concept="PrWs8" id="33cGTVo66E9" role="PzmwI">
       <ref role="PrY4T" to="gfdq:33cGTVo609o" resolve="ILanguageSpecificConfig" />
     </node>
