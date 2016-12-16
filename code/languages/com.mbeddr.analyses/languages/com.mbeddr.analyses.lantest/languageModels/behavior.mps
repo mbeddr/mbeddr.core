@@ -26,6 +26,7 @@
     <import index="tase" ref="r:636418bd-de3f-4994-9ed6-575fd575a6a8(com.mbeddr.mpsutil.lantest.rt.checker.code_generator)" />
     <import index="ck48" ref="r:5e05eafc-88ae-40cc-84b6-10bb3c5fe753(com.mbeddr.analyses.lantest.pluginSolution.generator)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="pgnu" ref="r:a27e1862-2250-48b7-bf71-c44af436c605(com.mbeddr.mpsutil.lantest.baselang.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
@@ -321,6 +322,59 @@
       <node concept="3uibUv" id="3Ts5Ln3KGSI" role="3clF45">
         <ref role="3uigEE" to="tase:26HFG8DLs3F" resolve="BugsFinderDriverBase" />
       </node>
+    </node>
+    <node concept="13i0hz" id="x7DaR3OJQ_" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getModelWhereCheckingIsPerformed" />
+      <ref role="13i0hy" to="uu96:3Ts5Ln3NdMD" resolve="getModelWhereCheckingIsPerformed" />
+      <node concept="3Tm1VV" id="x7DaR3OJQA" role="1B3o_S" />
+      <node concept="3clFbS" id="x7DaR3OJQD" role="3clF47">
+        <node concept="3cpWs8" id="3Ts5Ln3Nfvd" role="3cqZAp">
+          <node concept="3cpWsn" id="3Ts5Ln3Nfve" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="3Ts5Ln3Nfvf" role="1tU5fm">
+              <ref role="3uigEE" to="w1kc:~SModelRepository" resolve="SModelRepository" />
+            </node>
+            <node concept="2YIFZM" id="3Ts5Ln3Nfvg" role="33vP2m">
+              <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance():jetbrains.mps.smodel.SModelRepository" resolve="getInstance" />
+              <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3Ts5Ln3Nfvh" role="3cqZAp">
+          <node concept="2OqwBi" id="3Ts5Ln3Nfvi" role="3clFbG">
+            <node concept="2OqwBi" id="3Ts5Ln3Nfvj" role="2Oq$k0">
+              <node concept="2OqwBi" id="3Ts5Ln3Nfvk" role="2Oq$k0">
+                <node concept="37vLTw" id="3Ts5Ln3Nfvl" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3Ts5Ln3Nfve" resolve="repo" />
+                </node>
+                <node concept="liA8E" id="3Ts5Ln3Nfvm" role="2OqNvi">
+                  <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptorsByModelName(java.lang.String):java.util.List" resolve="getModelDescriptorsByModelName" />
+                  <node concept="2OqwBi" id="3Ts5Ln3Nfvn" role="37wK5m">
+                    <node concept="2OqwBi" id="3Ts5Ln3Nfvo" role="2Oq$k0">
+                      <node concept="13iPFW" id="3Ts5Ln3Nfvp" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="3Ts5Ln3Ng5$" role="2OqNvi">
+                        <ref role="3Tt5mk" to="fowb:3Ts5Ln3NdYJ" resolve="tempModel" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="3Ts5Ln3Nfvr" role="2OqNvi">
+                      <ref role="37wK5l" to="tpeu:7K4mn_BeEzv" resolve="getFQName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Ts5Ln3Nfvs" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.iterator():java.util.Iterator" resolve="iterator" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3Ts5Ln3Nfvt" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="H_c77" id="x7DaR3OJQE" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="2A9nHKAOvR$">
