@@ -41,6 +41,7 @@
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
     <import index="1qo3" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.tuple(org.apache.commons/)" />
     <import index="zo10" ref="r:cc0fed3b-091b-4783-9fab-36d8c8df8004(com.mbeddr.analyses.cbmc.testsgen.behavior)" implicit="true" />
+    <import index="2rho" ref="r:4e770e63-2ef5-4a0d-b2e8-c5c1a1565703(com.mbeddr.core.udt.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1419,8 +1420,8 @@
             </node>
             <node concept="liA8E" id="6wKQUBJn$0N" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
-              <node concept="Xl_RD" id="6wKQUBJn$Fv" role="37wK5m">
-                <property role="Xl_RC" value="-?\\d+(\\.\\d+)?(E|e(-|\\+)?\\d+)?" />
+              <node concept="Xl_RD" id="2etktb3RgmT" role="37wK5m">
+                <property role="Xl_RC" value="-?\\d+(\\.\\d+)?((E|e)(-|\\+)?\\d+)" />
               </node>
             </node>
           </node>
@@ -1563,18 +1564,23 @@
                       <node concept="1bVj0M" id="MynG9Rgebw" role="23t8la">
                         <node concept="3clFbS" id="MynG9Rgebx" role="1bW5cS">
                           <node concept="3clFbF" id="MynG9Rgeby" role="3cqZAp">
-                            <node concept="2OqwBi" id="MynG9Rgebz" role="3clFbG">
-                              <node concept="2OqwBi" id="MynG9Rgeb$" role="2Oq$k0">
-                                <node concept="37vLTw" id="MynG9Rgeb_" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="MynG9RgebD" resolve="it" />
+                            <node concept="2OqwBi" id="2etktb3SZns" role="3clFbG">
+                              <node concept="2OqwBi" id="2etktb3SXTw" role="2Oq$k0">
+                                <node concept="2OqwBi" id="2etktb3RNTq" role="2Oq$k0">
+                                  <node concept="37vLTw" id="2etktb3RNwB" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="MynG9RgebD" resolve="it" />
+                                  </node>
+                                  <node concept="2qgKlT" id="2etktb3SX_z" role="2OqNvi">
+                                    <ref role="37wK5l" to="2rho:2etktb3RPbd" resolve="integerStaticValue" />
+                                  </node>
                                 </node>
-                                <node concept="3TrcHB" id="MynG9RgebA" role="2OqNvi">
-                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                <node concept="liA8E" id="2etktb3SYOo" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                                 </node>
                               </node>
-                              <node concept="liA8E" id="MynG9RgebB" role="2OqNvi">
+                              <node concept="liA8E" id="2etktb3T0_T" role="2OqNvi">
                                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                                <node concept="37vLTw" id="MynG9RgebC" role="37wK5m">
+                                <node concept="37vLTw" id="2etktb3T10K" role="37wK5m">
                                   <ref role="3cqZAo" node="1ENIgcph1MC" resolve="str" />
                                 </node>
                               </node>
