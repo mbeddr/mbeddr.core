@@ -2005,7 +2005,7 @@
                     <node concept="liA8E" id="fmL4edQK0w" role="2OqNvi">
                       <ref role="37wK5l" to="5zyv:~CountDownLatch.await(long,java.util.concurrent.TimeUnit):boolean" resolve="await" />
                       <node concept="3cmrfG" id="fmL4edQKp1" role="37wK5m">
-                        <property role="3cmrfH" value="2" />
+                        <property role="3cmrfH" value="10" />
                       </node>
                       <node concept="Rm8GO" id="fmL4edQKMO" role="37wK5m">
                         <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />
