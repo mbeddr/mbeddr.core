@@ -3070,6 +3070,18 @@
       </node>
     </node>
     <node concept="2tJIrI" id="33$Pd7Du_Az" role="jymVt" />
+    <node concept="312cEg" id="33$Pd7DGrwg" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="currentWidth" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="33$Pd7DGrwh" role="1B3o_S" />
+      <node concept="17QB3L" id="33$Pd7DGrwi" role="1tU5fm" />
+      <node concept="NWlO9" id="33$Pd7DGrwj" role="lGtFl">
+        <property role="NWlVz" value="The current width of the value." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="33$Pd7DGp7H" role="jymVt" />
     <node concept="312cEg" id="33$Pd7Dvlmm" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -3632,6 +3644,24 @@
         </node>
         <node concept="3clFbJ" id="33$Pd7Du$vl" role="3cqZAp">
           <node concept="3clFbS" id="33$Pd7Du$vm" role="3clFbx">
+            <node concept="3clFbF" id="33$Pd7DGaSN" role="3cqZAp">
+              <node concept="37vLTI" id="33$Pd7DGaSO" role="3clFbG">
+                <node concept="2OqwBi" id="33$Pd7DGaSP" role="37vLTx">
+                  <node concept="37vLTw" id="33$Pd7DGaSQ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3aDyPAXQY5m" resolve="attributes" />
+                  </node>
+                  <node concept="liA8E" id="33$Pd7DGaSR" role="2OqNvi">
+                    <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                    <node concept="Xl_RD" id="33$Pd7DGaSS" role="37wK5m">
+                      <property role="Xl_RC" value="binary" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="33$Pd7DGaST" role="37vLTJ">
+                  <ref role="3cqZAo" node="33$Pd7Dvlmm" resolve="currentBinary" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="33$Pd7DuFyW" role="3cqZAp">
               <node concept="37vLTI" id="33$Pd7DuG0K" role="3clFbG">
                 <node concept="2OqwBi" id="33$Pd7DuGMd" role="37vLTx">
@@ -3647,6 +3677,24 @@
                 </node>
                 <node concept="37vLTw" id="33$Pd7DuFyV" role="37vLTJ">
                   <ref role="3cqZAo" node="33$Pd7DuBKX" resolve="currentCType" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="33$Pd7DGGZh" role="3cqZAp">
+              <node concept="37vLTI" id="33$Pd7DGGZi" role="3clFbG">
+                <node concept="2OqwBi" id="33$Pd7DGGZj" role="37vLTx">
+                  <node concept="37vLTw" id="33$Pd7DGGZk" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3aDyPAXQY5m" resolve="attributes" />
+                  </node>
+                  <node concept="liA8E" id="33$Pd7DGGZl" role="2OqNvi">
+                    <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                    <node concept="Xl_RD" id="33$Pd7DGGZm" role="37wK5m">
+                      <property role="Xl_RC" value="width" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="33$Pd7DGGZn" role="37vLTJ">
+                  <ref role="3cqZAo" node="33$Pd7DGrwg" resolve="currentWidth" />
                 </node>
               </node>
             </node>
@@ -3683,8 +3731,26 @@
                     </node>
                   </node>
                 </node>
-                <node concept="37vLTw" id="33$Pd7DvqpU" role="37vLTJ">
-                  <ref role="3cqZAo" node="33$Pd7DuBKX" resolve="currentCType" />
+                <node concept="37vLTw" id="33$Pd7DFT2Q" role="37vLTJ">
+                  <ref role="3cqZAo" node="33$Pd7Dvlmm" resolve="currentBinary" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="33$Pd7DG7bW" role="3cqZAp">
+              <node concept="37vLTI" id="33$Pd7DG7bX" role="3clFbG">
+                <node concept="2OqwBi" id="33$Pd7DG7bY" role="37vLTx">
+                  <node concept="37vLTw" id="33$Pd7DG7bZ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3aDyPAXQY5m" resolve="attributes" />
+                  </node>
+                  <node concept="liA8E" id="33$Pd7DG7c0" role="2OqNvi">
+                    <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                    <node concept="Xl_RD" id="33$Pd7DG7c1" role="37wK5m">
+                      <property role="Xl_RC" value="width" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="33$Pd7DGGIP" role="37vLTJ">
+                  <ref role="3cqZAo" node="33$Pd7DGrwg" resolve="currentWidth" />
                 </node>
               </node>
             </node>
@@ -4268,8 +4334,8 @@
                 </node>
               </node>
               <node concept="2OqwBi" id="33$Pd7DuY1H" role="3clFbw">
-                <node concept="37vLTw" id="33$Pd7DuY1I" role="2Oq$k0">
-                  <ref role="3cqZAo" node="33$Pd7DuBKX" resolve="currentCType" />
+                <node concept="37vLTw" id="33$Pd7DGu$Q" role="2Oq$k0">
+                  <ref role="3cqZAo" node="33$Pd7DGrwg" resolve="currentWidth" />
                 </node>
                 <node concept="liA8E" id="33$Pd7DuY1J" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
