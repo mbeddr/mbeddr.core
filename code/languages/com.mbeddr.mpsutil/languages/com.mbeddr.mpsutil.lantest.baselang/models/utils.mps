@@ -16,6 +16,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="v5ts" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:d411f908-940a-47de-a6bb-6c4bd57886dd(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.saver)" />
+    <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -195,6 +196,9 @@
           <node concept="37vLTw" id="3Ts5Ln3KQn6" role="37wK5m">
             <ref role="3cqZAo" node="5oO2AcZyqEv" resolve="proj" />
           </node>
+          <node concept="37vLTw" id="484XVyxQ4eM" role="37wK5m">
+            <ref role="3cqZAo" node="484XVyxQ41_" resolve="lc" />
+          </node>
         </node>
         <node concept="3clFbF" id="3Ts5Ln3KS6W" role="3cqZAp">
           <node concept="37vLTI" id="3Ts5Ln3KSQR" role="3clFbG">
@@ -236,6 +240,12 @@
       <node concept="37vLTG" id="3Ts5Ln3KQnv" role="3clF46">
         <property role="TrG5h" value="modelWithBuggyRoots" />
         <node concept="H_c77" id="3Ts5Ln3KQvx" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="484XVyxQ41_" role="3clF46">
+        <property role="TrG5h" value="lc" />
+        <node concept="3Tqbb2" id="484XVyxQ4am" role="1tU5fm">
+          <ref role="ehGHo" to="gfdq:4XCJ8CcQ6Nj" resolve="LantestConfig" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3Ts5Ln3KOuz" role="jymVt" />
@@ -384,12 +394,19 @@
           </node>
           <node concept="9aQIb" id="3Ts5Ln3L3zC" role="9aQIa">
             <node concept="3clFbS" id="3Ts5Ln3L3zD" role="9aQI4">
-              <node concept="3clFbF" id="3Ts5Ln3L3B9" role="3cqZAp">
-                <node concept="2OqwBi" id="3Ts5Ln3L3P1" role="3clFbG">
-                  <node concept="37vLTw" id="3Ts5Ln3L3B8" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3Ts5Ln3KLSO" resolve="currentRootNode" />
+              <node concept="3clFbJ" id="484XVyxOX9f" role="3cqZAp">
+                <node concept="3clFbS" id="484XVyxOX9h" role="3clFbx">
+                  <node concept="3clFbF" id="3Ts5Ln3L3B9" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Ts5Ln3L3P1" role="3clFbG">
+                      <node concept="37vLTw" id="3Ts5Ln3L3B8" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3Ts5Ln3KLSO" resolve="currentRootNode" />
+                      </node>
+                      <node concept="1PgB_6" id="3Ts5Ln3L44D" role="2OqNvi" />
+                    </node>
                   </node>
-                  <node concept="1PgB_6" id="3Ts5Ln3L44D" role="2OqNvi" />
+                </node>
+                <node concept="37vLTw" id="484XVyxOXce" role="3clFbw">
+                  <ref role="3cqZAo" to="tase:484XVyxORwB" resolve="deleteCorrectRoots" />
                 </node>
               </node>
             </node>
