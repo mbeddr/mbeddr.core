@@ -44,6 +44,7 @@
     <import index="y7ls" ref="r:09385047-cf06-45e4-811d-16939c044930(com.mbeddr.mpsutil.lantest.rt.checker.semantic_checker)" />
     <import index="i4pg" ref="r:7435ecc8-43fc-42f4-8ca6-36eeb848ff86(com.mbeddr.analyses.lantest.pluginSolution.semantic_checker_generic)" />
     <import index="5mkq" ref="r:8a3eb243-518a-4061-96dc-bcb9025c3611(com.mbeddr.analyses.lantest.pluginSolution.semantic_checker_statemachines)" />
+    <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -61,10 +62,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
-        <child id="1153952416686" name="body" index="2GV8ay" />
-        <child id="1153952429843" name="finallyBody" index="2GVbov" />
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
@@ -274,6 +271,12 @@
           <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
         </node>
       </node>
+      <node concept="37vLTG" id="484XVyxQ5kG" role="3clF46">
+        <property role="TrG5h" value="lc" />
+        <node concept="3Tqbb2" id="484XVyxQ5wn" role="1tU5fm">
+          <ref role="ehGHo" to="gfdq:4XCJ8CcQ6Nj" resolve="LantestConfig" />
+        </node>
+      </node>
       <node concept="3cqZAl" id="5oO2AcZynC0" role="3clF45" />
       <node concept="3Tm1VV" id="5oO2AcZynC1" role="1B3o_S" />
       <node concept="3clFbS" id="5oO2AcZynC2" role="3clF47">
@@ -281,6 +284,9 @@
           <ref role="37wK5l" to="tase:5oO2AcZyoOd" resolve="BugsFinderDriverBase" />
           <node concept="37vLTw" id="5oO2AcZyxL$" role="37wK5m">
             <ref role="3cqZAo" node="5oO2AcZyqEv" resolve="proj" />
+          </node>
+          <node concept="37vLTw" id="484XVyxQ5DE" role="37wK5m">
+            <ref role="3cqZAo" node="484XVyxQ5kG" resolve="lc" />
           </node>
         </node>
         <node concept="3clFbH" id="5oO2AcZyV7l" role="3cqZAp" />
@@ -636,8 +642,8 @@
                 </node>
               </node>
             </node>
-            <node concept="2GUZhq" id="5YxfrO5_Etd" role="3cqZAp">
-              <node concept="3clFbS" id="5YxfrO5_Etf" role="2GV8ay">
+            <node concept="3clFbJ" id="484XVyxP6UG" role="3cqZAp">
+              <node concept="3clFbS" id="484XVyxP6UI" role="3clFbx">
                 <node concept="3clFbF" id="2qXH_3iSru$" role="3cqZAp">
                   <node concept="2OqwBi" id="2qXH_3iSrAo" role="3clFbG">
                     <node concept="37vLTw" id="5oO2AcZzUdl" role="2Oq$k0">
@@ -647,7 +653,9 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbS" id="5YxfrO5_Etg" role="2GVbov" />
+              <node concept="37vLTw" id="484XVyxP72r" role="3clFbw">
+                <ref role="3cqZAo" to="tase:484XVyxORwB" resolve="deleteCorrectRoots" />
+              </node>
             </node>
           </node>
           <node concept="37vLTw" id="2qXH_3iSQXp" role="3clFbw">

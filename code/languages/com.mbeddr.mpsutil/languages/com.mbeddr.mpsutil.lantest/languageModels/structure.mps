@@ -140,6 +140,21 @@
       <property role="IQ2nx" value="1484821462071240625" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="484XVyxOHJP" role="1TKVEl">
+      <property role="IQ2nx" value="4757199478771080181" />
+      <property role="TrG5h" value="checkEditor" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="484XVyxOHK2" role="1TKVEl">
+      <property role="IQ2nx" value="4757199478771080194" />
+      <property role="TrG5h" value="checkGeneratedCode" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="484XVyxOHKv" role="1TKVEl">
+      <property role="IQ2nx" value="4757199478771080223" />
+      <property role="TrG5h" value="deleteCorrectRoots" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="4XCJ8CcQ6V_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
