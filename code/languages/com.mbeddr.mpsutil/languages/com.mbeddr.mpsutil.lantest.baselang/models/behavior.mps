@@ -176,9 +176,6 @@
               <node concept="BsUDl" id="3Ts5Ln3Lr4D" role="37wK5m">
                 <ref role="37wK5l" node="3Ts5Ln3Logj" resolve="originalModel" />
               </node>
-              <node concept="BsUDl" id="3Ts5Ln3LqV_" role="37wK5m">
-                <ref role="37wK5l" node="3Ts5Ln3LpBU" resolve="modelWithBuggyRoots" />
-              </node>
               <node concept="1PxgMI" id="484XVyxQ3U9" role="37wK5m">
                 <ref role="1m5ApE" to="gfdq:4XCJ8CcQ6Nj" resolve="LantestConfig" />
                 <node concept="2OqwBi" id="484XVyxQ3e5" role="1m5AlR">
