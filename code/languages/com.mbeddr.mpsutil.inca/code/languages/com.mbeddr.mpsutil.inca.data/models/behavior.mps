@@ -16,7 +16,7 @@
     <import index="zt8v" ref="r:ab008189-f07c-44e4-9434-629f972e973d(com.mbeddr.mpsutil.inca.core.util.plugin)" />
     <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="ebqt" ref="r:17207093-9cf4-4f01-9c48-e6e0146d6087(com.mbeddr.mpsutil.inca.fun.structure)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="coho" ref="r:ad5b8223-9439-4270-8687-d790b5c09c3f(com.mbeddr.mpsutil.inca.fun.behavior)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -375,6 +375,21 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="3ptfW4z_ZxV" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="isMonotonicityAware" />
+      <ref role="13i0hy" to="gcg1:3ptfW4z_Zv0" resolve="isMonotonicityAware" />
+      <node concept="3Tm1VV" id="3ptfW4z_ZxW" role="1B3o_S" />
+      <node concept="3clFbS" id="3ptfW4z_Zy1" role="3clF47">
+        <node concept="3cpWs6" id="3ptfW4z_ZWn" role="3cqZAp">
+          <node concept="3clFbT" id="3ptfW4zA0eR" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3ptfW4z_Zy2" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="7xdfKsWdMS2">
