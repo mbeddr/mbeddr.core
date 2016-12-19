@@ -29,6 +29,7 @@
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="tase" ref="r:636418bd-de3f-4994-9ed6-575fd575a6a8(com.mbeddr.mpsutil.lantest.rt.checker.code_generator)" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -131,7 +132,12 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -364,6 +370,58 @@
               </node>
             </node>
             <node concept="liA8E" id="52eR6w5QnHQ" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1EeUs_TukEf" role="13h7CS">
+      <property role="TrG5h" value="modelWithBuggyRootsAfterChecking" />
+      <node concept="3Tm1VV" id="1EeUs_TukEg" role="1B3o_S" />
+      <node concept="3uibUv" id="1EeUs_TukEh" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+      </node>
+      <node concept="3clFbS" id="1EeUs_TukEi" role="3clF47">
+        <node concept="3cpWs8" id="1EeUs_TukEj" role="3cqZAp">
+          <node concept="3cpWsn" id="1EeUs_TukEk" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="1EeUs_TukEl" role="1tU5fm">
+              <ref role="3uigEE" to="w1kc:~SModelRepository" resolve="SModelRepository" />
+            </node>
+            <node concept="2YIFZM" id="1EeUs_TukEm" role="33vP2m">
+              <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance():jetbrains.mps.smodel.SModelRepository" resolve="getInstance" />
+              <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1EeUs_TukEn" role="3cqZAp">
+          <node concept="2OqwBi" id="1EeUs_TukEo" role="3clFbG">
+            <node concept="2OqwBi" id="1EeUs_TukEp" role="2Oq$k0">
+              <node concept="2OqwBi" id="1EeUs_TukEq" role="2Oq$k0">
+                <node concept="37vLTw" id="1EeUs_TukEr" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1EeUs_TukEk" resolve="repo" />
+                </node>
+                <node concept="liA8E" id="1EeUs_TukEs" role="2OqNvi">
+                  <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptorsByModelName(java.lang.String):java.util.List" resolve="getModelDescriptorsByModelName" />
+                  <node concept="2OqwBi" id="1EeUs_TukEt" role="37wK5m">
+                    <node concept="2OqwBi" id="1EeUs_TukEu" role="2Oq$k0">
+                      <node concept="13iPFW" id="1EeUs_TukEv" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1EeUs_Tup7J" role="2OqNvi">
+                        <ref role="3Tt5mk" to="gfdq:1EeUs_TucP_" resolve="modelWithBuggyRootsAfterChecking" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="1EeUs_Tupm2" role="2OqNvi">
+                      <ref role="37wK5l" to="tpeu:7K4mn_BeEzv" resolve="getFQName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="1EeUs_TukEy" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.iterator():java.util.Iterator" resolve="iterator" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1EeUs_TukEz" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
             </node>
           </node>
@@ -818,6 +876,52 @@
     </node>
     <node concept="13hLZK" id="3WMUl3DK1i8" role="13h7CW">
       <node concept="3clFbS" id="3WMUl3DK1i9" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3S9K2OvqeXP">
+    <property role="3GE5qa" value="concept_chooser" />
+    <ref role="13h7C2" to="gfdq:3S9K2OvqeWn" resolve="FirstConceptFixedThenRandomChooser" />
+    <node concept="13hLZK" id="3S9K2OvqeXQ" role="13h7CW">
+      <node concept="3clFbS" id="3S9K2OvqeXR" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3S9K2OvqeY0" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="createConceptChooser" />
+      <ref role="13i0hy" node="30nlpkLbzJC" resolve="createConceptChooser" />
+      <node concept="3Tm1VV" id="3S9K2OvqeY1" role="1B3o_S" />
+      <node concept="3clFbS" id="3S9K2OvqeY6" role="3clF47">
+        <node concept="3clFbF" id="3S9K2OvqeYW" role="3cqZAp">
+          <node concept="2ShNRf" id="3S9K2OvqeYQ" role="3clFbG">
+            <node concept="1pGfFk" id="3S9K2Ovqgws" role="2ShVmc">
+              <ref role="37wK5l" to="oy5q:3S9K2OvpxTZ" resolve="FirstConceptGivenThenRandomConceptChooser" />
+              <node concept="1PxgMI" id="3S9K2OvqhY5" role="37wK5m">
+                <ref role="1m5ApE" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+                <node concept="2OqwBi" id="3S9K2Ovqhn3" role="1m5AlR">
+                  <node concept="2OqwBi" id="3S9K2OvqgGZ" role="2Oq$k0">
+                    <node concept="13iPFW" id="3S9K2Ovqgy2" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="3S9K2OvqgRB" role="2OqNvi">
+                      <ref role="3Tt5mk" to="gfdq:3S9K2OvqeWr" resolve="first" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="3S9K2OvqhzV" role="2OqNvi">
+                    <ref role="3Tt5mk" to="gfdq:7K2NL56H6Rl" resolve="conceptDeclaration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3S9K2OvqeY7" role="3clF46">
+        <property role="TrG5h" value="cfg" />
+        <node concept="3Tqbb2" id="3S9K2OvqeY8" role="1tU5fm">
+          <ref role="ehGHo" to="gfdq:4XCJ8CcQ6Nj" resolve="LantestConfig" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="3S9K2OvqeY9" role="3clF45">
+        <ref role="3uigEE" to="oy5q:7sjDQ2_p0fp" resolve="IConceptChooser" />
+      </node>
     </node>
   </node>
 </model>

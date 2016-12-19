@@ -144,6 +144,7 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG" />
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
@@ -179,13 +180,6 @@
       <property role="3TUv4t" value="false" />
       <node concept="H_c77" id="3Ts5Ln3KQI2" role="1tU5fm" />
     </node>
-    <node concept="312cEg" id="3Ts5Ln3KRUh" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="modelWithBuggyRoots" />
-      <property role="3TUv4t" value="false" />
-      <node concept="H_c77" id="3Ts5Ln3KRyc" role="1tU5fm" />
-    </node>
     <node concept="2tJIrI" id="3Ts5Ln3KQzi" role="jymVt" />
     <node concept="3clFbW" id="3Ts5Ln3KObL" role="jymVt">
       <node concept="3cqZAl" id="3Ts5Ln3KObN" role="3clF45" />
@@ -213,19 +207,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3Ts5Ln3KT6X" role="3cqZAp">
-          <node concept="37vLTI" id="3Ts5Ln3KTS1" role="3clFbG">
-            <node concept="37vLTw" id="3Ts5Ln3KU43" role="37vLTx">
-              <ref role="3cqZAo" node="3Ts5Ln3KQnv" resolve="modelWithBuggyRoots" />
-            </node>
-            <node concept="2OqwBi" id="3Ts5Ln3KTg0" role="37vLTJ">
-              <node concept="Xjq3P" id="3Ts5Ln3KT6V" role="2Oq$k0" />
-              <node concept="2OwXpG" id="3Ts5Ln3KTxn" role="2OqNvi">
-                <ref role="2Oxat5" node="3Ts5Ln3KRUh" resolve="modelWithBuggyRoots" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="37vLTG" id="5oO2AcZyqEv" role="3clF46">
         <property role="TrG5h" value="proj" />
@@ -236,10 +217,6 @@
       <node concept="37vLTG" id="3Ts5Ln3KOm9" role="3clF46">
         <property role="TrG5h" value="originalModel" />
         <node concept="H_c77" id="3Ts5Ln3KOm8" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="3Ts5Ln3KQnv" role="3clF46">
-        <property role="TrG5h" value="modelWithBuggyRoots" />
-        <node concept="H_c77" id="3Ts5Ln3KQvx" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="484XVyxQ41_" role="3clF46">
         <property role="TrG5h" value="lc" />
@@ -381,12 +358,15 @@
           <node concept="3clFbS" id="3Ts5Ln3L2__" role="3clFbx">
             <node concept="3clFbF" id="3Ts5Ln3L2NV" role="3cqZAp">
               <node concept="2OqwBi" id="3Ts5Ln3L32R" role="3clFbG">
-                <node concept="37vLTw" id="3Ts5Ln3L2NU" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3Ts5Ln3KRUh" resolve="modelWithBuggyRoots" />
+                <node concept="37vLTw" id="1EeUs_Tu_43" role="2Oq$k0">
+                  <ref role="3cqZAo" to="tase:1EeUs_TuvUG" resolve="modelWithBuggyRoots" />
                 </node>
                 <node concept="3BYIHo" id="3Ts5Ln3L3ib" role="2OqNvi">
-                  <node concept="37vLTw" id="3Ts5Ln3L3nq" role="3BYIHq">
-                    <ref role="3cqZAo" node="3Ts5Ln3KLSO" resolve="currentRootNode" />
+                  <node concept="2OqwBi" id="1EeUs_Ty2RB" role="3BYIHq">
+                    <node concept="37vLTw" id="3Ts5Ln3L3nq" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3Ts5Ln3KLSO" resolve="currentRootNode" />
+                    </node>
+                    <node concept="1$rogu" id="1EeUs_Ty36I" role="2OqNvi" />
                   </node>
                 </node>
               </node>

@@ -116,6 +116,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -200,6 +201,10 @@
       </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
+        <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -660,6 +665,25 @@
           </node>
           <node concept="37vLTw" id="2qXH_3iSQXp" role="3clFbw">
             <ref role="3cqZAo" node="5oO2AcZxYQT" resolve="modelIsValid" />
+          </node>
+          <node concept="9aQIb" id="1EeUs_TuC1x" role="9aQIa">
+            <node concept="3clFbS" id="1EeUs_TuC1y" role="9aQI4">
+              <node concept="3clFbF" id="1EeUs_TuCm4" role="3cqZAp">
+                <node concept="2OqwBi" id="1EeUs_TuCBE" role="3clFbG">
+                  <node concept="37vLTw" id="1EeUs_TuCm3" role="2Oq$k0">
+                    <ref role="3cqZAo" to="tase:1EeUs_TuvUG" resolve="modelWithBuggyRoots" />
+                  </node>
+                  <node concept="3BYIHo" id="1EeUs_TuCV7" role="2OqNvi">
+                    <node concept="2OqwBi" id="1EeUs_Ty02F" role="3BYIHq">
+                      <node concept="37vLTw" id="1EeUs_TuD3S" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5oO2AcZzqrV" resolve="im" />
+                      </node>
+                      <node concept="1$rogu" id="1EeUs_Ty0Ed" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

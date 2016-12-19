@@ -33,6 +33,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" implicit="true" />
+    <import index="uu96" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:170ef591-83b8-43a2-8998-a090f5a13f09(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -266,6 +267,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
@@ -1619,6 +1621,18 @@
       <node concept="3Tmbuc" id="484XVyxORwE" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="484XVyxORd3" role="jymVt" />
+    <node concept="312cEg" id="1EeUs_TuvUG" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="modelWithBuggyRoots" />
+      <property role="3TUv4t" value="false" />
+      <node concept="H_c77" id="1EeUs_TuxFj" role="1tU5fm" />
+      <node concept="NWlO9" id="1EeUs_TuvUI" role="lGtFl">
+        <property role="NWlVz" value="Model where buggy roots are saved." />
+      </node>
+      <node concept="3Tmbuc" id="1EeUs_TuvUJ" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="1EeUs_TuvbL" role="jymVt" />
     <node concept="3clFbW" id="5oO2AcZyoOd" role="jymVt">
       <node concept="3cqZAl" id="5oO2AcZyoOf" role="3clF45" />
       <node concept="3Tm1VV" id="5oO2AcZyoOg" role="1B3o_S" />
@@ -1681,6 +1695,21 @@
                   </node>
                   <node concept="37vLTw" id="484XVyxORZz" role="37vLTJ">
                     <ref role="3cqZAo" node="484XVyxORwB" resolve="deleteCorrectRoots" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="1EeUs_TuxM6" role="3cqZAp">
+                <node concept="37vLTI" id="1EeUs_TuxY1" role="3clFbG">
+                  <node concept="2OqwBi" id="1EeUs_Tuyaf" role="37vLTx">
+                    <node concept="37vLTw" id="1EeUs_Tuy0$" role="2Oq$k0">
+                      <ref role="3cqZAo" node="484XVyxOEfa" resolve="lc" />
+                    </node>
+                    <node concept="2qgKlT" id="1EeUs_Tuyke" role="2OqNvi">
+                      <ref role="37wK5l" to="uu96:1EeUs_TukEf" resolve="modelWithBuggyRootsAfterChecking" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="1EeUs_TuxM4" role="37vLTJ">
+                    <ref role="3cqZAo" node="1EeUs_TuvUG" resolve="modelWithBuggyRoots" />
                   </node>
                 </node>
               </node>
@@ -2269,12 +2298,17 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbC" id="wzWurgzcQ9" role="3uHU7B">
+            <node concept="3clFbC" id="1EeUs_TxU2u" role="3uHU7B">
               <node concept="37vLTw" id="wzWurgzcaM" role="3uHU7B">
                 <ref role="3cqZAo" node="5oO2AcYig6e" resolve="crtIndex" />
               </node>
-              <node concept="37vLTw" id="wzWurgzcSG" role="3uHU7w">
-                <ref role="3cqZAo" node="5oO2AcYig68" resolve="rootNodesSize" />
+              <node concept="3cpWsd" id="1EeUs_TxTR6" role="3uHU7w">
+                <node concept="3cmrfG" id="1EeUs_TxTS3" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="37vLTw" id="wzWurgzcSG" role="3uHU7B">
+                  <ref role="3cqZAo" node="5oO2AcYig68" resolve="rootNodesSize" />
+                </node>
               </node>
             </node>
           </node>

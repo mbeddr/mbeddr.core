@@ -361,6 +361,19 @@
             </node>
             <node concept="l2Vlx" id="484XVyxOQ56" role="2iSdaV" />
           </node>
+          <node concept="3F0ifn" id="1EeUs_TucRi" role="3EZMnx" />
+          <node concept="3EZMnI" id="1EeUs_TucQn" role="3EZMnx">
+            <node concept="VPM3Z" id="1EeUs_TucQo" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="1EeUs_TucQp" role="3EZMnx">
+              <property role="3F0ifm" value="model with buggy roots:" />
+            </node>
+            <node concept="3F1sOY" id="1EeUs_TucT8" role="3EZMnx">
+              <ref role="1NtTu8" to="gfdq:1EeUs_TucP_" resolve="modelWithBuggyRootsAfterChecking" />
+            </node>
+            <node concept="l2Vlx" id="1EeUs_TucQr" role="2iSdaV" />
+          </node>
         </node>
         <node concept="l2Vlx" id="484XVyxOHMd" role="2iSdaV" />
       </node>
@@ -592,6 +605,22 @@
       </node>
       <node concept="2SsqMj" id="tJrHRTVPK6" role="3EZMnx" />
       <node concept="2iRkQZ" id="tJrHRTVPJQ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3S9K2OvqeWE">
+    <property role="3GE5qa" value="concept_chooser" />
+    <ref role="1XX52x" to="gfdq:3S9K2OvqeWn" resolve="FirstConceptFixedThenRandomChooser" />
+    <node concept="3EZMnI" id="3S9K2OvqeWS" role="2wV5jI">
+      <node concept="3F0ifn" id="3S9K2OvqeX8" role="3EZMnx">
+        <property role="3F0ifm" value="first concept:" />
+      </node>
+      <node concept="3F1sOY" id="3S9K2OvqeXn" role="3EZMnx">
+        <ref role="1NtTu8" to="gfdq:3S9K2OvqeWr" resolve="first" />
+      </node>
+      <node concept="3F0ifn" id="3S9K2OvqeXE" role="3EZMnx">
+        <property role="3F0ifm" value="then random choice" />
+      </node>
+      <node concept="l2Vlx" id="3S9K2OvqeWV" role="2iSdaV" />
     </node>
   </node>
 </model>

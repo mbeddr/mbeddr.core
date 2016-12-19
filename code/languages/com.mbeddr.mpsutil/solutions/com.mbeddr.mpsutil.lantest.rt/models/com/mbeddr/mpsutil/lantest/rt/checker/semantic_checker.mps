@@ -9,6 +9,7 @@
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -38,6 +39,9 @@
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
@@ -160,6 +164,7 @@
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
@@ -323,6 +328,19 @@
         <node concept="3clFbH" id="5oO2AcZxG0E" role="3cqZAp" />
         <node concept="3clFbJ" id="5oO2AcZxG0F" role="3cqZAp">
           <node concept="3clFbS" id="5oO2AcZxG0G" role="3clFbx">
+            <node concept="3clFbF" id="2mgCt7fjaA_" role="3cqZAp">
+              <node concept="2YIFZM" id="2mgCt7fjaN4" role="3clFbG">
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showConfirmDialog(java.awt.Component,java.lang.Object):int" resolve="showConfirmDialog" />
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <node concept="10Nm6u" id="2mgCt7fjaU7" role="37wK5m" />
+                <node concept="2OqwBi" id="2mgCt7fjbQE" role="37wK5m">
+                  <node concept="37vLTw" id="2mgCt7fjbcJ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5oO2AcZxG0m" resolve="errorMessages" />
+                  </node>
+                  <node concept="1uHKPH" id="2mgCt7fjd8R" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
             <node concept="2Gpval" id="5oO2AcZxG0H" role="3cqZAp">
               <node concept="2GrKxI" id="5oO2AcZxG0I" role="2Gsz3X">
                 <property role="TrG5h" value="em" />
