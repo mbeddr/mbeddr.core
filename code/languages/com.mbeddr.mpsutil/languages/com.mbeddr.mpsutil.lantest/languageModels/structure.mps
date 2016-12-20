@@ -193,6 +193,7 @@
   <node concept="PlHQZ" id="33cGTVo609o">
     <property role="TrG5h" value="ILanguageSpecificConfig" />
     <property role="EcuMT" value="3516382903881171544" />
+    <property role="3GE5qa" value="language_specific_config" />
   </node>
   <node concept="1TIwiD" id="5aWlhTu2ZzL">
     <property role="TrG5h" value="LanguageRegexReference" />

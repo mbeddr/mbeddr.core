@@ -20,6 +20,7 @@
     <import index="inmn" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.matchers.tuple(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="h57a" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.api(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="h6k5" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.matchers.psystem.basicenumerables(com.mbeddr.mpsutil.inca.core.runtime/)" />
+    <import index="4azy" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.matchers.psystem.queries(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="gcg1" ref="r:d6f14cc5-a2a7-4aaf-8f86-e35059edbf3b(com.mbeddr.mpsutil.inca.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -175,6 +176,9 @@
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
+      </concept>
+      <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
+        <child id="1177093586806" name="templateNode" index="gfFT$" />
       </concept>
       <concept id="1112730859144" name="jetbrains.mps.lang.generator.structure.TemplateSwitch" flags="ig" index="jVnub">
         <child id="1167340453568" name="reductionMappingRule" index="3aUrZf" />
@@ -3656,6 +3660,87 @@
       <ref role="2rTdP9" to="hqsm:3VwoHXNAdmh" resolve="IPattern" />
       <ref role="2rZz_L" to="tpee:fz12cDA" resolve="ClassConcept" />
     </node>
+  </node>
+  <node concept="jVnub" id="3ptfW4zoj_i">
+    <property role="3GE5qa" value="templates" />
+    <property role="TrG5h" value="switch_ParameterInitializer" />
+    <node concept="3aamgX" id="7eePqYuKvif" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hqsm:4IZiQsKumaj" resolve="IParameter" />
+      <node concept="30G5F_" id="7eePqYuKxFx" role="30HLyM">
+        <node concept="3clFbS" id="7eePqYuKxFy" role="2VODD2">
+          <node concept="3cpWs6" id="7eePqYuKyBM" role="3cqZAp">
+            <node concept="3fqX7Q" id="7eePqYuK$2y" role="3cqZAk">
+              <node concept="2OqwBi" id="7eePqYuK$2$" role="3fr31v">
+                <node concept="2OqwBi" id="7eePqYuK$2_" role="2Oq$k0">
+                  <node concept="30H73N" id="7eePqYuK$2A" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7eePqYuK$2B" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hqsm:3VwoHXNAiyY" resolve="type" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="7eePqYuK$2C" role="2OqNvi">
+                  <ref role="37wK5l" to="gcg1:3ptfW4z_Zv0" resolve="isMonotonicityAware" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="7eePqYuKB8b" role="1lVwrX">
+        <node concept="2ShNRf" id="z7YXzAaJ8$" role="gfFT$">
+          <node concept="1pGfFk" id="z7YXzAaK0Q" role="2ShVmc">
+            <ref role="37wK5l" to="4azy:~PParameter.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="PParameter" />
+            <node concept="Xl_RD" id="z7YXzAaMzZ" role="37wK5m">
+              <property role="Xl_RC" value="name" />
+              <node concept="17Uvod" id="z7YXzAaOjx" role="lGtFl">
+                <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                <property role="2qtEX9" value="value" />
+                <node concept="3zFVjK" id="z7YXzAaOjy" role="3zH0cK">
+                  <node concept="3clFbS" id="z7YXzAaOjz" role="2VODD2">
+                    <node concept="3cpWs6" id="z7YXzAaOO1" role="3cqZAp">
+                      <node concept="2OqwBi" id="z7YXzAaP3n" role="3cqZAk">
+                        <node concept="30H73N" id="z7YXzAaOOV" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="z7YXzAaPje" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="z7YXzAaN0I" role="37wK5m">
+              <property role="Xl_RC" value="typeName" />
+              <node concept="17Uvod" id="z7YXzAaSen" role="lGtFl">
+                <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                <property role="2qtEX9" value="value" />
+                <node concept="3zFVjK" id="z7YXzAaSeo" role="3zH0cK">
+                  <node concept="3clFbS" id="z7YXzAaSep" role="2VODD2">
+                    <node concept="3cpWs6" id="z7YXzAaYb_" role="3cqZAp">
+                      <node concept="2OqwBi" id="z7YXzAb02Y" role="3cqZAk">
+                        <node concept="2OqwBi" id="z7YXzAaZ2u" role="2Oq$k0">
+                          <node concept="30H73N" id="z7YXzAaYdo" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="z7YXzAaZlM" role="2OqNvi">
+                            <ref role="3Tt5mk" to="hqsm:3VwoHXNAiyY" resolve="type" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="z7YXzAb0GW" role="2OqNvi">
+                          <ref role="37wK5l" to="gcg1:z7YXzAaTEA" resolve="getFullyQualifiedName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="jVnub" id="3ArLa0D9yRv">
+    <property role="3GE5qa" value="templates" />
+    <property role="TrG5h" value="switch_MonotonicityCheckerInitializer" />
   </node>
 </model>
 
