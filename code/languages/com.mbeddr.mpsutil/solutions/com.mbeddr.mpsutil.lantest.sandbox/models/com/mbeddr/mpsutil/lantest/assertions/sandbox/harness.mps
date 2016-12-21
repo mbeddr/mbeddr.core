@@ -12,7 +12,6 @@
   <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
@@ -50,14 +49,19 @@
       </concept>
       <concept id="5722030627681234131" name="com.mbeddr.mpsutil.lantest.structure.LantestConfig" flags="ng" index="13Gd1p">
         <property id="4281213259092607944" name="minimalDepth" index="20wqWe" />
+        <property id="6274266346664878275" name="pathToLogDirectory" index="2$dOGW" />
         <property id="5722030627681373924" name="maximumNumberOfTries" index="13Gz9I" />
         <property id="5722030627681465498" name="maximalDepth" index="13GOwg" />
         <property id="3642470604912183108" name="cloneOriginalNodeRatio" index="1s6Q3N" />
+        <property id="4757199478771080223" name="deleteCorrectRoots" index="3zPyIB" />
+        <property id="4757199478771080194" name="checkGeneratedCode" index="3zPyIU" />
+        <property id="4757199478771080181" name="checkEditor" index="3zPyLd" />
         <child id="3465332537548484940" name="conceptChooser" index="1emjp" />
         <child id="5961733595647167384" name="scope" index="cGTU6" />
         <child id="2993027727001344840" name="seedModel" index="fhwmk" />
         <child id="5804819309059995405" name="temporaryModel" index="1llUH_" />
         <child id="3642470604913215366" name="modelWhereResultsAreSaved" index="1saM0L" />
+        <child id="1913723943214697829" name="modelWithBuggyRootsAfterChecking" index="1zXyiG" />
         <child id="3262406899569270462" name="seedChooser" index="1$QBHO" />
         <child id="3516382903881173796" name="langSpecificConfig" index="3CPbyU" />
       </concept>
@@ -77,10 +81,14 @@
   </registry>
   <node concept="13Gd1p" id="6fGXG$6dmgU">
     <property role="13GOwg" value="3" />
-    <property role="13Gz9I" value="350" />
+    <property role="13Gz9I" value="100" />
     <property role="TrG5h" value="config" />
     <property role="1s6Q3N" value="2" />
     <property role="20wqWe" value="1" />
+    <property role="3zPyIB" value="true" />
+    <property role="3zPyIU" value="true" />
+    <property role="3zPyLd" value="true" />
+    <property role="2$dOGW" value="d:\temp\lantest_log\" />
     <node concept="BaHAS" id="6fGXG$6dmgV" role="1saM0L">
       <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.assertions.sandbox.res" />
       <property role="BaGAP" value="" />
@@ -94,9 +102,6 @@
       <property role="cHUK8" value="jetbrains\.mps\.baseLanguage.*" />
     </node>
     <node concept="1$QBG2" id="3cUcim$dilZ" role="1$QBHO" />
-    <node concept="fhwn3" id="3Ts5Ln3HLtA" role="fhwmk">
-      <ref role="fhwn$" node="3Ts5Ln3HLtD" resolve="Seed" />
-    </node>
     <node concept="3XUKX$" id="3Ts5Ln3IakA" role="3CPbyU">
       <node concept="BaHAS" id="3Ts5Ln3Mpq4" role="3XAc6P">
         <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.assertions.sandbox.buggy_classes" />
@@ -111,10 +116,16 @@
         <property role="BaGAP" value="" />
       </node>
     </node>
+    <node concept="BaHAS" id="5upaw7gLyQU" role="1zXyiG">
+      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.assertions.sandbox.buggy_classes" />
+      <property role="BaGAP" value="" />
+    </node>
+    <node concept="fhwn3" id="4saLLt23Vzi" role="fhwmk">
+      <ref role="fhwn$" node="3Ts5Ln3HLtD" resolve="Seed" />
+    </node>
   </node>
   <node concept="312cEu" id="3Ts5Ln3HLtD">
     <property role="TrG5h" value="Seed" />
-    <node concept="2tJIrI" id="3Ts5Ln3HLtX" role="jymVt" />
     <node concept="312cEg" id="3Ts5Ln3HLuD" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -122,7 +133,6 @@
       <property role="3TUv4t" value="false" />
       <node concept="10Oyi0" id="3Ts5Ln3HLuo" role="1tU5fm" />
     </node>
-    <node concept="2tJIrI" id="3Ts5Ln3HLub" role="jymVt" />
     <node concept="3Tm1VV" id="3Ts5Ln3HLtE" role="1B3o_S" />
   </node>
 </model>

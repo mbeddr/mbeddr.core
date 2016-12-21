@@ -374,6 +374,18 @@
             </node>
             <node concept="l2Vlx" id="1EeUs_TucQr" role="2iSdaV" />
           </node>
+          <node concept="3EZMnI" id="5siEZZN9u4t" role="3EZMnx">
+            <node concept="VPM3Z" id="5siEZZN9u4v" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="5siEZZN9u4x" role="3EZMnx">
+              <property role="3F0ifm" value="save log in directory:" />
+            </node>
+            <node concept="3F0A7n" id="5siEZZN9u6l" role="3EZMnx">
+              <ref role="1NtTu8" to="gfdq:5siEZZN9u33" resolve="pathToLogDirectory" />
+            </node>
+            <node concept="l2Vlx" id="5siEZZN9u4y" role="2iSdaV" />
+          </node>
         </node>
         <node concept="l2Vlx" id="484XVyxOHMd" role="2iSdaV" />
       </node>
