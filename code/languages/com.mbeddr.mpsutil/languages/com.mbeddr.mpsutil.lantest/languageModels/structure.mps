@@ -115,6 +115,13 @@
       <property role="IQ2ns" value="5804819309059995405" />
       <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
     </node>
+    <node concept="1TJgyj" id="1EeUs_TucP_" role="1TKVEi">
+      <property role="IQ2ns" value="1913723943214697829" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="modelWithBuggyRootsAfterChecking" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+    </node>
     <node concept="1TJgyi" id="4XCJ8CcQCV$" role="1TKVEl">
       <property role="TrG5h" value="maximumNumberOfTries" />
       <property role="IQ2nx" value="5722030627681373924" />
@@ -139,6 +146,26 @@
       <property role="TrG5h" value="forceSavingOfAllModels" />
       <property role="IQ2nx" value="1484821462071240625" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="484XVyxOHJP" role="1TKVEl">
+      <property role="IQ2nx" value="4757199478771080181" />
+      <property role="TrG5h" value="checkEditor" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="484XVyxOHK2" role="1TKVEl">
+      <property role="IQ2nx" value="4757199478771080194" />
+      <property role="TrG5h" value="checkGeneratedCode" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="484XVyxOHKv" role="1TKVEl">
+      <property role="IQ2nx" value="4757199478771080223" />
+      <property role="TrG5h" value="deleteCorrectRoots" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="5siEZZN9u33" role="1TKVEl">
+      <property role="IQ2nx" value="6274266346664878275" />
+      <property role="TrG5h" value="pathToLogDirectory" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="4XCJ8CcQ6V_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -260,6 +287,7 @@
     <property role="TrG5h" value="RandomConceptChooser" />
     <property role="3GE5qa" value="concept_chooser" />
     <property role="EcuMT" value="3465332537548487647" />
+    <property role="34LRSv" value="random concept chooser" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="30nlpkLbzKi" role="PzmwI">
       <ref role="PrY4T" node="30nlpkLbzJw" resolve="IConceptChooser" />
@@ -284,6 +312,23 @@
       <node concept="trNpa" id="tJrHRTVPJD" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3S9K2OvqeWn">
+    <property role="EcuMT" value="4470315405174959895" />
+    <property role="3GE5qa" value="concept_chooser" />
+    <property role="TrG5h" value="FirstConceptFixedThenRandomChooser" />
+    <property role="34LRSv" value="first concept given then random" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3S9K2OvqeWr" role="1TKVEi">
+      <property role="IQ2ns" value="4470315405174959899" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="first" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7K2NL56H6Rb" resolve="AbstractConceptDeclarationRef" />
+    </node>
+    <node concept="PrWs8" id="3S9K2OvqeXM" role="PzmwI">
+      <ref role="PrY4T" node="30nlpkLbzJw" resolve="IConceptChooser" />
     </node>
   </node>
 </model>

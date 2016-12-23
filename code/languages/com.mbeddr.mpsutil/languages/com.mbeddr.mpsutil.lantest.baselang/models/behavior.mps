@@ -19,6 +19,7 @@
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="p4nx" ref="r:ef5b1be0-f35b-4c7e-ae0d-e75267b56c11(com.mbeddr.mpsutil.lantest.baselang.utils)" />
+    <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -94,7 +95,13 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -169,8 +176,12 @@
               <node concept="BsUDl" id="3Ts5Ln3Lr4D" role="37wK5m">
                 <ref role="37wK5l" node="3Ts5Ln3Logj" resolve="originalModel" />
               </node>
-              <node concept="BsUDl" id="3Ts5Ln3LqV_" role="37wK5m">
-                <ref role="37wK5l" node="3Ts5Ln3LpBU" resolve="modelWithBuggyRoots" />
+              <node concept="1PxgMI" id="484XVyxQ3U9" role="37wK5m">
+                <ref role="1m5ApE" to="gfdq:4XCJ8CcQ6Nj" resolve="LantestConfig" />
+                <node concept="2OqwBi" id="484XVyxQ3e5" role="1m5AlR">
+                  <node concept="13iPFW" id="484XVyxQ342" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="484XVyxQ3B8" role="2OqNvi" />
+                </node>
               </node>
             </node>
           </node>

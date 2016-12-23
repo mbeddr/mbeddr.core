@@ -98,7 +98,7 @@
             <node concept="2pJPED" id="7hBkt4z3q1m" role="2pJPEn">
               <ref role="2pJxaS" to="tp25:gzTqbfa" resolve="SNodeType" />
               <node concept="2pIpSj" id="7hBkt4z3q1n" role="2pJxcM">
-                <ref role="2pIpSl" to="tp25:g$ehGDh" />
+                <ref role="2pIpSl" to="tp25:g$ehGDh" resolve="concept" />
                 <node concept="36biLy" id="7hBkt4z3q1o" role="2pJxcZ">
                   <node concept="2OqwBi" id="7hBkt4z3q1p" role="36biLW">
                     <node concept="2OqwBi" id="7hBkt4z3q1q" role="2Oq$k0">
@@ -108,18 +108,18 @@
                         </node>
                         <node concept="2Xjw5R" id="7hBkt4z3r6u" role="2OqNvi">
                           <node concept="1xMEDy" id="7hBkt4z3r6v" role="1xVPHs">
-                            <node concept="chp4Y" id="7hBkt4z3r6w" role="ri$Ld">
-                              <ref role="cht4Q" to="f2dq:488WfJDqS9b" resolve="Foreach" />
+                            <node concept="chp4Y" id="2mgCt7fi6v5" role="ri$Ld">
+                              <ref role="cht4Q" to="f2dq:2mgCt7fi6rc" resolve="INodesIterator" />
                             </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="7hBkt4z3sTP" role="2OqNvi">
-                        <ref role="3Tt5mk" to="f2dq:7hBkt4z1sDR" />
+                      <node concept="3TrEf2" id="2mgCt7fi6E$" role="2OqNvi">
+                        <ref role="3Tt5mk" to="f2dq:7hBkt4z1sDR" resolve="concept" />
                       </node>
                     </node>
                     <node concept="3TrEf2" id="7hBkt4z3sZv" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tp25:h8cht0$" />
+                      <ref role="3Tt5mk" to="tp25:h8cht0$" resolve="conceptDeclaration" />
                     </node>
                   </node>
                 </node>
@@ -152,7 +152,7 @@
                 <ref role="1YBMHb" node="7hBkt4z1Cng" resolve="genVarRef" />
               </node>
               <node concept="3TrEf2" id="7hBkt4z1Cwo" role="2OqNvi">
-                <ref role="3Tt5mk" to="f2dq:7hBkt4z1AjN" />
+                <ref role="3Tt5mk" to="f2dq:7hBkt4z1AjN" resolve="var" />
               </node>
             </node>
           </node>
@@ -187,7 +187,7 @@
                 <ref role="1YBMHb" node="6fGXG$6oq8_" resolve="exists" />
               </node>
               <node concept="3TrEf2" id="6fGXG$6oquE" role="2OqNvi">
-                <ref role="3Tt5mk" to="f2dq:4wlhRElzFsW" />
+                <ref role="3Tt5mk" to="f2dq:4wlhRElzFsW" resolve="msg" />
               </node>
             </node>
           </node>
