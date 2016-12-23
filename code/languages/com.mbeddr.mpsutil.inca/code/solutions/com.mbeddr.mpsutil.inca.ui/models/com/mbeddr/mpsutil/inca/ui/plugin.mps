@@ -64,6 +64,7 @@
     <import index="wduz" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.matchers.backend(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="gg94" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.rete.util(com.mbeddr.mpsutil.inca.core.runtime/)" />
+    <import index="x6p8" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.rete.matcher(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
     <import index="la48" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.api.impl(com.mbeddr.mpsutil.inca.core.runtime/)" implicit="true" />
@@ -2713,7 +2714,11 @@
                         <property role="3clFbU" value="true" />
                       </node>
                     </node>
-                    <node concept="10Nm6u" id="4gXnpRs02RF" role="37wK5m" />
+                    <node concept="2ShNRf" id="6nzlhF84Gnd" role="37wK5m">
+                      <node concept="1pGfFk" id="6nzlhF84WER" role="2ShVmc">
+                        <ref role="37wK5l" to="x6p8:~ReteBackendFactory.&lt;init&gt;()" resolve="ReteBackendFactory" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2752,7 +2757,7 @@
                 </node>
                 <node concept="2YIFZM" id="526VibMIjYs" role="33vP2m">
                   <ref role="1Pybhc" to="h57a:~AdvancedViatraQueryEngine" resolve="AdvancedViatraQueryEngine" />
-                  <ref role="37wK5l" to="h57a:~AdvancedViatraQueryEngine.createUnmanagedEngine(org.eclipse.viatra.query.runtime.api.scope.QueryScope):org.eclipse.viatra.query.runtime.api.AdvancedViatraQueryEngine" resolve="createUnmanagedEngine" />
+                  <ref role="37wK5l" to="h57a:~AdvancedViatraQueryEngine.createUnmanagedEngine(org.eclipse.viatra.query.runtime.api.scope.QueryScope,org.eclipse.viatra.query.runtime.api.ViatraQueryEngineOptions):org.eclipse.viatra.query.runtime.api.AdvancedViatraQueryEngine" resolve="createUnmanagedEngine" />
                   <node concept="2YIFZM" id="526VibMIjYt" role="37wK5m">
                     <ref role="1Pybhc" to="pzen:3KgejumhMXD" resolve="MPSScope" />
                     <ref role="37wK5l" to="pzen:6cJttNupUNl" resolve="from" />
@@ -2764,6 +2769,9 @@
                         <ref role="37wK5l" node="4BWlfm3poEi" resolve="getModel" />
                       </node>
                     </node>
+                  </node>
+                  <node concept="37vLTw" id="6nzlhF84kjM" role="37wK5m">
+                    <ref role="3cqZAo" node="4gXnpRrZmDm" resolve="options" />
                   </node>
                 </node>
               </node>
