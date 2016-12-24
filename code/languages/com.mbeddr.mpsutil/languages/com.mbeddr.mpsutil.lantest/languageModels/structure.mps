@@ -159,7 +159,7 @@
     </node>
     <node concept="1TJgyi" id="484XVyxOHKv" role="1TKVEl">
       <property role="IQ2nx" value="4757199478771080223" />
-      <property role="TrG5h" value="deleteCorrectRoots" />
+      <property role="TrG5h" value="deleteCheckedRoots" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="5siEZZN9u33" role="1TKVEl">

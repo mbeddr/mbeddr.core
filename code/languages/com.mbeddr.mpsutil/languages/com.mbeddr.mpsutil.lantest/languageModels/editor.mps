@@ -354,10 +354,10 @@
               <property role="VOm3f" value="false" />
             </node>
             <node concept="3F0ifn" id="484XVyxOQ54" role="3EZMnx">
-              <property role="3F0ifm" value="delete nodes without problems:" />
+              <property role="3F0ifm" value="delete checked nodes:" />
             </node>
             <node concept="27S6Sx" id="484XVyxQZv4" role="3EZMnx">
-              <ref role="1NtTu8" to="gfdq:484XVyxOHKv" resolve="deleteCorrectRoots" />
+              <ref role="1NtTu8" to="gfdq:484XVyxOHKv" resolve="deleteCheckedRoots" />
             </node>
             <node concept="l2Vlx" id="484XVyxOQ56" role="2iSdaV" />
           </node>

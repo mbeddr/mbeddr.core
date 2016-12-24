@@ -33,6 +33,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" implicit="true" />
     <import index="uu96" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:170ef591-83b8-43a2-8998-a090f5a13f09(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -1616,11 +1617,11 @@
     <node concept="312cEg" id="484XVyxORwB" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="deleteCorrectRoots" />
+      <property role="TrG5h" value="deleteCheckedRoots" />
       <property role="3TUv4t" value="false" />
       <node concept="10P_77" id="484XVyxORwC" role="1tU5fm" />
       <node concept="NWlO9" id="484XVyxORwD" role="lGtFl">
-        <property role="NWlVz" value="Should we delete correct roots?" />
+        <property role="NWlVz" value="Should we delete already checked roots?" />
       </node>
       <node concept="3Tmbuc" id="484XVyxORwE" role="1B3o_S" />
     </node>
@@ -1706,11 +1707,11 @@
                       <ref role="3cqZAo" node="484XVyxOEfa" resolve="lc" />
                     </node>
                     <node concept="3TrcHB" id="484XVyxOSLg" role="2OqNvi">
-                      <ref role="3TsBF5" to="gfdq:484XVyxOHKv" resolve="deleteCorrectRoots" />
+                      <ref role="3TsBF5" to="gfdq:484XVyxOHKv" resolve="deleteCheckedRoots" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="484XVyxORZz" role="37vLTJ">
-                    <ref role="3cqZAo" node="484XVyxORwB" resolve="deleteCorrectRoots" />
+                    <ref role="3cqZAo" node="484XVyxORwB" resolve="deleteCheckedRoots" />
                   </node>
                 </node>
               </node>
