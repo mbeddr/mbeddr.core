@@ -174,7 +174,7 @@
                 <node concept="1pGfFk" id="7rZVxqnvkNz" role="2ShVmc">
                   <ref role="37wK5l" to="25x5:~SimpleDateFormat.&lt;init&gt;(java.lang.String)" resolve="SimpleDateFormat" />
                   <node concept="Xl_RD" id="7rZVxqnvkTm" role="37wK5m">
-                    <property role="Xl_RC" value="yyyy.MM.dd.HH.mm.ss" />
+                    <property role="Xl_RC" value="yyyy_MM_dd_HH_mm_ss" />
                   </node>
                 </node>
               </node>
