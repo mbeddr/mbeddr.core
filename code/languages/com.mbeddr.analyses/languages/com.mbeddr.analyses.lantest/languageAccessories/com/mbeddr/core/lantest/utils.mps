@@ -101,6 +101,7 @@
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -348,6 +349,9 @@
           </node>
         </node>
       </node>
+      <node concept="NWlO9" id="7rZVxqnwp9d" role="lGtFl">
+        <property role="NWlVz" value="Format the index suffix of the saved model." />
+      </node>
     </node>
     <node concept="2tJIrI" id="33cGTVo65vJ" role="jymVt" />
     <node concept="312cEg" id="33cGTVo65vK" role="jymVt">
@@ -445,6 +449,21 @@
               </node>
               <node concept="3TrcHB" id="33cGTVo65wh" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7rZVxqnwhqn" role="3cqZAp">
+          <node concept="37vLTI" id="7rZVxqnwkr5" role="3clFbG">
+            <node concept="37vLTw" id="7rZVxqnwk$r" role="37vLTx">
+              <ref role="3cqZAo" to="v5ts:7rZVxqnuYur" resolve="virtualPackageName" />
+            </node>
+            <node concept="2OqwBi" id="7rZVxqnwig5" role="37vLTJ">
+              <node concept="37vLTw" id="7rZVxqnwhql" role="2Oq$k0">
+                <ref role="3cqZAo" node="33cGTVo65vZ" resolve="imCopy" />
+              </node>
+              <node concept="3TrcHB" id="7rZVxqnwjuH" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
               </node>
             </node>
           </node>
@@ -985,6 +1004,9 @@
     </node>
     <node concept="3uibUv" id="33cGTVo65yw" role="EKbjA">
       <ref role="3uigEE" to="v5ts:33cGTVo4Ssq" resolve="IModelSaver" />
+    </node>
+    <node concept="3uibUv" id="7rZVxqnwgq5" role="1zkMxy">
+      <ref role="3uigEE" to="v5ts:7rZVxqnwei_" resolve="ModelSaverBase" />
     </node>
   </node>
   <node concept="312cEu" id="33cGTVo719K">
