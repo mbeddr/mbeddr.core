@@ -212,6 +212,9 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
@@ -266,7 +269,7 @@
         <property role="NWlVz" value="Reference from the build configuration to the implementation module." />
       </node>
     </node>
-    <node concept="2tJIrI" id="5oO2AcZz1B9" role="jymVt" />
+    <node concept="2tJIrI" id="7rZVxqnuLHa" role="jymVt" />
     <node concept="3clFbW" id="5oO2AcZynBY" role="jymVt">
       <node concept="37vLTG" id="5oO2AcZyqEv" role="3clF46">
         <property role="TrG5h" value="proj" />
@@ -569,17 +572,43 @@
         </node>
         <node concept="3clFbJ" id="2qXH_3iSQRT" role="3cqZAp">
           <node concept="3clFbS" id="2qXH_3iSQRV" role="3clFbx">
+            <node concept="3cpWs8" id="7rZVxqnuvrF" role="3cqZAp">
+              <node concept="3cpWsn" id="7rZVxqnuvrG" role="3cpWs9">
+                <property role="TrG5h" value="imCopy" />
+                <node concept="3Tqbb2" id="7rZVxqnuvrB" role="1tU5fm">
+                  <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                </node>
+                <node concept="2OqwBi" id="7rZVxqnuvrH" role="33vP2m">
+                  <node concept="37vLTw" id="7rZVxqnuvrI" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5oO2AcZzqrV" resolve="im" />
+                  </node>
+                  <node concept="1$rogu" id="7rZVxqnuvrJ" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7rZVxqnuG$N" role="3cqZAp">
+              <node concept="37vLTI" id="7rZVxqnuIVt" role="3clFbG">
+                <node concept="37vLTw" id="7rZVxqnvOn9" role="37vLTx">
+                  <ref role="3cqZAo" to="tase:7rZVxqnuYur" resolve="virtualPackageName" />
+                </node>
+                <node concept="2OqwBi" id="7rZVxqnuGV3" role="37vLTJ">
+                  <node concept="37vLTw" id="7rZVxqnuG$L" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7rZVxqnuvrG" resolve="imCopy" />
+                  </node>
+                  <node concept="3TrcHB" id="7rZVxqnuI57" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="1EeUs_TuCm4" role="3cqZAp">
               <node concept="2OqwBi" id="1EeUs_TuCBE" role="3clFbG">
                 <node concept="37vLTw" id="1EeUs_TuCm3" role="2Oq$k0">
                   <ref role="3cqZAo" to="tase:1EeUs_TuvUG" resolve="modelWithBuggyRoots" />
                 </node>
                 <node concept="3BYIHo" id="1EeUs_TuCV7" role="2OqNvi">
-                  <node concept="2OqwBi" id="1EeUs_Ty02F" role="3BYIHq">
-                    <node concept="37vLTw" id="1EeUs_TuD3S" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5oO2AcZzqrV" resolve="im" />
-                    </node>
-                    <node concept="1$rogu" id="1EeUs_Ty0Ed" role="2OqNvi" />
+                  <node concept="37vLTw" id="7rZVxqnuvrK" role="3BYIHq">
+                    <ref role="3cqZAo" node="7rZVxqnuvrG" resolve="imCopy" />
                   </node>
                 </node>
               </node>
