@@ -777,6 +777,11 @@
               <ref role="3bR37D" to="p6ld:HiHZpX4D1I" resolve="com.mbeddr.core.buildconfig#7717755763392579406" />
             </node>
           </node>
+          <node concept="1SiIV0" id="2wu1bNQpouu" role="3bR37C">
+            <node concept="3bR9La" id="2wu1bNQpout" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7YI57w6K08j" resolve="jetbrains.mps.baseLanguage#1129914002933" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="2tMMEJ6tsMt" role="3bR37C">
           <node concept="1Busua" id="2tMMEJ6tsMu" role="1SiIV1">

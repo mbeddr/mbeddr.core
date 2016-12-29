@@ -583,7 +583,6 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.menus.extras.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.extension.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
@@ -611,7 +610,6 @@
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <library file="${artifacts.mps}/lib/mps-behavior-api.jar" />
       <library file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
@@ -715,13 +713,10 @@
         <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.8.jar" />
-        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
-        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.5.2.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2RC3.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.allScripts">
