@@ -253,9 +253,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2XOHcx" id="65E6xpGUrwD">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
-  </node>
   <node concept="LiM7Y" id="7wwveJiHM$V">
     <property role="TrG5h" value="AddParenthesisToUnaryExpression3" />
     <property role="3GE5qa" value="unary" />
@@ -6189,6 +6186,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="65E6xpGUrwD">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   </node>
 </model>
 

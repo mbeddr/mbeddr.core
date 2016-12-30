@@ -134,9 +134,6 @@
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
   </registry>
-  <node concept="2XOHcx" id="1f0gqNzAccm">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
-  </node>
   <node concept="N3F5e" id="6uZAbUKexSE">
     <property role="TrG5h" value="M1" />
     <node concept="3GEVxB" id="1Nl0v8EPVcj" role="2OODSX">
@@ -451,6 +448,9 @@
         <property role="2c7vTL" value="false" />
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="1f0gqNzAccm">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   </node>
 </model>
 

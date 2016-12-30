@@ -682,9 +682,6 @@
       </node>
     </node>
   </node>
-  <node concept="2XOHcx" id="65E6xpGUrwD">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
-  </node>
   <node concept="1lH9Xt" id="44jZT9pi$lE">
     <property role="TrG5h" value="EvaluatorTests" />
     <node concept="1qefOq" id="44jZT9ph3XE" role="1SKRRt">
@@ -8183,6 +8180,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="65E6xpGUrwD">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   </node>
 </model>
 

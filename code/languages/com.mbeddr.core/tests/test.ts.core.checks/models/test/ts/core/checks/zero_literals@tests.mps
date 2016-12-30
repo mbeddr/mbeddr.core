@@ -78,9 +78,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2XOHcx" id="1ZXA4k7lOqe">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
-  </node>
   <node concept="1lH9Xt" id="1ZXA4k7lOqt">
     <property role="TrG5h" value="LeadingZeroLiteralsTest" />
     <node concept="1qefOq" id="1ZXA4k7lOq$" role="1SKRRt">
@@ -862,5 +859,8 @@
     </node>
   </node>
   <node concept="2v9HqL" id="2QNVH28YqHa" />
+  <node concept="2XOHcx" id="1ZXA4k7lOqe">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
+  </node>
 </model>
 

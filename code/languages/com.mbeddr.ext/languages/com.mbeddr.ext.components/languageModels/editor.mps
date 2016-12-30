@@ -1163,6 +1163,12 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
+      <node concept="1kHk_G" id="36Bkyc4tv9k" role="3EZMnx">
+        <ref role="1NtTu8" to="v7ag:36Bkyc49pe4" resolve="mandatory" />
+      </node>
+      <node concept="1kHk_G" id="2cSPe2KPXEU" role="3EZMnx">
+        <ref role="1NtTu8" to="v7ag:2cSPe2KM0zi" resolve="hidden" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="71UKpntmzYL">
@@ -8035,6 +8041,29 @@
       </node>
     </node>
   </node>
+  <node concept="V5hpn" id="2DU9cW16uiP">
+    <property role="3GE5qa" value="comp.instances" />
+    <property role="TrG5h" value="ComponentStyles" />
+    <node concept="14StLt" id="3kzGBV3tWes" role="V601i">
+      <property role="TrG5h" value="Component" />
+      <node concept="2TzqKc" id="3kzGBV3tWme" role="3F10Kt">
+        <property role="1413C4" value="q" />
+        <node concept="3xMb9N" id="3kzGBV3tWmi" role="3xKXm0">
+          <node concept="3clFbS" id="3kzGBV3tWmj" role="2VODD2">
+            <node concept="3clFbF" id="3kzGBV3tWnw" role="3cqZAp">
+              <node concept="Xl_RD" id="3kzGBV3tWnv" role="3clFbG">
+                <property role="Xl_RC" value="Segoe UI" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="VSNWy" id="3kzGBV3uFuQ" role="3F10Kt">
+        <property role="1lJzqX" value="16" />
+      </node>
+      <node concept="Vb9p2" id="3kzGBV3$6s_" role="3F10Kt" />
+    </node>
+  </node>
   <node concept="Q6S24" id="2mvFNoTuobS">
     <property role="TrG5h" value="wrap_RunnableWithImplementsRef" />
     <ref role="aqKnT" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
@@ -8763,29 +8792,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="V5hpn" id="2DU9cW16uiP">
-    <property role="3GE5qa" value="comp.instances" />
-    <property role="TrG5h" value="ComponentStyles" />
-    <node concept="14StLt" id="3kzGBV3tWes" role="V601i">
-      <property role="TrG5h" value="Component" />
-      <node concept="2TzqKc" id="3kzGBV3tWme" role="3F10Kt">
-        <property role="1413C4" value="q" />
-        <node concept="3xMb9N" id="3kzGBV3tWmi" role="3xKXm0">
-          <node concept="3clFbS" id="3kzGBV3tWmj" role="2VODD2">
-            <node concept="3clFbF" id="3kzGBV3tWnw" role="3cqZAp">
-              <node concept="Xl_RD" id="3kzGBV3tWnv" role="3clFbG">
-                <property role="Xl_RC" value="Segoe UI" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="VSNWy" id="3kzGBV3uFuQ" role="3F10Kt">
-        <property role="1lJzqX" value="16" />
-      </node>
-      <node concept="Vb9p2" id="3kzGBV3$6s_" role="3F10Kt" />
     </node>
   </node>
 </model>

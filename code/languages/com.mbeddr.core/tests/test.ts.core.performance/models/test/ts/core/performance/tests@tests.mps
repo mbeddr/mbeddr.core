@@ -1158,9 +1158,6 @@
       </node>
     </node>
   </node>
-  <node concept="2XOHcx" id="4QsoB8VJX84">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
-  </node>
   <node concept="2v9HqL" id="7OBQOW$b0A3">
     <node concept="wyh$t" id="7OBQOW$b0B_" role="2AWWZH" />
   </node>
@@ -1546,6 +1543,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="4QsoB8VJX84">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   </node>
 </model>
 
