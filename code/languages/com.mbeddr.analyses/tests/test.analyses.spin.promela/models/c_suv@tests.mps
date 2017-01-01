@@ -117,7 +117,7 @@
     </language>
   </registry>
   <node concept="2XOHcx" id="7Rf0$0HBv7U">
-    <property role="2XOHcw" value="${mbeddr.spin.home}/code/languages/com.mbeddr.analyses.spin/" />
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
   </node>
   <node concept="1lH9Xt" id="7Rf0$0HBv8n">
     <property role="TrG5h" value="C_suv_mbeddr_core" />
