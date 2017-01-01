@@ -176,7 +176,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="1f0gqNzAccm">
-    <property role="2XOHcw" value="${mbeddr.spin.home}/code/languages/com.mbeddr.analyses.spin/" />
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
   </node>
   <node concept="1lH9Xt" id="24G9CRyL2ZB">
     <property role="TrG5h" value="IfTest" />
