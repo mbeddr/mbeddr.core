@@ -12,8 +12,8 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="5do0" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b24(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
     <import index="hr5x" ref="r:0f006508-b2f4-4b98-82de-5b32de29d867(com.mbeddr.analyses.spin.promela.rt.testing_utils)" />
-    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" implicit="true" />
-    <import index="hr62" ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.analyses.spin.promela.rt.testing_utils)" implicit="true" />
+    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
+    <import index="hr62" ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.analyses.spin.promela.rt.testing_utils)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -176,7 +176,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="1f0gqNzAccm">
-    <property role="2XOHcw" value="${mbeddr.spin.home}/code/languages/com.mbeddr.analyses.spin/" />
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
   </node>
   <node concept="1lH9Xt" id="24G9CRyL2ZB">
     <property role="TrG5h" value="IfTest" />
@@ -322,6 +322,7 @@
   </node>
   <node concept="1lH9Xt" id="Rd$2EC6oxD">
     <property role="TrG5h" value="MultipleChoiceTest" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="Rd$2EC6oxE" role="1SL9yI">
       <property role="TrG5h" value="smoke" />
       <node concept="3cqZAl" id="Rd$2EC6oxF" role="3clF45" />
