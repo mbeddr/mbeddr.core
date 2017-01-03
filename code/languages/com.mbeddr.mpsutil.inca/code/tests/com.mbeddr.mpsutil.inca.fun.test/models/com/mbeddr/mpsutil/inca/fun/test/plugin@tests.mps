@@ -1805,7 +1805,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="4gUX5LzYvDb">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil.inca" />
   </node>
   <node concept="1lH9Xt" id="6AFedOHG9vL">
     <property role="TrG5h" value="CI_CONFUSED_INHERITANCE" />

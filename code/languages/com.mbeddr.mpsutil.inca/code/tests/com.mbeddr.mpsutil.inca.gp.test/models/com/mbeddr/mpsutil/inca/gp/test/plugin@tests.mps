@@ -554,7 +554,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="4gUX5LzYvDb">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil.inca" />
   </node>
   <node concept="3zyO9k" id="4gUX5LzYJ4Q">
     <property role="TrG5h" value="TestPatterns" />

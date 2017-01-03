@@ -3738,9 +3738,5 @@
       </node>
     </node>
   </node>
-  <node concept="jVnub" id="3ArLa0D9yRv">
-    <property role="3GE5qa" value="templates" />
-    <property role="TrG5h" value="switch_MonotonicityCheckerInitializer" />
-  </node>
 </model>
 
