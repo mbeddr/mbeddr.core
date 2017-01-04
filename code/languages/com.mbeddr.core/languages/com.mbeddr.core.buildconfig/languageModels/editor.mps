@@ -1043,79 +1043,19 @@
         <node concept="lj46D" id="7FzSIra66mQ" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="1iCGBv" id="6e6sfG57MY0" role="3EZMnx">
-          <ref role="1NtTu8" to="51wr:4an21yEJ7nX" resolve="externalLibs" />
-          <node concept="1sVBvm" id="6e6sfG57MY2" role="1sWHZn">
-            <node concept="3F0ifn" id="6e6sfG57Wye" role="2wV5jI">
-              <property role="3F0ifm" value="external libraries:" />
-            </node>
-          </node>
+        <node concept="3F0ifn" id="1z3QSBmt7MF" role="3EZMnx">
+          <property role="3F0ifm" value="external libraries:" />
         </node>
-        <node concept="3EZMnI" id="Qn6HUADRld" role="3EZMnx">
-          <node concept="1iCGBv" id="Qn6HUADRp2" role="3EZMnx">
-            <ref role="1NtTu8" to="51wr:4an21yEJ7nX" resolve="externalLibs" />
-            <node concept="pj6Ft" id="Qn6HUAEq_r" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
-            <node concept="1sVBvm" id="Qn6HUADRp4" role="1sWHZn">
-              <node concept="3F2HdR" id="Qn6HUADRpl" role="2wV5jI">
-                <ref role="1NtTu8" to="51wr:6e6sfG55Eq9" resolve="externalLibPaths" />
-                <node concept="3F0ifn" id="Qn6HUAEbm_" role="2czzBI">
-                  <node concept="VPxyj" id="Qn6HUAEbmC" role="3F10Kt">
-                    <property role="VOm3f" value="true" />
-                  </node>
-                </node>
-                <node concept="2iRkQZ" id="Qn6HUAF8iq" role="2czzBx" />
-                <node concept="lj46D" id="Qn6HUAFdin" role="3F10Kt">
-                  <property role="VOm3f" value="true" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="l2Vlx" id="Qn6HUADRle" role="2iSdaV" />
-          <node concept="pVoyu" id="Qn6HUAEv_z" role="3F10Kt">
+        <node concept="3EZMnI" id="1z3QSBmtY6p" role="3EZMnx">
+          <node concept="lj46D" id="1z3QSBmud8d" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="ljvvj" id="Qn6HUAENC5" role="3F10Kt">
+          <node concept="pj6Ft" id="1z3QSBmud8e" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="pkWqt" id="5qfwQ8N792H" role="pqm2j">
-            <node concept="3clFbS" id="5qfwQ8N792I" role="2VODD2">
-              <node concept="3clFbF" id="5qfwQ8N7g7w" role="3cqZAp">
-                <node concept="2OqwBi" id="7ue4kw5DEFt" role="3clFbG">
-                  <node concept="2OqwBi" id="5qfwQ8N7gDJ" role="2Oq$k0">
-                    <node concept="2OqwBi" id="5qfwQ8N7gc0" role="2Oq$k0">
-                      <node concept="pncrf" id="5qfwQ8N7g7v" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="5qfwQ8N7gr6" role="2OqNvi">
-                        <ref role="3Tt5mk" to="51wr:4an21yEJ7nX" resolve="externalLibs" />
-                      </node>
-                    </node>
-                    <node concept="Bykcj" id="7ue4kw5DEFq" role="2OqNvi">
-                      <node concept="1aIX9F" id="7ue4kw5DEFr" role="1xVPHs">
-                        <node concept="26LbJo" id="7ue4kw5DEFs" role="1aIX9E">
-                          <ref role="26LbJp" to="51wr:6e6sfG55Eq9" resolve="externalLibPaths" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3GX2aA" id="7ue4kw5DEFu" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3EZMnI" id="6e6sfG56trb" role="3EZMnx">
-          <node concept="l2Vlx" id="6e6sfG56trc" role="2iSdaV" />
-          <node concept="1iCGBv" id="6e6sfG573iF" role="3EZMnx">
+          <node concept="l2Vlx" id="1z3QSBmtY6u" role="2iSdaV" />
+          <node concept="3F1sOY" id="1z3QSBmud87" role="3EZMnx">
             <ref role="1NtTu8" to="51wr:4an21yEJ7nX" resolve="externalLibs" />
-            <node concept="1sVBvm" id="6e6sfG573iG" role="1sWHZn">
-              <node concept="3F1sOY" id="6e6sfG57clx" role="2wV5jI">
-                <ref role="1NtTu8" to="51wr:6e6sfG55Eqa" resolve="externalLibLinkables" />
-                <node concept="lj46D" id="6e6sfG57gPL" role="3F10Kt">
-                  <property role="VOm3f" value="true" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="2iRkQZ" id="7FzSIra66n4" role="2iSdaV" />
@@ -2880,9 +2820,41 @@
     <property role="3GE5qa" value="binary" />
     <ref role="1XX52x" to="51wr:6e6sfG55Eq6" resolve="ExternalLibraries" />
     <node concept="3EZMnI" id="6e6sfG57yLZ" role="2wV5jI">
-      <node concept="3F0ifn" id="6e6sfG57yM1" role="3EZMnx">
-        <property role="3F0ifm" value="external libraries:" />
+      <node concept="3EZMnI" id="1z3QSBmtVnS" role="3EZMnx">
+        <node concept="l2Vlx" id="1z3QSBmtVo1" role="2iSdaV" />
+        <node concept="pVoyu" id="1z3QSBmtVo2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="1z3QSBmtVo3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="1z3QSBmtVo4" role="pqm2j">
+          <node concept="3clFbS" id="1z3QSBmtVo5" role="2VODD2">
+            <node concept="3clFbF" id="1z3QSBmtVo6" role="3cqZAp">
+              <node concept="2OqwBi" id="1z3QSBmtVo7" role="3clFbG">
+                <node concept="2OqwBi" id="1z3QSBmtVo9" role="2Oq$k0">
+                  <node concept="pncrf" id="1z3QSBmtVoa" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="1z3QSBmtW1l" role="2OqNvi">
+                    <ref role="3TtcxE" to="51wr:6e6sfG55Eq9" resolve="externalLibPaths" />
+                  </node>
+                </node>
+                <node concept="3GX2aA" id="1z3QSBmtVof" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F2HdR" id="1z3QSBmtVGK" role="3EZMnx">
+          <ref role="1NtTu8" to="51wr:6e6sfG55Eq9" resolve="externalLibPaths" />
+          <node concept="2iRkQZ" id="1z3QSBmtXcH" role="2czzBx" />
+        </node>
       </node>
+      <node concept="3EZMnI" id="1z3QSBmtX0_" role="3EZMnx">
+        <node concept="l2Vlx" id="1z3QSBmtX0A" role="2iSdaV" />
+        <node concept="3F1sOY" id="1z3QSBmtXbl" role="3EZMnx">
+          <ref role="1NtTu8" to="51wr:6e6sfG55Eqa" resolve="externalLibLinkables" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6e6sfG57yM1" role="3EZMnx" />
       <node concept="l2Vlx" id="6e6sfG57yM2" role="2iSdaV" />
     </node>
   </node>
