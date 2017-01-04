@@ -278,19 +278,6 @@
     <property role="EcuMT" value="2671893947946158498" />
     <ref role="1TJDcQ" node="4o9sgv8QoKk" resolve="Binary" />
   </node>
-  <node concept="1TIwiD" id="65XyadYPO6o">
-    <property role="TrG5h" value="CommentedExecutable" />
-    <property role="R4oN_" value="-- don't use this --" />
-    <property role="3GE5qa" value="binary" />
-    <property role="EcuMT" value="7024921229556924824" />
-    <ref role="1TJDcQ" node="4o9sgv8QoKk" resolve="Binary" />
-    <node concept="PrWs8" id="65XyadYPO6p" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
-    </node>
-    <node concept="PrWs8" id="5HxjapwgqNT" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4BxItZJ4BoF">
     <property role="TrG5h" value="Platform" />
     <property role="R5$K7" value="true" />
