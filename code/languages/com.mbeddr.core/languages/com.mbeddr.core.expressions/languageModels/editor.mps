@@ -535,6 +535,12 @@
       <concept id="1181952871644" name="jetbrains.mps.lang.smodel.structure.Concept_GetAllSubConcepts" flags="nn" index="LSoRf">
         <child id="1182506816063" name="smodel" index="1iTxcG" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
+        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -2114,8 +2120,8 @@
           <node concept="3clFbS" id="3Ppi0nTi$6a" role="2VODD2">
             <node concept="3clFbF" id="3Ppi0nTi$6f" role="3cqZAp">
               <node concept="2OqwBi" id="4nKop3QFxz9" role="3clFbG">
-                <node concept="3TUQnm" id="3Ppi0nTi$6g" role="2Oq$k0">
-                  <ref role="3TV0OU" to="mj1l:7FQByU3CrCO" resolve="BinaryExpression" />
+                <node concept="35c_gC" id="3uuB$tyGciH" role="2Oq$k0">
+                  <ref role="35c_gD" to="mj1l:7FQByU3CrCO" resolve="BinaryExpression" />
                 </node>
                 <node concept="LSoRf" id="4nKop3QFz4Z" role="2OqNvi">
                   <node concept="2OqwBi" id="4nKop3QF$MO" role="1iTxcG">
@@ -2164,8 +2170,8 @@
             </node>
           </node>
         </node>
-        <node concept="3THzug" id="3Ppi0nTi$6e" role="1eyP2E">
-          <ref role="3qa414" to="mj1l:7FQByU3CrCO" resolve="BinaryExpression" />
+        <node concept="3bZ5Sz" id="3uuB$tyGcZ4" role="1eyP2E">
+          <ref role="3bZ5Sy" to="mj1l:7FQByU3CrCO" resolve="BinaryExpression" />
         </node>
       </node>
     </node>

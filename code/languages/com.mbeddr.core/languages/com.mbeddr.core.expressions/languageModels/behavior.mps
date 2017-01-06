@@ -41,6 +41,7 @@
     <import index="iq8l" ref="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -409,7 +410,6 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
-      <concept id="1180457458947" name="jetbrains.mps.lang.smodel.structure.Concept_GetAllSuperConcepts" flags="nn" index="3oJPKh" />
       <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
         <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
@@ -20716,7 +20716,12 @@
                       <node concept="13iPFW" id="7x2kTsymGTW" role="2Oq$k0" />
                       <node concept="3NT_Vc" id="7x2kTsymGTX" role="2OqNvi" />
                     </node>
-                    <node concept="3oJPKh" id="7x2kTsymGTY" role="2OqNvi" />
+                    <node concept="2qgKlT" id="3uuB$tyGy90" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcn:2A8AB0rAWpG" resolve="getAllSuperConcepts" />
+                      <node concept="3clFbT" id="3uuB$tyGyNe" role="37wK5m">
+                        <property role="3clFbU" value="false" />
+                      </node>
+                    </node>
                   </node>
                   <node concept="3goQfb" id="7x2kTsymGTZ" role="2OqNvi">
                     <node concept="1bVj0M" id="7x2kTsymGU0" role="23t8la">
