@@ -9,6 +9,7 @@
     <import index="8do3" ref="r:cea04c4b-adba-417e-a192-34c7a8799ac1(com.mbeddr.mpsutil.compare.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -38,10 +39,17 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
@@ -62,6 +70,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -69,7 +78,6 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
-      <concept id="1180457458947" name="jetbrains.mps.lang.smodel.structure.Concept_GetAllSuperConcepts" flags="nn" index="3oJPKh" />
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
@@ -96,7 +104,7 @@
   <node concept="1M2fIO" id="5uUCR4LA9Do">
     <ref role="1M2myG" to="8do3:5uUCR4L$O4d" resolve="PropertyOrReferenceReference" />
     <node concept="1N5Pfh" id="5uUCR4LBl6N" role="1Mr941">
-      <ref role="1N5Vy1" to="8do3:5uUCR4L$O4e" />
+      <ref role="1N5Vy1" to="8do3:5uUCR4L$O4e" resolve="ref" />
       <node concept="1MUpDS" id="5uUCR4LBvMn" role="1N6uqs">
         <node concept="3clFbS" id="5uUCR4LBwVp" role="2VODD2">
           <node concept="3cpWs8" id="5uUCR4LC_qc" role="3cqZAp">
@@ -138,7 +146,7 @@
                     <node concept="3NT_Vc" id="_QVyJyytaI" role="2OqNvi" />
                   </node>
                   <node concept="3Tsc0h" id="_QVyJyytSp" role="2OqNvi">
-                    <ref role="3TtcxE" to="tpce:f_TKVDG" />
+                    <ref role="3TtcxE" to="tpce:f_TKVDG" resolve="propertyDeclaration" />
                   </node>
                 </node>
               </node>
@@ -158,7 +166,7 @@
                     <node concept="3NT_Vc" id="5uUCR4LEEiO" role="2OqNvi" />
                   </node>
                   <node concept="3Tsc0h" id="5uUCR4LELtA" role="2OqNvi">
-                    <ref role="3TtcxE" to="tpce:f_TKVDF" />
+                    <ref role="3TtcxE" to="tpce:f_TKVDF" resolve="linkDeclaration" />
                   </node>
                 </node>
               </node>
@@ -173,7 +181,12 @@
                   </node>
                   <node concept="3NT_Vc" id="5uUCR4LFal_" role="2OqNvi" />
                 </node>
-                <node concept="3oJPKh" id="5uUCR4LFeOy" role="2OqNvi" />
+                <node concept="2qgKlT" id="3cdr0_0CFrH" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcn:2A8AB0rAWpG" resolve="getAllSuperConcepts" />
+                  <node concept="3clFbT" id="3cdr0_0CG0r" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
               </node>
               <node concept="2es0OD" id="5uUCR4LFnK0" role="2OqNvi">
                 <node concept="1bVj0M" id="5uUCR4LFnK2" role="23t8la">
@@ -189,7 +202,7 @@
                               <ref role="3cqZAo" node="5uUCR4LFnK4" resolve="it" />
                             </node>
                             <node concept="3Tsc0h" id="5uUCR4LFExF" role="2OqNvi">
-                              <ref role="3TtcxE" to="tpce:f_TKVDF" />
+                              <ref role="3TtcxE" to="tpce:f_TKVDF" resolve="linkDeclaration" />
                             </node>
                           </node>
                         </node>
@@ -206,7 +219,7 @@
                               <ref role="3cqZAo" node="5uUCR4LFnK4" resolve="it" />
                             </node>
                             <node concept="3Tsc0h" id="5uUCR4LFZOq" role="2OqNvi">
-                              <ref role="3TtcxE" to="tpce:f_TKVDG" />
+                              <ref role="3TtcxE" to="tpce:f_TKVDG" resolve="propertyDeclaration" />
                             </node>
                           </node>
                         </node>
