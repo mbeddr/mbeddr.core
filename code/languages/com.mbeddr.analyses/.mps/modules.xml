@@ -76,6 +76,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cpa.testcode/test.analyses.cpa.testcode.msd" folder="test.cpa" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cpa/test.analyses.cpa.msd" folder="test.cpa" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.spin.promela.testcode/tests.analyses.spin.promela.testcode.msd" folder="test.spin" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analyses.spin.promela.ts/test.analyses.spin.promela.ts.msd" folder="test.spin" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.spin.promela/test.analyses.spin.promela.msd" folder="test.spin" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.stan.ts/test.analyses.stan.ts.msd" folder="test.z3" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var.testcode/test.analyses.var.testcode.msd" folder="test.sat4j" />
