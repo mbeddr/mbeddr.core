@@ -1473,7 +1473,7 @@
   </node>
   <node concept="24kQdi" id="1RC3LaK_s3r">
     <property role="3GE5qa" value="statement" />
-    <ref role="1XX52x" to="ir22:1RC3LaK_s39" resolve="Select" />
+    <ref role="1XX52x" to="ir22:1RC3LaK_s39" resolve="SelectStatement" />
     <node concept="3EZMnI" id="1RC3LaK_s3t" role="2wV5jI">
       <node concept="3F0ifn" id="1RC3LaK_s3$" role="3EZMnx">
         <property role="3F0ifm" value="select" />
@@ -1521,6 +1521,55 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1RC3LaK_s3w" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1RC3LaKEhP0">
+    <property role="3GE5qa" value="statement" />
+    <ref role="1XX52x" to="ir22:1RC3LaKEhOO" resolve="ForStatement" />
+    <node concept="3EZMnI" id="1RC3LaKEhP2" role="2wV5jI">
+      <node concept="3F0ifn" id="1RC3LaKEhP3" role="3EZMnx">
+        <property role="3F0ifm" value="for" />
+      </node>
+      <node concept="3F0ifn" id="1RC3LaKEhP4" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="1RC3LaKEhP5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="1RC3LaKEhP6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1RC3LaKEhP7" role="3EZMnx">
+        <ref role="1NtTu8" to="ir22:1RC3LaKEhOP" resolve="varRef" />
+      </node>
+      <node concept="3F0ifn" id="1RC3LaKEhP8" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="1RC3LaKEhP9" role="3EZMnx">
+        <ref role="1NtTu8" to="ir22:1RC3LaKEhOQ" resolve="lower" />
+      </node>
+      <node concept="3F0ifn" id="1RC3LaKEhPa" role="3EZMnx">
+        <property role="3F0ifm" value=".." />
+        <node concept="11L4FC" id="1RC3LaKEhPb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="1RC3LaKEhPc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1RC3LaKEhPd" role="3EZMnx">
+        <ref role="1NtTu8" to="ir22:1RC3LaKEhOR" resolve="upper" />
+      </node>
+      <node concept="3F0ifn" id="1RC3LaKEhPe" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="1RC3LaKEhPf" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1RC3LaKEhQz" role="3EZMnx">
+        <ref role="1NtTu8" to="ir22:1RC3LaKEhQ7" resolve="body" />
+      </node>
+      <node concept="l2Vlx" id="1RC3LaKEhPi" role="2iSdaV" />
     </node>
   </node>
 </model>
