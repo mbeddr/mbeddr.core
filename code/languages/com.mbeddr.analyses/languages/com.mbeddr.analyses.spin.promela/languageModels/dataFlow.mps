@@ -35,6 +35,10 @@
       </concept>
       <concept id="1206442659665" name="jetbrains.mps.lang.dataFlow.structure.BuilderBlock" flags="in" index="3__wT9" />
       <concept id="1206442747519" name="jetbrains.mps.lang.dataFlow.structure.NodeParameter" flags="nn" index="3__QtB" />
+      <concept id="1206444349662" name="jetbrains.mps.lang.dataFlow.structure.EmitWriteStatement" flags="nn" index="3_FXB6" />
+      <concept id="1206444622344" name="jetbrains.mps.lang.dataFlow.structure.BaseEmitVariableStatement" flags="nn" index="3_H0cg">
+        <child id="1206444629799" name="variable" index="3_H1SZ" />
+      </concept>
       <concept id="1206444910183" name="jetbrains.mps.lang.dataFlow.structure.RelativePosition" flags="ng" index="3_I6tZ">
         <child id="1206444923842" name="relativeTo" index="3_I9Fq" />
       </concept>
@@ -133,6 +137,78 @@
         </node>
         <node concept="axUMO" id="1RC3LaKyuIO" role="3cqZAp">
           <property role="TrG5h" value="end" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="1RC3LaKF9sy">
+    <property role="3GE5qa" value="statement" />
+    <ref role="3_znuS" to="ir22:1RC3LaKEhOO" resolve="ForStatement" />
+    <node concept="3__wT9" id="1RC3LaKF9sz" role="3_A6iZ">
+      <node concept="3clFbS" id="1RC3LaKF9s$" role="2VODD2">
+        <node concept="3_FXB6" id="1RC3LaKFeTN" role="3cqZAp">
+          <node concept="2OqwBi" id="1RC3LaKFfey" role="3_H1SZ">
+            <node concept="3__QtB" id="1RC3LaKFeZU" role="2Oq$k0" />
+            <node concept="3TrEf2" id="1RC3LaKFg2h" role="2OqNvi">
+              <ref role="3Tt5mk" to="ir22:1RC3LaKEhOP" resolve="varRef" />
+            </node>
+          </node>
+        </node>
+        <node concept="3AgYrR" id="1RC3LaKFae3" role="3cqZAp">
+          <node concept="2OqwBi" id="1RC3LaKFawG" role="3Ah4Yx">
+            <node concept="3__QtB" id="1RC3LaKFaia" role="2Oq$k0" />
+            <node concept="3TrEf2" id="1RC3LaKFbkr" role="2OqNvi">
+              <ref role="3Tt5mk" to="ir22:1RC3LaKEhOQ" resolve="lower" />
+            </node>
+          </node>
+        </node>
+        <node concept="3AgYrR" id="1RC3LaKFbtu" role="3cqZAp">
+          <node concept="2OqwBi" id="1RC3LaKFbKW" role="3Ah4Yx">
+            <node concept="3__QtB" id="1RC3LaKFbyq" role="2Oq$k0" />
+            <node concept="3TrEf2" id="1RC3LaKFc$F" role="2OqNvi">
+              <ref role="3Tt5mk" to="ir22:1RC3LaKEhOR" resolve="upper" />
+            </node>
+          </node>
+        </node>
+        <node concept="3AgYrR" id="1RC3LaKFcI0" role="3cqZAp">
+          <node concept="2OqwBi" id="1RC3LaKFd1K" role="3Ah4Yx">
+            <node concept="3__QtB" id="1RC3LaKFcNe" role="2Oq$k0" />
+            <node concept="3TrEf2" id="1RC3LaKFdPv" role="2OqNvi">
+              <ref role="3Tt5mk" to="ir22:1RC3LaKEhQ7" resolve="body" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="1RC3LaKFh6e">
+    <property role="3GE5qa" value="statement" />
+    <ref role="3_znuS" to="ir22:2yXYWA1KSBs" resolve="Assert" />
+    <node concept="3__wT9" id="1RC3LaKFh6f" role="3_A6iZ">
+      <node concept="3clFbS" id="1RC3LaKFh6g" role="2VODD2">
+        <node concept="3AgYrR" id="1RC3LaKFh6z" role="3cqZAp">
+          <node concept="2OqwBi" id="1RC3LaKFhmf" role="3Ah4Yx">
+            <node concept="3__QtB" id="1RC3LaKFh6Y" role="2Oq$k0" />
+            <node concept="3TrEf2" id="1RC3LaKFid0" role="2OqNvi">
+              <ref role="3Tt5mk" to="ir22:2yXYWA1KSX3" resolve="exp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="5p$33BW3EUk">
+    <property role="3GE5qa" value="statement" />
+    <ref role="3_znuS" to="ir22:1RC3LaK_s39" resolve="SelectStatement" />
+    <node concept="3__wT9" id="5p$33BW3EUl" role="3_A6iZ">
+      <node concept="3clFbS" id="5p$33BW3EUm" role="2VODD2">
+        <node concept="3_FXB6" id="5p$33BW3FEb" role="3cqZAp">
+          <node concept="2OqwBi" id="5p$33BW3FTc" role="3_H1SZ">
+            <node concept="3__QtB" id="5p$33BW3FE$" role="2Oq$k0" />
+            <node concept="3TrEf2" id="5p$33BW3Gjk" role="2OqNvi">
+              <ref role="3Tt5mk" to="ir22:1RC3LaK_s3a" resolve="varRef" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

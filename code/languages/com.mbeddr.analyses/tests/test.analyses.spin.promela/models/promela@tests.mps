@@ -506,5 +506,57 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="5p$33BW3gtR">
+    <property role="TrG5h" value="ForTest" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="5p$33BW3gtS" role="1SL9yI">
+      <property role="TrG5h" value="forTest" />
+      <node concept="3cqZAl" id="5p$33BW3gtT" role="3clF45" />
+      <node concept="3clFbS" id="5p$33BW3gtU" role="3clF47">
+        <node concept="3cpWs8" id="5p$33BW3gtV" role="3cqZAp">
+          <node concept="3cpWsn" id="5p$33BW3gtW" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="5p$33BW3gtX" role="1tU5fm">
+              <ref role="3uigEE" to="5do7:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="5p$33BW3gtY" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <node concept="BaHAS" id="5p$33BW3gtZ" role="37wK5m">
+                <property role="BaHAW" value="promela" />
+                <property role="BaGAP" value="" />
+              </node>
+              <node concept="Xl_RD" id="5p$33BW3gu0" role="37wK5m">
+                <property role="Xl_RC" value="for_test" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="5p$33BW3gul" role="3cqZAp">
+          <node concept="Xl_RD" id="5p$33BW3gum" role="3tpDZB">
+            <property role="Xl_RC" value="Assert: sum==11" />
+          </node>
+          <node concept="2OqwBi" id="5p$33BW3gun" role="3tpDZA">
+            <node concept="37vLTw" id="5p$33BW3guo" role="2Oq$k0">
+              <ref role="3cqZAo" node="5p$33BW3gtW" resolve="res" />
+            </node>
+            <node concept="liA8E" id="5p$33BW3gup" role="2OqNvi">
+              <ref role="37wK5l" to="5do7:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="5p$33BW3mco" role="3cqZAp">
+          <node concept="2OqwBi" id="5p$33BW3mLB" role="3vwVQn">
+            <node concept="37vLTw" id="5p$33BW3mpF" role="2Oq$k0">
+              <ref role="3cqZAo" node="5p$33BW3gtW" resolve="res" />
+            </node>
+            <node concept="liA8E" id="5p$33BW3ngG" role="2OqNvi">
+              <ref role="37wK5l" to="5do7:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
