@@ -285,6 +285,7 @@
         <property id="1113006610751" name="value" index="$nhwW" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
         <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
@@ -343,6 +344,7 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -3321,6 +3323,19 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbF" id="3J1hfDaXDED" role="3cqZAp">
+                        <node concept="37vLTI" id="3J1hfDaXH8M" role="3clFbG">
+                          <node concept="10Nm6u" id="3J1hfDaXIhr" role="37vLTx" />
+                          <node concept="2OqwBi" id="3J1hfDaXEti" role="37vLTJ">
+                            <node concept="Xjq3P" id="3J1hfDaXDEC" role="2Oq$k0">
+                              <ref role="1HBi2w" node="2sPLpCfQsmQ" resolve="PlantUMLSVGCanvas" />
+                            </node>
+                            <node concept="2OwXpG" id="3J1hfDaXG_M" role="2OqNvi">
+                              <ref role="2Oxat5" to="4anb:~AbstractJSVGComponent.updateManager" resolve="updateManager" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                     <node concept="2AHcQZ" id="2sPLpCfXG1Z" role="2AJF6D">
                       <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -3345,6 +3360,54 @@
       <node concept="37vLTG" id="2sPLpCfQ$Lw" role="3clF46">
         <property role="TrG5h" value="selectableText" />
         <node concept="10P_77" id="2sPLpCfQ$Ly" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4sLasOSfPFM" role="jymVt" />
+    <node concept="2tJIrI" id="4sLasOSfPKe" role="jymVt" />
+    <node concept="3clFb_" id="4sLasOSfQKm" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="stopProcessing" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="4sLasOSfQKn" role="1B3o_S" />
+      <node concept="3cqZAl" id="4sLasOSfQKp" role="3clF45" />
+      <node concept="3clFbS" id="4sLasOSfQKs" role="3clF47">
+        <node concept="3clFbF" id="4sLasOSfQKv" role="3cqZAp">
+          <node concept="3nyPlj" id="4sLasOSfQKu" role="3clFbG">
+            <ref role="37wK5l" to="4anb:~AbstractJSVGComponent.stopProcessing():void" resolve="stopProcessing" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4sLasOSfYaU" role="3cqZAp">
+          <node concept="3clFbS" id="4sLasOSfYaW" role="3clFbx">
+            <node concept="3clFbF" id="4sLasOSg3GA" role="3cqZAp">
+              <node concept="2OqwBi" id="4sLasOSg4EF" role="3clFbG">
+                <node concept="37vLTw" id="4sLasOSg3G$" role="2Oq$k0">
+                  <ref role="3cqZAo" to="4anb:~AbstractJSVGComponent.updateManager" resolve="updateManager" />
+                </node>
+                <node concept="liA8E" id="4sLasOSg5Br" role="2OqNvi">
+                  <ref role="37wK5l" to="ugom:~UpdateManager.interrupt():void" resolve="interrupt" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4sLasOSgbza" role="3cqZAp">
+              <node concept="37vLTI" id="4sLasOSgdyS" role="3clFbG">
+                <node concept="10Nm6u" id="4sLasOSgerN" role="37vLTx" />
+                <node concept="37vLTw" id="4sLasOSgbz8" role="37vLTJ">
+                  <ref role="3cqZAo" to="4anb:~AbstractJSVGComponent.updateManager" resolve="updateManager" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="4sLasOSg0sD" role="3clFbw">
+            <node concept="10Nm6u" id="4sLasOSg1oo" role="3uHU7w" />
+            <node concept="37vLTw" id="4sLasOSfZVp" role="3uHU7B">
+              <ref role="3cqZAo" to="4anb:~AbstractJSVGComponent.updateManager" resolve="updateManager" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4sLasOSfQKt" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="2sPLpCfQ$ZW" role="jymVt">
@@ -3405,8 +3468,8 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2sPLpCfQ_0o" role="3cqZAp">
-          <node concept="3P9mCS" id="2sPLpCfQ_0p" role="3clFbG">
+        <node concept="3clFbF" id="GnAbAsOzkj" role="3cqZAp">
+          <node concept="1rXfSq" id="GnAbAsOzkh" role="3clFbG">
             <ref role="37wK5l" to="4anb:~AbstractJSVGComponent.stopThenRun(java.lang.Runnable):void" resolve="stopThenRun" />
             <node concept="2ShNRf" id="2sPLpCfQ_0q" role="37wK5m">
               <node concept="YeOm9" id="2sPLpCfQ_0r" role="2ShVmc">
@@ -3556,8 +3619,8 @@
                           <node concept="liA8E" id="2sPLpCfQ_0X" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~Thread.setPriority(int):void" resolve="setPriority" />
                             <node concept="10M0yZ" id="2sPLpCfQ_0Y" role="37wK5m">
-                              <ref role="1PxDUh" to="wyt6:~Thread" resolve="Thread" />
                               <ref role="3cqZAo" to="wyt6:~Thread.MIN_PRIORITY" resolve="MIN_PRIORITY" />
+                              <ref role="1PxDUh" to="wyt6:~Thread" resolve="Thread" />
                             </node>
                           </node>
                         </node>
@@ -3614,8 +3677,8 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="2sPLpCfQ_1j" role="3cqZAp">
-                        <node concept="3P9mCS" id="2sPLpCfQ_1k" role="3clFbG">
+                      <node concept="3clFbF" id="GnAbAsODjA" role="3cqZAp">
+                        <node concept="1rXfSq" id="GnAbAsODj$" role="3clFbG">
                           <ref role="37wK5l" node="2sPLpCfQ_m8" resolve="startDocumentLoader" />
                         </node>
                       </node>
