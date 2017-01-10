@@ -22746,10 +22746,12 @@
                     <property role="TrG5h" value="tokenize" />
                     <node concept="37vLTG" id="3pFNVizOpMO" role="3clF46">
                       <property role="TrG5h" value="textBeforeCaret" />
+                      <property role="3TUv4t" value="true" />
                       <node concept="17QB3L" id="3pFNVizOpMP" role="1tU5fm" />
                     </node>
                     <node concept="37vLTG" id="3pFNVizOpMQ" role="3clF46">
                       <property role="TrG5h" value="textAfterCaret" />
+                      <property role="3TUv4t" value="true" />
                       <node concept="17QB3L" id="3pFNVizOpMR" role="1tU5fm" />
                     </node>
                     <node concept="_YKpA" id="3pFNVizOpMS" role="3clF45">
