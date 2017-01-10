@@ -479,6 +479,9 @@
     <node concept="PrWs8" id="6RCWEZG4Kru" role="PzmwI">
       <ref role="PrY4T" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
     </node>
+    <node concept="PrWs8" id="4ZKqR_eTD3z" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
     <node concept="1TJgyj" id="3TmmsQkDl9d" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="baseComponent" />
