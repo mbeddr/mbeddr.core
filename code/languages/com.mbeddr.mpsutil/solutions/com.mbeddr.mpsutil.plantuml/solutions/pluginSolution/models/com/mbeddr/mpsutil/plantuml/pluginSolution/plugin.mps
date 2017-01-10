@@ -144,6 +144,7 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -2319,39 +2320,51 @@
             <node concept="3cpWsn" id="18ZQ$P81TVg" role="3cpWs9">
               <property role="TrG5h" value="sb" />
               <property role="3TUv4t" value="true" />
-              <node concept="3uibUv" id="18ZQ$P82cl7" role="1tU5fm">
-                <ref role="3uigEE" to="dxuu:~JScrollBar" resolve="JScrollBar" />
-              </node>
               <node concept="3K4zz7" id="18ZQ$P81TVi" role="33vP2m">
-                <node concept="1eOMI4" id="18ZQ$P81TVj" role="3K4Cdx">
-                  <node concept="3clFbC" id="18ZQ$P81TVk" role="1eOMHV">
-                    <node concept="1eOMI4" id="18ZQ$P81TVl" role="3uHU7B">
-                      <node concept="pVHWs" id="18ZQ$P81TVm" role="1eOMHV">
-                        <node concept="2OqwBi" id="18ZQ$P81TVn" role="3uHU7B">
-                          <node concept="3cpWs2" id="18ZQ$P81TVo" role="2Oq$k0">
-                            <ref role="3cqZAo" node="18ZQ$P81TVc" resolve="e" />
+                <node concept="22lmx$" id="5VeFIPLtvDm" role="3K4Cdx">
+                  <node concept="1eOMI4" id="18ZQ$P81TVj" role="3uHU7B">
+                    <node concept="3y3z36" id="2kY6fpk9gfC" role="1eOMHV">
+                      <node concept="1eOMI4" id="18ZQ$P81TVl" role="3uHU7B">
+                        <node concept="pVHWs" id="18ZQ$P81TVm" role="1eOMHV">
+                          <node concept="2OqwBi" id="18ZQ$P81TVn" role="3uHU7B">
+                            <node concept="3cpWs2" id="18ZQ$P81TVo" role="2Oq$k0">
+                              <ref role="3cqZAo" node="18ZQ$P81TVc" resolve="e" />
+                            </node>
+                            <node concept="liA8E" id="18ZQ$P81TVp" role="2OqNvi">
+                              <ref role="37wK5l" to="hyam:~InputEvent.getModifiers():int" resolve="getModifiers" />
+                            </node>
                           </node>
-                          <node concept="liA8E" id="18ZQ$P81TVp" role="2OqNvi">
-                            <ref role="37wK5l" to="hyam:~InputEvent.getModifiers():int" resolve="getModifiers" />
+                          <node concept="10M0yZ" id="18ZQ$P81TVq" role="3uHU7w">
+                            <ref role="1PxDUh" to="hyam:~InputEvent" resolve="InputEvent" />
+                            <ref role="3cqZAo" to="hyam:~InputEvent.SHIFT_MASK" resolve="SHIFT_MASK" />
                           </node>
-                        </node>
-                        <node concept="10M0yZ" id="18ZQ$P81TVq" role="3uHU7w">
-                          <ref role="1PxDUh" to="hyam:~InputEvent" resolve="InputEvent" />
-                          <ref role="3cqZAo" to="hyam:~InputEvent.SHIFT_MASK" resolve="SHIFT_MASK" />
                         </node>
                       </node>
+                      <node concept="3cmrfG" id="18ZQ$P81TVr" role="3uHU7w">
+                        <property role="3cmrfH" value="0" />
+                      </node>
                     </node>
-                    <node concept="3cmrfG" id="18ZQ$P81TVr" role="3uHU7w">
-                      <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3fqX7Q" id="5VeFIPLtuQQ" role="3uHU7w">
+                    <node concept="2OqwBi" id="5VeFIPLtuQS" role="3fr31v">
+                      <node concept="37vLTw" id="5VeFIPLtuQT" role="2Oq$k0">
+                        <ref role="3cqZAo" to="er5d:~JSVGScrollPane.vertical" resolve="vertical" />
+                      </node>
+                      <node concept="liA8E" id="5VeFIPLtuQU" role="2OqNvi">
+                        <ref role="37wK5l" to="z60i:~Component.isVisible():boolean" resolve="isVisible" />
+                      </node>
                     </node>
                   </node>
                 </node>
-                <node concept="2N2G$s" id="18ZQ$P82jTC" role="3K4E3e">
-                  <ref role="3cqZAo" to="er5d:~JSVGScrollPane.vertical" resolve="vertical" />
-                </node>
-                <node concept="2N2G$s" id="18ZQ$P82jTD" role="3K4GZi">
+                <node concept="37vLTw" id="2kY6fpk9qZv" role="3K4E3e">
                   <ref role="3cqZAo" to="er5d:~JSVGScrollPane.horizontal" resolve="horizontal" />
                 </node>
+                <node concept="37vLTw" id="2kY6fpk9s$i" role="3K4GZi">
+                  <ref role="3cqZAo" to="er5d:~JSVGScrollPane.vertical" resolve="vertical" />
+                </node>
+              </node>
+              <node concept="3uibUv" id="18ZQ$P82cl7" role="1tU5fm">
+                <ref role="3uigEE" to="dxuu:~JScrollBar" resolve="JScrollBar" />
               </node>
             </node>
           </node>
