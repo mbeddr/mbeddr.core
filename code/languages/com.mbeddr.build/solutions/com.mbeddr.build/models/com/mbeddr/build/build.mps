@@ -11522,6 +11522,9 @@
           </node>
         </node>
       </node>
+      <node concept="m$_wl" id="5ISf8dZ6Qrp" role="39821P">
+        <ref role="m_rDy" node="3JmJHJb$oSu" resolve="com.mbeddr.analyses.spin" />
+      </node>
       <node concept="m$_wl" id="7eF9rfAnuiz" role="39821P">
         <ref role="m_rDy" node="7eF9rfAnuiA" resolve="com.mbeddr.cc.ple" />
       </node>
