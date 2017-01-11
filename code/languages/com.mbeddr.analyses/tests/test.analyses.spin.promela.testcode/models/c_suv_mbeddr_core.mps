@@ -313,6 +313,32 @@
     </language>
   </registry>
   <node concept="2v9HqL" id="1wu5Hv66n4w">
+    <node concept="1gr5cj" id="Hdy9e32IFu" role="2ePNbc">
+      <property role="iO3LB" value="false" />
+      <property role="TrG5h" value="pan__010_automatic_handling_of_local_var_access" />
+      <node concept="2v9HqM" id="Hdy9e32IH9" role="2eOfOg">
+        <ref role="2v9HqP" node="Hdy9e32zbw" resolve="_010_automatic_handling_of_local_var_access" />
+      </node>
+      <node concept="2v9HqM" id="Hdy9e32IHl" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
+      </node>
+      <node concept="2v9HqM" id="Hdy9e32IHm" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+      </node>
+    </node>
+    <node concept="1gr5cj" id="Hdy9e33ioO" role="2ePNbc">
+      <property role="iO3LB" value="false" />
+      <property role="TrG5h" value="pan__020_automatic_handling_of_global_var_access" />
+      <node concept="2v9HqM" id="Hdy9e33iq$" role="2eOfOg">
+        <ref role="2v9HqP" node="Hdy9e334tI" resolve="_020_automatic_handling_of_global_var_access" />
+      </node>
+      <node concept="2v9HqM" id="Hdy9e33ioQ" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
+      </node>
+      <node concept="2v9HqM" id="Hdy9e33ioR" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+      </node>
+    </node>
     <node concept="1gr5cj" id="1wu5Hv66n4_" role="2ePNbc">
       <property role="iO3LB" value="false" />
       <property role="TrG5h" value="pan_suv1_harness_smoke" />
@@ -796,6 +822,12 @@
     </node>
     <node concept="apm28" id="3tIDuP5t5fo" role="3V$2$K">
       <ref role="apm5G" node="6qQmI_32Gw4" resolve="suv7_harness_external_files" />
+    </node>
+    <node concept="apm28" id="Hdy9e32J6x" role="3V$2$K">
+      <ref role="apm5G" node="Hdy9e32zbw" resolve="_010_automatic_handling_of_local_var_access" />
+    </node>
+    <node concept="apm28" id="Hdy9e33ir1" role="3V$2$K">
+      <ref role="apm5G" node="Hdy9e334tI" resolve="_020_automatic_handling_of_global_var_access" />
     </node>
   </node>
   <node concept="N3F5e" id="HmUOIGD8pr">
@@ -2003,6 +2035,183 @@
         <node concept="1_9egQ" id="Hdy9e32kxG" role="3XIRFZ">
           <node concept="1Nfnfu" id="Hdy9e32kxH" role="1_9egR">
             <ref role="3O_q_h" node="Hdy9e32kwN" resolve="harness_suv4" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1N3YfO" id="Hdy9e32zbw">
+    <property role="TrG5h" value="_010_automatic_handling_of_local_var_access" />
+    <node concept="3GEVxB" id="Hdy9e32zby" role="2OODSX">
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+    </node>
+    <node concept="1N3Vlf" id="Hdy9e32zbz" role="N3F5h">
+      <property role="TrG5h" value="harness_local_vars_handling" />
+      <node concept="19Rifw" id="Hdy9e32zb$" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="Hdy9e32zb_" role="3XIRFX">
+        <node concept="3XIRlf" id="Hdy9e32zbA" role="3XIRFZ">
+          <property role="TrG5h" value="var" />
+          <node concept="1N1mD7" id="Hdy9e32zbB" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3XIRlf" id="Hdy9e32zbC" role="3XIRFZ">
+          <property role="TrG5h" value="incremented" />
+          <node concept="3TlMh2" id="Hdy9e32zbD" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3udDIS" id="Hdy9e32zbE" role="3XIRFZ">
+          <node concept="3TlMh9" id="Hdy9e32zbF" role="3udCB6">
+            <property role="2hmy$m" value="1000" />
+          </node>
+          <node concept="3ZVu4v" id="Hdy9e32zbG" role="3udCBu">
+            <ref role="3ZVs_2" node="Hdy9e32zbA" resolve="var" />
+          </node>
+          <node concept="3TlMh9" id="Hdy9e32zbH" role="3udCBs">
+            <property role="2hmy$m" value="10" />
+          </node>
+        </node>
+        <node concept="37Gg4z" id="Hdy9e32zbI" role="3XIRFZ">
+          <node concept="3XIRFW" id="Hdy9e32zbJ" role="37FYIw">
+            <node concept="1_9egQ" id="Hdy9e32zbK" role="3XIRFZ">
+              <node concept="3pqW6w" id="Hdy9e32zbL" role="1_9egR">
+                <node concept="2BOciq" id="Hdy9e32UX_" role="3TlMhJ">
+                  <node concept="3TlMh9" id="Hdy9e32UXE" role="3TlMhJ">
+                    <property role="2hmy$m" value="1" />
+                  </node>
+                  <node concept="3ZVu4v" id="Hdy9e32USq" role="3TlMhI">
+                    <ref role="3ZVs_2" node="Hdy9e32zbA" resolve="var" />
+                  </node>
+                </node>
+                <node concept="3ZVu4v" id="Hdy9e32_1W" role="3TlMhI">
+                  <ref role="3ZVs_2" node="Hdy9e32zbC" resolve="incremented" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2DvB8l" id="Hdy9e32zbR" role="3XIRFZ">
+          <node concept="25Bbzn" id="Hdy9e32zbS" role="2DvBia">
+            <node concept="3TlMh9" id="Hdy9e32zbT" role="3TlMhJ">
+              <property role="2hmy$m" value="88" />
+            </node>
+            <node concept="3ZVu4v" id="Hdy9e32zbU" role="3TlMhI">
+              <ref role="3ZVs_2" node="Hdy9e32zbC" resolve="incremented" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="Hdy9e32zbV" role="N3F5h">
+      <property role="TrG5h" value="empty_1439279203739_1" />
+    </node>
+    <node concept="1N3Vlj" id="Hdy9e32zbW" role="N3F5h">
+      <property role="TrG5h" value="init" />
+      <node concept="19Rifw" id="Hdy9e32zbX" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="Hdy9e32zbY" role="3XIRFX">
+        <node concept="1_9egQ" id="Hdy9e32zbZ" role="3XIRFZ">
+          <node concept="1Nfnfu" id="Hdy9e32zc0" role="1_9egR">
+            <ref role="3O_q_h" node="Hdy9e32zbz" resolve="harness_local_vars_handling" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1N3YfO" id="Hdy9e334tI">
+    <property role="TrG5h" value="_020_automatic_handling_of_global_var_access" />
+    <node concept="3GEVxB" id="Hdy9e334tJ" role="2OODSX">
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+    </node>
+    <node concept="1S7NMz" id="Hdy9e3376X" role="N3F5h">
+      <property role="TrG5h" value="var" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3TlMh2" id="Hdy9e3376V" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="1S7NMz" id="Hdy9e336C1" role="N3F5h">
+      <property role="TrG5h" value="incremented" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3TlMh2" id="Hdy9e336C2" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="Hdy9e3362h" role="N3F5h">
+      <property role="TrG5h" value="empty_1484165086475_8" />
+    </node>
+    <node concept="1N3Vlf" id="Hdy9e334tK" role="N3F5h">
+      <property role="TrG5h" value="harness_global_vars_handling" />
+      <node concept="19Rifw" id="Hdy9e334tL" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="Hdy9e334tM" role="3XIRFX">
+        <node concept="3udDIS" id="Hdy9e334tR" role="3XIRFZ">
+          <node concept="3TlMh9" id="Hdy9e334tS" role="3udCB6">
+            <property role="2hmy$m" value="100" />
+          </node>
+          <node concept="1S7827" id="Hdy9e337rj" role="3udCBu">
+            <ref role="1S7826" node="Hdy9e3376X" resolve="var" />
+          </node>
+          <node concept="3TlMh9" id="Hdy9e334tU" role="3udCBs">
+            <property role="2hmy$m" value="10" />
+          </node>
+        </node>
+        <node concept="37Gg4z" id="Hdy9e334tV" role="3XIRFZ">
+          <node concept="3XIRFW" id="Hdy9e334tW" role="37FYIw">
+            <node concept="1_9egQ" id="Hdy9e334tX" role="3XIRFZ">
+              <node concept="3pqW6w" id="Hdy9e334tY" role="1_9egR">
+                <node concept="2BOciq" id="Hdy9e334tZ" role="3TlMhJ">
+                  <node concept="3TlMh9" id="Hdy9e334u0" role="3TlMhJ">
+                    <property role="2hmy$m" value="1" />
+                  </node>
+                  <node concept="1S7827" id="Hdy9e337rn" role="3TlMhI">
+                    <ref role="1S7826" node="Hdy9e3376X" resolve="var" />
+                  </node>
+                </node>
+                <node concept="1S7827" id="Hdy9e336OC" role="3TlMhI">
+                  <ref role="1S7826" node="Hdy9e336C1" resolve="incremented" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2DvB8l" id="Hdy9e334u3" role="3XIRFZ">
+          <node concept="25Bbzn" id="Hdy9e334u4" role="2DvBia">
+            <node concept="3TlMh9" id="Hdy9e334u5" role="3TlMhJ">
+              <property role="2hmy$m" value="42" />
+            </node>
+            <node concept="1S7827" id="Hdy9e336OG" role="3TlMhI">
+              <ref role="1S7826" node="Hdy9e336C1" resolve="incremented" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="Hdy9e334u7" role="N3F5h">
+      <property role="TrG5h" value="empty_1439279203739_1" />
+    </node>
+    <node concept="1N3Vlj" id="Hdy9e334u8" role="N3F5h">
+      <property role="TrG5h" value="init" />
+      <node concept="19Rifw" id="Hdy9e334u9" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="Hdy9e334ua" role="3XIRFX">
+        <node concept="1_9egQ" id="Hdy9e334ub" role="3XIRFZ">
+          <node concept="1Nfnfu" id="Hdy9e334uc" role="1_9egR">
+            <ref role="3O_q_h" node="Hdy9e334tK" resolve="harness_global_vars_handling" />
           </node>
         </node>
       </node>

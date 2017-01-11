@@ -201,7 +201,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="3tIDuP5siR9" role="1SL9yI">
-      <property role="TrG5h" value="test2" />
+      <property role="TrG5h" value="test2_pick_nondet" />
       <node concept="3cqZAl" id="3tIDuP5siRa" role="3clF45" />
       <node concept="3clFbS" id="3tIDuP5siRb" role="3clF47">
         <node concept="3cpWs8" id="3tIDuP5sjCK" role="3cqZAp">
@@ -925,6 +925,166 @@
             </node>
             <node concept="liA8E" id="3tIDuP5t7P8" role="2OqNvi">
               <ref role="37wK5l" to="5do7:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="Hdy9e32QbG" role="1SL9yI">
+      <property role="TrG5h" value="test__010_automatic_handling_of_proc_variables_access_in_ccode" />
+      <node concept="3cqZAl" id="Hdy9e32QbH" role="3clF45" />
+      <node concept="3clFbS" id="Hdy9e32QbI" role="3clF47">
+        <node concept="3cpWs8" id="Hdy9e32QbJ" role="3cqZAp">
+          <node concept="3cpWsn" id="Hdy9e32QbK" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="Hdy9e32QbL" role="1tU5fm" />
+            <node concept="BaHAS" id="Hdy9e32QbM" role="33vP2m">
+              <property role="BaHAW" value="c_suv_mbeddr_core" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="Hdy9e32QbN" role="3cqZAp">
+          <node concept="3cpWsn" id="Hdy9e32QbO" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="Hdy9e32QbP" role="1tU5fm">
+              <ref role="3uigEE" to="5do7:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="Hdy9e32QbQ" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+              <node concept="37vLTw" id="Hdy9e32QbR" role="37wK5m">
+                <ref role="3cqZAo" node="Hdy9e32QbK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="Hdy9e32QbS" role="37wK5m">
+                <property role="Xl_RC" value="_010_automatic_handling_of_local_var_access" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="Hdy9e32QbT" role="3cqZAp">
+          <node concept="2OqwBi" id="Hdy9e32QbU" role="3vwVQn">
+            <node concept="2OqwBi" id="Hdy9e32QbV" role="2Oq$k0">
+              <node concept="2OqwBi" id="Hdy9e32QbW" role="2Oq$k0">
+                <node concept="37vLTw" id="Hdy9e32QbX" role="2Oq$k0">
+                  <ref role="3cqZAo" node="Hdy9e32QbO" resolve="res" />
+                </node>
+                <node concept="liA8E" id="Hdy9e32QbY" role="2OqNvi">
+                  <ref role="37wK5l" to="5do7:7XCY$_ranFq" resolve="getRawResult" />
+                </node>
+              </node>
+              <node concept="2OwXpG" id="Hdy9e32QbZ" role="2OqNvi">
+                <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+              </node>
+            </node>
+            <node concept="liA8E" id="Hdy9e32Qc0" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <node concept="Xl_RD" id="Hdy9e32Qc1" role="37wK5m">
+                <property role="Xl_RC" value="assertion violated (incremented!=88)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="Hdy9e32Qc2" role="3cqZAp">
+          <node concept="Xl_RD" id="Hdy9e32Qc3" role="3tpDZB">
+            <property role="Xl_RC" value="Assert: incremented!=88" />
+          </node>
+          <node concept="2OqwBi" id="Hdy9e32Qc4" role="3tpDZA">
+            <node concept="37vLTw" id="Hdy9e32Qc5" role="2Oq$k0">
+              <ref role="3cqZAo" node="Hdy9e32QbO" resolve="res" />
+            </node>
+            <node concept="liA8E" id="Hdy9e32Qc6" role="2OqNvi">
+              <ref role="37wK5l" to="5do7:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="Hdy9e32Qc7" role="3cqZAp">
+          <node concept="2OqwBi" id="Hdy9e32Qc8" role="3vwVQn">
+            <node concept="37vLTw" id="Hdy9e32Qc9" role="2Oq$k0">
+              <ref role="3cqZAo" node="Hdy9e32QbO" resolve="res" />
+            </node>
+            <node concept="liA8E" id="Hdy9e32Qca" role="2OqNvi">
+              <ref role="37wK5l" to="5do7:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="Hdy9e33af$" role="1SL9yI">
+      <property role="TrG5h" value="test__020_automatic_handling_of_global_variables_access_in_ccode" />
+      <node concept="3cqZAl" id="Hdy9e33af_" role="3clF45" />
+      <node concept="3clFbS" id="Hdy9e33afA" role="3clF47">
+        <node concept="3cpWs8" id="Hdy9e33afB" role="3cqZAp">
+          <node concept="3cpWsn" id="Hdy9e33afC" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="Hdy9e33afD" role="1tU5fm" />
+            <node concept="BaHAS" id="Hdy9e33afE" role="33vP2m">
+              <property role="BaHAW" value="c_suv_mbeddr_core" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="Hdy9e33afF" role="3cqZAp">
+          <node concept="3cpWsn" id="Hdy9e33afG" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="Hdy9e33afH" role="1tU5fm">
+              <ref role="3uigEE" to="5do7:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="Hdy9e33afI" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+              <node concept="37vLTw" id="Hdy9e33afJ" role="37wK5m">
+                <ref role="3cqZAo" node="Hdy9e33afC" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="Hdy9e33afK" role="37wK5m">
+                <property role="Xl_RC" value="_020_automatic_handling_of_global_var_access" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="Hdy9e33afL" role="3cqZAp">
+          <node concept="2OqwBi" id="Hdy9e33afM" role="3vwVQn">
+            <node concept="2OqwBi" id="Hdy9e33afN" role="2Oq$k0">
+              <node concept="2OqwBi" id="Hdy9e33afO" role="2Oq$k0">
+                <node concept="37vLTw" id="Hdy9e33afP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="Hdy9e33afG" resolve="res" />
+                </node>
+                <node concept="liA8E" id="Hdy9e33afQ" role="2OqNvi">
+                  <ref role="37wK5l" to="5do7:7XCY$_ranFq" resolve="getRawResult" />
+                </node>
+              </node>
+              <node concept="2OwXpG" id="Hdy9e33afR" role="2OqNvi">
+                <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+              </node>
+            </node>
+            <node concept="liA8E" id="Hdy9e33afS" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <node concept="Xl_RD" id="Hdy9e33afT" role="37wK5m">
+                <property role="Xl_RC" value="assertion violated (incremented!=42)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="Hdy9e33afU" role="3cqZAp">
+          <node concept="Xl_RD" id="Hdy9e33afV" role="3tpDZB">
+            <property role="Xl_RC" value="Assert: incremented!=42" />
+          </node>
+          <node concept="2OqwBi" id="Hdy9e33afW" role="3tpDZA">
+            <node concept="37vLTw" id="Hdy9e33afX" role="2Oq$k0">
+              <ref role="3cqZAo" node="Hdy9e33afG" resolve="res" />
+            </node>
+            <node concept="liA8E" id="Hdy9e33afY" role="2OqNvi">
+              <ref role="37wK5l" to="5do7:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="Hdy9e33afZ" role="3cqZAp">
+          <node concept="2OqwBi" id="Hdy9e33ag0" role="3vwVQn">
+            <node concept="37vLTw" id="Hdy9e33ag1" role="2Oq$k0">
+              <ref role="3cqZAo" node="Hdy9e33afG" resolve="res" />
+            </node>
+            <node concept="liA8E" id="Hdy9e33ag2" role="2OqNvi">
+              <ref role="37wK5l" to="5do7:7XCY$_raaB8" resolve="isFail" />
             </node>
           </node>
         </node>
