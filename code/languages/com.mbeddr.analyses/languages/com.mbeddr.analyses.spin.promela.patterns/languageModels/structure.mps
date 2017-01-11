@@ -70,13 +70,13 @@
     </node>
   </node>
   <node concept="1TIwiD" id="HmUOIGIC$N">
-    <property role="TrG5h" value="Assume" />
-    <property role="34LRSv" value="assume" />
+    <property role="TrG5h" value="WhenStatement" />
+    <property role="34LRSv" value="when" />
     <property role="EcuMT" value="817099092667304243" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="HmUOIGID01" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="assumption" />
+      <property role="20kJfa" value="condition" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="817099092667305985" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
@@ -184,6 +184,19 @@
     </node>
     <node concept="PrWs8" id="5RNtn4ccYXR" role="PzmwI">
       <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="Hdy9e2Zzhw">
+    <property role="EcuMT" value="814457274763195488" />
+    <property role="TrG5h" value="Assume" />
+    <property role="34LRSv" value="assume" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="Hdy9e2Zzhx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cond" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="814457274763195489" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
 </model>
