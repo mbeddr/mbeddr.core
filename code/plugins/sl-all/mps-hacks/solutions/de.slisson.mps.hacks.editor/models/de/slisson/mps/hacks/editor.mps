@@ -33,6 +33,7 @@
     <import index="6lvu" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellMenu(MPS.Editor/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
@@ -1491,6 +1492,39 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2SfkIf$STV" role="3cqZAp">
+          <node concept="2OqwBi" id="2SfkIf$ZsE" role="3clFbG">
+            <node concept="1eOMI4" id="2SfkIf_0QC" role="2Oq$k0">
+              <node concept="10QFUN" id="2SfkIf_0QD" role="1eOMHV">
+                <node concept="2OqwBi" id="2SfkIf_0Q_" role="10QFUP">
+                  <node concept="37vLTw" id="2SfkIf_0QA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6rHj_ILDaol" resolve="dummyContextCell" />
+                  </node>
+                  <node concept="liA8E" id="2SfkIf_0QB" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getCellContext():jetbrains.mps.openapi.editor.cells.EditorCellContext" resolve="getCellContext" />
+                  </node>
+                </node>
+                <node concept="3uibUv" id="2SfkIf_1bA" role="10QFUM">
+                  <ref role="3uigEE" to="g51k:~EditorCellContextImpl" resolve="EditorCellContextImpl" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="2SfkIf_1rr" role="2OqNvi">
+              <ref role="37wK5l" to="g51k:~EditorCellContextImpl.setNodeLocation(jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation):void" resolve="setNodeLocation" />
+              <node concept="2ShNRf" id="2SfkIf_1LU" role="37wK5m">
+                <node concept="1pGfFk" id="2SfkIf_gaY" role="2ShVmc">
+                  <ref role="37wK5l" to="uddc:~SNodeLocation$FromParentAndLink.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="SNodeLocation.FromParentAndLink" />
+                  <node concept="37vLTw" id="2SfkIf_gel" role="37wK5m">
+                    <ref role="3cqZAo" node="6rHj_ILSEwt" resolve="parent" />
+                  </node>
+                  <node concept="37vLTw" id="2SfkIf_gmN" role="37wK5m">
+                    <ref role="3cqZAo" node="6rHj_ILSGf4" resolve="link" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="6rHj_ILTCcN" role="3cqZAp">
           <node concept="1rXfSq" id="6rHj_ILTCcL" role="3clFbG">
             <ref role="37wK5l" node="6rHj_ILTAID" resolve="forChild" />
@@ -1742,7 +1776,6 @@
       </node>
       <node concept="3Tm1VV" id="6rHj_ILSIX0" role="1B3o_S" />
     </node>
-    <node concept="2tJIrI" id="6rHj_ILSB57" role="jymVt" />
     <node concept="3Tm1VV" id="6rHj_ILSB4z" role="1B3o_S" />
   </node>
 </model>
