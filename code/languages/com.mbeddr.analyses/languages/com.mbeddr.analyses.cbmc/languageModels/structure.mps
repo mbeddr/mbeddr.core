@@ -128,7 +128,7 @@
     <property role="EcuMT" value="6973658835837826905" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="3V3CJZuMSlV" role="PzmwI">
-      <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLike" />
+      <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLyike" />
     </node>
     <node concept="1TJgyj" id="637qsduSbtq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -196,7 +196,7 @@
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="7FT_tSP32vv" role="PzmwI">
-      <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLike" />
+      <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLyike" />
     </node>
   </node>
   <node concept="1TIwiD" id="7gaOmgnbMbh">
@@ -234,7 +234,7 @@
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="4bjR9Du9mHr" role="PzmwI">
-      <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLike" />
+      <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLyike" />
     </node>
   </node>
   <node concept="1TIwiD" id="7MOa6vKIydd">
@@ -610,7 +610,7 @@
   </node>
   <node concept="PlHQZ" id="3V3CJZuMScE">
     <property role="3GE5qa" value="statements" />
-    <property role="TrG5h" value="IAssertLike" />
+    <property role="TrG5h" value="IAssertLyike" />
     <property role="EcuMT" value="4522637670648349482" />
   </node>
   <node concept="1TIwiD" id="i5tJSHdtYB">
