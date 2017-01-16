@@ -10636,6 +10636,64 @@
           </node>
         </node>
       </node>
+      <node concept="3LEwk6" id="6efVUW9Id0E" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.analyses.promela" />
+        <property role="3LESm3" value="de90e2e8-f051-4d49-9025-394f94f968b8" />
+        <node concept="398BVA" id="6efVUW9IdIb" role="3LF7KH">
+          <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
+          <node concept="2Ry0Ak" id="6efVUW9IhwY" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="6efVUW9IiAr" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.analyses.promela" />
+              <node concept="2Ry0Ak" id="6efVUW9IjFS" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.analyses.promela.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="6efVUW9IkeA" role="3LEDUa">
+          <ref role="3LEDTV" node="3JmJHJb$FXz" resolve="com.mbeddr.analyses.spin" />
+        </node>
+        <node concept="3LEDTy" id="6efVUW9IkeB" role="3LEDUa">
+          <ref role="3LEDTV" node="3JmJHJb$M36" resolve="com.mbeddr.analyses.spin.promela" />
+        </node>
+        <node concept="3LEDTy" id="6efVUW9IkeC" role="3LEDUa">
+          <ref role="3LEDTV" node="3JmJHJb$PCC" resolve="com.mbeddr.analyses.spin.promela.patterns" />
+        </node>
+        <node concept="3LEDTM" id="6efVUW9IkeD" role="3LEDUa">
+          <ref role="3LEDTN" node="3JmJHJb_61R" resolve="com.mbeddr.analyses.spin.promela.pluginSolution" />
+        </node>
+        <node concept="3LEDTM" id="6efVUW9IkeE" role="3LEDUa">
+          <ref role="3LEDTN" node="3JmJHJb_0E1" resolve="com.mbeddr.analyses.spin.promela.rt" />
+        </node>
+      </node>
+      <node concept="3LEwk6" id="6efVUW9IkLC" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.analyses.promela.c" />
+        <property role="3LESm3" value="537c2fcd-71ef-4c92-a9e5-27af92b5182b" />
+        <node concept="398BVA" id="6efVUW9IkLD" role="3LF7KH">
+          <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
+          <node concept="2Ry0Ak" id="6efVUW9IkLE" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="6efVUW9In8i" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.analyses.promela.c" />
+              <node concept="2Ry0Ak" id="6efVUW9IodJ" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.analyses.promela.c.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="6efVUW9IoKu" role="3LEDUa">
+          <ref role="3LEDTV" node="3JmJHJb$UhK" resolve="com.mbeddr.analyses.spin.c" />
+        </node>
+        <node concept="3LEDTy" id="6efVUW9IoKv" role="3LEDUa">
+          <ref role="3LEDTV" node="3JmJHJb$WUS" resolve="com.mbeddr.analyses.spin.c.patterns" />
+        </node>
+        <node concept="3LEz8M" id="6efVUW9Ipjl" role="3LEz9a">
+          <ref role="3LEz8N" node="6efVUW9Id0E" resolve="com.mbeddr.analyses.promela" />
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAuSOp" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.analyses.sat4j" />
