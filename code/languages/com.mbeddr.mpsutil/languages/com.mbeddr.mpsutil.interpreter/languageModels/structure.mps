@@ -611,7 +611,7 @@
   </node>
   <node concept="PlHQZ" id="5IKJrJHNBNb">
     <property role="EcuMT" value="6606989268198784203" />
-    <property role="TrG5h" value="ICanHaveCoverage" />
+    <property role="TrG5h" value="ICanHaveTestCoverage" />
     <property role="3GE5qa" value="Coverage" />
   </node>
   <node concept="PlHQZ" id="5IKJrJIaLee">

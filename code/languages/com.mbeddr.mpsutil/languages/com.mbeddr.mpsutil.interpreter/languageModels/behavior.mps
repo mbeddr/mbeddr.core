@@ -4217,7 +4217,7 @@
   </node>
   <node concept="13h7C7" id="5IKJrJHNCCf">
     <property role="3GE5qa" value="Coverage" />
-    <ref role="13h7C2" to="3673:5IKJrJHNBNb" resolve="ICanHaveCoverage" />
+    <ref role="13h7C2" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
     <node concept="13i0hz" id="5IKJrJHNCE8" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
