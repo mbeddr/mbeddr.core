@@ -2298,6 +2298,25 @@
         </node>
         <node concept="2EHx9g" id="3pFNVizDwU9" role="2iSdaV" />
       </node>
+      <node concept="3F0ifn" id="4aFy6Rqz57g" role="3EZMnx" />
+      <node concept="3F0ifn" id="4aFy6Rqz50S" role="3EZMnx">
+        <property role="3F0ifm" value="Don't forget to define a property constraint." />
+        <node concept="VechU" id="4aFy6Rqz55A" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+          <node concept="1iSF2X" id="4aFy6Rqz55H" role="VblUZ">
+            <property role="1iTho6" value="0000bb" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4aFy6Rqz56j" role="3EZMnx">
+        <property role="3F0ifm" value="The tokenizer is only invoked, if the entered text is not a valid property value." />
+        <node concept="VechU" id="4aFy6Rqz56k" role="3F10Kt">
+          <property role="Vb096" value="blue" />
+          <node concept="1iSF2X" id="4aFy6Rqz56l" role="VblUZ">
+            <property role="1iTho6" value="0000bb" />
+          </node>
+        </node>
+      </node>
       <node concept="VPM3Z" id="3pFNVizDwUa" role="3F10Kt">
         <property role="VOm3f" value="false" />
       </node>
