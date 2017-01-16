@@ -403,8 +403,8 @@
       </node>
       <node concept="37vLTG" id="1laD9eY9cE6" role="3clF46">
         <property role="TrG5h" value="cellInfo" />
-        <node concept="3uibUv" id="1laD9eY9cE7" role="1tU5fm">
-          <ref role="3uigEE" to="g51k:~CellInfo" resolve="CellInfo" />
+        <node concept="3uibUv" id="6NqS4SPfrGQ" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~CellInfo" resolve="CellInfo" />
         </node>
       </node>
       <node concept="3cqZAl" id="2_D0AvWRqTU" role="3clF45" />
