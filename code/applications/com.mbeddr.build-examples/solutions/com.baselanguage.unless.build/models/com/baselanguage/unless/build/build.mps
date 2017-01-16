@@ -6,10 +6,8 @@
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
   </languages>
   <imports>
-    <import index="3fk" ref="r:caa661d5-e529-469c-bb25-dfa7a83b768e(com.mbeddr.allScripts.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -133,7 +131,7 @@
   </registry>
   <node concept="1l3spW" id="4i9pOwKTFVe">
     <property role="TrG5h" value="com.baselanguage.unless.build" />
-    <property role="2DA0ip" value="../../../../../build/com.baselanguage.unless.build" />
+    <property role="2DA0ip" value="./" />
     <property role="turDy" value="build.xml" />
     <property role="3GE5qa" value="" />
     <node concept="2igEWh" id="$bJ0jguQs8" role="1hWBAP">
@@ -208,23 +206,14 @@
         <property role="TrG5h" value="com.baselanguage.unless" />
         <property role="3LESm3" value="a6c9731c-e688-447f-8d50-3cf76b24e87d" />
         <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="2iaA4fp$PW5" role="3LF7KH">
-          <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
-          <node concept="2Ry0Ak" id="2iaA4fp$PWf" role="iGT6I">
-            <property role="2Ry0Am" value="code" />
-            <node concept="2Ry0Ak" id="2iaA4fp$PWo" role="2Ry0An">
-              <property role="2Ry0Am" value="applications" />
-              <node concept="2Ry0Ak" id="2iaA4fp$PWx" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.build-examples" />
-                <node concept="2Ry0Ak" id="2iaA4fp$PWE" role="2Ry0An">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="2iaA4fp$PWN" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.baselanguage.unless" />
-                    <node concept="2Ry0Ak" id="4Rn9djDk56Q" role="2Ry0An">
-                      <property role="2Ry0Am" value="com.baselanguage.unless.mpl" />
-                    </node>
-                  </node>
-                </node>
+        <node concept="398BVA" id="5R4ngrtFxYl" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="unless.home" />
+          <node concept="2Ry0Ak" id="5R4ngrtFxYt" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="5R4ngrtFxY$" role="2Ry0An">
+              <property role="2Ry0Am" value="com.baselanguage.unless" />
+              <node concept="2Ry0Ak" id="5R4ngrtFxYF" role="2Ry0An">
+                <property role="2Ry0Am" value="com.baselanguage.unless.mpl" />
               </node>
             </node>
           </node>
@@ -274,15 +263,12 @@
       </node>
     </node>
     <node concept="398rNT" id="7uZw0yZ2_Jf" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.github.core.home" />
+      <property role="TrG5h" value="unless.home" />
       <node concept="55IIr" id="7uZw0yZ2_Lz" role="398pKh">
-        <node concept="2Ry0Ak" id="7uZw0yZ2_LL" role="iGT6I">
+        <node concept="2Ry0Ak" id="5R4ngrtFxYf" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="7uZw0yZ2_LM" role="2Ry0An">
+          <node concept="2Ry0Ak" id="5R4ngrtF$C4" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="7uZw0yZ2_LN" role="2Ry0An">
-              <property role="2Ry0Am" value="" />
-            </node>
           </node>
         </node>
       </node>
@@ -290,7 +276,7 @@
     <node concept="398rNT" id="4Rn9djDkk89" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
       <node concept="398BVA" id="4Rn9djDkk8a" role="398pKh">
-        <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="unless.home" />
         <node concept="2Ry0Ak" id="4Rn9djDkk8b" role="iGT6I">
           <property role="2Ry0Am" value="artifacts" />
         </node>
