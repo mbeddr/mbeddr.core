@@ -201,11 +201,11 @@
     </node>
   </node>
   <node concept="1TIwiD" id="24G9CRyJY0O">
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="statement" />
     <property role="TrG5h" value="Skip" />
     <property role="34LRSv" value="skip" />
     <property role="EcuMT" value="2390327893063360564" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <ref role="1TJDcQ" node="6efVUW9vti1" resolve="PromelaStatementBase" />
   </node>
   <node concept="1TIwiD" id="24G9CRyKjXn">
     <property role="3GE5qa" value="statement.if_do" />
@@ -232,7 +232,7 @@
       <property role="20kJfa" value="guard" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="2390327893063452023" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     </node>
   </node>
   <node concept="1TIwiD" id="24G9CRyKk_v">
@@ -262,7 +262,7 @@
     <property role="TrG5h" value="DoStatement" />
     <property role="34LRSv" value="do" />
     <property role="EcuMT" value="2390327893063559172" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <ref role="1TJDcQ" node="6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="24G9CRyKIwM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="members" />
@@ -359,7 +359,7 @@
     <property role="TrG5h" value="Send" />
     <property role="34LRSv" value="!" />
     <property role="EcuMT" value="2390327893064574923" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <ref role="1TJDcQ" node="6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="24G9CRyOAvc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="chan" />
@@ -380,7 +380,7 @@
     <property role="TrG5h" value="Receive" />
     <property role="34LRSv" value="?" />
     <property role="EcuMT" value="2390327893064634832" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <ref role="1TJDcQ" node="6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="24G9CRyOP7h" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="chan" />
@@ -390,7 +390,7 @@
     </node>
     <node concept="1TJgyj" id="24G9CRyOP7j" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr" />
+      <property role="20kJfa" value="exp" />
       <property role="20lbJX" value="1..n" />
       <property role="IQ2ns" value="2390327893064634835" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
@@ -622,6 +622,14 @@
       <property role="IQ2ns" value="2154988994644483463" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6efVUW9vti1">
+    <property role="EcuMT" value="7174216266482046081" />
+    <property role="3GE5qa" value="statement" />
+    <property role="TrG5h" value="PromelaStatementBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
   </node>
 </model>
 

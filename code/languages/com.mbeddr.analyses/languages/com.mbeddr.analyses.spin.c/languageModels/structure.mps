@@ -56,7 +56,7 @@
     <property role="TrG5h" value="CCodeStmt" />
     <property role="34LRSv" value="c_code" />
     <property role="EcuMT" value="7420192473454530718" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="6rTOrQxlzCt" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="stmts" />
