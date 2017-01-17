@@ -18,6 +18,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
+    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" implicit="true" />
     <import index="velc" ref="r:1af48fac-0627-4691-aa49-4813fdc5ca8e(com.mbeddr.analyses.spin.c.structure)" implicit="true" />
@@ -474,7 +475,7 @@
   </node>
   <node concept="13MO4I" id="HmUOIGFc6T">
     <property role="TrG5h" value="weave_uerror_prototype" />
-    <ref role="3gUMe" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+    <ref role="3gUMe" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
     <node concept="N3F5e" id="HmUOIGFc7h" role="13RCb5">
       <property role="TrG5h" value="im" />
       <node concept="2BZKSa" id="HmUOIGFc7m" role="N3F5h">
@@ -486,7 +487,7 @@
   <node concept="bUwia" id="6efVUW9DnC3">
     <property role="TrG5h" value="assertsTransformer" />
     <node concept="3aamgX" id="HmUOIGDH6x" role="3acgRq">
-      <ref role="30HIoZ" to="q5q6:637qsduSbtp" resolve="Assert" />
+      <ref role="30HIoZ" to="pyey:637qsduSbtp" resolve="Assert" />
       <node concept="1Koe21" id="HmUOIGDHrT" role="1lVwrX">
         <node concept="N3F5e" id="HmUOIGDI2p" role="1Koe22">
           <property role="TrG5h" value="im" />
@@ -534,7 +535,7 @@
                               <node concept="3clFbF" id="HmUOIGFsVb" role="3cqZAp">
                                 <node concept="2OqwBi" id="HmUOIGFsVc" role="3clFbG">
                                   <node concept="3TrcHB" id="HmUOIGFsVd" role="2OqNvi">
-                                    <ref role="3TsBF5" to="q5q6:6RCrcvOtNXu" resolve="explanation" />
+                                    <ref role="3TsBF5" to="pyey:6RCrcvOtNXu" resolve="explanation" />
                                   </node>
                                   <node concept="30H73N" id="HmUOIGFsVe" role="2Oq$k0" />
                                 </node>
@@ -597,7 +598,7 @@
                                             <node concept="2OqwBi" id="HmUOIGFsVG" role="2Oq$k0">
                                               <node concept="30H73N" id="HmUOIGFsVH" role="2Oq$k0" />
                                               <node concept="3TrEf2" id="HmUOIGFsVI" role="2OqNvi">
-                                                <ref role="3Tt5mk" to="q5q6:637qsduSbtq" resolve="exp" />
+                                                <ref role="3Tt5mk" to="pyey:637qsduSbtq" resolve="exp" />
                                               </node>
                                             </node>
                                             <node concept="2qgKlT" id="HmUOIGFRwY" role="2OqNvi">
@@ -635,7 +636,7 @@
                             <node concept="3clFbF" id="HmUOIGDJbn" role="3cqZAp">
                               <node concept="2OqwBi" id="HmUOIGDJbi" role="3clFbG">
                                 <node concept="3TrEf2" id="HmUOIGDJbl" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="q5q6:637qsduSbtq" resolve="exp" />
+                                  <ref role="3Tt5mk" to="pyey:637qsduSbtq" resolve="exp" />
                                 </node>
                                 <node concept="30H73N" id="HmUOIGDJbm" role="2Oq$k0" />
                               </node>
@@ -694,7 +695,7 @@
     </node>
     <node concept="30QchW" id="HmUOIGEtHI" role="30SoJX">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+      <ref role="30HIoZ" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
       <node concept="3gB$ML" id="HmUOIGEtHJ" role="3gCiVm">
         <node concept="3clFbS" id="HmUOIGEtHK" role="2VODD2">
           <node concept="3clFbF" id="HmUOIGFcbJ" role="3cqZAp">
