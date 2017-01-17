@@ -10,6 +10,7 @@
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -21,6 +22,7 @@
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="107" ref="r:02a12cf8-342d-4301-b167-f3931792f77d(com.mbeddr.analyses.acsl.assertions.gen.generator.template.main@generator)" />
+    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -158,9 +160,6 @@
       </concept>
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
-      <concept id="6973658835837826905" name="com.mbeddr.analyses.cbmc.structure.Assert" flags="ng" index="Y9XUq">
-        <child id="6973658835837826906" name="exp" index="Y9XUp" />
-      </concept>
       <concept id="4887422885165621122" name="com.mbeddr.analyses.cbmc.structure.CPROVERassume" flags="ng" index="1EIGaU">
         <child id="4887422885165621123" name="exp" index="1EIGaV" />
       </concept>
@@ -274,6 +273,11 @@
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
       <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
     </language>
+    <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
+      <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
+        <child id="6973658835837826906" name="exp" index="Y9XUp" />
+      </concept>
+    </language>
   </registry>
   <node concept="bUwia" id="10dmWHgv$V6">
     <property role="TrG5h" value="acslGenerationForCBMC" />
@@ -380,7 +384,7 @@
                         <node concept="3clFbF" id="2VCuTRcmtzp" role="3cqZAp">
                           <node concept="2OqwBi" id="2VCuTRcmtzq" role="3clFbG">
                             <node concept="3TrEf2" id="2VCuTRcmtzr" role="2OqNvi">
-                              <ref role="3Tt5mk" to="q5q6:637qsduSbtq" resolve="exp" />
+                              <ref role="3Tt5mk" to="pyey:637qsduSbtq" resolve="exp" />
                             </node>
                             <node concept="30H73N" id="2VCuTRcmtzs" role="2Oq$k0" />
                           </node>
@@ -465,22 +469,6 @@
                 </node>
               </node>
               <node concept="Y9XUq" id="2VCuTRcm_FF" role="3XIRFZ">
-                <node concept="3TlMhK" id="2VCuTRcm_FG" role="Y9XUp">
-                  <node concept="29HgVG" id="2VCuTRcm_FH" role="lGtFl">
-                    <node concept="3NFfHV" id="2VCuTRcm_FI" role="3NFExx">
-                      <node concept="3clFbS" id="2VCuTRcm_FJ" role="2VODD2">
-                        <node concept="3clFbF" id="2VCuTRcm_FK" role="3cqZAp">
-                          <node concept="2OqwBi" id="2VCuTRcm_FL" role="3clFbG">
-                            <node concept="3TrEf2" id="2VCuTRcm_FM" role="2OqNvi">
-                              <ref role="3Tt5mk" to="q5q6:637qsduSbtq" resolve="exp" />
-                            </node>
-                            <node concept="30H73N" id="2VCuTRcm_FN" role="2Oq$k0" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="1W57fq" id="2VCuTRcm_FO" role="lGtFl">
                   <node concept="3IZrLx" id="2VCuTRcm_FP" role="3IZSJc">
                     <node concept="3clFbS" id="2VCuTRcm_FQ" role="2VODD2">
@@ -540,6 +528,22 @@
                     <node concept="3clFbS" id="2VCuTRcomOR" role="2VODD2">
                       <node concept="3clFbF" id="2VCuTRconxN" role="3cqZAp">
                         <node concept="30H73N" id="2VCuTRconxM" role="3clFbG" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TlMhK" id="2VCuTRcm_FG" role="Y9XUp">
+                  <node concept="29HgVG" id="2VCuTRcm_FH" role="lGtFl">
+                    <node concept="3NFfHV" id="2VCuTRcm_FI" role="3NFExx">
+                      <node concept="3clFbS" id="2VCuTRcm_FJ" role="2VODD2">
+                        <node concept="3clFbF" id="2VCuTRcm_FK" role="3cqZAp">
+                          <node concept="2OqwBi" id="2VCuTRcm_FL" role="3clFbG">
+                            <node concept="3TrEf2" id="2VCuTRcm_FM" role="2OqNvi">
+                              <ref role="3Tt5mk" to="pyey:637qsduSbtq" resolve="exp" />
+                            </node>
+                            <node concept="30H73N" id="2VCuTRcm_FN" role="2Oq$k0" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
