@@ -321,8 +321,8 @@
                 <node concept="21POm0" id="2TZO3DbvMaB" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="2TZO3DbvMb2" role="2OqNvi">
                   <node concept="1xMEDy" id="2TZO3DbvMb3" role="1xVPHs">
-                    <node concept="chp4Y" id="2TZO3DbvMb6" role="ri$Ld">
-                      <ref role="cht4Q" to="2c95:2TZO3DbuxwK" resolve="Document" />
+                    <node concept="chp4Y" id="4Hh4dY4HOkb" role="ri$Ld">
+                      <ref role="cht4Q" to="2c95:5L$H31Kgq3f" resolve="IDocumentLike" />
                     </node>
                   </node>
                 </node>
