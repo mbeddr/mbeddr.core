@@ -28,6 +28,7 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="gtp9" ref="r:007d0985-20e2-4d70-80f1-d0de1aff1076(com.mbeddr.mpsutil.common.graph)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
   <registry>
@@ -1286,7 +1287,11 @@
             <node concept="37vLTw" id="4_qY3E5jot2" role="37wK5m">
               <ref role="3cqZAo" node="6ENu_m7umR0" resolve="context" />
             </node>
-            <node concept="10Nm6u" id="4_qY3E5jpak" role="37wK5m" />
+            <node concept="2ShNRf" id="2sFXoI2rj15" role="37wK5m">
+              <node concept="HV5vD" id="2sFXoI2rj16" role="2ShVmc">
+                <ref role="HV5vE" node="4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
