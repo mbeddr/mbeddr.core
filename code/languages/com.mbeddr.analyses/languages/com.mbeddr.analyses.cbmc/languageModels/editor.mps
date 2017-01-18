@@ -8294,7 +8294,7 @@
     <ref role="aqKnT" to="q5q6:637qsduSbtp" resolve="Assert_old" />
   </node>
   <node concept="3p36aQ" id="5rSz5xRlZVw">
-    <ref role="aqKnT" to="q5q6:3V3CJZuMScE" resolve="IAssertLyike_old" />
+    <ref role="aqKnT" to="q5q6:3V3CJZuMScE" resolve="IAssertLike_old" />
   </node>
 </model>
 
