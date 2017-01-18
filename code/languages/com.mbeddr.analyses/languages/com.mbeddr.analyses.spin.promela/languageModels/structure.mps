@@ -165,9 +165,9 @@
     <property role="34LRSv" value="assert" />
     <property role="3GE5qa" value="statement" />
     <property role="EcuMT" value="2935779374999505372" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <ref role="1TJDcQ" node="6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="PrWs8" id="60FTbDh$TCW" role="PzmwI">
-      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
+      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLike" />
     </node>
     <node concept="1TJgyj" id="2yXYWA1KSX3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -182,7 +182,7 @@
     <property role="TrG5h" value="Atomic" />
     <property role="34LRSv" value="atomic" />
     <property role="EcuMT" value="2935779374999558345" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <ref role="1TJDcQ" node="6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="2yXYWA1L5zn" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
@@ -213,7 +213,7 @@
     <property role="TrG5h" value="IfStatement" />
     <property role="34LRSv" value="if" />
     <property role="EcuMT" value="2390327893063450455" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <ref role="1TJDcQ" node="6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="24G9CRyKntD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="members" />

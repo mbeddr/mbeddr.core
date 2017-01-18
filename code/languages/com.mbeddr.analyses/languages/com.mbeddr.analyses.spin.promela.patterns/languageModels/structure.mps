@@ -47,7 +47,7 @@
     <property role="34LRSv" value="pick_nondet" />
     <property role="3GE5qa" value="" />
     <property role="EcuMT" value="1737851622209916271" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="1wu5Hv6a9W9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="varRef" />
