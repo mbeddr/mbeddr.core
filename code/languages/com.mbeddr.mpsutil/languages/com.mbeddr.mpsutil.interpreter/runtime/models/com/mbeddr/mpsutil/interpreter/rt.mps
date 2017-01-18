@@ -608,6 +608,28 @@
         <ref role="3uigEE" node="9nJ_zCAzxL" resolve="InterpreterBaseException" />
       </node>
     </node>
+    <node concept="3clFb_" id="41ZT0VcTXY$" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="evaluate" />
+      <node concept="3uibUv" id="41ZT0VcTXY_" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="41ZT0VcTXYA" role="1B3o_S" />
+      <node concept="37vLTG" id="41ZT0VcTXYB" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="41ZT0VcTXYC" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="41ZT0VcTXYD" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="41ZT0VcTXYE" role="1tU5fm">
+          <ref role="3uigEE" node="4X7QcQ31ENp" resolve="IContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="41ZT0VcTXYH" role="3clF47" />
+      <node concept="3uibUv" id="41ZT0VcTXYI" role="Sfmx6">
+        <ref role="3uigEE" node="9nJ_zCAzxL" resolve="InterpreterBaseException" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="7oujAIft2n9" role="jymVt" />
     <node concept="3clFb_" id="6ENu_m7ttZY" role="jymVt">
       <property role="1EzhhJ" value="true" />
