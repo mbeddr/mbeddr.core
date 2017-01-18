@@ -8,7 +8,8 @@
   <imports>
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
-    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
@@ -98,6 +99,27 @@
     <property role="TrG5h" value="HarnessCode" />
     <property role="34LRSv" value="harness" />
     <ref role="1TJDcQ" to="ir22:GpUw9S5_Xd" resolve="ProcType" />
+  </node>
+  <node concept="1TIwiD" id="6fP9ZN5Cubd">
+    <property role="EcuMT" value="7202707145649939149" />
+    <property role="3GE5qa" value="harness" />
+    <property role="TrG5h" value="MultiStep" />
+    <property role="34LRSv" value="multistep" />
+    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <node concept="1TJgyj" id="HmUOIGKxf4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="times" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="817099092667798468" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="HmUOIGKxf6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="817099092667798470" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
   </node>
 </model>
 

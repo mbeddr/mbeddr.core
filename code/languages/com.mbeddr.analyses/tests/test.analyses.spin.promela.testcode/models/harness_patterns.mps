@@ -145,12 +145,6 @@
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
     </language>
-    <language id="4ddb29eb-11e5-46c6-a894-6b8a4c38587d" name="com.mbeddr.analyses.spin.promela.patterns">
-      <concept id="817099092667797496" name="com.mbeddr.analyses.spin.promela.patterns.structure.Loop" flags="ng" index="2B_eiN">
-        <child id="817099092667798470" name="body" index="2B_fyd" />
-        <child id="817099092667798468" name="times" index="2B_fyf" />
-      </concept>
-    </language>
     <language id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin">
       <concept id="3854501276819165429" name="com.mbeddr.analyses.spin.structure.AssertionsAnalysis" flags="ng" index="apm28" />
       <concept id="3854501276819366674" name="com.mbeddr.analyses.spin.structure.SpinBasedAnalysis" flags="ng" index="ap_dJ">
@@ -158,6 +152,10 @@
       </concept>
     </language>
     <language id="f027a490-7082-492e-99ce-dfe65d7342f7" name="com.mbeddr.analyses.spin.c.patterns">
+      <concept id="7202707145649939149" name="com.mbeddr.analyses.spin.c.patterns.structure.MultiStep" flags="ng" index="2AlckL">
+        <child id="817099092667798470" name="body" index="2B_fyd" />
+        <child id="817099092667798468" name="times" index="2B_fyf" />
+      </concept>
       <concept id="4708346905221050110" name="com.mbeddr.analyses.spin.c.patterns.structure.NondetAssign" flags="ng" index="WlspI">
         <child id="4708346905221050140" name="exp" index="Wlsuc" />
         <child id="4708346905221050795" name="lower" index="Wlt$V" />
@@ -612,8 +610,11 @@
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="3XIRFW" id="6efVUW9Ayvn" role="3XIRFX">
-        <node concept="2B_eiN" id="6efVUW9AEQ$" role="3XIRFZ">
-          <node concept="3XIRFW" id="6efVUW9AEQ_" role="2B_fyd">
+        <node concept="2AlckL" id="36pDmrEUyUt" role="3XIRFZ">
+          <node concept="3TlMh9" id="36pDmrEUyUU" role="2B_fyf">
+            <property role="2hmy$m" value="10" />
+          </node>
+          <node concept="3XIRFW" id="36pDmrEUyUx" role="2B_fyd">
             <node concept="WlspI" id="6efVUW9Ayvo" role="3XIRFZ">
               <node concept="1S7827" id="6efVUW9AD3n" role="Wlsuc">
                 <ref role="1S7826" node="6efVUW9Ayvi" resolve="evt" />
@@ -653,9 +654,6 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="3TlMh9" id="6efVUW9AER2" role="2B_fyf">
-            <property role="2hmy$m" value="10" />
           </node>
         </node>
       </node>
