@@ -2348,7 +2348,7 @@
                               </node>
                               <node concept="3cpWs3" id="36pDmrF1RP1" role="37vLTx">
                                 <node concept="Xl_RD" id="36pDmrF1Sdh" role="3uHU7w">
-                                  <property role="Xl_RC" value="\n" />
+                                  <property role="Xl_RC" value="\\n" />
                                 </node>
                                 <node concept="3cpWs3" id="36pDmrF1LI_" role="3uHU7B">
                                   <node concept="Xl_RD" id="36pDmrF1LIB" role="3uHU7B">
