@@ -121,5 +121,25 @@
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
   </node>
+  <node concept="1TIwiD" id="36pDmrEZ2Bs">
+    <property role="EcuMT" value="3574069640742840796" />
+    <property role="TrG5h" value="WhitnessLogger" />
+    <property role="34LRSv" value="log whitness" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="36pDmrF0owW" role="1TKVEi">
+      <property role="IQ2ns" value="3574069640743192636" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="36pDmrEZ2Dy" role="1TKVEi">
+      <property role="IQ2ns" value="3574069640742840930" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="val" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
