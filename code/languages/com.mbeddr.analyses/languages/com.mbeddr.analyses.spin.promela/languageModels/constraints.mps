@@ -77,9 +77,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1M2fIO" id="GpUw9S7xQe">
-    <ref role="1M2myG" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
-  </node>
   <node concept="1M2fIO" id="GpUw9S99BC">
     <property role="3GE5qa" value="expression" />
     <ref role="1M2myG" to="ir22:GpUw9S99Bs" resolve="Run" />

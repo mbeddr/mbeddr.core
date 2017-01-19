@@ -22,6 +22,8 @@
     <import index="th2u" ref="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="i1of" ref="r:34d92fb4-3bcd-4a16-881f-8e6acf83c737(com.mbeddr.analyses.base.verification_conditions.behavior)" />
+    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -835,7 +837,7 @@
             <node concept="3clFbS" id="5EwdfGVjAmI" role="9aQI4">
               <node concept="aOSgY" id="46evrC8dXTR" role="3cqZAp">
                 <node concept="aOSgX" id="46evrC8dYIS" role="aOSgK">
-                  <ref role="aOSgM" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+                  <ref role="aOSgM" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
                   <node concept="9aQIb" id="46evrC8dYIT" role="aOS0M">
                     <node concept="3clFbS" id="46evrC8dYIU" role="9aQI4">
                       <node concept="3clFbF" id="46evrC8dZO1" role="3cqZAp">
@@ -844,7 +846,7 @@
                             <node concept="2OqwBi" id="3V3CJZuzkUh" role="3uHU7w">
                               <node concept="aMNgE" id="3V3CJZuzkHZ" role="2Oq$k0" />
                               <node concept="2qgKlT" id="3V3CJZuMT$q" role="2OqNvi">
-                                <ref role="37wK5l" to="th2u:3V3CJZuMSfi" resolve="getMessage" />
+                                <ref role="37wK5l" to="i1of:3V3CJZuMSfi" resolve="getMessage" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="46evrC8dZUo" role="3uHU7B">
@@ -861,7 +863,7 @@
                   <node concept="aMNgE" id="46evrC8dYIV" role="dK$qS" />
                 </node>
                 <node concept="aOSgX" id="46evrC8e7Ie" role="aOSgK">
-                  <ref role="aOSgM" to="q5q6:6$qhYL9Fk4m" resolve="VerificationConditionBase" />
+                  <ref role="aOSgM" to="pyey:6$qhYL9Fk4m" resolve="VerificationConditionBase" />
                   <node concept="9aQIb" id="46evrC8e7If" role="aOS0M">
                     <node concept="3clFbS" id="46evrC8e7Ig" role="9aQI4">
                       <node concept="3clFbF" id="46evrC8e8du" role="3cqZAp">
@@ -869,7 +871,7 @@
                           <node concept="2OqwBi" id="46evrC8e8po" role="37vLTx">
                             <node concept="aMNgE" id="46evrC8e8jS" role="2Oq$k0" />
                             <node concept="2qgKlT" id="46evrC8eImO" role="2OqNvi">
-                              <ref role="37wK5l" to="th2u:46evrC8e9$v" resolve="renderReadable" />
+                              <ref role="37wK5l" to="i1of:46evrC8e9$v" resolve="renderReadable" />
                             </node>
                           </node>
                           <node concept="37vLTw" id="46evrC8e8dt" role="37vLTJ">

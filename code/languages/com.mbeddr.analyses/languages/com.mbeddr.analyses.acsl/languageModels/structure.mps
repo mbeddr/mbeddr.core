@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
+    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
@@ -84,7 +85,7 @@
     <property role="34LRSv" value="requires" />
     <property role="3GE5qa" value="contract" />
     <property role="EcuMT" value="3793213301909615745" />
-    <ref role="1TJDcQ" to="q5q6:637qsduSbtp" resolve="Assert" />
+    <ref role="1TJDcQ" to="pyey:637qsduSbtp" resolve="Assert" />
     <node concept="PrWs8" id="3i$cQqpAZi7" role="PzmwI">
       <ref role="PrY4T" node="3i$cQqpAZi0" resolve="IAtomicContract" />
     </node>
@@ -107,7 +108,7 @@
     <property role="TrG5h" value="Ensures" />
     <property role="34LRSv" value="ensures" />
     <property role="EcuMT" value="3793213301910271541" />
-    <ref role="1TJDcQ" to="q5q6:637qsduSbtp" resolve="Assert" />
+    <ref role="1TJDcQ" to="pyey:637qsduSbtp" resolve="Assert" />
     <node concept="PrWs8" id="3i$cQqpDv$S" role="PzmwI">
       <ref role="PrY4T" node="3i$cQqpAZi0" resolve="IAtomicContract" />
     </node>

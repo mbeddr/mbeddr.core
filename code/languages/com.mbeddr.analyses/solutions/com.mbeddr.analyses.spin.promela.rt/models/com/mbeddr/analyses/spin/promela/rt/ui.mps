@@ -44,8 +44,16 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -53,6 +61,12 @@
       </concept>
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -110,6 +124,7 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -747,6 +762,20 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZHcFHJ" role="jymVt" />
+    <node concept="312cEg" id="3_HSwtcTkD3" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="rerunLastAnalysis" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="3_HSwtcTfB5" role="1B3o_S" />
+      <node concept="3uibUv" id="3_HSwtcTkCY" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
+      </node>
+      <node concept="NWlO9" id="7YdkGnq2wg" role="lGtFl">
+        <property role="NWlVz" value="Re-run last analysis." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7YdkGnq1ng" role="jymVt" />
     <node concept="312cEg" id="JsaLOcqBeI" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -756,8 +785,10 @@
         <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
       </node>
       <node concept="3Tm1VV" id="JsaLOcr6IU" role="1B3o_S" />
+      <node concept="NWlO9" id="7YdkGnq3gJ" role="lGtFl">
+        <property role="NWlVz" value="Current project." />
+      </node>
     </node>
-    <node concept="2tJIrI" id="12GRGX_cXSS" role="jymVt" />
     <node concept="2tJIrI" id="12GRGX_d5Tg" role="jymVt" />
     <node concept="3clFb_" id="2k2dPZH6kvj" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -768,9 +799,54 @@
       <node concept="3Tmbuc" id="2k2dPZH6kvl" role="1B3o_S" />
       <node concept="3cqZAl" id="2k2dPZH6kvm" role="3clF45" />
       <node concept="3clFbS" id="2k2dPZH6kvo" role="3clF47">
-        <node concept="3SKdUt" id="7XCY$_r9jnH" role="3cqZAp">
-          <node concept="3SKdUq" id="7XCY$_r9jnI" role="3SKWNk">
-            <property role="3SKdUp" value="do nothing" />
+        <node concept="3clFbF" id="3_HSwtcTpM$" role="3cqZAp">
+          <node concept="37vLTI" id="3_HSwtcTpM_" role="3clFbG">
+            <node concept="2ShNRf" id="3_HSwtcTpMA" role="37vLTx">
+              <node concept="1pGfFk" id="3_HSwtcTpMB" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                <node concept="Xl_RD" id="3_HSwtcTpMC" role="37wK5m">
+                  <property role="Xl_RC" value="Re-run" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3_HSwtcTpMD" role="37vLTJ">
+              <node concept="Xjq3P" id="3_HSwtcTpME" role="2Oq$k0" />
+              <node concept="2OwXpG" id="7YdkGnq6O7" role="2OqNvi">
+                <ref role="2Oxat5" node="3_HSwtcTkD3" resolve="rerunLastAnalysis" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1GgrF83cFMI" role="3cqZAp">
+          <node concept="2OqwBi" id="1GgrF83cJU_" role="3clFbG">
+            <node concept="2OqwBi" id="1GgrF83cGaN" role="2Oq$k0">
+              <node concept="Xjq3P" id="1GgrF83cFMG" role="2Oq$k0" />
+              <node concept="2OwXpG" id="1GgrF83cIE7" role="2OqNvi">
+                <ref role="2Oxat5" node="3_HSwtcTkD3" resolve="rerunLastAnalysis" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GgrF83cQyq" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font):void" resolve="setFont" />
+              <node concept="37vLTw" id="1GgrF83ezNy" role="37wK5m">
+                <ref role="3cqZAo" to="vbi4:1GgrF83etM0" resolve="MY_FONT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="78Qn3SB06FT" role="3cqZAp">
+          <node concept="2OqwBi" id="78Qn3SB0bjq" role="3clFbG">
+            <node concept="2OqwBi" id="78Qn3SB07lY" role="2Oq$k0">
+              <node concept="Xjq3P" id="78Qn3SB06FR" role="2Oq$k0" />
+              <node concept="2OwXpG" id="78Qn3SB0acM" role="2OqNvi">
+                <ref role="2Oxat5" node="3_HSwtcTkD3" resolve="rerunLastAnalysis" />
+              </node>
+            </node>
+            <node concept="liA8E" id="78Qn3SB0dRV" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <node concept="Xl_RD" id="78Qn3SB0dWm" role="37wK5m">
+                <property role="Xl_RC" value="Shortcut to re-run the last analysis." />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -793,9 +869,97 @@
         </node>
       </node>
       <node concept="3clFbS" id="2k2dPZH6$r5" role="3clF47">
-        <node concept="3SKdUt" id="7XCY$_r9k_D" role="3cqZAp">
-          <node concept="3SKdUq" id="7XCY$_r9k_E" role="3SKWNk">
-            <property role="3SKdUp" value="do nothing" />
+        <node concept="3clFbF" id="2k2dPZH6$sW" role="3cqZAp">
+          <node concept="2OqwBi" id="2k2dPZH6$sX" role="3clFbG">
+            <node concept="37vLTw" id="2k2dPZH6$sY" role="2Oq$k0">
+              <ref role="3cqZAo" node="3_HSwtcTkD3" resolve="rerunLastAnalysis" />
+            </node>
+            <node concept="liA8E" id="2k2dPZH6$sZ" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+              <node concept="2ShNRf" id="2k2dPZH6$t0" role="37wK5m">
+                <node concept="YeOm9" id="2k2dPZH6$t1" role="2ShVmc">
+                  <node concept="1Y3b0j" id="2k2dPZH6$t2" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3Tm1VV" id="2k2dPZH6$t3" role="1B3o_S" />
+                    <node concept="3clFb_" id="2k2dPZH6$t4" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="actionPerformed" />
+                      <property role="DiZV1" value="false" />
+                      <property role="IEkAT" value="false" />
+                      <node concept="3Tm1VV" id="2k2dPZH6$t5" role="1B3o_S" />
+                      <node concept="3cqZAl" id="2k2dPZH6$t6" role="3clF45" />
+                      <node concept="37vLTG" id="2k2dPZH6$t7" role="3clF46">
+                        <property role="TrG5h" value="p0" />
+                        <node concept="3uibUv" id="2k2dPZH6$t8" role="1tU5fm">
+                          <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="2k2dPZH6$t9" role="3clF47">
+                        <node concept="SfApY" id="2k2dPZH6$ta" role="3cqZAp">
+                          <node concept="3clFbS" id="2k2dPZH6$tb" role="SfCbr">
+                            <node concept="3clFbF" id="7YdkGnuBTR" role="3cqZAp">
+                              <node concept="2YIFZM" id="7YdkGnuBV5" role="3clFbG">
+                                <ref role="37wK5l" to="5do7:3_HSwtcS$Y_" resolve="rerunLastAnalysis" />
+                                <ref role="1Pybhc" to="5do7:1wu5Hv6fAKo" resolve="SpinAnalysisUtils" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="TDmWw" id="2k2dPZH6$te" role="TEbGg">
+                            <node concept="3cpWsn" id="2k2dPZH6$tf" role="TDEfY">
+                              <property role="TrG5h" value="ex" />
+                              <node concept="3uibUv" id="2k2dPZH6$tg" role="1tU5fm">
+                                <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                              </node>
+                            </node>
+                            <node concept="3clFbS" id="2k2dPZH6$th" role="TDEfX">
+                              <node concept="3clFbF" id="2k2dPZH6$ti" role="3cqZAp">
+                                <node concept="2YIFZM" id="2k2dPZH6$tj" role="3clFbG">
+                                  <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                  <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+                                  <node concept="37vLTw" id="2k2dPZH6$tk" role="37wK5m">
+                                    <ref role="3cqZAo" to="vbi4:JsaLOcnA09" resolve="analysesResultsTable" />
+                                  </node>
+                                  <node concept="2OqwBi" id="2k2dPZH6$tl" role="37wK5m">
+                                    <node concept="37vLTw" id="2k2dPZH6$tm" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2k2dPZH6$tf" resolve="ex" />
+                                    </node>
+                                    <node concept="liA8E" id="2k2dPZH6$tn" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="2k2dPZH6$to" role="37wK5m">
+                                    <property role="Xl_RC" value="Error" />
+                                  </node>
+                                  <node concept="10M0yZ" id="2k2dPZH6$tp" role="37wK5m">
+                                    <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
+                                    <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7YdkGnq9oq" role="3cqZAp">
+          <node concept="2OqwBi" id="7YdkGnqaaM" role="3clFbG">
+            <node concept="37vLTw" id="7YdkGnq9oo" role="2Oq$k0">
+              <ref role="3cqZAo" node="2k2dPZH6$t_" resolve="bottomHalf" />
+            </node>
+            <node concept="liA8E" id="7YdkGnqbC_" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="7YdkGnqcr7" role="37wK5m">
+                <ref role="3cqZAo" node="3_HSwtcTkD3" resolve="rerunLastAnalysis" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
