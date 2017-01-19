@@ -8,8 +8,8 @@
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
+    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
     <import index="97v6" ref="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)" implicit="true" />
-    <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -118,7 +118,7 @@
           <node concept="2OqwBi" id="5GEvLp_R4Oc" role="3cqZAk">
             <node concept="13iPFW" id="5GEvLp_R4Hj" role="2Oq$k0" />
             <node concept="3TrEf2" id="5GEvLp_R5_G" role="2OqNvi">
-              <ref role="3Tt5mk" to="q5q6:637qsduSbtq" />
+              <ref role="3Tt5mk" to="pyey:637qsduSbtq" resolve="exp" />
             </node>
           </node>
         </node>
@@ -145,7 +145,7 @@
           <node concept="2OqwBi" id="5GEvLp_R5ER" role="3cqZAk">
             <node concept="13iPFW" id="5GEvLp_R5ES" role="2Oq$k0" />
             <node concept="3TrEf2" id="5GEvLp_R5ET" role="2OqNvi">
-              <ref role="3Tt5mk" to="q5q6:637qsduSbtq" />
+              <ref role="3Tt5mk" to="pyey:637qsduSbtq" resolve="exp" />
             </node>
           </node>
         </node>
@@ -194,7 +194,7 @@
             <node concept="2OqwBi" id="5OLOS2sRFr2" role="37vLTJ">
               <node concept="13iPFW" id="5OLOS2sRFoF" role="2Oq$k0" />
               <node concept="3TrEf2" id="5OLOS2sRFwH" role="2OqNvi">
-                <ref role="3Tt5mk" to="97v6:5OLOS2sQzpO" />
+                <ref role="3Tt5mk" to="97v6:5OLOS2sQzpO" resolve="generationKind" />
               </node>
             </node>
           </node>

@@ -21,6 +21,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
     <import index="6pd5" ref="r:6005cceb-001a-4834-9044-19c5b9e838f3(com.mbeddr.analyses.cbmc.statemachines.rt.counterexample.lifted.model)" />
+    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -320,7 +321,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="4kJ3EIm6iff" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="8Fyjetf49l" role="2v6RBE">
@@ -845,7 +846,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="1hCIBtjelqV" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="1hCIBtjelqW" role="2v6RBE">
@@ -1095,7 +1096,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="1hCIBtje_gO" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="1hCIBtje_gP" role="2v6RBE">
@@ -1536,7 +1537,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="38xi_3mwZUF" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="38xi_3mwZUG" role="2v6RBE">
