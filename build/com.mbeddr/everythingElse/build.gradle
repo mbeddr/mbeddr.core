@@ -21,6 +21,10 @@ configurations {
     mbeddrAllInOne {
         description = 'mbeddr allInOne'
     }
+
+    mbeddr {
+        description = 'mbeddr'
+    }
     mbeddrPlatform {
         description = 'mbeddr platform distribution'
     }
@@ -120,6 +124,17 @@ publishing {
     }
 }
 
+publishing {
+    publications {
+        mbeddr(MavenPublication) {
+            groupId 'com.mbeddr'
+            artifactId 'mbeddr'
+            version mbeddrBuildNumber
+            artifact(publish_mbeddr) {}
+        }
+    }
+}
+
 def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
 
     task build_all_in_one(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
@@ -129,6 +144,11 @@ def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInO
 task publish_all_in_one(type: Zip, dependsOn: build_all_in_one) {
     from rootProject.projectDir.absolutePath + "/artifacts/"
     include "com.mbeddr.allInOne/com.mbeddr.allInOne.zip"
+}
+
+task publish_mbeddr(type: Zip, dependsOn: build_all_in_one) {
+    from rootProject.projectDir.absolutePath + "/artifacts/mbeddr"
+    include "*.zip"
 }
 
 // :build:com.mbeddr.rcp
