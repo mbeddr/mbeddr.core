@@ -1814,14 +1814,12 @@
         </node>
         <node concept="37Gg4z" id="5Gboyv9E$Pt" role="3XIRFZ">
           <node concept="3XIRFW" id="5Gboyv9E$Pu" role="37FYIw">
-            <node concept="1_9egQ" id="Y_s0Wj_DDt" role="3XIRFZ">
-              <node concept="1g25Hh" id="Y_s0Wj_DDp" role="1_9egR">
-                <node concept="PhEJO" id="Y_s0Wj_DDM" role="1g25Hi">
-                  <property role="PhEJT" value="intVar = %d" />
-                </node>
-                <node concept="1S7827" id="Y_s0Wj_DEU" role="1g25Hi">
-                  <ref role="1S7826" node="Y_s0Wj_2QR" resolve="intVar" />
-                </node>
+            <node concept="1g25Hh" id="36pDmrF0WtL" role="3XIRFZ">
+              <node concept="PhEJO" id="36pDmrF0WtM" role="1g25Hi">
+                <property role="PhEJT" value="intVar = %d" />
+              </node>
+              <node concept="1S7827" id="36pDmrF0WtN" role="1g25Hi">
+                <ref role="1S7826" node="Y_s0Wj_2QR" resolve="intVar" />
               </node>
             </node>
             <node concept="1_9egQ" id="5Gboyv9E$Pv" role="3XIRFZ">

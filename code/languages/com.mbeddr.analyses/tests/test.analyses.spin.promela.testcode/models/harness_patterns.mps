@@ -14,6 +14,12 @@
   </imports>
   <registry>
     <language id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela">
+      <concept id="2935779374999505372" name="com.mbeddr.analyses.spin.promela.structure.Assert" flags="ng" index="2DvB8l">
+        <child id="2935779374999506755" name="exp" index="2DvBia" />
+      </concept>
+      <concept id="9065467049589299473" name="com.mbeddr.analyses.spin.promela.structure.Printf" flags="ng" index="1g25Hh">
+        <child id="9065467049589299474" name="args" index="1g25Hi" />
+      </concept>
       <concept id="9065467049586938195" name="com.mbeddr.analyses.spin.promela.structure.SpinExecutable" flags="ng" index="1gr5cj" />
       <concept id="9065467049586938196" name="com.mbeddr.analyses.spin.promela.structure.SpinPlatform" flags="ng" index="1gr5ck">
         <property id="9065467049586938197" name="compiler" index="1gr5cl" />
@@ -25,6 +31,9 @@
       <concept id="7420192473455514899" name="com.mbeddr.analyses.spin.c.structure.CTrack" flags="ng" index="37FwiI">
         <child id="7420192473455514926" name="size" index="37Fwij" />
         <child id="7420192473455514905" name="memoryLocation" index="37Fwi$" />
+      </concept>
+      <concept id="7420192473454530718" name="com.mbeddr.analyses.spin.c.structure.CCodeStmt" flags="ng" index="37Gg4z">
+        <child id="7420192473455409693" name="stmts" index="37FYIw" />
       </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -79,6 +88,9 @@
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
         <child id="6282313788306893059" name="index" index="2wJmCp" />
+      </concept>
+      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
+        <property id="6113173064526131578" name="value" index="PhEJT" />
       </concept>
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
       <concept id="279446265608352903" name="com.mbeddr.core.pointers.structure.SizeOfExpr" flags="ng" index="3wxvTy">
@@ -247,6 +259,7 @@
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
+      <concept id="8860443239512128099" name="com.mbeddr.core.expressions.structure.FalseLiteral" flags="ng" index="3TlMhd" />
     </language>
     <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
       <concept id="7573444803550855446" name="com.mbeddr.analyses.base.verification_conditions.structure.VerificationConditionBase" flags="ng" index="wHKrU">
@@ -623,14 +636,18 @@
                 <property role="2hmy$m" value="0" />
               </node>
               <node concept="3TlMh9" id="6efVUW9Ayvr" role="Wlt$Y">
-                <property role="2hmy$m" value="10" />
+                <property role="2hmy$m" value="100" />
               </node>
             </node>
-            <node concept="1_9egQ" id="6efVUW9Ayvs" role="3XIRFZ">
-              <node concept="3O_q_g" id="6efVUW9Ayvv" role="1_9egR">
-                <ref role="3O_q_h" node="6efVUW9AyvM" resolve="do_step" />
-                <node concept="1S7827" id="6efVUW9ADuR" role="3O_q_j">
-                  <ref role="1S7826" node="6efVUW9Ayvi" resolve="evt" />
+            <node concept="37Gg4z" id="36pDmrEYVx5" role="3XIRFZ">
+              <node concept="3XIRFW" id="36pDmrEYVx7" role="37FYIw">
+                <node concept="1g25Hh" id="36pDmrF1Lkw" role="3XIRFZ">
+                  <node concept="PhEJO" id="36pDmrF1Lkx" role="1g25Hi">
+                    <property role="PhEJT" value="*** crtState = %d\n" />
+                  </node>
+                  <node concept="1S7827" id="36pDmrF1Lky" role="1g25Hi">
+                    <ref role="1S7826" node="6efVUW9ABVj" resolve="crtState" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -654,7 +671,18 @@
                 </node>
               </node>
             </node>
+            <node concept="1_9egQ" id="6efVUW9Ayvs" role="3XIRFZ">
+              <node concept="3O_q_g" id="6efVUW9Ayvv" role="1_9egR">
+                <ref role="3O_q_h" node="6efVUW9AyvM" resolve="do_step" />
+                <node concept="1S7827" id="6efVUW9ADuR" role="3O_q_j">
+                  <ref role="1S7826" node="6efVUW9Ayvi" resolve="evt" />
+                </node>
+              </node>
+            </node>
           </node>
+        </node>
+        <node concept="2DvB8l" id="36pDmrF1Q15" role="3XIRFZ">
+          <node concept="3TlMhd" id="36pDmrF1Q1N" role="2DvBia" />
         </node>
       </node>
     </node>

@@ -1348,7 +1348,7 @@
             </node>
           </node>
           <node concept="la8eA" id="7Rf0$0HLP$s" role="lcghm">
-            <property role="lacIc" value=")" />
+            <property role="lacIc" value=");" />
           </node>
         </node>
       </node>

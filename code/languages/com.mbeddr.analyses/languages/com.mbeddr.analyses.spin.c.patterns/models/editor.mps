@@ -204,5 +204,47 @@
       <node concept="l2Vlx" id="HmUOIGKxfJ" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="36pDmrEZQpK">
+    <ref role="1XX52x" to="llb3:36pDmrEZ2Bs" resolve="WhitnessLogger" />
+    <node concept="3EZMnI" id="36pDmrEZQpM" role="2wV5jI">
+      <node concept="3F0ifn" id="36pDmrEZQpT" role="3EZMnx">
+        <property role="3F0ifm" value="log whitness" />
+      </node>
+      <node concept="3F0ifn" id="36pDmrEZQpZ" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="588HgjJkWpK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="588HgjJkBPk" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="36pDmrF0oxm" role="3EZMnx">
+        <ref role="1NtTu8" to="llb3:36pDmrF0owW" resolve="exp" />
+      </node>
+      <node concept="3F0ifn" id="36pDmrEZQqm" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="588HgjJl4Jz" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="36pDmrEZQqD" role="3EZMnx">
+        <ref role="1NtTu8" to="llb3:36pDmrEZ2Dy" resolve="val" />
+      </node>
+      <node concept="3F0ifn" id="36pDmrEZQqR" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="36pDmrEZQt3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="36pDmrEZQr7" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="36pDmrEZQt6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="36pDmrEZQpP" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
