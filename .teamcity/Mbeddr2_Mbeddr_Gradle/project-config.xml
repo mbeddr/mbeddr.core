@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parent-id="Mbeddr2_Mbeddr" uuid="56b43763-be79-4eda-ad73-c87c6287f7e4" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
+  <name>gradle</name>
+  <description>the new gradle build</description>
+  <parameters />
+  <cleanup />
+</project>
+
