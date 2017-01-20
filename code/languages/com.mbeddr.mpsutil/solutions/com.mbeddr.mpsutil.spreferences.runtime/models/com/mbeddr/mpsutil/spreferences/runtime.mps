@@ -4057,7 +4057,7 @@
                           <ref role="3cqZAo" node="4RbRvogeB30" resolve="configurableEditor" />
                         </node>
                         <node concept="liA8E" id="4RbRvogeB4m" role="2OqNvi">
-                          <ref role="37wK5l" to="qxsb:~SingleConfigurableEditor.show():void" resolve="show" />
+                          <ref role="37wK5l" to="jkm4:~DialogWrapper.show():void" resolve="show" />
                         </node>
                       </node>
                     </node>
@@ -4198,7 +4198,7 @@
                           <ref role="3cqZAo" node="4RbRvogcqXI" resolve="configurableEditor" />
                         </node>
                         <node concept="liA8E" id="4RbRvogcqYU" role="2OqNvi">
-                          <ref role="37wK5l" to="qxsb:~SingleConfigurableEditor.show():void" resolve="show" />
+                          <ref role="37wK5l" to="jkm4:~DialogWrapper.show():void" resolve="show" />
                         </node>
                       </node>
                     </node>
