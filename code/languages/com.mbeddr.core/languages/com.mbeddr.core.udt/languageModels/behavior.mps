@@ -5442,14 +5442,6 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="5AweqC3NfOM" role="3clFbw">
-            <node concept="3cpWsa" id="5AweqC3NfOt" role="2Oq$k0">
-              <ref role="3cqZAo" node="5AweqC3NfOh" resolve="enumDecl" />
-            </node>
-            <node concept="2qgKlT" id="5AweqC3NfOS" role="2OqNvi">
-              <ref role="37wK5l" to="qd6m:5Oog2UbP_bT" resolve="preventNameMangling" />
-            </node>
-          </node>
           <node concept="9aQIb" id="5AweqC3NfPn" role="9aQIa">
             <node concept="3clFbS" id="5AweqC3NfPo" role="9aQI4">
               <node concept="3cpWs6" id="5AweqC3NfPp" role="3cqZAp">
@@ -5476,6 +5468,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="BsUDl" id="1pH26OYI_4" role="3clFbw">
+            <ref role="37wK5l" to="qd6m:5Oog2UbP_bT" resolve="preventNameMangling" />
           </node>
         </node>
       </node>
