@@ -112,7 +112,7 @@
     </language>
   </registry>
   <node concept="2XOHcx" id="5yxSA$IRFtR">
-    <property role="2XOHcw" value="${mbeddr.spin.home}/code/languages/com.mbeddr.analyses.spin/" />
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
   </node>
   <node concept="1lH9Xt" id="5yxSA$IRFtS">
     <property role="TrG5h" value="MaxDepthTest" />

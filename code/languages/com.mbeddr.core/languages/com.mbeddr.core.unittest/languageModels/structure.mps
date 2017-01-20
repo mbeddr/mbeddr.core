@@ -539,6 +539,9 @@
     <node concept="PrWs8" id="38aMGlgrPXM" role="PzmwI">
       <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
     </node>
+    <node concept="PrWs8" id="5gwPKZy5WZj" role="PzmwI">
+      <ref role="PrY4T" node="6189YbXx_nM" resolve="ITestContext" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3Rzs0kGBKjV">
     <property role="TrG5h" value="IRequireUnitTestFramework" />

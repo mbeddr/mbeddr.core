@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.core/com.mbeddr.mpsutil.inca.core.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.data/com.mbeddr.mpsutil.inca.data.mpl" folder="data" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.fun.testlangs/com.mbeddr.mpsutil.inca.fun.testlangs.mpl" folder="tests" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.fun/com.mbeddr.mpsutil.inca.fun.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.gp/com.mbeddr.mpsutil.inca.gp.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.styles/com.mbeddr.mpsutil.inca.styles.mpl" folder="style" />
@@ -11,6 +12,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.core.runtime/com.mbeddr.mpsutil.inca.core.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.core.util/com.mbeddr.mpsutil.inca.core.util.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.data.runtime/com.mbeddr.mpsutil.inca.data.runtime.msd" folder="data" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.data.test/com.mbeddr.mpsutil.inca.data.test.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.fun.runtime/com.mbeddr.mpsutil.inca.fun.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.gp.runtime/com.mbeddr.mpsutil.inca.gp.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.hints/com.mbeddr.mpsutil.inca.hints.msd" folder="core" />

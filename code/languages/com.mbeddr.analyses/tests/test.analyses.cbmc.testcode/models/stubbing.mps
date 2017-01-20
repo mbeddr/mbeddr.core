@@ -2,6 +2,7 @@
 <model ref="r:a0ab8dd7-68cf-4da2-9f6c-90c32d6631f9(stubbing)">
   <persistence version="9" />
   <languages>
+    <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
   </languages>
@@ -42,9 +43,6 @@
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
-      <concept id="6973658835837826905" name="com.mbeddr.analyses.cbmc.structure.Assert" flags="ng" index="Y9XUq">
-        <child id="6973658835837826906" name="exp" index="Y9XUp" />
-      </concept>
       <concept id="8817973701946135781" name="com.mbeddr.analyses.cbmc.structure.SingleStubConfig" flags="ng" index="35oYyT">
         <reference id="8817973701946135786" name="stub" index="35oYyQ" />
         <reference id="8817973701946135782" name="original" index="35oYyU" />
@@ -119,6 +117,11 @@
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
       </concept>
       <concept id="8860443239512128099" name="com.mbeddr.core.expressions.structure.FalseLiteral" flags="ng" index="3TlMhd" />
+    </language>
+    <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
+      <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
+        <child id="6973658835837826906" name="exp" index="Y9XUp" />
+      </concept>
     </language>
   </registry>
   <node concept="2v9HqL" id="7DvJ5MZkzi5">
