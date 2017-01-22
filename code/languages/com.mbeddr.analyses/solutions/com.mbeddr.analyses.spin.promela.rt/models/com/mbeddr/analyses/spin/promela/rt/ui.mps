@@ -15,6 +15,7 @@
     <import index="uipx" ref="r:e7b58802-36b0-4e17-a1f6-eb5c442b040c(com.mbeddr.analyses.utils.ui)" />
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
+    <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.promela.rt.analyzer.model)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1210,7 +1211,7 @@
     <node concept="3uibUv" id="1EZfgaQnOvF" role="1zkMxy">
       <ref role="3uigEE" to="vbi4:31nZcrlJSwS" resolve="WhitnessTableModelBase" />
       <node concept="3uibUv" id="7XCY$_r9Ni8" role="11_B2D">
-        <ref role="3uigEE" to="5do7:7XCY$_r9H8M" resolve="SpinCounterexampleState" />
+        <ref role="3uigEE" to="imq8:7XCY$_r9H8M" resolve="SpinWhitnessEntry" />
       </node>
     </node>
     <node concept="2tJIrI" id="1d23YaEmbrh" role="jymVt" />
