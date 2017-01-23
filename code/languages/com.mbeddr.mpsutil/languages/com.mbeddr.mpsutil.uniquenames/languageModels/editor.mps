@@ -415,6 +415,10 @@
       </concept>
       <concept id="1240171359678" name="jetbrains.mps.lang.smodel.structure.EnumMember_ValueOperation" flags="nn" index="2ZYiMu" />
       <concept id="1240173327827" name="jetbrains.mps.lang.smodel.structure.EnumMember_NameOperation" flags="nn" index="305NjN" />
+      <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
+        <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
+        <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
       <concept id="5168775467716640652" name="jetbrains.mps.lang.smodel.structure.OperationParm_LinkQualifier" flags="ng" index="1aIX9F">
         <child id="5168775467716640653" name="linkQualifier" index="1aIX9E" />
       </concept>
@@ -3222,12 +3226,16 @@
           <node concept="3Fmcul" id="h7Gq5ai" role="3FoqZy">
             <node concept="3clFbS" id="h7Gq5aj" role="2VODD2">
               <node concept="3cpWs6" id="h7GrovA" role="3cqZAp">
-                <node concept="2YIFZM" id="h7Grtu2" role="3cqZAk">
+                <node concept="2YIFZM" id="4oSomgtvHf2" role="3cqZAk">
+                  <ref role="37wK5l" to="7a0s:6UDbxo8i0Rf" resolve="createSelectIconButton" />
                   <ref role="1Pybhc" to="7a0s:6UDbxo8i0QW" resolve="EditorUtil" />
-                  <ref role="37wK5l" to="7a0s:1tyjSjK5Gdd" resolve="createSelectIconButton" />
-                  <node concept="pncrf" id="h7Gruda" role="37wK5m" />
-                  <node concept="1Q80Hx" id="h7GsHkM" role="37wK5m" />
-                  <node concept="3clFbT" id="1tyjSjK7qch" role="37wK5m">
+                  <node concept="pncrf" id="4oSomgtvHf3" role="37wK5m" />
+                  <node concept="355D3s" id="4oSomgtvHEw" role="37wK5m">
+                    <ref role="355D3t" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+                    <ref role="355D3u" to="tpce:gSMwhzt" resolve="iconPath" />
+                  </node>
+                  <node concept="1Q80Hx" id="4oSomgtvHf4" role="37wK5m" />
+                  <node concept="3clFbT" id="4oSomgtvHf5" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
                 </node>

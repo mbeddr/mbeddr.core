@@ -2,7 +2,7 @@
 <model ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
@@ -587,6 +587,12 @@
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1168401810208" name="jetbrains.mps.baseLanguage.logging.structure.PrintStatement" flags="nn" index="abc8K">
         <child id="1168401864803" name="textExpression" index="abp_N" />
+      </concept>
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167228628751" name="hasException" index="34fQS0" />
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+        <child id="1167227561449" name="exception" index="34bMjA" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -11864,6 +11870,7 @@
                             <node concept="3cpWsn" id="79AXByylcyd" role="3cpWs9">
                               <property role="3TUv4t" value="false" />
                               <property role="TrG5h" value="result" />
+                              <node concept="10Nm6u" id="4oSomgtQmO1" role="33vP2m" />
                               <node concept="3uibUv" id="79AXByylcyf" role="1tU5fm">
                                 <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
                               </node>
@@ -11900,32 +11907,63 @@
                               </node>
                             </node>
                             <node concept="3clFbS" id="79AXByylcyl" role="3clFbx">
-                              <node concept="3clFbF" id="79AXByylcym" role="3cqZAp">
-                                <node concept="37vLTI" id="79AXByylcyn" role="3clFbG">
-                                  <node concept="37vLTw" id="79AXByylcyo" role="37vLTJ">
-                                    <ref role="3cqZAo" node="79AXByylcyd" resolve="result" />
+                              <node concept="SfApY" id="4oSomgtQl4T" role="3cqZAp">
+                                <node concept="3clFbS" id="4oSomgtQl4U" role="SfCbr">
+                                  <node concept="3clFbF" id="79AXByylcym" role="3cqZAp">
+                                    <node concept="37vLTI" id="79AXByylcyn" role="3clFbG">
+                                      <node concept="37vLTw" id="79AXByylcyo" role="37vLTJ">
+                                        <ref role="3cqZAo" node="79AXByylcyd" resolve="result" />
+                                      </node>
+                                      <node concept="2YIFZM" id="4oSomgtQkQ8" role="37vLTx">
+                                        <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot,org.jetbrains.mps.openapi.persistence.ModelFactoryType):org.jetbrains.mps.openapi.model.EditableSModel" resolve="createModelWithAdjustments" />
+                                        <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+                                        <node concept="37vLTw" id="4oSomgtQkQ9" role="37wK5m">
+                                          <ref role="3cqZAo" node="79AXByylcy3" resolve="fqName" />
+                                        </node>
+                                        <node concept="37vLTw" id="4oSomgtQkQa" role="37wK5m">
+                                          <ref role="3cqZAo" node="79AXByylcy7" resolve="mr" />
+                                        </node>
+                                        <node concept="2OqwBi" id="4oSomgtQkQb" role="37wK5m">
+                                          <node concept="1eOMI4" id="4oSomgtQkQc" role="2Oq$k0">
+                                            <node concept="10QFUN" id="4oSomgtQkQd" role="1eOMHV">
+                                              <node concept="2OqwBi" id="4oSomgtQkQe" role="10QFUP">
+                                                <node concept="37vLTw" id="4oSomgtQkQf" role="2Oq$k0">
+                                                  <ref role="3cqZAo" node="79AXByxO09N" resolve="myModelStorageFormat" />
+                                                </node>
+                                                <node concept="liA8E" id="4oSomgtQkQg" role="2OqNvi">
+                                                  <ref role="37wK5l" to="dxuu:~JComboBox.getSelectedItem():java.lang.Object" resolve="getSelectedItem" />
+                                                </node>
+                                              </node>
+                                              <node concept="3uibUv" id="4oSomgtQkQh" role="10QFUM">
+                                                <ref role="3uigEE" to="dush:~ModelFactory" resolve="ModelFactory" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                          <node concept="liA8E" id="4oSomgtQkQi" role="2OqNvi">
+                                            <ref role="37wK5l" to="dush:~ModelFactory.getType():org.jetbrains.mps.openapi.persistence.ModelFactoryType" resolve="getType" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
                                   </node>
-                                  <node concept="2YIFZM" id="79AXByylc$S" role="37vLTx">
-                                    <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                                    <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot,org.jetbrains.mps.openapi.persistence.ModelFactory):org.jetbrains.mps.openapi.model.EditableSModel" resolve="createModelWithAdjustments" />
-                                    <node concept="37vLTw" id="79AXByylcyq" role="37wK5m">
-                                      <ref role="3cqZAo" node="79AXByylcy3" resolve="fqName" />
-                                    </node>
-                                    <node concept="37vLTw" id="79AXByylcyr" role="37wK5m">
-                                      <ref role="3cqZAo" node="79AXByylcy7" resolve="mr" />
-                                    </node>
-                                    <node concept="10QFUN" id="79AXByylcys" role="37wK5m">
-                                      <node concept="2OqwBi" id="79AXByylc$W" role="10QFUP">
-                                        <node concept="37vLTw" id="79AXByylc$V" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="79AXByxO09N" resolve="myModelStorageFormat" />
-                                        </node>
-                                        <node concept="liA8E" id="79AXByylc$X" role="2OqNvi">
-                                          <ref role="37wK5l" to="dxuu:~JComboBox.getSelectedItem():java.lang.Object" resolve="getSelectedItem" />
-                                        </node>
+                                </node>
+                                <node concept="TDmWw" id="4oSomgtQl4P" role="TEbGg">
+                                  <node concept="3clFbS" id="4oSomgtQl4Q" role="TDEfX">
+                                    <node concept="34ab3g" id="4oSomgtQlQc" role="3cqZAp">
+                                      <property role="35gtTG" value="error" />
+                                      <property role="34fQS0" value="true" />
+                                      <node concept="Xl_RD" id="4oSomgtQlQe" role="34bqiv">
+                                        <property role="Xl_RC" value="Error during module creation" />
                                       </node>
-                                      <node concept="3uibUv" id="79AXByylcyu" role="10QFUM">
-                                        <ref role="3uigEE" to="dush:~ModelFactory" resolve="ModelFactory" />
+                                      <node concept="37vLTw" id="4oSomgtQlQg" role="34bMjA">
+                                        <ref role="3cqZAo" node="4oSomgtQl4R" resolve="e" />
                                       </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3cpWsn" id="4oSomgtQl4R" role="TDEfY">
+                                    <property role="TrG5h" value="e" />
+                                    <node concept="3uibUv" id="4oSomgtQl4S" role="1tU5fm">
+                                      <ref role="3uigEE" to="pa15:~ModelCannotBeCreatedException" resolve="ModelCannotBeCreatedException" />
                                     </node>
                                   </node>
                                 </node>

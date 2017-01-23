@@ -155,11 +155,11 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5253134957341870583" name="jetbrains.mps.lang.smodel.structure.PropertyNameRefExpression" flags="nn" index="pqAIu">
-        <reference id="5253134957341870585" name="propertyDeclaration" index="pqAIg" />
-        <reference id="5253134957341870584" name="conceptDeclaration" index="pqAIh" />
-      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
+        <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
+        <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -363,16 +363,16 @@
           <node concept="3Fmcul" id="h7Gq5ai" role="3FoqZy">
             <node concept="3clFbS" id="h7Gq5aj" role="2VODD2">
               <node concept="3cpWs6" id="h7GrovA" role="3cqZAp">
-                <node concept="2YIFZM" id="h7Grtu2" role="3cqZAk">
+                <node concept="2YIFZM" id="7c2Vv1uwjhQ" role="3cqZAk">
+                  <ref role="37wK5l" to="hhnx:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
                   <ref role="1Pybhc" to="hhnx:~EditorUtil" resolve="EditorUtil" />
-                  <ref role="37wK5l" to="hhnx:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
-                  <node concept="pncrf" id="h7Gruda" role="37wK5m" />
-                  <node concept="pqAIu" id="1tyjSjK5Gdo" role="37wK5m">
-                    <ref role="pqAIh" to="wfif:4g2H4r3SHDB" resolve="CellModel_Checkbox" />
-                    <ref role="pqAIg" to="wfif:gSMwhzt" resolve="iconPathTrue" />
+                  <node concept="pncrf" id="7c2Vv1uwjhR" role="37wK5m" />
+                  <node concept="355D3s" id="7c2Vv1uwjhS" role="37wK5m">
+                    <ref role="355D3t" to="wfif:4g2H4r3SHDB" resolve="CellModel_Checkbox" />
+                    <ref role="355D3u" to="wfif:gSMwhzt" resolve="iconPathTrue" />
                   </node>
-                  <node concept="1Q80Hx" id="h7GsHkM" role="37wK5m" />
-                  <node concept="3clFbT" id="1tyjSjK7qch" role="37wK5m" />
+                  <node concept="1Q80Hx" id="7c2Vv1uwjhT" role="37wK5m" />
+                  <node concept="3clFbT" id="7c2Vv1uwjhU" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -521,16 +521,16 @@
           <node concept="3Fmcul" id="20OtND1DIrl" role="3FoqZy">
             <node concept="3clFbS" id="20OtND1DIrm" role="2VODD2">
               <node concept="3cpWs6" id="20OtND1DIrn" role="3cqZAp">
-                <node concept="2YIFZM" id="115coIS92Tc" role="3cqZAk">
+                <node concept="2YIFZM" id="7c2Vv1uwjJe" role="3cqZAk">
+                  <ref role="37wK5l" to="hhnx:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
                   <ref role="1Pybhc" to="hhnx:~EditorUtil" resolve="EditorUtil" />
-                  <ref role="37wK5l" to="hhnx:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
-                  <node concept="pncrf" id="115coIS92Td" role="37wK5m" />
-                  <node concept="pqAIu" id="115coIS92Te" role="37wK5m">
-                    <ref role="pqAIh" to="wfif:4g2H4r3SHDB" resolve="CellModel_Checkbox" />
-                    <ref role="pqAIg" to="wfif:20OtND1DeRD" resolve="iconPathFalse" />
+                  <node concept="pncrf" id="7c2Vv1uwjJf" role="37wK5m" />
+                  <node concept="355D3s" id="7c2Vv1uwjJg" role="37wK5m">
+                    <ref role="355D3t" to="wfif:4g2H4r3SHDB" resolve="CellModel_Checkbox" />
+                    <ref role="355D3u" to="wfif:20OtND1DeRD" resolve="iconPathFalse" />
                   </node>
-                  <node concept="1Q80Hx" id="115coIS92Tf" role="37wK5m" />
-                  <node concept="3clFbT" id="115coIS92Tg" role="37wK5m" />
+                  <node concept="1Q80Hx" id="7c2Vv1uwjJh" role="37wK5m" />
+                  <node concept="3clFbT" id="7c2Vv1uwjJi" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -953,16 +953,16 @@
             <node concept="3Fmcul" id="4JS9aP7pPIh" role="3FoqZy">
               <node concept="3clFbS" id="4JS9aP7pPIi" role="2VODD2">
                 <node concept="3cpWs6" id="4JS9aP7pPIj" role="3cqZAp">
-                  <node concept="2YIFZM" id="115coIS97gU" role="3cqZAk">
+                  <node concept="2YIFZM" id="7c2Vv1uwkhR" role="3cqZAk">
+                    <ref role="37wK5l" to="hhnx:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
                     <ref role="1Pybhc" to="hhnx:~EditorUtil" resolve="EditorUtil" />
-                    <ref role="37wK5l" to="hhnx:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
-                    <node concept="pncrf" id="115coIS97gV" role="37wK5m" />
-                    <node concept="pqAIu" id="115coIS97gW" role="37wK5m">
-                      <ref role="pqAIh" to="wfif:4JS9aP7oxy8" resolve="CheckboxDefaultIcons" />
-                      <ref role="pqAIg" to="wfif:4JS9aP7oOyi" resolve="iconPathTrue" />
+                    <node concept="pncrf" id="7c2Vv1uwkhS" role="37wK5m" />
+                    <node concept="355D3s" id="7c2Vv1uwkhT" role="37wK5m">
+                      <ref role="355D3t" to="wfif:4JS9aP7oxy8" resolve="CheckboxDefaultIcons" />
+                      <ref role="355D3u" to="wfif:4JS9aP7oOyi" resolve="iconPathTrue" />
                     </node>
-                    <node concept="1Q80Hx" id="115coIS97gX" role="37wK5m" />
-                    <node concept="3clFbT" id="115coIS97gY" role="37wK5m" />
+                    <node concept="1Q80Hx" id="7c2Vv1uwkhU" role="37wK5m" />
+                    <node concept="3clFbT" id="7c2Vv1uwkhV" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -993,16 +993,16 @@
             <node concept="3Fmcul" id="4JS9aP7pPIx" role="3FoqZy">
               <node concept="3clFbS" id="4JS9aP7pPIy" role="2VODD2">
                 <node concept="3cpWs6" id="4JS9aP7pPIz" role="3cqZAp">
-                  <node concept="2YIFZM" id="115coIS986J" role="3cqZAk">
+                  <node concept="2YIFZM" id="7c2Vv1uwktH" role="3cqZAk">
+                    <ref role="37wK5l" to="hhnx:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
                     <ref role="1Pybhc" to="hhnx:~EditorUtil" resolve="EditorUtil" />
-                    <ref role="37wK5l" to="hhnx:~EditorUtil.createSelectIconButton(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean):javax.swing.JComponent" resolve="createSelectIconButton" />
-                    <node concept="pncrf" id="115coIS986K" role="37wK5m" />
-                    <node concept="pqAIu" id="115coIS986L" role="37wK5m">
-                      <ref role="pqAIh" to="wfif:4JS9aP7oxy8" resolve="CheckboxDefaultIcons" />
-                      <ref role="pqAIg" to="wfif:4JS9aP7oOyj" resolve="iconPathFalse" />
+                    <node concept="pncrf" id="7c2Vv1uwktI" role="37wK5m" />
+                    <node concept="355D3s" id="7c2Vv1uwkHz" role="37wK5m">
+                      <ref role="355D3t" to="wfif:4JS9aP7oxy8" resolve="CheckboxDefaultIcons" />
+                      <ref role="355D3u" to="wfif:4JS9aP7oOyj" resolve="iconPathFalse" />
                     </node>
-                    <node concept="1Q80Hx" id="115coIS986M" role="37wK5m" />
-                    <node concept="3clFbT" id="115coIS986N" role="37wK5m" />
+                    <node concept="1Q80Hx" id="7c2Vv1uwktK" role="37wK5m" />
+                    <node concept="3clFbT" id="7c2Vv1uwktL" role="37wK5m" />
                   </node>
                 </node>
               </node>
