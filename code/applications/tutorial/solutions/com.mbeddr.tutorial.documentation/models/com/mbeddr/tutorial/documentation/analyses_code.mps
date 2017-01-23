@@ -197,19 +197,6 @@
         <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
       </concept>
-      <concept id="7573444803550855448" name="com.mbeddr.analyses.cbmc.structure.AfterPThenQ" flags="ng" index="wHKrO" />
-      <concept id="7573444803550855446" name="com.mbeddr.analyses.cbmc.structure.VerificationConditionBase" flags="ng" index="wHKrU">
-        <property id="4723851297114348676" name="documentation" index="19ME4Y" />
-        <property id="8330520303445148918" name="disabled" index="1aBf3y" />
-      </concept>
-      <concept id="7392194941658528658" name="com.mbeddr.analyses.cbmc.structure.BeforePMustQ" flags="ng" index="xqa6K" />
-      <concept id="7392194941658581812" name="com.mbeddr.analyses.cbmc.structure.BinaryVerificationCondition" flags="ng" index="xqp4m">
-        <child id="7392194941658581814" name="q" index="xqp4k" />
-        <child id="7392194941658581813" name="p" index="xqp4n" />
-      </concept>
-      <concept id="6973658835837826905" name="com.mbeddr.analyses.cbmc.structure.Assert" flags="ng" index="Y9XUq">
-        <child id="6973658835837826906" name="exp" index="Y9XUp" />
-      </concept>
       <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
@@ -526,6 +513,7 @@
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="7615572890648529894" name="com.mbeddr.core.expressions.structure.NotEqualsExpression" flags="ng" index="25Bbzn" />
+      <concept id="8463282783691618461" name="com.mbeddr.core.expressions.structure.UnsignedInt8tType" flags="ng" index="26Vqp4" />
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="8463282783691618435" name="com.mbeddr.core.expressions.structure.Int16tType" flags="ng" index="26Vqpq" />
       <concept id="8463282783691618466" name="com.mbeddr.core.expressions.structure.UnsignedInt16tType" flags="ng" index="26VqpV" />
@@ -583,6 +571,21 @@
       <concept id="8860443239512128099" name="com.mbeddr.core.expressions.structure.FalseLiteral" flags="ng" index="3TlMhd" />
       <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
+    </language>
+    <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
+      <concept id="7573444803550855448" name="com.mbeddr.analyses.base.verification_conditions.structure.AfterPThenQ" flags="ng" index="wHKrO" />
+      <concept id="7573444803550855446" name="com.mbeddr.analyses.base.verification_conditions.structure.VerificationConditionBase" flags="ng" index="wHKrU">
+        <property id="4723851297114348676" name="documentation" index="19ME4Y" />
+        <property id="8330520303445148918" name="disabled" index="1aBf3y" />
+      </concept>
+      <concept id="7392194941658528658" name="com.mbeddr.analyses.base.verification_conditions.structure.BeforePMustQ" flags="ng" index="xqa6K" />
+      <concept id="7392194941658581812" name="com.mbeddr.analyses.base.verification_conditions.structure.BinaryVerificationCondition" flags="ng" index="xqp4m">
+        <child id="7392194941658581814" name="q" index="xqp4k" />
+        <child id="7392194941658581813" name="p" index="xqp4n" />
+      </concept>
+      <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
+        <child id="6973658835837826906" name="exp" index="Y9XUp" />
+      </concept>
     </language>
   </registry>
   <node concept="N3F5e" id="3XWIBckFn7D">
@@ -983,7 +986,7 @@
         <node concept="1_a8vi" id="7OKLwZ_7wQP" role="3XIRFZ">
           <node concept="1_amY7" id="7OKLwZ_7wRZ" role="1_amZ$">
             <property role="TrG5h" value="i" />
-            <node concept="26Vqqz" id="7OKLwZ_7wRX" role="2C2TGm">
+            <node concept="26Vqp4" id="6fP9ZN5qXVM" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
@@ -1056,7 +1059,7 @@
       </node>
       <node concept="19RgSI" id="7OKLwZ_7w1a" role="1UOdpc">
         <property role="TrG5h" value="size" />
-        <node concept="26Vqpq" id="7OKLwZ_7w1b" role="2C2TGm">
+        <node concept="26VqpV" id="6fP9ZN5qY0f" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
@@ -1468,6 +1471,7 @@
     <property role="TrG5h" value="RobustnessStatemachinedExamples" />
     <node concept="1LFe83" id="3JyX84ySf6B" role="N3F5h">
       <property role="TrG5h" value="Counter" />
+      <property role="2OOxQR" value="true" />
       <ref role="1LFebw" node="3JyX84ySf6O" resolve="Init" />
       <node concept="2cfOFI" id="3JyX84ySf6C" role="1_Iowf">
         <property role="TrG5h" value="countUp" />
@@ -1754,7 +1758,7 @@
       <property role="TrG5h" value="speedComputer" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="6_lULi3$Ni0" role="3XIRFX">
-        <node concept="Y9XUq" id="6_lULi3$Nly" role="3XIRFZ">
+        <node concept="Y9XUq" id="6fP9ZN5pOq$" role="3XIRFZ">
           <node concept="3Tl9Jr" id="6_lULi3$Nw6" role="Y9XUp">
             <node concept="3TlMh9" id="6_lULi3$Nw9" role="3TlMhJ">
               <property role="2hmy$m" value="0" />
@@ -1875,7 +1879,7 @@
           </node>
         </node>
         <node concept="3XISUE" id="6nRVhifiQRA" role="3XIRFZ" />
-        <node concept="wHKrO" id="6nRVhifiIAV" role="3XIRFZ">
+        <node concept="wHKrO" id="6fP9ZN5pOqd" role="3XIRFZ">
           <property role="1aBf3y" value="false" />
           <property role="19ME4Y" value="after event 'P' occurs, from the next step on, the condition 'Q' should be true forever" />
           <node concept="3ZVu4v" id="6nRVhifiIEI" role="xqp4n">
@@ -1890,7 +1894,7 @@
             </node>
           </node>
         </node>
-        <node concept="xqa6K" id="6nRVhifiSGa" role="3XIRFZ">
+        <node concept="xqa6K" id="6fP9ZN5pOqe" role="3XIRFZ">
           <property role="1aBf3y" value="false" />
           <property role="19ME4Y" value="before event 'P' occurs first time, condition 'Q' must be always true; &#10;if 'P' becomes true then 'Q' need not be true anymore" />
           <node concept="3ZVu4v" id="6nRVhifiSXf" role="xqp4n">
@@ -2735,7 +2739,7 @@
                 </node>
               </node>
             </node>
-            <node concept="Y9XUq" id="6nRVhifkMQK" role="3XIRFZ">
+            <node concept="Y9XUq" id="6fP9ZN5pOq_" role="3XIRFZ">
               <node concept="3Tl9Jr" id="6nRVhifkMXD" role="Y9XUp">
                 <node concept="3TlMh9" id="6nRVhifkMXG" role="3TlMhJ">
                   <property role="2hmy$m" value="0" />
@@ -2942,7 +2946,7 @@
             </node>
           </node>
         </node>
-        <node concept="Y9XUq" id="4vY$tOPH7rD" role="3XIRFZ">
+        <node concept="Y9XUq" id="6fP9ZN5pOqA" role="3XIRFZ">
           <node concept="3TlMhd" id="4vY$tOPNDX5" role="Y9XUp" />
         </node>
         <node concept="3XISUE" id="4vY$tOPNEwq" role="3XIRFZ" />
@@ -2955,7 +2959,7 @@
             </node>
           </node>
         </node>
-        <node concept="Y9XUq" id="4vY$tOPNF5w" role="3XIRFZ">
+        <node concept="Y9XUq" id="6fP9ZN5pOqB" role="3XIRFZ">
           <node concept="3TlM44" id="4vY$tOPNG2c" role="Y9XUp">
             <node concept="3ZVu4v" id="4vY$tOPNG2f" role="3TlMhI">
               <ref role="3ZVs_2" node="4vY$tOPH69v" resolve="cnt" />
@@ -2975,7 +2979,7 @@
             </node>
           </node>
         </node>
-        <node concept="Y9XUq" id="4vY$tOPNGXR" role="3XIRFZ">
+        <node concept="Y9XUq" id="6fP9ZN5pOqC" role="3XIRFZ">
           <node concept="25Bbzn" id="4vY$tOPNHBT" role="Y9XUp">
             <node concept="3ZVu4v" id="4vY$tOPNHBV" role="3TlMhI">
               <ref role="3ZVs_2" node="4vY$tOPH69v" resolve="cnt" />
@@ -3024,7 +3028,7 @@
     <node concept="1nvAUE" id="7OKLwZ_9N2y" role="3V$2$K">
       <property role="2lUGeZ" value="false" />
       <property role="2lUHrg" value="-1" />
-      <property role="2lUGbD" value="-1" />
+      <property role="2lUGbD" value="none" />
       <property role="2l50Ka" value="none" />
       <property role="2l50Km" value="none" />
       <property role="2l50Mm" value="false" />
@@ -3043,10 +3047,11 @@
     <node concept="1nvAUC" id="3JyX84yT9ii" role="3V$2$K">
       <property role="2lUGeZ" value="false" />
       <property role="2lUHrg" value="-1" />
-      <property role="2lUGbD" value="-1" />
+      <property role="2lUGbD" value="none" />
       <property role="2l50Ka" value="none" />
       <property role="2l50Km" value="none" />
       <property role="2l50Mm" value="false" />
+      <property role="2l50Lc" value="false" />
       <ref role="1nvAUD" node="3uoNPXnjeUw" resolve="computeBreakingDistance" />
       <ref role="3V$Cn$" node="3JyX84yTqLW" resolve="controlLoop" />
       <node concept="1h5QrK" id="3JyX84yUfVT" role="lGtFl">
@@ -3056,7 +3061,7 @@
     <node concept="1W1s6O" id="3JyX84yTv$m" role="3V$2$K">
       <property role="2lUGeZ" value="false" />
       <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="-1" />
+      <property role="2lUGbD" value="none" />
       <property role="2l50Ka" value="none" />
       <property role="2l50Km" value="none" />
       <property role="2l50Mm" value="false" />
@@ -3069,7 +3074,7 @@
     <node concept="1nvAUJ" id="6_lULi3$Woo" role="3V$2$K">
       <property role="2lUGeZ" value="false" />
       <property role="2lUHrg" value="-1" />
-      <property role="2lUGbD" value="-1" />
+      <property role="2lUGbD" value="none" />
       <property role="2l50Ka" value="none" />
       <property role="2l50Km" value="none" />
       <property role="2l50Mm" value="false" />
@@ -3081,7 +3086,7 @@
     <node concept="gU3p5" id="6_lULi3AZHC" role="3V$2$K">
       <property role="2lUGeZ" value="false" />
       <property role="2lUHrg" value="-1" />
-      <property role="2lUGbD" value="-1" />
+      <property role="2lUGbD" value="none" />
       <property role="2l50Ka" value="none" />
       <property role="2l50Km" value="none" />
       <property role="2l50Mm" value="false" />

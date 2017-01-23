@@ -8,8 +8,8 @@
   <imports>
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
     <import index="97v6" ref="r:cdcd02c7-c183-4a14-baf5-bd6025a1a5a1(com.mbeddr.analyses.acsl.structure)" implicit="true" />
-    <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -190,7 +190,7 @@
         <property role="3F0ifm" value="requires:" />
       </node>
       <node concept="3F1sOY" id="3i$cQqpAZFn" role="3EZMnx">
-        <ref role="1NtTu8" to="q5q6:637qsduSbtq" resolve="exp" />
+        <ref role="1NtTu8" to="pyey:637qsduSbtq" resolve="exp" />
       </node>
       <node concept="l2Vlx" id="3i$cQqpAZF4" role="2iSdaV" />
     </node>
@@ -287,7 +287,7 @@
         <property role="3F0ifm" value="ensures:" />
       </node>
       <node concept="3F1sOY" id="3i$cQqpDvqv" role="3EZMnx">
-        <ref role="1NtTu8" to="q5q6:637qsduSbtq" resolve="exp" />
+        <ref role="1NtTu8" to="pyey:637qsduSbtq" resolve="exp" />
       </node>
       <node concept="l2Vlx" id="3i$cQqpDvqw" role="2iSdaV" />
     </node>

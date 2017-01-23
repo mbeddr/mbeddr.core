@@ -26,6 +26,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
@@ -111,12 +112,6 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
-      </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -212,9 +207,9 @@
             </node>
           </node>
         </node>
-        <node concept="1QHqEK" id="1wu5Hv6hJec" role="3cqZAp">
-          <node concept="1QHqEC" id="1wu5Hv6hJee" role="1QHqEI">
-            <node concept="3clFbS" id="1wu5Hv6hJeg" role="1bW5cS">
+        <node concept="3kxDZ6" id="Hdy9e2Wv_B" role="3cqZAp">
+          <node concept="9aQIb" id="Hdy9e2WvU4" role="3kxCCa">
+            <node concept="3clFbS" id="Hdy9e2WvU6" role="9aQI4">
               <node concept="3clFbF" id="1wu5Hv6hIV8" role="3cqZAp">
                 <node concept="37vLTI" id="1wu5Hv6hIVa" role="3clFbG">
                   <node concept="3cpWs3" id="4kcU3YrkvV2" role="37vLTx">
@@ -237,6 +232,24 @@
                   <node concept="37vLTw" id="1wu5Hv6hIVe" role="37vLTJ">
                     <ref role="3cqZAo" node="4kcU3Yrkv2h" resolve="panFileFullyQualifiedName" />
                   </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="Hdy9e2WjWT" role="3cqZAp">
+                <node concept="3clFbS" id="Hdy9e2WjWU" role="3clFbx">
+                  <node concept="3clFbF" id="Hdy9e2Wl9v" role="3cqZAp">
+                    <node concept="d57v9" id="Hdy9e2WlRM" role="3clFbG">
+                      <node concept="37vLTw" id="Hdy9e2WlRP" role="37vLTJ">
+                        <ref role="3cqZAo" node="4kcU3Yrkv2h" resolve="panFileFullyQualifiedName" />
+                      </node>
+                      <node concept="Xl_RD" id="Hdy9e2Wm5D" role="37vLTx">
+                        <property role="Xl_RC" value=".exe" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="10M0yZ" id="Hdy9e2Wksx" role="3clFbw">
+                  <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+                  <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
                 </node>
               </node>
               <node concept="3clFbJ" id="5wKAmZ3RDqq" role="3cqZAp">
@@ -310,13 +323,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1wu5Hv6hJxr" role="3cqZAp" />
-        <node concept="3SKdUt" id="1wu5Hv6jFem" role="3cqZAp">
-          <node concept="3SKdUq" id="1wu5Hv6jFoC" role="3SKWNk">
-            <property role="3SKdUp" value="UNCLEAR why we need to run make from here and why make is not run as part of the building process" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="1wu5Hv6jvv9" role="3cqZAp" />
+        <node concept="3clFbH" id="Hdy9e2WA5B" role="3cqZAp" />
         <node concept="3cpWs8" id="4kcU3YrkfY0" role="3cqZAp">
           <node concept="3cpWsn" id="4kcU3YrkfY1" role="3cpWs9">
             <property role="TrG5h" value="trb2" />
