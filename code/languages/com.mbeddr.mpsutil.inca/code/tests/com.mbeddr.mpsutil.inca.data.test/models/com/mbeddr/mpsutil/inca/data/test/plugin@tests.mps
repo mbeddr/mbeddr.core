@@ -1951,7 +1951,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="4gUX5LzYvDb">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil.inca" />
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil.inca/code" />
   </node>
 </model>
 
