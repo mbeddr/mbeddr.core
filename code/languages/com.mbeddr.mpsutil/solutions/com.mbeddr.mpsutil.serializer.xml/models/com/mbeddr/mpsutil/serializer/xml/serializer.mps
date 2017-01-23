@@ -49,6 +49,9 @@
         <child id="1153952416686" name="body" index="2GV8ay" />
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
       </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
         <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
@@ -92,6 +95,7 @@
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <property id="1075300953594" name="abstractClass" index="1sVAO0" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -355,6 +359,21 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="6ADng3KZdY" role="1B3o_S" />
       <node concept="10P_77" id="6ADng3L0aH" role="1tU5fm" />
+    </node>
+    <node concept="312cEg" id="3BoyKeCyNoR" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="serializerProcessor" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="3BoyKeCyNdR" role="1B3o_S" />
+      <node concept="3uibUv" id="3BoyKeCyWHb" role="1tU5fm">
+        <ref role="3uigEE" node="3BoyKeCyWEU" resolve="SerializerProcessor" />
+      </node>
+      <node concept="2ShNRf" id="3BoyKeCyXS9" role="33vP2m">
+        <node concept="HV5vD" id="3BoyKeCyYIV" role="2ShVmc">
+          <ref role="HV5vE" node="3BoyKeCyWEU" resolve="SerializerProcessor" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="5u_Ubmjng0" role="jymVt" />
     <node concept="3clFbW" id="15ggCWlceYH" role="jymVt">
@@ -1042,15 +1061,33 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="15ggCWlc$Td" role="3cqZAp">
-              <node concept="2OqwBi" id="15ggCWlc_j9" role="3clFbG">
-                <node concept="37vLTw" id="15ggCWlc$Tb" role="2Oq$k0">
-                  <ref role="3cqZAo" node="15ggCWlcvgh" resolve="result" />
+            <node concept="3clFbJ" id="3BoyKeCz3pC" role="3cqZAp">
+              <node concept="3clFbS" id="3BoyKeCz3pE" role="3clFbx">
+                <node concept="3clFbF" id="15ggCWlc$Td" role="3cqZAp">
+                  <node concept="2OqwBi" id="15ggCWlc_j9" role="3clFbG">
+                    <node concept="37vLTw" id="15ggCWlc$Tb" role="2Oq$k0">
+                      <ref role="3cqZAo" node="15ggCWlcvgh" resolve="result" />
+                    </node>
+                    <node concept="liA8E" id="15ggCWlcAjj" role="2OqNvi">
+                      <ref role="37wK5l" to="gphs:~Element.addContent(org.jdom2.Content):org.jdom2.Element" resolve="addContent" />
+                      <node concept="37vLTw" id="15ggCWlcAoJ" role="37wK5m">
+                        <ref role="3cqZAo" node="15ggCWlc$Fa" resolve="child" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="liA8E" id="15ggCWlcAjj" role="2OqNvi">
-                  <ref role="37wK5l" to="gphs:~Element.addContent(org.jdom2.Content):org.jdom2.Element" resolve="addContent" />
-                  <node concept="37vLTw" id="15ggCWlcAoJ" role="37wK5m">
+              </node>
+              <node concept="2OqwBi" id="3BoyKeCz3Cd" role="3clFbw">
+                <node concept="37vLTw" id="3BoyKeCz3rw" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3BoyKeCyNoR" resolve="serializerProcessor" />
+                </node>
+                <node concept="liA8E" id="3BoyKeCz3Sn" role="2OqNvi">
+                  <ref role="37wK5l" node="3BoyKeCyWF1" resolve="postProcess" />
+                  <node concept="37vLTw" id="3BoyKeCz3Uf" role="37wK5m">
                     <ref role="3cqZAo" node="15ggCWlc$Fa" resolve="child" />
+                  </node>
+                  <node concept="2GrUjf" id="3BoyKeCz4n$" role="37wK5m">
+                    <ref role="2Gs0qQ" node="15ggCWlczpv" resolve="root" />
                   </node>
                 </node>
               </node>
@@ -1125,6 +1162,37 @@
       <node concept="37vLTG" id="3BoyKeCvRXT" role="3clF46">
         <property role="TrG5h" value="attrValue" />
         <node concept="17QB3L" id="3BoyKeCvW1A" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3BoyKeCzRs2" role="jymVt" />
+    <node concept="3clFb_" id="3BoyKeCzRXZ" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setSerializerProcessor" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="3BoyKeCzRY2" role="3clF47">
+        <node concept="3clFbF" id="3BoyKeCzSac" role="3cqZAp">
+          <node concept="37vLTI" id="3BoyKeCzTTs" role="3clFbG">
+            <node concept="37vLTw" id="3BoyKeCzTXh" role="37vLTx">
+              <ref role="3cqZAo" node="3BoyKeCzS9p" resolve="serializerProcessor" />
+            </node>
+            <node concept="2OqwBi" id="3BoyKeCzTgG" role="37vLTJ">
+              <node concept="Xjq3P" id="3BoyKeCzSab" role="2Oq$k0" />
+              <node concept="2OwXpG" id="3BoyKeCzTBP" role="2OqNvi">
+                <ref role="2Oxat5" node="3BoyKeCyNoR" resolve="serializerProcessor" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3BoyKeCzRMB" role="1B3o_S" />
+      <node concept="3cqZAl" id="3BoyKeCzRXX" role="3clF45" />
+      <node concept="37vLTG" id="3BoyKeCzS9p" role="3clF46">
+        <property role="TrG5h" value="serializerProcessor" />
+        <node concept="3uibUv" id="3BoyKeCzS9o" role="1tU5fm">
+          <ref role="3uigEE" node="3BoyKeCyWEU" resolve="SerializerProcessor" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5u_Ubmjode" role="jymVt" />
@@ -1591,26 +1659,55 @@
             <node concept="3clFbH" id="W7R2Skiil8" role="3cqZAp" />
             <node concept="1DcWWT" id="5u_Ubml67P" role="3cqZAp">
               <node concept="3clFbS" id="5u_Ubml67S" role="2LFqv$">
-                <node concept="3clFbF" id="5u_Ubmp7S$" role="3cqZAp">
-                  <node concept="2OqwBi" id="5u_Ubmp83C" role="3clFbG">
-                    <node concept="37vLTw" id="5u_Ubmp7Sz" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5u_Ubmjo$B" resolve="result" />
+                <node concept="3cpWs8" id="3BoyKeCyRke" role="3cqZAp">
+                  <node concept="3cpWsn" id="3BoyKeCyRkf" role="3cpWs9">
+                    <property role="TrG5h" value="child" />
+                    <node concept="3uibUv" id="3BoyKeCyRjC" role="1tU5fm">
+                      <ref role="3uigEE" to="gphs:~Element" resolve="Element" />
                     </node>
-                    <node concept="liA8E" id="5u_UbmpaEz" role="2OqNvi">
-                      <ref role="37wK5l" to="gphs:~Element.addContent(org.jdom2.Content):org.jdom2.Element" resolve="addContent" />
-                      <node concept="1rXfSq" id="5u_UbmkCWa" role="37wK5m">
-                        <ref role="37wK5l" node="5u_Ubmjoka" resolve="build" />
-                        <node concept="37vLTw" id="5u_Ubmld$N" role="37wK5m">
-                          <ref role="3cqZAo" node="5u_Ubml67V" resolve="c" />
+                    <node concept="1rXfSq" id="3BoyKeCyRkg" role="33vP2m">
+                      <ref role="37wK5l" node="5u_Ubmjoka" resolve="build" />
+                      <node concept="37vLTw" id="3BoyKeCyRkh" role="37wK5m">
+                        <ref role="3cqZAo" node="5u_Ubml67V" resolve="c" />
+                      </node>
+                      <node concept="2OqwBi" id="3BoyKeCyRki" role="37wK5m">
+                        <node concept="2GrUjf" id="3BoyKeCyRkj" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="5u_UbmjCQb" resolve="containmentLink" />
                         </node>
-                        <node concept="2OqwBi" id="5u_UbmkVfl" role="37wK5m">
-                          <node concept="2GrUjf" id="W7R2Ski$ne" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="5u_UbmjCQb" resolve="containmentLink" />
-                          </node>
-                          <node concept="liA8E" id="W7R2Ski$Pw" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                        <node concept="liA8E" id="3BoyKeCyRkk" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="3BoyKeCyRmg" role="3cqZAp">
+                  <node concept="3clFbS" id="3BoyKeCyRmi" role="3clFbx">
+                    <node concept="3clFbF" id="5u_Ubmp7S$" role="3cqZAp">
+                      <node concept="2OqwBi" id="5u_Ubmp83C" role="3clFbG">
+                        <node concept="37vLTw" id="5u_Ubmp7Sz" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5u_Ubmjo$B" resolve="result" />
+                        </node>
+                        <node concept="liA8E" id="5u_UbmpaEz" role="2OqNvi">
+                          <ref role="37wK5l" to="gphs:~Element.addContent(org.jdom2.Content):org.jdom2.Element" resolve="addContent" />
+                          <node concept="37vLTw" id="3BoyKeCyRkl" role="37wK5m">
+                            <ref role="3cqZAo" node="3BoyKeCyRkf" resolve="child" />
                           </node>
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="3BoyKeCz1$8" role="3clFbw">
+                    <node concept="37vLTw" id="3BoyKeCz1qj" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3BoyKeCyNoR" resolve="serializerProcessor" />
+                    </node>
+                    <node concept="liA8E" id="3BoyKeCz1PU" role="2OqNvi">
+                      <ref role="37wK5l" node="3BoyKeCyWF1" resolve="postProcess" />
+                      <node concept="37vLTw" id="3BoyKeCz1Uc" role="37wK5m">
+                        <ref role="3cqZAo" node="3BoyKeCyRkf" resolve="child" />
+                      </node>
+                      <node concept="37vLTw" id="3BoyKeCz1XQ" role="37wK5m">
+                        <ref role="3cqZAo" node="5u_Ubml67V" resolve="c" />
                       </node>
                     </node>
                   </node>
@@ -4690,6 +4787,35 @@
     </node>
     <node concept="2tJIrI" id="4Wn4fzjFtSs" role="jymVt" />
     <node concept="3Tm1VV" id="4Wn4fzjFtSt" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="3BoyKeCyWEU">
+    <property role="TrG5h" value="SerializerProcessor" />
+    <property role="1sVAO0" value="false" />
+    <node concept="3clFb_" id="3BoyKeCyWF1" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="postProcess" />
+      <node concept="3clFbS" id="3BoyKeCyWF2" role="3clF47">
+        <node concept="3cpWs6" id="3BoyKeCyWG_" role="3cqZAp">
+          <node concept="3clFbT" id="3BoyKeCyWGW" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3BoyKeCyWF3" role="1B3o_S" />
+      <node concept="10P_77" id="3BoyKeCyWF4" role="3clF45" />
+      <node concept="37vLTG" id="3BoyKeCyWF5" role="3clF46">
+        <property role="TrG5h" value="element" />
+        <node concept="3uibUv" id="3BoyKeCyWF6" role="1tU5fm">
+          <ref role="3uigEE" to="gphs:~Element" resolve="Element" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3BoyKeCyWF7" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="3BoyKeCyWF8" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="3BoyKeCyWEV" role="1B3o_S" />
   </node>
 </model>
 
