@@ -105,7 +105,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3TlMh9" id="48EaKWpXzr5" role="3XIe9u">
-            <property role="2hmy$m" value="3" />
+            <property role="2hmy$m" value="7" />
           </node>
         </node>
         <node concept="27v$Wf" id="2aEyMD_O2pb" role="3XIRFZ">
