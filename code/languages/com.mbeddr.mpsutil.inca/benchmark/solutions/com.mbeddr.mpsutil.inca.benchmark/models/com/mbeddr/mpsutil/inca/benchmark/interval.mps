@@ -20,9 +20,7 @@
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
-      <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
-        <child id="4185783222026502647" name="init" index="3XIe9u" />
-      </concept>
+      <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf" />
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
@@ -104,15 +102,12 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
-          <node concept="3TlMh9" id="48EaKWpXzr5" role="3XIe9u">
-            <property role="2hmy$m" value="7" />
-          </node>
         </node>
         <node concept="27v$Wf" id="2aEyMD_O2pb" role="3XIRFZ">
           <node concept="3XIRFW" id="2aEyMD_O2pc" role="27v$W9">
-            <node concept="1_9egQ" id="6LSysPG69lh" role="3XIRFZ">
-              <node concept="3TM6Ey" id="5zFTUsxGK_o" role="1_9egR">
-                <node concept="3ZVu4v" id="6LSysPG69lf" role="1_9fRO">
+            <node concept="1_9egQ" id="3prMUpmvMJA" role="3XIRFZ">
+              <node concept="3TM6Ey" id="3prMUpmvMJO" role="1_9egR">
+                <node concept="3ZVu4v" id="3prMUpmvMJ$" role="1_9fRO">
                   <ref role="3ZVs_2" node="48EaKWpXzr3" resolve="a" />
                 </node>
               </node>
