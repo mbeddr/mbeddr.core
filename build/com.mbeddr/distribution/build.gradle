@@ -86,7 +86,7 @@ task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipF
   workingDir installer_repo
 
   //on windows:
-  commandLine 'cmd', '/c', "NSIS/makensis.exe", installer_repo + "/mbeddr.nsi"
+  commandLine 'cmd', '/c', "NSIS\\makensis.exe", installer_repo + "\\mbeddr.nsi"
 
   //store the output instead of printing to the console:
   standardOutput = new ByteArrayOutputStream()
