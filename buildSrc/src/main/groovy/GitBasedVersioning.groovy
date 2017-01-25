@@ -38,8 +38,8 @@ class GitBasedVersioning {
         getVersion(getGitBranch(), major, minor)
     }
 
-    static String getVersion(branch, major, minor) {
-        def baseVersion = "$major.$minor.${getGitCommitCount()}"
+    static String getVersion(branch, major, minor, count) {
+        def baseVersion = "$major.$minor.$count"
         if (branch == 'master') {
             return baseVersion
         }
