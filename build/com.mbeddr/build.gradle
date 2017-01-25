@@ -19,6 +19,12 @@ if (project.hasProperty('mbeddrBuild')) {
     ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
 }
 
+if (project.hasProperty("mbeddrBuildCounter")) {
+    ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
+} else {
+    ext.mbeddrBuildCounter = GitBasedVersioning.getGitBranch()
+}
+
 println "build:" + mbeddrBuild
 println mbeddrMajor+ "." + mbeddrMinor
 
