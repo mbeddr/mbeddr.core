@@ -2,8 +2,8 @@
 <model ref="r:38e1b852-361b-47c0-99e1-1944e9fcd4c9(com.mbeddr.analyses.spin.c.patterns.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
@@ -60,6 +60,9 @@
     <property role="EcuMT" value="4708346905221050110" />
     <property role="3GE5qa" value="harness" />
     <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <node concept="PrWs8" id="4ATA_JBrQG2" role="PzmwI">
+      <ref role="PrY4T" to="k146:6viY8n0hYkZ" resolve="IRangeContext" />
+    </node>
     <node concept="1TJgyj" id="45nq91X0EWs" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="exp" />
@@ -72,9 +75,6 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="vals" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="4ATA_JBrQG2" role="PzmwI">
-      <ref role="PrY4T" to="k146:6viY8n0hYkZ" resolve="IRangeContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="439FXGf05P">
@@ -144,47 +144,6 @@
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5hi7ucOryWz">
-    <property role="EcuMT" value="6075951708950638371" />
-    <property role="3GE5qa" value="harness.choice" />
-    <property role="TrG5h" value="NondetChoice" />
-    <property role="34LRSv" value="nondet choice" />
-    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
-    <node concept="1TJgyj" id="5hi7ucOryXA" role="1TKVEi">
-      <property role="IQ2ns" value="6075951708950638438" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="choices" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="5hi7ucOryW$" resolve="CChoice" />
-    </node>
-    <node concept="1TJgyj" id="5hi7ucOryZ5" role="1TKVEi">
-      <property role="IQ2ns" value="6075951708950638533" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="else" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5hi7ucOryXC" resolve="DefaultCChoice" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5hi7ucOryW$">
-    <property role="EcuMT" value="6075951708950638372" />
-    <property role="3GE5qa" value="harness.choice" />
-    <property role="TrG5h" value="CChoice" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5hi7ucOryW_" role="1TKVEi">
-      <property role="IQ2ns" value="6075951708950638373" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="statementList" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
-    </node>
-    <node concept="1TJgyj" id="5hi7ucOryZc" role="1TKVEi">
-      <property role="IQ2ns" value="6075951708950638540" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="guard" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5hi7ucOryXC">
     <property role="EcuMT" value="6075951708950638440" />
     <property role="3GE5qa" value="harness.choice" />
@@ -216,6 +175,47 @@
       <property role="20kJfa" value="val" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5hi7ucOryW$">
+    <property role="EcuMT" value="6075951708950638372" />
+    <property role="3GE5qa" value="harness.choice" />
+    <property role="TrG5h" value="CChoice" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5hi7ucOryW_" role="1TKVEi">
+      <property role="IQ2ns" value="6075951708950638373" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="statementList" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="1TJgyj" id="5hi7ucOryZc" role="1TKVEi">
+      <property role="IQ2ns" value="6075951708950638540" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="guard" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5hi7ucOryWz">
+    <property role="EcuMT" value="6075951708950638371" />
+    <property role="3GE5qa" value="harness.choice" />
+    <property role="TrG5h" value="NondetChoice" />
+    <property role="34LRSv" value="nondet choice" />
+    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <node concept="1TJgyj" id="5hi7ucOryXA" role="1TKVEi">
+      <property role="IQ2ns" value="6075951708950638438" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="choices" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5hi7ucOryW$" resolve="CChoice" />
+    </node>
+    <node concept="1TJgyj" id="5hi7ucOryZ5" role="1TKVEi">
+      <property role="IQ2ns" value="6075951708950638533" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="else" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5hi7ucOryXC" resolve="DefaultCChoice" />
     </node>
   </node>
 </model>
