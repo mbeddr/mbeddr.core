@@ -1003,6 +1003,10 @@
       <property role="TrG5h" value="RUNTIME_ERROR" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
+    <node concept="QsSxf" id="5hi7ucOpY0e" role="Qtgdg">
+      <property role="TrG5h" value="OUT_OF_MEMORY" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
   </node>
 </model>
 
