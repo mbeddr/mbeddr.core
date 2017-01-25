@@ -19,6 +19,10 @@ if (project.hasProperty('mbeddrBuild')) {
     ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
 }
 
+println mbeddrBuild
+println mbeddrMajor
+println mbeddrMinor
+
 ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor)
 
 // path variables
