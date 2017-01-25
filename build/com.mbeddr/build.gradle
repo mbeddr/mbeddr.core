@@ -22,13 +22,13 @@ if (project.hasProperty('mbeddrBuild')) {
 if (project.hasProperty("mbeddrBuildCounter")) {
     ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
 } else {
-    ext.mbeddrBuildCounter = GitBasedVersioning.getGitBranch()
+    ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
 }
 
 println "build:" + mbeddrBuild
 println mbeddrMajor+ "." + mbeddrMinor
 
-ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor)
+ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
 
 // path variables
 ext.mpsHomeDir = new File(rootDir, "MPS/MPS-mbeddr-$mpsBuild/")
