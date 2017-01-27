@@ -1,0 +1,32 @@
+// spin -a _030_imbricated_loop.pr 
+// gcc -std=c99 -DSAFETY -o p.exe  pan.c
+
+c_decl {
+  int sum=0;
+}  
+
+active proctype ndc(){
+  int outer = 0;
+  int inner = 0;
+  do
+    :: outer < 10 -> {
+	  outer++;
+	  inner = 0;
+	  do
+        :: inner < 5 -> {
+	      inner++;
+	    }
+        :: break;
+      od;
+	  c_code {
+		printf("outer=%d, inner=%d, sum=%d\n", Pndc->outer, Pndc->inner, sum);
+		sum = sum + Pndc->inner;	  
+		if ( !(sum < 122) ) 
+            {
+              uerror("assertion violated (sum < 122)");
+            }
+	  }
+	}
+    :: else -> break;
+  od;
+}
