@@ -189,11 +189,6 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
-      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
-        <child id="1163668914799" name="condition" index="3K4Cdx" />
-        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
-        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
-      </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -1594,30 +1589,11 @@
                   <node concept="3clFbS" id="6ADng3LaYp" role="3clFbx">
                     <node concept="3clFbF" id="2B_XTD6Y7OF" role="3cqZAp">
                       <node concept="37vLTI" id="2B_XTD6Y7OG" role="3clFbG">
-                        <node concept="3K4zz7" id="2B_XTD6Y7OH" role="37vLTx">
-                          <node concept="Xl_RD" id="2B_XTD6Y7OI" role="3K4GZi">
-                            <property role="Xl_RC" value="0" />
-                          </node>
-                          <node concept="2OqwBi" id="2B_XTD6Y7OJ" role="3K4Cdx">
-                            <node concept="37vLTw" id="2B_XTD6Y7OK" role="2Oq$k0">
-                              <ref role="3cqZAo" node="6ADng3LaCp" resolve="dataType" />
-                            </node>
-                            <node concept="2qgKlT" id="2B_XTD6Y7OL" role="2OqNvi">
-                              <ref role="37wK5l" to="tpcn:hKtFDel" resolve="isEnum" />
-                            </node>
-                          </node>
-                          <node concept="1rXfSq" id="2B_XTD6Y7OM" role="3K4E3e">
-                            <ref role="37wK5l" node="2B_XTD6XSGl" resolve="getEnumDefaultValue" />
-                            <node concept="1PxgMI" id="2B_XTD6Y7ON" role="37wK5m">
-                              <ref role="1m5ApE" to="tpce:fKAxPRV" resolve="EnumerationDataTypeDeclaration" />
-                              <node concept="37vLTw" id="2B_XTD6Y7OO" role="1m5AlR">
-                                <ref role="3cqZAo" node="6ADng3LaCp" resolve="dataType" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
                         <node concept="37vLTw" id="2B_XTD6Y7OP" role="37vLTJ">
                           <ref role="3cqZAo" node="5u_UbmjsO9" resolve="value" />
+                        </node>
+                        <node concept="Xl_RD" id="2B_XTD6Y7OI" role="37vLTx">
+                          <property role="Xl_RC" value="0" />
                         </node>
                       </node>
                     </node>
@@ -1626,8 +1602,8 @@
                     <node concept="37vLTw" id="6ADng3LaZO" role="2Oq$k0">
                       <ref role="3cqZAo" node="6ADng3LaCp" resolve="dataType" />
                     </node>
-                    <node concept="2qgKlT" id="2B_XTD6RAYW" role="2OqNvi">
-                      <ref role="37wK5l" to="tpcn:hKtGTZR" resolve="isSimpleIntegerOrEnumOfInteger" />
+                    <node concept="2qgKlT" id="2B_XTD7hpjU" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcn:hKtGkcn" resolve="isSimpleInteger" />
                     </node>
                   </node>
                   <node concept="3eNFk2" id="6ADng3Lc77" role="3eNLev">
@@ -1635,36 +1611,17 @@
                       <node concept="37vLTw" id="6ADng3Lcce" role="2Oq$k0">
                         <ref role="3cqZAo" node="6ADng3LaCp" resolve="dataType" />
                       </node>
-                      <node concept="2qgKlT" id="2B_XTD6RDce" role="2OqNvi">
-                        <ref role="37wK5l" to="tpcn:hKtGPCt" resolve="isSimpleStringOrEnumOfString" />
+                      <node concept="2qgKlT" id="2B_XTD7hpvU" role="2OqNvi">
+                        <ref role="37wK5l" to="tpcn:hKtFG6a" resolve="isSimpleString" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="6ADng3Lc79" role="3eOfB_">
                       <node concept="3clFbF" id="2B_XTD6Y7uI" role="3cqZAp">
                         <node concept="37vLTI" id="2B_XTD6Y7uJ" role="3clFbG">
-                          <node concept="3K4zz7" id="2B_XTD6Y7uK" role="37vLTx">
-                            <node concept="Xl_RD" id="2B_XTD6Y7uL" role="3K4GZi" />
-                            <node concept="2OqwBi" id="2B_XTD6Y7uM" role="3K4Cdx">
-                              <node concept="37vLTw" id="2B_XTD6Y7uN" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6ADng3LaCp" resolve="dataType" />
-                              </node>
-                              <node concept="2qgKlT" id="2B_XTD6Y7uO" role="2OqNvi">
-                                <ref role="37wK5l" to="tpcn:hKtFDel" resolve="isEnum" />
-                              </node>
-                            </node>
-                            <node concept="1rXfSq" id="2B_XTD6Y7uP" role="3K4E3e">
-                              <ref role="37wK5l" node="2B_XTD6XSGl" resolve="getEnumDefaultValue" />
-                              <node concept="1PxgMI" id="2B_XTD6Y7uQ" role="37wK5m">
-                                <ref role="1m5ApE" to="tpce:fKAxPRV" resolve="EnumerationDataTypeDeclaration" />
-                                <node concept="37vLTw" id="2B_XTD6Y7uR" role="1m5AlR">
-                                  <ref role="3cqZAo" node="6ADng3LaCp" resolve="dataType" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
                           <node concept="37vLTw" id="2B_XTD6Y7uS" role="37vLTJ">
                             <ref role="3cqZAo" node="5u_UbmjsO9" resolve="value" />
                           </node>
+                          <node concept="Xl_RD" id="2B_XTD6Y7uL" role="37vLTx" />
                         </node>
                       </node>
                     </node>
@@ -1674,37 +1631,46 @@
                       <node concept="37vLTw" id="6ADng3Ld2j" role="2Oq$k0">
                         <ref role="3cqZAo" node="6ADng3LaCp" resolve="dataType" />
                       </node>
-                      <node concept="2qgKlT" id="2B_XTD6RDof" role="2OqNvi">
-                        <ref role="37wK5l" to="tpcn:hKtGY3g" resolve="isSimpleBooleanOrEnumOfBoolean" />
+                      <node concept="2qgKlT" id="2B_XTD7hpFU" role="2OqNvi">
+                        <ref role="37wK5l" to="tpcn:hKtGpIQ" resolve="isSimpleBoolean" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="6ADng3LcWJ" role="3eOfB_">
                       <node concept="3clFbF" id="2B_XTD6XYD3" role="3cqZAp">
                         <node concept="37vLTI" id="2B_XTD6Y0do" role="3clFbG">
-                          <node concept="3K4zz7" id="2B_XTD6Y4_u" role="37vLTx">
-                            <node concept="Xl_RD" id="2B_XTD6Y4KJ" role="3K4GZi">
-                              <property role="Xl_RC" value="false" />
-                            </node>
-                            <node concept="2OqwBi" id="2B_XTD6WT9z" role="3K4Cdx">
-                              <node concept="37vLTw" id="2B_XTD6WSZt" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6ADng3LaCp" resolve="dataType" />
-                              </node>
-                              <node concept="2qgKlT" id="2B_XTD6Y2cC" role="2OqNvi">
-                                <ref role="37wK5l" to="tpcn:hKtFDel" resolve="isEnum" />
-                              </node>
-                            </node>
-                            <node concept="1rXfSq" id="2B_XTD6Y0jr" role="3K4E3e">
-                              <ref role="37wK5l" node="2B_XTD6XSGl" resolve="getEnumDefaultValue" />
-                              <node concept="1PxgMI" id="2B_XTD6Y0D9" role="37wK5m">
-                                <ref role="1m5ApE" to="tpce:fKAxPRV" resolve="EnumerationDataTypeDeclaration" />
-                                <node concept="37vLTw" id="2B_XTD6Y0pS" role="1m5AlR">
-                                  <ref role="3cqZAo" node="6ADng3LaCp" resolve="dataType" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
                           <node concept="37vLTw" id="2B_XTD6XYD2" role="37vLTJ">
                             <ref role="3cqZAo" node="5u_UbmjsO9" resolve="value" />
+                          </node>
+                          <node concept="Xl_RD" id="2B_XTD6Y4KJ" role="37vLTx">
+                            <property role="Xl_RC" value="false" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3eNFk2" id="2B_XTD7hpJR" role="3eNLev">
+                    <node concept="2OqwBi" id="2B_XTD7hq4H" role="3eO9$A">
+                      <node concept="37vLTw" id="2B_XTD7hpSR" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6ADng3LaCp" resolve="dataType" />
+                      </node>
+                      <node concept="2qgKlT" id="2B_XTD7hqpF" role="2OqNvi">
+                        <ref role="37wK5l" to="tpcn:hKtFDel" resolve="isEnum" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="2B_XTD7hpJT" role="3eOfB_">
+                      <node concept="3clFbF" id="2B_XTD7hqzH" role="3cqZAp">
+                        <node concept="37vLTI" id="2B_XTD7hqPz" role="3clFbG">
+                          <node concept="37vLTw" id="2B_XTD7hqzG" role="37vLTJ">
+                            <ref role="3cqZAo" node="5u_UbmjsO9" resolve="value" />
+                          </node>
+                          <node concept="1rXfSq" id="2B_XTD6Y0jr" role="37vLTx">
+                            <ref role="37wK5l" node="2B_XTD6XSGl" resolve="getEnumDefaultValue" />
+                            <node concept="1PxgMI" id="2B_XTD6Y0D9" role="37wK5m">
+                              <ref role="1m5ApE" to="tpce:fKAxPRV" resolve="EnumerationDataTypeDeclaration" />
+                              <node concept="37vLTw" id="2B_XTD6Y0pS" role="1m5AlR">
+                                <ref role="3cqZAo" node="6ADng3LaCp" resolve="dataType" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
