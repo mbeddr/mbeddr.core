@@ -642,7 +642,7 @@
       <node concept="3clFbS" id="24G9CRyK8u3" role="2VODD2">
         <node concept="lc7rE" id="24G9CRyKdb9" role="3cqZAp">
           <node concept="la8eA" id="24G9CRyKdbn" role="lcghm">
-            <property role="lacIc" value="skip" />
+            <property role="lacIc" value="skip;" />
           </node>
         </node>
       </node>

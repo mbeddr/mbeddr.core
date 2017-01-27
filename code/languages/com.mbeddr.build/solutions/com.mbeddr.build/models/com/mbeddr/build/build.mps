@@ -10683,6 +10683,24 @@
             <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4b2d3GUoC$X" role="3bR37C">
+          <node concept="3bR9La" id="4b2d3GUoC$Y" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="3JmJHJb$WUS" resolve="com.mbeddr.analyses.spin.c.patterns" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4b2d3GUoC$Z" role="3bR37C">
+          <node concept="3bR9La" id="4b2d3GUoC_0" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7uZw0yZ43Lo" resolve="com.mbeddr.core.pointers" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4b2d3GUoC_1" role="3bR37C">
+          <node concept="3bR9La" id="4b2d3GUoC_2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3JmJHJb_61R" role="2G$12L">
         <property role="BnDLt" value="true" />
