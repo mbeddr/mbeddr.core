@@ -32,6 +32,9 @@
       <concept id="1206444622344" name="jetbrains.mps.lang.dataFlow.structure.BaseEmitVariableStatement" flags="nn" index="3_H0cg">
         <child id="1206444629799" name="variable" index="3_H1SZ" />
       </concept>
+      <concept id="1206454052847" name="jetbrains.mps.lang.dataFlow.structure.EmitCodeForStatement" flags="nn" index="3AgYrR">
+        <child id="1206454079161" name="codeFor" index="3Ah4Yx" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
@@ -54,6 +57,14 @@
             <node concept="3__QtB" id="5p$33BW5kYI" role="2Oq$k0" />
             <node concept="3TrEf2" id="5p$33BW5lBz" role="2OqNvi">
               <ref role="3Tt5mk" to="llb3:45nq91X0EWs" resolve="exp" />
+            </node>
+          </node>
+        </node>
+        <node concept="3AgYrR" id="4ATA_JBp7My" role="3cqZAp">
+          <node concept="2OqwBi" id="4ATA_JBp86c" role="3Ah4Yx">
+            <node concept="3__QtB" id="4ATA_JBp7Rc" role="2Oq$k0" />
+            <node concept="3TrEf2" id="4ATA_JBp8xP" role="2OqNvi">
+              <ref role="3Tt5mk" to="llb3:4ATA_JBp19m" resolve="vals" />
             </node>
           </node>
         </node>
