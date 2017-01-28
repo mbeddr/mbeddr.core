@@ -47,6 +47,7 @@
     <import index="velc" ref="r:1af48fac-0627-4691-aa49-4813fdc5ca8e(com.mbeddr.analyses.spin.c.structure)" />
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
     <import index="i3mj" ref="r:828f323f-b068-42aa-8988-4151fb6af01f(com.mbeddr.analyses.spin.promela.patterns.structure)" />
+    <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.promela.rt.analyzer.model)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -2280,7 +2281,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="5hi7ucOvPnI" role="3cqZAp" />
           <node concept="3clFbF" id="5hi7ucOmXiP" role="3cqZAp">
             <node concept="3clFbT" id="5hi7ucOmXiQ" role="3clFbG">
               <property role="3clFbU" value="false" />
@@ -2349,7 +2349,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="4b2d3GUroxs" role="3cqZAp" />
           <node concept="3clFbF" id="4b2d3GUriLz" role="3cqZAp">
             <node concept="2OqwBi" id="4b2d3GUrk5U" role="3clFbG">
               <node concept="2OqwBi" id="4b2d3GUrj3H" role="2Oq$k0">
@@ -2471,6 +2470,25 @@
                   <node concept="1w9QyX" id="5hi7ucOv6ba" role="3XIRFZ">
                     <node concept="PhEJO" id="5hi7ucOv6bb" role="1waQm9">
                       <property role="PhEJT" value="#Default" />
+                      <node concept="17Uvod" id="4ATA_JBle5Q" role="lGtFl">
+                        <property role="P4ACc" value="3bf5377a-e904-4ded-9754-5a516023bfaa/6113173064526131575/6113173064526131578" />
+                        <property role="2qtEX9" value="value" />
+                        <node concept="3zFVjK" id="4ATA_JBle5R" role="3zH0cK">
+                          <node concept="3clFbS" id="4ATA_JBle5S" role="2VODD2">
+                            <node concept="3clFbF" id="4ATA_JBlees" role="3cqZAp">
+                              <node concept="3cpWs3" id="4ATA_JBleP3" role="3clFbG">
+                                <node concept="Xl_RD" id="4ATA_JBleXE" role="3uHU7w">
+                                  <property role="Xl_RC" value="Default" />
+                                </node>
+                                <node concept="10M0yZ" id="4ATA_JBlevs" role="3uHU7B">
+                                  <ref role="3cqZAo" to="imq8:4ATA_JBl866" resolve="MAJOR_STATE_LHS_PREFIX_MARKER" />
+                                  <ref role="1PxDUh" to="imq8:7XCY$_r9H8M" resolve="SpinWhitnessEntry" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                   <node concept="1_9egQ" id="5hi7ucOsNI$" role="3XIRFZ">
@@ -2537,6 +2555,25 @@
             <node concept="1w9QyX" id="5hi7ucOv5nI" role="3XIRFZ">
               <node concept="PhEJO" id="5hi7ucOv5nJ" role="1waQm9">
                 <property role="PhEJT" value="#Choice" />
+                <node concept="17Uvod" id="4ATA_JBlgyL" role="lGtFl">
+                  <property role="P4ACc" value="3bf5377a-e904-4ded-9754-5a516023bfaa/6113173064526131575/6113173064526131578" />
+                  <property role="2qtEX9" value="value" />
+                  <node concept="3zFVjK" id="4ATA_JBlgyM" role="3zH0cK">
+                    <node concept="3clFbS" id="4ATA_JBlgyN" role="2VODD2">
+                      <node concept="3clFbF" id="4ATA_JBlgFn" role="3cqZAp">
+                        <node concept="3cpWs3" id="4ATA_JBlh9B" role="3clFbG">
+                          <node concept="Xl_RD" id="4ATA_JBlhiq" role="3uHU7w">
+                            <property role="Xl_RC" value="Choice" />
+                          </node>
+                          <node concept="10M0yZ" id="4ATA_JBlgNV" role="3uHU7B">
+                            <ref role="3cqZAo" to="imq8:4ATA_JBl866" resolve="MAJOR_STATE_LHS_PREFIX_MARKER" />
+                            <ref role="1PxDUh" to="imq8:7XCY$_r9H8M" resolve="SpinWhitnessEntry" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="PhEJO" id="5hi7ucOv5nK" role="1waQl2">
                 <property role="PhEJT" value="N" />
@@ -2636,6 +2673,25 @@
             <node concept="1w9QyX" id="5hi7ucOv4e8" role="3XIRFZ">
               <node concept="PhEJO" id="5hi7ucOv4e9" role="1waQm9">
                 <property role="PhEJT" value="#Choice" />
+                <node concept="17Uvod" id="4ATA_JBliuh" role="lGtFl">
+                  <property role="P4ACc" value="3bf5377a-e904-4ded-9754-5a516023bfaa/6113173064526131575/6113173064526131578" />
+                  <property role="2qtEX9" value="value" />
+                  <node concept="3zFVjK" id="4ATA_JBliui" role="3zH0cK">
+                    <node concept="3clFbS" id="4ATA_JBliuj" role="2VODD2">
+                      <node concept="3clFbF" id="4ATA_JBliAR" role="3cqZAp">
+                        <node concept="3cpWs3" id="4ATA_JBlj5j" role="3clFbG">
+                          <node concept="Xl_RD" id="4ATA_JBljei" role="3uHU7w">
+                            <property role="Xl_RC" value="Choice" />
+                          </node>
+                          <node concept="10M0yZ" id="4ATA_JBliJr" role="3uHU7B">
+                            <ref role="3cqZAo" to="imq8:4ATA_JBl866" resolve="MAJOR_STATE_LHS_PREFIX_MARKER" />
+                            <ref role="1PxDUh" to="imq8:7XCY$_r9H8M" resolve="SpinWhitnessEntry" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="PhEJO" id="5hi7ucOv4ea" role="1waQl2">
                 <property role="PhEJT" value="N" />
@@ -2732,6 +2788,11 @@
       <node concept="1PSHZ" id="4b2d3GUpLnQ" role="fMItF">
         <node concept="19_wF0" id="4b2d3GUpLnS" role="19_wF2">
           <property role="19_wF3" value="\#include &lt;stdbool.h&gt;" />
+        </node>
+      </node>
+      <node concept="1PSHZ" id="4ATA_JBmQ5G" role="fMItF">
+        <node concept="19_wF0" id="4ATA_JBmQ5H" role="19_wF2">
+          <property role="19_wF3" value="\#include &lt;stdint.h&gt;" />
         </node>
       </node>
     </node>
