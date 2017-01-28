@@ -10576,6 +10576,12 @@
               <ref role="3bR37D" node="3JmJHJb_0E1" resolve="com.mbeddr.analyses.spin.promela.rt" />
             </node>
           </node>
+          <node concept="1SiIV0" id="4b2d3GUsR_$" role="3bR37C">
+            <node concept="3bR9La" id="4b2d3GUsR__" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="3JmJHJb$PCC" resolve="com.mbeddr.analyses.spin.promela.patterns" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="6efVUW9ETv4" role="3bR37C">
           <node concept="1Busua" id="6efVUW9ETv5" role="1SiIV1">
@@ -10591,6 +10597,70 @@
           <node concept="3bR9La" id="1TbZT1jZGie" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="4b2d3GUsTDW" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.analyses.spin.testing" />
+        <property role="3LESm3" value="05a4b652-ab6c-4890-999b-9c6a576972c7" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="4b2d3GUsUjz" role="3LF7KH">
+          <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
+          <node concept="2Ry0Ak" id="4b2d3GUsWvB" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="4b2d3GUsY8_" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.analyses.spin.testing" />
+              <node concept="2Ry0Ak" id="4b2d3GUsZeA" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.analyses.spin.testing.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4b2d3GUt0kI" role="3bR37C">
+          <node concept="3bR9La" id="4b2d3GUt0kJ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4b2d3GUsTDW" resolve="com.mbeddr.analyses.spin.testing" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4b2d3GUt0kK" role="3bR37C">
+          <node concept="3bR9La" id="4b2d3GUt0kL" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4b2d3GUt0kM" role="3bR37C">
+          <node concept="3bR9La" id="4b2d3GUt0kN" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4b2d3GUt0kO" role="3bR37C">
+          <node concept="1Busua" id="4b2d3GUt0kP" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="4b2d3GUt0kQ" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.analyses.spin.testing#2698519039581919598" />
+          <property role="3LESm3" value="00692bb1-27e4-4527-aa79-4cf0afa910fc" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="4b2d3GUt0kR" role="3bR37C">
+            <node concept="3bR9La" id="4b2d3GUt0kS" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="3JmJHJb_0E1" resolve="com.mbeddr.analyses.spin.promela.rt" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4b2d3GUt0kT" role="3bR37C">
+            <node concept="3bR9La" id="4b2d3GUt0kU" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4b2d3GUt0kV" role="3bR37C">
+            <node concept="3bR9La" id="4b2d3GUt0kW" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+            </node>
           </node>
         </node>
       </node>
