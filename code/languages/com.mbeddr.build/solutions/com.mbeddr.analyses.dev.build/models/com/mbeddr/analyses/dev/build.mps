@@ -1139,6 +1139,12 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4b2d3GUsSN9" role="3bR37C">
+          <node concept="3bR9La" id="4b2d3GUsSNa" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:3JmJHJb$WUS" resolve="com.mbeddr.analyses.spin.c.patterns" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3JmJHJbDg_X" role="2G$12L">
         <property role="BnDLt" value="true" />

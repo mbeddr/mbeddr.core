@@ -191,7 +191,7 @@
     <property role="EcuMT" value="814457274763195488" />
     <property role="TrG5h" value="Assume" />
     <property role="34LRSv" value="assume" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="Hdy9e2Zzhx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="cond" />
