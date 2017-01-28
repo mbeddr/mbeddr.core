@@ -7,6 +7,7 @@
   <imports>
     <import index="llb3" ref="r:38e1b852-361b-47c0-99e1-1944e9fcd4c9(com.mbeddr.analyses.spin.c.patterns.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -39,6 +40,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -65,6 +69,27 @@
               <node concept="13iPFW" id="439FXGfpCD" role="2Oq$k0" />
               <node concept="3TrcHB" id="439FXGfqsT" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5hi7ucOly69">
+    <property role="3GE5qa" value="harness" />
+    <ref role="13h7C2" to="llb3:439FXGfyCs" resolve="HarnessCode" />
+    <node concept="13hLZK" id="5hi7ucOly6a" role="13h7CW">
+      <node concept="3clFbS" id="5hi7ucOly6b" role="2VODD2">
+        <node concept="3clFbF" id="5hi7ucOly6d" role="3cqZAp">
+          <node concept="37vLTI" id="5hi7ucOl_gb" role="3clFbG">
+            <node concept="3clFbT" id="5hi7ucOl_n5" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="5hi7ucOlyw4" role="37vLTJ">
+              <node concept="13iPFW" id="5hi7ucOly6c" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5hi7ucOl$83" role="2OqNvi">
+                <ref role="3TsBF5" to="ir22:2yXYWA1Lzgp" resolve="active" />
               </node>
             </node>
           </node>
