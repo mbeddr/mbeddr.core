@@ -25,6 +25,7 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
@@ -129,7 +130,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="45nq91X0EWD">
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="harness.nondet_assign" />
     <ref role="1XX52x" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
     <node concept="3EZMnI" id="45nq91X0EWF" role="2wV5jI">
       <node concept="3F0ifn" id="45nq91X0EWM" role="3EZMnx">
@@ -294,14 +295,22 @@
       <node concept="3F1sOY" id="36pDmrF0oxm" role="3EZMnx">
         <ref role="1NtTu8" to="llb3:36pDmrF0owW" resolve="exp" />
       </node>
-      <node concept="3F0ifn" id="36pDmrEZQqm" role="3EZMnx">
-        <property role="3F0ifm" value="," />
-        <node concept="11L4FC" id="588HgjJl4Jz" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+      <node concept="_tjkj" id="4ATA_JBx4VV" role="3EZMnx">
+        <node concept="3EZMnI" id="4ATA_JBx4Wc" role="_tjki">
+          <node concept="3F0ifn" id="4ATA_JBx4Wl" role="3EZMnx">
+            <property role="3F0ifm" value="," />
+            <node concept="11L4FC" id="4ATA_JBx4Yd" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="4ATA_JBx4Wv" role="3EZMnx">
+            <ref role="1NtTu8" to="llb3:36pDmrEZ2Dy" resolve="val" />
+          </node>
+          <node concept="l2Vlx" id="4ATA_JBx4Wf" role="2iSdaV" />
+          <node concept="VPM3Z" id="4ATA_JBx4Wg" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
         </node>
-      </node>
-      <node concept="3F1sOY" id="36pDmrEZQqD" role="3EZMnx">
-        <ref role="1NtTu8" to="llb3:36pDmrEZ2Dy" resolve="val" />
       </node>
       <node concept="3F0ifn" id="36pDmrEZQqR" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -473,6 +482,24 @@
         </node>
       </node>
       <node concept="l2Vlx" id="5hi7ucOtnlK" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1BFQdmJZZAd">
+    <property role="3GE5qa" value="harness.nondet_assign" />
+    <ref role="1XX52x" to="llb3:1BFQdmJZZ5k" resolve="DiscreteValuesExpression" />
+    <node concept="3EZMnI" id="1BFQdmJZZAf" role="2wV5jI">
+      <node concept="3F0ifn" id="1BFQdmK12zg" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
+      <node concept="3F2HdR" id="1BFQdmJZZAp" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="llb3:1BFQdmJZZA3" resolve="elements" />
+        <node concept="l2Vlx" id="1BFQdmJZZAr" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="1BFQdmK12zq" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="l2Vlx" id="1BFQdmJZZAi" role="2iSdaV" />
     </node>
   </node>
 </model>
