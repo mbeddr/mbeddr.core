@@ -48,7 +48,7 @@
     </language>
   </registry>
   <node concept="3_zdsH" id="5p$33BW5kXx">
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="harness.nondet_assign" />
     <ref role="3_znuS" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
     <node concept="3__wT9" id="5p$33BW5kXy" role="3_A6iZ">
       <node concept="3clFbS" id="5p$33BW5kXz" role="2VODD2">

@@ -58,7 +58,7 @@
     <property role="TrG5h" value="NondetAssign" />
     <property role="34LRSv" value="nondet_assign" />
     <property role="EcuMT" value="4708346905221050110" />
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="harness.nondet_assign" />
     <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="45nq91X0EWs" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -140,7 +140,7 @@
       <property role="IQ2ns" value="3574069640742840930" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="val" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
@@ -216,6 +216,20 @@
       <property role="20kJfa" value="val" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1BFQdmJZZ5k">
+    <property role="EcuMT" value="1867824882767622484" />
+    <property role="3GE5qa" value="harness.nondet_assign" />
+    <property role="TrG5h" value="DiscreteValuesExpression" />
+    <property role="34LRSv" value="{" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="1BFQdmJZZA3" role="1TKVEi">
+      <property role="IQ2ns" value="1867824882767624579" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrDq" resolve="Literal" />
     </node>
   </node>
 </model>
