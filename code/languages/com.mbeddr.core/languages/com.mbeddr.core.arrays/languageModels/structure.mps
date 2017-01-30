@@ -274,5 +274,10 @@
     <property role="TrG5h" value="ISpecialArrayTypeOperationContext" />
     <property role="EcuMT" value="3496159422239377518" />
   </node>
+  <node concept="PlHQZ" id="VrCF7yRrMK">
+    <property role="EcuMT" value="1070628221329718448" />
+    <property role="3GE5qa" value="arrays" />
+    <property role="TrG5h" value="IDoNotRequireStaticallyEvaluatableSize" />
+  </node>
 </model>
 
