@@ -34,6 +34,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.extensionclass/com.mbeddr.mpsutil.extensionclass.mpl" folder="staging.extensionclass" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="staging.projectview" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/solutions/pluginSolution/com.mbeddr.mpsutil.favourites.plugin.msd" folder="staging.projectview" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.filepicker/com.mbeddr.mpsutil.filepicker.mpl" folder="stable" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.forms/com.mbeddr.mpsutil.forms.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.mpl" folder="rest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" folder="staging" />
