@@ -115,7 +115,7 @@
     </node>
     <node concept="2tJIrI" id="5Gboyv9DlCa" role="jymVt" />
     <node concept="2YIFZL" id="5Gboyv9DlCy" role="jymVt">
-      <property role="TrG5h" value="tempVarNameForNondetAssign" />
+      <property role="TrG5h" value="tempVarNameForAssign" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -182,7 +182,7 @@
               <ref role="3cqZAo" node="4ATA_JBoJTo" resolve="normalizedName" />
             </node>
             <node concept="Xl_RD" id="5Gboyv9DlDT" role="3uHU7B">
-              <property role="Xl_RC" value="tmpVar_" />
+              <property role="Xl_RC" value="tmpVar_nondet_assign_" />
             </node>
           </node>
         </node>
@@ -200,6 +200,7 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5Gboyv9Eosm" role="jymVt" />
+    <node concept="2tJIrI" id="1BFQdmKfGOs" role="jymVt" />
   </node>
   <node concept="312cEu" id="5hi7ucOvrGt">
     <property role="TrG5h" value="AccessToCCodeUtils" />
