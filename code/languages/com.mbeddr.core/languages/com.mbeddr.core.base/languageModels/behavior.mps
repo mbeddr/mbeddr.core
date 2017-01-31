@@ -63,6 +63,8 @@
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="gtp9" ref="r:007d0985-20e2-4d70-80f1-d0de1aff1076(com.mbeddr.mpsutil.common.graph)" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
@@ -7413,7 +7415,7 @@
   </node>
   <node concept="13h7C7" id="5lKnBeAtOE7">
     <property role="3GE5qa" value="pathAndFile" />
-    <ref role="13h7C2" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+    <ref role="13h7C2" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
     <node concept="13i0hz" id="5lKnBeB0qXj" role="13h7CS">
       <property role="TrG5h" value="pickDirOnly" />
       <property role="13i0it" value="true" />
@@ -7485,7 +7487,7 @@
             <node concept="2OqwBi" id="2rWX5ToBpq$" role="37wK5m">
               <node concept="13iPFW" id="2rWX5ToBpn6" role="2Oq$k0" />
               <node concept="3TrcHB" id="2rWX5ToBpB7" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
           </node>
@@ -7705,7 +7707,7 @@
                   <node concept="2OqwBi" id="7ZxIDztH8iB" role="37wK5m">
                     <node concept="13iPFW" id="7ZxIDztH8gg" role="2Oq$k0" />
                     <node concept="3TrcHB" id="7ZxIDztH8si" role="2OqNvi">
-                      <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                      <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
                     </node>
                   </node>
                 </node>
@@ -7744,7 +7746,7 @@
                   <node concept="2OqwBi" id="7ZxIDztH6FT" role="37wK5m">
                     <node concept="13iPFW" id="7ZxIDztH6$$" role="2Oq$k0" />
                     <node concept="3TrcHB" id="7ZxIDztH6RE" role="2OqNvi">
-                      <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                      <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
                     </node>
                   </node>
                 </node>
@@ -7793,7 +7795,7 @@
                   <node concept="2OqwBi" id="7ZxIDztH7Ub" role="37wK5m">
                     <node concept="13iPFW" id="7ZxIDztH7RM" role="2Oq$k0" />
                     <node concept="3TrcHB" id="7ZxIDztH85k" role="2OqNvi">
-                      <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                      <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
                     </node>
                   </node>
                 </node>
@@ -7854,7 +7856,7 @@
               <node concept="2yIwOk" id="3o2OLGutbd0" role="2OqNvi" />
             </node>
             <node concept="35c_gC" id="3o2OLGutb_Y" role="3uHU7w">
-              <ref role="35c_gD" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+              <ref role="35c_gD" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
             </node>
           </node>
           <node concept="3clFbS" id="3o2OLGuta67" role="3clFbx">
@@ -7977,7 +7979,7 @@
                         <node concept="2OqwBi" id="7ZxIDztwivp" role="3uHU7B">
                           <node concept="13iPFW" id="7ZxIDztwipi" role="2Oq$k0" />
                           <node concept="3TrcHB" id="7ZxIDztwiGt" role="2OqNvi">
-                            <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                            <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
                           </node>
                         </node>
                         <node concept="10Nm6u" id="7ZxIDztwjxn" role="3uHU7w" />
@@ -7986,7 +7988,7 @@
                         <node concept="2OqwBi" id="7ZxIDztwjN4" role="2Oq$k0">
                           <node concept="13iPFW" id="7ZxIDztwjGB" role="2Oq$k0" />
                           <node concept="3TrcHB" id="7ZxIDztwk0u" role="2OqNvi">
-                            <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                            <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
                           </node>
                         </node>
                         <node concept="17RlXB" id="7ZxIDztwlex" role="2OqNvi" />
@@ -8000,7 +8002,7 @@
                         <node concept="2OqwBi" id="3NapiAKXM6q" role="2Oq$k0">
                           <node concept="13iPFW" id="3NapiAKXM6r" role="2Oq$k0" />
                           <node concept="3TrcHB" id="3NapiAKXM6s" role="2OqNvi">
-                            <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                            <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
                           </node>
                         </node>
                         <node concept="liA8E" id="3NapiAKXM6t" role="2OqNvi">
@@ -8041,7 +8043,7 @@
                       <node concept="2OqwBi" id="2rWX5TotCSu" role="3uHU7B">
                         <node concept="13iPFW" id="2rWX5TotCQV" role="2Oq$k0" />
                         <node concept="3TrcHB" id="2rWX5TotDop" role="2OqNvi">
-                          <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                          <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
                         </node>
                       </node>
                     </node>
@@ -8055,7 +8057,7 @@
                               <node concept="2OqwBi" id="2rWX5TotGuW" role="2Oq$k0">
                                 <node concept="13iPFW" id="2rWX5TotGuX" role="2Oq$k0" />
                                 <node concept="3TrcHB" id="2rWX5TotGuY" role="2OqNvi">
-                                  <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                                  <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="2rWX5TotGuZ" role="2OqNvi">
@@ -8078,7 +8080,7 @@
                                   <node concept="2OqwBi" id="2rWX5TotHcs" role="2Oq$k0">
                                     <node concept="13iPFW" id="2rWX5TotHct" role="2Oq$k0" />
                                     <node concept="3TrcHB" id="2rWX5TotHcu" role="2OqNvi">
-                                      <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                                      <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2rWX5TotHcv" role="2OqNvi">
@@ -8209,7 +8211,7 @@
               <node concept="2OqwBi" id="7ZxIDztwFSF" role="37wK5m">
                 <node concept="13iPFW" id="7ZxIDztwFMS" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7ZxIDztwG5G" role="2OqNvi">
-                  <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                  <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
                 </node>
               </node>
             </node>
@@ -8689,7 +8691,7 @@
       <node concept="3Tm1VV" id="3xqp6yeWGLv" role="1B3o_S" />
       <node concept="3clFbS" id="3xqp6yeWGLw" role="3clF47" />
       <node concept="3Tqbb2" id="3xqp6yeWTbp" role="3clF45">
-        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
       </node>
     </node>
     <node concept="13hLZK" id="5lKnBeAtTjs" role="13h7CW">
@@ -8702,7 +8704,7 @@
             <node concept="2OqwBi" id="2mxBqli8SIP" role="37vLTJ">
               <node concept="13iPFW" id="2mxBqli8PwH" role="2Oq$k0" />
               <node concept="3TrcHB" id="2mxBqli8T0y" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:2mxBqli8MW4" resolve="pointOnlyToExistingFile" />
+                <ref role="3TsBF5" to="vs0r:2mxBqli8MW4" resolve="pointOnlyToExistingFile_old" />
               </node>
             </node>
           </node>
@@ -8715,7 +8717,7 @@
             <node concept="2OqwBi" id="x1qBk$URm" role="37vLTJ">
               <node concept="13iPFW" id="x1qBk$UQ1" role="2Oq$k0" />
               <node concept="3TrcHB" id="x1qBk$V9T" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:x1qBkorxt" resolve="mayBeEmpty" />
+                <ref role="3TsBF5" to="vs0r:x1qBkorxt" resolve="mayBeEmpty_old" />
               </node>
             </node>
           </node>
@@ -8725,7 +8727,7 @@
   </node>
   <node concept="13h7C7" id="5lKnBeAxLkA">
     <property role="3GE5qa" value="pathAndFile" />
-    <ref role="13h7C2" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+    <ref role="13h7C2" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker_old" />
     <node concept="13hLZK" id="5lKnBeAxLkB" role="13h7CW">
       <node concept="3clFbS" id="5lKnBeAxLkC" role="2VODD2" />
     </node>
@@ -8822,12 +8824,12 @@
           <node concept="3cpWsn" id="3xqp6yeXe6T" role="3cpWs9">
             <property role="TrG5h" value="picker" />
             <node concept="3Tqbb2" id="3xqp6yeXe6U" role="1tU5fm">
-              <ref role="ehGHo" to="vs0r:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
+              <ref role="ehGHo" to="vs0r:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker_old" />
             </node>
             <node concept="2ShNRf" id="3xqp6yeXe6V" role="33vP2m">
               <node concept="3zrR0B" id="3xqp6yeXe6W" role="2ShVmc">
                 <node concept="3Tqbb2" id="3xqp6yeXe6X" role="3zrR0E">
-                  <ref role="ehGHo" to="vs0r:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
+                  <ref role="ehGHo" to="vs0r:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker_old" />
                 </node>
               </node>
             </node>
@@ -8838,7 +8840,7 @@
             <node concept="2OqwBi" id="3xqp6yeXe70" role="37vLTx">
               <node concept="13iPFW" id="3xqp6yeXe71" role="2Oq$k0" />
               <node concept="3TrcHB" id="3xqp6yeXe72" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
             <node concept="2OqwBi" id="3xqp6yeXe73" role="37vLTJ">
@@ -8846,7 +8848,7 @@
                 <ref role="3cqZAo" node="3xqp6yeXe6T" resolve="picker" />
               </node>
               <node concept="3TrcHB" id="3xqp6yeXe75" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
           </node>
@@ -8858,13 +8860,13 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="3xqp6yeXe78" role="3clF45">
-        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
       </node>
     </node>
   </node>
   <node concept="13h7C7" id="2iGZqsHuRUA">
     <property role="3GE5qa" value="pathAndFile" />
-    <ref role="13h7C2" to="vs0r:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
+    <ref role="13h7C2" to="vs0r:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker_old" />
     <node concept="13i0hz" id="2iGZqsHuRWr" role="13h7CS">
       <property role="TrG5h" value="getErrorMessage" />
       <property role="13i0it" value="false" />
@@ -8956,12 +8958,12 @@
           <node concept="3cpWsn" id="3xqp6yeXdUZ" role="3cpWs9">
             <property role="TrG5h" value="picker" />
             <node concept="3Tqbb2" id="3xqp6yeXdV0" role="1tU5fm">
-              <ref role="ehGHo" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+              <ref role="ehGHo" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker_old" />
             </node>
             <node concept="2ShNRf" id="3xqp6yeXdV1" role="33vP2m">
               <node concept="3zrR0B" id="3xqp6yeXdV2" role="2ShVmc">
                 <node concept="3Tqbb2" id="3xqp6yeXdV3" role="3zrR0E">
-                  <ref role="ehGHo" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+                  <ref role="ehGHo" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker_old" />
                 </node>
               </node>
             </node>
@@ -8972,7 +8974,7 @@
             <node concept="2OqwBi" id="3xqp6yeXdV6" role="37vLTx">
               <node concept="13iPFW" id="3xqp6yeXdV7" role="2Oq$k0" />
               <node concept="3TrcHB" id="3xqp6yeXdV8" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
             <node concept="2OqwBi" id="3xqp6yeXdV9" role="37vLTJ">
@@ -8980,7 +8982,7 @@
                 <ref role="3cqZAo" node="3xqp6yeXdUZ" resolve="picker" />
               </node>
               <node concept="3TrcHB" id="3xqp6yeXdVb" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
           </node>
@@ -8992,7 +8994,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="3xqp6yeXdVe" role="3clF45">
-        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
       </node>
     </node>
     <node concept="13hLZK" id="2iGZqsHuRUB" role="13h7CW">
@@ -15317,7 +15319,7 @@
   </node>
   <node concept="13h7C7" id="7c_RIoB8H9o">
     <property role="3GE5qa" value="pathAndFile" />
-    <ref role="13h7C2" to="vs0r:7c_RIoB8H2I" resolve="MacroFilePicker" />
+    <ref role="13h7C2" to="vs0r:7c_RIoB8H2I" resolve="MacroFilePicker_old" />
     <node concept="13hLZK" id="7c_RIoB8H9p" role="13h7CW">
       <node concept="3clFbS" id="7c_RIoB8H9q" role="2VODD2" />
     </node>
@@ -15339,7 +15341,7 @@
               <node concept="2OqwBi" id="7c_RIoB8TQf" role="37wK5m">
                 <node concept="13iPFW" id="7c_RIoB8TMH" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7c_RIoB8UbC" role="2OqNvi">
-                  <ref role="3TsBF5" to="vs0r:7c_RIoB8OqH" resolve="macro" />
+                  <ref role="3TsBF5" to="vs0r:7c_RIoB8OqH" resolve="macro_old" />
                 </node>
               </node>
             </node>
@@ -15372,7 +15374,7 @@
                   <node concept="2OqwBi" id="2rWX5ToH3Wk" role="3uHU7w">
                     <node concept="13iPFW" id="2rWX5ToH3RI" role="2Oq$k0" />
                     <node concept="3TrcHB" id="2rWX5ToH4k$" role="2OqNvi">
-                      <ref role="3TsBF5" to="vs0r:7c_RIoB8OqH" resolve="macro" />
+                      <ref role="3TsBF5" to="vs0r:7c_RIoB8OqH" resolve="macro_old" />
                     </node>
                   </node>
                 </node>
@@ -15425,12 +15427,12 @@
           <node concept="3cpWsn" id="3xqp6yeXdvN" role="3cpWs9">
             <property role="TrG5h" value="picker" />
             <node concept="3Tqbb2" id="3xqp6yeXdvO" role="1tU5fm">
-              <ref role="ehGHo" to="vs0r:4eXJ6EO9ZKx" resolve="MacroFolderPicker" />
+              <ref role="ehGHo" to="vs0r:4eXJ6EO9ZKx" resolve="MacroFolderPicker_old" />
             </node>
             <node concept="2ShNRf" id="3xqp6yeXdvP" role="33vP2m">
               <node concept="3zrR0B" id="3xqp6yeXdvQ" role="2ShVmc">
                 <node concept="3Tqbb2" id="3xqp6yeXdvR" role="3zrR0E">
-                  <ref role="ehGHo" to="vs0r:4eXJ6EO9ZKx" resolve="MacroFolderPicker" />
+                  <ref role="ehGHo" to="vs0r:4eXJ6EO9ZKx" resolve="MacroFolderPicker_old" />
                 </node>
               </node>
             </node>
@@ -15441,7 +15443,7 @@
             <node concept="2OqwBi" id="3xqp6yeXdvU" role="37vLTx">
               <node concept="13iPFW" id="3xqp6yeXdvV" role="2Oq$k0" />
               <node concept="3TrcHB" id="3xqp6yeXdvW" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
             <node concept="2OqwBi" id="3xqp6yeXdvX" role="37vLTJ">
@@ -15449,7 +15451,7 @@
                 <ref role="3cqZAo" node="3xqp6yeXdvN" resolve="picker" />
               </node>
               <node concept="3TrcHB" id="3xqp6yeXdvZ" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
           </node>
@@ -15459,7 +15461,7 @@
             <node concept="2OqwBi" id="2rWX5ToFl6i" role="37vLTx">
               <node concept="13iPFW" id="2rWX5ToFl3y" role="2Oq$k0" />
               <node concept="3TrcHB" id="2rWX5ToFluL" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:7c_RIoB8OqH" resolve="macro" />
+                <ref role="3TsBF5" to="vs0r:7c_RIoB8OqH" resolve="macro_old" />
               </node>
             </node>
             <node concept="2OqwBi" id="2rWX5ToFkoh" role="37vLTJ">
@@ -15467,7 +15469,7 @@
                 <ref role="3cqZAo" node="3xqp6yeXdvN" resolve="picker" />
               </node>
               <node concept="3TrcHB" id="2rWX5ToFkLc" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:4eXJ6EO9ZKy" resolve="macro" />
+                <ref role="3TsBF5" to="vs0r:4eXJ6EO9ZKy" resolve="macro_old" />
               </node>
             </node>
           </node>
@@ -15479,7 +15481,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="3xqp6yeXdw2" role="3clF45">
-        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
       </node>
     </node>
   </node>
@@ -20873,7 +20875,7 @@
             <node concept="2OqwBi" id="1Jcbkuz0289" role="3uHU7w">
               <node concept="13iPFW" id="1Jcbkuz023h" role="2Oq$k0" />
               <node concept="3TrcHB" id="1Jcbkuz02_B" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="68mc:5lKnBeAtODI" resolve="path" />
               </node>
             </node>
             <node concept="Xl_RD" id="1Jcbkuz01UN" role="3uHU7B">
@@ -20927,7 +20929,7 @@
                       <node concept="1pGfFk" id="1JcbkuyHaas" role="2ShVmc">
                         <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.lang.String)" resolve="FileReader" />
                         <node concept="BsUDl" id="1JcbkuyHalf" role="37wK5m">
-                          <ref role="37wK5l" node="5lKnBeAuKov" resolve="getCanonicalPath" />
+                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
@@ -21025,7 +21027,7 @@
           <node concept="2OqwBi" id="1JcbkuyG4mS" role="3clFbw">
             <node concept="13iPFW" id="1JcbkuyG4k7" role="2Oq$k0" />
             <node concept="2qgKlT" id="1JcbkuyG4Of" role="2OqNvi">
-              <ref role="37wK5l" node="5lKnBeAufga" resolve="isValidFile" />
+              <ref role="37wK5l" to="48kf:5lKnBeAufga" resolve="isValidFile" />
             </node>
           </node>
         </node>
@@ -21100,7 +21102,7 @@
           <node concept="2OqwBi" id="1JcbkuyFXdP" role="3clFbG">
             <node concept="13iPFW" id="1JcbkuyFXb0" role="2Oq$k0" />
             <node concept="2qgKlT" id="1JcbkuyFXF4" role="2OqNvi">
-              <ref role="37wK5l" node="5lKnBeAufga" resolve="isValidFile" />
+              <ref role="37wK5l" to="48kf:5lKnBeAufga" resolve="isValidFile" />
             </node>
           </node>
         </node>
@@ -22517,7 +22519,7 @@
   </node>
   <node concept="13h7C7" id="4eXJ6EO9ZU9">
     <property role="3GE5qa" value="pathAndFile" />
-    <ref role="13h7C2" to="vs0r:4eXJ6EO9ZKx" resolve="MacroFolderPicker" />
+    <ref role="13h7C2" to="vs0r:4eXJ6EO9ZKx" resolve="MacroFolderPicker_old" />
     <node concept="13i0hz" id="4eXJ6EO9ZUc" role="13h7CS">
       <property role="TrG5h" value="pickDirOnly" />
       <property role="13i0it" value="false" />
@@ -22554,7 +22556,7 @@
               <node concept="2OqwBi" id="4eXJ6EOwIQu" role="37wK5m">
                 <node concept="13iPFW" id="4eXJ6EOwIQv" role="2Oq$k0" />
                 <node concept="3TrcHB" id="4eXJ6EOwIQw" role="2OqNvi">
-                  <ref role="3TsBF5" to="vs0r:4eXJ6EO9ZKy" resolve="macro" />
+                  <ref role="3TsBF5" to="vs0r:4eXJ6EO9ZKy" resolve="macro_old" />
                 </node>
               </node>
             </node>
@@ -22587,7 +22589,7 @@
                   <node concept="2OqwBi" id="2rWX5ToH566" role="3uHU7w">
                     <node concept="13iPFW" id="2rWX5ToH567" role="2Oq$k0" />
                     <node concept="3TrcHB" id="2rWX5ToH568" role="2OqNvi">
-                      <ref role="3TsBF5" to="vs0r:4eXJ6EO9ZKy" resolve="macro" />
+                      <ref role="3TsBF5" to="vs0r:4eXJ6EO9ZKy" resolve="macro_old" />
                     </node>
                   </node>
                 </node>
@@ -22640,12 +22642,12 @@
           <node concept="3cpWsn" id="3xqp6yeXdHR" role="3cpWs9">
             <property role="TrG5h" value="picker" />
             <node concept="3Tqbb2" id="3xqp6yeXdHS" role="1tU5fm">
-              <ref role="ehGHo" to="vs0r:7c_RIoB8H2I" resolve="MacroFilePicker" />
+              <ref role="ehGHo" to="vs0r:7c_RIoB8H2I" resolve="MacroFilePicker_old" />
             </node>
             <node concept="2ShNRf" id="3xqp6yeXdHT" role="33vP2m">
               <node concept="3zrR0B" id="3xqp6yeXdHU" role="2ShVmc">
                 <node concept="3Tqbb2" id="3xqp6yeXdHV" role="3zrR0E">
-                  <ref role="ehGHo" to="vs0r:7c_RIoB8H2I" resolve="MacroFilePicker" />
+                  <ref role="ehGHo" to="vs0r:7c_RIoB8H2I" resolve="MacroFilePicker_old" />
                 </node>
               </node>
             </node>
@@ -22656,7 +22658,7 @@
             <node concept="2OqwBi" id="3xqp6yeXdHY" role="37vLTx">
               <node concept="13iPFW" id="3xqp6yeXdHZ" role="2Oq$k0" />
               <node concept="3TrcHB" id="3xqp6yeXdI0" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
             <node concept="2OqwBi" id="3xqp6yeXdI1" role="37vLTJ">
@@ -22664,7 +22666,7 @@
                 <ref role="3cqZAo" node="3xqp6yeXdHR" resolve="picker" />
               </node>
               <node concept="3TrcHB" id="3xqp6yeXdI3" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
           </node>
@@ -22674,7 +22676,7 @@
             <node concept="2OqwBi" id="2rWX5ToFmoZ" role="37vLTx">
               <node concept="13iPFW" id="2rWX5ToFmmf" role="2Oq$k0" />
               <node concept="3TrcHB" id="2rWX5ToFmLu" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:4eXJ6EO9ZKy" resolve="macro" />
+                <ref role="3TsBF5" to="vs0r:4eXJ6EO9ZKy" resolve="macro_old" />
               </node>
             </node>
             <node concept="2OqwBi" id="2rWX5ToFlG8" role="37vLTJ">
@@ -22682,7 +22684,7 @@
                 <ref role="3cqZAo" node="3xqp6yeXdHR" resolve="picker" />
               </node>
               <node concept="3TrcHB" id="2rWX5ToFm3T" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:7c_RIoB8OqH" resolve="macro" />
+                <ref role="3TsBF5" to="vs0r:7c_RIoB8OqH" resolve="macro_old" />
               </node>
             </node>
           </node>
@@ -22694,13 +22696,13 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="3xqp6yeXdI6" role="3clF45">
-        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
       </node>
     </node>
   </node>
   <node concept="13h7C7" id="4eXJ6EOwIHS">
     <property role="3GE5qa" value="pathAndFile" />
-    <ref role="13h7C2" to="vs0r:4eXJ6EOwIAn" resolve="FileSystemDirPicker" />
+    <ref role="13h7C2" to="vs0r:4eXJ6EOwIAn" resolve="FileSystemDirPicker_old" />
     <node concept="13i0hz" id="4eXJ6EOwIHV" role="13h7CS">
       <property role="TrG5h" value="pickDirOnly" />
       <property role="13i0it" value="false" />
@@ -22786,12 +22788,12 @@
           <node concept="3cpWsn" id="3xqp6yeXcfB" role="3cpWs9">
             <property role="TrG5h" value="picker" />
             <node concept="3Tqbb2" id="3xqp6yeXcf$" role="1tU5fm">
-              <ref role="ehGHo" to="vs0r:1jw2PJJHS3i" resolve="FileSystemFilePicker" />
+              <ref role="ehGHo" to="vs0r:1jw2PJJHS3i" resolve="FileSystemFilePicker_old" />
             </node>
             <node concept="2ShNRf" id="3xqp6yeXcfC" role="33vP2m">
               <node concept="3zrR0B" id="3xqp6yeXcfD" role="2ShVmc">
                 <node concept="3Tqbb2" id="3xqp6yeXcfE" role="3zrR0E">
-                  <ref role="ehGHo" to="vs0r:1jw2PJJHS3i" resolve="FileSystemFilePicker" />
+                  <ref role="ehGHo" to="vs0r:1jw2PJJHS3i" resolve="FileSystemFilePicker_old" />
                 </node>
               </node>
             </node>
@@ -22802,7 +22804,7 @@
             <node concept="2OqwBi" id="3xqp6yeXcP4" role="37vLTx">
               <node concept="13iPFW" id="3xqp6yeXcMj" role="2Oq$k0" />
               <node concept="3TrcHB" id="3xqp6yeXdc$" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
             <node concept="2OqwBi" id="3xqp6yeXckN" role="37vLTJ">
@@ -22810,7 +22812,7 @@
                 <ref role="3cqZAo" node="3xqp6yeXcfB" resolve="picker" />
               </node>
               <node concept="3TrcHB" id="3xqp6yeXcwj" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
           </node>
@@ -22822,13 +22824,13 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="3xqp6yeWTbU" role="3clF45">
-        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
       </node>
     </node>
   </node>
   <node concept="13h7C7" id="1jw2PJJHS3j">
     <property role="3GE5qa" value="pathAndFile" />
-    <ref role="13h7C2" to="vs0r:1jw2PJJHS3i" resolve="FileSystemFilePicker" />
+    <ref role="13h7C2" to="vs0r:1jw2PJJHS3i" resolve="FileSystemFilePicker_old" />
     <node concept="13i0hz" id="1jw2PJJHWxq" role="13h7CS">
       <property role="TrG5h" value="pickDirOnly" />
       <property role="13i0it" value="false" />
@@ -22924,12 +22926,12 @@
           <node concept="3cpWsn" id="3xqp6yeXdkU" role="3cpWs9">
             <property role="TrG5h" value="picker" />
             <node concept="3Tqbb2" id="3xqp6yeXdkV" role="1tU5fm">
-              <ref role="ehGHo" to="vs0r:4eXJ6EOwIAn" resolve="FileSystemDirPicker" />
+              <ref role="ehGHo" to="vs0r:4eXJ6EOwIAn" resolve="FileSystemDirPicker_old" />
             </node>
             <node concept="2ShNRf" id="3xqp6yeXdkW" role="33vP2m">
               <node concept="3zrR0B" id="3xqp6yeXdkX" role="2ShVmc">
                 <node concept="3Tqbb2" id="3xqp6yeXdkY" role="3zrR0E">
-                  <ref role="ehGHo" to="vs0r:4eXJ6EOwIAn" resolve="FileSystemDirPicker" />
+                  <ref role="ehGHo" to="vs0r:4eXJ6EOwIAn" resolve="FileSystemDirPicker_old" />
                 </node>
               </node>
             </node>
@@ -22940,7 +22942,7 @@
             <node concept="2OqwBi" id="3xqp6yeXdl1" role="37vLTx">
               <node concept="13iPFW" id="3xqp6yeXdl2" role="2Oq$k0" />
               <node concept="3TrcHB" id="3xqp6yeXdl3" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
             <node concept="2OqwBi" id="3xqp6yeXdl4" role="37vLTJ">
@@ -22948,7 +22950,7 @@
                 <ref role="3cqZAo" node="3xqp6yeXdkU" resolve="picker" />
               </node>
               <node concept="3TrcHB" id="3xqp6yeXdl6" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
               </node>
             </node>
           </node>
@@ -22960,7 +22962,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="3xqp6yeXdl9" role="3clF45">
-        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+        <ref role="ehGHo" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
       </node>
     </node>
     <node concept="13hLZK" id="1jw2PJJHS3k" role="13h7CW">

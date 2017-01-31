@@ -8076,7 +8076,7 @@
   </node>
   <node concept="24kQdi" id="5lKnBeAulL8">
     <property role="3GE5qa" value="pathAndFile" />
-    <ref role="1XX52x" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+    <ref role="1XX52x" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
     <node concept="3EZMnI" id="6ruthXbRUpo" role="6VMZX">
       <node concept="l2Vlx" id="6ruthXbRUpp" role="2iSdaV" />
       <node concept="3F0ifn" id="6ruthXbRUHh" role="3EZMnx">
@@ -8115,7 +8115,7 @@
                 </node>
                 <node concept="3clFbC" id="3o2OLGuqhZZ" role="3clFbw">
                   <node concept="35c_gC" id="3o2OLGuqi6o" role="3uHU7w">
-                    <ref role="35c_gD" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+                    <ref role="35c_gD" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
                   </node>
                   <node concept="2OqwBi" id="3o2OLGuqhqB" role="3uHU7B">
                     <node concept="pncrf" id="3o2OLGuqgT8" role="2Oq$k0" />
@@ -8178,7 +8178,7 @@
       <node concept="l2Vlx" id="5lKnBeAuncQ" role="2iSdaV" />
       <node concept="3F0A7n" id="5lKnBeAus76" role="3EZMnx">
         <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="vs0r:5lKnBeAtODI" resolve="path" />
+        <ref role="1NtTu8" to="vs0r:5lKnBeAtODI" resolve="path_old" />
         <ref role="34QXea" node="50N_nP$el$O" resolve="openOrEdit" />
         <node concept="OXEIz" id="5lKnBeAvqDS" role="P5bDN">
           <node concept="PvTIS" id="5lKnBeAvqE0" role="OY2wv">
@@ -9440,7 +9440,7 @@
   <node concept="325Ffw" id="50N_nP$el$O">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="openOrEdit" />
-    <ref role="1chiOs" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+    <ref role="1chiOs" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
     <node concept="2PxR9H" id="50N_nP$el$P" role="2QnnpI">
       <property role="2PxWOX" value="Edit with System Editor" />
       <property role="3ArL7W" value="true" />
@@ -9540,7 +9540,7 @@
   </node>
   <node concept="24kQdi" id="7c_RIoB8Kqk">
     <property role="3GE5qa" value="pathAndFile" />
-    <ref role="1XX52x" to="vs0r:7c_RIoB8H2I" resolve="MacroFilePicker" />
+    <ref role="1XX52x" to="vs0r:7c_RIoB8H2I" resolve="MacroFilePicker_old" />
     <node concept="3EZMnI" id="2rWX5ToCY39" role="6VMZX">
       <node concept="l2Vlx" id="2rWX5ToCY3a" role="2iSdaV" />
       <node concept="3F0ifn" id="2rWX5ToCY3b" role="3EZMnx">
@@ -9572,7 +9572,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="7c_RIoB8Pud" role="3EZMnx">
-        <ref role="1NtTu8" to="vs0r:7c_RIoB8OqH" resolve="macro" />
+        <ref role="1NtTu8" to="vs0r:7c_RIoB8OqH" resolve="macro_old" />
         <node concept="OXEIz" id="2rWX5ToCfGG" role="P5bDN">
           <node concept="PvTIS" id="2rWX5ToCfIo" role="OY2wv">
             <node concept="MLZmj" id="2rWX5ToCfIp" role="PvTIR">
@@ -9665,7 +9665,7 @@
       <node concept="3F0A7n" id="7c_RIoB8LUT" role="3EZMnx">
         <property role="1O74Pk" value="true" />
         <ref role="34QXea" node="50N_nP$el$O" resolve="openOrEdit" />
-        <ref role="1NtTu8" to="vs0r:5lKnBeAtODI" resolve="path" />
+        <ref role="1NtTu8" to="vs0r:5lKnBeAtODI" resolve="path_old" />
         <node concept="OXEIz" id="7c_RIoB8LUU" role="P5bDN">
           <node concept="PvTIS" id="7c_RIoB8LUV" role="OY2wv">
             <node concept="MLZmj" id="7c_RIoB8LUW" role="PvTIR">
@@ -12555,7 +12555,7 @@
   </node>
   <node concept="24kQdi" id="4eXJ6EOjC3x">
     <property role="3GE5qa" value="pathAndFile" />
-    <ref role="1XX52x" to="vs0r:4eXJ6EO9ZKx" resolve="MacroFolderPicker" />
+    <ref role="1XX52x" to="vs0r:4eXJ6EO9ZKx" resolve="MacroFolderPicker_old" />
     <node concept="3EZMnI" id="2rWX5ToCYsa" role="6VMZX">
       <node concept="l2Vlx" id="2rWX5ToCYsb" role="2iSdaV" />
       <node concept="3F0ifn" id="2rWX5ToCYsc" role="3EZMnx">
@@ -12587,7 +12587,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="4eXJ6EOjCfF" role="3EZMnx">
-        <ref role="1NtTu8" to="vs0r:4eXJ6EO9ZKy" resolve="macro" />
+        <ref role="1NtTu8" to="vs0r:4eXJ6EO9ZKy" resolve="macro_old" />
         <node concept="OXEIz" id="4eXJ6EOmiJz" role="P5bDN">
           <node concept="PvTIS" id="4eXJ6EOmiJ_" role="OY2wv">
             <node concept="MLZmj" id="4eXJ6EOmiJA" role="PvTIR">
@@ -12679,7 +12679,7 @@
       </node>
       <node concept="3F0A7n" id="4eXJ6EOjCfJ" role="3EZMnx">
         <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="vs0r:5lKnBeAtODI" resolve="path" />
+        <ref role="1NtTu8" to="vs0r:5lKnBeAtODI" resolve="path_old" />
         <ref role="34QXea" node="50N_nP$el$O" resolve="openOrEdit" />
         <node concept="OXEIz" id="4eXJ6EOjCfK" role="P5bDN">
           <node concept="PvTIS" id="4eXJ6EOjCfL" role="OY2wv">
@@ -14823,6 +14823,33 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="7CLMy5mpPnl">
+    <ref role="aqKnT" to="vs0r:5Wocj7wnotA" resolve="AbstractFilePicker_old" />
+  </node>
+  <node concept="3p36aQ" id="7CLMy5mpPnv">
+    <ref role="aqKnT" to="vs0r:5Wocj7wnolM" resolve="AbstractFolderPicker_old" />
+  </node>
+  <node concept="3p36aQ" id="7CLMy5mpPnD">
+    <ref role="aqKnT" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
+  </node>
+  <node concept="3p36aQ" id="7CLMy5mpPnN">
+    <ref role="aqKnT" to="vs0r:4eXJ6EOwIAn" resolve="FileSystemDirPicker_old" />
+  </node>
+  <node concept="3p36aQ" id="7CLMy5mpPnX">
+    <ref role="aqKnT" to="vs0r:1jw2PJJHS3i" resolve="FileSystemFilePicker_old" />
+  </node>
+  <node concept="3p36aQ" id="7CLMy5mpPo7">
+    <ref role="aqKnT" to="vs0r:7c_RIoB8H2I" resolve="MacroFilePicker_old" />
+  </node>
+  <node concept="3p36aQ" id="7CLMy5mpPoh">
+    <ref role="aqKnT" to="vs0r:4eXJ6EO9ZKx" resolve="MacroFolderPicker_old" />
+  </node>
+  <node concept="3p36aQ" id="7CLMy5mpPor">
+    <ref role="aqKnT" to="vs0r:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker_old" />
+  </node>
+  <node concept="3p36aQ" id="7CLMy5mpPo_">
+    <ref role="aqKnT" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker_old" />
   </node>
 </model>
 
