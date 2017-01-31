@@ -151,7 +151,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4ATA_JBp1bI">
-    <property role="3GE5qa" value="harness.nondet_assign" />
+    <property role="3GE5qa" value="harness.assign" />
     <ref role="1M2myG" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
     <node concept="osYL8" id="4ATA_JBp1bJ" role="1MLXOK">
       <node concept="3clFbS" id="4ATA_JBp1bK" role="2VODD2">
@@ -202,7 +202,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1BFQdmJZZAu">
-    <property role="3GE5qa" value="harness.nondet_assign" />
+    <property role="3GE5qa" value="harness.assign" />
     <ref role="1M2myG" to="llb3:1BFQdmJZZ5k" resolve="DiscreteValuesExpression" />
     <node concept="nKS2y" id="1BFQdmJZZAv" role="1MLUbF">
       <node concept="3clFbS" id="1BFQdmJZZAw" role="2VODD2">

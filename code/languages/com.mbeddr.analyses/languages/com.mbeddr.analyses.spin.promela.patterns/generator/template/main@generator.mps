@@ -45,6 +45,7 @@
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1168,6 +1169,25 @@
               <node concept="1N1mD7" id="5RNtn4cbu4Y" role="2C2TGm">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
+                <node concept="29HgVG" id="1BFQdmKbboM" role="lGtFl">
+                  <node concept="3NFfHV" id="1BFQdmKbboN" role="3NFExx">
+                    <node concept="3clFbS" id="1BFQdmKbboO" role="2VODD2">
+                      <node concept="3clFbF" id="1BFQdmKbboU" role="3cqZAp">
+                        <node concept="2OqwBi" id="1BFQdmKbcFG" role="3clFbG">
+                          <node concept="2OqwBi" id="1BFQdmKbboP" role="2Oq$k0">
+                            <node concept="3TrEf2" id="1BFQdmKbboS" role="2OqNvi">
+                              <ref role="3Tt5mk" to="i3mj:5RNtn4cbrGh" resolve="iter" />
+                            </node>
+                            <node concept="30H73N" id="1BFQdmKbboT" role="2Oq$k0" />
+                          </node>
+                          <node concept="3TrEf2" id="1BFQdmKbe9W" role="2OqNvi">
+                            <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="3TlMh9" id="5RNtn4cbu4Z" role="3XIe9u">
                 <property role="2hmy$m" value="0" />

@@ -137,7 +137,7 @@
   </registry>
   <node concept="1YbPZF" id="1BFQdmK00_A">
     <property role="TrG5h" value="typeof_DiscreteValuesExpression" />
-    <property role="3GE5qa" value="harness.nondet_assign" />
+    <property role="3GE5qa" value="harness.assign" />
     <node concept="3clFbS" id="1BFQdmK00_B" role="18ibNy">
       <node concept="3cpWs8" id="1BFQdmK01P9" role="3cqZAp">
         <node concept="3cpWsn" id="1BFQdmK01Pa" role="3cpWs9">
