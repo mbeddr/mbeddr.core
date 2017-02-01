@@ -447,6 +447,42 @@
         </node>
       </node>
     </node>
+    <node concept="m$_wf" id="Vtr7jyB0oM" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.filepicker" />
+      <node concept="3_J27D" id="Vtr7jyB0oN" role="m$_yQ">
+        <node concept="3Mxwew" id="Vtr7jyB0oO" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.filepicker" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="Vtr7jyB0oP" role="m$_w8">
+        <node concept="3Mxwey" id="Vtr7jyB0oQ" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="Vtr7jyB3SQ" role="m$_yh">
+        <ref role="m$f5T" node="7Nsh5Tc2mTg" resolve="com.mbeddr.mpsutil.filepicker" />
+      </node>
+      <node concept="m$_yC" id="Vtr7jyB0oS" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="Vtr7jyB0oU" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:RJsmGEieyQ" resolve="jetbrains.mps.vcs" />
+      </node>
+      <node concept="3_J27D" id="Vtr7jyB0oV" role="m_cZH">
+        <node concept="3Mxwew" id="Vtr7jyB0oW" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.filepicker" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="Vtr7jyB0oX" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com/" />
+      </node>
+      <node concept="3_J27D" id="Vtr7jyB0oY" role="3s6cr7">
+        <node concept="3Mxwew" id="Vtr7jyB0oZ" role="3MwsjC">
+          <property role="3MwjfP" value="File Picker Langauge from mbeddr.mpsutil" />
+        </node>
+      </node>
+    </node>
     <node concept="m$_wf" id="$bJ0jguQdg" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.platform" />
       <node concept="3_J27D" id="$bJ0jguQdh" role="m$_yQ">
@@ -467,6 +503,9 @@
       </node>
       <node concept="m$_yC" id="$bJ0jguQdn" role="m$_yJ">
         <ref role="m$_y1" node="7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
+      </node>
+      <node concept="m$_yC" id="Vtr7jyBh9l" role="m$_yJ">
+        <ref role="m$_y1" node="Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
       </node>
       <node concept="3_J27D" id="$bJ0jguQdt" role="m_cZH">
         <node concept="3Mxwew" id="$bJ0jguQdu" role="3MwsjC">
@@ -10105,6 +10144,55 @@
             <ref role="3bR37D" to="90a9:6SVXTgIel8z" resolve="de.itemis.mps.editor.celllayout.styles" />
           </node>
         </node>
+        <node concept="1SiIV0" id="Vtr7jyAZp2" role="3bR37C">
+          <node concept="3bR9La" id="Vtr7jyAZp3" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Vtr7jyAZp4" role="3bR37C">
+          <node concept="1Busua" id="Vtr7jyAZp5" role="1SiIV1">
+            <ref role="1Busuk" node="Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="7Nsh5Tc2mTg" role="3989C9">
+      <property role="TrG5h" value="com.mbeddr.mpsutil.filepicker" />
+      <node concept="1E1JtD" id="Vtr7jyAKU4" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.filepicker" />
+        <property role="3LESm3" value="d3a0fd26-445a-466c-900e-10444ddfed52" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="Vtr7jyALL1" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="Vtr7jyAOlM" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="Vtr7jyAUm6" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.filepicker" />
+              <node concept="2Ry0Ak" id="Vtr7jyAW3X" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.filepicker.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Vtr7jyAXEG" role="3bR37C">
+          <node concept="3bR9La" id="Vtr7jyAXEH" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Vtr7jyAXEI" role="3bR37C">
+          <node concept="3bR9La" id="Vtr7jyAXEJ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="Vtr7jyAXEK" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.filepicker#4067882553846359376" />
+          <property role="3LESm3" value="4b706ccc-acf2-4850-a93e-1884d0a0fb68" />
+          <property role="2GAjPV" value="false" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7Pr7tifzjKW" role="3989C9">
@@ -11812,6 +11900,9 @@
         </node>
         <node concept="m$_wl" id="6ucYLjolhRD" role="39821P">
           <ref role="m_rDy" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
+        </node>
+        <node concept="m$_wl" id="Vtr7jyBi$h" role="39821P">
+          <ref role="m_rDy" node="Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
         </node>
       </node>
       <node concept="3981dG" id="6ucYLjol7IB" role="39821P">
