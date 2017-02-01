@@ -9,7 +9,7 @@
     <use id="53bab999-e9c3-428a-80be-fef5bed08f55" name="com.mbeddr.cc.trace" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -149,7 +149,7 @@
                     <node concept="2OqwBi" id="GKLijSDP3U" role="3clFbG">
                       <node concept="2OqwBi" id="1MB8zB9De6e" role="2Oq$k0">
                         <node concept="3Tsc0h" id="1MB8zB9De6h" role="2OqNvi">
-                          <ref role="3TtcxE" to="26ao:3Y7ywckFJXd" />
+                          <ref role="3TtcxE" to="26ao:3Y7ywckFJXd" resolve="refs" />
                         </node>
                         <node concept="30H73N" id="1MB8zB9De6i" role="2Oq$k0" />
                       </node>
@@ -196,7 +196,7 @@
                             <node concept="2OqwBi" id="1MB8zB9Cn7i" role="2Oq$k0">
                               <node concept="30H73N" id="1MB8zB9CmYt" role="2Oq$k0" />
                               <node concept="3TrEf2" id="GKLijSDSkh" role="2OqNvi">
-                                <ref role="3Tt5mk" to="26ao:opE5jFgg97" />
+                                <ref role="3Tt5mk" to="26ao:opE5jFgg97" resolve="target" />
                               </node>
                             </node>
                             <node concept="3TrcHB" id="1MB8zB9CslK" role="2OqNvi">
