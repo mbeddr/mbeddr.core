@@ -13,6 +13,7 @@
     <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -321,12 +322,49 @@
           </node>
           <node concept="3clFbJ" id="4WLtQa9hIv3" role="3cqZAp">
             <node concept="3clFbS" id="4WLtQa9hIv4" role="3clFbx">
+              <node concept="3cpWs8" id="2945ZXhpxne" role="3cqZAp">
+                <node concept="3cpWsn" id="2945ZXhpxnf" role="3cpWs9">
+                  <property role="TrG5h" value="isNotCKeyWord" />
+                  <node concept="10P_77" id="2945ZXhpxnb" role="1tU5fm" />
+                  <node concept="3fqX7Q" id="2945ZXhpxng" role="33vP2m">
+                    <node concept="2YIFZM" id="2945ZXhpxnh" role="3fr31v">
+                      <ref role="37wK5l" node="4WLtQa9hIAy" resolve="isCKeyword" />
+                      <ref role="1Pybhc" node="4WLtQa9hIve" resolve="CIdentifierHelper" />
+                      <node concept="1Wqviy" id="2945ZXhpxni" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="2945ZXhrkXB" role="3cqZAp">
+                <node concept="3cpWsn" id="2945ZXhrkXC" role="3cpWs9">
+                  <property role="TrG5h" value="isNotUserReservedKeyword" />
+                  <node concept="10P_77" id="2945ZXhrkXw" role="1tU5fm" />
+                  <node concept="3fqX7Q" id="2945ZXhrlrj" role="33vP2m">
+                    <node concept="2OqwBi" id="2945ZXhrlrl" role="3fr31v">
+                      <node concept="2OqwBi" id="2945ZXhrlrm" role="2Oq$k0">
+                        <node concept="2OqwBi" id="2945ZXhrlrn" role="2Oq$k0">
+                          <node concept="EsrRn" id="2945ZXhrlro" role="2Oq$k0" />
+                          <node concept="3NT_Vc" id="2945ZXhrlrp" role="2OqNvi" />
+                        </node>
+                        <node concept="2qgKlT" id="2945ZXhrlrq" role="2OqNvi">
+                          <ref role="37wK5l" to="hwgx:2945ZXhmGqk" resolve="OtherReserved" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="2945ZXhrlrr" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~ArrayList.contains(java.lang.Object):boolean" resolve="contains" />
+                        <node concept="1Wqviy" id="2945ZXhrlrs" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs6" id="4WLtQa9hICJ" role="3cqZAp">
-                <node concept="3fqX7Q" id="4WLtQa9hICL" role="3cqZAk">
-                  <node concept="2YIFZM" id="4WLtQa9hICO" role="3fr31v">
-                    <ref role="37wK5l" node="4WLtQa9hIAy" resolve="isCKeyword" />
-                    <ref role="1Pybhc" node="4WLtQa9hIve" resolve="CIdentifierHelper" />
-                    <node concept="1Wqviy" id="4WLtQa9hICP" role="37wK5m" />
+                <node concept="1Wc70l" id="2945ZXhrrTC" role="3cqZAk">
+                  <node concept="37vLTw" id="2945ZXhrseZ" role="3uHU7w">
+                    <ref role="3cqZAo" node="2945ZXhrkXC" resolve="isNotUserReservedKeyword" />
+                  </node>
+                  <node concept="37vLTw" id="2945ZXhpxnj" role="3uHU7B">
+                    <ref role="3cqZAo" node="2945ZXhpxnf" resolve="isNotCKeyWord" />
                   </node>
                 </node>
               </node>
@@ -618,7 +656,7 @@
     <property role="3GE5qa" value="controlledName" />
     <ref role="1M2myG" to="vs0r:2GIWVTRHgNL" resolve="ControlledNameAttribute" />
     <node concept="1N5Pfh" id="3VMeFNyf9D4" role="1Mr941">
-      <ref role="1N5Vy1" to="vs0r:2GIWVTRHgZp" />
+      <ref role="1N5Vy1" to="vs0r:2GIWVTRHgZp" resolve="nameController" />
       <node concept="3k9gUc" id="6sCGfm8bgov" role="3kmjI7">
         <node concept="3clFbS" id="6sCGfm8bgow" role="2VODD2">
           <node concept="3clFbF" id="6sCGfm8qiVx" role="3cqZAp">
@@ -771,7 +809,7 @@
     <property role="3GE5qa" value="chunk" />
     <ref role="1M2myG" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
     <node concept="1N5Pfh" id="DubiFAYmyR" role="1Mr941">
-      <ref role="1N5Vy1" to="vs0r:DubiFAXDKB" />
+      <ref role="1N5Vy1" to="vs0r:DubiFAXDKB" resolve="chunk" />
       <node concept="1MUpDS" id="DubiFAYmyV" role="1N6uqs">
         <node concept="3clFbS" id="DubiFAYmyW" role="2VODD2">
           <node concept="3clFbF" id="DubiFAYmM5" role="3cqZAp">
@@ -854,7 +892,7 @@
     <property role="3GE5qa" value="assessment.scope" />
     <ref role="1M2myG" to="vs0r:7nkDZJXlCyb" resolve="ChunkScope" />
     <node concept="1N5Pfh" id="7nkDZJXlCM$" role="1Mr941">
-      <ref role="1N5Vy1" to="vs0r:7nkDZJXlCyc" />
+      <ref role="1N5Vy1" to="vs0r:7nkDZJXlCyc" resolve="chunk" />
       <node concept="1MUpDS" id="7nkDZJXlCMB" role="1N6uqs">
         <node concept="3clFbS" id="7nkDZJXlCMC" role="2VODD2">
           <node concept="3clFbF" id="7nkDZJXlDDl" role="3cqZAp">
@@ -872,7 +910,7 @@
   <node concept="1M2fIO" id="gjBy3ThgJB">
     <ref role="1M2myG" to="vs0r:gjBy3ThgJz" resolve="ConceptDeclarationReference" />
     <node concept="1N5Pfh" id="4uR15_er0x3" role="1Mr941">
-      <ref role="1N5Vy1" to="vs0r:4uR15_er0pl" />
+      <ref role="1N5Vy1" to="vs0r:4uR15_er0pl" resolve="concept" />
       <node concept="1MUpDS" id="4uR15_erk3i" role="1N6uqs">
         <node concept="3clFbS" id="4uR15_erk3j" role="2VODD2">
           <node concept="3clFbF" id="4uR15_etubD" role="3cqZAp">
