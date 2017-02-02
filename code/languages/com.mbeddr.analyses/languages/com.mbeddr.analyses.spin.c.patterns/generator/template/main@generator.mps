@@ -3228,17 +3228,10 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="5hi7ucOvzIB" role="3clFbw">
-              <node concept="2YIFZM" id="5hi7ucOvzIC" role="2Oq$k0">
-                <ref role="37wK5l" to="k5p0:5hi7ucOvrI3" resolve="firstProperParent" />
-                <ref role="1Pybhc" to="k5p0:5hi7ucOvrGt" resolve="AccessToCCodeUtils" />
-                <node concept="30H73N" id="5hi7ucOvzID" role="37wK5m" />
-              </node>
-              <node concept="1mIQ4w" id="5hi7ucOvzIE" role="2OqNvi">
-                <node concept="chp4Y" id="5hi7ucOv$gD" role="cj9EA">
-                  <ref role="cht4Q" to="ir22:24G9CRyKk_v" resolve="ChoiceLike" />
-                </node>
-              </node>
+            <node concept="2YIFZM" id="7T$_el8mEOS" role="3clFbw">
+              <ref role="37wK5l" to="k5p0:7T$_el8mDRP" resolve="isBodyOfChoiceLike" />
+              <ref role="1Pybhc" to="k5p0:5hi7ucOvrGt" resolve="AccessToCCodeUtils" />
+              <node concept="30H73N" id="7T$_el8mEOT" role="37wK5m" />
             </node>
           </node>
           <node concept="3clFbH" id="5hi7ucOnghn" role="3cqZAp" />
@@ -3324,16 +3317,10 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="5hi7ucOmXiu" role="3clFbw">
-              <node concept="2OqwBi" id="5hi7ucOmXiv" role="2Oq$k0">
-                <node concept="30H73N" id="5hi7ucOmXiw" role="2Oq$k0" />
-                <node concept="1mfA1w" id="5hi7ucOmXix" role="2OqNvi" />
-              </node>
-              <node concept="1mIQ4w" id="5hi7ucOmXiy" role="2OqNvi">
-                <node concept="chp4Y" id="5hi7ucOmZMP" role="cj9EA">
-                  <ref role="cht4Q" to="ir22:24G9CRyKk_v" resolve="ChoiceLike" />
-                </node>
-              </node>
+            <node concept="2YIFZM" id="7T$_el8lV31" role="3clFbw">
+              <ref role="37wK5l" to="k5p0:7T$_el8lOAj" resolve="isGuardOfChoice" />
+              <ref role="1Pybhc" to="k5p0:5hi7ucOvrGt" resolve="AccessToCCodeUtils" />
+              <node concept="30H73N" id="7T$_el8lVl1" role="37wK5m" />
             </node>
           </node>
           <node concept="3clFbH" id="1BFQdmKcoCD" role="3cqZAp" />
