@@ -12151,6 +12151,9 @@
       <node concept="m$_wl" id="24ObHxT$_Tk" role="39821P">
         <ref role="m_rDy" node="24ObHxTzV4S" resolve="com.mbeddr.mpsutil.vcs" />
       </node>
+      <node concept="m$_wl" id="2QOWB0DVdSx" role="39821P">
+        <ref role="m_rDy" node="33r_JpZ6k_l" resolve="com.mbeddr.platform.build" />
+      </node>
       <node concept="398223" id="pdbBRzg10k" role="39821P">
         <node concept="3_J27D" id="pdbBRzg10m" role="Nbhlr">
           <node concept="3Mxwew" id="pdbBRzg1Lh" role="3MwsjC">
