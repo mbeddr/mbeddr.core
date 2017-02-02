@@ -227,6 +227,30 @@
       <property role="1wOHq$" value="true" />
       <property role="3Ej$Sc" value="true" />
     </node>
+    <node concept="m$_wf" id="33r_JpZ6k_l" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.platform.build" />
+      <node concept="3_J27D" id="33r_JpZ6k_n" role="m$_yQ">
+        <node concept="3Mxwew" id="33r_JpZ6ovO" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.platform.build" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="33r_JpZ6k_p" role="m_cZH">
+        <node concept="3Mxwew" id="33r_JpZ6ovR" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.platform.build" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="33r_JpZ6k_r" role="m$_w8">
+        <node concept="3Mxwey" id="33r_JpZ6pne" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="33r_JpZ6qu$" role="m$_yh">
+        <ref role="m$f5T" node="7Pr7tifzjKW" resolve="com.mbeddr.platform.build" />
+      </node>
+      <node concept="m$_yC" id="33r_JpZ6rtT" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
+      </node>
+    </node>
     <node concept="m$_wf" id="7uZw0yZ2_Jq" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil" />
       <node concept="m$_yC" id="70BL6LoGNLc" role="m$_yJ">
