@@ -3009,7 +3009,7 @@
           <property role="1EzhhJ" value="false" />
           <property role="TrG5h" value="deleteNode" />
           <node concept="37vLTG" id="puVMIbsU5Y" role="3clF46">
-            <property role="TrG5h" value="listNode" />
+            <property role="TrG5h" value="node" />
             <property role="3TUv4t" value="true" />
             <node concept="3Tqbb2" id="puVMIbsU5Z" role="1tU5fm" />
           </node>
