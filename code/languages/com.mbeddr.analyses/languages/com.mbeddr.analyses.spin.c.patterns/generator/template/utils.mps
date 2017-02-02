@@ -9,6 +9,7 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
   <registry>
@@ -90,6 +91,9 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -200,6 +204,40 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5Gboyv9Eosm" role="jymVt" />
+    <node concept="2YIFZL" id="7T$_el86$CX" role="jymVt">
+      <property role="TrG5h" value="seedAlreadyInitializedVar" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="7T$_el86$CY" role="3clF47">
+        <node concept="3cpWs6" id="7T$_el86$Dl" role="3cqZAp">
+          <node concept="3cpWs3" id="7T$_el86$Dm" role="3cqZAk">
+            <node concept="2OqwBi" id="7T$_el86I_W" role="3uHU7w">
+              <node concept="2JrnkZ" id="7T$_el86IdD" role="2Oq$k0">
+                <node concept="37vLTw" id="7T$_el86GjH" role="2JrQYb">
+                  <ref role="3cqZAo" node="7T$_el86$Dr" resolve="ra" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7T$_el86Jj_" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="7T$_el86$Do" role="3uHU7B">
+              <property role="Xl_RC" value="seed_already_initialized_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7T$_el86$Dp" role="1B3o_S" />
+      <node concept="17QB3L" id="7T$_el86$Dq" role="3clF45" />
+      <node concept="37vLTG" id="7T$_el86$Dr" role="3clF46">
+        <property role="TrG5h" value="ra" />
+        <node concept="3Tqbb2" id="7T$_el86$Ds" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="7T$_el86$Dt" role="lGtFl">
+        <property role="NWlVz" value="Returns the name of the global C-level variable holding whether the seed has already been initialized." />
+      </node>
+    </node>
     <node concept="2tJIrI" id="1BFQdmKfGOs" role="jymVt" />
   </node>
   <node concept="312cEu" id="5hi7ucOvrGt">

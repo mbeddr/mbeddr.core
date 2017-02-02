@@ -24,6 +24,7 @@
         <dependency reexport="false" scope="design">bd9d1a6a-cd44-40f9-b116-f0ff4deba2ce(com.mbeddr.analyses.spin.promela.patterns#1737851622209916392)</dependency>
         <dependency reexport="false">4ddb29eb-11e5-46c6-a894-6b8a4c38587d(com.mbeddr.analyses.spin.promela.patterns)</dependency>
         <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
+        <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
