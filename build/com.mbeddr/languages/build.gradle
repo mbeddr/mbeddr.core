@@ -42,23 +42,33 @@ task resolveMpsArtifacts() {
     }
 }
 
-def spawnerDependencies
 
-//on teamcity we don't build the platform we take it from the nexus. Locally we want to build it
-if (project.hasProperty("teamcity")) {
-    spawnerDependencies = [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]
-} else {
-    spawnerDependencies = [':build:com.mbeddr:platform:build_platform']
-}
 
 //move spawner into mbeddr script
-task build_spawner(type: BuildLanguages, dependsOn: spawnerDependencies) {
+task build_spawner(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
     script scriptFile('com.mbeddr.build/spawner.xml')
 }
 
 task copy_spawner(type: Copy, dependsOn: build_spawner) {
-    from "artifacts/spawner/"
+    from "$rootDir/artifacts/spawner/"
     into "$mpsHomeDir/plugins"
+}
+
+task install_spawner(type: Copy, dependsOn: build_spawner) {
+    from "$rootDir/artifacts/spawner/"
+    include "mbeddr.spawner/"
+    into "$mpsInstallationDir/plugins"
+}
+
+task install(dependsOn: [install_spawner, ':build:com.mbeddr:platform:install_sl_all_nativelibs']) {}
+
+gradle.taskGraph.whenReady {taskGraph ->
+    if (taskGraph.hasTask(install)) {
+        if (!project.hasProperty("MPS_Installation")) {
+            print("Missing MPS_Installation property please run gradle with -PMPS_Installation=<path to you local MPS>")
+            throw new StopExecutionException("Missing MPS_Installation property please run gradle with -PMPS_Installation=<path to you local MPS>")
+        }
+    }
 }
 
 ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
@@ -66,8 +76,16 @@ ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.ju
 ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
         classpath: configurations.junitAnt.asPath)
 
+def mbeddrDependencies
 
-task build_mbeddr(type: BuildLanguages, dependsOn: copy_spawner ) {
+//on teamcity we don't build the platform we take it from the nexus. Locally we want to build it
+if (project.hasProperty("teamcity")) {
+    mbeddrDependencies = [copy_spawner, resolveMpsArtifacts]
+} else {
+    mbeddrDependencies = [copy_spawner, ':build:com.mbeddr:platform:build_platform']
+}
+
+task build_mbeddr(type: BuildLanguages, dependsOn: mbeddrDependencies) {
     script script_build_mbeddr
 }
 
