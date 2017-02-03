@@ -28,6 +28,13 @@ if (project.hasProperty("mbeddrBuildCounter")) {
 println "build:" + mbeddrBuild
 println mbeddrMajor+ "." + mbeddrMinor
 
+if (project.hasProperty("MPS_Installation"))
+{
+    ext.mpsInstallationDir = project.getProperty("MPS_Installation")
+} else {
+    ext.mpsInstallationDir = ""
+}
+
 ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
 
 // path variables
