@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="fe179c61-4531-423b-a95c-f5f59a664603" name="com.mbeddr.analyses.cpa" version="0" />
+    <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
   </languages>
   <imports>
@@ -85,9 +86,6 @@
         <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
         <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
-      </concept>
-      <concept id="6973658835837826905" name="com.mbeddr.analyses.cbmc.structure.Assert" flags="ng" index="Y9XUq">
-        <child id="6973658835837826906" name="exp" index="Y9XUp" />
       </concept>
       <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
       <concept id="4887422885165621122" name="com.mbeddr.analyses.cbmc.structure.CPROVERassume" flags="ng" index="1EIGaU">
@@ -193,6 +191,11 @@
     </language>
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
       <concept id="2391520863997668666" name="com.mbeddr.core.modules.gen.structure.NameShorteningConfiguration" flags="ng" index="MH4UO" />
+    </language>
+    <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
+      <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
+        <child id="6973658835837826906" name="exp" index="Y9XUp" />
+      </concept>
     </language>
   </registry>
   <node concept="3uEX16" id="4BmZfiOhEZ_">
@@ -317,14 +320,6 @@
           </node>
         </node>
         <node concept="Y9XUq" id="5KYWJPNOUOi" role="3XIRFZ">
-          <node concept="25Bbzn" id="5KYWJPNOUOj" role="Y9XUp">
-            <node concept="3TlMh9" id="5KYWJPNOUOk" role="3TlMhJ">
-              <property role="2hmy$m" value="1" />
-            </node>
-            <node concept="3ZVu4v" id="5pfYjqBbbkQ" role="3TlMhI">
-              <ref role="3ZVs_2" node="5pfYjqBbb6q" resolve="x" />
-            </node>
-          </node>
           <node concept="1z9TsT" id="6TQiFFuRlo3" role="lGtFl">
             <node concept="OjmMv" id="6TQiFFuRlo4" role="1w35rA">
               <node concept="19SGf9" id="6TQiFFuRlo5" role="OjmMu">
@@ -332,6 +327,14 @@
                   <property role="19SUeA" value="both should fail" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="25Bbzn" id="5KYWJPNOUOj" role="Y9XUp">
+            <node concept="3TlMh9" id="5KYWJPNOUOk" role="3TlMhJ">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3ZVu4v" id="5pfYjqBbbkQ" role="3TlMhI">
+              <ref role="3ZVs_2" node="5pfYjqBbb6q" resolve="x" />
             </node>
           </node>
         </node>

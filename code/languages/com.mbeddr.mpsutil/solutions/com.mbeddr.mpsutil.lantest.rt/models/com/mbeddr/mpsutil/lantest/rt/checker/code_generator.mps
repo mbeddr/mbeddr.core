@@ -1650,6 +1650,18 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1EeUs_TuvbL" role="jymVt" />
+    <node concept="312cEg" id="7rZVxqnuYur" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="virtualPackageName" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tmbuc" id="7rZVxqnvoq3" role="1B3o_S" />
+      <node concept="17QB3L" id="7rZVxqnuYtA" role="1tU5fm" />
+      <node concept="NWlO9" id="7rZVxqnv0eN" role="lGtFl">
+        <property role="NWlVz" value="Time-stamp string when the analysis was started - used as name for the virtual package for the saved nodes." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7rZVxqnuZmj" role="jymVt" />
     <node concept="3clFbW" id="5oO2AcZyoOd" role="jymVt">
       <node concept="3cqZAl" id="5oO2AcZyoOf" role="3clF45" />
       <node concept="3Tm1VV" id="5oO2AcZyoOg" role="1B3o_S" />
@@ -1742,6 +1754,31 @@
                   </node>
                   <node concept="37vLTw" id="5siEZZN9KsO" role="37vLTJ">
                     <ref role="3cqZAo" node="5siEZZN9HWN" resolve="logPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7rZVxqnvmX9" role="3cqZAp">
+          <node concept="37vLTI" id="7rZVxqnvnVc" role="3clFbG">
+            <node concept="37vLTw" id="7rZVxqnvmX7" role="37vLTJ">
+              <ref role="3cqZAo" node="7rZVxqnuYur" resolve="virtualPackageName" />
+            </node>
+            <node concept="2OqwBi" id="7rZVxqnvlaL" role="37vLTx">
+              <node concept="2ShNRf" id="7rZVxqnv0rF" role="2Oq$k0">
+                <node concept="1pGfFk" id="7rZVxqnvkNz" role="2ShVmc">
+                  <ref role="37wK5l" to="25x5:~SimpleDateFormat.&lt;init&gt;(java.lang.String)" resolve="SimpleDateFormat" />
+                  <node concept="Xl_RD" id="7rZVxqnvkTm" role="37wK5m">
+                    <property role="Xl_RC" value="yyyy_MM_dd_HH_mm_ss" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="7rZVxqnvm57" role="2OqNvi">
+                <ref role="37wK5l" to="25x5:~DateFormat.format(java.util.Date):java.lang.String" resolve="format" />
+                <node concept="2ShNRf" id="7rZVxqnvm9d" role="37wK5m">
+                  <node concept="1pGfFk" id="7rZVxqnvmGo" role="2ShVmc">
+                    <ref role="37wK5l" to="33ny:~Date.&lt;init&gt;()" resolve="Date" />
                   </node>
                 </node>
               </node>

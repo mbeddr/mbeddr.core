@@ -10,10 +10,9 @@
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="5do0" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b24(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
-    <import index="hr5x" ref="r:0f006508-b2f4-4b98-82de-5b32de29d867(com.mbeddr.analyses.spin.promela.rt.testing_utils)" />
-    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" implicit="true" />
-    <import index="hr62" ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.analyses.spin.promela.rt.testing_utils)" implicit="true" />
+    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
+    <import index="hr62" ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.analyses.spin.promela.rt.testing_utils)" />
+    <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.promela.rt.analyzer.model)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -115,7 +114,7 @@
           <node concept="3cpWsn" id="4Nq31LVtNqw" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="HmUOIGCDue" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
+              <ref role="3uigEE" to="imq8:1wu5Hv6fnnb" resolve="SpinRawResult" />
             </node>
             <node concept="2YIFZM" id="_jsMICrVg6" role="33vP2m">
               <ref role="37wK5l" to="hr62:_jsMICrMgd" resolve="checkModel2" />
@@ -147,7 +146,7 @@
                     <ref role="3cqZAo" node="4Nq31LVtNqw" resolve="res" />
                   </node>
                   <node concept="2OwXpG" id="HmUOIGCUZu" role="2OqNvi">
-                    <ref role="2Oxat5" to="5do7:7Rf0$0HT2cv" resolve="trailOutput" />
+                    <ref role="2Oxat5" to="imq8:7Rf0$0HT2cv" resolve="trailOutput" />
                   </node>
                 </node>
               </node>
@@ -161,7 +160,7 @@
                 <ref role="3cqZAo" node="4Nq31LVtNqw" resolve="res" />
               </node>
               <node concept="2OwXpG" id="HmUOIGCGV4" role="2OqNvi">
-                <ref role="2Oxat5" to="5do7:7Rf0$0HT2cv" resolve="trailOutput" />
+                <ref role="2Oxat5" to="imq8:7Rf0$0HT2cv" resolve="trailOutput" />
               </node>
             </node>
             <node concept="liA8E" id="4Nq31LVu8z5" role="2OqNvi">
@@ -176,7 +175,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="1f0gqNzAccm">
-    <property role="2XOHcw" value="${mbeddr.spin.home}/code/languages/com.mbeddr.analyses.spin/" />
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
   </node>
   <node concept="1lH9Xt" id="24G9CRyL2ZB">
     <property role="TrG5h" value="IfTest" />
@@ -189,7 +188,7 @@
           <node concept="3cpWsn" id="24G9CRyL3yF" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="HmUOIGCEeJ" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
+              <ref role="3uigEE" to="imq8:1wu5Hv6fnnb" resolve="SpinRawResult" />
             </node>
             <node concept="2YIFZM" id="_jsMICrQuN" role="33vP2m">
               <ref role="37wK5l" to="hr62:_jsMICrMgd" resolve="checkModel2" />
@@ -221,7 +220,7 @@
                     <ref role="3cqZAo" node="24G9CRyL3yF" resolve="res" />
                   </node>
                   <node concept="2OwXpG" id="HmUOIGCEui" role="2OqNvi">
-                    <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                    <ref role="2Oxat5" to="imq8:1wu5Hv6fz1d" resolve="spinRawOutput" />
                   </node>
                 </node>
               </node>
@@ -235,7 +234,7 @@
                 <ref role="3cqZAo" node="24G9CRyL3yF" resolve="res" />
               </node>
               <node concept="2OwXpG" id="HmUOIGCEG$" role="2OqNvi">
-                <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                <ref role="2Oxat5" to="imq8:1wu5Hv6fz1d" resolve="spinRawOutput" />
               </node>
             </node>
             <node concept="liA8E" id="24G9CRyL3z0" role="2OqNvi">
@@ -260,7 +259,7 @@
           <node concept="3cpWsn" id="24G9CRyL9ud" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="HmUOIGCCKD" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
+              <ref role="3uigEE" to="imq8:1wu5Hv6fnnb" resolve="SpinRawResult" />
             </node>
             <node concept="2YIFZM" id="_jsMICrOFy" role="33vP2m">
               <ref role="37wK5l" to="hr62:_jsMICrMgd" resolve="checkModel2" />
@@ -292,7 +291,7 @@
                     <ref role="3cqZAo" node="24G9CRyL9ud" resolve="res" />
                   </node>
                   <node concept="2OwXpG" id="HmUOIGCD4t" role="2OqNvi">
-                    <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                    <ref role="2Oxat5" to="imq8:1wu5Hv6fz1d" resolve="spinRawOutput" />
                   </node>
                 </node>
               </node>
@@ -306,7 +305,7 @@
                 <ref role="3cqZAo" node="24G9CRyL9ud" resolve="res" />
               </node>
               <node concept="2OwXpG" id="HmUOIGCDiJ" role="2OqNvi">
-                <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                <ref role="2Oxat5" to="imq8:1wu5Hv6fz1d" resolve="spinRawOutput" />
               </node>
             </node>
             <node concept="liA8E" id="24G9CRyL9uy" role="2OqNvi">
@@ -322,6 +321,7 @@
   </node>
   <node concept="1lH9Xt" id="Rd$2EC6oxD">
     <property role="TrG5h" value="MultipleChoiceTest" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="Rd$2EC6oxE" role="1SL9yI">
       <property role="TrG5h" value="smoke" />
       <node concept="3cqZAl" id="Rd$2EC6oxF" role="3clF45" />
@@ -330,7 +330,7 @@
           <node concept="3cpWsn" id="Rd$2EC6oxI" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="54ptZbPSAzx" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:7XCY$_raa_8" resolve="SpinLiftedResult" />
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
             </node>
             <node concept="2YIFZM" id="54ptZbPSAqg" role="33vP2m">
               <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
@@ -359,14 +359,14 @@
                 </node>
                 <node concept="2OqwBi" id="Rd$2EC6oxU" role="3uHU7w">
                   <node concept="2OwXpG" id="54ptZbPT4QM" role="2OqNvi">
-                    <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                    <ref role="2Oxat5" to="imq8:1wu5Hv6fz1d" resolve="spinRawOutput" />
                   </node>
                   <node concept="2OqwBi" id="54ptZbPSBIm" role="2Oq$k0">
                     <node concept="37vLTw" id="Rd$2EC6oxV" role="2Oq$k0">
                       <ref role="3cqZAo" node="Rd$2EC6oxI" resolve="res" />
                     </node>
                     <node concept="liA8E" id="54ptZbPSC6M" role="2OqNvi">
-                      <ref role="37wK5l" to="5do7:7XCY$_ranFq" resolve="getRawResult" />
+                      <ref role="37wK5l" to="imq8:7XCY$_ranFq" resolve="getRawResult" />
                     </node>
                   </node>
                 </node>
@@ -378,14 +378,14 @@
           <node concept="2OqwBi" id="Rd$2EC6oxZ" role="3vwVQn">
             <node concept="2OqwBi" id="Rd$2EC6oy0" role="2Oq$k0">
               <node concept="2OwXpG" id="54ptZbPSB_N" role="2OqNvi">
-                <ref role="2Oxat5" to="5do7:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                <ref role="2Oxat5" to="imq8:1wu5Hv6fz1d" resolve="spinRawOutput" />
               </node>
               <node concept="2OqwBi" id="54ptZbPSAKV" role="2Oq$k0">
                 <node concept="37vLTw" id="Rd$2EC6oy1" role="2Oq$k0">
                   <ref role="3cqZAo" node="Rd$2EC6oxI" resolve="res" />
                 </node>
                 <node concept="liA8E" id="54ptZbPSBa7" role="2OqNvi">
-                  <ref role="37wK5l" to="5do7:7XCY$_ranFq" resolve="getRawResult" />
+                  <ref role="37wK5l" to="imq8:7XCY$_ranFq" resolve="getRawResult" />
                 </node>
               </node>
             </node>
@@ -406,7 +406,153 @@
               <ref role="3cqZAo" node="Rd$2EC6oxI" resolve="res" />
             </node>
             <node concept="liA8E" id="54ptZbPSE9B" role="2OqNvi">
-              <ref role="37wK5l" to="5do7:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+              <ref role="37wK5l" to="imq8:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="1RC3LaKCwCs">
+    <property role="TrG5h" value="SelectTest" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="1RC3LaKCwCt" role="1SL9yI">
+      <property role="TrG5h" value="selectTest" />
+      <node concept="3cqZAl" id="1RC3LaKCwCu" role="3clF45" />
+      <node concept="3clFbS" id="1RC3LaKCwCv" role="3clF47">
+        <node concept="3cpWs8" id="1RC3LaKCwCw" role="3cqZAp">
+          <node concept="3cpWsn" id="1RC3LaKCwCx" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="1RC3LaKCwCy" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="1RC3LaKCwCz" role="33vP2m">
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <node concept="BaHAS" id="1RC3LaKCwC$" role="37wK5m">
+                <property role="BaHAW" value="promela" />
+                <property role="BaGAP" value="" />
+              </node>
+              <node concept="Xl_RD" id="1RC3LaKCwC_" role="37wK5m">
+                <property role="Xl_RC" value="select_test" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1RC3LaKCwCA" role="3cqZAp">
+          <node concept="2OqwBi" id="1RC3LaKCwCB" role="3clFbG">
+            <node concept="10M0yZ" id="1RC3LaKCwCC" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="1RC3LaKCwCD" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="1RC3LaKCwCE" role="37wK5m">
+                <node concept="Xl_RD" id="1RC3LaKCwCF" role="3uHU7B">
+                  <property role="Xl_RC" value="Output: \n\n" />
+                </node>
+                <node concept="2OqwBi" id="1RC3LaKCwCG" role="3uHU7w">
+                  <node concept="2OwXpG" id="1RC3LaKCwCH" role="2OqNvi">
+                    <ref role="2Oxat5" to="imq8:1wu5Hv6fz1d" resolve="spinRawOutput" />
+                  </node>
+                  <node concept="2OqwBi" id="1RC3LaKCwCI" role="2Oq$k0">
+                    <node concept="37vLTw" id="1RC3LaKCwCJ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1RC3LaKCwCx" resolve="res" />
+                    </node>
+                    <node concept="liA8E" id="1RC3LaKCwCK" role="2OqNvi">
+                      <ref role="37wK5l" to="imq8:7XCY$_ranFq" resolve="getRawResult" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="1RC3LaKCwCL" role="3cqZAp">
+          <node concept="2OqwBi" id="1RC3LaKCwCM" role="3vwVQn">
+            <node concept="2OqwBi" id="1RC3LaKCwCN" role="2Oq$k0">
+              <node concept="2OwXpG" id="1RC3LaKCwCO" role="2OqNvi">
+                <ref role="2Oxat5" to="imq8:1wu5Hv6fz1d" resolve="spinRawOutput" />
+              </node>
+              <node concept="2OqwBi" id="1RC3LaKCwCP" role="2Oq$k0">
+                <node concept="37vLTw" id="1RC3LaKCwCQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1RC3LaKCwCx" resolve="res" />
+                </node>
+                <node concept="liA8E" id="1RC3LaKCwCR" role="2OqNvi">
+                  <ref role="37wK5l" to="imq8:7XCY$_ranFq" resolve="getRawResult" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="1RC3LaKCwCS" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <node concept="Xl_RD" id="1RC3LaKCwCT" role="37wK5m">
+                <property role="Xl_RC" value="assertion violated (n!=6)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="1RC3LaKCwCU" role="3cqZAp">
+          <node concept="Xl_RD" id="1RC3LaKCwCV" role="3tpDZB">
+            <property role="Xl_RC" value="Assert: n!=6" />
+          </node>
+          <node concept="2OqwBi" id="1RC3LaKCwCW" role="3tpDZA">
+            <node concept="37vLTw" id="1RC3LaKCwCX" role="2Oq$k0">
+              <ref role="3cqZAo" node="1RC3LaKCwCx" resolve="res" />
+            </node>
+            <node concept="liA8E" id="1RC3LaKCwCY" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5p$33BW3gtR">
+    <property role="TrG5h" value="ForTest" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="5p$33BW3gtS" role="1SL9yI">
+      <property role="TrG5h" value="forTest" />
+      <node concept="3cqZAl" id="5p$33BW3gtT" role="3clF45" />
+      <node concept="3clFbS" id="5p$33BW3gtU" role="3clF47">
+        <node concept="3cpWs8" id="5p$33BW3gtV" role="3cqZAp">
+          <node concept="3cpWsn" id="5p$33BW3gtW" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="5p$33BW3gtX" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="5p$33BW3gtY" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <node concept="BaHAS" id="5p$33BW3gtZ" role="37wK5m">
+                <property role="BaHAW" value="promela" />
+                <property role="BaGAP" value="" />
+              </node>
+              <node concept="Xl_RD" id="5p$33BW3gu0" role="37wK5m">
+                <property role="Xl_RC" value="for_test" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="5p$33BW3gul" role="3cqZAp">
+          <node concept="Xl_RD" id="5p$33BW3gum" role="3tpDZB">
+            <property role="Xl_RC" value="Assert: sum==11" />
+          </node>
+          <node concept="2OqwBi" id="5p$33BW3gun" role="3tpDZA">
+            <node concept="37vLTw" id="5p$33BW3guo" role="2Oq$k0">
+              <ref role="3cqZAo" node="5p$33BW3gtW" resolve="res" />
+            </node>
+            <node concept="liA8E" id="5p$33BW3gup" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="5p$33BW3mco" role="3cqZAp">
+          <node concept="2OqwBi" id="5p$33BW3mLB" role="3vwVQn">
+            <node concept="37vLTw" id="5p$33BW3mpF" role="2Oq$k0">
+              <ref role="3cqZAo" node="5p$33BW3gtW" resolve="res" />
+            </node>
+            <node concept="liA8E" id="5p$33BW3ngG" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
             </node>
           </node>
         </node>

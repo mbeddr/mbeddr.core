@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -166,9 +166,6 @@
     <property role="R4oN_" value="interface with operations" />
     <property role="EcuMT" value="4491876417845484922" />
     <ref role="1TJDcQ" node="3TmmsQkC_PR" resolve="Interface" />
-    <node concept="1QGGSu" id="1N5Tah$CfTC" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/csinterface.png" />
-    </node>
     <node concept="1TJgyj" id="5oFMniD99CR" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="protocolErrorMsgTable" />
@@ -210,6 +207,9 @@
     <node concept="PrWs8" id="2SU$CK2_9a0" role="PzmwI">
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
+    <node concept="1QGGSu" id="1N5Tah$CfTC" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/csinterface.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkC_PW">
     <property role="3GE5qa" value="intf.cs" />
@@ -218,9 +218,6 @@
     <property role="R4oN_" value="an operation that is part of an interface" />
     <property role="EcuMT" value="4491876417845484924" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1QGGSu" id="1N5Tah$CfTx" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/operation.png" />
-    </node>
     <node concept="1TJgyj" id="3TmmsQkDmpS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parameters" />
@@ -272,6 +269,9 @@
       <property role="IQ2nx" value="6591434695301777601" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1QGGSu" id="1N5Tah$CfTx" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/operation.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkC_Q2">
     <property role="3GE5qa" value="comp.ports" />
@@ -308,9 +308,6 @@
     <property role="34LRSv" value="provides" />
     <property role="EcuMT" value="4491876417845628840" />
     <ref role="1TJDcQ" node="3TmmsQkC_Q2" resolve="Port" />
-    <node concept="1QGGSu" id="1N5Tah$CfTB" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/providedport.png" />
-    </node>
     <node concept="1TJgyi" id="5meTu9orykl" role="1TKVEl">
       <property role="TrG5h" value="singleClientOnly" />
       <property role="IQ2nx" value="6165117700225770773" />
@@ -332,6 +329,9 @@
       <property role="IQ2ns" value="8922663937488371062" />
       <ref role="20lvS9" node="3TmmsQkCzn9" resolve="Component" />
     </node>
+    <node concept="1QGGSu" id="1N5Tah$CfTB" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/providedport.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkD8YD">
     <property role="3GE5qa" value="comp.ports" />
@@ -340,9 +340,6 @@
     <property role="R4oN_" value="services used by component" />
     <property role="EcuMT" value="4491876417845628841" />
     <ref role="1TJDcQ" node="3TmmsQkC_Q2" resolve="Port" />
-    <node concept="1QGGSu" id="1N5Tah$CfTy" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/requiredport.png" />
-    </node>
     <node concept="1TJgyj" id="2ZUGF54knHd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="cardinality" />
@@ -361,6 +358,9 @@
       <property role="IQ2nx" value="349917904115138509" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1QGGSu" id="1N5Tah$CfTy" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/requiredport.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkDc76">
     <property role="3GE5qa" value="comp.runnable" />
@@ -369,9 +369,6 @@
     <property role="R4oN_" value="a &quot;function&quot; in a component" />
     <property role="EcuMT" value="4491876417845641670" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1QGGSu" id="1N5Tah$CfTA" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/runnable.png" />
-    </node>
     <node concept="1TJgyi" id="3TmmsQkDl9b" role="1TKVEl">
       <property role="TrG5h" value="abstract" />
       <property role="IQ2nx" value="4491876417845678667" />
@@ -445,6 +442,9 @@
     <node concept="PrWs8" id="7e09zBHTfSg" role="PzmwI">
       <ref role="PrY4T" to="c4fa:xAR9nWuwcY" resolve="IHasPrefixes" />
     </node>
+    <node concept="1QGGSu" id="1N5Tah$CfTA" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/runnable.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkDc79">
     <property role="3GE5qa" value="comp.runnable" />
@@ -483,20 +483,23 @@
     <property role="R4oN_" value="component with no instances inside" />
     <property role="EcuMT" value="4491876417845649011" />
     <ref role="1TJDcQ" node="3TmmsQkCzn9" resolve="Component" />
-    <node concept="1QGGSu" id="1N5Tah$CfT_" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/component.png" />
-    </node>
     <node concept="PrWs8" id="26BCBMXyKuy" role="PzmwI">
       <ref role="PrY4T" to="2gv2:26BCBMXyK6_" resolve="ISteppableUnit" />
     </node>
     <node concept="PrWs8" id="6RCWEZG4Kru" role="PzmwI">
       <ref role="PrY4T" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
     </node>
+    <node concept="PrWs8" id="4ZKqR_eTD3z" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
     <node concept="1TJgyj" id="3TmmsQkDl9d" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="baseComponent" />
       <property role="IQ2ns" value="4491876417845678669" />
       <ref role="20lvS9" node="3TmmsQkDdTN" resolve="AtomicComponent" />
+    </node>
+    <node concept="1QGGSu" id="1N5Tah$CfT_" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/component.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkDdTQ">
@@ -601,9 +604,6 @@
     <property role="34LRSv" value="instance config" />
     <property role="EcuMT" value="4491876417845649024" />
     <ref role="1TJDcQ" node="6JVEnxIhAG0" resolve="AbstractInstanceConfiguration" />
-    <node concept="1QGGSu" id="1N5Tah$CfTD" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/instanceConfiguration.png" />
-    </node>
     <node concept="PrWs8" id="3TmmsQkDdU1" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
@@ -639,6 +639,9 @@
     </node>
     <node concept="PrWs8" id="5hYHEwZAL_o" role="PzmwI">
       <ref role="PrY4T" node="5hYHEwZAyxP" resolve="IComponentInstanceAware" />
+    </node>
+    <node concept="1QGGSu" id="1N5Tah$CfTD" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/instanceConfiguration.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TmmsQkDmpO">
@@ -780,8 +783,8 @@
       <property role="20kJfa" value="portAdapter" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="466603768608410222" />
-      <ref role="20lvS9" node="71UKpntog8p" resolve="PortAdapterRefExpr" />
       <ref role="20ksaX" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+      <ref role="20lvS9" node="71UKpntog8p" resolve="PortAdapterRefExpr" />
     </node>
   </node>
   <node concept="1TIwiD" id="pTHqv6KWw9">
@@ -819,9 +822,6 @@
     <property role="R4oN_" value="field in component" />
     <property role="EcuMT" value="5308710777891512019" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1QGGSu" id="1N5Tah$CfT$" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/field.png" />
-    </node>
     <node concept="PrWs8" id="WcM3IIyEvh" role="PzmwI">
       <ref role="PrY4T" to="c4fa:4Ixybz5aK1O" resolve="IValueLike" />
     </node>
@@ -863,6 +863,9 @@
     </node>
     <node concept="PrWs8" id="29JE8qNvthB" role="PzmwI">
       <ref role="PrY4T" node="29JE8qNvth_" resolve="IMayRequiresComponentInitializer" />
+    </node>
+    <node concept="1QGGSu" id="1N5Tah$CfT$" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/field.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="4AGl5dzwUZT">
@@ -1857,8 +1860,8 @@
       <property role="20kJfa" value="portAdapter" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8594519220734394066" />
-      <ref role="20lvS9" node="71UKpntog8p" resolve="PortAdapterRefExpr" />
       <ref role="20ksaX" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+      <ref role="20lvS9" node="71UKpntog8p" resolve="PortAdapterRefExpr" />
     </node>
     <node concept="asaX9" id="4WC4fmOMQLM" role="lGtFl" />
   </node>

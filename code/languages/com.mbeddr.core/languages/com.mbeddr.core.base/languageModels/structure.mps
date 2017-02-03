@@ -16,6 +16,7 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -1365,41 +1366,59 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5lKnBeAtNw8">
-    <property role="TrG5h" value="AbstractPicker" />
+    <property role="TrG5h" value="AbstractPicker_old" />
     <property role="3GE5qa" value="pathAndFile" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="6156524541422549000" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5lKnBeAtODI" role="1TKVEl">
-      <property role="TrG5h" value="path" />
+      <property role="TrG5h" value="path_old" />
       <property role="IQ2nx" value="6156524541422553710" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="7CLMy5mpPoI" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.AbstractPicker&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="2mxBqli8MW4" role="1TKVEl">
-      <property role="TrG5h" value="pointOnlyToExistingFile" />
+      <property role="TrG5h" value="pointOnlyToExistingFile_old" />
       <property role="IQ2nx" value="2711621784026951428" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="7CLMy5mpPoN" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.AbstractPicker&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="x1qBkorxt" role="1TKVEl">
-      <property role="TrG5h" value="mayBeEmpty" />
+      <property role="TrG5h" value="mayBeEmpty_old" />
       <property role="IQ2nx" value="9294901202237533" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="7CLMy5mpPoS" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.AbstractPicker&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="7CLMy5mpPnC" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="5lKnBeAxLdJ">
     <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="SolutionRelativeFilePicker" />
+    <property role="TrG5h" value="SolutionRelativeFilePicker_old" />
     <property role="34LRSv" value="solution relative file picker" />
     <property role="EcuMT" value="6156524541423588207" />
-    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
+    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker_old" />
+    <node concept="asaX9" id="7CLMy5mpPo$" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2iGZqsHuOWj">
     <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="SolutionRelativeDirPicker" />
+    <property role="TrG5h" value="SolutionRelativeDirPicker_old" />
     <property role="34LRSv" value="solution relative dir picker" />
     <property role="EcuMT" value="2642765975824060179" />
-    <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker" />
+    <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker_old" />
+    <node concept="asaX9" id="7CLMy5mpPoq" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="DubiFAXpld">
     <property role="3GE5qa" value="chunk" />
@@ -1500,14 +1519,20 @@
   </node>
   <node concept="1TIwiD" id="7c_RIoB8H2I">
     <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="MacroFilePicker" />
+    <property role="TrG5h" value="MacroFilePicker_old" />
     <property role="34LRSv" value="macro file picker" />
     <property role="EcuMT" value="8297282968580444334" />
-    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
+    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker_old" />
     <node concept="1TJgyi" id="7c_RIoB8OqH" role="1TKVEl">
-      <property role="TrG5h" value="macro" />
+      <property role="TrG5h" value="macro_old" />
       <property role="IQ2nx" value="8297282968580474541" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="7CLMy5mpPoX" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.MacroFilePicker&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="7CLMy5mpPo6" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="GKLijSvTd0">
@@ -1571,8 +1596,8 @@
   <node concept="PlHQZ" id="59HbAIOYkEn">
     <property role="TrG5h" value="IDetectCycle" />
     <property role="EcuMT" value="5939454523704167063" />
-    <node concept="PrWs8" id="59HbAIP50Wn" role="PrDN$">
-      <ref role="PrY4T" node="65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    <node concept="PrWs8" id="77U0yzTjb$S" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="3VlwR$fEpF9">
@@ -1777,7 +1802,7 @@
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="SolutionRelativeHashedFilePicker" />
     <property role="EcuMT" value="2003025719968189746" />
-    <ref role="1TJDcQ" node="5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+    <ref role="1TJDcQ" to="68mc:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
     <node concept="1TJgyi" id="1JcbkuyFVAG" role="1TKVEl">
       <property role="TrG5h" value="descr" />
       <property role="IQ2nx" value="2003025719968381356" />
@@ -1813,45 +1838,63 @@
   </node>
   <node concept="1TIwiD" id="4eXJ6EO9ZKx">
     <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="MacroFolderPicker" />
+    <property role="TrG5h" value="MacroFolderPicker_old" />
     <property role="34LRSv" value="macro folder picker" />
     <property role="EcuMT" value="4881264737614560289" />
-    <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker" />
+    <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker_old" />
     <node concept="1TJgyi" id="4eXJ6EO9ZKy" role="1TKVEl">
-      <property role="TrG5h" value="macro" />
+      <property role="TrG5h" value="macro_old" />
       <property role="IQ2nx" value="4881264737614560290" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="7CLMy5mpPp2" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.mpsutil.filepicker.structure.MacroFolderPicker&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="7CLMy5mpPog" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="4eXJ6EOwIAn">
     <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="FileSystemDirPicker" />
+    <property role="TrG5h" value="FileSystemDirPicker_old" />
     <property role="34LRSv" value="file system dir picker" />
     <property role="EcuMT" value="4881264737620519319" />
-    <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker" />
+    <ref role="1TJDcQ" node="5Wocj7wnolM" resolve="AbstractFolderPicker_old" />
+    <node concept="asaX9" id="7CLMy5mpPnM" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1jw2PJJHS3i">
     <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="FileSystemFilePicker" />
+    <property role="TrG5h" value="FileSystemFilePicker_old" />
     <property role="34LRSv" value="file system file picker" />
     <property role="EcuMT" value="1504214765033455826" />
-    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
+    <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker_old" />
+    <node concept="asaX9" id="7CLMy5mpPnW" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5Wocj7wnolM">
     <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="AbstractFolderPicker" />
+    <property role="TrG5h" value="AbstractFolderPicker_old" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="6852280923331593586" />
-    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker" />
+    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker_old" />
+    <node concept="asaX9" id="7CLMy5mpPnu" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5Wocj7wnotA">
     <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="AbstractFilePicker" />
+    <property role="TrG5h" value="AbstractFilePicker_old" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="6852280923331594086" />
-    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker" />
+    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker_old" />
+    <node concept="asaX9" id="7CLMy5mpPnk" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.filepicker&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3RtPbXOi5Ir">
     <property role="3GE5qa" value="commenting" />

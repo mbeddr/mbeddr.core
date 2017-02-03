@@ -28,6 +28,7 @@
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="mpcv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.ref(JDK/)" />
     <import index="2w5c" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.updater(MPS.Editor/)" />
+    <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
   </imports>
@@ -2204,22 +2205,21 @@
       </node>
       <node concept="3Tm1VV" id="lPJxik8Xgs" role="1B3o_S" />
       <node concept="3clFbS" id="lPJxik8Xgt" role="3clF47">
-        <node concept="3clFbF" id="lPJxik8Ycn" role="3cqZAp">
-          <node concept="2ShNRf" id="lPJxik8Ycl" role="3clFbG">
-            <node concept="1pGfFk" id="lPJxik8YyQ" role="2ShVmc">
-              <ref role="37wK5l" to="6lvu:~DefaultChildSubstituteInfo.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="DefaultChildSubstituteInfo" />
-              <node concept="37vLTw" id="lPJxik8Y$q" role="37wK5m">
-                <ref role="3cqZAo" node="lPJxik8Xks" resolve="parent" />
-              </node>
-              <node concept="37vLTw" id="lPJxik8YCC" role="37wK5m">
-                <ref role="3cqZAo" node="lPJxik8XqB" resolve="child" />
-              </node>
-              <node concept="37vLTw" id="lPJxik8YJF" role="37wK5m">
-                <ref role="3cqZAo" node="lPJxik8XrU" resolve="linkDeclaration" />
-              </node>
-              <node concept="37vLTw" id="lPJxik8YY8" role="37wK5m">
-                <ref role="3cqZAo" node="lPJxik8WqD" resolve="myEditorContext" />
-              </node>
+        <node concept="3clFbF" id="6rHj_ILSHqT" role="3cqZAp">
+          <node concept="2YIFZM" id="6rHj_ILSI39" role="3clFbG">
+            <ref role="1Pybhc" to="kvq8:6rHj_ILSB4y" resolve="SubstituteUtil" />
+            <ref role="37wK5l" to="kvq8:6rHj_ILSIW5" resolve="forChild" />
+            <node concept="37vLTw" id="6rHj_ILSIdC" role="37wK5m">
+              <ref role="3cqZAo" node="lPJxik8WqD" resolve="myEditorContext" />
+            </node>
+            <node concept="37vLTw" id="6rHj_ILSInV" role="37wK5m">
+              <ref role="3cqZAo" node="lPJxik8Xks" resolve="parent" />
+            </node>
+            <node concept="37vLTw" id="6rHj_ILSIzU" role="37wK5m">
+              <ref role="3cqZAo" node="lPJxik8XqB" resolve="child" />
+            </node>
+            <node concept="37vLTw" id="6rHj_ILSIMO" role="37wK5m">
+              <ref role="3cqZAo" node="lPJxik8XrU" resolve="linkDeclaration" />
             </node>
           </node>
         </node>

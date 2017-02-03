@@ -6,9 +6,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
@@ -21,6 +19,7 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.promela.rt.analyzer)" />
+    <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.promela.rt.analyzer.model)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -204,7 +203,7 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3uibUv" id="_jsMICpJ4F" role="3clF45">
-        <ref role="3uigEE" to="5do7:7XCY$_raa_8" resolve="SpinLiftedResult" />
+        <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
       </node>
       <node concept="NWlO9" id="5yxSA$IRH$V" role="lGtFl">
         <property role="NWlVz" value="Check and return a lifted result." />
@@ -359,14 +358,14 @@
               </node>
             </node>
             <node concept="liA8E" id="_jsMICrOsY" role="2OqNvi">
-              <ref role="37wK5l" to="5do7:7XCY$_ranFq" resolve="getRawResult" />
+              <ref role="37wK5l" to="imq8:7XCY$_ranFq" resolve="getRawResult" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="_jsMICrMhz" role="1B3o_S" />
       <node concept="3uibUv" id="_jsMICrNHd" role="3clF45">
-        <ref role="3uigEE" to="5do7:1wu5Hv6fnnb" resolve="SpinRawResult" />
+        <ref role="3uigEE" to="imq8:1wu5Hv6fnnb" resolve="SpinRawResult" />
       </node>
       <node concept="NWlO9" id="5yxSA$IRHz6" role="lGtFl">
         <property role="NWlVz" value="Check and return the raw result." />
@@ -499,7 +498,7 @@
       </node>
       <node concept="3Tm1VV" id="5yxSA$IRHTe" role="1B3o_S" />
       <node concept="3uibUv" id="5yxSA$IRUBN" role="3clF45">
-        <ref role="3uigEE" to="5do7:7XCY$_raa_8" resolve="SpinLiftedResult" />
+        <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
       </node>
       <node concept="NWlO9" id="5yxSA$IRHTg" role="lGtFl">
         <property role="NWlVz" value="Check the AssertionAnalysis." />
@@ -510,7 +509,7 @@
       <property role="TrG5h" value="doCheck" />
       <node concept="3Tm6S6" id="5yxSA$IRGjr" role="1B3o_S" />
       <node concept="3uibUv" id="5yxSA$IRGjs" role="3clF45">
-        <ref role="3uigEE" to="5do7:7XCY$_raa_8" resolve="SpinLiftedResult" />
+        <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
       </node>
       <node concept="37vLTG" id="5yxSA$IRGjl" role="3clF46">
         <property role="TrG5h" value="aa" />
@@ -548,7 +547,7 @@
           <node concept="3cpWsn" id="5yxSA$IRGiS" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="5yxSA$IRGiT" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:7XCY$_raa_8" resolve="SpinLiftedResult" />
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
             </node>
             <node concept="10Nm6u" id="5yxSA$IRGiU" role="33vP2m" />
           </node>

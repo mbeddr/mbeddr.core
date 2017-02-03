@@ -24,6 +24,7 @@
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2618,7 +2619,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="2iGZqsH_qyH" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:5lKnBeAuiv7" resolve="isValidDirectory" />
+              <ref role="37wK5l" to="48kf:5lKnBeAuiv7" resolve="isValidDirectory" />
             </node>
           </node>
         </node>
@@ -2731,7 +2732,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="2iGZqsH_yaP" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+              <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
             </node>
           </node>
         </node>

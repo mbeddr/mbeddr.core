@@ -3,14 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
+    <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -48,7 +46,7 @@
     <property role="34LRSv" value="pick_nondet" />
     <property role="3GE5qa" value="" />
     <property role="EcuMT" value="1737851622209916271" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="1wu5Hv6a9W9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="varRef" />
@@ -72,13 +70,13 @@
     </node>
   </node>
   <node concept="1TIwiD" id="HmUOIGIC$N">
-    <property role="TrG5h" value="Assume" />
-    <property role="34LRSv" value="assume" />
+    <property role="TrG5h" value="WhenStatement" />
+    <property role="34LRSv" value="when" />
     <property role="EcuMT" value="817099092667304243" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="HmUOIGID01" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="assumption" />
+      <property role="20kJfa" value="condition" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="817099092667305985" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
@@ -94,7 +92,7 @@
     <property role="TrG5h" value="Loop" />
     <property role="34LRSv" value="loop" />
     <property role="EcuMT" value="817099092667797496" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="HmUOIGKxf4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="times" />
@@ -147,11 +145,10 @@
   <node concept="1TIwiD" id="5RNtn4ccJZN">
     <property role="TrG5h" value="ForEachVarDecl" />
     <property role="EcuMT" value="6769883793264410611" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-    <node concept="PrWs8" id="5RNtn4ccJZO" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="1BFQdmKbskw" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
     </node>
-    <node concept="PrWs8" id="5RNtn4ccT01" role="PzmwI">
+    <node concept="PrWs8" id="1BFQdmKc4pA" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
   </node>
@@ -159,7 +156,7 @@
     <property role="TrG5h" value="ForEachStatement" />
     <property role="34LRSv" value="foreach" />
     <property role="EcuMT" value="6769883793264065291" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="5RNtn4cbrGh" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="iter" />
@@ -184,8 +181,30 @@
     <node concept="PrWs8" id="5RNtn4cc5Ln" role="PzmwI">
       <ref role="PrY4T" to="k146:6viY8n0hYkZ" resolve="IRangeContext" />
     </node>
-    <node concept="PrWs8" id="5RNtn4ccYXR" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+  </node>
+  <node concept="1TIwiD" id="Hdy9e2Zzhw">
+    <property role="EcuMT" value="814457274763195488" />
+    <property role="TrG5h" value="Assume" />
+    <property role="34LRSv" value="assume" />
+    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <node concept="1TJgyj" id="Hdy9e2Zzhx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cond" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="814457274763195489" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1BFQdmKbEJq">
+    <property role="EcuMT" value="1867824882770684890" />
+    <property role="TrG5h" value="ForEachVarDeclRef" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="1BFQdmKdkgC" role="1TKVEi">
+      <property role="IQ2ns" value="1867824882771117096" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5RNtn4ccJZN" resolve="ForEachVarDecl" />
     </node>
   </node>
 </model>
