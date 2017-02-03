@@ -42,8 +42,17 @@ task resolveMpsArtifacts() {
     }
 }
 
+def spawnerDependencies
+
+//on teamcity we don't build the platform we take it from the nexus. Locally we want to build it
+if (project.hasProperty("teamCity")) {
+    spawnerDependencies = [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]
+} else {
+    spawnerDependencies = [':build:com.mbeddr:platform:build_platform']
+}
+
 //move spawner into mbeddr script
-task build_spawner(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]) {
+task build_spawner(type: BuildLanguages, dependsOn: spawnerDependencies) {
     script scriptFile('com.mbeddr.build/spawner.xml')
 }
 
@@ -185,5 +194,7 @@ publishing {
         }
     }
 }
+
+rootProject.defaultTasks 'build_mbeddr'
 
 check.dependsOn test_mbeddr
