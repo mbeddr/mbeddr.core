@@ -45,7 +45,7 @@ task resolveMpsArtifacts() {
 def spawnerDependencies
 
 //on teamcity we don't build the platform we take it from the nexus. Locally we want to build it
-if (project.hasProperty("teamCity")) {
+if (project.hasProperty("teamcity")) {
     spawnerDependencies = [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]
 } else {
     spawnerDependencies = [':build:com.mbeddr:platform:build_platform']

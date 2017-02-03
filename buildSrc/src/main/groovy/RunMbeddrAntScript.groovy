@@ -12,7 +12,7 @@ class RunMbeddrAntScript extends DefaultTask {
 
     @TaskAction
     def build() {
-        def args = buildProcSpawnArgList([*project.dependsOnMbeddr_scriptArgs, *(antScriptLocation(script)), *targets])
+        def args = buildProcSpawnArgList(['ant', '-verbose',*project.dependsOnMbeddr_scriptArgs, *(antScriptLocation(script)), *targets])
         project.exec {
             workingDir project.rootDir
             commandLine args
