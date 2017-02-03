@@ -144,6 +144,12 @@
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+      <concept id="6307143892175911066" name="com.mbeddr.core.util.structure.RangeExpression" flags="ng" index="1vV05I">
+        <property id="8729447926330623085" name="rightExclude" index="n43Ve" />
+        <property id="8729447926330623084" name="leftExclude" index="n43Vf" />
+        <child id="6307143892175911068" name="right" index="1vV05C" />
+        <child id="6307143892175911067" name="left" index="1vV05J" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -191,9 +197,8 @@
     </language>
     <language id="f027a490-7082-492e-99ce-dfe65d7342f7" name="com.mbeddr.analyses.spin.c.patterns">
       <concept id="4708346905221050110" name="com.mbeddr.analyses.spin.c.patterns.structure.NondetAssign" flags="ng" index="WlspI">
+        <child id="5312446954975007318" name="vals" index="2IRowd" />
         <child id="4708346905221050140" name="exp" index="Wlsuc" />
-        <child id="4708346905221050795" name="lower" index="Wlt$V" />
-        <child id="4708346905221050798" name="upper" index="Wlt$Y" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -1722,11 +1727,15 @@
           <node concept="1S7827" id="Y_s0Wj_GjM" role="Wlsuc">
             <ref role="1S7826" node="Y_s0Wj_GjF" resolve="arrayVar" />
           </node>
-          <node concept="3TlMh9" id="Y_s0Wj_GjN" role="Wlt$V">
-            <property role="2hmy$m" value="0" />
-          </node>
-          <node concept="3TlMh9" id="Y_s0Wj_GjO" role="Wlt$Y">
-            <property role="2hmy$m" value="3" />
+          <node concept="1vV05I" id="4ATA_JBqmbJ" role="2IRowd">
+            <property role="n43Vf" value="false" />
+            <property role="n43Ve" value="false" />
+            <node concept="3TlMh9" id="4ATA_JBqmbH" role="1vV05J">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="3TlMh9" id="4ATA_JBqmbI" role="1vV05C">
+              <property role="2hmy$m" value="3" />
+            </node>
           </node>
         </node>
         <node concept="37Gg4z" id="Y_s0Wj_GjP" role="3XIRFZ">
@@ -1805,11 +1814,15 @@
           <node concept="1S7827" id="Y_s0Wj_2TU" role="Wlsuc">
             <ref role="1S7826" node="Y_s0Wj_2QR" resolve="intVar" />
           </node>
-          <node concept="3TlMh9" id="5Gboyv9EAnk" role="Wlt$V">
-            <property role="2hmy$m" value="1" />
-          </node>
-          <node concept="3TlMh9" id="5Gboyv9EAnE" role="Wlt$Y">
-            <property role="2hmy$m" value="3" />
+          <node concept="1vV05I" id="4ATA_JBqmvN" role="2IRowd">
+            <property role="n43Vf" value="false" />
+            <property role="n43Ve" value="false" />
+            <node concept="3TlMh9" id="4ATA_JBqmvL" role="1vV05J">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3TlMh9" id="4ATA_JBqmvM" role="1vV05C">
+              <property role="2hmy$m" value="3" />
+            </node>
           </node>
         </node>
         <node concept="37Gg4z" id="5Gboyv9E$Pt" role="3XIRFZ">
