@@ -215,20 +215,6 @@
       <ref role="20lvS9" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1BFQdmJZZ5k">
-    <property role="EcuMT" value="1867824882767622484" />
-    <property role="3GE5qa" value="harness.assign" />
-    <property role="TrG5h" value="DiscreteValuesExpression" />
-    <property role="34LRSv" value="{" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="1BFQdmJZZA3" role="1TKVEi">
-      <property role="IQ2ns" value="1867824882767624579" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="elements" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrDq" resolve="Literal" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1BFQdmKfv_H">
     <property role="EcuMT" value="1867824882771687789" />
     <property role="3GE5qa" value="harness.assign" />
@@ -250,6 +236,20 @@
     </node>
     <node concept="PrWs8" id="1BFQdmKfv_I" role="PzmwI">
       <ref role="PrY4T" to="k146:6viY8n0hYkZ" resolve="IRangeContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1BFQdmJZZ5k">
+    <property role="EcuMT" value="1867824882767622484" />
+    <property role="3GE5qa" value="harness.assign" />
+    <property role="TrG5h" value="DiscreteValuesExpression" />
+    <property role="34LRSv" value="{" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="1BFQdmJZZA3" role="1TKVEi">
+      <property role="IQ2ns" value="1867824882767624579" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrDq" resolve="Literal" />
     </node>
   </node>
   <node concept="1TIwiD" id="1BFQdmKfJHu">

@@ -19,14 +19,23 @@ if (project.hasProperty('mbeddrBuild')) {
     ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
 }
 
-ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor)
+if (project.hasProperty("mbeddrBuildCounter")) {
+    ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
+} else {
+    ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
+}
+
+println "build:" + mbeddrBuild
+println mbeddrMajor+ "." + mbeddrMinor
+
+ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
 
 // path variables
 ext.mpsHomeDir = new File(rootDir, "MPS/MPS-mbeddr-$mpsBuild/")
 ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
 ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
 ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()
-String buildVersion = '-Dbuild='+mbeddrBuild
+String buildVersion = '-Dbuild=' + GitBasedVersioning.getGitShortCommitHash()
 String majorVersion = '-Dmajor.version='+mbeddrMajor
 String minorVersion = '-Dminor.version='+mbeddrMinor
 ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
@@ -98,6 +107,8 @@ private static void configureRepositories(Project project) {
         }
     }
 }
+
+
 
 task printVersion {
     doLast {

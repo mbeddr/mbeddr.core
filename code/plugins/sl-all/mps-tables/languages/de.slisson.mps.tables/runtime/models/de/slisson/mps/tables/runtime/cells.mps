@@ -8377,6 +8377,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="1xOZjo5cpzo" role="3cqZAp">
+          <node concept="1rXfSq" id="1xOZjo5cpzm" role="3clFbG">
+            <ref role="37wK5l" to="g51k:~EditorCell_Basic.setCellContext(jetbrains.mps.openapi.editor.cells.EditorCellContext):void" resolve="setCellContext" />
+            <node concept="2OqwBi" id="1xOZjo5crlx" role="37wK5m">
+              <node concept="37vLTw" id="1xOZjo5cqZM" role="2Oq$k0">
+                <ref role="3cqZAo" node="20OswHE1xW$" resolve="wrappedCell" />
+              </node>
+              <node concept="liA8E" id="1xOZjo5crv0" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getCellContext():jetbrains.mps.openapi.editor.cells.EditorCellContext" resolve="getCellContext" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="20OswHE0eIQ" role="3clF46">
         <property role="TrG5h" value="context" />

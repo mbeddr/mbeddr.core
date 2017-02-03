@@ -21,7 +21,6 @@
         <usedDevKit>a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)</usedDevKit>
       </usedDevKits>
       <languageVersions>
-        <language slang="l:5ef691b5-60ce-4ece-a04e-25e642dfa128:com.mbeddr.mpsutil.lantest" version="1" />
         <language slang="l:0617b2ed-f9cf-44b7-b91d-b3a8e60bae7f:com.mbeddr.mpsutil.lantest.baselang" version="-1" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
         <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />

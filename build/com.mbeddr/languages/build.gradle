@@ -12,7 +12,13 @@ repositories {
 }
 configurations {
     junitAnt
+    mpsArtifacts
 }
+
+ext.dependencyRepositories = [
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' ]
+
 dependencies {
     junitAnt 'junit:junit:4.12'
     junitAnt('org.apache.ant:ant-junit:1.9.7') {
@@ -21,20 +27,52 @@ dependencies {
     junitAnt('org.apache.ant:ant-junit4:1.9.7') {
         transitive = false
     }
+    mpsArtifacts "com.mbeddr:platform:$mbeddrBuildNumber"
 }
+
+
+task resolveMpsArtifacts() {
+    doLast {
+        copy {
+            from {
+                    configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+                 }
+            into artifactsDir
+        }
+    }
+}
+
+def spawnerDependencies
+
+//on teamcity we don't build the platform we take it from the nexus. Locally we want to build it
+if (project.hasProperty("teamCity")) {
+    spawnerDependencies = [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]
+} else {
+    spawnerDependencies = [':build:com.mbeddr:platform:build_platform']
+}
+
+//move spawner into mbeddr script
+task build_spawner(type: BuildLanguages, dependsOn: spawnerDependencies) {
+    script scriptFile('com.mbeddr.build/spawner.xml')
+}
+
+task copy_spawner(type: Copy, dependsOn: build_spawner) {
+    from "artifacts/spawner/"
+    into "$mpsHomeDir/plugins"
+}
+
 ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
         classpath: configurations.junitAnt.asPath)
 ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
         classpath: configurations.junitAnt.asPath)
 
 
-task build_mbeddr(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:build_platform') {
+task build_mbeddr(type: BuildLanguages, dependsOn: copy_spawner ) {
     script script_build_mbeddr
 }
 
 def script_test_mbeddrTutorial = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-tests.xml")
-def script_test_mbeddrAnalysisTs = new File(scriptsBasePath + "/com.mbeddr.analyses/" + "build-ts-tests.xml")
-def script_test_mbeddrAnalysisEx = new File(scriptsBasePath + "/com.mbeddr.analyses/" + "build-ex-tests.xml")
+
 def script_test_mbeddrPerformance = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-performance-tests.xml")
 def script_test_mbeddrDebugger = new File(scriptsBasePath + "/com.mbeddr.debugger/" + "build-tests.xml")
 def script_test_mbeddrCoreEx = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-ex-tests.xml")
@@ -63,11 +101,9 @@ task build_tutorial(dependsOn: build_tutorial_solutions) { }
 task test_mbeddr_tutorial(type: TestLanguages, dependsOn: build_tutorial) {
     script script_test_mbeddrTutorial
 }
-
-task build_mbeddr_analysis_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
-    script script_test_mbeddrAnalysisEx
+task test_mbeddr_ext_ts(type: TestLanguages, dependsOn: build_mbeddr) {
+    script script_test_mbeddrExtTs
 }
-
 task test_mbeddr_performance(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrPerformance
 }
@@ -126,23 +162,39 @@ task test_mbeddr_ext_ex << {
     ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.ext")
 }
 
-task test_mbeddr_ext_ts(type: TestLanguages, dependsOn: build_mbeddr) {
-    script script_test_mbeddrExtTs
-}
-
-task test_mbeddr_analysis_ts(type: TestLanguages, dependsOn: build_mbeddr) {
-    script script_test_mbeddrAnalysisTs
-}
-task test_mbeddr_analysis_ex << {
-    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.analyses")
-}
-
-task test_mbeddr_analysis(dependsOn: [test_mbeddr_analysis_ts, build_mbeddr_analysis_ex, test_mbeddr_analysis_ex]) { }
 
 
 task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
 
 
-task test_mbeddr(dependsOn: [test_mbeddr_debugger, ':build:com.mbeddr:platform:test_mbeddr_platform', test_mbeddr_core, test_mbeddr_performance, test_mbeddr_tutorial, test_mbeddr_cc, test_mbeddr_ext]) {}
+task test_mbeddr(dependsOn: [test_mbeddr_core, test_mbeddr_performance, test_mbeddr_cc, test_mbeddr_ext]) {}
+
+task publish_mbeddr(type: Zip, dependsOn: test_mbeddr) {
+    archiveName 'com.mbeddr.zip'
+    from artifactsDir
+    include "mbeddr/**"
+}
+
+publishing {
+    publications {
+        mbeddr(MavenPublication) {
+            groupId 'com.mbeddr'
+            artifactId 'mbeddr'
+            version mbeddrBuildNumber
+            artifact(publish_mbeddr) {}
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.mpsArtifacts.allDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.group)
+                    dependencyNode.appendNode('artifactId', it.name)
+                    dependencyNode.appendNode('version', it.version)
+                }
+            }
+        }
+    }
+}
+
+rootProject.defaultTasks 'build_mbeddr'
 
 check.dependsOn test_mbeddr
