@@ -38,10 +38,6 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
-      <concept id="7389400916848050071" name="jetbrains.mps.build.structure.BuildLayout_Zip" flags="ng" index="3981dG" />
-      <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
-        <child id="4380385936562148502" name="containerName" index="Nbhlr" />
-      </concept>
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -1085,15 +1081,8 @@
       </node>
     </node>
     <node concept="1l3spV" id="7uZw0yZ43Ju" role="1l3spN">
-      <node concept="3981dG" id="6XXe7bCzKWI" role="39821P">
-        <node concept="3_J27D" id="6XXe7bCzKWJ" role="Nbhlr">
-          <node concept="3Mxwew" id="6XXe7bCzKWK" role="3MwsjC">
-            <property role="3MwjfP" value="com.mbeddr.allScripts.zip" />
-          </node>
-        </node>
-        <node concept="m$_wl" id="6XXe7bCzKWL" role="39821P">
-          <ref role="m_rDy" node="46zCYP2pxWG" resolve="com.mbeddr.allScripts" />
-        </node>
+      <node concept="m$_wl" id="6XXe7bCzKWL" role="39821P">
+        <ref role="m_rDy" node="46zCYP2pxWG" resolve="com.mbeddr.allScripts" />
       </node>
     </node>
   </node>
