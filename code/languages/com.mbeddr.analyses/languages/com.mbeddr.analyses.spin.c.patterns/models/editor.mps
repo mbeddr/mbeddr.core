@@ -310,10 +310,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="36pDmrEZQpK">
-    <ref role="1XX52x" to="llb3:36pDmrEZ2Bs" resolve="WhitnessLogger" />
+    <ref role="1XX52x" to="llb3:36pDmrEZ2Bs" resolve="WitnessLogger" />
     <node concept="3EZMnI" id="36pDmrEZQpM" role="2wV5jI">
       <node concept="3F0ifn" id="36pDmrEZQpT" role="3EZMnx">
-        <property role="3F0ifm" value="log whitness" />
+        <property role="3F0ifm" value="log witness" />
       </node>
       <node concept="3F0ifn" id="36pDmrEZQpZ" role="3EZMnx">
         <property role="3F0ifm" value="(" />
