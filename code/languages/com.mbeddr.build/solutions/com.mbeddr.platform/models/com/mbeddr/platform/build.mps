@@ -251,6 +251,30 @@
         <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
       </node>
     </node>
+    <node concept="m$_wf" id="1g7oDhK0dwB" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.postprocessGeneratedFiles" />
+      <node concept="3_J27D" id="1g7oDhK0dwC" role="m$_yQ">
+        <node concept="3Mxwew" id="1g7oDhK0dwD" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.postprocessGeneratedFiles" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="1g7oDhK0dwE" role="m_cZH">
+        <node concept="3Mxwew" id="1g7oDhK0dwF" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.postprocessGeneratedFiles" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="1g7oDhK0dwG" role="m$_w8">
+        <node concept="3Mxwey" id="1g7oDhK0dwH" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="1g7oDhK0h0E" role="m$_yh">
+        <ref role="m$f5T" node="1g7oDhK05EQ" resolve="group.postprocessGeneratedFiles" />
+      </node>
+      <node concept="m$_yC" id="1g7oDhK0iJf" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+    </node>
     <node concept="m$_wf" id="7uZw0yZ2_Jq" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil" />
       <node concept="m$_yC" id="70BL6LoGNLc" role="m$_yJ">
@@ -1900,6 +1924,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2G$12M" id="1g7oDhK05EQ" role="3989C9">
+      <property role="TrG5h" value="group.postprocessGeneratedFiles" />
       <node concept="1E1JtD" id="4xXxMGKguYm" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.postprocessGeneratedFiles" />
@@ -11890,6 +11917,9 @@
       </node>
       <node concept="m$_wl" id="Vtr7jyBi$h" role="39821P">
         <ref role="m_rDy" node="Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
+      </node>
+      <node concept="m$_wl" id="1g7oDhK0jAy" role="39821P">
+        <ref role="m_rDy" node="1g7oDhK0dwB" resolve="com.mbeddr.mpsutil.postprocessGeneratedFiles" />
       </node>
       <node concept="m$_wl" id="6ucYLjol21$" role="39821P">
         <ref role="m_rDy" node="7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
