@@ -122,8 +122,8 @@
   </node>
   <node concept="1TIwiD" id="36pDmrEZ2Bs">
     <property role="EcuMT" value="3574069640742840796" />
-    <property role="TrG5h" value="WhitnessLogger" />
-    <property role="34LRSv" value="log whitness" />
+    <property role="TrG5h" value="WitnessLogger" />
+    <property role="34LRSv" value="log witness" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="36pDmrF0owW" role="1TKVEi">
       <property role="IQ2ns" value="3574069640743192636" />
