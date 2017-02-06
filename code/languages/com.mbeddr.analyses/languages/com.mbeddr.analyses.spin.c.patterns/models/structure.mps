@@ -278,5 +278,22 @@
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5IfbEbQA2zq">
+    <property role="EcuMT" value="6597543256577812698" />
+    <property role="3GE5qa" value="harness" />
+    <property role="TrG5h" value="TrackState" />
+    <property role="34LRSv" value="track state" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5IfbEbQA2zu" role="1TKVEi">
+      <property role="IQ2ns" value="6597543256577812702" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="memory" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="5IfbEbQA2zr" role="PzmwI">
+      <ref role="PrY4T" to="ir22:GpUw9S5_Xa" resolve="IPromelaModelContent" />
+    </node>
+  </node>
 </model>
 
