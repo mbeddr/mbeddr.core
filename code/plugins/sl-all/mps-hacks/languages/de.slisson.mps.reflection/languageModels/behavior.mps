@@ -18,7 +18,6 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
     <import index="fnmy" ref="r:89c0fb70-0977-4113-a076-5906f9d8630f(jetbrains.mps.baseLanguage.scopes)" />
     <import index="oiz3" ref="r:879596e5-224b-4613-97ab-fbcbd7050732(de.slisson.mps.reflection.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -83,18 +82,10 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
-        <child id="1081256993305" name="classType" index="2ZW6by" />
-        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
-      </concept>
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -139,9 +130,6 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -447,40 +435,6 @@
       <property role="TrG5h" value="eval" />
       <ref role="13i0hy" to="tpek:hEwJgmp" resolve="eval" />
       <node concept="3clFbS" id="hEwJhHn" role="3clF47">
-        <node concept="3clFbJ" id="5u3ILwPAZEg" role="3cqZAp">
-          <node concept="3clFbS" id="5u3ILwPAZEj" role="3clFbx">
-            <node concept="3clFbF" id="5u3ILwPEGdl" role="3cqZAp">
-              <node concept="37vLTI" id="5u3ILwPEGkv" role="3clFbG">
-                <node concept="2OqwBi" id="5u3ILwPEGZD" role="37vLTx">
-                  <node concept="1eOMI4" id="5u3ILwPEGmG" role="2Oq$k0">
-                    <node concept="10QFUN" id="5u3ILwPEGmH" role="1eOMHV">
-                      <node concept="37vLTw" id="5u3ILwPEGmF" role="10QFUP">
-                        <ref role="3cqZAo" node="hEwJhHH" resolve="module" />
-                      </node>
-                      <node concept="3uibUv" id="5u3ILwPEGDo" role="10QFUM">
-                        <ref role="3uigEE" to="ap4t:~TransientModelsModule" resolve="TransientModelsModule" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="5u3ILwPEKgr" role="2OqNvi">
-                    <ref role="37wK5l" to="ap4t:~TransientModelsModule.getOriginalModule():org.jetbrains.mps.openapi.module.SModule" resolve="getOriginalModule" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="5u3ILwPEGdk" role="37vLTJ">
-                  <ref role="3cqZAo" node="hEwJhHH" resolve="module" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2ZW3vV" id="5u3ILwPB0JQ" role="3clFbw">
-            <node concept="3uibUv" id="5u3ILwPEG5M" role="2ZW6by">
-              <ref role="3uigEE" to="ap4t:~TransientModelsModule" resolve="TransientModelsModule" />
-            </node>
-            <node concept="37vLTw" id="5u3ILwPB0bJ" role="2ZW6bz">
-              <ref role="3cqZAo" node="hEwJhHH" resolve="module" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="hEwJhHo" role="3cqZAp">
           <node concept="3cpWsn" id="hEwJhHp" role="3cpWs9">
             <property role="TrG5h" value="method" />
