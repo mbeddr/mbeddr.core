@@ -58,6 +58,12 @@
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="toolChains" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.ToolChain" flags="ng" index="3abb7c">
+        <property id="1485382076184236781" name="name" index="3abb7d" />
+      </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -925,6 +931,18 @@
       <property role="3r8Kxs" value="make" />
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
+      <node concept="3abb7c" id="2b2D8jU55Fn" role="3anu1O">
+        <property role="3abb7d" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="2b2D8jU55Fo" role="3anu1O">
+        <property role="3abb7d" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="2b2D8jU55Fp" role="3anu1O">
+        <property role="3abb7d" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="2b2D8jU55Fq" role="3anu1O">
+        <property role="3abb7d" value="Portable" />
+      </node>
     </node>
     <node concept="2eOfOl" id="6IBKEH6m2zS" role="2ePNbc">
       <property role="iO3LB" value="true" />

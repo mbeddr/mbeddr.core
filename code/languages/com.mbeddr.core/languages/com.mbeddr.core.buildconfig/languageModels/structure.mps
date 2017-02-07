@@ -227,6 +227,13 @@
     <node concept="1QGGSu" id="7ue4kw5DH0z" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/program.png" />
     </node>
+    <node concept="1TJgyj" id="2b2D8jU0yRA" role="1TKVEi">
+      <property role="IQ2ns" value="2504745233808502246" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="toolChain" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="ToolChain" />
+    </node>
   </node>
   <node concept="AxPO7" id="EAKPqgNQYr">
     <property role="TrG5h" value="EnvironmentKind" />
@@ -290,6 +297,13 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="2741479916248882970" />
       <ref role="20lvS9" node="2obGnlQSrk0" resolve="IBuildProcessor" />
+    </node>
+    <node concept="1TJgyj" id="1it8M3uKcdk" role="1TKVEi">
+      <property role="IQ2ns" value="1485382076185232212" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="toolChains" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="ToolChain" />
     </node>
     <node concept="PrWs8" id="4BxItZJ4BoH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -656,6 +670,17 @@
     <node concept="1TJgyi" id="2LP1MbL3BO8" role="1TKVEl">
       <property role="TrG5h" value="path" />
       <property role="IQ2nx" value="3203474556598517000" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1it8M3uGpbG">
+    <property role="EcuMT" value="1485382076184236780" />
+    <property role="3GE5qa" value="platform" />
+    <property role="TrG5h" value="ToolChain" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1it8M3uGpbH" role="1TKVEl">
+      <property role="IQ2nx" value="1485382076184236781" />
+      <property role="TrG5h" value="name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
