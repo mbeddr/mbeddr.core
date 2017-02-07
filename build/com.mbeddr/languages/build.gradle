@@ -215,4 +215,7 @@ publishing {
 
 rootProject.defaultTasks 'build_mbeddr'
 
+task publishMbeddrToLocal (dependsOn: ['publishMbeddrPublicationToMavenLocal',
+':build:com.mbeddr:platform:publishMbeddrPlatformToLocal']) {}
+
 check.dependsOn test_mbeddr

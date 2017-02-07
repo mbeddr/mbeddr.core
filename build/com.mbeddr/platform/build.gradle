@@ -71,6 +71,8 @@ task publish_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
     include "com.mbeddr.platform/**"
 }
 
+task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrAllScriptsPublicationToMavenLocal', 'publishMbeddrPlatformPublicationToMavenLocal'])
+
 publishing {
     publications {
         mbeddrPlatform(MavenPublication) {
