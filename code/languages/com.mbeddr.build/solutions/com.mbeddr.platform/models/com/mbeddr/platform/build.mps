@@ -344,9 +344,6 @@
       <node concept="m$f5U" id="3quoVcnS52a" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnGSCe" resolve="com.mbeddr.mpsutil.globalgenerators" />
       </node>
-      <node concept="m$f5U" id="3quoVcnS52I" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnFFUF" resolve="com.mbeddr.mpsutil.grammarcells" />
-      </node>
       <node concept="m$f5U" id="3quoVcnS57Z" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnNsFs" resolve="com.mbeddr.mpsutil.httpsupport" />
       </node>
@@ -439,6 +436,9 @@
       </node>
       <node concept="m$_yC" id="5fGcQI94pvb" role="m$_yJ">
         <ref role="m$_y1" node="5fGcQI94fMR" resolve="com.mbeddr.mpsutil.common" />
+      </node>
+      <node concept="m$_yC" id="5fGcQI9hdOz" role="m$_yJ">
+        <ref role="m$_y1" node="5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />
       </node>
       <node concept="3_J27D" id="7uZw0yZ2_Jx" role="m_cZH">
         <node concept="3Mxwew" id="7uZw0yZ2_Jy" role="3MwsjC">
@@ -558,6 +558,51 @@
       <node concept="3_J27D" id="5fGcQI93Tza" role="3s6cr7">
         <node concept="3Mxwew" id="5fGcQI93Tzb" role="3MwsjC">
           <property role="3MwjfP" value="Wizard/Process Langauge from mbeddr.mpsutil" />
+        </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="5fGcQI9h7GO" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.grammarcells" />
+      <node concept="3_J27D" id="5fGcQI9h7GP" role="m$_yQ">
+        <node concept="3Mxwew" id="5fGcQI9h7GQ" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.grammarcells" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="5fGcQI9h7GR" role="m$_w8">
+        <node concept="3Mxwey" id="5fGcQI9h7GS" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="5fGcQI9heFZ" role="m$_yh">
+        <ref role="m$f5T" node="3quoVcnFFUF" resolve="group.grammarcells" />
+      </node>
+      <node concept="m$_yC" id="5fGcQI9h7GU" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="5fGcQI9h7GV" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
+      </node>
+      <node concept="m$_yC" id="5fGcQI9h7GW" role="m$_yJ">
+        <ref role="m$_y1" node="5fGcQI94fMR" resolve="com.mbeddr.mpsutil.common" />
+      </node>
+      <node concept="m$_yC" id="5fGcQI9hgqD" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
+      </node>
+      <node concept="m$_yC" id="5fGcQI9hi9n" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
+      </node>
+      <node concept="3_J27D" id="5fGcQI9h7GX" role="m_cZH">
+        <node concept="3Mxwew" id="5fGcQI9h7GY" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.grammarcells" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="5fGcQI9h7GZ" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com/" />
+      </node>
+      <node concept="3_J27D" id="5fGcQI9h7H0" role="3s6cr7">
+        <node concept="3Mxwew" id="5fGcQI9h7H1" role="3MwsjC">
+          <property role="3MwjfP" value="Grammar Cells Langauge from mbeddr.mpsutil" />
         </node>
       </node>
     </node>
@@ -8486,7 +8531,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnFFUF" role="3989C9">
-      <property role="TrG5h" value="com.mbeddr.mpsutil.grammarcells" />
+      <property role="TrG5h" value="group.grammarcells" />
       <node concept="1E1JtD" id="7rbvAnyGAfv" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.grammarcells.runtimelang" />
@@ -12339,6 +12384,9 @@
       </node>
       <node concept="m$_wl" id="1g7oDhKdv$t" role="39821P">
         <ref role="m_rDy" node="1g7oDhK9QTM" resolve="com.mbeddr.mpsutil.actionsfilter.lang" />
+      </node>
+      <node concept="m$_wl" id="5fGcQI9hje9" role="39821P">
+        <ref role="m_rDy" node="5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />
       </node>
       <node concept="398223" id="pdbBRzg10k" role="39821P">
         <node concept="3_J27D" id="pdbBRzg10m" role="Nbhlr">
