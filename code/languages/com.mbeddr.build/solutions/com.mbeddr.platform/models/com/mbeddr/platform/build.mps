@@ -316,7 +316,7 @@
         <ref role="m$f5T" node="3quoVcnR1gA" resolve="com.mbeddr.mpsutil.ui-support" />
       </node>
       <node concept="m$f5U" id="3quoVcnS4Uu" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnRts4" resolve="com.mbeddr.mpsutil.baseLanguage" />
+        <ref role="m$f5T" node="3quoVcnRts4" resolve="group.baseLanguage" />
       </node>
       <node concept="m$f5U" id="3quoVcnS4UQ" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnPCH9" resolve="com.mbeddr.mpsutil.blutil" />
@@ -389,9 +389,6 @@
       </node>
       <node concept="m$f5U" id="3quoVcnS5w5" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnM__n" resolve="com.mbeddr.mpsutil.refactoring" />
-      </node>
-      <node concept="m$f5U" id="3quoVcnS5xf" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnRjZi" resolve="com.mbeddr.mpsutil.smodule" />
       </node>
       <node concept="m$f5U" id="3quoVcnS5yp" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnJkAK" resolve="com.mbeddr.mpsutil.spreferences" />
@@ -523,6 +520,42 @@
       <node concept="3_J27D" id="Vtr7jyB0oY" role="3s6cr7">
         <node concept="3Mxwew" id="Vtr7jyB0oZ" role="3MwsjC">
           <property role="3MwjfP" value="File Picker Langauge from mbeddr.mpsutil" />
+        </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="5fGcQI8WTaQ" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.smodule" />
+      <node concept="3_J27D" id="5fGcQI8WTaR" role="m$_yQ">
+        <node concept="3Mxwew" id="5fGcQI8WTaS" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.smodule" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="5fGcQI8WTaT" role="m$_w8">
+        <node concept="3Mxwey" id="5fGcQI8WTaU" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="5fGcQI8WYwl" role="m$_yh">
+        <ref role="m$f5T" node="3quoVcnRjZi" resolve="group.smodule" />
+      </node>
+      <node concept="m$_yC" id="5fGcQI8WTaW" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="5fGcQI8X3FW" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
+      </node>
+      <node concept="3_J27D" id="5fGcQI8WTaX" role="m_cZH">
+        <node concept="3Mxwew" id="5fGcQI8WTaY" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.smodule" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="5fGcQI8WTaZ" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com/" />
+      </node>
+      <node concept="3_J27D" id="5fGcQI8WTb0" role="3s6cr7">
+        <node concept="3Mxwew" id="5fGcQI8WTb1" role="3MwsjC">
+          <property role="3MwjfP" value="SModule Extension Langauge from mbeddr.mpsutil" />
         </node>
       </node>
     </node>
@@ -2503,7 +2536,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnRts4" role="3989C9">
-      <property role="TrG5h" value="com.mbeddr.mpsutil.baseLanguage" />
+      <property role="TrG5h" value="group.baseLanguage" />
       <node concept="1E1JtA" id="5GUwywcVeK8" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.common" />
@@ -2680,7 +2713,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnRjZi" role="3989C9">
-      <property role="TrG5h" value="com.mbeddr.mpsutil.smodule" />
+      <property role="TrG5h" value="group.smodule" />
       <node concept="1E1JtD" id="7Ynnt_O7jPe" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.smodule" />
@@ -11966,6 +11999,9 @@
       </node>
       <node concept="m$_wl" id="1g7oDhK0jAy" role="39821P">
         <ref role="m_rDy" node="1g7oDhK0dwB" resolve="com.mbeddr.mpsutil.postprocessGeneratedFiles" />
+      </node>
+      <node concept="m$_wl" id="5fGcQI90j6p" role="39821P">
+        <ref role="m_rDy" node="5fGcQI8WTaQ" resolve="com.mbeddr.mpsutil.smodule" />
       </node>
       <node concept="m$_wl" id="6ucYLjol21$" role="39821P">
         <ref role="m_rDy" node="7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
