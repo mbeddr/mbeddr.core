@@ -1,5 +1,6 @@
 import org.apache.tools.ant.taskdefs.condition.Os
 import org.gradle.api.DefaultTask
+import org.gradle.api.tasks.StopExecutionException
 import org.gradle.api.tasks.TaskAction
 
 class RunMbeddrAntScript extends DefaultTask {
@@ -13,9 +14,12 @@ class RunMbeddrAntScript extends DefaultTask {
     @TaskAction
     def build() {
         def args = buildProcSpawnArgList(['ant', '-verbose',*project.dependsOnMbeddr_scriptArgs, *(antScriptLocation(script)), *targets])
-        project.exec {
+        def exec = project.exec {
             workingDir project.rootDir
             commandLine args
+        }
+        if (exec.exitValue != 0) {
+            throw new StopExecutionException("Exit code not 0 was ${exec.exitValue}")
         }
     }
 

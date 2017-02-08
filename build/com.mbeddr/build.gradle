@@ -32,8 +32,8 @@ if (project.hasProperty("MPS_Installation"))
     ext.mpsInstallationDir = ""
 }
 
-//on teamcity we don't build the platform we take it from the nexus. Locally we want to build it
-if (project.hasProperty("teamcity")) {
+// locally versions are SNAPSHOT
+if (ciBuild) {
     ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
 } else {
     println "Local build detected. Build will be a SNAPSHOT."
