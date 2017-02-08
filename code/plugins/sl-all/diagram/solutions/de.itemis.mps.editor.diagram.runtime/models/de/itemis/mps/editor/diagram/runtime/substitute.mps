@@ -20,6 +20,7 @@
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
+    <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -101,7 +102,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -590,7 +590,88 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6rHj_ILDaoC" role="3cqZAp" />
+        <node concept="3cpWs8" id="7p4wvRTQDcl" role="3cqZAp">
+          <node concept="3cpWsn" id="7p4wvRTQDcm" role="3cpWs9">
+            <property role="TrG5h" value="newContext" />
+            <node concept="3uibUv" id="7p4wvRTQDck" role="1tU5fm">
+              <ref role="3uigEE" to="g51k:~EditorCellContextImpl" resolve="EditorCellContextImpl" />
+            </node>
+            <node concept="2ShNRf" id="7p4wvRTQDcn" role="33vP2m">
+              <node concept="1pGfFk" id="7p4wvRTQDco" role="2ShVmc">
+                <ref role="37wK5l" to="g51k:~EditorCellContextImpl.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCellContext)" resolve="EditorCellContextImpl" />
+                <node concept="2OqwBi" id="7p4wvRTQDcp" role="37wK5m">
+                  <node concept="37vLTw" id="7p4wvRTQDcq" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6rHj_ILDaol" resolve="dummyContextCell" />
+                  </node>
+                  <node concept="liA8E" id="7p4wvRTQDcr" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getCellContext():jetbrains.mps.openapi.editor.cells.EditorCellContext" resolve="getCellContext" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1xOZjo5cU6M" role="3cqZAp">
+          <node concept="3cpWsn" id="1xOZjo5cU6N" role="3cpWs9">
+            <property role="TrG5h" value="location" />
+            <node concept="3uibUv" id="1xOZjo5cWcK" role="1tU5fm">
+              <ref role="3uigEE" to="uddc:~SNodeLocation" resolve="SNodeLocation" />
+            </node>
+            <node concept="3K4zz7" id="1xOZjo5cWFc" role="33vP2m">
+              <node concept="2ShNRf" id="1xOZjo5cWJe" role="3K4GZi">
+                <node concept="1pGfFk" id="1xOZjo5db$u" role="2ShVmc">
+                  <ref role="37wK5l" to="uddc:~SNodeLocation$FromNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="SNodeLocation.FromNode" />
+                  <node concept="37vLTw" id="1xOZjo5dbBS" role="37wK5m">
+                    <ref role="3cqZAo" node="6rHj_ILDapm" resolve="child" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="1xOZjo5cWx9" role="3K4Cdx">
+                <node concept="10Nm6u" id="1xOZjo5cWAo" role="3uHU7w" />
+                <node concept="37vLTw" id="1xOZjo5cWnK" role="3uHU7B">
+                  <ref role="3cqZAo" node="6rHj_ILDapm" resolve="child" />
+                </node>
+              </node>
+              <node concept="2ShNRf" id="1xOZjo5cU6O" role="3K4E3e">
+                <node concept="1pGfFk" id="1xOZjo5cU6P" role="2ShVmc">
+                  <ref role="37wK5l" to="uddc:~SNodeLocation$FromParentAndLink.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="SNodeLocation.FromParentAndLink" />
+                  <node concept="37vLTw" id="1xOZjo5cU6Q" role="37wK5m">
+                    <ref role="3cqZAo" node="6rHj_ILDapk" resolve="parent" />
+                  </node>
+                  <node concept="37vLTw" id="1xOZjo5cU6R" role="37wK5m">
+                    <ref role="3cqZAo" node="6rHj_ILDapo" resolve="link" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7p4wvRTQEXd" role="3cqZAp">
+          <node concept="2OqwBi" id="7p4wvRTQFen" role="3clFbG">
+            <node concept="37vLTw" id="7p4wvRTQEXb" role="2Oq$k0">
+              <ref role="3cqZAo" node="7p4wvRTQDcm" resolve="newContext" />
+            </node>
+            <node concept="liA8E" id="7p4wvRTQF$4" role="2OqNvi">
+              <ref role="37wK5l" to="g51k:~EditorCellContextImpl.setNodeLocation(jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation):void" resolve="setNodeLocation" />
+              <node concept="37vLTw" id="1xOZjo5cU6S" role="37wK5m">
+                <ref role="3cqZAo" node="1xOZjo5cU6N" resolve="location" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7p4wvRTQqey" role="3cqZAp">
+          <node concept="2OqwBi" id="7p4wvRTQqrM" role="3clFbG">
+            <node concept="37vLTw" id="7p4wvRTQqew" role="2Oq$k0">
+              <ref role="3cqZAo" node="6rHj_ILDaol" resolve="dummyContextCell" />
+            </node>
+            <node concept="liA8E" id="7p4wvRTQqEJ" role="2OqNvi">
+              <ref role="37wK5l" to="f4zo:~EditorCell.setCellContext(jetbrains.mps.openapi.editor.cells.EditorCellContext):void" resolve="setCellContext" />
+              <node concept="37vLTw" id="7p4wvRTQDcs" role="37wK5m">
+                <ref role="3cqZAo" node="7p4wvRTQDcm" resolve="newContext" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6rHj_ILDaoD" role="3cqZAp">
           <node concept="3cpWsn" id="6rHj_ILDaoE" role="3cpWs9">
             <property role="TrG5h" value="newInfo" />
