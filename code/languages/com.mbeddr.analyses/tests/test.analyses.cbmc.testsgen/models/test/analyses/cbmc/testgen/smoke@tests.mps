@@ -23,6 +23,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -107,18 +108,15 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
-        <child id="540871147943773366" name="argument" index="25WWJ7" />
-      </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
-      <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
   <node concept="1lH9Xt" id="7yN$Xh8olBh">
     <property role="TrG5h" value="BranchTestsgen" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="7yN$Xh8olDJ" role="1SL9yI">
       <property role="TrG5h" value="testgenBranch" />
       <node concept="3cqZAl" id="7yN$Xh8olDK" role="3clF45" />
@@ -176,40 +174,93 @@
             <node concept="34oBXx" id="67iKQ7oyRwz" role="2OqNvi" />
           </node>
           <node concept="3cmrfG" id="67iKQ7oyPse" role="3tpDZB">
-            <property role="3cmrfH" value="2" />
+            <property role="3cmrfH" value="3" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6YSWAhTHmMk" role="3cqZAp" />
+        <node concept="3cpWs8" id="6YSWAhTHmVL" role="3cqZAp">
+          <node concept="3cpWsn" id="6YSWAhTHmVM" role="3cpWs9">
+            <property role="TrG5h" value="r0" />
+            <node concept="3uibUv" id="6YSWAhTHmVN" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+            </node>
+            <node concept="NRdvd" id="6YSWAhTHofM" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="6YSWAhTHofN" role="37wK5m">
+                <ref role="3cqZAo" node="7yN$Xh8olDN" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="6YSWAhTHofO" role="37wK5m">
+                <property role="Xl_RC" value="function branch1_simpleBranch entry point" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3vwNmj" id="2jb6dmWQqPY" role="3cqZAp">
           <node concept="2OqwBi" id="2jb6dmWQsVC" role="3vwVQn">
-            <node concept="2OqwBi" id="2jb6dmWQr7l" role="2Oq$k0">
-              <node concept="37vLTw" id="2jb6dmWQqTa" role="2Oq$k0">
-                <ref role="3cqZAo" node="7yN$Xh8olDN" resolve="results" />
-              </node>
-              <node concept="34jXtK" id="2jb6dmWQsT$" role="2OqNvi">
-                <node concept="3cmrfG" id="2jb6dmWQsUr" role="25WWJ7">
-                  <property role="3cmrfH" value="0" />
-                </node>
-              </node>
+            <node concept="37vLTw" id="6YSWAhTHn9z" role="2Oq$k0">
+              <ref role="3cqZAo" node="6YSWAhTHmVM" resolve="r0" />
             </node>
             <node concept="liA8E" id="2jb6dmWQt_j" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
-        <node concept="3vwNmj" id="2jb6dmWQtFF" role="3cqZAp">
-          <node concept="2OqwBi" id="2jb6dmWQtFG" role="3vwVQn">
-            <node concept="2OqwBi" id="2jb6dmWQtFH" role="2Oq$k0">
-              <node concept="37vLTw" id="2jb6dmWQtFI" role="2Oq$k0">
+        <node concept="3clFbH" id="6YSWAhTHna1" role="3cqZAp" />
+        <node concept="3cpWs8" id="6YSWAhTHnsQ" role="3cqZAp">
+          <node concept="3cpWsn" id="6YSWAhTHnsR" role="3cpWs9">
+            <property role="TrG5h" value="r1" />
+            <node concept="3uibUv" id="6YSWAhTHnsS" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+            </node>
+            <node concept="NRdvd" id="6YSWAhTHos5" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="6YSWAhTHos6" role="37wK5m">
                 <ref role="3cqZAo" node="7yN$Xh8olDN" resolve="results" />
               </node>
-              <node concept="34jXtK" id="2jb6dmWQtFJ" role="2OqNvi">
-                <node concept="3cmrfG" id="2jb6dmWQtNz" role="25WWJ7">
-                  <property role="3cmrfH" value="1" />
-                </node>
+              <node concept="Xl_RD" id="6YSWAhTHos7" role="37wK5m">
+                <property role="Xl_RC" value="function branch1_simpleBranch block 1 branch false" />
               </node>
             </node>
-            <node concept="liA8E" id="2jb6dmWQtFL" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+          </node>
+        </node>
+        <node concept="3vwNmj" id="6YSWAhTHnsW" role="3cqZAp">
+          <node concept="2OqwBi" id="6YSWAhTHnsX" role="3vwVQn">
+            <node concept="37vLTw" id="6YSWAhTHnsY" role="2Oq$k0">
+              <ref role="3cqZAo" node="6YSWAhTHnsR" resolve="r1" />
+            </node>
+            <node concept="liA8E" id="6YSWAhTHnsZ" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6YSWAhTHno8" role="3cqZAp" />
+        <node concept="3cpWs8" id="6YSWAhTHnGJ" role="3cqZAp">
+          <node concept="3cpWsn" id="6YSWAhTHnGK" role="3cpWs9">
+            <property role="TrG5h" value="r2" />
+            <node concept="3uibUv" id="6YSWAhTHnGL" role="1tU5fm">
+              <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestTraceResult" />
+            </node>
+            <node concept="NRdvd" id="6YSWAhTHoCo" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="6YSWAhTHoCp" role="37wK5m">
+                <ref role="3cqZAo" node="7yN$Xh8olDN" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="6YSWAhTHoCq" role="37wK5m">
+                <property role="Xl_RC" value="function branch1_simpleBranch block 1 branch true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="6YSWAhTHnGP" role="3cqZAp">
+          <node concept="2OqwBi" id="6YSWAhTHnGQ" role="3vwVQn">
+            <node concept="37vLTw" id="6YSWAhTHnGR" role="2Oq$k0">
+              <ref role="3cqZAo" node="6YSWAhTHnGK" resolve="r2" />
+            </node>
+            <node concept="liA8E" id="6YSWAhTHnGS" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
@@ -262,8 +313,8 @@
             </node>
             <node concept="34oBXx" id="2jb6dmWQqjD" role="2OqNvi" />
           </node>
-          <node concept="3cmrfG" id="2jb6dmWQqjE" role="3tpDZB">
-            <property role="3cmrfH" value="2" />
+          <node concept="3cmrfG" id="6YSWAhTHoOG" role="3tpDZB">
+            <property role="3cmrfH" value="3" />
           </node>
         </node>
         <node concept="3clFbH" id="6tpIASsCHsx" role="3cqZAp" />
@@ -280,25 +331,18 @@
                 <ref role="3cqZAo" node="2jb6dmWQqjq" resolve="results" />
               </node>
               <node concept="Xl_RD" id="6tpIASsCHCZ" role="37wK5m">
-                <property role="Xl_RC" value="function branch2_simpleBranchNotTaken block 1 branch  taken" />
+                <property role="Xl_RC" value="function branch2_simpleBranchNotTaken block 1 branch false" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3vwNmj" id="2jb6dmWQu4f" role="3cqZAp">
           <node concept="2OqwBi" id="2jb6dmWQu4g" role="3vwVQn">
-            <node concept="2OqwBi" id="2jb6dmWQu4h" role="2Oq$k0">
-              <node concept="37vLTw" id="2jb6dmWQu4i" role="2Oq$k0">
-                <ref role="3cqZAo" node="2jb6dmWQqjq" resolve="results" />
-              </node>
-              <node concept="34jXtK" id="2jb6dmWQu4j" role="2OqNvi">
-                <node concept="3cmrfG" id="2jb6dmWQu4k" role="25WWJ7">
-                  <property role="3cmrfH" value="0" />
-                </node>
-              </node>
+            <node concept="37vLTw" id="6YSWAhTHoPV" role="2Oq$k0">
+              <ref role="3cqZAo" node="6tpIASsCHCV" resolve="ttr1" />
             </node>
             <node concept="liA8E" id="2jb6dmWQu4l" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
             </node>
           </node>
         </node>
@@ -320,7 +364,7 @@
                 <ref role="3cqZAo" node="2jb6dmWQqjq" resolve="results" />
               </node>
               <node concept="Xl_RD" id="6tpIASsCHkv" role="37wK5m">
-                <property role="Xl_RC" value="function branch2_simpleBranchNotTaken block 1 branch not taken" />
+                <property role="Xl_RC" value="function branch2_simpleBranchNotTaken block 1 branch true" />
               </node>
             </node>
             <node concept="37vLTw" id="6tpIASsCHUm" role="37vLTJ">
@@ -334,7 +378,7 @@
               <ref role="3cqZAo" node="6tpIASsCH2p" resolve="ttr2" />
             </node>
             <node concept="liA8E" id="2jb6dmWQu4s" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8Q4V" resolve="propertyFails" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
@@ -346,6 +390,7 @@
   </node>
   <node concept="1lH9Xt" id="341WyjDj2rG">
     <property role="TrG5h" value="LocationTestsgen" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="341WyjDj2rH" role="1SL9yI">
       <property role="TrG5h" value="testgenLocation" />
       <node concept="3cqZAl" id="341WyjDj2rI" role="3clF45" />
@@ -419,7 +464,7 @@
               <ref role="3cqZAo" node="341WyjDjsVc" resolve="r0" />
             </node>
             <node concept="liA8E" id="341WyjDj2sc" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
@@ -448,7 +493,7 @@
               <ref role="3cqZAo" node="341WyjDjtts" resolve="r1" />
             </node>
             <node concept="liA8E" id="341WyjDjtt$" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>
@@ -477,7 +522,7 @@
               <ref role="3cqZAo" node="341WyjDjtDC" resolve="r2" />
             </node>
             <node concept="liA8E" id="341WyjDjtDK" role="2OqNvi">
-              <ref role="37wK5l" to="mog:4QaxHTo8MvL" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>

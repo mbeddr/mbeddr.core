@@ -1571,8 +1571,8 @@
   <node concept="PlHQZ" id="59HbAIOYkEn">
     <property role="TrG5h" value="IDetectCycle" />
     <property role="EcuMT" value="5939454523704167063" />
-    <node concept="PrWs8" id="59HbAIP50Wn" role="PrDN$">
-      <ref role="PrY4T" node="65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    <node concept="PrWs8" id="77U0yzTjb$S" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="3VlwR$fEpF9">

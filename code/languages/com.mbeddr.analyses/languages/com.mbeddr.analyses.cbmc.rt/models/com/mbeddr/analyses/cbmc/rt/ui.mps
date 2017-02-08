@@ -258,6 +258,7 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
@@ -4678,22 +4679,45 @@
                         </node>
                       </node>
                       <node concept="3clFbS" id="FDeiXqA7Yj" role="3clF47">
-                        <node concept="3clFbF" id="FDeiXqA7Yk" role="3cqZAp">
-                          <node concept="37vLTI" id="FDeiXqA7Yl" role="3clFbG">
-                            <node concept="2OqwBi" id="FDeiXqA7Ym" role="37vLTx">
-                              <node concept="37vLTw" id="FDeiXqAbKN" role="2Oq$k0">
-                                <ref role="3cqZAo" node="FDeiXqA2LA" resolve="partialLoopsCheckbox" />
-                              </node>
-                              <node concept="liA8E" id="FDeiXqA7Yo" role="2OqNvi">
-                                <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
+                        <node concept="3clFbJ" id="R2cMzhz1va" role="3cqZAp">
+                          <node concept="3clFbS" id="R2cMzhz1vc" role="3clFbx">
+                            <node concept="3clFbF" id="FDeiXqA7Yk" role="3cqZAp">
+                              <node concept="37vLTI" id="FDeiXqA7Yl" role="3clFbG">
+                                <node concept="2OqwBi" id="FDeiXqA7Ym" role="37vLTx">
+                                  <node concept="37vLTw" id="FDeiXqAbKN" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="FDeiXqA2LA" resolve="partialLoopsCheckbox" />
+                                  </node>
+                                  <node concept="liA8E" id="FDeiXqA7Yo" role="2OqNvi">
+                                    <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="3OhBgB4k0Xp" role="37vLTJ">
+                                  <node concept="37vLTw" id="3OhBgB4k0NK" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+                                  </node>
+                                  <node concept="2OwXpG" id="3OhBgB4k1ge" role="2OqNvi">
+                                    <ref role="2Oxat5" node="3OhBgB4hwPk" resolve="partialLoops" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="3OhBgB4k0Xp" role="37vLTJ">
-                              <node concept="37vLTw" id="3OhBgB4k0NK" role="2Oq$k0">
+                          </node>
+                          <node concept="1rXfSq" id="R2cMzhz1$K" role="3clFbw">
+                            <ref role="37wK5l" node="R2cMzhyr7U" resolve="checkUnwindingAssertionsAndPartialLoops" />
+                            <node concept="2OqwBi" id="R2cMzhz2qh" role="37wK5m">
+                              <node concept="37vLTw" id="R2cMzhz2hC" role="2Oq$k0">
                                 <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
                               </node>
-                              <node concept="2OwXpG" id="3OhBgB4k1ge" role="2OqNvi">
-                                <ref role="2Oxat5" node="3OhBgB4hwPk" resolve="partialLoops" />
+                              <node concept="2OwXpG" id="R2cMzhz2CX" role="2OqNvi">
+                                <ref role="2Oxat5" node="3OhBgB4hwPa" resolve="unwindingAssertions" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="R2cMzhz4BT" role="37wK5m">
+                              <node concept="37vLTw" id="R2cMzhz3za" role="2Oq$k0">
+                                <ref role="3cqZAo" node="FDeiXqA2LA" resolve="partialLoopsCheckbox" />
+                              </node>
+                              <node concept="liA8E" id="R2cMzhz6VB" role="2OqNvi">
+                                <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
                               </node>
                             </node>
                           </node>
@@ -4784,22 +4808,45 @@
                         </node>
                       </node>
                       <node concept="3clFbS" id="7xDyb4PKrqE" role="3clF47">
-                        <node concept="3clFbF" id="7xDyb4PKrAz" role="3cqZAp">
-                          <node concept="37vLTI" id="7xDyb4PKrJp" role="3clFbG">
-                            <node concept="2OqwBi" id="7xDyb4PKsdB" role="37vLTx">
-                              <node concept="37vLTw" id="7xDyb4PKrO5" role="2Oq$k0">
+                        <node concept="3clFbJ" id="R2cMzhyXEn" role="3cqZAp">
+                          <node concept="3clFbS" id="R2cMzhyXEp" role="3clFbx">
+                            <node concept="3clFbF" id="7xDyb4PKrAz" role="3cqZAp">
+                              <node concept="37vLTI" id="7xDyb4PKrJp" role="3clFbG">
+                                <node concept="2OqwBi" id="7xDyb4PKsdB" role="37vLTx">
+                                  <node concept="37vLTw" id="7xDyb4PKrO5" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="7xDyb4PGsXm" resolve="unwindingAssertionsCheckbox" />
+                                  </node>
+                                  <node concept="liA8E" id="7xDyb4PKtS2" role="2OqNvi">
+                                    <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="3OhBgB4k1wm" role="37vLTJ">
+                                  <node concept="37vLTw" id="3OhBgB4k1mH" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+                                  </node>
+                                  <node concept="2OwXpG" id="3OhBgB4k1Nb" role="2OqNvi">
+                                    <ref role="2Oxat5" node="3OhBgB4hwPa" resolve="unwindingAssertions" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1rXfSq" id="R2cMzhyYy_" role="3clFbw">
+                            <ref role="37wK5l" node="R2cMzhyr7U" resolve="checkUnwindingAssertionsAndPartialLoops" />
+                            <node concept="2OqwBi" id="R2cMzhyYzC" role="37wK5m">
+                              <node concept="37vLTw" id="R2cMzhyYzD" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7xDyb4PGsXm" resolve="unwindingAssertionsCheckbox" />
                               </node>
-                              <node concept="liA8E" id="7xDyb4PKtS2" role="2OqNvi">
+                              <node concept="liA8E" id="R2cMzhyYzE" role="2OqNvi">
                                 <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="3OhBgB4k1wm" role="37vLTJ">
-                              <node concept="37vLTw" id="3OhBgB4k1mH" role="2Oq$k0">
+                            <node concept="2OqwBi" id="R2cMzhyZqA" role="37wK5m">
+                              <node concept="37vLTw" id="R2cMzhyZha" role="2Oq$k0">
                                 <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
                               </node>
-                              <node concept="2OwXpG" id="3OhBgB4k1Nb" role="2OqNvi">
-                                <ref role="2Oxat5" node="3OhBgB4hwPa" resolve="unwindingAssertions" />
+                              <node concept="2OwXpG" id="R2cMzhyZGl" role="2OqNvi">
+                                <ref role="2Oxat5" node="3OhBgB4hwPk" resolve="partialLoops" />
                               </node>
                             </node>
                           </node>
@@ -5909,6 +5956,68 @@
       </node>
       <node concept="3Tm1VV" id="7xDyb4PkmxV" role="1B3o_S" />
       <node concept="3cqZAl" id="7xDyb4PkmxW" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="R2cMzhyfcN" role="jymVt" />
+    <node concept="3clFb_" id="R2cMzhyr7U" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="checkUnwindingAssertionsAndPartialLoops" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="R2cMzhyr7X" role="3clF47">
+        <node concept="3clFbJ" id="R2cMzhyMPp" role="3cqZAp">
+          <node concept="3clFbS" id="R2cMzhyMPr" role="3clFbx">
+            <node concept="3clFbF" id="R2cMzhyPG2" role="3cqZAp">
+              <node concept="2YIFZM" id="R2cMzhyPNG" role="3clFbG">
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+                <node concept="10Nm6u" id="R2cMzhyQa8" role="37wK5m" />
+                <node concept="Xl_RD" id="R2cMzhyQyA" role="37wK5m">
+                  <property role="Xl_RC" value="'Unwinding Assertions' and 'Partial Loops' cannot be active at the same time" />
+                </node>
+                <node concept="Xl_RD" id="R2cMzhzlH8" role="37wK5m">
+                  <property role="Xl_RC" value="Erroneous CBMC configuration" />
+                </node>
+                <node concept="10M0yZ" id="R2cMzhzinr" role="37wK5m">
+                  <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
+                  <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="R2cMzhyRTu" role="3cqZAp">
+              <node concept="3clFbT" id="R2cMzhySh1" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="R2cMzhyOK3" role="3clFbw">
+            <node concept="37vLTw" id="R2cMzhyOK4" role="3uHU7w">
+              <ref role="3cqZAo" node="R2cMzhyv_x" resolve="partialLoops" />
+            </node>
+            <node concept="37vLTw" id="R2cMzhyOK5" role="3uHU7B">
+              <ref role="3cqZAo" node="R2cMzhytDY" resolve="unwindingAssertions" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="R2cMzhyy9t" role="3cqZAp">
+          <node concept="3clFbT" id="R2cMzhyUyt" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="R2cMzhyoAU" role="1B3o_S" />
+      <node concept="10P_77" id="R2cMzhyr7L" role="3clF45" />
+      <node concept="37vLTG" id="R2cMzhytDY" role="3clF46">
+        <property role="TrG5h" value="unwindingAssertions" />
+        <node concept="10P_77" id="R2cMzhytDX" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="R2cMzhyv_x" role="3clF46">
+        <property role="TrG5h" value="partialLoops" />
+        <node concept="10P_77" id="R2cMzhyxqR" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="R2cMzhyHQC" role="lGtFl">
+        <property role="NWlVz" value="Checks the consistency for CBMC." />
+      </node>
     </node>
     <node concept="2tJIrI" id="7xDyb4PkmxX" role="jymVt" />
     <node concept="3Tm1VV" id="7xDyb4Pkmz9" role="1B3o_S" />

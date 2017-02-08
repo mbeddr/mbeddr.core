@@ -110,6 +110,10 @@
 	<property name="com.mbeddr.allScripts.build-file.name" value="build.xml" /> 
 	<property name="com.mbeddr.allScripts.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.allScripts" />      
 	
+	<!-- com.mbeddr.allInOne -->  
+	<property name="com.mbeddr.allInOne.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.allInOne" />    
+	<property name="com.mbeddr.allInOne.build-file.name" value="build.xml" /> 
+		
 	<!-- targets --> 
 	<target name="clean-and-build" >
 		<antcall target="build-allScripts" />
@@ -264,6 +268,11 @@
 		<antcall target="build-mbeddr" />
 	</target>
 
+	<target name="build-allInOne" depends="build-languages,build-tutorial">	  
+		<ant antfile="${com.mbeddr.allInOne.build-file.name}" dir="${com.mbeddr.allInOne.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.allInOne.build-file.name}" dir="${com.mbeddr.allInOne.build-file.location}" target="${build-plugin.task}" />
+	</target>
+	
 	<target name="test-mbeddr" >
 		<antcall target="test-platform" /> 
 		<antcall target="test-debugger" />
@@ -477,7 +486,7 @@
 		<ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${generate-code.task}" />
 		<ant antfile="${com.mbeddr.tutorial.tests-build-file.name}" dir="${com.mbeddr.tutorial.build-file.location}" target="${build-plugin.task}" />
 	</target>     
-
+	
 	<target name="make-tests" description="Run 'make test' for child Makefiles">
 		<echo message="path=${make-tests.dir}"/>
 		<make-tests workingDirectory="${make-tests.dir}"/>
