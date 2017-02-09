@@ -247,12 +247,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6_du9upXiYZ" role="3bR37C">
-          <node concept="3bR9La" id="6_du9upXiZ0" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:5GUwywcVeK8" resolve="com.mbeddr.mpsutil.common" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6_du9upXiZ1" role="3bR37C">
           <node concept="3bR9La" id="6_du9upXiZ2" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -612,6 +606,12 @@
             <ref role="3bR37D" node="6_du9upXhrc" resolve="com.mbeddr.mpsutil.inca.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2aRidVugemq" role="3bR37C">
+          <node concept="3bR9La" id="2aRidVugemr" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6_du9upXgV0" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -714,16 +714,16 @@
             <ref role="3bR37D" node="11w71Xmfzpd" resolve="com.mbeddr.mpsutil.inca.core.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6_du9upXjsI" role="3bR37C">
-          <node concept="3bR9La" id="6_du9upXjsJ" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="al5i:5GUwywcVeK8" resolve="com.mbeddr.mpsutil.common" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6_du9upXjsK" role="3bR37C">
           <node concept="3bR9La" id="6_du9upXjsL" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2aRidVugeqy" role="3bR37C">
+          <node concept="3bR9La" id="2aRidVugeqz" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="al5i:5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
           </node>
         </node>
       </node>
