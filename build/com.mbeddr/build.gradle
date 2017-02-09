@@ -41,7 +41,13 @@ if (ciBuild) {
 }
 
 // path variables
-ext.mpsHomeDir = new File(rootDir, "MPS/MPS-mbeddr-$mpsBuild/")
+// If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
+// the root directory).
+ext.skipResolveMps = project.hasProperty('mpsHomeDir')
+ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "MPS/MPS-mbeddr-$mpsBuild/")
+
+logger.info "skipResolveMps: {}, mpsHomeDir: {}", ext.skipResolveMps, ext.mpsHomeDir
+
 ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
 ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
 ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()

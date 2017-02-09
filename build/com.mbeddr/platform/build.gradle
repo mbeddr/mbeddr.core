@@ -1,12 +1,19 @@
-
 def script_test_mbeddrPlatform = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build-ts-tests.xml")
 
-task resolve_mps(type: Copy) {
-    dependsOn configurations.mps
-    from {
-        configurations.mps.resolve().collect { zipTree(it) }
+if (project.skipResolveMps) {
+    task resolve_mps {
+        doLast {
+            logger.info "MPS resolution skipped"
+        }
     }
-    into mpsHomeDir
+} else {
+    task resolve_mps(type: Copy) {
+        dependsOn configurations.mps
+        from {
+            configurations.mps.resolve().collect { zipTree(it) }
+        }
+        into mpsHomeDir
+    }
 }
 
 
