@@ -79,7 +79,7 @@ ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optio
 def mbeddrDependencies
 
 //on teamcity we don't build the platform we take it from the nexus. Locally we want to build it
-if (project.hasProperty("teamcity")) {
+if (ciBuild) {
     mbeddrDependencies = [copy_spawner, resolveMpsArtifacts]
 } else {
     mbeddrDependencies = [copy_spawner, ':build:com.mbeddr:platform:build_platform']
@@ -214,5 +214,8 @@ publishing {
 }
 
 rootProject.defaultTasks 'build_mbeddr'
+
+task publishMbeddrToLocal (dependsOn: ['publishMbeddrPublicationToMavenLocal',
+':build:com.mbeddr:platform:publishMbeddrPlatformToLocal']) {}
 
 check.dependsOn test_mbeddr
