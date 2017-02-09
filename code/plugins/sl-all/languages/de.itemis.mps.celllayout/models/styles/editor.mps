@@ -132,6 +132,7 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -929,6 +930,24 @@
             <property role="TrG5h" value="attribute" />
           </node>
           <node concept="3clFbS" id="2FAXvauFuYY" role="2LFqv$">
+            <node concept="3clFbJ" id="2yfEchPRraS" role="3cqZAp">
+              <node concept="3clFbS" id="2yfEchPRraU" role="3clFbx">
+                <node concept="3N13vt" id="2yfEchPRwPZ" role="3cqZAp" />
+              </node>
+              <node concept="3clFbC" id="2yfEchPRu5j" role="3clFbw">
+                <node concept="3cmrfG" id="2yfEchPRwLg" role="3uHU7w">
+                  <property role="3cmrfH" value="-1" />
+                </node>
+                <node concept="2OqwBi" id="2yfEchPRrHW" role="3uHU7B">
+                  <node concept="2GrUjf" id="2yfEchPRry1" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="2FAXvauFuYX" resolve="attribute" />
+                  </node>
+                  <node concept="liA8E" id="2yfEchPRsbH" role="2OqNvi">
+                    <ref role="37wK5l" to="hox0:~StyleAttribute.getIndex():int" resolve="getIndex" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="2FAXvauFv5$" role="3cqZAp">
               <node concept="3clFbS" id="2FAXvauFv5_" role="3clFbx">
                 <node concept="3cpWs6" id="2FAXvauFvmC" role="3cqZAp">

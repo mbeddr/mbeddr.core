@@ -4,6 +4,7 @@
   <languages>
     <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
+    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -49,10 +50,10 @@
       <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker_old" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty_old" index="3kgbRO" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile_old" index="1RwFax" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -109,9 +110,9 @@
   </node>
   <node concept="2SbYGP" id="3TrpzyP_Ftr">
     <property role="TrG5h" value="DocConfig" />
-    <node concept="2SbYGw" id="3TrpzyP_Fts" role="Cbewh">
+    <node concept="2SbYGw" id="4BctXOpyqeC" role="Cbewh">
       <property role="TrG5h" value="tmp" />
-      <node concept="9PVaO" id="3TrpzyP_Ftt" role="9PVG_">
+      <node concept="9PVaO" id="4BctXOpyqeD" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
       </node>

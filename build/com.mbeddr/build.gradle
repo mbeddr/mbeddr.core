@@ -19,19 +19,44 @@ if (project.hasProperty('mbeddrBuild')) {
     ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
 }
 
-ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor)
+if (project.hasProperty("mbeddrBuildCounter")) {
+    ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
+} else {
+    ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
+}
+
+if (project.hasProperty("MPS_Installation"))
+{
+    ext.mpsInstallationDir = project.getProperty("MPS_Installation")
+} else {
+    ext.mpsInstallationDir = ""
+}
+
+// locally versions are SNAPSHOT
+if (ciBuild) {
+    ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
+} else {
+    println "Local build detected. Build will be a SNAPSHOT."
+    ext.mbeddrBuildNumber = "1.0-SNAPSHOT"
+}
 
 // path variables
-ext.mpsHomeDir = new File(rootDir, "MPS/MPS-mbeddr-$mpsBuild/")
+// If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
+// the root directory).
+ext.skipResolveMps = project.hasProperty('mpsHomeDir')
+ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "MPS/MPS-mbeddr-$mpsBuild/")
+
+logger.info "skipResolveMps: {}, mpsHomeDir: {}", ext.skipResolveMps, ext.mpsHomeDir
+
 ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
 ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
 ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()
-String buildVersion = '-Dbuild='+mbeddrBuild
+String buildVersion = '-Dbuild=' + GitBasedVersioning.getGitShortCommitHash()
 String majorVersion = '-Dmajor.version='+mbeddrMajor
 String minorVersion = '-Dminor.version='+mbeddrMinor
 ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
 ext.slall_home = ['-Dsl-all.home=' + file(rootProject.projectDir.absolutePath + '/code/plugins/sl-all').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
-ext.dependsOnMPS_scriptArgs = ['ant', '-verbose', mps_home, build_dir, artifacts_root]
+ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
 ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home]
 
 // path locations
@@ -98,6 +123,8 @@ private static void configureRepositories(Project project) {
         }
     }
 }
+
+
 
 task printVersion {
     doLast {

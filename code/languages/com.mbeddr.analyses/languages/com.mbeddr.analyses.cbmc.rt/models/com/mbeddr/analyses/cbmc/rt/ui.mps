@@ -258,6 +258,7 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
@@ -4678,22 +4679,45 @@
                         </node>
                       </node>
                       <node concept="3clFbS" id="FDeiXqA7Yj" role="3clF47">
-                        <node concept="3clFbF" id="FDeiXqA7Yk" role="3cqZAp">
-                          <node concept="37vLTI" id="FDeiXqA7Yl" role="3clFbG">
-                            <node concept="2OqwBi" id="FDeiXqA7Ym" role="37vLTx">
-                              <node concept="37vLTw" id="FDeiXqAbKN" role="2Oq$k0">
-                                <ref role="3cqZAo" node="FDeiXqA2LA" resolve="partialLoopsCheckbox" />
-                              </node>
-                              <node concept="liA8E" id="FDeiXqA7Yo" role="2OqNvi">
-                                <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
+                        <node concept="3clFbJ" id="R2cMzhz1va" role="3cqZAp">
+                          <node concept="3clFbS" id="R2cMzhz1vc" role="3clFbx">
+                            <node concept="3clFbF" id="FDeiXqA7Yk" role="3cqZAp">
+                              <node concept="37vLTI" id="FDeiXqA7Yl" role="3clFbG">
+                                <node concept="2OqwBi" id="FDeiXqA7Ym" role="37vLTx">
+                                  <node concept="37vLTw" id="FDeiXqAbKN" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="FDeiXqA2LA" resolve="partialLoopsCheckbox" />
+                                  </node>
+                                  <node concept="liA8E" id="FDeiXqA7Yo" role="2OqNvi">
+                                    <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="3OhBgB4k0Xp" role="37vLTJ">
+                                  <node concept="37vLTw" id="3OhBgB4k0NK" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+                                  </node>
+                                  <node concept="2OwXpG" id="3OhBgB4k1ge" role="2OqNvi">
+                                    <ref role="2Oxat5" node="3OhBgB4hwPk" resolve="partialLoops" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="3OhBgB4k0Xp" role="37vLTJ">
-                              <node concept="37vLTw" id="3OhBgB4k0NK" role="2Oq$k0">
+                          </node>
+                          <node concept="1rXfSq" id="R2cMzhz1$K" role="3clFbw">
+                            <ref role="37wK5l" node="R2cMzhyr7U" resolve="checkUnwindingAssertionsAndPartialLoops" />
+                            <node concept="2OqwBi" id="R2cMzhz2qh" role="37wK5m">
+                              <node concept="37vLTw" id="R2cMzhz2hC" role="2Oq$k0">
                                 <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
                               </node>
-                              <node concept="2OwXpG" id="3OhBgB4k1ge" role="2OqNvi">
-                                <ref role="2Oxat5" node="3OhBgB4hwPk" resolve="partialLoops" />
+                              <node concept="2OwXpG" id="R2cMzhz2CX" role="2OqNvi">
+                                <ref role="2Oxat5" node="3OhBgB4hwPa" resolve="unwindingAssertions" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="R2cMzhz4BT" role="37wK5m">
+                              <node concept="37vLTw" id="R2cMzhz3za" role="2Oq$k0">
+                                <ref role="3cqZAo" node="FDeiXqA2LA" resolve="partialLoopsCheckbox" />
+                              </node>
+                              <node concept="liA8E" id="R2cMzhz6VB" role="2OqNvi">
+                                <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
                               </node>
                             </node>
                           </node>
@@ -4784,22 +4808,45 @@
                         </node>
                       </node>
                       <node concept="3clFbS" id="7xDyb4PKrqE" role="3clF47">
-                        <node concept="3clFbF" id="7xDyb4PKrAz" role="3cqZAp">
-                          <node concept="37vLTI" id="7xDyb4PKrJp" role="3clFbG">
-                            <node concept="2OqwBi" id="7xDyb4PKsdB" role="37vLTx">
-                              <node concept="37vLTw" id="7xDyb4PKrO5" role="2Oq$k0">
+                        <node concept="3clFbJ" id="R2cMzhyXEn" role="3cqZAp">
+                          <node concept="3clFbS" id="R2cMzhyXEp" role="3clFbx">
+                            <node concept="3clFbF" id="7xDyb4PKrAz" role="3cqZAp">
+                              <node concept="37vLTI" id="7xDyb4PKrJp" role="3clFbG">
+                                <node concept="2OqwBi" id="7xDyb4PKsdB" role="37vLTx">
+                                  <node concept="37vLTw" id="7xDyb4PKrO5" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="7xDyb4PGsXm" resolve="unwindingAssertionsCheckbox" />
+                                  </node>
+                                  <node concept="liA8E" id="7xDyb4PKtS2" role="2OqNvi">
+                                    <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="3OhBgB4k1wm" role="37vLTJ">
+                                  <node concept="37vLTw" id="3OhBgB4k1mH" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+                                  </node>
+                                  <node concept="2OwXpG" id="3OhBgB4k1Nb" role="2OqNvi">
+                                    <ref role="2Oxat5" node="3OhBgB4hwPa" resolve="unwindingAssertions" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1rXfSq" id="R2cMzhyYy_" role="3clFbw">
+                            <ref role="37wK5l" node="R2cMzhyr7U" resolve="checkUnwindingAssertionsAndPartialLoops" />
+                            <node concept="2OqwBi" id="R2cMzhyYzC" role="37wK5m">
+                              <node concept="37vLTw" id="R2cMzhyYzD" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7xDyb4PGsXm" resolve="unwindingAssertionsCheckbox" />
                               </node>
-                              <node concept="liA8E" id="7xDyb4PKtS2" role="2OqNvi">
+                              <node concept="liA8E" id="R2cMzhyYzE" role="2OqNvi">
                                 <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="3OhBgB4k1wm" role="37vLTJ">
-                              <node concept="37vLTw" id="3OhBgB4k1mH" role="2Oq$k0">
+                            <node concept="2OqwBi" id="R2cMzhyZqA" role="37wK5m">
+                              <node concept="37vLTw" id="R2cMzhyZha" role="2Oq$k0">
                                 <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
                               </node>
-                              <node concept="2OwXpG" id="3OhBgB4k1Nb" role="2OqNvi">
-                                <ref role="2Oxat5" node="3OhBgB4hwPa" resolve="unwindingAssertions" />
+                              <node concept="2OwXpG" id="R2cMzhyZGl" role="2OqNvi">
+                                <ref role="2Oxat5" node="3OhBgB4hwPk" resolve="partialLoops" />
                               </node>
                             </node>
                           </node>
@@ -5910,6 +5957,68 @@
       <node concept="3Tm1VV" id="7xDyb4PkmxV" role="1B3o_S" />
       <node concept="3cqZAl" id="7xDyb4PkmxW" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="R2cMzhyfcN" role="jymVt" />
+    <node concept="3clFb_" id="R2cMzhyr7U" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="checkUnwindingAssertionsAndPartialLoops" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="R2cMzhyr7X" role="3clF47">
+        <node concept="3clFbJ" id="R2cMzhyMPp" role="3cqZAp">
+          <node concept="3clFbS" id="R2cMzhyMPr" role="3clFbx">
+            <node concept="3clFbF" id="R2cMzhyPG2" role="3cqZAp">
+              <node concept="2YIFZM" id="R2cMzhyPNG" role="3clFbG">
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+                <node concept="10Nm6u" id="R2cMzhyQa8" role="37wK5m" />
+                <node concept="Xl_RD" id="R2cMzhyQyA" role="37wK5m">
+                  <property role="Xl_RC" value="'Unwinding Assertions' and 'Partial Loops' cannot be active at the same time" />
+                </node>
+                <node concept="Xl_RD" id="R2cMzhzlH8" role="37wK5m">
+                  <property role="Xl_RC" value="Erroneous CBMC configuration" />
+                </node>
+                <node concept="10M0yZ" id="R2cMzhzinr" role="37wK5m">
+                  <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
+                  <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="R2cMzhyRTu" role="3cqZAp">
+              <node concept="3clFbT" id="R2cMzhySh1" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="R2cMzhyOK3" role="3clFbw">
+            <node concept="37vLTw" id="R2cMzhyOK4" role="3uHU7w">
+              <ref role="3cqZAo" node="R2cMzhyv_x" resolve="partialLoops" />
+            </node>
+            <node concept="37vLTw" id="R2cMzhyOK5" role="3uHU7B">
+              <ref role="3cqZAo" node="R2cMzhytDY" resolve="unwindingAssertions" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="R2cMzhyy9t" role="3cqZAp">
+          <node concept="3clFbT" id="R2cMzhyUyt" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="R2cMzhyoAU" role="1B3o_S" />
+      <node concept="10P_77" id="R2cMzhyr7L" role="3clF45" />
+      <node concept="37vLTG" id="R2cMzhytDY" role="3clF46">
+        <property role="TrG5h" value="unwindingAssertions" />
+        <node concept="10P_77" id="R2cMzhytDX" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="R2cMzhyv_x" role="3clF46">
+        <property role="TrG5h" value="partialLoops" />
+        <node concept="10P_77" id="R2cMzhyxqR" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="R2cMzhyHQC" role="lGtFl">
+        <property role="NWlVz" value="Checks the consistency for CBMC." />
+      </node>
+    </node>
     <node concept="2tJIrI" id="7xDyb4PkmxX" role="jymVt" />
     <node concept="3Tm1VV" id="7xDyb4Pkmz9" role="1B3o_S" />
     <node concept="3uibUv" id="7xDyb4Pkmza" role="1zkMxy">
@@ -6302,8 +6411,8 @@
       <property role="TrG5h" value="rawCounterexampleText" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="M7_V6u5yUa" role="1B3o_S" />
-      <node concept="3uibUv" id="1agNx8KJSgQ" role="1tU5fm">
-        <ref role="3uigEE" to="dxuu:~JTextPane" resolve="JTextPane" />
+      <node concept="3uibUv" id="z7U7OJhGAy" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
       <node concept="NWlO9" id="M7_V6u5yUc" role="lGtFl">
         <property role="NWlVz" value="Text area containing the raw counterexample." />
@@ -6359,24 +6468,11 @@
           <node concept="37vLTI" id="M7_V6u5_gP" role="3clFbG">
             <node concept="2ShNRf" id="M7_V6u5_gQ" role="37vLTx">
               <node concept="1pGfFk" id="M7_V6u5_gR" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JTextPane.&lt;init&gt;()" resolve="JTextPane" />
+                <ref role="37wK5l" to="dxuu:~JTextArea.&lt;init&gt;()" resolve="JTextArea" />
               </node>
             </node>
             <node concept="37vLTw" id="M7_V6u5_Mp" role="37vLTJ">
               <ref role="3cqZAo" node="M7_V6u5yU9" resolve="rawCounterexampleText" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="M7_V6ugRUV" role="3cqZAp">
-          <node concept="2OqwBi" id="M7_V6ugSM6" role="3clFbG">
-            <node concept="37vLTw" id="M7_V6ugRUT" role="2Oq$k0">
-              <ref role="3cqZAo" node="M7_V6u5yU9" resolve="rawCounterexampleText" />
-            </node>
-            <node concept="liA8E" id="M7_V6ugV1T" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JEditorPane.setContentType(java.lang.String):void" resolve="setContentType" />
-              <node concept="Xl_RD" id="M7_V6ugV5Y" role="37wK5m">
-                <property role="Xl_RC" value="text/html" />
-              </node>
             </node>
           </node>
         </node>
@@ -6386,7 +6482,7 @@
               <ref role="3cqZAo" node="M7_V6u5yU9" resolve="rawCounterexampleText" />
             </node>
             <node concept="liA8E" id="M7_V6ugGGU" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JEditorPane.setText(java.lang.String):void" resolve="setText" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
               <node concept="Xl_RD" id="M7_V6u5_gS" role="37wK5m">
                 <property role="Xl_RC" value="Please double-click on a lifted-result." />
               </node>
@@ -6780,7 +6876,7 @@
               <ref role="3cqZAo" node="M7_V6u5yU9" resolve="rawCounterexampleText" />
             </node>
             <node concept="liA8E" id="M7_V6u7MtX" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JEditorPane.setText(java.lang.String):void" resolve="setText" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
               <node concept="1rXfSq" id="M7_V6u8401" role="37wK5m">
                 <ref role="37wK5l" node="M7_V6u7TSS" resolve="prettyPrintRawResult" />
                 <node concept="37vLTw" id="h7gcTUj4fW" role="37wK5m">
@@ -6929,10 +7025,7 @@
             </node>
             <node concept="2ShNRf" id="M7_V6u7Vex" role="33vP2m">
               <node concept="1pGfFk" id="M7_V6u7VLH" role="2ShVmc">
-                <ref role="37wK5l" to="wyt6:~StringBuffer.&lt;init&gt;(java.lang.String)" resolve="StringBuffer" />
-                <node concept="Xl_RD" id="M7_V6u7Wju" role="37wK5m">
-                  <property role="Xl_RC" value="&lt;html&gt;" />
-                </node>
+                <ref role="37wK5l" to="wyt6:~StringBuffer.&lt;init&gt;()" resolve="StringBuffer" />
               </node>
             </node>
           </node>
@@ -6940,16 +7033,8 @@
         <node concept="3clFbF" id="M7_V6u7XWr" role="3cqZAp">
           <node concept="2OqwBi" id="M7_V6u7Z4y" role="3clFbG">
             <node concept="2OqwBi" id="M7_V6uh4I2" role="2Oq$k0">
-              <node concept="2OqwBi" id="M7_V6u7Y33" role="2Oq$k0">
-                <node concept="37vLTw" id="M7_V6u7XWp" role="2Oq$k0">
-                  <ref role="3cqZAo" node="M7_V6u7VdB" resolve="sb" />
-                </node>
-                <node concept="liA8E" id="M7_V6u7YI9" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
-                  <node concept="Xl_RD" id="M7_V6u7YJo" role="37wK5m">
-                    <property role="Xl_RC" value="&lt;b&gt;" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="M7_V6u7XWp" role="2Oq$k0">
+                <ref role="3cqZAo" node="M7_V6u7VdB" resolve="sb" />
               </node>
               <node concept="liA8E" id="M7_V6uh5hD" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
@@ -7039,28 +7124,17 @@
                   </node>
                   <node concept="liA8E" id="q0xKVRMJMS" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
-                    <node concept="2OqwBi" id="q0xKVRMRUs" role="37wK5m">
-                      <node concept="2OqwBi" id="q0xKVRMQxe" role="2Oq$k0">
-                        <node concept="2OqwBi" id="q0xKVRMPNW" role="2Oq$k0">
-                          <node concept="37vLTw" id="q0xKVRMPNX" role="2Oq$k0">
-                            <ref role="3cqZAo" node="M7_V6u7UAc" resolve="r" />
-                          </node>
-                          <node concept="liA8E" id="q0xKVRMPNY" role="2OqNvi">
-                            <ref role="37wK5l" to="rbq9:19O7J9dBE6" resolve="getRawResultKind" />
-                          </node>
+                    <node concept="2OqwBi" id="q0xKVRMQxe" role="37wK5m">
+                      <node concept="2OqwBi" id="q0xKVRMPNW" role="2Oq$k0">
+                        <node concept="37vLTw" id="q0xKVRMPNX" role="2Oq$k0">
+                          <ref role="3cqZAo" node="M7_V6u7UAc" resolve="r" />
                         </node>
-                        <node concept="liA8E" id="q0xKVRMRKu" role="2OqNvi">
-                          <ref role="37wK5l" to="rbq9:5bSnXVJUYDE" resolve="getMessage" />
+                        <node concept="liA8E" id="q0xKVRMPNY" role="2OqNvi">
+                          <ref role="37wK5l" to="rbq9:19O7J9dBE6" resolve="getRawResultKind" />
                         </node>
                       </node>
-                      <node concept="liA8E" id="q0xKVRMSwr" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
-                        <node concept="Xl_RD" id="q0xKVRMS_m" role="37wK5m">
-                          <property role="Xl_RC" value="\n" />
-                        </node>
-                        <node concept="Xl_RD" id="q0xKVRMTdY" role="37wK5m">
-                          <property role="Xl_RC" value="&lt;br&gt;" />
-                        </node>
+                      <node concept="liA8E" id="q0xKVRMRKu" role="2OqNvi">
+                        <ref role="37wK5l" to="rbq9:5bSnXVJUYDE" resolve="getMessage" />
                       </node>
                     </node>
                   </node>
@@ -7093,8 +7167,8 @@
             </node>
             <node concept="liA8E" id="M7_V6u83bq" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
-              <node concept="Xl_RD" id="M7_V6u83g3" role="37wK5m">
-                <property role="Xl_RC" value="&lt;/b&gt;&lt;br&gt;" />
+              <node concept="Xl_RD" id="z7U7OJhPNy" role="37wK5m">
+                <property role="Xl_RC" value="\n\n" />
               </node>
             </node>
           </node>
@@ -7122,18 +7196,25 @@
                     <node concept="liA8E" id="M7_V6uhoul" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                       <node concept="Xl_RD" id="M7_V6uhowi" role="37wK5m">
-                        <property role="Xl_RC" value="&lt;b&gt;Step:&lt;/b&gt; " />
+                        <property role="Xl_RC" value="Step: " />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="M7_V6uhqal" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(int):java.lang.StringBuffer" resolve="append" />
-                    <node concept="2OqwBi" id="M7_V6uhqrY" role="37wK5m">
-                      <node concept="2GrUjf" id="M7_V6uhqdt" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="M7_V6uhekS" resolve="state" />
+                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                    <node concept="2YIFZM" id="z7U7OJhWi5" role="37wK5m">
+                      <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                      <node concept="Xl_RD" id="z7U7OJhWOD" role="37wK5m">
+                        <property role="Xl_RC" value="%04d" />
                       </node>
-                      <node concept="liA8E" id="M7_V6uhrb4" role="2OqNvi">
-                        <ref role="37wK5l" to="rbq9:WwTuEsv7dN" resolve="getStepNr" />
+                      <node concept="2OqwBi" id="M7_V6uhqrY" role="37wK5m">
+                        <node concept="2GrUjf" id="M7_V6uhqdt" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="M7_V6uhekS" resolve="state" />
+                        </node>
+                        <node concept="liA8E" id="M7_V6uhrb4" role="2OqNvi">
+                          <ref role="37wK5l" to="rbq9:WwTuEsv7dN" resolve="getStepNr" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -7141,7 +7222,7 @@
                 <node concept="liA8E" id="M7_V6ujrNp" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                   <node concept="Xl_RD" id="M7_V6ujseE" role="37wK5m">
-                    <property role="Xl_RC" value="&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp; " />
+                    <property role="Xl_RC" value=" - " />
                   </node>
                 </node>
               </node>
@@ -7157,7 +7238,7 @@
                       <node concept="liA8E" id="M7_V6uhrIb" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                         <node concept="Xl_RD" id="M7_V6uhuNl" role="37wK5m">
-                          <property role="Xl_RC" value="CALL:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;" />
+                          <property role="Xl_RC" value="CALL:\t\t" />
                         </node>
                       </node>
                     </node>
@@ -7195,7 +7276,7 @@
                       <node concept="liA8E" id="M7_V6uhC7b" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                         <node concept="Xl_RD" id="M7_V6uhC7c" role="37wK5m">
-                          <property role="Xl_RC" value="RETURN:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;" />
+                          <property role="Xl_RC" value="RETURN:\t" />
                         </node>
                       </node>
                     </node>
@@ -7235,7 +7316,7 @@
                           <node concept="liA8E" id="M7_V6uhD8J" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                             <node concept="Xl_RD" id="M7_V6uhD8K" role="37wK5m">
-                              <property role="Xl_RC" value="ASSIGNMENT:&amp;nbsp;&amp;nbsp; " />
+                              <property role="Xl_RC" value="ASSIGNMENT:\t" />
                             </node>
                           </node>
                         </node>
@@ -7254,7 +7335,7 @@
                       <node concept="liA8E" id="M7_V6uhGCw" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                         <node concept="Xl_RD" id="M7_V6uhGIj" role="37wK5m">
-                          <property role="Xl_RC" value="&amp;nbsp;&amp;nbsp;=&amp;nbsp;&amp;nbsp;" />
+                          <property role="Xl_RC" value=" = " />
                         </node>
                       </node>
                     </node>
@@ -7292,7 +7373,7 @@
                       <node concept="liA8E" id="M7_V6uhLa9" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                         <node concept="Xl_RD" id="M7_V6uhLaa" role="37wK5m">
-                          <property role="Xl_RC" value="FAILURE:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;" />
+                          <property role="Xl_RC" value="FAILURE:\t\t" />
                         </node>
                       </node>
                     </node>
@@ -7332,7 +7413,7 @@
                           <node concept="liA8E" id="M7_V6uinF9" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                             <node concept="Xl_RD" id="M7_V6uinFa" role="37wK5m">
-                              <property role="Xl_RC" value="LOCATION:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;" />
+                              <property role="Xl_RC" value="LOCATION:\t" />
                             </node>
                           </node>
                         </node>
@@ -7351,7 +7432,7 @@
                       <node concept="liA8E" id="M7_V6uj0rm" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                         <node concept="Xl_RD" id="M7_V6uj0x8" role="37wK5m">
-                          <property role="Xl_RC" value="&amp;nbsp;&amp;nbsp;:&amp;nbsp;&amp;nbsp;" />
+                          <property role="Xl_RC" value="\t" />
                         </node>
                       </node>
                     </node>
@@ -7391,22 +7472,9 @@
                 <node concept="liA8E" id="M7_V6uh_wH" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                   <node concept="Xl_RD" id="M7_V6uh_yE" role="37wK5m">
-                    <property role="Xl_RC" value="&lt;br&gt;" />
+                    <property role="Xl_RC" value="\n" />
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="M7_V6u7Wwz" role="3cqZAp">
-          <node concept="2OqwBi" id="M7_V6u7W_O" role="3clFbG">
-            <node concept="37vLTw" id="M7_V6u7Wwx" role="2Oq$k0">
-              <ref role="3cqZAo" node="M7_V6u7VdB" resolve="sb" />
-            </node>
-            <node concept="liA8E" id="M7_V6u7Xga" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
-              <node concept="Xl_RD" id="M7_V6u7Xhp" role="37wK5m">
-                <property role="Xl_RC" value="&lt;/html&gt;" />
               </node>
             </node>
           </node>

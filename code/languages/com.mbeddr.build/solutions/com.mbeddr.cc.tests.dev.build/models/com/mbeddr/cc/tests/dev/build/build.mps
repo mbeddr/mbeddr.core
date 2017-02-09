@@ -286,12 +286,6 @@
         <ref role="398BVh" node="6RmoJr95Has" resolve="mbeddr.artifacts" />
       </node>
     </node>
-    <node concept="2sgV4H" id="4hvHh3QXKNz" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QXKSB" role="2JcizS">
-        <ref role="398BVh" node="4hvHh3QXKHO" resolve="platform.sl-all" />
-      </node>
-    </node>
     <node concept="1l3spV" id="7eF9rfAnzV1" role="1l3spN">
       <node concept="L2wRC" id="7eF9rfAnzV2" role="39821P">
         <ref role="L2wRA" node="7eF9rfAnzVj" resolve="test.ts.cc.requirements.scenarios" />
@@ -586,12 +580,6 @@
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="6RmoJr9tcTw" role="2JcizS">
         <ref role="398BVh" node="4AnCPexDnpL" resolve="platform.artifacts" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="4hvHh3QXKkA" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QXKqM" role="2JcizS">
-        <ref role="398BVh" node="2Xjt3l5c8Xb" resolve="platform.sl-all" />
       </node>
     </node>
     <node concept="1l3spV" id="7eF9rfAnzYV" role="1l3spN">

@@ -53,17 +53,23 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
+      <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
+      <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="1203001093456" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="in" index="osYL8" />
       <concept id="1203001236505" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="nn" index="otxO1" />
       <concept id="1203009604308" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_link" flags="nn" index="oXsJc" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="1213106463729" name="canBeChild" index="1MLUbF" />
         <child id="1213106478122" name="canBeParent" index="1MLXOK" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
@@ -145,18 +151,28 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4ATA_JBp1bI">
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="harness.assign" />
     <ref role="1M2myG" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
     <node concept="osYL8" id="4ATA_JBp1bJ" role="1MLXOK">
       <node concept="3clFbS" id="4ATA_JBp1bK" role="2VODD2">
         <node concept="3clFbJ" id="4ATA_JBp5Ad" role="3cqZAp">
           <node concept="3clFbS" id="4ATA_JBp5Af" role="3clFbx">
             <node concept="3cpWs6" id="4ATA_JBp5Su" role="3cqZAp">
-              <node concept="2OqwBi" id="4ATA_JBp6yF" role="3cqZAk">
-                <node concept="otxO1" id="4ATA_JBsppq" role="2Oq$k0" />
-                <node concept="3O6GUB" id="4ATA_JBspDu" role="2OqNvi">
-                  <node concept="chp4Y" id="4ATA_JBspQQ" role="3QVz_e">
-                    <ref role="cht4Q" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
+              <node concept="22lmx$" id="1BFQdmK0ylr" role="3cqZAk">
+                <node concept="2OqwBi" id="1BFQdmK0yU8" role="3uHU7w">
+                  <node concept="otxO1" id="1BFQdmK0yzA" role="2Oq$k0" />
+                  <node concept="3O6GUB" id="1BFQdmK0zle" role="2OqNvi">
+                    <node concept="chp4Y" id="1BFQdmK0zz7" role="3QVz_e">
+                      <ref role="cht4Q" to="llb3:1BFQdmJZZ5k" resolve="DiscreteValuesExpression" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="4ATA_JBp6yF" role="3uHU7B">
+                  <node concept="otxO1" id="4ATA_JBsppq" role="2Oq$k0" />
+                  <node concept="3O6GUB" id="4ATA_JBspDu" role="2OqNvi">
+                    <node concept="chp4Y" id="4ATA_JBspQQ" role="3QVz_e">
+                      <ref role="cht4Q" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -180,6 +196,24 @@
         <node concept="3clFbF" id="4ATA_JBp7sz" role="3cqZAp">
           <node concept="3clFbT" id="4ATA_JBp7sy" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1BFQdmJZZAu">
+    <property role="3GE5qa" value="harness.assign" />
+    <ref role="1M2myG" to="llb3:1BFQdmJZZ5k" resolve="DiscreteValuesExpression" />
+    <node concept="nKS2y" id="1BFQdmJZZAv" role="1MLUbF">
+      <node concept="3clFbS" id="1BFQdmJZZAw" role="2VODD2">
+        <node concept="3clFbF" id="1BFQdmJZZHx" role="3cqZAp">
+          <node concept="2OqwBi" id="1BFQdmJZZUX" role="3clFbG">
+            <node concept="nLn13" id="1BFQdmJZZHw" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="1BFQdmK00aS" role="2OqNvi">
+              <node concept="chp4Y" id="1BFQdmK00nc" role="cj9EA">
+                <ref role="cht4Q" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

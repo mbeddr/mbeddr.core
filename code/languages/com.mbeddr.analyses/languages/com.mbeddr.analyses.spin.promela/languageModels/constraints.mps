@@ -170,5 +170,28 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7T$_el8urwJ">
+    <ref role="1M2myG" to="ir22:24G9CRyNRAe" resolve="ChanDeclaration" />
+    <node concept="nKS2y" id="7T$_el8urwK" role="1MLUbF">
+      <node concept="3clFbS" id="7T$_el8urwL" role="2VODD2">
+        <node concept="3clFbF" id="7T$_el8urBW" role="3cqZAp">
+          <node concept="2OqwBi" id="7T$_el8utbJ" role="3clFbG">
+            <node concept="2OqwBi" id="7T$_el8urR0" role="2Oq$k0">
+              <node concept="nLn13" id="7T$_el8urBV" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7T$_el8us7m" role="2OqNvi">
+                <node concept="1xMEDy" id="7T$_el8us7o" role="1xVPHs">
+                  <node concept="chp4Y" id="7T$_el8usgr" role="ri$Ld">
+                    <ref role="cht4Q" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="7T$_el8usIW" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7T$_el8uua2" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

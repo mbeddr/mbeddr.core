@@ -48,7 +48,7 @@
     </language>
   </registry>
   <node concept="3_zdsH" id="5p$33BW5kXx">
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="harness.assign" />
     <ref role="3_znuS" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
     <node concept="3__wT9" id="5p$33BW5kXy" role="3_A6iZ">
       <node concept="3clFbS" id="5p$33BW5kXz" role="2VODD2">
@@ -65,6 +65,30 @@
             <node concept="3__QtB" id="4ATA_JBp7Rc" role="2Oq$k0" />
             <node concept="3TrEf2" id="4ATA_JBp8xP" role="2OqNvi">
               <ref role="3Tt5mk" to="llb3:4ATA_JBp19m" resolve="vals" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="1BFQdmKfvB0">
+    <property role="3GE5qa" value="harness.assign" />
+    <ref role="3_znuS" to="llb3:1BFQdmKfv_H" resolve="RandomAssign" />
+    <node concept="3__wT9" id="1BFQdmKfvB1" role="3_A6iZ">
+      <node concept="3clFbS" id="1BFQdmKfvB2" role="2VODD2">
+        <node concept="3_FXB6" id="1BFQdmKfvBl" role="3cqZAp">
+          <node concept="2OqwBi" id="1BFQdmKfvBm" role="3_H1SZ">
+            <node concept="3__QtB" id="1BFQdmKfvBn" role="2Oq$k0" />
+            <node concept="3TrEf2" id="1BFQdmKh5mD" role="2OqNvi">
+              <ref role="3Tt5mk" to="llb3:45nq91X0EWs" resolve="exp" />
+            </node>
+          </node>
+        </node>
+        <node concept="3AgYrR" id="1BFQdmKfvBp" role="3cqZAp">
+          <node concept="2OqwBi" id="1BFQdmKfvBq" role="3Ah4Yx">
+            <node concept="3__QtB" id="1BFQdmKfvBr" role="2Oq$k0" />
+            <node concept="3TrEf2" id="1BFQdmKfvBs" role="2OqNvi">
+              <ref role="3Tt5mk" to="llb3:1BFQdmKfv_L" resolve="vals" />
             </node>
           </node>
         </node>

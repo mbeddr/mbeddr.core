@@ -9,6 +9,7 @@
   <imports>
     <import index="3ior" ref="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -111,7 +112,7 @@
       <property role="20kJfa" value="pathpicker" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8297282968580840312" />
-      <ref role="20lvS9" to="vs0r:7c_RIoB8H2I" resolve="MacroFilePicker" />
+      <ref role="20lvS9" to="68mc:7c_RIoB8H2I" resolve="MacroFilePicker" />
     </node>
   </node>
   <node concept="1TIwiD" id="7uEcx53DVzq">
