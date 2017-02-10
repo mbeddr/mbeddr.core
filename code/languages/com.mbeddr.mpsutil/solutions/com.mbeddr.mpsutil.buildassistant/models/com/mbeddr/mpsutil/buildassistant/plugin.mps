@@ -7,6 +7,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
@@ -31,7 +32,13 @@
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1204908117386" name="jetbrains.mps.lang.plugin.structure.Separator" flags="ng" index="2a7GMi" />
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
@@ -39,6 +46,7 @@
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
+        <child id="8976425910813834639" name="icon" index="3Uehp1" />
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
@@ -2135,7 +2143,7 @@
   </node>
   <node concept="sE7Ow" id="3x_7aSMkC8e">
     <property role="TrG5h" value="BuildDependencies_Module" />
-    <property role="2uzpH1" value="Build with Dependencies" />
+    <property role="2uzpH1" value="Make with Dependencies" />
     <property role="3GE5qa" value="module" />
     <node concept="tnohg" id="3x_7aSMkC8f" role="tncku">
       <node concept="3clFbS" id="3x_7aSMkC8g" role="2VODD2">
@@ -2206,17 +2214,22 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULES" resolve="MODULES" />
       <node concept="1oajcY" id="3x_7aSMkEFL" role="1oa70y" />
     </node>
+    <node concept="1QGGSu" id="6YP03IIYkCy" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/buildassistant.png" />
+    </node>
   </node>
   <node concept="tC5Ba" id="3x_7aSMkQJO">
     <property role="TrG5h" value="BuildHelperGroup_Module" />
     <property role="3GE5qa" value="module" />
     <node concept="ftmFs" id="3x_7aSMkQJP" role="ftER_">
+      <node concept="2a7GMi" id="6YP03IIYkK6" role="ftvYc" />
       <node concept="tCFHf" id="3x_7aSMkQKm" role="ftvYc">
         <ref role="tCJdB" node="3x_7aSMkC8e" resolve="BuildDependencies_Module" />
       </node>
       <node concept="tCFHf" id="3x_7aSMkQKy" role="ftvYc">
         <ref role="tCJdB" node="3x_7aSMkI7r" resolve="RebuildDependencies_Module" />
       </node>
+      <node concept="2a7GMi" id="6YP03IIYkKe" role="ftvYc" />
     </node>
     <node concept="tT9cl" id="3x_7aSMkQJS" role="2f5YQi">
       <ref role="tU$_T" to="tprs:miYJQAr2Uj" resolve="CommonModuleActions" />
@@ -2296,10 +2309,13 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULES" resolve="MODULES" />
       <node concept="1oajcY" id="3x_7aSMkI7S" role="1oa70y" />
     </node>
+    <node concept="1QGGSu" id="6YP03IIYksX" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/buildassistant.png" />
+    </node>
   </node>
   <node concept="sE7Ow" id="3_loG33b7f">
     <property role="TrG5h" value="BuildDependencies_Model" />
-    <property role="2uzpH1" value="Build Dependencies" />
+    <property role="2uzpH1" value="Make with Dependencies" />
     <property role="3GE5qa" value="model" />
     <node concept="tnohg" id="3_loG33b7g" role="tncku">
       <node concept="3clFbS" id="3_loG33b7h" role="2VODD2">
@@ -2344,17 +2360,22 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
       <node concept="1oajcY" id="3_loG33bjf" role="1oa70y" />
     </node>
+    <node concept="1QGGSu" id="74geI_h41wO" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/buildassistant.png" />
+    </node>
   </node>
   <node concept="tC5Ba" id="3_loG33f4F">
     <property role="TrG5h" value="BuildHelperGroup_Model" />
     <property role="3GE5qa" value="model" />
     <node concept="ftmFs" id="3_loG33f7P" role="ftER_">
+      <node concept="2a7GMi" id="74geI_h41_b" role="ftvYc" />
       <node concept="tCFHf" id="3_loG33f7U" role="ftvYc">
         <ref role="tCJdB" node="3_loG33b7f" resolve="BuildDependencies_Model" />
       </node>
       <node concept="tCFHf" id="3_loG3u$Mn" role="ftvYc">
         <ref role="tCJdB" node="3_loG3uwDi" resolve="RebuildDependencies_Model" />
       </node>
+      <node concept="2a7GMi" id="74geI_h41_j" role="ftvYc" />
     </node>
     <node concept="tT9cl" id="3_loG33f7Y" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
@@ -2363,7 +2384,7 @@
   </node>
   <node concept="sE7Ow" id="3_loG3uwDi">
     <property role="TrG5h" value="RebuildDependencies_Model" />
-    <property role="2uzpH1" value="Rebuild Dependencies" />
+    <property role="2uzpH1" value="Rebuild with Dependencies" />
     <property role="3GE5qa" value="model" />
     <node concept="tnohg" id="3_loG3uwDj" role="tncku">
       <node concept="3clFbS" id="3_loG3uwDk" role="2VODD2">
@@ -2407,6 +2428,9 @@
       <property role="TrG5h" value="model" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
       <node concept="1oajcY" id="3_loG3uwDH" role="1oa70y" />
+    </node>
+    <node concept="1QGGSu" id="FniR$CiprS" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/buildassistant.png" />
     </node>
   </node>
 </model>
