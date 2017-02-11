@@ -22,6 +22,7 @@
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false">17b818a8-8533-4efe-8f51-f532146ae66b(com.mbeddr.analyses.spin.c)</dependency>
         <dependency reexport="false">75ce70be-3bbf-4f0b-8aa2-11888bf9583c(com.mbeddr.analyses.spin.c#6932498701172181331)</dependency>
+        <dependency reexport="false">f027a490-7082-492e-99ce-dfe65d7342f7(com.mbeddr.analyses.spin.c.patterns)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -81,6 +82,7 @@
         <module reference="d26d2d52-1a2b-4119-b5f5-15a51e472039(com.mbeddr.analyses.base.verification_conditions#6266913193073278035)" version="0" />
         <module reference="17b818a8-8533-4efe-8f51-f532146ae66b(com.mbeddr.analyses.spin.c)" version="0" />
         <module reference="75ce70be-3bbf-4f0b-8aa2-11888bf9583c(com.mbeddr.analyses.spin.c#6932498701172181331)" version="0" />
+        <module reference="f027a490-7082-492e-99ce-dfe65d7342f7(com.mbeddr.analyses.spin.c.patterns)" version="0" />
         <module reference="877b0e90-e1a6-4468-970c-dcb3f49f95ed(com.mbeddr.analyses.spin.promela)" version="0" />
         <module reference="4ddb29eb-11e5-46c6-a894-6b8a4c38587d(com.mbeddr.analyses.spin.promela.patterns)" version="0" />
         <module reference="bd9d1a6a-cd44-40f9-b116-f0ff4deba2ce(com.mbeddr.analyses.spin.promela.patterns#1737851622209916392)" version="0" />

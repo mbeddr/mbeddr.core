@@ -4,6 +4,8 @@
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
   </languages>
   <imports>
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
@@ -99,6 +101,7 @@
       <concept id="1174657487114" name="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" flags="nn" index="1Z2H0r">
         <child id="1174657509053" name="term" index="1Z2MuG" />
       </concept>
+      <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
         <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
@@ -318,6 +321,68 @@
     <node concept="1YaCAy" id="7T$_el8nrLu" role="1YuTPh">
       <property role="TrG5h" value="randomAssign" />
       <ref role="1YaFvo" to="llb3:1BFQdmKfv_H" resolve="RandomAssign" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="1BFQdmKdnVh">
+    <property role="TrG5h" value="typeof_ForEachVarDecl" />
+    <property role="3GE5qa" value="harness.foreach" />
+    <node concept="3clFbS" id="1BFQdmKdnVi" role="18ibNy">
+      <node concept="1Z5TYs" id="1BFQdmKdo93" role="3cqZAp">
+        <node concept="mw_s8" id="1BFQdmKdo9n" role="1ZfhKB">
+          <node concept="1Z2H0r" id="1BFQdmKdo9j" role="mwGJk">
+            <node concept="2OqwBi" id="1BFQdmKdohv" role="1Z2MuG">
+              <node concept="1YBJjd" id="1BFQdmKdo9C" role="2Oq$k0">
+                <ref role="1YBMHb" node="1BFQdmKdnVk" resolve="forEachVarDecl" />
+              </node>
+              <node concept="3TrEf2" id="1BFQdmKdorR" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="1BFQdmKdo96" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1BFQdmKdnVo" role="mwGJk">
+            <node concept="1YBJjd" id="1BFQdmKdnX8" role="1Z2MuG">
+              <ref role="1YBMHb" node="1BFQdmKdnVk" resolve="forEachVarDecl" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1BFQdmKdnVk" role="1YuTPh">
+      <property role="TrG5h" value="forEachVarDecl" />
+      <ref role="1YaFvo" to="llb3:5RNtn4ccJZN" resolve="ForEachVarDecl" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="1BFQdmKdmWQ">
+    <property role="TrG5h" value="typeof_ForEachVarDeclRef" />
+    <property role="3GE5qa" value="harness.foreach" />
+    <node concept="3clFbS" id="1BFQdmKdmWR" role="18ibNy">
+      <node concept="1Z5TYs" id="1BFQdmKdnaB" role="3cqZAp">
+        <node concept="mw_s8" id="1BFQdmKdnaV" role="1ZfhKB">
+          <node concept="1Z2H0r" id="1BFQdmKdnaR" role="mwGJk">
+            <node concept="2OqwBi" id="1BFQdmKdnlf" role="1Z2MuG">
+              <node concept="1YBJjd" id="1BFQdmKdnbc" role="2Oq$k0">
+                <ref role="1YBMHb" node="1BFQdmKdmWT" resolve="forEachVarDeclRef" />
+              </node>
+              <node concept="3TrEf2" id="1BFQdmKdnMn" role="2OqNvi">
+                <ref role="3Tt5mk" to="llb3:1BFQdmKdkgC" resolve="var" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="1BFQdmKdnaE" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1BFQdmKdmWX" role="mwGJk">
+            <node concept="1YBJjd" id="1BFQdmKdmYH" role="1Z2MuG">
+              <ref role="1YBMHb" node="1BFQdmKdmWT" resolve="forEachVarDeclRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1BFQdmKdmWT" role="1YuTPh">
+      <property role="TrG5h" value="forEachVarDeclRef" />
+      <ref role="1YaFvo" to="llb3:1BFQdmKbEJq" resolve="ForEachVarDeclRef" />
     </node>
   </node>
 </model>
