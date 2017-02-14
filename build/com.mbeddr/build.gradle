@@ -1,7 +1,6 @@
 
 
-if (project.hasProperty("MPS_Installation"))
-{
+if (project.hasProperty("MPS_Installation")) {
     ext.mpsInstallationDir = project.getProperty("MPS_Installation")
 } else {
     ext.mpsInstallationDir = ""
@@ -48,12 +47,27 @@ ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "MPS/MPS
 
 logger.info "skipResolveMps: {}, mpsHomeDir: {}", ext.skipResolveMps, ext.mpsHomeDir
 
+// JDK_HOME required for adding tools.jar into classpath of the forked ant process
+if (!hasProperty("jdk_home")) {
+    def java_home = System.properties['java.home']
+    def jdk_home = java_home
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        jdk_home = jdk_home + "/.."
+    }
+    if (!file("$jdk_home/lib/tools.jar").isFile()) {
+        throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
+    }
+    ext.jdk_home = jdk_home
+}
+
+logger.info "jdk_home: $jdk_home"
+
 ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
 ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
 ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()
 String buildVersion = '-Dbuild=' + GitBasedVersioning.getGitShortCommitHash()
-String majorVersion = '-Dmajor.version='+mbeddrMajor
-String minorVersion = '-Dminor.version='+mbeddrMinor
+String majorVersion = '-Dmajor.version=' + mbeddrMajor
+String minorVersion = '-Dminor.version=' + mbeddrMinor
 ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
 ext.slall_home = ['-Dsl-all.home=' + file(rootProject.projectDir.absolutePath + '/code/plugins/sl-all').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
 ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
@@ -80,10 +94,12 @@ subprojects {
     // configs
     configurations {
         mps
+        ant_lib
     }
 
     dependencies {
         mps "com.jetbrains:mps:$mpsBuild"
+        ant_lib "org.apache.ant:ant-junit:1.10.1"
     }
 }
 
@@ -121,9 +137,9 @@ private static void configureRepositories(Project project) {
                 }
             }
         }
+        mavenCentral()
     }
 }
-
 
 
 task printVersion {
