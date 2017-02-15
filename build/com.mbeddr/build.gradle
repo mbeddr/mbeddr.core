@@ -1,29 +1,4 @@
-// setting mbeddrMajor
-if (project.hasProperty('mbeddrMajor')) {
-    ext.mbeddrMajor = project.getProperty('mbeddrMajor')
-} else {
-    ext.mbeddrMajor = "1"
-}
 
-// setting mbeddrMinor
-if (project.hasProperty('mbeddrMinor')) {
-    ext.mbeddrMinor = project.getProperty('mbeddrMinor')
-} else {
-    ext.mbeddrMinor = "0"
-}
-
-// setting mbeddrBuild
-if (project.hasProperty('mbeddrBuild')) {
-    ext.mbeddrBuild = project.getProperty('mbeddrBuild')
-} else {
-    ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
-}
-
-if (project.hasProperty("mbeddrBuildCounter")) {
-    ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
-} else {
-    ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
-}
 
 if (project.hasProperty("MPS_Installation"))
 {
@@ -32,8 +7,33 @@ if (project.hasProperty("MPS_Installation"))
     ext.mpsInstallationDir = ""
 }
 
+ext.mbeddrMajor = "1"
+ext.mbeddrMinor = "0"
+
 // locally versions are SNAPSHOT
 if (ciBuild) {
+    // setting mbeddrMajor
+    if (project.hasProperty('mbeddrMajor')) {
+        ext.mbeddrMajor = project.getProperty('mbeddrMajor')
+    }
+
+    // setting mbeddrMinor
+    if (project.hasProperty('mbeddrMinor')) {
+        ext.mbeddrMinor = project.getProperty('mbeddrMinor')
+    }
+
+    // setting mbeddrBuild
+    if (project.hasProperty('mbeddrBuild')) {
+        ext.mbeddrBuild = project.getProperty('mbeddrBuild')
+    } else {
+        ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
+    }
+
+    if (project.hasProperty("mbeddrBuildCounter")) {
+        ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
+    } else {
+        ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
+    }
     ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
 } else {
     println "Local build detected. Build will be a SNAPSHOT."
@@ -93,7 +93,7 @@ File scriptFile(String relativePath) {
 }
 
 private static void configureRepositories(Project project) {
-    project.ext.repository = project.mbeddrBuild.endsWith('-SNAPSHOT') ? project.snapshotRepository : project.releaseRepository
+    project.ext.repository = project.mbeddrBuildNumber.endsWith('-SNAPSHOT') ? project.snapshotRepository : project.releaseRepository
 
     project.publishing {
         repositories {
