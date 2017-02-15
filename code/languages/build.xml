@@ -105,6 +105,11 @@
 	<property name="com.mbeddr.platform.test-build-file.name" value="build-ts-tests.xml" /> 
 	<property name="com.mbeddr.platform.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.platform" />  
 
+	<!-- mpsutil.inca -->
+	<property name="com.mbeddr.mpsutil.inca.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.mpsutil.inca" />    
+	<property name="com.mbeddr.mpsutil.inca.build-file.name" value="build.xml" /> 
+	<property name="com.mbeddr.mpsutil.inca.test-build-file.name" value="build-ts-tests.xml" /> 
+
 	<!-- mbeddr.allScripts -->
 	<property name="com.mbeddr.allScripts.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.allScripts" />    
 	<property name="com.mbeddr.allScripts.build-file.name" value="build.xml" /> 
@@ -227,6 +232,11 @@
 			</zipfileset>
 		</copy>
 		<antcall target="build-spawner" />
+	</target> 
+	
+	<target name="build-inca">
+		<ant antfile="${com.mbeddr.mpsutil.inca.build-file.name}" dir="${com.mbeddr.mpsutil.inca.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.mpsutil.inca.build-file.name}" dir="${com.mbeddr.mpsutil.inca.build-file.location}" target="${build-plugin.task}" />   
 	</target>  
 
 	<target name="build-platform-distribution">
@@ -265,6 +275,7 @@
 	<target name="build-platform-and-mbeddr" >
 		<antcall target="build-platform" />
 		<antcall target="build-platform-distribution" />
+		<antcall target="build-inca" />
 		<antcall target="build-mbeddr" />
 	</target>
 
@@ -276,6 +287,7 @@
 	<target name="test-mbeddr" >
 		<antcall target="test-platform" /> 
 		<antcall target="test-debugger" />
+		<antcall target="test-inca" />
 		<antcall target="test-core" /> 
 		<antcall target="test-performance" />
 		<antcall target="test-cc" />
@@ -390,6 +402,12 @@
 		<antcall target="make-tests">
 			<param name="make-tests.dir" value="${com.mbeddr.core.working-dir}"/>
 		</antcall>
+	</target>
+
+	<target name="test-inca">
+		<ant antfile="${com.mbeddr.mpsutil.inca.test-build-file.name}" dir="${com.mbeddr.mpsutil.inca.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.mpsutil.inca.test-build-file.name}" dir="${com.mbeddr.mpsutil.inca.build-file.location}" target="${build-plugin.task}" />	  
+		<ant antfile="${com.mbeddr.mpsutil.inca.test-build-file.name}" dir="${com.mbeddr.mpsutil.inca.build-file.location}" target="${run-tests.task}" />
 	</target>
 
 	<target name="test-core-ts">
