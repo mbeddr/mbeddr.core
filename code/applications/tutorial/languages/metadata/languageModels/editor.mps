@@ -2,8 +2,7 @@
 <model ref="r:d2dd5f17-6f72-4fd4-8b55-407c336ddb2d(mbeddr.tutorial.metadata.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
   </languages>
   <imports>
     <import index="od47" ref="r:3cf56826-6fbe-46d2-acbd-1aca19d54159(mbeddr.tutorial.metadata.structure)" />
@@ -65,7 +64,7 @@
       <node concept="2SsqMj" id="2zx$mQQxDoo" role="3EZMnx" />
       <node concept="l2Vlx" id="2zx$mQQxDon" role="2iSdaV" />
       <node concept="3F2HdR" id="2zx$mQQxDoq" role="3EZMnx">
-        <ref role="1NtTu8" to="od47:2zx$mQQxDog" />
+        <ref role="1NtTu8" to="od47:2zx$mQQxDog" resolve="permissions" />
         <node concept="2iRkQZ" id="2zx$mQQxErL" role="2czzBx" />
         <node concept="3vyZuw" id="2zx$mQQxErK" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -104,7 +103,7 @@
         <property role="3F0ifm" value="-----------------------------------" />
       </node>
       <node concept="3F2HdR" id="2zx$mQQxDp7" role="3EZMnx">
-        <ref role="1NtTu8" to="od47:2zx$mQQxDoY" />
+        <ref role="1NtTu8" to="od47:2zx$mQQxDoY" resolve="roles" />
         <node concept="2iRkQZ" id="2zx$mQQxDp8" role="2czzBx" />
       </node>
     </node>
@@ -114,7 +113,7 @@
     <node concept="3EZMnI" id="2zx$mQQxDpi" role="2wV5jI">
       <node concept="l2Vlx" id="2zx$mQQxDpj" role="2iSdaV" />
       <node concept="1iCGBv" id="2zx$mQQxDpe" role="3EZMnx">
-        <ref role="1NtTu8" to="od47:2zx$mQQxDpa" />
+        <ref role="1NtTu8" to="od47:2zx$mQQxDpa" resolve="role" />
         <node concept="1sVBvm" id="2zx$mQQxDpf" role="1sWHZn">
           <node concept="3F0A7n" id="2zx$mQQxDph" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -149,7 +148,7 @@
             <property role="3F0ifm" value="module role:" />
           </node>
           <node concept="1iCGBv" id="2zx$mQQxEYo" role="3EZMnx">
-            <ref role="1NtTu8" to="od47:2zx$mQQxEXG" />
+            <ref role="1NtTu8" to="od47:2zx$mQQxEXG" resolve="role" />
             <node concept="1sVBvm" id="2zx$mQQxEYp" role="1sWHZn">
               <node concept="3F0A7n" id="2zx$mQQxEYr" role="2wV5jI">
                 <property role="1Intyy" value="true" />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MigrationProperties">
+    <entry key="jetbrains.mps.cleanSrc_3.3" value="executed" />
+    <entry key="jetbrains.mps.fixLangVersions" value="executed" />
+    <entry key="jetbrains.mps.fixMig_33_331" value="executed" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v33.UpdateModuleUsedLang" value="executed" />
+    <entry key="jetbrains.mps.v8_elimination" value="executed" />
+  </component>
+</project>

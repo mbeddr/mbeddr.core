@@ -2,12 +2,12 @@
 <model ref="r:296f4072-6e47-4770-944c-5559bed1bec2(com.mbeddr.analyses.cbmc.components.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -22,9 +22,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -191,6 +190,11 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
       <node concept="1oajcY" id="4arT0cnzgZo" role="1oa70y" />
     </node>
+    <node concept="1DS2jV" id="5KHBa6l6taw" role="1NuT2Z">
+      <property role="TrG5h" value="mpsProject" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="5KHBa6l6tax" role="1oa70y" />
+    </node>
     <node concept="tnohg" id="4arT0cnzgZt" role="tncku">
       <node concept="3clFbS" id="4arT0cnzgZu" role="2VODD2">
         <node concept="3clFbJ" id="4arT0cnzgZv" role="3cqZAp">
@@ -338,8 +342,8 @@
             <ref role="1Pybhc" to="tzyt:2UdJgvFpEBQ" resolve="CProverAnalysesUtils" />
             <node concept="2OqwBi" id="4arT0cnzh0O" role="37wK5m">
               <node concept="2WthIp" id="4arT0cnzh0P" role="2Oq$k0" />
-              <node concept="1DTwFV" id="7uk5GW4ZeZR" role="2OqNvi">
-                <ref role="2WH_rO" node="4arT0cnzgZf" resolve="project" />
+              <node concept="1DTwFV" id="5KHBa6l6ysd" role="2OqNvi">
+                <ref role="2WH_rO" node="5KHBa6l6taw" resolve="mpsProject" />
               </node>
             </node>
             <node concept="2OqwBi" id="3_HSwtcNJIw" role="37wK5m">
@@ -362,7 +366,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="4arT0cnzh0T" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/verify.png" />
+      <property role="1iqoE4" value="${module}/icons/verify.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="4arT0cn_5q8">

@@ -6,7 +6,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -120,7 +120,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="ehGfXvIH6x" role="3EZMnx">
-        <ref role="1NtTu8" to="p95z:ehGfXvIH6m" />
+        <ref role="1NtTu8" to="p95z:ehGfXvIH6m" resolve="text" />
         <node concept="lj46D" id="ehGfXvIH6A" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -150,7 +150,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="IKrxbBHbug" role="3EZMnx">
-        <ref role="1NtTu8" to="p95z:IKrxbBHbue" />
+        <ref role="1NtTu8" to="p95z:IKrxbBHbue" resolve="classifier" />
         <node concept="1sVBvm" id="IKrxbBHbuh" role="1sWHZn">
           <node concept="3F0A7n" id="IKrxbBHbuj" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -166,7 +166,7 @@
         <property role="3F0ifm" value="full qualified name:" />
       </node>
       <node concept="1iCGBv" id="IKrxbBHbuo" role="3EZMnx">
-        <ref role="1NtTu8" to="p95z:IKrxbBHbue" />
+        <ref role="1NtTu8" to="p95z:IKrxbBHbue" resolve="classifier" />
         <node concept="1sVBvm" id="IKrxbBHbup" role="1sWHZn">
           <node concept="1HlG4h" id="IKrxbBHbur" role="2wV5jI">
             <node concept="1HfYo3" id="IKrxbBHbus" role="1HlULh">
@@ -198,7 +198,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="IKrxbBHkci" role="3EZMnx">
-        <ref role="1NtTu8" to="p95z:IKrxbBHfGy" />
+        <ref role="1NtTu8" to="p95z:IKrxbBHfGy" resolve="target" />
         <node concept="1sVBvm" id="IKrxbBHkcj" role="1sWHZn">
           <node concept="3F0A7n" id="4$G0AukZVaf" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -241,7 +241,7 @@
         <property role="3F0ifm" value="target:" />
       </node>
       <node concept="1iCGBv" id="4$G0AukZV9Z" role="3EZMnx">
-        <ref role="1NtTu8" to="p95z:IKrxbBHfGy" />
+        <ref role="1NtTu8" to="p95z:IKrxbBHfGy" resolve="target" />
         <node concept="1sVBvm" id="4$G0AukZVa0" role="1sWHZn">
           <node concept="1HlG4h" id="4$G0AukZVa2" role="2wV5jI">
             <node concept="1HfYo3" id="4$G0AukZVa3" role="1HlULh">
@@ -314,7 +314,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4F4peXsrXXn" role="3EZMnx">
-        <ref role="1NtTu8" to="p95z:4F4peXsrXtM" />
+        <ref role="1NtTu8" to="p95z:4F4peXsrXtM" resolve="text" />
       </node>
       <node concept="3F0ifn" id="4F4peXsrXXp" role="3EZMnx">
         <property role="3F0ifm" value="&lt;/" />
@@ -402,7 +402,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4F4peXss8sy" role="3EZMnx">
-        <ref role="1NtTu8" to="p95z:4F4peXsrXtM" />
+        <ref role="1NtTu8" to="p95z:4F4peXsrXtM" resolve="text" />
         <node concept="Vb9p2" id="4F4peXss8sz" role="3F10Kt">
           <property role="Vbekb" value="BOLD" />
         </node>
@@ -493,7 +493,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4F4peXss5Zo" role="3EZMnx">
-        <ref role="1NtTu8" to="p95z:4F4peXsrXtM" />
+        <ref role="1NtTu8" to="p95z:4F4peXsrXtM" resolve="text" />
         <node concept="Vb9p2" id="4F4peXss8so" role="3F10Kt">
           <property role="Vbekb" value="ITALIC" />
         </node>
@@ -556,7 +556,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="4$G0AukZXjy" role="3EZMnx">
-        <ref role="1NtTu8" to="p95z:4$G0AukZXjl" />
+        <ref role="1NtTu8" to="p95z:4$G0AukZXjl" resolve="typeVar" />
         <node concept="1sVBvm" id="4$G0AukZXjz" role="1sWHZn">
           <node concept="3F0A7n" id="4$G0AukZXj_" role="2wV5jI">
             <property role="1Intyy" value="true" />

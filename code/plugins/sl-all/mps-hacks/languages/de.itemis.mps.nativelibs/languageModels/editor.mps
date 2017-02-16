@@ -2,7 +2,7 @@
 <model ref="r:e7615704-7430-4f35-aa1f-59e0b645d5c9(de.itemis.mps.nativelibs.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -63,7 +63,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="2H_mjOXq7ZM" role="3EZMnx">
-        <ref role="1NtTu8" to="9lvj:2H_mjOXpLc9" />
+        <ref role="1NtTu8" to="9lvj:2H_mjOXpLc9" resolve="libraries" />
         <node concept="2EHx9g" id="2H_mjOXq801" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="1HOG8KqOIxt" role="3EZMnx">
@@ -72,7 +72,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="1HOG8KqOIvr" role="3EZMnx">
-        <ref role="1NtTu8" to="9lvj:1HOG8KqOFMM" />
+        <ref role="1NtTu8" to="9lvj:1HOG8KqOFMM" resolve="jars" />
         <node concept="2EHx9g" id="1HOG8KqOIyf" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="6r4GR4aevYp" role="3EZMnx">

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -256,7 +256,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="3QkagoxiVAM" role="3EZMnx">
-          <ref role="1NtTu8" to="s9ok:3QkagoxiUus" />
+          <ref role="1NtTu8" to="s9ok:3QkagoxiUus" resolve="text" />
         </node>
         <node concept="gc7cB" id="3QkagoxjIYV" role="3EZMnx">
           <node concept="3VJUX4" id="3QkagoxjIYW" role="3YsKMw">
@@ -1317,7 +1317,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="4DtKYIYtC5X" role="3EZMnx">
-        <ref role="1NtTu8" to="s9ok:4DtKYIYtuMk" />
+        <ref role="1NtTu8" to="s9ok:4DtKYIYtuMk" resolve="child" />
         <node concept="1sVBvm" id="4DtKYIYtC5Z" role="1sWHZn">
           <node concept="3SHvHV" id="4DtKYIYuRZs" role="2wV5jI" />
         </node>
@@ -1347,7 +1347,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="4DtKYIYtWLm" role="3EZMnx">
-        <ref role="1NtTu8" to="s9ok:4DtKYIYtINo" />
+        <ref role="1NtTu8" to="s9ok:4DtKYIYtINo" resolve="root" />
         <node concept="1sVBvm" id="4DtKYIYtWLn" role="1sWHZn">
           <node concept="3F0A7n" id="4DtKYIYtWLo" role="2wV5jI">
             <property role="1Intyy" value="true" />

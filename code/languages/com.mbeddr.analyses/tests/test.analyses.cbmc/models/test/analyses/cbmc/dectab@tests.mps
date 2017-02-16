@@ -9,7 +9,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -28,6 +28,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -132,6 +133,7 @@
   </registry>
   <node concept="1lH9Xt" id="6HtDYEDCZSC">
     <property role="TrG5h" value="DecTab" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="6HtDYEDCZSE" role="1SL9yI">
       <property role="TrG5h" value="testSignum" />
       <node concept="3cqZAl" id="6HtDYEDCZSF" role="3clF45" />
@@ -267,7 +269,7 @@
                 <ref role="3cqZAo" node="1iGXuFZV1By" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5A4xqPJSsUQ" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - (0,0) - (0,1)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - (#col: 0, #row: 0) - (#col: 0, #row: 1)" />
               </node>
             </node>
           </node>
@@ -296,7 +298,7 @@
                 <ref role="3cqZAo" node="1iGXuFZV1By" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5A4xqPJSt71" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - (0,0) - (1,0)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - (#col: 0, #row: 0) - (#col: 1, #row: 0)" />
               </node>
             </node>
           </node>
@@ -407,7 +409,7 @@
                 <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5A4xqPJSfN7" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - (0,0) - (0,1)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - (#col: 0, #row: 0) - (#col: 0, #row: 1)" />
               </node>
             </node>
           </node>
@@ -465,7 +467,7 @@
                 <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5A4xqPJSokM" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 2) - (0,0) - (0,1)" />
+                <property role="Xl_RC" value="DecTab (id: 2) - (#col: 0, #row: 0) - (#col: 0, #row: 1)" />
               </node>
             </node>
           </node>
@@ -494,7 +496,7 @@
                 <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
               </node>
               <node concept="Xl_RD" id="2S1OXleRuaN" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 2) - activation - (0,0)" />
+                <property role="Xl_RC" value="DecTab (id: 2) - activation - (#col: 0, #row: 0)" />
               </node>
             </node>
           </node>
@@ -523,7 +525,7 @@
                 <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
               </node>
               <node concept="Xl_RD" id="2S1OXleRvh8" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 2) - activation - (0,1)" />
+                <property role="Xl_RC" value="DecTab (id: 2) - activation - (#col: 0, #row: 1)" />
               </node>
             </node>
           </node>
@@ -552,7 +554,7 @@
                 <ref role="3cqZAo" node="3oJxBI_0vNj" resolve="results" />
               </node>
               <node concept="Xl_RD" id="2S1OXleRtky" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 2) - activation - (2,0)" />
+                <property role="Xl_RC" value="DecTab (id: 2) - activation - (#col: 0, #row: 2)" />
               </node>
             </node>
           </node>
@@ -567,9 +569,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2S1OXleRtRO" role="3cqZAp" />
-        <node concept="3clFbH" id="2S1OXleRu11" role="3cqZAp" />
-        <node concept="3clFbH" id="2S1OXleRtbX" role="3cqZAp" />
       </node>
     </node>
   </node>
@@ -578,6 +577,7 @@
   </node>
   <node concept="1lH9Xt" id="1_cCL2G28UZ">
     <property role="TrG5h" value="DecTabInComponents" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="1_cCL2G28V0" role="1SL9yI">
       <property role="TrG5h" value="testSignum" />
       <node concept="3cqZAl" id="1_cCL2G28V1" role="3clF45" />
@@ -601,13 +601,13 @@
                 <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
               </node>
             </node>
-            <node concept="2YIFZM" id="1_cCL2G2_vJ" role="33vP2m">
+            <node concept="NRdvd" id="5EwdfGVh3k3" role="33vP2m">
               <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
               <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
-              <node concept="37vLTw" id="28vOu_uqH5q" role="37wK5m">
+              <node concept="37vLTw" id="5EwdfGVh3k4" role="37wK5m">
                 <ref role="3cqZAo" node="1_cCL2G2g7s" resolve="model" />
               </node>
-              <node concept="Xl_RD" id="28vOu_uqHi7" role="37wK5m">
+              <node concept="Xl_RD" id="5EwdfGVh3k5" role="37wK5m">
                 <property role="Xl_RC" value="signumComputerProxy" />
               </node>
             </node>
@@ -750,7 +750,7 @@
                 <ref role="3cqZAo" node="1_cCL2G2_vI" resolve="results" />
               </node>
               <node concept="Xl_RD" id="1_cCL2G28VJ" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - (0,0) - (0,1)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - (#col: 0, #row: 0) - (#col: 0, #row: 1)" />
               </node>
             </node>
           </node>
@@ -779,7 +779,7 @@
                 <ref role="3cqZAo" node="1_cCL2G2_vI" resolve="results" />
               </node>
               <node concept="Xl_RD" id="1_cCL2G28VU" role="37wK5m">
-                <property role="Xl_RC" value="DecTab (id: 1) - (0,0) - (1,0)" />
+                <property role="Xl_RC" value="DecTab (id: 1) - (#col: 0, #row: 0) - (#col: 1, #row: 0)" />
               </node>
             </node>
           </node>

@@ -2,7 +2,7 @@
 <model ref="r:4ac377c2-0a54-4908-ae24-f86f1bad7e73(com.mbeddr.tutorial.documentation.ug.fundamentals)">
   <persistence version="9" />
   <languages>
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
@@ -1404,7 +1404,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="6VFmq3HJYvZ" role="19SJt6">
-            <property role="19SUeA" value=". The reverse is also supported. The context menu on a program element supports Find Useages. This can also be activated via " />
+            <property role="19SUeA" value=". The reverse is also supported. The context menu on a program element supports Find Usages. This can also be activated via " />
           </node>
           <node concept="2OoWia" id="yaVrOuhKAr" role="19SJt6">
             <node concept="19SGf9" id="yaVrOuhKAu" role="$DsGW">
@@ -2191,7 +2191,7 @@
         <node concept="1_0LV8" id="61X7WOB4R08" role="1_0VJ0">
           <node concept="19SGf9" id="61X7WOB4R09" role="1_0LWR">
             <node concept="19SUe$" id="61X7WOB4R0a" role="19SJt6">
-              <property role="19SUeA" value="The Changes view keeps track of which files (i.e., models) have changed on you system compared to the latest in the version control system. " />
+              <property role="19SUeA" value="The Changes view keeps track of which files (i.e., models) have changed on your system compared to the latest in the version control system. " />
             </node>
             <node concept="2Sbdz4" id="61X7WOB6Zvy" role="19SJt6">
               <ref role="2SbdyP" node="61X7WOB6ZuR" resolve="changesView" />

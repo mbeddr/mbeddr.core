@@ -3,15 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="2" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -103,10 +99,11 @@
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -204,19 +201,19 @@
                           <node concept="3clFbF" id="6URxCt9p7m_" role="3cqZAp">
                             <node concept="2OqwBi" id="6URxCt9p7ob" role="3clFbG">
                               <node concept="1PxgMI" id="6URxCt9p7nP" role="2Oq$k0">
-                                <ref role="1PxNhF" to="yq40:4VhroexOKM1" resolve="ArrayType" />
-                                <node concept="2OqwBi" id="6URxCt9p7nn" role="1PxMeX">
+                                <ref role="1m5ApE" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+                                <node concept="2OqwBi" id="6URxCt9p7nn" role="1m5AlR">
                                   <node concept="2OqwBi" id="6URxCt9p7mV" role="2Oq$k0">
                                     <node concept="30H73N" id="6URxCt9p7mA" role="2Oq$k0" />
                                     <node concept="3TrEf2" id="6URxCt9p7n1" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="f8ij:zSFqGmbj6s" />
+                                      <ref role="3Tt5mk" to="f8ij:zSFqGmbj6s" resolve="array" />
                                     </node>
                                   </node>
                                   <node concept="3JvlWi" id="6URxCt9p7nv" role="2OqNvi" />
                                 </node>
                               </node>
                               <node concept="3TrEf2" id="R7C7bPcbaJ" role="2OqNvi">
-                                <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" />
+                                <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
                               </node>
                             </node>
                           </node>
@@ -233,7 +230,7 @@
                             <node concept="3clFbF" id="6URxCt9p7mt" role="3cqZAp">
                               <node concept="2OqwBi" id="6URxCt9p7mu" role="3clFbG">
                                 <node concept="3TrEf2" id="6URxCt9p7mv" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="f8ij:zSFqGmbj6s" />
+                                  <ref role="3Tt5mk" to="f8ij:zSFqGmbj6s" resolve="array" />
                                 </node>
                                 <node concept="30H73N" id="6URxCt9p7mw" role="2Oq$k0" />
                               </node>
@@ -261,11 +258,11 @@
                             <node concept="2OqwBi" id="6URxCt9p7oP" role="2Oq$k0">
                               <node concept="30H73N" id="6URxCt9p7ow" role="2Oq$k0" />
                               <node concept="3TrEf2" id="6URxCt9p7oV" role="2OqNvi">
-                                <ref role="3Tt5mk" to="f8ij:zSFqGmbj6G" />
+                                <ref role="3Tt5mk" to="f8ij:zSFqGmbj6G" resolve="body" />
                               </node>
                             </node>
                             <node concept="3Tsc0h" id="6URxCt9p7pn" role="2OqNvi">
-                              <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+                              <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
                             </node>
                           </node>
                         </node>
@@ -283,7 +280,7 @@
                         <node concept="3clFbF" id="6URxCt9p7mj" role="3cqZAp">
                           <node concept="2OqwBi" id="6URxCt9p7mk" role="3clFbG">
                             <node concept="3TrEf2" id="6URxCt9p7ml" role="2OqNvi">
-                              <ref role="3Tt5mk" to="f8ij:zSFqGmbj6t" />
+                              <ref role="3Tt5mk" to="f8ij:zSFqGmbj6t" resolve="size" />
                             </node>
                             <node concept="30H73N" id="6URxCt9p7mm" role="2Oq$k0" />
                           </node>

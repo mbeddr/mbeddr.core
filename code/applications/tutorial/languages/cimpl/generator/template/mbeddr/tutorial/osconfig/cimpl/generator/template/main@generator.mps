@@ -3,12 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="2" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -175,7 +174,7 @@
                   <node concept="3clFbF" id="7HJwNEvpE60" role="3cqZAp">
                     <node concept="2OqwBi" id="7HJwNEvpE5V" role="3clFbG">
                       <node concept="3TrEf2" id="7HJwNEvpE5Y" role="2OqNvi">
-                        <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+                        <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
                       </node>
                       <node concept="30H73N" id="7HJwNEvpE5Z" role="2Oq$k0" />
                     </node>
@@ -253,7 +252,7 @@
                               <node concept="2OqwBi" id="7HJwNEvpMZ6" role="2Oq$k0">
                                 <node concept="30H73N" id="7HJwNEvpMOB" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="7HJwNEvpP$m" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="7wyt:7HJwNEvkKas" />
+                                  <ref role="3Tt5mk" to="7wyt:7HJwNEvkKas" resolve="resource" />
                                 </node>
                               </node>
                               <node concept="3TrcHB" id="7HJwNEvpTVQ" role="2OqNvi">
@@ -303,11 +302,11 @@
                           <node concept="2OqwBi" id="4Kv0gUyBymi" role="2Oq$k0">
                             <node concept="30H73N" id="4Kv0gUyBylX" role="2Oq$k0" />
                             <node concept="3TrEf2" id="4Kv0gUyBymo" role="2OqNvi">
-                              <ref role="3Tt5mk" to="7wyt:4Kv0gUyBmVA" />
+                              <ref role="3Tt5mk" to="7wyt:4Kv0gUyBmVA" resolve="body" />
                             </node>
                           </node>
                           <node concept="3Tsc0h" id="4Kv0gUyBymO" role="2OqNvi">
-                            <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+                            <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
                           </node>
                         </node>
                       </node>
@@ -330,7 +329,7 @@
                       <node concept="2OqwBi" id="6KWe126Hqtb" role="2Oq$k0">
                         <node concept="30H73N" id="4Kv0gUyBylR" role="2Oq$k0" />
                         <node concept="3TrEf2" id="6KWe126Hs7$" role="2OqNvi">
-                          <ref role="3Tt5mk" to="7wyt:4Kv0gUyBmVp" />
+                          <ref role="3Tt5mk" to="7wyt:4Kv0gUyBmVp" resolve="task" />
                         </node>
                       </node>
                     </node>
@@ -369,11 +368,11 @@
                       <node concept="2OqwBi" id="7HJwNEvpXur" role="2Oq$k0">
                         <node concept="30H73N" id="7HJwNEvpXi9" role="2Oq$k0" />
                         <node concept="3TrEf2" id="7HJwNEvq097" role="2OqNvi">
-                          <ref role="3Tt5mk" to="7wyt:7HJwNEvkK97" />
+                          <ref role="3Tt5mk" to="7wyt:7HJwNEvkK97" resolve="body" />
                         </node>
                       </node>
                       <node concept="3Tsc0h" id="7HJwNEvq5gv" role="2OqNvi">
-                        <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+                        <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
                       </node>
                     </node>
                   </node>

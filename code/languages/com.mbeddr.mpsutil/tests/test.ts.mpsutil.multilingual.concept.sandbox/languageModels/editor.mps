@@ -2,13 +2,13 @@
 <model ref="c0826d77-5349-4d44-b588-5750e22d096b/r:801a3843-ea41-45df-b82a-0a7391e4d717(test.ts.mpsutil.multilingual.concept.sandbox/test.ts.mpsutil.multilingual.concept.sandbox.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="pq5q" ref="c0826d77-5349-4d44-b588-5750e22d096b/r:b65003ed-01fe-4ee7-b5fd-3b325db25b96(test.ts.mpsutil.multilingual.concept.sandbox/test.ts.mpsutil.multilingual.concept.sandbox.structure)" />
     <import index="phyx" ref="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d/r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept/com.mbeddr.mpsutil.multilingual.concept.structure)" />
-    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -58,7 +58,7 @@
   <node concept="24kQdi" id="4gGXGcMeEPn">
     <ref role="1XX52x" to="pq5q:4gGXGcMeEKo" resolve="TestMultilingualNamedImplementer" />
     <node concept="3F1sOY" id="4gGXGcMeEQc" role="2wV5jI">
-      <ref role="1NtTu8" to="phyx:2bng37sXCCu" />
+      <ref role="1NtTu8" to="phyx:2bng37sXCCu" resolve="multiName" />
     </node>
   </node>
   <node concept="24kQdi" id="4gGXGcMeETd">
@@ -72,7 +72,7 @@
         <property role="3F0ifm" value="ref01" />
       </node>
       <node concept="1iCGBv" id="4gGXGcMeETw" role="3EZMnx">
-        <ref role="1NtTu8" to="pq5q:4gGXGcMeESe" />
+        <ref role="1NtTu8" to="pq5q:4gGXGcMeESe" resolve="ref01" />
         <node concept="1sVBvm" id="4gGXGcMeETz" role="1sWHZn">
           <node concept="3F0A7n" id="4gGXGcMeET_" role="2wV5jI">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -83,7 +83,7 @@
         <property role="3F0ifm" value="ref1" />
       </node>
       <node concept="1iCGBv" id="4gGXGcMeETB" role="3EZMnx">
-        <ref role="1NtTu8" to="pq5q:4gGXGcMeESq" />
+        <ref role="1NtTu8" to="pq5q:4gGXGcMeESq" resolve="ref1" />
         <node concept="1sVBvm" id="4gGXGcMeETE" role="1sWHZn">
           <node concept="3F0A7n" id="4gGXGcMeETG" role="2wV5jI">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -132,7 +132,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="4gGXGcMeEV7" role="3EZMnx">
-          <ref role="1NtTu8" to="pq5q:4gGXGcMeERb" />
+          <ref role="1NtTu8" to="pq5q:4gGXGcMeERb" resolve="singleChild" />
           <node concept="lj46D" id="4gGXGcMeEV8" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -158,7 +158,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="4gGXGcMeEVg" role="3EZMnx">
-          <ref role="1NtTu8" to="pq5q:4gGXGcMeERe" />
+          <ref role="1NtTu8" to="pq5q:4gGXGcMeERe" resolve="multiChild" />
           <node concept="l2Vlx" id="4gGXGcMeEVh" role="2czzBx" />
           <node concept="pj6Ft" id="4gGXGcMeEVi" role="3F10Kt">
             <property role="VOm3f" value="true" />

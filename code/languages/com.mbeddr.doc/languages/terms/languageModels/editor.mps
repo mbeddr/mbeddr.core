@@ -2,7 +2,7 @@
 <model ref="r:7f15aae7-ba57-41a4-bdf8-aea0fafa9c34(com.mbeddr.doc.terms.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -130,7 +130,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="7rXn3flJGUp" role="3EZMnx">
-        <ref role="1NtTu8" to="8zu2:7rXn3flJtYD" />
+        <ref role="1NtTu8" to="8zu2:7rXn3flJtYD" resolve="term" />
         <node concept="1sVBvm" id="7rXn3flJGUq" role="1sWHZn">
           <node concept="3F0A7n" id="7rXn3flJGUs" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -217,7 +217,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7rXn3flJFZv" role="3EZMnx">
-        <ref role="1NtTu8" to="8zu2:7rXn3flJFxk" />
+        <ref role="1NtTu8" to="8zu2:7rXn3flJFxk" resolve="text" />
       </node>
       <node concept="gc7cB" id="7rXn3flJFZh" role="3EZMnx">
         <node concept="3VJUX4" id="7rXn3flJFZi" role="3YsKMw">
@@ -264,7 +264,7 @@
           <property role="3F0ifm" value="Extract Glossary Terms into: " />
         </node>
         <node concept="1iCGBv" id="3EwB7OlCGlQ" role="3EZMnx">
-          <ref role="1NtTu8" to="8zu2:3EwB7OlCGlI" />
+          <ref role="1NtTu8" to="8zu2:3EwB7OlCGlI" resolve="doc" />
           <node concept="1sVBvm" id="3EwB7OlCGlR" role="1sWHZn">
             <node concept="3F0A7n" id="3EwB7OlCGlT" role="2wV5jI">
               <property role="1Intyy" value="true" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="5d5a5c9f-53d9-4df3-a46b-f2bb51d3ca68" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="5d5a5c9f-53d9-4df3-a46b-f2bb51d3ca68" paused="true" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
   <name>Run mbeddr Tests on Windows</name>
   <description />
   <settings ref="RequiresMpsExtions">
@@ -58,19 +58,19 @@
       </build-trigger>
     </build-triggers>
     <artifact-dependencies>
-      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="true">
+      <dependency id="ARTIFACT_DEPENDENCY_31" sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%mps.artifact-rule%" />
       </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_GenerateBuildScripts" cleanDestination="true">
+      <dependency id="ARTIFACT_DEPENDENCY_32" sourceBuildTypeId="Mbeddr2_Bootstrap_GenerateBuildScripts" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%buildscripts.artifact-rule%" />
       </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Build_BuildLanguages" cleanDestination="true">
+      <dependency id="ARTIFACT_DEPENDENCY_33" sourceBuildTypeId="Mbeddr2_Build_BuildLanguages" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
       </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Build_BuildSlAll" cleanDestination="true">
+      <dependency id="ARTIFACT_DEPENDENCY_34" sourceBuildTypeId="Mbeddr2_Build_BuildSlAll" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
       </dependency>

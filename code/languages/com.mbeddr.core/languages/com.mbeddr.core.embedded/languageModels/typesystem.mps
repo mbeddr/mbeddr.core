@@ -160,6 +160,10 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -178,10 +182,7 @@
         <reference id="1144195362400" name="conceptOfParent" index="1BmUXE" />
         <reference id="1144195396777" name="linkInParent" index="1Bn3mz" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -716,8 +717,8 @@
           <node concept="3fqX7Q" id="7pg8HYlphP1" role="3uHU7w">
             <node concept="2OqwBi" id="7pg8HYlphP3" role="3fr31v">
               <node concept="1PxgMI" id="7pg8HYlphP4" role="2Oq$k0">
-                <ref role="1PxNhF" to="nbyu:5W7baq$5k0I" resolve="Register16" />
-                <node concept="2OqwBi" id="7pg8HYlphP5" role="1PxMeX">
+                <ref role="1m5ApE" to="nbyu:5W7baq$5k0I" resolve="Register16" />
+                <node concept="2OqwBi" id="7pg8HYlphP5" role="1m5AlR">
                   <node concept="1YBJjd" id="7pg8HYlphP6" role="2Oq$k0">
                     <ref role="1YBMHb" node="5W7baq$60mg" resolve="regExpr" />
                   </node>

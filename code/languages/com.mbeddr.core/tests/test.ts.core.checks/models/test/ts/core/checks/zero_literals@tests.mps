@@ -4,10 +4,10 @@
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="2" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
   </languages>
   <imports />
   <registry>
@@ -64,7 +64,6 @@
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
-      <concept id="7065352537849648740" name="com.mbeddr.core.expressions.structure.UnsignedIntegerLiteral" flags="ng" index="1_oZFn" />
       <concept id="1054289341113496566" name="com.mbeddr.core.expressions.structure.BinaryNumberLiteral" flags="ng" index="3HbmlB" />
       <concept id="1054289341113450444" name="com.mbeddr.core.expressions.structure.HexNumberLiteral" flags="ng" index="3Hbq_t" />
       <concept id="938100142480245061" name="com.mbeddr.core.expressions.structure.OctalNumberLiteral" flags="ng" index="3LgSLu" />
@@ -577,27 +576,27 @@
             </node>
             <node concept="3XISUE" id="1ZXA4k7mi44" role="3XIRFZ" />
             <node concept="1_9egQ" id="1ZXA4k7mia4" role="3XIRFZ">
-              <node concept="1_oZFn" id="1ZXA4k7k6Cs" role="1_9egR">
+              <node concept="3TlMh9" id="6nsZJ3Gzu29" role="1_9egR">
                 <property role="2hmy$m" value="0" />
               </node>
             </node>
             <node concept="1_9egQ" id="1ZXA4k7n4KC" role="3XIRFZ">
-              <node concept="1_oZFn" id="1ZXA4k7n4KD" role="1_9egR">
+              <node concept="3TlMh9" id="6nsZJ3Gzu2G" role="1_9egR">
                 <property role="2hmy$m" value="00" />
               </node>
             </node>
             <node concept="1_9egQ" id="1ZXA4k7n4NG" role="3XIRFZ">
-              <node concept="1_oZFn" id="1ZXA4k7n4NH" role="1_9egR">
+              <node concept="3TlMh9" id="6nsZJ3Gzu3f" role="1_9egR">
                 <property role="2hmy$m" value="1" />
               </node>
             </node>
             <node concept="1_9egQ" id="1ZXA4k7n4QM" role="3XIRFZ">
-              <node concept="1_oZFn" id="1ZXA4k7n4QN" role="1_9egR">
+              <node concept="3TlMh9" id="6nsZJ3Gzu3N" role="1_9egR">
                 <property role="2hmy$m" value="11" />
               </node>
             </node>
             <node concept="1_9egQ" id="1ZXA4k7n4TU" role="3XIRFZ">
-              <node concept="1_oZFn" id="1ZXA4k7n4TV" role="1_9egR">
+              <node concept="3TlMh9" id="6nsZJ3Gzu4m" role="1_9egR">
                 <property role="2hmy$m" value="100000" />
               </node>
             </node>

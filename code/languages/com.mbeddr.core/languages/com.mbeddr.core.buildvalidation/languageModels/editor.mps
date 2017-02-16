@@ -2,7 +2,7 @@
 <model ref="r:2d56cc9b-0538-4f2b-95cb-4eb75d12fe79(com.mbeddr.core.buildvalidation.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -93,7 +93,7 @@
       <node concept="l2Vlx" id="7c_RIoAZjxK" role="2iSdaV" />
       <node concept="3F0ifn" id="7c_RIoAZjxG" role="3EZMnx">
         <property role="3F0ifm" value="Build Validation" />
-        <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+        <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="EditorKeyWord" />
       </node>
       <node concept="3F0A7n" id="7c_RIoAZjxW" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -105,7 +105,7 @@
       </node>
       <node concept="3F0ifn" id="7c_RIoAZjyf" role="3EZMnx">
         <property role="3F0ifm" value="Rules:" />
-        <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+        <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="EditorKeyWord" />
         <node concept="pVoyu" id="7c_RIoAZjyk" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -114,7 +114,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="7c_RIoAZjyt" role="3EZMnx">
-        <ref role="1NtTu8" to="cepq:7uEcx53DQqU" />
+        <ref role="1NtTu8" to="cepq:7uEcx53DQqU" resolve="rules" />
         <node concept="2iRkQZ" id="7c_RIoBah_u" role="2czzBx" />
         <node concept="pVoyu" id="7c_RIoAZnOT" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -130,7 +130,7 @@
       </node>
       <node concept="3F0ifn" id="7c_RIoAZjz7" role="3EZMnx">
         <property role="3F0ifm" value="Targets:" />
-        <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+        <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="EditorKeyWord" />
         <node concept="pVoyu" id="7c_RIoAZjzh" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -139,7 +139,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="7c_RIoAZjz_" role="3EZMnx">
-        <ref role="1NtTu8" to="cepq:7uEcx53DQqS" />
+        <ref role="1NtTu8" to="cepq:7uEcx53DQqS" resolve="targets" />
         <node concept="2iRkQZ" id="7c_RIoBah_$" role="2czzBx" />
         <node concept="pVoyu" id="7c_RIoAZnPv" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -157,7 +157,7 @@
         <property role="3F0ifm" value="Check build solution contains all modules in path" />
       </node>
       <node concept="3F1sOY" id="7c_RIoBadK2" role="3EZMnx">
-        <ref role="1NtTu8" to="cepq:7c_RIoBadHS" />
+        <ref role="1NtTu8" to="cepq:7c_RIoBadHS" resolve="pathpicker" />
         <node concept="pVoyu" id="7c_RIoBadKd" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -171,10 +171,10 @@
       <node concept="l2Vlx" id="7c_RIoAZCbI" role="2iSdaV" />
       <node concept="3F0ifn" id="7c_RIoAZCbQ" role="3EZMnx">
         <property role="3F0ifm" value="Ignored modules:" />
-        <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+        <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="EditorKeyWord" />
       </node>
       <node concept="3F2HdR" id="7c_RIoB6La2" role="3EZMnx">
-        <ref role="1NtTu8" to="cepq:7uEcx53EeQv" />
+        <ref role="1NtTu8" to="cepq:7uEcx53EeQv" resolve="ignoredModules" />
         <node concept="2iRkQZ" id="7c_RIoB6Laa" role="2czzBx" />
         <node concept="pVoyu" id="7c_RIoB6Lae" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -202,7 +202,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="7c_RIoAZEs_" role="3EZMnx">
-        <ref role="1NtTu8" to="cepq:7uEcx53DaBk" />
+        <ref role="1NtTu8" to="cepq:7uEcx53DaBk" resolve="prj" />
         <node concept="1sVBvm" id="7c_RIoAZEsA" role="1sWHZn">
           <node concept="1HlG4h" id="7c_RIoAZEsG" role="2wV5jI">
             <node concept="1HfYo3" id="7c_RIoAZEsI" role="1HlULh">

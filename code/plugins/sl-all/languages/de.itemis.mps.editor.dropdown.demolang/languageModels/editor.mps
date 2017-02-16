@@ -4,7 +4,7 @@
   <languages>
     <use id="cd6ee994-5ea3-4b72-9d40-a3e80432a522" name="de.itemis.mps.editor.dropdown" version="0" />
     <use id="8f20f615-2fa8-4116-9731-37208a2ac2b8" name="de.slisson.mps.editor.tabs" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -60,7 +60,7 @@
         </node>
         <node concept="LrGm3" id="2$QdVR13E8L" role="3EZMnx">
           <node concept="3F1sOY" id="2$QdVR13Mdk" role="LrInP">
-            <ref role="1NtTu8" to="o1o8:2$QdVR13Ebx" />
+            <ref role="1NtTu8" to="o1o8:2$QdVR13Ebx" resolve="expression" />
           </node>
         </node>
         <node concept="l2Vlx" id="2$QdVR13E8N" role="2iSdaV" />

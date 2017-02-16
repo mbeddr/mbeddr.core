@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="3ac43a7a-efaa-4b0e-9304-231f571f3da6" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="3ac43a7a-efaa-4b0e-9304-231f571f3da6" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
   <name>BuildDMG</name>
   <description />
   <settings ref="RequiresMpsExtions">
@@ -28,21 +28,21 @@
       </vcs-entry-ref>
     </vcs-settings>
     <requirements>
-      <equals name="teamcity.agent.jvm.os.name" value="Mac OS X" />
+      <equals id="RQ_1" name="teamcity.agent.jvm.os.name" value="Mac OS X" />
     </requirements>
     <build-triggers />
     <artifact-dependencies>
-      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre" cleanDestination="false">
-        <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="master" />
+      <dependency id="ARTIFACT_DEPENDENCY_5" sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre" cleanDestination="false">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="jdk.tar.gz=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
       </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageTutorial" cleanDestination="false">
-        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
-        <artifact sourcePath="com.mbeddr.tutorial.zip=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
-      </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
+      <dependency id="ARTIFACT_DEPENDENCY_6" sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageMpsWithMbeddr" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="mbeddr-macos.zip=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
+      </dependency>
+      <dependency id="ARTIFACT_DEPENDENCY_7" sourceBuildTypeId="Mbeddr2_Mbeddr_Utilities_Cbmc_Mac" cleanDestination="false">
+        <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="&lt;default&gt;" />
+        <artifact sourcePath="cbmc-mac.zip!**=&gt;%teamcity.build.checkoutDir%/mbeddr.core/buildUtil" />
       </dependency>
     </artifact-dependencies>
     <dependencies>
@@ -53,10 +53,9 @@
           <option name="take-successful-builds-only" value="true" />
         </options>
       </depend-on>
-      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageTutorial">
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_DownloadJre">
         <options>
-          <option name="run-build-if-dependency-failed" value="CANCEL" />
-          <option name="run-build-if-dependency-failed-to-start" value="CANCEL" />
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
           <option name="take-started-build-with-same-revisions" value="true" />
           <option name="take-successful-builds-only" value="true" />
         </options>

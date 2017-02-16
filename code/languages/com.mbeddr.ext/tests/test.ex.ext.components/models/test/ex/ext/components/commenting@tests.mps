@@ -9,9 +9,6 @@
   <imports />
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
-      <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
-        <child id="7254843406768833939" name="expr" index="1_9egR" />
-      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
@@ -41,6 +38,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -80,6 +78,7 @@
         <child id="6275792049641586525" name="body" index="c0Qz3" />
       </concept>
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
       <concept id="7755897872837031762" name="com.mbeddr.core.unittest.structure.StructuredBinOpAssertStatement" flags="ng" index="2N2GHn">
@@ -122,9 +121,6 @@
       <concept id="5308710777891512019" name="com.mbeddr.ext.components.structure.Field" flags="ng" index="EbCE0">
         <property id="785275130114861516" name="initField" index="3R_39t" />
         <child id="5308710777891512022" name="init" index="EbCE5" />
-      </concept>
-      <concept id="5308710777891565561" name="com.mbeddr.ext.components.structure.FieldRef" flags="ng" index="EbZIE">
-        <reference id="5308710777891565562" name="field" index="EbZID" />
       </concept>
       <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
       <concept id="4491876417845649014" name="com.mbeddr.ext.components.structure.ComponentInstance" flags="ng" index="2EWCuV">
@@ -170,14 +166,9 @@
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
-      <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
-      </concept>
-      <concept id="8860443239512128052" name="com.mbeddr.core.expressions.structure.BinaryExpression" flags="ng" index="3TlMgq">
-        <child id="8860443239512128064" name="left" index="3TlMhI" />
-        <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
@@ -196,6 +187,7 @@
       <property role="3r8Kxs" value="make" />
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
+      <property role="3I8uaA" value="" />
     </node>
     <node concept="2Q9Fgs" id="AakJEmcUqa" role="2Q9xDr">
       <node concept="2Q9FjX" id="AakJEmcUqb" role="2Q9FjI" />
@@ -282,34 +274,6 @@
               <property role="2hmy$m" value="0" />
             </node>
           </node>
-          <node concept="1X3_iC" id="3wTI$uns0hy" role="lGtFl">
-            <property role="3V$3am" value="statements" />
-            <property role="3V$3ak" value="a9d69647-0840-491e-bf39-2eb0805d2011/4185783222026475861/4185783222026475862" />
-            <node concept="1_9egQ" id="3wTI$uns0hu" role="8Wnug">
-              <node concept="3pqW6w" id="3wTI$uns0hv" role="1_9egR">
-                <node concept="3TlMh9" id="3wTI$uns0hw" role="3TlMhJ">
-                  <property role="2hmy$m" value="1" />
-                </node>
-                <node concept="EbZIE" id="3wTI$uns0hx" role="3TlMhI">
-                  <ref role="EbZID" to=":^" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1X3_iC" id="3wTI$uns0hB" role="lGtFl">
-            <property role="3V$3am" value="statements" />
-            <property role="3V$3ak" value="a9d69647-0840-491e-bf39-2eb0805d2011/4185783222026475861/4185783222026475862" />
-            <node concept="1_9egQ" id="3wTI$uns0hz" role="8Wnug">
-              <node concept="3pqW6w" id="3wTI$uns0h$" role="1_9egR">
-                <node concept="EbZIE" id="3wTI$uns0h_" role="3TlMhJ">
-                  <ref role="EbZID" to=":^" />
-                </node>
-                <node concept="3ZVu4v" id="3wTI$uns0hA" role="3TlMhI">
-                  <ref role="3ZVs_2" node="AakJEmcOT_" resolve="res" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="2BFjQ_" id="AakJEmcOQY" role="3XIRFZ">
             <node concept="3ZVu4v" id="AakJEmcOVj" role="2BFjQA">
               <ref role="3ZVs_2" node="AakJEmcOT_" resolve="res" />
@@ -365,6 +329,8 @@
     </node>
     <node concept="lIfQi" id="4Ru$s7zAIc$" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
+      <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAIc_" role="lIfQt">
         <ref role="3cM6IK" node="AakJEmcOzm" resolve="callComponent" />
       </node>

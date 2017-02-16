@@ -4,6 +4,7 @@
   <languages>
     <use id="e462c189-8b5a-4c70-b928-a493585c0765" name="com.mbeddr.analyses.cbmc.statemachines.experimental" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
@@ -90,6 +91,7 @@
       </concept>
       <concept id="8985851583396455243" name="com.mbeddr.analyses.cbmc.structure.HarnessModule" flags="ng" index="2c3wGG" />
       <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
+        <property id="348741627183644680" name="hasLocalArchitectureSettings" index="22uFEx" />
         <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
         <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
         <property id="8327535879610783118" name="hasLocalTimeout" index="2l50Lc" />
@@ -101,21 +103,7 @@
         <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
         <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
-      </concept>
-      <concept id="7573444803550855448" name="com.mbeddr.analyses.cbmc.structure.AfterPThenQ" flags="ng" index="wHKrO" />
-      <concept id="7573444803550855446" name="com.mbeddr.analyses.cbmc.structure.VerificationConditionBase" flags="ng" index="wHKrU">
-        <property id="8330520303445148918" name="disabled" index="1aBf3y" />
-      </concept>
-      <concept id="7392194941658581812" name="com.mbeddr.analyses.cbmc.structure.BinaryVerificationCondition" flags="ng" index="xqp4m">
-        <child id="7392194941658581814" name="q" index="xqp4k" />
-        <child id="7392194941658581813" name="p" index="xqp4n" />
-      </concept>
-      <concept id="2609337213949315030" name="com.mbeddr.analyses.cbmc.structure.AfterQUntilRExistsP" flags="ng" index="GBzQ9" />
-      <concept id="2609337213949315048" name="com.mbeddr.analyses.cbmc.structure.BeforePExistsQ" flags="ng" index="GBzQR" />
-      <concept id="6876648630975719717" name="com.mbeddr.analyses.cbmc.structure.TernaryVerificationCondition" flags="ng" index="2L5iDr">
-        <child id="6876648630975719722" name="r" index="2L5iDk" />
-        <child id="6876648630975719720" name="q" index="2L5iDm" />
-        <child id="6876648630975719718" name="p" index="2L5iDo" />
+        <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
       </concept>
       <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
@@ -275,6 +263,23 @@
       <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
     </language>
+    <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
+      <concept id="7573444803550855448" name="com.mbeddr.analyses.base.verification_conditions.structure.AfterPThenQ" flags="ng" index="wHKrO" />
+      <concept id="7573444803550855446" name="com.mbeddr.analyses.base.verification_conditions.structure.VerificationConditionBase" flags="ng" index="wHKrU">
+        <property id="8330520303445148918" name="disabled" index="1aBf3y" />
+      </concept>
+      <concept id="7392194941658581812" name="com.mbeddr.analyses.base.verification_conditions.structure.BinaryVerificationCondition" flags="ng" index="xqp4m">
+        <child id="7392194941658581814" name="q" index="xqp4k" />
+        <child id="7392194941658581813" name="p" index="xqp4n" />
+      </concept>
+      <concept id="2609337213949315030" name="com.mbeddr.analyses.base.verification_conditions.structure.AfterQUntilRExistsP" flags="ng" index="GBzQ9" />
+      <concept id="2609337213949315048" name="com.mbeddr.analyses.base.verification_conditions.structure.BeforePExistsQ" flags="ng" index="GBzQR" />
+      <concept id="6876648630975719717" name="com.mbeddr.analyses.base.verification_conditions.structure.TernaryVerificationCondition" flags="ng" index="2L5iDr">
+        <child id="6876648630975719722" name="r" index="2L5iDk" />
+        <child id="6876648630975719720" name="q" index="2L5iDm" />
+        <child id="6876648630975719718" name="p" index="2L5iDo" />
+      </concept>
+    </language>
   </registry>
   <node concept="N3F5e" id="2MkQqmZPNnR">
     <property role="TrG5h" value="Statemachines" />
@@ -327,6 +332,7 @@
     </node>
     <node concept="1LFe83" id="2MkQqmZQqQH" role="N3F5h">
       <property role="TrG5h" value="Counter" />
+      <property role="2OOxQR" value="true" />
       <ref role="1LFebw" node="2MkQqmZQr0G" resolve="Counting" />
       <node concept="2cfOFI" id="2MkQqmZQqVF" role="1_Iowf">
         <property role="TrG5h" value="step" />
@@ -927,25 +933,39 @@
     <node concept="3GEVxB" id="1Fm2OOqIZ_D" role="3W6d8T">
       <ref role="3GEb4d" node="2MkQqmZPNnR" resolve="Statemachines" />
     </node>
-    <node concept="1W1s6O" id="1Fm2OOqIZ_J" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="-1" />
+    <node concept="1W1s6O" id="1uVxpNh9dyJ" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
       <property role="2l50Ka" value="none" />
       <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="2MkQqmZPNq$" resolve="main" />
       <ref role="1W1s6P" node="2MkQqmZQqQH" resolve="Counter" />
-      <ref role="3V$Cn$" node="2MkQqmZPNq$" resolve="main" />
     </node>
-    <node concept="1W1s6O" id="1Fm2OOqKwgg" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="-1" />
+    <node concept="1W1s6O" id="1uVxpNh9dz7" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
       <property role="2l50Ka" value="none" />
       <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
-      <ref role="1W1s6P" node="7ra7u7NZ_wJ" resolve="DDD" />
       <ref role="3V$Cn$" node="2MkQqmZPNq$" resolve="main" />
+      <ref role="1W1s6P" node="7ra7u7NZ_wJ" resolve="DDD" />
     </node>
   </node>
 </model>

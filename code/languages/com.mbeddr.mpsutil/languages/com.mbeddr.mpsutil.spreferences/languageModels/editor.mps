@@ -4,7 +4,7 @@
   <languages>
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -12,8 +12,8 @@
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="60h8" ref="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1/r:857a6546-37fb-474e-832b-f04fdfe124ab(com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.behavior)" />
     <import index="tmud" ref="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1/r:8d0fa52a-32d1-4359-892e-669a9b66600c(com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.structure)" implicit="true" />
-    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpco" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core/jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -540,7 +540,7 @@
             <property role="3F0ifm" value="root concept:" />
           </node>
           <node concept="1iCGBv" id="5FuuJYqk6Qp" role="3EZMnx">
-            <ref role="1NtTu8" to="tmud:5FuuJYqk6Ql" />
+            <ref role="1NtTu8" to="tmud:5FuuJYqk6Ql" resolve="rootConcept" />
             <node concept="1sVBvm" id="5FuuJYqk6Qq" role="1sWHZn">
               <node concept="3F0A7n" id="5FuuJYqk6QC" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -558,7 +558,7 @@
             <property role="3F0ifm" value="initialize/update:" />
           </node>
           <node concept="3F1sOY" id="5f$4wDDtIOF" role="3EZMnx">
-            <ref role="1NtTu8" to="tmud:5f$4wDDtuUo" />
+            <ref role="1NtTu8" to="tmud:5f$4wDDtuUo" resolve="initFunction" />
           </node>
           <node concept="2iRfu4" id="5f$4wDDtIIP" role="2iSdaV" />
         </node>
@@ -570,7 +570,7 @@
             <property role="3F0ifm" value="enabled:" />
           </node>
           <node concept="3F1sOY" id="1oM0ei25KCu" role="3EZMnx">
-            <ref role="1NtTu8" to="tmud:1oM0ei25I5Y" />
+            <ref role="1NtTu8" to="tmud:1oM0ei25I5Y" resolve="enabledFunction" />
           </node>
           <node concept="2iRfu4" id="1oM0ei25JT6" role="2iSdaV" />
         </node>
@@ -582,7 +582,7 @@
             <property role="3F0ifm" value="module:" />
           </node>
           <node concept="3F1sOY" id="1m7X3OEB6Pa" role="3EZMnx">
-            <ref role="1NtTu8" to="tmud:1m7X3OEB6Lh" />
+            <ref role="1NtTu8" to="tmud:1m7X3OEB6Lh" resolve="moduleSettings" />
           </node>
           <node concept="2iRfu4" id="1m7X3OEB1Zr" role="2iSdaV" />
         </node>
@@ -622,7 +622,7 @@
             <property role="VOm3f" value="true" />
           </node>
           <node concept="3F2HdR" id="1m7X3OEB6Q7" role="3EZMnx">
-            <ref role="1NtTu8" to="tmud:1m7X3OEBM0x" />
+            <ref role="1NtTu8" to="tmud:1m7X3OEBM0x" resolve="usedLanguages" />
             <node concept="VPXOz" id="5f$4wDDrkCX" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -641,7 +641,7 @@
             <property role="VOm3f" value="true" />
           </node>
           <node concept="3F2HdR" id="5f$4wDDrhpx" role="3EZMnx">
-            <ref role="1NtTu8" to="tmud:1m7X3OEBM1s" />
+            <ref role="1NtTu8" to="tmud:1m7X3OEBM1s" resolve="importedModels" />
             <node concept="VPXOz" id="5f$4wDDrkCG" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -660,7 +660,7 @@
             <property role="VOm3f" value="true" />
           </node>
           <node concept="3F2HdR" id="5f$4wDDrhqA" role="3EZMnx">
-            <ref role="1NtTu8" to="tmud:5f$4wDDr7VZ" />
+            <ref role="1NtTu8" to="tmud:5f$4wDDr7VZ" resolve="devkits" />
             <node concept="VPXOz" id="5f$4wDDrkCr" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -701,7 +701,7 @@
         <node concept="Vb9p2" id="6yXlhvg7_7e" role="3F10Kt" />
       </node>
       <node concept="1iCGBv" id="4RGMQ_4mI_q" role="3EZMnx">
-        <ref role="1NtTu8" to="tmud:4RGMQ_4mHWT" />
+        <ref role="1NtTu8" to="tmud:4RGMQ_4mHWT" resolve="preferencePage" />
         <node concept="1sVBvm" id="4RGMQ_4mI_r" role="1sWHZn">
           <node concept="3F0A7n" id="6yXlhvg6Jtw" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -721,7 +721,7 @@
           <node concept="Vb9p2" id="6yXlhvg7_7O" role="3F10Kt" />
         </node>
         <node concept="3F1sOY" id="4RGMQ_4mKFZ" role="3EZMnx">
-          <ref role="1NtTu8" to="tmud:4RGMQ_4mKvG" />
+          <ref role="1NtTu8" to="tmud:4RGMQ_4mKvG" resolve="module" />
         </node>
         <node concept="l2Vlx" id="4zqPC3aq6e1" role="2iSdaV" />
         <node concept="pkWqt" id="4zqPC3aq6e$" role="pqm2j">
@@ -734,7 +734,7 @@
                     <node concept="Bykcj" id="29L9c1qc6k1" role="2OqNvi">
                       <node concept="1aIX9F" id="29L9c1qc6k2" role="1xVPHs">
                         <node concept="26LbJo" id="29L9c1qc6k3" role="1aIX9E">
-                          <ref role="26LbJp" to="tmud:4RGMQ_4mKvG" />
+                          <ref role="26LbJp" to="tmud:4RGMQ_4mKvG" resolve="module" />
                         </node>
                       </node>
                     </node>
@@ -746,7 +746,7 @@
                     <node concept="2OqwBi" id="4zqPC3aq808" role="2Oq$k0">
                       <node concept="pncrf" id="4zqPC3aq809" role="2Oq$k0" />
                       <node concept="3TrEf2" id="4zqPC3aq80a" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tmud:4RGMQ_4mHWT" />
+                        <ref role="3Tt5mk" to="tmud:4RGMQ_4mHWT" resolve="preferencePage" />
                       </node>
                     </node>
                     <node concept="3TrcHB" id="4zqPC3aq80b" role="2OqNvi">

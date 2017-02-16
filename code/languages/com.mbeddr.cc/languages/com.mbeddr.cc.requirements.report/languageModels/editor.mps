@@ -2,7 +2,7 @@
 <model ref="r:7deda952-e283-4bd9-be30-f2ccba4c10d2(com.mbeddr.cc.requirements.report.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -96,7 +96,7 @@
         <property role="3F0ifm" value="requirements" />
       </node>
       <node concept="1iCGBv" id="519ky_SmIM9" role="3EZMnx">
-        <ref role="1NtTu8" to="9prt:519ky_SmIM2" />
+        <ref role="1NtTu8" to="9prt:519ky_SmIM2" resolve="module" />
         <node concept="1sVBvm" id="519ky_SmIMa" role="1sWHZn">
           <node concept="3F0A7n" id="519ky_SmIMc" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -146,7 +146,7 @@
               <property role="3F0ifm" value="status filter" />
             </node>
             <node concept="3F1sOY" id="2U5fsQeiYtW" role="3EZMnx">
-              <ref role="1NtTu8" to="9prt:2U5fsQeiYtr" />
+              <ref role="1NtTu8" to="9prt:2U5fsQeiYtr" resolve="statusFilter" />
             </node>
           </node>
           <node concept="2iRkQZ" id="2U5fsQeiYtG" role="2iSdaV" />

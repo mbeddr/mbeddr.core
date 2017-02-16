@@ -2,7 +2,7 @@
 <model ref="r:81afa1db-614d-4337-8be1-abb7e78d23b3(com.mbeddr.slides.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -199,7 +199,7 @@
         <property role="3F0ifm" value="config:" />
       </node>
       <node concept="1iCGBv" id="4IRvlq8cJfx" role="3EZMnx">
-        <ref role="1NtTu8" to="2c95:5L$H31Kgq3g" />
+        <ref role="1NtTu8" to="2c95:5L$H31Kgq3g" resolve="config" />
         <node concept="1sVBvm" id="4IRvlq8cJfy" role="1sWHZn">
           <node concept="3F0A7n" id="4IRvlq8cJf$" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -208,7 +208,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="4IRvlq8cC68" role="3EZMnx">
-        <ref role="1NtTu8" to="apd:4IRvlq8cC5W" />
+        <ref role="1NtTu8" to="apd:4IRvlq8cC5W" resolve="slides" />
         <node concept="l2Vlx" id="4IRvlq8cC69" role="2czzBx" />
         <node concept="pVoyu" id="4IRvlq8cC6a" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -233,7 +233,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F2HdR" id="4IRvlq8cIB3" role="3EZMnx">
-        <ref role="1NtTu8" to="apd:4IRvlq8cIof" />
+        <ref role="1NtTu8" to="apd:4IRvlq8cIof" resolve="content" />
         <node concept="l2Vlx" id="4IRvlq8cIB4" role="2czzBx" />
         <node concept="lj46D" id="4IRvlq8cIB5" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -296,7 +296,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4IRvlq8cIQL" role="3EZMnx">
-        <ref role="1NtTu8" to="apd:4IRvlq8d947" />
+        <ref role="1NtTu8" to="apd:4IRvlq8d947" resolve="text" />
       </node>
       <node concept="3F0ifn" id="4IRvlq8cYvD" role="3EZMnx">
         <property role="3F0ifm" value="&lt;/" />
@@ -337,7 +337,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5mf_X_La_NK" role="3EZMnx">
-        <ref role="1NtTu8" to="apd:5mf_X_La_N_" />
+        <ref role="1NtTu8" to="apd:5mf_X_La_N_" resolve="text" />
       </node>
       <node concept="3F0ifn" id="5mf_X_La_NL" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -368,7 +368,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4IRvlq8cZRT" role="3EZMnx">
-        <ref role="1NtTu8" to="apd:5mf_X_La_N_" />
+        <ref role="1NtTu8" to="apd:5mf_X_La_N_" resolve="text" />
       </node>
       <node concept="3F0ifn" id="4IRvlq8cZRU" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -479,7 +479,7 @@
                     <node concept="2OqwBi" id="5yxqZJwzQDW" role="2Oq$k0">
                       <node concept="pncrf" id="5yxqZJwzQDB" role="2Oq$k0" />
                       <node concept="3TrEf2" id="4IRvlq8d2ZW" role="2OqNvi">
-                        <ref role="3Tt5mk" to="apd:5yxqZJwzQtY" />
+                        <ref role="3Tt5mk" to="apd:5yxqZJwzQtY" resolve="resource" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="5yxqZJwzQEt" role="2OqNvi">
@@ -507,7 +507,7 @@
                                     <node concept="2OqwBi" id="3RseghIdPNI" role="2Oq$k0">
                                       <node concept="pncrf" id="3RseghIdPNJ" role="2Oq$k0" />
                                       <node concept="3TrEf2" id="4IRvlq8d2ZY" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="apd:5yxqZJwzQtY" />
+                                        <ref role="3Tt5mk" to="apd:5yxqZJwzQtY" resolve="resource" />
                                       </node>
                                     </node>
                                     <node concept="2qgKlT" id="3RseghIdPNL" role="2OqNvi">
@@ -618,7 +618,7 @@
           <property role="3F0ifm" value="from" />
         </node>
         <node concept="3F1sOY" id="5yxqZJwzQu0" role="3EZMnx">
-          <ref role="1NtTu8" to="apd:5yxqZJwzQtY" />
+          <ref role="1NtTu8" to="apd:5yxqZJwzQtY" resolve="resource" />
         </node>
         <node concept="3F0ifn" id="7uLL3Mf1NPp" role="3EZMnx">
           <property role="3F0ifm" value="scaling:" />

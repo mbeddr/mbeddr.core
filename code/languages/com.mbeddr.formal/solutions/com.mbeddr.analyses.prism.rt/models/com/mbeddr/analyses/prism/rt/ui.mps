@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81165(com.mbeddr.analyses.prism.rt.ui)">
+<model ref="r:90d0eee3-db73-4cfb-87f3-ebf4f5d81167(com.mbeddr.analyses.prism.rt.ui)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
   </languages>
   <imports>
-    <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="oj8w" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing.text(JDK/javax.swing.text@java_stub)" />
-    <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -128,7 +128,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="6izRX53q3Sp" role="1B3o_S" />
       <node concept="3uibUv" id="7czHdefBMpj" role="1tU5fm">
-        <ref role="3uigEE" to="dbrf:~JTextArea" resolve="JTextArea" />
+        <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
       <node concept="NWlO9" id="3Ymokd9HQBw" role="lGtFl">
         <property role="NWlVz" value="Text area containing the raw output." />
@@ -142,7 +142,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="4kcU3YrmsGm" role="1B3o_S" />
       <node concept="3uibUv" id="4kcU3YrmsGn" role="1tU5fm">
-        <ref role="3uigEE" to="dbrf:~JTextArea" resolve="JTextArea" />
+        <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
       <node concept="NWlO9" id="4kcU3YrmsGo" role="lGtFl">
         <property role="NWlVz" value="Text area containing the raw stderr." />
@@ -156,7 +156,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="4$9c1ZyA7DR" role="1B3o_S" />
       <node concept="3uibUv" id="4$9c1ZyAb8X" role="1tU5fm">
-        <ref role="3uigEE" to="dbrf:~JTextArea" resolve="JTextArea" />
+        <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
       <node concept="NWlO9" id="4$9c1ZyA7DT" role="lGtFl">
         <property role="NWlVz" value="Text area containing the ran command." />
@@ -168,14 +168,14 @@
       <node concept="3clFbS" id="6izRX53q9At" role="3clF47">
         <node concept="3clFbF" id="6izRX53uAQI" role="3cqZAp">
           <node concept="3P9mCS" id="6izRX53uAQJ" role="3clFbG">
-            <ref role="37wK5l" to="1t7x:~Container.setLayout(java.awt.LayoutManager):void" resolve="setLayout" />
+            <ref role="37wK5l" to="z60i:~Container.setLayout(java.awt.LayoutManager):void" resolve="setLayout" />
             <node concept="2ShNRf" id="6izRX53uAQK" role="37wK5m">
               <node concept="1pGfFk" id="6izRX53uAQL" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~BoxLayout.&lt;init&gt;(java.awt.Container,int)" resolve="BoxLayout" />
+                <ref role="37wK5l" to="dxuu:~BoxLayout.&lt;init&gt;(java.awt.Container,int)" resolve="BoxLayout" />
                 <node concept="Xjq3P" id="6izRX53uAQM" role="37wK5m" />
                 <node concept="10M0yZ" id="6izRX53uAQN" role="37wK5m">
-                  <ref role="3cqZAo" to="dbrf:~BoxLayout.Y_AXIS" resolve="Y_AXIS" />
-                  <ref role="1PxDUh" to="dbrf:~BoxLayout" resolve="BoxLayout" />
+                  <ref role="3cqZAo" to="dxuu:~BoxLayout.Y_AXIS" resolve="Y_AXIS" />
+                  <ref role="1PxDUh" to="dxuu:~BoxLayout" resolve="BoxLayout" />
                 </node>
               </node>
             </node>
@@ -186,11 +186,11 @@
           <node concept="3cpWsn" id="M7_V6u5fO1" role="3cpWs9">
             <property role="TrG5h" value="tabbed" />
             <node concept="3uibUv" id="M7_V6u5fO2" role="1tU5fm">
-              <ref role="3uigEE" to="dbrf:~JTabbedPane" resolve="JTabbedPane" />
+              <ref role="3uigEE" to="dxuu:~JTabbedPane" resolve="JTabbedPane" />
             </node>
             <node concept="2ShNRf" id="M7_V6u5hLJ" role="33vP2m">
               <node concept="1pGfFk" id="M7_V6u5r7j" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JTabbedPane.&lt;init&gt;()" resolve="JTabbedPane" />
+                <ref role="37wK5l" to="dxuu:~JTabbedPane.&lt;init&gt;()" resolve="JTabbedPane" />
               </node>
             </node>
           </node>
@@ -200,7 +200,7 @@
           <node concept="37vLTI" id="6izRX53qh$6" role="3clFbG">
             <node concept="2ShNRf" id="6izRX53qhF2" role="37vLTx">
               <node concept="1pGfFk" id="6izRX53qhF1" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JTextArea.&lt;init&gt;(java.lang.String,int,int)" resolve="JTextArea" />
+                <ref role="37wK5l" to="dxuu:~JTextArea.&lt;init&gt;(java.lang.String,int,int)" resolve="JTextArea" />
                 <node concept="Xl_RD" id="6izRX53sRF4" role="37wK5m">
                   <property role="Xl_RC" value="Please start an analysis on a promela model." />
                 </node>
@@ -223,7 +223,7 @@
               <ref role="3cqZAo" node="6izRX53q3SS" resolve="stdoutText" />
             </node>
             <node concept="liA8E" id="6izRX53qjW4" role="2OqNvi">
-              <ref role="37wK5l" to="oj8w:~JTextComponent.setEditable(boolean):void" resolve="setEditable" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setEditable(boolean):void" resolve="setEditable" />
               <node concept="3clFbT" id="6izRX53qjZP" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -234,21 +234,21 @@
           <node concept="3cpWsn" id="6izRX53ql8I" role="3cpWs9">
             <property role="TrG5h" value="rawTextScroll" />
             <node concept="3uibUv" id="6izRX53ql8J" role="1tU5fm">
-              <ref role="3uigEE" to="dbrf:~JScrollPane" resolve="JScrollPane" />
+              <ref role="3uigEE" to="dxuu:~JScrollPane" resolve="JScrollPane" />
             </node>
             <node concept="2ShNRf" id="6izRX53qlj7" role="33vP2m">
               <node concept="1pGfFk" id="6izRX53qlQ9" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JScrollPane.&lt;init&gt;(java.awt.Component,int,int)" resolve="JScrollPane" />
+                <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component,int,int)" resolve="JScrollPane" />
                 <node concept="37vLTw" id="6izRX53wAjx" role="37wK5m">
                   <ref role="3cqZAo" node="6izRX53q3SS" resolve="stdoutText" />
                 </node>
                 <node concept="10M0yZ" id="6izRX53qqYM" role="37wK5m">
-                  <ref role="1PxDUh" to="dbrf:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
-                  <ref role="3cqZAo" to="dbrf:~ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS" resolve="VERTICAL_SCROLLBAR_ALWAYS" />
+                  <ref role="1PxDUh" to="dxuu:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
+                  <ref role="3cqZAo" to="dxuu:~ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS" resolve="VERTICAL_SCROLLBAR_ALWAYS" />
                 </node>
                 <node concept="10M0yZ" id="6izRX53tDga" role="37wK5m">
-                  <ref role="3cqZAo" to="dbrf:~ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS" resolve="HORIZONTAL_SCROLLBAR_ALWAYS" />
-                  <ref role="1PxDUh" to="dbrf:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
+                  <ref role="3cqZAo" to="dxuu:~ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS" resolve="HORIZONTAL_SCROLLBAR_ALWAYS" />
+                  <ref role="1PxDUh" to="dxuu:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
                 </node>
               </node>
             </node>
@@ -259,7 +259,7 @@
           <node concept="37vLTI" id="4kcU3Yrmt60" role="3clFbG">
             <node concept="2ShNRf" id="4kcU3Yrmt61" role="37vLTx">
               <node concept="1pGfFk" id="4kcU3Yrmt62" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JTextArea.&lt;init&gt;(java.lang.String,int,int)" resolve="JTextArea" />
+                <ref role="37wK5l" to="dxuu:~JTextArea.&lt;init&gt;(java.lang.String,int,int)" resolve="JTextArea" />
                 <node concept="Xl_RD" id="4kcU3Yrmt63" role="37wK5m">
                   <property role="Xl_RC" value="Please start an analysis on a promela model." />
                 </node>
@@ -282,7 +282,7 @@
               <ref role="3cqZAo" node="4kcU3YrmsGl" resolve="stderrText" />
             </node>
             <node concept="liA8E" id="4kcU3Yrmt6a" role="2OqNvi">
-              <ref role="37wK5l" to="oj8w:~JTextComponent.setEditable(boolean):void" resolve="setEditable" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setEditable(boolean):void" resolve="setEditable" />
               <node concept="3clFbT" id="4kcU3Yrmt6b" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -293,21 +293,21 @@
           <node concept="3cpWsn" id="4kcU3Yrmt6d" role="3cpWs9">
             <property role="TrG5h" value="stderrTextScroll" />
             <node concept="3uibUv" id="4kcU3Yrmt6e" role="1tU5fm">
-              <ref role="3uigEE" to="dbrf:~JScrollPane" resolve="JScrollPane" />
+              <ref role="3uigEE" to="dxuu:~JScrollPane" resolve="JScrollPane" />
             </node>
             <node concept="2ShNRf" id="4kcU3Yrmt6f" role="33vP2m">
               <node concept="1pGfFk" id="4kcU3Yrmt6g" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JScrollPane.&lt;init&gt;(java.awt.Component,int,int)" resolve="JScrollPane" />
+                <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component,int,int)" resolve="JScrollPane" />
                 <node concept="37vLTw" id="4kcU3Yrmt6h" role="37wK5m">
                   <ref role="3cqZAo" node="6izRX53q3SS" resolve="stdoutText" />
                 </node>
                 <node concept="10M0yZ" id="4kcU3Yrmt6i" role="37wK5m">
-                  <ref role="3cqZAo" to="dbrf:~ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS" resolve="VERTICAL_SCROLLBAR_ALWAYS" />
-                  <ref role="1PxDUh" to="dbrf:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
+                  <ref role="3cqZAo" to="dxuu:~ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS" resolve="VERTICAL_SCROLLBAR_ALWAYS" />
+                  <ref role="1PxDUh" to="dxuu:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
                 </node>
                 <node concept="10M0yZ" id="4kcU3Yrmt6j" role="37wK5m">
-                  <ref role="3cqZAo" to="dbrf:~ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS" resolve="HORIZONTAL_SCROLLBAR_ALWAYS" />
-                  <ref role="1PxDUh" to="dbrf:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
+                  <ref role="3cqZAo" to="dxuu:~ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS" resolve="HORIZONTAL_SCROLLBAR_ALWAYS" />
+                  <ref role="1PxDUh" to="dxuu:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
                 </node>
               </node>
             </node>
@@ -318,7 +318,7 @@
           <node concept="37vLTI" id="4$9c1ZyA9Ez" role="3clFbG">
             <node concept="2ShNRf" id="4$9c1ZyA9E$" role="37vLTx">
               <node concept="1pGfFk" id="4$9c1ZyA9E_" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JTextArea.&lt;init&gt;(java.lang.String,int,int)" resolve="JTextArea" />
+                <ref role="37wK5l" to="dxuu:~JTextArea.&lt;init&gt;(java.lang.String,int,int)" resolve="JTextArea" />
                 <node concept="Xl_RD" id="4$9c1ZyA9EA" role="37wK5m">
                   <property role="Xl_RC" value="Please start an analysis on a promela model." />
                 </node>
@@ -341,7 +341,7 @@
               <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
             </node>
             <node concept="liA8E" id="6m6BTo4Fhbr" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~JTextArea.setLineWrap(boolean):void" resolve="setLineWrap" />
+              <ref role="37wK5l" to="dxuu:~JTextArea.setLineWrap(boolean):void" resolve="setLineWrap" />
               <node concept="3clFbT" id="6m6BTo4FhhW" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -354,7 +354,7 @@
               <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
             </node>
             <node concept="liA8E" id="4$9c1ZyA9EH" role="2OqNvi">
-              <ref role="37wK5l" to="oj8w:~JTextComponent.setEditable(boolean):void" resolve="setEditable" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setEditable(boolean):void" resolve="setEditable" />
               <node concept="3clFbT" id="4$9c1ZyA9EI" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -365,21 +365,21 @@
           <node concept="3cpWsn" id="4$9c1ZyA9EK" role="3cpWs9">
             <property role="TrG5h" value="rawCommandScroll" />
             <node concept="3uibUv" id="4$9c1ZyA9EL" role="1tU5fm">
-              <ref role="3uigEE" to="dbrf:~JScrollPane" resolve="JScrollPane" />
+              <ref role="3uigEE" to="dxuu:~JScrollPane" resolve="JScrollPane" />
             </node>
             <node concept="2ShNRf" id="4$9c1ZyA9EM" role="33vP2m">
               <node concept="1pGfFk" id="4$9c1ZyA9EN" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JScrollPane.&lt;init&gt;(java.awt.Component,int,int)" resolve="JScrollPane" />
+                <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component,int,int)" resolve="JScrollPane" />
                 <node concept="37vLTw" id="4$9c1ZyAcJv" role="37wK5m">
                   <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
                 </node>
                 <node concept="10M0yZ" id="4$9c1ZyA9EP" role="37wK5m">
-                  <ref role="3cqZAo" to="dbrf:~ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS" resolve="VERTICAL_SCROLLBAR_ALWAYS" />
-                  <ref role="1PxDUh" to="dbrf:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
+                  <ref role="3cqZAo" to="dxuu:~ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS" resolve="VERTICAL_SCROLLBAR_ALWAYS" />
+                  <ref role="1PxDUh" to="dxuu:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
                 </node>
                 <node concept="10M0yZ" id="4$9c1ZyA9EQ" role="37wK5m">
-                  <ref role="1PxDUh" to="dbrf:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
-                  <ref role="3cqZAo" to="dbrf:~ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER" resolve="HORIZONTAL_SCROLLBAR_NEVER" />
+                  <ref role="1PxDUh" to="dxuu:~ScrollPaneConstants" resolve="ScrollPaneConstants" />
+                  <ref role="3cqZAo" to="dxuu:~ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER" resolve="HORIZONTAL_SCROLLBAR_NEVER" />
                 </node>
               </node>
             </node>
@@ -392,7 +392,7 @@
               <ref role="3cqZAo" node="M7_V6u5fO1" resolve="tabbed" />
             </node>
             <node concept="liA8E" id="M7_V6u5uEx" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~JTabbedPane.addTab(java.lang.String,java.awt.Component):void" resolve="addTab" />
+              <ref role="37wK5l" to="dxuu:~JTabbedPane.addTab(java.lang.String,java.awt.Component):void" resolve="addTab" />
               <node concept="Xl_RD" id="M7_V6u7c4N" role="37wK5m">
                 <property role="Xl_RC" value="Stdout" />
               </node>
@@ -408,7 +408,7 @@
               <ref role="3cqZAo" node="M7_V6u5fO1" resolve="tabbed" />
             </node>
             <node concept="liA8E" id="4kcU3YrmtXJ" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~JTabbedPane.addTab(java.lang.String,java.awt.Component):void" resolve="addTab" />
+              <ref role="37wK5l" to="dxuu:~JTabbedPane.addTab(java.lang.String,java.awt.Component):void" resolve="addTab" />
               <node concept="Xl_RD" id="4kcU3YrmtXK" role="37wK5m">
                 <property role="Xl_RC" value="Stderr" />
               </node>
@@ -424,7 +424,7 @@
               <ref role="3cqZAo" node="M7_V6u5fO1" resolve="tabbed" />
             </node>
             <node concept="liA8E" id="4$9c1ZyAdkE" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~JTabbedPane.addTab(java.lang.String,java.awt.Component):void" resolve="addTab" />
+              <ref role="37wK5l" to="dxuu:~JTabbedPane.addTab(java.lang.String,java.awt.Component):void" resolve="addTab" />
               <node concept="Xl_RD" id="4$9c1ZyAdkF" role="37wK5m">
                 <property role="Xl_RC" value="Raw command" />
               </node>
@@ -437,7 +437,7 @@
         <node concept="3clFbH" id="h7gcTUiAfa" role="3cqZAp" />
         <node concept="3clFbF" id="6izRX53$pyp" role="3cqZAp">
           <node concept="1rXfSq" id="6izRX53$pyn" role="3clFbG">
-            <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+            <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
             <node concept="37vLTw" id="M7_V6u5uR6" role="37wK5m">
               <ref role="3cqZAo" node="M7_V6u5fO1" resolve="tabbed" />
             </node>
@@ -462,7 +462,7 @@
               <ref role="3cqZAo" node="6izRX53q3SS" resolve="stdoutText" />
             </node>
             <node concept="liA8E" id="6izRX53q$aa" role="2OqNvi">
-              <ref role="37wK5l" to="oj8w:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
               <node concept="37vLTw" id="4kcU3YrkMbW" role="37wK5m">
                 <ref role="3cqZAo" node="6izRX53qxH4" resolve="res" />
               </node>
@@ -475,7 +475,7 @@
               <ref role="3cqZAo" node="6izRX53q3SS" resolve="stdoutText" />
             </node>
             <node concept="liA8E" id="6izRX53qB5y" role="2OqNvi">
-              <ref role="37wK5l" to="oj8w:~JTextComponent.updateUI():void" resolve="updateUI" />
+              <ref role="37wK5l" to="r791:~JTextComponent.updateUI():void" resolve="updateUI" />
             </node>
           </node>
         </node>
@@ -486,7 +486,7 @@
               <ref role="3cqZAo" node="4kcU3YrmsGl" resolve="stderrText" />
             </node>
             <node concept="liA8E" id="4kcU3YrmuTc" role="2OqNvi">
-              <ref role="37wK5l" to="oj8w:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
               <node concept="37vLTw" id="4kcU3YrmvOh" role="37wK5m">
                 <ref role="3cqZAo" node="4kcU3YrmuEo" resolve="err" />
               </node>
@@ -499,7 +499,7 @@
               <ref role="3cqZAo" node="4kcU3YrmsGl" resolve="stderrText" />
             </node>
             <node concept="liA8E" id="4kcU3YrmuTh" role="2OqNvi">
-              <ref role="37wK5l" to="oj8w:~JTextComponent.updateUI():void" resolve="updateUI" />
+              <ref role="37wK5l" to="r791:~JTextComponent.updateUI():void" resolve="updateUI" />
             </node>
           </node>
         </node>
@@ -510,7 +510,7 @@
               <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
             </node>
             <node concept="liA8E" id="4$9c1ZyAo9u" role="2OqNvi">
-              <ref role="37wK5l" to="oj8w:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
               <node concept="37vLTw" id="4kcU3YrkMwi" role="37wK5m">
                 <ref role="3cqZAo" node="4kcU3YrkMhS" resolve="cmd" />
               </node>
@@ -523,7 +523,7 @@
               <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
             </node>
             <node concept="liA8E" id="4$9c1ZyAsGC" role="2OqNvi">
-              <ref role="37wK5l" to="oj8w:~JTextComponent.updateUI():void" resolve="updateUI" />
+              <ref role="37wK5l" to="r791:~JTextComponent.updateUI():void" resolve="updateUI" />
             </node>
           </node>
         </node>
@@ -549,7 +549,7 @@
     <node concept="2tJIrI" id="M7_V6u7ROp" role="jymVt" />
     <node concept="3Tm1VV" id="6izRX53pUdd" role="1B3o_S" />
     <node concept="3uibUv" id="6izRX53pYD4" role="1zkMxy">
-      <ref role="3uigEE" to="dbrf:~JPanel" resolve="JPanel" />
+      <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
     </node>
     <node concept="NWlO9" id="3Ymokd9HQTr" role="lGtFl">
       <property role="NWlVz" value="UI for presenting the raw output." />

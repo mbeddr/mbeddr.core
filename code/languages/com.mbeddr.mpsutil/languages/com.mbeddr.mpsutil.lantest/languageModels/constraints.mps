@@ -8,10 +8,10 @@
   </languages>
   <imports>
     <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" />
-    <import index="9n5q" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:b2118c37-6c67-489b-87f9-b422baeb8ff0(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.gen)" />
+    <import index="9n5q" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:b2118c37-6c67-489b-87f9-b422baeb8ff0(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.gen)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -37,7 +37,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -116,7 +116,7 @@
     <property role="3GE5qa" value="seed" />
     <ref role="1M2myG" to="gfdq:2A9nHKANPGv" resolve="SingleModelSeed" />
     <node concept="1N5Pfh" id="2A9nHKAOj2H" role="1Mr941">
-      <ref role="1N5Vy1" to="gfdq:2A9nHKANPGS" />
+      <ref role="1N5Vy1" to="gfdq:2A9nHKANPGS" resolve="startingPoint" />
       <node concept="1MUpDS" id="2A9nHKAOj2L" role="1N6uqs">
         <node concept="3clFbS" id="2A9nHKAOj2M" role="2VODD2">
           <node concept="3clFbF" id="2A9nHKAOj3v" role="3cqZAp">
@@ -138,14 +138,14 @@
     <property role="3GE5qa" value="concept_seed" />
     <ref role="1M2myG" to="gfdq:7K2NL56H6Rb" resolve="AbstractConceptDeclarationRef" />
     <node concept="1N5Pfh" id="7K2NL56H7pq" role="1Mr941">
-      <ref role="1N5Vy1" to="gfdq:7K2NL56H6Rl" />
+      <ref role="1N5Vy1" to="gfdq:7K2NL56H6Rl" resolve="conceptDeclaration" />
       <node concept="1MUpDS" id="7K2NL56H7pu" role="1N6uqs">
         <node concept="3clFbS" id="7K2NL56H7pv" role="2VODD2">
           <node concept="3cpWs8" id="7K2NL56H7qb" role="3cqZAp">
             <node concept="3cpWsn" id="7K2NL56H7qc" role="3cpWs9">
               <property role="TrG5h" value="scope" />
               <node concept="2I9FWS" id="7K2NL56H7qd" role="1tU5fm">
-                <ref role="2I9WkF" to="gfdq:5aWlhTu2ZzL" resolve="LanguagePrefix" />
+                <ref role="2I9WkF" to="gfdq:5aWlhTu2ZzL" resolve="LanguageRegexReference" />
               </node>
               <node concept="2OqwBi" id="7K2NL56H7qe" role="33vP2m">
                 <node concept="2OqwBi" id="7K2NL56H7qf" role="2Oq$k0">
@@ -160,7 +160,7 @@
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="7K2NL56H7ql" role="2OqNvi">
-                  <ref role="3TtcxE" to="gfdq:5aWlhTu3WIo" />
+                  <ref role="3TtcxE" to="gfdq:5aWlhTu3WIo" resolve="scope" />
                 </node>
               </node>
             </node>

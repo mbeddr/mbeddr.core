@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -100,7 +100,7 @@
         <node concept="3XFhqQ" id="1pmorAaAj5O" role="3EZMnx" />
         <node concept="2iRfu4" id="1pmorAaAj5A" role="2iSdaV" />
         <node concept="3F2HdR" id="1pmorAa_LdP" role="3EZMnx">
-          <ref role="1NtTu8" to="nm5n:1pmorAa_LbJ" />
+          <ref role="1NtTu8" to="nm5n:1pmorAa_LbJ" resolve="hierarchicalChildren" />
           <node concept="2iRkQZ" id="1pmorAa_LdR" role="2czzBx" />
         </node>
       </node>
@@ -151,7 +151,7 @@
         <node concept="3XFhqQ" id="1pmorAaApkp" role="3EZMnx" />
         <node concept="2iRfu4" id="1pmorAaApkq" role="2iSdaV" />
         <node concept="3F2HdR" id="1pmorAaApkr" role="3EZMnx">
-          <ref role="1NtTu8" to="nm5n:1pmorAa_L9a" />
+          <ref role="1NtTu8" to="nm5n:1pmorAa_L9a" resolve="hierarchicalChildren" />
           <node concept="2iRkQZ" id="1pmorAaApks" role="2czzBx" />
         </node>
       </node>

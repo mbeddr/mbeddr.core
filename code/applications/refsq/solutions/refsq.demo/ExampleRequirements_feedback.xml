@@ -1,9 +1,0 @@
-<parameters-feedback systemID="system2">
-  <requirement name="Re1">
-    <param name="p1" type="int32">200</param>
-    <param name="p2" type="boolean">false</param>
-    <requirement name="Re2">
-      <param name="p3" type="string">"Hallo, too"</param>
-    </requirement>
-  </requirement>
-</parameters-feedback>

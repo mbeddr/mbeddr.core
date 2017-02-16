@@ -2,7 +2,8 @@
 <model ref="r:eb0dd953-6e95-4faa-9f3a-3a60abf5caac(com.mbeddr.mpsutil.forms.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,10 +14,10 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
@@ -30,6 +31,7 @@
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
     </language>
@@ -44,12 +46,12 @@
   </registry>
   <node concept="1TIwiD" id="bf5zx3HF9H">
     <property role="TrG5h" value="Form" />
-    <property role="1pbfSe" value="1183172773" />
+    <property role="EcuMT" value="202404939164988013" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="PlHQZ" id="bf5zx3HKvM">
     <property role="TrG5h" value="IFormProperty" />
-    <property role="1pbfSe" value="1183194666" />
+    <property role="EcuMT" value="202404939165009906" />
     <node concept="PrWs8" id="bf5zx3IMob" role="PrDN$">
       <ref role="PrY4T" to="tp4f:hyWqYN0" resolve="IMember" />
     </node>
@@ -59,7 +61,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="property" />
-    <property role="1pbfSe" value="1841157946" />
+    <property role="EcuMT" value="145956936284064811" />
     <ref role="1TJDcQ" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
     <node concept="PrWs8" id="bf5zx3IVDb" role="PzmwI">
       <ref role="PrY4T" node="bf5zx3HKvM" resolve="IFormProperty" />
@@ -69,10 +71,11 @@
     <property role="3GE5qa" value="property" />
     <property role="TrG5h" value="IntegerFieldFormProperty" />
     <property role="34LRSv" value="integer field" />
-    <property role="1pbfSe" value="1900926034" />
+    <property role="EcuMT" value="4728279602824475247" />
     <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractFormProperty" />
     <node concept="1TJgyi" id="46uejXd54j2" role="1TKVEl">
       <property role="TrG5h" value="defaultValue" />
+      <property role="IQ2nx" value="4728279602824496322" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
@@ -80,10 +83,11 @@
     <property role="TrG5h" value="PassWordFieldFormProperty" />
     <property role="3GE5qa" value="property" />
     <property role="34LRSv" value="Password field" />
-    <property role="1pbfSe" value="1253821977" />
+    <property role="EcuMT" value="4412484936303814" />
     <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractFormProperty" />
     <node concept="1TJgyi" id="fFi6Pd8j7" role="1TKVEl">
       <property role="TrG5h" value="defaultValue" />
+      <property role="IQ2nx" value="4412484936303815" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -91,10 +95,11 @@
     <property role="TrG5h" value="CheckBoxFormProperty" />
     <property role="3GE5qa" value="property" />
     <property role="34LRSv" value="checkbox" />
-    <property role="1pbfSe" value="1841312779" />
+    <property role="EcuMT" value="145956936284219644" />
     <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractFormProperty" />
     <node concept="1TJgyi" id="86yKXFIqzX" role="1TKVEl">
       <property role="TrG5h" value="defaultValue" />
+      <property role="IQ2nx" value="145956936284219645" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -102,10 +107,11 @@
     <property role="TrG5h" value="TextFieldFormProperty" />
     <property role="3GE5qa" value="property" />
     <property role="34LRSv" value="text field" />
-    <property role="1pbfSe" value="1841157955" />
+    <property role="EcuMT" value="145956936284064820" />
     <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractFormProperty" />
     <node concept="1TJgyi" id="86yKXFHOKP" role="1TKVEl">
       <property role="TrG5h" value="defaultValue" />
+      <property role="IQ2nx" value="145956936284064821" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

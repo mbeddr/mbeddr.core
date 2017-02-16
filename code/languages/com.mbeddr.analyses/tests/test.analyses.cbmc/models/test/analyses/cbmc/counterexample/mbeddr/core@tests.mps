@@ -6,7 +6,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -23,6 +23,7 @@
     <import index="tzyt" ref="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
     <import index="lom1" ref="r:41bf31ae-8e87-4132-b404-f244ad8a3001(jetbrains.mps.generator.traceInfo)" />
+    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -31,11 +32,15 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -91,7 +96,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -135,6 +140,9 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
+      <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="5753587520027644759" name="body" index="3kxCCa" />
+      </concept>
     </language>
     <language id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing">
       <concept id="1348611803040004605" name="com.mbeddr.analyses.cbmc.testing.structure.GeneratorOutputPath" flags="ng" index="QFwaR">
@@ -147,6 +155,7 @@
         <property id="5665549241468854500" name="hasAlternativeSteps" index="35B3fw" />
         <property id="4791280061046124024" name="nodeKind" index="38rIoG" />
         <property id="4791280061046139065" name="nodeValue" index="38rMdH" />
+        <property id="1417041907773541157" name="isRegexBasedComparison" index="1F1lcY" />
         <child id="4791280061046189368" name="node" index="38rYrG" />
       </concept>
       <concept id="4791280061046135693" name="com.mbeddr.analyses.cbmc.testing.structure.CBMCCounterexampleTest" flags="ng" index="38rL1p">
@@ -204,6 +213,7 @@
   </registry>
   <node concept="1lH9Xt" id="1n2e7UO17sC">
     <property role="TrG5h" value="Smoke" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="1n2e7UO17sD" role="1SL9yI">
       <property role="TrG5h" value="testSmoke" />
       <node concept="3cqZAl" id="1n2e7UO17sE" role="3clF45" />
@@ -215,17 +225,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="6mJYm3ju2Zx" role="33vP2m">
-              <node concept="2YIFZM" id="6BM8NjXdBi1" role="2Oq$k0">
-                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="NRdvd" id="5EwdfGVii2s" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-                <node concept="2YIFZM" id="3hNQKr2NwHs" role="37wK5m">
+                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2YIFZM" id="5EwdfGVii2t" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                 </node>
-                <node concept="Xl_RD" id="3hNQKr2NwHt" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVii2u" role="37wK5m">
                   <property role="Xl_RC" value="smoke" />
                 </node>
-                <node concept="Xl_RD" id="3hNQKr2NwHu" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVii2v" role="37wK5m">
                   <property role="Xl_RC" value="smokeFun" />
                 </node>
               </node>
@@ -237,7 +247,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1n2e7UO17sO" role="3cqZAp" />
         <node concept="3vwNmj" id="6oOIJNsCfnP" role="3cqZAp">
           <node concept="2OqwBi" id="6oOIJNsCfoc" role="3vwVQn">
             <node concept="3cpWsa" id="6oOIJNsCfnR" role="2Oq$k0">
@@ -262,7 +271,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="4EriiVwU6i9" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="8Fyjetf399" role="2v6RBE">
@@ -282,17 +291,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="6mJYm3ju5Ta" role="33vP2m">
-              <node concept="2YIFZM" id="6BM8NjXdBi7" role="2Oq$k0">
-                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="NRdvd" id="5EwdfGViikM" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-                <node concept="2YIFZM" id="3hNQKr2Ny5z" role="37wK5m">
+                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2YIFZM" id="5EwdfGViikN" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                 </node>
-                <node concept="Xl_RD" id="3hNQKr2Ny5$" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGViikO" role="37wK5m">
                   <property role="Xl_RC" value="smoke" />
                 </node>
-                <node concept="Xl_RD" id="3hNQKr2Ny5_" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGViikP" role="37wK5m">
                   <property role="Xl_RC" value="aFunCallingSmoke" />
                 </node>
               </node>
@@ -304,7 +313,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5djBfpcTtQj" role="3cqZAp" />
         <node concept="3vwNmj" id="5djBfpcTtQk" role="3cqZAp">
           <node concept="2OqwBi" id="5djBfpcTtQl" role="3vwVQn">
             <node concept="3cpWsa" id="5djBfpcTtQm" role="2Oq$k0">
@@ -333,7 +341,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="5djBfpcTtQt" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="8Fyjetf3$A" role="2v6RBE">
@@ -345,6 +353,7 @@
   </node>
   <node concept="1lH9Xt" id="1Qmd1NUzUz">
     <property role="TrG5h" value="DecisionTable" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="_qCyBYk2Oo" role="1SL9yI">
       <property role="TrG5h" value="testDecisionTableInVariableInitializationLift" />
       <node concept="3cqZAl" id="_qCyBYk2Op" role="3clF45" />
@@ -378,7 +387,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="_qCyBYk2O_" role="3cqZAp" />
         <node concept="3vwNmj" id="_qCyBYk2OA" role="3cqZAp">
           <node concept="2OqwBi" id="_qCyBYk2OB" role="3vwVQn">
             <node concept="3cpWsa" id="_qCyBYk2OC" role="2Oq$k0">
@@ -449,14 +457,13 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="_qCyBYk2OS" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="_qCyBYk2OT" role="2v6RBE">
             <ref role="3cqZAo" node="_qCyBYk2Os" resolve="res" />
           </node>
         </node>
-        <node concept="3clFbH" id="_qCyBYk2OU" role="3cqZAp" />
       </node>
     </node>
     <node concept="1LZb2c" id="3eQfn9zuS6Y" role="1SL9yI">
@@ -492,7 +499,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3eQfn9zuS7b" role="3cqZAp" />
         <node concept="3vwNmj" id="3eQfn9zuS7c" role="3cqZAp">
           <node concept="2OqwBi" id="3eQfn9zuS7d" role="3vwVQn">
             <node concept="3cpWsa" id="3eQfn9zuS7e" role="2Oq$k0">
@@ -563,14 +569,13 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="3eQfn9zuS7y" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="3eQfn9zuS7z" role="2v6RBE">
             <ref role="3cqZAo" node="3eQfn9zuS72" resolve="res" />
           </node>
         </node>
-        <node concept="3clFbH" id="3eQfn9zuS7$" role="3cqZAp" />
       </node>
     </node>
     <node concept="1LZb2c" id="4S1WcVtCtmg" role="1SL9yI">
@@ -606,7 +611,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4S1WcVtCtmt" role="3cqZAp" />
         <node concept="3vwNmj" id="4S1WcVtCtmu" role="3cqZAp">
           <node concept="2OqwBi" id="4S1WcVtCtmv" role="3vwVQn">
             <node concept="3cpWsa" id="4S1WcVtCtmw" role="2Oq$k0">
@@ -661,14 +665,13 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="4S1WcVtCtmJ" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="4S1WcVtCtmK" role="2v6RBE">
             <ref role="3cqZAo" node="4S1WcVtCtmk" resolve="res" />
           </node>
         </node>
-        <node concept="3clFbH" id="4S1WcVtCtmL" role="3cqZAp" />
       </node>
     </node>
     <node concept="1LZb2c" id="1Qmd1NUzU$" role="1SL9yI">
@@ -704,7 +707,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1Qmd1NUzUJ" role="3cqZAp" />
         <node concept="3vwNmj" id="1Qmd1NUzUK" role="3cqZAp">
           <node concept="2OqwBi" id="1Qmd1NUzUL" role="3vwVQn">
             <node concept="3cpWsa" id="1Qmd1NUzUM" role="2Oq$k0">
@@ -766,14 +768,13 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="8FyjeteZSB" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="8FyjeteZNY" role="2v6RBE">
             <ref role="3cqZAo" node="1Qmd1NUzUC" resolve="res" />
           </node>
         </node>
-        <node concept="3clFbH" id="49Y2Xia50OO" role="3cqZAp" />
       </node>
     </node>
     <node concept="1LZb2c" id="5pxO7gskNQa" role="1SL9yI">
@@ -921,7 +922,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="49Y2Xia51bz" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="8Fyjetf0eG" role="2v6RBE">
@@ -963,7 +964,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="47YXc$vgBWX" role="3cqZAp" />
         <node concept="3vwNmj" id="47YXc$vgBWZ" role="3cqZAp">
           <node concept="2OqwBi" id="47YXc$vgBXm" role="3vwVQn">
             <node concept="3cpWsa" id="47YXc$vgBX1" role="2Oq$k0">
@@ -1023,7 +1023,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="16yBdWg0Wx$" role="3cqZAp" />
         <node concept="3vwNmj" id="16yBdWg0Wx_" role="3cqZAp">
           <node concept="2OqwBi" id="16yBdWg0WxA" role="3vwVQn">
             <node concept="3cpWsa" id="16yBdWg0WxB" role="2Oq$k0">
@@ -1052,7 +1051,7 @@
           </node>
           <node concept="38rIoz" id="16yBdWg1yXU" role="38rM$J">
             <property role="38rIoG" value="y" />
-            <property role="38rMdH" value="0" />
+            <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="16yBdWg1yXV" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
@@ -1073,7 +1072,7 @@
           </node>
           <node concept="38rIoz" id="16yBdWg1yY0" role="38rM$J">
             <property role="38rIoG" value="y" />
-            <property role="38rMdH" value="0" />
+            <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="16yBdWg1yY1" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
@@ -1100,7 +1099,7 @@
           </node>
           <node concept="38rIoz" id="16yBdWg1yY5" role="38rM$J">
             <property role="38rIoG" value="y" />
-            <property role="38rMdH" value="0" />
+            <property role="38rMdH" value="*" />
             <property role="35B3fw" value="true" />
             <property role="35AWuq" value="9,10" />
           </node>
@@ -1126,7 +1125,6 @@
             <ref role="3cqZAo" node="16yBdWg0Wxr" resolve="res" />
           </node>
         </node>
-        <node concept="3clFbH" id="16yBdWg1ySx" role="3cqZAp" />
       </node>
     </node>
     <node concept="1LZb2c" id="576QrOJn8RL" role="1SL9yI">
@@ -1246,7 +1244,7 @@
           </node>
           <node concept="38rIoz" id="576QrOJn8S8" role="38rM$J">
             <property role="38rIoG" value="y" />
-            <property role="38rMdH" value="0" />
+            <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="576QrOJnSmI" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
@@ -1260,7 +1258,7 @@
           </node>
           <node concept="38rIoz" id="576QrOJn8Sf" role="38rM$J">
             <property role="38rIoG" value="y" />
-            <property role="38rMdH" value="0" />
+            <property role="38rMdH" value="*" />
             <property role="35B3fw" value="true" />
             <property role="35AWuq" value="5,6" />
           </node>
@@ -1327,6 +1325,7 @@
   </node>
   <node concept="1lH9Xt" id="5djBfpfe3Jp">
     <property role="TrG5h" value="Enums" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="5djBfpfLhGF" role="1SL9yI">
       <property role="TrG5h" value="testEnumAssignment" />
       <node concept="3cqZAl" id="5djBfpfLhGG" role="3clF45" />
@@ -1397,7 +1396,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="5djBfpfLhH4" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="8Fyjetf1fg" role="2v6RBE">
@@ -1469,7 +1468,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="5djBfpfe3Vg" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="8Fyjetf1FO" role="2v6RBE">
@@ -1548,7 +1547,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="2kd_oj2S7Pp" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="8Fyjetf2bi" role="2v6RBE">
@@ -1627,7 +1626,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="2HfUidumMjd" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="2HfUidumMje" role="2v6RBE">
@@ -1706,7 +1705,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="6DRvbEFQdIs" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="6DRvbEFQdIt" role="2v6RBE">
@@ -1718,6 +1717,7 @@
   </node>
   <node concept="1lH9Xt" id="3kLBXRrq2uI">
     <property role="TrG5h" value="GlobalVars" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="3kLBXRrq2uJ" role="1SL9yI">
       <property role="TrG5h" value="testGlobalVars1" />
       <node concept="3cqZAl" id="3kLBXRrq2uK" role="3clF45" />
@@ -1751,7 +1751,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3kLBXRrq2uY" role="3cqZAp" />
         <node concept="3vwNmj" id="3kLBXRrq2uZ" role="3cqZAp">
           <node concept="2OqwBi" id="3kLBXRrq2v0" role="3vwVQn">
             <node concept="3cpWsa" id="3kLBXRrq2v1" role="2Oq$k0">
@@ -1779,7 +1778,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="8Fyjetf2GU" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="8Fyjetf2Cm" role="2v6RBE">
@@ -1821,7 +1820,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="_qCyBYoj8A" role="3cqZAp" />
         <node concept="3vwNmj" id="_qCyBYoj8B" role="3cqZAp">
           <node concept="2OqwBi" id="_qCyBYoj8C" role="3vwVQn">
             <node concept="3cpWsa" id="_qCyBYoj8D" role="2Oq$k0">
@@ -1870,7 +1868,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="_qCyBYoj90" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="_qCyBYoj91" role="2v6RBE">
@@ -1912,7 +1910,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="_qCyBYojVd" role="3cqZAp" />
         <node concept="3vwNmj" id="_qCyBYojVe" role="3cqZAp">
           <node concept="2OqwBi" id="_qCyBYojVf" role="3vwVQn">
             <node concept="3cpWsa" id="_qCyBYojVg" role="2Oq$k0">
@@ -1961,7 +1958,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="_qCyBYojVB" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="_qCyBYojVC" role="2v6RBE">
@@ -1973,6 +1970,7 @@
   </node>
   <node concept="1lH9Xt" id="7iLQIU2tAji">
     <property role="TrG5h" value="FunctionCalls" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="7iLQIU2tAjj" role="1SL9yI">
       <property role="TrG5h" value="testFunctionCallActualParams" />
       <node concept="3cqZAl" id="7iLQIU2tAjk" role="3clF45" />
@@ -1984,17 +1982,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="7iLQIU2tAjp" role="33vP2m">
-              <node concept="2YIFZM" id="6BM8NjXdBhQ" role="2Oq$k0">
-                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="NRdvd" id="5EwdfGVicNH" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-                <node concept="2YIFZM" id="7iLQIU2tAjr" role="37wK5m">
+                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2YIFZM" id="5EwdfGVicNI" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                 </node>
-                <node concept="Xl_RD" id="7iLQIU2tAjs" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVicNJ" role="37wK5m">
                   <property role="Xl_RC" value="function_calls" />
                 </node>
-                <node concept="Xl_RD" id="7iLQIU2tAjt" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVicNK" role="37wK5m">
                   <property role="Xl_RC" value="foo" />
                 </node>
               </node>
@@ -2093,7 +2091,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="7iLQIU2tAjE" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="7iLQIU2tAjF" role="2v6RBE">
@@ -2105,6 +2103,7 @@
   </node>
   <node concept="1lH9Xt" id="cukS_kjxzk">
     <property role="TrG5h" value="Complex_Datatypes" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="cukS_kjxzl" role="1SL9yI">
       <property role="TrG5h" value="testSimpleStructure" />
       <node concept="3cqZAl" id="cukS_kjxzm" role="3clF45" />
@@ -2204,7 +2203,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="cukS_kjxzK" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="cukS_kjxzL" role="2v6RBE">
@@ -2467,7 +2466,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="cukS_koqle" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="cukS_koqlf" role="2v6RBE">
@@ -2488,14 +2487,23 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="5EwdfGVi8uW" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVi8uX" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVi8uV" role="1tU5fm" />
+            <node concept="2YIFZM" id="5EwdfGVi8uY" role="33vP2m">
+              <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
+              <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7MMcIPl4bqH" role="3cqZAp">
           <node concept="37vLTI" id="7MMcIPl4bqJ" role="3clFbG">
             <node concept="NRdvd" id="F6wzHuWzgG" role="37vLTx">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:7MMcIPlrGiu" resolve="checkAssert" />
-              <node concept="2YIFZM" id="F6wzHuWzgH" role="37wK5m">
-                <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
-                <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
+              <node concept="37vLTw" id="5EwdfGVi8uZ" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVi8uX" resolve="m" />
               </node>
               <node concept="Xl_RD" id="F6wzHuWzgI" role="37wK5m">
                 <property role="Xl_RC" value="complex_datatypes" />
@@ -2545,29 +2553,33 @@
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl48rS" role="38rM$J">
-            <property role="38rIoG" value="r.points[0].x" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[0l?\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl48rT" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl48rU" role="38rM$J">
-            <property role="38rIoG" value="r.points[0].y" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[0l?\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl48rV" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl48rW" role="38rM$J">
-            <property role="38rIoG" value="r.points[1].x" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[1l?\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl48rX" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl48rY" role="38rM$J">
-            <property role="38rIoG" value="r.points[1].y" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[1l?\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl48rZ" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
@@ -2650,15 +2662,17 @@
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl9001" role="38rM$J">
-            <property role="38rIoG" value="r.points[0].x" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[0l?\\]\\.x" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl9002" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl9003" role="38rM$J">
-            <property role="38rIoG" value="r.points[0].y" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[0l?\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl9004" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
@@ -2727,15 +2741,17 @@
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl93Ht" role="38rM$J">
-            <property role="38rIoG" value="r.points[1].x" />
+            <property role="38rIoG" value="r\\.points\\[1l?\\]\\.x" />
             <property role="38rMdH" value="10" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl93Hu" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPl93Hv" role="38rM$J">
-            <property role="38rIoG" value="r.points[1].y" />
-            <property role="38rMdH" value="*" />
+            <property role="38rIoG" value="r\\.points\\[1l?\\]\\.y" />
+            <property role="38rMdH" value=".*" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="7MMcIPl93Hw" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
@@ -2751,7 +2767,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="7MMcIPl48si" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="7MMcIPl48sj" role="2v6RBE">
@@ -2772,14 +2788,23 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="5EwdfGVi8$4" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVi8$5" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVi8$3" role="1tU5fm" />
+            <node concept="2YIFZM" id="5EwdfGVi8$6" role="33vP2m">
+              <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
+              <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7MMcIPlcoGC" role="3cqZAp">
           <node concept="37vLTI" id="7MMcIPlcoGD" role="3clFbG">
             <node concept="NRdvd" id="7MMcIPlrWHL" role="37vLTx">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:7MMcIPlrGiu" resolve="checkAssert" />
-              <node concept="2YIFZM" id="7MMcIPlrWHM" role="37wK5m">
-                <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
-                <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
+              <node concept="37vLTw" id="5EwdfGVi8$7" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVi8$5" resolve="m" />
               </node>
               <node concept="Xl_RD" id="7MMcIPlrWHN" role="37wK5m">
                 <property role="Xl_RC" value="complex_datatypes" />
@@ -2815,7 +2840,7 @@
               <ref role="3cqZAo" node="7MMcIPlcoGA" resolve="res" />
             </node>
             <node concept="liA8E" id="7MMcIPlcoGQ" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+              <ref role="37wK5l" to="eqhl:7kzfSagKGHX" resolve="isUnwindingFail" />
             </node>
           </node>
         </node>
@@ -3047,7 +3072,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="F6wzHuIsVA" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="F6wzHuIsVB" role="2v6RBE">
@@ -3059,10 +3084,21 @@
   </node>
   <node concept="1lH9Xt" id="3HvJSbHA10R">
     <property role="TrG5h" value="StructuresFlattening" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="3HvJSbHA10S" role="1SL9yI">
       <property role="TrG5h" value="testPoint" />
       <node concept="3cqZAl" id="3HvJSbHA10T" role="3clF45" />
       <node concept="3clFbS" id="3HvJSbHA10U" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVij1g" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVij1h" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVij1f" role="1tU5fm" />
+            <node concept="2YIFZM" id="5EwdfGVij1i" role="33vP2m">
+              <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
+              <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3HvJSbHA10V" role="3cqZAp">
           <node concept="3cpWsn" id="3HvJSbHA10W" role="3cpWs9">
             <property role="TrG5h" value="resPointAccess" />
@@ -3073,9 +3109,8 @@
               <node concept="NRdvd" id="7MMcIPlkLpm" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="2YIFZM" id="7MMcIPlpvNH" role="37wK5m">
-                  <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
-                  <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
+                <node concept="37vLTw" id="5EwdfGVij1j" role="37wK5m">
+                  <ref role="3cqZAo" node="5EwdfGVij1h" resolve="m" />
                 </node>
                 <node concept="Xl_RD" id="7MMcIPlkLpo" role="37wK5m">
                   <property role="Xl_RC" value="structures_flattening" />
@@ -3141,7 +3176,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="49Y2Xia50ON" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="8Fyjetf9tZ" role="2v6RBE">
@@ -3154,6 +3189,16 @@
       <property role="TrG5h" value="testRectangle" />
       <node concept="3cqZAl" id="3HvJSbHBbEc" role="3clF45" />
       <node concept="3clFbS" id="3HvJSbHBbEd" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVijpG" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVijpH" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVijpF" role="1tU5fm" />
+            <node concept="2YIFZM" id="5EwdfGVijpI" role="33vP2m">
+              <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
+              <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3HvJSbHBbEe" role="3cqZAp">
           <node concept="3cpWsn" id="3HvJSbHBbEf" role="3cpWs9">
             <property role="TrG5h" value="resRectangleAccess" />
@@ -3164,9 +3209,8 @@
               <node concept="NRdvd" id="7MMcIPlkLlm" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="2YIFZM" id="7MMcIPlpwic" role="37wK5m">
-                  <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
-                  <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
+                <node concept="37vLTw" id="5EwdfGVijpJ" role="37wK5m">
+                  <ref role="3cqZAo" node="5EwdfGVijpH" resolve="m" />
                 </node>
                 <node concept="Xl_RD" id="7MMcIPlkLlo" role="37wK5m">
                   <property role="Xl_RC" value="structures_flattening" />
@@ -3246,7 +3290,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="3HvJSbHBbEE" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="8Fyjetf9TR" role="2v6RBE">
@@ -3259,6 +3303,16 @@
       <property role="TrG5h" value="testTriangle" />
       <node concept="3cqZAl" id="3HvJSbHBbLZ" role="3clF45" />
       <node concept="3clFbS" id="3HvJSbHBbM0" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVijLL" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVijLM" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVijLK" role="1tU5fm" />
+            <node concept="2YIFZM" id="5EwdfGVijLN" role="33vP2m">
+              <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
+              <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3HvJSbHBbM1" role="3cqZAp">
           <node concept="3cpWsn" id="3HvJSbHBbM2" role="3cpWs9">
             <property role="TrG5h" value="resTriangleAccess" />
@@ -3269,9 +3323,8 @@
               <node concept="NRdvd" id="7MMcIPlkLQE" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="2YIFZM" id="7MMcIPlpwNs" role="37wK5m">
-                  <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
-                  <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
+                <node concept="37vLTw" id="5EwdfGVijLO" role="37wK5m">
+                  <ref role="3cqZAo" node="5EwdfGVijLM" resolve="m" />
                 </node>
                 <node concept="Xl_RD" id="7MMcIPlkLQG" role="37wK5m">
                   <property role="Xl_RC" value="structures_flattening" />
@@ -3365,7 +3418,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="3HvJSbHBbMt" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="8Fyjetfam8" role="2v6RBE">
@@ -3470,7 +3523,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="3kmIFBm6DsP" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="3kmIFBm6DsQ" role="2v6RBE">
@@ -3482,6 +3535,7 @@
   </node>
   <node concept="1lH9Xt" id="7MMcIPlqfdC">
     <property role="TrG5h" value="Unions" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="7MMcIPlqfdD" role="1SL9yI">
       <property role="TrG5h" value="testSimpleUnion" />
       <node concept="3cqZAl" id="7MMcIPlqfdE" role="3clF45" />
@@ -3515,7 +3569,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7MMcIPlqfdQ" role="3cqZAp" />
         <node concept="3vwNmj" id="7MMcIPlqfdR" role="3cqZAp">
           <node concept="2OqwBi" id="7MMcIPlqfdS" role="3vwVQn">
             <node concept="3cpWsa" id="7MMcIPlqfdT" role="2Oq$k0">
@@ -3546,7 +3599,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="7MMcIPlqfe4" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="7MMcIPlqfe5" role="2v6RBE">
@@ -3588,7 +3641,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6Xk4NhNbAr1" role="3cqZAp" />
         <node concept="3vwNmj" id="6Xk4NhNbAr2" role="3cqZAp">
           <node concept="2OqwBi" id="6Xk4NhNbAr3" role="3vwVQn">
             <node concept="3cpWsa" id="6Xk4NhNbAr4" role="2Oq$k0">
@@ -3609,15 +3661,17 @@
             </node>
           </node>
           <node concept="38rIoz" id="6Xk4NhNbAra" role="38rM$J">
-            <property role="38rIoG" value="bp.anInt" />
-            <property role="38rMdH" value="2" />
+            <property role="38rIoG" value="bp\\.anInt" />
+            <property role="38rMdH" value="2ll?" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="6Xk4NhNbArb" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
           <node concept="38rIoz" id="6Xk4NhNbArc" role="38rM$J">
             <property role="38rIoG" value="readInt" />
-            <property role="38rMdH" value="2" />
+            <property role="38rMdH" value="2ll?" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="6Xk4NhNbArd" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -3626,7 +3680,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="6Xk4NhNbArf" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="6Xk4NhNbArg" role="2v6RBE">
@@ -3638,6 +3692,7 @@
   </node>
   <node concept="1lH9Xt" id="7MMcIPlrjm1">
     <property role="TrG5h" value="RecursiveDatatypes" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="7MMcIPlrjm2" role="1SL9yI">
       <property role="TrG5h" value="testSimpleUnion" />
       <node concept="3cqZAl" id="7MMcIPlrjm3" role="3clF45" />
@@ -3649,17 +3704,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="7MMcIPlrjm8" role="33vP2m">
-              <node concept="2YIFZM" id="7MMcIPlrjm9" role="2Oq$k0">
-                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="NRdvd" id="5EwdfGVigk7" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-                <node concept="2YIFZM" id="7MMcIPlrjma" role="37wK5m">
+                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2YIFZM" id="5EwdfGVigk8" role="37wK5m">
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                 </node>
-                <node concept="Xl_RD" id="7MMcIPlrjmb" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVigk9" role="37wK5m">
                   <property role="Xl_RC" value="recursive_datatypes" />
                 </node>
-                <node concept="Xl_RD" id="7MMcIPlrjmc" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVigka" role="37wK5m">
                   <property role="Xl_RC" value="simpleList" />
                 </node>
               </node>
@@ -3671,7 +3726,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7MMcIPlrjmf" role="3cqZAp" />
         <node concept="3vwNmj" id="7MMcIPlrjmg" role="3cqZAp">
           <node concept="2OqwBi" id="7MMcIPlrjmh" role="3vwVQn">
             <node concept="3cpWsa" id="7MMcIPlrjmi" role="2Oq$k0">
@@ -3707,14 +3761,14 @@
           </node>
           <node concept="38rIoz" id="7MMcIPlrkrx" role="38rM$J">
             <property role="38rIoG" value="next" />
-            <property role="38rMdH" value="((struct recursive_datatypes_node *)NULL)" />
+            <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="7MMcIPlrkv7" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
           <node concept="38rIoz" id="7MMcIPlrjms" role="38rM$J">
             <property role="38rIoG" value="nextNext" />
-            <property role="38rMdH" value="((struct recursive_datatypes_node *)NULL)" />
+            <property role="38rMdH" value="*" />
             <node concept="3Tqbb2" id="7MMcIPlrjmt" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -3730,7 +3784,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="7MMcIPlrjmv" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="7MMcIPlrjmw" role="2v6RBE">
@@ -3742,6 +3796,7 @@
   </node>
   <node concept="1lH9Xt" id="4kWu8AkCScH">
     <property role="TrG5h" value="Threads" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="4kWu8AkCScI" role="1SL9yI">
       <property role="TrG5h" value="testSimpleThreading" />
       <node concept="3cqZAl" id="4kWu8AkCScJ" role="3clF45" />
@@ -3753,17 +3808,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="4kWu8AkCScO" role="33vP2m">
-              <node concept="2YIFZM" id="4kWu8AkCScP" role="2Oq$k0">
-                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="NRdvd" id="5EwdfGVikk9" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-                <node concept="2YIFZM" id="4kWu8AkCScQ" role="37wK5m">
+                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2YIFZM" id="5EwdfGVikka" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                 </node>
-                <node concept="Xl_RD" id="4kWu8AkCScR" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVikkb" role="37wK5m">
                   <property role="Xl_RC" value="threads" />
                 </node>
-                <node concept="Xl_RD" id="4kWu8AkCScS" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVikkc" role="37wK5m">
                   <property role="Xl_RC" value="entry" />
                 </node>
               </node>
@@ -3829,7 +3884,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="4kWu8AkCSd5" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="4kWu8AkCSd6" role="2v6RBE">
@@ -3841,6 +3896,7 @@
   </node>
   <node concept="1lH9Xt" id="3Z5D5F2EYUa">
     <property role="TrG5h" value="SmokeSatAbs" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="3Z5D5F2EYUb" role="1SL9yI">
       <property role="TrG5h" value="testSatAbsSmokeWith" />
       <node concept="3cqZAl" id="3Z5D5F2EYUc" role="3clF45" />
@@ -3941,7 +3997,7 @@
               <property role="38rIoG" value="FAIL" />
               <property role="38rMdH" value="*" />
               <node concept="3Tqbb2" id="3Z5D5F2EYUy" role="38rYrG">
-                <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+                <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
               </node>
             </node>
             <node concept="37vLTw" id="3Z5D5F2EYUz" role="2v6RBE">
@@ -3949,7 +4005,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3XWIBckBbcr" role="3cqZAp" />
       </node>
     </node>
     <node concept="1LZb2c" id="3Z5D5F2EYU$" role="1SL9yI">
@@ -4056,7 +4111,7 @@
               <property role="38rIoG" value="FAIL" />
               <property role="38rMdH" value="Assertion Violated" />
               <node concept="3Tqbb2" id="3Z5D5F2EYUW" role="38rYrG">
-                <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+                <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
               </node>
             </node>
             <node concept="37vLTw" id="3Z5D5F2EYUX" role="2v6RBE">
@@ -4069,6 +4124,7 @@
   </node>
   <node concept="1lH9Xt" id="2V53qRfZKyX">
     <property role="TrG5h" value="Literals" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="2V53qRfZKyY" role="1SL9yI">
       <property role="TrG5h" value="testSimpleLiterals" />
       <node concept="3cqZAl" id="2V53qRfZKyZ" role="3clF45" />
@@ -4102,7 +4158,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2V53qRfZKzb" role="3cqZAp" />
         <node concept="3vwNmj" id="2V53qRfZKzc" role="3cqZAp">
           <node concept="2OqwBi" id="2V53qRfZKzd" role="3vwVQn">
             <node concept="3cpWsa" id="2V53qRfZKze" role="2Oq$k0">
@@ -4231,7 +4286,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="2V53qRfZKzr" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="2V53qRfZKzs" role="2v6RBE">
@@ -4243,6 +4298,7 @@
   </node>
   <node concept="1lH9Xt" id="wSZHMckJdO">
     <property role="TrG5h" value="Closures" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="wSZHMckJdP" role="1SL9yI">
       <property role="TrG5h" value="testClosures1" />
       <node concept="3cqZAl" id="wSZHMckJdQ" role="3clF45" />
@@ -4254,17 +4310,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="wSZHMckJdV" role="33vP2m">
-              <node concept="2YIFZM" id="wSZHMckJdW" role="2Oq$k0">
+              <node concept="NRdvd" id="prDxnvgY94" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="2YIFZM" id="wSZHMckJdX" role="37wK5m">
+                <node concept="2YIFZM" id="prDxnvgY95" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                 </node>
-                <node concept="Xl_RD" id="wSZHMckJdY" role="37wK5m">
+                <node concept="Xl_RD" id="prDxnvgY96" role="37wK5m">
                   <property role="Xl_RC" value="closures" />
                 </node>
-                <node concept="Xl_RD" id="wSZHMckJdZ" role="37wK5m">
+                <node concept="Xl_RD" id="prDxnvgY97" role="37wK5m">
                   <property role="Xl_RC" value="closuresEntry1" />
                 </node>
               </node>
@@ -4297,15 +4353,17 @@
             </node>
           </node>
           <node concept="38rIoz" id="wSZHMclltM" role="38rM$J">
-            <property role="38rIoG" value="intarr[0]" />
+            <property role="38rIoG" value="intarr\\[0l?\\]" />
             <property role="38rMdH" value="1" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="wSZHMclmb$" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
           <node concept="38rIoz" id="wSZHMcllwY" role="38rM$J">
-            <property role="38rIoG" value="intarr[1]" />
+            <property role="38rIoG" value="intarr\\[1l?\\]" />
             <property role="38rMdH" value="2" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="wSZHMclmeG" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -4360,8 +4418,9 @@
             </node>
           </node>
           <node concept="38rIoz" id="wSZHMcrqmG" role="38rM$J">
-            <property role="38rIoG" value="intarr[0]" />
+            <property role="38rIoG" value="intarr\\[0l?\\]" />
             <property role="38rMdH" value="2" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="wSZHMcrr10" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
@@ -4395,8 +4454,9 @@
             </node>
           </node>
           <node concept="38rIoz" id="wSZHMcrrbE" role="38rM$J">
-            <property role="38rIoG" value="intarr[1]" />
+            <property role="38rIoG" value="intarr\\[1l?\\]" />
             <property role="38rMdH" value="4" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="wSZHMcrrNd" role="38rYrG">
               <ref role="ehGHo" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
             </node>
@@ -4419,7 +4479,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="wSZHMckJeE" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="wSZHMckJeF" role="2v6RBE">
@@ -4439,17 +4499,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="wSZHMckM6P" role="33vP2m">
-              <node concept="2YIFZM" id="wSZHMckM6Q" role="2Oq$k0">
-                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="NRdvd" id="5EwdfGVi7KA" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-                <node concept="2YIFZM" id="wSZHMckM6R" role="37wK5m">
+                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2YIFZM" id="5EwdfGVi7KB" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                 </node>
-                <node concept="Xl_RD" id="wSZHMckM6S" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVi7KC" role="37wK5m">
                   <property role="Xl_RC" value="closures" />
                 </node>
-                <node concept="Xl_RD" id="wSZHMckM6T" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVi7KD" role="37wK5m">
                   <property role="Xl_RC" value="closuresEntry2" />
                 </node>
               </node>
@@ -4559,7 +4619,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="wSZHMckM76" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="wSZHMckM77" role="2v6RBE">
@@ -4571,6 +4631,7 @@
   </node>
   <node concept="1lH9Xt" id="4FPrGu908MT">
     <property role="TrG5h" value="Loops" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="4FPrGu908MU" role="1SL9yI">
       <property role="TrG5h" value="testWhileLoop" />
       <node concept="3cqZAl" id="4FPrGu908MV" role="3clF45" />
@@ -4582,17 +4643,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="4FPrGu908N0" role="33vP2m">
-              <node concept="2YIFZM" id="4FPrGu908N1" role="2Oq$k0">
-                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="NRdvd" id="5EwdfGVieSU" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-                <node concept="2YIFZM" id="4FPrGu908N2" role="37wK5m">
+                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2YIFZM" id="5EwdfGVieSV" role="37wK5m">
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                 </node>
-                <node concept="Xl_RD" id="4FPrGu908N3" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVieSW" role="37wK5m">
                   <property role="Xl_RC" value="loops" />
                 </node>
-                <node concept="Xl_RD" id="4FPrGu908N4" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVieSX" role="37wK5m">
                   <property role="Xl_RC" value="entryWhileLoop" />
                 </node>
               </node>
@@ -4604,7 +4665,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4FPrGu908N7" role="3cqZAp" />
         <node concept="3vwNmj" id="4FPrGu908N8" role="3cqZAp">
           <node concept="2OqwBi" id="4FPrGu908N9" role="3vwVQn">
             <node concept="3cpWsa" id="4FPrGu908Na" role="2Oq$k0">
@@ -4691,7 +4751,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="4FPrGu908NN" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="4FPrGu908NO" role="2v6RBE">
@@ -4711,17 +4771,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="4FPrGu908NV" role="33vP2m">
-              <node concept="2YIFZM" id="4FPrGu908NW" role="2Oq$k0">
-                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="NRdvd" id="5EwdfGVif26" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-                <node concept="2YIFZM" id="4FPrGu908NX" role="37wK5m">
+                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2YIFZM" id="5EwdfGVif27" role="37wK5m">
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                 </node>
-                <node concept="Xl_RD" id="4FPrGu908NY" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVif28" role="37wK5m">
                   <property role="Xl_RC" value="loops" />
                 </node>
-                <node concept="Xl_RD" id="4FPrGu908NZ" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVif29" role="37wK5m">
                   <property role="Xl_RC" value="entryDoWhileLoop" />
                 </node>
               </node>
@@ -4733,7 +4793,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4FPrGu908O2" role="3cqZAp" />
         <node concept="3vwNmj" id="4FPrGu908O3" role="3cqZAp">
           <node concept="2OqwBi" id="4FPrGu908O4" role="3vwVQn">
             <node concept="3cpWsa" id="4FPrGu908O5" role="2Oq$k0">
@@ -4806,7 +4865,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="4FPrGu908Ox" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="4FPrGu908Oy" role="2v6RBE">
@@ -4826,17 +4885,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="3kmIFBmgDPJ" role="33vP2m">
-              <node concept="2YIFZM" id="3kmIFBmgDPK" role="2Oq$k0">
+              <node concept="NRdvd" id="5EwdfGVifn6" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="2YIFZM" id="3kmIFBmgDPL" role="37wK5m">
+                <node concept="2YIFZM" id="5EwdfGVifn7" role="37wK5m">
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                 </node>
-                <node concept="Xl_RD" id="3kmIFBmgDPM" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVifn8" role="37wK5m">
                   <property role="Xl_RC" value="loops" />
                 </node>
-                <node concept="Xl_RD" id="3kmIFBmgDPN" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVifn9" role="37wK5m">
                   <property role="Xl_RC" value="entryForLoop" />
                 </node>
               </node>
@@ -4848,7 +4907,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3kmIFBmgDPQ" role="3cqZAp" />
         <node concept="3vwNmj" id="3kmIFBmgDPR" role="3cqZAp">
           <node concept="2OqwBi" id="3kmIFBmgDPS" role="3vwVQn">
             <node concept="3cpWsa" id="3kmIFBmgDPT" role="2Oq$k0">
@@ -4908,7 +4966,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="3kmIFBmgDQe" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="3kmIFBmgDQf" role="2v6RBE">
@@ -4920,6 +4978,7 @@
   </node>
   <node concept="1lH9Xt" id="7rAi6S1yC2I">
     <property role="TrG5h" value="Conditionals" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="7rAi6S1yC2J" role="1SL9yI">
       <property role="TrG5h" value="testIf" />
       <node concept="3cqZAl" id="7rAi6S1yC2K" role="3clF45" />
@@ -4931,17 +4990,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="7rAi6S1yC2P" role="33vP2m">
-              <node concept="2YIFZM" id="7rAi6S1yC2Q" role="2Oq$k0">
+              <node concept="NRdvd" id="5EwdfGVi9a_" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="2YIFZM" id="7rAi6S1yC2R" role="37wK5m">
+                <node concept="2YIFZM" id="5EwdfGVi9aA" role="37wK5m">
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                 </node>
-                <node concept="Xl_RD" id="7rAi6S1yC2S" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVi9aB" role="37wK5m">
                   <property role="Xl_RC" value="conditionals" />
                 </node>
-                <node concept="Xl_RD" id="7rAi6S1yC2T" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVi9aC" role="37wK5m">
                   <property role="Xl_RC" value="entryIf" />
                 </node>
               </node>
@@ -4990,7 +5049,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="7rAi6S1yC3o" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="7rAi6S1yC3p" role="2v6RBE">
@@ -5010,17 +5069,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="7rAi6S1yC3w" role="33vP2m">
-              <node concept="2YIFZM" id="7rAi6S1yC3x" role="2Oq$k0">
+              <node concept="NRdvd" id="5EwdfGVi9jL" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="2YIFZM" id="7rAi6S1yC3y" role="37wK5m">
+                <node concept="2YIFZM" id="5EwdfGVi9jM" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                 </node>
-                <node concept="Xl_RD" id="7rAi6S1yC3z" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVi9jN" role="37wK5m">
                   <property role="Xl_RC" value="conditionals" />
                 </node>
-                <node concept="Xl_RD" id="7rAi6S1yC3$" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVi9jO" role="37wK5m">
                   <property role="Xl_RC" value="entryElseIf" />
                 </node>
               </node>
@@ -5069,7 +5128,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="7rAi6S1yWge" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="7rAi6S1yC40" role="2v6RBE">
@@ -5089,17 +5148,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="7rAi6S1_5Xd" role="33vP2m">
-              <node concept="2YIFZM" id="7rAi6S1_5Xe" role="2Oq$k0">
+              <node concept="NRdvd" id="5EwdfGVi9_C" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="2YIFZM" id="7rAi6S1_5Xf" role="37wK5m">
+                <node concept="2YIFZM" id="5EwdfGVi9_D" role="37wK5m">
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                 </node>
-                <node concept="Xl_RD" id="7rAi6S1_5Xg" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVi9_E" role="37wK5m">
                   <property role="Xl_RC" value="conditionals" />
                 </node>
-                <node concept="Xl_RD" id="7rAi6S1_5Xh" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVi9_F" role="37wK5m">
                   <property role="Xl_RC" value="entrySwitch" />
                 </node>
               </node>
@@ -5155,7 +5214,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="7rAi6S1_5Xy" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="7rAi6S1_5Xz" role="2v6RBE">
@@ -5167,6 +5226,7 @@
   </node>
   <node concept="1lH9Xt" id="PS2VOYQLrc">
     <property role="TrG5h" value="Gotos" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="PS2VOYQLrd" role="1SL9yI">
       <property role="TrG5h" value="testGoto" />
       <node concept="3cqZAl" id="PS2VOYQLre" role="3clF45" />
@@ -5230,7 +5290,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="PS2VOYQLrB" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="PS2VOYQLrC" role="2v6RBE">
@@ -5242,6 +5302,7 @@
   </node>
   <node concept="1lH9Xt" id="PS2VOYR_MN">
     <property role="TrG5h" value="GlobalConstants" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="PS2VOYR_MO" role="1SL9yI">
       <property role="TrG5h" value="testGlobalConstants" />
       <node concept="3cqZAl" id="PS2VOYR_MP" role="3clF45" />
@@ -5275,7 +5336,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="PS2VOYR_N1" role="3cqZAp" />
         <node concept="3vwNmj" id="PS2VOYR_N2" role="3cqZAp">
           <node concept="2OqwBi" id="PS2VOYR_N3" role="3vwVQn">
             <node concept="3cpWsa" id="PS2VOYR_N4" role="2Oq$k0">
@@ -5306,7 +5366,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="PS2VOYR_Nc" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="PS2VOYR_Nd" role="2v6RBE">
@@ -5348,7 +5408,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="PS2VOYSxGz" role="3cqZAp" />
         <node concept="3vwNmj" id="PS2VOYSxG$" role="3cqZAp">
           <node concept="2OqwBi" id="PS2VOYSxG_" role="3vwVQn">
             <node concept="3cpWsa" id="PS2VOYSxGA" role="2Oq$k0">
@@ -5370,7 +5429,8 @@
           </node>
           <node concept="38rIoz" id="PS2VOYSxGG" role="38rM$J">
             <property role="38rIoG" value="a" />
-            <property role="38rMdH" value="3" />
+            <property role="38rMdH" value="3l?l?" />
+            <property role="1F1lcY" value="true" />
             <node concept="3Tqbb2" id="PS2VOYSxGH" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -5379,7 +5439,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="PS2VOYSxGJ" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="PS2VOYSxGK" role="2v6RBE">
@@ -5391,6 +5451,7 @@
   </node>
   <node concept="1lH9Xt" id="6Xk4NhN96p8">
     <property role="TrG5h" value="Pointers" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="6Xk4NhN96p9" role="1SL9yI">
       <property role="TrG5h" value="testSimplePointers" />
       <node concept="3cqZAl" id="6Xk4NhN96pa" role="3clF45" />
@@ -5424,7 +5485,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6Xk4NhN96pm" role="3cqZAp" />
         <node concept="3vwNmj" id="6Xk4NhN96pn" role="3cqZAp">
           <node concept="2OqwBi" id="6Xk4NhN96po" role="3vwVQn">
             <node concept="3cpWsa" id="6Xk4NhN96pp" role="2Oq$k0">
@@ -5476,7 +5536,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="6Xk4NhN96pY" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="6Xk4NhN96pZ" role="2v6RBE">
@@ -5518,7 +5578,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6Xk4NhNaiqZ" role="3cqZAp" />
         <node concept="3vwNmj" id="6Xk4NhNair0" role="3cqZAp">
           <node concept="2OqwBi" id="6Xk4NhNair1" role="3vwVQn">
             <node concept="3cpWsa" id="6Xk4NhNair2" role="2Oq$k0">
@@ -5582,7 +5641,7 @@
           </node>
           <node concept="38rIoz" id="6Xk4NhNaire" role="38rM$J">
             <property role="38rIoG" value="addrDiff" />
-            <property role="38rMdH" value="4" />
+            <property role="38rMdH" value="4u" />
             <node concept="3Tqbb2" id="6Xk4NhNairf" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -5591,7 +5650,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="6Xk4NhNairh" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="6Xk4NhNairi" role="2v6RBE">
@@ -5633,7 +5692,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6Xk4NhNawEl" role="3cqZAp" />
         <node concept="3vwNmj" id="6Xk4NhNawEm" role="3cqZAp">
           <node concept="2OqwBi" id="6Xk4NhNawEn" role="3vwVQn">
             <node concept="3cpWsa" id="6Xk4NhNawEo" role="2Oq$k0">
@@ -5678,7 +5736,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="6Xk4NhNawEH" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="6Xk4NhNawEI" role="2v6RBE">
@@ -5690,6 +5748,7 @@
   </node>
   <node concept="1lH9Xt" id="6Xk4NhNexUH">
     <property role="TrG5h" value="Bits" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="6Xk4NhNexUI" role="1SL9yI">
       <property role="TrG5h" value="testSimpleBits" />
       <node concept="3cqZAl" id="6Xk4NhNexUJ" role="3clF45" />
@@ -5796,7 +5855,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="6Xk4NhNexVd" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="6Xk4NhNexVe" role="2v6RBE">
@@ -5808,6 +5867,7 @@
   </node>
   <node concept="1lH9Xt" id="3kmIFBmen8G">
     <property role="TrG5h" value="Simple_Types" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="3kmIFBmen8H" role="1SL9yI">
       <property role="TrG5h" value="testStringTypes" />
       <node concept="3cqZAl" id="3kmIFBmen8I" role="3clF45" />
@@ -5819,17 +5879,17 @@
               <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
             </node>
             <node concept="2OqwBi" id="3kmIFBmen8N" role="33vP2m">
-              <node concept="2YIFZM" id="3kmIFBmen8O" role="2Oq$k0">
-                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+              <node concept="NRdvd" id="5EwdfGVihH5" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-                <node concept="2YIFZM" id="3kmIFBmen8P" role="37wK5m">
+                <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
+                <node concept="2YIFZM" id="5EwdfGVihH6" role="37wK5m">
                   <ref role="1Pybhc" node="5djBfpcTa1m" resolve="Utils" />
                   <ref role="37wK5l" node="5djBfpcTb1N" resolve="currentModel" />
                 </node>
-                <node concept="Xl_RD" id="3kmIFBmen8Q" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVihH7" role="37wK5m">
                   <property role="Xl_RC" value="simple_types" />
                 </node>
-                <node concept="Xl_RD" id="3kmIFBmen8R" role="37wK5m">
+                <node concept="Xl_RD" id="5EwdfGVihH8" role="37wK5m">
                   <property role="Xl_RC" value="stringTypesEntry" />
                 </node>
               </node>
@@ -5841,7 +5901,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3kmIFBmen8U" role="3cqZAp" />
         <node concept="3vwNmj" id="3kmIFBmen8V" role="3cqZAp">
           <node concept="2OqwBi" id="3kmIFBmen8W" role="3vwVQn">
             <node concept="3cpWsa" id="3kmIFBmen8X" role="2Oq$k0">
@@ -5963,7 +6022,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="3kmIFBmen9y" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="3kmIFBmen9z" role="2v6RBE">
@@ -5975,6 +6034,7 @@
   </node>
   <node concept="1lH9Xt" id="lMaDrUr977">
     <property role="TrG5h" value="SimpleLifting" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="lMaDrUqKiu" role="1SL9yI">
       <property role="TrG5h" value="testLifting" />
       <node concept="3cqZAl" id="lMaDrUqKiv" role="3clF45" />
@@ -6031,35 +6091,48 @@
             <node concept="_YKpA" id="lMaDrUqOp7" role="1tU5fm">
               <node concept="3Tqbb2" id="lMaDrUqOpa" role="_ZDj9" />
             </node>
-            <node concept="2YIFZM" id="lMaDrUqOpi" role="33vP2m">
-              <ref role="37wK5l" to="lom1:63FOlSvXCpm" resolve="getAllTraceableNodes" />
-              <ref role="1Pybhc" to="lom1:6xym8k6eHPR" resolve="TraceInfoUtil" />
-              <node concept="37vLTw" id="lMaDrUqW2A" role="37wK5m">
-                <ref role="3cqZAo" node="lMaDrUqQYb" resolve="className" />
-              </node>
-              <node concept="Xl_RD" id="lMaDrUqOpo" role="37wK5m">
-                <property role="Xl_RC" value="smoke.c" />
-              </node>
-              <node concept="3cmrfG" id="lMaDrUqOpp" role="37wK5m">
-                <property role="3cmrfH" value="12" />
-              </node>
-            </node>
           </node>
         </node>
-        <node concept="3clFbF" id="lMaDrUqS9h" role="3cqZAp">
-          <node concept="2OqwBi" id="lMaDrUqS9e" role="3clFbG">
-            <node concept="10M0yZ" id="lMaDrUqS9f" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="lMaDrUqS9g" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="lMaDrUscP2" role="37wK5m">
-                <node concept="Xl_RD" id="lMaDrUscRa" role="3uHU7B">
-                  <property role="Xl_RC" value="allNodes: " />
+        <node concept="3kxDZ6" id="5EwdfGVlLOV" role="3cqZAp">
+          <node concept="9aQIb" id="5EwdfGVnkre" role="3kxCCa">
+            <node concept="3clFbS" id="5EwdfGVnkrf" role="9aQI4">
+              <node concept="3clFbF" id="5EwdfGVlLn$" role="3cqZAp">
+                <node concept="37vLTI" id="5EwdfGVlLnA" role="3clFbG">
+                  <node concept="NRdvd" id="5EwdfGVlKWg" role="37vLTx">
+                    <ref role="37wK5l" to="lom1:63FOlSvXCpm" resolve="getAllTraceableNodes" />
+                    <ref role="1Pybhc" to="lom1:6xym8k6eHPR" resolve="TraceInfoUtil" />
+                    <node concept="37vLTw" id="5EwdfGVlKWh" role="37wK5m">
+                      <ref role="3cqZAo" node="lMaDrUqQYb" resolve="className" />
+                    </node>
+                    <node concept="Xl_RD" id="5EwdfGVlKWi" role="37wK5m">
+                      <property role="Xl_RC" value="smoke.c" />
+                    </node>
+                    <node concept="3cmrfG" id="5EwdfGVlKWj" role="37wK5m">
+                      <property role="3cmrfH" value="12" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="5EwdfGVlLnE" role="37vLTJ">
+                    <ref role="3cqZAo" node="lMaDrUqOph" resolve="allTraceableNodes" />
+                  </node>
                 </node>
-                <node concept="37vLTw" id="lMaDrUqSeu" role="3uHU7w">
-                  <ref role="3cqZAo" node="lMaDrUqOph" resolve="allTraceableNodes" />
+              </node>
+              <node concept="3clFbF" id="lMaDrUqS9h" role="3cqZAp">
+                <node concept="2OqwBi" id="lMaDrUqS9e" role="3clFbG">
+                  <node concept="10M0yZ" id="lMaDrUqS9f" role="2Oq$k0">
+                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  </node>
+                  <node concept="liA8E" id="lMaDrUqS9g" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="3cpWs3" id="lMaDrUscP2" role="37wK5m">
+                      <node concept="Xl_RD" id="lMaDrUscRa" role="3uHU7B">
+                        <property role="Xl_RC" value="allNodes: " />
+                      </node>
+                      <node concept="37vLTw" id="lMaDrUqSeu" role="3uHU7w">
+                        <ref role="3cqZAo" node="lMaDrUqOph" resolve="allTraceableNodes" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -6083,6 +6156,7 @@
   </node>
   <node concept="1lH9Xt" id="3CqL$IpJjT$">
     <property role="TrG5h" value="GSwitch" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="3CqL$IpJjT_" role="1SL9yI">
       <property role="TrG5h" value="testGSwitch1" />
       <node concept="3cqZAl" id="3CqL$IpJjTA" role="3clF45" />
@@ -6167,7 +6241,7 @@
             <property role="38rIoG" value="FAIL" />
             <property role="38rMdH" value="Assertion Violated" />
             <node concept="3Tqbb2" id="3CqL$IpJjTZ" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="37vLTw" id="3CqL$IpJjU0" role="2v6RBE">

@@ -5,7 +5,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -59,6 +59,9 @@
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
+      <concept id="1201385106094" name="jetbrains.mps.baseLanguage.structure.PropertyReference" flags="nn" index="2S8uIT">
+        <reference id="1201385237847" name="property" index="2S8YL0" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -273,14 +276,14 @@
       <node concept="37vLTG" id="4arT0cntBGr" role="3clF46">
         <property role="TrG5h" value="rawAssig" />
         <node concept="3uibUv" id="4arT0cntBGs" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cntBGt" role="3clF46">
         <property role="TrG5h" value="allRawStates" />
         <node concept="_YKpA" id="4arT0cntBGu" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cntBGv" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -448,14 +451,14 @@
       <node concept="37vLTG" id="4arT0cnseGi" role="3clF46">
         <property role="TrG5h" value="rawAssig" />
         <node concept="3uibUv" id="4arT0cnseGj" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cnseGk" role="3clF46">
         <property role="TrG5h" value="allRawStates" />
         <node concept="_YKpA" id="4arT0cnseGl" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cnseGm" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -930,14 +933,14 @@
       <node concept="37vLTG" id="4arT0cntBHz" role="3clF46">
         <property role="TrG5h" value="rawAssig" />
         <node concept="3uibUv" id="4arT0cntBH$" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cntBH_" role="3clF46">
         <property role="TrG5h" value="rawStates" />
         <node concept="_YKpA" id="4arT0cntBHA" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cntBHB" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -990,14 +993,14 @@
       <node concept="37vLTG" id="4arT0cntDX5" role="3clF46">
         <property role="TrG5h" value="crtState" />
         <node concept="3uibUv" id="4arT0cntDX6" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cntDX7" role="3clF46">
         <property role="TrG5h" value="allRawStates" />
         <node concept="_YKpA" id="4arT0cntDX8" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cntDX9" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -1492,8 +1495,8 @@
                         <node concept="37vLTw" id="1LaDVhWSNbC" role="2Oq$k0">
                           <ref role="3cqZAo" node="4arT0cntDY1" resolve="rawCall" />
                         </node>
-                        <node concept="liA8E" id="1LaDVhWSNbD" role="2OqNvi">
-                          <ref role="37wK5l" to="rbq9:54VWonii31Z" resolve="getFunction" />
+                        <node concept="2S8uIT" id="1$MI$rgKvR9" role="2OqNvi">
+                          <ref role="2S8YL0" to="rbq9:1$MI$rgH1uG" resolve="function" />
                         </node>
                       </node>
                       <node concept="liA8E" id="1LaDVhWSNbE" role="2OqNvi">
@@ -1582,14 +1585,14 @@
       <node concept="37vLTG" id="4arT0cntDY1" role="3clF46">
         <property role="TrG5h" value="rawCall" />
         <node concept="3uibUv" id="4arT0cntDY2" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cntDY3" role="3clF46">
         <property role="TrG5h" value="rawStates" />
         <node concept="_YKpA" id="4arT0cntDY4" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cntDY5" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -1609,6 +1612,40 @@
     </node>
     <node concept="3uibUv" id="4arT0cntDYb" role="1zkMxy">
       <ref role="3uigEE" to="8ear:7iLQIU37gC6" resolve="FunctionCallsAndReturnsLifterBase" />
+    </node>
+    <node concept="2tJIrI" id="6_oo6Ldo83P" role="jymVt" />
+    <node concept="3clFb_" id="6_oo6Ldo7rk" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isNoise" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="10P_77" id="6_oo6Ldo7rm" role="3clF45" />
+      <node concept="37vLTG" id="6_oo6Ldo7rn" role="3clF46">
+        <property role="TrG5h" value="crtState" />
+        <node concept="3uibUv" id="6_oo6Ldo7ro" role="1tU5fm">
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6_oo6Ldo7rp" role="3clF46">
+        <property role="TrG5h" value="allRawStates" />
+        <node concept="_YKpA" id="6_oo6Ldo7rq" role="1tU5fm">
+          <node concept="3uibUv" id="6_oo6Ldo7rr" role="_ZDj9">
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6_oo6Ldo7rs" role="1B3o_S" />
+      <node concept="3clFbS" id="6_oo6Ldo7rv" role="3clF47">
+        <node concept="3clFbF" id="6_oo6Ldo7rx" role="3cqZAp">
+          <node concept="3clFbT" id="6_oo6Ldo7rw" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6_oo6Ldo8DM" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="NWlO9" id="6_oo6Ldo9a1" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="4arT0cntGeg">
@@ -1642,14 +1679,14 @@
       <node concept="37vLTG" id="4arT0cntGep" role="3clF46">
         <property role="TrG5h" value="crtState" />
         <node concept="3uibUv" id="4arT0cntGeq" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cntGer" role="3clF46">
         <property role="TrG5h" value="allRawStates" />
         <node concept="_YKpA" id="4arT0cntGes" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cntGet" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -1828,14 +1865,14 @@
       <node concept="37vLTG" id="4arT0cntGfx" role="3clF46">
         <property role="TrG5h" value="rawReturn" />
         <node concept="3uibUv" id="4arT0cntGfy" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="4arT0cntGfz" role="3clF46">
         <property role="TrG5h" value="rawStates" />
         <node concept="_YKpA" id="4arT0cntGf$" role="1tU5fm">
           <node concept="3uibUv" id="4arT0cntGf_" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -1850,6 +1887,39 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntGfD" role="jymVt" />
+    <node concept="3clFb_" id="6_oo6Ldoa5i" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isNoise" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="10P_77" id="6_oo6Ldoa5k" role="3clF45" />
+      <node concept="37vLTG" id="6_oo6Ldoa5l" role="3clF46">
+        <property role="TrG5h" value="crtState" />
+        <node concept="3uibUv" id="6_oo6Ldoa5m" role="1tU5fm">
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6_oo6Ldoa5n" role="3clF46">
+        <property role="TrG5h" value="allRawStates" />
+        <node concept="_YKpA" id="6_oo6Ldoa5o" role="1tU5fm">
+          <node concept="3uibUv" id="6_oo6Ldoa5p" role="_ZDj9">
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6_oo6Ldoa5q" role="1B3o_S" />
+      <node concept="3clFbS" id="6_oo6Ldoa5t" role="3clF47">
+        <node concept="3clFbF" id="6_oo6Ldoa5v" role="3cqZAp">
+          <node concept="3clFbT" id="6_oo6Ldoa5u" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6_oo6LdoawL" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="NWlO9" id="6_oo6LdoaQl" role="lGtFl">
+        <property role="NWlVz" value="{@inheritDoc}" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="4arT0cntGfE" role="1B3o_S" />
     <node concept="NWlO9" id="4arT0cntGfF" role="lGtFl">
       <property role="NWlVz" value="Lifter of function returns for com.mbeddr.components language." />
@@ -1941,14 +2011,14 @@
       <node concept="37vLTG" id="576QrOJcWsI" role="3clF46">
         <property role="TrG5h" value="crtRawState" />
         <node concept="3uibUv" id="576QrOJcWsJ" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="576QrOJcWsK" role="3clF46">
         <property role="TrG5h" value="rawStates" />
         <node concept="_YKpA" id="576QrOJcWsL" role="1tU5fm">
           <node concept="3uibUv" id="576QrOJcWsM" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>
@@ -2015,14 +2085,14 @@
       <node concept="37vLTG" id="576QrOJcWyH" role="3clF46">
         <property role="TrG5h" value="crtState" />
         <node concept="3uibUv" id="576QrOJcWyI" role="1tU5fm">
-          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+          <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
       <node concept="37vLTG" id="576QrOJcWyJ" role="3clF46">
         <property role="TrG5h" value="allRawStates" />
         <node concept="_YKpA" id="576QrOJcWyK" role="1tU5fm">
           <node concept="3uibUv" id="576QrOJcWyL" role="_ZDj9">
-            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="RawCounterexampleState" />
+            <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
       </node>

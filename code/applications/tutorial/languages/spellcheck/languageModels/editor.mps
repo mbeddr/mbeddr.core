@@ -2,7 +2,7 @@
 <model ref="r:90e0358b-1a9f-4d73-8d30-060f1f9265fa(spellcheck.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -101,7 +101,7 @@
         </node>
         <node concept="3F2HdR" id="55YMheoamIN" role="3EZMnx">
           <property role="2czwfO" value="," />
-          <ref role="1NtTu8" to="e6xd:55YMheoaiO9" />
+          <ref role="1NtTu8" to="e6xd:55YMheoaiO9" resolve="wrong_spellings" />
           <node concept="2iRfu4" id="55YMheoamIP" role="2czzBx" />
         </node>
         <node concept="2iRfu4" id="2eNFjNPMTJs" role="2iSdaV" />

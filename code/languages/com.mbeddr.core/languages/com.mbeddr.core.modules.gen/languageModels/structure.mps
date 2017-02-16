@@ -2,7 +2,8 @@
 <model ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -26,10 +27,11 @@
         <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -43,12 +45,14 @@
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -67,26 +71,21 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="1647297554" />
-    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
-    <node concept="1TJgyi" id="3N$tYyGbKra" role="1TKVEl">
-      <property role="TrG5h" value="fileExtension" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
+    <property role="EcuMT" value="1758019824472688219" />
+    <ref role="1TJDcQ" node="6iilwRlTjqY" resolve="AbstractGenModule" />
     <node concept="1TJgyj" id="1x_Jrt9Mwpt" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="1758019824472688221" />
       <ref role="20lvS9" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
     <node concept="1TJgyj" id="19a6$uAArkM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="refs" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="1317894735999382834" />
       <ref role="20lvS9" node="34x64NyTNWu" resolve="GenModuleImport" />
-    </node>
-    <node concept="PrWs8" id="19a6$uAAql3" role="PzmwI">
-      <ref role="PrY4T" to="x27k:19a6$uAAqkn" resolve="IModuleContentContainer" />
     </node>
     <node concept="PrWs8" id="2G3hhvdKG_I" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKm$" resolve="UnitConcept" />
@@ -95,6 +94,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="myHeader" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1598382569875685745" />
       <ref role="20lvS9" node="1x_Jrt9Mwpu" resolve="GenModuleH" />
     </node>
   </node>
@@ -103,34 +103,34 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="1647297557" />
-    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+    <property role="EcuMT" value="1758019824472688222" />
+    <ref role="1TJDcQ" node="6iilwRlTjqY" resolve="AbstractGenModule" />
     <node concept="1TJgyj" id="4Pack3zOoGA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="headerImports" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="5569318043966868262" />
       <ref role="20lvS9" node="34x64NyTNWu" resolve="GenModuleImport" />
     </node>
     <node concept="1TJgyj" id="1x_Jrt9Mwpv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="1758019824472688223" />
       <ref role="20lvS9" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-    </node>
-    <node concept="PrWs8" id="19a6$uAAql4" role="PzmwI">
-      <ref role="PrY4T" to="x27k:19a6$uAAqkn" resolve="IModuleContentContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="19a6$uAAsGA">
     <property role="TrG5h" value="GenImplModuleImport" />
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="1193024147" />
+    <property role="EcuMT" value="1317894735999388454" />
     <ref role="1TJDcQ" node="34x64NyTNWu" resolve="GenModuleImport" />
     <node concept="1TJgyj" id="19a6$uAAsGB" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="module" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1317894735999388455" />
       <ref role="20lvS9" node="1x_Jrt9Mwpu" resolve="GenModuleH" />
     </node>
     <node concept="PrWs8" id="6clJcrKkzPu" role="PzmwI">
@@ -142,10 +142,11 @@
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
     <property role="34LRSv" value="header" />
-    <property role="1pbfSe" value="1310361741" />
+    <property role="EcuMT" value="3830958861296806570" />
     <ref role="1TJDcQ" node="34x64NyTNWu" resolve="GenModuleImport" />
     <node concept="1TJgyi" id="3kEjc_WIMEF" role="1TKVEl">
       <property role="TrG5h" value="haeaderFileName" />
+      <property role="IQ2nx" value="3830958861296806571" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -154,18 +155,20 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="589654911" />
+    <property role="EcuMT" value="9066372830132908402" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="3BLvzpMQtkP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="headers" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="4175257101869372725" />
       <ref role="20lvS9" to="x27k:5jyom5fOqJw" resolve="HeaderDescriptor" />
     </node>
     <node concept="1TJgyj" id="7RiewQ_kN5O" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="9066372830132908404" />
       <ref role="20lvS9" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
     <node concept="PrWs8" id="7RiewQ_kN5N" role="PzmwI">
@@ -176,12 +179,13 @@
     <property role="TrG5h" value="GenExtModuleImport" />
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="589752050" />
+    <property role="EcuMT" value="9066372830133005541" />
     <ref role="1TJDcQ" node="34x64NyTNWu" resolve="GenModuleImport" />
     <node concept="1TJgyj" id="7RiewQ_laNA" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="moduleExt" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="9066372830133005542" />
       <ref role="20lvS9" node="7RiewQ_kN5M" resolve="GenExtModule" />
     </node>
     <node concept="PrWs8" id="6clJcrKkyyF" role="PzmwI">
@@ -193,23 +197,24 @@
     <property role="TrG5h" value="GenModuleImport" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
-    <property role="1pbfSe" value="336090986" />
+    <property role="EcuMT" value="3540137500593307422" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="PlHQZ" id="7lqvH8EmCAQ">
     <property role="TrG5h" value="ICareAboutImportingMyself" />
     <property role="3GE5qa" value="extending" />
-    <property role="1pbfSe" value="1615525752" />
+    <property role="EcuMT" value="8456210691460336054" />
   </node>
   <node concept="1TIwiD" id="24KoSSjx2OU">
     <property role="TrG5h" value="NameShorteningConfiguration" />
     <property role="3GE5qa" value="config" />
     <property role="34LRSv" value="prevent name mangling" />
     <property role="R4oN_" value="prevent name mangling for unique names" />
-    <property role="1pbfSe" value="884248776" />
+    <property role="EcuMT" value="2391520863997668666" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="24KoSSjxspb" role="1TKVEl">
       <property role="TrG5h" value="allowNameShortening" />
+      <property role="IQ2nx" value="2391520863997773387" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="PrWs8" id="24KoSSjzI75" role="PzmwI">
@@ -219,7 +224,7 @@
   <node concept="1TIwiD" id="5tbhN$5U4Dv">
     <property role="3GE5qa" value="module" />
     <property role="TrG5h" value="IWantToBeC90" />
-    <property role="1pbfSe" value="1563660696" />
+    <property role="EcuMT" value="6290199614790847071" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="5tbhN$5U4E4" role="lGtFl">
       <property role="Hh88m" value="iWantToBe90" />
@@ -235,7 +240,7 @@
     <property role="3GE5qa" value="config" />
     <property role="TrG5h" value="NameShorteingRoot" />
     <property role="19KtqR" value="true" />
-    <property role="1pbfSe" value="2025716980" />
+    <property role="EcuMT" value="8308995279406662085" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7dfuMW5rC7I" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -247,8 +252,46 @@
     <property role="34LRSv" value="ForceImportReferencedElements" />
     <property role="R4oN_" value="used in type system tests to force copying imported root nodes from other models" />
     <property role="19KtqR" value="true" />
-    <property role="1pbfSe" value="14976623" />
+    <property role="EcuMT" value="5943183680458525568" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1lYd87JBZuY">
+    <property role="3GE5qa" value="module" />
+    <property role="TrG5h" value="UniquifyIncludeGuard" />
+    <property role="EcuMT" value="1548733054537693118" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="1lYd87JBZuZ" role="lGtFl">
+      <property role="Hh88m" value="uniqueIncludeGuard" />
+      <node concept="trNpa" id="1lYd87JBZv1" role="EQaZv">
+        <ref role="trN6q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="7uVh7XGHfib" role="1TKVEl">
+      <property role="TrG5h" value="preffix" />
+      <property role="IQ2nx" value="8627564825233650827" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7uVh7XGHfid" role="1TKVEl">
+      <property role="TrG5h" value="suffix" />
+      <property role="IQ2nx" value="8627564825233650829" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6iilwRlTjqY">
+    <property role="3GE5qa" value="module" />
+    <property role="TrG5h" value="AbstractGenModule" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="EcuMT" value="7246949367815681726" />
+    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+    <node concept="1TJgyi" id="6iilwRlTjqZ" role="1TKVEl">
+      <property role="TrG5h" value="fileExtension" />
+      <property role="IQ2nx" value="7246949367815681727" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="6iilwRlTjr8" role="PzmwI">
+      <ref role="PrY4T" to="x27k:19a6$uAAqkn" resolve="IModuleContentContainer" />
+    </node>
   </node>
 </model>
 

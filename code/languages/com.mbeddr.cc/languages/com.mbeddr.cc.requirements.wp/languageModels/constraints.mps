@@ -83,11 +83,12 @@
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
+      <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -173,8 +174,8 @@
                 <node concept="3eOVzh" id="vRfru3oXvb" role="3clFbw">
                   <node concept="2OqwBi" id="vRfru3oXwl" role="3uHU7w">
                     <node concept="1PxgMI" id="vRfru3oXvZ" role="2Oq$k0">
-                      <ref role="1PxNhF" to="6pek:vRfru3oPfO" resolve="WPActualWork" />
-                      <node concept="2OqwBi" id="vRfru3oXvz" role="1PxMeX">
+                      <ref role="1m5ApE" to="6pek:vRfru3oPfO" resolve="WPActualWork" />
+                      <node concept="2OqwBi" id="vRfru3oXvz" role="1m5AlR">
                         <node concept="EsrRn" id="vRfru3oXve" role="2Oq$k0" />
                         <node concept="YBYNd" id="vRfru3oXvD" role="2OqNvi" />
                       </node>

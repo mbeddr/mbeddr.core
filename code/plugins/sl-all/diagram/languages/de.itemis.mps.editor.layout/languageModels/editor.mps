@@ -2,7 +2,7 @@
 <model ref="r:20811f0d-4694-4bb9-8755-edcefec29d53(de.itemis.mps.editor.layout.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -130,7 +130,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="2lyMrCuEi$6" role="3EZMnx">
-        <ref role="1NtTu8" to="fu06:2lyMrCuEiqU" />
+        <ref role="1NtTu8" to="fu06:2lyMrCuEiqU" resolve="childCells" />
         <node concept="2EHx9g" id="2lyMrCuEi$O" role="2czzBx" />
       </node>
       <node concept="2iRkQZ" id="2lyMrCuEiH8" role="2iSdaV" />
@@ -177,7 +177,7 @@
             </node>
           </node>
           <node concept="3F1sOY" id="rKHxOE_sm5" role="3EZMnx">
-            <ref role="1NtTu8" to="fu06:2lyMrCuEi$L" />
+            <ref role="1NtTu8" to="fu06:2lyMrCuEi$L" resolve="cell" />
           </node>
           <node concept="3F0ifn" id="rKHxOE_Xw2" role="3EZMnx">
             <property role="3F0ifm" value="  " />

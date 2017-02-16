@@ -8,7 +8,7 @@
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -27,7 +27,6 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
@@ -100,12 +99,6 @@
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
-    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
-      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
-        <child id="1199569906740" name="parameter" index="1bW2Oz" />
-        <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
       <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
@@ -147,22 +140,14 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
-        <child id="1204796294226" name="closure" index="23t8la" />
-      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
-      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
-        <child id="1151689745422" name="elementType" index="A3Ik2" />
-      </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
-      <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
   </registry>
   <node concept="1lH9Xt" id="44j14BH0OH1">
@@ -1275,288 +1260,6 @@
         <node concept="3vwNmj" id="44j14BHAshw" role="3cqZAp">
           <node concept="37vLTw" id="44j14BHAshx" role="3vwVQn">
             <ref role="3cqZAo" node="44j14BHAsho" resolve="res3" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1lH9Xt" id="1X8myJOIgNx">
-    <property role="TrG5h" value="ModelConsistencyChecks" />
-    <node concept="1LZb2c" id="1X8myJOVref" role="1SL9yI">
-      <property role="TrG5h" value="testConsistencyOfVariabilityDefinition_FM" />
-      <node concept="3cqZAl" id="1X8myJOVreg" role="3clF45" />
-      <node concept="3clFbS" id="1X8myJOVreh" role="3clF47">
-        <node concept="3cpWs8" id="1X8myJOVHE8" role="3cqZAp">
-          <node concept="3cpWsn" id="1X8myJOVHEb" role="3cpWs9">
-            <property role="TrG5h" value="fm" />
-            <node concept="H_c77" id="1X8myJOVHE6" role="1tU5fm" />
-            <node concept="BaHAS" id="1X8myJOVHNv" role="33vP2m">
-              <property role="BaBD8" value="fm" />
-              <property role="BaHAW" value="test.analyses.var.testcode.fm" />
-              <property role="BaGAP" value="" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1X8myJOVrei" role="3cqZAp">
-          <node concept="3cpWsn" id="1X8myJOVrej" role="3cpWs9">
-            <property role="TrG5h" value="r" />
-            <node concept="_YKpA" id="1X8myJOVrek" role="1tU5fm">
-              <node concept="3uibUv" id="1X8myJOVslD" role="_ZDj9">
-                <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
-              </node>
-            </node>
-            <node concept="NRdvd" id="1X8myJOVFNa" role="33vP2m">
-              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <ref role="37wK5l" to="oe3g:1X8myJOVvDK" resolve="checkConsistencyOfVariabilityDefinitionWithinModel" />
-              <node concept="37vLTw" id="1X8myJOVHYH" role="37wK5m">
-                <ref role="3cqZAo" node="1X8myJOVHEb" resolve="fm" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1X8myJOVreq" role="3cqZAp" />
-        <node concept="3vlDli" id="1X8myJOVrer" role="3cqZAp">
-          <node concept="2OqwBi" id="1X8myJOVret" role="3tpDZA">
-            <node concept="37vLTw" id="1X8myJOVreu" role="2Oq$k0">
-              <ref role="3cqZAo" node="1X8myJOVrej" resolve="r" />
-            </node>
-            <node concept="34oBXx" id="1X8myJOVrev" role="2OqNvi" />
-          </node>
-          <node concept="3cmrfG" id="1X8myJOWmze" role="3tpDZB">
-            <property role="3cmrfH" value="18" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="1X8myJOVrew" role="3cqZAp" />
-        <node concept="3cpWs8" id="1X8myJOVrex" role="3cqZAp">
-          <node concept="3cpWsn" id="1X8myJOVrey" role="3cpWs9">
-            <property role="TrG5h" value="successfulResults" />
-            <node concept="A3Dl8" id="1X8myJOVrez" role="1tU5fm">
-              <node concept="3uibUv" id="1X8myJOVGq_" role="A3Ik2">
-                <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="1X8myJOVre_" role="33vP2m">
-              <node concept="37vLTw" id="1X8myJOVreA" role="2Oq$k0">
-                <ref role="3cqZAo" node="1X8myJOVrej" resolve="r" />
-              </node>
-              <node concept="3zZkjj" id="1X8myJOVreB" role="2OqNvi">
-                <node concept="1bVj0M" id="1X8myJOVreC" role="23t8la">
-                  <node concept="3clFbS" id="1X8myJOVreD" role="1bW5cS">
-                    <node concept="3clFbF" id="1X8myJOVreE" role="3cqZAp">
-                      <node concept="2OqwBi" id="1X8myJOVreF" role="3clFbG">
-                        <node concept="37vLTw" id="1X8myJOVreG" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1X8myJOVreI" resolve="it" />
-                        </node>
-                        <node concept="liA8E" id="1X8myJOVreH" role="2OqNvi">
-                          <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Rh6nW" id="1X8myJOVreI" role="1bW2Oz">
-                    <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="1X8myJOVreJ" role="1tU5fm" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3vlDli" id="1X8myJOVreK" role="3cqZAp">
-          <node concept="2OqwBi" id="1X8myJOVreM" role="3tpDZA">
-            <node concept="37vLTw" id="1X8myJOVreN" role="2Oq$k0">
-              <ref role="3cqZAo" node="1X8myJOVrey" resolve="successfulResults" />
-            </node>
-            <node concept="34oBXx" id="1X8myJOVreO" role="2OqNvi" />
-          </node>
-          <node concept="3cmrfG" id="1GDKzvUjFIZ" role="3tpDZB">
-            <property role="3cmrfH" value="7" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1LZb2c" id="1X8myJOVIVY" role="1SL9yI">
-      <property role="TrG5h" value="testConsistencyOfVariabilityDefinition_CM" />
-      <node concept="3cqZAl" id="1X8myJOVIVZ" role="3clF45" />
-      <node concept="3clFbS" id="1X8myJOVIW0" role="3clF47">
-        <node concept="3cpWs8" id="1X8myJOVIW1" role="3cqZAp">
-          <node concept="3cpWsn" id="1X8myJOVIW2" role="3cpWs9">
-            <property role="TrG5h" value="cm" />
-            <node concept="H_c77" id="1X8myJOVIW3" role="1tU5fm" />
-            <node concept="BaHAS" id="1X8myJOVIW4" role="33vP2m">
-              <property role="BaBD8" value="test.analyses.var.testcode.cm" />
-              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
-              <property role="BaGAP" value="" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1X8myJOVIW5" role="3cqZAp">
-          <node concept="3cpWsn" id="1X8myJOVIW6" role="3cpWs9">
-            <property role="TrG5h" value="r" />
-            <node concept="_YKpA" id="1X8myJOVIW7" role="1tU5fm">
-              <node concept="3uibUv" id="1X8myJOVIW8" role="_ZDj9">
-                <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
-              </node>
-            </node>
-            <node concept="NRdvd" id="1X8myJOVIW9" role="33vP2m">
-              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <ref role="37wK5l" to="oe3g:1X8myJOVvDK" resolve="checkConsistencyOfVariabilityDefinitionWithinModel" />
-              <node concept="37vLTw" id="1X8myJOVIWa" role="37wK5m">
-                <ref role="3cqZAo" node="1X8myJOVIW2" resolve="cm" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1X8myJOVIWb" role="3cqZAp" />
-        <node concept="3vlDli" id="1X8myJOVIWc" role="3cqZAp">
-          <node concept="2OqwBi" id="1X8myJOVIWe" role="3tpDZA">
-            <node concept="37vLTw" id="1X8myJOVIWf" role="2Oq$k0">
-              <ref role="3cqZAo" node="1X8myJOVIW6" resolve="r" />
-            </node>
-            <node concept="34oBXx" id="1X8myJOVIWg" role="2OqNvi" />
-          </node>
-          <node concept="3cmrfG" id="68jd02EnjFZ" role="3tpDZB">
-            <property role="3cmrfH" value="14" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="1X8myJOVIWh" role="3cqZAp" />
-        <node concept="3cpWs8" id="1X8myJOVIWi" role="3cqZAp">
-          <node concept="3cpWsn" id="1X8myJOVIWj" role="3cpWs9">
-            <property role="TrG5h" value="successfulResults" />
-            <node concept="A3Dl8" id="1X8myJOVIWk" role="1tU5fm">
-              <node concept="3uibUv" id="1X8myJOVIWl" role="A3Ik2">
-                <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="1X8myJOVIWm" role="33vP2m">
-              <node concept="37vLTw" id="1X8myJOVIWn" role="2Oq$k0">
-                <ref role="3cqZAo" node="1X8myJOVIW6" resolve="r" />
-              </node>
-              <node concept="3zZkjj" id="1X8myJOVIWo" role="2OqNvi">
-                <node concept="1bVj0M" id="1X8myJOVIWp" role="23t8la">
-                  <node concept="3clFbS" id="1X8myJOVIWq" role="1bW5cS">
-                    <node concept="3clFbF" id="1X8myJOVIWr" role="3cqZAp">
-                      <node concept="2OqwBi" id="1X8myJOVIWs" role="3clFbG">
-                        <node concept="37vLTw" id="1X8myJOVIWt" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1X8myJOVIWv" resolve="it" />
-                        </node>
-                        <node concept="liA8E" id="1X8myJOVIWu" role="2OqNvi">
-                          <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Rh6nW" id="1X8myJOVIWv" role="1bW2Oz">
-                    <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="1X8myJOVIWw" role="1tU5fm" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3vlDli" id="1X8myJOVIWx" role="3cqZAp">
-          <node concept="3cmrfG" id="4qsm5C8w1wn" role="3tpDZB">
-            <property role="3cmrfH" value="7" />
-          </node>
-          <node concept="2OqwBi" id="1X8myJOVIWz" role="3tpDZA">
-            <node concept="37vLTw" id="1X8myJOVIW$" role="2Oq$k0">
-              <ref role="3cqZAo" node="1X8myJOVIWj" resolve="successfulResults" />
-            </node>
-            <node concept="34oBXx" id="1X8myJOVIW_" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1LZb2c" id="1X8myJOIgNB" role="1SL9yI">
-      <property role="TrG5h" value="testConsistencyOfVariabilityUse" />
-      <node concept="3cqZAl" id="1X8myJOIgNC" role="3clF45" />
-      <node concept="3clFbS" id="1X8myJOIgND" role="3clF47">
-        <node concept="3cpWs8" id="1X8myJOVGCJ" role="3cqZAp">
-          <node concept="3cpWsn" id="1X8myJOVGCM" role="3cpWs9">
-            <property role="TrG5h" value="var_c" />
-            <node concept="H_c77" id="1X8myJOVGCH" role="1tU5fm" />
-            <node concept="BaHAS" id="1X8myJOVGME" role="33vP2m">
-              <property role="BaBD8" value="test.analyses.var.testcode.cm" />
-              <property role="BaHAW" value="test.analyses.var.testcode.var_c" />
-              <property role="BaGAP" value="" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1X8myJOIgNE" role="3cqZAp">
-          <node concept="3cpWsn" id="1X8myJOIgNF" role="3cpWs9">
-            <property role="TrG5h" value="r" />
-            <node concept="_YKpA" id="1X8myJOIgNG" role="1tU5fm">
-              <node concept="3uibUv" id="4Q07H0PQQVw" role="_ZDj9">
-                <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
-              </node>
-            </node>
-            <node concept="NRdvd" id="1X8myJOVGc8" role="33vP2m">
-              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
-              <ref role="37wK5l" to="oe3g:1X8myJOImqY" resolve="checkConsistencyOfVariabilityUseWithinModel" />
-              <node concept="37vLTw" id="1X8myJOVGUb" role="37wK5m">
-                <ref role="3cqZAo" node="1X8myJOVGCM" resolve="var_c" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1X8myJOIHWh" role="3cqZAp" />
-        <node concept="3vlDli" id="1X8myJOIyhF" role="3cqZAp">
-          <node concept="3cmrfG" id="1X8myJOIyjz" role="3tpDZB">
-            <property role="3cmrfH" value="51" />
-          </node>
-          <node concept="2OqwBi" id="1X8myJOIyy2" role="3tpDZA">
-            <node concept="37vLTw" id="1X8myJOIyjG" role="2Oq$k0">
-              <ref role="3cqZAo" node="1X8myJOIgNF" resolve="r" />
-            </node>
-            <node concept="34oBXx" id="1X8myJOIzBD" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="1X8myJOIQmi" role="3cqZAp" />
-        <node concept="3cpWs8" id="1X8myJOIQVj" role="3cqZAp">
-          <node concept="3cpWsn" id="1X8myJOIQVk" role="3cpWs9">
-            <property role="TrG5h" value="successfulResults" />
-            <node concept="A3Dl8" id="1X8myJOIQV1" role="1tU5fm">
-              <node concept="3uibUv" id="4Q07H0PQR1S" role="A3Ik2">
-                <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="1X8myJOIQVl" role="33vP2m">
-              <node concept="37vLTw" id="1X8myJOIQVm" role="2Oq$k0">
-                <ref role="3cqZAo" node="1X8myJOIgNF" resolve="r" />
-              </node>
-              <node concept="3zZkjj" id="1X8myJOIQVn" role="2OqNvi">
-                <node concept="1bVj0M" id="1X8myJOIQVo" role="23t8la">
-                  <node concept="3clFbS" id="1X8myJOIQVp" role="1bW5cS">
-                    <node concept="3clFbF" id="1X8myJOIQVq" role="3cqZAp">
-                      <node concept="2OqwBi" id="1X8myJOIQVr" role="3clFbG">
-                        <node concept="37vLTw" id="1X8myJOIQVs" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1X8myJOIQVu" resolve="it" />
-                        </node>
-                        <node concept="liA8E" id="1X8myJOIQVt" role="2OqNvi">
-                          <ref role="37wK5l" to="vy7l:tSjOfAiUdI" resolve="isSuccess" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Rh6nW" id="1X8myJOIQVu" role="1bW2Oz">
-                    <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="1X8myJOIQVv" role="1tU5fm" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3vlDli" id="1X8myJOITCP" role="3cqZAp">
-          <node concept="3cmrfG" id="1X8myJOITLB" role="3tpDZB">
-            <property role="3cmrfH" value="43" />
-          </node>
-          <node concept="2OqwBi" id="1X8myJOITT2" role="3tpDZA">
-            <node concept="37vLTw" id="1X8myJOITLK" role="2Oq$k0">
-              <ref role="3cqZAo" node="1X8myJOIQVk" resolve="successfulResults" />
-            </node>
-            <node concept="34oBXx" id="1X8myJOIUsz" role="2OqNvi" />
           </node>
         </node>
       </node>

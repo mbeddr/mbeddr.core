@@ -2,7 +2,7 @@
 <model ref="r:58dfa65f-7904-4ab1-8c08-4ec8da65db0a(com.mbeddr.mpsutil.rcp.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -104,7 +104,7 @@
   <node concept="24kQdi" id="7o1blyuG7_w">
     <ref role="1XX52x" to="ywdj:7o1blyuG7yO" resolve="DefKitRef" />
     <node concept="1iCGBv" id="7o1blyuG7_D" role="2wV5jI">
-      <ref role="1NtTu8" to="ywdj:7o1blyuG7yW" />
+      <ref role="1NtTu8" to="ywdj:7o1blyuG7yW" resolve="devkit" />
       <node concept="1sVBvm" id="7o1blyuG7_F" role="1sWHZn">
         <node concept="1HlG4h" id="7o1blyuG7_P" role="2wV5jI">
           <node concept="1HfYo3" id="7o1blyuG7_R" role="1HlULh">
@@ -173,7 +173,7 @@
           <property role="3F0ifm" value="Default persistence:" />
         </node>
         <node concept="3F1sOY" id="7o1blyuGGSN" role="3EZMnx">
-          <ref role="1NtTu8" to="ywdj:7o1blyuFPT4" />
+          <ref role="1NtTu8" to="ywdj:7o1blyuFPT4" resolve="defaultPersistence" />
         </node>
         <node concept="2iRfu4" id="7o1blyuGGSh" role="2iSdaV" />
       </node>
@@ -185,7 +185,7 @@
           <property role="3F0ifm" value="Mandantory DevKits:" />
         </node>
         <node concept="3F1sOY" id="7o1blyuGGUn" role="3EZMnx">
-          <ref role="1NtTu8" to="ywdj:7o1blyuG26G" />
+          <ref role="1NtTu8" to="ywdj:7o1blyuG26G" resolve="mandantoryDevKits" />
         </node>
         <node concept="2iRfu4" id="7o1blyuGGTF" role="2iSdaV" />
       </node>
@@ -197,7 +197,7 @@
           <property role="3F0ifm" value="Optionale DevKits: " />
         </node>
         <node concept="3F1sOY" id="7o1blyuGGW_" role="3EZMnx">
-          <ref role="1NtTu8" to="ywdj:7o1blyuG26L" />
+          <ref role="1NtTu8" to="ywdj:7o1blyuG26L" resolve="optionalDevKits" />
         </node>
         <node concept="2iRfu4" id="7o1blyuGGVJ" role="2iSdaV" />
       </node>
@@ -225,7 +225,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="7o1blyuGY_5" role="3EZMnx">
-        <ref role="1NtTu8" to="ywdj:7o1blyuG7_o" />
+        <ref role="1NtTu8" to="ywdj:7o1blyuG7_o" resolve="devkits" />
         <node concept="2iRfu4" id="7o1blyuGY_7" role="2czzBx" />
         <node concept="2o9xnK" id="7o1blyuGY_e" role="2gpyvW">
           <node concept="3clFbS" id="7o1blyuGY_f" role="2VODD2">

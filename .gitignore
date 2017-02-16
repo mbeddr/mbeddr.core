@@ -40,7 +40,7 @@ code/languages/com.mbeddr.mpsutil/_spreferences
 
 # -----------------------------------------------------------
 # * build
-build/*/build
+build/**/build
 build/allInOne
 
 # -----------------------------------------------------------
@@ -167,3 +167,18 @@ tools/ant/ant-task-workspace/TeamcityMakeTests/bin/com
 code/plugins/sl-all/build-tests.xml
 code/plugins/sl-all/build.xml
 tmp
+
+# -----------------------------------------------------------
+# gradle files
+gradle.properties
+**/gradle/*
+**/.gradle/*
+**/scripts/*
+**/MPS/*
+**/build/repo/
+**/build/distributions
+**/build/classes
+antlib.xml
+**/code/languages/myDependencies
+gradlew
+gradlew.bat

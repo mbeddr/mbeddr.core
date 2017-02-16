@@ -2,7 +2,14 @@
 <model ref="r:56afd84b-493d-4061-9ee5-c2552c2737e1(com.mbeddr.analyses.cbmc.testsgen.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -10,6 +17,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="b4h4" ref="r:d1d2f189-b1e7-4902-9fc0-3cfa1dc70519(com.mbeddr.analyses.cbmc.editor)" />
+    <import index="srwo" ref="r:37f0c2b5-25ac-4a2d-ad51-ef33c790d7e3(com.mbeddr.analyses.base.editor)" />
     <import index="iq83" ref="r:3e67bdff-5e9f-43bc-9cf3-65e492181be4(com.mbeddr.analyses.cbmc.testsgen.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -38,9 +46,13 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+      </concept>
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
+      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
@@ -89,6 +101,9 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+    </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -165,7 +180,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="PMmxH" id="3LhOsKAH3HB" role="3EZMnx">
-          <ref role="PMmxG" to="b4h4:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+          <ref role="PMmxG" to="srwo:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
         </node>
         <node concept="3F0ifn" id="zsLvVhdFjr" role="3EZMnx">
           <property role="3F0ifm" value="Testsgen Config" />
@@ -175,7 +190,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="1iCGBv" id="5hPfJKCsfYv" role="3EZMnx">
-          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" />
+          <ref role="1NtTu8" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
           <node concept="1sVBvm" id="5hPfJKCsfYw" role="1sWHZn">
             <node concept="3F0A7n" id="5hPfJKCsfYx" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -244,7 +259,7 @@
         <node concept="1iCGBv" id="1UHnSpzBiFG" role="3EZMnx">
           <property role="39s7Ar" value="true" />
           <property role="1$x2rV" value="(do not save)" />
-          <ref role="1NtTu8" to="iq83:73BQep1PU1O" />
+          <ref role="1NtTu8" to="iq83:73BQep1PU1O" resolve="saveIntoModule" />
           <node concept="1sVBvm" id="1UHnSpzBiFH" role="1sWHZn">
             <node concept="3F0A7n" id="1UHnSpzBiFI" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -261,7 +276,7 @@
         <node concept="3F0ifn" id="1UHnSpzBiHd" role="3EZMnx">
           <property role="3F0ifm" value="clean before save:" />
         </node>
-        <node concept="3F0A7n" id="1UHnSpzBiIN" role="3EZMnx">
+        <node concept="27S6Sx" id="1EeUs_TFciC" role="3EZMnx">
           <ref role="1NtTu8" to="iq83:1UHnSpzBifk" resolve="clearModuleBeforeSaving" />
         </node>
         <node concept="l2Vlx" id="1UHnSpzBiHh" role="2iSdaV" />
@@ -280,6 +295,9 @@
         <property role="Vbekb" value="BOLD_ITALIC" />
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="3cUcim$dss4">
+    <ref role="aqKnT" to="iq83:awtkG0g$lN" resolve="UnspecifiedValue" />
   </node>
 </model>
 

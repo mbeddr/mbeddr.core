@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="mbeddr.mpsutil">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.mpsutil" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="sl-all">
+          <value>
+            <Library>
+              <option name="name" value="sl-all" />
+              <option name="path" value="${mbeddr.github.core.home}/code/plugins/sl-all" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

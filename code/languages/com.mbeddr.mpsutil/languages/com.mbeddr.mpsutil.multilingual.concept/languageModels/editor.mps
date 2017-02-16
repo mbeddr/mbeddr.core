@@ -3,14 +3,14 @@
   <persistence version="9" />
   <languages>
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="phyx" ref="r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept.structure)" />
+    <import index="phyx" ref="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d/r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept/com.mbeddr.mpsutil.multilingual.concept.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="7eeb" ref="r:8eab39cc-a21c-4e39-a256-5af4285965a2(com.mbeddr.mpsutil.multilingual.concept.behavior)" />
-    <import index="5rbz" ref="r:86fa5f44-7382-488b-81e3-2a8da8e2ebdd(com.mbeddr.mpsutil.multilingual.concept.runtime.plugin)" />
+    <import index="5rbz" ref="c038e2c4-0a5f-47e2-a3e8-327c1084f6a1/r:86fa5f44-7382-488b-81e3-2a8da8e2ebdd(com.mbeddr.mpsutil.multilingual.concept.runtime/com.mbeddr.mpsutil.multilingual.concept.runtime.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -158,7 +158,7 @@
     <property role="TrG5h" value="EditMultiLingual" />
     <ref role="1XX52x" to="phyx:2bng37sXCCt" resolve="IMultilingualNamedConcept" />
     <node concept="3F1sOY" id="2bng37sXCCS" role="2wV5jI">
-      <ref role="1NtTu8" to="phyx:2bng37sXCCu" />
+      <ref role="1NtTu8" to="phyx:2bng37sXCCu" resolve="multiName" />
     </node>
   </node>
   <node concept="PKFIW" id="2bng37sXCCT">
@@ -211,7 +211,7 @@
         <node concept="3EZMnI" id="2bng37sXCDc" role="3EZMnx">
           <ref role="1k5W1q" node="2bng37t1aG_" resolve="Mul_Group" />
           <node concept="3F2HdR" id="2bng37sXCDd" role="3EZMnx">
-            <ref role="1NtTu8" to="phyx:2bng37sXCCL" />
+            <ref role="1NtTu8" to="phyx:2bng37sXCCL" resolve="values" />
             <node concept="2EHx9g" id="2bng37sXCDe" role="2czzBx" />
           </node>
           <node concept="2iRkQZ" id="2bng37sXCDf" role="2iSdaV" />
@@ -321,7 +321,7 @@
         <node concept="3EZMnI" id="2bng37sXCEs" role="3EZMnx">
           <node concept="2iRfu4" id="2bng37sXCEt" role="2iSdaV" />
           <node concept="3F2HdR" id="2bng37sXCEu" role="3EZMnx">
-            <ref role="1NtTu8" to="phyx:2bng37sXCCP" />
+            <ref role="1NtTu8" to="phyx:2bng37sXCCP" resolve="values" />
             <node concept="2EHx9g" id="2bng37sXCEv" role="2czzBx" />
             <node concept="pkWqt" id="2bng37sXCEw" role="pqm2j">
               <node concept="3clFbS" id="2bng37sXCEx" role="2VODD2">
@@ -378,7 +378,7 @@
     <ref role="1XX52x" to="phyx:2bng37sXCCl" resolve="StringTranslation" />
     <node concept="3EZMnI" id="2bng37sXCFf" role="2wV5jI">
       <node concept="1iCGBv" id="2bng37sXCFg" role="3EZMnx">
-        <ref role="1NtTu8" to="phyx:2Hv7KkRk$Y2" />
+        <ref role="1NtTu8" to="phyx:2Hv7KkRk$Y2" resolve="language" />
         <node concept="1sVBvm" id="2bng37sXCFh" role="1sWHZn">
           <node concept="3F0A7n" id="2bng37sXCFi" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -400,7 +400,7 @@
     <ref role="1XX52x" to="phyx:2bng37sXCCo" resolve="TextTranslation" />
     <node concept="3EZMnI" id="2bng37sXCFn" role="2wV5jI">
       <node concept="1iCGBv" id="2bng37sXCFo" role="3EZMnx">
-        <ref role="1NtTu8" to="phyx:2Hv7KkRk$Y2" />
+        <ref role="1NtTu8" to="phyx:2Hv7KkRk$Y2" resolve="language" />
         <node concept="1sVBvm" id="2bng37sXCFp" role="1sWHZn">
           <node concept="3F0A7n" id="2bng37sXCFq" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -411,7 +411,7 @@
       </node>
       <node concept="3XFhqQ" id="2bng37sXCFr" role="3EZMnx" />
       <node concept="3F1sOY" id="2bng37sXCFs" role="3EZMnx">
-        <ref role="1NtTu8" to="phyx:2bng37sXCCp" />
+        <ref role="1NtTu8" to="phyx:2bng37sXCCp" resolve="text" />
       </node>
       <node concept="2iRfu4" id="2bng37sXCFt" role="2iSdaV" />
     </node>

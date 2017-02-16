@@ -19,6 +19,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -104,6 +105,7 @@
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -131,25 +133,35 @@
   </registry>
   <node concept="1lH9Xt" id="FYuN2Pu$4">
     <property role="TrG5h" value="ProtocolUnwindingLoops" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="FYuN2Pu$5" role="1SL9yI">
       <property role="TrG5h" value="protocolUnwindingLoops" />
       <node concept="3cqZAl" id="FYuN2Pu$6" role="3clF45" />
       <node concept="3clFbS" id="FYuN2Pu$7" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVhAWS" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhAWT" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVhAWR" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVhAWU" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="protocol_unwinding_loops" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7hfS_9mlDST" role="3cqZAp">
           <node concept="3cpWsn" id="7hfS_9mlDSU" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="2YIFZM" id="5KvlJsghg$I" role="33vP2m">
-              <ref role="37wK5l" to="dxnt:5KvlJsghgz1" resolve="checkProtocol" />
+            <node concept="NRdvd" id="5EwdfGVhAOx" role="33vP2m">
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
-              <node concept="BaHAS" id="3hNQKr2MYra" role="37wK5m">
-                <property role="BaBD8" value="pro" />
-                <property role="BaHAW" value="protocol_unwinding_loops" />
-                <property role="BaGAP" value="" />
+              <ref role="37wK5l" to="dxnt:5KvlJsghgz1" resolve="checkProtocol" />
+              <node concept="37vLTw" id="5EwdfGVhAWV" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVhAWT" resolve="m" />
               </node>
-              <node concept="Xl_RD" id="3hNQKr2MYrb" role="37wK5m">
+              <node concept="Xl_RD" id="5EwdfGVhAOz" role="37wK5m">
                 <property role="Xl_RC" value="ATM" />
               </node>
-              <node concept="Xl_RD" id="3hNQKr2MYrc" role="37wK5m">
+              <node concept="Xl_RD" id="5EwdfGVhAO$" role="37wK5m">
                 <property role="Xl_RC" value="ATMPass_Component" />
               </node>
             </node>
@@ -200,7 +212,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7hfS_9mlDTq" role="3cqZAp" />
         <node concept="3vwNmj" id="7hfS_9mlDTr" role="3cqZAp">
           <node concept="2OqwBi" id="7hfS_9mlDTs" role="3vwVQn">
             <node concept="2OqwBi" id="7hfS_9mlDTt" role="2Oq$k0">
@@ -218,7 +229,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7hfS_9mlDTG" role="3cqZAp" />
         <node concept="3vwNmj" id="7hfS_9mlDTH" role="3cqZAp">
           <node concept="2OqwBi" id="7hfS_9mlDTI" role="3vwVQn">
             <node concept="2OqwBi" id="7hfS_9mlDTJ" role="2Oq$k0">
@@ -236,7 +246,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7hfS_9mlDTY" role="3cqZAp" />
         <node concept="3vwNmj" id="7hfS_9mlDTZ" role="3cqZAp">
           <node concept="2OqwBi" id="7hfS_9mlDU0" role="3vwVQn">
             <node concept="2OqwBi" id="7hfS_9mlDU1" role="2Oq$k0">
@@ -254,7 +263,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5dzrqzlsDA7" role="3cqZAp" />
         <node concept="3vwNmj" id="7hfS_9mlDUh" role="3cqZAp">
           <node concept="2OqwBi" id="7hfS_9mlDUi" role="3vwVQn">
             <node concept="2OqwBi" id="7hfS_9mlDUj" role="2Oq$k0">
@@ -272,7 +280,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7hfS_9mlDUy" role="3cqZAp" />
         <node concept="3vwNmj" id="5dzrqzlsD_$" role="3cqZAp">
           <node concept="2OqwBi" id="5dzrqzlsD__" role="3vwVQn">
             <node concept="2OqwBi" id="5dzrqzlsD_A" role="2Oq$k0">
@@ -295,25 +302,35 @@
   </node>
   <node concept="1lH9Xt" id="FYuN2PI8v">
     <property role="TrG5h" value="ProtocolExtededComponent" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="FYuN2PI8w" role="1SL9yI">
       <property role="TrG5h" value="protocolExtendedComponent" />
       <node concept="3cqZAl" id="FYuN2PI8x" role="3clF45" />
       <node concept="3clFbS" id="FYuN2PI8y" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVhu3S" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhu3T" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVhu3R" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVhu3U" role="33vP2m">
+              <property role="BaBD8" value="p" />
+              <property role="BaHAW" value="protocol_extended_component" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="FYuN2PI8z" role="3cqZAp">
           <node concept="3cpWsn" id="FYuN2PI8$" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="2YIFZM" id="5KvlJsghg$C" role="33vP2m">
-              <ref role="37wK5l" to="dxnt:5KvlJsghgz1" resolve="checkProtocol" />
+            <node concept="NRdvd" id="5EwdfGVhu0T" role="33vP2m">
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
-              <node concept="BaHAS" id="3hNQKr2LIN2" role="37wK5m">
-                <property role="BaBD8" value="p" />
-                <property role="BaHAW" value="protocol_extended_component" />
-                <property role="BaGAP" value="" />
+              <ref role="37wK5l" to="dxnt:5KvlJsghgz1" resolve="checkProtocol" />
+              <node concept="37vLTw" id="5EwdfGVhu3V" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVhu3T" resolve="m" />
               </node>
-              <node concept="Xl_RD" id="3hNQKr2LIN3" role="37wK5m">
+              <node concept="Xl_RD" id="5EwdfGVhu0V" role="37wK5m">
                 <property role="Xl_RC" value="module1" />
               </node>
-              <node concept="Xl_RD" id="3hNQKr2LIN4" role="37wK5m">
+              <node concept="Xl_RD" id="5EwdfGVhu0W" role="37wK5m">
                 <property role="Xl_RC" value="component2" />
               </node>
             </node>
@@ -324,7 +341,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="FYuN2PI8G" role="3cqZAp" />
         <node concept="3vMLTj" id="FYuN2PI8H" role="3cqZAp">
           <node concept="2OqwBi" id="FYuN2PI8I" role="3tpDZA">
             <node concept="3cpWsa" id="FYuN2PI8J" role="2Oq$k0">
@@ -359,20 +375,30 @@
   </node>
   <node concept="1lH9Xt" id="FYuN2PIgO">
     <property role="TrG5h" value="ProtocolGeneralTests" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="tGR6edV7X0" role="1SL9yI">
       <property role="TrG5h" value="atmProtocolPass" />
       <node concept="3cqZAl" id="tGR6edV7X1" role="3clF45" />
       <node concept="3clFbS" id="tGR6edV7X2" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVhvBO" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhvBP" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVhvBN" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVhvBQ" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="protocol_smoke" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="tGR6edV7X3" role="3cqZAp">
           <node concept="3cpWsn" id="tGR6edV7X4" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="NRdvd" id="3_HSwtcKgQN" role="33vP2m">
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
               <ref role="37wK5l" to="dxnt:5KvlJsghgz1" resolve="checkProtocol" />
-              <node concept="BaHAS" id="3_HSwtcKgQO" role="37wK5m">
-                <property role="BaBD8" value="pro" />
-                <property role="BaHAW" value="protocol_smoke" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVhvBR" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVhvBP" resolve="m" />
               </node>
               <node concept="Xl_RD" id="3_HSwtcKgQP" role="37wK5m">
                 <property role="Xl_RC" value="ATM" />
@@ -518,16 +544,25 @@
       <property role="TrG5h" value="atmProtocolFails" />
       <node concept="3cqZAl" id="tGR6edV7XZ" role="3clF45" />
       <node concept="3clFbS" id="tGR6edV7Y0" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVhwem" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhwen" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVhwel" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVhweo" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="protocol_smoke" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="tGR6edV7Y1" role="3cqZAp">
           <node concept="3cpWsn" id="tGR6edV7Y2" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="NRdvd" id="3_HSwtcKhYd" role="33vP2m">
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
               <ref role="37wK5l" to="dxnt:5KvlJsghgz1" resolve="checkProtocol" />
-              <node concept="BaHAS" id="3_HSwtcKhYe" role="37wK5m">
-                <property role="BaBD8" value="pro" />
-                <property role="BaHAW" value="protocol_smoke" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVhwep" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVhwen" resolve="m" />
               </node>
               <node concept="Xl_RD" id="3_HSwtcKhYf" role="37wK5m">
                 <property role="Xl_RC" value="ATM" />
@@ -658,7 +693,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="tGR6edV7Za" role="3cqZAp" />
         <node concept="3clFbF" id="1kjPA_yoEzq" role="3cqZAp">
           <node concept="2YIFZM" id="1kjPA_yoEzr" role="3clFbG">
             <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
@@ -796,7 +830,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="tGR6edV801" role="3cqZAp" />
         <node concept="3clFbF" id="1kjPA_yolsY" role="3cqZAp">
           <node concept="2YIFZM" id="1kjPA_yomPB" role="3clFbG">
             <ref role="37wK5l" to="fxhk:17FqOSBEPPO" resolve="prettyPrintResults" />
@@ -806,7 +839,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1kjPA_yon15" role="3cqZAp" />
+        <node concept="3clFbH" id="5EwdfGVhxwb" role="3cqZAp" />
         <node concept="3vMLTj" id="tGR6edV802" role="3cqZAp">
           <node concept="2OqwBi" id="tGR6edV803" role="3tpDZA">
             <node concept="3cpWsa" id="tGR6edV804" role="2Oq$k0">
@@ -886,16 +919,25 @@
       <property role="TrG5h" value="multiProviderFails" />
       <node concept="3cqZAl" id="tGR6edV80F" role="3clF45" />
       <node concept="3clFbS" id="tGR6edV80G" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVhyfu" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhyfv" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVhyft" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVhyfw" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="protocol_smoke" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="tGR6edV80H" role="3cqZAp">
           <node concept="3cpWsn" id="tGR6edV80I" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="NRdvd" id="3_HSwtcKlgV" role="33vP2m">
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
               <ref role="37wK5l" to="dxnt:5KvlJsghgz1" resolve="checkProtocol" />
-              <node concept="BaHAS" id="3_HSwtcKlgW" role="37wK5m">
-                <property role="BaBD8" value="pro" />
-                <property role="BaHAW" value="protocol_smoke" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVhyfx" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVhyfv" resolve="m" />
               </node>
               <node concept="Xl_RD" id="3_HSwtcKlgX" role="37wK5m">
                 <property role="Xl_RC" value="MultiProvider" />
@@ -1095,16 +1137,25 @@
       <property role="TrG5h" value="streamReinitBeforeFinish" />
       <node concept="3cqZAl" id="tGR6edV82P" role="3clF45" />
       <node concept="3clFbS" id="tGR6edV82Q" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVhyGN" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhyGO" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVhyGM" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVhyGP" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="protocol_smoke" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="tGR6edV82R" role="3cqZAp">
           <node concept="3cpWsn" id="tGR6edV82S" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="NRdvd" id="3_HSwtcKnzf" role="33vP2m">
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
               <ref role="37wK5l" to="dxnt:5KvlJsghgz1" resolve="checkProtocol" />
-              <node concept="BaHAS" id="3_HSwtcKnzg" role="37wK5m">
-                <property role="BaBD8" value="pro" />
-                <property role="BaHAW" value="protocol_smoke" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVhyGQ" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVhyGO" resolve="m" />
               </node>
               <node concept="Xl_RD" id="3_HSwtcKnzh" role="37wK5m">
                 <property role="Xl_RC" value="Stream" />
@@ -1210,16 +1261,25 @@
       <property role="TrG5h" value="streamCloseTwiceFail" />
       <node concept="3cqZAl" id="tGR6edV83u" role="3clF45" />
       <node concept="3clFbS" id="tGR6edV83v" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVhza0" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhza1" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVhz9Z" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVhza2" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="protocol_smoke" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="tGR6edV83w" role="3cqZAp">
           <node concept="3cpWsn" id="tGR6edV83x" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="NRdvd" id="3_HSwtcKo_p" role="33vP2m">
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
               <ref role="37wK5l" to="dxnt:5KvlJsghgz1" resolve="checkProtocol" />
-              <node concept="BaHAS" id="3_HSwtcKo_q" role="37wK5m">
-                <property role="BaBD8" value="pro" />
-                <property role="BaHAW" value="protocol_smoke" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVhza3" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVhza1" resolve="m" />
               </node>
               <node concept="Xl_RD" id="3_HSwtcKo_r" role="37wK5m">
                 <property role="Xl_RC" value="Stream" />
@@ -1325,16 +1385,25 @@
       <property role="TrG5h" value="MultiUserSystemPass" />
       <node concept="3cqZAl" id="tGR6edV847" role="3clF45" />
       <node concept="3clFbS" id="tGR6edV848" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVhztF" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhztG" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVhztE" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVhztH" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="protocol_smoke" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="tGR6edV849" role="3cqZAp">
           <node concept="3cpWsn" id="tGR6edV84a" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="NRdvd" id="3_HSwtcKpBz" role="33vP2m">
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
               <ref role="37wK5l" to="dxnt:5KvlJsghgz1" resolve="checkProtocol" />
-              <node concept="BaHAS" id="3_HSwtcKpB$" role="37wK5m">
-                <property role="BaBD8" value="pro" />
-                <property role="BaHAW" value="protocol_smoke" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVhztI" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVhztG" resolve="m" />
               </node>
               <node concept="Xl_RD" id="3_HSwtcKpB_" role="37wK5m">
                 <property role="Xl_RC" value="MultiUserSystem" />
@@ -1389,16 +1458,25 @@
       <property role="TrG5h" value="MultiUserSystemFail" />
       <node concept="3cqZAl" id="tGR6edV84H" role="3clF45" />
       <node concept="3clFbS" id="tGR6edV84I" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVh$6A" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVh$6B" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVh$6_" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVh$6C" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="protocol_smoke" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="tGR6edV84J" role="3cqZAp">
           <node concept="3cpWsn" id="tGR6edV84K" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="NRdvd" id="3_HSwtcKqBD" role="33vP2m">
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
               <ref role="37wK5l" to="dxnt:5KvlJsghgz1" resolve="checkProtocol" />
-              <node concept="BaHAS" id="3_HSwtcKqBE" role="37wK5m">
-                <property role="BaBD8" value="pro" />
-                <property role="BaHAW" value="protocol_smoke" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVh$6D" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVh$6B" resolve="m" />
               </node>
               <node concept="Xl_RD" id="3_HSwtcKqBF" role="37wK5m">
                 <property role="Xl_RC" value="MultiUserSystem" />

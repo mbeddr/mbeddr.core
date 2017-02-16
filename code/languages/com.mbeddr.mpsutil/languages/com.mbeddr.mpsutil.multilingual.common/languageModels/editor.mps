@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -189,7 +189,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="vzhXZPAW$C" role="3EZMnx">
-          <ref role="1NtTu8" to="sxyo:vzhXZP_pYM" />
+          <ref role="1NtTu8" to="sxyo:vzhXZP_pYM" resolve="languages" />
           <node concept="l2Vlx" id="vzhXZPAW$D" role="2czzBx" />
           <node concept="pj6Ft" id="vzhXZPAW$E" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -281,7 +281,7 @@
       </node>
       <node concept="2rfBfz" id="vzhXZPAW_v" role="3EZMnx">
         <node concept="2reSaE" id="vzhXZPAW_w" role="2rf8GZ">
-          <ref role="2reCK$" to="sxyo:vzhXZP_pZs" />
+          <ref role="2reCK$" to="sxyo:vzhXZP_pZs" resolve="keys" />
           <node concept="2r3Xtq" id="vzhXZPAW_x" role="2YiT2b">
             <node concept="2rfbtV" id="vzhXZPAW_y" role="uCobI">
               <property role="2rfbtB" value="Key" />

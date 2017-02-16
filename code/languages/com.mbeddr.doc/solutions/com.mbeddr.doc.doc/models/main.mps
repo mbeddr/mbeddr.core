@@ -5,8 +5,8 @@
     <use id="d7145000-936a-47e8-95a5-71f220e623f9" name="com.mbeddr.doc.self" version="-1" />
     <use id="1c5b7d51-0ef3-4332-af36-874466950878" name="com.mbeddr.doc.expressions" version="-1" />
     <use id="c61970b4-87fb-4429-8a3a-c87719f000a3" name="com.mbeddr.doc.terms" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
@@ -352,14 +352,14 @@
         </node>
       </node>
     </node>
-    <node concept="1jVoCB" id="4vQSg$Artuh" role="30GjaH">
+    <node concept="1_07dB" id="gZbLBLfq3n" role="30GjaH">
+      <property role="1jVmeX" value="htmlexport.css" />
+    </node>
+    <node concept="1jVoCB" id="gZbLBLfq3o" role="30Gjbi">
       <property role="1jVoCx" value="article" />
       <property role="43dxY" value="mbeddr-prolog.ltx" />
       <property role="1xA$Bs" value="true" />
       <property role="1xAxd1" value="true" />
-    </node>
-    <node concept="1_07dB" id="4vQSg$Artui" role="30Gjbi">
-      <property role="1jVmeX" value="htmlexport.css" />
     </node>
   </node>
   <node concept="1_1swa" id="7$DvC4gPSHs">

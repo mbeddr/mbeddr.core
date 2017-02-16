@@ -4,12 +4,12 @@
   <languages>
     <use id="13a9e567-3b9e-4ccf-b94c-9155f5e78586" name="com.mbeddr.mpsutil.multilingual.editor" version="0" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="ivdl" ref="r:c3729148-5a72-48d9-b266-3d72f32826ba(doc.com.mbeddr.mpsutil.multilingual.lang.structure)" implicit="true" />
-    <import index="phyx" ref="r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept.structure)" implicit="true" />
+    <import index="phyx" ref="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d/r:d26f1060-b333-4b75-ae0e-82ef2c6fdec3(com.mbeddr.mpsutil.multilingual.concept/com.mbeddr.mpsutil.multilingual.concept.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -96,7 +96,7 @@
           <property role="3F0ifm" value="Example Concept" />
         </node>
         <node concept="3F1sOY" id="aiIotXwuBF" role="3EZMnx">
-          <ref role="1NtTu8" to="phyx:2bng37sXCCu" />
+          <ref role="1NtTu8" to="phyx:2bng37sXCCu" resolve="multiName" />
         </node>
         <node concept="2iRfu4" id="aiIotXwuBz" role="2iSdaV" />
       </node>
@@ -105,7 +105,7 @@
         <property role="3F0ifm" value="Description:" />
       </node>
       <node concept="3F1sOY" id="aiIotXwuC7" role="3EZMnx">
-        <ref role="1NtTu8" to="ivdl:aiIotXwuAy" />
+        <ref role="1NtTu8" to="ivdl:aiIotXwuAy" resolve="description" />
       </node>
       <node concept="2iRkQZ" id="aiIotXwuBn" role="2iSdaV" />
     </node>

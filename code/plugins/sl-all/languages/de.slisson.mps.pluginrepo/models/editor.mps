@@ -2,7 +2,7 @@
 <model ref="r:9a23cf83-ef66-4828-bb92-2219bcf11ce5(de.slisson.mps.pluginrepo.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -79,7 +79,7 @@
       </node>
       <node concept="3F1sOY" id="3NagsOfTPio" role="3EZMnx">
         <property role="1cu_pB" value="1" />
-        <ref role="1NtTu8" to="3ior:3NagsOfTPim" />
+        <ref role="1NtTu8" to="3ior:3NagsOfTPim" resolve="containerName" />
         <node concept="ljvvj" id="3NagsOfU4ZQ" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

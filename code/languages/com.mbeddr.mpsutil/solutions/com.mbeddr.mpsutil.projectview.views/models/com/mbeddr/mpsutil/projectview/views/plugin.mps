@@ -2,12 +2,12 @@
 <model ref="r:b2f3d5f9-b81e-4589-95e8-d5be28f6e48f(com.mbeddr.mpsutil.projectview.views.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
@@ -187,6 +187,10 @@
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
       <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.structure.ProjectView" flags="ng" index="14aYJB">
+        <property id="5597588939837555688" name="rebuildOnRepoChange" index="280Iaj" />
+        <property id="5597588939837555683" name="rebuildOnMake" index="280Iao" />
+        <property id="5597588939837555679" name="rebuildOnClassLoad" index="280Ia$" />
+        <property id="5597588939837555676" name="rebuildOnFileChange" index="280IaB" />
         <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <reference id="8309912865649284888" name="extends" index="14aYEx" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
@@ -278,6 +282,10 @@
   <node concept="14aYJB" id="$6jtTwOyRt">
     <property role="TrG5h" value="ByConcept" />
     <property role="3aPfAI" value="30" />
+    <property role="280Ia$" value="true" />
+    <property role="280IaB" value="true" />
+    <property role="280Iao" value="true" />
+    <property role="280Iaj" value="true" />
     <ref role="14aYEx" node="7diJr$RurxA" resolve="LogicalViewClone" />
     <node concept="14aYG3" id="$6jtTwO_OM" role="14aYEy">
       <property role="TrG5h" value="concept" />
@@ -483,6 +491,10 @@
   <node concept="14aYJB" id="7diJr$RurxA">
     <property role="TrG5h" value="LogicalViewClone" />
     <property role="3aPfAI" value="20" />
+    <property role="280Ia$" value="true" />
+    <property role="280IaB" value="true" />
+    <property role="280Iao" value="true" />
+    <property role="280Iaj" value="true" />
     <node concept="14aYG3" id="7diJr$RvF92" role="14aYEy">
       <property role="TrG5h" value="project" />
       <node concept="14a6R6" id="7diJr$RvF9F" role="14bQOc" />
@@ -1064,8 +1076,8 @@
     </node>
     <node concept="14aYG3" id="7diJr$Rx11N" role="14aYEy">
       <property role="TrG5h" value="rootNode" />
-      <ref role="14a85i" node="7diJr$Rw$m0" resolve="model" />
       <ref role="3GDMyY" node="3ZnFyBjojbx" resolve="node" />
+      <ref role="14a85i" node="7diJr$Rw$m0" resolve="model" />
       <node concept="2OqwBi" id="$6jtTx7ig0" role="14bQOc">
         <node concept="1eOMI4" id="$6jtTx7i6y" role="2Oq$k0">
           <node concept="10QFUN" id="$6jtTx7i6z" role="1eOMHV">
@@ -1479,6 +1491,23 @@
                 <ref role="3VsUkX" to="mhbf:~SModel" resolve="SModel" />
               </node>
               <node concept="10M0yZ" id="3jVbLyZC9T$" role="3ElQJh">
+                <ref role="3cqZAo" node="75_oBQVwQpr" resolve="actionGroupsIds" />
+                <ref role="1PxDUh" node="75_oBQVwQhb" resolve="ProjectViewUtil" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5XTXBpQFI9i" role="3cqZAp">
+          <node concept="37vLTI" id="5XTXBpQFI9j" role="3clFbG">
+            <node concept="10M0yZ" id="5XTXBpQFI9k" role="37vLTx">
+              <ref role="1PxDUh" to="qq03:~ProjectActions_ActionGroup" resolve="ProjectActions_ActionGroup" />
+              <ref role="3cqZAo" to="qq03:~ProjectActions_ActionGroup.ID" resolve="ID" />
+            </node>
+            <node concept="3EllGN" id="5XTXBpQFI9l" role="37vLTJ">
+              <node concept="3VsKOn" id="5XTXBpQFI9m" role="3ElVtu">
+                <ref role="3VsUkX" to="z1c5:~IProject" resolve="IProject" />
+              </node>
+              <node concept="10M0yZ" id="5XTXBpQFI9n" role="3ElQJh">
                 <ref role="3cqZAo" node="75_oBQVwQpr" resolve="actionGroupsIds" />
                 <ref role="1PxDUh" node="75_oBQVwQhb" resolve="ProjectViewUtil" />
               </node>

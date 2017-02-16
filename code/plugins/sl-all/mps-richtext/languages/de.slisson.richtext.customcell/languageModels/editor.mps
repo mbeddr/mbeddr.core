@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -30,9 +30,13 @@
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -86,7 +90,7 @@
             <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
           </node>
           <node concept="3F1sOY" id="h7YsRBk" role="3EZMnx">
-            <ref role="1NtTu8" to="5mdd:2af7$rtssdJ" />
+            <ref role="1NtTu8" to="5mdd:2af7$rtssdJ" resolve="factoryMethod" />
           </node>
           <node concept="VPM3Z" id="hEU$PS$" role="3F10Kt">
             <property role="VOm3f" value="false" />
@@ -119,10 +123,13 @@
         <node concept="2iRfu4" id="i2IxuT6" role="2iSdaV" />
       </node>
       <node concept="3F1sOY" id="2af7$rtteQX" role="3EZMnx">
-        <ref role="1NtTu8" to="5mdd:fBEZMko" />
+        <ref role="1NtTu8" to="5mdd:fBEZMko" resolve="childCellModel" />
       </node>
       <node concept="2iRkQZ" id="2af7$rtteQv" role="2iSdaV" />
     </node>
+  </node>
+  <node concept="3p36aQ" id="4iNiUqGz3jw">
+    <ref role="aqKnT" to="5mdd:gTQ80DJ" resolve="ConceptFunctionParameter_cell" />
   </node>
 </model>
 

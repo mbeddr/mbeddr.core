@@ -2,7 +2,7 @@
 <model ref="r:17b09ba0-cbd7-488a-91a1-9ee54b7e6e87(com.mbeddr.mpsutil.compare.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -166,7 +166,7 @@
       </node>
       <node concept="3F1sOY" id="h3vm$Fz" role="3EZMnx">
         <property role="1$x2rV" value="expected node" />
-        <ref role="1NtTu8" to="tpe3:7jPoEeD$ZP4" />
+        <ref role="1NtTu8" to="tpe3:7jPoEeD$ZP4" resolve="expected" />
       </node>
       <node concept="3F0ifn" id="h3vlQYs" role="3EZMnx">
         <property role="3F0ifm" value="equals" />
@@ -176,7 +176,7 @@
       </node>
       <node concept="3F1sOY" id="h3vmArp" role="3EZMnx">
         <property role="1$x2rV" value="actual node" />
-        <ref role="1NtTu8" to="tpe3:7jPoEeD$ZP5" />
+        <ref role="1NtTu8" to="tpe3:7jPoEeD$ZP5" resolve="actual" />
       </node>
       <node concept="PMmxH" id="4uU5oUYY2Mp" role="3EZMnx">
         <ref role="PMmxG" to="tpe0:4uU5oUYY2Mi" resolve="MessageComponent" />
@@ -201,7 +201,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="2lpUxXMduVr" role="3EZMnx">
-          <ref role="1NtTu8" to="8do3:2lpUxXMduaL" />
+          <ref role="1NtTu8" to="8do3:2lpUxXMduaL" resolve="ignoredProperties" />
         </node>
         <node concept="3F0ifn" id="2lpUxXMduVS" role="3EZMnx">
           <property role="3F0ifm" value=")" />
@@ -260,7 +260,7 @@
       </node>
       <node concept="3F1sOY" id="3C6_kMLO7un" role="3EZMnx">
         <property role="1$x2rV" value="expected node" />
-        <ref role="1NtTu8" to="8do3:3C6_kMLP2FL" />
+        <ref role="1NtTu8" to="8do3:3C6_kMLP2FL" resolve="list" />
       </node>
       <node concept="3F0ifn" id="3C6_kMLO7uo" role="3EZMnx">
         <property role="3F0ifm" value="has" />
@@ -270,7 +270,7 @@
       </node>
       <node concept="3F1sOY" id="3C6_kMLO7uq" role="3EZMnx">
         <property role="1$x2rV" value="actual node" />
-        <ref role="1NtTu8" to="8do3:3C6_kMLP2FN" />
+        <ref role="1NtTu8" to="8do3:3C6_kMLP2FN" resolve="size" />
       </node>
       <node concept="3F0ifn" id="3C6_kMLO7Ju" role="3EZMnx">
         <property role="3F0ifm" value="element(s)" />
@@ -380,7 +380,7 @@
       <node concept="3EZMnI" id="5uUCR4LHChS" role="3EZMnx">
         <node concept="2iRkQZ" id="5uUCR4LHChT" role="2iSdaV" />
         <node concept="3F2HdR" id="5uUCR4L$S$h" role="3EZMnx">
-          <ref role="1NtTu8" to="8do3:5uUCR4L$O2l" />
+          <ref role="1NtTu8" to="8do3:5uUCR4L$O2l" resolve="refs" />
           <ref role="1k5W1q" to="tpch:hOawUFH" resolve="AnnotationNode" />
           <ref role="1ERwB7" node="5uUCR4LKWK5" resolve="deleteIgnoreAnnotation" />
           <node concept="l2Vlx" id="5uUCR4L$S$i" role="2czzBx" />
@@ -451,7 +451,7 @@
   <node concept="24kQdi" id="5uUCR4LA6yo">
     <ref role="1XX52x" to="8do3:5uUCR4L$O4d" resolve="PropertyOrReferenceReference" />
     <node concept="1iCGBv" id="5uUCR4LA6yq" role="2wV5jI">
-      <ref role="1NtTu8" to="8do3:5uUCR4L$O4e" />
+      <ref role="1NtTu8" to="8do3:5uUCR4L$O4e" resolve="ref" />
       <node concept="1sVBvm" id="5uUCR4LA6yr" role="1sWHZn">
         <node concept="1HlG4h" id="5uUCR4LA6yz" role="2wV5jI">
           <node concept="1HfYo3" id="5uUCR4LA6y_" role="1HlULh">
@@ -493,13 +493,13 @@
     <ref role="1XX52x" to="8do3:1_DWnhqnL9Y" resolve="AreEqualExpression" />
     <node concept="3EZMnI" id="1_DWnhqnL_6" role="2wV5jI">
       <node concept="3F1sOY" id="1_DWnhqnL_t" role="3EZMnx">
-        <ref role="1NtTu8" to="tpee:fJuHU4s" />
+        <ref role="1NtTu8" to="tpee:fJuHU4s" resolve="leftExpression" />
       </node>
       <node concept="3F0ifn" id="1_DWnhqnL_D" role="3EZMnx">
         <property role="3F0ifm" value=":isEqualTo:" />
       </node>
       <node concept="3F1sOY" id="1_DWnhqnL_V" role="3EZMnx">
-        <ref role="1NtTu8" to="tpee:fJuHU4r" />
+        <ref role="1NtTu8" to="tpee:fJuHU4r" resolve="rightExpression" />
       </node>
       <node concept="2iRfu4" id="1_DWnhqnL_9" role="2iSdaV" />
     </node>
@@ -508,7 +508,7 @@
         <property role="3F0ifm" value="ignored properties:" />
       </node>
       <node concept="3F1sOY" id="1_DWnhqnLAz" role="3EZMnx">
-        <ref role="1NtTu8" to="8do3:1_DWnhqnLaj" />
+        <ref role="1NtTu8" to="8do3:1_DWnhqnLaj" resolve="ignoredProperties" />
       </node>
       <node concept="2iRfu4" id="1_DWnhqnLAd" role="2iSdaV" />
     </node>

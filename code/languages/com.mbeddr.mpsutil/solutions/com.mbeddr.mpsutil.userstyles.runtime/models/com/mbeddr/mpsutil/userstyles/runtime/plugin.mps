@@ -2,49 +2,27 @@
 <model ref="r:c44f10b2-7049-41f7-aa57-911d875908f6(com.mbeddr.mpsutil.userstyles.runtime.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
-    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
-    <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
-    <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="a26g" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.application.options.colors(MPS.IDEA/)" />
     <import index="9ti4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.extensions(MPS.IDEA/)" />
-    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
-    <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
-    <import index="qxsb" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.options.ex(MPS.IDEA/)" />
-    <import index="87gl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.util.scopeChooser(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
-    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="vvpk" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.options.colors(MPS.IDEA/)" />
     <import index="drih" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor.colors(MPS.IDEA/)" />
-    <import index="fglx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileTypes(MPS.IDEA/)" />
-    <import index="nwpu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.lexer(MPS.IDEA/)" />
-    <import index="cofk" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.psi.tree(MPS.IDEA/)" />
     <import index="hq8m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.options(MPS.IDEA/)" />
-    <import index="9r45" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.application.options.editor(MPS.IDEA/)" />
     <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="8m69" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor.markup(MPS.IDEA/)" />
-    <import index="5ezr" ref="r:7f71c9b1-7660-4819-974a-faf6cdc08579(com.mbeddr.mpsutil.userstyles.behavior)" />
-    <import index="6asz" ref="r:8136e0cb-6cc6-4efd-bb77-b9b2a3b387b7(com.mbeddr.mpsutil.userstyles.structure)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -228,12 +206,6 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -267,8 +239,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -689,81 +671,81 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3SKdUt" id="5klmD47YpVU" role="3cqZAp">
-                  <node concept="3SKWN0" id="5klmD47YpVV" role="3SKWNk">
-                    <node concept="3clFbF" id="1gJuyfgBdI$" role="3SKWNf">
-                      <node concept="2OqwBi" id="1gJuyfgBj7P" role="3clFbG">
-                        <node concept="2OqwBi" id="1gJuyfgBfSb" role="2Oq$k0">
-                          <node concept="2OqwBi" id="1gJuyfgBdU0" role="2Oq$k0">
-                            <node concept="2YIFZM" id="1gJuyfgBdL1" role="2Oq$k0">
-                              <ref role="37wK5l" node="1gJuyfgBaD5" resolve="findAllDescriptors" />
-                              <ref role="1Pybhc" node="1gJuyfgAIVR" resolve="UserStylesDescriptors" />
-                            </node>
-                            <node concept="3goQfb" id="1gJuyfgBflJ" role="2OqNvi">
-                              <node concept="1bVj0M" id="1gJuyfgBflL" role="23t8la">
-                                <node concept="3clFbS" id="1gJuyfgBflM" role="1bW5cS">
-                                  <node concept="3clFbF" id="1gJuyfgBfDH" role="3cqZAp">
-                                    <node concept="2OqwBi" id="1gJuyfgBfGT" role="3clFbG">
-                                      <node concept="37vLTw" id="1gJuyfgBfDG" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="1gJuyfgBflN" resolve="it" />
-                                      </node>
-                                      <node concept="liA8E" id="1gJuyfgBfMZ" role="2OqNvi">
-                                        <ref role="37wK5l" node="1gJuyfgAzSO" resolve="getItems" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="Rh6nW" id="1gJuyfgBflN" role="1bW2Oz">
-                                  <property role="TrG5h" value="it" />
-                                  <node concept="2jxLKc" id="1gJuyfgBflO" role="1tU5fm" />
-                                </node>
-                              </node>
-                            </node>
+                <node concept="1X3_iC" id="4yYSJc_lAoY" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="3clFbF" id="1gJuyfgBdI$" role="8Wnug">
+                    <node concept="2OqwBi" id="1gJuyfgBj7P" role="3clFbG">
+                      <node concept="2OqwBi" id="1gJuyfgBfSb" role="2Oq$k0">
+                        <node concept="2OqwBi" id="1gJuyfgBdU0" role="2Oq$k0">
+                          <node concept="2YIFZM" id="1gJuyfgBdL1" role="2Oq$k0">
+                            <ref role="37wK5l" node="1gJuyfgBaD5" resolve="findAllDescriptors" />
+                            <ref role="1Pybhc" node="1gJuyfgAIVR" resolve="UserStylesDescriptors" />
                           </node>
-                          <node concept="3$u5V9" id="1gJuyfgBg7B" role="2OqNvi">
-                            <node concept="1bVj0M" id="1gJuyfgBg7D" role="23t8la">
-                              <node concept="3clFbS" id="1gJuyfgBg7E" role="1bW5cS">
-                                <node concept="3clFbF" id="1gJuyfgBguc" role="3cqZAp">
-                                  <node concept="2ShNRf" id="1gJuyfgBhd3" role="3clFbG">
-                                    <node concept="1pGfFk" id="1gJuyfgBhd4" role="2ShVmc">
-                                      <ref role="37wK5l" to="vvpk:~ColorDescriptor.&lt;init&gt;(java.lang.String,com.intellij.openapi.editor.colors.ColorKey,com.intellij.openapi.options.colors.ColorDescriptor$Kind)" resolve="ColorDescriptor" />
-                                      <node concept="2OqwBi" id="1gJuyfgBhRg" role="37wK5m">
-                                        <node concept="37vLTw" id="1gJuyfgBhCS" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="1gJuyfgBg7F" resolve="it" />
-                                        </node>
-                                        <node concept="liA8E" id="1gJuyfgBi1t" role="2OqNvi">
-                                          <ref role="37wK5l" node="1gJuyfgAyqv" resolve="getDisplayText" />
-                                        </node>
-                                      </node>
-                                      <node concept="2YIFZM" id="1gJuyfgBhd6" role="37wK5m">
-                                        <ref role="37wK5l" to="drih:~ColorKey.find(java.lang.String):com.intellij.openapi.editor.colors.ColorKey" resolve="find" />
-                                        <ref role="1Pybhc" to="drih:~ColorKey" resolve="ColorKey" />
-                                        <node concept="2OqwBi" id="1gJuyfgBitM" role="37wK5m">
-                                          <node concept="37vLTw" id="1gJuyfgBifE" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="1gJuyfgBg7F" resolve="it" />
-                                          </node>
-                                          <node concept="liA8E" id="1gJuyfgBiBJ" role="2OqNvi">
-                                            <ref role="37wK5l" node="1gJuyfgAyqJ" resolve="getId" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                      <node concept="Rm8GO" id="1gJuyfgBhd8" role="37wK5m">
-                                        <ref role="1Px2BO" to="vvpk:~ColorDescriptor$Kind" resolve="ColorDescriptor.Kind" />
-                                        <ref role="Rm8GQ" to="vvpk:~ColorDescriptor$Kind.FOREGROUND" resolve="FOREGROUND" />
-                                      </node>
+                          <node concept="3goQfb" id="1gJuyfgBflJ" role="2OqNvi">
+                            <node concept="1bVj0M" id="1gJuyfgBflL" role="23t8la">
+                              <node concept="3clFbS" id="1gJuyfgBflM" role="1bW5cS">
+                                <node concept="3clFbF" id="1gJuyfgBfDH" role="3cqZAp">
+                                  <node concept="2OqwBi" id="1gJuyfgBfGT" role="3clFbG">
+                                    <node concept="37vLTw" id="1gJuyfgBfDG" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="1gJuyfgBflN" resolve="it" />
+                                    </node>
+                                    <node concept="liA8E" id="1gJuyfgBfMZ" role="2OqNvi">
+                                      <ref role="37wK5l" node="1gJuyfgAzSO" resolve="getItems" />
                                     </node>
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="1gJuyfgBg7F" role="1bW2Oz">
+                              <node concept="Rh6nW" id="1gJuyfgBflN" role="1bW2Oz">
                                 <property role="TrG5h" value="it" />
-                                <node concept="2jxLKc" id="1gJuyfgBg7G" role="1tU5fm" />
+                                <node concept="2jxLKc" id="1gJuyfgBflO" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="3_kTaI" id="1gJuyfgBjsh" role="2OqNvi" />
+                        <node concept="3$u5V9" id="1gJuyfgBg7B" role="2OqNvi">
+                          <node concept="1bVj0M" id="1gJuyfgBg7D" role="23t8la">
+                            <node concept="3clFbS" id="1gJuyfgBg7E" role="1bW5cS">
+                              <node concept="3clFbF" id="1gJuyfgBguc" role="3cqZAp">
+                                <node concept="2ShNRf" id="1gJuyfgBhd3" role="3clFbG">
+                                  <node concept="1pGfFk" id="1gJuyfgBhd4" role="2ShVmc">
+                                    <ref role="37wK5l" to="vvpk:~ColorDescriptor.&lt;init&gt;(java.lang.String,com.intellij.openapi.editor.colors.ColorKey,com.intellij.openapi.options.colors.ColorDescriptor$Kind)" resolve="ColorDescriptor" />
+                                    <node concept="2OqwBi" id="1gJuyfgBhRg" role="37wK5m">
+                                      <node concept="37vLTw" id="1gJuyfgBhCS" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="1gJuyfgBg7F" resolve="it" />
+                                      </node>
+                                      <node concept="liA8E" id="1gJuyfgBi1t" role="2OqNvi">
+                                        <ref role="37wK5l" node="1gJuyfgAyqv" resolve="getDisplayText" />
+                                      </node>
+                                    </node>
+                                    <node concept="2YIFZM" id="1gJuyfgBhd6" role="37wK5m">
+                                      <ref role="37wK5l" to="drih:~ColorKey.find(java.lang.String):com.intellij.openapi.editor.colors.ColorKey" resolve="find" />
+                                      <ref role="1Pybhc" to="drih:~ColorKey" resolve="ColorKey" />
+                                      <node concept="2OqwBi" id="1gJuyfgBitM" role="37wK5m">
+                                        <node concept="37vLTw" id="1gJuyfgBifE" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="1gJuyfgBg7F" resolve="it" />
+                                        </node>
+                                        <node concept="liA8E" id="1gJuyfgBiBJ" role="2OqNvi">
+                                          <ref role="37wK5l" node="1gJuyfgAyqJ" resolve="getId" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="Rm8GO" id="1gJuyfgBhd8" role="37wK5m">
+                                      <ref role="1Px2BO" to="vvpk:~ColorDescriptor$Kind" resolve="ColorDescriptor.Kind" />
+                                      <ref role="Rm8GQ" to="vvpk:~ColorDescriptor$Kind.FOREGROUND" resolve="FOREGROUND" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Rh6nW" id="1gJuyfgBg7F" role="1bW2Oz">
+                              <property role="TrG5h" value="it" />
+                              <node concept="2jxLKc" id="1gJuyfgBg7G" role="1tU5fm" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
+                      <node concept="3_kTaI" id="1gJuyfgBjsh" role="2OqNvi" />
                     </node>
                   </node>
                 </node>

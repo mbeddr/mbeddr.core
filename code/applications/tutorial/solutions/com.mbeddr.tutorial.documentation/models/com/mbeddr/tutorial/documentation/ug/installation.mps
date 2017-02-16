@@ -2,7 +2,7 @@
 <model ref="r:ec4f318b-4ee4-4063-b222-8a04b6ed816c(com.mbeddr.tutorial.documentation.ug.installation)">
   <persistence version="9" />
   <languages>
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="2" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
@@ -140,7 +140,7 @@
           <node concept="1jUjqm" id="5zu8XJxPBRs" role="19SJt6">
             <node concept="19SGf9" id="5zu8XJxPBRt" role="$DsGW">
               <node concept="19SUe$" id="5zu8XJxPBRu" role="19SJt6">
-                <property role="19SUeA" value="MPS 3.1" />
+                <property role="19SUeA" value="MPS 3.3" />
               </node>
             </node>
           </node>
@@ -229,7 +229,7 @@
                 </node>
               </node>
               <node concept="19SUe$" id="5zu8XJxPC3b" role="19SJt6">
-                <property role="19SUeA" value=" Make sure you have installed Java on your machine (Version 1.6 or higher). Next, open the " />
+                <property role="19SUeA" value=" Make sure you have installed Java on your machine (Version 1.8 or higher). Next, open the " />
               </node>
               <node concept="1jUjqm" id="5zu8XJxPBYg" role="19SJt6">
                 <node concept="19SGf9" id="5zu8XJxPBYh" role="$DsGW">
@@ -2734,7 +2734,7 @@
             <node concept="OjmMv" id="1LxA8cJZAq7" role="C7FVy">
               <node concept="19SGf9" id="1LxA8cJZAq8" role="OjmMu">
                 <node concept="19SUe$" id="1LxA8cJZAq9" role="19SJt6">
-                  <property role="19SUeA" value="3.1.4 or 3.1.5 \n(MPS 3.2 not yet supported)" />
+                  <property role="19SUeA" value="3.3.5&#10;(MPS 3.4 not yet supported)" />
                 </node>
               </node>
             </node>
@@ -2791,7 +2791,7 @@
             <node concept="OjmMv" id="1LxA8cJZAnP" role="C7FVy">
               <node concept="19SGf9" id="1LxA8cJZAnQ" role="OjmMu">
                 <node concept="19SUe$" id="1LxA8cJZAnR" role="19SJt6">
-                  <property role="19SUeA" value="1.6 or higher" />
+                  <property role="19SUeA" value="1.8 or higher" />
                 </node>
               </node>
             </node>
@@ -2836,7 +2836,7 @@
             <node concept="OjmMv" id="1LxA8cJZCDc" role="C7FVy">
               <node concept="19SGf9" id="1LxA8cJZCDd" role="OjmMu">
                 <node concept="19SUe$" id="1LxA8cJZCDe" role="19SJt6">
-                  <property role="19SUeA" value="1.6 or higher" />
+                  <property role="19SUeA" value="1.8 or higher" />
                 </node>
               </node>
             </node>
@@ -2881,7 +2881,7 @@
             <node concept="OjmMv" id="1LxA8cJZCCV" role="C7FVy">
               <node concept="19SGf9" id="1LxA8cJZCCW" role="OjmMu">
                 <node concept="19SUe$" id="1LxA8cJZCCX" role="19SJt6">
-                  <property role="19SUeA" value="1.6" />
+                  <property role="19SUeA" value="1.8" />
                 </node>
               </node>
             </node>

@@ -129,6 +129,10 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -146,10 +150,7 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -415,8 +416,8 @@
                 <node concept="2OqwBi" id="qWsmfOSOGT" role="33vP2m">
                   <node concept="2OqwBi" id="qWsmfOSOGU" role="2Oq$k0">
                     <node concept="1PxgMI" id="qWsmfOSOGV" role="2Oq$k0">
-                      <ref role="1PxNhF" to="v7ag:71UKpntog8p" resolve="PortAdapterRefExpr" />
-                      <node concept="37vLTw" id="qWsmfOSOGW" role="1PxMeX">
+                      <ref role="1m5ApE" to="v7ag:71UKpntog8p" resolve="PortAdapterRefExpr" />
+                      <node concept="37vLTw" id="qWsmfOSOGW" role="1m5AlR">
                         <ref role="3cqZAo" node="qWsmfOSOGJ" resolve="operand" />
                       </node>
                     </node>
@@ -453,8 +454,8 @@
             </node>
             <node concept="3cpWs6" id="brG9xosJp4" role="3cqZAp">
               <node concept="1PxgMI" id="brG9xosJs7" role="3cqZAk">
-                <ref role="1PxNhF" to="uocg:6NnssjtXJW0" resolve="GenericUnitInitializer" />
-                <node concept="2OqwBi" id="brG9xosJs8" role="1PxMeX">
+                <ref role="1m5ApE" to="uocg:6NnssjtXJW0" resolve="GenericUnitInitializer" />
+                <node concept="2OqwBi" id="brG9xosJs8" role="1m5AlR">
                   <node concept="37vLTw" id="brG9xosJs9" role="2Oq$k0">
                     <ref role="3cqZAo" node="qWsmfOSOH0" resolve="initializers" />
                   </node>
@@ -522,8 +523,8 @@
                   <node concept="2OqwBi" id="1lXGHYdV6AT" role="33vP2m">
                     <node concept="2OqwBi" id="1lXGHYdV6AU" role="2Oq$k0">
                       <node concept="1PxgMI" id="1lXGHYdV6AV" role="2Oq$k0">
-                        <ref role="1PxNhF" to="g88q:4dKKrcEbMGX" resolve="ComponentRefExpr" />
-                        <node concept="37vLTw" id="1lXGHYdV6AW" role="1PxMeX">
+                        <ref role="1m5ApE" to="g88q:4dKKrcEbMGX" resolve="ComponentRefExpr" />
+                        <node concept="37vLTw" id="1lXGHYdV6AW" role="1m5AlR">
                           <ref role="3cqZAo" node="qWsmfOSOGJ" resolve="operand" />
                         </node>
                       </node>
@@ -539,8 +540,8 @@
               </node>
               <node concept="3cpWs6" id="1lXGHYdV8BF" role="3cqZAp">
                 <node concept="1PxgMI" id="1lXGHYdV8BG" role="3cqZAk">
-                  <ref role="1PxNhF" to="uocg:6NnssjtXJW0" resolve="GenericUnitInitializer" />
-                  <node concept="2OqwBi" id="1lXGHYdV8BH" role="1PxMeX">
+                  <ref role="1m5ApE" to="uocg:6NnssjtXJW0" resolve="GenericUnitInitializer" />
+                  <node concept="2OqwBi" id="1lXGHYdV8BH" role="1m5AlR">
                     <node concept="37vLTw" id="1lXGHYdV8BI" role="2Oq$k0">
                       <ref role="3cqZAo" node="1lXGHYdV6AS" resolve="initializers" />
                     </node>

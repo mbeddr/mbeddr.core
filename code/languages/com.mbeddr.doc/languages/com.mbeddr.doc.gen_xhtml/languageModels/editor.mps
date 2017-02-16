@@ -2,8 +2,7 @@
 <model ref="r:68cc22a3-f81e-4e60-8a05-af7a8da1ab12(com.mbeddr.doc.gen_xhtml.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
   </languages>
   <imports>
     <import index="lsus" ref="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)" />
@@ -112,7 +111,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F2HdR" id="QRmqzIpg6y" role="3EZMnx">
-          <ref role="1NtTu8" to="lsus:QRmqzIpg44" />
+          <ref role="1NtTu8" to="lsus:QRmqzIpg44" resolve="rulesets" />
           <node concept="l2Vlx" id="QRmqzIpg6z" role="2czzBx" />
           <node concept="pj6Ft" id="QRmqzIpg6$" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -140,7 +139,7 @@
       <node concept="l2Vlx" id="QRmqzIpg8n" role="2iSdaV" />
       <node concept="3F2HdR" id="QRmqzIpg8z" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="lsus:QRmqzIpg47" />
+        <ref role="1NtTu8" to="lsus:QRmqzIpg47" resolve="selectors" />
         <node concept="l2Vlx" id="QRmqzIpg8$" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="QRmqzIpg8p" role="3EZMnx">
@@ -158,7 +157,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F2HdR" id="QRmqzIpg8I" role="3EZMnx">
-          <ref role="1NtTu8" to="lsus:QRmqzIpg4a" />
+          <ref role="1NtTu8" to="lsus:QRmqzIpg4a" resolve="declarations" />
           <node concept="l2Vlx" id="QRmqzIpg8J" role="2czzBx" />
           <node concept="pj6Ft" id="QRmqzIpg8K" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -245,7 +244,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="QRmqzJj_sK" role="3EZMnx">
-          <ref role="1NtTu8" to="lsus:QRmqzJj_qF" />
+          <ref role="1NtTu8" to="lsus:QRmqzJj_qF" resolve="entries" />
           <node concept="l2Vlx" id="QRmqzJj_sL" role="2czzBx" />
           <node concept="pj6Ft" id="QRmqzJj_sM" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -277,7 +276,7 @@
         <property role="3F0ifm" value="section" />
       </node>
       <node concept="1iCGBv" id="QRmqzJj_uj" role="3EZMnx">
-        <ref role="1NtTu8" to="lsus:QRmqzJj_2X" />
+        <ref role="1NtTu8" to="lsus:QRmqzJj_2X" resolve="section" />
         <node concept="1sVBvm" id="QRmqzJj_um" role="1sWHZn">
           <node concept="3F0A7n" id="QRmqzJj_uo" role="2wV5jI">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -311,7 +310,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="QRmqzJj_uz" role="3EZMnx">
-          <ref role="1NtTu8" to="lsus:QRmqzJj_30" />
+          <ref role="1NtTu8" to="lsus:QRmqzJj_30" resolve="subEntries" />
           <node concept="l2Vlx" id="QRmqzJj_u$" role="2czzBx" />
           <node concept="pj6Ft" id="QRmqzJj_u_" role="3F10Kt">
             <property role="VOm3f" value="true" />

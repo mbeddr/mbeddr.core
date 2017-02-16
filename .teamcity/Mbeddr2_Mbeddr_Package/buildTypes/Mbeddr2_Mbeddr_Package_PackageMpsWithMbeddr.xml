@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="367423d1-da2f-4163-a8f7-8d854f8e7c8a" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="367423d1-da2f-4163-a8f7-8d854f8e7c8a" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
   <name>Package MPS with mbeddr</name>
   <description />
   <settings ref="RequiresMpsExtions">
@@ -9,6 +9,7 @@
     </options>
     <parameters>
       <param name="artifacts-icons.path-properties" value="-Dartifacts.icons=%teamcity.build.checkoutDir%/mbeddr.core/rcp/icons" />
+      <param name="mbeddr.buildNumber" value="%build.vcs.number%" />
       <param name="mbeddr.languages.artifact-paths"><![CDATA[build/com.mbeddr.debugger.testing/build/artifacts/com.mbeddr.debugger-testing.runtime.build/*.zip=>build/com.mbeddr.debugger.testing/build/artifacts/com.mbeddr.debugger-testing.runtime.build
 build/com.mbeddr.build/build/artifacts/mbeddr/*.zip=>build/com.mbeddr.build/build/artifacts/mbeddr
 build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform/*.zip=>build/com.mbeddr.platform/build/artifacts/com.mbeddr.platform
@@ -19,7 +20,7 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
         <parameters>
           <param name="build-file-path" value="scripts/com.mbeddr.rcp/mps.xml" />
           <param name="runnerArgs" value="%mbeddr-github.path-properties% %mps.path-properties% %artifacts-root.path-properties% %build-dir.path-properties% %artifacts-startup.path-properties%" />
-          <param name="target" value="clean,build" />
+          <param name="target" value="clean,generate,build" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
@@ -30,7 +31,7 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
       <runner id="RUNNER_7" name="Build mbeddr RCP" type="Ant">
         <parameters>
           <param name="build-file-path" value="scripts/com.mbeddr.rcp/mpsDistribution.xml" />
-          <param name="runnerArgs" value="%mbeddr-github.path-properties% %mps.path-properties% %artifacts-root.path-properties% %build-dir.path-properties% %artifacts-startup.path-properties%" />
+          <param name="runnerArgs" value="%mbeddr-github.path-properties% %mps.path-properties% %artifacts-root.path-properties% %build-dir.path-properties% %artifacts-startup.path-properties% -Dmbeddr.buildNumber=%mbeddr.buildNumber%" />
           <param name="target" value="clean,build" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
@@ -48,15 +49,19 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
     <requirements />
     <build-triggers />
     <artifact-dependencies>
-      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_GenerateBuildScripts" cleanDestination="true">
-        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
-        <artifact sourcePath="%buildscripts.artifact-rule%" />
-      </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="true">
+      <dependency id="ARTIFACT_DEPENDENCY_89" sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%mps.artifact-rule%" />
       </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageAllPlugins" cleanDestination="true">
+      <dependency id="ARTIFACT_DEPENDENCY_90" sourceBuildTypeId="Mbeddr2_Bootstrap_GenerateBuildScripts" cleanDestination="false">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="%buildscripts.artifact-rule%" />
+      </dependency>
+      <dependency id="ARTIFACT_DEPENDENCY_91" sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageAllPlugins" cleanDestination="false">
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
+        <artifact sourcePath="%generic.artifact-rule%" />
+      </dependency>
+      <dependency id="ARTIFACT_DEPENDENCY_92" sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageTutorial" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
       </dependency>
@@ -66,6 +71,13 @@ code/plugins/sl-all/build/artifacts/mps-sl-all/*.zip=>code/plugins/sl-all/build/
         <options>
           <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
           <option name="run-build-if-dependency-failed-to-start" value="RUN_ADD_PROBLEM" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+      <depend-on sourceBuildTypeId="Mbeddr2_Mbeddr_Package_PackageTutorial">
+        <options>
+          <option name="run-build-if-dependency-failed" value="RUN_ADD_PROBLEM" />
           <option name="take-started-build-with-same-revisions" value="true" />
           <option name="take-successful-builds-only" value="true" />
         </options>

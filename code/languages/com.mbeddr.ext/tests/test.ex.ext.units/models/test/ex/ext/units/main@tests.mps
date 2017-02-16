@@ -2,9 +2,9 @@
 <model ref="r:6fe398db-6d5e-4884-87d3-18e70160d222(test.ex.ext.units.main@tests)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
@@ -105,6 +105,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -171,6 +172,7 @@
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
@@ -233,14 +235,12 @@
       <property role="1FkSt$" value="-g" />
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
+      <property role="3I8uaA" value="" />
     </node>
     <node concept="2Q9Fgs" id="7j7F_4ow9iA" role="2Q9xDr">
       <node concept="2Q9FjX" id="7j7F_4ow9iB" role="2Q9FjI" />
     </node>
     <node concept="2eh4Hv" id="4CUqBF4znbX" role="2Q9xDr" />
-    <node concept="12mU2y" id="5B69dDbeJIy" role="2Q9xDr">
-      <node concept="3GpDuo" id="5B69dDbeJIz" role="3GpDut" />
-    </node>
     <node concept="2eOfOl" id="7j7F_4ow9iC" role="2ePNbc">
       <property role="TrG5h" value="UnitsTests" />
       <property role="iO3LB" value="true" />
@@ -256,6 +256,9 @@
       <node concept="2v9HqM" id="7j7F_4ow9iG" role="2eOfOg">
         <ref role="2v9HqP" node="7j7F_4owjDf" resolve="MetaMethods" />
       </node>
+    </node>
+    <node concept="12mU2y" id="5B69dDbeJIy" role="2Q9xDr">
+      <node concept="3GpDuo" id="5B69dDbeJIz" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="7j7F_4owc9c">
@@ -1373,6 +1376,8 @@
     <property role="TrG5h" value="UnitsTests" />
     <node concept="lIfQi" id="4Ru$s7zAHU2" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
+      <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAHU3" role="lIfQt">
         <ref role="3cM6IK" node="7j7F_4owgu3" resolve="expressionsTest" />
       </node>

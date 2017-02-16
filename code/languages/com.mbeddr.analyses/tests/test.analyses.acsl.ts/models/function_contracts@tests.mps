@@ -43,11 +43,6 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL" />
     </language>
-    <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
-      <concept id="6973658835837826905" name="com.mbeddr.analyses.cbmc.structure.Assert" flags="ng" index="Y9XUq">
-        <child id="6973658835837826906" name="exp" index="Y9XUp" />
-      </concept>
-    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -72,6 +67,10 @@
       <concept id="1156681608090854095" name="com.mbeddr.analyses.acsl.structure.Old" flags="ng" index="10tJ$4">
         <child id="1156681608090856601" name="var" index="10tJti" />
       </concept>
+      <concept id="6715381068726883387" name="com.mbeddr.analyses.acsl.structure.ACSLContractsGenerationConfigItem" flags="ng" index="31U8uV">
+        <child id="6715381068726941300" name="generationKind" index="31UYnO" />
+      </concept>
+      <concept id="6715381068727236081" name="com.mbeddr.analyses.acsl.structure.ACSLContractsGenerationDoNothing" flags="ng" index="31VQpL" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -135,6 +134,11 @@
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
+    </language>
+    <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
+      <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
+        <child id="6973658835837826906" name="exp" index="Y9XUp" />
+      </concept>
     </language>
   </registry>
   <node concept="1lH9Xt" id="10dmWHgjrqM">
@@ -280,6 +284,9 @@
   <node concept="2v9HqL" id="10dmWHguyWX">
     <node concept="2Q9Fgs" id="10dmWHguyWY" role="2Q9xDr">
       <node concept="2Q9FjX" id="10dmWHguyWZ" role="2Q9FjI" />
+    </node>
+    <node concept="31U8uV" id="20bhQjaOQqP" role="2Q9xDr">
+      <node concept="31VQpL" id="20bhQjaOQqQ" role="31UYnO" />
     </node>
   </node>
 </model>

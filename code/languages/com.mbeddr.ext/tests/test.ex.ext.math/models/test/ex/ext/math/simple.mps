@@ -38,6 +38,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -69,6 +70,7 @@
         <child id="6275792049641586525" name="body" index="c0Qz3" />
       </concept>
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
       <concept id="7755897872837031762" name="com.mbeddr.core.unittest.structure.StructuredBinOpAssertStatement" flags="ng" index="2N2GHn">
@@ -148,7 +150,7 @@
   <node concept="N3F5e" id="3bfDwHb_dJY">
     <property role="TrG5h" value="MathTests" />
     <node concept="c0Qz5" id="3bfDwHb_dJK" role="N3F5h">
-      <property role="2OOxQR" value="false" />
+      <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="testAbs" />
       <node concept="19Rifw" id="3bfDwHb_dJI" role="2C2TGm">
         <property role="2caQfQ" value="false" />
@@ -204,7 +206,7 @@
       <property role="TrG5h" value="empty_1394114875540_2" />
     </node>
     <node concept="c0Qz5" id="3bfDwHb_VgD" role="N3F5h">
-      <property role="2OOxQR" value="false" />
+      <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="testFracInt" />
       <node concept="19Rifw" id="3bfDwHb_VgE" role="2C2TGm">
         <property role="2caQfQ" value="false" />
@@ -263,7 +265,7 @@
       <property role="TrG5h" value="empty_1394094896027_4" />
     </node>
     <node concept="c0Qz5" id="3bfDwHbA4aB" role="N3F5h">
-      <property role="2OOxQR" value="false" />
+      <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="testFracFloat" />
       <node concept="19Rifw" id="3bfDwHbA4aC" role="2C2TGm">
         <property role="2caQfQ" value="false" />
@@ -316,7 +318,7 @@
       <property role="TrG5h" value="empty_1394094544961_2" />
     </node>
     <node concept="c0Qz5" id="3bfDwHbA95q" role="N3F5h">
-      <property role="2OOxQR" value="false" />
+      <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="testLog" />
       <node concept="19Rifw" id="3bfDwHbA95r" role="2C2TGm">
         <property role="2caQfQ" value="false" />
@@ -342,7 +344,7 @@
       <property role="TrG5h" value="empty_1394095379695_8" />
     </node>
     <node concept="c0Qz5" id="3bfDwHbAnlG" role="N3F5h">
-      <property role="2OOxQR" value="false" />
+      <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="testPower" />
       <node concept="19Rifw" id="3bfDwHbAnlH" role="2C2TGm">
         <property role="2caQfQ" value="false" />
@@ -399,7 +401,7 @@
       <property role="TrG5h" value="empty_1394094903892_6" />
     </node>
     <node concept="c0Qz5" id="3bfDwHbBXzi" role="N3F5h">
-      <property role="2OOxQR" value="false" />
+      <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="testSum" />
       <node concept="19Rifw" id="3bfDwHbBXzj" role="2C2TGm">
         <property role="2caQfQ" value="false" />
@@ -498,7 +500,7 @@
       <property role="TrG5h" value="empty_1394094904027_7" />
     </node>
     <node concept="c0Qz5" id="3bfDwHbCDuA" role="N3F5h">
-      <property role="2OOxQR" value="false" />
+      <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="testProduct" />
       <node concept="19Rifw" id="3bfDwHbCDuB" role="2C2TGm">
         <property role="2caQfQ" value="false" />
@@ -692,6 +694,8 @@
     </node>
     <node concept="lIfQi" id="4Ru$s7zAJ9D" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
+      <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAJ9E" role="lIfQt">
         <ref role="3cM6IK" node="3bfDwHb_dJK" resolve="testAbs" />
       </node>
@@ -728,6 +732,7 @@
       <property role="1FkSt$" value="-g" />
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
+      <property role="3I8uaA" value="" />
     </node>
     <node concept="2Q9Fgs" id="3bfDwHb_dLz" role="2Q9xDr">
       <node concept="2Q9FjX" id="3bfDwHb_dL$" role="2Q9FjI" />

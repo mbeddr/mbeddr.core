@@ -2,16 +2,16 @@
 <model ref="r:88e35837-94df-4834-bc32-2485eea6f0d4(com.mbeddr.mpsutil.favourites.plugin.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="0" />
+    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -30,9 +30,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -188,6 +187,10 @@
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
       <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.structure.ProjectView" flags="ng" index="14aYJB">
+        <property id="5597588939837555688" name="rebuildOnRepoChange" index="280Iaj" />
+        <property id="5597588939837555683" name="rebuildOnMake" index="280Iao" />
+        <property id="5597588939837555679" name="rebuildOnClassLoad" index="280Ia$" />
+        <property id="5597588939837555676" name="rebuildOnFileChange" index="280IaB" />
         <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
         <child id="5782973724855443006" name="icon" index="37b278" />
@@ -262,6 +265,10 @@
   <node concept="14aYJB" id="FniR$C6ZPR">
     <property role="TrG5h" value="FavouritesProjectView" />
     <property role="3aPfAI" value="3" />
+    <property role="280Ia$" value="true" />
+    <property role="280IaB" value="true" />
+    <property role="280Iao" value="true" />
+    <property role="280Iaj" value="true" />
     <node concept="14aYG3" id="7diJr$RvF92" role="14aYEy">
       <property role="TrG5h" value="project" />
       <node concept="14aYG3" id="FniR$CbLj0" role="1DVp44">
@@ -968,7 +975,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="FniR$Ci0mG" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/star.png" />
+      <property role="1iqoE4" value="${module}/icons/star.png" />
     </node>
     <node concept="2ScWuX" id="FniR$Ciczt" role="tmbBb">
       <node concept="3clFbS" id="FniR$Ciczu" role="2VODD2">
@@ -1108,7 +1115,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="FniR$CiprS" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/star.png" />
+      <property role="1iqoE4" value="${module}/icons/star.png" />
     </node>
     <node concept="2ScWuX" id="FniR$CiprT" role="tmbBb">
       <node concept="3clFbS" id="FniR$CiprU" role="2VODD2">

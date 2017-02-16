@@ -1,0 +1,18 @@
+ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
+
+ext.mpsMajor = "3.4"
+ext.mpsBuild = "3.4.3"
+
+ext.artifactsDir = new File(rootDir, 'artifacts')
+
+subprojects {
+    // required plugins
+    apply plugin: "base"
+    apply plugin: "maven-publish"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion '3.1'
+    distributionType 'all'
+}

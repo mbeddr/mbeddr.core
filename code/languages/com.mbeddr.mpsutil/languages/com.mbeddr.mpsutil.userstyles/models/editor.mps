@@ -2,8 +2,7 @@
 <model ref="r:1b6a475a-7123-4b91-bd3d-7f5bf3de12cf(com.mbeddr.mpsutil.userstyles.editor)">
   <persistence version="9" />
   <languages>
-    <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -113,7 +112,7 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="3F1sOY" id="Vx4CqFKsno" role="3EZMnx">
-        <ref role="1NtTu8" to="6asz:Vx4CqFKsle" />
+        <ref role="1NtTu8" to="6asz:Vx4CqFKsle" resolve="style" />
       </node>
       <node concept="l2Vlx" id="Vx4CqFKsne" role="2iSdaV" />
     </node>

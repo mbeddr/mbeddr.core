@@ -2,7 +2,7 @@
 <model ref="r:6132ffd2-5867-4061-9e84-54ced53e3583(de.slisson.mps.editor.tabs.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -47,7 +47,7 @@
         <property role="3F0ifm" value="tabs" />
       </node>
       <node concept="3F2HdR" id="7szUFELPmXp" role="3EZMnx">
-        <ref role="1NtTu8" to="evwm:7szUFELPmXn" />
+        <ref role="1NtTu8" to="evwm:7szUFELPmXn" resolve="tabs" />
         <node concept="2EHx9g" id="7szUFELPmXV" role="2czzBx" />
       </node>
     </node>
@@ -59,7 +59,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F1sOY" id="7szUFELPmXL" role="3EZMnx">
-        <ref role="1NtTu8" to="evwm:7szUFELPmXx" />
+        <ref role="1NtTu8" to="evwm:7szUFELPmXx" resolve="cell" />
       </node>
       <node concept="2iRfu4" id="7szUFELPmXH" role="2iSdaV" />
     </node>

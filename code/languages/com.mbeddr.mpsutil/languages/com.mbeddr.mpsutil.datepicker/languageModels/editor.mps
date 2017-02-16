@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -138,7 +138,7 @@
             </node>
           </node>
           <node concept="3F1sOY" id="2nIaZ7iwIaK" role="3EZMnx">
-            <ref role="1NtTu8" to="ric:2nIaZ7iwtiv" />
+            <ref role="1NtTu8" to="ric:2nIaZ7iwtiv" resolve="setup" />
             <node concept="VPXOz" id="2nIaZ7iwIaL" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -160,7 +160,7 @@
             </node>
           </node>
           <node concept="3F1sOY" id="2nIaZ7iwIaR" role="3EZMnx">
-            <ref role="1NtTu8" to="ric:2nIaZ7iwtiw" />
+            <ref role="1NtTu8" to="ric:2nIaZ7iwtiw" resolve="veto" />
             <node concept="VPXOz" id="2nIaZ7iwIaS" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -179,7 +179,7 @@
             <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
           </node>
           <node concept="3F1sOY" id="2nIaZ7iwIaY" role="3EZMnx">
-            <ref role="1NtTu8" to="ric:2nIaZ7iwtix" />
+            <ref role="1NtTu8" to="ric:2nIaZ7iwtix" resolve="action" />
           </node>
           <node concept="2iRfu4" id="2nIaZ7iwIaZ" role="2iSdaV" />
         </node>

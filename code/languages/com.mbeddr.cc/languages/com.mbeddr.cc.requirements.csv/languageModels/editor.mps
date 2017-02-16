@@ -2,7 +2,7 @@
 <model ref="r:49330941-8eaa-442a-baa4-c3b07af7a98a(com.mbeddr.cc.requirements.csv.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,11 +14,11 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="tryi" ref="698eb129-303c-4c1c-b397-9e30753d40b2/java:au.com.bytecode.opencsv(com.mbeddr.cc.requirements.csv/)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="xvsr" ref="r:18791582-199a-4c4c-a282-6d61b7657294(com.mbeddr.cc.requirements.behavior)" />
     <import index="lduv" ref="r:205e5977-e158-46e3-81e4-2575403e7b86(com.mbeddr.cc.requirements.csv.behavior)" />
+    <import index="tryi" ref="11045775-3aaf-4816-8077-8656c4e8fee1/java:au.com.bytecode.opencsv(com.opencsv/)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -275,7 +275,7 @@
             <property role="3F0ifm" value="Mapper:" />
           </node>
           <node concept="3F1sOY" id="5liZiKqPq4O" role="3EZMnx">
-            <ref role="1NtTu8" to="8fsl:vcqV8fDzb3" />
+            <ref role="1NtTu8" to="8fsl:vcqV8fDzb3" resolve="mapper" />
           </node>
           <node concept="3F0ifn" id="5liZiKqPN1D" role="3EZMnx">
             <property role="3F0ifm" value="clear before import:" />
@@ -545,7 +545,7 @@
             <node concept="3cpWs8" id="vcqV8fDyNg" role="3cqZAp">
               <node concept="3cpWsn" id="vcqV8fDyNh" role="3cpWs9">
                 <property role="TrG5h" value="r" />
-                <node concept="3uibUv" id="7ETGA$T$hRj" role="1tU5fm">
+                <node concept="3uibUv" id="29VkIO0Y$06" role="1tU5fm">
                   <ref role="3uigEE" to="tryi:~CSVReader" resolve="CSVReader" />
                 </node>
                 <node concept="2ShNRf" id="vcqV8fDyNj" role="33vP2m">
@@ -799,7 +799,7 @@
                                       <ref role="3cqZAo" node="vcqV8fDyN3" resolve="rm" />
                                     </node>
                                     <node concept="3Tsc0h" id="vcqV8fDyO9" role="2OqNvi">
-                                      <ref role="3TtcxE" to="75wo:7_tU7IQsFfz" />
+                                      <ref role="3TtcxE" to="75wo:7_tU7IQsFfz" resolve="requirements" />
                                     </node>
                                   </node>
                                   <node concept="TSZUe" id="vcqV8fDyOa" role="2OqNvi">
@@ -825,7 +825,7 @@
                                         <ref role="3cqZAo" node="5liZiKqPIVD" resolve="parentReq" />
                                       </node>
                                       <node concept="3Tsc0h" id="5liZiKqPIXd" role="2OqNvi">
-                                        <ref role="3TtcxE" to="75wo:7_tU7IQsF75" />
+                                        <ref role="3TtcxE" to="75wo:7_tU7IQsF75" resolve="details" />
                                       </node>
                                     </node>
                                     <node concept="TSZUe" id="5liZiKqPIXD" role="2OqNvi">

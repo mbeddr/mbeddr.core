@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -38,6 +38,9 @@
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+      </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1214472762472" name="jetbrains.mps.lang.editor.structure.DefaultCaretPositionStyleClassItem" flags="ln" index="34dVlM">
         <property id="1214472762473" name="position" index="34dVlN" />
@@ -49,6 +52,7 @@
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
         <property id="1215007802031" name="value" index="3$6WeP" />
@@ -93,7 +97,7 @@
         <property role="1cu_pB" value="0" />
         <node concept="3F2HdR" id="2gbCHSczkzO" role="3EZMnx">
           <property role="2czwfO" value="&amp;" />
-          <ref role="1NtTu8" to="tpc2:2gbCHScr0HI" />
+          <ref role="1NtTu8" to="tpc2:2gbCHScr0HI" resolve="contextHints" />
           <node concept="2iRfu4" id="2gbCHSczkzP" role="2czzBx" />
           <node concept="3F0ifn" id="3Nez1fUhV4U" role="2czzBI">
             <property role="3F0ifm" value="&lt;default&gt;" />
@@ -128,7 +132,7 @@
         </node>
         <node concept="1iCGBv" id="g6ipQP8" role="3EZMnx">
           <property role="1$x2rV" value="&lt;no concept&gt;" />
-          <ref role="1NtTu8" to="tpc2:gXXX56I" />
+          <ref role="1NtTu8" to="tpc2:gXXX56I" resolve="conceptDeclaration" />
           <node concept="1sVBvm" id="g6ipMeG" role="1sWHZn">
             <node concept="3F0A7n" id="g6ipQP9" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -173,7 +177,7 @@
             <property role="3EZMnw" value="false" />
             <node concept="3XFhqQ" id="2vJRo8gAnk9" role="3EZMnx" />
             <node concept="3F1sOY" id="2vJRo8gAnka" role="3EZMnx">
-              <ref role="1NtTu8" to="91fu:2vJRo8gAnbT" />
+              <ref role="1NtTu8" to="91fu:2vJRo8gAnbT" resolve="condition" />
             </node>
             <node concept="VPM3Z" id="2vJRo8gAnkb" role="3F10Kt">
               <property role="VOm3f" value="false" />
@@ -213,7 +217,7 @@
             <node concept="3XFhqQ" id="hGQ3v6l" role="3EZMnx" />
             <node concept="3F1sOY" id="gqRMgYh" role="3EZMnx">
               <property role="1$x2rV" value="&lt;choose cell model&gt;" />
-              <ref role="1NtTu8" to="tpc2:fIwV5gl" />
+              <ref role="1NtTu8" to="tpc2:fIwV5gl" resolve="cellModel" />
               <ref role="34QXea" to="tpc5:gtczF7b" resolve="EditorCellModel_KeyMap" />
             </node>
             <node concept="VPM3Z" id="hEU$Q0C" role="3F10Kt">
@@ -259,7 +263,7 @@
             <node concept="3XFhqQ" id="hGQ3wyD" role="3EZMnx" />
             <node concept="3F1sOY" id="fGbFJ$X" role="3EZMnx">
               <property role="1$x2rV" value="&lt;choose cell model&gt;" />
-              <ref role="1NtTu8" to="tpc2:fG6VMW6" />
+              <ref role="1NtTu8" to="tpc2:fG6VMW6" resolve="inspectedCellModel" />
               <ref role="34QXea" to="tpc5:gtczF7b" resolve="EditorCellModel_KeyMap" />
             </node>
             <node concept="VPM3Z" id="hEU$PRX" role="3F10Kt">
@@ -320,7 +324,7 @@
         <node concept="2iRfu4" id="59YMGDNPSSj" role="2iSdaV" />
       </node>
       <node concept="3F1sOY" id="59YMGDNPST2" role="3EZMnx">
-        <ref role="1NtTu8" to="91fu:59YMGDNPSQL" />
+        <ref role="1NtTu8" to="91fu:59YMGDNPSQL" resolve="cell" />
       </node>
       <node concept="2iRkQZ" id="59YMGDNPSRP" role="2iSdaV" />
     </node>
@@ -344,10 +348,16 @@
         <property role="3F0ifm" value="dummy wrapper" />
       </node>
       <node concept="3F1sOY" id="1CDgnklDL0j" role="3EZMnx">
-        <ref role="1NtTu8" to="91fu:1CDgnklDKZe" />
+        <ref role="1NtTu8" to="91fu:1CDgnklDKZe" resolve="cell" />
       </node>
       <node concept="2iRkQZ" id="1CDgnklDKZL" role="2iSdaV" />
     </node>
+  </node>
+  <node concept="3p36aQ" id="4iNiUqGz3jx">
+    <ref role="aqKnT" to="91fu:59YMGDNPSQ9" resolve="PriorityInfoCell" />
+  </node>
+  <node concept="3p36aQ" id="4iNiUqGz3jy">
+    <ref role="aqKnT" to="91fu:59YMGDNQGbN" resolve="UniqueNameInfo" />
   </node>
 </model>
 
