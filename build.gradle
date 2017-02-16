@@ -6,16 +6,7 @@ ext.mpsBuild = "3.4.3"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
-if (project.hasProperty("forceCI")) {
-    ext.ciBuild = true
-} else {
-    //on teamcity we are in a CI build
-if (project.hasProperty("teamcity")) {
-    ext.ciBuild = true
-} else {
-    ext.ciBuild = false
-}
-}
+ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.findProperty("teamcity")
 
 subprojects {
     // required plugins
