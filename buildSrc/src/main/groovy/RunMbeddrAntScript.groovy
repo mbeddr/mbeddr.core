@@ -1,6 +1,4 @@
-import org.apache.tools.ant.taskdefs.condition.Os
 import org.gradle.api.DefaultTask
-import org.gradle.api.tasks.StopExecutionException
 import org.gradle.api.tasks.TaskAction
 
 class RunMbeddrAntScript extends DefaultTask {
@@ -13,28 +11,15 @@ class RunMbeddrAntScript extends DefaultTask {
 
     @TaskAction
     def build() {
-        def args = buildProcSpawnArgList(['ant', '-verbose',*project.dependsOnMbeddr_scriptArgs, *(antScriptLocation(script)), *targets])
-        def exec = project.exec {
+        project.javaexec {
+            main 'org.apache.tools.ant.launch.Launcher'
             workingDir project.rootDir
-            commandLine args
-        }
-        if (exec.exitValue != 0) {
-            throw new StopExecutionException("Exit code not 0 was ${exec.exitValue}")
-        }
-    }
 
-    private Iterable<String> buildProcSpawnArgList(Iterable<String> args) {
-        List<String> newArguments = new ArrayList<String>()
-        if(Os.isFamily(Os.FAMILY_WINDOWS)) {
-            // we append the 'cmd /c' command in front
-            newArguments.add(0,'cmd.exe')
-            newArguments.add(1,'/c')
-        }
-        newArguments.addAll(args.toList())
-        return newArguments
-    }
+            classpath project.configurations.ant_lib.fileCollection({
+                true
+            }) + project.files("$project.jdk_home/lib/tools.jar")
 
-    private Iterable<String> antScriptLocation(Object antScriptLocation) {
-        return ['-f', project.file(antScriptLocation)]
+            args(*['-verbose',  *project.dependsOnMbeddr_scriptArgs, '-buildfile', project.file(script), *targets])
+        }
     }
 }

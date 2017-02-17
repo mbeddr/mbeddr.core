@@ -11,6 +11,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
+    <import index="llb3" ref="r:38e1b852-361b-47c0-99e1-1944e9fcd4c9(com.mbeddr.analyses.spin.c.patterns.structure)" implicit="true" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -130,6 +131,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -334,48 +338,29 @@
     </node>
     <node concept="2tJIrI" id="7T$_el8lOyT" role="jymVt" />
     <node concept="2YIFZL" id="7T$_el8lOAj" role="jymVt">
-      <property role="TrG5h" value="isGuardOfChoice" />
+      <property role="TrG5h" value="isChildOfAbstractAssign" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="7T$_el8lOAm" role="3clF47">
-        <node concept="3cpWs8" id="7T$_el8lOHb" role="3cqZAp">
-          <node concept="3cpWsn" id="7T$_el8lOHc" role="3cpWs9">
-            <property role="TrG5h" value="p" />
-            <node concept="3Tqbb2" id="7T$_el8lOH9" role="1tU5fm" />
-            <node concept="1rXfSq" id="7T$_el8lOHd" role="33vP2m">
-              <ref role="37wK5l" node="5hi7ucOvrI3" resolve="firstProperParent" />
-              <node concept="37vLTw" id="7T$_el8lOHe" role="37wK5m">
-                <ref role="3cqZAo" node="7T$_el8lOBC" resolve="s" />
+        <node concept="Jncv_" id="4ly_4leF_yv" role="3cqZAp">
+          <ref role="JncvD" to="llb3:1BFQdmKfJHu" resolve="AbstractAssign" />
+          <node concept="2OqwBi" id="4ly_4leF_GR" role="JncvB">
+            <node concept="37vLTw" id="4ly_4leF_As" role="2Oq$k0">
+              <ref role="3cqZAo" node="7T$_el8lOBC" resolve="e" />
+            </node>
+            <node concept="1mfA1w" id="4ly_4leF_Nt" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="4ly_4leF_yz" role="Jncv$">
+            <node concept="3cpWs6" id="4ly_4leF_RN" role="3cqZAp">
+              <node concept="3clFbT" id="4ly_4leKs3U" role="3cqZAk">
+                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
-        </node>
-        <node concept="Jncv_" id="7T$_el8lOOQ" role="3cqZAp">
-          <ref role="JncvD" to="ir22:24G9CRyKk6D" resolve="Choice" />
-          <node concept="37vLTw" id="7T$_el8lOQ8" role="JncvB">
-            <ref role="3cqZAo" node="7T$_el8lOHc" resolve="p" />
-          </node>
-          <node concept="3clFbS" id="7T$_el8lOOU" role="Jncv$">
-            <node concept="3cpWs6" id="7T$_el8lORH" role="3cqZAp">
-              <node concept="3clFbC" id="7T$_el8lSbc" role="3cqZAk">
-                <node concept="37vLTw" id="7T$_el8lSey" role="3uHU7w">
-                  <ref role="3cqZAo" node="7T$_el8lOBC" resolve="s" />
-                </node>
-                <node concept="2OqwBi" id="7T$_el8lRt3" role="3uHU7B">
-                  <node concept="Jnkvi" id="7T$_el8lRjl" role="2Oq$k0">
-                    <ref role="1M0zk5" node="7T$_el8lOOW" resolve="c" />
-                  </node>
-                  <node concept="3TrEf2" id="7T$_el8lRJt" role="2OqNvi">
-                    <ref role="3Tt5mk" to="ir22:24G9CRyKklR" resolve="guard" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="JncvC" id="7T$_el8lOOW" role="JncvA">
-            <property role="TrG5h" value="c" />
-            <node concept="2jxLKc" id="7T$_el8lOOX" role="1tU5fm" />
+          <node concept="JncvC" id="4ly_4leF_y_" role="JncvA">
+            <property role="TrG5h" value="aa" />
+            <node concept="2jxLKc" id="4ly_4leF_yA" role="1tU5fm" />
           </node>
         </node>
         <node concept="3cpWs6" id="7T$_el8lSnf" role="3cqZAp">
@@ -387,14 +372,67 @@
       <node concept="3Tm1VV" id="7T$_el8lO$X" role="1B3o_S" />
       <node concept="10P_77" id="7T$_el8lOAa" role="3clF45" />
       <node concept="37vLTG" id="7T$_el8lOBC" role="3clF46">
-        <property role="TrG5h" value="s" />
+        <property role="TrG5h" value="e" />
         <node concept="3Tqbb2" id="7T$_el8lOBB" role="1tU5fm" />
       </node>
       <node concept="NWlO9" id="7T$_el8lS$6" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this statement is the guard of a Choice." />
+        <property role="NWlVz" value="Returns true if this expression is a child of random or nondet assign." />
       </node>
     </node>
     <node concept="2tJIrI" id="5hi7ucOvrHw" role="jymVt" />
+    <node concept="2YIFZL" id="4ly_4leJE4t" role="jymVt">
+      <property role="TrG5h" value="isRangeOfForeach" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4ly_4leJE4u" role="3clF47">
+        <node concept="Jncv_" id="4ly_4leJE4v" role="3cqZAp">
+          <ref role="JncvD" to="llb3:5RNtn4cbrGb" resolve="ForEachStatement" />
+          <node concept="2OqwBi" id="4ly_4leJE4w" role="JncvB">
+            <node concept="37vLTw" id="4ly_4leJE4x" role="2Oq$k0">
+              <ref role="3cqZAo" node="4ly_4leJE4Q" resolve="e" />
+            </node>
+            <node concept="1mfA1w" id="4ly_4leJE4y" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="4ly_4leJE4z" role="Jncv$">
+            <node concept="3cpWs6" id="4ly_4leJE4$" role="3cqZAp">
+              <node concept="3clFbC" id="4ly_4leJE4F" role="3cqZAk">
+                <node concept="2OqwBi" id="4ly_4leJE4G" role="3uHU7B">
+                  <node concept="Jnkvi" id="4ly_4leJE4H" role="2Oq$k0">
+                    <ref role="1M0zk5" node="4ly_4leJE4K" resolve="fes" />
+                  </node>
+                  <node concept="3TrEf2" id="4ly_4leJF8L" role="2OqNvi">
+                    <ref role="3Tt5mk" to="llb3:5RNtn4cbrGc" resolve="range" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="4ly_4leJE4J" role="3uHU7w">
+                  <ref role="3cqZAo" node="4ly_4leJE4Q" resolve="e" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="4ly_4leJE4K" role="JncvA">
+            <property role="TrG5h" value="fes" />
+            <node concept="2jxLKc" id="4ly_4leJE4L" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4ly_4leJE4M" role="3cqZAp">
+          <node concept="3clFbT" id="4ly_4leJE4N" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4ly_4leJE4O" role="1B3o_S" />
+      <node concept="10P_77" id="4ly_4leJE4P" role="3clF45" />
+      <node concept="37vLTG" id="4ly_4leJE4Q" role="3clF46">
+        <property role="TrG5h" value="e" />
+        <node concept="3Tqbb2" id="4ly_4leJE4R" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="4ly_4leJE4S" role="lGtFl">
+        <property role="NWlVz" value="Returns true if this expression is the range of a foreach statement." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4ly_4leJE2R" role="jymVt" />
     <node concept="2YIFZL" id="7T$_el8mDRP" role="jymVt">
       <property role="TrG5h" value="isBodyOfChoiceLike" />
       <property role="od$2w" value="false" />
@@ -469,6 +507,77 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7T$_el8mDPV" role="jymVt" />
+    <node concept="2YIFZL" id="4ly_4leLv2Y" role="jymVt">
+      <property role="TrG5h" value="isBodyOfNondetChoice" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4ly_4leLv2Z" role="3clF47">
+        <node concept="3cpWs8" id="4ly_4leLv30" role="3cqZAp">
+          <node concept="3cpWsn" id="4ly_4leLv31" role="3cpWs9">
+            <property role="TrG5h" value="p" />
+            <node concept="3Tqbb2" id="4ly_4leLv32" role="1tU5fm" />
+            <node concept="1rXfSq" id="4ly_4leLv33" role="33vP2m">
+              <ref role="37wK5l" node="5hi7ucOvrI3" resolve="firstProperParent" />
+              <node concept="37vLTw" id="4ly_4leLv34" role="37wK5m">
+                <ref role="3cqZAo" node="4ly_4leLv3q" resolve="s" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Jncv_" id="4ly_4leLv35" role="3cqZAp">
+          <ref role="JncvD" to="llb3:5hi7ucOryW$" resolve="CChoice" />
+          <node concept="37vLTw" id="4ly_4leLv36" role="JncvB">
+            <ref role="3cqZAo" node="4ly_4leLv31" resolve="p" />
+          </node>
+          <node concept="3clFbS" id="4ly_4leLv37" role="Jncv$">
+            <node concept="3cpWs6" id="4ly_4leLv38" role="3cqZAp">
+              <node concept="2OqwBi" id="4ly_4leLv39" role="3cqZAk">
+                <node concept="2OqwBi" id="4ly_4leLw6q" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4ly_4leLv3b" role="2Oq$k0">
+                    <node concept="Jnkvi" id="4ly_4leLv3c" role="2Oq$k0">
+                      <ref role="1M0zk5" node="4ly_4leLv3k" resolve="cc" />
+                    </node>
+                    <node concept="3TrEf2" id="4ly_4leLvCF" role="2OqNvi">
+                      <ref role="3Tt5mk" to="llb3:5hi7ucOryW_" resolve="statementList" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="4ly_4leLwBc" role="2OqNvi">
+                    <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
+                  </node>
+                </node>
+                <node concept="3JPx81" id="4ly_4leLv3i" role="2OqNvi">
+                  <node concept="37vLTw" id="4ly_4leLwKM" role="25WWJ7">
+                    <ref role="3cqZAo" node="4ly_4leLv3q" resolve="s" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="4ly_4leLv3k" role="JncvA">
+            <property role="TrG5h" value="cc" />
+            <node concept="2jxLKc" id="4ly_4leLv3l" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4ly_4leLv3m" role="3cqZAp">
+          <node concept="3clFbT" id="4ly_4leLv3n" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4ly_4leLv3o" role="1B3o_S" />
+      <node concept="10P_77" id="4ly_4leLv3p" role="3clF45" />
+      <node concept="37vLTG" id="4ly_4leLv3q" role="3clF46">
+        <property role="TrG5h" value="s" />
+        <node concept="3Tqbb2" id="4ly_4leLv3r" role="1tU5fm">
+          <ref role="ehGHo" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+        </node>
+      </node>
+      <node concept="NWlO9" id="4ly_4leLv3s" role="lGtFl">
+        <property role="NWlVz" value="Returns true if this statement is the body of a Choice." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4ly_4leLv1a" role="jymVt" />
     <node concept="3Tm1VV" id="5hi7ucOvrGu" role="1B3o_S" />
     <node concept="NWlO9" id="5hi7ucOvt8q" role="lGtFl">
       <property role="NWlVz" value="Utility methods for access to C code." />
