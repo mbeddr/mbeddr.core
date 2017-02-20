@@ -55,6 +55,9 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -87,6 +90,10 @@
         <ref role="Rm8GQ" node="3T8dS7U98jM" resolve="URL" />
         <ref role="1Px2BO" node="3T8dS7U966b" resolve="HyperlinkStyle" />
       </node>
+    </node>
+    <node concept="3t5Usi" id="ojedFZ7Qi6" role="V601i">
+      <property role="TrG5h" value="hyperlink-node" />
+      <node concept="3Tqbb2" id="ojedFZ7Qiu" role="3t5Oan" />
     </node>
   </node>
   <node concept="24kQdi" id="80_psC5vRk">

@@ -173,6 +173,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -2065,11 +2068,13 @@
       <node concept="1GpqWn" id="4iNiUqG$cCo" role="1Go12V">
         <node concept="3clFbS" id="4iNiUqG$cCp" role="2VODD2">
           <node concept="3clFbF" id="4iNiUqG$cJI" role="3cqZAp">
-            <node concept="2OqwBi" id="4iNiUqG$d16" role="3clFbG">
-              <node concept="1GpqW3" id="4iNiUqG$cJH" role="2Oq$k0" />
-              <node concept="2Zo12i" id="4iNiUqG$drn" role="2OqNvi">
-                <node concept="chp4Y" id="4iNiUqG$dFS" role="2Zo12j">
-                  <ref role="cht4Q" to="aozb:6W_V$eaOsrn" resolve="IGeneratorOnly" />
+            <node concept="3fqX7Q" id="5cbCx5gQBsg" role="3clFbG">
+              <node concept="2OqwBi" id="5cbCx5gQBsi" role="3fr31v">
+                <node concept="1GpqW3" id="5cbCx5gQBsj" role="2Oq$k0" />
+                <node concept="2Zo12i" id="5cbCx5gQBsk" role="2OqNvi">
+                  <node concept="chp4Y" id="5cbCx5gQBsl" role="2Zo12j">
+                    <ref role="cht4Q" to="aozb:6W_V$eaOsrn" resolve="IGeneratorOnly" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2077,6 +2082,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="5cbCx5gQOyI">
+    <ref role="aqKnT" to="aozb:657q32pRmdh" resolve="IContextProvider" />
   </node>
 </model>
 

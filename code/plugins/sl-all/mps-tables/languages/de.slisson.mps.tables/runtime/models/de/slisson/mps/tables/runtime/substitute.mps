@@ -826,7 +826,7 @@
                   <node concept="37vLTI" id="6rHj_ILT$OC" role="3clFbG">
                     <node concept="2YIFZM" id="6rHj_ILT_Nm" role="37vLTx">
                       <ref role="1Pybhc" to="kvq8:6rHj_ILSB4y" resolve="SubstituteUtil" />
-                      <ref role="37wK5l" to="kvq8:6rHj_ILTAID" resolve="forChild" />
+                      <ref role="37wK5l" to="kvq8:6rHj_ILSBVd" resolve="forChild" />
                       <node concept="2OqwBi" id="6rHj_ILT_UH" role="37wK5m">
                         <node concept="37vLTw" id="6rHj_ILT_UI" role="2Oq$k0">
                           <ref role="3cqZAo" node="4381QB0ydkk" resolve="myGridCell" />
@@ -834,9 +834,6 @@
                         <node concept="liA8E" id="6rHj_ILT_UJ" role="2OqNvi">
                           <ref role="37wK5l" to="g51k:~EditorCell_Basic.getContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getContext" />
                         </node>
-                      </node>
-                      <node concept="37vLTw" id="6rHj_ILTDWG" role="37wK5m">
-                        <ref role="3cqZAo" node="4381QB0ydkk" resolve="myGridCell" />
                       </node>
                       <node concept="2OqwBi" id="6rHj_ILTEVN" role="37wK5m">
                         <node concept="37vLTw" id="6rHj_ILTEAQ" role="2Oq$k0">
