@@ -342,7 +342,7 @@
               <ref role="3cqZAo" node="6tpIASsCHCV" resolve="ttr1" />
             </node>
             <node concept="liA8E" id="2jb6dmWQu4l" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
             </node>
           </node>
         </node>
@@ -378,7 +378,7 @@
               <ref role="3cqZAo" node="6tpIASsCH2p" resolve="ttr2" />
             </node>
             <node concept="liA8E" id="2jb6dmWQu4s" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
             </node>
           </node>
         </node>

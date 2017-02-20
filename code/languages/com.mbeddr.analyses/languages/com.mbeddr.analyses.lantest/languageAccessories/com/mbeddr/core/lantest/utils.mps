@@ -13,8 +13,8 @@
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
-    <import index="v5ts" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:d411f908-940a-47de-a6bb-6c4bd57886dd(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.saver)" />
-    <import index="2l8" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:bcbcc941-b1ce-4077-84a0-535ddfca3377(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.filter)" />
+    <import index="v5ts" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:d411f908-940a-47de-a6bb-6c4bd57886dd(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.saver)" />
+    <import index="2l8" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:bcbcc941-b1ce-4077-84a0-535ddfca3377(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.filter)" />
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
@@ -22,7 +22,7 @@
     <import index="s5bn" ref="r:a92dafc6-eacf-4328-984c-d7620d951c7f(com.mbeddr.core.legacy.structure)" />
     <import index="clqz" ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="9n5q" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:b2118c37-6c67-489b-87f9-b422baeb8ff0(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.gen)" />
+    <import index="9n5q" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:b2118c37-6c67-489b-87f9-b422baeb8ff0(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.gen)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="i9so" ref="r:9e5578e0-37f0-4c9b-a301-771bcb453678(jetbrains.mps.make.script)" />
@@ -101,6 +101,7 @@
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -348,6 +349,9 @@
           </node>
         </node>
       </node>
+      <node concept="NWlO9" id="7rZVxqnwp9d" role="lGtFl">
+        <property role="NWlVz" value="Format the index suffix of the saved model." />
+      </node>
     </node>
     <node concept="2tJIrI" id="33cGTVo65vJ" role="jymVt" />
     <node concept="312cEg" id="33cGTVo65vK" role="jymVt">
@@ -445,6 +449,21 @@
               </node>
               <node concept="3TrcHB" id="33cGTVo65wh" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7rZVxqnwhqn" role="3cqZAp">
+          <node concept="37vLTI" id="7rZVxqnwkr5" role="3clFbG">
+            <node concept="37vLTw" id="7rZVxqnwk$r" role="37vLTx">
+              <ref role="3cqZAo" to="v5ts:7rZVxqnuYur" resolve="virtualPackageName" />
+            </node>
+            <node concept="2OqwBi" id="7rZVxqnwig5" role="37vLTJ">
+              <node concept="37vLTw" id="7rZVxqnwhql" role="2Oq$k0">
+                <ref role="3cqZAo" node="33cGTVo65vZ" resolve="imCopy" />
+              </node>
+              <node concept="3TrcHB" id="7rZVxqnwjuH" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
               </node>
             </node>
           </node>
@@ -986,6 +1005,9 @@
     <node concept="3uibUv" id="33cGTVo65yw" role="EKbjA">
       <ref role="3uigEE" to="v5ts:33cGTVo4Ssq" resolve="IModelSaver" />
     </node>
+    <node concept="3uibUv" id="7rZVxqnwgq5" role="1zkMxy">
+      <ref role="3uigEE" to="v5ts:7rZVxqnwei_" resolve="ModelSaverBase" />
+    </node>
   </node>
   <node concept="312cEu" id="33cGTVo719K">
     <property role="TrG5h" value="MbeddrCoreFilter" />
@@ -1168,6 +1190,18 @@
             <node concept="TSZUe" id="3WMUl3DOBJe" role="2OqNvi">
               <node concept="3TUQnm" id="3WMUl3DOBJf" role="25WWJ7">
                 <ref role="3TV0OU" to="yq40:CNkpdzSb_B" resolve="SpecialArrayTypeMarker" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4N7zjch6b9p" role="3cqZAp">
+          <node concept="2OqwBi" id="4N7zjch6b9q" role="3clFbG">
+            <node concept="37vLTw" id="4N7zjch6b9S" role="2Oq$k0">
+              <ref role="3cqZAo" node="4CieeTLk6hP" resolve="uninterestingConcepts" />
+            </node>
+            <node concept="TSZUe" id="4N7zjch6b9r" role="2OqNvi">
+              <node concept="3TUQnm" id="4N7zjch6b9s" role="25WWJ7">
+                <ref role="3TV0OU" to="x27k:1myZgySqtjG" resolve="NameOfFunctionExpression" />
               </node>
             </node>
           </node>

@@ -17,8 +17,8 @@
     <import index="3h46" ref="r:d540de81-ea7d-4732-953c-fa9c34672949(com.mbeddr.analyses.cbmc.core.rt.testing_utils)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
-    <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -307,14 +307,14 @@
             <property role="38rIoG" value="call" />
             <property role="38rMdH" value="add2" />
             <node concept="3Tqbb2" id="2VCuTRccnro" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="38rIoz" id="28vOu_ury8v" role="38rM$J">
             <property role="38rIoG" value="x" />
             <property role="38rMdH" value="2" />
             <node concept="3Tqbb2" id="28vOu_ury8w" role="38rYrG">
-              <ref role="ehGHo" to="q5q6:637qsduSbtp" resolve="Assert" />
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
             </node>
           </node>
           <node concept="38rIoz" id="2VCuTRccnrp" role="38rM$J">

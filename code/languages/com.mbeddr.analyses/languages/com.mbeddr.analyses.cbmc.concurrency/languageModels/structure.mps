@@ -7,8 +7,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
-    <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
@@ -47,7 +47,7 @@
     <property role="EcuMT" value="325797382106458702" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="3V3CJZuMTCa" role="PzmwI">
-      <ref role="PrY4T" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
     </node>
   </node>
   <node concept="1TIwiD" id="3V3CJZuJLdS">
@@ -71,7 +71,7 @@
       <ref role="20lvS9" to="x27k:5HTuIUPB$3z" resolve="LabelStatement" />
     </node>
     <node concept="PrWs8" id="3V3CJZuMTCN" role="PzmwI">
-      <ref role="PrY4T" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
     </node>
   </node>
 </model>

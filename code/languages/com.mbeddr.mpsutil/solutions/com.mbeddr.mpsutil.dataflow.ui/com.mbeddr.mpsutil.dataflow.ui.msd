@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.dataflow.ui" uuid="acc1f724-624c-43b2-998a-71c39acc0405" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.dataflow.ui" uuid="acc1f724-624c-43b2-998a-71c39acc0405" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

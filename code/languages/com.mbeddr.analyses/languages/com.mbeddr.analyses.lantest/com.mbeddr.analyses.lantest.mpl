@@ -69,6 +69,8 @@
     <dependency reexport="false">df9d410f-2ebb-43f7-893a-483a4f085250(jetbrains.mps.smodel.resources)</dependency>
     <dependency reexport="false">86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)</dependency>
     <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
+    <dependency reexport="false">12444536-2174-48ce-b0d3-fb8ba5d682f8(com.mbeddr.analyses.lantest.pluginSolution)</dependency>
+    <dependency reexport="false">0617b2ed-f9cf-44b7-b91d-b3a8e60bae7f(com.mbeddr.mpsutil.lantest.baselang)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -109,6 +111,7 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" version="0" />
     <module reference="0316e52b-aaa9-47f4-9c0b-ca0d60cdc961(com.mbeddr.analyses.lantest)" version="0" />
+    <module reference="12444536-2174-48ce-b0d3-fb8ba5d682f8(com.mbeddr.analyses.lantest.pluginSolution)" version="0" />
     <module reference="4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="0" />
     <module reference="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" version="0" />
@@ -129,6 +132,7 @@
     <module reference="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" version="0" />
     <module reference="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)" version="0" />
     <module reference="5ef691b5-60ce-4ece-a04e-25e642dfa128(com.mbeddr.mpsutil.lantest)" version="0" />
+    <module reference="0617b2ed-f9cf-44b7-b91d-b3a8e60bae7f(com.mbeddr.mpsutil.lantest.baselang)" version="0" />
     <module reference="4ac576d1-143d-4250-b299-9dfff325fcb9(com.mbeddr.mpsutil.lantest.rt)" version="0" />
     <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
     <module reference="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)" version="0" />

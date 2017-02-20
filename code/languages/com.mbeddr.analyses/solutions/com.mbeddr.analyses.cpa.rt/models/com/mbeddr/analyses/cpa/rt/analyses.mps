@@ -36,6 +36,7 @@
     <import index="km6g" ref="r:dd38f401-e2d0-4080-90a2-eb385c40b4f1(com.mbeddr.analyses.cpa.structure)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="q9jj" ref="r:9bb65e44-f83e-4e38-ac95-7e443359a2f7(com.mbeddr.analyses.utils.log)" />
+    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
     <import index="o3dx" ref="r:02ae7fb5-0c7f-4d27-9726-95dddb49a66a(com.mbeddr.analyses.cpa.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -2622,12 +2623,12 @@
           <node concept="3cpWsn" id="5gCJTa6XSdh" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="2I9FWS" id="5gCJTa6XSdc" role="1tU5fm">
-              <ref role="2I9WkF" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+              <ref role="2I9WkF" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
             </node>
             <node concept="2ShNRf" id="5gCJTa6XSZ3" role="33vP2m">
               <node concept="2T8Vx0" id="5gCJTa6XULh" role="2ShVmc">
                 <node concept="2I9FWS" id="5gCJTa6XULj" role="2T96Bj">
-                  <ref role="2I9WkF" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+                  <ref role="2I9WkF" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
                 </node>
               </node>
             </node>
@@ -2682,7 +2683,7 @@
                 <node concept="2Rf3mk" id="5gCJTa6XYm_" role="2OqNvi">
                   <node concept="1xMEDy" id="5gCJTa6XYmA" role="1xVPHs">
                     <node concept="chp4Y" id="7FT_tSP2Z0j" role="ri$Ld">
-                      <ref role="cht4Q" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+                      <ref role="cht4Q" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
                     </node>
                   </node>
                 </node>
@@ -2706,7 +2707,7 @@
       <node concept="3Tm6S6" id="5gCJTa6XFI_" role="1B3o_S" />
       <node concept="_YKpA" id="5gCJTa6XGlO" role="3clF45">
         <node concept="3Tqbb2" id="5gCJTa6XGuR" role="_ZDj9">
-          <ref role="ehGHo" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+          <ref role="ehGHo" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
         </node>
       </node>
       <node concept="37vLTG" id="5gCJTa6XHsX" role="3clF46">

@@ -2,7 +2,7 @@ ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/m
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 
 ext.mpsMajor = "3.4"
-ext.mpsBuild = "3.4.1"
+ext.mpsBuild = "3.4.3"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
