@@ -230,9 +230,9 @@
     <node concept="1TJgyj" id="2b2D8jU0yRA" role="1TKVEi">
       <property role="IQ2ns" value="2504745233808502246" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="toolChain" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="1it8M3uGpbG" resolve="ToolChain" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="Target" />
     </node>
   </node>
   <node concept="AxPO7" id="EAKPqgNQYr">
@@ -301,9 +301,9 @@
     <node concept="1TJgyj" id="1it8M3uKcdk" role="1TKVEi">
       <property role="IQ2ns" value="1485382076185232212" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="toolChains" />
+      <property role="20kJfa" value="targets" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1it8M3uGpbG" resolve="ToolChain" />
+      <ref role="20lvS9" node="1it8M3uGpbG" resolve="Target" />
     </node>
     <node concept="PrWs8" id="4BxItZJ4BoH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -531,7 +531,7 @@
     <property role="3GE5qa" value="binary" />
     <property role="34LRSv" value="external makefile" />
     <property role="EcuMT" value="5789689727170551243" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="5lP9ZVaAU_u" resolve="ExternalPath" />
     <node concept="1TJgyi" id="51p726VIDRd" role="1TKVEl">
       <property role="TrG5h" value="name" />
       <property role="IQ2nx" value="5789689727170551245" />
@@ -539,9 +539,10 @@
       <node concept="asaX9" id="2LP1MbL7tX8" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="2LP1MbL7tWK" role="1TKVEl">
-      <property role="TrG5h" value="path" />
+      <property role="TrG5h" value="oldPath" />
       <property role="IQ2nx" value="3203474556599525168" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="5lP9ZVaMOAu" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="2LP1MbL7tWP" role="1TKVEl">
       <property role="TrG5h" value="target" />
@@ -568,7 +569,13 @@
     <property role="3GE5qa" value="binary" />
     <property role="34LRSv" value="external include" />
     <property role="EcuMT" value="8855170773200720220" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="5lP9ZVaAU_u" resolve="ExternalPath" />
+    <node concept="1TJgyi" id="2LP1MbL3BxK" role="1TKVEl">
+      <property role="TrG5h" value="oldPath" />
+      <property role="IQ2nx" value="3203474556598515824" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="5lP9ZVaMOAy" role="lGtFl" />
+    </node>
     <node concept="1TJgyj" id="1EZSCJhF1Yv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />
@@ -576,11 +583,6 @@
       <property role="IQ2ns" value="1927508255683911583" />
       <ref role="20lvS9" node="BSUXCEzFfy" resolve="BuildConfigStringLiteral" />
       <node concept="asaX9" id="2LP1MbL3BxH" role="lGtFl" />
-    </node>
-    <node concept="1TJgyi" id="2LP1MbL3BxK" role="1TKVEl">
-      <property role="TrG5h" value="path" />
-      <property role="IQ2nx" value="3203474556598515824" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="6e6sfG55EnQ">
@@ -604,7 +606,7 @@
     <property role="R4oN_" value="a path of a library that has not been created withing mbeddr" />
     <property role="3GE5qa" value="binary" />
     <property role="EcuMT" value="8289767078203393854" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="5lP9ZVaAU_u" resolve="ExternalPath" />
     <node concept="1TJgyi" id="7cbaNMf2CsZ" role="1TKVEl">
       <property role="TrG5h" value="name" />
       <property role="IQ2nx" value="8289767078203393855" />
@@ -612,9 +614,10 @@
       <node concept="asaX9" id="7cbaNMf2Ct0" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="7cbaNMf2Ct1" role="1TKVEl">
-      <property role="TrG5h" value="path" />
+      <property role="TrG5h" value="oldPath" />
       <property role="IQ2nx" value="8289767078203393857" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="5lP9ZVaMOAA" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="7cbaNMf2Ct2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -653,7 +656,7 @@
     <property role="3GE5qa" value="binary" />
     <property role="34LRSv" value="external source" />
     <property role="EcuMT" value="5789689727168239024" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="5lP9ZVaAU_u" resolve="ExternalPath" />
     <node concept="1TJgyj" id="BSUXCEwXo$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />
@@ -668,19 +671,31 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="2LP1MbL3BO8" role="1TKVEl">
-      <property role="TrG5h" value="path" />
+      <property role="TrG5h" value="oldPath" />
       <property role="IQ2nx" value="3203474556598517000" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="5lP9ZVaMOAE" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="1it8M3uGpbG">
     <property role="EcuMT" value="1485382076184236780" />
     <property role="3GE5qa" value="platform" />
-    <property role="TrG5h" value="ToolChain" />
+    <property role="TrG5h" value="Target" />
+    <property role="R4oN_" value="--" />
+    <property role="34LRSv" value="target" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1it8M3uGpbH" role="1TKVEl">
-      <property role="IQ2nx" value="1485382076184236781" />
-      <property role="TrG5h" value="name" />
+    <node concept="PrWs8" id="3K0ugPlqtqM" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5lP9ZVaAU_u">
+    <property role="EcuMT" value="6157872040773396830" />
+    <property role="3GE5qa" value="binary" />
+    <property role="TrG5h" value="ExternalPath" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5lP9ZVaAU_v" role="1TKVEl">
+      <property role="IQ2nx" value="6157872040773396831" />
+      <property role="TrG5h" value="path" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

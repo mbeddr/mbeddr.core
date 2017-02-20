@@ -4,7 +4,6 @@
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -14,6 +13,7 @@
     <import index="f66f" ref="r:ce8731ad-eb56-4f64-b455-5499b4e64857(com.mbddr.core.buildconfig.pluginSolution.plugin)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -140,7 +140,7 @@
     <property role="3GE5qa" value="binary" />
     <ref role="1M2myG" to="51wr:2kkumeGQBhY" resolve="LibraryRef" />
     <node concept="1N5Pfh" id="2kkumeGQQ0r" role="1Mr941">
-      <ref role="1N5Vy1" to="51wr:2kkumeGQBhZ" />
+      <ref role="1N5Vy1" to="51wr:2kkumeGQBhZ" resolve="lib" />
       <node concept="1MUpDS" id="2kkumeGQQ0s" role="1N6uqs">
         <node concept="3clFbS" id="2kkumeGQQ0t" role="2VODD2">
           <node concept="3clFbF" id="2kkumeGQQ0u" role="3cqZAp">
@@ -158,7 +158,7 @@
                   </node>
                 </node>
                 <node concept="13MTOL" id="2kkumeGQQ0K" role="2OqNvi">
-                  <ref role="13MTZf" to="51wr:4o9sgv8R$fb" />
+                  <ref role="13MTZf" to="51wr:4o9sgv8R$fb" resolve="binaries" />
                 </node>
               </node>
             </node>
@@ -170,7 +170,7 @@
   <node concept="1M2fIO" id="4vuSA6yL70j">
     <ref role="1M2myG" to="51wr:6GqYvBOf2Xb" resolve="ModuleRef" />
     <node concept="1N5Pfh" id="4vuSA6yL70k" role="1Mr941">
-      <ref role="1N5Vy1" to="51wr:6GqYvBOf2Xc" />
+      <ref role="1N5Vy1" to="51wr:6GqYvBOf2Xc" resolve="module" />
       <node concept="1MUpDS" id="47vCOShft3b" role="1N6uqs">
         <node concept="3clFbS" id="47vCOShft3c" role="2VODD2">
           <node concept="3clFbF" id="47vCOShfupr" role="3cqZAp">
@@ -242,7 +242,7 @@
     <property role="3GE5qa" value="platform" />
     <ref role="1M2myG" to="51wr:7$0wAVofq4u" resolve="PlatformReference" />
     <node concept="1N5Pfh" id="7$0wAVofq8n" role="1Mr941">
-      <ref role="1N5Vy1" to="51wr:7$0wAVofq6m" />
+      <ref role="1N5Vy1" to="51wr:7$0wAVofq6m" resolve="template" />
       <node concept="1MUpDS" id="7$0wAVofq8t" role="1N6uqs">
         <node concept="3clFbS" id="7$0wAVofq8u" role="2VODD2">
           <node concept="3cpWs8" id="7$0wAVofwxT" role="3cqZAp">
@@ -271,7 +271,7 @@
                 <ref role="3cqZAo" node="7$0wAVofwxU" resolve="container" />
               </node>
               <node concept="3Tsc0h" id="7$0wAVofxn8" role="2OqNvi">
-                <ref role="3TtcxE" to="51wr:7$0wAVob45Q" />
+                <ref role="3TtcxE" to="51wr:7$0wAVob45Q" resolve="templates" />
               </node>
             </node>
           </node>
@@ -311,6 +311,22 @@
               <node concept="Xl_RD" id="4ol4Q3pLRAj" role="37wK5m">
                 <property role="Xl_RC" value="PlatformTemplates" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3K0ugPlw9Po">
+    <property role="3GE5qa" value="platform" />
+    <ref role="1M2myG" to="51wr:1it8M3uGpbG" resolve="Target" />
+    <node concept="EnEH3" id="3K0ugPlw9Pp" role="1MhHOB">
+      <ref role="EomxK" to="tpck:gOOYnlO" resolve="shortDescription" />
+      <node concept="Eqf_E" id="3K0ugPlw9Pt" role="EtsB7">
+        <node concept="3clFbS" id="3K0ugPlw9Pu" role="2VODD2">
+          <node concept="3clFbF" id="3K0ugPlw9XV" role="3cqZAp">
+            <node concept="Xl_RD" id="3K0ugPlw9XU" role="3clFbG">
+              <property role="Xl_RC" value="" />
             </node>
           </node>
         </node>
