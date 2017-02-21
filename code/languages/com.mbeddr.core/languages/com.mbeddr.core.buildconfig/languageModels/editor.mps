@@ -2359,14 +2359,29 @@
             </node>
             <node concept="1ouSdP" id="5lP9ZVaE6XM" role="1ou48m">
               <node concept="3clFbS" id="5lP9ZVaE6XN" role="2VODD2">
-                <node concept="3clFbF" id="5lP9ZVaE6XO" role="3cqZAp">
-                  <node concept="37vLTI" id="5lP9ZVaE6XP" role="3clFbG">
-                    <node concept="3GLrbK" id="5lP9ZVaE6XQ" role="37vLTx" />
-                    <node concept="2OqwBi" id="5lP9ZVaE6XR" role="37vLTJ">
-                      <node concept="3GMtW1" id="5lP9ZVaE6XS" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="5lP9ZVaE6XT" role="2OqNvi">
-                        <ref role="3TsBF5" to="51wr:5lP9ZVaAU_v" resolve="path" />
+                <node concept="3cpWs8" id="yvIG$YRPHn" role="3cqZAp">
+                  <node concept="3cpWsn" id="yvIG$YRPHo" role="3cpWs9">
+                    <property role="TrG5h" value="helper" />
+                    <node concept="3uibUv" id="yvIG$YRPHp" role="1tU5fm">
+                      <ref role="3uigEE" to="ahli:5lP9ZVaA6En" resolve="ExternalPathsHelper" />
+                    </node>
+                    <node concept="2ShNRf" id="yvIG$YRPHq" role="33vP2m">
+                      <node concept="1pGfFk" id="yvIG$YRPHr" role="2ShVmc">
+                        <ref role="37wK5l" to="ahli:5lP9ZVaA9kJ" resolve="ExternalPathsHelper" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="yvIG$YRPHs" role="3cqZAp">
+                  <node concept="2OqwBi" id="yvIG$YRPHt" role="3clFbG">
+                    <node concept="37vLTw" id="yvIG$YRPHu" role="2Oq$k0">
+                      <ref role="3cqZAo" node="yvIG$YRPHo" resolve="helper" />
+                    </node>
+                    <node concept="liA8E" id="yvIG$YRPHv" role="2OqNvi">
+                      <ref role="37wK5l" to="ahli:yvIG$YMp7f" resolve="cursorPosition" />
+                      <node concept="3GMtW1" id="yvIG$YRPHw" role="37wK5m" />
+                      <node concept="1Q80Hx" id="yvIG$YRPHx" role="37wK5m" />
+                      <node concept="3GLrbK" id="yvIG$YRPHy" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -2438,14 +2453,29 @@
             </node>
             <node concept="1ouSdP" id="7DAL8vzaqqt" role="1ou48m">
               <node concept="3clFbS" id="7DAL8vzaqqv" role="2VODD2">
-                <node concept="3clFbF" id="7DAL8vzdFT1" role="3cqZAp">
-                  <node concept="37vLTI" id="7DAL8vzdGv8" role="3clFbG">
-                    <node concept="3GLrbK" id="7DAL8vzdGBa" role="37vLTx" />
-                    <node concept="2OqwBi" id="7DAL8vzdFT3" role="37vLTJ">
-                      <node concept="3GMtW1" id="7DAL8vzdFT4" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="5lP9ZVaCgic" role="2OqNvi">
-                        <ref role="3TsBF5" to="51wr:5lP9ZVaAU_v" resolve="path" />
+                <node concept="3cpWs8" id="yvIG$YM_4G" role="3cqZAp">
+                  <node concept="3cpWsn" id="yvIG$YM_4H" role="3cpWs9">
+                    <property role="TrG5h" value="helper" />
+                    <node concept="3uibUv" id="yvIG$YM_4I" role="1tU5fm">
+                      <ref role="3uigEE" to="ahli:5lP9ZVaA6En" resolve="ExternalPathsHelper" />
+                    </node>
+                    <node concept="2ShNRf" id="yvIG$YM_4J" role="33vP2m">
+                      <node concept="1pGfFk" id="yvIG$YM_4K" role="2ShVmc">
+                        <ref role="37wK5l" to="ahli:5lP9ZVaA9kJ" resolve="ExternalPathsHelper" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="yvIG$YM_5S" role="3cqZAp">
+                  <node concept="2OqwBi" id="yvIG$YM_m5" role="3clFbG">
+                    <node concept="37vLTw" id="yvIG$YM_5Q" role="2Oq$k0">
+                      <ref role="3cqZAo" node="yvIG$YM_4H" resolve="helper" />
+                    </node>
+                    <node concept="liA8E" id="yvIG$YM_sW" role="2OqNvi">
+                      <ref role="37wK5l" to="ahli:yvIG$YMp7f" resolve="cursorPosition" />
+                      <node concept="3GMtW1" id="yvIG$YM_ul" role="37wK5m" />
+                      <node concept="1Q80Hx" id="yvIG$YM_BZ" role="37wK5m" />
+                      <node concept="3GLrbK" id="yvIG$YM_MN" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -2541,14 +2571,29 @@
             </node>
             <node concept="1ouSdP" id="5lP9ZVaE9NB" role="1ou48m">
               <node concept="3clFbS" id="5lP9ZVaE9NC" role="2VODD2">
-                <node concept="3clFbF" id="5lP9ZVaE9ND" role="3cqZAp">
-                  <node concept="37vLTI" id="5lP9ZVaE9NE" role="3clFbG">
-                    <node concept="3GLrbK" id="5lP9ZVaE9NF" role="37vLTx" />
-                    <node concept="2OqwBi" id="5lP9ZVaE9NG" role="37vLTJ">
-                      <node concept="3GMtW1" id="5lP9ZVaE9NH" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="5lP9ZVaE9NI" role="2OqNvi">
-                        <ref role="3TsBF5" to="51wr:5lP9ZVaAU_v" resolve="path" />
+                <node concept="3cpWs8" id="yvIG$YRQvK" role="3cqZAp">
+                  <node concept="3cpWsn" id="yvIG$YRQvL" role="3cpWs9">
+                    <property role="TrG5h" value="helper" />
+                    <node concept="3uibUv" id="yvIG$YRQvM" role="1tU5fm">
+                      <ref role="3uigEE" to="ahli:5lP9ZVaA6En" resolve="ExternalPathsHelper" />
+                    </node>
+                    <node concept="2ShNRf" id="yvIG$YRQvN" role="33vP2m">
+                      <node concept="1pGfFk" id="yvIG$YRQvO" role="2ShVmc">
+                        <ref role="37wK5l" to="ahli:5lP9ZVaA9kJ" resolve="ExternalPathsHelper" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="yvIG$YRQvP" role="3cqZAp">
+                  <node concept="2OqwBi" id="yvIG$YRQvQ" role="3clFbG">
+                    <node concept="37vLTw" id="yvIG$YRQvR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="yvIG$YRQvL" resolve="helper" />
+                    </node>
+                    <node concept="liA8E" id="yvIG$YRQvS" role="2OqNvi">
+                      <ref role="37wK5l" to="ahli:yvIG$YMp7f" resolve="cursorPosition" />
+                      <node concept="3GMtW1" id="yvIG$YRQvT" role="37wK5m" />
+                      <node concept="1Q80Hx" id="yvIG$YRQvU" role="37wK5m" />
+                      <node concept="3GLrbK" id="yvIG$YRQvV" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -2628,14 +2673,29 @@
             </node>
             <node concept="1ouSdP" id="5lP9ZVaE7Fp" role="1ou48m">
               <node concept="3clFbS" id="5lP9ZVaE7Fq" role="2VODD2">
-                <node concept="3clFbF" id="5lP9ZVaE7Fr" role="3cqZAp">
-                  <node concept="37vLTI" id="5lP9ZVaE7Fs" role="3clFbG">
-                    <node concept="3GLrbK" id="5lP9ZVaE7Ft" role="37vLTx" />
-                    <node concept="2OqwBi" id="5lP9ZVaE7Fu" role="37vLTJ">
-                      <node concept="3GMtW1" id="5lP9ZVaE7Fv" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="5lP9ZVaE7Fw" role="2OqNvi">
-                        <ref role="3TsBF5" to="51wr:5lP9ZVaAU_v" resolve="path" />
+                <node concept="3cpWs8" id="yvIG$YRR5E" role="3cqZAp">
+                  <node concept="3cpWsn" id="yvIG$YRR5F" role="3cpWs9">
+                    <property role="TrG5h" value="helper" />
+                    <node concept="3uibUv" id="yvIG$YRR5G" role="1tU5fm">
+                      <ref role="3uigEE" to="ahli:5lP9ZVaA6En" resolve="ExternalPathsHelper" />
+                    </node>
+                    <node concept="2ShNRf" id="yvIG$YRR5H" role="33vP2m">
+                      <node concept="1pGfFk" id="yvIG$YRR5I" role="2ShVmc">
+                        <ref role="37wK5l" to="ahli:5lP9ZVaA9kJ" resolve="ExternalPathsHelper" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="yvIG$YRR5J" role="3cqZAp">
+                  <node concept="2OqwBi" id="yvIG$YRR5K" role="3clFbG">
+                    <node concept="37vLTw" id="yvIG$YRR5L" role="2Oq$k0">
+                      <ref role="3cqZAo" node="yvIG$YRR5F" resolve="helper" />
+                    </node>
+                    <node concept="liA8E" id="yvIG$YRR5M" role="2OqNvi">
+                      <ref role="37wK5l" to="ahli:yvIG$YMp7f" resolve="cursorPosition" />
+                      <node concept="3GMtW1" id="yvIG$YRR5N" role="37wK5m" />
+                      <node concept="1Q80Hx" id="yvIG$YRR5O" role="37wK5m" />
+                      <node concept="3GLrbK" id="yvIG$YRR5P" role="37wK5m" />
                     </node>
                   </node>
                 </node>
