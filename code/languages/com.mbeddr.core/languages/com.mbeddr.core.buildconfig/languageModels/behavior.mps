@@ -6731,6 +6731,36 @@
             <node concept="3clFbH" id="4XF2Ruy4Z5A" role="3cqZAp" />
             <node concept="3clFbJ" id="4XF2Ruy6j5u" role="3cqZAp">
               <node concept="3clFbS" id="4XF2Ruy6j5v" role="3clFbx">
+                <node concept="3clFbF" id="yvIG$YHZYP" role="3cqZAp">
+                  <node concept="2OqwBi" id="yvIG$YI0UC" role="3clFbG">
+                    <node concept="10M0yZ" id="yvIG$YI0$e" role="2Oq$k0">
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    </node>
+                    <node concept="liA8E" id="yvIG$YI1_s" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <node concept="2OqwBi" id="yvIG$YI1Bd" role="37wK5m">
+                        <node concept="37vLTw" id="yvIG$YI1Be" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5lP9ZVaAbj2" resolve="node" />
+                        </node>
+                        <node concept="2qgKlT" id="yvIG$YI1Bf" role="2OqNvi">
+                          <ref role="37wK5l" node="5lP9ZVaB2dg" resolve="getCurrentEnvVar" />
+                          <node concept="2OqwBi" id="yvIG$YI1Bg" role="37wK5m">
+                            <node concept="37vLTw" id="yvIG$YI1Bh" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5lP9ZVaAbj2" resolve="node" />
+                            </node>
+                            <node concept="3TrcHB" id="yvIG$YI1Bi" role="2OqNvi">
+                              <ref role="3TsBF5" to="51wr:5lP9ZVaAU_v" resolve="path" />
+                            </node>
+                          </node>
+                          <node concept="37vLTw" id="yvIG$YI1Bj" role="37wK5m">
+                            <ref role="3cqZAo" node="7DAL8vzaTxz" resolve="cursorPosition" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="2Gpval" id="4XF2Ruy6j5w" role="3cqZAp">
                   <node concept="2GrKxI" id="4XF2Ruy6j5x" role="2Gsz3X">
                     <property role="TrG5h" value="name" />
@@ -7440,7 +7470,7 @@
                   <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
                   <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
                   <node concept="Xl_RD" id="5lP9ZVaAXLu" role="37wK5m">
-                    <property role="Xl_RC" value="\\$\\{(make_var:)([\\.A-Za-z_0-9]+)\\}" />
+                    <property role="Xl_RC" value="\\$\\{(make_var:)([^\\}]+)\\}" />
                   </node>
                 </node>
               </node>
@@ -7598,7 +7628,7 @@
               <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
               <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
               <node concept="Xl_RD" id="5lP9ZVaB28C" role="37wK5m">
-                <property role="Xl_RC" value="\\$\\{(path_var:)([\\.A-Za-z_0-9]+)\\}" />
+                <property role="Xl_RC" value="\\$\\{(path_var:)([^\\}]+)\\}" />
               </node>
             </node>
           </node>
@@ -7788,7 +7818,7 @@
               <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
               <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
               <node concept="Xl_RD" id="5lP9ZVaB29O" role="37wK5m">
-                <property role="Xl_RC" value="\\$\\{(env_var:)([\\.A-Za-z_0-9]+)\\}" />
+                <property role="Xl_RC" value="\\$\\{(env_var:)([^\\}]+)\\}" />
               </node>
             </node>
           </node>
@@ -7978,7 +8008,7 @@
               <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
               <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
               <node concept="Xl_RD" id="5lP9ZVaB2b0" role="37wK5m">
-                <property role="Xl_RC" value="\\$\\{(make_var:)([\\.A-Za-z_0-9]+)\\}" />
+                <property role="Xl_RC" value="\\$\\{(make_var:)([^\\}]+)\\}" />
               </node>
             </node>
           </node>
@@ -8166,7 +8196,7 @@
               <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
               <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
               <node concept="Xl_RD" id="5lP9ZVaB2cc" role="37wK5m">
-                <property role="Xl_RC" value="\\$\\{(path_var:)([\\.A-Za-z_0-9]+)\\}" />
+                <property role="Xl_RC" value="\\$\\{(path_var:)([^\\}]+)\\}" />
               </node>
             </node>
           </node>
@@ -8372,7 +8402,7 @@
               <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
               <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
               <node concept="Xl_RD" id="5lP9ZVaB2dv" role="37wK5m">
-                <property role="Xl_RC" value="\\$\\{(env_var:)([\\.A-Za-z_0-9]+)\\}" />
+                <property role="Xl_RC" value="\\$\\{(env_var:)([^\\}]+)\\}" />
               </node>
             </node>
           </node>
@@ -8578,7 +8608,7 @@
               <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
               <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
               <node concept="Xl_RD" id="5lP9ZVaB2eM" role="37wK5m">
-                <property role="Xl_RC" value="\\$\\{(make_var:)([\\.A-Za-z_0-9]+)\\}" />
+                <property role="Xl_RC" value="\\$\\{(make_var:)([^\\}]+)\\}" />
               </node>
             </node>
           </node>
