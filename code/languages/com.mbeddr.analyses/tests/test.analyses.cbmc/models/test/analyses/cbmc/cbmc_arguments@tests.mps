@@ -16,6 +16,7 @@
     <import index="3h46" ref="r:d540de81-ea7d-4732-953c-fa9c34672949(com.mbeddr.analyses.cbmc.core.rt.testing_utils)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -773,11 +774,18 @@
                       <node concept="3xETmq" id="2JqimxyTJ3N" role="3cqZAp">
                         <node concept="3_1$Yv" id="2JqimxyTJS3" role="3_9lra">
                           <node concept="3cpWs3" id="2JqimxyTKao" role="3_1BAH">
-                            <node concept="2GrUjf" id="2JqimxyTKil" role="3uHU7w">
-                              <ref role="2Gs0qQ" node="3RFEChb2P58" resolve="m" />
+                            <node concept="2YIFZM" id="2NnwCnL0OJt" role="3uHU7w">
+                              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+                              <node concept="37vLTw" id="2NnwCnL0P5L" role="37wK5m">
+                                <ref role="3cqZAo" node="3RFEChb2OeI" resolve="messages" />
+                              </node>
+                              <node concept="Xl_RD" id="2NnwCnL0PNg" role="37wK5m">
+                                <property role="Xl_RC" value="\n" />
+                              </node>
                             </node>
                             <node concept="Xl_RD" id="2JqimxyTJZA" role="3uHU7B">
-                              <property role="Xl_RC" value="cbmc version check failed. Message was: " />
+                              <property role="Xl_RC" value="cbmc version check failed. CBMC sanity checking returned: \n" />
                             </node>
                           </node>
                         </node>
