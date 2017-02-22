@@ -1,12 +1,19 @@
-
 def script_test_mbeddrPlatform = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build-ts-tests.xml")
 
-task resolve_mps(type: Copy) {
-    dependsOn configurations.mps
-    from {
-        configurations.mps.resolve().collect { zipTree(it) }
+if (project.skipResolveMps) {
+    task resolve_mps {
+        doLast {
+            logger.info "MPS resolution skipped"
+        }
     }
-    into mpsHomeDir
+} else {
+    task resolve_mps(type: Copy) {
+        dependsOn configurations.mps
+        from {
+            configurations.mps.resolve().collect { zipTree(it) }
+        }
+        into mpsHomeDir
+    }
 }
 
 
@@ -39,6 +46,12 @@ task copy_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
 }
 
 
+task install_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
+    from "$rootDir/artifacts/mps-sl-all/"
+    include "de.itemis.mps.nativelibs.loader/"
+    into "$mpsInstallationDir/plugins"
+}
+
 
 
 task build_platform(type: BuildLanguages, dependsOn: copy_sl_all_nativelibs) {
@@ -64,6 +77,8 @@ task publish_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
     from artifactsDir
     include "com.mbeddr.platform/**"
 }
+
+task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrAllScriptsPublicationToMavenLocal', 'publishMbeddrPlatformPublicationToMavenLocal'])
 
 publishing {
     publications {

@@ -2,14 +2,16 @@
 <model ref="r:38e1b852-361b-47c0-99e1-1944e9fcd4c9(com.mbeddr.analyses.spin.c.patterns.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
-    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
-    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" implicit="true" />
+    <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="i3mj" ref="r:828f323f-b068-42aa-8988-4151fb6af01f(com.mbeddr.analyses.spin.promela.patterns.structure)" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
@@ -122,8 +124,9 @@
   </node>
   <node concept="1TIwiD" id="36pDmrEZ2Bs">
     <property role="EcuMT" value="3574069640742840796" />
-    <property role="TrG5h" value="WhitnessLogger" />
-    <property role="34LRSv" value="log whitness" />
+    <property role="TrG5h" value="WitnessLogger" />
+    <property role="34LRSv" value="log witness" />
+    <property role="3GE5qa" value="harness.logger" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="36pDmrF0owW" role="1TKVEi">
       <property role="IQ2ns" value="3574069640743192636" />
@@ -198,6 +201,7 @@
     <property role="EcuMT" value="6075951708951115102" />
     <property role="TrG5h" value="MessageLogger" />
     <property role="34LRSv" value="log message in whitness" />
+    <property role="3GE5qa" value="harness.logger" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="5hi7ucOunxE" role="1TKVEi">
       <property role="IQ2ns" value="6075951708951378026" />
@@ -231,6 +235,12 @@
       <property role="IQ2ns" value="9107568058928045180" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="seed" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
+    </node>
+    <node concept="1TJgyj" id="5IfbEbQygup" role="1TKVEi">
+      <property role="IQ2ns" value="6597543256576821145" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="times" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
     </node>
     <node concept="PrWs8" id="1BFQdmKfv_I" role="PzmwI">
@@ -270,6 +280,78 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="vals" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5RNtn4ccJZN">
+    <property role="TrG5h" value="ForEachVarDecl" />
+    <property role="EcuMT" value="6769883793264410611" />
+    <property role="3GE5qa" value="harness.foreach" />
+    <node concept="PrWs8" id="1BFQdmKbskw" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
+    </node>
+    <node concept="PrWs8" id="1BFQdmKc4pA" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5RNtn4cbrGb">
+    <property role="TrG5h" value="ForEachStatement" />
+    <property role="34LRSv" value="foreach" />
+    <property role="EcuMT" value="6769883793264065291" />
+    <property role="3GE5qa" value="harness.foreach" />
+    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <node concept="1TJgyj" id="5RNtn4cbrGh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="iter" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6769883793264065297" />
+      <ref role="20lvS9" node="5RNtn4ccJZN" resolve="ForEachVarDecl" />
+    </node>
+    <node concept="1TJgyj" id="5RNtn4cbrGc" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="range" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6769883793264065292" />
+      <ref role="20lvS9" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
+    </node>
+    <node concept="1TJgyj" id="5RNtn4cbrGs" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6769883793264065308" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="5RNtn4cc5Ln" role="PzmwI">
+      <ref role="PrY4T" to="k146:6viY8n0hYkZ" resolve="IRangeContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1BFQdmKbEJq">
+    <property role="EcuMT" value="1867824882770684890" />
+    <property role="TrG5h" value="ForEachVarDeclRef" />
+    <property role="3GE5qa" value="harness.foreach" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="1BFQdmKdkgC" role="1TKVEi">
+      <property role="IQ2ns" value="1867824882771117096" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5RNtn4ccJZN" resolve="ForEachVarDecl" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5IfbEbQA2zq">
+    <property role="EcuMT" value="6597543256577812698" />
+    <property role="3GE5qa" value="harness" />
+    <property role="TrG5h" value="TrackState" />
+    <property role="34LRSv" value="track state" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5IfbEbQA2zu" role="1TKVEi">
+      <property role="IQ2ns" value="6597543256577812702" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="memory" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="5IfbEbQA2zr" role="PzmwI">
+      <ref role="PrY4T" to="ir22:GpUw9S5_Xa" resolve="IPromelaModelContent" />
     </node>
   </node>
 </model>

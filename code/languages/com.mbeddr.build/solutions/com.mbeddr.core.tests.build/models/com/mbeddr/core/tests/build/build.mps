@@ -402,6 +402,9 @@
       <node concept="m$_yC" id="1yZWpD4c5BQ" role="m$_yJ">
         <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
       </node>
+      <node concept="m$_yC" id="2qF3eUpZqeb" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2Xjt3l57cLw" resolve="de.itemis.mps.editor.math" />
+      </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAuutn" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.core.tests" />
