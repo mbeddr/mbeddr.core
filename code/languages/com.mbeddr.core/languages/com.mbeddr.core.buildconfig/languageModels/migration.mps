@@ -280,7 +280,7 @@
   </node>
   <node concept="3SyAh_" id="2b2D8jU4avO">
     <property role="qMTe8" value="1" />
-    <property role="TrG5h" value="PlatformToolChain" />
+    <property role="TrG5h" value="PlatformTarget" />
     <node concept="3Tm1VV" id="2b2D8jU4avP" role="1B3o_S" />
     <node concept="3tTeZs" id="2b2D8jU4avQ" role="jymVt">
       <property role="3tTeZt" value="&lt;no execute after&gt;" />
@@ -588,7 +588,7 @@
                                           <node concept="liA8E" id="5TYDadOEn7i" role="2OqNvi">
                                             <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                             <node concept="Xl_RD" id="5TYDadOEpx5" role="37wK5m">
-                                              <property role="Xl_RC" value="Portable" />
+                                              <property role="Xl_RC" value="portable" />
                                             </node>
                                           </node>
                                         </node>
