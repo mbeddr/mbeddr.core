@@ -1094,9 +1094,6 @@
         <node concept="1E0d5M" id="4sjR92JQvVb" role="1E1XAP">
           <ref role="1E0d5P" node="4sjR92JQmCy" resolve="com.mbeddr.mpsutil.dataflow.runtime" />
         </node>
-        <node concept="1E0d5M" id="4sjR92JQ_4D" role="1E1XAP">
-          <ref role="1E0d5P" node="4sjR92JQxBH" resolve="com.mbeddr.mpsutil.dataflow.ui" />
-        </node>
         <node concept="1SiIV0" id="4sjR92JQ_4E" role="3bR37C">
           <node concept="1Busua" id="4sjR92JQ_4F" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6L4B" resolve="jetbrains.mps.lang.dataFlow" />
