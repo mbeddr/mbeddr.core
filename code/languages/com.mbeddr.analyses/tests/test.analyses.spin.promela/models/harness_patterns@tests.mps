@@ -571,7 +571,7 @@
             <property role="30AzUg" value="crtState" />
             <property role="30AzUs" value="2" />
             <node concept="3Tqbb2" id="4b2d3GUmYXc" role="38rYrG">
-              <ref role="ehGHo" to="llb3:36pDmrEZ2Bs" resolve="WhitnessLogger" />
+              <ref role="ehGHo" to="llb3:36pDmrEZ2Bs" resolve="WitnessLogger" />
             </node>
           </node>
           <node concept="30Azln" id="4b2d3GUmYXd" role="30Azl8">
@@ -592,7 +592,7 @@
             <property role="30AzUg" value="crtState" />
             <property role="30AzUs" value="3" />
             <node concept="3Tqbb2" id="4b2d3GUmYXi" role="38rYrG">
-              <ref role="ehGHo" to="llb3:36pDmrEZ2Bs" resolve="WhitnessLogger" />
+              <ref role="ehGHo" to="llb3:36pDmrEZ2Bs" resolve="WitnessLogger" />
             </node>
           </node>
         </node>
@@ -780,21 +780,139 @@
             <property role="30AzUg" value="my_arr[0]" />
             <property role="30AzUs" value="10" />
             <node concept="3Tqbb2" id="1BFQdmK6qhO" role="38rYrG">
-              <ref role="ehGHo" to="llb3:36pDmrEZ2Bs" resolve="WhitnessLogger" />
+              <ref role="ehGHo" to="llb3:36pDmrEZ2Bs" resolve="WitnessLogger" />
             </node>
           </node>
           <node concept="30Azln" id="1BFQdmK6qhP" role="30Azl8">
             <property role="30AzUg" value="my_arr[1]" />
             <property role="30AzUs" value="42" />
             <node concept="3Tqbb2" id="1BFQdmK6qhQ" role="38rYrG">
-              <ref role="ehGHo" to="llb3:36pDmrEZ2Bs" resolve="WhitnessLogger" />
+              <ref role="ehGHo" to="llb3:36pDmrEZ2Bs" resolve="WitnessLogger" />
             </node>
           </node>
           <node concept="30Azln" id="1BFQdmK6qhR" role="30Azl8">
             <property role="30AzUg" value="my_arr[2]" />
             <property role="30AzUs" value="10" />
             <node concept="3Tqbb2" id="1BFQdmK6qhS" role="38rYrG">
-              <ref role="ehGHo" to="llb3:36pDmrEZ2Bs" resolve="WhitnessLogger" />
+              <ref role="ehGHo" to="llb3:36pDmrEZ2Bs" resolve="WitnessLogger" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="4ly_4leUz$n">
+    <property role="TrG5h" value="_040_test_multistep" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="4ly_4leUz$o" role="1SL9yI">
+      <property role="TrG5h" value="test_01" />
+      <node concept="3cqZAl" id="4ly_4leUz$p" role="3clF45" />
+      <node concept="3clFbS" id="4ly_4leUz$q" role="3clF47">
+        <node concept="3cpWs8" id="4ly_4leUz$r" role="3cqZAp">
+          <node concept="3cpWsn" id="4ly_4leUz$s" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="4ly_4leUz$t" role="1tU5fm" />
+            <node concept="BaHAS" id="4ly_4leUz$u" role="33vP2m">
+              <property role="BaHAW" value="harness_patterns" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4ly_4leUz$v" role="3cqZAp">
+          <node concept="3cpWsn" id="4ly_4leUz$w" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="4ly_4leUz$x" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="4ly_4leUz$y" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+              <node concept="37vLTw" id="4ly_4leUz$z" role="37wK5m">
+                <ref role="3cqZAo" node="4ly_4leUz$s" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="4ly_4leUz$$" role="37wK5m">
+                <property role="Xl_RC" value="_040_test_multistep_01" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="4ly_4leUz$_" role="3cqZAp">
+          <node concept="Xl_RD" id="4ly_4leUz$A" role="3tpDZB">
+            <property role="Xl_RC" value="Assert: count != 9" />
+          </node>
+          <node concept="2OqwBi" id="4ly_4leUz$B" role="3tpDZA">
+            <node concept="37vLTw" id="4ly_4leUz$C" role="2Oq$k0">
+              <ref role="3cqZAo" node="4ly_4leUz$w" resolve="res" />
+            </node>
+            <node concept="liA8E" id="4ly_4leUz$D" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="4ly_4leUz$E" role="3cqZAp">
+          <node concept="2OqwBi" id="4ly_4leUz$F" role="3vwVQn">
+            <node concept="37vLTw" id="4ly_4leUz$G" role="2Oq$k0">
+              <ref role="3cqZAo" node="4ly_4leUz$w" resolve="res" />
+            </node>
+            <node concept="liA8E" id="4ly_4leUz$H" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="4ly_4leUYWn" role="1SL9yI">
+      <property role="TrG5h" value="test_02" />
+      <node concept="3cqZAl" id="4ly_4leUYWo" role="3clF45" />
+      <node concept="3clFbS" id="4ly_4leUYWp" role="3clF47">
+        <node concept="3cpWs8" id="4ly_4leUYWq" role="3cqZAp">
+          <node concept="3cpWsn" id="4ly_4leUYWr" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="4ly_4leUYWs" role="1tU5fm" />
+            <node concept="BaHAS" id="4ly_4leUYWt" role="33vP2m">
+              <property role="BaHAW" value="harness_patterns" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4ly_4leUYWu" role="3cqZAp">
+          <node concept="3cpWsn" id="4ly_4leUYWv" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="4ly_4leUYWw" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="4ly_4leUYWx" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+              <node concept="37vLTw" id="4ly_4leUYWy" role="37wK5m">
+                <ref role="3cqZAo" node="4ly_4leUYWr" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="4ly_4leUYWz" role="37wK5m">
+                <property role="Xl_RC" value="_040_test_multistep_02" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="4ly_4leUYW$" role="3cqZAp">
+          <node concept="Xl_RD" id="4ly_4leUYW_" role="3tpDZB">
+            <property role="Xl_RC" value="Assert: count != (9 ^ 3 + 9 ^ 2 + 9)" />
+          </node>
+          <node concept="2OqwBi" id="4ly_4leUYWA" role="3tpDZA">
+            <node concept="37vLTw" id="4ly_4leUYWB" role="2Oq$k0">
+              <ref role="3cqZAo" node="4ly_4leUYWv" resolve="res" />
+            </node>
+            <node concept="liA8E" id="4ly_4leUYWC" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="4ly_4leUYWD" role="3cqZAp">
+          <node concept="2OqwBi" id="4ly_4leUYWE" role="3vwVQn">
+            <node concept="37vLTw" id="4ly_4leUYWF" role="2Oq$k0">
+              <ref role="3cqZAo" node="4ly_4leUYWv" resolve="res" />
+            </node>
+            <node concept="liA8E" id="4ly_4leUYWG" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
             </node>
           </node>
         </node>
