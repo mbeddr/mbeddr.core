@@ -628,57 +628,12 @@
     </node>
     <node concept="2Sbjvc" id="3jNX2XuLyyw" role="2ZfgGD">
       <node concept="3clFbS" id="3jNX2XuLyyx" role="2VODD2">
-        <node concept="3clFbF" id="70aAUsa58sw" role="3cqZAp">
-          <node concept="2YIFZM" id="70aAUsa58Qm" role="3clFbG">
-            <ref role="37wK5l" node="70aAUsa54ZB" resolve="execute" />
-            <ref role="1Pybhc" node="70aAUsa54Vr" resolve="CommandWithMessage" />
-            <node concept="Xl_RD" id="70aAUsa598g" role="37wK5m">
-              <property role="Xl_RC" value="Updating Queries ..." />
-            </node>
-            <node concept="2OqwBi" id="70aAUsa59kw" role="37wK5m">
-              <node concept="1XNTG" id="70aAUsa59eA" role="2Oq$k0" />
-              <node concept="liA8E" id="70aAUsa59zO" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-              </node>
-            </node>
-            <node concept="1bVj0M" id="70aAUsa59CB" role="37wK5m">
-              <property role="3yWfEV" value="true" />
-              <node concept="3clFbS" id="70aAUsa59CD" role="1bW5cS">
-                <node concept="3clFbF" id="70aAUsa1RVn" role="3cqZAp">
-                  <node concept="2OqwBi" id="70aAUsa1IZx" role="3clFbG">
-                    <node concept="2OqwBi" id="70aAUs9QuAz" role="2Oq$k0">
-                      <node concept="2Sf5sV" id="70aAUs9QuA$" role="2Oq$k0" />
-                      <node concept="2Rf3mk" id="70aAUs9QuA_" role="2OqNvi">
-                        <node concept="1xMEDy" id="70aAUs9QuAA" role="1xVPHs">
-                          <node concept="chp4Y" id="70aAUs9QuAB" role="ri$Ld">
-                            <ref role="cht4Q" to="vs0r:K292flwCEW" resolve="Assessment" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2es0OD" id="70aAUsa1NVv" role="2OqNvi">
-                      <node concept="1bVj0M" id="70aAUsa1NVx" role="23t8la">
-                        <node concept="3clFbS" id="70aAUsa1NVy" role="1bW5cS">
-                          <node concept="3clFbF" id="70aAUsa1OlI" role="3cqZAp">
-                            <node concept="2OqwBi" id="70aAUsa1OME" role="3clFbG">
-                              <node concept="37vLTw" id="70aAUsa1OlH" role="2Oq$k0">
-                                <ref role="3cqZAo" node="70aAUsa1NVz" resolve="it" />
-                              </node>
-                              <node concept="2qgKlT" id="70aAUsa1Pwb" role="2OqNvi">
-                                <ref role="37wK5l" to="hwgx:3jNX2XuLy_p" resolve="update" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="Rh6nW" id="70aAUsa1NVz" role="1bW2Oz">
-                          <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="70aAUsa1NV$" role="1tU5fm" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
+        <node concept="3clFbF" id="4NwT$lbXmgr" role="3cqZAp">
+          <node concept="2OqwBi" id="4NwT$lbXmy9" role="3clFbG">
+            <node concept="2Sf5sV" id="4NwT$lbXmgp" role="2Oq$k0" />
+            <node concept="2qgKlT" id="4NwT$lbXn3U" role="2OqNvi">
+              <ref role="37wK5l" to="hwgx:4NwT$lbXi1r" resolve="runAllQueries" />
+              <node concept="1XNTG" id="4NwT$lbXnhL" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -1116,7 +1071,7 @@
   <node concept="2S6QgY" id="5lKnBeB0tzM">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="openFileChooser" />
-    <ref role="2ZfgGC" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+    <ref role="2ZfgGC" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker_old" />
     <node concept="1SWQZ3" id="3TftwIKHPn8" role="lGtFl">
       <property role="1SWRpm" value="FILES" />
     </node>
@@ -1203,7 +1158,7 @@
             <node concept="2Sf5sV" id="5lKnBeB4hje" role="2Oq$k0" />
             <node concept="1mIQ4w" id="5Wocj7wunGD" role="2OqNvi">
               <node concept="chp4Y" id="5Wocj7wunMf" role="cj9EA">
-                <ref role="cht4Q" to="vs0r:5Wocj7wnolM" resolve="AbstractFolderPicker" />
+                <ref role="cht4Q" to="vs0r:5Wocj7wnolM" resolve="AbstractFolderPicker_old" />
               </node>
             </node>
           </node>
@@ -1251,7 +1206,7 @@
                     <node concept="2OqwBi" id="4R3j7CX0F78" role="37vLTJ">
                       <node concept="2Sf5sV" id="4R3j7CX0F5N" role="2Oq$k0" />
                       <node concept="3TrcHB" id="4R3j7CX0Fal" role="2OqNvi">
-                        <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                        <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
                       </node>
                     </node>
                   </node>
@@ -1297,7 +1252,7 @@
                       <node concept="2OqwBi" id="5lKnBeB4xfF" role="37vLTJ">
                         <node concept="2Sf5sV" id="5lKnBeB4xca" role="2Oq$k0" />
                         <node concept="3TrcHB" id="5lKnBeB4y77" role="2OqNvi">
-                          <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                          <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path_old" />
                         </node>
                       </node>
                     </node>
