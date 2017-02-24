@@ -1050,7 +1050,7 @@
       <property role="2lelRm" value="true" />
       <property role="2lUGcN" value="false" />
       <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="2" />
+      <property role="2lUHrg" value="5" />
       <ref role="1W1s6P" node="21PlWakTqun" resolve="EpsilonSM" />
       <ref role="3V$Cn$" node="21PlWakTqve" resolve="testEpsilonEntry" />
     </node>
