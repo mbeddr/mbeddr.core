@@ -1053,7 +1053,7 @@
         <property role="2OOxQR" value="true" />
         <node concept="3XIRFW" id="KU5KLY1Nfk" role="3XIRFX">
           <node concept="3XIRlf" id="GD738Hsda4" role="3XIRFZ">
-            <property role="TrG5h" value="isTerminate" />
+            <property role="TrG5h" value="__isEpsilonEvent" />
             <node concept="3TlMgk" id="GD738Hsda2" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
@@ -1065,7 +1065,7 @@
                 <node concept="3pqW6w" id="GD738Hsdcq" role="1_9egR">
                   <node concept="3TlMhK" id="GD738Hsdd9" role="3TlMhJ" />
                   <node concept="3ZVu4v" id="GD738Hsdcd" role="3TlMhI">
-                    <ref role="3ZVs_2" node="GD738Hsda4" resolve="isTerminate" />
+                    <ref role="3ZVs_2" node="GD738Hsda4" resolve="__isEpsilonEvent" />
                   </node>
                 </node>
               </node>
@@ -1080,7 +1080,7 @@
             </node>
             <node concept="19$8ne" id="GD738Hsdbt" role="27u4cK">
               <node concept="3ZVu4v" id="GD738HsdbP" role="1_9fRO">
-                <ref role="3ZVs_2" node="GD738Hsda4" resolve="isTerminate" />
+                <ref role="3ZVs_2" node="GD738Hsda4" resolve="__isEpsilonEvent" />
               </node>
             </node>
           </node>
@@ -1431,7 +1431,7 @@
         <property role="TrG5h" value="statemachineFunction" />
         <node concept="3XIRFW" id="7kKaL9x5guR" role="3XIRFX">
           <node concept="3XIRlf" id="GD738HqNcd" role="3XIRFZ">
-            <property role="TrG5h" value="isTerminate" />
+            <property role="TrG5h" value="__isEpsilonEvent" />
             <node concept="3TlMgk" id="GD738HqNcb" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
@@ -2111,7 +2111,7 @@
                                   </node>
                                 </node>
                                 <node concept="3ZVu4v" id="GD738HqNuh" role="3TlMhI">
-                                  <ref role="3ZVs_2" node="GD738HqNcd" resolve="isTerminate" />
+                                  <ref role="3ZVs_2" node="GD738HqNcd" resolve="__isEpsilonEvent" />
                                 </node>
                               </node>
                             </node>
