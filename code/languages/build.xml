@@ -215,21 +215,16 @@
 		<ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${generate-code.task}" />
 		<ant antfile="${de.slisson.mps.all.build-file.name}" dir="${de.slisson.mps.all.build-file.location}" target="${build-plugin.task}" />
 		<delete dir="${mps-sl-all.build-tmp}" />
-		<copy todir="${mps.home}/${plugins.folder.name}">
-			<zipfileset src="${artifacts.root}/mps-sl-all/${mps-sl-all.zip-file.name}">
-				<patternset>
-					<include name="de.itemis.mps.nativelibs.loader/" />
-				</patternset>
-			</zipfileset>
+		<copy todir="${mps.home}/${plugins.folder.name}/de.itemis.mps.nativelibs.loader" >
+			<fileset dir="${artifacts.root}/mps-sl-all/de.itemis.mps.nativelibs.loader" />
 		</copy>
 	</target>
 
 	<target name="build-platform">
 		<ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${generate-code.task}" />
-		<ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${build-plugin.task}" />   
-		<copy todir="${mps.home}/${plugins.folder.name}">
-			<zipfileset src="${artifacts.root}/com.mbeddr.platform/com.mbeddr.mpsutil.actionsfilter.zip">
-			</zipfileset>
+		<ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${build-plugin.task}" />
+		<copy todir="${mps.home}/${plugins.folder.name}/com.mbeddr.mpsutil.actionsfilter" >
+			<fileset dir="${artifacts.root}/com.mbeddr.platform/com.mbeddr.mpsutil.actionsfilter" />
 		</copy>
 		<antcall target="build-spawner" />
 	</target> 
@@ -252,7 +247,9 @@
 	<target name="build-spawner">
 		<ant antfile="${com.mbeddr.spawner.build-file.name}" dir="${com.mbeddr.spawner.build-file.location}" target="${generate-code.task}" />
 		<ant antfile="${com.mbeddr.spawner.build-file.name}" dir="${com.mbeddr.spawner.build-file.location}" target="${build-plugin.task}" />
-  		<unzip src="${artifacts.root}/spawner/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" />
+		<copy todir="${mps.home}/${plugins.folder.name}/mbeddr.spawner" >
+			<fileset dir="${artifacts.root}/spawner/mbeddr.spawner" />
+		</copy>
 	</target>   
 
 	<target name="build-debugger-testing" >
