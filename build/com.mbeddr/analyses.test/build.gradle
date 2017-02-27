@@ -54,5 +54,6 @@ task build_mbeddr_analysis_ex(type: BuildLanguages, dependsOn: resolveMpsArtifac
     script script_test_mbeddrAnalysisEx
 }
 
-task test_mbeddr_analysis(dependsOn: [test_mbeddr_analysis_ts, build_mbeddr_analysis_ex, test_mbeddr_analysis_ex]) { }
+build_mbeddr_analysis_ex.dependsOn ':build:com.mbeddr:platform:copy_allScripts'
 test_mbeddr_analysis_ex.dependsOn ':build:com.mbeddr:platform:copy_allScripts'
+task test_mbeddr_analysis(dependsOn: [test_mbeddr_analysis_ts, build_mbeddr_analysis_ex, test_mbeddr_analysis_ex]) { }
