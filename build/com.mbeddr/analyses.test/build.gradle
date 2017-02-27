@@ -43,7 +43,7 @@ task resolveMpsArtifacts() {
 }
 
 
-task test_mbeddr_analysis_ts(type: TestLanguages, dependsOn: resolveMpsArtifacts) {
+task test_mbeddr_analysis_ts(type: TestLanguages, dependsOn: [resolveMpsArtifacts, ':build:com.mbeddr:platform:copy_allScripts']) {
     script script_test_mbeddrAnalysisTs
 }
 task test_mbeddr_analysis_ex << {
