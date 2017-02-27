@@ -55,3 +55,4 @@ task build_mbeddr_analysis_ex(type: BuildLanguages, dependsOn: resolveMpsArtifac
 }
 
 task test_mbeddr_analysis(dependsOn: [test_mbeddr_analysis_ts, build_mbeddr_analysis_ex, test_mbeddr_analysis_ex]) { }
+test_mbeddr_analysis_ex.dependsOn ':build:com.mbeddr:platform:copy_allScripts'
