@@ -9,34 +9,38 @@ if (project.hasProperty("MPS_Installation")) {
 ext.mbeddrMajor = "1"
 ext.mbeddrMinor = "0"
 
-// locally versions are SNAPSHOT
-if (ciBuild) {
-    // setting mbeddrMajor
-    if (project.hasProperty('mbeddrMajor')) {
-        ext.mbeddrMajor = project.getProperty('mbeddrMajor')
-    }
-
-    // setting mbeddrMinor
-    if (project.hasProperty('mbeddrMinor')) {
-        ext.mbeddrMinor = project.getProperty('mbeddrMinor')
-    }
-
-    // setting mbeddrBuild
-    if (project.hasProperty('mbeddrBuild')) {
-        ext.mbeddrBuild = project.getProperty('mbeddrBuild')
-    } else {
-        ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
-    }
-
-    if (project.hasProperty("mbeddrBuildCounter")) {
-        ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
-    } else {
-        ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
-    }
-    ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
+if project.hasProperty("mbeddrVersion") {
+    ext.mbeddrBuildNumber = project.getProperty('mbeddrVersion')
 } else {
-    println "Local build detected. Build will be a SNAPSHOT."
-    ext.mbeddrBuildNumber = "1.0-SNAPSHOT"
+    // locally versions are SNAPSHOT
+    if (ciBuild) {
+        // setting mbeddrMajor
+        if (project.hasProperty('mbeddrMajor')) {
+            ext.mbeddrMajor = project.getProperty('mbeddrMajor')
+        }
+
+        // setting mbeddrMinor
+        if (project.hasProperty('mbeddrMinor')) {
+            ext.mbeddrMinor = project.getProperty('mbeddrMinor')
+        }
+
+        // setting mbeddrBuild
+        if (project.hasProperty('mbeddrBuild')) {
+            ext.mbeddrBuild = project.getProperty('mbeddrBuild')
+        } else {
+            ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
+        }
+
+        if (project.hasProperty("mbeddrBuildCounter")) {
+            ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
+        } else {
+            ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
+        }
+        ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
+    } else {
+        println "Local build detected. Build will be a SNAPSHOT."
+        ext.mbeddrBuildNumber = "1.0-SNAPSHOT"
+    }
 }
 
 // path variables
