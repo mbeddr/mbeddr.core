@@ -103,7 +103,7 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -3701,6 +3701,99 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
+        </node>
+        <node concept="2NXPZ9" id="1Q5RJWOI42E" role="N3F5h">
+          <property role="TrG5h" value="empty_1488298306808_14" />
+        </node>
+        <node concept="1sgJKc" id="2DTvbU_KEVs" role="N3F5h">
+          <property role="TrG5h" value="ccom_humidity_measure_sample" />
+          <property role="2OOxQR" value="true" />
+          <property role="3mNxdG" value="false" />
+          <node concept="1dpRTG" id="2DTvbU_KEVL" role="HszBJ">
+            <property role="TrG5h" value="humidity" />
+            <node concept="26VqpV" id="2DTvbU_KEVK" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+          <node concept="1dpRTG" id="2DTvbU_KEWW" role="HszBJ">
+            <property role="TrG5h" value="temperature" />
+            <node concept="26Vqpq" id="2DTvbU_KEWU" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="2DTvbU_KF0B" role="N3F5h">
+          <property role="TrG5h" value="empty_1466176163466_62" />
+          <property role="2OOxQR" value="true" />
+        </node>
+        <node concept="1sgJKc" id="2DTvbU_KEQ7" role="N3F5h">
+          <property role="TrG5h" value="ccom_humidity_measurements" />
+          <property role="2OOxQR" value="true" />
+          <property role="3mNxdG" value="false" />
+          <node concept="1dpRTG" id="2DTvbU_KEQi" role="HszBJ">
+            <property role="TrG5h" value="time_stamp" />
+            <node concept="26Vqpk" id="1Q5RJWOI5VM" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+          <node concept="1dpRTG" id="2DTvbU_KER9" role="HszBJ">
+            <property role="TrG5h" value="battery_capacity" />
+            <node concept="26VqpV" id="1Q5RJWOI5W5" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+          <node concept="1dpRTG" id="2DTvbU_KESe" role="HszBJ">
+            <property role="TrG5h" value="period" />
+            <node concept="26Vqpb" id="1Q5RJWOI62X" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+          <node concept="1dpRTG" id="1Q5RJWOI63J" role="HszBJ">
+            <property role="TrG5h" value="measure" />
+            <node concept="3J0A42" id="1Q5RJWOI63K" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <node concept="1sgJKr" id="1Q5RJWOI63L" role="2umbIo">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="1sgJKq" node="2DTvbU_KEVs" resolve="ccom_humidity_measure_sample" />
+              </node>
+            </node>
+            <node concept="7CXmI" id="1Q5RJWOI6Pl" role="lGtFl">
+              <node concept="1TM$A" id="1Q5RJWOI6Pm" role="7EUXB">
+                <node concept="2PYRI3" id="1Q5RJWOI6PL" role="3lydEf">
+                  <ref role="39XzEq" to="fvu6:1Q5RJWOHD4T" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1dpRTG" id="2DTvbU_KET3" role="HszBJ">
+            <property role="TrG5h" value="measure_count" />
+            <node concept="26VqpV" id="2DTvbU_KET1" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+          <node concept="1dpRTG" id="2DTvbU_KF14" role="HszBJ">
+            <property role="TrG5h" value="measures" />
+            <node concept="3J0A42" id="1Q5RJWOBYfr" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <node concept="1sgJKr" id="1Ici13bhISe" role="2umbIo">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="1sgJKq" node="2DTvbU_KEVs" resolve="ccom_humidity_measure_sample" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="1Q5RJWOI4bv" role="N3F5h">
+          <property role="TrG5h" value="empty_1488298307688_15" />
         </node>
         <node concept="7CXmI" id="7tNSsWM5Fhn" role="lGtFl">
           <node concept="7OXhh" id="7tNSsWM5Fho" role="7EUXB" />

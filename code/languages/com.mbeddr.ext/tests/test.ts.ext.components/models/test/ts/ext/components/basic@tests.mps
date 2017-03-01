@@ -160,6 +160,7 @@
       </concept>
       <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
+      <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
@@ -244,6 +245,7 @@
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
+        <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
     </language>
@@ -272,6 +274,7 @@
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
+        <property id="6708182213627106114" name="preventNameMangling" index="3mNxdG" />
       </concept>
       <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
@@ -451,8 +454,11 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="8463282783691618456" name="com.mbeddr.core.expressions.structure.UnsignedInt64tType" flags="ng" index="26Vqp1" />
+      <concept id="8463282783691618450" name="com.mbeddr.core.expressions.structure.UnsignedInt32tType" flags="ng" index="26Vqpb" />
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="8463282783691618435" name="com.mbeddr.core.expressions.structure.Int16tType" flags="ng" index="26Vqpq" />
+      <concept id="8463282783691618466" name="com.mbeddr.core.expressions.structure.UnsignedInt16tType" flags="ng" index="26VqpV" />
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
@@ -4444,6 +4450,156 @@
       </node>
       <node concept="3xLA65" id="brG9xoxC8B" role="lGtFl">
         <property role="TrG5h" value="module1" />
+      </node>
+    </node>
+  </node>
+  <node concept="N3F5e" id="1Ici13be$gF">
+    <property role="TrG5h" value="flexible_array_helper" />
+    <node concept="1sgJKc" id="2DTvbU_KEVs" role="N3F5h">
+      <property role="TrG5h" value="ccom_humidity_measure_sample" />
+      <property role="2OOxQR" value="true" />
+      <property role="3mNxdG" value="true" />
+      <node concept="1dpRTG" id="2DTvbU_KEVL" role="HszBJ">
+        <property role="TrG5h" value="humidity" />
+        <node concept="26VqpV" id="2DTvbU_KEVK" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1dpRTG" id="2DTvbU_KEWW" role="HszBJ">
+        <property role="TrG5h" value="temperature" />
+        <node concept="26Vqpq" id="2DTvbU_KEWU" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="2DTvbU_KF0B" role="N3F5h">
+      <property role="TrG5h" value="empty_1466176163466_62" />
+      <property role="2OOxQR" value="true" />
+    </node>
+    <node concept="1sgJKc" id="2DTvbU_KEQ7" role="N3F5h">
+      <property role="TrG5h" value="ccom_humidity_measurements" />
+      <property role="2OOxQR" value="true" />
+      <property role="3mNxdG" value="true" />
+      <node concept="1dpRTG" id="2DTvbU_KEQi" role="HszBJ">
+        <property role="TrG5h" value="time_stamp" />
+        <node concept="26Vqp1" id="27hlTHYU_RL" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1dpRTG" id="2DTvbU_KER9" role="HszBJ">
+        <property role="TrG5h" value="battery_capacity" />
+        <node concept="26VqpV" id="3MlSXo60Vbe" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1dpRTG" id="2DTvbU_KESe" role="HszBJ">
+        <property role="TrG5h" value="period" />
+        <node concept="26Vqpb" id="3MlSXo60URz" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1dpRTG" id="2DTvbU_KET3" role="HszBJ">
+        <property role="TrG5h" value="measure_count" />
+        <node concept="26VqpV" id="2DTvbU_KET1" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1dpRTG" id="2DTvbU_KF14" role="HszBJ">
+        <property role="TrG5h" value="measures" />
+        <node concept="3J0A42" id="1Q5RJWOBYfr" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="1sgJKr" id="1Ici13bhISe" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="1sgJKq" node="2DTvbU_KEVs" resolve="ccom_humidity_measure_sample" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="1Q5RJWOJAfJ">
+    <property role="TrG5h" value="Flexible_array_Field" />
+    <node concept="1qefOq" id="1Q5RJWOJAfK" role="1SKRRt">
+      <node concept="N3F5e" id="1Q5RJWOJAfL" role="1qenE9">
+        <property role="TrG5h" value="Dummy" />
+        <node concept="2NXPZ9" id="1Q5RJWOJAfM" role="N3F5h">
+          <property role="TrG5h" value="empty_1343929290680_3" />
+        </node>
+        <node concept="1S7NMz" id="1Q5RJWOEPtL" role="N3F5h">
+          <property role="TrG5h" value="_globalVariable" />
+          <node concept="1sgJKr" id="1Q5RJWOEPtM" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="1sgJKq" node="2DTvbU_KEQ7" resolve="ccom_humidity_measurements" />
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="1Q5RJWOJAgr" role="N3F5h">
+          <property role="TrG5h" value="empty_1488299356515_16" />
+        </node>
+        <node concept="2NXPZ9" id="1Q5RJWOJAfQ" role="N3F5h">
+          <property role="TrG5h" value="empty_1343920539096_5" />
+        </node>
+        <node concept="2NXPZ9" id="1Q5RJWOJAfR" role="N3F5h">
+          <property role="TrG5h" value="empty_1343920549420_7" />
+        </node>
+        <node concept="2EWCuY" id="1Q5RJWOJAfS" role="N3F5h">
+          <property role="2OOxQR" value="true" />
+          <property role="TrG5h" value="Client" />
+          <node concept="EbCE0" id="1Q5RJWOEiO1" role="2RW2fA">
+            <property role="TrG5h" value="_localField" />
+            <node concept="1sgJKr" id="1Q5RJWOEiO3" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="1sgJKq" node="2DTvbU_KEQ7" resolve="ccom_humidity_measurements" />
+            </node>
+            <node concept="7CXmI" id="7OJeHzw6_yN" role="lGtFl">
+              <node concept="1TM$A" id="7OJeHzw6_yO" role="7EUXB">
+                <node concept="2PYRI3" id="7OJeHzw6_z5" role="3lydEf">
+                  <ref role="39XzEq" to="e39d:1Q5RJWOHMOK" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Khz0B" id="1Q5RJWOJAfU" role="2RW2fA" />
+          <node concept="EbCE0" id="65cRLzhfmAQ" role="2RW2fA">
+            <property role="TrG5h" value="localField" />
+            <node concept="3wxxNl" id="65AXDDNAJYJ" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <node concept="1sgJKr" id="1LLt1Te3ErT" role="2umbIo">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="1sgJKq" node="2DTvbU_KEQ7" resolve="ccom_humidity_measurements" />
+              </node>
+            </node>
+            <node concept="7CXmI" id="1Q5RJWOJArP" role="lGtFl">
+              <node concept="1TM$A" id="1Q5RJWOJArQ" role="7EUXB">
+                <node concept="2PYRI3" id="1Q5RJWOJAta" role="3lydEf">
+                  <ref role="39XzEq" to="e39d:1Q5RJWOHMOK" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Khz0B" id="1Q5RJWOJAnK" role="2RW2fA" />
+          <node concept="3Khz0B" id="1Q5RJWOJAg4" role="2RW2fA" />
+        </node>
+        <node concept="2NXPZ9" id="1Q5RJWOJAg5" role="N3F5h">
+          <property role="TrG5h" value="empty_1343929291754_5" />
+        </node>
+        <node concept="2NXPZ9" id="1Q5RJWOJAg6" role="N3F5h">
+          <property role="TrG5h" value="empty_1343929290797_4" />
+        </node>
+        <node concept="3GEVxB" id="1Q5RJWOJAiK" role="2OODSX">
+          <property role="3GEa6x" value="true" />
+          <ref role="3GEb4d" node="1Ici13be$gF" resolve="flexible_array_helper" />
+        </node>
       </node>
     </node>
   </node>
