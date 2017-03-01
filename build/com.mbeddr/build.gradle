@@ -9,7 +9,7 @@ if (project.hasProperty("MPS_Installation")) {
 ext.mbeddrMajor = "1"
 ext.mbeddrMinor = "0"
 
-if project.hasProperty("mbeddrVersion") {
+if (project.hasProperty("mbeddrVersion")) {
     ext.mbeddrBuildNumber = project.getProperty('mbeddrVersion')
 } else {
     // locally versions are SNAPSHOT
