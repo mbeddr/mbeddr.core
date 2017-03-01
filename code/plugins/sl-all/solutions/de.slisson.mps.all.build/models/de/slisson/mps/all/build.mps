@@ -2553,6 +2553,58 @@
     </node>
     <node concept="2G$12M" id="2Xjt3l57hhs" role="3989C9">
       <property role="TrG5h" value="de.slisson.mps.hacks" />
+      <node concept="1E1JtD" id="TAJODzTczI" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="de.slisson.mps.hacks.xmodelgen" />
+        <property role="3LESm3" value="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="TAJODzTcXB" role="3LF7KH">
+          <ref role="398BVh" node="3vzyAKEJSiZ" resolve="sl-all.home" />
+          <node concept="2Ry0Ak" id="TAJODzTdzY" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="TAJODzTe13" role="2Ry0An">
+              <property role="2Ry0Am" value="de.slisson.mps.hacks.xmodelgen" />
+              <node concept="2Ry0Ak" id="TAJODzTesS" role="2Ry0An">
+                <property role="2Ry0Am" value="de.slisson.mps.hacks.xmodelgen.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="TAJODzTeMY" role="3bR37C">
+          <node concept="3bR9La" id="TAJODzTeMZ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="TAJODzTeN0" role="3bR37C">
+          <node concept="3bR9La" id="TAJODzTeN1" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L6C" resolve="jetbrains.mps.lang.generator" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="TAJODzTeN2" role="3bR37C">
+          <node concept="3bR9La" id="TAJODzTeN3" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="TAJODzTeN4" role="3bR37C">
+          <node concept="3bR9La" id="TAJODzTeN5" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:307DWrMiIBc" resolve="jetbrains.mps.lang.generator.plan" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="TAJODzTeN6" role="3bR37C">
+          <node concept="1Busua" id="TAJODzTeN7" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:307DWrMiIBc" resolve="jetbrains.mps.lang.generator.plan" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="TAJODzTeN8" role="1TViLv">
+          <property role="TrG5h" value="de.slisson.mps.hacks.xmodelgen#961590472824343780" />
+          <property role="3LESm3" value="98b4b625-da69-443b-a553-2f746fe85c4a" />
+          <property role="2GAjPV" value="false" />
+        </node>
+      </node>
       <node concept="1E1JtA" id="64TsoMQT2qP" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="de.slisson.mps.hacks.editor" />
