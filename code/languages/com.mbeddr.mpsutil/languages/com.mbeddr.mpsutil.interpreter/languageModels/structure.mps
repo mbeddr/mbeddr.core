@@ -648,5 +648,22 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6MNhNeUBmBq">
+    <property role="EcuMT" value="7832682464427207130" />
+    <property role="TrG5h" value="StopExpression" />
+    <property role="34LRSv" value="stop" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6MNhNeUBmBr" role="1TKVEi">
+      <property role="IQ2ns" value="7832682464426609245" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6bG6MAFRAaG">
+    <property role="EcuMT" value="7128102176011739820" />
+    <property role="TrG5h" value="IInterpreterWrapperType" />
+  </node>
 </model>
 

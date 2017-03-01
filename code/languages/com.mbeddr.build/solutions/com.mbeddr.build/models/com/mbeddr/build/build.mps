@@ -555,7 +555,7 @@
       <property role="m$_wk" value="com.mbeddr.ext.serialization" />
       <node concept="3_J27D" id="3p0OY6VwW68" role="m$_yQ">
         <node concept="3Mxwew" id="3p0OY6VwW69" role="3MwsjC">
-          <property role="3MwjfP" value="com.mbeddr.ext.units" />
+          <property role="3MwjfP" value="com.mbeddr.ext.serialization" />
         </node>
       </node>
       <node concept="3_J27D" id="3p0OY6VwW6a" role="m$_w8">

@@ -91,6 +91,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -514,6 +517,9 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="3clFbT" id="7WAr$Vc4Tgt" role="37wK5m">
+                        <property role="3clFbU" value="false" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -599,6 +605,9 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="3clFbT" id="7WAr$Vc4Tv8" role="37wK5m">
+                        <property role="3clFbU" value="false" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -682,6 +691,9 @@
                         <node concept="HV5vD" id="2nzO3M_RyrU" role="2ShVmc">
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
+                      </node>
+                      <node concept="3clFbT" id="7WAr$Vc4U0w" role="37wK5m">
+                        <property role="3clFbU" value="false" />
                       </node>
                     </node>
                   </node>
@@ -767,6 +779,9 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="3clFbT" id="7WAr$Vc4TRb" role="37wK5m">
+                        <property role="3clFbU" value="false" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -850,6 +865,9 @@
                         <node concept="HV5vD" id="2nzO3M_RyCE" role="2ShVmc">
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
+                      </node>
+                      <node concept="3clFbT" id="7WAr$Vc4THQ" role="37wK5m">
+                        <property role="3clFbU" value="false" />
                       </node>
                     </node>
                   </node>
