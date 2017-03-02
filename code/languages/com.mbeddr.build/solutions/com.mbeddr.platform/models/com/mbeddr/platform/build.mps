@@ -9176,7 +9176,7 @@
         </node>
         <node concept="1SiIV0" id="5FJiYrlPhrO" role="3bR37C">
           <node concept="3bR9La" id="5FJiYrlPhrP" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="5FJiYrlOTtx" resolve="com.mbeddr.mpsutil.actionsfilter.runtime" />
           </node>
         </node>
@@ -11575,12 +11575,6 @@
             <ref role="1Busuk" node="1YMM4SJ2m0" resolve="com.mbeddr.doc" />
           </node>
         </node>
-        <node concept="1SiIV0" id="AnWVV13183" role="3bR37C">
-          <node concept="3bR9La" id="AnWVV13184" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" node="5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
-          </node>
-        </node>
         <node concept="1yeLz9" id="5NpY9mnreED" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.doc.aspect#8077410651477853286" />
           <property role="3LESm3" value="85e5c424-ced3-49dc-8d44-c20cfe8896c2" />
@@ -11650,6 +11644,12 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="AnWVV13183" role="3bR37C">
+          <node concept="3bR9La" id="AnWVV13184" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
           </node>
         </node>
       </node>
