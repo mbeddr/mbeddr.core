@@ -8089,16 +8089,16 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
+        <node concept="1yeLz9" id="4X7wieqKjiH" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.extensionclass#5712676642251909534" />
+          <property role="3LESm3" value="48a6601d-ba0a-4255-9bb4-da8a0a080574" />
+          <property role="2GAjPV" value="false" />
+        </node>
         <node concept="1SiIV0" id="5fGcQI94ezt" role="3bR37C">
           <node concept="3bR9La" id="5fGcQI94ezu" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
           </node>
-        </node>
-        <node concept="1yeLz9" id="4X7wieqKjiH" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.mpsutil.extensionclass#5712676642251909534" />
-          <property role="3LESm3" value="48a6601d-ba0a-4255-9bb4-da8a0a080574" />
-          <property role="2GAjPV" value="false" />
         </node>
       </node>
       <node concept="1E1JtA" id="2Bykr6DCkE7" role="2G$12L">
@@ -11573,6 +11573,12 @@
         <node concept="1SiIV0" id="5NpY9mnqF3O" role="3bR37C">
           <node concept="1Busua" id="5NpY9mnqF3P" role="1SiIV1">
             <ref role="1Busuk" node="1YMM4SJ2m0" resolve="com.mbeddr.doc" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="AnWVV13183" role="3bR37C">
+          <node concept="3bR9La" id="AnWVV13184" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
           </node>
         </node>
         <node concept="1yeLz9" id="5NpY9mnreED" role="1TViLv">

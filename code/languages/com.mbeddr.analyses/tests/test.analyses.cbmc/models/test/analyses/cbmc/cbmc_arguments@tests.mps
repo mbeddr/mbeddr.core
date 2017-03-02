@@ -16,6 +16,7 @@
     <import index="3h46" ref="r:d540de81-ea7d-4732-953c-fa9c34672949(com.mbeddr.analyses.cbmc.core.rt.testing_utils)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -266,7 +267,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="oxt36$afz3" role="1SL9yI">
-      <property role="TrG5h" value="testAnalysisDepth13" />
+      <property role="TrG5h" value="testAnalysisDepth17" />
       <node concept="3cqZAl" id="oxt36$afz4" role="3clF45" />
       <node concept="3clFbS" id="oxt36$afz5" role="3clF47">
         <node concept="3cpWs8" id="5bSnXVK2uAe" role="3cqZAp">
@@ -280,10 +281,10 @@
               <node concept="2XshWL" id="5bSnXVK2uNF" role="2OqNvi">
                 <ref role="2WH_rO" node="5bSnXVK2ojq" resolve="checkAsserts" />
                 <node concept="Xl_RD" id="5bSnXVK2uOD" role="2XxRq1">
-                  <property role="Xl_RC" value="analysisDepth14" />
+                  <property role="Xl_RC" value="analysisDepth17" />
                 </node>
                 <node concept="3cmrfG" id="5bSnXVK2uQe" role="2XxRq1">
-                  <property role="3cmrfH" value="12" />
+                  <property role="3cmrfH" value="16" />
                 </node>
               </node>
             </node>
@@ -310,10 +311,10 @@
               <node concept="2XshWL" id="5bSnXVK2wLk" role="2OqNvi">
                 <ref role="2WH_rO" node="5bSnXVK2ojq" resolve="checkAsserts" />
                 <node concept="Xl_RD" id="5bSnXVK2wLl" role="2XxRq1">
-                  <property role="Xl_RC" value="analysisDepth14" />
+                  <property role="Xl_RC" value="analysisDepth17" />
                 </node>
                 <node concept="3cmrfG" id="5bSnXVK2wLm" role="2XxRq1">
-                  <property role="3cmrfH" value="16" />
+                  <property role="3cmrfH" value="17" />
                 </node>
               </node>
             </node>
@@ -342,7 +343,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="oxt36$afBV" role="1SL9yI">
-      <property role="TrG5h" value="testAnalysisDepth15" />
+      <property role="TrG5h" value="testAnalysisDepth18" />
       <node concept="3cqZAl" id="oxt36$afBW" role="3clF45" />
       <node concept="3clFbS" id="oxt36$afBX" role="3clF47">
         <node concept="3cpWs8" id="oxt36$afCa" role="3cqZAp">
@@ -356,10 +357,10 @@
               <node concept="2XshWL" id="5bSnXVK2yE0" role="2OqNvi">
                 <ref role="2WH_rO" node="5bSnXVK2ojq" resolve="checkAsserts" />
                 <node concept="Xl_RD" id="5bSnXVK2yE1" role="2XxRq1">
-                  <property role="Xl_RC" value="analysisDepth15" />
+                  <property role="Xl_RC" value="analysisDepth18" />
                 </node>
                 <node concept="3cmrfG" id="5bSnXVK2yE2" role="2XxRq1">
-                  <property role="3cmrfH" value="13" />
+                  <property role="3cmrfH" value="17" />
                 </node>
               </node>
             </node>
@@ -386,10 +387,10 @@
               <node concept="2XshWL" id="5bSnXVK2AmK" role="2OqNvi">
                 <ref role="2WH_rO" node="5bSnXVK2ojq" resolve="checkAsserts" />
                 <node concept="Xl_RD" id="5bSnXVK2AmL" role="2XxRq1">
-                  <property role="Xl_RC" value="analysisDepth15" />
+                  <property role="Xl_RC" value="analysisDepth18" />
                 </node>
-                <node concept="3cmrfG" id="6wfBxT416g4" role="2XxRq1">
-                  <property role="3cmrfH" value="20" />
+                <node concept="3cmrfG" id="7tEBO5GDYms" role="2XxRq1">
+                  <property role="3cmrfH" value="18" />
                 </node>
               </node>
             </node>
@@ -418,7 +419,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="oxt36$afAX" role="1SL9yI">
-      <property role="TrG5h" value="testAnalysisDepth17" />
+      <property role="TrG5h" value="testAnalysisDepth20" />
       <node concept="3cqZAl" id="oxt36$afAY" role="3clF45" />
       <node concept="3clFbS" id="oxt36$afAZ" role="3clF47">
         <node concept="3cpWs8" id="oxt36$afBc" role="3cqZAp">
@@ -432,10 +433,10 @@
               <node concept="2XshWL" id="5bSnXVK2Asa" role="2OqNvi">
                 <ref role="2WH_rO" node="5bSnXVK2ojq" resolve="checkAsserts" />
                 <node concept="Xl_RD" id="5bSnXVK2Asb" role="2XxRq1">
-                  <property role="Xl_RC" value="analysisDepth17" />
+                  <property role="Xl_RC" value="analysisDepth20" />
                 </node>
                 <node concept="3cmrfG" id="5bSnXVK2Asc" role="2XxRq1">
-                  <property role="3cmrfH" value="15" />
+                  <property role="3cmrfH" value="19" />
                 </node>
               </node>
             </node>
@@ -462,7 +463,7 @@
               <node concept="2XshWL" id="5bSnXVK2CD9" role="2OqNvi">
                 <ref role="2WH_rO" node="5bSnXVK2ojq" resolve="checkAsserts" />
                 <node concept="Xl_RD" id="5bSnXVK2CDa" role="2XxRq1">
-                  <property role="Xl_RC" value="analysisDepth17" />
+                  <property role="Xl_RC" value="analysisDepth20" />
                 </node>
                 <node concept="3cmrfG" id="5bSnXVK2CDb" role="2XxRq1">
                   <property role="3cmrfH" value="20" />
@@ -773,11 +774,18 @@
                       <node concept="3xETmq" id="2JqimxyTJ3N" role="3cqZAp">
                         <node concept="3_1$Yv" id="2JqimxyTJS3" role="3_9lra">
                           <node concept="3cpWs3" id="2JqimxyTKao" role="3_1BAH">
-                            <node concept="2GrUjf" id="2JqimxyTKil" role="3uHU7w">
-                              <ref role="2Gs0qQ" node="3RFEChb2P58" resolve="m" />
+                            <node concept="2YIFZM" id="2NnwCnL0OJt" role="3uHU7w">
+                              <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+                              <node concept="37vLTw" id="2NnwCnL0P5L" role="37wK5m">
+                                <ref role="3cqZAo" node="3RFEChb2OeI" resolve="messages" />
+                              </node>
+                              <node concept="Xl_RD" id="2NnwCnL0PNg" role="37wK5m">
+                                <property role="Xl_RC" value="\n" />
+                              </node>
                             </node>
                             <node concept="Xl_RD" id="2JqimxyTJZA" role="3uHU7B">
-                              <property role="Xl_RC" value="cbmc version check failed. Message was: " />
+                              <property role="Xl_RC" value="cbmc version check failed. CBMC sanity checking returned: \n" />
                             </node>
                           </node>
                         </node>

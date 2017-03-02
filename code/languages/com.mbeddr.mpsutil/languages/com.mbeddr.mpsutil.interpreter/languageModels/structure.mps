@@ -619,5 +619,51 @@
     <property role="3GE5qa" value="Coverage" />
     <property role="TrG5h" value="IExcludeFromCoverage" />
   </node>
+  <node concept="1TIwiD" id="6MNhNeU4Xm5">
+    <property role="TrG5h" value="ExprOperationCallExpression" />
+    <property role="34LRSv" value="#()-&gt;" />
+    <property role="R4oN_" value="calls an operation including stack and positional parameter handling" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <property role="EcuMT" value="7832682464418190725" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6MNhNeU4Xm6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actuals" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="7832682464418190726" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6MNhNeU4Xm7" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="formals" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="7832682464418190727" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6MNhNeU4Xml" role="1TKVEi">
+      <property role="IQ2ns" value="7832682464418190741" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operation" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6MNhNeUBmBq">
+    <property role="EcuMT" value="7832682464427207130" />
+    <property role="TrG5h" value="StopExpression" />
+    <property role="34LRSv" value="stop" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6MNhNeUBmBr" role="1TKVEi">
+      <property role="IQ2ns" value="7832682464426609245" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6bG6MAFRAaG">
+    <property role="EcuMT" value="7128102176011739820" />
+    <property role="TrG5h" value="IInterpreterWrapperType" />
+  </node>
 </model>
 
