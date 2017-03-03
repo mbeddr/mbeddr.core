@@ -1,0 +1,34 @@
+import java.time.*
+
+plugins {
+  id "co.riiid.gradle" version "0.4.2"
+}
+
+def artifactsRoot = rootProject.projectDir.absolutePath + "/artifacts"
+
+def buildNumber = rootProject.getProperty("build.number")
+
+LocalDateTime t = LocalDateTime.now();
+
+def releaseNotes = """Automated Nighly build from ${t as String}"""
+
+github {
+    owner = 'mbeddr'
+    repo = 'mbeddr.core'
+    token = rootProject.getProperty("github.token")
+    tagName = 'nightly-' + buildNumber
+    targetCommitish = GitBasedVersioning.getGitCommitHash()
+    name = 'Nighly Build ' + buildNumber
+    body = releaseNotes
+    assets = [
+            artifactsRoot + "/com.mbeddr.allInOne/com.mebddr.allInOne.zip",
+            artifactsRoot + "/com.mbeddr.tutorial/com.mebddr.tutorial.zip",
+            artifactsRoot + "/com.mbeddr.platform.distribution/platform-distribution.zip",
+            artifactsRoot + "/rcp/Setup.exe",
+            artifactsRoot + "/rcp/mbeddr-macos.dmg"
+    ]
+}
+
+githubRelease.dependsOn ':build:com.mbeddr:distribution:build_platform_distribution',
+ ':build:com.mbeddr:distribution:package_tutorial',
+ ':build:com.mbeddr:distribution:build_all_in_one'
