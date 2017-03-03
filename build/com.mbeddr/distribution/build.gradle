@@ -16,7 +16,7 @@ ext.dependencyRepositories = [
 dependencies {
     mpsArtifacts "com.mbeddr:mbeddr:$mbeddrBuildNumber"
     jreMac "com.jetbrains.jdk:jdk:8u112b408.4:osx_x64@tgz"
-    jreMac "com.jetbrains.jdk:jdk:8u112b408.4:windows_x64@tgz"
+    jreWin "com.jetbrains.jdk:jdk:8u112b408.4:windows_x64@tgz"
 }
 
 task resolveMpsArtifacts() {
@@ -85,7 +85,7 @@ task resolve_cbmcWinForInstaller(type: Copy)  {
 
 task resolve_jreWindows(type: Copy)  {
     from {
-        configurations.cbmcWin.collect { tarTree(it) }
+        configurations.jreWin.collect { tarTree(it) }
     }
     into installer_repo + "/files/mbeddr/"
 }
@@ -120,16 +120,12 @@ task resolveJreMac(type: Copy) {
     rename("jdk-8u112b408.4-osx_x64.tgz", "jdk.tar.gz")
 }
 
-
 task prepare_dmg(type:Copy, dependsOn: [build_mbeddrRCP, resolveJreMac]) {
     from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/"
     into rootProject.projectDir.absolutePath + "/buildUtil"
 }
 
-
 task build_dmg(type: RunMbeddrAntScript, dependsOn: prepare_dmg) {
     script script_build_dmg
     targets 'macbuild'
 }
-
-
