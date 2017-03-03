@@ -350,9 +350,6 @@
       <node concept="m$f5U" id="3quoVcnS57Z" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnNsFs" resolve="com.mbeddr.mpsutil.httpsupport" />
       </node>
-      <node concept="m$f5U" id="3quoVcnS59z" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnLGky" resolve="com.mbeddr.mpsutil.intentions" />
-      </node>
       <node concept="m$f5U" id="3quoVcnS5al" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnN1e0" resolve="com.mbeddr.mpsutil.interpreter" />
       </node>
@@ -522,6 +519,42 @@
       <node concept="3_J27D" id="Vtr7jyB0oY" role="3s6cr7">
         <node concept="3Mxwew" id="Vtr7jyB0oZ" role="3MwsjC">
           <property role="3MwjfP" value="File Picker Langauge from mbeddr.mpsutil" />
+        </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="TAJODzUQvo" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.intentions" />
+      <node concept="3_J27D" id="TAJODzUQvp" role="m$_yQ">
+        <node concept="3Mxwew" id="TAJODzUQvq" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.intentions" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="TAJODzUQvr" role="m$_w8">
+        <node concept="3Mxwey" id="TAJODzUQvs" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="TAJODzUWI_" role="m$_yh">
+        <ref role="m$f5T" node="3quoVcnLGky" resolve="group.intentions" />
+      </node>
+      <node concept="m$_yC" id="TAJODzUQvu" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="TAJODzUZlz" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
+      </node>
+      <node concept="3_J27D" id="TAJODzUQvv" role="m_cZH">
+        <node concept="3Mxwew" id="TAJODzUQvw" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.intentions" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="TAJODzUQvx" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com/" />
+      </node>
+      <node concept="3_J27D" id="TAJODzUQvy" role="3s6cr7">
+        <node concept="3Mxwew" id="TAJODzUQvz" role="3MwsjC">
+          <property role="3MwjfP" value="Intentions Langauge from mbeddr.mpsutil" />
         </node>
       </node>
     </node>
@@ -5118,7 +5151,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnLGky" role="3989C9">
-      <property role="TrG5h" value="com.mbeddr.mpsutil.intentions" />
+      <property role="TrG5h" value="group.intentions" />
       <node concept="1E1JtD" id="54z9_KDR0Ol" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.intentions" />
@@ -12610,6 +12643,9 @@
       </node>
       <node concept="m$_wl" id="2QOWB0DVdSx" role="39821P">
         <ref role="m_rDy" node="33r_JpZ6k_l" resolve="com.mbeddr.platform.build" />
+      </node>
+      <node concept="m$_wl" id="TAJODzV169" role="39821P">
+        <ref role="m_rDy" node="TAJODzUQvo" resolve="com.mbeddr.mpsutil.intentions" />
       </node>
       <node concept="m$_wl" id="1g7oDhKdv$t" role="39821P">
         <ref role="m_rDy" node="1g7oDhK9QTM" resolve="com.mbeddr.mpsutil.actionsfilter.lang" />
