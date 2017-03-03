@@ -64,7 +64,7 @@ task build_mbeddrRCP(type: RunMbeddrAntScript, dependsOn: build_mbeddr_branding)
 def installer_repo = project.hasProperty('InstallerRepo') ? project.getProperty('InstallerRepo') : rootProject.projectDir.absolutePath + '/../mbeddr.installer.win'
 
 task prepare_installer(type: Copy, dependsOn: build_mbeddrRCP) {
-    from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/mbeddr-win.zip"    from {
+    from {
         zipTree(rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/" + "mbeddr-win.zip")
     }
     into installer_repo + "/files/mbeddr/"
