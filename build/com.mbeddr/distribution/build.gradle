@@ -95,7 +95,7 @@ task unzip_cbmcWinZipForInstaller(type: Copy, dependsOn: resolve_cbmcWinForInsta
     into file(installer_repo +"/files/3rd-party/cbmc")
 }
 
-task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipForInstaller]) {
+task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipForInstaller, resolve_jreWindows]) {
   workingDir installer_repo
 
   //on windows:
