@@ -232,7 +232,7 @@
       <property role="IQ2ns" value="2504745233808502246" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="1it8M3uGpbG" resolve="Target" />
     </node>
   </node>
