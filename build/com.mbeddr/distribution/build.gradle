@@ -6,6 +6,7 @@ configurations {
         description = 'cbmc windows'
     }
     jreMac
+    jreWin
 }
 
 ext.dependencyRepositories = [
@@ -15,6 +16,7 @@ ext.dependencyRepositories = [
 dependencies {
     mpsArtifacts "com.mbeddr:mbeddr:$mbeddrBuildNumber"
     jreMac "com.jetbrains.jdk:jdk:8u112b408.4:osx_x64@tgz"
+    jreMac "com.jetbrains.jdk:jdk:8u112b408.4:windows_x64@tgz"
 }
 
 task resolveMpsArtifacts() {
@@ -79,6 +81,13 @@ task resolve_cbmcWinForInstaller(type: Copy)  {
         configurations.cbmcWin.collect { zipTree(it) }
     }
     into rootProject.projectDir.absolutePath + "/artifacts/cbmc"
+}
+
+task resolve_jreWindows(type: Copy)  {
+    from {
+        configurations.cbmcWin.collect { tarTree(it) }
+    }
+    into installer_repo + "/files/mbeddr/"
 }
 
 task unzip_cbmcWinZipForInstaller(type: Copy, dependsOn: resolve_cbmcWinForInstaller)  {
