@@ -33,6 +33,9 @@
     </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
+      <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ng" index="22mbnS">
+        <child id="414384289274416996" name="parts" index="3ft7WO" />
+      </concept>
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
@@ -49,6 +52,11 @@
       <concept id="6089045305654894366" name="jetbrains.mps.lang.editor.structure.SubstituteMenuReference_Default" flags="ng" index="2kknPJ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="1177327274449" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_pattern" flags="nn" index="ub8z3" />
+      <concept id="1177327570013" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_Substitute" flags="in" index="ucgPf" />
+      <concept id="8478191136883534237" name="jetbrains.mps.lang.editor.structure.IExtensibleSubstituteMenuPart" flags="ng" index="upBLQ">
+        <child id="8478191136883534238" name="features" index="upBLP" />
+      </concept>
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -90,8 +98,18 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="8998492695583109601" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_CanSubstitute" flags="ig" index="16Na2f" />
+      <concept id="8998492695583129991" name="jetbrains.mps.lang.editor.structure.SubstituteFeature_CanSubstitute" flags="ng" index="16NL3D">
+        <child id="8998492695583129992" name="query" index="16NL3A" />
+      </concept>
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
+      </concept>
+      <concept id="7342352913006985483" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Action" flags="ng" index="3eGOop">
+        <child id="8612453216082699922" name="substituteHandler" index="3aKz83" />
+      </concept>
+      <concept id="414384289274424754" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_AddConcept" flags="ng" index="3ft5Ry">
+        <reference id="697754674827630451" name="concept" index="4PJHt" />
       </concept>
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
@@ -286,6 +304,14 @@
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
+      </concept>
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -1478,6 +1504,43 @@
   </node>
   <node concept="3p36aQ" id="2cvVnUv6Emd">
     <ref role="aqKnT" to="yq40:CNkpdzSb_B" resolve="SpecialArrayTypeMarker" />
+  </node>
+  <node concept="3p36aQ" id="503aabBuqQm">
+    <property role="3GE5qa" value="pointers" />
+    <ref role="aqKnT" to="yq40:4AGl5dzxdX6" resolve="NullExpression" />
+    <node concept="3eGOop" id="503aabBuqQn" role="3ft7WO">
+      <node concept="ucgPf" id="503aabBuqQo" role="3aKz83">
+        <node concept="3clFbS" id="503aabBuqQp" role="2VODD2">
+          <node concept="3clFbF" id="503aabBuvCj" role="3cqZAp">
+            <node concept="2pJPEk" id="503aabBuvCh" role="3clFbG">
+              <node concept="2pJPED" id="503aabBuvL5" role="2pJPEn">
+                <ref role="2pJxaS" to="yq40:4AGl5dzxdX6" resolve="NullExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="16NL3D" id="503aabBuvWh" role="upBLP">
+        <node concept="16Na2f" id="503aabBuvWi" role="16NL3A">
+          <node concept="3clFbS" id="503aabBuvWj" role="2VODD2">
+            <node concept="3clFbF" id="503aabBuw9b" role="3cqZAp">
+              <node concept="2OqwBi" id="503aabBuw_l" role="3clFbG">
+                <node concept="ub8z3" id="503aabBuw9a" role="2Oq$k0" />
+                <node concept="liA8E" id="503aabBuxfs" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="503aabBuxnb" role="37wK5m">
+                    <property role="Xl_RC" value="null" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3ft5Ry" id="503aabBwoD5" role="3ft7WO">
+      <ref role="4PJHt" to="yq40:4AGl5dzxdX6" resolve="NullExpression" />
+    </node>
   </node>
 </model>
 
