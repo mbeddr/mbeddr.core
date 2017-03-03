@@ -268,12 +268,6 @@
         <ref role="398BVh" node="4AnCPexDnpL" resolve="platform.artifacts" />
       </node>
     </node>
-    <node concept="2sgV4H" id="4hvHh3QXOk3" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QXOp9" role="2JcizS">
-        <ref role="398BVh" node="2Xjt3l5c8Xb" resolve="platform.sl-all" />
-      </node>
-    </node>
     <node concept="1l3spV" id="7eF9rfAuv48" role="1l3spN">
       <node concept="L2wRC" id="7eF9rfAuv49" role="39821P">
         <ref role="L2wRA" node="7eF9rfAuv4A" resolve="test.debugger.cdt" />

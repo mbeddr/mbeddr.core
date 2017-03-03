@@ -9,9 +9,10 @@
     <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="4" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
+    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
   </languages>
   <imports />
@@ -109,7 +110,6 @@
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
@@ -119,12 +119,11 @@
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty_old" index="3kgbRO" />
+        <property id="6156524541422553710" name="path_old" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile_old" index="1RwFax" />
       </concept>
-      <concept id="6156524541423588207" name="com.mbeddr.core.base.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="6116558314501417952" name="com.mbeddr.core.modules.structure.HeaderDescriptor" flags="ng" index="rcWE1" />
@@ -161,6 +160,14 @@
       <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
       </concept>
+    </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpW">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRP" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFay" />
+      </concept>
+      <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
     </language>
     <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base">
       <concept id="1246687699869804428" name="com.mbeddr.analyses.base.structure.ModelUsedForAnalysesTestsMarker" flags="ng" index="29QVxn" />
@@ -437,11 +444,15 @@
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="4PtxuK92A2B" resolve="simple_assertion_1" />
       <node concept="3NXOOs" id="28vOu_upGdq" role="1Byen_">
+        <property role="1RwFay" value="true" />
+        <property role="3kgbRP" value="false" />
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file1.c" />
       </node>
       <node concept="3NXOOs" id="28vOu_upGdr" role="1Byen_">
+        <property role="1RwFay" value="true" />
+        <property role="3kgbRP" value="false" />
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file2.c" />
@@ -468,6 +479,8 @@
         <property role="3u2T6H" value="2" />
       </node>
       <node concept="9PVaO" id="28vOu_upGdA" role="1Byen_">
+        <property role="1RwFay" value="true" />
+        <property role="3kgbRP" value="false" />
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/" />
@@ -501,6 +514,8 @@
         <property role="3u2T6H" value="2" />
       </node>
       <node concept="9PVaO" id="28vOu_uqtPG" role="1Byen_">
+        <property role="1RwFay" value="true" />
+        <property role="3kgbRP" value="false" />
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/" />
@@ -527,6 +542,8 @@
         <property role="3u2T6H" value="1" />
       </node>
       <node concept="3NXOOs" id="7kPcpiFfCTM" role="1Byen_">
+        <property role="1RwFay" value="true" />
+        <property role="3kgbRP" value="false" />
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file_with_macros.c" />
@@ -549,6 +566,8 @@
       <property role="3u2WvC" value="true" />
       <ref role="3V$Cn$" node="7kPcpiFfB0C" resolve="harness_add3" />
       <node concept="3NXOOs" id="7kPcpiFfCUb" role="1Byen_">
+        <property role="1RwFay" value="true" />
+        <property role="3kgbRP" value="false" />
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file_with_macros.c" />
@@ -575,6 +594,8 @@
       <property role="3u2WvC" value="false" />
       <ref role="3V$Cn$" node="7kPcpiFiUG1" resolve="harness_add_no_macro_defined" />
       <node concept="3NXOOs" id="7kPcpiFiUYi" role="1Byen_">
+        <property role="1RwFay" value="true" />
+        <property role="3kgbRP" value="false" />
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file_with_macros.c" />

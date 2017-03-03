@@ -17,6 +17,7 @@
     <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="ebqt" ref="r:17207093-9cf4-4f01-9c48-e6e0146d6087(com.mbeddr.mpsutil.inca.fun.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="coho" ref="r:ad5b8223-9439-4270-8687-d790b5c09c3f(com.mbeddr.mpsutil.inca.fun.behavior)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -632,6 +633,21 @@
         </node>
       </node>
       <node concept="17QB3L" id="7w6HmN$c9AN" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7Q_hKADSl8v" role="13h7CS">
+      <property role="TrG5h" value="isLegalAsStatement" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:i26MfYG" resolve="isLegalAsStatement" />
+      <node concept="3Tm1VV" id="7Q_hKADSl8w" role="1B3o_S" />
+      <node concept="3clFbS" id="7Q_hKADSl8N" role="3clF47">
+        <node concept="3cpWs6" id="7Q_hKADSlnh" role="3cqZAp">
+          <node concept="3clFbT" id="7Q_hKADSlnp" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7Q_hKADSl8O" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="5SkQds3ko8S">

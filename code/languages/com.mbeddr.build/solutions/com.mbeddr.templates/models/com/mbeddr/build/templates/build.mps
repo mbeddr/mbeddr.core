@@ -147,12 +147,6 @@
         <ref role="398BVh" node="23LEVbRX3hP" resolve="mps.home" />
       </node>
     </node>
-    <node concept="2sgV4H" id="4hvHh3QY3Zv" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QY5vL" role="2JcizS">
-        <ref role="398BVh" node="2Xjt3l5c8Xb" resolve="sl-all.artifacts" />
-      </node>
-    </node>
     <node concept="2sgV4H" id="6ucYLjokM$t" role="1l3spa">
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="6RmoJr9taf6" role="2JcizS">
@@ -350,12 +344,6 @@
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="6RmoJr9F21A" role="2JcizS">
         <ref role="398BVh" node="6RmoJr9ESRx" resolve="platform.artifacts" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="7gJCdy_uI1V" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="7gJCdy_uKyG" role="2JcizS">
-        <ref role="398BVh" node="dYB2BxirvB" resolve="sl-all.artifacts" />
       </node>
     </node>
     <node concept="398rNT" id="3$3J06WftG_" role="1l3spd">

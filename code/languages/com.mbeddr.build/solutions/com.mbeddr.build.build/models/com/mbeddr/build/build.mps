@@ -254,12 +254,6 @@
         <ref role="398BVh" node="4AnCPexDnpL" resolve="platform.artifacts" />
       </node>
     </node>
-    <node concept="2sgV4H" id="4hvHh3QYeSL" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QYfaf" role="2JcizS">
-        <ref role="398BVh" node="2Xjt3l5c8Xb" resolve="platform.sl-all" />
-      </node>
-    </node>
     <node concept="2sgV4H" id="6BHziVHZYZa" role="1l3spa">
       <ref role="1l3spb" to="p6ld:6YaWssNZ9op" resolve="spawner" />
       <node concept="398BVA" id="6BHziVHZYZ9" role="2JcizS">
@@ -733,7 +727,7 @@
         <node concept="1SiIV0" id="6VDcRIteZ8j" role="3bR37C">
           <node concept="3bR9La" id="6VDcRIteZ8k" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:5GUwywcVeK8" resolve="com.mbeddr.mpsutil.common" />
+            <ref role="3bR37D" to="al5i:5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
           </node>
         </node>
         <node concept="1SiIV0" id="6VDcRIteZ8l" role="3bR37C">
@@ -1083,12 +1077,6 @@
       <ref role="1l3spb" node="44QTgQqTl__" resolve="com.mbeddr.tutorial-languages.build" />
       <node concept="398BVA" id="7sTP4TZypYb" role="2JcizS">
         <ref role="398BVh" node="7sTP4TZypXf" resolve="tutorial-languages.artifacts" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="4hvHh3QYfKr" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QYfM9" role="2JcizS">
-        <ref role="398BVh" node="4hvHh3QYfGu" resolve="platform.sl-all" />
       </node>
     </node>
     <node concept="2sgV4H" id="6BHziVHZYZk" role="1l3spa">
@@ -1501,12 +1489,6 @@
       <ref role="1l3spb" node="1cfjnjdI1i0" resolve="com.mbeddr.tutorial-solutions.build" />
       <node concept="398BVA" id="7sTP4TZypVz" role="2JcizS">
         <ref role="398BVh" node="7sTP4TZypNm" resolve="tutorial-solutions.artifacts" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="4hvHh3QYg0N" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QYg2T" role="2JcizS">
-        <ref role="398BVh" node="4hvHh3QYfXa" resolve="platform.sl-all" />
       </node>
     </node>
     <node concept="2sgV4H" id="1$wpIBy0Ags" role="1l3spa">

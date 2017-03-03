@@ -6411,8 +6411,8 @@
       <property role="TrG5h" value="rawCounterexampleText" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="M7_V6u5yUa" role="1B3o_S" />
-      <node concept="3uibUv" id="1agNx8KJSgQ" role="1tU5fm">
-        <ref role="3uigEE" to="dxuu:~JTextPane" resolve="JTextPane" />
+      <node concept="3uibUv" id="z7U7OJhGAy" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
       <node concept="NWlO9" id="M7_V6u5yUc" role="lGtFl">
         <property role="NWlVz" value="Text area containing the raw counterexample." />
@@ -6468,24 +6468,11 @@
           <node concept="37vLTI" id="M7_V6u5_gP" role="3clFbG">
             <node concept="2ShNRf" id="M7_V6u5_gQ" role="37vLTx">
               <node concept="1pGfFk" id="M7_V6u5_gR" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JTextPane.&lt;init&gt;()" resolve="JTextPane" />
+                <ref role="37wK5l" to="dxuu:~JTextArea.&lt;init&gt;()" resolve="JTextArea" />
               </node>
             </node>
             <node concept="37vLTw" id="M7_V6u5_Mp" role="37vLTJ">
               <ref role="3cqZAo" node="M7_V6u5yU9" resolve="rawCounterexampleText" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="M7_V6ugRUV" role="3cqZAp">
-          <node concept="2OqwBi" id="M7_V6ugSM6" role="3clFbG">
-            <node concept="37vLTw" id="M7_V6ugRUT" role="2Oq$k0">
-              <ref role="3cqZAo" node="M7_V6u5yU9" resolve="rawCounterexampleText" />
-            </node>
-            <node concept="liA8E" id="M7_V6ugV1T" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JEditorPane.setContentType(java.lang.String):void" resolve="setContentType" />
-              <node concept="Xl_RD" id="M7_V6ugV5Y" role="37wK5m">
-                <property role="Xl_RC" value="text/html" />
-              </node>
             </node>
           </node>
         </node>
@@ -6495,7 +6482,7 @@
               <ref role="3cqZAo" node="M7_V6u5yU9" resolve="rawCounterexampleText" />
             </node>
             <node concept="liA8E" id="M7_V6ugGGU" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JEditorPane.setText(java.lang.String):void" resolve="setText" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
               <node concept="Xl_RD" id="M7_V6u5_gS" role="37wK5m">
                 <property role="Xl_RC" value="Please double-click on a lifted-result." />
               </node>
@@ -6889,7 +6876,7 @@
               <ref role="3cqZAo" node="M7_V6u5yU9" resolve="rawCounterexampleText" />
             </node>
             <node concept="liA8E" id="M7_V6u7MtX" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JEditorPane.setText(java.lang.String):void" resolve="setText" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
               <node concept="1rXfSq" id="M7_V6u8401" role="37wK5m">
                 <ref role="37wK5l" node="M7_V6u7TSS" resolve="prettyPrintRawResult" />
                 <node concept="37vLTw" id="h7gcTUj4fW" role="37wK5m">
@@ -7038,10 +7025,7 @@
             </node>
             <node concept="2ShNRf" id="M7_V6u7Vex" role="33vP2m">
               <node concept="1pGfFk" id="M7_V6u7VLH" role="2ShVmc">
-                <ref role="37wK5l" to="wyt6:~StringBuffer.&lt;init&gt;(java.lang.String)" resolve="StringBuffer" />
-                <node concept="Xl_RD" id="M7_V6u7Wju" role="37wK5m">
-                  <property role="Xl_RC" value="&lt;html&gt;" />
-                </node>
+                <ref role="37wK5l" to="wyt6:~StringBuffer.&lt;init&gt;()" resolve="StringBuffer" />
               </node>
             </node>
           </node>
@@ -7049,16 +7033,8 @@
         <node concept="3clFbF" id="M7_V6u7XWr" role="3cqZAp">
           <node concept="2OqwBi" id="M7_V6u7Z4y" role="3clFbG">
             <node concept="2OqwBi" id="M7_V6uh4I2" role="2Oq$k0">
-              <node concept="2OqwBi" id="M7_V6u7Y33" role="2Oq$k0">
-                <node concept="37vLTw" id="M7_V6u7XWp" role="2Oq$k0">
-                  <ref role="3cqZAo" node="M7_V6u7VdB" resolve="sb" />
-                </node>
-                <node concept="liA8E" id="M7_V6u7YI9" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
-                  <node concept="Xl_RD" id="M7_V6u7YJo" role="37wK5m">
-                    <property role="Xl_RC" value="&lt;b&gt;" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="M7_V6u7XWp" role="2Oq$k0">
+                <ref role="3cqZAo" node="M7_V6u7VdB" resolve="sb" />
               </node>
               <node concept="liA8E" id="M7_V6uh5hD" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
@@ -7148,28 +7124,17 @@
                   </node>
                   <node concept="liA8E" id="q0xKVRMJMS" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
-                    <node concept="2OqwBi" id="q0xKVRMRUs" role="37wK5m">
-                      <node concept="2OqwBi" id="q0xKVRMQxe" role="2Oq$k0">
-                        <node concept="2OqwBi" id="q0xKVRMPNW" role="2Oq$k0">
-                          <node concept="37vLTw" id="q0xKVRMPNX" role="2Oq$k0">
-                            <ref role="3cqZAo" node="M7_V6u7UAc" resolve="r" />
-                          </node>
-                          <node concept="liA8E" id="q0xKVRMPNY" role="2OqNvi">
-                            <ref role="37wK5l" to="rbq9:19O7J9dBE6" resolve="getRawResultKind" />
-                          </node>
+                    <node concept="2OqwBi" id="q0xKVRMQxe" role="37wK5m">
+                      <node concept="2OqwBi" id="q0xKVRMPNW" role="2Oq$k0">
+                        <node concept="37vLTw" id="q0xKVRMPNX" role="2Oq$k0">
+                          <ref role="3cqZAo" node="M7_V6u7UAc" resolve="r" />
                         </node>
-                        <node concept="liA8E" id="q0xKVRMRKu" role="2OqNvi">
-                          <ref role="37wK5l" to="rbq9:5bSnXVJUYDE" resolve="getMessage" />
+                        <node concept="liA8E" id="q0xKVRMPNY" role="2OqNvi">
+                          <ref role="37wK5l" to="rbq9:19O7J9dBE6" resolve="getRawResultKind" />
                         </node>
                       </node>
-                      <node concept="liA8E" id="q0xKVRMSwr" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
-                        <node concept="Xl_RD" id="q0xKVRMS_m" role="37wK5m">
-                          <property role="Xl_RC" value="\n" />
-                        </node>
-                        <node concept="Xl_RD" id="q0xKVRMTdY" role="37wK5m">
-                          <property role="Xl_RC" value="&lt;br&gt;" />
-                        </node>
+                      <node concept="liA8E" id="q0xKVRMRKu" role="2OqNvi">
+                        <ref role="37wK5l" to="rbq9:5bSnXVJUYDE" resolve="getMessage" />
                       </node>
                     </node>
                   </node>
@@ -7202,8 +7167,8 @@
             </node>
             <node concept="liA8E" id="M7_V6u83bq" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
-              <node concept="Xl_RD" id="M7_V6u83g3" role="37wK5m">
-                <property role="Xl_RC" value="&lt;/b&gt;&lt;br&gt;" />
+              <node concept="Xl_RD" id="z7U7OJhPNy" role="37wK5m">
+                <property role="Xl_RC" value="\n\n" />
               </node>
             </node>
           </node>
@@ -7231,18 +7196,25 @@
                     <node concept="liA8E" id="M7_V6uhoul" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                       <node concept="Xl_RD" id="M7_V6uhowi" role="37wK5m">
-                        <property role="Xl_RC" value="&lt;b&gt;Step:&lt;/b&gt; " />
+                        <property role="Xl_RC" value="Step: " />
                       </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="M7_V6uhqal" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(int):java.lang.StringBuffer" resolve="append" />
-                    <node concept="2OqwBi" id="M7_V6uhqrY" role="37wK5m">
-                      <node concept="2GrUjf" id="M7_V6uhqdt" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="M7_V6uhekS" resolve="state" />
+                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                    <node concept="2YIFZM" id="z7U7OJhWi5" role="37wK5m">
+                      <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                      <node concept="Xl_RD" id="z7U7OJhWOD" role="37wK5m">
+                        <property role="Xl_RC" value="%04d" />
                       </node>
-                      <node concept="liA8E" id="M7_V6uhrb4" role="2OqNvi">
-                        <ref role="37wK5l" to="rbq9:WwTuEsv7dN" resolve="getStepNr" />
+                      <node concept="2OqwBi" id="M7_V6uhqrY" role="37wK5m">
+                        <node concept="2GrUjf" id="M7_V6uhqdt" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="M7_V6uhekS" resolve="state" />
+                        </node>
+                        <node concept="liA8E" id="M7_V6uhrb4" role="2OqNvi">
+                          <ref role="37wK5l" to="rbq9:WwTuEsv7dN" resolve="getStepNr" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -7250,7 +7222,7 @@
                 <node concept="liA8E" id="M7_V6ujrNp" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                   <node concept="Xl_RD" id="M7_V6ujseE" role="37wK5m">
-                    <property role="Xl_RC" value="&amp;nbsp;&amp;nbsp;-&amp;nbsp;&amp;nbsp; " />
+                    <property role="Xl_RC" value=" - " />
                   </node>
                 </node>
               </node>
@@ -7266,7 +7238,7 @@
                       <node concept="liA8E" id="M7_V6uhrIb" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                         <node concept="Xl_RD" id="M7_V6uhuNl" role="37wK5m">
-                          <property role="Xl_RC" value="CALL:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;" />
+                          <property role="Xl_RC" value="CALL:\t\t" />
                         </node>
                       </node>
                     </node>
@@ -7304,7 +7276,7 @@
                       <node concept="liA8E" id="M7_V6uhC7b" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                         <node concept="Xl_RD" id="M7_V6uhC7c" role="37wK5m">
-                          <property role="Xl_RC" value="RETURN:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;" />
+                          <property role="Xl_RC" value="RETURN:\t" />
                         </node>
                       </node>
                     </node>
@@ -7344,7 +7316,7 @@
                           <node concept="liA8E" id="M7_V6uhD8J" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                             <node concept="Xl_RD" id="M7_V6uhD8K" role="37wK5m">
-                              <property role="Xl_RC" value="ASSIGNMENT:&amp;nbsp;&amp;nbsp; " />
+                              <property role="Xl_RC" value="ASSIGNMENT:\t" />
                             </node>
                           </node>
                         </node>
@@ -7363,7 +7335,7 @@
                       <node concept="liA8E" id="M7_V6uhGCw" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                         <node concept="Xl_RD" id="M7_V6uhGIj" role="37wK5m">
-                          <property role="Xl_RC" value="&amp;nbsp;&amp;nbsp;=&amp;nbsp;&amp;nbsp;" />
+                          <property role="Xl_RC" value=" = " />
                         </node>
                       </node>
                     </node>
@@ -7401,7 +7373,7 @@
                       <node concept="liA8E" id="M7_V6uhLa9" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                         <node concept="Xl_RD" id="M7_V6uhLaa" role="37wK5m">
-                          <property role="Xl_RC" value="FAILURE:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;" />
+                          <property role="Xl_RC" value="FAILURE:\t\t" />
                         </node>
                       </node>
                     </node>
@@ -7441,7 +7413,7 @@
                           <node concept="liA8E" id="M7_V6uinF9" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                             <node concept="Xl_RD" id="M7_V6uinFa" role="37wK5m">
-                              <property role="Xl_RC" value="LOCATION:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;" />
+                              <property role="Xl_RC" value="LOCATION:\t" />
                             </node>
                           </node>
                         </node>
@@ -7460,7 +7432,7 @@
                       <node concept="liA8E" id="M7_V6uj0rm" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                         <node concept="Xl_RD" id="M7_V6uj0x8" role="37wK5m">
-                          <property role="Xl_RC" value="&amp;nbsp;&amp;nbsp;:&amp;nbsp;&amp;nbsp;" />
+                          <property role="Xl_RC" value="\t" />
                         </node>
                       </node>
                     </node>
@@ -7500,22 +7472,9 @@
                 <node concept="liA8E" id="M7_V6uh_wH" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
                   <node concept="Xl_RD" id="M7_V6uh_yE" role="37wK5m">
-                    <property role="Xl_RC" value="&lt;br&gt;" />
+                    <property role="Xl_RC" value="\n" />
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="M7_V6u7Wwz" role="3cqZAp">
-          <node concept="2OqwBi" id="M7_V6u7W_O" role="3clFbG">
-            <node concept="37vLTw" id="M7_V6u7Wwx" role="2Oq$k0">
-              <ref role="3cqZAo" node="M7_V6u7VdB" resolve="sb" />
-            </node>
-            <node concept="liA8E" id="M7_V6u7Xga" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
-              <node concept="Xl_RD" id="M7_V6u7Xhp" role="37wK5m">
-                <property role="Xl_RC" value="&lt;/html&gt;" />
               </node>
             </node>
           </node>

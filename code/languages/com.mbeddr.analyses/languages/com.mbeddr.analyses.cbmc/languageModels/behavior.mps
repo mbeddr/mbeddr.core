@@ -19,6 +19,7 @@
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="i1of" ref="r:34d92fb4-3bcd-4a16-881f-8e6acf83c737(com.mbeddr.analyses.base.verification_conditions.behavior)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -2022,7 +2023,7 @@
       <property role="TrG5h" value="externalFiles" />
       <node concept="3Tm1VV" id="5VnXdFks$Uq" role="1B3o_S" />
       <node concept="2I9FWS" id="5VnXdFksBp0" role="3clF45">
-        <ref role="2I9WkF" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+        <ref role="2I9WkF" to="68mc:5lKnBeAtNw8" resolve="AbstractPicker" />
       </node>
       <node concept="3clFbS" id="5VnXdFks$Us" role="3clF47">
         <node concept="3clFbJ" id="5VnXdFks$Ut" role="3cqZAp">
@@ -2081,7 +2082,7 @@
           <node concept="2ShNRf" id="5VnXdFksBHN" role="3cqZAk">
             <node concept="2T8Vx0" id="5VnXdFksHcC" role="2ShVmc">
               <node concept="2I9FWS" id="5VnXdFksHcE" role="2T96Bj">
-                <ref role="2I9WkF" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+                <ref role="2I9WkF" to="68mc:5lKnBeAtNw8" resolve="AbstractPicker" />
               </node>
             </node>
           </node>
