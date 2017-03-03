@@ -5,6 +5,7 @@ configurations {
     cbmcWin {
         description = 'cbmc windows'
     }
+    jreMac
 }
 
 ext.dependencyRepositories = [
@@ -13,6 +14,7 @@ ext.dependencyRepositories = [
 
 dependencies {
     mpsArtifacts "com.mbeddr:mbeddr:$mbeddrBuildNumber"
+    jreMac "com.jetbrains.jdk:jdk:8u112b408.4:osx_x64@tgz"
 }
 
 task resolveMpsArtifacts() {
@@ -25,6 +27,8 @@ task resolveMpsArtifacts() {
         }
     }
 }
+
+
 
 
 
@@ -99,12 +103,24 @@ task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipF
 
 def script_build_dmg = new File(rootDir , "/buildUtil/build.xml")
 
-task prepare_dmg(type:Copy, dependsOn: build_mbeddrRCP) {
+task resolveJreMac(type: Copy) {
+    from {
+        configurations.jreMac.resolve()
+    }
+    into rootProject.projectDir.absolutePath + "/buildUtil"
+    rename("jdk-8u112b408.4-osx_x64.tgz", "jdk.tar.gz")
+}
+
+
+task prepare_dmg(type:Copy, dependsOn: [build_mbeddrRCP, resolveJreMac]) {
     from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/"
     into rootProject.projectDir.absolutePath + "/buildUtil"
 }
+
 
 task build_dmg(type: RunMbeddrAntScript, dependsOn: prepare_dmg) {
     script script_build_dmg
     targets 'macbuild'
 }
+
+
