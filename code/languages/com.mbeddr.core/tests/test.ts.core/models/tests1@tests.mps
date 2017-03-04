@@ -24244,11 +24244,6 @@
               <property role="TrG5h" value="arrOfPtr" />
               <node concept="Ea8Gl" id="5NTrpoytt2P" role="3XIe9u">
                 <node concept="7CXmI" id="5NTrpoytt2Q" role="lGtFl">
-                  <node concept="1TM$A" id="3n5vksRIoEm" role="7EUXB">
-                    <node concept="2PYRI3" id="3n5vksRIoEn" role="3lydEf">
-                      <ref role="39XzEq" to="j807:$mHaGow4iO" />
-                    </node>
-                  </node>
                   <node concept="1TM$A" id="3n5vksRIoEo" role="7EUXB">
                     <node concept="2PYRI3" id="3n5vksRIoEp" role="3lydEf">
                       <ref role="39XzEq" to="j807:6o2p2Z0DIKV" />
