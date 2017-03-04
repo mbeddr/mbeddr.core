@@ -329,6 +329,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="8758390115029295477" name="jetbrains.mps.lang.smodel.structure.SReferenceType" flags="in" index="2z4iKi" />
       <concept id="8758390115028452779" name="jetbrains.mps.lang.smodel.structure.Node_GetReferencesOperation" flags="nn" index="2z74zc" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
@@ -356,6 +357,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -2271,8 +2273,19 @@
       <node concept="3clFbJ" id="x1qBlgeSA" role="3cqZAp">
         <node concept="3clFbS" id="x1qBlgeSD" role="3clFbx">
           <node concept="2MkqsV" id="$mHaGow4iO" role="3cqZAp">
-            <node concept="Xl_RD" id="$mHaGow4iR" role="2MkJ7o">
-              <property role="Xl_RC" value="null is only compatible with pointer types" />
+            <node concept="3cpWs3" id="503aabBOhaf" role="2MkJ7o">
+              <node concept="2OqwBi" id="503aabBOj5K" role="3uHU7B">
+                <node concept="2OqwBi" id="503aabBOhyZ" role="2Oq$k0">
+                  <node concept="1YBJjd" id="503aabBOhca" role="2Oq$k0">
+                    <ref role="1YBMHb" node="$mHaGow4io" resolve="nt" />
+                  </node>
+                  <node concept="2yIwOk" id="503aabBOilT" role="2OqNvi" />
+                </node>
+                <node concept="3n3YKJ" id="503aabBOjRR" role="2OqNvi" />
+              </node>
+              <node concept="Xl_RD" id="$mHaGow4iR" role="3uHU7w">
+                <property role="Xl_RC" value=" is only compatible with pointer types" />
+              </node>
             </node>
             <node concept="2OqwBi" id="$mHaGow4iT" role="2OEOjV">
               <node concept="3622Ei" id="$mHaGow4iS" role="2Oq$k0" />

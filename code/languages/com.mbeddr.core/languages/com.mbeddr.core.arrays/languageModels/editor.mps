@@ -156,6 +156,12 @@
       <concept id="843003353410421233" name="jetbrains.mps.lang.editor.structure.OptionalConceptReference" flags="ng" index="1FNNb$">
         <reference id="843003353410421234" name="concept" index="1FNNbB" />
       </concept>
+      <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
+        <child id="1225898971709" name="getter" index="1Hhtcw" />
+      </concept>
+      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
+        <child id="1225900141900" name="modelAccessor" index="1HlULh" />
+      </concept>
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
@@ -169,6 +175,7 @@
         <child id="7980428675268276157" name="locations" index="1Qtc8$" />
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
       </concept>
+      <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -322,6 +329,7 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -332,6 +340,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -909,9 +918,22 @@
       </node>
       <node concept="2iRkQZ" id="3xqp6yfxdXT" role="2iSdaV" />
     </node>
-    <node concept="3F0ifn" id="$mHaGow4hV" role="2wV5jI">
-      <property role="3F0ifm" value="nulltype" />
-      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    <node concept="1HlG4h" id="503aabBVmtW" role="2wV5jI">
+      <node concept="1HfYo3" id="503aabBVmtY" role="1HlULh">
+        <node concept="3TQlhw" id="503aabBVmu0" role="1Hhtcw">
+          <node concept="3clFbS" id="503aabBVmu2" role="2VODD2">
+            <node concept="3clFbF" id="503aabBVmA_" role="3cqZAp">
+              <node concept="2OqwBi" id="503aabBVpTY" role="3clFbG">
+                <node concept="2OqwBi" id="503aabBVmWY" role="2Oq$k0">
+                  <node concept="pncrf" id="503aabBVmA$" role="2Oq$k0" />
+                  <node concept="2yIwOk" id="503aabBVp6y" role="2OqNvi" />
+                </node>
+                <node concept="3n3YKJ" id="503aabBVqRd" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="5Y8Bot$KokC">
@@ -1527,7 +1549,7 @@
               <node concept="2OqwBi" id="503aabBuw_l" role="3clFbG">
                 <node concept="ub8z3" id="503aabBuw9a" role="2Oq$k0" />
                 <node concept="liA8E" id="503aabBuxfs" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
                   <node concept="Xl_RD" id="503aabBuxnb" role="37wK5m">
                     <property role="Xl_RC" value="null" />
                   </node>
