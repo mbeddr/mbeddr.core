@@ -109,9 +109,6 @@
       <concept id="7342352913006985483" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Action" flags="ng" index="3eGOop">
         <child id="8612453216082699922" name="substituteHandler" index="3aKz83" />
       </concept>
-      <concept id="414384289274424754" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_AddConcept" flags="ng" index="3ft5Ry">
-        <reference id="697754674827630451" name="concept" index="4PJHt" />
-      </concept>
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -1537,9 +1534,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="3ft5Ry" id="503aabBwoD5" role="3ft7WO">
-      <ref role="4PJHt" to="yq40:4AGl5dzxdX6" resolve="NullExpression" />
     </node>
   </node>
 </model>
