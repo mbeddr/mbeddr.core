@@ -3,7 +3,11 @@ import org.gradle.api.GradleException
 
 class GitBasedVersioning {
     static String getGitShortCommitHash() {
-        return getCommandOutput('git rev-parse --short HEAD')
+        return getCommandOutput('git rev-parse --short HEAD').substring(0,7)
+    }
+
+    static String getGitCommitHash() {
+        return getCommandOutput('git rev-parse HEAD')
     }
 
     static int getGitCommitCount() {

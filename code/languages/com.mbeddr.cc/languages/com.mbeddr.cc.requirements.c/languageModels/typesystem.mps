@@ -73,6 +73,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -500,6 +503,9 @@
                       <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                     </node>
                   </node>
+                  <node concept="3clFbT" id="7WAr$Vc4FbS" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -531,6 +537,9 @@
                     <node concept="HV5vD" id="2nzO3M_RmMJ" role="2ShVmc">
                       <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                     </node>
+                  </node>
+                  <node concept="3clFbT" id="7WAr$Vc4Fvl" role="37wK5m">
+                    <property role="3clFbU" value="false" />
                   </node>
                 </node>
               </node>

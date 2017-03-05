@@ -3569,5 +3569,35 @@
       <ref role="1YaFvo" to="3673:3oV0py8Ta7P" resolve="DeclareListCoverage" />
     </node>
   </node>
+  <node concept="1YbPZF" id="6MNhNeUBmEM">
+    <property role="TrG5h" value="typeof_StopExpressions" />
+    <node concept="3clFbS" id="6MNhNeUBmEN" role="18ibNy">
+      <node concept="1Z5TYs" id="6MNhNeUBmF5" role="3cqZAp">
+        <node concept="mw_s8" id="6MNhNeUBmF6" role="1ZfhKB">
+          <node concept="1Z2H0r" id="6MNhNeUBmF7" role="mwGJk">
+            <node concept="2OqwBi" id="6MNhNeUBmF8" role="1Z2MuG">
+              <node concept="1YBJjd" id="6MNhNeUBmF9" role="2Oq$k0">
+                <ref role="1YBMHb" node="6MNhNeUBmEP" resolve="se" />
+              </node>
+              <node concept="3TrEf2" id="6MNhNeUBmFa" role="2OqNvi">
+                <ref role="3Tt5mk" to="3673:6MNhNeUBmBr" resolve="expression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6MNhNeUBmFb" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6MNhNeUBmFc" role="mwGJk">
+            <node concept="1YBJjd" id="6MNhNeUBmFd" role="1Z2MuG">
+              <ref role="1YBMHb" node="6MNhNeUBmEP" resolve="se" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6MNhNeUBmEP" role="1YuTPh">
+      <property role="TrG5h" value="se" />
+      <ref role="1YaFvo" to="3673:6MNhNeUBmBq" resolve="StopExpressions" />
+    </node>
+  </node>
 </model>
 

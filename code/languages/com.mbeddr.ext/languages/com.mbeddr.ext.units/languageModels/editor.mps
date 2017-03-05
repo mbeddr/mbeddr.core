@@ -22,6 +22,7 @@
     <import index="tpci" ref="r:00000000-0000-4000-0000-011c8959028e(jetbrains.mps.lang.structure.findUsages)" />
     <import index="g4jo" ref="r:d98d04fb-4a60-4106-81cf-6cb40b67de4d(jetbrains.mps.ide.findusages.model)" />
     <import index="gkt" ref="r:f29b6853-4e1d-40bc-a331-9233266a6f31(com.mbeddr.ext.units.runtime.plugin)" />
+    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="19h7" ref="r:c367b380-739b-4331-a16f-a542455fc0c8(de.itemis.mps.editor.math.editor)" implicit="true" />
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" implicit="true" />
@@ -346,7 +347,9 @@
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
         <child id="8207263695490893799" name="symbols" index="2ElW$Z" />
+        <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
+      <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
@@ -504,6 +507,12 @@
             <ref role="1ERwB7" node="4jkbLB5Qpq5" resolve="AnnotatedExpression_RemoveUnitSpecification" />
           </node>
           <node concept="l2Vlx" id="2OsE76aRpDR" role="2iSdaV" />
+        </node>
+        <node concept="2OqwBi" id="6vDLSUv5vCU" role="2EmURo">
+          <node concept="2EmZKS" id="6vDLSUv5voH" role="2Oq$k0" />
+          <node concept="2qgKlT" id="6vDLSUv5wfV" role="2OqNvi">
+            <ref role="37wK5l" to="ywuz:5HxjapwgqKu" resolve="getPriolevel" />
+          </node>
         </node>
       </node>
       <node concept="3EZMnI" id="7eOyx9r3D2r" role="1LiK7o">

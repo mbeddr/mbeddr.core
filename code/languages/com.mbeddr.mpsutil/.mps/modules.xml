@@ -106,7 +106,6 @@
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="staging.actionsfilter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.breadcrumb.runtime/com.mbeddr.mpsutil.breadcrumb.runtime.msd" folder="rest.breadcrumb" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.buildassistant/com.mbeddr.mpsutil.buildassistant.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.buildutil.runtime/com.mbeddr.mpsutil.buildutil.runtime.msd" folder="rest.buildutil" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.reftarget.baseLanguage/com.mbeddr.mpsutil.ccmenu.reftarget.baseLanguage.msd" folder="rest.ccmenu" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.reftarget.runtime/com.mbeddr.mpsutil.ccmenu.reftarget.runtime.msd" folder="rest.ccmenu" />
