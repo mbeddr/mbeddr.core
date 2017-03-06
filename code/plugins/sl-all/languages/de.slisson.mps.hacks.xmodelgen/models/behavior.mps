@@ -22,6 +22,7 @@
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="28nf" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.impl.query(MPS.Core/)" />
     <import index="gxwz" ref="r:d1800018-44fb-4b2e-b3ae-2afea554d27b(de.slisson.mps.hacks.xmodelgen.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpf8" ref="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" implicit="true" />
@@ -93,6 +94,7 @@
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
@@ -136,6 +138,7 @@
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
         <property id="1181808852946" name="isFinal" index="DiZV1" />
+        <child id="1164879685961" name="throwsItem" index="Sfmx6" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -171,6 +174,7 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="1171903607971" name="jetbrains.mps.baseLanguage.structure.WildCardType" flags="in" index="3qTvmN" />
       <concept id="1171903916106" name="jetbrains.mps.baseLanguage.structure.UpperBoundType" flags="in" index="3qUE_q">
         <child id="1171903916107" name="bound" index="3qUE_r" />
       </concept>
@@ -707,7 +711,12 @@
             </node>
             <node concept="liA8E" id="6KgrWUnhRev" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-              <node concept="Xjq3P" id="6KgrWUnhSId" role="37wK5m" />
+              <node concept="2OqwBi" id="58qUZpukFXq" role="37wK5m">
+                <node concept="Xjq3P" id="6KgrWUnhSId" role="2Oq$k0" />
+                <node concept="liA8E" id="58qUZpukGYd" role="2OqNvi">
+                  <ref role="37wK5l" node="6KgrWUngaYi" resolve="getId" />
+                </node>
+              </node>
               <node concept="Xjq3P" id="6KgrWUnhTcI" role="37wK5m" />
             </node>
           </node>
@@ -999,40 +1008,6 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="6KgrWUngj$6" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="6KgrWUngjze" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getReference" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="6KgrWUngjzf" role="1B3o_S" />
-      <node concept="2AHcQZ" id="6KgrWUngjzh" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-      </node>
-      <node concept="2AHcQZ" id="6KgrWUngjzi" role="2AJF6D">
-        <ref role="2AI5Lk" to="ncw5:~ToRemove" resolve="ToRemove" />
-        <node concept="2B6LJw" id="6KgrWUngjzj" role="2B76xF">
-          <ref role="2B6OnR" to="ncw5:~ToRemove.version()" resolve="version" />
-          <node concept="3b6qkQ" id="6KgrWUngjzk" role="2B70Vg">
-            <property role="$nhwW" value="3.4" />
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="6KgrWUngjzo" role="3clF45">
-        <ref role="3uigEE" to="lui2:~SModuleReference" resolve="SModuleReference" />
-      </node>
-      <node concept="3clFbS" id="6KgrWUngjzH" role="3clF47">
-        <node concept="YS8fn" id="6KgrWUngkJV" role="3cqZAp">
-          <node concept="2ShNRf" id="6KgrWUngkJW" role="YScLw">
-            <node concept="1pGfFk" id="6KgrWUngkJX" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="6KgrWUngjzI" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
@@ -1575,6 +1550,52 @@
     </node>
     <node concept="3uibUv" id="6KgrWUnh1XN" role="EKbjA">
       <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
+    </node>
+    <node concept="3clFb_" id="58qUZpuktp2" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="loadClass" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="58qUZpuktp3" role="1B3o_S" />
+      <node concept="3uibUv" id="58qUZpuktp5" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+        <node concept="3qTvmN" id="58qUZpuktp6" role="11_B2D" />
+      </node>
+      <node concept="37vLTG" id="58qUZpuktp7" role="3clF46">
+        <property role="TrG5h" value="string" />
+        <node concept="3uibUv" id="58qUZpuktp8" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="58qUZpuktp9" role="Sfmx6">
+        <ref role="3uigEE" to="wyt6:~ClassNotFoundException" resolve="ClassNotFoundException" />
+      </node>
+      <node concept="3clFbS" id="58qUZpuktpb" role="3clF47">
+        <node concept="3clFbF" id="58qUZpuktpe" role="3cqZAp">
+          <node concept="10Nm6u" id="58qUZpuktpd" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="58qUZpuktpc" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="58qUZpuktpf" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getQueryProvider" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="58qUZpuktpg" role="1B3o_S" />
+      <node concept="3uibUv" id="58qUZpuktpi" role="3clF45">
+        <ref role="3uigEE" to="28nf:~GeneratorQueryProvider" resolve="GeneratorQueryProvider" />
+      </node>
+      <node concept="3clFbS" id="58qUZpuktpl" role="3clF47">
+        <node concept="3clFbF" id="58qUZpuktpo" role="3cqZAp">
+          <node concept="10Nm6u" id="58qUZpuktpn" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="58qUZpuktpm" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
   </node>
 </model>
