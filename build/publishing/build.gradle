@@ -14,14 +14,6 @@ if (rootProject.hasProperty("build.number"))
   buildNumber = ""
 }
 
-def githubToken
-
-if (rootProject.hasProperty("github.token")) {
-  githubToken = rootProject.getProperty("github.token")
-} else {
-  githubToken = ""
-}
-
 
 LocalDateTime t = LocalDateTime.now();
 
@@ -30,7 +22,7 @@ def releaseNotes = """Automated Nighly build from ${t as String}"""
 github {
     owner = 'mbeddr'
     repo = 'mbeddr.core'
-    token =
+    token = rootProject.hasProperty("github.token") ? rootProject.getProperty("github.token") : "empty"
     tagName = 'nightly-' + buildNumber
     targetCommitish = GitBasedVersioning.getGitCommitHash()
     name = 'Nighly Build ' + buildNumber
