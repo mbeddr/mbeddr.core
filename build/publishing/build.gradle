@@ -6,7 +6,22 @@ plugins {
 
 def artifactsRoot = rootProject.projectDir.absolutePath + "/artifacts"
 
-def buildNumber = rootProject.getProperty("build.number")
+def buildNumber
+if (rootProject.hasProperty("build.number"))
+{
+  rootProject.getProperty("build.number")
+} else {
+  buildNumber = ""
+}
+
+def githubToken
+
+if (rootProject.hasProperty("github.token")) {
+  githubToken = rootProject.getProperty("github.token")
+} else {
+  githubToken = ""
+}
+
 
 LocalDateTime t = LocalDateTime.now();
 
@@ -15,7 +30,7 @@ def releaseNotes = """Automated Nighly build from ${t as String}"""
 github {
     owner = 'mbeddr'
     repo = 'mbeddr.core'
-    token = rootProject.getProperty("github.token")
+    token =
     tagName = 'nightly-' + buildNumber
     targetCommitish = GitBasedVersioning.getGitCommitHash()
     name = 'Nighly Build ' + buildNumber
