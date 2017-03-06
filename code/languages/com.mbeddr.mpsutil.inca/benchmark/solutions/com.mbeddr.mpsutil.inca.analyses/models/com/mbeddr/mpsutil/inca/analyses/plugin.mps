@@ -27,6 +27,7 @@
     <import index="uu1k" ref="r:5d05a0a1-0178-4953-8047-22b44c66dcde(com.mbeddr.mpsutil.inca.data.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="eobd" ref="r:e4878ec1-d099-420e-bf85-621aa2521d4c(com.mbeddr.mpsutil.inca.benchmark.ext.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -8248,6 +8249,67 @@
           </node>
         </node>
       </node>
+      <node concept="3zV_Rz" id="xMRUwZgMiL" role="3zVECR">
+        <node concept="34ocy7" id="xMRUwZgQjR" role="1dgzf0">
+          <node concept="34oehE" id="xMRUwZgQjS" role="34ocs8">
+            <ref role="34o0ic" to="eobd:2WjUHhQlxgF" resolve="IntervalExpression" />
+            <node concept="30NkWi" id="xMRUwZgQjT" role="34oecr">
+              <ref role="XkjO9" node="ziWFuXo40Q" resolve="exp" />
+            </node>
+          </node>
+        </node>
+        <node concept="34odk1" id="xMRUwZgQjU" role="1dgzf0">
+          <node concept="2kdhWc" id="xMRUwZgQjV" role="34ocZk">
+            <node concept="727y6" id="xMRUwZh3lM" role="3zVzRQ">
+              <ref role="3zVwH8" to="eobd:gaZ64F6FAn" resolve="left" />
+              <node concept="727y6" id="xMRUwZipwE" role="3zVwHm">
+                <ref role="3zVwH8" to="mj1l:1UQ4qqfV3yK" resolve="value" />
+              </node>
+            </node>
+            <node concept="30NkWi" id="xMRUwZgQjX" role="2kdhYM">
+              <ref role="XkjO9" node="ziWFuXo40Q" resolve="exp" />
+            </node>
+          </node>
+          <node concept="30KbLJ" id="xMRUwZgQjY" role="34ocZn">
+            <property role="TrG5h" value="left" />
+          </node>
+        </node>
+        <node concept="34odk1" id="xMRUwZhkQt" role="1dgzf0">
+          <node concept="2kdhWc" id="xMRUwZhkQu" role="34ocZk">
+            <node concept="727y6" id="xMRUwZhoXX" role="3zVzRQ">
+              <ref role="3zVwH8" to="eobd:gaZ64F6FAq" resolve="right" />
+              <node concept="727y6" id="xMRUwZiyOY" role="3zVwHm">
+                <ref role="3zVwH8" to="mj1l:1UQ4qqfV3yK" resolve="value" />
+              </node>
+            </node>
+            <node concept="30NkWi" id="xMRUwZhkQw" role="2kdhYM">
+              <ref role="XkjO9" node="ziWFuXo40Q" resolve="exp" />
+            </node>
+          </node>
+          <node concept="30KbLJ" id="xMRUwZhkQx" role="34ocZn">
+            <property role="TrG5h" value="right" />
+          </node>
+        </node>
+        <node concept="30Nfyg" id="xMRUwZgQjZ" role="1dgzf0">
+          <node concept="2ZRyFJ" id="xMRUwZhO3O" role="30Nf_D">
+            <ref role="2ZRyFH" node="ziWFuXmekF" resolve="Interval" />
+            <node concept="2YIFZM" id="xMRUwZgQk2" role="2ZRyFy">
+              <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+              <node concept="1sjAk5" id="xMRUwZgQk3" role="37wK5m">
+                <ref role="1sjAk2" node="xMRUwZgQjY" resolve="left" />
+              </node>
+            </node>
+            <node concept="2YIFZM" id="xMRUwZi6m2" role="2ZRyFy">
+              <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+              <node concept="1sjAk5" id="xMRUwZib4$" role="37wK5m">
+                <ref role="1sjAk2" node="xMRUwZhkQx" resolve="right" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3zV_Rz" id="ziWFuXs0me" role="3zVECR">
         <node concept="34ocy7" id="ziWFuXs0HM" role="1dgzf0">
           <node concept="34oehE" id="ziWFuXs1yr" role="34ocs8">
@@ -9869,33 +9931,6 @@
               <ref role="3cqZAo" node="5zFTUsxEGGs" resolve="r" />
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="P$JXv" id="5zFTUsxEGH2" role="lGtFl">
-        <node concept="TZ5HA" id="5zFTUsxEGH3" role="TZ5H$">
-          <node concept="1dT_AC" id="5zFTUsxEGH4" role="1dT_Ay">
-            <property role="1dT_AB" value="If the Exact is actually empty (h is smaller than l), then it should be treated as Empty. " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5zFTUsxEGH5" role="TZ5H$">
-          <node concept="1dT_AC" id="5zFTUsxEGH6" role="1dT_Ay">
-            <property role="1dT_AB" value="TODO make use of this information everywhere in the impl." />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="5zFTUsxEGH7" role="TUOzN">
-          <property role="TUZQ4" value="the left Interval element" />
-          <node concept="zr_55" id="5zFTUsxEGH8" role="zr_5Q">
-            <ref role="zr_51" node="5zFTUsxEGGq" resolve="l" />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="5zFTUsxEGH9" role="TUOzN">
-          <property role="TUZQ4" value="the right Interval element" />
-          <node concept="zr_55" id="5zFTUsxEGHa" role="zr_5Q">
-            <ref role="zr_51" node="5zFTUsxEGGs" resolve="r" />
-          </node>
-        </node>
-        <node concept="x79VA" id="5zFTUsxEGHb" role="x79VK">
-          <property role="x79VB" value="true if left is less or equal to right, false otherwise" />
         </node>
       </node>
     </node>

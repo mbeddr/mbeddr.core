@@ -6,6 +6,10 @@ class GitBasedVersioning {
         return getCommandOutput('git rev-parse --short HEAD').substring(0,7)
     }
 
+    static String getGitCommitHash() {
+        return getCommandOutput('git rev-parse HEAD')
+    }
+
     static int getGitCommitCount() {
         return getCommandOutput('git rev-list --count HEAD').toInteger()
     }

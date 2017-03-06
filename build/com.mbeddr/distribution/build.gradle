@@ -5,6 +5,8 @@ configurations {
     cbmcWin {
         description = 'cbmc windows'
     }
+    jreMac
+    jreWin
 }
 
 ext.dependencyRepositories = [
@@ -13,6 +15,8 @@ ext.dependencyRepositories = [
 
 dependencies {
     mpsArtifacts "com.mbeddr:mbeddr:$mbeddrBuildNumber"
+    jreMac "com.jetbrains.jdk:jdk:8u112b408.4:osx_x64@tgz"
+    jreWin "com.jetbrains.jdk:jdk:8u112b408.4:windows_x64@tgz"
 }
 
 task resolveMpsArtifacts() {
@@ -25,6 +29,8 @@ task resolveMpsArtifacts() {
         }
     }
 }
+
+
 
 
 
@@ -77,12 +83,19 @@ task resolve_cbmcWinForInstaller(type: Copy)  {
     into rootProject.projectDir.absolutePath + "/artifacts/cbmc"
 }
 
+task resolve_jreWindows(type: Copy)  {
+    from {
+        configurations.jreWin.collect { tarTree(it) }
+    }
+    into installer_repo + "/files/mbeddr/"
+}
+
 task unzip_cbmcWinZipForInstaller(type: Copy, dependsOn: resolve_cbmcWinForInstaller)  {
     from zipTree(rootProject.projectDir.absolutePath + "/artifacts/cbmc/"+ "cbmc-win.zip")
     into file(installer_repo +"/files/3rd-party/cbmc")
 }
 
-task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipForInstaller]) {
+task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipForInstaller, resolve_jreWindows]) {
   workingDir installer_repo
 
   //on windows:
@@ -99,7 +112,15 @@ task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipF
 
 def script_build_dmg = new File(rootDir , "/buildUtil/build.xml")
 
-task prepare_dmg(type:Copy, dependsOn: build_mbeddrRCP) {
+task resolveJreMac(type: Copy) {
+    from {
+        configurations.jreMac.resolve()
+    }
+    into rootProject.projectDir.absolutePath + "/buildUtil"
+    rename("jdk-8u112b408.4-osx_x64.tgz", "jdk.tar.gz")
+}
+
+task prepare_dmg(type:Copy, dependsOn: [build_mbeddrRCP, resolveJreMac]) {
     from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/"
     into rootProject.projectDir.absolutePath + "/buildUtil"
 }
