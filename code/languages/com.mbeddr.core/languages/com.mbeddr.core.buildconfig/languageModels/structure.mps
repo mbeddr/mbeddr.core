@@ -526,18 +526,6 @@
     <property role="34LRSv" value="external makefile" />
     <property role="EcuMT" value="5789689727170551243" />
     <ref role="1TJDcQ" node="5lP9ZVaAU_u" resolve="ExternalPath" />
-    <node concept="1TJgyi" id="51p726VIDRd" role="1TKVEl">
-      <property role="TrG5h" value="name" />
-      <property role="IQ2nx" value="5789689727170551245" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="2LP1MbL7tX8" role="lGtFl" />
-    </node>
-    <node concept="1TJgyi" id="2LP1MbL7tWK" role="1TKVEl">
-      <property role="TrG5h" value="oldPath" />
-      <property role="IQ2nx" value="3203474556599525168" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="5lP9ZVaMOAu" role="lGtFl" />
-    </node>
     <node concept="1TJgyi" id="2LP1MbL7tWP" role="1TKVEl">
       <property role="TrG5h" value="target" />
       <property role="IQ2nx" value="3203474556599525173" />
@@ -548,14 +536,6 @@
       <property role="IQ2nx" value="3203474556599525180" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyj" id="BSUXCEwXoF" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="path" />
-      <property role="IQ2ns" value="718583462814275115" />
-      <ref role="20lvS9" node="BSUXCEzFfy" resolve="BuildConfigStringLiteral" />
-      <node concept="asaX9" id="2LP1MbL7tX5" role="lGtFl" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7FzSIra3d5s">
     <property role="TrG5h" value="ExternalIncludePath" />
@@ -564,20 +544,6 @@
     <property role="34LRSv" value="external include" />
     <property role="EcuMT" value="8855170773200720220" />
     <ref role="1TJDcQ" node="5lP9ZVaAU_u" resolve="ExternalPath" />
-    <node concept="1TJgyi" id="2LP1MbL3BxK" role="1TKVEl">
-      <property role="TrG5h" value="oldPath" />
-      <property role="IQ2nx" value="3203474556598515824" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="5lP9ZVaMOAy" role="lGtFl" />
-    </node>
-    <node concept="1TJgyj" id="1EZSCJhF1Yv" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="oldPath" />
-      <property role="IQ2ns" value="1927508255683911583" />
-      <ref role="20lvS9" node="BSUXCEzFfy" resolve="BuildConfigStringLiteral" />
-      <node concept="asaX9" id="2LP1MbL3BxH" role="lGtFl" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6e6sfG55EnQ">
     <property role="TrG5h" value="ExternalLibLinkables" />
@@ -601,26 +567,6 @@
     <property role="3GE5qa" value="binary" />
     <property role="EcuMT" value="8289767078203393854" />
     <ref role="1TJDcQ" node="5lP9ZVaAU_u" resolve="ExternalPath" />
-    <node concept="1TJgyi" id="7cbaNMf2CsZ" role="1TKVEl">
-      <property role="TrG5h" value="name" />
-      <property role="IQ2nx" value="8289767078203393855" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="7cbaNMf2Ct0" role="lGtFl" />
-    </node>
-    <node concept="1TJgyi" id="7cbaNMf2Ct1" role="1TKVEl">
-      <property role="TrG5h" value="oldPath" />
-      <property role="IQ2nx" value="8289767078203393857" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="5lP9ZVaMOAA" role="lGtFl" />
-    </node>
-    <node concept="1TJgyj" id="7cbaNMf2Ct2" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="0..1" />
-      <property role="20kJfa" value="path" />
-      <property role="IQ2ns" value="8289767078203393858" />
-      <ref role="20lvS9" node="BSUXCEzFfy" resolve="BuildConfigStringLiteral" />
-      <node concept="asaX9" id="7cbaNMf2Ct3" role="lGtFl" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6e6sfG55Eq6">
     <property role="TrG5h" value="ExternalLibraries" />
@@ -651,24 +597,10 @@
     <property role="34LRSv" value="external source" />
     <property role="EcuMT" value="5789689727168239024" />
     <ref role="1TJDcQ" node="5lP9ZVaAU_u" resolve="ExternalPath" />
-    <node concept="1TJgyj" id="BSUXCEwXo$" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="path" />
-      <property role="IQ2ns" value="718583462814275108" />
-      <ref role="20lvS9" node="BSUXCEzFfy" resolve="BuildConfigStringLiteral" />
-      <node concept="asaX9" id="2LP1MbL3BO5" role="lGtFl" />
-    </node>
     <node concept="1TJgyi" id="51p726V_PmM" role="1TKVEl">
       <property role="TrG5h" value="name" />
       <property role="IQ2nx" value="5789689727168239026" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="2LP1MbL3BO8" role="1TKVEl">
-      <property role="TrG5h" value="oldPath" />
-      <property role="IQ2nx" value="3203474556598517000" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="5lP9ZVaMOAE" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="1it8M3uGpbG">
