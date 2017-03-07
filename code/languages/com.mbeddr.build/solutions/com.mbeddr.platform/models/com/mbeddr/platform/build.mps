@@ -338,9 +338,6 @@
       <node concept="m$f5U" id="3quoVcnS4WI" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnHJhB" resolve="com.mbeddr.mpsutil.datepicker" />
       </node>
-      <node concept="m$f5U" id="3quoVcnS50u" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnM9fs" resolve="com.mbeddr.mpsutil.editor.querylist" />
-      </node>
       <node concept="m$f5U" id="3quoVcnS512" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnGzl$" resolve="com.mbeddr.mpsutil.extensionclass" />
       </node>
@@ -364,9 +361,6 @@
       </node>
       <node concept="m$f5U" id="3quoVcnS5hK" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnHjIe" resolve="com.mbeddr.mpsutil.modellisteners" />
-      </node>
-      <node concept="m$f5U" id="3quoVcnS5iG" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnF8Rx" resolve="com.mbeddr.mpsutil.placeholderTextList" />
       </node>
       <node concept="m$f5U" id="3quoVcnS5jC" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnL8hF" resolve="com.mbeddr.mpsutil.plantuml" />
@@ -555,6 +549,78 @@
       <node concept="3_J27D" id="TAJODzUQvy" role="3s6cr7">
         <node concept="3Mxwew" id="TAJODzUQvz" role="3MwsjC">
           <property role="3MwjfP" value="Intentions Langauge from mbeddr.mpsutil" />
+        </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="6hpTCZQe7wE" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.placeholderTextList" />
+      <node concept="3_J27D" id="6hpTCZQe7wF" role="m$_yQ">
+        <node concept="3Mxwew" id="6hpTCZQe7wG" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.placeholderTextList" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6hpTCZQe7wH" role="m$_w8">
+        <node concept="3Mxwey" id="6hpTCZQe7wI" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="6hpTCZQeac2" role="m$_yh">
+        <ref role="m$f5T" node="3quoVcnF8Rx" resolve="group.placeholderTextList" />
+      </node>
+      <node concept="m$_yC" id="6hpTCZQe7wK" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="6hpTCZQe7wL" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
+      </node>
+      <node concept="3_J27D" id="6hpTCZQe7wM" role="m_cZH">
+        <node concept="3Mxwew" id="6hpTCZQe7wN" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.placeholderTextList" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="6hpTCZQe7wO" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com/" />
+      </node>
+      <node concept="3_J27D" id="6hpTCZQe7wP" role="3s6cr7">
+        <node concept="3Mxwew" id="6hpTCZQe7wQ" role="3MwsjC">
+          <property role="3MwjfP" value="Editor Placeholder Textlist Langauge from mbeddr.mpsutil" />
+        </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="6hpTCZQdXQX" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.editor.querylist" />
+      <node concept="3_J27D" id="6hpTCZQdXQY" role="m$_yQ">
+        <node concept="3Mxwew" id="6hpTCZQdXQZ" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.editor.querylist" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6hpTCZQdXR0" role="m$_w8">
+        <node concept="3Mxwey" id="6hpTCZQdXR1" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="6hpTCZQe0y9" role="m$_yh">
+        <ref role="m$f5T" node="3quoVcnM9fs" resolve="group.editor.querylist" />
+      </node>
+      <node concept="m$_yC" id="6hpTCZQdXR3" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="6hpTCZQdXR4" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
+      </node>
+      <node concept="3_J27D" id="6hpTCZQdXR5" role="m_cZH">
+        <node concept="3Mxwew" id="6hpTCZQdXR6" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.editor.querylist" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="6hpTCZQdXR7" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com/" />
+      </node>
+      <node concept="3_J27D" id="6hpTCZQdXR8" role="3s6cr7">
+        <node concept="3Mxwew" id="6hpTCZQdXR9" role="3MwsjC">
+          <property role="3MwjfP" value="Editor Querylist Langauge from mbeddr.mpsutil" />
         </node>
       </node>
     </node>
@@ -4900,7 +4966,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnM9fs" role="3989C9">
-      <property role="TrG5h" value="com.mbeddr.mpsutil.editor.querylist" />
+      <property role="TrG5h" value="group.editor.querylist" />
       <node concept="1E1JtA" id="4Hbnsm4OhEo" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.editor.querylist.runtime" />
@@ -9184,7 +9250,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnF8Rx" role="3989C9">
-      <property role="TrG5h" value="com.mbeddr.mpsutil.placeholderTextList" />
+      <property role="TrG5h" value="group.placeholderTextList" />
       <node concept="1E1JtD" id="6hvYmWkk_$P" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.placeholderTextList" />
@@ -12721,6 +12787,9 @@
       <node concept="m$_wl" id="58oUBCRG6v3" role="39821P">
         <ref role="m_rDy" node="58oUBCRFYnR" resolve="com.mbeddr.mpsutil.generatorfacade" />
       </node>
+      <node concept="m$_wl" id="6hpTCZQe4Ro" role="39821P">
+        <ref role="m_rDy" node="6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
+      </node>
       <node concept="m$_wl" id="6ucYLjol21$" role="39821P">
         <ref role="m_rDy" node="7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
         <node concept="398223" id="6ucYLjonLdw" role="39821P">
@@ -12989,6 +13058,9 @@
       </node>
       <node concept="m$_wl" id="1g7oDhKdv$t" role="39821P">
         <ref role="m_rDy" node="1g7oDhK9QTM" resolve="com.mbeddr.mpsutil.actionsfilter.lang" />
+      </node>
+      <node concept="m$_wl" id="6hpTCZQebUX" role="39821P">
+        <ref role="m_rDy" node="6hpTCZQe7wE" resolve="com.mbeddr.mpsutil.placeholderTextList" />
       </node>
       <node concept="m$_wl" id="5fGcQI9hje9" role="39821P">
         <ref role="m_rDy" node="5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />

@@ -187,7 +187,14 @@ task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_m
 
 task test_mbeddr(dependsOn: [test_mbeddr_core, test_mbeddr_performance, test_mbeddr_cc, test_mbeddr_ext]) {}
 
-task publish_mbeddr(type: Zip, dependsOn: test_mbeddr) {
+def pubDeb
+if (ciBuild) {
+    pubDeb = test_mbeddr
+} else {
+    pubDeb = build_mbeddr
+}
+
+task publish_mbeddr(type: Zip, dependsOn: pubDeb) {
     archiveName 'com.mbeddr.zip'
     from artifactsDir
     include "mbeddr/**"

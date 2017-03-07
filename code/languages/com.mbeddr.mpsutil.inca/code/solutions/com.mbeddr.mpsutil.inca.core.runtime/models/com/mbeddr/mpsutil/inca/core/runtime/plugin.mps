@@ -1019,6 +1019,16 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="epUjMGCdfA" role="3cqZAp">
+          <node concept="2OqwBi" id="epUjMGCdfB" role="3clFbG">
+            <node concept="37vLTw" id="epUjMGCdfC" role="2Oq$k0">
+              <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
+            </node>
+            <node concept="liA8E" id="epUjMGCdfD" role="2OqNvi">
+              <ref role="37wK5l" node="epUjMGB8Ga" resolve="deliverAllDelayedUpdates" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3_9MzUjfDBW" role="3cqZAp">
           <node concept="2OqwBi" id="3_9MzUjfDBX" role="3clFbG">
             <node concept="37vLTw" id="3_9MzUjfDBY" role="2Oq$k0">
@@ -1378,6 +1388,16 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="epUjMGCcgF" role="3cqZAp">
+              <node concept="2OqwBi" id="epUjMGCcgG" role="3clFbG">
+                <node concept="37vLTw" id="epUjMGCcgH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
+                </node>
+                <node concept="liA8E" id="epUjMGCcgI" role="2OqNvi">
+                  <ref role="37wK5l" node="epUjMGB8Ga" resolve="deliverAllDelayedUpdates" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="5bWtNn1jvcC" role="3cqZAp">
               <node concept="2OqwBi" id="5bWtNn1jvcD" role="3clFbG">
                 <node concept="37vLTw" id="5bWtNn1jvcE" role="2Oq$k0">
@@ -1614,6 +1634,16 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbF" id="epUjMGCbBu" role="3cqZAp">
+                    <node concept="2OqwBi" id="epUjMGCbBv" role="3clFbG">
+                      <node concept="37vLTw" id="epUjMGCbBw" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
+                      </node>
+                      <node concept="liA8E" id="epUjMGCbBx" role="2OqNvi">
+                        <ref role="37wK5l" node="epUjMGB8Ga" resolve="deliverAllDelayedUpdates" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="3_9MzUjf2Ce" role="3cqZAp">
                     <node concept="2OqwBi" id="3_9MzUjf2Cf" role="3clFbG">
                       <node concept="37vLTw" id="3_9MzUjf2Cg" role="2Oq$k0">
@@ -1766,6 +1796,16 @@
                   <node concept="37vLTw" id="7k3qWLUjIYy" role="37wK5m">
                     <ref role="3cqZAo" node="7k3qWLUjCPw" resolve="child" />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="epUjMGCaRP" role="3cqZAp">
+              <node concept="2OqwBi" id="epUjMGCaRQ" role="3clFbG">
+                <node concept="37vLTw" id="epUjMGCaRR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
+                </node>
+                <node concept="liA8E" id="epUjMGCaRS" role="2OqNvi">
+                  <ref role="37wK5l" node="epUjMGB8Ga" resolve="deliverAllDelayedUpdates" />
                 </node>
               </node>
             </node>
@@ -1935,6 +1975,16 @@
                       <ref role="37wK5l" node="3YMDgCWAQ37" resolve="visitor" />
                       <node concept="3clFbT" id="3_9MzUja3EJ" role="37wK5m" />
                     </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="epUjMGCa0J" role="3cqZAp">
+                <node concept="2OqwBi" id="epUjMGCa0K" role="3clFbG">
+                  <node concept="37vLTw" id="epUjMGCa0L" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
+                  </node>
+                  <node concept="liA8E" id="epUjMGCa0M" role="2OqNvi">
+                    <ref role="37wK5l" node="epUjMGB8Ga" resolve="deliverAllDelayedUpdates" />
                   </node>
                 </node>
               </node>
@@ -2209,6 +2259,16 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="epUjMGC8Ui" role="3cqZAp">
+          <node concept="2OqwBi" id="epUjMGC8Uj" role="3clFbG">
+            <node concept="37vLTw" id="epUjMGC8Uk" role="2Oq$k0">
+              <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
+            </node>
+            <node concept="liA8E" id="epUjMGC8Ul" role="2OqNvi">
+              <ref role="37wK5l" node="epUjMGB8Ga" resolve="deliverAllDelayedUpdates" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3_9MzUja_V5" role="3cqZAp">
           <node concept="2OqwBi" id="3_9MzUja_V6" role="3clFbG">
             <node concept="37vLTw" id="3_9MzUja_V7" role="2Oq$k0">
@@ -2319,6 +2379,16 @@
                 <ref role="37wK5l" node="3YMDgCWAQ37" resolve="visitor" />
                 <node concept="3clFbT" id="3_9MzUjaFwb" role="37wK5m" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="epUjMGC7pU" role="3cqZAp">
+          <node concept="2OqwBi" id="epUjMGC7Ot" role="3clFbG">
+            <node concept="37vLTw" id="epUjMGC7pS" role="2Oq$k0">
+              <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
+            </node>
+            <node concept="liA8E" id="epUjMGC8sn" role="2OqNvi">
+              <ref role="37wK5l" node="epUjMGB8Ga" resolve="deliverAllDelayedUpdates" />
             </node>
           </node>
         </node>
@@ -9695,68 +9765,6 @@
       </node>
       <node concept="3Tm1VV" id="1D4dCkVyUy7" role="1B3o_S" />
     </node>
-    <node concept="2tJIrI" id="1D4dCkVyZ$o" role="jymVt" />
-    <node concept="3clFb_" id="1Wcd$PdFLru" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getNetwork" />
-      <node concept="3Tm1VV" id="1Wcd$PdFLrv" role="1B3o_S" />
-      <node concept="3uibUv" id="1Wcd$PdFLrw" role="3clF45">
-        <ref role="3uigEE" to="qtrc:~Network" resolve="Network" />
-      </node>
-      <node concept="3clFbS" id="1Wcd$PdFLrx" role="3clF47">
-        <node concept="3clFbJ" id="1Wcd$PdFLry" role="3cqZAp">
-          <node concept="3clFbS" id="1Wcd$PdFLrz" role="3clFbx">
-            <node concept="3cpWs6" id="1Wcd$PdFLr$" role="3cqZAp">
-              <node concept="2OqwBi" id="1Wcd$PdFLr_" role="3cqZAk">
-                <node concept="2OqwBi" id="1Wcd$PdFLrA" role="2Oq$k0">
-                  <node concept="1eOMI4" id="1Wcd$PdFLrB" role="2Oq$k0">
-                    <node concept="10QFUN" id="1Wcd$PdFLrC" role="1eOMHV">
-                      <node concept="3uibUv" id="1Wcd$PdFLrD" role="10QFUM">
-                        <ref role="3uigEE" to="5pio:~ExternalInputEnumeratorNode" resolve="ExternalInputEnumeratorNode" />
-                      </node>
-                      <node concept="2OqwBi" id="1Wcd$PdFLrE" role="10QFUP">
-                        <node concept="Xjq3P" id="1Wcd$PdFLrF" role="2Oq$k0" />
-                        <node concept="2OwXpG" id="1Wcd$PdFLrG" role="2OqNvi">
-                          <ref role="2Oxat5" node="1D4dCkVyLyA" resolve="listener" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1Wcd$PdFLrH" role="2OqNvi">
-                    <ref role="37wK5l" to="qtrc:~BaseNode.getContainer():org.eclipse.viatra.query.runtime.rete.network.ReteContainer" resolve="getContainer" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="1Wcd$PdFLrI" role="2OqNvi">
-                  <ref role="37wK5l" to="qtrc:~ReteContainer.getNetwork():org.eclipse.viatra.query.runtime.rete.network.Network" resolve="getNetwork" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2ZW3vV" id="1Wcd$PdFLrJ" role="3clFbw">
-            <node concept="3uibUv" id="1Wcd$PdFLrK" role="2ZW6by">
-              <ref role="3uigEE" to="5pio:~ExternalInputEnumeratorNode" resolve="ExternalInputEnumeratorNode" />
-            </node>
-            <node concept="2OqwBi" id="1Wcd$PdFLrL" role="2ZW6bz">
-              <node concept="Xjq3P" id="1Wcd$PdFLrM" role="2Oq$k0" />
-              <node concept="2OwXpG" id="1Wcd$PdFLrN" role="2OqNvi">
-                <ref role="2Oxat5" node="1D4dCkVyLyA" resolve="listener" />
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="1Wcd$PdFLrO" role="9aQIa">
-            <node concept="3clFbS" id="1Wcd$PdFLrP" role="9aQI4">
-              <node concept="3cpWs6" id="1Wcd$PdFLrQ" role="3cqZAp">
-                <node concept="10Nm6u" id="1Wcd$PdFLrR" role="3cqZAk" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="1Wcd$PdFLrS" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
     <node concept="2tJIrI" id="1Wcd$PdFKNG" role="jymVt" />
     <node concept="3clFb_" id="1D4dCkVyUy8" role="jymVt">
       <property role="TrG5h" value="instanceInserted" />
@@ -9813,7 +9821,7 @@
         <node concept="3clFbF" id="1D4dCkVyUyp" role="3cqZAp">
           <node concept="2OqwBi" id="1D4dCkVyUz9" role="3clFbG">
             <node concept="liA8E" id="1D4dCkVyUza" role="2OqNvi">
-              <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.update(org.eclipse.viatra.query.runtime.matchers.context.IInputKey,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,boolean):void" resolve="update" />
+              <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.updateDelayed(org.eclipse.viatra.query.runtime.matchers.context.IInputKey,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,boolean):void" resolve="updateDelayed" />
               <node concept="2ShNRf" id="1D4dCkVyZJI" role="37wK5m">
                 <node concept="1pGfFk" id="1D4dCkVyZJJ" role="2ShVmc">
                   <ref role="37wK5l" node="7TrMLNbStC3" resolve="ConceptKey" />
@@ -9902,7 +9910,7 @@
         <node concept="3clFbF" id="1D4dCkVyUyN" role="3cqZAp">
           <node concept="2OqwBi" id="1D4dCkVyUzp" role="3clFbG">
             <node concept="liA8E" id="1D4dCkVyUzq" role="2OqNvi">
-              <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.update(org.eclipse.viatra.query.runtime.matchers.context.IInputKey,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,boolean):void" resolve="update" />
+              <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.updateDelayed(org.eclipse.viatra.query.runtime.matchers.context.IInputKey,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,boolean):void" resolve="updateDelayed" />
               <node concept="2ShNRf" id="1D4dCkVyZTI" role="37wK5m">
                 <node concept="1pGfFk" id="1D4dCkVyZTJ" role="2ShVmc">
                   <ref role="37wK5l" node="7TrMLNbStC3" resolve="ConceptKey" />
@@ -10003,68 +10011,6 @@
       <node concept="3Tm1VV" id="1D4dCkVzhPu" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="1D4dCkVzk46" role="jymVt" />
-    <node concept="3clFb_" id="1Wcd$PdFNE9" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getNetwork" />
-      <node concept="3Tm1VV" id="1Wcd$PdFNEa" role="1B3o_S" />
-      <node concept="3uibUv" id="1Wcd$PdFNEb" role="3clF45">
-        <ref role="3uigEE" to="qtrc:~Network" resolve="Network" />
-      </node>
-      <node concept="3clFbS" id="1Wcd$PdFNEc" role="3clF47">
-        <node concept="3clFbJ" id="1Wcd$PdFNEd" role="3cqZAp">
-          <node concept="3clFbS" id="1Wcd$PdFNEe" role="3clFbx">
-            <node concept="3cpWs6" id="1Wcd$PdFNEf" role="3cqZAp">
-              <node concept="2OqwBi" id="1Wcd$PdFNEg" role="3cqZAk">
-                <node concept="2OqwBi" id="1Wcd$PdFNEh" role="2Oq$k0">
-                  <node concept="1eOMI4" id="1Wcd$PdFNEi" role="2Oq$k0">
-                    <node concept="10QFUN" id="1Wcd$PdFNEj" role="1eOMHV">
-                      <node concept="3uibUv" id="1Wcd$PdFNEk" role="10QFUM">
-                        <ref role="3uigEE" to="5pio:~ExternalInputEnumeratorNode" resolve="ExternalInputEnumeratorNode" />
-                      </node>
-                      <node concept="2OqwBi" id="1Wcd$PdFNEl" role="10QFUP">
-                        <node concept="Xjq3P" id="1Wcd$PdFNEm" role="2Oq$k0" />
-                        <node concept="2OwXpG" id="1Wcd$PdFNEn" role="2OqNvi">
-                          <ref role="2Oxat5" node="1D4dCkVyLyA" resolve="listener" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1Wcd$PdFNEo" role="2OqNvi">
-                    <ref role="37wK5l" to="qtrc:~BaseNode.getContainer():org.eclipse.viatra.query.runtime.rete.network.ReteContainer" resolve="getContainer" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="1Wcd$PdFNEp" role="2OqNvi">
-                  <ref role="37wK5l" to="qtrc:~ReteContainer.getNetwork():org.eclipse.viatra.query.runtime.rete.network.Network" resolve="getNetwork" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2ZW3vV" id="1Wcd$PdFNEq" role="3clFbw">
-            <node concept="3uibUv" id="1Wcd$PdFNEr" role="2ZW6by">
-              <ref role="3uigEE" to="5pio:~ExternalInputEnumeratorNode" resolve="ExternalInputEnumeratorNode" />
-            </node>
-            <node concept="2OqwBi" id="1Wcd$PdFNEs" role="2ZW6bz">
-              <node concept="Xjq3P" id="1Wcd$PdFNEt" role="2Oq$k0" />
-              <node concept="2OwXpG" id="1Wcd$PdFNEu" role="2OqNvi">
-                <ref role="2Oxat5" node="1D4dCkVyLyA" resolve="listener" />
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="1Wcd$PdFNEv" role="9aQIa">
-            <node concept="3clFbS" id="1Wcd$PdFNEw" role="9aQI4">
-              <node concept="3cpWs6" id="1Wcd$PdFNEx" role="3cqZAp">
-                <node concept="10Nm6u" id="1Wcd$PdFNEy" role="3cqZAk" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="1Wcd$PdFNEz" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="1Wcd$PdFNlS" role="jymVt" />
     <node concept="3clFb_" id="1D4dCkVzhPv" role="jymVt">
       <property role="TrG5h" value="dataTypeInstanceInserted" />
       <property role="DiZV1" value="false" />
@@ -10132,7 +10078,7 @@
             <node concept="3clFbF" id="1D4dCkVzhPQ" role="3cqZAp">
               <node concept="2OqwBi" id="1D4dCkVzhQG" role="3clFbG">
                 <node concept="liA8E" id="1D4dCkVzhQH" role="2OqNvi">
-                  <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.update(org.eclipse.viatra.query.runtime.matchers.context.IInputKey,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,boolean):void" resolve="update" />
+                  <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.updateDelayed(org.eclipse.viatra.query.runtime.matchers.context.IInputKey,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,boolean):void" resolve="updateDelayed" />
                   <node concept="2ShNRf" id="1D4dCkVzkvQ" role="37wK5m">
                     <node concept="1pGfFk" id="1D4dCkVzkvR" role="2ShVmc">
                       <ref role="37wK5l" node="7TrMLNbRyYU" resolve="DataTypeKey" />
@@ -10167,6 +10113,7 @@
       <node concept="3Tm1VV" id="1D4dCkVzhPX" role="1B3o_S" />
       <node concept="3cqZAl" id="1D4dCkVzhPY" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="epUjMGAnx_" role="jymVt" />
     <node concept="3clFb_" id="1D4dCkVzhPZ" role="jymVt">
       <property role="TrG5h" value="dataTypeInstanceDeleted" />
       <property role="DiZV1" value="false" />
@@ -10234,7 +10181,7 @@
             <node concept="3clFbF" id="1D4dCkVzhQm" role="3cqZAp">
               <node concept="2OqwBi" id="1D4dCkVzhQW" role="3clFbG">
                 <node concept="liA8E" id="1D4dCkVzhQX" role="2OqNvi">
-                  <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.update(org.eclipse.viatra.query.runtime.matchers.context.IInputKey,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,boolean):void" resolve="update" />
+                  <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.updateDelayed(org.eclipse.viatra.query.runtime.matchers.context.IInputKey,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,boolean):void" resolve="updateDelayed" />
                   <node concept="2ShNRf" id="1D4dCkVzkE3" role="37wK5m">
                     <node concept="1pGfFk" id="1D4dCkVzkE4" role="2ShVmc">
                       <ref role="37wK5l" node="7TrMLNbRyYU" resolve="DataTypeKey" />
@@ -10601,68 +10548,6 @@
       <node concept="3Tm1VV" id="1D4dCkVzoiq" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="1Wcd$PdFAVu" role="jymVt" />
-    <node concept="3clFb_" id="1Wcd$PdFBAC" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getNetwork" />
-      <node concept="3Tm1VV" id="1Wcd$PdFBAE" role="1B3o_S" />
-      <node concept="3uibUv" id="1Wcd$PdFBAF" role="3clF45">
-        <ref role="3uigEE" to="qtrc:~Network" resolve="Network" />
-      </node>
-      <node concept="3clFbS" id="1Wcd$PdFBAH" role="3clF47">
-        <node concept="3clFbJ" id="1Wcd$PdFFeC" role="3cqZAp">
-          <node concept="3clFbS" id="1Wcd$PdFFeE" role="3clFbx">
-            <node concept="3cpWs6" id="1Wcd$PdFGVF" role="3cqZAp">
-              <node concept="2OqwBi" id="1Wcd$PdFIA2" role="3cqZAk">
-                <node concept="2OqwBi" id="1Wcd$PdFHBk" role="2Oq$k0">
-                  <node concept="1eOMI4" id="1Wcd$PdFGZ7" role="2Oq$k0">
-                    <node concept="10QFUN" id="1Wcd$PdFGZ4" role="1eOMHV">
-                      <node concept="3uibUv" id="1Wcd$PdFGZ9" role="10QFUM">
-                        <ref role="3uigEE" to="5pio:~ExternalInputEnumeratorNode" resolve="ExternalInputEnumeratorNode" />
-                      </node>
-                      <node concept="2OqwBi" id="1Wcd$PdFGZa" role="10QFUP">
-                        <node concept="Xjq3P" id="1Wcd$PdFGZb" role="2Oq$k0" />
-                        <node concept="2OwXpG" id="1Wcd$PdFGZc" role="2OqNvi">
-                          <ref role="2Oxat5" node="1D4dCkVyLyA" resolve="listener" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1Wcd$PdFIfd" role="2OqNvi">
-                    <ref role="37wK5l" to="qtrc:~BaseNode.getContainer():org.eclipse.viatra.query.runtime.rete.network.ReteContainer" resolve="getContainer" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="1Wcd$PdFJit" role="2OqNvi">
-                  <ref role="37wK5l" to="qtrc:~ReteContainer.getNetwork():org.eclipse.viatra.query.runtime.rete.network.Network" resolve="getNetwork" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2ZW3vV" id="1Wcd$PdFGDo" role="3clFbw">
-            <node concept="3uibUv" id="1Wcd$PdFGS_" role="2ZW6by">
-              <ref role="3uigEE" to="5pio:~ExternalInputEnumeratorNode" resolve="ExternalInputEnumeratorNode" />
-            </node>
-            <node concept="2OqwBi" id="1Wcd$PdFFGR" role="2ZW6bz">
-              <node concept="Xjq3P" id="1Wcd$PdFFgx" role="2Oq$k0" />
-              <node concept="2OwXpG" id="1Wcd$PdFG1a" role="2OqNvi">
-                <ref role="2Oxat5" node="1D4dCkVyLyA" resolve="listener" />
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="1Wcd$PdFJKg" role="9aQIa">
-            <node concept="3clFbS" id="1Wcd$PdFJKh" role="9aQI4">
-              <node concept="3cpWs6" id="1Wcd$PdFK8m" role="3cqZAp">
-                <node concept="10Nm6u" id="1Wcd$PdFK9Y" role="3cqZAk" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="1Wcd$PdFBAI" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="1D4dCkVzslc" role="jymVt" />
     <node concept="3clFb_" id="1D4dCkVzoir" role="jymVt">
       <property role="TrG5h" value="conceptFeatureInserted" />
       <property role="DiZV1" value="false" />
@@ -10757,7 +10642,7 @@
         <node concept="3clFbF" id="1D4dCkVzoiS" role="3cqZAp">
           <node concept="2OqwBi" id="1D4dCkVzojX" role="3clFbG">
             <node concept="liA8E" id="1D4dCkVzojY" role="2OqNvi">
-              <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.update(org.eclipse.viatra.query.runtime.matchers.context.IInputKey,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,boolean):void" resolve="update" />
+              <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.updateDelayed(org.eclipse.viatra.query.runtime.matchers.context.IInputKey,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,boolean):void" resolve="updateDelayed" />
               <node concept="2ShNRf" id="1D4dCkVzpOD" role="37wK5m">
                 <node concept="1pGfFk" id="1D4dCkVzpOE" role="2ShVmc">
                   <ref role="37wK5l" node="7TrMLNbStQa" resolve="ConceptFeatureKey" />
@@ -10888,7 +10773,7 @@
         <node concept="3clFbF" id="1D4dCkVzojv" role="3cqZAp">
           <node concept="2OqwBi" id="1D4dCkVzokk" role="3clFbG">
             <node concept="liA8E" id="1D4dCkVzokl" role="2OqNvi">
-              <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.update(org.eclipse.viatra.query.runtime.matchers.context.IInputKey,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,boolean):void" resolve="update" />
+              <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.updateDelayed(org.eclipse.viatra.query.runtime.matchers.context.IInputKey,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,boolean):void" resolve="updateDelayed" />
               <node concept="2ShNRf" id="1D4dCkVzpWH" role="37wK5m">
                 <node concept="1pGfFk" id="1D4dCkVzpWI" role="2ShVmc">
                   <ref role="37wK5l" node="7TrMLNbStQa" resolve="ConceptFeatureKey" />
@@ -11014,6 +10899,93 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="1D4dCkVyLz1" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="epUjMGAhMp" role="jymVt" />
+    <node concept="3clFb_" id="epUjMGAf13" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getQueryRuntimeContextListener" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="epUjMGAf16" role="3clF47">
+        <node concept="3cpWs6" id="epUjMGAfpy" role="3cqZAp">
+          <node concept="2OqwBi" id="epUjMGAfMB" role="3cqZAk">
+            <node concept="Xjq3P" id="epUjMGAfr2" role="2Oq$k0" />
+            <node concept="2OwXpG" id="epUjMGAgh9" role="2OqNvi">
+              <ref role="2Oxat5" node="1D4dCkVyLyA" resolve="listener" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="epUjMGAe_u" role="1B3o_S" />
+      <node concept="3uibUv" id="epUjMGAeWm" role="3clF45">
+        <ref role="3uigEE" to="4v9i:~IQueryRuntimeContextListener" resolve="IQueryRuntimeContextListener" />
+      </node>
+      <node concept="2AHcQZ" id="epUjMGAkl0" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="epUjMGAlCN" role="jymVt" />
+    <node concept="3clFb_" id="1Wcd$PdFNE9" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getNetwork" />
+      <node concept="3Tm1VV" id="1Wcd$PdFNEa" role="1B3o_S" />
+      <node concept="3uibUv" id="1Wcd$PdFNEb" role="3clF45">
+        <ref role="3uigEE" to="qtrc:~Network" resolve="Network" />
+      </node>
+      <node concept="3clFbS" id="1Wcd$PdFNEc" role="3clF47">
+        <node concept="3clFbJ" id="1Wcd$PdFNEd" role="3cqZAp">
+          <node concept="3clFbS" id="1Wcd$PdFNEe" role="3clFbx">
+            <node concept="3cpWs6" id="1Wcd$PdFNEf" role="3cqZAp">
+              <node concept="2OqwBi" id="1Wcd$PdFNEg" role="3cqZAk">
+                <node concept="2OqwBi" id="1Wcd$PdFNEh" role="2Oq$k0">
+                  <node concept="1eOMI4" id="1Wcd$PdFNEi" role="2Oq$k0">
+                    <node concept="10QFUN" id="1Wcd$PdFNEj" role="1eOMHV">
+                      <node concept="3uibUv" id="1Wcd$PdFNEk" role="10QFUM">
+                        <ref role="3uigEE" to="5pio:~ExternalInputEnumeratorNode" resolve="ExternalInputEnumeratorNode" />
+                      </node>
+                      <node concept="2OqwBi" id="1Wcd$PdFNEl" role="10QFUP">
+                        <node concept="Xjq3P" id="1Wcd$PdFNEm" role="2Oq$k0" />
+                        <node concept="2OwXpG" id="1Wcd$PdFNEn" role="2OqNvi">
+                          <ref role="2Oxat5" node="1D4dCkVyLyA" resolve="listener" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1Wcd$PdFNEo" role="2OqNvi">
+                    <ref role="37wK5l" to="qtrc:~BaseNode.getContainer():org.eclipse.viatra.query.runtime.rete.network.ReteContainer" resolve="getContainer" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1Wcd$PdFNEp" role="2OqNvi">
+                  <ref role="37wK5l" to="qtrc:~ReteContainer.getNetwork():org.eclipse.viatra.query.runtime.rete.network.Network" resolve="getNetwork" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ZW3vV" id="1Wcd$PdFNEq" role="3clFbw">
+            <node concept="3uibUv" id="1Wcd$PdFNEr" role="2ZW6by">
+              <ref role="3uigEE" to="5pio:~ExternalInputEnumeratorNode" resolve="ExternalInputEnumeratorNode" />
+            </node>
+            <node concept="2OqwBi" id="1Wcd$PdFNEs" role="2ZW6bz">
+              <node concept="Xjq3P" id="1Wcd$PdFNEt" role="2Oq$k0" />
+              <node concept="2OwXpG" id="1Wcd$PdFNEu" role="2OqNvi">
+                <ref role="2Oxat5" node="1D4dCkVyLyA" resolve="listener" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="1Wcd$PdFNEv" role="9aQIa">
+            <node concept="3clFbS" id="1Wcd$PdFNEw" role="9aQI4">
+              <node concept="3cpWs6" id="1Wcd$PdFNEx" role="3cqZAp">
+                <node concept="10Nm6u" id="1Wcd$PdFNEy" role="3cqZAk" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1Wcd$PdFNEz" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="1D4dCkVyQ9M" role="jymVt" />
     <node concept="3clFb_" id="1D4dCkVyLz3" role="jymVt">
@@ -11386,6 +11358,9 @@
     </node>
     <node concept="2tJIrI" id="1D4dCkVyLyj" role="jymVt" />
     <node concept="3Tm1VV" id="1D4dCkVyLyc" role="1B3o_S" />
+    <node concept="3uibUv" id="epUjMGAjZ2" role="EKbjA">
+      <ref role="3uigEE" node="1Wcd$PdFA1Y" resolve="IChangeListener" />
+    </node>
   </node>
   <node concept="312cEu" id="7TrMLNbR7RV">
     <property role="3GE5qa" value="indexing.inputkey" />
@@ -16527,20 +16502,6 @@
         <ref role="35c_gD" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
       </node>
     </node>
-    <node concept="2tJIrI" id="1Wcd$PdGrvG" role="jymVt" />
-    <node concept="312cEg" id="1Wcd$PdGEqS" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="tracingNetworks" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tmbuc" id="1Wcd$PdGfFs" role="1B3o_S" />
-      <node concept="3uibUv" id="1Wcd$PdGDuv" role="1tU5fm">
-        <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-        <node concept="3uibUv" id="1Wcd$PdGEqH" role="11_B2D">
-          <ref role="3uigEE" to="qtrc:~Network" resolve="Network" />
-        </node>
-      </node>
-    </node>
     <node concept="2tJIrI" id="5VMWdq5xRAm" role="jymVt" />
     <node concept="3clFbW" id="5VMWdq5xRAn" role="jymVt">
       <node concept="3cqZAl" id="5VMWdq5xRAo" role="3clF45" />
@@ -16747,25 +16708,6 @@
               <node concept="Xjq3P" id="4ZRA7ouklsY" role="2Oq$k0" />
               <node concept="2OwXpG" id="4ZRA7ouknwY" role="2OqNvi">
                 <ref role="2Oxat5" node="5VMWdq5xR_M" resolve="observedConceptFeatures" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1Wcd$PdGRSQ" role="3cqZAp" />
-        <node concept="3clFbF" id="1Wcd$PdGS2H" role="3cqZAp">
-          <node concept="37vLTI" id="1Wcd$PdGVov" role="3clFbG">
-            <node concept="2ShNRf" id="1Wcd$PdGVwV" role="37vLTx">
-              <node concept="1pGfFk" id="1Wcd$PdGXQc" role="2ShVmc">
-                <ref role="37wK5l" to="33ny:~HashSet.&lt;init&gt;()" resolve="HashSet" />
-                <node concept="3uibUv" id="1Wcd$PdGY_O" role="1pMfVU">
-                  <ref role="3uigEE" to="qtrc:~Network" resolve="Network" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="1Wcd$PdGTtA" role="37vLTJ">
-              <node concept="Xjq3P" id="1Wcd$PdGS2F" role="2Oq$k0" />
-              <node concept="2OwXpG" id="1Wcd$PdGTRj" role="2OqNvi">
-                <ref role="2Oxat5" node="1Wcd$PdGEqS" resolve="tracingNetworks" />
               </node>
             </node>
           </node>
@@ -20185,96 +20127,6 @@
       <node concept="3cqZAl" id="5VMWdq5WuDK" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="5VMWdq5xRT0" role="jymVt" />
-    <node concept="3clFb_" id="6_du9upO6fW" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="restartTracing" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="6_du9upO6fZ" role="3clF47">
-        <node concept="3cpWs8" id="6_du9upOhS0" role="3cqZAp">
-          <node concept="3cpWsn" id="6_du9upOhS1" role="3cpWs9">
-            <property role="TrG5h" value="tracingNetworks" />
-            <node concept="3uibUv" id="6_du9upOhS2" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-              <node concept="3uibUv" id="6_du9upOhS3" role="11_B2D">
-                <ref role="3uigEE" to="qtrc:~Network" resolve="Network" />
-              </node>
-            </node>
-            <node concept="2ShNRf" id="6_du9upOhS4" role="33vP2m">
-              <node concept="1pGfFk" id="6_du9upOhS5" role="2ShVmc">
-                <ref role="37wK5l" to="33ny:~HashSet.&lt;init&gt;()" resolve="HashSet" />
-                <node concept="3uibUv" id="6_du9upOhS6" role="1pMfVU">
-                  <ref role="3uigEE" to="qtrc:~Network" resolve="Network" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2Gpval" id="6_du9upOhS7" role="3cqZAp">
-          <node concept="2GrKxI" id="6_du9upOhS8" role="2Gsz3X">
-            <property role="TrG5h" value="listener" />
-          </node>
-          <node concept="37vLTw" id="6_du9upOhS9" role="2GsD0m">
-            <ref role="3cqZAo" node="6_du9upOkBD" resolve="listeners" />
-          </node>
-          <node concept="3clFbS" id="6_du9upOhSa" role="2LFqv$">
-            <node concept="3clFbF" id="6_du9upOhSb" role="3cqZAp">
-              <node concept="2OqwBi" id="6_du9upOhSc" role="3clFbG">
-                <node concept="37vLTw" id="6_du9upOhSd" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6_du9upOhS1" resolve="tracingNetworks" />
-                </node>
-                <node concept="liA8E" id="6_du9upOhSe" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
-                  <node concept="2OqwBi" id="6_du9upOhSf" role="37wK5m">
-                    <node concept="2GrUjf" id="6_du9upOhSg" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="6_du9upOhS8" resolve="listener" />
-                    </node>
-                    <node concept="liA8E" id="6_du9upOhSh" role="2OqNvi">
-                      <ref role="37wK5l" node="1Wcd$PdFA3O" resolve="getNetwork" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2Gpval" id="6_du9upOhSi" role="3cqZAp">
-          <node concept="2GrKxI" id="6_du9upOhSj" role="2Gsz3X">
-            <property role="TrG5h" value="network" />
-          </node>
-          <node concept="37vLTw" id="6_du9upOhSk" role="2GsD0m">
-            <ref role="3cqZAo" node="6_du9upOhS1" resolve="tracingNetworks" />
-          </node>
-          <node concept="3clFbS" id="6_du9upOhSl" role="2LFqv$">
-            <node concept="3clFbF" id="6_du9upOhSm" role="3cqZAp">
-              <node concept="2OqwBi" id="6_du9upOhSn" role="3clFbG">
-                <node concept="2GrUjf" id="6_du9upOhSo" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="6_du9upOhSj" resolve="network" />
-                </node>
-                <node concept="liA8E" id="6_du9upOhSp" role="2OqNvi">
-                  <ref role="37wK5l" to="qtrc:~Network.restartTracing():void" resolve="restartTracing" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tmbuc" id="6_du9upO4QM" role="1B3o_S" />
-      <node concept="3cqZAl" id="6_du9upO6fT" role="3clF45" />
-      <node concept="37vLTG" id="6_du9upOkBD" role="3clF46">
-        <property role="TrG5h" value="listeners" />
-        <node concept="3uibUv" id="6_du9upOkBC" role="1tU5fm">
-          <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-          <node concept="3qUE_q" id="6_du9upOWfL" role="11_B2D">
-            <node concept="3uibUv" id="6_du9upOYB3" role="3qUE_r">
-              <ref role="3uigEE" node="1Wcd$PdFA1Y" resolve="IChangeListener" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6_du9upNMsA" role="jymVt" />
     <node concept="3clFb_" id="5VMWdq5xRT1" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="notifyInstanceListeners" />
@@ -20405,20 +20257,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="1Wcd$PdHM29" role="3cqZAp" />
-            <node concept="3SKdUt" id="6_du9upOZZ9" role="3cqZAp">
-              <node concept="3SKdUq" id="6_du9upOZZb" role="3SKWNk">
-                <property role="3SKdUp" value="TODO implement a more efficient way of maintaining the set of Networks that should restart the tracing" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="6_du9upOQac" role="3cqZAp">
-              <node concept="1rXfSq" id="6_du9upOQaa" role="3clFbG">
-                <ref role="37wK5l" node="6_du9upO6fW" resolve="restartTracing" />
-                <node concept="37vLTw" id="6_du9upORi9" role="37wK5m">
-                  <ref role="3cqZAo" node="5VMWdq693KF" resolve="listeners" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="1Wcd$PdHMgh" role="3cqZAp" />
             <node concept="2Gpval" id="5VMWdq5xRT3" role="3cqZAp">
               <node concept="2GrKxI" id="5VMWdq5xRT4" role="2Gsz3X">
                 <property role="TrG5h" value="listener" />
@@ -20663,20 +20501,6 @@
               <node concept="10M0yZ" id="2QaRsZwbQ$f" role="3clFbw">
                 <ref role="1PxDUh" node="2R_7gpXUKQk" resolve="DebugProperties" />
                 <ref role="3cqZAo" node="1gckXeMyQ82" resolve="debugMode" />
-              </node>
-            </node>
-            <node concept="3clFbH" id="6_du9upP0e3" role="3cqZAp" />
-            <node concept="3SKdUt" id="6_du9upP0um" role="3cqZAp">
-              <node concept="3SKdUq" id="6_du9upP0un" role="3SKWNk">
-                <property role="3SKdUp" value="TODO implement a more efficient way of maintaining the set of Networks that should restart the tracing" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="6_du9upP0uo" role="3cqZAp">
-              <node concept="1rXfSq" id="6_du9upP0up" role="3clFbG">
-                <ref role="37wK5l" node="6_du9upO6fW" resolve="restartTracing" />
-                <node concept="37vLTw" id="6_du9upP0uq" role="37wK5m">
-                  <ref role="3cqZAo" node="5VMWdq698Vi" resolve="listeners" />
-                </node>
               </node>
             </node>
             <node concept="3clFbH" id="2TRt8GaIOIL" role="3cqZAp" />
@@ -20936,20 +20760,6 @@
               <node concept="10M0yZ" id="2QaRsZwbR3A" role="3clFbw">
                 <ref role="1PxDUh" node="2R_7gpXUKQk" resolve="DebugProperties" />
                 <ref role="3cqZAo" node="1gckXeMyQ82" resolve="debugMode" />
-              </node>
-            </node>
-            <node concept="3clFbH" id="6_du9upP1OF" role="3cqZAp" />
-            <node concept="3SKdUt" id="6_du9upP24A" role="3cqZAp">
-              <node concept="3SKdUq" id="6_du9upP24B" role="3SKWNk">
-                <property role="3SKdUp" value="TODO implement a more efficient way of maintaining the set of Networks that should restart the tracing" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="6_du9upP24C" role="3cqZAp">
-              <node concept="1rXfSq" id="6_du9upP24D" role="3clFbG">
-                <ref role="37wK5l" node="6_du9upO6fW" resolve="restartTracing" />
-                <node concept="37vLTw" id="6_du9upP24E" role="37wK5m">
-                  <ref role="3cqZAo" node="5VMWdq69dvL" resolve="listeners" />
-                </node>
               </node>
             </node>
             <node concept="3clFbH" id="2TRt8GaIRL2" role="3cqZAp" />
@@ -23185,7 +22995,125 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="26S5csTd3zE" role="jymVt" />
+    <node concept="2tJIrI" id="epUjMGAIbV" role="jymVt" />
+    <node concept="3clFb_" id="epUjMGB8Ga" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="deliverAllDelayedUpdates" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="epUjMGB8Gd" role="3clF47">
+        <node concept="2Gpval" id="epUjMGBub0" role="3cqZAp">
+          <node concept="2GrKxI" id="epUjMGBub2" role="2Gsz3X">
+            <property role="TrG5h" value="listener" />
+          </node>
+          <node concept="2OqwBi" id="epUjMGBwzb" role="2GsD0m">
+            <node concept="2OqwBi" id="epUjMGBuK9" role="2Oq$k0">
+              <node concept="Xjq3P" id="epUjMGBuza" role="2Oq$k0" />
+              <node concept="2OwXpG" id="epUjMGBvgR" role="2OqNvi">
+                <ref role="2Oxat5" node="5VMWdq5xR_j" resolve="instanceListeners" />
+              </node>
+            </node>
+            <node concept="liA8E" id="epUjMGBxHM" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Map.keySet():java.util.Set" resolve="keySet" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="epUjMGBub6" role="2LFqv$">
+            <node concept="3clFbF" id="epUjMGBy1t" role="3cqZAp">
+              <node concept="2OqwBi" id="epUjMGByPN" role="3clFbG">
+                <node concept="2OqwBi" id="epUjMGBy9O" role="2Oq$k0">
+                  <node concept="2GrUjf" id="epUjMGBy1r" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="epUjMGBub2" resolve="listener" />
+                  </node>
+                  <node concept="liA8E" id="epUjMGBynN" role="2OqNvi">
+                    <ref role="37wK5l" node="epUjMGAjxU" resolve="getQueryRuntimeContextListener" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="epUjMGB$Cv" role="2OqNvi">
+                  <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.deliverAll():void" resolve="deliverAll" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="epUjMGB_3P" role="3cqZAp">
+          <node concept="2GrKxI" id="epUjMGB_3Q" role="2Gsz3X">
+            <property role="TrG5h" value="listener" />
+          </node>
+          <node concept="2OqwBi" id="epUjMGB_3R" role="2GsD0m">
+            <node concept="2OqwBi" id="epUjMGB_3S" role="2Oq$k0">
+              <node concept="Xjq3P" id="epUjMGB_3T" role="2Oq$k0" />
+              <node concept="2OwXpG" id="epUjMGBCmx" role="2OqNvi">
+                <ref role="2Oxat5" node="5VMWdq5xR_v" resolve="conceptFeatureListeners" />
+              </node>
+            </node>
+            <node concept="liA8E" id="epUjMGB_3V" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Map.keySet():java.util.Set" resolve="keySet" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="epUjMGB_3W" role="2LFqv$">
+            <node concept="3clFbF" id="epUjMGB_3X" role="3cqZAp">
+              <node concept="2OqwBi" id="epUjMGB_3Y" role="3clFbG">
+                <node concept="2OqwBi" id="epUjMGB_3Z" role="2Oq$k0">
+                  <node concept="2GrUjf" id="epUjMGB_40" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="epUjMGB_3Q" resolve="listener" />
+                  </node>
+                  <node concept="liA8E" id="epUjMGB_41" role="2OqNvi">
+                    <ref role="37wK5l" node="epUjMGAjxU" resolve="getQueryRuntimeContextListener" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="epUjMGB_42" role="2OqNvi">
+                  <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.deliverAll():void" resolve="deliverAll" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="epUjMGB_4V" role="3cqZAp">
+          <node concept="2GrKxI" id="epUjMGB_4W" role="2Gsz3X">
+            <property role="TrG5h" value="listener" />
+          </node>
+          <node concept="2OqwBi" id="epUjMGB_4X" role="2GsD0m">
+            <node concept="2OqwBi" id="epUjMGB_4Y" role="2Oq$k0">
+              <node concept="Xjq3P" id="epUjMGB_4Z" role="2Oq$k0" />
+              <node concept="2OwXpG" id="epUjMGBDu4" role="2OqNvi">
+                <ref role="2Oxat5" node="5VMWdq5xR_p" resolve="dataTypeListeners" />
+              </node>
+            </node>
+            <node concept="liA8E" id="epUjMGB_51" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Map.keySet():java.util.Set" resolve="keySet" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="epUjMGB_52" role="2LFqv$">
+            <node concept="3clFbF" id="epUjMGB_53" role="3cqZAp">
+              <node concept="2OqwBi" id="epUjMGB_54" role="3clFbG">
+                <node concept="2OqwBi" id="epUjMGB_55" role="2Oq$k0">
+                  <node concept="2GrUjf" id="epUjMGB_56" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="epUjMGB_4W" resolve="listener" />
+                  </node>
+                  <node concept="liA8E" id="epUjMGB_57" role="2OqNvi">
+                    <ref role="37wK5l" node="epUjMGAjxU" resolve="getQueryRuntimeContextListener" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="epUjMGB_58" role="2OqNvi">
+                  <ref role="37wK5l" to="4v9i:~IQueryRuntimeContextListener.deliverAll():void" resolve="deliverAll" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="epUjMGAWmP" role="1B3o_S" />
+      <node concept="3cqZAl" id="epUjMGB7Qv" role="3clF45" />
+      <node concept="P$JXv" id="epUjMGBkiF" role="lGtFl">
+        <node concept="TZ5HA" id="epUjMGBkiG" role="TZ5H$">
+          <node concept="1dT_AC" id="epUjMGBkiH" role="1dT_Ay">
+            <property role="1dT_AB" value="EXPERIMENTAL" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="epUjMGAKUz" role="jymVt" />
     <node concept="3clFb_" id="26S5csTeBv9" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="addInstanceObserver" />
@@ -28142,6 +28070,18 @@
       <node concept="3Tm1VV" id="1Wcd$PdFA3S" role="1B3o_S" />
       <node concept="3uibUv" id="1Wcd$PdFA3I" role="3clF45">
         <ref role="3uigEE" to="qtrc:~Network" resolve="Network" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="epUjMGAjxU" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getQueryRuntimeContextListener" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="epUjMGAjxV" role="3clF47" />
+      <node concept="3Tm1VV" id="epUjMGAjy0" role="1B3o_S" />
+      <node concept="3uibUv" id="epUjMGAjy1" role="3clF45">
+        <ref role="3uigEE" to="4v9i:~IQueryRuntimeContextListener" resolve="IQueryRuntimeContextListener" />
       </node>
     </node>
     <node concept="2tJIrI" id="1Wcd$PdFA2K" role="jymVt" />
