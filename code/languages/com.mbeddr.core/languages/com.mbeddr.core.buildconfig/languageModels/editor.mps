@@ -104,7 +104,6 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
-      <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="8998492695583125082" name="jetbrains.mps.lang.editor.structure.SubstituteFeature_MatchingText" flags="ng" index="16NfWO">
         <child id="8998492695583129244" name="query" index="16NeZM" />
       </concept>
@@ -2370,7 +2369,6 @@
         </node>
       </node>
       <node concept="l2Vlx" id="51p726VIDRn" role="2iSdaV" />
-      <node concept="35HoNQ" id="2LP1MbL62FQ" role="3EZMnx" />
       <node concept="3F0ifn" id="2LP1MbL635F" role="3EZMnx">
         <property role="3F0ifm" value="target:" />
       </node>
@@ -2378,7 +2376,6 @@
         <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="51wr:2LP1MbL7tWP" resolve="target" />
       </node>
-      <node concept="35HoNQ" id="2LP1MbL63R8" role="3EZMnx" />
       <node concept="3F0ifn" id="2LP1MbL64hl" role="3EZMnx">
         <property role="3F0ifm" value="options:" />
       </node>
