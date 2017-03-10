@@ -1059,12 +1059,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="vOGyTeLW2s" role="3bR37C">
-          <node concept="3bR9La" id="vOGyTeLW2t" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeLNYF" resolve="com.mbeddr.mpsutil.ecoreimporter.testing.runtime" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="vOGyTeLW2u" role="3bR37C">
           <node concept="3bR9La" id="vOGyTeLW2v" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -1099,6 +1093,12 @@
           <node concept="3bR9La" id="vOGyTeMsg1" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="vOGyTeKpB6" resolve="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="40u8E9tTruz" role="3bR37C">
+          <node concept="3bR9La" id="40u8E9tTru$" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="lse_ua97Px" resolve="com.mbeddr.mpsutil.smodule.runtime" />
           </node>
         </node>
       </node>
