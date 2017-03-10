@@ -8131,7 +8131,7 @@
       </node>
       <node concept="3zV_Rz" id="ziWFuXunhl" role="3zVECR">
         <node concept="1XdyHb" id="7sJixMGbE2h" role="1dgzf0">
-          <property role="1dubkF" value="MUST NOT DEFINE A SEPARATE getIntervalAt BECAUSE IT WOULD INTRODUCE A NOT-STRATIFIED NEGATION" />
+          <property role="1dubkF" value="MUST NOT DEFINE A SEPARATE getIntervalAt BECAUSE IT WOULD INTRODUCE A NON-STRATIFIED NEGATION" />
         </node>
         <node concept="34odk1" id="7sJixMGbn3z" role="1dgzf0">
           <node concept="2k1GkI" id="7sJixMGbn3$" role="34ocZk">

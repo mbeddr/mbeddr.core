@@ -52,6 +52,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.extended/test.ts.core.extended.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.performance/test.ts.core.performance.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core/core.msd" folder="tests" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.mpsutil.inca/benchmark/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
     </projectModules>
   </component>
 </project>
