@@ -29,9 +29,8 @@
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="19h7" ref="r:c367b380-739b-4331-a16f-a542455fc0c8(de.itemis.mps.editor.math.editor)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" implicit="true" />
-    <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -42,9 +41,6 @@
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
-      </concept>
-      <concept id="6029276237631252951" name="jetbrains.mps.lang.editor.structure.StyleAttributeReferenceExpression" flags="ng" index="1Z6Ecs">
-        <reference id="6029276237631253682" name="attributeDeclaration" index="1Z6EpT" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1209,33 +1205,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="jgTeXiA0Jc" role="3cqZAp">
-            <node concept="2OqwBi" id="jgTeXiA0Tx" role="3clFbG">
-              <node concept="2rujPq" id="jgTeXiA0Ja" role="2Oq$k0" />
-              <node concept="liA8E" id="jgTeXiA1kO" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
-                <node concept="2OqwBi" id="3p9Oys9W59K" role="37wK5m">
-                  <node concept="2OqwBi" id="3p9Oys9W59L" role="2Oq$k0">
-                    <node concept="2OqwBi" id="3p9Oys9W59M" role="2Oq$k0">
-                      <node concept="2qxVH0" id="4yYSJc$Zh8t" role="2Oq$k0" />
-                      <node concept="liA8E" id="3p9Oys9W59O" role="2OqNvi">
-                        <ref role="37wK5l" to="5nlq:43EHXy6GUHD" resolve="getEditorCell" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="3p9Oys9W59P" role="2OqNvi">
-                      <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="3p9Oys9W59Q" role="2OqNvi">
-                    <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
-                    <node concept="1Z6Ecs" id="7$IFRLyj2Jv" role="37wK5m">
-                      <ref role="1Z6EpT" to="19h7:7$IFRLyfD3F" resolve="math-symbol-color" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbF" id="70CVChR6dFt" role="3cqZAp">
             <node concept="2OqwBi" id="70CVChR6dH6" role="3clFbG">
               <node concept="2rujPq" id="70CVChR6dFs" role="2Oq$k0" />
@@ -1922,33 +1891,6 @@
       </node>
       <node concept="2qw2Hj" id="70CVChQO_aU" role="2qxizv">
         <node concept="3clFbS" id="70CVChQO_aV" role="2VODD2">
-          <node concept="3clFbF" id="jgTeXiD$jc" role="3cqZAp">
-            <node concept="2OqwBi" id="jgTeXiD$De" role="3clFbG">
-              <node concept="2rujPq" id="jgTeXiD$ja" role="2Oq$k0" />
-              <node concept="liA8E" id="jgTeXiD__x" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
-                <node concept="2OqwBi" id="jgTeXiD_AF" role="37wK5m">
-                  <node concept="2OqwBi" id="jgTeXiD_AG" role="2Oq$k0">
-                    <node concept="2OqwBi" id="jgTeXiD_AH" role="2Oq$k0">
-                      <node concept="2qxVH0" id="4yYSJc$ZoMc" role="2Oq$k0" />
-                      <node concept="liA8E" id="jgTeXiD_AJ" role="2OqNvi">
-                        <ref role="37wK5l" to="5nlq:43EHXy6GUHD" resolve="getEditorCell" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="jgTeXiD_AK" role="2OqNvi">
-                      <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="jgTeXiD_AL" role="2OqNvi">
-                    <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
-                    <node concept="1Z6Ecs" id="7$IFRLyj5BG" role="37wK5m">
-                      <ref role="1Z6EpT" to="19h7:7$IFRLyfD3F" resolve="math-symbol-color" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="3KcuzkVegRH" role="3cqZAp">
             <node concept="3cpWsn" id="3KcuzkVegRI" role="3cpWs9">
               <property role="TrG5h" value="bodyBounds" />
