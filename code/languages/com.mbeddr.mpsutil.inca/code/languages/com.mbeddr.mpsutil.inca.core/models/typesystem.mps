@@ -21,6 +21,7 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2190,22 +2191,17 @@
           </node>
         </node>
         <node concept="mw_s8" id="6zcQa_EYD7E" role="1ZfhKB">
-          <node concept="2pJPEk" id="6zcQa_EYD7F" role="mwGJk">
-            <node concept="2pJPED" id="6zcQa_EYD7G" role="2pJPEn">
-              <ref role="2pJxaS" to="tp25:gzTqbfa" resolve="SNodeType" />
-              <node concept="2pIpSj" id="3Ql53yE9_jr" role="2pJxcM">
-                <ref role="2pIpSl" to="tp25:g$ehGDh" resolve="concept" />
-                <node concept="36biLy" id="3Ql53yE9AU2" role="2pJxcZ">
-                  <node concept="2OqwBi" id="6zcQa_EYD7J" role="36biLW">
-                    <node concept="1YBJjd" id="6zcQa_EYD7K" role="2Oq$k0">
-                      <ref role="1YBMHb" node="4m2T58r5DR7" resolve="constraint" />
-                    </node>
-                    <node concept="3TrEf2" id="6zcQa_EYD7L" role="2OqNvi">
-                      <ref role="3Tt5mk" to="hqsm:4QgsNmKLLBx" resolve="type" />
-                    </node>
-                  </node>
-                </node>
+          <node concept="2OqwBi" id="5xvu2kRz7Md" role="mwGJk">
+            <node concept="2OqwBi" id="5xvu2kRz7nY" role="2Oq$k0">
+              <node concept="1YBJjd" id="5xvu2kRz7fy" role="2Oq$k0">
+                <ref role="1YBMHb" node="4m2T58r5DR7" resolve="constraint" />
               </node>
+              <node concept="3TrEf2" id="5xvu2kRz7yY" role="2OqNvi">
+                <ref role="3Tt5mk" to="hqsm:7a3nU35cEKQ" resolve="type" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5xvu2kRz7W9" role="2OqNvi">
+              <ref role="37wK5l" to="gcg1:6VTlRjrHmoa" resolve="asType" />
             </node>
           </node>
         </node>
@@ -3301,6 +3297,46 @@
     <node concept="1YaCAy" id="3k78NV$iqlK" role="1YuTPh">
       <property role="TrG5h" value="aggregator" />
       <ref role="1YaFvo" to="hqsm:RjyNapPtNI" resolve="CountAggregator" />
+    </node>
+  </node>
+  <node concept="35pCF_" id="5xvu2kSKy$u">
+    <property role="3GE5qa" value="content" />
+    <property role="TrG5h" value="ConceptReferenceType_SubTyping" />
+    <node concept="1YaCAy" id="5xvu2kSKy$T" role="35pZ6h">
+      <property role="TrG5h" value="sup" />
+      <ref role="1YaFvo" to="hqsm:RjyNapTFLl" resolve="ConceptReferenceType" />
+    </node>
+    <node concept="3clFbS" id="5xvu2kSKy$w" role="2sgrp5" />
+    <node concept="1YaCAy" id="5xvu2kSKy$y" role="1YuTPh">
+      <property role="TrG5h" value="sub" />
+      <ref role="1YaFvo" to="hqsm:RjyNapTFLl" resolve="ConceptReferenceType" />
+    </node>
+    <node concept="1xSnZT" id="5xvu2kSKyAD" role="1xSnZW">
+      <node concept="3clFbS" id="5xvu2kSKyAE" role="2VODD2">
+        <node concept="3cpWs6" id="5xvu2kSKyHW" role="3cqZAp">
+          <node concept="2OqwBi" id="5xvu2kSKzLJ" role="3cqZAk">
+            <node concept="2OqwBi" id="5xvu2kSKyVY" role="2Oq$k0">
+              <node concept="1YBJjd" id="5xvu2kSKyIa" role="2Oq$k0">
+                <ref role="1YBMHb" node="5xvu2kSKy$y" resolve="sub" />
+              </node>
+              <node concept="3TrEf2" id="5xvu2kSKzk1" role="2OqNvi">
+                <ref role="3Tt5mk" to="hqsm:6hXIxNuN5nr" resolve="concept" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5xvu2kSK$Yf" role="2OqNvi">
+              <ref role="37wK5l" to="tpcn:73yVtVlWOga" resolve="isSubconceptOf" />
+              <node concept="2OqwBi" id="5xvu2kSK_p1" role="37wK5m">
+                <node concept="1YBJjd" id="5xvu2kSK_aX" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5xvu2kSKy$T" resolve="sup" />
+                </node>
+                <node concept="3TrEf2" id="5xvu2kSK_Ii" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hqsm:6hXIxNuN5nr" resolve="concept" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

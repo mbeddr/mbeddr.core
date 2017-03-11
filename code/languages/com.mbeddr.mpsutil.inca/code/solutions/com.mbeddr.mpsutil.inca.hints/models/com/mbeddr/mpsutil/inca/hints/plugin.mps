@@ -245,7 +245,9 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -965,7 +967,7 @@
                     <node concept="3cpWsn" id="59fzZVN5QWB" role="3cpWs9">
                       <property role="TrG5h" value="type" />
                       <node concept="3Tqbb2" id="59fzZVN5QUX" role="1tU5fm">
-                        <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IVariableType" />
+                        <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
                       </node>
                       <node concept="2OqwBi" id="59fzZVN5QWC" role="33vP2m">
                         <node concept="2GrUjf" id="59fzZVN5QWD" role="2Oq$k0">
@@ -2318,12 +2320,21 @@
               <node concept="2YIFZM" id="49V02wiZPc7" role="3cqZAk">
                 <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
                 <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
-                <node concept="2OqwBi" id="49V02wiZPc8" role="37wK5m">
-                  <node concept="37vLTw" id="49V02wiZPc9" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3sUe9pq72Xm" resolve="constraint" />
+                <node concept="2OqwBi" id="5xvu2kStpvI" role="37wK5m">
+                  <node concept="1PxgMI" id="5xvu2kStpvJ" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
+                    <ref role="1m5ApE" to="hqsm:RjyNapTFLl" resolve="ConceptReferenceType" />
+                    <node concept="2OqwBi" id="5xvu2kStpvK" role="1m5AlR">
+                      <node concept="37vLTw" id="5xvu2kStpvL" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3sUe9pq72Xm" resolve="constraint" />
+                      </node>
+                      <node concept="3TrEf2" id="5xvu2kStqg3" role="2OqNvi">
+                        <ref role="3Tt5mk" to="hqsm:7a3nU35cEKQ" resolve="type" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="3TrEf2" id="49V02wiZPca" role="2OqNvi">
-                    <ref role="3Tt5mk" to="hqsm:4QgsNmKLLBx" resolve="type" />
+                  <node concept="3TrEf2" id="5xvu2kStpvN" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hqsm:6hXIxNuN5nr" resolve="concept" />
                   </node>
                 </node>
               </node>
@@ -2600,12 +2611,21 @@
               <node concept="2YIFZM" id="49V02wiZLek" role="3cqZAk">
                 <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
                 <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
-                <node concept="2OqwBi" id="49V02wiZMbZ" role="37wK5m">
-                  <node concept="37vLTw" id="49V02wiZLNW" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3sUe9pq91az" resolve="constraint" />
+                <node concept="2OqwBi" id="5xvu2kStmHq" role="37wK5m">
+                  <node concept="1PxgMI" id="5xvu2kStkbG" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
+                    <ref role="1m5ApE" to="hqsm:RjyNapTFLl" resolve="ConceptReferenceType" />
+                    <node concept="2OqwBi" id="49V02wiZMbZ" role="1m5AlR">
+                      <node concept="37vLTw" id="49V02wiZLNW" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3sUe9pq91az" resolve="constraint" />
+                      </node>
+                      <node concept="3TrEf2" id="5xvu2kSdz9F" role="2OqNvi">
+                        <ref role="3Tt5mk" to="55iy:5xvu2kRR5GP" resolve="type" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="3TrEf2" id="49V02wiZM_G" role="2OqNvi">
-                    <ref role="3Tt5mk" to="55iy:RjyNapTDhB" resolve="type" />
+                  <node concept="3TrEf2" id="5xvu2kStojC" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hqsm:6hXIxNuN5nr" resolve="concept" />
                   </node>
                 </node>
               </node>

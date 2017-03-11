@@ -157,9 +157,13 @@
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
     </language>
   </registry>
   <node concept="312cEu" id="4gUX5LzYvDc">
@@ -528,6 +532,7 @@
               <property role="3cmrfH" value="1" />
             </node>
           </node>
+          <node concept="15s5l7" id="3EYziaXqSLa" role="lGtFl" />
         </node>
       </node>
       <node concept="3Tm1VV" id="62ABz02Sw7r" role="1B3o_S" />
