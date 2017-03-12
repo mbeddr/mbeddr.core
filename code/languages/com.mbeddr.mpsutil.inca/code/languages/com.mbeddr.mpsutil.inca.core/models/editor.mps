@@ -2597,11 +2597,11 @@
   </node>
   <node concept="24kQdi" id="7a3nU34ZPBt">
     <property role="3GE5qa" value="content" />
-    <ref role="1XX52x" to="hqsm:7a3nU354JVn" resolve="IMeetTypeDef" />
+    <ref role="1XX52x" to="hqsm:7a3nU354JVn" resolve="IJoinTypeDef" />
     <node concept="3EZMnI" id="7a3nU34ZPBJ" role="2wV5jI">
       <node concept="l2Vlx" id="7a3nU34ZPBK" role="2iSdaV" />
       <node concept="3F0ifn" id="7a3nU34ZPBv" role="3EZMnx">
-        <property role="3F0ifm" value="meet type" />
+        <property role="3F0ifm" value="join type" />
         <ref role="1k5W1q" to="3sc9:2CEi94dgHKA" resolve="KeyWord" />
       </node>
       <node concept="3F0A7n" id="7a3nU34ZPBY" role="3EZMnx">
@@ -2628,14 +2628,45 @@
   </node>
   <node concept="24kQdi" id="7a3nU34ZPCZ">
     <property role="3GE5qa" value="type" />
-    <ref role="1XX52x" to="hqsm:7a3nU34ZPCK" resolve="MeetType" />
+    <ref role="1XX52x" to="hqsm:7a3nU34ZPCK" resolve="JoinType" />
     <node concept="1iCGBv" id="7a3nU34ZPD1" role="2wV5jI">
-      <ref role="1NtTu8" to="hqsm:7a3nU34ZPCO" resolve="meetTypeDef" />
+      <ref role="1NtTu8" to="hqsm:7a3nU34ZPCO" resolve="joinTypeDef" />
       <ref role="1k5W1q" to="3sc9:7tOfV2_EoPv" resolve="Type" />
       <node concept="1sVBvm" id="7a3nU34ZPD3" role="1sWHZn">
         <node concept="3F0A7n" id="7a3nU34ZPDd" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1UJP1A0VCI4">
+    <property role="3GE5qa" value="type" />
+    <ref role="1XX52x" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
+    <node concept="3EZMnI" id="1UJP1A0VCI9" role="2wV5jI">
+      <node concept="l2Vlx" id="1UJP1A0VCIa" role="2iSdaV" />
+      <node concept="3F0ifn" id="1UJP1A0VCI6" role="3EZMnx">
+        <property role="3F0ifm" value="join&lt;" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+        <node concept="11LMrY" id="1UJP1A0VS_D" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="1UJP1A0VCIi" role="3EZMnx">
+        <ref role="1NtTu8" to="hqsm:1UJP1A0VCHU" resolve="joinTypeDef" />
+        <node concept="1sVBvm" id="1UJP1A0VCIk" role="1sWHZn">
+          <node concept="3F0A7n" id="1UJP1A0VCIs" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" to="3sc9:7tOfV2_EoPv" resolve="Type" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1UJP1A0VCI_" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+        <node concept="11L4FC" id="1UJP1A0VSzW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>
