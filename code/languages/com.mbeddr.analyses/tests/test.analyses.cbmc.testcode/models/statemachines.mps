@@ -65,7 +65,6 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
-        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -76,7 +75,6 @@
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
-      <concept id="348741627182093743" name="com.mbeddr.analyses.cbmc.structure.CProverPlatform" flags="ng" index="22gAW6" />
       <concept id="8985851583396614966" name="com.mbeddr.analyses.cbmc.structure.GuardedNonDeterministicChoice" flags="ng" index="2c2bHh">
         <child id="8985851583396614967" name="guardedCalls" index="2c2bHg" />
       </concept>
@@ -295,13 +293,12 @@
         <ref role="2v9HqP" node="7Tdla9PMVzv" resolve="TestJunction" />
       </node>
     </node>
-    <node concept="22gAW6" id="7HHIhkjaqUU" role="2AWWZH">
-      <property role="2AWWZJ" value="goto-cc" />
+    <node concept="2AWWZL" id="1Pjz7EgI0Nm" role="2AWWZH">
+      <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
-      <property role="3I8uaA" value="" />
     </node>
   </node>
   <node concept="N3F5e" id="55cMrg_7EZZ">
@@ -1079,7 +1076,7 @@
       <ref role="1W1s6P" node="3oU9lB0JA4Q" resolve="Simple" />
     </node>
     <node concept="1W1s6O" id="7Tdla9PMWaU" role="3V$2$K">
-      <property role="2lelRm" value="false" />
+      <property role="2lelRm" value="true" />
       <property role="2lUGe1" value="true" />
       <property role="2l50Lc" value="false" />
       <property role="22uFEx" value="false" />
