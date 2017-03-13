@@ -414,8 +414,8 @@
     </node>
     <node concept="1TJgyj" id="6_CUGSFJ0IW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20kJfa" value="targets" />
+      <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="7595578942778248124" />
       <ref role="20lvS9" node="5ak6HMA0Ext" resolve="Target" />
     </node>
