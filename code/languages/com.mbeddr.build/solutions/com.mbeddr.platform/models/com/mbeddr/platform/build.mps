@@ -9573,6 +9573,15 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7YLbEQvciH9" role="3bR37C">
+          <node concept="3bR9La" id="7YLbEQvciHa" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="7YLbEQvgyh2" role="1E1XAP">
+          <ref role="1E0d5P" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+        </node>
       </node>
       <node concept="1E1JtA" id="5FJiYrlOTtx" role="2G$12L">
         <property role="BnDLt" value="true" />
