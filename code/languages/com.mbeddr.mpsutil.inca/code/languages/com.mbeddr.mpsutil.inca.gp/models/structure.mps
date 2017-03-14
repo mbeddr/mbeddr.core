@@ -8,7 +8,6 @@
   <imports>
     <import index="hqsm" ref="r:aa4c3470-43ab-4dad-b73e-20da0ee43be1(com.mbeddr.mpsutil.inca.core.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -150,21 +149,18 @@
       <property role="IQ2ns" value="1925259677761394831" />
       <ref role="20lvS9" to="hqsm:1ERTnBTmuSC" resolve="IPathElement" />
     </node>
-    <node concept="1TJgyj" id="RjyNapTDhB" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
+    <node concept="1TJgyj" id="5xvu2kRR5GP" role="1TKVEi">
+      <property role="IQ2ns" value="6367940499371481909" />
+      <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="996292992025662567" />
-      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+      <ref role="20lvS9" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
     </node>
     <node concept="PrWs8" id="1i65yRAVowI" role="PzmwI">
       <ref role="PrY4T" to="hqsm:1i65yRATv5I" resolve="ITypeConstraintProvider" />
     </node>
     <node concept="PrWs8" id="5luHlsCpmwL" role="PzmwI">
       <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
-    </node>
-    <node concept="PrWs8" id="nrkjVh51fX" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
     <node concept="PrWs8" id="3ybyOPMBcB3" role="PzmwI">
       <ref role="PrY4T" to="hqsm:3ybyOPMBaDy" resolve="IPathExpressionLike" />
@@ -199,7 +195,6 @@
   <node concept="1TIwiD" id="5Dmozv0zaht">
     <property role="3GE5qa" value="constraints" />
     <property role="TrG5h" value="GraphPatternConceptConstraint" />
-    <property role="34LRSv" value="&lt;{type}&gt;" />
     <property role="R4oN_" value="Concept Constraint" />
     <property role="EcuMT" value="6509498303003796573" />
     <ref role="1TJDcQ" to="hqsm:4QgsNmKLL_q" resolve="ConceptConstraint" />
@@ -215,9 +210,6 @@
     <ref role="1TJDcQ" to="hqsm:RjyNapPkSb" resolve="CompareConstraint" />
     <node concept="PrWs8" id="5luHlsCpmwD" role="PzmwI">
       <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
-    </node>
-    <node concept="PrWs8" id="62ABz02UgVZ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="PlHQZ" id="5luHlsCpmwA">
@@ -249,9 +241,6 @@
     </node>
     <node concept="PrWs8" id="5luHlsCrwOB" role="PzmwI">
       <ref role="PrY4T" node="5luHlsCrwig" resolve="IGraphPatternModuleContent" />
-    </node>
-    <node concept="PrWs8" id="5luHlsCrxf3" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="5luHlsCq9Ss">
@@ -299,9 +288,6 @@
     </node>
     <node concept="PrWs8" id="4YtCEG_OXMA" role="PzmwI">
       <ref role="PrY4T" node="5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
-    </node>
-    <node concept="PrWs8" id="4YtCEG_OXNk" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="3p0ky8Li2E$">
