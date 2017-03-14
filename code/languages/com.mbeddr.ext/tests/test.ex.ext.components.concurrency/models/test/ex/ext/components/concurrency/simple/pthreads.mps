@@ -118,7 +118,7 @@
     <node concept="2eOfOl" id="3xRFG9PQKjc" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="TwoTasks" />
-      <ref role="3oK8_y" node="4LhGMnjpRcJ" resolve="portable" />
+      <ref role="3oK8_y" node="4LhGMnjpRcI" resolve="Linux" />
       <node concept="2v9HqM" id="3qlQk_ggWAG" role="2eOfOg">
         <ref role="2v9HqP" to="boqp:3Xsb2sPPkKA" resolve="twoTasks" />
       </node>
