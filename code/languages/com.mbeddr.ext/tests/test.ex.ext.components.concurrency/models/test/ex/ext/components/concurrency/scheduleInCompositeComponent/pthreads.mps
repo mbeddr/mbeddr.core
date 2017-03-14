@@ -98,7 +98,7 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I/usr/include -pthread" />
+      <property role="2AWWZI" value="-std=gnu99 -I/usr/include -pthread" />
       <property role="1FkSt$" value="-g  -I/usr/include/" />
       <property role="3I8uaA" value="" />
       <node concept="3abb7c" id="4LhGMnjpRd0" role="3anu1O">
