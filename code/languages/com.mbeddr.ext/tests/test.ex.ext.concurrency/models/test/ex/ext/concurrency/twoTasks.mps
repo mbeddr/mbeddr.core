@@ -532,9 +532,9 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I/usr/include -pthread" />
+      <property role="2AWWZI" value="-std=gnu99 -I/usr/include" />
       <property role="1FkSt$" value="-g  -I/usr/include/" />
-      <property role="3I8uaA" value="" />
+      <property role="3I8uaA" value="-pthread" />
       <node concept="3abb7c" id="4LhGMnjpR8C" role="3anu1O">
         <property role="TrG5h" value="Win32" />
       </node>
@@ -551,7 +551,7 @@
     <node concept="2eOfOl" id="3xRFG9PQKjc" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="TwoTasks" />
-      <ref role="3oK8_y" node="4LhGMnjpR8F" resolve="portable" />
+      <ref role="3oK8_y" node="4LhGMnjpR8E" resolve="Linux" />
       <node concept="2v9HqM" id="3xRFG9PQU8k" role="2eOfOg">
         <ref role="2v9HqP" node="3xRFG9PQKhB" resolve="TwoTasks" />
       </node>
