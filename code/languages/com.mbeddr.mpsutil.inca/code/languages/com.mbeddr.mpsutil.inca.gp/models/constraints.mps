@@ -12,7 +12,6 @@
     <import index="hqsm" ref="r:aa4c3470-43ab-4dad-b73e-20da0ee43be1(com.mbeddr.mpsutil.inca.core.structure)" />
     <import index="gcg1" ref="r:d6f14cc5-a2a7-4aaf-8f86-e35059edbf3b(com.mbeddr.mpsutil.inca.core.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="zt8v" ref="r:ab008189-f07c-44e4-9434-629f972e973d(com.mbeddr.mpsutil.inca.core.util.plugin)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -23,9 +22,6 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
-      </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -148,26 +144,41 @@
     <ref role="1M2myG" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
     <node concept="osYL8" id="5luHlsCpmx0" role="1MLXOK">
       <node concept="3clFbS" id="5luHlsCpmx1" role="2VODD2">
-        <node concept="3SKdUt" id="4YtCEG_OVGj" role="3cqZAp">
-          <node concept="3SKdUq" id="4YtCEG_OVGl" role="3SKWNk">
-            <property role="3SKdUp" value="the second part is required for the compare constraint to be able to wrap" />
+        <node concept="3SKdUt" id="5xvu2kSFllv" role="3cqZAp">
+          <node concept="3SKdUq" id="5xvu2kSFllx" role="3SKWNk">
+            <property role="3SKdUp" value="second condition - compare constraint wrapping" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="5xvu2kSFlGB" role="3cqZAp">
+          <node concept="3SKdUq" id="5xvu2kSFlGD" role="3SKWNk">
+            <property role="3SKdUp" value="third condition - concept constraint wrapping" />
           </node>
         </node>
         <node concept="3cpWs6" id="5luHlsCrJDB" role="3cqZAp">
-          <node concept="22lmx$" id="4YtCEG_ORDY" role="3cqZAk">
-            <node concept="2OqwBi" id="4YtCEG_OUKG" role="3uHU7w">
-              <node concept="otxO1" id="4YtCEG_OUzS" role="2Oq$k0" />
-              <node concept="2Zo12i" id="4YtCEG_OVdE" role="2OqNvi">
-                <node concept="chp4Y" id="4YtCEG_OVnB" role="2Zo12j">
-                  <ref role="cht4Q" to="hqsm:1i65yRAWiCQ" resolve="IValue" />
+          <node concept="22lmx$" id="5xvu2kSFjs5" role="3cqZAk">
+            <node concept="2OqwBi" id="5xvu2kSFjXv" role="3uHU7w">
+              <node concept="otxO1" id="5xvu2kSFjCy" role="2Oq$k0" />
+              <node concept="2Zo12i" id="5xvu2kSFkkT" role="2OqNvi">
+                <node concept="chp4Y" id="5xvu2kSFkv3" role="2Zo12j">
+                  <ref role="cht4Q" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="5luHlsCrJDC" role="3uHU7B">
-              <node concept="otxO1" id="5luHlsCrJDE" role="2Oq$k0" />
-              <node concept="2Zo12i" id="5luHlsCrJDG" role="2OqNvi">
-                <node concept="chp4Y" id="5luHlsCrJKP" role="2Zo12j">
-                  <ref role="cht4Q" to="55iy:5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
+            <node concept="22lmx$" id="4YtCEG_ORDY" role="3uHU7B">
+              <node concept="2OqwBi" id="5luHlsCrJDC" role="3uHU7B">
+                <node concept="otxO1" id="5luHlsCrJDE" role="2Oq$k0" />
+                <node concept="2Zo12i" id="5luHlsCrJDG" role="2OqNvi">
+                  <node concept="chp4Y" id="5luHlsCrJKP" role="2Zo12j">
+                    <ref role="cht4Q" to="55iy:5luHlsCpmwA" resolve="IGraphPatternBodyContent" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4YtCEG_OUKG" role="3uHU7w">
+                <node concept="otxO1" id="4YtCEG_OUzS" role="2Oq$k0" />
+                <node concept="2Zo12i" id="4YtCEG_OVdE" role="2OqNvi">
+                  <node concept="chp4Y" id="4YtCEG_OVnB" role="2Zo12j">
+                    <ref role="cht4Q" to="hqsm:1i65yRAWiCQ" resolve="IValue" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -200,11 +211,21 @@
                 </node>
               </node>
               <node concept="22lmx$" id="6mbwRz6Rif3" role="3uHU7B">
-                <node concept="2OqwBi" id="6mbwRz6Rif4" role="3uHU7B">
-                  <node concept="otxO1" id="6mbwRz6Rif5" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="6mbwRz6Rif6" role="2OqNvi">
-                    <node concept="chp4Y" id="6mbwRz6Riut" role="2Zo12j">
-                      <ref role="cht4Q" to="55iy:5luHlsCrwig" resolve="IGraphPatternModuleContent" />
+                <node concept="22lmx$" id="7a3nU351u6q" role="3uHU7B">
+                  <node concept="2OqwBi" id="6mbwRz6Rif4" role="3uHU7w">
+                    <node concept="otxO1" id="6mbwRz6Rif5" role="2Oq$k0" />
+                    <node concept="2Zo12i" id="6mbwRz6Rif6" role="2OqNvi">
+                      <node concept="chp4Y" id="6mbwRz6Riut" role="2Zo12j">
+                        <ref role="cht4Q" to="55iy:5luHlsCrwig" resolve="IGraphPatternModuleContent" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7a3nU351tFI" role="3uHU7B">
+                    <node concept="otxO1" id="7a3nU351tFJ" role="2Oq$k0" />
+                    <node concept="2Zo12i" id="7a3nU351tFK" role="2OqNvi">
+                      <node concept="chp4Y" id="7a3nU351tQw" role="2Zo12j">
+                        <ref role="cht4Q" to="hqsm:7a3nU351sZC" resolve="ISharedPatternModuleContent" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -357,24 +378,6 @@
               <node concept="3TrcHB" id="SSjGGIia8D" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="6mbwRz6K2LT">
-    <property role="3GE5qa" value="constraints" />
-    <ref role="1M2myG" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
-    <node concept="1N5Pfh" id="6mbwRz6K2LU" role="1Mr941">
-      <ref role="1N5Vy1" to="55iy:RjyNapTDhB" resolve="type" />
-      <node concept="1MUpDS" id="6mbwRz6K2M0" role="1N6uqs">
-        <node concept="3clFbS" id="6mbwRz6K2M2" role="2VODD2">
-          <node concept="3cpWs6" id="6SzVr$NUsHe" role="3cqZAp">
-            <node concept="2YIFZM" id="6SzVr$NUDkr" role="3cqZAk">
-              <ref role="37wK5l" to="zt8v:6SzVr$NUBSD" resolve="visibleConceptDeclarations" />
-              <ref role="1Pybhc" to="zt8v:6fymoI4LNm5" resolve="Scopes" />
-              <node concept="2rP1CM" id="6SzVr$NUDNC" role="37wK5m" />
             </node>
           </node>
         </node>

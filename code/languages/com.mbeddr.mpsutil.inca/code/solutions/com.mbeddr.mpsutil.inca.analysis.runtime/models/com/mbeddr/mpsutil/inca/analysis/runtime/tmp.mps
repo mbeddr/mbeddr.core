@@ -10,6 +10,9 @@
   </imports>
   <registry>
     <language id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="com.mbeddr.mpsutil.inca.core">
+      <concept id="996292992025672789" name="com.mbeddr.mpsutil.inca.core.structure.ConceptReferenceType" flags="ng" index="2kdjtB">
+        <reference id="7241148409041409499" name="concept" index="2UGuZ7" />
+      </concept>
       <concept id="2281067221947980594" name="com.mbeddr.mpsutil.inca.core.structure.VariableReference" flags="ng" index="2vme6Z">
         <reference id="768444928085405086" name="variable" index="XkjO9" />
       </concept>
@@ -24,7 +27,7 @@
         <child id="1925259677761359694" name="bodies" index="3zVECR" />
       </concept>
       <concept id="5589093812003084634" name="com.mbeddr.mpsutil.inca.core.structure.ConceptConstraint" flags="ng" index="3XlQDJ">
-        <reference id="5589093812003084769" name="type" index="3XlQFk" />
+        <child id="8251544086380719158" name="type" index="2RGvem" />
         <child id="5589093812003084950" name="var" index="3XlQAz" />
       </concept>
     </language>
@@ -47,29 +50,37 @@
       <property role="TrG5h" value="test" />
       <node concept="3zV_Rz" id="57LMU4Vj0Dk" role="3zVECR">
         <node concept="2qQGpE" id="2E6bj9tK320" role="1dgzf0">
-          <ref role="3XlQFk" to="tpee:fzclF8l" resolve="Statement" />
           <node concept="2vme6Z" id="2E6bj9tKaW5" role="3XlQAz">
             <ref role="XkjO9" node="57LMU4Vj0DJ" resolve="p" />
           </node>
+          <node concept="2kdjtB" id="7a3nU35hc5w" role="2RGvem">
+            <ref role="2UGuZ7" to="tpee:fzclF8l" resolve="Statement" />
+          </node>
         </node>
         <node concept="2qQGpE" id="4RwsLJrVXMw" role="1dgzf0">
-          <ref role="3XlQFk" to="tpee:fzclF8j" resolve="ExpressionStatement" />
           <node concept="2vme6Z" id="4RwsLJrVY6l" role="3XlQAz">
             <ref role="XkjO9" node="57LMU4Vj0DJ" resolve="p" />
+          </node>
+          <node concept="2kdjtB" id="7a3nU35hc5x" role="2RGvem">
+            <ref role="2UGuZ7" to="tpee:fzclF8j" resolve="ExpressionStatement" />
           </node>
         </node>
       </node>
       <node concept="3zV_Rz" id="4RwsLJrVZvm" role="3zVECR">
         <node concept="2qQGpE" id="4RwsLJrVZx0" role="1dgzf0">
-          <ref role="3XlQFk" to="tpee:fz3vP1J" resolve="Expression" />
           <node concept="2vme6Z" id="4RwsLJrVZxj" role="3XlQAz">
             <ref role="XkjO9" node="57LMU4Vj0DJ" resolve="p" />
           </node>
+          <node concept="2kdjtB" id="7a3nU35hc5y" role="2RGvem">
+            <ref role="2UGuZ7" to="tpee:fz3vP1J" resolve="Expression" />
+          </node>
         </node>
         <node concept="2qQGpE" id="4RwsLJrW04x" role="1dgzf0">
-          <ref role="3XlQFk" to="tpee:fzcpWvV" resolve="PlusExpression" />
           <node concept="2vme6Z" id="4RwsLJrW0a7" role="3XlQAz">
             <ref role="XkjO9" node="57LMU4Vj0DJ" resolve="p" />
+          </node>
+          <node concept="2kdjtB" id="7a3nU35hc5z" role="2RGvem">
+            <ref role="2UGuZ7" to="tpee:fzcpWvV" resolve="PlusExpression" />
           </node>
         </node>
       </node>

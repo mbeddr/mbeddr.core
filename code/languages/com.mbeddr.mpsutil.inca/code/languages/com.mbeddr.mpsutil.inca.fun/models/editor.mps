@@ -109,9 +109,6 @@
         <child id="1139535280620" name="executeFunction" index="1hA7z_" />
       </concept>
       <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
-      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
-        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
-      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
@@ -119,11 +116,9 @@
         <child id="7173407872095451092" name="menuReference" index="1IG6uw" />
       </concept>
       <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
-      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="5425882385312046132" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_SubstituteMenu_CurrentTargetNode" flags="nn" index="1yR$tW" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
-        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="7991336459489871999" name="jetbrains.mps.lang.editor.structure.IOutputConceptSubstituteMenuPart" flags="ng" index="3EoQpk">
@@ -1094,25 +1089,16 @@
       <node concept="l2Vlx" id="52HBLukNpKR" role="2iSdaV" />
       <node concept="1kIj98" id="3C7pxOruqFL" role="3EZMnx">
         <node concept="3F1sOY" id="3C7pxOruqG9" role="1kIj9b">
-          <ref role="1NtTu8" to="ebqt:52HBLukNnKc" resolve="expression" />
+          <ref role="1NtTu8" to="ebqt:7a3nU35cEJP" resolve="expression" />
         </node>
       </node>
       <node concept="3F0ifn" id="52HBLukNpL5" role="3EZMnx">
         <property role="3F0ifm" value="instanceOf" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
-      <node concept="1iCGBv" id="52HBLukNpLi" role="3EZMnx">
+      <node concept="3F1sOY" id="7a3nU35cFhp" role="3EZMnx">
         <property role="1cu_pB" value="2" />
-        <ref role="1NtTu8" to="ebqt:52HBLukNpIr" resolve="type" />
-        <node concept="1sVBvm" id="52HBLukNpLk" role="1sWHZn">
-          <node concept="3F0A7n" id="52HBLukNpLy" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <node concept="VechU" id="52HBLukVgpv" role="3F10Kt">
-              <property role="Vb096" value="DARK_GREEN" />
-            </node>
-          </node>
-        </node>
+        <ref role="1NtTu8" to="ebqt:7a3nU35cEFk" resolve="type" />
       </node>
     </node>
   </node>
@@ -1151,24 +1137,16 @@
       <node concept="l2Vlx" id="InJBIGIqp3" role="2iSdaV" />
       <node concept="1kIj98" id="3C7pxOruqH0" role="3EZMnx">
         <node concept="3F1sOY" id="3C7pxOruqHm" role="1kIj9b">
-          <ref role="1NtTu8" to="ebqt:InJBIGIqoJ" resolve="expression" />
+          <ref role="1NtTu8" to="ebqt:7a3nU35cEJP" resolve="expression" />
         </node>
       </node>
       <node concept="3F0ifn" id="InJBIGIqp5" role="3EZMnx">
         <property role="3F0ifm" value="not instanceOf" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
-      <node concept="1iCGBv" id="InJBIGIqp6" role="3EZMnx">
-        <ref role="1NtTu8" to="ebqt:InJBIGIqoQ" resolve="type" />
-        <node concept="1sVBvm" id="InJBIGIqp7" role="1sWHZn">
-          <node concept="3F0A7n" id="InJBIGIqp8" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <node concept="VechU" id="InJBIGIqp9" role="3F10Kt">
-              <property role="Vb096" value="DARK_GREEN" />
-            </node>
-          </node>
-        </node>
+      <node concept="3F1sOY" id="7a3nU35cFgP" role="3EZMnx">
+        <property role="1cu_pB" value="2" />
+        <ref role="1NtTu8" to="ebqt:7a3nU35cEFk" resolve="type" />
       </node>
     </node>
   </node>

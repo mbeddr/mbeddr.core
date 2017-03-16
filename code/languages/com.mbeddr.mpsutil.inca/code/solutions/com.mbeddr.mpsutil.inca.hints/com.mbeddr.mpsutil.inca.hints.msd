@@ -25,7 +25,9 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
     <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="4" />
+    <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="3" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
+    <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -38,6 +40,7 @@
     <module reference="b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)" version="0" />
     <module reference="bc791f96-4749-4311-a6e4-241e47ca97f9(com.mbeddr.mpsutil.inca.core.util)" version="0" />
     <module reference="e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2(com.mbeddr.mpsutil.inca.data)" version="0" />
+    <module reference="8c9a2720-9d21-4370-a226-819eb3e76e1e(com.mbeddr.mpsutil.inca.fun)" version="0" />
     <module reference="cd2909da-ecb4-49dc-b176-33e5c619e516(com.mbeddr.mpsutil.inca.gp)" version="0" />
     <module reference="eca96cff-ea64-44b3-8770-9c7ecd91f5a6(com.mbeddr.mpsutil.inca.hints)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
