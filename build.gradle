@@ -8,6 +8,17 @@ ext.artifactsDir = new File(rootDir, 'artifacts')
 
 ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.findProperty("teamcity")
 
+buildscript {
+    repositories {
+        mavenLocal()
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+    }
+
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.15.+'
+    }
+}
+
 subprojects {
     // required plugins
     apply plugin: "base"

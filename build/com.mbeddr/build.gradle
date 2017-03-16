@@ -1,4 +1,4 @@
-
+import de.itemis.mps.gradle.GitBasedVersioning
 
 if (project.hasProperty("MPS_Installation")) {
     ext.mpsInstallationDir = project.getProperty("MPS_Installation")
