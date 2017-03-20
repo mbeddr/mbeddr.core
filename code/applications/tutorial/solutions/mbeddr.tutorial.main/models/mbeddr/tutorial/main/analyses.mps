@@ -1472,7 +1472,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="true" />
-      <property role="2lUHrg" value="12" />
+      <property role="2lUHrg" value="16" />
       <ref role="3V$Cn$" node="2HZ6k2lasCq" resolve="crc_errorDetection_verificationCase" />
       <node concept="39JtYx" id="2HZ6k2laMzF" role="39JtRY">
         <property role="39JtYE" value="_050_crc_crcInit.1" />
@@ -9676,7 +9676,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3TlMh9" id="2HZ6k2lasCy" role="3XIe9u">
-            <property role="2hmy$m" value="10" />
+            <property role="2hmy$m" value="5" />
           </node>
         </node>
         <node concept="3XIRlf" id="i3RC_lXX4L" role="3XIRFZ">
@@ -9686,7 +9686,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3TlMh9" id="i3RC_lXXxv" role="3XIe9u">
-            <property role="2hmy$m" value="7" />
+            <property role="2hmy$m" value="15" />
           </node>
         </node>
         <node concept="3XIRlf" id="2HZ6k2lasCz" role="3XIRFZ">

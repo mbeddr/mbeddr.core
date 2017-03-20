@@ -17993,90 +17993,49 @@
         <property role="TrG5h" value="V" />
       </node>
       <node concept="3clFbS" id="4NnxEzfVMtQ" role="3clF47">
-        <node concept="SfApY" id="6j5__GZYVwi" role="3cqZAp">
-          <node concept="3clFbS" id="6j5__GZYVwk" role="SfCbr">
-            <node concept="3cpWs6" id="6j5__GZXVUn" role="3cqZAp">
-              <node concept="2OqwBi" id="6j5__GZYg9S" role="3cqZAk">
-                <node concept="37vLTw" id="6j5__GZY5zK" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4NnxEzfVMtL" resolve="callable" />
-                </node>
-                <node concept="liA8E" id="6j5__GZYr3y" role="2OqNvi">
-                  <ref role="37wK5l" to="5zyv:~Callable.call():java.lang.Object" resolve="call" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="6j5__GZYVwl" role="TEbGg">
-            <node concept="3cpWsn" id="6j5__GZYVwn" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="6j5__GZZ_1K" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="6j5__GZYVwr" role="TDEfX">
-              <node concept="3clFbF" id="6j5__GZZ_am" role="3cqZAp">
-                <node concept="2OqwBi" id="6j5__GZZ_iw" role="3clFbG">
-                  <node concept="37vLTw" id="6j5__GZZ_al" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6j5__GZYVwn" resolve="e" />
+        <node concept="SfApY" id="4NnxEzfX8ER" role="3cqZAp">
+          <node concept="TDmWw" id="4NnxEzfX8ES" role="TEbGg">
+            <node concept="3clFbS" id="4NnxEzfX8ET" role="TDEfX">
+              <node concept="3clFbF" id="4NnxEzfX8EU" role="3cqZAp">
+                <node concept="1rXfSq" id="4NnxEzfX8EV" role="3clFbG">
+                  <ref role="37wK5l" node="5VMWdq5xRWJ" resolve="notifyFatalListeners" />
+                  <node concept="Xl_RD" id="4NnxEzfX8EW" role="37wK5m">
+                    <property role="Xl_RC" value="EMF-IncQuery Base encountered an error while coalescing message delivery." />
                   </node>
-                  <node concept="liA8E" id="6j5__GZZ_BV" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                  <node concept="37vLTw" id="4NnxEzfX8EX" role="37wK5m">
+                    <ref role="3cqZAo" node="4NnxEzfX8F2" resolve="e" />
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs6" id="6j5__GZZ_Fj" role="3cqZAp">
-                <node concept="10Nm6u" id="6j5__GZZ_HD" role="3cqZAk" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6j5__GZY_PL" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="SfApY" id="4NnxEzfX8ER" role="8Wnug">
-            <node concept="TDmWw" id="4NnxEzfX8ES" role="TEbGg">
-              <node concept="3clFbS" id="4NnxEzfX8ET" role="TDEfX">
-                <node concept="3clFbF" id="4NnxEzfX8EU" role="3cqZAp">
-                  <node concept="1rXfSq" id="4NnxEzfX8EV" role="3clFbG">
-                    <ref role="37wK5l" node="5VMWdq5xRWJ" resolve="notifyFatalListeners" />
-                    <node concept="Xl_RD" id="4NnxEzfX8EW" role="37wK5m">
-                      <property role="Xl_RC" value="EMF-IncQuery Base encountered an error while coalescing message delivery." />
-                    </node>
-                    <node concept="37vLTw" id="4NnxEzfX8EX" role="37wK5m">
+              <node concept="YS8fn" id="4NnxEzfX8EY" role="3cqZAp">
+                <node concept="2ShNRf" id="4NnxEzfX8EZ" role="YScLw">
+                  <node concept="1pGfFk" id="4NnxEzfX8F0" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
+                    <node concept="37vLTw" id="4NnxEzfX8F1" role="37wK5m">
                       <ref role="3cqZAo" node="4NnxEzfX8F2" resolve="e" />
                     </node>
                   </node>
                 </node>
-                <node concept="YS8fn" id="4NnxEzfX8EY" role="3cqZAp">
-                  <node concept="2ShNRf" id="4NnxEzfX8EZ" role="YScLw">
-                    <node concept="1pGfFk" id="4NnxEzfX8F0" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
-                      <node concept="37vLTw" id="4NnxEzfX8F1" role="37wK5m">
-                        <ref role="3cqZAo" node="4NnxEzfX8F2" resolve="e" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3cpWsn" id="4NnxEzfX8F2" role="TDEfY">
-                <property role="3TUv4t" value="false" />
-                <property role="TrG5h" value="e" />
-                <node concept="3uibUv" id="4NnxEzfX8F3" role="1tU5fm">
-                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                </node>
               </node>
             </node>
-            <node concept="3clFbS" id="4NnxEzfX8F4" role="SfCbr">
-              <node concept="3cpWs6" id="4NnxEzfXiMH" role="3cqZAp">
-                <node concept="2OqwBi" id="4NnxEzfXiMI" role="3cqZAk">
-                  <node concept="37vLTw" id="4NnxEzfXiMJ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4NnxEzfUnYn" resolve="engine" />
-                  </node>
-                  <node concept="liA8E" id="4NnxEzfXiMK" role="2OqNvi">
-                    <ref role="37wK5l" to="h57a:~ViatraQueryEngine.coalesceMessageDelivery(java.util.concurrent.Callable):java.lang.Object" resolve="coalesceMessageDelivery" />
-                    <node concept="37vLTw" id="4NnxEzfXiML" role="37wK5m">
-                      <ref role="3cqZAo" node="4NnxEzfVMtL" resolve="callable" />
-                    </node>
+            <node concept="3cpWsn" id="4NnxEzfX8F2" role="TDEfY">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="4NnxEzfX8F3" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="4NnxEzfX8F4" role="SfCbr">
+            <node concept="3cpWs6" id="4NnxEzfXiMH" role="3cqZAp">
+              <node concept="2OqwBi" id="4NnxEzfXiMI" role="3cqZAk">
+                <node concept="37vLTw" id="4NnxEzfXiMJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4NnxEzfUnYn" resolve="engine" />
+                </node>
+                <node concept="liA8E" id="4NnxEzfXiMK" role="2OqNvi">
+                  <ref role="37wK5l" to="h57a:~ViatraQueryEngine.coalesceMessageDelivery(java.util.concurrent.Callable):java.lang.Object" resolve="coalesceMessageDelivery" />
+                  <node concept="37vLTw" id="4NnxEzfXiML" role="37wK5m">
+                    <ref role="3cqZAo" node="4NnxEzfVMtL" resolve="callable" />
                   </node>
                 </node>
               </node>
@@ -28545,7 +28504,7 @@
     <node concept="3Tm1VV" id="2R_7gpXUKQl" role="1B3o_S" />
   </node>
   <node concept="3HP615" id="7ike8KAJmsA">
-    <property role="TrG5h" value="ILatticeOperatorProvider" />
+    <property role="TrG5h" value="ILatticeOperationProvider" />
     <property role="3GE5qa" value="lattice" />
     <node concept="2tJIrI" id="7ike8KAJmt0" role="jymVt" />
     <node concept="3clFb_" id="7ike8KAJqYH" role="jymVt">
@@ -29492,6 +29451,21 @@
     <node concept="3uibUv" id="5xvu2kS8L94" role="EKbjA">
       <ref role="3uigEE" to="4v9i:~IInputKey" resolve="IInputKey" />
     </node>
+  </node>
+  <node concept="3HP615" id="6CmzIMnhCSR">
+    <property role="3GE5qa" value="lattice" />
+    <property role="TrG5h" value="IWithOrdinal" />
+    <node concept="2tJIrI" id="6CmzIMnhCTl" role="jymVt" />
+    <node concept="3clFb_" id="6CmzIMnhD31" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getOrdinal" />
+      <node concept="3clFbS" id="6CmzIMnhD34" role="3clF47" />
+      <node concept="3Tm1VV" id="6CmzIMnhD35" role="1B3o_S" />
+      <node concept="10Oyi0" id="6CmzIMnhD2W" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="6CmzIMnhCTt" role="jymVt" />
+    <node concept="3Tm1VV" id="6CmzIMnhCSS" role="1B3o_S" />
   </node>
 </model>
 

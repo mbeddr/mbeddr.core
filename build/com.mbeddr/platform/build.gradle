@@ -95,6 +95,7 @@ publishing {
                     dependencyNode.appendNode('artifactId', it.moduleName)
                     dependencyNode.appendNode('version', it.moduleVersion)
                     dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
                 }
             }
         }
@@ -111,6 +112,7 @@ publishing {
                     dependencyNode.appendNode('artifactId', it.moduleName)
                     dependencyNode.appendNode('version', it.moduleVersion)
                     dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
                 }
             }
         }
