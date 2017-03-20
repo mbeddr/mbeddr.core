@@ -11,7 +11,6 @@
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="i2y7" ref="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -209,12 +208,12 @@
       <property role="IQ2ns" value="5789689727170551526" />
       <ref role="20lvS9" node="51p726VIDRb" resolve="ExternalBuild" />
     </node>
-    <node concept="1TJgyj" id="7FzSIra3d6g" role="1TKVEi">
+    <node concept="1TJgyj" id="7FeXv2Eyu$z" role="1TKVEi">
+      <property role="IQ2ns" value="8849280731831724323" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="externalIncludes" />
       <property role="20lbJX" value="0..n" />
-      <property role="IQ2ns" value="8855170773200720272" />
-      <ref role="20lvS9" node="7FzSIra3d5s" resolve="ExternalIncludePath" />
+      <ref role="20lvS9" node="5lP9ZVaAU_u" resolve="ExternalPath" />
     </node>
     <node concept="PrWs8" id="1YUFCeFKT9R" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -513,12 +512,6 @@
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
-  <node concept="1TIwiD" id="BSUXCEzFfy">
-    <property role="3GE5qa" value="binary" />
-    <property role="TrG5h" value="BuildConfigStringLiteral" />
-    <property role="EcuMT" value="718583462814987234" />
-    <ref role="1TJDcQ" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
-  </node>
   <node concept="1TIwiD" id="51p726VIDRb">
     <property role="TrG5h" value="ExternalBuild" />
     <property role="R4oN_" value="a folder that contains an external makefile " />
@@ -537,37 +530,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7FzSIra3d5s">
-    <property role="TrG5h" value="ExternalIncludePath" />
-    <property role="R4oN_" value="a folder that contains an external files to include when building " />
-    <property role="3GE5qa" value="binary" />
-    <property role="34LRSv" value="external include" />
-    <property role="EcuMT" value="8855170773200720220" />
-    <ref role="1TJDcQ" node="5lP9ZVaAU_u" resolve="ExternalPath" />
-  </node>
-  <node concept="1TIwiD" id="6e6sfG55EnQ">
-    <property role="TrG5h" value="ExternalLibLinkables" />
-    <property role="34LRSv" value="external Library Linkable" />
-    <property role="R4oN_" value="a list of libraries that has not been created withing mbeddr" />
-    <property role="3GE5qa" value="binary" />
-    <property role="EcuMT" value="7171543680058566134" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6e6sfG55EnR" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="0..n" />
-      <property role="20kJfa" value="libraries" />
-      <property role="IQ2ns" value="7171543680058566135" />
-      <ref role="20lvS9" node="BSUXCEzFfy" resolve="BuildConfigStringLiteral" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7cbaNMf2CsY">
-    <property role="TrG5h" value="ExternalLibPath" />
-    <property role="34LRSv" value="external Library Path" />
-    <property role="R4oN_" value="a path of a library that has not been created withing mbeddr" />
-    <property role="3GE5qa" value="binary" />
-    <property role="EcuMT" value="8289767078203393854" />
-    <ref role="1TJDcQ" node="5lP9ZVaAU_u" resolve="ExternalPath" />
-  </node>
   <node concept="1TIwiD" id="6e6sfG55Eq6">
     <property role="TrG5h" value="ExternalLibraries" />
     <property role="R4oN_" value="An external files to include when building " />
@@ -575,19 +537,19 @@
     <property role="34LRSv" value="external library" />
     <property role="EcuMT" value="7171543680058566278" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6e6sfG55Eq9" role="1TKVEi">
+    <node concept="1TJgyj" id="7FeXv2EtpPF" role="1TKVEi">
+      <property role="IQ2ns" value="8849280731830394219" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="externalLibPaths" />
+      <property role="20kJfa" value="libraries" />
       <property role="20lbJX" value="0..n" />
-      <property role="IQ2ns" value="7171543680058566281" />
-      <ref role="20lvS9" node="7cbaNMf2CsY" resolve="ExternalLibPath" />
+      <ref role="20lvS9" node="7FeXv2EtoDW" resolve="ExternalItem" />
     </node>
-    <node concept="1TJgyj" id="6e6sfG55Eqa" role="1TKVEi">
+    <node concept="1TJgyj" id="7FeXv2EvrYS" role="1TKVEi">
+      <property role="IQ2ns" value="8849280731830927288" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="externalLibLinkables" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="7171543680058566282" />
-      <ref role="20lvS9" node="6e6sfG55EnQ" resolve="ExternalLibLinkables" />
+      <property role="20kJfa" value="libraryPaths" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5lP9ZVaAU_u" resolve="ExternalPath" />
     </node>
   </node>
   <node concept="1TIwiD" id="51p726V_PmK">
@@ -598,7 +560,7 @@
     <property role="EcuMT" value="5789689727168239024" />
     <ref role="1TJDcQ" node="5lP9ZVaAU_u" resolve="ExternalPath" />
     <node concept="1TJgyi" id="51p726V_PmM" role="1TKVEl">
-      <property role="TrG5h" value="name" />
+      <property role="TrG5h" value="namePattern" />
       <property role="IQ2nx" value="5789689727168239026" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
@@ -622,6 +584,17 @@
     <node concept="1TJgyi" id="5lP9ZVaAU_v" role="1TKVEl">
       <property role="IQ2nx" value="6157872040773396831" />
       <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FeXv2EtoDW">
+    <property role="EcuMT" value="8849280731830389372" />
+    <property role="3GE5qa" value="binary" />
+    <property role="TrG5h" value="ExternalItem" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7FeXv2EtpOY" role="1TKVEl">
+      <property role="IQ2nx" value="8849280731830394174" />
+      <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

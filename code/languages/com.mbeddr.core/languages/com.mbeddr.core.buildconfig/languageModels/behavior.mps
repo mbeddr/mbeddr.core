@@ -3154,8 +3154,8 @@
                     <ref role="3Tt5mk" to="51wr:4an21yEJ7nX" resolve="externalLibs" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="7ue4kw5BtyJ" role="2OqNvi">
-                  <ref role="3TtcxE" to="51wr:6e6sfG55Eq9" resolve="externalLibPaths" />
+                <node concept="3Tsc0h" id="4FJKYl36RwU" role="2OqNvi">
+                  <ref role="3TtcxE" to="51wr:7FeXv2EvrYS" resolve="libraryPaths" />
                 </node>
               </node>
               <node concept="34oBXx" id="15OGBsY9NAY" role="2OqNvi" />
@@ -6014,26 +6014,12 @@
             <node concept="2OqwBi" id="2b2D8jTLIrH" role="37vLTJ">
               <node concept="13iPFW" id="2b2D8jTLIii" role="2Oq$k0" />
               <node concept="3TrcHB" id="2b2D8jTLIEN" role="2OqNvi">
-                <ref role="3TsBF5" to="51wr:51p726V_PmM" resolve="name" />
+                <ref role="3TsBF5" to="51wr:51p726V_PmM" resolve="namePattern" />
               </node>
             </node>
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="13h7C7" id="3CFEbWQdnHO">
-    <property role="3GE5qa" value="binary" />
-    <ref role="13h7C2" to="51wr:7FzSIra3d5s" resolve="ExternalIncludePath" />
-    <node concept="13hLZK" id="3CFEbWQdnHP" role="13h7CW">
-      <node concept="3clFbS" id="3CFEbWQdnHQ" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="151eYfjp8jY">
-    <property role="3GE5qa" value="binary" />
-    <ref role="13h7C2" to="51wr:7cbaNMf2CsY" resolve="ExternalLibPath" />
-    <node concept="13hLZK" id="151eYfjp8jZ" role="13h7CW">
-      <node concept="3clFbS" id="151eYfjp8k0" role="2VODD2" />
     </node>
   </node>
   <node concept="312cEu" id="5lP9ZVaA6En">

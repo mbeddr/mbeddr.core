@@ -14,7 +14,6 @@
     <import index="slm6" ref="90746344-04fd-4286-97d5-b46ae6a81709/r:52a3d974-bd4f-4651-ba6e-a2de5e336d95(jetbrains.mps.lang.migration/jetbrains.mps.lang.migration.methods)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -130,9 +129,6 @@
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
-      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
-        <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
       </concept>
@@ -145,9 +141,6 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
-      </concept>
-      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
-        <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1745,32 +1738,11 @@
                   <node concept="3clFbS" id="5hM$KrZQwRu" role="3clFbx">
                     <node concept="3clFbJ" id="1XUcaXAPpis" role="3cqZAp">
                       <node concept="3clFbS" id="1XUcaXAPpiu" role="3clFbx">
-                        <node concept="3cpWs8" id="1XUcaXAPu8o" role="3cqZAp">
-                          <node concept="3cpWsn" id="1XUcaXAPu8r" role="3cpWs9">
-                            <property role="TrG5h" value="externalLibLinkables" />
-                            <node concept="3Tqbb2" id="1XUcaXAPu8m" role="1tU5fm">
-                              <ref role="ehGHo" to="51wr:6e6sfG55EnQ" resolve="ExternalLibLinkables" />
-                            </node>
-                            <node concept="2pJPEk" id="1XUcaXAPuaw" role="33vP2m">
-                              <node concept="2pJPED" id="1XUcaXAPucr" role="2pJPEn">
-                                <ref role="2pJxaS" to="51wr:6e6sfG55EnQ" resolve="ExternalLibLinkables" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
                         <node concept="3clFbF" id="1XUcaXAPrlf" role="3cqZAp">
                           <node concept="37vLTI" id="1XUcaXAPt91" role="3clFbG">
                             <node concept="2pJPEk" id="1XUcaXAPtKC" role="37vLTx">
-                              <node concept="2pJPED" id="1XUcaXAPtQH" role="2pJPEn">
+                              <node concept="2pJPED" id="2C2yD$dTBPV" role="2pJPEn">
                                 <ref role="2pJxaS" to="51wr:6e6sfG55Eq6" resolve="ExternalLibraries" />
-                                <node concept="2pIpSj" id="1XUcaXAPtWT" role="2pJxcM">
-                                  <ref role="2pIpSl" to="51wr:6e6sfG55Eqa" resolve="externalLibLinkables" />
-                                  <node concept="36biLy" id="1XUcaXAPuet" role="2pJxcZ">
-                                    <node concept="37vLTw" id="1XUcaXAPugX" role="36biLW">
-                                      <ref role="3cqZAo" node="1XUcaXAPu8r" resolve="externalLibLinkables" />
-                                    </node>
-                                  </node>
-                                </node>
                               </node>
                             </node>
                             <node concept="2OqwBi" id="1XUcaXAPrlj" role="37vLTJ">
@@ -1798,7 +1770,7 @@
                     </node>
                     <node concept="2Gpval" id="5hM$KrZQCyW" role="3cqZAp">
                       <node concept="2GrKxI" id="5hM$KrZQCyX" role="2Gsz3X">
-                        <property role="TrG5h" value="linkable" />
+                        <property role="TrG5h" value="library" />
                       </node>
                       <node concept="2OqwBi" id="5hM$KrZQCLu" role="2GsD0m">
                         <node concept="2GrUjf" id="5hM$KrZQC$o" role="2Oq$k0">
@@ -1812,32 +1784,27 @@
                         <node concept="3clFbF" id="5hM$KrZQWaF" role="3cqZAp">
                           <node concept="2OqwBi" id="5hM$KrZR2PP" role="3clFbG">
                             <node concept="2OqwBi" id="5hM$KrZQYip" role="2Oq$k0">
-                              <node concept="2OqwBi" id="5hM$KrZQXuN" role="2Oq$k0">
-                                <node concept="2OqwBi" id="5hM$KrZQWoo" role="2Oq$k0">
-                                  <node concept="2GrUjf" id="5hM$KrZQWaD" role="2Oq$k0">
-                                    <ref role="2Gs0qQ" node="5hM$KrZQwnm" resolve="binary" />
-                                  </node>
-                                  <node concept="3TrEf2" id="5hM$KrZQX4L" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="51wr:4an21yEJ7nX" resolve="externalLibs" />
-                                  </node>
+                              <node concept="2OqwBi" id="5hM$KrZQWoo" role="2Oq$k0">
+                                <node concept="2GrUjf" id="5hM$KrZQWaD" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="5hM$KrZQwnm" resolve="binary" />
                                 </node>
-                                <node concept="3TrEf2" id="5hM$KrZQXZd" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="51wr:6e6sfG55Eqa" resolve="externalLibLinkables" />
+                                <node concept="3TrEf2" id="5hM$KrZQX4L" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="51wr:4an21yEJ7nX" resolve="externalLibs" />
                                 </node>
                               </node>
-                              <node concept="3Tsc0h" id="5hM$KrZQYN7" role="2OqNvi">
-                                <ref role="3TtcxE" to="51wr:6e6sfG55EnR" resolve="libraries" />
+                              <node concept="3Tsc0h" id="2C2yD$dTAHG" role="2OqNvi">
+                                <ref role="3TtcxE" to="51wr:7FeXv2EtpPF" resolve="libraries" />
                               </node>
                             </node>
                             <node concept="TSZUe" id="5hM$KrZRbUV" role="2OqNvi">
                               <node concept="2pJPEk" id="1XUcaXAPFFW" role="25WWJ7">
                                 <node concept="2pJPED" id="1XUcaXAPFU7" role="2pJPEn">
-                                  <ref role="2pJxaS" to="51wr:BSUXCEzFfy" resolve="BuildConfigStringLiteral" />
+                                  <ref role="2pJxaS" to="51wr:7FeXv2EtoDW" resolve="ExternalItem" />
                                   <node concept="2pJxcG" id="1XUcaXAPGbR" role="2pJxcM">
-                                    <ref role="2pJxcJ" to="yq40:5jmmCdx$f5U" resolve="value" />
+                                    <ref role="2pJxcJ" to="51wr:7FeXv2EtpOY" resolve="value" />
                                     <node concept="2OqwBi" id="1XUcaXAPGxW" role="2pJxcZ">
                                       <node concept="2GrUjf" id="1XUcaXAPGoX" role="2Oq$k0">
-                                        <ref role="2Gs0qQ" node="5hM$KrZQCyX" resolve="linkable" />
+                                        <ref role="2Gs0qQ" node="5hM$KrZQCyX" resolve="library" />
                                       </node>
                                       <node concept="3TrcHB" id="1XUcaXAPH08" role="2OqNvi">
                                         <ref role="3TsBF5" to="51wr:4aYGoLbxeFM" resolve="name" />
@@ -1862,19 +1829,19 @@
                                       <ref role="3Tt5mk" to="51wr:4an21yEJ7nX" resolve="externalLibs" />
                                     </node>
                                   </node>
-                                  <node concept="3Tsc0h" id="5hM$KrZRzsP" role="2OqNvi">
-                                    <ref role="3TtcxE" to="51wr:6e6sfG55Eq9" resolve="externalLibPaths" />
+                                  <node concept="3Tsc0h" id="2C2yD$dTB47" role="2OqNvi">
+                                    <ref role="3TtcxE" to="51wr:7FeXv2EvrYS" resolve="libraryPaths" />
                                   </node>
                                 </node>
                                 <node concept="TSZUe" id="5hM$KrZRBEn" role="2OqNvi">
                                   <node concept="2pJPEk" id="1XUcaXAPDQg" role="25WWJ7">
                                     <node concept="2pJPED" id="1XUcaXAPE3Y" role="2pJPEn">
-                                      <ref role="2pJxaS" to="51wr:7cbaNMf2CsY" resolve="ExternalLibPath" />
+                                      <ref role="2pJxaS" to="51wr:5lP9ZVaAU_u" resolve="ExternalPath" />
                                       <node concept="2pJxcG" id="1XUcaXAPEhN" role="2pJxcM">
                                         <ref role="2pJxcJ" to="51wr:5lP9ZVaAU_v" resolve="path" />
                                         <node concept="2OqwBi" id="1XUcaXAPELZ" role="2pJxcZ">
                                           <node concept="2GrUjf" id="1XUcaXAPED0" role="2Oq$k0">
-                                            <ref role="2Gs0qQ" node="5hM$KrZQCyX" resolve="linkable" />
+                                            <ref role="2Gs0qQ" node="5hM$KrZQCyX" resolve="library" />
                                           </node>
                                           <node concept="3TrcHB" id="1XUcaXAPFgX" role="2OqNvi">
                                             <ref role="3TsBF5" to="51wr:4aYGoLbxbUX" resolve="path" />
@@ -1892,7 +1859,7 @@
                               <node concept="2OqwBi" id="1XUcaXAPCMd" role="3fr31v">
                                 <node concept="2OqwBi" id="1XUcaXAPCMe" role="2Oq$k0">
                                   <node concept="2GrUjf" id="1XUcaXAPCMf" role="2Oq$k0">
-                                    <ref role="2Gs0qQ" node="5hM$KrZQCyX" resolve="linkable" />
+                                    <ref role="2Gs0qQ" node="5hM$KrZQCyX" resolve="library" />
                                   </node>
                                   <node concept="3TrcHB" id="1XUcaXAPCMg" role="2OqNvi">
                                     <ref role="3TsBF5" to="51wr:4aYGoLbxbUX" resolve="path" />
@@ -1904,7 +1871,7 @@
                             <node concept="3y3z36" id="1XUcaXAP_8q" role="3uHU7B">
                               <node concept="2OqwBi" id="1XUcaXAPxPY" role="3uHU7B">
                                 <node concept="2GrUjf" id="1XUcaXAPxGW" role="2Oq$k0">
-                                  <ref role="2Gs0qQ" node="5hM$KrZQCyX" resolve="linkable" />
+                                  <ref role="2Gs0qQ" node="5hM$KrZQCyX" resolve="library" />
                                 </node>
                                 <node concept="3TrcHB" id="1XUcaXAPy$g" role="2OqNvi">
                                   <ref role="3TsBF5" to="51wr:4aYGoLbxbUX" resolve="path" />
