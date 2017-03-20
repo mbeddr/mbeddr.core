@@ -81,6 +81,7 @@
     </language>
     <language id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core">
       <concept id="4053481679317021366" name="com.mbeddr.analyses.cbmc.core.structure.RobustnessCBMCAnalysis" flags="ng" index="1nvAUE">
+        <property id="9020927825194549928" name="check_memory_leak" index="2o64iB" />
         <property id="4053481679317021368" name="check_pointer" index="1nvAU$" />
         <property id="4053481679317021367" name="check_div_by_zero" index="1nvAUF" />
       </concept>
@@ -99,6 +100,7 @@
         <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
         <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+        <property id="8445711190801184380" name="hasPreprocessorMacroSettings" index="3u2WvC" />
         <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
       </concept>
       <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
@@ -1100,6 +1102,9 @@
     <node concept="3GEVxB" id="prDxnvg6ZP" role="3W6d8T">
       <ref role="3GEb4d" node="5V$HkqNY91f" resolve="Pointer" />
     </node>
+    <node concept="3GEVxB" id="3GuEwg$$cCA" role="3W6d8T">
+      <ref role="3GEb4d" node="4tocua6I53H" resolve="MemoryLeak" />
+    </node>
     <node concept="1nvAUE" id="prDxnvfD9o" role="3V$2$K">
       <property role="2lelRm" value="true" />
       <property role="2lUGe1" value="false" />
@@ -1133,6 +1138,24 @@
       <property role="2l50Mm" value="false" />
       <property role="1nvAU$" value="true" />
       <ref role="3V$Cn$" node="5V$HkqNY91g" resolve="smokeNullPointerAccess" />
+    </node>
+    <node concept="1nvAUE" id="3GuEwg$$cCJ" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <property role="2o64iB" value="true" />
+      <ref role="3V$Cn$" node="7lmBuXs21UQ" resolve="functionNOTCausingMemoryLeak" />
     </node>
   </node>
 </model>
