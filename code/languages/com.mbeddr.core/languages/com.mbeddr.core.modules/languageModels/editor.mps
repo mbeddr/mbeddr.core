@@ -6284,5 +6284,11 @@
   <node concept="3p36aQ" id="1LS0LER8uzg">
     <ref role="aqKnT" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
   </node>
+  <node concept="3p36aQ" id="7ue4kw5DEF5">
+    <ref role="aqKnT" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
+  </node>
+  <node concept="3p36aQ" id="7ue4kw5DEF6">
+    <ref role="aqKnT" to="x27k:7apEgWbIQfY" resolve="ClosureParameterRef_old" />
+  </node>
 </model>
 

@@ -6,7 +6,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="4" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
   </languages>
   <imports />
@@ -78,9 +78,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2XOHcx" id="1ZXA4k7lOqe">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
-  </node>
   <node concept="1lH9Xt" id="1ZXA4k7lOqt">
     <property role="TrG5h" value="LeadingZeroLiteralsTest" />
     <node concept="1qefOq" id="1ZXA4k7lOq$" role="1SKRRt">
@@ -862,5 +859,8 @@
     </node>
   </node>
   <node concept="2v9HqL" id="2QNVH28YqHa" />
+  <node concept="2XOHcx" id="1ZXA4k7lOqe">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
+  </node>
 </model>
 
