@@ -319,7 +319,7 @@
                 <ref role="3cqZAo" node="5io19FFm5KO" resolve="planBuilder" />
               </node>
               <node concept="liA8E" id="5io19FFm7ux" role="2OqNvi">
-                <ref role="37wK5l" to="tft2:~RigidPlanBuilder.wrapUp(jetbrains.mps.generator.impl.plan.PlanIdentity):jetbrains.mps.generator.RigidGenerationPlan" resolve="wrapUp" />
+                <ref role="37wK5l" to="tft2:~RigidPlanBuilder.wrapUp(jetbrains.mps.generator.plan.PlanIdentity):jetbrains.mps.generator.RigidGenerationPlan" resolve="wrapUp" />
                 <node concept="2OqwBi" id="5io19FFm7B2" role="37wK5m">
                   <node concept="37vLTw" id="5io19FFm7wM" role="2Oq$k0">
                     <ref role="3cqZAo" node="5io19FFm6aI" resolve="planTranslator" />
