@@ -167,7 +167,6 @@
         <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -363,8 +362,8 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
@@ -1005,10 +1004,12 @@
             <node concept="2OqwBi" id="3SM_R9ytf2T" role="3clFbG">
               <node concept="2OqwBi" id="3SM_R9ytf2z" role="2Oq$k0">
                 <node concept="1PxgMI" id="3SM_R9ytmvg" role="2Oq$k0">
-                  <ref role="1m5ApE" to="hba4:3SM_R9yrBtN" resolve="ChildStep" />
                   <node concept="2OqwBi" id="3SM_R9ytmva" role="1m5AlR">
                     <node concept="0GJ7k" id="3SM_R9ytf2y" role="2Oq$k0" />
                     <node concept="1mfA1w" id="3SM_R9ytmvf" role="2OqNvi" />
+                  </node>
+                  <node concept="chp4Y" id="5RIakkDILlu" role="3oSUPX">
+                    <ref role="cht4Q" to="hba4:3SM_R9yrBtN" resolve="ChildStep" />
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="5Qfjk_E7vtR" role="2OqNvi">
@@ -1879,8 +1880,10 @@
                   </node>
                   <node concept="2OqwBi" id="4kSfyefw758" role="3clFbw">
                     <node concept="1PxgMI" id="4kSfyefw6pm" role="2Oq$k0">
-                      <ref role="1m5ApE" to="hba4:4U_WvDi7GEK" resolve="LogStatement" />
                       <node concept="pncrf" id="4kSfyefw5Hi" role="1m5AlR" />
+                      <node concept="chp4Y" id="5RIakkDILlj" role="3oSUPX">
+                        <ref role="cht4Q" to="hba4:4U_WvDi7GEK" resolve="LogStatement" />
+                      </node>
                     </node>
                     <node concept="3TrcHB" id="4kSfyefwawP" role="2OqNvi">
                       <ref role="3TsBF5" to="hba4:4kSfyefvDkO" resolve="disabled" />
@@ -3095,7 +3098,6 @@
     <property role="3GE5qa" value="static_imports" />
     <ref role="1XX52x" to="hba4:5A94f9ElssZ" resolve="ShortStaticMethodCall" />
     <node concept="3EZMnI" id="fITxkhc" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="PMmxH" id="4k0WLUKaRxk" role="3EZMnx">
         <ref role="PMmxG" to="tpen:4k0WLUKaCd7" resolve="IMethodCall_typeArguments" />
         <node concept="VPM3Z" id="48lPkMUHlsR" role="3F10Kt">
@@ -3262,7 +3264,6 @@
     <property role="3GE5qa" value="model_access" />
     <ref role="1XX52x" to="hba4:4ZoQlQrn$qr" resolve="SafeReadAction" />
     <node concept="3EZMnI" id="7Mb2akafE8r" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <node concept="3F0ifn" id="4ZoQlQrowr$" role="3EZMnx">
         <property role="3F0ifm" value="safe read action with" />
         <node concept="Vb9p2" id="4ZoQlQrqCyx" role="3F10Kt">
@@ -3296,7 +3297,6 @@
     <property role="3GE5qa" value="model_access" />
     <ref role="1XX52x" to="hba4:1IlnVQ9J0Vi" resolve="SafeWriteAction" />
     <node concept="3EZMnI" id="1IlnVQ9J0VZ" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <node concept="3F0ifn" id="1IlnVQ9J0W0" role="3EZMnx">
         <property role="3F0ifm" value="safe write action with" />
         <node concept="Vb9p2" id="1IlnVQ9J0W1" role="3F10Kt">
@@ -3361,7 +3361,6 @@
     <property role="3GE5qa" value="typeswitch" />
     <ref role="1XX52x" to="hba4:6HZ4hJtSpVN" resolve="TypeSwitchCaseMappingMethodCall" />
     <node concept="3EZMnI" id="hwllSQF" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="PMmxH" id="4k0WLUKaRxg" role="3EZMnx">
         <ref role="PMmxG" to="tpen:4k0WLUKaCd7" resolve="IMethodCall_typeArguments" />
         <node concept="VPM3Z" id="48lPkMUs$aT" role="3F10Kt">
@@ -3411,6 +3410,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="2cvVnUuAkNy">
+    <property role="3GE5qa" value="dispatch" />
     <ref role="aqKnT" to="hba4:kLJ1m5HKp0" resolve="CallRecursivelyExpression" />
     <node concept="1Qtc8_" id="2cvVnUuAkNz" role="IW6Ez">
       <node concept="3cWJ9i" id="2cvVnUuAkN$" role="1Qtc8$">

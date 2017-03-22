@@ -28,10 +28,10 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
-      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5">
-        <reference id="5299096511375896640" name="superConcept" index="3eA5LN" />
-      </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="7613853987897845671" name="jetbrains.mps.lang.behavior.structure.SuperConceptExpression" flags="ng" index="3pZB1V">
+        <reference id="7613853987897845672" name="superConcept" index="3pZB1O" />
+      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -220,8 +220,8 @@
               </node>
             </node>
             <node concept="2OqwBi" id="2D1PBM_bz0B" role="33vP2m">
-              <node concept="13iAh5" id="2D1PBM_bz0z" role="2Oq$k0">
-                <ref role="3eA5LN" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+              <node concept="3pZB1V" id="5RIakkDITup" role="2Oq$k0">
+                <ref role="3pZB1O" to="tpee:gyVMwX8" resolve="ConceptFunction" />
               </node>
               <node concept="2qgKlT" id="2D1PBM_bz0y" role="2OqNvi">
                 <ref role="37wK5l" to="tpek:2D1PBM_bxJg" resolve="getApplicableConceptFunctionParameter" />
@@ -249,7 +249,7 @@
             <node concept="2pJPED" id="23_jb1yLoB" role="2pJPEn">
               <ref role="2pJxaS" to="tp25:gzTqbfa" resolve="SNodeType" />
               <node concept="2pIpSj" id="23_jb1yLrq" role="2pJxcM">
-                <ref role="2pIpSl" to="tp25:g$ehGDh" />
+                <ref role="2pIpSl" to="tp25:g$ehGDh" resolve="concept" />
                 <node concept="36biLy" id="23_jb1yLs1" role="2pJxcZ">
                   <node concept="2OqwBi" id="23_jb1yLWc" role="36biLW">
                     <node concept="2OqwBi" id="23_jb1yLwO" role="2Oq$k0">
@@ -263,7 +263,7 @@
                       </node>
                     </node>
                     <node concept="3TrEf2" id="23_jb1yM47" role="2OqNvi">
-                      <ref role="3Tt5mk" to="aozb:7uF2w19TiHk" />
+                      <ref role="3Tt5mk" to="aozb:7uF2w19TiHk" resolve="concept" />
                     </node>
                   </node>
                 </node>

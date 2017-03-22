@@ -131,10 +131,13 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -896,7 +899,6 @@
             <node concept="1pGfFk" id="3S9K2Ovqgws" role="2ShVmc">
               <ref role="37wK5l" to="oy5q:3S9K2OvpxTZ" resolve="FirstConceptGivenThenRandomConceptChooser" />
               <node concept="1PxgMI" id="3S9K2OvqhY5" role="37wK5m">
-                <ref role="1m5ApE" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                 <node concept="2OqwBi" id="3S9K2Ovqhn3" role="1m5AlR">
                   <node concept="2OqwBi" id="3S9K2OvqgGZ" role="2Oq$k0">
                     <node concept="13iPFW" id="3S9K2Ovqgy2" role="2Oq$k0" />
@@ -907,6 +909,9 @@
                   <node concept="3TrEf2" id="3S9K2OvqhzV" role="2OqNvi">
                     <ref role="3Tt5mk" to="gfdq:7K2NL56H6Rl" resolve="conceptDeclaration" />
                   </node>
+                </node>
+                <node concept="chp4Y" id="5RIakkDIXGf" role="3oSUPX">
+                  <ref role="cht4Q" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                 </node>
               </node>
             </node>

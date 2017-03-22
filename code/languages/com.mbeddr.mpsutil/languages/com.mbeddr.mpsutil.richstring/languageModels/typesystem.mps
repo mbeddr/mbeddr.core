@@ -184,7 +184,6 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
@@ -773,9 +772,11 @@
                 <node concept="17R0WA" id="5Bl4dfrk1$A" role="3uHU7w">
                   <node concept="2OqwBi" id="5Bl4dfrk1$C" role="3uHU7B">
                     <node concept="1PxgMI" id="5Bl4dfrk1$D" role="2Oq$k0">
-                      <ref role="1m5ApE" to="tpee:g7uibYu" resolve="ClassifierType" />
                       <node concept="2GrUjf" id="15E$Thfqfor" role="1m5AlR">
                         <ref role="2Gs0qQ" node="5Bl4dfqWNSP" resolve="typicalType" />
+                      </node>
+                      <node concept="chp4Y" id="5RIakkDJ2RL" role="3oSUPX">
+                        <ref role="cht4Q" to="tpee:g7uibYu" resolve="ClassifierType" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="5Bl4dfrk1$F" role="2OqNvi">

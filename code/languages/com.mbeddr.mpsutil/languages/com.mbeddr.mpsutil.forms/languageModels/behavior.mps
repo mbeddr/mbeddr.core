@@ -27,8 +27,8 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
-      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5">
-        <reference id="5299096511375896640" name="superConcept" index="3eA5LN" />
+      <concept id="7613853987897845671" name="jetbrains.mps.lang.behavior.structure.SuperConceptExpression" flags="ng" index="3pZB1V">
+        <reference id="7613853987897845672" name="superConcept" index="3pZB1O" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -138,8 +138,8 @@
               </node>
             </node>
             <node concept="2OqwBi" id="2D1PBM_bzYu" role="33vP2m">
-              <node concept="13iAh5" id="2D1PBM_bzYq" role="2Oq$k0">
-                <ref role="3eA5LN" to="tp4f:hyWqYN0" resolve="IMember" />
+              <node concept="3pZB1V" id="5RIakkDIV0z" role="2Oq$k0">
+                <ref role="3pZB1O" to="tp4f:hyWqYN0" resolve="IMember" />
               </node>
               <node concept="2qgKlT" id="2D1PBM_bzYp" role="2OqNvi">
                 <ref role="37wK5l" to="tp4h:2D1PBM_bxJ5" resolve="getOperationConcept" />

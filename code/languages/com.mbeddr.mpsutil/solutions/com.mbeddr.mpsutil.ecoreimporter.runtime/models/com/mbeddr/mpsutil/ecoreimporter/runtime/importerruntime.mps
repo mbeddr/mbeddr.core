@@ -245,8 +245,8 @@
       </concept>
       <concept id="1166648550386" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewRootNodeOperation" flags="nn" index="2xF2bX" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
@@ -1258,7 +1258,6 @@
                     <ref role="2pIpSl" to="tpce:fKM4eW5" resolve="memberDataType" />
                     <node concept="36biLy" id="60d$i5siy41" role="2pJxcZ">
                       <node concept="1PxgMI" id="60d$i5siy42" role="36biLW">
-                        <ref role="1m5ApE" to="tpce:fKQkHSB" resolve="PrimitiveDataTypeDeclaration" />
                         <node concept="2OqwBi" id="60d$i5siy43" role="1m5AlR">
                           <node concept="1N_AGu" id="60d$i5siy44" role="2Oq$k0">
                             <ref role="1N_AGt" to="tpck:fKAQMTA" resolve="integer" />
@@ -1276,6 +1275,9 @@
                               </node>
                             </node>
                           </node>
+                        </node>
+                        <node concept="chp4Y" id="5RIakkDJUnb" role="3oSUPX">
+                          <ref role="cht4Q" to="tpce:fKQkHSB" resolve="PrimitiveDataTypeDeclaration" />
                         </node>
                       </node>
                     </node>
@@ -1983,9 +1985,11 @@
                                 <ref role="ehGHo" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
                               </node>
                               <node concept="1PxgMI" id="60d$i5skO18" role="33vP2m">
-                                <ref role="1m5ApE" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
                                 <node concept="37vLTw" id="60d$i5skO19" role="1m5AlR">
                                   <ref role="3cqZAo" node="60d$i5skO03" resolve="classNode" />
+                                </node>
+                                <node concept="chp4Y" id="5RIakkDJUnd" role="3oSUPX">
+                                  <ref role="cht4Q" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
                                 </node>
                               </node>
                             </node>
@@ -2004,9 +2008,11 @@
                                 <node concept="1rXfSq" id="60d$i5skO1g" role="25WWJ7">
                                   <ref role="37wK5l" node="60d$i5skWR5" resolve="createInterfaceReference" />
                                   <node concept="1PxgMI" id="60d$i5skO1h" role="37wK5m">
-                                    <ref role="1m5ApE" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
                                     <node concept="37vLTw" id="60d$i5skO1i" role="1m5AlR">
                                       <ref role="3cqZAo" node="60d$i5skO0r" resolve="superClassNode" />
+                                    </node>
+                                    <node concept="chp4Y" id="5RIakkDJUn6" role="3oSUPX">
+                                      <ref role="cht4Q" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
                                     </node>
                                   </node>
                                 </node>
@@ -2034,9 +2040,11 @@
                             <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                           </node>
                           <node concept="1PxgMI" id="60d$i5skO1r" role="33vP2m">
-                            <ref role="1m5ApE" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                             <node concept="37vLTw" id="60d$i5skO1s" role="1m5AlR">
                               <ref role="3cqZAo" node="60d$i5skO03" resolve="classNode" />
+                            </node>
+                            <node concept="chp4Y" id="5RIakkDJUn8" role="3oSUPX">
+                              <ref role="cht4Q" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                             </node>
                           </node>
                         </node>
@@ -2057,9 +2065,11 @@
                                 <node concept="1rXfSq" id="60d$i5skO1_" role="25WWJ7">
                                   <ref role="37wK5l" node="60d$i5skWR5" resolve="createInterfaceReference" />
                                   <node concept="1PxgMI" id="60d$i5skO1A" role="37wK5m">
-                                    <ref role="1m5ApE" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
                                     <node concept="37vLTw" id="60d$i5skO1B" role="1m5AlR">
                                       <ref role="3cqZAo" node="60d$i5skO0r" resolve="superClassNode" />
+                                    </node>
+                                    <node concept="chp4Y" id="5RIakkDJUn7" role="3oSUPX">
+                                      <ref role="cht4Q" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
                                     </node>
                                   </node>
                                 </node>
@@ -2101,9 +2111,11 @@
                                     </node>
                                     <node concept="2oxUTD" id="60d$i5skO1S" role="2OqNvi">
                                       <node concept="1PxgMI" id="60d$i5skO1T" role="2oxUTC">
-                                        <ref role="1m5ApE" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                                         <node concept="37vLTw" id="60d$i5skO1U" role="1m5AlR">
                                           <ref role="3cqZAo" node="60d$i5skO0r" resolve="superClassNode" />
+                                        </node>
+                                        <node concept="chp4Y" id="5RIakkDJUna" role="3oSUPX">
+                                          <ref role="cht4Q" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                                         </node>
                                       </node>
                                     </node>
@@ -2131,9 +2143,11 @@
                                         <node concept="1rXfSq" id="60d$i5skO25" role="25WWJ7">
                                           <ref role="37wK5l" node="60d$i5sl7$c" resolve="mapClassToInterface" />
                                           <node concept="1PxgMI" id="60d$i5skO26" role="37wK5m">
-                                            <ref role="1m5ApE" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                                             <node concept="37vLTw" id="60d$i5skO27" role="1m5AlR">
                                               <ref role="3cqZAo" node="60d$i5skO0r" resolve="superClassNode" />
+                                            </node>
+                                            <node concept="chp4Y" id="5RIakkDJUnc" role="3oSUPX">
+                                              <ref role="cht4Q" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                                             </node>
                                           </node>
                                         </node>
@@ -2211,9 +2225,11 @@
         <node concept="3clFbF" id="60d$i5skWRg" role="3cqZAp">
           <node concept="37vLTI" id="60d$i5skWRh" role="3clFbG">
             <node concept="1PxgMI" id="60d$i5skWRi" role="37vLTx">
-              <ref role="1m5ApE" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
               <node concept="37vLTw" id="60d$i5skWRj" role="1m5AlR">
                 <ref role="3cqZAo" node="60d$i5skWRr" resolve="superClassNode" />
+              </node>
+              <node concept="chp4Y" id="5RIakkDJUn9" role="3oSUPX">
+                <ref role="cht4Q" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
               </node>
             </node>
             <node concept="2OqwBi" id="60d$i5skWRk" role="37vLTJ">
