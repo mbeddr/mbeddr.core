@@ -9877,6 +9877,9 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1E0d5M" id="79i$vAXZ$ES" role="1E1XAP">
+          <ref role="1E0d5P" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
+        </node>
       </node>
       <node concept="1E1JtA" id="6hvYmWkk_$$" role="2G$12L">
         <property role="BnDLt" value="true" />

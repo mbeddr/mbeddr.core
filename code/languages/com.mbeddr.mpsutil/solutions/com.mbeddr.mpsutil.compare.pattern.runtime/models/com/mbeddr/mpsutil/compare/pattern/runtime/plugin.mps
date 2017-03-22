@@ -3714,7 +3714,7 @@
                     <ref role="3cqZAo" node="1xH_Y2TtHpX" resolve="property" />
                   </node>
                   <node concept="3TrEf2" id="7h4r8m40Xp9" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tpce:fKAX2Z_" />
+                    <ref role="3Tt5mk" to="tpce:fKAX2Z_" resolve="dataType" />
                   </node>
                 </node>
               </node>
@@ -3728,7 +3728,7 @@
                       <ref role="3cqZAo" node="1xH_Y2TtHpX" resolve="property" />
                     </node>
                     <node concept="3TrEf2" id="7h4r8m410VV" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tpce:fKAX2Z_" />
+                      <ref role="3Tt5mk" to="tpce:fKAX2Z_" resolve="dataType" />
                     </node>
                   </node>
                 </node>

@@ -247,8 +247,8 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -4725,9 +4725,11 @@
             <node concept="3cpWs6" id="48d3CNbP5OP" role="3cqZAp">
               <node concept="2OqwBi" id="48d3CNbP67t" role="3cqZAk">
                 <node concept="1PxgMI" id="48d3CNbP5UX" role="2Oq$k0">
-                  <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
                   <node concept="37vLTw" id="48d3CNbP5QV" role="1m5AlR">
                     <ref role="3cqZAo" node="5CpZY8cXt_i" resolve="node" />
+                  </node>
+                  <node concept="chp4Y" id="5RIakkDJSIH" role="3oSUPX">
+                    <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="48d3CNbP6dC" role="2OqNvi">

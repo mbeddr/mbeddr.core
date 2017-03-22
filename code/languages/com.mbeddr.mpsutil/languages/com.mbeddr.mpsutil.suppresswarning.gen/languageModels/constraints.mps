@@ -79,9 +79,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -147,7 +150,6 @@
                   <node concept="3clFbS" id="5RKBOhe65Tb" role="1bW5cS">
                     <node concept="3clFbF" id="5RKBOhe66A8" role="3cqZAp">
                       <node concept="1PxgMI" id="5RKBOhe6hs6" role="3clFbG">
-                        <ref role="1m5ApE" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                         <node concept="2OqwBi" id="5RKBOhe67oD" role="1m5AlR">
                           <node concept="37vLTw" id="5RKBOhe66A7" role="2Oq$k0">
                             <ref role="3cqZAo" node="5RKBOhe65Tc" resolve="it" />
@@ -155,6 +157,9 @@
                           <node concept="liA8E" id="5RKBOhe6e$$" role="2OqNvi">
                             <ref role="37wK5l" to="c17a:~SAbstractConcept.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
                           </node>
+                        </node>
+                        <node concept="chp4Y" id="5RIakkDJ3yz" role="3oSUPX">
+                          <ref role="cht4Q" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                         </node>
                       </node>
                     </node>
