@@ -14284,6 +14284,12 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
+        <node concept="1SiIV0" id="79i$vAYf031" role="3bR37C">
+          <node concept="3bR9La" id="79i$vAYf032" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="rlw0PZUl1_" role="2G$12L">
         <property role="BnDLt" value="true" />
