@@ -2,8 +2,8 @@
 <model ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -311,6 +311,16 @@
     <node concept="1TJgyi" id="5meTu9orykl" role="1TKVEl">
       <property role="TrG5h" value="singleClientOnly" />
       <property role="IQ2nx" value="6165117700225770773" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="36Bkyc49pe4" role="1TKVEl">
+      <property role="TrG5h" value="mandatory" />
+      <property role="IQ2nx" value="3577918739316052868" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="2cSPe2KM0zi" role="1TKVEl">
+      <property role="TrG5h" value="hidden" />
+      <property role="IQ2nx" value="2538012451526936786" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="7JjETeGbFPQ" role="1TKVEi">
