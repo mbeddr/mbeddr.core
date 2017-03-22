@@ -250,6 +250,7 @@
       <concept id="1194565793557" name="jetbrains.mps.lang.generator.structure.IncludeMacro" flags="ln" index="xERo3">
         <reference id="1194566366375" name="includeTemplate" index="xH3mL" />
       </concept>
+      <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -263,6 +264,9 @@
       <concept id="1225228973247" name="jetbrains.mps.lang.generator.structure.MapSrcMacro_PostMapperFunction" flags="in" index="15lBmy" />
       <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
+      </concept>
+      <concept id="1087833466690" name="jetbrains.mps.lang.generator.structure.NodeMacro" flags="lg" index="17VmuZ">
+        <reference id="1200912223215" name="mappingLabel" index="2rW$FS" />
       </concept>
       <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
@@ -1151,7 +1155,7 @@
           </node>
         </node>
         <node concept="raruj" id="XrrhtvD5wm" role="lGtFl">
-          <ref role="2sdACS" to="tpc3:5QbehOJMFlo" resolve="generated.constructor" />
+          <ref role="2sdACS" to="tpc3:hG00Hig" resolve="generatedClass" />
         </node>
         <node concept="3clFbW" id="XrrhtvD5wn" role="jymVt">
           <node concept="3Tm1VV" id="XrrhtvD5wo" role="1B3o_S" />
@@ -1200,6 +1204,9 @@
             <node concept="3uibUv" id="XrrhtvD5wF" role="1tU5fm">
               <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
             </node>
+          </node>
+          <node concept="2ZBi8u" id="79i$vAYeIlr" role="lGtFl">
+            <ref role="2rW$FS" to="tpc3:5QbehOJMFlo" resolve="generated.constructor" />
           </node>
         </node>
         <node concept="3clFb_" id="XrrhtvD5wG" role="jymVt">

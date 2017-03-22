@@ -192,6 +192,12 @@
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
@@ -384,6 +390,17 @@
               </node>
               <node concept="3clFbJ" id="1zHTo2aFvAz" role="3cqZAp">
                 <node concept="3clFbS" id="1zHTo2aFvA$" role="3clFbx">
+                  <node concept="34ab3g" id="79i$vAYdjnF" role="3cqZAp">
+                    <property role="35gtTG" value="error" />
+                    <node concept="3cpWs3" id="79i$vAYdjZ$" role="34bqiv">
+                      <node concept="37vLTw" id="79i$vAYdk0g" role="3uHU7w">
+                        <ref role="3cqZAo" node="3JlQl$aTpui" resolve="path" />
+                      </node>
+                      <node concept="Xl_RD" id="79i$vAYdjnH" role="3uHU7B">
+                        <property role="Xl_RC" value="path does not exist: " />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3cpWs6" id="1zHTo2aFvA_" role="3cqZAp">
                     <node concept="Xl_RD" id="1zHTo2aFvAA" role="3cqZAk">
                       <property role="Xl_RC" value="" />
@@ -2492,7 +2509,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="54IGzzogWdr" role="3cqZAp" />
+        <node concept="3clFbH" id="79i$vAYd$sL" role="3cqZAp" />
         <node concept="3clFbJ" id="_kBiYD9XXV" role="3cqZAp">
           <node concept="3clFbS" id="_kBiYD9XXX" role="3clFbx">
             <node concept="3SKdUt" id="_kBiYDab8D" role="3cqZAp">
@@ -2596,7 +2613,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="54IGzzogWQg" role="3cqZAp" />
+        <node concept="3clFbH" id="79i$vAYdnaN" role="3cqZAp" />
         <node concept="3clFbJ" id="2iGZqsHIJgr" role="3cqZAp">
           <node concept="3clFbS" id="2iGZqsHIJgu" role="3clFbx">
             <node concept="3cpWs8" id="4Wn4fzjJqF1" role="3cqZAp">
