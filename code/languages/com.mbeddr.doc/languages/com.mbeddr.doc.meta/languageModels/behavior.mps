@@ -103,7 +103,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -200,7 +199,7 @@
               <node concept="17QB3L" id="2aAVv8F0xSx" role="10Q1$1" />
             </node>
             <node concept="2OqwBi" id="2aAVv8F0xSS" role="33vP2m">
-              <node concept="3cpWs2" id="45LXldK0Hj1" role="2Oq$k0">
+              <node concept="37vLTw" id="45LXldK0Hj1" role="2Oq$k0">
                 <ref role="3cqZAo" node="45LXldK0HiS" resolve="code" />
               </node>
               <node concept="liA8E" id="2aAVv8F0y3_" role="2OqNvi">
@@ -412,7 +411,7 @@
       <node concept="3Tm1VV" id="2Ou3blVYW3G" role="1B3o_S" />
       <node concept="3clFbS" id="2Ou3blVYW3H" role="3clF47">
         <node concept="3clFbF" id="2Ou3blVYW5h" role="3cqZAp">
-          <node concept="3cpWs2" id="2Ou3blVYW5i" role="3clFbG">
+          <node concept="37vLTw" id="2Ou3blVYW5i" role="3clFbG">
             <ref role="3cqZAo" node="2Ou3blVYW5d" resolve="code" />
           </node>
         </node>
@@ -515,7 +514,7 @@
             <node concept="2OqwBi" id="1T7O9iWOVZg" role="2Oq$k0">
               <node concept="13iPFW" id="1T7O9iWOVWx" role="2Oq$k0" />
               <node concept="3TrEf2" id="1T7O9iWOWnE" role="2OqNvi">
-                <ref role="3Tt5mk" to="soy0:3OU98G0_S3I" />
+                <ref role="3Tt5mk" to="soy0:3OU98G0_S3I" resolve="moduleRef" />
               </node>
             </node>
             <node concept="3TrcHB" id="1T7O9iWOWIE" role="2OqNvi">
@@ -550,7 +549,7 @@
                   <node concept="2OqwBi" id="1T7O9iWMxos" role="2Oq$k0">
                     <node concept="13iPFW" id="1T7O9iWPTGF" role="2Oq$k0" />
                     <node concept="3TrEf2" id="1T7O9iWMxou" role="2OqNvi">
-                      <ref role="3Tt5mk" to="soy0:3OU98G0_S3I" />
+                      <ref role="3Tt5mk" to="soy0:3OU98G0_S3I" resolve="moduleRef" />
                     </node>
                   </node>
                   <node concept="3TrcHB" id="1T7O9iWMxov" role="2OqNvi">

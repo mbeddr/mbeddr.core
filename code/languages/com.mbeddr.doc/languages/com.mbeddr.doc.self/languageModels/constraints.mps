@@ -32,7 +32,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -87,7 +86,7 @@
   <node concept="1M2fIO" id="7$DvC4gPWkc">
     <ref role="1M2myG" to="z5ox:5$bT90ZcZti" resolve="SectionAsImageParagraph" />
     <node concept="1N5Pfh" id="7$DvC4gSPbN" role="1Mr941">
-      <ref role="1N5Vy1" to="z5ox:7$DvC4gPSIs" />
+      <ref role="1N5Vy1" to="z5ox:7$DvC4gPSIs" resolve="section" />
       <node concept="1MUpDS" id="7$DvC4gSPbP" role="1N6uqs">
         <node concept="3clFbS" id="7$DvC4gSPbQ" role="2VODD2">
           <node concept="3clFbF" id="7$DvC4gSPfb" role="3cqZAp">
@@ -109,7 +108,7 @@
                     <node concept="3clFbF" id="7$DvC4gSPgU" role="3cqZAp">
                       <node concept="3fqX7Q" id="7$DvC4gSPgV" role="3clFbG">
                         <node concept="2OqwBi" id="7$DvC4gSPhi" role="3fr31v">
-                          <node concept="3cpWs2" id="7$DvC4gSPgX" role="2Oq$k0">
+                          <node concept="37vLTw" id="7$DvC4gSPgX" role="2Oq$k0">
                             <ref role="3cqZAo" node="7$DvC4gSPgS" resolve="it" />
                           </node>
                           <node concept="1mIQ4w" id="7$DvC4gSPhn" role="2OqNvi">

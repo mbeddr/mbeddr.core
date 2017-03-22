@@ -157,7 +157,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
         <child id="1206060619838" name="condition" index="3eO9$A" />
@@ -2338,7 +2337,7 @@
                 <ref role="3cqZAo" node="3$GaJTCUFmg" resolve="dc" />
               </node>
             </node>
-            <node concept="3cpWsa" id="5Hxjapwed0m" role="2Oq$k0">
+            <node concept="37vLTw" id="5Hxjapwed0m" role="2Oq$k0">
               <ref role="3cqZAo" node="3eWkbyCTBCD" resolve="model" />
             </node>
           </node>
@@ -2351,7 +2350,7 @@
                 <ref role="3cqZAo" node="3$GaJTCV81u" resolve="de" />
               </node>
             </node>
-            <node concept="3cpWsa" id="3$GaJTCVbUv" role="2Oq$k0">
+            <node concept="37vLTw" id="3$GaJTCVbUv" role="2Oq$k0">
               <ref role="3cqZAo" node="3eWkbyCTBCD" resolve="model" />
             </node>
           </node>
