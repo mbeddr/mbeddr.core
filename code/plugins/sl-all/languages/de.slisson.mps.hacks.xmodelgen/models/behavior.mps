@@ -87,12 +87,16 @@
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
@@ -143,14 +147,22 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <property id="4467513934994662257" name="forceMultiLine" index="TyiWK" />
+        <property id="4467513934994662256" name="forceOneLine" index="TyiWL" />
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -464,6 +476,53 @@
                   <ref role="3uigEE" to="r99j:~TemplateModule" resolve="TemplateModule" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1zwc1a68uQn" role="3cqZAp">
+          <property role="TyiWK" value="true" />
+          <property role="TyiWL" value="false" />
+          <node concept="3clFbS" id="1zwc1a68uQp" role="3clFbx">
+            <node concept="YS8fn" id="1zwc1a68vNc" role="3cqZAp">
+              <node concept="2ShNRf" id="1zwc1a68vN$" role="YScLw">
+                <node concept="1pGfFk" id="1zwc1a68zQ6" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="3cpWs3" id="1zwc1a68_n_" role="37wK5m">
+                    <node concept="Xl_RD" id="1zwc1a68_nC" role="3uHU7w">
+                      <property role="Xl_RC" value=". Try to rebuild the language." />
+                    </node>
+                    <node concept="3cpWs3" id="1zwc1a68$pK" role="3uHU7B">
+                      <node concept="Xl_RD" id="1zwc1a68zRI" role="3uHU7B">
+                        <property role="Xl_RC" value="Cannot find generator runtime for " />
+                      </node>
+                      <node concept="2OqwBi" id="1zwc1a68$Eu" role="3uHU7w">
+                        <node concept="2OqwBi" id="1zwc1a68$rM" role="2Oq$k0">
+                          <node concept="2JrnkZ" id="1zwc1a68$rN" role="2Oq$k0">
+                            <node concept="2OqwBi" id="1zwc1a68$rO" role="2JrQYb">
+                              <node concept="37vLTw" id="1zwc1a68$rP" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6KgrWUnjwFZ" resolve="mc" />
+                              </node>
+                              <node concept="I4A8Y" id="1zwc1a68$rQ" role="2OqNvi" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="1zwc1a68$rR" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="1zwc1a68_0s" role="2OqNvi">
+                          <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="1zwc1a68vyf" role="3clFbw">
+            <node concept="10Nm6u" id="1zwc1a68vMM" role="3uHU7w" />
+            <node concept="37vLTw" id="1zwc1a68v83" role="3uHU7B">
+              <ref role="3cqZAo" node="6KgrWUnjwGS" resolve="genRuntime" />
             </node>
           </node>
         </node>

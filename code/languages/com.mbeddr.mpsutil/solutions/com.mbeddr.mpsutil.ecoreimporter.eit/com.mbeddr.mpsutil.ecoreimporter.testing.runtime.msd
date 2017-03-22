@@ -31,6 +31,7 @@
     <module reference="c6420b75-4569-420d-aaf7-9bc590ad7b2a(com.mbeddr.mpsutil.comparator)" version="0" />
     <module reference="e6dc6717-1454-41ee-b1e1-a4ba4e611cc6(com.mbeddr.mpsutil.ecoreimporter.runtime)" version="0" />
     <module reference="ffbd903b-ad52-4445-bf75-2fdd816df24d(com.mbeddr.mpsutil.ecoreimporter.testing.runtime)" version="0" />
+    <module reference="d7931714-a11c-4108-aa0e-246d86070dad(com.mbeddr.mpsutil.smodule.runtime)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />

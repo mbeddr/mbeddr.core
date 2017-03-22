@@ -492,8 +492,8 @@
         </node>
         <node concept="34odk1" id="2XlXuxNGhcH" role="1dgzf0">
           <node concept="2kdhWc" id="2XlXuxNGiq1" role="34ocZk">
-            <node concept="727y6" id="2XlXuxNGiWs" role="3zVzRQ">
-              <ref role="3zVwH8" to="hqsm:4QgsNmKLLBx" resolve="typex" />
+            <node concept="727y6" id="5dT1Wgj43ga" role="3zVzRQ">
+              <ref role="3zVwH8" to="hqsm:7a3nU35cEKQ" resolve="type" />
             </node>
             <node concept="30NkWi" id="2XlXuxNGhMU" role="2kdhYM">
               <ref role="XkjO9" node="2A0WHmBjESM" resolve="constraint" />
@@ -503,14 +503,37 @@
             <property role="TrG5h" value="type" />
           </node>
         </node>
+        <node concept="34ocy7" id="5dT1Wgj492L" role="1dgzf0">
+          <node concept="34oehE" id="5dT1Wgj4eWi" role="34ocs8">
+            <node concept="2kdjtB" id="5dT1Wgj4hyp" role="2RGvlO">
+              <ref role="2UGuZ7" to="hqsm:RjyNapTFLl" resolve="ConceptReferenceType" />
+            </node>
+            <node concept="30NkWi" id="5dT1Wgj4ckq" role="2RGvhl">
+              <ref role="XkjO9" node="2XlXuxNGg1P" resolve="type" />
+            </node>
+          </node>
+        </node>
+        <node concept="34odk1" id="5dT1Wgj4xQS" role="1dgzf0">
+          <node concept="2kdhWc" id="5dT1Wgj4$yt" role="34ocZk">
+            <node concept="727y6" id="5dT1Wgj4AQV" role="3zVzRQ">
+              <ref role="3zVwH8" to="hqsm:6hXIxNuN5nr" resolve="concept" />
+            </node>
+            <node concept="30NkWi" id="5dT1Wgj4$ym" role="2kdhYM">
+              <ref role="XkjO9" node="2XlXuxNGg1P" resolve="type" />
+            </node>
+          </node>
+          <node concept="30KbLJ" id="5dT1Wgj4oqM" role="34ocZn">
+            <property role="TrG5h" value="concept" />
+          </node>
+        </node>
         <node concept="30Nfyg" id="54ERyg8KRCU" role="1dgzf0">
           <node concept="2ZRyFJ" id="54ERyg8KUrp" role="30Nf_D">
             <ref role="2ZRyFH" node="6h60itPDaar" resolve="Exact" />
             <node concept="2YIFZM" id="54ERyg8L22B" role="2ZRyFy">
               <ref role="1Pybhc" to="3o3z:~ImmutableSet" resolve="ImmutableSet" />
               <ref role="37wK5l" to="3o3z:~ImmutableSet.of(java.lang.Object):com.google.common.collect.ImmutableSet" resolve="of" />
-              <node concept="1sjAk5" id="54ERyg8L3NK" role="37wK5m">
-                <ref role="1sjAk2" node="2XlXuxNGg1P" resolve="type" />
+              <node concept="1sjAk5" id="5dT1Wgj4Dez" role="37wK5m">
+                <ref role="1sjAk2" node="5dT1Wgj4oqM" resolve="concept" />
               </node>
             </node>
           </node>
@@ -567,8 +590,8 @@
         </node>
         <node concept="34odk1" id="2A0WHmBoZ1t" role="1dgzf0">
           <node concept="2kdhWc" id="2A0WHmBoZa6" role="34ocZk">
-            <node concept="727y6" id="2A0WHmBoZmE" role="3zVzRQ">
-              <ref role="3zVwH8" to="55iy:RjyNapTDhB" resolve="type" />
+            <node concept="727y6" id="5dT1Wgj4Hg$" role="3zVzRQ">
+              <ref role="3zVwH8" to="55iy:5xvu2kRR5GP" resolve="type" />
             </node>
             <node concept="30NkWi" id="2A0WHmBoZ9Z" role="2kdhYM">
               <ref role="XkjO9" node="2A0WHmBjESM" resolve="constraint" />
@@ -578,14 +601,37 @@
             <property role="TrG5h" value="type" />
           </node>
         </node>
+        <node concept="34ocy7" id="5dT1Wgj4NMX" role="1dgzf0">
+          <node concept="34oehE" id="5dT1Wgj4NMY" role="34ocs8">
+            <node concept="2kdjtB" id="5dT1Wgj4NMZ" role="2RGvlO">
+              <ref role="2UGuZ7" to="hqsm:RjyNapTFLl" resolve="ConceptReferenceType" />
+            </node>
+            <node concept="30NkWi" id="5dT1Wgj4NN0" role="2RGvhl">
+              <ref role="XkjO9" node="2A0WHmBoYE5" resolve="type" />
+            </node>
+          </node>
+        </node>
+        <node concept="34odk1" id="5dT1Wgj4NN1" role="1dgzf0">
+          <node concept="2kdhWc" id="5dT1Wgj4NN2" role="34ocZk">
+            <node concept="727y6" id="5dT1Wgj4NN3" role="3zVzRQ">
+              <ref role="3zVwH8" to="hqsm:6hXIxNuN5nr" resolve="concept" />
+            </node>
+            <node concept="30NkWi" id="5dT1Wgj4NN4" role="2kdhYM">
+              <ref role="XkjO9" node="2A0WHmBoYE5" resolve="type" />
+            </node>
+          </node>
+          <node concept="30KbLJ" id="5dT1Wgj4NN5" role="34ocZn">
+            <property role="TrG5h" value="concept" />
+          </node>
+        </node>
         <node concept="30Nfyg" id="54ERyg8IXLl" role="1dgzf0">
           <node concept="2ZRyFJ" id="54ERyg8NHF3" role="30Nf_D">
             <ref role="2ZRyFH" node="6h60itPDaar" resolve="Exact" />
             <node concept="2YIFZM" id="54ERyg8NHF4" role="2ZRyFy">
               <ref role="1Pybhc" to="3o3z:~ImmutableSet" resolve="ImmutableSet" />
               <ref role="37wK5l" to="3o3z:~ImmutableSet.of(java.lang.Object):com.google.common.collect.ImmutableSet" resolve="of" />
-              <node concept="1sjAk5" id="54ERyg8NHF5" role="37wK5m">
-                <ref role="1sjAk2" node="2A0WHmBoYE5" resolve="type" />
+              <node concept="1sjAk5" id="5dT1Wgj4Tss" role="37wK5m">
+                <ref role="1sjAk2" node="5dT1Wgj4NN5" resolve="concept" />
               </node>
             </node>
           </node>
