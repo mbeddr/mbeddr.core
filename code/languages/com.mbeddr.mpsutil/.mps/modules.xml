@@ -28,8 +28,9 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker.sandbox/com.mbeddr.mpsutil.datepicker.sandbox.mpl" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker/com.mbeddr.mpsutil.datepicker.mpl" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.dependenciesdiagram/com.mbeddr.mpsutil.dependenciesdiagram.mpl" folder="rest.dependenciesdiagram" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoreimporter.testing/com.mbeddr.mpsutil.ecoreimporter.testing.mpl" folder="rest.ecoretransformationutils.metamodelimporter.testing" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoreimporter.util/com.mbeddr.mpsutil.ecoreimporter.util.mpl" folder="rest.ecoretransformationutils.metamodelimporter.runtime" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoreimporter.testing/com.mbeddr.mpsutil.ecore.testing.mpl" folder="rest.ecore.impl" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoreimporter.util/com.mbeddr.mpsutil.ecore.mpl" folder="rest.ecore.impl" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel/com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.mpl" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide.execution.lang/com.mbeddr.mpsutil.editingGuide.execution.lang.mpl" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide/com.mbeddr.mpsutil.editingGuide.mpl" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" folder="staging.querylist" />
@@ -107,7 +108,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.varscope/com.mbeddr.mpsutil.varscope.mpl" folder="stable.varscope" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.xml.fix/com.mbeddr.mpsutil.xml.fix.mpl" folder="stable.xml.fix" />
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="rest.multilingual" />
-      <modulePath path="$PROJECT_DIR$/languages/tcom.mbeddr.mpsutil.ecoreimporter.sandbox/com.mbeddr.mpsutil.ecoreimporter.sandbox.mpl" folder="rest.ecoretransformationutils.metamodelimporter" />
+      <modulePath path="$PROJECT_DIR$/languages/tcom.mbeddr.mpsutil.ecoreimporter.sandbox/com.mbeddr.mpsutil.ecoreimporter.sandbox.mpl" folder="rest.ecore" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="staging.actionsfilter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.breadcrumb.runtime/com.mbeddr.mpsutil.breadcrumb.runtime.msd" folder="rest.breadcrumb" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.buildutil.runtime/com.mbeddr.mpsutil.buildutil.runtime.msd" folder="rest.buildutil" />
@@ -127,11 +128,10 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.runtime/com.mbeddr.mpsutil.datepicker.runtime.msd" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.sandbox.demo/com.mbeddr.mpsutil.datepicker.sandbox.demo.msd" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/com.mbeddr.mpsutil.dependenciesdiagram.sandbox.msd" folder="rest.dependenciesdiagram" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ecoreexporter.playground/com.mbeddr.mpsutil.ecoreexporter.playground.msd" folder="rest.ecoretransformationutils.modelexporter" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ecoreimporter.eit/com.mbeddr.mpsutil.ecoreimporter.testing.runtime.msd" folder="rest.ecoretransformationutils.metamodelimporter.testing" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ecoreimporter.runtime/com.mbeddr.mpsutil.ecoreimporter.runtime.msd" folder="rest.ecoretransformationutils.metamodelimporter.runtime" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ecoreimporter.ui/com.mbeddr.mpsutil.ecoreimporter.ui.msd" folder="rest.ecoretransformationutils.metamodelimporter.runtime" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ecoretransformationutils.stubs/com.mbeddr.mpsutil.ecoretransformationutils.stubs.msd" folder="rest.ecoretransformationutils" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ecore.runtime/com.mbeddr.mpsutil.ecore.runtime.msd" folder="rest.ecore.impl" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ecore.testing.runtime/com.mbeddr.mpsutil.ecore.testing.runtime.msd" folder="rest.ecore.impl" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ecore.ui.modelexporter/com.mbeddr.mpsutil.ecore.ui.msd" folder="rest.ecore.impl" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ecoretransformationutils.stubs/com.mbeddr.mpsutil.ecore.stubs.msd" folder="rest.ecore.impl" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editingGuide.execution/com.mbeddr.mpsutil.editingGuide.execution.msd" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editingGuide.plugin/com.mbeddr.mpsutil.editingGuide.plugin.msd" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editingGuide.runtime/com.mbeddr.mpsutil.editingGuide.runtime.msd" folder="staging.editingGuide" />
@@ -201,10 +201,11 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.varscope.runtime/com.mbeddr.mpsutil.varscope.runtime.msd" folder="stable.varscope" />
       <modulePath path="$PROJECT_DIR$/solutions/com.opencsv/com.opencsv.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.xml/org.xml.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/test.com.mbeddr.mpsutil.ecoreimporter.runtime/test.com.mbeddr.mpsutil.ecoreimporter.msd" folder="rest.ecoretransformationutils.metamodelimporter.tests" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.compare.pattern.test/com.mbeddr.mpsutil.compare.pattern.test.msd" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" folder="staging.javainterpreter" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.compare/test.com.mbeddr.mpsutil.compare.msd" folder="staging.comparator" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecore.modelImportExport/test.com.mbeddr.mpsutil.ecore.modelImportExport.msd" folder="rest.ecore.tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoreimporter.runtime/test.com.mbeddr.mpsutil.ecore.metaModelImport.msd" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.extensionclass/test.com.mbeddr.mpsutil.extensionclass.msd" folder="staging.extensionclass" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar.test/test.com.mbeddr.mpsutil.iconchar.test.msd" folder="stable.iconchar" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar/test.com.mbeddr.mpsutil.iconchar.mpl" folder="stable.iconchar" />

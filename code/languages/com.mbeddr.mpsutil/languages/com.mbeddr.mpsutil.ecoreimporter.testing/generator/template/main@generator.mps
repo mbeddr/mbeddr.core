@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:df937395-e226-4b42-9bd5-c3a1bf93b3ad(com.mbeddr.mpsutil.ecoreimporter.testing.generator.template.main@generator)">
+<model ref="r:df937395-e226-4b42-9bd5-c3a1bf93b3ad(com.mbeddr.mpsutil.ecore.testing.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="d08b2078-ada5-40fa-a3c5-d721088dc626" name="com.mbeddr.mpsutil.ecoreimporter.testing" version="-1" />
+    <use id="d08b2078-ada5-40fa-a3c5-d721088dc626" name="com.mbeddr.mpsutil.ecore.testing" version="-1" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="bb8h" ref="r:4cf313a3-7e64-4224-8311-d7c686b712e0(com.mbeddr.mpsutil.ecoreimporter.testing.runtime.util)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
     <import index="mqum" ref="r:ec874b45-e888-42e6-995a-a298cefdff55(com.mbeddr.cimport.comparator.code)" />
-    <import index="3yw8" ref="r:b5d28a75-8cfb-4432-902c-b787795e0ea8(com.mbeddr.mpsutil.ecoreimporter.testing.structure)" />
+    <import index="3yw8" ref="r:b5d28a75-8cfb-4432-902c-b787795e0ea8(com.mbeddr.mpsutil.ecore.testing.structure)" />
+    <import index="p76z" ref="r:62e76a73-7fd3-4d03-9b49-0da2a82f5479(com.mbeddr.mpsutil.ecore.testing.runtime.main)" />
+    <import index="p76z" ref="r:62e76a73-7fd3-4d03-9b49-0da2a82f5479(com.mbeddr.mpsutil.ecore.testing.runtime.main)" />
+    <import index="p76z" ref="r:62e76a73-7fd3-4d03-9b49-0da2a82f5479(com.mbeddr.mpsutil.ecore.testing.runtime.main)" />
+    <import index="mqum" ref="r:ec874b45-e888-42e6-995a-a298cefdff55(com.mbeddr.cimport.comparator.code)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -161,11 +164,11 @@
             <node concept="3cpWsn" id="7ESlTHs227$" role="3cpWs9">
               <property role="TrG5h" value="testUtil" />
               <node concept="3uibUv" id="7ESlTHs227_" role="1tU5fm">
-                <ref role="3uigEE" to="bb8h:5D0nJiXT65I" resolve="EcoreImporterTestingUtil" />
+                <ref role="3uigEE" to="p76z:5D0nJiXT65I" resolve="EcoreImporterTestingUtil" />
               </node>
               <node concept="2ShNRf" id="7ESlTHs22sX" role="33vP2m">
                 <node concept="HV5vD" id="7ESlTHs26d8" role="2ShVmc">
-                  <ref role="HV5vE" to="bb8h:5D0nJiXT65I" resolve="EcoreImporterTestingUtil" />
+                  <ref role="HV5vE" to="p76z:5D0nJiXT65I" resolve="EcoreImporterTestingUtil" />
                 </node>
               </node>
             </node>
@@ -183,7 +186,7 @@
                   <ref role="3cqZAo" node="7ESlTHs227$" resolve="testUtil" />
                 </node>
                 <node concept="liA8E" id="7ESlTHs296f" role="2OqNvi">
-                  <ref role="37wK5l" to="bb8h:7ESlTHs1X50" resolve="getDifferences" />
+                  <ref role="37wK5l" to="p76z:7ESlTHs1X50" resolve="getDifferences" />
                   <node concept="37vLTw" id="7ESlTHs29bB" role="37wK5m">
                     <ref role="3cqZAo" node="6m31kJuBYFy" resolve="ecoreFile" />
                   </node>
@@ -217,7 +220,7 @@
                     <ref role="3cqZAo" node="7ESlTHs227$" resolve="testUtil" />
                   </node>
                   <node concept="liA8E" id="7ESlTHs2brs" role="2OqNvi">
-                    <ref role="37wK5l" to="bb8h:7ESlTHs1V$Z" resolve="printDifferences" />
+                    <ref role="37wK5l" to="p76z:7ESlTHs1V$Z" resolve="printDifferences" />
                   </node>
                 </node>
               </node>
