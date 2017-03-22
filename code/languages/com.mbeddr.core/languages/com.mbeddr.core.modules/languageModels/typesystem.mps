@@ -12270,7 +12270,7 @@
             <node concept="3clFbS" id="5FSgeeCVIzD" role="2LFqv$">
               <node concept="2MkqsV" id="5FSgeeD0wrS" role="3cqZAp">
                 <node concept="Xl_RD" id="5FSgeeD0wss" role="2MkJ7o">
-                  <property role="Xl_RC" value="can't modify a constant argument" />
+                  <property role="Xl_RC" value="cannot modify a constant argument" />
                 </node>
                 <node concept="2GrUjf" id="5FSgeeD0ww9" role="2OEOjV">
                   <ref role="2Gs0qQ" node="5FSgeeCVIz_" resolve="arg" />
