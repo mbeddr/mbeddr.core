@@ -139,7 +139,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/testingFrameworkReferenceLanguage.ecore" />
           </node>
           <node concept="BaHAS" id="7ESlTHsclfi" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testingFrameworkTestLanguageMatch.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.testingFrameworkTestLanguageMatch" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -167,7 +167,7 @@
                 <property role="3N1Lgt" value="test_Ecore_Files/testingFrameworkReferenceLanguage.ecore" />
               </node>
               <node concept="BaHAS" id="7ESlTHsclfC" role="1uyDA$">
-                <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testFailDifferentNumberOfChildren.structure" />
+                <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.testFailDifferentNumberOfChildren" />
                 <property role="BaGAP" value="" />
               </node>
             </node>
@@ -250,7 +250,7 @@
                 <property role="3N1Lgt" value="test_Ecore_Files/testingFrameworkReferenceLanguage.ecore" />
               </node>
               <node concept="BaHAS" id="rt4C5olTyi" role="1uyDA$">
-                <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testFailDifferentPropertyName.structure" />
+                <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.testFailDifferentPropertyName" />
                 <property role="BaGAP" value="" />
               </node>
             </node>

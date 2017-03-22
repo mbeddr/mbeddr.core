@@ -259,6 +259,9 @@
       <node concept="m$_yC" id="vOGyTeMA5D" role="m$_yJ">
         <ref role="m$_y1" node="Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
       </node>
+      <node concept="m$_yC" id="5ZsrU$Jfnm_" role="m$_yJ">
+        <ref role="m$_y1" node="5fGcQI8WTaQ" resolve="com.mbeddr.mpsutil.smodule" />
+      </node>
     </node>
     <node concept="m$_wf" id="33r_JpZ6k_l" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.platform.build" />
@@ -8459,16 +8462,16 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
-        <node concept="1yeLz9" id="4X7wieqKjiH" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.mpsutil.extensionclass#5712676642251909534" />
-          <property role="3LESm3" value="48a6601d-ba0a-4255-9bb4-da8a0a080574" />
-          <property role="2GAjPV" value="false" />
-        </node>
         <node concept="1SiIV0" id="5fGcQI94ezt" role="3bR37C">
           <node concept="3bR9La" id="5fGcQI94ezu" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
           </node>
+        </node>
+        <node concept="1yeLz9" id="4X7wieqKjiH" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.extensionclass#5712676642251909534" />
+          <property role="3LESm3" value="48a6601d-ba0a-4255-9bb4-da8a0a080574" />
+          <property role="2GAjPV" value="false" />
         </node>
       </node>
       <node concept="1E1JtA" id="2Bykr6DCkE7" role="2G$12L">
@@ -9550,17 +9553,8 @@
             <ref role="3bR37D" node="5FJiYrlOTtx" resolve="com.mbeddr.mpsutil.actionsfilter.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7YLbEQvciH9" role="3bR37C">
-          <node concept="3bR9La" id="7YLbEQvciHa" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
-          </node>
-        </node>
         <node concept="1E0d5M" id="5FJiYrlPhrQ" role="1E1XAP">
           <ref role="1E0d5P" node="5FJiYrlOTtx" resolve="com.mbeddr.mpsutil.actionsfilter.runtime" />
-        </node>
-        <node concept="1E0d5M" id="7YLbEQvgyh2" role="1E1XAP">
-          <ref role="1E0d5P" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
         </node>
         <node concept="1yeLz9" id="5FJiYrlPhrR" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.mpsutil.actionsfilter#6552539437647162784" />
@@ -9584,6 +9578,15 @@
               <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
             </node>
           </node>
+        </node>
+        <node concept="1SiIV0" id="7YLbEQvciH9" role="3bR37C">
+          <node concept="3bR9La" id="7YLbEQvciHa" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="7YLbEQvgyh2" role="1E1XAP">
+          <ref role="1E0d5P" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
         </node>
       </node>
       <node concept="1E1JtA" id="5FJiYrlOTtx" role="2G$12L">
@@ -11954,6 +11957,12 @@
             <ref role="1Busuk" node="1YMM4SJ2m0" resolve="com.mbeddr.doc" />
           </node>
         </node>
+        <node concept="1SiIV0" id="AnWVV13183" role="3bR37C">
+          <node concept="3bR9La" id="AnWVV13184" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
+          </node>
+        </node>
         <node concept="1yeLz9" id="5NpY9mnreED" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.doc.aspect#8077410651477853286" />
           <property role="3LESm3" value="85e5c424-ced3-49dc-8d44-c20cfe8896c2" />
@@ -12023,12 +12032,6 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="AnWVV13183" role="3bR37C">
-          <node concept="3bR9La" id="AnWVV13184" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" node="5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
           </node>
         </node>
       </node>
@@ -13883,75 +13886,6 @@
       <node concept="L2wRC" id="rlw0PZUq1n" role="39821P">
         <ref role="L2wRA" node="rlw0PZUl1_" resolve="test.de.itemis.mps.editor.celllayout.lang" />
       </node>
-      <node concept="L2wRC" id="7R_WcSTED1L" role="39821P">
-        <ref role="L2wRA" node="gaplkDbpUH" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.allInOne" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEE58" role="39821P">
-        <ref role="L2wRA" node="gaplkDbvfq" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classInterface" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEEsi" role="39821P">
-        <ref role="L2wRA" node="gaplkDbvDu" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleInterface" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEF9_" role="39821P">
-        <ref role="L2wRA" node="gaplkDbrQD" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleInterfaceSuperclass" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEFwN" role="39821P">
-        <ref role="L2wRA" node="gaplkDbw4p" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleReference" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEGea" role="39821P">
-        <ref role="L2wRA" node="gaplkDbwwb" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classNonMpsTypes" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEGfl" role="39821P">
-        <ref role="L2wRA" node="gaplkDbs1f" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classReference" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEGgy" role="39821P">
-        <ref role="L2wRA" node="gaplkDbscG" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classReferenceChild" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEGBS" role="39821P">
-        <ref role="L2wRA" node="gaplkDbsp0" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.emptyClass" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEGD9" role="39821P">
-        <ref role="L2wRA" node="gaplkDbsr2" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumInterface" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEH0z" role="39821P">
-        <ref role="L2wRA" node="gaplkDbsD4" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumNoUniqueInternalValue" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEHnZ" role="39821P">
-        <ref role="L2wRA" node="gaplkDbsFA" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumSuperClass" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEHJt" role="39821P">
-        <ref role="L2wRA" node="gaplkDbsVm" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInheritance" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEI6X" role="39821P">
-        <ref role="L2wRA" node="gaplkDbsYo" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInterfaceInheritance" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEIuv" role="39821P">
-        <ref role="L2wRA" node="gaplkDbtjo" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassEnumProperty" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEIQ3" role="39821P">
-        <ref role="L2wRA" node="gaplkDbtA$" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassMultipleProperty" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEJdD" role="39821P">
-        <ref role="L2wRA" node="gaplkDbtEA" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassOneProperty" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEJ_h" role="39821P">
-        <ref role="L2wRA" node="gaplkDbtZw" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassVaryingPropertyWithEnum" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEJWV" role="39821P">
-        <ref role="L2wRA" node="gaplkDbulh" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleEnum" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEKkB" role="39821P">
-        <ref role="L2wRA" node="gaplkDbtfQ" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.superClass" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEKGl" role="39821P">
-        <ref role="L2wRA" node="gaplkDbuLy" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testFailDifferentNumberOfChildren" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTEL45" role="39821P">
-        <ref role="L2wRA" node="gaplkDbv9S" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testFailDifferentPropertyName" />
-      </node>
-      <node concept="L2wRC" id="7R_WcSTELrR" role="39821P">
-        <ref role="L2wRA" node="gaplkDbuq3" resolve="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testingFrameworkTestLanguageMatch" />
-      </node>
       <node concept="L2wRC" id="7R_WcSTF3pr" role="39821P">
         <ref role="L2wRA" node="gaplkDboxx" resolve="test.com.mbeddr.mpsutil.ecoreimporter" />
       </node>
@@ -14721,655 +14655,6 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbpUH" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.allInOne" />
-        <property role="3LESm3" value="e74ee43c-f6f6-4b55-b8ed-0cb79b697915" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbq3_" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbqGb" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbrkK" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.allInOne" />
-              <node concept="2Ry0Ak" id="gaplkDbr_3" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.allInOne.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbrHc" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbrHd" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbrHe" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.allInOne#8858976468114961044" />
-          <property role="3LESm3" value="a743c9d5-2f8e-4183-a4d3-1651ffb5104b" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbrQD" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleInterfaceSuperclass" />
-        <property role="3LESm3" value="9cfc3731-f406-4e46-a545-79e9aefafd44" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbrQE" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbrQF" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbrQG" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleInterfaceSuperclass" />
-              <node concept="2Ry0Ak" id="gaplkDbyCk" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleInterfaceSuperclass.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbrQI" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbrQJ" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbrQK" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleInterfaceSuperclass#8858976468115265273" />
-          <property role="3LESm3" value="f3edc9e2-980f-486f-8b69-3e3fbf563313" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbs1f" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classReference" />
-        <property role="3LESm3" value="eb84ed7e-70ef-4230-b759-6b16b54eeb41" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbs1g" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbs1h" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbs1i" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classReference" />
-              <node concept="2Ry0Ak" id="gaplkDb_$Z" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classReference.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbs1k" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbs1l" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbs1m" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classReference#8858976468115246963" />
-          <property role="3LESm3" value="45c38f6e-fd99-4c5c-b40a-14fcf7d929d3" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbscG" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classReferenceChild" />
-        <property role="3LESm3" value="cf255a56-cc7a-4c37-95c3-50cf0cacee92" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbscH" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbscI" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbscJ" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classReferenceChild" />
-              <node concept="2Ry0Ak" id="gaplkDbBWK" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classReferenceChild.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbscL" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbscM" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbscN" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classReferenceChild#8858976468115246950" />
-          <property role="3LESm3" value="2c489acf-b45e-4b8c-a8ef-dbe6ca297169" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbsp0" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.emptyClass" />
-        <property role="3LESm3" value="1cc5815e-aaf2-4a2e-9e4c-655060fe7a7b" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbsp1" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbsp2" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbsp3" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.emptyClass" />
-              <node concept="2Ry0Ak" id="gaplkDbDZ1" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.emptyClass.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbsp5" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbsp6" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbsp7" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.emptyClass#8858976468115246973" />
-          <property role="3LESm3" value="270870c7-fd36-4f4c-a366-34fcd21d3052" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbsr2" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumInterface" />
-        <property role="3LESm3" value="c84e2446-df56-4a0f-9a00-ee324d090a48" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbsr3" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbsr4" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbsr5" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumInterface" />
-              <node concept="2Ry0Ak" id="gaplkDbG1i" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumInterface.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbsr7" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbsr8" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbsr9" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumInterface#8858976468115265100" />
-          <property role="3LESm3" value="ff7d2832-2bf6-4e08-92d7-cad2cfa28002" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbsD4" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumNoUniqueInternalValue" />
-        <property role="3LESm3" value="c1c03151-3c2e-463a-8d16-788367329918" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbsD5" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbsD6" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbsD7" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumNoUniqueInternalValue" />
-              <node concept="2Ry0Ak" id="gaplkDbHI3" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumNoUniqueInternalValue.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbsD9" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbsDa" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbsDb" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumNoUniqueInternalValue#8858976468115265133" />
-          <property role="3LESm3" value="51b4d180-2528-40cd-b259-02f9426808c7" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbsFA" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumSuperClass" />
-        <property role="3LESm3" value="ce51e24c-de0b-4710-99d2-385a0bdede4d" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbsFB" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbsFC" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbsFD" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumSuperClass" />
-              <node concept="2Ry0Ak" id="gaplkDbJKk" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumSuperClass.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbsFF" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbsFG" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbsFH" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumSuperClass#8858976468115265160" />
-          <property role="3LESm3" value="6b8571d8-2664-48b0-a201-48e56319303d" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbsVm" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInheritance" />
-        <property role="3LESm3" value="598d5e3e-5b27-4707-b9e5-7dbaa2700ab1" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbsVn" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbsVo" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbsVp" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInheritance" />
-              <node concept="2Ry0Ak" id="gaplkDbLt5" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInheritance.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbsVr" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbsVs" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbsVt" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInheritance#8858976468115265241" />
-          <property role="3LESm3" value="1d457a81-6e47-47e3-8249-9e146b231e65" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbsYo" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInterfaceInheritance" />
-        <property role="3LESm3" value="9ea5739f-11b6-4ef4-9fb3-61192386efca" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbsYp" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbsYq" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbsYr" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInterfaceInheritance" />
-              <node concept="2Ry0Ak" id="gaplkDbNOQ" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInterfaceInheritance.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbsYt" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbsYu" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbsYv" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInterfaceInheritance#8858976468115265191" />
-          <property role="3LESm3" value="5f9105dc-fb04-42a8-8e7a-432180565d2e" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbtfQ" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.superClass" />
-        <property role="3LESm3" value="f49299e5-cdfa-4961-9094-28edd7b38e17" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbtfR" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbtfS" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbtfT" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClass" />
-              <node concept="2Ry0Ak" id="gaplkDbQRB" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.superClass.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbtfV" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbtfW" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbtfX" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.superClass#8858976468115265398" />
-          <property role="3LESm3" value="92b2a572-077b-423c-ab5e-b1c496574e2f" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbtjo" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassEnumProperty" />
-        <property role="3LESm3" value="e399c658-41f4-4445-b7af-bb39ba940076" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbtjp" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbtjq" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbtjr" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassEnumProperty" />
-              <node concept="2Ry0Ak" id="gaplkDbTLM" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassEnumProperty.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbtjt" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbtju" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbtjv" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassEnumProperty#8858976468115265313" />
-          <property role="3LESm3" value="4aa557bc-9b5b-4c9b-bcad-8030b354a1f2" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbtA$" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassMultipleProperty" />
-        <property role="3LESm3" value="e6884175-e498-4fc4-98e9-b557790e8a36" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbtA_" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbtAA" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbtAB" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassMultipleProperty" />
-              <node concept="2Ry0Ak" id="gaplkDbVuz" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassMultipleProperty.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbtAD" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbtAE" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbtAF" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassMultipleProperty#8858976468115265343" />
-          <property role="3LESm3" value="efa88218-b948-40b0-a182-2c8dc58f40ad" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbtEA" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassOneProperty" />
-        <property role="3LESm3" value="c60f622a-9f9a-4f7f-9dc4-f408dc96785a" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbtEB" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbtEC" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbtED" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassOneProperty" />
-              <node concept="2Ry0Ak" id="gaplkDbXwO" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassOneProperty.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbtEF" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbtEG" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbtEH" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassOneProperty#8858976468115265352" />
-          <property role="3LESm3" value="f77150cd-ca6b-477e-b9c1-811403ba56e9" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbtZw" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassVaryingPropertyWithEnum" />
-        <property role="3LESm3" value="ba55a5f3-e0f0-4b99-b3cc-9ddff4acf2de" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbtZx" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbtZy" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbtZz" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassVaryingPropertyWithEnum" />
-              <node concept="2Ry0Ak" id="gaplkDbZd_" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassVaryingPropertyWithEnum.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbtZ_" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbtZA" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbtZB" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassVaryingPropertyWithEnum#8858976468115265357" />
-          <property role="3LESm3" value="2746a7f4-cdfd-4741-a75b-055784de58c8" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbulh" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleEnum" />
-        <property role="3LESm3" value="3acebce9-bec1-4192-acf7-c77b4fd8dc1c" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbuli" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbulj" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbulk" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleEnum" />
-              <node concept="2Ry0Ak" id="gaplkDc1_m" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleEnum.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbulm" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbuln" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbulo" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleEnum#8858976468115265389" />
-          <property role="3LESm3" value="5b9ec6a7-e25a-43b2-af30-32110fc3df3e" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbuq3" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testingFrameworkTestLanguageMatch" />
-        <property role="3LESm3" value="417cb36b-55c0-4052-a46e-a6fb92801958" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbuq4" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbuq5" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbuq6" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testLanguage1" />
-              <node concept="2Ry0Ak" id="gaplkDc3i7" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testingFrameworkTestLanguageMatch.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbuqa" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testingFrameworkTestLanguageMatch#7314696043194888473" />
-          <property role="3LESm3" value="da51642e-8420-46e7-a3e5-3fd8be8c6d89" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbuLy" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testFailDifferentNumberOfChildren" />
-        <property role="3LESm3" value="c220e21b-ebd4-4924-84ab-4c2dac9c325f" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbuLz" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbuL$" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbuL_" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testLanguageNoMatch" />
-              <node concept="2Ry0Ak" id="gaplkDc5ko" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testFailDifferentNumberOfChildren.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbuLD" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testFailDifferentNumberOfChildren#7314696043195263862" />
-          <property role="3LESm3" value="04c4ff03-2afd-4030-973b-57e6b77e48a9" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbv9S" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testFailDifferentPropertyName" />
-        <property role="3LESm3" value="80007ac6-8cae-453d-b524-2c3a8572b02a" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbv9T" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbv9U" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbv9V" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testlanguageNoMatch2" />
-              <node concept="2Ry0Ak" id="gaplkDc7mD" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testFailDifferentPropertyName.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbv9Z" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testFailDifferentPropertyName#8842914193120241012" />
-          <property role="3LESm3" value="1ce2d391-5984-4a74-a7b9-97496ba2df2f" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbvfq" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classInterface" />
-        <property role="3LESm3" value="de498ea8-9d38-4ae5-969d-9ca0c36f2ab0" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbvfr" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbvfs" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbvft" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mosutil.ecoreimporter.runtime.classInterface" />
-              <node concept="2Ry0Ak" id="gaplkDcb51" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classInterface.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbvfv" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbvfw" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbvfx" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classInterface#8858976468115184740" />
-          <property role="3LESm3" value="474a858f-29b3-4e5a-82b6-e84fc490ef10" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbvDu" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleInterface" />
-        <property role="3LESm3" value="6c6fc4dc-54d5-4ec7-ae5e-69eb19cf8003" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbvDv" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbvDw" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbvDx" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mosutil.ecoreimporter.runtime.multipleInterface" />
-              <node concept="2Ry0Ak" id="gaplkDcdMi" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleInterface.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbvDz" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbvD$" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbvD_" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleInterface#8858976468115194764" />
-          <property role="3LESm3" value="252bb277-1bff-47b0-8630-c4db1415c5ed" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbw4p" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleReference" />
-        <property role="3LESm3" value="ec053041-0e50-41b4-8ad3-e67f2d089386" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbw4q" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbw4r" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbw4s" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mosutil.ecoreimporter.runtime.multipleReference" />
-              <node concept="2Ry0Ak" id="gaplkDcga3" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleReference.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbw4u" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbw4v" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbw4w" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleReference#8858976468115231722" />
-          <property role="3LESm3" value="0bf07a41-0824-46ee-959a-a6e42ee08aaa" />
-          <property role="2GAjPV" value="false" />
-        </node>
-      </node>
-      <node concept="1E1JtD" id="gaplkDbwwb" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classNonMpsTypes" />
-        <property role="3LESm3" value="3f23fc8c-ad6c-4003-a6ba-21b224b88171" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="gaplkDbwwc" role="3LF7KH">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-          <node concept="2Ry0Ak" id="gaplkDbwwd" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="gaplkDbwwe" role="2Ry0An">
-              <property role="2Ry0Am" value="test.com.mbeddr.mosutil.ecoreimporter.runtime.nonMpsTypes" />
-              <node concept="2Ry0Ak" id="gaplkDcjyk" role="2Ry0An">
-                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classNonMpsTypes.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="gaplkDbwwg" role="3bR37C">
-          <node concept="3bR9La" id="gaplkDbwwh" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecoreimporter.util" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="gaplkDbwwi" role="1TViLv">
-          <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classNonMpsTypes#8858976468115231740" />
-          <property role="3LESm3" value="316742fe-b7d9-410a-8785-9b46893eb6c0" />
-          <property role="2GAjPV" value="false" />
         </node>
       </node>
     </node>
