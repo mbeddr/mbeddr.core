@@ -141,7 +141,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
@@ -212,8 +211,8 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -345,12 +344,14 @@
               <ref role="ehGHo" to="3vkx:34d3$NxXi73" resolve="RCalculation" />
             </node>
             <node concept="1PxgMI" id="$bJ0jgVdfl" role="33vP2m">
-              <ref role="1m5ApE" to="3vkx:34d3$NxXi73" resolve="RCalculation" />
               <node concept="2OqwBi" id="$bJ0jgVdfm" role="1m5AlR">
                 <node concept="37vLTw" id="$bJ0jgVdfn" role="2Oq$k0">
                   <ref role="3cqZAo" node="$bJ0jgVdfV" resolve="tc" />
                 </node>
                 <node concept="1mfA1w" id="$bJ0jgVdfo" role="2OqNvi" />
+              </node>
+              <node concept="chp4Y" id="79i$vAY7gmE" role="3oSUPX">
+                <ref role="cht4Q" to="3vkx:34d3$NxXi73" resolve="RCalculation" />
               </node>
             </node>
           </node>
@@ -941,12 +942,14 @@
               <ref role="ehGHo" to="3vkx:34d3$NxXi73" resolve="RCalculation" />
             </node>
             <node concept="1PxgMI" id="3$DH87aK4an" role="33vP2m">
-              <ref role="1m5ApE" to="3vkx:34d3$NxXi73" resolve="RCalculation" />
               <node concept="2OqwBi" id="3$DH87aK4ao" role="1m5AlR">
                 <node concept="37vLTw" id="3$DH87aK4ap" role="2Oq$k0">
                   <ref role="3cqZAo" node="3$DH87aJZyc" resolve="tc" />
                 </node>
                 <node concept="1mfA1w" id="3$DH87aK4aq" role="2OqNvi" />
+              </node>
+              <node concept="chp4Y" id="79i$vAY7gmH" role="3oSUPX">
+                <ref role="cht4Q" to="3vkx:34d3$NxXi73" resolve="RCalculation" />
               </node>
             </node>
           </node>
@@ -1236,7 +1239,7 @@
                 </node>
                 <node concept="2OqwBi" id="4NDzuYt3jjW" role="33vP2m">
                   <node concept="2OqwBi" id="4NDzuYt3jjX" role="2Oq$k0">
-                    <node concept="3cpWsa" id="4NDzuYt3jjY" role="2Oq$k0">
+                    <node concept="37vLTw" id="4NDzuYt3jjY" role="2Oq$k0">
                       <ref role="3cqZAo" node="3iWeQsvpgDs" resolve="calc" />
                     </node>
                     <node concept="3Tsc0h" id="4NDzuYt3jjZ" role="2OqNvi">
@@ -1531,7 +1534,6 @@
               <ref role="ehGHo" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
             </node>
             <node concept="1PxgMI" id="$bJ0jgVdiC" role="33vP2m">
-              <ref role="1m5ApE" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
               <node concept="2OqwBi" id="$bJ0jgVdiD" role="1m5AlR">
                 <node concept="2OqwBi" id="$bJ0jgVdiE" role="2Oq$k0">
                   <node concept="2Sf5sV" id="$bJ0jgVdiF" role="2Oq$k0" />
@@ -1545,6 +1547,9 @@
                     <property role="3cmrfH" value="1" />
                   </node>
                 </node>
+              </node>
+              <node concept="chp4Y" id="79i$vAY7gmA" role="3oSUPX">
+                <ref role="cht4Q" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
               </node>
             </node>
           </node>
