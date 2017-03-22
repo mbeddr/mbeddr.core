@@ -211,7 +211,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
@@ -617,7 +616,7 @@
                   </node>
                   <node concept="3y3z36" id="4vuSA6yLw2d" role="3K4Cdx">
                     <node concept="10Nm6u" id="4vuSA6yLw2g" role="3uHU7w" />
-                    <node concept="3cpWsa" id="1LST_zkjl_c" role="3uHU7B">
+                    <node concept="37vLTw" id="1LST_zkjl_c" role="3uHU7B">
                       <ref role="3cqZAo" node="1LST_zkjl_5" resolve="vp" />
                     </node>
                   </node>
@@ -1378,6 +1377,7 @@
     </node>
   </node>
   <node concept="3p36aQ" id="2cvVnUv6DBD">
+    <property role="3GE5qa" value="platform" />
     <ref role="aqKnT" to="51wr:7$0wAVofq4u" resolve="PlatformReference" />
     <node concept="2F$Pav" id="2cvVnUv6DBF" role="3ft7WO">
       <node concept="3Tqbb2" id="2cvVnUv6DBG" role="2ZBHrp">
