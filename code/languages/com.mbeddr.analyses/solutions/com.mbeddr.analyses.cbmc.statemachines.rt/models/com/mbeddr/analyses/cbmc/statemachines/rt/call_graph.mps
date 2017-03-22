@@ -106,8 +106,8 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -302,21 +302,23 @@
                     <node concept="TSZUe" id="153zJclMt9l" role="2OqNvi">
                       <node concept="2OqwBi" id="153zJclMu3r" role="25WWJ7">
                         <node concept="1PxgMI" id="153zJclMtQV" role="2Oq$k0">
-                          <ref role="1m5ApE" to="clqz:6NQSyUTqXkL" resolve="StatemachineType" />
                           <node concept="2OqwBi" id="153zJclMtrH" role="1m5AlR">
                             <node concept="2OqwBi" id="153zJclMKWN" role="2Oq$k0">
                               <node concept="37vLTw" id="153zJclMtiB" role="2Oq$k0">
                                 <ref role="3cqZAo" node="153zJclMrnm" resolve="gde" />
                               </node>
                               <node concept="3TrEf2" id="153zJclMLmL" role="2OqNvi">
-                                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
                               </node>
                             </node>
                             <node concept="3JvlWi" id="153zJclMtD_" role="2OqNvi" />
                           </node>
+                          <node concept="chp4Y" id="79i$vAY7DC2" role="3oSUPX">
+                            <ref role="cht4Q" to="clqz:6NQSyUTqXkL" resolve="StatemachineType" />
+                          </node>
                         </node>
                         <node concept="3TrEf2" id="153zJclMuqC" role="2OqNvi">
-                          <ref role="3Tt5mk" to="clqz:6NQSyUTqXkM" />
+                          <ref role="3Tt5mk" to="clqz:6NQSyUTqXkM" resolve="machine" />
                         </node>
                       </node>
                     </node>
@@ -331,7 +333,7 @@
                         <ref role="3cqZAo" node="153zJclMrnm" resolve="gde" />
                       </node>
                       <node concept="3TrEf2" id="153zJclMJHU" role="2OqNvi">
-                        <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                        <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
                       </node>
                     </node>
                     <node concept="3JvlWi" id="153zJclMrR4" role="2OqNvi" />
@@ -348,7 +350,7 @@
                       <ref role="3cqZAo" node="153zJclMrnm" resolve="gde" />
                     </node>
                     <node concept="3TrEf2" id="153zJclMovK" role="2OqNvi">
-                      <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                      <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
                     </node>
                   </node>
                   <node concept="3x8VRR" id="153zJclMp7W" role="2OqNvi" />

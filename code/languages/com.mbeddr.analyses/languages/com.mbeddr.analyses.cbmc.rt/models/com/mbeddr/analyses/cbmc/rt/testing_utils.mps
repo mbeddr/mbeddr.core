@@ -239,8 +239,8 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
@@ -505,7 +505,6 @@
                 <node concept="37vLTI" id="24GUsn9E5Bb" role="3clFbG">
                   <node concept="2OqwBi" id="5hPtIcZGhtH" role="37vLTx">
                     <node concept="1PxgMI" id="5hPtIcZGhtI" role="2Oq$k0">
-                      <ref role="1m5ApE" to="x27k:5_l8w1EmTvx" resolve="Function" />
                       <node concept="2OqwBi" id="5hPtIcZGhtJ" role="1m5AlR">
                         <node concept="37vLTw" id="5hPtIcZGhtK" role="2Oq$k0">
                           <ref role="3cqZAo" node="24GUsn9DcM1" resolve="cfg" />
@@ -513,6 +512,9 @@
                         <node concept="3TrEf2" id="5hPtIcZGhtL" role="2OqNvi">
                           <ref role="3Tt5mk" to="q5q6:5BkFC2yhyH$" resolve="entryPoint" />
                         </node>
+                      </node>
+                      <node concept="chp4Y" id="79i$vAY7tvG" role="3oSUPX">
+                        <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="5hPtIcZGhtM" role="2OqNvi">

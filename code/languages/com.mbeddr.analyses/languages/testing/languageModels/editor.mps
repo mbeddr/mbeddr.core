@@ -154,12 +154,15 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -203,10 +206,12 @@
                     <node concept="2OqwBi" id="7MMcIPlaB$7" role="3uHU7B">
                       <node concept="2OqwBi" id="7MMcIPlaB$8" role="2Oq$k0">
                         <node concept="1PxgMI" id="7MMcIPlaB$9" role="2Oq$k0">
-                          <ref role="1m5ApE" to="o23b:49Y2Xia4hId" resolve="CBMCCounterexampleTest" />
                           <node concept="2OqwBi" id="7MMcIPlaB$a" role="1m5AlR">
                             <node concept="pncrf" id="7MMcIPlaB$b" role="2Oq$k0" />
                             <node concept="1mfA1w" id="7MMcIPlaB$c" role="2OqNvi" />
+                          </node>
+                          <node concept="chp4Y" id="79i$vAY7thC" role="3oSUPX">
+                            <ref role="cht4Q" to="o23b:49Y2Xia4hId" resolve="CBMCCounterexampleTest" />
                           </node>
                         </node>
                         <node concept="3Tsc0h" id="7MMcIPlaB$d" role="2OqNvi">

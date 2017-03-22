@@ -187,8 +187,8 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -587,9 +587,11 @@
                         </node>
                         <node concept="2OqwBi" id="5hi7ucOlvwA" role="3uHU7w">
                           <node concept="1PxgMI" id="5hi7ucOlvwB" role="2Oq$k0">
-                            <ref role="1m5ApE" to="ir22:GpUw9S5_Xd" resolve="ProcType" />
                             <node concept="37vLTw" id="5hi7ucOlvwC" role="1m5AlR">
                               <ref role="3cqZAo" node="5hi7ucOlbX2" resolve="it" />
+                            </node>
+                            <node concept="chp4Y" id="79i$vAY7sOd" role="3oSUPX">
+                              <ref role="cht4Q" to="ir22:GpUw9S5_Xd" resolve="ProcType" />
                             </node>
                           </node>
                           <node concept="3TrcHB" id="5hi7ucOlvwD" role="2OqNvi">

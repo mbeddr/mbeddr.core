@@ -114,7 +114,6 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -708,7 +707,7 @@
       <node concept="3clFbS" id="44LesUVAvHO" role="3clF47">
         <node concept="XkiVB" id="44LesUVAvHP" role="3cqZAp">
           <ref role="37wK5l" to="eqhl:4XbM$YHffxN" resolve="CBMCLiftedResult" />
-          <node concept="3cpWs2" id="44LesUVAvHQ" role="37wK5m">
+          <node concept="37vLTw" id="44LesUVAvHQ" role="37wK5m">
             <ref role="3cqZAo" node="44LesUVAvHI" resolve="liftedResult" />
           </node>
         </node>
@@ -948,10 +947,10 @@
             <node concept="NRdvd" id="3x0R1LJ5Crc" role="33vP2m">
               <ref role="1Pybhc" to="8ear:6GZ1x5GshiS" resolve="CBMCLiftedResultBuilder" />
               <ref role="37wK5l" to="8ear:6GZ1x5Gshjx" resolve="buildCBMCLiftedResult" />
-              <node concept="3cpWs2" id="3x0R1LJ5Crd" role="37wK5m">
+              <node concept="37vLTw" id="3x0R1LJ5Crd" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5Cr3" resolve="rawResult" />
               </node>
-              <node concept="3cpWs2" id="3x0R1LJ5Cre" role="37wK5m">
+              <node concept="37vLTw" id="3x0R1LJ5Cre" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5Cr5" resolve="analyzedConcept" />
               </node>
             </node>

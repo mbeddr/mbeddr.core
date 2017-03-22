@@ -114,8 +114,8 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -162,12 +162,14 @@
             <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
           </node>
           <node concept="1PxgMI" id="1BFQdmK01Pb" role="33vP2m">
-            <ref role="1m5ApE" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
             <node concept="2OqwBi" id="1BFQdmK01Pc" role="1m5AlR">
               <node concept="1YBJjd" id="1BFQdmK01Pd" role="2Oq$k0">
                 <ref role="1YBMHb" node="1BFQdmK00_D" resolve="discreteValuesExpression" />
               </node>
               <node concept="1mfA1w" id="1BFQdmK01Pe" role="2OqNvi" />
+            </node>
+            <node concept="chp4Y" id="79i$vAY7skZ" role="3oSUPX">
+              <ref role="cht4Q" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
             </node>
           </node>
         </node>
@@ -203,9 +205,11 @@
                 <node concept="37vLTI" id="1BFQdmK1tFF" role="3clFbG">
                   <node concept="2OqwBi" id="1BFQdmK1tuo" role="37vLTx">
                     <node concept="1PxgMI" id="1BFQdmK1tup" role="2Oq$k0">
-                      <ref role="1m5ApE" to="yq40:4VhroexOKM1" resolve="ArrayType" />
                       <node concept="2X3wrD" id="1BFQdmK1tuq" role="1m5AlR">
                         <ref role="2X3Bk0" node="1BFQdmK00_K" resolve="tov" />
+                      </node>
+                      <node concept="chp4Y" id="79i$vAY7sl1" role="3oSUPX">
+                        <ref role="cht4Q" to="yq40:4VhroexOKM1" resolve="ArrayType" />
                       </node>
                     </node>
                     <node concept="3TrEf2" id="1BFQdmK1tur" role="2OqNvi">

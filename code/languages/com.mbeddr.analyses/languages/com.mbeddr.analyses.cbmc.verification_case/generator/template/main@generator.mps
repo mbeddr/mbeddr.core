@@ -231,8 +231,8 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -548,12 +548,14 @@
                         <node concept="3clFbS" id="HiHa_$mfuX" role="2VODD2">
                           <node concept="3clFbF" id="HiHa_$mg8_" role="3cqZAp">
                             <node concept="1PxgMI" id="HiHa_$miuk" role="3clFbG">
-                              <ref role="1m5ApE" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
                               <node concept="2OqwBi" id="HiHa_$mgjN" role="1m5AlR">
                                 <node concept="30H73N" id="HiHa_$mg8$" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="HiHa_$mhGL" role="2OqNvi">
                                   <ref role="3Tt5mk" to="48a0:2L0t9wJ0hAO" resolve="varRef" />
                                 </node>
+                              </node>
+                              <node concept="chp4Y" id="79i$vAY7qTW" role="3oSUPX">
+                                <ref role="cht4Q" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
                               </node>
                             </node>
                           </node>

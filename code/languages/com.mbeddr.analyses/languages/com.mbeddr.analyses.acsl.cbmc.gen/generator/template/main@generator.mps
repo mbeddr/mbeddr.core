@@ -217,8 +217,8 @@
         <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -323,9 +323,11 @@
           <node concept="2OqwBi" id="5OLOS2sRbci" role="3cqZAk">
             <node concept="2OqwBi" id="5OLOS2sRbv$" role="2Oq$k0">
               <node concept="1PxgMI" id="5OLOS2sRb5y" role="2Oq$k0">
-                <ref role="1m5ApE" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
                 <node concept="37vLTw" id="5OLOS2sRrsu" role="1m5AlR">
                   <ref role="3cqZAo" node="5OLOS2sRcQ6" resolve="rc" />
+                </node>
+                <node concept="chp4Y" id="79i$vAY7pEr" role="3oSUPX">
+                  <ref role="cht4Q" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
                 </node>
               </node>
               <node concept="3TrEf2" id="5OLOS2sRbBW" role="2OqNvi">
