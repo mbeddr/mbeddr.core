@@ -184,8 +184,8 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -329,9 +329,11 @@
                   <ref role="3Tt5mk" to="v7ag:1OLGDVffrKn" resolve="genStrategy" />
                 </node>
                 <node concept="1PxgMI" id="to$mQWqpXI" role="2Oq$k0">
-                  <ref role="1m5ApE" to="v7ag:1OLGDVfeZ18" resolve="ComponentsConfigItem" />
                   <node concept="37vLTw" id="43Joy80Lo9K" role="1m5AlR">
                     <ref role="3cqZAo" node="to$mQWqpXo" resolve="rc" />
+                  </node>
+                  <node concept="chp4Y" id="79i$vAY77Np" role="3oSUPX">
+                    <ref role="cht4Q" to="v7ag:1OLGDVfeZ18" resolve="ComponentsConfigItem" />
                   </node>
                 </node>
               </node>
