@@ -48,10 +48,6 @@
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
-      <concept id="1173175405605" name="jetbrains.mps.baseLanguage.structure.ArrayAccessExpression" flags="nn" index="AH0OO">
-        <child id="1173175577737" name="index" index="AHEQo" />
-        <child id="1173175590490" name="array" index="AHHXb" />
-      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -844,17 +840,20 @@
       <node concept="3Tm1VV" id="5yCVlKN$AZh" role="1B3o_S" />
       <node concept="3clFbS" id="5yCVlKN$AZi" role="3clF47">
         <node concept="3clFbF" id="5yCVlKN$DZh" role="3cqZAp">
-          <node concept="AH0OO" id="5yCVlKN$E0V" role="3clFbG">
-            <node concept="3cmrfG" id="5yCVlKN$E0Y" role="AHEQo">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="2OqwBi" id="5yCVlKN$DZA" role="AHHXb">
+          <node concept="2OqwBi" id="$BWPj2Zxpa" role="3clFbG">
+            <node concept="2OqwBi" id="5yCVlKN$DZA" role="2Oq$k0">
               <node concept="2YIFZM" id="5yCVlKN$DZj" role="2Oq$k0">
                 <ref role="37wK5l" to="z1c3:~ProjectManager.getInstance():jetbrains.mps.project.ProjectManager" resolve="getInstance" />
                 <ref role="1Pybhc" to="z1c3:~ProjectManager" resolve="ProjectManager" />
               </node>
               <node concept="liA8E" id="5yCVlKN$DZG" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenProjects():jetbrains.mps.project.Project[]" resolve="getOpenProjects" />
+                <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenedProjects():java.util.List" resolve="getOpenedProjects" />
+              </node>
+            </node>
+            <node concept="liA8E" id="$BWPj2ZzcL" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+              <node concept="3cmrfG" id="$BWPj2ZznN" role="37wK5m">
+                <property role="3cmrfH" value="0" />
               </node>
             </node>
           </node>

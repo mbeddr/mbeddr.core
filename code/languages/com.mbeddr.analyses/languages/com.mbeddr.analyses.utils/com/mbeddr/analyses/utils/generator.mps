@@ -47,9 +47,6 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
-      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
-        <child id="1070534760952" name="componentType" index="10Q1$1" />
-      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -183,7 +180,6 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
-      <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
@@ -477,8 +473,8 @@
         <node concept="3cpWs8" id="3NWJ$jvViK" role="3cqZAp">
           <node concept="3cpWsn" id="3NWJ$jvViL" role="3cpWs9">
             <property role="TrG5h" value="openedProjects" />
-            <node concept="10Q1$e" id="3NWJ$jvViM" role="1tU5fm">
-              <node concept="3uibUv" id="3NWJ$jvViN" role="10Q1$1">
+            <node concept="A3Dl8" id="$BWPj2Z_RB" role="1tU5fm">
+              <node concept="3uibUv" id="$BWPj2Z_RD" role="A3Ik2">
                 <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
               </node>
             </node>
@@ -488,7 +484,7 @@
                 <ref role="1Pybhc" to="z1c3:~ProjectManager" resolve="ProjectManager" />
               </node>
               <node concept="liA8E" id="3NWJ$jvViQ" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenProjects():jetbrains.mps.project.Project[]" resolve="getOpenProjects" />
+                <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenedProjects():java.util.List" resolve="getOpenedProjects" />
               </node>
             </node>
           </node>
@@ -520,11 +516,8 @@
               </node>
             </node>
             <node concept="2OqwBi" id="7XtTpp8W6QX" role="33vP2m">
-              <node concept="2OqwBi" id="7XtTpp8W6QY" role="2Oq$k0">
-                <node concept="37vLTw" id="7XtTpp8W6QZ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3NWJ$jvViL" resolve="openedProjects" />
-                </node>
-                <node concept="39bAoz" id="7XtTpp8W6R0" role="2OqNvi" />
+              <node concept="37vLTw" id="7XtTpp8W6QZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="3NWJ$jvViL" resolve="openedProjects" />
               </node>
               <node concept="3zZkjj" id="7XtTpp8W6R1" role="2OqNvi">
                 <node concept="1bVj0M" id="7XtTpp8W6R2" role="23t8la">
