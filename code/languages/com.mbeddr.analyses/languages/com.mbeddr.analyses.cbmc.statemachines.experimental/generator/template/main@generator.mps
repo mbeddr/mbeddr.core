@@ -290,8 +290,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
-        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -1086,6 +1086,7 @@
                             </node>
                             <node concept="2OqwBi" id="6IHX2xMOtuu" role="33vP2m">
                               <node concept="1PxgMI" id="6IHX2xMOtuv" role="2Oq$k0">
+                                <ref role="1m5ApE" to="clqz:6NQSyUTqXkL" resolve="StatemachineType" />
                                 <node concept="2OqwBi" id="6IHX2xMOtuw" role="1m5AlR">
                                   <node concept="2OqwBi" id="6IHX2xMOtux" role="2Oq$k0">
                                     <node concept="30H73N" id="6IHX2xMOtuy" role="2Oq$k0" />
@@ -1094,9 +1095,6 @@
                                     </node>
                                   </node>
                                   <node concept="3JvlWi" id="6IHX2xMOtu$" role="2OqNvi" />
-                                </node>
-                                <node concept="chp4Y" id="79i$vAY7qzD" role="3oSUPX">
-                                  <ref role="cht4Q" to="clqz:6NQSyUTqXkL" resolve="StatemachineType" />
                                 </node>
                               </node>
                               <node concept="3TrEf2" id="6IHX2xMOtu_" role="2OqNvi">

@@ -290,13 +290,10 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
-        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
-      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
-        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -886,6 +883,28 @@
                                           <ref role="3cqZAo" node="4Q9g1gQPfvw" resolve="index" />
                                         </node>
                                         <node concept="1PxgMI" id="4Q9g1gQPrRC" role="37wK5m">
+                                          <ref role="1m5ApE" to="tpck:4uZwTti3_$T" resolve="Attribute" />
+                                          <node concept="1ZhdrF" id="4Q9g1gQPtpY" role="lGtFl">
+                                            <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2396822768958367367/6733348108486823428" />
+                                            <property role="2qtEX8" value="concept" />
+                                            <node concept="3$xsQk" id="4Q9g1gQPtpZ" role="3$ytzL">
+                                              <node concept="3clFbS" id="4Q9g1gQPtq0" role="2VODD2">
+                                                <node concept="3clFbF" id="4Q9g1gQPtx5" role="3cqZAp">
+                                                  <node concept="2OqwBi" id="4Q9g1gQPtx7" role="3clFbG">
+                                                    <node concept="2OqwBi" id="4Q9g1gQPtx8" role="2Oq$k0">
+                                                      <node concept="30H73N" id="4Q9g1gQPtx9" role="2Oq$k0" />
+                                                      <node concept="2qgKlT" id="4Q9g1gQPtxa" role="2OqNvi">
+                                                        <ref role="37wK5l" to="wvyf:4Q9g1gQP3R9" resolve="getTargetLink" />
+                                                      </node>
+                                                    </node>
+                                                    <node concept="3TrEf2" id="4Q9g1gQPtxb" role="2OqNvi">
+                                                      <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
                                           <node concept="2YIFZM" id="4Q9g1gQPpQt" role="1m5AlR">
                                             <ref role="37wK5l" to="zce0:~NodeFactoryManager.createNode(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SModel):org.jetbrains.mps.openapi.model.SNode" resolve="createNode" />
                                             <ref role="1Pybhc" to="zce0:~NodeFactoryManager" resolve="NodeFactoryManager" />
@@ -902,30 +921,6 @@
                                               </node>
                                               <node concept="liA8E" id="4Q9g1gQPrHS" role="2OqNvi">
                                                 <ref role="37wK5l" to="cj4x:~EditorContext.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
-                                              </node>
-                                            </node>
-                                          </node>
-                                          <node concept="chp4Y" id="5RIakkDJ3UJ" role="3oSUPX">
-                                            <ref role="cht4Q" to="tpck:4uZwTti3_$T" resolve="Attribute" />
-                                            <node concept="1ZhdrF" id="4Q9g1gQPtpY" role="lGtFl">
-                                              <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/1177026924588/1177026940964" />
-                                              <property role="2qtEX8" value="conceptDeclaration" />
-                                              <node concept="3$xsQk" id="4Q9g1gQPtpZ" role="3$ytzL">
-                                                <node concept="3clFbS" id="4Q9g1gQPtq0" role="2VODD2">
-                                                  <node concept="3clFbF" id="4Q9g1gQPtx5" role="3cqZAp">
-                                                    <node concept="2OqwBi" id="4Q9g1gQPtx7" role="3clFbG">
-                                                      <node concept="2OqwBi" id="4Q9g1gQPtx8" role="2Oq$k0">
-                                                        <node concept="30H73N" id="4Q9g1gQPtx9" role="2Oq$k0" />
-                                                        <node concept="2qgKlT" id="4Q9g1gQPtxa" role="2OqNvi">
-                                                          <ref role="37wK5l" to="wvyf:4Q9g1gQP3R9" resolve="getTargetLink" />
-                                                        </node>
-                                                      </node>
-                                                      <node concept="3TrEf2" id="4Q9g1gQPtxb" role="2OqNvi">
-                                                        <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
-                                                      </node>
-                                                    </node>
-                                                  </node>
-                                                </node>
                                               </node>
                                             </node>
                                           </node>

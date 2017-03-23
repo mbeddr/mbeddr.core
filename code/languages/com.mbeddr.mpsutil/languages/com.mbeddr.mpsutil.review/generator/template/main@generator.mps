@@ -69,7 +69,7 @@
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
-      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
+      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -115,7 +115,7 @@
                       <node concept="37vLTw" id="4rtqL27$F$x" role="2Oq$k0">
                         <ref role="3cqZAo" node="4rtqL27$FxM" resolve="it" />
                       </node>
-                      <node concept="3YRAZt" id="4rtqL27$FJl" role="2OqNvi" />
+                      <node concept="1PgB_6" id="4rtqL27$FJl" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
@@ -145,7 +145,7 @@
                       <node concept="37vLTw" id="4rtqL27$Ik8" role="2Oq$k0">
                         <ref role="3cqZAo" node="4rtqL27$Iig" resolve="it" />
                       </node>
-                      <node concept="3YRAZt" id="4rtqL27$Ixe" role="2OqNvi" />
+                      <node concept="1PgB_6" id="4rtqL27$Ixe" role="2OqNvi" />
                     </node>
                   </node>
                 </node>

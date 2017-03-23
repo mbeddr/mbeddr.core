@@ -42,6 +42,9 @@
     <import index="h5vw" ref="r:c112e038-25e2-4722-a5bd-40f7a1fbb8e1(com.mbeddr.analyses.spin.promela.patterns.generator.template.utils)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
+    <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
+    <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
+    <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
     <import index="llb3" ref="r:38e1b852-361b-47c0-99e1-1944e9fcd4c9(com.mbeddr.analyses.spin.c.patterns.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -262,8 +265,8 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
-        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -420,10 +423,8 @@
             <node concept="2OqwBi" id="7KhWCFPU6yp" role="3clFbG">
               <node concept="2OqwBi" id="7KhWCFPU6yq" role="2Oq$k0">
                 <node concept="1PxgMI" id="7KhWCFPU6yr" role="2Oq$k0">
+                  <ref role="1m5ApE" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
                   <node concept="32cCaI" id="7KhWCFPU6ys" role="1m5AlR" />
-                  <node concept="chp4Y" id="79i$vAY7sKU" role="3oSUPX">
-                    <ref role="cht4Q" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
-                  </node>
                 </node>
                 <node concept="3Tsc0h" id="7KhWCFPU6yt" role="2OqNvi">
                   <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />

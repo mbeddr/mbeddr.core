@@ -305,8 +305,8 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
-        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
@@ -3407,12 +3407,10 @@
                 <node concept="2OqwBi" id="2kF1PD7lfPy" role="2Oq$k0">
                   <node concept="1PxgMI" id="2kF1PD7lfPz" role="2Oq$k0">
                     <property role="1BlNFB" value="true" />
+                    <ref role="1m5ApE" to="qnb1:2kF1PD7cruM" resolve="InternalComponentInstanceReference" />
                     <node concept="2OqwBi" id="2kF1PD7lfP$" role="1m5AlR">
                       <node concept="30H73N" id="2kF1PD7lfP_" role="2Oq$k0" />
                       <node concept="1mfA1w" id="2kF1PD7lfPA" role="2OqNvi" />
-                    </node>
-                    <node concept="chp4Y" id="79i$vAY77I6" role="3oSUPX">
-                      <ref role="cht4Q" to="qnb1:2kF1PD7cruM" resolve="InternalComponentInstanceReference" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="2kF1PD7lfPB" role="2OqNvi">

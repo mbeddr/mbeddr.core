@@ -185,8 +185,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
-        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -720,7 +720,7 @@
                   <ref role="2Gs0qQ" node="1LnB5xdv3Ds" resolve="wb" />
                 </node>
                 <node concept="3Tsc0h" id="1LnB5xdvB8O" role="2OqNvi">
-                  <ref role="3TtcxE" to="gnwj:1LnB5xduTCP" resolve="sheets" />
+                  <ref role="3TtcxE" to="gnwj:1LnB5xduTCP" />
                 </node>
               </node>
               <node concept="3clFbS" id="1LnB5xdvB8o" role="2LFqv$">
@@ -779,7 +779,7 @@
                       <ref role="2Gs0qQ" node="1LnB5xdvB8m" resolve="sheet" />
                     </node>
                     <node concept="3Tsc0h" id="1LnB5xdvCrm" role="2OqNvi">
-                      <ref role="3TtcxE" to="gnwj:1LnB5xduTD8" resolve="rows" />
+                      <ref role="3TtcxE" to="gnwj:1LnB5xduTD8" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="1LnB5xdvBas" role="2LFqv$">
@@ -820,7 +820,7 @@
                           <ref role="2Gs0qQ" node="1LnB5xdvBaq" resolve="row" />
                         </node>
                         <node concept="3Tsc0h" id="1LnB5xdvCro" role="2OqNvi">
-                          <ref role="3TtcxE" to="gnwj:1LnB5xduTDx" resolve="cells" />
+                          <ref role="3TtcxE" to="gnwj:1LnB5xduTDx" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="1LnB5xdvBEn" role="2LFqv$">
@@ -859,7 +859,7 @@
                                           <ref role="2Gs0qQ" node="1LnB5xdvBEl" resolve="cell" />
                                         </node>
                                         <node concept="3TrEf2" id="1LnB5xdxReq" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="gnwj:1LnB5xdxRds" resolve="style" />
+                                          <ref role="3Tt5mk" to="gnwj:1LnB5xdxRds" />
                                         </node>
                                       </node>
                                       <node concept="3TrcHB" id="1LnB5xdvRwr" role="2OqNvi">
@@ -880,7 +880,7 @@
                                 <ref role="2Gs0qQ" node="1LnB5xdvBEl" resolve="cell" />
                               </node>
                               <node concept="3TrEf2" id="1LnB5xdxRej" role="2OqNvi">
-                                <ref role="3Tt5mk" to="gnwj:1LnB5xdxRds" resolve="style" />
+                                <ref role="3Tt5mk" to="gnwj:1LnB5xdxRds" />
                               </node>
                             </node>
                             <node concept="3x8VRR" id="1LnB5xdvRuH" role="2OqNvi" />
@@ -895,11 +895,9 @@
                                   <ref role="ehGHo" to="gnwj:1LnB5xduTDw" resolve="TextCell" />
                                 </node>
                                 <node concept="1PxgMI" id="1LnB5xdvClz" role="33vP2m">
+                                  <ref role="1m5ApE" to="gnwj:1LnB5xduTDw" resolve="TextCell" />
                                   <node concept="2GrUjf" id="1LnB5xdvCl$" role="1m5AlR">
                                     <ref role="2Gs0qQ" node="1LnB5xdvBEl" resolve="cell" />
-                                  </node>
-                                  <node concept="chp4Y" id="79i$vAY2eBf" role="3oSUPX">
-                                    <ref role="cht4Q" to="gnwj:1LnB5xduTDw" resolve="TextCell" />
                                   </node>
                                 </node>
                               </node>
@@ -1087,7 +1085,7 @@
                       <ref role="2Gs0qQ" node="1LnB5xdvB8m" resolve="sheet" />
                     </node>
                     <node concept="3Tsc0h" id="1LnB5xdvDMB" role="2OqNvi">
-                      <ref role="3TtcxE" to="gnwj:1LnB5xdvCoT" resolve="groups" />
+                      <ref role="3TtcxE" to="gnwj:1LnB5xdvCoT" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="1LnB5xdvDMc" role="2LFqv$">
@@ -1209,7 +1207,7 @@
                                       <ref role="2Gs0qQ" node="1LnB5xdvB8m" resolve="sheet" />
                                     </node>
                                     <node concept="3Tsc0h" id="7FELQjI2q5X" role="2OqNvi">
-                                      <ref role="3TtcxE" to="gnwj:1LnB5xduTD8" resolve="rows" />
+                                      <ref role="3TtcxE" to="gnwj:1LnB5xduTD8" />
                                     </node>
                                   </node>
                                   <node concept="34oBXx" id="7FELQjI2q6p" role="2OqNvi" />
