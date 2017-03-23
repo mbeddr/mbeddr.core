@@ -285,7 +285,7 @@
       </concept>
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
-      <concept id="7080278351417106679" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertInNotNull" flags="nn" index="2Hmddi">
+      <concept id="7080278351417106679" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertIsNotNull" flags="nn" index="2Hmddi">
         <child id="7080278351417106681" name="expression" index="2Hmdds" />
       </concept>
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
@@ -303,7 +303,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
-        <property id="779128492853935960" name="anchorTag" index="1K8rD$" />
         <property id="779128492853934523" name="cellId" index="1K8rM7" />
         <property id="779128492853699361" name="side" index="1Kfyot" />
       </concept>
@@ -2183,9 +2182,8 @@
     <node concept="3XIRFW" id="6rhOS_xtjvx" role="LiZbd">
       <node concept="c0U19" id="6rhOS_xtkSG" role="3XIRFZ">
         <node concept="3XIRFW" id="6rhOS_xtkSH" role="c0U17">
-          <node concept="1KehLL" id="6rhOS_xt$8v" role="lGtFl">
+          <node concept="1KehLL" id="7_zN_5SXLeP" role="lGtFl">
             <property role="1K8rM7" value="Constant_u338ov_d0" />
-            <property role="1K8rD$" value="default_RTransform" />
             <property role="1Kfyot" value="right" />
           </node>
         </node>
