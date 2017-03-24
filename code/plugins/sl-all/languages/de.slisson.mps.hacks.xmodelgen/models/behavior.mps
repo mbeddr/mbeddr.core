@@ -2,8 +2,8 @@
 <model ref="r:0ec53dd0-9a58-48aa-9988-1fb798271b69(de.slisson.mps.hacks.xmodelgen.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -24,6 +24,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="28nf" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.impl.query(MPS.Core/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="mcvo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure.language(MPS.Core/)" />
     <import index="gxwz" ref="r:d1800018-44fb-4b2e-b3ae-2afea554d27b(de.slisson.mps.hacks.xmodelgen.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpf8" ref="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" implicit="true" />
@@ -89,6 +90,9 @@
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -151,10 +155,11 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -270,7 +275,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="Pogn2S69G4">
-    <ref role="13h7C2" to="gxwz:Pogn2S693Y" resolve="PoisonedLanguageIdentity" />
+    <ref role="13h7C2" to="gxwz:Pogn2S693Y" resolve="MCListLanguageIdentity" />
     <node concept="13hLZK" id="Pogn2S69G5" role="13h7CW">
       <node concept="3clFbS" id="Pogn2S69G6" role="2VODD2" />
     </node>
@@ -370,15 +375,20 @@
           </node>
         </node>
         <node concept="3cpWs6" id="6KgrWUnhUhY" role="3cqZAp">
-          <node concept="2ShNRf" id="6KgrWUnhUi0" role="3cqZAk">
-            <node concept="1pGfFk" id="6KgrWUnhUi1" role="2ShVmc">
-              <ref role="37wK5l" node="6KgrWUngqaN" resolve="MappingConfigurationList" />
-              <node concept="37vLTw" id="6KgrWUnhUVw" role="37wK5m">
-                <ref role="3cqZAo" node="6KgrWUnhUVs" resolve="list" />
+          <node concept="2OqwBi" id="21DAGcgrsda" role="3cqZAk">
+            <node concept="2ShNRf" id="6KgrWUnhUi0" role="2Oq$k0">
+              <node concept="1pGfFk" id="6KgrWUnhUi1" role="2ShVmc">
+                <ref role="37wK5l" node="6KgrWUngqaN" resolve="MappingConfigurationList" />
+                <node concept="37vLTw" id="6KgrWUnhUVw" role="37wK5m">
+                  <ref role="3cqZAo" node="6KgrWUnhUVs" resolve="list" />
+                </node>
+                <node concept="37vLTw" id="6KgrWUnhUi2" role="37wK5m">
+                  <ref role="3cqZAo" node="6KgrWUng057" resolve="langReg" />
+                </node>
               </node>
-              <node concept="37vLTw" id="6KgrWUnhUi2" role="37wK5m">
-                <ref role="3cqZAo" node="6KgrWUng057" resolve="langReg" />
-              </node>
+            </node>
+            <node concept="liA8E" id="21DAGcgrtjs" role="2OqNvi">
+              <ref role="37wK5l" node="21DAGcgrj1X" resolve="getIdHolder" />
             </node>
           </node>
         </node>
@@ -639,7 +649,7 @@
               <node concept="2ShNRf" id="Pogn2S6v6x" role="25WWJ7">
                 <node concept="3zrR0B" id="Pogn2S6vp$" role="2ShVmc">
                   <node concept="3Tqbb2" id="Pogn2S6vpA" role="3zrR0E">
-                    <ref role="ehGHo" to="gxwz:Pogn2S693Y" resolve="PoisonedLanguageIdentity" />
+                    <ref role="ehGHo" to="gxwz:Pogn2S693Y" resolve="MCListLanguageIdentity" />
                   </node>
                 </node>
               </node>
@@ -681,6 +691,34 @@
           <node concept="2YIFZM" id="21ms2Yw$E9m" role="37wK5m">
             <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
             <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="21DAGcgqwm5" role="jymVt">
+      <property role="TrG5h" value="languageIdHolder" />
+      <node concept="3Tm6S6" id="21DAGcgqwm6" role="1B3o_S" />
+      <node concept="3uibUv" id="21DAGcgqHj8" role="1tU5fm">
+        <ref role="3uigEE" to="mcvo:~SLanguageAdapterById" resolve="SLanguageAdapterById" />
+      </node>
+      <node concept="2ShNRf" id="21DAGcgqOW5" role="33vP2m">
+        <node concept="1pGfFk" id="21DAGcgrfTm" role="2ShVmc">
+          <ref role="37wK5l" to="mcvo:~SLanguageAdapterById.&lt;init&gt;(jetbrains.mps.smodel.adapter.ids.SLanguageId,java.lang.String)" resolve="SLanguageAdapterById" />
+          <node concept="37vLTw" id="21DAGcgqPIe" role="37wK5m">
+            <ref role="3cqZAo" node="21ms2Yw$zNv" resolve="id" />
+          </node>
+          <node concept="3cpWs3" id="21DAGcgqS$R" role="37wK5m">
+            <node concept="Xl_RD" id="21DAGcgqTum" role="3uHU7B">
+              <property role="Xl_RC" value="MappingConfigurationList_" />
+            </node>
+            <node concept="2OqwBi" id="21DAGcgqRqO" role="3uHU7w">
+              <node concept="37vLTw" id="21DAGcgqR9j" role="2Oq$k0">
+                <ref role="3cqZAo" node="21ms2Yw$zNv" resolve="id" />
+              </node>
+              <node concept="liA8E" id="21DAGcgqRF$" role="2OqNvi">
+                <ref role="37wK5l" to="e8bb:~SLanguageId.toString():java.lang.String" resolve="toString" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -728,11 +766,8 @@
             </node>
             <node concept="liA8E" id="6KgrWUnhRev" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-              <node concept="2OqwBi" id="58qUZpukFXq" role="37wK5m">
-                <node concept="Xjq3P" id="6KgrWUnhSId" role="2Oq$k0" />
-                <node concept="liA8E" id="58qUZpukGYd" role="2OqNvi">
-                  <ref role="37wK5l" node="6KgrWUngaYi" resolve="getId" />
-                </node>
+              <node concept="37vLTw" id="6SOOB4GnQHO" role="37wK5m">
+                <ref role="3cqZAo" node="21ms2Yw$zNv" resolve="id" />
               </node>
               <node concept="Xjq3P" id="6KgrWUnhTcI" role="37wK5m" />
             </node>
@@ -755,6 +790,26 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6KgrWUngpcX" role="jymVt" />
+    <node concept="3clFb_" id="21DAGcgrj1X" role="jymVt">
+      <property role="TrG5h" value="getIdHolder" />
+      <node concept="3uibUv" id="21DAGcgroQ7" role="3clF45">
+        <ref role="3uigEE" to="mcvo:~SLanguageAdapterById" resolve="SLanguageAdapterById" />
+      </node>
+      <node concept="3Tm1VV" id="21DAGcgrj20" role="1B3o_S" />
+      <node concept="3clFbS" id="21DAGcgrj21" role="3clF47">
+        <node concept="3SKdUt" id="21DAGcgryYI" role="3cqZAp">
+          <node concept="3SKdUq" id="21DAGcgryYK" role="3SKWNk">
+            <property role="3SKdUp" value="See MetaIdHelper.getLanguage(SLanguage)" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="21DAGcgrqE0" role="3cqZAp">
+          <node concept="37vLTw" id="21DAGcgrqDZ" role="3clFbG">
+            <ref role="3cqZAo" node="21DAGcgqwm5" resolve="languageIdHolder" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="21DAGcgrhrW" role="jymVt" />
     <node concept="3Tm1VV" id="6KgrWUngaUN" role="1B3o_S" />
     <node concept="3uibUv" id="6KgrWUngaY2" role="1zkMxy">
       <ref role="3uigEE" to="vndm:~LanguageRuntime" resolve="LanguageRuntime" />
@@ -776,7 +831,7 @@
       <node concept="3clFbS" id="6KgrWUngbgs" role="3clF47">
         <node concept="3SKdUt" id="6KgrWUnhPIq" role="3cqZAp">
           <node concept="3SKdUq" id="6KgrWUnhPIs" role="3SKWNk">
-            <property role="3SKdUp" value="Thank you for your cooperation. Your part is done here. See GenPlanBuilder." />
+            <property role="3SKdUp" value="See RigidPlanBuilder" />
           </node>
         </node>
         <node concept="3clFbF" id="6KgrWUnhzIJ" role="3cqZAp">
@@ -791,7 +846,9 @@
             </node>
             <node concept="liA8E" id="6KgrWUnhO4s" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Map.remove(java.lang.Object):java.lang.Object" resolve="remove" />
-              <node concept="Xjq3P" id="6KgrWUnhOBL" role="37wK5m" />
+              <node concept="37vLTw" id="6SOOB4GnPwO" role="37wK5m">
+                <ref role="3cqZAo" node="21ms2Yw$zNv" resolve="id" />
+              </node>
             </node>
           </node>
         </node>
