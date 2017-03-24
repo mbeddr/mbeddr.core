@@ -23,6 +23,7 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="28nf" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.impl.query(MPS.Core/)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="gxwz" ref="r:d1800018-44fb-4b2e-b3ae-2afea554d27b(de.slisson.mps.hacks.xmodelgen.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpf8" ref="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" implicit="true" />
@@ -150,7 +151,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
@@ -815,10 +816,17 @@
       <node concept="3Tm1VV" id="6KgrWUngaYb" role="1B3o_S" />
       <node concept="17QB3L" id="6KgrWUngj9O" role="3clF45" />
       <node concept="3clFbS" id="6KgrWUngaYe" role="3clF47">
-        <node concept="YS8fn" id="6KgrWUngcsx" role="3cqZAp">
-          <node concept="2ShNRf" id="6KgrWUngcth" role="YScLw">
-            <node concept="1pGfFk" id="6KgrWUngcCH" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+        <node concept="3clFbF" id="kT42MjDKIV" role="3cqZAp">
+          <node concept="2YIFZM" id="kT42MjDKYy" role="3clFbG">
+            <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String):java.lang.String" resolve="toValidIdentifier" />
+            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+            <node concept="2OqwBi" id="kT42MjDMcZ" role="37wK5m">
+              <node concept="37vLTw" id="kT42MjDLjJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="21ms2Yw$zNv" resolve="id" />
+              </node>
+              <node concept="liA8E" id="kT42MjDNhg" role="2OqNvi">
+                <ref role="37wK5l" to="e8bb:~SLanguageId.toString():java.lang.String" resolve="toString" />
+              </node>
             </node>
           </node>
         </node>
