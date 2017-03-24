@@ -177,9 +177,6 @@
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
       </concept>
-      <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
-        <child id="1177093586806" name="templateNode" index="gfFT$" />
-      </concept>
       <concept id="1112730859144" name="jetbrains.mps.lang.generator.structure.TemplateSwitch" flags="ig" index="jVnub">
         <child id="1167340453568" name="reductionMappingRule" index="3aUrZf" />
       </concept>
@@ -3663,31 +3660,16 @@
   </node>
   <node concept="jVnub" id="3ptfW4zoj_i">
     <property role="3GE5qa" value="templates" />
-    <property role="TrG5h" value="switch_ParameterInitializer" />
-    <node concept="3aamgX" id="7eePqYuKvif" role="3aUrZf">
+    <property role="TrG5h" value="switch_ParameterTypeHint" />
+  </node>
+  <node concept="jVnub" id="5zFTUsxygSU">
+    <property role="3GE5qa" value="templates" />
+    <property role="TrG5h" value="switch_ParameterInitialization" />
+    <node concept="3aamgX" id="5zFTUsxyhdR" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="hqsm:4IZiQsKumaj" resolve="IParameter" />
-      <node concept="30G5F_" id="7eePqYuKxFx" role="30HLyM">
-        <node concept="3clFbS" id="7eePqYuKxFy" role="2VODD2">
-          <node concept="3cpWs6" id="7eePqYuKyBM" role="3cqZAp">
-            <node concept="3fqX7Q" id="7eePqYuK$2y" role="3cqZAk">
-              <node concept="2OqwBi" id="7eePqYuK$2$" role="3fr31v">
-                <node concept="2OqwBi" id="7eePqYuK$2_" role="2Oq$k0">
-                  <node concept="30H73N" id="7eePqYuK$2A" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="7eePqYuK$2B" role="2OqNvi">
-                    <ref role="3Tt5mk" to="hqsm:3VwoHXNAiyY" resolve="type" />
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="7eePqYuK$2C" role="2OqNvi">
-                  <ref role="37wK5l" to="gcg1:3ptfW4z_Zv0" resolve="isMonotonicityAware" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="gft3U" id="7eePqYuKB8b" role="1lVwrX">
-        <node concept="2ShNRf" id="z7YXzAaJ8$" role="gfFT$">
+      <node concept="1Koe21" id="5zFTUsxyjE4" role="1lVwrX">
+        <node concept="2ShNRf" id="z7YXzAaJ8$" role="1Koe22">
           <node concept="1pGfFk" id="z7YXzAaK0Q" role="2ShVmc">
             <ref role="37wK5l" to="4azy:~PParameter.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="PParameter" />
             <node concept="Xl_RD" id="z7YXzAaMzZ" role="37wK5m">
@@ -3730,6 +3712,26 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="raruj" id="5zFTUsxB9CA" role="lGtFl" />
+        </node>
+      </node>
+      <node concept="30G5F_" id="5zFTUsxyhdX" role="30HLyM">
+        <node concept="3clFbS" id="5zFTUsxyhdY" role="2VODD2">
+          <node concept="3cpWs6" id="5zFTUsxyi2t" role="3cqZAp">
+            <node concept="3fqX7Q" id="5zFTUsxyjsJ" role="3cqZAk">
+              <node concept="2OqwBi" id="5zFTUsxyjsL" role="3fr31v">
+                <node concept="2OqwBi" id="5zFTUsxyjsM" role="2Oq$k0">
+                  <node concept="30H73N" id="5zFTUsxyjsN" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5zFTUsxyjsO" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hqsm:3VwoHXNAiyY" resolve="type" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="5zFTUsxyjsP" role="2OqNvi">
+                  <ref role="37wK5l" to="gcg1:3ptfW4z_Zv0" resolve="isMonotonicityAware" />
                 </node>
               </node>
             </node>

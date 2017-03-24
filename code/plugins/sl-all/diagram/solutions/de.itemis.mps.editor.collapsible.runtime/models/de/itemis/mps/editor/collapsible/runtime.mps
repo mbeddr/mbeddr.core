@@ -274,6 +274,15 @@
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
+      </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
@@ -718,9 +727,32 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="42_DJ9jUWra" role="3cqZAp">
-          <node concept="1rXfSq" id="42_DJ9jUWr8" role="3clFbG">
-            <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeAllCells():void" resolve="removeAllCells" />
+        <node concept="2Gpval" id="2EiiqYa75mn" role="3cqZAp">
+          <node concept="2GrKxI" id="2EiiqYa75mp" role="2Gsz3X">
+            <property role="TrG5h" value="child" />
+          </node>
+          <node concept="3clFbS" id="2EiiqYa75mt" role="2LFqv$">
+            <node concept="3clFbF" id="2EiiqYa7bE7" role="3cqZAp">
+              <node concept="1rXfSq" id="2EiiqYa7bE6" role="3clFbG">
+                <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="removeCell" />
+                <node concept="2GrUjf" id="2EiiqYa7bYq" role="37wK5m">
+                  <ref role="2Gs0qQ" node="2EiiqYa75mp" resolve="child" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2EiiqYa79F7" role="2GsD0m">
+            <node concept="1eOMI4" id="2EiiqYa76I8" role="2Oq$k0">
+              <node concept="10QFUN" id="2EiiqYa76I5" role="1eOMHV">
+                <node concept="A3Dl8" id="2EiiqYa772l" role="10QFUM">
+                  <node concept="3uibUv" id="2EiiqYa77mK" role="A3Ik2">
+                    <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                  </node>
+                </node>
+                <node concept="Xjq3P" id="2EiiqYa77Sg" role="10QFUP" />
+              </node>
+            </node>
+            <node concept="ANE8D" id="2EiiqYa7al$" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbF" id="42_DJ9jU_Z7" role="3cqZAp">

@@ -20,10 +20,10 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -2219,9 +2219,9 @@
                     <node concept="2pIpSj" id="3$GaJTCV37r" role="2pJxcM">
                       <ref role="2pIpSl" to="2c95:2iGZqsHuOq2" resolve="pathPicker" />
                       <node concept="2pJPED" id="3$GaJTCV387" role="2pJxcZ">
-                        <ref role="2pJxaS" to="vs0r:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
+                        <ref role="2pJxaS" to="68mc:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
                         <node concept="2pJxcG" id="3$GaJTCV3m_" role="2pJxcM">
-                          <ref role="2pJxcJ" to="vs0r:5lKnBeAtODI" resolve="path" />
+                          <ref role="2pJxcJ" to="68mc:5lKnBeAtODI" resolve="path" />
                           <node concept="Xl_RD" id="3$GaJTCV3n5" role="2pJxcZ">
                             <property role="Xl_RC" value="temp" />
                           </node>

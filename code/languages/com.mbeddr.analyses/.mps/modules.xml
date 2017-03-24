@@ -37,6 +37,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.c/com.mbeddr.analyses.spin.c.mpl" folder="spin" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.promela.patterns/com.mbeddr.analyses.spin.promela.patterns.mpl" folder="spin" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.promela/com.mbeddr.analyses.spin.promela.mpl" folder="spin" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.testing/com.mbeddr.analyses.spin.testing.mpl" folder="spin" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin/com.mbeddr.analyses.spin.mpl" folder="spin" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.stan/com.mbeddr.analyses.stan.mpl" folder="z3" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.utils/utils.msd" folder="base" />

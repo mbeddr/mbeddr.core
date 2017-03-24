@@ -12,7 +12,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" name="com.mbeddr.mpsutil.jung" version="0" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
     <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -64,7 +64,7 @@
         <reference id="8747172231535479626" name="chan" index="2CGnA6" />
       </concept>
       <concept id="8747172231535654754" name="com.mbeddr.analyses.spin.promela.structure.MtypeType" flags="ng" index="2CGWmI" />
-      <concept id="2154988994643214537" name="com.mbeddr.analyses.spin.promela.structure.Select" flags="ng" index="2HvsZr">
+      <concept id="2154988994643214537" name="com.mbeddr.analyses.spin.promela.structure.SelectStatement" flags="ng" index="2HvsZr">
         <child id="2154988994643214538" name="varRef" index="2HvsZo" />
         <child id="2154988994643214543" name="upper" index="2HvsZt" />
         <child id="2154988994643214540" name="lower" index="2HvsZu" />
@@ -87,7 +87,7 @@
       </concept>
       <concept id="2390327893064634832" name="com.mbeddr.analyses.spin.promela.structure.Receive" flags="ng" index="33ZRtt">
         <child id="2390327893064634833" name="chan" index="33ZRts" />
-        <child id="2390327893064634835" name="expr" index="33ZRtu" />
+        <child id="2390327893064634835" name="exp" index="33ZRtu" />
       </concept>
       <concept id="799927705160921386" name="com.mbeddr.analyses.spin.promela.structure.ByteType" flags="ng" index="1N1tGC" />
       <concept id="799927705160539981" name="com.mbeddr.analyses.spin.promela.structure.ProcType" flags="ng" index="1N3Vlf" />

@@ -1,0 +1,59 @@
+def script_test_mbeddrAnalysisTs = new File(scriptsBasePath + "/com.mbeddr.analyses/" + "build-ts-tests.xml")
+def script_test_mbeddrAnalysisEx = new File(scriptsBasePath + "/com.mbeddr.analyses/" + "build-ex-tests.xml")
+
+ant.taskdef(name: "makeTests",
+        classname: "com.mbeddr.tools.ant.MakeTestsTask",
+        classpath: file(rootProject.projectDir.absolutePath + "/tools/ant/tasks/TeamcityMakeTests.jar")
+)
+
+// Ant <junit> task support
+repositories {
+    mavenCentral()
+}
+configurations {
+    junitAnt
+    mpsArtifacts
+}
+
+ext.dependencyRepositories = [
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' ]
+
+dependencies {
+    junitAnt 'junit:junit:4.12'
+    junitAnt('org.apache.ant:ant-junit:1.9.7') {
+        transitive = false
+    }
+    junitAnt('org.apache.ant:ant-junit4:1.9.7') {
+        transitive = false
+    }
+    mpsArtifacts "com.mbeddr:mbeddr:$mbeddrBuildNumber"
+}
+
+
+task resolveMpsArtifacts() {
+    doLast {
+        copy {
+            from {
+                    configurations.mpsArtifacts.resolve().collect { zipTree(it) }
+                 }
+            into artifactsDir
+        }
+    }
+}
+
+
+task test_mbeddr_analysis_ts(type: TestLanguages, dependsOn: [resolveMpsArtifacts, ':build:com.mbeddr:platform:copy_allScripts']) {
+    script script_test_mbeddrAnalysisTs
+}
+task test_mbeddr_analysis_ex << {
+    ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.analyses")
+}
+
+task build_mbeddr_analysis_ex(type: BuildLanguages, dependsOn: resolveMpsArtifacts) {
+    script script_test_mbeddrAnalysisEx
+}
+
+build_mbeddr_analysis_ex.dependsOn ':build:com.mbeddr:platform:copy_allScripts'
+test_mbeddr_analysis_ex.dependsOn ':build:com.mbeddr:platform:copy_allScripts'
+task test_mbeddr_analysis(dependsOn: [test_mbeddr_analysis_ts, build_mbeddr_analysis_ex, test_mbeddr_analysis_ex]) { }

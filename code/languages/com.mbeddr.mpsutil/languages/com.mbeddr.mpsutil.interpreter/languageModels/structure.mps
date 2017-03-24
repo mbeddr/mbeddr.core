@@ -24,6 +24,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -607,6 +608,16 @@
     <node concept="PrWs8" id="3oV0py8UN5l" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5IKJrJHNBNb">
+    <property role="EcuMT" value="6606989268198784203" />
+    <property role="TrG5h" value="ICanHaveTestCoverage" />
+    <property role="3GE5qa" value="Coverage" />
+  </node>
+  <node concept="PlHQZ" id="5IKJrJIaLee">
+    <property role="EcuMT" value="6606989268204852110" />
+    <property role="3GE5qa" value="Coverage" />
+    <property role="TrG5h" value="IExcludeFromCoverage" />
   </node>
 </model>
 
