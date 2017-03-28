@@ -40,10 +40,6 @@
         <child id="3134547887598524959" name="cases" index="ggJMH" />
         <child id="3134547887598524925" name="expression" index="ggJXf" />
       </concept>
-      <concept id="3779779187805893258" name="com.mbeddr.core.statements.structure.ForVarRef" flags="ng" index="uSsIJ">
-        <child id="3779779187805893261" name="init" index="uSsIC" />
-        <child id="3779779187805926915" name="var" index="uS$WA" />
-      </concept>
       <concept id="1494329074535282918" name="com.mbeddr.core.statements.structure.ElsePart" flags="ng" index="1ly_i6">
         <child id="1494329074535283249" name="body" index="1ly_ph" />
       </concept>
@@ -206,7 +202,7 @@
       <concept id="186853311768108744" name="com.mbeddr.core.unittest.structure.ReportNodeAnnotation" flags="ng" index="3rBczg">
         <property id="186853311768108813" name="label" index="3rBc$l" />
       </concept>
-      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
+      <concept id="842732463503928106" name="com.mbeddr.core.unittest.structure.NoTestIsolationStrategy" flags="ng" index="3GpDuv" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -619,6 +615,26 @@
           </node>
         </node>
         <node concept="3XISUE" id="58TcxRGEnQF" role="3XIRFZ" />
+        <node concept="1_9egQ" id="248Ay3vaYTt" role="3XIRFZ">
+          <node concept="3pqW6w" id="248Ay3vaYTu" role="1_9egR">
+            <node concept="3ZVu4v" id="248Ay3vaYTr" role="3TlMhI">
+              <ref role="3ZVs_2" node="7k_CvRMnl2n" resolve="t" />
+            </node>
+            <node concept="3TlMh9" id="248Ay3vaYTs" role="3TlMhJ">
+              <property role="2hmy$m" value="5" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="248Ay3vaYTx" role="3XIRFZ">
+          <node concept="3pqW6w" id="248Ay3vaYTy" role="1_9egR">
+            <node concept="3ZVu4v" id="248Ay3vaYTv" role="3TlMhI">
+              <ref role="3ZVs_2" node="7k_CvRMnl1o" resolve="s" />
+            </node>
+            <node concept="3TlMh9" id="248Ay3vaYTw" role="3TlMhJ">
+              <property role="2hmy$m" value="5" />
+            </node>
+          </node>
+        </node>
         <node concept="1_a8vi" id="58TcxRGEq8n" role="3XIRFZ">
           <node concept="3XIRFW" id="58TcxRGEq8o" role="1_amYn">
             <node concept="2N2KuS" id="58TcxRGEtXS" role="3XIRFZ">
@@ -628,22 +644,6 @@
               <node concept="3ZVu4v" id="58TcxRGEtY5" role="2N2GHg">
                 <ref role="3ZVs_2" node="7k_CvRMnl2n" resolve="t" />
               </node>
-            </node>
-          </node>
-          <node concept="uSsIJ" id="58TcxRGEqqn" role="1_amZ$">
-            <node concept="3TlMh9" id="58TcxRGEqqC" role="uSsIC">
-              <property role="2hmy$m" value="5" />
-            </node>
-            <node concept="3ZVu4v" id="58TcxRGEqqm" role="uS$WA">
-              <ref role="3ZVs_2" node="7k_CvRMnl2n" resolve="t" />
-            </node>
-          </node>
-          <node concept="uSsIJ" id="58TcxRGEqre" role="2YtZhS">
-            <node concept="3ZVu4v" id="58TcxRGErZ1" role="uS$WA">
-              <ref role="3ZVs_2" node="7k_CvRMnl1o" resolve="s" />
-            </node>
-            <node concept="3TlMh9" id="58TcxRGErZ9" role="uSsIC">
-              <property role="2hmy$m" value="5" />
             </node>
           </node>
           <node concept="3Tl9Jr" id="58TcxRGEs0i" role="1_amZB">
@@ -802,7 +802,7 @@
       <node concept="2Q9FjX" id="3R$6B6bNgvL" role="2Q9FjI" />
     </node>
     <node concept="12mU2y" id="3mKW6ZYeYtL" role="2Q9xDr">
-      <node concept="3GpDuo" id="3mKW6ZYeYtM" role="3GpDut" />
+      <node concept="3GpDuv" id="248Ay3vdlJn" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="2I09F8VKR8Z">
