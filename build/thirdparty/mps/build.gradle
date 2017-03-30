@@ -14,7 +14,7 @@ task downloadMPS(type: Download) {
     }
 
     //src "http://download.jetbrains.com/mps/${mpsMajor.replace(".", "")}/MPS-${mpsBuild}.zip"
-    src "https://teamcity.jetbrains.com/guestAuth/repository/download/MPS_35_Distribution_DownloadableArtifacts/1020065:id/MPS-171.888.zip"
+    src "https://teamcity.jetbrains.com/guestAuth/repository/download/MPS_35_Distribution_DownloadableArtifacts/1027134:id/MPS-171.1029.zip"
     dest mpsDownloadFile
     overwrite false
 }
