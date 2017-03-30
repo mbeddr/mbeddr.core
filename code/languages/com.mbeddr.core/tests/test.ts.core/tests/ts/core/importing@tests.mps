@@ -78,6 +78,12 @@
       </concept>
       <concept id="5882395403881875736" name="com.mbeddr.core.udt.structure.Member" flags="ng" index="1dpRTG" />
       <concept id="6394819151180597807" name="com.mbeddr.core.udt.structure.StructDeclaration" flags="ng" index="1sgJKc" />
+      <concept id="8811614583515725853" name="com.mbeddr.core.udt.structure.EnumLiteral" flags="ng" index="1AkAjq">
+        <child id="8811614583515725856" name="init" index="1AkAjB" />
+      </concept>
+      <concept id="8811614583515725851" name="com.mbeddr.core.udt.structure.EnumDeclaration" flags="ng" index="1AkAjs">
+        <child id="8811614583515725857" name="literals" index="1AkAjA" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
@@ -89,7 +95,21 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
+      <concept id="3788988821852026523" name="com.mbeddr.core.modules.structure.GlobalConstantRef" flags="ng" index="4ZOvp">
+        <reference id="3376775282622611130" name="constant" index="2DPCA0" />
+      </concept>
+      <concept id="6116558314501417952" name="com.mbeddr.core.modules.structure.HeaderDescriptor" flags="ng" index="rcWE1" />
+      <concept id="6116558314501417921" name="com.mbeddr.core.modules.structure.ExternalModule" flags="ng" index="rcWEw">
+        <child id="6116558314501417978" name="descriptors" index="rcWEr" />
+      </concept>
+      <concept id="6116558314501417934" name="com.mbeddr.core.modules.structure.ExternalResourceDescriptor" flags="ng" index="rcWEJ">
+        <property id="6116558314501417936" name="path" index="rcWEL" />
+      </concept>
       <concept id="6777508457268164807" name="com.mbeddr.core.modules.structure.SuppressDataFlowWarning" flags="ng" index="BCzjf" />
+      <concept id="3376775282622142916" name="com.mbeddr.core.modules.structure.AbstractDefineLike" flags="ng" index="2DRUVY">
+        <child id="3376775282622233992" name="value" index="2DQcEM" />
+      </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
         <child id="1317894735999304826" name="imports" index="2OODSX" />
@@ -127,6 +147,7 @@
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
+      <concept id="1054289341113450444" name="com.mbeddr.core.expressions.structure.HexNumberLiteral" flags="ng" index="3Hbq_t" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
@@ -335,8 +356,54 @@
             </node>
           </node>
         </node>
+        <node concept="2NXPZ9" id="4a$W5l23W0w" role="N3F5h">
+          <property role="TrG5h" value="empty_1490859626130_110" />
+        </node>
+        <node concept="2NXPZ9" id="4a$W5l23W0D" role="N3F5h">
+          <property role="TrG5h" value="empty_1490859626313_111" />
+        </node>
         <node concept="7CXmI" id="a8pihN5tIG" role="lGtFl">
           <node concept="7OXhh" id="a8pihN5tII" role="7EUXB" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="4a$W5l23W6e" role="1SKRRt">
+      <node concept="N3F5e" id="4a$W5l23WkS" role="1qenE9">
+        <property role="TrG5h" value="enumModule" />
+        <node concept="1AkAjs" id="21B4CmFWFJg" role="N3F5h">
+          <property role="TrG5h" value="FirmwarePartition" />
+          <property role="2OOxQR" value="true" />
+          <node concept="1AkAjq" id="21B4CmFWFJi" role="1AkAjA">
+            <property role="TrG5h" value="FIRMWARE_PARTITION_1" />
+            <node concept="4ZOvp" id="21B4CmFWFMK" role="1AkAjB">
+              <ref role="2DPCA0" node="zU6uN$y4kZ" resolve="USER_BIN1" />
+            </node>
+          </node>
+          <node concept="1AkAjq" id="21B4CmFWFQw" role="1AkAjA">
+            <property role="TrG5h" value="FIRMWARE_PARTITION_2" />
+            <node concept="4ZOvp" id="21B4CmFWFS0" role="1AkAjB">
+              <ref role="2DPCA0" node="zU6uN$y4l1" resolve="USER_BIN2" />
+            </node>
+          </node>
+        </node>
+        <node concept="2NXPZ9" id="4a$W5l23Wl0" role="N3F5h">
+          <property role="TrG5h" value="empty_1490859626130_110" />
+        </node>
+        <node concept="2NXPZ9" id="4a$W5l23Wl1" role="N3F5h">
+          <property role="TrG5h" value="empty_1490859626313_111" />
+        </node>
+        <node concept="7CXmI" id="4a$W5l23Wl2" role="lGtFl">
+          <node concept="7OXhh" id="4a$W5l23Wl3" role="7EUXB" />
+        </node>
+        <node concept="3GEVxB" id="4a$W5l23WAD" role="2OODSX">
+          <ref role="3GEb4d" node="zU6uN$y4kT" resolve="upgrade" />
+          <node concept="7CXmI" id="4a$W5l23WJ4" role="lGtFl">
+            <node concept="1TM$A" id="4a$W5l23WJ5" role="7EUXB">
+              <node concept="2PYRI3" id="4a$W5l23WJc" role="3lydEf">
+                <ref role="39XzEq" to="p3tm:a8pihN4Iev" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -451,6 +518,26 @@
   </node>
   <node concept="2XOHcx" id="1f0gqNzAccm">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
+  </node>
+  <node concept="rcWEw" id="zU6uN$y4kT">
+    <property role="TrG5h" value="upgrade" />
+    <node concept="rcWE1" id="zU6uN$y4kU" role="rcWEr">
+      <property role="rcWEL" value="&lt;upgrade.h&gt;" />
+    </node>
+    <node concept="4WHVk" id="zU6uN$y4kZ" role="N3F5h">
+      <property role="TrG5h" value="USER_BIN1" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3Hbq_t" id="zU6uN$y4l0" role="2DQcEM">
+        <property role="2hmy$m" value="00" />
+      </node>
+    </node>
+    <node concept="4WHVk" id="zU6uN$y4l1" role="N3F5h">
+      <property role="TrG5h" value="USER_BIN2" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3Hbq_t" id="zU6uN$y4l2" role="2DQcEM">
+        <property role="2hmy$m" value="01" />
+      </node>
+    </node>
   </node>
 </model>
 
