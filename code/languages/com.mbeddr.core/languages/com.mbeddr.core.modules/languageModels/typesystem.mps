@@ -2669,8 +2669,8 @@
                                     <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
                                   </node>
                                 </node>
-                                <node concept="3Tsc0h" id="a8pihN4Fl7" role="2OqNvi">
-                                  <ref role="3TtcxE" to="x27k:19a6$uAA8hU" resolve="imports" />
+                                <node concept="2qgKlT" id="4a$W5l2uodF" role="2OqNvi">
+                                  <ref role="37wK5l" to="qd6m:4a$W5l2cFJF" resolve="getAllImportedChunks" />
                                 </node>
                               </node>
                               <node concept="1z4cxt" id="a8pihN4Fl8" role="2OqNvi">
@@ -2701,13 +2701,123 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3cpWs8" id="4a$W5l2vABx" role="3cqZAp">
+                          <node concept="3cpWsn" id="4a$W5l2vAB$" role="3cpWs9">
+                            <property role="TrG5h" value="intermediate" />
+                            <node concept="3Tqbb2" id="4a$W5l2vAB_" role="1tU5fm">
+                              <ref role="ehGHo" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
+                            </node>
+                            <node concept="2OqwBi" id="4a$W5l2vABA" role="33vP2m">
+                              <node concept="2OqwBi" id="4a$W5l2vABB" role="2Oq$k0">
+                                <node concept="2OqwBi" id="4a$W5l2vABC" role="2Oq$k0">
+                                  <node concept="1YBJjd" id="4a$W5l2vABD" role="2Oq$k0">
+                                    <ref role="1YBMHb" node="_Ibf584Jhm" resolve="content" />
+                                  </node>
+                                  <node concept="2qgKlT" id="4a$W5l2vABE" role="2OqNvi">
+                                    <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
+                                  </node>
+                                </node>
+                                <node concept="3Tsc0h" id="4a$W5l2vD0X" role="2OqNvi">
+                                  <ref role="3TtcxE" to="x27k:19a6$uAA8hU" resolve="imports" />
+                                </node>
+                              </node>
+                              <node concept="1z4cxt" id="4a$W5l2vABG" role="2OqNvi">
+                                <node concept="1bVj0M" id="4a$W5l2vABH" role="23t8la">
+                                  <node concept="3clFbS" id="4a$W5l2vABI" role="1bW5cS">
+                                    <node concept="3clFbF" id="4a$W5l2vABJ" role="3cqZAp">
+                                      <node concept="1Wc70l" id="4a$W5l2wqEa" role="3clFbG">
+                                        <node concept="2OqwBi" id="4a$W5l2wx$f" role="3uHU7w">
+                                          <node concept="2OqwBi" id="4a$W5l2wufX" role="2Oq$k0">
+                                            <node concept="1PxgMI" id="4a$W5l2wt7I" role="2Oq$k0">
+                                              <ref role="1m5ApE" to="x27k:5_l8w1EmTcX" resolve="Module" />
+                                              <node concept="2OqwBi" id="4a$W5l2ws6L" role="1m5AlR">
+                                                <node concept="37vLTw" id="4a$W5l2wr_0" role="2Oq$k0">
+                                                  <ref role="3cqZAo" node="4a$W5l2vABP" resolve="it" />
+                                                </node>
+                                                <node concept="2qgKlT" id="4a$W5l2wswS" role="2OqNvi">
+                                                  <ref role="37wK5l" to="hwgx:6clJcrJZN1z" resolve="chunk" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                            <node concept="2qgKlT" id="4a$W5l2wvA7" role="2OqNvi">
+                                              <ref role="37wK5l" to="qd6m:4a$W5l2cFJF" resolve="getAllImportedChunks" />
+                                            </node>
+                                          </node>
+                                          <node concept="liA8E" id="4a$W5l2w_f7" role="2OqNvi">
+                                            <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object):boolean" resolve="contains" />
+                                            <node concept="37vLTw" id="4a$W5l2w_RD" role="37wK5m">
+                                              <ref role="3cqZAo" node="a8pihN4Fl1" resolve="dep" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="2OqwBi" id="4a$W5l2wmEK" role="3uHU7B">
+                                          <node concept="2OqwBi" id="4a$W5l2wkbH" role="2Oq$k0">
+                                            <node concept="37vLTw" id="4a$W5l2vABN" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="4a$W5l2vABP" resolve="it" />
+                                            </node>
+                                            <node concept="2qgKlT" id="4a$W5l2wkFK" role="2OqNvi">
+                                              <ref role="37wK5l" to="hwgx:6clJcrJZN1z" resolve="chunk" />
+                                            </node>
+                                          </node>
+                                          <node concept="1mIQ4w" id="4a$W5l2wnC8" role="2OqNvi">
+                                            <node concept="chp4Y" id="4a$W5l2wnVA" role="cj9EA">
+                                              <ref role="cht4Q" to="x27k:5_l8w1EmTcX" resolve="Module" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="Rh6nW" id="4a$W5l2vABP" role="1bW2Oz">
+                                    <property role="TrG5h" value="it" />
+                                    <node concept="2jxLKc" id="4a$W5l2vABQ" role="1tU5fm" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbJ" id="4a$W5l2$ThG" role="3cqZAp">
+                          <node concept="3clFbS" id="4a$W5l2$ThI" role="3clFbx">
+                            <node concept="3clFbF" id="4a$W5l2_6ZP" role="3cqZAp">
+                              <node concept="37vLTI" id="4a$W5l2_kGu" role="3clFbG">
+                                <node concept="37vLTw" id="4a$W5l2_kH1" role="37vLTx">
+                                  <ref role="3cqZAo" node="a8pihN4Fl1" resolve="dep" />
+                                </node>
+                                <node concept="37vLTw" id="4a$W5l2_6ZN" role="37vLTJ">
+                                  <ref role="3cqZAo" node="4a$W5l2vAB$" resolve="intermediate" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="4a$W5l2$ZIH" role="3clFbw">
+                            <node concept="2OqwBi" id="4a$W5l2$VTH" role="2Oq$k0">
+                              <node concept="2OqwBi" id="4a$W5l2$Uak" role="2Oq$k0">
+                                <node concept="1YBJjd" id="4a$W5l2$TT1" role="2Oq$k0">
+                                  <ref role="1YBMHb" node="_Ibf584Jhm" resolve="content" />
+                                </node>
+                                <node concept="2qgKlT" id="4a$W5l2$Vw8" role="2OqNvi">
+                                  <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
+                                </node>
+                              </node>
+                              <node concept="3Tsc0h" id="4a$W5l2$XzD" role="2OqNvi">
+                                <ref role="3TtcxE" to="x27k:19a6$uAA8hU" resolve="imports" />
+                              </node>
+                            </node>
+                            <node concept="3JPx81" id="4a$W5l2_3DQ" role="2OqNvi">
+                              <node concept="37vLTw" id="4a$W5l2_3OI" role="25WWJ7">
+                                <ref role="3cqZAo" node="a8pihN4Fl1" resolve="dep" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3clFbJ" id="a8pihN4FZ4" role="3cqZAp">
                           <node concept="3clFbS" id="a8pihN4FZ6" role="3clFbx">
                             <node concept="3N13vt" id="a8pihN4GiK" role="3cqZAp" />
                           </node>
                           <node concept="2OqwBi" id="a8pihN4Ga4" role="3clFbw">
-                            <node concept="37vLTw" id="a8pihN4G8c" role="2Oq$k0">
-                              <ref role="3cqZAo" node="a8pihN4Fl1" resolve="dep" />
+                            <node concept="37vLTw" id="4a$W5l2_kHx" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4a$W5l2vAB$" resolve="intermediate" />
                             </node>
                             <node concept="3w_OXm" id="a8pihN4Gi3" role="2OqNvi" />
                           </node>
@@ -2716,8 +2826,8 @@
                           <node concept="37vLTI" id="a8pihN4GHY" role="3clFbG">
                             <node concept="1PxgMI" id="a8pihN4He1" role="37vLTx">
                               <ref role="1m5ApE" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
-                              <node concept="37vLTw" id="a8pihN4GIP" role="1m5AlR">
-                                <ref role="3cqZAo" node="a8pihN4Fl1" resolve="dep" />
+                              <node concept="37vLTw" id="4a$W5l2_kJQ" role="1m5AlR">
+                                <ref role="3cqZAo" node="4a$W5l2vAB$" resolve="intermediate" />
                               </node>
                             </node>
                             <node concept="3EllGN" id="a8pihN4GD6" role="37vLTJ">
@@ -2734,8 +2844,8 @@
                           <node concept="37vLTI" id="a8pihN4HxH" role="3clFbG">
                             <node concept="1PxgMI" id="a8pihN4HF1" role="37vLTx">
                               <ref role="1m5ApE" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
-                              <node concept="37vLTw" id="a8pihN4HxZ" role="1m5AlR">
-                                <ref role="3cqZAo" node="a8pihN4Fl1" resolve="dep" />
+                              <node concept="37vLTw" id="4a$W5l2_kLa" role="1m5AlR">
+                                <ref role="3cqZAo" node="4a$W5l2vAB$" resolve="intermediate" />
                               </node>
                             </node>
                             <node concept="37vLTw" id="a8pihN4Hre" role="37vLTJ">
