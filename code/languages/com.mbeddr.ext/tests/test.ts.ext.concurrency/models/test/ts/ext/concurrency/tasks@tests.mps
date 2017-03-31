@@ -2,9 +2,9 @@
 <model ref="r:a729a71a-5eb7-45af-88dc-e875291433c0(test.ts.ext.concurrency.tasks@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
-    <use id="b879012d-402b-40e0-8df7-e6fa93b9b711" name="com.mbeddr.ext.concurrency" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="b879012d-402b-40e0-8df7-e6fa93b9b711" name="com.mbeddr.ext.concurrency" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -91,6 +91,10 @@
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -412,6 +416,18 @@
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
       <property role="3I8uaA" value="" />
+      <node concept="3abb7c" id="4LhGMnjpRco" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="4LhGMnjpRcp" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="4LhGMnjpRcq" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="4LhGMnjpRcr" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
     <node concept="2Q9Fgs" id="73JrkgyAU1q" role="2Q9xDr">
       <node concept="2Q9FjX" id="73JrkgyAU1r" role="2Q9FjI" />

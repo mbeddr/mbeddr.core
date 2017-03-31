@@ -1,4 +1,5 @@
 import java.time.*
+import de.itemis.mps.gradle.GitBasedVersioning
 
 plugins {
   id "co.riiid.gradle" version "0.4.2"

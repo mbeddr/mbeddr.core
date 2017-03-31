@@ -144,9 +144,8 @@ code/languages/offline.sh
 # CBMC analyses results temporary files
 code/*/xmlCBMCRawOutput/*
 
-build/**/*.xml
-build/*/*.xml
-build/com.mbeddr.allScripts/build.xml
+/build/**/*.xml
+/build/com.mbeddr.allScripts/build.xml
 
 # -----------------------------------------------------------
 # tutorial build
@@ -171,7 +170,6 @@ tmp
 # -----------------------------------------------------------
 # gradle files
 gradle.properties
-**/gradle/*
 **/.gradle/*
 **/scripts/*
 **/MPS/*
@@ -180,5 +178,3 @@ gradle.properties
 **/build/classes
 antlib.xml
 **/code/languages/myDependencies
-gradlew
-gradlew.bat

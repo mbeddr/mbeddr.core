@@ -78,7 +78,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/all_in_one.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$EAJ" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.allInOne.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.allInOne" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -103,7 +103,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/enum_Interface.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$_PV" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumInterface.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.enumInterface" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -125,7 +125,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/enum_no_unique_internal_value.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$A9E" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumNoUniqueInternalValue.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.enumNoUniqueInternalValue" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -147,7 +147,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/enum_super_class.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$AaI" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumSuperClass.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.enumSuperClass" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -169,7 +169,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/simple_class_enum_property.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$AbM" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassEnumProperty.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleClassEnumProperty" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -191,7 +191,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/simple_class_varying_property_withenum.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$ARq" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassVaryingPropertyWithEnum.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleClassVaryingPropertyWithEnum" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -213,7 +213,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/simple_enum.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$ASQ" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleEnum.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleEnum" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -238,7 +238,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/class_interface.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$Brw" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classInterface.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classInterface" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -260,7 +260,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/class_multiple_interface.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$BrA" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleInterface.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classMultipleInterface" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -282,7 +282,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/class_multiple_interface_superclass.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$BrG" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleInterfaceSuperclass.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classMultipleInterfaceSuperClass" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -304,7 +304,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/multiple_inheritance.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$BrM" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInheritance.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.multipleInheritance" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -326,7 +326,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/multiple_inheritance_interface.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$BrS" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInterfaceInheritance.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.multipleInterfaceInheritance" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -373,7 +373,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/class_multiple_reference.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$DJQ" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleReference.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classMultipleReference" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -395,7 +395,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/class_reference.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$DJW" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classReference.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classReference" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -417,7 +417,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/class_reference_child.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$DK2" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classReferenceChild.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classReferenceChild" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -442,7 +442,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/empty_class.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$AMg" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.emptyClass.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.emptyClass" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -464,7 +464,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/class_nonmpstypes.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$AMm" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.classNonMpsTypes.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.classNonMPSTypes" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -486,7 +486,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/simple_class_one_property.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$AMs" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassOneProperty.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleClassOneProperty" />
             <property role="BaGAP" value="" />
           </node>
         </node>
@@ -508,7 +508,7 @@
             <property role="3N1Lgt" value="test_Ecore_Files/simple_class_multiple_property.ecore" />
           </node>
           <node concept="BaHAS" id="7FLq2$J$AMy" role="1uyDA$">
-            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassMultipleProperty.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.simpleClassMultipleProperty" />
             <property role="BaGAP" value="" />
           </node>
         </node>

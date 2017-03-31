@@ -22,9 +22,9 @@
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="28nf" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.impl.query(MPS.Core/)" />
-    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="mcvo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure.language(MPS.Core/)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="28nf" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.impl.query(MPS.Core/)" />
     <import index="gxwz" ref="r:d1800018-44fb-4b2e-b3ae-2afea554d27b(de.slisson.mps.hacks.xmodelgen.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpf8" ref="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" implicit="true" />
@@ -151,10 +151,17 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <property id="4467513934994662257" name="forceMultiLine" index="TyiWK" />
+        <property id="4467513934994662256" name="forceOneLine" index="TyiWL" />
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -479,6 +486,53 @@
                   <ref role="3uigEE" to="r99j:~TemplateModule" resolve="TemplateModule" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1zwc1a68uQn" role="3cqZAp">
+          <property role="TyiWK" value="true" />
+          <property role="TyiWL" value="false" />
+          <node concept="3clFbS" id="1zwc1a68uQp" role="3clFbx">
+            <node concept="YS8fn" id="1zwc1a68vNc" role="3cqZAp">
+              <node concept="2ShNRf" id="1zwc1a68vN$" role="YScLw">
+                <node concept="1pGfFk" id="1zwc1a68zQ6" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="3cpWs3" id="1zwc1a68_n_" role="37wK5m">
+                    <node concept="Xl_RD" id="1zwc1a68_nC" role="3uHU7w">
+                      <property role="Xl_RC" value=". Try to rebuild the language." />
+                    </node>
+                    <node concept="3cpWs3" id="1zwc1a68$pK" role="3uHU7B">
+                      <node concept="Xl_RD" id="1zwc1a68zRI" role="3uHU7B">
+                        <property role="Xl_RC" value="Cannot find generator runtime for " />
+                      </node>
+                      <node concept="2OqwBi" id="1zwc1a68$Eu" role="3uHU7w">
+                        <node concept="2OqwBi" id="1zwc1a68$rM" role="2Oq$k0">
+                          <node concept="2JrnkZ" id="1zwc1a68$rN" role="2Oq$k0">
+                            <node concept="2OqwBi" id="1zwc1a68$rO" role="2JrQYb">
+                              <node concept="37vLTw" id="1zwc1a68$rP" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6KgrWUnjwFZ" resolve="mc" />
+                              </node>
+                              <node concept="I4A8Y" id="1zwc1a68$rQ" role="2OqNvi" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="1zwc1a68$rR" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="1zwc1a68_0s" role="2OqNvi">
+                          <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="1zwc1a68vyf" role="3clFbw">
+            <node concept="10Nm6u" id="1zwc1a68vMM" role="3uHU7w" />
+            <node concept="37vLTw" id="1zwc1a68v83" role="3uHU7B">
+              <ref role="3cqZAo" node="6KgrWUnjwGS" resolve="genRuntime" />
             </node>
           </node>
         </node>
@@ -1621,15 +1675,6 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="3uibUv" id="6KgrWUng_$r" role="EKbjA">
-      <ref role="3uigEE" to="r99j:~TemplateModule" resolve="TemplateModule" />
-    </node>
-    <node concept="3uibUv" id="6KgrWUngBeU" role="EKbjA">
-      <ref role="3uigEE" to="r99j:~TemplateModel" resolve="TemplateModel" />
-    </node>
-    <node concept="3uibUv" id="6KgrWUnh1XN" role="EKbjA">
-      <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
-    </node>
     <node concept="3clFb_" id="58qUZpuktp2" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="loadClass" />
@@ -1675,6 +1720,15 @@
       <node concept="2AHcQZ" id="58qUZpuktpm" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+    <node concept="3uibUv" id="6KgrWUng_$r" role="EKbjA">
+      <ref role="3uigEE" to="r99j:~TemplateModule" resolve="TemplateModule" />
+    </node>
+    <node concept="3uibUv" id="6KgrWUngBeU" role="EKbjA">
+      <ref role="3uigEE" to="r99j:~TemplateModel" resolve="TemplateModel" />
+    </node>
+    <node concept="3uibUv" id="6KgrWUnh1XN" role="EKbjA">
+      <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
     </node>
   </node>
 </model>

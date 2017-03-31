@@ -2,7 +2,7 @@
 <model ref="r:4399c8bd-b0a1-454c-b0ff-74fed25055ef(robustness)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="4" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
     <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="-1" />
@@ -52,6 +52,7 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
@@ -69,6 +70,10 @@
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -81,6 +86,7 @@
     </language>
     <language id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core">
       <concept id="4053481679317021366" name="com.mbeddr.analyses.cbmc.core.structure.RobustnessCBMCAnalysis" flags="ng" index="1nvAUE">
+        <property id="9020927825194549928" name="check_memory_leak" index="2o64iB" />
         <property id="4053481679317021368" name="check_pointer" index="1nvAU$" />
         <property id="4053481679317021367" name="check_div_by_zero" index="1nvAUF" />
       </concept>
@@ -99,6 +105,7 @@
         <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
         <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
+        <property id="8445711190801184380" name="hasPreprocessorMacroSettings" index="3u2WvC" />
         <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
       </concept>
       <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
@@ -246,6 +253,18 @@
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3I8uaA" value="" />
+      <node concept="3abb7c" id="7fmKiPEtWAt" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWAu" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWAv" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWAw" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
     <node concept="2Q9Fgs" id="7UiQjZi_REY" role="2Q9xDr">
       <node concept="2Q9FjX" id="7UiQjZi_REZ" role="2Q9FjI" />
@@ -257,6 +276,7 @@
     </node>
     <node concept="2eOfOl" id="7UiQjZi_RF2" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
+      <ref role="3oK8_y" node="7fmKiPEtWAw" resolve="portable" />
       <node concept="2v9HqM" id="7UiQjZi_RF3" role="2eOfOg">
         <ref role="2v9HqP" node="7UiQjZi_RI7" resolve="std" />
       </node>
@@ -1100,6 +1120,9 @@
     <node concept="3GEVxB" id="prDxnvg6ZP" role="3W6d8T">
       <ref role="3GEb4d" node="5V$HkqNY91f" resolve="Pointer" />
     </node>
+    <node concept="3GEVxB" id="3GuEwg$$cCA" role="3W6d8T">
+      <ref role="3GEb4d" node="4tocua6I53H" resolve="MemoryLeak" />
+    </node>
     <node concept="1nvAUE" id="prDxnvfD9o" role="3V$2$K">
       <property role="2lelRm" value="true" />
       <property role="2lUGe1" value="false" />
@@ -1133,6 +1156,24 @@
       <property role="2l50Mm" value="false" />
       <property role="1nvAU$" value="true" />
       <ref role="3V$Cn$" node="5V$HkqNY91g" resolve="smokeNullPointerAccess" />
+    </node>
+    <node concept="1nvAUE" id="3GuEwg$$cCJ" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <property role="2o64iB" value="true" />
+      <ref role="3V$Cn$" node="7lmBuXs21UQ" resolve="functionNOTCausingMemoryLeak" />
     </node>
   </node>
 </model>
