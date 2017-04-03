@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:38998876-e124-4459-b743-cf589bc62ad6(test.com.mbeddr.mpsutil.ecoreimporter.runtime.allInOne.structure)">
+<model ref="r:9c9eecd0-a4b4-4af6-bdbb-d7ad6681eddb(test.com.mbeddr.mpsutil.ecoreimporter.allInOne)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecoreimporter.util" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecoreimporter.util" version="0" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="z3v4" ref="r:9c9eecd0-a4b4-4af6-bdbb-d7ad6681eddb(test.com.mbeddr.mpsutil.ecoreimporter.allInOne)" implicit="true" />
   </imports>
   <registry>
     <language id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecoreimporter.util">
@@ -63,6 +61,53 @@
       </concept>
     </language>
   </registry>
+  <node concept="AxPO7" id="7FLq2$JzdL2">
+    <property role="TrG5h" value="enumTest1" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="7FLq2$JzdL3" role="M5hS2">
+      <property role="1uS6qv" value="0" />
+      <property role="1uS6qo" value="val1" />
+    </node>
+    <node concept="M4N5e" id="7FLq2$JzdL4" role="M5hS2">
+      <property role="1uS6qv" value="1" />
+      <property role="1uS6qo" value="val2" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7FLq2$JzdLd">
+    <property role="TrG5h" value="i_superClass2" />
+    <property role="EcuMT" value="8858976468115184717" />
+    <node concept="1TJgyi" id="7FLq2$JzdKZ" role="1TKVEl">
+      <property role="IQ2nx" value="8858976468115184703" />
+      <property role="TrG5h" value="superClass2attr1" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="tq6dS" id="7FLq2$JzdL0" role="lGtFl">
+        <node concept="trrjy" id="7FLq2$JzdL1" role="tqAd9" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FLq2$JzdKU">
+    <property role="R5$K7" value="false" />
+    <property role="19KtqR" value="true" />
+    <property role="EcuMT" value="8858976468115184698" />
+    <property role="TrG5h" value="superClass" />
+    <node concept="1TJgyi" id="7FLq2$JzdKV" role="1TKVEl">
+      <property role="IQ2nx" value="8858976468115184699" />
+      <property role="TrG5h" value="superClass1attr1" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="tq6dS" id="7FLq2$JzdKW" role="lGtFl">
+        <node concept="trrjy" id="7FLq2$JzdKX" role="tqAd9" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FLq2$JzdKY">
+    <property role="R5$K7" value="false" />
+    <property role="19KtqR" value="true" />
+    <property role="EcuMT" value="8858976468115184702" />
+    <property role="TrG5h" value="superClass2" />
+    <node concept="PrWs8" id="4G$uji5tb8_" role="PzmwI">
+      <ref role="PrY4T" node="7FLq2$JzdLd" resolve="i_superClass2" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="7FLq2$JzdKK">
     <property role="R5$K7" value="false" />
     <property role="19KtqR" value="true" />
@@ -123,41 +168,6 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7FLq2$JzdKU">
-    <property role="R5$K7" value="false" />
-    <property role="19KtqR" value="true" />
-    <property role="EcuMT" value="8858976468115184698" />
-    <property role="TrG5h" value="superClass" />
-    <node concept="1TJgyi" id="7FLq2$JzdKV" role="1TKVEl">
-      <property role="IQ2nx" value="8858976468115184699" />
-      <property role="TrG5h" value="superClass1attr1" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="tq6dS" id="7FLq2$JzdKW" role="lGtFl">
-        <node concept="trrjy" id="7FLq2$JzdKX" role="tqAd9" />
-      </node>
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7FLq2$JzdKY">
-    <property role="R5$K7" value="false" />
-    <property role="19KtqR" value="true" />
-    <property role="EcuMT" value="8858976468115184702" />
-    <property role="TrG5h" value="superClass2" />
-    <node concept="PrWs8" id="4G$uji5tb8_" role="PzmwI">
-      <ref role="PrY4T" to="z3v4:7FLq2$JzdLd" resolve="i_superClass2" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="7FLq2$JzdL2">
-    <property role="TrG5h" value="enumTest1" />
-    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-    <node concept="M4N5e" id="7FLq2$JzdL3" role="M5hS2">
-      <property role="1uS6qv" value="0" />
-      <property role="1uS6qo" value="val1" />
-    </node>
-    <node concept="M4N5e" id="7FLq2$JzdL4" role="M5hS2">
-      <property role="1uS6qv" value="1" />
-      <property role="1uS6qo" value="val2" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7FLq2$JzdL5">
     <property role="R5$K7" value="false" />
     <property role="19KtqR" value="true" />
@@ -169,18 +179,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
       <node concept="tq6dS" id="7FLq2$JzdL7" role="lGtFl">
         <node concept="trrj2" id="7FLq2$JzdL8" role="tqAd9" />
-      </node>
-    </node>
-  </node>
-  <node concept="PlHQZ" id="7FLq2$JzdLd">
-    <property role="TrG5h" value="i_superClass2" />
-    <property role="EcuMT" value="8858976468115184717" />
-    <node concept="1TJgyi" id="7FLq2$JzdKZ" role="1TKVEl">
-      <property role="IQ2nx" value="8858976468115184703" />
-      <property role="TrG5h" value="superClass2attr1" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="tq6dS" id="7FLq2$JzdL0" role="lGtFl">
-        <node concept="trrjy" id="7FLq2$JzdL1" role="tqAd9" />
       </node>
     </node>
   </node>

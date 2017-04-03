@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6ddbf2e9-c997-4ca4-984b-ef501be306a4(test.com.mbeddr.mpsutil.ecoreimporter.runtime.enumSuperClass.structure)">
+<model ref="r:c1945d1b-81c3-4ff8-8578-2eb07c318c2d(test.com.mbeddr.mpsutil.ecoreimporter.enumSuperClass)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -38,6 +37,14 @@
       </concept>
     </language>
   </registry>
+  <node concept="AxPO7" id="7FLq2$Jzxqf">
+    <property role="TrG5h" value="enumTest" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="7FLq2$Jzxqg" role="M5hS2">
+      <property role="1uS6qv" value="0" />
+      <property role="1uS6qo" value="val" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="7FLq2$Jzxqa">
     <property role="R5$K7" value="false" />
     <property role="19KtqR" value="true" />
@@ -64,14 +71,6 @@
       <property role="IQ2nx" value="8858976468115265166" />
       <property role="TrG5h" value="attr2" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="7FLq2$Jzxqf">
-    <property role="TrG5h" value="enumTest" />
-    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-    <node concept="M4N5e" id="7FLq2$Jzxqg" role="M5hS2">
-      <property role="1uS6qv" value="0" />
-      <property role="1uS6qo" value="val" />
     </node>
   </node>
 </model>

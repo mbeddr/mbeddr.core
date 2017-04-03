@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0edcceb8-0fd1-4cf2-be92-9f2163e45b06(test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInheritance.structure)">
+<model ref="r:8297613c-09b3-4cd4-9f49-bf917d23c61a(test.com.mbeddr.mpsutil.ecoreimporter.multipleInheritance)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="ve5f" ref="r:8297613c-09b3-4cd4-9f49-bf917d23c61a(test.com.mbeddr.mpsutil.ecoreimporter.multipleInheritance)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -36,6 +34,15 @@
       </concept>
     </language>
   </registry>
+  <node concept="PlHQZ" id="7FLq2$Jzxry">
+    <property role="TrG5h" value="i_testSuperClass2" />
+    <property role="EcuMT" value="8858976468115265250" />
+    <node concept="1TJgyi" id="7FLq2$Jzxrw" role="1TKVEl">
+      <property role="IQ2nx" value="8858976468115265248" />
+      <property role="TrG5h" value="attr3" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="7FLq2$Jzxrr">
     <property role="R5$K7" value="false" />
     <property role="19KtqR" value="true" />
@@ -68,16 +75,7 @@
     <property role="EcuMT" value="8858976468115265247" />
     <property role="TrG5h" value="testSuperClass2" />
     <node concept="PrWs8" id="4G$uji5tbif" role="PzmwI">
-      <ref role="PrY4T" to="ve5f:7FLq2$Jzxry" resolve="i_testSuperClass2" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="7FLq2$Jzxry">
-    <property role="TrG5h" value="i_testSuperClass2" />
-    <property role="EcuMT" value="8858976468115265250" />
-    <node concept="1TJgyi" id="7FLq2$Jzxrw" role="1TKVEl">
-      <property role="IQ2nx" value="8858976468115265248" />
-      <property role="TrG5h" value="attr3" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="PrY4T" node="7FLq2$Jzxry" resolve="i_testSuperClass2" />
     </node>
   </node>
 </model>

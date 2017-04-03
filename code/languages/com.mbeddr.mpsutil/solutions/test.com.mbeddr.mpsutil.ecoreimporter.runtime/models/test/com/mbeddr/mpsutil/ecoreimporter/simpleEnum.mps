@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:169dc67a-612e-41f0-b6fb-0b088264abdc(test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleEnum.structure)">
+<model ref="r:9d45cf3f-c9f8-4605-a72d-217aa128ef62(test.com.mbeddr.mpsutil.ecoreimporter.simpleEnum)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:03aba134-0b7a-4e08-94c5-25f2ebc4d5c8(test.com.mbeddr.mpsutil.ecoreimporter.runtime.testingFrameworkTestLanguageMatch.structure)">
+<model ref="r:679ddd2a-675f-4aaf-8311-c8eecf410a8f(test.com.mbeddr.mpsutil.ecoreimporter.testingFrameworkTestLanguageMatch)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecoreimporter.util" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecoreimporter.util" version="0" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="uoys" ref="r:679ddd2a-675f-4aaf-8311-c8eecf410a8f(test.com.mbeddr.mpsutil.ecoreimporter.testingFrameworkTestLanguageMatch)" implicit="true" />
   </imports>
   <registry>
     <language id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecoreimporter.util">
@@ -83,7 +81,7 @@
     <property role="EcuMT" value="8807858324542504730" />
     <property role="TrG5h" value="SuperClass2" />
     <node concept="PrWs8" id="4G$uji5tbDL" role="PzmwI">
-      <ref role="PrY4T" to="uoys:7CVN7FEkFW_" resolve="i_SuperClass2" />
+      <ref role="PrY4T" node="7CVN7FEkFW_" resolve="i_SuperClass2" />
     </node>
   </node>
   <node concept="1TIwiD" id="7CVN7FEkFWr">
@@ -92,7 +90,7 @@
     <property role="EcuMT" value="8807858324542504731" />
     <property role="TrG5h" value="SuperClass3" />
     <node concept="PrWs8" id="4G$uji5tbEu" role="PzmwI">
-      <ref role="PrY4T" to="uoys:7CVN7FEkFWB" resolve="i_SuperClass3" />
+      <ref role="PrY4T" node="7CVN7FEkFWB" resolve="i_SuperClass3" />
     </node>
   </node>
   <node concept="AxPO7" id="7CVN7FEkFWt">

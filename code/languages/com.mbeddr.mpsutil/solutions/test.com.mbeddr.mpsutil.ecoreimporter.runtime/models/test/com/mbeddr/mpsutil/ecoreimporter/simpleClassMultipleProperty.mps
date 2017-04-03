@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:25866427-cb6e-4a5a-ad80-de1585237b4f(test.com.mbeddr.mpsutil.ecoreimporter.runtime.simpleClassMultipleProperty.structure)">
+<model ref="r:ed127a32-e62a-48b7-bda3-7cc19ac5f16b(test.com.mbeddr.mpsutil.ecoreimporter.simpleClassMultipleProperty)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />

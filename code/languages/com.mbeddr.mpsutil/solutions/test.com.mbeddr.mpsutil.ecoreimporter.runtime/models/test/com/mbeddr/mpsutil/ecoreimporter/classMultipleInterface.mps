@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c7493ec4-c73c-4f2f-93ce-d47cdd42f681(test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleInterface.structure)">
+<model ref="r:8ce71c62-0c05-4cdd-938d-98d554cdc469(test.com.mbeddr.mpsutil.ecoreimporter.classMultipleInterface)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="isjn" ref="r:8ce71c62-0c05-4cdd-938d-98d554cdc469(test.com.mbeddr.mpsutil.ecoreimporter.classMultipleInterface)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -46,10 +44,10 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="PrWs8" id="5ZsrU$JfeKp" role="PzmwI">
-      <ref role="PrY4T" to="isjn:5ZsrU$JfeKl" resolve="testInterface1" />
+      <ref role="PrY4T" node="5ZsrU$JfeKl" resolve="testInterface1" />
     </node>
     <node concept="PrWs8" id="5ZsrU$JfeKq" role="PzmwI">
-      <ref role="PrY4T" to="isjn:5ZsrU$JfeKn" resolve="testInterface2" />
+      <ref role="PrY4T" node="5ZsrU$JfeKn" resolve="testInterface2" />
     </node>
   </node>
   <node concept="PlHQZ" id="5ZsrU$JfeKl">

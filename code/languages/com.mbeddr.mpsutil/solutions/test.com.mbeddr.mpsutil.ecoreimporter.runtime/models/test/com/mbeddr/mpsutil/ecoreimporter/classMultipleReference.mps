@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:368a4a88-e81b-46ff-a86d-5e87cc5bfe87(test.com.mbeddr.mpsutil.ecoreimporter.runtime.classMultipleReference.structure)">
+<model ref="r:19401f7e-1c25-4f0d-94e2-cc76977ecaba(test.com.mbeddr.mpsutil.ecoreimporter.classMultipleReference)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -54,6 +53,24 @@
       <ref role="20lvS9" node="7FLq2$JzpfI" resolve="testRefClass1" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7FLq2$JzpfM">
+    <property role="R5$K7" value="false" />
+    <property role="19KtqR" value="true" />
+    <property role="EcuMT" value="8858976468115231730" />
+    <property role="TrG5h" value="testClass2" />
+    <node concept="1TJgyi" id="7FLq2$JzpfN" role="1TKVEl">
+      <property role="IQ2nx" value="8858976468115231731" />
+      <property role="TrG5h" value="testclass2attr1" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="7FLq2$JzpfO" role="1TKVEi">
+      <property role="IQ2ns" value="8858976468115231732" />
+      <property role="20kJfa" value="testRef2" />
+      <property role="20lbJX" value="0..n" />
+      <property role="20lmBu" value="aggregation" />
+      <ref role="20lvS9" node="7FLq2$JzpfK" resolve="testRefClass2" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="7FLq2$JzpfI">
     <property role="R5$K7" value="false" />
     <property role="19KtqR" value="true" />
@@ -74,24 +91,6 @@
       <property role="IQ2nx" value="8858976468115231729" />
       <property role="TrG5h" value="testRef2attr1" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7FLq2$JzpfM">
-    <property role="R5$K7" value="false" />
-    <property role="19KtqR" value="true" />
-    <property role="EcuMT" value="8858976468115231730" />
-    <property role="TrG5h" value="testClass2" />
-    <node concept="1TJgyi" id="7FLq2$JzpfN" role="1TKVEl">
-      <property role="IQ2nx" value="8858976468115231731" />
-      <property role="TrG5h" value="testclass2attr1" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyj" id="7FLq2$JzpfO" role="1TKVEi">
-      <property role="IQ2ns" value="8858976468115231732" />
-      <property role="20kJfa" value="testRef2" />
-      <property role="20lbJX" value="0..n" />
-      <property role="20lmBu" value="aggregation" />
-      <ref role="20lvS9" node="7FLq2$JzpfK" resolve="testRefClass2" />
     </node>
   </node>
 </model>

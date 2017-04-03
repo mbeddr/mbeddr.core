@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2aa76c56-412c-431e-89ab-51c4301b3bac(test.com.mbeddr.mpsutil.ecoreimporter.runtime.multipleInterfaceInheritance.structure)">
+<model ref="r:4f5e1cd3-ac4c-4545-9cac-03bdb8e11577(test.com.mbeddr.mpsutil.ecoreimporter.multipleInterfaceInheritance)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecoreimporter.util" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecoreimporter.util" version="0" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="d0t8" ref="r:4f5e1cd3-ac4c-4545-9cac-03bdb8e11577(test.com.mbeddr.mpsutil.ecoreimporter.multipleInterfaceInheritance)" implicit="true" />
   </imports>
   <registry>
     <language id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecoreimporter.util">
@@ -46,6 +44,41 @@
       </concept>
     </language>
   </registry>
+  <node concept="PlHQZ" id="7FLq2$JzxqU">
+    <property role="TrG5h" value="i_superClass2" />
+    <property role="EcuMT" value="8858976468115265210" />
+    <node concept="1TJgyi" id="7FLq2$JzxqO" role="1TKVEl">
+      <property role="IQ2nx" value="8858976468115265204" />
+      <property role="TrG5h" value="attr5" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="tq6dS" id="7FLq2$JzxqP" role="lGtFl">
+        <node concept="trrjy" id="7FLq2$JzxqQ" role="tqAd9" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FLq2$JzxqJ">
+    <property role="R5$K7" value="false" />
+    <property role="19KtqR" value="true" />
+    <property role="EcuMT" value="8858976468115265199" />
+    <property role="TrG5h" value="superClass" />
+    <node concept="1TJgyi" id="7FLq2$JzxqK" role="1TKVEl">
+      <property role="IQ2nx" value="8858976468115265200" />
+      <property role="TrG5h" value="attr4" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="tq6dS" id="7FLq2$JzxqL" role="lGtFl">
+        <node concept="trrjy" id="7FLq2$JzxqM" role="tqAd9" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FLq2$JzxqN">
+    <property role="R5$K7" value="false" />
+    <property role="19KtqR" value="true" />
+    <property role="EcuMT" value="8858976468115265203" />
+    <property role="TrG5h" value="superClass2" />
+    <node concept="PrWs8" id="4G$uji5tbdq" role="PzmwI">
+      <ref role="PrY4T" node="7FLq2$JzxqU" resolve="i_superClass2" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="7FLq2$JzxqD">
     <property role="R5$K7" value="false" />
     <property role="19KtqR" value="true" />
@@ -85,41 +118,6 @@
       <property role="IQ2nx" value="8858976468115265198" />
       <property role="TrG5h" value="attr3" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7FLq2$JzxqJ">
-    <property role="R5$K7" value="false" />
-    <property role="19KtqR" value="true" />
-    <property role="EcuMT" value="8858976468115265199" />
-    <property role="TrG5h" value="superClass" />
-    <node concept="1TJgyi" id="7FLq2$JzxqK" role="1TKVEl">
-      <property role="IQ2nx" value="8858976468115265200" />
-      <property role="TrG5h" value="attr4" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="tq6dS" id="7FLq2$JzxqL" role="lGtFl">
-        <node concept="trrjy" id="7FLq2$JzxqM" role="tqAd9" />
-      </node>
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7FLq2$JzxqN">
-    <property role="R5$K7" value="false" />
-    <property role="19KtqR" value="true" />
-    <property role="EcuMT" value="8858976468115265203" />
-    <property role="TrG5h" value="superClass2" />
-    <node concept="PrWs8" id="4G$uji5tbdq" role="PzmwI">
-      <ref role="PrY4T" to="d0t8:7FLq2$JzxqU" resolve="i_superClass2" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="7FLq2$JzxqU">
-    <property role="TrG5h" value="i_superClass2" />
-    <property role="EcuMT" value="8858976468115265210" />
-    <node concept="1TJgyi" id="7FLq2$JzxqO" role="1TKVEl">
-      <property role="IQ2nx" value="8858976468115265204" />
-      <property role="TrG5h" value="attr5" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="tq6dS" id="7FLq2$JzxqP" role="lGtFl">
-        <node concept="trrjy" id="7FLq2$JzxqQ" role="tqAd9" />
-      </node>
     </node>
   </node>
 </model>
