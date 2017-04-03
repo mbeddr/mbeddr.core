@@ -1,3 +1,4 @@
+import de.itemis.mps.gradle.CreateDmg
 
 configurations {
     junitAnt
@@ -5,7 +6,6 @@ configurations {
     cbmcWin {
         description = 'cbmc windows'
     }
-    jreMac
     jreWin
 }
 
@@ -13,10 +13,10 @@ ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr',
         'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' ]
 
+ext.jdkVersion = '8u112b408.4'
 dependencies {
     mpsArtifacts "com.mbeddr:mbeddr:$mbeddrBuildNumber"
-    jreMac "com.jetbrains.jdk:jdk:8u112b408.4:osx_x64@tgz"
-    jreWin "com.jetbrains.jdk:jdk:8u112b408.4:windows_x64@tgz"
+    jreWin "com.jetbrains.jdk:jdk:${jdkVersion}:windows_x64@tgz"
 }
 
 task resolveMpsArtifacts() {
@@ -110,22 +110,10 @@ task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipF
   }
 }
 
-def script_build_dmg = new File(rootDir , "/buildUtil/build.xml")
-
-task resolveJreMac(type: Copy) {
-    from {
-        configurations.jreMac.resolve()
-    }
-    into rootProject.projectDir.absolutePath + "/buildUtil"
-    rename("jdk-8u112b408.4-osx_x64.tgz", "jdk.tar.gz")
-}
-
-task prepare_dmg(type:Copy, dependsOn: [build_mbeddrRCP, resolveJreMac]) {
-    from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/"
-    into rootProject.projectDir.absolutePath + "/buildUtil"
-}
-
-task build_dmg(type: RunMbeddrAntScript, dependsOn: prepare_dmg) {
-    script script_build_dmg
-    targets 'macbuild'
+task build_dmg(type: CreateDmg) {
+    dependsOn build_mbeddrRCP
+    rcpArtifact rootProject.file('artifacts/mpsDistribution/mbeddr-macos.zip')
+    jdkDependency "com.jetbrains.jdk:jdk:${jdkVersion}:osx_x64@tgz"
+    backgroundImage rootProject.file('rcp/icons/mbeddr-logo.png')
+    dmgFile rootProject.file('buildUtil/mbeddr-macos.dmg')
 }

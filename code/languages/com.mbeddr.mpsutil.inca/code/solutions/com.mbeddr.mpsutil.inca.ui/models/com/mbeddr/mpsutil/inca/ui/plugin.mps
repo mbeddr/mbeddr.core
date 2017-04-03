@@ -9828,17 +9828,6 @@
     <property role="TrG5h" value="DropDownButton" />
     <property role="3GE5qa" value="misc" />
     <node concept="2tJIrI" id="77Ri3O51byJ" role="jymVt" />
-    <node concept="312cEg" id="77Ri3O51Hjr" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="mouseInButton" />
-      <property role="3TUv4t" value="false" />
-      <node concept="10P_77" id="77Ri3O51Hjt" role="1tU5fm" />
-      <node concept="3clFbT" id="77Ri3O51Hju" role="33vP2m">
-        <property role="3clFbU" value="false" />
-      </node>
-      <node concept="3Tm6S6" id="77Ri3O51Hjv" role="1B3o_S" />
-    </node>
     <node concept="312cEg" id="77Ri3O51Hjw" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -10463,16 +10452,6 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="77Ri3O51Hnc" role="3clF47">
-                      <node concept="3clFbF" id="77Ri3O51Hnd" role="3cqZAp">
-                        <node concept="37vLTI" id="77Ri3O51Hne" role="3clFbG">
-                          <node concept="37vLTw" id="77Ri3O51Hnf" role="37vLTJ">
-                            <ref role="3cqZAo" node="77Ri3O51Hjr" resolve="mouseInButton" />
-                          </node>
-                          <node concept="3clFbT" id="77Ri3O51Hng" role="37vLTx">
-                            <property role="3clFbU" value="true" />
-                          </node>
-                        </node>
-                      </node>
                       <node concept="3clFbJ" id="77Ri3O51Hnh" role="3cqZAp">
                         <node concept="1rXfSq" id="77Ri3O51Hni" role="3clFbw">
                           <ref role="37wK5l" node="77Ri3O51HsJ" resolve="hasPopupMenu" />
@@ -10528,16 +10507,6 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="77Ri3O51Hn$" role="3clF47">
-                      <node concept="3clFbF" id="77Ri3O51Hn_" role="3cqZAp">
-                        <node concept="37vLTI" id="77Ri3O51HnA" role="3clFbG">
-                          <node concept="37vLTw" id="77Ri3O51HnB" role="37vLTJ">
-                            <ref role="3cqZAo" node="77Ri3O51Hjr" resolve="mouseInButton" />
-                          </node>
-                          <node concept="3clFbT" id="77Ri3O51HnC" role="37vLTx">
-                            <property role="3clFbU" value="false" />
-                          </node>
-                        </node>
-                      </node>
                       <node concept="3clFbF" id="77Ri3O51HnD" role="3cqZAp">
                         <node concept="37vLTI" id="77Ri3O51HnE" role="3clFbG">
                           <node concept="37vLTw" id="77Ri3O51HnF" role="37vLTJ">

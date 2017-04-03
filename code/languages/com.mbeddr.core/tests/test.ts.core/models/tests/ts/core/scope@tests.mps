@@ -832,9 +832,6 @@
       </node>
     </node>
   </node>
-  <node concept="2XOHcx" id="2tBHhzj$RQH">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
-  </node>
   <node concept="2v9HqL" id="4ifG318a7qu">
     <node concept="2xfidK" id="2nospmWkMyC" role="2AWWZH">
       <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
@@ -842,6 +839,9 @@
     <node concept="2Q9Fgs" id="3R$6B6bNgP7" role="2Q9xDr">
       <node concept="2Q9FjX" id="3R$6B6bNgP8" role="2Q9FjI" />
     </node>
+  </node>
+  <node concept="2XOHcx" id="2tBHhzj$RQH">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   </node>
 </model>
 

@@ -29,6 +29,10 @@
         <child id="996292992025662592" name="src" index="2kdhYM" />
         <child id="1925259677761394831" name="element" index="3zVzRQ" />
       </concept>
+      <concept id="8251544086380718803" name="com.mbeddr.mpsutil.inca.fun.structure.IInstanceOfLike" flags="ng" index="2RGvlN">
+        <child id="8251544086380719093" name="expression" index="2RGvhl" />
+        <child id="8251544086380718804" name="type" index="2RGvlO" />
+      </concept>
       <concept id="1036696987214522885" name="com.mbeddr.mpsutil.inca.fun.structure.FunTemporaryVariable" flags="ng" index="30KbLJ" />
       <concept id="1036696987215326970" name="com.mbeddr.mpsutil.inca.fun.structure.ReturnStatement" flags="ng" index="30Nfyg">
         <child id="1036696987215326979" name="expression" index="30Nf_D" />
@@ -42,10 +46,7 @@
         <child id="5813477617634726080" name="left" index="34ocZn" />
       </concept>
       <concept id="5813477617634724374" name="com.mbeddr.mpsutil.inca.fun.structure.AssignmentStatement" flags="ng" index="34odk1" />
-      <concept id="5813477617634737021" name="com.mbeddr.mpsutil.inca.fun.structure.InstanceOf" flags="ng" index="34oehE">
-        <reference id="5813477617634745243" name="type" index="34o0ic" />
-        <child id="5813477617634737164" name="expression" index="34oecr" />
-      </concept>
+      <concept id="5813477617634737021" name="com.mbeddr.mpsutil.inca.fun.structure.InstanceOf" flags="ng" index="34oehE" />
       <concept id="5813477617634730413" name="com.mbeddr.mpsutil.inca.fun.structure.Equality" flags="ng" index="34ofUU" />
       <concept id="1925259677759481823" name="com.mbeddr.mpsutil.inca.fun.structure.PatternFunction" flags="ng" index="3zyOaA">
         <child id="6368683143941351805" name="outParameters" index="3TLBbI" />
@@ -1025,9 +1026,11 @@
         </node>
         <node concept="34ocy7" id="7VDQWebdfXx" role="1dgzf0">
           <node concept="34oehE" id="7VDQWebdgan" role="34ocs8">
-            <ref role="34o0ic" to="w0dh:7VDQWeb2IaU" resolve="Graph" />
-            <node concept="30NkWi" id="7VDQWebdg6k" role="34oecr">
+            <node concept="30NkWi" id="7VDQWebdg6k" role="2RGvhl">
               <ref role="XkjO9" node="7VDQWebdfTe" resolve="graph" />
+            </node>
+            <node concept="2kdjtB" id="7a3nU35h50H" role="2RGvlO">
+              <ref role="2UGuZ7" to="w0dh:7VDQWeb2IaU" resolve="Graph" />
             </node>
           </node>
         </node>
