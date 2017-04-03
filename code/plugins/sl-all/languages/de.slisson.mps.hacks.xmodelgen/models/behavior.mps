@@ -25,6 +25,8 @@
     <import index="mcvo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure.language(MPS.Core/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="28nf" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.impl.query(MPS.Core/)" />
+    <import index="w0gx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.structure.modules(MPS.Core/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="gxwz" ref="r:d1800018-44fb-4b2e-b3ae-2afea554d27b(de.slisson.mps.hacks.xmodelgen.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpf8" ref="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" implicit="true" />
@@ -191,6 +193,7 @@
       <concept id="1171903916106" name="jetbrains.mps.baseLanguage.structure.UpperBoundType" flags="in" index="3qUE_q">
         <child id="1171903916107" name="bound" index="3qUE_r" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
@@ -733,6 +736,17 @@
         <ref role="3uigEE" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
       </node>
     </node>
+    <node concept="312cEg" id="1FjbNrbIdO1" role="jymVt">
+      <property role="TrG5h" value="uuid" />
+      <node concept="3Tm6S6" id="1FjbNrbIdO2" role="1B3o_S" />
+      <node concept="3uibUv" id="1FjbNrbIfpT" role="1tU5fm">
+        <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
+      </node>
+      <node concept="2YIFZM" id="21ms2Yw$E9m" role="33vP2m">
+        <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
+        <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
+      </node>
+    </node>
     <node concept="312cEg" id="21ms2Yw$zNv" role="jymVt">
       <property role="TrG5h" value="id" />
       <node concept="3Tm6S6" id="21ms2Yw$zNw" role="1B3o_S" />
@@ -742,9 +756,8 @@
       <node concept="2ShNRf" id="21ms2Yw$CJI" role="33vP2m">
         <node concept="1pGfFk" id="21ms2Yw$C$H" role="2ShVmc">
           <ref role="37wK5l" to="e8bb:~SLanguageId.&lt;init&gt;(java.util.UUID)" resolve="SLanguageId" />
-          <node concept="2YIFZM" id="21ms2Yw$E9m" role="37wK5m">
-            <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
-            <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
+          <node concept="37vLTw" id="1FjbNrbIiBy" role="37wK5m">
+            <ref role="3cqZAo" node="1FjbNrbIdO1" resolve="uuid" />
           </node>
         </node>
       </node>
@@ -864,6 +877,32 @@
       </node>
     </node>
     <node concept="2tJIrI" id="21DAGcgrhrW" role="jymVt" />
+    <node concept="3clFb_" id="1FjbNrbI6rC" role="jymVt">
+      <property role="TrG5h" value="unregister" />
+      <node concept="3cqZAl" id="1FjbNrbI6rE" role="3clF45" />
+      <node concept="3Tm1VV" id="1FjbNrbI6rF" role="1B3o_S" />
+      <node concept="3clFbS" id="1FjbNrbI6rG" role="3clF47">
+        <node concept="3clFbF" id="1FjbNrbI9q4" role="3cqZAp">
+          <node concept="2OqwBi" id="1FjbNrbI9q5" role="3clFbG">
+            <node concept="2OqwBi" id="1FjbNrbI9q6" role="2Oq$k0">
+              <node concept="37vLTw" id="1FjbNrbI9q7" role="2Oq$k0">
+                <ref role="3cqZAo" node="6KgrWUnhEix" resolve="languageRegistry" />
+              </node>
+              <node concept="1PnCL0" id="1FjbNrbI9q8" role="2OqNvi">
+                <ref role="2Oxat5" to="vndm:~LanguageRegistry.myLanguagesById" resolve="myLanguagesById" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1FjbNrbI9q9" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Map.remove(java.lang.Object):java.lang.Object" resolve="remove" />
+              <node concept="37vLTw" id="1FjbNrbI9qa" role="37wK5m">
+                <ref role="3cqZAo" node="21ms2Yw$zNv" resolve="id" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1FjbNrbI4Qk" role="jymVt" />
     <node concept="3Tm1VV" id="6KgrWUngaUN" role="1B3o_S" />
     <node concept="3uibUv" id="6KgrWUngaY2" role="1zkMxy">
       <ref role="3uigEE" to="vndm:~LanguageRuntime" resolve="LanguageRuntime" />
@@ -888,22 +927,9 @@
             <property role="3SKdUp" value="See RigidPlanBuilder" />
           </node>
         </node>
-        <node concept="3clFbF" id="6KgrWUnhzIJ" role="3cqZAp">
-          <node concept="2OqwBi" id="6KgrWUnhzIK" role="3clFbG">
-            <node concept="2OqwBi" id="6KgrWUnhzIL" role="2Oq$k0">
-              <node concept="37vLTw" id="6KgrWUnhM8B" role="2Oq$k0">
-                <ref role="3cqZAo" node="6KgrWUnhEix" resolve="languageRegistry" />
-              </node>
-              <node concept="1PnCL0" id="6KgrWUnhzIN" role="2OqNvi">
-                <ref role="2Oxat5" to="vndm:~LanguageRegistry.myLanguagesById" resolve="myLanguagesById" />
-              </node>
-            </node>
-            <node concept="liA8E" id="6KgrWUnhO4s" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Map.remove(java.lang.Object):java.lang.Object" resolve="remove" />
-              <node concept="37vLTw" id="6SOOB4GnPwO" role="37wK5m">
-                <ref role="3cqZAo" node="21ms2Yw$zNv" resolve="id" />
-              </node>
-            </node>
+        <node concept="3clFbF" id="1FjbNrbIbrs" role="3cqZAp">
+          <node concept="1rXfSq" id="1FjbNrbIbrq" role="3clFbG">
+            <ref role="37wK5l" node="1FjbNrbI6rC" resolve="unregister" />
           </node>
         </node>
         <node concept="3clFbH" id="6KgrWUnhPWI" role="3cqZAp" />
@@ -1313,10 +1339,30 @@
         <ref role="3uigEE" to="lui2:~SModuleReference" resolve="SModuleReference" />
       </node>
       <node concept="3clFbS" id="6KgrWUngj$V" role="3clF47">
-        <node concept="YS8fn" id="6KgrWUngld_" role="3cqZAp">
-          <node concept="2ShNRf" id="6KgrWUngldA" role="YScLw">
-            <node concept="1pGfFk" id="6KgrWUngldB" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+        <node concept="3clFbF" id="1FjbNrbIlTU" role="3cqZAp">
+          <node concept="1rXfSq" id="1FjbNrbIlTS" role="3clFbG">
+            <ref role="37wK5l" node="1FjbNrbI6rC" resolve="unregister" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1FjbNrbImSi" role="3cqZAp">
+          <node concept="2ShNRf" id="1FjbNrbIDc1" role="3cqZAk">
+            <node concept="1pGfFk" id="1FjbNrbIFvH" role="2ShVmc">
+              <ref role="37wK5l" to="w0gx:~ModuleReference.&lt;init&gt;(java.lang.String,org.jetbrains.mps.openapi.module.SModuleId)" resolve="ModuleReference" />
+              <node concept="3cpWs3" id="1FjbNrbIK4$" role="37wK5m">
+                <node concept="37vLTw" id="1FjbNrbIKfI" role="3uHU7w">
+                  <ref role="3cqZAo" node="1FjbNrbIdO1" resolve="uuid" />
+                </node>
+                <node concept="Xl_RD" id="1FjbNrbIH32" role="3uHU7B">
+                  <property role="Xl_RC" value="module" />
+                </node>
+              </node>
+              <node concept="2YIFZM" id="1FjbNrbIUrV" role="37wK5m">
+                <ref role="1Pybhc" to="z1c3:~ModuleId" resolve="ModuleId" />
+                <ref role="37wK5l" to="z1c3:~ModuleId.regular(java.util.UUID):jetbrains.mps.project.ModuleId" resolve="regular" />
+                <node concept="37vLTw" id="1FjbNrbIW1c" role="37wK5m">
+                  <ref role="3cqZAo" node="1FjbNrbIdO1" resolve="uuid" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
