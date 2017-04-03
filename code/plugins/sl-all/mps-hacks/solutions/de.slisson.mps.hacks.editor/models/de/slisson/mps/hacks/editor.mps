@@ -1650,70 +1650,20 @@
         </node>
       </node>
       <node concept="3clFbS" id="6rHj_ILTAIN" role="3clF47">
-        <node concept="3cpWs8" id="6rHj_ILTAJ9" role="3cqZAp">
-          <node concept="3cpWsn" id="6rHj_ILTAJa" role="3cpWs9">
-            <property role="TrG5h" value="newInfo" />
-            <node concept="3uibUv" id="6rHj_ILTAJb" role="1tU5fm">
-              <ref role="3uigEE" to="6lvu:~SChildSubstituteInfo" resolve="SChildSubstituteInfo" />
-            </node>
-            <node concept="2ShNRf" id="6rHj_ILTAJc" role="33vP2m">
-              <node concept="1pGfFk" id="6rHj_ILTAJd" role="2ShVmc">
-                <ref role="37wK5l" to="6lvu:~SChildSubstituteInfo.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink,org.jetbrains.mps.openapi.model.SNode)" resolve="SChildSubstituteInfo" />
-                <node concept="37vLTw" id="6rHj_ILTBTk" role="37wK5m">
-                  <ref role="3cqZAo" node="6rHj_ILTB_l" resolve="cell" />
-                </node>
-                <node concept="37vLTw" id="6rHj_ILTAJf" role="37wK5m">
-                  <ref role="3cqZAo" node="6rHj_ILTAIG" resolve="parent" />
-                </node>
-                <node concept="37vLTw" id="6rHj_ILTAJg" role="37wK5m">
-                  <ref role="3cqZAo" node="6rHj_ILTAIL" resolve="link" />
-                </node>
-                <node concept="10Nm6u" id="6rHj_ILTAJh" role="37wK5m" />
+        <node concept="3clFbF" id="6XxzLchseoc" role="3cqZAp">
+          <node concept="2ShNRf" id="6rHj_ILTAJc" role="3clFbG">
+            <node concept="1pGfFk" id="6rHj_ILTAJd" role="2ShVmc">
+              <ref role="37wK5l" to="6lvu:~SChildSubstituteInfo.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink,org.jetbrains.mps.openapi.model.SNode)" resolve="SChildSubstituteInfo" />
+              <node concept="37vLTw" id="6rHj_ILTBTk" role="37wK5m">
+                <ref role="3cqZAo" node="6rHj_ILTB_l" resolve="cell" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="6rHj_ILTAJi" role="3cqZAp">
-          <node concept="3cpWsn" id="6rHj_ILTAJj" role="3cpWs9">
-            <property role="TrG5h" value="oldInfo" />
-            <node concept="3uibUv" id="6rHj_ILTAJk" role="1tU5fm">
-              <ref role="3uigEE" to="6lvu:~DefaultChildSubstituteInfo" resolve="DefaultChildSubstituteInfo" />
-            </node>
-            <node concept="2ShNRf" id="6rHj_ILTAJl" role="33vP2m">
-              <node concept="1pGfFk" id="6rHj_ILTAJm" role="2ShVmc">
-                <ref role="37wK5l" to="6lvu:~DefaultChildSubstituteInfo.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext)" resolve="DefaultChildSubstituteInfo" />
-                <node concept="37vLTw" id="6rHj_ILTAJn" role="37wK5m">
-                  <ref role="3cqZAo" node="6rHj_ILTAIG" resolve="parent" />
-                </node>
-                <node concept="10Nm6u" id="6rHj_ILTAJo" role="37wK5m" />
-                <node concept="2OqwBi" id="6rHj_ILTAJp" role="37wK5m">
-                  <node concept="37vLTw" id="6rHj_ILTAJq" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6rHj_ILTAIL" resolve="link" />
-                  </node>
-                  <node concept="liA8E" id="6rHj_ILTAJr" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="6rHj_ILTAJs" role="37wK5m">
-                  <ref role="3cqZAo" node="6rHj_ILTAIE" resolve="editorContext" />
-                </node>
+              <node concept="37vLTw" id="6rHj_ILTAJf" role="37wK5m">
+                <ref role="3cqZAo" node="6rHj_ILTAIG" resolve="parent" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6rHj_ILTAJt" role="3cqZAp">
-          <node concept="2ShNRf" id="6rHj_ILTAJu" role="3clFbG">
-            <node concept="1pGfFk" id="6rHj_ILTAJv" role="2ShVmc">
-              <ref role="37wK5l" to="6lvu:~OldNewCompositeSubstituteInfo.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,jetbrains.mps.nodeEditor.cellMenu.AbstractSubstituteInfo,jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo)" resolve="OldNewCompositeSubstituteInfo" />
-              <node concept="37vLTw" id="6rHj_ILTAJw" role="37wK5m">
-                <ref role="3cqZAo" node="6rHj_ILTAIE" resolve="editorContext" />
+              <node concept="37vLTw" id="6rHj_ILTAJg" role="37wK5m">
+                <ref role="3cqZAo" node="6rHj_ILTAIL" resolve="link" />
               </node>
-              <node concept="37vLTw" id="6rHj_ILTAJx" role="37wK5m">
-                <ref role="3cqZAo" node="6rHj_ILTAJa" resolve="newInfo" />
-              </node>
-              <node concept="37vLTw" id="6rHj_ILTAJy" role="37wK5m">
-                <ref role="3cqZAo" node="6rHj_ILTAJj" resolve="oldInfo" />
-              </node>
+              <node concept="10Nm6u" id="6rHj_ILTAJh" role="37wK5m" />
             </node>
           </node>
         </node>
