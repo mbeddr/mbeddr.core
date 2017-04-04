@@ -8296,5 +8296,36 @@
   <node concept="3p36aQ" id="5rSz5xRlZVw">
     <ref role="aqKnT" to="q5q6:3V3CJZuMScE" resolve="IAssertLike_old" />
   </node>
+  <node concept="24kQdi" id="60tjEV5PNis">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <ref role="1XX52x" to="q5q6:60tjEV5P_tq" resolve="CPROVERoutput" />
+    <node concept="3EZMnI" id="60tjEV5PNF8" role="2wV5jI">
+      <node concept="3F0ifn" id="60tjEV5PNF9" role="3EZMnx">
+        <property role="3F0ifm" value="__CPROVER_output(" />
+      </node>
+      <node concept="3F1sOY" id="60tjEV5PNFa" role="3EZMnx">
+        <ref role="1NtTu8" to="q5q6:60tjEV5PKHX" resolve="name" />
+        <node concept="11L4FC" id="60tjEV5PNFb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="60tjEV5PNFc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="60tjEV5PNFd" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F1sOY" id="60tjEV5PNFe" role="3EZMnx">
+        <ref role="1NtTu8" to="q5q6:60tjEV5PKtw" resolve="expression" />
+      </node>
+      <node concept="3F0ifn" id="60tjEV5PNFf" role="3EZMnx">
+        <property role="3F0ifm" value=");" />
+        <node concept="11L4FC" id="60tjEV5PNFg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="60tjEV5PNFh" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
