@@ -37,6 +37,8 @@
     <import index="vpqd" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.parsers(JDK/)" />
     <import index="1qo3" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.tuple(org.apache.commons/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="wwqx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.logging(MPS.Core/)" />
+    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -97,10 +99,6 @@
       <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
-      </concept>
-      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
-        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
-        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
@@ -523,11 +521,16 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6lrp79dYIoU" role="3cqZAp">
-                <node concept="1rXfSq" id="6lrp79dYIoS" role="3clFbG">
-                  <ref role="37wK5l" node="6lrp79dYxZx" resolve="debug" />
-                  <node concept="Xl_RD" id="6lrp79dYIEc" role="37wK5m">
-                    <property role="Xl_RC" value="result lifted successfully" />
+              <node concept="3clFbF" id="6Ad3C79trNK" role="3cqZAp">
+                <node concept="2OqwBi" id="6Ad3C79ts$U" role="3clFbG">
+                  <node concept="37vLTw" id="6Ad3C79trNI" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
+                  </node>
+                  <node concept="liA8E" id="6Ad3C79tt31" role="2OqNvi">
+                    <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+                    <node concept="Xl_RD" id="6Ad3C79ttfl" role="37wK5m">
+                      <property role="Xl_RC" value="result lifted successfully" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -555,14 +558,35 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6lrp79dYJ$C" role="3cqZAp">
-          <node concept="1rXfSq" id="6lrp79dYJ$A" role="3clFbG">
-            <ref role="37wK5l" node="6lrp79dYxZx" resolve="debug" />
-            <node concept="Xl_RD" id="6lrp79dYK2w" role="37wK5m">
-              <property role="Xl_RC" value="test vector result built" />
+        <node concept="3clFbF" id="6Ad3C79tuHH" role="3cqZAp">
+          <node concept="2OqwBi" id="6Ad3C79tuHI" role="3clFbG">
+            <node concept="37vLTw" id="6Ad3C79tuHJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
+            </node>
+            <node concept="liA8E" id="6Ad3C79tuHK" role="2OqNvi">
+              <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+              <node concept="3cpWs3" id="6Ad3C79tz37" role="37wK5m">
+                <node concept="Xl_RD" id="6Ad3C79t_9P" role="3uHU7w">
+                  <property role="Xl_RC" value="' built" />
+                </node>
+                <node concept="3cpWs3" id="6Ad3C79txxB" role="3uHU7B">
+                  <node concept="Xl_RD" id="6lrp79dYK2w" role="3uHU7B">
+                    <property role="Xl_RC" value="test vector result '" />
+                  </node>
+                  <node concept="2OqwBi" id="6Ad3C79tyjv" role="3uHU7w">
+                    <node concept="37vLTw" id="6Ad3C79txU2" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6QX7yC5tcps" resolve="tvr" />
+                    </node>
+                    <node concept="liA8E" id="6Ad3C79tyxi" role="2OqNvi">
+                      <ref role="37wK5l" node="67iKQ7opcry" resolve="getUserFriendlyMessage" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6Ad3C79ttKU" role="3cqZAp" />
         <node concept="3kxDZ6" id="6QX7yC5tcp_" role="3cqZAp">
           <node concept="9aQIb" id="6QX7yC5tcpA" role="3kxCCa">
             <node concept="3clFbS" id="6QX7yC5tcpB" role="9aQI4">
@@ -637,14 +661,35 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="1UHnSpz_FNZ" role="3clF47">
-        <node concept="3clFbF" id="6lrp79dYKP3" role="3cqZAp">
-          <node concept="1rXfSq" id="6lrp79dYKP1" role="3clFbG">
-            <ref role="37wK5l" node="6lrp79dYxZx" resolve="debug" />
-            <node concept="Xl_RD" id="6lrp79dYL8f" role="37wK5m">
-              <property role="Xl_RC" value="saving test vector" />
+        <node concept="3clFbF" id="6Ad3C79tCs_" role="3cqZAp">
+          <node concept="2OqwBi" id="6Ad3C79tCsA" role="3clFbG">
+            <node concept="37vLTw" id="6Ad3C79tCsB" role="2Oq$k0">
+              <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
+            </node>
+            <node concept="liA8E" id="6Ad3C79tCsC" role="2OqNvi">
+              <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+              <node concept="3cpWs3" id="6Ad3C79tCsD" role="37wK5m">
+                <node concept="Xl_RD" id="6Ad3C79tCsE" role="3uHU7w">
+                  <property role="Xl_RC" value="'" />
+                </node>
+                <node concept="3cpWs3" id="6Ad3C79tCsF" role="3uHU7B">
+                  <node concept="Xl_RD" id="6Ad3C79tCsG" role="3uHU7B">
+                    <property role="Xl_RC" value="saving test vector '" />
+                  </node>
+                  <node concept="2OqwBi" id="6Ad3C79tCsH" role="3uHU7w">
+                    <node concept="37vLTw" id="6Ad3C79tCsI" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1UHnSpz_GCr" resolve="tvr" />
+                    </node>
+                    <node concept="liA8E" id="6Ad3C79tCsJ" role="2OqNvi">
+                      <ref role="37wK5l" node="67iKQ7opcry" resolve="getUserFriendlyMessage" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6Ad3C79t_Jk" role="3cqZAp" />
         <node concept="3clFbF" id="6h8aqNePHMI" role="3cqZAp">
           <node concept="2YIFZM" id="6h8aqNePHYG" role="3clFbG">
             <ref role="1Pybhc" to="g4f5:73BQep1N5pg" resolve="TestsSaver" />
@@ -660,11 +705,31 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6lrp79dYLWH" role="3cqZAp">
-          <node concept="1rXfSq" id="6lrp79dYLWF" role="3clFbG">
-            <ref role="37wK5l" node="6lrp79dYxZx" resolve="debug" />
-            <node concept="Xl_RD" id="6lrp79dYM40" role="37wK5m">
-              <property role="Xl_RC" value="test vector saved" />
+        <node concept="3clFbF" id="6Ad3C79tDR0" role="3cqZAp">
+          <node concept="2OqwBi" id="6Ad3C79tDR1" role="3clFbG">
+            <node concept="37vLTw" id="6Ad3C79tDR2" role="2Oq$k0">
+              <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
+            </node>
+            <node concept="liA8E" id="6Ad3C79tDR3" role="2OqNvi">
+              <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+              <node concept="3cpWs3" id="6Ad3C79tDR4" role="37wK5m">
+                <node concept="Xl_RD" id="6Ad3C79tDR5" role="3uHU7w">
+                  <property role="Xl_RC" value="' was saved" />
+                </node>
+                <node concept="3cpWs3" id="6Ad3C79tDR6" role="3uHU7B">
+                  <node concept="Xl_RD" id="6Ad3C79tDR7" role="3uHU7B">
+                    <property role="Xl_RC" value="test vector '" />
+                  </node>
+                  <node concept="2OqwBi" id="6Ad3C79tDR8" role="3uHU7w">
+                    <node concept="37vLTw" id="6Ad3C79tDR9" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1UHnSpz_GCr" resolve="tvr" />
+                    </node>
+                    <node concept="liA8E" id="6Ad3C79tDRa" role="2OqNvi">
+                      <ref role="37wK5l" node="67iKQ7opcry" resolve="getUserFriendlyMessage" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2037,6 +2102,30 @@
   <node concept="312cEu" id="6QX7yC5sR8t">
     <property role="TrG5h" value="TestsgenLikeAnalyzer" />
     <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="6Ad3C79sD1Q" role="jymVt" />
+    <node concept="312cEg" id="3aDyPAXMM3B" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="my_logger" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="3aDyPAXMKTm" role="1tU5fm">
+        <ref role="3uigEE" to="wwqx:~Logger" resolve="Logger" />
+      </node>
+      <node concept="2YIFZM" id="3aDyPAXMNwZ" role="33vP2m">
+        <ref role="37wK5l" to="wwqx:~Logger.wrap(org.apache.log4j.Logger):jetbrains.mps.logging.Logger" resolve="wrap" />
+        <ref role="1Pybhc" to="wwqx:~Logger" resolve="Logger" />
+        <node concept="2YIFZM" id="3aDyPAXMOIY" role="37wK5m">
+          <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
+          <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
+          <node concept="3VsKOn" id="p9azjqCVF3" role="37wK5m">
+            <ref role="3VsUkX" node="6QX7yC5sR8t" resolve="TestsgenLikeAnalyzer" />
+          </node>
+        </node>
+      </node>
+      <node concept="NWlO9" id="3aDyPAXMQX1" role="lGtFl">
+        <property role="NWlVz" value="The current logger." />
+      </node>
+    </node>
     <node concept="2tJIrI" id="6QX7yC5sUVU" role="jymVt" />
     <node concept="312cEg" id="73BQep1LgjQ" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -2067,19 +2156,7 @@
       </node>
     </node>
     <node concept="2tJIrI" id="MynG9Rr23c" role="jymVt" />
-    <node concept="Wx3nA" id="42G5eOpSOW9" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="Debug" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="42G5eOpSOWa" role="1B3o_S" />
-      <node concept="10P_77" id="42G5eOpSOWb" role="1tU5fm" />
-      <node concept="3clFbT" id="42G5eOpSOWc" role="33vP2m" />
-      <node concept="NWlO9" id="3aDyPAYjig7" role="lGtFl">
-        <property role="NWlVz" value="Should we debug?" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="42G5eOpSOWd" role="jymVt" />
+    <node concept="2tJIrI" id="6Ad3C79swL0" role="jymVt" />
     <node concept="3clFbW" id="6QX7yC5t0iS" role="jymVt">
       <node concept="37vLTG" id="6QX7yC5t0iT" role="3clF46">
         <property role="TrG5h" value="config" />
@@ -2283,11 +2360,16 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="3clFbF" id="6lrp79dYFN6" role="3cqZAp">
-                              <node concept="1rXfSq" id="6lrp79dYFN4" role="3clFbG">
-                                <ref role="37wK5l" node="6lrp79dYxZx" resolve="debug" />
-                                <node concept="Xl_RD" id="6lrp79dYG8w" role="37wK5m">
-                                  <property role="Xl_RC" value="cbmc testsgen terminated" />
+                            <node concept="3clFbF" id="6Ad3C79sFe8" role="3cqZAp">
+                              <node concept="2OqwBi" id="6Ad3C79sG1o" role="3clFbG">
+                                <node concept="37vLTw" id="6Ad3C79sFe6" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
+                                </node>
+                                <node concept="liA8E" id="6Ad3C79sGnp" role="2OqNvi">
+                                  <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+                                  <node concept="Xl_RD" id="6Ad3C79sGzM" role="37wK5m">
+                                    <property role="Xl_RC" value="cbmc testsgen terminated" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -2311,18 +2393,23 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="3clFbF" id="6lrp79dYGuc" role="3cqZAp">
-                              <node concept="1rXfSq" id="6lrp79dYGud" role="3clFbG">
-                                <ref role="37wK5l" node="6lrp79dYxZx" resolve="debug" />
-                                <node concept="3cpWs3" id="6lrp79dYGOq" role="37wK5m">
-                                  <node concept="2OqwBi" id="6lrp79dYGOr" role="3uHU7w">
-                                    <node concept="37vLTw" id="6lrp79dYGOs" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="67iKQ7omaJH" resolve="singleResults" />
+                            <node concept="3clFbF" id="6Ad3C79sHDk" role="3cqZAp">
+                              <node concept="2OqwBi" id="6Ad3C79sHDl" role="3clFbG">
+                                <node concept="37vLTw" id="6Ad3C79sHDm" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
+                                </node>
+                                <node concept="liA8E" id="6Ad3C79sHDn" role="2OqNvi">
+                                  <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+                                  <node concept="3cpWs3" id="6lrp79dYGOq" role="37wK5m">
+                                    <node concept="2OqwBi" id="6lrp79dYGOr" role="3uHU7w">
+                                      <node concept="37vLTw" id="6lrp79dYGOs" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="67iKQ7omaJH" resolve="singleResults" />
+                                      </node>
+                                      <node concept="34oBXx" id="6lrp79dYGOt" role="2OqNvi" />
                                     </node>
-                                    <node concept="34oBXx" id="6lrp79dYGOt" role="2OqNvi" />
-                                  </node>
-                                  <node concept="Xl_RD" id="6lrp79dYGOu" role="3uHU7B">
-                                    <property role="Xl_RC" value="number of vectors: " />
+                                    <node concept="Xl_RD" id="6lrp79dYGOu" role="3uHU7B">
+                                      <property role="Xl_RC" value="number of vectors: " />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -2398,11 +2485,31 @@
                                     <ref role="3cqZAo" node="4fvA6ORyAzD" resolve="analysesResults" />
                                   </node>
                                 </node>
-                                <node concept="3clFbF" id="6lrp79dYBLp" role="3cqZAp">
-                                  <node concept="1rXfSq" id="6lrp79dYBLn" role="3clFbG">
-                                    <ref role="37wK5l" node="6lrp79dYxZx" resolve="debug" />
-                                    <node concept="Xl_RD" id="6lrp79dYBZK" role="37wK5m">
-                                      <property role="Xl_RC" value="test vector added - publishing" />
+                                <node concept="3clFbF" id="6Ad3C79sJM6" role="3cqZAp">
+                                  <node concept="2OqwBi" id="6Ad3C79sJM7" role="3clFbG">
+                                    <node concept="37vLTw" id="6Ad3C79sJM8" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
+                                    </node>
+                                    <node concept="liA8E" id="6Ad3C79sJM9" role="2OqNvi">
+                                      <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+                                      <node concept="3cpWs3" id="6Ad3C79sPwl" role="37wK5m">
+                                        <node concept="Xl_RD" id="6Ad3C79t0Eu" role="3uHU7w">
+                                          <property role="Xl_RC" value="' lifted" />
+                                        </node>
+                                        <node concept="3cpWs3" id="6Ad3C79sJMa" role="3uHU7B">
+                                          <node concept="Xl_RD" id="6Ad3C79sJMe" role="3uHU7B">
+                                            <property role="Xl_RC" value="test vector '" />
+                                          </node>
+                                          <node concept="2OqwBi" id="6Ad3C79sMcl" role="3uHU7w">
+                                            <node concept="37vLTw" id="6Ad3C79sLD1" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="67iKQ7omoSU" resolve="tvr" />
+                                            </node>
+                                            <node concept="liA8E" id="6Ad3C79sMth" role="2OqNvi">
+                                              <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
@@ -2411,14 +2518,6 @@
                                     <ref role="37wK5l" to="tzyt:4fvA6OR08Pa" resolve="myPublish" />
                                     <node concept="37vLTw" id="67iKQ7ompNQ" role="37wK5m">
                                       <ref role="3cqZAo" node="67iKQ7omoSU" resolve="tvr" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbF" id="6lrp79dYDsJ" role="3cqZAp">
-                                  <node concept="1rXfSq" id="6lrp79dYDsK" role="3clFbG">
-                                    <ref role="37wK5l" node="6lrp79dYxZx" resolve="debug" />
-                                    <node concept="Xl_RD" id="6lrp79dYDsL" role="37wK5m">
-                                      <property role="Xl_RC" value="test vector published" />
                                     </node>
                                   </node>
                                 </node>
@@ -2476,65 +2575,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6QX7yC5sZIP" role="jymVt" />
-    <node concept="3clFb_" id="6lrp79dYxZx" role="jymVt">
-      <property role="TrG5h" value="debug" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="6lrp79dYxZz" role="3clF47">
-        <node concept="3clFbJ" id="6lrp79dYxZ$" role="3cqZAp">
-          <node concept="3clFbS" id="6lrp79dYxZ_" role="3clFbx">
-            <node concept="3clFbF" id="6lrp79dYxZA" role="3cqZAp">
-              <node concept="2OqwBi" id="6lrp79dYxZB" role="3clFbG">
-                <node concept="10M0yZ" id="6lrp79dYxZC" role="2Oq$k0">
-                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                </node>
-                <node concept="liA8E" id="6lrp79dYxZD" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="6lrp79dYxZE" role="37wK5m">
-                    <node concept="3cpWs3" id="6lrp79dYxZF" role="3uHU7B">
-                      <node concept="Xl_RD" id="6lrp79dYxZG" role="3uHU7w">
-                        <property role="Xl_RC" value="} " />
-                      </node>
-                      <node concept="3cpWs3" id="6lrp79dYxZH" role="3uHU7B">
-                        <node concept="Xl_RD" id="6lrp79dYxZI" role="3uHU7B">
-                          <property role="Xl_RC" value="{" />
-                        </node>
-                        <node concept="2OqwBi" id="6lrp79dYxZJ" role="3uHU7w">
-                          <node concept="3VsKOn" id="6lrp79dYxZK" role="2Oq$k0">
-                            <ref role="3VsUkX" node="3x0R1LJ5Cp2" resolve="TestsgenAnalyzer" />
-                          </node>
-                          <node concept="liA8E" id="6lrp79dYxZL" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="37vLTw" id="6lrp79dYxZM" role="3uHU7w">
-                      <ref role="3cqZAo" node="6lrp79dYxZQ" resolve="s" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="37vLTw" id="6lrp79dYxZN" role="3clFbw">
-            <ref role="3cqZAo" node="42G5eOpSOW9" resolve="Debug" />
-          </node>
-        </node>
-      </node>
-      <node concept="3cqZAl" id="6lrp79dYxZP" role="3clF45" />
-      <node concept="37vLTG" id="6lrp79dYxZQ" role="3clF46">
-        <property role="TrG5h" value="s" />
-        <node concept="17QB3L" id="6lrp79dYxZR" role="1tU5fm" />
-      </node>
-      <node concept="3Tmbuc" id="6lrp79dYElZ" role="1B3o_S" />
-      <node concept="NWlO9" id="3aDyPAYjnD_" role="lGtFl">
-        <property role="NWlVz" value="Debug ..." />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="42G5eOpSOG7" role="jymVt" />
     <node concept="3clFb_" id="MynG9RqDpd" role="jymVt">
       <property role="TrG5h" value="liftAndSaveResults" />
       <property role="1EzhhJ" value="true" />
