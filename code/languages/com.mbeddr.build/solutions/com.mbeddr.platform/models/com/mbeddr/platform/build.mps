@@ -2167,18 +2167,6 @@
               <ref role="3bR37D" node="Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
             </node>
           </node>
-          <node concept="1SiIV0" id="79i$vAYeV6G" role="3bR37C">
-            <node concept="3bR9La" id="79i$vAYeV6H" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="79i$vAYeV6I" role="3bR37C">
-            <node concept="3bR9La" id="79i$vAYeV6J" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
-            </node>
-          </node>
         </node>
       </node>
       <node concept="1E1JtA" id="vOGyTeLNYF" role="2G$12L">
