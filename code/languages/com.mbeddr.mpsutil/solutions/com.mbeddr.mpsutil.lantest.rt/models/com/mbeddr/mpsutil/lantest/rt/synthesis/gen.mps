@@ -4307,8 +4307,8 @@
               <ref role="3uigEE" to="c17a:~SConcept" resolve="SConcept" />
             </node>
             <node concept="2YIFZM" id="KiQtdga5k5" role="33vP2m">
-              <ref role="37wK5l" to="i8bi:Det6sRbgCN" resolve="asInstanceConcept" />
               <ref role="1Pybhc" to="i8bi:5IkW5anFcyt" resolve="SNodeOperations" />
+              <ref role="37wK5l" to="i8bi:Det6sRbgD5" resolve="asInstanceConcept" />
               <node concept="37vLTw" id="KiQtdga5k6" role="37wK5m">
                 <ref role="3cqZAo" node="2ksdigwm$kk" resolve="crtSubconcept" />
               </node>
