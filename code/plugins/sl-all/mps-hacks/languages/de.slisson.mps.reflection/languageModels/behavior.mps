@@ -19,6 +19,7 @@
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="fnmy" ref="r:89c0fb70-0977-4113-a076-5906f9d8630f(jetbrains.mps.baseLanguage.scopes)" />
+    <import index="ycmz" ref="r:af3e1a90-527b-4262-8066-857208a4f4fb(de.slisson.mps.reflection.runtime)" />
     <import index="oiz3" ref="r:879596e5-224b-4613-97ab-fbcbd7050732(de.slisson.mps.reflection.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -710,7 +711,7 @@
               </node>
             </node>
             <node concept="BsUDl" id="3xwsMyQkEyO" role="33vP2m">
-              <ref role="37wK5l" to="tpek:hEwI$gh" resolve="getActualArguments" />
+              <ref role="37wK5l" to="tpek:hJyuD6_" resolve="getActualArguments" />
               <node concept="37vLTw" id="1zqEQG3V9wf" role="37wK5m">
                 <ref role="3cqZAo" node="1zqEQG3V2ly" resolve="module" />
               </node>
@@ -718,13 +719,13 @@
           </node>
         </node>
         <node concept="3clFbF" id="hEwJhHD" role="3cqZAp">
-          <node concept="2YIFZM" id="hEwJhHE" role="3clFbG">
-            <ref role="1Pybhc" to="zkib:~ReflectionUtil" resolve="ReflectionUtil" />
+          <node concept="2YIFZM" id="svyVWh9DZ4" role="3clFbG">
             <ref role="37wK5l" to="zkib:~ReflectionUtil.staticInvoke(java.lang.reflect.Method,java.lang.Object[]):java.lang.Object" resolve="staticInvoke" />
-            <node concept="37vLTw" id="3GM_nagTuCc" role="37wK5m">
+            <ref role="1Pybhc" to="zkib:~ReflectionUtil" resolve="ReflectionUtil" />
+            <node concept="37vLTw" id="svyVWh9DZ5" role="37wK5m">
               <ref role="3cqZAo" node="hEwJhHp" resolve="method" />
             </node>
-            <node concept="37vLTw" id="3GM_nagTzqa" role="37wK5m">
+            <node concept="37vLTw" id="svyVWh9DZ6" role="37wK5m">
               <ref role="3cqZAo" node="hEwJhHy" resolve="actualArguments" />
             </node>
           </node>
