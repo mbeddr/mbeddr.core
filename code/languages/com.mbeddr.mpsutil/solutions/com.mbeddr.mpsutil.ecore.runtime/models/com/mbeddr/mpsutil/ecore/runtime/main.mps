@@ -17,15 +17,15 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="hvgx" ref="r:5bff0909-4fa1-4f54-b7d5-486e0d4903a2(com.mbeddr.mpsutil.ecoreimporter.util.structure)" />
+    <import index="hvgx" ref="r:5bff0909-4fa1-4f54-b7d5-486e0d4903a2(com.mbeddr.mpsutil.ecore.structure)" />
     <import index="twe9" ref="r:28e6d713-c3c3-493e-8d97-e9a2c49f28ce(jetbrains.mps.lang.structure.util)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="62x7" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.ecore.impl(com.mbeddr.mpsutil.ecoretransformationutils.stubs/)" />
-    <import index="iuoz" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.ecore(com.mbeddr.mpsutil.ecoretransformationutils.stubs/)" />
-    <import index="roop" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.ecore.resource(com.mbeddr.mpsutil.ecoretransformationutils.stubs/)" />
-    <import index="tz6t" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.ecore.xmi.impl(com.mbeddr.mpsutil.ecoretransformationutils.stubs/)" />
-    <import index="hu10" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.common.util(com.mbeddr.mpsutil.ecoretransformationutils.stubs/)" />
-    <import index="hulx" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.ecore.resource.impl(com.mbeddr.mpsutil.ecoretransformationutils.stubs/)" />
+    <import index="62x7" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.ecore.impl(com.mbeddr.mpsutil.ecore.stubs/)" />
+    <import index="iuoz" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.ecore(com.mbeddr.mpsutil.ecore.stubs/)" />
+    <import index="roop" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.ecore.resource(com.mbeddr.mpsutil.ecore.stubs/)" />
+    <import index="tz6t" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.ecore.xmi.impl(com.mbeddr.mpsutil.ecore.stubs/)" />
+    <import index="hu10" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.common.util(com.mbeddr.mpsutil.ecore.stubs/)" />
+    <import index="hulx" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.ecore.resource.impl(com.mbeddr.mpsutil.ecore.stubs/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
@@ -5586,7 +5586,7 @@
         <node concept="1gVbGN" id="79i$vAYcD55" role="3cqZAp">
           <node concept="2OqwBi" id="79i$vAYcDEW" role="1gVkn0">
             <node concept="37vLTw" id="79i$vAYcDjJ" role="2Oq$k0">
-              <ref role="3cqZAo" node="60d$i5slx2O" resolve="ecoreFileNm" />
+              <ref role="3cqZAo" node="60d$i5slx2O" resolve="fqEcorFilePath" />
             </node>
             <node concept="17RvpY" id="79i$vAYcEkW" role="2OqNvi" />
           </node>
