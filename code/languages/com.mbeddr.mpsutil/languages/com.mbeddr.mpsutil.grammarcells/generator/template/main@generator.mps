@@ -63,6 +63,7 @@
     <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
     <import index="9eyi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.lang.editor.menus.transformation(MPS.Editor/)" />
     <import index="v95p" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.lang.editor.menus(MPS.Editor/)" />
+    <import index="5b0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.presentation(MPS.Core/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
@@ -19379,13 +19380,12 @@
                                                                 <node concept="17QB3L" id="5n4nn1a79ZN" role="1tU5fm" />
                                                               </node>
                                                               <node concept="3clFbS" id="5n4nn1a79ZO" role="3clF47">
-                                                                <node concept="3clFbF" id="5n4nn1a79ZP" role="3cqZAp">
-                                                                  <node concept="2OqwBi" id="5n4nn1a79ZQ" role="3clFbG">
-                                                                    <node concept="37vLTw" id="5n4nn1a79ZR" role="2Oq$k0">
+                                                                <node concept="3clFbF" id="325OF_MsvCq" role="3cqZAp">
+                                                                  <node concept="2YIFZM" id="325OF_MsvPI" role="3clFbG">
+                                                                    <ref role="37wK5l" to="5b0:~NodePresentationUtil.descriptionText(org.jetbrains.mps.openapi.language.SAbstractConcept):java.lang.String" resolve="descriptionText" />
+                                                                    <ref role="1Pybhc" to="5b0:~NodePresentationUtil" resolve="NodePresentationUtil" />
+                                                                    <node concept="37vLTw" id="325OF_Msw1L" role="37wK5m">
                                                                       <ref role="3cqZAo" node="5n4nn1a7a1f" resolve="subconcept" />
-                                                                    </node>
-                                                                    <node concept="liA8E" id="5n4nn1a79ZS" role="2OqNvi">
-                                                                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
                                                                     </node>
                                                                   </node>
                                                                 </node>
