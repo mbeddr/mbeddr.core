@@ -25,6 +25,7 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
     <import index="78sh" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.substitute(MPS.Editor/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpdg" ref="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" implicit="true" />
   </imports>
@@ -647,6 +648,9 @@
               <node concept="3TUQnm" id="6rhOS_xUk22" role="HW$Y0">
                 <ref role="3TV0OU" to="teg0:2uT2PLmXmjz" resolve="Parameter_SubConcept" />
               </node>
+              <node concept="3TUQnm" id="2aaSxIgi6lT" role="HW$Y0">
+                <ref role="3TV0OU" to="teg0:2aaSxIgh9is" resolve="Parameter_editorContext" />
+              </node>
             </node>
           </node>
         </node>
@@ -1051,6 +1055,9 @@
               </node>
               <node concept="3TUQnm" id="2ReeOqtWjSZ" role="HW$Y0">
                 <ref role="3TV0OU" to="teg0:2uT2PLmXmjz" resolve="Parameter_SubConcept" />
+              </node>
+              <node concept="3TUQnm" id="2aaSxIgi6pj" role="HW$Y0">
+                <ref role="3TV0OU" to="teg0:2aaSxIgh9is" resolve="Parameter_editorContext" />
               </node>
             </node>
           </node>
@@ -1886,6 +1893,9 @@
               <node concept="3TUQnm" id="7KznU_3Qrwl" role="HW$Y0">
                 <ref role="3TV0OU" to="tpc2:gCpncv5" resolve="ConceptFunctionParameter_node" />
               </node>
+              <node concept="3TUQnm" id="2aaSxIghdJW" role="HW$Y0">
+                <ref role="3TV0OU" to="teg0:2aaSxIgh9is" resolve="Parameter_editorContext" />
+              </node>
             </node>
           </node>
         </node>
@@ -2440,6 +2450,9 @@
               </node>
               <node concept="3TUQnm" id="5wt0D$BOn_r" role="HW$Y0">
                 <ref role="3TV0OU" to="teg0:5wt0D$BOnvU" resolve="Parameter_wrappedConcept" />
+              </node>
+              <node concept="3TUQnm" id="2aaSxIgm5Fo" role="HW$Y0">
+                <ref role="3TV0OU" to="teg0:2aaSxIgh9is" resolve="Parameter_editorContext" />
               </node>
             </node>
           </node>
@@ -3087,6 +3100,9 @@
               <node concept="3TUQnm" id="qT5MFmswnY" role="HW$Y0">
                 <ref role="3TV0OU" to="teg0:qT5MFmswdL" resolve="FlagCell_SubstituteCondition_substitutedNode" />
               </node>
+              <node concept="3TUQnm" id="2aaSxIgi6c0" role="HW$Y0">
+                <ref role="3TV0OU" to="teg0:2aaSxIgh9is" resolve="Parameter_editorContext" />
+              </node>
             </node>
           </node>
         </node>
@@ -3143,6 +3159,9 @@
               </node>
               <node concept="3TUQnm" id="1GvnUgo6Qzp" role="HW$Y0">
                 <ref role="3TV0OU" to="teg0:1GvnUgo6Q$w" resolve="Parameter_node" />
+              </node>
+              <node concept="3TUQnm" id="2aaSxIghdNY" role="HW$Y0">
+                <ref role="3TV0OU" to="teg0:2aaSxIgh9is" resolve="Parameter_editorContext" />
               </node>
             </node>
           </node>
@@ -3307,6 +3326,9 @@
               <node concept="3TUQnm" id="yuUZPu3ZjZ" role="HW$Y0">
                 <ref role="3TV0OU" to="teg0:1GvnUgo6Q$w" resolve="Parameter_node" />
               </node>
+              <node concept="3TUQnm" id="2aaSxIgi69o" role="HW$Y0">
+                <ref role="3TV0OU" to="teg0:2aaSxIgh9is" resolve="Parameter_editorContext" />
+              </node>
             </node>
           </node>
         </node>
@@ -3319,6 +3341,31 @@
     </node>
     <node concept="13hLZK" id="yuUZPu3ZjA" role="13h7CW">
       <node concept="3clFbS" id="yuUZPu3ZjB" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2aaSxIgh9it">
+    <ref role="13h7C2" to="teg0:2aaSxIgh9is" resolve="Parameter_editorContext" />
+    <node concept="13i0hz" id="2aaSxIgh9iC" role="13h7CS">
+      <property role="TrG5h" value="getType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:27DJnJtIQ9C" resolve="getType" />
+      <node concept="3Tm1VV" id="2aaSxIgh9iD" role="1B3o_S" />
+      <node concept="3clFbS" id="2aaSxIgh9iE" role="3clF47">
+        <node concept="3clFbF" id="2aaSxIgh9sb" role="3cqZAp">
+          <node concept="2c44tf" id="2aaSxIgh9s9" role="3clFbG">
+            <node concept="3uibUv" id="2aaSxIghdCl" role="2c44tc">
+              <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2aaSxIgh9j0" role="3clF45">
+        <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="2aaSxIgh9iu" role="13h7CW">
+      <node concept="3clFbS" id="2aaSxIgh9iv" role="2VODD2" />
     </node>
   </node>
 </model>
