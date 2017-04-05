@@ -2,7 +2,6 @@
 <model ref="r:6bdecc54-2141-49ec-b46a-3cca6d4c322c(com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="ad8b5993-1cc2-49c0-b7a0-0283da231703" name="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel" version="-1" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports />

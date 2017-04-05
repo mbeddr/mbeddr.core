@@ -2,12 +2,9 @@
 <model ref="r:df937395-e226-4b42-9bd5-c3a1bf93b3ad(com.mbeddr.mpsutil.ecore.testing.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="d08b2078-ada5-40fa-a3c5-d721088dc626" name="com.mbeddr.mpsutil.ecore.testing" version="-1" />
-    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
     <import index="mqum" ref="r:ec874b45-e888-42e6-995a-a298cefdff55(com.mbeddr.cimport.comparator.code)" />
     <import index="3yw8" ref="r:b5d28a75-8cfb-4432-902c-b787795e0ea8(com.mbeddr.mpsutil.ecore.testing.structure)" />
@@ -236,6 +233,83 @@
                 <ref role="3cqZAo" node="7ESlTHs1G02" resolve="differences" />
               </node>
               <node concept="3GX2aA" id="7ESlTHs1PgD" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="4MUcKNHos3B" role="3acgRq">
+      <ref role="30HIoZ" to="3yw8:4MUcKNHoqHY" resolve="AssertInstanceImportExportStatement" />
+      <node concept="gft3U" id="4MUcKNHosp8" role="1lVwrX">
+        <node concept="1gVbGN" id="4MUcKNHmiea" role="gfFT$">
+          <node concept="2OqwBi" id="4MUcKNHml8U" role="1gVkn0">
+            <node concept="2ShNRf" id="4MUcKNHmiuL" role="2Oq$k0">
+              <node concept="HV5vD" id="4MUcKNHml20" role="2ShVmc">
+                <ref role="HV5vE" to="p76z:4MUcKNHlNpD" resolve="ModelImporterExporterTestingUtil" />
+              </node>
+            </node>
+            <node concept="liA8E" id="4MUcKNHmltW" role="2OqNvi">
+              <ref role="37wK5l" to="p76z:4MUcKNHlRku" resolve="calculateDifferences" />
+              <node concept="Xl_RD" id="oUNR1QQ1bS" role="37wK5m">
+                <property role="Xl_RC" value="pathToEcoreFile" />
+                <node concept="17Uvod" id="oUNR1QQ1bT" role="lGtFl">
+                  <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                  <property role="2qtEX9" value="value" />
+                  <node concept="3zFVjK" id="oUNR1QQ1bU" role="3zH0cK">
+                    <node concept="3clFbS" id="oUNR1QQ1bV" role="2VODD2">
+                      <node concept="3clFbF" id="oUNR1QQ1bW" role="3cqZAp">
+                        <node concept="2OqwBi" id="oUNR1QQ1bX" role="3clFbG">
+                          <node concept="2OqwBi" id="oUNR1QQ1bY" role="2Oq$k0">
+                            <node concept="30H73N" id="oUNR1QQ1bZ" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="oUNR1QQ1c0" role="2OqNvi">
+                              <ref role="3Tt5mk" to="3yw8:4MUcKNHoqHZ" resolve="pathToEcoreFile" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="oUNR1QQ1c1" role="2OqNvi">
+                            <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="BaHAS" id="4MUcKNHouQm" role="37wK5m">
+                <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testLanguageMatch.structure" />
+                <property role="BaGAP" value="" />
+                <node concept="29HgVG" id="4MUcKNHouQn" role="lGtFl">
+                  <node concept="3NFfHV" id="4MUcKNHouQo" role="3NFExx">
+                    <node concept="3clFbS" id="4MUcKNHouQp" role="2VODD2">
+                      <node concept="3clFbF" id="4MUcKNHouQq" role="3cqZAp">
+                        <node concept="2OqwBi" id="4MUcKNHouQr" role="3clFbG">
+                          <node concept="30H73N" id="4MUcKNHouQs" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="4MUcKNHowxy" role="2OqNvi">
+                            <ref role="3Tt5mk" to="3yw8:4MUcKNHoqI0" resolve="referenceLanguage" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="BaHAS" id="4MUcKNHovi9" role="37wK5m">
+                <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime.testLanguageMatch.structure" />
+                <property role="BaGAP" value="" />
+                <node concept="29HgVG" id="4MUcKNHovia" role="lGtFl">
+                  <node concept="3NFfHV" id="4MUcKNHovib" role="3NFExx">
+                    <node concept="3clFbS" id="4MUcKNHovic" role="2VODD2">
+                      <node concept="3clFbF" id="4MUcKNHovid" role="3cqZAp">
+                        <node concept="2OqwBi" id="4MUcKNHovie" role="3clFbG">
+                          <node concept="30H73N" id="4MUcKNHovif" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="4MUcKNHow4$" role="2OqNvi">
+                            <ref role="3Tt5mk" to="3yw8:4MUcKNHoqI5" resolve="referenceInstance" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
