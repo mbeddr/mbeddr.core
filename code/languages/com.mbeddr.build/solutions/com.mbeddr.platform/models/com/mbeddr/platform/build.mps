@@ -2085,11 +2085,6 @@
             <ref role="3bR37D" node="vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecore" />
           </node>
         </node>
-        <node concept="1SiIV0" id="vOGyTeLsFC" role="3bR37C">
-          <node concept="1Busua" id="vOGyTeLsFD" role="1SiIV1">
-            <ref role="1Busuk" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="76lGx$Ne9DB" role="3bR37C">
           <node concept="3bR9La" id="76lGx$Ne9DC" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -2119,12 +2114,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="vOGyTeKZny" role="3bR37C">
-          <node concept="3bR9La" id="vOGyTeKZnz" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="vOGyTeKZnA" role="3bR37C">
           <node concept="3bR9La" id="vOGyTeKZnB" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -2133,11 +2122,6 @@
         </node>
         <node concept="1E0d5M" id="vOGyTeLW2Y" role="1E1XAP">
           <ref role="1E0d5P" node="vOGyTeLNYF" resolve="com.mbeddr.mpsutil.ecore.testing.runtime" />
-        </node>
-        <node concept="1SiIV0" id="vOGyTeLW2Z" role="3bR37C">
-          <node concept="1Busua" id="vOGyTeLW30" role="1SiIV1">
-            <ref role="1Busuk" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />
-          </node>
         </node>
         <node concept="1yeLz9" id="vOGyTeLW31" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.mpsutil.ecore.testing#494571880817442454" />
