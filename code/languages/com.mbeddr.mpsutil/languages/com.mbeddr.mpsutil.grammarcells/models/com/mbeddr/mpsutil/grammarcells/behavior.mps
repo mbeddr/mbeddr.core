@@ -214,9 +214,6 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
-      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
-        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
-      </concept>
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
@@ -405,21 +402,7 @@
     <property role="3GE5qa" value="actionsAspect" />
     <ref role="13h7C2" to="teg0:6oKG1kMxHGY" resolve="SubstituteActionsGenerator" />
     <node concept="13hLZK" id="6oKG1kMybL4" role="13h7CW">
-      <node concept="3clFbS" id="6oKG1kMybL5" role="2VODD2">
-        <node concept="3clFbF" id="6oKG1kMybL7" role="3cqZAp">
-          <node concept="37vLTI" id="6oKG1kMyc12" role="3clFbG">
-            <node concept="2OqwBi" id="6oKG1kMyc6s" role="37vLTx">
-              <ref role="3B5MYn" to="tpck:gw2VY9q" resolve="BaseConcept" />
-            </node>
-            <node concept="2OqwBi" id="6oKG1kMybNq" role="37vLTJ">
-              <node concept="13iPFW" id="6oKG1kMybL6" role="2Oq$k0" />
-              <node concept="3TrEf2" id="6oKG1kMybSV" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpdg:gbFOWO8" resolve="applicableConcept" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="6oKG1kMybL5" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="2uT2PLmSyDi">
