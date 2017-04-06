@@ -151,8 +151,8 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
@@ -1459,7 +1459,6 @@
                           <node concept="2OqwBi" id="6jIUNx3ApNp" role="2Oq$k0">
                             <node concept="2OqwBi" id="6jIUNx3ApNq" role="2Oq$k0">
                               <node concept="1PxgMI" id="6jIUNx3ApNr" role="2Oq$k0">
-                                <ref role="1m5ApE" to="51wr:7$0wAVofq4u" resolve="PlatformReference" />
                                 <node concept="2OqwBi" id="6jIUNx3ApNs" role="1m5AlR">
                                   <node concept="2OqwBi" id="6jIUNx3ApNt" role="2Oq$k0">
                                     <node concept="2GrUjf" id="6jIUNx3ApNu" role="2Oq$k0">
@@ -1476,6 +1475,9 @@
                                   <node concept="3TrEf2" id="6jIUNx3ApNy" role="2OqNvi">
                                     <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
                                   </node>
+                                </node>
+                                <node concept="chp4Y" id="1SbcsM$Fk8I" role="3oSUPX">
+                                  <ref role="cht4Q" to="51wr:7$0wAVofq4u" resolve="PlatformReference" />
                                 </node>
                               </node>
                               <node concept="3TrEf2" id="6jIUNx3ApNz" role="2OqNvi">
@@ -1502,7 +1504,6 @@
                                   <node concept="2OqwBi" id="6jIUNx3ApNH" role="2Oq$k0">
                                     <node concept="2OqwBi" id="6jIUNx3ApNI" role="2Oq$k0">
                                       <node concept="1PxgMI" id="6jIUNx3ApNJ" role="2Oq$k0">
-                                        <ref role="1m5ApE" to="51wr:7$0wAVofq4u" resolve="PlatformReference" />
                                         <node concept="2OqwBi" id="6jIUNx3ApNK" role="1m5AlR">
                                           <node concept="2OqwBi" id="6jIUNx3ApNL" role="2Oq$k0">
                                             <node concept="2GrUjf" id="6jIUNx3ApNM" role="2Oq$k0">
@@ -1519,6 +1520,9 @@
                                           <node concept="3TrEf2" id="6jIUNx3ApNQ" role="2OqNvi">
                                             <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
                                           </node>
+                                        </node>
+                                        <node concept="chp4Y" id="1SbcsM$Fk8J" role="3oSUPX">
+                                          <ref role="cht4Q" to="51wr:7$0wAVofq4u" resolve="PlatformReference" />
                                         </node>
                                       </node>
                                       <node concept="3TrEf2" id="6jIUNx3ApNR" role="2OqNvi">

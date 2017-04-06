@@ -175,7 +175,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -547,7 +546,7 @@
                   <node concept="2OqwBi" id="4T_y5Me_qiH" role="2Oq$k0">
                     <node concept="pncrf" id="4T_y5Me_pVe" role="2Oq$k0" />
                     <node concept="3TrEf2" id="4T_y5Me_qt5" role="2OqNvi">
-                      <ref role="3Tt5mk" to="i2y7:6_CUGSFJ0IW" resolve="target" />
+                      <ref role="3Tt5mk" to="i2y7:6_CUGSFJ0IW" resolve="targets" />
                     </node>
                   </node>
                   <node concept="3w_OXm" id="4T_y5Me_qR1" role="2OqNvi" />
@@ -563,7 +562,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F2HdR" id="1mGdcSSVnVF" role="3EZMnx">
-          <ref role="1NtTu8" to="i2y7:6_CUGSFJ0IW" resolve="target" />
+          <ref role="1NtTu8" to="i2y7:6_CUGSFJ0IW" resolve="targets" />
           <node concept="2iRkQZ" id="1mGdcSSVnVH" role="2czzBx" />
           <node concept="pkWqt" id="1mGdcSSVnVK" role="pqm2j">
             <node concept="3clFbS" id="1mGdcSSVnVL" role="2VODD2">
@@ -665,7 +664,7 @@
             </node>
           </node>
           <node concept="3cpWs6" id="2cvVnUv6BM$" role="3cqZAp">
-            <node concept="3cpWsa" id="2cvVnUv6BM_" role="3cqZAk">
+            <node concept="37vLTw" id="2cvVnUv6BM_" role="3cqZAk">
               <ref role="3cqZAo" node="2cvVnUv6BMp" resolve="tci" />
             </node>
           </node>
@@ -747,7 +746,7 @@
                   </node>
                 </node>
                 <node concept="TSZUe" id="2cvVnUv6BKV" role="2OqNvi">
-                  <node concept="3cpWsa" id="2cvVnUv6BKW" role="25WWJ7">
+                  <node concept="37vLTw" id="2cvVnUv6BKW" role="25WWJ7">
                     <ref role="3cqZAo" node="2cvVnUv6BKC" resolve="textCommandItem" />
                   </node>
                 </node>
