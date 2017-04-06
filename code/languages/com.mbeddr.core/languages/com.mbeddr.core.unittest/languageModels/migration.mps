@@ -211,7 +211,6 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
@@ -705,11 +704,8 @@
                                                             <node concept="3clFbS" id="7l4X52HeoX4" role="1bW5cS">
                                                               <node concept="3clFbF" id="7l4X52HepPC" role="3cqZAp">
                                                                 <node concept="3clFbC" id="7l4X52HepPD" role="3clFbG">
-                                                                  <node concept="2OqwBi" id="7l4X52HepPE" role="3uHU7B">
-                                                                    <node concept="37vLTw" id="7l4X52HepPG" role="2Oq$k0">
-                                                                      <ref role="3cqZAo" node="7l4X52HeoX5" resolve="configItem" />
-                                                                    </node>
-                                                                    <node concept="FGMqu" id="7l4X52HepPI" role="2OqNvi" />
+                                                                  <node concept="37vLTw" id="7l4X52HepPG" role="3uHU7B">
+                                                                    <ref role="3cqZAo" node="7l4X52HeoX5" resolve="configItem" />
                                                                   </node>
                                                                   <node concept="3B5_sB" id="7l4X52HepPJ" role="3uHU7w">
                                                                     <ref role="3B5MYn" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
