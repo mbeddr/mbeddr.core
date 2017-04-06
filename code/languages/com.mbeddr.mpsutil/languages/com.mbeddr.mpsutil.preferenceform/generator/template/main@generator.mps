@@ -402,8 +402,8 @@
       <concept id="1166648550386" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewRootNodeOperation" flags="nn" index="2xF2bX" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1143235216708" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewNodeOperation" flags="nn" index="I8ghe">
@@ -914,12 +914,14 @@
                         <ref role="3Tt5mk" to="3iid:86yKXFY5Xj" resolve="formProperty" />
                       </node>
                       <node concept="1PxgMI" id="4yYSJc_lHf8" role="2Oq$k0">
-                        <ref role="1m5ApE" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                         <node concept="2OqwBi" id="4yYSJc_lFOG" role="1m5AlR">
                           <node concept="30H73N" id="4yYSJc_lF_9" role="2Oq$k0" />
                           <node concept="3TrEf2" id="4yYSJc_lGzA" role="2OqNvi">
                             <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                           </node>
+                        </node>
+                        <node concept="chp4Y" id="1SbcsM_IQCJ" role="3oSUPX">
+                          <ref role="cht4Q" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                         </node>
                       </node>
                     </node>
@@ -1014,12 +1016,14 @@
                         <ref role="3Tt5mk" to="3iid:86yKXFY5Xj" resolve="formProperty" />
                       </node>
                       <node concept="1PxgMI" id="4yYSJc_lJfF" role="2Oq$k0">
-                        <ref role="1m5ApE" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                         <node concept="2OqwBi" id="4yYSJc_lJfG" role="1m5AlR">
                           <node concept="30H73N" id="4yYSJc_lJfH" role="2Oq$k0" />
                           <node concept="3TrEf2" id="4yYSJc_lJfI" role="2OqNvi">
                             <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                           </node>
+                        </node>
+                        <node concept="chp4Y" id="1SbcsM_IQCU" role="3oSUPX">
+                          <ref role="cht4Q" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                         </node>
                       </node>
                     </node>
@@ -3684,12 +3688,14 @@
                                 <ref role="1iwH77" node="m3C9PXGwmR" resolve="map_PersistedFieldAsGetter" />
                                 <node concept="2OqwBi" id="2i1sIFO$oSH" role="1iwH7V">
                                   <node concept="1PxgMI" id="2i1sIFO$oSI" role="2Oq$k0">
-                                    <ref role="1m5ApE" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                                     <node concept="2OqwBi" id="2i1sIFO$oSJ" role="1m5AlR">
                                       <node concept="30H73N" id="2i1sIFO$oSK" role="2Oq$k0" />
                                       <node concept="3TrEf2" id="2i1sIFO$oSL" role="2OqNvi">
                                         <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                                       </node>
+                                    </node>
+                                    <node concept="chp4Y" id="1SbcsM_IQCN" role="3oSUPX">
+                                      <ref role="cht4Q" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                                     </node>
                                   </node>
                                   <node concept="3TrEf2" id="2i1sIFO$oSM" role="2OqNvi">
@@ -3717,12 +3723,14 @@
                           <ref role="1iwH77" node="4vnGofEwEH6" resolve="map_PersistedField" />
                           <node concept="2OqwBi" id="2i1sIFO$pl4" role="1iwH7V">
                             <node concept="1PxgMI" id="2i1sIFO$pl5" role="2Oq$k0">
-                              <ref role="1m5ApE" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                               <node concept="2OqwBi" id="2i1sIFO$pl6" role="1m5AlR">
                                 <node concept="30H73N" id="2i1sIFO$pl7" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="2i1sIFO$pl8" role="2OqNvi">
                                   <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                                 </node>
+                              </node>
+                              <node concept="chp4Y" id="1SbcsM_IQCQ" role="3oSUPX">
+                                <ref role="cht4Q" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                               </node>
                             </node>
                             <node concept="3TrEf2" id="2i1sIFO$pl9" role="2OqNvi">
@@ -4307,8 +4315,10 @@
                                 <node concept="2OqwBi" id="m3C9PXGFVW" role="3clFbG">
                                   <node concept="2OqwBi" id="m3C9PXGFVX" role="2Oq$k0">
                                     <node concept="1PxgMI" id="m3C9PXGFVY" role="2Oq$k0">
-                                      <ref role="1m5ApE" to="3iid:77gEP6zh3ts" resolve="DynamicComboBoxPreferenceFormProperty" />
                                       <node concept="30H73N" id="m3C9PXGFVZ" role="1m5AlR" />
+                                      <node concept="chp4Y" id="1SbcsM_IQCM" role="3oSUPX">
+                                        <ref role="cht4Q" to="3iid:77gEP6zh3ts" resolve="DynamicComboBoxPreferenceFormProperty" />
+                                      </node>
                                     </node>
                                     <node concept="3TrEf2" id="m3C9PXGFW0" role="2OqNvi">
                                       <ref role="3Tt5mk" to="3iid:77gEP6zh79o" resolve="defaultEntryFunction" />
@@ -4365,8 +4375,10 @@
                       <node concept="2OqwBi" id="m3C9PXG8bU" role="3uHU7w">
                         <node concept="2OqwBi" id="m3C9PXG7hb" role="2Oq$k0">
                           <node concept="1PxgMI" id="m3C9PXG71O" role="2Oq$k0">
-                            <ref role="1m5ApE" to="3iid:77gEP6zh3ts" resolve="DynamicComboBoxPreferenceFormProperty" />
                             <node concept="30H73N" id="m3C9PXG6EE" role="1m5AlR" />
+                            <node concept="chp4Y" id="1SbcsM_IQCL" role="3oSUPX">
+                              <ref role="cht4Q" to="3iid:77gEP6zh3ts" resolve="DynamicComboBoxPreferenceFormProperty" />
+                            </node>
                           </node>
                           <node concept="3TrEf2" id="m3C9PXG7C9" role="2OqNvi">
                             <ref role="3Tt5mk" to="3iid:77gEP6zh79o" resolve="defaultEntryFunction" />
@@ -5109,8 +5121,10 @@
                                 <node concept="2OqwBi" id="2i1sIFOyL1I" role="3clFbG">
                                   <node concept="2OqwBi" id="2i1sIFOyL1J" role="2Oq$k0">
                                     <node concept="1PxgMI" id="2i1sIFOyL1K" role="2Oq$k0">
-                                      <ref role="1m5ApE" to="3iid:77gEP6zh3ts" resolve="DynamicComboBoxPreferenceFormProperty" />
                                       <node concept="30H73N" id="2i1sIFOyL1L" role="1m5AlR" />
+                                      <node concept="chp4Y" id="1SbcsM_IQCT" role="3oSUPX">
+                                        <ref role="cht4Q" to="3iid:77gEP6zh3ts" resolve="DynamicComboBoxPreferenceFormProperty" />
+                                      </node>
                                     </node>
                                     <node concept="3TrEf2" id="2i1sIFOyL1M" role="2OqNvi">
                                       <ref role="3Tt5mk" to="3iid:77gEP6zh79o" resolve="defaultEntryFunction" />
@@ -5167,8 +5181,10 @@
                       <node concept="2OqwBi" id="2i1sIFOyL27" role="3uHU7w">
                         <node concept="2OqwBi" id="2i1sIFOyL28" role="2Oq$k0">
                           <node concept="1PxgMI" id="2i1sIFOyL29" role="2Oq$k0">
-                            <ref role="1m5ApE" to="3iid:77gEP6zh3ts" resolve="DynamicComboBoxPreferenceFormProperty" />
                             <node concept="30H73N" id="2i1sIFOyL2a" role="1m5AlR" />
+                            <node concept="chp4Y" id="1SbcsM_IQCR" role="3oSUPX">
+                              <ref role="cht4Q" to="3iid:77gEP6zh3ts" resolve="DynamicComboBoxPreferenceFormProperty" />
+                            </node>
                           </node>
                           <node concept="3TrEf2" id="2i1sIFOyL2b" role="2OqNvi">
                             <ref role="3Tt5mk" to="3iid:77gEP6zh79o" resolve="defaultEntryFunction" />
@@ -7130,12 +7146,14 @@
                                   <ref role="1iwH77" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
                                   <node concept="2OqwBi" id="3qLkBCDQYUq" role="1iwH7V">
                                     <node concept="1PxgMI" id="3qLkBCDQYUr" role="2Oq$k0">
-                                      <ref role="1m5ApE" to="3iid:86yKXFVk5m" resolve="GetPreferenceFormInProjectOperation" />
                                       <node concept="2OqwBi" id="3qLkBCDQYUs" role="1m5AlR">
                                         <node concept="30H73N" id="3qLkBCDQYUt" role="2Oq$k0" />
                                         <node concept="3TrEf2" id="3qLkBCDQYUu" role="2OqNvi">
                                           <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                                         </node>
+                                      </node>
+                                      <node concept="chp4Y" id="1SbcsM_IQCK" role="3oSUPX">
+                                        <ref role="cht4Q" to="3iid:86yKXFVk5m" resolve="GetPreferenceFormInProjectOperation" />
                                       </node>
                                     </node>
                                     <node concept="3TrEf2" id="3qLkBCDQYUv" role="2OqNvi">
@@ -7180,12 +7198,14 @@
                                   <ref role="1iwH77" node="86yKXFR9bE" resolve="generatedPreferenceComponent" />
                                   <node concept="2OqwBi" id="1mrpzsIXPjd" role="1iwH7V">
                                     <node concept="1PxgMI" id="1mrpzsIXPje" role="2Oq$k0">
-                                      <ref role="1m5ApE" to="3iid:86yKXFVk5m" resolve="GetPreferenceFormInProjectOperation" />
                                       <node concept="2OqwBi" id="1mrpzsIXPjf" role="1m5AlR">
                                         <node concept="30H73N" id="1mrpzsIXPjg" role="2Oq$k0" />
                                         <node concept="3TrEf2" id="1mrpzsIXPjh" role="2OqNvi">
                                           <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                                         </node>
+                                      </node>
+                                      <node concept="chp4Y" id="1SbcsM_IQCO" role="3oSUPX">
+                                        <ref role="cht4Q" to="3iid:86yKXFVk5m" resolve="GetPreferenceFormInProjectOperation" />
                                       </node>
                                     </node>
                                     <node concept="3TrEf2" id="1mrpzsIXPji" role="2OqNvi">
@@ -8777,12 +8797,14 @@
                                   <ref role="1iwH77" node="m3C9PXGwmR" resolve="map_PersistedFieldAsGetter" />
                                   <node concept="2OqwBi" id="5zF_OzsMAsN" role="1iwH7V">
                                     <node concept="1PxgMI" id="5zF_OzsMAsO" role="2Oq$k0">
-                                      <ref role="1m5ApE" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                                       <node concept="2OqwBi" id="5zF_OzsMAsP" role="1m5AlR">
                                         <node concept="30H73N" id="5zF_OzsMAsQ" role="2Oq$k0" />
                                         <node concept="3TrEf2" id="5zF_OzsMAsR" role="2OqNvi">
                                           <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                                         </node>
+                                      </node>
+                                      <node concept="chp4Y" id="1SbcsM_IQCS" role="3oSUPX">
+                                        <ref role="cht4Q" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                                       </node>
                                     </node>
                                     <node concept="3TrEf2" id="5zF_OzsMAsS" role="2OqNvi">
@@ -8810,12 +8832,14 @@
                             <ref role="1iwH77" node="4vnGofEwEH6" resolve="map_PersistedField" />
                             <node concept="2OqwBi" id="5zF_OzsMAt0" role="1iwH7V">
                               <node concept="1PxgMI" id="5zF_OzsMAt1" role="2Oq$k0">
-                                <ref role="1m5ApE" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                                 <node concept="2OqwBi" id="5zF_OzsMAt2" role="1m5AlR">
                                   <node concept="30H73N" id="5zF_OzsMAt3" role="2Oq$k0" />
                                   <node concept="3TrEf2" id="5zF_OzsMAt4" role="2OqNvi">
                                     <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                                   </node>
+                                </node>
+                                <node concept="chp4Y" id="1SbcsM_IQCP" role="3oSUPX">
+                                  <ref role="cht4Q" to="3iid:86yKXFY5Xg" resolve="PreferenceFormPropertyReference" />
                                 </node>
                               </node>
                               <node concept="3TrEf2" id="5zF_OzsMAt5" role="2OqNvi">

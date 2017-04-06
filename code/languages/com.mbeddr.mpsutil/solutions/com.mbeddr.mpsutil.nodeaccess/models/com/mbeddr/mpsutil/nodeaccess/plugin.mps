@@ -177,7 +177,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
@@ -1243,7 +1242,7 @@
                             <node concept="2OqwBi" id="4PqLM5kUmOv" role="33vP2m">
                               <node concept="liA8E" id="4PqLM5kUmOw" role="2OqNvi">
                                 <ref role="37wK5l" to="mhbf:~SModel.getNode(org.jetbrains.mps.openapi.model.SNodeId):org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
-                                <node concept="3cpWsa" id="4PqLM5kUmOx" role="37wK5m">
+                                <node concept="37vLTw" id="4PqLM5kUmOx" role="37wK5m">
                                   <ref role="3cqZAo" node="7CAL8BWh$f" resolve="nodeID" />
                                 </node>
                               </node>
@@ -1598,7 +1597,7 @@
                       </node>
                       <node concept="liA8E" id="4PqLM5kVRLP" role="2OqNvi">
                         <ref role="37wK5l" to="mhbf:~SModel.getNode(org.jetbrains.mps.openapi.model.SNodeId):org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
-                        <node concept="3cpWsa" id="4PqLM5kVRLQ" role="37wK5m">
+                        <node concept="37vLTw" id="4PqLM5kVRLQ" role="37wK5m">
                           <ref role="3cqZAo" node="4PqLM5kVO4N" resolve="nodeID" />
                         </node>
                       </node>
@@ -2287,7 +2286,7 @@
               <node concept="1pGfFk" id="2N1CSrzm3ks" role="2ShVmc">
                 <ref role="37wK5l" to="kt01:~StringSelection.&lt;init&gt;(java.lang.String)" resolve="StringSelection" />
                 <node concept="2OqwBi" id="2N1CSrzm3kt" role="37wK5m">
-                  <node concept="3cpWsa" id="2N1CSrzm3ku" role="2Oq$k0">
+                  <node concept="37vLTw" id="2N1CSrzm3ku" role="2Oq$k0">
                     <ref role="3cqZAo" node="2N1CSrzm3k9" resolve="s" />
                   </node>
                   <node concept="liA8E" id="2N1CSrzm3kv" role="2OqNvi">
