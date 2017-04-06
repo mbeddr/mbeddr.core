@@ -242,6 +242,11 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="2482611074346661065" name="jetbrains.mps.lang.core.structure.ReviewMigration" flags="ng" index="13_zln">
+        <property id="2482611074346661078" name="reasonShort" index="13_zl8" />
+        <property id="2482611074346661073" name="todo" index="13_zlf" />
+        <property id="2482611074347169514" name="readableId" index="13BvtO" />
+      </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
         <property id="709746936026609029" name="linkRole" index="3V$3am" />
@@ -726,6 +731,11 @@
               <node concept="2OqwBi" id="79i$vAY7hnl" role="37wK5m">
                 <node concept="FGMqu" id="79i$vAY7hnm" role="2OqNvi" />
                 <node concept="2DD5aU" id="79i$vAY7hnk" role="2Oq$k0" />
+                <node concept="13_zln" id="1SbcsMA8HRJ" role="lGtFl">
+                  <property role="13_zl8" value="unknown attributes" />
+                  <property role="13_zlf" value="This node should have been migrated, but has annotations not recognised by the migration. Please review this code and migrate manually if necessary. Unknown attribute: jetbrains.mps.lang.constraints.structure.ConstraintsMigration" />
+                  <property role="13BvtO" value="Migrate popular concept&lt;-&gt;node conversions" />
+                </node>
                 <node concept="5B0Pf" id="79i$vAY7hnn" role="lGtFl" />
               </node>
             </node>
