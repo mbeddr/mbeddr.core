@@ -5,11 +5,9 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
-  <accessoryModels>
-    <model modelUID="r:ef5b1be0-f35b-4c7e-ae0d-e75267b56c11(com.mbeddr.mpsutil.lantest.baselang.utils)" />
-  </accessoryModels>
+  <accessoryModels />
   <generators>
-    <generator generatorUID="com.mbeddr.mpsutil.lantest.baselang#4493491910455348847" uuid="44315499-22fd-4024-bf0b-ccd2547fd8f0">
+    <generator namespace="com.mbeddr.mpsutil.lantest.baselang#4493491910455348847" uuid="44315499-22fd-4024-bf0b-ccd2547fd8f0">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot path="${module}/generator/template" />

@@ -6,7 +6,7 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="hvgx" ref="r:5bff0909-4fa1-4f54-b7d5-486e0d4903a2(com.mbeddr.mpsutil.ecoreimporter.util.structure)" implicit="true" />
+    <import index="hvgx" ref="r:5bff0909-4fa1-4f54-b7d5-486e0d4903a2(com.mbeddr.mpsutil.ecore.structure)" implicit="true" />
     <import index="cmo7" ref="r:625bbd58-ab3a-4506-bed6-32039fdf5b9a(com.mbeddr.mpsutil.ecore.behavior)" implicit="true" />
   </imports>
   <registry>
