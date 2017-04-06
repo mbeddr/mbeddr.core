@@ -122,6 +122,8 @@
   <runtime>
     <dependency reexport="false">53f72aed-03c9-433e-8bca-b0a0c1ec0c31(com.mbeddr.mpsutil.ecore.testing.runtime)</dependency>
   </runtime>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

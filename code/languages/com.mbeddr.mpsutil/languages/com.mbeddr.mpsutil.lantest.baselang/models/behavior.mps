@@ -20,7 +20,6 @@
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
-    <import index="p4nx" ref="r:ef5b1be0-f35b-4c7e-ae0d-e75267b56c11(com.mbeddr.mpsutil.lantest.baselang.utils)" implicit="true" />
     <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -243,7 +242,7 @@
         <node concept="3clFbF" id="3Ts5Ln3HO9l" role="3cqZAp">
           <node concept="2ShNRf" id="3Ts5Ln3HO9j" role="3clFbG">
             <node concept="HV5vD" id="3Ts5Ln3KKtb" role="2ShVmc">
-              <ref role="HV5vE" to="p4nx:3Ts5Ln3KI5M" resolve="JavaModelSaver" />
+              <ref role="HV5vE" node="3Ts5Ln3KI5M" resolve="JavaModelSaver" />
             </node>
           </node>
         </node>
@@ -262,7 +261,7 @@
         <node concept="3clFbF" id="3Ts5Ln3HLzn" role="3cqZAp">
           <node concept="2ShNRf" id="3Ts5Ln3HLzh" role="3clFbG">
             <node concept="HV5vD" id="3Ts5Ln3KLLS" role="2ShVmc">
-              <ref role="HV5vE" to="p4nx:3Ts5Ln3KKuV" resolve="JavaConceptsFilter" />
+              <ref role="HV5vE" node="3Ts5Ln3KKuV" resolve="JavaConceptsFilter" />
             </node>
           </node>
         </node>
@@ -281,7 +280,7 @@
         <node concept="3clFbF" id="3Ts5Ln3Ld20" role="3cqZAp">
           <node concept="2ShNRf" id="3Ts5Ln3Ld1Y" role="3clFbG">
             <node concept="1pGfFk" id="3Ts5Ln3Ldki" role="2ShVmc">
-              <ref role="37wK5l" to="p4nx:3Ts5Ln3KObL" resolve="JavaBugsFinderDriver" />
+              <ref role="37wK5l" node="3Ts5Ln3KObL" resolve="JavaBugsFinderDriver" />
               <node concept="37vLTw" id="3Ts5Ln3Ldlg" role="37wK5m">
                 <ref role="3cqZAo" node="3Ts5Ln3KLMW" resolve="proj" />
               </node>
