@@ -6554,9 +6554,10 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="54z9_KDR3y0" role="3bR37C">
-          <node concept="1Busua" id="54z9_KDR3y1" role="1SiIV1">
-            <ref role="1Busuk" to="ffeo:7Kfy9QB6L7y" resolve="jetbrains.mps.lang.intentions" />
+        <node concept="1SiIV0" id="1RGhARQh1yN" role="3bR37C">
+          <node concept="3bR9La" id="1RGhARQh1yO" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L7y" resolve="jetbrains.mps.lang.intentions" />
           </node>
         </node>
       </node>
