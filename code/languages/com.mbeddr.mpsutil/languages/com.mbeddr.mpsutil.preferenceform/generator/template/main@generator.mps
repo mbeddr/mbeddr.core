@@ -2,9 +2,7 @@
 <model ref="7d01d37a-2398-4f30-a95d-7e42e5f56c19/r:234d8e6f-4f91-4920-a623-ee8dfd3ca830(com.mbeddr.mpsutil.preferenceform#145956936283286626/com.mbeddr.mpsutil.preferenceform.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265" name="com.mbeddr.mpsutil.preferenceform" version="-1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
@@ -372,9 +370,9 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal">
@@ -3877,9 +3875,9 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="6Gguuh0Ul3r" role="3cqZAp">
-          <property role="35gtTG" value="trace" />
-          <node concept="3cpWs3" id="6Gguuh0Ul3s" role="34bqiv">
+        <node concept="RRSsy" id="42VTAcDfnPq" role="3cqZAp">
+          <property role="RRSoG" value="trace" />
+          <node concept="3cpWs3" id="6Gguuh0Ul3s" role="RRSoy">
             <node concept="37vLTw" id="6Gguuh0Ul3t" role="3uHU7w">
               <ref role="3cqZAo" node="5CNjqUbZCao" resolve="loadFields" />
             </node>
@@ -4027,9 +4025,9 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="6Gguuh0UlGU" role="3cqZAp">
-          <property role="35gtTG" value="trace" />
-          <node concept="3cpWs3" id="6Gguuh0UlGV" role="34bqiv">
+        <node concept="RRSsy" id="42VTAcDfnPQ" role="3cqZAp">
+          <property role="RRSoG" value="trace" />
+          <node concept="3cpWs3" id="6Gguuh0UlGV" role="RRSoy">
             <node concept="37vLTw" id="6Gguuh0Umi8" role="3uHU7w">
               <ref role="3cqZAo" node="5CNjqUbZG3f" resolve="saveFields" />
             </node>
@@ -4636,9 +4634,9 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="6Gguuh0TShI" role="3cqZAp">
-          <property role="35gtTG" value="trace" />
-          <node concept="3cpWs3" id="4OZbTlQt72O" role="34bqiv">
+        <node concept="RRSsy" id="42VTAcDfnOy" role="3cqZAp">
+          <property role="RRSoG" value="trace" />
+          <node concept="3cpWs3" id="4OZbTlQt72O" role="RRSoy">
             <node concept="37vLTw" id="4OZbTlQt72P" role="3uHU7w">
               <ref role="3cqZAo" node="4OZbTlQt72E" resolve="loadFields" />
             </node>
@@ -4820,9 +4818,9 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="6Gguuh0TYtJ" role="3cqZAp">
-          <property role="35gtTG" value="trace" />
-          <node concept="3cpWs3" id="6Gguuh0TYtK" role="34bqiv">
+        <node concept="RRSsy" id="42VTAcDfnOY" role="3cqZAp">
+          <property role="RRSoG" value="trace" />
+          <node concept="3cpWs3" id="6Gguuh0TYtK" role="RRSoy">
             <node concept="37vLTw" id="6Gguuh0U2Ou" role="3uHU7w">
               <ref role="3cqZAo" node="4OZbTlQszUY" resolve="saveFields" />
             </node>
@@ -6755,9 +6753,9 @@
     </node>
     <node concept="2uRRBT" id="1DjGUwRha88" role="2uRRB$">
       <node concept="3clFbS" id="1DjGUwRha89" role="2VODD2">
-        <node concept="34ab3g" id="6Gguuh0Uw9c" role="3cqZAp">
-          <property role="35gtTG" value="trace" />
-          <node concept="Xl_RD" id="6Gguuh0Uw9e" role="34bqiv">
+        <node concept="RRSsy" id="42VTAcDfnR6" role="3cqZAp">
+          <property role="RRSoG" value="trace" />
+          <node concept="Xl_RD" id="6Gguuh0Uw9e" role="RRSoy">
             <property role="Xl_RC" value="init project" />
           </node>
         </node>
@@ -6884,9 +6882,9 @@
     </node>
     <node concept="2uRRBN" id="1DjGUwRhdMg" role="2uRRB_">
       <node concept="3clFbS" id="1DjGUwRhdMh" role="2VODD2">
-        <node concept="34ab3g" id="6Gguuh0UwO0" role="3cqZAp">
-          <property role="35gtTG" value="trace" />
-          <node concept="Xl_RD" id="6Gguuh0UwO2" role="34bqiv">
+        <node concept="RRSsy" id="42VTAcDfnRc" role="3cqZAp">
+          <property role="RRSoG" value="trace" />
+          <node concept="Xl_RD" id="6Gguuh0UwO2" role="RRSoy">
             <property role="Xl_RC" value="dispose project" />
           </node>
         </node>
@@ -8885,9 +8883,9 @@
     </node>
     <node concept="2uRRBj" id="1DjGUwRg8$z" role="2uRRBE">
       <node concept="3clFbS" id="1DjGUwRg8$$" role="2VODD2">
-        <node concept="34ab3g" id="6Gguuh0TOYk" role="3cqZAp">
-          <property role="35gtTG" value="trace" />
-          <node concept="Xl_RD" id="6Gguuh0TOYm" role="34bqiv">
+        <node concept="RRSsy" id="42VTAcDfnFI" role="3cqZAp">
+          <property role="RRSoG" value="trace" />
+          <node concept="Xl_RD" id="6Gguuh0TOYm" role="RRSoy">
             <property role="Xl_RC" value="init app" />
           </node>
         </node>
@@ -9010,9 +9008,9 @@
     </node>
     <node concept="2uRRBI" id="1DjGUwRh0wG" role="2uRRBF">
       <node concept="3clFbS" id="1DjGUwRh0wH" role="2VODD2">
-        <node concept="34ab3g" id="6Gguuh0TPIA" role="3cqZAp">
-          <property role="35gtTG" value="trace" />
-          <node concept="Xl_RD" id="6sutvFq57c8" role="34bqiv">
+        <node concept="RRSsy" id="42VTAcDfnFO" role="3cqZAp">
+          <property role="RRSoG" value="trace" />
+          <node concept="Xl_RD" id="6sutvFq57c8" role="RRSoy">
             <property role="Xl_RC" value="dispose app" />
           </node>
         </node>

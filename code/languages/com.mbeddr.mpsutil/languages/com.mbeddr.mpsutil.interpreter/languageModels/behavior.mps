@@ -209,9 +209,9 @@
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -2024,9 +2024,9 @@
               </node>
             </node>
             <node concept="3clFbH" id="5x677oPy7Jg" role="3cqZAp" />
-            <node concept="34ab3g" id="7JF0K7yzfrO" role="3cqZAp">
-              <property role="35gtTG" value="trace" />
-              <node concept="3cpWs3" id="5x677oPyRQO" role="34bqiv">
+            <node concept="RRSsy" id="42VTAcDfnWe" role="3cqZAp">
+              <property role="RRSoG" value="trace" />
+              <node concept="3cpWs3" id="5x677oPyRQO" role="RRSoy">
                 <node concept="37vLTw" id="5x677oPyTxo" role="3uHU7w">
                   <ref role="3cqZAo" node="5x677oPqxVn" resolve="childMatches" />
                 </node>
@@ -2112,9 +2112,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="34ab3g" id="7JF0K7yznWM" role="3cqZAp">
-                  <property role="35gtTG" value="trace" />
-                  <node concept="3cpWs3" id="5x677oPzZ7D" role="34bqiv">
+                <node concept="RRSsy" id="42VTAcDfnWK" role="3cqZAp">
+                  <property role="RRSoG" value="trace" />
+                  <node concept="3cpWs3" id="5x677oPzZ7D" role="RRSoy">
                     <node concept="37vLTw" id="5x677oPzZKa" role="3uHU7w">
                       <ref role="3cqZAo" node="5x677oPqxVx" resolve="typeMatches" />
                     </node>
@@ -2146,9 +2146,9 @@
                 <node concept="3clFbH" id="5x677oPqBbu" role="3cqZAp" />
                 <node concept="3clFbJ" id="5x677oPqBpN" role="3cqZAp">
                   <node concept="3clFbS" id="5x677oPqBpQ" role="3clFbx">
-                    <node concept="34ab3g" id="7JF0K7yzuF1" role="3cqZAp">
-                      <property role="35gtTG" value="trace" />
-                      <node concept="3cpWs3" id="5x677oPwXE4" role="34bqiv">
+                    <node concept="RRSsy" id="42VTAcDfnXa" role="3cqZAp">
+                      <property role="RRSoG" value="trace" />
+                      <node concept="3cpWs3" id="5x677oPwXE4" role="RRSoy">
                         <node concept="Xl_RD" id="5x677oPwY6J" role="3uHU7w">
                           <property role="Xl_RC" value=": same" />
                         </node>
@@ -2230,9 +2230,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="34ab3g" id="7JF0K7yz$i8" role="3cqZAp">
-                  <property role="35gtTG" value="trace" />
-                  <node concept="3cpWs3" id="44jZT9pROxF" role="34bqiv">
+                <node concept="RRSsy" id="42VTAcDfnXs" role="3cqZAp">
+                  <property role="RRSoG" value="trace" />
+                  <node concept="3cpWs3" id="44jZT9pROxF" role="RRSoy">
                     <node concept="37vLTw" id="44jZT9pRSHi" role="3uHU7w">
                       <ref role="3cqZAo" node="44jZT9pQc34" resolve="otherToThis" />
                     </node>
@@ -2817,9 +2817,9 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="5I6_y3Z7G8h" role="3cqZAp">
-          <property role="35gtTG" value="trace" />
-          <node concept="3cpWs3" id="27Skbdz7E3g" role="34bqiv">
+        <node concept="RRSsy" id="42VTAcDfnFU" role="3cqZAp">
+          <property role="RRSoG" value="trace" />
+          <node concept="3cpWs3" id="27Skbdz7E3g" role="RRSoy">
             <node concept="37vLTw" id="27Skbdz7F4M" role="3uHU7w">
               <ref role="3cqZAo" node="27Skbdz7ud1" resolve="result" />
             </node>
@@ -3181,9 +3181,9 @@
         </node>
         <node concept="3clFbJ" id="27SkbdyO72o" role="3cqZAp">
           <node concept="3clFbS" id="27SkbdyO72p" role="3clFbx">
-            <node concept="34ab3g" id="5I6_y3Z7Nje" role="3cqZAp">
-              <property role="35gtTG" value="trace" />
-              <node concept="3cpWs3" id="27Skbdz2JWk" role="34bqiv">
+            <node concept="RRSsy" id="42VTAcDfnM8" role="3cqZAp">
+              <property role="RRSoG" value="trace" />
+              <node concept="3cpWs3" id="27Skbdz2JWk" role="RRSoy">
                 <node concept="2OqwBi" id="27Skbdz2XMY" role="3uHU7w">
                   <node concept="37vLTw" id="27SkbdziP_M" role="2Oq$k0">
                     <ref role="3cqZAo" node="27SkbdziP_H" resolve="target" />
@@ -3246,9 +3246,9 @@
               </node>
             </node>
             <node concept="3clFbS" id="27SkbdyQ80_" role="3eOfB_">
-              <node concept="34ab3g" id="5I6_y3Z7R7_" role="3cqZAp">
-                <property role="35gtTG" value="trace" />
-                <node concept="3cpWs3" id="27Skbdz33sE" role="34bqiv">
+              <node concept="RRSsy" id="42VTAcDfnMu" role="3cqZAp">
+                <property role="RRSoG" value="trace" />
+                <node concept="3cpWs3" id="27Skbdz33sE" role="RRSoy">
                   <node concept="2OqwBi" id="27Skbdz33sF" role="3uHU7w">
                     <node concept="37vLTw" id="27SkbdzjIl4" role="2Oq$k0">
                       <ref role="3cqZAo" node="27SkbdzjuoG" resolve="interpreter" />

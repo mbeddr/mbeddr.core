@@ -415,11 +415,10 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1803,13 +1802,12 @@
               </node>
             </node>
             <node concept="3clFbS" id="2aP19v2YufS" role="TDEfX">
-              <node concept="34ab3g" id="2aP19v2YufT" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="Xl_RD" id="2aP19v2YufU" role="34bqiv">
+              <node concept="RRSsy" id="42VTAcDfnRi" role="3cqZAp">
+                <property role="RRSoG" value="error" />
+                <node concept="Xl_RD" id="2aP19v2YufU" role="RRSoy">
                   <property role="Xl_RC" value="Saving failed!" />
                 </node>
-                <node concept="37vLTw" id="5HxjapwgGYc" role="34bMjA">
+                <node concept="37vLTw" id="5HxjapwgGYc" role="RRSow">
                   <ref role="3cqZAo" node="2aP19v2Yuf2" resolve="e" />
                 </node>
               </node>
@@ -1861,13 +1859,12 @@
               </node>
               <node concept="TDmWw" id="4NnN$WSogUC" role="TEbGg">
                 <node concept="3clFbS" id="4NnN$WSogUD" role="TDEfX">
-                  <node concept="34ab3g" id="4NnN$WSohKM" role="3cqZAp">
-                    <property role="35gtTG" value="error" />
-                    <property role="34fQS0" value="true" />
-                    <node concept="Xl_RD" id="4NnN$WSohKO" role="34bqiv">
+                  <node concept="RRSsy" id="42VTAcDfnRq" role="3cqZAp">
+                    <property role="RRSoG" value="error" />
+                    <node concept="Xl_RD" id="4NnN$WSohKO" role="RRSoy">
                       <property role="Xl_RC" value="Closing stream!" />
                     </node>
-                    <node concept="37vLTw" id="4NnN$WSohKQ" role="34bMjA">
+                    <node concept="37vLTw" id="4NnN$WSohKQ" role="RRSow">
                       <ref role="3cqZAo" node="4NnN$WSogUE" resolve="e" />
                     </node>
                   </node>
