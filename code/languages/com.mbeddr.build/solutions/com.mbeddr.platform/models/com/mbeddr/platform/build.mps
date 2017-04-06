@@ -8925,6 +8925,12 @@
               <ref role="3bR37D" to="ffeo:7YI57w6Kc$w" resolve="jetbrains.mps.lang.plugin.standalone#481983775135098857" />
             </node>
           </node>
+          <node concept="1SiIV0" id="42VTAcDeRj2" role="3bR37C">
+            <node concept="3bR9La" id="42VTAcDeRj3" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:35abdaXtLpL" resolve="jetbrains.mps.baseLanguage.logging.runtime" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="7Hbe8h75E73" role="3bR37C">
           <node concept="3bR9La" id="7Hbe8h75E74" role="1SiIV1">
