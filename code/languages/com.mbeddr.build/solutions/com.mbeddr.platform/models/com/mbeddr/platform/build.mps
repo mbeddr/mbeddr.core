@@ -2181,6 +2181,11 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="1SbcsMAI5gm" role="3bR37C">
+            <node concept="1Busua" id="1SbcsMAI5gn" role="1SiIV1">
+              <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1X3_iC" id="1RGhARQd0RH" role="lGtFl">
@@ -8797,12 +8802,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
-        <node concept="1SiIV0" id="HmK4D1Ht_9" role="3bR37C">
-          <node concept="3bR9La" id="HmK4D1Ht_a" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="HmK4D1Ht_b" role="3bR37C">
           <node concept="3bR9La" id="HmK4D1Ht_c" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -8903,12 +8902,6 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
             </node>
           </node>
-          <node concept="1SiIV0" id="1rYz9YXoyMS" role="3bR37C">
-            <node concept="3bR9La" id="1rYz9YXoyMT" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="ffeo:7Kfy9QB6L8K" resolve="jetbrains.mps.lang.plugin" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="1rYz9YXoyMU" role="3bR37C">
             <node concept="3bR9La" id="1rYz9YXoyMV" role="1SiIV1">
               <property role="3bR36h" value="false" />
@@ -8923,12 +8916,6 @@
           <node concept="1SiIV0" id="2wu1bNQpi8K" role="3bR37C">
             <node concept="3bR9La" id="2wu1bNQpi8J" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:7YI57w6Kc$w" resolve="jetbrains.mps.lang.plugin.standalone#481983775135098857" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="42VTAcDeRj2" role="3bR37C">
-            <node concept="3bR9La" id="42VTAcDeRj3" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="ffeo:35abdaXtLpL" resolve="jetbrains.mps.baseLanguage.logging.runtime" />
             </node>
           </node>
         </node>
