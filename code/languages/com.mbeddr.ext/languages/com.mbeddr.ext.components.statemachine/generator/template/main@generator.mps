@@ -2334,7 +2334,7 @@
           <property role="TrG5h" value="statemachineExecuteFunction" />
           <node concept="3XIRFW" id="KU5KLY1Y$8" role="2EWMhI">
             <node concept="3XIRlf" id="GD738HsS52" role="3XIRFZ">
-              <property role="TrG5h" value="isTerminate" />
+              <property role="TrG5h" value="__isEpsilonEvent" />
               <node concept="3TlMgk" id="GD738HsS50" role="2C2TGm">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
@@ -2346,7 +2346,7 @@
                   <node concept="3pqW6w" id="GD738HsS7B" role="1_9egR">
                     <node concept="3TlMhK" id="GD738HsS8m" role="3TlMhJ" />
                     <node concept="3ZVu4v" id="GD738HsS7q" role="3TlMhI">
-                      <ref role="3ZVs_2" node="GD738HsS52" resolve="isTerminate" />
+                      <ref role="3ZVs_2" node="GD738HsS52" resolve="__isEpsilonEvent" />
                     </node>
                   </node>
                 </node>
@@ -2367,7 +2367,7 @@
               </node>
               <node concept="19$8ne" id="GD738HsS6D" role="27u4cK">
                 <node concept="3ZVu4v" id="GD738HsS71" role="1_9fRO">
-                  <ref role="3ZVs_2" node="GD738HsS52" resolve="isTerminate" />
+                  <ref role="3ZVs_2" node="GD738HsS52" resolve="__isEpsilonEvent" />
                 </node>
               </node>
             </node>
