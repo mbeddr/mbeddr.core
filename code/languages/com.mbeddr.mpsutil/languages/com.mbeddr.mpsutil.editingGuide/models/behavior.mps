@@ -197,6 +197,12 @@
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
+        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -214,12 +220,6 @@
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug">
-        <reference id="1180481110358" name="conceptDeclaraton" index="3qa414" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -429,31 +429,31 @@
     <ref role="13h7C2" to="k8go:3p1cdQ7_d_v" resolve="MonitorFunction" />
     <node concept="13i0hz" id="52ZF9D3a$YW" role="13h7CS">
       <property role="13i0is" value="false" />
-      <property role="TrG5h" value="getParameters" />
+      <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="tpek:hEwIGRM" resolve="getParameters" />
+      <ref role="13i0hy" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
       <node concept="3Tm1VV" id="52ZF9D3a$Zt" role="1B3o_S" />
       <node concept="3clFbS" id="52ZF9D3a$Zu" role="3clF47">
         <node concept="3clFbF" id="52ZF9D3a_ai" role="3cqZAp">
           <node concept="2ShNRf" id="52ZF9D3a_ag" role="3clFbG">
             <node concept="Tc6Ow" id="52ZF9D3a_ge" role="2ShVmc">
-              <node concept="3THzug" id="52ZF9D3a_rg" role="HW$YZ">
-                <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+              <node concept="3bZ5Sz" id="1zqEQG3WoIk" role="HW$YZ">
+                <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
               </node>
-              <node concept="3TUQnm" id="52ZF9D3a_$g" role="HW$Y0">
-                <ref role="3TV0OU" to="k8go:3p1cdQ7_xTL" resolve="ProgramFragmentParam" />
+              <node concept="35c_gC" id="1zqEQG3WoIi" role="HW$Y0">
+                <ref role="35c_gD" to="k8go:3p1cdQ7_xTL" resolve="ProgramFragmentParam" />
               </node>
-              <node concept="3TUQnm" id="52ZF9D3aCIW" role="HW$Y0">
-                <ref role="3TV0OU" to="k8go:3p1cdQ7_y0H" resolve="EditorContextParam" />
+              <node concept="35c_gC" id="1zqEQG3WoIj" role="HW$Y0">
+                <ref role="35c_gD" to="k8go:3p1cdQ7_y0H" resolve="EditorContextParam" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="_YKpA" id="52ZF9D3a$Zv" role="3clF45">
-        <node concept="3THzug" id="52ZF9D3a$Zw" role="_ZDj9">
-          <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+      <node concept="_YKpA" id="1zqEQG3WoIg" role="3clF45">
+        <node concept="3bZ5Sz" id="1zqEQG3WoIh" role="_ZDj9">
+          <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
         </node>
       </node>
     </node>

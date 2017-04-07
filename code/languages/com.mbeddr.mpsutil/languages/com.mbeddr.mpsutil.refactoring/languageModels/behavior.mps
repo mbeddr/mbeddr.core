@@ -101,8 +101,11 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
-      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
-        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
+        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -163,24 +166,19 @@
       </node>
     </node>
     <node concept="13i0hz" id="5HxjapvIFBz" role="13h7CS">
-      <property role="TrG5h" value="getApplicableConceptFunctionParameter" />
-      <property role="2Ki8OM" value="true" />
+      <property role="TrG5h" value="getParameterConcepts" />
+      <property role="2Ki8OM" value="false" />
       <property role="13i0it" value="false" />
       <property role="13i0is" value="false" />
-      <ref role="13i0hy" to="tpek:2D1PBM_bxJg" resolve="getApplicableConceptFunctionParameter" />
+      <ref role="13i0hy" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
       <node concept="3Tm1VV" id="5HxjapvIFB$" role="1B3o_S" />
-      <node concept="_YKpA" id="5HxjapvIFBx" role="3clF45">
-        <node concept="3Tqbb2" id="5HxjapvIFBy" role="_ZDj9">
-          <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
-        </node>
-      </node>
       <node concept="3clFbS" id="5HxjapvIFBB" role="3clF47">
         <node concept="3cpWs8" id="5HxjapvIFBF" role="3cqZAp">
           <node concept="3cpWsn" id="5HxjapvIFBG" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="_YKpA" id="5HxjapvIFBH" role="1tU5fm">
-              <node concept="3Tqbb2" id="5HxjapvIFBI" role="_ZDj9">
-                <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+              <node concept="3bZ5Sz" id="1zqEQG3WoGp" role="_ZDj9">
+                <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
               </node>
             </node>
             <node concept="2OqwBi" id="5HxjapvIFBJ" role="33vP2m">
@@ -188,7 +186,7 @@
                 <ref role="3pZB1O" to="tpee:gyVMwX8" resolve="ConceptFunction" />
               </node>
               <node concept="2qgKlT" id="5HxjapvIFBD" role="2OqNvi">
-                <ref role="37wK5l" to="tpek:2D1PBM_bxJg" resolve="getApplicableConceptFunctionParameter" />
+                <ref role="37wK5l" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
               </node>
             </node>
           </node>
@@ -199,8 +197,8 @@
               <ref role="3cqZAo" node="5HxjapvIFBG" resolve="result" />
             </node>
             <node concept="TSZUe" id="5HxjapvIFBN" role="2OqNvi">
-              <node concept="3B5_sB" id="5HxjapvIFBK" role="25WWJ7">
-                <ref role="3B5MYn" to="4w5v:6xlxoSXd$tc" resolve="FilterInputParam" />
+              <node concept="35c_gC" id="1zqEQG3WoGo" role="25WWJ7">
+                <ref role="35c_gD" to="4w5v:6xlxoSXd$tc" resolve="FilterInputParam" />
               </node>
             </node>
           </node>
@@ -209,6 +207,11 @@
           <node concept="37vLTw" id="5HxjapvIFBP" role="3cqZAk">
             <ref role="3cqZAo" node="5HxjapvIFBG" resolve="result" />
           </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="1zqEQG3WoGm" role="3clF45">
+        <node concept="3bZ5Sz" id="1zqEQG3WoGn" role="_ZDj9">
+          <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
         </node>
       </node>
     </node>
