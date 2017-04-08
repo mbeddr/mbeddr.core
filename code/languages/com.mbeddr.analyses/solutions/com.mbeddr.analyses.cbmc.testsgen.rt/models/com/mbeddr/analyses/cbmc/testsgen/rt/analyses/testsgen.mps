@@ -527,7 +527,7 @@
                     <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
                   </node>
                   <node concept="liA8E" id="6Ad3C79tt31" role="2OqNvi">
-                    <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+                    <ref role="37wK5l" to="wwqx:~Logger.info(java.lang.String):void" resolve="info" />
                     <node concept="Xl_RD" id="6Ad3C79ttfl" role="37wK5m">
                       <property role="Xl_RC" value="result lifted successfully" />
                     </node>
@@ -564,7 +564,7 @@
               <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
             </node>
             <node concept="liA8E" id="6Ad3C79tuHK" role="2OqNvi">
-              <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+              <ref role="37wK5l" to="wwqx:~Logger.info(java.lang.String):void" resolve="info" />
               <node concept="3cpWs3" id="6Ad3C79tz37" role="37wK5m">
                 <node concept="Xl_RD" id="6Ad3C79t_9P" role="3uHU7w">
                   <property role="Xl_RC" value="' built" />
@@ -667,7 +667,7 @@
               <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
             </node>
             <node concept="liA8E" id="6Ad3C79tCsC" role="2OqNvi">
-              <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+              <ref role="37wK5l" to="wwqx:~Logger.info(java.lang.String):void" resolve="info" />
               <node concept="3cpWs3" id="6Ad3C79tCsD" role="37wK5m">
                 <node concept="Xl_RD" id="6Ad3C79tCsE" role="3uHU7w">
                   <property role="Xl_RC" value="'" />
@@ -711,7 +711,7 @@
               <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
             </node>
             <node concept="liA8E" id="6Ad3C79tDR3" role="2OqNvi">
-              <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+              <ref role="37wK5l" to="wwqx:~Logger.info(java.lang.String):void" resolve="info" />
               <node concept="3cpWs3" id="6Ad3C79tDR4" role="37wK5m">
                 <node concept="Xl_RD" id="6Ad3C79tDR5" role="3uHU7w">
                   <property role="Xl_RC" value="' was saved" />
@@ -1258,6 +1258,33 @@
           <node concept="17QB3L" id="3aDyPAY5Jxb" role="11_B2D" />
           <node concept="3uibUv" id="3aDyPAY5Jxc" role="11_B2D">
             <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5V6VKtQaZVg" role="jymVt" />
+    <node concept="3clFb_" id="5V6VKtQb2E3" role="jymVt">
+      <property role="TrG5h" value="toString" />
+      <property role="1EzhhJ" value="false" />
+      <node concept="17QB3L" id="5V6VKtQb2E4" role="3clF45" />
+      <node concept="3Tm1VV" id="5V6VKtQb2E5" role="1B3o_S" />
+      <node concept="2AHcQZ" id="5V6VKtQb2ES" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="5V6VKtQb2ET" role="3clF47">
+        <node concept="3clFbF" id="5V6VKtQb6jv" role="3cqZAp">
+          <node concept="3cpWs3" id="5V6VKtQb7_G" role="3clFbG">
+            <node concept="37vLTw" id="5V6VKtQb82E" role="3uHU7w">
+              <ref role="3cqZAo" node="3aDyPAY5HP0" resolve="inputs2Values" />
+            </node>
+            <node concept="3cpWs3" id="5V6VKtQb6IS" role="3uHU7B">
+              <node concept="1rXfSq" id="5V6VKtQb6jt" role="3uHU7B">
+                <ref role="37wK5l" node="67iKQ7opcry" resolve="getUserFriendlyMessage" />
+              </node>
+              <node concept="Xl_RD" id="5V6VKtQb72v" role="3uHU7w">
+                <property role="Xl_RC" value=" -&gt; " />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -2366,7 +2393,7 @@
                                   <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
                                 </node>
                                 <node concept="liA8E" id="6Ad3C79sGnp" role="2OqNvi">
-                                  <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+                                  <ref role="37wK5l" to="wwqx:~Logger.info(java.lang.String):void" resolve="info" />
                                   <node concept="Xl_RD" id="6Ad3C79sGzM" role="37wK5m">
                                     <property role="Xl_RC" value="cbmc testsgen terminated" />
                                   </node>
@@ -2399,7 +2426,7 @@
                                   <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
                                 </node>
                                 <node concept="liA8E" id="6Ad3C79sHDn" role="2OqNvi">
-                                  <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+                                  <ref role="37wK5l" to="wwqx:~Logger.info(java.lang.String):void" resolve="info" />
                                   <node concept="3cpWs3" id="6lrp79dYGOq" role="37wK5m">
                                     <node concept="2OqwBi" id="6lrp79dYGOr" role="3uHU7w">
                                       <node concept="37vLTw" id="6lrp79dYGOs" role="2Oq$k0">
@@ -2491,14 +2518,26 @@
                                       <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
                                     </node>
                                     <node concept="liA8E" id="6Ad3C79sJM9" role="2OqNvi">
-                                      <ref role="37wK5l" to="wwqx:~Logger.debug(java.lang.String):void" resolve="debug" />
+                                      <ref role="37wK5l" to="wwqx:~Logger.info(java.lang.String):void" resolve="info" />
                                       <node concept="3cpWs3" id="6Ad3C79sPwl" role="37wK5m">
                                         <node concept="Xl_RD" id="6Ad3C79t0Eu" role="3uHU7w">
                                           <property role="Xl_RC" value="' lifted" />
                                         </node>
                                         <node concept="3cpWs3" id="6Ad3C79sJMa" role="3uHU7B">
-                                          <node concept="Xl_RD" id="6Ad3C79sJMe" role="3uHU7B">
-                                            <property role="Xl_RC" value="test vector '" />
+                                          <node concept="3cpWs3" id="5V6VKtQvL_K" role="3uHU7B">
+                                            <node concept="Xl_RD" id="5V6VKtQvKra" role="3uHU7w">
+                                              <property role="Xl_RC" value=") '" />
+                                            </node>
+                                            <node concept="3cpWs3" id="5V6VKtQvK5G" role="3uHU7B">
+                                              <node concept="Xl_RD" id="6Ad3C79sJMe" role="3uHU7B">
+                                                <property role="Xl_RC" value="test vector (" />
+                                              </node>
+                                              <node concept="3uNrnE" id="5V6VKtQvSuZ" role="3uHU7w">
+                                                <node concept="37vLTw" id="5V6VKtQvSv1" role="2$L3a6">
+                                                  <ref role="3cqZAo" node="73BQep1LgjQ" resolve="currentTestVector" />
+                                                </node>
+                                              </node>
+                                            </node>
                                           </node>
                                           <node concept="2OqwBi" id="6Ad3C79sMcl" role="3uHU7w">
                                             <node concept="37vLTw" id="6Ad3C79sLD1" role="2Oq$k0">
