@@ -548,8 +548,11 @@
     <property role="R4oN_" value="a type representing a function reference" />
     <property role="EcuMT" value="8551646674110395547" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
-    <node concept="PrWs8" id="6mfXVgRte6O" role="PzmwI">
+    <node concept="PrWs8" id="4$HG0yYb5kg" role="PzmwI">
       <ref role="PrY4T" to="mj1l:6mfXVgRsmwb" resolve="IVoidTypeContainer" />
+    </node>
+    <node concept="PrWs8" id="4$HG0yY9G71" role="PzmwI">
+      <ref role="PrY4T" to="yq40:4$HG0yY9G70" resolve="IsAssignableFromNull" />
     </node>
     <node concept="1TJgyj" id="7qHzltJ03is" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

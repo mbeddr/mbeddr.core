@@ -7215,9 +7215,9 @@
     </node>
   </node>
   <node concept="35pCF_" id="$mHaGow4ik">
-    <property role="TrG5h" value="anyPointerTypeSupertypeOfNullType" />
+    <property role="TrG5h" value="anyNullableTypeSupertypeOfNullType" />
     <node concept="1YaCAy" id="$mHaGow4ip" role="35pZ6h">
-      <property role="TrG5h" value="bc" />
+      <property role="TrG5h" value="baseConcept" />
       <ref role="1YaFvo" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
     <node concept="3clFbS" id="$mHaGow4im" role="2sgrp5">
@@ -7228,14 +7228,14 @@
               <node concept="2OqwBi" id="2A5TPe9Udpq" role="3uHU7B">
                 <node concept="2OqwBi" id="2A5TPe9Udpr" role="2Oq$k0">
                   <node concept="1YBJjd" id="2A5TPe9Udps" role="2Oq$k0">
-                    <ref role="1YBMHb" node="$mHaGow4io" resolve="nt" />
+                    <ref role="1YBMHb" node="$mHaGow4io" resolve="nullType" />
                   </node>
                   <node concept="2yIwOk" id="2A5TPe9Udpt" role="2OqNvi" />
                 </node>
                 <node concept="3n3YKJ" id="2A5TPe9Udpu" role="2OqNvi" />
               </node>
               <node concept="Xl_RD" id="2A5TPe9Udpv" role="3uHU7w">
-                <property role="Xl_RC" value=" can only be used with pointer types" />
+                <property role="Xl_RC" value=" can only be used with pointers and references" />
               </node>
             </node>
             <node concept="2OqwBi" id="2A5TPe9Udpw" role="2OEOjV">
@@ -7249,11 +7249,11 @@
         <node concept="3fqX7Q" id="2A5TPe9UcUF" role="3clFbw">
           <node concept="2OqwBi" id="2A5TPe9UcUH" role="3fr31v">
             <node concept="1YBJjd" id="2A5TPe9UcUI" role="2Oq$k0">
-              <ref role="1YBMHb" node="$mHaGow4ip" resolve="bc" />
+              <ref role="1YBMHb" node="$mHaGow4ip" resolve="baseConcept" />
             </node>
             <node concept="1mIQ4w" id="2A5TPe9UcUJ" role="2OqNvi">
-              <node concept="chp4Y" id="2A5TPe9UcUK" role="cj9EA">
-                <ref role="cht4Q" to="yq40:fwMInzpHoK" resolve="PointerType" />
+              <node concept="chp4Y" id="4$HG0yYb3Ak" role="cj9EA">
+                <ref role="cht4Q" to="yq40:4$HG0yY9G70" resolve="INullableType" />
               </node>
             </node>
           </node>
@@ -7261,7 +7261,7 @@
       </node>
     </node>
     <node concept="1YaCAy" id="$mHaGow4io" role="1YuTPh">
-      <property role="TrG5h" value="nt" />
+      <property role="TrG5h" value="nullType" />
       <ref role="1YaFvo" to="yq40:$mHaGow4hS" resolve="NullType" />
     </node>
     <node concept="1xSnZT" id="$mHaGow4iq" role="1xSnZW">
@@ -7270,7 +7270,7 @@
           <node concept="3fqX7Q" id="$mHaGow4it" role="3clFbG">
             <node concept="2OqwBi" id="$mHaGow4iw" role="3fr31v">
               <node concept="1YBJjd" id="$mHaGow4iv" role="2Oq$k0">
-                <ref role="1YBMHb" node="$mHaGow4ip" resolve="bc" />
+                <ref role="1YBMHb" node="$mHaGow4ip" resolve="baseConcept" />
               </node>
               <node concept="1mIQ4w" id="$mHaGow4i$" role="2OqNvi">
                 <node concept="chp4Y" id="$mHaGow4iA" role="cj9EA">
