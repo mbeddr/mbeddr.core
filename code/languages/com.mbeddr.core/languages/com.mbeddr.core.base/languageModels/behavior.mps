@@ -11311,9 +11311,6 @@
             <node concept="37vLTw" id="1yFmGPnLcLh" role="37wK5m">
               <ref role="3cqZAo" node="1yFmGPnLcLl" resolve="n" />
             </node>
-            <node concept="37vLTw" id="1yFmGPnLcLi" role="37wK5m">
-              <ref role="3cqZAo" node="1yFmGPnLcLp" resolve="opctx" />
-            </node>
             <node concept="37vLTw" id="1yFmGPnLcLk" role="37wK5m">
               <ref role="3cqZAo" node="1yFmGPnLcLr" resolve="imageFileName" />
             </node>
@@ -11335,13 +11332,6 @@
         <property role="3TUv4t" value="true" />
         <node concept="3Tqbb2" id="1yFmGPnLcLm" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="1yFmGPnLcLp" role="3clF46">
-        <property role="TrG5h" value="opctx" />
-        <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="1yFmGPnLcLq" role="1tU5fm">
-          <ref role="3uigEE" to="w1kc:~IOperationContext" resolve="IOperationContext" />
-        </node>
-      </node>
       <node concept="37vLTG" id="1yFmGPnLcLr" role="3clF46">
         <property role="TrG5h" value="imageFileName" />
         <property role="3TUv4t" value="true" />
@@ -11361,9 +11351,6 @@
             <node concept="37vLTw" id="54ozzUwn_7a" role="37wK5m">
               <ref role="3cqZAo" node="54ozzUwn_7d" resolve="n" />
             </node>
-            <node concept="37vLTw" id="54ozzUwn_7b" role="37wK5m">
-              <ref role="3cqZAo" node="54ozzUwn_7f" resolve="opctx" />
-            </node>
             <node concept="37vLTw" id="54ozzUwn_7c" role="37wK5m">
               <ref role="3cqZAo" node="54ozzUwn_7h" resolve="imageFileName" />
             </node>
@@ -11377,13 +11364,6 @@
         <property role="TrG5h" value="n" />
         <property role="3TUv4t" value="true" />
         <node concept="3Tqbb2" id="54ozzUwn_7e" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="54ozzUwn_7f" role="3clF46">
-        <property role="TrG5h" value="opctx" />
-        <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="54ozzUwn_7g" role="1tU5fm">
-          <ref role="3uigEE" to="w1kc:~IOperationContext" resolve="IOperationContext" />
-        </node>
       </node>
       <node concept="37vLTG" id="54ozzUwn_7h" role="3clF46">
         <property role="TrG5h" value="imageFileName" />
@@ -11406,13 +11386,6 @@
         <property role="TrG5h" value="n" />
         <property role="3TUv4t" value="true" />
         <node concept="3Tqbb2" id="1yFmGPnLcLx" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="1yFmGPnLcLy" role="3clF46">
-        <property role="TrG5h" value="opctx" />
-        <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="1yFmGPnLcLz" role="1tU5fm">
-          <ref role="3uigEE" to="w1kc:~IOperationContext" resolve="IOperationContext" />
-        </node>
       </node>
       <node concept="37vLTG" id="1yFmGPnLcLA" role="3clF46">
         <property role="TrG5h" value="imageFileName" />
@@ -11580,7 +11553,7 @@
                                         <node concept="37vLTw" id="5Pb2U$k6TOu" role="37wK5m">
                                           <ref role="3cqZAo" node="5Pb2U$k6TO9" resolve="width" />
                                         </node>
-                                        <node concept="37vLTw" id="5Pb2U$k6TOv" role="37wK5m">
+                                        <node concept="37vLTw" id="6XBPhghs9la" role="37wK5m">
                                           <ref role="3cqZAo" node="5Pb2U$k6TOh" resolve="height" />
                                         </node>
                                         <node concept="10M0yZ" id="5Pb2U$k6TOw" role="37wK5m">
