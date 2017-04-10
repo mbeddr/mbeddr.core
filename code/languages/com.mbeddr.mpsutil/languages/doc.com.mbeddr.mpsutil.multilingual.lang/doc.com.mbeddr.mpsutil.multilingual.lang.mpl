@@ -7,20 +7,17 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="doc.com.mbeddr.mpsutil.multilingual.lang#185414526234511801" uuid="bb233243-d8c7-4868-b176-790d8d1d03c6">
+    <generator namespace="doc.com.mbeddr.mpsutil.multilingual.lang#185414526234511801" uuid="bb233243-d8c7-4868-b176-790d8d1d03c6">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
       <external-templates />
-      <usedDevKits>
-        <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-      </usedDevKits>
       <languageVersions>
+        <language slang="l:d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d:com.mbeddr.mpsutil.multilingual.concept" version="0" />
         <language slang="l:ea7c5f4a-5621-4b35-a7bb-9aaab820eaf7:doc.com.mbeddr.mpsutil.multilingual.lang" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
-        <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="0" />
         <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
@@ -61,15 +58,10 @@
   <dependencies>
     <dependency reexport="false">d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d(com.mbeddr.mpsutil.multilingual.concept)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
-    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:23f985f2-965f-4af1-aee8-a32677429514:com.mbeddr.mpsutil.multilingual.common" version="0" />
     <language slang="l:13a9e567-3b9e-4ccf-b94c-9155f5e78586:com.mbeddr.mpsutil.multilingual.editor" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
-    <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="0" />

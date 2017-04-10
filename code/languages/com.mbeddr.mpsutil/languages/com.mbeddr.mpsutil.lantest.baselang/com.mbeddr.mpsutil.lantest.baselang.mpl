@@ -15,9 +15,9 @@
       </models>
       <external-templates />
       <languageVersions>
+        <language slang="l:5ef691b5-60ce-4ece-a04e-25e642dfa128:com.mbeddr.mpsutil.lantest" version="0" />
         <language slang="l:0617b2ed-f9cf-44b7-b91d-b3a8e60bae7f:com.mbeddr.mpsutil.lantest.baselang" version="-1" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
-        <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="0" />
         <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
