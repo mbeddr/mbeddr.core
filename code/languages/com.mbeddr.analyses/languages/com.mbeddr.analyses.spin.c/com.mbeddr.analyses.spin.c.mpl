@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="" generatorUID="com.mbeddr.analyses.spin.c#6932498701172181331" uuid="75ce70be-3bbf-4f0b-8aa2-11888bf9583c">
+    <generator alias="" namespace="com.mbeddr.analyses.spin.c#6932498701172181331" uuid="75ce70be-3bbf-4f0b-8aa2-11888bf9583c">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />

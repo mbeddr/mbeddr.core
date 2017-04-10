@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="doc2latex" generatorUID="com.mbeddr.doc.gen_latex#4457500422381351720" uuid="ae22a5d5-bb74-4acf-b102-de4ea6203c98">
+    <generator alias="doc2latex" namespace="com.mbeddr.doc.gen_latex#4457500422381351720" uuid="ae22a5d5-bb74-4acf-b102-de4ea6203c98">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />

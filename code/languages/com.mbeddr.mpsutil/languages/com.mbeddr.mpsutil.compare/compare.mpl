@@ -11,7 +11,7 @@
   </facets>
   <accessoryModels />
   <generators>
-    <generator name="" generatorUID="com.mbeddr.mpsutil.compare#756135271275941091" uuid="3b21f776-9e24-4e37-9639-70bded433068">
+    <generator alias="" namespace="com.mbeddr.mpsutil.compare#756135271275941091" uuid="3b21f776-9e24-4e37-9639-70bded433068">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />

@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="expr2doc" generatorUID="com.mbeddr.doc.expressions#5378658552263161807" uuid="1ce94c6a-937b-45a8-9a07-7975e5b7d060">
+    <generator alias="expr2doc" namespace="com.mbeddr.doc.expressions#5378658552263161807" uuid="1ce94c6a-937b-45a8-9a07-7975e5b7d060">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />

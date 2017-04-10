@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="EcoreImporter_TestLanguage1#4844457815724712269" uuid="d2a9429a-947a-4af0-8990-ba17327660bd">
+    <generator namespace="EcoreImporter_TestLanguage1#4844457815724712269" uuid="d2a9429a-947a-4af0-8990-ba17327660bd">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot path="${module}/generator/template" />

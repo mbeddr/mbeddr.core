@@ -10,9 +10,6 @@
     <dependency reexport="false">e0dc4b58-6648-4617-8514-abfaa6d77043(com.mbeddr.analyses.stan)</dependency>
     <dependency reexport="false">8577ff67-8aae-422e-b831-9d78b9a8045a(com.mbeddr.analyses.z3.testing)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:e0dc4b58-6648-4617-8514-abfaa6d77043:com.mbeddr.analyses.stan" version="0" />
     <language slang="l:8577ff67-8aae-422e-b831-9d78b9a8045a:com.mbeddr.analyses.z3.testing" version="0" />

@@ -16,7 +16,7 @@
     <dependency reexport="false">d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:d08b2078-ada5-40fa-a3c5-d721088dc626:com.mbeddr.mpsutil.ecore.testing" version="0" />
+    <language slang="l:d08b2078-ada5-40fa-a3c5-d721088dc626:com.mbeddr.mpsutil.ecoreimporter.testing" version="0" />
     <language slang="l:ad8b5993-1cc2-49c0-b7a0-0283da231703:com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />

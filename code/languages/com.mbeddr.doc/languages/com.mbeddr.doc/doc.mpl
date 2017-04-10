@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="doc2doc" generatorUID="com.mbeddr.doc#4457500422381538528" uuid="864be1b4-10fc-4e1f-9112-c5b47ae9adec">
+    <generator alias="doc2doc" namespace="com.mbeddr.doc#4457500422381538528" uuid="864be1b4-10fc-4e1f-9112-c5b47ae9adec">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />

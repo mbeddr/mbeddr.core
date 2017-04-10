@@ -10,7 +10,7 @@
     <model modelUID="r:717da79d-5632-4537-9680-813308745bcf(com.mbeddr.doc.gen_xhtml.defaults)" />
   </accessoryModels>
   <generators>
-    <generator name="doc2html" generatorUID="com.mbeddr.doc.gen_xhtml#3350625596580276036" uuid="45c3377b-bfd4-4af4-89da-1dae7d5058f3">
+    <generator alias="doc2html" namespace="com.mbeddr.doc.gen_xhtml#3350625596580276036" uuid="45c3377b-bfd4-4af4-89da-1dae7d5058f3">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />

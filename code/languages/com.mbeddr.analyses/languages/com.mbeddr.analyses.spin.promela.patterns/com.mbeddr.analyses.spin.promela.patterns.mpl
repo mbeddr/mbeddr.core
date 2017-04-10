@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="" generatorUID="com.mbeddr.analyses.spin.promela.patterns#1737851622209916392" uuid="bd9d1a6a-cd44-40f9-b116-f0ff4deba2ce">
+    <generator alias="" namespace="com.mbeddr.analyses.spin.promela.patterns#1737851622209916392" uuid="bd9d1a6a-cd44-40f9-b116-f0ff4deba2ce">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot path="${module}/generator/template" />
