@@ -367,6 +367,7 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
@@ -2299,9 +2300,12 @@
             <node concept="3GJtP1" id="hPjs9OT" role="1ou48n">
               <node concept="3clFbS" id="hPjs9OU" role="2VODD2">
                 <node concept="3clFbF" id="i3HmGut" role="3cqZAp">
-                  <node concept="3HcIyF" id="i3HmGuu" role="3clFbG">
-                    <ref role="3HcIyG" to="tpc2:fLwANPl" resolve="_Colors_Enum" />
-                    <node concept="3HdYuk" id="i3HmI6Z" role="3Hdvt7" />
+                  <node concept="2OqwBi" id="3OUt2Otwn5D" role="3clFbG">
+                    <node concept="3HcIyF" id="i3HmGuu" role="2Oq$k0">
+                      <ref role="3HcIyG" to="tpc2:fLwANPl" resolve="_Colors_Enum" />
+                      <node concept="3HdYuk" id="i3HmI6Z" role="3Hdvt7" />
+                    </node>
+                    <node concept="ANE8D" id="3OUt2OtwozJ" role="2OqNvi" />
                   </node>
                 </node>
               </node>
@@ -2411,9 +2415,12 @@
             <node concept="3GJtP1" id="hPjRqtL" role="1ou48n">
               <node concept="3clFbS" id="hPjRqtM" role="2VODD2">
                 <node concept="3clFbF" id="i3HmL9Q" role="3cqZAp">
-                  <node concept="3HcIyF" id="i3HmL9R" role="3clFbG">
-                    <ref role="3HcIyG" to="tpc2:fLwANPl" resolve="_Colors_Enum" />
-                    <node concept="3HdYuk" id="i3HmMKc" role="3Hdvt7" />
+                  <node concept="2OqwBi" id="3OUt2Otwqpp" role="3clFbG">
+                    <node concept="3HcIyF" id="i3HmL9R" role="2Oq$k0">
+                      <ref role="3HcIyG" to="tpc2:fLwANPl" resolve="_Colors_Enum" />
+                      <node concept="3HdYuk" id="i3HmMKc" role="3Hdvt7" />
+                    </node>
+                    <node concept="ANE8D" id="3OUt2OtwsG1" role="2OqNvi" />
                   </node>
                 </node>
               </node>
