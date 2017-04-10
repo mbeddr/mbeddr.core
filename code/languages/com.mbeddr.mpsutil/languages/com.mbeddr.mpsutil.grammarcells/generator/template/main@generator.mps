@@ -684,7 +684,6 @@
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
       </concept>
@@ -700,6 +699,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -2470,7 +2470,7 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="1PgB_6" id="5V9BP5IUJQT" role="2OqNvi" />
+                      <node concept="3YRAZt" id="5V9BP5IUJQT" role="2OqNvi" />
                     </node>
                   </node>
                   <node concept="3clFbF" id="5V9BP5IV0uX" role="3cqZAp">
@@ -2559,7 +2559,7 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="1PgB_6" id="5V9BP5IVdD1" role="2OqNvi" />
+                      <node concept="3YRAZt" id="5V9BP5IVdD1" role="2OqNvi" />
                     </node>
                   </node>
                   <node concept="3clFbF" id="5V9BP5IVdD2" role="3cqZAp">
@@ -3589,7 +3589,7 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="1PgB_6" id="5cbCx5gTUvh" role="2OqNvi" />
+                      <node concept="3YRAZt" id="5cbCx5gTUvh" role="2OqNvi" />
                     </node>
                   </node>
                   <node concept="3clFbF" id="5cbCx5gTUvi" role="3cqZAp">
@@ -3678,7 +3678,7 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="1PgB_6" id="5cbCx5gTUvR" role="2OqNvi" />
+                      <node concept="3YRAZt" id="5cbCx5gTUvR" role="2OqNvi" />
                     </node>
                   </node>
                   <node concept="3clFbF" id="5cbCx5gTUvS" role="3cqZAp">
