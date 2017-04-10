@@ -232,6 +232,9 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -8928,6 +8931,28 @@
     <node concept="312cEu" id="1dAqnm93$ES" role="13RCb5">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="reduce_TableCell" />
+      <node concept="3clFb_" id="1JmHQP6XArR" role="jymVt">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="_condition_" />
+        <property role="od$2w" value="false" />
+        <property role="DiZV1" value="false" />
+        <property role="2aFKle" value="false" />
+        <node concept="3clFbS" id="1JmHQP6XArU" role="3clF47" />
+        <node concept="3Tm1VV" id="1JmHQP6X_ex" role="1B3o_S" />
+        <node concept="3cqZAl" id="1JmHQP6XArF" role="3clF45" />
+        <node concept="37vLTG" id="1JmHQP6XCM0" role="3clF46">
+          <property role="TrG5h" value="n" />
+          <node concept="3Tqbb2" id="1JmHQP6XCLZ" role="1tU5fm" />
+        </node>
+        <node concept="37vLTG" id="1JmHQP6XF3A" role="3clF46">
+          <property role="TrG5h" value="editorContext" />
+          <property role="3TUv4t" value="true" />
+          <node concept="3uibUv" id="1JmHQP6XF3B" role="1tU5fm">
+            <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="1JmHQP6XzeV" role="jymVt" />
       <node concept="3clFb_" id="1dAqnm93$ET" role="jymVt">
         <property role="TrG5h" value="createTableNode" />
         <node concept="3uibUv" id="3olMEllJAD2" role="3clF45">
@@ -8966,7 +8991,7 @@
             </node>
             <node concept="3fqX7Q" id="5iETbOnu5Ot" role="3clFbw">
               <node concept="1rXfSq" id="5iETbOnu5Ov" role="3fr31v">
-                <ref role="37wK5l" to="tpc3:5ajRFTcxVCv" resolve="_condition_" />
+                <ref role="37wK5l" node="1JmHQP6XArR" resolve="_condition_" />
                 <node concept="1ZhdrF" id="5iETbOnu5Ow" role="lGtFl">
                   <property role="2qtEX8" value="baseMethodDeclaration" />
                   <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
