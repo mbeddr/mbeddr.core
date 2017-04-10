@@ -10,6 +10,8 @@
     <language slang="l:cbb3775d-e4a8-4ef6-ba85-c98b856481d7:de.itemis.mps.editor.layout.demolang" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
-  <dependencyVersions />
+  <dependencyVersions>
+    <module reference="b5434bf0-1994-425d-a5c7-4d78e838d03e(de.itemis.mps.editor.layout.sandbox)" version="0" />
+  </dependencyVersions>
 </solution>
 

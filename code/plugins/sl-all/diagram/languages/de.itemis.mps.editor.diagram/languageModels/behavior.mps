@@ -2,7 +2,7 @@
 <model ref="r:1c698dc1-0d14-425b-8c35-6d4f27e74333(de.itemis.mps.editor.diagram.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -1380,7 +1380,7 @@
       <node concept="3clFbS" id="7vufT$lhqV$" role="3clF47">
         <node concept="3clFbF" id="7vufT$lhqXY" role="3cqZAp">
           <node concept="2c44tf" id="7vufT$lhqXW" role="3clFbG">
-            <node concept="3THzug" id="7vufT$lhqYL" role="2c44tc" />
+            <node concept="3bZ5Sz" id="5KX1OsE0hsG" role="2c44tc" />
           </node>
         </node>
       </node>

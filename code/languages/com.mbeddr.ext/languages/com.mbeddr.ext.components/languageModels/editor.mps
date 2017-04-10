@@ -373,6 +373,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -702,9 +703,6 @@
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
@@ -6352,11 +6350,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbC" id="1gSgWEgemCh" role="3clFbw">
-                  <node concept="3TUQnm" id="1gSgWEgenbu" role="3uHU7w">
-                    <ref role="3TV0OU" to="v7ag:4v7hlN6x1z2" resolve="PortAdapter" />
-                  </node>
+                <node concept="17R0WA" id="5KX1OsEb4Y4" role="3clFbw">
                   <node concept="1yATlc" id="1gSgWEgelSt" role="3uHU7B" />
+                  <node concept="35c_gC" id="5KX1OsEb4F$" role="3uHU7w">
+                    <ref role="35c_gD" to="v7ag:4v7hlN6x1z2" resolve="PortAdapter" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="7UYh$$BpCDv" role="3cqZAp">
@@ -6996,10 +6994,10 @@
                     </node>
                   </node>
                   <node concept="1eOMI4" id="1HYYbxGeW2K" role="3clFbw">
-                    <node concept="3clFbC" id="1HYYbxGeW2L" role="1eOMHV">
+                    <node concept="17R0WA" id="5KX1OsEb4wj" role="1eOMHV">
                       <node concept="1yATlc" id="1HYYbxGeWld" role="3uHU7B" />
-                      <node concept="3TUQnm" id="1HYYbxGeW2N" role="3uHU7w">
-                        <ref role="3TV0OU" to="v7ag:7VsgA5L5UoU" resolve="DummyCompRef" />
+                      <node concept="35c_gC" id="5KX1OsEb3UZ" role="3uHU7w">
+                        <ref role="35c_gD" to="v7ag:7VsgA5L5UoU" resolve="DummyCompRef" />
                       </node>
                     </node>
                   </node>
@@ -7013,10 +7011,10 @@
                     </node>
                   </node>
                   <node concept="1eOMI4" id="1HYYbxGeW2S" role="3clFbw">
-                    <node concept="3clFbC" id="1HYYbxGeW2T" role="1eOMHV">
+                    <node concept="17R0WA" id="5KX1OsEb4kK" role="1eOMHV">
                       <node concept="1yATlc" id="1HYYbxGeWyY" role="3uHU7B" />
-                      <node concept="3TUQnm" id="1HYYbxGeW2V" role="3uHU7w">
-                        <ref role="3TV0OU" to="v7ag:4v7hlN6x1z2" resolve="PortAdapter" />
+                      <node concept="35c_gC" id="5KX1OsEb47A" role="3uHU7w">
+                        <ref role="35c_gD" to="v7ag:4v7hlN6x1z2" resolve="PortAdapter" />
                       </node>
                     </node>
                   </node>

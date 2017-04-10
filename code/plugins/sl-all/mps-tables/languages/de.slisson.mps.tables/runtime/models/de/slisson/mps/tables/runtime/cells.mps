@@ -6,9 +6,9 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
   </languages>
@@ -59,8 +59,9 @@
     <import index="z0fb" ref="r:0b928dd6-dd7e-45a8-b309-a2e315b7877a(de.itemis.mps.editor.celllayout.styles.editor)" />
     <import index="hhnx" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime(MPS.Editor/)" />
     <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
@@ -421,7 +422,6 @@
       </concept>
       <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
       </concept>
@@ -4183,6 +4183,43 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3cpWs8" id="5KX1OsE20Ac" role="3cqZAp">
+                    <node concept="3cpWsn" id="5KX1OsE20Ad" role="3cpWs9">
+                      <property role="TrG5h" value="annotationConceptNode" />
+                      <node concept="3Tqbb2" id="5KX1OsE20A3" role="1tU5fm">
+                        <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+                      </node>
+                      <node concept="1PxgMI" id="5KX1OsE20Ae" role="33vP2m">
+                        <node concept="chp4Y" id="5KX1OsE20Af" role="3oSUPX">
+                          <ref role="cht4Q" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+                        </node>
+                        <node concept="2OqwBi" id="5KX1OsE20Ag" role="1m5AlR">
+                          <node concept="2OqwBi" id="5KX1OsE20Ah" role="2Oq$k0">
+                            <node concept="2OqwBi" id="5KX1OsE20Ai" role="2Oq$k0">
+                              <node concept="37vLTw" id="5KX1OsE20Aj" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6OOkb_bn9vw" resolve="annotation" />
+                              </node>
+                              <node concept="2yIwOk" id="5KX1OsE20Ak" role="2OqNvi" />
+                            </node>
+                            <node concept="liA8E" id="5KX1OsE20Al" role="2OqNvi">
+                              <ref role="37wK5l" to="c17a:~SAbstractConcept.getSourceNode():org.jetbrains.mps.openapi.model.SNodeReference" resolve="getSourceNode" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="5KX1OsE20Am" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                            <node concept="2OqwBi" id="5KX1OsE20An" role="37wK5m">
+                              <node concept="37vLTw" id="5KX1OsE20Ao" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4td5AAzdA$4" resolve="context" />
+                              </node>
+                              <node concept="liA8E" id="5KX1OsE20Ap" role="2OqNvi">
+                                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3cpWs8" id="6eBFmDEBOow" role="3cqZAp">
                     <node concept="3cpWsn" id="6eBFmDEBOox" role="3cpWs9">
                       <property role="TrG5h" value="annotationHeader" />
@@ -4195,11 +4232,8 @@
                           <node concept="2ShNRf" id="6eBFmDEBOo_" role="37wK5m">
                             <node concept="1pGfFk" id="6eBFmDEBOoA" role="2ShVmc">
                               <ref role="37wK5l" to="6dpw:7C0FR5AJys8" resolve="SNodeHeaderReference" />
-                              <node concept="2OqwBi" id="6eBFmDEBOoB" role="37wK5m">
-                                <node concept="37vLTw" id="6eBFmDEBOoC" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="6OOkb_bn9vw" resolve="annotation" />
-                                </node>
-                                <node concept="3NT_Vc" id="6eBFmDEBOoD" role="2OqNvi" />
+                              <node concept="37vLTw" id="5KX1OsE21W6" role="37wK5m">
+                                <ref role="3cqZAo" node="5KX1OsE20Ad" resolve="annotationConceptNode" />
                               </node>
                             </node>
                           </node>
@@ -4216,17 +4250,8 @@
                                 <node concept="2YIFZM" id="6eBFmDEBOoJ" role="3uHU7w">
                                   <ref role="37wK5l" to="tpcn:6_gUeuqINwd" resolve="getAttributeRole" />
                                   <ref role="1Pybhc" to="tpcn:6_gUeuqI_Vn" resolve="AttributeDesignTimeOperations" />
-                                  <node concept="1PxgMI" id="6eBFmDEBOoK" role="37wK5m">
-                                    <property role="1BlNFB" value="true" />
-                                    <node concept="2OqwBi" id="6eBFmDEBOoL" role="1m5AlR">
-                                      <node concept="37vLTw" id="6eBFmDEBOoM" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="6OOkb_bn9vw" resolve="annotation" />
-                                      </node>
-                                      <node concept="3NT_Vc" id="6eBFmDEBOoN" role="2OqNvi" />
-                                    </node>
-                                    <node concept="chp4Y" id="1k1VwvtQH4s" role="3oSUPX">
-                                      <ref role="cht4Q" to="tpck:4uZwTti3_$T" resolve="Attribute" />
-                                    </node>
+                                  <node concept="37vLTw" id="5KX1OsE20Aq" role="37wK5m">
+                                    <ref role="3cqZAo" node="5KX1OsE20Ad" resolve="annotationConceptNode" />
                                   </node>
                                 </node>
                               </node>

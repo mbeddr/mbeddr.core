@@ -8,9 +8,9 @@
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -445,6 +445,7 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -474,7 +475,6 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -2495,7 +2495,7 @@
                       <property role="1EzhhJ" value="false" />
                       <node concept="37vLTG" id="7h3F9h$G4yY" role="3clF46">
                         <property role="TrG5h" value="concept" />
-                        <node concept="3THzug" id="7h3F9h$G4yZ" role="1tU5fm" />
+                        <node concept="3bZ5Sz" id="5KX1OsE0gGB" role="1tU5fm" />
                       </node>
                       <node concept="37vLTG" id="7h3F9h$G4z0" role="3clF46">
                         <property role="TrG5h" value="targetNode" />
@@ -4418,7 +4418,7 @@
                                                   <property role="1EzhhJ" value="false" />
                                                   <node concept="37vLTG" id="63AkbuOFlxm" role="3clF46">
                                                     <property role="TrG5h" value="concept" />
-                                                    <node concept="3THzug" id="63AkbuOFlxn" role="1tU5fm" />
+                                                    <node concept="3bZ5Sz" id="5KX1OsE0BQU" role="1tU5fm" />
                                                   </node>
                                                   <node concept="37vLTG" id="63AkbuOFlxo" role="3clF46">
                                                     <property role="TrG5h" value="targetNode" />
@@ -7084,7 +7084,7 @@
                           <node concept="37vLTG" id="Xrn1RszNfI" role="3clF46">
                             <property role="TrG5h" value="concept" />
                             <property role="3TUv4t" value="true" />
-                            <node concept="3THzug" id="Xrn1RszNfJ" role="1tU5fm" />
+                            <node concept="3bZ5Sz" id="5KX1OsE0os3" role="1tU5fm" />
                             <node concept="2AHcQZ" id="Xrn1RszNfK" role="2AJF6D">
                               <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
                             </node>
@@ -10263,7 +10263,7 @@
                                         <node concept="37vLTG" id="ywgKCSlppK" role="3clF46">
                                           <property role="TrG5h" value="concept" />
                                           <property role="3TUv4t" value="true" />
-                                          <node concept="3THzug" id="ywgKCSlppL" role="1tU5fm" />
+                                          <node concept="3bZ5Sz" id="5KX1OsE0xmo" role="1tU5fm" />
                                           <node concept="2AHcQZ" id="ywgKCSlppM" role="2AJF6D">
                                             <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
                                           </node>
