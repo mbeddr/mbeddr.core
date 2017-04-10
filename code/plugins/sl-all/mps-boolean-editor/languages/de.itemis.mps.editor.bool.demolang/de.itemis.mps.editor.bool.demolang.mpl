@@ -7,16 +7,13 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="de.itemis.mps.editor.bool.demolang#4900677560560046179" uuid="1f538166-ed71-448e-98a4-258176a5d557">
+    <generator namespace="de.itemis.mps.editor.bool.demolang#4900677560560046179" uuid="1f538166-ed71-448e-98a4-258176a5d557">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
       <external-templates />
-      <usedDevKits>
-        <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-      </usedDevKits>
       <languageVersions>
         <language slang="l:8eb39fd6-60ad-48f0-8c8e-0ea1c36c2d65:de.itemis.mps.editor.bool.demolang" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
@@ -48,10 +45,6 @@
     </generator>
   </generators>
   <sourcePath />
-  <usedDevKits>
-    <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
-    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:f89904fb-9486-43a1-865e-5ad0375a8a88:de.itemis.mps.editor.bool" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />

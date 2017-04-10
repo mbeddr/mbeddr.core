@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="de.slisson.mps.structurecheck#380240910834170735" uuid="ce4c3eb8-9598-4a3c-a7c0-46a16d2333d9">
+    <generator namespace="de.slisson.mps.structurecheck#380240910834170735" uuid="ce4c3eb8-9598-4a3c-a7c0-46a16d2333d9">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -18,9 +18,6 @@
         <dependency reexport="false">6f14e29b-9796-426f-ae46-86ea46d4d320(de.slisson.mps.structurecheck.runtime)</dependency>
         <dependency reexport="false">fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)</dependency>
       </dependencies>
-      <usedDevKits>
-        <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-      </usedDevKits>
       <languageVersions>
         <language slang="l:c6cfed73-685b-4891-8bdd-b38a1dcb107a:de.slisson.mps.structurecheck" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
@@ -60,10 +57,6 @@
     </generator>
   </generators>
   <sourcePath />
-  <usedDevKits>
-    <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
-    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:f89904fb-9486-43a1-865e-5ad0375a8a88:de.itemis.mps.editor.bool" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />

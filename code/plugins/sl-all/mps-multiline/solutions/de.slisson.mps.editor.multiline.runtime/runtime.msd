@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="de.slisson.mps.editor.multiline.runtime" uuid="dc038ceb-b7ea-4fea-ac12-55f7400e97ba" moduleVersion="0" pluginKind="PLUGIN_EDITOR" compileInMPS="true" generatorOutputPath="${module}/source_gen">
+<solution name="de.slisson.mps.editor.multiline.runtime" uuid="dc038ceb-b7ea-4fea-ac12-55f7400e97ba" moduleVersion="0" pluginKind="PLUGIN_EDITOR" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="diff_match_patch.jar" />

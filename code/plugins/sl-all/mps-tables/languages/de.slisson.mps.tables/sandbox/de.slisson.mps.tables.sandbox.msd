@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="de.slisson.mps.tables.sandbox" uuid="2fd17677-b74d-4eb3-8597-c79c1a4079e7" moduleVersion="0" compileInMPS="true" generatorOutputPath="${module}/source_gen">
+<solution name="de.slisson.mps.tables.sandbox" uuid="2fd17677-b74d-4eb3-8597-c79c1a4079e7" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

@@ -9,9 +9,6 @@
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>b1972fb0-9171-4e58-8cee-05866bb91ec2(de.itemis.mps.editor.diagram.devkit)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:fa13cc63-c476-4d46-9c96-d53670abe7bc:de.itemis.mps.editor.diagram" version="0" />
     <language slang="l:5a82b7b8-2303-45be-b960-4e3ff16e82ce:de.itemis.mps.editor.diagram.demo.activity" version="0" />

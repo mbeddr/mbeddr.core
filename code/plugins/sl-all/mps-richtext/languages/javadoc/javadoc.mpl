@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="de.slisson.mps.javadoc" uuid="4e0df6bd-e265-4d63-9ca0-ca97e44cf841" generatorOutputPath="${module}/source_gen" languageVersion="0" moduleVersion="0">
+<language namespace="de.slisson.mps.javadoc" uuid="4e0df6bd-e265-4d63-9ca0-ca97e44cf841" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
     </modelRoot>
   </models>
   <accessoryModels />
-  <generators />
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
@@ -16,10 +15,6 @@
     <dependency reexport="false">e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
-    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:4e0df6bd-e265-4d63-9ca0-ca97e44cf841:de.slisson.mps.javadoc" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
