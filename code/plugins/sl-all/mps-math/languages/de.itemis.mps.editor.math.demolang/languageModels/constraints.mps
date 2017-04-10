@@ -27,14 +27,14 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
-      <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="3906442776579556545" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Presentation" flags="in" index="Bn3R3" />
       <concept id="3906442776579549644" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parameterNode" flags="nn" index="Bn53e" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213100494875" name="referent" index="1Mr941" />
-        <child id="1213106463729" name="canBeChild" index="1MLUbF" />
       </concept>
       <concept id="1148684180339" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Factory" flags="in" index="1MUpDS" />
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
@@ -63,27 +63,8 @@
   </registry>
   <node concept="1M2fIO" id="5QpvrvdIPUt">
     <ref role="1M2myG" to="96v7:5QpvrvdILN0" resolve="SumRef" />
-    <node concept="nKS2y" id="5QpvrvdIPVh" role="1MLUbF">
-      <node concept="3clFbS" id="5QpvrvdIPVi" role="2VODD2">
-        <node concept="3clFbF" id="5QpvrvdIQdL" role="3cqZAp">
-          <node concept="2OqwBi" id="5QpvrvdJ0KR" role="3clFbG">
-            <node concept="2OqwBi" id="5QpvrvdIQzd" role="2Oq$k0">
-              <node concept="nLn13" id="5QpvrvdIQdK" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="5QpvrvdJ0uh" role="2OqNvi">
-                <node concept="1xMEDy" id="5QpvrvdJ0uj" role="1xVPHs">
-                  <node concept="chp4Y" id="5QpvrvdJ0CQ" role="ri$Ld">
-                    <ref role="cht4Q" to="96v7:9L22EoWpjb" resolve="Sum" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3x8VRR" id="5QpvrvdJ1tL" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1N5Pfh" id="5QpvrvdJ1Dk" role="1Mr941">
-      <ref role="1N5Vy1" to="96v7:5QpvrvdIM9B" />
+      <ref role="1N5Vy1" to="96v7:5QpvrvdIM9B" resolve="sum" />
       <node concept="1MUpDS" id="5QpvrvdJ1OK" role="1N6uqs">
         <node concept="3clFbS" id="5QpvrvdJ1OL" role="2VODD2">
           <node concept="3clFbF" id="5QpvrvdJ2AT" role="3cqZAp">
@@ -109,6 +90,25 @@
                 <ref role="3TsBF5" to="96v7:9L22EoXBFl" resolve="varName" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9S07l" id="5QpvrvdIPVh" role="9Vyp8">
+      <node concept="3clFbS" id="1k1VwvtPtJ0" role="2VODD2">
+        <node concept="3clFbF" id="1k1VwvtPtJ1" role="3cqZAp">
+          <node concept="2OqwBi" id="1k1VwvtPtJ2" role="3clFbG">
+            <node concept="2OqwBi" id="1k1VwvtPtJ3" role="2Oq$k0">
+              <node concept="nLn13" id="1k1VwvtPtJ4" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="1k1VwvtPtJ5" role="2OqNvi">
+                <node concept="1xMEDy" id="1k1VwvtPtJ6" role="1xVPHs">
+                  <node concept="chp4Y" id="1k1VwvtPtJ7" role="ri$Ld">
+                    <ref role="cht4Q" to="96v7:9L22EoWpjb" resolve="Sum" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1k1VwvtPtJ8" role="2OqNvi" />
           </node>
         </node>
       </node>

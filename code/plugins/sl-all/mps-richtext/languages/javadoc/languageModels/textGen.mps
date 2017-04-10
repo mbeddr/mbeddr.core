@@ -45,7 +45,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -63,7 +63,7 @@
             <node concept="2OqwBi" id="2YgkUiABxJA" role="lb14g">
               <node concept="2OqwBi" id="2YgkUiABxJB" role="2Oq$k0">
                 <node concept="117lpO" id="2YgkUiABxJC" role="2Oq$k0" />
-                <node concept="3NT_Vc" id="2YgkUiABxJD" role="2OqNvi" />
+                <node concept="2yIwOk" id="1k1VwvtPGIV" role="2OqNvi" />
               </node>
               <node concept="2qgKlT" id="2YgkUiABxJE" role="2OqNvi">
                 <ref role="37wK5l" to="805h:2YgkUiABxIb" resolve="getTagname" />
@@ -77,7 +77,7 @@
             <node concept="2OqwBi" id="4$G0AukZNAa" role="lb14g">
               <node concept="117lpO" id="4$G0AukZN_P" role="2Oq$k0" />
               <node concept="3TrEf2" id="4$G0AukZNAg" role="2OqNvi">
-                <ref role="3Tt5mk" to="p95z:4F4peXsrXtM" />
+                <ref role="3Tt5mk" to="p95z:4F4peXsrXtM" resolve="text" />
               </node>
             </node>
           </node>
@@ -88,7 +88,7 @@
             <node concept="2OqwBi" id="2YgkUiABxJL" role="lb14g">
               <node concept="2OqwBi" id="2YgkUiABxJM" role="2Oq$k0">
                 <node concept="117lpO" id="2YgkUiABxJN" role="2Oq$k0" />
-                <node concept="3NT_Vc" id="2YgkUiABxJO" role="2OqNvi" />
+                <node concept="2yIwOk" id="1k1VwvtPGIW" role="2OqNvi" />
               </node>
               <node concept="2qgKlT" id="2YgkUiABxJP" role="2OqNvi">
                 <ref role="37wK5l" to="805h:2YgkUiABxIb" resolve="getTagname" />

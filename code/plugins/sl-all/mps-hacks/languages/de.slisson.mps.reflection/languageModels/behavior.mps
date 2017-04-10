@@ -188,8 +188,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -324,10 +324,12 @@
           <node concept="1UdQGJ" id="7moa1g0UFCb" role="3clFbG">
             <node concept="2OqwBi" id="7moa1g0UFCc" role="1Ub_4B">
               <node concept="1PxgMI" id="7moa1g0UFCd" role="2Oq$k0">
-                <ref role="1m5ApE" to="tpee:hqOqwz4" resolve="DotExpression" />
                 <node concept="2OqwBi" id="7moa1g0UFCe" role="1m5AlR">
                   <node concept="13iPFW" id="7moa1g0UFCf" role="2Oq$k0" />
                   <node concept="1mfA1w" id="7moa1g0UFCg" role="2OqNvi" />
+                </node>
+                <node concept="chp4Y" id="1k1VwvtPtzM" role="3oSUPX">
+                  <ref role="cht4Q" to="tpee:hqOqwz4" resolve="DotExpression" />
                 </node>
               </node>
               <node concept="2qgKlT" id="7moa1g0UFCh" role="2OqNvi">
@@ -401,10 +403,12 @@
           <node concept="1UdQGJ" id="7moa1g0UGi$" role="3clFbG">
             <node concept="2OqwBi" id="7moa1g0UGi_" role="1Ub_4B">
               <node concept="1PxgMI" id="7moa1g0UGiA" role="2Oq$k0">
-                <ref role="1m5ApE" to="tpee:hqOqwz4" resolve="DotExpression" />
                 <node concept="2OqwBi" id="7moa1g0UGiB" role="1m5AlR">
                   <node concept="13iPFW" id="7moa1g0UGiC" role="2Oq$k0" />
                   <node concept="1mfA1w" id="7moa1g0UGiD" role="2OqNvi" />
+                </node>
+                <node concept="chp4Y" id="1k1VwvtPtzO" role="3oSUPX">
+                  <ref role="cht4Q" to="tpee:hqOqwz4" resolve="DotExpression" />
                 </node>
               </node>
               <node concept="2qgKlT" id="7moa1g0UGiE" role="2OqNvi">

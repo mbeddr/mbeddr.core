@@ -209,7 +209,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -770,11 +769,8 @@
             </node>
           </node>
           <node concept="2OqwBi" id="3MTLjr1zM5h" role="3clFbw">
-            <node concept="2OqwBi" id="2dgfh8yEVr3" role="2Oq$k0">
-              <node concept="37vLTw" id="2dgfh8yEVr4" role="2Oq$k0">
-                <ref role="3cqZAo" node="3MTLjr1zLfS" resolve="kind" />
-              </node>
-              <node concept="FGMqu" id="2dgfh8yEVr5" role="2OqNvi" />
+            <node concept="37vLTw" id="2dgfh8yEVr4" role="2Oq$k0">
+              <ref role="3cqZAo" node="3MTLjr1zLfS" resolve="kind" />
             </node>
             <node concept="2Zo12i" id="3MTLjr1zM5n" role="2OqNvi">
               <node concept="chp4Y" id="3MTLjr1zM5p" role="2Zo12j">

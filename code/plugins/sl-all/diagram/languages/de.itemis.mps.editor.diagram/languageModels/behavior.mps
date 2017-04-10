@@ -169,8 +169,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -1511,10 +1511,12 @@
             </node>
             <node concept="2OqwBi" id="5S8_I2Fm6q7" role="33vP2m">
               <node concept="1PxgMI" id="5S8_I2Fm6q8" role="2Oq$k0">
-                <ref role="1m5ApE" to="2qld:6Q0ZYbv$DhZ" resolve="Content_GenericElementQuery" />
                 <node concept="2OqwBi" id="5S8_I2Fm6q9" role="1m5AlR">
                   <node concept="13iPFW" id="5S8_I2Fm6qa" role="2Oq$k0" />
                   <node concept="1mfA1w" id="5S8_I2Fm6qb" role="2OqNvi" />
+                </node>
+                <node concept="chp4Y" id="1k1VwvtPrIq" role="3oSUPX">
+                  <ref role="cht4Q" to="2qld:6Q0ZYbv$DhZ" resolve="Content_GenericElementQuery" />
                 </node>
               </node>
               <node concept="3TrEf2" id="5S8_I2Fm6qc" role="2OqNvi">
@@ -1770,9 +1772,11 @@
           <node concept="2OqwBi" id="6PI4N6JviWR" role="3clFbG">
             <node concept="1PxgMI" id="6PI4N6Jvk3g" role="2Oq$k0">
               <property role="1BlNFB" value="true" />
-              <ref role="1m5ApE" to="tp25:gzTqbfa" resolve="SNodeType" />
               <node concept="37vLTw" id="6PI4N6JvjWQ" role="1m5AlR">
                 <ref role="3cqZAo" node="6PI4N6Jvi2p" resolve="portObjectType" />
+              </node>
+              <node concept="chp4Y" id="1k1VwvtPrIr" role="3oSUPX">
+                <ref role="cht4Q" to="tp25:gzTqbfa" resolve="SNodeType" />
               </node>
             </node>
             <node concept="3TrEf2" id="6PI4N6JvjT8" role="2OqNvi">

@@ -85,7 +85,6 @@
         <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -150,7 +149,6 @@
   <node concept="24kQdi" id="7moa1g0TZ3g">
     <ref role="1XX52x" to="oiz3:7moa1g0TXNe" resolve="ReflectionMethodCall" />
     <node concept="3EZMnI" id="hwllSQF" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="PMmxH" id="4k0WLUKaRxg" role="3EZMnx">
         <ref role="PMmxG" to="tpen:4k0WLUKaCd7" resolve="IMethodCall_typeArguments" />
         <node concept="VPM3Z" id="48lPkMUs$aT" role="3F10Kt">
@@ -210,7 +208,6 @@
   <node concept="24kQdi" id="7oXGHkvAxpj">
     <ref role="1XX52x" to="oiz3:7oXGHkvAuQL" resolve="ReflectionStaticMethodCall" />
     <node concept="3EZMnI" id="fITxkhc" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="1iCGBv" id="gDPynXJ" role="3EZMnx">
         <property role="1$x2rV" value="&lt;no class&gt;" />
         <ref role="1ERwB7" to="tpen:h3$l4aj" resolve="StaticMethodCall_Actions" />
@@ -315,7 +312,6 @@
   <node concept="24kQdi" id="7oXGHkvDIXe">
     <ref role="1XX52x" to="oiz3:7oXGHkvDI9E" resolve="ReflectionStaticFieldReference" />
     <node concept="3EZMnI" id="fKolU0o" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="1iCGBv" id="gDPxUfy" role="3EZMnx">
         <property role="1$x2rV" value="&lt;no classifier&gt;" />
         <ref role="1ERwB7" to="tpen:h3xrT3h" resolve="StaticFieldReference_Actions" />

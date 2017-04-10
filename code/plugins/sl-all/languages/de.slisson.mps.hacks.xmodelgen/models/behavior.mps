@@ -222,9 +222,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -369,10 +372,12 @@
           <node concept="2OqwBi" id="6KgrWUnjiO2" role="2GsD0m">
             <node concept="2OqwBi" id="6KgrWUnhZf$" role="2Oq$k0">
               <node concept="1PxgMI" id="6KgrWUnhZf_" role="2Oq$k0">
-                <ref role="1m5ApE" to="gxwz:Pogn2S65r1" resolve="MappingConfigStep" />
                 <node concept="2OqwBi" id="6KgrWUnhZfA" role="1m5AlR">
                   <node concept="13iPFW" id="6KgrWUnhZfB" role="2Oq$k0" />
                   <node concept="1mfA1w" id="6KgrWUnhZfC" role="2OqNvi" />
+                </node>
+                <node concept="chp4Y" id="1k1VwvtPsKu" role="3oSUPX">
+                  <ref role="cht4Q" to="gxwz:Pogn2S65r1" resolve="MappingConfigStep" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="6KgrWUnhZfD" role="2OqNvi">

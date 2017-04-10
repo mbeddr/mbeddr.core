@@ -41,8 +41,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
-        <property id="1073389446426" name="gridLayout" index="3EZMnz" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -61,7 +59,6 @@
   <node concept="24kQdi" id="2af7$rtsksk">
     <ref role="1XX52x" to="5mdd:2af7$rtrDWk" resolve="CellModel_CustomFactory" />
     <node concept="3EZMnI" id="fIxGFmi" role="6VMZX">
-      <property role="3EZMnw" value="true" />
       <node concept="PMmxH" id="hEUjIXL" role="3EZMnx">
         <ref role="PMmxG" to="tpc5:hEUgR_Z" resolve="Style_Component" />
       </node>
@@ -82,8 +79,6 @@
         <property role="3F0ifm" value="Custom cell:" />
       </node>
       <node concept="3EZMnI" id="hF4$qDk" role="3EZMnx">
-        <property role="3EZMnw" value="true" />
-        <property role="3EZMnz" value="true" />
         <node concept="3EZMnI" id="h7YsR5r" role="3EZMnx">
           <node concept="3F0ifn" id="h7YsRhG" role="3EZMnx">
             <property role="3F0ifm" value="factory method" />
@@ -109,7 +104,6 @@
     </node>
     <node concept="3EZMnI" id="2af7$rtteQu" role="2wV5jI">
       <node concept="3EZMnI" id="fIxFcfv" role="3EZMnx">
-        <property role="3EZMnw" value="false" />
         <ref role="1k5W1q" to="tpc5:hX5ZSzR" resolve="borderedCollection" />
         <node concept="PMmxH" id="h7TNyJG" role="3EZMnx">
           <ref role="PMmxG" to="tpc5:h7TMiuR" resolve="_OpenTag" />
