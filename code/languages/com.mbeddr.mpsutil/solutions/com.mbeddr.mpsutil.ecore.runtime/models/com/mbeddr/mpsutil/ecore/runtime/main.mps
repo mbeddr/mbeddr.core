@@ -37,7 +37,6 @@
     <import index="eurq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs.path(MPS.Core/)" />
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
-    <import index="ghn0" ref="r:e825f101-d38e-41ea-a0c1-6650f91e22f7(com.mbeddr.mpsutil.ecore.runtime.main)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -5229,8 +5228,8 @@
           <node concept="1gVbGN" id="60d$i5slAy2" role="8Wnug">
             <node concept="1rXfSq" id="60d$i5sqtd6" role="1gVkn0">
               <ref role="37wK5l" node="60d$i5sqt5v" resolve="isStructureModel" />
-              <node concept="37vLTw" id="60d$i5slB0V" role="37wK5m">
-                <ref role="3cqZAo" to="ghn0:60d$i5slwPl" resolve="structureModel" />
+              <node concept="37vLTw" id="2lop6rSfKPw" role="37wK5m">
+                <ref role="3cqZAo" node="60d$i5slwPl" resolve="structureModel" />
               </node>
             </node>
           </node>

@@ -20,7 +20,6 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
     <import index="hu10" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.common.util(com.mbeddr.mpsutil.ecore.stubs/)" />
-    <import index="ghn0" ref="r:e825f101-d38e-41ea-a0c1-6650f91e22f7(com.mbeddr.mpsutil.ecore.runtime.main)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -913,11 +912,11 @@
           <node concept="3cpWsn" id="6XBHSVMFqyV" role="3cpWs9">
             <property role="TrG5h" value="exporter" />
             <node concept="3uibUv" id="6XBHSVMGgsL" role="1tU5fm">
-              <ref role="3uigEE" to="ghn0:6TiIOkRA6CP" resolve="EcoreModelExporter" />
+              <ref role="3uigEE" to="rpb:6TiIOkRA6CP" resolve="EcoreModelExporter" />
             </node>
             <node concept="2ShNRf" id="6XBHSVMFqzW" role="33vP2m">
               <node concept="1pGfFk" id="6XBHSVMFqLw" role="2ShVmc">
-                <ref role="37wK5l" to="ghn0:6TiIOkRA6D2" resolve="EcoreModelExporter" />
+                <ref role="37wK5l" to="rpb:6TiIOkRA6D2" resolve="EcoreModelExporter" />
                 <node concept="37vLTw" id="4MUcKNHm4VL" role="37wK5m">
                   <ref role="3cqZAo" node="4MUcKNHlRWv" resolve="mpsModelInstance" />
                 </node>
@@ -937,7 +936,7 @@
               <ref role="3cqZAo" node="6XBHSVMFqyV" resolve="exporter" />
             </node>
             <node concept="liA8E" id="6XBHSVMGhVP" role="2OqNvi">
-              <ref role="37wK5l" to="ghn0:6TiIOkRA6CX" resolve="exportEcoreModel" />
+              <ref role="37wK5l" to="rpb:6TiIOkRA6CX" resolve="exportEcoreModel" />
             </node>
           </node>
         </node>
@@ -967,11 +966,11 @@
           <node concept="3cpWsn" id="6XBHSVMGlzE" role="3cpWs9">
             <property role="TrG5h" value="importer" />
             <node concept="3uibUv" id="6XBHSVMGlzF" role="1tU5fm">
-              <ref role="3uigEE" to="ghn0:6TiIOkRA79w" resolve="EcoreModelImporter" />
+              <ref role="3uigEE" to="rpb:6TiIOkRA79w" resolve="EcoreModelImporter" />
             </node>
             <node concept="2ShNRf" id="6XBHSVMGl_y" role="33vP2m">
               <node concept="1pGfFk" id="6XBHSVMGlNo" role="2ShVmc">
-                <ref role="37wK5l" to="ghn0:6TiIOkRA79Q" resolve="EcoreModelImporter" />
+                <ref role="37wK5l" to="rpb:6TiIOkRA79Q" resolve="EcoreModelImporter" />
                 <node concept="37vLTw" id="6XBHSVMGqfG" role="37wK5m">
                   <ref role="3cqZAo" node="4MUcKNHm4$K" resolve="importedModel" />
                 </node>
@@ -994,7 +993,7 @@
               <ref role="3cqZAo" node="6XBHSVMGlzE" resolve="importer" />
             </node>
             <node concept="liA8E" id="6XBHSVMGJnZ" role="2OqNvi">
-              <ref role="37wK5l" to="ghn0:6TiIOkRA79C" resolve="importEcoreModel" />
+              <ref role="37wK5l" to="rpb:6TiIOkRA79C" resolve="importEcoreModel" />
             </node>
           </node>
         </node>
