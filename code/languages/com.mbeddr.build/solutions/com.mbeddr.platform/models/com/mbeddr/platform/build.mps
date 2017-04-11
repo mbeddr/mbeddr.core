@@ -672,9 +672,6 @@
     </node>
     <node concept="m$_wf" id="5fGcQI93Tz0" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil.processwizard" />
-      <node concept="m$f5U" id="5fGcQI942m7" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnGdLo" resolve="group.process" />
-      </node>
       <node concept="3_J27D" id="5fGcQI93Tz1" role="m$_yQ">
         <node concept="3Mxwew" id="5fGcQI93Tz2" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.mpsutil.processwizard" />
@@ -684,6 +681,9 @@
         <node concept="3Mxwey" id="5fGcQI93Tz4" role="3MwsjC">
           <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
+      </node>
+      <node concept="m$f5U" id="5fGcQI942m7" role="m$_yh">
+        <ref role="m$f5T" node="3quoVcnGdLo" resolve="group.process" />
       </node>
       <node concept="m$_yC" id="5fGcQI93Tz6" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
