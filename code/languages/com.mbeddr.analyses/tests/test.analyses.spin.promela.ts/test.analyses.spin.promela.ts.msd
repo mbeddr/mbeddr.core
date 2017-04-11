@@ -9,9 +9,6 @@
   <dependencies>
     <dependency reexport="false">877b0e90-e1a6-4468-970c-dcb3f49f95ed(com.mbeddr.analyses.spin.promela)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>de90e2e8-f051-4d49-9025-394f94f968b8(com.mbeddr.analyses.promela)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:5d09074f-babf-4f2b-b78b-e9929af0f3be:com.mbeddr.analyses.base" version="0" />
     <language slang="l:6ded8a47-f30e-4acf-a5f2-a70ec5472558:com.mbeddr.analyses.base.verification_conditions" version="0" />

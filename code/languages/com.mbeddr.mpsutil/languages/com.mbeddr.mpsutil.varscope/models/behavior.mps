@@ -96,7 +96,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
@@ -520,7 +519,7 @@
         </node>
         <node concept="3clFbH" id="NrU95lL1EO" role="3cqZAp" />
         <node concept="3cpWs6" id="2tBHhziAKZA" role="3cqZAp">
-          <node concept="3cpWsa" id="2tBHhziAKZB" role="3cqZAk">
+          <node concept="37vLTw" id="2tBHhziAKZB" role="3cqZAk">
             <ref role="3cqZAo" node="2tBHhziHGUN" resolve="scope" />
           </node>
         </node>

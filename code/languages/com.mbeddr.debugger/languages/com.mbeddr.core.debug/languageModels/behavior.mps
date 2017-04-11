@@ -83,7 +83,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -705,7 +704,7 @@
       <node concept="3Tm1VV" id="1P7tsoXeWDP" role="1B3o_S" />
       <node concept="3clFbS" id="1P7tsoXeWDR" role="3clF47">
         <node concept="3clFbF" id="1P7tsoXeWDW" role="3cqZAp">
-          <node concept="3cpWs2" id="2RSOuHF2IAa" role="3clFbG">
+          <node concept="37vLTw" id="2RSOuHF2IAa" role="3clFbG">
             <ref role="3cqZAo" node="1P7tsoXeWDT" resolve="steppable" />
           </node>
         </node>
@@ -772,7 +771,7 @@
             </node>
             <node concept="2qgKlT" id="UWuwz3o4t5" role="2OqNvi">
               <ref role="37wK5l" node="4zR7Kknt_Er" resolve="contributeStepOutStrategies" />
-              <node concept="3cpWs2" id="2qtxOph9td2" role="37wK5m">
+              <node concept="37vLTw" id="2qtxOph9td2" role="37wK5m">
                 <ref role="3cqZAo" node="2qtxOph9tcp" resolve="resultStrategies" />
               </node>
             </node>

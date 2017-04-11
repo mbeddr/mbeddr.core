@@ -6,9 +6,6 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <usedDevKits>
-    <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:017fba0e-af15-4a23-b0a8-02b5c1141e75:com.mbeddr.cc.var.annotations" version="0" />
     <language slang="l:21ac77a4-1b66-44c5-aaec-94e43bb86519:com.mbeddr.cc.var.composition" version="0" />

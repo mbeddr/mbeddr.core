@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="main" generatorUID="com.mbeddr.ext.components.statemachine#8663730687027710488" uuid="318e60a1-d099-4839-94ee-2dc303d9c6f0">
+    <generator alias="main" namespace="com.mbeddr.ext.components.statemachine#8663730687027710488" uuid="318e60a1-d099-4839-94ee-2dc303d9c6f0">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -22,9 +22,6 @@
         <dependency reexport="false">97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)</dependency>
         <dependency reexport="false" scope="design">8134fd55-c8e9-405f-a85f-178e22db326b(com.mbeddr.ext.compositecomponents#3716489659188516316)</dependency>
       </dependencies>
-      <usedDevKits>
-        <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-      </usedDevKits>
       <languageVersions>
         <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
         <language slang="l:2d7fadf5-33f6-4e80-a78f-0f739add2bde:com.mbeddr.core.buildconfig" version="4" />
@@ -203,10 +200,6 @@
     <dependency reexport="false">97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)</dependency>
     <dependency reexport="false">cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
-    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:223dd778-c44f-4ef3-9535-7aa7d12244a6:com.mbeddr.core.debug" version="0" />
     <language slang="l:ebb5e132-d298-4649-b320-b3f4d7f3acff:com.mbeddr.core.debug.blext" version="0" />

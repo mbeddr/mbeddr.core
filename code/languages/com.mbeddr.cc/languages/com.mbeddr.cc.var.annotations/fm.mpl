@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="main" generatorUID="com.mbeddr.cc.var.annotations#6514264311693705814" uuid="2a2a2e9e-d6c5-45da-a1d8-743a2d7fdafe">
+    <generator alias="main" namespace="com.mbeddr.cc.var.annotations#6514264311693705814" uuid="2a2a2e9e-d6c5-45da-a1d8-743a2d7fdafe">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
@@ -29,9 +29,6 @@
         <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
         <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</dependency>
       </dependencies>
-      <usedDevKits>
-        <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-      </usedDevKits>
       <languageVersions>
         <language slang="l:017fba0e-af15-4a23-b0a8-02b5c1141e75:com.mbeddr.cc.var.annotations" version="0" />
         <language slang="l:e401b447-8019-4ccd-a72c-bfb0230f5782:com.mbeddr.cc.var.fm" version="1" />
@@ -148,10 +145,6 @@
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-    <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
     <language slang="l:223dd778-c44f-4ef3-9535-7aa7d12244a6:com.mbeddr.core.debug" version="0" />

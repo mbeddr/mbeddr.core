@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="" generatorUID="com.mbeddr.analyses.spin.promela#6932498701172188478" uuid="ed415aa9-0814-4dd1-8a1d-3bdde5fb8159">
+    <generator alias="" namespace="com.mbeddr.analyses.spin.promela#6932498701172188478" uuid="ed415aa9-0814-4dd1-8a1d-3bdde5fb8159">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -17,9 +17,6 @@
       <dependencies>
         <dependency reexport="false" scope="design">2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)</dependency>
       </dependencies>
-      <usedDevKits>
-        <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-      </usedDevKits>
       <languageVersions>
         <language slang="l:6ded8a47-f30e-4acf-a5f2-a70ec5472558:com.mbeddr.analyses.base.verification_conditions" version="0" />
         <language slang="l:877b0e90-e1a6-4468-970c-dcb3f49f95ed:com.mbeddr.analyses.spin.promela" version="0" />
@@ -137,10 +134,6 @@
     <dependency reexport="false">17b818a8-8533-4efe-8f51-f532146ae66b(com.mbeddr.analyses.spin.c)</dependency>
     <dependency reexport="false">e4586d76-86eb-4b19-862c-e5375e853c19(com.mbeddr.analyses.spin.promela.rt)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
-    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="0" />
     <language slang="l:b4f35ed8-45af-4efa-abe4-00ac26956e69:com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />

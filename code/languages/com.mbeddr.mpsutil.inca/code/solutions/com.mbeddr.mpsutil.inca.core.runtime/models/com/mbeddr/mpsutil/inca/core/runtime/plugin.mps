@@ -863,7 +863,7 @@
               <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
             </node>
             <node concept="liA8E" id="619Aec_pdJ1" role="2OqNvi">
-              <ref role="37wK5l" node="4NnxEzfVMtH" resolve="coalesceMessageDelivery" />
+              <ref role="37wK5l" node="4NnxEzfVMtH" resolve="waitWithUpdatePropagation" />
               <node concept="2ShNRf" id="619Aec_pdJ2" role="37wK5m">
                 <node concept="YeOm9" id="619Aec_pdJ3" role="2ShVmc">
                   <node concept="1Y3b0j" id="619Aec_pdJ4" role="YeSDq">
@@ -1115,7 +1115,7 @@
               <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
             </node>
             <node concept="liA8E" id="619Aec_pl53" role="2OqNvi">
-              <ref role="37wK5l" node="4NnxEzfVMtH" resolve="coalesceMessageDelivery" />
+              <ref role="37wK5l" node="4NnxEzfVMtH" resolve="waitWithUpdatePropagation" />
               <node concept="2ShNRf" id="619Aec_pl54" role="37wK5m">
                 <node concept="YeOm9" id="619Aec_pl55" role="2ShVmc">
                   <node concept="1Y3b0j" id="619Aec_pl56" role="YeSDq">
@@ -1396,7 +1396,7 @@
               <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
             </node>
             <node concept="liA8E" id="619Aec_ptSO" role="2OqNvi">
-              <ref role="37wK5l" node="4NnxEzfVMtH" resolve="coalesceMessageDelivery" />
+              <ref role="37wK5l" node="4NnxEzfVMtH" resolve="waitWithUpdatePropagation" />
               <node concept="2ShNRf" id="619Aec_ptSP" role="37wK5m">
                 <node concept="YeOm9" id="619Aec_ptSQ" role="2ShVmc">
                   <node concept="1Y3b0j" id="619Aec_ptSR" role="YeSDq">
@@ -1818,7 +1818,7 @@
               <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
             </node>
             <node concept="liA8E" id="619Aec_pA_5" role="2OqNvi">
-              <ref role="37wK5l" node="4NnxEzfVMtH" resolve="coalesceMessageDelivery" />
+              <ref role="37wK5l" node="4NnxEzfVMtH" resolve="waitWithUpdatePropagation" />
               <node concept="2ShNRf" id="619Aec_pA_6" role="37wK5m">
                 <node concept="YeOm9" id="619Aec_pA_7" role="2ShVmc">
                   <node concept="1Y3b0j" id="619Aec_pA_8" role="YeSDq">
@@ -2158,7 +2158,7 @@
               <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
             </node>
             <node concept="liA8E" id="4NnxEzg1XUn" role="2OqNvi">
-              <ref role="37wK5l" node="4NnxEzfVMtH" resolve="coalesceMessageDelivery" />
+              <ref role="37wK5l" node="4NnxEzfVMtH" resolve="waitWithUpdatePropagation" />
               <node concept="2ShNRf" id="4NnxEzg1Y6Q" role="37wK5m">
                 <node concept="YeOm9" id="4NnxEzg1YRr" role="2ShVmc">
                   <node concept="1Y3b0j" id="4NnxEzg1YRu" role="YeSDq">
@@ -2566,7 +2566,7 @@
               <ref role="3cqZAo" node="7yBuW_G8RoD" resolve="navigationHelper" />
             </node>
             <node concept="liA8E" id="4NnxEzfWNfG" role="2OqNvi">
-              <ref role="37wK5l" node="4NnxEzfVMtH" resolve="coalesceMessageDelivery" />
+              <ref role="37wK5l" node="4NnxEzfVMtH" resolve="waitWithUpdatePropagation" />
               <node concept="2ShNRf" id="4NnxEzfWNrI" role="37wK5m">
                 <node concept="YeOm9" id="4NnxEzfWR89" role="2ShVmc">
                   <node concept="1Y3b0j" id="4NnxEzfWR8c" role="YeSDq">
@@ -3568,8 +3568,13 @@
             <node concept="1pGfFk" id="5D15vEY4d4K" role="2ShVmc">
               <ref role="37wK5l" node="3xwsEjbm9J8" resolve="MPSEngineContext" />
               <node concept="Xjq3P" id="5D15vEY4dvl" role="37wK5m" />
-              <node concept="37vLTw" id="5D15vEY4eSN" role="37wK5m">
-                <ref role="3cqZAo" node="jTPaHfBjZl" resolve="engine" />
+              <node concept="10QFUN" id="6swh_qdm5UW" role="37wK5m">
+                <node concept="3uibUv" id="6swh_qdm5UU" role="10QFUM">
+                  <ref role="3uigEE" to="h57a:~AdvancedViatraQueryEngine" resolve="AdvancedViatraQueryEngine" />
+                </node>
+                <node concept="37vLTw" id="6swh_qdm5UV" role="10QFUP">
+                  <ref role="3cqZAo" node="jTPaHfBjZl" resolve="engine" />
+                </node>
               </node>
               <node concept="37vLTw" id="5D15vEY4fC4" role="37wK5m">
                 <ref role="3cqZAo" node="jTPaHfBjZn" resolve="listener" />
@@ -3603,8 +3608,8 @@
       <property role="TrG5h" value="engine" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="3xwsEjbm8VS" role="1B3o_S" />
-      <node concept="3uibUv" id="2Pc1eSRp$Zq" role="1tU5fm">
-        <ref role="3uigEE" to="h57a:~ViatraQueryEngine" resolve="ViatraQueryEngine" />
+      <node concept="3uibUv" id="6swh_qdm3uO" role="1tU5fm">
+        <ref role="3uigEE" to="h57a:~AdvancedViatraQueryEngine" resolve="AdvancedViatraQueryEngine" />
       </node>
     </node>
     <node concept="312cEg" id="3xwsEjbm8YQ" role="jymVt">
@@ -3713,8 +3718,8 @@
       </node>
       <node concept="37vLTG" id="3xwsEjbm9JV" role="3clF46">
         <property role="TrG5h" value="engine" />
-        <node concept="3uibUv" id="2Pc1eSRpAlh" role="1tU5fm">
-          <ref role="3uigEE" to="h57a:~ViatraQueryEngine" resolve="ViatraQueryEngine" />
+        <node concept="3uibUv" id="6swh_qdm3si" role="1tU5fm">
+          <ref role="3uigEE" to="h57a:~AdvancedViatraQueryEngine" resolve="AdvancedViatraQueryEngine" />
         </node>
       </node>
       <node concept="37vLTG" id="3xwsEjbma5r" role="3clF46">
@@ -16774,7 +16779,7 @@
     </node>
     <node concept="3clFb_" id="4NnxEzfVekh" role="jymVt">
       <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="coalesceMessageDelivery" />
+      <property role="TrG5h" value="waitWithUpdatePropagation" />
       <node concept="16syzq" id="4NnxEzfVeki" role="3clF45">
         <ref role="16sUi3" node="4NnxEzfVeko" resolve="V" />
       </node>
@@ -17302,8 +17307,8 @@
       <property role="TrG5h" value="engine" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tmbuc" id="4NnxEzfUaUE" role="1B3o_S" />
-      <node concept="3uibUv" id="4NnxEzfUn8F" role="1tU5fm">
-        <ref role="3uigEE" to="h57a:~ViatraQueryEngine" resolve="ViatraQueryEngine" />
+      <node concept="3uibUv" id="6swh_qdf$VR" role="1tU5fm">
+        <ref role="3uigEE" to="h57a:~AdvancedViatraQueryEngine" resolve="AdvancedViatraQueryEngine" />
       </node>
     </node>
     <node concept="2tJIrI" id="5VMWdq5xRAm" role="jymVt" />
@@ -17564,8 +17569,8 @@
       <node concept="3Tm1VV" id="5VMWdq5xRBJ" role="1B3o_S" />
       <node concept="37vLTG" id="4NnxEzfUzlG" role="3clF46">
         <property role="TrG5h" value="engine" />
-        <node concept="3uibUv" id="4NnxEzfU_Od" role="1tU5fm">
-          <ref role="3uigEE" to="h57a:~ViatraQueryEngine" resolve="ViatraQueryEngine" />
+        <node concept="3uibUv" id="6swh_qdfJ8g" role="1tU5fm">
+          <ref role="3uigEE" to="h57a:~AdvancedViatraQueryEngine" resolve="AdvancedViatraQueryEngine" />
         </node>
       </node>
       <node concept="37vLTG" id="5VMWdq5xRBK" role="3clF46">
@@ -17609,8 +17614,8 @@
       <node concept="3Tm1VV" id="4erl$guvlFc" role="1B3o_S" />
       <node concept="37vLTG" id="4NnxEzfUEw9" role="3clF46">
         <property role="TrG5h" value="engine" />
-        <node concept="3uibUv" id="4NnxEzfUGwO" role="1tU5fm">
-          <ref role="3uigEE" to="h57a:~ViatraQueryEngine" resolve="ViatraQueryEngine" />
+        <node concept="3uibUv" id="6swh_qdfTzk" role="1tU5fm">
+          <ref role="3uigEE" to="h57a:~AdvancedViatraQueryEngine" resolve="AdvancedViatraQueryEngine" />
         </node>
       </node>
       <node concept="37vLTG" id="4erl$guvlFd" role="3clF46">
@@ -17975,7 +17980,7 @@
     <node concept="2tJIrI" id="4NnxEzfVsPq" role="jymVt" />
     <node concept="3clFb_" id="4NnxEzfVMtH" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="coalesceMessageDelivery" />
+      <property role="TrG5h" value="waitWithUpdatePropagation" />
       <node concept="16syzq" id="4NnxEzfVMtI" role="3clF45">
         <ref role="16sUi3" node="4NnxEzfVMtO" resolve="V" />
       </node>
@@ -18033,7 +18038,7 @@
                   <ref role="3cqZAo" node="4NnxEzfUnYn" resolve="engine" />
                 </node>
                 <node concept="liA8E" id="4NnxEzfXiMK" role="2OqNvi">
-                  <ref role="37wK5l" to="h57a:~ViatraQueryEngine.coalesceMessageDelivery(java.util.concurrent.Callable):java.lang.Object" resolve="coalesceMessageDelivery" />
+                  <ref role="37wK5l" to="h57a:~AdvancedViatraQueryEngine.waitWithUpdatePropagation(java.util.concurrent.Callable):java.lang.Object" resolve="waitWithUpdatePropagation" />
                   <node concept="37vLTw" id="4NnxEzfXiML" role="37wK5m">
                     <ref role="3cqZAo" node="4NnxEzfVMtL" resolve="callable" />
                   </node>

@@ -64,10 +64,10 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -82,7 +82,7 @@
         <node concept="3clFbF" id="447NM5xhAog" role="3cqZAp">
           <node concept="2OqwBi" id="447NM5xhAoh" role="3clFbG">
             <node concept="Q6c8r" id="447NM5xhAoi" role="2Oq$k0" />
-            <node concept="1PgB_6" id="447NM5xhAoj" role="2OqNvi" />
+            <node concept="3YRAZt" id="447NM5xhAoj" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -112,7 +112,7 @@
               <ref role="1YBMHb" node="447NM5xhADo" resolve="im" />
             </node>
             <node concept="3TrEf2" id="447NM5xhAMD" role="2OqNvi">
-              <ref role="3Tt5mk" to="elym:6YgBu0Alhax" />
+              <ref role="3Tt5mk" to="elym:6YgBu0Alhax" resolve="attachedNode" />
             </node>
           </node>
           <node concept="3w_OXm" id="447NM5xhB6S" role="2OqNvi" />

@@ -93,7 +93,7 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -155,7 +155,7 @@
           <node concept="3clFbF" id="7U3Fobb_8Hg" role="3cqZAp">
             <node concept="2OqwBi" id="7U3Fobb_8Hh" role="3clFbG">
               <node concept="0IXxy" id="7U3Fobb_8Hi" role="2Oq$k0" />
-              <node concept="1PgB_6" id="7U3Fobb_8Hj" role="2OqNvi" />
+              <node concept="3YRAZt" id="7U3Fobb_8Hj" role="2OqNvi" />
             </node>
           </node>
         </node>

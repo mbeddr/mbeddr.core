@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="com.mbeddr.analyses.cbmc.verification_case#3092552428056010599" uuid="ad830a0e-6af5-4f6c-824a-39343b8beae6">
+    <generator namespace="com.mbeddr.analyses.cbmc.verification_case#3092552428056010599" uuid="ad830a0e-6af5-4f6c-824a-39343b8beae6">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot path="${module}/generator/template" />
@@ -20,9 +20,6 @@
         <dependency reexport="false">a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</dependency>
         <dependency reexport="false">dce6c938-92a0-4619-a1d8-62fdb4b872e8(com.mbeddr.analyses.cbmc.verification_case)</dependency>
       </dependencies>
-      <usedDevKits>
-        <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-      </usedDevKits>
       <languageVersions>
         <language slang="l:5d09074f-babf-4f2b-b78b-e9929af0f3be:com.mbeddr.analyses.base" version="0" />
         <language slang="l:6ded8a47-f30e-4acf-a5f2-a70ec5472558:com.mbeddr.analyses.base.verification_conditions" version="0" />
@@ -132,10 +129,6 @@
     <dependency reexport="false">dce6c938-92a0-4619-a1d8-62fdb4b872e8(com.mbeddr.analyses.cbmc.verification_case)</dependency>
     <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
-    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />

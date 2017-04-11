@@ -410,8 +410,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -9337,12 +9337,14 @@
                 <node concept="2XshWL" id="5yCuRHct76u" role="2OqNvi">
                   <ref role="2WH_rO" node="5yCuRHcaBDm" resolve="setNewGraph" />
                   <node concept="1PxgMI" id="1FqEKJFj2uK" role="2XxRq1">
-                    <ref role="1m5ApE" to="10jo:5yCuRHcawFz" resolve="IJGraphProvider" />
                     <node concept="2OqwBi" id="3t8MFY9FqB8" role="1m5AlR">
                       <node concept="2WthIp" id="3t8MFY9FqBb" role="2Oq$k0" />
                       <node concept="3gHZIF" id="3t8MFY9FqBd" role="2OqNvi">
                         <ref role="2WH_rO" node="5yCuRHca$Lq" resolve="node" />
                       </node>
+                    </node>
+                    <node concept="chp4Y" id="5RIakkDJMOB" role="3oSUPX">
+                      <ref role="cht4Q" to="10jo:5yCuRHcawFz" resolve="IJGraphProvider" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="1FqEKJFsavn" role="2XxRq1">
@@ -9414,9 +9416,11 @@
                   <node concept="2XshWL" id="1FqEKJFj3j2" role="2OqNvi">
                     <ref role="2WH_rO" node="5yCuRHcaBDm" resolve="setNewGraph" />
                     <node concept="1PxgMI" id="1FqEKJFj3j3" role="2XxRq1">
-                      <ref role="1m5ApE" to="10jo:5yCuRHcawFz" resolve="IJGraphProvider" />
                       <node concept="37vLTw" id="1FqEKJFj3N3" role="1m5AlR">
                         <ref role="3cqZAo" node="1FqEKJFj371" resolve="child" />
+                      </node>
+                      <node concept="chp4Y" id="5RIakkDJMOA" role="3oSUPX">
+                        <ref role="cht4Q" to="10jo:5yCuRHcawFz" resolve="IJGraphProvider" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="1FqEKJFsavo" role="2XxRq1">
@@ -9480,9 +9484,11 @@
                           </node>
                           <node concept="2OqwBi" id="1FqEKJFs4iQ" role="3uHU7B">
                             <node concept="1PxgMI" id="1FqEKJFs3LQ" role="2Oq$k0">
-                              <ref role="1m5ApE" to="10jo:5yCuRHcawFz" resolve="IJGraphProvider" />
                               <node concept="37vLTw" id="1FqEKJFs38F" role="1m5AlR">
                                 <ref role="3cqZAo" node="1FqEKJFiWY0" resolve="it" />
+                              </node>
+                              <node concept="chp4Y" id="5RIakkDJMOC" role="3oSUPX">
+                                <ref role="cht4Q" to="10jo:5yCuRHcawFz" resolve="IJGraphProvider" />
                               </node>
                             </node>
                             <node concept="2qgKlT" id="1FqEKJFs6bV" role="2OqNvi">

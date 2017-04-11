@@ -46,9 +46,12 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -77,27 +80,31 @@
         <node concept="3clFbF" id="6W8yq39oS5v" role="3cqZAp">
           <node concept="2OqwBi" id="6W8yq39oS8e" role="3clFbG">
             <node concept="1PxgMI" id="6W8yq39oS7S" role="2Oq$k0">
-              <ref role="1m5ApE" to="yvrq:7H6_Qip5JI_" resolve="RtFeatureModelType" />
               <node concept="2OqwBi" id="6W8yq39oS7s" role="1m5AlR">
                 <node concept="2OqwBi" id="6W8yq39oS70" role="2Oq$k0">
                   <node concept="1PxgMI" id="6W8yq39oS6E" role="2Oq$k0">
-                    <ref role="1m5ApE" to="v7ag:F_QT7XsuCt" resolve="InitFieldInitializer" />
                     <node concept="2OqwBi" id="6W8yq39oS5P" role="1m5AlR">
                       <node concept="13iPFW" id="6W8yq39oS5w" role="2Oq$k0" />
                       <node concept="1mfA1w" id="6W8yq39oS5V" role="2OqNvi" />
                     </node>
+                    <node concept="chp4Y" id="79i$vAY7j5B" role="3oSUPX">
+                      <ref role="cht4Q" to="v7ag:F_QT7XsuCt" resolve="InitFieldInitializer" />
+                    </node>
                   </node>
                   <node concept="3TrEf2" id="6W8yq39oS76" role="2OqNvi">
-                    <ref role="3Tt5mk" to="v7ag:F_QT7XsuCu" />
+                    <ref role="3Tt5mk" to="v7ag:F_QT7XsuCu" resolve="field" />
                   </node>
                 </node>
                 <node concept="3TrEf2" id="6W8yq39oS7y" role="2OqNvi">
-                  <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+                  <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
                 </node>
+              </node>
+              <node concept="chp4Y" id="79i$vAY7j5$" role="3oSUPX">
+                <ref role="cht4Q" to="yvrq:7H6_Qip5JI_" resolve="RtFeatureModelType" />
               </node>
             </node>
             <node concept="3TrEf2" id="6W8yq39oS8k" role="2OqNvi">
-              <ref role="3Tt5mk" to="yvrq:7H6_Qip5JIA" />
+              <ref role="3Tt5mk" to="yvrq:7H6_Qip5JIA" resolve="featureModel" />
             </node>
           </node>
         </node>

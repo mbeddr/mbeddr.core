@@ -10,7 +10,7 @@
     <model modelUID="r:7f740f35-8f26-41d8-ba3a-416c95e19832(com.mbeddr.ext.serialization.cmp)" />
   </accessoryModels>
   <generators>
-    <generator name="" generatorUID="com.mbeddr.ext.serialization#2122011389042206319" uuid="c77268b2-51cb-4106-b2ae-9e74c287b569">
+    <generator alias="" namespace="com.mbeddr.ext.serialization#2122011389042206319" uuid="c77268b2-51cb-4106-b2ae-9e74c287b569">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -25,10 +25,6 @@
         <dependency reexport="false" scope="design">3201b692-7d0a-49d1-ac65-5d4aaeb141fb(com.mbeddr.core.buildconfig#7717755763392579406)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
       </dependencies>
-      <usedDevKits>
-        <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-        <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
-      </usedDevKits>
       <languageVersions>
         <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
         <language slang="l:2d7fadf5-33f6-4e80-a78f-0f739add2bde:com.mbeddr.core.buildconfig" version="4" />
@@ -177,11 +173,6 @@
     <dependency reexport="false">bb0ad88b-63cd-45fd-ae27-8662d274cf3c(com.mbeddr.ext.serialization)</dependency>
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
-    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-    <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
     <language slang="l:2d7fadf5-33f6-4e80-a78f-0f739add2bde:com.mbeddr.core.buildconfig" version="4" />

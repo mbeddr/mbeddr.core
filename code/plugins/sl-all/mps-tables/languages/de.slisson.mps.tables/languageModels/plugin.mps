@@ -159,7 +159,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
@@ -221,8 +220,8 @@
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -407,7 +406,7 @@
                   <node concept="37vLTw" id="3t1pVywoGkJ" role="2Oq$k0">
                     <ref role="3cqZAo" node="3t1pVywoGkA" resolve="tcellNode" />
                   </node>
-                  <node concept="1PgB_6" id="3t1pVywoGkK" role="2OqNvi" />
+                  <node concept="3YRAZt" id="3t1pVywoGkK" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -501,7 +500,7 @@
                       <node concept="3uibUv" id="7cmJr8AbeIP" role="10QFUM">
                         <ref role="3uigEE" to="b8lf:~EditorCellLabelSelection" resolve="EditorCellLabelSelection" />
                       </node>
-                      <node concept="3cpWsa" id="7cmJr8AbeIQ" role="10QFUP">
+                      <node concept="37vLTw" id="7cmJr8AbeIQ" role="10QFUP">
                         <ref role="3cqZAo" node="635SBilASOk" resolve="selection" />
                       </node>
                     </node>
@@ -788,7 +787,7 @@
             <node concept="3uibUv" id="7cmJr8A9Wtw" role="2ZW6by">
               <ref role="3uigEE" to="b8lf:~EditorCellLabelSelection" resolve="EditorCellLabelSelection" />
             </node>
-            <node concept="3cpWsa" id="635SBilASO$" role="2ZW6bz">
+            <node concept="37vLTw" id="635SBilASO$" role="2ZW6bz">
               <ref role="3cqZAo" node="635SBilASOk" resolve="selection" />
             </node>
           </node>
@@ -978,7 +977,7 @@
                   <node concept="37vLTw" id="3Y7loYI5VXB" role="2Oq$k0">
                     <ref role="3cqZAo" node="3Y7loYI5VXu" resolve="tcellNode" />
                   </node>
-                  <node concept="1PgB_6" id="3Y7loYI5VXC" role="2OqNvi" />
+                  <node concept="3YRAZt" id="3Y7loYI5VXC" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -1072,7 +1071,7 @@
                       <node concept="3uibUv" id="3Y7loYI5VYh" role="10QFUM">
                         <ref role="3uigEE" to="b8lf:~EditorCellLabelSelection" resolve="EditorCellLabelSelection" />
                       </node>
-                      <node concept="3cpWsa" id="3Y7loYI5VYi" role="10QFUP">
+                      <node concept="37vLTw" id="3Y7loYI5VYi" role="10QFUP">
                         <ref role="3cqZAo" node="3Y7loYI5VY0" resolve="selection" />
                       </node>
                     </node>
@@ -1261,7 +1260,7 @@
             <node concept="3uibUv" id="3Y7loYI5VZK" role="2ZW6by">
               <ref role="3uigEE" to="b8lf:~EditorCellLabelSelection" resolve="EditorCellLabelSelection" />
             </node>
-            <node concept="3cpWsa" id="3Y7loYI5VZL" role="2ZW6bz">
+            <node concept="37vLTw" id="3Y7loYI5VZL" role="2ZW6bz">
               <ref role="3cqZAo" node="3Y7loYI5VY0" resolve="selection" />
             </node>
           </node>

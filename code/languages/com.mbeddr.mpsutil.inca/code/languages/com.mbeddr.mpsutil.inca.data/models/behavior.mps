@@ -420,6 +420,21 @@
       </node>
       <node concept="10P_77" id="3ptfW4z_Zy2" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4RsNkoXuKXK" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="isEnumerable" />
+      <ref role="13i0hy" to="gcg1:4RsNkoXu_aa" resolve="isEnumerable" />
+      <node concept="3Tm1VV" id="4RsNkoXuKXL" role="1B3o_S" />
+      <node concept="3clFbS" id="4RsNkoXuKXQ" role="3clF47">
+        <node concept="3cpWs6" id="4RsNkoXuLkX" role="3cqZAp">
+          <node concept="3clFbT" id="4RsNkoXuLl5" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4RsNkoXuKXR" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="7xdfKsWdMS2">
     <property role="3GE5qa" value="pattern" />

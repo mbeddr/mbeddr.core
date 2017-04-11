@@ -57,9 +57,8 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -76,13 +75,10 @@
               <node concept="2pJPED" id="4Wyno57pldn" role="2pJPEn">
                 <ref role="2pJxaS" to="szok:7U3FobbBed$" resolve="KindReference" />
                 <node concept="2pIpSj" id="4Wyno57pleh" role="2pJxcM">
-                  <ref role="2pIpSl" to="szok:7U3FobbBed_" />
+                  <ref role="2pIpSl" to="szok:7U3FobbBed_" resolve="kind" />
                   <node concept="36biLy" id="4Wyno57pleK" role="2pJxcZ">
-                    <node concept="2OqwBi" id="4Wyno57plf4" role="36biLW">
-                      <node concept="35c_gC" id="4Wyno57plf5" role="2Oq$k0">
-                        <ref role="35c_gD" to="bdcd:7U3Fobb_8Ej" resolve="SuppressAllWarnings" />
-                      </node>
-                      <node concept="FGMqu" id="4Wyno57plf6" role="2OqNvi" />
+                    <node concept="3B5_sB" id="4Wyno57plf4" role="36biLW">
+                      <ref role="3B5MYn" to="bdcd:7U3Fobb_8Ej" resolve="SuppressAllWarnings" />
                     </node>
                   </node>
                 </node>
@@ -91,7 +87,7 @@
             <node concept="2OqwBi" id="4Wyno57pkPa" role="37vLTJ">
               <node concept="13iPFW" id="4Wyno57pkN6" role="2Oq$k0" />
               <node concept="3TrEf2" id="4Wyno57pl02" role="2OqNvi">
-                <ref role="3Tt5mk" to="szok:4Wyno57pjqq" />
+                <ref role="3Tt5mk" to="szok:4Wyno57pjqq" resolve="kind" />
               </node>
             </node>
           </node>

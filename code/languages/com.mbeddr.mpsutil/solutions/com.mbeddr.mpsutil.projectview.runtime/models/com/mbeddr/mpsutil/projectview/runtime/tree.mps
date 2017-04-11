@@ -3943,7 +3943,7 @@
           <node concept="2OqwBi" id="7N_XUEP3194" role="3clFbG">
             <node concept="2ShNRf" id="7N_XUEP3195" role="2Oq$k0">
               <node concept="1pGfFk" id="7N_XUEP3196" role="2ShVmc">
-                <ref role="37wK5l" to="w1kc:~RepoListenerRegistrar.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,org.jetbrains.mps.openapi.module.SRepositoryContentAdapter)" resolve="RepoListenerRegistrar" />
+                <ref role="37wK5l" to="w1kc:~RepoListenerRegistrar.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,org.jetbrains.mps.openapi.module.SRepositoryListener)" resolve="RepoListenerRegistrar" />
                 <node concept="2OqwBi" id="7N_XUEP3197" role="37wK5m">
                   <node concept="37vLTw" id="7N_XUEP3198" role="2Oq$k0">
                     <ref role="3cqZAo" node="7N_XUEP3190" resolve="mpsProject" />
@@ -4172,7 +4172,7 @@
           <node concept="2OqwBi" id="7N_XUEP2X9W" role="3clFbG">
             <node concept="2ShNRf" id="7N_XUEP2XV3" role="2Oq$k0">
               <node concept="1pGfFk" id="7N_XUEP2XV4" role="2ShVmc">
-                <ref role="37wK5l" to="w1kc:~RepoListenerRegistrar.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,org.jetbrains.mps.openapi.module.SRepositoryContentAdapter)" resolve="RepoListenerRegistrar" />
+                <ref role="37wK5l" to="w1kc:~RepoListenerRegistrar.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,org.jetbrains.mps.openapi.module.SRepositoryListener)" resolve="RepoListenerRegistrar" />
                 <node concept="2OqwBi" id="7N_XUEP2ZJp" role="37wK5m">
                   <node concept="37vLTw" id="7N_XUEP2ZJo" role="2Oq$k0">
                     <ref role="3cqZAo" node="7N_XUEP2Zq_" resolve="mpsProject" />
@@ -13974,7 +13974,19 @@
           <node concept="2OqwBi" id="3jVbLyZGmML" role="3cqZAk">
             <node concept="2YIFZM" id="3jVbLyZGnpM" role="2Oq$k0">
               <ref role="1Pybhc" to="w1kc:~SModelFileTracker" resolve="SModelFileTracker" />
-              <ref role="37wK5l" to="w1kc:~SModelFileTracker.getInstance():jetbrains.mps.smodel.SModelFileTracker" resolve="getInstance" />
+              <ref role="37wK5l" to="w1kc:~SModelFileTracker.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.SModelFileTracker" resolve="getInstance" />
+              <node concept="2YIFZM" id="6bB1xBdyEbY" role="37wK5m">
+                <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                <ref role="37wK5l" to="alof:~ProjectHelper.getProjectRepository(com.intellij.openapi.project.Project):org.jetbrains.mps.openapi.module.SRepository" resolve="getProjectRepository" />
+                <node concept="2OqwBi" id="6bB1xBdyEbZ" role="37wK5m">
+                  <node concept="37vLTw" id="6bB1xBdyEc0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3jVbLyZGmMp" resolve="context" />
+                  </node>
+                  <node concept="liA8E" id="6bB1xBdyEc1" role="2OqNvi">
+                    <ref role="37wK5l" to="ddhc:~SelectInContext.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="liA8E" id="3jVbLyZGmMN" role="2OqNvi">
               <ref role="37wK5l" to="w1kc:~SModelFileTracker.findModel(jetbrains.mps.vfs.IFile):org.jetbrains.mps.openapi.model.SModel" resolve="findModel" />
@@ -14065,7 +14077,19 @@
           <node concept="2OqwBi" id="3jVbLyZGmNg" role="3cqZAk">
             <node concept="2YIFZM" id="3jVbLyZGnq0" role="2Oq$k0">
               <ref role="1Pybhc" to="w1kc:~ModuleFileTracker" resolve="ModuleFileTracker" />
-              <ref role="37wK5l" to="w1kc:~ModuleFileTracker.getInstance():jetbrains.mps.smodel.ModuleFileTracker" resolve="getInstance" />
+              <ref role="37wK5l" to="w1kc:~ModuleFileTracker.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.ModuleFileTracker" resolve="getInstance" />
+              <node concept="2YIFZM" id="6bB1xBdyCvz" role="37wK5m">
+                <ref role="37wK5l" to="alof:~ProjectHelper.getProjectRepository(com.intellij.openapi.project.Project):org.jetbrains.mps.openapi.module.SRepository" resolve="getProjectRepository" />
+                <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                <node concept="2OqwBi" id="6bB1xBdyDk9" role="37wK5m">
+                  <node concept="37vLTw" id="6bB1xBdyCTS" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3jVbLyZGmMS" resolve="context" />
+                  </node>
+                  <node concept="liA8E" id="6bB1xBdyDP8" role="2OqNvi">
+                    <ref role="37wK5l" to="ddhc:~SelectInContext.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="liA8E" id="3jVbLyZGmNi" role="2OqNvi">
               <ref role="37wK5l" to="w1kc:~ModuleFileTracker.getModuleByFile(jetbrains.mps.vfs.IFile):org.jetbrains.mps.openapi.module.SModule" resolve="getModuleByFile" />

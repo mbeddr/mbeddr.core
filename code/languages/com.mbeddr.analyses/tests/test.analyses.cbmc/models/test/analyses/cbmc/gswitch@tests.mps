@@ -71,7 +71,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -186,7 +185,7 @@
         </node>
         <node concept="3vwNmj" id="7yN$Xh8olEb" role="3cqZAp">
           <node concept="2OqwBi" id="7yN$Xh8olEc" role="3vwVQn">
-            <node concept="3cpWsa" id="7yN$Xh8olEd" role="2Oq$k0">
+            <node concept="37vLTw" id="7yN$Xh8olEd" role="2Oq$k0">
               <ref role="3cqZAo" node="7yN$Xh8olE0" resolve="res0" />
             </node>
             <node concept="liA8E" id="7yN$Xh8olEe" role="2OqNvi">
@@ -429,7 +428,7 @@
         </node>
         <node concept="3vwNmj" id="7SLmAEO8mtN" role="3cqZAp">
           <node concept="2OqwBi" id="7SLmAEO8mtO" role="3vwVQn">
-            <node concept="3cpWsa" id="7SLmAEO8mtP" role="2Oq$k0">
+            <node concept="37vLTw" id="7SLmAEO8mtP" role="2Oq$k0">
               <ref role="3cqZAo" node="7SLmAEO8mtI" resolve="res0" />
             </node>
             <node concept="liA8E" id="7SLmAEO8mtQ" role="2OqNvi">
@@ -505,7 +504,7 @@
         </node>
         <node concept="3vwNmj" id="7SLmAEO8snc" role="3cqZAp">
           <node concept="2OqwBi" id="7SLmAEO8snd" role="3vwVQn">
-            <node concept="3cpWsa" id="7SLmAEO8sne" role="2Oq$k0">
+            <node concept="37vLTw" id="7SLmAEO8sne" role="2Oq$k0">
               <ref role="3cqZAo" node="7SLmAEO8sn7" resolve="res0" />
             </node>
             <node concept="liA8E" id="7SLmAEO8snf" role="2OqNvi">

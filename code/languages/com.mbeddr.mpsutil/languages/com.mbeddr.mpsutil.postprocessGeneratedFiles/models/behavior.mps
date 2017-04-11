@@ -71,14 +71,17 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
+        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
       <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
         <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -121,33 +124,33 @@
       <node concept="3Tqbb2" id="5pm8$ZevucT" role="3clF45" />
     </node>
     <node concept="13i0hz" id="5pm8$Zevu_O" role="13h7CS">
-      <property role="2Ki8OM" value="true" />
+      <property role="2Ki8OM" value="false" />
       <property role="13i0is" value="false" />
-      <property role="TrG5h" value="getApplicableConceptFunctionParameter" />
+      <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="tpek:2D1PBM_bxJg" resolve="getApplicableConceptFunctionParameter" />
+      <ref role="13i0hy" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
       <node concept="3Tm1VV" id="5pm8$Zevu_P" role="1B3o_S" />
       <node concept="3clFbS" id="5pm8$Zevu_X" role="3clF47">
         <node concept="3clFbF" id="5pm8$ZevuGg" role="3cqZAp">
           <node concept="2ShNRf" id="5pm8$ZevCxP" role="3clFbG">
             <node concept="Tc6Ow" id="5pm8$ZevCGd" role="2ShVmc">
-              <node concept="3Tqbb2" id="5pm8$ZevD6d" role="HW$YZ">
-                <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+              <node concept="3bZ5Sz" id="1zqEQG3WoGl" role="HW$YZ">
+                <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
               </node>
-              <node concept="3TUQnm" id="5pm8$ZevC8I" role="HW$Y0">
-                <ref role="3TV0OU" to="veld:5pm8$ZevwY2" resolve="FilePostprocessorParameter_node" />
+              <node concept="35c_gC" id="1zqEQG3WoGj" role="HW$Y0">
+                <ref role="35c_gD" to="veld:5pm8$ZevwY2" resolve="FilePostprocessorParameter_node" />
               </node>
-              <node concept="3TUQnm" id="5pm8$ZevDh_" role="HW$Y0">
-                <ref role="3TV0OU" to="veld:5pm8$Zevx5L" resolve="FilePostprocessorParameter_path" />
+              <node concept="35c_gC" id="1zqEQG3WoGk" role="HW$Y0">
+                <ref role="35c_gD" to="veld:5pm8$Zevx5L" resolve="FilePostprocessorParameter_path" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="_YKpA" id="5pm8$Zevu_Y" role="3clF45">
-        <node concept="3Tqbb2" id="5pm8$Zevu_Z" role="_ZDj9">
-          <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+      <node concept="_YKpA" id="1zqEQG3WoGh" role="3clF45">
+        <node concept="3bZ5Sz" id="1zqEQG3WoGi" role="_ZDj9">
+          <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
         </node>
       </node>
     </node>
@@ -169,7 +172,7 @@
             <node concept="2pJPED" id="5pm8$Zevx2_" role="2pJPEn">
               <ref role="2pJxaS" to="tp25:gzTqbfa" resolve="SNodeType" />
               <node concept="2pIpSj" id="5pm8$Zevx46" role="2pJxcM">
-                <ref role="2pIpSl" to="tp25:g$ehGDh" />
+                <ref role="2pIpSl" to="tp25:g$ehGDh" resolve="concept" />
                 <node concept="10Nm6u" id="5pm8$Zevx4Y" role="2pJxcZ" />
               </node>
             </node>
@@ -198,7 +201,7 @@
             <node concept="2pJPED" id="5pm8$Zevx9r" role="2pJPEn">
               <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
               <node concept="2pIpSj" id="5pm8$ZevxdV" role="2pJxcM">
-                <ref role="2pIpSl" to="tpee:g7uigIF" />
+                <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
                 <node concept="36biLy" id="5pm8$ZevxeV" role="2pJxcZ">
                   <node concept="3B5_sB" id="5pm8$ZevxfW" role="36biLW">
                     <ref role="3B5MYn" to="eoo2:~Path" resolve="Path" />

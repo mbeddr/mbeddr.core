@@ -75,7 +75,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -155,7 +154,7 @@
               <node concept="2OqwBi" id="5aNdPeN2LVr" role="2Oq$k0">
                 <node concept="13iPFW" id="5aNdPeN2LVs" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="5aNdPeN2LVt" role="2OqNvi">
-                  <ref role="3TtcxE" to="vxuc:5aNdPeN1Y5K" />
+                  <ref role="3TtcxE" to="vxuc:5aNdPeN1Y5K" resolve="conditions" />
                 </node>
               </node>
               <node concept="1z4cxt" id="5aNdPeN2LVu" role="2OqNvi">
@@ -163,7 +162,7 @@
                   <node concept="3clFbS" id="5aNdPeN2LVw" role="1bW5cS">
                     <node concept="3clFbF" id="5aNdPeN2LVx" role="3cqZAp">
                       <node concept="2OqwBi" id="5aNdPeN2LVy" role="3clFbG">
-                        <node concept="3cpWs2" id="5aNdPeN2LVz" role="2Oq$k0">
+                        <node concept="37vLTw" id="5aNdPeN2LVz" role="2Oq$k0">
                           <ref role="3cqZAo" node="5aNdPeN2LV_" resolve="it" />
                         </node>
                         <node concept="2qgKlT" id="5aNdPeN2LV$" role="2OqNvi">
@@ -215,7 +214,7 @@
       <node concept="3clFbS" id="5aNdPeN2db0" role="3clF47">
         <node concept="3clFbF" id="5aNdPeN2EPm" role="3cqZAp">
           <node concept="3clFbC" id="5aNdPeN2EPG" role="3clFbG">
-            <node concept="3cpWs2" id="5aNdPeN2EPJ" role="3uHU7w">
+            <node concept="37vLTw" id="5aNdPeN2EPJ" role="3uHU7w">
               <ref role="3cqZAo" node="5aNdPeN2db5" resolve="index" />
             </node>
             <node concept="BsUDl" id="5aNdPeN2EPn" role="3uHU7B">
@@ -318,7 +317,7 @@
           <node concept="2OqwBi" id="5aNdPeN2ckS" role="3clFbG">
             <node concept="13iPFW" id="5aNdPeN2ckz" role="2Oq$k0" />
             <node concept="3TrEf2" id="5aNdPeN2ckY" role="2OqNvi">
-              <ref role="3Tt5mk" to="vxuc:5aNdPeN2by6" />
+              <ref role="3Tt5mk" to="vxuc:5aNdPeN2by6" resolve="baseCase" />
             </node>
           </node>
         </node>
@@ -336,7 +335,7 @@
           <node concept="2OqwBi" id="5aNdPeN2IZi" role="3clFbG">
             <node concept="13iPFW" id="5aNdPeN2IYX" role="2Oq$k0" />
             <node concept="3Tsc0h" id="5aNdPeN2IZo" role="2OqNvi">
-              <ref role="3TtcxE" to="vxuc:5aNdPeN2$UH" />
+              <ref role="3TtcxE" to="vxuc:5aNdPeN2$UH" resolve="caseTypes" />
             </node>
           </node>
         </node>
@@ -355,7 +354,7 @@
             <node concept="2OqwBi" id="7DKnW4BPooP" role="2Oq$k0">
               <node concept="13iPFW" id="7DKnW4BPogF" role="2Oq$k0" />
               <node concept="3TrEf2" id="7DKnW4BPpjk" role="2OqNvi">
-                <ref role="3Tt5mk" to="vxuc:5aNdPeN2by6" />
+                <ref role="3Tt5mk" to="vxuc:5aNdPeN2by6" resolve="baseCase" />
               </node>
             </node>
             <node concept="2qgKlT" id="7DKnW4BPrLG" role="2OqNvi">
@@ -383,7 +382,7 @@
           <node concept="2OqwBi" id="5aNdPeN2JPY" role="3clFbG">
             <node concept="13iPFW" id="5aNdPeN2JPD" role="2Oq$k0" />
             <node concept="3TrEf2" id="5aNdPeN2JQ4" role="2OqNvi">
-              <ref role="3Tt5mk" to="vxuc:5aNdPeN2JOy" />
+              <ref role="3Tt5mk" to="vxuc:5aNdPeN2JOy" resolve="baseCase" />
             </node>
           </node>
         </node>
@@ -401,7 +400,7 @@
           <node concept="2OqwBi" id="5aNdPeN2JQr" role="3clFbG">
             <node concept="13iPFW" id="5aNdPeN2JQ6" role="2Oq$k0" />
             <node concept="3Tsc0h" id="5aNdPeN2JQx" role="2OqNvi">
-              <ref role="3TtcxE" to="vxuc:5aNdPeN2JOz" />
+              <ref role="3TtcxE" to="vxuc:5aNdPeN2JOz" resolve="caseExpressions" />
             </node>
           </node>
         </node>

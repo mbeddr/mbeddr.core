@@ -65,6 +65,15 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+        <reference id="6657644269295214800" name="config" index="G9hjw" />
+      </concept>
+      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
+        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
+      </concept>
+      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
+      </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
@@ -121,6 +130,9 @@
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
     </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+    </language>
     <language id="e865cad2-7cc8-437a-951a-665bcbcb8b1a" name="com.mbeddr.cc.requirements">
       <concept id="8921256082857728250" name="com.mbeddr.cc.requirements.structure.FunctionalRequirementKind" flags="ng" index="22Mrfp" />
       <concept id="6657644269295006436" name="com.mbeddr.cc.requirements.structure.ReqDocParagraph" flags="ng" index="GmGrk" />
@@ -162,6 +174,7 @@
   </registry>
   <node concept="3fbPIq" id="3AFGfkfopOV">
     <property role="TrG5h" value="ReqsModule" />
+    <ref role="G9hjw" node="7AZhlVTpCUj" resolve="DefaultDocConfig" />
     <node concept="3fbQ3u" id="3AFGfkfopOW" role="3fbPIo">
       <property role="TrG5h" value="simple_req" />
       <property role="1ylvJX" value="a simple requirement" />
@@ -263,6 +276,13 @@
       <node concept="2v9HqM" id="3AFGfkfopPY" role="2eOfOg">
         <ref role="2v9HqP" node="3AFGfkfopOZ" resolve="HelloWorld" />
       </node>
+    </node>
+  </node>
+  <node concept="2SbYGP" id="7AZhlVTpCUj">
+    <property role="TrG5h" value="DefaultDocConfig" />
+    <node concept="2SbYGw" id="7AZhlVTpCUk" role="Cbewh">
+      <property role="TrG5h" value="temp" />
+      <node concept="9PVaO" id="7AZhlVTpCUl" role="9PVG_" />
     </node>
   </node>
 </model>

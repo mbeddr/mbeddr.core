@@ -31,11 +31,11 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
-        <child id="1213106463729" name="canBeChild" index="1MLUbF" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -71,41 +71,41 @@
   </node>
   <node concept="1M2fIO" id="77A3HzrJvcz">
     <ref role="1M2myG" to="teg0:77A3HzrJvbw" resolve="SubconceptExpression" />
-    <node concept="nKS2y" id="77A3HzrJvcE" role="1MLUbF">
-      <node concept="3clFbS" id="77A3HzrJvcF" role="2VODD2">
-        <node concept="3clFbF" id="77A3HzrJvdO" role="3cqZAp">
-          <node concept="1Wc70l" id="77A3HzrJvHF" role="3clFbG">
-            <node concept="2OqwBi" id="77A3HzrJw62" role="3uHU7w">
-              <node concept="2OqwBi" id="77A3HzrJvO4" role="2Oq$k0">
-                <node concept="nLn13" id="77A3HzrJvKX" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="77A3HzrJvTn" role="2OqNvi">
-                  <node concept="1xMEDy" id="77A3HzrJvTp" role="1xVPHs">
-                    <node concept="chp4Y" id="77A3HzrJvWt" role="ri$Ld">
+    <node concept="9S07l" id="5RIakkDIV$a" role="9Vyp8">
+      <node concept="3clFbS" id="5RIakkDIV$b" role="2VODD2">
+        <node concept="3clFbF" id="5RIakkDIV$c" role="3cqZAp">
+          <node concept="1Wc70l" id="5RIakkDIV$d" role="3clFbG">
+            <node concept="2OqwBi" id="5RIakkDIV$e" role="3uHU7w">
+              <node concept="2OqwBi" id="5RIakkDIV$f" role="2Oq$k0">
+                <node concept="nLn13" id="5RIakkDIV$g" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="5RIakkDIV$h" role="2OqNvi">
+                  <node concept="1xMEDy" id="5RIakkDIV$i" role="1xVPHs">
+                    <node concept="chp4Y" id="5RIakkDIV$j" role="ri$Ld">
                       <ref role="cht4Q" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
                     </node>
                   </node>
-                  <node concept="1xIGOp" id="77A3HzrJw1q" role="1xVPHs" />
+                  <node concept="1xIGOp" id="5RIakkDIV$k" role="1xVPHs" />
                 </node>
               </node>
-              <node concept="1mIQ4w" id="77A3HzrJwi9" role="2OqNvi">
-                <node concept="chp4Y" id="77A3HzrJwlA" role="cj9EA">
+              <node concept="1mIQ4w" id="5RIakkDIV$l" role="2OqNvi">
+                <node concept="chp4Y" id="5RIakkDIV$m" role="cj9EA">
                   <ref role="cht4Q" to="teg0:2BcfhHlZPa5" resolve="GrammarInfoCell" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="77A3HzrJvtt" role="3uHU7B">
-              <node concept="2OqwBi" id="77A3HzrJvgn" role="2Oq$k0">
-                <node concept="nLn13" id="77A3HzrJvdN" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="77A3HzrJvkH" role="2OqNvi">
-                  <node concept="1xMEDy" id="77A3HzrJvkJ" role="1xVPHs">
-                    <node concept="chp4Y" id="77A3HzrJvmt" role="ri$Ld">
+            <node concept="2OqwBi" id="5RIakkDIV$n" role="3uHU7B">
+              <node concept="2OqwBi" id="5RIakkDIV$o" role="2Oq$k0">
+                <node concept="nLn13" id="5RIakkDIV$p" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="5RIakkDIV$q" role="2OqNvi">
+                  <node concept="1xMEDy" id="5RIakkDIV$r" role="1xVPHs">
+                    <node concept="chp4Y" id="5RIakkDIV$s" role="ri$Ld">
                       <ref role="cht4Q" to="teg0:77A3HzrGsvf" resolve="CellBasedRule" />
                     </node>
                   </node>
-                  <node concept="1xIGOp" id="77A3HzrJvq6" role="1xVPHs" />
+                  <node concept="1xIGOp" id="5RIakkDIV$t" role="1xVPHs" />
                 </node>
               </node>
-              <node concept="3x8VRR" id="77A3HzrJvA9" role="2OqNvi" />
+              <node concept="3x8VRR" id="5RIakkDIV$u" role="2OqNvi" />
             </node>
           </node>
         </node>

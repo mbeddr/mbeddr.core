@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -36,7 +36,7 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
-      <concept id="5676632058862809931" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="in" index="13QW63" />
+      <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213100494875" name="referent" index="1Mr941" />
@@ -63,22 +63,22 @@
   <node concept="1M2fIO" id="7OTEScIojdv">
     <ref role="1M2myG" to="rcub:7OTEScIojck" resolve="MathLoopVarRef" />
     <node concept="1N5Pfh" id="7OTEScIojej" role="1Mr941">
-      <ref role="1N5Vy1" to="rcub:7OTEScIojel" />
-      <node concept="13QW63" id="7OTEScIojen" role="1N6uqs">
-        <node concept="3clFbS" id="7OTEScIojeo" role="2VODD2">
-          <node concept="3clFbF" id="7OTEScIokfx" role="3cqZAp">
-            <node concept="2ShNRf" id="7OTEScIokfv" role="3clFbG">
-              <node concept="1pGfFk" id="7OTEScIonsl" role="2ShVmc">
+      <ref role="1N5Vy1" to="rcub:7OTEScIojel" resolve="loop" />
+      <node concept="3dgokm" id="7OTEScIojen" role="1N6uqs">
+        <node concept="3clFbS" id="5KX1OsDSYpO" role="2VODD2">
+          <node concept="3clFbF" id="5KX1OsDSYpP" role="3cqZAp">
+            <node concept="2ShNRf" id="5KX1OsDSYpQ" role="3clFbG">
+              <node concept="1pGfFk" id="5KX1OsDSYpR" role="2ShVmc">
                 <ref role="37wK5l" to="6xgk:7lHSllLpTWM" resolve="NamedElementsScope" />
-                <node concept="2OqwBi" id="7OTEScIonzu" role="37wK5m">
-                  <node concept="2rP1CM" id="7OTEScIonuI" role="2Oq$k0" />
-                  <node concept="z$bX8" id="7OTEScIoyZH" role="2OqNvi">
-                    <node concept="1xMEDy" id="7OTEScIo_rh" role="1xVPHs">
-                      <node concept="chp4Y" id="4CDVPmpGiqz" role="ri$Ld">
+                <node concept="2OqwBi" id="5KX1OsDSYpS" role="37wK5m">
+                  <node concept="2rP1CM" id="5KX1OsDSYpT" role="2Oq$k0" />
+                  <node concept="z$bX8" id="5KX1OsDSYpU" role="2OqNvi">
+                    <node concept="1xMEDy" id="5KX1OsDSYpV" role="1xVPHs">
+                      <node concept="chp4Y" id="5KX1OsDSYpW" role="ri$Ld">
                         <ref role="cht4Q" to="rcub:4CDVPmpGfJC" resolve="MathLoop" />
                       </node>
                     </node>
-                    <node concept="1xIGOp" id="7OTEScIoA23" role="1xVPHs" />
+                    <node concept="1xIGOp" id="5KX1OsDSYpX" role="1xVPHs" />
                   </node>
                 </node>
               </node>

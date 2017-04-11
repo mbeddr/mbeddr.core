@@ -39,8 +39,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
-        <property id="1073389446426" name="gridLayout" index="3EZMnz" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -71,7 +69,6 @@
       <property role="1ubRXE" value="${module}/icons/picker-16.png" />
     </node>
     <node concept="3EZMnI" id="2nIaZ7iwIan" role="6VMZX">
-      <property role="3EZMnw" value="true" />
       <node concept="PMmxH" id="2nIaZ7iwIao" role="3EZMnx">
         <ref role="PMmxG" to="tpc5:hF4ssnw" resolve="_CellModel_Common" />
       </node>
@@ -83,8 +80,6 @@
         <ref role="1k5W1q" to="tpc5:hF4yUZ8" resolve="header" />
       </node>
       <node concept="3EZMnI" id="2nIaZ7iwIas" role="3EZMnx">
-        <property role="3EZMnw" value="true" />
-        <property role="3EZMnz" value="true" />
         <node concept="3EZMnI" id="2nIaZ7iwIat" role="3EZMnx">
           <node concept="VPM3Z" id="2nIaZ7iwIau" role="3F10Kt">
             <property role="VOm3f" value="false" />

@@ -69,13 +69,13 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -123,7 +123,7 @@
                     <node concept="2GrUjf" id="5ReuVUpcuFI" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="5ReuVUpcqS3" resolve="a" />
                     </node>
-                    <node concept="1PgB_6" id="5ReuVUpcyEB" role="2OqNvi" />
+                    <node concept="3YRAZt" id="5ReuVUpcyEB" role="2OqNvi" />
                   </node>
                 </node>
               </node>
@@ -131,7 +131,7 @@
                 <node concept="2OqwBi" id="5ReuVUpcqWe" role="2Oq$k0">
                   <node concept="2Sf5sV" id="5ReuVUpcqTZ" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="5ReuVUpcr6V" role="2OqNvi">
-                    <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" />
+                    <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" resolve="actions" />
                   </node>
                 </node>
                 <node concept="v3k3i" id="5ReuVUpcu_e" role="2OqNvi">
@@ -173,7 +173,7 @@
                       <node concept="2GrUjf" id="5ReuVUpcA_L" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="5ReuVUpcA_H" resolve="a" />
                       </node>
-                      <node concept="1PgB_6" id="5ReuVUpcA_M" role="2OqNvi" />
+                      <node concept="3YRAZt" id="5ReuVUpcA_M" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
@@ -181,7 +181,7 @@
                   <node concept="2OqwBi" id="5ReuVUpcA_O" role="2Oq$k0">
                     <node concept="2Sf5sV" id="5ReuVUpcA_P" role="2Oq$k0" />
                     <node concept="3Tsc0h" id="5ReuVUpcA_Q" role="2OqNvi">
-                      <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" />
+                      <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" resolve="actions" />
                     </node>
                   </node>
                   <node concept="v3k3i" id="5ReuVUpcA_R" role="2OqNvi">

@@ -10,10 +10,6 @@
     <dependency reexport="false">223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)</dependency>
     <dependency reexport="false">~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)</usedDevKit>
-    <usedDevKit>87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:e401b447-8019-4ccd-a72c-bfb0230f5782:com.mbeddr.cc.var.fm" version="1" />
     <language slang="l:b8eeb935-038d-48d8-ae7f-0c6768b8d4fc:com.mbeddr.cc.var.rt" version="0" />

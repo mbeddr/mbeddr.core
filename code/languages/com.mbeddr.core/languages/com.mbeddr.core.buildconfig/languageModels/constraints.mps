@@ -109,8 +109,8 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -371,8 +371,10 @@
               <node concept="2OqwBi" id="3WDf4KPlhgB" role="2Oq$k0">
                 <node concept="2OqwBi" id="3WDf4KPlg$l" role="2Oq$k0">
                   <node concept="1PxgMI" id="3WDf4KPlgh_" role="2Oq$k0">
-                    <ref role="1m5ApE" to="51wr:4o9sgv8QoKk" resolve="Binary" />
                     <node concept="3kakTB" id="3WDf4KPlg4b" role="1m5AlR" />
+                    <node concept="chp4Y" id="1SbcsM$Fk8K" role="3oSUPX">
+                      <ref role="cht4Q" to="51wr:4o9sgv8QoKk" resolve="Binary" />
+                    </node>
                   </node>
                   <node concept="2Xjw5R" id="3WDf4KPlgYg" role="2OqNvi">
                     <node concept="1xMEDy" id="3WDf4KPlgYi" role="1xVPHs">
@@ -398,12 +400,13 @@
                   <node concept="2OqwBi" id="3WDf4KPlw17" role="2Oq$k0">
                     <node concept="2OqwBi" id="3WDf4KPlw18" role="2Oq$k0">
                       <node concept="1PxgMI" id="3WDf4KPlw19" role="2Oq$k0">
-                        <ref role="1m5ApE" to="51wr:7$0wAVofq4u" resolve="PlatformReference" />
                         <node concept="2OqwBi" id="3WDf4KPlw1a" role="1m5AlR">
                           <node concept="2OqwBi" id="3WDf4KPlw1b" role="2Oq$k0">
                             <node concept="1PxgMI" id="3WDf4KPlw1c" role="2Oq$k0">
-                              <ref role="1m5ApE" to="51wr:4o9sgv8QoKk" resolve="Binary" />
                               <node concept="3kakTB" id="3WDf4KPlw1d" role="1m5AlR" />
+                              <node concept="chp4Y" id="1SbcsM$Fk8H" role="3oSUPX">
+                                <ref role="cht4Q" to="51wr:4o9sgv8QoKk" resolve="Binary" />
+                              </node>
                             </node>
                             <node concept="2Xjw5R" id="3WDf4KPlw1e" role="2OqNvi">
                               <node concept="1xMEDy" id="3WDf4KPlw1f" role="1xVPHs">
@@ -416,6 +419,9 @@
                           <node concept="3TrEf2" id="3WDf4KPlw1h" role="2OqNvi">
                             <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
                           </node>
+                        </node>
+                        <node concept="chp4Y" id="1SbcsM$Fk8M" role="3oSUPX">
+                          <ref role="cht4Q" to="51wr:7$0wAVofq4u" resolve="PlatformReference" />
                         </node>
                       </node>
                       <node concept="3TrEf2" id="3WDf4KPlw1i" role="2OqNvi">
@@ -436,12 +442,13 @@
           <node concept="3cpWs6" id="3WDf4KPljPD" role="3cqZAp">
             <node concept="2OqwBi" id="3WDf4KPlq6u" role="3cqZAk">
               <node concept="1PxgMI" id="3WDf4KPlpou" role="2Oq$k0">
-                <ref role="1m5ApE" to="51wr:4BxItZJ4BoF" resolve="Platform" />
                 <node concept="2OqwBi" id="3WDf4KPlokp" role="1m5AlR">
                   <node concept="2OqwBi" id="3WDf4KPlokq" role="2Oq$k0">
                     <node concept="1PxgMI" id="3WDf4KPlokr" role="2Oq$k0">
-                      <ref role="1m5ApE" to="51wr:4o9sgv8QoKk" resolve="Binary" />
                       <node concept="3kakTB" id="3WDf4KPloks" role="1m5AlR" />
+                      <node concept="chp4Y" id="1SbcsM$Fk8L" role="3oSUPX">
+                        <ref role="cht4Q" to="51wr:4o9sgv8QoKk" resolve="Binary" />
+                      </node>
                     </node>
                     <node concept="2Xjw5R" id="3WDf4KPlokt" role="2OqNvi">
                       <node concept="1xMEDy" id="3WDf4KPloku" role="1xVPHs">
@@ -454,6 +461,9 @@
                   <node concept="3TrEf2" id="3WDf4KPlokw" role="2OqNvi">
                     <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
                   </node>
+                </node>
+                <node concept="chp4Y" id="1SbcsM$Fk8N" role="3oSUPX">
+                  <ref role="cht4Q" to="51wr:4BxItZJ4BoF" resolve="Platform" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="3WDf4KPlqA2" role="2OqNvi">

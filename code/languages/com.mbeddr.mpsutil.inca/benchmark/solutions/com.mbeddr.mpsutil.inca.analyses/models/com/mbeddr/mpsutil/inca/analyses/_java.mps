@@ -90,11 +90,11 @@
         <property id="266511528377428276" name="text" index="2MMnZA" />
         <reference id="266511528377428278" name="parameter" index="2MMnZ$" />
       </concept>
-      <concept id="8251544086377355824" name="com.mbeddr.mpsutil.inca.core.structure.MeetType" flags="ng" index="2Qv0mg">
-        <reference id="8251544086377355828" name="meetTypeDef" index="2Qv0mk" />
+      <concept id="8251544086377355824" name="com.mbeddr.mpsutil.inca.core.structure.JoinType" flags="ng" index="2Qv0mg">
+        <reference id="8251544086377355828" name="joinTypeDef" index="2Qv0mk" />
       </concept>
-      <concept id="8251544086377351967" name="com.mbeddr.mpsutil.inca.core.structure.MeetTypeDef" flags="ng" index="2Qv1iZ" />
-      <concept id="8251544086378643159" name="com.mbeddr.mpsutil.inca.core.structure.IMeetTypeDef" flags="ng" index="2R$q5R">
+      <concept id="8251544086377351967" name="com.mbeddr.mpsutil.inca.core.structure.JoinTypeDef" flags="ig" index="2Qv1iZ" />
+      <concept id="8251544086378643159" name="com.mbeddr.mpsutil.inca.core.structure.IJoinTypeDef" flags="ng" index="2R$q5R">
         <child id="8251544086377355719" name="types" index="2Qv0pB" />
       </concept>
       <concept id="4074503452633891989" name="com.mbeddr.mpsutil.inca.core.structure.IPatternCall" flags="ng" index="1aOKZo">
@@ -131,6 +131,11 @@
       <concept id="3909214783366769316" name="com.mbeddr.mpsutil.inca.gp.structure.PathElement" flags="ng" index="727y6" />
       <concept id="8755198369437852333" name="com.mbeddr.mpsutil.inca.gp.structure.ParentPathElement" flags="ng" index="3lV9gE" />
       <concept id="8755198369437852631" name="com.mbeddr.mpsutil.inca.gp.structure.NextPathElement" flags="ng" index="3lV9lg" />
+    </language>
+    <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -2837,6 +2842,7 @@
     <property role="3GE5qa" value="analyses" />
     <node concept="2Qv1iZ" id="7a3nU35abaF" role="1dubk0">
       <property role="TrG5h" value="ICFGNode" />
+      <property role="EcuMT" value="8251544086380065451" />
       <node concept="2kdjtB" id="7a3nU35cDrI" role="2Qv0pB">
         <ref role="2UGuZ7" to="tpee:fzclF8l" resolve="Statement" />
       </node>
@@ -2849,6 +2855,7 @@
     </node>
     <node concept="2Qv1iZ" id="7a3nU359sdP" role="1dubk0">
       <property role="TrG5h" value="IAncestorRelevantNode" />
+      <property role="EcuMT" value="8251544086379873141" />
       <node concept="2Qv0mg" id="7a3nU35cDEX" role="2Qv0pB">
         <ref role="2Qv0mk" node="7a3nU35abaF" resolve="ICFGNode" />
       </node>
@@ -2856,7 +2863,6 @@
         <ref role="2UGuZ7" to="tpee:fz3vP1J" resolve="Expression" />
       </node>
     </node>
-    <node concept="1XdyHe" id="7a3nU35aaHB" role="1dubk0" />
     <node concept="1XdyHe" id="7a3nU35aaW8" role="1dubk0" />
     <node concept="3zyOaA" id="6mbwRz6O2qY" role="1dubk0">
       <property role="TrG5h" value="canActAsEdgeTarget" />

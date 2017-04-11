@@ -192,10 +192,10 @@
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="5708036808576088033" name="jetbrains.mps.lang.smodel.structure.Reference_GetResolveInfo" flags="nn" index="1FfNbt" />
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1454,7 +1454,7 @@
           <node concept="3clFbF" id="6u_410TNDFe" role="3cqZAp">
             <node concept="2OqwBi" id="6u_410TNDGZ" role="3clFbG">
               <node concept="0IXxy" id="6u_410TNDFd" role="2Oq$k0" />
-              <node concept="1PgB_6" id="6u_410TNDT1" role="2OqNvi" />
+              <node concept="3YRAZt" id="6u_410TNDT1" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -1467,7 +1467,7 @@
           <node concept="3clFbF" id="6u_410TNDTf" role="3cqZAp">
             <node concept="2OqwBi" id="6u_410TNDTg" role="3clFbG">
               <node concept="0IXxy" id="6u_410TNDTh" role="2Oq$k0" />
-              <node concept="1PgB_6" id="6u_410TNDTi" role="2OqNvi" />
+              <node concept="3YRAZt" id="6u_410TNDTi" role="2OqNvi" />
             </node>
           </node>
         </node>

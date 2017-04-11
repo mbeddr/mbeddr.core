@@ -72,8 +72,8 @@
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -112,7 +112,7 @@
     <property role="3GE5qa" value="" />
     <ref role="1M2myG" to="cetu:PWcNB4VGAB" resolve="LoopVariableReference" />
     <node concept="1N5Pfh" id="4r1mNB_d3N5" role="1Mr941">
-      <ref role="1N5Vy1" to="cetu:PWcNB4WJSB" />
+      <ref role="1N5Vy1" to="cetu:PWcNB4WJSB" resolve="loop" />
       <node concept="1MUpDS" id="4r1mNB_d3Nd" role="1N6uqs">
         <node concept="3clFbS" id="4r1mNB_d3Ne" role="2VODD2">
           <node concept="3cpWs8" id="4r1mNB_d3Og" role="3cqZAp">
@@ -139,8 +139,10 @@
                   </node>
                   <node concept="TSZUe" id="4r1mNB_dckf" role="2OqNvi">
                     <node concept="1PxgMI" id="4r1mNB_dcSQ" role="25WWJ7">
-                      <ref role="1m5ApE" to="cetu:4r1mNB_fOp9" resolve="MathLoopExpression" />
                       <node concept="2rP1CM" id="4r1mNB_dc$z" role="1m5AlR" />
+                      <node concept="chp4Y" id="79i$vAY7aEz" role="3oSUPX">
+                        <ref role="cht4Q" to="cetu:4r1mNB_fOp9" resolve="MathLoopExpression" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -195,9 +197,11 @@
                       <node concept="3clFbS" id="4r1mNB_e4SZ" role="1bW5cS">
                         <node concept="3clFbF" id="4r1mNB_e8KL" role="3cqZAp">
                           <node concept="1PxgMI" id="4r1mNB_ebOY" role="3clFbG">
-                            <ref role="1m5ApE" to="cetu:4r1mNB_fOp9" resolve="MathLoopExpression" />
                             <node concept="37vLTw" id="4r1mNB_e8KK" role="1m5AlR">
                               <ref role="3cqZAo" node="4r1mNB_e4T0" resolve="it" />
+                            </node>
+                            <node concept="chp4Y" id="79i$vAY7aE$" role="3oSUPX">
+                              <ref role="cht4Q" to="cetu:4r1mNB_fOp9" resolve="MathLoopExpression" />
                             </node>
                           </node>
                         </node>

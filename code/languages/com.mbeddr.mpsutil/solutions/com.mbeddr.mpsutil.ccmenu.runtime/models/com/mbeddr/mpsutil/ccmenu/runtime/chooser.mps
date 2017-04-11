@@ -10072,6 +10072,34 @@
       </node>
     </node>
     <node concept="2tJIrI" id="315MBEhazdz" role="jymVt" />
+    <node concept="3clFb_" id="7uq1CyG4Kc_" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="processTextChanged" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="7uq1CyG4KcA" role="1B3o_S" />
+      <node concept="10P_77" id="7uq1CyG4KcC" role="3clF45" />
+      <node concept="37vLTG" id="7uq1CyG4KcD" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="7uq1CyG4KcE" role="1tU5fm">
+          <ref role="3uigEE" to="exr9:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7uq1CyG4KcF" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="7uq1CyG4KcG" role="1tU5fm">
+          <ref role="3uigEE" to="hyam:~InputMethodEvent" resolve="InputMethodEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7uq1CyG4KcI" role="3clF47">
+        <node concept="3clFbF" id="7uq1CyG4KcL" role="3cqZAp">
+          <node concept="3clFbT" id="7uq1CyG4KcK" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7uq1CyG4KcJ" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3UR2Jj" id="2Z2H3pl0xrQ" role="lGtFl">
       <node concept="TZ5HA" id="2Z2H3pl0xrR" role="TZ5H$">
         <node concept="1dT_AC" id="2Z2H3pl0xrS" role="1dT_Ay">

@@ -166,7 +166,7 @@
                     <node concept="3clFbF" id="5WYUu8H0urh" role="3cqZAp">
                       <node concept="2OqwBi" id="5WYUu8H0tSm" role="3clFbG">
                         <node concept="3TrEf2" id="5WYUu8H0tSp" role="2OqNvi">
-                          <ref role="3Tt5mk" to="unwc:7AjS6YE$mxc" />
+                          <ref role="3Tt5mk" to="unwc:7AjS6YE$mxc" resolve="child" />
                         </node>
                         <node concept="30H73N" id="5WYUu8H0urg" role="2Oq$k0" />
                       </node>
@@ -267,7 +267,7 @@
                           <node concept="2OqwBi" id="7AjS6YE_0bF" role="3clFbG">
                             <node concept="30H73N" id="7AjS6YE_06O" role="2Oq$k0" />
                             <node concept="3TrEf2" id="7AjS6YE_0F4" role="2OqNvi">
-                              <ref role="3Tt5mk" to="unwc:7AjS6YE$mxc" />
+                              <ref role="3Tt5mk" to="unwc:7AjS6YE$mxc" resolve="child" />
                             </node>
                           </node>
                         </node>
@@ -317,6 +317,22 @@
           </node>
         </node>
         <node concept="3Tm6S6" id="1y7DiaVv2W2" role="1B3o_S" />
+      </node>
+      <node concept="3clFb_" id="4Hw51cn4eQJ" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="4Hw51cn4eQK" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="4Hw51cn4eQL" role="3clF47">
+          <node concept="3cpWs6" id="4Hw51cn4eQM" role="3cqZAp">
+            <node concept="10Nm6u" id="4Hw51cn4eQN" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="4Hw51cn4eQO" role="lGtFl" />
+        <node concept="5jKBG" id="4Hw51cn4eQP" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="4Hw51cn4eQQ" role="1B3o_S" />
       </node>
       <node concept="2YIFZL" id="gEZ7Jpo" role="jymVt">
         <property role="TrG5h" value="_condition_" />

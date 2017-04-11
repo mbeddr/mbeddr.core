@@ -95,8 +95,8 @@
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1181949435690" name="jetbrains.mps.lang.smodel.structure.Concept_NewInstance" flags="nn" index="LFhST" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -154,7 +154,7 @@
               <ref role="1YBMHb" node="7BS0NidSRgl" resolve="exampleInstanceWord" />
             </node>
             <node concept="3TrEf2" id="7BS0NidSRQp" role="2OqNvi">
-              <ref role="3Tt5mk" to="748g:2UZ9O9PWChP" />
+              <ref role="3Tt5mk" to="748g:2UZ9O9PWChP" resolve="sampleInstance" />
             </node>
           </node>
           <node concept="3w_OXm" id="7BS0NidSSLW" role="2OqNvi" />
@@ -177,7 +177,6 @@
               <ref role="ehGHo" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
             </node>
             <node concept="1PxgMI" id="7BS0NidUP_m" role="33vP2m">
-              <ref role="1m5ApE" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
               <node concept="2OqwBi" id="7BS0NidUP_n" role="1m5AlR">
                 <node concept="2OqwBi" id="7BS0NidUP_o" role="2Oq$k0">
                   <node concept="2OqwBi" id="7BS0NidUP_p" role="2Oq$k0">
@@ -257,6 +256,9 @@
                   </node>
                 </node>
               </node>
+              <node concept="chp4Y" id="79i$vAY85nI" role="3oSUPX">
+                <ref role="cht4Q" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
+              </node>
             </node>
           </node>
         </node>
@@ -269,7 +271,7 @@
                     <ref role="3cqZAo" node="7BS0NidUP_l" resolve="docConceptAttr" />
                   </node>
                   <node concept="3TrEf2" id="7BS0NidV5kr" role="2OqNvi">
-                    <ref role="3Tt5mk" to="748g:UK_oBpA4EG" />
+                    <ref role="3Tt5mk" to="748g:UK_oBpA4EG" resolve="concept" />
                   </node>
                 </node>
                 <node concept="1rGIog" id="7BS0NidV_3e" role="2OqNvi" />
@@ -278,11 +280,13 @@
             </node>
             <node concept="2OqwBi" id="7BS0NidT2OA" role="37vLTJ">
               <node concept="1PxgMI" id="7BS0NidT2KH" role="2Oq$k0">
-                <ref role="1m5ApE" to="748g:2UZ9O9PWChM" resolve="SampleInstanceWord" />
                 <node concept="Q6c8r" id="7BS0NidT2rE" role="1m5AlR" />
+                <node concept="chp4Y" id="79i$vAY85nJ" role="3oSUPX">
+                  <ref role="cht4Q" to="748g:2UZ9O9PWChM" resolve="SampleInstanceWord" />
+                </node>
               </node>
               <node concept="3TrEf2" id="7BS0NidT4$V" role="2OqNvi">
-                <ref role="3Tt5mk" to="748g:2UZ9O9PWChP" />
+                <ref role="3Tt5mk" to="748g:2UZ9O9PWChP" resolve="sampleInstance" />
               </node>
             </node>
           </node>

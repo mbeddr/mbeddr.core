@@ -63,7 +63,6 @@
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -157,7 +156,6 @@
     <property role="3GE5qa" value="smodel" />
     <ref role="1XX52x" to="fnbo:2gGfLsWQL6y" resolve="TransitivelyDependsOnBuildProjectOperation" />
     <node concept="3EZMnI" id="2gGfLsWSjT4" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="PMmxH" id="2gGfLsWSjT5" role="3EZMnx">
         <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -216,7 +214,6 @@
     <property role="3GE5qa" value="smodel" />
     <ref role="1XX52x" to="fnbo:2gGfLsWS1ZN" resolve="AddBuildProjectDependencyOperation" />
     <node concept="3EZMnI" id="h$6$4Ou" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="PMmxH" id="2wdLO7KhY76" role="3EZMnx">
         <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -288,7 +285,6 @@
     <property role="3GE5qa" value="smodel" />
     <ref role="1XX52x" to="fnbo:6YaWssNZJ5X" resolve="HasDependencyOnBuildProjectOperation" />
     <node concept="3EZMnI" id="6YaWssNZJ69" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="PMmxH" id="6YaWssNZJ6a" role="3EZMnx">
         <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />

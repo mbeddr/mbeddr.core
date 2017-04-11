@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:d038ffd1-504f-49e3-a1bf-86cfe697917c(com.mbeddr.mpsutil.coverage.emma.rt.sandbox)">
+<model ref="r:d038ffd1-504f-49e3-a1bf-86cfe697917c(com.mbeddr.mpsutil.coverage.emma.rt.sandbox)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="47a1911a-3e8e-4c5e-b6d2-a6ea5fc70f2b" name="com.mbeddr.mpsutil.coverage.emma" version="0" />

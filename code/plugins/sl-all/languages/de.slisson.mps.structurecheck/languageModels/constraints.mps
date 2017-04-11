@@ -2,7 +2,7 @@
 <model ref="r:98b04f19-6586-408f-8c35-ee3544c2f854(de.slisson.mps.structurecheck.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -25,11 +25,11 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
+      <concept id="6702802731807424858" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAnAncestor" flags="in" index="9SQb8" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
-      <concept id="7855321458717464197" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAnAncestor" flags="in" index="Um2eU" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
-        <child id="7852712695066883424" name="canBeAncestor" index="1kkKnR" />
+        <child id="6702802731807532730" name="canBeAncestor" index="9SGkC" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -43,13 +43,13 @@
   </registry>
   <node concept="1M2fIO" id="l6SLw3nAsC">
     <ref role="1M2myG" to="7met:l6SLw3nxk$" resolve="ThisElementExpression" />
-    <node concept="Um2eU" id="l6SLw3nAsD" role="1kkKnR">
-      <node concept="3clFbS" id="l6SLw3nAsE" role="2VODD2">
-        <node concept="3clFbF" id="l6SLw3nAB4" role="3cqZAp">
-          <node concept="2OqwBi" id="l6SLw3nAFE" role="3clFbG">
-            <node concept="EsrRn" id="l6SLw3nAB3" role="2Oq$k0" />
-            <node concept="1mIQ4w" id="l6SLw3nBMn" role="2OqNvi">
-              <node concept="chp4Y" id="l6SLw3nBY_" role="cj9EA">
+    <node concept="9SQb8" id="l6SLw3nAsD" role="9SGkC">
+      <node concept="3clFbS" id="1k1VwvtPsSf" role="2VODD2">
+        <node concept="3clFbF" id="1k1VwvtPsSg" role="3cqZAp">
+          <node concept="2OqwBi" id="1k1VwvtPsSh" role="3clFbG">
+            <node concept="EsrRn" id="1k1VwvtPsSi" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="1k1VwvtPsSj" role="2OqNvi">
+              <node concept="chp4Y" id="1k1VwvtPsSk" role="cj9EA">
                 <ref role="cht4Q" to="7met:l6SLw3nxnb" resolve="IThisElementScope" />
               </node>
             </node>

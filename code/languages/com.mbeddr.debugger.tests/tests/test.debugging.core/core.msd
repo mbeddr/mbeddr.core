@@ -12,10 +12,6 @@
     <dependency reexport="false">89c70b13-7f9c-47c3-b3c2-c218b52ed82c(com.mbeddr.core.debug.test)</dependency>
     <dependency reexport="false">~_PreferencesModule#com.mbeddr.debugger.tests.__spreferences.PlatformTemplates(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>87468ddd-5b04-4352-a61d-70ff981afab6(com.mbeddr.debugger-testing)</usedDevKit>
-    <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
     <language slang="l:2d7fadf5-33f6-4e80-a78f-0f739add2bde:com.mbeddr.core.buildconfig" version="4" />

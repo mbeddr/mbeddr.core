@@ -100,12 +100,10 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -332,7 +330,7 @@
                             <node concept="2pR195" id="2obGnlRg4rt" role="10QFUM">
                               <ref role="3uigEE" to="fn29:1Xl3kQ1uadK" resolve="MResource" />
                             </node>
-                            <node concept="3cpWs2" id="2obGnlRg4ru" role="10QFUP">
+                            <node concept="37vLTw" id="2obGnlRg4ru" role="10QFUP">
                               <ref role="3cqZAo" node="2obGnlRg4rH" resolve="inpt" />
                             </node>
                           </node>
@@ -444,7 +442,7 @@
                                                   <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
                                                 </node>
                                                 <node concept="2OqwBi" id="5Hxjapwed46" role="2Oq$k0">
-                                                  <node concept="3cpWsa" id="5Hxjapwed47" role="2Oq$k0">
+                                                  <node concept="37vLTw" id="5Hxjapwed47" role="2Oq$k0">
                                                     <ref role="3cqZAo" node="2obGnlRg4rq" resolve="res" />
                                                   </node>
                                                   <node concept="2sxana" id="5Hxjapwed48" role="2OqNvi">

@@ -23,6 +23,7 @@
     <import index="tj7y" ref="04e1f940-330e-483b-9a6a-1648b396a81c/r:db2c041e-54bd-4fbb-9087-056c7a8ef247(com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.editor)" />
     <import index="z726" ref="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="wev6" ref="r:f29914af-ae14-4589-b53d-f60c6018b368(jetbrains.mps.lang.project.behavior)" implicit="true" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -514,21 +515,17 @@
                                   <node concept="3uibUv" id="aiIotXkVUI" role="1tU5fm">
                                     <ref role="3uigEE" to="lui2:~SModuleReference" resolve="SModuleReference" />
                                   </node>
-                                  <node concept="2YIFZM" id="aiIotXkVUL" role="33vP2m">
-                                    <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.createReference(java.lang.String):org.jetbrains.mps.openapi.module.SModuleReference" resolve="createReference" />
-                                    <ref role="1Pybhc" to="w1kc:~ModuleRepositoryFacade" resolve="ModuleRepositoryFacade" />
-                                    <node concept="2OqwBi" id="aiIotXkVUM" role="37wK5m">
-                                      <node concept="2OqwBi" id="aiIotXkVUN" role="2Oq$k0">
-                                        <node concept="37vLTw" id="aiIotXl7hI" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="aiIotXl7hG" resolve="noode" />
-                                        </node>
-                                        <node concept="3TrEf2" id="aiIotXkVUP" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="soy0:3OU98G0_S3I" resolve="moduleRef" />
-                                        </node>
+                                  <node concept="2OqwBi" id="aiIotXkVUM" role="33vP2m">
+                                    <node concept="2OqwBi" id="aiIotXkVUN" role="2Oq$k0">
+                                      <node concept="37vLTw" id="aiIotXl7hI" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="aiIotXl7hG" resolve="noode" />
                                       </node>
-                                      <node concept="3TrcHB" id="aiIotXlofg" role="2OqNvi">
-                                        <ref role="3TsBF5" to="hypd:1AZH1sZHi4e" resolve="qualifiedName" />
+                                      <node concept="3TrEf2" id="aiIotXkVUP" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="soy0:3OU98G0_S3I" resolve="moduleRef" />
                                       </node>
+                                    </node>
+                                    <node concept="2qgKlT" id="7AZhlVTk4Yq" role="2OqNvi">
+                                      <ref role="37wK5l" to="wev6:2BHFktfnkjF" resolve="toModuleReference" />
                                     </node>
                                   </node>
                                 </node>

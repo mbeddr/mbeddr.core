@@ -148,8 +148,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
@@ -216,7 +216,7 @@
                   <ref role="3cqZAo" node="2hSqXWT5hfC" resolve="nva" />
                 </node>
                 <node concept="3TrEf2" id="5E1$geH7HHG" role="2OqNvi">
-                  <ref role="3Tt5mk" to="q5q6:7MOa6vKIydp" />
+                  <ref role="3Tt5mk" to="q5q6:7MOa6vKIydp" resolve="varRef" />
                 </node>
               </node>
               <node concept="3JvlWi" id="5E1$geH7HHH" role="2OqNvi" />
@@ -273,7 +273,7 @@
                   <ref role="3cqZAo" node="2hSqXWT5hfC" resolve="nva" />
                 </node>
                 <node concept="3Tsc0h" id="5B6zmQujfWp" role="2OqNvi">
-                  <ref role="3TtcxE" to="q5q6:7MOa6vKIydt" />
+                  <ref role="3TtcxE" to="q5q6:7MOa6vKIydt" resolve="constraints" />
                 </node>
               </node>
               <node concept="34oBXx" id="5B6zmQujfWq" role="2OqNvi" />
@@ -299,7 +299,7 @@
                     <ref role="3cqZAo" node="2hSqXWT5hfC" resolve="nva" />
                   </node>
                   <node concept="3Tsc0h" id="5B6zmQubrS3" role="2OqNvi">
-                    <ref role="3TtcxE" to="q5q6:7MOa6vKIydt" />
+                    <ref role="3TtcxE" to="q5q6:7MOa6vKIydt" resolve="constraints" />
                   </node>
                 </node>
                 <node concept="1uHKPH" id="5B6zmQubrS4" role="2OqNvi" />
@@ -319,17 +319,19 @@
               <ref role="ehGHo" to="k146:5u7uvg8q$cv" resolve="IsInRangeExpression" />
             </node>
             <node concept="1PxgMI" id="5B6zmQubsyL" role="33vP2m">
-              <ref role="1m5ApE" to="k146:5u7uvg8q$cv" resolve="IsInRangeExpression" />
               <node concept="2OqwBi" id="5B6zmQubsnq" role="1m5AlR">
                 <node concept="2OqwBi" id="5B6zmQubsnr" role="2Oq$k0">
                   <node concept="37vLTw" id="5B6zmQubsns" role="2Oq$k0">
                     <ref role="3cqZAo" node="2hSqXWT5hfC" resolve="nva" />
                   </node>
                   <node concept="3Tsc0h" id="5B6zmQubsnt" role="2OqNvi">
-                    <ref role="3TtcxE" to="q5q6:7MOa6vKIydt" />
+                    <ref role="3TtcxE" to="q5q6:7MOa6vKIydt" resolve="constraints" />
                   </node>
                 </node>
                 <node concept="1uHKPH" id="5B6zmQubsnu" role="2OqNvi" />
+              </node>
+              <node concept="chp4Y" id="79i$vAY7rZA" role="3oSUPX">
+                <ref role="cht4Q" to="k146:5u7uvg8q$cv" resolve="IsInRangeExpression" />
               </node>
             </node>
           </node>
@@ -341,14 +343,16 @@
               <ref role="ehGHo" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
             </node>
             <node concept="1PxgMI" id="5B6zmQubvPK" role="33vP2m">
-              <ref role="1m5ApE" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
               <node concept="2OqwBi" id="5B6zmQubvPL" role="1m5AlR">
                 <node concept="37vLTw" id="5B6zmQubvPM" role="2Oq$k0">
                   <ref role="3cqZAo" node="5B6zmQubs45" resolve="range" />
                 </node>
                 <node concept="3TrEf2" id="5B6zmQubvPN" role="2OqNvi">
-                  <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
+                  <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" resolve="right" />
                 </node>
+              </node>
+              <node concept="chp4Y" id="79i$vAY7rZF" role="3oSUPX">
+                <ref role="cht4Q" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
               </node>
             </node>
           </node>
@@ -361,7 +365,7 @@
                   <ref role="3cqZAo" node="5B6zmQubvPJ" resolve="rangeExp" />
                 </node>
                 <node concept="3TrEf2" id="5B6zmQub$yz" role="2OqNvi">
-                  <ref role="3Tt5mk" to="k146:5u7uvg8qRys" />
+                  <ref role="3Tt5mk" to="k146:5u7uvg8qRys" resolve="right" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="5B6zmQub_Wt" role="2OqNvi">
@@ -376,7 +380,7 @@
                   <ref role="3cqZAo" node="5B6zmQubvPJ" resolve="rangeExp" />
                 </node>
                 <node concept="3TrEf2" id="5B6zmQubwMp" role="2OqNvi">
-                  <ref role="3Tt5mk" to="k146:5u7uvg8qRyr" />
+                  <ref role="3Tt5mk" to="k146:5u7uvg8qRyr" resolve="left" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="5B6zmQubyY$" role="2OqNvi">
@@ -413,17 +417,19 @@
               <ref role="ehGHo" to="k146:5u7uvg8q$cv" resolve="IsInRangeExpression" />
             </node>
             <node concept="1PxgMI" id="5B6zmQubAVz" role="33vP2m">
-              <ref role="1m5ApE" to="k146:5u7uvg8q$cv" resolve="IsInRangeExpression" />
               <node concept="2OqwBi" id="5B6zmQubAV$" role="1m5AlR">
                 <node concept="2OqwBi" id="5B6zmQubAV_" role="2Oq$k0">
                   <node concept="37vLTw" id="5B6zmQubAVA" role="2Oq$k0">
                     <ref role="3cqZAo" node="2hSqXWT8ACn" resolve="nva" />
                   </node>
                   <node concept="3Tsc0h" id="5B6zmQubAVB" role="2OqNvi">
-                    <ref role="3TtcxE" to="q5q6:7MOa6vKIydt" />
+                    <ref role="3TtcxE" to="q5q6:7MOa6vKIydt" resolve="constraints" />
                   </node>
                 </node>
                 <node concept="1uHKPH" id="5B6zmQubAVC" role="2OqNvi" />
+              </node>
+              <node concept="chp4Y" id="79i$vAY7rZ$" role="3oSUPX">
+                <ref role="cht4Q" to="k146:5u7uvg8q$cv" resolve="IsInRangeExpression" />
               </node>
             </node>
           </node>
@@ -435,14 +441,16 @@
               <ref role="ehGHo" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
             </node>
             <node concept="1PxgMI" id="5B6zmQubAVG" role="33vP2m">
-              <ref role="1m5ApE" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
               <node concept="2OqwBi" id="5B6zmQubAVH" role="1m5AlR">
                 <node concept="37vLTw" id="5B6zmQubAVI" role="2Oq$k0">
                   <ref role="3cqZAo" node="5B6zmQubAVx" resolve="range" />
                 </node>
                 <node concept="3TrEf2" id="5B6zmQubAVJ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
+                  <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" resolve="right" />
                 </node>
+              </node>
+              <node concept="chp4Y" id="79i$vAY7rZv" role="3oSUPX">
+                <ref role="cht4Q" to="k146:5u7uvg8qRyq" resolve="RangeExpression" />
               </node>
             </node>
           </node>
@@ -456,14 +464,16 @@
               <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
               <node concept="2OqwBi" id="5B6zmQubFSN" role="37wK5m">
                 <node concept="1PxgMI" id="5B6zmQubFci" role="2Oq$k0">
-                  <ref role="1m5ApE" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                   <node concept="2OqwBi" id="2hSqXWT8I6u" role="1m5AlR">
                     <node concept="37vLTw" id="5B6zmQubCdp" role="2Oq$k0">
                       <ref role="3cqZAo" node="5B6zmQubAVE" resolve="rangeExp" />
                     </node>
                     <node concept="3TrEf2" id="5B6zmQubDse" role="2OqNvi">
-                      <ref role="3Tt5mk" to="k146:5u7uvg8qRyr" />
+                      <ref role="3Tt5mk" to="k146:5u7uvg8qRyr" resolve="left" />
                     </node>
+                  </node>
+                  <node concept="chp4Y" id="79i$vAY7rZE" role="3oSUPX">
+                    <ref role="cht4Q" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="5B6zmQubHkH" role="2OqNvi">
@@ -482,14 +492,16 @@
               <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
               <node concept="2OqwBi" id="5B6zmQubHI_" role="37wK5m">
                 <node concept="1PxgMI" id="5B6zmQubHIA" role="2Oq$k0">
-                  <ref role="1m5ApE" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                   <node concept="2OqwBi" id="5B6zmQubHIB" role="1m5AlR">
                     <node concept="37vLTw" id="5B6zmQubHIC" role="2Oq$k0">
                       <ref role="3cqZAo" node="5B6zmQubAVE" resolve="rangeExp" />
                     </node>
                     <node concept="3TrEf2" id="5B6zmQubIOK" role="2OqNvi">
-                      <ref role="3Tt5mk" to="k146:5u7uvg8qRys" />
+                      <ref role="3Tt5mk" to="k146:5u7uvg8qRys" resolve="right" />
                     </node>
+                  </node>
+                  <node concept="chp4Y" id="79i$vAY7rZt" role="3oSUPX">
+                    <ref role="cht4Q" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="5B6zmQubHIE" role="2OqNvi">

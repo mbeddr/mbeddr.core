@@ -9,9 +9,6 @@
   <dependencies>
     <dependency reexport="false">~_PreferencesModule#com.mbeddr.analyses.__spreferences.PlatformTemplates(com.mbeddr.analyses.__spreferences.PlatformTemplates)</dependency>
   </dependencies>
-  <usedDevKits>
-    <usedDevKit>0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:5d09074f-babf-4f2b-b78b-e9929af0f3be:com.mbeddr.analyses.base" version="0" />
     <language slang="l:6ded8a47-f30e-4acf-a5f2-a70ec5472558:com.mbeddr.analyses.base.verification_conditions" version="-1" />

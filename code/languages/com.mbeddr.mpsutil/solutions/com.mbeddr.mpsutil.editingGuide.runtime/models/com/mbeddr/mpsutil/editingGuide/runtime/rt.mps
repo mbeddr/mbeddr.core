@@ -142,8 +142,8 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1227264722563" name="jetbrains.mps.lang.smodel.structure.EqualsStructurallyExpression" flags="nn" index="2YFouu" />
@@ -775,9 +775,11 @@
                     <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                     <node concept="2OqwBi" id="14uQe5Kujvg" role="37wK5m">
                       <node concept="1PxgMI" id="14uQe5KujjW" role="2Oq$k0">
-                        <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
                         <node concept="2GrUjf" id="14uQe5Kujgg" role="1m5AlR">
                           <ref role="2Gs0qQ" node="4x22hTwjsUX" resolve="d" />
+                        </node>
+                        <node concept="chp4Y" id="5RIakkDKbyM" role="3oSUPX">
+                          <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="14uQe5Kuj$D" role="2OqNvi">
@@ -865,9 +867,11 @@
                   <node concept="2OqwBi" id="4x22hTwjWJg" role="3uHU7w">
                     <node concept="2OqwBi" id="4x22hTwjWJh" role="2Oq$k0">
                       <node concept="1PxgMI" id="4x22hTwjWJi" role="2Oq$k0">
-                        <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
                         <node concept="2GrUjf" id="4x22hTwjWJj" role="1m5AlR">
                           <ref role="2Gs0qQ" node="4x22hTwjWJ9" resolve="d" />
+                        </node>
+                        <node concept="chp4Y" id="5RIakkDKbyN" role="3oSUPX">
+                          <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="4x22hTwjWJk" role="2OqNvi">

@@ -6,14 +6,6 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <usedDevKits>
-    <usedDevKit>43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)</usedDevKit>
-    <usedDevKit>8a4402f1-8f1e-44d8-a4f6-f174fa7cf42e(com.mbeddr.cc.reqtrace.c)</usedDevKit>
-    <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
-    <usedDevKit>b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)</usedDevKit>
-    <usedDevKit>a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)</usedDevKit>
-    <usedDevKit>0d9470ba-d59f-4411-a2ce-12f6b6bdec49(com.mbeddr.analyses.fm)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:ab679a62-68ab-4874-8f77-b33548ab054f:com.mbeddr.analyses.fm.base" version="0" />
     <language slang="l:e865cad2-7cc8-437a-951a-665bcbcb8b1a:com.mbeddr.cc.requirements" version="0" />
