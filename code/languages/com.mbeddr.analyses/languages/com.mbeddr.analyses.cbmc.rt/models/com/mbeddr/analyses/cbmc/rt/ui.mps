@@ -36,7 +36,6 @@
     <import index="jajj" ref="r:9e3be8f2-82bf-43d7-8c0f-7a644fe1675e(com.mbeddr.analyses.utils.mps_workbench)" />
     <import index="tprt" ref="r:00000000-0000-4000-0000-011c895904a5(jetbrains.mps.ide.common)" />
     <import index="vbi4" ref="r:101c6aaa-6376-4550-a0fa-eeca066047cc(com.mbeddr.analyses.utils.results_ui)" />
-    <import index="vbi4" ref="r:101c6aaa-6376-4550-a0fa-eeca066047cc(com.mbeddr.analyses.utils.results_ui)" />
     <import index="v4mk" ref="4c16cb42-7fa3-47c7-89c7-1c479c287588/java:org.jdesktop.swingx(com.mbeddr.analyses.utils/)" implicit="true" />
   </imports>
   <registry>
@@ -9057,6 +9056,9 @@
           </node>
         </node>
       </node>
+      <node concept="2AHcQZ" id="7bCp4DdR8Pu" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="4c9lfPlqCAq" role="jymVt" />
     <node concept="3clFb_" id="4c9lfPlqDHW" role="jymVt">
@@ -9206,6 +9208,9 @@
           </node>
         </node>
       </node>
+      <node concept="2AHcQZ" id="7bCp4DdRaWy" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="4c9lfPloR4h" role="jymVt" />
     <node concept="3clFb_" id="4c9lfPllVpr" role="jymVt">
@@ -9284,6 +9289,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="2AHcQZ" id="7bCp4DdRqZE" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="3HL7I34kKbD" role="jymVt" />
@@ -10152,13 +10160,6 @@
                 <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
               </node>
             </node>
-            <node concept="2ShNRf" id="3HL7I34seNA" role="33vP2m">
-              <node concept="2Jqq0_" id="3HL7I34seNB" role="2ShVmc">
-                <node concept="3uibUv" id="1XPQUZrmPkf" role="HW$YZ">
-                  <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="3clFbJ" id="3HL7I34seND" role="3cqZAp">
@@ -10862,9 +10863,7 @@
       <node concept="3cqZAl" id="3HL7I34r03W" role="3clF45" />
       <node concept="37vLTG" id="3HL7I34raVL" role="3clF46">
         <property role="TrG5h" value="filterString" />
-        <node concept="3uibUv" id="3HL7I34raVK" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <node concept="17QB3L" id="7bCp4DdRubr" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="7ZE1IUV$zxn" role="jymVt" />
@@ -11635,7 +11634,7 @@
                 <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
               </node>
             </node>
-            <node concept="3cpWsa" id="2RvHLeWvop9" role="37vLTJ">
+            <node concept="37vLTw" id="7bCp4DdREmv" role="37vLTJ">
               <ref role="3cqZAo" node="2RvHLeWvop2" resolve="leftSide" />
             </node>
           </node>
@@ -11668,7 +11667,7 @@
                 <node concept="1pGfFk" id="4c9lfPlEVZz" role="2ShVmc">
                   <ref role="37wK5l" to="dxuu:~BoxLayout.&lt;init&gt;(java.awt.Container,int)" resolve="BoxLayout" />
                   <node concept="3cpWsa" id="2RvHLeWvop4" role="37wK5m">
-                    <ref role="3cqZAo" node="2RvHLeWvop2" />
+                    <ref role="3cqZAo" node="2RvHLeWvop2" resolve="leftSide" />
                   </node>
                   <node concept="10M0yZ" id="4c9lfPlEVZ_" role="37wK5m">
                     <ref role="1PxDUh" to="dxuu:~BoxLayout" resolve="BoxLayout" />
@@ -13350,7 +13349,7 @@
         </node>
       </node>
       <node concept="NWlO9" id="1kBaeCW$ygZ" role="lGtFl">
-        <property role="NWlVz" value="adapter used for notifying the StackTracerTable and the VariablesTracerTable of the selected state" />
+        <property role="NWlVz" value="Adapter used for notifying the StackTracerTable and the VariablesTracerTable of the selected state" />
       </node>
     </node>
     <node concept="3Tm1VV" id="4c9lfPlD_kq" role="1B3o_S" />
@@ -13427,16 +13426,6 @@
         <ref role="3uigEE" node="4c9lfPllQzn" resolve="RawTableModel" />
       </node>
     </node>
-    <node concept="312cEg" id="5$FF3$y9SIj" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="project" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="5$FF3$y9_A9" role="1B3o_S" />
-      <node concept="3uibUv" id="5$FF3$y9LjT" role="1tU5fm">
-        <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
-      </node>
-    </node>
     <node concept="2tJIrI" id="7GK2$mU0ECO" role="jymVt" />
     <node concept="3clFbW" id="4c9lfPlDDEf" role="jymVt">
       <node concept="3cqZAl" id="4c9lfPlDDEg" role="3clF45" />
@@ -13456,19 +13445,6 @@
               <node concept="Xjq3P" id="7GK2$mU0_gv" role="2Oq$k0" />
               <node concept="2OwXpG" id="7GK2$mU0HnD" role="2OqNvi">
                 <ref role="2Oxat5" node="7GK2$mU0FHW" resolve="model" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5$FF3$y9MLy" role="3cqZAp">
-          <node concept="37vLTI" id="5$FF3$ya0kw" role="3clFbG">
-            <node concept="37vLTw" id="5$FF3$ya1kE" role="37vLTx">
-              <ref role="3cqZAo" node="5$FF3$y9EV0" resolve="project" />
-            </node>
-            <node concept="2OqwBi" id="5$FF3$y9NQD" role="37vLTJ">
-              <node concept="Xjq3P" id="5$FF3$y9MLw" role="2Oq$k0" />
-              <node concept="2OwXpG" id="5$FF3$y9YyR" role="2OqNvi">
-                <ref role="2Oxat5" node="5$FF3$y9SIj" resolve="project" />
               </node>
             </node>
           </node>
@@ -14149,8 +14125,6 @@
     <property role="3GE5qa" value="raw_result" />
     <property role="TrG5h" value="ValueExpression2MutableTreeBuilder" />
     <node concept="2tJIrI" id="1kBaeCWzRQo" role="jymVt" />
-    <node concept="2tJIrI" id="1kBaeCWzTT4" role="jymVt" />
-    <node concept="2tJIrI" id="1kBaeCWzUM4" role="jymVt" />
     <node concept="2YIFZL" id="4LQJkpcHcdq" role="jymVt">
       <property role="TrG5h" value="buildTree" />
       <property role="DiZV1" value="false" />
@@ -14605,12 +14579,12 @@
       </node>
       <node concept="3Tm1VV" id="4LQJkpcHcga" role="1B3o_S" />
       <node concept="NWlO9" id="1kBaeCWzVzR" role="lGtFl">
-        <property role="NWlVz" value="recursive method for building a TreeNode out fo the ValueExpression" />
+        <property role="NWlVz" value="Recursive method for building a TreeNode out fo the ValueExpression" />
       </node>
     </node>
     <node concept="3Tm1VV" id="1kBaeCWzQ$E" role="1B3o_S" />
     <node concept="NWlO9" id="1kBaeCWzTz6" role="lGtFl">
-      <property role="NWlVz" value="utility for building tree structure of the variables" />
+      <property role="NWlVz" value="Utility for building tree structure of the variables" />
     </node>
   </node>
   <node concept="312cEu" id="1XKuUn_2OW8">
@@ -14737,7 +14711,7 @@
         </node>
       </node>
       <node concept="NWlO9" id="1kBaeCW$ls9" role="lGtFl">
-        <property role="NWlVz" value="calls the model´s method for computing the stack trace" />
+        <property role="NWlVz" value="Calls the model´s method for computing the stack trace" />
       </node>
     </node>
     <node concept="2tJIrI" id="2RvHLeWuzvs" role="jymVt" />
@@ -14780,7 +14754,7 @@
         </node>
       </node>
       <node concept="NWlO9" id="1kBaeCW$maq" role="lGtFl">
-        <property role="NWlVz" value="calls the model´s method for setting the list of states of the current result" />
+        <property role="NWlVz" value="Calls the model´s method for setting the list of states of the current result" />
       </node>
     </node>
     <node concept="2tJIrI" id="2RvHLeWtZyQ" role="jymVt" />
@@ -15131,6 +15105,7 @@
           <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
+      <node concept="2tJIrI" id="7bCp4DdRvgU" role="jymVt" />
       <node concept="3clFb_" id="2RvHLeWtZJX" role="jymVt">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="isCellEditable" />
@@ -15174,7 +15149,6 @@
     <property role="TrG5h" value="VariablesTracerTable" />
     <property role="3GE5qa" value="raw_result" />
     <node concept="2tJIrI" id="4LQJkpcKB_2" role="jymVt" />
-    <node concept="2tJIrI" id="1kBaeCWzZjr" role="jymVt" />
     <node concept="3clFbW" id="4LQJkpcJnYm" role="jymVt">
       <node concept="3cqZAl" id="4LQJkpcJnYn" role="3clF45" />
       <node concept="3clFbS" id="4LQJkpcJnYp" role="3clF47">
@@ -15184,7 +15158,6 @@
             <ref role="3cqZAo" node="4LQJkpcJov$" resolve="model" />
           </node>
         </node>
-        <node concept="3clFbH" id="4LQJkpcK_1N" role="3cqZAp" />
         <node concept="3cpWs8" id="4LQJkpcK_5v" role="3cqZAp">
           <node concept="3cpWsn" id="4LQJkpcK_5w" role="3cpWs9">
             <property role="TrG5h" value="colModel" />
@@ -15501,7 +15474,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4LQJkpcPQsa" role="3cqZAp" />
       </node>
       <node concept="3Tm1VV" id="4LQJkpcJnyD" role="1B3o_S" />
       <node concept="37vLTG" id="4LQJkpcJov$" role="3clF46">
@@ -15509,6 +15481,9 @@
         <node concept="3uibUv" id="4LQJkpcJovz" role="1tU5fm">
           <ref role="3uigEE" node="4LQJkpcH64t" resolve="VariablesTracerTable.VariablesTracerModel" />
         </node>
+      </node>
+      <node concept="NWlO9" id="7bCp4DdQV87" role="lGtFl">
+        <property role="NWlVz" value="Constructor" />
       </node>
     </node>
     <node concept="2tJIrI" id="4LQJkpcH4v4" role="jymVt" />
@@ -15558,7 +15533,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4LQJkpcNSot" role="jymVt" />
-    <node concept="2tJIrI" id="1kBaeCW$5Kd" role="jymVt" />
     <node concept="3clFb_" id="4LQJkpcNXHL" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="setStates" />
@@ -15602,7 +15576,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4LQJkpcMwfm" role="jymVt" />
-    <node concept="2tJIrI" id="1kBaeCW$9CX" role="jymVt" />
     <node concept="312cEu" id="4LQJkpcH64t" role="jymVt">
       <property role="2bfB8j" value="false" />
       <property role="1sVAO0" value="false" />
@@ -15699,7 +15672,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="2RvHLeWt2fr" role="3cqZAp" />
           <node concept="1Dw8fO" id="7AVYBOJMq9y" role="3cqZAp">
             <node concept="3clFbS" id="7AVYBOJMq9z" role="2LFqv$">
               <node concept="3cpWs8" id="7AVYBOJMq9$" role="3cqZAp">
@@ -16287,9 +16259,7 @@
         <property role="DiZV1" value="false" />
         <property role="od$2w" value="false" />
         <node concept="3Tm1VV" id="4LQJkpcH6$W" role="1B3o_S" />
-        <node concept="3uibUv" id="4LQJkpcH6$Y" role="3clF45">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <node concept="17QB3L" id="7bCp4DdR3yB" role="3clF45" />
         <node concept="37vLTG" id="4LQJkpcH6$Z" role="3clF46">
           <property role="TrG5h" value="columnIndex" />
           <node concept="10Oyi0" id="4LQJkpcH6_0" role="1tU5fm" />
