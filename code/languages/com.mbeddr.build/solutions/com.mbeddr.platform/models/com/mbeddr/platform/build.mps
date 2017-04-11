@@ -889,6 +889,9 @@
       <node concept="m$_yC" id="5fGcQI94nK2" role="m$_yJ">
         <ref role="m$_y1" node="5fGcQI94fMR" resolve="com.mbeddr.mpsutil.common" />
       </node>
+      <node concept="m$_yC" id="2lop6rS0RX0" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="httpSupport" />
+      </node>
       <node concept="3_J27D" id="$bJ0jguQdt" role="m_cZH">
         <node concept="3Mxwew" id="$bJ0jguQdu" role="3MwsjC">
           <property role="3MwjfP" value="mbeddr.platform" />
@@ -958,6 +961,9 @@
       </node>
       <node concept="m$_yC" id="5A_Zlt6D3p_" role="m$_yJ">
         <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
+      </node>
+      <node concept="m$_yC" id="2lop6rS0PL7" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="httpSupport" />
       </node>
       <node concept="3_J27D" id="7tNo_gxoK8o" role="m_cZH">
         <node concept="3Mxwew" id="7tNo_gxoK8p" role="3MwsjC">
@@ -2808,6 +2814,12 @@
           <node concept="3bR9La" id="2VC4eVYf7uj" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="2VC4eVYcmOg" resolve="com.mbeddr.mpsutil.httpsupport.rt" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2lop6rS0LB9" role="3bR37C">
+          <node concept="3bR9La" id="2lop6rS0LBa" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:6pse5qHNhL7" resolve="jetbrains.mps.ide.httpsupport.manager" />
           </node>
         </node>
       </node>
