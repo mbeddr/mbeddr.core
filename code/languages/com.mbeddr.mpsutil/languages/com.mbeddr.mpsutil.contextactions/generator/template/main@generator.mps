@@ -6,8 +6,9 @@
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -304,7 +305,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -376,11 +376,6 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="2482611074346661065" name="jetbrains.mps.lang.core.structure.ReviewMigration" flags="ng" index="13_zln">
-        <property id="2482611074346661078" name="reasonShort" index="13_zl8" />
-        <property id="2482611074346661073" name="todo" index="13_zlf" />
-        <property id="2482611074347169514" name="readableId" index="13BvtO" />
       </concept>
     </language>
     <language id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions">
@@ -4262,35 +4257,27 @@
                   <property role="Xl_RC" value="Add " />
                 </node>
                 <node concept="2OqwBi" id="23_jb1zwoK" role="3uHU7w">
-                  <node concept="2OqwBi" id="23_jb1zwoL" role="2Oq$k0">
-                    <node concept="35c_gC" id="23_jb1zwoM" role="2Oq$k0">
-                      <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
-                      <node concept="1ZhdrF" id="23_jb1zwoN" role="lGtFl">
-                        <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2644386474300074836/2644386474300074837" />
-                        <property role="2qtEX8" value="conceptDeclaration" />
-                        <node concept="3$xsQk" id="23_jb1zwoO" role="3$ytzL">
-                          <node concept="3clFbS" id="23_jb1zwoP" role="2VODD2">
-                            <node concept="3clFbF" id="23_jb1zwoQ" role="3cqZAp">
-                              <node concept="2OqwBi" id="23_jb1zwoR" role="3clFbG">
-                                <node concept="30H73N" id="23_jb1zwoS" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="23_jb1zwoT" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="aozb:7uF2w19TiHk" resolve="concept" />
-                                </node>
+                  <node concept="35c_gC" id="23_jb1zwoM" role="2Oq$k0">
+                    <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
+                    <node concept="1ZhdrF" id="23_jb1zwoN" role="lGtFl">
+                      <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2644386474300074836/2644386474300074837" />
+                      <property role="2qtEX8" value="conceptDeclaration" />
+                      <node concept="3$xsQk" id="23_jb1zwoO" role="3$ytzL">
+                        <node concept="3clFbS" id="23_jb1zwoP" role="2VODD2">
+                          <node concept="3clFbF" id="23_jb1zwoQ" role="3cqZAp">
+                            <node concept="2OqwBi" id="23_jb1zwoR" role="3clFbG">
+                              <node concept="30H73N" id="23_jb1zwoS" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="23_jb1zwoT" role="2OqNvi">
+                                <ref role="3Tt5mk" to="aozb:7uF2w19TiHk" resolve="concept" />
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="FGMqu" id="23_jb1zwoU" role="2OqNvi" />
-                    <node concept="13_zln" id="1k1VwvtI90l" role="lGtFl">
-                      <property role="13_zl8" value="unknown attributes" />
-                      <property role="13_zlf" value="This node should have been migrated, but has annotations not recognised by the migration. Please review this code and migrate manually if necessary. Unknown attribute: jetbrains.mps.lang.generator.structure.ReferenceMacro" />
-                      <property role="13BvtO" value="Migrate popular concept&lt;-&gt;node conversions" />
-                    </node>
                   </node>
-                  <node concept="3TrcHB" id="23_jb1zwoV" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  <node concept="liA8E" id="2lop6rSnbgs" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
                   </node>
                 </node>
                 <node concept="1W57fq" id="23_jb1zwoW" role="lGtFl">

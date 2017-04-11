@@ -17271,8 +17271,8 @@
                         <property role="TrG5h" value="transformationEnabled" />
                         <node concept="10P_77" id="ifzjJo5yaK" role="1tU5fm" />
                         <node concept="2YIFZM" id="ifzjJo5yaL" role="33vP2m">
-                          <ref role="37wK5l" to="ykok:~ModelConstraints.canBeParent(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeParent" />
                           <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+                          <ref role="37wK5l" to="ykok:~ModelConstraints.canBeParent(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeParent" />
                           <node concept="2OqwBi" id="ifzjJo5ASm" role="37wK5m">
                             <node concept="37vLTw" id="ifzjJo5AP4" role="2Oq$k0">
                               <ref role="3cqZAo" node="4qdNcH$47TU" resolve="_context" />
@@ -17281,19 +17281,19 @@
                               <ref role="37wK5l" to="zce0:~NodeSubstituteActionsFactoryContext.getParentNode():org.jetbrains.mps.openapi.model.SNode" resolve="getParentNode" />
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="ifzjJo5yaP" role="37wK5m">
-                            <node concept="37vLTw" id="ifzjJo5yaQ" role="2Oq$k0">
-                              <ref role="3cqZAo" node="19dgrWh_gjE" resolve="subconcept" />
-                            </node>
-                            <node concept="FGMqu" id="ifzjJo5yaR" role="2OqNvi" />
+                          <node concept="37vLTw" id="ifzjJo5yaQ" role="37wK5m">
+                            <ref role="3cqZAo" node="19dgrWh_gjE" resolve="subconcept" />
                           </node>
-                          <node concept="2OqwBi" id="ifzjJo5yaS" role="37wK5m">
-                            <node concept="37vLTw" id="ifzjJo5yaT" role="2Oq$k0">
-                              <ref role="3cqZAo" node="ifzjJo5_Qs" resolve="sourceNode" />
+                          <node concept="2OqwBi" id="2lop6rSnFMD" role="37wK5m">
+                            <node concept="2JrnkZ" id="2lop6rSnFzc" role="2Oq$k0">
+                              <node concept="37vLTw" id="ifzjJo5yaT" role="2JrQYb">
+                                <ref role="3cqZAo" node="ifzjJo5_Qs" resolve="sourceNode" />
+                              </node>
                             </node>
-                            <node concept="25OxAV" id="ifzjJo5yaU" role="2OqNvi" />
+                            <node concept="liA8E" id="2lop6rSnG9W" role="2OqNvi">
+                              <ref role="37wK5l" to="mhbf:~SNode.getContainmentLink():org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+                            </node>
                           </node>
-                          <node concept="10Nm6u" id="ifzjJo5yaV" role="37wK5m" />
                           <node concept="10Nm6u" id="ifzjJo5yaW" role="37wK5m" />
                         </node>
                       </node>
@@ -17302,7 +17302,7 @@
                       <node concept="3vZ8ra" id="ifzjJo5yaY" role="3clFbG">
                         <node concept="2YIFZM" id="ifzjJo5yaZ" role="37vLTx">
                           <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                          <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
+                          <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
                           <node concept="2OqwBi" id="ifzjJo5Cre" role="37wK5m">
                             <node concept="37vLTw" id="ifzjJo5Cph" role="2Oq$k0">
                               <ref role="3cqZAo" node="4qdNcH$47TU" resolve="_context" />
@@ -17311,18 +17311,18 @@
                               <ref role="37wK5l" to="zce0:~NodeSubstituteActionsFactoryContext.getParentNode():org.jetbrains.mps.openapi.model.SNode" resolve="getParentNode" />
                             </node>
                           </node>
-                          <node concept="10Nm6u" id="ifzjJo5yb3" role="37wK5m" />
-                          <node concept="2OqwBi" id="ifzjJo5yb4" role="37wK5m">
-                            <node concept="37vLTw" id="ifzjJo5yb5" role="2Oq$k0">
-                              <ref role="3cqZAo" node="19dgrWh_gjE" resolve="subconcept" />
-                            </node>
-                            <node concept="FGMqu" id="ifzjJo5yb6" role="2OqNvi" />
+                          <node concept="37vLTw" id="ifzjJo5yb5" role="37wK5m">
+                            <ref role="3cqZAo" node="19dgrWh_gjE" resolve="subconcept" />
                           </node>
-                          <node concept="2OqwBi" id="17pH$TAMbYm" role="37wK5m">
-                            <node concept="37vLTw" id="17pH$TAMbYn" role="2Oq$k0">
-                              <ref role="3cqZAo" node="ifzjJo5_Qs" resolve="sourceNode" />
+                          <node concept="2OqwBi" id="2lop6rSn$zK" role="37wK5m">
+                            <node concept="2JrnkZ" id="2lop6rSn$lm" role="2Oq$k0">
+                              <node concept="37vLTw" id="17pH$TAMbYn" role="2JrQYb">
+                                <ref role="3cqZAo" node="ifzjJo5_Qs" resolve="sourceNode" />
+                              </node>
                             </node>
-                            <node concept="25OxAV" id="17pH$TAMbYo" role="2OqNvi" />
+                            <node concept="liA8E" id="2lop6rSn$Tv" role="2OqNvi">
+                              <ref role="37wK5l" to="mhbf:~SNode.getContainmentLink():org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+                            </node>
                           </node>
                           <node concept="10Nm6u" id="ifzjJo5yb7" role="37wK5m" />
                         </node>
@@ -19303,27 +19303,27 @@
                                               <property role="TrG5h" value="sideTransformationEnabled" />
                                               <node concept="10P_77" id="49FqtR5VyJZ" role="1tU5fm" />
                                               <node concept="2YIFZM" id="1MG9P_Yg5kY" role="33vP2m">
-                                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeParent(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeParent" />
                                                 <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+                                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeParent(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeParent" />
                                                 <node concept="2OqwBi" id="1MG9P_Yga6z" role="37wK5m">
                                                   <node concept="37vLTw" id="1MG9P_Yg9O7" role="2Oq$k0">
                                                     <ref role="3cqZAo" node="6B579NGqKwq" resolve="sourceNode" />
                                                   </node>
                                                   <node concept="1mfA1w" id="1MG9P_Ygagc" role="2OqNvi" />
                                                 </node>
-                                                <node concept="2OqwBi" id="1MG9P_YgeQH" role="37wK5m">
-                                                  <node concept="37vLTw" id="ifzjJo0KGY" role="2Oq$k0">
-                                                    <ref role="3cqZAo" node="5n4nn1a7a1f" resolve="subconcept" />
-                                                  </node>
-                                                  <node concept="FGMqu" id="1MG9P_Ygf6C" role="2OqNvi" />
+                                                <node concept="37vLTw" id="ifzjJo0KGY" role="37wK5m">
+                                                  <ref role="3cqZAo" node="5n4nn1a7a1f" resolve="subconcept" />
                                                 </node>
-                                                <node concept="2OqwBi" id="1MG9P_YgkD$" role="37wK5m">
-                                                  <node concept="37vLTw" id="1MG9P_YgkrZ" role="2Oq$k0">
-                                                    <ref role="3cqZAo" node="6B579NGqKwq" resolve="sourceNode" />
+                                                <node concept="2OqwBi" id="2lop6rSnOEd" role="37wK5m">
+                                                  <node concept="2JrnkZ" id="2lop6rSnOgD" role="2Oq$k0">
+                                                    <node concept="37vLTw" id="1MG9P_YgkrZ" role="2JrQYb">
+                                                      <ref role="3cqZAo" node="6B579NGqKwq" resolve="sourceNode" />
+                                                    </node>
                                                   </node>
-                                                  <node concept="25OxAV" id="1MG9P_YgkYc" role="2OqNvi" />
+                                                  <node concept="liA8E" id="2lop6rSnPoB" role="2OqNvi">
+                                                    <ref role="37wK5l" to="mhbf:~SNode.getContainmentLink():org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+                                                  </node>
                                                 </node>
-                                                <node concept="10Nm6u" id="1MG9P_YgcK0" role="37wK5m" />
                                                 <node concept="10Nm6u" id="1MG9P_Ygd5W" role="37wK5m" />
                                               </node>
                                             </node>
@@ -19332,25 +19332,25 @@
                                             <node concept="3vZ8ra" id="1MG9P_Yg9_E" role="3clFbG">
                                               <node concept="2YIFZM" id="1MG9P_Yg9HP" role="37vLTx">
                                                 <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
+                                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
                                                 <node concept="2OqwBi" id="1MG9P_YglJW" role="37wK5m">
                                                   <node concept="37vLTw" id="1MG9P_YglEk" role="2Oq$k0">
                                                     <ref role="3cqZAo" node="6B579NGqKwq" resolve="sourceNode" />
                                                   </node>
                                                   <node concept="1mfA1w" id="1MG9P_YglMX" role="2OqNvi" />
                                                 </node>
-                                                <node concept="10Nm6u" id="1MG9P_YglTk" role="37wK5m" />
-                                                <node concept="2OqwBi" id="1MG9P_Ygm3I" role="37wK5m">
-                                                  <node concept="37vLTw" id="ifzjJo0JQB" role="2Oq$k0">
-                                                    <ref role="3cqZAo" node="5n4nn1a7a1f" resolve="subconcept" />
-                                                  </node>
-                                                  <node concept="FGMqu" id="1MG9P_YgmiU" role="2OqNvi" />
+                                                <node concept="37vLTw" id="ifzjJo0JQB" role="37wK5m">
+                                                  <ref role="3cqZAo" node="5n4nn1a7a1f" resolve="subconcept" />
                                                 </node>
-                                                <node concept="2OqwBi" id="17pH$TAMipx" role="37wK5m">
-                                                  <node concept="37vLTw" id="17pH$TAMipy" role="2Oq$k0">
-                                                    <ref role="3cqZAo" node="6B579NGqKwq" resolve="sourceNode" />
+                                                <node concept="2OqwBi" id="2lop6rSnUwL" role="37wK5m">
+                                                  <node concept="2JrnkZ" id="2lop6rSnUh0" role="2Oq$k0">
+                                                    <node concept="37vLTw" id="17pH$TAMipy" role="2JrQYb">
+                                                      <ref role="3cqZAo" node="6B579NGqKwq" resolve="sourceNode" />
+                                                    </node>
                                                   </node>
-                                                  <node concept="25OxAV" id="17pH$TAMipz" role="2OqNvi" />
+                                                  <node concept="liA8E" id="2lop6rSnUSv" role="2OqNvi">
+                                                    <ref role="37wK5l" to="mhbf:~SNode.getContainmentLink():org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+                                                  </node>
                                                 </node>
                                                 <node concept="10Nm6u" id="1MG9P_Ygmwe" role="37wK5m" />
                                               </node>

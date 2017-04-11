@@ -2,8 +2,8 @@
 <model ref="r:c3b9108d-307d-4038-b058-5193dd6f8e16(com.mbeddr.mpsutil.licensemanager.common.runtime.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -197,7 +197,7 @@
                     <ref role="3cqZAo" node="1m38ANCjS88" resolve="configuration" />
                   </node>
                   <node concept="3Tsc0h" id="6c5_CJDd3Zn" role="2OqNvi">
-                    <ref role="3TtcxE" to="lq3a:4w7It07pbAN" />
+                    <ref role="3TtcxE" to="lq3a:4w7It07pbAN" resolve="elements" />
                   </node>
                 </node>
                 <node concept="v3k3i" id="1m38ANCkwx7" role="2OqNvi">
@@ -217,7 +217,7 @@
                               <ref role="3cqZAo" node="1m38ANCkwxn" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="6c5_CJDd4fM" role="2OqNvi">
-                              <ref role="3Tt5mk" to="lq3a:4w7It07pjcA" />
+                              <ref role="3Tt5mk" to="lq3a:4w7It07pjcA" resolve="intention" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="1m38ANCkwxi" role="2OqNvi">
@@ -312,7 +312,7 @@
                     <ref role="3cqZAo" node="1K5OvKusk$z" resolve="configuration" />
                   </node>
                   <node concept="3Tsc0h" id="6c5_CJDd6TV" role="2OqNvi">
-                    <ref role="3TtcxE" to="lq3a:4w7It07pbAN" />
+                    <ref role="3TtcxE" to="lq3a:4w7It07pbAN" resolve="elements" />
                   </node>
                 </node>
                 <node concept="v3k3i" id="1K5OvKusmJx" role="2OqNvi">
@@ -332,7 +332,7 @@
                               <ref role="3cqZAo" node="1K5OvKusmJG" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="6c5_CJDd72H" role="2OqNvi">
-                              <ref role="3Tt5mk" to="lq3a:4w7It07pbHt" />
+                              <ref role="3Tt5mk" to="lq3a:4w7It07pbHt" resolve="editor" />
                             </node>
                           </node>
                           <node concept="3TrcHB" id="1K5OvKutfHI" role="2OqNvi">

@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -289,7 +290,6 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
@@ -1135,13 +1135,13 @@
               <node concept="37vLTw" id="3JMPeKaHThM" role="2Oq$k0">
                 <ref role="3cqZAo" node="3JMPeKaHTh_" resolve="expected" />
               </node>
-              <node concept="3NT_Vc" id="3JMPeKaHThN" role="2OqNvi" />
+              <node concept="2yIwOk" id="2lop6rSorab" role="2OqNvi" />
             </node>
             <node concept="2OqwBi" id="3JMPeKaHThO" role="3uHU7w">
               <node concept="37vLTw" id="3JMPeKaHThP" role="2Oq$k0">
                 <ref role="3cqZAo" node="3JMPeKaHThB" resolve="actual" />
               </node>
-              <node concept="3NT_Vc" id="3JMPeKaHThQ" role="2OqNvi" />
+              <node concept="2yIwOk" id="2lop6rSorkS" role="2OqNvi" />
             </node>
           </node>
           <node concept="9aQIb" id="3JMPeKaHThR" role="9aQIa">
@@ -1167,13 +1167,13 @@
                     <node concept="37vLTw" id="3JMPeKaHTi1" role="2Oq$k0">
                       <ref role="3cqZAo" node="3JMPeKaHTh_" resolve="expected" />
                     </node>
-                    <node concept="3NT_Vc" id="3JMPeKaHTi2" role="2OqNvi" />
+                    <node concept="2yIwOk" id="2lop6rSorpZ" role="2OqNvi" />
                   </node>
                   <node concept="2OqwBi" id="3JMPeKaHTi3" role="37wK5m">
                     <node concept="37vLTw" id="3JMPeKaHTi4" role="2Oq$k0">
                       <ref role="3cqZAo" node="3JMPeKaHThB" resolve="actual" />
                     </node>
-                    <node concept="3NT_Vc" id="3JMPeKaHTi5" role="2OqNvi" />
+                    <node concept="2yIwOk" id="2lop6rSorCB" role="2OqNvi" />
                   </node>
                 </node>
               </node>
