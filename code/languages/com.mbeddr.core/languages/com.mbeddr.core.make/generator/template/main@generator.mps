@@ -5,8 +5,8 @@
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
     <use id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -183,7 +183,7 @@
                       <node concept="2OqwBi" id="bzEfeAYMDO" role="2Oq$k0">
                         <node concept="30H73N" id="bzEfeAYMDN" role="2Oq$k0" />
                         <node concept="3TrEf2" id="bzEfeAYMDS" role="2OqNvi">
-                          <ref role="3Tt5mk" to="i2y7:bzEfeAYe94" />
+                          <ref role="3Tt5mk" to="i2y7:bzEfeAYe94" resolve="module" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="bzEfeAYMDX" role="2OqNvi">
@@ -218,7 +218,7 @@
                       <node concept="2OqwBi" id="bzEfeAYME9" role="2Oq$k0">
                         <node concept="30H73N" id="bzEfeAYMEa" role="2Oq$k0" />
                         <node concept="3TrEf2" id="bzEfeAYMEd" role="2OqNvi">
-                          <ref role="3Tt5mk" to="i2y7:bzEfeAYj5B" />
+                          <ref role="3Tt5mk" to="i2y7:bzEfeAYj5B" resolve="module" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="bzEfeAYMEc" role="2OqNvi">
@@ -246,7 +246,7 @@
             <node concept="3clFbF" id="bzEfeAYKXd" role="3cqZAp">
               <node concept="2OqwBi" id="bzEfeAYKXe" role="3clFbG">
                 <node concept="3Tsc0h" id="1EZSCJhkY5L" role="2OqNvi">
-                  <ref role="3TtcxE" to="i2y7:6_CUGSFHTH6" />
+                  <ref role="3TtcxE" to="i2y7:6_CUGSFHTH6" resolve="content" />
                 </node>
                 <node concept="30H73N" id="bzEfeAYKXg" role="2Oq$k0" />
               </node>

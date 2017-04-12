@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
@@ -206,7 +206,7 @@
               <node concept="2OqwBi" id="XYEPTipXwP" role="2Oq$k0">
                 <node concept="2Sf5sV" id="XYEPTipXwQ" role="2Oq$k0" />
                 <node concept="3TrEf2" id="XYEPTipXwR" role="2OqNvi">
-                  <ref role="3Tt5mk" to="48a0:4By$TDgYyKN" />
+                  <ref role="3Tt5mk" to="48a0:4By$TDgYyKN" resolve="suv" />
                 </node>
               </node>
               <node concept="2qgKlT" id="XYEPTipXwS" role="2OqNvi">
@@ -228,7 +228,7 @@
                 </node>
                 <node concept="1sne9v" id="XYEPTiqil7" role="33vP2m">
                   <node concept="1sne01" id="XYEPTiqil8" role="1sne8H">
-                    <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                    <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                     <node concept="1snrkl" id="XYEPTiqil9" role="1sne05">
                       <ref role="1snrk2" to="tpck:h0TrG11" resolve="name" />
                       <node concept="3cpWs3" id="XYEPTiqila" role="1snq_E">
@@ -246,19 +246,19 @@
                       </node>
                     </node>
                     <node concept="1sh8R2" id="XYEPTiqvKN" role="1sne05">
-                      <ref role="1sh8R3" to="48a0:2L0t9wJ0hAO" />
+                      <ref role="1sh8R3" to="48a0:2L0t9wJ0hAO" resolve="varRef" />
                       <node concept="2GrUjf" id="XYEPTiqwb9" role="1sh8R0">
                         <ref role="2Gs0qQ" node="XYEPTipXK0" resolve="var" />
                       </node>
                     </node>
                     <node concept="1sne01" id="XYEPTiqx01" role="1sne05">
-                      <ref role="1snh0D" to="48a0:2L0t9wJsu$3" />
+                      <ref role="1snh0D" to="48a0:2L0t9wJsu$3" resolve="constraint" />
                       <node concept="1shVQo" id="XYEPTiqxsA" role="ccFIB">
                         <ref role="1shVQp" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
                       </node>
                     </node>
                     <node concept="1sne01" id="XYEPTiqxPz" role="1sne05">
-                      <ref role="1snh0D" to="mj1l:hEaDaGor64" />
+                      <ref role="1snh0D" to="mj1l:hEaDaGor64" resolve="type" />
                       <node concept="3kUt_e" id="XYEPTiqydU" role="ccFIB">
                         <node concept="2OqwBi" id="XYEPTiqzrF" role="3kUt_f">
                           <node concept="2OqwBi" id="XYEPTiqyfX" role="2Oq$k0">
@@ -284,11 +284,11 @@
                   <node concept="2OqwBi" id="XYEPTipYd9" role="2Oq$k0">
                     <node concept="2Sf5sV" id="XYEPTipXZe" role="2Oq$k0" />
                     <node concept="3TrEf2" id="XYEPTipZlo" role="2OqNvi">
-                      <ref role="3Tt5mk" to="x27k:3CmSUB7Fp_k" />
+                      <ref role="3Tt5mk" to="x27k:3CmSUB7Fp_k" resolve="body" />
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="XYEPTiq1zv" role="2OqNvi">
-                    <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+                    <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="XYEPTiq7U0" role="2OqNvi">
