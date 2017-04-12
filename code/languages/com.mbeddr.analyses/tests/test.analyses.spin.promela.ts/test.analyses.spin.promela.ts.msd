@@ -10,8 +10,12 @@
     <dependency reexport="false">877b0e90-e1a6-4468-970c-dcb3f49f95ed(com.mbeddr.analyses.spin.promela)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:5d09074f-babf-4f2b-b78b-e9929af0f3be:com.mbeddr.analyses.base" version="0" />
     <language slang="l:6ded8a47-f30e-4acf-a5f2-a70ec5472558:com.mbeddr.analyses.base.verification_conditions" version="0" />
+    <language slang="l:9aeff3a1-b145-418c-a75b-9a6e331d7333:com.mbeddr.analyses.spin" version="0" />
     <language slang="l:877b0e90-e1a6-4468-970c-dcb3f49f95ed:com.mbeddr.analyses.spin.promela" version="0" />
+    <language slang="l:4ddb29eb-11e5-46c6-a894-6b8a4c38587d:com.mbeddr.analyses.spin.promela.patterns" version="0" />
+    <language slang="l:53bab999-e9c3-428a-80be-fef5bed08f55:com.mbeddr.cc.trace" version="0" />
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
     <language slang="l:2d7fadf5-33f6-4e80-a78f-0f739add2bde:com.mbeddr.core.buildconfig" version="4" />
     <language slang="l:223dd778-c44f-4ef3-9535-7aa7d12244a6:com.mbeddr.core.debug" version="0" />
@@ -21,6 +25,7 @@
     <language slang="l:3bf5377a-e904-4ded-9754-5a516023bfaa:com.mbeddr.core.pointers" version="0" />
     <language slang="l:a9d69647-0840-491e-bf39-2eb0805d2011:com.mbeddr.core.statements" version="1" />
     <language slang="l:efda956e-491e-4f00-ba14-36af2f213ecf:com.mbeddr.core.udt" version="1" />
+    <language slang="l:2693fc71-9b0e-4b05-ab13-f57227d675f2:com.mbeddr.core.util" version="0" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
     <language slang="l:a482b416-d0c9-473f-8f67-725ed642b3f3:com.mbeddr.mpsutil.breadcrumb" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
@@ -54,6 +59,9 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="6ded8a47-f30e-4acf-a5f2-a70ec5472558(com.mbeddr.analyses.base.verification_conditions)" version="0" />
     <module reference="877b0e90-e1a6-4468-970c-dcb3f49f95ed(com.mbeddr.analyses.spin.promela)" version="0" />
+    <module reference="5778c639-58c0-4209-a2fe-136f28e3ec3f(com.mbeddr.analyses.spin.promela.pluginSolution)" version="0" />
+    <module reference="e4586d76-86eb-4b19-862c-e5375e853c19(com.mbeddr.analyses.spin.promela.rt)" version="0" />
+    <module reference="4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="1" />
     <module reference="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" version="0" />
     <module reference="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" version="0" />
