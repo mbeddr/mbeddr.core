@@ -238,7 +238,6 @@
         <child id="6845119683729280452" name="icon" index="27igRh" />
         <child id="7962467864632399185" name="progressX" index="2gocG4" />
         <child id="7962467864633062782" name="progressHeight" index="2gqIGF" />
-        <child id="8108467228800445684" name="dialogImage" index="2t3ecf" />
         <child id="6108265972537182997" name="aboutScreen" index="2EqU2s" />
         <child id="6108265972537182996" name="splashScreen" index="2EqU2t" />
         <child id="6108265972537229337" name="buildNumber" index="2EteIg" />
@@ -1316,18 +1315,6 @@
             <property role="2Ry0Am" value="icons" />
             <node concept="2Ry0Ak" id="4QlxUWMXVW3" role="2Ry0An">
               <property role="2Ry0Am" value="MPS_16.png" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="398BVA" id="4QlxUWMXVWQ" role="2t3ecf">
-        <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="4QlxUWMXVWT" role="iGT6I">
-          <property role="2Ry0Am" value="rcp" />
-          <node concept="2Ry0Ak" id="4QlxUWMXVWW" role="2Ry0An">
-            <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="4QlxUWMXVWZ" role="2Ry0An">
-              <property role="2Ry0Am" value="mbeddr-logo.png" />
             </node>
           </node>
         </node>
@@ -3235,18 +3222,6 @@
             <property role="2Ry0Am" value="icons" />
             <node concept="2Ry0Ak" id="1BPeV_LjXtH" role="2Ry0An">
               <property role="2Ry0Am" value="mbeddr.ico" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="398BVA" id="1BPeV_LjXtI" role="2t3ecf">
-        <ref role="398BVh" node="1BPeV_LjXqH" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="1BPeV_LjXtJ" role="iGT6I">
-          <property role="2Ry0Am" value="rcp" />
-          <node concept="2Ry0Ak" id="1BPeV_LjXtK" role="2Ry0An">
-            <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="1BPeV_LjXtL" role="2Ry0An">
-              <property role="2Ry0Am" value="dialogImage.png" />
             </node>
           </node>
         </node>

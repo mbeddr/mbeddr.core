@@ -8476,7 +8476,7 @@
             </node>
             <node concept="2ShNRf" id="2hKTcZ5V8Mb" role="33vP2m">
               <node concept="1pGfFk" id="2hKTcZ5V9Gk" role="2ShVmc">
-                <ref role="37wK5l" to="b8lf:~SelectionInfoImpl.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="SelectionInfoImpl" />
+                <ref role="37wK5l" to="b8lf:~SelectionInfoImpl.&lt;init&gt;(java.lang.String,org.jetbrains.mps.openapi.module.SModuleReference)" resolve="SelectionInfoImpl" />
                 <node concept="2OqwBi" id="2hKTcZ5V8KV" role="37wK5m">
                   <node concept="2OqwBi" id="2hKTcZ5V8KW" role="2Oq$k0">
                     <node concept="Xjq3P" id="2hKTcZ5V8KX" role="2Oq$k0" />
