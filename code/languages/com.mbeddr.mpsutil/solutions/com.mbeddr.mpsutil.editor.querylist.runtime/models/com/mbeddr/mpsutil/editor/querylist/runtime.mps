@@ -820,13 +820,7 @@
         </node>
         <node concept="3clFbF" id="1BXECvJX1rN" role="3cqZAp">
           <node concept="1rXfSq" id="1BXECvJX1rM" role="3clFbG">
-            <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createInnerCells(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext):void" resolve="createInnerCells" />
-            <node concept="37vLTw" id="1BXECvJX1Ff" role="37wK5m">
-              <ref role="3cqZAo" to="emqf:~AbstractCellListHandler.myOwnerNode" resolve="myOwnerNode" />
-            </node>
-            <node concept="37vLTw" id="1BXECvJX1Mt" role="37wK5m">
-              <ref role="3cqZAo" node="1BXECvJWWX1" resolve="context" />
-            </node>
+            <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createInnerCells():void" resolve="createInnerCells" />
           </node>
         </node>
         <node concept="3clFbH" id="1BXECvJX3xK" role="3cqZAp" />
