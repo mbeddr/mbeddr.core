@@ -425,7 +425,7 @@
     </node>
     <node concept="2tJIrI" id="1ENIgcprBGK" role="jymVt" />
     <node concept="2YIFZL" id="73BQep1N5pi" role="jymVt">
-      <property role="TrG5h" value="saveTests" />
+      <property role="TrG5h" value="saveTest" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -547,9 +547,15 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="3Kl8TLCOODq" role="3cqZAp" />
+        <node concept="3clFbF" id="3Kl8TLCOQVH" role="3cqZAp">
+          <node concept="37vLTw" id="3Kl8TLCOQVF" role="3clFbG">
+            <ref role="3cqZAo" node="73BQep1N5pz" resolve="newEntry" />
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="73BQep1N5sI" role="1B3o_S" />
-      <node concept="3cqZAl" id="73BQep1N5sJ" role="3clF45" />
+      <node concept="3Tqbb2" id="3Kl8TLCONz5" role="3clF45" />
       <node concept="37vLTG" id="73BQep1N5sK" role="3clF46">
         <property role="TrG5h" value="tv" />
         <node concept="3uibUv" id="73BQep1N5sL" role="1tU5fm">
@@ -568,7 +574,7 @@
         </node>
       </node>
       <node concept="NWlO9" id="73BQep1PRzG" role="lGtFl">
-        <property role="NWlVz" value="Synthethise the function and saves the tests in the same implementation module." />
+        <property role="NWlVz" value="Synthethise a function where test vector is saved; the function is added to an implementation module." />
       </node>
     </node>
     <node concept="2tJIrI" id="73BQep1PN7z" role="jymVt" />
