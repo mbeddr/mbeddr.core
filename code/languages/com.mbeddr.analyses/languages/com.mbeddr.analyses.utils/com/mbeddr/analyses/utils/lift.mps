@@ -51,7 +51,6 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -297,7 +296,6 @@
             <node concept="2jxLKc" id="b$zJlAIJFp" role="1tU5fm" />
           </node>
         </node>
-        <node concept="3clFbH" id="b$zJlAIMOl" role="3cqZAp" />
         <node concept="YS8fn" id="6MQFh3uqooV" role="3cqZAp">
           <node concept="2ShNRf" id="6MQFh3uqoQs" role="YScLw">
             <node concept="1pGfFk" id="6MQFh3uqplu" role="2ShVmc">
