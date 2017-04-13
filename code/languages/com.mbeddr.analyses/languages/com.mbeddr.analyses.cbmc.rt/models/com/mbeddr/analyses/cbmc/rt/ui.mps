@@ -860,13 +860,6 @@
                 <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
               </node>
             </node>
-            <node concept="2ShNRf" id="1GgrF83gyqB" role="33vP2m">
-              <node concept="2Jqq0_" id="1GgrF83gz5F" role="2ShVmc">
-                <node concept="3uibUv" id="1GgrF83gzcM" role="HW$YZ">
-                  <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="3clFbJ" id="1GgrF83guaJ" role="3cqZAp">
