@@ -1206,6 +1206,52 @@
         </node>
       </node>
       <node concept="2tJIrI" id="6CmzIMnjrbS" role="jymVt" />
+      <node concept="3clFb_" id="1lsowDUc5N5" role="jymVt">
+        <property role="1EzhhJ" value="false" />
+        <property role="2aFKle" value="false" />
+        <property role="TrG5h" value="getPosetKey" />
+        <node concept="3Tm1VV" id="1lsowDUc5N6" role="1B3o_S" />
+        <node concept="3uibUv" id="1lsowDUc5N7" role="3clF45">
+          <ref role="3uigEE" to="pzen:1cLRCO10m9S" resolve="IPosetInputKey" />
+        </node>
+        <node concept="3clFbS" id="1lsowDUc5N8" role="3clF47">
+          <node concept="3cpWs6" id="1lsowDUc5N9" role="3cqZAp">
+            <node concept="2ShNRf" id="1lsowDUc5Na" role="3cqZAk">
+              <node concept="1pGfFk" id="1lsowDUc5Nb" role="2ShVmc">
+                <ref role="37wK5l" to="fxl9:1cLRCO10BHC" resolve="LatticeInputKey" />
+                <node concept="Xl_RD" id="1lsowDUc5Nc" role="37wK5m">
+                  <property role="Xl_RC" value="keyID" />
+                  <node concept="17Uvod" id="1lsowDUc5Nd" role="lGtFl">
+                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                    <property role="2qtEX9" value="value" />
+                    <node concept="3zFVjK" id="1lsowDUc5Ne" role="3zH0cK">
+                      <node concept="3clFbS" id="1lsowDUc5Nf" role="2VODD2">
+                        <node concept="3cpWs6" id="1lsowDUc5Ng" role="3cqZAp">
+                          <node concept="2OqwBi" id="1lsowDUc5Nh" role="3cqZAk">
+                            <node concept="30H73N" id="1lsowDUc5Nj" role="2Oq$k0" />
+                            <node concept="2qgKlT" id="1lsowDUc5Nn" role="2OqNvi">
+                              <ref role="37wK5l" to="gcg1:5J57cTDTw4c" resolve="getFullyQualifiedName" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="1lsowDUc5No" role="37wK5m">
+                  <ref role="1Pybhc" node="78LWM4VhdYQ" resolve="template_ILatticeDefinitionModule" />
+                  <ref role="37wK5l" node="LXEcpprmlT" resolve="instance" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2AHcQZ" id="1lsowDUc5N_" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="1lsowDUbUOC" role="jymVt" />
+      <node concept="2tJIrI" id="1lsowDUbV_f" role="jymVt" />
       <node concept="3Tm1VV" id="6CmzIMnjaXl" role="1B3o_S" />
       <node concept="3uibUv" id="6CmzIMnjez_" role="EKbjA">
         <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
@@ -1215,6 +1261,9 @@
       </node>
       <node concept="3uibUv" id="6CmzIMnjeOL" role="EKbjA">
         <ref role="3uigEE" to="pzen:6CmzIMnhCSR" resolve="IWithOrdinal" />
+      </node>
+      <node concept="3uibUv" id="1lsowDUc3VG" role="EKbjA">
+        <ref role="3uigEE" to="pzen:1lsowDU7i0a" resolve="IPosetInputKeyProvider" />
       </node>
       <node concept="2ZBi8u" id="6CmzIMnjeTX" role="lGtFl">
         <ref role="2rW$FS" node="6CmzIMniZqB" resolve="mapping_ITypeConstructor_ClassConcept_LatticeElement" />
@@ -1323,7 +1372,7 @@
         <ref role="3uigEE" node="78LWM4VhdYQ" resolve="template_ILatticeDefinitionModule" />
       </node>
     </node>
-    <node concept="2tJIrI" id="26S5csTqxHt" role="jymVt" />
+    <node concept="2tJIrI" id="1lsowDU8h7J" role="jymVt" />
     <node concept="312cEu" id="LXEcppqSpe" role="jymVt">
       <property role="2bfB8j" value="false" />
       <property role="1sVAO0" value="false" />
