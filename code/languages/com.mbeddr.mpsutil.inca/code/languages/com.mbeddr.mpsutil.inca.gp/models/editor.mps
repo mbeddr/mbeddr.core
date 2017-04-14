@@ -2,9 +2,9 @@
 <model ref="r:bc16ef10-9f09-4540-9cb7-941117b2dffd(com.mbeddr.mpsutil.inca.gp.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -90,7 +90,6 @@
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -229,8 +228,8 @@
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -347,7 +346,6 @@
     <property role="3GE5qa" value="content" />
     <ref role="1XX52x" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
     <node concept="3EZMnI" id="hzePLP2" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <node concept="LD5Jc" id="hH01COl" role="3F10Kt">
         <property role="LDHlv" value="next-line" />
       </node>
@@ -660,9 +658,6 @@
                   <property role="VOm3f" value="true" />
                 </node>
               </node>
-              <node concept="pj6Ft" id="7apEgWbIFgo" role="3F10Kt">
-                <property role="VOm3f" value="false" />
-              </node>
               <node concept="2iRkQZ" id="3r83Ks0g8fR" role="2czzBx" />
               <node concept="ljvvj" id="7apEgWbIFgq" role="3F10Kt">
                 <property role="VOm3f" value="false" />
@@ -791,12 +786,14 @@
                 </node>
                 <node concept="1PxgMI" id="5xvu2kSJBSz" role="33vP2m">
                   <property role="1BlNFB" value="true" />
-                  <ref role="1m5ApE" to="55iy:5Dmozv0zaht" resolve="GraphPatternConceptConstraint" />
                   <node concept="2OqwBi" id="5xvu2kSJBS$" role="1m5AlR">
                     <node concept="2kS8pE" id="5xvu2kSJBS_" role="2Oq$k0" />
                     <node concept="liA8E" id="5xvu2kSJBSA" role="2OqNvi">
                       <ref role="37wK5l" to="uddc:~TransformationMenuContext.getNode():org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
                     </node>
+                  </node>
+                  <node concept="chp4Y" id="2RSm1Cz26ID" role="3oSUPX">
+                    <ref role="cht4Q" to="55iy:5Dmozv0zaht" resolve="GraphPatternConceptConstraint" />
                   </node>
                 </node>
               </node>
@@ -853,12 +850,14 @@
                   <ref role="ehGHo" to="55iy:5Dmozv0zaht" resolve="GraphPatternConceptConstraint" />
                 </node>
                 <node concept="1PxgMI" id="5xvu2kSHQQ8" role="33vP2m">
-                  <ref role="1m5ApE" to="55iy:5Dmozv0zaht" resolve="GraphPatternConceptConstraint" />
                   <node concept="2OqwBi" id="5xvu2kSHQQ9" role="1m5AlR">
                     <node concept="2kS8pE" id="5xvu2kSHQQa" role="2Oq$k0" />
                     <node concept="liA8E" id="5xvu2kSHQQb" role="2OqNvi">
                       <ref role="37wK5l" to="uddc:~TransformationMenuContext.getNode():org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
                     </node>
+                  </node>
+                  <node concept="chp4Y" id="2RSm1Cz26IF" role="3oSUPX">
+                    <ref role="cht4Q" to="55iy:5Dmozv0zaht" resolve="GraphPatternConceptConstraint" />
                   </node>
                 </node>
               </node>
