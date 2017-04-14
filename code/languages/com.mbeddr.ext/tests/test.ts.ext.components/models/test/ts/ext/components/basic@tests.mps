@@ -22,6 +22,7 @@
     <import index="j807" ref="r:54210dde-4071-421e-b973-a22bb864eeac(com.mbeddr.core.pointers.typesystem)" />
     <import index="u2l0" ref="r:39d65015-9994-4ec8-bfc1-fb277098386e(com.mbeddr.ext.components.units.typesystem)" />
     <import index="go54" ref="r:a7e7800a-15b6-4c02-ae4d-6b40a48c7370(com.mbeddr.core.statements.typesystem)" />
+    <import index="iowh" ref="r:c0815ac4-d2ac-4cc2-bba3-ad9f68c94008(com.mbeddr.ext.components.embedded.typesystem)" implicit="true" />
     <import index="cmgk" ref="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" implicit="true" />
   </imports>
   <registry>
@@ -661,8 +662,8 @@
             <ref role="2EWCuU" node="3PT6Z48LJUu" resolve="CAbstract" />
             <node concept="7CXmI" id="3lIakVHnG2P" role="lGtFl">
               <node concept="1TM$A" id="6qOUCDpJjZ5" role="7EUXB">
-                <node concept="2PYRI3" id="6qOUCDpJjZ6" role="3lydEf">
-                  <ref role="39XzEq" to="e39d:3PT6Z48L3oy" />
+                <node concept="2PYRI3" id="2IjYGoFb6IP" role="3lydEf">
+                  <ref role="39XzEq" to="iowh:3PT6Z48L3oy" />
                 </node>
               </node>
             </node>
@@ -672,8 +673,8 @@
             <ref role="2EWCuU" node="6hS8P3pzf1O" resolve="CSub2" />
             <node concept="7CXmI" id="3lIakVHnG2E" role="lGtFl">
               <node concept="1TM$A" id="6qOUCDpJ5uq" role="7EUXB">
-                <node concept="2PYRI3" id="6qOUCDpJ5ur" role="3lydEf">
-                  <ref role="39XzEq" to="e39d:3PT6Z48L3oy" />
+                <node concept="2PYRI3" id="2IjYGoFb6IT" role="3lydEf">
+                  <ref role="39XzEq" to="iowh:3PT6Z48L3oy" />
                 </node>
               </node>
             </node>
@@ -1369,13 +1370,13 @@
             <ref role="2EWCuU" node="2ZUGF54kk7R" resolve="Subject" />
             <node concept="7CXmI" id="3lIakVHnG2t" role="lGtFl">
               <node concept="1TM$A" id="6qOUCDpHedn" role="7EUXB">
-                <node concept="2PYRI3" id="6qOUCDpHedo" role="3lydEf">
-                  <ref role="39XzEq" to="e39d:LUz4xAqU1_" />
+                <node concept="2PYRI3" id="2IjYGoFbKz3" role="3lydEf">
+                  <ref role="39XzEq" to="iowh:LUz4xAqU1_" />
                 </node>
               </node>
               <node concept="1TM$A" id="6qOUCDpHedp" role="7EUXB">
-                <node concept="2PYRI3" id="6qOUCDpHedq" role="3lydEf">
-                  <ref role="39XzEq" to="e39d:2fh5q8VJ074" />
+                <node concept="2PYRI3" id="2IjYGoFbBK7" role="3lydEf">
+                  <ref role="39XzEq" to="iowh:2fh5q8VJ074" />
                 </node>
               </node>
             </node>

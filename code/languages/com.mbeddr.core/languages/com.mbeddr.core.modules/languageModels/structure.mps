@@ -553,7 +553,7 @@
       <ref role="PrY4T" to="mj1l:6mfXVgRsmwb" resolve="IVoidTypeContainer" />
     </node>
     <node concept="PrWs8" id="4$HG0yY9G71" role="PzmwI">
-      <ref role="PrY4T" to="yq40:4$HG0yY9G70" resolve="IsAssignableFromNull" />
+      <ref role="PrY4T" to="yq40:4$HG0yY9G70" resolve="INullableType" />
     </node>
     <node concept="1TJgyj" id="7qHzltJ03is" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
