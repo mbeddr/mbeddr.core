@@ -72,7 +72,18 @@ task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platfor
     outputs.dir("$rootDir/artifacts/com.mbeddr.platform.distribution")
 }
 
-task publish_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
+task build_inca(type: BuildLanguages, dependsOn: build_platform) {
+    script scriptFile('com.mbeddr.mpsutil.inca/build.xml')
+}
+
+task test_inca(type: TestLanguages, dependsOn: build_inca) {
+    script scriptFile('com.mbeddr.mpsutil.inca/build-ts-tests.xml')
+}
+
+task test_platformLike(dependsOn: [test_inca, test_mbeddr_platform]) {}
+
+
+task publish_mbeddrPlatform(type: Zip, dependsOn: test_platformLike) {
     archiveName 'com.mbeddr.platform.zip'
     from artifactsDir
     include "com.mbeddr.platform/**"
@@ -116,5 +127,6 @@ publishing {
                 }
             }
         }
+        
     }
 }
