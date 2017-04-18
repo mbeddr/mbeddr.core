@@ -4019,15 +4019,16 @@
                       <node concept="3$xsQk" id="2aWpJMnxzFj" role="3$ytzL">
                         <node concept="3clFbS" id="2aWpJMnxzFk" role="2VODD2">
                           <node concept="3cpWs6" id="2aWpJMnxzIu" role="3cqZAp">
-                            <node concept="2OqwBi" id="2aWpJMn$85n" role="3cqZAk">
-                              <node concept="2OqwBi" id="2aWpJMnx$fU" role="2Oq$k0">
-                                <node concept="30H73N" id="2aWpJMnx$4Q" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="2aWpJMnx$pI" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="hqsm:7a3nU34ZPCO" resolve="joinTypeDef" />
+                            <node concept="2OqwBi" id="4j7_Zk5apY2" role="3cqZAk">
+                              <node concept="1iwH7S" id="4j7_Zk5apO3" role="2Oq$k0" />
+                              <node concept="1iwH70" id="4j7_Zk5aq2Z" role="2OqNvi">
+                                <ref role="1iwH77" node="3B59fJN3v6$" resolve="mapping_JoinTypeDef_StaticFieldDeclaration" />
+                                <node concept="2OqwBi" id="2aWpJMnx$fU" role="1iwH7V">
+                                  <node concept="30H73N" id="2aWpJMnx$4Q" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="2aWpJMnx$pI" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="hqsm:7a3nU34ZPCO" resolve="joinTypeDef" />
+                                  </node>
                                 </node>
-                              </node>
-                              <node concept="3TrcHB" id="2aWpJMn$8jC" role="2OqNvi">
-                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                               </node>
                             </node>
                           </node>
