@@ -1490,16 +1490,9 @@
             </node>
           </node>
         </node>
-        <node concept="2kFOW8" id="3z4m8Hkzolv" role="2tnRJD">
-          <node concept="3clFbS" id="3z4m8Hkzolw" role="2VODD2">
-            <node concept="3clFbF" id="3z4m8HkzoCC" role="3cqZAp">
-              <node concept="2OqwBi" id="3z4m8HkzoR3" role="3clFbG">
-                <node concept="30H73N" id="3z4m8HkzoCB" role="2Oq$k0" />
-                <node concept="1$rogu" id="3z4m8HkzsqV" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
+      </node>
+      <node concept="29HgVG" id="1rTYOflcrsn" role="lGtFl">
+        <property role="34cw8o" value="copy function, but process references of internal elements (e.g. FunctionCall)" />
       </node>
     </node>
     <node concept="n94m4" id="1x_Jrt9Ngzc" role="lGtFl">
