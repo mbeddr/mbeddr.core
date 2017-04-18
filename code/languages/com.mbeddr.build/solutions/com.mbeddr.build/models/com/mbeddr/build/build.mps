@@ -5889,6 +5889,12 @@
               <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
             </node>
           </node>
+          <node concept="1SiIV0" id="6OFMQWSkoBW" role="3bR37C">
+            <node concept="3bR9La" id="6OFMQWSkoBX" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="3p0OY6VwAvW" role="3bR37C">
           <node concept="3bR9La" id="3p0OY6VwAvX" role="1SiIV1">
