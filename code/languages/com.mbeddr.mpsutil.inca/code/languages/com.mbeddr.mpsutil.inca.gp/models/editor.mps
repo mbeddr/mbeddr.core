@@ -658,9 +658,6 @@
                   <property role="VOm3f" value="true" />
                 </node>
               </node>
-              <node concept="pj6Ft" id="7apEgWbIFgo" role="3F10Kt">
-                <property role="VOm3f" value="false" />
-              </node>
               <node concept="2iRkQZ" id="3r83Ks0g8fR" role="2czzBx" />
               <node concept="ljvvj" id="7apEgWbIFgq" role="3F10Kt">
                 <property role="VOm3f" value="false" />
@@ -795,7 +792,7 @@
                       <ref role="37wK5l" to="uddc:~TransformationMenuContext.getNode():org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
                     </node>
                   </node>
-                  <node concept="chp4Y" id="5CkU_dHkz69" role="3oSUPX">
+                  <node concept="chp4Y" id="2RSm1Cz26ID" role="3oSUPX">
                     <ref role="cht4Q" to="55iy:5Dmozv0zaht" resolve="GraphPatternConceptConstraint" />
                   </node>
                 </node>
@@ -859,7 +856,7 @@
                       <ref role="37wK5l" to="uddc:~TransformationMenuContext.getNode():org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
                     </node>
                   </node>
-                  <node concept="chp4Y" id="5CkU_dHkz60" role="3oSUPX">
+                  <node concept="chp4Y" id="2RSm1Cz26IF" role="3oSUPX">
                     <ref role="cht4Q" to="55iy:5Dmozv0zaht" resolve="GraphPatternConceptConstraint" />
                   </node>
                 </node>

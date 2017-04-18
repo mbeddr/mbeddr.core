@@ -3,6 +3,9 @@
   <component name="MigrationProperties">
     <entry key="jetbrains.mps.cleanExp_3.4" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v34.EngagedLanguagesImports" value="executed" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v35.EditorGeneratorRefactoring" value="executed" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v35.RemoveHistoryFiles" value="executed" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v35.SetGenRequiredToEmptyAspects" value="executed" />
     <entry key="jetbrains.mps.javaVersionMigration_JDKDefault" value="executed" />
   </component>
 </project>

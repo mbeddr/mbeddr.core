@@ -14,7 +14,7 @@
   </dependencies>
   <languageVersions>
     <language slang="l:b802a056-92a2-4fbc-902e-f8e5004c331f:com.mbeddr.mpsutil.inca.core" version="0" />
-    <language slang="l:e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2:com.mbeddr.mpsutil.inca.data" version="-1" />
+    <language slang="l:e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2:com.mbeddr.mpsutil.inca.data" version="0" />
     <language slang="l:8c9a2720-9d21-4370-a226-819eb3e76e1e:com.mbeddr.mpsutil.inca.fun" version="0" />
     <language slang="l:cd2909da-ecb4-49dc-b176-33e5c619e516:com.mbeddr.mpsutil.inca.gp" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />

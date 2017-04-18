@@ -5369,7 +5369,7 @@
                                 <node concept="37vLTw" id="7VT_7g2uFXG" role="1m5AlR">
                                   <ref role="3cqZAo" node="4dLFELwoxWv" resolve="activeRoot" />
                                 </node>
-                                <node concept="chp4Y" id="5CkU_dHkz8b" role="3oSUPX">
+                                <node concept="chp4Y" id="2RSm1Cz26Kx" role="3oSUPX">
                                   <ref role="cht4Q" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
                                 </node>
                               </node>
@@ -8489,15 +8489,10 @@
                     <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="5M8WS0jPpou" role="37wK5m">
-                  <node concept="37shsh" id="5M8WS0jPms6" role="2Oq$k0">
-                    <node concept="20RdaH" id="5M8WS0jPnQX" role="37shsm">
-                      <property role="20Rdg5" value="50774306-a9df-40b3-8571-64880ad234e2" />
-                      <property role="20Rdg7" value="com.mbeddr.mpsutil.inca.ui" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="5M8WS0jPrer" role="2OqNvi">
-                    <ref role="37wK5l" to="lui2:~SModuleReference.getModuleName():java.lang.String" resolve="getModuleName" />
+                <node concept="37shsh" id="5M8WS0jPms6" role="37wK5m">
+                  <node concept="20RdaH" id="5M8WS0jPnQX" role="37shsm">
+                    <property role="20Rdg5" value="50774306-a9df-40b3-8571-64880ad234e2" />
+                    <property role="20Rdg7" value="com.mbeddr.mpsutil.inca.ui" />
                   </node>
                 </node>
               </node>

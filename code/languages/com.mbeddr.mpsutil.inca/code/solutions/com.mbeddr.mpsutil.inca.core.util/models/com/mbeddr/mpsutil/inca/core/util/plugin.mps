@@ -297,10 +297,12 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -1162,13 +1164,14 @@
                     <node concept="37vLTw" id="3e1iAvwku0h" role="2Oq$k0">
                       <ref role="3cqZAo" node="2aI$NQe_GXz" resolve="current" />
                     </node>
-                    <node concept="25OxAV" id="3e1iAvwku0i" role="2OqNvi" />
+                    <node concept="25OxAV" id="2RSm1CzrG3_" role="2OqNvi" />
                   </node>
                   <node concept="2qgKlT" id="3e1iAvwku0j" role="2OqNvi">
                     <ref role="37wK5l" to="tpcn:hEwIfAe" resolve="getGenuineRole" />
                   </node>
                 </node>
               </node>
+              <node concept="15s5l7" id="2RSm1CzrTvA" role="lGtFl" />
             </node>
             <node concept="3clFbJ" id="3e1iAvwkuer" role="3cqZAp">
               <node concept="3clFbS" id="3e1iAvwkuet" role="3clFbx">
@@ -1809,7 +1812,7 @@
                         <node concept="2GrUjf" id="3bXXt3NaWQk" role="1m5AlR">
                           <ref role="2Gs0qQ" node="3bXXt3NaWQc" resolve="propertyDeclaration" />
                         </node>
-                        <node concept="chp4Y" id="5CkU_dHkz7m" role="3oSUPX">
+                        <node concept="chp4Y" id="2RSm1Cz26JE" role="3oSUPX">
                           <ref role="cht4Q" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
                         </node>
                       </node>
@@ -1821,7 +1824,7 @@
                         <node concept="2GrUjf" id="3bXXt3NaWQo" role="1m5AlR">
                           <ref role="2Gs0qQ" node="3bXXt3NaWQc" resolve="propertyDeclaration" />
                         </node>
-                        <node concept="chp4Y" id="5CkU_dHkz7j" role="3oSUPX">
+                        <node concept="chp4Y" id="2RSm1Cz26JD" role="3oSUPX">
                           <ref role="cht4Q" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
                         </node>
                       </node>
@@ -2489,7 +2492,7 @@
                             <node concept="2GrUjf" id="SSjGGIDBhg" role="1m5AlR">
                               <ref role="2Gs0qQ" node="SSjGGID9Y8" resolve="_import" />
                             </node>
-                            <node concept="chp4Y" id="5CkU_dHkz7o" role="3oSUPX">
+                            <node concept="chp4Y" id="2RSm1Cz26JH" role="3oSUPX">
                               <ref role="cht4Q" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
                             </node>
                           </node>
@@ -2554,14 +2557,14 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6fymoI4LNOs" role="1B3o_S" />
-      <node concept="2hMVRd" id="7a3nU35bOmk" role="3clF45">
-        <node concept="3Tqbb2" id="6fymoI4LNPw" role="2hN53Y">
-          <ref role="ehGHo" to="hqsm:3VwoHXNAdmh" resolve="IPattern" />
-        </node>
-      </node>
       <node concept="37vLTG" id="6fymoI4LNPE" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3Tqbb2" id="6fymoI4LNPD" role="1tU5fm" />
+      </node>
+      <node concept="2hMVRd" id="2RSm1CztNmH" role="3clF45">
+        <node concept="3Tqbb2" id="2RSm1CztNmI" role="2hN53Y">
+          <ref role="ehGHo" to="hqsm:3VwoHXNAdmh" resolve="IPattern" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7a3nU354A8D" role="jymVt" />
@@ -2652,7 +2655,7 @@
                           <node concept="2GrUjf" id="7a3nU354_su" role="1m5AlR">
                             <ref role="2Gs0qQ" node="7a3nU354_sg" resolve="_import" />
                           </node>
-                          <node concept="chp4Y" id="5CkU_dHkz7k" role="3oSUPX">
+                          <node concept="chp4Y" id="2RSm1Cz26JI" role="3oSUPX">
                             <ref role="cht4Q" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
                           </node>
                         </node>
@@ -2698,7 +2701,7 @@
         <property role="TrG5h" value="context" />
         <node concept="3Tqbb2" id="7a3nU354_sS" role="1tU5fm" />
       </node>
-      <node concept="2hMVRd" id="7a3nU35bT5m" role="3clF45">
+      <node concept="2hMVRd" id="2RSm1CztL$H" role="3clF45">
         <node concept="3Tqbb2" id="7a3nU35bT5n" role="2hN53Y">
           <ref role="ehGHo" to="hqsm:7a3nU354JVn" resolve="IJoinTypeDef" />
         </node>
@@ -3055,7 +3058,7 @@
                     <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
                   </node>
                 </node>
-                <node concept="chp4Y" id="5CkU_dHkz7n" role="3oSUPX">
+                <node concept="chp4Y" id="2RSm1Cz26JF" role="3oSUPX">
                   <ref role="cht4Q" to="tpck:hYa1RjM" resolve="IType" />
                 </node>
               </node>
@@ -3221,7 +3224,7 @@
                     <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
                   </node>
                 </node>
-                <node concept="chp4Y" id="5CkU_dHkz7l" role="3oSUPX">
+                <node concept="chp4Y" id="2RSm1Cz26JG" role="3oSUPX">
                   <ref role="cht4Q" to="tpck:hYa1RjM" resolve="IType" />
                 </node>
               </node>
