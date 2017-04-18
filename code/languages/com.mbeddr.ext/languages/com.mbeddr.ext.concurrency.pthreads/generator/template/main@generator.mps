@@ -1063,6 +1063,32 @@
             </node>
             <node concept="3HeUPQ" id="1UML6duNp8j" role="1cecVj">
               <ref role="3Hsz6X" node="1UML6duNrrJ" resolve="q" />
+              <node concept="1ZhdrF" id="6OFMQWQYwqA" role="lGtFl">
+                <property role="P3scX" value="2693fc71-9b0e-4b05-ab13-f57227d675f2/3826728732360501495/3826728732365255740" />
+                <property role="2qtEX8" value="queue" />
+                <node concept="3$xsQk" id="6OFMQWQYwqB" role="3$ytzL">
+                  <node concept="3clFbS" id="6OFMQWQYwqC" role="2VODD2">
+                    <node concept="3clFbF" id="6OFMQWQYwrG" role="3cqZAp">
+                      <node concept="2OqwBi" id="6OFMQWQYznI" role="3clFbG">
+                        <node concept="1PxgMI" id="6OFMQWQYySa" role="2Oq$k0">
+                          <node concept="chp4Y" id="6OFMQWQYyZU" role="3oSUPX">
+                            <ref role="cht4Q" to="k146:4mSSgpjxUsy" resolve="QueueType" />
+                          </node>
+                          <node concept="2OqwBi" id="6OFMQWQYwrI" role="1m5AlR">
+                            <node concept="3TrEf2" id="6OFMQWQYwrJ" role="2OqNvi">
+                              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+                            </node>
+                            <node concept="30H73N" id="6OFMQWQYwrK" role="2Oq$k0" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="6OFMQWQYzX_" role="2OqNvi">
+                          <ref role="3Tt5mk" to="k146:4mSSgpjxUsz" resolve="queue" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="17Uvod" id="1UML6duNoSK" role="lGtFl">
               <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
