@@ -2,7 +2,7 @@
 <model ref="r:c3d24b1c-39aa-4df3-b575-dfaa7d95bc02(com.mbeddr.analyses.lantest.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -199,8 +199,8 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -336,10 +336,12 @@
                 <ref role="3cqZAo" node="5oO2AcZyqEv" resolve="proj" />
               </node>
               <node concept="1PxgMI" id="484XVyxQ6s1" role="37wK5m">
-                <ref role="1m5ApE" to="gfdq:4XCJ8CcQ6Nj" resolve="LantestConfig" />
                 <node concept="2OqwBi" id="484XVyxQ5RK" role="1m5AlR">
                   <node concept="13iPFW" id="484XVyxQ5Hx" role="2Oq$k0" />
                   <node concept="1mfA1w" id="484XVyxQ6ar" role="2OqNvi" />
+                </node>
+                <node concept="chp4Y" id="79i$vAY7sfh" role="3oSUPX">
+                  <ref role="cht4Q" to="gfdq:4XCJ8CcQ6Nj" resolve="LantestConfig" />
                 </node>
               </node>
             </node>

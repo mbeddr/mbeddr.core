@@ -2,7 +2,7 @@
 <model ref="r:30f47081-3e90-4443-97b3-5c98d574a80d(com.mbeddr.mpsutil.margincell.editor.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -27,7 +27,7 @@
   <node concept="1M2fIO" id="5q2yETTclA">
     <ref role="1M2myG" to="tkb5:5q2yETTckR" resolve="MarginCell" />
     <node concept="1N5Pfh" id="5q2yETTclB" role="1Mr941">
-      <ref role="1N5Vy1" to="tkb5:5q2yETTckT" />
+      <ref role="1N5Vy1" to="tkb5:5q2yETTckT" resolve="marginContents" />
       <node concept="1dDu$B" id="5q2yETTclC" role="1N6uqs">
         <ref role="1dDu$A" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
       </node>

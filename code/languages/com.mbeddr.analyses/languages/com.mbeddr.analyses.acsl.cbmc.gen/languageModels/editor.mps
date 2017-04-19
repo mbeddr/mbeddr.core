@@ -2,7 +2,7 @@
 <model ref="r:3a6613fd-81c9-4043-9ffa-56f3076bbe59(com.mbeddr.analyses.acsl.cbmc.gen.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -67,7 +67,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -105,7 +105,7 @@
           <node concept="3clFbF" id="5iBCJz7sLQe" role="3cqZAp">
             <node concept="2OqwBi" id="5iBCJz7sLS9" role="3clFbG">
               <node concept="0IXxy" id="5iBCJz7sLQd" role="2Oq$k0" />
-              <node concept="1PgB_6" id="5iBCJz7sM20" role="2OqNvi" />
+              <node concept="3YRAZt" id="5iBCJz7sM20" role="2OqNvi" />
             </node>
           </node>
         </node>

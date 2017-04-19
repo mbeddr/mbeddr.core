@@ -2,7 +2,7 @@
 <model ref="r:43fa966b-22ce-4dca-976c-c25d74f40558(com.mbeddr.mpsutil.propertydefault.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -48,8 +48,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
-        <property id="1073389446426" name="gridLayout" index="3EZMnz" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -69,7 +67,6 @@
   <node concept="24kQdi" id="1m4fy7KJmAM">
     <ref role="1XX52x" to="d5g1:1m4fy7KJi3Z" resolve="NodePropertyConstraintDefault" />
     <node concept="3EZMnI" id="gGEuop7" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <node concept="3F0ifn" id="gI6ogRU" role="3EZMnx">
         <property role="3F0ifm" value="property" />
       </node>
@@ -120,8 +117,6 @@
         </node>
       </node>
       <node concept="3EZMnI" id="1P_b4lPTC6x" role="3EZMnx">
-        <property role="3EZMnw" value="true" />
-        <property role="3EZMnz" value="true" />
         <node concept="lj46D" id="1P_b4lPTC6y" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -161,8 +156,6 @@
   <node concept="24kQdi" id="1m4fy7KJmNJ">
     <ref role="1XX52x" to="d5g1:1m4fy7KI9J1" resolve="ConstraintFunction_PropertyDefault" />
     <node concept="3EZMnI" id="1m4fy7KJmP9" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
-      <property role="3EZMnz" value="true" />
       <node concept="VPM3Z" id="1m4fy7KJmPb" role="3F10Kt">
         <property role="VOm3f" value="false" />
       </node>

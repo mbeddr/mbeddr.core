@@ -2,11 +2,11 @@
 <model ref="r:2d5d2920-efaf-41cc-8788-e09a767f43b8(test.analyses.acsl.function_contracts@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
   </languages>
   <imports>
     <import index="rbq9" ref="r:e9339685-9249-4681-a8f5-318d0236a4a8(com.mbeddr.analyses.cbmc.rt.counterexample.raw)" />
@@ -67,7 +67,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -205,7 +204,7 @@
               </node>
               <node concept="3vwNmj" id="2$KQXNUNlR8" role="3cqZAp">
                 <node concept="2OqwBi" id="2$KQXNUNlR9" role="3vwVQn">
-                  <node concept="3cpWsa" id="2$KQXNUNlRa" role="2Oq$k0">
+                  <node concept="37vLTw" id="2$KQXNUNlRa" role="2Oq$k0">
                     <ref role="3cqZAo" node="2$KQXNUNlR2" resolve="res0" />
                   </node>
                   <node concept="liA8E" id="2$KQXNUNlRb" role="2OqNvi">
@@ -234,7 +233,7 @@
               </node>
               <node concept="3vwNmj" id="2$KQXNUNvsP" role="3cqZAp">
                 <node concept="2OqwBi" id="2$KQXNUNvsQ" role="3vwVQn">
-                  <node concept="3cpWsa" id="2$KQXNUNvsR" role="2Oq$k0">
+                  <node concept="37vLTw" id="2$KQXNUNvsR" role="2Oq$k0">
                     <ref role="3cqZAo" node="2$KQXNUNvsK" resolve="res1" />
                   </node>
                   <node concept="liA8E" id="2$KQXNUNvsS" role="2OqNvi">
@@ -263,7 +262,7 @@
               </node>
               <node concept="3vwNmj" id="2$KQXNUNw3y" role="3cqZAp">
                 <node concept="2OqwBi" id="2$KQXNUNw3z" role="3vwVQn">
-                  <node concept="3cpWsa" id="2$KQXNUNw3$" role="2Oq$k0">
+                  <node concept="37vLTw" id="2$KQXNUNw3$" role="2Oq$k0">
                     <ref role="3cqZAo" node="2$KQXNUNw3t" resolve="res2" />
                   </node>
                   <node concept="liA8E" id="2$KQXNUNw3_" role="2OqNvi">
@@ -356,7 +355,7 @@
               </node>
               <node concept="3vwNmj" id="6WBmVK646Tc" role="3cqZAp">
                 <node concept="2OqwBi" id="6WBmVK646Td" role="3vwVQn">
-                  <node concept="3cpWsa" id="6WBmVK646Te" role="2Oq$k0">
+                  <node concept="37vLTw" id="6WBmVK646Te" role="2Oq$k0">
                     <ref role="3cqZAo" node="6WBmVK646T6" resolve="res0" />
                   </node>
                   <node concept="liA8E" id="6WBmVK646Tf" role="2OqNvi">
@@ -473,7 +472,7 @@
         </node>
         <node concept="3vwNmj" id="29$2IGZfW0z" role="3cqZAp">
           <node concept="2OqwBi" id="29$2IGZfW0$" role="3vwVQn">
-            <node concept="3cpWsa" id="29$2IGZfW0_" role="2Oq$k0">
+            <node concept="37vLTw" id="29$2IGZfW0_" role="2Oq$k0">
               <ref role="3cqZAo" node="29$2IGZfW0t" resolve="res0" />
             </node>
             <node concept="liA8E" id="29$2IGZfW0A" role="2OqNvi">
@@ -502,7 +501,7 @@
         </node>
         <node concept="3vwNmj" id="29$2IGZgfqI" role="3cqZAp">
           <node concept="2OqwBi" id="29$2IGZgfqJ" role="3vwVQn">
-            <node concept="3cpWsa" id="29$2IGZgfqK" role="2Oq$k0">
+            <node concept="37vLTw" id="29$2IGZgfqK" role="2Oq$k0">
               <ref role="3cqZAo" node="29$2IGZgfqC" resolve="res1" />
             </node>
             <node concept="liA8E" id="29$2IGZgfqL" role="2OqNvi">
@@ -531,7 +530,7 @@
         </node>
         <node concept="3vwNmj" id="29$2IGZgftY" role="3cqZAp">
           <node concept="2OqwBi" id="29$2IGZgftZ" role="3vwVQn">
-            <node concept="3cpWsa" id="29$2IGZgfu0" role="2Oq$k0">
+            <node concept="37vLTw" id="29$2IGZgfu0" role="2Oq$k0">
               <ref role="3cqZAo" node="29$2IGZgftS" resolve="res2" />
             </node>
             <node concept="liA8E" id="29$2IGZgfu1" role="2OqNvi">
@@ -635,7 +634,7 @@
         </node>
         <node concept="3vwNmj" id="1fdMHEcc4wN" role="3cqZAp">
           <node concept="2OqwBi" id="1fdMHEcc4wO" role="3vwVQn">
-            <node concept="3cpWsa" id="1fdMHEcc4wP" role="2Oq$k0">
+            <node concept="37vLTw" id="1fdMHEcc4wP" role="2Oq$k0">
               <ref role="3cqZAo" node="1fdMHEcc4wI" resolve="res0" />
             </node>
             <node concept="liA8E" id="1fdMHEcc4wQ" role="2OqNvi">

@@ -2,7 +2,7 @@
 <model ref="r:c89c88df-d8f6-4989-8c17-279d911719cc(com.mbeddr.ext.components.statemachine.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -46,7 +46,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
@@ -104,7 +103,7 @@
             <node concept="37vLTI" id="7IH13EqNv8E" role="3clFbG">
               <node concept="1ht04C" id="7IH13EqNv8H" role="37vLTx" />
               <node concept="2OqwBi" id="7IH13EqNv8_" role="37vLTJ">
-                <node concept="3cpWsa" id="7IH13EqNv8$" role="2Oq$k0">
+                <node concept="37vLTw" id="7IH13EqNv8$" role="2Oq$k0">
                   <ref role="3cqZAo" node="7IH13EqNv8s" resolve="node" />
                 </node>
                 <node concept="3TrEf2" id="7IH13EqNv8D" role="2OqNvi">

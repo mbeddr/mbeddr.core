@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -123,18 +123,16 @@
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
+      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -161,7 +159,7 @@
                 <ref role="1YBMHb" node="PWcNB4WHi6" resolve="mathLoopExpression" />
               </node>
               <node concept="3TrEf2" id="PWcNB4WJN6" role="2OqNvi">
-                <ref role="3Tt5mk" to="cetu:PWcNB4VG_6" />
+                <ref role="3Tt5mk" to="cetu:PWcNB4VG_6" resolve="body" />
               </node>
             </node>
           </node>
@@ -192,11 +190,11 @@
                 <ref role="1YBMHb" node="PWcNB4WJUx" resolve="ref" />
               </node>
               <node concept="3TrEf2" id="PWcNB4WKJw" role="2OqNvi">
-                <ref role="3Tt5mk" to="cetu:PWcNB4WJSB" />
+                <ref role="3Tt5mk" to="cetu:PWcNB4WJSB" resolve="loop" />
               </node>
             </node>
             <node concept="3TrEf2" id="PWcNB4WLPZ" role="2OqNvi">
-              <ref role="3Tt5mk" to="cetu:PWcNB4W7ce" />
+              <ref role="3Tt5mk" to="cetu:PWcNB4W7ce" resolve="varType" />
             </node>
           </node>
         </node>
@@ -254,7 +252,7 @@
                 <ref role="1YBMHb" node="4r1mNB_n4wB" resolve="sqrtExpression" />
               </node>
               <node concept="3TrEf2" id="4r1mNB_n9Zd" role="2OqNvi">
-                <ref role="3Tt5mk" to="cetu:4r1mNB_lBZi" />
+                <ref role="3Tt5mk" to="cetu:4r1mNB_lBZi" resolve="expression" />
               </node>
             </node>
           </node>
@@ -297,7 +295,7 @@
                 <ref role="1YBMHb" node="4r1mNB_oecV" resolve="powerExpression" />
               </node>
               <node concept="3TrEf2" id="4r1mNB_ogsB" role="2OqNvi">
-                <ref role="3Tt5mk" to="cetu:4r1mNB_o5W9" />
+                <ref role="3Tt5mk" to="cetu:4r1mNB_o5W9" resolve="base" />
               </node>
             </node>
           </node>
@@ -321,7 +319,7 @@
                 <ref role="1YBMHb" node="4r1mNB_oecV" resolve="powerExpression" />
               </node>
               <node concept="3TrEf2" id="4r1mNB_ogA5" role="2OqNvi">
-                <ref role="3Tt5mk" to="cetu:4r1mNB_o5WJ" />
+                <ref role="3Tt5mk" to="cetu:4r1mNB_o5WJ" resolve="exponent" />
               </node>
             </node>
           </node>
@@ -382,7 +380,7 @@
                 <ref role="1YBMHb" node="4r1mNB_s4IP" resolve="logarithmExpression" />
               </node>
               <node concept="3TrEf2" id="4r1mNB_s5I$" role="2OqNvi">
-                <ref role="3Tt5mk" to="cetu:4r1mNB_q7Cj" />
+                <ref role="3Tt5mk" to="cetu:4r1mNB_q7Cj" resolve="base" />
               </node>
             </node>
           </node>
@@ -406,7 +404,7 @@
                 <ref role="1YBMHb" node="4r1mNB_s4IP" resolve="logarithmExpression" />
               </node>
               <node concept="3TrEf2" id="4r1mNB_s6Jk" role="2OqNvi">
-                <ref role="3Tt5mk" to="cetu:4r1mNB_q7Br" />
+                <ref role="3Tt5mk" to="cetu:4r1mNB_q7Br" resolve="logOf" />
               </node>
             </node>
           </node>
@@ -430,7 +428,7 @@
                 <ref role="1YBMHb" node="4r1mNB_uhQC" resolve="absExpression" />
               </node>
               <node concept="3TrEf2" id="4r1mNB_uiJG" role="2OqNvi">
-                <ref role="3Tt5mk" to="cetu:4r1mNB_uhMz" />
+                <ref role="3Tt5mk" to="cetu:4r1mNB_uhMz" resolve="expression" />
               </node>
             </node>
           </node>
@@ -461,7 +459,7 @@
                 <ref role="1YBMHb" node="4r1mNB_uhQC" resolve="absExpression" />
               </node>
               <node concept="3TrEf2" id="4r1mNB_ujlL" role="2OqNvi">
-                <ref role="3Tt5mk" to="cetu:4r1mNB_uhMz" />
+                <ref role="3Tt5mk" to="cetu:4r1mNB_uhMz" resolve="expression" />
               </node>
             </node>
           </node>
@@ -575,15 +573,13 @@
                                       <property role="Xl_RC" value="operator " />
                                     </node>
                                     <node concept="2OqwBi" id="5Hxjapwgt$4" role="3uHU7w">
-                                      <node concept="3TrcHB" id="5Hxjapwgt$5" role="2OqNvi">
-                                        <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
-                                      </node>
-                                      <node concept="2OqwBi" id="5Hxjapwgt$6" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="79i$vAY7aDp" role="2Oq$k0">
+                                        <node concept="2yIwOk" id="79i$vAY7aDq" role="2OqNvi" />
                                         <node concept="1YBJjd" id="4r1mNB_xALs" role="2Oq$k0">
                                           <ref role="1YBMHb" node="4r1mNB_xoBr" resolve="fractionExpression" />
                                         </node>
-                                        <node concept="3NT_Vc" id="5Hxjapwgt$8" role="2OqNvi" />
                                       </node>
+                                      <node concept="3n3YKJ" id="79i$vAY7aDr" role="2OqNvi" />
                                     </node>
                                   </node>
                                   <node concept="Xl_RD" id="2X81bnKeKSO" role="3uHU7w">
@@ -647,7 +643,7 @@
                   <ref role="1YBMHb" node="4r1mNB_xoBr" resolve="fractionExpression" />
                 </node>
                 <node concept="3TrEf2" id="4r1mNB_xxeF" role="2OqNvi">
-                  <ref role="3Tt5mk" to="cetu:4r1mNB_wZtB" />
+                  <ref role="3Tt5mk" to="cetu:4r1mNB_wZtB" resolve="right" />
                 </node>
               </node>
             </node>
@@ -667,7 +663,7 @@
               <ref role="1YBMHb" node="4r1mNB_xoBr" resolve="fractionExpression" />
             </node>
             <node concept="3TrEf2" id="4r1mNB_xw0F" role="2OqNvi">
-              <ref role="3Tt5mk" to="cetu:4r1mNB_wZt0" />
+              <ref role="3Tt5mk" to="cetu:4r1mNB_wZt0" resolve="left" />
             </node>
           </node>
         </node>
@@ -691,7 +687,7 @@
                 <ref role="1YBMHb" node="7CSU6RRZLZY" resolve="implies" />
               </node>
               <node concept="3TrEf2" id="7CSU6RRZT9Q" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
+                <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" resolve="left" />
               </node>
             </node>
           </node>
@@ -713,7 +709,7 @@
                 <ref role="1YBMHb" node="7CSU6RRZLZY" resolve="implies" />
               </node>
               <node concept="3TrEf2" id="7CSU6RRZTLW" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
+                <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" resolve="right" />
               </node>
             </node>
           </node>

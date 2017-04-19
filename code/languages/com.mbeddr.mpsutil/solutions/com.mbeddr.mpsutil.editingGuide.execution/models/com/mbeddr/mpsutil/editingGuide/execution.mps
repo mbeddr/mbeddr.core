@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="2" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -183,11 +183,14 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="8758390115028452779" name="jetbrains.mps.lang.smodel.structure.Node_GetReferencesOperation" flags="nn" index="2z74zc" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
@@ -1146,7 +1149,6 @@
                   <ref role="3cqZAo" node="692bXAb5$YE" resolve="mySandboxExercise" />
                 </node>
                 <node concept="1PxgMI" id="4TMjSvbF0kb" role="37vLTx">
-                  <ref role="1m5ApE" to="k8go:3p1cdQ7_d_Y" resolve="Exercise" />
                   <node concept="3EllGN" id="3$YAQZ4CjxQ" role="1m5AlR">
                     <node concept="37vLTw" id="3$YAQZ4CjGx" role="3ElVtu">
                       <ref role="3cqZAo" node="5h2rxDjX6nB" resolve="myOriginalExercise" />
@@ -1154,6 +1156,9 @@
                     <node concept="37vLTw" id="3$YAQZ4Cjn9" role="3ElQJh">
                       <ref role="3cqZAo" node="4TMjSvbF2H0" resolve="myOriginal2SandboxMap" />
                     </node>
+                  </node>
+                  <node concept="chp4Y" id="5RIakkDKbw8" role="3oSUPX">
+                    <ref role="cht4Q" to="k8go:3p1cdQ7_d_Y" resolve="Exercise" />
                   </node>
                 </node>
               </node>
@@ -1867,7 +1872,6 @@
             <node concept="2OqwBi" id="62Mww1ZYQst" role="33vP2m">
               <node concept="2OqwBi" id="62Mww1ZYQsu" role="2Oq$k0">
                 <node concept="1PxgMI" id="62Mww1ZYQsv" role="2Oq$k0">
-                  <ref role="1m5ApE" to="k8go:3p1cdQ7_d$W" resolve="Task" />
                   <node concept="3EllGN" id="62Mww1ZYQsw" role="1m5AlR">
                     <node concept="37vLTw" id="62Mww1ZYQsx" role="3ElVtu">
                       <ref role="3cqZAo" node="4TMjSvbGgN2" resolve="task" />
@@ -1875,6 +1879,9 @@
                     <node concept="37vLTw" id="62Mww1ZYQsy" role="3ElQJh">
                       <ref role="3cqZAo" node="4TMjSvbF66$" resolve="mySandbox2OriginalMap" />
                     </node>
+                  </node>
+                  <node concept="chp4Y" id="5RIakkDKbw7" role="3oSUPX">
+                    <ref role="cht4Q" to="k8go:3p1cdQ7_d$W" resolve="Task" />
                   </node>
                 </node>
                 <node concept="3TrEf2" id="62Mww1ZYQsz" role="2OqNvi">

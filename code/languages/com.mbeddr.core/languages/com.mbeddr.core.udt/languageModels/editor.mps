@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -228,11 +228,9 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -263,8 +261,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -1358,9 +1356,11 @@
                     <node concept="3clFbS" id="2cvVnUv6ByM" role="1bW5cS">
                       <node concept="3clFbF" id="2cvVnUv6ByN" role="3cqZAp">
                         <node concept="1PxgMI" id="2cvVnUv6ByO" role="3clFbG">
-                          <ref role="1m5ApE" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
-                          <node concept="3cpWs2" id="2cvVnUv6ByP" role="1m5AlR">
+                          <node concept="37vLTw" id="2cvVnUv6ByP" role="1m5AlR">
                             <ref role="3cqZAo" node="2cvVnUv6ByQ" resolve="it" />
+                          </node>
+                          <node concept="chp4Y" id="79i$vAY5ZtQ" role="3oSUPX">
+                            <ref role="cht4Q" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
                           </node>
                         </node>
                       </node>
@@ -1400,7 +1400,7 @@
               <node concept="37vLTI" id="2cvVnUv6Bzu" role="3clFbG">
                 <node concept="2ZBlsa" id="2cvVnUv6Bz_" role="37vLTx" />
                 <node concept="2OqwBi" id="2cvVnUv6Bzw" role="37vLTJ">
-                  <node concept="3cpWsa" id="2cvVnUv6Bzx" role="2Oq$k0">
+                  <node concept="37vLTw" id="2cvVnUv6Bzx" role="2Oq$k0">
                     <ref role="3cqZAo" node="2cvVnUv6Bzo" resolve="st" />
                   </node>
                   <node concept="3TrEf2" id="2cvVnUv6Bzy" role="2OqNvi">
@@ -1410,7 +1410,7 @@
               </node>
             </node>
             <node concept="3clFbF" id="2cvVnUv6Bzz" role="3cqZAp">
-              <node concept="3cpWsa" id="2cvVnUv6Bz$" role="3clFbG">
+              <node concept="37vLTw" id="2cvVnUv6Bz$" role="3clFbG">
                 <ref role="3cqZAo" node="2cvVnUv6Bzo" resolve="st" />
               </node>
             </node>

@@ -4,7 +4,7 @@
   <languages>
     <use id="f92af8d7-1fae-4067-8109-17acf80f8e58" name="com.mbeddr.mpsutil.ccmenu.reftarget" version="0" />
     <use id="935bff03-e393-4547-a3a2-60335e0cad25" name="com.mbeddr.mpsutil.ccmenu" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -79,34 +79,34 @@
       <node concept="1WszKg" id="2PH7Shh7N3N" role="1UxRyL">
         <node concept="1Ws_Qq" id="2PH7Shh7OUZ" role="1Ws_Q_" />
         <node concept="1WsyXV" id="2CPtIILYig_" role="1WszKs">
-          <ref role="1WsyU6" to="tpee:h9F2oqR" />
+          <ref role="1WsyU6" to="tpee:h9F2oqR" resolve="staticInnerClassifiers" />
         </node>
         <node concept="1WsyXV" id="2CPtIILZRGP" role="1WszKs">
-          <ref role="1WsyU6" to="tpee:gr3b4el" />
+          <ref role="1WsyU6" to="tpee:gr3b4el" resolve="staticField" />
         </node>
         <node concept="1WsyXV" id="2CPtIILZSBX" role="1WszKs">
-          <ref role="1WsyU6" to="tpee:fz12cDB" />
+          <ref role="1WsyU6" to="tpee:fz12cDB" resolve="field" />
         </node>
         <node concept="1WsyXV" id="2CPtIILZSC6" role="1WszKs">
-          <ref role="1WsyU6" to="tpee:fz12cDD" />
+          <ref role="1WsyU6" to="tpee:fz12cDD" resolve="constructor" />
         </node>
         <node concept="1WsyXV" id="2CPtIILZSCk" role="1WszKs">
-          <ref role="1WsyU6" to="tpee:f$Wxw_K" />
+          <ref role="1WsyU6" to="tpee:f$Wxw_K" resolve="staticMethod" />
         </node>
         <node concept="1WsyXV" id="2CPtIILZSCx" role="1WszKs">
-          <ref role="1WsyU6" to="tpee:hLPgbgU" />
+          <ref role="1WsyU6" to="tpee:hLPgbgU" resolve="classInitializer" />
         </node>
         <node concept="1WsyXV" id="2CPtIILZSCK" role="1WszKs">
-          <ref role="1WsyU6" to="tpee:hzKIQWS" />
+          <ref role="1WsyU6" to="tpee:hzKIQWS" resolve="instanceInitializer" />
         </node>
         <node concept="1WsyXV" id="2CPtIILZSD1" role="1WszKs">
-          <ref role="1WsyU6" to="tpee:huRv3Ah" />
+          <ref role="1WsyU6" to="tpee:huRv3Ah" resolve="property" />
         </node>
         <node concept="1WsyXV" id="2CPtIILZSDk" role="1WszKs">
-          <ref role="1WsyU6" to="tpee:h3anRLq" />
+          <ref role="1WsyU6" to="tpee:h3anRLq" resolve="staticInitializer" />
         </node>
         <node concept="1WsyXV" id="2CPtIILZSDD" role="1WszKs">
-          <ref role="1WsyU6" to="tpee:f$Wxw_K" />
+          <ref role="1WsyU6" to="tpee:f$Wxw_K" resolve="staticMethod" />
         </node>
       </node>
       <node concept="1WszKg" id="2CPtIILZTBx" role="1UxRyL">
@@ -120,7 +120,7 @@
           </node>
         </node>
         <node concept="1WsyXV" id="2CPtIILZTC3" role="1WszKs">
-          <ref role="1WsyU6" to="tpee:fzclF7Y" />
+          <ref role="1WsyU6" to="tpee:fzclF7Y" resolve="parameter" />
         </node>
       </node>
       <node concept="2$HHb2" id="3n7FoehstKz" role="1UxRyL">
@@ -139,7 +139,7 @@
                 <node concept="2OqwBi" id="3n7FoehstOh" role="37vLTJ">
                   <node concept="2$Hzib" id="3n7FoehstKY" role="2Oq$k0" />
                   <node concept="3TrEf2" id="3n7FoehstYi" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
+                    <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" resolve="type" />
                   </node>
                 </node>
               </node>

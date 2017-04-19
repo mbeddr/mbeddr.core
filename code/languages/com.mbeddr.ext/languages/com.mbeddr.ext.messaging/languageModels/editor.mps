@@ -2,8 +2,8 @@
 <model ref="r:cd048ac4-8e5b-4b55-9410-a33f2c5c3342(com.mbeddr.ext.messaging.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -158,7 +158,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -511,7 +510,7 @@
           <node concept="3clFbF" id="2mvFNoTurVp" role="3cqZAp">
             <node concept="2OqwBi" id="2mvFNoTurVq" role="3clFbG">
               <node concept="2OqwBi" id="2mvFNoTurVr" role="2Oq$k0">
-                <node concept="3cpWsa" id="2mvFNoTurVs" role="2Oq$k0">
+                <node concept="37vLTw" id="2mvFNoTurVs" role="2Oq$k0">
                   <ref role="3cqZAo" node="2mvFNoTurVk" resolve="a" />
                 </node>
                 <node concept="3TrEf2" id="2mvFNoTurVt" role="2OqNvi">
@@ -524,7 +523,7 @@
             </node>
           </node>
           <node concept="3clFbF" id="2mvFNoTurVw" role="3cqZAp">
-            <node concept="3cpWsa" id="2mvFNoTurVx" role="3clFbG">
+            <node concept="37vLTw" id="2mvFNoTurVx" role="3clFbG">
               <ref role="3cqZAo" node="2mvFNoTurVk" resolve="a" />
             </node>
           </node>

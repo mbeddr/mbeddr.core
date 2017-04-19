@@ -280,6 +280,7 @@
       </concept>
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
+      <concept id="666324024671982185" name="com.mbeddr.ext.math.structure.MathConfigurationItem" flags="ng" index="22RD12" />
       <concept id="5098456557381295183" name="com.mbeddr.ext.math.structure.AbsExpression" flags="ng" index="2zI4tQ">
         <child id="5098456557381295267" name="expression" index="2zI4uq" />
       </concept>
@@ -4109,6 +4110,7 @@
     <node concept="2Q9Fgs" id="7Syd$1MeUl6" role="2Q9xDr">
       <node concept="2Q9FjX" id="7Syd$1MeUl7" role="2Q9FjI" />
     </node>
+    <node concept="22RD12" id="1SbcsMAqnqj" role="2Q9xDr" />
     <node concept="29Nb31" id="7Syd$1MeUlc" role="2ePNbc">
       <property role="TrG5h" value="lib" />
       <ref role="3oK8_y" node="7fmKiPEtW$w" resolve="portable" />
@@ -4129,6 +4131,12 @@
       </node>
       <node concept="2v9HqM" id="3RK4Y9HHsJ2" role="2eOfOg">
         <ref role="2v9HqP" node="3RK4Y9HHmDd" resolve="_080_avl_base" />
+      </node>
+      <node concept="2v9HqM" id="1SbcsMAp7uG" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:1WTn9U1bbwi" resolve="math" />
+      </node>
+      <node concept="2v9HqM" id="1SbcsMAp7uH" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
       </node>
     </node>
   </node>

@@ -2,7 +2,7 @@
 <model ref="r:997ca240-53b5-436b-8c1d-394bf4e70877(com.mbeddr.mpsutil.interpreter.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -1270,7 +1270,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6MNhNeUBmC3">
-    <ref role="1XX52x" to="3673:6MNhNeUBmBq" resolve="StopExpressions" />
+    <ref role="1XX52x" to="3673:6MNhNeUBmBq" resolve="StopExpression" />
     <node concept="3EZMnI" id="6MNhNeUBmCh" role="2wV5jI">
       <node concept="2iRfu4" id="6MNhNeUBmCi" role="2iSdaV" />
       <node concept="3F0ifn" id="6MNhNeUBmCj" role="3EZMnx">

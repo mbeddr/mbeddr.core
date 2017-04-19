@@ -82,7 +82,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
@@ -219,7 +218,7 @@
                   <node concept="3clFbS" id="58xH_U7jhnG" role="3clFbx">
                     <node concept="3clFbF" id="58xH_U7jkJ9" role="3cqZAp">
                       <node concept="2OqwBi" id="58xH_U7jkJa" role="3clFbG">
-                        <node concept="3cpWsa" id="58xH_U7jkJb" role="2Oq$k0">
+                        <node concept="37vLTw" id="58xH_U7jkJb" role="2Oq$k0">
                           <ref role="3cqZAo" node="3DAECxFHCVy" resolve="d" />
                         </node>
                         <node concept="liA8E" id="58xH_U7jkJc" role="2OqNvi">
@@ -298,7 +297,7 @@
                 </node>
                 <node concept="3clFbF" id="3DAECxFHCVE" role="3cqZAp">
                   <node concept="2OqwBi" id="3DAECxFHCVF" role="3clFbG">
-                    <node concept="3cpWsa" id="3DAECxFHCVG" role="2Oq$k0">
+                    <node concept="37vLTw" id="3DAECxFHCVG" role="2Oq$k0">
                       <ref role="3cqZAo" node="3DAECxFHCVy" resolve="d" />
                     </node>
                     <node concept="liA8E" id="3DAECxFHCVH" role="2OqNvi">

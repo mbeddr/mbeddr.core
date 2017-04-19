@@ -53,14 +53,12 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -171,11 +169,11 @@
                 </node>
               </node>
               <node concept="2OqwBi" id="5ngFs$3Tew$" role="33vP2m">
-                <node concept="3cpWsa" id="5ngFs$3Tew_" role="2Oq$k0">
+                <node concept="37vLTw" id="5ngFs$3Tew_" role="2Oq$k0">
                   <ref role="3cqZAo" node="5ngFs$3Tetm" resolve="bc" />
                 </node>
                 <node concept="3Tsc0h" id="5ngFs$3TpPr" role="2OqNvi">
-                  <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" />
+                  <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
                 </node>
               </node>
             </node>
@@ -195,7 +193,7 @@
                     <node concept="3clFbS" id="5ngFs$3Tev4" role="1bW5cS">
                       <node concept="3clFbF" id="5ngFs$3Tev5" role="3cqZAp">
                         <node concept="2OqwBi" id="5ngFs$3Tev6" role="3clFbG">
-                          <node concept="3cpWs2" id="5ngFs$3Tev7" role="2Oq$k0">
+                          <node concept="37vLTw" id="5ngFs$3Tev7" role="2Oq$k0">
                             <ref role="3cqZAo" node="5ngFs$3Teva" resolve="it" />
                           </node>
                           <node concept="1mIQ4w" id="5ngFs$3Tev8" role="2OqNvi">
@@ -238,11 +236,11 @@
                       <ref role="3cqZAo" node="5ngFs$3Tetm" resolve="bc" />
                     </node>
                     <node concept="3Tsc0h" id="5ngFs$3TpPS" role="2OqNvi">
-                      <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" />
+                      <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
                     </node>
                   </node>
                   <node concept="TSZUe" id="5ngFs$3TpQk" role="2OqNvi">
-                    <node concept="3cpWsa" id="5ngFs$3TpQm" role="25WWJ7">
+                    <node concept="37vLTw" id="5ngFs$3TpQm" role="25WWJ7">
                       <ref role="3cqZAo" node="5ngFs$3TeuW" resolve="ci" />
                     </node>
                   </node>
@@ -286,7 +284,7 @@
                     <ref role="ehGHo" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
                   </node>
                   <node concept="2OqwBi" id="5ngFs$3TpON" role="33vP2m">
-                    <node concept="3cpWsa" id="5ngFs$3TpOu" role="2Oq$k0">
+                    <node concept="37vLTw" id="5ngFs$3TpOu" role="2Oq$k0">
                       <ref role="3cqZAo" node="5ngFs$3TpE1" resolve="bcs" />
                     </node>
                     <node concept="1uHKPH" id="5ngFs$3TpOT" role="2OqNvi" />
@@ -306,7 +304,7 @@
                       <ref role="3cqZAo" node="5ngFs$3TpOr" resolve="bc" />
                     </node>
                     <node concept="3Tsc0h" id="5ngFs$3TpOW" role="2OqNvi">
-                      <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" />
+                      <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
                     </node>
                   </node>
                 </node>
@@ -326,7 +324,7 @@
                         <node concept="3clFbS" id="5ngFs$3TpEm" role="1bW5cS">
                           <node concept="3clFbF" id="5ngFs$3TpEn" role="3cqZAp">
                             <node concept="2OqwBi" id="5ngFs$3TpEo" role="3clFbG">
-                              <node concept="3cpWs2" id="5ngFs$3TpEp" role="2Oq$k0">
+                              <node concept="37vLTw" id="5ngFs$3TpEp" role="2Oq$k0">
                                 <ref role="3cqZAo" node="5ngFs$3TpEs" resolve="it" />
                               </node>
                               <node concept="1mIQ4w" id="5ngFs$3TpEq" role="2OqNvi">
@@ -348,7 +346,7 @@
               </node>
               <node concept="3cpWs6" id="5ngFs$3TpEW" role="3cqZAp">
                 <node concept="3clFbC" id="5ngFs$3TpJF" role="3cqZAk">
-                  <node concept="3cpWsa" id="5ngFs$3TpJG" role="3uHU7B">
+                  <node concept="37vLTw" id="5ngFs$3TpJG" role="3uHU7B">
                     <ref role="3cqZAo" node="5ngFs$3TpEg" resolve="ci" />
                   </node>
                   <node concept="10Nm6u" id="5ngFs$3TpJH" role="3uHU7w" />
@@ -356,7 +354,7 @@
               </node>
             </node>
             <node concept="2OqwBi" id="5ngFs$3TpOj" role="3clFbw">
-              <node concept="3cpWsa" id="5ngFs$3TpEz" role="2Oq$k0">
+              <node concept="37vLTw" id="5ngFs$3TpEz" role="2Oq$k0">
                 <ref role="3cqZAo" node="5ngFs$3TpE1" resolve="bcs" />
               </node>
               <node concept="3GX2aA" id="5ngFs$3TpOo" role="2OqNvi" />

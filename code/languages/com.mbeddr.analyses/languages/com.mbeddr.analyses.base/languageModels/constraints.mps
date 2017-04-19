@@ -2,7 +2,7 @@
 <model ref="r:98c71b34-87b0-4ba5-bc86-717b528ad88b(com.mbeddr.analyses.base.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -48,12 +48,12 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1227084988347" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeARoot" flags="in" index="2NXJUA" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1227085062429" name="canBeRoot" index="2NY200" />
-        <child id="1213106463729" name="canBeChild" index="1MLUbF" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -63,15 +63,15 @@
   </registry>
   <node concept="1M2fIO" id="7oRaFIrh7L1">
     <ref role="1M2myG" to="q46j:4jq$txdSYPw" resolve="ExpressionsPair" />
-    <node concept="nKS2y" id="7oRaFIrh7L2" role="1MLUbF">
-      <node concept="3clFbS" id="7oRaFIrh7L3" role="2VODD2">
-        <node concept="3SKdUt" id="7oRaFIrh7L7" role="3cqZAp">
-          <node concept="3SKdUq" id="7oRaFIrh7L8" role="3SKWNk">
+    <node concept="9S07l" id="79i$vAY7q2Z" role="9Vyp8">
+      <node concept="3clFbS" id="79i$vAY7q30" role="2VODD2">
+        <node concept="3SKdUt" id="79i$vAY7q31" role="3cqZAp">
+          <node concept="3SKdUq" id="79i$vAY7q32" role="3SKWNk">
             <property role="3SKdUp" value="expression pair is used just for generation purposes" />
           </node>
         </node>
-        <node concept="3clFbF" id="7oRaFIrh7L4" role="3cqZAp">
-          <node concept="3clFbT" id="7oRaFIrh7L5" role="3clFbG">
+        <node concept="3clFbF" id="79i$vAY7q33" role="3cqZAp">
+          <node concept="3clFbT" id="79i$vAY7q34" role="3clFbG">
             <property role="3clFbU" value="false" />
           </node>
         </node>

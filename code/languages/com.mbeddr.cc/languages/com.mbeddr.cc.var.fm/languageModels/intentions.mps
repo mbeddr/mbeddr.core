@@ -9,7 +9,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -87,7 +87,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -337,7 +336,7 @@
         <node concept="3clFbF" id="3Fgw5dDiwbr" role="3cqZAp">
           <node concept="37vLTI" id="3Fgw5dDiwoZ" role="3clFbG">
             <node concept="2OqwBi" id="3Fgw5dDiwbt" role="37vLTJ">
-              <node concept="3cpWsa" id="3Fgw5dDiwbs" role="2Oq$k0">
+              <node concept="37vLTw" id="3Fgw5dDiwbs" role="2Oq$k0">
                 <ref role="3cqZAo" node="3Fgw5dDiwbk" resolve="f" />
               </node>
               <node concept="3TrEf2" id="3Fgw5dDiwoY" role="2OqNvi">
@@ -357,7 +356,7 @@
           <node concept="2OqwBi" id="3Fgw5dDiwpp" role="3clFbG">
             <node concept="2Sf5sV" id="3Fgw5dDiwpo" role="2Oq$k0" />
             <node concept="1P9Npp" id="3Fgw5dDiwpt" role="2OqNvi">
-              <node concept="3cpWsa" id="3Fgw5dDiwpv" role="1P9ThW">
+              <node concept="37vLTw" id="3Fgw5dDiwpv" role="1P9ThW">
                 <ref role="3cqZAo" node="3Fgw5dDiwbk" resolve="f" />
               </node>
             </node>
@@ -366,7 +365,7 @@
         <node concept="3clFbF" id="3Fgw5dDiwpx" role="3cqZAp">
           <node concept="2OqwBi" id="3Fgw5dDiwpC" role="3clFbG">
             <node concept="2OqwBi" id="3Fgw5dDiwpz" role="2Oq$k0">
-              <node concept="3cpWsa" id="3Fgw5dDiwpy" role="2Oq$k0">
+              <node concept="37vLTw" id="3Fgw5dDiwpy" role="2Oq$k0">
                 <ref role="3cqZAo" node="3Fgw5dDiwbk" resolve="f" />
               </node>
               <node concept="3Tsc0h" id="3Fgw5dDiwpB" role="2OqNvi">

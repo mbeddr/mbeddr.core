@@ -58,6 +58,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.tutorial.dev.build.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.tutorial.dev.build" type="solution" uuid="eec9a7f2-5b3c-476d-b489-9e438da7a02c">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.tutorial.dev.build-src.jar" descriptor="com.mbeddr.build.build.msd" />
       </module>
     </echoxml>
@@ -86,6 +89,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.allInOne.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.allInOne" type="solution" uuid="cbbb9e79-84e5-4c2e-b1a2-11a381c7baf9">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.allInOne-src.jar" descriptor="allInOne.msd" />
       </module>
     </echoxml>
@@ -114,6 +120,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.build.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.build" type="solution" uuid="7ac0dfb8-7d5f-4573-ab80-81af2106ce03">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.build-src.jar" descriptor="com.mbeddr.build.msd" />
       </module>
     </echoxml>
@@ -143,6 +152,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.debugger.testing.build.dev.build.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.debugger.testing.build.dev.build" type="solution" uuid="0ecd68a7-ad67-4d1c-adb3-67b1e6f82ffa">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.debugger.testing.build.dev.build-src.jar" descriptor="com.mbeddr.debugger-test.build.dev.build.msd" />
       </module>
     </echoxml>
@@ -170,6 +182,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.core.tests.build.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.core.tests.build" type="solution" uuid="d47a3921-8b42-4664-bed6-25e3e4fd6efb">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.core.tests.build-src.jar" descriptor="com.mbeddr.core.tests.build.msd" />
       </module>
     </echoxml>
@@ -197,6 +212,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.core.tests.performance.build.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.core.tests.performance.build" type="solution" uuid="b4b96a11-a253-4152-8bd6-6444c1b087e8">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.core.tests.performance.build-src.jar" descriptor="com.mbeddr.core.tests.performance.build.msd" />
       </module>
     </echoxml>
@@ -224,6 +242,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.debugger.tests.dev.build.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.debugger.tests.dev.build" type="solution" uuid="2098f9e9-7b8d-4ee4-8e3f-46840f7fc3dd">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.debugger.tests.dev.build-src.jar" descriptor="com.mbeddr.debugger.tests.dev.build.msd" />
       </module>
     </echoxml>
@@ -251,6 +272,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.cc.tests.dev.build.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.cc.tests.dev.build" type="solution" uuid="ffd31df9-5187-4c9a-bb4f-d84e5f59ffd5">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.cc.tests.dev.build-src.jar" descriptor="com.mbeddr.cc.tests.dev.build.msd" />
       </module>
     </echoxml>
@@ -278,6 +302,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.ext.tests.build.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.ext.tests.build" type="solution" uuid="06f4ccb3-313d-4d48-9667-87a8fb963fb2">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.ext.tests.build-src.jar" descriptor="build.msd" />
       </module>
     </echoxml>
@@ -305,6 +332,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.analyses.tests.dev.build.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.analyses.tests.dev.build" type="solution" uuid="4c28f257-18f6-416e-b37b-fa69eba1866b">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.analyses.tests.dev.build-src.jar" descriptor="build.msd" />
       </module>
     </echoxml>
@@ -334,6 +364,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.allScripts.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.allScripts" type="solution" uuid="752496a0-da43-4b5e-bd15-ea1a5aa211f6">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.allScripts-src.jar" descriptor="com.mbeddr.allScripts.msd" />
       </module>
     </echoxml>
@@ -363,6 +396,9 @@
     <echoxml file="${build.tmp}/default/jetbrains.mps.minimal.jar/META-INF/module.xml">
       <module namespace="jetbrains.mps.minimal" type="solution" uuid="ea27f6eb-9fc6-4dc6-b3c4-15795bea000c">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="jetbrains.mps.minimal-src.jar" descriptor="jetbrains.mps.minimal.msd" />
       </module>
     </echoxml>
@@ -390,6 +426,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.rcp.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.rcp" type="solution" uuid="4fe640a5-f027-47b6-a81c-85e480b0ecd4">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.rcp-src.jar" descriptor="com.mbeddr.rcp.msd" />
       </module>
     </echoxml>
@@ -417,6 +456,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.build.jar1/META-INF/module.xml">
       <module namespace="com.mbeddr.build" type="solution" uuid="7ac0dfb8-7d5f-4573-ab80-81af2106ce03">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.build-src.jar" descriptor="com.mbeddr.build.msd" />
       </module>
     </echoxml>
@@ -446,6 +488,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.platform.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.platform" type="solution" uuid="3ae9cfda-f938-4524-b4ca-fbcba3b0525b">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.platform-src.jar" descriptor="com.mbeddr.platform.msd" />
       </module>
     </echoxml>
@@ -474,6 +519,9 @@
     <echoxml file="${build.tmp}/default/de.slisson.mps.all.build.jar/META-INF/module.xml">
       <module namespace="de.slisson.mps.all.build" type="solution" uuid="f1fb7b1c-ce0d-423c-9369-4a661d600029">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="de.slisson.mps.all.build-src.jar" descriptor="de.slisson.mps.all.build.msd" />
       </module>
     </echoxml>
@@ -503,6 +551,9 @@
     <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.inca.jar/META-INF/module.xml">
       <module namespace="com.mbeddr.mpsutil.inca" type="solution" uuid="eab292a4-1c65-44e3-bf7b-a451b47bdb12">
         <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="com.mbeddr.mpsutil.inca-src.jar" descriptor="com.mbeddr.mpsutil.inca.msd" />
       </module>
     </echoxml>
@@ -583,7 +634,6 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.menus.extras.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.extension.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
@@ -611,7 +661,6 @@
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <library file="${artifacts.mps}/lib/mps-behavior-api.jar" />
       <library file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
@@ -715,13 +764,10 @@
         <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.8.jar" />
-        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
-        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.5.2.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.allScripts">
@@ -996,7 +1042,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.de.slisson.mps.all.build" depends="fetchDependencies">
+  <target name="java.compile.de.slisson.mps.all.build">
     <mkdir dir="${mbeddr.github.core.home}/code/plugins/sl-all/solutions/de.slisson.mps.all.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.slisson.mps.all.build" />
     <javac destdir="${build.tmp}/java/out/de.slisson.mps.all.build" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">

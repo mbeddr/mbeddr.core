@@ -2,7 +2,7 @@
 <model ref="120e1c9d-4e27-4478-b2af-b2c3bd3850b0/r:e367e031-8513-4312-bec5-9d0e07b637ea(com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,16 +20,16 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
-        <child id="1213106463729" name="canBeChild" index="1MLUbF" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -49,22 +49,22 @@
   </registry>
   <node concept="1M2fIO" id="6QZo_pQhgJt">
     <ref role="1M2myG" to="bbp5:6QZo_pQbn1D" resolve="CellModel_DefaultEditor" />
-    <node concept="nKS2y" id="6QZo_pQhhCZ" role="1MLUbF">
-      <node concept="3clFbS" id="6QZo_pQhhD0" role="2VODD2">
-        <node concept="3clFbF" id="6QZo_pQhhMY" role="3cqZAp">
-          <node concept="2OqwBi" id="6QZo_pQhj9r" role="3clFbG">
-            <node concept="2OqwBi" id="6QZo_pQhi3X" role="2Oq$k0">
-              <node concept="nLn13" id="6QZo_pQhhMX" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="6QZo_pQhip1" role="2OqNvi">
-                <node concept="1xMEDy" id="6QZo_pQhip3" role="1xVPHs">
-                  <node concept="chp4Y" id="6QZo_pQhizA" role="ri$Ld">
+    <node concept="9S07l" id="5RIakkDIUFh" role="9Vyp8">
+      <node concept="3clFbS" id="5RIakkDIUFi" role="2VODD2">
+        <node concept="3clFbF" id="5RIakkDIUFj" role="3cqZAp">
+          <node concept="2OqwBi" id="5RIakkDIUFk" role="3clFbG">
+            <node concept="2OqwBi" id="5RIakkDIUFl" role="2Oq$k0">
+              <node concept="nLn13" id="5RIakkDIUFm" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5RIakkDIUFn" role="2OqNvi">
+                <node concept="1xMEDy" id="5RIakkDIUFo" role="1xVPHs">
+                  <node concept="chp4Y" id="5RIakkDIUFp" role="ri$Ld">
                     <ref role="cht4Q" to="bbp5:6hPjX46YnED" resolve="QueryListInlineEditorComponent" />
                   </node>
                 </node>
-                <node concept="1xIGOp" id="6QZo_pQhiVq" role="1xVPHs" />
+                <node concept="1xIGOp" id="5RIakkDIUFq" role="1xVPHs" />
               </node>
             </node>
-            <node concept="3x8VRR" id="6QZo_pQhjJH" role="2OqNvi" />
+            <node concept="3x8VRR" id="5RIakkDIUFr" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -72,22 +72,22 @@
   </node>
   <node concept="1M2fIO" id="1WjrBsNJoAC">
     <ref role="1M2myG" to="bbp5:1WjrBsNJ4Il" resolve="QueryListNodeExpression" />
-    <node concept="nKS2y" id="1WjrBsNJoQV" role="1MLUbF">
-      <node concept="3clFbS" id="1WjrBsNJoQW" role="2VODD2">
-        <node concept="3clFbF" id="1WjrBsNJoS1" role="3cqZAp">
-          <node concept="2OqwBi" id="1WjrBsNJp8W" role="3clFbG">
-            <node concept="2OqwBi" id="1WjrBsNJoUj" role="2Oq$k0">
-              <node concept="nLn13" id="1WjrBsNJoS0" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="1WjrBsNJoYv" role="2OqNvi">
-                <node concept="1xMEDy" id="1WjrBsNJoYx" role="1xVPHs">
-                  <node concept="chp4Y" id="1WjrBsNJp09" role="ri$Ld">
+    <node concept="9S07l" id="5RIakkDIUFs" role="9Vyp8">
+      <node concept="3clFbS" id="5RIakkDIUFt" role="2VODD2">
+        <node concept="3clFbF" id="5RIakkDIUFu" role="3cqZAp">
+          <node concept="2OqwBi" id="5RIakkDIUFv" role="3clFbG">
+            <node concept="2OqwBi" id="5RIakkDIUFw" role="2Oq$k0">
+              <node concept="nLn13" id="5RIakkDIUFx" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5RIakkDIUFy" role="2OqNvi">
+                <node concept="1xMEDy" id="5RIakkDIUFz" role="1xVPHs">
+                  <node concept="chp4Y" id="5RIakkDIUF$" role="ri$Ld">
                     <ref role="cht4Q" to="bbp5:5oklODadopi" resolve="CellModel_QueryList" />
                   </node>
                 </node>
-                <node concept="1xIGOp" id="1WjrBsNJp4n" role="1xVPHs" />
+                <node concept="1xIGOp" id="5RIakkDIUF_" role="1xVPHs" />
               </node>
             </node>
-            <node concept="3x8VRR" id="1WjrBsNJpnv" role="2OqNvi" />
+            <node concept="3x8VRR" id="5RIakkDIUFA" role="2OqNvi" />
           </node>
         </node>
       </node>

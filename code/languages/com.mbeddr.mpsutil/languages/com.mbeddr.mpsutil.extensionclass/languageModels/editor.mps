@@ -4,7 +4,7 @@
   <languages>
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,7 +20,6 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
-        <property id="1140524450554" name="vertical" index="2czwfN" />
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
@@ -187,7 +186,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -401,7 +399,6 @@
           </node>
         </node>
         <node concept="3F2HdR" id="h5nk5Qn" role="3EZMnx">
-          <property role="2czwfN" value="false" />
           <property role="1cu_pB" value="2" />
           <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="tpee:fz7wK6I" resolve="actualArgument" />
@@ -633,7 +630,7 @@
         <node concept="sxT6M" id="4X7wieqmSR9" role="3cqZAp">
           <property role="sxT66" value="methodsToShow" />
           <property role="3ahEGn" value="true" />
-          <node concept="3cpWsa" id="4X7wieqmSRa" role="sxT64">
+          <node concept="37vLTw" id="4X7wieqmSRa" role="sxT64">
             <ref role="3cqZAo" node="4X7wieqmSH$" resolve="methodsToShow" />
           </node>
         </node>
@@ -825,7 +822,7 @@
         <node concept="sxT6M" id="4X7wieqnJFv" role="3cqZAp">
           <property role="sxT66" value="selectedActualArgument" />
           <property role="3ahEGn" value="true" />
-          <node concept="3cpWsa" id="4X7wieqnJFw" role="sxT64">
+          <node concept="37vLTw" id="4X7wieqnJFw" role="sxT64">
             <ref role="3cqZAo" node="4X7wieqlHB3" resolve="selectedActualArgument" />
           </node>
         </node>
@@ -860,7 +857,7 @@
         <node concept="sxT6M" id="4X7wieqnJXR" role="3cqZAp">
           <property role="sxT66" value="argumentIndex" />
           <property role="3ahEGn" value="true" />
-          <node concept="3cpWsa" id="4X7wieqnJXS" role="sxT64">
+          <node concept="37vLTw" id="4X7wieqnJXS" role="sxT64">
             <ref role="3cqZAo" node="LBlPJUzc4k" resolve="argumentIndex" />
           </node>
         </node>

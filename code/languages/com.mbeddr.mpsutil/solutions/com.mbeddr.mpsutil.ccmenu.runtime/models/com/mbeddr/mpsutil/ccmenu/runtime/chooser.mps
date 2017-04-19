@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -10072,6 +10072,34 @@
       </node>
     </node>
     <node concept="2tJIrI" id="315MBEhazdz" role="jymVt" />
+    <node concept="3clFb_" id="7uq1CyG4Kc_" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="processTextChanged" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="7uq1CyG4KcA" role="1B3o_S" />
+      <node concept="10P_77" id="7uq1CyG4KcC" role="3clF45" />
+      <node concept="37vLTG" id="7uq1CyG4KcD" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="7uq1CyG4KcE" role="1tU5fm">
+          <ref role="3uigEE" to="exr9:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7uq1CyG4KcF" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="7uq1CyG4KcG" role="1tU5fm">
+          <ref role="3uigEE" to="hyam:~InputMethodEvent" resolve="InputMethodEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7uq1CyG4KcI" role="3clF47">
+        <node concept="3clFbF" id="7uq1CyG4KcL" role="3cqZAp">
+          <node concept="3clFbT" id="7uq1CyG4KcK" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7uq1CyG4KcJ" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3UR2Jj" id="2Z2H3pl0xrQ" role="lGtFl">
       <node concept="TZ5HA" id="2Z2H3pl0xrR" role="TZ5H$">
         <node concept="1dT_AC" id="2Z2H3pl0xrS" role="1dT_Ay">

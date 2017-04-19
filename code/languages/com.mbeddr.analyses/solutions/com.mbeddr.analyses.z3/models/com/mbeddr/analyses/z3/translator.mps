@@ -11,9 +11,9 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports>
     <import index="f7eu" ref="88063d90-aa0a-4f17-8757-92c0f1692f3d/java:com.microsoft.z3(com.mbeddr.analyses.z3/)" />
@@ -222,7 +222,7 @@
                   </node>
                   <node concept="2OqwBi" id="74nUgMbdGX_" role="37wK5m">
                     <node concept="3TrEf2" id="74nUgMbdGXB" role="2OqNvi">
-                      <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" />
+                      <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" resolve="left" />
                     </node>
                     <node concept="Jnkvi" id="74nUgMbeoQz" role="2Oq$k0">
                       <ref role="1M0zk5" node="74nUgMbemno" resolve="be" />
@@ -247,7 +247,7 @@
                   </node>
                   <node concept="2OqwBi" id="74nUgMbdGXH" role="37wK5m">
                     <node concept="3TrEf2" id="74nUgMbdGXJ" role="2OqNvi">
-                      <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" />
+                      <ref role="3Tt5mk" to="mj1l:7FQByU3CrD1" resolve="right" />
                     </node>
                     <node concept="Jnkvi" id="74nUgMbepaz" role="2Oq$k0">
                       <ref role="1M0zk5" node="74nUgMbemno" resolve="be" />
@@ -579,7 +579,7 @@
                       <ref role="1M0zk5" node="7r_y3MyABzU" resolve="ue" />
                     </node>
                     <node concept="3TrEf2" id="7r_y3MyAYgD" role="2OqNvi">
-                      <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" />
+                      <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="7YWlEjTqUY0" role="37wK5m">

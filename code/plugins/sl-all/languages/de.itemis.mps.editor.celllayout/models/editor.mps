@@ -2,7 +2,7 @@
 <model ref="r:23d4f4b2-26c2-403d-be1f-e68afa5e7ef9(de.itemis.mps.editor.celllayout.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -64,8 +64,6 @@
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
-        <property id="1073389446426" name="gridLayout" index="3EZMnz" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -149,7 +147,6 @@
   <node concept="24kQdi" id="2nutuZsNoDh">
     <ref role="1XX52x" to="pvux:2nutuZsJ_4q" resolve="IntegerStyle" />
     <node concept="3EZMnI" id="hgVSUvi" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="PMmxH" id="2wdLO7KhY9q" role="3EZMnx">
         <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -225,7 +222,6 @@
       </node>
     </node>
     <node concept="3EZMnI" id="fIxj85y" role="6VMZX">
-      <property role="3EZMnw" value="true" />
       <node concept="PMmxH" id="hF4Bju4" role="3EZMnx">
         <ref role="PMmxG" to="tpc5:hF4ssnw" resolve="_CellModel_Common" />
       </node>
@@ -239,8 +235,6 @@
         <ref role="1k5W1q" to="tpc5:hF4yUZ8" resolve="header" />
       </node>
       <node concept="3EZMnI" id="fIxjeV$" role="3EZMnx">
-        <property role="3EZMnw" value="true" />
-        <property role="3EZMnz" value="true" />
         <node concept="VPM3Z" id="hEU$Px_" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
@@ -258,7 +252,6 @@
   <node concept="24kQdi" id="43ViAfTtxbJ">
     <ref role="1XX52x" to="pvux:43ViAfTtx6N" resolve="StringStyle" />
     <node concept="3EZMnI" id="hZmYNTi" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="PMmxH" id="2wdLO7KhYd6" role="3EZMnx">
         <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -428,7 +421,6 @@
   <node concept="24kQdi" id="641A4deYu8M">
     <ref role="1XX52x" to="pvux:43ViAfTtIpJ" resolve="FontFamilyStyle" />
     <node concept="3EZMnI" id="641A4deYuac" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="PMmxH" id="641A4deYuad" role="3EZMnx">
         <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />

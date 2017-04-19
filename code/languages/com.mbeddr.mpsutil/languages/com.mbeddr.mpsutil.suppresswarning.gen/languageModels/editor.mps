@@ -2,7 +2,7 @@
 <model ref="r:71832b82-d87a-4966-ac3d-65fac49d19ae(com.mbeddr.mpsutil.suppresswarning.gen.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -110,10 +110,10 @@
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
       </concept>
       <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -154,7 +154,7 @@
           <node concept="3clFbF" id="4uzYbTZd6fM" role="3cqZAp">
             <node concept="2OqwBi" id="4uzYbTZd6Yl" role="3clFbG">
               <node concept="0IXxy" id="4uzYbTZd6fL" role="2Oq$k0" />
-              <node concept="1PgB_6" id="4uzYbTZdh5b" role="2OqNvi" />
+              <node concept="3YRAZt" id="4uzYbTZdh5b" role="2OqNvi" />
             </node>
           </node>
         </node>

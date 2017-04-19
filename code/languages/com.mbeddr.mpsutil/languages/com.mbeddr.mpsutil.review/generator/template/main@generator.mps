@@ -6,9 +6,9 @@
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review" version="0" />
     <use id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -69,7 +69,7 @@
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -115,7 +115,7 @@
                       <node concept="37vLTw" id="4rtqL27$F$x" role="2Oq$k0">
                         <ref role="3cqZAo" node="4rtqL27$FxM" resolve="it" />
                       </node>
-                      <node concept="1PgB_6" id="4rtqL27$FJl" role="2OqNvi" />
+                      <node concept="3YRAZt" id="4rtqL27$FJl" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
@@ -145,7 +145,7 @@
                       <node concept="37vLTw" id="4rtqL27$Ik8" role="2Oq$k0">
                         <ref role="3cqZAo" node="4rtqL27$Iig" resolve="it" />
                       </node>
-                      <node concept="1PgB_6" id="4rtqL27$Ixe" role="2OqNvi" />
+                      <node concept="3YRAZt" id="4rtqL27$Ixe" role="2OqNvi" />
                     </node>
                   </node>
                 </node>

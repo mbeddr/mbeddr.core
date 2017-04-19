@@ -54,8 +54,8 @@
   </node>
   <node concept="1TIwiD" id="Pogn2S693Y">
     <property role="EcuMT" value="961590472824361214" />
-    <property role="TrG5h" value="PoisonedLanguageIdentity" />
-    <property role="34LRSv" value="poisoned language identity" />
+    <property role="TrG5h" value="MCListLanguageIdentity" />
+    <property role="34LRSv" value="mapping configuration list language identity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="Pogn2S693Z" role="PzmwI">
       <ref role="PrY4T" to="tp25:34EJa6aIcco" resolve="LanguageIdentity" />

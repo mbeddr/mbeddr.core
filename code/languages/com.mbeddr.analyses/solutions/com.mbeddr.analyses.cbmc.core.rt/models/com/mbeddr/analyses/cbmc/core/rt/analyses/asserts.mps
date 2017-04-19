@@ -4,8 +4,8 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports>
     <import index="xiaw" ref="r:0cb4b184-9d83-4ed6-8dd4-842bbe536e91(com.mbeddr.analyses.cbmc.rt.analyses.claims)" />
@@ -122,7 +122,6 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -130,7 +129,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
@@ -558,7 +556,7 @@
             <node concept="3clFbS" id="3x0R1LJ5Cq2" role="9aQI4">
               <node concept="3clFbF" id="3x0R1LJ5Cq3" role="3cqZAp">
                 <node concept="2OqwBi" id="3x0R1LJ5Cq4" role="3clFbG">
-                  <node concept="3cpWsa" id="3x0R1LJ5Cq5" role="2Oq$k0">
+                  <node concept="37vLTw" id="3x0R1LJ5Cq5" role="2Oq$k0">
                     <ref role="3cqZAo" node="3x0R1LJ5CpU" resolve="args" />
                   </node>
                   <node concept="TSZUe" id="3x0R1LJ5Cq6" role="2OqNvi">
@@ -680,7 +678,7 @@
       <node concept="3clFbS" id="3x0R1LJ5CqE" role="3clF47">
         <node concept="XkiVB" id="3x0R1LJ5CqF" role="3cqZAp">
           <ref role="37wK5l" to="eqhl:4XbM$YHffxN" resolve="CBMCLiftedResult" />
-          <node concept="3cpWs2" id="3x0R1LJ5CqH" role="37wK5m">
+          <node concept="37vLTw" id="3x0R1LJ5CqH" role="37wK5m">
             <ref role="3cqZAo" node="3x0R1LJ5CqA" resolve="liftedResult" />
           </node>
         </node>
@@ -715,7 +713,7 @@
       <node concept="3clFbS" id="44LesUVAvHO" role="3clF47">
         <node concept="XkiVB" id="44LesUVAvHP" role="3cqZAp">
           <ref role="37wK5l" to="eqhl:4XbM$YHffxN" resolve="CBMCLiftedResult" />
-          <node concept="3cpWs2" id="44LesUVAvHQ" role="37wK5m">
+          <node concept="37vLTw" id="44LesUVAvHQ" role="37wK5m">
             <ref role="3cqZAo" node="44LesUVAvHI" resolve="liftedResult" />
           </node>
         </node>
@@ -837,7 +835,7 @@
             <node concept="3clFbS" id="5EwdfGVjAmI" role="9aQI4">
               <node concept="aOSgY" id="46evrC8dXTR" role="3cqZAp">
                 <node concept="aOSgX" id="46evrC8dYIS" role="aOSgK">
-                  <ref role="aOSgM" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
+                  <ref role="aOSgM" to="pyey:3V3CJZuMScE" resolve="IAssertLike" />
                   <node concept="9aQIb" id="46evrC8dYIT" role="aOS0M">
                     <node concept="3clFbS" id="46evrC8dYIU" role="9aQI4">
                       <node concept="3clFbF" id="46evrC8dZO1" role="3cqZAp">
@@ -964,10 +962,10 @@
             <node concept="NRdvd" id="3x0R1LJ5Crc" role="33vP2m">
               <ref role="1Pybhc" to="8ear:6GZ1x5GshiS" resolve="CBMCLiftedResultBuilder" />
               <ref role="37wK5l" to="8ear:6GZ1x5Gshjx" resolve="buildCBMCLiftedResult" />
-              <node concept="3cpWs2" id="3x0R1LJ5Crd" role="37wK5m">
+              <node concept="37vLTw" id="3x0R1LJ5Crd" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5Cr3" resolve="rawResult" />
               </node>
-              <node concept="3cpWs2" id="3x0R1LJ5Cre" role="37wK5m">
+              <node concept="37vLTw" id="3x0R1LJ5Cre" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5Cr5" resolve="analyzedConcept" />
               </node>
             </node>
@@ -977,7 +975,7 @@
           <node concept="2ShNRf" id="3x0R1LJ5Crg" role="3cqZAk">
             <node concept="1pGfFk" id="3x0R1LJ5Crh" role="2ShVmc">
               <ref role="37wK5l" node="3x0R1LJ5Cq_" resolve="CBMCAssertResult" />
-              <node concept="3cpWsa" id="3x0R1LJ5Cri" role="37wK5m">
+              <node concept="37vLTw" id="3x0R1LJ5Cri" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5Cra" resolve="lifted" />
               </node>
               <node concept="37vLTw" id="4jxm9lDvz4U" role="37wK5m">

@@ -2,7 +2,7 @@
 <model ref="r:6f01f408-3537-4eec-a03f-5422be0e8120(com.mbeddr.mpsutil.compare.pattern.baselang.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -94,10 +94,13 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -176,7 +179,7 @@
             <node concept="2OqwBi" id="$WtIWnAAWg" role="2Oq$k0">
               <node concept="13iPFW" id="$WtIWnAAUd" role="2Oq$k0" />
               <node concept="3TrEf2" id="7eUZPevzdha" role="2OqNvi">
-                <ref role="3Tt5mk" to="ycll:$WtIWn_T28" />
+                <ref role="3Tt5mk" to="ycll:$WtIWn_T28" resolve="annotation" />
               </node>
             </node>
             <node concept="3TrcHB" id="$WtIWnABnP" role="2OqNvi">
@@ -200,7 +203,7 @@
             <node concept="2OqwBi" id="4x6eMOKgp85" role="33vP2m">
               <node concept="13iPFW" id="4x6eMOKgp86" role="2Oq$k0" />
               <node concept="3TrEf2" id="4x6eMOKgp87" role="2OqNvi">
-                <ref role="3Tt5mk" to="ycll:$WtIWn_T28" />
+                <ref role="3Tt5mk" to="ycll:$WtIWn_T28" resolve="annotation" />
               </node>
             </node>
           </node>
@@ -212,12 +215,14 @@
               <ref role="ehGHo" to="iqxq:35E98Eq2KJO" resolve="IInitPart" />
             </node>
             <node concept="1PxgMI" id="4x6eMOKgp8b" role="33vP2m">
-              <ref role="1m5ApE" to="iqxq:35E98Eq2KJO" resolve="IInitPart" />
               <node concept="2OqwBi" id="4x6eMOKgp8c" role="1m5AlR">
                 <node concept="37vLTw" id="4x6eMOKgp8d" role="2Oq$k0">
                   <ref role="3cqZAo" node="4x6eMOKgp83" resolve="annotation" />
                 </node>
                 <node concept="1mfA1w" id="4x6eMOKgp8e" role="2OqNvi" />
+              </node>
+              <node concept="chp4Y" id="5RIakkDIO93" role="3oSUPX">
+                <ref role="cht4Q" to="iqxq:35E98Eq2KJO" resolve="IInitPart" />
               </node>
             </node>
           </node>
@@ -310,7 +315,7 @@
                 <node concept="2OqwBi" id="7h4r8m3Y3NP" role="2Oq$k0">
                   <node concept="13iPFW" id="7h4r8m3Y3IU" role="2Oq$k0" />
                   <node concept="3TrEf2" id="7eUZPevzbRC" role="2OqNvi">
-                    <ref role="3Tt5mk" to="ycll:$WtIWnBi4x" />
+                    <ref role="3Tt5mk" to="ycll:$WtIWnBi4x" resolve="pattern" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="7h4r8m3Y4rJ" role="2OqNvi">

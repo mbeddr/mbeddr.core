@@ -54,7 +54,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -136,7 +135,7 @@
           <node concept="2GrKxI" id="kLJ1m5GysG" role="2Gsz3X">
             <property role="TrG5h" value="n" />
           </node>
-          <node concept="3cpWsa" id="kLJ1m5GysJ" role="2GsD0m">
+          <node concept="37vLTw" id="kLJ1m5GysJ" role="2GsD0m">
             <ref role="3cqZAo" node="kLJ1m5Gys_" resolve="nodes" />
           </node>
           <node concept="3clFbS" id="kLJ1m5GysI" role="2LFqv$">
@@ -257,7 +256,7 @@
           <node concept="2GrKxI" id="57eqSrvnIoZ" role="2Gsz3X">
             <property role="TrG5h" value="n" />
           </node>
-          <node concept="3cpWsa" id="57eqSrvnIp0" role="2GsD0m">
+          <node concept="37vLTw" id="57eqSrvnIp0" role="2GsD0m">
             <ref role="3cqZAo" node="57eqSrvnIoU" resolve="nodes" />
           </node>
           <node concept="3clFbS" id="57eqSrvnIp1" role="2LFqv$">
@@ -376,7 +375,7 @@
           <node concept="2GrKxI" id="6hD5iiwalVt" role="2Gsz3X">
             <property role="TrG5h" value="n" />
           </node>
-          <node concept="3cpWsa" id="6hD5iiwalVu" role="2GsD0m">
+          <node concept="37vLTw" id="6hD5iiwalVu" role="2GsD0m">
             <ref role="3cqZAo" node="6hD5iiwalVo" resolve="nodes" />
           </node>
           <node concept="3clFbS" id="6hD5iiwalVv" role="2LFqv$">
@@ -434,7 +433,7 @@
           <node concept="2GrKxI" id="1Hy0xSl8CWw" role="2Gsz3X">
             <property role="TrG5h" value="n" />
           </node>
-          <node concept="3cpWsa" id="1Hy0xSl8CWz" role="2GsD0m">
+          <node concept="37vLTw" id="1Hy0xSl8CWz" role="2GsD0m">
             <ref role="3cqZAo" node="1Hy0xSl8CWo" resolve="nodes" />
           </node>
           <node concept="3clFbS" id="1Hy0xSl8CWy" role="2LFqv$">

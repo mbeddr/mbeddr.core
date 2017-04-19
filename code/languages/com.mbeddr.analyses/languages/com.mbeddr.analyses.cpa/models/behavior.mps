@@ -2,7 +2,7 @@
 <model ref="r:02ae7fb5-0c7f-4d27-9726-95dddb49a66a(com.mbeddr.analyses.cpa.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -97,10 +97,13 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
@@ -169,12 +172,14 @@
               <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
             </node>
             <node concept="1PxgMI" id="5KYWJPNMTt8" role="2Oq$k0">
-              <ref role="1m5ApE" to="x27k:5_l8w1EmTvx" resolve="Function" />
               <node concept="2OqwBi" id="3OLe0nF7pY7" role="1m5AlR">
                 <node concept="13iPFW" id="3OLe0nF7pQI" role="2Oq$k0" />
                 <node concept="3TrEf2" id="3OLe0nF7qd2" role="2OqNvi">
                   <ref role="3Tt5mk" to="km6g:5BkFC2yhyH$" resolve="entryPoint" />
                 </node>
+              </node>
+              <node concept="chp4Y" id="79i$vAY7s4L" role="3oSUPX">
+                <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
               </node>
             </node>
           </node>
