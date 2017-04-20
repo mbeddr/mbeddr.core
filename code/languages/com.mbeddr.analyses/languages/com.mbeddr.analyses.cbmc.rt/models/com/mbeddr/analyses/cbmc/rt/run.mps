@@ -1305,6 +1305,19 @@
         </node>
       </node>
     </node>
+    <node concept="2RhdJD" id="4AQNBfVagq8" role="jymVt">
+      <property role="2RkwnN" value="usedCBMCVersion" />
+      <node concept="3Tm1VV" id="4AQNBfVagq9" role="1B3o_S" />
+      <node concept="2RoN1w" id="4AQNBfVagqa" role="2RnVtd">
+        <node concept="3wEZqW" id="4AQNBfVagqb" role="3wFrgM" />
+        <node concept="3xqBd$" id="4AQNBfVagqc" role="3xrYvX">
+          <node concept="3Tm6S6" id="4AQNBfVagqd" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="4AQNBfVaAKS" role="2RkE6I">
+        <ref role="3uigEE" node="4AQNBfVaxbs" resolve="CBMCAnalysisConfig.CBMC_VERSION" />
+      </node>
+    </node>
     <node concept="2RhdJD" id="4Org$tqUG7p" role="jymVt">
       <property role="2RkwnN" value="shouldLoadSavedResults" />
       <node concept="3Tm1VV" id="4Org$tqUG7q" role="1B3o_S" />
@@ -1421,7 +1434,40 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="FDeiXq_kBh" role="3cqZAp" />
+        <node concept="3clFbF" id="4AQNBfVakxR" role="3cqZAp">
+          <node concept="37vLTI" id="4AQNBfVala5" role="3clFbG">
+            <node concept="3K4zz7" id="4AQNBfVaDu6" role="37vLTx">
+              <node concept="Rm8GO" id="4AQNBfVaEcn" role="3K4E3e">
+                <ref role="Rm8GQ" node="4AQNBfVaxbt" resolve="CBMC_5_7" />
+                <ref role="1Px2BO" node="4AQNBfVaxbs" resolve="CBMCAnalysisConfig.CBMC_VERSION" />
+              </node>
+              <node concept="Rm8GO" id="4AQNBfVaE_e" role="3K4GZi">
+                <ref role="Rm8GQ" node="4AQNBfVaAtL" resolve="CBMC_PREVIOUS_TO_5_7" />
+                <ref role="1Px2BO" node="4AQNBfVaxbs" resolve="CBMCAnalysisConfig.CBMC_VERSION" />
+              </node>
+              <node concept="2OqwBi" id="4AQNBfVaB65" role="3K4Cdx">
+                <node concept="2OqwBi" id="4AQNBfVal$W" role="2Oq$k0">
+                  <node concept="37vLTw" id="4AQNBfValno" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7xDyb4PlcpF" resolve="preference" />
+                  </node>
+                  <node concept="liA8E" id="4AQNBfValSi" role="2OqNvi">
+                    <ref role="37wK5l" to="p8vh:4AQNBfV8Vj3" resolve="getUsedCBMCVersion" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4AQNBfVaBPK" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="4AQNBfVaC66" role="37wK5m">
+                    <property role="Xl_RC" value="5.7" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="338YkY" id="4AQNBfVakxP" role="37vLTJ">
+              <ref role="338YkT" node="4AQNBfVagq8" resolve="usedCBMCVersion" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4AQNBfValYk" role="3cqZAp" />
         <node concept="3clFbF" id="1$MI$rgGxKQ" role="3cqZAp">
           <node concept="37vLTI" id="1$MI$rgGy4d" role="3clFbG">
             <node concept="3clFbT" id="1$MI$rgGy8f" role="37vLTx">
@@ -2100,6 +2146,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4AQNBfVan$R" role="3cqZAp">
+          <node concept="37vLTI" id="4AQNBfVapA7" role="3clFbG">
+            <node concept="338YkY" id="4AQNBfVapV4" role="37vLTx">
+              <ref role="338YkT" node="4AQNBfVagq8" resolve="usedCBMCVersion" />
+            </node>
+            <node concept="2OqwBi" id="4AQNBfVaoNw" role="37vLTJ">
+              <node concept="37vLTw" id="4AQNBfVan$P" role="2Oq$k0">
+                <ref role="3cqZAo" node="4_Ba8HNNIOG" resolve="res" />
+              </node>
+              <node concept="2S8uIT" id="4AQNBfVape3" role="2OqNvi">
+                <ref role="2S8YL0" node="4AQNBfVagq8" resolve="usedCBMCVersion" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4_Ba8HNP3MK" role="3cqZAp">
           <node concept="37vLTI" id="4_Ba8HNP7_x" role="3clFbG">
             <node concept="338YkY" id="4_Ba8HNP7Ml" role="37vLTx">
@@ -2443,7 +2504,7 @@
               <node concept="1Rwk04" id="4_Ba8HNRsUn" role="2OqNvi" />
             </node>
             <node concept="3cmrfG" id="NfDeW0RLaa" role="3uHU7w">
-              <property role="3cmrfH" value="39" />
+              <property role="3cmrfH" value="40" />
             </node>
           </node>
         </node>
@@ -2664,6 +2725,67 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4AQNBfVau2m" role="jymVt" />
+    <node concept="Qs71p" id="4AQNBfVaxbs" role="jymVt">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="CBMC_VERSION" />
+      <node concept="QsSxf" id="4AQNBfVaxbt" role="Qtgdg">
+        <property role="TrG5h" value="CBMC_5_7" />
+        <ref role="37wK5l" node="4AQNBfVaxbA" resolve="CBMCAnalysisConfig.CBMC_VERSION" />
+        <node concept="Xl_RD" id="4AQNBfVaxbu" role="37wK5m">
+          <property role="Xl_RC" value="5.7" />
+        </node>
+      </node>
+      <node concept="QsSxf" id="4AQNBfVaAtL" role="Qtgdg">
+        <property role="TrG5h" value="CBMC_PREVIOUS_TO_5_7" />
+        <ref role="37wK5l" node="4AQNBfVaxbA" resolve="CBMCAnalysisConfig.CBMC_VERSION" />
+        <node concept="Xl_RD" id="4AQNBfVaAtM" role="37wK5m">
+          <property role="Xl_RC" value="&lt;5.7" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4AQNBfVaxbx" role="1B3o_S" />
+      <node concept="312cEg" id="4AQNBfVaxby" role="jymVt">
+        <property role="TrG5h" value="cmd" />
+        <node concept="3Tm6S6" id="4AQNBfVaxbz" role="1B3o_S" />
+        <node concept="17QB3L" id="4AQNBfVaxb$" role="1tU5fm" />
+      </node>
+      <node concept="2tJIrI" id="4AQNBfVaxb_" role="jymVt" />
+      <node concept="3clFbW" id="4AQNBfVaxbA" role="jymVt">
+        <node concept="3cqZAl" id="4AQNBfVaxbB" role="3clF45" />
+        <node concept="3clFbS" id="4AQNBfVaxbC" role="3clF47">
+          <node concept="3clFbF" id="4AQNBfVaxbD" role="3cqZAp">
+            <node concept="37vLTI" id="4AQNBfVaxbE" role="3clFbG">
+              <node concept="3cpWs2" id="4AQNBfVaxbF" role="37vLTx">
+                <ref role="3cqZAo" node="4AQNBfVaxbJ" resolve="cmd" />
+              </node>
+              <node concept="2OqwBi" id="4AQNBfVaxbG" role="37vLTJ">
+                <node concept="Xjq3P" id="4AQNBfVaxbH" role="2Oq$k0" />
+                <node concept="2OwXpG" id="4AQNBfVaxbI" role="2OqNvi">
+                  <ref role="2Oxat5" node="4AQNBfVaxby" resolve="cmd" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="37vLTG" id="4AQNBfVaxbJ" role="3clF46">
+          <property role="TrG5h" value="cmd" />
+          <node concept="17QB3L" id="4AQNBfVaxbK" role="1tU5fm" />
+        </node>
+      </node>
+      <node concept="3clFb_" id="4AQNBfVaxbL" role="jymVt">
+        <property role="TrG5h" value="getCommand" />
+        <node concept="17QB3L" id="4AQNBfVaxbM" role="3clF45" />
+        <node concept="3clFbS" id="4AQNBfVaxbN" role="3clF47">
+          <node concept="3cpWs6" id="4AQNBfVaxbO" role="3cqZAp">
+            <node concept="2N2G$s" id="4AQNBfVaxbP" role="3cqZAk">
+              <ref role="3cqZAo" node="4AQNBfVaxby" resolve="cmd" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="4AQNBfVaxbQ" role="1B3o_S" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4AQNBfVavF2" role="jymVt" />
     <node concept="3uibUv" id="4_Ba8HNHx9N" role="EKbjA">
       <ref role="3uigEE" to="guwi:~Serializable" resolve="Serializable" />
     </node>
@@ -4548,18 +4670,32 @@
               </node>
               <node concept="3clFbJ" id="1HjqmQlM4nR" role="3cqZAp">
                 <node concept="3clFbS" id="1HjqmQlM4nS" role="3clFbx">
-                  <node concept="1X3_iC" id="7HMmVgSju7X" role="lGtFl">
-                    <property role="3V$3am" value="statement" />
-                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                    <node concept="3clFbF" id="1HjqmQlKOsr" role="8Wnug">
-                      <node concept="2OqwBi" id="1HjqmQlKOss" role="3clFbG">
-                        <node concept="37vLTw" id="1HjqmQlKOst" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
-                        </node>
-                        <node concept="TSZUe" id="1HjqmQlKOsu" role="2OqNvi">
-                          <node concept="Xl_RD" id="1HjqmQlKOsv" role="25WWJ7">
-                            <property role="Xl_RC" value="--drop-unused-functions" />
+                  <node concept="3clFbJ" id="4AQNBfVaIIu" role="3cqZAp">
+                    <node concept="3clFbS" id="4AQNBfVaIIw" role="3clFbx">
+                      <node concept="3clFbF" id="1HjqmQlKOsr" role="3cqZAp">
+                        <node concept="2OqwBi" id="1HjqmQlKOss" role="3clFbG">
+                          <node concept="37vLTw" id="1HjqmQlKOst" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
                           </node>
+                          <node concept="TSZUe" id="1HjqmQlKOsu" role="2OqNvi">
+                            <node concept="Xl_RD" id="1HjqmQlKOsv" role="25WWJ7">
+                              <property role="Xl_RC" value="--drop-unused-functions" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbC" id="4AQNBfVaJIE" role="3clFbw">
+                      <node concept="Rm8GO" id="4AQNBfVaKaK" role="3uHU7w">
+                        <ref role="Rm8GQ" node="4AQNBfVaxbt" resolve="CBMC_5_7" />
+                        <ref role="1Px2BO" node="4AQNBfVaxbs" resolve="CBMCAnalysisConfig.CBMC_VERSION" />
+                      </node>
+                      <node concept="2OqwBi" id="4AQNBfVaJ34" role="3uHU7B">
+                        <node concept="37vLTw" id="4AQNBfVaITu" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7F8$WoW31Wz" resolve="config" />
+                        </node>
+                        <node concept="2S8uIT" id="4AQNBfVaJfu" role="2OqNvi">
+                          <ref role="2S8YL0" node="4AQNBfVagq8" resolve="usedCBMCVersion" />
                         </node>
                       </node>
                     </node>
@@ -4586,29 +4722,47 @@
               </node>
               <node concept="3clFbJ" id="mb65_hvADj" role="3cqZAp">
                 <node concept="3clFbS" id="mb65_hvADk" role="3clFbx">
-                  <node concept="3clFbF" id="29$2IGZp9IC" role="3cqZAp">
-                    <node concept="2OqwBi" id="29$2IGZpa1S" role="3clFbG">
-                      <node concept="37vLTw" id="29$2IGZp9IA" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
-                      </node>
-                      <node concept="TSZUe" id="29$2IGZpbT4" role="2OqNvi">
-                        <node concept="Xl_RD" id="29$2IGZpbZy" role="25WWJ7">
-                          <property role="Xl_RC" value="--show-reachable-properties" />
+                  <node concept="3clFbJ" id="4AQNBfVaIa6" role="3cqZAp">
+                    <node concept="3clFbS" id="4AQNBfVaIa8" role="3clFbx">
+                      <node concept="3clFbF" id="29$2IGZp9IC" role="3cqZAp">
+                        <node concept="2OqwBi" id="29$2IGZpa1S" role="3clFbG">
+                          <node concept="37vLTw" id="29$2IGZp9IA" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                          </node>
+                          <node concept="TSZUe" id="29$2IGZpbT4" role="2OqNvi">
+                            <node concept="Xl_RD" id="29$2IGZpbZy" role="25WWJ7">
+                              <property role="Xl_RC" value="--show-reachable-properties" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
-                  </node>
-                  <node concept="1X3_iC" id="7HMmVgSjpVq" role="lGtFl">
-                    <property role="3V$3am" value="statement" />
-                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                    <node concept="3clFbF" id="1XBAmuaAVUr" role="8Wnug">
-                      <node concept="2OqwBi" id="1XBAmuaAVUs" role="3clFbG">
-                        <node concept="37vLTw" id="1XBAmuaAVUt" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                    <node concept="3clFbC" id="4AQNBfVaKjU" role="3clFbw">
+                      <node concept="Rm8GO" id="4AQNBfVaKt2" role="3uHU7w">
+                        <ref role="Rm8GQ" node="4AQNBfVaAtL" resolve="CBMC_PREVIOUS_TO_5_7" />
+                        <ref role="1Px2BO" node="4AQNBfVaxbs" resolve="CBMCAnalysisConfig.CBMC_VERSION" />
+                      </node>
+                      <node concept="2OqwBi" id="4AQNBfVaKjW" role="3uHU7B">
+                        <node concept="37vLTw" id="4AQNBfVaKjX" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7F8$WoW31Wz" resolve="config" />
                         </node>
-                        <node concept="TSZUe" id="1XBAmuaAVUu" role="2OqNvi">
-                          <node concept="Xl_RD" id="1XBAmuaAVUv" role="25WWJ7">
-                            <property role="Xl_RC" value="--show-properties" />
+                        <node concept="2S8uIT" id="4AQNBfVaKjY" role="2OqNvi">
+                          <ref role="2S8YL0" node="4AQNBfVagq8" resolve="usedCBMCVersion" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="9aQIb" id="4AQNBfVaKPd" role="9aQIa">
+                      <node concept="3clFbS" id="4AQNBfVaKPe" role="9aQI4">
+                        <node concept="3clFbF" id="1XBAmuaAVUr" role="3cqZAp">
+                          <node concept="2OqwBi" id="1XBAmuaAVUs" role="3clFbG">
+                            <node concept="37vLTw" id="1XBAmuaAVUt" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2UdJgvCXO0l" resolve="args" />
+                            </node>
+                            <node concept="TSZUe" id="1XBAmuaAVUu" role="2OqNvi">
+                              <node concept="Xl_RD" id="1XBAmuaAVUv" role="25WWJ7">
+                                <property role="Xl_RC" value="--show-properties" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>

@@ -3743,6 +3743,30 @@
       </node>
     </node>
     <node concept="2tJIrI" id="NfDeW0PT89" role="jymVt" />
+    <node concept="312cEg" id="4AQNBfV8_gY" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="usedCBMCVersionSpinner" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="4AQNBfV8_gZ" role="1B3o_S" />
+      <node concept="3uibUv" id="4AQNBfV8_h0" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JSpinner" resolve="JSpinner" />
+      </node>
+      <node concept="2ShNRf" id="4AQNBfV8_h1" role="33vP2m">
+        <node concept="1pGfFk" id="4AQNBfV8_h2" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~JSpinner.&lt;init&gt;(javax.swing.SpinnerModel)" resolve="JSpinner" />
+          <node concept="2OqwBi" id="4AQNBfV8_h3" role="37wK5m">
+            <node concept="37vLTw" id="4AQNBfV8_h4" role="2Oq$k0">
+              <ref role="3cqZAo" node="3OhBgB4iGn6" resolve="m" />
+            </node>
+            <node concept="2OwXpG" id="4AQNBfV8CWW" role="2OqNvi">
+              <ref role="2Oxat5" node="4AQNBfV8uWv" resolve="usedCBMCVersionModel" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4AQNBfV8y$U" role="jymVt" />
     <node concept="312cEg" id="3Ymokd9JLu_" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -5066,6 +5090,51 @@
           </node>
         </node>
         <node concept="3clFbH" id="7GloF9XRHx1" role="3cqZAp" />
+        <node concept="3clFbF" id="4AQNBfV8FBE" role="3cqZAp">
+          <node concept="2OqwBi" id="4AQNBfV8FBF" role="3clFbG">
+            <node concept="37vLTw" id="4AQNBfV8FBG" role="2Oq$k0">
+              <ref role="3cqZAo" node="7xDyb4Plki0" resolve="advancedPanel" />
+            </node>
+            <node concept="liA8E" id="4AQNBfV8FBH" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="2ShNRf" id="4AQNBfV8FBI" role="37wK5m">
+                <node concept="1pGfFk" id="4AQNBfV8FBJ" role="2ShVmc">
+                  <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                  <node concept="Xl_RD" id="4AQNBfV8FBK" role="37wK5m">
+                    <property role="Xl_RC" value="Used CBMC version: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4AQNBfV8FBL" role="3cqZAp">
+          <node concept="2OqwBi" id="4AQNBfV8FBM" role="3clFbG">
+            <node concept="37vLTw" id="4AQNBfV8FBN" role="2Oq$k0">
+              <ref role="3cqZAo" node="7xDyb4Plki0" resolve="advancedPanel" />
+            </node>
+            <node concept="liA8E" id="4AQNBfV8FBO" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="4AQNBfV8MrG" role="37wK5m">
+                <ref role="3cqZAo" node="4AQNBfV8_gY" resolve="usedCBMCVersionSpinner" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4AQNBfV8FBQ" role="3cqZAp">
+          <node concept="2OqwBi" id="4AQNBfV8FBR" role="3clFbG">
+            <node concept="37vLTw" id="4AQNBfV8FBS" role="2Oq$k0">
+              <ref role="3cqZAo" node="NfDeW0PWIv" resolve="useRefinementCheckbox" />
+            </node>
+            <node concept="liA8E" id="4AQNBfV8FBT" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <node concept="Xl_RD" id="4AQNBfV8FBU" role="37wK5m">
+                <property role="Xl_RC" value="Version of CBMC that we use" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4AQNBfV8D8C" role="3cqZAp" />
         <node concept="3cpWs8" id="6DRvbEG2Ttk" role="3cqZAp">
           <node concept="3cpWsn" id="6DRvbEG2Ttl" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -8053,6 +8122,31 @@
       <node concept="10P_77" id="3OhBgB4hwPw" role="1tU5fm" />
       <node concept="3clFbT" id="3OhBgB4hwPx" role="33vP2m" />
     </node>
+    <node concept="2tJIrI" id="4AQNBfV8t2f" role="jymVt" />
+    <node concept="312cEg" id="4AQNBfV8uWv" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="usedCBMCVersionModel" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="4AQNBfV8uWw" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~SpinnerListModel" resolve="SpinnerListModel" />
+      </node>
+      <node concept="2ShNRf" id="4AQNBfV8uWx" role="33vP2m">
+        <node concept="1pGfFk" id="4AQNBfV8uWy" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~SpinnerListModel.&lt;init&gt;(java.util.List)" resolve="SpinnerListModel" />
+          <node concept="2YIFZM" id="4AQNBfV8uWz" role="37wK5m">
+            <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
+            <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+            <node concept="Xl_RD" id="4AQNBfV8uW$" role="37wK5m">
+              <property role="Xl_RC" value="5.7" />
+            </node>
+            <node concept="Xl_RD" id="4AQNBfV8uW_" role="37wK5m">
+              <property role="Xl_RC" value="5.1 - 5.6" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="3OhBgB4hwPB" role="jymVt" />
     <node concept="312cEg" id="3OhBgB4hwPC" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -8369,6 +8463,60 @@
       <node concept="10P_77" id="3OhBgB4hx2r" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="3OhBgB4hx2s" role="jymVt" />
+    <node concept="3clFb_" id="4AQNBfV8ViR" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setUsedCBMCVersion" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="4AQNBfV8ViS" role="3clF47">
+        <node concept="3clFbF" id="4AQNBfV8ViT" role="3cqZAp">
+          <node concept="2OqwBi" id="4AQNBfV8ViU" role="3clFbG">
+            <node concept="37vLTw" id="4AQNBfV8XL7" role="2Oq$k0">
+              <ref role="3cqZAo" node="4AQNBfV8uWv" resolve="usedCBMCVersionModel" />
+            </node>
+            <node concept="liA8E" id="4AQNBfV8ViW" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~SpinnerListModel.setValue(java.lang.Object):void" resolve="setValue" />
+              <node concept="37vLTw" id="4AQNBfV8ViX" role="37wK5m">
+                <ref role="3cqZAo" node="4AQNBfV8Vj0" resolve="cbmcVersion" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4AQNBfV8ViY" role="1B3o_S" />
+      <node concept="3cqZAl" id="4AQNBfV8ViZ" role="3clF45" />
+      <node concept="37vLTG" id="4AQNBfV8Vj0" role="3clF46">
+        <property role="TrG5h" value="cbmcVersion" />
+        <node concept="17QB3L" id="4AQNBfV8Vj1" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4AQNBfV8Vj2" role="jymVt" />
+    <node concept="3clFb_" id="4AQNBfV8Vj3" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getUsedCBMCVersion" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="4AQNBfV8Vj4" role="3clF47">
+        <node concept="3cpWs6" id="4AQNBfV8Vj5" role="3cqZAp">
+          <node concept="1eOMI4" id="4AQNBfV8Vj6" role="3cqZAk">
+            <node concept="10QFUN" id="4AQNBfV8Vj7" role="1eOMHV">
+              <node concept="17QB3L" id="4AQNBfV8Vj8" role="10QFUM" />
+              <node concept="2OqwBi" id="4AQNBfV8Vj9" role="10QFUP">
+                <node concept="37vLTw" id="4AQNBfV919Z" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4AQNBfV8uWv" resolve="usedCBMCVersionModel" />
+                </node>
+                <node concept="liA8E" id="4AQNBfV8Vjb" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~SpinnerListModel.getValue():java.lang.Object" resolve="getValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4AQNBfV8Vjc" role="1B3o_S" />
+      <node concept="17QB3L" id="4AQNBfV8Vjd" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="4AQNBfV8Uk0" role="jymVt" />
     <node concept="3clFb_" id="3OhBgB4hx2t" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="setRebuildModelsBeforeAnalysis" />
