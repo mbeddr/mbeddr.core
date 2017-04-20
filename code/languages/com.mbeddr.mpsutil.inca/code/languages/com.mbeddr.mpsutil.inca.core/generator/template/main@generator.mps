@@ -4192,5 +4192,13 @@
       <ref role="2rW$FS" node="2aWpJMnxxYR" resolve="mapping_JoinTypeDefs" />
     </node>
   </node>
+  <node concept="13MO4I" id="1qP1$ZSSW8S">
+    <property role="3GE5qa" value="templates" />
+    <property role="TrG5h" value="template_RuntimeJoinType" />
+    <ref role="3gUMe" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
+    <node concept="3Tqbb2" id="1qP1$ZSSWaJ" role="13RCb5">
+      <node concept="raruj" id="1qP1$ZSSWaL" role="lGtFl" />
+    </node>
+  </node>
 </model>
 

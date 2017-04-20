@@ -703,6 +703,12 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="1qP1$ZSSYtk" role="3acgRq">
+      <ref role="30HIoZ" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
+      <node concept="j$656" id="1qP1$ZSSYNt" role="1lVwrX">
+        <ref role="v9R2y" to="cj1d:1qP1$ZSSW8S" resolve="template_RuntimeJoinType" />
+      </node>
+    </node>
     <node concept="3aamgX" id="6j5__H01AMT" role="3acgRq">
       <ref role="30HIoZ" to="hqsm:7a3nU34ZOGv" resolve="JoinTypeDef" />
       <node concept="b5Tf3" id="6j5__H01B9V" role="1lVwrX" />
