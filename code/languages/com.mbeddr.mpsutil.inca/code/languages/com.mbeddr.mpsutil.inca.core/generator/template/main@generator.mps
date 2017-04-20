@@ -279,7 +279,7 @@
         <reference id="1216860049623" name="label" index="1iwH7c" />
       </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
-      <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
+      <concept id="1217004708011" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetInputModel" flags="nn" index="1r8y6K" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -4150,13 +4150,13 @@
         <node concept="3JmXsc" id="3B59fJN6rtK" role="3Jn$fo">
           <node concept="3clFbS" id="3B59fJN6rtL" role="2VODD2">
             <node concept="3cpWs6" id="3B59fJN6rtM" role="3cqZAp">
-              <node concept="2OqwBi" id="3B59fJN6rtN" role="3cqZAk">
+              <node concept="2OqwBi" id="5lE8wH36qt7" role="3cqZAk">
                 <node concept="2OqwBi" id="3B59fJN6rtO" role="2Oq$k0">
                   <node concept="1iwH7S" id="3B59fJN6rtP" role="2Oq$k0" />
-                  <node concept="1st3f0" id="3B59fJN6rtQ" role="2OqNvi" />
+                  <node concept="1r8y6K" id="5lE8wH36q2e" role="2OqNvi" />
                 </node>
-                <node concept="2SmgA7" id="3B59fJN6rtR" role="2OqNvi">
-                  <node concept="chp4Y" id="3B59fJN6rtS" role="1dBWTz">
+                <node concept="2SmgA7" id="5lE8wH36qFZ" role="2OqNvi">
+                  <node concept="chp4Y" id="5lE8wH36qPn" role="1dBWTz">
                     <ref role="cht4Q" to="hqsm:7a3nU354JVn" resolve="IJoinTypeDef" />
                   </node>
                 </node>
