@@ -2,11 +2,12 @@
 <model ref="r:c98275d7-79fa-463b-9a00-25b3a3d9ddf4(com.mbeddr.cc.requirements.report.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="9prt" ref="r:408fbb9e-2f4a-492c-80c9-659ad1be0b91(com.mbeddr.cc.requirements.report.structure)" />
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="75wo" ref="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
@@ -24,6 +25,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -33,6 +37,7 @@
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -40,19 +45,19 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
+      <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1147468630220" name="propertyGetter" index="EtsB7" />
       </concept>
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
+      <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
-      <concept id="1148684180339" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Factory" flags="in" index="1MUpDS" />
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
         <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
         <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
@@ -74,16 +79,20 @@
     <ref role="1M2myG" to="9prt:519ky_SmIM1" resolve="RequirementsParagraph" />
     <node concept="1N5Pfh" id="519ky_SmJ0k" role="1Mr941">
       <ref role="1N5Vy1" to="9prt:519ky_SmIM2" resolve="module" />
-      <node concept="1MUpDS" id="519ky_SmJ0m" role="1N6uqs">
-        <node concept="3clFbS" id="519ky_SmJ0n" role="2VODD2">
-          <node concept="3clFbF" id="519ky_SmJ0o" role="3cqZAp">
-            <node concept="2OqwBi" id="519ky_SmJ1a" role="3clFbG">
-              <node concept="2OqwBi" id="519ky_SmJ0I" role="2Oq$k0">
-                <node concept="21POm0" id="519ky_SmJ0p" role="2Oq$k0" />
-                <node concept="I4A8Y" id="519ky_SmJ0O" role="2OqNvi" />
-              </node>
-              <node concept="3lApI0" id="519ky_SmJ1g" role="2OqNvi">
-                <ref role="3lApI3" to="75wo:7_tU7IQsFfx" resolve="RequirementsModule" />
+      <node concept="3dgokm" id="519ky_SmJ0m" role="1N6uqs">
+        <node concept="3clFbS" id="5CkU_dHibrJ" role="2VODD2">
+          <node concept="3clFbF" id="5CkU_dHibrK" role="3cqZAp">
+            <node concept="2YIFZM" id="5CkU_dHibsr" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="5CkU_dHibss" role="37wK5m">
+                <node concept="2OqwBi" id="5CkU_dHibst" role="2Oq$k0">
+                  <node concept="2rP1CM" id="5CkU_dHibsu" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="5CkU_dHibsv" role="2OqNvi" />
+                </node>
+                <node concept="3lApI0" id="5CkU_dHibsw" role="2OqNvi">
+                  <ref role="3lApI3" to="75wo:7_tU7IQsFfx" resolve="RequirementsModule" />
+                </node>
               </node>
             </node>
           </node>

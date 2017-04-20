@@ -2,7 +2,7 @@
 <model ref="r:8f36c62c-350a-44ce-b69f-f56cf9b063c6(com.mbeddr.analyses.spin.c.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -37,7 +37,7 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
-      <concept id="5676632058862809931" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="in" index="13QW63" />
+      <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213100494875" name="referent" index="1Mr941" />
@@ -66,26 +66,26 @@
   <node concept="1M2fIO" id="Y_s0WjA1sk">
     <ref role="1M2myG" to="velc:6rTOrQxjNFE" resolve="ProcRef" />
     <node concept="1N5Pfh" id="Y_s0WjA1sl" role="1Mr941">
-      <ref role="1N5Vy1" to="velc:6rTOrQxjNFF" />
-      <node concept="13QW63" id="Y_s0WjA3ud" role="1N6uqs">
-        <node concept="3clFbS" id="Y_s0WjA3ue" role="2VODD2">
-          <node concept="3clFbF" id="Y_s0WjA5Mc" role="3cqZAp">
-            <node concept="2ShNRf" id="Y_s0WjA5Ma" role="3clFbG">
-              <node concept="1pGfFk" id="Y_s0WjA5Zi" role="2ShVmc">
+      <ref role="1N5Vy1" to="velc:6rTOrQxjNFF" resolve="proc" />
+      <node concept="3dgokm" id="Y_s0WjA3ud" role="1N6uqs">
+        <node concept="3clFbS" id="5CkU_dHiaVb" role="2VODD2">
+          <node concept="3clFbF" id="5CkU_dHiaVc" role="3cqZAp">
+            <node concept="2ShNRf" id="5CkU_dHiaVd" role="3clFbG">
+              <node concept="1pGfFk" id="5CkU_dHiaVe" role="2ShVmc">
                 <ref role="37wK5l" to="6xgk:7lHSllLpTWM" resolve="NamedElementsScope" />
-                <node concept="2OqwBi" id="Y_s0WjA6rH" role="37wK5m">
-                  <node concept="2OqwBi" id="Y_s0WjA62Q" role="2Oq$k0">
-                    <node concept="2rP1CM" id="Y_s0WjA601" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="Y_s0WjA676" role="2OqNvi">
-                      <node concept="1xMEDy" id="Y_s0WjA678" role="1xVPHs">
-                        <node concept="chp4Y" id="Y_s0WjA7Fw" role="ri$Ld">
+                <node concept="2OqwBi" id="5CkU_dHiaVf" role="37wK5m">
+                  <node concept="2OqwBi" id="5CkU_dHiaVg" role="2Oq$k0">
+                    <node concept="2rP1CM" id="5CkU_dHiaVh" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="5CkU_dHiaVi" role="2OqNvi">
+                      <node concept="1xMEDy" id="5CkU_dHiaVj" role="1xVPHs">
+                        <node concept="chp4Y" id="5CkU_dHiaVk" role="ri$Ld">
                           <ref role="cht4Q" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="3Tsc0h" id="Y_s0WjA8ij" role="2OqNvi">
-                    <ref role="3TtcxE" to="x27k:5_l8w1EmTdh" />
+                  <node concept="3Tsc0h" id="5CkU_dHiaVl" role="2OqNvi">
+                    <ref role="3TtcxE" to="x27k:5_l8w1EmTdh" resolve="contents" />
                   </node>
                 </node>
               </node>

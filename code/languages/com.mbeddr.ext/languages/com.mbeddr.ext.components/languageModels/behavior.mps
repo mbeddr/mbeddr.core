@@ -2,13 +2,13 @@
 <model ref="r:ab391014-3e08-4918-9cc5-1c93e3a55c72(com.mbeddr.ext.components.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -9358,12 +9358,36 @@
             </node>
             <node concept="3cpWs3" id="3yeYUb91sxO" role="3uHU7B">
               <node concept="3cpWs3" id="3yeYUb91sxS" role="3uHU7B">
-                <node concept="2OqwBi" id="3yeYUb91sxV" role="3uHU7B">
-                  <node concept="37vLTw" id="3yeYUb91LH1" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3yeYUb91LGY" resolve="instance" />
+                <node concept="3cpWs3" id="6OFMQWRYm2D" role="3uHU7B">
+                  <node concept="3cpWs3" id="6OFMQWRYrmF" role="3uHU7B">
+                    <node concept="Xl_RD" id="6OFMQWRYrmI" role="3uHU7w">
+                      <property role="Xl_RC" value="_" />
+                    </node>
+                    <node concept="2OqwBi" id="6OFMQWRYozn" role="3uHU7B">
+                      <node concept="2OqwBi" id="6OFMQWRYmGN" role="2Oq$k0">
+                        <node concept="37vLTw" id="6OFMQWRYmaM" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3yeYUb91LGY" resolve="instance" />
+                        </node>
+                        <node concept="2Xjw5R" id="6OFMQWRYnI8" role="2OqNvi">
+                          <node concept="1xMEDy" id="6OFMQWRYnIa" role="1xVPHs">
+                            <node concept="chp4Y" id="6OFMQWRYnQj" role="ri$Ld">
+                              <ref role="cht4Q" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3TrcHB" id="6OFMQWRYq6T" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="3TrcHB" id="3yeYUb91sy0" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  <node concept="2OqwBi" id="3yeYUb91sxV" role="3uHU7w">
+                    <node concept="37vLTw" id="3yeYUb91LH1" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3yeYUb91LGY" resolve="instance" />
+                    </node>
+                    <node concept="3TrcHB" id="3yeYUb91sy0" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
                   </node>
                 </node>
                 <node concept="Xl_RD" id="3yeYUb91sy1" role="3uHU7w">

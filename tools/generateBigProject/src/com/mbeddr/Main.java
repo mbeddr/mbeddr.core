@@ -50,7 +50,7 @@ public class Main {
             return;
         }
         String fName = f.getName();
-        if (fName.endsWith(".mpl") || fName.endsWith(".msd")) {
+        if (fName.endsWith(".mpl") || fName.endsWith(".msd") || fName.endsWith(".devkit")) {
             w.write("      <modulePath path=\"" + f.getAbsolutePath() + "\" />");
             w.newLine();
         }

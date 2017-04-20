@@ -2,7 +2,7 @@
 <model ref="r:b34294cb-3f82-4e84-82e0-4475bd61d964(com.mbeddr.analyses.spin.promela.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -10,7 +10,7 @@
     <use id="b4f35ed8-45af-4efa-abe4-00ac26956e69" name="com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1385,7 +1385,7 @@
         <node concept="3EZMnI" id="7Rf0$0HCQr_" role="3EZMnx">
           <node concept="l2Vlx" id="7Rf0$0HCQrA" role="2iSdaV" />
           <node concept="3F2HdR" id="7Rf0$0HCQrB" role="3EZMnx">
-            <ref role="1NtTu8" to="51wr:4aYGoLbxbV6" resolve="linkables" />
+            <ref role="1NtTu8" to="51wr:4aYGoLbxbV6" resolve="externalLibraries" />
             <node concept="l2Vlx" id="7Rf0$0HCQrC" role="2czzBx" />
             <node concept="lj46D" id="7Rf0$0HCQrD" role="3F10Kt">
               <property role="VOm3f" value="true" />
@@ -1417,7 +1417,7 @@
                   <node concept="Bykcj" id="5KYWJPNP2eD" role="2OqNvi">
                     <node concept="1aIX9F" id="5KYWJPNP2eE" role="1xVPHs">
                       <node concept="26LbJo" id="5KYWJPNP2eF" role="1aIX9E">
-                        <ref role="26LbJp" to="51wr:4aYGoLbxbV6" resolve="linkables" />
+                        <ref role="26LbJp" to="51wr:4aYGoLbxbV6" resolve="externalLibraries" />
                       </node>
                     </node>
                   </node>

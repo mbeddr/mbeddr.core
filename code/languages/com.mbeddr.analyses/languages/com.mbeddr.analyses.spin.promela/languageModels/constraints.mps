@@ -2,11 +2,12 @@
 <model ref="r:b8d664e0-b97c-46ff-822d-c7738fe6e6d5(com.mbeddr.analyses.spin.promela.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="velc" ref="r:1af48fac-0627-4691-aa49-4813fdc5ca8e(com.mbeddr.analyses.spin.c.structure)" />
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
@@ -20,6 +21,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -29,6 +33,10 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -36,15 +44,15 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
+      <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
+      <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
-      <concept id="1148684180339" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Factory" flags="in" index="1MUpDS" />
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
         <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
         <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
@@ -82,28 +90,32 @@
     <ref role="1M2myG" to="ir22:GpUw9S99Bs" resolve="Run" />
     <node concept="1N5Pfh" id="GpUw9S99BD" role="1Mr941">
       <ref role="1N5Vy1" to="x27k:5ak6HMA0red" resolve="function" />
-      <node concept="1MUpDS" id="GpUw9S99BH" role="1N6uqs">
-        <node concept="3clFbS" id="GpUw9S99BI" role="2VODD2">
-          <node concept="3clFbF" id="GpUw9S99Cr" role="3cqZAp">
-            <node concept="2OqwBi" id="GpUw9S9cYS" role="3clFbG">
-              <node concept="2OqwBi" id="GpUw9S9a7E" role="2Oq$k0">
-                <node concept="2OqwBi" id="GpUw9S99Fa" role="2Oq$k0">
-                  <node concept="21POm0" id="GpUw9S99Cq" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="GpUw9S99R4" role="2OqNvi">
-                    <node concept="1xMEDy" id="GpUw9S99R6" role="1xVPHs">
-                      <node concept="chp4Y" id="GpUw9S99Sl" role="ri$Ld">
-                        <ref role="cht4Q" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+      <node concept="3dgokm" id="GpUw9S99BH" role="1N6uqs">
+        <node concept="3clFbS" id="5CkU_dHib7B" role="2VODD2">
+          <node concept="3clFbF" id="5CkU_dHib7C" role="3cqZAp">
+            <node concept="2YIFZM" id="5CkU_dHib9j" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="5CkU_dHib9k" role="37wK5m">
+                <node concept="2OqwBi" id="5CkU_dHib9l" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5CkU_dHib9m" role="2Oq$k0">
+                    <node concept="2rP1CM" id="5CkU_dHib9n" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="5CkU_dHib9o" role="2OqNvi">
+                      <node concept="1xMEDy" id="5CkU_dHib9p" role="1xVPHs">
+                        <node concept="chp4Y" id="5CkU_dHib9q" role="ri$Ld">
+                          <ref role="cht4Q" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+                        </node>
                       </node>
                     </node>
                   </node>
+                  <node concept="3Tsc0h" id="5CkU_dHib9r" role="2OqNvi">
+                    <ref role="3TtcxE" to="x27k:5_l8w1EmTdh" resolve="contents" />
+                  </node>
                 </node>
-                <node concept="3Tsc0h" id="GpUw9S9aUj" role="2OqNvi">
-                  <ref role="3TtcxE" to="x27k:5_l8w1EmTdh" resolve="contents" />
-                </node>
-              </node>
-              <node concept="v3k3i" id="GpUw9S9i3R" role="2OqNvi">
-                <node concept="chp4Y" id="GpUw9S9i9k" role="v3oSu">
-                  <ref role="cht4Q" to="ir22:GpUw9S5_Xd" resolve="ProcType" />
+                <node concept="v3k3i" id="5CkU_dHib9s" role="2OqNvi">
+                  <node concept="chp4Y" id="5CkU_dHib9t" role="v3oSu">
+                    <ref role="cht4Q" to="ir22:GpUw9S5_Xd" resolve="ProcType" />
+                  </node>
                 </node>
               </node>
             </node>

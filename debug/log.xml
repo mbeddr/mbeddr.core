@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE log4j:configuration SYSTEM "file:$APPLICATION_DIR$/bin/log4j.dtd">
+
+<log4j:configuration>
+  <appender name="CONSOLE-TRACE" class="org.apache.log4j.ConsoleAppender">
+      <param name="follow" value="true"/>
+      <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="[%7r] %6p - %30.30c - %m \n"/>
+      </layout>
+      <filter class="org.apache.log4j.varia.LevelRangeFilter">
+          <param name="LevelMin" value="TRACE"/>
+          <param name="LevelMax" value="TRACE"/>
+      </filter>
+  </appender>
+
+  <appender name="CONSOLE-DEBUG" class="org.apache.log4j.ConsoleAppender">
+      <param name="follow" value="true"/>
+      <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="[%7r] %6p - %30.30c - %m \n"/>
+      </layout>
+      <filter class="org.apache.log4j.varia.LevelRangeFilter">
+          <param name="LevelMin" value="DEBUG"/>
+          <param name="LevelMax" value="DEBUG"/>
+      </filter>
+  </appender>
+
+  <appender name="CONSOLE-INFO" class="org.apache.log4j.ConsoleAppender" >
+      <param name="follow" value="true"/>
+      <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="[%7r] %6p - %30.30c - %m \n"/>
+      </layout>
+      <filter class="org.apache.log4j.varia.LevelRangeFilter">
+          <param name="LevelMax" value="INFO"/>
+          <param name="LevelMin" value="INFO"/>
+      </filter>
+  </appender>
+  
+  <appender name="CONSOLE-WARN" class="org.apache.log4j.ConsoleAppender">
+      <param name="follow" value="true"/>
+      <param name="target" value="System.err"/>
+      <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="[%7r] %6p - %30.30c - %m \n"/>
+      </layout>
+      <filter class="org.apache.log4j.varia.LevelRangeFilter">
+          <param name="LevelMin" value="WARN"/>
+      </filter>
+  </appender>
+
+  <appender name="CONSOLE-ALL" class="org.apache.log4j.ConsoleAppender" >
+      <param name="follow" value="true"/>
+      <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="[%7r] %6p - %30.30c - %m \n"/>
+      </layout>
+  </appender>
+
+
+  <appender name="DIALOG" class="jetbrains.mps.diagnostic.MPSDialogAppender">
+      <filter class="org.apache.log4j.varia.LevelRangeFilter">
+          <param name="LevelMin" value="ERROR"/>
+      </filter>
+  </appender>
+
+  <appender name="FILE" class="org.apache.log4j.RollingFileAppender">
+      <param name="MaxFileSize" value="1Mb"/>
+      <param name="MaxBackupIndex" value="3"/>
+      <param name="file" value="$LOG_DIR$/idea.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="%d [%7r] %6p - %30.60c - %m \n"/>
+      </layout>
+  </appender>
+
+  <appender name="FILE-LOCAL" class="org.apache.log4j.RollingFileAppender">
+      <param name="MaxFileSize" value="1Mb"/>
+      <param name="MaxBackupIndex" value="3"/>
+      <param name="file" value="$APPLICATION_DIR$/mps.log"/>
+      <param name="append" value="true"/>
+      <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="%d [%7r] %6p - %30.60c - %m \n"/>
+      </layout>
+      <filter class="org.apache.log4j.varia.LevelRangeFilter">
+          <param name="LevelMin" value="INFO"/>
+      </filter>
+  </appender>
+
+  <appender name="FILE-VCS" class="org.apache.log4j.RollingFileAppender">
+      <param name="MaxFileSize" value="2Mb"/>
+      <param name="MaxBackupIndex" value="5"/>
+      <param name="file" value="$LOG_DIR$/mpsvcs.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="%d [%7r] %6p - %30.60c - %m \n"/>
+      </layout>
+  </appender>
+
+  <category name="jetbrains.mps.vcs" additivity="false">
+    <priority value="INFO"/>
+    <appender-ref ref="FILE-VCS"/>
+    <appender-ref ref="DIALOG"/>
+    <appender-ref ref="CONSOLE-WARN"/>
+  </category>
+
+  <category name="com.intellij.openapi.vcs" additivity="false">
+    <priority value="INFO"/>
+    <appender-ref ref="FILE-VCS"/>
+    <appender-ref ref="DIALOG"/>
+    <appender-ref ref="CONSOLE-WARN"/>
+  </category>
+
+  <category name="com.intellij" additivity="false">
+    <priority value="WARN"/>
+    <appender-ref ref="CONSOLE-WARN"/>
+    <appender-ref ref="DIALOG"/>
+    <appender-ref ref="FILE"/>
+  </category>
+
+  <category name="jetbrains.mps" additivity="true">
+    <priority value="INFO"/>
+    <appender-ref ref="CONSOLE-INFO"/>
+  </category>
+  <category name="jetbrains.mps.smodel.EDTExecutor" additivity="false">
+    <priority value="TRACE"/>
+    <appender-ref ref="CONSOLE-ALL"/>
+  </category>
+  <category name="jetbrains.mps.classloading" additivity="true">
+    <priority value="TRACE"/>
+    <appender-ref ref="CONSOLE-TRACE"/>
+    <appender-ref ref="CONSOLE-DEBUG"/>
+ </category>
+
+  <category name="#com.intellij" additivity="false">
+    <priority value="WARN"/>
+    <appender-ref ref="CONSOLE-WARN"/>
+    <appender-ref ref="DIALOG"/>
+    <appender-ref ref="FILE"/>
+  </category>
+
+  <root>
+    <priority value="INFO"/>
+    <appender-ref ref="CONSOLE-WARN"/>
+    <appender-ref ref="DIALOG"/>
+    <appender-ref ref="FILE"/>
+  </root>
+</log4j:configuration>

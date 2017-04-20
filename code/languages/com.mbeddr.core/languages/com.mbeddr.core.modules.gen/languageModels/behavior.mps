@@ -2,7 +2,7 @@
 <model ref="r:b37b80ef-b920-4af7-9966-3a77c955c860(com.mbeddr.core.modules.gen.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -256,6 +256,7 @@
         <child id="1197932525128" name="key" index="3ElVtu" />
       </concept>
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
+      <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
   </registry>
   <node concept="13h7C7" id="1oIA7EcAbeY">
@@ -438,13 +439,16 @@
       <node concept="3Tm1VV" id="1oIA7EcBtRq" role="1B3o_S" />
       <node concept="3clFbS" id="1oIA7EcBtRr" role="3clF47">
         <node concept="3clFbF" id="6Dsu9vjKE7L" role="3cqZAp">
-          <node concept="2YIFZM" id="ReXz9EbYpC" role="3clFbG">
-            <ref role="37wK5l" node="ReXz9EbQD3" resolve="visibleConceptsOfTypeInModHNew" />
-            <ref role="1Pybhc" node="6Dsu9vjKyej" resolve="VisibleContentsOfTypeCacheHelper" />
-            <node concept="13iPFW" id="ReXz9EbYpD" role="37wK5m" />
-            <node concept="37vLTw" id="ReXz9EbYpE" role="37wK5m">
-              <ref role="3cqZAo" node="1oIA7EcBtRs" resolve="targetConcept" />
+          <node concept="2OqwBi" id="6OFMQWQvTgG" role="3clFbG">
+            <node concept="2YIFZM" id="ReXz9EbYpC" role="2Oq$k0">
+              <ref role="37wK5l" node="ReXz9EbQD3" resolve="visibleConceptsOfTypeInModHNew" />
+              <ref role="1Pybhc" node="6Dsu9vjKyej" resolve="VisibleContentsOfTypeCacheHelper" />
+              <node concept="13iPFW" id="ReXz9EbYpD" role="37wK5m" />
+              <node concept="37vLTw" id="ReXz9EbYpE" role="37wK5m">
+                <ref role="3cqZAo" node="1oIA7EcBtRs" resolve="targetConcept" />
+              </node>
             </node>
+            <node concept="1VAtEI" id="6OFMQWQvV8p" role="2OqNvi" />
           </node>
         </node>
       </node>
