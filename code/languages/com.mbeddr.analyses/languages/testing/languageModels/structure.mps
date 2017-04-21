@@ -122,26 +122,5 @@
       <ref role="20lvS9" to="tpee:fz7vLUo" resolve="VariableReference" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1aReOC$6jBX">
-    <property role="TrG5h" value="GeneratorOutputPath" />
-    <property role="34LRSv" value="generator-output-path" />
-    <property role="EcuMT" value="1348611803040004605" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyi" id="v3WHCwUiHA" role="1TKVEl">
-      <property role="TrG5h" value="name" />
-      <property role="IQ2nx" value="559557797393017702" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="v3WHCwUjHJ" role="1TKVEl">
-      <property role="TrG5h" value="stereotype" />
-      <property role="IQ2nx" value="559557797393021807" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="v3WHCwUoyi" role="1TKVEl">
-      <property role="TrG5h" value="fqName" />
-      <property role="IQ2nx" value="559557797393041554" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
 </model>
 
