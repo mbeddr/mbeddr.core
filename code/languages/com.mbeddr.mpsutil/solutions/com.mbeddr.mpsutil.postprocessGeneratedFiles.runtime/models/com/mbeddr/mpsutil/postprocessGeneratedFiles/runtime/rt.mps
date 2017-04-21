@@ -138,6 +138,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -414,6 +415,29 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="5pm8$ZezCJf" role="3cqZAp">
+          <node concept="3cpWsn" id="5pm8$ZezCJg" role="3cpWs9">
+            <property role="TrG5h" value="modelPath" />
+            <node concept="17QB3L" id="5pm8$ZezCJh" role="1tU5fm" />
+            <node concept="2OqwBi" id="5pm8$ZezCJi" role="33vP2m">
+              <node concept="2OqwBi" id="5pm8$ZezCJj" role="2Oq$k0">
+                <node concept="37vLTw" id="5pm8$ZezCJk" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5pm8$ZezCJx" resolve="modl" />
+                </node>
+                <node concept="LkI2h" id="5pm8$ZezCJl" role="2OqNvi" />
+              </node>
+              <node concept="liA8E" id="5pm8$ZezCJm" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                <node concept="Xl_RD" id="5pm8$ZezCJn" role="37wK5m">
+                  <property role="Xl_RC" value="." />
+                </node>
+                <node concept="Xl_RD" id="5pm8$ZezCJo" role="37wK5m">
+                  <property role="Xl_RC" value="/" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="5pm8$ZezCJr" role="3cqZAp">
           <node concept="2YIFZM" id="5pm8$ZezCJs" role="3cqZAk">
             <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
@@ -421,8 +445,8 @@
             <node concept="37vLTw" id="5pm8$ZezCJt" role="37wK5m">
               <ref role="3cqZAo" node="5pm8$ZezCJ9" resolve="sourceGenPath" />
             </node>
-            <node concept="Xl_RD" id="44EVd0VPf3B" role="37wK5m">
-              <property role="Xl_RC" value="" />
+            <node concept="37vLTw" id="5pm8$ZezCJu" role="37wK5m">
+              <ref role="3cqZAo" node="5pm8$ZezCJg" resolve="modelPath" />
             </node>
           </node>
         </node>

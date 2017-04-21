@@ -2301,6 +2301,56 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="DMIuLunj_b" role="3cqZAp">
+          <node concept="3cpWsn" id="DMIuLunj_c" role="3cpWs9">
+            <property role="TrG5h" value="modelPath" />
+            <node concept="17QB3L" id="DMIuLunj_d" role="1tU5fm" />
+            <node concept="2OqwBi" id="DMIuLunj_e" role="33vP2m">
+              <node concept="2YIFZM" id="DMIuLunj_f" role="2Oq$k0">
+                <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
+                <ref role="37wK5l" to="unno:7WvVJ3rORmu" resolve="getModelLongName" />
+                <node concept="2JrnkZ" id="DMIuLunj_g" role="37wK5m">
+                  <node concept="2OqwBi" id="DMIuLunj_h" role="2JrQYb">
+                    <node concept="2WthIp" id="DMIuLunj_i" role="2Oq$k0" />
+                    <node concept="3gHZIF" id="DMIuLunj_j" role="2OqNvi">
+                      <ref role="2WH_rO" node="7uLL3Mf2Pkn" resolve="model" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="DMIuLunj_k" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="DMIuLunj_l" role="37wK5m">
+                  <property role="Xl_RC" value="\\." />
+                </node>
+                <node concept="Xl_RD" id="DMIuLunj_m" role="37wK5m">
+                  <property role="Xl_RC" value="/" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="DMIuLunj_n" role="3cqZAp">
+          <node concept="37vLTI" id="DMIuLunj_o" role="3clFbG">
+            <node concept="3cpWs3" id="DMIuLunj_p" role="37vLTx">
+              <node concept="37vLTw" id="DMIuLunj_q" role="3uHU7w">
+                <ref role="3cqZAo" node="DMIuLunj_c" resolve="modelPath" />
+              </node>
+              <node concept="3cpWs3" id="DMIuLunj_r" role="3uHU7B">
+                <node concept="10M0yZ" id="DMIuLunj_s" role="3uHU7w">
+                  <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
+                  <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="37vLTw" id="DMIuLunj_t" role="3uHU7B">
+                  <ref role="3cqZAo" node="DMIuLunj_5" resolve="path" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="DMIuLunj_u" role="37vLTJ">
+              <ref role="3cqZAo" node="DMIuLunj_5" resolve="path" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="DMIuLunk7m" role="3cqZAp">
           <node concept="2ShNRf" id="DMIuLunsXy" role="3cqZAk">
             <node concept="1pGfFk" id="DMIuLunsXp" role="2ShVmc">
@@ -2373,7 +2423,6 @@
   </node>
   <node concept="312cEu" id="7uLL3Mf2K4X">
     <property role="TrG5h" value="TerminalOpener" />
-    <property role="3GE5qa" value="terminal" />
     <node concept="3Tm1VV" id="7uLL3Mf2K4Y" role="1B3o_S" />
     <node concept="2YIFZL" id="7uLL3Mf2K56" role="jymVt">
       <property role="TrG5h" value="isOnWindows" />
