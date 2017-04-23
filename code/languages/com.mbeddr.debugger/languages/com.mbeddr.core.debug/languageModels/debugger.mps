@@ -61407,48 +61407,41 @@
                       <node concept="3clFbS" id="EAFuLEso9D" role="1bW5cS">
                         <node concept="3clFbF" id="EAFuLEsolD" role="3cqZAp">
                           <node concept="1Wc70l" id="EAFuLEsolF" role="3clFbG">
-                            <node concept="2OqwBi" id="EAFuLEsolG" role="3uHU7w">
-                              <node concept="2OqwBi" id="EAFuLEsolH" role="2Oq$k0">
-                                <node concept="37vLTw" id="EAFuLEsuRA" role="2Oq$k0">
+                            <node concept="1eOMI4" id="EAFuLEsolM" role="3uHU7B">
+                              <node concept="2OqwBi" id="EAFuLEsolO" role="1eOMHV">
+                                <node concept="37vLTw" id="EAFuLEsryW" role="2Oq$k0">
                                   <ref role="3cqZAo" node="EAFuLEso9E" resolve="trace" />
                                 </node>
-                                <node concept="liA8E" id="EAFuLEsolJ" role="2OqNvi">
-                                  <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="EAFuLEsolK" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                                <node concept="37vLTw" id="EAFuLEsolL" role="37wK5m">
-                                  <ref role="3cqZAo" node="EAFuLErjw5" resolve="concept" />
+                                <node concept="liA8E" id="4O11Esfd1CD" role="2OqNvi">
+                                  <ref role="37wK5l" to="fwk:~PositionInfo.matches(org.jetbrains.mps.openapi.model.SNodeId):boolean" resolve="matches" />
+                                  <node concept="2OqwBi" id="EAFuLEsolT" role="37wK5m">
+                                    <node concept="2JrnkZ" id="EAFuLEsolU" role="2Oq$k0">
+                                      <node concept="37vLTw" id="EAFuLEsolV" role="2JrQYb">
+                                        <ref role="3cqZAo" node="EAFuLEqHmM" resolve="currentNode" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="EAFuLEsolW" role="2OqNvi">
+                                      <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
-                            <node concept="1eOMI4" id="EAFuLEsolM" role="3uHU7B">
-                              <node concept="2OqwBi" id="EAFuLEsolN" role="1eOMHV">
-                                <node concept="2OqwBi" id="EAFuLEsolO" role="2Oq$k0">
-                                  <node concept="37vLTw" id="EAFuLEsryW" role="2Oq$k0">
+                            <node concept="2OqwBi" id="4O11Esfdi1s" role="3uHU7w">
+                              <node concept="2OqwBi" id="4O11Esfdi1t" role="2Oq$k0">
+                                <node concept="37vLTw" id="4O11Esfdi1u" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="EAFuLErjw5" resolve="concept" />
+                                </node>
+                                <node concept="1rGIog" id="4O11Esfdi1v" role="2OqNvi" />
+                              </node>
+                              <node concept="liA8E" id="4O11Esfdi1w" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                <node concept="2OqwBi" id="4O11Esfdi1x" role="37wK5m">
+                                  <node concept="37vLTw" id="4O11Esfdi1y" role="2Oq$k0">
                                     <ref role="3cqZAo" node="EAFuLEso9E" resolve="trace" />
                                   </node>
-                                  <node concept="liA8E" id="EAFuLEsolQ" role="2OqNvi">
-                                    <ref role="37wK5l" to="fwk:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="EAFuLEsolR" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                                  <node concept="2OqwBi" id="EAFuLEsolS" role="37wK5m">
-                                    <node concept="2OqwBi" id="EAFuLEsolT" role="2Oq$k0">
-                                      <node concept="2JrnkZ" id="EAFuLEsolU" role="2Oq$k0">
-                                        <node concept="37vLTw" id="EAFuLEsolV" role="2JrQYb">
-                                          <ref role="3cqZAo" node="EAFuLEqHmM" resolve="currentNode" />
-                                        </node>
-                                      </node>
-                                      <node concept="liA8E" id="EAFuLEsolW" role="2OqNvi">
-                                        <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
-                                      </node>
-                                    </node>
-                                    <node concept="liA8E" id="EAFuLEsolX" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
-                                    </node>
+                                  <node concept="liA8E" id="4O11Esfdi1z" role="2OqNvi">
+                                    <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getConcept" />
                                   </node>
                                 </node>
                               </node>
@@ -61505,46 +61498,39 @@
                           <node concept="3clFbS" id="EAFuLEsCma" role="1bW5cS">
                             <node concept="3clFbF" id="EAFuLEsCmb" role="3cqZAp">
                               <node concept="1Wc70l" id="3gXIijCHJdT" role="3clFbG">
-                                <node concept="2OqwBi" id="3gXIijCHJdU" role="3uHU7w">
-                                  <node concept="2OqwBi" id="3gXIijCHJdV" role="2Oq$k0">
-                                    <node concept="37vLTw" id="EAFuLEsEkJ" role="2Oq$k0">
+                                <node concept="1eOMI4" id="3gXIijCHJe6" role="3uHU7B">
+                                  <node concept="2OqwBi" id="3gXIijCHJej" role="1eOMHV">
+                                    <node concept="37vLTw" id="EAFuLEsDOx" role="2Oq$k0">
                                       <ref role="3cqZAo" node="EAFuLEsCmv" resolve="trace" />
                                     </node>
-                                    <node concept="liA8E" id="3gXIijCHJdX" role="2OqNvi">
-                                      <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
-                                    </node>
-                                  </node>
-                                  <node concept="liA8E" id="3gXIijCHJdY" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                                    <node concept="37vLTw" id="EAFuLErkEd" role="37wK5m">
-                                      <ref role="3cqZAo" node="EAFuLErjw5" resolve="concept" />
+                                    <node concept="liA8E" id="4O11Esfd9lg" role="2OqNvi">
+                                      <ref role="37wK5l" to="fwk:~PositionInfo.matches(org.jetbrains.mps.openapi.model.SNodeId):boolean" resolve="matches" />
+                                      <node concept="2OqwBi" id="5HxjapwecUV" role="37wK5m">
+                                        <node concept="liA8E" id="5HxjapwecUW" role="2OqNvi">
+                                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                        </node>
+                                        <node concept="37vLTw" id="5HxjapwecUX" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="7IqCWzPuJ8T" resolve="root" />
+                                        </node>
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="1eOMI4" id="3gXIijCHJe6" role="3uHU7B">
-                                  <node concept="2OqwBi" id="3gXIijCHJei" role="1eOMHV">
-                                    <node concept="2OqwBi" id="3gXIijCHJej" role="2Oq$k0">
-                                      <node concept="37vLTw" id="EAFuLEsDOx" role="2Oq$k0">
+                                <node concept="2OqwBi" id="4O11EsfddxU" role="3uHU7w">
+                                  <node concept="2OqwBi" id="4O11Esfdc56" role="2Oq$k0">
+                                    <node concept="37vLTw" id="EAFuLErkEd" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="EAFuLErjw5" resolve="concept" />
+                                    </node>
+                                    <node concept="1rGIog" id="4O11EsfdcIe" role="2OqNvi" />
+                                  </node>
+                                  <node concept="liA8E" id="4O11EsfdelV" role="2OqNvi">
+                                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <node concept="2OqwBi" id="4O11EsfdfCo" role="37wK5m">
+                                      <node concept="37vLTw" id="4O11Esfdf8h" role="2Oq$k0">
                                         <ref role="3cqZAo" node="EAFuLEsCmv" resolve="trace" />
                                       </node>
-                                      <node concept="liA8E" id="3gXIijCHJel" role="2OqNvi">
-                                        <ref role="37wK5l" to="fwk:~PositionInfo.getNodeId():java.lang.String" resolve="getNodeId" />
-                                      </node>
-                                    </node>
-                                    <node concept="liA8E" id="3gXIijCHJem" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                                      <node concept="2OqwBi" id="5HxjapwecUT" role="37wK5m">
-                                        <node concept="liA8E" id="5HxjapwecUU" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
-                                        </node>
-                                        <node concept="2OqwBi" id="5HxjapwecUV" role="2Oq$k0">
-                                          <node concept="liA8E" id="5HxjapwecUW" role="2OqNvi">
-                                            <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
-                                          </node>
-                                          <node concept="37vLTw" id="5HxjapwecUX" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="7IqCWzPuJ8T" resolve="root" />
-                                          </node>
-                                        </node>
+                                      <node concept="liA8E" id="4O11EsfdgzV" role="2OqNvi">
+                                        <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getConcept" />
                                       </node>
                                     </node>
                                   </node>
@@ -61662,19 +61648,22 @@
               <node concept="1bVj0M" id="EAFuLEs1iA" role="23t8la">
                 <node concept="3clFbS" id="EAFuLEs1iB" role="1bW5cS">
                   <node concept="3clFbF" id="EAFuLEs1AT" role="3cqZAp">
-                    <node concept="2OqwBi" id="EAFuLEs1AV" role="3clFbG">
-                      <node concept="2OqwBi" id="EAFuLEs1AW" role="2Oq$k0">
-                        <node concept="37vLTw" id="EAFuLEs1AX" role="2Oq$k0">
-                          <ref role="3cqZAo" node="EAFuLEs1iC" resolve="trace" />
-                        </node>
-                        <node concept="liA8E" id="EAFuLEs1AY" role="2OqNvi">
-                          <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="EAFuLEs1AZ" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                        <node concept="37vLTw" id="EAFuLEs1B0" role="37wK5m">
+                    <node concept="2OqwBi" id="4O11EsfdiNa" role="3clFbG">
+                      <node concept="2OqwBi" id="4O11EsfdiNb" role="2Oq$k0">
+                        <node concept="37vLTw" id="4O11EsfdiNc" role="2Oq$k0">
                           <ref role="3cqZAo" node="EAFuLErVab" resolve="concept" />
+                        </node>
+                        <node concept="1rGIog" id="4O11EsfdiNd" role="2OqNvi" />
+                      </node>
+                      <node concept="liA8E" id="4O11EsfdiNe" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                        <node concept="2OqwBi" id="4O11EsfdiNf" role="37wK5m">
+                          <node concept="37vLTw" id="4O11EsfdiNg" role="2Oq$k0">
+                            <ref role="3cqZAo" node="EAFuLEs1iC" resolve="trace" />
+                          </node>
+                          <node concept="liA8E" id="4O11EsfdiNh" role="2OqNvi">
+                            <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getConcept" />
+                          </node>
                         </node>
                       </node>
                     </node>

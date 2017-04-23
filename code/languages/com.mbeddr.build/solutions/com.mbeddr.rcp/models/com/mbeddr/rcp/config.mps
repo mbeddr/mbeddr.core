@@ -7,7 +7,7 @@
     <use id="58f98fef-90ad-4b72-a390-fad66ec7005a" name="jetbrains.mps.core.properties" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="-1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
     <use id="d5033cee-f632-44b6-b308-89d4fbde34ff" name="jetbrains.mps.build.startup" version="-1" />
   </languages>
   <imports>
@@ -3748,24 +3748,6 @@
         </node>
         <node concept="3ygNvl" id="1BPeV_LjXv$" role="39821P">
           <ref role="3ygNvj" to="ffeo:1aRUp2KiMC$" resolve="license" />
-        </node>
-      </node>
-      <node concept="398223" id="1BPeV_LjXv_" role="39821P">
-        <node concept="3_J27D" id="1BPeV_LjXvA" role="Nbhlr">
-          <node concept="3Mxwew" id="1BPeV_LjXvB" role="3MwsjC">
-            <property role="3MwjfP" value="plugin" />
-          </node>
-        </node>
-        <node concept="28jJK3" id="1BPeV_LjXvC" role="39821P">
-          <node concept="398BVA" id="1BPeV_LjXvD" role="28jJRO">
-            <ref role="398BVh" node="1BPeV_LjXqO" resolve="mps.home" />
-            <node concept="2Ry0Ak" id="1BPeV_LjXvE" role="iGT6I">
-              <property role="2Ry0Am" value="plugin" />
-              <node concept="2Ry0Ak" id="1BPeV_LjXvF" role="2Ry0An">
-                <property role="2Ry0Am" value="MPSPlugin.jar" />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="398223" id="1BPeV_LjXvG" role="39821P">
