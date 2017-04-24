@@ -704,7 +704,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="1qP1$ZSSYtk" role="3acgRq">
-      <ref role="30HIoZ" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
+      <ref role="30HIoZ" to="hqsm:1UJP1A0V$Ki" resolve="JoinSNodeType" />
       <node concept="j$656" id="1qP1$ZSSYNt" role="1lVwrX">
         <ref role="v9R2y" to="cj1d:1qP1$ZSSW8S" resolve="template_RuntimeJoinType" />
       </node>

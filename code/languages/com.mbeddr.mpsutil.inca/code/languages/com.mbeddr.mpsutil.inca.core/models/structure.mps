@@ -1193,7 +1193,7 @@
   <node concept="1TIwiD" id="1UJP1A0V$Ki">
     <property role="EcuMT" value="2211219148064574482" />
     <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="RuntimeJoinType" />
+    <property role="TrG5h" value="JoinSNodeType" />
     <property role="34LRSv" value="join" />
     <property role="R4oN_" value="join type" />
     <ref role="1TJDcQ" to="tp25:gzTqbfa" resolve="SNodeType" />

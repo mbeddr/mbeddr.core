@@ -3358,10 +3358,10 @@
   </node>
   <node concept="35pCF_" id="xoAMGDx$xO">
     <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="RuntimeJoinType_SubTyping" />
+    <property role="TrG5h" value="JoinSNodeType_SubTyping" />
     <node concept="1YaCAy" id="xoAMGDx$z2" role="35pZ6h">
       <property role="TrG5h" value="sup" />
-      <ref role="1YaFvo" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
+      <ref role="1YaFvo" to="hqsm:1UJP1A0V$Ki" resolve="JoinSNodeType" />
     </node>
     <node concept="3clFbS" id="xoAMGDx$xQ" role="2sgrp5" />
     <node concept="1YaCAy" id="xoAMGDx$y8" role="1YuTPh">
@@ -3422,7 +3422,7 @@
   </node>
   <node concept="35pCF_" id="1UJP1A0W2Q7">
     <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="RuntimeJoinType_SuperTyping" />
+    <property role="TrG5h" value="JoinSNodeType_SuperTyping" />
     <node concept="1YaCAy" id="1UJP1A0W2Q8" role="35pZ6h">
       <property role="TrG5h" value="sup" />
       <ref role="1YaFvo" to="tpee:fz3vP1H" resolve="Type" />
@@ -3430,7 +3430,7 @@
     <node concept="3clFbS" id="1UJP1A0W2Q9" role="2sgrp5" />
     <node concept="1YaCAy" id="1UJP1A0W2Qa" role="1YuTPh">
       <property role="TrG5h" value="sub" />
-      <ref role="1YaFvo" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
+      <ref role="1YaFvo" to="hqsm:1UJP1A0V$Ki" resolve="JoinSNodeType" />
     </node>
     <node concept="1xSnZT" id="1UJP1A0W2Qb" role="1xSnZW">
       <node concept="3clFbS" id="1UJP1A0W2Qc" role="2VODD2">

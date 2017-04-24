@@ -2641,7 +2641,7 @@
   </node>
   <node concept="24kQdi" id="1UJP1A0VCI4">
     <property role="3GE5qa" value="type" />
-    <ref role="1XX52x" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
+    <ref role="1XX52x" to="hqsm:1UJP1A0V$Ki" resolve="JoinSNodeType" />
     <node concept="3EZMnI" id="1UJP1A0VCI9" role="2wV5jI">
       <node concept="l2Vlx" id="1UJP1A0VCIa" role="2iSdaV" />
       <node concept="3F0ifn" id="1UJP1A0VCI6" role="3EZMnx">

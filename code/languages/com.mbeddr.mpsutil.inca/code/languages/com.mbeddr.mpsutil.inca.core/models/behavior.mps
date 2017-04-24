@@ -6148,7 +6148,7 @@
         <node concept="3cpWs6" id="xoAMGDsLRV" role="3cqZAp">
           <node concept="2pJPEk" id="xoAMGDsM3a" role="3cqZAk">
             <node concept="2pJPED" id="xoAMGDsMgK" role="2pJPEn">
-              <ref role="2pJxaS" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
+              <ref role="2pJxaS" to="hqsm:1UJP1A0V$Ki" resolve="JoinSNodeType" />
               <node concept="2pIpSj" id="xoAMGDsMEQ" role="2pJxcM">
                 <ref role="2pIpSl" to="hqsm:1UJP1A0VCHU" resolve="joinTypeDef" />
                 <node concept="36biLy" id="xoAMGDsMF0" role="2pJxcZ">

@@ -244,6 +244,7 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -598,6 +599,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6Ab4H5GhiwT" role="3cqZAp">
+          <node concept="3SKdUq" id="6Ab4H5GhiwV" role="3SKWNk">
+            <property role="3SKdUp" value="filter out join types" />
           </node>
         </node>
         <node concept="3clFbF" id="59fzZVN3HJd" role="3cqZAp">
@@ -3422,6 +3428,35 @@
             <property role="TrG5h" value="concept" />
           </node>
           <node concept="3clFbS" id="3sUe9pq6Ou8" role="2LFqv$">
+            <node concept="3cpWs8" id="6Ab4H5GgBRP" role="3cqZAp">
+              <node concept="3cpWsn" id="6Ab4H5GgBRQ" role="3cpWs9">
+                <property role="TrG5h" value="_concept" />
+                <node concept="3bZ5Sz" id="6Ab4H5GgBRn" role="1tU5fm" />
+                <node concept="2OqwBi" id="6Ab4H5GgBRR" role="33vP2m">
+                  <node concept="2GrUjf" id="6Ab4H5GgBRS" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="3sUe9pq6Ou7" resolve="concept" />
+                  </node>
+                  <node concept="1rGIog" id="6Ab4H5GgBRT" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6Ab4H5Gg$nL" role="3cqZAp">
+              <node concept="3cpWsn" id="6Ab4H5Gg$nM" role="3cpWs9">
+                <property role="TrG5h" value="language" />
+                <property role="3TUv4t" value="true" />
+                <node concept="3uibUv" id="6Ab4H5Gg$nE" role="1tU5fm">
+                  <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
+                </node>
+                <node concept="2OqwBi" id="6Ab4H5Gg$nN" role="33vP2m">
+                  <node concept="37vLTw" id="6Ab4H5GgBRU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6Ab4H5GgBRQ" resolve="_concept" />
+                  </node>
+                  <node concept="liA8E" id="6Ab4H5Gg$nR" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="3sUe9pq6Ou9" role="3cqZAp">
               <node concept="2OqwBi" id="3sUe9pq6Oua" role="3clFbG">
                 <node concept="37vLTw" id="3sUe9pq6Oub" role="2Oq$k0">
@@ -3429,16 +3464,8 @@
                 </node>
                 <node concept="liA8E" id="59fzZVN4GO8" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
-                  <node concept="2OqwBi" id="3sUe9pq6Oud" role="37wK5m">
-                    <node concept="2OqwBi" id="3sUe9pq6Oue" role="2Oq$k0">
-                      <node concept="2GrUjf" id="3sUe9pq6Ouf" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="3sUe9pq6Ou7" resolve="concept" />
-                      </node>
-                      <node concept="1rGIog" id="3sUe9pq6Oug" role="2OqNvi" />
-                    </node>
-                    <node concept="liA8E" id="3sUe9pq6Ouh" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
-                    </node>
+                  <node concept="37vLTw" id="6Ab4H5Gg$nS" role="37wK5m">
+                    <ref role="3cqZAo" node="6Ab4H5Gg$nM" resolve="language" />
                   </node>
                 </node>
               </node>
