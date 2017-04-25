@@ -829,6 +829,48 @@
         </node>
       </node>
     </node>
+    <node concept="m$_wf" id="7bgh5vTvyII" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.xmodel" />
+      <node concept="3_J27D" id="7bgh5vTvyIJ" role="m$_yQ">
+        <node concept="3Mxwew" id="7bgh5vTvyIK" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.xmodel" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="7bgh5vTvyIL" role="m$_w8">
+        <node concept="3Mxwey" id="7bgh5vTvyIM" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="7bgh5vTvKWu" role="m$_yh">
+        <ref role="m$f5T" node="7bgh5vTvcTD" resolve="group.xmodel" />
+      </node>
+      <node concept="m$_yC" id="7bgh5vTvyIO" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="7bgh5vTvyIP" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
+      </node>
+      <node concept="m$_yC" id="7bgh5vTvN8F" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
+      </node>
+      <node concept="m$_yC" id="7bgh5vTvPkY" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:6EN03E8oSte" resolve="jetbrains.mps.ide.make" />
+      </node>
+      <node concept="3_J27D" id="7bgh5vTvyIQ" role="m_cZH">
+        <node concept="3Mxwew" id="7bgh5vTvyIR" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.xmodel" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="7bgh5vTvyIS" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com/" />
+      </node>
+      <node concept="3_J27D" id="7bgh5vTvyIT" role="3s6cr7">
+        <node concept="3Mxwew" id="7bgh5vTvyIU" role="3MwsjC">
+          <property role="3MwjfP" value="Utilities for cross model generation from mbeddr.mpsutil" />
+        </node>
+      </node>
+    </node>
     <node concept="m$_wf" id="1g7oDhK9QTM" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil.actionsfilter.lang" />
       <node concept="3_J27D" id="1g7oDhK9QTN" role="m$_yQ">
@@ -2264,6 +2306,69 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="vOGyTeKpB6" resolve="com.mbeddr.mpsutil.ecore.stubs" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="7bgh5vTvcTD" role="3989C9">
+      <property role="TrG5h" value="group.xmodel" />
+      <node concept="1E1JtA" id="7bgh5vTvoSD" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.xmodel.actions" />
+        <property role="3LESm3" value="d7e4c61d-aebf-43c6-b4ad-ab5fbe958b0c" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="7bgh5vTvpY_" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="7bgh5vTvsap" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="7bgh5vTvumc" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.xmodel.actions" />
+              <node concept="2Ry0Ak" id="7bgh5vTvwxZ" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.xmodel.actions.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7bgh5vTvxBS" role="3bR37C">
+          <node concept="3bR9La" id="7bgh5vTvxBT" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L6C" resolve="jetbrains.mps.lang.generator" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7bgh5vTvxBU" role="3bR37C">
+          <node concept="3bR9La" id="7bgh5vTvxBV" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7bgh5vTvxBW" role="3bR37C">
+          <node concept="3bR9La" id="7bgh5vTvxBX" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:71aLKqdKvPp" resolve="jetbrains.mps.ide.make" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7bgh5vTvxBY" role="3bR37C">
+          <node concept="3bR9La" id="7bgh5vTvxBZ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7bgh5vTvxC0" role="3bR37C">
+          <node concept="3bR9La" id="7bgh5vTvxC1" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7bgh5vTvxC2" role="3bR37C">
+          <node concept="3bR9La" id="7bgh5vTvxC3" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:307DWrMiIBc" resolve="jetbrains.mps.lang.generator.plan" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7bgh5vTvxC4" role="3bR37C">
+          <node concept="3bR9La" id="7bgh5vTvxC5" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:TAJODzTczI" resolve="de.slisson.mps.hacks.xmodelgen" />
           </node>
         </node>
       </node>
@@ -14637,6 +14742,9 @@
       </node>
       <node concept="m$_wl" id="24ObHxT$_Tk" role="39821P">
         <ref role="m_rDy" node="24ObHxTzV4S" resolve="com.mbeddr.mpsutil.vcs" />
+      </node>
+      <node concept="m$_wl" id="7bgh5vTvRCn" role="39821P">
+        <ref role="m_rDy" node="7bgh5vTvyII" resolve="com.mbeddr.mpsutil.xmodel" />
       </node>
       <node concept="m$_wl" id="2QOWB0DVdSx" role="39821P">
         <ref role="m_rDy" node="33r_JpZ6k_l" resolve="com.mbeddr.platform.build" />
