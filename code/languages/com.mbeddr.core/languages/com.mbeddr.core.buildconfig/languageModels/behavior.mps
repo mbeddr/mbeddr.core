@@ -6,6 +6,7 @@
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -37,8 +38,8 @@
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
-    <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -350,7 +351,6 @@
       <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
         <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -2228,11 +2228,16 @@
                                 <node concept="3cpWs3" id="5YZjOkv$P86" role="3uHU7B">
                                   <node concept="3cpWs3" id="5YZjOkv$Lxg" role="3uHU7B">
                                     <node concept="3cpWs3" id="5YZjOkv$LwQ" role="3uHU7B">
-                                      <node concept="2OqwBi" id="5YZjOkv$LvI" role="3uHU7B">
-                                        <node concept="2GrUjf" id="5YZjOkv$Lvp" role="2Oq$k0">
-                                          <ref role="2Gs0qQ" node="5YZjOkv$Ltq" resolve="c" />
+                                      <node concept="2OqwBi" id="4yCyDr3ipjo" role="3uHU7B">
+                                        <node concept="2OqwBi" id="5YZjOkv$LvI" role="2Oq$k0">
+                                          <node concept="2GrUjf" id="5YZjOkv$Lvp" role="2Oq$k0">
+                                            <ref role="2Gs0qQ" node="5YZjOkv$Ltq" resolve="c" />
+                                          </node>
+                                          <node concept="2yIwOk" id="4yCyDr3iots" role="2OqNvi" />
                                         </node>
-                                        <node concept="3NT_Vc" id="5YZjOkv$LvR" role="2OqNvi" />
+                                        <node concept="liA8E" id="4yCyDr3iq7W" role="2OqNvi">
+                                          <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                        </node>
                                       </node>
                                       <node concept="Xl_RD" id="5YZjOkv$LwT" role="3uHU7w">
                                         <property role="Xl_RC" value=" " />

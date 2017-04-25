@@ -391,7 +391,6 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
         <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
@@ -5714,19 +5713,6 @@
       <node concept="10Oyi0" id="2XRfpKWAX1Q" role="3clF45" />
       <node concept="3Tm1VV" id="2XRfpKWAX1R" role="1B3o_S" />
     </node>
-    <node concept="13i0hz" id="2XRfpKWAX2d" role="13h7CS">
-      <property role="TrG5h" value="getConceptToBeCounted" />
-      <ref role="13i0hy" to="hwgx:6brBMefSzRs" resolve="getConceptToBeCounted" />
-      <node concept="3clFbS" id="2XRfpKWAX2g" role="3clF47">
-        <node concept="3clFbF" id="2XRfpKWAY9w" role="3cqZAp">
-          <node concept="3TUQnm" id="2XRfpKWAY9v" role="3clFbG">
-            <ref role="3TV0OU" to="clqz:3FSHg1aADay" resolve="AbstractState" />
-          </node>
-        </node>
-      </node>
-      <node concept="3THzug" id="2XRfpKWAY9p" role="3clF45" />
-      <node concept="3Tm1VV" id="2XRfpKWAY9q" role="1B3o_S" />
-    </node>
   </node>
   <node concept="13h7C7" id="3FSHg1aBC0T">
     <property role="3GE5qa" value="machine.states" />
@@ -6981,14 +6967,14 @@
       <property role="TrG5h" value="getConceptToBeCounted" />
       <ref role="13i0hy" to="hwgx:6brBMefSzRs" resolve="getConceptToBeCounted" />
       <node concept="3clFbS" id="2XRfpKWB4ZR" role="3clF47">
-        <node concept="3clFbF" id="2XRfpKWB6p_" role="3cqZAp">
-          <node concept="3TUQnm" id="2XRfpKWB6p$" role="3clFbG">
-            <ref role="3TV0OU" to="clqz:7iNM$5cFA$P" resolve="AbstractAction" />
+        <node concept="3clFbF" id="4yCyDr3hB$h" role="3cqZAp">
+          <node concept="35c_gC" id="4yCyDr3hB$g" role="3clFbG">
+            <ref role="35c_gD" to="clqz:7iNM$5cFA$P" resolve="AbstractAction" />
           </node>
         </node>
       </node>
-      <node concept="3THzug" id="2XRfpKWB6pu" role="3clF45" />
       <node concept="3Tm1VV" id="2XRfpKWB6pv" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="4yCyDr3hBwC" role="3clF45" />
     </node>
     <node concept="13i0hz" id="7zyJEuzT7q7" role="13h7CS">
       <property role="13i0iv" value="false" />

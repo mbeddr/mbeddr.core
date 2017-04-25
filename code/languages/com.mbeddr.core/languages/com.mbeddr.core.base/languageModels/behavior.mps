@@ -503,7 +503,6 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -1547,12 +1546,12 @@
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getConceptToBeCounted" />
       <node concept="3Tm1VV" id="6brBMefSzRt" role="1B3o_S" />
-      <node concept="3THzug" id="6brBMefSzRw" role="3clF45" />
+      <node concept="3bZ5Sz" id="4yCyDr3h1JH" role="3clF45" />
       <node concept="3clFbS" id="6brBMefSzRv" role="3clF47">
         <node concept="3clFbF" id="6brBMefSzRx" role="3cqZAp">
           <node concept="2OqwBi" id="6brBMefSzRR" role="3clFbG">
             <node concept="13iPFW" id="6brBMefSzRy" role="2Oq$k0" />
-            <node concept="3NT_Vc" id="6brBMefSzRX" role="2OqNvi" />
+            <node concept="2yIwOk" id="4yCyDr3h1VI" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -5914,14 +5913,14 @@
       <property role="TrG5h" value="getConceptToBeCounted" />
       <ref role="13i0hy" node="6brBMefSzRs" resolve="getConceptToBeCounted" />
       <node concept="3clFbS" id="2XRfpKW0hjy" role="3clF47">
-        <node concept="3clFbF" id="2XRfpKW0iDV" role="3cqZAp">
-          <node concept="3TUQnm" id="2XRfpKW0iDQ" role="3clFbG">
-            <ref role="3TV0OU" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
+        <node concept="3clFbF" id="4yCyDr3hDco" role="3cqZAp">
+          <node concept="35c_gC" id="4yCyDr3hDcl" role="3clFbG">
+            <ref role="35c_gD" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
           </node>
         </node>
       </node>
-      <node concept="3THzug" id="2XRfpKW0hkb" role="3clF45" />
       <node concept="3Tm1VV" id="2XRfpKW0hkc" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="4yCyDr3hDkO" role="3clF45" />
     </node>
     <node concept="13hLZK" id="6clJcrJZN1l" role="13h7CW">
       <node concept="3clFbS" id="6clJcrJZN1m" role="2VODD2" />

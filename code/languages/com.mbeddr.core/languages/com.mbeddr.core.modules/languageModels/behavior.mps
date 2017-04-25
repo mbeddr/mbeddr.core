@@ -418,6 +418,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -469,7 +470,6 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
@@ -2377,11 +2377,14 @@
                                                   </node>
                                                   <node concept="1rXfSq" id="5EE0R5HzIlD" role="37wK5m">
                                                     <ref role="37wK5l" to="hwgx:bhVSeEVB6v" resolve="loadIconFromNodesModule" />
-                                                    <node concept="2OqwBi" id="5EE0R5HzIlE" role="37wK5m">
-                                                      <node concept="37vLTw" id="5EE0R5HzIlF" role="2Oq$k0">
-                                                        <ref role="3cqZAo" node="5EE0R5HzIlN" resolve="it" />
+                                                    <node concept="2OqwBi" id="4yCyDr3je14" role="37wK5m">
+                                                      <node concept="2OqwBi" id="5EE0R5HzIlE" role="2Oq$k0">
+                                                        <node concept="37vLTw" id="5EE0R5HzIlF" role="2Oq$k0">
+                                                          <ref role="3cqZAo" node="5EE0R5HzIlN" resolve="it" />
+                                                        </node>
+                                                        <node concept="2yIwOk" id="4yCyDr3jcX6" role="2OqNvi" />
                                                       </node>
-                                                      <node concept="3NT_Vc" id="5EE0R5HzIlG" role="2OqNvi" />
+                                                      <node concept="FGMqu" id="4yCyDr3jeP4" role="2OqNvi" />
                                                     </node>
                                                     <node concept="Xl_RD" id="5EE0R5HzIlH" role="37wK5m">
                                                       <property role="Xl_RC" value="icons/globalvar.png" />
