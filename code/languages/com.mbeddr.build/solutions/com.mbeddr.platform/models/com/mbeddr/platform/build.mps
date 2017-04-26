@@ -11820,6 +11820,12 @@
             <ref role="3bR37D" to="ffeo:29PG$Bf7_mc" resolve="jetbrains.mps.lang.editor.imageGen" />
           </node>
         </node>
+        <node concept="1SiIV0" id="79$zShlSWjN" role="3bR37C">
+          <node concept="3bR9La" id="79$zShlSWjO" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7Nsh5Tc2mTg" role="3989C9">

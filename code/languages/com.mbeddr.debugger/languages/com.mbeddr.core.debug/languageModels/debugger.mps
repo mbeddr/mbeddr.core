@@ -60154,11 +60154,11 @@
                 <node concept="37vLTw" id="7EQZzuztOdG" role="37vLTJ">
                   <ref role="3cqZAo" node="7EQZzuztOd_" resolve="icon" />
                 </node>
-                <node concept="2YIFZM" id="7EQZzuztOdH" role="37vLTx">
+                <node concept="2YIFZM" id="3OdlBNHOuuZ" role="37vLTx">
+                  <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.language.SAbstractConcept):javax.swing.Icon" resolve="getIconFor" />
                   <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-                  <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
-                  <node concept="37vLTw" id="$YquQ$AbnF" role="37wK5m">
-                    <ref role="3cqZAo" node="$YquQ$Abg4" resolve="node" />
+                  <node concept="37vLTw" id="3OdlBNHOuv0" role="37wK5m">
+                    <ref role="3cqZAo" node="$YquQ$Abg4" resolve="concept" />
                   </node>
                 </node>
               </node>
@@ -60214,8 +60214,8 @@
       </node>
       <node concept="3Tm1VV" id="$YquQ$A0Jh" role="1B3o_S" />
       <node concept="37vLTG" id="$YquQ$Abg4" role="3clF46">
-        <property role="TrG5h" value="node" />
-        <node concept="3Tqbb2" id="$YquQ$Abno" role="1tU5fm" />
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="3OdlBNHOupk" role="1tU5fm" />
       </node>
       <node concept="3uibUv" id="$YquQ$Aboh" role="3clF45">
         <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />

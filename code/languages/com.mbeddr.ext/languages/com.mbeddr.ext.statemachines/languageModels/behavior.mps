@@ -377,7 +377,6 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -390,9 +389,6 @@
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
@@ -1148,8 +1144,8 @@
                           <ref role="3cqZAo" node="5zee3eELcQO" resolve="stateNode" />
                         </node>
                         <node concept="2HEgOY" id="5zee3eELcRh" role="EEqiy">
-                          <node concept="3TUQnm" id="5zee3eELcRi" role="2HDHXV">
-                            <ref role="3TV0OU" to="clqz:50Lk78xBraf" resolve="State" />
+                          <node concept="35c_gC" id="3OdlBNHP$mX" role="2HDHXV">
+                            <ref role="35c_gD" to="clqz:50Lk78xBraf" resolve="State" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="5zee3eELcRk" role="EEqID">
@@ -1237,8 +1233,8 @@
                                     <ref role="3cqZAo" node="5zee3eELcS7" resolve="smLocalVar" />
                                   </node>
                                   <node concept="2HEgOY" id="5zee3eELcRS" role="EEqiy">
-                                    <node concept="3TUQnm" id="5zee3eELcRT" role="2HDHXV">
-                                      <ref role="3TV0OU" to="clqz:6NQSyUTqXkL" resolve="StatemachineType" />
+                                    <node concept="35c_gC" id="3OdlBNHP_4D" role="2HDHXV">
+                                      <ref role="35c_gD" to="clqz:6NQSyUTqXkL" resolve="StatemachineType" />
                                     </node>
                                   </node>
                                   <node concept="HRycz" id="5zee3eELcRU" role="EEqwH">
@@ -3567,8 +3563,8 @@
                   <node concept="EPMCV" id="33toni8sTfp" role="25WWJ7">
                     <node concept="13iPFW" id="Wb1Rd5RH8D" role="EErWN" />
                     <node concept="2HEgOY" id="Wb1Rd5RHj8" role="EEqiy">
-                      <node concept="3TUQnm" id="Wb1Rd5RHtQ" role="2HDHXV">
-                        <ref role="3TV0OU" to="clqz:4SJV0WTeRxt" resolve="StatemachineVariableDeclaration" />
+                      <node concept="35c_gC" id="3OdlBNHPvH4" role="2HDHXV">
+                        <ref role="35c_gD" to="clqz:4SJV0WTeRxt" resolve="StatemachineVariableDeclaration" />
                       </node>
                     </node>
                     <node concept="HRycz" id="33toni8sTft" role="EEqwH">
@@ -4022,7 +4018,7 @@
                 <node concept="2HEgOY" id="38XGACHFLNn" role="EEqiy">
                   <node concept="2OqwBi" id="38XGACHFLNo" role="2HDHXV">
                     <node concept="13iPFW" id="38XGACHFLNp" role="2Oq$k0" />
-                    <node concept="3NT_Vc" id="38XGACHFLNq" role="2OqNvi" />
+                    <node concept="2yIwOk" id="3OdlBNHOLkR" role="2OqNvi" />
                   </node>
                 </node>
                 <node concept="uj6PW" id="38XGACHFLRB" role="EEqwH">
@@ -4165,7 +4161,7 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3NT_Vc" id="$YquQ_HY9r" role="2OqNvi" />
+                        <node concept="2yIwOk" id="3OdlBNHOLMq" role="2OqNvi" />
                       </node>
                     </node>
                     <node concept="HRycz" id="38XGACHFAV7" role="EEqwH">
@@ -4323,7 +4319,7 @@
                 <node concept="2HEgOY" id="38XGACHFSuJ" role="EEqiy">
                   <node concept="2OqwBi" id="38XGACHFSuK" role="2HDHXV">
                     <node concept="13iPFW" id="38XGACHFSuL" role="2Oq$k0" />
-                    <node concept="3NT_Vc" id="38XGACHFSuM" role="2OqNvi" />
+                    <node concept="2yIwOk" id="3OdlBNHON8b" role="2OqNvi" />
                   </node>
                 </node>
                 <node concept="uj6PW" id="38XGACHFS_E" role="EEqwH">
@@ -4434,7 +4430,7 @@
                     <node concept="2HEgOY" id="38XGACHG1B0" role="EEqiy">
                       <node concept="2OqwBi" id="38XGACHG1B1" role="2HDHXV">
                         <node concept="13iPFW" id="38XGACHG1B2" role="2Oq$k0" />
-                        <node concept="3NT_Vc" id="38XGACHG1B3" role="2OqNvi" />
+                        <node concept="2yIwOk" id="3OdlBNHONOV" role="2OqNvi" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="38XGACHG1Ry" role="EEqID">
@@ -4751,8 +4747,8 @@
               <node concept="EPMCV" id="33toni8yW0u" role="25WWJ7">
                 <node concept="13iPFW" id="33toni8yWlu" role="EErWN" />
                 <node concept="2HEgOY" id="33toni8yW0w" role="EEqiy">
-                  <node concept="3TUQnm" id="33toni8yW0x" role="2HDHXV">
-                    <ref role="3TV0OU" to="clqz:50Lk78xBraf" resolve="State" />
+                  <node concept="35c_gC" id="3OdlBNHPu06" role="2HDHXV">
+                    <ref role="35c_gD" to="clqz:50Lk78xBraf" resolve="State" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="33toni8yW0z" role="EEqID">
