@@ -2,10 +2,10 @@
 <model ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -348,6 +348,9 @@
       <node concept="m$f5U" id="3quoVcnS58L" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnRGCd" resolve="com.mbeddr.mpsutil.infrastructure-support" />
       </node>
+      <node concept="m$f5U" id="5l4WPWBsMzR" role="m$_yh">
+        <ref role="m$f5T" node="5l4WPWBsBct" resolve="com.mbeddr.mpsutil.infrastructure-support.devkit" />
+      </node>
       <node concept="m$f5U" id="3quoVcnS5bT" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnQoOk" resolve="com.mbeddr.mpsutil.lang-support" />
       </node>
@@ -401,6 +404,9 @@
       </node>
       <node concept="m$f5U" id="7dbZP3ALPSt" role="m$_yh">
         <ref role="m$f5T" node="7dbZP3AL8cC" resolve="com.mbeddr.mpsutil.editingGuide" />
+      </node>
+      <node concept="m$f5U" id="5l4WPWBt2QY" role="m$_yh">
+        <ref role="m$f5T" node="5l4WPWBsSaB" resolve="com.mbeddr.mpsutil.editingGuide.devkit" />
       </node>
       <node concept="m$f5U" id="3quoVcnS5hK" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnHjIe" resolve="com.mbeddr.mpsutil.modellisteners" />
@@ -952,6 +958,9 @@
       </node>
       <node concept="m$f5U" id="6RmoJr9xyqt" role="m$_yh">
         <ref role="m$f5T" node="7tNo_gxoK8q" resolve="com.mbeddr.doc" />
+      </node>
+      <node concept="m$f5U" id="5l4WPWBtj0o" role="m$_yh">
+        <ref role="m$f5T" node="5l4WPWBt8tR" resolve="com.mbeddr.doc.devkit" />
       </node>
       <node concept="m$_yC" id="6ucYLjokHyJ" role="m$_yJ">
         <ref role="m$_y1" node="7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
@@ -2716,29 +2725,6 @@
     </node>
     <node concept="2G$12M" id="3quoVcnRGCd" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.mpsutil.infrastructure-support" />
-      <node concept="3LEwk6" id="2GPgTVRTwhX" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="com.mbeddr.commenting" />
-        <property role="3LESm3" value="053020df-6ec1-4889-9f23-34fad076140d" />
-        <node concept="398BVA" id="2GPgTVRTF2c" role="3LF7KH">
-          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-          <node concept="2Ry0Ak" id="2GPgTVRTI6k" role="iGT6I">
-            <property role="2Ry0Am" value="devkits" />
-            <node concept="2Ry0Ak" id="2GPgTVRTILU" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.commenting.devkit" />
-            </node>
-          </node>
-        </node>
-        <node concept="3LEDTy" id="2GPgTVRTJNg" role="3LEDUa">
-          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
-        </node>
-        <node concept="3LEDTy" id="2GPgTVRTJNh" role="3LEDUa">
-          <ref role="3LEDTV" node="1qdZ14g6roG" resolve="com.mbeddr.mpsutil.review" />
-        </node>
-        <node concept="3LEDTy" id="2GPgTVRTJNi" role="3LEDUa">
-          <ref role="3LEDTV" node="3cilTAC1n_V" resolve="com.mbeddr.mpsutil.review.annotation" />
-        </node>
-      </node>
       <node concept="1E1JtA" id="2N1CSrzsvbI" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.nodeaccess" />
@@ -3051,6 +3037,32 @@
           <property role="TrG5h" value="com.mbeddr.mpsutil.runconfiguration#1074143110309249536" />
           <property role="3LESm3" value="256cd7af-2a1c-46c0-b544-845d10b7eab5" />
           <property role="2GAjPV" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="5l4WPWBsBct" role="3989C9">
+      <property role="TrG5h" value="com.mbeddr.mpsutil.infrastructure-support.devkit" />
+      <node concept="3LEwk6" id="2GPgTVRTwhX" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.commenting" />
+        <property role="3LESm3" value="053020df-6ec1-4889-9f23-34fad076140d" />
+        <node concept="398BVA" id="2GPgTVRTF2c" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" />
+          <node concept="2Ry0Ak" id="2GPgTVRTI6k" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="2GPgTVRTILU" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.commenting.devkit" />
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="2GPgTVRTJNg" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+        </node>
+        <node concept="3LEDTy" id="2GPgTVRTJNh" role="3LEDUa">
+          <ref role="3LEDTV" node="1qdZ14g6roG" />
+        </node>
+        <node concept="3LEDTy" id="2GPgTVRTJNi" role="3LEDUa">
+          <ref role="3LEDTV" node="3cilTAC1n_V" />
         </node>
       </node>
     </node>
@@ -8310,38 +8322,6 @@
           </node>
         </node>
       </node>
-      <node concept="3LEwk6" id="7dbZP3ALD9x" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="com.mbeddr.mpsutil.guides" />
-        <property role="3LESm3" value="1ca21c70-6e61-4b62-8771-dfd96620ef7c" />
-        <node concept="398BVA" id="7dbZP3ALDXy" role="3LF7KH">
-          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-          <node concept="2Ry0Ak" id="7dbZP3ALFy8" role="iGT6I">
-            <property role="2Ry0Am" value="devkits" />
-            <node concept="2Ry0Ak" id="7dbZP3ALH6H" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.mpsutil.guides" />
-              <node concept="2Ry0Ak" id="7dbZP3ALIFi" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.mpsutil.guides.devkit" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3LEDTy" id="7dbZP3ALJt$" role="3LEDUa">
-          <ref role="3LEDTV" node="7dbZP3ALdNQ" resolve="com.mbeddr.mpsutil.editingGuide" />
-        </node>
-        <node concept="3LEDTy" id="7dbZP3ALJt_" role="3LEDUa">
-          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-        </node>
-        <node concept="3LEDTy" id="7dbZP3ALJtA" role="3LEDUa">
-          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
-        </node>
-        <node concept="3LEDTy" id="7dbZP3ALJtB" role="3LEDUa">
-          <ref role="3LEDTV" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
-        </node>
-        <node concept="3LEDTM" id="7dbZP3ALJtC" role="3LEDUa">
-          <ref role="3LEDTN" node="7dbZP3AL_aD" resolve="com.mbeddr.mpsutil.editingGuide.runtime" />
-        </node>
-      </node>
       <node concept="1E1JtD" id="7dbZP3ALmjO" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.editingGuide.execution.lang" />
@@ -8399,6 +8379,41 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="7dbZP3ALdNQ" resolve="com.mbeddr.mpsutil.editingGuide" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="5l4WPWBsSaB" role="3989C9">
+      <property role="TrG5h" value="com.mbeddr.mpsutil.editingGuide.devkit" />
+      <node concept="3LEwk6" id="7dbZP3ALD9x" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.guides" />
+        <property role="3LESm3" value="1ca21c70-6e61-4b62-8771-dfd96620ef7c" />
+        <node concept="398BVA" id="7dbZP3ALDXy" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" />
+          <node concept="2Ry0Ak" id="7dbZP3ALFy8" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="7dbZP3ALH6H" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.guides" />
+              <node concept="2Ry0Ak" id="7dbZP3ALIFi" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.guides.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="7dbZP3ALJt$" role="3LEDUa">
+          <ref role="3LEDTV" node="7dbZP3ALdNQ" />
+        </node>
+        <node concept="3LEDTy" id="7dbZP3ALJt_" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+        </node>
+        <node concept="3LEDTy" id="7dbZP3ALJtA" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+        </node>
+        <node concept="3LEDTy" id="7dbZP3ALJtB" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+        </node>
+        <node concept="3LEDTM" id="7dbZP3ALJtC" role="3LEDUa">
+          <ref role="3LEDTN" node="7dbZP3AL_aD" />
         </node>
       </node>
     </node>
@@ -12803,41 +12818,6 @@
           </node>
         </node>
       </node>
-      <node concept="3LEwk6" id="7tNo_gxoK9_" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="com.mbeddr.documentation" />
-        <property role="3LESm3" value="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c" />
-        <node concept="398BVA" id="7tNo_gxoK9B" role="3LF7KH">
-          <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-          <node concept="2Ry0Ak" id="7tNo_gxoK9G" role="iGT6I">
-            <property role="2Ry0Am" value="devkits" />
-            <node concept="2Ry0Ak" id="7tNo_gxoK9H" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.documentation" />
-              <node concept="2Ry0Ak" id="7tNo_gxoK9I" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.documentation.devkit" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3LEDTy" id="7tNo_gxoK9M" role="3LEDUa">
-          <ref role="3LEDTV" node="7tNo_gxoK97" resolve="com.mbeddr.doc.gen_latex" />
-        </node>
-        <node concept="3LEDTy" id="7tNo_gxoK9N" role="3LEDUa">
-          <ref role="3LEDTV" node="7tNo_gxoK9e" resolve="com.mbeddr.doc.gen_xhtml" />
-        </node>
-        <node concept="3LEDTy" id="4hvHh3QYjFi" role="3LEDUa">
-          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
-        </node>
-        <node concept="3LEDTy" id="3U5pepj4Buc" role="3LEDUa">
-          <ref role="3LEDTV" node="1qdZ14g6roG" resolve="com.mbeddr.mpsutil.review" />
-        </node>
-        <node concept="3LEDTy" id="3U5pepj4Bud" role="3LEDUa">
-          <ref role="3LEDTV" node="3cilTAC1n_V" resolve="com.mbeddr.mpsutil.review.annotation" />
-        </node>
-        <node concept="3LEDTy" id="1YMM4SJ8t7" role="3LEDUa">
-          <ref role="3LEDTV" node="1YMM4SJ2m0" resolve="com.mbeddr.doc" />
-        </node>
-      </node>
       <node concept="1E1JtD" id="5NpY9mnqa74" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.doc.aspect" />
@@ -13131,6 +13111,44 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5NpY9mnqa74" resolve="com.mbeddr.doc.aspect" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="5l4WPWBt8tR" role="3989C9">
+      <property role="TrG5h" value="com.mbeddr.doc.devkit" />
+      <node concept="3LEwk6" id="7tNo_gxoK9_" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.documentation" />
+        <property role="3LESm3" value="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c" />
+        <node concept="398BVA" id="7tNo_gxoK9B" role="3LF7KH">
+          <ref role="398BVh" node="1m4fy7Kxwst" />
+          <node concept="2Ry0Ak" id="7tNo_gxoK9G" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="7tNo_gxoK9H" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.documentation" />
+              <node concept="2Ry0Ak" id="7tNo_gxoK9I" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.documentation.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="7tNo_gxoK9M" role="3LEDUa">
+          <ref role="3LEDTV" node="7tNo_gxoK97" />
+        </node>
+        <node concept="3LEDTy" id="7tNo_gxoK9N" role="3LEDUa">
+          <ref role="3LEDTV" node="7tNo_gxoK9e" />
+        </node>
+        <node concept="3LEDTy" id="4hvHh3QYjFi" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+        </node>
+        <node concept="3LEDTy" id="3U5pepj4Buc" role="3LEDUa">
+          <ref role="3LEDTV" node="1qdZ14g6roG" />
+        </node>
+        <node concept="3LEDTy" id="3U5pepj4Bud" role="3LEDUa">
+          <ref role="3LEDTV" node="3cilTAC1n_V" />
+        </node>
+        <node concept="3LEDTy" id="1YMM4SJ8t7" role="3LEDUa">
+          <ref role="3LEDTV" node="1YMM4SJ2m0" />
         </node>
       </node>
     </node>
