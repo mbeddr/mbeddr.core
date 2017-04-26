@@ -588,6 +588,11 @@
             <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
           </node>
         </node>
+        <node concept="1yeLz9" id="3GPxRNRaHEq" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.core.debug.util#4266465192781230814" />
+          <property role="3LESm3" value="4a0e56bb-c6c4-4053-96b9-0c1dfc8fe522" />
+          <property role="2GAjPV" value="false" />
+        </node>
       </node>
       <node concept="1E1JtD" id="62XMcUo5Go6" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -781,6 +786,12 @@
             <node concept="3bR9La" id="59Urx6IdOpW" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="p6ld:HiHZpX4D1I" resolve="com.mbeddr.core.buildconfig#7717755763392579406" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="3GPxRNRaHEE" role="3bR37C">
+            <node concept="3bR9La" id="3GPxRNRaHEF" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="p6ld:HiHZpX4D2m" resolve="com.mbeddr.core.unittest#6275792049641599010" />
             </node>
           </node>
         </node>
