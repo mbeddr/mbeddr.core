@@ -291,7 +291,7 @@
   <node concept="1TIwiD" id="5S3xvtirw9">
     <property role="3GE5qa" value="testcase" />
     <property role="TrG5h" value="DebuggerTestcase" />
-    <property role="34LRSv" value="test" />
+    <property role="34LRSv" value="debugger test" />
     <property role="EcuMT" value="105850086902839305" />
     <ref role="1TJDcQ" to="tp5g:hHlHkQ8" resolve="NodesTestMethod" />
     <node concept="1TJgyi" id="5S3xvtjRLp" role="1TKVEl">
@@ -582,7 +582,7 @@
   <node concept="1TIwiD" id="13C5RDf$Xkh">
     <property role="3GE5qa" value="watchables" />
     <property role="TrG5h" value="WatchablesDeclaration" />
-    <property role="34LRSv" value="specific watchables" />
+    <property role="34LRSv" value="watchables" />
     <property role="EcuMT" value="1218249513292256529" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4WY_RKGyy8M" role="1TKVEi">
