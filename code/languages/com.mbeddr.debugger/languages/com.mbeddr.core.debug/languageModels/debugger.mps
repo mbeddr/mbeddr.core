@@ -11,6 +11,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -42,14 +43,11 @@
     <import index="ez3t" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:com.google.inject(Eclipse.Debugger/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="xnls" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.icons(MPS.Platform/)" />
-    <import index="y0ja" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:com.mbeddr.core.debugger.cdt(Eclipse.Debugger/)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
-    <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
     <import index="ouhv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.annotation(JDK/)" />
     <import index="if8w" ref="r:95397225-9080-48bc-b1aa-0ce7c4f3d2ce(jetbrains.mps.lang.traceable.behavior)" />
     <import index="17wx" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.locks(JDK/)" />
     <import index="8fo5" ref="r:7e184eff-8349-496f-875b-1e3646bb06f3(jetbrains.mps.debug.api.source)" />
-    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="uu3z" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.process(MPS.IDEA/)" />
@@ -58,7 +56,6 @@
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="3v5a" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution(MPS.IDEA/)" />
     <import index="fhz7" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.runners(MPS.IDEA/)" />
-    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="dj99" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.execution.configurations(MPS.IDEA/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
@@ -69,15 +66,8 @@
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
-    <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
-    <import index="e8bb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.ids(MPS.Core/)" />
-    <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
     <import index="2k9e" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure(MPS.Core/)" />
-    <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="jif5" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:org.eclipse.cdt.debug.core.model(Eclipse.Debugger/)" />
-    <import index="uo9w" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:org.eclipse.cdt.debug.mi.core.cdi(Eclipse.Debugger/)" />
-    <import index="52cq" ref="85d9f97b-1654-4692-b61c-fcc40db03653/java:org.eclipse.cdt.debug.mi.core(Eclipse.Debugger/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="lvdd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.cache(MPS.Core/)" implicit="true" />
   </imports>
@@ -2289,6 +2279,72 @@
                                 <node concept="liA8E" id="4abE58FJKYe" role="2OqNvi">
                                   <ref role="37wK5l" node="6MI7HAgl_fy" resolve="getProgramState" />
                                 </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="2AZaPEP4D_t" role="3cqZAp">
+                            <node concept="2OqwBi" id="2AZaPEP4F4i" role="3clFbG">
+                              <node concept="2es0OD" id="2AZaPEP4Fjs" role="2OqNvi">
+                                <node concept="1bVj0M" id="2AZaPEP4Fju" role="23t8la">
+                                  <node concept="3clFbS" id="2AZaPEP4Fjv" role="1bW5cS">
+                                    <node concept="3clFbJ" id="2AZaPEPdvdM" role="3cqZAp">
+                                      <node concept="3clFbS" id="2AZaPEPdvdO" role="3clFbx">
+                                        <node concept="3clFbF" id="2AZaPEP4JEm" role="3cqZAp">
+                                          <node concept="2OqwBi" id="2AZaPEP4JLN" role="3clFbG">
+                                            <node concept="37vLTw" id="2AZaPEP4JEl" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="2AZaPEP4Fjw" resolve="ext" />
+                                            </node>
+                                            <node concept="liA8E" id="2AZaPEP4JWt" role="2OqNvi">
+                                              <ref role="37wK5l" to="blwm:2AZaPEP4zfT" resolve="debuggerSuspended" />
+                                              <node concept="2OqwBi" id="2AZaPEP4LZ4" role="37wK5m">
+                                                <node concept="37vLTw" id="2AZaPEP4Lcg" role="2Oq$k0">
+                                                  <ref role="3cqZAo" node="4GZIKIzKE22" resolve="programState" />
+                                                </node>
+                                                <node concept="liA8E" id="2AZaPEP4Mwh" role="2OqNvi">
+                                                  <ref role="37wK5l" to="pry4:3SnNvqCaJfA" resolve="getName" />
+                                                </node>
+                                              </node>
+                                              <node concept="2OqwBi" id="2AZaPEP4Oau" role="37wK5m">
+                                                <node concept="37vLTw" id="2AZaPEP4NiZ" role="2Oq$k0">
+                                                  <ref role="3cqZAo" node="4GZIKIzKE22" resolve="programState" />
+                                                </node>
+                                                <node concept="liA8E" id="2AZaPEP4Ovj" role="2OqNvi">
+                                                  <ref role="37wK5l" to="pry4:3SnNvqCaJft" resolve="getFrames" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="1Wc70l" id="2AZaPEQ2O1p" role="3clFbw">
+                                        <node concept="2OqwBi" id="2AZaPEQ2OUh" role="3uHU7w">
+                                          <node concept="37vLTw" id="2AZaPEQ2OIY" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="2AZaPEP4Fjw" resolve="ext" />
+                                          </node>
+                                          <node concept="liA8E" id="2AZaPEQ2P99" role="2OqNvi">
+                                            <ref role="37wK5l" to="blwm:2AZaPEQ2LTr" resolve="isEventRegistered" />
+                                          </node>
+                                        </node>
+                                        <node concept="3y3z36" id="2AZaPEPdw3p" role="3uHU7B">
+                                          <node concept="37vLTw" id="2AZaPEPdvRN" role="3uHU7B">
+                                            <ref role="3cqZAo" node="2AZaPEP4Fjw" resolve="ext" />
+                                          </node>
+                                          <node concept="10Nm6u" id="2AZaPEPdwGY" role="3uHU7w" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="Rh6nW" id="2AZaPEP4Fjw" role="1bW2Oz">
+                                    <property role="TrG5h" value="ext" />
+                                    <node concept="2jxLKc" id="2AZaPEP4Fjx" role="1tU5fm" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="2AZaPEPz$zw" role="2Oq$k0">
+                                <node concept="2O5UvJ" id="2AZaPEPz$zx" role="2Oq$k0">
+                                  <ref role="2O5UnU" to="blwm:2AZaPEP4zcU" resolve="DebugSessionListener" />
+                                </node>
+                                <node concept="SfwO_" id="2AZaPEPz$zy" role="2OqNvi" />
                               </node>
                             </node>
                           </node>
