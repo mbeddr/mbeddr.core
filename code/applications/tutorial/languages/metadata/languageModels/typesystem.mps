@@ -95,8 +95,8 @@
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -247,10 +247,8 @@
                       </node>
                       <node concept="2OqwBi" id="2zx$mQQxG5u" role="33vP2m">
                         <node concept="1PxgMI" id="2zx$mQQxG5v" role="2Oq$k0">
-                          <ref role="1m5ApE" to="clbe:66uzewbzhz$" resolve="GenericMemberRef" />
                           <node concept="2OqwBi" id="2zx$mQQxG5w" role="1m5AlR">
                             <node concept="1PxgMI" id="2zx$mQQxG5x" role="2Oq$k0">
-                              <ref role="1m5ApE" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
                               <node concept="2OqwBi" id="2zx$mQQxG5y" role="1m5AlR">
                                 <node concept="2GrUjf" id="2zx$mQQxG5z" role="2Oq$k0">
                                   <ref role="2Gs0qQ" node="2zx$mQQxG1W" resolve="ae" />
@@ -259,10 +257,16 @@
                                   <ref role="3Tt5mk" to="mj1l:7FQByU3CrD0" resolve="left" />
                                 </node>
                               </node>
+                              <node concept="chp4Y" id="OnnrMNmSTP" role="3oSUPX">
+                                <ref role="cht4Q" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+                              </node>
                             </node>
                             <node concept="3TrEf2" id="1J$x$3s5h5f" role="2OqNvi">
                               <ref role="3Tt5mk" to="mj1l:66uzewbvZib" resolve="target" />
                             </node>
+                          </node>
+                          <node concept="chp4Y" id="OnnrMNmSTO" role="3oSUPX">
+                            <ref role="cht4Q" to="clbe:66uzewbzhz$" resolve="GenericMemberRef" />
                           </node>
                         </node>
                         <node concept="3TrEf2" id="1J$x$3s5BEF" role="2OqNvi">

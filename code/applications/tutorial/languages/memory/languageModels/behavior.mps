@@ -2,7 +2,7 @@
 <model ref="r:52b18594-a1b5-44f3-8ae3-dcd30ce590c3(mbeddr.tutotial.osconfig.memory.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -81,7 +81,7 @@
           <node concept="2OqwBi" id="70kXLV5ynLi" role="3clFbG">
             <node concept="13iPFW" id="70kXLV5ynxx" role="2Oq$k0" />
             <node concept="3TrEf2" id="70kXLV5yrJK" role="2OqNvi">
-              <ref role="3Tt5mk" to="wlut:4Kv0gUyBJzo" />
+              <ref role="3Tt5mk" to="wlut:4Kv0gUyBJzo" resolve="region" />
             </node>
           </node>
         </node>
