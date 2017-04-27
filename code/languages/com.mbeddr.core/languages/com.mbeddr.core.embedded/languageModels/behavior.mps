@@ -172,10 +172,6 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -316,19 +312,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="13i0hz" id="5W7baq$5gJ8" role="13h7CS">
-      <property role="TrG5h" value="getConceptToBeCounted" />
-      <ref role="13i0hy" to="hwgx:6brBMefSzRs" resolve="getConceptToBeCounted" />
-      <node concept="3clFbS" id="5W7baq$5gJ9" role="3clF47">
-        <node concept="3clFbF" id="5W7baq$5gJa" role="3cqZAp">
-          <node concept="3TUQnm" id="5W7baq$5gJb" role="3clFbG">
-            <ref role="3TV0OU" to="nbyu:5W7baq$5gqy" resolve="Register" />
-          </node>
-        </node>
-      </node>
-      <node concept="3THzug" id="5W7baq$5gJc" role="3clF45" />
-      <node concept="3Tm1VV" id="5W7baq$5gJd" role="1B3o_S" />
     </node>
     <node concept="13hLZK" id="5W7baq$5gJe" role="13h7CW">
       <node concept="3clFbS" id="5W7baq$5gJf" role="2VODD2">
