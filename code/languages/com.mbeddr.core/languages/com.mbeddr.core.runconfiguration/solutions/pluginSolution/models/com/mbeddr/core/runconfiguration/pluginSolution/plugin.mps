@@ -1288,12 +1288,12 @@
                   <ref role="3cqZAo" node="CJowczrd_Q" resolve="executableName" />
                 </node>
                 <node concept="3cpWs3" id="CJowczrdB3" role="3uHU7B">
-                  <node concept="37vLTw" id="6BNByWj3Y82" role="3uHU7B">
-                    <ref role="3cqZAo" node="5IpIYYkjxGZ" resolve="output" />
-                  </node>
                   <node concept="10M0yZ" id="6BNByWj3Z5R" role="3uHU7w">
                     <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
                     <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                  </node>
+                  <node concept="37vLTw" id="6BNByWj3Y82" role="3uHU7B">
+                    <ref role="3cqZAo" node="5IpIYYkjxGZ" resolve="output" />
                   </node>
                 </node>
               </node>
@@ -11373,6 +11373,10 @@
                   <ref role="3cqZAo" node="3ckJhIF3fGV" resolve="name" />
                 </node>
                 <node concept="3cpWs3" id="3ckJhIF3hZa" role="3uHU7B">
+                  <node concept="10M0yZ" id="6BNByWj419U" role="3uHU7w">
+                    <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
+                    <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                  </node>
                   <node concept="2OqwBi" id="3ckJhIF3hFk" role="3uHU7B">
                     <node concept="37vLTw" id="3ckJhIF3hzp" role="2Oq$k0">
                       <ref role="3cqZAo" node="3ckJhIF3fFc" resolve="parent" />
@@ -11380,10 +11384,6 @@
                     <node concept="liA8E" id="3ckJhIF3hTY" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~File.getPath():java.lang.String" resolve="getPath" />
                     </node>
-                  </node>
-                  <node concept="10M0yZ" id="6BNByWj419U" role="3uHU7w">
-                    <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                    <ref role="1PxDUh" to="guwi:~File" resolve="File" />
                   </node>
                 </node>
               </node>
@@ -11453,20 +11453,20 @@
               <node concept="3cpWsn" id="fv0ouCYTbW" role="3cpWs9">
                 <property role="3TUv4t" value="false" />
                 <property role="TrG5h" value="inputStream" />
+                <node concept="10Nm6u" id="6BNByWj7_w9" role="33vP2m" />
                 <node concept="3uibUv" id="fv0ouCYTbY" role="1tU5fm">
                   <ref role="3uigEE" to="guwi:~InputStream" resolve="InputStream" />
                 </node>
-                <node concept="10Nm6u" id="6BNByWj7_w9" role="33vP2m" />
               </node>
             </node>
             <node concept="3cpWs8" id="fv0ouCYTc1" role="3cqZAp">
               <node concept="3cpWsn" id="fv0ouCYTc0" role="3cpWs9">
                 <property role="3TUv4t" value="false" />
                 <property role="TrG5h" value="outputStream" />
+                <node concept="10Nm6u" id="6BNByWj7_SS" role="33vP2m" />
                 <node concept="3uibUv" id="fv0ouCYTc2" role="1tU5fm">
                   <ref role="3uigEE" to="guwi:~OutputStream" resolve="OutputStream" />
                 </node>
-                <node concept="10Nm6u" id="6BNByWj7_SS" role="33vP2m" />
               </node>
             </node>
             <node concept="2GUZhq" id="fv0ouCYTcL" role="3cqZAp">
