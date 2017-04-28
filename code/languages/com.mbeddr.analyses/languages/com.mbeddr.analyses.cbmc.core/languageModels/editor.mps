@@ -446,6 +446,18 @@
                   <ref role="1NtTu8" to="hj5x:3x0R1LJfFaV" resolve="check_unsigned_overflow" />
                 </node>
               </node>
+              <node concept="3EZMnI" id="6BNByWj0GHy" role="3EZMnx">
+                <node concept="VPM3Z" id="6BNByWj0GHz" role="3F10Kt">
+                  <property role="VOm3f" value="false" />
+                </node>
+                <node concept="2iRfu4" id="6BNByWj0GH$" role="2iSdaV" />
+                <node concept="3F0ifn" id="6BNByWj0GH_" role="3EZMnx">
+                  <property role="3F0ifm" value="conversion overflow" />
+                </node>
+                <node concept="27S6Sx" id="6BNByWj0GHA" role="3EZMnx">
+                  <ref role="1NtTu8" to="hj5x:6BNByWj0GCG" resolve="check_conversion_overflow" />
+                </node>
+              </node>
               <node concept="3EZMnI" id="NfDeW0KKO$" role="3EZMnx">
                 <node concept="VPM3Z" id="NfDeW0KKO_" role="3F10Kt">
                   <property role="VOm3f" value="false" />
