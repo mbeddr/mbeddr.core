@@ -469,6 +469,56 @@
     <node concept="2NXPZ9" id="1fdMHEcc99v" role="N3F5h">
       <property role="TrG5h" value="empty_1487366780382_9" />
     </node>
+    <node concept="N3Fnx" id="2UT$$fNlrg8" role="N3F5h">
+      <property role="TrG5h" value="validPointerNoAssumptions" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="2UT$$fNlrg9" role="3XIRFX">
+        <node concept="1QiMYF" id="2UT$$fNlrga" role="3XIRFZ">
+          <node concept="OjmMv" id="2UT$$fNlrgb" role="3SJzmv">
+            <node concept="19SGf9" id="2UT$$fNlrgc" role="OjmMu">
+              <node concept="19SUe$" id="2UT$$fNlrgd" role="19SJt6">
+                <property role="19SUeA" value="should hold" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Y9XUq" id="2UT$$fNlrge" role="3XIRFZ">
+          <node concept="25Bbzn" id="2UT$$fNlrgf" role="Y9XUp">
+            <node concept="3ZUYvv" id="2UT$$fNlrgg" role="3TlMhI">
+              <ref role="3ZUYvu" node="2UT$$fNlrgj" resolve="a" />
+            </node>
+            <node concept="Ea8Gl" id="2UT$$fNlrgh" role="3TlMhJ" />
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="2UT$$fNlrgi" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="2UT$$fNlrgj" role="1UOdpc">
+        <property role="TrG5h" value="a" />
+        <node concept="3wxxNl" id="2UT$$fNlrgk" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqqz" id="2UT$$fNlrgl" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="2HfW99" id="2UT$$fNlrgm" role="lGtFl">
+        <node concept="2HfWvB" id="2UT$$fNlrgn" role="2HfWAV">
+          <node concept="10srhD" id="2UT$$fNlrgo" role="Y9XUp">
+            <node concept="3ZUYvv" id="2UT$$fNlrgp" role="10srgi">
+              <ref role="3ZUYvu" node="2UT$$fNlrgj" resolve="a" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="2UT$$fNlr8x" role="N3F5h">
+      <property role="TrG5h" value="empty_1493395061264_3" />
+    </node>
   </node>
   <node concept="29QVxn" id="4$9c1ZwB$1d" />
   <node concept="N3F5e" id="41uzL3EMZez">
