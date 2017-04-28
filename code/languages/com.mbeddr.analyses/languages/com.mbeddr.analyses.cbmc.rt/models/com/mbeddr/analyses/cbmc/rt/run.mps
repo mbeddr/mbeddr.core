@@ -11788,7 +11788,7 @@
         </node>
         <node concept="3SKdUt" id="3OhBgB4aMSj" role="3cqZAp">
           <node concept="3SKdUq" id="3OhBgB4aNgu" role="3SKWNk">
-            <property role="3SKdUp" value="check if reachable properties option is available" />
+            <property role="3SKdUp" value="check show-properties" />
           </node>
         </node>
         <node concept="3clFbF" id="3OhBgB4a2dP" role="3cqZAp">
@@ -11798,7 +11798,7 @@
             </node>
             <node concept="TSZUe" id="3OhBgB4a4QM" role="2OqNvi">
               <node concept="Xl_RD" id="3OhBgB4a4Vh" role="25WWJ7">
-                <property role="Xl_RC" value="--show-reachable-properties" />
+                <property role="Xl_RC" value="--show-properties" />
               </node>
             </node>
           </node>
