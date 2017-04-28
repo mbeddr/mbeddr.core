@@ -334,18 +334,18 @@
         </node>
         <node concept="3vwNmj" id="3f3CxMdvvKm" role="3cqZAp">
           <node concept="2OqwBi" id="1kjPA_y9yY6" role="3vwVQn">
-            <node concept="NRdvd" id="1kjPA_y9yY7" role="2Oq$k0">
-              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
-              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-              <node concept="37vLTw" id="1kjPA_y9yY8" role="37wK5m">
-                <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
-              </node>
-              <node concept="Xl_RD" id="1kjPA_y9yY9" role="37wK5m">
-                <property role="Xl_RC" value="post(1) result != null" />
-              </node>
-            </node>
             <node concept="liA8E" id="1kjPA_y9yYa" role="2OqNvi">
               <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
+            </node>
+            <node concept="NRdvd" id="6BNByWj2te$" role="2Oq$k0">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="6BNByWj2te_" role="37wK5m">
+                <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
+              </node>
+              <node concept="Xl_RD" id="6BNByWj2teA" role="37wK5m">
+                <property role="Xl_RC" value="post(1) result != NULL" />
+              </node>
             </node>
           </node>
         </node>
