@@ -509,7 +509,11 @@
               <ref role="3cqZAo" node="3x0R1LJ5Hgr" resolve="config" />
             </node>
             <node concept="2S8uIT" id="6BNByWj0XDh" role="2OqNvi">
+<<<<<<< HEAD
               <ref role="2S8YL0" to="tzyt:6BNByWj0KHz" resolve="checkConversion" />
+=======
+              <ref role="2S8YL0" to="tzyt:6BNByWj0KHz" resolve="checkConversionOverflow" />
+>>>>>>> 649f248... added support for conversion checks to align with CBMC 5.7
             </node>
           </node>
         </node>
