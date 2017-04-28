@@ -19,8 +19,8 @@
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -436,36 +436,11 @@
                                         <node concept="3cpWsn" id="6dqrGHqK54o" role="3cpWs9">
                                           <property role="TrG5h" value="path" />
                                           <node concept="17QB3L" id="6dqrGHqK54p" role="1tU5fm" />
-                                          <node concept="3cpWs3" id="6dqrGHqJQny" role="33vP2m">
-                                            <node concept="2OqwBi" id="bq6A3e6kD6" role="3uHU7w">
-                                              <node concept="2YIFZM" id="5Hxjapwed3d" role="2Oq$k0">
-                                                <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
-                                                <ref role="37wK5l" to="unno:7WvVJ3rORmu" resolve="getModelLongName" />
-                                                <node concept="37vLTw" id="2obGnlRoJGm" role="37wK5m">
-                                                  <ref role="3cqZAo" node="2obGnlRg4rC" resolve="model" />
-                                                </node>
-                                              </node>
-                                              <node concept="liA8E" id="bq6A3e6kDa" role="2OqNvi">
-                                                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
-                                                <node concept="Xl_RD" id="bq6A3e6kDb" role="37wK5m">
-                                                  <property role="Xl_RC" value="\\." />
-                                                </node>
-                                                <node concept="Xl_RD" id="bq6A3e6kDd" role="37wK5m">
-                                                  <property role="Xl_RC" value="/" />
-                                                </node>
-                                              </node>
-                                            </node>
-                                            <node concept="3cpWs3" id="bq6A3e6kCW" role="3uHU7B">
-                                              <node concept="2YIFZM" id="5IpIYYkk2Vp" role="3uHU7B">
-                                                <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                                                <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
-                                                <node concept="37vLTw" id="5IpIYYkk3KY" role="37wK5m">
-                                                  <ref role="3cqZAo" node="2obGnlRg4rC" resolve="model" />
-                                                </node>
-                                              </node>
-                                              <node concept="Xl_RD" id="6dqrGHqJQn_" role="3uHU7w">
-                                                <property role="Xl_RC" value="/" />
-                                              </node>
+                                          <node concept="2YIFZM" id="5IpIYYkk2Vp" role="33vP2m">
+                                            <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+                                            <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
+                                            <node concept="37vLTw" id="5IpIYYkk3KY" role="37wK5m">
+                                              <ref role="3cqZAo" node="2obGnlRg4rC" resolve="model" />
                                             </node>
                                           </node>
                                         </node>
