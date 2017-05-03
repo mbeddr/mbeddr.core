@@ -1562,6 +1562,12 @@
         <node concept="1E0d5M" id="11cllTXfojo" role="1E1XAP">
           <ref role="1E0d5P" node="11cllTXfno5" resolve="com.mbeddr.mpsutil.soot.runtime" />
         </node>
+        <node concept="1SiIV0" id="1Yj6cTtZpRs" role="3bR37C">
+          <node concept="3bR9La" id="1Yj6cTtZpRt" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:2Xjt3l57hh_" resolve="de.slisson.mps.reflection" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="11cllTXfno5" role="2G$12L">
         <property role="BnDLt" value="true" />
