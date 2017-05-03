@@ -10,13 +10,12 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.components/com.mbeddr.analyses.components.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.core/com.mbeddr.analyses.core.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="sat4j" />
-      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.promela.c/com.mbeddr.analyses.promela.c.devkit" folder="spin" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.promela/com.mbeddr.analyses.promela.devkit" folder="spin" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.spin/com.mbeddr.analyses.spin.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.statemachines/com.mbeddr.analyses.statemachines.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.acsl.assertions.gen/com.mbeddr.analyses.acsl.assertions.gen.mpl" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.acsl.cbmc.gen/com.mbeddr.analyses.acsl.cbmc.gen.mpl" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.acsl/com.mbeddr.analyses.acsl.mpl" folder="acsl" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.unittests/unittests.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.verification_conditions/com.mbeddr.analyses.base.verification_conditions.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base/base.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.components/com.mbeddr.analyses.cbmc.components.mpl" folder="cbmc" />
