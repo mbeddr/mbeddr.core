@@ -218,7 +218,7 @@
           <node concept="3O_q_g" id="7Rf0$0HKRGv" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="7Rf0$0HKRGw" role="3O_q_j">
-              <property role="PhEJT" value="Hello process, my pid is: %d\n" />
+              <property role="PhEJT" value="--- Hello process, my pid is: %d\n" />
             </node>
             <node concept="1Nfr1v" id="7Rf0$0HKRGx" role="3O_q_j" />
           </node>
@@ -246,7 +246,7 @@
           <node concept="3O_q_g" id="7Rf0$0HKRGD" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="7Rf0$0HKRGE" role="3O_q_j">
-              <property role="PhEJT" value="init process, my pid is: %d\n" />
+              <property role="PhEJT" value="--- init process, my pid is: %d\n" />
             </node>
             <node concept="1Nfr1v" id="7Rf0$0HKRGF" role="3O_q_j" />
           </node>
@@ -265,11 +265,16 @@
           <node concept="3O_q_g" id="HmUOIGzXUG" role="1_9egR">
             <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="7Rf0$0HO2OO" role="3O_q_j">
-              <property role="PhEJT" value="last pid was: %d\n" />
+              <property role="PhEJT" value="--- last pid was: %d\n" />
             </node>
             <node concept="3ZVu4v" id="7Rf0$0HO2OP" role="3O_q_j">
               <ref role="3ZVs_2" node="7Rf0$0HKRGA" resolve="lastPid" />
             </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="1O7L$oogYXD" role="3XIRFZ">
+          <node concept="1Nfnfu" id="1O7L$oogYXB" role="1_9egR">
+            <ref role="3O_q_h" node="7Rf0$0HKRGr" resolve="Hello" />
           </node>
         </node>
         <node concept="3XISUE" id="HmUOIG$4ho" role="3XIRFZ" />

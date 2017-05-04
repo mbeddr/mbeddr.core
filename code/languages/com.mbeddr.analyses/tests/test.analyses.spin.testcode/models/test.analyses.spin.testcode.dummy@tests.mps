@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9decb51b-cfb3-4904-a6db-d6bf12c59b72(test.analyses.spin.promela.testcode.dummy@tests)">
+<model ref="r:9decb51b-cfb3-4904-a6db-d6bf12c59b72(test.analyses.spin.testcode.dummy@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />

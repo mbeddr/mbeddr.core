@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.analyses.spin.promela.testcode" uuid="ee94c775-8d14-44c3-a083-cdef6d78a972" moduleVersion="0" compileInMPS="true">
+<solution name="test.analyses.spin.testcode" uuid="ee94c775-8d14-44c3-a083-cdef6d78a972" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
