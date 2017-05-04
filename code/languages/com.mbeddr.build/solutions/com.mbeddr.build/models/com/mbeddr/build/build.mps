@@ -11064,16 +11064,16 @@
       </node>
       <node concept="3LEwk6" id="6efVUW9IkLC" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="com.mbeddr.analyses.spin" />
+        <property role="TrG5h" value="com.mbeddr.analyses.spin.mdcc" />
         <property role="3LESm3" value="537c2fcd-71ef-4c92-a9e5-27af92b5182b" />
         <node concept="398BVA" id="6efVUW9IkLD" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
           <node concept="2Ry0Ak" id="6efVUW9IkLE" role="iGT6I">
             <property role="2Ry0Am" value="devkits" />
             <node concept="2Ry0Ak" id="6efVUW9In8i" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.analyses.spin" />
-              <node concept="2Ry0Ak" id="69CVGG_ToUC" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.analyses.spin.devkit" />
+              <property role="2Ry0Am" value="com.mbeddr.analyses.spin.mdcc" />
+              <node concept="2Ry0Ak" id="1nE8kSFt_h6" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.analyses.spin.mdcc.devkit" />
               </node>
             </node>
           </node>
