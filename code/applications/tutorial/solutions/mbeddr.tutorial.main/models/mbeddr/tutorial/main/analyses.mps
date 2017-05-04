@@ -276,6 +276,9 @@
       <concept id="3793213301909614895" name="com.mbeddr.analyses.acsl.structure.FunctionContract" flags="ng" index="2HfW99">
         <child id="3793213301909617373" name="functionContractMember" index="2HfWAV" />
       </concept>
+      <concept id="3793213301909615744" name="com.mbeddr.analyses.acsl.structure.IAtomicContract" flags="ng" index="2HfWvA">
+        <child id="75361647380517795" name="exp" index="3sLAUB" />
+      </concept>
       <concept id="3793213301909615745" name="com.mbeddr.analyses.acsl.structure.Requires" flags="ng" index="2HfWvB" />
       <concept id="6715381068726883387" name="com.mbeddr.analyses.acsl.structure.ACSLContractsGenerationConfigItem" flags="ng" index="31U8uV">
         <child id="6715381068726941300" name="generationKind" index="31UYnO" />
@@ -1125,10 +1128,10 @@
       <property role="TrG5h" value="add" />
       <property role="2OOxQR" value="true" />
       <node concept="2HfW99" id="7zW9XauCTbO" role="lGtFl">
-        <node concept="2H0slj" id="6fP9ZN5ofM0" role="2HfWAV">
-          <node concept="3Tl9Jp" id="6fP9ZN5oh6K" role="Y9XUp">
-            <node concept="2HeCUD" id="6fP9ZN5ogfG" role="3TlMhI" />
-            <node concept="3TlMh9" id="6fP9ZN5oghc" role="3TlMhJ">
+        <node concept="2H0slj" id="6HfPDdJ6sFp" role="2HfWAV">
+          <node concept="3Tl9Jp" id="6HfPDdJ6u2D" role="3sLAUB">
+            <node concept="2HeCUD" id="6HfPDdJ6qOz" role="3TlMhI" />
+            <node concept="3TlMh9" id="6HfPDdJ6rKH" role="3TlMhJ">
               <property role="2hmy$m" value="0" />
             </node>
           </node>
@@ -1194,12 +1197,12 @@
       <property role="TrG5h" value="dectab" />
       <property role="2OOxQR" value="true" />
       <node concept="2HfW99" id="7zW9Xauw_3r" role="lGtFl">
-        <node concept="2HfWvB" id="6fP9ZN5ohM8" role="2HfWAV">
-          <node concept="25Bbzn" id="6fP9ZN5oi1K" role="Y9XUp">
-            <node concept="3TlMh9" id="6fP9ZN5oifW" role="3TlMhJ">
+        <node concept="2HfWvB" id="6HfPDdJ6top" role="2HfWAV">
+          <node concept="25Bbzn" id="6HfPDdJ6tB5" role="3sLAUB">
+            <node concept="3TlMh9" id="6HfPDdJ6tOI" role="3TlMhJ">
               <property role="2hmy$m" value="5" />
             </node>
-            <node concept="3ZUYvv" id="6fP9ZN5oi0j" role="3TlMhI">
+            <node concept="3ZUYvv" id="6HfPDdJ6t_U" role="3TlMhI">
               <ref role="3ZUYvu" node="3j3yk3gTu5k" resolve="x" />
             </node>
           </node>
@@ -3087,12 +3090,12 @@
       <property role="TrG5h" value="heap_sort" />
       <property role="2OOxQR" value="true" />
       <node concept="2HfW99" id="7zW9XauvJNL" role="lGtFl">
-        <node concept="2HfWvB" id="6fP9ZN5ojc8" role="2HfWAV">
-          <node concept="3Tl9Jp" id="6fP9ZN5ojGU" role="Y9XUp">
-            <node concept="3TlMh9" id="6fP9ZN5okbY" role="3TlMhJ">
+        <node concept="2HfWvB" id="6HfPDdJ66vg" role="2HfWAV">
+          <node concept="3Tl9Jr" id="6HfPDdJ66yn" role="3sLAUB">
+            <node concept="3TlMh9" id="6HfPDdJ670B" role="3TlMhJ">
               <property role="2hmy$m" value="0" />
             </node>
-            <node concept="3ZUYvv" id="6fP9ZN5ojFv" role="3TlMhI">
+            <node concept="3ZUYvv" id="6HfPDdJ66vS" role="3TlMhI">
               <ref role="3ZUYvu" node="370Vv3VyipZ" resolve="N" />
             </node>
           </node>
@@ -9149,6 +9152,7 @@
       <property role="TrG5h" value="empty_1479455964295_45" />
     </node>
     <node concept="3GEVxB" id="3M7JtdM87ln" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="1TkmKWB9mmf" resolve="_071_c_level_environment" />
     </node>
     <node concept="3GEVxB" id="2HZ6k2lo3JR" role="2OODSX">
