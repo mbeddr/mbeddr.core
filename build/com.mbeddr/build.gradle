@@ -36,6 +36,9 @@ if (project.hasProperty("mbeddrVersion")) {
         } else {
             ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
         }
+        if(mbeddrBuild == "stable") {
+            mbeddrBuild = "master"
+        }
         ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
     } else {
         println "Local build detected. Build will be a SNAPSHOT."

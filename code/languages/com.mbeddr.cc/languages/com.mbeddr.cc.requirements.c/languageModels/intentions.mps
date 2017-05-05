@@ -6,7 +6,6 @@
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,13 +16,11 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="qdxw" ref="r:9295c19c-56f9-4395-bf08-9ffc2ff588e1(com.mbeddr.core.interpreterdebugger.rt.runtime)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="j9co" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.event(MPS.Core/)" />
+    <import index="cmfw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.event(MPS.OpenAPI/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="hkt1" ref="r:c8eb480e-3a9c-4444-9a74-7da98d9d0a76(com.mbeddr.cc.requirements.c.behavior)" implicit="true" />
   </imports>
@@ -150,7 +147,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1073063089578" name="jetbrains.mps.baseLanguage.structure.SuperMethodCall" flags="nn" index="3nyPlj" />
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
@@ -214,6 +210,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -449,43 +446,50 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="13FPxr6rLGS" role="3cqZAp" />
+        <node concept="3cpWs8" id="4NZJtoe3c56" role="3cqZAp">
+          <node concept="3cpWsn" id="4NZJtoe3c54" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="testModel" />
+            <node concept="3uibUv" id="4NZJtoe3ntA" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2OqwBi" id="4NZJtoe3l5C" role="33vP2m">
+              <node concept="37vLTw" id="4NZJtoe3kWs" role="2Oq$k0">
+                <ref role="3cqZAo" node="$bJ0jgVdfV" resolve="tc" />
+              </node>
+              <node concept="I4A8Y" id="4NZJtoe3ldu" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4NZJtoe3yyN" role="3cqZAp" />
         <node concept="3cpWs8" id="2dnGg2IyJYC" role="3cqZAp">
           <node concept="3cpWsn" id="2dnGg2IyJYD" role="3cpWs9">
             <property role="TrG5h" value="adapter" />
             <property role="3TUv4t" value="true" />
-            <node concept="3uibUv" id="2dnGg2IyJYB" role="1tU5fm">
-              <ref role="3uigEE" to="w1kc:~SModelAdapter" resolve="SModelAdapter" />
+            <node concept="3uibUv" id="4NZJtoe3HHp" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNodeChangeListenerAdapter" resolve="SNodeChangeListenerAdapter" />
             </node>
-            <node concept="2ShNRf" id="2dnGg2IyJYE" role="33vP2m">
-              <node concept="YeOm9" id="2dnGg2IyJYF" role="2ShVmc">
-                <node concept="1Y3b0j" id="2dnGg2IyJYG" role="YeSDq">
+            <node concept="2ShNRf" id="4NZJtoe3nDD" role="33vP2m">
+              <node concept="YeOm9" id="4NZJtoe3yaG" role="2ShVmc">
+                <node concept="1Y3b0j" id="4NZJtoe3yaJ" role="YeSDq">
                   <property role="2bfB8j" value="true" />
-                  <ref role="1Y3XeK" to="w1kc:~SModelAdapter" resolve="SModelAdapter" />
-                  <ref role="37wK5l" to="w1kc:~SModelAdapter.&lt;init&gt;()" resolve="SModelAdapter" />
-                  <node concept="3Tm1VV" id="2dnGg2IyJYH" role="1B3o_S" />
-                  <node concept="3clFb_" id="2dnGg2IyJYI" role="jymVt">
+                  <ref role="1Y3XeK" to="mhbf:~SNodeChangeListenerAdapter" resolve="SNodeChangeListenerAdapter" />
+                  <ref role="37wK5l" to="mhbf:~SNodeChangeListenerAdapter.&lt;init&gt;()" resolve="SNodeChangeListenerAdapter" />
+                  <node concept="3Tm1VV" id="4NZJtoe3yaK" role="1B3o_S" />
+                  <node concept="3clFb_" id="4NZJtoe3yeM" role="jymVt">
                     <property role="1EzhhJ" value="false" />
                     <property role="TrG5h" value="propertyChanged" />
                     <property role="DiZV1" value="false" />
-                    <property role="IEkAT" value="false" />
-                    <node concept="3Tm1VV" id="2dnGg2IyJYJ" role="1B3o_S" />
-                    <node concept="3cqZAl" id="2dnGg2IyJYK" role="3clF45" />
-                    <node concept="37vLTG" id="2dnGg2IyJYL" role="3clF46">
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="4NZJtoe3yeN" role="1B3o_S" />
+                    <node concept="3cqZAl" id="4NZJtoe3yeP" role="3clF45" />
+                    <node concept="37vLTG" id="4NZJtoe3yeQ" role="3clF46">
                       <property role="TrG5h" value="event" />
-                      <node concept="3uibUv" id="2dnGg2IyJYM" role="1tU5fm">
-                        <ref role="3uigEE" to="j9co:~SModelPropertyEvent" resolve="SModelPropertyEvent" />
+                      <node concept="3uibUv" id="4NZJtoe3yeR" role="1tU5fm">
+                        <ref role="3uigEE" to="cmfw:~SPropertyChangeEvent" resolve="SPropertyChangeEvent" />
                       </node>
                     </node>
-                    <node concept="3clFbS" id="2dnGg2IyJYN" role="3clF47">
-                      <node concept="3clFbF" id="2dnGg2IyJYO" role="3cqZAp">
-                        <node concept="3nyPlj" id="2dnGg2IyJYP" role="3clFbG">
-                          <ref role="37wK5l" to="w1kc:~SModelAdapter.propertyChanged(jetbrains.mps.smodel.event.SModelPropertyEvent):void" resolve="propertyChanged" />
-                          <node concept="37vLTw" id="2dnGg2IyJYQ" role="37wK5m">
-                            <ref role="3cqZAo" node="2dnGg2IyJYL" resolve="event" />
-                          </node>
-                        </node>
-                      </node>
+                    <node concept="3clFbS" id="4NZJtoe3yeU" role="3clF47">
                       <node concept="3cpWs8" id="4yPv6wmS_1_" role="3cqZAp">
                         <node concept="3cpWsn" id="4yPv6wmS_1A" role="3cpWs9">
                           <property role="TrG5h" value="node" />
@@ -493,10 +497,10 @@
                           <node concept="10QFUN" id="4yPv6wmS_1B" role="33vP2m">
                             <node concept="2OqwBi" id="4yPv6wmS_1C" role="10QFUP">
                               <node concept="37vLTw" id="4yPv6wmS_1D" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2dnGg2IyJYL" resolve="event" />
+                                <ref role="3cqZAo" node="4NZJtoe3yeQ" resolve="event" />
                               </node>
                               <node concept="liA8E" id="4yPv6wmS_1E" role="2OqNvi">
-                                <ref role="37wK5l" to="j9co:~SModelPropertyEvent.getNode():org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
+                                <ref role="37wK5l" to="cmfw:~SPropertyChangeEvent.getNode():org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
                               </node>
                             </node>
                             <node concept="3Tqbb2" id="4yPv6wmS_1F" role="10QFUM" />
@@ -583,8 +587,8 @@
                             <node concept="3clFbF" id="2dnGg2I$DPy" role="3cqZAp">
                               <node concept="2OqwBi" id="2dnGg2I$DPv" role="3clFbG">
                                 <node concept="10M0yZ" id="2dnGg2I$DPw" role="2Oq$k0">
-                                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                                   <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                                 </node>
                                 <node concept="liA8E" id="2dnGg2I$DPx" role="2OqNvi">
                                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
@@ -598,7 +602,7 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2AHcQZ" id="2dnGg2IyJZd" role="2AJF6D">
+                    <node concept="2AHcQZ" id="4NZJtoe3yeV" role="2AJF6D">
                       <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                     </node>
                   </node>
@@ -607,15 +611,14 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="13FPxr6saTp" role="3cqZAp">
-          <node concept="2OqwBi" id="13FPxr6sbQ3" role="3clFbG">
-            <node concept="2YIFZM" id="13FPxr6sbFz" role="2Oq$k0">
-              <ref role="37wK5l" to="w1kc:~GlobalSModelEventsManager.getInstance():jetbrains.mps.smodel.GlobalSModelEventsManager" resolve="getInstance" />
-              <ref role="1Pybhc" to="w1kc:~GlobalSModelEventsManager" resolve="GlobalSModelEventsManager" />
+        <node concept="3clFbF" id="4NZJtoe3mbY" role="3cqZAp">
+          <node concept="2OqwBi" id="4NZJtoe3mB2" role="3clFbG">
+            <node concept="37vLTw" id="4NZJtoe3mbW" role="2Oq$k0">
+              <ref role="3cqZAo" node="4NZJtoe3c54" resolve="testModel" />
             </node>
-            <node concept="liA8E" id="13FPxr6sc7g" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~GlobalSModelEventsManager.addGlobalModelListener(jetbrains.mps.smodel.event.SModelListener):void" resolve="addGlobalModelListener" />
-              <node concept="37vLTw" id="2dnGg2IyJZe" role="37wK5m">
+            <node concept="liA8E" id="4NZJtoe3nBw" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.addChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener):void" resolve="addChangeListener" />
+              <node concept="37vLTw" id="4NZJtoe3yxs" role="37wK5m">
                 <ref role="3cqZAo" node="2dnGg2IyJYD" resolve="adapter" />
               </node>
             </node>
@@ -651,15 +654,14 @@
                           </node>
                         </node>
                         <node concept="3clFbS" id="2dnGg2I$BDa" role="3clF47">
-                          <node concept="3clFbF" id="2dnGg2I$Dk4" role="3cqZAp">
-                            <node concept="2OqwBi" id="2dnGg2I$DlK" role="3clFbG">
-                              <node concept="2YIFZM" id="2dnGg2I$Dl2" role="2Oq$k0">
-                                <ref role="37wK5l" to="w1kc:~GlobalSModelEventsManager.getInstance():jetbrains.mps.smodel.GlobalSModelEventsManager" resolve="getInstance" />
-                                <ref role="1Pybhc" to="w1kc:~GlobalSModelEventsManager" resolve="GlobalSModelEventsManager" />
+                          <node concept="3clFbF" id="4NZJtoe3Inn" role="3cqZAp">
+                            <node concept="2OqwBi" id="4NZJtoe3IuG" role="3clFbG">
+                              <node concept="37vLTw" id="4NZJtoe3Inl" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4NZJtoe3c54" resolve="testModel" />
                               </node>
-                              <node concept="liA8E" id="2dnGg2I$Dzz" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~GlobalSModelEventsManager.removeGlobalModelListener(jetbrains.mps.smodel.event.SModelListener):void" resolve="removeGlobalModelListener" />
-                                <node concept="37vLTw" id="2dnGg2I$D$O" role="37wK5m">
+                              <node concept="liA8E" id="4NZJtoe3IAv" role="2OqNvi">
+                                <ref role="37wK5l" to="mhbf:~SModel.removeChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener):void" resolve="removeChangeListener" />
+                                <node concept="37vLTw" id="4NZJtoe3IDk" role="37wK5m">
                                   <ref role="3cqZAo" node="2dnGg2IyJYD" resolve="adapter" />
                                 </node>
                               </node>

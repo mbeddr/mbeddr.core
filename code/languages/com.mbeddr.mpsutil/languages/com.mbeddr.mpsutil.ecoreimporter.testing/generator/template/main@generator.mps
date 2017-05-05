@@ -386,19 +386,119 @@
                 <node concept="17Uvod" id="oUNR1QQ1bT" role="lGtFl">
                   <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
                   <property role="2qtEX9" value="value" />
-                  <node concept="3zFVjK" id="oUNR1QQ1bU" role="3zH0cK">
-                    <node concept="3clFbS" id="oUNR1QQ1bV" role="2VODD2">
-                      <node concept="3clFbF" id="oUNR1QQ1bW" role="3cqZAp">
-                        <node concept="2OqwBi" id="oUNR1QQ1bX" role="3clFbG">
-                          <node concept="2OqwBi" id="oUNR1QQ1bY" role="2Oq$k0">
-                            <node concept="30H73N" id="oUNR1QQ1bZ" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="oUNR1QQ1c0" role="2OqNvi">
-                              <ref role="3Tt5mk" to="3yw8:4MUcKNHoqHZ" resolve="pathToEcoreFile" />
+                  <node concept="3zFVjK" id="2FOCBFUX9Ww" role="3zH0cK">
+                    <node concept="3clFbS" id="2FOCBFUX9Wx" role="2VODD2">
+                      <node concept="3cpWs8" id="2FOCBFUX9Wy" role="3cqZAp">
+                        <node concept="3cpWsn" id="2FOCBFUX9Wz" role="3cpWs9">
+                          <property role="TrG5h" value="filePicker" />
+                          <node concept="3Tqbb2" id="2FOCBFUX9W$" role="1tU5fm">
+                            <ref role="ehGHo" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
+                          </node>
+                          <node concept="10QFUN" id="2FOCBFUX9W_" role="33vP2m">
+                            <node concept="2YIFZM" id="2FOCBFUX9WA" role="10QFUP">
+                              <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
+                              <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="getInputNode" />
+                              <node concept="2OqwBi" id="2FOCBFUX9WB" role="37wK5m">
+                                <node concept="30H73N" id="2FOCBFUX9WC" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="2FOCBFUX9WD" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="3yw8:4MUcKNHoqHZ" resolve="pathToEcoreFile" />
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="2FOCBFUX9WE" role="37wK5m">
+                                <node concept="2JrnkZ" id="2FOCBFUX9WF" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="2FOCBFUX9WG" role="2JrQYb">
+                                    <node concept="1iwH7S" id="2FOCBFUX9WH" role="2Oq$k0" />
+                                    <node concept="1st3f0" id="2FOCBFUX9WI" role="2OqNvi" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="2FOCBFUX9WJ" role="2OqNvi">
+                                  <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3Tqbb2" id="2FOCBFUX9WK" role="10QFUM">
+                              <ref role="ehGHo" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="oUNR1QQ1c1" role="2OqNvi">
-                            <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        </node>
+                      </node>
+                      <node concept="3clFbH" id="2FOCBFUX9WL" role="3cqZAp" />
+                      <node concept="3cpWs8" id="2FOCBFUX9WM" role="3cqZAp">
+                        <node concept="3cpWsn" id="2FOCBFUX9WN" role="3cpWs9">
+                          <property role="TrG5h" value="canonicalPath" />
+                          <node concept="17QB3L" id="2FOCBFUX9WO" role="1tU5fm" />
+                          <node concept="2OqwBi" id="2FOCBFUX9WP" role="33vP2m">
+                            <node concept="37vLTw" id="2FOCBFUX9WQ" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2FOCBFUX9Wz" resolve="filePicker" />
+                            </node>
+                            <node concept="2qgKlT" id="2FOCBFUX9WR" role="2OqNvi">
+                              <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                            </node>
                           </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbH" id="2FOCBFUX9WS" role="3cqZAp" />
+                      <node concept="3clFbF" id="2FOCBFUX9WT" role="3cqZAp">
+                        <node concept="2OqwBi" id="2FOCBFUX9WU" role="3clFbG">
+                          <node concept="10M0yZ" id="2FOCBFUX9WV" role="2Oq$k0">
+                            <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                          </node>
+                          <node concept="liA8E" id="2FOCBFUX9WW" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <node concept="3cpWs3" id="2FOCBFUX9WX" role="37wK5m">
+                              <node concept="3cpWs3" id="2FOCBFUX9WY" role="3uHU7B">
+                                <node concept="Xl_RD" id="2FOCBFUX9WZ" role="3uHU7w">
+                                  <property role="Xl_RC" value=" - " />
+                                </node>
+                                <node concept="3cpWs3" id="2FOCBFUX9X0" role="3uHU7B">
+                                  <node concept="Xl_RD" id="2FOCBFUX9X1" role="3uHU7B">
+                                    <property role="Xl_RC" value="path: " />
+                                  </node>
+                                  <node concept="2OqwBi" id="2FOCBFUX9X2" role="3uHU7w">
+                                    <node concept="37vLTw" id="2FOCBFUX9X3" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2FOCBFUX9Wz" resolve="filePicker" />
+                                    </node>
+                                    <node concept="2qgKlT" id="2FOCBFUX9X4" role="2OqNvi">
+                                      <ref role="37wK5l" to="48kf:5lKnBeAIfOh" resolve="getPrefix" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="2FOCBFUX9X5" role="3uHU7w">
+                                <node concept="37vLTw" id="2FOCBFUX9X6" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2FOCBFUX9Wz" resolve="filePicker" />
+                                </node>
+                                <node concept="3TrcHB" id="2FOCBFUX9X7" role="2OqNvi">
+                                  <ref role="3TsBF5" to="68mc:5lKnBeAtODI" resolve="path" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="2FOCBFUX9X8" role="3cqZAp">
+                        <node concept="2OqwBi" id="2FOCBFUX9X9" role="3clFbG">
+                          <node concept="10M0yZ" id="2FOCBFUX9Xa" role="2Oq$k0">
+                            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                            <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                          </node>
+                          <node concept="liA8E" id="2FOCBFUX9Xb" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <node concept="3cpWs3" id="2FOCBFUX9Xc" role="37wK5m">
+                              <node concept="37vLTw" id="2FOCBFUX9Xd" role="3uHU7w">
+                                <ref role="3cqZAo" node="2FOCBFUX9WN" resolve="canonicalPath" />
+                              </node>
+                              <node concept="Xl_RD" id="2FOCBFUX9Xe" role="3uHU7B">
+                                <property role="Xl_RC" value="canonicalPath: " />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="2FOCBFUX9Xf" role="3cqZAp">
+                        <node concept="37vLTw" id="2FOCBFUX9Xg" role="3clFbG">
+                          <ref role="3cqZAo" node="2FOCBFUX9WN" resolve="canonicalPath" />
                         </node>
                       </node>
                     </node>

@@ -18,7 +18,6 @@
   </languages>
   <imports>
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
@@ -51,8 +50,6 @@
     <import index="r3rm" ref="r:7fc96130-6279-4a55-aeeb-422a6879539d(de.itemis.mps.editor.diagram.runtime.jgraph)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="iwf0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.descriptor(MPS.Editor/)" />
-    <import index="ycmz" ref="r:af3e1a90-527b-4262-8066-857208a4f4fb(de.slisson.mps.reflection.runtime)" />
     <import index="3it5" ref="r:663468b2-7f77-448a-afd3-b1669ce5b4a7(de.itemis.mps.editor.diagram.runtime.plugin)" />
     <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
     <import index="jsda" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.dnd(JDK/)" />
@@ -4603,30 +4600,15 @@
       <node concept="10P_77" id="4be4ERvPvni" role="3clF45" />
       <node concept="3Tm1VV" id="4be4ERvOUwo" role="1B3o_S" />
       <node concept="3clFbS" id="4be4ERvOUwp" role="3clF47">
-        <node concept="3clFbF" id="ywgKCSyKje" role="3cqZAp">
-          <node concept="2OqwBi" id="ywgKCSyKmp" role="3clFbG">
-            <node concept="2YIFZM" id="ywgKCSyKkM" role="2Oq$k0">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
+        <node concept="3clFbF" id="ywgKCSvhFk" role="3cqZAp">
+          <node concept="2OqwBi" id="ywgKCSvhKh" role="3clFbG">
+            <node concept="1rXfSq" id="ywgKCSvhFj" role="2Oq$k0">
+              <ref role="37wK5l" node="7jhYr4h_8Qz" resolve="getAccessor" />
             </node>
-            <node concept="liA8E" id="ywgKCSyL5l" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.requireRead(jetbrains.mps.util.Computable):java.lang.Object" resolve="requireRead" />
-              <node concept="1bVj0M" id="ywgKCSyL7g" role="37wK5m">
-                <node concept="3clFbS" id="ywgKCSyL7h" role="1bW5cS">
-                  <node concept="3clFbF" id="ywgKCSvhFk" role="3cqZAp">
-                    <node concept="2OqwBi" id="ywgKCSvhKh" role="3clFbG">
-                      <node concept="1rXfSq" id="ywgKCSvhFj" role="2Oq$k0">
-                        <ref role="37wK5l" node="7jhYr4h_8Qz" resolve="getAccessor" />
-                      </node>
-                      <node concept="liA8E" id="ywgKCSvhTL" role="2OqNvi">
-                        <ref role="37wK5l" node="ywgKCSk9eo" resolve="canSplit" />
-                        <node concept="37vLTw" id="ywgKCSvhYz" role="37wK5m">
-                          <ref role="3cqZAo" node="4be4ERvOZrC" resolve="concept" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
+            <node concept="liA8E" id="ywgKCSvhTL" role="2OqNvi">
+              <ref role="37wK5l" node="ywgKCSk9eo" resolve="canSplit" />
+              <node concept="37vLTw" id="ywgKCSvhYz" role="37wK5m">
+                <ref role="3cqZAo" node="4be4ERvOZrC" resolve="concept" />
               </node>
             </node>
           </node>
@@ -4646,30 +4628,15 @@
       <node concept="3cqZAl" id="ywgKCSiMMa" role="3clF45" />
       <node concept="3Tm1VV" id="ywgKCSiMMb" role="1B3o_S" />
       <node concept="3clFbS" id="ywgKCSiMMc" role="3clF47">
-        <node concept="3clFbF" id="ywgKCSyLDF" role="3cqZAp">
-          <node concept="2OqwBi" id="ywgKCSyLHp" role="3clFbG">
-            <node concept="2YIFZM" id="ywgKCSyLEZ" role="2Oq$k0">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
+        <node concept="3clFbF" id="ywgKCSvi0r" role="3cqZAp">
+          <node concept="2OqwBi" id="ywgKCSvi4W" role="3clFbG">
+            <node concept="1rXfSq" id="ywgKCSvi0q" role="2Oq$k0">
+              <ref role="37wK5l" node="7jhYr4h_8Qz" resolve="getAccessor" />
             </node>
-            <node concept="liA8E" id="ywgKCSyLXQ" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.requireWrite(java.lang.Runnable):void" resolve="requireWrite" />
-              <node concept="1bVj0M" id="ywgKCSyLZH" role="37wK5m">
-                <node concept="3clFbS" id="ywgKCSyLZI" role="1bW5cS">
-                  <node concept="3clFbF" id="ywgKCSvi0r" role="3cqZAp">
-                    <node concept="2OqwBi" id="ywgKCSvi4W" role="3clFbG">
-                      <node concept="1rXfSq" id="ywgKCSvi0q" role="2Oq$k0">
-                        <ref role="37wK5l" node="7jhYr4h_8Qz" resolve="getAccessor" />
-                      </node>
-                      <node concept="liA8E" id="ywgKCSviqb" role="2OqNvi">
-                        <ref role="37wK5l" node="ywgKCSk9ex" resolve="split" />
-                        <node concept="37vLTw" id="ywgKCSvis8" role="37wK5m">
-                          <ref role="3cqZAo" node="ywgKCSiOVm" resolve="boxToInsert" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
+            <node concept="liA8E" id="ywgKCSviqb" role="2OqNvi">
+              <ref role="37wK5l" node="ywgKCSk9ex" resolve="split" />
+              <node concept="37vLTw" id="ywgKCSvis8" role="37wK5m">
+                <ref role="3cqZAo" node="ywgKCSiOVm" resolve="boxToInsert" />
               </node>
             </node>
           </node>
@@ -19179,20 +19146,74 @@
                 </node>
               </node>
             </node>
-            <node concept="2Gpval" id="ywgKCS6M_I" role="3cqZAp">
-              <node concept="2GrKxI" id="ywgKCS6M_J" role="2Gsz3X">
-                <property role="TrG5h" value="r" />
+            <node concept="3SKdUt" id="1DwsSCGbChy" role="3cqZAp">
+              <node concept="3SKdUq" id="1DwsSCGbCh$" role="3SKWNk">
+                <property role="3SKdUp" value="FIXME I'm not sure there's need to execute elements of myWritesAfterRead from within model write" />
               </node>
-              <node concept="37vLTw" id="ywgKCS6MAH" role="2GsD0m">
-                <ref role="3cqZAo" node="ywgKCS6sv8" resolve="myWritesAfterRead" />
+            </node>
+            <node concept="3SKdUt" id="1DwsSCGbCAk" role="3cqZAp">
+              <node concept="3SKdUq" id="1DwsSCGbCAm" role="3SKWNk">
+                <property role="3SKdUp" value="      However, the name suggests they are 'writes', and there's Edge.split call inside them" />
               </node>
-              <node concept="3clFbS" id="ywgKCS6M_L" role="2LFqv$">
-                <node concept="3clFbF" id="ywgKCS6MOw" role="3cqZAp">
-                  <node concept="2OqwBi" id="ywgKCS6MPd" role="3clFbG">
-                    <node concept="2GrUjf" id="ywgKCS6MOv" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="ywgKCS6M_J" resolve="r" />
+            </node>
+            <node concept="3SKdUt" id="1DwsSCGbDsA" role="3cqZAp">
+              <node concept="3SKdUq" id="1DwsSCGbDsC" role="3SKWNk">
+                <property role="3SKdUp" value="      that used to do ModelAccess.requireWrite() (now removed)." />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="1DwsSCGbEev" role="3cqZAp">
+              <node concept="3SKdUq" id="1DwsSCGbEex" role="3SKWNk">
+                <property role="3SKdUp" value="      The need for model write is dubious as it doesn't allow node changes (it's not a command)," />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="1DwsSCGbF2T" role="3cqZAp">
+              <node concept="3SKdUq" id="1DwsSCGbF2V" role="3SKWNk">
+                <property role="3SKdUp" value="      I don't see any reason to have it here." />
+              </node>
+            </node>
+            <node concept="3clFbF" id="1DwsSCGbyLG" role="3cqZAp">
+              <node concept="2OqwBi" id="1DwsSCGb$JV" role="3clFbG">
+                <node concept="2OqwBi" id="1DwsSCGb$97" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1DwsSCGbzL3" role="2Oq$k0">
+                    <node concept="2OqwBi" id="1DwsSCGbzwJ" role="2Oq$k0">
+                      <node concept="37vLTw" id="1DwsSCGbyLE" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7jhYr4hveB5" resolve="myEditorComponent" />
+                      </node>
+                      <node concept="liA8E" id="1DwsSCGbzEL" role="2OqNvi">
+                        <ref role="37wK5l" to="cj4x:~EditorComponent.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                      </node>
                     </node>
-                    <node concept="1Bd96e" id="ywgKCS6Nf0" role="2OqNvi" />
+                    <node concept="liA8E" id="1DwsSCGb$2D" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1DwsSCGb$C1" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1DwsSCGb_k$" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runWriteAction(java.lang.Runnable):void" resolve="runWriteAction" />
+                  <node concept="1bVj0M" id="1DwsSCGb__y" role="37wK5m">
+                    <node concept="3clFbS" id="1DwsSCGb__z" role="1bW5cS">
+                      <node concept="2Gpval" id="ywgKCS6M_I" role="3cqZAp">
+                        <node concept="2GrKxI" id="ywgKCS6M_J" role="2Gsz3X">
+                          <property role="TrG5h" value="r" />
+                        </node>
+                        <node concept="37vLTw" id="ywgKCS6MAH" role="2GsD0m">
+                          <ref role="3cqZAo" node="ywgKCS6sv8" resolve="myWritesAfterRead" />
+                        </node>
+                        <node concept="3clFbS" id="ywgKCS6M_L" role="2LFqv$">
+                          <node concept="3clFbF" id="ywgKCS6MOw" role="3cqZAp">
+                            <node concept="2OqwBi" id="ywgKCS6MPd" role="3clFbG">
+                              <node concept="2GrUjf" id="ywgKCS6MOv" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="ywgKCS6M_J" resolve="r" />
+                              </node>
+                              <node concept="1Bd96e" id="ywgKCS6Nf0" role="2OqNvi" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>

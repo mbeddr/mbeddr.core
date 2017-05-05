@@ -6071,16 +6071,6 @@
                         <node concept="3clFbS" id="3I3e3C4uADq" role="1bW5cS">
                           <node concept="1DcWWT" id="3I3e3C4uCDX" role="3cqZAp">
                             <node concept="3clFbS" id="3I3e3C4uCE0" role="2LFqv$">
-                              <node concept="3SKdUt" id="3I3e3C4v84P" role="3cqZAp">
-                                <node concept="3SKdUq" id="3I3e3C4v84R" role="3SKWNk">
-                                  <property role="3SKdUp" value="TraceInfoUtil did SNodeReference.resolve under the hood without any extra model read, that's why" />
-                                </node>
-                              </node>
-                              <node concept="3SKdUt" id="3I3e3C4vsH1" role="3cqZAp">
-                                <node concept="3SKdUq" id="3I3e3C4vsH3" role="3SKWNk">
-                                  <property role="3SKdUp" value="I assume model read lock here" />
-                                </node>
-                              </node>
                               <node concept="3cpWs8" id="3I3e3C4uIkn" role="3cqZAp">
                                 <node concept="3cpWsn" id="3I3e3C4uIko" role="3cpWs9">
                                   <property role="TrG5h" value="resolved" />
@@ -6135,8 +6125,8 @@
                               </node>
                               <node concept="liA8E" id="3I3e3C4uCE8" role="2OqNvi">
                                 <ref role="37wK5l" to="fwk:~DebugInfo.getTracedNodesForPosition(java.lang.String,int):java.util.List" resolve="getTracedNodesForPosition" />
-                                <node concept="37vLTw" id="3I3e3C4uCE9" role="37wK5m">
-                                  <ref role="3cqZAo" node="4a8JajkM8CU" resolve="file" />
+                                <node concept="37vLTw" id="723GTU77dU9" role="37wK5m">
+                                  <ref role="3cqZAo" node="4a8JajkM8BK" resolve="fileName" />
                                 </node>
                                 <node concept="37vLTw" id="3I3e3C4uCEa" role="37wK5m">
                                   <ref role="3cqZAo" node="4a8JajkM8CW" resolve="line" />
@@ -6157,12 +6147,13 @@
                 </node>
                 <node concept="3clFbJ" id="4a8JajkM8C0" role="3cqZAp">
                   <node concept="1Wc70l" id="4a8JajkM8C_" role="3clFbw">
-                    <node concept="37vLTw" id="1dwnYWHuOAe" role="3uHU7w">
+                    <node concept="10M0yZ" id="723GTU78aMa" role="3uHU7w">
                       <ref role="3cqZAo" node="1dwnYWHuO54" resolve="DEBUG_NODES_FINDER" />
+                      <ref role="1PxDUh" node="7iLQIU2tUXc" resolve="NodesFinderFacade" />
                     </node>
-                    <node concept="10M0yZ" id="4a8JajkM8CB" role="3uHU7B">
-                      <ref role="1PxDUh" node="6GZ1x5GshiS" resolve="CBMCLiftedResultBuilder" />
+                    <node concept="10M0yZ" id="723GTU78aLF" role="3uHU7B">
                       <ref role="3cqZAo" node="6GZ1x5GshiT" resolve="DEBUG" />
+                      <ref role="1PxDUh" node="6GZ1x5GshiS" resolve="CBMCLiftedResultBuilder" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="4a8JajkM8C1" role="3clFbx">
@@ -6256,7 +6247,7 @@
                         <node concept="liA8E" id="4a8JajkM8Cz" role="2OqNvi">
                           <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                           <node concept="Xl_RD" id="4a8JajkM8C$" role="37wK5m">
-                            <property role="Xl_RC" value="\n" />
+                            <property role="Xl_RC" value="---\n" />
                           </node>
                         </node>
                       </node>

@@ -88,7 +88,9 @@
       <concept id="4053481679317021366" name="com.mbeddr.analyses.cbmc.core.structure.RobustnessCBMCAnalysis" flags="ng" index="1nvAUE">
         <property id="9020927825194549928" name="check_memory_leak" index="2o64iB" />
         <property id="4053481679317021368" name="check_pointer" index="1nvAU$" />
+        <property id="4053481679317021370" name="check_signed_overflow" index="1nvAUA" />
         <property id="4053481679317021367" name="check_div_by_zero" index="1nvAUF" />
+        <property id="7634619718342724140" name="check_conversion" index="1UWlg3" />
       </concept>
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
@@ -311,7 +313,7 @@
         <ref role="2v9HqP" node="NfDeW0OkaT" resolve="FloatOverflow" />
       </node>
       <node concept="2v9HqM" id="4tIZ4QIjrJG" role="2eOfOg">
-        <ref role="2v9HqP" node="4tIZ4QIjidA" resolve="SignedOverflow" />
+        <ref role="2v9HqP" node="4tIZ4QIjidA" resolve="ConversionOverflow" />
       </node>
     </node>
   </node>
@@ -1023,7 +1025,7 @@
     </node>
   </node>
   <node concept="N3F5e" id="4tIZ4QIjidA">
-    <property role="TrG5h" value="SignedOverflow" />
+    <property role="TrG5h" value="ConversionOverflow" />
     <node concept="N3Fnx" id="4tIZ4QIjos4" role="N3F5h">
       <property role="TrG5h" value="libCall1" />
       <property role="2OOxQR" value="true" />
@@ -1123,6 +1125,9 @@
     <node concept="3GEVxB" id="3GuEwg$$cCA" role="3W6d8T">
       <ref role="3GEb4d" node="4tocua6I53H" resolve="MemoryLeak" />
     </node>
+    <node concept="3GEVxB" id="6BNByWj0yIt" role="3W6d8T">
+      <ref role="3GEb4d" node="4tIZ4QIjidA" resolve="ConversionOverflow" />
+    </node>
     <node concept="1nvAUE" id="prDxnvfD9o" role="3V$2$K">
       <property role="2lelRm" value="true" />
       <property role="2lUGe1" value="false" />
@@ -1174,6 +1179,43 @@
       <property role="2l50Mm" value="false" />
       <property role="2o64iB" value="true" />
       <ref role="3V$Cn$" node="7lmBuXs21UQ" resolve="functionNOTCausingMemoryLeak" />
+    </node>
+    <node concept="1nvAUE" id="6BNByWj0yTY" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <property role="1UWlg3" value="true" />
+      <ref role="3V$Cn$" node="4tIZ4QIjos4" resolve="libCall1" />
+    </node>
+    <node concept="1nvAUE" id="6BNByWj0yUa" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <property role="1UWlg3" value="true" />
+      <property role="1nvAUA" value="true" />
+      <ref role="3V$Cn$" node="4tIZ4QIjwgh" resolve="libCall2" />
     </node>
   </node>
 </model>

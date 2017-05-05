@@ -27,6 +27,7 @@
     <import index="gkt" ref="r:f29b6853-4e1d-40bc-a331-9233266a6f31(com.mbeddr.ext.units.runtime.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -379,7 +380,6 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -5566,7 +5566,7 @@
                     <node concept="3clFbS" id="3M4aPu_5u$1" role="3eOfB_">
                       <node concept="3SKdUt" id="3M4aPu_5w6h" role="3cqZAp">
                         <node concept="3SKdUq" id="3M4aPu_5w6l" role="3SKWNk">
-                          <property role="3SKdUp" value="this is the any case - add it only to one of the integer types" />
+                          <property role="3SKdUp" value="this is the aLoadIny case - add it only to one of the integer types" />
                         </node>
                       </node>
                       <node concept="3clFbF" id="3M4aPu_5BO3" role="3cqZAp">
@@ -5621,11 +5621,16 @@
                                     <node concept="Xl_RD" id="3M4aPu$WLVE" role="3uHU7B">
                                       <property role="Xl_RC" value="Type of " />
                                     </node>
-                                    <node concept="2OqwBi" id="3M4aPu$WMSg" role="3uHU7w">
-                                      <node concept="2GrUjf" id="3M4aPu$WMKs" role="2Oq$k0">
-                                        <ref role="2Gs0qQ" node="3M4aPu$Wyas" resolve="specifier" />
+                                    <node concept="2OqwBi" id="3OdlBNHORJC" role="3uHU7w">
+                                      <node concept="2OqwBi" id="3M4aPu$WMSg" role="2Oq$k0">
+                                        <node concept="2GrUjf" id="3M4aPu$WMKs" role="2Oq$k0">
+                                          <ref role="2Gs0qQ" node="3M4aPu$Wyas" resolve="specifier" />
+                                        </node>
+                                        <node concept="2yIwOk" id="3OdlBNHORne" role="2OqNvi" />
                                       </node>
-                                      <node concept="3NT_Vc" id="3M4aPu$WN$4" role="2OqNvi" />
+                                      <node concept="liA8E" id="3OdlBNHOTSc" role="2OqNvi">
+                                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                      </node>
                                     </node>
                                   </node>
                                   <node concept="Xl_RD" id="3M4aPu$WOh7" role="3uHU7w">

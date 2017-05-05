@@ -1647,12 +1647,16 @@
                         </node>
                         <node concept="34ab3g" id="4dVT39Gzs3V" role="3cqZAp">
                           <property role="35gtTG" value="info" />
-                          <node concept="2OqwBi" id="4dVT39Gzs3W" role="34bqiv">
-                            <node concept="2GrUjf" id="4dVT39Gzs3X" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="4dVT39Gzs3O" resolve="pposInfo" />
-                            </node>
-                            <node concept="liA8E" id="4dVT39Gzs3Y" role="2OqNvi">
-                              <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getConceptFqName():java.lang.String" resolve="getConceptFqName" />
+                          <node concept="2YIFZM" id="4O11EsfbQvk" role="34bqiv">
+                            <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                            <node concept="2OqwBi" id="4dVT39Gzs3W" role="37wK5m">
+                              <node concept="2GrUjf" id="4dVT39Gzs3X" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="4dVT39Gzs3O" resolve="pposInfo" />
+                              </node>
+                              <node concept="liA8E" id="4dVT39Gzs3Y" role="2OqNvi">
+                                <ref role="37wK5l" to="fwk:~TraceablePositionInfo.getConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getConcept" />
+                              </node>
                             </node>
                           </node>
                         </node>

@@ -2563,7 +2563,7 @@
     </node>
   </node>
   <node concept="1lH9Xt" id="4tIZ4QIjMxR">
-    <property role="TrG5h" value="SignedOverflow" />
+    <property role="TrG5h" value="Conversion" />
     <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="4tIZ4QIjMxS" role="1SL9yI">
       <property role="TrG5h" value="testLibraryFunctionCall1" />
@@ -2591,8 +2591,8 @@
               <node concept="37vLTw" id="4tIZ4QIjMy4" role="2Oq$k0">
                 <ref role="3cqZAo" node="4tIZ4QIjMxW" resolve="config" />
               </node>
-              <node concept="2S8uIT" id="4tIZ4QIjUfl" role="2OqNvi">
-                <ref role="2S8YL0" to="tzyt:7QgqANUCWGQ" resolve="checkSignedOverflow" />
+              <node concept="2S8uIT" id="6BNByWj115s" role="2OqNvi">
+                <ref role="2S8YL0" to="tzyt:6BNByWj0KHz" resolve="checkConversion" />
               </node>
             </node>
           </node>
@@ -2622,7 +2622,7 @@
                 <ref role="3cqZAo" node="5EwdfGVhRsZ" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6KXBYUqLeDd" role="37wK5m">
-                <property role="Xl_RC" value="SignedOverflow" />
+                <property role="Xl_RC" value="ConversionOverflow" />
               </node>
               <node concept="Xl_RD" id="6KXBYUqLeDe" role="37wK5m">
                 <property role="Xl_RC" value="libCall1" />
@@ -2813,7 +2813,22 @@
               <node concept="37vLTw" id="4tIZ4QIk1sH" role="2Oq$k0">
                 <ref role="3cqZAo" node="4tIZ4QIk1s_" resolve="config" />
               </node>
-              <node concept="2S8uIT" id="4tIZ4QIk1sI" role="2OqNvi">
+              <node concept="2S8uIT" id="6BNByWj11oC" role="2OqNvi">
+                <ref role="2S8YL0" to="tzyt:6BNByWj0KHz" resolve="checkConversion" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6BNByWj1Iwr" role="3cqZAp">
+          <node concept="37vLTI" id="6BNByWj1K5u" role="3clFbG">
+            <node concept="3clFbT" id="6BNByWj1KgA" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="6BNByWj1IRx" role="37vLTJ">
+              <node concept="37vLTw" id="6BNByWj1Iwp" role="2Oq$k0">
+                <ref role="3cqZAo" node="4tIZ4QIk1s_" resolve="config" />
+              </node>
+              <node concept="2S8uIT" id="6BNByWj1JF0" role="2OqNvi">
                 <ref role="2S8YL0" to="tzyt:7QgqANUCWGQ" resolve="checkSignedOverflow" />
               </node>
             </node>
@@ -2844,7 +2859,7 @@
                 <ref role="3cqZAo" node="5EwdfGVhSRV" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6KXBYUqLeJt" role="37wK5m">
-                <property role="Xl_RC" value="SignedOverflow" />
+                <property role="Xl_RC" value="ConversionOverflow" />
               </node>
               <node concept="Xl_RD" id="6KXBYUqLeJu" role="37wK5m">
                 <property role="Xl_RC" value="libCall2" />

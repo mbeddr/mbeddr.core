@@ -60,7 +60,6 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -100,11 +99,6 @@
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing">
-      <concept id="1348611803040004605" name="com.mbeddr.analyses.cbmc.testing.structure.GeneratorOutputPath" flags="ng" index="QFwaR">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
-      </concept>
       <concept id="4791280061046124023" name="com.mbeddr.analyses.cbmc.testing.structure.CBMCCounterexampleStateTest" flags="ng" index="38rIoz">
         <property id="4791280061046124024" name="nodeKind" index="38rIoG" />
         <property id="4791280061046139065" name="nodeValue" index="38rMdH" />
@@ -122,9 +116,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD9" />
-        <property id="559557797393021807" name="stereotype" index="BaGAQ" />
-        <property id="559557797393017702" name="name" index="BaHAX" />
+        <property id="559557797393041554" name="fqName" index="BaBD8" />
+        <property id="559557797393021807" name="stereotype" index="BaGAP" />
+        <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -401,32 +395,15 @@
       <node concept="3clFbS" id="5djBfpcTb1u" role="3clF47">
         <node concept="3clFbF" id="5djBfpcTb1v" role="3cqZAp">
           <node concept="BaHAS" id="5djBfpcTb1w" role="3clFbG">
-            <property role="BaBD9" value="test.analyses.cbmc.testcode.counterexample.mbeddr.cor" />
-            <property role="BaHAX" value="test.analyses.cbmc.testcode.counterexample.mbeddr.components" />
-            <property role="BaGAQ" value="" />
-          </node>
-        </node>
-      </node>
-      <node concept="H_c77" id="5djBfpcTb1t" role="3clF45" />
-    </node>
-    <node concept="2tJIrI" id="5djBfpcTa1$" role="jymVt" />
-    <node concept="2YIFZL" id="5djBfpcTbJN" role="jymVt">
-      <property role="TrG5h" value="generatorOutputPath" />
-      <property role="IEkAT" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3clFbS" id="5djBfpcTbJo" role="3clF47">
-        <node concept="3clFbF" id="5djBfpcTbJp" role="3cqZAp">
-          <node concept="QFwaR" id="5djBfpcTbJq" role="3clFbG">
-            <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.core" />
+            <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.cor" />
             <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.components" />
             <property role="BaGAP" value="" />
           </node>
         </node>
       </node>
-      <node concept="17QB3L" id="5djBfpcTbJn" role="3clF45" />
+      <node concept="H_c77" id="5djBfpcTb1t" role="3clF45" />
     </node>
-    <node concept="2tJIrI" id="5djBfpcTbIX" role="jymVt" />
+    <node concept="2tJIrI" id="44EVd0VOHS_" role="jymVt" />
   </node>
   <node concept="1lH9Xt" id="3jtKiJDjpoc">
     <property role="TrG5h" value="StatefulComponents" />

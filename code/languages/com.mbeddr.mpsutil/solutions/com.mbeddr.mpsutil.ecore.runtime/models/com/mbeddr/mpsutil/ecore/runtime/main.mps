@@ -294,6 +294,7 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
@@ -5772,6 +5773,23 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="6rwswZweLGj" role="3cqZAp">
+              <node concept="3cpWsn" id="6rwswZweLGk" role="3cpWs9">
+                <property role="TrG5h" value="classEMF" />
+                <node concept="3uibUv" id="6rwswZweLGl" role="1tU5fm">
+                  <ref role="3uigEE" to="iuoz:~EClass" resolve="EClass" />
+                </node>
+                <node concept="1rXfSq" id="5UFcQN2$BTg" role="33vP2m">
+                  <ref role="37wK5l" node="5UFcQN2$1Bj" resolve="findClassInMetaModel" />
+                  <node concept="37vLTw" id="5UFcQN2$C3X" role="37wK5m">
+                    <ref role="3cqZAo" node="5UFcQN2zPGa" resolve="emfMetaModel" />
+                  </node>
+                  <node concept="37vLTw" id="5UFcQN2$CcM" role="37wK5m">
+                    <ref role="3cqZAo" node="5UFcQN2zULB" resolve="conceptOfNode" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="5UFcQN2$yAn" role="3cqZAp">
               <node concept="3cpWsn" id="5UFcQN2$yAo" role="3cpWs9">
                 <property role="TrG5h" value="classInstance" />
@@ -5784,16 +5802,27 @@
                   </node>
                   <node concept="liA8E" id="5UFcQN2$BIV" role="2OqNvi">
                     <ref role="37wK5l" to="iuoz:~EFactory.create(org.eclipse.emf.ecore.EClass):org.eclipse.emf.ecore.EObject" resolve="create" />
-                    <node concept="1rXfSq" id="5UFcQN2$BTg" role="37wK5m">
-                      <ref role="37wK5l" node="5UFcQN2$1Bj" resolve="findClassInMetaModel" />
-                      <node concept="37vLTw" id="5UFcQN2$C3X" role="37wK5m">
-                        <ref role="3cqZAo" node="5UFcQN2zPGa" resolve="emfMetaModel" />
-                      </node>
-                      <node concept="37vLTw" id="5UFcQN2$CcM" role="37wK5m">
-                        <ref role="3cqZAo" node="5UFcQN2zULB" resolve="conceptOfNode" />
-                      </node>
+                    <node concept="37vLTw" id="6rwswZweLZg" role="37wK5m">
+                      <ref role="3cqZAo" node="6rwswZweLGk" resolve="classEMF" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6rwswZweKH3" role="3cqZAp">
+              <node concept="1rXfSq" id="6rwswZweKH1" role="3clFbG">
+                <ref role="37wK5l" node="6rwswZwe4C3" resolve="addChildren" />
+                <node concept="37vLTw" id="6rwswZweKSJ" role="37wK5m">
+                  <ref role="3cqZAo" node="7piQlifDc_a" resolve="nod" />
+                </node>
+                <node concept="37vLTw" id="6rwswZweLdO" role="37wK5m">
+                  <ref role="3cqZAo" node="5UFcQN2$yAo" resolve="classInstance" />
+                </node>
+                <node concept="37vLTw" id="6rwswZweMbt" role="37wK5m">
+                  <ref role="3cqZAo" node="6rwswZweLGk" resolve="classEMF" />
+                </node>
+                <node concept="37vLTw" id="3nnodv4XYLS" role="37wK5m">
+                  <ref role="3cqZAo" node="4ss4q8fK0b0" resolve="factoryInstance" />
                 </node>
               </node>
             </node>
@@ -5825,30 +5854,6 @@
               <ref role="3cqZAo" node="57zF9H8JT$w" resolve="mdl" />
             </node>
             <node concept="2SmgA7" id="7piQlifDgq9" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="7ocGcwwXs9o" role="3cqZAp">
-          <node concept="2OqwBi" id="7ocGcwwXs9l" role="3clFbG">
-            <node concept="10M0yZ" id="7ocGcwwXs9m" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="7ocGcwwXs9n" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="7ocGcwwXuEI" role="37wK5m">
-                <node concept="Xl_RD" id="7ocGcwwXuWd" role="3uHU7B">
-                  <property role="Xl_RC" value="contents of resource" />
-                </node>
-                <node concept="2OqwBi" id="7ocGcwwXtB$" role="3uHU7w">
-                  <node concept="37vLTw" id="7ocGcwwXtoE" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5UFcQN2$npH" resolve="modelInstanceResource" />
-                  </node>
-                  <node concept="liA8E" id="7ocGcwwXtV6" role="2OqNvi">
-                    <ref role="37wK5l" to="roop:~Resource.getContents():org.eclipse.emf.common.util.EList" resolve="getContents" />
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="SfApY" id="4ss4q8fLpjI" role="3cqZAp">
@@ -5999,6 +6004,212 @@
       <node concept="37vLTG" id="5UFcQN2$3$a" role="3clF46">
         <property role="TrG5h" value="name" />
         <node concept="17QB3L" id="5UFcQN2$4xU" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6rwswZwe2rN" role="jymVt" />
+    <node concept="3clFb_" id="6rwswZwe4C3" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="addChildren" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6rwswZwe4C6" role="3clF47">
+        <node concept="1DcWWT" id="6rwswZweezo" role="3cqZAp">
+          <node concept="3cpWsn" id="6rwswZweezp" role="1Duv9x">
+            <property role="TrG5h" value="child" />
+            <node concept="3Tqbb2" id="6rwswZweeIV" role="1tU5fm" />
+          </node>
+          <node concept="2OqwBi" id="6rwswZwefxI" role="1DdaDG">
+            <node concept="37vLTw" id="6rwswZwefcQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="6rwswZwe6f5" resolve="instanceMPS" />
+            </node>
+            <node concept="32TBzR" id="6rwswZwefM1" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="6rwswZweezr" role="2LFqv$">
+            <node concept="3cpWs8" id="6rwswZweErw" role="3cqZAp">
+              <node concept="3cpWsn" id="6rwswZweErx" role="3cpWs9">
+                <property role="TrG5h" value="childReference" />
+                <node concept="3uibUv" id="6rwswZweEry" role="1tU5fm">
+                  <ref role="3uigEE" to="iuoz:~EReference" resolve="EReference" />
+                </node>
+                <node concept="1rXfSq" id="6rwswZweEOt" role="33vP2m">
+                  <ref role="37wK5l" node="6rwswZwekvK" resolve="findReference" />
+                  <node concept="2OqwBi" id="6rwswZweG3D" role="37wK5m">
+                    <node concept="2OqwBi" id="6rwswZweFs2" role="2Oq$k0">
+                      <node concept="2JrnkZ" id="6rwswZweFcF" role="2Oq$k0">
+                        <node concept="37vLTw" id="6rwswZweF1k" role="2JrQYb">
+                          <ref role="3cqZAo" node="6rwswZweezp" resolve="child" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6rwswZweFPd" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6rwswZweGEE" role="2OqNvi">
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="6rwswZweGVF" role="37wK5m">
+                    <ref role="3cqZAo" node="6rwswZweh9P" resolve="classEMF" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3nnodv4XXvu" role="3cqZAp">
+              <node concept="2OqwBi" id="3nnodv4XXMR" role="3clFbG">
+                <node concept="37vLTw" id="3nnodv4XXvs" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6rwswZwedcA" resolve="instanceEMF" />
+                </node>
+                <node concept="liA8E" id="3nnodv4XY9w" role="2OqNvi">
+                  <ref role="37wK5l" to="iuoz:~EObject.eSet(org.eclipse.emf.ecore.EStructuralFeature,java.lang.Object):void" resolve="eSet" />
+                  <node concept="37vLTw" id="3nnodv4XYmw" role="37wK5m">
+                    <ref role="3cqZAo" node="6rwswZweErx" resolve="childReference" />
+                  </node>
+                  <node concept="2OqwBi" id="3nnodv4Y0yR" role="37wK5m">
+                    <node concept="37vLTw" id="3nnodv4Y0es" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3nnodv4XYQH" resolve="factoryInstance" />
+                    </node>
+                    <node concept="liA8E" id="3nnodv4Y19V" role="2OqNvi">
+                      <ref role="37wK5l" to="iuoz:~EFactory.create(org.eclipse.emf.ecore.EClass):org.eclipse.emf.ecore.EObject" resolve="create" />
+                      <node concept="2OqwBi" id="3nnodv4Y237" role="37wK5m">
+                        <node concept="37vLTw" id="3nnodv4Y1E5" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6rwswZweErx" resolve="childReference" />
+                        </node>
+                        <node concept="liA8E" id="3nnodv4Y30u" role="2OqNvi">
+                          <ref role="37wK5l" to="iuoz:~EReference.getEReferenceType():org.eclipse.emf.ecore.EClass" resolve="getEReferenceType" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6rwswZwe3zb" role="1B3o_S" />
+      <node concept="3cqZAl" id="6rwswZwe3CM" role="3clF45" />
+      <node concept="37vLTG" id="6rwswZwe6f5" role="3clF46">
+        <property role="TrG5h" value="instanceMPS" />
+        <node concept="3Tqbb2" id="6rwswZwe6f4" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6rwswZwedcA" role="3clF46">
+        <property role="TrG5h" value="instanceEMF" />
+        <node concept="3uibUv" id="6rwswZweef6" role="1tU5fm">
+          <ref role="3uigEE" to="iuoz:~EObject" resolve="EObject" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6rwswZweh9P" role="3clF46">
+        <property role="TrG5h" value="classEMF" />
+        <node concept="3uibUv" id="6rwswZweicm" role="1tU5fm">
+          <ref role="3uigEE" to="iuoz:~EClass" resolve="EClass" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3nnodv4XYQH" role="3clF46">
+        <property role="TrG5h" value="factoryInstance" />
+        <node concept="3uibUv" id="3nnodv4Y045" role="1tU5fm">
+          <ref role="3uigEE" to="iuoz:~EFactory" resolve="EFactory" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6rwswZweieP" role="jymVt" />
+    <node concept="3clFb_" id="6rwswZwekvK" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="findReference" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6rwswZwekvN" role="3clF47">
+        <node concept="3cpWs8" id="6rwswZweocB" role="3cqZAp">
+          <node concept="3cpWsn" id="6rwswZweocC" role="3cpWs9">
+            <property role="TrG5h" value="retReference" />
+            <node concept="3uibUv" id="6rwswZweocD" role="1tU5fm">
+              <ref role="3uigEE" to="iuoz:~EReference" resolve="EReference" />
+            </node>
+            <node concept="10Nm6u" id="6rwswZweoqe" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="1DcWWT" id="6rwswZweqf4" role="3cqZAp">
+          <node concept="3clFbS" id="6rwswZweqf6" role="2LFqv$">
+            <node concept="3cpWs8" id="55i9OtrxH_z" role="3cqZAp">
+              <node concept="3cpWsn" id="55i9OtrxH_A" role="3cpWs9">
+                <property role="TrG5h" value="referenceNm" />
+                <node concept="17QB3L" id="55i9OtrxH_x" role="1tU5fm" />
+                <node concept="2OqwBi" id="55i9OtryAxE" role="33vP2m">
+                  <node concept="2OqwBi" id="55i9OtrxI6e" role="2Oq$k0">
+                    <node concept="37vLTw" id="55i9OtrxHLn" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6rwswZweqf7" resolve="reference" />
+                    </node>
+                    <node concept="liA8E" id="55i9OtryAdx" role="2OqNvi">
+                      <ref role="37wK5l" to="iuoz:~EReference.getEReferenceType():org.eclipse.emf.ecore.EClass" resolve="getEReferenceType" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="55i9OtryBlR" role="2OqNvi">
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="6rwswZweu9M" role="3cqZAp">
+              <node concept="3clFbS" id="6rwswZweu9O" role="3clFbx">
+                <node concept="3clFbF" id="6rwswZweykN" role="3cqZAp">
+                  <node concept="37vLTI" id="6rwswZwe$r0" role="3clFbG">
+                    <node concept="37vLTw" id="6rwswZwe$H3" role="37vLTx">
+                      <ref role="3cqZAo" node="6rwswZweqf7" resolve="reference" />
+                    </node>
+                    <node concept="37vLTw" id="6rwswZwe$4J" role="37vLTJ">
+                      <ref role="3cqZAo" node="6rwswZweocC" resolve="retReference" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6rwswZwevlC" role="3clFbw">
+                <node concept="37vLTw" id="55i9OtrxJoH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="55i9OtrxH_A" resolve="referenceNm" />
+                </node>
+                <node concept="liA8E" id="6rwswZwewaz" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="37vLTw" id="6rwswZwewoz" role="37wK5m">
+                    <ref role="3cqZAo" node="6rwswZwel_7" resolve="referenceName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="6rwswZweqf7" role="1Duv9x">
+            <property role="TrG5h" value="reference" />
+            <node concept="3uibUv" id="6rwswZwert6" role="1tU5fm">
+              <ref role="3uigEE" to="iuoz:~EReference" resolve="EReference" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6rwswZwesV9" role="1DdaDG">
+            <node concept="37vLTw" id="6rwswZwes9x" role="2Oq$k0">
+              <ref role="3cqZAo" node="6rwswZwemKO" resolve="classEMF" />
+            </node>
+            <node concept="liA8E" id="6rwswZwetsU" role="2OqNvi">
+              <ref role="37wK5l" to="iuoz:~EClass.getEReferences():org.eclipse.emf.common.util.EList" resolve="getEReferences" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6rwswZweoE1" role="3cqZAp">
+          <node concept="37vLTw" id="6rwswZweoQF" role="3cqZAk">
+            <ref role="3cqZAo" node="6rwswZweocC" resolve="retReference" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6rwswZwejmN" role="1B3o_S" />
+      <node concept="3uibUv" id="6rwswZwekvC" role="3clF45">
+        <ref role="3uigEE" to="iuoz:~EReference" resolve="EReference" />
+      </node>
+      <node concept="37vLTG" id="6rwswZwel_7" role="3clF46">
+        <property role="TrG5h" value="referenceName" />
+        <node concept="17QB3L" id="6rwswZwel_6" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6rwswZwemKO" role="3clF46">
+        <property role="TrG5h" value="classEMF" />
+        <node concept="3uibUv" id="6rwswZwenNm" role="1tU5fm">
+          <ref role="3uigEE" to="iuoz:~EClass" resolve="EClass" />
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="7piQlifCV9O" role="1B3o_S" />
@@ -6569,6 +6780,20 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="3nnodv4ZOi7" role="3cqZAp">
+              <node concept="1rXfSq" id="3nnodv4ZOi5" role="3clFbG">
+                <ref role="37wK5l" node="3nnodv4YVoe" resolve="addChildren" />
+                <node concept="37vLTw" id="3nnodv4ZOGR" role="37wK5m">
+                  <ref role="3cqZAo" node="2W468ixjbih" resolve="nodeInstance" />
+                </node>
+                <node concept="2GrUjf" id="3nnodv4ZOXv" role="37wK5m">
+                  <ref role="2Gs0qQ" node="2W468ixi79g" resolve="object" />
+                </node>
+                <node concept="37vLTw" id="3nnodv4ZPoh" role="37wK5m">
+                  <ref role="3cqZAo" node="70ujcM$dG3h" resolve="languageStructure" />
+                </node>
+              </node>
+            </node>
             <node concept="1QHqEO" id="2W468ixkpAh" role="3cqZAp">
               <node concept="1QHqEC" id="2W468ixkpAj" role="1QHqEI">
                 <node concept="3clFbS" id="2W468ixkpAl" role="1bW5cS">
@@ -6759,6 +6984,240 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2W468ixi0sM" role="jymVt" />
+    <node concept="3clFb_" id="3nnodv4YVoe" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="addChildren" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="3nnodv4YVoh" role="3clF47">
+        <node concept="1DcWWT" id="3nnodv4YXzV" role="3cqZAp">
+          <node concept="3cpWsn" id="3nnodv4YXzW" role="1Duv9x">
+            <property role="TrG5h" value="child" />
+            <node concept="3uibUv" id="3nnodv4YZEq" role="1tU5fm">
+              <ref role="3uigEE" to="iuoz:~EObject" resolve="EObject" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3nnodv4YYxy" role="1DdaDG">
+            <node concept="37vLTw" id="3nnodv4YYgE" role="2Oq$k0">
+              <ref role="3cqZAo" node="3nnodv4YWne" resolve="instanceEMF" />
+            </node>
+            <node concept="liA8E" id="3nnodv4YZXp" role="2OqNvi">
+              <ref role="37wK5l" to="iuoz:~EObject.eContents():org.eclipse.emf.common.util.EList" resolve="eContents" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="3nnodv4YXzY" role="2LFqv$">
+            <node concept="3clFbJ" id="3nnodv50jIE" role="3cqZAp">
+              <node concept="3clFbS" id="3nnodv50jIG" role="3clFbx">
+                <node concept="3cpWs8" id="6xcAMXIWk0H" role="3cqZAp">
+                  <node concept="3cpWsn" id="6xcAMXIWk0I" role="3cpWs9">
+                    <property role="TrG5h" value="childReference" />
+                    <node concept="3uibUv" id="6xcAMXIWk0J" role="1tU5fm">
+                      <ref role="3uigEE" to="iuoz:~EReference" resolve="EReference" />
+                    </node>
+                    <node concept="1rXfSq" id="6xcAMXIWBdV" role="33vP2m">
+                      <ref role="37wK5l" node="6xcAMXIWnN6" resolve="findReference" />
+                      <node concept="37vLTw" id="6xcAMXIWBzK" role="37wK5m">
+                        <ref role="3cqZAo" node="3nnodv4YWne" resolve="instanceEMF" />
+                      </node>
+                      <node concept="2OqwBi" id="6xcAMXIWD53" role="37wK5m">
+                        <node concept="2OqwBi" id="6xcAMXIWCaz" role="2Oq$k0">
+                          <node concept="37vLTw" id="6xcAMXIWBW4" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3nnodv4YXzW" resolve="child" />
+                          </node>
+                          <node concept="liA8E" id="6xcAMXIWCDr" role="2OqNvi">
+                            <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="6xcAMXIWE0J" role="2OqNvi">
+                          <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="3nnodv4Z46_" role="3cqZAp">
+                  <node concept="2OqwBi" id="3nnodv4Z4Oz" role="3clFbG">
+                    <node concept="2JrnkZ" id="3nnodv4Z4Fi" role="2Oq$k0">
+                      <node concept="37vLTw" id="3nnodv4Z46$" role="2JrQYb">
+                        <ref role="3cqZAo" node="3nnodv4YVUL" resolve="instanceMPS" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3nnodv4Zg89" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
+                      <node concept="2OqwBi" id="6xcAMXIWl7u" role="37wK5m">
+                        <node concept="37vLTw" id="6xcAMXIWk$p" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6xcAMXIWk0I" resolve="childReference" />
+                        </node>
+                        <node concept="liA8E" id="6xcAMXIWlH$" role="2OqNvi">
+                          <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="3nnodv4ZmoL" role="37wK5m">
+                        <node concept="1rXfSq" id="3nnodv4ZjtQ" role="2Oq$k0">
+                          <ref role="37wK5l" node="2W468ixiaLU" resolve="findConceptByName" />
+                          <node concept="37vLTw" id="3nnodv4ZjKn" role="37wK5m">
+                            <ref role="3cqZAo" node="3nnodv4Zij$" resolve="languageStructure" />
+                          </node>
+                          <node concept="2OqwBi" id="3nnodv4ZlgX" role="37wK5m">
+                            <node concept="2OqwBi" id="3nnodv4ZkeC" role="2Oq$k0">
+                              <node concept="37vLTw" id="3nnodv4ZjXL" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3nnodv4YXzW" resolve="child" />
+                              </node>
+                              <node concept="liA8E" id="3nnodv4ZkHo" role="2OqNvi">
+                                <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="3nnodv4ZmcD" role="2OqNvi">
+                              <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="LFhST" id="3nnodv4ZmUX" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3nnodv50m1h" role="3clFbw">
+                <node concept="2OqwBi" id="3nnodv50kWe" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3nnodv50ksr" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3nnodv50k8r" role="2Oq$k0">
+                      <node concept="37vLTw" id="3nnodv50jU2" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3nnodv4YXzW" resolve="child" />
+                      </node>
+                      <node concept="liA8E" id="3nnodv50kjX" role="2OqNvi">
+                        <ref role="37wK5l" to="iuoz:~EObject.eContainer():org.eclipse.emf.ecore.EObject" resolve="eContainer" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3nnodv50kCO" role="2OqNvi">
+                      <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3nnodv50lLJ" role="2OqNvi">
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3nnodv50mRn" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="2OqwBi" id="3nnodv50ozC" role="37wK5m">
+                    <node concept="2OqwBi" id="3nnodv50nEx" role="2Oq$k0">
+                      <node concept="2JrnkZ" id="3nnodv50nvE" role="2Oq$k0">
+                        <node concept="37vLTw" id="3nnodv50n6D" role="2JrQYb">
+                          <ref role="3cqZAo" node="3nnodv4YVUL" resolve="instanceMPS" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3nnodv50olk" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3nnodv50oSh" role="2OqNvi">
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="3nnodv4YUPP" role="1B3o_S" />
+      <node concept="3cqZAl" id="3nnodv4YUW9" role="3clF45" />
+      <node concept="37vLTG" id="3nnodv4YVUL" role="3clF46">
+        <property role="TrG5h" value="instanceMPS" />
+        <node concept="3Tqbb2" id="3nnodv4YVUK" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3nnodv4YWne" role="3clF46">
+        <property role="TrG5h" value="instanceEMF" />
+        <node concept="3uibUv" id="3nnodv4YWQy" role="1tU5fm">
+          <ref role="3uigEE" to="iuoz:~EObject" resolve="EObject" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3nnodv4Zij$" role="3clF46">
+        <property role="TrG5h" value="languageStructure" />
+        <node concept="H_c77" id="3nnodv4Zjl9" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6xcAMXIWlQn" role="jymVt" />
+    <node concept="3clFb_" id="6xcAMXIWnN6" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="findReference" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6xcAMXIWnN9" role="3clF47">
+        <node concept="1DcWWT" id="6xcAMXIWpUB" role="3cqZAp">
+          <node concept="3cpWsn" id="6xcAMXIWpUC" role="1Duv9x">
+            <property role="TrG5h" value="ref" />
+            <node concept="3uibUv" id="6xcAMXIWq9d" role="1tU5fm">
+              <ref role="3uigEE" to="iuoz:~EReference" resolve="EReference" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6xcAMXIWrXI" role="1DdaDG">
+            <node concept="2OqwBi" id="6xcAMXIWr7c" role="2Oq$k0">
+              <node concept="37vLTw" id="6xcAMXIWqQ8" role="2Oq$k0">
+                <ref role="3cqZAo" node="6xcAMXIWovA" resolve="instanceEMF" />
+              </node>
+              <node concept="liA8E" id="6xcAMXIWr_W" role="2OqNvi">
+                <ref role="37wK5l" to="iuoz:~EObject.eClass():org.eclipse.emf.ecore.EClass" resolve="eClass" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6xcAMXIWswA" role="2OqNvi">
+              <ref role="37wK5l" to="iuoz:~EClass.getEReferences():org.eclipse.emf.common.util.EList" resolve="getEReferences" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6xcAMXIWpUE" role="2LFqv$">
+            <node concept="3clFbJ" id="6xcAMXIWtc_" role="3cqZAp">
+              <node concept="2OqwBi" id="6xcAMXIWxO9" role="3clFbw">
+                <node concept="2OqwBi" id="6xcAMXIWwHJ" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6xcAMXIWvTO" role="2Oq$k0">
+                    <node concept="37vLTw" id="6xcAMXIWtjk" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6xcAMXIWpUC" resolve="ref" />
+                    </node>
+                    <node concept="liA8E" id="6xcAMXIWwr1" role="2OqNvi">
+                      <ref role="37wK5l" to="iuoz:~EReference.getEReferenceType():org.eclipse.emf.ecore.EClass" resolve="getEReferenceType" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6xcAMXIWx_3" role="2OqNvi">
+                    <ref role="37wK5l" to="iuoz:~ENamedElement.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6xcAMXIWyFi" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="37vLTw" id="6xcAMXIWyUe" role="37wK5m">
+                    <ref role="3cqZAo" node="6xcAMXIWp26" resolve="referenceTypeName" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="6xcAMXIWtcB" role="3clFbx">
+                <node concept="3cpWs6" id="6xcAMXIWz7h" role="3cqZAp">
+                  <node concept="37vLTw" id="6xcAMXIWzks" role="3cqZAk">
+                    <ref role="3cqZAo" node="6xcAMXIWpUC" resolve="ref" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6xcAMXIW_EZ" role="3cqZAp">
+          <node concept="10Nm6u" id="6xcAMXIW_LP" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6xcAMXIWn5U" role="1B3o_S" />
+      <node concept="3uibUv" id="6xcAMXIWnMT" role="3clF45">
+        <ref role="3uigEE" to="iuoz:~EReference" resolve="EReference" />
+      </node>
+      <node concept="37vLTG" id="6xcAMXIWovA" role="3clF46">
+        <property role="TrG5h" value="instanceEMF" />
+        <node concept="3uibUv" id="6xcAMXIWov_" role="1tU5fm">
+          <ref role="3uigEE" to="iuoz:~EObject" resolve="EObject" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6xcAMXIWp26" role="3clF46">
+        <property role="TrG5h" value="referenceTypeName" />
+        <node concept="17QB3L" id="6xcAMXIWpBp" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3clFb_" id="5DtuIW1YLWg" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getInstanceResource" />

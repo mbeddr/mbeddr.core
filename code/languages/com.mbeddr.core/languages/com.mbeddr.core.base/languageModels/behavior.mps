@@ -57,6 +57,7 @@
     <import index="gfi" ref="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)" />
     <import index="7a0s" ref="r:2af017c2-293f-4ebb-99f3-81e353b3d6e6(jetbrains.mps.editor.runtime)" />
     <import index="m52l" ref="r:c3ac4b0a-a487-4481-b87d-bcfbfdd6a85d(jetbrains.mps.lang.editor.imageGen.plugin)" />
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
@@ -447,6 +448,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -503,7 +505,6 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -1547,12 +1548,12 @@
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getConceptToBeCounted" />
       <node concept="3Tm1VV" id="6brBMefSzRt" role="1B3o_S" />
-      <node concept="3THzug" id="6brBMefSzRw" role="3clF45" />
+      <node concept="3bZ5Sz" id="4yCyDr3h1JH" role="3clF45" />
       <node concept="3clFbS" id="6brBMefSzRv" role="3clF47">
         <node concept="3clFbF" id="6brBMefSzRx" role="3cqZAp">
           <node concept="2OqwBi" id="6brBMefSzRR" role="3clFbG">
             <node concept="13iPFW" id="6brBMefSzRy" role="2Oq$k0" />
-            <node concept="3NT_Vc" id="6brBMefSzRX" role="2OqNvi" />
+            <node concept="2yIwOk" id="4yCyDr3h1VI" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -4039,6 +4040,54 @@
       <node concept="A3Dl8" id="6clJcrJXo2E" role="3clF45">
         <node concept="3Tqbb2" id="6clJcrJXo2F" role="A3Ik2" />
       </node>
+      <node concept="P$JXv" id="79$zShlSQKj" role="lGtFl">
+        <node concept="TZ5HI" id="79$zShlSQKk" role="3nqlJM">
+          <node concept="TZ5HA" id="79$zShlSQKl" role="3HnX3l" />
+        </node>
+        <node concept="TZ5HA" id="79$zShlSQUO" role="TZ5H$">
+          <node concept="1dT_AC" id="79$zShlSQUP" role="1dT_Ay">
+            <property role="1dT_AB" value="Please consider using and overwriting the new method overload that takes a concept instead of conceptNode" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="79$zShlSQZf" role="TZ5H$">
+          <node concept="1dT_AC" id="79$zShlSQZg" role="1dT_Ay">
+            <property role="1dT_AB" value="This method will be removed in future releases!" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="79$zShlSQKm" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="79$zShlSHxZ" role="13h7CS">
+      <property role="TrG5h" value="visibleContentsOfType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <node concept="37vLTG" id="79$zShlSHy0" role="3clF46">
+        <property role="TrG5h" value="targetConcept" />
+        <node concept="3bZ5Sz" id="79$zShlSLOa" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="79$zShlSHy2" role="1B3o_S" />
+      <node concept="3clFbS" id="79$zShlSHy3" role="3clF47">
+        <node concept="3clFbF" id="79$zShlSQm2" role="3cqZAp">
+          <node concept="2YIFZM" id="79$zShlSQvq" role="3clFbG">
+            <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+            <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+            <node concept="BsUDl" id="79$zShlSNxj" role="37wK5m">
+              <ref role="37wK5l" node="6clJcrJXo2_" resolve="visibleContentsOfType" />
+              <node concept="2OqwBi" id="79$zShlSPTy" role="37wK5m">
+                <node concept="37vLTw" id="79$zShlSO$h" role="2Oq$k0">
+                  <ref role="3cqZAo" node="79$zShlSHy0" resolve="targetConcept" />
+                </node>
+                <node concept="FGMqu" id="79$zShlSQbs" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="3jEbQoczdtt" role="3clF45">
+        <ref role="3uigEE" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+      </node>
     </node>
     <node concept="13i0hz" id="7Vd878lThb_" role="13h7CS">
       <property role="TrG5h" value="hasVisibleContentsOfType" />
@@ -5914,14 +5963,14 @@
       <property role="TrG5h" value="getConceptToBeCounted" />
       <ref role="13i0hy" node="6brBMefSzRs" resolve="getConceptToBeCounted" />
       <node concept="3clFbS" id="2XRfpKW0hjy" role="3clF47">
-        <node concept="3clFbF" id="2XRfpKW0iDV" role="3cqZAp">
-          <node concept="3TUQnm" id="2XRfpKW0iDQ" role="3clFbG">
-            <ref role="3TV0OU" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
+        <node concept="3clFbF" id="4yCyDr3hDco" role="3cqZAp">
+          <node concept="35c_gC" id="4yCyDr3hDcl" role="3clFbG">
+            <ref role="35c_gD" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
           </node>
         </node>
       </node>
-      <node concept="3THzug" id="2XRfpKW0hkb" role="3clF45" />
       <node concept="3Tm1VV" id="2XRfpKW0hkc" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="4yCyDr3hDkO" role="3clF45" />
     </node>
     <node concept="13hLZK" id="6clJcrJZN1l" role="13h7CW">
       <node concept="3clFbS" id="6clJcrJZN1m" role="2VODD2" />
