@@ -10372,6 +10372,17 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="6gqrH$0ihYU" role="3bR37C">
+          <node concept="3bR9La" id="6gqrH$0ihYV" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="3JmJHJb_0E1" resolve="com.mbeddr.analyses.spin.rt" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6gqrH$0ihYW" role="3bR37C">
+          <node concept="1Busua" id="6gqrH$0ihYX" role="1SiIV1">
+            <ref role="1Busuk" node="WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3JmJHJb$M36" role="2G$12L">
         <property role="BnDLt" value="true" />

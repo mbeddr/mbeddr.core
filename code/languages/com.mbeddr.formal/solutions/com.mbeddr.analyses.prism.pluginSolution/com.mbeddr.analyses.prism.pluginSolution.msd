@@ -14,7 +14,7 @@
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
-    <dependency reexport="false">e4586d76-86eb-4b19-862c-e5375e853c19(com.mbeddr.analyses.spin.promela.rt)</dependency>
+    <dependency reexport="false">e4586d76-86eb-4b19-862c-e5375e853c19(com.mbeddr.analyses.spin.rt)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
