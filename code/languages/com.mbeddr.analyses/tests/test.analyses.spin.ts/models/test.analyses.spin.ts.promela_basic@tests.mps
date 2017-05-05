@@ -52,11 +52,22 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
+        <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
+      <concept id="1214846310980" name="jetbrains.mps.lang.test.structure.AbstractNodeAssert" flags="nn" index="3quTHu">
+        <child id="1214846370530" name="nodeToCheck" index="3qv8fS" />
+      </concept>
+      <concept id="1210673684636" name="jetbrains.mps.lang.test.structure.TestNodeAnnotation" flags="ng" index="3xLA65" />
+      <concept id="1210674524691" name="jetbrains.mps.lang.test.structure.TestNodeReference" flags="nn" index="3xONca">
+        <reference id="1210674534086" name="declaration" index="3xOPvv" />
+      </concept>
+      <concept id="1215075719096" name="jetbrains.mps.lang.test.structure.CheckNodeForErrors" flags="nn" index="3Ca1qy" />
+      <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela">
       <concept id="8747172231534849181" name="com.mbeddr.analyses.spin.promela.structure.ChanType" flags="ng" index="2CFTTh" />
@@ -93,12 +104,36 @@
       <concept id="799927705160539981" name="com.mbeddr.analyses.spin.promela.structure.ProcType" flags="ng" index="1N3Vlf" />
       <concept id="799927705160518134" name="com.mbeddr.analyses.spin.promela.structure.PromelaModel" flags="ng" index="1N3YfO" />
     </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
+      </concept>
+    </language>
+    <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
+      <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL" />
+    </language>
+    <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
+        <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
+      </concept>
+      <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
+        <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -142,6 +177,29 @@
   </registry>
   <node concept="1lH9Xt" id="1RC3LaKxxDS">
     <property role="TrG5h" value="Types" />
+    <property role="3OwPAg" value="false" />
+    <node concept="1LZb2c" id="D5Owvn3ucl" role="1SL9yI">
+      <property role="TrG5h" value="test1" />
+      <node concept="3cqZAl" id="D5Owvn3ucm" role="3clF45" />
+      <node concept="3clFbS" id="D5Owvn3ucq" role="3clF47">
+        <node concept="3Ca1qy" id="D5Owvn3un5" role="3cqZAp">
+          <node concept="3xONca" id="D5Owvn3unh" role="3qv8fS">
+            <ref role="3xOPvv" node="D5Owvn3ulJ" resolve="only_one_mtype" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="D5Owvn3unv" role="1SL9yI">
+      <property role="TrG5h" value="test2" />
+      <node concept="3cqZAl" id="D5Owvn3unw" role="3clF45" />
+      <node concept="3clFbS" id="D5Owvn3unx" role="3clF47">
+        <node concept="3Ca1qy" id="D5Owvn3uny" role="3cqZAp">
+          <node concept="3xONca" id="D5Owvn3uxR" role="3qv8fS">
+            <ref role="3xOPvv" node="D5Owvn3uxP" resolve="test2" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1qefOq" id="1RC3LaKzdyq" role="1SKRRt">
       <node concept="1N3YfO" id="1RC3LaKzdyr" role="1qenE9">
         <property role="TrG5h" value="mtype" />
@@ -182,6 +240,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="3xLA65" id="D5Owvn3ulJ" role="lGtFl">
+          <property role="TrG5h" value="only_one_mtype" />
         </node>
       </node>
     </node>
@@ -249,6 +310,9 @@
         <node concept="2NXPZ9" id="1RC3LaK$OSh" role="N3F5h">
           <property role="TrG5h" value="empty_1483948680023_5" />
         </node>
+        <node concept="3xLA65" id="D5Owvn3uxP" role="lGtFl">
+          <property role="TrG5h" value="test2" />
+        </node>
       </node>
     </node>
   </node>
@@ -294,6 +358,11 @@
           <property role="TrG5h" value="empty_1483948680023_5" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2v9HqL" id="1vdVyJtxXV3">
+    <node concept="2Q9Fgs" id="1vdVyJtyjiw" role="2Q9xDr">
+      <node concept="2Q9FjX" id="1vdVyJtyjix" role="2Q9FjI" />
     </node>
   </node>
 </model>
