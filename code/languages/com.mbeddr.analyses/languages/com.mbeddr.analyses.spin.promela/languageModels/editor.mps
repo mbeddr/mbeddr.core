@@ -738,7 +738,7 @@
       <node concept="_tjkj" id="7YdkGnmUP7" role="3EZMnx">
         <node concept="3EZMnI" id="7YdkGnmUPh" role="_tjki">
           <node concept="3F0ifn" id="24G9CRyKkxn" role="3EZMnx">
-            <property role="3F0ifm" value="--&gt;" />
+            <property role="3F0ifm" value="-&gt;" />
           </node>
           <node concept="3F1sOY" id="24G9CRyKkxB" role="3EZMnx">
             <ref role="1NtTu8" to="ir22:24G9CRyKkpz" resolve="stmts" />
@@ -870,13 +870,11 @@
   <node concept="24kQdi" id="24G9CRyNRBg">
     <ref role="1XX52x" to="ir22:24G9CRyNRAe" resolve="ChanDeclaration" />
     <node concept="3EZMnI" id="1RC3LaKzeAM" role="2wV5jI">
+      <node concept="3F0ifn" id="4b_XKf43xXe" role="3EZMnx">
+        <property role="3F0ifm" value="chan" />
+      </node>
       <node concept="VPM3Z" id="1RC3LaKzeAO" role="3F10Kt">
         <property role="VOm3f" value="false" />
-      </node>
-      <node concept="1kIj98" id="1RC3LaKzeBd" role="3EZMnx">
-        <node concept="3F1sOY" id="1RC3LaKzeBn" role="1kIj9b">
-          <ref role="1NtTu8" to="ir22:7_$cGNhPCJs" resolve="chanType" />
-        </node>
       </node>
       <node concept="3F0A7n" id="1RC3LaKzeB_" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -886,14 +884,8 @@
           <node concept="3F0ifn" id="1RC3LaKzeCt" role="3EZMnx">
             <property role="3F0ifm" value="[" />
           </node>
-          <node concept="3F0A7n" id="1RC3LaKzeCE" role="3EZMnx">
+          <node concept="3F0A7n" id="4b_XKf44DmD" role="3EZMnx">
             <ref role="1NtTu8" to="ir22:24G9CRyNRAo" resolve="size" />
-            <node concept="11L4FC" id="1RC3LaKzZqi" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
-            <node concept="11LMrY" id="1RC3LaKzZuA" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
           </node>
           <node concept="3F0ifn" id="1RC3LaKzeCO" role="3EZMnx">
             <property role="3F0ifm" value="]" />
@@ -908,9 +900,6 @@
             </node>
           </node>
           <node concept="l2Vlx" id="1RC3LaKzeCd" role="2iSdaV" />
-          <node concept="VPM3Z" id="1RC3LaKzeCe" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
           <node concept="3F2HdR" id="1RC3LaKzeDu" role="3EZMnx">
             <property role="2czwfO" value="," />
             <ref role="1NtTu8" to="ir22:24G9CRyNRB9" resolve="types" />

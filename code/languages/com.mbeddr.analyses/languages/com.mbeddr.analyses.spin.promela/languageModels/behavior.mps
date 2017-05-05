@@ -107,6 +107,14 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -476,11 +484,10 @@
       <ref role="13i0hy" to="ywuz:1LDGRqyYkTX" resolve="getDeclaredType" />
       <node concept="3Tm1VV" id="24G9CRyO_9N" role="1B3o_S" />
       <node concept="3clFbS" id="24G9CRyO_9Q" role="3clF47">
-        <node concept="3clFbF" id="7_$cGNhPCK6" role="3cqZAp">
-          <node concept="2OqwBi" id="7_$cGNhPCQl" role="3clFbG">
-            <node concept="13iPFW" id="7_$cGNhPCK5" role="2Oq$k0" />
-            <node concept="3TrEf2" id="7_$cGNhPDGG" role="2OqNvi">
-              <ref role="3Tt5mk" to="ir22:7_$cGNhPCJs" resolve="chanType" />
+        <node concept="3clFbF" id="4b_XKf45cZP" role="3cqZAp">
+          <node concept="2pJPEk" id="4b_XKf45cZN" role="3clFbG">
+            <node concept="2pJPED" id="4b_XKf45d35" role="2pJPEn">
+              <ref role="2pJxaS" to="ir22:7_$cGNhMUMt" resolve="ChanType" />
             </node>
           </node>
         </node>
