@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.analyses.spin.ts" uuid="80045798-0454-4abc-89dc-14e79501c303" moduleVersion="0" compileInMPS="true">
+<solution name="test.analyses.spin.promela.ts" uuid="80045798-0454-4abc-89dc-14e79501c303" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -8,14 +8,13 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">877b0e90-e1a6-4468-970c-dcb3f49f95ed(com.mbeddr.analyses.spin.promela)</dependency>
-    <dependency reexport="false">2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:5d09074f-babf-4f2b-b78b-e9929af0f3be:com.mbeddr.analyses.base" version="0" />
     <language slang="l:6ded8a47-f30e-4acf-a5f2-a70ec5472558:com.mbeddr.analyses.base.verification_conditions" version="0" />
     <language slang="l:9aeff3a1-b145-418c-a75b-9a6e331d7333:com.mbeddr.analyses.spin" version="0" />
-    <language slang="l:17b818a8-8533-4efe-8f51-f532146ae66b:com.mbeddr.analyses.spin.c" version="0" />
-    <language slang="l:f027a490-7082-492e-99ce-dfe65d7342f7:com.mbeddr.analyses.spin.c.patterns" version="0" />
+    <language slang="l:17b818a8-8533-4efe-8f51-f532146ae66b:com.mbeddr.analyses.spin.c" version="-1" />
+    <language slang="l:f027a490-7082-492e-99ce-dfe65d7342f7:com.mbeddr.analyses.spin.c.patterns" version="-1" />
     <language slang="l:877b0e90-e1a6-4468-970c-dcb3f49f95ed:com.mbeddr.analyses.spin.promela" version="0" />
     <language slang="l:4ddb29eb-11e5-46c6-a894-6b8a4c38587d:com.mbeddr.analyses.spin.promela.patterns" version="0" />
     <language slang="l:53bab999-e9c3-428a-80be-fef5bed08f55:com.mbeddr.cc.trace" version="0" />
@@ -84,7 +83,6 @@
     <module reference="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" version="0" />
     <module reference="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" version="0" />
     <module reference="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" version="0" />
-    <module reference="2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
     <module reference="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
@@ -108,7 +106,7 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
-    <module reference="80045798-0454-4abc-89dc-14e79501c303(test.analyses.spin.ts)" version="0" />
+    <module reference="80045798-0454-4abc-89dc-14e79501c303(test.analyses.spin.promela.ts)" version="0" />
   </dependencyVersions>
 </solution>
 
