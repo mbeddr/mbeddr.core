@@ -8,13 +8,15 @@
   <imports>
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -42,6 +44,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -90,6 +95,36 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="searchDepth" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Rf0$0HCP5j">
+    <property role="TrG5h" value="SpinExecutable" />
+    <property role="34LRSv" value="spin_exec" />
+    <property role="3GE5qa" value="platform" />
+    <property role="EcuMT" value="9065467049586938195" />
+    <ref role="1TJDcQ" to="51wr:4o9sgv8QoKi" resolve="Executable" />
+  </node>
+  <node concept="1TIwiD" id="7Rf0$0HCP5k">
+    <property role="TrG5h" value="SpinPlatform" />
+    <property role="34LRSv" value="spin" />
+    <property role="R4oN_" value="spin platform" />
+    <property role="3GE5qa" value="platform" />
+    <property role="EcuMT" value="9065467049586938196" />
+    <ref role="1TJDcQ" to="51wr:4BxItZJ4BoF" resolve="Platform" />
+    <node concept="1TJgyi" id="7Rf0$0HCP5l" role="1TKVEl">
+      <property role="TrG5h" value="compiler" />
+      <property role="IQ2nx" value="9065467049586938197" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7Rf0$0HCP5m" role="1TKVEl">
+      <property role="TrG5h" value="compilerOptions" />
+      <property role="IQ2nx" value="9065467049586938198" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7Rf0$0HCP5n" role="1TKVEl">
+      <property role="TrG5h" value="make" />
+      <property role="IQ2nx" value="9065467049586938199" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

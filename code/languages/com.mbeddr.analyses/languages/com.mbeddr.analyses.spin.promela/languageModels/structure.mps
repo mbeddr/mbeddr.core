@@ -516,36 +516,6 @@
     <property role="EcuMT" value="1737851622210418891" />
     <ref role="1TJDcQ" node="24G9CRyKk_v" resolve="ChoiceLike" />
   </node>
-  <node concept="1TIwiD" id="7Rf0$0HCP5j">
-    <property role="TrG5h" value="SpinExecutable" />
-    <property role="34LRSv" value="spin_exec" />
-    <property role="3GE5qa" value="platform" />
-    <property role="EcuMT" value="9065467049586938195" />
-    <ref role="1TJDcQ" to="51wr:4o9sgv8QoKi" resolve="Executable" />
-  </node>
-  <node concept="1TIwiD" id="7Rf0$0HCP5k">
-    <property role="TrG5h" value="SpinPlatform" />
-    <property role="34LRSv" value="spin" />
-    <property role="R4oN_" value="spin platform" />
-    <property role="3GE5qa" value="platform" />
-    <property role="EcuMT" value="9065467049586938196" />
-    <ref role="1TJDcQ" to="51wr:4BxItZJ4BoF" resolve="Platform" />
-    <node concept="1TJgyi" id="7Rf0$0HCP5l" role="1TKVEl">
-      <property role="TrG5h" value="compiler" />
-      <property role="IQ2nx" value="9065467049586938197" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="7Rf0$0HCP5m" role="1TKVEl">
-      <property role="TrG5h" value="compilerOptions" />
-      <property role="IQ2nx" value="9065467049586938198" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="7Rf0$0HCP5n" role="1TKVEl">
-      <property role="TrG5h" value="make" />
-      <property role="IQ2nx" value="9065467049586938199" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7Rf0$0HLP$h">
     <property role="TrG5h" value="Printf" />
     <property role="34LRSv" value="Printf" />

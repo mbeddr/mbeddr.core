@@ -31,12 +31,6 @@
   </imports>
   <registry>
     <language id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela">
-      <concept id="9065467049586938195" name="com.mbeddr.analyses.spin.promela.structure.SpinExecutable" flags="ng" index="1gr5cj" />
-      <concept id="9065467049586938196" name="com.mbeddr.analyses.spin.promela.structure.SpinPlatform" flags="ng" index="1gr5ck">
-        <property id="9065467049586938197" name="compiler" index="1gr5cl" />
-        <property id="9065467049586938198" name="compilerOptions" index="1gr5cm" />
-        <property id="9065467049586938199" name="make" index="1gr5cn" />
-      </concept>
       <concept id="799927705160539981" name="com.mbeddr.analyses.spin.promela.structure.ProcType" flags="ng" index="1N3Vlf" />
       <concept id="799927705160539985" name="com.mbeddr.analyses.spin.promela.structure.Init" flags="ng" index="1N3Vlj" />
       <concept id="799927705160518134" name="com.mbeddr.analyses.spin.promela.structure.PromelaModel" flags="ng" index="1N3YfO" />
@@ -112,6 +106,12 @@
       <concept id="3854501276819165429" name="com.mbeddr.analyses.spin.structure.AssertionsAnalysis" flags="ng" index="apm28" />
       <concept id="3854501276819366674" name="com.mbeddr.analyses.spin.structure.SpinBasedAnalysis" flags="ng" index="ap_dJ">
         <reference id="3854501276819165457" name="env" index="apm5G" />
+      </concept>
+      <concept id="9065467049586938195" name="" flags="ng" index="1gr5cj" />
+      <concept id="9065467049586938196" name="" flags="ng" index="1gr5ck">
+        <property id="9065467049586938197" name="" index="1gr5cl" />
+        <property id="9065467049586938198" name="" index="1gr5cm" />
+        <property id="9065467049586938199" name="" index="1gr5cn" />
       </concept>
       <concept id="6386634687973783239" name="com.mbeddr.analyses.spin.structure.IPanRunSettings" flags="ng" index="1Qv9iI">
         <child id="6386634687973835958" name="searchDepth" index="1QvUrv" />

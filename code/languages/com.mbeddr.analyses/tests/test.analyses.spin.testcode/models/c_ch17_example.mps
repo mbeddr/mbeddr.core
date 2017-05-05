@@ -4,6 +4,7 @@
   <languages>
     <use id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela" version="0" />
     <use id="17b818a8-8533-4efe-8f51-f532146ae66b" name="com.mbeddr.analyses.spin.c" version="0" />
+    <use id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -27,12 +28,6 @@
       </concept>
       <concept id="9065467049589299473" name="com.mbeddr.analyses.spin.promela.structure.Printf" flags="ng" index="1g25Hh">
         <child id="9065467049589299474" name="args" index="1g25Hi" />
-      </concept>
-      <concept id="9065467049586938195" name="com.mbeddr.analyses.spin.promela.structure.SpinExecutable" flags="ng" index="1gr5cj" />
-      <concept id="9065467049586938196" name="com.mbeddr.analyses.spin.promela.structure.SpinPlatform" flags="ng" index="1gr5ck">
-        <property id="9065467049586938197" name="compiler" index="1gr5cl" />
-        <property id="9065467049586938198" name="compilerOptions" index="1gr5cm" />
-        <property id="9065467049586938199" name="make" index="1gr5cn" />
       </concept>
       <concept id="799927705160941637" name="com.mbeddr.analyses.spin.promela.structure.IntType" flags="ng" index="1N1mD7" />
       <concept id="799927705160539981" name="com.mbeddr.analyses.spin.promela.structure.ProcType" flags="ng" index="1N3Vlf">
@@ -110,6 +105,14 @@
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
+      </concept>
+    </language>
+    <language id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin">
+      <concept id="9065467049586938195" name="" flags="ng" index="1gr5cj" />
+      <concept id="9065467049586938196" name="" flags="ng" index="1gr5ck">
+        <property id="9065467049586938197" name="" index="1gr5cl" />
+        <property id="9065467049586938198" name="" index="1gr5cm" />
+        <property id="9065467049586938199" name="" index="1gr5cn" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">

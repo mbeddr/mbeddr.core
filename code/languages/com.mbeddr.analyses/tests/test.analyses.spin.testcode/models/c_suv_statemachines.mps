@@ -6,6 +6,7 @@
     <use id="17b818a8-8533-4efe-8f51-f532146ae66b" name="com.mbeddr.analyses.spin.c" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="4ddb29eb-11e5-46c6-a894-6b8a4c38587d" name="com.mbeddr.analyses.spin.promela.patterns" version="0" />
+    <use id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   </languages>
@@ -22,12 +23,6 @@
       </concept>
       <concept id="2390327893063451049" name="com.mbeddr.analyses.spin.promela.structure.Choice" flags="ng" index="33Vms$">
         <child id="2390327893063452023" name="guard" index="33VmfU" />
-      </concept>
-      <concept id="9065467049586938195" name="com.mbeddr.analyses.spin.promela.structure.SpinExecutable" flags="ng" index="1gr5cj" />
-      <concept id="9065467049586938196" name="com.mbeddr.analyses.spin.promela.structure.SpinPlatform" flags="ng" index="1gr5ck">
-        <property id="9065467049586938197" name="compiler" index="1gr5cl" />
-        <property id="9065467049586938198" name="compilerOptions" index="1gr5cm" />
-        <property id="9065467049586938199" name="make" index="1gr5cn" />
       </concept>
       <concept id="799927705160539981" name="com.mbeddr.analyses.spin.promela.structure.ProcType" flags="ng" index="1N3Vlf" />
       <concept id="799927705160539985" name="com.mbeddr.analyses.spin.promela.structure.Init" flags="ng" index="1N3Vlj" />
@@ -112,6 +107,14 @@
       <concept id="817099092667797496" name="com.mbeddr.analyses.spin.promela.patterns.structure.Loop" flags="ng" index="2B_eiN">
         <child id="817099092667798470" name="body" index="2B_fyd" />
         <child id="817099092667798468" name="times" index="2B_fyf" />
+      </concept>
+    </language>
+    <language id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin">
+      <concept id="9065467049586938195" name="" flags="ng" index="1gr5cj" />
+      <concept id="9065467049586938196" name="" flags="ng" index="1gr5ck">
+        <property id="9065467049586938197" name="" index="1gr5cl" />
+        <property id="9065467049586938198" name="" index="1gr5cm" />
+        <property id="9065467049586938199" name="" index="1gr5cn" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
