@@ -1167,7 +1167,7 @@
       </node>
       <node concept="1E1JtA" id="4b_XKf48RKg" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.analyses.spin.ts" />
+        <property role="TrG5h" value="test.analyses.spin.promela.ts" />
         <property role="3LESm3" value="80045798-0454-4abc-89dc-14e79501c303" />
         <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="sources and tests" />
@@ -1181,12 +1181,6 @@
                 <property role="2Ry0Am" value="test.analyses.spin.ts.msd" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4b_XKf48RKl" role="3bR37C">
-          <node concept="3bR9La" id="4b_XKf48RKm" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
           </node>
         </node>
         <node concept="1SiIV0" id="4b_XKf48RW4" role="3bR37C">
