@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.analyses.spin.promela.rt" uuid="e4586d76-86eb-4b19-862c-e5375e853c19" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.analyses.spin.rt" uuid="e4586d76-86eb-4b19-862c-e5375e853c19" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
