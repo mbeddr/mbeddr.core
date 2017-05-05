@@ -1189,6 +1189,12 @@
             <ref role="3bR37D" to="p6ld:3JmJHJb$M36" resolve="com.mbeddr.analyses.spin.promela" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1GXRyrSXs7X" role="3bR37C">
+          <node concept="3bR9La" id="1GXRyrSXs7Y" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="16PiFwJ4bFN" role="1hWBAP">
