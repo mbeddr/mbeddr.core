@@ -10,7 +10,7 @@
     <generator alias="" namespace="com.mbeddr.analyses.spin.c.patterns#4708346905221050054" uuid="063391c8-9b85-4087-8720-9745c869a2fb">
       <models>
         <modelRoot contentPath="${module}" type="default">
-          <sourceRoot path="${module}/generator/template" />
+          <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
       <external-templates />
@@ -141,7 +141,7 @@
           <lesser-priority-mapping>
             <generator generatorUID="063391c8-9b85-4087-8720-9745c869a2fb(com.mbeddr.analyses.spin.c.patterns#4708346905221050054)" />
             <external-mapping>
-              <mapping-node modelUID="r:6a0514ef-f9af-4058-8141-75e0f3e9ee48(com.mbeddr.analyses.spin.c.patterns.generator.template.main@generator)" nodeID="4708346905221050055" />
+              <mapping-node modelUID="r:6a0514ef-f9af-4058-8141-75e0f3e9ee48(com.mbeddr.analyses.spin.c.patterns.generator.template.main@generator)" nodeID="6405535025147123927" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>

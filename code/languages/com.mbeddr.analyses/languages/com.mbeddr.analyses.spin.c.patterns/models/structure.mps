@@ -10,7 +10,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
@@ -152,20 +152,20 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="choices" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="5hi7ucOryW$" resolve="CChoice" />
+      <ref role="20lvS9" node="5hi7ucOryW$" resolve="SingleChoice" />
     </node>
     <node concept="1TJgyj" id="5hi7ucOryZ5" role="1TKVEi">
       <property role="IQ2ns" value="6075951708950638533" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="else" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5hi7ucOryXC" resolve="DefaultCChoice" />
+      <ref role="20lvS9" node="5hi7ucOryXC" resolve="DefaultChoice" />
     </node>
   </node>
   <node concept="1TIwiD" id="5hi7ucOryW$">
     <property role="EcuMT" value="6075951708950638372" />
     <property role="3GE5qa" value="harness.choice" />
-    <property role="TrG5h" value="CChoice" />
+    <property role="TrG5h" value="SingleChoice" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5hi7ucOryW_" role="1TKVEi">
       <property role="IQ2ns" value="6075951708950638373" />
@@ -185,7 +185,7 @@
   <node concept="1TIwiD" id="5hi7ucOryXC">
     <property role="EcuMT" value="6075951708950638440" />
     <property role="3GE5qa" value="harness.choice" />
-    <property role="TrG5h" value="DefaultCChoice" />
+    <property role="TrG5h" value="DefaultChoice" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5hi7ucOryXD" role="1TKVEi">
       <property role="IQ2ns" value="6075951708950638441" />
