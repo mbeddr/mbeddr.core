@@ -324,7 +324,7 @@
         <ref role="L2wRA" node="16rWggKnUF1" resolve="test.analyses.acsl.testcode" />
       </node>
       <node concept="L2wRC" id="3JmJHJbDgke" role="39821P">
-        <ref role="L2wRA" node="3JmJHJbDfXW" resolve="test.analyses.spin.promela.testcode" />
+        <ref role="L2wRA" node="3JmJHJbDfXW" resolve="test.analyses.spin.testcode" />
       </node>
     </node>
     <node concept="2G$12M" id="3bBV0dtdsXG" role="3989C9">
@@ -446,7 +446,7 @@
       </node>
       <node concept="1E1JtA" id="3JmJHJbDfXW" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.analyses.spin.promela.testcode" />
+        <property role="TrG5h" value="test.analyses.spin.testcode" />
         <property role="3LESm3" value="ee94c775-8d14-44c3-a083-cdef6d78a972" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="3JmJHJbDg0s" role="3LF7KH">
@@ -454,9 +454,9 @@
           <node concept="2Ry0Ak" id="3JmJHJbDg90" role="iGT6I">
             <property role="2Ry0Am" value="tests" />
             <node concept="2Ry0Ak" id="3JmJHJbDgbV" role="2Ry0An">
-              <property role="2Ry0Am" value="test.analyses.spin.promela.testcode" />
-              <node concept="2Ry0Ak" id="3JmJHJbDgeQ" role="2Ry0An">
-                <property role="2Ry0Am" value="tests.analyses.spin.promela.testcode.msd" />
+              <property role="2Ry0Am" value="test.analyses.spin.testcode" />
+              <node concept="2Ry0Ak" id="4b_XKf48Voi" role="2Ry0An">
+                <property role="2Ry0Am" value="test.analyses.spin.testcode.msd" />
               </node>
             </node>
           </node>
@@ -707,7 +707,7 @@
             <node concept="2Ry0Ak" id="51ECGN585bU" role="iGT6I">
               <property role="2Ry0Am" value="tests" />
               <node concept="2Ry0Ak" id="51ECGN585mH" role="2Ry0An">
-                <property role="2Ry0Am" value="test.analyses.spin.promela.testcode" />
+                <property role="2Ry0Am" value="test.analyses.spin.testcode" />
                 <node concept="2Ry0Ak" id="51ECGN585pm" role="2Ry0An">
                   <property role="2Ry0Am" value="source_gen" />
                 </node>
@@ -744,10 +744,10 @@
         <ref role="L2wRA" node="7IFaMBYEj5M" resolve="test.analyses.var.testcode" />
       </node>
       <node concept="L2wRC" id="3JmJHJbDheY" role="39821P">
-        <ref role="L2wRA" node="3JmJHJbDgUB" resolve="test.analyses.spin.promela" />
+        <ref role="L2wRA" node="3JmJHJbDgUB" resolve="test.analyses.spin" />
       </node>
       <node concept="L2wRC" id="3JmJHJbDhqH" role="39821P">
-        <ref role="L2wRA" node="3JmJHJbDg_X" resolve="test.analyses.spin.promela.testcode" />
+        <ref role="L2wRA" node="3JmJHJbDg_X" resolve="test.analyses.spin.testcode" />
       </node>
     </node>
     <node concept="2G$12M" id="7Vt15sLWjNi" role="3989C9">
@@ -1099,7 +1099,7 @@
       </node>
       <node concept="1E1JtA" id="3JmJHJbDgUB" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.analyses.spin.promela" />
+        <property role="TrG5h" value="test.analyses.spin" />
         <property role="3LESm3" value="3639a65b-720f-4872-8f48-53d710ed288a" />
         <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="sources and tests" />
@@ -1108,9 +1108,9 @@
           <node concept="2Ry0Ak" id="3JmJHJbDgUD" role="iGT6I">
             <property role="2Ry0Am" value="tests" />
             <node concept="2Ry0Ak" id="3JmJHJbDgUE" role="2Ry0An">
-              <property role="2Ry0Am" value="test.analyses.spin.promela" />
-              <node concept="2Ry0Ak" id="3JmJHJbDh4a" role="2Ry0An">
-                <property role="2Ry0Am" value="test.analyses.spin.promela.msd" />
+              <property role="2Ry0Am" value="test.analyses.spin" />
+              <node concept="2Ry0Ak" id="4b_XKf48RrA" role="2Ry0An">
+                <property role="2Ry0Am" value="test.analyses.spin.msd" />
               </node>
             </node>
           </node>
@@ -1118,7 +1118,7 @@
         <node concept="1SiIV0" id="3JmJHJbDh71" role="3bR37C">
           <node concept="3bR9La" id="3JmJHJbDh72" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:3JmJHJb_0E1" resolve="com.mbeddr.analyses.spin.promela.rt" />
+            <ref role="3bR37D" to="p6ld:3JmJHJb_0E1" resolve="com.mbeddr.analyses.spin.rt" />
           </node>
         </node>
         <node concept="1SiIV0" id="3JmJHJbDh73" role="3bR37C">
@@ -1142,7 +1142,7 @@
       </node>
       <node concept="1E1JtA" id="3JmJHJbDg_X" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.analyses.spin.promela.testcode" />
+        <property role="TrG5h" value="test.analyses.spin.testcode" />
         <property role="3LESm3" value="ee94c775-8d14-44c3-a083-cdef6d78a972" />
         <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="sources and tests" />
@@ -1151,9 +1151,9 @@
           <node concept="2Ry0Ak" id="3JmJHJbDg_Z" role="iGT6I">
             <property role="2Ry0Am" value="tests" />
             <node concept="2Ry0Ak" id="3JmJHJbDgA0" role="2Ry0An">
-              <property role="2Ry0Am" value="test.analyses.spin.promela.testcode" />
-              <node concept="2Ry0Ak" id="3JmJHJbDgIC" role="2Ry0An">
-                <property role="2Ry0Am" value="tests.analyses.spin.promela.testcode.msd" />
+              <property role="2Ry0Am" value="test.analyses.spin.testcode" />
+              <node concept="2Ry0Ak" id="4b_XKf48RwH" role="2Ry0An">
+                <property role="2Ry0Am" value="test.analyses.spin.testcode.msd" />
               </node>
             </node>
           </node>
@@ -1162,6 +1162,37 @@
           <node concept="3bR9La" id="3JmJHJbDgLe" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="4b_XKf48RKg" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.analyses.spin.ts" />
+        <property role="3LESm3" value="80045798-0454-4abc-89dc-14e79501c303" />
+        <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="sources and tests" />
+        <node concept="398BVA" id="4b_XKf48RKh" role="3LF7KH">
+          <ref role="398BVh" node="7Vt15sLWjMb" resolve="mbeddr.analyses" />
+          <node concept="2Ry0Ak" id="4b_XKf48RKi" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="4b_XKf48RKj" role="2Ry0An">
+              <property role="2Ry0Am" value="test.analyses.spin.ts" />
+              <node concept="2Ry0Ak" id="4b_XKf48RTv" role="2Ry0An">
+                <property role="2Ry0Am" value="test.analyses.spin.ts.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4b_XKf48RKl" role="3bR37C">
+          <node concept="3bR9La" id="4b_XKf48RKm" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4b_XKf48RW4" role="3bR37C">
+          <node concept="3bR9La" id="4b_XKf48RW5" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:3JmJHJb$M36" resolve="com.mbeddr.analyses.spin.promela" />
           </node>
         </node>
       </node>
@@ -1196,10 +1227,10 @@
         <ref role="22LTRN" node="7IFaMBYEj5M" resolve="test.analyses.var.testcode" />
       </node>
       <node concept="22LTRM" id="3JmJHJbDh_$" role="22LTRK">
-        <ref role="22LTRN" node="3JmJHJbDgUB" resolve="test.analyses.spin.promela" />
+        <ref role="22LTRN" node="3JmJHJbDgUB" resolve="test.analyses.spin" />
       </node>
       <node concept="22LTRM" id="3JmJHJbDhGt" role="22LTRK">
-        <ref role="22LTRN" node="3JmJHJbDg_X" resolve="test.analyses.spin.promela.testcode" />
+        <ref role="22LTRN" node="3JmJHJbDg_X" resolve="test.analyses.spin.testcode" />
       </node>
     </node>
   </node>

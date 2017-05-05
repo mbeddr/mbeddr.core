@@ -30,7 +30,9 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -79,13 +81,23 @@
     <property role="TrG5h" value="IAtomicContract" />
     <property role="3GE5qa" value="contract" />
     <property role="EcuMT" value="3793213301909615744" />
+    <node concept="1TJgyj" id="4bJgjtNtez" role="1TKVEi">
+      <property role="IQ2ns" value="75361647380517795" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4bJgjtNFJV" role="PrDN$">
+      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3i$cQqpAZi1">
     <property role="TrG5h" value="Requires" />
     <property role="34LRSv" value="requires" />
     <property role="3GE5qa" value="contract" />
     <property role="EcuMT" value="3793213301909615745" />
-    <ref role="1TJDcQ" to="pyey:637qsduSbtp" resolve="Assert" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3i$cQqpAZi7" role="PzmwI">
       <ref role="PrY4T" node="3i$cQqpAZi0" resolve="IAtomicContract" />
     </node>
@@ -108,7 +120,7 @@
     <property role="TrG5h" value="Ensures" />
     <property role="34LRSv" value="ensures" />
     <property role="EcuMT" value="3793213301910271541" />
-    <ref role="1TJDcQ" to="pyey:637qsduSbtp" resolve="Assert" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3i$cQqpDv$S" role="PzmwI">
       <ref role="PrY4T" node="3i$cQqpAZi0" resolve="IAtomicContract" />
     </node>

@@ -26,6 +26,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -125,8 +126,9 @@
   </node>
   <node concept="1TIwiD" id="6rTOrQxjNFE">
     <property role="TrG5h" value="ProcRef" />
-    <property role="34LRSv" value="proc_ref" />
+    <property role="34LRSv" value="P" />
     <property role="EcuMT" value="7420192473454951146" />
+    <property role="R4oN_" value="reference to a process" />
     <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="6rTOrQxjNFF" role="1TKVEi">
       <property role="20lmBu" value="reference" />

@@ -254,7 +254,7 @@
   <node concept="1TIwiD" id="24G9CRyKk_D">
     <property role="3GE5qa" value="statement.if_do" />
     <property role="TrG5h" value="Else" />
-    <property role="34LRSv" value="else" />
+    <property role="34LRSv" value=":: else" />
     <property role="EcuMT" value="2390327893063453033" />
     <ref role="1TJDcQ" node="24G9CRyKk_v" resolve="ChoiceLike" />
   </node>
@@ -263,6 +263,7 @@
     <property role="TrG5h" value="DoStatement" />
     <property role="34LRSv" value="do" />
     <property role="EcuMT" value="2390327893063559172" />
+    <property role="R4oN_" value="Promela do ... od" />
     <ref role="1TJDcQ" node="6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="24G9CRyKIwM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -303,6 +304,8 @@
     <property role="3GE5qa" value="type.mtype" />
     <property role="TrG5h" value="MtypeLiteral" />
     <property role="EcuMT" value="2390327893064148765" />
+    <property role="R4oN_" value="Promela mtype" />
+    <property role="34LRSv" value="mtype" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="24G9CRyN9sZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -325,14 +328,8 @@
     <property role="TrG5h" value="ChanDeclaration" />
     <property role="34LRSv" value="chan" />
     <property role="EcuMT" value="2390327893064382862" />
+    <property role="R4oN_" value="Promela channel" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7_$cGNhPCJs" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="chanType" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="8747172231535561692" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
-    </node>
     <node concept="1TJgyj" id="24G9CRyNRB9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="types" />
@@ -381,6 +378,7 @@
     <property role="TrG5h" value="Receive" />
     <property role="34LRSv" value="?" />
     <property role="EcuMT" value="2390327893064634832" />
+    <property role="R4oN_" value="receive" />
     <ref role="1TJDcQ" node="6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="24G9CRyOP7h" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -403,6 +401,9 @@
     <property role="34LRSv" value="chan" />
     <property role="EcuMT" value="8747172231534849181" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    <node concept="PrWs8" id="4b_XKf42ShD" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7_$cGNhPkH4">
     <property role="3GE5qa" value="expression" />
@@ -515,36 +516,6 @@
     <property role="34LRSv" value="break" />
     <property role="EcuMT" value="1737851622210418891" />
     <ref role="1TJDcQ" node="24G9CRyKk_v" resolve="ChoiceLike" />
-  </node>
-  <node concept="1TIwiD" id="7Rf0$0HCP5j">
-    <property role="TrG5h" value="SpinExecutable" />
-    <property role="34LRSv" value="spin_exec" />
-    <property role="3GE5qa" value="platform" />
-    <property role="EcuMT" value="9065467049586938195" />
-    <ref role="1TJDcQ" to="51wr:4o9sgv8QoKi" resolve="Executable" />
-  </node>
-  <node concept="1TIwiD" id="7Rf0$0HCP5k">
-    <property role="TrG5h" value="SpinPlatform" />
-    <property role="34LRSv" value="spin" />
-    <property role="R4oN_" value="spin platform" />
-    <property role="3GE5qa" value="platform" />
-    <property role="EcuMT" value="9065467049586938196" />
-    <ref role="1TJDcQ" to="51wr:4BxItZJ4BoF" resolve="Platform" />
-    <node concept="1TJgyi" id="7Rf0$0HCP5l" role="1TKVEl">
-      <property role="TrG5h" value="compiler" />
-      <property role="IQ2nx" value="9065467049586938197" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="7Rf0$0HCP5m" role="1TKVEl">
-      <property role="TrG5h" value="compilerOptions" />
-      <property role="IQ2nx" value="9065467049586938198" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="7Rf0$0HCP5n" role="1TKVEl">
-      <property role="TrG5h" value="make" />
-      <property role="IQ2nx" value="9065467049586938199" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7Rf0$0HLP$h">
     <property role="TrG5h" value="Printf" />
