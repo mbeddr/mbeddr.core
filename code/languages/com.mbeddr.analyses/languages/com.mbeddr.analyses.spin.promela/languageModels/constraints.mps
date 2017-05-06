@@ -69,6 +69,9 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -187,19 +190,58 @@
     <node concept="9S07l" id="79i$vAY7sLm" role="9Vyp8">
       <node concept="3clFbS" id="79i$vAY7sLn" role="2VODD2">
         <node concept="3clFbF" id="79i$vAY7sLo" role="3cqZAp">
-          <node concept="2OqwBi" id="79i$vAY7sLp" role="3clFbG">
-            <node concept="2OqwBi" id="79i$vAY7sLq" role="2Oq$k0">
-              <node concept="nLn13" id="79i$vAY7sLr" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="79i$vAY7sLs" role="2OqNvi">
-                <node concept="1xMEDy" id="79i$vAY7sLt" role="1xVPHs">
-                  <node concept="chp4Y" id="79i$vAY7sLu" role="ri$Ld">
-                    <ref role="cht4Q" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="79i$vAY7sLv" role="1xVPHs" />
+          <node concept="2OqwBi" id="79i$vAY7sLq" role="3clFbG">
+            <node concept="nLn13" id="79i$vAY7sLr" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="1GXRyrTbbS3" role="2OqNvi">
+              <node concept="chp4Y" id="1GXRyrTbc7Y" role="cj9EA">
+                <ref role="cht4Q" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
               </node>
             </node>
-            <node concept="3x8VRR" id="79i$vAY7sLw" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1GXRyrTbe6y">
+    <property role="3GE5qa" value="type" />
+    <ref role="1M2myG" to="ir22:7_$cGNhMUMt" resolve="ChanType" />
+    <node concept="9S07l" id="1GXRyrTbe6z" role="9Vyp8">
+      <node concept="3clFbS" id="1GXRyrTbe6$" role="2VODD2">
+        <node concept="3clFbF" id="1GXRyrTbedJ" role="3cqZAp">
+          <node concept="22lmx$" id="1GXRyrTbfsS" role="3clFbG">
+            <node concept="2OqwBi" id="1GXRyrTbfVT" role="3uHU7w">
+              <node concept="nLn13" id="1GXRyrTbfCG" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="1GXRyrTbgjV" role="2OqNvi">
+                <node concept="chp4Y" id="1GXRyrTbgz7" role="cj9EA">
+                  <ref role="cht4Q" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1GXRyrTbesN" role="3uHU7B">
+              <node concept="nLn13" id="1GXRyrTbedI" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="1GXRyrTbeHc" role="2OqNvi">
+                <node concept="chp4Y" id="1GXRyrTbeTE" role="cj9EA">
+                  <ref role="cht4Q" to="ir22:GpUw9S5_Xd" resolve="ProcType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1GXRyrTbhpo">
+    <ref role="1M2myG" to="ir22:GpUw9S5_Xa" resolve="IPromelaModelContent" />
+    <node concept="9S07l" id="1GXRyrTbhpp" role="9Vyp8">
+      <node concept="3clFbS" id="1GXRyrTbhpq" role="2VODD2">
+        <node concept="3clFbF" id="1GXRyrTbhw_" role="3cqZAp">
+          <node concept="2OqwBi" id="1GXRyrTbhJD" role="3clFbG">
+            <node concept="nLn13" id="1GXRyrTbhw$" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="1GXRyrTbhZZ" role="2OqNvi">
+              <node concept="chp4Y" id="1GXRyrTbict" role="cj9EA">
+                <ref role="cht4Q" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

@@ -14,6 +14,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -368,6 +369,24 @@
             <node concept="1mIQ4w" id="79i$vAY7smi" role="2OqNvi">
               <node concept="chp4Y" id="79i$vAY7smj" role="cj9EA">
                 <ref role="cht4Q" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1GXRyrTbaq3">
+    <property role="3GE5qa" value="top_level" />
+    <ref role="1M2myG" to="llb3:439FXGfiPF" resolve="GlobalDeclarations" />
+    <node concept="9S07l" id="1GXRyrTbaq4" role="9Vyp8">
+      <node concept="3clFbS" id="1GXRyrTbaq5" role="2VODD2">
+        <node concept="3clFbF" id="1GXRyrTbax8" role="3cqZAp">
+          <node concept="2OqwBi" id="1GXRyrTbaIA" role="3clFbG">
+            <node concept="nLn13" id="1GXRyrTbax7" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="1GXRyrTbaYA" role="2OqNvi">
+              <node concept="chp4Y" id="1GXRyrTbbaW" role="cj9EA">
+                <ref role="cht4Q" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
               </node>
             </node>
           </node>

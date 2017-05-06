@@ -62,6 +62,7 @@
     <property role="TrG5h" value="CDecl" />
     <property role="34LRSv" value="c_decl" />
     <property role="EcuMT" value="7420192473454475067" />
+    <property role="R4oN_" value="Promela c_decl" />
     <ref role="1TJDcQ" to="x27k:5DwX9xlExfL" resolve="Section" />
     <node concept="PrWs8" id="6rTOrQxhZt4" role="PzmwI">
       <ref role="PrY4T" to="ir22:GpUw9S5_Xa" resolve="IPromelaModelContent" />

@@ -579,9 +579,6 @@
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="7Ztu0DHJOk7" role="N3F5h">
-      <property role="TrG5h" value="empty_1439278647414_18" />
-    </node>
   </node>
   <node concept="2v9HqL" id="7Ztu0DHJOjW">
     <node concept="1gr5cj" id="2lN4cj_VxYg" role="2ePNbc">
