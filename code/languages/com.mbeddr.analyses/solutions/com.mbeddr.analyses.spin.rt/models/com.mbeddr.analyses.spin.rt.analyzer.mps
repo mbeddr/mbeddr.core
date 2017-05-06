@@ -439,6 +439,24 @@
         <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
       </node>
       <node concept="3clFbS" id="1wu5Hv6fh9s" role="3clF47">
+        <node concept="3clFbF" id="4fvA6OQXXBY" role="3cqZAp">
+          <node concept="37vLTI" id="4fvA6OQXXBZ" role="3clFbG">
+            <node concept="3cmrfG" id="1GXRyrSYLis" role="37vLTx">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="37vLTw" id="4fvA6OQXXC3" role="37vLTJ">
+              <ref role="3cqZAo" to="ood5:7F8$WoW5PEY" resolve="stepsNumber" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="cchPmXHppy" role="3cqZAp">
+          <node concept="1rXfSq" id="cchPmXHppz" role="3clFbG">
+            <ref role="37wK5l" to="ood5:6fVeF5slN6c" resolve="initializeProgress" />
+            <node concept="Xl_RD" id="1eSi_XMYS$_" role="37wK5m">
+              <property role="Xl_RC" value="Spin analysis" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1wu5Hv6fylT" role="3cqZAp">
           <node concept="3cpWsn" id="4kcU3YrlWCZ" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -515,7 +533,11 @@
             <node concept="3uibUv" id="1wu5Hv6fyJT" role="1tU5fm">
               <ref role="3uigEE" to="imq8:1wu5Hv6fnnb" resolve="SpinRawResult" />
             </node>
-            <node concept="2ShNRf" id="1wu5Hv6fyPC" role="33vP2m">
+          </node>
+        </node>
+        <node concept="3clFbF" id="1GXRyrSYU2k" role="3cqZAp">
+          <node concept="37vLTI" id="1GXRyrSYU2m" role="3clFbG">
+            <node concept="2ShNRf" id="1wu5Hv6fyPC" role="37vLTx">
               <node concept="1pGfFk" id="1wu5Hv6fzAG" role="2ShVmc">
                 <ref role="37wK5l" to="imq8:1wu5Hv6fz2x" resolve="SpinRawResult" />
                 <node concept="2OqwBi" id="1wu5Hv6fzHe" role="37wK5m">
@@ -554,6 +576,9 @@
                   </node>
                 </node>
               </node>
+            </node>
+            <node concept="37vLTw" id="1GXRyrSYU2q" role="37vLTJ">
+              <ref role="3cqZAo" node="1wu5Hv6fyJS" resolve="srr" />
             </node>
           </node>
         </node>
