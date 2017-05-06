@@ -15427,7 +15427,31 @@
   <node concept="13h7C7" id="76hx8dKhx2O">
     <ref role="13h7C2" to="x27k:76hx8dKhwZW" resolve="ArbitraryTextContent" />
     <node concept="13hLZK" id="76hx8dKhx2P" role="13h7CW">
-      <node concept="3clFbS" id="76hx8dKhx2Q" role="2VODD2" />
+      <node concept="3clFbS" id="76hx8dKhx2Q" role="2VODD2">
+        <node concept="3clFbF" id="1GXRyrSZzEZ" role="3cqZAp">
+          <node concept="37vLTI" id="1GXRyrSZ$_Z" role="3clFbG">
+            <node concept="2OqwBi" id="1GXRyrSZzSM" role="37vLTJ">
+              <node concept="13iPFW" id="1GXRyrSZzEY" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1GXRyrSZ$kV" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="3cpWs3" id="1GXRyrSZ_sz" role="37vLTx">
+              <node concept="2OqwBi" id="1GXRyrSZCwH" role="3uHU7w">
+                <node concept="2JrnkZ" id="1GXRyrSZChl" role="2Oq$k0">
+                  <node concept="13iPFW" id="1GXRyrSZ_wu" role="2JrQYb" />
+                </node>
+                <node concept="liA8E" id="1GXRyrSZDxn" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="1GXRyrSZ$L$" role="3uHU7B">
+                <property role="Xl_RC" value="ArbitraryTextContent_id_" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="76hx8dKhx2U" role="13h7CS">
       <property role="13i0iv" value="false" />
