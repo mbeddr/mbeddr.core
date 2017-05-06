@@ -34,6 +34,11 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -216,7 +221,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="439FXGfiQ8">
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="top_level" />
     <ref role="1XX52x" to="llb3:439FXGfiPF" resolve="GlobalDeclarations" />
     <node concept="3EZMnI" id="439FXGfiQa" role="2wV5jI">
       <node concept="3EZMnI" id="439FXGfiQh" role="3EZMnx">
@@ -257,7 +262,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="439FXGfyCC">
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="top_level" />
     <ref role="1XX52x" to="llb3:439FXGfyCs" resolve="HarnessCode" />
     <node concept="3EZMnI" id="GpUw9S6WvV" role="2wV5jI">
       <node concept="3EZMnI" id="GpUw9S7dgg" role="3EZMnx">
@@ -285,7 +290,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6fP9ZN5Cvg5">
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="harness.multistep" />
     <ref role="1XX52x" to="llb3:6fP9ZN5Cubd" resolve="MultiStep" />
     <node concept="3EZMnI" id="HmUOIGKxfG" role="2wV5jI">
       <node concept="3F0ifn" id="HmUOIGKxfN" role="3EZMnx">
@@ -441,7 +446,7 @@
   </node>
   <node concept="24kQdi" id="5hi7ucOryZn">
     <property role="3GE5qa" value="harness.choice" />
-    <ref role="1XX52x" to="llb3:5hi7ucOryW$" resolve="CChoice" />
+    <ref role="1XX52x" to="llb3:5hi7ucOryW$" resolve="SingleChoice" />
     <node concept="3EZMnI" id="5hi7ucOryZE" role="2wV5jI">
       <node concept="l2Vlx" id="5hi7ucOryZF" role="2iSdaV" />
       <node concept="3F0ifn" id="5hi7ucOryZW" role="3EZMnx">
@@ -512,7 +517,7 @@
   </node>
   <node concept="24kQdi" id="5hi7ucOrSvm">
     <property role="3GE5qa" value="harness.choice" />
-    <ref role="1XX52x" to="llb3:5hi7ucOryXC" resolve="DefaultCChoice" />
+    <ref role="1XX52x" to="llb3:5hi7ucOryXC" resolve="DefaultChoice" />
     <node concept="3EZMnI" id="5hi7ucOrSvo" role="2wV5jI">
       <node concept="3F0ifn" id="5hi7ucOrSvv" role="3EZMnx">
         <property role="3F0ifm" value="else" />
@@ -658,7 +663,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5IfbEbQA2zD">
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="top_level" />
     <ref role="1XX52x" to="llb3:5IfbEbQA2zq" resolve="TrackState" />
     <node concept="3EZMnI" id="5IfbEbQA2zF" role="2wV5jI">
       <node concept="3F0ifn" id="5IfbEbQA2zP" role="3EZMnx">
@@ -737,6 +742,20 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1GXRyrT9VhF">
+    <property role="3GE5qa" value="top_level" />
+    <ref role="1XX52x" to="llb3:1GXRyrT8qEm" resolve="ExpertMode" />
+    <node concept="3EZMnI" id="1GXRyrT9VhH" role="2wV5jI">
+      <node concept="3F0ifn" id="1GXRyrT9VhR" role="3EZMnx">
+        <property role="3F0ifm" value="Expert Mode" />
+        <node concept="VechU" id="1GXRyrT9Vi6" role="3F10Kt">
+          <property role="Vb096" value="magenta" />
+        </node>
+      </node>
+      <node concept="2SsqMj" id="1GXRyrT9Vi0" role="3EZMnx" />
+      <node concept="2iRkQZ" id="1GXRyrT9VhK" role="2iSdaV" />
     </node>
   </node>
 </model>

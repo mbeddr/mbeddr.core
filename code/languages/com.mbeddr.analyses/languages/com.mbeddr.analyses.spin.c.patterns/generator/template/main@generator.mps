@@ -1701,7 +1701,7 @@
   </node>
   <node concept="1N3YfO" id="6efVUW9vg_N">
     <property role="TrG5h" value="reduceVerificationHarnessToPromelaModel" />
-    <property role="3GE5qa" value="harness.module" />
+    <property role="3GE5qa" value="top_level" />
     <node concept="37Jyq6" id="4b2d3GUpL3a" role="N3F5h">
       <property role="TrG5h" value="c_decl_4810464780972658890" />
       <node concept="1PSHZ" id="1GXRyrT3mGi" role="fMItF">
