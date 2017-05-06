@@ -207,7 +207,7 @@
         </node>
         <node concept="3vlDli" id="2lN4cj_VAC5" role="3cqZAp">
           <node concept="Xl_RD" id="2lN4cj_VAC6" role="3tpDZB">
-            <property role="Xl_RC" value="Assert: my_arr[2] != 2 || my_arr[4] != 1" />
+            <property role="Xl_RC" value="Assert: anInteger != 3 || bool1 || !bool2" />
           </node>
           <node concept="2OqwBi" id="2lN4cj_VAC7" role="3tpDZA">
             <node concept="37vLTw" id="2lN4cj_VAC8" role="2Oq$k0">
@@ -234,44 +234,128 @@
             <ref role="3cqZAo" node="2lN4cj_VAC0" resolve="res" />
           </node>
           <node concept="30Azln" id="2lN4cj_VCjk" role="30Azl8">
-            <property role="30AzUg" value="my_arr[0]" />
-            <property role="30AzUs" value="10" />
+            <property role="30AzUg" value="anInteger" />
+            <property role="30AzUs" value="3" />
             <node concept="3Tqbb2" id="4b2d3GUl8vd" role="38rYrG">
               <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
             </node>
           </node>
           <node concept="30Azln" id="2lN4cj_VBAx" role="30Azl8">
-            <property role="30AzUg" value="my_arr[1]" />
-            <property role="30AzUs" value="10" />
+            <property role="30AzUg" value="bool1" />
+            <property role="30AzUs" value="0" />
             <node concept="3Tqbb2" id="4b2d3GUl8vn" role="38rYrG">
               <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
             </node>
           </node>
           <node concept="30Azln" id="2lN4cj_VCkC" role="30Azl8">
-            <property role="30AzUg" value="my_arr[2]" />
-            <property role="30AzUs" value="2" />
+            <property role="30AzUg" value="bool2" />
+            <property role="30AzUs" value="1" />
             <node concept="3Tqbb2" id="4b2d3GUl8vx" role="38rYrG">
               <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
             </node>
           </node>
-          <node concept="30Azln" id="2lN4cj_VCls" role="30Azl8">
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GXRyrSXyth" role="1SL9yI">
+      <property role="TrG5h" value="test2" />
+      <node concept="3cqZAl" id="1GXRyrSXyti" role="3clF45" />
+      <node concept="3clFbS" id="1GXRyrSXytj" role="3clF47">
+        <node concept="3cpWs8" id="1GXRyrSXytk" role="3cqZAp">
+          <node concept="3cpWsn" id="1GXRyrSXytl" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="1GXRyrSXytm" role="1tU5fm" />
+            <node concept="BaHAS" id="1GXRyrSXytn" role="33vP2m">
+              <property role="BaHAW" value="harness_patterns" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GXRyrSXyto" role="3cqZAp">
+          <node concept="3cpWsn" id="1GXRyrSXytp" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="1GXRyrSXytq" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="1GXRyrSXytr" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+              <node concept="37vLTw" id="1GXRyrSXyts" role="37wK5m">
+                <ref role="3cqZAo" node="1GXRyrSXytl" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="1GXRyrSXytt" role="37wK5m">
+                <property role="Xl_RC" value="_010_test_nondet_assign_02" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="1GXRyrSXytu" role="3cqZAp">
+          <node concept="Xl_RD" id="1GXRyrSXytv" role="3tpDZB">
+            <property role="Xl_RC" value="Assert: my_arr[2] != 2 || my_arr[4] != 1" />
+          </node>
+          <node concept="2OqwBi" id="1GXRyrSXytw" role="3tpDZA">
+            <node concept="37vLTw" id="1GXRyrSXytx" role="2Oq$k0">
+              <ref role="3cqZAo" node="1GXRyrSXytp" resolve="res" />
+            </node>
+            <node concept="liA8E" id="1GXRyrSXyty" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="1GXRyrSXytz" role="3cqZAp">
+          <node concept="2OqwBi" id="1GXRyrSXyt$" role="3vwVQn">
+            <node concept="37vLTw" id="1GXRyrSXyt_" role="2Oq$k0">
+              <ref role="3cqZAo" node="1GXRyrSXytp" resolve="res" />
+            </node>
+            <node concept="liA8E" id="1GXRyrSXytA" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1GXRyrSXytB" role="3cqZAp" />
+        <node concept="30AV9b" id="1GXRyrSXytC" role="3cqZAp">
+          <node concept="37vLTw" id="1GXRyrSXytD" role="30AzmL">
+            <ref role="3cqZAo" node="1GXRyrSXytp" resolve="res" />
+          </node>
+          <node concept="30Azln" id="1GXRyrSXytE" role="30Azl8">
+            <property role="30AzUg" value="my_arr[0]" />
+            <property role="30AzUs" value="10" />
+            <node concept="3Tqbb2" id="1GXRyrSXytF" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+          <node concept="30Azln" id="1GXRyrSXytG" role="30Azl8">
+            <property role="30AzUg" value="my_arr[1]" />
+            <property role="30AzUs" value="10" />
+            <node concept="3Tqbb2" id="1GXRyrSXytH" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+          <node concept="30Azln" id="1GXRyrSXytI" role="30Azl8">
+            <property role="30AzUg" value="my_arr[2]" />
+            <property role="30AzUs" value="2" />
+            <node concept="3Tqbb2" id="1GXRyrSXytJ" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+          <node concept="30Azln" id="1GXRyrSXytK" role="30Azl8">
             <property role="30AzUg" value="my_arr[3]" />
             <property role="30AzUs" value="10" />
-            <node concept="3Tqbb2" id="4b2d3GUl8vF" role="38rYrG">
+            <node concept="3Tqbb2" id="1GXRyrSXytL" role="38rYrG">
               <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
             </node>
           </node>
-          <node concept="30Azln" id="2lN4cj_VCqu" role="30Azl8">
+          <node concept="30Azln" id="1GXRyrSXytM" role="30Azl8">
             <property role="30AzUg" value="my_arr[4]" />
             <property role="30AzUs" value="1" />
-            <node concept="3Tqbb2" id="4b2d3GUl8vP" role="38rYrG">
+            <node concept="3Tqbb2" id="1GXRyrSXytN" role="38rYrG">
               <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
             </node>
           </node>
-          <node concept="30Azln" id="2lN4cj_VCru" role="30Azl8">
+          <node concept="30Azln" id="1GXRyrSXytO" role="30Azl8">
             <property role="30AzUg" value="my_arr[5]" />
             <property role="30AzUs" value="10" />
-            <node concept="3Tqbb2" id="4b2d3GUl8vZ" role="38rYrG">
+            <node concept="3Tqbb2" id="1GXRyrSXytP" role="38rYrG">
               <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
             </node>
           </node>
@@ -279,7 +363,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="1BFQdmK1ZoO" role="1SL9yI">
-      <property role="TrG5h" value="test2" />
+      <property role="TrG5h" value="test3" />
       <node concept="3cqZAl" id="1BFQdmK1ZoP" role="3clF45" />
       <node concept="3clFbS" id="1BFQdmK1ZoQ" role="3clF47">
         <node concept="3cpWs8" id="1BFQdmK1ZoR" role="3cqZAp">
@@ -305,7 +389,7 @@
                 <ref role="3cqZAo" node="1BFQdmK1ZoS" resolve="m" />
               </node>
               <node concept="Xl_RD" id="1BFQdmK1Zp0" role="37wK5m">
-                <property role="Xl_RC" value="_010_test_nondet_assign_02" />
+                <property role="Xl_RC" value="_010_test_nondet_assign_03" />
               </node>
             </node>
           </node>
@@ -437,49 +521,49 @@
             <property role="30AzUg" value="#Choice" />
             <property role="30AzUs" value="3" />
             <node concept="3Tqbb2" id="4b2d3GUl8tP" role="38rYrG">
-              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="CChoice" />
+              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="SingleChoice" />
             </node>
           </node>
           <node concept="30Azln" id="4b2d3GUkOCS" role="30Azl8">
             <property role="30AzUg" value="#Choice" />
             <property role="30AzUs" value="3" />
             <node concept="3Tqbb2" id="4b2d3GUl8tZ" role="38rYrG">
-              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="CChoice" />
+              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="SingleChoice" />
             </node>
           </node>
           <node concept="30Azln" id="4b2d3GUkOCU" role="30Azl8">
             <property role="30AzUg" value="#Choice" />
             <property role="30AzUs" value="3" />
             <node concept="3Tqbb2" id="4b2d3GUl8u9" role="38rYrG">
-              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="CChoice" />
+              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="SingleChoice" />
             </node>
           </node>
           <node concept="30Azln" id="4b2d3GUkOCW" role="30Azl8">
             <property role="30AzUg" value="#Choice" />
             <property role="30AzUs" value="3" />
             <node concept="3Tqbb2" id="4b2d3GUl8uj" role="38rYrG">
-              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="CChoice" />
+              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="SingleChoice" />
             </node>
           </node>
           <node concept="30Azln" id="4b2d3GUkOCY" role="30Azl8">
             <property role="30AzUg" value="#Choice" />
             <property role="30AzUs" value="3" />
             <node concept="3Tqbb2" id="4b2d3GUl8ut" role="38rYrG">
-              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="CChoice" />
+              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="SingleChoice" />
             </node>
           </node>
           <node concept="30Azln" id="4b2d3GUkOD0" role="30Azl8">
             <property role="30AzUg" value="#Choice" />
             <property role="30AzUs" value="1" />
             <node concept="3Tqbb2" id="4b2d3GUl8uB" role="38rYrG">
-              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="CChoice" />
+              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="SingleChoice" />
             </node>
           </node>
           <node concept="30Azln" id="4b2d3GUkP1c" role="30Azl8">
             <property role="30AzUg" value="#Choice" />
             <property role="30AzUs" value="2" />
             <node concept="3Tqbb2" id="4b2d3GUkP1d" role="38rYrG">
-              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="CChoice" />
+              <ref role="ehGHo" to="llb3:5hi7ucOryW$" resolve="SingleChoice" />
             </node>
           </node>
         </node>
