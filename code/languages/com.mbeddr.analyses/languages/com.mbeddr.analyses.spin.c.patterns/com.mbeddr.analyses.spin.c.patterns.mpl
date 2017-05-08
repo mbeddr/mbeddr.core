@@ -211,6 +211,7 @@
     <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
     <dependency reexport="false">3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+    <dependency reexport="false">4ddb29eb-11e5-46c6-a894-6b8a4c38587d(com.mbeddr.analyses.spin.promela.patterns)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="0" />
@@ -258,6 +259,7 @@
     <module reference="6ded8a47-f30e-4acf-a5f2-a70ec5472558(com.mbeddr.analyses.base.verification_conditions)" version="0" />
     <module reference="f027a490-7082-492e-99ce-dfe65d7342f7(com.mbeddr.analyses.spin.c.patterns)" version="0" />
     <module reference="877b0e90-e1a6-4468-970c-dcb3f49f95ed(com.mbeddr.analyses.spin.promela)" version="0" />
+    <module reference="4ddb29eb-11e5-46c6-a894-6b8a4c38587d(com.mbeddr.analyses.spin.promela.patterns)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="1" />
     <module reference="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" version="0" />
     <module reference="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" version="0" />

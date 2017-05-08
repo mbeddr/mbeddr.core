@@ -166,10 +166,6 @@
       <concept id="814457274763195488" name="com.mbeddr.analyses.spin.promela.patterns.structure.Assume" flags="ng" index="29GVNN">
         <child id="814457274763195489" name="cond" index="29GVNM" />
       </concept>
-      <concept id="817099092667797496" name="com.mbeddr.analyses.spin.promela.patterns.structure.Loop" flags="ng" index="2B_eiN">
-        <child id="817099092667798470" name="body" index="2B_fyd" />
-        <child id="817099092667798468" name="times" index="2B_fyf" />
-      </concept>
     </language>
     <language id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin">
       <concept id="3854501276819165429" name="com.mbeddr.analyses.spin.structure.AssertionsAnalysis" flags="ng" index="apm28" />
@@ -185,8 +181,8 @@
     </language>
     <language id="f027a490-7082-492e-99ce-dfe65d7342f7" name="com.mbeddr.analyses.spin.c.patterns">
       <concept id="7202707145649939149" name="com.mbeddr.analyses.spin.c.patterns.structure.MultiStep" flags="ng" index="2AlckL">
-        <child id="817099092667798470" name="body" index="2B_fye" />
-        <child id="817099092667798468" name="times" index="2B_fyg" />
+        <child id="817099092667798470" name="body" index="2B_fyd" />
+        <child id="817099092667798468" name="times" index="2B_fyf" />
       </concept>
       <concept id="1867824882771753822" name="com.mbeddr.analyses.spin.c.patterns.structure.AbstractAssign" flags="ng" index="2DPieb">
         <child id="1867824882772328136" name="vals" index="2DF6ot" />
@@ -786,10 +782,10 @@
           </node>
         </node>
         <node concept="2AlckL" id="4b2d3GUmDiF" role="3XIRFZ">
-          <node concept="3TlMh9" id="4b2d3GUmDjc" role="2B_fyg">
+          <node concept="3TlMh9" id="4b2d3GUmDjc" role="2B_fyf">
             <property role="2hmy$m" value="5" />
           </node>
-          <node concept="3XIRFW" id="4b2d3GUmDiJ" role="2B_fye">
+          <node concept="3XIRFW" id="4b2d3GUmDiJ" role="2B_fyd">
             <node concept="WlspI" id="6efVUW9Ayvo" role="3XIRFZ">
               <node concept="1S7827" id="1BFQdmKj2CB" role="Wlsuc">
                 <ref role="1S7826" node="6efVUW9Ayvi" resolve="evt" />
@@ -1207,8 +1203,11 @@
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="3XIRFW" id="5hi7ucOs3Jm" role="3XIRFX">
-        <node concept="2B_eiN" id="4b2d3GUjWiq" role="3XIRFZ">
-          <node concept="3XIRFW" id="4b2d3GUjWir" role="2B_fyd">
+        <node concept="2AlckL" id="1GXRyrTnA$X" role="3XIRFZ">
+          <node concept="3TlMh9" id="1GXRyrTnAAw" role="2B_fyf">
+            <property role="2hmy$m" value="10" />
+          </node>
+          <node concept="3XIRFW" id="1GXRyrTnA_1" role="2B_fyd">
             <node concept="1wf3b0" id="5hi7ucOs5yA" role="3XIRFZ">
               <node concept="1wf3b7" id="5hi7ucOs66P" role="1wf3a5">
                 <node concept="3XIRFW" id="5hi7ucOs66Q" role="1wf3b6">
@@ -1301,9 +1300,6 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="3TlMh9" id="4b2d3GUjWj1" role="2B_fyf">
-            <property role="2hmy$m" value="10" />
           </node>
         </node>
       </node>
@@ -1858,10 +1854,10 @@
       </node>
       <node concept="3XIRFW" id="4ly_4leQJK6" role="3XIRFX">
         <node concept="2AlckL" id="4ly_4leQO5p" role="3XIRFZ">
-          <node concept="3TlMh9" id="4ly_4leQO6M" role="2B_fyg">
+          <node concept="3TlMh9" id="4ly_4leQO6M" role="2B_fyf">
             <property role="2hmy$m" value="3" />
           </node>
-          <node concept="3XIRFW" id="4ly_4leQO5t" role="2B_fye">
+          <node concept="3XIRFW" id="4ly_4leQO5t" role="2B_fyd">
             <node concept="WlspI" id="4ly_4leQO7_" role="3XIRFZ">
               <node concept="1S7827" id="4ly_4leQO7I" role="Wlsuc">
                 <ref role="1S7826" node="4ly_4leQMKh" resolve="a" />
@@ -1981,10 +1977,10 @@
       </node>
       <node concept="3XIRFW" id="4ly_4leU_Ik" role="3XIRFX">
         <node concept="2AlckL" id="4ly_4leU_Il" role="3XIRFZ">
-          <node concept="3TlMh9" id="4ly_4leU_Im" role="2B_fyg">
+          <node concept="3TlMh9" id="4ly_4leU_Im" role="2B_fyf">
             <property role="2hmy$m" value="3" />
           </node>
-          <node concept="3XIRFW" id="4ly_4leU_In" role="2B_fye">
+          <node concept="3XIRFW" id="4ly_4leU_In" role="2B_fyd">
             <node concept="WlspI" id="4ly_4leUAmC" role="3XIRFZ">
               <node concept="1S7827" id="4ly_4leUAmD" role="Wlsuc">
                 <ref role="1S7826" node="4ly_4leU_Ia" resolve="a" />

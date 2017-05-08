@@ -170,6 +170,7 @@
     <property role="3GE5qa" value="statements" />
     <property role="34LRSv" value="assert" />
     <property role="EcuMT" value="6973658835837826905" />
+    <property role="R4oN_" value="a C-level assertion" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="3V3CJZuMSlV" role="PzmwI">
       <ref role="PrY4T" node="3V3CJZuMScE" resolve="IAssertLike" />
