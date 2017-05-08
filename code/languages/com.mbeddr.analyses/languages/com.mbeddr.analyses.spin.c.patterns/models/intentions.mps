@@ -102,7 +102,7 @@
             <node concept="17QB3L" id="1GXRyrT8r76" role="1tU5fm" />
             <node concept="3K4zz7" id="1GXRyrT8uIW" role="33vP2m">
               <node concept="Xl_RD" id="1GXRyrT8uYC" role="3K4E3e">
-                <property role="Xl_RC" value="Add " />
+                <property role="Xl_RC" value="Enter " />
               </node>
               <node concept="Xl_RD" id="1GXRyrT8vU2" role="3K4GZi">
                 <property role="Xl_RC" value="Remove " />
@@ -124,7 +124,7 @@
         <node concept="3clFbF" id="1GXRyrT8x5I" role="3cqZAp">
           <node concept="3cpWs3" id="1GXRyrT8xEj" role="3clFbG">
             <node concept="Xl_RD" id="1GXRyrT8xTu" role="3uHU7w">
-              <property role="Xl_RC" value="expert mode" />
+              <property role="Xl_RC" value="Expert Mode" />
             </node>
             <node concept="37vLTw" id="1GXRyrT8x5G" role="3uHU7B">
               <ref role="3cqZAo" node="1GXRyrT8r7b" resolve="msg" />

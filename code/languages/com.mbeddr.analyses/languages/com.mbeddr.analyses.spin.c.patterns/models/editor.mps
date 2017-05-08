@@ -773,9 +773,9 @@
     <ref role="1XX52x" to="llb3:1GXRyrT8qEm" resolve="ExpertMode" />
     <node concept="3EZMnI" id="1GXRyrT9VhH" role="2wV5jI">
       <node concept="3F0ifn" id="1GXRyrT9VhR" role="3EZMnx">
-        <property role="3F0ifm" value="Expert Mode" />
+        <property role="3F0ifm" value="&lt;&lt;&lt; Expert Mode &gt;&gt;&gt;" />
         <node concept="VechU" id="1GXRyrT9Vi6" role="3F10Kt">
-          <property role="Vb096" value="magenta" />
+          <property role="Vb096" value="DARK_GREEN" />
         </node>
       </node>
       <node concept="2SsqMj" id="1GXRyrT9Vi0" role="3EZMnx" />
