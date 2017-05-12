@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-    <devkit ref="537c2fcd-71ef-4c92-a9e5-27af92b5182b(com.mbeddr.analyses.promela.c)" />
+    <devkit ref="537c2fcd-71ef-4c92-a9e5-27af92b5182b(com.mbeddr.analyses.spin.mdcc)" />
     <devkit ref="de90e2e8-f051-4d49-9025-394f94f968b8(com.mbeddr.analyses.promela)" />
   </languages>
   <imports>
@@ -226,13 +226,7 @@
             </node>
           </node>
         </node>
-        <node concept="3XIRlf" id="4f352SjdqTM" role="3XIRFZ">
-          <property role="TrG5h" value="child" />
-          <node concept="2CFTTh" id="4f352SjdqTK" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
+        <node concept="3XISUE" id="4f352SjsW71" role="3XIRFZ" />
         <node concept="3XIRlf" id="4b_XKf42ROB" role="3XIRFZ">
           <property role="TrG5h" value="haschild" />
           <node concept="3TlMgk" id="4b_XKf42RO_" role="2C2TGm">
@@ -318,8 +312,8 @@
               <node concept="3ZVu4v" id="4f352Sjo_v9" role="33ZRtu">
                 <ref role="3ZVs_2" node="4b_XKf42RPC" resolve="n" />
               </node>
-              <node concept="3ZUYvv" id="4f352Sjo_uq" role="33ZRts">
-                <ref role="3ZUYvu" node="4b_XKf42RDh" resolve="c" />
+              <node concept="3ZUYvv" id="4f352SjsPxm" role="33ZRts">
+                <ref role="3ZUYvu" node="4f352SjsOke" resolve="c" />
               </node>
             </node>
           </node>
@@ -329,9 +323,9 @@
         </node>
         <node concept="3XISUE" id="4b_XKf42S3E" role="3XIRFZ" />
       </node>
-      <node concept="19RgSI" id="4b_XKf42RDh" role="1UOdpc">
+      <node concept="19RgSI" id="4f352SjsOke" role="1UOdpc">
         <property role="TrG5h" value="c" />
-        <node concept="2CFTTh" id="4b_XKf42RDg" role="2C2TGm">
+        <node concept="2CFTTh" id="4f352SjsOkc" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
