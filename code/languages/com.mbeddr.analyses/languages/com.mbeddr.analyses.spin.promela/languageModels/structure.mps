@@ -2,7 +2,7 @@
 <model ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
@@ -87,6 +87,7 @@
     <property role="TrG5h" value="ProcType" />
     <property role="34LRSv" value="proctype" />
     <property role="EcuMT" value="799927705160539981" />
+    <property role="R4oN_" value="proctype" />
     <ref role="1TJDcQ" to="x27k:5_l8w1EmTvx" resolve="Function" />
     <node concept="PrWs8" id="GpUw9S6QMd" role="PzmwI">
       <ref role="PrY4T" node="GpUw9S5_Xa" resolve="IPromelaModelContent" />
@@ -129,6 +130,7 @@
     <property role="TrG5h" value="IntType" />
     <property role="34LRSv" value="int" />
     <property role="EcuMT" value="799927705160941637" />
+    <property role="R4oN_" value="int" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="PrWs8" id="GpUw9S7816" role="PzmwI">
       <ref role="PrY4T" node="GpUw9S7577" resolve="IPromelaType" />
@@ -211,6 +213,7 @@
     <property role="TrG5h" value="IfStatement" />
     <property role="34LRSv" value="if" />
     <property role="EcuMT" value="2390327893063450455" />
+    <property role="R4oN_" value="if ... fi" />
     <ref role="1TJDcQ" node="6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="24G9CRyKntD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -283,6 +286,7 @@
     <property role="TrG5h" value="Mtype" />
     <property role="34LRSv" value="mtype" />
     <property role="EcuMT" value="2390327893064016125" />
+    <property role="R4oN_" value="mtype" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="24G9CRyN9BT" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -326,8 +330,8 @@
     <property role="TrG5h" value="ChanDeclaration" />
     <property role="34LRSv" value="chan" />
     <property role="EcuMT" value="2390327893064382862" />
-    <property role="R4oN_" value="Promela channel" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="R4oN_" value="chan xyz[.] of {...}" />
+    <ref role="1TJDcQ" node="6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="24G9CRyNRB9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="types" />
@@ -355,6 +359,7 @@
     <property role="TrG5h" value="Send" />
     <property role="34LRSv" value="!" />
     <property role="EcuMT" value="2390327893064574923" />
+    <property role="R4oN_" value="send" />
     <ref role="1TJDcQ" node="6efVUW9vti1" resolve="PromelaStatementBase" />
     <node concept="1TJgyj" id="24G9CRyOAvc" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -398,6 +403,7 @@
     <property role="TrG5h" value="ChanType" />
     <property role="34LRSv" value="chan" />
     <property role="EcuMT" value="8747172231534849181" />
+    <property role="R4oN_" value="channel" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="PrWs8" id="4b_XKf42ShD" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -503,6 +509,7 @@
     <property role="34LRSv" value="inline" />
     <property role="3GE5qa" value="macro" />
     <property role="EcuMT" value="1737851622209517856" />
+    <property role="R4oN_" value="inline" />
     <ref role="1TJDcQ" to="x27k:5_l8w1EmTvx" resolve="Function" />
     <node concept="PrWs8" id="1wu5Hv68BNc" role="PzmwI">
       <ref role="PrY4T" node="GpUw9S5_Xa" resolve="IPromelaModelContent" />
