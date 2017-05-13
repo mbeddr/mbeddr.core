@@ -104,6 +104,9 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -266,8 +269,8 @@
         </node>
         <node concept="mw_s8" id="24G9CRyNG28" role="1ZfhKB">
           <node concept="2pJPEk" id="24G9CRyNG29" role="mwGJk">
-            <node concept="2pJPED" id="24G9CRyNG2a" role="2pJPEn">
-              <ref role="2pJxaS" to="mj1l:7lNBHBNBzyt" resolve="UnsignedInt8tType" />
+            <node concept="2pJPED" id="4f352SjqCb$" role="2pJPEn">
+              <ref role="2pJxaS" to="ir22:7_$cGNhPZty" resolve="MtypeType" />
             </node>
           </node>
         </node>
@@ -283,10 +286,15 @@
     <property role="3GE5qa" value="type.mtype" />
     <node concept="3clFbS" id="24G9CRyNs3e" role="18ibNy">
       <node concept="1Z5TYs" id="24G9CRyNs3K" role="3cqZAp">
-        <node concept="mw_s8" id="24G9CRyNs3L" role="1ZfhKB">
-          <node concept="2pJPEk" id="24G9CRyNs3M" role="mwGJk">
-            <node concept="2pJPED" id="24G9CRyNs3N" role="2pJPEn">
-              <ref role="2pJxaS" to="mj1l:7lNBHBNBzyt" resolve="UnsignedInt8tType" />
+        <node concept="mw_s8" id="4f352SjqDeh" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4f352SjqDe9" role="mwGJk">
+            <node concept="2OqwBi" id="4f352SjqDqw" role="1Z2MuG">
+              <node concept="1YBJjd" id="4f352SjqDey" role="2Oq$k0">
+                <ref role="1YBMHb" node="24G9CRyNs3g" resolve="litRef" />
+              </node>
+              <node concept="3TrEf2" id="4f352SjqDE1" role="2OqNvi">
+                <ref role="3Tt5mk" to="ir22:24G9CRyNs2N" resolve="literal" />
+              </node>
             </node>
           </node>
         </node>
