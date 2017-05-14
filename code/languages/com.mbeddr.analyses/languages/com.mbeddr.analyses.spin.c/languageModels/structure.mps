@@ -72,13 +72,16 @@
     <property role="TrG5h" value="CCodeStmt" />
     <property role="34LRSv" value="c_code" />
     <property role="EcuMT" value="7420192473454530718" />
-    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="6rTOrQxlzCt" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="stmts" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7420192473455409693" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="7Hmzdkr1hpM" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="6rTOrQxiyn3">

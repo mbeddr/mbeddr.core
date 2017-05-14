@@ -988,6 +988,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="24G9CRyPCAa">
+    <property role="3GE5qa" value="declaration" />
     <ref role="WuzLi" to="ir22:24G9CRyNRAe" resolve="ChanDeclaration" />
     <node concept="11bSqf" id="24G9CRyPCAb" role="11c4hB">
       <node concept="3clFbS" id="24G9CRyPCAc" role="2VODD2">

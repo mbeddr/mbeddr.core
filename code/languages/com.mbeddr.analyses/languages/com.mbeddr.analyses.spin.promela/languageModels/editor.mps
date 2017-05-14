@@ -16,6 +16,7 @@
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -871,6 +872,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="24G9CRyNRBg">
+    <property role="3GE5qa" value="declaration" />
     <ref role="1XX52x" to="ir22:24G9CRyNRAe" resolve="ChanDeclaration" />
     <node concept="3EZMnI" id="1RC3LaKzeAM" role="2wV5jI">
       <node concept="3F0ifn" id="4b_XKf43xXe" role="3EZMnx">
@@ -1370,6 +1372,35 @@
         <ref role="1NtTu8" to="ir22:1RC3LaKEhQ7" resolve="body" />
       </node>
       <node concept="l2Vlx" id="1RC3LaKEhPi" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7Hmzdkr1gL_">
+    <property role="3GE5qa" value="declaration" />
+    <ref role="1XX52x" to="ir22:7Hmzdkr1g74" resolve="PromelaLocalVariableDeclaration" />
+    <node concept="3EZMnI" id="7Hmzdkr1gLB" role="2wV5jI">
+      <node concept="1kIj98" id="7Hmzdkr1gNg" role="3EZMnx">
+        <node concept="3F1sOY" id="7Hmzdkr1gNE" role="1kIj9b">
+          <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="7Hmzdkr1gM4" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="7Hmzdkr1gO9" role="3EZMnx">
+        <node concept="3EZMnI" id="7Hmzdkr1gMn" role="_tjki">
+          <node concept="VPM3Z" id="7Hmzdkr1gMp" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="7Hmzdkr1gME" role="3EZMnx">
+            <property role="3F0ifm" value="=" />
+          </node>
+          <node concept="3F1sOY" id="7Hmzdkr1gMT" role="3EZMnx">
+            <ref role="1NtTu8" to="c4fa:3CmSUB7Fw7R" resolve="init" />
+          </node>
+          <node concept="l2Vlx" id="7Hmzdkr1gMs" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7Hmzdkr1gLE" role="2iSdaV" />
     </node>
   </node>
 </model>

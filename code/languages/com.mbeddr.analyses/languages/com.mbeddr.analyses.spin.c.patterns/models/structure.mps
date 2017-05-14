@@ -112,7 +112,7 @@
     <property role="3GE5qa" value="harness.multistep" />
     <property role="TrG5h" value="MultiStep" />
     <property role="34LRSv" value="multistep" />
-    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="HmUOIGKxf4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="times" />
@@ -126,6 +126,9 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="817099092667798470" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="7Hmzdkr1hqs" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="36pDmrEZ2Bs">
@@ -154,7 +157,7 @@
     <property role="3GE5qa" value="harness.choice" />
     <property role="TrG5h" value="NondetChoice" />
     <property role="34LRSv" value="nondet choice" />
-    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="5hi7ucOryXA" role="1TKVEi">
       <property role="IQ2ns" value="6075951708950638438" />
       <property role="20lmBu" value="aggregation" />
@@ -168,6 +171,9 @@
       <property role="20kJfa" value="else" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5hi7ucOryXC" resolve="DefaultChoice" />
+    </node>
+    <node concept="PrWs8" id="7Hmzdkr1hqv" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="5hi7ucOryW$">
@@ -273,7 +279,7 @@
     <property role="TrG5h" value="AbstractAssign" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="45nq91X0EWs" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="exp" />
@@ -286,6 +292,9 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="vals" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="7Hmzdkr1hpu" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="5RNtn4ccJZN">
@@ -305,7 +314,7 @@
     <property role="EcuMT" value="6769883793264065291" />
     <property role="3GE5qa" value="harness.foreach" />
     <property role="R4oN_" value="foreach iterator" />
-    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="5RNtn4cbrGh" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="iter" />
@@ -329,6 +338,9 @@
     </node>
     <node concept="PrWs8" id="5RNtn4cc5Ln" role="PzmwI">
       <ref role="PrY4T" to="k146:6viY8n0hYkZ" resolve="IRangeContext" />
+    </node>
+    <node concept="PrWs8" id="7Hmzdkr1hqg" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="1BFQdmKbEJq">
