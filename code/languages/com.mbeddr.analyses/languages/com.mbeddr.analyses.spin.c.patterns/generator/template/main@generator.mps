@@ -2609,8 +2609,8 @@
             <node concept="2OqwBi" id="6efVUW9$vJm" role="3clFbw">
               <node concept="30H73N" id="6efVUW9$vJn" role="2Oq$k0" />
               <node concept="1mIQ4w" id="6efVUW9$vJo" role="2OqNvi">
-                <node concept="chp4Y" id="6efVUW9$vJp" role="cj9EA">
-                  <ref role="cht4Q" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+                <node concept="chp4Y" id="7Hmzdkr1j_E" role="cj9EA">
+                  <ref role="cht4Q" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
                 </node>
               </node>
             </node>
@@ -2773,8 +2773,8 @@
                 <node concept="30H73N" id="5hi7ucOvvMw" role="37wK5m" />
               </node>
               <node concept="1mIQ4w" id="5hi7ucOvxiY" role="2OqNvi">
-                <node concept="chp4Y" id="5hi7ucOvxUn" role="cj9EA">
-                  <ref role="cht4Q" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+                <node concept="chp4Y" id="7Hmzdkr1kaz" role="cj9EA">
+                  <ref role="cht4Q" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
                 </node>
               </node>
             </node>
@@ -2951,8 +2951,8 @@
                   <node concept="30H73N" id="4ly_4leEth$" role="2Oq$k0" />
                   <node concept="2Xjw5R" id="4ly_4leEth_" role="2OqNvi">
                     <node concept="1xMEDy" id="4ly_4leEthA" role="1xVPHs">
-                      <node concept="chp4Y" id="4ly_4leEthB" role="ri$Ld">
-                        <ref role="cht4Q" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+                      <node concept="chp4Y" id="7Hmzdkr1kHD" role="ri$Ld">
+                        <ref role="cht4Q" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
                       </node>
                     </node>
                   </node>
@@ -3210,8 +3210,8 @@
                 <node concept="30H73N" id="4ly_4leDjYW" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="4ly_4leDV68" role="2OqNvi">
                   <node concept="1xMEDy" id="4ly_4leDV6a" role="1xVPHs">
-                    <node concept="chp4Y" id="4ly_4leDVUN" role="ri$Ld">
-                      <ref role="cht4Q" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+                    <node concept="chp4Y" id="7Hmzdkr1i71" role="ri$Ld">
+                      <ref role="cht4Q" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
                     </node>
                   </node>
                 </node>

@@ -468,6 +468,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="24G9CRyO8dH">
+    <property role="3GE5qa" value="declaration" />
     <ref role="13h7C2" to="ir22:24G9CRyNRAe" resolve="ChanDeclaration" />
     <node concept="13hLZK" id="24G9CRyO8dI" role="13h7CW">
       <node concept="3clFbS" id="24G9CRyO8dJ" role="2VODD2" />
