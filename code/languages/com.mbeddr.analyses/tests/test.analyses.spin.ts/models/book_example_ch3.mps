@@ -55,6 +55,8 @@
       <concept id="9065467049589299473" name="com.mbeddr.analyses.spin.promela.structure.Printf" flags="ng" index="1g25Hh">
         <child id="9065467049589299474" name="args" index="1g25Hi" />
       </concept>
+      <concept id="8887445761571491105" name="com.mbeddr.analyses.spin.promela.structure.PromelaLocalVarRef" flags="ng" index="1wkS7O" />
+      <concept id="8887445761571488196" name="com.mbeddr.analyses.spin.promela.structure.PromelaLocalVariableDeclaration" flags="ng" index="1wkSOh" />
       <concept id="799927705160941637" name="com.mbeddr.analyses.spin.promela.structure.IntType" flags="ng" index="1N1mD7" />
       <concept id="799927705160539981" name="com.mbeddr.analyses.spin.promela.structure.ProcType" flags="ng" index="1N3Vlf">
         <property id="2935779374999680025" name="active" index="2DuWZg" />
@@ -240,9 +242,9 @@
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="3XIRFW" id="4f352Sjfvod" role="3XIRFX">
-        <node concept="3XIRlf" id="4f352Sjfvpf" role="3XIRFZ">
+        <node concept="1wkSOh" id="7Hmzdkr97O4" role="3XIRFZ">
           <property role="TrG5h" value="who" />
-          <node concept="2CFTTh" id="4f352Sjfvpd" role="2C2TGm">
+          <node concept="2CFTTh" id="7Hmzdkr97O3" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
@@ -255,8 +257,8 @@
           <node concept="33SuoZ" id="4f352Sjfvta" role="33ZRtu">
             <ref role="33SuoY" node="4f352SjfueC" resolve="offhook" />
           </node>
-          <node concept="3ZVu4v" id="4f352Sjfvtx" role="33ZRtu">
-            <ref role="3ZVs_2" node="4f352Sjfvpf" resolve="who" />
+          <node concept="1wkS7O" id="7Hmzdkr97O5" role="33ZRtu">
+            <ref role="3ZVs_2" node="7Hmzdkr97O4" resolve="who" />
           </node>
           <node concept="2CGnA8" id="4f352SjsVYJ" role="33ZRts">
             <ref role="2CGnA6" node="4f352SjsVW_" resolve="line" />
@@ -267,21 +269,21 @@
             <node concept="33SuoZ" id="4f352SjfvuN" role="33Z$53">
               <ref role="33SuoY" node="4f352Sjfvmn" resolve="dialtone" />
             </node>
-            <node concept="3ZVu4v" id="4f352Sjfvup" role="33Z$51">
-              <ref role="3ZVs_2" node="4f352Sjfvpf" resolve="who" />
+            <node concept="1wkS7O" id="7Hmzdkr97O6" role="33Z$51">
+              <ref role="3ZVs_2" node="7Hmzdkr97O4" resolve="who" />
             </node>
           </node>
           <node concept="33ZRtt" id="4f352Sjfvvh" role="3XIRFZ">
             <node concept="33SuoZ" id="4f352SjfvvM" role="33ZRtu">
               <ref role="33SuoY" node="4f352Sjfvmw" resolve="number" />
             </node>
-            <node concept="3ZVu4v" id="4f352Sjfvvf" role="33ZRts">
-              <ref role="3ZVs_2" node="4f352Sjfvpf" resolve="who" />
+            <node concept="1wkS7O" id="7Hmzdkr97O7" role="33ZRts">
+              <ref role="3ZVs_2" node="7Hmzdkr97O4" resolve="who" />
             </node>
           </node>
           <node concept="1_9egQ" id="4f352SjqC7f" role="3XIRFZ">
-            <node concept="3ZVu4v" id="4f352SjqC7d" role="1_9egR">
-              <ref role="3ZVs_2" node="4f352Sjfvpf" resolve="who" />
+            <node concept="1wkS7O" id="7Hmzdkr97O8" role="1_9egR">
+              <ref role="3ZVs_2" node="7Hmzdkr97O4" resolve="who" />
             </node>
           </node>
           <node concept="33VhBq" id="4f352Sjfvwd" role="3XIRFZ">
@@ -290,8 +292,8 @@
                 <node concept="33SuoZ" id="4f352Sjfvxa" role="33Z$53">
                   <ref role="33SuoY" node="4f352SjfvmS" resolve="busy" />
                 </node>
-                <node concept="3ZVu4v" id="4f352SjfvwH" role="33Z$51">
-                  <ref role="3ZVs_2" node="4f352Sjfvpf" resolve="who" />
+                <node concept="1wkS7O" id="7Hmzdkr97O9" role="33Z$51">
+                  <ref role="3ZVs_2" node="7Hmzdkr97O4" resolve="who" />
                 </node>
               </node>
               <node concept="3ITNCe" id="4f352SjfvAn" role="33Vm3I">
@@ -303,8 +305,8 @@
                 <node concept="33SuoZ" id="4f352SjfvCg" role="33Z$53">
                   <ref role="33SuoY" node="4f352SjfvmH" resolve="ringing" />
                 </node>
-                <node concept="3ZVu4v" id="4f352SjfvBH" role="33Z$51">
-                  <ref role="3ZVs_2" node="4f352Sjfvpf" resolve="who" />
+                <node concept="1wkS7O" id="7Hmzdkr97Oa" role="33Z$51">
+                  <ref role="3ZVs_2" node="7Hmzdkr97O4" resolve="who" />
                 </node>
               </node>
               <node concept="3XIRFW" id="4f352SjfvDi" role="33Vm3I">
@@ -312,8 +314,8 @@
                   <node concept="33SuoZ" id="4f352SjfvE2" role="33Z$53">
                     <ref role="33SuoY" node="4f352Sjfvn4" resolve="connected" />
                   </node>
-                  <node concept="3ZVu4v" id="4f352SjfvDC" role="33Z$51">
-                    <ref role="3ZVs_2" node="4f352Sjfvpf" resolve="who" />
+                  <node concept="1wkS7O" id="7Hmzdkr97Ob" role="33Z$51">
+                    <ref role="3ZVs_2" node="7Hmzdkr97O4" resolve="who" />
                   </node>
                 </node>
                 <node concept="33VhBq" id="4f352SjfvEq" role="3XIRFZ">
@@ -322,8 +324,8 @@
                       <node concept="33SuoZ" id="4f352SjfvFr" role="33Z$53">
                         <ref role="33SuoY" node="4f352Sjfvny" resolve="hungup" />
                       </node>
-                      <node concept="3ZVu4v" id="4f352SjfvES" role="33Z$51">
-                        <ref role="3ZVs_2" node="4f352Sjfvpf" resolve="who" />
+                      <node concept="1wkS7O" id="7Hmzdkr97Oc" role="33Z$51">
+                        <ref role="3ZVs_2" node="7Hmzdkr97O4" resolve="who" />
                       </node>
                     </node>
                     <node concept="3ITNCe" id="4f352SjfvFT" role="33Vm3I">
@@ -357,8 +359,8 @@
           <node concept="33SuoZ" id="4f352Sjfv$i" role="33ZRtu">
             <ref role="33SuoY" node="4f352Sjfvnh" resolve="hangup" />
           </node>
-          <node concept="3ZVu4v" id="4f352Sjfvz_" role="33ZRts">
-            <ref role="3ZVs_2" node="4f352Sjfvpf" resolve="who" />
+          <node concept="1wkS7O" id="7Hmzdkr97Od" role="33ZRts">
+            <ref role="3ZVs_2" node="7Hmzdkr97O4" resolve="who" />
           </node>
         </node>
         <node concept="3ITNCe" id="4f352Sjfv$Z" role="3XIRFZ">
