@@ -2838,6 +2838,9 @@
       <node concept="m$f5U" id="4be$WTb1NGr" role="m$_yh">
         <ref role="m$f5T" node="4be$WTb1AxY" resolve="de.itemis.mps.editor.diagram" />
       </node>
+      <node concept="m$f5U" id="5l4WPWBtqVI" role="m$_yh">
+        <ref role="m$f5T" node="5l4WPWBtn07" resolve="de.itemis.mps.editor.diagram.devkit" />
+      </node>
       <node concept="m$_yC" id="4be$WTb1MZJ" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
@@ -3372,29 +3375,6 @@
           <property role="2GAjPV" value="false" />
         </node>
       </node>
-      <node concept="3LEwk6" id="5kDpuTS3hez" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.itemis.mps.editor.diagram.devkit" />
-        <property role="3LESm3" value="b1972fb0-9171-4e58-8cee-05866bb91ec2" />
-        <node concept="398BVA" id="5kDpuTS3htL" role="3LF7KH">
-          <ref role="398BVh" node="3vzyAKEJSiZ" resolve="sl-all.home" />
-          <node concept="2Ry0Ak" id="5kDpuTS3ink" role="iGT6I">
-            <property role="2Ry0Am" value="diagram" />
-            <node concept="2Ry0Ak" id="3vzyAKEK3lS" role="2Ry0An">
-              <property role="2Ry0Am" value="devkits" />
-              <node concept="2Ry0Ak" id="3vzyAKEK3lR" role="2Ry0An">
-                <property role="2Ry0Am" value="de.itemis.mps.editor.diagram.devkit.devkit" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3LEDTy" id="5kDpuTS3jgQ" role="3LEDUa">
-          <ref role="3LEDTV" node="56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
-        </node>
-        <node concept="3LEDTy" id="5kDpuTS3jgR" role="3LEDUa">
-          <ref role="3LEDTV" node="4be$WTb1CbJ" resolve="de.itemis.mps.editor.diagram" />
-        </node>
-      </node>
       <node concept="1E1JtA" id="6$6tsX_CURF" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="de.slisson.mps.structurecheck.runtime" />
@@ -3460,6 +3440,32 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KZG" resolve="jetbrains.mps.baseLanguage.closures" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="5l4WPWBtn07" role="3989C9">
+      <property role="TrG5h" value="de.itemis.mps.editor.diagram.devkit" />
+      <node concept="3LEwk6" id="5kDpuTS3hez" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="de.itemis.mps.editor.diagram.devkit" />
+        <property role="3LESm3" value="b1972fb0-9171-4e58-8cee-05866bb91ec2" />
+        <node concept="398BVA" id="5kDpuTS3htL" role="3LF7KH">
+          <ref role="398BVh" node="3vzyAKEJSiZ" resolve="sl-all.home" />
+          <node concept="2Ry0Ak" id="5kDpuTS3ink" role="iGT6I">
+            <property role="2Ry0Am" value="diagram" />
+            <node concept="2Ry0Ak" id="3vzyAKEK3lS" role="2Ry0An">
+              <property role="2Ry0Am" value="devkits" />
+              <node concept="2Ry0Ak" id="3vzyAKEK3lR" role="2Ry0An">
+                <property role="2Ry0Am" value="de.itemis.mps.editor.diagram.devkit.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="5kDpuTS3jgQ" role="3LEDUa">
+          <ref role="3LEDTV" node="56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
+        </node>
+        <node concept="3LEDTy" id="5kDpuTS3jgR" role="3LEDUa">
+          <ref role="3LEDTV" node="4be$WTb1CbJ" resolve="de.itemis.mps.editor.diagram" />
         </node>
       </node>
     </node>

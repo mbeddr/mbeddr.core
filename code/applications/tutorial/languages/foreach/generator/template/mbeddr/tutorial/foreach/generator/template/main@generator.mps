@@ -99,9 +99,12 @@
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
@@ -201,7 +204,6 @@
                           <node concept="3clFbF" id="6URxCt9p7m_" role="3cqZAp">
                             <node concept="2OqwBi" id="6URxCt9p7ob" role="3clFbG">
                               <node concept="1PxgMI" id="6URxCt9p7nP" role="2Oq$k0">
-                                <ref role="1m5ApE" to="yq40:4VhroexOKM1" resolve="ArrayType" />
                                 <node concept="2OqwBi" id="6URxCt9p7nn" role="1m5AlR">
                                   <node concept="2OqwBi" id="6URxCt9p7mV" role="2Oq$k0">
                                     <node concept="30H73N" id="6URxCt9p7mA" role="2Oq$k0" />
@@ -210,6 +212,9 @@
                                     </node>
                                   </node>
                                   <node concept="3JvlWi" id="6URxCt9p7nv" role="2OqNvi" />
+                                </node>
+                                <node concept="chp4Y" id="OnnrMNmSPw" role="3oSUPX">
+                                  <ref role="cht4Q" to="yq40:4VhroexOKM1" resolve="ArrayType" />
                                 </node>
                               </node>
                               <node concept="3TrEf2" id="R7C7bPcbaJ" role="2OqNvi">

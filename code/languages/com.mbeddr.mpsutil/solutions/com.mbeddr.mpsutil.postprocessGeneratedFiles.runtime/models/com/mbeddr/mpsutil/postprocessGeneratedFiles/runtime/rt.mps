@@ -41,9 +41,6 @@
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -61,7 +58,6 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -138,7 +134,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
-      <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -402,51 +397,16 @@
       <property role="od$2w" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="5pm8$ZezCJ7" role="3clF47">
-        <node concept="3cpWs8" id="5pm8$ZezCJ8" role="3cqZAp">
-          <node concept="3cpWsn" id="5pm8$ZezCJ9" role="3cpWs9">
-            <property role="TrG5h" value="sourceGenPath" />
-            <node concept="17QB3L" id="5pm8$ZezCJa" role="1tU5fm" />
-            <node concept="2YIFZM" id="5pm8$ZezCJb" role="33vP2m">
-              <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
-              <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-              <node concept="37vLTw" id="5pm8$ZezCJc" role="37wK5m">
-                <ref role="3cqZAo" node="5pm8$ZezCJx" resolve="modl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="5pm8$ZezCJf" role="3cqZAp">
-          <node concept="3cpWsn" id="5pm8$ZezCJg" role="3cpWs9">
-            <property role="TrG5h" value="modelPath" />
-            <node concept="17QB3L" id="5pm8$ZezCJh" role="1tU5fm" />
-            <node concept="2OqwBi" id="5pm8$ZezCJi" role="33vP2m">
-              <node concept="2OqwBi" id="5pm8$ZezCJj" role="2Oq$k0">
-                <node concept="37vLTw" id="5pm8$ZezCJk" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5pm8$ZezCJx" resolve="modl" />
-                </node>
-                <node concept="LkI2h" id="5pm8$ZezCJl" role="2OqNvi" />
-              </node>
-              <node concept="liA8E" id="5pm8$ZezCJm" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
-                <node concept="Xl_RD" id="5pm8$ZezCJn" role="37wK5m">
-                  <property role="Xl_RC" value="." />
-                </node>
-                <node concept="Xl_RD" id="5pm8$ZezCJo" role="37wK5m">
-                  <property role="Xl_RC" value="/" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="5pm8$ZezCJr" role="3cqZAp">
           <node concept="2YIFZM" id="5pm8$ZezCJs" role="3cqZAk">
             <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
             <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...):java.nio.file.Path" resolve="get" />
-            <node concept="37vLTw" id="5pm8$ZezCJt" role="37wK5m">
-              <ref role="3cqZAo" node="5pm8$ZezCJ9" resolve="sourceGenPath" />
-            </node>
-            <node concept="37vLTw" id="5pm8$ZezCJu" role="37wK5m">
-              <ref role="3cqZAo" node="5pm8$ZezCJg" resolve="modelPath" />
+            <node concept="2YIFZM" id="6BNByWjan5O" role="37wK5m">
+              <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
+              <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+              <node concept="37vLTw" id="6BNByWjan5P" role="37wK5m">
+                <ref role="3cqZAo" node="5pm8$ZezCJx" resolve="modl" />
+              </node>
             </node>
           </node>
         </node>

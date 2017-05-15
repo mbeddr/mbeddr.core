@@ -2,7 +2,7 @@
 <model ref="r:a5028552-d4c2-4e46-974e-7d1f1358a340(mbeddr.tutorial.blocks.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -105,8 +105,8 @@
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -320,9 +320,11 @@
                 <node concept="3clFbS" id="3NI0$JEbQKS" role="1bW5cS">
                   <node concept="3clFbF" id="3NI0$JEbQKV" role="3cqZAp">
                     <node concept="1PxgMI" id="3NI0$JEbQLh" role="3clFbG">
-                      <ref role="1m5ApE" to="bgic:3NI0$JEby1z" resolve="Port" />
                       <node concept="37vLTw" id="6Jhc0CXtV1D" role="1m5AlR">
                         <ref role="3cqZAo" node="3NI0$JEbQKT" resolve="it" />
+                      </node>
+                      <node concept="chp4Y" id="OnnrMNmSPg" role="3oSUPX">
+                        <ref role="cht4Q" to="bgic:3NI0$JEby1z" resolve="Port" />
                       </node>
                     </node>
                   </node>
@@ -479,9 +481,11 @@
                 <node concept="3clFbS" id="3NI0$JEbQLE" role="1bW5cS">
                   <node concept="3clFbF" id="3NI0$JEbQLF" role="3cqZAp">
                     <node concept="1PxgMI" id="3NI0$JEbQLG" role="3clFbG">
-                      <ref role="1m5ApE" to="bgic:3NI0$JEby2b" resolve="Property" />
                       <node concept="37vLTw" id="6Jhc0CXtV0g" role="1m5AlR">
                         <ref role="3cqZAo" node="3NI0$JEbQLI" resolve="it" />
+                      </node>
+                      <node concept="chp4Y" id="OnnrMNmSPh" role="3oSUPX">
+                        <ref role="cht4Q" to="bgic:3NI0$JEby2b" resolve="Property" />
                       </node>
                     </node>
                   </node>

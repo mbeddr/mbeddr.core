@@ -3,7 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
+    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
   </languages>
   <imports />
   <registry>
@@ -23,10 +24,11 @@
         <child id="8624890525767800827" name="spec" index="3SH5f7" />
       </concept>
     </language>
-    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -43,38 +45,44 @@
     <property role="3GE5qa" value="config" />
     <node concept="2SbYGw" id="2fBMM_3XZ4D" role="2SbYGa">
       <property role="TrG5h" value="images" />
-      <node concept="9PVaO" id="2fBMM_3XZ4E" role="9PVG_">
-        <property role="3N1Lgt" value="images" />
+      <node concept="9PVaO" id="OnnrMNolpf" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
     <node concept="2SbYGw" id="2fBMM_3XZ4F" role="2SbYGa">
       <property role="TrG5h" value="smimages" />
-      <node concept="9PVaO" id="2fBMM_3XZ4G" role="9PVG_">
-        <property role="3N1Lgt" value="images/cextensions/statemachines" />
+      <node concept="9PVaO" id="OnnrMNolpi" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
     <node concept="2SbYGw" id="2fBMM_3XZ4H" role="2SbYGa">
       <property role="TrG5h" value="conceptImages" />
-      <node concept="9PVaO" id="2fBMM_3XZ4I" role="9PVG_">
-        <property role="3N1Lgt" value="images/concepts" />
+      <node concept="9PVaO" id="OnnrMNolpl" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
     <node concept="2SbYGw" id="2fBMM_3XZ4J" role="2SbYGa">
       <property role="TrG5h" value="hwimages" />
-      <node concept="9PVaO" id="2fBMM_3XZ4K" role="9PVG_">
-        <property role="3N1Lgt" value="images/ctooling/helloWolrd" />
+      <node concept="9PVaO" id="OnnrMNolpo" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
     <node concept="2SbYGw" id="2fBMM_3XZ4L" role="2SbYGa">
       <property role="TrG5h" value="fundamentalImages" />
-      <node concept="9PVaO" id="2fBMM_3XZ4M" role="9PVG_">
-        <property role="3N1Lgt" value="images/fundamentals" />
+      <node concept="9PVaO" id="OnnrMNolpr" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
     <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
       <property role="TrG5h" value="imagesProcessSupport" />
-      <node concept="9PVaO" id="7aNtjNm4Cpc" role="9PVG_">
-        <property role="3N1Lgt" value="images/processSupport" />
+      <node concept="9PVaO" id="OnnrMNolpu" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
     <node concept="3SH5f5" id="2fBMM_3XZ4N" role="3SH5Mq">
@@ -91,8 +99,9 @@
     </node>
     <node concept="2SbYGw" id="2fBMM_3XZ4R" role="Cbewh">
       <property role="TrG5h" value="vis" />
-      <node concept="9PVaO" id="2fBMM_3XZ4S" role="9PVG_">
-        <property role="3N1Lgt" value="_vis" />
+      <node concept="9PVaO" id="OnnrMNolpx" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
   </node>

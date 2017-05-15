@@ -4,7 +4,7 @@
   <languages>
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -444,6 +444,18 @@
                 </node>
                 <node concept="27S6Sx" id="2hmLFg9JdaZ" role="3EZMnx">
                   <ref role="1NtTu8" to="hj5x:3x0R1LJfFaV" resolve="check_unsigned_overflow" />
+                </node>
+              </node>
+              <node concept="3EZMnI" id="6BNByWj0GHy" role="3EZMnx">
+                <node concept="VPM3Z" id="6BNByWj0GHz" role="3F10Kt">
+                  <property role="VOm3f" value="false" />
+                </node>
+                <node concept="2iRfu4" id="6BNByWj0GH$" role="2iSdaV" />
+                <node concept="3F0ifn" id="6BNByWj0GH_" role="3EZMnx">
+                  <property role="3F0ifm" value="conversion overflow" />
+                </node>
+                <node concept="27S6Sx" id="6BNByWj0GHA" role="3EZMnx">
+                  <ref role="1NtTu8" to="hj5x:6BNByWj0GCG" resolve="check_conversion_overflow" />
                 </node>
               </node>
               <node concept="3EZMnI" id="NfDeW0KKO$" role="3EZMnx">
