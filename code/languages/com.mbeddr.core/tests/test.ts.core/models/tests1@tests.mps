@@ -103,7 +103,7 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -274,9 +274,7 @@
       <concept id="5947739078127951575" name="com.mbeddr.core.udt.structure.Enum2Int" flags="ng" index="2a30fU">
         <child id="5947739078127951576" name="expr" index="2a30fP" />
       </concept>
-      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK">
-        <child id="6116558314501347862" name="original" index="rcJHR" />
-      </concept>
+      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK" />
       <concept id="6116558314501347863" name="com.mbeddr.core.udt.structure.TypeDefType" flags="ng" index="rcJHQ">
         <reference id="6116558314501347864" name="typeDef" index="rcJHT" />
       </concept>
@@ -344,6 +342,9 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="3140129094246107696" name="com.mbeddr.core.modules.structure.ITypeDef" flags="ng" index="0YR3Q">
+        <child id="6116558314501347862" name="original" index="rcJHR" />
+      </concept>
       <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
       <concept id="3788988821852026523" name="com.mbeddr.core.modules.structure.GlobalConstantRef" flags="ng" index="4ZOvp">
         <reference id="3376775282622611130" name="constant" index="2DPCA0" />

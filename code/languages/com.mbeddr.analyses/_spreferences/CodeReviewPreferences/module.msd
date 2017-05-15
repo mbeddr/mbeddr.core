@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="~_PreferencesModule#com.mbeddr.analyses.__spreferences.CodeReviewPreferences(com.mbeddr.analyses.__spreferences.CodeReviewPreferences)" version="0" />
