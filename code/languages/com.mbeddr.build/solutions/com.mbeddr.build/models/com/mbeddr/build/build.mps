@@ -3096,6 +3096,24 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="6eRyKv6Ss7I" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.core.modules.gen.rt" />
+        <property role="3LESm3" value="4f4aece1-173b-4822-9f43-c693c18d901f" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="6eRyKv6Stim" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ43N8" resolve="mbeddr.core" />
+          <node concept="2Ry0Ak" id="6eRyKv6Suoq" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="6eRyKv6SxEm" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.core.modules.gen.rt" />
+              <node concept="2Ry0Ak" id="6eRyKv6SyKp" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.core.modules.gen.rt.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="WadEn6CWbr" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.core.buildconfig" />
@@ -3154,6 +3172,18 @@
             <node concept="3bR9La" id="HiHZpX4D1K" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6eRyKv6SzQH" role="3bR37C">
+            <node concept="3bR9La" id="6eRyKv6SzQI" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="6eRyKv6Ss7I" resolve="com.mbeddr.core.modules.gen.rt" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6eRyKv6SzQJ" role="3bR37C">
+            <node concept="3bR9La" id="6eRyKv6SzQK" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
             </node>
           </node>
         </node>

@@ -2706,6 +2706,43 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbJ" id="6eRyKv6JO3X" role="3cqZAp">
+              <node concept="3clFbS" id="6eRyKv6JO3Z" role="3clFbx">
+                <node concept="3clFbF" id="6eRyKv6JPCg" role="3cqZAp">
+                  <node concept="2OqwBi" id="6eRyKv6JQ5h" role="3clFbG">
+                    <node concept="1iwH7S" id="6eRyKv6JPCe" role="2Oq$k0" />
+                    <node concept="2k5nB$" id="6eRyKv6JQb2" role="2OqNvi">
+                      <node concept="Xl_RD" id="6eRyKv6JQbG" role="2k5Stb">
+                        <property role="Xl_RC" value="Platform is not supported for cross model generation" />
+                      </node>
+                      <node concept="2OqwBi" id="6eRyKv6JQfS" role="2k6f33">
+                        <node concept="1iwH7S" id="6eRyKv6JQfT" role="2Oq$k0" />
+                        <node concept="12$id9" id="6eRyKv6JQfU" role="2OqNvi">
+                          <node concept="37vLTw" id="6eRyKv6JQfV" role="12$y8L">
+                            <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="6eRyKv6JPwb" role="3clFbw">
+                <node concept="2OqwBi" id="6eRyKv6JPwd" role="3fr31v">
+                  <node concept="2OqwBi" id="6eRyKv6JPwe" role="2Oq$k0">
+                    <node concept="37vLTw" id="6eRyKv6JPwf" role="2Oq$k0">
+                      <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
+                    </node>
+                    <node concept="3TrEf2" id="6eRyKv6JPwg" role="2OqNvi">
+                      <ref role="3Tt5mk" to="51wr:4BxItZJ4BoM" resolve="target" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="6eRyKv6JPwh" role="2OqNvi">
+                    <ref role="37wK5l" to="ahli:6eRyKv6J$$i" resolve="canHandleCrossmodelGeneration" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="Jx3q_$QGie" role="3cqZAp">
               <node concept="3cpWsn" id="Jx3q_$QGif" role="3cpWs9">
                 <property role="TrG5h" value="facet" />
