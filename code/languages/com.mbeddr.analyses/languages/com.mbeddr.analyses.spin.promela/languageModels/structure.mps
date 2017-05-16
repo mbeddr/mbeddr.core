@@ -116,6 +116,7 @@
     <property role="3GE5qa" value="type" />
     <property role="34LRSv" value="byte" />
     <property role="EcuMT" value="799927705160921386" />
+    <property role="R4oN_" value="byte type" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="PrWs8" id="GpUw9S7578" role="PzmwI">
       <ref role="PrY4T" node="GpUw9S7577" resolve="IPromelaType" />
@@ -156,6 +157,7 @@
     <property role="TrG5h" value="BitType" />
     <property role="34LRSv" value="bit" />
     <property role="EcuMT" value="2935779374998674900" />
+    <property role="R4oN_" value="bit type" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="PrWs8" id="2yXYWA1HNn5" role="PzmwI">
       <ref role="PrY4T" node="GpUw9S7577" resolve="IPromelaType" />
@@ -429,10 +431,10 @@
     <property role="TrG5h" value="ChanType" />
     <property role="34LRSv" value="chan" />
     <property role="EcuMT" value="8747172231534849181" />
-    <property role="R4oN_" value="channel" />
+    <property role="R4oN_" value="chan type" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
-    <node concept="PrWs8" id="4b_XKf42ShD" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    <node concept="PrWs8" id="3Gj8GGYfzwZ" role="PzmwI">
+      <ref role="PrY4T" node="GpUw9S7577" resolve="IPromelaType" />
     </node>
   </node>
   <node concept="1TIwiD" id="7_$cGNhPkH4">
@@ -672,6 +674,22 @@
     <property role="EcuMT" value="8887445761571493469" />
     <property role="3GE5qa" value="statement" />
     <property role="TrG5h" value="IPromelaStatement" />
+  </node>
+  <node concept="1TIwiD" id="3Gj8GGYdtrS">
+    <property role="EcuMT" value="4256784329112671992" />
+    <property role="3GE5qa" value="declaration" />
+    <property role="TrG5h" value="ProcessArgument" />
+    <property role="34LRSv" value="argument" />
+    <property role="R4oN_" value="argument" />
+    <ref role="1TJDcQ" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
+    <node concept="1TJgyj" id="3Gj8GGYh87a" role="1TKVEi">
+      <property role="IQ2ns" value="4256784329113633226" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="GpUw9S7577" resolve="IPromelaType" />
+      <ref role="20ksaX" to="mj1l:hEaDaGor64" resolve="type" />
+    </node>
   </node>
 </model>
 

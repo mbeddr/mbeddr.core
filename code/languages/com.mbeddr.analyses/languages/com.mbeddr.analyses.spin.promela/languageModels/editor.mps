@@ -1409,5 +1409,20 @@
       <node concept="l2Vlx" id="7Hmzdkr1gLE" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3Gj8GGYdts6">
+    <property role="3GE5qa" value="declaration" />
+    <ref role="1XX52x" to="ir22:3Gj8GGYdtrS" resolve="ProcessArgument" />
+    <node concept="3EZMnI" id="3Gj8GGYdts8" role="2wV5jI">
+      <node concept="1kIj98" id="3Gj8GGYgm_Z" role="3EZMnx">
+        <node concept="3F1sOY" id="3Gj8GGYdtsi" role="1kIj9b">
+          <ref role="1NtTu8" to="ir22:3Gj8GGYh87a" resolve="type" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="3Gj8GGYdtss" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="l2Vlx" id="3Gj8GGYdtsb" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
