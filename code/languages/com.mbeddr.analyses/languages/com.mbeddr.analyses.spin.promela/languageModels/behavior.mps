@@ -697,5 +697,26 @@
       <node concept="10P_77" id="6fP9ZN5xOri" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="3Gj8GGYo0jK">
+    <property role="3GE5qa" value="declaration" />
+    <ref role="13h7C2" to="ir22:3Gj8GGYnZqn" resolve="PromelaGlobalVariableDeclaration" />
+    <node concept="13hLZK" id="3Gj8GGYo0jL" role="13h7CW">
+      <node concept="3clFbS" id="3Gj8GGYo0jM" role="2VODD2">
+        <node concept="3clFbF" id="3Gj8GGYo0jW" role="3cqZAp">
+          <node concept="37vLTI" id="3Gj8GGYo2GZ" role="3clFbG">
+            <node concept="3clFbT" id="3Gj8GGYo2HD" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="3Gj8GGYo0Ew" role="37vLTJ">
+              <node concept="13iPFW" id="3Gj8GGYo0jV" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3Gj8GGYo1N1" role="2OqNvi">
+                <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

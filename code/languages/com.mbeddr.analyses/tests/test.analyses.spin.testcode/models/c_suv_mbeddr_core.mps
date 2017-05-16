@@ -17,6 +17,7 @@
   </imports>
   <registry>
     <language id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela">
+      <concept id="4256784329115432599" name="com.mbeddr.analyses.spin.promela.structure.PromelaGlobalVariableDeclaration" flags="ng" index="5jdhs" />
       <concept id="2935779374999505372" name="com.mbeddr.analyses.spin.promela.structure.Assert" flags="ng" index="2DvB8l">
         <child id="2935779374999506755" name="exp" index="2DvBia" />
       </concept>
@@ -1327,10 +1328,10 @@
     <node concept="2NXPZ9" id="3$JFeG_1EFl" role="N3F5h">
       <property role="TrG5h" value="empty_1439668554249_4" />
     </node>
-    <node concept="1S7NMz" id="25oSEXygxG7" role="N3F5h">
+    <node concept="5jdhs" id="3Gj8GGYrRoS" role="N3F5h">
       <property role="TrG5h" value="crt" />
       <property role="2OOxQR" value="true" />
-      <node concept="1N1mD7" id="25oSEXygxG5" role="2C2TGm">
+      <node concept="1N1mD7" id="3Gj8GGYrRoR" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
@@ -1353,7 +1354,7 @@
             <property role="2hmy$m" value="3" />
           </node>
           <node concept="1S7827" id="25oSEXygy0j" role="tOcsd">
-            <ref role="1S7826" node="25oSEXygxG7" resolve="crt" />
+            <ref role="1S7826" node="3Gj8GGYrRoS" resolve="crt" />
           </node>
           <node concept="3TlMh9" id="3$JFeG_1Eil" role="tOcsc">
             <property role="2hmy$m" value="10" />
@@ -1365,7 +1366,7 @@
               <node concept="TPXPH" id="25oSEXygoF1" role="1_9egR">
                 <node concept="37HikU" id="25oSEXygy5B" role="3TlMhJ">
                   <node concept="1S7827" id="25oSEXygya_" role="1_9fRO">
-                    <ref role="1S7826" node="25oSEXygxG7" resolve="crt" />
+                    <ref role="1S7826" node="3Gj8GGYrRoS" resolve="crt" />
                   </node>
                 </node>
                 <node concept="1S7827" id="3$JFeG_1ElJ" role="3TlMhI">
@@ -1381,7 +1382,7 @@
                 </node>
                 <node concept="37HikU" id="25oSEXyiyFK" role="3O_q_j">
                   <node concept="1S7827" id="25oSEXyiyFL" role="1_9fRO">
-                    <ref role="1S7826" node="25oSEXygxG7" resolve="crt" />
+                    <ref role="1S7826" node="3Gj8GGYrRoS" resolve="crt" />
                   </node>
                 </node>
                 <node concept="1S7827" id="25oSEXyiyFM" role="3O_q_j">
@@ -2127,18 +2128,18 @@
     <node concept="3GEVxB" id="Hdy9e334tJ" role="2OODSX">
       <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
     </node>
-    <node concept="1S7NMz" id="Hdy9e3376X" role="N3F5h">
+    <node concept="5jdhs" id="3Gj8GGYry8O" role="N3F5h">
       <property role="TrG5h" value="var" />
       <property role="2OOxQR" value="true" />
-      <node concept="3TlMh2" id="Hdy9e3376V" role="2C2TGm">
+      <node concept="3TlMh2" id="3Gj8GGYry8N" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
     </node>
-    <node concept="1S7NMz" id="Hdy9e336C1" role="N3F5h">
+    <node concept="5jdhs" id="3Gj8GGYrygb" role="N3F5h">
       <property role="TrG5h" value="incremented" />
       <property role="2OOxQR" value="true" />
-      <node concept="3TlMh2" id="Hdy9e336C2" role="2C2TGm">
+      <node concept="3TlMh2" id="3Gj8GGYryga" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
@@ -2158,7 +2159,7 @@
             <property role="2hmy$m" value="100" />
           </node>
           <node concept="1S7827" id="Hdy9e337rj" role="3udCBu">
-            <ref role="1S7826" node="Hdy9e3376X" resolve="var" />
+            <ref role="1S7826" node="3Gj8GGYry8O" resolve="var" />
           </node>
           <node concept="3TlMh9" id="Hdy9e334tU" role="3udCBs">
             <property role="2hmy$m" value="10" />
@@ -2173,11 +2174,11 @@
                     <property role="2hmy$m" value="1" />
                   </node>
                   <node concept="1S7827" id="Hdy9e337rn" role="3TlMhI">
-                    <ref role="1S7826" node="Hdy9e3376X" resolve="var" />
+                    <ref role="1S7826" node="3Gj8GGYry8O" resolve="var" />
                   </node>
                 </node>
                 <node concept="1S7827" id="Hdy9e336OC" role="3TlMhI">
-                  <ref role="1S7826" node="Hdy9e336C1" resolve="incremented" />
+                  <ref role="1S7826" node="3Gj8GGYrygb" resolve="incremented" />
                 </node>
               </node>
             </node>
@@ -2189,7 +2190,7 @@
               <property role="2hmy$m" value="42" />
             </node>
             <node concept="1S7827" id="Hdy9e336OG" role="3TlMhI">
-              <ref role="1S7826" node="Hdy9e336C1" resolve="incremented" />
+              <ref role="1S7826" node="3Gj8GGYrygb" resolve="incremented" />
             </node>
           </node>
         </node>

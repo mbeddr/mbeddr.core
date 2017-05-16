@@ -70,6 +70,7 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela">
+      <concept id="4256784329115432599" name="com.mbeddr.analyses.spin.promela.structure.PromelaGlobalVariableDeclaration" flags="ng" index="5jdhs" />
       <concept id="8747172231535479620" name="com.mbeddr.analyses.spin.promela.structure.ChanRef" flags="ng" index="2CGnA8">
         <reference id="8747172231535479626" name="chan" index="2CGnA6" />
       </concept>
@@ -135,6 +136,9 @@
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
       </concept>
+      <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
+        <property id="1317894735999272944" name="exported" index="2OOxQR" />
+      </concept>
       <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
@@ -142,7 +146,6 @@
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
-      <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -314,9 +317,10 @@
     <node concept="1qefOq" id="1RC3LaKA26a" role="1SKRRt">
       <node concept="1N3YfO" id="1RC3LaKA26b" role="1qenE9">
         <property role="TrG5h" value="select" />
-        <node concept="1S7NMz" id="1RC3LaKA2o6" role="N3F5h">
+        <node concept="5jdhs" id="3Gj8GGYrxl8" role="N3F5h">
           <property role="TrG5h" value="b" />
-          <node concept="1N1tGC" id="1RC3LaKA2o4" role="2C2TGm">
+          <property role="2OOxQR" value="true" />
+          <node concept="1N1tGC" id="3Gj8GGYrxl7" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
@@ -333,7 +337,7 @@
           <node concept="3XIRFW" id="1RC3LaKA26l" role="3XIRFX">
             <node concept="2HvsZr" id="1RC3LaKAbsi" role="3XIRFZ">
               <node concept="1S7827" id="1RC3LaKAbsq" role="2HvsZo">
-                <ref role="1S7826" node="1RC3LaKA2o6" resolve="b" />
+                <ref role="1S7826" node="3Gj8GGYrxl8" resolve="b" />
               </node>
               <node concept="3TlMh9" id="1RC3LaKAbsz" role="2HvsZu">
                 <property role="2hmy$m" value="10" />

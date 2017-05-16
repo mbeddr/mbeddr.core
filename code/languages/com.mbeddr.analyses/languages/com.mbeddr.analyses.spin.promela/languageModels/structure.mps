@@ -316,8 +316,8 @@
     <node concept="PrWs8" id="24G9CRyMuzb" role="PzmwI">
       <ref role="PrY4T" node="GpUw9S7577" resolve="IPromelaType" />
     </node>
-    <node concept="PrWs8" id="24G9CRyNqI_" role="PzmwI">
-      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    <node concept="PrWs8" id="3Gj8GGYpFn6" role="PzmwI">
+      <ref role="PrY4T" node="GpUw9S5_Xa" resolve="IPromelaModelContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="24G9CRyMYst">
@@ -689,6 +689,17 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="GpUw9S7577" resolve="IPromelaType" />
       <ref role="20ksaX" to="mj1l:hEaDaGor64" resolve="type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Gj8GGYnZqn">
+    <property role="EcuMT" value="4256784329115432599" />
+    <property role="3GE5qa" value="declaration" />
+    <property role="TrG5h" value="PromelaGlobalVariableDeclaration" />
+    <property role="34LRSv" value="global var" />
+    <property role="R4oN_" value="global variable" />
+    <ref role="1TJDcQ" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+    <node concept="PrWs8" id="3Gj8GGYo2Qa" role="PzmwI">
+      <ref role="PrY4T" node="GpUw9S5_Xa" resolve="IPromelaModelContent" />
     </node>
   </node>
 </model>
