@@ -1424,5 +1424,40 @@
       <node concept="l2Vlx" id="3Gj8GGYdtsb" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3Gj8GGYnZqw">
+    <property role="3GE5qa" value="declaration" />
+    <ref role="1XX52x" to="ir22:3Gj8GGYnZqn" resolve="PromelaGlobalVariableDeclaration" />
+    <node concept="3EZMnI" id="3Gj8GGYnZqy" role="2wV5jI">
+      <node concept="1kIj98" id="3Gj8GGYnZqO" role="3EZMnx">
+        <node concept="3F1sOY" id="3Gj8GGYnZr3" role="1kIj9b">
+          <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="3Gj8GGYnZrt" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="3Gj8GGYo0is" role="3EZMnx">
+        <node concept="3EZMnI" id="3Gj8GGYo0j3" role="_tjki">
+          <node concept="3F0ifn" id="3Gj8GGYo0jk" role="3EZMnx">
+            <property role="3F0ifm" value="=" />
+          </node>
+          <node concept="3F1sOY" id="3Gj8GGYo0jC" role="3EZMnx">
+            <ref role="1NtTu8" to="x27k:2pPw_DEjkM9" resolve="init" />
+          </node>
+          <node concept="l2Vlx" id="3Gj8GGYo0j6" role="2iSdaV" />
+          <node concept="VPM3Z" id="3Gj8GGYo0j7" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3Gj8GGYqGkA" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="3Gj8GGYqGl6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3Gj8GGYnZq_" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

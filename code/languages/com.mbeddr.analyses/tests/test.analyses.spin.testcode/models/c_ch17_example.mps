@@ -12,6 +12,7 @@
   </imports>
   <registry>
     <language id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela">
+      <concept id="4256784329115432599" name="com.mbeddr.analyses.spin.promela.structure.PromelaGlobalVariableDeclaration" flags="ng" index="5jdhs" />
       <concept id="2935779374999505372" name="com.mbeddr.analyses.spin.promela.structure.Assert" flags="ng" index="2DvB8l">
         <child id="2935779374999506755" name="exp" index="2DvBia" />
       </concept>
@@ -108,11 +109,11 @@
       </concept>
     </language>
     <language id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin">
-      <concept id="9065467049586938195" name="" flags="ng" index="1gr5cj" />
-      <concept id="9065467049586938196" name="" flags="ng" index="1gr5ck">
-        <property id="9065467049586938197" name="" index="1gr5cl" />
-        <property id="9065467049586938198" name="" index="1gr5cm" />
-        <property id="9065467049586938199" name="" index="1gr5cn" />
+      <concept id="9065467049586938195" name="com.mbeddr.analyses.spin.structure.SpinExecutable" flags="ng" index="1gr5cj" />
+      <concept id="9065467049586938196" name="com.mbeddr.analyses.spin.structure.SpinPlatform" flags="ng" index="1gr5ck">
+        <property id="9065467049586938197" name="compiler" index="1gr5cl" />
+        <property id="9065467049586938198" name="compilerOptions" index="1gr5cm" />
+        <property id="9065467049586938199" name="make" index="1gr5cn" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -229,10 +230,10 @@
     <node concept="2NXPZ9" id="6rTOrQxj5A1" role="N3F5h">
       <property role="TrG5h" value="empty_1438291799160_13" />
     </node>
-    <node concept="1S7NMz" id="6rTOrQxjSkT" role="N3F5h">
+    <node concept="5jdhs" id="3Gj8GGYrxGG" role="N3F5h">
       <property role="TrG5h" value="z" />
       <property role="2OOxQR" value="true" />
-      <node concept="1N1mD7" id="5KYWJPNPSMM" role="2C2TGm">
+      <node concept="1N1mD7" id="3Gj8GGYrxGF" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
@@ -385,7 +386,7 @@
               </node>
               <node concept="37HikU" id="36pDmrF0WoC" role="1g25Hi">
                 <node concept="1S7827" id="36pDmrF0WoD" role="1_9fRO">
-                  <ref role="1S7826" node="6rTOrQxjSkT" resolve="z" />
+                  <ref role="1S7826" node="3Gj8GGYrxGG" resolve="z" />
                 </node>
               </node>
               <node concept="37HikU" id="36pDmrF0WoE" role="1g25Hi">
