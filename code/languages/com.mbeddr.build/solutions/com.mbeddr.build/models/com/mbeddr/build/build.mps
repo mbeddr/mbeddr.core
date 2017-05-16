@@ -2179,7 +2179,7 @@
         </node>
         <node concept="1SiIV0" id="6oAagBJCrF7" role="3bR37C">
           <node concept="3bR9La" id="6oAagBJCrF8" role="1SiIV1">
-            <property role="3bR36h" value="true" />
+            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7gdoTYdo$et" resolve="jetbrains.mps.debugger.api.api" />
           </node>
         </node>
@@ -2245,12 +2245,6 @@
           <node concept="3bR9La" id="4IT6unNIlC" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1VzEExh4Hwy" role="3bR37C">
-          <node concept="3bR9La" id="1VzEExh4Hwz" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LeP" resolve="jetbrains.mps.analyzers.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="4Wyno57pQPK" role="3bR37C">
@@ -2337,12 +2331,6 @@
           <node concept="3bR9La" id="7YxRYfiZYqp" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7YxRYfiZYqq" role="3bR37C">
-          <node concept="3bR9La" id="7YxRYfiZYqr" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="7eF9rfAuAO0" resolve="com.mbeddr.ext.components" />
           </node>
         </node>
       </node>
@@ -5826,6 +5814,12 @@
           <node concept="3bR9La" id="3wZtDQDUkhk" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6GaKBF50ic1" role="3bR37C">
+          <node concept="3bR9La" id="6GaKBF50ic2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7gdoTYdo$et" resolve="jetbrains.mps.debugger.api.api" />
           </node>
         </node>
       </node>

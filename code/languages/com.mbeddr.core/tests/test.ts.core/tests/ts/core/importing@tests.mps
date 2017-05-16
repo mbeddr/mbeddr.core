@@ -11,6 +11,7 @@
     <import index="3mvl" ref="r:dfbb97c1-bcef-47dd-a044-a2503489b0dd(com.mbeddr.core.modules.constraints)" />
     <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
     <import index="p3tm" ref="r:7b158038-abbe-4e11-b171-d5a959b4e91a(com.mbeddr.core.modules.typesystem)" />
+    <import index="e39d" ref="r:c480d4b6-a379-41b5-b76a-c94ccc817c4e(com.mbeddr.ext.components.typesystem)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -527,8 +528,8 @@
           <ref role="3GEb4d" node="7I0sjKdHgCP" resolve="am_rpi_advaboard" />
           <node concept="7CXmI" id="3AX8Th8_ZZi" role="lGtFl">
             <node concept="1TM$A" id="3AX8Th8_ZZj" role="7EUXB">
-              <node concept="2PYRI3" id="3AX8Th8A60I" role="3lydEf">
-                <ref role="39XzEq" to="p3tm:3AX8Th8g57R" />
+              <node concept="2PYRI3" id="4RorRaIffHJ" role="3lydEf">
+                <ref role="39XzEq" to="e39d:3AX8Th8g57R" />
               </node>
             </node>
           </node>
