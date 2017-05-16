@@ -15,7 +15,6 @@
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
-    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1698,7 +1697,7 @@
       <property role="20kJfa" value="implements" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="3424508899756705079" />
-      <ref role="20lvS9" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
+      <ref role="20lvS9" node="6GaKBF50ksn" resolve="ITypeDef" />
     </node>
     <node concept="M6xJ_" id="2Y6jbdkaokS" role="lGtFl">
       <property role="Hh88m" value="implementsFunctionType" />
@@ -1708,6 +1707,14 @@
       <node concept="trNpa" id="2Y6jbdkaokU" role="EQaZv">
         <ref role="trN6q" node="5_l8w1EmTvx" resolve="Function" />
       </node>
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6GaKBF50ksn">
+    <property role="EcuMT" value="7713191144372389655" />
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="ITypeDef" />
+    <node concept="PrWs8" id="6GaKBF50kso" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

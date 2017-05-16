@@ -123,6 +123,9 @@
     <node concept="PrWs8" id="3o2OLGv7388" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
+    <node concept="PrWs8" id="6GaKBF538po" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6GaKBF50ksn" resolve="ITypeDef" />
+    </node>
     <node concept="1TJgyj" id="5jyom5fO9Cm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="original" />
