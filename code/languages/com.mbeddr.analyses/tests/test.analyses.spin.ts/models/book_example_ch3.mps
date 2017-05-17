@@ -25,6 +25,7 @@
       </concept>
       <concept id="2390327893064382862" name="com.mbeddr.analyses.spin.promela.structure.ChanDeclaration" flags="ng" index="33SPW3">
         <property id="2390327893064382872" name="size" index="33SPWl" />
+        <child id="682261312585237108" name="channelSize" index="25PmdS" />
         <child id="2390327893064382921" name="types" index="33SPX4" />
       </concept>
       <concept id="2390327893063926012" name="com.mbeddr.analyses.spin.promela.structure.Break" flags="ng" index="33TapL" />
@@ -238,10 +239,12 @@
     </node>
     <node concept="33SPW3" id="4f352SjsVW_" role="N3F5h">
       <property role="TrG5h" value="line" />
-      <property role="33SPWl" value="0" />
       <node concept="2CGWmI" id="4f352SjsVYz" role="33SPX4">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3TlMh9" id="_RSgMcGmT8" role="25PmdS">
+        <property role="2hmy$m" value="0" />
       </node>
     </node>
     <node concept="2NXPZ9" id="4f352SjsVUD" role="N3F5h">
@@ -502,8 +505,13 @@
   </node>
   <node concept="1N3YfO" id="4f352SjsPzb">
     <property role="TrG5h" value="Example_3_2" />
-    <node concept="33SPW3" id="4f352SjsPzI" role="N3F5h">
+    <node concept="5jdhs" id="_RSgMcGoNw" role="N3F5h">
+      <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="STDIN" />
+      <node concept="2CFTTh" id="_RSgMcGoQW" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
     </node>
     <node concept="5jdhs" id="3Gj8GGYq6D3" role="N3F5h">
       <property role="TrG5h" value="c" />
@@ -559,8 +567,8 @@
         <node concept="33VGU9" id="4f352SjsPFN" role="3XIRFZ">
           <node concept="33Vms$" id="4f352SjsPFU" role="33VGUZ">
             <node concept="33ZRtt" id="4f352SjsPGd" role="33VmfU">
-              <node concept="2CGnA8" id="4f352SjsPGl" role="33ZRts">
-                <ref role="2CGnA6" node="4f352SjsPzI" resolve="STDIN" />
+              <node concept="1S7827" id="_RSgMcGoVk" role="33ZRts">
+                <ref role="1S7826" node="_RSgMcGoNw" resolve="STDIN" />
               </node>
               <node concept="1S7827" id="4f352SjsPGs" role="33ZRtu">
                 <ref role="1S7826" node="3Gj8GGYq6D3" resolve="c" />

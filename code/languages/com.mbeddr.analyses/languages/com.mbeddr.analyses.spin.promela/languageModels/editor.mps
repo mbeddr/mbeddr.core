@@ -884,16 +884,51 @@
       <node concept="3F0A7n" id="1RC3LaKzeB_" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
+      <node concept="_tjkj" id="_RSgMcAHtO" role="3EZMnx">
+        <node concept="3EZMnI" id="_RSgMcAHuc" role="_tjki">
+          <node concept="3F0ifn" id="_RSgMcAHul" role="3EZMnx">
+            <property role="3F0ifm" value="[" />
+            <node concept="11L4FC" id="_RSgMcAHuJ" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="11LMrY" id="_RSgMcAHuO" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="_RSgMcAHuy" role="3EZMnx">
+            <ref role="1NtTu8" to="ir22:_RSgMcAHuv" resolve="arraySize" />
+          </node>
+          <node concept="3F0ifn" id="_RSgMcAHuE" role="3EZMnx">
+            <property role="3F0ifm" value="]" />
+            <node concept="11L4FC" id="_RSgMcAHuS" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="l2Vlx" id="_RSgMcAHuf" role="2iSdaV" />
+          <node concept="VPM3Z" id="_RSgMcAHug" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
+      </node>
       <node concept="_tjkj" id="1RC3LaKzeC0" role="3EZMnx">
         <node concept="3EZMnI" id="1RC3LaKzeCa" role="_tjki">
+          <node concept="3F0ifn" id="_RSgMc_e97" role="3EZMnx">
+            <property role="3F0ifm" value="=" />
+          </node>
           <node concept="3F0ifn" id="1RC3LaKzeCt" role="3EZMnx">
             <property role="3F0ifm" value="[" />
+            <node concept="11LMrY" id="_RSgMcBG_5" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
           </node>
-          <node concept="3F0A7n" id="4b_XKf44DmD" role="3EZMnx">
-            <ref role="1NtTu8" to="ir22:24G9CRyNRAo" resolve="size" />
+          <node concept="3F1sOY" id="_RSgMcCHiz" role="3EZMnx">
+            <ref role="1NtTu8" to="ir22:_RSgMcCC9O" resolve="channelSize" />
           </node>
           <node concept="3F0ifn" id="1RC3LaKzeCO" role="3EZMnx">
             <property role="3F0ifm" value="]" />
+            <node concept="11L4FC" id="_RSgMcBG_7" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
           </node>
           <node concept="3F0ifn" id="1RC3LaKzeD0" role="3EZMnx">
             <property role="3F0ifm" value="of" />

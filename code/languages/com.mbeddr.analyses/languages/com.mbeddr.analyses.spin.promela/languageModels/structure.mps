@@ -358,10 +358,18 @@
       <property role="IQ2ns" value="2390327893064382921" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
-    <node concept="1TJgyi" id="24G9CRyNRAo" role="1TKVEl">
-      <property role="TrG5h" value="size" />
-      <property role="IQ2nx" value="2390327893064382872" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyj" id="_RSgMcAHuv" role="1TKVEi">
+      <property role="IQ2ns" value="682261312584734623" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arraySize" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="_RSgMcCC9O" role="1TKVEi">
+      <property role="IQ2ns" value="682261312585237108" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="channelSize" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="24G9CRyNRAf" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
