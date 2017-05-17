@@ -31,6 +31,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoreimporter.testing/com.mbeddr.mpsutil.ecore.testing.mpl" folder="rest.ecore.impl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoreimporter.util/com.mbeddr.mpsutil.ecore.mpl" folder="rest.ecore.impl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel/com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.mpl" folder="rest.ecore.tests" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide.doc/com.mbeddr.mpsutil.editingGuide.doc.mpl" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide.execution.lang/com.mbeddr.mpsutil.editingGuide.execution.lang.mpl" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide/com.mbeddr.mpsutil.editingGuide.mpl" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" folder="staging.querylist" />

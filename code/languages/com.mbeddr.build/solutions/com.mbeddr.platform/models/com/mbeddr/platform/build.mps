@@ -8510,6 +8510,42 @@
           <property role="TrG5h" value="com.mbeddr.mpsutil.editingGuide.doc#8427633988606482701" />
           <property role="3LESm3" value="22e1ee7e-31ff-4fa2-a227-e8a174f2e560" />
           <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="2IC67yTrJav" role="3bR37C">
+            <node concept="3bR9La" id="2IC67yTrJaw" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="2N1CSrzsvbI" resolve="com.mbeddr.mpsutil.nodeaccess" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2IC67yTrJax" role="3bR37C">
+            <node concept="3bR9La" id="2IC67yTrJay" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="7dbZP3ALy0C" resolve="com.mbeddr.mpsutil.editingGuide.plugin" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2IC67yTrJaz" role="3bR37C">
+            <node concept="3bR9La" id="2IC67yTrJa$" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="t9Ud9KwCfe" resolve="com.mbeddr.doc.gen_latex#4457500422381351720" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2IC67yTrJa_" role="3bR37C">
+            <node concept="3bR9La" id="2IC67yTrJaA" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="t9Ud9KwCfy" resolve="com.mbeddr.doc.gen_xhtml#3350625596580276036" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2IC67yTrJaB" role="3bR37C">
+            <node concept="3bR9La" id="2IC67yTrJaC" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="7tNo_gxoK9e" resolve="com.mbeddr.doc.gen_xhtml" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2IC67yTrJat" role="3bR37C">
+          <node concept="3bR9La" id="2IC67yTrJau" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2VC4eVYcmOg" resolve="com.mbeddr.mpsutil.httpsupport.rt" />
+          </node>
         </node>
       </node>
     </node>
