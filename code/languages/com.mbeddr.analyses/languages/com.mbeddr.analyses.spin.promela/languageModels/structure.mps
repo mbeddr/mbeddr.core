@@ -710,5 +710,26 @@
       <ref role="PrY4T" node="GpUw9S5_Xa" resolve="IPromelaModelContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="_RSgMcHIcp">
+    <property role="EcuMT" value="682261312586572569" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="Empty" />
+    <property role="34LRSv" value="empty" />
+    <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="_RSgMcIY2R">
+    <property role="EcuMT" value="682261312586899639" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="Nempty" />
+    <property role="34LRSv" value="nempty" />
+    <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="_RSgMcIZyh">
+    <property role="EcuMT" value="682261312586905745" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="Length" />
+    <property role="34LRSv" value="len" />
+    <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
+  </node>
 </model>
 
