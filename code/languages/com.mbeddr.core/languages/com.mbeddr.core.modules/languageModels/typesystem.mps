@@ -38,7 +38,6 @@
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="aplb" ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6/r:a1d8bbbf-d4f0-431f-8dcd-a6badc777315(jetbrains.mps.dataFlow.runtime/jetbrains.mps.lang.dataFlow)" />
     <import index="xpog" ref="r:fe8ac1c2-4441-43ed-8c6b-75093fa00e66(com.mbeddr.mpsutil.compare.pattern.runtime.plugin)" />
-    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers">
@@ -12830,7 +12829,7 @@
                         <ref role="3cqZAo" node="6nn59B$7Xm6" resolve="type" />
                       </node>
                       <node concept="3TrEf2" id="6nn59B$8wBz" role="2OqNvi">
-                        <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" resolve="original" />
+                        <ref role="3Tt5mk" to="x27k:5jyom5fO9Cm" resolve="original" />
                       </node>
                     </node>
                   </node>
@@ -13021,7 +13020,7 @@
                             <ref role="3cqZAo" node="6nn59B$7Xm6" resolve="type" />
                           </node>
                           <node concept="3TrEf2" id="6nn59B$8INh" role="2OqNvi">
-                            <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" resolve="original" />
+                            <ref role="3Tt5mk" to="x27k:5jyom5fO9Cm" resolve="original" />
                           </node>
                         </node>
                       </node>
@@ -13820,7 +13819,7 @@
                   <ref role="QwW4h" node="6nn59B$mFU9" resolve="typeDef" />
                 </node>
                 <node concept="3TrEf2" id="6nn59B$mRcd" role="2OqNvi">
-                  <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" resolve="original" />
+                  <ref role="3Tt5mk" to="x27k:5jyom5fO9Cm" resolve="original" />
                 </node>
               </node>
             </node>
@@ -13863,7 +13862,7 @@
                                   <ref role="QwW4h" node="6nn59B$mFU9" resolve="typeDef" />
                                 </node>
                                 <node concept="3TrEf2" id="6nn59B$uAbB" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" resolve="original" />
+                                  <ref role="3Tt5mk" to="x27k:5jyom5fO9Cm" resolve="original" />
                                 </node>
                               </node>
                             </node>
@@ -14005,7 +14004,7 @@
                               <ref role="QwW4h" node="6nn59B$mFU9" resolve="typeDef" />
                             </node>
                             <node concept="3TrEf2" id="6nn59B$_wkr" role="2OqNvi">
-                              <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" resolve="original" />
+                              <ref role="3Tt5mk" to="x27k:5jyom5fO9Cm" resolve="original" />
                             </node>
                           </node>
                         </node>

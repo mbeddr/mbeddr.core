@@ -128,10 +128,13 @@
     </node>
     <node concept="1TJgyj" id="5jyom5fO9Cm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="original" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="original_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="6116558314501347862" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      <node concept="asaX9" id="79OqY7jVkbj" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.modules.structure.ITypeDef&quot;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fO9Cn">
