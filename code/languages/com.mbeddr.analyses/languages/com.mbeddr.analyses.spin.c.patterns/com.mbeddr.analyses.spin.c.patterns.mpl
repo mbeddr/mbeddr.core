@@ -10,7 +10,7 @@
     <generator alias="" namespace="com.mbeddr.analyses.spin.c.patterns#4708346905221050054" uuid="063391c8-9b85-4087-8720-9745c869a2fb">
       <models>
         <modelRoot contentPath="${module}" type="default">
-          <sourceRoot path="${module}/generator/template" />
+          <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
       <external-templates />
@@ -20,9 +20,7 @@
         <dependency reexport="false">3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)</dependency>
         <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</dependency>
         <dependency reexport="false">17b818a8-8533-4efe-8f51-f532146ae66b(com.mbeddr.analyses.spin.c)</dependency>
-        <dependency reexport="false">e4586d76-86eb-4b19-862c-e5375e853c19(com.mbeddr.analyses.spin.promela.rt)</dependency>
-        <dependency reexport="false" scope="design">bd9d1a6a-cd44-40f9-b116-f0ff4deba2ce(com.mbeddr.analyses.spin.promela.patterns#1737851622209916392)</dependency>
-        <dependency reexport="false">4ddb29eb-11e5-46c6-a894-6b8a4c38587d(com.mbeddr.analyses.spin.promela.patterns)</dependency>
+        <dependency reexport="false">e4586d76-86eb-4b19-862c-e5375e853c19(com.mbeddr.analyses.spin.rt)</dependency>
         <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
         <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
         <dependency reexport="false">6ded8a47-f30e-4acf-a5f2-a70ec5472558(com.mbeddr.analyses.base.verification_conditions)</dependency>
@@ -63,7 +61,6 @@
         <language slang="l:c1c2a88a-323c-4605-a37d-9ab77a2ccbd2:com.mbeddr.mpsutil.suppresswarning" version="0" />
         <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
-        <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="0" />
         <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
@@ -96,9 +93,7 @@
         <module reference="f027a490-7082-492e-99ce-dfe65d7342f7(com.mbeddr.analyses.spin.c.patterns)" version="0" />
         <module reference="063391c8-9b85-4087-8720-9745c869a2fb(com.mbeddr.analyses.spin.c.patterns#4708346905221050054)" version="0" />
         <module reference="877b0e90-e1a6-4468-970c-dcb3f49f95ed(com.mbeddr.analyses.spin.promela)" version="0" />
-        <module reference="4ddb29eb-11e5-46c6-a894-6b8a4c38587d(com.mbeddr.analyses.spin.promela.patterns)" version="0" />
-        <module reference="bd9d1a6a-cd44-40f9-b116-f0ff4deba2ce(com.mbeddr.analyses.spin.promela.patterns#1737851622209916392)" version="0" />
-        <module reference="e4586d76-86eb-4b19-862c-e5375e853c19(com.mbeddr.analyses.spin.promela.rt)" version="0" />
+        <module reference="e4586d76-86eb-4b19-862c-e5375e853c19(com.mbeddr.analyses.spin.rt)" version="0" />
         <module reference="4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)" version="0" />
         <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="1" />
         <module reference="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" version="0" />
@@ -146,7 +141,7 @@
           <lesser-priority-mapping>
             <generator generatorUID="063391c8-9b85-4087-8720-9745c869a2fb(com.mbeddr.analyses.spin.c.patterns#4708346905221050054)" />
             <external-mapping>
-              <mapping-node modelUID="r:6a0514ef-f9af-4058-8141-75e0f3e9ee48(com.mbeddr.analyses.spin.c.patterns.generator.template.main@generator)" nodeID="4708346905221050055" />
+              <mapping-node modelUID="r:6a0514ef-f9af-4058-8141-75e0f3e9ee48(com.mbeddr.analyses.spin.c.patterns.generator.template.main@generator)" nodeID="6405535025147123927" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
@@ -214,16 +209,13 @@
     <dependency reexport="false">a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</dependency>
     <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</dependency>
     <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
-    <dependency reexport="false">f027a490-7082-492e-99ce-dfe65d7342f7(com.mbeddr.analyses.spin.c.patterns)</dependency>
     <dependency reexport="false">3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
-    <dependency reexport="false">4ddb29eb-11e5-46c6-a894-6b8a4c38587d(com.mbeddr.analyses.spin.promela.patterns)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="0" />
     <language slang="l:b4f35ed8-45af-4efa-abe4-00ac26956e69:com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
-    <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="0" />
@@ -266,7 +258,6 @@
     <module reference="6ded8a47-f30e-4acf-a5f2-a70ec5472558(com.mbeddr.analyses.base.verification_conditions)" version="0" />
     <module reference="f027a490-7082-492e-99ce-dfe65d7342f7(com.mbeddr.analyses.spin.c.patterns)" version="0" />
     <module reference="877b0e90-e1a6-4468-970c-dcb3f49f95ed(com.mbeddr.analyses.spin.promela)" version="0" />
-    <module reference="4ddb29eb-11e5-46c6-a894-6b8a4c38587d(com.mbeddr.analyses.spin.promela.patterns)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="1" />
     <module reference="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" version="0" />
     <module reference="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" version="0" />

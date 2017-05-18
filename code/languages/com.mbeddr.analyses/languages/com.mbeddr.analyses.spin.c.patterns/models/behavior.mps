@@ -103,7 +103,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="439FXGfpCA">
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="top_level" />
     <ref role="13h7C2" to="llb3:439FXGfiPF" resolve="GlobalDeclarations" />
     <node concept="13hLZK" id="439FXGfpCB" role="13h7CW">
       <node concept="3clFbS" id="439FXGfpCC" role="2VODD2">
@@ -124,7 +124,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5hi7ucOly69">
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="top_level" />
     <ref role="13h7C2" to="llb3:439FXGfyCs" resolve="HarnessCode" />
     <node concept="13hLZK" id="5hi7ucOly6a" role="13h7CW">
       <node concept="3clFbS" id="5hi7ucOly6b" role="2VODD2">
@@ -145,7 +145,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5IfbEbQBdac">
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="top_level" />
     <ref role="13h7C2" to="llb3:5IfbEbQA2zq" resolve="TrackState" />
     <node concept="13hLZK" id="5IfbEbQBdad" role="13h7CW">
       <node concept="3clFbS" id="5IfbEbQBdae" role="2VODD2">

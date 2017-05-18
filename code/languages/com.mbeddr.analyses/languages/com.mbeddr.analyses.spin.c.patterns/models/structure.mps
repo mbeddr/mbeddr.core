@@ -8,10 +8,9 @@
   <imports>
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="i3mj" ref="r:828f323f-b068-42aa-8988-4151fb6af01f(com.mbeddr.analyses.spin.promela.patterns.structure)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
@@ -22,6 +21,13 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -51,6 +57,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -78,7 +85,7 @@
     <property role="EcuMT" value="72944622564540789" />
     <property role="TrG5h" value="CVerificationHarnessModule" />
     <property role="34LRSv" value="c harness module" />
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="top_level" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="a module containing the harness for C verification" />
     <ref role="1TJDcQ" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
@@ -88,21 +95,21 @@
   </node>
   <node concept="1TIwiD" id="439FXGfiPF">
     <property role="EcuMT" value="72944622564617579" />
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="top_level" />
     <property role="TrG5h" value="GlobalDeclarations" />
     <property role="34LRSv" value="global declarations" />
     <ref role="1TJDcQ" to="x27k:5DwX9xlExfL" resolve="Section" />
   </node>
   <node concept="1TIwiD" id="439FXGfyCs">
     <property role="EcuMT" value="72944622564682268" />
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="top_level" />
     <property role="TrG5h" value="HarnessCode" />
     <property role="34LRSv" value="harness" />
     <ref role="1TJDcQ" to="ir22:GpUw9S5_Xd" resolve="ProcType" />
   </node>
   <node concept="1TIwiD" id="6fP9ZN5Cubd">
     <property role="EcuMT" value="7202707145649939149" />
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="harness.multistep" />
     <property role="TrG5h" value="MultiStep" />
     <property role="34LRSv" value="multistep" />
     <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
@@ -153,20 +160,20 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="choices" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="5hi7ucOryW$" resolve="CChoice" />
+      <ref role="20lvS9" node="5hi7ucOryW$" resolve="SingleChoice" />
     </node>
     <node concept="1TJgyj" id="5hi7ucOryZ5" role="1TKVEi">
       <property role="IQ2ns" value="6075951708950638533" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="else" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5hi7ucOryXC" resolve="DefaultCChoice" />
+      <ref role="20lvS9" node="5hi7ucOryXC" resolve="DefaultChoice" />
     </node>
   </node>
   <node concept="1TIwiD" id="5hi7ucOryW$">
     <property role="EcuMT" value="6075951708950638372" />
     <property role="3GE5qa" value="harness.choice" />
-    <property role="TrG5h" value="CChoice" />
+    <property role="TrG5h" value="SingleChoice" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5hi7ucOryW_" role="1TKVEi">
       <property role="IQ2ns" value="6075951708950638373" />
@@ -186,7 +193,7 @@
   <node concept="1TIwiD" id="5hi7ucOryXC">
     <property role="EcuMT" value="6075951708950638440" />
     <property role="3GE5qa" value="harness.choice" />
-    <property role="TrG5h" value="DefaultCChoice" />
+    <property role="TrG5h" value="DefaultChoice" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5hi7ucOryXD" role="1TKVEi">
       <property role="IQ2ns" value="6075951708950638441" />
@@ -338,7 +345,7 @@
   </node>
   <node concept="1TIwiD" id="5IfbEbQA2zq">
     <property role="EcuMT" value="6597543256577812698" />
-    <property role="3GE5qa" value="harness" />
+    <property role="3GE5qa" value="top_level" />
     <property role="TrG5h" value="TrackState" />
     <property role="34LRSv" value="track state" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -351,6 +358,18 @@
     </node>
     <node concept="PrWs8" id="5IfbEbQA2zr" role="PzmwI">
       <ref role="PrY4T" to="ir22:GpUw9S5_Xa" resolve="IPromelaModelContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1GXRyrT8qEm">
+    <property role="EcuMT" value="1962969271573260950" />
+    <property role="3GE5qa" value="top_level" />
+    <property role="TrG5h" value="ExpertMode" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="1GXRyrT8qEn" role="lGtFl">
+      <property role="Hh88m" value="expertMode" />
+      <node concept="trNpa" id="1GXRyrT8qEr" role="EQaZv">
+        <ref role="trN6q" node="439FXGf05P" resolve="CVerificationHarnessModule" />
+      </node>
     </node>
   </node>
 </model>

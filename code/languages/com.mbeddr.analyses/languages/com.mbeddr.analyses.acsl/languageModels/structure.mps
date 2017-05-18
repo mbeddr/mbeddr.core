@@ -7,12 +7,11 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
-    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -30,7 +29,9 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -79,13 +80,23 @@
     <property role="TrG5h" value="IAtomicContract" />
     <property role="3GE5qa" value="contract" />
     <property role="EcuMT" value="3793213301909615744" />
+    <node concept="1TJgyj" id="4bJgjtNtez" role="1TKVEi">
+      <property role="IQ2ns" value="75361647380517795" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4bJgjtNFJV" role="PrDN$">
+      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3i$cQqpAZi1">
     <property role="TrG5h" value="Requires" />
     <property role="34LRSv" value="requires" />
     <property role="3GE5qa" value="contract" />
     <property role="EcuMT" value="3793213301909615745" />
-    <ref role="1TJDcQ" to="pyey:637qsduSbtp" resolve="Assert" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3i$cQqpAZi7" role="PzmwI">
       <ref role="PrY4T" node="3i$cQqpAZi0" resolve="IAtomicContract" />
     </node>
@@ -108,7 +119,7 @@
     <property role="TrG5h" value="Ensures" />
     <property role="34LRSv" value="ensures" />
     <property role="EcuMT" value="3793213301910271541" />
-    <ref role="1TJDcQ" to="pyey:637qsduSbtp" resolve="Assert" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3i$cQqpDv$S" role="PzmwI">
       <ref role="PrY4T" node="3i$cQqpAZi0" resolve="IAtomicContract" />
     </node>

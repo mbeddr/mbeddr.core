@@ -57,8 +57,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm.pluginSolution/com.mbeddr.analyses.sat4j.fm.pluginSolution.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm/com.mbeddr.analyses.sat4j.fm.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j/com.mbeddr.analyses.sat4j.msd" folder="sat4j" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.promela.pluginSolution/com.mbeddr.analyses.spin.promela.pluginSolution.msd" folder="spin" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.promela.rt/com.mbeddr.analyses.spin.promela.rt.msd" folder="spin" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.pluginSolution/com.mbeddr.analyses.spin.pluginSolution.msd" folder="spin" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.rt/com.mbeddr.analyses.spin.rt.msd" folder="spin" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.z3/com.mbeddr.analyses.z3.msd" folder="z3" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.results/com.mbeddr.lantest.results.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.lantest.testdata/com.mbeddr.lantest.testdata.msd" folder="lantest" />
@@ -76,9 +76,9 @@
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc/cbmc.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cpa.testcode/test.analyses.cpa.testcode.msd" folder="test.cpa" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cpa/test.analyses.cpa.msd" folder="test.cpa" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analyses.spin.promela.testcode/tests.analyses.spin.promela.testcode.msd" folder="test.spin" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analyses.spin.promela.ts/test.analyses.spin.promela.ts.msd" folder="test.spin" />
-      <modulePath path="$PROJECT_DIR$/tests/test.analyses.spin.promela/test.analyses.spin.promela.msd" folder="test.spin" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analyses.spin.testcode/test.analyses.spin.testcode.msd" folder="test.spin" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analyses.spin.ts/test.analyses.spin.ts.msd" folder="test.spin" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analyses.spin/test.analyses.spin.msd" folder="test.spin" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.stan.ts/test.analyses.stan.ts.msd" folder="test.z3" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var.testcode/test.analyses.var.testcode.msd" folder="test.sat4j" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.var/test.analyses.var.msd" folder="test.sat4j" />

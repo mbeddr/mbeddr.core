@@ -19,6 +19,11 @@
     <language slang="l:c9a5ade7-5f6a-41ae-a703-5d94a418cf4f:com.mbeddr.analyses.cbmc.components" version="0" />
     <language slang="l:0a02a8f9-14d0-4970-9bd2-ca35a097c80d:com.mbeddr.analyses.cbmc.core" version="0" />
     <language slang="l:daa1849d-6955-4fef-afe3-8aea1f61e6fa:com.mbeddr.analyses.cbmc.statemachines" version="0" />
+    <language slang="l:9aeff3a1-b145-418c-a75b-9a6e331d7333:com.mbeddr.analyses.spin" version="0" />
+    <language slang="l:17b818a8-8533-4efe-8f51-f532146ae66b:com.mbeddr.analyses.spin.c" version="0" />
+    <language slang="l:f027a490-7082-492e-99ce-dfe65d7342f7:com.mbeddr.analyses.spin.c.patterns" version="0" />
+    <language slang="l:877b0e90-e1a6-4468-970c-dcb3f49f95ed:com.mbeddr.analyses.spin.promela" version="0" />
+    <language slang="l:4ddb29eb-11e5-46c6-a894-6b8a4c38587d:com.mbeddr.analyses.spin.promela.patterns" version="0" />
     <language slang="l:e865cad2-7cc8-437a-951a-665bcbcb8b1a:com.mbeddr.cc.requirements" version="0" />
     <language slang="l:f3ed62ca-3490-40d0-890b-9b3133cc2ead:com.mbeddr.cc.requirements.c" version="0" />
     <language slang="l:7a52ca96-9053-41d2-ae13-8cee05f36698:com.mbeddr.cc.requirements.c2doc" version="0" />
@@ -78,7 +83,6 @@
     <language slang="l:fa13cc63-c476-4d46-9c96-d53670abe7bc:de.itemis.mps.editor.diagram" version="0" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
     <language slang="l:21063c66-85ba-4e98-839b-036445b17ae2:de.itemis.mps.editor.layout" version="0" />
-    <language slang="l:c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1:de.slisson.mps.hacks.xmodelgen" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -92,7 +96,6 @@
     <language slang="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" version="1" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
     <language slang="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" version="7" />
-    <language slang="l:7ab1a6fa-0a11-4b95-9e48-75f363d6cb00:jetbrains.mps.lang.generator.plan" version="1" />
     <language slang="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="8" />
     <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="3" />
@@ -119,6 +122,8 @@
     <module reference="a3733d9d-fa94-4706-bdd4-596b968eba8e(com.mbeddr.analyses.cbmc.rt)" version="0" />
     <module reference="93df2f50-c615-4300-ad92-915871dcae02(com.mbeddr.analyses.cbmc.statemachines.pluginSolution)" version="0" />
     <module reference="0a31509b-f803-4558-b840-db9f6dc14b2f(com.mbeddr.analyses.cbmc.statemachines.rt)" version="0" />
+    <module reference="5778c639-58c0-4209-a2fe-136f28e3ec3f(com.mbeddr.analyses.spin.pluginSolution)" version="0" />
+    <module reference="e4586d76-86eb-4b19-862c-e5375e853c19(com.mbeddr.analyses.spin.rt)" version="0" />
     <module reference="4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)" version="0" />
     <module reference="2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)" version="0" />
     <module reference="30d40e06-2249-4bd3-b8ab-109459f5021f(com.mbeddr.ext.units.runtime)" version="0" />
