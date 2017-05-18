@@ -112,11 +112,11 @@
       </concept>
     </language>
     <language id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin">
-      <concept id="9065467049586938195" name="com.mbeddr.analyses.spin.structure.SpinExecutable" flags="ng" index="1gr5cj" />
-      <concept id="9065467049586938196" name="com.mbeddr.analyses.spin.structure.SpinPlatform" flags="ng" index="1gr5ck">
-        <property id="9065467049586938197" name="compiler" index="1gr5cl" />
-        <property id="9065467049586938198" name="compilerOptions" index="1gr5cm" />
-        <property id="9065467049586938199" name="make" index="1gr5cn" />
+      <concept id="9065467049586938195" name="" flags="ng" index="1gr5cj" />
+      <concept id="9065467049586938196" name="" flags="ng" index="1gr5ck">
+        <property id="9065467049586938197" name="" index="1gr5cl" />
+        <property id="9065467049586938198" name="" index="1gr5cm" />
+        <property id="9065467049586938199" name="" index="1gr5cn" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -733,6 +733,10 @@
       <property role="TrG5h" value="c" />
       <property role="33SPWl" value="1" />
       <node concept="2D2Mot" id="24G9CRyO19g" role="33SPX4">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="2CFTTh" id="7_$cGNhR7My" role="2CGF$g">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
