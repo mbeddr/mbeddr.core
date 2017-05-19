@@ -119,11 +119,6 @@
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty_old" index="3kgbRO" />
-        <property id="6156524541422553710" name="path_old" index="3N1Lgt" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile_old" index="1RwFax" />
-      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="6116558314501417952" name="com.mbeddr.core.modules.structure.HeaderDescriptor" flags="ng" index="rcWE1" />
@@ -163,9 +158,10 @@
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpW">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRP" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFay" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
       <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
     </language>
@@ -443,16 +439,12 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="4PtxuK92A2B" resolve="simple_assertion_1" />
-      <node concept="3NXOOs" id="28vOu_upGdq" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="3NXOOs" id="2kft9cs4Kwc" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file1.c" />
       </node>
-      <node concept="3NXOOs" id="28vOu_upGdr" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="3NXOOs" id="2kft9cs4Kwe" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file2.c" />
@@ -478,12 +470,10 @@
         <property role="TrG5h" value="_A_" />
         <property role="3u2T6H" value="2" />
       </node>
-      <node concept="9PVaO" id="28vOu_upGdA" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="9PVaO" id="2kft9cs4Kwh" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
-        <property role="3N1Lgt" value="external_files/" />
+        <property role="3N1Lgt" value="external_files" />
       </node>
     </node>
     <node concept="1nvAUE" id="28vOu_uqmx4" role="3V$2$K">
@@ -513,12 +503,10 @@
         <property role="TrG5h" value="_A_" />
         <property role="3u2T6H" value="2" />
       </node>
-      <node concept="9PVaO" id="28vOu_uqtPG" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="9PVaO" id="2kft9cs4Kwl" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
-        <property role="3N1Lgt" value="external_files/" />
+        <property role="3N1Lgt" value="external_files" />
       </node>
     </node>
     <node concept="1nvAUJ" id="7kPcpiFfCP0" role="3V$2$K">
@@ -541,9 +529,7 @@
         <property role="TrG5h" value="_A_" />
         <property role="3u2T6H" value="1" />
       </node>
-      <node concept="3NXOOs" id="7kPcpiFfCTM" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="3NXOOs" id="2kft9cs4Kwn" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file_with_macros.c" />
@@ -565,16 +551,14 @@
       <property role="2l50Mm" value="false" />
       <property role="3u2WvC" value="true" />
       <ref role="3V$Cn$" node="7kPcpiFfB0C" resolve="harness_add3" />
-      <node concept="3NXOOs" id="7kPcpiFfCUb" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
-        <property role="3N1Lgt" value="external_files/file_with_macros.c" />
-      </node>
       <node concept="3u2USL" id="7kPcpiFiepI" role="3u2XS$">
         <property role="TrG5h" value="_B_" />
         <property role="3u2T6H" value="2" />
+      </node>
+      <node concept="3NXOOs" id="2kft9cs4Kwp" role="1Byen_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="external_files/file_with_macros.c" />
       </node>
     </node>
     <node concept="1nvAUJ" id="7kPcpiFiUYh" role="3V$2$K">
@@ -593,9 +577,7 @@
       <property role="2l50Mm" value="false" />
       <property role="3u2WvC" value="false" />
       <ref role="3V$Cn$" node="7kPcpiFiUG1" resolve="harness_add_no_macro_defined" />
-      <node concept="3NXOOs" id="7kPcpiFiUYi" role="1Byen_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
+      <node concept="3NXOOs" id="2kft9cs4Kwr" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file_with_macros.c" />
