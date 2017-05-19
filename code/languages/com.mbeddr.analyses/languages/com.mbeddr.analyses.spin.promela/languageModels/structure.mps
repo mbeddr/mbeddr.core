@@ -90,6 +90,12 @@
     <property role="EcuMT" value="799927705160539981" />
     <property role="R4oN_" value="proctype" />
     <ref role="1TJDcQ" to="x27k:5_l8w1EmTvx" resolve="Function" />
+    <node concept="1TJgyj" id="4JWXckQZ2eY" role="1TKVEi">
+      <property role="IQ2ns" value="5475520374843909054" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="instancesNumber" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
     <node concept="PrWs8" id="GpUw9S6QMd" role="PzmwI">
       <ref role="PrY4T" node="GpUw9S5_Xa" resolve="IPromelaModelContent" />
     </node>
