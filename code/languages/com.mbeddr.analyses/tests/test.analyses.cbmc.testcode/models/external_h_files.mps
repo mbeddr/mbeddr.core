@@ -195,7 +195,7 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I&quot;../../extern_h_files_1&quot; -I&quot;../../extern_h_files_2&quot;" />
+      <property role="2AWWZI" value="-std=c99 -I&quot;../../external_headers_1&quot; -I&quot;../../external_headers_2&quot;" />
       <property role="1FkSt$" value="-g" />
     </node>
   </node>
@@ -316,7 +316,7 @@
   <node concept="rcWEw" id="2kft9cs57rw">
     <property role="TrG5h" value="file" />
     <node concept="rcWE1" id="2kft9cs57rx" role="rcWEr">
-      <property role="rcWEL" value="&quot;../../extern_h_files_2/file.h&quot;" />
+      <property role="rcWEL" value="&quot;../../external_headers_2/file.h&quot;" />
     </node>
     <node concept="rcWEZ" id="2kft9cs58SD" role="rcWEr">
       <property role="rcWEL" value="&quot;../../external_files/file.c&quot;" />
