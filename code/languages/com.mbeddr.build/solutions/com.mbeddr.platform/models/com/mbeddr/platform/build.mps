@@ -483,12 +483,6 @@
       <node concept="m$_yC" id="5fGcQI9hdOz" role="m$_yJ">
         <ref role="m$_y1" node="5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />
       </node>
-      <node concept="m$_yC" id="5EOtlZG5EW2" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="httpSupport" />
-      </node>
-      <node concept="m$_yC" id="5EOtlZG5NG4" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:RJsmGEieyQ" resolve="jetbrains.mps.vcs" />
-      </node>
       <node concept="3_J27D" id="7uZw0yZ2_Jx" role="m_cZH">
         <node concept="3Mxwew" id="7uZw0yZ2_Jy" role="3MwsjC">
           <property role="3MwjfP" value="mbeddr.mpsutil" />
@@ -519,9 +513,6 @@
       </node>
       <node concept="m$_yC" id="24ObHxTzV4Z" role="m$_yJ">
         <ref role="m$_y1" node="7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
-      </node>
-      <node concept="m$_yC" id="24ObHxT$1z0" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:RJsmGEieyQ" resolve="jetbrains.mps.vcs" />
       </node>
       <node concept="3_J27D" id="24ObHxTzV50" role="m_cZH">
         <node concept="3Mxwew" id="24ObHxTzV51" role="3MwsjC">
