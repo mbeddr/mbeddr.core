@@ -64,6 +64,7 @@
       <concept id="799927705160921386" name="com.mbeddr.analyses.spin.promela.structure.ByteType" flags="ng" index="1N1tGC" />
       <concept id="799927705160539981" name="com.mbeddr.analyses.spin.promela.structure.ProcType" flags="ng" index="1N3Vlf">
         <property id="2935779374999680025" name="active" index="2DuWZg" />
+        <child id="5475520374843909054" name="instancesNumber" index="1X0dtV" />
       </concept>
       <concept id="799927705160539985" name="com.mbeddr.analyses.spin.promela.structure.Init" flags="ng" index="1N3Vlj" />
       <concept id="799927705160518134" name="com.mbeddr.analyses.spin.promela.structure.PromelaModel" flags="ng" index="1N3YfO" />
@@ -1265,8 +1266,17 @@
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="4JWXckQYQ2o" role="N3F5h">
-      <property role="TrG5h" value="empty_1495095399100_1" />
+    <node concept="2NXPZ9" id="4JWXckR2ms$" role="N3F5h">
+      <property role="TrG5h" value="empty_1495103331015_17" />
+    </node>
+    <node concept="4WHVk" id="4JWXckR2lmj" role="N3F5h">
+      <property role="TrG5h" value="M" />
+      <node concept="3TlMh9" id="4JWXckR2m6X" role="2DQcEM">
+        <property role="2hmy$m" value="3" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="4JWXckR2m7o" role="N3F5h">
+      <property role="TrG5h" value="empty_1495103329736_16" />
     </node>
     <node concept="1N3Vlf" id="4JWXckQYQuE" role="N3F5h">
       <property role="TrG5h" value="Client" />
@@ -1376,6 +1386,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="4ZOvp" id="4JWXckR2mTl" role="1X0dtV">
+        <ref role="2DPCA0" node="4JWXckR2lmj" resolve="M" />
       </node>
     </node>
     <node concept="2NXPZ9" id="4JWXckQYQPJ" role="N3F5h">
