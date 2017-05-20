@@ -35,6 +35,7 @@
       </concept>
       <concept id="2390327893064382862" name="com.mbeddr.analyses.spin.promela.structure.ChanDeclaration" flags="ng" index="33SPW3">
         <property id="2390327893064382872" name="size" index="33SPWl" />
+        <child id="682261312585237108" name="channelSize" index="25PmdS" />
         <child id="2390327893064382921" name="types" index="33SPX4" />
       </concept>
       <concept id="2390327893064016125" name="com.mbeddr.analyses.spin.promela.structure.Mtype" flags="ng" index="33TspK">
@@ -746,6 +747,9 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
+      <node concept="3TlMh9" id="_RSgMcGoyT" role="25PmdS">
+        <property role="2hmy$m" value="1" />
+      </node>
     </node>
     <node concept="2NXPZ9" id="24G9CRyO87c" role="N3F5h">
       <property role="TrG5h" value="empty_1438180822097_3" />
@@ -794,6 +798,9 @@
       <node concept="2D2Mot" id="7Hmzdkr8R_b" role="33SPX4">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3TlMh9" id="_RSgMcGoAx" role="25PmdS">
+        <property role="2hmy$m" value="1" />
       </node>
     </node>
     <node concept="2NXPZ9" id="24G9CRyOYvo" role="N3F5h">
@@ -916,6 +923,9 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
+      <node concept="3TlMh9" id="_RSgMcGovU" role="25PmdS">
+        <property role="2hmy$m" value="1" />
+      </node>
     </node>
     <node concept="33SPW3" id="7Hmzdkr8QiO" role="N3F5h">
       <property role="TrG5h" value="toR" />
@@ -927,6 +937,9 @@
       <node concept="2D2Mot" id="7Hmzdkr8Qv7" role="33SPX4">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3TlMh9" id="_RSgMcGowr" role="25PmdS">
+        <property role="2hmy$m" value="1" />
       </node>
     </node>
     <node concept="2NXPZ9" id="7_$cGNhPZht" role="N3F5h">

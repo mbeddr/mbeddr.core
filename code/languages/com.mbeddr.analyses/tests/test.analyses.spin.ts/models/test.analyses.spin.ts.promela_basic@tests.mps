@@ -85,6 +85,7 @@
       </concept>
       <concept id="2390327893064382862" name="com.mbeddr.analyses.spin.promela.structure.ChanDeclaration" flags="ng" index="33SPW3">
         <property id="2390327893064382872" name="size" index="33SPWl" />
+        <child id="682261312585237108" name="channelSize" index="25PmdS" />
         <child id="2390327893064382921" name="types" index="33SPX4" />
       </concept>
       <concept id="2390327893064016125" name="com.mbeddr.analyses.spin.promela.structure.Mtype" flags="ng" index="33TspK">
@@ -265,6 +266,9 @@
           <node concept="2CGWmI" id="7Hmzdkr17RW" role="33SPX4">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3TlMh9" id="_RSgMcGohE" role="25PmdS">
+            <property role="2hmy$m" value="1" />
           </node>
         </node>
         <node concept="2NXPZ9" id="7Hmzdkr18b1" role="N3F5h">
