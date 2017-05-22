@@ -13,6 +13,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -383,6 +384,35 @@
       <node concept="trNpa" id="1GXRyrT8qEr" role="EQaZv">
         <ref role="trN6q" node="439FXGf05P" resolve="CVerificationHarnessModule" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6AAaFOTBk1q">
+    <property role="EcuMT" value="7612819212320194650" />
+    <property role="3GE5qa" value="harness.saver" />
+    <property role="TrG5h" value="HarnesSaver" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="6AAaFOTBk1r" role="lGtFl">
+      <property role="Hh88m" value="saver" />
+      <node concept="trNpa" id="6AAaFOTBk1t" role="EQaZv">
+        <ref role="trN6q" node="439FXGfyCs" resolve="HarnessCode" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6AAaFOTVF$K">
+    <property role="EcuMT" value="7612819212325534000" />
+    <property role="3GE5qa" value="harness.saver" />
+    <property role="TrG5h" value="GeneratorDependencyChunckContainer" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6AAaFOTVF$O" role="1TKVEi">
+      <property role="IQ2ns" value="7612819212325534004" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="gdc" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
+    </node>
+    <node concept="PrWs8" id="6AAaFOTVF$L" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
 </model>

@@ -45,6 +45,7 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
@@ -780,6 +781,20 @@
       </node>
       <node concept="2SsqMj" id="1GXRyrT9Vi0" role="3EZMnx" />
       <node concept="2iRkQZ" id="1GXRyrT9VhK" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6AAaFOTBk1B">
+    <property role="3GE5qa" value="harness.saver" />
+    <ref role="1XX52x" to="llb3:6AAaFOTBk1q" resolve="HarnesSaver" />
+    <node concept="3EZMnI" id="6AAaFOTBk1D" role="2wV5jI">
+      <node concept="3F0ifn" id="6AAaFOTBk1K" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;&lt; saver &gt;&gt;" />
+        <node concept="30gYXW" id="6AAaFOTBk1U" role="3F10Kt">
+          <property role="Vb096" value="yellow" />
+        </node>
+      </node>
+      <node concept="2SsqMj" id="6AAaFOTBk1Q" role="3EZMnx" />
+      <node concept="2iRkQZ" id="6AAaFOTBk1G" role="2iSdaV" />
     </node>
   </node>
 </model>
