@@ -947,6 +947,37 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6AAaFOTUdnD" role="jymVt" />
+    <node concept="2YIFZL" id="bnk1STnwzI" role="jymVt">
+      <property role="TrG5h" value="getXMLFileNameToSaveTraces" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="bnk1STnwzJ" role="3clF47">
+        <node concept="3clFbF" id="bnk1STnwzK" role="3cqZAp">
+          <node concept="3cpWs3" id="bnk1STnwzS" role="3clFbG">
+            <node concept="2OqwBi" id="bnk1STnwzT" role="3uHU7B">
+              <node concept="37vLTw" id="bnk1STnwzU" role="2Oq$k0">
+                <ref role="3cqZAo" node="bnk1STnwzZ" resolve="cvhm" />
+              </node>
+              <node concept="3TrcHB" id="bnk1STnwzV" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="bnk1STnwzW" role="3uHU7w">
+              <property role="Xl_RC" value="_trace.xml" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="bnk1STnwzX" role="1B3o_S" />
+      <node concept="17QB3L" id="bnk1STnwzY" role="3clF45" />
+      <node concept="37vLTG" id="bnk1STnwzZ" role="3clF46">
+        <property role="TrG5h" value="cvhm" />
+        <node concept="3Tqbb2" id="bnk1STnw$0" role="1tU5fm">
+          <ref role="ehGHo" to="llb3:439FXGf05P" resolve="CVerificationHarnessModule" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="6AAaFOTVcvY" role="jymVt" />
     <node concept="Wx3nA" id="6AAaFOTSW$O" role="jymVt">
       <property role="TrG5h" value="ENUM_NAME" />

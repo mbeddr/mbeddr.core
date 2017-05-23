@@ -389,13 +389,20 @@
   <node concept="1TIwiD" id="6AAaFOTBk1q">
     <property role="EcuMT" value="7612819212320194650" />
     <property role="3GE5qa" value="harness.saver" />
-    <property role="TrG5h" value="HarnesSaver" />
+    <property role="TrG5h" value="CollectTraces" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="6AAaFOTBk1r" role="lGtFl">
-      <property role="Hh88m" value="saver" />
+      <property role="Hh88m" value="traces" />
       <node concept="trNpa" id="6AAaFOTBk1t" role="EQaZv">
         <ref role="trN6q" node="439FXGfyCs" resolve="HarnessCode" />
       </node>
+    </node>
+    <node concept="1TJgyj" id="bnk1SThRv6" role="1TKVEi">
+      <property role="IQ2ns" value="204720398808872902" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tracesHandler" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="bnk1STkjmF" resolve="AbstractTracesHandler" />
     </node>
   </node>
   <node concept="1TIwiD" id="6AAaFOTVF$K">
@@ -413,6 +420,35 @@
     </node>
     <node concept="PrWs8" id="6AAaFOTVF$L" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="bnk1STkjmF">
+    <property role="EcuMT" value="204720398809511339" />
+    <property role="3GE5qa" value="harness.saver" />
+    <property role="TrG5h" value="AbstractTracesHandler" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="bnk1STkjmG">
+    <property role="EcuMT" value="204720398809511340" />
+    <property role="3GE5qa" value="harness.saver" />
+    <property role="TrG5h" value="TracesSaver" />
+    <property role="34LRSv" value="save in file" />
+    <ref role="1TJDcQ" node="bnk1STkjmF" resolve="AbstractTracesHandler" />
+  </node>
+  <node concept="1TIwiD" id="bnk1STrbs2">
+    <property role="EcuMT" value="204720398811313922" />
+    <property role="3GE5qa" value="harness.saver" />
+    <property role="TrG5h" value="ResetAndReplay" />
+    <property role="34LRSv" value="reset and replay" />
+    <ref role="1TJDcQ" node="bnk1STkjmF" resolve="AbstractTracesHandler" />
+    <node concept="1TJgyj" id="bnk1STusj8" role="1TKVEi">
+      <property role="IQ2ns" value="204720398812169416" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="resetFunction" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="x27k:7qHzltJ0oT3" resolve="FunctionRefExpr" />
     </node>
   </node>
 </model>
