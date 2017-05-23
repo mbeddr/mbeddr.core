@@ -1303,7 +1303,7 @@
                 <ref role="3cqZAo" node="6AAaFOT_c$W" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6AAaFOT_c_4" role="37wK5m">
-                <property role="Xl_RC" value="_050_harness_suv_with_hidden_state" />
+                <property role="Xl_RC" value="_050_harness_suv_with_hidden_state_manual" />
               </node>
             </node>
           </node>
@@ -1436,7 +1436,7 @@
                 <ref role="3cqZAo" node="6AAaFOT_mT0" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6AAaFOT_mT8" role="37wK5m">
-                <property role="Xl_RC" value="_051_harness_suv_with_hidden_state" />
+                <property role="Xl_RC" value="_051_harness_suv_with_hidden_state_manual" />
               </node>
             </node>
           </node>
