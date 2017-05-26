@@ -91,6 +91,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -318,6 +321,32 @@
                     </node>
                   </node>
                   <node concept="3x8VRR" id="5yxSA$IRBAo" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3clFbJ" id="EEDqFM$ygT" role="3cqZAp">
+                <node concept="3clFbS" id="EEDqFM$ygV" role="3clFbx">
+                  <node concept="3clFbF" id="EEDqFM$$jL" role="3cqZAp">
+                    <node concept="2OqwBi" id="EEDqFM$$jM" role="3clFbG">
+                      <node concept="37vLTw" id="EEDqFM$$jN" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4kcU3Yrk$i9" resolve="arguments" />
+                      </node>
+                      <node concept="TSZUe" id="EEDqFM$$jO" role="2OqNvi">
+                        <node concept="Xl_RD" id="EEDqFM$$jV" role="25WWJ7">
+                          <property role="Xl_RC" value="-e" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="EEDqFM$zWq" role="3clFbw">
+                  <node concept="2OqwBi" id="EEDqFM$zWs" role="3fr31v">
+                    <node concept="37vLTw" id="EEDqFM$zWt" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5yxSA$IRl4H" resolve="config" />
+                    </node>
+                    <node concept="3TrcHB" id="EEDqFM$zWu" role="2OqNvi">
+                      <ref role="3TsBF5" to="v326:EEDqFM$hKb" resolve="trailsForAllErrors" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -562,7 +591,30 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="5yxSA$IRcXa" role="3cqZAp" />
+              <node concept="3clFbF" id="71H03GAUREw" role="3cqZAp">
+                <node concept="2OqwBi" id="71H03GAUSiF" role="3clFbG">
+                  <node concept="37vLTw" id="71H03GAUREu" role="2Oq$k0">
+                    <ref role="3cqZAo" node="HmUOIG_5b5" resolve="arguments" />
+                  </node>
+                  <node concept="TSZUe" id="71H03GAUTzU" role="2OqNvi">
+                    <node concept="Xl_RD" id="71H03GAUTBA" role="25WWJ7">
+                      <property role="Xl_RC" value="-r" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="71H03GAWLqG" role="3cqZAp">
+                <node concept="2OqwBi" id="71H03GAWM3p" role="3clFbG">
+                  <node concept="37vLTw" id="71H03GAWLqE" role="2Oq$k0">
+                    <ref role="3cqZAo" node="HmUOIG_5b5" resolve="arguments" />
+                  </node>
+                  <node concept="TSZUe" id="71H03GAWNkD" role="2OqNvi">
+                    <node concept="37vLTw" id="71H03GAWNmA" role="25WWJ7">
+                      <ref role="3cqZAo" node="71H03GAUOM6" resolve="trailFileName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -640,6 +692,10 @@
         <node concept="3Tqbb2" id="HmUOIG_5bC" role="1tU5fm">
           <ref role="ehGHo" to="ir22:GpUw9S5wBQ" resolve="PromelaModel" />
         </node>
+      </node>
+      <node concept="37vLTG" id="71H03GAUOM6" role="3clF46">
+        <property role="TrG5h" value="trailFileName" />
+        <node concept="17QB3L" id="71H03GAVURX" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="HmUOIG_52U" role="jymVt" />

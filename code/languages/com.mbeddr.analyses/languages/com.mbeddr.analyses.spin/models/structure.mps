@@ -95,6 +95,11 @@
       <property role="20kJfa" value="searchDepth" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
     </node>
+    <node concept="1TJgyi" id="EEDqFM$hKb" role="1TKVEl">
+      <property role="IQ2nx" value="768608840052710411" />
+      <property role="TrG5h" value="trailsForAllErrors" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7Rf0$0HCP5j">
     <property role="TrG5h" value="SpinExecutable" />

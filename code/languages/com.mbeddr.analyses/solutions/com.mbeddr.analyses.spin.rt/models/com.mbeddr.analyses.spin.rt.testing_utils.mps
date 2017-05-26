@@ -187,7 +187,11 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
   </registry>
@@ -202,8 +206,10 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3uibUv" id="_jsMICpJ4F" role="3clF45">
-        <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+      <node concept="_YKpA" id="5ONlem$sz$9" role="3clF45">
+        <node concept="3uibUv" id="5ONlem$sz$a" role="_ZDj9">
+          <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+        </node>
       </node>
       <node concept="NWlO9" id="5yxSA$IRH$V" role="lGtFl">
         <property role="NWlVz" value="Check and return a lifted result." />
@@ -347,15 +353,18 @@
       </node>
       <node concept="3clFbS" id="_jsMICrMgi" role="3clF47">
         <node concept="3clFbF" id="_jsMICrNP4" role="3cqZAp">
-          <node concept="2OqwBi" id="_jsMICrOai" role="3clFbG">
-            <node concept="1rXfSq" id="_jsMICrNP3" role="2Oq$k0">
-              <ref role="37wK5l" node="4QGaVz5ryAm" resolve="checkModel" />
-              <node concept="37vLTw" id="_jsMICrNYR" role="37wK5m">
-                <ref role="3cqZAo" node="_jsMICrMge" resolve="model" />
+          <node concept="2OqwBi" id="5ONlem$s_Bn" role="3clFbG">
+            <node concept="2OqwBi" id="_jsMICrOai" role="2Oq$k0">
+              <node concept="1rXfSq" id="_jsMICrNP3" role="2Oq$k0">
+                <ref role="37wK5l" node="4QGaVz5ryAm" resolve="checkModel" />
+                <node concept="37vLTw" id="_jsMICrNYR" role="37wK5m">
+                  <ref role="3cqZAo" node="_jsMICrMge" resolve="model" />
+                </node>
+                <node concept="37vLTw" id="_jsMICrO5o" role="37wK5m">
+                  <ref role="3cqZAo" node="_jsMICrMgg" resolve="spinModuleName" />
+                </node>
               </node>
-              <node concept="37vLTw" id="_jsMICrO5o" role="37wK5m">
-                <ref role="3cqZAo" node="_jsMICrMgg" resolve="spinModuleName" />
-              </node>
+              <node concept="1uHKPH" id="5ONlem$s$Rr" role="2OqNvi" />
             </node>
             <node concept="liA8E" id="_jsMICrOsY" role="2OqNvi">
               <ref role="37wK5l" to="imq8:7XCY$_ranFq" resolve="getRawResult" />
@@ -497,8 +506,10 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="5yxSA$IRHTe" role="1B3o_S" />
-      <node concept="3uibUv" id="5yxSA$IRUBN" role="3clF45">
-        <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+      <node concept="_YKpA" id="5ONlem$szwx" role="3clF45">
+        <node concept="3uibUv" id="5ONlem$szwy" role="_ZDj9">
+          <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+        </node>
       </node>
       <node concept="NWlO9" id="5yxSA$IRHTg" role="lGtFl">
         <property role="NWlVz" value="Check the AssertionAnalysis." />
@@ -508,8 +519,10 @@
     <node concept="2YIFZL" id="5yxSA$IRGjq" role="jymVt">
       <property role="TrG5h" value="doCheck" />
       <node concept="3Tm6S6" id="5yxSA$IRGjr" role="1B3o_S" />
-      <node concept="3uibUv" id="5yxSA$IRGjs" role="3clF45">
-        <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+      <node concept="_YKpA" id="5ONlem$sz9D" role="3clF45">
+        <node concept="3uibUv" id="5ONlem$sz9E" role="_ZDj9">
+          <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+        </node>
       </node>
       <node concept="37vLTG" id="5yxSA$IRGjl" role="3clF46">
         <property role="TrG5h" value="aa" />
@@ -546,8 +559,10 @@
         <node concept="3cpWs8" id="5yxSA$IRGiR" role="3cqZAp">
           <node concept="3cpWsn" id="5yxSA$IRGiS" role="3cpWs9">
             <property role="TrG5h" value="result" />
-            <node concept="3uibUv" id="5yxSA$IRGiT" role="1tU5fm">
-              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            <node concept="_YKpA" id="5ONlem$syTD" role="1tU5fm">
+              <node concept="3uibUv" id="5ONlem$syTE" role="_ZDj9">
+                <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+              </node>
             </node>
             <node concept="10Nm6u" id="5yxSA$IRGiU" role="33vP2m" />
           </node>
@@ -620,8 +635,6 @@
         <property role="NWlVz" value="Performs the checking." />
       </node>
     </node>
-    <node concept="2tJIrI" id="_jsMICrM7M" role="jymVt" />
-    <node concept="2tJIrI" id="_jsMICrMaB" role="jymVt" />
     <node concept="3Tm1VV" id="4QGaVz5ry$L" role="1B3o_S" />
   </node>
 </model>
