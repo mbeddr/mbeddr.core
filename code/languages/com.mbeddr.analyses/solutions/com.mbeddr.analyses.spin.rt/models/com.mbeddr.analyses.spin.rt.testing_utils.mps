@@ -131,6 +131,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
@@ -206,10 +212,8 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="_YKpA" id="5ONlem$sz$9" role="3clF45">
-        <node concept="3uibUv" id="5ONlem$sz$a" role="_ZDj9">
-          <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
-        </node>
+      <node concept="3uibUv" id="_jsMICpJ4F" role="3clF45">
+        <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
       </node>
       <node concept="NWlO9" id="5yxSA$IRH$V" role="lGtFl">
         <property role="NWlVz" value="Check and return a lifted result." />
@@ -353,18 +357,15 @@
       </node>
       <node concept="3clFbS" id="_jsMICrMgi" role="3clF47">
         <node concept="3clFbF" id="_jsMICrNP4" role="3cqZAp">
-          <node concept="2OqwBi" id="5ONlem$s_Bn" role="3clFbG">
-            <node concept="2OqwBi" id="_jsMICrOai" role="2Oq$k0">
-              <node concept="1rXfSq" id="_jsMICrNP3" role="2Oq$k0">
-                <ref role="37wK5l" node="4QGaVz5ryAm" resolve="checkModel" />
-                <node concept="37vLTw" id="_jsMICrNYR" role="37wK5m">
-                  <ref role="3cqZAo" node="_jsMICrMge" resolve="model" />
-                </node>
-                <node concept="37vLTw" id="_jsMICrO5o" role="37wK5m">
-                  <ref role="3cqZAo" node="_jsMICrMgg" resolve="spinModuleName" />
-                </node>
+          <node concept="2OqwBi" id="_jsMICrOai" role="3clFbG">
+            <node concept="1rXfSq" id="_jsMICrNP3" role="2Oq$k0">
+              <ref role="37wK5l" node="4QGaVz5ryAm" resolve="checkModel" />
+              <node concept="37vLTw" id="_jsMICrNYR" role="37wK5m">
+                <ref role="3cqZAo" node="_jsMICrMge" resolve="model" />
               </node>
-              <node concept="1uHKPH" id="5ONlem$s$Rr" role="2OqNvi" />
+              <node concept="37vLTw" id="_jsMICrO5o" role="37wK5m">
+                <ref role="3cqZAo" node="_jsMICrMgg" resolve="spinModuleName" />
+              </node>
             </node>
             <node concept="liA8E" id="_jsMICrOsY" role="2OqNvi">
               <ref role="37wK5l" to="imq8:7XCY$_ranFq" resolve="getRawResult" />
@@ -389,6 +390,9 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
+      <node concept="3uibUv" id="5yxSA$IRUBN" role="3clF45">
+        <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+      </node>
       <node concept="37vLTG" id="5yxSA$IRHT3" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="H_c77" id="5yxSA$IRIU0" role="1tU5fm" />
@@ -506,11 +510,6 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="5yxSA$IRHTe" role="1B3o_S" />
-      <node concept="_YKpA" id="5ONlem$szwx" role="3clF45">
-        <node concept="3uibUv" id="5ONlem$szwy" role="_ZDj9">
-          <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
-        </node>
-      </node>
       <node concept="NWlO9" id="5yxSA$IRHTg" role="lGtFl">
         <property role="NWlVz" value="Check the AssertionAnalysis." />
       </node>
@@ -518,12 +517,10 @@
     <node concept="2tJIrI" id="5yxSA$IRHOe" role="jymVt" />
     <node concept="2YIFZL" id="5yxSA$IRGjq" role="jymVt">
       <property role="TrG5h" value="doCheck" />
-      <node concept="3Tm6S6" id="5yxSA$IRGjr" role="1B3o_S" />
-      <node concept="_YKpA" id="5ONlem$sz9D" role="3clF45">
-        <node concept="3uibUv" id="5ONlem$sz9E" role="_ZDj9">
-          <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
-        </node>
+      <node concept="3uibUv" id="5yxSA$IRGjs" role="3clF45">
+        <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
       </node>
+      <node concept="3Tm6S6" id="5yxSA$IRGjr" role="1B3o_S" />
       <node concept="37vLTG" id="5yxSA$IRGjl" role="3clF46">
         <property role="TrG5h" value="aa" />
         <node concept="3Tqbb2" id="5yxSA$IRGjm" role="1tU5fm">
@@ -531,6 +528,11 @@
         </node>
       </node>
       <node concept="3clFbS" id="5yxSA$IRGiH" role="3clF47">
+        <node concept="3SKdUt" id="7gYnkkm$nak" role="3cqZAp">
+          <node concept="3SKdUq" id="7gYnkkm$nam" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: check if method modified is ok, changed because of multiple assertions possible" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="5yxSA$IRGiI" role="3cqZAp">
           <node concept="3cpWsn" id="5yxSA$IRGiJ" role="3cpWs9">
             <property role="TrG5h" value="analyzer" />
@@ -626,8 +628,11 @@
         </node>
         <node concept="3clFbH" id="5yxSA$IRGji" role="3cqZAp" />
         <node concept="3clFbF" id="5yxSA$IRGjj" role="3cqZAp">
-          <node concept="37vLTw" id="5yxSA$IRGjk" role="3clFbG">
-            <ref role="3cqZAo" node="5yxSA$IRGiS" resolve="result" />
+          <node concept="2OqwBi" id="7gYnkkm$kBW" role="3clFbG">
+            <node concept="37vLTw" id="5yxSA$IRGjk" role="2Oq$k0">
+              <ref role="3cqZAo" node="5yxSA$IRGiS" resolve="result" />
+            </node>
+            <node concept="1uHKPH" id="7gYnkkm$lqY" role="2OqNvi" />
           </node>
         </node>
       </node>
