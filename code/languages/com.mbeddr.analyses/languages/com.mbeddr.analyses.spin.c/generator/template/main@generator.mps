@@ -25,6 +25,8 @@
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
     </language>
     <language id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela">
+      <concept id="4256784329115432599" name="com.mbeddr.analyses.spin.promela.structure.PromelaGlobalVariableDeclaration" flags="ng" index="5jdhs" />
+      <concept id="8887445761571488196" name="com.mbeddr.analyses.spin.promela.structure.PromelaLocalVariableDeclaration" flags="ng" index="1wkSOh" />
       <concept id="799927705160921386" name="com.mbeddr.analyses.spin.promela.structure.ByteType" flags="ng" index="1N1tGC" />
       <concept id="799927705160539981" name="com.mbeddr.analyses.spin.promela.structure.ProcType" flags="ng" index="1N3Vlf" />
       <concept id="799927705160518134" name="com.mbeddr.analyses.spin.promela.structure.PromelaModel" flags="ng" index="1N3YfO" />
@@ -125,6 +127,7 @@
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
+        <property id="1167272244852" name="applyToConceptInheritors" index="36QftV" />
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
         <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
@@ -184,7 +187,6 @@
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
-      <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -271,6 +273,7 @@
   <node concept="bUwia" id="HmUOIGDH6b">
     <property role="TrG5h" value="main" />
     <node concept="3aamgX" id="Hdy9e32A3S" role="3acgRq">
+      <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="c4fa:1OcdQnyStpU" resolve="LocalVarRef" />
       <node concept="1Koe21" id="Hdy9e32ASR" role="1lVwrX">
         <node concept="1N3YfO" id="Hdy9e32AVk" role="1Koe22">
@@ -282,13 +285,13 @@
               <property role="2c7vTL" value="false" />
             </node>
             <node concept="3XIRFW" id="Hdy9e32AT1" role="3XIRFX">
-              <node concept="3XIRlf" id="Hdy9e32AU7" role="3XIRFZ">
+              <node concept="1wkSOh" id="3Gj8GGYtyPm" role="3XIRFZ">
                 <property role="TrG5h" value="dummyVar" />
-                <node concept="1N1tGC" id="Hdy9e32AU5" role="2C2TGm">
+                <node concept="1N1tGC" id="3Gj8GGYtyW3" role="2C2TGm">
                   <property role="2caQfQ" value="false" />
                   <property role="2c7vTL" value="false" />
                 </node>
-                <node concept="3TlMh9" id="Hdy9e32AWl" role="3XIe9u">
+                <node concept="3TlMh9" id="3Gj8GGYtzIP" role="3XIe9u">
                   <property role="2hmy$m" value="0" />
                 </node>
               </node>
@@ -298,7 +301,7 @@
                     <node concept="37HIHn" id="Hdy9e32AV4" role="1_9egR">
                       <ref role="37HIHm" node="Hdy9e32ASZ" resolve="dummy" />
                       <node concept="3ZVu4v" id="Hdy9e32AW4" role="1_9fRO">
-                        <ref role="3ZVs_2" node="Hdy9e32AU7" resolve="dummyVar" />
+                        <ref role="3ZVs_2" node="3Gj8GGYtyPm" resolve="dummyVar" />
                         <node concept="1ZhdrF" id="Hdy9e32Ekn" role="lGtFl">
                           <property role="P3scX" value="a9d69647-0840-491e-bf39-2eb0805d2011/2093108837558113914/2093108837558124071" />
                           <property role="2qtEX8" value="var" />
@@ -410,9 +413,10 @@
       <node concept="1Koe21" id="Hdy9e33dBe" role="1lVwrX">
         <node concept="1N3YfO" id="Hdy9e33dBf" role="1Koe22">
           <property role="TrG5h" value="dummyModel" />
-          <node concept="1S7NMz" id="Hdy9e33fKV" role="N3F5h">
+          <node concept="5jdhs" id="3Gj8GGYt_lA" role="N3F5h">
+            <property role="2OOxQR" value="true" />
             <property role="TrG5h" value="dummyVar" />
-            <node concept="3TlMh2" id="Hdy9e33fKT" role="2C2TGm">
+            <node concept="3TlMh2" id="3Gj8GGYt_qE" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
@@ -429,7 +433,7 @@
                   <node concept="1_9egQ" id="Hdy9e33fU3" role="3XIRFZ">
                     <node concept="37HikU" id="Hdy9e33fTZ" role="1_9egR">
                       <node concept="1S7827" id="Hdy9e33fUl" role="1_9fRO">
-                        <ref role="1S7826" node="Hdy9e33fKV" resolve="dummyVar" />
+                        <ref role="1S7826" node="3Gj8GGYt_lA" resolve="dummyVar" />
                         <node concept="1ZhdrF" id="Hdy9e33fUL" role="lGtFl">
                           <property role="P3scX" value="6d11763d-483d-4b2b-8efc-09336c1b0001/6610873504380357354/6610873504380357355" />
                           <property role="2qtEX8" value="var" />
