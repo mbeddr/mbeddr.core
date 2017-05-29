@@ -304,7 +304,9 @@
       </concept>
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
-      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK" />
+      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK">
+        <child id="6116558314501347862" name="original_old" index="rcJHR" />
+      </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1217960179967" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowErrorMessage" flags="nn" index="2k5nB$" />
@@ -355,9 +357,6 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
-      <concept id="3140129094246107696" name="com.mbeddr.core.modules.structure.ITypeDef" flags="ng" index="0YR3Q">
-        <child id="6116558314501347862" name="original" index="rcJHR" />
-      </concept>
       <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
       <concept id="6116558314501417952" name="com.mbeddr.core.modules.structure.HeaderDescriptor" flags="ng" index="rcWE1" />
       <concept id="6116558314501417934" name="com.mbeddr.core.modules.structure.ExternalResourceDescriptor" flags="ng" index="rcWEJ">
@@ -1799,6 +1798,7 @@
     <property role="3GE5qa" value="main" />
     <node concept="rcJHK" id="7RiewQ_kNTY" role="3owgHT">
       <property role="TrG5h" value="zahl" />
+      <node concept="3TlMh2" id="7RiewQ_kNTZ" role="rcJHR" />
       <node concept="2b32R4" id="7RiewQ_kNU0" role="lGtFl">
         <node concept="3JmXsc" id="7RiewQ_kNU1" role="2P8S$">
           <node concept="3clFbS" id="7RiewQ_kNU2" role="2VODD2">
@@ -1813,7 +1813,6 @@
           </node>
         </node>
       </node>
-      <node concept="3TlMh2" id="7RiewQ_kNTZ" role="rcJHR" />
     </node>
     <node concept="n94m4" id="7RiewQ_kNTX" role="lGtFl">
       <ref role="n9lRv" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
