@@ -25,6 +25,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.sample.HelloWorld/com.mbeddr.tutorial.sample.HelloWorld.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorial.startup/com.mbeddr.tutorial.startup.msd" folder="utils" />
       <modulePath path="$PROJECT_DIR$/solutions/demo.expr.sandbox/demo.expr.sandbox.msd" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/solutions/lib/com.mbeddr.ext.exceptionhandling/com.mbeddr.ext.exceptionhandling.library.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.main/mbeddr.tutorial.main.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr.tutorial.shonan.runtime/mbeddr.tutorial.shonan.runtime.msd" folder="hpc" />
       <modulePath path="$PROJECT_DIR$/tests/mbeddr.tutorial.shonan.test/mbeddr.tutorial.shonan.test.msd" folder="hpc" />
