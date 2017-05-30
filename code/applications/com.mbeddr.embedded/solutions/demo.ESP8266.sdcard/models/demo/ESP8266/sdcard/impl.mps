@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="68ac5365-14e5-4bad-965a-0d8a21262400" name="com.mbeddr.embedded.esp8266" version="-1" />
+    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
@@ -123,12 +124,11 @@
         <property id="747084250476874891" name="reexport" index="3GEa6x" />
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty_old" index="3kgbRO" />
+        <property id="6156524541422553710" name="path_old" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile_old" index="1RwFax" />
       </concept>
-      <concept id="4881264737620519319" name="com.mbeddr.core.base.structure.FileSystemDirPicker" flags="ng" index="3RfPnX" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
@@ -173,6 +173,13 @@
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz">
         <child id="2771264470558526601" name="init" index="1cecVj" />
       </concept>
+    </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpW">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRP" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFay" />
+      </concept>
+      <concept id="4881264737620519319" name="com.mbeddr.mpsutil.filepicker.structure.FileSystemDirPicker" flags="ng" index="3RfPnX" />
     </language>
     <language id="68ac5365-14e5-4bad-965a-0d8a21262400" name="com.mbeddr.embedded.esp8266">
       <concept id="7595578942775811465" name="com.mbeddr.embedded.esp8266.structure.Esp8266Platform" flags="ng" index="12Zzt7">
@@ -282,7 +289,7 @@
       <ref role="3GEb4d" node="4b64BCclyb8" resolve="user_config" />
     </node>
     <node concept="3GEVxB" id="7e09zBHKMpg" role="2OODSX">
-      <ref role="3GEb4d" to="kg8z:7e09zBHwtHO" resolve="SPI_Impl" />
+      <ref role="3GEb4d" to="kg8z:7e09zBHwtHO" resolve="SPIImpl" />
     </node>
     <node concept="3GEVxB" id="4b64BCclyCI" role="2OODSX">
       <property role="3GEa6x" value="false" />
@@ -734,7 +741,7 @@
         <ref role="2v9HqP" to="9090:4b64BCbtnP1" resolve="gpio" />
       </node>
       <node concept="2v9HqM" id="7e09zBI9$Zw" role="2eOfOg">
-        <ref role="2v9HqP" to="kg8z:7e09zBHwtHO" resolve="SPI_Impl" />
+        <ref role="2v9HqP" to="kg8z:7e09zBHwtHO" resolve="SPIImpl" />
       </node>
       <node concept="2v9HqM" id="7e09zBHKWq9" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:2RIhi0HBZdt" resolve="string" />
@@ -743,11 +750,15 @@
     <node concept="12Zzt7" id="4b64BCbhbMh" role="2AWWZH">
       <property role="12ZUz5" value="/dev/tty.SLAB_USBtoUART" />
       <node concept="3RfPnX" id="4b64BCbhbMi" role="3b$Y35">
+        <property role="1RwFay" value="true" />
+        <property role="3kgbRP" value="false" />
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="/Volumes/ESP-SDK/esp-open-sdk/sdk" />
       </node>
       <node concept="3RfPnX" id="4b64BCbhbMj" role="3b_1_b">
+        <property role="1RwFay" value="true" />
+        <property role="3kgbRP" value="false" />
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="/Volumes/ESP-SDK/esp-open-sdk/xtensa-lx106-elf/bin" />
