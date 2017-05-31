@@ -1742,7 +1742,7 @@
                                         <ref role="3cqZAo" node="71H03GANRcQ" resolve="assertionExpression" />
                                       </node>
                                       <node concept="Xl_RD" id="71H03GAPp5o" role="3uHU7B">
-                                        <property role="Xl_RC" value="Assertion: " />
+                                        <property role="Xl_RC" value="Assert: " />
                                       </node>
                                     </node>
                                     <node concept="37vLTw" id="71H03GAVAwr" role="37wK5m">

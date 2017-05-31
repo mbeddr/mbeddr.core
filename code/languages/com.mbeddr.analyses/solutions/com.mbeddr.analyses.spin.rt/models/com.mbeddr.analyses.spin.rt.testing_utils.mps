@@ -197,7 +197,7 @@
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
-      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
   </registry>
@@ -632,7 +632,7 @@
             <node concept="37vLTw" id="5yxSA$IRGjk" role="2Oq$k0">
               <ref role="3cqZAo" node="5yxSA$IRGiS" resolve="result" />
             </node>
-            <node concept="1uHKPH" id="7gYnkkm$lqY" role="2OqNvi" />
+            <node concept="1yVyf7" id="4XbgCp8UDcs" role="2OqNvi" />
           </node>
         </node>
       </node>
