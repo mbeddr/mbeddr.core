@@ -17,7 +17,8 @@
   </languages>
   <imports>
     <import index="q9ah" ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" />
-    <import index="yl9u" ref="r:d47f5cb3-cc35-48f0-97d1-61bdd42866cc(test.debugging.core.arrayInit)" />
+    <import index="yl9u" ref="r:d47f5cb3-cc35-48f0-97d1-61bdd42866cc(test.debugging.core.dummy)" />
+    <import index="mycg" ref="r:d5a5436e-c9aa-4532-b7fa-04ee68be9ad2(test.debugging.core.arrayinit)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -194,14 +195,14 @@
       <node concept="3clFbS" id="5rV3dCv5byL" role="3clF47" />
       <node concept="3sdZbQ" id="5rV3dCv5b$V" role="3scror">
         <node concept="3sdZbA" id="5rV3dCv5b$Y" role="3sdZbB">
-          <ref role="3sa5fj" to="yl9u:5rV3dCv4Szc" resolve="inPointerOnArray" />
+          <ref role="3sa5fj" to="mycg:5rV3dCv4Szc" resolve="inPointerOnArray" />
         </node>
       </node>
       <node concept="3F5Y_J" id="5rV3dCv5b_1" role="3F5AM1">
         <node concept="30a7bf" id="5rV3dCv5b_4" role="3F5Y$9">
-          <node concept="3cQ7K9" id="3GPxRNR1VAs" role="30a7be">
+          <node concept="3cQ7K9" id="3uHGTbh6TTp" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="yl9u:5rV3dCv4Szc" resolve="inPointerOnArray" />
+            <ref role="3cQ7K8" to="mycg:5rV3dCv4Szc" resolve="inPointerOnArray" />
           </node>
         </node>
         <node concept="1vtf2i" id="5rV3dCv5iyZ" role="3F5Y$9">
@@ -621,7 +622,7 @@
       </node>
     </node>
     <node concept="3qy1PH" id="3GPxRNR1V_J" role="3qy1PE">
-      <ref role="30ajXG" to="yl9u:4PM5ysqsU6r" resolve="ArrayInitTest" />
+      <ref role="30ajXG" to="mycg:4PM5ysqsU6r" resolve="ArrayInitTest" />
     </node>
     <node concept="3scrou" id="7Jr7T0w2mei" role="1zJi$$">
       <property role="TrG5h" value="suspendOnArrayDeclarationWithInit" />
@@ -629,15 +630,15 @@
       <node concept="3clFbS" id="7Jr7T0w2mek" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mel" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mem" role="3sdZbB">
-          <ref role="3sa5fj" to="yl9u:4PM5ysqsUbe" resolve="firstArrayVarDeclaration" />
+          <ref role="3sa5fj" to="mycg:4PM5ysqsUbe" resolve="firstArrayVarDeclaration" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2men" role="3savwP" />
       <node concept="3F5Y_J" id="7Jr7T0w2meo" role="3F5AM1">
         <node concept="30a7bf" id="7Jr7T0w2mep" role="3F5Y$9">
-          <node concept="3cQ7K9" id="3GPxRNR1VAq" role="30a7be">
+          <node concept="3cQ7K9" id="3uHGTbh6TTv" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="yl9u:4PM5ysqsUbe" resolve="firstArrayVarDeclaration" />
+            <ref role="3cQ7K8" to="mycg:4PM5ysqsUbe" resolve="firstArrayVarDeclaration" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$pkO" role="3F5Y$9">
@@ -657,7 +658,7 @@
       <node concept="3clFbS" id="7Jr7T0w2met" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2meu" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mev" role="3sdZbB">
-          <ref role="3sa5fj" to="yl9u:4PM5ysqsUbe" resolve="firstArrayVarDeclaration" />
+          <ref role="3sa5fj" to="mycg:4PM5ysqsUbe" resolve="firstArrayVarDeclaration" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mew" role="3savwP">
@@ -667,9 +668,9 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2mey" role="3F5AM1">
         <node concept="30a7bf" id="7Jr7T0w2mez" role="3F5Y$9">
-          <node concept="3cQ7K9" id="3GPxRNR1VAu" role="30a7be">
+          <node concept="3cQ7K9" id="3uHGTbh6TTn" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="yl9u:4PM5ysqsUbf" resolve="firstArrayVarAssignment" />
+            <ref role="3cQ7K8" to="mycg:4PM5ysqsUbf" resolve="firstArrayVarAssignment" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$pkS" role="3F5Y$9">
@@ -689,15 +690,15 @@
       <node concept="3clFbS" id="7Jr7T0w2meD" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2meE" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2meF" role="3sdZbB">
-          <ref role="3sa5fj" to="yl9u:4PM5ysqsUbd" resolve="secondArrayVarDeclaration" />
+          <ref role="3sa5fj" to="mycg:4PM5ysqsUbd" resolve="secondArrayVarDeclaration" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2meG" role="3savwP" />
       <node concept="3F5Y_J" id="7Jr7T0w2meH" role="3F5AM1">
         <node concept="30a7bf" id="7Jr7T0w2meI" role="3F5Y$9">
-          <node concept="3cQ7K9" id="3GPxRNR1VAw" role="30a7be">
+          <node concept="3cQ7K9" id="3uHGTbh6TTr" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="yl9u:4PM5ysqsUbc" resolve="functionWithArrayVarDeclaration" />
+            <ref role="3cQ7K8" to="mycg:4PM5ysqsUbc" resolve="functionWithArrayVarDeclaration" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$pkW" role="3F5Y$9">
@@ -717,7 +718,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mf_" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mfA" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mfB" role="3sdZbB">
-          <ref role="3sa5fj" to="yl9u:4PM5ysqsUbe" resolve="firstArrayVarDeclaration" />
+          <ref role="3sa5fj" to="mycg:4PM5ysqsUbe" resolve="firstArrayVarDeclaration" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mfC" role="3savwP">
@@ -727,9 +728,9 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2mfE" role="3F5AM1">
         <node concept="30a7bf" id="7Jr7T0w2mfF" role="3F5Y$9">
-          <node concept="3cQ7K9" id="3GPxRNR1VAy" role="30a7be">
+          <node concept="3cQ7K9" id="3uHGTbh6TTt" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="yl9u:4PM5ysqsUbf" resolve="firstArrayVarAssignment" />
+            <ref role="3cQ7K8" to="mycg:4PM5ysqsUbf" resolve="firstArrayVarAssignment" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$pkZ" role="3F5Y$9">
