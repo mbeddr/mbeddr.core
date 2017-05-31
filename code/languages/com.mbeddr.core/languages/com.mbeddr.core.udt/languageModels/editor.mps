@@ -391,9 +391,6 @@
       </node>
       <node concept="PMmxH" id="7RiewQ_kcp1" role="3EZMnx">
         <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
-        <node concept="pVoyu" id="3Wi_6mkkZCO" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
       <node concept="3F0ifn" id="5jyom5fO9Cr" role="3EZMnx">
         <property role="3F0ifm" value="typedef" />
