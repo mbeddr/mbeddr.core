@@ -2712,6 +2712,13 @@
           <node concept="1AkAjq" id="7moPk05eAAB" role="1AkAjA">
             <property role="TrG5h" value="c" />
           </node>
+          <node concept="7CXmI" id="1NhHcUCB1ZN" role="lGtFl">
+            <node concept="1TM$A" id="1NhHcUCB1ZO" role="7EUXB">
+              <node concept="2PYRI3" id="1NhHcUCB39B" role="3lydEf">
+                <ref role="39XzEq" to="e39d:3AX8Th8g55P" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2NXPZ9" id="7moPk05eAAC" role="N3F5h">
           <property role="TrG5h" value="empty_1395393598587_2" />
@@ -2728,20 +2735,15 @@
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
-            <node concept="19RgSI" id="7moPk05eBo9" role="1UOdpc">
+            <node concept="1KB$IV" id="7moPk05eTHg" role="lGtFl" />
+            <node concept="19RgSI" id="1NhHcUC_xqy" role="1UOdpc">
               <property role="TrG5h" value="me" />
-              <node concept="1AkAi2" id="7moPk05eBo8" role="2C2TGm">
+              <node concept="1AkAi2" id="1NhHcUC_xqx" role="2C2TGm">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
                 <ref role="1AkAi1" node="7moPk05eAA$" resolve="MyEnum" />
               </node>
-              <node concept="7CXmI" id="2PeDUX_DAK9" role="lGtFl">
-                <node concept="1TM$A" id="6qOUCDpKa5d" role="7EUXB">
-                  <node concept="2PYRI3" id="6qOUCDpKa5e" role="3lydEf">
-                    <ref role="39XzEq" to="e39d:7moPk0534KA" />
-                  </node>
-                </node>
-              </node>
             </node>
-            <node concept="1KB$IV" id="7moPk05eTHg" role="lGtFl" />
           </node>
         </node>
         <node concept="2NXPZ9" id="7moPk05eAAI" role="N3F5h">
