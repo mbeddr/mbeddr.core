@@ -14,6 +14,8 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -204,6 +206,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -225,6 +230,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -333,6 +339,27 @@
       <node concept="l2Vlx" id="5W7baq$5k0Q" role="2iSdaV" />
       <node concept="PMmxH" id="5W7baq$5k0R" role="3EZMnx">
         <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        <node concept="pkWqt" id="44fCN1fSbWf" role="pqm2j">
+          <node concept="3clFbS" id="44fCN1fSbWg" role="2VODD2">
+            <node concept="3clFbF" id="44fCN1fSbWh" role="3cqZAp">
+              <node concept="3fqX7Q" id="44fCN1fSbWi" role="3clFbG">
+                <node concept="2OqwBi" id="44fCN1fSbWj" role="3fr31v">
+                  <node concept="2OqwBi" id="44fCN1fSbWk" role="2Oq$k0">
+                    <node concept="pncrf" id="44fCN1fSbWl" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="44fCN1fSbWm" role="2OqNvi">
+                      <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="44fCN1fSbWn" role="2OqNvi">
+                    <node concept="chp4Y" id="44fCN1fSbWo" role="cj9EA">
+                      <ref role="cht4Q" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="5W7baq$5k0S" role="3EZMnx">
         <property role="3F0ifm" value="const" />
@@ -626,6 +653,27 @@
     <node concept="3EZMnI" id="SwwM9UHCGU" role="2wV5jI">
       <node concept="PMmxH" id="SwwM9UHCGV" role="3EZMnx">
         <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        <node concept="pkWqt" id="44fCN1fSci0" role="pqm2j">
+          <node concept="3clFbS" id="44fCN1fSci1" role="2VODD2">
+            <node concept="3clFbF" id="44fCN1fSci2" role="3cqZAp">
+              <node concept="3fqX7Q" id="44fCN1fSci3" role="3clFbG">
+                <node concept="2OqwBi" id="44fCN1fSci4" role="3fr31v">
+                  <node concept="2OqwBi" id="44fCN1fSci5" role="2Oq$k0">
+                    <node concept="pncrf" id="44fCN1fSci6" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="44fCN1fSci7" role="2OqNvi">
+                      <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="44fCN1fSci8" role="2OqNvi">
+                    <node concept="chp4Y" id="44fCN1fSci9" role="cj9EA">
+                      <ref role="cht4Q" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="SwwM9UHCGW" role="3EZMnx">
         <property role="3F0ifm" value="interrupt" />
@@ -723,6 +771,27 @@
       <node concept="l2Vlx" id="30ICD1JNRdt" role="2iSdaV" />
       <node concept="PMmxH" id="30ICD1JNRdu" role="3EZMnx">
         <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        <node concept="pkWqt" id="44fCN1fQnzA" role="pqm2j">
+          <node concept="3clFbS" id="44fCN1fQnzB" role="2VODD2">
+            <node concept="3clFbF" id="44fCN1fQnEM" role="3cqZAp">
+              <node concept="3fqX7Q" id="44fCN1fQs6B" role="3clFbG">
+                <node concept="2OqwBi" id="44fCN1fQs6D" role="3fr31v">
+                  <node concept="2OqwBi" id="44fCN1fQs6E" role="2Oq$k0">
+                    <node concept="pncrf" id="44fCN1fQs6F" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="44fCN1fQs6G" role="2OqNvi">
+                      <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="44fCN1fQs6H" role="2OqNvi">
+                    <node concept="chp4Y" id="44fCN1fQs6I" role="cj9EA">
+                      <ref role="cht4Q" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="30ICD1JNRdv" role="3EZMnx">
         <property role="3F0ifm" value="const" />

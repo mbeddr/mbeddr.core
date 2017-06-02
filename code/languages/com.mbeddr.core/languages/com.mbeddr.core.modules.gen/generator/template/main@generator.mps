@@ -304,9 +304,7 @@
       </concept>
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
-      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK">
-        <child id="6116558314501347862" name="original" index="rcJHR" />
-      </concept>
+      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK" />
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1217960179967" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowErrorMessage" flags="nn" index="2k5nB$" />
@@ -367,6 +365,9 @@
       </concept>
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
+      </concept>
+      <concept id="7713191144372389655" name="com.mbeddr.core.modules.structure.ITypeDef" flags="ng" index="2I2SlH">
+        <child id="6116558314501347862" name="original" index="rcJHR" />
       </concept>
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
@@ -1798,7 +1799,6 @@
     <property role="3GE5qa" value="main" />
     <node concept="rcJHK" id="7RiewQ_kNTY" role="3owgHT">
       <property role="TrG5h" value="zahl" />
-      <node concept="3TlMh2" id="7RiewQ_kNTZ" role="rcJHR" />
       <node concept="2b32R4" id="7RiewQ_kNU0" role="lGtFl">
         <node concept="3JmXsc" id="7RiewQ_kNU1" role="2P8S$">
           <node concept="3clFbS" id="7RiewQ_kNU2" role="2VODD2">
@@ -1813,6 +1813,7 @@
           </node>
         </node>
       </node>
+      <node concept="3TlMh2" id="7RiewQ_kNTZ" role="rcJHR" />
     </node>
     <node concept="n94m4" id="7RiewQ_kNTX" role="lGtFl">
       <ref role="n9lRv" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
@@ -4363,7 +4364,7 @@
                             </node>
                           </node>
                           <node concept="2pIpSj" id="4bSv2xZgpK5" role="2pJxcM">
-                            <ref role="2pIpSl" to="clbe:5jyom5fO9Cm" resolve="original" />
+                            <ref role="2pIpSl" to="x27k:5jyom5fO9Cm" resolve="original" />
                             <node concept="2pJPED" id="4bSv2xZgpK6" role="2pJxcZ">
                               <ref role="2pJxaS" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
                               <node concept="2pIpSj" id="4bSv2xZgpK7" role="2pJxcM">
@@ -4624,7 +4625,7 @@
                             </node>
                           </node>
                           <node concept="2pIpSj" id="4bSv2xZgz7V" role="2pJxcM">
-                            <ref role="2pIpSl" to="clbe:5jyom5fO9Cm" resolve="original" />
+                            <ref role="2pIpSl" to="x27k:5jyom5fO9Cm" resolve="original" />
                             <node concept="2pJPED" id="4bSv2xZgz7W" role="2pJxcZ">
                               <ref role="2pJxaS" to="clbe:56ytRgsLog5" resolve="UnionType" />
                               <node concept="2pIpSj" id="4bSv2xZgz7X" role="2pJxcM">
@@ -4884,7 +4885,7 @@
                             </node>
                           </node>
                           <node concept="2pIpSj" id="6towh06aHop" role="2pJxcM">
-                            <ref role="2pIpSl" to="clbe:5jyom5fO9Cm" resolve="original" />
+                            <ref role="2pIpSl" to="x27k:5jyom5fO9Cm" resolve="original" />
                             <node concept="2pJPED" id="6towh06aHoq" role="2pJxcZ">
                               <ref role="2pJxaS" to="clbe:7D99css6O15" resolve="EnumType" />
                               <node concept="2pIpSj" id="6towh06aHor" role="2pJxcM">
