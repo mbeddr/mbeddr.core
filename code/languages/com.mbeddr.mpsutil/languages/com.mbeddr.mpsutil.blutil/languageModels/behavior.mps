@@ -13,6 +13,7 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -2112,6 +2113,29 @@
     <ref role="13h7C2" to="hba4:6HZ4hJtJnMa" resolve="TypeSwitchCaseMapping" />
     <node concept="13hLZK" id="6HZ4hJu2hxp" role="13h7CW">
       <node concept="3clFbS" id="6HZ4hJu2hxq" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1VByUoAJm_Z">
+    <property role="3GE5qa" value="typeswitch" />
+    <ref role="13h7C2" to="hba4:6T8h1s23DOq" resolve="TypeSwitchVariableReference" />
+    <node concept="13hLZK" id="1VByUoAJmA0" role="13h7CW">
+      <node concept="3clFbS" id="1VByUoAJmA1" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1VByUoAJmAa" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="isLValue" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:hEwJgmE" resolve="isLValue" />
+      <node concept="3Tm1VV" id="1VByUoAJmAj" role="1B3o_S" />
+      <node concept="3clFbS" id="1VByUoAJmAk" role="3clF47">
+        <node concept="3cpWs6" id="1VByUoAJmEH" role="3cqZAp">
+          <node concept="3clFbT" id="1VByUoAJmEP" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="1VByUoAJmAl" role="3clF45" />
     </node>
   </node>
 </model>
