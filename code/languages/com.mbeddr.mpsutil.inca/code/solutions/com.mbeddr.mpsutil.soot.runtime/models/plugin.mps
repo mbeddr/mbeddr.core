@@ -611,7 +611,7 @@
   </node>
   <node concept="sE7Ow" id="7$Y1SICub5">
     <property role="TrG5h" value="GenerateJimpleAction" />
-    <property role="2uzpH1" value="Generate Jimple Representation" />
+    <property role="2uzpH1" value="Generate SSA Representation" />
     <property role="3GE5qa" value="actions" />
     <property role="72QZ$" value="true" />
     <node concept="1DS2jV" id="7$Y1SICub6" role="1NuT2Z">
@@ -901,7 +901,7 @@
                   <node concept="liA8E" id="1lsowDUkXIt" role="2OqNvi">
                     <ref role="37wK5l" to="3ju5:~IFile.getDescendant(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getDescendant" />
                     <node concept="10M0yZ" id="1lsowDUkYqq" role="37wK5m">
-                      <ref role="3cqZAo" node="1lsowDUkXiF" resolve="JIMPLE_GEN" />
+                      <ref role="3cqZAo" node="1lsowDUkXiF" resolve="SHIMPLE_GEN" />
                       <ref role="1PxDUh" node="1lsowDUkCaZ" resolve="SootTransformerUtils" />
                     </node>
                   </node>
@@ -936,9 +936,9 @@
                 </node>
                 <node concept="liA8E" id="1lsowDUi17C" role="2OqNvi">
                   <ref role="37wK5l" to="ltkh:~Options.set_output_format(int):void" resolve="set_output_format" />
-                  <node concept="10M0yZ" id="1lsowDUi1f3" role="37wK5m">
+                  <node concept="10M0yZ" id="QHoUon9mlb" role="37wK5m">
+                    <ref role="3cqZAo" to="ltkh:~Options.output_format_shimple" resolve="output_format_shimple" />
                     <ref role="1PxDUh" to="ltkh:~Options" resolve="Options" />
-                    <ref role="3cqZAo" to="ltkh:~Options.output_format_jimple" resolve="output_format_jimple" />
                   </node>
                 </node>
               </node>
@@ -1083,7 +1083,7 @@
                                       <node concept="liA8E" id="59T8kI_MsyD" role="2OqNvi">
                                         <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                                         <node concept="10M0yZ" id="59T8kI_MsyE" role="37wK5m">
-                                          <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="JIMPLE" />
+                                          <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="SHIMPLE" />
                                           <ref role="1PxDUh" node="1lsowDUkCaZ" resolve="SootTransformerUtils" />
                                         </node>
                                       </node>
@@ -1219,7 +1219,7 @@
                               <node concept="3cpWs3" id="59T8kI_Msz$" role="3uHU7B">
                                 <node concept="10M0yZ" id="59T8kI_Msz_" role="3uHU7B">
                                   <ref role="1PxDUh" node="1lsowDUkCaZ" resolve="SootTransformerUtils" />
-                                  <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="JIMPLE" />
+                                  <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="SHIMPLE" />
                                 </node>
                                 <node concept="Xl_RD" id="59T8kI_MszA" role="3uHU7w">
                                   <property role="Xl_RC" value="." />
@@ -1559,7 +1559,7 @@
                                 </node>
                                 <node concept="3cpWs3" id="59T8kI_Ms_B" role="3uHU7B">
                                   <node concept="10M0yZ" id="59T8kI_Ms_C" role="3uHU7B">
-                                    <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="JIMPLE" />
+                                    <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="SHIMPLE" />
                                     <ref role="1PxDUh" node="1lsowDUkCaZ" resolve="SootTransformerUtils" />
                                   </node>
                                   <node concept="Xl_RD" id="59T8kI_Ms_D" role="3uHU7w">
@@ -1590,7 +1590,7 @@
                                 </node>
                                 <node concept="3cpWs3" id="59T8kI_Ms_M" role="3uHU7B">
                                   <node concept="10M0yZ" id="59T8kI_Ms_N" role="3uHU7B">
-                                    <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="JIMPLE" />
+                                    <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="SHIMPLE" />
                                     <ref role="1PxDUh" node="1lsowDUkCaZ" resolve="SootTransformerUtils" />
                                   </node>
                                   <node concept="Xl_RD" id="59T8kI_Ms_O" role="3uHU7w">
@@ -1749,23 +1749,23 @@
     <node concept="Wx3nA" id="1lsowDUkXiF" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="JIMPLE_GEN" />
+      <property role="TrG5h" value="SHIMPLE_GEN" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="1lsowDUkXiG" role="1B3o_S" />
       <node concept="17QB3L" id="1lsowDUkXiH" role="1tU5fm" />
       <node concept="Xl_RD" id="1lsowDUkXiI" role="33vP2m">
-        <property role="Xl_RC" value="jimple_gen" />
+        <property role="Xl_RC" value="shimple_gen" />
       </node>
     </node>
     <node concept="Wx3nA" id="7YWMZ8Drmyg" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="JIMPLE" />
+      <property role="TrG5h" value="SHIMPLE" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="7YWMZ8Drmyh" role="1B3o_S" />
       <node concept="17QB3L" id="7YWMZ8Drmyi" role="1tU5fm" />
       <node concept="Xl_RD" id="7YWMZ8Drmyj" role="33vP2m">
-        <property role="Xl_RC" value="jimple" />
+        <property role="Xl_RC" value="ssa" />
       </node>
     </node>
     <node concept="2tJIrI" id="9ez1vP69l3" role="jymVt" />
@@ -2080,7 +2080,7 @@
                         <node concept="liA8E" id="59T8kI_Luj7" role="2OqNvi">
                           <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                           <node concept="37vLTw" id="59T8kI_Luj8" role="37wK5m">
-                            <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="JIMPLE" />
+                            <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="SHIMPLE" />
                           </node>
                         </node>
                       </node>
@@ -2467,7 +2467,7 @@
                           </node>
                           <node concept="2OqwBi" id="59T8kI_LCad" role="3uHU7B">
                             <node concept="37vLTw" id="59T8kI_LCae" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="JIMPLE" />
+                              <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="SHIMPLE" />
                             </node>
                             <node concept="liA8E" id="59T8kI_LCaf" role="2OqNvi">
                               <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
@@ -2616,7 +2616,7 @@
                                   </node>
                                   <node concept="3cpWs3" id="59T8kI_LOZN" role="3uHU7B">
                                     <node concept="37vLTw" id="59T8kI_LP0n" role="3uHU7B">
-                                      <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="JIMPLE" />
+                                      <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="SHIMPLE" />
                                     </node>
                                     <node concept="Xl_RD" id="59T8kI_LOZO" role="3uHU7w">
                                       <property role="Xl_RC" value="." />
@@ -2696,7 +2696,7 @@
                 <node concept="liA8E" id="59T8kI_LCbA" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                   <node concept="37vLTw" id="59T8kI_LCbB" role="37wK5m">
-                    <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="JIMPLE" />
+                    <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="SHIMPLE" />
                   </node>
                 </node>
               </node>
@@ -5122,7 +5122,7 @@
               <node concept="3cpWs3" id="26zyRxmRE6o" role="3uHU7B">
                 <node concept="10M0yZ" id="26zyRxmRE6p" role="3uHU7B">
                   <ref role="1PxDUh" node="1lsowDUkCaZ" resolve="SootTransformerUtils" />
-                  <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="JIMPLE" />
+                  <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="SHIMPLE" />
                 </node>
                 <node concept="Xl_RD" id="26zyRxmRE6q" role="3uHU7w">
                   <property role="Xl_RC" value="." />
@@ -5166,7 +5166,7 @@
               </node>
               <node concept="3cpWs3" id="26zyRxmRw7H" role="3uHU7B">
                 <node concept="10M0yZ" id="26zyRxmRtGS" role="3uHU7B">
-                  <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="JIMPLE" />
+                  <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="SHIMPLE" />
                   <ref role="1PxDUh" node="1lsowDUkCaZ" resolve="SootTransformerUtils" />
                 </node>
                 <node concept="Xl_RD" id="26zyRxmRw8O" role="3uHU7w">
@@ -5190,7 +5190,7 @@
   </node>
   <node concept="sE7Ow" id="59T8kI_KkGu">
     <property role="TrG5h" value="DeleteJimpleModels" />
-    <property role="2uzpH1" value="Delete Jimple Models" />
+    <property role="2uzpH1" value="Delete SSA Representation" />
     <property role="3GE5qa" value="actions" />
     <property role="72QZ$" value="true" />
     <node concept="1DS2jV" id="59T8kI_Qk9m" role="1NuT2Z">
@@ -5288,7 +5288,7 @@
                                     <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                                     <node concept="10M0yZ" id="59T8kI_RuIw" role="37wK5m">
                                       <ref role="1PxDUh" node="1lsowDUkCaZ" resolve="SootTransformerUtils" />
-                                      <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="JIMPLE" />
+                                      <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="SHIMPLE" />
                                     </node>
                                   </node>
                                 </node>
@@ -5380,7 +5380,7 @@
                         <node concept="liA8E" id="59T8kI_MffB" role="2OqNvi">
                           <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
                           <node concept="10M0yZ" id="59T8kI_Mgof" role="37wK5m">
-                            <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="JIMPLE" />
+                            <ref role="3cqZAo" node="7YWMZ8Drmyg" resolve="SHIMPLE" />
                             <ref role="1PxDUh" node="1lsowDUkCaZ" resolve="SootTransformerUtils" />
                           </node>
                         </node>
