@@ -135,6 +135,12 @@
         <property role="Vb096" value="DARK_GREEN" />
       </node>
     </node>
+    <node concept="14StLt" id="6F2cd7xKKt4" role="V601i">
+      <property role="TrG5h" value="Constant" />
+      <node concept="VechU" id="6F2cd7xKKt5" role="3F10Kt">
+        <property role="Vb096" value="DARK_MAGENTA" />
+      </node>
+    </node>
   </node>
 </model>
 
