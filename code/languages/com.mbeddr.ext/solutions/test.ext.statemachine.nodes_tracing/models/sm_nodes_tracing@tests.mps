@@ -64,6 +64,21 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="6RWcftDLAqu" role="1SL9yI">
+      <property role="TrG5h" value="testSM2" />
+      <node concept="3cqZAl" id="6RWcftDLAqv" role="3clF45" />
+      <node concept="3clFbS" id="6RWcftDLAqz" role="3clF47">
+        <node concept="1xIcmD" id="6RWcftDLCCw" role="3cqZAp">
+          <node concept="BaHAS" id="6RWcftDLCCx" role="1xIeA0">
+            <property role="BaHAW" value="sm_code" />
+            <property role="BaGAP" value="" />
+          </node>
+          <node concept="Xl_RD" id="6RWcftDLCCy" role="1xDQ1B">
+            <property role="Xl_RC" value="SM2" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

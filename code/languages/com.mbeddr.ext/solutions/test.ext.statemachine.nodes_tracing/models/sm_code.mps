@@ -78,6 +78,9 @@
       </concept>
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
       <concept id="8927638623067326788" name="com.mbeddr.ext.statemachines.structure.EmptyStatemachineContent" flags="ng" index="2h6h52" />
+      <concept id="1582169519237884298" name="com.mbeddr.ext.statemachines.structure.TriggerSelfStatement" flags="ng" index="2tqLt1">
+        <reference id="1582169519237884299" name="event" index="2tqLt0" />
+      </concept>
       <concept id="1957198122968598264" name="com.mbeddr.ext.statemachines.structure.ActionList" flags="ng" index="2xGTIE" />
       <concept id="8786207748510013887" name="com.mbeddr.ext.statemachines.structure.SendOutEventStatement" flags="ng" index="_lVzq">
         <reference id="8786207748510013889" name="event" index="_lVy$" />
@@ -306,6 +309,12 @@
         </node>
         <node concept="ODFVE" id="EEDqFMyvDm" role="1KoBSX" />
         <node concept="OCETd" id="EEDqFMyuyN" role="1KoBSX">
+          <node concept="1xGALR" id="EEDqFMyu_B" role="lGtFl">
+            <property role="1xEijf" value="2" />
+            <node concept="1xFd8N" id="EEDqFMyvFg" role="1xGcb7">
+              <property role="1xFd8M" value="static inline void  SM1_S1_s2_ExitAction1(SM1_S1__data_t *instance)" />
+            </node>
+          </node>
           <node concept="2xGTIE" id="EEDqFMyuyO" role="S7lxW">
             <node concept="3XIRlf" id="EEDqFMyuzY" role="3XIRFZ">
               <property role="TrG5h" value="a" />
@@ -318,6 +327,12 @@
               </node>
             </node>
             <node concept="1_9egQ" id="EEDqFMyDt1" role="3XIRFZ">
+              <node concept="1xGALR" id="EEDqFMz6gH" role="lGtFl">
+                <property role="1xEijf" value="2" />
+                <node concept="1xFd8N" id="EEDqFMz6j8" role="1xGcb7">
+                  <property role="1xFd8M" value="instance-&gt;value = 3;" />
+                </node>
+              </node>
               <node concept="3pqW6w" id="EEDqFMyDtl" role="1_9egR">
                 <node concept="3TlMh9" id="EEDqFMyDuQ" role="3TlMhJ">
                   <property role="2hmy$m" value="3" />
@@ -326,18 +341,6 @@
                   <ref role="349IfP" node="EEDqFMyw4S" resolve="value" />
                 </node>
               </node>
-              <node concept="1xGALR" id="EEDqFMz6gH" role="lGtFl">
-                <property role="1xEijf" value="2" />
-                <node concept="1xFd8N" id="EEDqFMz6j8" role="1xGcb7">
-                  <property role="1xFd8M" value="instance-&gt;value = 3;" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1xGALR" id="EEDqFMyu_B" role="lGtFl">
-            <property role="1xEijf" value="2" />
-            <node concept="1xFd8N" id="EEDqFMyvFg" role="1xGcb7">
-              <property role="1xFd8M" value="static inline void  SM1_S1_s2_ExitAction1(SM1_S1__data_t *instance)" />
             </node>
           </node>
         </node>
@@ -379,6 +382,9 @@
       <node concept="2v9HqM" id="EEDqFMvMNi" role="2eOfOg">
         <ref role="2v9HqP" node="EEDqFMvKti" resolve="SM1" />
       </node>
+      <node concept="2v9HqM" id="6RWcftEdBag" role="2eOfOg">
+        <ref role="2v9HqP" node="EEDqFMzvsN" resolve="SM2" />
+      </node>
     </node>
     <node concept="3yF7LM" id="EEDqFMvMOE" role="2Q9xDr">
       <property role="3yF7Mc" value="true" />
@@ -389,8 +395,40 @@
   </node>
   <node concept="N3F5e" id="EEDqFMzvsN">
     <property role="TrG5h" value="SM2" />
-    <node concept="2NXPZ9" id="EEDqFMzvsO" role="N3F5h">
-      <property role="TrG5h" value="empty_1495204208856_72" />
+    <node concept="1LFe83" id="7gVrg_0w_kK" role="N3F5h">
+      <property role="TrG5h" value="SelfTriggerInInitial" />
+      <ref role="1LFebw" node="7gVrg_0w_kM" resolve="Init" />
+      <node concept="2cfOFI" id="7gVrg_0w_kL" role="1_Iowf">
+        <property role="TrG5h" value="e" />
+      </node>
+      <node concept="1LFebX" id="7gVrg_0w_kM" role="1_Iowf">
+        <property role="TrG5h" value="Init" />
+        <node concept="OCJnL" id="7gVrg_0w_lD" role="1KoBSX">
+          <node concept="2xGTIE" id="7gVrg_0w_lE" role="S7lxW">
+            <node concept="2tqLt1" id="7gVrg_0w_lF" role="3XIRFZ">
+              <ref role="2tqLt0" node="7gVrg_0w_kL" resolve="e" />
+              <node concept="1xGALR" id="2qCdpHNSEB0" role="lGtFl">
+                <property role="1xEijf" value="2" />
+                <node concept="1xFd8N" id="2qCdpHNSEB2" role="1xGcb7">
+                  <property role="1xFd8M" value="  SM2_SelfTriggerInInitial__execute(instance, SM2_SelfTriggerInInitial__inevents__SelfTriggerInInitial_e__event, NULL);" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1LFeb9" id="7gVrg_0w_kN" role="1KoBSX">
+          <ref role="1zztin" node="7gVrg_0w_kP" resolve="S1" />
+          <node concept="349iI2" id="7gVrg_0w_kO" role="2qxFSM">
+            <ref role="1bNv6r" node="7gVrg_0w_kL" resolve="e" />
+          </node>
+        </node>
+      </node>
+      <node concept="1LFebX" id="7gVrg_0w_kP" role="1_Iowf">
+        <property role="TrG5h" value="S1" />
+      </node>
+    </node>
+    <node concept="1xGQPs" id="2qCdpHNSKfs" role="lGtFl">
+      <property role="1xGaoo" value="SM2.c" />
     </node>
   </node>
 </model>
