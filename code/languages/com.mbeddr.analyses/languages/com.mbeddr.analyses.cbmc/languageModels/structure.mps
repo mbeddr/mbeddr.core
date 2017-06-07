@@ -880,5 +880,12 @@
       <ref role="20lvS9" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
     </node>
   </node>
+  <node concept="1TIwiD" id="51BKItOARSi">
+    <property role="EcuMT" value="5793813744985013778" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVER_isfinitef" />
+    <property role="34LRSv" value="__CPROVER_isfinitef" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
 </model>
 

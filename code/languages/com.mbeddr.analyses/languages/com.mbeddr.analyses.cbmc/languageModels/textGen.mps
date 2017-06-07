@@ -422,12 +422,36 @@
             <node concept="2OqwBi" id="3aDyPAXVGZN" role="lb14g">
               <node concept="117lpO" id="3aDyPAXVGZO" role="2Oq$k0" />
               <node concept="3TrEf2" id="3aDyPAXVIkI" role="2OqNvi">
-                <ref role="3Tt5mk" to="q5q6:3aDyPAXVGIm" resolve="varRef" />
+                <ref role="3Tt5mk" to="q5q6:3aDyPAXVGIm" resolve="expression" />
               </node>
             </node>
           </node>
           <node concept="la8eA" id="3aDyPAXVGZQ" role="lcghm">
             <property role="lacIc" value=");" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="51BKItOARSu">
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <ref role="WuzLi" to="q5q6:51BKItOARSi" resolve="CPROVER_isfinitef" />
+    <node concept="11bSqf" id="51BKItOARSv" role="11c4hB">
+      <node concept="3clFbS" id="51BKItOARSw" role="2VODD2">
+        <node concept="lc7rE" id="51BKItOARSO" role="3cqZAp">
+          <node concept="la8eA" id="51BKItOARSP" role="lcghm">
+            <property role="lacIc" value="__CPROVER_isfinitef(" />
+          </node>
+          <node concept="l9hG8" id="51BKItOARSQ" role="lcghm">
+            <node concept="2OqwBi" id="51BKItOARSR" role="lb14g">
+              <node concept="117lpO" id="51BKItOARSS" role="2Oq$k0" />
+              <node concept="3TrEf2" id="51BKItOARST" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="51BKItOARSU" role="lcghm">
+            <property role="lacIc" value=")" />
           </node>
         </node>
       </node>
