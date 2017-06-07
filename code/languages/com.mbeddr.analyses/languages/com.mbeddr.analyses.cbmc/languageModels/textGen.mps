@@ -53,6 +53,8 @@
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -302,102 +304,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="5KHBa6kUyiA">
-    <property role="3GE5qa" value="cbmc_macros.predicates" />
-    <ref role="WuzLi" to="q5q6:5KHBa6kTRsl" resolve="CPROVERisinff" />
-    <node concept="11bSqf" id="5KHBa6kUyiB" role="11c4hB">
-      <node concept="3clFbS" id="5KHBa6kUyiC" role="2VODD2">
-        <node concept="lc7rE" id="5KHBa6kUyjj" role="3cqZAp">
-          <node concept="la8eA" id="5KHBa6kVOjG" role="lcghm">
-            <property role="lacIc" value="__CPROVER_isinff(" />
-          </node>
-          <node concept="l9hG8" id="5KHBa6kUykL" role="lcghm">
-            <node concept="2OqwBi" id="5KHBa6kUypV" role="lb14g">
-              <node concept="117lpO" id="5KHBa6kUyl_" role="2Oq$k0" />
-              <node concept="3TrEf2" id="5KHBa6kUy$c" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="5KHBa6kUyCn" role="lcghm">
-            <property role="lacIc" value=")" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="WtQ9Q" id="5KHBa6kVOmF">
-    <property role="3GE5qa" value="cbmc_macros.predicates" />
-    <ref role="WuzLi" to="q5q6:5KHBa6kV8n8" resolve="CPROVERisnanf" />
-    <node concept="11bSqf" id="5KHBa6kVOmG" role="11c4hB">
-      <node concept="3clFbS" id="5KHBa6kVOmH" role="2VODD2">
-        <node concept="lc7rE" id="5KHBa6kVOmI" role="3cqZAp">
-          <node concept="la8eA" id="5KHBa6kVOmJ" role="lcghm">
-            <property role="lacIc" value="__CPROVER_isnanf(" />
-          </node>
-          <node concept="l9hG8" id="5KHBa6kVOmK" role="lcghm">
-            <node concept="2OqwBi" id="5KHBa6kVOmL" role="lb14g">
-              <node concept="117lpO" id="5KHBa6kVOmM" role="2Oq$k0" />
-              <node concept="3TrEf2" id="5KHBa6kVOmN" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="5KHBa6kVOmO" role="lcghm">
-            <property role="lacIc" value=")" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="WtQ9Q" id="5KHBa6kWksD">
-    <property role="3GE5qa" value="cbmc_macros.predicates" />
-    <ref role="WuzLi" to="q5q6:5KHBa6kWksB" resolve="CPROVERisinfd" />
-    <node concept="11bSqf" id="5KHBa6kWksR" role="11c4hB">
-      <node concept="3clFbS" id="5KHBa6kWksS" role="2VODD2">
-        <node concept="lc7rE" id="5KHBa6kWksT" role="3cqZAp">
-          <node concept="la8eA" id="5KHBa6kWksU" role="lcghm">
-            <property role="lacIc" value="__CPROVER_isinfd(" />
-          </node>
-          <node concept="l9hG8" id="5KHBa6kWksV" role="lcghm">
-            <node concept="2OqwBi" id="5KHBa6kWksW" role="lb14g">
-              <node concept="117lpO" id="5KHBa6kWksX" role="2Oq$k0" />
-              <node concept="3TrEf2" id="5KHBa6kWksY" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="5KHBa6kWksZ" role="lcghm">
-            <property role="lacIc" value=")" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="WtQ9Q" id="5KHBa6kWkvy">
-    <property role="3GE5qa" value="cbmc_macros.predicates" />
-    <ref role="WuzLi" to="q5q6:5KHBa6kWksC" resolve="CPROVERisnand" />
-    <node concept="11bSqf" id="5KHBa6kWkvK" role="11c4hB">
-      <node concept="3clFbS" id="5KHBa6kWkvL" role="2VODD2">
-        <node concept="lc7rE" id="5KHBa6kWkvM" role="3cqZAp">
-          <node concept="la8eA" id="5KHBa6kWkvN" role="lcghm">
-            <property role="lacIc" value="__CPROVER_isnand(" />
-          </node>
-          <node concept="l9hG8" id="5KHBa6kWkvO" role="lcghm">
-            <node concept="2OqwBi" id="5KHBa6kWkvP" role="lb14g">
-              <node concept="117lpO" id="5KHBa6kWkvQ" role="2Oq$k0" />
-              <node concept="3TrEf2" id="5KHBa6kWkvR" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="5KHBa6kWkvS" role="lcghm">
-            <property role="lacIc" value=")" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="3aDyPAXVGZl">
     <property role="3GE5qa" value="cbmc_macros" />
     <ref role="WuzLi" to="q5q6:3aDyPAXVGIl" resolve="CPROVERinput" />
@@ -433,24 +339,33 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="51BKItOARSu">
+  <node concept="WtQ9Q" id="51BKItOCcOm">
     <property role="3GE5qa" value="cbmc_macros.predicates" />
-    <ref role="WuzLi" to="q5q6:51BKItOARSi" resolve="CPROVER_isfinitef" />
-    <node concept="11bSqf" id="51BKItOARSv" role="11c4hB">
-      <node concept="3clFbS" id="51BKItOARSw" role="2VODD2">
-        <node concept="lc7rE" id="51BKItOARSO" role="3cqZAp">
-          <node concept="la8eA" id="51BKItOARSP" role="lcghm">
-            <property role="lacIc" value="__CPROVER_isfinitef(" />
+    <ref role="WuzLi" to="q5q6:5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+    <node concept="11bSqf" id="51BKItOCcOn" role="11c4hB">
+      <node concept="3clFbS" id="51BKItOCcOo" role="2VODD2">
+        <node concept="lc7rE" id="51BKItOCcOG" role="3cqZAp">
+          <node concept="l9hG8" id="51BKItOCd3g" role="lcghm">
+            <node concept="2OqwBi" id="51BKItOCeqt" role="lb14g">
+              <node concept="2OqwBi" id="51BKItOCdr8" role="2Oq$k0">
+                <node concept="117lpO" id="51BKItOCdaS" role="2Oq$k0" />
+                <node concept="2yIwOk" id="51BKItOCe6a" role="2OqNvi" />
+              </node>
+              <node concept="3n3YKJ" id="51BKItOCeZU" role="2OqNvi" />
+            </node>
           </node>
-          <node concept="l9hG8" id="51BKItOARSQ" role="lcghm">
-            <node concept="2OqwBi" id="51BKItOARSR" role="lb14g">
-              <node concept="117lpO" id="51BKItOARSS" role="2Oq$k0" />
-              <node concept="3TrEf2" id="51BKItOARST" role="2OqNvi">
+          <node concept="la8eA" id="51BKItOCcOH" role="lcghm">
+            <property role="lacIc" value="(" />
+          </node>
+          <node concept="l9hG8" id="51BKItOCcOI" role="lcghm">
+            <node concept="2OqwBi" id="51BKItOCcOJ" role="lb14g">
+              <node concept="117lpO" id="51BKItOCcOK" role="2Oq$k0" />
+              <node concept="3TrEf2" id="51BKItOCcOL" role="2OqNvi">
                 <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
               </node>
             </node>
           </node>
-          <node concept="la8eA" id="51BKItOARSU" role="lcghm">
+          <node concept="la8eA" id="51BKItOCcOM" role="lcghm">
             <property role="lacIc" value=")" />
           </node>
         </node>

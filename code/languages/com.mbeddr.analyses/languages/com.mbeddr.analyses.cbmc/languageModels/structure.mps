@@ -883,8 +883,36 @@
   <node concept="1TIwiD" id="51BKItOARSi">
     <property role="EcuMT" value="5793813744985013778" />
     <property role="3GE5qa" value="cbmc_macros.predicates" />
-    <property role="TrG5h" value="CPROVER_isfinitef" />
+    <property role="TrG5h" value="CPROVERisfinitef" />
     <property role="34LRSv" value="__CPROVER_isfinitef" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="51BKItOCcGA">
+    <property role="EcuMT" value="5793813744985361190" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERisfinited" />
+    <property role="34LRSv" value="__CPROVER_isfinited" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="51BKItOD5Pc">
+    <property role="EcuMT" value="5793813744985595212" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERisfiniteld" />
+    <property role="34LRSv" value="__CPROVER_isfiniteld" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="51BKItODNUv">
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERisnanld" />
+    <property role="34LRSv" value="__CPROVER_isnanld" />
+    <property role="EcuMT" value="5793813744985783967" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="51BKItODNUw">
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERisinfld" />
+    <property role="34LRSv" value="__CPROVER_isinfld" />
+    <property role="EcuMT" value="5793813744985783968" />
     <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
   </node>
 </model>
