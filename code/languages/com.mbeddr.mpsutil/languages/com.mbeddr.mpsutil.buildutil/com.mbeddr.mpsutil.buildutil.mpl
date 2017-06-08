@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="" namespace="com.mbeddr.mpsutil.buildutil#6600513366548883903" uuid="61e59150-761a-49c0-a214-8c839856658b">
+    <generator namespace="com.mbeddr.mpsutil.buildutil#1731001652774944352" uuid="61e59150-761a-49c0-a214-8c839856658b">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -56,7 +56,7 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="692e0a46-0d23-4c8a-8ce0-ea4c2266672a(com.mbeddr.mpsutil.buildutil)" version="0" />
-        <module reference="61e59150-761a-49c0-a214-8c839856658b(com.mbeddr.mpsutil.buildutil#6600513366548883903)" version="0" />
+        <module reference="61e59150-761a-49c0-a214-8c839856658b(com.mbeddr.mpsutil.buildutil#1731001652774944352)" version="0" />
         <module reference="b4651770-f5bc-414b-9974-51895966600e(com.mbeddr.mpsutil.buildutil.runtime)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
@@ -79,7 +79,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="61e59150-761a-49c0-a214-8c839856658b(com.mbeddr.mpsutil.buildutil#6600513366548883903)" />
+            <generator generatorUID="61e59150-761a-49c0-a214-8c839856658b(com.mbeddr.mpsutil.buildutil#1731001652774944352)" />
             <external-mapping>
               <mapping-node modelUID="61e59150-761a-49c0-a214-8c839856658b/r:7d44b6d8-1405-4a1a-a4a6-fe8f86615439(com.mbeddr.mpsutil.buildutil#6600513366548883903/com.mbeddr.mpsutil.buildutil.generator.template.main@generator)" nodeID="6600513366548883904" />
             </external-mapping>

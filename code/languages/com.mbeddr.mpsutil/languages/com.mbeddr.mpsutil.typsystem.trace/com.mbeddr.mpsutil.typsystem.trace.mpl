@@ -11,7 +11,7 @@
   </facets>
   <accessoryModels />
   <generators>
-    <generator alias="" namespace="com.mbeddr.mpsutil.typsystem.trace#138655907978044806" uuid="bf4d0ffd-a552-4f1f-8c2c-61197c126973">
+    <generator namespace="com.mbeddr.mpsutil.typsystem.trace#1731001652774944350" uuid="bf4d0ffd-a552-4f1f-8c2c-61197c126973">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -51,7 +51,7 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="be896c0f-4f34-4122-95ff-1aef962f5725(com.mbeddr.mpsutil.typesystem.trace.rt)" version="0" />
         <module reference="2e589a6f-51c3-423f-8ea2-0d769a5cc288(com.mbeddr.mpsutil.typsystem.trace)" version="0" />
-        <module reference="bf4d0ffd-a552-4f1f-8c2c-61197c126973(com.mbeddr.mpsutil.typsystem.trace#138655907978044806)" version="0" />
+        <module reference="bf4d0ffd-a552-4f1f-8c2c-61197c126973(com.mbeddr.mpsutil.typsystem.trace#1731001652774944350)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
         <module reference="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" version="0" />
@@ -68,7 +68,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="bf4d0ffd-a552-4f1f-8c2c-61197c126973(com.mbeddr.mpsutil.typsystem.trace#138655907978044806)" />
+            <generator generatorUID="bf4d0ffd-a552-4f1f-8c2c-61197c126973(com.mbeddr.mpsutil.typsystem.trace#1731001652774944350)" />
             <external-mapping>
               <mapping-node modelUID="bf4d0ffd-a552-4f1f-8c2c-61197c126973/r:ed465c57-8411-44ea-ba40-4ca82cf0dc5e(com.mbeddr.mpsutil.typsystem.trace#138655907978044806/com.mbeddr.mpsutil.typsystem.trace.generator.template.main@generator)" nodeID="138655907978044807" />
             </external-mapping>
@@ -82,13 +82,13 @@
         </mapping-priority-rule>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="bf4d0ffd-a552-4f1f-8c2c-61197c126973(com.mbeddr.mpsutil.typsystem.trace#138655907978044806)" />
+            <generator generatorUID="bf4d0ffd-a552-4f1f-8c2c-61197c126973(com.mbeddr.mpsutil.typsystem.trace#1731001652774944350)" />
             <external-mapping>
               <mapping-node modelUID="bf4d0ffd-a552-4f1f-8c2c-61197c126973/r:ed465c57-8411-44ea-ba40-4ca82cf0dc5e(com.mbeddr.mpsutil.typsystem.trace#138655907978044806/com.mbeddr.mpsutil.typsystem.trace.generator.template.main@generator)" nodeID="138655907978044807" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
-            <generator generatorUID="bf4d0ffd-a552-4f1f-8c2c-61197c126973(com.mbeddr.mpsutil.typsystem.trace#138655907978044806)" />
+            <generator generatorUID="bf4d0ffd-a552-4f1f-8c2c-61197c126973(com.mbeddr.mpsutil.typsystem.trace#1731001652774944350)" />
             <external-mapping>
               <mapping-node modelUID="bf4d0ffd-a552-4f1f-8c2c-61197c126973/r:ed465c57-8411-44ea-ba40-4ca82cf0dc5e(com.mbeddr.mpsutil.typsystem.trace#138655907978044806/com.mbeddr.mpsutil.typsystem.trace.generator.template.main@generator)" nodeID="5632795803934812931" />
             </external-mapping>

@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="" namespace="test.com.mbeddr.mpsutil.xml.fix.support#210803258685952145" uuid="12ea1291-43c2-495c-99bf-27bc9db95754">
+    <generator namespace="test.com.mbeddr.mpsutil.xml.fix.support#1731001652774944351" uuid="12ea1291-43c2-495c-99bf-27bc9db95754">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -42,12 +42,12 @@
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="a71fc24a-23c8-4871-87d3-e77b414b28d2(test.com.mbeddr.mpsutil.xml.fix.support)" version="0" />
-        <module reference="12ea1291-43c2-495c-99bf-27bc9db95754(test.com.mbeddr.mpsutil.xml.fix.support#210803258685952145)" version="0" />
+        <module reference="12ea1291-43c2-495c-99bf-27bc9db95754(test.com.mbeddr.mpsutil.xml.fix.support#1731001652774944351)" version="0" />
       </dependencyVersions>
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="12ea1291-43c2-495c-99bf-27bc9db95754(test.com.mbeddr.mpsutil.xml.fix.support#210803258685952145)" />
+            <generator generatorUID="12ea1291-43c2-495c-99bf-27bc9db95754(test.com.mbeddr.mpsutil.xml.fix.support#1731001652774944351)" />
             <external-mapping>
               <mapping-node modelUID="r:515920fe-6489-41c9-a96a-bfb6b5a3a424(test.com.mbeddr.mpsutil.xml.fix.support.generator.template.main@generator)" nodeID="210803258685952146" />
             </external-mapping>
