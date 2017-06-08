@@ -172,9 +172,6 @@
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
-      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
-      </concept>
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
         <reference id="1176109685394" name="concept" index="3lApI3" />
       </concept>
@@ -879,13 +876,19 @@
             <node concept="2ShNRf" id="2RSm1CzsBDR" role="3cqZAk">
               <node concept="1pGfFk" id="2RSm1CzsBZx" role="2ShVmc">
                 <ref role="37wK5l" to="6xgk:7lHSllLpTWM" resolve="NamedElementsScope" />
-                <node concept="2OqwBi" id="2RSm1CzsCiz" role="37wK5m">
-                  <node concept="2OqwBi" id="2RSm1CzsCi$" role="2Oq$k0">
-                    <node concept="2rP1CM" id="2RSm1CzsCi_" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="2RSm1CzsCiA" role="2OqNvi" />
+                <node concept="2OqwBi" id="7qtWaR7pfCt" role="37wK5m">
+                  <node concept="2OqwBi" id="7qtWaR7pfCu" role="2Oq$k0">
+                    <node concept="2rP1CM" id="7qtWaR7pfCv" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="7qtWaR7pfCw" role="2OqNvi">
+                      <node concept="1xMEDy" id="7qtWaR7pfCx" role="1xVPHs">
+                        <node concept="chp4Y" id="7qtWaR7pfCy" role="ri$Ld">
+                          <ref role="cht4Q" to="uu1k:2qfgCZsFkIW" resolve="ILatticeDefinitionModule" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
-                  <node concept="1j9C0f" id="2RSm1CzsCiB" role="2OqNvi">
-                    <ref role="1j9C0d" to="uu1k:3l0M8IajV$$" resolve="IDataConstructor" />
+                  <node concept="3Tsc0h" id="7qtWaR7pfCz" role="2OqNvi">
+                    <ref role="3TtcxE" to="uu1k:3l0M8IajV$v" resolve="constructors" />
                   </node>
                 </node>
               </node>
