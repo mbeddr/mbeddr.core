@@ -77,6 +77,10 @@
       <property role="1uS6qo" value="condition" />
       <property role="1uS6qv" value="condition" />
     </node>
+    <node concept="M4N5e" id="5YccjAeca2A" role="M5hS2">
+      <property role="1uS6qv" value="mcdc" />
+      <property role="1uS6qo" value="mcdc" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1UHnSpzBief">
     <property role="TrG5h" value="ITestgenAnalysis" />
