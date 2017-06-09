@@ -3595,6 +3595,27 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="hgayPfhkGd" role="jymVt" />
+    <node concept="3clFb_" id="hgayPfhqiB" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getResults" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="hgayPfhqiE" role="3clF47">
+        <node concept="3clFbF" id="hgayPfhvGo" role="3cqZAp">
+          <node concept="37vLTw" id="hgayPfhvGn" role="3clFbG">
+            <ref role="3cqZAo" node="5PkarIFWeBU" resolve="allResults" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="hgayPfhnDO" role="1B3o_S" />
+      <node concept="_YKpA" id="hgayPfhtbO" role="3clF45">
+        <node concept="16syzq" id="hgayPfhtbP" role="_ZDj9">
+          <ref role="16sUi3" node="TJrbIN5tPs" resolve="T" />
+        </node>
+      </node>
+    </node>
     <node concept="3uibUv" id="7LklpYzSR3S" role="1zkMxy">
       <ref role="3uigEE" to="7tm6:~AbstractTreeTableModel" resolve="AbstractTreeTableModel" />
     </node>
@@ -4460,7 +4481,6 @@
         <property role="NWlVz" value="Set use regular expressions while filtering the whitness." />
       </node>
     </node>
-    <node concept="2tJIrI" id="2k2dPZHc15L" role="jymVt" />
     <node concept="16euLQ" id="1EZfgaQngo1" role="16eVyc">
       <property role="TrG5h" value="T" />
       <node concept="3uibUv" id="1EZfgaQnkaM" role="3ztrMU">
@@ -6323,7 +6343,6 @@
         <property role="NWlVz" value="Sets a single result." />
       </node>
     </node>
-    <node concept="2tJIrI" id="2k2dPZH9Ndc" role="jymVt" />
     <node concept="16euLQ" id="2k2dPZH9VGS" role="16eVyc">
       <property role="TrG5h" value="T" />
       <node concept="3uibUv" id="2k2dPZHa0Aq" role="3ztrMU">

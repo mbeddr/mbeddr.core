@@ -309,5 +309,25 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="63QgsF$Rpqj">
+    <ref role="13h7C2" to="v326:5yxSA$IRnr7" resolve="IPanRunSettings" />
+    <node concept="13hLZK" id="63QgsF$Rpqk" role="13h7CW">
+      <node concept="3clFbS" id="63QgsF$Rpql" role="2VODD2">
+        <node concept="3clFbF" id="63QgsF$Rpsq" role="3cqZAp">
+          <node concept="37vLTI" id="63QgsF$Rqjn" role="3clFbG">
+            <node concept="3clFbT" id="63QgsF$RqoY" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="63QgsF$RpAY" role="37vLTJ">
+              <node concept="13iPFW" id="63QgsF$Rpsp" role="2Oq$k0" />
+              <node concept="3TrcHB" id="63QgsF$RpGG" role="2OqNvi">
+                <ref role="3TsBF5" to="v326:EEDqFM$hKb" resolve="stopAtFirstError" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
