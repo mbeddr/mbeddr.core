@@ -1914,9 +1914,7 @@
                     <node concept="37vLTw" id="7XCY$_rbuiO" role="37wK5m">
                       <ref role="3cqZAo" node="7XCY$_rbqF9" resolve="userFriendlyMessage" />
                     </node>
-                    <node concept="Xl_RD" id="71H03GAV5XI" role="37wK5m">
-                      <property role="Xl_RC" value="whitness" />
-                    </node>
+                    <node concept="Xl_RD" id="71H03GAV5XI" role="37wK5m" />
                     <node concept="37vLTw" id="2lN4cj_OQe3" role="37wK5m">
                       <ref role="3cqZAo" node="2lN4cj_OQdZ" resolve="liftedWhitness" />
                     </node>

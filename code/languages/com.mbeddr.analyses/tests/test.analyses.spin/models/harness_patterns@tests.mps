@@ -1661,9 +1661,91 @@
           </node>
         </node>
         <node concept="3clFbH" id="63QgsF$OW2t" role="3cqZAp" />
+        <node concept="3cpWs8" id="63QgsF$SPGO" role="3cqZAp">
+          <node concept="3cpWsn" id="63QgsF$SPGP" role="3cpWs9">
+            <property role="TrG5h" value="r0" />
+            <node concept="3uibUv" id="63QgsF$SPGQ" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="63QgsF$SPGR" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:63QgsF$OV5n" resolve="findResultByUserFriendlyMessage" />
+              <node concept="37vLTw" id="63QgsF$SPGS" role="37wK5m">
+                <ref role="3cqZAo" node="63QgsF$OnAL" resolve="res" />
+              </node>
+              <node concept="Xl_RD" id="63QgsF$SPGT" role="37wK5m">
+                <property role="Xl_RC" value="Assert: i != 0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="63QgsF$SPGU" role="3cqZAp">
+          <node concept="2OqwBi" id="63QgsF$SPGV" role="3vwVQn">
+            <node concept="37vLTw" id="63QgsF$SPGW" role="2Oq$k0">
+              <ref role="3cqZAo" node="63QgsF$SPGP" resolve="r0" />
+            </node>
+            <node concept="liA8E" id="63QgsF$SPGX" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="30AV9b" id="63QgsF$SPGY" role="3cqZAp">
+          <node concept="37vLTw" id="63QgsF$SPGZ" role="30AzmL">
+            <ref role="3cqZAo" node="63QgsF$SPGP" resolve="r0" />
+          </node>
+          <node concept="30Azln" id="63QgsF$SPH0" role="30Azl8">
+            <property role="30AzUg" value="i" />
+            <property role="30AzUs" value="0" />
+            <node concept="3Tqbb2" id="63QgsF$SPH1" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="63QgsF$OnBe" role="3cqZAp" />
+        <node concept="3cpWs8" id="63QgsF$SPtS" role="3cqZAp">
+          <node concept="3cpWsn" id="63QgsF$SPtT" role="3cpWs9">
+            <property role="TrG5h" value="r1" />
+            <node concept="3uibUv" id="63QgsF$SPtU" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="63QgsF$SPtV" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:63QgsF$OV5n" resolve="findResultByUserFriendlyMessage" />
+              <node concept="37vLTw" id="63QgsF$SPtW" role="37wK5m">
+                <ref role="3cqZAo" node="63QgsF$OnAL" resolve="res" />
+              </node>
+              <node concept="Xl_RD" id="63QgsF$SPtX" role="37wK5m">
+                <property role="Xl_RC" value="Assert: i != 1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="63QgsF$SPtY" role="3cqZAp">
+          <node concept="2OqwBi" id="63QgsF$SPtZ" role="3vwVQn">
+            <node concept="37vLTw" id="63QgsF$SPu0" role="2Oq$k0">
+              <ref role="3cqZAo" node="63QgsF$SPtT" resolve="r1" />
+            </node>
+            <node concept="liA8E" id="63QgsF$SPu1" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="30AV9b" id="63QgsF$SPu2" role="3cqZAp">
+          <node concept="37vLTw" id="63QgsF$SPu3" role="30AzmL">
+            <ref role="3cqZAo" node="63QgsF$SPtT" resolve="r1" />
+          </node>
+          <node concept="30Azln" id="63QgsF$SPu4" role="30Azl8">
+            <property role="30AzUg" value="i" />
+            <property role="30AzUs" value="1" />
+            <node concept="3Tqbb2" id="63QgsF$SPu5" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="63QgsF$SPrT" role="3cqZAp" />
         <node concept="3cpWs8" id="63QgsF$OUoF" role="3cqZAp">
           <node concept="3cpWsn" id="63QgsF$OUoG" role="3cpWs9">
-            <property role="TrG5h" value="r1" />
+            <property role="TrG5h" value="r4" />
             <node concept="3uibUv" id="63QgsF$OUoH" role="1tU5fm">
               <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
             </node>
@@ -1674,7 +1756,7 @@
                 <ref role="3cqZAo" node="63QgsF$OnAL" resolve="res" />
               </node>
               <node concept="Xl_RD" id="63QgsF$OVIC" role="37wK5m">
-                <property role="Xl_RC" value="XYZ" />
+                <property role="Xl_RC" value="Assert: i != 4" />
               </node>
             </node>
           </node>
@@ -1682,7 +1764,7 @@
         <node concept="3vwNmj" id="63QgsF$OnAV" role="3cqZAp">
           <node concept="2OqwBi" id="63QgsF$OnAW" role="3vwVQn">
             <node concept="37vLTw" id="63QgsF$OW1C" role="2Oq$k0">
-              <ref role="3cqZAo" node="63QgsF$OUoG" resolve="r1" />
+              <ref role="3cqZAo" node="63QgsF$OUoG" resolve="r4" />
             </node>
             <node concept="liA8E" id="63QgsF$OnAY" role="2OqNvi">
               <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
@@ -1691,52 +1773,86 @@
         </node>
         <node concept="30AV9b" id="63QgsF$OnB0" role="3cqZAp">
           <node concept="37vLTw" id="63QgsF$OW24" role="30AzmL">
-            <ref role="3cqZAo" node="63QgsF$OUoG" resolve="r1" />
-          </node>
-          <node concept="30Azln" id="63QgsF$OnB2" role="30Azl8">
-            <property role="30AzUg" value="#Iteration" />
-            <property role="30AzUs" value="1" />
-            <node concept="3Tqbb2" id="63QgsF$OnB3" role="38rYrG">
-              <ref role="ehGHo" to="llb3:6fP9ZN5Cubd" resolve="MultiStep" />
-            </node>
+            <ref role="3cqZAo" node="63QgsF$OUoG" resolve="r4" />
           </node>
           <node concept="30Azln" id="63QgsF$OnB4" role="30Azl8">
-            <property role="30AzUg" value="evt" />
-            <property role="30AzUs" value="3" />
+            <property role="30AzUg" value="i" />
+            <property role="30AzUs" value="4" />
             <node concept="3Tqbb2" id="63QgsF$OnB5" role="38rYrG">
               <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
             </node>
           </node>
-          <node concept="30Azln" id="63QgsF$OnB6" role="30Azl8">
-            <property role="30AzUg" value="crtState" />
-            <property role="30AzUs" value="2" />
-            <node concept="3Tqbb2" id="63QgsF$OnB7" role="38rYrG">
-              <ref role="ehGHo" to="llb3:36pDmrEZ2Bs" resolve="WitnessLogger" />
-            </node>
-          </node>
-          <node concept="30Azln" id="63QgsF$OnB8" role="30Azl8">
-            <property role="30AzUg" value="#Iteration" />
-            <property role="30AzUs" value="2" />
-            <node concept="3Tqbb2" id="63QgsF$OnB9" role="38rYrG">
-              <ref role="ehGHo" to="llb3:6fP9ZN5Cubd" resolve="MultiStep" />
-            </node>
-          </node>
-          <node concept="30Azln" id="63QgsF$OnBa" role="30Azl8">
-            <property role="30AzUg" value="evt" />
-            <property role="30AzUs" value="4" />
-            <node concept="3Tqbb2" id="63QgsF$OnBb" role="38rYrG">
-              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
-            </node>
-          </node>
-          <node concept="30Azln" id="63QgsF$OnBc" role="30Azl8">
-            <property role="30AzUg" value="crtState" />
-            <property role="30AzUs" value="3" />
-            <node concept="3Tqbb2" id="63QgsF$OnBd" role="38rYrG">
-              <ref role="ehGHo" to="llb3:36pDmrEZ2Bs" resolve="WitnessLogger" />
+        </node>
+        <node concept="3clFbH" id="63QgsF$SPDP" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="63QgsF$TmSG">
+    <property role="TrG5h" value="_201_multiple_assertions_true" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="63QgsF$TmSH" role="1SL9yI">
+      <property role="TrG5h" value="test1" />
+      <node concept="3cqZAl" id="63QgsF$TmSI" role="3clF45" />
+      <node concept="3clFbS" id="63QgsF$TmSJ" role="3clF47">
+        <node concept="3cpWs8" id="63QgsF$TmSK" role="3cqZAp">
+          <node concept="3cpWsn" id="63QgsF$TmSL" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="63QgsF$TmSM" role="1tU5fm" />
+            <node concept="BaHAS" id="63QgsF$TmSN" role="33vP2m">
+              <property role="BaHAW" value="harness_patterns" />
+              <property role="BaGAP" value="" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="63QgsF$OnBe" role="3cqZAp" />
+        <node concept="3cpWs8" id="63QgsF$TmSO" role="3cqZAp">
+          <node concept="3cpWsn" id="63QgsF$TmSP" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="_YKpA" id="63QgsF$TmSQ" role="1tU5fm">
+              <node concept="3uibUv" id="63QgsF$TmSR" role="_ZDj9">
+                <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="63QgsF$TmSS" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+              <node concept="37vLTw" id="63QgsF$TmST" role="37wK5m">
+                <ref role="3cqZAo" node="63QgsF$TmSL" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="63QgsF$TmSU" role="37wK5m">
+                <property role="Xl_RC" value="_201_multiple_assertions_true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="63QgsF$TmSV" role="3cqZAp" />
+        <node concept="3cpWs8" id="63QgsF$TmSW" role="3cqZAp">
+          <node concept="3cpWsn" id="63QgsF$TmSX" role="3cpWs9">
+            <property role="TrG5h" value="r0" />
+            <node concept="3uibUv" id="63QgsF$TmSY" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="63QgsF$TmSZ" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:63QgsF$OV5n" resolve="findResultByUserFriendlyMessage" />
+              <node concept="37vLTw" id="63QgsF$TmT0" role="37wK5m">
+                <ref role="3cqZAo" node="63QgsF$TmSP" resolve="res" />
+              </node>
+              <node concept="Xl_RD" id="63QgsF$TmT1" role="37wK5m">
+                <property role="Xl_RC" value="assertions" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="63QgsF$TmT2" role="3cqZAp">
+          <node concept="2OqwBi" id="63QgsF$TxQo" role="3vwVQn">
+            <node concept="37vLTw" id="63QgsF$TmT4" role="2Oq$k0">
+              <ref role="3cqZAo" node="63QgsF$TmSX" resolve="r0" />
+            </node>
+            <node concept="liA8E" id="63QgsF$Ty1P" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaBq" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
