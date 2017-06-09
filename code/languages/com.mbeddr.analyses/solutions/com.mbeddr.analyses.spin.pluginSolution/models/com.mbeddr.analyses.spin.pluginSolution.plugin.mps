@@ -284,7 +284,6 @@
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
-      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
     </language>
   </registry>
   <node concept="tC5Ba" id="3Hq87cj$2XJ">
@@ -609,7 +608,7 @@
         </node>
         <node concept="3SKdUt" id="hgayPfdUfU" role="3cqZAp">
           <node concept="3SKdUq" id="hgayPfdUfW" role="3SKWNk">
-            <property role="3SKdUp" value="We need the next line to can update the RawTrail from LiftedTable" />
+            <property role="3SKdUp" value="We need the next line so we can update the RawTrail from LiftedTable" />
           </node>
         </node>
         <node concept="3clFbF" id="71H03GAY$wn" role="3cqZAp">
@@ -701,7 +700,7 @@
                   <node concept="37vLTw" id="71901EGHXuQ" role="2Oq$k0">
                     <ref role="3cqZAo" node="7F8$WoVMoqj" resolve="res" />
                   </node>
-                  <node concept="1yVyf7" id="71H03GASpr$" role="2OqNvi" />
+                  <node concept="1uHKPH" id="63QgsF$RKL5" role="2OqNvi" />
                 </node>
                 <node concept="liA8E" id="71901EGI4VH" role="2OqNvi">
                   <ref role="37wK5l" to="imq8:71901EGHZ_j" resolve="getWhitnessString" />

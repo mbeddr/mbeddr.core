@@ -97,7 +97,7 @@
     </node>
     <node concept="1TJgyi" id="EEDqFM$hKb" role="1TKVEl">
       <property role="IQ2nx" value="768608840052710411" />
-      <property role="TrG5h" value="trailsForAllErrors" />
+      <property role="TrG5h" value="stopAtFirstError" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>

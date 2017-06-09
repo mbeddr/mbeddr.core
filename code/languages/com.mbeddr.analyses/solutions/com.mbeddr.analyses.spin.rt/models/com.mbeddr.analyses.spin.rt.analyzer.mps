@@ -1900,11 +1900,6 @@
         </node>
         <node concept="3clFbJ" id="71H03GASHLC" role="3cqZAp">
           <node concept="3clFbS" id="71H03GASHLE" role="3clFbx">
-            <node concept="3SKdUt" id="71H03GAV6BJ" role="3cqZAp">
-              <node concept="3SKdUq" id="71H03GAV6BL" role="3SKWNk">
-                <property role="3SKdUp" value="TODO: whitness needed???" />
-              </node>
-            </node>
             <node concept="3clFbF" id="Hdy9e2WVuy" role="3cqZAp">
               <node concept="37vLTI" id="Hdy9e2WVu$" role="3clFbG">
                 <node concept="2ShNRf" id="7XCY$_rajG3" role="37vLTx">
