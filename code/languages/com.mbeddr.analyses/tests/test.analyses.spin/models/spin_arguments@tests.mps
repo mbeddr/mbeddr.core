@@ -111,6 +111,9 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+    </language>
   </registry>
   <node concept="2XOHcx" id="5yxSA$IRFtR">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
@@ -157,15 +160,18 @@
             <node concept="3uibUv" id="5yxSA$IRVVK" role="1tU5fm">
               <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
             </node>
-            <node concept="NRdvd" id="5yxSA$IRWVP" role="33vP2m">
-              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
-              <node concept="37vLTw" id="1TY2kgDXU3r" role="37wK5m">
-                <ref role="3cqZAo" node="1TY2kgDXU3p" resolve="m" />
+            <node concept="2OqwBi" id="63QgsF$QnVn" role="33vP2m">
+              <node concept="NRdvd" id="5yxSA$IRWVP" role="2Oq$k0">
+                <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <node concept="37vLTw" id="1TY2kgDXU3r" role="37wK5m">
+                  <ref role="3cqZAo" node="1TY2kgDXU3p" resolve="m" />
+                </node>
+                <node concept="Xl_RD" id="5yxSA$IRWVR" role="37wK5m">
+                  <property role="Xl_RC" value="exceed_max_depth" />
+                </node>
               </node>
-              <node concept="Xl_RD" id="5yxSA$IRWVR" role="37wK5m">
-                <property role="Xl_RC" value="exceed_max_depth" />
-              </node>
+              <node concept="1uHKPH" id="63QgsF$Qp4c" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -253,15 +259,18 @@
             <node concept="3uibUv" id="5yxSA$ISzUQ" role="1tU5fm">
               <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
             </node>
-            <node concept="NRdvd" id="5yxSA$ISzUR" role="33vP2m">
-              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
-              <node concept="37vLTw" id="1frDWv8azVT" role="37wK5m">
-                <ref role="3cqZAo" node="1frDWv8azVR" resolve="m" />
+            <node concept="2OqwBi" id="63QgsF$Q4Ag" role="33vP2m">
+              <node concept="NRdvd" id="5yxSA$ISzUR" role="2Oq$k0">
+                <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <node concept="37vLTw" id="1frDWv8azVT" role="37wK5m">
+                  <ref role="3cqZAo" node="1frDWv8azVR" resolve="m" />
+                </node>
+                <node concept="Xl_RD" id="5yxSA$ISzUT" role="37wK5m">
+                  <property role="Xl_RC" value="does_not_exceed_max_depth" />
+                </node>
               </node>
-              <node concept="Xl_RD" id="5yxSA$ISzUT" role="37wK5m">
-                <property role="Xl_RC" value="does_not_exceed_max_depth" />
-              </node>
+              <node concept="1uHKPH" id="63QgsF$Q5tS" role="2OqNvi" />
             </node>
           </node>
         </node>
