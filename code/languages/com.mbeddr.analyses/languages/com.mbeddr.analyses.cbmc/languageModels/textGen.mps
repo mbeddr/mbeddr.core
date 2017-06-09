@@ -2,7 +2,7 @@
 <model ref="r:ae8c12b0-5510-4fec-a4c6-41347ad258c3(com.mbeddr.analyses.cbmc.textGen)">
   <persistence version="9" />
   <languages>
-    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
+    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -367,6 +367,41 @@
           </node>
           <node concept="la8eA" id="51BKItOCcOM" role="lcghm">
             <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="60tjEV5PS64">
+    <property role="3GE5qa" value="cbmc_macros" />
+    <ref role="WuzLi" to="q5q6:60tjEV5P_tq" resolve="CPROVERoutput" />
+    <node concept="11bSqf" id="60tjEV5PS65" role="11c4hB">
+      <node concept="3clFbS" id="60tjEV5PS66" role="2VODD2">
+        <node concept="lc7rE" id="60tjEV5PSZP" role="3cqZAp">
+          <node concept="la8eA" id="60tjEV5PSZQ" role="lcghm">
+            <property role="lacIc" value="__CPROVER_output(" />
+          </node>
+          <node concept="l9hG8" id="60tjEV5PSZR" role="lcghm">
+            <node concept="2OqwBi" id="60tjEV5PSZS" role="lb14g">
+              <node concept="117lpO" id="60tjEV5PSZT" role="2Oq$k0" />
+              <node concept="3TrEf2" id="60tjEV5PSZU" role="2OqNvi">
+                <ref role="3Tt5mk" to="q5q6:60tjEV5PKHX" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="60tjEV5PSZV" role="lcghm">
+            <property role="lacIc" value="," />
+          </node>
+          <node concept="l9hG8" id="60tjEV5PSZW" role="lcghm">
+            <node concept="2OqwBi" id="60tjEV5PSZX" role="lb14g">
+              <node concept="117lpO" id="60tjEV5PSZY" role="2Oq$k0" />
+              <node concept="3TrEf2" id="60tjEV5PSZZ" role="2OqNvi">
+                <ref role="3Tt5mk" to="q5q6:60tjEV5PKtw" resolve="expression" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="60tjEV5PT00" role="lcghm">
+            <property role="lacIc" value=");" />
           </node>
         </node>
       </node>

@@ -1,3 +1,4 @@
+import de.itemis.mps.gradle.CreateDmg
 
 configurations {
     junitAnt
@@ -5,14 +6,17 @@ configurations {
     cbmcWin {
         description = 'cbmc windows'
     }
+    jreWin
 }
 
 ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr',
         'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' ]
 
+ext.jdkVersion = '8u112b408.4'
 dependencies {
     mpsArtifacts "com.mbeddr:mbeddr:$mbeddrBuildNumber"
+    jreWin "com.jetbrains.jdk:jdk:${jdkVersion}:windows_x64@tgz"
 }
 
 task resolveMpsArtifacts() {
@@ -25,6 +29,8 @@ task resolveMpsArtifacts() {
         }
     }
 }
+
+
 
 
 
@@ -64,7 +70,7 @@ task build_mbeddrRCP(type: RunMbeddrAntScript, dependsOn: build_mbeddr_branding)
 def installer_repo = project.hasProperty('InstallerRepo') ? project.getProperty('InstallerRepo') : rootProject.projectDir.absolutePath + '/../mbeddr.installer.win'
 
 task prepare_installer(type: Copy, dependsOn: build_mbeddrRCP) {
-    from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/mbeddr-win.zip"    from {
+    from {
         zipTree(rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/" + "mbeddr-win.zip")
     }
     into installer_repo + "/files/mbeddr/"
@@ -77,12 +83,19 @@ task resolve_cbmcWinForInstaller(type: Copy)  {
     into rootProject.projectDir.absolutePath + "/artifacts/cbmc"
 }
 
+task resolve_jreWindows(type: Copy)  {
+    from {
+        configurations.jreWin.collect { tarTree(it) }
+    }
+    into installer_repo + "/files/mbeddr/"
+}
+
 task unzip_cbmcWinZipForInstaller(type: Copy, dependsOn: resolve_cbmcWinForInstaller)  {
     from zipTree(rootProject.projectDir.absolutePath + "/artifacts/cbmc/"+ "cbmc-win.zip")
     into file(installer_repo +"/files/3rd-party/cbmc")
 }
 
-task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipForInstaller]) {
+task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipForInstaller, resolve_jreWindows]) {
   workingDir installer_repo
 
   //on windows:
@@ -97,14 +110,10 @@ task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipF
   }
 }
 
-def script_build_dmg = new File(rootDir , "/buildUtil/build.xml")
-
-task prepare_dmg(type:Copy, dependsOn: build_mbeddrRCP) {
-    from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/"
-    into rootProject.projectDir.absolutePath + "/buildUtil"
-}
-
-task build_dmg(type: RunMbeddrAntScript, dependsOn: prepare_dmg) {
-    script script_build_dmg
-    targets 'macbuild'
+task build_dmg(type: CreateDmg) {
+    dependsOn build_mbeddrRCP
+    rcpArtifact rootProject.file('artifacts/mpsDistribution/mbeddr-macos.zip')
+    jdkDependency "com.jetbrains.jdk:jdk:${jdkVersion}:osx_x64@tgz"
+    backgroundImage rootProject.file('rcp/icons/mbeddr-logo.png')
+    dmgFile rootProject.file('buildUtil/mbeddr-macos.dmg')
 }

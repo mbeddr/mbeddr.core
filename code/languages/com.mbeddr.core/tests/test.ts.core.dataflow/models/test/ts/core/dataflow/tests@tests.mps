@@ -282,9 +282,6 @@
       <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
     </language>
   </registry>
-  <node concept="2XOHcx" id="5h6rdrH6iYK">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
-  </node>
   <node concept="1lH9Xt" id="2QNVH28HPXA">
     <property role="TrG5h" value="DataflowTest_misc" />
     <node concept="1LZb2c" id="20xms4Afg0W" role="1SL9yI">
@@ -2773,6 +2770,9 @@
         <property role="TrG5h" value="doCheck" />
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="5h6rdrH6iYK">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   </node>
 </model>
 

@@ -6,7 +6,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
-    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
+    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
@@ -43,7 +43,7 @@
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876391" name="com.mbeddr.core.debug.test.structure.StepOutCommand" flags="ng" index="2$4FYd" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -117,6 +117,9 @@
   </registry>
   <node concept="309jyn" id="5S3xvtanoo">
     <property role="TrG5h" value="Closure" />
+    <node concept="3qy1PH" id="3GPxRNRaLYz" role="3qy1PE">
+      <ref role="30ajXG" to="9vx0:4Y0lNFa3ShG" resolve="ClosureTest" />
+    </node>
     <node concept="29bEnc" id="5t7wq7uZS7q" role="29bA6Q" />
     <node concept="1vsUH6" id="4WY_RKG$PC9" role="1zJi$$">
       <property role="TrG5h" value="inAHof" />
@@ -225,9 +228,6 @@
       </node>
     </node>
     <node concept="3sgmnF" id="4WY_RKG$PC8" role="1zJi$$" />
-    <node concept="3qy1PH" id="3GPxRNRaLYz" role="3qy1PE">
-      <ref role="30ajXG" to="9vx0:4Y0lNFa3ShG" resolve="ClosureTest" />
-    </node>
     <node concept="3scrou" id="7Jr7T0w2lYl" role="1zJi$$">
       <property role="TrG5h" value="stepOutOfClosure" />
       <node concept="3cqZAl" id="7Jr7T0w2lYm" role="3clF45" />

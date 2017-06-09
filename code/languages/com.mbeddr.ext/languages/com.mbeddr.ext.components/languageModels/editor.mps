@@ -1163,6 +1163,12 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
+      <node concept="1kHk_G" id="36Bkyc4tv9k" role="3EZMnx">
+        <ref role="1NtTu8" to="v7ag:36Bkyc49pe4" resolve="mandatory" />
+      </node>
+      <node concept="1kHk_G" id="2cSPe2KPXEU" role="3EZMnx">
+        <ref role="1NtTu8" to="v7ag:2cSPe2KM0zi" resolve="hidden" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="71UKpntmzYL">
@@ -1869,9 +1875,6 @@
       <node concept="1kIj98" id="5V9BP5IMRGn" role="3EZMnx">
         <node concept="3F1sOY" id="71UKpntmSmE" role="1kIj9b">
           <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
-          <node concept="11L4FC" id="5mhMJW2AOkB" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
       </node>
       <node concept="l2Vlx" id="71UKpntmSmD" role="2iSdaV" />
@@ -8788,6 +8791,10 @@
       <node concept="Vb9p2" id="3kzGBV3$6s_" role="3F10Kt" />
     </node>
   </node>
+  <node concept="3p36aQ" id="143iErn7gR0">
+    <property role="3GE5qa" value="intf.cs" />
+    <ref role="aqKnT" to="v7ag:5Xnv3$QABtA" resolve="EmptyInterfaceContents" />
+  </node>
   <node concept="3p36aQ" id="143iErn7gLT">
     <property role="3GE5qa" value="comp" />
     <ref role="aqKnT" to="v7ag:7oI7FI6q2Us" resolve="EmptyComponentContent" />
@@ -8795,10 +8802,6 @@
   <node concept="3p36aQ" id="143iErn7gPj">
     <property role="3GE5qa" value="comp.instances" />
     <ref role="aqKnT" to="v7ag:WtRjgwxLl_" resolve="EmptyInstanceConfigContent" />
-  </node>
-  <node concept="3p36aQ" id="143iErn7gR0">
-    <property role="3GE5qa" value="intf.cs" />
-    <ref role="aqKnT" to="v7ag:5Xnv3$QABtA" resolve="EmptyInterfaceContents" />
   </node>
 </model>
 

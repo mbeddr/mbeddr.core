@@ -10,6 +10,8 @@
       <sourceRoot location="lib/commons-primitives-1.0/commons-primitives-1.0.jar" />
       <sourceRoot location="lib/commons-lang3-3.3.2/commons-lang3-3.3.2.jar" />
       <sourceRoot location="lib/commons-csv-1.0/commons-csv-1.0.jar" />
+      <sourceRoot location="lib/miglayout/miglayout-4.0-swing.jar" />
+      <sourceRoot location="lib/miglayout/miglayout-4.0.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
@@ -18,6 +20,8 @@
     <stubModelEntry path="${module}/lib/commons-math3-3.3/commons-math3-3.3.jar" />
     <stubModelEntry path="${module}/lib/commons-primitives-1.0/commons-primitives-1.0.jar" />
     <stubModelEntry path="${module}/lib/commons-csv-1.0/commons-csv-1.0.jar" />
+    <stubModelEntry path="${module}/lib/miglayout/miglayout-4.0-swing.jar" />
+    <stubModelEntry path="${module}/lib/miglayout/miglayout-4.0.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

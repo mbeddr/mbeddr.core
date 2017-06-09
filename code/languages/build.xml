@@ -186,6 +186,9 @@
 
 		<ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-plugins.task}" />			   
 		<ant antfile="${com.mbeddr.analyses.ts-tests-build-file.name}" dir="${com.mbeddr.analyses.build-file.location}" target="${clean-generated-code.task}" />	 				   
+		
+		<ant antfile="${com.mbeddr.mpsutil.inca.test-build-file.name}" dir="${com.mbeddr.mpsutil.inca.build-file.location}" target="${clean-plugins.task}" />			   
+		<ant antfile="${com.mbeddr.mpsutil.inca.test-build-file.name}" dir="${com.mbeddr.mpsutil.inca.build-file.location}" target="${clean-generated-code.task}" />	
 	</target>	  
 
 	<target name="clean-languages">
@@ -294,6 +297,7 @@
 	<target name="build-and-run-tests" >
 		<antcall target="test-platform" /> 
 		<antcall target="test-debugger" />
+		<antcall target="test-inca" />
 		<antcall target="test-core" /> 
 		<antcall target="test-performance" />
 		<antcall target="test-cc" />

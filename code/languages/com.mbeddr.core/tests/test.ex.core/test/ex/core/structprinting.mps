@@ -21,6 +21,7 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
@@ -148,6 +149,7 @@
     <node concept="2eOfOl" id="kOmZ6t1fZP" role="2ePNbc">
       <property role="iO3LB" value="false" />
       <property role="TrG5h" value="main" />
+      <ref role="3oK8_y" to="1ok9:4LhGMnjfiNC" resolve="portable" />
       <node concept="2v9HqM" id="kOmZ6t1fZR" role="2eOfOg">
         <ref role="2v9HqP" node="kOmZ6t0CdN" resolve="TestPrinting" />
       </node>

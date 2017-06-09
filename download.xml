@@ -13,7 +13,7 @@
 	<get src="${MPS-Base-URL}/${MPS-File}" dest="${download-dir}/${MPS-Dir}" verbose="true" skipexisting="true" usetimestamp="true"/>
 	<unzip src="${download-dir}/${MPS-Dir}/${MPS-File}" dest="${MPS-Dir}"/>
 	<move file="${MPS-Dir}/${MPS-Zip-Folder}" tofile="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}"/>
-	<copy file="log.xml" todir="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/bin" overwrite="true" />
+  <copy file="log.xml" todir="${MPS-Dir}/${MPS-Zip-Folder-CleandUp}/bin" overwrite="true" />
 	<delete file="${MPS-Dir}/${MPS-File}"/>
   </target>
   <target name="storeMPSVersion">

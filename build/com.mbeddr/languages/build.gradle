@@ -187,7 +187,14 @@ task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_m
 
 task test_mbeddr(dependsOn: [test_mbeddr_core, test_mbeddr_performance, test_mbeddr_cc, test_mbeddr_ext]) {}
 
-task publish_mbeddr(type: Zip, dependsOn: test_mbeddr) {
+def pubDeb
+if (ciBuild) {
+    pubDeb = test_mbeddr
+} else {
+    pubDeb = build_mbeddr
+}
+
+task publish_mbeddr(type: Zip, dependsOn: pubDeb) {
     archiveName 'com.mbeddr.zip'
     from artifactsDir
     include "mbeddr/**"
@@ -202,11 +209,12 @@ publishing {
             artifact(publish_mbeddr) {}
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mpsArtifacts.allDependencies.each {
+                configurations.mpsArtifacts.resolvedConfiguration.firstLevelModuleDependencies.each{
                     def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.group)
-                    dependencyNode.appendNode('artifactId', it.name)
-                    dependencyNode.appendNode('version', it.version)
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
                 }
             }
         }

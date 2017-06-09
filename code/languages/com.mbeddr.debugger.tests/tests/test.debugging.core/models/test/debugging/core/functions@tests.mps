@@ -4,7 +4,7 @@
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
-    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
+    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
@@ -43,7 +43,7 @@
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876391" name="com.mbeddr.core.debug.test.structure.StepOutCommand" flags="ng" index="2$4FYd" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -118,10 +118,6 @@
   </registry>
   <node concept="309jyn" id="5S3xvtajdw">
     <property role="TrG5h" value="Functions" />
-    <node concept="29bEnc" id="5t7wq7uZRsl" role="29bA6Q" />
-    <node concept="3qy1PH" id="5S3xvtajd_" role="3qy1PE">
-      <ref role="30ajXG" to="80qu:bKKma6GLBq" resolve="FunctionsTest" />
-    </node>
     <node concept="1vsUH6" id="4WY_RKGxD2I" role="1zJi$$">
       <property role="TrG5h" value="inMain" />
       <property role="1rKBot" value="true" />
@@ -131,6 +127,10 @@
     </node>
     <node concept="2NXPZ9" id="3GPxRNRaMF8" role="1zJi$$">
       <property role="TrG5h" value="empty_1493223631865_5" />
+    </node>
+    <node concept="29bEnc" id="5t7wq7uZRsl" role="29bA6Q" />
+    <node concept="3qy1PH" id="5S3xvtajd_" role="3qy1PE">
+      <ref role="30ajXG" to="80qu:bKKma6GLBq" resolve="FunctionsTest" />
     </node>
     <node concept="3scrou" id="7Jr7T0w2lRu" role="1zJi$$">
       <property role="TrG5h" value="suspendingInMain" />

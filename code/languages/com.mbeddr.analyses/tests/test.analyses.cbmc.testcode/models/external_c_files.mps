@@ -2,7 +2,7 @@
 <model ref="r:83d6a018-c6c6-4282-9ac6-3f981c615adc(external_c_files)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="4" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
@@ -439,12 +439,12 @@
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <ref role="3V$Cn$" node="4PtxuK92A2B" resolve="simple_assertion_1" />
-      <node concept="3NXOOs" id="2kft9cs4Kwc" role="1Byen_">
+      <node concept="3NXOOs" id="7zMit0Cd22R" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file1.c" />
       </node>
-      <node concept="3NXOOs" id="2kft9cs4Kwe" role="1Byen_">
+      <node concept="3NXOOs" id="7zMit0Cd22W" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file2.c" />
@@ -470,10 +470,10 @@
         <property role="TrG5h" value="_A_" />
         <property role="3u2T6H" value="2" />
       </node>
-      <node concept="9PVaO" id="2kft9cs4Kwh" role="1Byen_">
+      <node concept="9PVaO" id="7zMit0Cd22Z" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
-        <property role="3N1Lgt" value="external_files" />
+        <property role="3N1Lgt" value="external_files/" />
       </node>
     </node>
     <node concept="1nvAUE" id="28vOu_uqmx4" role="3V$2$K">
@@ -503,10 +503,10 @@
         <property role="TrG5h" value="_A_" />
         <property role="3u2T6H" value="2" />
       </node>
-      <node concept="9PVaO" id="2kft9cs4Kwl" role="1Byen_">
+      <node concept="9PVaO" id="7zMit0Cd231" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
-        <property role="3N1Lgt" value="external_files" />
+        <property role="3N1Lgt" value="external_files/" />
       </node>
     </node>
     <node concept="1nvAUJ" id="7kPcpiFfCP0" role="3V$2$K">
@@ -529,7 +529,7 @@
         <property role="TrG5h" value="_A_" />
         <property role="3u2T6H" value="1" />
       </node>
-      <node concept="3NXOOs" id="2kft9cs4Kwn" role="1Byen_">
+      <node concept="3NXOOs" id="7zMit0Cd233" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file_with_macros.c" />
@@ -551,14 +551,14 @@
       <property role="2l50Mm" value="false" />
       <property role="3u2WvC" value="true" />
       <ref role="3V$Cn$" node="7kPcpiFfB0C" resolve="harness_add3" />
-      <node concept="3u2USL" id="7kPcpiFiepI" role="3u2XS$">
-        <property role="TrG5h" value="_B_" />
-        <property role="3u2T6H" value="2" />
-      </node>
-      <node concept="3NXOOs" id="2kft9cs4Kwp" role="1Byen_">
+      <node concept="3NXOOs" id="7zMit0Cd235" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file_with_macros.c" />
+      </node>
+      <node concept="3u2USL" id="7kPcpiFiepI" role="3u2XS$">
+        <property role="TrG5h" value="_B_" />
+        <property role="3u2T6H" value="2" />
       </node>
     </node>
     <node concept="1nvAUJ" id="7kPcpiFiUYh" role="3V$2$K">
@@ -577,7 +577,7 @@
       <property role="2l50Mm" value="false" />
       <property role="3u2WvC" value="false" />
       <ref role="3V$Cn$" node="7kPcpiFiUG1" resolve="harness_add_no_macro_defined" />
-      <node concept="3NXOOs" id="2kft9cs4Kwr" role="1Byen_">
+      <node concept="3NXOOs" id="7zMit0Cd237" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file_with_macros.c" />
