@@ -50,9 +50,9 @@
     </language>
   </registry>
   <node concept="1lH9Xt" id="6RWcftEdqKi">
-    <property role="TrG5h" value="TestMath" />
+    <property role="TrG5h" value="MathExtNodesTracing" />
     <node concept="1LZb2c" id="6RWcftEdqKj" role="1SL9yI">
-      <property role="TrG5h" value="Test1" />
+      <property role="TrG5h" value="ExponentialTest" />
       <node concept="3cqZAl" id="6RWcftEdqKk" role="3clF45" />
       <node concept="3clFbS" id="6RWcftEdqKl" role="3clF47">
         <node concept="1xIcmD" id="2qCdpHNSr96" role="3cqZAp">
@@ -61,7 +61,67 @@
             <property role="BaGAP" value="" />
           </node>
           <node concept="Xl_RD" id="2qCdpHNSr98" role="1xDQ1B">
-            <property role="Xl_RC" value="MATH1" />
+            <property role="Xl_RC" value="ExponentialTest" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="63QgsF$VN0i" role="1SL9yI">
+      <property role="TrG5h" value="SumTest" />
+      <node concept="3cqZAl" id="63QgsF$VN0j" role="3clF45" />
+      <node concept="3clFbS" id="63QgsF$VN0n" role="3clF47">
+        <node concept="1xIcmD" id="63QgsF$VN0_" role="3cqZAp">
+          <node concept="BaHAS" id="63QgsF$VN0A" role="1xIeA0">
+            <property role="BaHAW" value="math_code" />
+            <property role="BaGAP" value="" />
+          </node>
+          <node concept="Xl_RD" id="63QgsF$VN0B" role="1xDQ1B">
+            <property role="Xl_RC" value="SumTest" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="63QgsF$VN1k" role="1SL9yI">
+      <property role="TrG5h" value="ProductTest" />
+      <node concept="3cqZAl" id="63QgsF$VN1l" role="3clF45" />
+      <node concept="3clFbS" id="63QgsF$VN1p" role="3clF47">
+        <node concept="1xIcmD" id="63QgsF$VN1H" role="3cqZAp">
+          <node concept="BaHAS" id="63QgsF$VN1I" role="1xIeA0">
+            <property role="BaHAW" value="math_code" />
+            <property role="BaGAP" value="" />
+          </node>
+          <node concept="Xl_RD" id="63QgsF$VN1J" role="1xDQ1B">
+            <property role="Xl_RC" value="ProductTest" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="63QgsF$Wbm1" role="1SL9yI">
+      <property role="TrG5h" value="LogSqrtTest" />
+      <node concept="3cqZAl" id="63QgsF$Wbm2" role="3clF45" />
+      <node concept="3clFbS" id="63QgsF$Wbm6" role="3clF47">
+        <node concept="1xIcmD" id="63QgsF$Wbn9" role="3cqZAp">
+          <node concept="BaHAS" id="63QgsF$Wbna" role="1xIeA0">
+            <property role="BaHAW" value="math_code" />
+            <property role="BaGAP" value="" />
+          </node>
+          <node concept="Xl_RD" id="63QgsF$Wbnb" role="1xDQ1B">
+            <property role="Xl_RC" value="LogSqrtTest" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="63QgsF$Wbog" role="1SL9yI">
+      <property role="TrG5h" value="FractionAbsTest" />
+      <node concept="3cqZAl" id="63QgsF$Wboh" role="3clF45" />
+      <node concept="3clFbS" id="63QgsF$Wbol" role="3clF47">
+        <node concept="1xIcmD" id="63QgsF$WboP" role="3cqZAp">
+          <node concept="BaHAS" id="63QgsF$WboQ" role="1xIeA0">
+            <property role="BaHAW" value="math_code" />
+            <property role="BaGAP" value="" />
+          </node>
+          <node concept="Xl_RD" id="63QgsF$WboR" role="1xDQ1B">
+            <property role="Xl_RC" value="FractionAbsTest" />
           </node>
         </node>
       </node>
