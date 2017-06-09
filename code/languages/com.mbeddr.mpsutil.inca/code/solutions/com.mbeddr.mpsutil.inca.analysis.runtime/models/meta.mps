@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c26e1b9d-8c52-4dd5-aa74-076b11122b73(com.mbeddr.mpsutil.inca.analysis.runtime.code)">
+<model ref="r:c26e1b9d-8c52-4dd5-aa74-076b11122b73(com.mbeddr.mpsutil.inca.analysis.runtime.meta)">
   <persistence version="9" />
   <languages>
     <use id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="com.mbeddr.mpsutil.inca.core" version="-1" />

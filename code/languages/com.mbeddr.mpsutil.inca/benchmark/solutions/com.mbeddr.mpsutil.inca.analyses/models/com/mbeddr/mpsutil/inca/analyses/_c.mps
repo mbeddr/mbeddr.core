@@ -337,7 +337,6 @@
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
         <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
       </concept>
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
@@ -7394,20 +7393,20 @@
             <property role="1dT_AB" value="TODO make use of this information everywhere in the impl." />
           </node>
         </node>
-        <node concept="TUZQ0" id="aLe9abBUXg" role="TUOzN">
+        <node concept="x79VA" id="aLe9abBUXm" role="x79VK">
+          <property role="x79VB" value="true if left is less or equal to right, false otherwise" />
+        </node>
+        <node concept="TUZQ0" id="2DKFXe9Q7_q" role="3nqlJM">
           <property role="TUZQ4" value="the left Interval element" />
-          <node concept="zr_55" id="aLe9abBUXi" role="zr_5Q">
+          <node concept="zr_55" id="2DKFXe9Q7_C" role="zr_5Q">
             <ref role="zr_51" node="2XlXuxNCdnN" resolve="l" />
           </node>
         </node>
-        <node concept="TUZQ0" id="aLe9abBUXj" role="TUOzN">
+        <node concept="TUZQ0" id="2DKFXe9Q7A9" role="3nqlJM">
           <property role="TUZQ4" value="the right Interval element" />
-          <node concept="zr_55" id="aLe9abBUXl" role="zr_5Q">
+          <node concept="zr_55" id="2DKFXe9Q7Ar" role="zr_5Q">
             <ref role="zr_51" node="2XlXuxNCdnT" resolve="r" />
           </node>
-        </node>
-        <node concept="x79VA" id="aLe9abBUXm" role="x79VK">
-          <property role="x79VB" value="true if left is less or equal to right, false otherwise" />
         </node>
       </node>
     </node>

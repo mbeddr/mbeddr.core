@@ -7,16 +7,13 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="test.com.mbeddr.mpsutil.postprocessGeneratedFiles.testlang#6221197661421143649" uuid="e69e7bf0-83c5-47b9-91d9-fa82873a482f">
+    <generator namespace="test.com.mbeddr.mpsutil.postprocessGeneratedFiles.testlang#6221197661421143649" uuid="e69e7bf0-83c5-47b9-91d9-fa82873a482f">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
       <external-templates />
-      <usedDevKits>
-        <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-      </usedDevKits>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
         <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
@@ -48,10 +45,6 @@
     </generator>
   </generators>
   <sourcePath />
-  <usedDevKits>
-    <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
-    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
     <language slang="l:9ee3d5d2-5388-460b-b1dc-d98f27db499b:com.mbeddr.mpsutil.postprocessGeneratedFiles" version="0" />

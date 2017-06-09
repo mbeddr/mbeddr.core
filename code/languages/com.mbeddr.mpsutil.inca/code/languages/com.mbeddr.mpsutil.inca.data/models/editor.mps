@@ -1013,17 +1013,14 @@
   <node concept="24kQdi" id="3l0M8IajVNQ">
     <property role="3GE5qa" value="adt" />
     <ref role="1XX52x" to="uu1k:3l0M8IajVOZ" resolve="DataConstructorParameter" />
-    <node concept="3EZMnI" id="3l0M8IajVNW" role="2wV5jI">
-      <node concept="l2Vlx" id="3l0M8IajVNX" role="2iSdaV" />
-      <node concept="1kIj98" id="3l0M8Iak2Wr" role="3EZMnx">
-        <node concept="3F1sOY" id="3l0M8Iak2WN" role="1kIj9b">
-          <ref role="1NtTu8" to="uu1k:3l0M8IajVNF" resolve="type" />
-        </node>
-        <node concept="2ee1ZP" id="3l0M8Iaxh1H" role="2ee7bq">
-          <node concept="3clFbS" id="3l0M8Iaxh1I" role="2VODD2">
-            <node concept="3clFbF" id="3l0M8Iaxh2x" role="3cqZAp">
-              <node concept="10Nm6u" id="3l0M8Iaxh2w" role="3clFbG" />
-            </node>
+    <node concept="1kIj98" id="3l0M8Iak2Wr" role="2wV5jI">
+      <node concept="3F1sOY" id="3l0M8Iak2WN" role="1kIj9b">
+        <ref role="1NtTu8" to="uu1k:3l0M8IajVNF" resolve="type" />
+      </node>
+      <node concept="2ee1ZP" id="3l0M8Iaxh1H" role="2ee7bq">
+        <node concept="3clFbS" id="3l0M8Iaxh1I" role="2VODD2">
+          <node concept="3clFbF" id="3l0M8Iaxh2x" role="3cqZAp">
+            <node concept="10Nm6u" id="3l0M8Iaxh2w" role="3clFbG" />
           </node>
         </node>
       </node>

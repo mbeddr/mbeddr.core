@@ -1878,7 +1878,7 @@
             <property role="TrG5h" value="testModel" />
             <node concept="H_c77" id="6AFedOHG$p0" role="1tU5fm" />
             <node concept="BaHAS" id="6AFedOHG$p1" role="33vP2m">
-              <property role="BaHAW" value="com.mbeddr.mpsutil.inca.fun.test.plugin" />
+              <property role="BaHAW" value="com.mbeddr.mpsutil.inca.fun.test.soot" />
               <property role="BaGAP" value="tests" />
             </node>
           </node>

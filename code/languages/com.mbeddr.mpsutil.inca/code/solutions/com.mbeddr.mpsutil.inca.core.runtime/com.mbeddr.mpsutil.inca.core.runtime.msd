@@ -14,14 +14,14 @@
       <sourceRoot location="lib/org.eclipse.osgi_3.11.1.v20160708-1632.jar" />
       <sourceRoot location="lib/org.eclipse.xtext.xbase_2.10.0.v201605250459.jar" />
       <sourceRoot location="lib/org.eclipse.xtext.xbase.lib_2.10.0.v201605250459.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.addon.databinding.runtime_1.5.0.2016.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base.itc_1.5.0.2016.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base_1.5.0.2016.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.matchers_1.5.0.2016.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete.recipes_1.5.0.2016.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete_1.5.0.2016.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime_1.5.0.2016.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.transformation.evm_1.5.0.2016.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.addon.databinding.runtime_1.6.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base.itc_1.6.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base_1.6.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.matchers_1.6.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete.recipes_1.6.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete_1.6.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime_1.6.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.transformation.evm_1.6.0.2017.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
@@ -34,14 +34,14 @@
     <stubModelEntry path="${module}/lib/org.eclipse.osgi_3.11.1.v20160708-1632.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.xbase_2.10.0.v201605250459.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.xbase.lib_2.10.0.v201605250459.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.addon.databinding.runtime_1.5.0.2016.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base.itc_1.5.0.2016.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base_1.5.0.2016.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.matchers_1.5.0.2016.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete.recipes_1.5.0.2016.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete_1.5.0.2016.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime_1.5.0.2016.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.transformation.evm_1.5.0.2016.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.addon.databinding.runtime_1.6.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base.itc_1.6.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base_1.6.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.matchers_1.6.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete.recipes_1.6.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete_1.6.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime_1.6.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.transformation.evm_1.6.0.2017.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

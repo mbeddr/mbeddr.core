@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -548,8 +548,11 @@
     <property role="R4oN_" value="a type representing a function reference" />
     <property role="EcuMT" value="8551646674110395547" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
-    <node concept="PrWs8" id="6mfXVgRte6O" role="PzmwI">
+    <node concept="PrWs8" id="4$HG0yYb5kg" role="PzmwI">
       <ref role="PrY4T" to="mj1l:6mfXVgRsmwb" resolve="IVoidTypeContainer" />
+    </node>
+    <node concept="PrWs8" id="4$HG0yY9G71" role="PzmwI">
+      <ref role="PrY4T" to="yq40:4$HG0yY9G70" resolve="INullableType" />
     </node>
     <node concept="1TJgyj" id="7qHzltJ03is" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1682,6 +1685,43 @@
       <node concept="trNpa" id="2T6Po3mUMYj" role="EQaZv">
         <ref role="trN6q" node="5_l8w1EmTde" resolve="ImplementationModule" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2Y6jbdkaokQ">
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="ImplementsFunctionType" />
+    <property role="EcuMT" value="3424508899756705078" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="2Y6jbdkaokR" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="implements" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="3424508899756705079" />
+      <ref role="20lvS9" node="6GaKBF50ksn" resolve="ITypeDef" />
+    </node>
+    <node concept="M6xJ_" id="2Y6jbdkaokS" role="lGtFl">
+      <property role="Hh88m" value="implementsFunctionType" />
+      <node concept="tn0Fv" id="2Y6jbdkaokT" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="2Y6jbdkaokU" role="EQaZv">
+        <ref role="trN6q" node="5_l8w1EmTvx" resolve="Function" />
+      </node>
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6GaKBF50ksn">
+    <property role="EcuMT" value="7713191144372389655" />
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="ITypeDef" />
+    <node concept="PrWs8" id="6GaKBF50kso" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="5jyom5fO9Cm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="original" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6116558314501347862" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
   </node>
 </model>
