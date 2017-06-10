@@ -107,13 +107,14 @@
       <concept id="3854501276819366674" name="com.mbeddr.analyses.spin.structure.SpinBasedAnalysis" flags="ng" index="ap_dJ">
         <reference id="3854501276819165457" name="env" index="apm5G" />
       </concept>
-      <concept id="9065467049586938195" name="" flags="ng" index="1gr5cj" />
-      <concept id="9065467049586938196" name="" flags="ng" index="1gr5ck">
-        <property id="9065467049586938197" name="" index="1gr5cl" />
-        <property id="9065467049586938198" name="" index="1gr5cm" />
-        <property id="9065467049586938199" name="" index="1gr5cn" />
+      <concept id="9065467049586938195" name="com.mbeddr.analyses.spin.structure.SpinExecutable" flags="ng" index="1gr5cj" />
+      <concept id="9065467049586938196" name="com.mbeddr.analyses.spin.structure.SpinPlatform" flags="ng" index="1gr5ck">
+        <property id="9065467049586938197" name="compiler" index="1gr5cl" />
+        <property id="9065467049586938198" name="compilerOptions" index="1gr5cm" />
+        <property id="9065467049586938199" name="make" index="1gr5cn" />
       </concept>
       <concept id="6386634687973783239" name="com.mbeddr.analyses.spin.structure.IPanRunSettings" flags="ng" index="1Qv9iI">
+        <property id="768608840052710411" name="stopAtFirstError" index="3SeVAx" />
         <child id="6386634687973835958" name="searchDepth" index="1QvUrv" />
       </concept>
     </language>
@@ -277,6 +278,7 @@
     <property role="2l50Mm" value="false" />
     <property role="TrG5h" value="AC" />
     <node concept="apm28" id="5yxSA$IR32V" role="3V$2$K">
+      <property role="3SeVAx" value="true" />
       <ref role="apm5G" node="5yxSA$IR30J" resolve="exceed_max_depth" />
       <node concept="3TlMh9" id="5yxSA$IRYLb" role="1QvUrv">
         <property role="2hmy$m" value="2" />
