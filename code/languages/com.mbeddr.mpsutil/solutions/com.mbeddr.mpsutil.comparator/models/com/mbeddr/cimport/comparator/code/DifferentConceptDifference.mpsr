@@ -40,7 +40,6 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -116,16 +115,16 @@
       <node concept="3clFbS" id="DYlgnA$L13" role="3clF47">
         <node concept="XkiVB" id="DYlgnA$L14" role="3cqZAp">
           <ref role="37wK5l" node="DYlgnA$tJ6" resolve="NodeDifference" />
-          <node concept="3cpWs2" id="DYlgnA$L15" role="37wK5m">
+          <node concept="37vLTw" id="DYlgnA$L15" role="37wK5m">
             <ref role="3cqZAo" node="DYlgnA$L0U" resolve="expected" />
           </node>
-          <node concept="3cpWs2" id="DYlgnA$L16" role="37wK5m">
+          <node concept="37vLTw" id="DYlgnA$L16" role="37wK5m">
             <ref role="3cqZAo" node="DYlgnA$L0W" resolve="actual" />
           </node>
-          <node concept="3cpWs2" id="DYlgnA$L17" role="37wK5m">
+          <node concept="37vLTw" id="DYlgnA$L17" role="37wK5m">
             <ref role="3cqZAo" node="DYlgnA$L0Y" resolve="expectedName" />
           </node>
-          <node concept="3cpWs2" id="DYlgnA$L18" role="37wK5m">
+          <node concept="37vLTw" id="DYlgnA$L18" role="37wK5m">
             <ref role="3cqZAo" node="DYlgnA$L10" resolve="actualName" />
           </node>
         </node>
@@ -181,7 +180,7 @@
                         <property role="Xl_RC" value="=" />
                       </node>
                       <node concept="3cpWs3" id="6fymoI4XswH" role="3uHU7B">
-                        <node concept="3cpWs2" id="6fymoI4XswI" role="3uHU7w">
+                        <node concept="37vLTw" id="6fymoI4XswI" role="3uHU7w">
                           <ref role="3cqZAo" node="DYlgnA$Lyc" resolve="expectedName" />
                         </node>
                         <node concept="Xl_RD" id="6fymoI4XswJ" role="3uHU7B">
@@ -197,7 +196,7 @@
                     <property role="Xl_RC" value=", " />
                   </node>
                 </node>
-                <node concept="3cpWs2" id="6fymoI4XswM" role="3uHU7w">
+                <node concept="37vLTw" id="6fymoI4XswM" role="3uHU7w">
                   <ref role="3cqZAo" node="DYlgnA$Lye" resolve="actualName" />
                 </node>
               </node>

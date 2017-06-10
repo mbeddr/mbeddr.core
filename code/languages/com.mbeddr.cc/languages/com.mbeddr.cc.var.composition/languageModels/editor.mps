@@ -135,10 +135,10 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -369,7 +369,7 @@
           <node concept="3clFbF" id="5be2k4jTtrr" role="3cqZAp">
             <node concept="2OqwBi" id="5be2k4jTwah" role="3clFbG">
               <node concept="0IXxy" id="5be2k4jTtrq" role="2Oq$k0" />
-              <node concept="1PgB_6" id="5be2k4jTJUi" role="2OqNvi" />
+              <node concept="3YRAZt" id="5be2k4jTJUi" role="2OqNvi" />
             </node>
           </node>
         </node>

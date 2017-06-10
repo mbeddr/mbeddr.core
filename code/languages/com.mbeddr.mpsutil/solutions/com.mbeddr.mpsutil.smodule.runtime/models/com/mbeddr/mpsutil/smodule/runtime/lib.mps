@@ -2,12 +2,12 @@
 <model ref="r:eb0002ce-67d6-41e9-b36c-361c22b4de97(com.mbeddr.mpsutil.smodule.runtime.lib)">
   <persistence version="9" />
   <languages>
-    <use id="fc9fa859-9e8c-4b5f-8a23-d3ba09424d0f" name="com.mbeddr.mpsutil.uniquenames" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="fc9fa859-9e8c-4b5f-8a23-d3ba09424d0f" name="com.mbeddr.mpsutil.uniquenames" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -24,6 +24,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
+    <import index="pa15" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.persistence(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -55,6 +56,9 @@
       <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
@@ -189,6 +193,13 @@
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -705,20 +716,56 @@
                       <node concept="3cpWs8" id="4rHwORqAFTt" role="3cqZAp">
                         <node concept="3cpWsn" id="4rHwORqAFTu" role="3cpWs9">
                           <property role="TrG5h" value="model" />
+                          <node concept="10Nm6u" id="4oSomgtPOmN" role="33vP2m" />
                           <node concept="3uibUv" id="4rHwORqAFTv" role="1tU5fm">
                             <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
                           </node>
-                          <node concept="2YIFZM" id="4rHwORqAFTw" role="33vP2m">
-                            <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                            <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot,org.jetbrains.mps.openapi.persistence.ModelFactory):org.jetbrains.mps.openapi.model.EditableSModel" resolve="createModelWithAdjustments" />
-                            <node concept="37vLTw" id="4rHwORqAFTx" role="37wK5m">
-                              <ref role="3cqZAo" node="7Ynnt_OidYh" resolve="name" />
+                        </node>
+                      </node>
+                      <node concept="SfApY" id="4oSomgtPHLA" role="3cqZAp">
+                        <node concept="3clFbS" id="4oSomgtPHLC" role="SfCbr">
+                          <node concept="3clFbF" id="4oSomgtPI$O" role="3cqZAp">
+                            <node concept="37vLTI" id="4oSomgtPI$Q" role="3clFbG">
+                              <node concept="2YIFZM" id="4oSomgtPnGP" role="37vLTx">
+                                <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot,org.jetbrains.mps.openapi.persistence.ModelFactoryType):org.jetbrains.mps.openapi.model.EditableSModel" resolve="createModelWithAdjustments" />
+                                <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+                                <node concept="37vLTw" id="4oSomgtPnGQ" role="37wK5m">
+                                  <ref role="3cqZAo" node="7Ynnt_OidYh" resolve="name" />
+                                </node>
+                                <node concept="37vLTw" id="4oSomgtPnGR" role="37wK5m">
+                                  <ref role="3cqZAo" node="7Ynnt_OikS1" resolve="mr" />
+                                </node>
+                                <node concept="2OqwBi" id="4oSomgtPo86" role="37wK5m">
+                                  <node concept="37vLTw" id="4oSomgtPnGS" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="7Ynnt_Oi8MD" resolve="modelFactory" />
+                                  </node>
+                                  <node concept="liA8E" id="4oSomgtPoqE" role="2OqNvi">
+                                    <ref role="37wK5l" to="dush:~ModelFactory.getType():org.jetbrains.mps.openapi.persistence.ModelFactoryType" resolve="getType" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="37vLTw" id="4oSomgtPI$U" role="37vLTJ">
+                                <ref role="3cqZAo" node="4rHwORqAFTu" resolve="model" />
+                              </node>
                             </node>
-                            <node concept="37vLTw" id="4rHwORqAFTy" role="37wK5m">
-                              <ref role="3cqZAo" node="7Ynnt_OikS1" resolve="mr" />
+                          </node>
+                        </node>
+                        <node concept="TDmWw" id="4oSomgtPHLD" role="TEbGg">
+                          <node concept="3cpWsn" id="4oSomgtPHLF" role="TDEfY">
+                            <property role="TrG5h" value="e" />
+                            <node concept="3uibUv" id="4oSomgtPMpL" role="1tU5fm">
+                              <ref role="3uigEE" to="pa15:~ModelCannotBeCreatedException" resolve="ModelCannotBeCreatedException" />
                             </node>
-                            <node concept="37vLTw" id="4rHwORqAFTz" role="37wK5m">
-                              <ref role="3cqZAo" node="7Ynnt_Oi8MD" resolve="modelFactory" />
+                          </node>
+                          <node concept="3clFbS" id="4oSomgtPHLJ" role="TDEfX">
+                            <node concept="RRSsy" id="42VTAcDfnNY" role="3cqZAp">
+                              <property role="RRSoG" value="error" />
+                              <node concept="Xl_RD" id="4oSomgtPMRf" role="RRSoy">
+                                <property role="Xl_RC" value="Can't create model" />
+                              </node>
+                              <node concept="37vLTw" id="4oSomgtPMRh" role="RRSow">
+                                <ref role="3cqZAo" node="4oSomgtPHLF" resolve="e" />
+                              </node>
                             </node>
                           </node>
                         </node>

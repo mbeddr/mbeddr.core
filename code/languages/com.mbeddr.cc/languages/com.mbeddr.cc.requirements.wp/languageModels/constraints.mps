@@ -83,9 +83,12 @@
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -174,10 +177,12 @@
                 <node concept="3eOVzh" id="vRfru3oXvb" role="3clFbw">
                   <node concept="2OqwBi" id="vRfru3oXwl" role="3uHU7w">
                     <node concept="1PxgMI" id="vRfru3oXvZ" role="2Oq$k0">
-                      <ref role="1m5ApE" to="6pek:vRfru3oPfO" resolve="WPActualWork" />
                       <node concept="2OqwBi" id="vRfru3oXvz" role="1m5AlR">
                         <node concept="EsrRn" id="vRfru3oXve" role="2Oq$k0" />
                         <node concept="YBYNd" id="vRfru3oXvD" role="2OqNvi" />
+                      </node>
+                      <node concept="chp4Y" id="79i$vAY7hir" role="3oSUPX">
+                        <ref role="cht4Q" to="6pek:vRfru3oPfO" resolve="WPActualWork" />
                       </node>
                     </node>
                     <node concept="3TrcHB" id="vRfru3oXwr" role="2OqNvi">

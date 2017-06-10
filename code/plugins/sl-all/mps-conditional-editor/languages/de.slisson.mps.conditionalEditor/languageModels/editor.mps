@@ -68,7 +68,6 @@
         <reference id="1081339532145" name="keyMap" index="34QXea" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -90,10 +89,8 @@
   <node concept="24kQdi" id="2vJRo8gA3Du">
     <ref role="1XX52x" to="91fu:2vJRo8gA3oP" resolve="ConditionalConceptEditorDeclaration" />
     <node concept="3EZMnI" id="fG705JJ" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <property role="1cu_pB" value="0" />
       <node concept="3EZMnI" id="fG705JK" role="3EZMnx">
-        <property role="3EZMnw" value="false" />
         <property role="1cu_pB" value="0" />
         <node concept="3F2HdR" id="2gbCHSczkzO" role="3EZMnx">
           <property role="2czwfO" value="&amp;" />
@@ -151,10 +148,8 @@
         <node concept="2iRfu4" id="i2IxuR7" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="2vJRo8gAnk3" role="3EZMnx">
-        <property role="3EZMnw" value="false" />
         <node concept="3XFhqQ" id="2vJRo8gAnk4" role="3EZMnx" />
         <node concept="3EZMnI" id="2vJRo8gAnk5" role="3EZMnx">
-          <property role="3EZMnw" value="true" />
           <node concept="3EZMnI" id="7klUZA6V6ye" role="3EZMnx">
             <node concept="VPM3Z" id="7klUZA6V6yf" role="3F10Kt">
               <property role="VOm3f" value="false" />
@@ -174,7 +169,6 @@
             </node>
           </node>
           <node concept="3EZMnI" id="2vJRo8gAnk8" role="3EZMnx">
-            <property role="3EZMnw" value="false" />
             <node concept="3XFhqQ" id="2vJRo8gAnk9" role="3EZMnx" />
             <node concept="3F1sOY" id="2vJRo8gAnka" role="3EZMnx">
               <ref role="1NtTu8" to="91fu:2vJRo8gAnbT" resolve="condition" />
@@ -201,10 +195,8 @@
         <node concept="2iRfu4" id="2vJRo8gAnki" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="fG7Pr3T" role="3EZMnx">
-        <property role="3EZMnw" value="false" />
         <node concept="3XFhqQ" id="hGQ3u$B" role="3EZMnx" />
         <node concept="3EZMnI" id="fG7Q63p" role="3EZMnx">
-          <property role="3EZMnw" value="true" />
           <node concept="3F0ifn" id="2vJRo8gAnmw" role="3EZMnx" />
           <node concept="3F0ifn" id="fG7R0q3" role="3EZMnx">
             <property role="3F0ifm" value="node cell layout:" />
@@ -213,7 +205,6 @@
             </node>
           </node>
           <node concept="3EZMnI" id="fG7RyFU" role="3EZMnx">
-            <property role="3EZMnw" value="false" />
             <node concept="3XFhqQ" id="hGQ3v6l" role="3EZMnx" />
             <node concept="3F1sOY" id="gqRMgYh" role="3EZMnx">
               <property role="1$x2rV" value="&lt;choose cell model&gt;" />
@@ -242,10 +233,8 @@
         <node concept="2iRfu4" id="i2IxuTO" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="fGbFJ$Q" role="3EZMnx">
-        <property role="3EZMnw" value="false" />
         <node concept="3XFhqQ" id="hGQ3vSS" role="3EZMnx" />
         <node concept="3EZMnI" id="fGbFJ$S" role="3EZMnx">
-          <property role="3EZMnw" value="true" />
           <node concept="3F0ifn" id="fGbFJ$T" role="3EZMnx">
             <node concept="VPM3Z" id="hEU$Php" role="3F10Kt">
               <property role="VOm3f" value="false" />
@@ -259,7 +248,6 @@
             </node>
           </node>
           <node concept="3EZMnI" id="fGbFJ$V" role="3EZMnx">
-            <property role="3EZMnw" value="false" />
             <node concept="3XFhqQ" id="hGQ3wyD" role="3EZMnx" />
             <node concept="3F1sOY" id="fGbFJ$X" role="3EZMnx">
               <property role="1$x2rV" value="&lt;choose cell model&gt;" />

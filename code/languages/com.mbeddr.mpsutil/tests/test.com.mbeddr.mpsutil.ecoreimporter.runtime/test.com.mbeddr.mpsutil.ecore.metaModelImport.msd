@@ -15,8 +15,8 @@
     <dependency reexport="false">d08b2078-ada5-40fa-a3c5-d721088dc626(com.mbeddr.mpsutil.ecore.testing)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:77948de3-6ef9-452d-b392-d01403e4086f:com.mbeddr.mpsutil.ecore" version="0" />
-    <language slang="l:d08b2078-ada5-40fa-a3c5-d721088dc626:com.mbeddr.mpsutil.ecore.testing" version="0" />
+    <language slang="l:77948de3-6ef9-452d-b392-d01403e4086f:com.mbeddr.mpsutil.ecoreimporter.util" version="0" />
+    <language slang="l:d08b2078-ada5-40fa-a3c5-d721088dc626:com.mbeddr.mpsutil.ecoreimporter.testing" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
     <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />

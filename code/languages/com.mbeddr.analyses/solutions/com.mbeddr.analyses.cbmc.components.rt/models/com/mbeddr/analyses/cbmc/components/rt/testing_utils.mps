@@ -82,14 +82,12 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -217,7 +215,7 @@
               <node concept="37vLTw" id="5KvlJsgh9pD" role="37wK5m">
                 <ref role="3cqZAo" node="5KvlJsgh9q$" resolve="model" />
               </node>
-              <node concept="3cpWs2" id="5KvlJsgh9pE" role="37wK5m">
+              <node concept="37vLTw" id="5KvlJsgh9pE" role="37wK5m">
                 <ref role="3cqZAo" node="5KvlJsgh9qA" resolve="implModuleName" />
               </node>
             </node>
@@ -234,7 +232,7 @@
                   </node>
                   <node concept="2OqwBi" id="5KvlJsgh9pI" role="33vP2m">
                     <node concept="2OqwBi" id="5KvlJsgh9pJ" role="2Oq$k0">
-                      <node concept="3cpWsa" id="5KvlJsgh9pK" role="2Oq$k0">
+                      <node concept="37vLTw" id="5KvlJsgh9pK" role="2Oq$k0">
                         <ref role="3cqZAo" node="5KvlJsgh9pA" resolve="im" />
                       </node>
                       <node concept="2Rf3mk" id="5KvlJsgh9pL" role="2OqNvi">
@@ -251,7 +249,7 @@
                           <node concept="3clFbF" id="5KvlJsgh9pR" role="3cqZAp">
                             <node concept="2OqwBi" id="5KvlJsgh9pS" role="3clFbG">
                               <node concept="2OqwBi" id="5KvlJsgh9pT" role="2Oq$k0">
-                                <node concept="3cpWs2" id="5KvlJsgh9pU" role="2Oq$k0">
+                                <node concept="37vLTw" id="5KvlJsgh9pU" role="2Oq$k0">
                                   <ref role="3cqZAo" node="5KvlJsgh9pY" resolve="it" />
                                 </node>
                                 <node concept="3TrcHB" id="5KvlJsgh9pV" role="2OqNvi">
@@ -260,7 +258,7 @@
                               </node>
                               <node concept="liA8E" id="5KvlJsgh9pW" role="2OqNvi">
                                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                                <node concept="3cpWs2" id="5KvlJsgh9pX" role="37wK5m">
+                                <node concept="37vLTw" id="5KvlJsgh9pX" role="37wK5m">
                                   <ref role="3cqZAo" node="5KvlJsgh9qC" resolve="componentName" />
                                 </node>
                               </node>
@@ -474,7 +472,7 @@
               <node concept="37vLTw" id="5KvlJsghgzh" role="37wK5m">
                 <ref role="3cqZAo" node="5KvlJsghg$x" resolve="model" />
               </node>
-              <node concept="3cpWs2" id="5KvlJsghgzi" role="37wK5m">
+              <node concept="37vLTw" id="5KvlJsghgzi" role="37wK5m">
                 <ref role="3cqZAo" node="5KvlJsghg$z" resolve="implModuleName" />
               </node>
             </node>
@@ -490,7 +488,7 @@
                     <ref role="2I9WkF" to="v7ag:3TmmsQkCzn9" resolve="Component" />
                   </node>
                   <node concept="2OqwBi" id="5KvlJsghgzm" role="33vP2m">
-                    <node concept="3cpWsa" id="5KvlJsghgzn" role="2Oq$k0">
+                    <node concept="37vLTw" id="5KvlJsghgzn" role="2Oq$k0">
                       <ref role="3cqZAo" node="5KvlJsghgze" resolve="im" />
                     </node>
                     <node concept="2Rf3mk" id="5KvlJsghgzo" role="2OqNvi">
@@ -519,7 +517,7 @@
                           <node concept="3clFbF" id="5KvlJsghgzz" role="3cqZAp">
                             <node concept="2OqwBi" id="5KvlJsghgz$" role="3clFbG">
                               <node concept="2OqwBi" id="5KvlJsghgz_" role="2Oq$k0">
-                                <node concept="3cpWs2" id="5KvlJsghgzA" role="2Oq$k0">
+                                <node concept="37vLTw" id="5KvlJsghgzA" role="2Oq$k0">
                                   <ref role="3cqZAo" node="5KvlJsghgzE" resolve="it" />
                                 </node>
                                 <node concept="3TrcHB" id="5KvlJsghgzB" role="2OqNvi">
@@ -528,7 +526,7 @@
                               </node>
                               <node concept="liA8E" id="5KvlJsghgzC" role="2OqNvi">
                                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                                <node concept="3cpWs2" id="5KvlJsghgzD" role="37wK5m">
+                                <node concept="37vLTw" id="5KvlJsghgzD" role="37wK5m">
                                   <ref role="3cqZAo" node="5KvlJsghg$_" resolve="componentName" />
                                 </node>
                               </node>

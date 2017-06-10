@@ -61,8 +61,6 @@
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
-        <property id="1073389446426" name="gridLayout" index="3EZMnz" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -115,8 +113,6 @@
   <node concept="24kQdi" id="7uOgiTbtke">
     <ref role="1XX52x" to="hfvq:7uOgiTbtk8" resolve="TreeCell" />
     <node concept="3EZMnI" id="fGPlTr0" role="6VMZX">
-      <property role="3EZMnw" value="true" />
-      <property role="3EZMnz" value="false" />
       <node concept="PMmxH" id="hF4_9s_" role="3EZMnx">
         <ref role="PMmxG" to="tpc5:hF4ssnw" resolve="_CellModel_Common" />
       </node>
@@ -130,8 +126,6 @@
         <ref role="1k5W1q" to="tpc5:hF4yUZ8" resolve="header" />
       </node>
       <node concept="3EZMnI" id="fGPAY2i" role="3EZMnx">
-        <property role="3EZMnw" value="true" />
-        <property role="3EZMnz" value="true" />
         <node concept="VPM3Z" id="hEU$PEH" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>

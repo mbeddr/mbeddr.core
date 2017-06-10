@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2d2645ad-14bb-4c7e-b57f-e39dbec743b7(com.mbeddr.mpsutil.lantest.assertions.sandbox.harness)">
+<model ref="r:2d2645ad-14bb-4c7e-b57f-e39dbec743b7(com.mbeddr.mpsutil.lantest.assertions.sandbox.harness)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
@@ -53,7 +53,7 @@
         <property id="5722030627681373924" name="maximumNumberOfTries" index="13Gz9I" />
         <property id="5722030627681465498" name="maximalDepth" index="13GOwg" />
         <property id="3642470604912183108" name="cloneOriginalNodeRatio" index="1s6Q3N" />
-        <property id="4757199478771080223" name="deleteCorrectRoots" index="3zPyIB" />
+        <property id="4757199478771080223" name="deleteCheckedRoots" index="3zPyIB" />
         <property id="4757199478771080194" name="checkGeneratedCode" index="3zPyIU" />
         <property id="4757199478771080181" name="checkEditor" index="3zPyLd" />
         <child id="3465332537548484940" name="conceptChooser" index="1emjp" />

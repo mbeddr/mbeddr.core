@@ -208,9 +208,9 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -406,9 +406,9 @@
         <node concept="1QHqEK" id="77gEP6zyiWo" role="3cqZAp">
           <node concept="1QHqEC" id="77gEP6zyiWq" role="1QHqEI">
             <node concept="3clFbS" id="77gEP6zyiWs" role="1bW5cS">
-              <node concept="34ab3g" id="4a$qj9s4rLr" role="3cqZAp">
-                <property role="35gtTG" value="info" />
-                <node concept="3cpWs3" id="4a$qj9s4rVW" role="34bqiv">
+              <node concept="RRSsy" id="42VTAcDfnOo" role="3cqZAp">
+                <property role="RRSoG" value="info" />
+                <node concept="3cpWs3" id="4a$qj9s4rVW" role="RRSoy">
                   <node concept="37vLTw" id="4a$qj9s4s2z" role="3uHU7w">
                     <ref role="3cqZAo" node="2bng37t0hfg" resolve="currentLanguage" />
                   </node>
@@ -585,7 +585,7 @@
                       <ref role="3B5MYn" to="sv0f:2bng37sXbGM" resolve="GlobalLanguageContainer" />
                     </node>
                     <node concept="3Tsc0h" id="7Ssz$kY9I4T" role="2OqNvi">
-                      <ref role="3TtcxE" to="sxyo:vzhXZP_pYM" />
+                      <ref role="3TtcxE" to="sxyo:vzhXZP_pYM" resolve="languages" />
                     </node>
                   </node>
                 </node>
@@ -1057,7 +1057,7 @@
                   <ref role="3cqZAo" node="2d55UFtkGVy" resolve="resourceBundleNode" />
                 </node>
                 <node concept="3Tsc0h" id="2d55UFtkGVH" role="2OqNvi">
-                  <ref role="3TtcxE" to="sxyo:vzhXZP_pZs" />
+                  <ref role="3TtcxE" to="sxyo:vzhXZP_pZs" resolve="keys" />
                 </node>
               </node>
               <node concept="1z4cxt" id="2d55UFtkGVI" role="2OqNvi">
@@ -1117,7 +1117,7 @@
                       <ref role="3cqZAo" node="2d55UFtkGVy" resolve="resourceBundleNode" />
                     </node>
                     <node concept="3Tsc0h" id="2d55UFtkGWh" role="2OqNvi">
-                      <ref role="3TtcxE" to="sxyo:vzhXZP_pZs" />
+                      <ref role="3TtcxE" to="sxyo:vzhXZP_pZs" resolve="keys" />
                     </node>
                   </node>
                   <node concept="TSZUe" id="2d55UFtkGWi" role="2OqNvi">
@@ -1983,7 +1983,7 @@
                       <ref role="3B5MYn" to="sv0f:2bng37sXbGM" resolve="GlobalLanguageContainer" />
                     </node>
                     <node concept="3Tsc0h" id="2bng37t0oVR" role="2OqNvi">
-                      <ref role="3TtcxE" to="sxyo:vzhXZP_pYM" />
+                      <ref role="3TtcxE" to="sxyo:vzhXZP_pYM" resolve="languages" />
                     </node>
                   </node>
                   <node concept="1uHKPH" id="2bng37t0hk3" role="2OqNvi" />
@@ -1993,9 +1993,9 @@
                 </node>
               </node>
             </node>
-            <node concept="34ab3g" id="2bng37t0qjX" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="2bng37t0rxq" role="34bqiv">
+            <node concept="RRSsy" id="42VTAcDfnO6" role="3cqZAp">
+              <property role="RRSoG" value="warn" />
+              <node concept="3cpWs3" id="2bng37t0rxq" role="RRSoy">
                 <node concept="37vLTw" id="2bng37t0rC8" role="3uHU7w">
                   <ref role="3cqZAo" node="2bng37t0hju" resolve="node" />
                 </node>

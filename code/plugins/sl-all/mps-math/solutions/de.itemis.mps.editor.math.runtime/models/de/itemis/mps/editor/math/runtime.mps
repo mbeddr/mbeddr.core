@@ -38,14 +38,10 @@
     <import index="4my4" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.sidetransform(MPS.Editor/)" />
     <import index="19h7" ref="r:c367b380-739b-4331-a16f-a542455fc0c8(de.itemis.mps.editor.math.editor)" />
     <import index="hhnx" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime(MPS.Editor/)" />
+    <import index="q4oi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellActions(MPS.Editor/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
-    <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
-      <concept id="8473566765275063380" name="de.slisson.mps.reflection.structure.ReflectionFieldAccess" flags="ng" index="1PnCL0">
-        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
-      </concept>
-    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="6029276237631252951" name="jetbrains.mps.lang.editor.structure.StyleAttributeReferenceExpression" flags="ng" index="1Z6Ecs">
         <reference id="6029276237631253682" name="attributeDeclaration" index="1Z6EpT" />
@@ -93,7 +89,7 @@
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
-        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat6" />
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
@@ -3218,16 +3214,16 @@
                 </node>
               </node>
               <node concept="3clFbC" id="rlw0PZJ_Ys" role="3clFbw">
-                <node concept="Rm8GO" id="rlw0PZJ_Yt" role="3uHU7w">
-                  <ref role="1Px2BO" to="exr9:~CellSide" resolve="CellSide" />
-                  <ref role="Rm8GQ" to="exr9:~CellSide.LEFT" resolve="LEFT" />
+                <node concept="Rm8GO" id="5YUK$g2eqxW" role="3uHU7w">
+                  <ref role="Rm8GQ" to="q4oi:~SideTransformSubstituteInfo$Side.LEFT" resolve="LEFT" />
+                  <ref role="1Px2BO" to="q4oi:~SideTransformSubstituteInfo$Side" resolve="SideTransformSubstituteInfo.Side" />
                 </node>
                 <node concept="2OqwBi" id="rlw0PZJ_Yu" role="3uHU7B">
                   <node concept="2GrUjf" id="7EUu569tFrW" role="2Oq$k0">
                     <ref role="2Gs0qQ" node="rlw0PZIYbB" resolve="sthint" />
                   </node>
-                  <node concept="1PnCL0" id="MhtcQF6BOU" role="2OqNvi">
-                    <ref role="2Oxat5" to="4my4:~EditorCell_STHint.myOldSide" resolve="myOldSide" />
+                  <node concept="liA8E" id="5YUK$g2ebez" role="2OqNvi">
+                    <ref role="37wK5l" to="4my4:~EditorCell_STHint.getSide():jetbrains.mps.nodeEditor.cellActions.SideTransformSubstituteInfo$Side" resolve="getSide" />
                   </node>
                 </node>
               </node>
@@ -3343,7 +3339,7 @@
                             <ref role="3cqZAo" node="20OswHDPlqC" resolve="bounds" />
                           </node>
                           <node concept="2OwXpG" id="70CVChR3Uc$" role="2OqNvi">
-                            <ref role="2Oxat6" to="z60i:~Rectangle.x" resolve="x" />
+                            <ref role="2Oxat5" to="z60i:~Rectangle.x" resolve="x" />
                           </node>
                         </node>
                         <node concept="2OqwBi" id="70CVChR3Uc_" role="3uHU7w">
@@ -3351,7 +3347,7 @@
                             <ref role="3cqZAo" node="20OswHDPlqC" resolve="bounds" />
                           </node>
                           <node concept="2OwXpG" id="70CVChR3UcB" role="2OqNvi">
-                            <ref role="2Oxat6" to="z60i:~Rectangle.width" resolve="width" />
+                            <ref role="2Oxat5" to="z60i:~Rectangle.width" resolve="width" />
                           </node>
                         </node>
                       </node>
@@ -3374,7 +3370,7 @@
                       <ref role="3cqZAo" node="20OswHDPlqC" resolve="bounds" />
                     </node>
                     <node concept="2OwXpG" id="70CVChR3yhU" role="2OqNvi">
-                      <ref role="2Oxat6" to="z60i:~Rectangle.x" resolve="x" />
+                      <ref role="2Oxat5" to="z60i:~Rectangle.x" resolve="x" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="70CVChR3Auh" role="3uHU7w">
@@ -3382,7 +3378,7 @@
                       <ref role="3cqZAo" node="20OswHDPlqC" resolve="bounds" />
                     </node>
                     <node concept="2OwXpG" id="70CVChR3FTj" role="2OqNvi">
-                      <ref role="2Oxat6" to="z60i:~Rectangle.width" resolve="width" />
+                      <ref role="2Oxat5" to="z60i:~Rectangle.width" resolve="width" />
                     </node>
                   </node>
                 </node>
@@ -3403,7 +3399,7 @@
                             <ref role="3cqZAo" node="20OswHDPlqC" resolve="bounds" />
                           </node>
                           <node concept="2OwXpG" id="70CVChR4qWi" role="2OqNvi">
-                            <ref role="2Oxat6" to="z60i:~Rectangle.y" resolve="y" />
+                            <ref role="2Oxat5" to="z60i:~Rectangle.y" resolve="y" />
                           </node>
                         </node>
                         <node concept="2OqwBi" id="70CVChR4qWj" role="3uHU7w">
@@ -3411,7 +3407,7 @@
                             <ref role="3cqZAo" node="20OswHDPlqC" resolve="bounds" />
                           </node>
                           <node concept="2OwXpG" id="70CVChR4qWl" role="2OqNvi">
-                            <ref role="2Oxat6" to="z60i:~Rectangle.height" resolve="height" />
+                            <ref role="2Oxat5" to="z60i:~Rectangle.height" resolve="height" />
                           </node>
                         </node>
                       </node>
@@ -3434,7 +3430,7 @@
                       <ref role="3cqZAo" node="20OswHDPlqC" resolve="bounds" />
                     </node>
                     <node concept="2OwXpG" id="70CVChR42Ns" role="2OqNvi">
-                      <ref role="2Oxat6" to="z60i:~Rectangle.y" resolve="y" />
+                      <ref role="2Oxat5" to="z60i:~Rectangle.y" resolve="y" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="70CVChR47pS" role="3uHU7w">
@@ -3442,7 +3438,7 @@
                       <ref role="3cqZAo" node="20OswHDPlqC" resolve="bounds" />
                     </node>
                     <node concept="2OwXpG" id="70CVChR48gC" role="2OqNvi">
-                      <ref role="2Oxat6" to="z60i:~Rectangle.height" resolve="height" />
+                      <ref role="2Oxat5" to="z60i:~Rectangle.height" resolve="height" />
                     </node>
                   </node>
                 </node>
@@ -11770,7 +11766,7 @@
                 <ref role="3cqZAo" node="7UiI8OoesBY" resolve="dimensions" />
               </node>
               <node concept="2OwXpG" id="7UiI8OoeBoD" role="2OqNvi">
-                <ref role="2Oxat6" node="7UiI8Oo4zw3" resolve="width" />
+                <ref role="2Oxat5" node="7UiI8Oo4zw3" resolve="width" />
               </node>
             </node>
             <node concept="2OqwBi" id="7UiI8OoexSe" role="37vLTJ">
@@ -11778,7 +11774,7 @@
                 <ref role="3cqZAo" node="7UiI8Ooe5c5" resolve="bounds" />
               </node>
               <node concept="2OwXpG" id="7UiI8Ooe_2X" role="2OqNvi">
-                <ref role="2Oxat6" to="fbzs:~Rectangle2D$Double.width" resolve="width" />
+                <ref role="2Oxat5" to="fbzs:~Rectangle2D$Double.width" resolve="width" />
               </node>
             </node>
           </node>
@@ -11790,7 +11786,7 @@
                 <ref role="3cqZAo" node="7UiI8OoesBY" resolve="dimensions" />
               </node>
               <node concept="2OwXpG" id="7UiI8OoeFZc" role="2OqNvi">
-                <ref role="2Oxat6" node="7UiI8Oo4zEl" resolve="height" />
+                <ref role="2Oxat5" node="7UiI8Oo4zEl" resolve="height" />
               </node>
             </node>
             <node concept="2OqwBi" id="7UiI8OoeClX" role="37vLTJ">
@@ -11798,7 +11794,7 @@
                 <ref role="3cqZAo" node="7UiI8Ooe5c5" resolve="bounds" />
               </node>
               <node concept="2OwXpG" id="7UiI8OoeDqX" role="2OqNvi">
-                <ref role="2Oxat6" to="fbzs:~Rectangle2D$Double.height" resolve="height" />
+                <ref role="2Oxat5" to="fbzs:~Rectangle2D$Double.height" resolve="height" />
               </node>
             </node>
           </node>
@@ -12059,7 +12055,7 @@
                 <ref role="3cqZAo" node="7UiI8Ooe5c5" resolve="bounds" />
               </node>
               <node concept="2OwXpG" id="7UiI8Oof0Uj" role="2OqNvi">
-                <ref role="2Oxat6" to="fbzs:~Rectangle2D$Double.x" resolve="x" />
+                <ref role="2Oxat5" to="fbzs:~Rectangle2D$Double.x" resolve="x" />
               </node>
             </node>
           </node>
@@ -12086,7 +12082,7 @@
                 <ref role="3cqZAo" node="7UiI8Ooe5c5" resolve="bounds" />
               </node>
               <node concept="2OwXpG" id="7UiI8Oof5kD" role="2OqNvi">
-                <ref role="2Oxat6" to="fbzs:~Rectangle2D$Double.y" resolve="y" />
+                <ref role="2Oxat5" to="fbzs:~Rectangle2D$Double.y" resolve="y" />
               </node>
             </node>
           </node>
@@ -12113,7 +12109,7 @@
                 <ref role="3cqZAo" node="7UiI8Ooe5c5" resolve="bounds" />
               </node>
               <node concept="2OwXpG" id="7UiI8Oof9LE" role="2OqNvi">
-                <ref role="2Oxat6" to="fbzs:~Rectangle2D$Double.width" resolve="width" />
+                <ref role="2Oxat5" to="fbzs:~Rectangle2D$Double.width" resolve="width" />
               </node>
             </node>
           </node>
@@ -12140,7 +12136,7 @@
                 <ref role="3cqZAo" node="7UiI8Ooe5c5" resolve="bounds" />
               </node>
               <node concept="2OwXpG" id="7UiI8Oofekr" role="2OqNvi">
-                <ref role="2Oxat6" to="fbzs:~Rectangle2D$Double.height" resolve="height" />
+                <ref role="2Oxat5" to="fbzs:~Rectangle2D$Double.height" resolve="height" />
               </node>
             </node>
           </node>
@@ -12167,7 +12163,7 @@
                 <ref role="3cqZAo" node="7UiI8Ooe5c5" resolve="bounds" />
               </node>
               <node concept="2OwXpG" id="7UiI8OofiZO" role="2OqNvi">
-                <ref role="2Oxat6" to="fbzs:~Rectangle2D$Double.x" resolve="x" />
+                <ref role="2Oxat5" to="fbzs:~Rectangle2D$Double.x" resolve="x" />
               </node>
             </node>
           </node>
@@ -12194,7 +12190,7 @@
                 <ref role="3cqZAo" node="7UiI8Ooe5c5" resolve="bounds" />
               </node>
               <node concept="2OwXpG" id="7UiI8Oofns0" role="2OqNvi">
-                <ref role="2Oxat6" to="fbzs:~Rectangle2D$Double.y" resolve="y" />
+                <ref role="2Oxat5" to="fbzs:~Rectangle2D$Double.y" resolve="y" />
               </node>
             </node>
           </node>
@@ -12221,7 +12217,7 @@
                 <ref role="3cqZAo" node="7UiI8Ooe5c5" resolve="bounds" />
               </node>
               <node concept="2OwXpG" id="7UiI8OofsX5" role="2OqNvi">
-                <ref role="2Oxat6" to="fbzs:~Rectangle2D$Double.width" resolve="width" />
+                <ref role="2Oxat5" to="fbzs:~Rectangle2D$Double.width" resolve="width" />
               </node>
             </node>
           </node>
@@ -12248,7 +12244,7 @@
                 <ref role="3cqZAo" node="7UiI8Ooe5c5" resolve="bounds" />
               </node>
               <node concept="2OwXpG" id="7UiI8OofxPN" role="2OqNvi">
-                <ref role="2Oxat6" to="fbzs:~Rectangle2D$Double.height" resolve="height" />
+                <ref role="2Oxat5" to="fbzs:~Rectangle2D$Double.height" resolve="height" />
               </node>
             </node>
           </node>

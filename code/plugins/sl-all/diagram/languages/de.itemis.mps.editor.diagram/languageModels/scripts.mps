@@ -134,8 +134,8 @@
       </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -160,7 +160,6 @@
       <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
         <reference id="1139867957129" name="concept" index="1_rbq0" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -174,6 +173,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -796,7 +796,7 @@
                   <ref role="3Tt5mk" to="2qld:7sHDEc2ShEd" resolve="targetNode" />
                 </node>
               </node>
-              <node concept="1PgB_6" id="6clvLV2tooB" role="2OqNvi" />
+              <node concept="3YRAZt" id="6clvLV2tooB" role="2OqNvi" />
             </node>
           </node>
           <node concept="3clFbF" id="6clvLV2tozr" role="3cqZAp">
@@ -807,7 +807,7 @@
                   <ref role="3Tt5mk" to="2qld:7sHDEc2ShEf" resolve="targetPort" />
                 </node>
               </node>
-              <node concept="1PgB_6" id="6clvLV2tpBf" role="2OqNvi" />
+              <node concept="3YRAZt" id="6clvLV2tpBf" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -952,7 +952,7 @@
                   <ref role="3Tt5mk" to="2qld:7sHDEc2ShEd" resolve="targetNode" />
                 </node>
               </node>
-              <node concept="1PgB_6" id="6clvLV2trNv" role="2OqNvi" />
+              <node concept="3YRAZt" id="6clvLV2trNv" role="2OqNvi" />
             </node>
           </node>
           <node concept="3clFbF" id="6clvLV2trNw" role="3cqZAp">
@@ -963,7 +963,7 @@
                   <ref role="3Tt5mk" to="2qld:7sHDEc2ShEf" resolve="targetPort" />
                 </node>
               </node>
-              <node concept="1PgB_6" id="6clvLV2trN_" role="2OqNvi" />
+              <node concept="3YRAZt" id="6clvLV2trN_" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -1018,7 +1018,6 @@
                 <ref role="ehGHo" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
               </node>
               <node concept="1PxgMI" id="6rPpQ1NGWRx" role="33vP2m">
-                <ref role="1m5ApE" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
                 <node concept="1eOMI4" id="6rPpQ1NGVAW" role="1m5AlR">
                   <node concept="10QFUN" id="6rPpQ1NGVAT" role="1eOMHV">
                     <node concept="3Tqbb2" id="6rPpQ1NGVGF" role="10QFUM" />
@@ -1029,6 +1028,9 @@
                       </node>
                     </node>
                   </node>
+                </node>
+                <node concept="chp4Y" id="1k1VwvtPrIp" role="3oSUPX">
+                  <ref role="cht4Q" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
                 </node>
               </node>
             </node>
@@ -1315,7 +1317,7 @@
                   <ref role="3Tt5mk" to="2qld:4s$H8QXll4M" resolve="label" />
                 </node>
               </node>
-              <node concept="1PgB_6" id="6rPpQ1NKv5v" role="2OqNvi" />
+              <node concept="3YRAZt" id="6rPpQ1NKv5v" role="2OqNvi" />
             </node>
           </node>
         </node>

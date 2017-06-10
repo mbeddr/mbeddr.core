@@ -133,9 +133,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
@@ -464,10 +467,12 @@
                       <node concept="2OqwBi" id="5hi7ucOrMC_" role="3uHU7B">
                         <node concept="2OqwBi" id="5hi7ucOrMCA" role="2Oq$k0">
                           <node concept="1PxgMI" id="5hi7ucOrMCB" role="2Oq$k0">
-                            <ref role="1m5ApE" to="llb3:5hi7ucOryWz" resolve="NondetChoice" />
                             <node concept="2OqwBi" id="5hi7ucOrMCC" role="1m5AlR">
                               <node concept="pncrf" id="5hi7ucOrMCD" role="2Oq$k0" />
                               <node concept="1mfA1w" id="5hi7ucOrMCE" role="2OqNvi" />
+                            </node>
+                            <node concept="chp4Y" id="79i$vAY7sl0" role="3oSUPX">
+                              <ref role="cht4Q" to="llb3:5hi7ucOryWz" resolve="NondetChoice" />
                             </node>
                           </node>
                           <node concept="3Tsc0h" id="5hi7ucOrMCF" role="2OqNvi">

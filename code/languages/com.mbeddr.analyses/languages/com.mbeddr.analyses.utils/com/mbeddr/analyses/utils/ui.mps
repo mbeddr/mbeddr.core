@@ -112,7 +112,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -214,7 +213,7 @@
             <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
             <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             <node concept="10Nm6u" id="3kLBXRrt369" role="37wK5m" />
-            <node concept="3cpWs2" id="3kLBXRrt36a" role="37wK5m">
+            <node concept="37vLTw" id="3kLBXRrt36a" role="37wK5m">
               <ref role="3cqZAo" node="3kLBXRrt36d" resolve="message" />
             </node>
             <node concept="37vLTw" id="3kLBXRrtf4F" role="37wK5m">

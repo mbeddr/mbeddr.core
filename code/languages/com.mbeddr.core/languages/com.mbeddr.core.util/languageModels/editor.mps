@@ -524,8 +524,8 @@
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
@@ -3559,7 +3559,9 @@
                         <node concept="2OqwBi" id="1M41OHt_SP0" role="3uHU7w">
                           <node concept="2OqwBi" id="1M41OHt_IMF" role="2Oq$k0">
                             <node concept="1PxgMI" id="1M41OHt_Hrw" role="2Oq$k0">
-                              <ref role="1m5ApE" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                              <node concept="chp4Y" id="79i$vAY60lK" role="3oSUPX">
+                                <ref role="cht4Q" to="k146:1lBH0hH6vd4" resolve="DataLoggerDeclaration" />
+                              </node>
                               <node concept="2OqwBi" id="1M41OHt_CRF" role="1m5AlR">
                                 <node concept="2r2w_c" id="1M41OHt_CIN" role="2Oq$k0" />
                                 <node concept="1mfA1w" id="1M41OHt_ESR" role="2OqNvi" />
@@ -5216,7 +5218,9 @@
               <node concept="3cpWs6" id="5Xsg2EBpPwJ" role="3cqZAp">
                 <node concept="2OqwBi" id="3CfTFHQnhf5" role="3cqZAk">
                   <node concept="1PxgMI" id="3CfTFHQngOo" role="2Oq$k0">
-                    <ref role="1m5ApE" to="c4fa:5Xsg2EBpBVN" resolve="IStatmentListContainer" />
+                    <node concept="chp4Y" id="79i$vAY60mW" role="3oSUPX">
+                      <ref role="cht4Q" to="c4fa:5Xsg2EBpBVN" resolve="IStatmentListContainer" />
+                    </node>
                     <node concept="2OqwBi" id="3CfTFHQnf61" role="1m5AlR">
                       <node concept="pncrf" id="3CfTFHQneMa" role="2Oq$k0" />
                       <node concept="1mfA1w" id="3CfTFHQng8n" role="2OqNvi" />
@@ -5239,7 +5243,9 @@
                   <node concept="10Nm6u" id="Dp4TemAOQp" role="3uHU7w" />
                   <node concept="2OqwBi" id="3CfTFHQnig7" role="3uHU7B">
                     <node concept="1PxgMI" id="3CfTFHQnig8" role="2Oq$k0">
-                      <ref role="1m5ApE" to="c4fa:5Xsg2EBpBVN" resolve="IStatmentListContainer" />
+                      <node concept="chp4Y" id="79i$vAY60lH" role="3oSUPX">
+                        <ref role="cht4Q" to="c4fa:5Xsg2EBpBVN" resolve="IStatmentListContainer" />
+                      </node>
                       <node concept="2OqwBi" id="3CfTFHQnig9" role="1m5AlR">
                         <node concept="pncrf" id="3CfTFHQniga" role="2Oq$k0" />
                         <node concept="1mfA1w" id="3CfTFHQnigb" role="2OqNvi" />
@@ -5406,7 +5412,9 @@
                     <ref role="ehGHo" to="k146:7kmhBx19Gz1" resolve="ErrorHandlingContext" />
                   </node>
                   <node concept="1PxgMI" id="3cUcim$4i$O" role="33vP2m">
-                    <ref role="1m5ApE" to="k146:7kmhBx19Gz1" resolve="ErrorHandlingContext" />
+                    <node concept="chp4Y" id="79i$vAY60n1" role="3oSUPX">
+                      <ref role="cht4Q" to="k146:7kmhBx19Gz1" resolve="ErrorHandlingContext" />
+                    </node>
                     <node concept="2OqwBi" id="3cUcim$4i$P" role="1m5AlR">
                       <node concept="7Obwk" id="3cUcim$4i$Y" role="2Oq$k0" />
                       <node concept="1mfA1w" id="3cUcim$4i$R" role="2OqNvi" />
@@ -5444,12 +5452,12 @@
       </node>
     </node>
   </node>
+  <node concept="3p36aQ" id="7ue4kw5DEF7">
+    <ref role="aqKnT" to="k146:7hIwPwVQD7C" resolve="ClosureStatementList" />
+  </node>
   <node concept="3p36aQ" id="143iErn7gSH">
     <property role="3GE5qa" value="reporting" />
     <ref role="aqKnT" to="k146:69lKCLH$b91" resolve="EmptyMessageDefinition" />
-  </node>
-  <node concept="3p36aQ" id="7ue4kw5DEF7">
-    <ref role="aqKnT" to="k146:7hIwPwVQD7C" resolve="ClosureStatementList" />
   </node>
 </model>
 

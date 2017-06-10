@@ -303,7 +303,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
-        <property id="779128492853935960" name="anchorTag" index="1K8rD$" />
         <property id="779128492853934523" name="cellId" index="1K8rM7" />
         <property id="779128492853699361" name="side" index="1Kfyot" />
       </concept>
@@ -362,9 +361,6 @@
     <node concept="2Q9Fgs" id="44jZT9pgTbH" role="2Q9xDr">
       <node concept="2Q9FjX" id="44jZT9pgTbI" role="2Q9FjI" />
     </node>
-  </node>
-  <node concept="2XOHcx" id="65E6xpGUrwD">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   </node>
   <node concept="N3F5e" id="7wwveJiPKl4">
     <property role="TrG5h" value="TestModule" />
@@ -2183,9 +2179,8 @@
     <node concept="3XIRFW" id="6rhOS_xtjvx" role="LiZbd">
       <node concept="c0U19" id="6rhOS_xtkSG" role="3XIRFZ">
         <node concept="3XIRFW" id="6rhOS_xtkSH" role="c0U17">
-          <node concept="1KehLL" id="6rhOS_xt$8v" role="lGtFl">
+          <node concept="1KehLL" id="7_zN_5SXLeP" role="lGtFl">
             <property role="1K8rM7" value="Constant_u338ov_d0" />
-            <property role="1K8rD$" value="default_RTransform" />
             <property role="1Kfyot" value="right" />
           </node>
         </node>
@@ -3707,6 +3702,9 @@
         <property role="2TTd_B" value="uint8" />
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="65E6xpGUrwD">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   </node>
 </model>
 

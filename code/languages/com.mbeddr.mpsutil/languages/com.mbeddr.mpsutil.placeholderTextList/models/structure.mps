@@ -59,6 +59,9 @@
     <property role="34LRSv" value="placeholder text" />
     <property role="EcuMT" value="1739942158294184667" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+    <node concept="PrWs8" id="69dwgEEaXP3" role="PzmwI">
+      <ref role="PrY4T" to="tpc2:6E2BWlDjLUW" resolve="IContextNodeAccessQualifier" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1w_x2MyQzEW">
     <property role="TrG5h" value="StubCellModel_PlaceholderTextList" />

@@ -33,6 +33,7 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="2mml" ref="r:74ecf5af-2b45-470e-b13c-a863221987cf(jetbrains.mps.ide.editor.util.renderer)" />
+    <import index="k4i4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.ide.findusages.findalgorithm.finders(MPS.Core/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -345,20 +346,25 @@
     </node>
     <node concept="2ScWuX" id="2rUHgdX3hAu" role="tmbBb">
       <node concept="3clFbS" id="2rUHgdX3hAv" role="2VODD2">
-        <node concept="3clFbF" id="32KDjZn1xzy" role="3cqZAp">
-          <node concept="2YIFZM" id="32KDjZn1xNX" role="3clFbG">
-            <ref role="37wK5l" to="7lvn:2rUHgdX3h2T" resolve="hasApplicableFinder" />
-            <ref role="1Pybhc" to="7lvn:2rUHgdX2_hC" resolve="GoToHelper" />
-            <node concept="2OqwBi" id="11_aJmFf1o$" role="37wK5m">
-              <node concept="2WthIp" id="11_aJmFf1o_" role="2Oq$k0" />
-              <node concept="3gHZIF" id="11_aJmFf1oA" role="2OqNvi">
-                <ref role="2WH_rO" node="2rUHgdX2y0U" resolve="interfaceNode" />
+        <node concept="3clFbF" id="k_aw1jJzrQ" role="3cqZAp">
+          <node concept="2OqwBi" id="k_aw1jJzrS" role="3clFbG">
+            <node concept="2YIFZM" id="k_aw1jJzrT" role="2Oq$k0">
+              <ref role="1Pybhc" to="ngmm:~FindUtils" resolve="FindUtils" />
+              <ref role="37wK5l" to="ngmm:~FindUtils.getFinderByClassName(java.lang.String):jetbrains.mps.ide.findusages.findalgorithm.finders.IInterfacedFinder" resolve="getFinderByClassName" />
+              <node concept="2OqwBi" id="k_aw1jJzHM" role="37wK5m">
+                <node concept="2WthIp" id="k_aw1jJzHP" role="2Oq$k0" />
+                <node concept="2XshWL" id="k_aw1jJzHR" role="2OqNvi">
+                  <ref role="2WH_rO" node="2rUHgdX3hAB" resolve="getFinderName" />
+                </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="11_aJmFf1oB" role="37wK5m">
-              <node concept="2WthIp" id="11_aJmFf1oC" role="2Oq$k0" />
-              <node concept="2XshWL" id="11_aJmFf1oD" role="2OqNvi">
-                <ref role="2WH_rO" node="2rUHgdX3hAB" resolve="getFinderName" />
+            <node concept="liA8E" id="k_aw1jJzrV" role="2OqNvi">
+              <ref role="37wK5l" to="k4i4:~IInterfacedFinder.isApplicable(org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isApplicable" />
+              <node concept="2OqwBi" id="k_aw1jJzSv" role="37wK5m">
+                <node concept="2WthIp" id="k_aw1jJzSy" role="2Oq$k0" />
+                <node concept="3gHZIF" id="k_aw1jJzS$" role="2OqNvi">
+                  <ref role="2WH_rO" node="2rUHgdX2y0U" resolve="interfaceNode" />
+                </node>
               </node>
             </node>
           </node>
@@ -421,14 +427,19 @@
                 </node>
               </node>
               <node concept="1gVbGN" id="1KUoCipvFIa" role="3cqZAp">
-                <node concept="2YIFZM" id="32KDjZn25TJ" role="1gVkn0">
-                  <ref role="1Pybhc" to="7lvn:2rUHgdX2_hC" resolve="GoToHelper" />
-                  <ref role="37wK5l" to="7lvn:2rUHgdX3h2T" resolve="hasApplicableFinder" />
-                  <node concept="37vLTw" id="32KDjZn26eJ" role="37wK5m">
-                    <ref role="3cqZAo" node="32KDjZn214V" resolve="referencedElement" />
+                <node concept="2OqwBi" id="2rUHgdX3h97" role="1gVkn0">
+                  <node concept="2YIFZM" id="2rUHgdX3h4I" role="2Oq$k0">
+                    <ref role="1Pybhc" to="ngmm:~FindUtils" resolve="FindUtils" />
+                    <ref role="37wK5l" to="ngmm:~FindUtils.getFinderByClassName(java.lang.String):jetbrains.mps.ide.findusages.findalgorithm.finders.IInterfacedFinder" resolve="getFinderByClassName" />
+                    <node concept="37vLTw" id="2BHiRxgm62S" role="37wK5m">
+                      <ref role="3cqZAo" node="32KDjZn214Y" resolve="finderClassName" />
+                    </node>
                   </node>
-                  <node concept="37vLTw" id="1pHoCUa$eFv" role="37wK5m">
-                    <ref role="3cqZAo" node="32KDjZn214Y" resolve="finderClassName" />
+                  <node concept="liA8E" id="2rUHgdX3h9c" role="2OqNvi">
+                    <ref role="37wK5l" to="k4i4:~IInterfacedFinder.isApplicable(org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isApplicable" />
+                    <node concept="37vLTw" id="k_aw1jJzdQ" role="37wK5m">
+                      <ref role="3cqZAo" node="32KDjZn214V" resolve="referencedElement" />
+                    </node>
                   </node>
                 </node>
               </node>

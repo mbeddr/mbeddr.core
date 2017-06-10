@@ -132,9 +132,9 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -445,9 +445,9 @@
               </node>
             </node>
           </node>
-          <node concept="34ab3g" id="aiIotX6yVt" role="3cqZAp">
-            <property role="35gtTG" value="trace" />
-            <node concept="3cpWs3" id="aiIotWMaL7" role="34bqiv">
+          <node concept="RRSsy" id="42VTAcDfnZ4" role="3cqZAp">
+            <property role="RRSoG" value="trace" />
+            <node concept="3cpWs3" id="aiIotWMaL7" role="RRSoy">
               <node concept="37vLTw" id="aiIotWMbjW" role="3uHU7w">
                 <ref role="3cqZAo" node="aiIotWJ1_6" resolve="property" />
               </node>

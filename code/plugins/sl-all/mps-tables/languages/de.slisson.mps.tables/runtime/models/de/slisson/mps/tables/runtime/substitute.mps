@@ -189,7 +189,6 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -1415,6 +1414,9 @@
               <node concept="37vLTw" id="lPJxikijHu" role="37wK5m">
                 <ref role="3cqZAo" node="lPJxikijyM" resolve="currentWrapped" />
               </node>
+              <node concept="37vLTw" id="19kmAzCDbIg" role="37wK5m">
+                <ref role="3cqZAo" node="19kmAzCDboH" resolve="childLink" />
+              </node>
               <node concept="37vLTw" id="lPJxikikfQ" role="37wK5m">
                 <ref role="3cqZAo" node="lPJxikik4w" resolve="wrappedConcept" />
               </node>
@@ -1433,9 +1435,15 @@
         <property role="TrG5h" value="currentWrapped" />
         <node concept="3Tqbb2" id="lPJxikijEI" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="19kmAzCDboH" role="3clF46">
+        <property role="TrG5h" value="childLink" />
+        <node concept="3uibUv" id="19kmAzCDbu_" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
+        </node>
+      </node>
       <node concept="37vLTG" id="lPJxikik4w" role="3clF46">
         <property role="TrG5h" value="wrappedConcept" />
-        <node concept="3THzug" id="lPJxikikcG" role="1tU5fm" />
+        <node concept="3bZ5Sz" id="19kmAzCDblt" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="lPJxikikDl" role="3clF46">
         <property role="TrG5h" value="substituter" />
@@ -1482,13 +1490,20 @@
     <node concept="312cEg" id="7C0FR5_dv2G" role="jymVt">
       <property role="TrG5h" value="myWrappedConcept" />
       <node concept="3Tm6S6" id="7C0FR5_dv2H" role="1B3o_S" />
-      <node concept="3THzug" id="7C0FR5_dv2I" role="1tU5fm" />
+      <node concept="3bZ5Sz" id="19kmAzCDavC" role="1tU5fm" />
     </node>
     <node concept="312cEg" id="lPJxikibbZ" role="jymVt">
       <property role="TrG5h" value="myNodeSetter" />
       <node concept="3Tm6S6" id="lPJxikibc0" role="1B3o_S" />
       <node concept="3uibUv" id="lPJxikidwU" role="1tU5fm">
         <ref role="3uigEE" node="lPJxikiclE" resolve="NodeSubstituter" />
+      </node>
+    </node>
+    <node concept="312cEg" id="19kmAzCDadN" role="jymVt">
+      <property role="TrG5h" value="myChildLink" />
+      <node concept="3Tm6S6" id="19kmAzCDadO" role="1B3o_S" />
+      <node concept="3uibUv" id="19kmAzCDadQ" role="1tU5fm">
+        <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
       </node>
     </node>
     <node concept="2tJIrI" id="7C0FR5_dv2J" role="jymVt" />
@@ -1542,6 +1557,16 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="19kmAzCDadR" role="3cqZAp">
+          <node concept="37vLTI" id="19kmAzCDadT" role="3clFbG">
+            <node concept="37vLTw" id="19kmAzCDadW" role="37vLTJ">
+              <ref role="3cqZAo" node="19kmAzCDadN" resolve="myChildLink" />
+            </node>
+            <node concept="37vLTw" id="19kmAzCDadX" role="37vLTx">
+              <ref role="3cqZAo" node="19kmAzCDa6x" resolve="childLink" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="7C0FR5_dv32" role="3clF46">
         <property role="TrG5h" value="editorContext" />
@@ -1557,9 +1582,15 @@
         <property role="TrG5h" value="currentWrapped" />
         <node concept="3Tqbb2" id="7C0FR5_dv37" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="19kmAzCDa6x" role="3clF46">
+        <property role="TrG5h" value="childLink" />
+        <node concept="3uibUv" id="19kmAzCDacL" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SContainmentLink" resolve="SContainmentLink" />
+        </node>
+      </node>
       <node concept="37vLTG" id="7C0FR5_dv38" role="3clF46">
         <property role="TrG5h" value="wrappedConcept" />
-        <node concept="3THzug" id="7C0FR5_dv39" role="1tU5fm" />
+        <node concept="3bZ5Sz" id="19kmAzCDa2j" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="lPJxikih09" role="3clF46">
         <property role="TrG5h" value="substituter" />
@@ -1657,13 +1688,16 @@
         </node>
         <node concept="3cpWs6" id="7C0FR5_dv3C" role="3cqZAp">
           <node concept="2YIFZM" id="7C0FR5_dv3D" role="3cqZAk">
-            <ref role="37wK5l" to="zce0:~ModelActions.createChildNodeSubstituteActions(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.action.IChildNodeSetter,jetbrains.mps.smodel.IOperationContext):java.util.List" resolve="createChildNodeSubstituteActions" />
             <ref role="1Pybhc" to="zce0:~ModelActions" resolve="ModelActions" />
+            <ref role="37wK5l" to="zce0:~ModelActions.createChildNodeSubstituteActions(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink,org.jetbrains.mps.openapi.language.SAbstractConcept,jetbrains.mps.smodel.action.IChildNodeSetter,jetbrains.mps.openapi.editor.EditorContext):java.util.List" resolve="createChildNodeSubstituteActions" />
             <node concept="37vLTw" id="7C0FR5_dv3E" role="37wK5m">
               <ref role="3cqZAo" node="7C0FR5_dv2A" resolve="myParentNode" />
             </node>
             <node concept="37vLTw" id="7C0FR5_dv3F" role="37wK5m">
               <ref role="3cqZAo" node="7C0FR5_dv2D" resolve="myCurrentWrapped" />
+            </node>
+            <node concept="37vLTw" id="19kmAzCDaZc" role="37wK5m">
+              <ref role="3cqZAo" node="19kmAzCDadN" resolve="myChildLink" />
             </node>
             <node concept="37vLTw" id="7C0FR5_dv3G" role="37wK5m">
               <ref role="3cqZAo" node="7C0FR5_dv2G" resolve="myWrappedConcept" />
@@ -1671,13 +1705,8 @@
             <node concept="37vLTw" id="7C0FR5_dv3H" role="37wK5m">
               <ref role="3cqZAo" node="7C0FR5_dv3j" resolve="setter" />
             </node>
-            <node concept="2OqwBi" id="7C0FR5_dv3I" role="37wK5m">
-              <node concept="1rXfSq" id="7C0FR5_dv3J" role="2Oq$k0">
-                <ref role="37wK5l" to="6lvu:~AbstractNodeSubstituteInfo.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
-              </node>
-              <node concept="liA8E" id="7C0FR5_dv3K" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
-              </node>
+            <node concept="1rXfSq" id="7C0FR5_dv3J" role="37wK5m">
+              <ref role="37wK5l" to="6lvu:~AbstractNodeSubstituteInfo.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
             </node>
           </node>
         </node>

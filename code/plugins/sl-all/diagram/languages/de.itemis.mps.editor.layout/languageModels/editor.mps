@@ -46,8 +46,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
-        <property id="1073389446426" name="gridLayout" index="3EZMnz" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -136,8 +134,6 @@
       <node concept="2iRkQZ" id="2lyMrCuEiH8" role="2iSdaV" />
     </node>
     <node concept="3EZMnI" id="fGPlTr0" role="6VMZX">
-      <property role="3EZMnw" value="true" />
-      <property role="3EZMnz" value="false" />
       <node concept="PMmxH" id="hF4_9s_" role="3EZMnx">
         <ref role="PMmxG" to="tpc5:hF4ssnw" resolve="_CellModel_Common" />
       </node>

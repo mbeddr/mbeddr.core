@@ -38,7 +38,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -115,7 +114,7 @@
     <property role="3GE5qa" value="configuration.cbmc" />
     <ref role="1M2myG" to="hj5x:3x0R1LJfFaO" resolve="DecTabCBMCAnalysis" />
     <node concept="1N5Pfh" id="3x0R1LJfFaZ" role="1Mr941">
-      <ref role="1N5Vy1" to="hj5x:3x0R1LJfFaP" />
+      <ref role="1N5Vy1" to="hj5x:3x0R1LJfFaP" resolve="decTabContainer" />
       <node concept="1MUpDS" id="3x0R1LJfFb0" role="1N6uqs">
         <node concept="3clFbS" id="3x0R1LJfFb1" role="2VODD2">
           <node concept="3cpWs8" id="3x0R1LJfFb2" role="3cqZAp">
@@ -137,7 +136,7 @@
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="3x0R1LJfFbc" role="2OqNvi">
-                  <ref role="3TtcxE" to="q46j:v5nKjVRoOX" />
+                  <ref role="3TtcxE" to="q46j:v5nKjVRoOX" resolve="imports" />
                 </node>
               </node>
             </node>
@@ -227,7 +226,7 @@
                     <node concept="3clFbF" id="3x0R1LJfFbN" role="3cqZAp">
                       <node concept="2OqwBi" id="3x0R1LJfFbO" role="3clFbG">
                         <node concept="2OqwBi" id="3x0R1LJfFbP" role="2Oq$k0">
-                          <node concept="3cpWs2" id="3x0R1LJfFbQ" role="2Oq$k0">
+                          <node concept="37vLTw" id="3x0R1LJfFbQ" role="2Oq$k0">
                             <ref role="3cqZAo" node="3x0R1LJfFbV" resolve="it" />
                           </node>
                           <node concept="2Rf3mk" id="3x0R1LJfFbR" role="2OqNvi">
@@ -258,7 +257,7 @@
     <property role="3GE5qa" value="configuration.cbmc" />
     <ref role="1M2myG" to="hj5x:7yN$Xh8qhuY" resolve="GSwitchAnalysis" />
     <node concept="1N5Pfh" id="7yN$Xh8qiG0" role="1Mr941">
-      <ref role="1N5Vy1" to="hj5x:7yN$Xh8qhuZ" />
+      <ref role="1N5Vy1" to="hj5x:7yN$Xh8qhuZ" resolve="gswitchContainer" />
       <node concept="1MUpDS" id="7yN$Xh8qjPO" role="1N6uqs">
         <node concept="3clFbS" id="7yN$Xh8qjPP" role="2VODD2">
           <node concept="3cpWs8" id="7yN$Xh8qjT_" role="3cqZAp">
@@ -280,7 +279,7 @@
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="7yN$Xh8qjTJ" role="2OqNvi">
-                  <ref role="3TtcxE" to="q46j:v5nKjVRoOX" />
+                  <ref role="3TtcxE" to="q46j:v5nKjVRoOX" resolve="imports" />
                 </node>
               </node>
             </node>
@@ -370,7 +369,7 @@
                     <node concept="3clFbF" id="7yN$Xh8qjUm" role="3cqZAp">
                       <node concept="2OqwBi" id="7yN$Xh8qjUn" role="3clFbG">
                         <node concept="2OqwBi" id="7yN$Xh8qjUo" role="2Oq$k0">
-                          <node concept="3cpWs2" id="7yN$Xh8qjUp" role="2Oq$k0">
+                          <node concept="37vLTw" id="7yN$Xh8qjUp" role="2Oq$k0">
                             <ref role="3cqZAo" node="7yN$Xh8qjUu" resolve="it" />
                           </node>
                           <node concept="2Rf3mk" id="7yN$Xh8qjUq" role="2OqNvi">

@@ -69,14 +69,12 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -219,8 +217,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
@@ -805,9 +803,11 @@
           <node concept="2OqwBi" id="78Ts1skrQOJ" role="3cqZAk">
             <node concept="2OqwBi" id="78Ts1skrQOK" role="2Oq$k0">
               <node concept="1PxgMI" id="78Ts1skrQOL" role="2Oq$k0">
-                <ref role="1m5ApE" to="v7ag:1OLGDVfeZ18" resolve="ComponentsConfigItem" />
-                <node concept="3cpWsa" id="78Ts1skrQOM" role="1m5AlR">
+                <node concept="37vLTw" id="78Ts1skrQOM" role="1m5AlR">
                   <ref role="3cqZAo" node="78Ts1skpDB6" resolve="compconfig" />
+                </node>
+                <node concept="chp4Y" id="1SbcsM_AshX" role="3oSUPX">
+                  <ref role="cht4Q" to="v7ag:1OLGDVfeZ18" resolve="ComponentsConfigItem" />
                 </node>
               </node>
               <node concept="3TrEf2" id="78Ts1skrQON" role="2OqNvi">
@@ -850,7 +850,7 @@
                       <node concept="3y3z36" id="eSkzRgLx3g" role="3clFbG">
                         <node concept="10Nm6u" id="eSkzRgLx3j" role="3uHU7w" />
                         <node concept="2OqwBi" id="eSkzRgLx2K" role="3uHU7B">
-                          <node concept="3cpWs2" id="eSkzRgLx2r" role="2Oq$k0">
+                          <node concept="37vLTw" id="eSkzRgLx2r" role="2Oq$k0">
                             <ref role="3cqZAo" node="eSkzRgLx2o" resolve="it" />
                           </node>
                           <node concept="3CFZ6_" id="eSkzRgLx2Q" role="2OqNvi">
@@ -875,7 +875,7 @@
                   <node concept="3clFbF" id="eSkzRgLx3O" role="3cqZAp">
                     <node concept="2OqwBi" id="eSkzRgLx4A" role="3clFbG">
                       <node concept="2OqwBi" id="eSkzRgLx4a" role="2Oq$k0">
-                        <node concept="3cpWs2" id="eSkzRgLx3P" role="2Oq$k0">
+                        <node concept="37vLTw" id="eSkzRgLx3P" role="2Oq$k0">
                           <ref role="3cqZAo" node="eSkzRgLx3M" resolve="it" />
                         </node>
                         <node concept="3Tsc0h" id="eSkzRgLx4g" role="2OqNvi">

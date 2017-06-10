@@ -21,6 +21,7 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="tft2" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.impl.plan(MPS.Core/)" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
@@ -258,29 +259,74 @@
           </node>
         </node>
         <node concept="3clFbH" id="58oUBCRuVQe" role="3cqZAp" />
+        <node concept="3cpWs8" id="5io19FFm5KN" role="3cqZAp">
+          <node concept="3cpWsn" id="5io19FFm5KO" role="3cpWs9">
+            <property role="TrG5h" value="planBuilder" />
+            <node concept="3uibUv" id="5io19FFm5KP" role="1tU5fm">
+              <ref role="3uigEE" to="tft2:~RigidPlanBuilder" resolve="RigidPlanBuilder" />
+            </node>
+            <node concept="2ShNRf" id="5io19FFm5TF" role="33vP2m">
+              <node concept="1pGfFk" id="5io19FFm5T7" role="2ShVmc">
+                <ref role="37wK5l" to="tft2:~RigidPlanBuilder.&lt;init&gt;(jetbrains.mps.smodel.language.LanguageRegistry)" resolve="RigidPlanBuilder" />
+                <node concept="2YIFZM" id="5io19FFm5Uj" role="37wK5m">
+                  <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+                  <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
+                  <node concept="37vLTw" id="5io19FFm5Uk" role="37wK5m">
+                    <ref role="3cqZAo" node="58oUBCRuVS3" resolve="repo" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5io19FFm6aH" role="3cqZAp">
+          <node concept="3cpWsn" id="5io19FFm6aI" role="3cpWs9">
+            <property role="TrG5h" value="planTranslator" />
+            <node concept="3uibUv" id="5io19FFm6aJ" role="1tU5fm">
+              <ref role="3uigEE" to="i30:1UVrAZQmEH$" resolve="GenPlanTranslator" />
+            </node>
+            <node concept="2ShNRf" id="5io19FFm6jS" role="33vP2m">
+              <node concept="1pGfFk" id="5io19FFm6jk" role="2ShVmc">
+                <ref role="37wK5l" to="i30:1UVrAZQmUpe" resolve="GenPlanTranslator" />
+                <node concept="37vLTw" id="5io19FFm6ly" role="37wK5m">
+                  <ref role="3cqZAo" node="58oUBCRuVS5" resolve="plan" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5io19FFm6nK" role="3cqZAp">
+          <node concept="2OqwBi" id="5io19FFm6$L" role="3clFbG">
+            <node concept="37vLTw" id="5io19FFm6nI" role="2Oq$k0">
+              <ref role="3cqZAo" node="5io19FFm6aI" resolve="planTranslator" />
+            </node>
+            <node concept="liA8E" id="5io19FFm6JB" role="2OqNvi">
+              <ref role="37wK5l" to="i30:1UVrAZQmU_x" resolve="feed" />
+              <node concept="37vLTw" id="5io19FFm6LG" role="37wK5m">
+                <ref role="3cqZAo" node="5io19FFm5KO" resolve="planBuilder" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="58oUBCRuVQf" role="3cqZAp">
           <node concept="3cpWsn" id="58oUBCRuVQg" role="3cpWs9">
             <property role="TrG5h" value="genPlan" />
             <node concept="3uibUv" id="58oUBCRuVQh" role="1tU5fm">
               <ref role="3uigEE" to="ap4t:~ModelGenerationPlan" resolve="ModelGenerationPlan" />
             </node>
-            <node concept="2OqwBi" id="58oUBCRuVQi" role="33vP2m">
-              <node concept="2ShNRf" id="58oUBCRuVQj" role="2Oq$k0">
-                <node concept="1pGfFk" id="58oUBCRuVQk" role="2ShVmc">
-                  <ref role="37wK5l" to="i30:4nEGcLMeaDd" resolve="GenPlanBuilder" />
-                  <node concept="2YIFZM" id="58oUBCRuVQl" role="37wK5m">
-                    <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
-                    <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-                    <node concept="37vLTw" id="58oUBCRuVQm" role="37wK5m">
-                      <ref role="3cqZAo" node="58oUBCRuVS3" resolve="repo" />
-                    </node>
-                  </node>
-                </node>
+            <node concept="2OqwBi" id="5io19FFm7f1" role="33vP2m">
+              <node concept="37vLTw" id="5io19FFm6XZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="5io19FFm5KO" resolve="planBuilder" />
               </node>
-              <node concept="liA8E" id="58oUBCRuVQn" role="2OqNvi">
-                <ref role="37wK5l" to="i30:2ztrlDPhHqF" resolve="create" />
-                <node concept="37vLTw" id="58oUBCRuVQo" role="37wK5m">
-                  <ref role="3cqZAo" node="58oUBCRuVS5" resolve="plan" />
+              <node concept="liA8E" id="5io19FFm7ux" role="2OqNvi">
+                <ref role="37wK5l" to="tft2:~RigidPlanBuilder.wrapUp(jetbrains.mps.generator.plan.PlanIdentity):jetbrains.mps.generator.RigidGenerationPlan" resolve="wrapUp" />
+                <node concept="2OqwBi" id="5io19FFm7B2" role="37wK5m">
+                  <node concept="37vLTw" id="5io19FFm7wM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5io19FFm6aI" resolve="planTranslator" />
+                  </node>
+                  <node concept="liA8E" id="5io19FFm7LD" role="2OqNvi">
+                    <ref role="37wK5l" to="i30:1UVrAZQp80f" resolve="getPlanIdentity" />
+                  </node>
                 </node>
               </node>
             </node>

@@ -2,9 +2,9 @@
 <model ref="r:cc63f437-a3eb-4092-9c7c-2b5860f74f8d(com.mbeddr.core.debug.test.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -201,8 +201,8 @@
         <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -339,7 +339,9 @@
                         </node>
                         <node concept="TSZUe" id="3M3l$fnBvnq" role="2OqNvi">
                           <node concept="1PxgMI" id="3M3l$fnBvnr" role="25WWJ7">
-                            <ref role="1m5ApE" to="tp5g:hHlHkQ8" resolve="NodesTestMethod" />
+                            <node concept="chp4Y" id="79i$vAY86rU" role="3oSUPX">
+                              <ref role="cht4Q" to="tp5g:hHlHkQ8" resolve="NodesTestMethod" />
+                            </node>
                             <node concept="2GrUjf" id="3M3l$fnBvns" role="1m5AlR">
                               <ref role="2Gs0qQ" node="5S3xvtc8Mg" resolve="content" />
                             </node>
@@ -362,7 +364,9 @@
                     <node concept="3fqX7Q" id="3M3l$fnBvn3" role="3uHU7w">
                       <node concept="2OqwBi" id="3M3l$fnBvn4" role="3fr31v">
                         <node concept="1PxgMI" id="3M3l$fnBvn5" role="2Oq$k0">
-                          <ref role="1m5ApE" to="rpmx:5S3xvtirw9" resolve="DebuggerTestcase" />
+                          <node concept="chp4Y" id="79i$vAY86s0" role="3oSUPX">
+                            <ref role="cht4Q" to="rpmx:5S3xvtirw9" resolve="DebuggerTestcase" />
+                          </node>
                           <node concept="2GrUjf" id="3M3l$fnBvn6" role="1m5AlR">
                             <ref role="2Gs0qQ" node="5S3xvtc8Mg" resolve="content" />
                           </node>
@@ -382,7 +386,9 @@
                           </node>
                           <node concept="TSZUe" id="5S3xvtc8Mt" role="2OqNvi">
                             <node concept="1PxgMI" id="5S3xvtepUT" role="25WWJ7">
-                              <ref role="1m5ApE" to="tp5g:hHlHkQ8" resolve="NodesTestMethod" />
+                              <node concept="chp4Y" id="79i$vAY86rK" role="3oSUPX">
+                                <ref role="cht4Q" to="tp5g:hHlHkQ8" resolve="NodesTestMethod" />
+                              </node>
                               <node concept="2GrUjf" id="5S3xvtc8MW" role="1m5AlR">
                                 <ref role="2Gs0qQ" node="5S3xvtc8Mg" resolve="content" />
                               </node>

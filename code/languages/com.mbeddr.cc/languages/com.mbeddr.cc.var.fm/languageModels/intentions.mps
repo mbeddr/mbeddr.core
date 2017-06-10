@@ -87,7 +87,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -337,7 +336,7 @@
         <node concept="3clFbF" id="3Fgw5dDiwbr" role="3cqZAp">
           <node concept="37vLTI" id="3Fgw5dDiwoZ" role="3clFbG">
             <node concept="2OqwBi" id="3Fgw5dDiwbt" role="37vLTJ">
-              <node concept="3cpWsa" id="3Fgw5dDiwbs" role="2Oq$k0">
+              <node concept="37vLTw" id="3Fgw5dDiwbs" role="2Oq$k0">
                 <ref role="3cqZAo" node="3Fgw5dDiwbk" resolve="f" />
               </node>
               <node concept="3TrEf2" id="3Fgw5dDiwoY" role="2OqNvi">
@@ -357,7 +356,7 @@
           <node concept="2OqwBi" id="3Fgw5dDiwpp" role="3clFbG">
             <node concept="2Sf5sV" id="3Fgw5dDiwpo" role="2Oq$k0" />
             <node concept="1P9Npp" id="3Fgw5dDiwpt" role="2OqNvi">
-              <node concept="3cpWsa" id="3Fgw5dDiwpv" role="1P9ThW">
+              <node concept="37vLTw" id="3Fgw5dDiwpv" role="1P9ThW">
                 <ref role="3cqZAo" node="3Fgw5dDiwbk" resolve="f" />
               </node>
             </node>
@@ -366,7 +365,7 @@
         <node concept="3clFbF" id="3Fgw5dDiwpx" role="3cqZAp">
           <node concept="2OqwBi" id="3Fgw5dDiwpC" role="3clFbG">
             <node concept="2OqwBi" id="3Fgw5dDiwpz" role="2Oq$k0">
-              <node concept="3cpWsa" id="3Fgw5dDiwpy" role="2Oq$k0">
+              <node concept="37vLTw" id="3Fgw5dDiwpy" role="2Oq$k0">
                 <ref role="3cqZAo" node="3Fgw5dDiwbk" resolve="f" />
               </node>
               <node concept="3Tsc0h" id="3Fgw5dDiwpB" role="2OqNvi">

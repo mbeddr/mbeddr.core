@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:407675bb-7c3b-49b9-8926-fa5faf7c2b42(com.mbeddr.mpsutil.lantest.assertions.sandbox.buggy_classes)">
+<model ref="r:407675bb-7c3b-49b9-8926-fa5faf7c2b42(com.mbeddr.mpsutil.lantest.assertions.sandbox.buggy_classes)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="5ef691b5-60ce-4ece-a04e-25e642dfa128" name="com.mbeddr.mpsutil.lantest" version="0" />

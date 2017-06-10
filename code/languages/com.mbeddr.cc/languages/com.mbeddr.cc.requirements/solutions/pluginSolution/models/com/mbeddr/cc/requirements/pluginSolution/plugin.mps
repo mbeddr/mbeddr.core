@@ -149,8 +149,8 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
@@ -667,9 +667,11 @@
               <node concept="2OqwBi" id="7S_3HdEVzRH" role="3clFbG">
                 <node concept="2OqwBi" id="7S_3HdEVzRI" role="2Oq$k0">
                   <node concept="1PxgMI" id="7S_3HdEVzRJ" role="2Oq$k0">
-                    <ref role="1m5ApE" to="75wo:7_tU7IQsCy_" resolve="Requirement" />
                     <node concept="37vLTw" id="7PQduOXsWnm" role="1m5AlR">
                       <ref role="3cqZAo" node="7PQduOXsWnf" resolve="ps" />
+                    </node>
+                    <node concept="chp4Y" id="79i$vAY7jp_" role="3oSUPX">
+                      <ref role="cht4Q" to="75wo:7_tU7IQsCy_" resolve="Requirement" />
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="7S_3HdEVzRN" role="2OqNvi">

@@ -39,6 +39,7 @@
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -224,11 +225,11 @@
                         <node concept="2OqwBi" id="7szUFELQjBV" role="2Oq$k0">
                           <node concept="30H73N" id="7szUFELQjys" role="2Oq$k0" />
                           <node concept="3Tsc0h" id="7szUFELQjV1" role="2OqNvi">
-                            <ref role="3TtcxE" to="evwm:7szUFELPmXn" />
+                            <ref role="3TtcxE" to="evwm:7szUFELPmXn" resolve="tabs" />
                           </node>
                         </node>
                         <node concept="13MTOL" id="7szUFELQmsq" role="2OqNvi">
-                          <ref role="13MTZf" to="evwm:7szUFELPmXx" />
+                          <ref role="13MTZf" to="evwm:7szUFELPmXx" resolve="cell" />
                         </node>
                       </node>
                     </node>
@@ -339,13 +340,7 @@
                         <node concept="3clFbS" id="7szUFELQdxD" role="3clF47">
                           <node concept="3clFbF" id="7szUFELQIz9" role="3cqZAp">
                             <node concept="1rXfSq" id="7szUFELQIz7" role="3clFbG">
-                              <ref role="37wK5l" node="g_CeiMb" resolve="_cell_factory_method_" />
-                              <node concept="37vLTw" id="7szUFELQI$G" role="37wK5m">
-                                <ref role="3cqZAo" node="7szUFELQdxy" resolve="editorContext" />
-                              </node>
-                              <node concept="37vLTw" id="7szUFELQIC3" role="37wK5m">
-                                <ref role="3cqZAo" node="7szUFELQdx$" resolve="node" />
-                              </node>
+                              <ref role="37wK5l" node="5KDKp$lLLko" resolve="newFactoryMethod" />
                               <node concept="1ZhdrF" id="7szUFELQIIw" role="lGtFl">
                                 <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
                                 <property role="2qtEX8" value="baseMethodDeclaration" />
@@ -355,11 +350,11 @@
                                       <node concept="2OqwBi" id="hT7x1rh" role="3clFbG">
                                         <node concept="1iwH7S" id="hT7x1ri" role="2Oq$k0" />
                                         <node concept="1iwH70" id="hT7x1rj" role="2OqNvi">
-                                          <ref role="1iwH77" to="tpc3:hG092h3" resolve="cellFactoryMethod" />
+                                          <ref role="1iwH77" to="tpc3:2dNBF9rpTiT" resolve="cellFactory.factoryMethod" />
                                           <node concept="2OqwBi" id="7szUFELQIQQ" role="1iwH7V">
                                             <node concept="30H73N" id="7szUFELQIMF" role="2Oq$k0" />
                                             <node concept="3TrEf2" id="7szUFELQJtR" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="evwm:7szUFELPmXx" />
+                                              <ref role="3Tt5mk" to="evwm:7szUFELPmXx" resolve="cell" />
                                             </node>
                                           </node>
                                         </node>
@@ -383,7 +378,7 @@
                   <node concept="3clFbF" id="7szUFELQdDR" role="3cqZAp">
                     <node concept="2OqwBi" id="7szUFELQdDM" role="3clFbG">
                       <node concept="3Tsc0h" id="7szUFELQdDP" role="2OqNvi">
-                        <ref role="3TtcxE" to="evwm:7szUFELPmXn" />
+                        <ref role="3TtcxE" to="evwm:7szUFELPmXn" resolve="tabs" />
                       </node>
                       <node concept="30H73N" id="7szUFELQdDQ" role="2Oq$k0" />
                     </node>
@@ -457,6 +452,22 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3clFb_" id="5KDKp$lLLko" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="5KDKp$lLLkp" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="5KDKp$lLLkq" role="3clF47">
+          <node concept="3cpWs6" id="5KDKp$lLLkr" role="3cqZAp">
+            <node concept="10Nm6u" id="5KDKp$lLLks" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="5KDKp$lLLkt" role="lGtFl" />
+        <node concept="5jKBG" id="5KDKp$lLLku" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="5KDKp$lLLkv" role="1B3o_S" />
       </node>
       <node concept="3Tm1VV" id="h9B3LuZ" role="1B3o_S" />
     </node>

@@ -30,12 +30,12 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
-      <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213100494875" name="referent" index="1Mr941" />
-        <child id="1213106463729" name="canBeChild" index="1MLUbF" />
       </concept>
       <concept id="1148684180339" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Factory" flags="in" index="1MUpDS" />
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
@@ -70,28 +70,8 @@
   <node concept="1M2fIO" id="2ZHlC00aaqY">
     <property role="3GE5qa" value="words" />
     <ref role="1M2myG" to="k8go:2ZHlC00aapr" resolve="RefWord" />
-    <node concept="nKS2y" id="2ZHlC00aaqZ" role="1MLUbF">
-      <node concept="3clFbS" id="2ZHlC00aar0" role="2VODD2">
-        <node concept="3clFbF" id="2ZHlC00aas7" role="3cqZAp">
-          <node concept="2OqwBi" id="2ZHlC00aaDw" role="3clFbG">
-            <node concept="2OqwBi" id="2ZHlC00aatU" role="2Oq$k0">
-              <node concept="nLn13" id="2ZHlC00aas6" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="2ZHlC00aawK" role="2OqNvi">
-                <node concept="1xMEDy" id="2ZHlC00aawM" role="1xVPHs">
-                  <node concept="chp4Y" id="2ZHlC00aaxJ" role="ri$Ld">
-                    <ref role="cht4Q" to="k8go:3p1cdQ7_d$W" resolve="Task" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="2ZHlC00aaAc" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="2ZHlC00aaMu" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1N5Pfh" id="2ZHlC00aaOq" role="1Mr941">
-      <ref role="1N5Vy1" to="k8go:2ZHlC00aapv" />
+      <ref role="1N5Vy1" to="k8go:2ZHlC00aapv" resolve="node" />
       <node concept="1MUpDS" id="2ZHlC00aaOw" role="1N6uqs">
         <node concept="3clFbS" id="2ZHlC00aaOx" role="2VODD2">
           <node concept="3clFbF" id="2ZHlC00aaPc" role="3cqZAp">
@@ -109,13 +89,33 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="2ZHlC00ab8A" role="2OqNvi">
-                  <ref role="3Tt5mk" to="k8go:3p1cdQ7_d_1" />
+                  <ref role="3Tt5mk" to="k8go:3p1cdQ7_d_1" resolve="code" />
                 </node>
               </node>
               <node concept="2qgKlT" id="2ZHlC00acak" role="2OqNvi">
                 <ref role="37wK5l" to="l4gp:2ZHlC00abc3" resolve="referencableNodes" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9S07l" id="5RIakkDIUtc" role="9Vyp8">
+      <node concept="3clFbS" id="5RIakkDIUtd" role="2VODD2">
+        <node concept="3clFbF" id="5RIakkDIUte" role="3cqZAp">
+          <node concept="2OqwBi" id="5RIakkDIUtf" role="3clFbG">
+            <node concept="2OqwBi" id="5RIakkDIUtg" role="2Oq$k0">
+              <node concept="nLn13" id="5RIakkDIUth" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5RIakkDIUti" role="2OqNvi">
+                <node concept="1xMEDy" id="5RIakkDIUtj" role="1xVPHs">
+                  <node concept="chp4Y" id="5RIakkDIUtk" role="ri$Ld">
+                    <ref role="cht4Q" to="k8go:3p1cdQ7_d$W" resolve="Task" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="5RIakkDIUtl" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5RIakkDIUtm" role="2OqNvi" />
           </node>
         </node>
       </node>

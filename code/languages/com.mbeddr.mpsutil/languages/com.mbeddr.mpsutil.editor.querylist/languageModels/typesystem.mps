@@ -223,7 +223,7 @@
                         <ref role="1YBMHb" node="C$q8A2yAjT" resolve="node" />
                       </node>
                       <node concept="3TrEf2" id="C$q8A2yRIR" role="2OqNvi">
-                        <ref role="3Tt5mk" to="bbp5:C$q8A2yeI6" />
+                        <ref role="3Tt5mk" to="bbp5:C$q8A2yeI6" resolve="elementsConcept" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="C$q8A2ySk1" role="2OqNvi">
@@ -241,7 +241,7 @@
                 <ref role="1YBMHb" node="C$q8A2yAjT" resolve="node" />
               </node>
               <node concept="3TrEf2" id="C$q8A2yTWG" role="2OqNvi">
-                <ref role="3Tt5mk" to="bbp5:5oklODae9g3" />
+                <ref role="3Tt5mk" to="bbp5:5oklODae9g3" resolve="query" />
               </node>
             </node>
             <node concept="3Cnw8n" id="C$q8A2C0em" role="2OEOjU">
@@ -271,7 +271,7 @@
               <ref role="1YBMHb" node="C$q8A2yAjT" resolve="node" />
             </node>
             <node concept="3TrEf2" id="C$q8A2yN6W" role="2OqNvi">
-              <ref role="3Tt5mk" to="bbp5:C$q8A2yeI6" />
+              <ref role="3Tt5mk" to="bbp5:C$q8A2yeI6" resolve="elementsConcept" />
             </node>
           </node>
         </node>
@@ -308,7 +308,7 @@
                 <ref role="QwW4h" node="C$q8A2C1LB" resolve="querylist" />
               </node>
               <node concept="3TrEf2" id="C$q8A2zwCZ" role="2OqNvi">
-                <ref role="3Tt5mk" to="bbp5:C$q8A2yeI6" />
+                <ref role="3Tt5mk" to="bbp5:C$q8A2yeI6" resolve="elementsConcept" />
               </node>
             </node>
           </node>

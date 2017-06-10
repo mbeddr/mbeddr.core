@@ -39,7 +39,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -131,7 +130,7 @@
                   <ref role="1YBMHb" node="6W8yq39oSMl" resolve="fmt" />
                 </node>
                 <node concept="3TrEf2" id="6W8yq39oSPt" role="2OqNvi">
-                  <ref role="3Tt5mk" to="yvrq:7H6_Qip5JIA" />
+                  <ref role="3Tt5mk" to="yvrq:7H6_Qip5JIA" resolve="featureModel" />
                 </node>
               </node>
               <node concept="3TrcHB" id="6W8yq39oSPT" role="2OqNvi">
@@ -141,7 +140,7 @@
           </node>
           <node concept="1Wc70l" id="6W8yq39oSO0" role="3uHU7B">
             <node concept="2OqwBi" id="6W8yq39oSN$" role="3uHU7B">
-              <node concept="3cpWsa" id="6W8yq39oSOb" role="2Oq$k0">
+              <node concept="37vLTw" id="6W8yq39oSOb" role="2Oq$k0">
                 <ref role="3cqZAo" node="6W8yq39oSO4" resolve="c" />
               </node>
               <node concept="3x8VRR" id="6W8yq39oSNE" role="2OqNvi" />
@@ -166,7 +165,7 @@
                 <node concept="Xl_RD" id="6W8yq39oSPX" role="3uHU7B">
                   <property role="Xl_RC" value="must be exported (because " />
                 </node>
-                <node concept="3cpWsa" id="6W8yq39oSTQ" role="3uHU7w">
+                <node concept="37vLTw" id="6W8yq39oSTQ" role="3uHU7w">
                   <ref role="3cqZAo" node="6W8yq39oSO4" resolve="c" />
                 </node>
               </node>
@@ -176,7 +175,7 @@
                 <ref role="1YBMHb" node="6W8yq39oSMl" resolve="fmt" />
               </node>
               <node concept="3TrEf2" id="6W8yq39oSQp" role="2OqNvi">
-                <ref role="3Tt5mk" to="yvrq:7H6_Qip5JIA" />
+                <ref role="3Tt5mk" to="yvrq:7H6_Qip5JIA" resolve="featureModel" />
               </node>
             </node>
           </node>
