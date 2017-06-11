@@ -84,7 +84,6 @@
         <reference id="2390327893064270003" name="literal" index="33SuoY" />
       </concept>
       <concept id="2390327893064382862" name="com.mbeddr.analyses.spin.promela.structure.ChanDeclaration" flags="ng" index="33SPW3">
-        <property id="2390327893064382872" name="size" index="33SPWl" />
         <child id="682261312585237108" name="channelSize" index="25PmdS" />
         <child id="2390327893064382921" name="types" index="33SPX4" />
       </concept>
@@ -260,19 +259,18 @@
         <node concept="2NXPZ9" id="7Hmzdkr18an" role="N3F5h">
           <property role="TrG5h" value="empty_1494697535340_40" />
         </node>
-        <node concept="33SPW3" id="7Hmzdkr17Rc" role="N3F5h">
+        <node concept="33SPW3" id="pq_X7Y7ZYp" role="N3F5h">
           <property role="TrG5h" value="Comm" />
-          <property role="33SPWl" value="0" />
-          <node concept="2CGWmI" id="7Hmzdkr17RW" role="33SPX4">
+          <node concept="3TlMh9" id="pq_X7Y7ZYW" role="25PmdS">
+            <property role="2hmy$m" value="1" />
+          </node>
+          <node concept="2CGWmI" id="pq_X7Y7ZZw" role="33SPX4">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
-          <node concept="3TlMh9" id="_RSgMcGohE" role="25PmdS">
-            <property role="2hmy$m" value="1" />
-          </node>
         </node>
-        <node concept="2NXPZ9" id="7Hmzdkr18b1" role="N3F5h">
-          <property role="TrG5h" value="empty_1494697536255_41" />
+        <node concept="2NXPZ9" id="pq_X7Y7ZXy" role="N3F5h">
+          <property role="TrG5h" value="empty_1497166003538_1" />
         </node>
         <node concept="1N3Vlf" id="1RC3LaK$mQQ" role="N3F5h">
           <property role="TrG5h" value="Sender" />
@@ -282,8 +280,8 @@
           </node>
           <node concept="3XIRFW" id="1RC3LaK$mQS" role="3XIRFX">
             <node concept="33Z$56" id="7Hmzdkr16ot" role="3XIRFZ">
-              <node concept="2CGnA8" id="7Hmzdkr181s" role="33Z$51">
-                <ref role="2CGnA6" node="7Hmzdkr17Rc" resolve="Comm" />
+              <node concept="2CGnA8" id="pq_X7Y80an" role="33Z$51">
+                <ref role="2CGnA6" node="pq_X7Y7ZYp" resolve="Comm" />
               </node>
               <node concept="2Ysn8y" id="7Hmzdkr16py" role="33Z$53">
                 <node concept="33SuoZ" id="7Hmzdkr16pm" role="2Yskys">
@@ -295,8 +293,8 @@
               </node>
             </node>
             <node concept="33ZRtt" id="7Hmzdkr16mW" role="3XIRFZ">
-              <node concept="2CGnA8" id="7Hmzdkr181q" role="33ZRts">
-                <ref role="2CGnA6" node="7Hmzdkr17Rc" resolve="Comm" />
+              <node concept="2CGnA8" id="pq_X7Y80ap" role="33ZRts">
+                <ref role="2CGnA6" node="pq_X7Y7ZYp" resolve="Comm" />
               </node>
               <node concept="33SuoZ" id="7Hmzdkr16nK" role="33ZRtu">
                 <ref role="33SuoY" node="1RC3LaKzd_4" resolve="ACK" />
