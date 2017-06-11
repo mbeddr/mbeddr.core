@@ -6,7 +6,7 @@
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="4457ca2e-a7c9-4452-9578-e94701cc4942" name="com.mbeddr.core.debug.util" version="0" />
+    <use id="4457ca2e-a7c9-4452-9578-e94701cc4942" name="com.mbeddr.core.debug.util" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -42,6 +42,7 @@
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
     <import index="lvdd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.cache(MPS.Core/)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -303,7 +304,7 @@
       <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
-      <concept id="7080278351417106679" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertInNotNull" flags="nn" index="2Hmddi">
+      <concept id="7080278351417106679" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertIsNotNull" flags="nn" index="2Hmddi">
         <child id="7080278351417106681" name="expression" index="2Hmdds" />
       </concept>
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
@@ -336,6 +337,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -464,6 +466,10 @@
     <property role="3$yP7D" value="true" />
     <node concept="aNPBN" id="3GPxRNQEpke" role="aQYdv">
       <ref role="aOQi4" to="rpmx:4WY_RKGwG4d" resolve="DebuggerTestLibrary" />
+    </node>
+    <node concept="3lhOvk" id="3GPxRNR4xle" role="3lj3bC">
+      <ref role="30HIoZ" to="rpmx:67gjJAxXnpI" resolve="DebuggerTest" />
+      <ref role="3lhOvi" node="3GPxRNR4$s5" resolve="map_DebuggerTest" />
     </node>
     <node concept="3aamgX" id="1xkixXqgu14" role="3acgRq">
       <ref role="30HIoZ" to="rpmx:4TbX0$8UA61" resolve="EmptyValidationConfigurationElement" />
@@ -1057,9 +1063,6 @@
                             <node concept="3cpWs8" id="3BZT3xtreH8" role="3cqZAp">
                               <node concept="3cpWsn" id="3BZT3xtreH9" role="3cpWs9">
                                 <property role="TrG5h" value="bc" />
-                                <node concept="3Tqbb2" id="3BZT3xtreH6" role="1tU5fm">
-                                  <ref role="ehGHo" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
-                                </node>
                                 <node concept="2OqwBi" id="3GPxRNR3UWY" role="33vP2m">
                                   <node concept="2OqwBi" id="3GPxRNR3U6c" role="2Oq$k0">
                                     <node concept="2OqwBi" id="3GPxRNR3RM7" role="2Oq$k0">
@@ -1081,6 +1084,9 @@
                                       </node>
                                     </node>
                                   </node>
+                                </node>
+                                <node concept="3Tqbb2" id="3BZT3xtreH6" role="1tU5fm">
+                                  <ref role="ehGHo" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
                                 </node>
                               </node>
                             </node>
@@ -1690,14 +1696,14 @@
                                         </node>
                                       </node>
                                       <node concept="2OqwBi" id="1q1yZ9Ql2yR" role="3uHU7w">
-                                        <node concept="2OqwBi" id="1q1yZ9Ql2yS" role="2Oq$k0">
+                                        <node concept="liA8E" id="5CkU_dHjiI7" role="2OqNvi">
+                                          <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                        </node>
+                                        <node concept="2OqwBi" id="5CkU_dHjiI5" role="2Oq$k0">
+                                          <node concept="2yIwOk" id="5CkU_dHjiI6" role="2OqNvi" />
                                           <node concept="37vLTw" id="1q1yZ9Ql2yT" role="2Oq$k0">
                                             <ref role="3cqZAo" node="1q1yZ9QlmC5" resolve="currentNode" />
                                           </node>
-                                          <node concept="3NT_Vc" id="1q1yZ9Ql2yU" role="2OqNvi" />
-                                        </node>
-                                        <node concept="3TrcHB" id="1q1yZ9Ql2yV" role="2OqNvi">
-                                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                         </node>
                                       </node>
                                     </node>
@@ -1977,14 +1983,14 @@
                                         </node>
                                       </node>
                                       <node concept="2OqwBi" id="7C_wgEF4Noh" role="3uHU7w">
-                                        <node concept="2OqwBi" id="7C_wgEF4Nnw" role="2Oq$k0">
+                                        <node concept="liA8E" id="5CkU_dHjiIb" role="2OqNvi">
+                                          <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                        </node>
+                                        <node concept="2OqwBi" id="5CkU_dHjiI9" role="2Oq$k0">
+                                          <node concept="2yIwOk" id="5CkU_dHjiIa" role="2OqNvi" />
                                           <node concept="37vLTw" id="4WqJ5Sh63WD" role="2Oq$k0">
                                             <ref role="3cqZAo" node="7C_wgEF4Niw" resolve="currentNode" />
                                           </node>
-                                          <node concept="3NT_Vc" id="7C_wgEF4NnA" role="2OqNvi" />
-                                        </node>
-                                        <node concept="3TrcHB" id="7C_wgEF4Nos" role="2OqNvi">
-                                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                         </node>
                                       </node>
                                     </node>
@@ -6989,10 +6995,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="3lhOvk" id="3GPxRNR4xle" role="3lj3bC">
-      <ref role="30HIoZ" to="rpmx:67gjJAxXnpI" resolve="DebuggerTest" />
-      <ref role="3lhOvi" node="3GPxRNR4$s5" resolve="map_DebuggerTest" />
     </node>
     <node concept="avzCv" id="5xtS4g3SV1O" role="avys_">
       <node concept="3clFbS" id="5xtS4g3SV1P" role="2VODD2">

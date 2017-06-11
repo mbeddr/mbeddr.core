@@ -33,7 +33,6 @@
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
-      <concept id="1161622753914" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_operationContext" flags="nn" index="1Q79dO" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -538,13 +537,7 @@
                         </node>
                         <node concept="2ShNRf" id="7Io9oU67WkF" role="33vP2m">
                           <node concept="1pGfFk" id="7Io9oU67WkG" role="2ShVmc">
-                            <ref role="37wK5l" to="grvc:4ppn3W9rLPH" resolve="VisGraph" />
-                            <node concept="2OqwBi" id="7Io9oU67WkH" role="37wK5m">
-                              <node concept="1Q79dO" id="7Io9oU67WkI" role="2Oq$k0" />
-                              <node concept="liA8E" id="7Io9oU67WkJ" role="2OqNvi">
-                                <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
-                              </node>
-                            </node>
+                            <ref role="37wK5l" to="grvc:17Dyz4Dv35V" resolve="VisGraph" />
                           </node>
                         </node>
                       </node>

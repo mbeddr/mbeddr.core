@@ -6,9 +6,9 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
   </languages>
   <imports>
@@ -42,6 +42,9 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
+    <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
+      <concept id="8473566765277240526" name="de.slisson.mps.reflection.structure.ReflectionMethodCall" flags="ng" index="1PvZjq" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="6029276237631252951" name="jetbrains.mps.lang.editor.structure.StyleAttributeReferenceExpression" flags="ng" index="1Z6Ecs">
         <reference id="6029276237631253682" name="attributeDeclaration" index="1Z6EpT" />
@@ -292,6 +295,7 @@
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <property id="890797661671409019" name="forceMultiLine" index="3yWfEV" />
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
@@ -7137,16 +7141,36 @@
                 <node concept="liA8E" id="CZjRlFElco" role="2OqNvi">
                   <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
                   <node concept="1bVj0M" id="7wXnfGE7uZT" role="37wK5m">
+                    <property role="3yWfEV" value="true" />
                     <node concept="3clFbS" id="7wXnfGE7uZU" role="1bW5cS">
                       <node concept="3clFbF" id="7wXnfGE7vnR" role="3cqZAp">
                         <node concept="37vLTI" id="7wXnfGE7vuP" role="3clFbG">
                           <node concept="37vLTw" id="7wXnfGE7vnQ" role="37vLTJ">
                             <ref role="3cqZAo" node="CZjRlFElcj" resolve="pattern" />
                           </node>
-                          <node concept="1rXfSq" id="CZjRlFElcx" role="37vLTx">
-                            <ref role="37wK5l" node="CZjRlFErdY" resolve="getTextOnEvent" />
-                            <node concept="37vLTw" id="CZjRlFElcy" role="37wK5m">
-                              <ref role="3cqZAo" node="CZjRlFC2w$" resolve="keyEvent" />
+                          <node concept="2OqwBi" id="1XsQk3BmEcZ" role="37vLTx">
+                            <node concept="1eOMI4" id="1XsQk3BmHo5" role="2Oq$k0">
+                              <node concept="10QFUN" id="1XsQk3BmHo4" role="1eOMHV">
+                                <node concept="Xjq3P" id="1XsQk3BmHo3" role="10QFUP" />
+                                <node concept="3uibUv" id="1XsQk3BmHy_" role="10QFUM">
+                                  <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="1PvZjq" id="1XsQk3BmI$0" role="2OqNvi">
+                              <ref role="37wK5l" to="g51k:~EditorCell_Label.getUpdatedText(java.lang.String):java.lang.String" resolve="getUpdatedText" />
+                              <node concept="2YIFZM" id="1XsQk3BmJ6S" role="37wK5m">
+                                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                                <ref role="37wK5l" to="wyt6:~String.valueOf(char):java.lang.String" resolve="valueOf" />
+                                <node concept="2OqwBi" id="1XsQk3BmKbD" role="37wK5m">
+                                  <node concept="37vLTw" id="1XsQk3BmJxm" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="CZjRlFC2w$" resolve="keyEvent" />
+                                  </node>
+                                  <node concept="liA8E" id="1XsQk3BmL9g" role="2OqNvi">
+                                    <ref role="37wK5l" to="hyam:~KeyEvent.getKeyChar():char" resolve="getKeyChar" />
+                                  </node>
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -7246,136 +7270,6 @@
       </node>
       <node concept="2AHcQZ" id="CZjRlFLpDA" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="CZjRlFC1mQ" role="jymVt" />
-    <node concept="3clFb_" id="CZjRlFErdY" role="jymVt">
-      <property role="TrG5h" value="getTextOnEvent" />
-      <node concept="17QB3L" id="CZjRlFEs3U" role="3clF45" />
-      <node concept="3Tm6S6" id="CZjRlFErFn" role="1B3o_S" />
-      <node concept="3clFbS" id="CZjRlFEre2" role="3clF47">
-        <node concept="SfApY" id="CZjRlFEKhZ" role="3cqZAp">
-          <node concept="TDmWw" id="CZjRlFFq8V" role="TEbGg">
-            <node concept="3cpWsn" id="CZjRlFFq8W" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="CZjRlFFsSZ" role="1tU5fm">
-                <ref role="3uigEE" to="t6h5:~InvocationTargetException" resolve="InvocationTargetException" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="CZjRlFFq8Y" role="TDEfX">
-              <node concept="YS8fn" id="CZjRlFF_dj" role="3cqZAp">
-                <node concept="2ShNRf" id="CZjRlFF_dk" role="YScLw">
-                  <node concept="1pGfFk" id="CZjRlFF_dl" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
-                    <node concept="37vLTw" id="CZjRlFF_dm" role="37wK5m">
-                      <ref role="3cqZAo" node="CZjRlFFq8W" resolve="e" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="CZjRlFFkkF" role="TEbGg">
-            <node concept="3cpWsn" id="CZjRlFFkkG" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="CZjRlFFmfq" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~IllegalAccessException" resolve="IllegalAccessException" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="CZjRlFFkkI" role="TDEfX">
-              <node concept="YS8fn" id="CZjRlFFy$E" role="3cqZAp">
-                <node concept="2ShNRf" id="CZjRlFFy$F" role="YScLw">
-                  <node concept="1pGfFk" id="CZjRlFFy$G" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
-                    <node concept="37vLTw" id="CZjRlFFy$H" role="37wK5m">
-                      <ref role="3cqZAo" node="CZjRlFFkkG" resolve="e" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="CZjRlFEKi0" role="SfCbr">
-            <node concept="3cpWs8" id="CZjRlFEA2z" role="3cqZAp">
-              <node concept="3cpWsn" id="CZjRlFEA2$" role="3cpWs9">
-                <property role="TrG5h" value="m" />
-                <node concept="3uibUv" id="CZjRlFEA2_" role="1tU5fm">
-                  <ref role="3uigEE" to="t6h5:~Method" resolve="Method" />
-                </node>
-                <node concept="2OqwBi" id="CZjRlFEB1m" role="33vP2m">
-                  <node concept="3VsKOn" id="CZjRlFEAt9" role="2Oq$k0">
-                    <ref role="3VsUkX" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
-                  </node>
-                  <node concept="liA8E" id="CZjRlFEF$J" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Class.getDeclaredMethod(java.lang.String,java.lang.Class...):java.lang.reflect.Method" resolve="getDeclaredMethod" />
-                    <node concept="Xl_RD" id="CZjRlFEI4j" role="37wK5m">
-                      <property role="Xl_RC" value="getTextOnEvent" />
-                    </node>
-                    <node concept="3VsKOn" id="CZjRlFEJWj" role="37wK5m">
-                      <ref role="3VsUkX" to="hyam:~KeyEvent" resolve="KeyEvent" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="CZjRlFF2mb" role="3cqZAp">
-              <node concept="2OqwBi" id="CZjRlFF2wH" role="3clFbG">
-                <node concept="37vLTw" id="CZjRlFF2ma" role="2Oq$k0">
-                  <ref role="3cqZAo" node="CZjRlFEA2$" resolve="m" />
-                </node>
-                <node concept="liA8E" id="CZjRlFF46g" role="2OqNvi">
-                  <ref role="37wK5l" to="t6h5:~AccessibleObject.setAccessible(boolean):void" resolve="setAccessible" />
-                  <node concept="3clFbT" id="CZjRlFF4J7" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="CZjRlFFaEa" role="3cqZAp">
-              <node concept="10QFUN" id="CZjRlFFC3c" role="3cqZAk">
-                <node concept="17QB3L" id="CZjRlFFFza" role="10QFUM" />
-                <node concept="2OqwBi" id="CZjRlFFcAT" role="10QFUP">
-                  <node concept="37vLTw" id="CZjRlFFcih" role="2Oq$k0">
-                    <ref role="3cqZAo" node="CZjRlFEA2$" resolve="m" />
-                  </node>
-                  <node concept="liA8E" id="CZjRlFFeAm" role="2OqNvi">
-                    <ref role="37wK5l" to="t6h5:~Method.invoke(java.lang.Object,java.lang.Object...):java.lang.Object" resolve="invoke" />
-                    <node concept="Xjq3P" id="CZjRlFFfVZ" role="37wK5m" />
-                    <node concept="37vLTw" id="CZjRlFFiGD" role="37wK5m">
-                      <ref role="3cqZAo" node="CZjRlFEyBl" resolve="keyEvent" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="CZjRlFEKhV" role="TEbGg">
-            <node concept="3clFbS" id="CZjRlFEKhW" role="TDEfX">
-              <node concept="YS8fn" id="CZjRlFEKGA" role="3cqZAp">
-                <node concept="2ShNRf" id="CZjRlFEKS$" role="YScLw">
-                  <node concept="1pGfFk" id="CZjRlFF1cn" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
-                    <node concept="37vLTw" id="CZjRlFF1Er" role="37wK5m">
-                      <ref role="3cqZAo" node="CZjRlFEKhX" resolve="e" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="CZjRlFEKhX" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="CZjRlFEKhY" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~NoSuchMethodException" resolve="NoSuchMethodException" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="CZjRlFEyBl" role="3clF46">
-        <property role="TrG5h" value="keyEvent" />
-        <node concept="3uibUv" id="CZjRlFEyBk" role="1tU5fm">
-          <ref role="3uigEE" to="hyam:~KeyEvent" resolve="KeyEvent" />
-        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="7YXF5OhmgVN" role="1B3o_S" />

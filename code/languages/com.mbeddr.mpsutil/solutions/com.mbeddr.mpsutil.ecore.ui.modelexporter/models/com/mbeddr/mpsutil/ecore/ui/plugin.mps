@@ -2,8 +2,8 @@
 <model ref="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
@@ -48,6 +48,8 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="1204991940915" name="caption" index="2f7twF" />
+        <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -1297,28 +1299,24 @@
       <node concept="H_c77" id="WAKHA7Eyff" role="1tU5fm" />
     </node>
   </node>
-  <node concept="tC5Ba" id="2CLKXjMmszp">
-    <property role="TrG5h" value="exportModelActionGroup" />
-    <node concept="ftmFs" id="2CLKXjMmsz_" role="ftER_">
-      <node concept="tCFHf" id="2CLKXjMmszC" role="ftvYc">
-        <ref role="tCJdB" node="2CLKXjMmk70" resolve="exportEcoreModelAction" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="2CLKXjMmya8" role="2f5YQi">
-      <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
-      <ref role="2f8Tey" to="tprs:1ePK2dvwshF" resolve="newActions" />
-    </node>
-  </node>
   <node concept="tC5Ba" id="6TiIOkR_RTk">
-    <property role="TrG5h" value="importActionGroup" />
+    <property role="TrG5h" value="ecoreActionGroup" />
+    <property role="1XlLyE" value="true" />
+    <property role="2f7twF" value="Ecore Transformation Tools" />
     <node concept="ftmFs" id="6TiIOkR_RTl" role="ftER_">
       <node concept="tCFHf" id="6TiIOkR_RTm" role="ftvYc">
         <ref role="tCJdB" node="6TiIOkR_RTo" resolve="importEcoreAction" />
       </node>
+      <node concept="tCFHf" id="7KEx7AKbw1D" role="ftvYc">
+        <ref role="tCJdB" node="2CLKXjMmk70" resolve="exportEcoreModelAction" />
+      </node>
+      <node concept="tCFHf" id="7KEx7AKbw1L" role="ftvYc">
+        <ref role="tCJdB" node="6TiIOkR_Sie" resolve="importEcoreModelAction" />
+      </node>
     </node>
     <node concept="tT9cl" id="6TiIOkR_RTn" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
-      <ref role="2f8Tey" to="tprs:1ePK2dvwshF" resolve="newActions" />
+      <ref role="2f8Tey" to="tprs:hMfehyW" resolve="refactoring" />
     </node>
   </node>
   <node concept="sE7Ow" id="6TiIOkR_RTo">
@@ -1406,18 +1404,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="tC5Ba" id="6TiIOkR_Sih">
-    <property role="TrG5h" value="importModelActionGroup" />
-    <node concept="ftmFs" id="6TiIOkR_Sii" role="ftER_">
-      <node concept="tCFHf" id="6TiIOkR_Sij" role="ftvYc">
-        <ref role="tCJdB" node="6TiIOkR_Sie" resolve="importEcoreModelAction" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="6TiIOkR_Sik" role="2f5YQi">
-      <ref role="2f8Tey" to="tprs:1ePK2dvwshF" resolve="newActions" />
-      <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
     </node>
   </node>
 </model>

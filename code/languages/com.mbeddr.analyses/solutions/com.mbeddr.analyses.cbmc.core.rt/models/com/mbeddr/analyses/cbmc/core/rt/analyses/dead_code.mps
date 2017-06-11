@@ -6,8 +6,8 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -33,7 +33,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -410,21 +409,6 @@
               </node>
               <node concept="2S8uIT" id="4pAFZearB2w" role="2OqNvi">
                 <ref role="2S8YL0" to="tzyt:FDeiXq_hqp" resolve="partialLoops" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4pAFZearPkF" role="3cqZAp">
-          <node concept="37vLTI" id="4pAFZearQyu" role="3clFbG">
-            <node concept="3clFbT" id="4pAFZearQH8" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="4pAFZearPHY" role="37vLTJ">
-              <node concept="37vLTw" id="4pAFZearPkD" role="2Oq$k0">
-                <ref role="3cqZAo" to="tzyt:7F8$WoW31Wz" resolve="config" />
-              </node>
-              <node concept="2S8uIT" id="4pAFZearQgc" role="2OqNvi">
-                <ref role="2S8YL0" to="tzyt:tGR6edUFun" resolve="generateUnwindingAssertions" />
               </node>
             </node>
           </node>
@@ -1655,9 +1639,9 @@
       <node concept="3Tm1VV" id="4QaxHTo8MvN" role="1B3o_S" />
       <node concept="3clFbS" id="4QaxHTo8MvT" role="3clF47">
         <node concept="3clFbF" id="4QaxHTo8MvW" role="3cqZAp">
-          <node concept="1Wc70l" id="4QaxHTo8N4T" role="3clFbG">
-            <node concept="3fqX7Q" id="4QaxHTo8Nrb" role="3uHU7w">
-              <node concept="3nyPlj" id="4QaxHTo8NrR" role="3fr31v">
+          <node concept="1Wc70l" id="6BNByWiZWjl" role="3clFbG">
+            <node concept="3fqX7Q" id="6BNByWiZWoM" role="3uHU7w">
+              <node concept="3nyPlj" id="6BNByWiZWqs" role="3fr31v">
                 <ref role="37wK5l" to="eqhl:7kzfSagKGHX" resolve="isUnwindingFail" />
               </node>
             </node>
@@ -1682,13 +1666,8 @@
       <node concept="3Tm1VV" id="4QaxHTo8Q4X" role="1B3o_S" />
       <node concept="3clFbS" id="4QaxHTo8Q4Y" role="3clF47">
         <node concept="3clFbF" id="4QaxHTo8Q4Z" role="3cqZAp">
-          <node concept="22lmx$" id="nwVVWp3ri" role="3clFbG">
-            <node concept="3nyPlj" id="nwVVWp3tQ" role="3uHU7w">
-              <ref role="37wK5l" to="eqhl:7kzfSagKGHX" resolve="isUnwindingFail" />
-            </node>
-            <node concept="3nyPlj" id="4QaxHTo8Q53" role="3uHU7B">
-              <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
-            </node>
+          <node concept="3nyPlj" id="4QaxHTo8Q53" role="3clFbG">
+            <ref role="37wK5l" to="eqhl:6oOIJNsCfn4" resolve="propertyHolds" />
           </node>
         </node>
       </node>

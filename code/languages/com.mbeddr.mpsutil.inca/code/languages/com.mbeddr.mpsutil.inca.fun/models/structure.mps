@@ -126,6 +126,7 @@
     <property role="TrG5h" value="PatternFunctionBody" />
     <property role="3GE5qa" value="misc" />
     <property role="EcuMT" value="1925259677761386650" />
+    <property role="34LRSv" value="{" />
     <ref role="1TJDcQ" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
     <node concept="PrWs8" id="1ERTnBTmryr" role="PzmwI">
       <ref role="PrY4T" to="hqsm:3VwoHXNAdvt" resolve="IPatternBody" />

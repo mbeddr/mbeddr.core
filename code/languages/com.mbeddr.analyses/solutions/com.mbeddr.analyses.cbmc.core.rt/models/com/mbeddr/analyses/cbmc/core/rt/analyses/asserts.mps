@@ -122,7 +122,6 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -130,7 +129,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
@@ -562,7 +560,7 @@
                       <ref role="37wK5l" to="tzyt:3L_VuqblMrt" resolve="collectAdditionalPaths" />
                     </node>
                   </node>
-                  <node concept="3cpWsa" id="3x0R1LJ5Cq5" role="2Oq$k0">
+                  <node concept="37vLTw" id="3x0R1LJ5Cq5" role="2Oq$k0">
                     <ref role="3cqZAo" node="3x0R1LJ5CpU" resolve="args" />
                   </node>
                 </node>
@@ -679,7 +677,7 @@
       <node concept="3clFbS" id="3x0R1LJ5CqE" role="3clF47">
         <node concept="XkiVB" id="3x0R1LJ5CqF" role="3cqZAp">
           <ref role="37wK5l" to="eqhl:4XbM$YHffxN" resolve="CBMCLiftedResult" />
-          <node concept="3cpWs2" id="3x0R1LJ5CqH" role="37wK5m">
+          <node concept="37vLTw" id="3x0R1LJ5CqH" role="37wK5m">
             <ref role="3cqZAo" node="3x0R1LJ5CqA" resolve="liftedResult" />
           </node>
         </node>
@@ -714,7 +712,7 @@
       <node concept="3clFbS" id="44LesUVAvHO" role="3clF47">
         <node concept="XkiVB" id="44LesUVAvHP" role="3cqZAp">
           <ref role="37wK5l" to="eqhl:4XbM$YHffxN" resolve="CBMCLiftedResult" />
-          <node concept="3cpWs2" id="44LesUVAvHQ" role="37wK5m">
+          <node concept="37vLTw" id="44LesUVAvHQ" role="37wK5m">
             <ref role="3cqZAo" node="44LesUVAvHI" resolve="liftedResult" />
           </node>
         </node>
@@ -963,10 +961,10 @@
             <node concept="NRdvd" id="3x0R1LJ5Crc" role="33vP2m">
               <ref role="1Pybhc" to="8ear:6GZ1x5GshiS" resolve="CBMCLiftedResultBuilder" />
               <ref role="37wK5l" to="8ear:6GZ1x5Gshjx" resolve="buildCBMCLiftedResult" />
-              <node concept="3cpWs2" id="3x0R1LJ5Crd" role="37wK5m">
+              <node concept="37vLTw" id="3x0R1LJ5Crd" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5Cr3" resolve="rawResult" />
               </node>
-              <node concept="3cpWs2" id="3x0R1LJ5Cre" role="37wK5m">
+              <node concept="37vLTw" id="3x0R1LJ5Cre" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5Cr5" resolve="analyzedConcept" />
               </node>
             </node>
@@ -976,7 +974,7 @@
           <node concept="2ShNRf" id="3x0R1LJ5Crg" role="3cqZAk">
             <node concept="1pGfFk" id="3x0R1LJ5Crh" role="2ShVmc">
               <ref role="37wK5l" node="3x0R1LJ5Cq_" resolve="CBMCAssertResult" />
-              <node concept="3cpWsa" id="3x0R1LJ5Cri" role="37wK5m">
+              <node concept="37vLTw" id="3x0R1LJ5Cri" role="37wK5m">
                 <ref role="3cqZAo" node="3x0R1LJ5Cra" resolve="lifted" />
               </node>
               <node concept="37vLTw" id="4jxm9lDvz4U" role="37wK5m">

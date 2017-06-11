@@ -16,12 +16,6 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
-      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
-        <property id="6054523464626875854" name="value" index="tnX3d" />
-      </concept>
-      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
-        <reference id="6054523464627965081" name="concept" index="trN6q" />
-      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
@@ -30,11 +24,6 @@
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
-      </concept>
-      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
-        <property id="7588428831955550663" name="role" index="Hh88m" />
-        <child id="7588428831947959310" name="attributed" index="EQaZv" />
-        <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -632,45 +621,6 @@
     <property role="EcuMT" value="6720495385591759180" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
-  <node concept="1TIwiD" id="5P3ZJ9da_0I">
-    <property role="TrG5h" value="Layout_Node" />
-    <property role="3GE5qa" value="layout" />
-    <property role="EcuMT" value="6720495385597071406" />
-    <ref role="1TJDcQ" to="suqv:5P3ZJ9da_0I" resolve="Layout_Box" />
-    <node concept="M6xJ_" id="5P3ZJ9da_1P" role="lGtFl">
-      <property role="Hh88m" value="layout" />
-      <node concept="trNpa" id="5P3ZJ9da_1T" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-      <node concept="tn0Fv" id="5P3ZJ9da_1V" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
-    </node>
-    <node concept="asaX9" id="1aXvPdDgfxF" role="lGtFl" />
-  </node>
-  <node concept="1TIwiD" id="20KyIMr0tK7">
-    <property role="TrG5h" value="Point" />
-    <property role="3GE5qa" value="layout" />
-    <property role="EcuMT" value="2319506556913310727" />
-    <ref role="1TJDcQ" to="suqv:20KyIMr0tK7" resolve="Point" />
-    <node concept="asaX9" id="1aXvPdDgfxO" role="lGtFl" />
-  </node>
-  <node concept="1TIwiD" id="20KyIMr0tM4">
-    <property role="TrG5h" value="Layout_Connection" />
-    <property role="3GE5qa" value="layout" />
-    <property role="EcuMT" value="2319506556913310852" />
-    <ref role="1TJDcQ" to="suqv:20KyIMr0tM4" resolve="Layout_Connection" />
-    <node concept="M6xJ_" id="20KyIMr0tM5" role="lGtFl">
-      <property role="Hh88m" value="connectionLayout" />
-      <node concept="trNpa" id="20KyIMr0tM9" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-      <node concept="tn0Fv" id="20KyIMr0tMb" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
-    </node>
-    <node concept="asaX9" id="1aXvPdDgfxy" role="lGtFl" />
-  </node>
   <node concept="1TIwiD" id="7vufT$lgFEI">
     <property role="TrG5h" value="Function_PaletteFolder" />
     <property role="3GE5qa" value="paletteFolder" />
@@ -984,26 +934,6 @@
     <property role="34LRSv" value="parameterObject" />
     <property role="EcuMT" value="8963411245958754161" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-  </node>
-  <node concept="1TIwiD" id="7L$rKAVfLie">
-    <property role="3GE5qa" value="layout" />
-    <property role="TrG5h" value="LayoutMap" />
-    <property role="EcuMT" value="8963411245960991886" />
-    <ref role="1TJDcQ" to="suqv:7L$rKAVfLie" resolve="LayoutMap" />
-    <node concept="M6xJ_" id="7L$rKAVfLi$" role="lGtFl">
-      <property role="Hh88m" value="layoutMap" />
-      <node concept="trNpa" id="7L$rKAVfLiG" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-    </node>
-    <node concept="asaX9" id="1aXvPdDgfxo" role="lGtFl" />
-  </node>
-  <node concept="1TIwiD" id="7L$rKAVfLiv">
-    <property role="3GE5qa" value="layout" />
-    <property role="TrG5h" value="LayoutMapEntry" />
-    <property role="EcuMT" value="8963411245960991903" />
-    <ref role="1TJDcQ" to="suqv:7L$rKAVfLiv" resolve="LayoutMapEntry" />
-    <node concept="asaX9" id="1aXvPdDgfxv" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="6Q0ZYbv$_K1">
     <property role="TrG5h" value="Content_GenericEdgeQuery" />

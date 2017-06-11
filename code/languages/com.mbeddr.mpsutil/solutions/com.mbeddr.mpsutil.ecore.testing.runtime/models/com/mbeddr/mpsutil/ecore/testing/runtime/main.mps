@@ -2,8 +2,8 @@
 <model ref="r:62e76a73-7fd3-4d03-9b49-0da2a82f5479(com.mbeddr.mpsutil.ecore.testing.runtime.main)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
   </languages>
@@ -20,7 +20,6 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
     <import index="hu10" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.common.util(com.mbeddr.mpsutil.ecore.stubs/)" />
-    <import index="ghn0" ref="r:e825f101-d38e-41ea-a0c1-6650f91e22f7(com.mbeddr.mpsutil.ecore.runtime.main)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -913,11 +912,11 @@
           <node concept="3cpWsn" id="6XBHSVMFqyV" role="3cpWs9">
             <property role="TrG5h" value="exporter" />
             <node concept="3uibUv" id="6XBHSVMGgsL" role="1tU5fm">
-              <ref role="3uigEE" to="ghn0:6TiIOkRA6CP" resolve="EcoreModelExporter" />
+              <ref role="3uigEE" to="rpb:6TiIOkRA6CP" resolve="EcoreModelExporter" />
             </node>
             <node concept="2ShNRf" id="6XBHSVMFqzW" role="33vP2m">
               <node concept="1pGfFk" id="6XBHSVMFqLw" role="2ShVmc">
-                <ref role="37wK5l" to="ghn0:6TiIOkRA6D2" resolve="EcoreModelExporter" />
+                <ref role="37wK5l" to="rpb:6TiIOkRA6D2" resolve="EcoreModelExporter" />
                 <node concept="37vLTw" id="4MUcKNHm4VL" role="37wK5m">
                   <ref role="3cqZAo" node="4MUcKNHlRWv" resolve="mpsModelInstance" />
                 </node>
@@ -937,7 +936,7 @@
               <ref role="3cqZAo" node="6XBHSVMFqyV" resolve="exporter" />
             </node>
             <node concept="liA8E" id="6XBHSVMGhVP" role="2OqNvi">
-              <ref role="37wK5l" to="ghn0:6TiIOkRA6CX" resolve="exportEcoreModel" />
+              <ref role="37wK5l" to="rpb:6TiIOkRA6CX" resolve="exportEcoreModel" />
             </node>
           </node>
         </node>
@@ -967,11 +966,11 @@
           <node concept="3cpWsn" id="6XBHSVMGlzE" role="3cpWs9">
             <property role="TrG5h" value="importer" />
             <node concept="3uibUv" id="6XBHSVMGlzF" role="1tU5fm">
-              <ref role="3uigEE" to="ghn0:6TiIOkRA79w" resolve="EcoreModelImporter" />
+              <ref role="3uigEE" to="rpb:6TiIOkRA79w" resolve="EcoreModelImporter" />
             </node>
             <node concept="2ShNRf" id="6XBHSVMGl_y" role="33vP2m">
               <node concept="1pGfFk" id="6XBHSVMGlNo" role="2ShVmc">
-                <ref role="37wK5l" to="ghn0:6TiIOkRA79Q" resolve="EcoreModelImporter" />
+                <ref role="37wK5l" to="rpb:6TiIOkRA79Q" resolve="EcoreModelImporter" />
                 <node concept="37vLTw" id="6XBHSVMGqfG" role="37wK5m">
                   <ref role="3cqZAo" node="4MUcKNHm4$K" resolve="importedModel" />
                 </node>
@@ -994,7 +993,7 @@
               <ref role="3cqZAo" node="6XBHSVMGlzE" resolve="importer" />
             </node>
             <node concept="liA8E" id="6XBHSVMGJnZ" role="2OqNvi">
-              <ref role="37wK5l" to="ghn0:6TiIOkRA79C" resolve="importEcoreModel" />
+              <ref role="37wK5l" to="rpb:6TiIOkRA79C" resolve="importEcoreModel" />
             </node>
           </node>
         </node>
@@ -1082,25 +1081,23 @@
               <node concept="3clFbS" id="4MUcKNHmaQU" role="3clFbx">
                 <node concept="3cpWs6" id="4MUcKNHmcf7" role="3cqZAp">
                   <node concept="3clFbT" id="4MUcKNHmcir" role="3cqZAk">
-                    <property role="3clFbU" value="false" />
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>
-              <node concept="3fqX7Q" id="4MUcKNHmc1U" role="3clFbw">
-                <node concept="2OqwBi" id="4MUcKNHmc1W" role="3fr31v">
-                  <node concept="2YIFZM" id="4MUcKNHmc1X" role="2Oq$k0">
-                    <ref role="37wK5l" to="mqum:6fymoI4Ry1f" resolve="compare" />
-                    <ref role="1Pybhc" to="mqum:3n2rqT9UxKL" resolve="MPSNodeComparator" />
-                    <node concept="37vLTw" id="4MUcKNHmc1Y" role="37wK5m">
-                      <ref role="3cqZAo" node="4MUcKNHm88W" resolve="nodeToFind" />
-                    </node>
-                    <node concept="37vLTw" id="4MUcKNHmc1Z" role="37wK5m">
-                      <ref role="3cqZAo" node="4MUcKNHm8Py" resolve="nod" />
-                    </node>
+              <node concept="2OqwBi" id="4MUcKNHmc1W" role="3clFbw">
+                <node concept="2YIFZM" id="4MUcKNHmc1X" role="2Oq$k0">
+                  <ref role="37wK5l" to="mqum:6fymoI4Ry1f" resolve="compare" />
+                  <ref role="1Pybhc" to="mqum:3n2rqT9UxKL" resolve="MPSNodeComparator" />
+                  <node concept="37vLTw" id="4MUcKNHmc1Y" role="37wK5m">
+                    <ref role="3cqZAo" node="4MUcKNHm88W" resolve="nodeToFind" />
                   </node>
-                  <node concept="liA8E" id="4MUcKNHmc20" role="2OqNvi">
-                    <ref role="37wK5l" to="mqum:DYlgnAAwiA" resolve="areEquals" />
+                  <node concept="37vLTw" id="4MUcKNHmc1Z" role="37wK5m">
+                    <ref role="3cqZAo" node="4MUcKNHm8Py" resolve="nod" />
                   </node>
+                </node>
+                <node concept="liA8E" id="4MUcKNHmc20" role="2OqNvi">
+                  <ref role="37wK5l" to="mqum:DYlgnAAwiA" resolve="areEquals" />
                 </node>
               </node>
             </node>
@@ -1117,9 +1114,7 @@
           </node>
         </node>
         <node concept="3cpWs6" id="4MUcKNHm8vr" role="3cqZAp">
-          <node concept="3clFbT" id="4MUcKNHmcsX" role="3cqZAk">
-            <property role="3clFbU" value="true" />
-          </node>
+          <node concept="3clFbT" id="4MUcKNHmcsX" role="3cqZAk" />
         </node>
       </node>
       <node concept="3Tm6S6" id="4MUcKNHm7P9" role="1B3o_S" />

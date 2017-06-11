@@ -4,7 +4,7 @@
   <languages>
     <use id="64d34fcd-ad02-4e73-aff8-a581124c2e30" name="jetbrains.mps.lang.findUsages" version="0" />
     <use id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -25,6 +25,8 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="19h7" ref="r:c367b380-739b-4331-a16f-a542455fc0c8(de.itemis.mps.editor.math.editor)" implicit="true" />
+    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
@@ -816,6 +818,27 @@
     <node concept="3EZMnI" id="7eOyx9r3k5E" role="2wV5jI">
       <node concept="PMmxH" id="74lwjTQ0ey8" role="3EZMnx">
         <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        <node concept="pkWqt" id="44fCN1fSEam" role="pqm2j">
+          <node concept="3clFbS" id="44fCN1fSEan" role="2VODD2">
+            <node concept="3clFbF" id="44fCN1fSEao" role="3cqZAp">
+              <node concept="3fqX7Q" id="44fCN1fSEap" role="3clFbG">
+                <node concept="2OqwBi" id="44fCN1fSEaq" role="3fr31v">
+                  <node concept="2OqwBi" id="44fCN1fSEar" role="2Oq$k0">
+                    <node concept="pncrf" id="44fCN1fSEas" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="44fCN1fSEat" role="2OqNvi">
+                      <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="44fCN1fSEau" role="2OqNvi">
+                    <node concept="chp4Y" id="44fCN1fSEav" role="cj9EA">
+                      <ref role="cht4Q" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="69uDFDbfr0t" role="3EZMnx">
         <property role="3F0ifm" value="unit" />
@@ -1115,6 +1138,27 @@
       <node concept="3EZMnI" id="1NpnWezQFsA" role="3EZMnx">
         <node concept="PMmxH" id="2FFd0A7BXYK" role="3EZMnx">
           <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+          <node concept="pkWqt" id="44fCN1fQnzA" role="pqm2j">
+            <node concept="3clFbS" id="44fCN1fQnzB" role="2VODD2">
+              <node concept="3clFbF" id="44fCN1fQnEM" role="3cqZAp">
+                <node concept="3fqX7Q" id="44fCN1fQs6B" role="3clFbG">
+                  <node concept="2OqwBi" id="44fCN1fQs6D" role="3fr31v">
+                    <node concept="2OqwBi" id="44fCN1fQs6E" role="2Oq$k0">
+                      <node concept="pncrf" id="44fCN1fQs6F" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="44fCN1fQs6G" role="2OqNvi">
+                        <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
+                      </node>
+                    </node>
+                    <node concept="1mIQ4w" id="44fCN1fQs6H" role="2OqNvi">
+                      <node concept="chp4Y" id="44fCN1fQs6I" role="cj9EA">
+                        <ref role="cht4Q" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="20xYXnqnFTa" role="3EZMnx">
           <property role="3F0ifm" value="eager" />

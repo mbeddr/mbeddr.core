@@ -2,7 +2,7 @@
 <model ref="r:41341472-eab2-4d54-9b4a-21077fbc1958(com.mbeddr.analyses.prism.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <use id="766348f7-6a67-4b85-9323-384840132299" name="de.itemis.mps.editor.math" version="-1" />
     <use id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -202,7 +202,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -1613,7 +1612,7 @@
               <node concept="2OqwBi" id="5OPKfxQ3lVT" role="3clFbG">
                 <node concept="7Obwk" id="5OPKfxQ3lWc" role="2Oq$k0" />
                 <node concept="1P9Npp" id="5OPKfxQ3lVV" role="2OqNvi">
-                  <node concept="3cpWsa" id="5OPKfxQ3lVW" role="1P9ThW">
+                  <node concept="37vLTw" id="5OPKfxQ3lVW" role="1P9ThW">
                     <ref role="3cqZAo" node="5OPKfxQ3lVN" resolve="pee" />
                   </node>
                 </node>
@@ -1623,7 +1622,7 @@
               <node concept="37vLTI" id="5OPKfxQ3lVY" role="3clFbG">
                 <node concept="7Obwk" id="5OPKfxQ3lWd" role="37vLTx" />
                 <node concept="2OqwBi" id="5OPKfxQ3lW0" role="37vLTJ">
-                  <node concept="3cpWsa" id="5OPKfxQ3lW1" role="2Oq$k0">
+                  <node concept="37vLTw" id="5OPKfxQ3lW1" role="2Oq$k0">
                     <ref role="3cqZAo" node="5OPKfxQ3lVN" resolve="pee" />
                   </node>
                   <node concept="3TrEf2" id="5OPKfxQ3lW2" role="2OqNvi">

@@ -1021,6 +1021,13 @@
           </node>
           <node concept="3clFbS" id="27wZW$IuG7m" role="2LFqv$">
             <node concept="3clFbJ" id="27wZW$IuKjH" role="3cqZAp">
+              <node concept="3clFbS" id="27wZW$IuKjK" role="3clFbx">
+                <node concept="3cpWs6" id="27wZW$IuR4t" role="3cqZAp">
+                  <node concept="2GrUjf" id="27wZW$IuRiV" role="3cqZAk">
+                    <ref role="2Gs0qQ" node="27wZW$IuG7k" resolve="md" />
+                  </node>
+                </node>
+              </node>
               <node concept="2OqwBi" id="27wZW$IuMMW" role="3clFbw">
                 <node concept="2OqwBi" id="15Mc8s7jfoY" role="2Oq$k0">
                   <node concept="2OqwBi" id="27wZW$IuLH7" role="2Oq$k0">
@@ -1054,13 +1061,6 @@
                         <property role="Xl_RC" value="." />
                       </node>
                     </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbS" id="27wZW$IuKjK" role="3clFbx">
-                <node concept="3cpWs6" id="27wZW$IuR4t" role="3cqZAp">
-                  <node concept="2GrUjf" id="27wZW$IuRiV" role="3cqZAk">
-                    <ref role="2Gs0qQ" node="27wZW$IuG7k" resolve="md" />
                   </node>
                 </node>
               </node>
@@ -1459,11 +1459,11 @@
               <node concept="2ShNRf" id="7$$BqUUWqD1" role="2GsD0m">
                 <node concept="1pGfFk" id="7$$BqUUWtxZ" role="2ShVmc">
                   <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;(java.util.Collection)" resolve="ArrayList" />
-                  <node concept="3uibUv" id="15Mc8s7ikTY" role="1pMfVU">
-                    <ref role="3uigEE" to="32g5:~ModulesMiner$ModuleHandle" resolve="ModulesMiner.ModuleHandle" />
-                  </node>
                   <node concept="37vLTw" id="7$$BqUUWuA2" role="37wK5m">
                     <ref role="3cqZAo" node="7$$BqUUW7Cz" resolve="unregisteredModules" />
+                  </node>
+                  <node concept="3uibUv" id="15Mc8s7ikTY" role="1pMfVU">
+                    <ref role="3uigEE" to="32g5:~ModulesMiner$ModuleHandle" resolve="ModulesMiner.ModuleHandle" />
                   </node>
                 </node>
               </node>
@@ -1631,6 +1631,9 @@
         <node concept="3cpWs8" id="6yXlhvg0p0s" role="3cqZAp">
           <node concept="3cpWsn" id="6yXlhvg0p0t" role="3cpWs9">
             <property role="TrG5h" value="moduleHandle" />
+            <node concept="3uibUv" id="6yXlhvg0p0u" role="1tU5fm">
+              <ref role="3uigEE" to="32g5:~ModulesMiner$ModuleHandle" resolve="ModulesMiner.ModuleHandle" />
+            </node>
             <node concept="2OqwBi" id="15Mc8s7hD9Y" role="33vP2m">
               <node concept="2ShNRf" id="15Mc8s7hlMx" role="2Oq$k0">
                 <node concept="1pGfFk" id="15Mc8s7hD4g" role="2ShVmc">
@@ -1643,9 +1646,6 @@
                   <ref role="3cqZAo" node="4RGMQ_4mWGy" resolve="moduleFile" />
                 </node>
               </node>
-            </node>
-            <node concept="3uibUv" id="6yXlhvg0p0u" role="1tU5fm">
-              <ref role="3uigEE" to="32g5:~ModulesMiner$ModuleHandle" resolve="ModulesMiner.ModuleHandle" />
             </node>
           </node>
         </node>
@@ -1700,14 +1700,14 @@
               </node>
               <node concept="3clFbF" id="7$$BqUUW8SC" role="3cqZAp">
                 <node concept="2OqwBi" id="7$$BqUUW92g" role="3clFbG">
+                  <node concept="37vLTw" id="7$$BqUUW8SB" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7$$BqUUW7Cz" resolve="unregisteredModules" />
+                  </node>
                   <node concept="liA8E" id="15Mc8s7j8v6" role="2OqNvi">
                     <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
                     <node concept="37vLTw" id="15Mc8s7j8VG" role="37wK5m">
                       <ref role="3cqZAo" node="6yXlhvg0p0t" resolve="moduleHandle" />
                     </node>
-                  </node>
-                  <node concept="37vLTw" id="7$$BqUUW8SB" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7$$BqUUW7Cz" resolve="unregisteredModules" />
                   </node>
                 </node>
               </node>

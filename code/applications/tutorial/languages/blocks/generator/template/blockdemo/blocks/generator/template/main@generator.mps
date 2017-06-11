@@ -43,7 +43,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
@@ -170,8 +169,8 @@
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -870,12 +869,14 @@
                                 <node concept="2OqwBi" id="2Pa5ezSkhtS" role="3clFbG">
                                   <node concept="2OqwBi" id="2Pa5ezSkhtr" role="2Oq$k0">
                                     <node concept="1PxgMI" id="2Pa5ezSkht4" role="2Oq$k0">
-                                      <ref role="1m5ApE" to="bgic:3NI0$JEbPna" resolve="CalcMethodBSI" />
                                       <node concept="2OqwBi" id="2Pa5ezSkhsE" role="1m5AlR">
                                         <node concept="3TrEf2" id="2Pa5ezSkhsF" role="2OqNvi">
                                           <ref role="3Tt5mk" to="bgic:3NI0$JEbN2T" resolve="impl" />
                                         </node>
                                         <node concept="30H73N" id="2Pa5ezSkhsG" role="2Oq$k0" />
+                                      </node>
+                                      <node concept="chp4Y" id="OnnrMNmSPo" role="3oSUPX">
+                                        <ref role="cht4Q" to="bgic:3NI0$JEbPna" resolve="CalcMethodBSI" />
                                       </node>
                                     </node>
                                     <node concept="3TrEf2" id="2Pa5ezSkhty" role="2OqNvi">
@@ -929,7 +930,7 @@
                                     <node concept="3clFbF" id="2Pa5ezSkhra" role="3cqZAp">
                                       <node concept="2OqwBi" id="2Pa5ezSkhso" role="3clFbG">
                                         <node concept="2OqwBi" id="2Pa5ezSkhrw" role="2Oq$k0">
-                                          <node concept="3cpWs2" id="2Pa5ezSkhrb" role="2Oq$k0">
+                                          <node concept="37vLTw" id="2Pa5ezSkhrb" role="2Oq$k0">
                                             <ref role="3cqZAo" node="2Pa5ezSkhr7" resolve="it" />
                                           </node>
                                           <node concept="3TrEf2" id="2Pa5ezSkhrB" role="2OqNvi">

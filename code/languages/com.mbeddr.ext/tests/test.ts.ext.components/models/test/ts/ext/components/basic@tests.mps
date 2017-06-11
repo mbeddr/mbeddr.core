@@ -7,7 +7,7 @@
     <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="0" />
     <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="1" />
     <use id="e3420481-604b-464e-bc1b-06ecfc1f9dfc" name="com.mbeddr.ext.components.units" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
@@ -232,7 +232,9 @@
       <concept id="8811614583515725893" name="com.mbeddr.core.udt.structure.EnumType" flags="ng" index="1AkAi2">
         <reference id="8811614583515725894" name="enum" index="1AkAi1" />
       </concept>
-      <concept id="8811614583515725853" name="com.mbeddr.core.udt.structure.EnumLiteral" flags="ng" index="1AkAjq" />
+      <concept id="8811614583515725853" name="com.mbeddr.core.udt.structure.EnumLiteral" flags="ng" index="1AkAjq">
+        <child id="8811614583515725856" name="init" index="1AkAjB" />
+      </concept>
       <concept id="8811614583515725851" name="com.mbeddr.core.udt.structure.EnumDeclaration" flags="ng" index="1AkAjs">
         <child id="8811614583515725857" name="literals" index="1AkAjA" />
       </concept>
@@ -256,6 +258,13 @@
       <concept id="3788988821851860886" name="com.mbeddr.core.modules.structure.GlobalConstantDeclaration" flags="ng" index="4WHVk" />
       <concept id="3788988821852026523" name="com.mbeddr.core.modules.structure.GlobalConstantRef" flags="ng" index="4ZOvp">
         <reference id="3376775282622611130" name="constant" index="2DPCA0" />
+      </concept>
+      <concept id="6116558314501417952" name="com.mbeddr.core.modules.structure.HeaderDescriptor" flags="ng" index="rcWE1" />
+      <concept id="6116558314501417921" name="com.mbeddr.core.modules.structure.ExternalModule" flags="ng" index="rcWEw">
+        <child id="6116558314501417978" name="descriptors" index="rcWEr" />
+      </concept>
+      <concept id="6116558314501417934" name="com.mbeddr.core.modules.structure.ExternalResourceDescriptor" flags="ng" index="rcWEJ">
+        <property id="6116558314501417936" name="path" index="rcWEL" />
       </concept>
       <concept id="6777508457268164807" name="com.mbeddr.core.modules.structure.SuppressDataFlowWarning" flags="ng" index="BCzjf" />
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -2703,6 +2712,13 @@
           <node concept="1AkAjq" id="7moPk05eAAB" role="1AkAjA">
             <property role="TrG5h" value="c" />
           </node>
+          <node concept="7CXmI" id="1NhHcUCB1ZN" role="lGtFl">
+            <node concept="1TM$A" id="1NhHcUCB1ZO" role="7EUXB">
+              <node concept="2PYRI3" id="1NhHcUCB39B" role="3lydEf">
+                <ref role="39XzEq" to="e39d:3AX8Th8g55P" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2NXPZ9" id="7moPk05eAAC" role="N3F5h">
           <property role="TrG5h" value="empty_1395393598587_2" />
@@ -2719,20 +2735,15 @@
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
-            <node concept="19RgSI" id="7moPk05eBo9" role="1UOdpc">
+            <node concept="1KB$IV" id="7moPk05eTHg" role="lGtFl" />
+            <node concept="19RgSI" id="1NhHcUC_xqy" role="1UOdpc">
               <property role="TrG5h" value="me" />
-              <node concept="1AkAi2" id="7moPk05eBo8" role="2C2TGm">
+              <node concept="1AkAi2" id="1NhHcUC_xqx" role="2C2TGm">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
                 <ref role="1AkAi1" node="7moPk05eAA$" resolve="MyEnum" />
               </node>
-              <node concept="7CXmI" id="2PeDUX_DAK9" role="lGtFl">
-                <node concept="1TM$A" id="6qOUCDpKa5d" role="7EUXB">
-                  <node concept="2PYRI3" id="6qOUCDpKa5e" role="3lydEf">
-                    <ref role="39XzEq" to="e39d:7moPk0534KA" />
-                  </node>
-                </node>
-              </node>
             </node>
-            <node concept="1KB$IV" id="7moPk05eTHg" role="lGtFl" />
           </node>
         </node>
         <node concept="2NXPZ9" id="7moPk05eAAI" role="N3F5h">
@@ -2975,11 +2986,7 @@
               </node>
               <node concept="Ea8Gl" id="x1qBlirAP" role="3XIe9u">
                 <node concept="7CXmI" id="x1qBlirCk" role="lGtFl">
-                  <node concept="1TM$A" id="6qOUCDpKJAr" role="7EUXB">
-                    <node concept="2PYRI3" id="6qOUCDpKJAs" role="3lydEf">
-                      <ref role="39XzEq" to="j807:$mHaGow4iO" />
-                    </node>
-                  </node>
+                  <node concept="1TM$A" id="6qOUCDpKJAr" role="7EUXB" />
                 </node>
               </node>
             </node>
@@ -4601,6 +4608,82 @@
           <ref role="3GEb4d" node="1Ici13be$gF" resolve="flexible_array_helper" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="1NhHcUCz3rS">
+    <property role="TrG5h" value="TestImportReexport" />
+    <node concept="1qefOq" id="1NhHcUCz3_t" role="1SKRRt">
+      <node concept="N3F5e" id="3AX8Th8_W7_" role="1qenE9">
+        <property role="TrG5h" value="user_config" />
+        <node concept="2EWCuY" id="2BM8uGkv6Q2" role="N3F5h">
+          <property role="2OOxQR" value="true" />
+          <property role="TrG5h" value="AbstractDigitalIOPinImpl" />
+          <node concept="3Khz0B" id="1OG5nHv$Qhj" role="2RW2fA" />
+          <node concept="2EWDwb" id="1OG5nHv$TiQ" role="2RW2fA">
+            <property role="TrG5h" value="configurePin" />
+            <node concept="3XIRFW" id="1OG5nHv$TiR" role="2EWMhI" />
+            <node concept="19Rifw" id="1OG5nHv$Sr1" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="19RgSI" id="1OG5nHv$TUn" role="1UOdpc">
+              <property role="TrG5h" value="ioConfig" />
+              <node concept="1AkAi2" id="1OG5nHv$TUm" role="2C2TGm">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="1AkAi1" node="1wsykhM30HT" resolve="am_config_io" />
+              </node>
+            </node>
+          </node>
+          <node concept="3Khz0B" id="3fbDeb$$822" role="2RW2fA" />
+        </node>
+        <node concept="7CXmI" id="3AX8Th8_W7P" role="lGtFl">
+          <node concept="7OXhh" id="3AX8Th8_W7Q" role="7EUXB" />
+        </node>
+        <node concept="3GEVxB" id="3AX8Th8_XHz" role="2OODSX">
+          <ref role="3GEb4d" node="1NhHcUCz5Vv" resolve="am_rpi_advaboard" />
+          <node concept="7CXmI" id="3AX8Th8_ZZi" role="lGtFl">
+            <node concept="1TM$A" id="3AX8Th8_ZZj" role="7EUXB">
+              <node concept="2PYRI3" id="4RorRaIffHJ" role="3lydEf">
+                <ref role="39XzEq" to="e39d:3AX8Th8g57R" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="rcWEw" id="1NhHcUCz5Vv">
+    <property role="TrG5h" value="am_rpi_advaboard" />
+    <node concept="1AkAjs" id="1wsykhM30HT" role="N3F5h">
+      <property role="TrG5h" value="am_config_io" />
+      <node concept="1AkAjq" id="1wsykhM30Rd" role="1AkAjA">
+        <property role="TrG5h" value="AM_INPUT" />
+        <node concept="3TlMh9" id="1wsykhM30S1" role="1AkAjB">
+          <property role="2hmy$m" value="3" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="1wsykhM30Xp" role="1AkAjA">
+        <property role="TrG5h" value="AM_OUTPUT" />
+        <node concept="3TlMh9" id="1wsykhM3196" role="1AkAjB">
+          <property role="2hmy$m" value="2" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="1wsykhM31eu" role="1AkAjA">
+        <property role="TrG5h" value="AM_OUTPUT_OPENDRAIN" />
+        <node concept="3TlMh9" id="1wsykhM31ev" role="1AkAjB">
+          <property role="2hmy$m" value="2" />
+        </node>
+      </node>
+      <node concept="1AkAjq" id="1wsykhM32QD" role="1AkAjA">
+        <property role="TrG5h" value="AM_OUTPUT_PUSHPULL" />
+        <node concept="3TlMh9" id="1wsykhM32QE" role="1AkAjB">
+          <property role="2hmy$m" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="rcWE1" id="1NhHcUCz5Vw" role="rcWEr">
+      <property role="rcWEL" value="&lt;am_rpi_advaboard.h&gt;" />
     </node>
   </node>
 </model>

@@ -8,8 +8,8 @@
     <import index="m373" ref="r:4095af4f-a097-4799-aaa9-03df087ddfa6(jetbrains.mps.baseLanguage.javadoc.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -1148,19 +1148,20 @@
       <ref role="PrY4T" node="7a3nU354JVn" resolve="IJoinTypeDef" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1UJP1A0V$Ki">
-    <property role="EcuMT" value="2211219148064574482" />
+  <node concept="1TIwiD" id="7a3nU34ZPCK">
+    <property role="EcuMT" value="8251544086377355824" />
     <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="RuntimeJoinType" />
-    <property role="34LRSv" value="join" />
-    <property role="R4oN_" value="join type" />
-    <ref role="1TJDcQ" to="tp25:gzTqbfa" resolve="SNodeType" />
-    <node concept="1TJgyj" id="1UJP1A0VCHU" role="1TKVEi">
-      <property role="IQ2ns" value="2211219148064590714" />
+    <property role="TrG5h" value="JoinType" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7a3nU34ZPCO" role="1TKVEi">
+      <property role="IQ2ns" value="8251544086377355828" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="joinTypeDef" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7a3nU354JVn" resolve="IJoinTypeDef" />
+    </node>
+    <node concept="PrWs8" id="7a3nU34ZPCL" role="PzmwI">
+      <ref role="PrY4T" node="6VTlRjrCuQt" resolve="IIncAType" />
     </node>
   </node>
   <node concept="PlHQZ" id="7a3nU351sZC">
@@ -1189,20 +1190,71 @@
       <ref role="20lvS9" node="6VTlRjrCuQt" resolve="IIncAType" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7a3nU34ZPCK">
-    <property role="EcuMT" value="8251544086377355824" />
+  <node concept="1TIwiD" id="1UJP1A0V$Ki">
+    <property role="EcuMT" value="2211219148064574482" />
     <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="JoinType" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7a3nU34ZPCO" role="1TKVEi">
-      <property role="IQ2ns" value="8251544086377355828" />
+    <property role="TrG5h" value="JoinSNodeType" />
+    <property role="34LRSv" value="join" />
+    <property role="R4oN_" value="join type" />
+    <ref role="1TJDcQ" to="tp25:gzTqbfa" resolve="SNodeType" />
+    <node concept="1TJgyj" id="1UJP1A0VCHU" role="1TKVEi">
+      <property role="IQ2ns" value="2211219148064590714" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="joinTypeDef" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7a3nU354JVn" resolve="IJoinTypeDef" />
     </node>
-    <node concept="PrWs8" id="7a3nU34ZPCL" role="PzmwI">
-      <ref role="PrY4T" node="6VTlRjrCuQt" resolve="IIncAType" />
+  </node>
+  <node concept="1TIwiD" id="6F2cd7xz1Cf">
+    <property role="EcuMT" value="7692764791492581903" />
+    <property role="3GE5qa" value="values" />
+    <property role="TrG5h" value="ConstantReference" />
+    <property role="34LRSv" value="&lt;{constant}&gt;" />
+    <ref role="1TJDcQ" node="RjyNapPty$" resolve="AbstractLiteralValue" />
+    <node concept="1TJgyj" id="6F2cd7xz1Cj" role="1TKVEi">
+      <property role="IQ2ns" value="7692764791492581907" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="constant" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6F2cd7xyXvp" resolve="IConstant" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6F2cd7xyXvp">
+    <property role="EcuMT" value="7692764791492564953" />
+    <property role="3GE5qa" value="content" />
+    <property role="TrG5h" value="IConstant" />
+    <node concept="1TJgyj" id="6KdnYMOWIlE" role="1TKVEi">
+      <property role="IQ2ns" value="7785984801046193514" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyj" id="6KdnYMOWGVj" role="1TKVEi">
+      <property role="IQ2ns" value="7785984801046187731" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="concept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+    <node concept="PrWs8" id="6F2cd7xyXvq" role="PrDN$">
+      <ref role="PrY4T" node="7a3nU351sZC" resolve="ISharedPatternModuleContent" />
+    </node>
+    <node concept="PrWs8" id="6F2cd7xDhL6" role="PrDN$">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+    <node concept="PrWs8" id="6KdnYMOZb1Q" role="PrDN$">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6F2cd7xyXvQ">
+    <property role="EcuMT" value="7692764791492564982" />
+    <property role="3GE5qa" value="content" />
+    <property role="TrG5h" value="Constant" />
+    <property role="34LRSv" value="constant" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6F2cd7xyXvR" role="PzmwI">
+      <ref role="PrY4T" node="6F2cd7xyXvp" resolve="IConstant" />
     </node>
   </node>
 </model>

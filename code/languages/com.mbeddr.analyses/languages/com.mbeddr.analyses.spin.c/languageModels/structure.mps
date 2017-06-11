@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -26,6 +25,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -62,6 +62,7 @@
     <property role="TrG5h" value="CDecl" />
     <property role="34LRSv" value="c_decl" />
     <property role="EcuMT" value="7420192473454475067" />
+    <property role="R4oN_" value="Promela c_decl" />
     <ref role="1TJDcQ" to="x27k:5DwX9xlExfL" resolve="Section" />
     <node concept="PrWs8" id="6rTOrQxhZt4" role="PzmwI">
       <ref role="PrY4T" to="ir22:GpUw9S5_Xa" resolve="IPromelaModelContent" />
@@ -71,13 +72,16 @@
     <property role="TrG5h" value="CCodeStmt" />
     <property role="34LRSv" value="c_code" />
     <property role="EcuMT" value="7420192473454530718" />
-    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="6rTOrQxlzCt" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="stmts" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7420192473455409693" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="7Hmzdkr1hpM" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="6rTOrQxiyn3">
@@ -125,8 +129,9 @@
   </node>
   <node concept="1TIwiD" id="6rTOrQxjNFE">
     <property role="TrG5h" value="ProcRef" />
-    <property role="34LRSv" value="proc_ref" />
+    <property role="34LRSv" value="P" />
     <property role="EcuMT" value="7420192473454951146" />
+    <property role="R4oN_" value="reference to a process" />
     <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="6rTOrQxjNFF" role="1TKVEi">
       <property role="20lmBu" value="reference" />

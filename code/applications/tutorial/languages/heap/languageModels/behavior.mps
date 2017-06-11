@@ -2,7 +2,7 @@
 <model ref="r:fce16638-7431-4d47-8345-49d2d2f1e8b1(mbeddr.tutorial.heap.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -127,8 +127,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -231,9 +231,11 @@
                   <ref role="3cqZAo" node="1sIJ_AYxVw1" resolve="steppable" />
                 </node>
                 <node concept="1PxgMI" id="1sIJ_AYxVyb" role="37vLTx">
-                  <ref role="1m5ApE" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
                   <node concept="37vLTw" id="6Jhc0CXtV2h" role="1m5AlR">
                     <ref role="3cqZAo" node="1sIJ_AYxVu_" resolve="childNode" />
+                  </node>
+                  <node concept="chp4Y" id="OnnrMNmSPz" role="3oSUPX">
+                    <ref role="cht4Q" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
                   </node>
                 </node>
               </node>
@@ -304,9 +306,11 @@
                   </node>
                   <node concept="2WmjW8" id="1sIJ_AYxVzL" role="2OqNvi">
                     <node concept="1PxgMI" id="1sIJ_AYxV$8" role="25WWJ7">
-                      <ref role="1m5ApE" to="rijl:6GXPbpLk5rC" resolve="SafeHeapVar" />
                       <node concept="37vLTw" id="6Jhc0CXtUVJ" role="1m5AlR">
                         <ref role="3cqZAo" node="1sIJ_AYxVw1" resolve="steppable" />
+                      </node>
+                      <node concept="chp4Y" id="OnnrMNmSPy" role="3oSUPX">
+                        <ref role="cht4Q" to="rijl:6GXPbpLk5rC" resolve="SafeHeapVar" />
                       </node>
                     </node>
                   </node>

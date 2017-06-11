@@ -32,8 +32,8 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -518,36 +518,11 @@
                       <node concept="3cpWsn" id="6KI2Y3YZT5j" role="3cpWs9">
                         <property role="TrG5h" value="path" />
                         <node concept="17QB3L" id="6KI2Y3YZT5k" role="1tU5fm" />
-                        <node concept="3cpWs3" id="6KI2Y3YZT5l" role="33vP2m">
-                          <node concept="2OqwBi" id="6KI2Y3YZT5m" role="3uHU7w">
-                            <node concept="2YIFZM" id="6KI2Y3YZT5n" role="2Oq$k0">
-                              <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
-                              <ref role="37wK5l" to="unno:7WvVJ3rORmu" resolve="getModelLongName" />
-                              <node concept="2GrUjf" id="6KI2Y3YZTzH" role="37wK5m">
-                                <ref role="2Gs0qQ" node="6KI2Y3YZS_F" resolve="_model" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="6KI2Y3YZT5p" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
-                              <node concept="Xl_RD" id="6KI2Y3YZT5q" role="37wK5m">
-                                <property role="Xl_RC" value="\\." />
-                              </node>
-                              <node concept="Xl_RD" id="6KI2Y3YZT5r" role="37wK5m">
-                                <property role="Xl_RC" value="/" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3cpWs3" id="6KI2Y3YZT5s" role="3uHU7B">
-                            <node concept="2YIFZM" id="6KI2Y3YZT5t" role="3uHU7B">
-                              <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
-                              <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                              <node concept="2GrUjf" id="6KI2Y3YZTuN" role="37wK5m">
-                                <ref role="2Gs0qQ" node="6KI2Y3YZS_F" resolve="_model" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="6KI2Y3YZT5v" role="3uHU7w">
-                              <property role="Xl_RC" value="/" />
-                            </node>
+                        <node concept="2YIFZM" id="6KI2Y3YZT5t" role="33vP2m">
+                          <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
+                          <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+                          <node concept="2GrUjf" id="6KI2Y3YZTuN" role="37wK5m">
+                            <ref role="2Gs0qQ" node="6KI2Y3YZS_F" resolve="_model" />
                           </node>
                         </node>
                       </node>

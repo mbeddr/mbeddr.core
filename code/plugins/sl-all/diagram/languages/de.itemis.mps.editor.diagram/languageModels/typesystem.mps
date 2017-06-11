@@ -31,9 +31,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431790189" name="jetbrains.mps.baseLanguage.structure.Type" flags="in" index="33vP2l" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
@@ -47,7 +44,6 @@
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -126,7 +122,6 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -188,11 +183,11 @@
                 <ref role="1YBMHb" node="2ZLA1heFc4T" resolve="node" />
               </node>
               <node concept="3TrEf2" id="2ZLA1heFcsu" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:2ZLA1heFc3W" />
+                <ref role="3Tt5mk" to="2qld:2ZLA1heFc3W" resolve="parameter" />
               </node>
             </node>
             <node concept="3TrEf2" id="2ZLA1heFcLd" role="2OqNvi">
-              <ref role="3Tt5mk" to="2qld:2ZLA1heEHFl" />
+              <ref role="3Tt5mk" to="2qld:2ZLA1heEHFl" resolve="type" />
             </node>
           </node>
         </node>
@@ -248,7 +243,7 @@
                 <ref role="1YBMHb" node="7L$rKAV6IkP" resolve="node" />
               </node>
               <node concept="3TrEf2" id="6Q0ZYbvCJhz" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:6Q0ZYbv$Dii" />
+                <ref role="3Tt5mk" to="2qld:6Q0ZYbv$Dii" resolve="id" />
               </node>
             </node>
           </node>
@@ -288,7 +283,7 @@
               </node>
             </node>
             <node concept="3TrEf2" id="6Q0ZYbvCJ_W" role="2OqNvi">
-              <ref role="3Tt5mk" to="2qld:6Q0ZYbv$Dig" />
+              <ref role="3Tt5mk" to="2qld:6Q0ZYbv$Dig" resolve="parameterType" />
             </node>
           </node>
         </node>
@@ -374,7 +369,7 @@
                 <ref role="1YBMHb" node="5FQFTBpKQUj" resolve="node" />
               </node>
               <node concept="3TrEf2" id="5FQFTBpLa9_" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:5FQFTBpGi2N" />
+                <ref role="3Tt5mk" to="2qld:5FQFTBpGi2N" resolve="targetId" />
               </node>
             </node>
           </node>
@@ -403,7 +398,7 @@
                 <ref role="1YBMHb" node="5FQFTBpL$Fs" resolve="node" />
               </node>
               <node concept="3TrEf2" id="5FQFTBpL_1r" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:5FQFTBpGi3z" />
+                <ref role="3Tt5mk" to="2qld:5FQFTBpGi3z" resolve="portName" />
               </node>
             </node>
           </node>
@@ -452,7 +447,7 @@
                 </node>
               </node>
               <node concept="3TrEf2" id="1HYYbxFZZVh" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:5FQFTBpX7N2" />
+                <ref role="3Tt5mk" to="2qld:5FQFTBpX7N2" resolve="query" />
               </node>
             </node>
           </node>
@@ -511,181 +506,6 @@
       <ref role="1YaFvo" to="2qld:7sHDEc2EhvQ" resolve="ThisNodeExpression" />
     </node>
   </node>
-  <node concept="18kY7G" id="1aXvPdDj6qk">
-    <property role="TrG5h" value="check_LayoutMap" />
-    <property role="3GE5qa" value="layout" />
-    <node concept="3clFbS" id="1aXvPdDj6_j" role="18ibNy">
-      <node concept="2MkqsV" id="56Tfdun3eTV" role="3cqZAp">
-        <node concept="3cpWs3" id="56Tfdun3eTW" role="2MkJ7o">
-          <node concept="Xl_RD" id="56Tfdun3eTX" role="3uHU7w">
-            <property role="Xl_RC" value=". Use 'Tools -&gt; Enhancements -&gt; Migrate Diagram Layout Data'" />
-          </node>
-          <node concept="3cpWs3" id="56Tfdun3eTY" role="3uHU7B">
-            <node concept="Xl_RD" id="56Tfdun3eTZ" role="3uHU7B">
-              <property role="Xl_RC" value="Deprecated concept " />
-            </node>
-            <node concept="2YIFZM" id="56Tfdun3eU0" role="3uHU7w">
-              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-              <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
-              <node concept="2OqwBi" id="56Tfdun3eU1" role="37wK5m">
-                <node concept="1YBJjd" id="56Tfdun3eU2" role="2Oq$k0">
-                  <ref role="1YBMHb" node="1aXvPdDj6_l" resolve="node" />
-                </node>
-                <node concept="3NT_Vc" id="56Tfdun3eU3" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1YBJjd" id="56Tfdun3eU4" role="2OEOjV">
-          <ref role="1YBMHb" node="1aXvPdDj6_l" resolve="node" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="1aXvPdDj6_l" role="1YuTPh">
-      <property role="TrG5h" value="node" />
-      <ref role="1YaFvo" to="2qld:7L$rKAVfLie" resolve="LayoutMap" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="1aXvPdDmYZD">
-    <property role="TrG5h" value="check_LayoutMapEntry" />
-    <property role="3GE5qa" value="layout" />
-    <node concept="3clFbS" id="1aXvPdDmYZE" role="18ibNy">
-      <node concept="2MkqsV" id="56Tfdun3gTj" role="3cqZAp">
-        <node concept="3cpWs3" id="56Tfdun3gTk" role="2MkJ7o">
-          <node concept="Xl_RD" id="56Tfdun3gTl" role="3uHU7w">
-            <property role="Xl_RC" value=". Use 'Tools -&gt; Enhancements -&gt; Migrate Diagram Layout Data'" />
-          </node>
-          <node concept="3cpWs3" id="56Tfdun3gTm" role="3uHU7B">
-            <node concept="Xl_RD" id="56Tfdun3gTn" role="3uHU7B">
-              <property role="Xl_RC" value="Deprecated concept " />
-            </node>
-            <node concept="2YIFZM" id="56Tfdun3gTo" role="3uHU7w">
-              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-              <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
-              <node concept="2OqwBi" id="56Tfdun3gTp" role="37wK5m">
-                <node concept="1YBJjd" id="56Tfdun3gTq" role="2Oq$k0">
-                  <ref role="1YBMHb" node="1aXvPdDmYZG" resolve="node" />
-                </node>
-                <node concept="3NT_Vc" id="56Tfdun3gTr" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1YBJjd" id="56Tfdun3gTs" role="2OEOjV">
-          <ref role="1YBMHb" node="1aXvPdDmYZG" resolve="node" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="1aXvPdDmYZG" role="1YuTPh">
-      <property role="TrG5h" value="node" />
-      <ref role="1YaFvo" to="2qld:7L$rKAVfLiv" resolve="LayoutMapEntry" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="1aXvPdDmZ0a">
-    <property role="TrG5h" value="check_Layout_Connection" />
-    <property role="3GE5qa" value="layout" />
-    <node concept="3clFbS" id="1aXvPdDmZ0b" role="18ibNy">
-      <node concept="2MkqsV" id="56Tfdun3h9y" role="3cqZAp">
-        <node concept="3cpWs3" id="56Tfdun3h9z" role="2MkJ7o">
-          <node concept="Xl_RD" id="56Tfdun3h9$" role="3uHU7w">
-            <property role="Xl_RC" value=". Use 'Tools -&gt; Enhancements -&gt; Migrate Diagram Layout Data'" />
-          </node>
-          <node concept="3cpWs3" id="56Tfdun3h9_" role="3uHU7B">
-            <node concept="Xl_RD" id="56Tfdun3h9A" role="3uHU7B">
-              <property role="Xl_RC" value="Deprecated concept " />
-            </node>
-            <node concept="2YIFZM" id="56Tfdun3h9B" role="3uHU7w">
-              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-              <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
-              <node concept="2OqwBi" id="56Tfdun3h9C" role="37wK5m">
-                <node concept="1YBJjd" id="56Tfdun3h9D" role="2Oq$k0">
-                  <ref role="1YBMHb" node="1aXvPdDmZ0d" resolve="node" />
-                </node>
-                <node concept="3NT_Vc" id="56Tfdun3h9E" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1YBJjd" id="56Tfdun3h9F" role="2OEOjV">
-          <ref role="1YBMHb" node="1aXvPdDmZ0d" resolve="node" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="1aXvPdDmZ0d" role="1YuTPh">
-      <property role="TrG5h" value="node" />
-      <ref role="1YaFvo" to="2qld:20KyIMr0tM4" resolve="Layout_Connection" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="1aXvPdDmZ0F">
-    <property role="TrG5h" value="check_Layout_Node" />
-    <property role="3GE5qa" value="layout" />
-    <node concept="3clFbS" id="1aXvPdDmZ0G" role="18ibNy">
-      <node concept="2MkqsV" id="56Tfdun3hq7" role="3cqZAp">
-        <node concept="3cpWs3" id="56Tfdun3hq8" role="2MkJ7o">
-          <node concept="Xl_RD" id="56Tfdun3hq9" role="3uHU7w">
-            <property role="Xl_RC" value=". Use 'Tools -&gt; Enhancements -&gt; Migrate Diagram Layout Data'" />
-          </node>
-          <node concept="3cpWs3" id="56Tfdun3hqa" role="3uHU7B">
-            <node concept="Xl_RD" id="56Tfdun3hqb" role="3uHU7B">
-              <property role="Xl_RC" value="Deprecated concept " />
-            </node>
-            <node concept="2YIFZM" id="56Tfdun3hqc" role="3uHU7w">
-              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-              <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
-              <node concept="2OqwBi" id="56Tfdun3hqd" role="37wK5m">
-                <node concept="1YBJjd" id="56Tfdun3hqe" role="2Oq$k0">
-                  <ref role="1YBMHb" node="1aXvPdDmZ0I" resolve="node" />
-                </node>
-                <node concept="3NT_Vc" id="56Tfdun3hqf" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1YBJjd" id="56Tfdun3hqg" role="2OEOjV">
-          <ref role="1YBMHb" node="1aXvPdDmZ0I" resolve="node" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="1aXvPdDmZ0I" role="1YuTPh">
-      <property role="TrG5h" value="node" />
-      <ref role="1YaFvo" to="2qld:5P3ZJ9da_0I" resolve="Layout_Node" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="1aXvPdDmZ1c">
-    <property role="TrG5h" value="check_Point" />
-    <property role="3GE5qa" value="layout" />
-    <node concept="3clFbS" id="1aXvPdDmZ1d" role="18ibNy">
-      <node concept="2MkqsV" id="56Tfdun3hEh" role="3cqZAp">
-        <node concept="3cpWs3" id="56Tfdun3hEi" role="2MkJ7o">
-          <node concept="Xl_RD" id="56Tfdun3hEj" role="3uHU7w">
-            <property role="Xl_RC" value=". Use 'Tools -&gt; Enhancements -&gt; Migrate Diagram Layout Data'" />
-          </node>
-          <node concept="3cpWs3" id="56Tfdun3hEk" role="3uHU7B">
-            <node concept="Xl_RD" id="56Tfdun3hEl" role="3uHU7B">
-              <property role="Xl_RC" value="Deprecated concept " />
-            </node>
-            <node concept="2YIFZM" id="56Tfdun3hEm" role="3uHU7w">
-              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-              <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
-              <node concept="2OqwBi" id="56Tfdun3hEn" role="37wK5m">
-                <node concept="1YBJjd" id="56Tfdun3hEo" role="2Oq$k0">
-                  <ref role="1YBMHb" node="1aXvPdDmZ1f" resolve="node" />
-                </node>
-                <node concept="3NT_Vc" id="56Tfdun3hEp" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1YBJjd" id="56Tfdun3hEq" role="2OEOjV">
-          <ref role="1YBMHb" node="1aXvPdDmZ1f" resolve="node" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="1aXvPdDmZ1f" role="1YuTPh">
-      <property role="TrG5h" value="node" />
-      <ref role="1YaFvo" to="2qld:20KyIMr0tK7" resolve="Point" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="2eQzkDKPuOg">
     <property role="TrG5h" value="typeof_CellModel_DiagramConnector" />
     <node concept="3clFbS" id="2eQzkDKPuOh" role="18ibNy">
@@ -702,7 +522,7 @@
                 <ref role="1YBMHb" node="2eQzkDKPuOj" resolve="node" />
               </node>
               <node concept="3TrEf2" id="2eQzkDKPvp1" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:5tjb9gSCSH" />
+                <ref role="3Tt5mk" to="2qld:5tjb9gSCSH" resolve="reverseDirection" />
               </node>
             </node>
           </node>
@@ -729,11 +549,11 @@
                 <ref role="1YBMHb" node="2eQzkDLzWnI" resolve="node" />
               </node>
               <node concept="3TrEf2" id="2eQzkDLzWMk" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:6uo2fN6gOXM" />
+                <ref role="3Tt5mk" to="2qld:6uo2fN6gOXM" resolve="shape" />
               </node>
             </node>
             <node concept="3Tsc0h" id="2eQzkDLzXik" role="2OqNvi">
-              <ref role="3TtcxE" to="2qld:2ZLA1heEHKY" />
+              <ref role="3TtcxE" to="2qld:2ZLA1heEHKY" resolve="parameters" />
             </node>
           </node>
         </node>
@@ -746,7 +566,7 @@
               <ref role="1YBMHb" node="2eQzkDLzWnI" resolve="node" />
             </node>
             <node concept="3Tsc0h" id="2eQzkDLzXLg" role="2OqNvi">
-              <ref role="3TtcxE" to="2qld:2ZLA1heRlEZ" />
+              <ref role="3TtcxE" to="2qld:2ZLA1heRlEZ" resolve="parameterValues" />
             </node>
           </node>
         </node>
@@ -758,7 +578,7 @@
                   <ref role="3M$S_o" node="2eQzkDLzWs9" resolve="param" />
                 </node>
                 <node concept="3TrEf2" id="2eQzkDLzYir" role="2OqNvi">
-                  <ref role="3Tt5mk" to="2qld:2ZLA1heEHFl" />
+                  <ref role="3Tt5mk" to="2qld:2ZLA1heEHFl" resolve="type" />
                 </node>
               </node>
             </node>
@@ -786,11 +606,11 @@
                       <ref role="1YBMHb" node="2eQzkDLzWnI" resolve="node" />
                     </node>
                     <node concept="3TrEf2" id="2eQzkDL$7X8" role="2OqNvi">
-                      <ref role="3Tt5mk" to="2qld:6uo2fN6gOXM" />
+                      <ref role="3Tt5mk" to="2qld:6uo2fN6gOXM" resolve="shape" />
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="2eQzkDL$7X9" role="2OqNvi">
-                    <ref role="3TtcxE" to="2qld:2ZLA1heEHKY" />
+                    <ref role="3TtcxE" to="2qld:2ZLA1heEHKY" resolve="parameters" />
                   </node>
                 </node>
                 <node concept="34oBXx" id="2eQzkDL$7Xa" role="2OqNvi" />
@@ -808,7 +628,7 @@
                 <ref role="1YBMHb" node="2eQzkDLzWnI" resolve="node" />
               </node>
               <node concept="3Tsc0h" id="2eQzkDL$4YM" role="2OqNvi">
-                <ref role="3TtcxE" to="2qld:2ZLA1heRlEZ" />
+                <ref role="3TtcxE" to="2qld:2ZLA1heRlEZ" resolve="parameterValues" />
               </node>
             </node>
             <node concept="34oBXx" id="2eQzkDL$7P5" role="2OqNvi" />
@@ -820,11 +640,11 @@
                   <ref role="1YBMHb" node="2eQzkDLzWnI" resolve="node" />
                 </node>
                 <node concept="3TrEf2" id="2eQzkDLzZwz" role="2OqNvi">
-                  <ref role="3Tt5mk" to="2qld:6uo2fN6gOXM" />
+                  <ref role="3Tt5mk" to="2qld:6uo2fN6gOXM" resolve="shape" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="2eQzkDL$02o" role="2OqNvi">
-                <ref role="3TtcxE" to="2qld:2ZLA1heEHKY" />
+                <ref role="3TtcxE" to="2qld:2ZLA1heEHKY" resolve="parameters" />
               </node>
             </node>
             <node concept="34oBXx" id="2eQzkDL$31u" role="2OqNvi" />
@@ -866,7 +686,7 @@
               <ref role="1YBMHb" node="5RIhRmzPozR" resolve="contextVariableReference" />
             </node>
             <node concept="3TrEf2" id="5RIhRmzPoT9" role="2OqNvi">
-              <ref role="3Tt5mk" to="2qld:5RIhRmzOVG5" />
+              <ref role="3Tt5mk" to="2qld:5RIhRmzOVG5" resolve="type" />
             </node>
           </node>
         </node>
@@ -905,7 +725,7 @@
                 <ref role="1YBMHb" node="6_t$UUKqZMY" resolve="node" />
               </node>
               <node concept="3TrEf2" id="6_t$UUKr2K_" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:6_t$UUKqZ31" />
+                <ref role="3Tt5mk" to="2qld:6_t$UUKqZ31" resolve="shapeSize" />
               </node>
             </node>
           </node>
@@ -938,7 +758,7 @@
                 <ref role="1YBMHb" node="D0N6Dj0ofZ" resolve="node" />
               </node>
               <node concept="3TrEf2" id="D0N6Dj0pGa" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:D0N6Dj0o1V" />
+                <ref role="3Tt5mk" to="2qld:D0N6Dj0o1V" resolve="preservePortOrder" />
               </node>
             </node>
           </node>
@@ -961,7 +781,7 @@
                 <ref role="1YBMHb" node="D0N6Dj0ofZ" resolve="node" />
               </node>
               <node concept="3TrEf2" id="2uX18sv2BJ1" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:2uX18sv2i2j" />
+                <ref role="3Tt5mk" to="2qld:2uX18sv2i2j" resolve="allowConnections" />
               </node>
             </node>
           </node>
@@ -984,7 +804,7 @@
                 <ref role="1YBMHb" node="D0N6Dj0ofZ" resolve="node" />
               </node>
               <node concept="3TrEf2" id="5lWUryyLkaN" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:5lWUryyLjwq" />
+                <ref role="3Tt5mk" to="2qld:5lWUryyLjwq" resolve="allowScaling" />
               </node>
             </node>
           </node>
@@ -1020,7 +840,7 @@
             <ref role="1YBMHb" node="D0N6Dj0ofZ" resolve="node" />
           </node>
           <node concept="3Tsc0h" id="iP2DEOXJhR" role="2OqNvi">
-            <ref role="3TtcxE" to="2qld:iP2DEOXhNi" />
+            <ref role="3TtcxE" to="2qld:iP2DEOXhNi" resolve="navigationTargets" />
           </node>
         </node>
       </node>
@@ -1050,7 +870,7 @@
                 <ref role="1YBMHb" node="D0N6Dj0Lws" resolve="node" />
               </node>
               <node concept="3TrEf2" id="D0N6Dj0Nwz" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:D0N6Dj0JN2" />
+                <ref role="3Tt5mk" to="2qld:D0N6Dj0JN2" resolve="preservePortOrder" />
               </node>
             </node>
           </node>
@@ -1073,7 +893,7 @@
                 <ref role="1YBMHb" node="D0N6Dj0Lws" resolve="node" />
               </node>
               <node concept="3TrEf2" id="2uX18sv2COz" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:2uX18suW5I5" />
+                <ref role="3Tt5mk" to="2qld:2uX18suW5I5" resolve="allowConnections" />
               </node>
             </node>
           </node>
@@ -1096,7 +916,7 @@
                 <ref role="1YBMHb" node="D0N6Dj0Lws" resolve="node" />
               </node>
               <node concept="3TrEf2" id="5lWUryyL24S" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:5lWUryyKWon" />
+                <ref role="3Tt5mk" to="2qld:5lWUryyKWon" resolve="allowScaling" />
               </node>
             </node>
           </node>
@@ -1132,7 +952,7 @@
             <ref role="1YBMHb" node="D0N6Dj0Lws" resolve="node" />
           </node>
           <node concept="3Tsc0h" id="iP2DEOXu6j" role="2OqNvi">
-            <ref role="3TtcxE" to="2qld:S$ha3H7zfs" />
+            <ref role="3TtcxE" to="2qld:S$ha3H7zfs" resolve="navigationTargets" />
           </node>
         </node>
       </node>

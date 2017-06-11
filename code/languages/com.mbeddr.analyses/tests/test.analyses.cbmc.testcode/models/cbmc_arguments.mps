@@ -483,13 +483,13 @@
     <node concept="1nvAUJ" id="oxt36$a9TA" role="3V$2$K">
       <property role="2lUGeZ" value="true" />
       <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="20" />
       <property role="2l50Ka" value="11" />
       <property role="2lelRm" value="true" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
       <property role="2lUGe1" value="true" />
       <property role="2lUGdP" value="false" />
+      <property role="2lUGbD" value="20" />
       <ref role="3V$Cn$" node="oxt36$a9SV" resolve="analysisDepth20" />
     </node>
     <node concept="1nvAUJ" id="oxt36$adhl" role="3V$2$K">

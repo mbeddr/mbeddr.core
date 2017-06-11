@@ -2,7 +2,7 @@
 <model ref="c788b046-2019-4656-8b60-8bb9bbb177b5/r:02034875-87ad-4b47-a381-b8cb34e24d38(com.mbeddr.mpsutil.review/com.mbeddr.mpsutil.review.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -198,7 +198,7 @@
             <node concept="2OqwBi" id="6YgBu0Af_tv" role="2Oq$k0">
               <node concept="13iPFW" id="6YgBu0Af_pR" role="2Oq$k0" />
               <node concept="3TrEf2" id="10nVqVfzJpo" role="2OqNvi">
-                <ref role="3Tt5mk" to="7krq:4TNdqI4fvDI" />
+                <ref role="3Tt5mk" to="7krq:4TNdqI4fvDI" resolve="note" />
               </node>
             </node>
             <node concept="zfrQC" id="6YgBu0AfB5C" role="2OqNvi" />
@@ -512,7 +512,7 @@
           <node concept="2OqwBi" id="10nVqVfzJQR" role="3clFbG">
             <node concept="13iPFW" id="10nVqVfzJO9" role="2Oq$k0" />
             <node concept="3TrEf2" id="10nVqVfzKbZ" role="2OqNvi">
-              <ref role="3Tt5mk" to="7krq:10nVqVfzJLq" />
+              <ref role="3Tt5mk" to="7krq:10nVqVfzJLq" resolve="repliedNote" />
             </node>
           </node>
         </node>

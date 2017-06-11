@@ -3,10 +3,11 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="96v7" ref="r:f92b813d-c86e-400b-bec8-065f793ac96a(de.itemis.mps.editor.math.demolang.structure)" implicit="true" />
   </imports>
   <registry>
@@ -18,25 +19,32 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
+      <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
       <concept id="3906442776579556545" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Presentation" flags="in" index="Bn3R3" />
       <concept id="3906442776579549644" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parameterNode" flags="nn" index="Bn53e" />
+      <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
-      <concept id="1148684180339" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Factory" flags="in" index="1MUpDS" />
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
         <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
         <child id="3906442776579556548" name="presentation" index="Bn3R6" />
@@ -65,22 +73,6 @@
     <ref role="1M2myG" to="96v7:5QpvrvdILN0" resolve="SumRef" />
     <node concept="1N5Pfh" id="5QpvrvdJ1Dk" role="1Mr941">
       <ref role="1N5Vy1" to="96v7:5QpvrvdIM9B" resolve="sum" />
-      <node concept="1MUpDS" id="5QpvrvdJ1OK" role="1N6uqs">
-        <node concept="3clFbS" id="5QpvrvdJ1OL" role="2VODD2">
-          <node concept="3clFbF" id="5QpvrvdJ2AT" role="3cqZAp">
-            <node concept="2OqwBi" id="5QpvrvdJ2F$" role="3clFbG">
-              <node concept="21POm0" id="5QpvrvdJ2AS" role="2Oq$k0" />
-              <node concept="z$bX8" id="5QpvrvdJ2RW" role="2OqNvi">
-                <node concept="1xMEDy" id="5QpvrvdJ6ok" role="1xVPHs">
-                  <node concept="chp4Y" id="5QpvrvdJ6pB" role="ri$Ld">
-                    <ref role="cht4Q" to="96v7:9L22EoWpjb" resolve="Sum" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="Bn3R3" id="5QpvrvdJ771" role="Bn3R6">
         <node concept="3clFbS" id="5QpvrvdJ772" role="2VODD2">
           <node concept="3clFbF" id="5QpvrvdJ7So" role="3cqZAp">
@@ -88,6 +80,26 @@
               <node concept="Bn53e" id="5QpvrvdJ7Sn" role="2Oq$k0" />
               <node concept="3TrcHB" id="5QpvrvdJ8mZ" role="2OqNvi">
                 <ref role="3TsBF5" to="96v7:9L22EoXBFl" resolve="varName" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3dgokm" id="5QpvrvdJ1OK" role="1N6uqs">
+        <node concept="3clFbS" id="5KX1OsDSYnj" role="2VODD2">
+          <node concept="3clFbF" id="5KX1OsDSYnk" role="3cqZAp">
+            <node concept="2YIFZM" id="5KX1OsDSYpu" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="5KX1OsDSYpv" role="37wK5m">
+                <node concept="2rP1CM" id="5KX1OsDSYpw" role="2Oq$k0" />
+                <node concept="z$bX8" id="5KX1OsDSYpx" role="2OqNvi">
+                  <node concept="1xMEDy" id="5KX1OsDSYpy" role="1xVPHs">
+                    <node concept="chp4Y" id="5KX1OsDSYpz" role="ri$Ld">
+                      <ref role="cht4Q" to="96v7:9L22EoWpjb" resolve="Sum" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

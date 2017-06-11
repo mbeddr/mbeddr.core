@@ -5,10 +5,10 @@
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -126,7 +126,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -337,6 +337,7 @@
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
+      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -3203,9 +3204,33 @@
     </node>
     <node concept="2S6ZIM" id="7x9scHw6NXN" role="2ZfVej">
       <node concept="3clFbS" id="7x9scHw6NXO" role="2VODD2">
-        <node concept="3clFbF" id="7x9scHw6Qy0" role="3cqZAp">
-          <node concept="Xl_RD" id="7x9scHw6QxZ" role="3clFbG">
-            <property role="Xl_RC" value="Add/Remove Implements External Function" />
+        <node concept="3clFbJ" id="2Y6jbdkD$Vb" role="3cqZAp">
+          <node concept="3clFbS" id="2Y6jbdkD$Vc" role="3clFbx">
+            <node concept="3cpWs6" id="2Y6jbdkD_z5" role="3cqZAp">
+              <node concept="Xl_RD" id="2Y6jbdkD_PD" role="3cqZAk">
+                <property role="Xl_RC" value="Remove Implements External Function Prototype" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2Y6jbdkD$Vq" role="3clFbw">
+            <node concept="2OqwBi" id="2Y6jbdkD$Vr" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2Y6jbdkD$Vs" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="2Y6jbdkD$Vt" role="2OqNvi">
+                <node concept="3CFYIy" id="2Y6jbdkD$Vu" role="3CFYIz">
+                  <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="2Y6jbdkD$Vv" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="2Y6jbdkD$Vw" role="9aQIa">
+            <node concept="3clFbS" id="2Y6jbdkD$Vx" role="9aQI4">
+              <node concept="3cpWs6" id="2Y6jbdkDAZ7" role="3cqZAp">
+                <node concept="Xl_RD" id="2Y6jbdkDAZ8" role="3cqZAk">
+                  <property role="Xl_RC" value="Add Implements External Function Prototype" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -4787,6 +4812,137 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2Y6jbdkdYFK">
+    <property role="3GE5qa" value="functions" />
+    <property role="TrG5h" value="toggleImplementFunctionType" />
+    <ref role="2ZfgGC" to="x27k:5_l8w1EmTvx" resolve="Function" />
+    <node concept="2Sbjvc" id="2Y6jbdkdYFL" role="2ZfgGD">
+      <node concept="3clFbS" id="2Y6jbdkdYFM" role="2VODD2">
+        <node concept="3clFbJ" id="2Y6jbdkdYFN" role="3cqZAp">
+          <node concept="3clFbS" id="2Y6jbdkdYFO" role="3clFbx">
+            <node concept="3clFbF" id="2Y6jbdkdYFP" role="3cqZAp">
+              <node concept="2OqwBi" id="2Y6jbdkdYFQ" role="3clFbG">
+                <node concept="2OqwBi" id="2Y6jbdkdYFR" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="2Y6jbdkdYFS" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="2Y6jbdkdYFT" role="2OqNvi">
+                    <node concept="3CFYIy" id="2Y6jbdke101" role="3CFYIz">
+                      <ref role="3CFYIx" to="x27k:2Y6jbdkaokQ" resolve="ImplementsFunctionType" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1PgB_6" id="2Y6jbdkdYFV" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="2Y6jbdkdYFW" role="3cqZAp">
+              <node concept="2OqwBi" id="2Y6jbdkdYFX" role="3clFbG">
+                <node concept="2Sf5sV" id="2Y6jbdkdYFY" role="2Oq$k0" />
+                <node concept="1OKiuA" id="2Y6jbdkdYFZ" role="2OqNvi">
+                  <node concept="1XNTG" id="2Y6jbdkdYG0" role="lBI5i" />
+                  <node concept="2B6iha" id="2Y6jbdkdYG1" role="lGT1i">
+                    <property role="1lyBwo" value="firstEditable" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2Y6jbdkdYG2" role="3clFbw">
+            <node concept="2OqwBi" id="2Y6jbdkdYG3" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2Y6jbdkdYG4" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="2Y6jbdkdYG5" role="2OqNvi">
+                <node concept="3CFYIy" id="2Y6jbdke0PY" role="3CFYIz">
+                  <ref role="3CFYIx" to="x27k:2Y6jbdkaokQ" resolve="ImplementsFunctionType" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="2Y6jbdkdYG7" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="2Y6jbdkdYG8" role="9aQIa">
+            <node concept="3clFbS" id="2Y6jbdkdYG9" role="9aQI4">
+              <node concept="3cpWs8" id="2Y6jbdkdYGa" role="3cqZAp">
+                <node concept="3cpWsn" id="2Y6jbdkdYGb" role="3cpWs9">
+                  <property role="TrG5h" value="newNode" />
+                  <node concept="3Tqbb2" id="2Y6jbdkdYGc" role="1tU5fm">
+                    <ref role="ehGHo" to="x27k:2Y6jbdkaokQ" resolve="ImplementsFunctionType" />
+                  </node>
+                  <node concept="2ShNRf" id="2Y6jbdkdYGd" role="33vP2m">
+                    <node concept="3zrR0B" id="2Y6jbdkdYGe" role="2ShVmc">
+                      <node concept="3Tqbb2" id="2Y6jbdkdYGf" role="3zrR0E">
+                        <ref role="ehGHo" to="x27k:2Y6jbdkaokQ" resolve="ImplementsFunctionType" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2Y6jbdkdYGg" role="3cqZAp">
+                <node concept="37vLTI" id="2Y6jbdkdYGh" role="3clFbG">
+                  <node concept="37vLTw" id="2Y6jbdkdYGi" role="37vLTx">
+                    <ref role="3cqZAo" node="2Y6jbdkdYGb" resolve="newNode" />
+                  </node>
+                  <node concept="2OqwBi" id="2Y6jbdkdYGj" role="37vLTJ">
+                    <node concept="2Sf5sV" id="2Y6jbdkdYGk" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="2Y6jbdkdYGl" role="2OqNvi">
+                      <node concept="3CFYIy" id="2Y6jbdke1zn" role="3CFYIz">
+                        <ref role="3CFYIx" to="x27k:2Y6jbdkaokQ" resolve="ImplementsFunctionType" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2Y6jbdkdYGn" role="3cqZAp">
+                <node concept="2OqwBi" id="2Y6jbdkdYGo" role="3clFbG">
+                  <node concept="37vLTw" id="2Y6jbdkdYGp" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2Y6jbdkdYGb" resolve="newNode" />
+                  </node>
+                  <node concept="1OKiuA" id="2Y6jbdkdYGq" role="2OqNvi">
+                    <node concept="1XNTG" id="2Y6jbdkdYGr" role="lBI5i" />
+                    <node concept="2B6iha" id="2Y6jbdkdYGs" role="lGT1i">
+                      <property role="1lyBwo" value="firstEditable" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S6ZIM" id="2Y6jbdkdYGt" role="2ZfVej">
+      <node concept="3clFbS" id="2Y6jbdkdYGu" role="2VODD2">
+        <node concept="3clFbJ" id="2Y6jbdkDtOF" role="3cqZAp">
+          <node concept="3clFbS" id="2Y6jbdkDtOG" role="3clFbx">
+            <node concept="3cpWs6" id="2Y6jbdkDvaq" role="3cqZAp">
+              <node concept="Xl_RD" id="2Y6jbdkDuNy" role="3cqZAk">
+                <property role="Xl_RC" value="Remove Implements Function Type" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2Y6jbdkDtOU" role="3clFbw">
+            <node concept="2OqwBi" id="2Y6jbdkDtOV" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2Y6jbdkDtOW" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="2Y6jbdkDtOX" role="2OqNvi">
+                <node concept="3CFYIy" id="2Y6jbdkDtOY" role="3CFYIz">
+                  <ref role="3CFYIx" to="x27k:2Y6jbdkaokQ" resolve="ImplementsFunctionType" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="2Y6jbdkDtOZ" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="2Y6jbdkDtP0" role="9aQIa">
+            <node concept="3clFbS" id="2Y6jbdkDtP1" role="9aQI4">
+              <node concept="3cpWs6" id="2Y6jbdkDy3d" role="3cqZAp">
+                <node concept="Xl_RD" id="2Y6jbdkDy3e" role="3cqZAk">
+                  <property role="Xl_RC" value="Add Implements Function Type" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="2Y6jbdkdYGx" role="lGtFl">
+      <property role="1SWRpm" value="MODULES" />
     </node>
   </node>
 </model>

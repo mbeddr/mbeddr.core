@@ -362,6 +362,9 @@
       <node concept="2Q9FjX" id="44jZT9pgTbI" role="2Q9FjI" />
     </node>
   </node>
+  <node concept="2XOHcx" id="65E6xpGUrwD">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
+  </node>
   <node concept="N3F5e" id="7wwveJiPKl4">
     <property role="TrG5h" value="TestModule" />
     <node concept="N3Fnx" id="7wwveJiPKrI" role="N3F5h">
@@ -3702,9 +3705,6 @@
         <property role="2TTd_B" value="uint8" />
       </node>
     </node>
-  </node>
-  <node concept="2XOHcx" id="65E6xpGUrwD">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   </node>
 </model>
 

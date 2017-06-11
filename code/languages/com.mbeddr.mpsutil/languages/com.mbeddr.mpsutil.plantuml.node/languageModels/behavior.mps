@@ -2,14 +2,17 @@
 <model ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport" version="0" />
+    <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
+    <import index="ciba" ref="r:11b7cdb2-cc58-456e-bb9a-ce45b78edd2f(jetbrains.mps.ide.httpsupport.runtime.base)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -32,6 +35,12 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -48,9 +57,6 @@
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
@@ -123,10 +129,24 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1178893518978" name="jetbrains.mps.baseLanguage.structure.ThisConstructorInvocation" flags="nn" index="1VxSAg" />
     </language>
-    <language id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport">
-      <concept id="3379970138993099772" name="com.mbeddr.mpsutil.httpsupport.structure.ApplicationID" flags="ng" index="3gX9ci">
-        <reference id="3379970138993099791" name="requestHandler" index="3gX9jx" />
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
+        <child id="2667874559098216723" name="text" index="3HnX3l" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -135,10 +155,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport">
+      <concept id="1829257266377339186" name="jetbrains.mps.ide.httpsupport.structure.Node_getURLOperation" flags="ng" index="2$mYbS" />
     </language>
   </registry>
   <node concept="13h7C7" id="2N1CSrzPN_9">
@@ -220,18 +244,8 @@
       <node concept="3cqZAl" id="4ppn3W9rLPI" role="3clF45" />
       <node concept="3Tm1VV" id="4ppn3W9rLPJ" role="1B3o_S" />
       <node concept="3clFbS" id="4ppn3W9rLPK" role="3clF47">
-        <node concept="3clFbF" id="4ppn3W9rLPR" role="3cqZAp">
-          <node concept="2OqwBi" id="4ppn3W9rLPS" role="3clFbG">
-            <node concept="37vLTw" id="4ppn3W9rLPT" role="2Oq$k0">
-              <ref role="3cqZAo" node="6xkj9mMqLD" resolve="code" />
-            </node>
-            <node concept="liA8E" id="4ppn3W9rLPU" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
-              <node concept="Xl_RD" id="4ppn3W9rLPV" role="37wK5m">
-                <property role="Xl_RC" value="@startuml\n" />
-              </node>
-            </node>
-          </node>
+        <node concept="1VxSAg" id="17Dyz4Dv4oF" role="3cqZAp">
+          <ref role="37wK5l" node="17Dyz4Dv35V" resolve="VisGraph" />
         </node>
         <node concept="3clFbF" id="2N1CSr$DAcj" role="3cqZAp">
           <node concept="37vLTI" id="2N1CSr$DAcl" role="3clFbG">
@@ -251,6 +265,38 @@
         <property role="TrG5h" value="project" />
         <node concept="3uibUv" id="2N1CSr$D_TH" role="1tU5fm">
           <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="17Dyz4Dv4rb" role="lGtFl">
+        <node concept="TZ5HI" id="17Dyz4Dv4rc" role="3nqlJM">
+          <node concept="TZ5HA" id="17Dyz4Dv4rd" role="3HnX3l">
+            <node concept="1dT_AC" id="17Dyz4Dv4tA" role="1dT_Ay">
+              <property role="1dT_AB" value=" VisGraph no longer uses project argument, use no-arg cons instead." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="17Dyz4Dv4re" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="17Dyz4Dv3_w" role="jymVt" />
+    <node concept="3clFbW" id="17Dyz4Dv35V" role="jymVt">
+      <node concept="3cqZAl" id="17Dyz4Dv35W" role="3clF45" />
+      <node concept="3Tm1VV" id="17Dyz4Dv35X" role="1B3o_S" />
+      <node concept="3clFbS" id="17Dyz4Dv35Y" role="3clF47">
+        <node concept="3clFbF" id="17Dyz4Dv35Z" role="3cqZAp">
+          <node concept="2OqwBi" id="17Dyz4Dv360" role="3clFbG">
+            <node concept="37vLTw" id="17Dyz4Dv361" role="2Oq$k0">
+              <ref role="3cqZAo" node="6xkj9mMqLD" resolve="code" />
+            </node>
+            <node concept="liA8E" id="17Dyz4Dv362" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <node concept="Xl_RD" id="17Dyz4Dv363" role="37wK5m">
+                <property role="Xl_RC" value="@startuml\n" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -522,18 +568,11 @@
       </node>
       <node concept="3clFbS" id="1gJiIvnRRMW" role="3clF47">
         <node concept="3clFbF" id="1gJiIvnRSac" role="3cqZAp">
-          <node concept="2YIFZM" id="1gJiIvnRSae" role="3clFbG">
-            <ref role="37wK5l" to="abz6:bBMhoeybYJ" resolve="createURLForNode" />
-            <ref role="1Pybhc" to="abz6:bBMhoey14S" resolve="MbeddrURLHelper" />
-            <node concept="37vLTw" id="1gJiIvnRSaf" role="37wK5m">
-              <ref role="3cqZAo" node="2N1CSr$DAcf" resolve="project" />
-            </node>
-            <node concept="3gX9ci" id="1gJiIvnRSag" role="37wK5m">
-              <ref role="3gX9jx" to="abz6:7rr3ESJCjO4" resolve="NodeOpenRequest" />
-            </node>
-            <node concept="37vLTw" id="1gJiIvnRS_I" role="37wK5m">
+          <node concept="2OqwBi" id="By9C2svLAw" role="3clFbG">
+            <node concept="37vLTw" id="By9C2svLuh" role="2Oq$k0">
               <ref role="3cqZAo" node="1gJiIvnRSgo" resolve="node" />
             </node>
+            <node concept="2$mYbS" id="By9C2svMej" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -553,6 +592,21 @@
             <ref role="3cqZAo" node="2N1CSr$DAcf" resolve="project" />
           </node>
         </node>
+      </node>
+      <node concept="P$JXv" id="17Dyz4Dv5wP" role="lGtFl">
+        <node concept="TZ5HI" id="17Dyz4Dv5LL" role="3nqlJM">
+          <node concept="TZ5HA" id="17Dyz4Dv5LM" role="3HnX3l">
+            <node concept="1dT_AC" id="17Dyz4Dv62P" role="1dT_Ay">
+              <property role="1dT_AB" value=" VisGraph doesn't need project itself, and would not supply one" />
+            </node>
+          </node>
+        </node>
+        <node concept="x79VA" id="17Dyz4Dv5wS" role="3nqlJM">
+          <property role="x79VB" value="may return {@code null}" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="17Dyz4Dv5LN" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
   </node>

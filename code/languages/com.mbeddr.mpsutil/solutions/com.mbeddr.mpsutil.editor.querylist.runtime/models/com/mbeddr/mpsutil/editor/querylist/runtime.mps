@@ -6,7 +6,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
@@ -820,13 +820,7 @@
         </node>
         <node concept="3clFbF" id="1BXECvJX1rN" role="3cqZAp">
           <node concept="1rXfSq" id="1BXECvJX1rM" role="3clFbG">
-            <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createInnerCells(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.openapi.editor.EditorContext):void" resolve="createInnerCells" />
-            <node concept="37vLTw" id="1BXECvJX1Ff" role="37wK5m">
-              <ref role="3cqZAo" to="emqf:~AbstractCellListHandler.myOwnerNode" resolve="myOwnerNode" />
-            </node>
-            <node concept="37vLTw" id="1BXECvJX1Mt" role="37wK5m">
-              <ref role="3cqZAo" node="1BXECvJWWX1" resolve="context" />
-            </node>
+            <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createInnerCells():void" resolve="createInnerCells" />
           </node>
         </node>
         <node concept="3clFbH" id="1BXECvJX3xK" role="3cqZAp" />
