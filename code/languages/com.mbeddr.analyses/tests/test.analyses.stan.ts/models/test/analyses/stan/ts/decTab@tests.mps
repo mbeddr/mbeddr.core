@@ -39,6 +39,12 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL" />
     </language>
+    <language id="e0dc4b58-6648-4617-8514-abfaa6d77043" name="com.mbeddr.analyses.stan">
+      <concept id="3575939065348057563" name="com.mbeddr.analyses.stan.structure.StaticCheckAttribute" flags="ng" index="1L8M1T">
+        <property id="3575939065348057635" name="checkConsistency" index="1L8Me1" />
+        <property id="3575939065348057638" name="checkCompleteness" index="1L8Me4" />
+      </concept>
+    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="6209595569797584861" name="com.mbeddr.core.util.structure.DecTab" flags="ng" index="eGNQo">
         <child id="6209595569797584863" name="yExpr" index="eGNQq" />
@@ -177,15 +183,15 @@
                 <node concept="3TlMh9" id="4Bw8ULfNmwC" role="34rlYt">
                   <property role="2hmy$m" value="0" />
                 </node>
+                <node concept="1L8M1T" id="2bujROev6Oh" role="lGtFl">
+                  <property role="1L8Me4" value="true" />
+                </node>
               </node>
             </node>
             <node concept="3XISUE" id="4Bw8ULfNm9i" role="3XIRFZ" />
             <node concept="3XISUE" id="4Bw8ULfNn4Z" role="3XIRFZ" />
             <node concept="1_9egQ" id="4Bw8ULfNo9g" role="3XIRFZ">
               <node concept="eGNQo" id="4Bw8ULfNo9h" role="1_9egR">
-                <node concept="7CXmI" id="7YWlEjTrx8l" role="lGtFl">
-                  <node concept="1TM$A" id="7YWlEjTrx8m" role="7EUXB" />
-                </node>
                 <node concept="3Tl9Jn" id="4Bw8ULfNo9i" role="eGNQr">
                   <node concept="3TlMh9" id="4Bw8ULfNo9j" role="3TlMhJ">
                     <property role="2hmy$m" value="0" />
@@ -232,6 +238,12 @@
                 </node>
                 <node concept="3TlMh9" id="4Bw8ULfNo9y" role="34rlYt">
                   <property role="2hmy$m" value="0" />
+                </node>
+                <node concept="1L8M1T" id="2bujROev5Cf" role="lGtFl">
+                  <property role="1L8Me1" value="true" />
+                </node>
+                <node concept="7CXmI" id="4sR6g412QWS" role="lGtFl">
+                  <node concept="1TM$A" id="4sR6g412QWT" role="7EUXB" />
                 </node>
               </node>
             </node>

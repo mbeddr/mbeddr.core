@@ -90,6 +90,7 @@
     <language id="e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2" name="com.mbeddr.mpsutil.inca.data">
       <concept id="2990657152022329319" name="com.mbeddr.mpsutil.inca.data.structure.TypeConstructorTypeWrapper" flags="ng" index="2eLkkM">
         <child id="2990657152023305369" name="type" index="2eP6Tc" />
+        <child id="4064994170503934946" name="operation" index="iwB5b" />
       </concept>
       <concept id="7225463921150186994" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperation" flags="ig" index="hMdjl" />
       <concept id="7225463921150311746" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperationParameterDeclaration" flags="ig" index="hPFL_" />
@@ -115,6 +116,7 @@
       </concept>
       <concept id="3837287384171340388" name="com.mbeddr.mpsutil.inca.data.structure.DataConstructorCall" flags="ng" index="2ZRyFJ" />
       <concept id="8400401379548959316" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperationCall" flags="ng" index="1i8UFo" />
+      <concept id="8607574815738007253" name="com.mbeddr.mpsutil.inca.data.structure.JoinOperation" flags="ng" index="3iRr5_" />
       <concept id="5848731312440774191" name="com.mbeddr.mpsutil.inca.data.structure.ILatticeMemberCall" flags="ng" index="1p__0b">
         <child id="3837287384171340393" name="arguments" index="2ZRyFy" />
       </concept>
@@ -8343,6 +8345,7 @@
           <node concept="2ZQB9c" id="ziWFuXs3K4" role="2eP6Tc">
             <ref role="2ZQB93" node="5sJvx6oOTEM" resolve="IntervalLattice" />
           </node>
+          <node concept="3iRr5_" id="2VqyA73Rj0z" role="iwB5b" />
         </node>
       </node>
     </node>
@@ -8452,6 +8455,7 @@
           <node concept="2ZQB9c" id="ziWFuXsWSV" role="2eP6Tc">
             <ref role="2ZQB93" node="5sJvx6oOTEM" resolve="IntervalLattice" />
           </node>
+          <node concept="3iRr5_" id="2VqyA73RrRZ" role="iwB5b" />
         </node>
       </node>
       <node concept="3inDWU" id="7sJixMGbyCX" role="lGtFl" />
@@ -9212,6 +9216,7 @@
           <node concept="2ZQB9c" id="ziWFuXo41u" role="2eP6Tc">
             <ref role="2ZQB93" node="5sJvx6oOTEM" resolve="IntervalLattice" />
           </node>
+          <node concept="3iRr5_" id="2VqyA73R$IS" role="iwB5b" />
         </node>
       </node>
       <node concept="wzYhD" id="23zDCDoD8WE" role="wzYgH" />
@@ -9298,6 +9303,7 @@
           <node concept="2ZQB9c" id="5zFTUsxFg8C" role="2eP6Tc">
             <ref role="2ZQB93" node="5zFTUsxEGGa" resolve="NumberLattice" />
           </node>
+          <node concept="3iRr5_" id="2VqyA73RLKs" role="iwB5b" />
         </node>
       </node>
     </node>
@@ -9407,6 +9413,7 @@
           <node concept="2ZQB9c" id="5zFTUsxFk0s" role="2eP6Tc">
             <ref role="2ZQB93" node="5zFTUsxEGGa" resolve="NumberLattice" />
           </node>
+          <node concept="3iRr5_" id="2VqyA73RQdN" role="iwB5b" />
         </node>
       </node>
       <node concept="3inDWU" id="7sJixMGaL4k" role="lGtFl" />
@@ -10104,6 +10111,7 @@
           <node concept="2ZQB9c" id="5zFTUsxFnXa" role="2eP6Tc">
             <ref role="2ZQB93" node="5zFTUsxEGGa" resolve="NumberLattice" />
           </node>
+          <node concept="3iRr5_" id="2VqyA73RU9m" role="iwB5b" />
         </node>
       </node>
       <node concept="wzYhD" id="5zFTUsxEuDG" role="wzYgH" />

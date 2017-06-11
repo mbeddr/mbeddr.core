@@ -196,6 +196,9 @@
         <property id="9065467049586938198" name="compilerOptions" index="1gr5cm" />
         <property id="9065467049586938199" name="make" index="1gr5cn" />
       </concept>
+      <concept id="6386634687973783239" name="com.mbeddr.analyses.spin.structure.IPanRunSettings" flags="ng" index="1Qv9iI">
+        <property id="768608840052710411" name="stopAtFirstError" index="3SeVAx" />
+      </concept>
     </language>
     <language id="f027a490-7082-492e-99ce-dfe65d7342f7" name="com.mbeddr.analyses.spin.c.patterns">
       <concept id="1867824882771753822" name="com.mbeddr.analyses.spin.c.patterns.structure.AbstractAssign" flags="ng" index="2DPieb">
@@ -805,6 +808,7 @@
     <property role="2l50Mm" value="false" />
     <property role="TrG5h" value="AC" />
     <node concept="apm28" id="3tIDuP5shnL" role="3V$2$K">
+      <property role="3SeVAx" value="true" />
       <ref role="apm5G" node="1wu5Hv66n6o" resolve="suv1_harness_smoke" />
     </node>
     <node concept="apm28" id="3tIDuP5shnX" role="3V$2$K">
