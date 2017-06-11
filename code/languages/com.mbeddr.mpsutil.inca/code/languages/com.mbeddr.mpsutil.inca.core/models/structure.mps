@@ -1205,57 +1205,14 @@
       <ref role="20lvS9" node="7a3nU354JVn" resolve="IJoinTypeDef" />
     </node>
   </node>
-  <node concept="PlHQZ" id="6F2cd7xyXvp">
-    <property role="EcuMT" value="7692764791492564953" />
+  <node concept="1TIwiD" id="6ZsaHh09WeF">
+    <property role="EcuMT" value="8060364524184126379" />
     <property role="3GE5qa" value="content" />
-    <property role="TrG5h" value="IConstant" />
-    <node concept="1TJgyj" id="6KdnYMOWIlE" role="1TKVEi">
-      <property role="IQ2ns" value="7785984801046193514" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    </node>
-    <node concept="1TJgyj" id="6KdnYMOWGVj" role="1TKVEi">
-      <property role="IQ2ns" value="7785984801046187731" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="concept" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
-    </node>
-    <node concept="PrWs8" id="6F2cd7xyXvq" role="PrDN$">
-      <ref role="PrY4T" node="7a3nU351sZC" resolve="ISharedPatternModuleContent" />
-    </node>
-    <node concept="PrWs8" id="6F2cd7xDhL6" role="PrDN$">
-      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
-    </node>
-    <node concept="PrWs8" id="6KdnYMOZb1Q" role="PrDN$">
-      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6F2cd7xyXvQ">
-    <property role="EcuMT" value="7692764791492564982" />
-    <property role="3GE5qa" value="content" />
-    <property role="TrG5h" value="Constant" />
-    <property role="34LRSv" value="constant" />
+    <property role="TrG5h" value="HorizontalLineContent" />
+    <property role="34LRSv" value="hline" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6F2cd7xyXvR" role="PzmwI">
-      <ref role="PrY4T" node="6F2cd7xyXvp" resolve="IConstant" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6F2cd7xz1Cf">
-    <property role="EcuMT" value="7692764791492581903" />
-    <property role="3GE5qa" value="values" />
-    <property role="TrG5h" value="ConstantReference" />
-    <property role="34LRSv" value="&lt;{constant}&gt;" />
-    <ref role="1TJDcQ" node="RjyNapPty$" resolve="AbstractLiteralValue" />
-    <node concept="1TJgyj" id="6F2cd7xz1Cj" role="1TKVEi">
-      <property role="IQ2ns" value="7692764791492581907" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="constant" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6F2cd7xyXvp" resolve="IConstant" />
-    </node>
   </node>
 </model>
 
