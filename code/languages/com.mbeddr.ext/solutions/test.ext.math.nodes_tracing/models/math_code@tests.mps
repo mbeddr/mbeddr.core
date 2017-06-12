@@ -50,9 +50,9 @@
     </language>
   </registry>
   <node concept="1lH9Xt" id="6RWcftEdqKi">
-    <property role="TrG5h" value="MathExtNodesTracing" />
+    <property role="TrG5h" value="MathNodesTracing" />
     <node concept="1LZb2c" id="6RWcftEdqKj" role="1SL9yI">
-      <property role="TrG5h" value="ExponentialTest" />
+      <property role="TrG5h" value="testExponential" />
       <node concept="3cqZAl" id="6RWcftEdqKk" role="3clF45" />
       <node concept="3clFbS" id="6RWcftEdqKl" role="3clF47">
         <node concept="1xIcmD" id="2qCdpHNSr96" role="3cqZAp">
@@ -67,7 +67,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="63QgsF$VN0i" role="1SL9yI">
-      <property role="TrG5h" value="SumTest" />
+      <property role="TrG5h" value="testSum" />
       <node concept="3cqZAl" id="63QgsF$VN0j" role="3clF45" />
       <node concept="3clFbS" id="63QgsF$VN0n" role="3clF47">
         <node concept="1xIcmD" id="63QgsF$VN0_" role="3cqZAp">
@@ -82,7 +82,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="63QgsF$VN1k" role="1SL9yI">
-      <property role="TrG5h" value="ProductTest" />
+      <property role="TrG5h" value="testProduct" />
       <node concept="3cqZAl" id="63QgsF$VN1l" role="3clF45" />
       <node concept="3clFbS" id="63QgsF$VN1p" role="3clF47">
         <node concept="1xIcmD" id="63QgsF$VN1H" role="3cqZAp">
@@ -97,7 +97,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="63QgsF$Wbm1" role="1SL9yI">
-      <property role="TrG5h" value="LogSqrtTest" />
+      <property role="TrG5h" value="testLogAndSqrt" />
       <node concept="3cqZAl" id="63QgsF$Wbm2" role="3clF45" />
       <node concept="3clFbS" id="63QgsF$Wbm6" role="3clF47">
         <node concept="1xIcmD" id="63QgsF$Wbn9" role="3cqZAp">
@@ -112,7 +112,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="63QgsF$Wbog" role="1SL9yI">
-      <property role="TrG5h" value="FractionAbsTest" />
+      <property role="TrG5h" value="testFractionAndAbs" />
       <node concept="3cqZAl" id="63QgsF$Wboh" role="3clF45" />
       <node concept="3clFbS" id="63QgsF$Wbol" role="3clF47">
         <node concept="1xIcmD" id="63QgsF$WboP" role="3cqZAp">
