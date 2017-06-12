@@ -244,6 +244,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -270,7 +271,6 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -829,11 +829,14 @@
                       <ref role="3cqZAo" node="3Ulkr59Mg8z" resolve="allowedConcepts" />
                     </node>
                     <node concept="3JPx81" id="3Ulkr59Mg91" role="2OqNvi">
-                      <node concept="2OqwBi" id="3Ulkr59Mg94" role="25WWJ7">
-                        <node concept="2GrUjf" id="3Ulkr59Mg93" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="3Ulkr59Mg8I" resolve="bin" />
+                      <node concept="2OqwBi" id="5ZSJngDQDn2" role="25WWJ7">
+                        <node concept="2OqwBi" id="3Ulkr59Mg94" role="2Oq$k0">
+                          <node concept="2GrUjf" id="3Ulkr59Mg93" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="3Ulkr59Mg8I" resolve="bin" />
+                          </node>
+                          <node concept="2yIwOk" id="5ZSJngDQCUZ" role="2OqNvi" />
                         </node>
-                        <node concept="3NT_Vc" id="3Ulkr59Mg98" role="2OqNvi" />
+                        <node concept="FGMqu" id="5ZSJngDQDZw" role="2OqNvi" />
                       </node>
                     </node>
                   </node>

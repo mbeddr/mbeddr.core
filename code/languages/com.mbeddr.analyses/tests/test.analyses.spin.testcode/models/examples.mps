@@ -110,10 +110,6 @@
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
       </concept>
-      <concept id="3779779187805893258" name="com.mbeddr.core.statements.structure.ForVarRef" flags="ng" index="uSsIJ">
-        <child id="3779779187805893261" name="init" index="uSsIC" />
-        <child id="3779779187805926915" name="var" index="uS$WA" />
-      </concept>
       <concept id="1494329074535282918" name="com.mbeddr.core.statements.structure.ElsePart" flags="ng" index="1ly_i6">
         <child id="1494329074535283249" name="body" index="1ly_ph" />
       </concept>
@@ -126,7 +122,6 @@
       <concept id="7254843406768596598" name="com.mbeddr.core.statements.structure.ForStatement" flags="ng" index="1_a8vi">
         <child id="7254843406768606771" name="body" index="1_amYn" />
         <child id="7254843406768606790" name="incr" index="1_amZy" />
-        <child id="7254843406768606784" name="iterator" index="1_amZ$" />
         <child id="7254843406768606787" name="condition" index="1_amZB" />
       </concept>
       <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
@@ -1578,15 +1573,17 @@
             <property role="2c7vTL" value="false" />
           </node>
         </node>
-        <node concept="1_a8vi" id="68L3PPuzjwb" role="3XIRFZ">
-          <node concept="uSsIJ" id="68L3PPuzjHH" role="1_amZ$">
-            <node concept="3TlMh9" id="68L3PPuzjwe" role="uSsIC">
-              <property role="2hmy$m" value="0" />
-            </node>
-            <node concept="3ZVu4v" id="68L3PPuzjK2" role="uS$WA">
+        <node concept="1_9egQ" id="2yaJRbIerMS" role="3XIRFZ">
+          <node concept="3pqW6w" id="2yaJRbIerMT" role="1_9egR">
+            <node concept="3ZVu4v" id="2yaJRbIerMQ" role="3TlMhI">
               <ref role="3ZVs_2" node="68L3PPuzjw8" resolve="i" />
             </node>
+            <node concept="3TlMh9" id="2yaJRbIerMR" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
           </node>
+        </node>
+        <node concept="1_a8vi" id="68L3PPuzjwb" role="3XIRFZ">
           <node concept="3Tl9Jn" id="68L3PPuzjwj" role="1_amZB">
             <node concept="3ZVu4v" id="68L3PPuzjHI" role="3TlMhI">
               <ref role="3ZVs_2" node="68L3PPuzjw8" resolve="i" />
