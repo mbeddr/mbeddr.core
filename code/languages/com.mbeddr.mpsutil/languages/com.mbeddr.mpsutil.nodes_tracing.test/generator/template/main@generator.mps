@@ -513,12 +513,17 @@
                         </node>
                         <node concept="liA8E" id="7UNoqC67QbC" role="2OqNvi">
                           <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                          <node concept="3cpWs3" id="7UNoqC67Toy" role="37wK5m">
-                            <node concept="Xl_RD" id="7UNoqC67QFO" role="3uHU7B">
-                              <property role="Xl_RC" value="- Node Searched: " />
+                          <node concept="3cpWs3" id="pq_X7Ya_cZ" role="37wK5m">
+                            <node concept="Xl_RD" id="pq_X7Ya_RU" role="3uHU7w">
+                              <property role="Xl_RC" value="'" />
                             </node>
-                            <node concept="2GrUjf" id="7UNoqC67UK_" role="3uHU7w">
-                              <ref role="2Gs0qQ" node="7HmzdkqUAiG" resolve="nwa" />
+                            <node concept="3cpWs3" id="7UNoqC67Toy" role="3uHU7B">
+                              <node concept="Xl_RD" id="7UNoqC67QFO" role="3uHU7B">
+                                <property role="Xl_RC" value="DEBUG: node searched: '" />
+                              </node>
+                              <node concept="2GrUjf" id="7UNoqC67UK_" role="3uHU7w">
+                                <ref role="2Gs0qQ" node="7HmzdkqUAiG" resolve="nwa" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -620,12 +625,17 @@
                             </node>
                             <node concept="liA8E" id="7UNoqC69Phs" role="2OqNvi">
                               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                              <node concept="3cpWs3" id="7UNoqC69QG4" role="37wK5m">
-                                <node concept="37vLTw" id="7UNoqC69REu" role="3uHU7w">
-                                  <ref role="3cqZAo" node="7HmzdkqYCfk" resolve="normalizedSearchedLine" />
+                              <node concept="3cpWs3" id="pq_X7Ya$$5" role="37wK5m">
+                                <node concept="Xl_RD" id="pq_X7Ya$Tg" role="3uHU7w">
+                                  <property role="Xl_RC" value="'" />
                                 </node>
-                                <node concept="Xl_RD" id="7UNoqC69PC5" role="3uHU7B">
-                                  <property role="Xl_RC" value="searching in lines: " />
+                                <node concept="3cpWs3" id="7UNoqC69QG4" role="3uHU7B">
+                                  <node concept="Xl_RD" id="7UNoqC69PC5" role="3uHU7B">
+                                    <property role="Xl_RC" value="DEBUG: corresponding generated line: '" />
+                                  </node>
+                                  <node concept="37vLTw" id="7UNoqC69REu" role="3uHU7w">
+                                    <ref role="3cqZAo" node="7HmzdkqYCfk" resolve="normalizedSearchedLine" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -698,7 +708,7 @@
                                       <ref role="3cqZAo" node="7HmzdkqZ1$D" resolve="normalizedCurrentLine" />
                                     </node>
                                     <node concept="liA8E" id="7HmzdkqZhRw" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                                       <node concept="37vLTw" id="7HmzdkqZjF0" role="37wK5m">
                                         <ref role="3cqZAo" node="7HmzdkqYCfk" resolve="normalizedSearchedLine" />
                                       </node>
@@ -782,26 +792,31 @@
                             <ref role="3cqZAo" node="7HmzdkqUYGS" resolve="originalNode" />
                           </node>
                           <node concept="3_1$Yv" id="7HmzdkqX5DY" role="3_9lra">
-                            <node concept="3cpWs3" id="7UNoqC5Agj0" role="3_1BAH">
-                              <node concept="2OqwBi" id="7UNoqC5Ak5w" role="3uHU7w">
-                                <node concept="37vLTw" id="7UNoqC5Ajx6" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="7HmzdkqUPjt" resolve="ta" />
-                                </node>
-                                <node concept="3TrEf2" id="7UNoqC5AleP" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="ls3:7HmzdkqT$Si" resolve="tacingInfo" />
-                                </node>
+                            <node concept="3cpWs3" id="pq_X7Yas$e" role="3_1BAH">
+                              <node concept="37vLTw" id="pq_X7YasFP" role="3uHU7w">
+                                <ref role="3cqZAo" node="7HmzdkqUYGS" resolve="originalNode" />
                               </node>
-                              <node concept="3cpWs3" id="7HmzdkqX9A2" role="3uHU7B">
-                                <node concept="3cpWs3" id="7HmzdkqX8lW" role="3uHU7B">
-                                  <node concept="Xl_RD" id="7HmzdkqX66U" role="3uHU7B">
-                                    <property role="Xl_RC" value="line: " />
+                              <node concept="3cpWs3" id="pq_X7Yas$g" role="3uHU7B">
+                                <node concept="3cpWs3" id="pq_X7Yas$h" role="3uHU7B">
+                                  <node concept="3cpWs3" id="pq_X7Yas$i" role="3uHU7B">
+                                    <node concept="3cpWs3" id="pq_X7Yas$j" role="3uHU7B">
+                                      <node concept="Xl_RD" id="pq_X7Yas$k" role="3uHU7B">
+                                        <property role="Xl_RC" value="line: " />
+                                      </node>
+                                      <node concept="37vLTw" id="pq_X7Yas$l" role="3uHU7w">
+                                        <ref role="3cqZAo" node="7HmzdkqUWWV" resolve="line" />
+                                      </node>
+                                    </node>
+                                    <node concept="Xl_RD" id="pq_X7Yas$m" role="3uHU7w">
+                                      <property role="Xl_RC" value=" is not mapped to node: " />
+                                    </node>
                                   </node>
-                                  <node concept="37vLTw" id="7HmzdkqX8RH" role="3uHU7w">
-                                    <ref role="3cqZAo" node="7HmzdkqUWWV" resolve="line" />
+                                  <node concept="2GrUjf" id="pq_X7Yas$n" role="3uHU7w">
+                                    <ref role="2Gs0qQ" node="7HmzdkqUAiG" resolve="nwa" />
                                   </node>
                                 </node>
-                                <node concept="Xl_RD" id="7HmzdkqX9EN" role="3uHU7w">
-                                  <property role="Xl_RC" value="exactnode: " />
+                                <node concept="Xl_RD" id="pq_X7Yas$o" role="3uHU7w">
+                                  <property role="Xl_RC" value=" but instead to: " />
                                 </node>
                               </node>
                             </node>
@@ -841,35 +856,6 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="3clFbF" id="7UNoqC5AofG" role="3cqZAp">
-                            <node concept="2OqwBi" id="7UNoqC5AofD" role="3clFbG">
-                              <node concept="10M0yZ" id="7UNoqC5AofE" role="2Oq$k0">
-                                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                              </node>
-                              <node concept="liA8E" id="7UNoqC5AofF" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                                <node concept="3cpWs3" id="7UNoqC5Biof" role="37wK5m">
-                                  <node concept="3cpWs3" id="7UNoqC5Bg7E" role="3uHU7B">
-                                    <node concept="3cpWs3" id="7UNoqC5AJtz" role="3uHU7B">
-                                      <node concept="Xl_RD" id="7UNoqC5AoGN" role="3uHU7B">
-                                        <property role="Xl_RC" value="- list found: " />
-                                      </node>
-                                      <node concept="37vLTw" id="7UNoqC5AKpt" role="3uHU7w">
-                                        <ref role="3cqZAo" node="7Hmzdkr07Lt" resolve="originalNodes" />
-                                      </node>
-                                    </node>
-                                    <node concept="Xl_RD" id="7UNoqC5Bhnk" role="3uHU7w">
-                                      <property role="Xl_RC" value=" - line: " />
-                                    </node>
-                                  </node>
-                                  <node concept="37vLTw" id="7UNoqC5BlX8" role="3uHU7w">
-                                    <ref role="3cqZAo" node="7HmzdkqUWWV" resolve="line" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
                           <node concept="3vwNmj" id="7Hmzdkr0dbU" role="3cqZAp">
                             <node concept="2OqwBi" id="7Hmzdkr0eYu" role="3vwVQn">
                               <node concept="37vLTw" id="7Hmzdkr0e6t" role="2Oq$k0">
@@ -882,17 +868,32 @@
                               </node>
                             </node>
                             <node concept="3_1$Yv" id="7Hmzdkr0j$Z" role="3_9lra">
-                              <node concept="3cpWs3" id="7Hmzdkr0kuO" role="3_1BAH">
-                                <node concept="3cpWs3" id="7Hmzdkr0kuP" role="3uHU7B">
-                                  <node concept="Xl_RD" id="7Hmzdkr0kuQ" role="3uHU7B">
-                                    <property role="Xl_RC" value="line: " />
-                                  </node>
-                                  <node concept="37vLTw" id="7Hmzdkr0kuR" role="3uHU7w">
-                                    <ref role="3cqZAo" node="7HmzdkqUWWV" resolve="line" />
-                                  </node>
+                              <node concept="3cpWs3" id="pq_X7Yapy8" role="3_1BAH">
+                                <node concept="37vLTw" id="pq_X7YaqLr" role="3uHU7w">
+                                  <ref role="3cqZAo" node="7Hmzdkr07Lt" resolve="originalNodes" />
                                 </node>
-                                <node concept="Xl_RD" id="7Hmzdkr0kuS" role="3uHU7w">
-                                  <property role="Xl_RC" value=" " />
+                                <node concept="3cpWs3" id="pq_X7YaksT" role="3uHU7B">
+                                  <node concept="3cpWs3" id="pq_X7Yaiqt" role="3uHU7B">
+                                    <node concept="3cpWs3" id="7Hmzdkr0kuO" role="3uHU7B">
+                                      <node concept="3cpWs3" id="7Hmzdkr0kuP" role="3uHU7B">
+                                        <node concept="Xl_RD" id="7Hmzdkr0kuQ" role="3uHU7B">
+                                          <property role="Xl_RC" value="line: " />
+                                        </node>
+                                        <node concept="37vLTw" id="7Hmzdkr0kuR" role="3uHU7w">
+                                          <ref role="3cqZAo" node="7HmzdkqUWWV" resolve="line" />
+                                        </node>
+                                      </node>
+                                      <node concept="Xl_RD" id="7Hmzdkr0kuS" role="3uHU7w">
+                                        <property role="Xl_RC" value=" is not mapped to node: " />
+                                      </node>
+                                    </node>
+                                    <node concept="2GrUjf" id="pq_X7YakfY" role="3uHU7w">
+                                      <ref role="2Gs0qQ" node="7HmzdkqUAiG" resolve="nwa" />
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="pq_X7YakLK" role="3uHU7w">
+                                    <property role="Xl_RC" value=" but instead to one of the following: " />
+                                  </node>
                                 </node>
                               </node>
                             </node>
