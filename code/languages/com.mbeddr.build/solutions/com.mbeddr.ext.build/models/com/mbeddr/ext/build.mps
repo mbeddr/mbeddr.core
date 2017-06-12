@@ -889,6 +889,66 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="pq_X7YaYsC" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.ext.statemachine.nodes_tracing" />
+        <property role="3LESm3" value="ee6f777b-4776-4dc5-8ab5-cff0050a11eb" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="pq_X7YaYwR" role="3LF7KH">
+          <ref role="398BVh" node="7Vt15sLW_nb" resolve="mbeddr.ext" />
+          <node concept="2Ry0Ak" id="pq_X7YaYAv" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="5X2Sm8lVIvu" role="2Ry0An">
+              <property role="2Ry0Am" value="test.ext.statemachine.nodes_tracing" />
+              <node concept="2Ry0Ak" id="5X2Sm8lVIyj" role="2Ry0An">
+                <property role="2Ry0Am" value="test.ext.statemachine.nodes_tracing.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5X2Sm8lVIzH" role="3bR37C">
+          <node concept="3bR9La" id="5X2Sm8lVIzI" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:3Gj8GGYj_TW" resolve="com.mbeddr.mpsutil.nodes_tracing.test" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5X2Sm8lVIzJ" role="3bR37C">
+          <node concept="3bR9La" id="5X2Sm8lVIzK" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="5X2Sm8lVI_O" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.ext.math.nodes_tracing" />
+        <property role="3LESm3" value="307598f2-bbfa-4d05-8e98-221d003ce000" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="5X2Sm8lVI_P" role="3LF7KH">
+          <ref role="398BVh" node="7Vt15sLW_nb" resolve="mbeddr.ext" />
+          <node concept="2Ry0Ak" id="5X2Sm8lVI_Q" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="5X2Sm8lVI_R" role="2Ry0An">
+              <property role="2Ry0Am" value="test.ext.math.nodes_tracing" />
+              <node concept="2Ry0Ak" id="5X2Sm8lVIFr" role="2Ry0An">
+                <property role="2Ry0Am" value="test.ext.math.nodes_tracing.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5X2Sm8lVI_T" role="3bR37C">
+          <node concept="3bR9La" id="5X2Sm8lVI_U" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:3Gj8GGYj_TW" resolve="com.mbeddr.mpsutil.nodes_tracing.test" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5X2Sm8lVI_V" role="3bR37C">
+          <node concept="3bR9La" id="5X2Sm8lVI_W" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="22LTRH" id="7Vt15sLW_oB" role="1hWBAP">
       <property role="TrG5h" value="com.mbeddr.ext.tests" />
