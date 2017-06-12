@@ -737,6 +737,12 @@
       <node concept="L2wRC" id="5$jJV5ebCok" role="39821P">
         <ref role="L2wRA" node="5$jJV5ebzFb" resolve="test.editor.ext" />
       </node>
+      <node concept="L2wRC" id="5X2Sm8lYPCm" role="39821P">
+        <ref role="L2wRA" node="5X2Sm8lVI_O" resolve="test.ext.math.nodes_tracing" />
+      </node>
+      <node concept="L2wRC" id="5X2Sm8lYPL5" role="39821P">
+        <ref role="L2wRA" node="pq_X7YaYsC" resolve="test.ext.statemachine.nodes_tracing" />
+      </node>
     </node>
     <node concept="2G$12M" id="7Vt15sLW_ol" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.ext.ts.tests" />
@@ -894,6 +900,7 @@
         <property role="TrG5h" value="test.ext.statemachine.nodes_tracing" />
         <property role="3LESm3" value="ee6f777b-4776-4dc5-8ab5-cff0050a11eb" />
         <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="sources and tests" />
         <node concept="398BVA" id="pq_X7YaYwR" role="3LF7KH">
           <ref role="398BVh" node="7Vt15sLW_nb" resolve="mbeddr.ext" />
           <node concept="2Ry0Ak" id="pq_X7YaYAv" role="iGT6I">
@@ -924,6 +931,7 @@
         <property role="TrG5h" value="test.ext.math.nodes_tracing" />
         <property role="3LESm3" value="307598f2-bbfa-4d05-8e98-221d003ce000" />
         <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="sources and tests" />
         <node concept="398BVA" id="5X2Sm8lVI_P" role="3LF7KH">
           <ref role="398BVh" node="7Vt15sLW_nb" resolve="mbeddr.ext" />
           <node concept="2Ry0Ak" id="5X2Sm8lVI_Q" role="iGT6I">
@@ -963,6 +971,12 @@
       </node>
       <node concept="22LTRM" id="5$jJV5ebCwy" role="22LTRK">
         <ref role="22LTRN" node="5$jJV5ebzFb" resolve="test.editor.ext" />
+      </node>
+      <node concept="22LTRM" id="5X2Sm8lZhl6" role="22LTRK">
+        <ref role="22LTRN" node="5X2Sm8lVI_O" resolve="test.ext.math.nodes_tracing" />
+      </node>
+      <node concept="22LTRM" id="5X2Sm8lZhpF" role="22LTRK">
+        <ref role="22LTRN" node="pq_X7YaYsC" resolve="test.ext.statemachine.nodes_tracing" />
       </node>
     </node>
     <node concept="398rNT" id="6BHziVHZYYY" role="1l3spd">
