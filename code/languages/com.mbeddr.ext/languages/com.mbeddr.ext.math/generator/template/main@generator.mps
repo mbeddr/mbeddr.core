@@ -109,6 +109,9 @@
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
       </concept>
+      <concept id="3118009927543452571" name="jetbrains.mps.lang.generator.structure.TraceMacro" flags="ln" index="1M6Lop">
+        <child id="3118009927543452625" name="sourceNodeQuery" index="1M6Lpj" />
+      </concept>
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
       <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
@@ -895,6 +898,20 @@
               <property role="19_wF3" value=")" />
             </node>
             <node concept="raruj" id="4r1mNB_uAzn" role="lGtFl" />
+            <node concept="1M6Lop" id="D5rWzbJQ3v" role="lGtFl">
+              <node concept="3NFfHV" id="D5rWzbJQ3x" role="1M6Lpj">
+                <node concept="3clFbS" id="D5rWzbJQ3z" role="2VODD2">
+                  <node concept="3clFbF" id="D5rWzbJQcv" role="3cqZAp">
+                    <node concept="2OqwBi" id="D5rWzbK$YM" role="3clFbG">
+                      <node concept="30H73N" id="D5rWzbKxK$" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="D5rWzbK_GM" role="2OqNvi">
+                        <ref role="3Tt5mk" to="cetu:4r1mNB_uhMz" resolve="expression" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
