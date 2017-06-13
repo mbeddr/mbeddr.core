@@ -27,6 +27,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
@@ -68,11 +69,7 @@
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
     <property role="1pbfSe" value="1647297554" />
-    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
-    <node concept="1TJgyi" id="3N$tYyGbKra" role="1TKVEl">
-      <property role="TrG5h" value="fileExtension" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
+    <ref role="1TJDcQ" node="6iilwRlTjqY" resolve="AbstractGenModule" />
     <node concept="1TJgyj" id="1x_Jrt9Mwpt" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
@@ -84,9 +81,6 @@
       <property role="20kJfa" value="refs" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="34x64NyTNWu" resolve="GenModuleImport" />
-    </node>
-    <node concept="PrWs8" id="19a6$uAAql3" role="PzmwI">
-      <ref role="PrY4T" to="x27k:19a6$uAAqkn" resolve="IModuleContentContainer" />
     </node>
     <node concept="PrWs8" id="2G3hhvdKG_I" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKm$" resolve="UnitConcept" />
@@ -104,7 +98,7 @@
     <property role="3GE5qa" value="module" />
     <property role="R4oN_" value="--" />
     <property role="1pbfSe" value="1647297557" />
-    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+    <ref role="1TJDcQ" node="6iilwRlTjqY" resolve="AbstractGenModule" />
     <node concept="1TJgyj" id="4Pack3zOoGA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="headerImports" />
@@ -116,9 +110,6 @@
       <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-    </node>
-    <node concept="PrWs8" id="19a6$uAAql4" role="PzmwI">
-      <ref role="PrY4T" to="x27k:19a6$uAAqkn" resolve="IModuleContentContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="19a6$uAAsGA">
@@ -268,6 +259,21 @@
     <node concept="1TJgyi" id="7uVh7XGHfid" role="1TKVEl">
       <property role="TrG5h" value="suffix" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6iilwRlTjqY">
+    <property role="1pbfSe" value="980913355" />
+    <property role="3GE5qa" value="module" />
+    <property role="TrG5h" value="AbstractGenModule" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+    <node concept="1TJgyi" id="6iilwRlTjqZ" role="1TKVEl">
+      <property role="TrG5h" value="fileExtension" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="6iilwRlTjr8" role="PzmwI">
+      <ref role="PrY4T" to="x27k:19a6$uAAqkn" resolve="IModuleContentContainer" />
     </node>
   </node>
 </model>

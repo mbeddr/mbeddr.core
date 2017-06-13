@@ -101,6 +101,7 @@
 	<!-- mbeddr.platform -->
 	<property name="com.mbeddr.platform.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.platform" />    
 	<property name="com.mbeddr.platform.build-file.name" value="build.xml" /> 
+	<property name="com.mbeddr.platform.distribution-build-file.name" value="build-distribution.xml" />
 	<property name="com.mbeddr.platform.test-build-file.name" value="build-ts-tests.xml" /> 
 	<property name="com.mbeddr.platform.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.platform" />  
 
@@ -178,6 +179,9 @@
 		<ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-plugins.task}" />
 		<ant antfile="${com.mbeddr.platform.build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-generated-code.task}" />   
 
+		<ant antfile="${com.mbeddr.platform.distribution-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-plugins.task}" />
+		<!-- distribution build file has no ${clean-generated-code.task} (= cleanSources) -->
+
 		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-plugins.task}" />
 		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${clean-generated-code.task}" />	  
 	</target>    
@@ -210,6 +214,10 @@
 		<antcall target="build-spawner" />
 	</target>  
 
+	<target name="build-platform-distribution">
+		<ant antfile="${com.mbeddr.platform.distribution-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.platform.distribution-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${build-plugin.task}" />
+	</target>
 
 	<target name="build-mbeddr">
 		<ant antfile="${com.mbeddr.build-file.name}" dir="${com.mbeddr.build-file.location}" target="${generate-code.task}" />
@@ -235,6 +243,7 @@
 
 	<target name="build-platform-and-mbeddr" >
 		<antcall target="build-platform" />
+		<antcall target="build-platform-distribution" />
 		<antcall target="build-mbeddr" />
 	</target>
 

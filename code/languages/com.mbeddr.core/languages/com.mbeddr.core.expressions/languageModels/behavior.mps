@@ -194,7 +194,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1855,6 +1855,19 @@
         <node concept="3clFbF" id="5jCi3tJbvvm" role="3cqZAp">
           <node concept="3clFbT" id="5jCi3tJbvvl" role="3clFbG">
             <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4o$BgAQrCHG" role="13h7CS">
+      <property role="TrG5h" value="requiresParenthesisInCast" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="4o$BgAQrCHH" role="1B3o_S" />
+      <node concept="10P_77" id="4o$BgAQrDz_" role="3clF45" />
+      <node concept="3clFbS" id="4o$BgAQrCHJ" role="3clF47">
+        <node concept="3cpWs6" id="4o$BgAQrDzD" role="3cqZAp">
+          <node concept="3clFbT" id="4o$BgAQrDzK" role="3cqZAk">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
@@ -20090,6 +20103,21 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="7niS_gACUmB" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getPresentation" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3Tm1VV" id="7niS_gACUnq" role="1B3o_S" />
+      <node concept="3clFbS" id="7niS_gACUnr" role="3clF47">
+        <node concept="3cpWs6" id="7niS_gACW5y" role="3cqZAp">
+          <node concept="BsUDl" id="7niS_gACW5N" role="3cqZAk">
+            <ref role="37wK5l" node="1VQvajLb13M" resolve="renderReadable" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7niS_gACUns" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="5A94f9F3A5$" role="13h7CS">
       <property role="TrG5h" value="renderReadable" />
       <ref role="13i0hy" node="1VQvajLb13M" resolve="renderReadable" />
@@ -20746,14 +20774,18 @@
     <property role="3GE5qa" value="localvar" />
     <ref role="13h7C2" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
     <node concept="13i0hz" id="1LDGRqyQFAf" role="13h7CS">
-      <property role="13i0iv" value="true" />
+      <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getVariable" />
       <node concept="3Tm1VV" id="1LDGRqyQFAg" role="1B3o_S" />
       <node concept="3Tqbb2" id="1LDGRqyQFAh" role="3clF45">
         <ref role="ehGHo" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
       </node>
-      <node concept="3clFbS" id="1LDGRqyQFAi" role="3clF47" />
+      <node concept="3clFbS" id="1LDGRqyQFAi" role="3clF47">
+        <node concept="3cpWs6" id="2XHdgpYG$GA" role="3cqZAp">
+          <node concept="10Nm6u" id="2XHdgpYG$GQ" role="3cqZAk" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="1LDGRqyQFAj" role="13h7CS">
       <property role="13i0iv" value="false" />
