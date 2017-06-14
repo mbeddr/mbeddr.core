@@ -4377,12 +4377,12 @@
                 </node>
               </node>
               <node concept="liA8E" id="2cNe_D16Fie" role="2OqNvi">
-                <ref role="37wK5l" to="fpme:~PathField.addPathChangedListner(jetbrains.mps.workbench.dialogs.project.newproject.PathField$PathChangedListner):void" resolve="addPathChangedListner" />
+                <ref role="37wK5l" to="fpme:~PathField.addPathChangedListener(jetbrains.mps.workbench.dialogs.project.newproject.PathField$PathChangedListener):void" resolve="addPathChangedListener" />
                 <node concept="2ShNRf" id="2cNe_D16Fkl" role="37wK5m">
                   <node concept="YeOm9" id="2cNe_D16Gm1" role="2ShVmc">
                     <node concept="1Y3b0j" id="2cNe_D16Gm4" role="YeSDq">
                       <property role="2bfB8j" value="true" />
-                      <ref role="1Y3XeK" to="fpme:~PathField$PathChangedListner" resolve="PathField.PathChangedListner" />
+                      <ref role="1Y3XeK" to="fpme:~PathField$PathChangedListener" resolve="PathField.PathChangedListener" />
                       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                       <node concept="3Tm1VV" id="2cNe_D16Gm5" role="1B3o_S" />
                       <node concept="3clFb_" id="2cNe_D16Gm6" role="jymVt">
