@@ -16,6 +16,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.acsl.assertions.gen/com.mbeddr.analyses.acsl.assertions.gen.mpl" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.acsl.cbmc.gen/com.mbeddr.analyses.acsl.cbmc.gen.mpl" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.acsl/com.mbeddr.analyses.acsl.mpl" folder="acsl" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.unittests/unittests.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.verification_conditions/com.mbeddr.analyses.base.verification_conditions.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base/base.mpl" folder="base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cbmc.components/com.mbeddr.analyses.cbmc.components.mpl" folder="cbmc" />
