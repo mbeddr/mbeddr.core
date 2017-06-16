@@ -305,12 +305,12 @@
           <node concept="3cpWsn" id="3lXW7OZ6VXn" role="3cpWs9">
             <property role="TrG5h" value="aa" />
             <node concept="3Tqbb2" id="3lXW7OZ6VXi" role="1tU5fm">
-              <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsAnalysis" />
+              <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
             </node>
             <node concept="2ShNRf" id="3lXW7OZ6W2T" role="33vP2m">
               <node concept="3zrR0B" id="3lXW7OZ6Wfj" role="2ShVmc">
                 <node concept="3Tqbb2" id="3lXW7OZ6Wfl" role="3zrR0E">
-                  <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsAnalysis" />
+                  <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
                 </node>
               </node>
             </node>
@@ -415,7 +415,7 @@
           <node concept="3cpWsn" id="5yxSA$IRT34" role="3cpWs9">
             <property role="TrG5h" value="aa" />
             <node concept="3Tqbb2" id="5yxSA$IRT2W" role="1tU5fm">
-              <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsAnalysis" />
+              <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
             </node>
           </node>
         </node>
@@ -426,7 +426,7 @@
                 <node concept="3cpWsn" id="5yxSA$IRJ1x" role="3cpWs9">
                   <property role="TrG5h" value="nodes" />
                   <node concept="2I9FWS" id="5yxSA$IRJ1t" role="1tU5fm">
-                    <ref role="2I9WkF" to="v326:3lXW7OZ693P" resolve="AssertionsAnalysis" />
+                    <ref role="2I9WkF" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
                   </node>
                   <node concept="2OqwBi" id="5yxSA$IRJ1y" role="33vP2m">
                     <node concept="37vLTw" id="5yxSA$IRJ1z" role="2Oq$k0">
@@ -434,7 +434,7 @@
                     </node>
                     <node concept="2SmgA7" id="5yxSA$IRJ1$" role="2OqNvi">
                       <node concept="chp4Y" id="5yxSA$IRJ1_" role="1dBWTz">
-                        <ref role="cht4Q" to="v326:3lXW7OZ693P" resolve="AssertionsAnalysis" />
+                        <ref role="cht4Q" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
                       </node>
                     </node>
                   </node>
@@ -535,7 +535,7 @@
       <node concept="37vLTG" id="5yxSA$IRGjl" role="3clF46">
         <property role="TrG5h" value="aa" />
         <node concept="3Tqbb2" id="5yxSA$IRGjm" role="1tU5fm">
-          <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsAnalysis" />
+          <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
         </node>
       </node>
       <node concept="3clFbS" id="5yxSA$IRGiH" role="3clF47">
@@ -543,11 +543,11 @@
           <node concept="3cpWsn" id="5yxSA$IRGiJ" role="3cpWs9">
             <property role="TrG5h" value="analyzer" />
             <node concept="3uibUv" id="5yxSA$IRGiK" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:1wu5Hv6fgIx" resolve="SpinAnalyzer" />
+              <ref role="3uigEE" to="5do7:1wu5Hv6fgIx" resolve="SpinAssertionsAnalyzer" />
             </node>
             <node concept="2ShNRf" id="5yxSA$IRGiL" role="33vP2m">
               <node concept="1pGfFk" id="5yxSA$IRGiM" role="2ShVmc">
-                <ref role="37wK5l" to="5do7:1wu5Hv6fnQg" resolve="SpinAnalyzer" />
+                <ref role="37wK5l" to="5do7:1wu5Hv6fnQg" resolve="SpinAssertionsAnalyzer" />
                 <node concept="2YIFZM" id="5yxSA$IRGiN" role="37wK5m">
                   <ref role="37wK5l" to="d8ej:HmUOIGAXzl" resolve="newInstance" />
                   <ref role="1Pybhc" to="d8ej:HmUOIGARns" resolve="EmptyToolAdapter" />
@@ -557,6 +557,7 @@
                     <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                   </node>
                 </node>
+                <node concept="10Nm6u" id="5uY69zuYOI6" role="37wK5m" />
                 <node concept="37vLTw" id="5yxSA$IRGjn" role="37wK5m">
                   <ref role="3cqZAo" node="5yxSA$IRGjl" resolve="aa" />
                 </node>

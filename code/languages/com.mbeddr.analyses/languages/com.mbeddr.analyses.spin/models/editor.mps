@@ -246,7 +246,7 @@
           <property role="3F0ifm" value="stop at the first error encountered" />
         </node>
         <node concept="27S6Sx" id="EEDqFM$hVX" role="3EZMnx">
-          <ref role="1NtTu8" to="v326:EEDqFM$hKb" resolve="trailsForAllErrors" />
+          <ref role="1NtTu8" to="v326:EEDqFM$hKb" resolve="stopAtFirstError" />
         </node>
         <node concept="2iRfu4" id="EEDqFM$hJ_" role="2iSdaV" />
       </node>
@@ -504,6 +504,68 @@
           <ref role="1NtTu8" to="v326:7Rf0$0HCP5n" resolve="make" />
         </node>
         <node concept="l2Vlx" id="7Rf0$0HCQqL" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1U03KaUHOqa">
+    <ref role="1XX52x" to="v326:1U03KaUHOq1" resolve="RobustnessAnalysis" />
+    <node concept="3EZMnI" id="1U03KaUHOqc" role="2wV5jI">
+      <node concept="3EZMnI" id="1U03KaUHOqd" role="3EZMnx">
+        <node concept="PMmxH" id="1U03KaUHOqe" role="3EZMnx">
+          <ref role="PMmxG" to="srwo:3LhOsKAEjDZ" resolve="AnalysisOrderComponent" />
+        </node>
+        <node concept="VPM3Z" id="1U03KaUHOqf" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="l2Vlx" id="1U03KaUHOqg" role="2iSdaV" />
+        <node concept="3F0ifn" id="1U03KaUHOqh" role="3EZMnx">
+          <property role="3F0ifm" value="Robustness Analysis (Spin)" />
+        </node>
+        <node concept="3F0ifn" id="1U03KaUHOqi" role="3EZMnx">
+          <property role="3F0ifm" value="-&gt;" />
+        </node>
+        <node concept="1iCGBv" id="1U03KaUHOqj" role="3EZMnx">
+          <ref role="1NtTu8" to="v326:3lXW7OZ694h" resolve="env" />
+          <node concept="1sVBvm" id="1U03KaUHOqk" role="1sWHZn">
+            <node concept="3F0A7n" id="1U03KaUHOql" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="1U03KaUHOqm" role="2iSdaV" />
+      <node concept="gc7cB" id="1U03KaUHOqn" role="3EZMnx">
+        <node concept="3VJUX4" id="1U03KaUHOqo" role="3YsKMw">
+          <node concept="3clFbS" id="1U03KaUHOqp" role="2VODD2">
+            <node concept="3clFbF" id="1U03KaUHOqq" role="3cqZAp">
+              <node concept="2ShNRf" id="1U03KaUHOqr" role="3clFbG">
+                <node concept="1pGfFk" id="1U03KaUHOqs" role="2ShVmc">
+                  <ref role="37wK5l" to="r4b4:5gTlpakv6nY" resolve="HorizLineCell" />
+                  <node concept="pncrf" id="1U03KaUHOqt" role="37wK5m" />
+                  <node concept="10M0yZ" id="1U03KaUHOqu" role="37wK5m">
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1U03KaUHOqv" role="3EZMnx">
+        <node concept="2iRfu4" id="1U03KaUHOqw" role="2iSdaV" />
+        <node concept="3XFhqQ" id="1U03KaUHOqx" role="3EZMnx" />
+        <node concept="PMmxH" id="1U03KaUHOqy" role="3EZMnx">
+          <ref role="PMmxG" node="5yxSA$IRnri" resolve="PanRunSettingsComponent" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1U03KaUHOqz" role="3EZMnx">
+        <node concept="2iRfu4" id="1U03KaUHOq$" role="2iSdaV" />
+        <node concept="3XFhqQ" id="1U03KaUHOq_" role="3EZMnx" />
+        <node concept="PMmxH" id="1U03KaUHOqA" role="3EZMnx">
+          <ref role="PMmxG" node="3lXW7OZ6IbV" resolve="TraceReadingSettingsComponent" />
+        </node>
       </node>
     </node>
   </node>

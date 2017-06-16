@@ -828,7 +828,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="6E3dSCjBrkE">
-    <property role="TrG5h" value="check_AssertionsAnalysis" />
+    <property role="TrG5h" value="check_SpinBasedAnalysis" />
     <node concept="3clFbS" id="6E3dSCjBrkF" role="18ibNy">
       <node concept="3cpWs8" id="6E3dSCjBQdy" role="3cqZAp">
         <node concept="3cpWsn" id="6E3dSCjBQdz" role="3cpWs9">
@@ -838,7 +838,7 @@
           </node>
           <node concept="2OqwBi" id="6E3dSCjBQd$" role="33vP2m">
             <node concept="1YBJjd" id="6E3dSCjBQd_" role="2Oq$k0">
-              <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="assertionsAnalysis" />
+              <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="spinBasedAnalysis" />
             </node>
             <node concept="3TrEf2" id="6E3dSCjBQdA" role="2OqNvi">
               <ref role="3Tt5mk" to="v326:3lXW7OZ694h" resolve="env" />
@@ -856,7 +856,7 @@
             <node concept="2OqwBi" id="6E3dSCjB_89" role="2Oq$k0">
               <node concept="2OqwBi" id="6E3dSCjB_8a" role="2Oq$k0">
                 <node concept="1YBJjd" id="6E3dSCjB_8b" role="2Oq$k0">
-                  <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="assertionsAnalysis" />
+                  <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="spinBasedAnalysis" />
                 </node>
                 <node concept="I4A8Y" id="6E3dSCjB_8c" role="2OqNvi" />
               </node>
@@ -966,13 +966,13 @@
           <property role="Xl_RC" value="no Spin executable found" />
         </node>
         <node concept="1YBJjd" id="6E3dSCjBSZ4" role="2OEOjV">
-          <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="assertionsAnalysis" />
+          <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="spinBasedAnalysis" />
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="6E3dSCjBrkH" role="1YuTPh">
-      <property role="TrG5h" value="assertionsAnalysis" />
-      <ref role="1YaFvo" to="v326:3lXW7OZ693P" resolve="AssertionsAnalysis" />
+      <property role="TrG5h" value="spinBasedAnalysis" />
+      <ref role="1YaFvo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
     </node>
   </node>
 </model>
