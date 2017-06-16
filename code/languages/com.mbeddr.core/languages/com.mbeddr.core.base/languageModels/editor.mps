@@ -626,6 +626,7 @@
     </language>
     <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
       <concept id="1059142979230420839" name="de.itemis.mps.editor.celllayout.structure.GridLayoutColumnSpanStyle" flags="lg" index="2tOxIa" />
+      <concept id="4682418030828844315" name="de.itemis.mps.editor.celllayout.structure.HorizontalLineColorStyle" flags="lg" index="2T_bXS" />
       <concept id="4682418030828725523" name="de.itemis.mps.editor.celllayout.structure.HorizontalLineCell" flags="ng" index="2T_mXK" />
       <concept id="9000758320091481718" name="de.itemis.mps.editor.celllayout.structure.GridLayoutFlattenStyle" flags="lg" index="1QQdxR" />
       <concept id="2728748097294410385" name="de.itemis.mps.editor.celllayout.structure.GrowXStyle" flags="lg" index="3T7XtY" />
@@ -4120,6 +4121,49 @@
           </node>
           <node concept="1QQdxR" id="4n6gQwSUZOK" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1mECeeSyR74" role="3EZMnx">
+        <node concept="2T_mXK" id="1mECeeSyR75" role="3EZMnx">
+          <node concept="2T_bXS" id="1mECeeSyRiL" role="3F10Kt">
+            <property role="Vb096" value="lightGray" />
+          </node>
+        </node>
+        <node concept="2tOxIa" id="1mECeeSyR76" role="3F10Kt">
+          <property role="1lJzqX" value="-1" />
+        </node>
+        <node concept="3T7XtY" id="1mECeeSyR77" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3T7XNW" id="1mECeeSyR78" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="l2Vlx" id="1mECeeSyR79" role="2iSdaV" />
+        <node concept="pkWqt" id="1mECeeSGwFy" role="pqm2j">
+          <node concept="3clFbS" id="1mECeeSGwFz" role="2VODD2">
+            <node concept="3clFbF" id="1mECeeSGxvy" role="3cqZAp">
+              <node concept="2OqwBi" id="1mECeeSG$KD" role="3clFbG">
+                <node concept="2OqwBi" id="1mECeeSGzFM" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1mECeeSGy0X" role="2Oq$k0">
+                    <node concept="pncrf" id="1mECeeSGxvx" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="1mECeeSGz3i" role="2OqNvi">
+                      <node concept="1xMEDy" id="1mECeeSGz3k" role="1xVPHs">
+                        <node concept="chp4Y" id="1mECeeSGzg9" role="ri$Ld">
+                          <ref role="cht4Q" to="vs0r:K292flwCEW" resolve="Assessment" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="1mECeeSG$hA" role="2OqNvi">
+                    <ref role="3Tt5mk" to="vs0r:K292flwD4t" resolve="query" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1mECeeSG_7Z" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:1mECeeSGmO6" resolve="useHorizontalSeparatorForResults" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

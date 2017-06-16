@@ -2994,6 +2994,19 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="1mECeeSGmO6" role="13h7CS">
+      <property role="TrG5h" value="useHorizontalSeparatorForResults" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="1mECeeSGmO7" role="1B3o_S" />
+      <node concept="10P_77" id="1mECeeSGwso" role="3clF45" />
+      <node concept="3clFbS" id="1mECeeSGmO9" role="3clF47">
+        <node concept="3clFbF" id="1mECeeSGwuk" role="3cqZAp">
+          <node concept="3clFbT" id="1mECeeSGwuj" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="K292flwHwb">
     <property role="3GE5qa" value="assessment" />
