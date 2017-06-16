@@ -14,6 +14,7 @@
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="dylp" ref="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -220,7 +221,7 @@
             <node concept="2OqwBi" id="29BUUxcvVM_" role="1ryhcI">
               <node concept="117lpO" id="29BUUxcvVFr" role="2Oq$k0" />
               <node concept="3TrEf2" id="29BUUxcvWgx" role="2OqNvi">
-                <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" resolve="original" />
+                <ref role="3Tt5mk" to="x27k:5jyom5fO9Cm" resolve="original" />
               </node>
             </node>
             <node concept="2OqwBi" id="29BUUxcvWGA" role="1ryhcI">

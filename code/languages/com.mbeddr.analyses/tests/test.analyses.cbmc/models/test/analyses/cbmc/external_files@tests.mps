@@ -551,7 +551,7 @@
                 <ref role="3cqZAo" node="28vOu_ur$uk" resolve="results" />
               </node>
               <node concept="Xl_RD" id="28vOu_ur$uE" role="37wK5m">
-                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (signed char)((signed int)x + 1)" />
+                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (int8_t)((signed int)x + 1)" />
               </node>
             </node>
           </node>

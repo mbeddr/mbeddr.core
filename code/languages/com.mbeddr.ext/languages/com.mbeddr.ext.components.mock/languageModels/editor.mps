@@ -15,6 +15,8 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -185,6 +187,27 @@
         <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
         <node concept="VPM3Z" id="6A4xWqfT4vv" role="3F10Kt">
           <property role="VOm3f" value="false" />
+        </node>
+        <node concept="pkWqt" id="44fCN1fQnzA" role="pqm2j">
+          <node concept="3clFbS" id="44fCN1fQnzB" role="2VODD2">
+            <node concept="3clFbF" id="44fCN1fQnEM" role="3cqZAp">
+              <node concept="3fqX7Q" id="44fCN1fQs6B" role="3clFbG">
+                <node concept="2OqwBi" id="44fCN1fQs6D" role="3fr31v">
+                  <node concept="2OqwBi" id="44fCN1fQs6E" role="2Oq$k0">
+                    <node concept="pncrf" id="44fCN1fQs6F" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="44fCN1fQs6G" role="2OqNvi">
+                      <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="44fCN1fQs6H" role="2OqNvi">
+                    <node concept="chp4Y" id="44fCN1fQs6I" role="cj9EA">
+                      <ref role="cht4Q" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="71UKpntmzO$" role="3EZMnx">
@@ -638,6 +661,27 @@
         <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
         <node concept="VPM3Z" id="6A4xWqfT4vk" role="3F10Kt">
           <property role="VOm3f" value="false" />
+        </node>
+        <node concept="pkWqt" id="44fCN1fStiB" role="pqm2j">
+          <node concept="3clFbS" id="44fCN1fStiC" role="2VODD2">
+            <node concept="3clFbF" id="44fCN1fStiD" role="3cqZAp">
+              <node concept="3fqX7Q" id="44fCN1fStiE" role="3clFbG">
+                <node concept="2OqwBi" id="44fCN1fStiF" role="3fr31v">
+                  <node concept="2OqwBi" id="44fCN1fStiG" role="2Oq$k0">
+                    <node concept="pncrf" id="44fCN1fStiH" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="44fCN1fStiI" role="2OqNvi">
+                      <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="44fCN1fStiJ" role="2OqNvi">
+                    <node concept="chp4Y" id="44fCN1fStiK" role="cj9EA">
+                      <ref role="cht4Q" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="5u7uvg8pZU2" role="3EZMnx">

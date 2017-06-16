@@ -126,6 +126,7 @@
     <property role="TrG5h" value="PatternFunctionBody" />
     <property role="3GE5qa" value="misc" />
     <property role="EcuMT" value="1925259677761386650" />
+    <property role="34LRSv" value="{" />
     <ref role="1TJDcQ" to="55iy:1ERTnBTmryq" resolve="GraphPatternBody" />
     <node concept="PrWs8" id="1ERTnBTmryr" role="PzmwI">
       <ref role="PrY4T" to="hqsm:3VwoHXNAdvt" resolve="IPatternBody" />
@@ -544,6 +545,16 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="8251544086380719093" />
       <ref role="20lvS9" node="1i65yRAQ7jk" resolve="IExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6ZsaHh0ae4O">
+    <property role="EcuMT" value="8060364524184199476" />
+    <property role="3GE5qa" value="misc" />
+    <property role="TrG5h" value="FunHorizontalLineContent" />
+    <property role="34LRSv" value="hline" />
+    <ref role="1TJDcQ" to="hqsm:6ZsaHh09WeF" resolve="HorizontalLineContent" />
+    <node concept="PrWs8" id="6ZsaHh0ae4V" role="PzmwI">
+      <ref role="PrY4T" node="5luHlsCrxe_" resolve="IPatternFunctionModuleContent" />
     </node>
   </node>
 </model>

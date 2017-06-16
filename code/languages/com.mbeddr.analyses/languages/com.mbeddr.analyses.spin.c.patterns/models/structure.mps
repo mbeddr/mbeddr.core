@@ -2,8 +2,8 @@
 <model ref="r:38e1b852-361b-47c0-99e1-1944e9fcd4c9(com.mbeddr.analyses.spin.c.patterns.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
@@ -13,6 +13,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -112,7 +113,7 @@
     <property role="3GE5qa" value="harness.multistep" />
     <property role="TrG5h" value="MultiStep" />
     <property role="34LRSv" value="multistep" />
-    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="HmUOIGKxf4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="times" />
@@ -126,6 +127,9 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="817099092667798470" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="7Hmzdkr1hqs" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="36pDmrEZ2Bs">
@@ -154,7 +158,7 @@
     <property role="3GE5qa" value="harness.choice" />
     <property role="TrG5h" value="NondetChoice" />
     <property role="34LRSv" value="nondet choice" />
-    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="5hi7ucOryXA" role="1TKVEi">
       <property role="IQ2ns" value="6075951708950638438" />
       <property role="20lmBu" value="aggregation" />
@@ -168,6 +172,9 @@
       <property role="20kJfa" value="else" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5hi7ucOryXC" resolve="DefaultChoice" />
+    </node>
+    <node concept="PrWs8" id="7Hmzdkr1hqv" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="5hi7ucOryW$">
@@ -273,7 +280,7 @@
     <property role="TrG5h" value="AbstractAssign" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="45nq91X0EWs" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="exp" />
@@ -286,6 +293,9 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="vals" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="7Hmzdkr1hpu" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="5RNtn4ccJZN">
@@ -304,7 +314,8 @@
     <property role="34LRSv" value="foreach" />
     <property role="EcuMT" value="6769883793264065291" />
     <property role="3GE5qa" value="harness.foreach" />
-    <ref role="1TJDcQ" to="ir22:6efVUW9vti1" resolve="PromelaStatementBase" />
+    <property role="R4oN_" value="foreach iterator" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="5RNtn4cbrGh" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="iter" />
@@ -328,6 +339,9 @@
     </node>
     <node concept="PrWs8" id="5RNtn4cc5Ln" role="PzmwI">
       <ref role="PrY4T" to="k146:6viY8n0hYkZ" resolve="IRangeContext" />
+    </node>
+    <node concept="PrWs8" id="7Hmzdkr1hqg" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="1BFQdmKbEJq">
@@ -370,6 +384,71 @@
       <node concept="trNpa" id="1GXRyrT8qEr" role="EQaZv">
         <ref role="trN6q" node="439FXGf05P" resolve="CVerificationHarnessModule" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6AAaFOTBk1q">
+    <property role="EcuMT" value="7612819212320194650" />
+    <property role="3GE5qa" value="harness.saver" />
+    <property role="TrG5h" value="CollectTraces" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="6AAaFOTBk1r" role="lGtFl">
+      <property role="Hh88m" value="traces" />
+      <node concept="trNpa" id="6AAaFOTBk1t" role="EQaZv">
+        <ref role="trN6q" node="439FXGfyCs" resolve="HarnessCode" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="bnk1SThRv6" role="1TKVEi">
+      <property role="IQ2ns" value="204720398808872902" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tracesHandler" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="bnk1STkjmF" resolve="AbstractTracesHandler" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6AAaFOTVF$K">
+    <property role="EcuMT" value="7612819212325534000" />
+    <property role="3GE5qa" value="harness.saver" />
+    <property role="TrG5h" value="GeneratorDependencyChunckContainer" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6AAaFOTVF$O" role="1TKVEi">
+      <property role="IQ2ns" value="7612819212325534004" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="gdc" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
+    </node>
+    <node concept="PrWs8" id="6AAaFOTVF$L" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="bnk1STkjmF">
+    <property role="EcuMT" value="204720398809511339" />
+    <property role="3GE5qa" value="harness.saver" />
+    <property role="TrG5h" value="AbstractTracesHandler" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="bnk1STkjmG">
+    <property role="EcuMT" value="204720398809511340" />
+    <property role="3GE5qa" value="harness.saver" />
+    <property role="TrG5h" value="TracesSaver" />
+    <property role="34LRSv" value="save in file" />
+    <ref role="1TJDcQ" node="bnk1STkjmF" resolve="AbstractTracesHandler" />
+  </node>
+  <node concept="1TIwiD" id="bnk1STrbs2">
+    <property role="EcuMT" value="204720398811313922" />
+    <property role="3GE5qa" value="harness.saver" />
+    <property role="TrG5h" value="ResetAndReplay" />
+    <property role="34LRSv" value="reset and replay" />
+    <ref role="1TJDcQ" node="bnk1STkjmF" resolve="AbstractTracesHandler" />
+    <node concept="1TJgyj" id="bnk1STusj8" role="1TKVEi">
+      <property role="IQ2ns" value="204720398812169416" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="resetFunction" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="x27k:7qHzltJ0oT3" resolve="FunctionRefExpr" />
     </node>
   </node>
 </model>

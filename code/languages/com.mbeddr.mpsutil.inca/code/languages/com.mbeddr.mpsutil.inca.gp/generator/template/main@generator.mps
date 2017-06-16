@@ -30,6 +30,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="45gx" ref="r:44dee1a7-9c6d-4eef-8605-5e2866d6f6d1(com.mbeddr.mpsutil.inca.hints.plugin)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="gcg1" ref="r:d6f14cc5-a2a7-4aaf-8f86-e35059edbf3b(com.mbeddr.mpsutil.inca.core.behavior)" implicit="true" />
@@ -538,7 +539,7 @@
       </node>
     </node>
     <node concept="2VPoh5" id="3B59fJN62Df" role="2VS0gm">
-      <ref role="2VPoh2" to="cj1d:32aBubiAH1R" resolve="JoinTypeDefs" />
+      <ref role="2VPoh2" to="cj1d:32aBubiAH1R" resolve="ConstantDefinitions" />
       <node concept="2VP$b9" id="3B59fJN62O1" role="2VPoh3">
         <node concept="3clFbS" id="3B59fJN62O2" role="2VODD2">
           <node concept="3cpWs6" id="3B59fJN62Wb" role="3cqZAp">
@@ -549,8 +550,8 @@
                   <node concept="1st3f0" id="3B59fJN63qn" role="2OqNvi" />
                 </node>
                 <node concept="2SmgA7" id="3B59fJN63Pw" role="2OqNvi">
-                  <node concept="chp4Y" id="3B59fJN647v" role="1dBWTz">
-                    <ref role="cht4Q" to="hqsm:7a3nU354JVn" resolve="IJoinTypeDef" />
+                  <node concept="chp4Y" id="6KdnYMOTRxi" role="1dBWTz">
+                    <ref role="cht4Q" to="hqsm:3VwoHXNAdmh" resolve="IPattern" />
                   </node>
                 </node>
               </node>
@@ -701,6 +702,12 @@
             <ref role="v9R2y" node="1suAdVkPbaM" resolve="switch_PatternCompositionConstraint" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="1qP1$ZSSYtk" role="3acgRq">
+      <ref role="30HIoZ" to="hqsm:1UJP1A0V$Ki" resolve="JoinSNodeType" />
+      <node concept="j$656" id="1qP1$ZSSYNt" role="1lVwrX">
+        <ref role="v9R2y" to="cj1d:1qP1$ZSSW8S" resolve="template_RuntimeJoinType" />
       </node>
     </node>
     <node concept="3aamgX" id="6j5__H01AMT" role="3acgRq">
@@ -1726,7 +1733,7 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="26S5csTqrCl" role="jymVt" />
+    <node concept="2tJIrI" id="5sHCmyzRzhP" role="jymVt" />
     <node concept="312cEu" id="26S5csTp$M6" role="jymVt">
       <property role="2bfB8j" value="false" />
       <property role="1sVAO0" value="false" />

@@ -73,6 +73,7 @@
         <property id="4053481679317021370" name="check_signed_overflow" index="1nvAUA" />
         <property id="4053481679317021371" name="check_unsigned_overflow" index="1nvAUB" />
         <property id="4053481679317021367" name="check_div_by_zero" index="1nvAUF" />
+        <property id="7634619718342724140" name="check_conversion" index="1UWlg3" />
       </concept>
       <concept id="4053481679317021363" name="com.mbeddr.analyses.cbmc.core.structure.AssertionsCBMCAnalysis" flags="ng" index="1nvAUJ" />
     </language>
@@ -498,6 +499,7 @@
       <property role="1nvAUB" value="true" />
       <property role="2o64iB" value="true" />
       <property role="3u2WvC" value="true" />
+      <property role="1UWlg3" value="true" />
       <ref role="3V$Cn$" node="28vOu_upHgG" resolve="simple_robustness_1" />
       <node concept="3u2USL" id="5YWfxoAy1Tf" role="3u2XS$">
         <property role="TrG5h" value="_A_" />

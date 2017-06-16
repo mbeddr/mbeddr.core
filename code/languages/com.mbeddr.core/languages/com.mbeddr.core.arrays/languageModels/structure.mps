@@ -75,8 +75,11 @@
     <node concept="PrWs8" id="3TE6JCmbIko" role="PzmwI">
       <ref role="PrY4T" to="mj1l:7FQByU3C_31" resolve="IComparable" />
     </node>
-    <node concept="PrWs8" id="5TQ2lpzyJGI" role="PzmwI">
+    <node concept="PrWs8" id="4$HG0yYb5ks" role="PzmwI">
       <ref role="PrY4T" to="mj1l:6mfXVgRsmwb" resolve="IVoidTypeContainer" />
+    </node>
+    <node concept="PrWs8" id="4$HG0yY9G74" role="PzmwI">
+      <ref role="PrY4T" node="4$HG0yY9G70" resolve="INullableType" />
     </node>
     <node concept="PrWs8" id="35tTzla8GLv" role="PzmwI">
       <ref role="PrY4T" to="2gv2:7oVAz7YD2vL" resolve="IChildrenResolver" />
@@ -279,6 +282,11 @@
     <property role="EcuMT" value="1070628221329718448" />
     <property role="3GE5qa" value="arrays" />
     <property role="TrG5h" value="IDoNotRequireStaticallyEvaluatableSize" />
+  </node>
+  <node concept="PlHQZ" id="4$HG0yY9G70">
+    <property role="EcuMT" value="5273064290317156800" />
+    <property role="3GE5qa" value="pointers" />
+    <property role="TrG5h" value="INullableType" />
   </node>
 </model>
 

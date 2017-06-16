@@ -90,6 +90,7 @@
     <language id="e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2" name="com.mbeddr.mpsutil.inca.data">
       <concept id="2990657152022329319" name="com.mbeddr.mpsutil.inca.data.structure.TypeConstructorTypeWrapper" flags="ng" index="2eLkkM">
         <child id="2990657152023305369" name="type" index="2eP6Tc" />
+        <child id="4064994170503934946" name="operation" index="iwB5b" />
       </concept>
       <concept id="7225463921150186994" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperation" flags="ig" index="hMdjl" />
       <concept id="7225463921150311746" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperationParameterDeclaration" flags="ig" index="hPFL_" />
@@ -115,6 +116,7 @@
       </concept>
       <concept id="3837287384171340388" name="com.mbeddr.mpsutil.inca.data.structure.DataConstructorCall" flags="ng" index="2ZRyFJ" />
       <concept id="8400401379548959316" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperationCall" flags="ng" index="1i8UFo" />
+      <concept id="8607574815738007253" name="com.mbeddr.mpsutil.inca.data.structure.JoinOperation" flags="ng" index="3iRr5_" />
       <concept id="5848731312440774191" name="com.mbeddr.mpsutil.inca.data.structure.ILatticeMemberCall" flags="ng" index="1p__0b">
         <child id="3837287384171340393" name="arguments" index="2ZRyFy" />
       </concept>
@@ -337,7 +339,6 @@
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
         <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
       </concept>
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
@@ -7394,20 +7395,20 @@
             <property role="1dT_AB" value="TODO make use of this information everywhere in the impl." />
           </node>
         </node>
-        <node concept="TUZQ0" id="aLe9abBUXg" role="TUOzN">
+        <node concept="x79VA" id="aLe9abBUXm" role="x79VK">
+          <property role="x79VB" value="true if left is less or equal to right, false otherwise" />
+        </node>
+        <node concept="TUZQ0" id="2DKFXe9Q7_q" role="3nqlJM">
           <property role="TUZQ4" value="the left Interval element" />
-          <node concept="zr_55" id="aLe9abBUXi" role="zr_5Q">
+          <node concept="zr_55" id="2DKFXe9Q7_C" role="zr_5Q">
             <ref role="zr_51" node="2XlXuxNCdnN" resolve="l" />
           </node>
         </node>
-        <node concept="TUZQ0" id="aLe9abBUXj" role="TUOzN">
+        <node concept="TUZQ0" id="2DKFXe9Q7A9" role="3nqlJM">
           <property role="TUZQ4" value="the right Interval element" />
-          <node concept="zr_55" id="aLe9abBUXl" role="zr_5Q">
+          <node concept="zr_55" id="2DKFXe9Q7Ar" role="zr_5Q">
             <ref role="zr_51" node="2XlXuxNCdnT" resolve="r" />
           </node>
-        </node>
-        <node concept="x79VA" id="aLe9abBUXm" role="x79VK">
-          <property role="x79VB" value="true if left is less or equal to right, false otherwise" />
         </node>
       </node>
     </node>
@@ -8344,6 +8345,7 @@
           <node concept="2ZQB9c" id="ziWFuXs3K4" role="2eP6Tc">
             <ref role="2ZQB93" node="5sJvx6oOTEM" resolve="IntervalLattice" />
           </node>
+          <node concept="3iRr5_" id="2VqyA73Rj0z" role="iwB5b" />
         </node>
       </node>
     </node>
@@ -8453,6 +8455,7 @@
           <node concept="2ZQB9c" id="ziWFuXsWSV" role="2eP6Tc">
             <ref role="2ZQB93" node="5sJvx6oOTEM" resolve="IntervalLattice" />
           </node>
+          <node concept="3iRr5_" id="2VqyA73RrRZ" role="iwB5b" />
         </node>
       </node>
       <node concept="3inDWU" id="7sJixMGbyCX" role="lGtFl" />
@@ -9213,6 +9216,7 @@
           <node concept="2ZQB9c" id="ziWFuXo41u" role="2eP6Tc">
             <ref role="2ZQB93" node="5sJvx6oOTEM" resolve="IntervalLattice" />
           </node>
+          <node concept="3iRr5_" id="2VqyA73R$IS" role="iwB5b" />
         </node>
       </node>
       <node concept="wzYhD" id="23zDCDoD8WE" role="wzYgH" />
@@ -9299,6 +9303,7 @@
           <node concept="2ZQB9c" id="5zFTUsxFg8C" role="2eP6Tc">
             <ref role="2ZQB93" node="5zFTUsxEGGa" resolve="NumberLattice" />
           </node>
+          <node concept="3iRr5_" id="2VqyA73RLKs" role="iwB5b" />
         </node>
       </node>
     </node>
@@ -9408,6 +9413,7 @@
           <node concept="2ZQB9c" id="5zFTUsxFk0s" role="2eP6Tc">
             <ref role="2ZQB93" node="5zFTUsxEGGa" resolve="NumberLattice" />
           </node>
+          <node concept="3iRr5_" id="2VqyA73RQdN" role="iwB5b" />
         </node>
       </node>
       <node concept="3inDWU" id="7sJixMGaL4k" role="lGtFl" />
@@ -10105,6 +10111,7 @@
           <node concept="2ZQB9c" id="5zFTUsxFnXa" role="2eP6Tc">
             <ref role="2ZQB93" node="5zFTUsxEGGa" resolve="NumberLattice" />
           </node>
+          <node concept="3iRr5_" id="2VqyA73RU9m" role="iwB5b" />
         </node>
       </node>
       <node concept="wzYhD" id="5zFTUsxEuDG" role="wzYgH" />

@@ -1193,7 +1193,7 @@
   <node concept="1TIwiD" id="1UJP1A0V$Ki">
     <property role="EcuMT" value="2211219148064574482" />
     <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="RuntimeJoinType" />
+    <property role="TrG5h" value="JoinSNodeType" />
     <property role="34LRSv" value="join" />
     <property role="R4oN_" value="join type" />
     <ref role="1TJDcQ" to="tp25:gzTqbfa" resolve="SNodeType" />
@@ -1204,6 +1204,15 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7a3nU354JVn" resolve="IJoinTypeDef" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6ZsaHh09WeF">
+    <property role="EcuMT" value="8060364524184126379" />
+    <property role="3GE5qa" value="content" />
+    <property role="TrG5h" value="HorizontalLineContent" />
+    <property role="34LRSv" value="hline" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

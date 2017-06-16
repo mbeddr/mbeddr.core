@@ -114,6 +114,9 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+    </language>
   </registry>
   <node concept="2XOHcx" id="7Rf0$0HBv7U">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
@@ -141,15 +144,18 @@
             <node concept="3uibUv" id="_jsMICpJvM" role="1tU5fm">
               <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
             </node>
-            <node concept="NRdvd" id="3tIDuP5spbv" role="33vP2m">
-              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
-              <node concept="37vLTw" id="3tIDuP5spbw" role="37wK5m">
-                <ref role="3cqZAo" node="3tIDuP5sifu" resolve="m" />
+            <node concept="2OqwBi" id="63QgsF$OXfD" role="33vP2m">
+              <node concept="NRdvd" id="3tIDuP5spbv" role="2Oq$k0">
+                <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <node concept="37vLTw" id="3tIDuP5spbw" role="37wK5m">
+                  <ref role="3cqZAo" node="3tIDuP5sifu" resolve="m" />
+                </node>
+                <node concept="Xl_RD" id="3tIDuP5spbx" role="37wK5m">
+                  <property role="Xl_RC" value="suv1_harness_smoke" />
+                </node>
               </node>
-              <node concept="Xl_RD" id="3tIDuP5spbx" role="37wK5m">
-                <property role="Xl_RC" value="suv1_harness_smoke" />
-              </node>
+              <node concept="1uHKPH" id="63QgsF$P1eN" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -221,15 +227,18 @@
             <node concept="3uibUv" id="3tIDuP5siRe" role="1tU5fm">
               <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
             </node>
-            <node concept="NRdvd" id="3tIDuP5soXi" role="33vP2m">
-              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
-              <node concept="37vLTw" id="3tIDuP5soXj" role="37wK5m">
-                <ref role="3cqZAo" node="3tIDuP5sjCL" resolve="m" />
+            <node concept="2OqwBi" id="63QgsF$P1O9" role="33vP2m">
+              <node concept="NRdvd" id="3tIDuP5soXi" role="2Oq$k0">
+                <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <node concept="37vLTw" id="3tIDuP5soXj" role="37wK5m">
+                  <ref role="3cqZAo" node="3tIDuP5sjCL" resolve="m" />
+                </node>
+                <node concept="Xl_RD" id="3tIDuP5soXk" role="37wK5m">
+                  <property role="Xl_RC" value="suv2_harness_pick_nondet" />
+                </node>
               </node>
-              <node concept="Xl_RD" id="3tIDuP5soXk" role="37wK5m">
-                <property role="Xl_RC" value="suv2_harness_pick_nondet" />
-              </node>
+              <node concept="1uHKPH" id="63QgsF$P3Xj" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -301,15 +310,18 @@
             <node concept="3uibUv" id="3tIDuP5skdK" role="1tU5fm">
               <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
             </node>
-            <node concept="NRdvd" id="3tIDuP5soJ5" role="33vP2m">
-              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
-              <node concept="37vLTw" id="3tIDuP5soJ6" role="37wK5m">
-                <ref role="3cqZAo" node="3tIDuP5skRl" resolve="m" />
+            <node concept="2OqwBi" id="63QgsF$P4yD" role="33vP2m">
+              <node concept="NRdvd" id="3tIDuP5soJ5" role="2Oq$k0">
+                <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <node concept="37vLTw" id="3tIDuP5soJ6" role="37wK5m">
+                  <ref role="3cqZAo" node="3tIDuP5skRl" resolve="m" />
+                </node>
+                <node concept="Xl_RD" id="3tIDuP5soJ7" role="37wK5m">
+                  <property role="Xl_RC" value="suv3_harness" />
+                </node>
               </node>
-              <node concept="Xl_RD" id="3tIDuP5soJ7" role="37wK5m">
-                <property role="Xl_RC" value="suv3_harness" />
-              </node>
+              <node concept="1uHKPH" id="63QgsF$P6Gd" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -951,15 +963,18 @@
             <node concept="3uibUv" id="Hdy9e32QbP" role="1tU5fm">
               <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
             </node>
-            <node concept="NRdvd" id="Hdy9e32QbQ" role="33vP2m">
-              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
-              <node concept="37vLTw" id="Hdy9e32QbR" role="37wK5m">
-                <ref role="3cqZAo" node="Hdy9e32QbK" resolve="m" />
+            <node concept="2OqwBi" id="63QgsF$P7Pq" role="33vP2m">
+              <node concept="NRdvd" id="Hdy9e32QbQ" role="2Oq$k0">
+                <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <node concept="37vLTw" id="Hdy9e32QbR" role="37wK5m">
+                  <ref role="3cqZAo" node="Hdy9e32QbK" resolve="m" />
+                </node>
+                <node concept="Xl_RD" id="Hdy9e32QbS" role="37wK5m">
+                  <property role="Xl_RC" value="_010_automatic_handling_of_local_var_access" />
+                </node>
               </node>
-              <node concept="Xl_RD" id="Hdy9e32QbS" role="37wK5m">
-                <property role="Xl_RC" value="_010_automatic_handling_of_local_var_access" />
-              </node>
+              <node concept="1uHKPH" id="63QgsF$P9Zo" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -1031,15 +1046,18 @@
             <node concept="3uibUv" id="Hdy9e33afH" role="1tU5fm">
               <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
             </node>
-            <node concept="NRdvd" id="Hdy9e33afI" role="33vP2m">
-              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
-              <node concept="37vLTw" id="Hdy9e33afJ" role="37wK5m">
-                <ref role="3cqZAo" node="Hdy9e33afC" resolve="m" />
+            <node concept="2OqwBi" id="63QgsF$Pb8Z" role="33vP2m">
+              <node concept="NRdvd" id="Hdy9e33afI" role="2Oq$k0">
+                <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <node concept="37vLTw" id="Hdy9e33afJ" role="37wK5m">
+                  <ref role="3cqZAo" node="Hdy9e33afC" resolve="m" />
+                </node>
+                <node concept="Xl_RD" id="Hdy9e33afK" role="37wK5m">
+                  <property role="Xl_RC" value="_020_automatic_handling_of_global_var_access" />
+                </node>
               </node>
-              <node concept="Xl_RD" id="Hdy9e33afK" role="37wK5m">
-                <property role="Xl_RC" value="_020_automatic_handling_of_global_var_access" />
-              </node>
+              <node concept="1uHKPH" id="63QgsF$PdbB" role="2OqNvi" />
             </node>
           </node>
         </node>
