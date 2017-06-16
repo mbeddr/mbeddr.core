@@ -265,20 +265,20 @@
                   <node concept="3cpWsn" id="7HmzdkqTYu$" role="3cpWs9">
                     <property role="TrG5h" value="outputPath" />
                     <node concept="17QB3L" id="7HmzdkqTYxz" role="1tU5fm" />
-                    <node concept="2YIFZM" id="7HmzdkqTYu_" role="33vP2m">
-                      <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
-                      <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                      <node concept="37vLTw" id="7HmzdkqTYuA" role="37wK5m">
+                    <node concept="2YIFZM" id="5uY69zv5Ss0" role="33vP2m">
+                      <ref role="1Pybhc" to="do90:5uY69zv5FFj" resolve="PathsUtils" />
+                      <ref role="37wK5l" to="do90:3hNQKr2Cac0" resolve="computePathToGeneratedDirectory" />
+                      <node concept="37vLTw" id="5uY69zv5TR9" role="37wK5m">
                         <ref role="3cqZAo" node="7HmzdkqVXoR" resolve="m" />
-                        <node concept="29HgVG" id="7HmzdkqVZZI" role="lGtFl">
-                          <node concept="3NFfHV" id="7HmzdkqVZZJ" role="3NFExx">
-                            <node concept="3clFbS" id="7HmzdkqVZZK" role="2VODD2">
-                              <node concept="3clFbF" id="7HmzdkqVZZQ" role="3cqZAp">
-                                <node concept="2OqwBi" id="7HmzdkqVZZL" role="3clFbG">
-                                  <node concept="3TrEf2" id="7HmzdkqVZZO" role="2OqNvi">
+                        <node concept="29HgVG" id="5uY69zv5TRa" role="lGtFl">
+                          <node concept="3NFfHV" id="5uY69zv5TRb" role="3NFExx">
+                            <node concept="3clFbS" id="5uY69zv5TRc" role="2VODD2">
+                              <node concept="3clFbF" id="5uY69zv5TRd" role="3cqZAp">
+                                <node concept="2OqwBi" id="5uY69zv5TRe" role="3clFbG">
+                                  <node concept="3TrEf2" id="5uY69zv5TRf" role="2OqNvi">
                                     <ref role="3Tt5mk" to="ls3:7HmzdkqVAll" resolve="mre" />
                                   </node>
-                                  <node concept="30H73N" id="7HmzdkqVZZP" role="2Oq$k0" />
+                                  <node concept="30H73N" id="5uY69zv5TRg" role="2Oq$k0" />
                                 </node>
                               </node>
                             </node>
