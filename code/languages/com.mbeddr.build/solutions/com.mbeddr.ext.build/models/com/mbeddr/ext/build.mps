@@ -771,6 +771,9 @@
               <property role="2Ry0Am" value="tests" />
               <node concept="2Ry0Ak" id="5uY69zv6DNW" role="2Ry0An">
                 <property role="2Ry0Am" value="test.ext.statemachine.nodes_tracing" />
+                <node concept="2Ry0Ak" id="5uY69zv96Z_" role="2Ry0An">
+                  <property role="2Ry0Am" value="source_gen" />
+                </node>
               </node>
             </node>
           </node>
