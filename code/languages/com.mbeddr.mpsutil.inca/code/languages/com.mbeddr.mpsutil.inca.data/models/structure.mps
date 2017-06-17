@@ -141,7 +141,7 @@
       <ref role="20lvS9" node="7tOfV2_AEhe" resolve="ILatticeElementCombinator" />
     </node>
     <node concept="PrWs8" id="2A0WHmBhrxw" role="PzmwI">
-      <ref role="PrY4T" to="hqsm:6VTlRjrCuQt" resolve="IVariableType" />
+      <ref role="PrY4T" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
     </node>
   </node>
   <node concept="PlHQZ" id="7tOfV2_Eo$0">
@@ -152,7 +152,7 @@
   <node concept="1TIwiD" id="7tOfV2_EoD2">
     <property role="EcuMT" value="8607574815738006082" />
     <property role="TrG5h" value="MeetOperation" />
-    <property role="34LRSv" value="meet" />
+    <property role="34LRSv" value="glb" />
     <property role="3GE5qa" value="definition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7tOfV2_EoDF" role="PzmwI">
@@ -162,7 +162,7 @@
   <node concept="1TIwiD" id="7tOfV2_EoVl">
     <property role="EcuMT" value="8607574815738007253" />
     <property role="TrG5h" value="JoinOperation" />
-    <property role="34LRSv" value="join" />
+    <property role="34LRSv" value="lub" />
     <property role="3GE5qa" value="definition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7tOfV2_EoVY" role="PzmwI">
@@ -338,6 +338,9 @@
     </node>
     <node concept="PrWs8" id="ziWFuXy7Er" role="PrDN$">
       <ref role="PrY4T" to="ebqt:1i65yRAQ7jk" resolve="IExpression" />
+    </node>
+    <node concept="PrWs8" id="2VqyA73eF__" role="PrDN$">
+      <ref role="PrY4T" to="hqsm:1i65yRAWiCQ" resolve="IValue" />
     </node>
     <node concept="PrWs8" id="54ERyg8J8SU" role="PrDN$">
       <ref role="PrY4T" node="54ERyg8J8SJ" resolve="ILatticeMemberCall" />
@@ -629,6 +632,22 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="465N1Z1sbyB">
+    <property role="EcuMT" value="4721404221129275559" />
+    <property role="3GE5qa" value="definition" />
+    <property role="TrG5h" value="NoneOperation" />
+    <property role="34LRSv" value="none" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="465N1Z1sbyC" role="PzmwI">
+      <ref role="PrY4T" node="7tOfV2_AEhe" resolve="ILatticeElementCombinator" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="465N1Z1tAip">
+    <property role="EcuMT" value="4721404221129647257" />
+    <property role="3GE5qa" value="definition" />
+    <property role="TrG5h" value="Lattice" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

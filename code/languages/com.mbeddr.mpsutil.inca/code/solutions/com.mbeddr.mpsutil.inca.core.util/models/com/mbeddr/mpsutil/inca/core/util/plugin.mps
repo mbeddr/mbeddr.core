@@ -2512,60 +2512,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6F2cd7xz5K2" role="jymVt" />
-    <node concept="2YIFZL" id="6F2cd7xz3Bc" role="jymVt">
-      <property role="TrG5h" value="visibleConstants" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="6F2cd7xz3Bd" role="3clF47">
-        <node concept="3cpWs6" id="6F2cd7x$kgI" role="3cqZAp">
-          <node concept="1rXfSq" id="6F2cd7x$kgJ" role="3cqZAk">
-            <ref role="37wK5l" node="6F2cd7xznKl" resolve="collector" />
-            <node concept="37vLTw" id="6F2cd7x$kgK" role="37wK5m">
-              <ref role="3cqZAo" node="6F2cd7xz3Cc" resolve="context" />
-            </node>
-            <node concept="1bVj0M" id="6F2cd7x$kgL" role="37wK5m">
-              <node concept="3clFbS" id="6F2cd7x$kgM" role="1bW5cS">
-                <node concept="3clFbF" id="6F2cd7x$kgN" role="3cqZAp">
-                  <node concept="2OqwBi" id="6F2cd7x$kgO" role="3clFbG">
-                    <node concept="37vLTw" id="6F2cd7x$kgP" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6F2cd7x$kgR" resolve="module" />
-                    </node>
-                    <node concept="2qgKlT" id="6F2cd7x$m8y" role="2OqNvi">
-                      <ref role="37wK5l" to="gcg1:6F2cd7xz9rI" resolve="getConstants" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="37vLTG" id="6F2cd7x$kgR" role="1bW2Oz">
-                <property role="TrG5h" value="module" />
-                <property role="3TUv4t" value="true" />
-                <node concept="3Tqbb2" id="6F2cd7x$kgS" role="1tU5fm">
-                  <ref role="ehGHo" to="hqsm:3VwoHXNAdmj" resolve="IPatternModule" />
-                </node>
-              </node>
-              <node concept="37vLTG" id="6F2cd7x$FG6" role="1bW2Oz">
-                <property role="TrG5h" value="isAncestor" />
-                <property role="3TUv4t" value="true" />
-                <node concept="10P_77" id="6F2cd7x$FRN" role="1tU5fm" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="6F2cd7xz3Cb" role="1B3o_S" />
-      <node concept="37vLTG" id="6F2cd7xz3Cc" role="3clF46">
-        <property role="TrG5h" value="context" />
-        <property role="3TUv4t" value="true" />
-        <node concept="3Tqbb2" id="6F2cd7xz3Cd" role="1tU5fm" />
-      </node>
-      <node concept="2hMVRd" id="6F2cd7xz3Ce" role="3clF45">
-        <node concept="3Tqbb2" id="6F2cd7xz3Cf" role="2hN53Y">
-          <ref role="ehGHo" to="hqsm:6F2cd7xyXvp" resolve="IConstant" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="7a3nU354A8D" role="jymVt" />
     <node concept="2YIFZL" id="7a3nU354_rQ" role="jymVt">
       <property role="TrG5h" value="visibleTypeDefs" />
       <property role="od$2w" value="false" />
