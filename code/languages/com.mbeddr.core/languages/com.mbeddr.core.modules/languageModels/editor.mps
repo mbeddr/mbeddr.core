@@ -6284,5 +6284,8 @@
   <node concept="3p36aQ" id="1LS0LER8uzg">
     <ref role="aqKnT" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
   </node>
+  <node concept="3p36aQ" id="143iErn7gUq">
+    <ref role="aqKnT" to="x27k:7JWieF82Lsz" resolve="EmptyModuleContent" />
+  </node>
 </model>
 
