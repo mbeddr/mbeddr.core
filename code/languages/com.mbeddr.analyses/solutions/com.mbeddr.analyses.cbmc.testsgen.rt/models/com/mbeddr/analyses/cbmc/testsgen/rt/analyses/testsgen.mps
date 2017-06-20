@@ -4661,10 +4661,10 @@
                             <node concept="37vLTw" id="3aDyPAY4ILE" role="37wK5m">
                               <ref role="3cqZAo" node="3aDyPAXTQeO" resolve="currentInputId" />
                             </node>
-                            <node concept="2YIFZM" id="3aDyPAY4ILF" role="37wK5m">
-                              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                              <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-                              <node concept="37vLTw" id="3aDyPAY4ILG" role="37wK5m">
+                            <node concept="2YIFZM" id="3qzEjaM8RsT" role="37wK5m">
+                              <ref role="37wK5l" to="wyt6:~Long.parseLong(java.lang.String):long" resolve="parseLong" />
+                              <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
+                              <node concept="37vLTw" id="3qzEjaM8RsU" role="37wK5m">
                                 <ref role="3cqZAo" node="WwTuEsv1_G" resolve="currentCharacters" />
                               </node>
                             </node>
