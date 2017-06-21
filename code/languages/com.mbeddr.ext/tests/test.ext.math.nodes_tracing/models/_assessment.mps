@@ -76,7 +76,7 @@
   <node concept="3pwaUo" id="6RWcftEdofa">
     <property role="TrG5h" value="coverage" />
     <node concept="3pwaUv" id="6RWcftEdGqy" role="3pwaUu">
-      <property role="TrG5h" value="math_genetaor_coverage" />
+      <property role="TrG5h" value="math_generator_coverage" />
       <property role="2iEbMk" value="1497020968415" />
       <property role="2iEaKi" value="z003s2zy" />
       <node concept="s0GG8" id="6RWcftEdMiN" role="3pwbkY">

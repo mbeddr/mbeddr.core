@@ -630,11 +630,13 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
+          <node concept="1xGALR" id="3zlDaOXovDZ" role="lGtFl">
+            <node concept="1xFd8N" id="3zlDaOXovEV" role="1xGcb7">
+              <property role="1xFd8M" value=" Main_LoggerImpl__cdata_t *___cid = ((Main_LoggerImpl__cdata_t *)(___id));" />
+            </node>
+          </node>
         </node>
       </node>
-    </node>
-    <node concept="2NXPZ9" id="6JVEnxIhTO0" role="N3F5h">
-      <property role="TrG5h" value="empty_1350477670460_6" />
     </node>
     <node concept="2NXPZ9" id="6JVEnxIhTNY" role="N3F5h">
       <property role="TrG5h" value="empty_1350477648661_5" />
@@ -658,7 +660,6 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node concept="3Khz0B" id="6JVEnxIj0hw" role="2RW2fA" />
       <node concept="3Khz0B" id="6JVEnxIj0hx" role="2RW2fA" />
       <node concept="5JiAF" id="6JVEnxIhUme" role="2RW2fA">
         <node concept="2EWCuV" id="6JVEnxIhUst" role="5JtDH">
@@ -936,6 +937,11 @@
                 <node concept="EbZIE" id="223R3D2guqt" role="3TlMhJ">
                   <ref role="EbZID" node="6JVEnxIj2nI" resolve="carInit" />
                 </node>
+              </node>
+            </node>
+            <node concept="1xGALR" id="3zlDaOXp9_I" role="lGtFl">
+              <node concept="1xFd8N" id="3zlDaOXp9L1" role="1xGcb7">
+                <property role="1xFd8M" value="int16_t init = 10 + ___cid-&gt;carInit__field - 2;" />
               </node>
             </node>
           </node>

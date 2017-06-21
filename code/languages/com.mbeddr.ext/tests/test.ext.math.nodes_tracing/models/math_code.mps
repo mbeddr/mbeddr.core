@@ -255,12 +255,17 @@
                   <property role="2hmy$m" value="2" />
                 </node>
                 <node concept="1xGALR" id="70fpbbg$Adb" role="lGtFl">
-                  <node concept="1xFd8N" id="70fpbbg$Asr" role="1xGcb7" />
+                  <property role="1xEijf" value="2" />
+                  <node concept="1xFd8N" id="70fpbbg$Asr" role="1xGcb7">
+                    <property role="1xFd8M" value="sum_a5a0 += (((1) / (2 * k)));" />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
+        <node concept="3XISUE" id="73SKUHF8tDS" role="3XIRFZ" />
+        <node concept="3XISUE" id="73SKUHF8tEB" role="3XIRFZ" />
         <node concept="3XISUE" id="70fpbbg$A0v" role="3XIRFZ" />
         <node concept="3XIRlf" id="pq_X7Ya4nP" role="3XIRFZ">
           <property role="TrG5h" value="sum2" />
