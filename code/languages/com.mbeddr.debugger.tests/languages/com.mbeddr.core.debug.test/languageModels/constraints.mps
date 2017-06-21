@@ -1176,8 +1176,8 @@
     <ref role="1M2myG" to="rpmx:13C5RDfBevC" resolve="StackFramesReference" />
     <node concept="1N5Pfh" id="3ELV2aPArhh" role="1Mr941">
       <ref role="1N5Vy1" to="rpmx:13C5RDfBevD" resolve="sfDeclaration" />
-      <node concept="3dgokm" id="3wI4BINJ7HR" role="1N6uqs">
-        <node concept="3clFbS" id="3wI4BINJ7HU" role="2VODD2">
+      <node concept="3dgokm" id="58Fzn6dz63W" role="1N6uqs">
+        <node concept="3clFbS" id="58Fzn6dz63X" role="2VODD2">
           <node concept="3cpWs8" id="3ELV2aPArV7" role="3cqZAp">
             <node concept="3cpWsn" id="3ELV2aPArV8" role="3cpWs9">
               <property role="TrG5h" value="debuggerTest" />
@@ -1328,8 +1328,12 @@
           </node>
           <node concept="3clFbH" id="3uHGTbh88sP" role="3cqZAp" />
           <node concept="3cpWs6" id="3ELV2aPCms8" role="3cqZAp">
-            <node concept="37vLTw" id="3ELV2aPCqKr" role="3cqZAk">
-              <ref role="3cqZAo" node="3ELV2aPC8u8" resolve="decls" />
+            <node concept="2YIFZM" id="5CkU_dHifXP" role="3cqZAk">
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <node concept="37vLTw" id="58Fzn6dzx6u" role="37wK5m">
+                <ref role="3cqZAo" node="3ELV2aPC8u8" resolve="decls" />
+              </node>
             </node>
           </node>
         </node>
