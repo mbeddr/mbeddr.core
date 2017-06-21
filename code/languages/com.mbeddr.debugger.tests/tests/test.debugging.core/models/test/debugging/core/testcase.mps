@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:cfe7dab7-768f-4dbe-b5cd-9398ab4e844c(test.debugging.core.dummy2)">
+<model ref="r:26f5c06d-a8ab-4093-b488-748e817174ca(test.debugging.core.testcase)">
   <persistence version="9" />
   <languages>
-    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
-    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="-1" />
-    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test" version="0" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
+    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
+    <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
   </languages>
   <imports>
     <import index="q9ah" ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" />
-    <import index="bauy" ref="r:26f5c06d-a8ab-4093-b488-748e817174ca(test.debugging.core.testcase)" implicit="true" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -32,7 +31,6 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
-        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
@@ -143,6 +141,16 @@
   </registry>
   <node concept="2v9HqL" id="2s7Bv57QobZ">
     <property role="TrG5h" value="dummy" />
+    <node concept="2Q9Fgs" id="2s7Bv57Qoc1" role="2Q9xDr">
+      <node concept="2Q9FjX" id="2s7Bv57Qoc2" role="2Q9FjI" />
+    </node>
+    <node concept="2eOfOl" id="2s7Bv57Qoc3" role="2ePNbc">
+      <property role="iO3LB" value="true" />
+      <property role="TrG5h" value="UnitTestTest" />
+      <node concept="2v9HqM" id="2s7Bv57Qoc4" role="2eOfOg">
+        <ref role="2v9HqP" node="2s7Bv57Qoc5" resolve="UnitTest" />
+      </node>
+    </node>
     <node concept="2AWWZL" id="3uHGTbh6Bee" role="2AWWZH">
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
@@ -150,19 +158,8 @@
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
     </node>
-    <node concept="2Q9Fgs" id="2s7Bv57Qoc1" role="2Q9xDr">
-      <node concept="2Q9FjX" id="2s7Bv57Qoc2" role="2Q9FjI" />
-    </node>
     <node concept="12mU2y" id="22oVTLUfqLJ" role="2Q9xDr">
       <node concept="3GpDuo" id="22oVTLUfqLK" role="3GpDut" />
-    </node>
-    <node concept="2eOfOl" id="2s7Bv57Qoc3" role="2ePNbc">
-      <property role="iO3LB" value="true" />
-      <property role="TrG5h" value="UnitTestTest" />
-      <ref role="3oK8_y" to="q9ah:7Rwa0lvu8YO" resolve="portable" />
-      <node concept="2v9HqM" id="2s7Bv57Qoc4" role="2eOfOg">
-        <ref role="2v9HqP" node="2s7Bv57Qoc5" resolve="UnitTest" />
-      </node>
     </node>
   </node>
   <node concept="N3F5e" id="2s7Bv57Qoc5">
@@ -171,13 +168,13 @@
       <property role="TrG5h" value="main" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Tiud0TdXFG" role="lIfQt">
-        <ref role="3cM6IK" to="bauy:2s7Bv57Qoc_" resolve="testCase1" />
+        <ref role="3cM6IK" node="2s7Bv57Qoc_" resolve="testCase1" />
         <node concept="3cQ7KT" id="3cUcim$fhmp" role="lGtFl">
           <property role="TrG5h" value="testInvocation" />
         </node>
       </node>
       <node concept="3cM6IN" id="4Tiud0TdXFH" role="lIfQt">
-        <ref role="3cM6IK" to="bauy:2s7Bv57Qoco" resolve="testCase2" />
+        <ref role="3cM6IK" node="2s7Bv57Qoco" resolve="testCase2" />
       </node>
     </node>
     <node concept="2NXPZ9" id="2s7Bv57Qocn" role="N3F5h">
