@@ -36,6 +36,9 @@
         <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
         <property id="6998860900671147996" name="javaLevel" index="TZNOO" />
       </concept>
+      <concept id="2750015747481074431" name="jetbrains.mps.build.structure.BuildLayout_Files" flags="ng" index="2HvfSZ">
+        <child id="2750015747481074432" name="path" index="2HvfZ0" />
+      </concept>
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
@@ -44,6 +47,10 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
+      <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
+        <child id="4380385936562148502" name="containerName" index="Nbhlr" />
+      </concept>
+      <concept id="7389400916848036984" name="jetbrains.mps.build.structure.BuildLayout_Folder" flags="ng" index="398223" />
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -736,6 +743,41 @@
       </node>
       <node concept="L2wRC" id="5$jJV5ebCok" role="39821P">
         <ref role="L2wRA" node="5$jJV5ebzFb" resolve="test.editor.ext" />
+      </node>
+      <node concept="398223" id="5uY69zv6Dyh" role="39821P">
+        <node concept="3_J27D" id="5uY69zv6Dyj" role="Nbhlr">
+          <node concept="3Mxwew" id="5uY69zv6D$K" role="3MwsjC">
+            <property role="3MwjfP" value="generated_artefacts" />
+          </node>
+        </node>
+        <node concept="2HvfSZ" id="5uY69zv6D$P" role="39821P">
+          <node concept="398BVA" id="3JmJHJbDgql" role="2HvfZ0">
+            <ref role="398BVh" node="7Vt15sLW_nb" resolve="mbeddr.ext" />
+            <node concept="2Ry0Ak" id="3JmJHJbDgqm" role="iGT6I">
+              <property role="2Ry0Am" value="tests" />
+              <node concept="2Ry0Ak" id="3JmJHJbDgqn" role="2Ry0An">
+                <property role="2Ry0Am" value="test.ext.math.nodes_tracing" />
+                <node concept="2Ry0Ak" id="3JmJHJbDgqo" role="2Ry0An">
+                  <property role="2Ry0Am" value="source_gen" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2HvfSZ" id="5uY69zv6DJf" role="39821P">
+          <node concept="398BVA" id="5uY69zv6DLE" role="2HvfZ0">
+            <ref role="398BVh" node="7Vt15sLW_nb" resolve="mbeddr.ext" />
+            <node concept="2Ry0Ak" id="5uY69zv6DNL" role="iGT6I">
+              <property role="2Ry0Am" value="tests" />
+              <node concept="2Ry0Ak" id="5uY69zv6DNW" role="2Ry0An">
+                <property role="2Ry0Am" value="test.ext.statemachine.nodes_tracing" />
+                <node concept="2Ry0Ak" id="5uY69zv96Z_" role="2Ry0An">
+                  <property role="2Ry0Am" value="source_gen" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="L2wRC" id="5X2Sm8lYPCm" role="39821P">
         <ref role="L2wRA" node="5X2Sm8lVI_O" resolve="test.ext.math.nodes_tracing" />

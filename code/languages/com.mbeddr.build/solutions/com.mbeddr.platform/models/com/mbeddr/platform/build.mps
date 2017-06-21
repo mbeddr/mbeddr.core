@@ -13672,6 +13672,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.nodes_tracing.test" />
         <property role="3LESm3" value="85e94e86-9fcb-43a2-9083-64c40006219e" />
+        <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="3Gj8GGYjAZS" role="3LF7KH">
           <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
           <node concept="2Ry0Ak" id="3Gj8GGYjEhy" role="iGT6I">
@@ -13722,6 +13723,7 @@
         <node concept="1yeLz9" id="3Gj8GGYk00e" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.mpsutil.nodes_tracing.test#8887445761569382511" />
           <property role="3LESm3" value="d19dba79-b97f-4874-b95a-fbe6e7f32607" />
+          <property role="2GAjPV" value="false" />
           <node concept="1SiIV0" id="3Gj8GGYk00f" role="3bR37C">
             <node concept="3bR9La" id="3Gj8GGYk00g" role="1SiIV1">
               <property role="3bR36h" value="false" />
@@ -13745,6 +13747,12 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5uY69zv6z5n" role="3bR37C">
+          <node concept="3bR9La" id="5uY69zv6z5o" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
       </node>
