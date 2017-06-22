@@ -20,9 +20,6 @@
       <sourceRoot location="batik-dom.jar" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-ext.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="batik-extension.jar" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
@@ -78,7 +75,6 @@
     <stubModelEntry path="${module}/lib/batik-codec.jar" />
     <stubModelEntry path="${module}/lib/batik-css.jar" />
     <stubModelEntry path="${module}/lib/batik-dom.jar" />
-    <stubModelEntry path="${module}/lib/batik-ext.jar" />
     <stubModelEntry path="${module}/lib/batik-extension.jar" />
     <stubModelEntry path="${module}/lib/batik-gui-util.jar" />
     <stubModelEntry path="${module}/lib/batik-gvt.jar" />
