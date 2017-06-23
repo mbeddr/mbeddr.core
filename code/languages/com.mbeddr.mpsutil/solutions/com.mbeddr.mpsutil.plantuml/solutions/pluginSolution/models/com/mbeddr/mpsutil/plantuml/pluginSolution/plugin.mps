@@ -36,7 +36,6 @@
     <import index="dnq3" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.dom.util(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="4anb" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
-    <import index="gzvg" ref="r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver.plugin)" />
     <import index="er5d" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="41rc" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.gvt(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
@@ -444,17 +443,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -2056,95 +2047,6 @@
         <node concept="3clFbH" id="2DnVhjrAfCq" role="3cqZAp" />
         <node concept="SfApY" id="2DnVhjrBKs_" role="3cqZAp">
           <node concept="3clFbS" id="2DnVhjrBKsA" role="SfCbr">
-            <node concept="3SKdUt" id="4pC9uEPegrs" role="3cqZAp">
-              <node concept="3SKdUq" id="4pC9uEPegru" role="3SKWNk">
-                <property role="3SKdUp" value="ServerUtil.concatLocalAddress() returns bad address (&quot;localhost&quot; instead of &quot;127.0.0.1&quot;" />
-              </node>
-            </node>
-            <node concept="3SKdUt" id="4pC9uEPegQx" role="3cqZAp">
-              <node concept="3SKdUq" id="4pC9uEPegQz" role="3SKWNk">
-                <property role="3SKdUp" value="and port 8080 instead actual port)..." />
-              </node>
-            </node>
-            <node concept="3SKdUt" id="4pC9uEPehhE" role="3cqZAp">
-              <node concept="3SKdUq" id="4pC9uEPehhG" role="3SKWNk">
-                <property role="3SKdUp" value="why checking for local address anyway?" />
-              </node>
-            </node>
-            <node concept="3SKdUt" id="4pC9uEPeiK0" role="3cqZAp">
-              <node concept="3SKdUq" id="4pC9uEPeiK1" role="3SKWNk">
-                <property role="3SKdUp" value="just open the link. delegation to super seems superfluous, nothing is implemented there." />
-              </node>
-            </node>
-            <node concept="1X3_iC" id="4pC9uEPeizP" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbJ" id="2DnVhjrDH7s" role="8Wnug">
-                <node concept="3clFbS" id="2DnVhjrDH7v" role="3clFbx">
-                  <node concept="3cpWs8" id="2DnVhjrBIMS" role="3cqZAp">
-                    <node concept="3cpWsn" id="2DnVhjrBIMT" role="3cpWs9">
-                      <property role="TrG5h" value="url" />
-                      <node concept="3uibUv" id="2DnVhjrBIMP" role="1tU5fm">
-                        <ref role="3uigEE" to="zf81:~URL" resolve="URL" />
-                      </node>
-                      <node concept="2ShNRf" id="2DnVhjrBIMU" role="33vP2m">
-                        <node concept="1pGfFk" id="2DnVhjrBIMV" role="2ShVmc">
-                          <ref role="37wK5l" to="zf81:~URL.&lt;init&gt;(java.lang.String)" resolve="URL" />
-                          <node concept="37vLTw" id="2DnVhjrBIMW" role="37wK5m">
-                            <ref role="3cqZAo" node="27T0Q3SBuuU" resolve="urlString" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3cpWs8" id="2DnVhjrCuaO" role="3cqZAp">
-                    <node concept="3cpWsn" id="2DnVhjrCuaP" role="3cpWs9">
-                      <property role="TrG5h" value="c" />
-                      <node concept="3uibUv" id="2DnVhjrCwKm" role="1tU5fm">
-                        <ref role="3uigEE" to="zf81:~HttpURLConnection" resolve="HttpURLConnection" />
-                      </node>
-                      <node concept="1eOMI4" id="2DnVhjrCwRh" role="33vP2m">
-                        <node concept="10QFUN" id="2DnVhjrCwRi" role="1eOMHV">
-                          <node concept="2OqwBi" id="2DnVhjrCwRe" role="10QFUP">
-                            <node concept="37vLTw" id="2DnVhjrCwRf" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2DnVhjrBIMT" resolve="url" />
-                            </node>
-                            <node concept="liA8E" id="2DnVhjrCwRg" role="2OqNvi">
-                              <ref role="37wK5l" to="zf81:~URL.openConnection():java.net.URLConnection" resolve="openConnection" />
-                            </node>
-                          </node>
-                          <node concept="3uibUv" id="2DnVhjrCwRd" role="10QFUM">
-                            <ref role="3uigEE" to="zf81:~HttpURLConnection" resolve="HttpURLConnection" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="2DnVhjrDpge" role="3cqZAp">
-                    <node concept="2OqwBi" id="2DnVhjrCxq7" role="3clFbG">
-                      <node concept="37vLTw" id="2DnVhjrCxq8" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2DnVhjrCuaP" resolve="c" />
-                      </node>
-                      <node concept="liA8E" id="2DnVhjrCxq9" role="2OqNvi">
-                        <ref role="37wK5l" to="zf81:~HttpURLConnection.getResponseCode():int" resolve="getResponseCode" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="2DnVhjrDHrF" role="3clFbw">
-                  <node concept="37vLTw" id="2DnVhjrDHgw" role="2Oq$k0">
-                    <ref role="3cqZAo" node="27T0Q3SBuuU" resolve="urlString" />
-                  </node>
-                  <node concept="liA8E" id="2DnVhjrDIYa" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-                    <node concept="2YIFZM" id="4pC9uEPehVu" role="37wK5m">
-                      <ref role="37wK5l" to="gzvg:62R8h7jRigV" resolve="concatLocalAddress" />
-                      <ref role="1Pybhc" to="gzvg:3ZjlwXBExfQ" resolve="ServerUtil" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="4pC9uEPei8_" role="3cqZAp">
               <node concept="3cpWsn" id="4pC9uEPei8A" role="3cpWs9">
                 <property role="TrG5h" value="url" />
@@ -2161,36 +2063,101 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="4pC9uEPei8F" role="3cqZAp">
-              <node concept="3cpWsn" id="4pC9uEPei8G" role="3cpWs9">
-                <property role="TrG5h" value="c" />
-                <node concept="3uibUv" id="4pC9uEPei8H" role="1tU5fm">
-                  <ref role="3uigEE" to="zf81:~HttpURLConnection" resolve="HttpURLConnection" />
+            <node concept="3cpWs8" id="1_op79IvaKS" role="3cqZAp">
+              <node concept="3cpWsn" id="1_op79IvaKT" role="3cpWs9">
+                <property role="TrG5h" value="addr" />
+                <node concept="3uibUv" id="1_op79IvaKU" role="1tU5fm">
+                  <ref role="3uigEE" to="zf81:~InetAddress" resolve="InetAddress" />
                 </node>
-                <node concept="1eOMI4" id="4pC9uEPei8I" role="33vP2m">
-                  <node concept="10QFUN" id="4pC9uEPei8J" role="1eOMHV">
-                    <node concept="2OqwBi" id="4pC9uEPei8K" role="10QFUP">
-                      <node concept="37vLTw" id="4pC9uEPei8L" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4pC9uEPei8A" resolve="url" />
-                      </node>
-                      <node concept="liA8E" id="4pC9uEPei8M" role="2OqNvi">
-                        <ref role="37wK5l" to="zf81:~URL.openConnection():java.net.URLConnection" resolve="openConnection" />
-                      </node>
+                <node concept="2YIFZM" id="1_op79IvaYe" role="33vP2m">
+                  <ref role="1Pybhc" to="zf81:~InetAddress" resolve="InetAddress" />
+                  <ref role="37wK5l" to="zf81:~InetAddress.getByName(java.lang.String):java.net.InetAddress" resolve="getByName" />
+                  <node concept="2OqwBi" id="1_op79IvaYf" role="37wK5m">
+                    <node concept="37vLTw" id="1_op79IvaYg" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4pC9uEPei8A" resolve="url" />
                     </node>
-                    <node concept="3uibUv" id="4pC9uEPei8N" role="10QFUM">
-                      <ref role="3uigEE" to="zf81:~HttpURLConnection" resolve="HttpURLConnection" />
+                    <node concept="liA8E" id="1_op79IvaYh" role="2OqNvi">
+                      <ref role="37wK5l" to="zf81:~URL.getHost():java.lang.String" resolve="getHost" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="4pC9uEPei8O" role="3cqZAp">
-              <node concept="2OqwBi" id="4pC9uEPei8P" role="3clFbG">
-                <node concept="37vLTw" id="4pC9uEPei8Q" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4pC9uEPei8G" resolve="c" />
+            <node concept="3clFbJ" id="1_op79Isgub" role="3cqZAp">
+              <node concept="3clFbS" id="1_op79Isgud" role="3clFbx">
+                <node concept="3cpWs8" id="4pC9uEPei8F" role="3cqZAp">
+                  <node concept="3cpWsn" id="4pC9uEPei8G" role="3cpWs9">
+                    <property role="TrG5h" value="c" />
+                    <node concept="3uibUv" id="4pC9uEPei8H" role="1tU5fm">
+                      <ref role="3uigEE" to="zf81:~HttpURLConnection" resolve="HttpURLConnection" />
+                    </node>
+                    <node concept="1eOMI4" id="4pC9uEPei8I" role="33vP2m">
+                      <node concept="10QFUN" id="4pC9uEPei8J" role="1eOMHV">
+                        <node concept="2OqwBi" id="4pC9uEPei8K" role="10QFUP">
+                          <node concept="37vLTw" id="4pC9uEPei8L" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4pC9uEPei8A" resolve="url" />
+                          </node>
+                          <node concept="liA8E" id="4pC9uEPei8M" role="2OqNvi">
+                            <ref role="37wK5l" to="zf81:~URL.openConnection():java.net.URLConnection" resolve="openConnection" />
+                          </node>
+                        </node>
+                        <node concept="3uibUv" id="4pC9uEPei8N" role="10QFUM">
+                          <ref role="3uigEE" to="zf81:~HttpURLConnection" resolve="HttpURLConnection" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="liA8E" id="4pC9uEPei8R" role="2OqNvi">
-                  <ref role="37wK5l" to="zf81:~HttpURLConnection.getResponseCode():int" resolve="getResponseCode" />
+                <node concept="3clFbF" id="4pC9uEPei8O" role="3cqZAp">
+                  <node concept="2OqwBi" id="4pC9uEPei8P" role="3clFbG">
+                    <node concept="37vLTw" id="4pC9uEPei8Q" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4pC9uEPei8G" resolve="c" />
+                    </node>
+                    <node concept="liA8E" id="4pC9uEPei8R" role="2OqNvi">
+                      <ref role="37wK5l" to="zf81:~HttpURLConnection.getResponseCode():int" resolve="getResponseCode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="22lmx$" id="1_op79Ivcrn" role="3clFbw">
+                <node concept="2OqwBi" id="1_op79Ivd7e" role="3uHU7w">
+                  <node concept="37vLTw" id="1_op79IvcMZ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1_op79IvaKT" resolve="addr" />
+                  </node>
+                  <node concept="liA8E" id="1_op79Ivduk" role="2OqNvi">
+                    <ref role="37wK5l" to="zf81:~InetAddress.isAnyLocalAddress():boolean" resolve="isAnyLocalAddress" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1_op79IsgHC" role="3uHU7B">
+                  <node concept="37vLTw" id="1_op79Ivbd5" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1_op79IvaKT" resolve="addr" />
+                  </node>
+                  <node concept="liA8E" id="1_op79IsgHH" role="2OqNvi">
+                    <ref role="37wK5l" to="zf81:~InetAddress.isLoopbackAddress():boolean" resolve="isLoopbackAddress" />
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="1_op79IuUYz" role="9aQIa">
+                <node concept="3clFbS" id="1_op79IuUY$" role="9aQI4">
+                  <node concept="3clFbF" id="1_op79IuVru" role="3cqZAp">
+                    <node concept="2OqwBi" id="1_op79IuVrr" role="3clFbG">
+                      <node concept="10M0yZ" id="1_op79IuVrs" role="2Oq$k0">
+                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                        <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                      </node>
+                      <node concept="liA8E" id="1_op79IuVrt" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                        <node concept="3cpWs3" id="1_op79IuXUG" role="37wK5m">
+                          <node concept="37vLTw" id="1_op79IuZjt" role="3uHU7w">
+                            <ref role="3cqZAo" node="27T0Q3SBuuU" resolve="urlString" />
+                          </node>
+                          <node concept="Xl_RD" id="1_op79IuVBE" role="3uHU7B">
+                            <property role="Xl_RC" value="ERROR: Cannot open link, address is not local: " />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -2216,8 +2183,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2DnVhjrAfCB" role="3cqZAp" />
-        <node concept="3clFbH" id="2DnVhjrCUXM" role="3cqZAp" />
         <node concept="3clFbH" id="2DnVhjrCUYy" role="3cqZAp" />
         <node concept="3clFbF" id="buDqkdW41D" role="3cqZAp">
           <node concept="3nyPlj" id="buDqkdW41E" role="3clFbG">
