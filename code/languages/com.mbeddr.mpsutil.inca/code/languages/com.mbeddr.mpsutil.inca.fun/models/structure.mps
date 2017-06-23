@@ -547,5 +547,15 @@
       <ref role="20lvS9" node="1i65yRAQ7jk" resolve="IExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6ZsaHh0ae4O">
+    <property role="EcuMT" value="8060364524184199476" />
+    <property role="3GE5qa" value="misc" />
+    <property role="TrG5h" value="FunHorizontalLineContent" />
+    <property role="34LRSv" value="hline" />
+    <ref role="1TJDcQ" to="hqsm:6ZsaHh09WeF" resolve="HorizontalLineContent" />
+    <node concept="PrWs8" id="6ZsaHh0ae4V" role="PzmwI">
+      <ref role="PrY4T" node="5luHlsCrxe_" resolve="IPatternFunctionModuleContent" />
+    </node>
+  </node>
 </model>
 

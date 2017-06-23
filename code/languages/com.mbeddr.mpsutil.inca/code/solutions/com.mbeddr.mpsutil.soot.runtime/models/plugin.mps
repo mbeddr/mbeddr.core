@@ -936,8 +936,8 @@
                 </node>
                 <node concept="liA8E" id="1lsowDUi17C" role="2OqNvi">
                   <ref role="37wK5l" to="ltkh:~Options.set_output_format(int):void" resolve="set_output_format" />
-                  <node concept="10M0yZ" id="QHoUon9mlb" role="37wK5m">
-                    <ref role="3cqZAo" to="ltkh:~Options.output_format_shimple" resolve="output_format_shimple" />
+                  <node concept="10M0yZ" id="1kTSrRxP743" role="37wK5m">
+                    <ref role="3cqZAo" to="ltkh:~Options.output_format_jimple" resolve="output_format_jimple" />
                     <ref role="1PxDUh" to="ltkh:~Options" resolve="Options" />
                   </node>
                 </node>
