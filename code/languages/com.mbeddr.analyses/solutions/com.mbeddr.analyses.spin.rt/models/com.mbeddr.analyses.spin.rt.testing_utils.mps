@@ -20,6 +20,8 @@
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.rt.analyzer)" />
     <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.analyses.spin.rt.analyzer.model)" />
+    <import index="3o3s" ref="r:c8f6abe2-4235-462a-965b-fe6307bc1863(com.mbeddr.analyses.spin.behavior)" />
+    <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -70,6 +72,10 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -161,6 +167,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -393,7 +400,7 @@
     </node>
     <node concept="2tJIrI" id="5yxSA$IRGTi" role="jymVt" />
     <node concept="2YIFZL" id="5yxSA$IRHT2" role="jymVt">
-      <property role="TrG5h" value="checkAssertionAnalysis" />
+      <property role="TrG5h" value="checkSpinBasedAnalysis" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -413,9 +420,9 @@
       <node concept="3clFbS" id="5yxSA$IRHT7" role="3clF47">
         <node concept="3cpWs8" id="5yxSA$IRT33" role="3cqZAp">
           <node concept="3cpWsn" id="5yxSA$IRT34" role="3cpWs9">
-            <property role="TrG5h" value="aa" />
+            <property role="TrG5h" value="sba" />
             <node concept="3Tqbb2" id="5yxSA$IRT2W" role="1tU5fm">
-              <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
+              <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
             </node>
           </node>
         </node>
@@ -426,15 +433,15 @@
                 <node concept="3cpWsn" id="5yxSA$IRJ1x" role="3cpWs9">
                   <property role="TrG5h" value="nodes" />
                   <node concept="2I9FWS" id="5yxSA$IRJ1t" role="1tU5fm">
-                    <ref role="2I9WkF" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
+                    <ref role="2I9WkF" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
                   </node>
                   <node concept="2OqwBi" id="5yxSA$IRJ1y" role="33vP2m">
                     <node concept="37vLTw" id="5yxSA$IRJ1z" role="2Oq$k0">
                       <ref role="3cqZAo" node="5yxSA$IRHT3" resolve="model" />
                     </node>
                     <node concept="2SmgA7" id="5yxSA$IRJ1$" role="2OqNvi">
-                      <node concept="chp4Y" id="5yxSA$IRJ1_" role="1dBWTz">
-                        <ref role="cht4Q" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
+                      <node concept="chp4Y" id="4l47ydyeIqv" role="1dBWTz">
+                        <ref role="cht4Q" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
                       </node>
                     </node>
                   </node>
@@ -481,7 +488,7 @@
                     </node>
                   </node>
                   <node concept="37vLTw" id="5yxSA$IRTgV" role="37vLTJ">
-                    <ref role="3cqZAo" node="5yxSA$IRT34" resolve="aa" />
+                    <ref role="3cqZAo" node="5yxSA$IRT34" resolve="sba" />
                   </node>
                 </node>
               </node>
@@ -489,7 +496,7 @@
                 <node concept="3y3z36" id="1frDWv8aHfj" role="1gVkn0">
                   <node concept="10Nm6u" id="1frDWv8aHiL" role="3uHU7w" />
                   <node concept="37vLTw" id="1frDWv8aH4A" role="3uHU7B">
-                    <ref role="3cqZAo" node="5yxSA$IRT34" resolve="aa" />
+                    <ref role="3cqZAo" node="5yxSA$IRT34" resolve="sba" />
                   </node>
                 </node>
                 <node concept="3cpWs3" id="3tIDuP5srR9" role="1gVpfI">
@@ -498,7 +505,7 @@
                   </node>
                   <node concept="3cpWs3" id="1frDWv8aLWD" role="3uHU7B">
                     <node concept="Xl_RD" id="1frDWv8aLED" role="3uHU7B">
-                      <property role="Xl_RC" value="AssertionAnalysis not found for Promela module: '" />
+                      <property role="Xl_RC" value="SpinBasedAnalysis not found for Promela module: '" />
                     </node>
                     <node concept="37vLTw" id="1frDWv8aM3e" role="3uHU7w">
                       <ref role="3cqZAo" node="5yxSA$IRHT5" resolve="spinModuleName" />
@@ -513,17 +520,17 @@
           <node concept="1rXfSq" id="5yxSA$IRUpR" role="3clFbG">
             <ref role="37wK5l" node="5yxSA$IRGjq" resolve="doCheck" />
             <node concept="37vLTw" id="5yxSA$IRUx8" role="37wK5m">
-              <ref role="3cqZAo" node="5yxSA$IRT34" resolve="aa" />
+              <ref role="3cqZAo" node="5yxSA$IRT34" resolve="sba" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="5yxSA$IRHTe" role="1B3o_S" />
       <node concept="NWlO9" id="5yxSA$IRHTg" role="lGtFl">
-        <property role="NWlVz" value="Check the AssertionAnalysis." />
+        <property role="NWlVz" value="Check the SpinBasedAnalysis." />
       </node>
     </node>
-    <node concept="2tJIrI" id="5yxSA$IRHOe" role="jymVt" />
+    <node concept="2tJIrI" id="4l47ydyeB5K" role="jymVt" />
     <node concept="2YIFZL" id="5yxSA$IRGjq" role="jymVt">
       <property role="TrG5h" value="doCheck" />
       <node concept="_YKpA" id="63QgsF$Ozsi" role="3clF45">
@@ -535,32 +542,53 @@
       <node concept="37vLTG" id="5yxSA$IRGjl" role="3clF46">
         <property role="TrG5h" value="aa" />
         <node concept="3Tqbb2" id="5yxSA$IRGjm" role="1tU5fm">
-          <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
+          <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
         </node>
       </node>
       <node concept="3clFbS" id="5yxSA$IRGiH" role="3clF47">
-        <node concept="3cpWs8" id="5yxSA$IRGiI" role="3cqZAp">
-          <node concept="3cpWsn" id="5yxSA$IRGiJ" role="3cpWs9">
-            <property role="TrG5h" value="analyzer" />
-            <node concept="3uibUv" id="5yxSA$IRGiK" role="1tU5fm">
-              <ref role="3uigEE" to="5do7:1wu5Hv6fgIx" resolve="SpinAssertionsAnalyzer" />
+        <node concept="3cpWs8" id="4l47ydyeJ8h" role="3cqZAp">
+          <node concept="3cpWsn" id="4l47ydyeJ8i" role="3cpWs9">
+            <property role="TrG5h" value="factory" />
+            <node concept="3uibUv" id="4l47ydyeJ8f" role="1tU5fm">
+              <ref role="3uigEE" to="5do7:5uY69zuQJv8" resolve="SpinAnalyzerFactory" />
             </node>
-            <node concept="2ShNRf" id="5yxSA$IRGiL" role="33vP2m">
-              <node concept="1pGfFk" id="5yxSA$IRGiM" role="2ShVmc">
-                <ref role="37wK5l" to="5do7:1wu5Hv6fnQg" resolve="SpinAssertionsAnalyzer" />
-                <node concept="2YIFZM" id="5yxSA$IRGiN" role="37wK5m">
+            <node concept="2OqwBi" id="4l47ydyeJ8j" role="33vP2m">
+              <node concept="37vLTw" id="4l47ydyeJ8k" role="2Oq$k0">
+                <ref role="3cqZAo" node="5yxSA$IRGjl" resolve="aa" />
+              </node>
+              <node concept="2qgKlT" id="4l47ydyeJ8l" role="2OqNvi">
+                <ref role="37wK5l" to="3o3s:4arT0cnAVru" resolve="createAnalyzer" />
+                <node concept="2YIFZM" id="4l47ydyeJ8m" role="37wK5m">
                   <ref role="37wK5l" to="d8ej:HmUOIGAXzl" resolve="newInstance" />
                   <ref role="1Pybhc" to="d8ej:HmUOIGARns" resolve="EmptyToolAdapter" />
                 </node>
-                <node concept="2ShNRf" id="5yxSA$IRGiO" role="37wK5m">
-                  <node concept="1pGfFk" id="5yxSA$IRGiP" role="2ShVmc">
-                    <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                <node concept="10Nm6u" id="4l47ydyeJ8n" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5yxSA$IRGiI" role="3cqZAp">
+          <node concept="3cpWsn" id="5yxSA$IRGiJ" role="3cpWs9">
+            <property role="TrG5h" value="analyzer" />
+            <node concept="3uibUv" id="4l47ydyf1HN" role="1tU5fm">
+              <ref role="3uigEE" to="5do7:5uY69zuR35K" resolve="SpinAnalyzerBase" />
+            </node>
+            <node concept="10QFUN" id="4l47ydyeK6K" role="33vP2m">
+              <node concept="2OqwBi" id="4l47ydyeK6F" role="10QFUP">
+                <node concept="37vLTw" id="4l47ydyeK6G" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4l47ydyeJ8i" resolve="factory" />
+                </node>
+                <node concept="liA8E" id="4l47ydyeK6H" role="2OqNvi">
+                  <ref role="37wK5l" to="ood5:5uqRFp8ViNe" resolve="createAnalyzer" />
+                  <node concept="2ShNRf" id="4l47ydyeK6I" role="37wK5m">
+                    <node concept="1pGfFk" id="4l47ydyeK6J" role="2ShVmc">
+                      <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                    </node>
                   </node>
                 </node>
-                <node concept="10Nm6u" id="5uY69zuYOI6" role="37wK5m" />
-                <node concept="37vLTw" id="5yxSA$IRGjn" role="37wK5m">
-                  <ref role="3cqZAo" node="5yxSA$IRGjl" resolve="aa" />
-                </node>
+              </node>
+              <node concept="3uibUv" id="4l47ydyf1SX" role="10QFUM">
+                <ref role="3uigEE" to="5do7:5uY69zuR35K" resolve="SpinAnalyzerBase" />
               </node>
             </node>
           </node>

@@ -42,6 +42,7 @@
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
+        <child id="5323740605968447026" name="target" index="2AWWZH" />
       </concept>
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
@@ -91,6 +92,11 @@
       </concept>
       <concept id="2197773122553726593" name="com.mbeddr.analyses.spin.structure.RobustnessSpinAnalysis" flags="ng" index="2$dOA3" />
       <concept id="9065467049586938195" name="com.mbeddr.analyses.spin.structure.SpinExecutable" flags="ng" index="1gr5cj" />
+      <concept id="9065467049586938196" name="com.mbeddr.analyses.spin.structure.SpinPlatform" flags="ng" index="1gr5ck">
+        <property id="9065467049586938197" name="compiler" index="1gr5cl" />
+        <property id="9065467049586938198" name="compilerOptions" index="1gr5cm" />
+        <property id="9065467049586938199" name="make" index="1gr5cn" />
+      </concept>
       <concept id="6386634687973783239" name="com.mbeddr.analyses.spin.structure.IPanRunSettings" flags="ng" index="1Qv9iI">
         <property id="768608840052710411" name="stopAtFirstError" index="3SeVAx" />
       </concept>
@@ -341,6 +347,11 @@
     </node>
     <node concept="2Q9Fgs" id="70fpbbgzyvt" role="2Q9xDr">
       <node concept="2Q9FjX" id="70fpbbgzyvu" role="2Q9FjI" />
+    </node>
+    <node concept="1gr5ck" id="70fpbbgzyYB" role="2AWWZH">
+      <property role="1gr5cl" value="gcc" />
+      <property role="1gr5cm" value="-std=c99 -DSAFETY -DWIN32 " />
+      <property role="1gr5cn" value="make" />
     </node>
   </node>
   <node concept="3uEX16" id="70fpbbgzyxn">
