@@ -110,7 +110,7 @@
             <property role="TrG5h" value="m" />
             <node concept="H_c77" id="4l47ydye$kU" role="1tU5fm" />
             <node concept="BaHAS" id="4l47ydye$kV" role="33vP2m">
-              <property role="BaHAW" value="robustness" />
+              <property role="BaHAW" value="robustness_spin" />
               <property role="BaGAP" value="" />
             </node>
           </node>

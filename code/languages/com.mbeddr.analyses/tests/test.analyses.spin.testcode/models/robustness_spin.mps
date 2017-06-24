@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0208d9e1-21da-425a-be52-ba0982761ebd(robustness)">
+<model ref="r:0208d9e1-21da-425a-be52-ba0982761ebd(robustness_spin)">
   <persistence version="9" />
   <languages>
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
