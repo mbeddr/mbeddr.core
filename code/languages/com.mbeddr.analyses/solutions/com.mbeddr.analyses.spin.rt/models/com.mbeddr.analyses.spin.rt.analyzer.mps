@@ -28,7 +28,6 @@
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="8fsg" ref="r:4c26acae-0f84-4664-bc8e-eb85ca6494bf(com.mbeddr.analyses.utils.nodes)" />
-    <import index="8ear" ref="r:80dc224f-cfbc-4d66-ab57-5e00bae3bc4a(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.builder)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" implicit="true" />
     <import index="3o3s" ref="r:c8f6abe2-4235-462a-965b-fe6307bc1863(com.mbeddr.analyses.spin.behavior)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
@@ -3223,13 +3222,13 @@
                   <node concept="3cpWsn" id="4l47ydydBVc" role="3cpWs9">
                     <property role="TrG5h" value="originalNode" />
                     <node concept="3Tqbb2" id="4l47ydydBUh" role="1tU5fm" />
-                    <node concept="2YIFZM" id="4l47ydydBVd" role="33vP2m">
-                      <ref role="1Pybhc" to="8ear:7iLQIU2tUXc" resolve="NodesFinderFacade" />
-                      <ref role="37wK5l" to="8ear:4a8JajkMaNY" resolve="findOriginalNode" />
-                      <node concept="37vLTw" id="4l47ydydHXp" role="37wK5m">
+                    <node concept="2YIFZM" id="4l47ydyfFC1" role="33vP2m">
+                      <ref role="37wK5l" to="8fsg:4a8JajkMaNY" resolve="findOriginalNode" />
+                      <ref role="1Pybhc" to="8fsg:4l47ydyfkqq" resolve="NodesTracingFacade" />
+                      <node concept="37vLTw" id="4l47ydyfFC2" role="37wK5m">
                         <ref role="3cqZAo" node="4l47ydydHXj" resolve="fullPath" />
                       </node>
-                      <node concept="37vLTw" id="4l47ydydBVj" role="37wK5m">
+                      <node concept="37vLTw" id="4l47ydyfFC3" role="37wK5m">
                         <ref role="3cqZAo" node="4l47ydycS8E" resolve="lineNumber" />
                       </node>
                     </node>
