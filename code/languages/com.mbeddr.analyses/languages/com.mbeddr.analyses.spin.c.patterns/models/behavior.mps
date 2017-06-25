@@ -277,7 +277,7 @@
       <node concept="3clFbS" id="pq_X7Y8v6v" role="3clF47">
         <node concept="3clFbF" id="pq_X7Y8w$9" role="3cqZAp">
           <node concept="Xl_RD" id="pq_X7Y8w$8" role="3clFbG">
-            <property role="Xl_RC" value="C Verification Harness Module" />
+            <property role="Xl_RC" value="C Verification Harness" />
           </node>
         </node>
       </node>

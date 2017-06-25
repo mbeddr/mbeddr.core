@@ -27,6 +27,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -55,6 +56,7 @@
     <property role="TrG5h" value="AssertionsSpinAnalysis" />
     <property role="34LRSv" value="Spin Assertions Analysis" />
     <property role="EcuMT" value="3854501276819165429" />
+    <property role="3GE5qa" value="configs" />
     <ref role="1TJDcQ" node="3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
   </node>
   <node concept="PlHQZ" id="3lXW7OZ6IbN">
@@ -71,6 +73,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="3854501276819366674" />
+    <property role="3GE5qa" value="configs" />
     <ref role="1TJDcQ" to="q46j:5BkFC2yh8uL" resolve="Analysis" />
     <node concept="1TJgyj" id="3lXW7OZ694h" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -135,7 +138,17 @@
     <property role="EcuMT" value="2197773122553726593" />
     <property role="TrG5h" value="RobustnessSpinAnalysis" />
     <property role="34LRSv" value="Spin Robustness Analysis" />
+    <property role="3GE5qa" value="configs" />
     <ref role="1TJDcQ" node="3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
+  </node>
+  <node concept="1TIwiD" id="4l47ydyjg7D">
+    <property role="EcuMT" value="4991147424355254761" />
+    <property role="TrG5h" value="SpinAnalysisConfigurationContainer" />
+    <property role="34LRSv" value="Spin Analyses Configuration Container" />
+    <property role="3GE5qa" value="configs" />
+    <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="container for further Spin-based analyses" />
+    <ref role="1TJDcQ" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
   </node>
 </model>
 
