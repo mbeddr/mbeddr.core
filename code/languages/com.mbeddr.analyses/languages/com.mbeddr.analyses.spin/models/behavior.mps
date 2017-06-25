@@ -343,6 +343,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1U03KaUITrS">
+    <property role="3GE5qa" value="configs" />
     <ref role="13h7C2" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
     <node concept="13i0hz" id="4arT0cnAVru" role="13h7CS">
       <property role="TrG5h" value="createAnalyzer" />
@@ -375,6 +376,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1U03KaUJegF">
+    <property role="3GE5qa" value="configs" />
     <ref role="13h7C2" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
     <node concept="13hLZK" id="1U03KaUJegG" role="13h7CW">
       <node concept="3clFbS" id="1U03KaUJegH" role="2VODD2" />
@@ -419,6 +421,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5uY69zuSiSZ">
+    <property role="3GE5qa" value="configs" />
     <ref role="13h7C2" to="v326:1U03KaUHOq1" resolve="RobustnessSpinAnalysis" />
     <node concept="13hLZK" id="5uY69zuSiT0" role="13h7CW">
       <node concept="3clFbS" id="5uY69zuSiT1" role="2VODD2" />
