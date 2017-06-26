@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:16f150cb-52bb-42dc-9afd-9d7c6c5c23f5(com.mbeddr.analyses.spin.c.patterns.documentation)" doNotGenerate="true">
+<model ref="r:16f150cb-52bb-42dc-9afd-9d7c6c5c23f5(com.mbeddr.analyses.spin.c.patterns.documentation)">
   <persistence version="9" />
   <languages>
     <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />
@@ -23,6 +23,17 @@
     <language id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect">
       <concept id="1058510331725720478" name="com.mbeddr.doc.aspect.structure.DocumentedConceptAnnotation" flags="ng" index="3n9NSn">
         <reference id="1058510331725761196" name="concept" index="3nadW_" />
+      </concept>
+    </language>
+    <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
+      <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ng" index="3vooZZ">
+        <property id="8039098920897639409" name="attachedCellId" index="19LeSh" />
+        <reference id="8039098920897680033" name="attachedNode" index="19LoX1" />
+      </concept>
+    </language>
+    <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
+      <concept id="8455208232410333108" name="com.mbeddr.mpsutil.review.annotation.structure.CommentAnnotationContainer" flags="ng" index="2f$52y">
+        <child id="8455208232410333109" name="comments" index="2f$52z" />
       </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -215,6 +226,13 @@
       <concept id="6472990431939580591" name="com.mbeddr.analyses.base.structure.AnalysisConfiguration" flags="ng" index="3V_BKJ">
         <child id="6472990431939692464" name="analyses" index="3V$2$K" />
         <child id="559958203687603517" name="imports" index="3W6d8T" />
+      </concept>
+    </language>
+    <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
+      <concept id="1159656764133526267" name="com.mbeddr.mpsutil.review.structure.ReviewNote" flags="ng" index="3vAitl">
+        <property id="5652920968054438504" name="created" index="3ajGZ3" />
+        <property id="5652920968054438487" name="creator" index="3ajGZW" />
+        <child id="5652920968054438510" name="note" index="3ajGZ5" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -667,20 +685,33 @@
     <node concept="2Q9Fgs" id="4l47ydyjFhM" role="2Q9xDr">
       <node concept="2Q9FjX" id="4l47ydyjFhN" role="2Q9FjI" />
     </node>
-    <node concept="1gr5cj" id="4l47ydyjFhS" role="2ePNbc">
-      <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="pan__010_verification_harness" />
-      <node concept="2v9HqM" id="4l47ydyjFhW" role="2eOfOg">
-        <ref role="2v9HqP" node="4l47ydyiFrv" resolve="_010_verification_harness" />
-      </node>
-      <node concept="2v9HqM" id="4l47ydyjFhZ" role="2eOfOg">
-        <ref role="2v9HqP" node="4l47ydyiFv7" resolve="_010_suv" />
+    <node concept="1gr5ck" id="4l47ydyjXTH" role="2AWWZH">
+      <property role="1gr5cl" value="gcc" />
+      <property role="1gr5cm" value="-std=c99 -DSAFETY " />
+      <property role="1gr5cn" value="make" />
+    </node>
+    <node concept="2f$52y" id="4l47ydymnFk" role="lGtFl">
+      <node concept="3vAitl" id="4l47ydymnFl" role="2f$52z">
+        <property role="3ajGZW" value="z003cemm" />
+        <property role="3ajGZ3" value="26.06.2017 06:07:27" />
+        <property role="19LeSh" value="Collection_iunoqz_a" />
+        <ref role="19LoX1" node="4l47ydyjXTH" />
+        <node concept="19SGf9" id="4l47ydymnFm" role="3ajGZ5">
+          <node concept="19SUe$" id="4l47ydymnFn" role="19SJt6">
+            <property role="19SUeA" value="it should be:&#10;path to executable: &quot;clang (clang-cl)&quot;&#10;compiler options: &quot;-std=c99 -DSAFETY -DWIN32  -fsanitize=undefined&quot;&#10;&#10;REMOVED THIS CONFIG TO ENABLE THE BUILD ON THE CI SERVER" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="1gr5ck" id="4l47ydyjXTH" role="2AWWZH">
-      <property role="1gr5cl" value="clang-cl" />
-      <property role="1gr5cm" value="-std=c99 -DSAFETY -DWIN32  -fsanitize=undefined" />
-      <property role="1gr5cn" value="make" />
+    <node concept="1gr5cj" id="4l47ydymnHn" role="2ePNbc">
+      <property role="iO3LB" value="false" />
+      <property role="TrG5h" value="pan__010_verification_harness" />
+      <node concept="2v9HqM" id="4l47ydymnHs" role="2eOfOg">
+        <ref role="2v9HqP" node="4l47ydyiFrv" resolve="_010_verification_harness" />
+      </node>
+      <node concept="2v9HqM" id="4l47ydymnHw" role="2eOfOg">
+        <ref role="2v9HqP" node="4l47ydyiFv7" resolve="_010_suv" />
+      </node>
     </node>
   </node>
 </model>
