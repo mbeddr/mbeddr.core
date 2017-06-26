@@ -148,7 +148,6 @@
       <concept id="3854501276819366674" name="com.mbeddr.analyses.spin.structure.SpinBasedAnalysis" flags="ng" index="ap_dJ">
         <reference id="3854501276819165457" name="env" index="apm5G" />
       </concept>
-      <concept id="2197773122553726593" name="com.mbeddr.analyses.spin.structure.RobustnessSpinAnalysis" flags="ng" index="2$dOA3" />
       <concept id="4991147424355254761" name="com.mbeddr.analyses.spin.structure.SpinAnalysisConfigurationContainer" flags="ng" index="B2hZa" />
       <concept id="9065467049586938195" name="com.mbeddr.analyses.spin.structure.SpinExecutable" flags="ng" index="1gr5cj" />
       <concept id="9065467049586938196" name="com.mbeddr.analyses.spin.structure.SpinPlatform" flags="ng" index="1gr5ck">
@@ -669,10 +668,6 @@
     <property role="3GE5qa" value="examples" />
     <property role="TrG5h" value="analyses_config_container" />
     <node concept="apm28" id="4l47ydyjFia" role="3V$2$K">
-      <property role="3SeVAx" value="true" />
-      <ref role="apm5G" node="4l47ydyiFrv" resolve="_010_verification_harness" />
-    </node>
-    <node concept="2$dOA3" id="4l47ydyjXOo" role="3V$2$K">
       <property role="3SeVAx" value="true" />
       <ref role="apm5G" node="4l47ydyiFrv" resolve="_010_verification_harness" />
     </node>
