@@ -7,6 +7,7 @@
   </models>
   <accessoryModels>
     <model modelUID="r:8d555d77-fd50-40fa-ac6f-2c3435f35b35(com.mbeddr.analyses.spin.c.patterns.testsSaver)" />
+    <model modelUID="r:38d6a4df-dada-4cb3-a8e9-e8c2e1729730(com.mbeddr.analyses.spin.c.patterns.documentation_examples)" />
   </accessoryModels>
   <generators>
     <generator alias="" namespace="com.mbeddr.analyses.spin.c.patterns#4708346905221050054" uuid="063391c8-9b85-4087-8720-9745c869a2fb">
