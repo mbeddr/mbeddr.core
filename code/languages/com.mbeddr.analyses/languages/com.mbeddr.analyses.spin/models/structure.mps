@@ -9,6 +9,7 @@
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
   </imports>
   <registry>
@@ -144,11 +145,14 @@
   <node concept="1TIwiD" id="4l47ydyjg7D">
     <property role="EcuMT" value="4991147424355254761" />
     <property role="TrG5h" value="SpinAnalysisConfigurationContainer" />
-    <property role="34LRSv" value="Spin Analyses Configuration Container" />
+    <property role="34LRSv" value="Analyses Configurations Container (Spin)" />
     <property role="3GE5qa" value="configs" />
     <property role="19KtqR" value="true" />
-    <property role="R4oN_" value="container for further Spin-based analyses" />
+    <property role="R4oN_" value="container for Spin-based analyses configurations" />
     <ref role="1TJDcQ" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
+    <node concept="PrWs8" id="4l47ydypQBQ" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
+    </node>
   </node>
 </model>
 

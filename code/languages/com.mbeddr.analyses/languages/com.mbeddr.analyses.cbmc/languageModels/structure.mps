@@ -576,8 +576,8 @@
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="CBMCAnalysisConfiguration" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="Analyses Configuration" />
-    <property role="R4oN_" value="an analysis configuration contains multiple analyses" />
+    <property role="34LRSv" value="Analyses Configuration Container (CBMC)" />
+    <property role="R4oN_" value="an analysis configuration container contains multiple analyses" />
     <property role="EcuMT" value="2135612507694884868" />
     <ref role="1TJDcQ" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
     <node concept="PrWs8" id="1Qze4b32ew5" role="PzmwI">
