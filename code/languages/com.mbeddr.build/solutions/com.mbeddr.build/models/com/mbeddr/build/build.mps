@@ -11187,6 +11187,9 @@
         <node concept="3LEz8M" id="6efVUW9Ipjl" role="3LEz9a">
           <ref role="3LEz8N" node="6efVUW9Id0E" resolve="com.mbeddr.analyses.promela" />
         </node>
+        <node concept="3LEz8M" id="4l47ydymoEh" role="3LEz9a">
+          <ref role="3LEz8N" node="7uZw0yZ43Kv" resolve="com.mbeddr.core" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAuSOp" role="3989C9">
