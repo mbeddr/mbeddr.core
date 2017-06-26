@@ -18,6 +18,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.rt.analyzer)" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -67,6 +68,7 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -93,6 +95,9 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -463,6 +468,59 @@
       <node concept="3uibUv" id="5uY69zuSiTp" role="3clF45">
         <ref role="3uigEE" to="5do7:5uY69zuQJv8" resolve="SpinAnalyzerFactory" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="4l47ydypR8w">
+    <property role="3GE5qa" value="configs" />
+    <ref role="13h7C2" to="v326:4l47ydyjg7D" resolve="SpinAnalysisConfigurationContainer" />
+    <node concept="13hLZK" id="4l47ydypR8x" role="13h7CW">
+      <node concept="3clFbS" id="4l47ydypR8y" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7e1BewRkOaB" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getIDEDisplayString" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="hwgx:IviauXb0g" resolve="getIDEDisplayString" />
+      <node concept="3Tm1VV" id="7e1BewRkOaC" role="1B3o_S" />
+      <node concept="3clFbS" id="7e1BewRkOaF" role="3clF47">
+        <node concept="3clFbF" id="v5nKjVRSri" role="3cqZAp">
+          <node concept="Xl_RD" id="v5nKjVRSrh" role="3clFbG">
+            <property role="Xl_RC" value="Analyses Configurations Container (Spin)" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7e1BewRkOaG" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7e1BewRkOaH" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getSortOrder" />
+      <ref role="13i0hy" to="hwgx:1uL8CIs6rGR" resolve="getSortOrder" />
+      <node concept="3Tm1VV" id="7e1BewRkOaI" role="1B3o_S" />
+      <node concept="3clFbS" id="7e1BewRkOaL" role="3clF47">
+        <node concept="3clFbF" id="7e1BewRkOxk" role="3cqZAp">
+          <node concept="3cmrfG" id="7e1BewRkOxj" role="3clFbG">
+            <property role="3cmrfH" value="50" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="7e1BewRkOaM" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7e1BewRkOaN" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getParentPopup" />
+      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getParentPopup" />
+      <node concept="3Tm1VV" id="7e1BewRkOaO" role="1B3o_S" />
+      <node concept="3clFbS" id="7e1BewRkOaR" role="3clF47">
+        <node concept="3clFbF" id="7e1BewRkOxA" role="3cqZAp">
+          <node concept="Xl_RD" id="7e1BewRkOx_" role="3clFbG">
+            <property role="Xl_RC" value="Analysis" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7e1BewRkOaS" role="3clF45" />
     </node>
   </node>
 </model>

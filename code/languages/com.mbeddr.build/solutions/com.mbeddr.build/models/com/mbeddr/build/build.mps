@@ -11184,11 +11184,17 @@
         <node concept="3LEDTy" id="6efVUW9IoKv" role="3LEDUa">
           <ref role="3LEDTV" node="3JmJHJb$WUS" resolve="com.mbeddr.analyses.spin.c.patterns" />
         </node>
-        <node concept="3LEz8M" id="6efVUW9Ipjl" role="3LEz9a">
-          <ref role="3LEz8N" node="6efVUW9Id0E" resolve="com.mbeddr.analyses.promela" />
-        </node>
         <node concept="3LEz8M" id="4l47ydymoEh" role="3LEz9a">
           <ref role="3LEz8N" node="7uZw0yZ43Kv" resolve="com.mbeddr.core" />
+        </node>
+        <node concept="3LEDTy" id="5HlC91L_yGd" role="3LEDUa">
+          <ref role="3LEDTV" node="3JmJHJb$FXz" resolve="com.mbeddr.analyses.spin" />
+        </node>
+        <node concept="3LEDTy" id="5HlC91L_yGe" role="3LEDUa">
+          <ref role="3LEDTV" node="3JmJHJb$M36" resolve="com.mbeddr.analyses.spin.promela" />
+        </node>
+        <node concept="3LEDTy" id="5HlC91L_yGf" role="3LEDUa">
+          <ref role="3LEDTV" node="3JmJHJb$PCC" resolve="com.mbeddr.analyses.spin.promela.patterns" />
         </node>
       </node>
     </node>

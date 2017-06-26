@@ -2884,7 +2884,7 @@
       <node concept="3clFbS" id="v5nKjVRSit" role="3clF47">
         <node concept="3clFbF" id="v5nKjVRSri" role="3cqZAp">
           <node concept="Xl_RD" id="v5nKjVRSrh" role="3clFbG">
-            <property role="Xl_RC" value="Analyses Configuration for CBMC" />
+            <property role="Xl_RC" value="Analyses Configuration Container (CBMC)" />
           </node>
         </node>
       </node>
