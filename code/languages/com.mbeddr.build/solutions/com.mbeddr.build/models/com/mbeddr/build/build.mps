@@ -10428,6 +10428,12 @@
             <ref role="3bR37D" node="7eF9rfAuDWl" resolve="com.mbeddr.analyses.utils" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5HlC91LPPNN" role="3bR37C">
+          <node concept="3bR9La" id="5HlC91LPPNO" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5HlC91LJU65" resolve="com.mbeddr.analyses.spin.documentation" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3JmJHJb$M36" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -11234,6 +11240,9 @@
         </node>
         <node concept="3LEDTy" id="5HlC91L_yGf" role="3LEDUa">
           <ref role="3LEDTV" node="3JmJHJb$PCC" resolve="com.mbeddr.analyses.spin.promela.patterns" />
+        </node>
+        <node concept="3LEDTM" id="5HlC91LPPgi" role="3LEDUa">
+          <ref role="3LEDTN" node="5HlC91LJU65" resolve="com.mbeddr.analyses.spin.documentation" />
         </node>
       </node>
     </node>
