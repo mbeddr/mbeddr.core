@@ -346,5 +346,160 @@
       </node>
     </node>
   </node>
+  <node concept="1_1swa" id="5HlC91LF7Pi">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_030_MDCC_Declarations" />
+    <ref role="G9hjw" node="4l47ydyiE$p" resolve="cfg" />
+    <node concept="1mvXsy" id="5HlC91LF7Pj" role="1_0VJ0">
+      <property role="TrG5h" value="HarnessDeclarations" />
+      <property role="1_0VJr" value="Describing the Environment Variables" />
+      <node concept="1_0VNX" id="5HlC91LF7Pk" role="1_0VJ0">
+        <property role="TrG5h" value="GlobalDeclarations" />
+        <property role="1_0VJr" value="Global Declarations" />
+        <node concept="1_0LV8" id="5HlC91LF7Pl" role="1_0VJ0">
+          <node concept="19SGf9" id="5HlC91LF7Pm" role="1_0LWR">
+            <node concept="19SUe$" id="5HlC91LF7Pn" role="19SJt6">
+              <property role="19SUeA" value="The global declarations section contains declarations which belong only to the harness.  " />
+            </node>
+          </node>
+        </node>
+        <node concept="3n9NSn" id="5HlC91LF7Po" role="lGtFl">
+          <ref role="3nadW_" to="llb3:439FXGfiPF" resolve="GlobalDeclarations" />
+        </node>
+        <node concept="3X6WG5" id="5HlC91LF7Pp" role="1_0VJ0">
+          <node concept="3X6T9g" id="5HlC91LF7Pq" role="3Xp5NH">
+            <node concept="OjmMv" id="5HlC91LF7Pr" role="3X6T9h">
+              <node concept="19SGf9" id="5HlC91LF7Ps" role="OjmMu">
+                <node concept="19SUe$" id="5HlC91LF7Pt" role="19SJt6">
+                  <property role="19SUeA" value="for each of the " />
+                </node>
+                <node concept="2vpllh" id="5HlC91LF81q" role="19SJt6">
+                  <node concept="19SGf9" id="5HlC91LF81r" role="$DsGW">
+                    <node concept="19SUe$" id="5HlC91LF81s" role="19SJt6">
+                      <property role="19SUeA" value="inputs" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="5HlC91LF81t" role="19SJt6">
+                  <property role="19SUeA" value=" of the SUV we must have a variable contained in the declarations section of the harness module. These variables act as proxies for the inputs and will then be used for describing the harness logic." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="5HlC91LF7Py" role="3Xp5NH">
+            <node concept="OjmMv" id="5HlC91LF7Pz" role="3X6T9h">
+              <node concept="19SGf9" id="5HlC91LF7P$" role="OjmMu">
+                <node concept="19SUe$" id="5HlC91LF7P_" role="19SJt6" />
+                <node concept="2vpllh" id="5HlC91LF7PA" role="19SJt6">
+                  <node concept="19SGf9" id="5HlC91LF7PB" role="$DsGW">
+                    <node concept="19SUe$" id="5HlC91LF7PC" role="19SJt6">
+                      <property role="19SUeA" value="constants" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="5HlC91LF7PD" role="19SJt6">
+                  <property role="19SUeA" value=" " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5HlC91LF7PU" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="1_0LV8" id="5HlC91LF7PV" role="1_0VJ0">
+          <node concept="19SGf9" id="5HlC91LF7PW" role="1_0LWR">
+            <node concept="19SUe$" id="5HlC91LF7PX" role="19SJt6">
+              <property role="19SUeA" value="Below is an example for a typical globals declaration part of a harness:" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5HlC91LF7PY" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="5HlC91LF7PZ" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="Example for a typical harness module" />
+          <node concept="2NCZwO" id="5HlC91LF7Q0" role="3z_lpI">
+            <node concept="2NCMab" id="5HlC91LFcBh" role="2NCMaf">
+              <ref role="2NCMaa" to="vg66:5HlC91LF81N" resolve="_020_global_declarations" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="5HlC91LF7Q2" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="5HlC91LF7Q5">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_040_MDCC_Harness_Logic" />
+    <ref role="G9hjw" node="4l47ydyiE$p" resolve="cfg" />
+    <node concept="1mvXsy" id="5HlC91LF7Q6" role="1_0VJ0">
+      <property role="TrG5h" value="HarnessLogic" />
+      <property role="1_0VJr" value="Describing the Harness Logic" />
+      <node concept="1_0VNX" id="5HlC91LF7Q7" role="1_0VJ0">
+        <property role="TrG5h" value="HarnessCode" />
+        <property role="1_0VJr" value="Harness Code" />
+        <node concept="1_0LV8" id="5HlC91LF7Q8" role="1_0VJ0">
+          <node concept="19SGf9" id="5HlC91LF7Q9" role="1_0LWR">
+            <node concept="19SUe$" id="5HlC91LF7Qa" role="19SJt6">
+              <property role="19SUeA" value="Within the harness code we describe the environment of the system under verification (SUV). We can use the following primitives for describing the harness logic:" />
+            </node>
+          </node>
+        </node>
+        <node concept="3n9NSn" id="5HlC91LF7Qb" role="lGtFl">
+          <ref role="3nadW_" to="llb3:439FXGfyCs" resolve="HarnessCode" />
+        </node>
+        <node concept="3X6WG5" id="5HlC91LF7Qc" role="1_0VJ0">
+          <node concept="3X6T9g" id="5HlC91LF7Qd" role="3Xp5NH">
+            <node concept="OjmMv" id="5HlC91LF7Qe" role="3X6T9h">
+              <node concept="19SGf9" id="5HlC91LF7Qf" role="OjmMu">
+                <node concept="19SUe$" id="5HlC91LF7Qg" role="19SJt6" />
+                <node concept="2vpllh" id="5HlC91LF7Qh" role="19SJt6">
+                  <node concept="19SGf9" id="5HlC91LF7Qi" role="$DsGW">
+                    <node concept="19SUe$" id="5HlC91LF7Qj" role="19SJt6">
+                      <property role="19SUeA" value="nondet_assign(VAR, RANGE_EXP)" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="5HlC91LF7Qk" role="19SJt6">
+                  <property role="19SUeA" value=" assigns a nondeterministically variable in a certain range" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5HlC91LF7QH" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="1_0LV8" id="5HlC91LF7QI" role="1_0VJ0">
+          <node concept="19SGf9" id="5HlC91LF7QJ" role="1_0LWR">
+            <node concept="19SUe$" id="5HlC91LF7QK" role="19SJt6">
+              <property role="19SUeA" value="Below is an example for a typical harness module:" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5HlC91LF7QL" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="5HlC91LF7QM" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpJ" value="true" />
+          <property role="3z_lpV" value="Example for a typical harness module" />
+          <node concept="2NCZwO" id="5HlC91LF7QN" role="3z_lpI">
+            <node concept="2NCMab" id="5HlC91LF7QO" role="2NCMaf">
+              <ref role="2NCMaa" to="vg66:4l47ydyiFrv" resolve="_010_verification_harness" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="5HlC91LF7QP" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+    </node>
+  </node>
 </model>
 
