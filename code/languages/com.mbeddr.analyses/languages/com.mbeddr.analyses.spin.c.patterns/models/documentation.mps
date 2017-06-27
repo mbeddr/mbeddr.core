@@ -466,7 +466,26 @@
                   </node>
                 </node>
                 <node concept="19SUe$" id="5HlC91LF7Qk" role="19SJt6">
-                  <property role="19SUeA" value=" assigns a nondeterministically variable in a certain range" />
+                  <property role="19SUeA" value=" assigns nondeterministically a variable in a certain range" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="5HlC91LIQZg" role="3Xp5NH">
+            <node concept="OjmMv" id="5HlC91LIQZh" role="3X6T9h">
+              <node concept="19SGf9" id="5HlC91LIQZi" role="OjmMu">
+                <node concept="19SUe$" id="5HlC91LIQZj" role="19SJt6">
+                  <property role="19SUeA" value="" />
+                </node>
+                <node concept="2vpllh" id="5HlC91LIQYG" role="19SJt6">
+                  <node concept="19SGf9" id="5HlC91LIQYH" role="$DsGW">
+                    <node concept="19SUe$" id="5HlC91LIQYI" role="19SJt6">
+                      <property role="19SUeA" value="random_assign(VAR, RANGE_EXP)" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="5HlC91LIQYF" role="19SJt6">
+                  <property role="19SUeA" value=" assigns randomly a variable in a certain range" />
                 </node>
               </node>
             </node>
@@ -490,8 +509,8 @@
           <property role="3z_lpJ" value="true" />
           <property role="3z_lpV" value="Example for a typical harness module" />
           <node concept="2NCZwO" id="5HlC91LF7QN" role="3z_lpI">
-            <node concept="2NCMab" id="5HlC91LF7QO" role="2NCMaf">
-              <ref role="2NCMaa" to="vg66:4l47ydyiFrv" resolve="_010_verification_harness" />
+            <node concept="2NCMab" id="5HlC91LIR3U" role="2NCMaf">
+              <ref role="2NCMaa" to="vg66:5HlC91LFkDJ" resolve="_040_harness_logic" />
             </node>
           </node>
         </node>
