@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:16f150cb-52bb-42dc-9afd-9d7c6c5c23f5(com.mbeddr.analyses.spin.c.patterns.documentation)">
+<model ref="r:17c33ed2-ea83-4dd1-b9f7-cde3517284bb(com.mbeddr.analyses.spin.documentation)">
   <persistence version="9" />
   <languages>
+    <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />
+    <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
@@ -14,7 +16,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="2F6ySF" id="5HlC91LJAFL">
+  <node concept="2F6ySF" id="5HlC91LPjZA">
     <ref role="2F6ySG" to="xx8a:4l47ydyjg11" resolve="_000_MDCC_Top" />
   </node>
 </model>

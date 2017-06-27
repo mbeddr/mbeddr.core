@@ -8,5 +8,8 @@
   <extendedDevKits>
     <extendedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</extendedDevKit>
   </extendedDevKits>
+  <exported-solutions>
+    <exported-solution>1dcacc1a-8e53-470e-987d-f654ba2e645c(com.mbeddr.analyses.spin.documentation)</exported-solution>
+  </exported-solutions>
 </dev-kit>
 
