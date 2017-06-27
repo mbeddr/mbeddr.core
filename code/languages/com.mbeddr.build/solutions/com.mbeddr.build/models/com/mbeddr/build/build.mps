@@ -10903,6 +10903,12 @@
             <ref role="3bR37D" node="5HlC91LJU65" resolve="com.mbeddr.analyses.spin.documentation" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5HlC91LPWJK" role="3bR37C">
+          <node concept="3bR9La" id="5HlC91LPWJL" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="al5i:5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4b2d3GUsTDW" role="2G$12L">
         <property role="BnDLt" value="true" />
