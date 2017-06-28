@@ -52,7 +52,7 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="3lXW7OZ693P">
-    <property role="TrG5h" value="AssertionsAnalysis" />
+    <property role="TrG5h" value="AssertionsSpinAnalysis" />
     <property role="34LRSv" value="Spin Assertions Analysis" />
     <property role="EcuMT" value="3854501276819165429" />
     <ref role="1TJDcQ" node="3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
@@ -130,6 +130,12 @@
       <property role="IQ2nx" value="9065467049586938199" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1U03KaUHOq1">
+    <property role="EcuMT" value="2197773122553726593" />
+    <property role="TrG5h" value="RobustnessSpinAnalysis" />
+    <property role="34LRSv" value="Spin Robustness Analysis" />
+    <ref role="1TJDcQ" node="3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
   </node>
 </model>
 

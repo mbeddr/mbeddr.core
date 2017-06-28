@@ -291,12 +291,9 @@
       <ref role="13i0hy" to="hwgx:IviauXb0g" resolve="getIDEDisplayString" />
       <node concept="3Tm1VV" id="GpUw9SahPv" role="1B3o_S" />
       <node concept="3clFbS" id="GpUw9SahPy" role="3clF47">
-        <node concept="3clFbF" id="GpUw9SahRk" role="3cqZAp">
-          <node concept="2OqwBi" id="GpUw9Sai0o" role="3clFbG">
-            <node concept="13iPFW" id="GpUw9SahRV" role="2Oq$k0" />
-            <node concept="3TrcHB" id="GpUw9Sai$X" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-            </node>
+        <node concept="3clFbF" id="pq_X7Y8v4w" role="3cqZAp">
+          <node concept="Xl_RD" id="pq_X7Y8v4v" role="3clFbG">
+            <property role="Xl_RC" value="Promela Model" />
           </node>
         </node>
       </node>
@@ -339,8 +336,10 @@
       <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getParentPopup" />
       <node concept="3Tm1VV" id="GpUw9SahPF" role="1B3o_S" />
       <node concept="3clFbS" id="GpUw9SahPI" role="3clF47">
-        <node concept="3clFbF" id="GpUw9SaiBl" role="3cqZAp">
-          <node concept="10Nm6u" id="GpUw9SaiBk" role="3clFbG" />
+        <node concept="3clFbF" id="pq_X7Y8wKO" role="3cqZAp">
+          <node concept="Xl_RD" id="pq_X7Y8wKN" role="3clFbG">
+            <property role="Xl_RC" value="Analysis" />
+          </node>
         </node>
       </node>
       <node concept="17QB3L" id="GpUw9SahPJ" role="3clF45" />
