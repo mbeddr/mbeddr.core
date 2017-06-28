@@ -3363,5 +3363,88 @@
       <node concept="3clFbS" id="2aaSxIgh9iv" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="6uixmKZ2zv0">
+    <property role="3GE5qa" value="cells" />
+    <ref role="13h7C2" to="teg0:6uixmKZ2zuG" resolve="WrapperCell_DescriptionText" />
+    <node concept="13i0hz" id="6uixmKZ2zvb" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getParameterConcepts" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
+      <node concept="3Tm1VV" id="6uixmKZ2zvc" role="1B3o_S" />
+      <node concept="3clFbS" id="6uixmKZ2zvd" role="3clF47">
+        <node concept="3clFbF" id="6uixmKZ2zve" role="3cqZAp">
+          <node concept="2ShNRf" id="6uixmKZ2zvf" role="3clFbG">
+            <node concept="Tc6Ow" id="6uixmKZ2zvg" role="2ShVmc">
+              <node concept="3bZ5Sz" id="6uixmKZ2zvh" role="HW$YZ">
+                <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+              </node>
+              <node concept="35c_gC" id="6uixmKZ2zvi" role="HW$Y0">
+                <ref role="35c_gD" to="teg0:1Ia5rYl_yXg" resolve="WrapperCell_Condition_wrappedNode" />
+              </node>
+              <node concept="35c_gC" id="6uixmKZ2zvj" role="HW$Y0">
+                <ref role="35c_gD" to="teg0:2uT2PLmXmjz" resolve="Parameter_SubConcept" />
+              </node>
+              <node concept="35c_gC" id="6uixmKZ2zRw" role="HW$Y0">
+                <ref role="35c_gD" to="teg0:6uixmKZ2zAm" resolve="Parameter_OriginalText" />
+              </node>
+              <node concept="35c_gC" id="6uixmKZ2zvk" role="HW$Y0">
+                <ref role="35c_gD" to="teg0:2aaSxIgh9is" resolve="Parameter_editorContext" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="6uixmKZ2zvl" role="3clF45">
+        <node concept="3bZ5Sz" id="6uixmKZ2zvm" role="_ZDj9">
+          <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6uixmKZ2zvn" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getExpectedReturnType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:hEwIGRD" resolve="getExpectedReturnType" />
+      <node concept="3Tm1VV" id="6uixmKZ2zvo" role="1B3o_S" />
+      <node concept="3clFbS" id="6uixmKZ2zvp" role="3clF47">
+        <node concept="3clFbF" id="6uixmKZ2zvq" role="3cqZAp">
+          <node concept="2c44tf" id="6uixmKZ2zvr" role="3clFbG">
+            <node concept="17QB3L" id="6uixmKZ2zGK" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6uixmKZ2zvw" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="6uixmKZ2zv1" role="13h7CW">
+      <node concept="3clFbS" id="6uixmKZ2zv2" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6uixmKZ2zAn">
+    <property role="3GE5qa" value="cells" />
+    <ref role="13h7C2" to="teg0:6uixmKZ2zAm" resolve="Parameter_OriginalText" />
+    <node concept="13i0hz" id="6uixmKZ2zAy" role="13h7CS">
+      <property role="TrG5h" value="getType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:27DJnJtIQ9C" resolve="getType" />
+      <node concept="3Tm1VV" id="6uixmKZ2zAz" role="1B3o_S" />
+      <node concept="3clFbS" id="6uixmKZ2zA$" role="3clF47">
+        <node concept="3clFbF" id="6uixmKZ2zA_" role="3cqZAp">
+          <node concept="2c44tf" id="6uixmKZ2zAA" role="3clFbG">
+            <node concept="17QB3L" id="6uixmKZ2zAB" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6uixmKZ2zAC" role="3clF45">
+        <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="6uixmKZ2zAo" role="13h7CW">
+      <node concept="3clFbS" id="6uixmKZ2zAp" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
