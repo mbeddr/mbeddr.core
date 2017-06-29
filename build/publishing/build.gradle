@@ -12,7 +12,7 @@ if (rootProject.hasProperty("build.number"))
 {
   rootProject.getProperty("build.number")
 } else {
-  buildNumber = ""
+  buildNumber = t.getYear() + "_" + t.getMonth() + "_" + t.getDayOfMonth() + "_" + t.getHour() + "_" + t.getMinute()
 }
 
 
