@@ -5,6 +5,7 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
   </languages>
   <imports>
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
@@ -59,6 +60,14 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+      </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
@@ -385,6 +394,38 @@
     <node concept="1YaCAy" id="1BFQdmKdmWT" role="1YuTPh">
       <property role="TrG5h" value="forEachVarDeclRef" />
       <ref role="1YaFvo" to="llb3:1BFQdmKbEJq" resolve="ForEachVarDeclRef" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3KP_mg0WsPH">
+    <property role="TrG5h" value="typeof_SingleChoice" />
+    <property role="3GE5qa" value="harness.choice" />
+    <node concept="3clFbS" id="3KP_mg0WsPI" role="18ibNy">
+      <node concept="1ZobV4" id="3KP_mg0WsPO" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="3KP_mg0WsPY" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3KP_mg0WsPU" role="mwGJk">
+            <node concept="2OqwBi" id="3KP_mg0WsVV" role="1Z2MuG">
+              <node concept="1YBJjd" id="3KP_mg0WsQf" role="2Oq$k0">
+                <ref role="1YBMHb" node="3KP_mg0WsPK" resolve="singleChoice" />
+              </node>
+              <node concept="3TrEf2" id="3KP_mg0Wt7o" role="2OqNvi">
+                <ref role="3Tt5mk" to="llb3:5hi7ucOryZc" resolve="guard" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4osTp5pmclk" role="1ZfhKB">
+          <node concept="2pJPEk" id="4osTp5pmcll" role="mwGJk">
+            <node concept="2pJPED" id="4osTp5pmclm" role="2pJPEn">
+              <ref role="2pJxaS" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3KP_mg0WsPK" role="1YuTPh">
+      <property role="TrG5h" value="singleChoice" />
+      <ref role="1YaFvo" to="llb3:5hi7ucOryW$" resolve="SingleChoice" />
     </node>
   </node>
 </model>

@@ -263,6 +263,7 @@
     <dependency reexport="false">9aeff3a1-b145-418c-a75b-9a6e331d7333(com.mbeddr.analyses.spin)</dependency>
     <dependency reexport="false">1dcacc1a-8e53-470e-987d-f654ba2e645c(com.mbeddr.analyses.spin.documentation)</dependency>
     <dependency reexport="true">6d31dab5-f8dd-4ba3-9606-ea5ac2e34495(com.mbeddr.doc.aspect.runtime)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:5d09074f-babf-4f2b-b78b-e9929af0f3be:com.mbeddr.analyses.base" version="0" />

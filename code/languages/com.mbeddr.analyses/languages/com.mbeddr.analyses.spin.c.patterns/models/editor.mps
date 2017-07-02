@@ -39,6 +39,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -63,7 +64,9 @@
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -239,6 +242,7 @@
     <property role="3GE5qa" value="top_level" />
     <ref role="1XX52x" to="llb3:439FXGfiPF" resolve="GlobalDeclarations" />
     <node concept="3EZMnI" id="439FXGfiQa" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="3EZMnI" id="439FXGfiQh" role="3EZMnx">
         <node concept="VPM3Z" id="439FXGfiQj" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -287,6 +291,9 @@
         <node concept="l2Vlx" id="439FXGfsaM" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="439FXGfiQd" role="2iSdaV" />
+      <node concept="3F0ifn" id="3KP_mg10Buf" role="AHCbl">
+        <property role="3F0ifm" value="declarations section" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="439FXGfyCC">
@@ -519,6 +526,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="xShMh" id="3KP_mg0VQ0F" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="5hi7ucOrz0i" role="3EZMnx">
