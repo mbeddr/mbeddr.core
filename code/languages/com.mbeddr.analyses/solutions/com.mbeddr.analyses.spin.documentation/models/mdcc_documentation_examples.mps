@@ -13,6 +13,9 @@
       </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
+      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
+        <child id="7763322639126652758" name="baseType" index="2umbIo" />
+      </concept>
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
@@ -45,6 +48,11 @@
       </concept>
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
+      </concept>
+    </language>
+    <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
+      <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42">
+        <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
@@ -91,11 +99,27 @@
         <child id="1867824882772328136" name="vals" index="2DF6ot" />
         <child id="4708346905221050140" name="exp" index="Wlsuc" />
       </concept>
-      <concept id="1867824882771687789" name="com.mbeddr.analyses.spin.c.patterns.structure.RandomAssign" flags="ng" index="2DPy6S" />
+      <concept id="1867824882771687789" name="com.mbeddr.analyses.spin.c.patterns.structure.RandomAssign" flags="ng" index="2DPy6S">
+        <child id="6597543256576821145" name="times" index="2H1y$V" />
+      </concept>
       <concept id="6597543256577812698" name="com.mbeddr.analyses.spin.c.patterns.structure.TrackState" flags="ng" index="2H5KpS">
         <child id="6597543256577812702" name="memory" index="2H5KpW" />
       </concept>
+      <concept id="1867824882767622484" name="com.mbeddr.analyses.spin.c.patterns.structure.DiscreteValuesExpression" flags="ng" index="2Q52A1">
+        <child id="1867824882767624579" name="elements" index="2Q525m" />
+      </concept>
       <concept id="4708346905221050110" name="com.mbeddr.analyses.spin.c.patterns.structure.NondetAssign" flags="ng" index="WlspI" />
+      <concept id="6075951708950638440" name="com.mbeddr.analyses.spin.c.patterns.structure.DefaultChoice" flags="ng" index="1wf3ab">
+        <child id="6075951708950638441" name="statementList" index="1wf3aa" />
+      </concept>
+      <concept id="6075951708950638371" name="com.mbeddr.analyses.spin.c.patterns.structure.NondetChoice" flags="ng" index="1wf3b0">
+        <child id="6075951708950638533" name="else" index="1wf38A" />
+        <child id="6075951708950638438" name="choices" index="1wf3a5" />
+      </concept>
+      <concept id="6075951708950638372" name="com.mbeddr.analyses.spin.c.patterns.structure.SingleChoice" flags="ng" index="1wf3b7">
+        <child id="6075951708950638540" name="guard" index="1wf38J" />
+        <child id="6075951708950638373" name="statementList" index="1wf3b6" />
+      </concept>
       <concept id="72944622564682268" name="com.mbeddr.analyses.spin.c.patterns.structure.HarnessCode" flags="ng" index="1HfgMz" />
       <concept id="72944622564617579" name="com.mbeddr.analyses.spin.c.patterns.structure.GlobalDeclarations" flags="ng" index="1HfwJk" />
       <concept id="72944622564540789" name="com.mbeddr.analyses.spin.c.patterns.structure.CVerificationHarnessModule" flags="ng" index="1HfMva" />
@@ -180,6 +204,9 @@
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="3976803464656531170" name="com.mbeddr.core.expressions.structure.UnaryMinusExpression" flags="ng" index="1FllXc" />
+      <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
+      <concept id="8860443239512147445" name="com.mbeddr.core.expressions.structure.GreaterExpression" flags="ng" index="3Tl9Jr" />
+      <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
@@ -493,6 +520,8 @@
           </node>
         </node>
         <node concept="3XISUE" id="5HlC91LF82c" role="3XIRFZ" />
+        <node concept="3XISUE" id="3KP_mg0V_ko" role="3XIRFZ" />
+        <node concept="3XISUE" id="3KP_mg0V_kV" role="3XIRFZ" />
         <node concept="Y9XUq" id="5HlC91LF82d" role="3XIRFZ">
           <node concept="25Bbzn" id="5HlC91LF82e" role="Y9XUp">
             <node concept="1S7827" id="5HlC91LFem$" role="3TlMhJ">
@@ -678,7 +707,15 @@
           </node>
         </node>
         <node concept="3XISUE" id="5HlC91LFndw" role="3XIRFZ" />
-        <node concept="3XISUE" id="5HlC91LFngw" role="3XIRFZ" />
+        <node concept="1QiMYF" id="3KP_mg0TILx" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg0TILz" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg0TIL$" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg0TIL_" role="19SJt6">
+                <property role="19SUeA" value="my_fun1_in2  is assigned randomly values in a certain range" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="2DPy6S" id="5HlC91LFn0G" role="3XIRFZ">
           <node concept="1S7827" id="5HlC91LFn35" role="Wlsuc">
             <ref role="1S7826" node="5HlC91LFkDP" resolve="my_fun1_in2" />
@@ -694,7 +731,52 @@
           </node>
         </node>
         <node concept="3XISUE" id="5HlC91LFn62" role="3XIRFZ" />
-        <node concept="3XISUE" id="5HlC91LFnbV" role="3XIRFZ" />
+        <node concept="1QiMYF" id="3KP_mg0TM45" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg0TM47" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg0TM48" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg0TM49" role="19SJt6">
+                <property role="19SUeA" value="choose  one action from below in a nondeterministic manner" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1wf3b0" id="3KP_mg0TM25" role="3XIRFZ">
+          <node concept="1wf3b7" id="3KP_mg0TM27" role="1wf3a5">
+            <node concept="3XIRFW" id="3KP_mg0TM29" role="1wf3b6">
+              <node concept="1QiMYF" id="3KP_mg0TM3p" role="3XIRFZ">
+                <node concept="OjmMv" id="3KP_mg0TM3r" role="3SJzmv">
+                  <node concept="19SGf9" id="3KP_mg0TM3s" role="OjmMu">
+                    <node concept="19SUe$" id="3KP_mg0TM3t" role="19SJt6">
+                      <property role="19SUeA" value="do  some action" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3Tl9Jr" id="3KP_mg0TM2Y" role="1wf38J">
+              <node concept="3TlMh9" id="3KP_mg0TM3d" role="3TlMhJ">
+                <property role="2hmy$m" value="4" />
+              </node>
+              <node concept="1S7827" id="3KP_mg0TM2S" role="3TlMhI">
+                <ref role="1S7826" node="5HlC91LFkDN" resolve="my_fun1_in1" />
+              </node>
+            </node>
+          </node>
+          <node concept="1wf3ab" id="3KP_mg0TM2b" role="1wf38A">
+            <node concept="3XIRFW" id="3KP_mg0TM2d" role="1wf3aa">
+              <node concept="1QiMYF" id="3KP_mg0ZpLA" role="3XIRFZ">
+                <node concept="OjmMv" id="3KP_mg0ZpLC" role="3SJzmv">
+                  <node concept="19SGf9" id="3KP_mg0ZpLD" role="OjmMu">
+                    <node concept="19SUe$" id="3KP_mg0ZpLE" role="19SJt6">
+                      <property role="19SUeA" value="if  none of the guards above are true, then the else branch is executed" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="3KP_mg0TMbV" role="3XIRFZ" />
       </node>
     </node>
     <node concept="3GEVxB" id="5HlC91LFkEz" role="2OODSX">
@@ -721,6 +803,513 @@
     <property role="TrG5h" value="external_header" />
     <node concept="rcWE1" id="4l47ydyiFve" role="rcWEr">
       <property role="rcWEL" value="&quot;&quot;" />
+    </node>
+  </node>
+  <node concept="1HfMva" id="3KP_mg0TIR4">
+    <property role="TrG5h" value="_041_harness_logic_nondet_assign" />
+    <property role="3GE5qa" value="" />
+    <node concept="1HfwJk" id="3KP_mg0TIR5" role="N3F5h">
+      <property role="TrG5h" value="decls" />
+      <node concept="1S7NMz" id="3KP_mg0WEMB" role="fMItF">
+        <property role="TrG5h" value="flag" />
+        <node concept="3TlMgk" id="3KP_mg0WEM_" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1S7NMz" id="3KP_mg0TIRa" role="fMItF">
+        <property role="TrG5h" value="a" />
+        <node concept="26Vqqz" id="3KP_mg0WEMe" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1S7NMz" id="3KP_mg0TIRc" role="fMItF">
+        <property role="TrG5h" value="b" />
+        <node concept="26Vqpq" id="3KP_mg0TIRd" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1S7NMz" id="3KP_mg0TIRe" role="fMItF">
+        <property role="TrG5h" value="array1" />
+        <node concept="3J0A42" id="3KP_mg0ZoKB" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqpq" id="3KP_mg0TIRf" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3TlMh9" id="3KP_mg0ZoLd" role="1YbSNA">
+            <property role="2hmy$m" value="5" />
+          </node>
+        </node>
+      </node>
+      <node concept="1S7NMz" id="3KP_mg0TIRg" role="fMItF">
+        <property role="TrG5h" value="array2" />
+        <node concept="3J0A42" id="3KP_mg0Zp3g" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqpq" id="3KP_mg0TIRh" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3TlMh9" id="3KP_mg0Zp3Q" role="1YbSNA">
+            <property role="2hmy$m" value="3" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3KP_mg0TIRi" role="N3F5h">
+      <property role="TrG5h" value="empty_1498372230104_1" />
+    </node>
+    <node concept="1HfgMz" id="3KP_mg0TIRk" role="N3F5h">
+      <property role="2DuWZg" value="true" />
+      <property role="TrG5h" value="harness_logic_nondet_assign_example" />
+      <node concept="19Rifw" id="3KP_mg0TIRl" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="3KP_mg0TIRm" role="3XIRFX">
+        <node concept="1QiMYF" id="3KP_mg0WEP2" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg0WEP4" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg0WEP5" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg0WEP6" role="19SJt6">
+                <property role="19SUeA" value="'flag' is assigned possible values - i.e. true, false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="WlspI" id="3KP_mg0WENO" role="3XIRFZ">
+          <node concept="1S7827" id="3KP_mg0WEOx" role="Wlsuc">
+            <ref role="1S7826" node="3KP_mg0WEMB" resolve="flag" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="3KP_mg0WEOA" role="3XIRFZ" />
+        <node concept="1QiMYF" id="3KP_mg0TIRn" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg0TIRo" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg0TIRp" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg0TIRq" role="19SJt6">
+                <property role="19SUeA" value="'a' is assigned all values in range between - 1 and 9" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="WlspI" id="3KP_mg0TIRr" role="3XIRFZ">
+          <node concept="1S7827" id="3KP_mg0TM1G" role="Wlsuc">
+            <ref role="1S7826" node="3KP_mg0TIRa" resolve="a" />
+          </node>
+          <node concept="1vV05I" id="3KP_mg0TIRt" role="2DF6ot">
+            <property role="n43Ve" value="true" />
+            <node concept="3TlMh9" id="3KP_mg0TIRu" role="1vV05J">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3TlMh9" id="3KP_mg0TIRv" role="1vV05C">
+              <property role="2hmy$m" value="10" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="3KP_mg0TPRM" role="3XIRFZ" />
+        <node concept="1QiMYF" id="3KP_mg0TQ2M" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg0TQ2O" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg0TQ2P" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg0TQ2Q" role="19SJt6">
+                <property role="19SUeA" value="'b' is assigned all values from the set from below" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="WlspI" id="3KP_mg0TPSf" role="3XIRFZ">
+          <node concept="1S7827" id="3KP_mg0TPSD" role="Wlsuc">
+            <ref role="1S7826" node="3KP_mg0TIRc" resolve="b" />
+          </node>
+          <node concept="2Q52A1" id="3KP_mg0TPSN" role="2DF6ot">
+            <node concept="3TlMh9" id="3KP_mg0TPT0" role="2Q525m">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3TlMh9" id="3KP_mg0TPUG" role="2Q525m">
+              <property role="2hmy$m" value="3" />
+            </node>
+            <node concept="3TlMh9" id="3KP_mg0TPXa" role="2Q525m">
+              <property role="2hmy$m" value="5" />
+            </node>
+            <node concept="3TlMh9" id="3KP_mg0TQ0s" role="2Q525m">
+              <property role="2hmy$m" value="7" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="3KP_mg0TIRw" role="3XIRFZ" />
+        <node concept="1QiMYF" id="3KP_mg0Zp1n" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg0Zp1p" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg0Zp1q" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg0Zp1r" role="19SJt6">
+                <property role="19SUeA" value="elements of the array1 (i.e. array1[0], array1[1], ...) are assigned all values between 1 and 4" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="WlspI" id="3KP_mg0ZoLZ" role="3XIRFZ">
+          <node concept="1S7827" id="3KP_mg0ZoNg" role="Wlsuc">
+            <ref role="1S7826" node="3KP_mg0TIRe" resolve="array1" />
+          </node>
+          <node concept="1vV05I" id="3KP_mg0ZoNz" role="2DF6ot">
+            <property role="n43Ve" value="false" />
+            <node concept="3TlMh9" id="3KP_mg0ZoNO" role="1vV05J">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3TlMh9" id="3KP_mg0ZoOc" role="1vV05C">
+              <property role="2hmy$m" value="4" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="3KP_mg0Zp62" role="3XIRFZ" />
+        <node concept="1QiMYF" id="3KP_mg0Zp8y" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg0Zp8z" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg0Zp8$" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg0Zp8_" role="19SJt6">
+                <property role="19SUeA" value="elements of the array2 (i.e. array2[0], array2[1], ...) are assigned values 7, 11, 13" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="WlspI" id="3KP_mg0Zp8A" role="3XIRFZ">
+          <node concept="1S7827" id="3KP_mg0ZpJ2" role="Wlsuc">
+            <ref role="1S7826" node="3KP_mg0TIRg" resolve="array2" />
+          </node>
+          <node concept="2Q52A1" id="3KP_mg0ZpCx" role="2DF6ot">
+            <node concept="3TlMh9" id="3KP_mg0ZpD0" role="2Q525m">
+              <property role="2hmy$m" value="7" />
+            </node>
+            <node concept="3TlMh9" id="3KP_mg0ZpGh" role="2Q525m">
+              <property role="2hmy$m" value="11" />
+            </node>
+            <node concept="3TlMh9" id="3KP_mg0ZpGw" role="2Q525m">
+              <property role="2hmy$m" value="13" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3KP_mg0VL1e" role="N3F5h">
+      <property role="TrG5h" value="empty_1498907337332_3" />
+    </node>
+    <node concept="3GEVxB" id="3KP_mg0TIRG" role="2OODSX">
+      <ref role="3GEb4d" node="5HlC91LFcE$" resolve="_020_suv" />
+    </node>
+  </node>
+  <node concept="1HfMva" id="3KP_mg11OAP">
+    <property role="TrG5h" value="_042_harness_logic_random_assign" />
+    <property role="3GE5qa" value="" />
+    <node concept="1HfwJk" id="3KP_mg11OAQ" role="N3F5h">
+      <property role="TrG5h" value="decls" />
+      <node concept="1S7NMz" id="3KP_mg11OAT" role="fMItF">
+        <property role="TrG5h" value="a" />
+        <node concept="26Vqqz" id="3KP_mg11OAU" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1S7NMz" id="3KP_mg11OAV" role="fMItF">
+        <property role="TrG5h" value="b" />
+        <node concept="26Vqpq" id="3KP_mg11OAW" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1S7NMz" id="3KP_mg11OAX" role="fMItF">
+        <property role="TrG5h" value="array1" />
+        <node concept="3J0A42" id="3KP_mg11OAY" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqpq" id="3KP_mg11OAZ" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3TlMh9" id="3KP_mg11OB0" role="1YbSNA">
+            <property role="2hmy$m" value="5" />
+          </node>
+        </node>
+      </node>
+      <node concept="1S7NMz" id="3KP_mg11OB1" role="fMItF">
+        <property role="TrG5h" value="array2" />
+        <node concept="3J0A42" id="3KP_mg11OB2" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqpq" id="3KP_mg11OB3" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3TlMh9" id="3KP_mg11OB4" role="1YbSNA">
+            <property role="2hmy$m" value="3" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3KP_mg11OB5" role="N3F5h">
+      <property role="TrG5h" value="empty_1498372230104_1" />
+    </node>
+    <node concept="1HfgMz" id="3KP_mg11OB6" role="N3F5h">
+      <property role="2DuWZg" value="true" />
+      <property role="TrG5h" value="harness_logic_random_assign_example" />
+      <node concept="19Rifw" id="3KP_mg11OB7" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="3KP_mg11OB8" role="3XIRFX">
+        <node concept="1QiMYF" id="3KP_mg11T$X" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg11T$Y" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg11T$Z" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg11T_0" role="19SJt6">
+                <property role="19SUeA" value="'a' is assigned randomly one value in range between - 1 and 999" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2DPy6S" id="3KP_mg11T_1" role="3XIRFZ">
+          <node concept="1S7827" id="3KP_mg11T_2" role="Wlsuc">
+            <ref role="1S7826" node="3KP_mg11OAT" resolve="a" />
+          </node>
+          <node concept="1vV05I" id="3KP_mg11T_3" role="2DF6ot">
+            <property role="n43Ve" value="true" />
+            <node concept="3TlMh9" id="3KP_mg11T_4" role="1vV05J">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3TlMh9" id="3KP_mg11T_5" role="1vV05C">
+              <property role="2hmy$m" value="1000" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="3KP_mg11Ty9" role="3XIRFZ" />
+        <node concept="1QiMYF" id="3KP_mg11OBg" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg11OBh" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg11OBi" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg11OBj" role="19SJt6">
+                <property role="19SUeA" value="'b' is assigned randomly 41 values in range between - 1 and 999" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2DPy6S" id="3KP_mg11PEd" role="3XIRFZ">
+          <node concept="1S7827" id="3KP_mg11TC$" role="Wlsuc">
+            <ref role="1S7826" node="3KP_mg11OAV" resolve="b" />
+          </node>
+          <node concept="1vV05I" id="3KP_mg11PFM" role="2DF6ot">
+            <property role="n43Ve" value="true" />
+            <node concept="3TlMh9" id="3KP_mg11PG0" role="1vV05J">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3TlMh9" id="3KP_mg11PGo" role="1vV05C">
+              <property role="2hmy$m" value="1000" />
+            </node>
+          </node>
+          <node concept="3TlMh9" id="3KP_mg11PIw" role="2H1y$V">
+            <property role="2hmy$m" value="41" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="3KP_mg11OB_" role="3XIRFZ" />
+        <node concept="1QiMYF" id="3KP_mg11OBA" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg11OBB" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg11OBC" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg11OBD" role="19SJt6">
+                <property role="19SUeA" value="elements of the array1 (i.e. array1[0], array1[1], ...) are assigned random values between 1 and 4" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2DPy6S" id="3KP_mg11TGz" role="3XIRFZ">
+          <node concept="1S7827" id="3KP_mg11TI1" role="Wlsuc">
+            <ref role="1S7826" node="3KP_mg11OAX" resolve="array1" />
+          </node>
+          <node concept="1vV05I" id="3KP_mg11OBG" role="2DF6ot">
+            <property role="n43Ve" value="false" />
+            <node concept="3TlMh9" id="3KP_mg11OBH" role="1vV05J">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3TlMh9" id="3KP_mg11OBI" role="1vV05C">
+              <property role="2hmy$m" value="4" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="3KP_mg11OBJ" role="3XIRFZ" />
+        <node concept="1QiMYF" id="3KP_mg11OBK" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg11OBL" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg11OBM" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg11OBN" role="19SJt6">
+                <property role="19SUeA" value="elements of the array2 (i.e. array2[0], array2[1], ...) are assigned random values between 1 and 411 - 12 times" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2DPy6S" id="3KP_mg11TKG" role="3XIRFZ">
+          <node concept="1S7827" id="3KP_mg11TMa" role="Wlsuc">
+            <ref role="1S7826" node="3KP_mg11OB1" resolve="array2" />
+          </node>
+          <node concept="1vV05I" id="3KP_mg11TMe" role="2DF6ot">
+            <property role="n43Ve" value="false" />
+            <node concept="3TlMh9" id="3KP_mg11TMf" role="1vV05J">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3TlMh9" id="3KP_mg11TMg" role="1vV05C">
+              <property role="2hmy$m" value="411" />
+            </node>
+          </node>
+          <node concept="3TlMh9" id="3KP_mg11TNE" role="2H1y$V">
+            <property role="2hmy$m" value="12" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3KP_mg11OBU" role="N3F5h">
+      <property role="TrG5h" value="empty_1498907337332_3" />
+    </node>
+    <node concept="3GEVxB" id="3KP_mg11OBV" role="2OODSX">
+      <ref role="3GEb4d" node="5HlC91LFcE$" resolve="_020_suv" />
+    </node>
+  </node>
+  <node concept="1HfMva" id="3KP_mg11UL4">
+    <property role="TrG5h" value="_043_harness_logic_nondet_choice" />
+    <property role="3GE5qa" value="" />
+    <node concept="1HfwJk" id="3KP_mg11UL5" role="N3F5h">
+      <property role="TrG5h" value="decls" />
+      <node concept="1S7NMz" id="3KP_mg11UL6" role="fMItF">
+        <property role="TrG5h" value="a" />
+        <node concept="26Vqqz" id="3KP_mg11UL7" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3KP_mg11ULi" role="N3F5h">
+      <property role="TrG5h" value="empty_1498372230104_1" />
+    </node>
+    <node concept="1HfgMz" id="3KP_mg11ULj" role="N3F5h">
+      <property role="2DuWZg" value="true" />
+      <property role="TrG5h" value="harness_logic_nondet_choice_example" />
+      <node concept="19Rifw" id="3KP_mg11ULk" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="3KP_mg11ULl" role="3XIRFX">
+        <node concept="WlspI" id="3KP_mg11Z_7" role="3XIRFZ">
+          <node concept="1S7827" id="3KP_mg11ZAy" role="Wlsuc">
+            <ref role="1S7826" node="3KP_mg11UL6" resolve="a" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="3KP_mg11ZAC" role="3XIRFZ" />
+        <node concept="1QiMYF" id="3KP_mg11ZNP" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg11ZNQ" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg11ZNR" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg11ZNS" role="19SJt6">
+                <property role="19SUeA" value="example with choices not guarded" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1wf3b0" id="3KP_mg11ZNT" role="3XIRFZ">
+          <node concept="1wf3b7" id="3KP_mg11ZNU" role="1wf3a5">
+            <node concept="3XIRFW" id="3KP_mg11ZNV" role="1wf3b6">
+              <node concept="1QiMYF" id="3KP_mg120iF" role="3XIRFZ">
+                <node concept="OjmMv" id="3KP_mg120iG" role="3SJzmv">
+                  <node concept="19SGf9" id="3KP_mg120iH" role="OjmMu">
+                    <node concept="19SUe$" id="3KP_mg120iI" role="19SJt6">
+                      <property role="19SUeA" value="do something" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1wf3b7" id="3KP_mg11ZNZ" role="1wf3a5">
+            <node concept="3XIRFW" id="3KP_mg11ZO0" role="1wf3b6">
+              <node concept="1QiMYF" id="3KP_mg120iR" role="3XIRFZ">
+                <node concept="OjmMv" id="3KP_mg120iS" role="3SJzmv">
+                  <node concept="19SGf9" id="3KP_mg120iT" role="OjmMu">
+                    <node concept="19SUe$" id="3KP_mg120iU" role="19SJt6">
+                      <property role="19SUeA" value="do something" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1wf3ab" id="3KP_mg11ZO4" role="1wf38A">
+            <node concept="3XIRFW" id="3KP_mg11ZO5" role="1wf3aa" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="3KP_mg11ZN8" role="3XIRFZ" />
+        <node concept="1QiMYF" id="3KP_mg11ZMo" role="3XIRFZ">
+          <node concept="OjmMv" id="3KP_mg11ZMq" role="3SJzmv">
+            <node concept="19SGf9" id="3KP_mg11ZMr" role="OjmMu">
+              <node concept="19SUe$" id="3KP_mg11ZMs" role="19SJt6">
+                <property role="19SUeA" value="example with choices guarded with conditions (the else branch is executed when no choice can be taken)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1wf3b0" id="3KP_mg11Zwy" role="3XIRFZ">
+          <node concept="1wf3b7" id="3KP_mg11Zw$" role="1wf3a5">
+            <node concept="3XIRFW" id="3KP_mg11ZwA" role="1wf3b6">
+              <node concept="1QiMYF" id="3KP_mg120j3" role="3XIRFZ">
+                <node concept="OjmMv" id="3KP_mg120j4" role="3SJzmv">
+                  <node concept="19SGf9" id="3KP_mg120j5" role="OjmMu">
+                    <node concept="19SUe$" id="3KP_mg120j6" role="19SJt6">
+                      <property role="19SUeA" value="do something" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3Tl9Jr" id="3KP_mg11ZCG" role="1wf38J">
+              <node concept="3TlMh9" id="3KP_mg11ZCL" role="3TlMhJ">
+                <property role="2hmy$m" value="10" />
+              </node>
+              <node concept="1S7827" id="3KP_mg11ZCd" role="3TlMhI">
+                <ref role="1S7826" node="3KP_mg11UL6" resolve="a" />
+              </node>
+            </node>
+          </node>
+          <node concept="1wf3b7" id="3KP_mg11Zya" role="1wf3a5">
+            <node concept="3XIRFW" id="3KP_mg11Zyb" role="1wf3b6">
+              <node concept="1QiMYF" id="3KP_mg120jf" role="3XIRFZ">
+                <node concept="OjmMv" id="3KP_mg120jg" role="3SJzmv">
+                  <node concept="19SGf9" id="3KP_mg120jh" role="OjmMu">
+                    <node concept="19SUe$" id="3KP_mg120ji" role="19SJt6">
+                      <property role="19SUeA" value="do something" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3Tl9Jn" id="3KP_mg11ZGP" role="1wf38J">
+              <node concept="3TlMh9" id="3KP_mg11ZGU" role="3TlMhJ">
+                <property role="2hmy$m" value="5" />
+              </node>
+              <node concept="1S7827" id="3KP_mg11ZGn" role="3TlMhI">
+                <ref role="1S7826" node="3KP_mg11UL6" resolve="a" />
+              </node>
+            </node>
+          </node>
+          <node concept="1wf3ab" id="3KP_mg11ZwC" role="1wf38A">
+            <node concept="3XIRFW" id="3KP_mg11ZwE" role="1wf3aa">
+              <node concept="1QiMYF" id="3KP_mg120jr" role="3XIRFZ">
+                <node concept="OjmMv" id="3KP_mg120js" role="3SJzmv">
+                  <node concept="19SGf9" id="3KP_mg120jt" role="OjmMu">
+                    <node concept="19SUe$" id="3KP_mg120ju" role="19SJt6">
+                      <property role="19SUeA" value="do something" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="3KP_mg11ULZ" role="N3F5h">
+      <property role="TrG5h" value="empty_1498907337332_3" />
+    </node>
+    <node concept="3GEVxB" id="3KP_mg11UM0" role="2OODSX">
+      <ref role="3GEb4d" node="5HlC91LFcE$" resolve="_020_suv" />
     </node>
   </node>
 </model>
