@@ -407,6 +407,7 @@
     <property role="3GE5qa" value="harness.choice" />
     <ref role="1XX52x" to="llb3:5hi7ucOryWz" resolve="NondetChoice" />
     <node concept="3EZMnI" id="5hi7ucOryX0" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="2iRkQZ" id="5hi7ucOryX1" role="2iSdaV" />
       <node concept="3EZMnI" id="5hi7ucOryWM" role="3EZMnx">
         <node concept="3F0ifn" id="5hi7ucOryWT" role="3EZMnx">
@@ -476,6 +477,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="3KP_mg126op" role="AHCbl">
+        <property role="3F0ifm" value="nondet choice:" />
       </node>
     </node>
   </node>
