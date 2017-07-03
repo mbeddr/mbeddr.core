@@ -824,6 +824,9 @@
       <node concept="3Tm6S6" id="43aY2QmTlul" role="1B3o_S" />
       <node concept="3uibUv" id="43aY2QmTmiH" role="1tU5fm">
         <ref role="3uigEE" node="43aY2QmSAdT" resolve="ITraceRecordRenderer" />
+        <node concept="16syzq" id="6wSVlqCazLe" role="11_B2D">
+          <ref role="16sUi3" node="6wSVlqCayij" resolve="T" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2jSY3BOb3rh" role="jymVt" />
@@ -832,6 +835,9 @@
         <property role="TrG5h" value="renderer" />
         <node concept="3uibUv" id="43aY2QmTn9z" role="1tU5fm">
           <ref role="3uigEE" node="43aY2QmSAdT" resolve="ITraceRecordRenderer" />
+          <node concept="16syzq" id="6wSVlqCaA8d" role="11_B2D">
+            <ref role="16sUi3" node="6wSVlqCayij" resolve="T" />
+          </node>
         </node>
       </node>
       <node concept="3cqZAl" id="2jSY3BOb4yL" role="3clF45" />
@@ -924,12 +930,12 @@
             <node concept="3cpWs8" id="2jSY3BObuO6" role="3cqZAp">
               <node concept="3cpWsn" id="2jSY3BObuO7" role="3cpWs9">
                 <property role="TrG5h" value="traceRecord" />
-                <node concept="3uibUv" id="43aY2QmStWl" role="1tU5fm">
-                  <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
+                <node concept="16syzq" id="6wSVlqCa$oF" role="1tU5fm">
+                  <ref role="16sUi3" node="6wSVlqCayij" resolve="T" />
                 </node>
                 <node concept="10QFUN" id="2jSY3BObuO8" role="33vP2m">
-                  <node concept="3uibUv" id="43aY2QmSul6" role="10QFUM">
-                    <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
+                  <node concept="16syzq" id="6wSVlqCa$Sl" role="10QFUM">
+                    <ref role="16sUi3" node="6wSVlqCayij" resolve="T" />
                   </node>
                   <node concept="2OqwBi" id="2jSY3BObuOa" role="10QFUP">
                     <node concept="37vLTw" id="2jSY3BObuOb" role="2Oq$k0">
@@ -1016,6 +1022,9 @@
     <node concept="3Tm1VV" id="2jSY3BO6a0g" role="1B3o_S" />
     <node concept="3uibUv" id="2jSY3BOaoFJ" role="1zkMxy">
       <ref role="3uigEE" to="lzb2:~ColoredTreeCellRenderer" resolve="ColoredTreeCellRenderer" />
+    </node>
+    <node concept="16euLQ" id="6wSVlqCayij" role="16eVyc">
+      <property role="TrG5h" value="T" />
     </node>
   </node>
   <node concept="312cEu" id="2jSY3BO827E">
@@ -1472,7 +1481,7 @@
                   <node concept="1rXfSq" id="125WB3BRsBW" role="37wK5m">
                     <ref role="37wK5l" node="125WB3BRbxm" resolve="createTreeNode" />
                     <node concept="37vLTw" id="1FH2oK2HPIg" role="37wK5m">
-                      <ref role="3cqZAo" node="1FH2oK2HPIc" resolve="call" />
+                      <ref role="3cqZAo" node="1FH2oK2HPIc" resolve="child" />
                     </node>
                   </node>
                 </node>
@@ -1488,7 +1497,7 @@
             </node>
           </node>
           <node concept="3cpWsn" id="1FH2oK2HPIc" role="1Duv9x">
-            <property role="TrG5h" value="call" />
+            <property role="TrG5h" value="child" />
             <node concept="3uibUv" id="1FH2oK2HQJa" role="1tU5fm">
               <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
               <node concept="3qTvmN" id="1FH2oK2HQUC" role="11_B2D" />
