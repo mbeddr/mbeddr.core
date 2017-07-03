@@ -114,6 +114,12 @@
         <property role="YLQ7P" value="Use the style attribute 'tree-layout'" />
       </node>
     </node>
+    <node concept="1TJgyj" id="5qrsiYWrGSD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="collapseByDefaultCondition" />
+      <property role="IQ2ns" value="6240706158490734121" />
+      <ref role="20lvS9" to="tpc2:gCpkWun" resolve="QueryFunction_NodeCondition" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7GMtHW6w$oP">
     <property role="TrG5h" value="DeleteHandler" />
