@@ -639,6 +639,9 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="3bR9La" id="4O5goBat6Av" role="3bR37C">
+          <ref role="3bR37D" to="al5i:5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
+        </node>
       </node>
       <node concept="1E1JtA" id="7dfuMW5yHR9" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -675,6 +678,9 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="7eF9rfAuutL" resolve="com.mbeddr.core.__spreferences.PlatformTemplates" />
           </node>
+        </node>
+        <node concept="3bR9La" id="4O5goBat6zS" role="3bR37C">
+          <ref role="3bR37D" to="al5i:5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
         </node>
       </node>
     </node>

@@ -31,6 +31,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -202,6 +203,9 @@
       </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
+      </concept>
+      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -828,7 +832,8 @@
     </node>
   </node>
   <node concept="18kY7G" id="6E3dSCjBrkE">
-    <property role="TrG5h" value="check_AssertionsAnalysis" />
+    <property role="TrG5h" value="check_SpinBasedAnalysis" />
+    <property role="3GE5qa" value="configs" />
     <node concept="3clFbS" id="6E3dSCjBrkF" role="18ibNy">
       <node concept="3cpWs8" id="6E3dSCjBQdy" role="3cqZAp">
         <node concept="3cpWsn" id="6E3dSCjBQdz" role="3cpWs9">
@@ -838,7 +843,7 @@
           </node>
           <node concept="2OqwBi" id="6E3dSCjBQd$" role="33vP2m">
             <node concept="1YBJjd" id="6E3dSCjBQd_" role="2Oq$k0">
-              <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="assertionsAnalysis" />
+              <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="spinBasedAnalysis" />
             </node>
             <node concept="3TrEf2" id="6E3dSCjBQdA" role="2OqNvi">
               <ref role="3Tt5mk" to="v326:3lXW7OZ694h" resolve="env" />
@@ -856,7 +861,7 @@
             <node concept="2OqwBi" id="6E3dSCjB_89" role="2Oq$k0">
               <node concept="2OqwBi" id="6E3dSCjB_8a" role="2Oq$k0">
                 <node concept="1YBJjd" id="6E3dSCjB_8b" role="2Oq$k0">
-                  <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="assertionsAnalysis" />
+                  <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="spinBasedAnalysis" />
                 </node>
                 <node concept="I4A8Y" id="6E3dSCjB_8c" role="2OqNvi" />
               </node>
@@ -966,13 +971,262 @@
           <property role="Xl_RC" value="no Spin executable found" />
         </node>
         <node concept="1YBJjd" id="6E3dSCjBSZ4" role="2OEOjV">
-          <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="assertionsAnalysis" />
+          <ref role="1YBMHb" node="6E3dSCjBrkH" resolve="spinBasedAnalysis" />
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="6E3dSCjBrkH" role="1YuTPh">
-      <property role="TrG5h" value="assertionsAnalysis" />
-      <ref role="1YaFvo" to="v326:3lXW7OZ693P" resolve="AssertionsAnalysis" />
+      <property role="TrG5h" value="spinBasedAnalysis" />
+      <ref role="1YaFvo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4l47ydylaa1">
+    <property role="TrG5h" value="check_RobustnessSpinAnalysis" />
+    <property role="3GE5qa" value="configs" />
+    <node concept="3clFbS" id="4l47ydylaa2" role="18ibNy">
+      <node concept="3cpWs8" id="4l47ydyleYs" role="3cqZAp">
+        <node concept="3cpWsn" id="4l47ydyleYt" role="3cpWs9">
+          <property role="TrG5h" value="sp" />
+          <node concept="3Tqbb2" id="4l47ydyleYk" role="1tU5fm">
+            <ref role="ehGHo" to="v326:7Rf0$0HCP5k" resolve="SpinPlatform" />
+          </node>
+          <node concept="2OqwBi" id="4l47ydyleYu" role="33vP2m">
+            <node concept="2OqwBi" id="4l47ydyleYv" role="2Oq$k0">
+              <node concept="2OqwBi" id="4l47ydyleYw" role="2Oq$k0">
+                <node concept="1YBJjd" id="4l47ydyleYx" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4l47ydylaa4" resolve="rsa" />
+                </node>
+                <node concept="I4A8Y" id="4l47ydyleYy" role="2OqNvi" />
+              </node>
+              <node concept="2SmgA7" id="4l47ydyleYz" role="2OqNvi">
+                <node concept="chp4Y" id="4l47ydyleY$" role="1dBWTz">
+                  <ref role="cht4Q" to="v326:7Rf0$0HCP5k" resolve="SpinPlatform" />
+                </node>
+              </node>
+            </node>
+            <node concept="1uHKPH" id="4l47ydyleY_" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="4l47ydylf5x" role="3cqZAp">
+        <node concept="3clFbS" id="4l47ydylf5z" role="3clFbx">
+          <node concept="3clFbJ" id="4l47ydylkao" role="3cqZAp">
+            <node concept="3clFbS" id="4l47ydylkaq" role="3clFbx">
+              <node concept="2MkqsV" id="4l47ydylljG" role="3cqZAp">
+                <node concept="1YBJjd" id="4l47ydylljV" role="2OEOjV">
+                  <ref role="1YBMHb" node="4l47ydylaa4" resolve="rsa" />
+                </node>
+                <node concept="Xl_RD" id="4l47ydyllkp" role="2MkJ7o">
+                  <property role="Xl_RC" value="the CLANG compiler needs to be used to enable the instrumentation of code with sanity checks" />
+                </node>
+                <node concept="3Cnw8n" id="4l47ydylxwX" role="2OEOjU">
+                  <ref role="QpYPw" node="4l47ydylnEZ" resolve="fixClangCompilerSettings" />
+                  <node concept="3CnSsL" id="4l47ydylxS$" role="3Coj4f">
+                    <ref role="QkamJ" node="4l47ydylsUT" resolve="rsa" />
+                    <node concept="1YBJjd" id="4l47ydylxSL" role="3CoRuB">
+                      <ref role="1YBMHb" node="4l47ydylaa4" resolve="rsa" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1Wc70l" id="4l47ydylkwR" role="3clFbw">
+              <node concept="3fqX7Q" id="4l47ydyll8x" role="3uHU7B">
+                <node concept="2OqwBi" id="4l47ydyll8z" role="3fr31v">
+                  <node concept="2OqwBi" id="4l47ydyll8$" role="2Oq$k0">
+                    <node concept="37vLTw" id="4l47ydyll8_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4l47ydyleYt" resolve="sp" />
+                    </node>
+                    <node concept="3TrcHB" id="4l47ydyll8A" role="2OqNvi">
+                      <ref role="3TsBF5" to="v326:7Rf0$0HCP5l" resolve="compiler" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4l47ydyll8B" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="Xl_RD" id="4l47ydyll8C" role="37wK5m">
+                      <property role="Xl_RC" value="clang" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="4l47ydylkRZ" role="3uHU7w">
+                <node concept="2OqwBi" id="4l47ydylkS1" role="3fr31v">
+                  <node concept="2OqwBi" id="4l47ydylkS2" role="2Oq$k0">
+                    <node concept="37vLTw" id="4l47ydylkS3" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4l47ydyleYt" resolve="sp" />
+                    </node>
+                    <node concept="3TrcHB" id="4l47ydylkS4" role="2OqNvi">
+                      <ref role="3TsBF5" to="v326:7Rf0$0HCP5l" resolve="compiler" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4l47ydylkS5" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="Xl_RD" id="4l47ydylkS6" role="37wK5m">
+                      <property role="Xl_RC" value="clang-cl" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="4l47ydyllFi" role="3cqZAp">
+            <node concept="3clFbS" id="4l47ydyllFj" role="3clFbx">
+              <node concept="2MkqsV" id="4l47ydyllFk" role="3cqZAp">
+                <node concept="1YBJjd" id="4l47ydyllFl" role="2OEOjV">
+                  <ref role="1YBMHb" node="4l47ydylaa4" resolve="rsa" />
+                </node>
+                <node concept="Xl_RD" id="4l47ydyllFm" role="2MkJ7o">
+                  <property role="Xl_RC" value="the CLANG compiler options must contain '-fsanitize=undefined'" />
+                </node>
+                <node concept="3Cnw8n" id="4l47ydylxGz" role="2OEOjU">
+                  <ref role="QpYPw" node="4l47ydylnEZ" resolve="fixClangCompilerSettings" />
+                  <node concept="3CnSsL" id="4l47ydylxS9" role="3Coj4f">
+                    <ref role="QkamJ" node="4l47ydylsUT" resolve="rsa" />
+                    <node concept="1YBJjd" id="4l47ydylxSo" role="3CoRuB">
+                      <ref role="1YBMHb" node="4l47ydylaa4" resolve="rsa" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="4l47ydyllFo" role="3clFbw">
+              <node concept="2OqwBi" id="4l47ydyllFp" role="3fr31v">
+                <node concept="2OqwBi" id="4l47ydyllFq" role="2Oq$k0">
+                  <node concept="37vLTw" id="4l47ydyllFr" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4l47ydyleYt" resolve="sp" />
+                  </node>
+                  <node concept="3TrcHB" id="4l47ydylm8T" role="2OqNvi">
+                    <ref role="3TsBF5" to="v326:7Rf0$0HCP5m" resolve="compilerOptions" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4l47ydyllFt" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="Xl_RD" id="4l47ydyllFu" role="37wK5m">
+                    <property role="Xl_RC" value="-fsanitize=undefined" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="4l47ydylfhc" role="3clFbw">
+          <node concept="37vLTw" id="4l47ydylf6i" role="2Oq$k0">
+            <ref role="3cqZAo" node="4l47ydyleYt" resolve="sp" />
+          </node>
+          <node concept="3x8VRR" id="4l47ydylf$z" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4l47ydylaa4" role="1YuTPh">
+      <property role="TrG5h" value="rsa" />
+      <ref role="1YaFvo" to="v326:1U03KaUHOq1" resolve="RobustnessSpinAnalysis" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="4l47ydylnEZ">
+    <property role="3GE5qa" value="configs" />
+    <property role="TrG5h" value="fixClangCompilerSettings" />
+    <node concept="Q6JDH" id="4l47ydylsUT" role="Q6Id_">
+      <property role="TrG5h" value="rsa" />
+      <node concept="3Tqbb2" id="4l47ydylsV6" role="Q6QK4">
+        <ref role="ehGHo" to="v326:1U03KaUHOq1" resolve="RobustnessSpinAnalysis" />
+      </node>
+    </node>
+    <node concept="Q5ZZ6" id="4l47ydylnF0" role="Q6x$H">
+      <node concept="3clFbS" id="4l47ydylnF1" role="2VODD2">
+        <node concept="3cpWs8" id="4l47ydylsoL" role="3cqZAp">
+          <node concept="3cpWsn" id="4l47ydylsoM" role="3cpWs9">
+            <property role="TrG5h" value="sp" />
+            <node concept="3Tqbb2" id="4l47ydylsoN" role="1tU5fm">
+              <ref role="ehGHo" to="v326:7Rf0$0HCP5k" resolve="SpinPlatform" />
+            </node>
+            <node concept="2OqwBi" id="4l47ydylsoO" role="33vP2m">
+              <node concept="2OqwBi" id="4l47ydylsoP" role="2Oq$k0">
+                <node concept="2OqwBi" id="4l47ydylsoQ" role="2Oq$k0">
+                  <node concept="QwW4i" id="4l47ydyltha" role="2Oq$k0">
+                    <ref role="QwW4h" node="4l47ydylsUT" resolve="rsa" />
+                  </node>
+                  <node concept="I4A8Y" id="4l47ydylsoS" role="2OqNvi" />
+                </node>
+                <node concept="2SmgA7" id="4l47ydylsoT" role="2OqNvi">
+                  <node concept="chp4Y" id="4l47ydylsoU" role="1dBWTz">
+                    <ref role="cht4Q" to="v326:7Rf0$0HCP5k" resolve="SpinPlatform" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="4l47ydylsoV" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4l47ydylsoW" role="3cqZAp">
+          <node concept="3clFbS" id="4l47ydylsoX" role="3clFbx">
+            <node concept="3clFbJ" id="4l47ydylyi3" role="3cqZAp">
+              <node concept="3clFbS" id="4l47ydylyi5" role="3clFbx">
+                <node concept="3clFbF" id="4l47ydyltJD" role="3cqZAp">
+                  <node concept="37vLTI" id="4l47ydyluLI" role="3clFbG">
+                    <node concept="Xl_RD" id="4l47ydyluOE" role="37vLTx">
+                      <property role="Xl_RC" value="clang-cl" />
+                    </node>
+                    <node concept="2OqwBi" id="4l47ydylu1h" role="37vLTJ">
+                      <node concept="37vLTw" id="4l47ydyltJB" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4l47ydylsoM" resolve="sp" />
+                      </node>
+                      <node concept="3TrcHB" id="4l47ydylukQ" role="2OqNvi">
+                        <ref role="3TsBF5" to="v326:7Rf0$0HCP5l" resolve="compiler" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4l47ydylziC" role="3clFbw">
+                <node concept="2OqwBi" id="4l47ydylyu9" role="2Oq$k0">
+                  <node concept="37vLTw" id="4l47ydylyiX" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4l47ydylsoM" resolve="sp" />
+                  </node>
+                  <node concept="3TrcHB" id="4l47ydylyLJ" role="2OqNvi">
+                    <ref role="3TsBF5" to="v326:7Rf0$0HCP5l" resolve="compiler" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4l47ydylzKp" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="4l47ydylzRi" role="37wK5m">
+                    <property role="Xl_RC" value="clang" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4l47ydylvde" role="3cqZAp">
+              <node concept="d57v9" id="4l47ydylwjy" role="3clFbG">
+                <node concept="Xl_RD" id="4l47ydylwms" role="37vLTx">
+                  <property role="Xl_RC" value=" -fsanitize=undefined" />
+                </node>
+                <node concept="2OqwBi" id="4l47ydylvv2" role="37vLTJ">
+                  <node concept="37vLTw" id="4l47ydylvdc" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4l47ydylsoM" resolve="sp" />
+                  </node>
+                  <node concept="3TrcHB" id="4l47ydylvMB" role="2OqNvi">
+                    <ref role="3TsBF5" to="v326:7Rf0$0HCP5m" resolve="compilerOptions" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4l47ydylspu" role="3clFbw">
+            <node concept="37vLTw" id="4l47ydylspv" role="2Oq$k0">
+              <ref role="3cqZAo" node="4l47ydylsoM" resolve="sp" />
+            </node>
+            <node concept="3x8VRR" id="4l47ydylspw" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="4l47ydylnFk" role="QzAvj">
+      <node concept="3clFbS" id="4l47ydylnFl" role="2VODD2">
+        <node concept="3clFbF" id="4l47ydylnNK" role="3cqZAp">
+          <node concept="Xl_RD" id="4l47ydylnNJ" role="3clFbG">
+            <property role="Xl_RC" value="sets the clang-cl compiler and settings to enable instrumentation for undefined behavior" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

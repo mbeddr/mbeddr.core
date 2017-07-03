@@ -2,13 +2,13 @@
 <model ref="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.core.traceExplorer.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
@@ -611,8 +611,10 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="125WB3BR6gA" role="1B3o_S" />
       <node concept="_YKpA" id="125WB3BR6tu" role="1tU5fm">
-        <node concept="3uibUv" id="125WB3BR6BT" role="_ZDj9">
-          <ref role="3uigEE" node="2jSY3BO406M" resolve="DefaultTraceRecord" />
+        <node concept="3qUE_q" id="6wSVlqC1__B" role="_ZDj9">
+          <node concept="3uibUv" id="6wSVlqC1A6u" role="3qUE_r">
+            <ref role="3uigEE" node="2jSY3BO406M" resolve="DefaultTraceRecord" />
+          </node>
         </node>
       </node>
       <node concept="z59LJ" id="125WB3BR6JT" role="lGtFl">
@@ -727,8 +729,10 @@
         <property role="TrG5h" value="calls" />
         <property role="3TUv4t" value="true" />
         <node concept="_YKpA" id="125WB3BR6Wp" role="1tU5fm">
-          <node concept="3uibUv" id="125WB3BR771" role="_ZDj9">
-            <ref role="3uigEE" node="2jSY3BO406M" resolve="DefaultTraceRecord" />
+          <node concept="3qUE_q" id="6wSVlqC1AMq" role="_ZDj9">
+            <node concept="3uibUv" id="6wSVlqC1B8t" role="3qUE_r">
+              <ref role="3uigEE" node="2jSY3BO406M" resolve="DefaultTraceRecord" />
+            </node>
           </node>
         </node>
       </node>
@@ -820,6 +824,9 @@
       <node concept="3Tm6S6" id="43aY2QmTlul" role="1B3o_S" />
       <node concept="3uibUv" id="43aY2QmTmiH" role="1tU5fm">
         <ref role="3uigEE" node="43aY2QmSAdT" resolve="ITraceRecordRenderer" />
+        <node concept="16syzq" id="6wSVlqCazLe" role="11_B2D">
+          <ref role="16sUi3" node="6wSVlqCayij" resolve="T" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2jSY3BOb3rh" role="jymVt" />
@@ -828,6 +835,9 @@
         <property role="TrG5h" value="renderer" />
         <node concept="3uibUv" id="43aY2QmTn9z" role="1tU5fm">
           <ref role="3uigEE" node="43aY2QmSAdT" resolve="ITraceRecordRenderer" />
+          <node concept="16syzq" id="6wSVlqCaA8d" role="11_B2D">
+            <ref role="16sUi3" node="6wSVlqCayij" resolve="T" />
+          </node>
         </node>
       </node>
       <node concept="3cqZAl" id="2jSY3BOb4yL" role="3clF45" />
@@ -920,12 +930,12 @@
             <node concept="3cpWs8" id="2jSY3BObuO6" role="3cqZAp">
               <node concept="3cpWsn" id="2jSY3BObuO7" role="3cpWs9">
                 <property role="TrG5h" value="traceRecord" />
-                <node concept="3uibUv" id="43aY2QmStWl" role="1tU5fm">
-                  <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
+                <node concept="16syzq" id="6wSVlqCa$oF" role="1tU5fm">
+                  <ref role="16sUi3" node="6wSVlqCayij" resolve="T" />
                 </node>
                 <node concept="10QFUN" id="2jSY3BObuO8" role="33vP2m">
-                  <node concept="3uibUv" id="43aY2QmSul6" role="10QFUM">
-                    <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
+                  <node concept="16syzq" id="6wSVlqCa$Sl" role="10QFUM">
+                    <ref role="16sUi3" node="6wSVlqCayij" resolve="T" />
                   </node>
                   <node concept="2OqwBi" id="2jSY3BObuOa" role="10QFUP">
                     <node concept="37vLTw" id="2jSY3BObuOb" role="2Oq$k0">
@@ -1012,6 +1022,9 @@
     <node concept="3Tm1VV" id="2jSY3BO6a0g" role="1B3o_S" />
     <node concept="3uibUv" id="2jSY3BOaoFJ" role="1zkMxy">
       <ref role="3uigEE" to="lzb2:~ColoredTreeCellRenderer" resolve="ColoredTreeCellRenderer" />
+    </node>
+    <node concept="16euLQ" id="6wSVlqCayij" role="16eVyc">
+      <property role="TrG5h" value="T" />
     </node>
   </node>
   <node concept="312cEu" id="2jSY3BO827E">
@@ -1468,7 +1481,7 @@
                   <node concept="1rXfSq" id="125WB3BRsBW" role="37wK5m">
                     <ref role="37wK5l" node="125WB3BRbxm" resolve="createTreeNode" />
                     <node concept="37vLTw" id="1FH2oK2HPIg" role="37wK5m">
-                      <ref role="3cqZAo" node="1FH2oK2HPIc" resolve="call" />
+                      <ref role="3cqZAo" node="1FH2oK2HPIc" resolve="child" />
                     </node>
                   </node>
                 </node>
@@ -1484,7 +1497,7 @@
             </node>
           </node>
           <node concept="3cpWsn" id="1FH2oK2HPIc" role="1Duv9x">
-            <property role="TrG5h" value="call" />
+            <property role="TrG5h" value="child" />
             <node concept="3uibUv" id="1FH2oK2HQJa" role="1tU5fm">
               <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
               <node concept="3qTvmN" id="1FH2oK2HQUC" role="11_B2D" />
