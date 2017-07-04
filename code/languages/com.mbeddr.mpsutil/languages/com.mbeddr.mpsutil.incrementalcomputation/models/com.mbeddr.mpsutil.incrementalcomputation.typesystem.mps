@@ -108,7 +108,7 @@
     <node concept="3clFbS" id="5YITc37Q9oM" role="18ibNy">
       <node concept="3SKdUt" id="6QoXIYUbSUF" role="3cqZAp">
         <node concept="3SKdUq" id="6QoXIYUbSUH" role="3SKWNk">
-          <property role="3SKdUp" value="TODO: this check is not triggered. WHY???!" />
+          <property role="3SKdUp" value="TODO: this check is not triggered reliably... it works in the SecurityAnalyst project, but not in the example for this framework..." />
         </node>
       </node>
       <node concept="3clFbF" id="6QoXIYUbHy0" role="3cqZAp">
@@ -152,7 +152,7 @@
                           </node>
                         </node>
                         <node concept="Xl_RD" id="6QoXIYUbKho" role="3uHU7B">
-                          <property role="Xl_RC" value="Propagation cycle for type \&quot;" />
+                          <property role="Xl_RC" value="Calculation cycle for \&quot;" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="6QoXIYUbMNt" role="3uHU7w">
