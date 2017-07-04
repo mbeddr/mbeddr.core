@@ -104,18 +104,18 @@
     </language>
   </registry>
   <node concept="18kY7G" id="5YITc37Q9oL">
-    <property role="TrG5h" value="check_IPropagationParticipant" />
+    <property role="TrG5h" value="check_IncrementallyComputed" />
     <node concept="3clFbS" id="5YITc37Q9oM" role="18ibNy">
       <node concept="3SKdUt" id="6QoXIYUbSUF" role="3cqZAp">
         <node concept="3SKdUq" id="6QoXIYUbSUH" role="3SKWNk">
-          <property role="3SKdUp" value="TODO: this check is never triggered. WHY???!" />
+          <property role="3SKdUp" value="TODO: this check is not triggered. WHY???!" />
         </node>
       </node>
       <node concept="3clFbF" id="6QoXIYUbHy0" role="3cqZAp">
         <node concept="2OqwBi" id="6QoXIYUbIti" role="3clFbG">
           <node concept="2OqwBi" id="6QoXIYUbHDi" role="2Oq$k0">
             <node concept="1YBJjd" id="6QoXIYUbHxY" role="2Oq$k0">
-              <ref role="1YBMHb" node="5YITc37Q9oO" resolve="iPropagationParticipant" />
+              <ref role="1YBMHb" node="5YITc37Q9oO" resolve="icvh" />
             </node>
             <node concept="2qgKlT" id="6QoXIYUbHMf" role="2OqNvi">
               <ref role="37wK5l" to="ao0u:5YITc37Rtfk" resolve="getAllCycles" />
@@ -126,7 +126,7 @@
               <node concept="3clFbS" id="6QoXIYUbK1J" role="1bW5cS">
                 <node concept="2MkqsV" id="6QoXIYUbKab" role="3cqZAp">
                   <node concept="1YBJjd" id="6QoXIYUbKo$" role="2OEOjV">
-                    <ref role="1YBMHb" node="5YITc37Q9oO" resolve="iPropagationParticipant" />
+                    <ref role="1YBMHb" node="5YITc37Q9oO" resolve="icvh" />
                   </node>
                   <node concept="3cpWs3" id="5uCOCQhZNew" role="2MkJ7o">
                     <node concept="2YIFZM" id="5uCOCQhZOq8" role="3uHU7w">
@@ -172,8 +172,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="5YITc37Q9oO" role="1YuTPh">
-      <property role="TrG5h" value="iPropagationParticipant" />
-      <ref role="1YaFvo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+      <property role="TrG5h" value="icvh" />
+      <ref role="1YaFvo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
     </node>
   </node>
 </model>

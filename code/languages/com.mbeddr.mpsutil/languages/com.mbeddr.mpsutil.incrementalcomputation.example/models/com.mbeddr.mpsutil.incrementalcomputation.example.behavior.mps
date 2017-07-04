@@ -231,8 +231,8 @@
     <node concept="13i0hz" id="2S2eLhiN6zl" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getPropagationSources" />
-      <ref role="13i0hy" to="ao0u:2S2eLhiMzhL" resolve="getPropagationSources" />
+      <property role="TrG5h" value="getDependencies" />
+      <ref role="13i0hy" to="ao0u:2S2eLhiMzhL" resolve="getDependencies" />
       <node concept="3Tm1VV" id="2S2eLhiN6zo" role="1B3o_S" />
       <node concept="3clFbS" id="2S2eLhiN6zr" role="3clF47">
         <node concept="3clFbJ" id="2O6wx$f332O" role="3cqZAp">
@@ -434,7 +434,7 @@
       </node>
       <node concept="A3Dl8" id="50uWDT$M5PN" role="3clF45">
         <node concept="3Tqbb2" id="50uWDT$M5PO" role="A3Ik2">
-          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
         </node>
       </node>
     </node>
@@ -955,7 +955,7 @@
                 <node concept="2ShNRf" id="797ZNR2n5Sk" role="3cqZAk">
                   <node concept="2Jqq0_" id="797ZNR2n5Sl" role="2ShVmc">
                     <node concept="3Tqbb2" id="797ZNR2n5Sm" role="HW$YZ">
-                      <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+                      <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
                     </node>
                     <node concept="2OqwBi" id="50uWDT$E5$n" role="I$8f6">
                       <node concept="2OqwBi" id="ymtTuKAv2k" role="2Oq$k0">
@@ -1045,7 +1045,7 @@
       </node>
       <node concept="A3Dl8" id="50uWDT$Iswi" role="3clF45">
         <node concept="3Tqbb2" id="50uWDT$Iswk" role="A3Ik2">
-          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
         </node>
       </node>
       <node concept="37vLTG" id="50uWDT$M9J7" role="3clF46">
