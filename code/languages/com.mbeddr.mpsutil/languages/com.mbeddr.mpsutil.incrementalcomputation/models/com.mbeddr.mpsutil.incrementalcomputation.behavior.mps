@@ -293,20 +293,18 @@
       <node concept="10P_77" id="5nAcTtnb1YE" role="3clF45" />
       <node concept="3clFbS" id="5nAcTtnb1YF" role="3clF47">
         <node concept="3cpWs6" id="5nAcTtnb1YG" role="3cqZAp">
-          <node concept="3clFbT" id="5nAcTtnb1YH" role="3cqZAk">
-            <property role="3clFbU" value="true" />
-          </node>
+          <node concept="3clFbT" id="5nAcTtnb1YH" role="3cqZAk" />
         </node>
       </node>
       <node concept="P$JXv" id="5nAcTtnb1YI" role="lGtFl">
         <node concept="TZ5HA" id="5nAcTtnb1YJ" role="TZ5H$">
           <node concept="1dT_AC" id="5nAcTtnb1YK" role="1dT_Ay">
-            <property role="1dT_AB" value="This method is called by the propagation framework after (re-)calculation is executed. If 'false' is returned," />
+            <property role="1dT_AB" value="This method is called by the propagation framework after (re-)calculation is executed. If 'true' is returned," />
           </node>
         </node>
         <node concept="TZ5HA" id="5nAcTtnb1YL" role="TZ5H$">
           <node concept="1dT_AC" id="5nAcTtnb1YM" role="1dT_Ay">
-            <property role="1dT_AB" value="editor cells of this node are not updated automatically (i.e. user might have to press &quot;F5&quot;)." />
+            <property role="1dT_AB" value="editor cells of this node are updated automatically (does not seem to work atm)." />
           </node>
         </node>
       </node>
