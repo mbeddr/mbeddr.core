@@ -113,6 +113,7 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
@@ -149,14 +150,14 @@
     </language>
   </registry>
   <node concept="13h7C7" id="2S2eLhiMx3g">
-    <ref role="13h7C2" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+    <ref role="13h7C2" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
     <node concept="13hLZK" id="2S2eLhiMx3h" role="13h7CW">
       <node concept="3clFbS" id="2S2eLhiMx3i" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="2S2eLhiMzhL" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getPropagationSources" />
+      <property role="TrG5h" value="getDependencies" />
       <node concept="37vLTG" id="2S2eLhiM$cx" role="3clF46">
         <property role="TrG5h" value="valueSelector" />
         <node concept="3uibUv" id="50uWDT$KveW" role="1tU5fm">
@@ -166,7 +167,7 @@
       <node concept="3Tm1VV" id="2S2eLhiMzhM" role="1B3o_S" />
       <node concept="A3Dl8" id="50uWDT$I7cA" role="3clF45">
         <node concept="3Tqbb2" id="50uWDT$I7dm" role="A3Ik2">
-          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
         </node>
       </node>
       <node concept="3clFbS" id="2S2eLhiMzhO" role="3clF47" />
@@ -314,7 +315,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getValue" />
-      <node concept="3Tm1VV" id="2S2eLhiM$8n" role="1B3o_S" />
+      <node concept="3Tmbuc" id="1Ay2jI43xaJ" role="1B3o_S" />
       <node concept="3uibUv" id="50uWDT$LlpI" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
@@ -342,7 +343,7 @@
       <node concept="P$JXv" id="lNBnHjW_UC" role="lGtFl">
         <node concept="TZ5HA" id="lNBnHjW_UD" role="TZ5H$">
           <node concept="1dT_AC" id="lNBnHjWA0P" role="1dT_Ay">
-            <property role="1dT_AB" value="API to read cached information" />
+            <property role="1dT_AB" value="API to read cached information. Inheriting class should provide public function delegating to this method." />
           </node>
         </node>
       </node>
@@ -422,18 +423,18 @@
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getParticipantInfo" />
       <node concept="3uibUv" id="2S2eLhiM$hX" role="3clF45">
-        <ref role="3uigEE" to="hz0z:2S2eLhiM$hD" resolve="ParticipantInfo" />
+        <ref role="3uigEE" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />
       </node>
       <node concept="3clFbS" id="2S2eLhiM$e_" role="3clF47">
         <node concept="3cpWs8" id="2S2eLhiM_Zy" role="3cqZAp">
           <node concept="3cpWsn" id="2S2eLhiM_Zz" role="3cpWs9">
             <property role="TrG5h" value="pi" />
             <node concept="3uibUv" id="2S2eLhiM_Z$" role="1tU5fm">
-              <ref role="3uigEE" to="hz0z:2S2eLhiM$hD" resolve="ParticipantInfo" />
+              <ref role="3uigEE" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />
             </node>
             <node concept="0kSF2" id="RObVTFmTeu" role="33vP2m">
               <node concept="3uibUv" id="RObVTFmUJR" role="0kSFW">
-                <ref role="3uigEE" to="hz0z:2S2eLhiM$hD" resolve="ParticipantInfo" />
+                <ref role="3uigEE" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />
               </node>
               <node concept="2OqwBi" id="2S2eLhiM_Tc" role="0kSFX">
                 <node concept="2JrnkZ" id="2S2eLhiM_Td" role="2Oq$k0">
@@ -442,7 +443,7 @@
                 <node concept="liA8E" id="2S2eLhiM_Tf" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
                   <node concept="10M0yZ" id="3mJtqpyRjzn" role="37wK5m">
-                    <ref role="1PxDUh" to="hz0z:2S2eLhiM$hD" resolve="ParticipantInfo" />
+                    <ref role="1PxDUh" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />
                     <ref role="3cqZAo" to="hz0z:3mJtqpyRiaj" resolve="USER_OBJECT_ID" />
                   </node>
                 </node>
@@ -456,7 +457,7 @@
               <node concept="37vLTI" id="2S2eLhiMBlp" role="3clFbG">
                 <node concept="2ShNRf" id="2S2eLhiMBlN" role="37vLTx">
                   <node concept="1pGfFk" id="2S2eLhiMJWA" role="2ShVmc">
-                    <ref role="37wK5l" to="hz0z:2S2eLhiMJT4" resolve="ParticipantInfo" />
+                    <ref role="37wK5l" to="hz0z:2S2eLhiMJT4" resolve="ValueHolderInfo" />
                     <node concept="13iPFW" id="2S2eLhiMKOO" role="37wK5m" />
                   </node>
                 </node>
@@ -474,7 +475,7 @@
                   <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
                   <node concept="10M0yZ" id="3mJtqpyRjq3" role="37wK5m">
                     <ref role="3cqZAo" to="hz0z:3mJtqpyRiaj" resolve="USER_OBJECT_ID" />
-                    <ref role="1PxDUh" to="hz0z:2S2eLhiM$hD" resolve="ParticipantInfo" />
+                    <ref role="1PxDUh" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />
                   </node>
                   <node concept="37vLTw" id="2S2eLhiMJBe" role="37wK5m">
                     <ref role="3cqZAo" node="2S2eLhiM_Zz" resolve="pi" />
@@ -491,7 +492,7 @@
                   <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
                   <node concept="10M0yZ" id="3mJtqpyRjtN" role="37wK5m">
                     <ref role="3cqZAo" to="hz0z:3mJtqpyRiaj" resolve="USER_OBJECT_ID" />
-                    <ref role="1PxDUh" to="hz0z:2S2eLhiM$hD" resolve="ParticipantInfo" />
+                    <ref role="1PxDUh" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />
                   </node>
                   <node concept="37vLTw" id="lNBnHjWA3y" role="37wK5m">
                     <ref role="3cqZAo" node="2S2eLhiM_Zz" resolve="pi" />

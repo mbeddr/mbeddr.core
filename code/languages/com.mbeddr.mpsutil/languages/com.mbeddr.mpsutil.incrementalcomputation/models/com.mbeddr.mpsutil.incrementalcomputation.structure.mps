@@ -21,7 +21,7 @@
   </registry>
   <node concept="PlHQZ" id="2S2eLhiMx2Q">
     <property role="EcuMT" value="3315277234172465334" />
-    <property role="TrG5h" value="IPropagationParticipant" />
+    <property role="TrG5h" value="IncrementallyComputedValueHolder" />
   </node>
 </model>
 

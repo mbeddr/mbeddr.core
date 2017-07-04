@@ -124,7 +124,7 @@
     </language>
   </registry>
   <node concept="2uRRBC" id="7CsrqpZoa42">
-    <property role="TrG5h" value="LazyPropagationPlugin" />
+    <property role="TrG5h" value="IncrementalComputationPlugin" />
     <node concept="2BZ0e9" id="2hXd3rt0reH" role="2uRRBG">
       <property role="TrG5h" value="deployListener" />
       <node concept="3Tm6S6" id="2hXd3rt0reI" role="1B3o_S" />

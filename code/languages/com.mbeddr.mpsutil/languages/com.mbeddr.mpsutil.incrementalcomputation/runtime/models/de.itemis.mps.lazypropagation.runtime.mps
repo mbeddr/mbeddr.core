@@ -341,7 +341,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="2S2eLhiM$hD">
-    <property role="TrG5h" value="ParticipantInfo" />
+    <property role="TrG5h" value="ValueHolderInfo" />
     <property role="3GE5qa" value="userObjects" />
     <node concept="2tJIrI" id="3mJtqpyRgEk" role="jymVt" />
     <node concept="Wx3nA" id="3mJtqpyRiaj" role="jymVt">
@@ -363,7 +363,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="2S2eLhiMJZR" role="1B3o_S" />
       <node concept="3Tqbb2" id="2S2eLhiMK0b" role="1tU5fm">
-        <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+        <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
       </node>
     </node>
     <node concept="2tJIrI" id="7ZWgXq7Ggqw" role="jymVt" />
@@ -411,7 +411,7 @@
       <node concept="37vLTG" id="2S2eLhiMJYP" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="2S2eLhiMJYO" role="1tU5fm">
-          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
         </node>
       </node>
     </node>
@@ -431,7 +431,7 @@
       </node>
       <node concept="3Tm1VV" id="RObVTFnw3I" role="1B3o_S" />
       <node concept="3Tqbb2" id="RObVTFnwtQ" role="3clF45">
-        <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+        <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
       </node>
     </node>
     <node concept="2tJIrI" id="5YITc37R629" role="jymVt" />
@@ -605,7 +605,7 @@
         <property role="TrG5h" value="visitedParticipants" />
         <node concept="_YKpA" id="797ZNR2klib" role="1tU5fm">
           <node concept="3uibUv" id="797ZNR2klEz" role="_ZDj9">
-            <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+            <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
           </node>
         </node>
       </node>
@@ -649,7 +649,7 @@
       <node concept="37vLTG" id="RObVTFpSdS" role="3clF46">
         <property role="TrG5h" value="other" />
         <node concept="3uibUv" id="2NSCtASsRLQ" role="1tU5fm">
-          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
         </node>
       </node>
       <node concept="3clFbS" id="RObVTFoPi0" role="3clF47">
@@ -689,7 +689,7 @@
       <node concept="37vLTG" id="RObVTFpSN_" role="3clF46">
         <property role="TrG5h" value="other" />
         <node concept="3uibUv" id="2NSCtASsRQv" role="1tU5fm">
-          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
         </node>
       </node>
       <node concept="3clFbS" id="RObVTFoQP$" role="3clF47">
@@ -848,7 +848,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="2NSCtASruBh" role="1B3o_S" />
       <node concept="3uibUv" id="2NSCtASruBi" role="1tU5fm">
-        <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+        <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
       </node>
     </node>
     <node concept="312cEg" id="RObVTFnnYE" role="jymVt">
@@ -868,7 +868,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="2NSCtASrCpF" role="1B3o_S" />
       <node concept="3Tqbb2" id="2NSCtASrGuC" role="1tU5fm">
-        <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+        <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
       </node>
     </node>
     <node concept="2tJIrI" id="RObVTFnoiG" role="jymVt" />
@@ -881,13 +881,13 @@
       <node concept="2ShNRf" id="2NSCtASs2Oi" role="33vP2m">
         <node concept="2Jqq0_" id="2NSCtASs2M3" role="2ShVmc">
           <node concept="3uibUv" id="2NSCtASs2M4" role="HW$YZ">
-            <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+            <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
           </node>
         </node>
       </node>
       <node concept="_YKpA" id="2NSCtASsHJO" role="1tU5fm">
         <node concept="3uibUv" id="2NSCtASsHJP" role="_ZDj9">
-          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
         </node>
       </node>
     </node>
@@ -900,13 +900,13 @@
       <node concept="2ShNRf" id="2NSCtASs3vc" role="33vP2m">
         <node concept="2Jqq0_" id="2NSCtASs3vd" role="2ShVmc">
           <node concept="3uibUv" id="2NSCtASs3ve" role="HW$YZ">
-            <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+            <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
           </node>
         </node>
       </node>
       <node concept="_YKpA" id="2NSCtASsJLZ" role="1tU5fm">
         <node concept="3uibUv" id="2NSCtASsJM0" role="_ZDj9">
-          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
         </node>
       </node>
     </node>
@@ -1000,7 +1000,7 @@
       <node concept="37vLTG" id="7ZWgXq7GDUz" role="3clF46">
         <property role="TrG5h" value="participant" />
         <node concept="3uibUv" id="2NSCtASrquw" role="1tU5fm">
-          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
         </node>
       </node>
       <node concept="37vLTG" id="7ZWgXq7GDVk" role="3clF46">
@@ -1056,7 +1056,7 @@
             </node>
             <node concept="A3Dl8" id="50uWDT$I$gC" role="1tU5fm">
               <node concept="3uibUv" id="2NSCtASsFmb" role="A3Ik2">
-                <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+                <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
               </node>
             </node>
           </node>
@@ -1127,7 +1127,7 @@
       </node>
       <node concept="3Tm1VV" id="KudFejUDIH" role="1B3o_S" />
       <node concept="3Tqbb2" id="KudFejUFox" role="3clF45">
-        <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+        <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
       </node>
     </node>
     <node concept="2tJIrI" id="7ZWgXq7GFxo" role="jymVt" />
@@ -1308,7 +1308,7 @@
                 </node>
                 <node concept="A3Dl8" id="50uWDT$INtP" role="1tU5fm">
                   <node concept="3uibUv" id="50uWDT$INtR" role="A3Ik2">
-                    <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+                    <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
                   </node>
                 </node>
               </node>
@@ -1461,7 +1461,7 @@
             <node concept="2ShNRf" id="61NZ8UZnPxO" role="2Oq$k0">
               <node concept="2Jqq0_" id="61NZ8UZo3OI" role="2ShVmc">
                 <node concept="3uibUv" id="61NZ8UZo40O" role="HW$YZ">
-                  <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+                  <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
                 </node>
                 <node concept="37vLTw" id="61NZ8UZo4QK" role="I$8f6">
                   <ref role="3cqZAo" node="RObVTFo4eX" resolve="_cachedPropagationTargets" />
@@ -1512,7 +1512,7 @@
         <property role="TrG5h" value="visitedParticipants" />
         <node concept="_YKpA" id="797ZNR2kmg9" role="1tU5fm">
           <node concept="3uibUv" id="797ZNR2kmga" role="_ZDj9">
-            <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+            <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
           </node>
         </node>
       </node>
@@ -1543,7 +1543,7 @@
       <node concept="37vLTG" id="RObVTFrSfN" role="3clF46">
         <property role="TrG5h" value="other" />
         <node concept="3uibUv" id="2NSCtASsTKS" role="1tU5fm">
-          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
         </node>
       </node>
     </node>
@@ -1573,7 +1573,7 @@
       <node concept="37vLTG" id="RObVTFrTIo" role="3clF46">
         <property role="TrG5h" value="other" />
         <node concept="3uibUv" id="2NSCtASsUkZ" role="1tU5fm">
-          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+          <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
         </node>
       </node>
     </node>
@@ -1609,7 +1609,7 @@
                 <node concept="2ShNRf" id="5YITc37OWot" role="37wK5m">
                   <node concept="2Jqq0_" id="5YITc37OWou" role="2ShVmc">
                     <node concept="3Tqbb2" id="5YITc37OWov" role="HW$YZ">
-                      <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+                      <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
                     </node>
                   </node>
                 </node>
@@ -1814,14 +1814,14 @@
         <property role="TrG5h" value="participantStack" />
         <node concept="oyxx6" id="5YITc37MTr5" role="1tU5fm">
           <node concept="3Tqbb2" id="5YITc37MTr6" role="3O5elw">
-            <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+            <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
           </node>
         </node>
       </node>
       <node concept="37vLTG" id="5YITc37NIo3" role="3clF46">
         <property role="TrG5h" value="participant" />
         <node concept="3Tqbb2" id="5YITc37NJYL" role="1tU5fm">
-          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
         </node>
       </node>
     </node>
@@ -1881,7 +1881,7 @@
               <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
               <node concept="10M0yZ" id="3mJtqpyRjq3" role="37wK5m">
                 <ref role="3cqZAo" node="3mJtqpyRiaj" resolve="USER_OBJECT_ID" />
-                <ref role="1PxDUh" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+                <ref role="1PxDUh" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
               </node>
               <node concept="10Nm6u" id="7CsrqpZoAUQ" role="37wK5m" />
             </node>
@@ -1916,13 +1916,13 @@
             <property role="TrG5h" value="visitedParticipants" />
             <node concept="_YKpA" id="797ZNR2kka4" role="1tU5fm">
               <node concept="3uibUv" id="797ZNR2kkrE" role="_ZDj9">
-                <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+                <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
               </node>
             </node>
             <node concept="2ShNRf" id="797ZNR2kkwW" role="33vP2m">
               <node concept="2Jqq0_" id="797ZNR2kkwX" role="2ShVmc">
                 <node concept="3uibUv" id="797ZNR2kkwY" role="HW$YZ">
-                  <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ParticipantInfo" />
+                  <ref role="3uigEE" node="2S2eLhiM$hD" resolve="ValueHolderInfo" />
                 </node>
               </node>
             </node>
@@ -2400,7 +2400,7 @@
       <node concept="3Tm6S6" id="797ZNR2jypD" role="1B3o_S" />
       <node concept="A3Dl8" id="50uWDT$IxOK" role="1tU5fm">
         <node concept="3Tqbb2" id="50uWDT$IxOL" role="A3Ik2">
-          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
         </node>
       </node>
     </node>
@@ -2446,7 +2446,7 @@
         <property role="TrG5h" value="invalidationHint" />
         <node concept="A3Dl8" id="50uWDT$IwQ7" role="1tU5fm">
           <node concept="3Tqbb2" id="797ZNR2jyqh" role="A3Ik2">
-            <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+            <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
           </node>
         </node>
       </node>
@@ -2511,7 +2511,7 @@
       <node concept="3Tm1VV" id="797ZNR2jK10" role="1B3o_S" />
       <node concept="A3Dl8" id="50uWDT$IygY" role="3clF45">
         <node concept="3Tqbb2" id="50uWDT$IygZ" role="A3Ik2">
-          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
         </node>
       </node>
     </node>
@@ -2804,7 +2804,7 @@
       <property role="eg7rD" value="false" />
       <node concept="3rvAFt" id="KudFejVyks" role="1tU5fm">
         <node concept="3Tqbb2" id="KudFejV$4w" role="3rvQeY">
-          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+          <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
         </node>
         <node concept="_YKpA" id="50uWDT$GiFF" role="3rvSg0">
           <node concept="3uibUv" id="50uWDT$GiFG" role="_ZDj9">
@@ -2816,7 +2816,7 @@
       <node concept="2ShNRf" id="KudFejVKQQ" role="33vP2m">
         <node concept="32Fmki" id="KudFejVKQt" role="2ShVmc">
           <node concept="3Tqbb2" id="KudFejVKQu" role="3rHrn6">
-            <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+            <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
           </node>
           <node concept="_YKpA" id="50uWDT$Gjeq" role="3rHtpV">
             <node concept="3uibUv" id="50uWDT$Gjer" role="_ZDj9">
@@ -2856,7 +2856,7 @@
           <node concept="3cpWsn" id="50uWDT$G321" role="3cpWs9">
             <property role="TrG5h" value="participant" />
             <node concept="3Tqbb2" id="50uWDT$G31W" role="1tU5fm">
-              <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+              <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
             </node>
             <node concept="2OqwBi" id="50uWDT$G3oM" role="33vP2m">
               <node concept="37vLTw" id="50uWDT$G3hC" role="2Oq$k0">
@@ -3353,7 +3353,7 @@
           <node concept="3cpWsn" id="KudFejWFep" role="3cpWs9">
             <property role="TrG5h" value="participant" />
             <node concept="3Tqbb2" id="KudFejWFek" role="1tU5fm">
-              <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+              <ref role="ehGHo" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
             </node>
             <node concept="2OqwBi" id="KudFejWFLH" role="33vP2m">
               <node concept="2OqwBi" id="KudFejZFjl" role="2Oq$k0">
@@ -3367,7 +3367,7 @@
               <node concept="2Xjw5R" id="KudFejWFLJ" role="2OqNvi">
                 <node concept="1xMEDy" id="KudFejWFLK" role="1xVPHs">
                   <node concept="chp4Y" id="KudFejWFLL" role="ri$Ld">
-                    <ref role="cht4Q" to="kzoi:2S2eLhiMx2Q" resolve="IPropagationParticipant" />
+                    <ref role="cht4Q" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="KudFejWFLM" role="1xVPHs" />
