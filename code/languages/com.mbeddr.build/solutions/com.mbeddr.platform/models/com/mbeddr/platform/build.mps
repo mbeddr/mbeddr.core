@@ -396,6 +396,9 @@
       <node concept="m$f5U" id="3quoVcnS5al" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnN1e0" resolve="com.mbeddr.mpsutil.interpreter" />
       </node>
+      <node concept="m$f5U" id="6mJAQ2PgcmS" role="m$_yh">
+        <ref role="m$f5T" node="3bCcKqaTTOY" resolve="com.mbeddr.mpsutil.incrementalcomputation" />
+      </node>
       <node concept="m$f5U" id="3quoVcnS5b7" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnKz3m" resolve="com.mbeddr.mpsutil.jung" />
       </node>
@@ -6141,7 +6144,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="3bCcKqaTTOY" role="3989C9">
-      <property role="TrG5h" value="com.mbeddr.mpsutil.incrementalpropagation" />
+      <property role="TrG5h" value="com.mbeddr.mpsutil.incrementalcomputation" />
       <node concept="1E1JtA" id="3bCcKqaUIpY" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.incrementalcomputation.runtime" />
