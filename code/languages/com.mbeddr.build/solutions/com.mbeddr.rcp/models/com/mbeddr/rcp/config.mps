@@ -180,6 +180,7 @@
       <concept id="3885435385580582152" name="jetbrains.mps.build.startup.structure.MpsStartupScript" flags="ng" index="26EafH">
         <property id="3885435385580582155" name="startupFolder" index="26EafI" />
         <property id="3885435385580631186" name="startupClass" index="26FY9R" />
+        <reference id="3505522814897007561" name="branding" index="1_kbm$" />
         <child id="3885435385580582696" name="bootClasspath" index="26Ea7d" />
         <child id="3885435385580627556" name="vmOptions" index="26FZ21" />
         <child id="2693344784283221851" name="vmOptions64" index="2hID6k" />
@@ -2272,33 +2273,21 @@
             <ref role="3ygNvj" node="1BPeV_LjXqG" />
           </node>
           <node concept="398223" id="6xv$4WsFw$_" role="39821P">
+            <node concept="28jJK3" id="2lgcjg3akLV" role="39821P">
+              <property role="28jJZ5" value="755" />
+              <node concept="3co7Ac" id="2lgcjg3akM5" role="28jJR8">
+                <property role="3co7Am" value="crlf" />
+              </node>
+              <node concept="398BVA" id="5wLtKNeVGn9" role="28jJRO">
+                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
+                <node concept="2Ry0Ak" id="5wLtKNeVGnh" role="iGT6I">
+                  <property role="2Ry0Am" value="mbeddr.bat" />
+                </node>
+              </node>
+            </node>
             <node concept="3_J27D" id="6xv$4WsFw$A" role="Nbhlr">
               <node concept="3Mxwew" id="6xv$4WsFw$B" role="3MwsjC">
                 <property role="3MwjfP" value="bin" />
-              </node>
-            </node>
-            <node concept="28jJK3" id="2lgcjg39YsT" role="39821P">
-              <node concept="3co7Ac" id="6xv$4WsFwBq" role="28jJR8">
-                <property role="3co7Am" value="lf" />
-                <property role="3cpA_W" value="true" />
-              </node>
-              <node concept="398BVA" id="5wLtKNeVGjb" role="28jJRO">
-                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
-                <node concept="2Ry0Ak" id="5wLtKNeVGjc" role="iGT6I">
-                  <property role="2Ry0Am" value="mbeddr.vmoptions" />
-                </node>
-              </node>
-            </node>
-            <node concept="28jJK3" id="2lwFGYPkDZP" role="39821P">
-              <node concept="3co7Ac" id="2lwFGYPkDZQ" role="28jJR8">
-                <property role="3co7Am" value="lf" />
-                <property role="3cpA_W" value="true" />
-              </node>
-              <node concept="398BVA" id="5wLtKNeVGfx" role="28jJRO">
-                <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
-                <node concept="2Ry0Ak" id="5wLtKNeVGfy" role="iGT6I">
-                  <property role="2Ry0Am" value="mbeddr64.vmoptions" />
-                </node>
               </node>
             </node>
             <node concept="28jJK3" id="2lgcjg39Yt4" role="39821P">
@@ -2451,18 +2440,6 @@
               <ref role="398BVh" node="5wLtKNeVGp1" resolve="artifacts.icons" />
               <node concept="2Ry0Ak" id="3_QmycUFE1m" role="iGT6I">
                 <property role="2Ry0Am" value="mbeddr.ico" />
-              </node>
-            </node>
-          </node>
-          <node concept="28jJK3" id="2lgcjg3akLV" role="39821P">
-            <property role="28jJZ5" value="755" />
-            <node concept="3co7Ac" id="2lgcjg3akM5" role="28jJR8">
-              <property role="3co7Am" value="crlf" />
-            </node>
-            <node concept="398BVA" id="5wLtKNeVGn9" role="28jJRO">
-              <ref role="398BVh" node="5wLtKNeVG8X" resolve="artifacts.startup" />
-              <node concept="2Ry0Ak" id="5wLtKNeVGnh" role="iGT6I">
-                <property role="2Ry0Am" value="mbeddr.bat" />
               </node>
             </node>
           </node>
@@ -2969,6 +2946,7 @@
     <property role="TrG5h" value="mbeddr" />
     <property role="3GE5qa" value="ide" />
     <property role="26EafI" value="bin" />
+    <ref role="1_kbm$" node="1BPeV_LjXsL" resolve="mbeddr" />
     <node concept="26Ea6D" id="2lwFGYOW7EY" role="2hID6k">
       <property role="26Ea6C" value="-client -Xss1024k -ea -Xmx2048m -XX:MaxPermSize=350m -XX:NewSize=256m -XX:+HeapDumpOnOutOfMemoryError -Xverify:none" />
     </node>
