@@ -11,6 +11,7 @@
     <import index="v326" ref="r:514c3fdd-db66-4a91-9071-d85e5f98742c(com.mbeddr.analyses.spin.structure)" />
     <import index="llb3" ref="r:38e1b852-361b-47c0-99e1-1944e9fcd4c9(com.mbeddr.analyses.spin.c.patterns.structure)" />
     <import index="dx12" ref="r:c6dfc67c-3370-45c8-b783-dcf00c2a8c32(com.mbeddr.analyses.spin.documentation.mdcc_documentation_examples)" />
+    <import index="qs41" ref="r:406eaf3b-4b50-4952-9b52-cbae48820416(com.mbeddr.analyses.spin.documentation.mdcc_documentation_examples_robustness)" />
   </imports>
   <registry>
     <language id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect">
@@ -68,6 +69,9 @@
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
+      </concept>
+      <concept id="3350625596580108709" name="com.mbeddr.doc.structure.SectRefWord" flags="ng" index="1_0GAv">
+        <reference id="3350625596580108719" name="target" index="1_0GAl" />
       </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
@@ -141,7 +145,7 @@
     </node>
     <node concept="$CzcT" id="7VkE0Bpq5Ei" role="1_0VJ0">
       <node concept="1_0j5j" id="7VkE0Bpq5EA" role="$CzcU">
-        <ref role="1_0j5g" node="7VkE0Bpq0PW" resolve="_040_MDCC_Ch4_DeclarationsSection" />
+        <ref role="1_0j5g" node="7VkE0Bpq0PW" resolve="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
       </node>
     </node>
     <node concept="$CzcT" id="7VkE0Bpq5EE" role="1_0VJ0">
@@ -162,7 +166,7 @@
       <ref role="1_0j5g" node="7VkE0Bpq0C5" resolve="_030_MDCC_Ch3_TopLevelHarnessContent" />
     </node>
     <node concept="1_0j5j" id="7VkE0Bpq5Dw" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq0PW" resolve="_040_MDCC_Ch4_DeclarationsSection" />
+      <ref role="1_0j5g" node="7VkE0Bpq0PW" resolve="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
     </node>
     <node concept="1_0j5j" id="7VkE0Bpq5DL" role="1DXQ57">
       <ref role="1_0j5g" node="7VkE0Bpq5kU" resolve="_050_MDCC_Ch5_HarnessLogicDescriptionSection" />
@@ -205,8 +209,8 @@
         <node concept="3z_lpU" id="7VkE0Bpq0xF" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="7VkE0Bpq0xG" role="3z_lpI">
-            <node concept="2NCMab" id="7VkE0Bpq0xH" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:4l47ydyjFhK" resolve="analyses_config_container" />
+            <node concept="2NCMab" id="7VkE0Bpws9m" role="2NCMaf">
+              <ref role="2NCMaa" to="dx12:7VkE0Bpu2gf" resolve="analyses_configurations_for_assertions" />
             </node>
           </node>
         </node>
@@ -241,8 +245,8 @@
           <property role="3z_lpW" value="mbeddr" />
           <property role="3z_lpV" value="Example for a typical harness module" />
           <node concept="2NCZwO" id="7VkE0Bpq0xT" role="3z_lpI">
-            <node concept="2NCMab" id="7VkE0Bpq0xU" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:4l47ydyjFhK" resolve="analyses_config_container" />
+            <node concept="2NCMab" id="7VkE0Bpws9s" role="2NCMaf">
+              <ref role="2NCMaa" to="dx12:7VkE0Bpu2gf" resolve="analyses_configurations_for_assertions" />
             </node>
           </node>
         </node>
@@ -279,6 +283,27 @@
           <node concept="2NCZwO" id="7VkE0Bpq0y6" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpq0y7" role="2NCMaf">
               <ref role="2NCMaa" to="dx12:4l47ydyjFhL" resolve="BuildConfiguration (c.m.a.s.d.mdcc_documentation_examples)" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="7VkE0Bpws9y" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="1_0LV8" id="7VkE0Bpwsb0" role="1_0VJ0">
+          <node concept="19SGf9" id="7VkE0Bpwsb1" role="1_0LWR">
+            <node concept="19SUe$" id="7VkE0Bpwsb2" role="19SJt6">
+              <property role="19SUeA" value="An example of analysis configuration for checking the robustness is presented below:" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="7VkE0Bpwse1" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="7VkE0BpwscT" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="7VkE0BpwscU" role="3z_lpI">
+            <node concept="2NCMab" id="7VkE0BpwsdW" role="2NCMaf">
+              <ref role="2NCMaa" to="qs41:7VkE0Bpwm7f" resolve="analyses_configurations_for_robustness" />
             </node>
           </node>
         </node>
@@ -428,7 +453,7 @@
   </node>
   <node concept="1_1swa" id="7VkE0Bpq0PW">
     <property role="yApLE" value="4" />
-    <property role="TrG5h" value="_040_MDCC_Ch4_DeclarationsSection" />
+    <property role="TrG5h" value="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
     <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
     <node concept="1_1sxE" id="7VkE0Bpq0Qy" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -516,414 +541,55 @@
       <node concept="1_1sxE" id="7VkE0Bpq0RN" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
+      <node concept="1_0VNX" id="7VkE0Bpwu1a" role="1_0VJ0">
+        <property role="TrG5h" value="TrackingState" />
+        <property role="1_0VJr" value="Tracked State" />
+        <node concept="1_0LV8" id="7VkE0Bpwu1b" role="1_0VJ0">
+          <node concept="19SGf9" id="7VkE0Bpwu1c" role="1_0LWR">
+            <node concept="19SUe$" id="7VkE0Bpwu1d" role="19SJt6">
+              <property role="19SUeA" value="The " />
+            </node>
+            <node concept="2vpllh" id="7VkE0Bpwu5w" role="19SJt6">
+              <node concept="19SGf9" id="7VkE0Bpwu5x" role="$DsGW">
+                <node concept="19SUe$" id="7VkE0Bpwu5y" role="19SJt6">
+                  <property role="19SUeA" value="track_state: VAR" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="7VkE0Bpwu5z" role="19SJt6">
+              <property role="19SUeA" value=" is used to track the internal state of the system under verification. Tracked states are restored when Spin performs a back step. Forgetting to track states will result in erroneous verification results. " />
+            </node>
+          </node>
+        </node>
+        <node concept="3n9NSn" id="7VkE0Bpwu1e" role="lGtFl">
+          <ref role="3nadW_" to="llb3:5IfbEbQA2zq" resolve="TrackState" />
+        </node>
+        <node concept="1_0LV8" id="7VkE0Bpwu1x" role="1_0VJ0">
+          <node concept="19SGf9" id="7VkE0Bpwu1y" role="1_0LWR">
+            <node concept="19SUe$" id="7VkE0Bpwu1z" role="19SJt6">
+              <property role="19SUeA" value="Below is an example:" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="7VkE0Bpwu1$" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="7VkE0Bpwu1_" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpV" value="Example for a typical harness module" />
+          <node concept="2NCZwO" id="7VkE0Bpwu1A" role="3z_lpI">
+            <node concept="2NCMab" id="7VkE0Bpwu89" role="2NCMaf">
+              <ref role="2NCMaa" to="dx12:7VkE0Bpu0$J" resolve="_044_harness_logic_multistep" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="7VkE0BpwtSN" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
     </node>
     <node concept="1_1sxE" id="7VkE0Bpq0RO" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
-    </node>
-    <node concept="1mvXsy" id="7VkE0Bpq0RP" role="1_0VJ0">
-      <property role="TrG5h" value="HarnessLogic" />
-      <property role="1_0VJr" value="Describing the Harness Logic" />
-      <node concept="1_0VNX" id="7VkE0Bpq0RQ" role="1_0VJ0">
-        <property role="TrG5h" value="HarnessCode" />
-        <property role="1_0VJr" value="Harness Code" />
-        <node concept="1_0LV8" id="7VkE0Bpq0RR" role="1_0VJ0">
-          <node concept="19SGf9" id="7VkE0Bpq0RS" role="1_0LWR">
-            <node concept="19SUe$" id="7VkE0Bpq0RT" role="19SJt6">
-              <property role="19SUeA" value="Within the harness code we describe the environment of the system under verification (SUV). We can use the following primitives for describing the harness logic:" />
-            </node>
-          </node>
-        </node>
-        <node concept="3n9NSn" id="7VkE0Bpq0RU" role="lGtFl">
-          <ref role="3nadW_" to="llb3:439FXGfyCs" resolve="HarnessCode" />
-        </node>
-        <node concept="1_1sxE" id="7VkE0Bpq0RV" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="3X6WG5" id="7VkE0Bpq0RW" role="1_0VJ0">
-          <node concept="3X6T9g" id="7VkE0Bpq0RX" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0RY" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0RZ" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0S0" role="19SJt6" />
-                <node concept="2vpllh" id="7VkE0Bpq0S1" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0S2" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0S3" role="19SJt6">
-                      <property role="19SUeA" value="nondet_assign(VAR, RANGE_EXP)" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0S4" role="19SJt6">
-                  <property role="19SUeA" value=" assigns nondeterministically a variable in a certain range" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3X6T9g" id="7VkE0Bpq0S5" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0S6" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0S7" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0S8" role="19SJt6">
-                  <property role="19SUeA" value="" />
-                </node>
-                <node concept="2vpllh" id="7VkE0Bpq0S9" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0Sa" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0Sb" role="19SJt6">
-                      <property role="19SUeA" value="random_assign(VAR, RANGE_EXP)" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0Sc" role="19SJt6">
-                  <property role="19SUeA" value=" assigns randomly a variable in a certain range" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3X6T9g" id="7VkE0Bpq0Sd" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0Se" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0Sf" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0Sg" role="19SJt6">
-                  <property role="19SUeA" value="" />
-                </node>
-                <node concept="2vpllh" id="7VkE0Bpq0Sh" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0Si" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0Sj" role="19SJt6">
-                      <property role="19SUeA" value="nondet_choice" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0Sk" role="19SJt6">
-                  <property role="19SUeA" value=" performs nondeterministic execution of a set of choices" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1_1sxE" id="7VkE0Bpq0Sl" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="1_0LV8" id="7VkE0Bpq0Sm" role="1_0VJ0">
-          <node concept="19SGf9" id="7VkE0Bpq0Sn" role="1_0LWR">
-            <node concept="19SUe$" id="7VkE0Bpq0So" role="19SJt6">
-              <property role="19SUeA" value="Below is an example for a typical harness module:" />
-            </node>
-          </node>
-        </node>
-        <node concept="1_1sxE" id="7VkE0Bpq0Sp" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="3z_lpU" id="7VkE0Bpq0Sq" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="Example for a typical harness module" />
-          <property role="3z_lpJ" value="true" />
-          <node concept="2NCZwO" id="7VkE0Bpq0Sr" role="3z_lpI">
-            <node concept="2NCMab" id="7VkE0Bpq0Ss" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:5HlC91LFkDJ" resolve="_040_harness_logic" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1_1sxE" id="7VkE0Bpq0St" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
-      <node concept="1_0VNX" id="7VkE0Bpq0Su" role="1_0VJ0">
-        <property role="TrG5h" value="NondetAssignment" />
-        <property role="1_0VJr" value="Nondeterministic Assignment" />
-        <node concept="1_0LV8" id="7VkE0Bpq0Sv" role="1_0VJ0">
-          <node concept="19SGf9" id="7VkE0Bpq0Sw" role="1_0LWR">
-            <node concept="19SUe$" id="7VkE0Bpq0Sx" role="19SJt6">
-              <property role="19SUeA" value="A nondet_assign statement assigns a variable nondeterministically. There are the following variations possible:" />
-            </node>
-          </node>
-        </node>
-        <node concept="3n9NSn" id="7VkE0Bpq0Sy" role="lGtFl">
-          <ref role="3nadW_" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
-        </node>
-        <node concept="3X6WG5" id="7VkE0Bpq0Sz" role="1_0VJ0">
-          <node concept="3X6T9g" id="7VkE0Bpq0S$" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0S_" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0SA" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0SB" role="19SJt6" />
-                <node concept="2vpllh" id="7VkE0Bpq0SC" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0SD" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0SE" role="19SJt6">
-                      <property role="19SUeA" value="nondet_assign(VAR)" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0SF" role="19SJt6">
-                  <property role="19SUeA" value=" the variable takes all values allowed by its type - this variant is meaningful to use if VAR has a boolean type" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3X6T9g" id="7VkE0Bpq0SG" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0SH" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0SI" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0SJ" role="19SJt6" />
-                <node concept="2vpllh" id="7VkE0Bpq0SK" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0SL" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0SM" role="19SJt6">
-                      <property role="19SUeA" value="nondet_assign(VAR, RANGE)" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0SN" role="19SJt6">
-                  <property role="19SUeA" value=" the variable takes all values contained in a range" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3X6T9g" id="7VkE0Bpq0SO" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0SP" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0SQ" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0SR" role="19SJt6" />
-                <node concept="2vpllh" id="7VkE0Bpq0SS" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0ST" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0SU" role="19SJt6">
-                      <property role="19SUeA" value="nondet_assign(VAR, DISCRETE_VALS)" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0SV" role="19SJt6">
-                  <property role="19SUeA" value=" the variable takes all values contained in the explicitly specified set of values" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3X6T9g" id="7VkE0Bpq0SW" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0SX" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0SY" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0SZ" role="19SJt6" />
-                <node concept="2vpllh" id="7VkE0Bpq0T0" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0T1" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0T2" role="19SJt6">
-                      <property role="19SUeA" value="nondet_assign(ARRAY_VAR, RANGE)" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0T3" role="19SJt6">
-                  <property role="19SUeA" value=" the elements of the ARRAY_VAR variable take all values contained in a range" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3X6T9g" id="7VkE0Bpq0T4" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0T5" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0T6" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0T7" role="19SJt6" />
-                <node concept="2vpllh" id="7VkE0Bpq0T8" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0T9" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0Ta" role="19SJt6">
-                      <property role="19SUeA" value="nondet_assign(ARRAY_VAR, DISCRETE_VALS)" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0Tb" role="19SJt6">
-                  <property role="19SUeA" value=" the variable ARRAY_VAR variable takes all values contained in the explicitly specified set of values" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1_1sxE" id="7VkE0Bpq0Tc" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="3z_lpU" id="7VkE0Bpq0Td" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="Example of different nondeterministic assignments." />
-          <node concept="2NCZwO" id="7VkE0Bpq0Te" role="3z_lpI">
-            <node concept="2NCMab" id="7VkE0Bpq0Tf" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:3KP_mg0TIR4" resolve="_041_harness_logic_nondet_assign" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1_1sxE" id="7VkE0Bpq0Tg" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
-      <node concept="1_0VNX" id="7VkE0Bpq0Th" role="1_0VJ0">
-        <property role="TrG5h" value="RandomAssignment" />
-        <property role="1_0VJr" value="Random Assignment" />
-        <node concept="1_0LV8" id="7VkE0Bpq0Ti" role="1_0VJ0">
-          <node concept="19SGf9" id="7VkE0Bpq0Tj" role="1_0LWR">
-            <node concept="19SUe$" id="7VkE0Bpq0Tk" role="19SJt6">
-              <property role="19SUeA" value="A random_assign statement assigns a variable randomly. The following variations are possible:" />
-            </node>
-          </node>
-        </node>
-        <node concept="3n9NSn" id="7VkE0Bpq0Tl" role="lGtFl">
-          <ref role="3nadW_" to="llb3:1BFQdmKfv_H" resolve="RandomAssign" />
-        </node>
-        <node concept="3X6WG5" id="7VkE0Bpq0Tm" role="1_0VJ0">
-          <node concept="3X6T9g" id="7VkE0Bpq0Tn" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0To" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0Tp" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0Tq" role="19SJt6" />
-                <node concept="2vpllh" id="7VkE0Bpq0Tr" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0Ts" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0Tt" role="19SJt6">
-                      <property role="19SUeA" value="random_assign(VAR, RANGE)" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0Tu" role="19SJt6">
-                  <property role="19SUeA" value=" the variable takes randomly one value contained in a range" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3X6T9g" id="7VkE0Bpq0Tv" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0Tw" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0Tx" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0Ty" role="19SJt6" />
-                <node concept="2vpllh" id="7VkE0Bpq0Tz" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0T$" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0T_" role="19SJt6">
-                      <property role="19SUeA" value="random_assign(VAR, RANGE) : TIMES" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0TA" role="19SJt6">
-                  <property role="19SUeA" value=" the variable takes TIMES values contained in a range" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3X6T9g" id="7VkE0Bpq0TB" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0TC" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0TD" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0TE" role="19SJt6" />
-                <node concept="2vpllh" id="7VkE0Bpq0TF" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0TG" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0TH" role="19SJt6">
-                      <property role="19SUeA" value="random_assign(ARRAY_VAR, RANGE)" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0TI" role="19SJt6">
-                  <property role="19SUeA" value=" the elements of the ARRAY_VAR variable take random values contained in a range" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3X6T9g" id="7VkE0Bpq0TJ" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0TK" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0TL" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0TM" role="19SJt6" />
-                <node concept="2vpllh" id="7VkE0Bpq0TN" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0TO" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0TP" role="19SJt6">
-                      <property role="19SUeA" value="random_assign(ARRAY_VAR, RANGE) : TIMES" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0TQ" role="19SJt6">
-                  <property role="19SUeA" value=" the elements of the ARRAY_VAR take TIMES values contained in a range" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1_1sxE" id="7VkE0Bpq0TR" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="3z_lpU" id="7VkE0Bpq0TS" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="Example of different nondeterministic assignments." />
-          <node concept="2NCZwO" id="7VkE0Bpq0TT" role="3z_lpI">
-            <node concept="2NCMab" id="7VkE0Bpq0TU" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:3KP_mg11OAP" resolve="_042_harness_logic_random_assign" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1_1sxE" id="7VkE0Bpq0TV" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
-      <node concept="1_0VNX" id="7VkE0Bpq0TW" role="1_0VJ0">
-        <property role="TrG5h" value="NondetChoice" />
-        <property role="1_0VJr" value="Nondeterministic Choice" />
-        <node concept="1_0LV8" id="7VkE0Bpq0TX" role="1_0VJ0">
-          <node concept="19SGf9" id="7VkE0Bpq0TY" role="1_0LWR">
-            <node concept="19SUe$" id="7VkE0Bpq0TZ" role="19SJt6">
-              <property role="19SUeA" value="A " />
-            </node>
-            <node concept="2vpllh" id="7VkE0Bpq0U0" role="19SJt6">
-              <node concept="19SGf9" id="7VkE0Bpq0U1" role="$DsGW">
-                <node concept="19SUe$" id="7VkE0Bpq0U2" role="19SJt6">
-                  <property role="19SUeA" value="nondet_choice" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="7VkE0Bpq0U3" role="19SJt6">
-              <property role="19SUeA" value=" statement starts a nondeterministic choice. There are two possibilities to describe choices:" />
-            </node>
-          </node>
-        </node>
-        <node concept="3n9NSn" id="7VkE0Bpq0U4" role="lGtFl">
-          <ref role="3nadW_" to="llb3:5hi7ucOryWz" resolve="NondetChoice" />
-        </node>
-        <node concept="3X6WG5" id="7VkE0Bpq0U5" role="1_0VJ0">
-          <node concept="3X6T9g" id="7VkE0Bpq0U6" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0U7" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0U8" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0U9" role="19SJt6" />
-                <node concept="2vpllh" id="7VkE0Bpq0Ua" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0Ub" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0Uc" role="19SJt6">
-                      <property role="19SUeA" value="choice #n : {}" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0Ud" role="19SJt6">
-                  <property role="19SUeA" value=" the choice is nondeterministically taken " />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3X6T9g" id="7VkE0Bpq0Ue" role="3Xp5NH">
-            <node concept="OjmMv" id="7VkE0Bpq0Uf" role="3X6T9h">
-              <node concept="19SGf9" id="7VkE0Bpq0Ug" role="OjmMu">
-                <node concept="19SUe$" id="7VkE0Bpq0Uh" role="19SJt6" />
-                <node concept="2vpllh" id="7VkE0Bpq0Ui" role="19SJt6">
-                  <node concept="19SGf9" id="7VkE0Bpq0Uj" role="$DsGW">
-                    <node concept="19SUe$" id="7VkE0Bpq0Uk" role="19SJt6">
-                      <property role="19SUeA" value="choice #n : when COND {}" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="7VkE0Bpq0Ul" role="19SJt6">
-                  <property role="19SUeA" value=" the choice is nondeterministically taken if COND evaluates to TRUE " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1_1sxE" id="7VkE0Bpq0Um" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="1_0LV8" id="7VkE0Bpq0Un" role="1_0VJ0">
-          <node concept="19SGf9" id="7VkE0Bpq0Uo" role="1_0LWR">
-            <node concept="19SUe$" id="7VkE0Bpq0Up" role="19SJt6">
-              <property role="19SUeA" value="In the case when all single choices are guarded there exists an 'else' branch which is executed if no choice is active." />
-            </node>
-          </node>
-        </node>
-        <node concept="1_1sxE" id="7VkE0Bpq0Uq" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="3z_lpU" id="7VkE0Bpq0Ur" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <property role="3z_lpV" value="Example of different nondeterministic assignments." />
-          <property role="3z_lpJ" value="true" />
-          <node concept="2NCZwO" id="7VkE0Bpq0Us" role="3z_lpI">
-            <node concept="2NCMab" id="7VkE0Bpq0Ut" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:3KP_mg11UL4" resolve="_043_harness_logic_nondet_choice" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1_1sxE" id="7VkE0Bpq0Uu" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
     </node>
     <node concept="1_1sxE" id="7VkE0Bpq0Uv" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -1341,6 +1007,45 @@
       <node concept="1_1sxE" id="7VkE0Bpq5o7" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
+      <node concept="1_0VNX" id="7VkE0Bpu0lG" role="1_0VJ0">
+        <property role="TrG5h" value="MultiStep" />
+        <property role="1_0VJr" value="Multi-step" />
+        <node concept="1_0LV8" id="7VkE0Bpws01" role="1_0VJ0">
+          <node concept="19SGf9" id="7VkE0Bpws02" role="1_0LWR">
+            <node concept="19SUe$" id="7VkE0Bpws03" role="19SJt6">
+              <property role="19SUeA" value="The " />
+            </node>
+            <node concept="2vpllh" id="7VkE0BpwsfQ" role="19SJt6">
+              <node concept="19SGf9" id="7VkE0BpwsfR" role="$DsGW">
+                <node concept="19SUe$" id="7VkE0BpwsfS" role="19SJt6">
+                  <property role="19SUeA" value="multi-step(STEPS_NUMBER) { BODY }" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="7VkE0BpwsfT" role="19SJt6">
+              <property role="19SUeA" value=" construct allows the verification of systems with internal state. Please be aware that in case of multi-step verification you need to track the internal state of the system under verification (Section " />
+            </node>
+            <node concept="1_0GAv" id="7VkE0BpwtMP" role="19SJt6">
+              <ref role="1_0GAl" node="7VkE0Bpwu1a" resolve="TrackingState" />
+            </node>
+            <node concept="19SUe$" id="7VkE0BpwtMQ" role="19SJt6">
+              <property role="19SUeA" value="." />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="7VkE0BpwsgM" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="7VkE0BpwshS" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="2NCZwO" id="7VkE0BpwshT" role="3z_lpI">
+            <node concept="2NCMab" id="7VkE0Bpwsiz" role="2NCMaf">
+              <ref role="2NCMaa" to="dx12:7VkE0Bpu0$J" resolve="_044_harness_logic_multistep" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1_1sxE" id="7VkE0Bpq5o8" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -1348,6 +1053,9 @@
     <node concept="Wq1Bs" id="7VkE0Bpq5o9" role="Wq1Bf">
       <property role="Wq1Bt" value="Daniel Ratiu" />
       <property role="Wq1Bq" value="ratiud@googlemail.com" />
+    </node>
+    <node concept="1_0j5j" id="7VkE0BpwynM" role="1DXQ57">
+      <ref role="1_0j5g" node="7VkE0Bpq0PW" resolve="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
     </node>
   </node>
   <node concept="1_1swa" id="7VkE0Bpq5Fn">
