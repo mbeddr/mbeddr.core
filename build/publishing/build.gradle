@@ -10,7 +10,7 @@ def artifactsRoot = rootProject.projectDir.absolutePath + "/artifacts"
 def buildNumber
 if (rootProject.hasProperty("build.number"))
 {
-  rootProject.getProperty("build.number")
+    buildNumber = rootProject.getProperty("build.number")
 } else {
   buildNumber = ""
 }

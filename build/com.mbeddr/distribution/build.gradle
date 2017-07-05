@@ -73,7 +73,7 @@ task prepare_installer(type: Copy, dependsOn: build_mbeddrRCP) {
     from {
         zipTree(rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/" + "mbeddr-win.zip")
     }
-    into installer_repo + "/files/mbeddr/"
+    into installer_repo + "/files/"
 }
 
 task resolve_cbmcWinForInstaller(type: Copy)  {
