@@ -8,9 +8,6 @@
   <imports />
   <registry>
     <language id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela">
-      <concept id="2935779374999505372" name="com.mbeddr.analyses.spin.promela.structure.Assert" flags="ng" index="2DvB8l">
-        <child id="2935779374999506755" name="exp" index="2DvBia" />
-      </concept>
       <concept id="799927705160539981" name="com.mbeddr.analyses.spin.promela.structure.ProcType" flags="ng" index="1N3Vlf">
         <property id="2935779374999680025" name="active" index="2DuWZg" />
       </concept>
@@ -54,6 +51,9 @@
       </concept>
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
+      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
+        <property id="6113173064526131578" name="value" index="PhEJT" />
+      </concept>
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42">
         <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
       </concept>
@@ -115,6 +115,13 @@
         <child id="1867824882767624579" name="elements" index="2Q525m" />
       </concept>
       <concept id="4708346905221050110" name="com.mbeddr.analyses.spin.c.patterns.structure.NondetAssign" flags="ng" index="WlspI" />
+      <concept id="3574069640742840796" name="com.mbeddr.analyses.spin.c.patterns.structure.WitnessLogger" flags="ng" index="3rpoMU">
+        <child id="3574069640743192636" name="exp" index="3qA2Pq" />
+        <child id="3574069640742840930" name="val" index="3rpoW4" />
+      </concept>
+      <concept id="6075951708951115102" name="com.mbeddr.analyses.spin.c.patterns.structure.MessageLogger" flags="ng" index="1w9QyX">
+        <child id="6075951708951378026" name="msg" index="1waQm9" />
+      </concept>
       <concept id="6075951708950638440" name="com.mbeddr.analyses.spin.c.patterns.structure.DefaultChoice" flags="ng" index="1wf3ab">
         <child id="6075951708950638441" name="statementList" index="1wf3aa" />
       </concept>
@@ -242,12 +249,12 @@
     </node>
     <node concept="1gr5cj" id="7VkE0Bpu2gJ" role="2ePNbc">
       <property role="iO3LB" value="false" />
-      <property role="TrG5h" value="pan__044_harness_logic_multistep" />
+      <property role="TrG5h" value="pan__045_harness_logic_multistep" />
       <node concept="2v9HqM" id="7VkE0Bpu2h2" role="2eOfOg">
-        <ref role="2v9HqP" node="7VkE0Bpu0$J" resolve="_044_harness_logic_multistep" />
+        <ref role="2v9HqP" node="7VkE0Bpu0$J" resolve="_045_harness_logic_multistep" />
       </node>
       <node concept="2v9HqM" id="7VkE0Bpu2h7" role="2eOfOg">
-        <ref role="2v9HqP" node="7VkE0Bpu0Z2" resolve="_044_suv_multistep" />
+        <ref role="2v9HqP" node="7VkE0Bpu0Z2" resolve="_045_suv_multistep" />
       </node>
     </node>
   </node>
@@ -798,7 +805,7 @@
     </node>
   </node>
   <node concept="1HfMva" id="3KP_mg0TIR4">
-    <property role="TrG5h" value="_041_harness_logic_nondet_assign" />
+    <property role="TrG5h" value="_042_harness_logic_nondet_assign" />
     <property role="3GE5qa" value="" />
     <node concept="1HfwJk" id="3KP_mg0TIR5" role="N3F5h">
       <property role="TrG5h" value="decls" />
@@ -990,7 +997,7 @@
     </node>
   </node>
   <node concept="1HfMva" id="3KP_mg11OAP">
-    <property role="TrG5h" value="_042_harness_logic_random_assign" />
+    <property role="TrG5h" value="_043_harness_logic_random_assign" />
     <property role="3GE5qa" value="" />
     <node concept="1HfwJk" id="3KP_mg11OAQ" role="N3F5h">
       <property role="TrG5h" value="decls" />
@@ -1159,7 +1166,7 @@
     </node>
   </node>
   <node concept="1HfMva" id="3KP_mg11UL4">
-    <property role="TrG5h" value="_043_harness_logic_nondet_choice" />
+    <property role="TrG5h" value="_044_harness_logic_nondet_choice" />
     <property role="3GE5qa" value="" />
     <node concept="1HfwJk" id="3KP_mg11UL5" role="N3F5h">
       <property role="TrG5h" value="decls" />
@@ -1305,7 +1312,7 @@
     </node>
   </node>
   <node concept="1HfMva" id="7VkE0Bpu0$J">
-    <property role="TrG5h" value="_044_harness_logic_multistep" />
+    <property role="TrG5h" value="_045_harness_logic_multistep" />
     <property role="3GE5qa" value="" />
     <node concept="1HfwJk" id="7VkE0Bpu0$K" role="N3F5h">
       <property role="TrG5h" value="decls" />
@@ -1376,12 +1383,12 @@
                 </node>
               </node>
             </node>
-            <node concept="2DvB8l" id="7VkE0Bpu27V" role="3XIRFZ">
-              <node concept="25Bbzn" id="7VkE0Bpu295" role="2DvBia">
-                <node concept="3TlMh9" id="7VkE0Bpu2a3" role="3TlMhJ">
+            <node concept="Y9XUq" id="ZBFZM$Cj02" role="3XIRFZ">
+              <node concept="25Bbzn" id="ZBFZM$Cj0Z" role="Y9XUp">
+                <node concept="3TlMh9" id="ZBFZM$Cj6z" role="3TlMhJ">
                   <property role="2hmy$m" value="19" />
                 </node>
-                <node concept="1S7827" id="7VkE0Bpwl$F" role="3TlMhI">
+                <node concept="1S7827" id="ZBFZM$Cj0_" role="3TlMhI">
                   <ref role="1S7826" node="7VkE0BpwlqF" resolve="res" />
                 </node>
               </node>
@@ -1394,12 +1401,12 @@
       <property role="TrG5h" value="empty_1498907337332_3" />
     </node>
     <node concept="3GEVxB" id="7VkE0Bpu0_G" role="2OODSX">
-      <ref role="3GEb4d" node="7VkE0Bpu0Z2" resolve="_044_suv_multistep" />
+      <ref role="3GEb4d" node="7VkE0Bpu0Z2" resolve="_045_suv_multistep" />
     </node>
   </node>
   <node concept="N3F5e" id="7VkE0Bpu0Z2">
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="_044_suv_multistep" />
+    <property role="TrG5h" value="_045_suv_multistep" />
     <node concept="1S7NMz" id="7VkE0Bpu1lC" role="N3F5h">
       <property role="TrG5h" value="globalState" />
       <property role="2OOxQR" value="true" />
@@ -1455,10 +1462,170 @@
     <property role="TrG5h" value="analyses_configurations_for_assertions" />
     <node concept="apm28" id="7VkE0Bpu2gg" role="3V$2$K">
       <property role="3SeVAx" value="true" />
-      <ref role="apm5G" node="7VkE0Bpu0$J" resolve="_044_harness_logic_multistep" />
+      <ref role="apm5G" node="7VkE0Bpu0$J" resolve="_045_harness_logic_multistep" />
     </node>
     <node concept="3GEVxB" id="7VkE0Bpu2gi" role="3W6d8T">
-      <ref role="3GEb4d" node="7VkE0Bpu0$J" resolve="_044_harness_logic_multistep" />
+      <ref role="3GEb4d" node="7VkE0Bpu0$J" resolve="_045_harness_logic_multistep" />
+    </node>
+  </node>
+  <node concept="1HfMva" id="7VkE0BpwPxp">
+    <property role="TrG5h" value="_046_harness_witness_logger" />
+    <property role="3GE5qa" value="" />
+    <node concept="1HfwJk" id="7VkE0BpwPxq" role="N3F5h">
+      <property role="TrG5h" value="decls" />
+      <node concept="1S7NMz" id="7VkE0BpwPxt" role="fMItF">
+        <property role="TrG5h" value="a" />
+        <node concept="26Vqqz" id="7VkE0BpwPxu" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7VkE0BpwPxD" role="N3F5h">
+      <property role="TrG5h" value="empty_1498372230104_1" />
+    </node>
+    <node concept="1HfgMz" id="7VkE0BpwPxE" role="N3F5h">
+      <property role="2DuWZg" value="true" />
+      <property role="TrG5h" value="harness_logic_nondet_assign_example" />
+      <node concept="19Rifw" id="7VkE0BpwPxF" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="7VkE0BpwPxG" role="3XIRFX">
+        <node concept="1QiMYF" id="7VkE0BpwPxO" role="3XIRFZ">
+          <node concept="OjmMv" id="7VkE0BpwPxP" role="3SJzmv">
+            <node concept="19SGf9" id="7VkE0BpwPxQ" role="OjmMu">
+              <node concept="19SUe$" id="7VkE0BpwPxR" role="19SJt6">
+                <property role="19SUeA" value="'a' is assigned all values in range between - 1 and 9" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="WlspI" id="7VkE0BpwPxS" role="3XIRFZ">
+          <node concept="1S7827" id="7VkE0BpwPxT" role="Wlsuc">
+            <ref role="1S7826" node="7VkE0BpwPxt" resolve="a" />
+          </node>
+          <node concept="1vV05I" id="7VkE0BpwPxU" role="2DF6ot">
+            <property role="n43Ve" value="true" />
+            <node concept="3TlMh9" id="7VkE0BpwPxV" role="1vV05J">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3TlMh9" id="7VkE0BpwPxW" role="1vV05C">
+              <property role="2hmy$m" value="10" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="7VkE0BpwRUd" role="3XIRFZ" />
+        <node concept="1QiMYF" id="7VkE0BpwRXy" role="3XIRFZ">
+          <node concept="OjmMv" id="7VkE0BpwRX$" role="3SJzmv">
+            <node concept="19SGf9" id="7VkE0BpwRX_" role="OjmMu">
+              <node concept="19SUe$" id="7VkE0BpwRXA" role="19SJt6">
+                <property role="19SUeA" value="logs the value of a in the witness (&quot;a = a_val&quot;)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rpoMU" id="7VkE0BpwRJC" role="3XIRFZ">
+          <node concept="1S7827" id="7VkE0BpwRLN" role="3qA2Pq">
+            <ref role="1S7826" node="7VkE0BpwPxt" resolve="a" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="7VkE0BpwRVX" role="3XIRFZ" />
+        <node concept="1QiMYF" id="7VkE0BpwRZ$" role="3XIRFZ">
+          <node concept="OjmMv" id="7VkE0BpwRZA" role="3SJzmv">
+            <node concept="19SGf9" id="7VkE0BpwRZB" role="OjmMu">
+              <node concept="19SUe$" id="7VkE0BpwRZC" role="19SJt6">
+                <property role="19SUeA" value="logs &quot;explanation = a&quot; in the witness" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rpoMU" id="7VkE0BpwRO2" role="3XIRFZ">
+          <node concept="PhEJO" id="7VkE0BpwRQj" role="3qA2Pq">
+            <property role="PhEJT" value="explanation" />
+          </node>
+          <node concept="1S7827" id="7VkE0BpwRRH" role="3rpoW4">
+            <ref role="1S7826" node="7VkE0BpwPxt" resolve="a" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7VkE0BpwPyu" role="N3F5h">
+      <property role="TrG5h" value="empty_1498907337332_3" />
+    </node>
+    <node concept="3GEVxB" id="7VkE0BpwPyv" role="2OODSX">
+      <ref role="3GEb4d" node="5HlC91LFcE$" resolve="_020_suv" />
+    </node>
+  </node>
+  <node concept="1HfMva" id="ZBFZM$ChpG">
+    <property role="TrG5h" value="_047_harness_message_logger" />
+    <property role="3GE5qa" value="" />
+    <node concept="1HfwJk" id="ZBFZM$ChpH" role="N3F5h">
+      <property role="TrG5h" value="decls" />
+      <node concept="1S7NMz" id="ZBFZM$ChpI" role="fMItF">
+        <property role="TrG5h" value="a" />
+        <node concept="26Vqqz" id="ZBFZM$ChpJ" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ZBFZM$ChpK" role="N3F5h">
+      <property role="TrG5h" value="empty_1498372230104_1" />
+    </node>
+    <node concept="1HfgMz" id="ZBFZM$ChpL" role="N3F5h">
+      <property role="2DuWZg" value="true" />
+      <property role="TrG5h" value="harness_logic_nondet_assign_example" />
+      <node concept="19Rifw" id="ZBFZM$ChpM" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="ZBFZM$ChpN" role="3XIRFX">
+        <node concept="1QiMYF" id="ZBFZM$ChpO" role="3XIRFZ">
+          <node concept="OjmMv" id="ZBFZM$ChpP" role="3SJzmv">
+            <node concept="19SGf9" id="ZBFZM$ChpQ" role="OjmMu">
+              <node concept="19SUe$" id="ZBFZM$ChpR" role="19SJt6">
+                <property role="19SUeA" value="'a' is assigned all values in range between - 1 and 9" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="WlspI" id="ZBFZM$ChpS" role="3XIRFZ">
+          <node concept="1S7827" id="ZBFZM$ChpT" role="Wlsuc">
+            <ref role="1S7826" node="ZBFZM$ChpI" resolve="a" />
+          </node>
+          <node concept="1vV05I" id="ZBFZM$ChpU" role="2DF6ot">
+            <property role="n43Ve" value="true" />
+            <node concept="3TlMh9" id="ZBFZM$ChpV" role="1vV05J">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3TlMh9" id="ZBFZM$ChpW" role="1vV05C">
+              <property role="2hmy$m" value="10" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ZBFZM$ChpX" role="3XIRFZ" />
+        <node concept="1QiMYF" id="ZBFZM$Chqd" role="3XIRFZ">
+          <node concept="OjmMv" id="ZBFZM$Chqe" role="3SJzmv">
+            <node concept="19SGf9" id="ZBFZM$Chqf" role="OjmMu">
+              <node concept="19SUe$" id="ZBFZM$Chqg" role="19SJt6">
+                <property role="19SUeA" value="logs just a simple message" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1w9QyX" id="ZBFZM$Chqh" role="3XIRFZ">
+          <node concept="PhEJO" id="ZBFZM$Chqi" role="1waQm9">
+            <property role="PhEJT" value="simple message" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ZBFZM$Chqj" role="N3F5h">
+      <property role="TrG5h" value="empty_1498907337332_3" />
+    </node>
+    <node concept="3GEVxB" id="ZBFZM$Chqk" role="2OODSX">
+      <ref role="3GEb4d" node="5HlC91LFcE$" resolve="_020_suv" />
     </node>
   </node>
 </model>

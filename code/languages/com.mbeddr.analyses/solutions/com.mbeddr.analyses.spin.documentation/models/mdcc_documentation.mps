@@ -579,7 +579,7 @@
           <property role="3z_lpV" value="Example for a typical harness module" />
           <node concept="2NCZwO" id="7VkE0Bpwu1A" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpwu89" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:7VkE0Bpu0$J" resolve="_044_harness_logic_multistep" />
+              <ref role="2NCMaa" to="dx12:7VkE0Bpu0$J" resolve="_045_harness_logic_multistep" />
             </node>
           </node>
         </node>
@@ -814,7 +814,7 @@
           <property role="3z_lpV" value="Example of different nondeterministic assignments." />
           <node concept="2NCZwO" id="7VkE0Bpq5mR" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpq5mS" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:3KP_mg0TIR4" resolve="_041_harness_logic_nondet_assign" />
+              <ref role="2NCMaa" to="dx12:3KP_mg0TIR4" resolve="_042_harness_logic_nondet_assign" />
             </node>
           </node>
         </node>
@@ -913,7 +913,7 @@
           <property role="3z_lpV" value="Example of different nondeterministic assignments." />
           <node concept="2NCZwO" id="7VkE0Bpq5ny" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpq5nz" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:3KP_mg11OAP" resolve="_042_harness_logic_random_assign" />
+              <ref role="2NCMaa" to="dx12:3KP_mg11OAP" resolve="_043_harness_logic_random_assign" />
             </node>
           </node>
         </node>
@@ -999,7 +999,7 @@
           <property role="3z_lpJ" value="true" />
           <node concept="2NCZwO" id="7VkE0Bpq5o5" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpq5o6" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:3KP_mg11UL4" resolve="_043_harness_logic_nondet_choice" />
+              <ref role="2NCMaa" to="dx12:3KP_mg11UL4" resolve="_044_harness_logic_nondet_choice" />
             </node>
           </node>
         </node>
@@ -1041,10 +1041,85 @@
           <property role="3z_lpJ" value="true" />
           <node concept="2NCZwO" id="7VkE0BpwshT" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpwsiz" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:7VkE0Bpu0$J" resolve="_044_harness_logic_multistep" />
+              <ref role="2NCMaa" to="dx12:7VkE0Bpu0$J" resolve="_045_harness_logic_multistep" />
             </node>
           </node>
         </node>
+      </node>
+      <node concept="1_1sxE" id="7VkE0BpwKFR" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="7VkE0BpwKXc" role="1_0VJ0">
+        <property role="TrG5h" value="WitnessLoggers" />
+        <property role="1_0VJr" value="Witness Logger" />
+        <node concept="1_0LV8" id="7VkE0BpwL5T" role="1_0VJ0">
+          <node concept="19SGf9" id="7VkE0BpwL5U" role="1_0LWR">
+            <node concept="19SUe$" id="7VkE0BpwL69" role="19SJt6" />
+            <node concept="2vpllh" id="7VkE0BpwL66" role="19SJt6">
+              <node concept="19SGf9" id="7VkE0BpwL67" role="$DsGW">
+                <node concept="19SUe$" id="7VkE0BpwL68" role="19SJt6">
+                  <property role="19SUeA" value="whitness_logger(exp, val?)" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="7VkE0BpwL6a" role="19SJt6">
+              <property role="19SUeA" value=" is a statement which logs a certain expression and value in the witness produced by Spin when the assertion fails. Witness logger is translated into &quot;Printf&quot; in Promela. &#10;&#10;Below are several example usages:" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="7VkE0BpwS8k" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="7VkE0BpwS99" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="7VkE0BpwS9a" role="3z_lpI">
+            <node concept="2NCMab" id="7VkE0BpwS9E" role="2NCMaf">
+              <ref role="2NCMaa" to="dx12:7VkE0BpwPxp" resolve="_046_harness_witness_logger" />
+            </node>
+          </node>
+        </node>
+        <node concept="3n9NSn" id="7VkE0BpwTvB" role="lGtFl">
+          <ref role="3nadW_" to="llb3:36pDmrEZ2Bs" resolve="WitnessLogger" />
+        </node>
+      </node>
+      <node concept="1_1sxE" id="ZBFZM$Ch9L" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="ZBFZM$Chmb" role="1_0VJ0">
+        <property role="TrG5h" value="MessageLoggers" />
+        <property role="1_0VJr" value="Message Logger" />
+        <node concept="1_0LV8" id="ZBFZM$Chmc" role="1_0VJ0">
+          <node concept="19SGf9" id="ZBFZM$Chmd" role="1_0LWR">
+            <node concept="19SUe$" id="ZBFZM$Chme" role="19SJt6" />
+            <node concept="2vpllh" id="ZBFZM$Chmf" role="19SJt6">
+              <node concept="19SGf9" id="ZBFZM$Chmg" role="$DsGW">
+                <node concept="19SUe$" id="ZBFZM$Chmh" role="19SJt6">
+                  <property role="19SUeA" value="message_logger(msg_string, val?)" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="ZBFZM$Chmi" role="19SJt6">
+              <property role="19SUeA" value=" is a statement which logs a certain message and optional value in the witness produced by Spin when the assertion fails. Witness logger is translated into &quot;Printf&quot; in Promela. &#10;&#10;Below is an example usage:" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="ZBFZM$Chmj" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="ZBFZM$Chmk" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="ZBFZM$Chml" role="3z_lpI">
+            <node concept="2NCMab" id="ZBFZM$ChWx" role="2NCMaf">
+              <ref role="2NCMaa" to="dx12:ZBFZM$ChpG" resolve="_047_harness_message_logger" />
+            </node>
+          </node>
+        </node>
+        <node concept="3n9NSn" id="ZBFZM$Chmn" role="lGtFl">
+          <ref role="3nadW_" to="llb3:5hi7ucOtnlu" resolve="MessageLogger" />
+        </node>
+      </node>
+      <node concept="1_1sxE" id="ZBFZM$Chj3" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
       </node>
     </node>
     <node concept="1_1sxE" id="7VkE0Bpq5o8" role="1_0VJ0">
@@ -1071,12 +1146,9 @@
         <node concept="1_0LV8" id="7VkE0BpsrfU" role="1_0VJ0">
           <node concept="19SGf9" id="7VkE0BpsrfV" role="1_0LWR">
             <node concept="19SUe$" id="7VkE0BpsrfW" role="19SJt6">
-              <property role="19SUeA" value="MBEDDR provides a set of DSLs to ease the Model-Driven Code Checking approach described in [1]." />
+              <property role="19SUeA" value="MBEDDR provides a set of DSLs to facilitate the description of verification environments as originally developed  in the Model-Driven Code Checking approach described in [1]. From higher-level DSLs for environment description, we generate Promela code which is subsequently compiled by Spin togther with the system under verification (SUV) into a C program. The C program (environment linked witht he SUV) is executed and either assertions are checked or the code is checked for undefined behavior as instrumented by the CLANG (experimental)." />
             </node>
           </node>
-        </node>
-        <node concept="1_1sxE" id="7VkE0Bpsrg4" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
         </node>
         <node concept="3X6WG5" id="7VkE0Bpsrgo" role="1_0VJ0">
           <node concept="3X6T9g" id="7VkE0Bpsrgp" role="3Xp5NH">
