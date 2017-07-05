@@ -7,7 +7,9 @@
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="txqq" ref="r:d86d3b72-1ea3-4a6a-9bb6-a186113c398c(mbeddr.tutorial.main.lib)" />
+  </imports>
   <registry>
     <language id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units">
       <concept id="5348704582971040037" name="com.mbeddr.ext.units.structure.UnitConfigItem" flags="ng" index="2eh4Hv" />
@@ -126,6 +128,9 @@
       <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
         <child id="4052432714772608243" name="text" index="1w35rA" />
       </concept>
+      <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
+        <reference id="747084250476878887" name="chunk" index="3GEb4d" />
+      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -136,6 +141,7 @@
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
+        <child id="1317894735999304826" name="imports" index="2OODSX" />
       </concept>
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
@@ -164,6 +170,10 @@
       <concept id="6275792049641586523" name="com.mbeddr.core.unittest.structure.TestCase" flags="ng" index="c0Qz5">
         <child id="6275792049641586525" name="body" index="c0Qz3" />
       </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
+        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
+      </concept>
+      <concept id="842732463503928106" name="com.mbeddr.core.unittest.structure.NoTestIsolationStrategy" flags="ng" index="3GpDuv" />
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
       <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.EmulatedInterruptKind" flags="ng" index="3_UBHe" />
@@ -297,6 +307,11 @@
             <node concept="3ZVu4v" id="5Y5RBjHpYlf" role="3TlMhJ">
               <ref role="3ZVs_2" node="5Y5RBjHpUKz" resolve="a" />
             </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="1lWQE5Ep4Hf" role="3XIRFZ">
+          <node concept="3O_q_g" id="1lWQE5Ep4Hd" role="1_9egR">
+            <ref role="3O_q_h" to="txqq:453s65PZ2Um" resolve="myFunction" />
           </node>
         </node>
         <node concept="2BFjQ_" id="AO_S936VPE" role="3XIRFZ">
@@ -548,6 +563,9 @@
     <node concept="2NXPZ9" id="bhVSeGUgzZ" role="N3F5h">
       <property role="TrG5h" value="empty_1394961427320_2" />
     </node>
+    <node concept="3GEVxB" id="1lWQE5Ep48Q" role="2OODSX">
+      <ref role="3GEb4d" to="txqq:453s65PYZxw" resolve="MyLib" />
+    </node>
   </node>
   <node concept="2v9HqL" id="AO_S936VPj">
     <property role="TrG5h" value="dummy" />
@@ -589,11 +607,17 @@
       <property role="MHqn5" value="true" />
     </node>
     <node concept="2eh4Hv" id="2qGv$is1YnN" role="2Q9xDr" />
+    <node concept="12mU2y" id="1lWQE5EBeaz" role="2Q9xDr">
+      <node concept="3GpDuv" id="1lWQE5EBeaY" role="3GpDut" />
+    </node>
     <node concept="2eOfOl" id="AO_S936VPn" role="2ePNbc">
       <property role="TrG5h" value="PlainCDemo" />
       <ref role="3oK8_y" node="OnnrMNmT2n" resolve="portable" />
       <node concept="2v9HqM" id="3j3yk3gbQxX" role="2eOfOg">
         <ref role="2v9HqP" node="AO_S936VOp" resolve="PlainCDemo" />
+      </node>
+      <node concept="2v9HqM" id="1lWQE5Ep4KS" role="2eOfOg">
+        <ref role="2v9HqP" to="txqq:453s65PYZxw" resolve="MyLib" />
       </node>
     </node>
   </node>

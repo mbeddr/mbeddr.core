@@ -643,5 +643,13 @@
       <ref role="PrY4T" node="1x69AmkdYA2" resolve="IStatement" />
     </node>
   </node>
+  <node concept="1TIwiD" id="w6VxUHrNGb">
+    <property role="EcuMT" value="578411417689864971" />
+    <property role="TrG5h" value="MyVar" />
+    <ref role="1TJDcQ" node="6oKG1kMxn7T" resolve="VariableDeclaration" />
+    <node concept="PrWs8" id="w6VxUHwtGk" role="PzmwI">
+      <ref role="PrY4T" node="1x69AmkdYA2" resolve="IStatement" />
+    </node>
+  </node>
 </model>
 

@@ -358,5 +358,24 @@
   <node concept="3p36aQ" id="2cvVnUv6Fxj">
     <ref role="aqKnT" to="d0vh:7dfuMW5rC75" resolve="NameShorteingRoot" />
   </node>
+  <node concept="24kQdi" id="1NwarDnRY0o">
+    <property role="3GE5qa" value="module" />
+    <ref role="1XX52x" to="d0vh:1NwarDnRX0I" resolve="GexForignExtModuleImport" />
+    <node concept="3EZMnI" id="1NwarDnRY0q" role="2wV5jI">
+      <node concept="l2Vlx" id="1NwarDnRY0r" role="2iSdaV" />
+      <node concept="3F0ifn" id="1NwarDnRY0s" role="3EZMnx">
+        <property role="3F0ifm" value="forign external module" />
+      </node>
+      <node concept="1iCGBv" id="1NwarDnRY0t" role="3EZMnx">
+        <ref role="1NtTu8" to="d0vh:1NwarDnRY03" resolve="module" />
+        <node concept="1sVBvm" id="1NwarDnRY0u" role="1sWHZn">
+          <node concept="3F0A7n" id="1NwarDnRY0v" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

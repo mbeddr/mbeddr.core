@@ -20,6 +20,24 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.templates/com.mbeddr.build.templates.msd" folder="templates" />
       <modulePath path="$PROJECT_DIR$/solutions/jetbrains.mps.minimal/jetbrains.mps.minimal.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.core.buildvalidation/test.com.mbeddr.mpsutil.build.msd" folder="build.test" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.allInOne/allInOne.msd" folder="rcp" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.allScripts/com.mbeddr.allScripts.msd" folder="build.scripts" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.analyses.dev.build/build.msd" folder="analyses" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.build.build/com.mbeddr.build.build.msd" folder="tutorial" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.build/com.mbeddr.build.msd" folder="mbeddr-languages" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.cc.tests.dev.build/com.mbeddr.cc.tests.dev.build.msd" folder="cc" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.build/com.mbeddr.core.tests.build.msd" folder="core" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.performance.build/com.mbeddr.core.tests.performance.build.msd" folder="core" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" folder="debugger-testing" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.tests.dev.build/com.mbeddr.debugger.tests.dev.build.msd" folder="debugger" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.build/build.msd" folder="ext" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.mpsutil.inca/com.mbeddr.mpsutil.inca.msd" folder="inca" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform.build.templates/com.mbeddr.platform.build.templates.msd" folder="templates" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/com.mbeddr.rcp.msd" folder="rcp" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/com.mbeddr.templates/com.mbeddr.build.templates.msd" folder="templates" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/solutions/jetbrains.mps.minimal/jetbrains.mps.minimal.msd" folder="rcp" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.build/tests/test.com.mbeddr.core.buildvalidation/test.com.mbeddr.mpsutil.build.msd" folder="build.test" />
+      <modulePath path="$prosoz.lb-sprache.home$/deps/com.mbeddr.platform/mbeddr.platform.build/languages/com.mbeddr.platform.build/com.mbeddr.platform.jar!/META-INF/module.xml" folder="platform" />
     </projectModules>
   </component>
 </project>
