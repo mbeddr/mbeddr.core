@@ -10,7 +10,7 @@ def artifactsRoot = rootProject.projectDir.absolutePath + "/artifacts"
 def buildNumber
 if (rootProject.hasProperty("build.number"))
 {
-  rootProject.getProperty("build.number")
+    buildNumber = rootProject.getProperty("build.number")
 } else {
   buildNumber = ""
 }
@@ -35,9 +35,9 @@ github {
     assets = [
             artifactsRoot + "/com.mbeddr.allInOne/com.mbeddr.allInOne.zip",
             artifactsRoot + "/com.mbeddr.tutorial/com.mbeddr.tutorial.zip",
-            artifactsRoot + "/com.mbeddr.platform.distribution/platform-distribution.zip"/*,
+            artifactsRoot + "/com.mbeddr.platform.distribution/platform-distribution.zip",
             artifactsRoot + "/rcp/Setup.exe",
-            artifactsRoot + "/rcp/mbeddr-macos.dmg"*/
+            artifactsRoot + "/rcp/mbeddr-macos.dmg"
     ]
 }
 
