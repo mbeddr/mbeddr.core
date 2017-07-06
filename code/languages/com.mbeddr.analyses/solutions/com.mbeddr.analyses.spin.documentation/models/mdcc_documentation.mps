@@ -1099,7 +1099,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="ZBFZM$Chmi" role="19SJt6">
-              <property role="19SUeA" value=" is a statement which logs a certain message and optional value in the witness produced by Spin when the assertion fails. Witness logger is translated into &quot;Printf&quot; in Promela. &#10;&#10;Below is an example usage:" />
+              <property role="19SUeA" value=" is a statement which logs a certain message and optional value in the witness produced by Spin when the assertion fails. Message logger is translated into &quot;Printf&quot; in Promela. &#10;&#10;Below is an example usage:" />
             </node>
           </node>
         </node>
@@ -1146,7 +1146,7 @@
         <node concept="1_0LV8" id="7VkE0BpsrfU" role="1_0VJ0">
           <node concept="19SGf9" id="7VkE0BpsrfV" role="1_0LWR">
             <node concept="19SUe$" id="7VkE0BpsrfW" role="19SJt6">
-              <property role="19SUeA" value="MBEDDR provides a set of DSLs to facilitate the description of verification environments as originally developed  in the Model-Driven Code Checking approach described in [1]. From higher-level DSLs for environment description, we generate Promela code which is subsequently compiled by Spin togther with the system under verification (SUV) into a C program. The C program (environment linked witht he SUV) is executed and either assertions are checked or the code is checked for undefined behavior as instrumented by the CLANG (experimental)." />
+              <property role="19SUeA" value="MBEDDR provides a set of DSLs to facilitate the description of verification environments [2] as originally developed  in the Model-Driven Code Checking approach described in [1]. From higher-level DSLs for environment description, we generate Promela code which is subsequently compiled by Spin togther with the system under verification (SUV) into a C program. The C program (environment linked witht he SUV) is executed and either assertions are checked or the code is checked for undefined behavior as instrumented by the CLANG (experimental)." />
             </node>
           </node>
         </node>
@@ -1166,6 +1166,25 @@
                 </node>
                 <node concept="19SUe$" id="7VkE0BpsrgN" role="19SJt6">
                   <property role="19SUeA" value=", Automated Software Engineering, 2008" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="ZBFZM$CM0m" role="3Xp5NH">
+            <node concept="OjmMv" id="ZBFZM$CM0n" role="3X6T9h">
+              <node concept="19SGf9" id="ZBFZM$CM0o" role="OjmMu">
+                <node concept="19SUe$" id="ZBFZM$CM0p" role="19SJt6">
+                  <property role="19SUeA" value="[2] D. Ratiu, A. Ulrich, " />
+                </node>
+                <node concept="28N2ik" id="ZBFZM$CM0B" role="19SJt6">
+                  <node concept="19SGf9" id="ZBFZM$CM0C" role="$DsGW">
+                    <node concept="19SUe$" id="ZBFZM$CM0D" role="19SJt6">
+                      <property role="19SUeA" value="Increasing Usability of Spin-based C Code Verification Using a Harness Definition Language" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="ZBFZM$CM0A" role="19SJt6">
+                  <property role="19SUeA" value=", 24th International SPIN Symposium on Model Checking of Software, 2017" />
                 </node>
               </node>
             </node>
