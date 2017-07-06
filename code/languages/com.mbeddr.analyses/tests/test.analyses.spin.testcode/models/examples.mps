@@ -244,7 +244,7 @@
       </concept>
     </language>
     <language id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin">
-      <concept id="3854501276819165429" name="com.mbeddr.analyses.spin.structure.AssertionsAnalysis" flags="ng" index="apm28" />
+      <concept id="3854501276819165429" name="com.mbeddr.analyses.spin.structure.AssertionsSpinAnalysis" flags="ng" index="apm28" />
       <concept id="3854501276819366674" name="com.mbeddr.analyses.spin.structure.SpinBasedAnalysis" flags="ng" index="ap_dJ">
         <reference id="3854501276819165457" name="env" index="apm5G" />
       </concept>
@@ -3006,7 +3006,7 @@
         <node concept="1hRGTU" id="1BFQdmKcaGn" role="3XIRFZ">
           <node concept="1hKoE2" id="1BFQdmKcaGq" role="1hRGTw">
             <property role="TrG5h" value="bitIdx" />
-            <node concept="1N1tGC" id="3Gj8GGYtVMm" role="2C2TGm">
+            <node concept="26Vqp4" id="ZBFZM$EQuC" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
