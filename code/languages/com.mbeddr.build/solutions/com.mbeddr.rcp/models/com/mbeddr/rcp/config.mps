@@ -180,7 +180,6 @@
       <concept id="3885435385580582152" name="jetbrains.mps.build.startup.structure.MpsStartupScript" flags="ng" index="26EafH">
         <property id="3885435385580582155" name="startupFolder" index="26EafI" />
         <property id="3885435385580631186" name="startupClass" index="26FY9R" />
-        <reference id="3505522814897007561" name="branding" index="1_kbm$" />
         <child id="3885435385580582696" name="bootClasspath" index="26Ea7d" />
         <child id="3885435385580627556" name="vmOptions" index="26FZ21" />
         <child id="2693344784283221851" name="vmOptions64" index="2hID6k" />
@@ -2946,7 +2945,6 @@
     <property role="TrG5h" value="mbeddr" />
     <property role="3GE5qa" value="ide" />
     <property role="26EafI" value="bin" />
-    <ref role="1_kbm$" node="1BPeV_LjXsL" resolve="mbeddr" />
     <node concept="26Ea6D" id="2lwFGYOW7EY" role="2hID6k">
       <property role="26Ea6C" value="-client -Xss1024k -ea -Xmx2048m -XX:MaxPermSize=350m -XX:NewSize=256m -XX:+HeapDumpOnOutOfMemoryError -Xverify:none" />
     </node>
