@@ -321,7 +321,7 @@
         <node concept="3cpWs6" id="7ZWgXq7GN39" role="3cqZAp">
           <node concept="2OqwBi" id="7ZWgXq7GN83" role="3cqZAk">
             <node concept="BsUDl" id="7ZWgXq7GN84" role="2Oq$k0">
-              <ref role="37wK5l" node="2S2eLhiM$ey" resolve="getParticipantInfo" />
+              <ref role="37wK5l" node="2S2eLhiM$ey" resolve="getValueHolderInfo" />
             </node>
             <node concept="liA8E" id="7ZWgXq7GN85" role="2OqNvi">
               <ref role="37wK5l" to="hz0z:7ZWgXq7GgbF" resolve="getValue" />
@@ -356,7 +356,7 @@
         <node concept="3cpWs6" id="QuEk0ZLOam" role="3cqZAp">
           <node concept="2OqwBi" id="QuEk0ZLOan" role="3cqZAk">
             <node concept="BsUDl" id="QuEk0ZLOao" role="2Oq$k0">
-              <ref role="37wK5l" node="2S2eLhiM$ey" resolve="getParticipantInfo" />
+              <ref role="37wK5l" node="2S2eLhiM$ey" resolve="getValueHolderInfo" />
             </node>
             <node concept="liA8E" id="QuEk0ZLOCl" role="2OqNvi">
               <ref role="37wK5l" to="hz0z:QuEk0ZLA6V" resolve="hasCycle" />
@@ -400,7 +400,7 @@
         <node concept="3cpWs6" id="5YITc37RtxM" role="3cqZAp">
           <node concept="2OqwBi" id="5YITc37RtDN" role="3cqZAk">
             <node concept="BsUDl" id="5YITc37Rtyc" role="2Oq$k0">
-              <ref role="37wK5l" node="2S2eLhiM$ey" resolve="getParticipantInfo" />
+              <ref role="37wK5l" node="2S2eLhiM$ey" resolve="getValueHolderInfo" />
             </node>
             <node concept="liA8E" id="5YITc37RtVI" role="2OqNvi">
               <ref role="37wK5l" to="hz0z:5YITc37R7fZ" resolve="getAllCycles" />
@@ -419,7 +419,7 @@
     <node concept="13i0hz" id="2S2eLhiM$ey" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getParticipantInfo" />
+      <property role="TrG5h" value="getValueHolderInfo" />
       <node concept="3uibUv" id="2S2eLhiM$hX" role="3clF45">
         <ref role="3uigEE" to="hz0z:2S2eLhiM$hD" resolve="ValueHolderInfo" />
       </node>
@@ -515,12 +515,12 @@
       <node concept="P$JXv" id="lNBnHjW_VL" role="lGtFl">
         <node concept="TZ5HA" id="lNBnHjW_VM" role="TZ5H$">
           <node concept="1dT_AC" id="lNBnHjW_VN" role="1dT_Ay">
-            <property role="1dT_AB" value="ParticipantInfo stored as UserObjects contains the cached information." />
+            <property role="1dT_AB" value="ValueHolderInfo is stored as UserObjects and contains the cached information." />
           </node>
         </node>
         <node concept="TZ5HA" id="lNBnHjWB_J" role="TZ5H$">
           <node concept="1dT_AC" id="lNBnHjWB_K" role="1dT_Ay">
-            <property role="1dT_AB" value="Users should not use this method or the returned object directly." />
+            <property role="1dT_AB" value="Not intended to be used by clients directly." />
           </node>
         </node>
       </node>
