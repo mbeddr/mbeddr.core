@@ -287,6 +287,52 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1BFQdmKfGOs" role="jymVt" />
+    <node concept="2YIFZL" id="27Rmdm_vVzK" role="jymVt">
+      <property role="TrG5h" value="nameOfForEachIdxVariable" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="27Rmdm_vVzN" role="3clF47">
+        <node concept="3clFbF" id="27Rmdm_vYfr" role="3cqZAp">
+          <node concept="3cpWs3" id="27Rmdm_w0_3" role="3clFbG">
+            <node concept="2OqwBi" id="27Rmdm_vZzw" role="3uHU7B">
+              <node concept="2OqwBi" id="27Rmdm_vYwK" role="2Oq$k0">
+                <node concept="37vLTw" id="27Rmdm_vYfp" role="2Oq$k0">
+                  <ref role="3cqZAo" node="27Rmdm_vV$X" resolve="fes" />
+                </node>
+                <node concept="3TrEf2" id="27Rmdm_vYW2" role="2OqNvi">
+                  <ref role="3Tt5mk" to="llb3:5RNtn4cbrGh" resolve="iter" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="27Rmdm_w03o" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="27Rmdm_vX1l" role="3uHU7w">
+              <node concept="2JrnkZ" id="27Rmdm_vWSd" role="2Oq$k0">
+                <node concept="37vLTw" id="27Rmdm_vVCJ" role="2JrQYb">
+                  <ref role="3cqZAo" node="27Rmdm_vV$X" resolve="fes" />
+                </node>
+              </node>
+              <node concept="liA8E" id="27Rmdm_vYbh" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="27Rmdm_vVyv" role="1B3o_S" />
+      <node concept="17QB3L" id="27Rmdm_vVzB" role="3clF45" />
+      <node concept="37vLTG" id="27Rmdm_vV$X" role="3clF46">
+        <property role="TrG5h" value="fes" />
+        <node concept="3Tqbb2" id="27Rmdm_vV$W" role="1tU5fm">
+          <ref role="ehGHo" to="llb3:5RNtn4cbrGb" resolve="ForEachStatement" />
+        </node>
+      </node>
+      <node concept="NWlO9" id="27Rmdm_vV_M" role="lGtFl">
+        <property role="NWlVz" value="Returns the name of the variable generated from the index of the ForEachStatement." />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5hi7ucOvrGt">
     <property role="TrG5h" value="AccessToCCodeUtils" />
