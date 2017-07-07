@@ -7,7 +7,6 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
@@ -3455,7 +3454,7 @@
       <node concept="P$JXv" id="2_5DHynLhhj" role="lGtFl">
         <node concept="TZ5HA" id="2_5DHynLhhk" role="TZ5H$">
           <node concept="1dT_AC" id="2_5DHynLhhl" role="1dT_Ay">
-            <property role="1dT_AB" value="not intended to be used by clients" />
+            <property role="1dT_AB" value="not intended to be used by clients, wipes ALL cache information" />
           </node>
         </node>
       </node>
@@ -3566,9 +3565,17 @@
         </node>
       </node>
       <node concept="P$JXv" id="2_5DHynK79m" role="lGtFl">
-        <node concept="TZ5HA" id="2_5DHynK79n" role="TZ5H$">
+        <node concept="TZ5HA" id="Fl0f2d3zyR" role="TZ5H$">
+          <node concept="1dT_AC" id="Fl0f2d3zyS" role="1dT_Ay">
+            <property role="1dT_AB" value="may be used by clients to invalidate one part of the cached information but have no opportunity to access affected instances (e.g. invalidation must be triggered from some external context)" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="Fl0f2d3zFv" role="TZ5H$">
           <node concept="1dT_AC" id="2_5DHynK79o" role="1dT_Ay">
-            <property role="1dT_AB" value="last resort for clients that need to invalidate cached information but have not opportunity to access affected instance(s), e.g. invalidation triggered by some external context" />
+            <property role="1dT_AB" value="last resort only!" />
+          </node>
+          <node concept="1dT_AC" id="Fl0f2d3zFw" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
           </node>
         </node>
       </node>
