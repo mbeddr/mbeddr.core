@@ -455,12 +455,6 @@
     <property role="yApLE" value="4" />
     <property role="TrG5h" value="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
     <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
-    <node concept="1_1sxE" id="7VkE0Bpq0Qy" role="1_0VJ0">
-      <property role="TrG5h" value="empty_-1" />
-    </node>
-    <node concept="1_1sxE" id="7VkE0Bpq0Rj" role="1_0VJ0">
-      <property role="TrG5h" value="empty_-1" />
-    </node>
     <node concept="1mvXsy" id="7VkE0Bpq0Rk" role="1_0VJ0">
       <property role="TrG5h" value="HarnessDeclarations" />
       <property role="1_0VJr" value="Describing the Environment Variables" />
@@ -668,12 +662,107 @@
                 <node concept="2vpllh" id="7VkE0Bpq5lU" role="19SJt6">
                   <node concept="19SGf9" id="7VkE0Bpq5lV" role="$DsGW">
                     <node concept="19SUe$" id="7VkE0Bpq5lW" role="19SJt6">
-                      <property role="19SUeA" value="nondet_choice" />
+                      <property role="19SUeA" value="nondet_choice: choice #1: { ... } choice #2: { ... }" />
                     </node>
                   </node>
                 </node>
                 <node concept="19SUe$" id="7VkE0Bpq5lX" role="19SJt6">
                   <property role="19SUeA" value=" performs nondeterministic execution of a set of choices" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="27Rmdm_vikJ" role="3Xp5NH">
+            <node concept="OjmMv" id="27Rmdm_vilf" role="3X6T9h">
+              <node concept="19SGf9" id="27Rmdm_vilg" role="OjmMu">
+                <node concept="19SUe$" id="27Rmdm_vilh" role="19SJt6">
+                  <property role="19SUeA" value="" />
+                </node>
+                <node concept="2vpllh" id="27Rmdm_vili" role="19SJt6">
+                  <node concept="19SGf9" id="27Rmdm_vilj" role="$DsGW">
+                    <node concept="19SUe$" id="27Rmdm_vilk" role="19SJt6">
+                      <property role="19SUeA" value="multi_step(CONST) { BODY }" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="27Rmdm_vill" role="19SJt6">
+                  <property role="19SUeA" value=" for performing multi-step verification" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="27Rmdm_vimH" role="3Xp5NH">
+            <node concept="OjmMv" id="27Rmdm_vint" role="3X6T9h">
+              <node concept="19SGf9" id="27Rmdm_vinu" role="OjmMu">
+                <node concept="19SUe$" id="27Rmdm_vinv" role="19SJt6">
+                  <property role="19SUeA" value="" />
+                </node>
+                <node concept="2vpllh" id="27Rmdm_vinw" role="19SJt6">
+                  <node concept="19SGf9" id="27Rmdm_vinx" role="$DsGW">
+                    <node concept="19SUe$" id="27Rmdm_viny" role="19SJt6">
+                      <property role="19SUeA" value="witness_logger(VAR, VAL?)" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="27Rmdm_vinz" role="19SJt6">
+                  <property role="19SUeA" value=" for logging the value of a variable in the witness" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="27Rmdm_vinF" role="3Xp5NH">
+            <node concept="OjmMv" id="27Rmdm_vinG" role="3X6T9h">
+              <node concept="19SGf9" id="27Rmdm_vinH" role="OjmMu">
+                <node concept="19SUe$" id="27Rmdm_vinI" role="19SJt6">
+                  <property role="19SUeA" value="" />
+                </node>
+                <node concept="2vpllh" id="27Rmdm_vinJ" role="19SJt6">
+                  <node concept="19SGf9" id="27Rmdm_vinK" role="$DsGW">
+                    <node concept="19SUe$" id="27Rmdm_vinL" role="19SJt6">
+                      <property role="19SUeA" value="message_logger(msg_string, val?)" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="27Rmdm_vinM" role="19SJt6">
+                  <property role="19SUeA" value=" for logging a message in the witness" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="27Rmdm_vip$" role="3Xp5NH">
+            <node concept="OjmMv" id="27Rmdm_vip_" role="3X6T9h">
+              <node concept="19SGf9" id="27Rmdm_vipA" role="OjmMu">
+                <node concept="19SUe$" id="27Rmdm_vipB" role="19SJt6">
+                  <property role="19SUeA" value="" />
+                </node>
+                <node concept="2vpllh" id="27Rmdm_vipC" role="19SJt6">
+                  <node concept="19SGf9" id="27Rmdm_vipD" role="$DsGW">
+                    <node concept="19SUe$" id="27Rmdm_vipE" role="19SJt6">
+                      <property role="19SUeA" value="foreach(idx : RANGE) { BODY }" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="27Rmdm_vipF" role="19SJt6">
+                  <property role="19SUeA" value=" performs the BODY in a loop" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="27Rmdm_vilt" role="3Xp5NH">
+            <node concept="OjmMv" id="27Rmdm_vim5" role="3X6T9h">
+              <node concept="19SGf9" id="27Rmdm_vim6" role="OjmMu">
+                <node concept="19SUe$" id="27Rmdm_vim7" role="19SJt6">
+                  <property role="19SUeA" value="" />
+                </node>
+                <node concept="2vpllh" id="27Rmdm_vim8" role="19SJt6">
+                  <node concept="19SGf9" id="27Rmdm_vim9" role="$DsGW">
+                    <node concept="19SUe$" id="27Rmdm_vima" role="19SJt6">
+                      <property role="19SUeA" value="assert(EXP)" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="27Rmdm_vimb" role="19SJt6">
+                  <property role="19SUeA" value=" asserts that EXP is true. If not, Spin will produce a witness" />
                 </node>
               </node>
             </node>
@@ -1120,6 +1209,69 @@
       </node>
       <node concept="1_1sxE" id="ZBFZM$Chj3" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="27Rmdm_vjj0" role="1_0VJ0">
+        <property role="TrG5h" value="ForEach" />
+        <property role="1_0VJr" value="ForEach Statement" />
+        <node concept="1_0LV8" id="27Rmdm_vjj1" role="1_0VJ0">
+          <node concept="19SGf9" id="27Rmdm_vjj2" role="1_0LWR">
+            <node concept="19SUe$" id="27Rmdm_vjj3" role="19SJt6" />
+            <node concept="2vpllh" id="27Rmdm_vjj4" role="19SJt6">
+              <node concept="19SGf9" id="27Rmdm_vjj5" role="$DsGW">
+                <node concept="19SUe$" id="27Rmdm_vjj6" role="19SJt6">
+                  <property role="19SUeA" value="foreach(idx : RANGE) { BODY }" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="27Rmdm_vjj7" role="19SJt6">
+              <property role="19SUeA" value=" executes BODY in a loop. &#10;&#10;Below is an example usage:" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="27Rmdm_vjj8" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="27Rmdm_vjj9" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="27Rmdm_vjja" role="3z_lpI">
+            <node concept="2NCMab" id="27Rmdm_vpc0" role="2NCMaf">
+              <ref role="2NCMaa" to="dx12:27Rmdm_vjnn" resolve="_048_harness_foreach" />
+            </node>
+          </node>
+        </node>
+        <node concept="3n9NSn" id="27Rmdm_vjjc" role="lGtFl">
+          <ref role="3nadW_" to="llb3:5RNtn4cbrGb" resolve="ForEachStatement" />
+        </node>
+      </node>
+      <node concept="1_1sxE" id="27Rmdm_vjf2" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="63DPgoN4zrK" role="1_0VJ0">
+        <property role="TrG5h" value="Assume" />
+        <property role="1_0VJr" value="Assume Statement" />
+        <node concept="1_0LV8" id="63DPgoN4zw9" role="1_0VJ0">
+          <node concept="19SGf9" id="63DPgoN4zwa" role="1_0LWR">
+            <node concept="19SUe$" id="63DPgoN4zwb" role="19SJt6" />
+            <node concept="2vpllh" id="63DPgoN4zwc" role="19SJt6">
+              <node concept="19SGf9" id="63DPgoN4zwd" role="$DsGW">
+                <node concept="19SUe$" id="63DPgoN4zwe" role="19SJt6">
+                  <property role="19SUeA" value="assume(EXP);" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="63DPgoN4zwf" role="19SJt6">
+              <property role="19SUeA" value=" executes the subsequent statements only if the EXP evaluates to true. If not, then a backtracking step is enforced. &#10;&#10;Below is an example usage:&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpU" id="63DPgoN62Vc" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="63DPgoN62Vd" role="3z_lpI">
+            <node concept="2NCMab" id="63DPgoN62Vo" role="2NCMaf">
+              <ref role="2NCMaa" to="dx12:63DPgoN4zwn" resolve="_049_harness_assume" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1_1sxE" id="7VkE0Bpq5o8" role="1_0VJ0">
