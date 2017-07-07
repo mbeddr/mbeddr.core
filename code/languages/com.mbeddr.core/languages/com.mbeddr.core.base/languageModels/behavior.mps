@@ -11631,6 +11631,60 @@
                                     </node>
                                   </node>
                                 </node>
+                                <node concept="3clFbF" id="7VuYlCRUL7a" role="3cqZAp">
+                                  <node concept="2OqwBi" id="7VuYlCRULHU" role="3clFbG">
+                                    <node concept="37vLTw" id="7VuYlCRUL78" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="5Pb2U$k6TOy" resolve="g" />
+                                    </node>
+                                    <node concept="liA8E" id="7VuYlCRUMq_" role="2OqNvi">
+                                      <ref role="37wK5l" to="z60i:~Graphics2D.setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object):void" resolve="setRenderingHint" />
+                                      <node concept="10M0yZ" id="7VuYlCRUQmz" role="37wK5m">
+                                        <ref role="3cqZAo" to="z60i:~RenderingHints.KEY_TEXT_ANTIALIASING" resolve="KEY_TEXT_ANTIALIASING" />
+                                        <ref role="1PxDUh" to="z60i:~RenderingHints" resolve="RenderingHints" />
+                                      </node>
+                                      <node concept="10M0yZ" id="7VuYlCRUYdo" role="37wK5m">
+                                        <ref role="3cqZAo" to="z60i:~RenderingHints.VALUE_TEXT_ANTIALIAS_ON" resolve="VALUE_TEXT_ANTIALIAS_ON" />
+                                        <ref role="1PxDUh" to="z60i:~RenderingHints" resolve="RenderingHints" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbF" id="7VuYlCRV0Ya" role="3cqZAp">
+                                  <node concept="2OqwBi" id="7VuYlCRV0Yb" role="3clFbG">
+                                    <node concept="37vLTw" id="7VuYlCRV0Yc" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="5Pb2U$k6TOy" resolve="g" />
+                                    </node>
+                                    <node concept="liA8E" id="7VuYlCRV0Yd" role="2OqNvi">
+                                      <ref role="37wK5l" to="z60i:~Graphics2D.setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object):void" resolve="setRenderingHint" />
+                                      <node concept="10M0yZ" id="7VuYlCRV4up" role="37wK5m">
+                                        <ref role="3cqZAo" to="z60i:~RenderingHints.KEY_ANTIALIASING" resolve="KEY_ANTIALIASING" />
+                                        <ref role="1PxDUh" to="z60i:~RenderingHints" resolve="RenderingHints" />
+                                      </node>
+                                      <node concept="10M0yZ" id="7VuYlCRVahB" role="37wK5m">
+                                        <ref role="3cqZAo" to="z60i:~RenderingHints.VALUE_ANTIALIAS_ON" resolve="VALUE_ANTIALIAS_ON" />
+                                        <ref role="1PxDUh" to="z60i:~RenderingHints" resolve="RenderingHints" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbF" id="7VuYlCRV2Dk" role="3cqZAp">
+                                  <node concept="2OqwBi" id="7VuYlCRV2Dl" role="3clFbG">
+                                    <node concept="37vLTw" id="7VuYlCRV2Dm" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="5Pb2U$k6TOy" resolve="g" />
+                                    </node>
+                                    <node concept="liA8E" id="7VuYlCRV2Dn" role="2OqNvi">
+                                      <ref role="37wK5l" to="z60i:~Graphics2D.setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object):void" resolve="setRenderingHint" />
+                                      <node concept="10M0yZ" id="7VuYlCRV7pS" role="37wK5m">
+                                        <ref role="3cqZAo" to="z60i:~RenderingHints.KEY_RENDERING" resolve="KEY_RENDERING" />
+                                        <ref role="1PxDUh" to="z60i:~RenderingHints" resolve="RenderingHints" />
+                                      </node>
+                                      <node concept="10M0yZ" id="7VuYlCRVd9p" role="37wK5m">
+                                        <ref role="3cqZAo" to="z60i:~RenderingHints.VALUE_RENDER_QUALITY" resolve="VALUE_RENDER_QUALITY" />
+                                        <ref role="1PxDUh" to="z60i:~RenderingHints" resolve="RenderingHints" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
                                 <node concept="3clFbF" id="5Pb2U$k6TOB" role="3cqZAp">
                                   <node concept="2OqwBi" id="5Pb2U$k6TOC" role="3clFbG">
                                     <node concept="37vLTw" id="5Pb2U$k6TOD" role="2Oq$k0">

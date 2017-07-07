@@ -2,12 +2,10 @@
 <model ref="r:0208d9e1-21da-425a-be52-ba0982761ebd(robustness_spin)">
   <persistence version="9" />
   <languages>
-    <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="537c2fcd-71ef-4c92-a9e5-27af92b5182b(com.mbeddr.analyses.spin.mdcc)" />
-    <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
+    <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
-    <import index="ml7g" ref="r:390a5909-c09f-4e14-a3b3-7c642512a1a5(com.mbeddr.core.sys)" />
     <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
   </imports>
   <registry>
@@ -48,25 +46,6 @@
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
     </language>
-    <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
-      <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
-        <property id="348741627183644680" name="hasLocalArchitectureSettings" index="22uFEx" />
-        <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
-        <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
-        <property id="8327535879610783118" name="hasLocalTimeout" index="2l50Lc" />
-        <property id="8327535879610783060" name="sliceFormula" index="2l50Mm" />
-        <property id="8327535879613056020" name="hasLocalCbmcSettings" index="2lelRm" />
-        <property id="8327535879610145579" name="analysisDepth" index="2lUGbD" />
-        <property id="8327535879610145521" name="useRefinement" index="2lUGcN" />
-        <property id="8327535879610145463" name="partialLoops" index="2lUGdP" />
-        <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
-        <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
-        <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
-        <property id="8445711190801184380" name="hasPreprocessorMacroSettings" index="3u2WvC" />
-        <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
-      </concept>
-      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
-    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -91,6 +70,7 @@
         <reference id="3854501276819165457" name="env" index="apm5G" />
       </concept>
       <concept id="2197773122553726593" name="com.mbeddr.analyses.spin.structure.RobustnessSpinAnalysis" flags="ng" index="2$dOA3" />
+      <concept id="4991147424355254761" name="com.mbeddr.analyses.spin.structure.SpinAnalysisConfigurationContainer" flags="ng" index="B2hZa" />
       <concept id="9065467049586938195" name="com.mbeddr.analyses.spin.structure.SpinExecutable" flags="ng" index="1gr5cj" />
       <concept id="9065467049586938196" name="com.mbeddr.analyses.spin.structure.SpinPlatform" flags="ng" index="1gr5ck">
         <property id="9065467049586938197" name="compiler" index="1gr5cl" />
@@ -354,22 +334,8 @@
       <property role="1gr5cn" value="make" />
     </node>
   </node>
-  <node concept="3uEX16" id="70fpbbgzyxn">
-    <property role="2lelRm" value="false" />
-    <property role="2lUGe1" value="true" />
-    <property role="2l50Lc" value="false" />
-    <property role="22uFEx" value="false" />
-    <property role="1Bxwel" value="false" />
-    <property role="3u2WvC" value="false" />
-    <property role="2l50Ka" value="none" />
-    <property role="2l50Km" value="none" />
-    <property role="2lUGeZ" value="true" />
-    <property role="2lUGdP" value="false" />
-    <property role="2lUHrg" value="25" />
-    <property role="2lUGbD" value="none" />
-    <property role="2lUGcN" value="false" />
-    <property role="2l50Mm" value="false" />
-    <property role="TrG5h" value="analysis_config" />
+  <node concept="B2hZa" id="4l47ydyqyvn">
+    <property role="TrG5h" value="analyses_configs" />
     <node concept="2$dOA3" id="5uY69zuWRFU" role="3V$2$K">
       <property role="3SeVAx" value="true" />
       <ref role="apm5G" node="70fpbbgzxMo" resolve="_010_overflow_harness" />

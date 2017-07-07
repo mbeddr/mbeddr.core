@@ -9,6 +9,7 @@
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
   </imports>
   <registry>
@@ -27,6 +28,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -55,6 +57,7 @@
     <property role="TrG5h" value="AssertionsSpinAnalysis" />
     <property role="34LRSv" value="Spin Assertions Analysis" />
     <property role="EcuMT" value="3854501276819165429" />
+    <property role="3GE5qa" value="configs" />
     <ref role="1TJDcQ" node="3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
   </node>
   <node concept="PlHQZ" id="3lXW7OZ6IbN">
@@ -71,6 +74,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="3854501276819366674" />
+    <property role="3GE5qa" value="configs" />
     <ref role="1TJDcQ" to="q46j:5BkFC2yh8uL" resolve="Analysis" />
     <node concept="1TJgyj" id="3lXW7OZ694h" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -135,7 +139,20 @@
     <property role="EcuMT" value="2197773122553726593" />
     <property role="TrG5h" value="RobustnessSpinAnalysis" />
     <property role="34LRSv" value="Spin Robustness Analysis" />
+    <property role="3GE5qa" value="configs" />
     <ref role="1TJDcQ" node="3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
+  </node>
+  <node concept="1TIwiD" id="4l47ydyjg7D">
+    <property role="EcuMT" value="4991147424355254761" />
+    <property role="TrG5h" value="SpinAnalysisConfigurationContainer" />
+    <property role="34LRSv" value="Analyses Configurations Container (Spin)" />
+    <property role="3GE5qa" value="configs" />
+    <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="container for Spin-based analyses configurations" />
+    <ref role="1TJDcQ" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
+    <node concept="PrWs8" id="4l47ydypQBQ" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
+    </node>
   </node>
 </model>
 

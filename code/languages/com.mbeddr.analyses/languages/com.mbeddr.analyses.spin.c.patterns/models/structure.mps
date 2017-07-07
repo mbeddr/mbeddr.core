@@ -11,7 +11,7 @@
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="ir22" ref="r:f7aadd1f-58b5-46f2-bd42-e7f922dcc16e(com.mbeddr.analyses.spin.promela.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
@@ -70,6 +70,7 @@
     <property role="34LRSv" value="nondet_assign" />
     <property role="EcuMT" value="4708346905221050110" />
     <property role="3GE5qa" value="harness.assign" />
+    <property role="R4oN_" value="nondet_assign(VAR, (VALS)?)" />
     <ref role="1TJDcQ" node="1BFQdmKfJHu" resolve="AbstractAssign" />
     <node concept="1TJgyj" id="4ATA_JBp19m" role="1TKVEi">
       <property role="IQ2ns" value="5312446954975007318" />
@@ -109,6 +110,7 @@
     <property role="3GE5qa" value="top_level" />
     <property role="TrG5h" value="HarnessCode" />
     <property role="34LRSv" value="harness" />
+    <property role="R4oN_" value="harness code" />
     <ref role="1TJDcQ" to="ir22:GpUw9S5_Xd" resolve="ProcType" />
   </node>
   <node concept="1TIwiD" id="6fP9ZN5Cubd">
@@ -161,6 +163,7 @@
     <property role="3GE5qa" value="harness.choice" />
     <property role="TrG5h" value="NondetChoice" />
     <property role="34LRSv" value="nondet choice" />
+    <property role="R4oN_" value="nondet choice: #1 when COND { ... }; #2 when ..." />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="5hi7ucOryXA" role="1TKVEi">
       <property role="IQ2ns" value="6075951708950638438" />
@@ -184,6 +187,7 @@
     <property role="EcuMT" value="6075951708950638372" />
     <property role="3GE5qa" value="harness.choice" />
     <property role="TrG5h" value="SingleChoice" />
+    <property role="34LRSv" value="single choice" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5hi7ucOryW_" role="1TKVEi">
       <property role="IQ2ns" value="6075951708950638373" />
@@ -239,6 +243,7 @@
     <property role="3GE5qa" value="harness.assign" />
     <property role="TrG5h" value="RandomAssign" />
     <property role="34LRSv" value="random_assign" />
+    <property role="R4oN_" value="nondet_assign(VAR, RANGE) : TIMES" />
     <ref role="1TJDcQ" node="1BFQdmKfJHu" resolve="AbstractAssign" />
     <node concept="1TJgyj" id="1BFQdmKfv_L" role="1TKVEi">
       <property role="IQ2ns" value="1867824882771687793" />
@@ -268,6 +273,7 @@
     <property role="3GE5qa" value="harness.assign" />
     <property role="TrG5h" value="DiscreteValuesExpression" />
     <property role="34LRSv" value="{" />
+    <property role="R4oN_" value="discrete values - e.g. {a, b, c}" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="1BFQdmJZZA3" role="1TKVEi">
       <property role="IQ2ns" value="1867824882767624579" />
