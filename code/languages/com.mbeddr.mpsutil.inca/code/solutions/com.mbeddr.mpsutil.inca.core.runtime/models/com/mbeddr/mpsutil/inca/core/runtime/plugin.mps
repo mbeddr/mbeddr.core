@@ -16259,25 +16259,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1Wcd$PdGRSQ" role="3cqZAp" />
-        <node concept="3clFbF" id="1Wcd$PdGS2H" role="3cqZAp">
-          <node concept="37vLTI" id="1Wcd$PdGVov" role="3clFbG">
-            <node concept="2ShNRf" id="1Wcd$PdGVwV" role="37vLTx">
-              <node concept="1pGfFk" id="1Wcd$PdGXQc" role="2ShVmc">
-                <ref role="37wK5l" to="33ny:~HashSet.&lt;init&gt;()" resolve="HashSet" />
-                <node concept="3uibUv" id="1Wcd$PdGY_O" role="1pMfVU">
-                  <ref role="3uigEE" to="qtrc:~Network" resolve="Network" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="1Wcd$PdGTtA" role="37vLTJ">
-              <node concept="Xjq3P" id="1Wcd$PdGS2F" role="2Oq$k0" />
-              <node concept="2OwXpG" id="1Wcd$PdGTRj" role="2OqNvi">
-                <ref role="2Oxat5" node="1Wcd$PdGEqS" resolve="tracingNetworks" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="4ZRA7oukeuR" role="3cqZAp" />
         <node concept="3clFbF" id="26S5csTe7jD" role="3cqZAp">
           <node concept="37vLTI" id="26S5csTe7jE" role="3clFbG">
@@ -19783,96 +19764,6 @@
       <node concept="3cqZAl" id="5VMWdq5WuDK" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="5VMWdq5xRT0" role="jymVt" />
-    <node concept="3clFb_" id="6_du9upO6fW" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="restartTracing" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="6_du9upO6fZ" role="3clF47">
-        <node concept="3cpWs8" id="6_du9upOhS0" role="3cqZAp">
-          <node concept="3cpWsn" id="6_du9upOhS1" role="3cpWs9">
-            <property role="TrG5h" value="tracingNetworks" />
-            <node concept="3uibUv" id="6_du9upOhS2" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-              <node concept="3uibUv" id="6_du9upOhS3" role="11_B2D">
-                <ref role="3uigEE" to="qtrc:~Network" resolve="Network" />
-              </node>
-            </node>
-            <node concept="2ShNRf" id="6_du9upOhS4" role="33vP2m">
-              <node concept="1pGfFk" id="6_du9upOhS5" role="2ShVmc">
-                <ref role="37wK5l" to="33ny:~HashSet.&lt;init&gt;()" resolve="HashSet" />
-                <node concept="3uibUv" id="6_du9upOhS6" role="1pMfVU">
-                  <ref role="3uigEE" to="qtrc:~Network" resolve="Network" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2Gpval" id="6_du9upOhS7" role="3cqZAp">
-          <node concept="2GrKxI" id="6_du9upOhS8" role="2Gsz3X">
-            <property role="TrG5h" value="listener" />
-          </node>
-          <node concept="37vLTw" id="6_du9upOhS9" role="2GsD0m">
-            <ref role="3cqZAo" node="6_du9upOkBD" resolve="listeners" />
-          </node>
-          <node concept="3clFbS" id="6_du9upOhSa" role="2LFqv$">
-            <node concept="3clFbF" id="6_du9upOhSb" role="3cqZAp">
-              <node concept="2OqwBi" id="6_du9upOhSc" role="3clFbG">
-                <node concept="37vLTw" id="6_du9upOhSd" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6_du9upOhS1" resolve="tracingNetworks" />
-                </node>
-                <node concept="liA8E" id="6_du9upOhSe" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
-                  <node concept="2OqwBi" id="6_du9upOhSf" role="37wK5m">
-                    <node concept="2GrUjf" id="6_du9upOhSg" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="6_du9upOhS8" resolve="listener" />
-                    </node>
-                    <node concept="liA8E" id="6_du9upOhSh" role="2OqNvi">
-                      <ref role="37wK5l" node="1Wcd$PdFA3O" resolve="getNetwork" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2Gpval" id="6_du9upOhSi" role="3cqZAp">
-          <node concept="2GrKxI" id="6_du9upOhSj" role="2Gsz3X">
-            <property role="TrG5h" value="network" />
-          </node>
-          <node concept="37vLTw" id="6_du9upOhSk" role="2GsD0m">
-            <ref role="3cqZAo" node="6_du9upOhS1" resolve="tracingNetworks" />
-          </node>
-          <node concept="3clFbS" id="6_du9upOhSl" role="2LFqv$">
-            <node concept="3clFbF" id="6_du9upOhSm" role="3cqZAp">
-              <node concept="2OqwBi" id="6_du9upOhSn" role="3clFbG">
-                <node concept="2GrUjf" id="6_du9upOhSo" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="6_du9upOhSj" resolve="network" />
-                </node>
-                <node concept="liA8E" id="6_du9upOhSp" role="2OqNvi">
-                  <ref role="37wK5l" to="qtrc:~Network.restartTracing():void" resolve="restartTracing" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tmbuc" id="6_du9upO4QM" role="1B3o_S" />
-      <node concept="3cqZAl" id="6_du9upO6fT" role="3clF45" />
-      <node concept="37vLTG" id="6_du9upOkBD" role="3clF46">
-        <property role="TrG5h" value="listeners" />
-        <node concept="3uibUv" id="6_du9upOkBC" role="1tU5fm">
-          <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-          <node concept="3qUE_q" id="6_du9upOWfL" role="11_B2D">
-            <node concept="3uibUv" id="6_du9upOYB3" role="3qUE_r">
-              <ref role="3uigEE" node="1Wcd$PdFA1Y" resolve="IChangeListener" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6_du9upNMsA" role="jymVt" />
     <node concept="3clFb_" id="5VMWdq5xRT1" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="notifyInstanceListeners" />
@@ -20249,20 +20140,6 @@
                 <ref role="3cqZAo" node="1gckXeMyQ82" resolve="debugMode" />
               </node>
             </node>
-            <node concept="3clFbH" id="6_du9upP0e3" role="3cqZAp" />
-            <node concept="3SKdUt" id="6_du9upP0um" role="3cqZAp">
-              <node concept="3SKdUq" id="6_du9upP0un" role="3SKWNk">
-                <property role="3SKdUp" value="TODO implement a more efficient way of maintaining the set of Networks that should restart the tracing" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="6_du9upP0uo" role="3cqZAp">
-              <node concept="1rXfSq" id="6_du9upP0up" role="3clFbG">
-                <ref role="37wK5l" node="6_du9upO6fW" resolve="restartTracing" />
-                <node concept="37vLTw" id="6_du9upP0uq" role="37wK5m">
-                  <ref role="3cqZAo" node="5VMWdq698Vi" resolve="listeners" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbH" id="2TRt8GaIOIL" role="3cqZAp" />
             <node concept="2Gpval" id="5VMWdq5xRT_" role="3cqZAp">
               <node concept="2GrKxI" id="5VMWdq5xRTA" role="2Gsz3X">
@@ -20520,20 +20397,6 @@
               <node concept="10M0yZ" id="2QaRsZwbR3A" role="3clFbw">
                 <ref role="1PxDUh" node="2R_7gpXUKQk" resolve="DebugProperties" />
                 <ref role="3cqZAo" node="1gckXeMyQ82" resolve="debugMode" />
-              </node>
-            </node>
-            <node concept="3clFbH" id="6_du9upP1OF" role="3cqZAp" />
-            <node concept="3SKdUt" id="6_du9upP24A" role="3cqZAp">
-              <node concept="3SKdUq" id="6_du9upP24B" role="3SKWNk">
-                <property role="3SKdUp" value="TODO implement a more efficient way of maintaining the set of Networks that should restart the tracing" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="6_du9upP24C" role="3cqZAp">
-              <node concept="1rXfSq" id="6_du9upP24D" role="3clFbG">
-                <ref role="37wK5l" node="6_du9upO6fW" resolve="restartTracing" />
-                <node concept="37vLTw" id="6_du9upP24E" role="37wK5m">
-                  <ref role="3cqZAo" node="5VMWdq69dvL" resolve="listeners" />
-                </node>
               </node>
             </node>
             <node concept="3clFbH" id="2TRt8GaIRL2" role="3cqZAp" />
