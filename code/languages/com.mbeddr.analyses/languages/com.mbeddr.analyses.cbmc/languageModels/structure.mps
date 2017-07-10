@@ -576,8 +576,8 @@
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="CBMCAnalysisConfiguration" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="Analyses Configuration" />
-    <property role="R4oN_" value="an analysis configuration contains multiple analyses" />
+    <property role="34LRSv" value="Analyses Configuration Container (CBMC)" />
+    <property role="R4oN_" value="an analysis configuration container contains multiple analyses" />
     <property role="EcuMT" value="2135612507694884868" />
     <ref role="1TJDcQ" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
     <node concept="PrWs8" id="1Qze4b32ew5" role="PzmwI">
@@ -880,6 +880,28 @@
       <ref role="20lvS9" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
     </node>
   </node>
+  <node concept="1TIwiD" id="60tjEV5P_tq">
+    <property role="EcuMT" value="6925778314516125530" />
+    <property role="3GE5qa" value="cbmc_macros" />
+    <property role="TrG5h" value="CPROVERoutput" />
+    <property role="34LRSv" value="__CPROVER_output" />
+    <property role="R4oN_" value="mark a variable as output for CBMC" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="60tjEV5PKtw" role="1TKVEi">
+      <property role="IQ2ns" value="6925778314516170592" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="60tjEV5PKHX" role="1TKVEi">
+      <property role="IQ2ns" value="6925778314516171645" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="name" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="51BKItOCcGA">
     <property role="EcuMT" value="5793813744985361190" />
     <property role="3GE5qa" value="cbmc_macros.predicates" />
@@ -914,28 +936,6 @@
     <property role="TrG5h" value="CPROVERisfiniteld" />
     <property role="34LRSv" value="__CPROVER_isfiniteld" />
     <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
-  </node>
-  <node concept="1TIwiD" id="60tjEV5P_tq">
-    <property role="EcuMT" value="6925778314516125530" />
-    <property role="3GE5qa" value="cbmc_macros" />
-    <property role="TrG5h" value="CPROVERoutput" />
-    <property role="34LRSv" value="__CPROVER_output" />
-    <property role="R4oN_" value="mark a variable as output for CBMC" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-    <node concept="1TJgyj" id="60tjEV5PKtw" role="1TKVEi">
-      <property role="IQ2ns" value="6925778314516170592" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="60tjEV5PKHX" role="1TKVEi">
-      <property role="IQ2ns" value="6925778314516171645" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="name" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
-    </node>
   </node>
 </model>
 

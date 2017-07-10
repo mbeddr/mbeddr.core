@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e284b773-bba3-4e06-8335-c857c9c6634d(test.analyses.spin.promela.ts.promela_basic@tests)">
+<model ref="r:e284b773-bba3-4e06-8335-c857c9c6634d(test.analyses.spin.ts.promela_basic@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="4" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
-    <use id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
-    <use id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" name="com.mbeddr.mpsutil.jung" version="-1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
-    <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela" version="-1" />
-    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
-    <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
-    <use id="223dd778-c44f-4ef3-9535-7aa7d12244a6" name="com.mbeddr.core.debug" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
+    <use id="f93d1dbe-bfd1-42dd-932a-f375fa6f5373" name="com.mbeddr.core.make" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
+    <use id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" name="com.mbeddr.mpsutil.jung" version="0" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
+    <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="877b0e90-e1a6-4468-970c-dcb3f49f95ed" name="com.mbeddr.analyses.spin.promela" version="0" />
+    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
+    <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="0" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
+    <use id="223dd778-c44f-4ef3-9535-7aa7d12244a6" name="com.mbeddr.core.debug" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="2" />
     <devkit ref="de90e2e8-f051-4d49-9025-394f94f968b8(com.mbeddr.analyses.promela)" />
   </languages>
@@ -201,9 +201,6 @@
     <node concept="1qefOq" id="1RC3LaKzdyq" role="1SKRRt">
       <node concept="1N3YfO" id="1RC3LaKzdyr" role="1qenE9">
         <property role="TrG5h" value="mtype" />
-        <node concept="3xLA65" id="D5Owvn3ulJ" role="lGtFl">
-          <property role="TrG5h" value="only_one_mtype" />
-        </node>
         <node concept="33TspK" id="1RC3LaKzdys" role="N3F5h">
           <property role="TrG5h" value="annonymous" />
           <node concept="33TW6g" id="1RC3LaKzdyt" role="33SbXO">
@@ -242,14 +239,14 @@
             </node>
           </node>
         </node>
+        <node concept="3xLA65" id="D5Owvn3ulJ" role="lGtFl">
+          <property role="TrG5h" value="only_one_mtype" />
+        </node>
       </node>
     </node>
     <node concept="1qefOq" id="1RC3LaKxxDT" role="1SKRRt">
       <node concept="1N3YfO" id="1RC3LaKxxDV" role="1qenE9">
         <property role="TrG5h" value="chan" />
-        <node concept="3xLA65" id="D5Owvn3uxP" role="lGtFl">
-          <property role="TrG5h" value="test2" />
-        </node>
         <node concept="33TspK" id="1RC3LaKzd_2" role="N3F5h">
           <property role="TrG5h" value="mtype" />
           <node concept="33TW6g" id="1RC3LaKzd_4" role="33SbXO">
@@ -262,18 +259,18 @@
         <node concept="2NXPZ9" id="7Hmzdkr18an" role="N3F5h">
           <property role="TrG5h" value="empty_1494697535340_40" />
         </node>
-        <node concept="33SPW3" id="7Hmzdkr17Rc" role="N3F5h">
+        <node concept="33SPW3" id="pq_X7Y7ZYp" role="N3F5h">
           <property role="TrG5h" value="Comm" />
-          <node concept="2CGWmI" id="7Hmzdkr17RW" role="33SPX4">
+          <node concept="3TlMh9" id="pq_X7Y7ZYW" role="25PmdS">
+            <property role="2hmy$m" value="1" />
+          </node>
+          <node concept="2CGWmI" id="pq_X7Y7ZZw" role="33SPX4">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
-          <node concept="3TlMh9" id="_RSgMcGohE" role="25PmdS">
-            <property role="2hmy$m" value="1" />
-          </node>
         </node>
-        <node concept="2NXPZ9" id="7Hmzdkr18b1" role="N3F5h">
-          <property role="TrG5h" value="empty_1494697536255_41" />
+        <node concept="2NXPZ9" id="pq_X7Y7ZXy" role="N3F5h">
+          <property role="TrG5h" value="empty_1497166003538_1" />
         </node>
         <node concept="1N3Vlf" id="1RC3LaK$mQQ" role="N3F5h">
           <property role="TrG5h" value="Sender" />
@@ -283,8 +280,8 @@
           </node>
           <node concept="3XIRFW" id="1RC3LaK$mQS" role="3XIRFX">
             <node concept="33Z$56" id="7Hmzdkr16ot" role="3XIRFZ">
-              <node concept="2CGnA8" id="7Hmzdkr181s" role="33Z$51">
-                <ref role="2CGnA6" node="7Hmzdkr17Rc" resolve="Comm" />
+              <node concept="2CGnA8" id="pq_X7Y80an" role="33Z$51">
+                <ref role="2CGnA6" node="pq_X7Y7ZYp" resolve="Comm" />
               </node>
               <node concept="2Ysn8y" id="7Hmzdkr16py" role="33Z$53">
                 <node concept="33SuoZ" id="7Hmzdkr16pm" role="2Yskys">
@@ -296,8 +293,8 @@
               </node>
             </node>
             <node concept="33ZRtt" id="7Hmzdkr16mW" role="3XIRFZ">
-              <node concept="2CGnA8" id="7Hmzdkr181q" role="33ZRts">
-                <ref role="2CGnA6" node="7Hmzdkr17Rc" resolve="Comm" />
+              <node concept="2CGnA8" id="pq_X7Y80ap" role="33ZRts">
+                <ref role="2CGnA6" node="pq_X7Y7ZYp" resolve="Comm" />
               </node>
               <node concept="33SuoZ" id="7Hmzdkr16nK" role="33ZRtu">
                 <ref role="33SuoY" node="1RC3LaKzd_4" resolve="ACK" />
@@ -307,6 +304,9 @@
         </node>
         <node concept="2NXPZ9" id="1RC3LaK$OSh" role="N3F5h">
           <property role="TrG5h" value="empty_1483948680023_5" />
+        </node>
+        <node concept="3xLA65" id="D5Owvn3uxP" role="lGtFl">
+          <property role="TrG5h" value="test2" />
         </node>
       </node>
     </node>

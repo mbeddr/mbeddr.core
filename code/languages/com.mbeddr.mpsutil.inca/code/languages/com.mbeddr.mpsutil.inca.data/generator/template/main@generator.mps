@@ -3233,14 +3233,14 @@
               <node concept="3cpWsn" id="606mdnYk84p" role="3cpWs9">
                 <property role="TrG5h" value="aggregatedParameter" />
                 <property role="3TUv4t" value="true" />
+                <node concept="3Tqbb2" id="606mdnYk84b" role="1tU5fm">
+                  <ref role="ehGHo" to="hqsm:4IZiQsKumaj" resolve="IParameter" />
+                </node>
                 <node concept="2OqwBi" id="58hSFnxFRnw" role="33vP2m">
                   <node concept="37vLTw" id="58hSFnxFR9s" role="2Oq$k0">
                     <ref role="3cqZAo" node="58hSFnxFjZF" resolve="aggregatedParameters" />
                   </node>
                   <node concept="1uHKPH" id="58hSFnxFR_I" role="2OqNvi" />
-                </node>
-                <node concept="3Tqbb2" id="606mdnYk84b" role="1tU5fm">
-                  <ref role="ehGHo" to="hqsm:4IZiQsKumaj" resolve="IParameter" />
                 </node>
               </node>
             </node>
@@ -3878,6 +3878,7 @@
               </node>
               <node concept="3clFbH" id="606mdnYrFcR" role="3cqZAp" />
               <node concept="3clFbF" id="606mdnYrGaa" role="3cqZAp">
+                <node concept="raruj" id="2pUgrtokWOm" role="lGtFl" />
                 <node concept="2ShNRf" id="606mdnYrGa6" role="3clFbG">
                   <node concept="1pGfFk" id="606mdnYrI8W" role="2ShVmc">
                     <ref role="37wK5l" to="1wlx:~AggregatorConstraint.&lt;init&gt;(org.eclipse.viatra.query.runtime.matchers.psystem.aggregations.BoundAggregator,org.eclipse.viatra.query.runtime.matchers.psystem.PBody,org.eclipse.viatra.query.runtime.matchers.tuple.Tuple,org.eclipse.viatra.query.runtime.matchers.psystem.queries.PQuery,org.eclipse.viatra.query.runtime.matchers.psystem.PVariable,int)" resolve="AggregatorConstraint" />
@@ -4728,7 +4729,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="raruj" id="606mdnYrKSC" role="lGtFl" />
               </node>
             </node>
             <node concept="3Tm1VV" id="606mdnYpwlt" role="1B3o_S" />

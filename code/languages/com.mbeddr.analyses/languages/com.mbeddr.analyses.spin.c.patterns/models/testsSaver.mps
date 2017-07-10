@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:8d555d77-fd50-40fa-ac6f-2c3435f35b35(com.mbeddr.analyses.spin.c.patterns.testsSaver)">
+<model ref="r:8d555d77-fd50-40fa-ac6f-2c3435f35b35(com.mbeddr.analyses.spin.c.patterns.testsSaver)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
