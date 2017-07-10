@@ -11517,6 +11517,35 @@
         </node>
       </node>
     </node>
+    <node concept="2G$12M" id="7YqriLF$G3O" role="3989C9">
+      <property role="TrG5h" value="com.mbeddr.xmodel" />
+      <node concept="1E1JtA" id="7YqriLF$Ndm" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.xmodel.gen.plan" />
+        <property role="3LESm3" value="62eaf88f-c95e-4d4f-a968-f89142cbc68a" />
+        <node concept="398BVA" id="7YqriLF$NKL" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
+          <node concept="2Ry0Ak" id="7YqriLF$Oka" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="7YqriLF$ORA" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="7YqriLF$R50" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.xmodel.gen" />
+                <node concept="2Ry0Ak" id="7YqriLF$SbJ" role="2Ry0An">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="7YqriLF$Tiu" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.xmodel.gen.plan" />
+                    <node concept="2Ry0Ak" id="7YqriLF$Upd" role="2Ry0An">
+                      <property role="2Ry0Am" value="com.mbeddr.xmodel.gen.plan.msd" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2G$12M" id="5dchr4Qjb5x" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.build" />
       <node concept="1E1JtA" id="3Ry9rm0zlo1" role="2G$12L">
