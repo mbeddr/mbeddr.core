@@ -969,6 +969,27 @@
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
+    <node concept="m$_wf" id="DKBTZI_d9R" role="3989C9">
+      <property role="m$_wk" value="mbeddr.xmodel" />
+      <node concept="3_J27D" id="DKBTZI_d9T" role="m$_yQ">
+        <node concept="3Mxwew" id="DKBTZI_hWp" role="3MwsjC">
+          <property role="3MwjfP" value="mbeddr.xmodel" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="DKBTZI_d9V" role="m_cZH">
+        <node concept="3Mxwew" id="DKBTZI_hWr" role="3MwsjC">
+          <property role="3MwjfP" value="mbeddr.xmodel" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="DKBTZI_d9X" role="m$_w8">
+        <node concept="3Mxwey" id="DKBTZI_j3j" role="3MwsjC">
+          <ref role="3Mxwex" node="7TN8EE6trd1" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="DKBTZI_jAJ" role="m$_yh">
+        <ref role="m$f5T" node="7YqriLF$G3O" resolve="com.mbeddr.xmodel" />
+      </node>
+    </node>
     <node concept="2igEWh" id="$bJ0jguQs8" role="1hWBAP">
       <property role="2igJW4" value="true" />
       <property role="3UIfUI" value="6096" />
@@ -11938,6 +11959,9 @@
       </node>
       <node concept="m$_wl" id="3AVJcIMsTav" role="39821P">
         <ref role="m_rDy" node="4i9pOwKZppd" resolve="com.mbeddr.ext.math" />
+      </node>
+      <node concept="m$_wl" id="DKBTZI_kI7" role="39821P">
+        <ref role="m_rDy" node="DKBTZI_d9R" resolve="mbeddr.xmodel" />
       </node>
       <node concept="L2wRC" id="7XKze7RPycH" role="39821P">
         <ref role="L2wRA" node="5dchr4QjhF_" resolve="com.mbeddr.build" />
