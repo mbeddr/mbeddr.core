@@ -74,6 +74,7 @@
     <module reference="9506d0a9-4e49-4605-b51a-d3aeb0070ba3(com.mbeddr.analyses.cbmc.core.rt)" version="0" />
     <module reference="397da8bd-bcff-4d80-87cb-c4eaba8e2cb2(com.mbeddr.analyses.cbmc.pluginSolution)" version="0" />
     <module reference="a3733d9d-fa94-4706-bdd4-596b968eba8e(com.mbeddr.analyses.cbmc.rt)" version="0" />
+    <module reference="1dcacc1a-8e53-470e-987d-f654ba2e645c(com.mbeddr.analyses.spin.documentation)" version="0" />
     <module reference="5778c639-58c0-4209-a2fe-136f28e3ec3f(com.mbeddr.analyses.spin.pluginSolution)" version="0" />
     <module reference="e4586d76-86eb-4b19-862c-e5375e853c19(com.mbeddr.analyses.spin.rt)" version="0" />
     <module reference="4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)" version="0" />
