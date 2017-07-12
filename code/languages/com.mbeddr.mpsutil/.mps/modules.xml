@@ -47,6 +47,10 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells.runtimelang/com.mbeddr.mpsutil.grammarcells.runtimelang.mpl" folder="staging.grammarCells" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells.sandboxlang/com.mbeddr.mpsutil.grammarcells.sandboxlang.mpl" folder="staging.grammarCells" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.mpl" folder="staging.grammarCells" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream.example/com.mbeddr.mpsutil.graphstream.example.mpl" folder="staging.graphstream.example" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream.example/sandbox/com.mbeddr.mpsutil.graphstream.example.sandbox.msd" folder="staging.graphstream.example" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream/com.mbeddr.mpsutil.graphstream.mpl" folder="staging.graphstream" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream/runtime/com.mbeddr.mpsutil.graphstream.runtime.msd" folder="staging.graphstream" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.mpl" folder="staging.httpSupport" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.mpl" folder="staging" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.iconchar/com.mbeddr.mpsutil.iconchar.mpl" folder="stable.iconchar" />
