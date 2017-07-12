@@ -6,6 +6,7 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="tirk" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.swingViewer(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="4m0a" ref="r:e5f563f0-3312-4f0d-a6fe-8d43c8a221d4(com.mbeddr.mpsutil.graphstream.structure)" implicit="true" />
   </imports>
   <registry>
@@ -25,12 +26,20 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -61,6 +70,20 @@
         <node concept="17QB3L" id="4IojDAdiFYB" role="A3Ik2" />
       </node>
       <node concept="3clFbS" id="4IojDAdiv0k" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="4DzE9lEtSAp" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getView" />
+      <node concept="3Tm1VV" id="4DzE9lEtSAq" role="1B3o_S" />
+      <node concept="3uibUv" id="4DzE9lEu1GJ" role="3clF45">
+        <ref role="3uigEE" to="tirk:~ViewPanel" resolve="ViewPanel" />
+      </node>
+      <node concept="3clFbS" id="4DzE9lEtSAs" role="3clF47" />
+      <node concept="37vLTG" id="4DzE9lEu1Hk" role="3clF46">
+        <property role="TrG5h" value="viewID" />
+        <node concept="17QB3L" id="4DzE9lEu1Hj" role="1tU5fm" />
+      </node>
     </node>
   </node>
 </model>
