@@ -57,6 +57,9 @@
         <child id="7254843406768606784" name="iterator" index="1_amZ$" />
         <child id="7254843406768606787" name="condition" index="1_amZB" />
       </concept>
+      <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
+        <child id="8624890525768479139" name="textblock" index="3SJzmv" />
+      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
@@ -160,13 +163,6 @@
       </concept>
     </language>
     <language id="3c648e74-bfd0-47ab-a27b-a7ece174dc55" name="com.mbeddr.analyses.acsl">
-      <concept id="3793213301909614895" name="com.mbeddr.analyses.acsl.structure.FunctionContract" flags="ng" index="2HfW99">
-        <child id="3793213301909617373" name="functionContractMember" index="2HfWAV" />
-      </concept>
-      <concept id="3793213301909615744" name="com.mbeddr.analyses.acsl.structure.IAtomicContract" flags="ng" index="2HfWvA">
-        <child id="75361647380517795" name="exp" index="3sLAUB" />
-      </concept>
-      <concept id="3793213301909615745" name="com.mbeddr.analyses.acsl.structure.Requires" flags="ng" index="2HfWvB" />
       <concept id="6715381068726883387" name="com.mbeddr.analyses.acsl.structure.ACSLContractsGenerationConfigItem" flags="ng" index="31U8uV">
         <child id="6715381068726941300" name="generationKind" index="31UYnO" />
       </concept>
@@ -352,15 +348,6 @@
       <concept id="4375898003726285487" name="com.mbeddr.core.expressions.structure.PreIncrementExpression" flags="ng" index="3TM6Ez" />
     </language>
     <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
-      <concept id="7573444803550855446" name="com.mbeddr.analyses.base.verification_conditions.structure.VerificationConditionBase" flags="ng" index="wHKrU">
-        <property id="4723851297114348676" name="documentation" index="19ME4Y" />
-        <property id="8330520303445148918" name="disabled" index="1aBf3y" />
-      </concept>
-      <concept id="7392194941658581812" name="com.mbeddr.analyses.base.verification_conditions.structure.BinaryVerificationCondition" flags="ng" index="xqp4m">
-        <child id="7392194941658581814" name="q" index="xqp4k" />
-        <child id="7392194941658581813" name="p" index="xqp4n" />
-      </concept>
-      <concept id="2609337213949315048" name="com.mbeddr.analyses.base.verification_conditions.structure.BeforeQExistsP" flags="ng" index="GBzQR" />
       <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
         <child id="6973658835837826906" name="exp" index="Y9XUp" />
       </concept>
@@ -454,38 +441,7 @@
     <node concept="N3Fnx" id="370Vv3Vyin9" role="N3F5h">
       <property role="TrG5h" value="heap_sort" />
       <property role="2OOxQR" value="true" />
-      <node concept="2HfW99" id="7zW9XauvJNL" role="lGtFl">
-        <node concept="2HfWvB" id="5z_22Fqd3Y3" role="2HfWAV">
-          <node concept="3Tl9Jr" id="5z_22Fqd4x9" role="3sLAUB">
-            <node concept="3TlMh9" id="5z_22Fqd50Z" role="3TlMhJ">
-              <property role="2hmy$m" value="0" />
-            </node>
-            <node concept="3ZUYvv" id="5z_22Fqd4uC" role="3TlMhI">
-              <ref role="3ZUYvu" node="370Vv3VyipZ" resolve="N" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3XIRFW" id="370Vv3Vyinb" role="3XIRFX">
-        <node concept="c0U19" id="370Vv3VyiqO" role="3XIRFZ">
-          <node concept="3XIRFW" id="370Vv3VyiqP" role="c0U17">
-            <node concept="2BFjQ_" id="370Vv3VyizE" role="3XIRFZ" />
-          </node>
-          <node concept="3TlM44" id="3daAcQbWAJH" role="c0U16">
-            <node concept="3TlMh9" id="3daAcQbWBes" role="3TlMhJ">
-              <property role="2hmy$m" value="2" />
-            </node>
-            <node concept="2wJmCr" id="3daAcQbW_cN" role="3TlMhI">
-              <node concept="3TlMh9" id="3daAcQbW_J0" role="2wJmCp">
-                <property role="2hmy$m" value="0" />
-              </node>
-              <node concept="3ZUYvv" id="3daAcQbW$B_" role="1_9fRO">
-                <ref role="3ZUYvu" node="370Vv3Vyinq" resolve="arr" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="370Vv3VyizL" role="3XIRFZ" />
         <node concept="3XIRlf" id="370Vv3Vyi_b" role="3XIRFZ">
           <property role="TrG5h" value="t" />
           <node concept="26Vqph" id="370Vv3Vyi_9" role="2C2TGm">
@@ -1933,31 +1889,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3XISUE" id="3daAcQc2UTV" role="3XIRFZ" />
-            <node concept="1X3_iC" id="3daAcQc33UM" role="lGtFl">
-              <property role="3V$3am" value="statements" />
-              <property role="3V$3ak" value="a9d69647-0840-491e-bf39-2eb0805d2011/4185783222026475861/4185783222026475862" />
-              <node concept="GBzQR" id="3daAcQc2UYC" role="8Wnug">
-                <property role="1aBf3y" value="false" />
-                <property role="19ME4Y" value="before event 'P' occurs first time, condition 'Q' must be true at least once" />
-                <node concept="3TlM44" id="3daAcQc2V3P" role="xqp4n">
-                  <node concept="1AkAhK" id="3daAcQc2V5g" role="3TlMhJ">
-                    <ref role="1AkAhZ" node="6efVUW9BGD6" resolve="SELF_DIAGNOSIS" />
-                  </node>
-                  <node concept="1S7827" id="3daAcQc2V2G" role="3TlMhI">
-                    <ref role="1S7826" node="6efVUW9ABVj" resolve="crtState" />
-                  </node>
-                </node>
-                <node concept="3TlM44" id="3daAcQc2V0g" role="xqp4k">
-                  <node concept="1AkAhK" id="3daAcQc2V1x" role="3TlMhJ">
-                    <ref role="1AkAhZ" node="4b2d3GUmBam" resolve="RUN" />
-                  </node>
-                  <node concept="1S7827" id="3daAcQc2UZY" role="3TlMhI">
-                    <ref role="1S7826" node="6efVUW9ABVj" resolve="crtState" />
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>
@@ -2041,6 +1972,15 @@
                 </node>
                 <node concept="1ly_i6" id="4b2d3GUm8zg" role="ggAap">
                   <node concept="3XIRFW" id="4b2d3GUm8zh" role="1ly_ph">
+                    <node concept="1QiMYF" id="3daAcQc6TL4" role="3XIRFZ">
+                      <node concept="OjmMv" id="3daAcQc6TL6" role="3SJzmv">
+                        <node concept="19SGf9" id="3daAcQc6TL7" role="OjmMu">
+                          <node concept="19SUe$" id="3daAcQc6TL8" role="19SJt6">
+                            <property role="19SUeA" value="the following line causes verification fail: we go to the START state and jump over SELF_DIAGNOSIS" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="1_9egQ" id="6efVUW9ABZI" role="3XIRFZ">
                       <node concept="3pqW6w" id="6efVUW9ABZU" role="1_9egR">
                         <node concept="1AkAhK" id="6efVUW9BGVI" role="3TlMhJ">
