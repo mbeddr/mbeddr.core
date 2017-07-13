@@ -650,12 +650,12 @@
       <node concept="3clFbS" id="buDqkdUFCQ" role="2VODD2" />
     </node>
     <node concept="1QGGSu" id="53G_t0Fb_PQ" role="1nVCmq">
-      <property role="1iqoE4" value="${module}/icons/view.png" />
+      <property role="1iqoE4" value="${module}/icons/gs-logo.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="4ppn3W9rGUJ">
-    <property role="TrG5h" value="Reset" />
-    <property role="2uzpH1" value="Reset view" />
+    <property role="TrG5h" value="FitView" />
+    <property role="2uzpH1" value="Fit View" />
     <property role="3GE5qa" value="toolbar" />
     <node concept="tnohg" id="4ppn3W9rGUK" role="tncku">
       <node concept="3clFbS" id="4ppn3W9rGUL" role="2VODD2">
@@ -691,7 +691,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="4ppn3W9rGUY" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/resetView.png" />
+      <property role="1iqoE4" value="${module}/icons/fitView.png" />
     </node>
     <node concept="1DS2jV" id="4ppn3W9rGUZ" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -711,7 +711,7 @@
       </node>
       <node concept="2a7GMi" id="4ppn3W9rJJN" role="ftvYc" />
       <node concept="tCFHf" id="4ppn3W9rIuA" role="ftvYc">
-        <ref role="tCJdB" node="4ppn3W9rGUJ" resolve="Reset" />
+        <ref role="tCJdB" node="4ppn3W9rGUJ" resolve="FitView" />
       </node>
     </node>
   </node>
@@ -882,7 +882,7 @@
                   <ref role="37wK5l" to="18ew:~IconUtil.getIcon(java.lang.String):javax.swing.Icon" resolve="getIcon" />
                   <ref role="1Pybhc" to="18ew:~IconUtil" resolve="IconUtil" />
                   <node concept="Xl_RD" id="4DzE9lEwERr" role="37wK5m">
-                    <property role="Xl_RC" value="view.png" />
+                    <property role="Xl_RC" value="gs-logo.png" />
                   </node>
                 </node>
               </node>
