@@ -6,6 +6,8 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -20,8 +22,15 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="xyqd" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="1lk9" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="h5a6" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.j2dviewer(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="tdww" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm.impl(MPS.IDEA/)" />
+    <import index="n5wa" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="46lm" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.stream(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="u7uj" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.view.util(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" implicit="true" />
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -114,6 +123,20 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
+        <child id="1239714902950" name="expression" index="2$L3a6" />
+      </concept>
+      <concept id="1173175405605" name="jetbrains.mps.baseLanguage.structure.ArrayAccessExpression" flags="nn" index="AH0OO">
+        <child id="1173175577737" name="index" index="AHEQo" />
+        <child id="1173175590490" name="array" index="AHHXb" />
+      </concept>
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -121,15 +144,25 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
+      </concept>
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -137,12 +170,20 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
@@ -159,9 +200,14 @@
         <property id="1113006610751" name="value" index="$nhwW" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
+        <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
+        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -178,6 +224,7 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -195,11 +242,20 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1073063089578" name="jetbrains.mps.baseLanguage.structure.SuperMethodCall" flags="nn" index="3nyPlj" />
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -207,12 +263,55 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
+        <child id="1144230900587" name="variable" index="1Duv9x" />
+      </concept>
+      <concept id="1144231330558" name="jetbrains.mps.baseLanguage.structure.ForStatement" flags="nn" index="1Dw8fO">
+        <child id="1144231399730" name="condition" index="1Dwp0S" />
+        <child id="1144231408325" name="iteration" index="1Dwrff" />
+      </concept>
+      <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
@@ -246,6 +345,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -263,6 +363,11 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
+      <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
@@ -471,7 +576,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4JBT2R9Uq5Z" role="3cqZAp" />
+        <node concept="3clFbH" id="3$2vATS8OfT" role="3cqZAp" />
         <node concept="3clFbJ" id="4JBT2R9UxNJ" role="3cqZAp">
           <node concept="3clFbS" id="4JBT2R9UxNL" role="3clFbx">
             <node concept="3clFbF" id="4JBT2R9Utuy" role="3cqZAp">
@@ -545,6 +650,18 @@
                 <node concept="2BZ7hE" id="4JBT2R9UB_7" role="2OqNvi">
                   <ref role="2WH_rO" node="4JBT2R9Uvdi" resolve="currentView" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="64_1OWexy11" role="3cqZAp" />
+        <node concept="3clFbF" id="3$2vATS8$WK" role="3cqZAp">
+          <node concept="2OqwBi" id="3$2vATS8_ia" role="3clFbG">
+            <node concept="2WthIp" id="3$2vATS8$WI" role="2Oq$k0" />
+            <node concept="liA8E" id="3$2vATS8_ML" role="2OqNvi">
+              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean):void" resolve="openTool" />
+              <node concept="3clFbT" id="3$2vATS8A9O" role="37wK5m">
+                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
@@ -1012,19 +1129,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="bhVSeGf3ss" role="3cqZAp">
-          <node concept="2OqwBi" id="bhVSeGf3st" role="3clFbG">
-            <node concept="37vLTw" id="bhVSeGf3su" role="2Oq$k0">
-              <ref role="3cqZAo" node="bhVSeGf3sl" resolve="graphstreamViewerTool" />
-            </node>
-            <node concept="liA8E" id="bhVSeGf3sv" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean):void" resolve="openTool" />
-              <node concept="3clFbT" id="bhVSeGf3sw" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="bhVSeGf3sx" role="3cqZAp">
           <node concept="2OqwBi" id="bhVSeGf3sy" role="3clFbG">
             <node concept="37vLTw" id="bhVSeGf3sz" role="2Oq$k0">
@@ -1076,6 +1180,369 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="64_1OWe$WQQ">
+    <property role="TrG5h" value="ViewHelper" />
+    <property role="3GE5qa" value="toolview" />
+    <node concept="Wx3nA" id="64_1OWe_2eG" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="HOTFIXED_VIEW_ID" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="64_1OWe_1Wn" role="1B3o_S" />
+      <node concept="17QB3L" id="64_1OWe_2e_" role="1tU5fm" />
+      <node concept="Xl_RD" id="64_1OWe_2jp" role="33vP2m">
+        <property role="Xl_RC" value="MPS_HOTFIXED_VIEW" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="64_1OWe_1PH" role="jymVt" />
+    <node concept="3clFb_" id="64_1OWe_dEo" role="jymVt">
+      <property role="TrG5h" value="getViewIDs" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <property role="1EzhhJ" value="false" />
+      <node concept="3clFbS" id="4IojDAdiT2k" role="3clF47">
+        <node concept="3cpWs6" id="4IojDAdiT2$" role="3cqZAp">
+          <node concept="2ShNRf" id="4IojDAdiT2I" role="3cqZAk">
+            <node concept="2Jqq0_" id="4IojDAdiVnI" role="2ShVmc">
+              <node concept="17QB3L" id="4IojDAdiV_q" role="HW$YZ" />
+              <node concept="Xl_RD" id="4IojDAdiVKw" role="HW$Y0">
+                <property role="Xl_RC" value="Example View" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="4IojDAdiT2l" role="3clF45">
+        <node concept="17QB3L" id="4IojDAdiT2m" role="A3Ik2" />
+      </node>
+      <node concept="3Tm1VV" id="4IojDAdiT2g" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="64_1OWeAq15" role="jymVt" />
+    <node concept="2YIFZL" id="64_1OWe$XBJ" role="jymVt">
+      <property role="TrG5h" value="getMPSHotfixedView" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="64_1OWe$XBM" role="3clF47">
+        <node concept="3cpWs8" id="64_1OWewXtY" role="3cqZAp">
+          <node concept="3cpWsn" id="64_1OWewXtZ" role="3cpWs9">
+            <property role="TrG5h" value="viewer" />
+            <node concept="3uibUv" id="64_1OWewXu0" role="1tU5fm">
+              <ref role="3uigEE" to="xyqd:~Viewer" resolve="Viewer" />
+            </node>
+            <node concept="2ShNRf" id="64_1OWewYdn" role="33vP2m">
+              <node concept="1pGfFk" id="64_1OWewYqd" role="2ShVmc">
+                <ref role="37wK5l" to="xyqd:~Viewer.&lt;init&gt;(org.graphstream.graph.Graph,org.graphstream.ui.view.Viewer$ThreadingModel)" resolve="Viewer" />
+                <node concept="2OqwBi" id="64_1OWewYW2" role="37wK5m">
+                  <node concept="37vLTw" id="64_1OWewYMT" role="2Oq$k0">
+                    <ref role="3cqZAo" node="64_1OWe$XUc" resolve="creator" />
+                  </node>
+                  <node concept="liA8E" id="64_1OWewZeI" role="2OqNvi">
+                    <ref role="37wK5l" to="1lk9:~GraphCreator.getGraph():org.graphstream.graph.Graph" resolve="getGraph" />
+                  </node>
+                </node>
+                <node concept="Rm8GO" id="64_1OWewZwT" role="37wK5m">
+                  <ref role="1Px2BO" to="xyqd:~Viewer$ThreadingModel" resolve="Viewer.ThreadingModel" />
+                  <ref role="Rm8GQ" to="xyqd:~Viewer$ThreadingModel.GRAPH_IN_GUI_THREAD" resolve="GRAPH_IN_GUI_THREAD" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="64_1OWewZJf" role="3cqZAp">
+          <node concept="3cpWsn" id="64_1OWewZJg" role="3cpWs9">
+            <property role="TrG5h" value="view" />
+            <node concept="3uibUv" id="64_1OWe_1Ai" role="1tU5fm">
+              <ref role="3uigEE" node="64_1OWexg7y" resolve="MPSHotfixedView" />
+            </node>
+            <node concept="2ShNRf" id="64_1OWewZOL" role="33vP2m">
+              <node concept="1pGfFk" id="64_1OWewZY8" role="2ShVmc">
+                <ref role="37wK5l" node="64_1OWexi9R" resolve="MPSHotfixedView" />
+                <node concept="37vLTw" id="64_1OWewZYw" role="37wK5m">
+                  <ref role="3cqZAo" node="64_1OWewXtZ" resolve="viewer" />
+                </node>
+                <node concept="37vLTw" id="64_1OWe_2H1" role="37wK5m">
+                  <ref role="3cqZAo" node="64_1OWe_2eG" resolve="HOTFIXED_VIEW_ID" />
+                </node>
+                <node concept="2ShNRf" id="64_1OWex01f" role="37wK5m">
+                  <node concept="1pGfFk" id="64_1OWex0xz" role="2ShVmc">
+                    <ref role="37wK5l" to="h5a6:~J2DGraphRenderer.&lt;init&gt;()" resolve="J2DGraphRenderer" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="64_1OWex1lx" role="3cqZAp">
+          <node concept="2OqwBi" id="64_1OWex1B8" role="3clFbG">
+            <node concept="37vLTw" id="64_1OWex1lv" role="2Oq$k0">
+              <ref role="3cqZAo" node="64_1OWewXtZ" resolve="viewer" />
+            </node>
+            <node concept="liA8E" id="64_1OWex2cv" role="2OqNvi">
+              <ref role="37wK5l" to="xyqd:~Viewer.addView(org.graphstream.ui.view.View):org.graphstream.ui.view.View" resolve="addView" />
+              <node concept="37vLTw" id="64_1OWex2es" role="37wK5m">
+                <ref role="3cqZAo" node="64_1OWewZJg" resolve="view" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4DzE9lEv6br" role="3cqZAp">
+          <node concept="10QFUN" id="64_1OWex3Ee" role="3cqZAk">
+            <node concept="3uibUv" id="64_1OWe_beR" role="10QFUM">
+              <ref role="3uigEE" node="64_1OWexg7y" resolve="MPSHotfixedView" />
+            </node>
+            <node concept="2OqwBi" id="64_1OWex2xO" role="10QFUP">
+              <node concept="37vLTw" id="64_1OWex2xP" role="2Oq$k0">
+                <ref role="3cqZAo" node="64_1OWe$XUc" resolve="creator" />
+              </node>
+              <node concept="liA8E" id="64_1OWex2xQ" role="2OqNvi">
+                <ref role="37wK5l" to="1lk9:~GraphCreator.createView(org.graphstream.ui.layout.Layout,org.graphstream.stream.Sink,org.graphstream.ui.view.util.MouseManager,org.graphstream.ui.view.Viewer,java.lang.String):org.graphstream.ui.view.View" resolve="createView" />
+                <node concept="37vLTw" id="64_1OWe_asR" role="37wK5m">
+                  <ref role="3cqZAo" node="64_1OWe_7SN" resolve="layout" />
+                </node>
+                <node concept="37vLTw" id="64_1OWe_aDU" role="37wK5m">
+                  <ref role="3cqZAo" node="64_1OWe_9no" resolve="sink" />
+                </node>
+                <node concept="37vLTw" id="64_1OWe_ckd" role="37wK5m">
+                  <ref role="3cqZAo" node="64_1OWe_bDj" resolve="mouseManager" />
+                </node>
+                <node concept="37vLTw" id="64_1OWex2xY" role="37wK5m">
+                  <ref role="3cqZAo" node="64_1OWewXtZ" resolve="viewer" />
+                </node>
+                <node concept="37vLTw" id="64_1OWe_34J" role="37wK5m">
+                  <ref role="3cqZAo" node="64_1OWe_2eG" resolve="HOTFIXED_VIEW_ID" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="64_1OWe$WXs" role="1B3o_S" />
+      <node concept="3uibUv" id="64_1OWe_buZ" role="3clF45">
+        <ref role="3uigEE" node="64_1OWexg7y" resolve="MPSHotfixedView" />
+      </node>
+      <node concept="37vLTG" id="64_1OWe$XUc" role="3clF46">
+        <property role="TrG5h" value="creator" />
+        <node concept="3uibUv" id="64_1OWe$XUb" role="1tU5fm">
+          <ref role="3uigEE" to="1lk9:~GraphCreator" resolve="GraphCreator" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="64_1OWe_7SN" role="3clF46">
+        <property role="TrG5h" value="layout" />
+        <node concept="3uibUv" id="64_1OWe_9mQ" role="1tU5fm">
+          <ref role="3uigEE" to="n5wa:~Layout" resolve="Layout" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="64_1OWe_9no" role="3clF46">
+        <property role="TrG5h" value="sink" />
+        <node concept="3uibUv" id="64_1OWe_9Hp" role="1tU5fm">
+          <ref role="3uigEE" to="46lm:~Sink" resolve="Sink" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="64_1OWe_bDj" role="3clF46">
+        <property role="TrG5h" value="mouseManager" />
+        <node concept="3uibUv" id="64_1OWe_c3R" role="1tU5fm">
+          <ref role="3uigEE" to="u7uj:~MouseManager" resolve="MouseManager" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="64_1OWeAq9q" role="lGtFl">
+        <node concept="TZ5HA" id="64_1OWeAq9r" role="TZ5H$">
+          <node concept="1dT_AC" id="64_1OWeAq9s" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a hotfixed version of the graphstream DefaultView (see paintComponent() of MPSHotfixedView)." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="64_1OWeAq9t" role="3nqlJM">
+          <property role="TUZQ4" value="mandatory, must contain the graph (edges, nodes, sprites etc.) and style information" />
+          <node concept="zr_55" id="64_1OWeAq9v" role="zr_5Q">
+            <ref role="zr_51" node="64_1OWe$XUc" resolve="creator" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="64_1OWeAq9w" role="3nqlJM">
+          <property role="TUZQ4" value="optional, Graphstreams default layout is used if null" />
+          <node concept="zr_55" id="64_1OWeAq9y" role="zr_5Q">
+            <ref role="zr_51" node="64_1OWe_7SN" resolve="layout" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="64_1OWeAq9z" role="3nqlJM">
+          <property role="TUZQ4" value="optional, No sink will be registered if null" />
+          <node concept="zr_55" id="64_1OWeAq9_" role="zr_5Q">
+            <ref role="zr_51" node="64_1OWe_9no" resolve="sink" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="64_1OWeAq9A" role="3nqlJM">
+          <property role="TUZQ4" value="optional, PanZoomMouseManager(false, false) is used if null" />
+          <node concept="zr_55" id="64_1OWeAq9C" role="zr_5Q">
+            <ref role="zr_51" node="64_1OWe_bDj" resolve="mouseManager" />
+          </node>
+        </node>
+        <node concept="x79VA" id="64_1OWeAq9D" role="3nqlJM">
+          <property role="x79VB" value="JComponent view" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="64_1OWe$WQR" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="64_1OWexg7y">
+    <property role="TrG5h" value="MPSHotfixedView" />
+    <property role="3GE5qa" value="toolview" />
+    <node concept="3clFbW" id="64_1OWexi9R" role="jymVt">
+      <node concept="3cqZAl" id="64_1OWexi9T" role="3clF45" />
+      <node concept="3Tm1VV" id="64_1OWexi9U" role="1B3o_S" />
+      <node concept="3clFbS" id="64_1OWexi9V" role="3clF47">
+        <node concept="XkiVB" id="64_1OWexirQ" role="3cqZAp">
+          <ref role="37wK5l" to="tirk:~DefaultView.&lt;init&gt;(org.graphstream.ui.view.Viewer,java.lang.String,org.graphstream.ui.swingViewer.GraphRenderer)" resolve="DefaultView" />
+          <node concept="37vLTw" id="64_1OWexjdQ" role="37wK5m">
+            <ref role="3cqZAo" node="64_1OWexiy6" resolve="viewer" />
+          </node>
+          <node concept="37vLTw" id="64_1OWexiPy" role="37wK5m">
+            <ref role="3cqZAo" node="64_1OWexiyR" resolve="identifier" />
+          </node>
+          <node concept="37vLTw" id="64_1OWexj5u" role="37wK5m">
+            <ref role="3cqZAo" node="64_1OWexi$v" resolve="graphRenderer" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="64_1OWexiy6" role="3clF46">
+        <property role="TrG5h" value="viewer" />
+        <node concept="3uibUv" id="64_1OWexiy5" role="1tU5fm">
+          <ref role="3uigEE" to="xyqd:~Viewer" resolve="Viewer" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="64_1OWexiyR" role="3clF46">
+        <property role="TrG5h" value="identifier" />
+        <node concept="3uibUv" id="64_1OWexizO" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="64_1OWexi$v" role="3clF46">
+        <property role="TrG5h" value="graphRenderer" />
+        <node concept="3uibUv" id="64_1OWexi_d" role="1tU5fm">
+          <ref role="3uigEE" to="tirk:~GraphRenderer" resolve="GraphRenderer" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="64_1OWexjfG" role="jymVt" />
+    <node concept="3clFb_" id="64_1OWexjg$" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="paintComponent" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="64_1OWexjg_" role="1B3o_S" />
+      <node concept="3cqZAl" id="64_1OWexjgB" role="3clF45" />
+      <node concept="37vLTG" id="64_1OWexjgC" role="3clF46">
+        <property role="TrG5h" value="g" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="64_1OWexjgD" role="1tU5fm">
+          <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="64_1OWexjgE" role="3clF47">
+        <node concept="3SKdUt" id="64_1OWe$NDA" role="3cqZAp">
+          <node concept="3SKdUq" id="64_1OWe$NDC" role="3SKWNk">
+            <property role="3SKdUp" value="bugfix for MPS problem. if paintComponent is called in the context of a tool-window-repaint, the drawing is erased. call to repaint() fixes this problem." />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="64_1OWezR6r" role="3cqZAp">
+          <node concept="3cpWsn" id="64_1OWezR6s" role="3cpWs9">
+            <property role="TrG5h" value="stackElements" />
+            <node concept="10Q1$e" id="64_1OWezRjE" role="1tU5fm">
+              <node concept="3uibUv" id="64_1OWezR6t" role="10Q1$1">
+                <ref role="3uigEE" to="wyt6:~StackTraceElement" resolve="StackTraceElement" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="64_1OWezRX2" role="33vP2m">
+              <node concept="2YIFZM" id="64_1OWezRX3" role="2Oq$k0">
+                <ref role="37wK5l" to="wyt6:~Thread.currentThread():java.lang.Thread" resolve="currentThread" />
+                <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
+              </node>
+              <node concept="liA8E" id="64_1OWezRX4" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Thread.getStackTrace():java.lang.StackTraceElement[]" resolve="getStackTrace" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Dw8fO" id="64_1OWezHf3" role="3cqZAp">
+          <node concept="3clFbS" id="64_1OWezHf5" role="2LFqv$">
+            <node concept="3clFbJ" id="64_1OWe$h80" role="3cqZAp">
+              <node concept="3clFbS" id="64_1OWe$h82" role="3clFbx">
+                <node concept="3clFbF" id="64_1OWe$FrS" role="3cqZAp">
+                  <node concept="1rXfSq" id="64_1OWe$FrQ" role="3clFbG">
+                    <ref role="37wK5l" to="z60i:~Component.repaint():void" resolve="repaint" />
+                  </node>
+                </node>
+                <node concept="3zACq4" id="64_1OWe$TDm" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="64_1OWe$i2E" role="3clFbw">
+                <node concept="2OqwBi" id="64_1OWe$i2F" role="2Oq$k0">
+                  <node concept="AH0OO" id="64_1OWe$i2G" role="2Oq$k0">
+                    <node concept="37vLTw" id="64_1OWe$i2H" role="AHEQo">
+                      <ref role="3cqZAo" node="64_1OWezHf6" resolve="i" />
+                    </node>
+                    <node concept="37vLTw" id="64_1OWe$i2I" role="AHHXb">
+                      <ref role="3cqZAo" node="64_1OWezR6s" resolve="stackElements" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="64_1OWe$i2J" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~StackTraceElement.getClassName():java.lang.String" resolve="getClassName" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="64_1OWe$i2K" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="2OqwBi" id="64_1OWe$$DW" role="37wK5m">
+                    <node concept="3VsKOn" id="64_1OWe$i2L" role="2Oq$k0">
+                      <ref role="3VsUkX" to="tdww:~ToolWindowsPane" resolve="ToolWindowsPane" />
+                    </node>
+                    <node concept="liA8E" id="64_1OWe$_hD" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="64_1OWezHf6" role="1Duv9x">
+            <property role="TrG5h" value="i" />
+            <node concept="10Oyi0" id="64_1OWezHrx" role="1tU5fm" />
+            <node concept="3cmrfG" id="64_1OWezI4v" role="33vP2m">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+          <node concept="3uNrnE" id="64_1OWezJnn" role="1Dwrff">
+            <node concept="37vLTw" id="64_1OWezJnp" role="2$L3a6">
+              <ref role="3cqZAo" node="64_1OWezHf6" resolve="i" />
+            </node>
+          </node>
+          <node concept="3eOVzh" id="64_1OWezLwq" role="1Dwp0S">
+            <node concept="2OqwBi" id="64_1OWezTGJ" role="3uHU7w">
+              <node concept="37vLTw" id="64_1OWezSEk" role="2Oq$k0">
+                <ref role="3cqZAo" node="64_1OWezR6s" resolve="stackElements" />
+              </node>
+              <node concept="1Rwk04" id="64_1OWezU3S" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="64_1OWezK5m" role="3uHU7B">
+              <ref role="3cqZAo" node="64_1OWezHf6" resolve="i" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="64_1OWexjgI" role="3cqZAp">
+          <node concept="3nyPlj" id="64_1OWexjgH" role="3clFbG">
+            <ref role="37wK5l" to="tirk:~DefaultView.paintComponent(java.awt.Graphics):void" resolve="paintComponent" />
+            <node concept="37vLTw" id="64_1OWexjgG" role="37wK5m">
+              <ref role="3cqZAo" node="64_1OWexjgC" resolve="g" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="64_1OWexjgF" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="64_1OWexWPa" role="jymVt" />
+    <node concept="3Tm1VV" id="64_1OWexg7z" role="1B3o_S" />
+    <node concept="3uibUv" id="64_1OWexg81" role="1zkMxy">
+      <ref role="3uigEE" to="tirk:~DefaultView" resolve="DefaultView" />
     </node>
   </node>
 </model>
