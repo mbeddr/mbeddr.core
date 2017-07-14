@@ -3,12 +3,15 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" />
     <import index="tirk" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.swingViewer(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="z51m" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper.de.itemis.graphstreamwrapper.example(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="udin" ref="r:fe8ee6c8-7e5c-4efd-b608-c5ea6827be30(com.mbeddr.mpsutil.graphstream.runtime.plugin)" />
+    <import index="1lk9" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="thhq" ref="r:f4b2cfe1-da62-4992-a88f-cc8c90918a31(com.mbeddr.mpsutil.graphstream.example.structure)" implicit="true" />
   </imports>
   <registry>
@@ -38,6 +41,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -56,7 +60,9 @@
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -100,9 +106,6 @@
               <node concept="Xl_RD" id="4IojDAdiVKw" role="HW$Y0">
                 <property role="Xl_RC" value="Example View" />
               </node>
-              <node concept="Xl_RD" id="4DzE9lEwywR" role="HW$Y0">
-                <property role="Xl_RC" value="Another View" />
-              </node>
             </node>
           </node>
         </node>
@@ -119,9 +122,20 @@
       <node concept="3Tm1VV" id="4DzE9lEv6a9" role="1B3o_S" />
       <node concept="3clFbS" id="4DzE9lEv6ae" role="3clF47">
         <node concept="3cpWs6" id="4DzE9lEv6br" role="3cqZAp">
-          <node concept="2YIFZM" id="2Hb2h4KzhFm" role="3cqZAk">
-            <ref role="1Pybhc" to="z51m:~ExampleGraph" resolve="ExampleGraph" />
-            <ref role="37wK5l" to="z51m:~ExampleGraph.createExampleGraph():org.graphstream.ui.swingViewer.ViewPanel" resolve="createExampleGraph" />
+          <node concept="2YIFZM" id="64_1OWe_3Gg" role="3cqZAk">
+            <ref role="37wK5l" to="udin:64_1OWe$XBJ" resolve="getMPSHotfixedView" />
+            <ref role="1Pybhc" to="udin:64_1OWe$WQQ" resolve="ViewHelper" />
+            <node concept="2YIFZM" id="64_1OWe_3Hs" role="37wK5m">
+              <ref role="37wK5l" to="z51m:~ExampleGraph.getExampleGraphCreator():de.itemis.graphstreamwrapper.GraphCreator" resolve="getExampleGraphCreator" />
+              <ref role="1Pybhc" to="z51m:~ExampleGraph" resolve="ExampleGraph" />
+            </node>
+            <node concept="2ShNRf" id="64_1OWeAsF7" role="37wK5m">
+              <node concept="1pGfFk" id="64_1OWeAsQb" role="2ShVmc">
+                <ref role="37wK5l" to="1lk9:~TreeLayout.&lt;init&gt;()" resolve="TreeLayout" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="64_1OWe_cQV" role="37wK5m" />
+            <node concept="10Nm6u" id="64_1OWe_dyz" role="37wK5m" />
           </node>
         </node>
       </node>
