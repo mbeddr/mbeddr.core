@@ -27494,11 +27494,6 @@
       <node concept="3Tm1VV" id="5xvu2kS8In4" role="1B3o_S" />
       <node concept="10P_77" id="5xvu2kS8In6" role="3clF45" />
       <node concept="3clFbS" id="5xvu2kS8Inc" role="3clF47">
-        <node concept="3SKdUt" id="2aWpJMnAxje" role="3cqZAp">
-          <node concept="3SKdUq" id="2aWpJMnAxjg" role="3SKWNk">
-            <property role="3SKdUp" value="for now, this is enumerable because only concept reference types can be used as the atomic types" />
-          </node>
-        </node>
         <node concept="3cpWs6" id="5xvu2kS8ZxY" role="3cqZAp">
           <node concept="3clFbT" id="5xvu2kS8ZzC" role="3cqZAk">
             <property role="3clFbU" value="true" />
@@ -27818,6 +27813,62 @@
             <node concept="3clFbS" id="1lsowDU3Mnf" role="3eOfB_">
               <node concept="3cpWs6" id="1lsowDU3N_w" role="3cqZAp">
                 <node concept="3clFbT" id="1lsowDU3NCZ" role="3cqZAk">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="1IUWmS1nvF3" role="3eNLev">
+            <node concept="2ZW3vV" id="1IUWmS1nwmr" role="3eO9$A">
+              <node concept="3uibUv" id="1IUWmS1nwzh" role="2ZW6by">
+                <ref role="3uigEE" node="5xvu2kS8HJD" resolve="JoinTypeKey" />
+              </node>
+              <node concept="37vLTw" id="1IUWmS1nw7H" role="2ZW6bz">
+                <ref role="3cqZAo" node="7TrMLNbSJVR" resolve="key" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="1IUWmS1nvF5" role="3eOfB_">
+              <node concept="2Gpval" id="1IUWmS1nx4V" role="3cqZAp">
+                <node concept="2GrKxI" id="1IUWmS1nx4X" role="2Gsz3X">
+                  <property role="TrG5h" value="component" />
+                </node>
+                <node concept="2OqwBi" id="1IUWmS1nxp6" role="2GsD0m">
+                  <node concept="1eOMI4" id="1IUWmS1nx6S" role="2Oq$k0">
+                    <node concept="10QFUN" id="1IUWmS1nx6P" role="1eOMHV">
+                      <node concept="3uibUv" id="1IUWmS1nx6U" role="10QFUM">
+                        <ref role="3uigEE" node="5xvu2kS8HJD" resolve="JoinTypeKey" />
+                      </node>
+                      <node concept="37vLTw" id="1IUWmS1nx6V" role="10QFUP">
+                        <ref role="3cqZAo" node="7TrMLNbSJVR" resolve="key" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1IUWmS1nxG9" role="2OqNvi">
+                    <ref role="37wK5l" node="2aWpJMnBtq_" resolve="getComponents" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="1IUWmS1nx51" role="2LFqv$">
+                  <node concept="3clFbJ" id="1IUWmS1nxKM" role="3cqZAp">
+                    <node concept="3clFbS" id="1IUWmS1nxKO" role="3clFbx">
+                      <node concept="3cpWs6" id="1IUWmS1nyd1" role="3cqZAp">
+                        <node concept="3clFbT" id="1IUWmS1nydE" role="3cqZAk">
+                          <property role="3clFbU" value="false" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3fqX7Q" id="1IUWmS1ny0g" role="3clFbw">
+                      <node concept="1rXfSq" id="1IUWmS1ny0i" role="3fr31v">
+                        <ref role="37wK5l" node="7TrMLNbSJVN" resolve="isStateless" />
+                        <node concept="2GrUjf" id="1IUWmS1ny0j" role="37wK5m">
+                          <ref role="2Gs0qQ" node="1IUWmS1nx4X" resolve="component" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="1IUWmS1nyfl" role="3cqZAp">
+                <node concept="3clFbT" id="1IUWmS1nygu" role="3cqZAk">
                   <property role="3clFbU" value="true" />
                 </node>
               </node>
