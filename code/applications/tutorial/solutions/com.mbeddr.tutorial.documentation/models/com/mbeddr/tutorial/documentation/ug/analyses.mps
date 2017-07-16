@@ -49,6 +49,7 @@
       <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
         <property id="4755612053022517119" name="border" index="41Bi8" />
+        <property id="6386504476136358630" name="showImage" index="2Sbq$t" />
         <property id="8730648445434174368" name="center" index="1DKIkx" />
         <child id="6386504476136278696" name="description" index="2SaI5j" />
         <child id="6386504476136531838" name="resource" index="2SbwM5" />
@@ -284,20 +285,25 @@
             </node>
           </node>
         </node>
-        <node concept="2SaynC" id="Or98votIHC" role="1_0VJ0">
+        <node concept="2SaynC" id="7OKLwZ_6QDr" role="1_0VJ0">
           <property role="TrG5h" value="fm_example" />
-          <node concept="2Sb_l4" id="Or98votIIQ" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\fm_example.png" />
+          <property role="1DKIkx" value="true" />
+          <property role="41Bi8" value="true" />
+          <property role="2Sbq$t" value="true" />
+          <node concept="2Sb_l4" id="7OKLwZ_6QDs" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/fm_example.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
-          <node concept="OjmMv" id="Or98votIHG" role="2SaI5j">
-            <node concept="19SGf9" id="Or98votIHH" role="OjmMu">
-              <node concept="19SUe$" id="Or98votIHI" role="19SJt6">
+          <node concept="OjmMv" id="7OKLwZ_6QDt" role="2SaI5j">
+            <node concept="19SGf9" id="7OKLwZ_6QDu" role="OjmMu">
+              <node concept="19SUe$" id="7OKLwZ_6QDv" role="19SJt6">
                 <property role="19SUeA" value="A feature model contains features and relations among them." />
               </node>
             </node>
           </node>
-          <node concept="2bctqb" id="Or98votIHK" role="3SHJ_F" />
+          <node concept="3SGC_w" id="7OKLwZ_6QDw" role="3SHJ_F">
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
+          </node>
         </node>
         <node concept="1_1sxE" id="7OKLwZ_6QDx" role="1_0VJ0">
           <property role="TrG5h" value="empty_1400660000565_3" />
@@ -309,22 +315,24 @@
             </node>
           </node>
         </node>
-        <node concept="2SaynC" id="Or98votIKI" role="1_0VJ0">
+        <node concept="2SaynC" id="7OKLwZ_6QD_" role="1_0VJ0">
+          <property role="TrG5h" value="fm_analyzer" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <property role="TrG5h" value="fm_analyzer_start" />
-          <node concept="2Sb_l4" id="Or98votILX" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\fm_analyzer_start.png" />
+          <node concept="2Sb_l4" id="7OKLwZ_6QDA" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/fm_analyzer_start.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
-          <node concept="OjmMv" id="Or98votIKM" role="2SaI5j">
-            <node concept="19SGf9" id="Or98votIKN" role="OjmMu">
-              <node concept="19SUe$" id="Or98votIKO" role="19SJt6">
+          <node concept="OjmMv" id="7OKLwZ_6QDB" role="2SaI5j">
+            <node concept="19SGf9" id="7OKLwZ_6QDC" role="OjmMu">
+              <node concept="19SUe$" id="7OKLwZ_6QDD" role="19SJt6">
                 <property role="19SUeA" value="One-click starting of the FM-Analyzer." />
               </node>
             </node>
           </node>
-          <node concept="2bctqb" id="Or98votIKQ" role="3SHJ_F" />
+          <node concept="3SGC_w" id="7OKLwZ_6QDE" role="3SHJ_F">
+            <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
+          </node>
         </node>
         <node concept="1_0LV8" id="7OKLwZ_6QDF" role="1_0VJ0">
           <node concept="19SGf9" id="7OKLwZ_6QDG" role="1_0LWR">
@@ -337,8 +345,8 @@
           <property role="TrG5h" value="fm_analyzer_results" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIMT" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\fm_analyzer_results.png" />
+          <node concept="2Sb_l4" id="7OKLwZ_6QDJ" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/fm_analyzer_results.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6QDK" role="2SaI5j">
@@ -370,8 +378,8 @@
           <property role="TrG5h" value="cm_example" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIMX" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\cm_example.png" />
+          <node concept="2Sb_l4" id="7OKLwZ_6QDU" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/cm_example.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6QDV" role="2SaI5j">
@@ -399,8 +407,8 @@
           <property role="TrG5h" value="cm_analyzer" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIN1" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\cm_analyzer_start.png" />
+          <node concept="2Sb_l4" id="7OKLwZ_6QE4" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/cm_analyzer_start.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6QE5" role="2SaI5j">
@@ -425,8 +433,8 @@
           <property role="TrG5h" value="cm_analyzer_results" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIOD" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\cm_analyzer_results.png" />
+          <node concept="2Sb_l4" id="7OKLwZ_6QEd" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/cm_analyzer_results.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6QEe" role="2SaI5j">
@@ -458,8 +466,8 @@
           <property role="TrG5h" value="module_example" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIOH" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\module_example.png" />
+          <node concept="2Sb_l4" id="7OKLwZ_6U0d" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/module_example.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6U0e" role="2SaI5j">
@@ -486,8 +494,8 @@
         <node concept="2SaynC" id="7OKLwZ_6U0m" role="1_0VJ0">
           <property role="TrG5h" value="module_analyzer" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIOL" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\module_analyzer_start.png" />
+          <node concept="2Sb_l4" id="7OKLwZ_6U0n" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/module_analyzer_start.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6U0o" role="2SaI5j">
@@ -512,8 +520,8 @@
           <property role="TrG5h" value="module_analyzer_results" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIOP" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\module_analyzer_results.png" />
+          <node concept="2Sb_l4" id="7OKLwZ_6U0w" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/module_analyzer_results.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_6U0x" role="2SaI5j">
@@ -563,8 +571,8 @@
           <property role="TrG5h" value="starting_variability_checks_on_models" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIOT" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\variability_verification_for_models.png" />
+          <node concept="2Sb_l4" id="4XJOimFQw8W" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/variability_verification_for_models.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="4XJOimFQw8X" role="2SaI5j">
@@ -589,8 +597,8 @@
           <property role="TrG5h" value="starting_variability_checks_on_solutions" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIOX" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\variability_verification_for_solutions.png" />
+          <node concept="2Sb_l4" id="4XJOimFQxIX" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/variability_verification_for_solutions.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="4XJOimFQxIY" role="2SaI5j">
@@ -904,8 +912,8 @@
             <property role="1DKIkx" value="true" />
             <property role="41Bi8" value="true" />
             <property role="TrG5h" value="verification_process_at_a_glance" />
-            <node concept="2Sb_l4" id="Or98votIP1" role="2SbwM5">
-              <property role="2Sb_kV" value="images\analyses\verification_process_at_a_glance.png" />
+            <node concept="2Sb_l4" id="4XJOimG0jLf" role="2SbwM5">
+              <property role="2Sb_kV" value="analyses/verification_process_at_a_glance.png" />
               <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="4XJOimG0jLg" role="2SaI5j">
@@ -1001,8 +1009,8 @@
           <property role="TrG5h" value="global_settings" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIP5" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\verification_cprover_global_settings.png" />
+          <node concept="2Sb_l4" id="3iTDCNuCEhN" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/verification_cprover_global_settings.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3iTDCNuCEhO" role="2SaI5j">
@@ -1213,8 +1221,8 @@
           <property role="TrG5h" value="verification_core_devkit" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIP9" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\verification_core_devkit.png" />
+          <node concept="2Sb_l4" id="7OKLwZ_9N0m" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/verification_core_devkit.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_9MZK" role="2SaI5j">
@@ -1274,8 +1282,8 @@
           <property role="TrG5h" value="verification_robustness_direct_start" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIPd" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\verification_robustness_direct_start.png" />
+          <node concept="2Sb_l4" id="7OKLwZ_aMAP" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/verification_robustness_direct_start.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_aMAQ" role="2SaI5j">
@@ -1292,8 +1300,8 @@
           <property role="TrG5h" value="verification_config_robustness_item_creation" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIPh" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\verification_config_robustness_item_creation.png" />
+          <node concept="2Sb_l4" id="7OKLwZ_aMDK" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/verification_config_robustness_item_creation.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_aMDL" role="2SaI5j">
@@ -1329,8 +1337,8 @@
           <property role="TrG5h" value="verification_config_robustness_item_start_verification" />
           <property role="1DKIkx" value="true" />
           <property role="41Bi8" value="true" />
-          <node concept="2Sb_l4" id="Or98votIPl" role="2SbwM5">
-            <property role="2Sb_kV" value="images\analyses\verification_config_robustness_item_start_verification.png" />
+          <node concept="2Sb_l4" id="7OKLwZ_aN2S" role="2SbwM5">
+            <property role="2Sb_kV" value="analyses/verification_config_robustness_item_start_verification.png" />
             <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="7OKLwZ_aN2T" role="2SaI5j">
@@ -1519,8 +1527,8 @@
             <property role="TrG5h" value="verification_dectab_toggle_check" />
             <property role="1DKIkx" value="true" />
             <property role="41Bi8" value="true" />
-            <node concept="2Sb_l4" id="Or98votIPp" role="2SbwM5">
-              <property role="2Sb_kV" value="images\analyses\verification_dectab_toggle_check.png" />
+            <node concept="2Sb_l4" id="3JyX84yPMir" role="2SbwM5">
+              <property role="2Sb_kV" value="analyses/verification_dectab_toggle_check.png" />
               <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="3JyX84yPMis" role="2SaI5j">
@@ -1559,8 +1567,8 @@
             <property role="TrG5h" value="verification_dectab_start_verification" />
             <property role="1DKIkx" value="true" />
             <property role="41Bi8" value="true" />
-            <node concept="2Sb_l4" id="Or98votIPt" role="2SbwM5">
-              <property role="2Sb_kV" value="images\analyses\verification_dectab_start_verification.png" />
+            <node concept="2Sb_l4" id="3JyX84yQTR6" role="2SbwM5">
+              <property role="2Sb_kV" value="analyses/verification_dectab_start_verification.png" />
               <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="3JyX84yQTR7" role="2SaI5j">
@@ -1602,8 +1610,8 @@
             <property role="TrG5h" value="verification_dectab_results" />
             <property role="1DKIkx" value="true" />
             <property role="41Bi8" value="true" />
-            <node concept="2Sb_l4" id="Or98votIPx" role="2SbwM5">
-              <property role="2Sb_kV" value="images\analyses\verification_dectab_results.png" />
+            <node concept="2Sb_l4" id="3JyX84yQU2Y" role="2SbwM5">
+              <property role="2Sb_kV" value="analyses/verification_dectab_results.png" />
               <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="3JyX84yQU2Z" role="2SaI5j">
@@ -1728,8 +1736,8 @@
             <property role="TrG5h" value="verification_statemachine_results" />
             <property role="1DKIkx" value="true" />
             <property role="41Bi8" value="true" />
-            <node concept="2Sb_l4" id="Or98votIP_" role="2SbwM5">
-              <property role="2Sb_kV" value="images\analyses\verification_statemachine_results.png" />
+            <node concept="2Sb_l4" id="3JyX84yUjD_" role="2SbwM5">
+              <property role="2Sb_kV" value="analyses/verification_statemachine_results.png" />
               <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="3JyX84yUjDA" role="2SaI5j">
@@ -1823,8 +1831,8 @@
             <property role="TrG5h" value="verification_assertions_direct_start" />
             <property role="1DKIkx" value="true" />
             <property role="41Bi8" value="true" />
-            <node concept="2Sb_l4" id="Or98votIPD" role="2SbwM5">
-              <property role="2Sb_kV" value="images\analyses\verification_assertions_direct_start.png" />
+            <node concept="2Sb_l4" id="6_lULi3$Wl_" role="2SbwM5">
+              <property role="2Sb_kV" value="analyses/verification_assertions_direct_start.png" />
               <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="6_lULi3$WlA" role="2SaI5j">
@@ -1961,8 +1969,8 @@
             <property role="TrG5h" value="verification_components_direct_start" />
             <property role="1DKIkx" value="true" />
             <property role="41Bi8" value="true" />
-            <node concept="2Sb_l4" id="Or98votIPL" role="2SbwM5">
-              <property role="2Sb_kV" value="images\analyses\verification_components_direct_start.png" />
+            <node concept="2Sb_l4" id="6_lULi3AZFU" role="2SbwM5">
+              <property role="2Sb_kV" value="analyses/verification_components_direct_start.png" />
               <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="6_lULi3AZFV" role="2SaI5j">
@@ -2005,8 +2013,8 @@
             <property role="TrG5h" value="verification_components_results" />
             <property role="1DKIkx" value="true" />
             <property role="41Bi8" value="true" />
-            <node concept="2Sb_l4" id="Or98votIPH" role="2SbwM5">
-              <property role="2Sb_kV" value="images\analyses\verification_components_results.png" />
+            <node concept="2Sb_l4" id="2aAK$SsAnyE" role="2SbwM5">
+              <property role="2Sb_kV" value="analyses/verification_components_results.png" />
               <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="2aAK$SsAnyF" role="2SaI5j">
