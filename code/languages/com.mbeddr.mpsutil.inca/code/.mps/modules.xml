@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.collectionoperations/com.mbeddr.mpsutil.inca.collections.mpl" folder="collections" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.core/com.mbeddr.mpsutil.inca.core.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.data/com.mbeddr.mpsutil.inca.data.mpl" folder="data" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.fun/com.mbeddr.mpsutil.inca.fun.mpl" folder="core" />
@@ -9,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.styles/com.mbeddr.mpsutil.inca.styles.mpl" folder="style" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.soot/com.mbeddr.mpsutil.soot.mpl" folder="soot" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.analysis.runtime/com.mbeddr.mpsutil.inca.analysis.runtime.msd" folder="analysis" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.collections.sandbox/com.mbeddr.mpsutil.inca.collections.sandbox.msd" folder="collections" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.core.runtime/com.mbeddr.mpsutil.inca.core.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.core.util/com.mbeddr.mpsutil.inca.core.util.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.data.runtime/com.mbeddr.mpsutil.inca.data.runtime.msd" folder="data" />

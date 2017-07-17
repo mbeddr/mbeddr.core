@@ -23,9 +23,10 @@
     <import index="4v9i" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.matchers.context(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
     <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
+    <import index="uckl" ref="r:f9003d7e-d723-4afd-abb4-93d80c57d97e(com.mbeddr.mpsutil.inca.collections.runtime)" />
     <import index="gcg1" ref="r:d6f14cc5-a2a7-4aaf-8f86-e35059edbf3b(com.mbeddr.mpsutil.inca.core.behavior)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="la48" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.api.impl(com.mbeddr.mpsutil.inca.core.runtime/)" implicit="true" />
@@ -319,6 +320,9 @@
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
+      </concept>
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
@@ -503,6 +507,48 @@
           </node>
           <node concept="2tJIrI" id="8FTmV8DG6v" role="jymVt" />
           <node concept="3Tm1VV" id="8FTmV8DG6w" role="1B3o_S" />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="4SK4lw7lsbK" role="3acgRq">
+      <ref role="30HIoZ" to="tpee:g7uibYu" resolve="ClassifierType" />
+      <node concept="gft3U" id="4SK4lw7lK0N" role="1lVwrX">
+        <node concept="3uibUv" id="4SK4lw7lKj4" role="gfFT$">
+          <ref role="3uigEE" to="33ny:~HashSet" resolve="HashSet" />
+          <node concept="3uibUv" id="4SK4lw7lOks" role="11_B2D">
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+            <node concept="2b32R4" id="4SK4lw7lOtX" role="lGtFl">
+              <node concept="3JmXsc" id="4SK4lw7lOu0" role="2P8S$">
+                <node concept="3clFbS" id="4SK4lw7lOu1" role="2VODD2">
+                  <node concept="3clFbF" id="4SK4lw7lOu7" role="3cqZAp">
+                    <node concept="2OqwBi" id="4SK4lw7lOu2" role="3clFbG">
+                      <node concept="3Tsc0h" id="4SK4lw7lOu5" role="2OqNvi">
+                        <ref role="3TtcxE" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
+                      </node>
+                      <node concept="30H73N" id="4SK4lw7lOu6" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="4SK4lw7lt2e" role="30HLyM">
+        <node concept="3clFbS" id="4SK4lw7lt2f" role="2VODD2">
+          <node concept="3clFbF" id="4SK4lw7lE17" role="3cqZAp">
+            <node concept="3clFbC" id="4SK4lw7lHBa" role="3clFbG">
+              <node concept="3B5_sB" id="1NQRVeOzWJm" role="3uHU7w">
+                <ref role="3B5MYn" to="uckl:72XU6UqIWtw" resolve="incaSet" />
+              </node>
+              <node concept="2OqwBi" id="4SK4lw7lEkP" role="3uHU7B">
+                <node concept="30H73N" id="4SK4lw7lE16" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4SK4lw7lEOf" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:g7uigIF" resolve="classifier" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
