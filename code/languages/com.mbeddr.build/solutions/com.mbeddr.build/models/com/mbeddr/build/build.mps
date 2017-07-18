@@ -971,8 +971,8 @@
     </node>
     <node concept="2igEWh" id="$bJ0jguQs8" role="1hWBAP">
       <property role="2igJW4" value="true" />
-      <property role="3UIfUI" value="6096" />
-      <property role="1YnnvL" value="1024" />
+      <property role="3UIfUI" value="16384" />
+      <property role="1YnnvL" value="4096" />
     </node>
     <node concept="1wNqPr" id="2B1T7v1mQt2" role="3989C9">
       <property role="1wNuhc" value="true" />
@@ -10841,6 +10841,12 @@
           <node concept="3bR9La" id="3KP_mg124Wh" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Ctc1NI6uP7" role="3bR37C">
+          <node concept="3bR9La" id="Ctc1NI6uP8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="3JmJHJb$UhK" resolve="com.mbeddr.analyses.spin.c" />
           </node>
         </node>
       </node>

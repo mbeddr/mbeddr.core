@@ -244,7 +244,7 @@
       </concept>
     </language>
     <language id="9aeff3a1-b145-418c-a75b-9a6e331d7333" name="com.mbeddr.analyses.spin">
-      <concept id="3854501276819165429" name="com.mbeddr.analyses.spin.structure.AssertionsAnalysis" flags="ng" index="apm28" />
+      <concept id="3854501276819165429" name="com.mbeddr.analyses.spin.structure.AssertionsSpinAnalysis" flags="ng" index="apm28" />
       <concept id="3854501276819366674" name="com.mbeddr.analyses.spin.structure.SpinBasedAnalysis" flags="ng" index="ap_dJ">
         <reference id="3854501276819165457" name="env" index="apm5G" />
       </concept>
@@ -253,6 +253,9 @@
         <property id="9065467049586938197" name="compiler" index="1gr5cl" />
         <property id="9065467049586938198" name="compilerOptions" index="1gr5cm" />
         <property id="9065467049586938199" name="make" index="1gr5cn" />
+      </concept>
+      <concept id="6386634687973783239" name="com.mbeddr.analyses.spin.structure.IPanRunSettings" flags="ng" index="1Qv9iI">
+        <property id="768608840052710411" name="stopAtFirstError" index="3SeVAx" />
       </concept>
     </language>
     <language id="f027a490-7082-492e-99ce-dfe65d7342f7" name="com.mbeddr.analyses.spin.c.patterns">
@@ -615,25 +618,6 @@
           </node>
         </node>
         <node concept="3XISUE" id="370Vv3VyizL" role="3XIRFZ" />
-        <node concept="c0U19" id="2lN4cj_NfHD" role="3XIRFZ">
-          <node concept="3XIRFW" id="2lN4cj_NfHE" role="c0U17">
-            <node concept="2BFjQ_" id="2lN4cj_NhSM" role="3XIRFZ" />
-          </node>
-          <node concept="3TlM44" id="2lN4cj_NgNy" role="c0U16">
-            <node concept="3TlMh9" id="2lN4cj_NhjP" role="3TlMhJ">
-              <property role="2hmy$m" value="7" />
-            </node>
-            <node concept="2wJmCr" id="2lN4cj_Ngjd" role="3TlMhI">
-              <node concept="3TlMh9" id="2lN4cj_Ngjr" role="2wJmCp">
-                <property role="2hmy$m" value="0" />
-              </node>
-              <node concept="3ZUYvv" id="2lN4cj_NghC" role="1_9fRO">
-                <ref role="3ZUYvu" node="370Vv3Vyinq" resolve="arr" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3XISUE" id="2lN4cj_Nf59" role="3XIRFZ" />
         <node concept="3XIRlf" id="370Vv3Vyi_b" role="3XIRFZ">
           <property role="TrG5h" value="t" />
           <node concept="26Vqph" id="370Vv3Vyi_9" role="2C2TGm">
@@ -1300,24 +1284,31 @@
     <property role="2l50Mm" value="false" />
     <property role="TrG5h" value="AC" />
     <node concept="apm28" id="3lXW7OZ7i$9" role="3V$2$K">
+      <property role="3SeVAx" value="true" />
       <ref role="apm5G" node="7Ztu0DHJOkJ" resolve="heap_sort_harness_promela" />
     </node>
     <node concept="apm28" id="6efVUW9$QSi" role="3V$2$K">
+      <property role="3SeVAx" value="true" />
       <ref role="apm5G" node="439FXGfpCw" resolve="heapsort_harness_orig" />
     </node>
     <node concept="apm28" id="1BFQdmK2XPg" role="3V$2$K">
+      <property role="3SeVAx" value="true" />
       <ref role="apm5G" node="1BFQdmK2NIs" resolve="heapsort_harness" />
     </node>
     <node concept="apm28" id="5p$33BW4sOL" role="3V$2$K">
+      <property role="3SeVAx" value="true" />
       <ref role="apm5G" node="1RC3LaKEa3F" resolve="crc16_harness_promela" />
     </node>
     <node concept="apm28" id="1BFQdmKaC5M" role="3V$2$K">
+      <property role="3SeVAx" value="true" />
       <ref role="apm5G" node="1BFQdmK2lsC" resolve="crc16_harness" />
     </node>
     <node concept="apm28" id="5hi7ucOnqxJ" role="3V$2$K">
+      <property role="3SeVAx" value="true" />
       <ref role="apm5G" node="5hi7ucOlEp_" resolve="canonize_harness" />
     </node>
     <node concept="apm28" id="1BFQdmKlr6w" role="3V$2$K">
+      <property role="3SeVAx" value="true" />
       <ref role="apm5G" node="6efVUW9Ayv6" resolve="statemachine_harness" />
     </node>
     <node concept="3GEVxB" id="6NwHzQYb7Cs" role="3W6d8T">
@@ -3006,7 +2997,7 @@
         <node concept="1hRGTU" id="1BFQdmKcaGn" role="3XIRFZ">
           <node concept="1hKoE2" id="1BFQdmKcaGq" role="1hRGTw">
             <property role="TrG5h" value="bitIdx" />
-            <node concept="1N1tGC" id="3Gj8GGYtVMm" role="2C2TGm">
+            <node concept="26Vqp4" id="ZBFZM$EQuC" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>

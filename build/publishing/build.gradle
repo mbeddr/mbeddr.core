@@ -20,8 +20,7 @@ LocalDateTime t = LocalDateTime.now();
 
 def releaseNotes = """Automated Nighly build from ${t as String}
 
-Due to some issues with our RCP after the update to MPS 2017.1 we currently don't provide RCP versions for mac OS and Windows.
-We hope to bring them back shortly.'"""
+There is currently a known issue that the RCP doesn't extract the tutorial correctly. Please download and extract it maually."""
 
 github {
     owner = 'mbeddr'
