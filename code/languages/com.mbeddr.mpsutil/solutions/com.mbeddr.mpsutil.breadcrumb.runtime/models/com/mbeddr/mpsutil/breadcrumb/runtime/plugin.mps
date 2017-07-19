@@ -15,7 +15,6 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
   </languages>
   <imports>
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
@@ -44,9 +43,6 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
   </imports>
   <registry>
-    <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
-      <concept id="8473566765277240526" name="de.slisson.mps.reflection.structure.ReflectionMethodCall" flags="ng" index="1PvZjq" />
-    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1210676672555" name="jetbrains.mps.lang.plugin.structure.OnBeforeWriteBlock" flags="in" index="3xWZ$M" />
       <concept id="1204478074808" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_MPSProject" flags="nn" index="1KvdUw" />
@@ -10143,21 +10139,6 @@
             <node concept="10Nm6u" id="4E__2YAyftN" role="3uHU7w" />
             <node concept="37vLTw" id="4E__2YAyemj" role="3uHU7B">
               <ref role="3cqZAo" node="4E__2YAydej" resolve="editorComponent" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="3BkstRjB$aD" role="3cqZAp">
-          <node concept="3clFbS" id="3BkstRjB$aF" role="3clFbx">
-            <node concept="3cpWs6" id="3BkstRjBETs" role="3cqZAp" />
-          </node>
-          <node concept="3fqX7Q" id="3BkstRjBEff" role="3clFbw">
-            <node concept="2OqwBi" id="3BkstRjBEfh" role="3fr31v">
-              <node concept="37vLTw" id="3BkstRjBEfi" role="2Oq$k0">
-                <ref role="3cqZAo" node="4E__2YAydej" resolve="editorComponent" />
-              </node>
-              <node concept="1PvZjq" id="3BkstRjBEfj" role="2OqNvi">
-                <ref role="37wK5l" to="exr9:~EditorComponent.hasUI():boolean" resolve="hasUI" />
-              </node>
             </node>
           </node>
         </node>
