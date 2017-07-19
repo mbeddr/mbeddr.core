@@ -92,7 +92,6 @@
   <dependencies>
     <dependency reexport="true">fd28f7ed-d277-425b-a282-684ac4cbead6(com.mbeddr.mpsutil.breadcrumb.runtime)</dependency>
     <dependency reexport="false" scope="generate-into">760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</dependency>
-    <dependency reexport="false" scope="generate-into">654422bf-e75f-44dc-936d-188890a746ce(de.slisson.mps.reflection)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:3f41734b-72c3-42c8-b22c-bacd5a878e17:com.mbeddr.mpsutil.propertydefault" version="0" />
@@ -126,7 +125,6 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="53a2e8ff-4795-41ec-949d-d5c6bc4895de(com.mbeddr.mpsutil.breadcrumb.editor)" version="0" />
     <module reference="fd28f7ed-d277-425b-a282-684ac4cbead6(com.mbeddr.mpsutil.breadcrumb.runtime)" version="0" />
-    <module reference="654422bf-e75f-44dc-936d-188890a746ce(de.slisson.mps.reflection)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />
     <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
