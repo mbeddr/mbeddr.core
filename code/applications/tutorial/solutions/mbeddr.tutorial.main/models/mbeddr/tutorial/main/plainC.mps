@@ -7,7 +7,9 @@
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="j73t" ref="r:8bed4b02-7437-49bf-bfa1-4f220b72fa26(com.mbeddr.xmodel.plan.genplan)" />
+  </imports>
   <registry>
     <language id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units">
       <concept id="5348704582971040037" name="com.mbeddr.ext.units.structure.UnitConfigItem" flags="ng" index="2eh4Hv" />
@@ -164,6 +166,10 @@
       <concept id="6275792049641586523" name="com.mbeddr.core.unittest.structure.TestCase" flags="ng" index="c0Qz5">
         <child id="6275792049641586525" name="body" index="c0Qz3" />
       </concept>
+      <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
+        <child id="842732463503928104" name="testStrategy" index="3GpDut" />
+      </concept>
+      <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
       <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.EmulatedInterruptKind" flags="ng" index="3_UBHe" />
@@ -589,6 +595,9 @@
       <property role="MHqn5" value="true" />
     </node>
     <node concept="2eh4Hv" id="2qGv$is1YnN" role="2Q9xDr" />
+    <node concept="12mU2y" id="2vBUIEivD0X" role="2Q9xDr">
+      <node concept="3GpDuo" id="2vBUIEivD0Y" role="3GpDut" />
+    </node>
     <node concept="2eOfOl" id="AO_S936VPn" role="2ePNbc">
       <property role="TrG5h" value="PlainCDemo" />
       <ref role="3oK8_y" node="OnnrMNmT2n" resolve="portable" />
