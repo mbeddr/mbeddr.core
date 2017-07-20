@@ -5,13 +5,9 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
-  <facets>
-    <facet planModel="r:8bed4b02-7437-49bf-bfa1-4f220b72fa26(com.mbeddr.xmodel.plan.genplan)" type="generator" />
-  </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)</dependency>
-    <dependency reexport="false">ba2ac496-8745-40ba-babe-060b0c8daaad(com.mbeddr.xmodel.plan)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:3c648e74-bfd0-47ab-a27b-a7ece174dc55:com.mbeddr.analyses.acsl" version="0" />
@@ -124,7 +120,6 @@
     <module reference="4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)" version="0" />
     <module reference="2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)" version="0" />
     <module reference="30d40e06-2249-4bd3-b8ab-109459f5021f(com.mbeddr.ext.units.runtime)" version="0" />
-    <module reference="ba2ac496-8745-40ba-babe-060b0c8daaad(com.mbeddr.xmodel.plan)" version="0" />
     <module reference="b87ff58e-456e-4d51-9ed6-4090f4e7b51c(mbeddr.tutorial.main)" version="0" />
   </dependencyVersions>
 </solution>
