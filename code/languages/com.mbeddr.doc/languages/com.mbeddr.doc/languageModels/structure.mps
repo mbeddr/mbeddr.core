@@ -1652,5 +1652,20 @@
       <ref role="20lvS9" to="tp25:nJmxU5cSSu" resolve="ModuleIdentity" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2CRkjeimvKE">
+    <property role="EcuMT" value="3041989355252612138" />
+    <property role="3GE5qa" value="structure" />
+    <property role="TrG5h" value="DocumentRefSection" />
+    <property role="34LRSv" value="ExternalDocRef" />
+    <property role="R4oN_" value="Not visible for end user and only used for including external documents links in table of contents" />
+    <ref role="1TJDcQ" node="2TZO3Dbv6Ju" resolve="AbstractSection" />
+    <node concept="1TJgyj" id="2CRkjeinZAw" role="1TKVEi">
+      <property role="IQ2ns" value="3041989355253004704" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="externalDocument" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5gTlpaky5gD" resolve="AbstractExport" />
+    </node>
+  </node>
 </model>
 
