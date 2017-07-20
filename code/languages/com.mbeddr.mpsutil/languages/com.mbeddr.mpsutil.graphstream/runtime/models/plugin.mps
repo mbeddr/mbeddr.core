@@ -927,7 +927,7 @@
   <node concept="tC5Ba" id="bhVSeGf9hE">
     <property role="TrG5h" value="ViewInGraphstreamGroup" />
     <property role="1XlLyE" value="true" />
-    <property role="2f7twF" value="Graphstream" />
+    <property role="2f7twF" value="View Graph" />
     <property role="1rdrE6" value="true" />
     <node concept="2OiAzN" id="bhVSeGf9rc" role="ftER_">
       <node concept="2OiTZ2" id="bhVSeGf9rd" role="2Oj6PV">
