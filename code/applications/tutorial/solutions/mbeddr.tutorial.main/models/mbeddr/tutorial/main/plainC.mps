@@ -7,9 +7,7 @@
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
-  <imports>
-    <import index="j73t" ref="r:8bed4b02-7437-49bf-bfa1-4f220b72fa26(com.mbeddr.xmodel.plan.genplan)" />
-  </imports>
+  <imports />
   <registry>
     <language id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units">
       <concept id="5348704582971040037" name="com.mbeddr.ext.units.structure.UnitConfigItem" flags="ng" index="2eh4Hv" />
