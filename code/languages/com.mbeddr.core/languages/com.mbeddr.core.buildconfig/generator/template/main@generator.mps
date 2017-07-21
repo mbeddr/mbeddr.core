@@ -8,7 +8,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="4" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
@@ -2215,7 +2215,7 @@
     <node concept="3G52F3" id="1it8M3uXgNN" role="12RR68">
       <property role="TrG5h" value="TARGET" />
       <property role="12Lnk_" value="=" />
-      <property role="3G5mJX" value="targetPlatform" />
+      <property role="3G5mJX" value="target" />
       <node concept="1WS0z7" id="1it8M3uXmnr" role="lGtFl">
         <node concept="3JmXsc" id="1it8M3uXmnu" role="3Jn$fo">
           <node concept="3clFbS" id="1it8M3uXmnv" role="2VODD2">

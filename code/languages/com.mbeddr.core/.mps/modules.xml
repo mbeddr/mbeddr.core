@@ -53,6 +53,37 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core.performance/test.ts.core.performance.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.core/core.msd" folder="tests" />
       <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.mpsutil.inca/benchmark/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
+      <modulePath path="$smartbase.artifacts$/com.mbeddr.platform/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$smartbase.artifacts$/com.mbeddr.platform/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar!/META-INF/module.xml" folder="core.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbddr.core.buildconfig.pluginSolution.jar!/META-INF/module.xml" folder="core-extended.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.buildconfig.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.checks.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.cinterpreter.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.debugger.gdb.jar!/META-INF/module.xml" folder="core.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.dependencies.jar!/META-INF/module.xml" folder="core.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.embedded.jar!/META-INF/module.xml" folder="core-extended" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.runtime.jar!/META-INF/module.xml" folder="core.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.interpreterdebugger.rt.jar!/META-INF/module.xml" folder="core.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.legacy.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.legacy.pluginSolution.jar!/META-INF/module.xml" folder="core.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.make.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.gen.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.pluginSolution.jar!/META-INF/module.xml" folder="core.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.pointers.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.qa.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.runconfiguration.pluginSolution.jar!/META-INF/module.xml" folder="core.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.statements.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.statements.pluginSolution.jar!/META-INF/module.xml" folder="core.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.stdlib.jar!/META-INF/module.xml" folder="" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.udt.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.unittest.jar!/META-INF/module.xml" folder="core-extended" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.unittest.pluginSolution.jar!/META-INF/module.xml" folder="core-extended.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.util.jar!/META-INF/module.xml" folder="core-extended" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.util.pluginSolution.jar!/META-INF/module.xml" folder="core-extended.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/com.mbeddt.core.expressions.pluginSolution.jar!/META-INF/module.xml" folder="core.solutions" />
+      <modulePath path="$smartbase.artifacts$/mbeddr/mbeddr.core/languages/com.mbeddr.core/core.devkit" folder="" />
     </projectModules>
   </component>
 </project>
