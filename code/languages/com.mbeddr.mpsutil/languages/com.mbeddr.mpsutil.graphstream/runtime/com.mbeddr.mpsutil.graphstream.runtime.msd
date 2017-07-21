@@ -9,6 +9,7 @@
       <sourceRoot location="gs-algo-1.3.jar" />
       <sourceRoot location="gs-core-1.3.jar" />
       <sourceRoot location="gs-ui-1.3.jar" />
+      <sourceRoot location="jgraphx-3.7.4.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
@@ -16,6 +17,7 @@
     <stubModelEntry path="${module}/lib/gs-algo-1.3.jar" />
     <stubModelEntry path="${module}/lib/gs-core-1.3.jar" />
     <stubModelEntry path="${module}/lib/gs-ui-1.3.jar" />
+    <stubModelEntry path="${module}/lib/jgraphx-3.7.4.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

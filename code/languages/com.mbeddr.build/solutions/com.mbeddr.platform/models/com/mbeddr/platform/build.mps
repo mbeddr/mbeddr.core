@@ -7410,6 +7410,28 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="4HqDKleBpOQ" role="3bR37C">
+          <node concept="1BurEX" id="4HqDKleBpOR" role="1SiIV1">
+            <node concept="398BVA" id="4HqDKleBpOB" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="4HqDKleBpOC" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4HqDKleBpOD" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.graphstream" />
+                  <node concept="2Ry0Ak" id="4HqDKleBpOE" role="2Ry0An">
+                    <property role="2Ry0Am" value="runtime" />
+                    <node concept="2Ry0Ak" id="4HqDKleBpOF" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                      <node concept="2Ry0Ak" id="4HqDKleBpOG" role="2Ry0An">
+                        <property role="2Ry0Am" value="jgraphx-3.7.4.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5BXRi0X3p58" role="2G$12L">
         <property role="BnDLt" value="true" />
