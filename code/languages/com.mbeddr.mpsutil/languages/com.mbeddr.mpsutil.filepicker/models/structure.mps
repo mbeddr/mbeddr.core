@@ -16,6 +16,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
       </concept>
@@ -123,6 +124,11 @@
     <property role="34LRSv" value="solution relative file picker" />
     <property role="EcuMT" value="6156524541423588207" />
     <ref role="1TJDcQ" node="5Wocj7wnotA" resolve="AbstractFilePicker" />
+  </node>
+  <node concept="PlHQZ" id="51aJIRsy1$U">
+    <property role="EcuMT" value="5785646600127256890" />
+    <property role="3GE5qa" value="pathAndFile" />
+    <property role="TrG5h" value="IPathVariableProvider" />
   </node>
 </model>
 
