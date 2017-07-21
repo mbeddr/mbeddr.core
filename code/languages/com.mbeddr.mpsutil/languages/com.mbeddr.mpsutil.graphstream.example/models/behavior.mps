@@ -9,9 +9,9 @@
   <imports>
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" />
     <import index="tirk" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.swingViewer(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="z51m" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper.de.itemis.graphstreamwrapper.example(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="udin" ref="r:fe8ee6c8-7e5c-4efd-b608-c5ea6827be30(com.mbeddr.mpsutil.graphstream.runtime.plugin)" />
-    <import index="1lk9" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="l5np" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper.example(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="ou6g" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper.layout.hierarchical(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="thhq" ref="r:f4b2cfe1-da62-4992-a88f-cc8c90918a31(com.mbeddr.mpsutil.graphstream.example.structure)" implicit="true" />
   </imports>
   <registry>
@@ -126,12 +126,12 @@
             <ref role="37wK5l" to="udin:64_1OWe$XBJ" resolve="getMPSHotfixedView" />
             <ref role="1Pybhc" to="udin:64_1OWe$WQQ" resolve="ViewHelper" />
             <node concept="2YIFZM" id="64_1OWe_3Hs" role="37wK5m">
-              <ref role="37wK5l" to="z51m:~ExampleGraph.getExampleGraphCreator():de.itemis.graphstreamwrapper.GraphCreator" resolve="getExampleGraphCreator" />
-              <ref role="1Pybhc" to="z51m:~ExampleGraph" resolve="ExampleGraph" />
+              <ref role="1Pybhc" to="l5np:~ExampleGraph" resolve="ExampleGraph" />
+              <ref role="37wK5l" to="l5np:~ExampleGraph.getExampleGraphCreator():de.itemis.graphstreamwrapper.GraphCreator" resolve="getExampleGraphCreator" />
             </node>
-            <node concept="2ShNRf" id="64_1OWeAsF7" role="37wK5m">
-              <node concept="1pGfFk" id="64_1OWeAsQb" role="2ShVmc">
-                <ref role="37wK5l" to="1lk9:~TreeLayout.&lt;init&gt;()" resolve="TreeLayout" />
+            <node concept="2ShNRf" id="4HqDKle_Ew0" role="37wK5m">
+              <node concept="1pGfFk" id="4HqDKle_KyN" role="2ShVmc">
+                <ref role="37wK5l" to="ou6g:~HierarchicalLayoutJGraphX.&lt;init&gt;()" resolve="HierarchicalLayoutJGraphX" />
               </node>
             </node>
             <node concept="10Nm6u" id="64_1OWe_cQV" role="37wK5m" />
