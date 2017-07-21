@@ -12,6 +12,7 @@
     <import index="udin" ref="r:fe8ee6c8-7e5c-4efd-b608-c5ea6827be30(com.mbeddr.mpsutil.graphstream.runtime.plugin)" />
     <import index="l5np" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper.example(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="ou6g" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper.layout.hierarchical(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="1lk9" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="thhq" ref="r:f4b2cfe1-da62-4992-a88f-cc8c90918a31(com.mbeddr.mpsutil.graphstream.example.structure)" implicit="true" />
   </imports>
   <registry>
@@ -29,6 +30,11 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -42,6 +48,12 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -58,6 +70,10 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -121,17 +137,36 @@
       <ref role="13i0hy" to="7noo:4DzE9lEtSAp" resolve="getView" />
       <node concept="3Tm1VV" id="4DzE9lEv6a9" role="1B3o_S" />
       <node concept="3clFbS" id="4DzE9lEv6ae" role="3clF47">
+        <node concept="3cpWs8" id="12w2qwHDxb5" role="3cqZAp">
+          <node concept="3cpWsn" id="12w2qwHDxb6" role="3cpWs9">
+            <property role="TrG5h" value="gc" />
+            <node concept="3uibUv" id="12w2qwHDxb7" role="1tU5fm">
+              <ref role="3uigEE" to="1lk9:~GraphCreator" resolve="GraphCreator" />
+            </node>
+            <node concept="2YIFZM" id="12w2qwHDxjQ" role="33vP2m">
+              <ref role="1Pybhc" to="l5np:~ExampleGraph" resolve="ExampleGraph" />
+              <ref role="37wK5l" to="l5np:~ExampleGraph.getExampleGraphCreator():de.itemis.graphstreamwrapper.GraphCreator" resolve="getExampleGraphCreator" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="4DzE9lEv6br" role="3cqZAp">
           <node concept="2YIFZM" id="64_1OWe_3Gg" role="3cqZAk">
             <ref role="37wK5l" to="udin:64_1OWe$XBJ" resolve="getMPSHotfixedView" />
             <ref role="1Pybhc" to="udin:64_1OWe$WQQ" resolve="ViewHelper" />
-            <node concept="2YIFZM" id="64_1OWe_3Hs" role="37wK5m">
-              <ref role="1Pybhc" to="l5np:~ExampleGraph" resolve="ExampleGraph" />
-              <ref role="37wK5l" to="l5np:~ExampleGraph.getExampleGraphCreator():de.itemis.graphstreamwrapper.GraphCreator" resolve="getExampleGraphCreator" />
+            <node concept="37vLTw" id="12w2qwHDxpW" role="37wK5m">
+              <ref role="3cqZAo" node="12w2qwHDxb6" resolve="gc" />
             </node>
             <node concept="2ShNRf" id="4HqDKle_Ew0" role="37wK5m">
               <node concept="1pGfFk" id="4HqDKle_KyN" role="2ShVmc">
-                <ref role="37wK5l" to="ou6g:~HierarchicalLayoutJGraphX.&lt;init&gt;()" resolve="HierarchicalLayoutJGraphX" />
+                <ref role="37wK5l" to="ou6g:~HierarchicalLayoutJGraphX.&lt;init&gt;(org.graphstream.graph.Graph)" resolve="HierarchicalLayoutJGraphX" />
+                <node concept="2OqwBi" id="12w2qwHDxBP" role="37wK5m">
+                  <node concept="37vLTw" id="12w2qwHDxuf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="12w2qwHDxb6" resolve="gc" />
+                  </node>
+                  <node concept="liA8E" id="12w2qwHDxUG" role="2OqNvi">
+                    <ref role="37wK5l" to="1lk9:~GraphCreator.getGraph():org.graphstream.graph.Graph" resolve="getGraph" />
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="10Nm6u" id="64_1OWe_cQV" role="37wK5m" />
