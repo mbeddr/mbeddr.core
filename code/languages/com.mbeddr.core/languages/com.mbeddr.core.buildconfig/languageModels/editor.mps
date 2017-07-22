@@ -131,7 +131,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <reference id="1081339532145" name="keyMap" index="34QXea" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
@@ -2309,7 +2308,7 @@
     <node concept="3EZMnI" id="51p726VIDRl" role="2wV5jI">
       <node concept="l2Vlx" id="51p726VIDRn" role="2iSdaV" />
       <node concept="PMmxH" id="7FeXv2EyzUE" role="3EZMnx">
-        <ref role="PMmxG" node="7FeXv2Evj8Q" resolve="ExternalPath_path" />
+        <ref role="PMmxG" node="7FeXv2Evj8Q" resolve="ExternalPath_pathPicker" />
       </node>
       <node concept="3F0ifn" id="2LP1MbL635F" role="3EZMnx">
         <property role="3F0ifm" value="target:" />
@@ -2391,7 +2390,7 @@
         <ref role="1NtTu8" to="51wr:51p726V_PmM" resolve="namePattern" />
       </node>
       <node concept="PMmxH" id="7FeXv2Eyz_I" role="3EZMnx">
-        <ref role="PMmxG" node="7FeXv2Evj8Q" resolve="ExternalPath_path" />
+        <ref role="PMmxG" node="7FeXv2Evj8Q" resolve="ExternalPath_pathPicker" />
       </node>
     </node>
   </node>
@@ -2406,7 +2405,7 @@
   </node>
   <node concept="PKFIW" id="7FeXv2Evj8Q">
     <property role="3GE5qa" value="binary" />
-    <property role="TrG5h" value="ExternalPath_path" />
+    <property role="TrG5h" value="ExternalPath_pathPicker" />
     <ref role="1XX52x" to="51wr:5lP9ZVaAU_u" resolve="ExternalPath" />
     <node concept="3EZMnI" id="7FeXv2Evjzp" role="2wV5jI">
       <node concept="l2Vlx" id="7FeXv2Evjzq" role="2iSdaV" />
@@ -2414,7 +2413,7 @@
         <property role="3F0ifm" value="path:" />
       </node>
       <node concept="3F1sOY" id="1hPQTEM2pIQ" role="3EZMnx">
-        <ref role="1NtTu8" to="51wr:1hPQTELVfEa" resolve="picker" />
+        <ref role="1NtTu8" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
       </node>
     </node>
   </node>
@@ -2422,37 +2421,16 @@
     <property role="3GE5qa" value="binary" />
     <ref role="1XX52x" to="51wr:5lP9ZVaAU_u" resolve="ExternalPath" />
     <node concept="PMmxH" id="7FeXv2Evk1k" role="2wV5jI">
-      <ref role="PMmxG" node="7FeXv2Evj8Q" resolve="ExternalPath_path" />
+      <ref role="PMmxG" node="7FeXv2Evj8Q" resolve="ExternalPath_pathPicker" />
     </node>
   </node>
   <node concept="24kQdi" id="1hPQTEM4WpC">
-    <ref role="1XX52x" to="51wr:1hPQTEM4W9y" resolve="MakeVarDirPicker" />
+    <ref role="1XX52x" to="51wr:1hPQTEM4W9y" resolve="MakeTimeDirPicker" />
     <node concept="3EZMnI" id="4eXJ6EOjCfB" role="2wV5jI">
       <node concept="l2Vlx" id="4eXJ6EOjCfC" role="2iSdaV" />
-      <node concept="3F0ifn" id="4eXJ6EOjCfD" role="3EZMnx">
-        <property role="3F0ifm" value="$(" />
-        <node concept="11LMrY" id="4eXJ6EOjCfE" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="Vb9p2" id="1hPQTEM9w4a" role="3F10Kt" />
-      </node>
-      <node concept="3F0A7n" id="4eXJ6EOjCfF" role="3EZMnx">
-        <ref role="1NtTu8" to="51wr:4eXJ6EO9ZKy" resolve="makeVar" />
-      </node>
-      <node concept="3F0ifn" id="4eXJ6EOjCfG" role="3EZMnx">
-        <property role="3F0ifm" value=")/" />
-        <node concept="11L4FC" id="4eXJ6EOjCfH" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="4eXJ6EOjCfI" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="Vb9p2" id="1hPQTEM9w66" role="3F10Kt" />
-      </node>
       <node concept="3F0A7n" id="4eXJ6EOjCfJ" role="3EZMnx">
         <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="68mc:5lKnBeAtODI" resolve="path" />
-        <ref role="34QXea" to="r4b4:50N_nP$el$O" resolve="openOrEdit" />
       </node>
     </node>
     <node concept="3EZMnI" id="2rWX5ToCYsa" role="6VMZX">
