@@ -2975,11 +2975,7 @@
               </node>
               <node concept="Ea8Gl" id="x1qBlirAP" role="3XIe9u">
                 <node concept="7CXmI" id="x1qBlirCk" role="lGtFl">
-                  <node concept="1TM$A" id="6qOUCDpKJAr" role="7EUXB">
-                    <node concept="2PYRI3" id="6qOUCDpKJAs" role="3lydEf">
-                      <ref role="39XzEq" to="j807:$mHaGow4iO" />
-                    </node>
-                  </node>
+                  <node concept="1TM$A" id="6qOUCDpKJAr" role="7EUXB" />
                 </node>
               </node>
             </node>
