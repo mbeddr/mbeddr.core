@@ -24,10 +24,6 @@
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
-        <child id="8849280731831724323" name="externalIncludes" index="3ghLNj" />
-        <child id="4798312830023267837" name="externalLibs" index="3CaRR_" />
-        <child id="5789689727168239017" name="externalSources" index="3FN$A8" />
-        <child id="5789689727170551526" name="externalBuilds" index="3FSSb7" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
         <property id="3431613015799084476" name="isTest" index="iO3LB" />
@@ -39,29 +35,8 @@
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
-      <concept id="6157872040773396830" name="com.mbeddr.core.buildconfig.structure.ExternalPath" flags="ng" index="2vVCUw">
-        <property id="6157872040773396831" name="path_old" index="2vVCUx" />
-        <child id="1474325910490249866" name="picker" index="2_Ai4g" />
-      </concept>
       <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
         <reference id="8719112291175211414" name="template" index="2xfifS" />
-      </concept>
-      <concept id="1474325910492791394" name="com.mbeddr.core.buildconfig.structure.MakeTimeDirPicker" flags="ng" index="2ApxBS">
-        <property id="4881264737614560290" name="makeVar" index="3RA$18" />
-      </concept>
-      <concept id="8849280731830389372" name="com.mbeddr.core.buildconfig.structure.ExternalItem" flags="ng" index="3gIRYc">
-        <property id="8849280731830394174" name="value" index="3gIQze" />
-      </concept>
-      <concept id="7171543680058566278" name="com.mbeddr.core.buildconfig.structure.ExternalLibraries" flags="ng" index="1A$dpX">
-        <child id="8849280731830927288" name="libraryPaths" index="3gGOD8" />
-        <child id="8849280731830394219" name="libraries" index="3gIQyr" />
-      </concept>
-      <concept id="5789689727168239024" name="com.mbeddr.core.buildconfig.structure.ExternalSourcePath" flags="ng" index="3FN$Ah">
-        <property id="5789689727168239026" name="namePattern" index="3FN$Aj" />
-      </concept>
-      <concept id="5789689727170551243" name="com.mbeddr.core.buildconfig.structure.ExternalBuild" flags="ng" index="3FSS7E">
-        <property id="3203474556599525173" name="target" index="3tqdwn" />
-        <property id="3203474556599525180" name="options" index="3tqdwu" />
       </concept>
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
@@ -109,17 +84,6 @@
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
       </concept>
     </language>
-    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
-      </concept>
-      <concept id="4881264737620519319" name="com.mbeddr.mpsutil.filepicker.structure.FileSystemDirPicker" flags="ng" index="3RfPnX" />
-      <concept id="4881264737614560289" name="com.mbeddr.mpsutil.filepicker.structure.MacroFolderPicker" flags="ng" index="3RA$1b">
-        <property id="4881264737614560290" name="macro" index="3RA$19" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -160,81 +124,6 @@
       </node>
       <node concept="2v9HqM" id="58DJDcMiPvv" role="2eOfOg">
         <ref role="2v9HqP" node="58DJDcMiMVu" resolve="Dummy" />
-      </node>
-      <node concept="3FSS7E" id="1hPQTELXEko" role="3FSSb7">
-        <property role="2vVCUx" value="${path_var:smartbase.artifacts}/test" />
-        <property role="3tqdwn" value="XXX" />
-        <property role="3tqdwu" value="-f" />
-        <node concept="3RA$1b" id="4_vItr5cz7B" role="2_Ai4g">
-          <property role="1RwFax" value="true" />
-          <property role="3kgbRO" value="false" />
-          <property role="3RA$19" value="smartbase.artifacts" />
-          <property role="3N1Lgt" value="test" />
-        </node>
-      </node>
-      <node concept="1A$dpX" id="1hPQTELXEkq" role="3CaRR_">
-        <node concept="3gIRYc" id="1hPQTELXEkJ" role="3gIQyr">
-          <property role="3gIQze" value="iii" />
-        </node>
-        <node concept="2vVCUw" id="1hPQTEM4VUu" role="3gGOD8">
-          <property role="2vVCUx" value="${make_var:HOME}/Git/proj/include" />
-          <node concept="2ApxBS" id="4_vItr5cz7z" role="2_Ai4g">
-            <property role="1RwFax" value="false" />
-            <property role="3kgbRO" value="false" />
-            <property role="3RA$18" value="HOME" />
-            <property role="3N1Lgt" value="Git/proj/include/$target$" />
-          </node>
-        </node>
-        <node concept="2vVCUw" id="51aJIRsCAsx" role="3gGOD8">
-          <node concept="3RfPnX" id="51aJIRsCAsR" role="2_Ai4g">
-            <property role="1RwFax" value="true" />
-            <property role="3kgbRO" value="false" />
-            <property role="3N1Lgt" value="asdfasdf/asdfasdf/" />
-          </node>
-        </node>
-        <node concept="2vVCUw" id="4_vItr5cz_d" role="3gGOD8">
-          <property role="2vVCUx" value="${path_var:smartbase.artifacts}/xtensa-lx106-elf-$host$" />
-          <node concept="3RA$1b" id="4_vItr5cz_e" role="2_Ai4g">
-            <property role="1RwFax" value="true" />
-            <property role="3kgbRO" value="false" />
-            <property role="3RA$19" value="smartbase.artifacts" />
-            <property role="3N1Lgt" value="xtensa-lx106-elf-$host$" />
-          </node>
-        </node>
-        <node concept="2vVCUw" id="1hPQTEM4W8M" role="3gGOD8">
-          <property role="2vVCUx" value="${path_var:smartbase.code}/lib/$target" />
-          <node concept="3RA$1b" id="4_vItr5cz7_" role="2_Ai4g">
-            <property role="1RwFax" value="true" />
-            <property role="3kgbRO" value="false" />
-            <property role="3RA$19" value="smartbase.code" />
-            <property role="3N1Lgt" value="lib/$target$" />
-          </node>
-        </node>
-        <node concept="2vVCUw" id="1hPQTEM9Hc4" role="3gGOD8">
-          <node concept="3RA$1b" id="1hPQTEM9Hcm" role="2_Ai4g">
-            <property role="1RwFax" value="true" />
-            <property role="3kgbRO" value="false" />
-            <property role="3RA$19" value="smartbase.artifacts" />
-            <property role="3N1Lgt" value="xtensa-lx106-elf-$target$" />
-          </node>
-        </node>
-      </node>
-      <node concept="2vVCUw" id="1hPQTELXEk$" role="3ghLNj">
-        <property role="2vVCUx" value="werwer" />
-        <node concept="3RfPnX" id="4_vItr5cz7A" role="2_Ai4g">
-          <property role="1RwFax" value="true" />
-          <property role="3kgbRO" value="false" />
-          <property role="3N1Lgt" value="werwer" />
-        </node>
-      </node>
-      <node concept="3FN$Ah" id="1hPQTELXEkE" role="3FN$A8">
-        <property role="3FN$Aj" value="*.c" />
-        <property role="2vVCUx" value="ppppp" />
-        <node concept="3RfPnX" id="4_vItr5cz7C" role="2_Ai4g">
-          <property role="1RwFax" value="true" />
-          <property role="3kgbRO" value="false" />
-          <property role="3N1Lgt" value="ppppp" />
-        </node>
       </node>
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bNgaa" role="2Q9xDr">

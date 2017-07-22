@@ -23,6 +23,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -642,16 +643,21 @@
                                 <property role="Xl_RC" value=" " />
                               </node>
                               <node concept="3cpWs3" id="3_q$DSkzMK0" role="3uHU7B">
+                                <node concept="2OqwBi" id="6fD9I8g1mWG" role="3uHU7w">
+                                  <node concept="2OqwBi" id="3_q$DSkzMK2" role="2Oq$k0">
+                                    <node concept="2GrUjf" id="3_q$DSkzMK3" role="2Oq$k0">
+                                      <ref role="2Gs0qQ" node="3_q$DSkzMJR" resolve="include" />
+                                    </node>
+                                    <node concept="3TrEf2" id="6fD9I8g1mna" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
+                                    </node>
+                                  </node>
+                                  <node concept="2qgKlT" id="6fD9I8g1not" role="2OqNvi">
+                                    <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                                  </node>
+                                </node>
                                 <node concept="37vLTw" id="3_q$DSkzMK1" role="3uHU7B">
                                   <ref role="3cqZAo" node="3_q$DSkzMJN" resolve="result" />
-                                </node>
-                                <node concept="2OqwBi" id="3_q$DSkzMK2" role="3uHU7w">
-                                  <node concept="2GrUjf" id="3_q$DSkzMK3" role="2Oq$k0">
-                                    <ref role="2Gs0qQ" node="3_q$DSkzMJR" resolve="include" />
-                                  </node>
-                                  <node concept="2qgKlT" id="5lP9ZVaKD4S" role="2OqNvi">
-                                    <ref role="37wK5l" to="ahli:5lP9ZVaAXK7" resolve="getFullPath" />
-                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -1008,10 +1014,15 @@
                 <node concept="3zFVjK" id="2Rx8UqeImwY" role="3zH0cK">
                   <node concept="3clFbS" id="2Rx8UqeImwZ" role="2VODD2">
                     <node concept="3clFbF" id="Qn6HUAzRxo" role="3cqZAp">
-                      <node concept="2OqwBi" id="Qn6HUAzR$1" role="3clFbG">
-                        <node concept="30H73N" id="Qn6HUAzRxn" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="5lP9ZVaKE0j" role="2OqNvi">
-                          <ref role="37wK5l" to="ahli:5lP9ZVaAXK7" resolve="getFullPath" />
+                      <node concept="2OqwBi" id="6fD9I8g1q8Y" role="3clFbG">
+                        <node concept="2OqwBi" id="Qn6HUAzR$1" role="2Oq$k0">
+                          <node concept="30H73N" id="Qn6HUAzRxn" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="6fD9I8g1px5" role="2OqNvi">
+                            <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="6fD9I8g1qJB" role="2OqNvi">
+                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
@@ -1381,16 +1392,21 @@
                                 <property role="Xl_RC" value=" " />
                               </node>
                               <node concept="3cpWs3" id="2Rx8UqeIBib" role="3uHU7B">
+                                <node concept="2OqwBi" id="6fD9I8g1s3u" role="3uHU7w">
+                                  <node concept="2OqwBi" id="2Rx8UqeIBid" role="2Oq$k0">
+                                    <node concept="2GrUjf" id="2Rx8UqeIBie" role="2Oq$k0">
+                                      <ref role="2Gs0qQ" node="2Rx8UqeIBi2" resolve="include" />
+                                    </node>
+                                    <node concept="3TrEf2" id="6fD9I8g1rnJ" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
+                                    </node>
+                                  </node>
+                                  <node concept="2qgKlT" id="6fD9I8g1svy" role="2OqNvi">
+                                    <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                                  </node>
+                                </node>
                                 <node concept="37vLTw" id="2Rx8UqeIBic" role="3uHU7B">
                                   <ref role="3cqZAo" node="2Rx8UqeIBhY" resolve="result" />
-                                </node>
-                                <node concept="2OqwBi" id="2Rx8UqeIBid" role="3uHU7w">
-                                  <node concept="2GrUjf" id="2Rx8UqeIBie" role="2Oq$k0">
-                                    <ref role="2Gs0qQ" node="2Rx8UqeIBi2" resolve="include" />
-                                  </node>
-                                  <node concept="2qgKlT" id="5lP9ZVaKDys" role="2OqNvi">
-                                    <ref role="37wK5l" to="ahli:5lP9ZVaAXK7" resolve="getFullPath" />
-                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -1628,16 +1644,21 @@
                                 <property role="Xl_RC" value=" " />
                               </node>
                               <node concept="3cpWs3" id="2Rx8UqeJ6rq" role="3uHU7B">
+                                <node concept="2OqwBi" id="6fD9I8g1usL" role="3uHU7w">
+                                  <node concept="2OqwBi" id="2Rx8UqeJ6rs" role="2Oq$k0">
+                                    <node concept="2GrUjf" id="2Rx8UqeJ6rt" role="2Oq$k0">
+                                      <ref role="2Gs0qQ" node="2Rx8UqeJ6rh" resolve="libPath" />
+                                    </node>
+                                    <node concept="3TrEf2" id="6fD9I8g1tP1" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
+                                    </node>
+                                  </node>
+                                  <node concept="2qgKlT" id="6fD9I8g1v8d" role="2OqNvi">
+                                    <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                                  </node>
+                                </node>
                                 <node concept="37vLTw" id="2Rx8UqeJ6rr" role="3uHU7B">
                                   <ref role="3cqZAo" node="2Rx8UqeJ6rd" resolve="result" />
-                                </node>
-                                <node concept="2OqwBi" id="2Rx8UqeJ6rs" role="3uHU7w">
-                                  <node concept="2GrUjf" id="2Rx8UqeJ6rt" role="2Oq$k0">
-                                    <ref role="2Gs0qQ" node="2Rx8UqeJ6rh" resolve="libPath" />
-                                  </node>
-                                  <node concept="2qgKlT" id="5lP9ZVaKEnv" role="2OqNvi">
-                                    <ref role="37wK5l" to="ahli:5lP9ZVaAXK7" resolve="getFullPath" />
-                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -3064,16 +3085,21 @@
                     <node concept="3clFbF" id="2Rx8UqeMq_i" role="3cqZAp">
                       <node concept="d57v9" id="2Rx8UqeMq_j" role="3clFbG">
                         <node concept="3cpWs3" id="2Rx8UqeMq_k" role="37vLTx">
+                          <node concept="2OqwBi" id="6fD9I8g12UO" role="3uHU7B">
+                            <node concept="2OqwBi" id="2Rx8UqeMq_m" role="2Oq$k0">
+                              <node concept="2GrUjf" id="2Rx8UqeMq_n" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="2Rx8UqeMq_b" resolve="build" />
+                              </node>
+                              <node concept="3TrEf2" id="6fD9I8g12cZ" role="2OqNvi">
+                                <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
+                              </node>
+                            </node>
+                            <node concept="2qgKlT" id="6fD9I8g13GL" role="2OqNvi">
+                              <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                            </node>
+                          </node>
                           <node concept="Xl_RD" id="2Rx8UqeMq_l" role="3uHU7w">
                             <property role="Xl_RC" value=" " />
-                          </node>
-                          <node concept="2OqwBi" id="2Rx8UqeMq_m" role="3uHU7B">
-                            <node concept="2GrUjf" id="2Rx8UqeMq_n" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="2Rx8UqeMq_b" resolve="build" />
-                            </node>
-                            <node concept="2qgKlT" id="5lP9ZVaI2Am" role="2OqNvi">
-                              <ref role="37wK5l" to="ahli:5lP9ZVaAXK7" resolve="getFullPath" />
-                            </node>
                           </node>
                         </node>
                         <node concept="3cpWsa" id="2Rx8UqeMq_p" role="37vLTJ">
@@ -3864,16 +3890,21 @@
                     <node concept="3clFbF" id="2Rx8UqeMqBV" role="3cqZAp">
                       <node concept="d57v9" id="2Rx8UqeMqBW" role="3clFbG">
                         <node concept="3cpWs3" id="2Rx8UqeMqBX" role="37vLTx">
+                          <node concept="2OqwBi" id="6fD9I8g15b8" role="3uHU7B">
+                            <node concept="2OqwBi" id="2Rx8UqeMqBZ" role="2Oq$k0">
+                              <node concept="2GrUjf" id="2Rx8UqeMqC0" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="2Rx8UqeMqBO" resolve="build" />
+                              </node>
+                              <node concept="3TrEf2" id="6fD9I8g14tj" role="2OqNvi">
+                                <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
+                              </node>
+                            </node>
+                            <node concept="2qgKlT" id="6fD9I8g15X5" role="2OqNvi">
+                              <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                            </node>
+                          </node>
                           <node concept="Xl_RD" id="2Rx8UqeMqBY" role="3uHU7w">
                             <property role="Xl_RC" value=" " />
-                          </node>
-                          <node concept="2OqwBi" id="2Rx8UqeMqBZ" role="3uHU7B">
-                            <node concept="2GrUjf" id="2Rx8UqeMqC0" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="2Rx8UqeMqBO" resolve="build" />
-                            </node>
-                            <node concept="2qgKlT" id="5lP9ZVaI36T" role="2OqNvi">
-                              <ref role="37wK5l" to="ahli:5lP9ZVaAXK7" resolve="getFullPath" />
-                            </node>
                           </node>
                         </node>
                         <node concept="3cpWsa" id="2Rx8UqeMqC2" role="37vLTJ">
