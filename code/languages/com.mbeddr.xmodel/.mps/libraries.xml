@@ -3,6 +3,22 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="mbeddr.cc">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.cc" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr.components">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.components" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mbeddr.core">
           <value>
             <Library>
@@ -16,6 +32,14 @@
             <Library>
               <option name="name" value="mbeddr.debug" />
               <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr.doc">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.doc" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc" />
             </Library>
           </value>
         </entry>

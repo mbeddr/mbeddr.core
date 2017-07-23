@@ -19,18 +19,13 @@
     <import index="7ynn" ref="r:8dc4c43c-6bba-4133-a20c-861c6aadfc20(com.mbeddr.mpsutil.review.generator.template.main@generator)" implicit="true" />
     <import index="xloc" ref="r:339c06ef-60c9-43c2-91c6-46cbdf95af1a(com.mbeddr.ext.components.mock.generator.template.main@generator)" implicit="true" />
     <import index="qopy" ref="r:9ec2c2a8-d0f8-4ecc-847a-3c08952107ca(com.mbeddr.ext.compositecomponents.generator.template.main@generator)" implicit="true" />
-    <import index="svjo" ref="r:51abddd1-d8c6-4327-8b7d-224746b8e705(com.mbeddr.analyses.cbmc.generator.nondet@generator)" implicit="true" />
-    <import index="clm3" ref="r:2ba86e6f-16fd-4611-a030-80eaabfd11ff(com.mbeddr.analyses.cbmc.statemachines.generator.template.main@generator)" implicit="true" />
     <import index="cjn1" ref="r:769ad9a0-f26a-4d17-9cc6-f3ae937bc774(com.mbeddr.ext.components.gen_nomw.generator.template.main@generator)" implicit="true" />
     <import index="ol92" ref="r:3a5367ae-3f46-4e7d-983f-868d317512c8(com.mbeddr.ext.statemachines.generator.template.generator.template.main@generator)" implicit="true" />
     <import index="wwzj" ref="r:637128de-64ad-426a-a747-b8bdf0b55cf6(com.mbeddr.ext.components.test.generator.template.main@generator)" implicit="true" />
-    <import index="o7g7" ref="r:e4e4b0dd-d94e-44bb-9f8f-d7d45fe6e705(com.mbeddr.analyses.cbmc.generator.main@generator)" implicit="true" />
-    <import index="1y62" ref="r:5b7638c6-3e08-4b2a-b705-73a9c5c0707f(com.mbeddr.analyses.cbmc.generator.stubbing@generator)" implicit="true" />
     <import index="2gc5" ref="r:ef72f028-14dc-4182-a491-68273037edb8(com.mbeddr.ext.math.generator.template.main@generator)" implicit="true" />
     <import index="nfik" ref="r:7db67fb8-d2c9-4e02-89e5-cbea9152661c(com.mbeddr.core.util.generator.template.main@generator)" implicit="true" />
     <import index="7cdw" ref="r:405d1e00-19b1-468a-8019-9871824c8e8f(com.mbeddr.cc.var.rt.generator.template.main@generator)" implicit="true" />
     <import index="eyis" ref="r:b06c14f6-4740-4931-ba2d-5197da1e8214(com.mbeddr.ext.units.generator.template.main@generator)" implicit="true" />
-    <import index="mv57" ref="r:03e0cff8-6209-4bb2-9366-8a111b7f4470(com.mbeddr.analyses.base.verification_conditions.generator.template.main@generator)" implicit="true" />
     <import index="z355" ref="r:7d3ffa21-31f6-467a-a5bf-c5294ac706db(com.mbeddr.cc.trace.generator.template.main@generator)" implicit="true" />
     <import index="a4by" ref="r:638e4431-d4fb-45ee-8ca9-e546a9462bf7(com.mbeddr.core.modules.generator.template.main@generator)" implicit="true" />
     <import index="9zqb" ref="r:af37fca1-798b-45df-aec5-ad383e112865(com.mbeddr.core.make.generator.template.main@generator)" implicit="true" />
@@ -69,7 +64,7 @@
     </language>
   </registry>
   <node concept="2VgMpV" id="3jTGQV$9VwA">
-    <property role="TrG5h" value="mbeddr.tutorial.main.defaultExtensions" />
+    <property role="TrG5h" value="allMbeddrPlan" />
     <node concept="2Pg1uL" id="3jTGQV$9VwB" role="2VgMA7">
       <node concept="2Pgd6e" id="3jTGQV$9VwC" role="1t_9vn" />
       <node concept="3Vl8EG" id="3jTGQV$9VwD" role="3VlUeB">
@@ -168,18 +163,6 @@
         <ref role="3Vl8EH" to="qopy:3ejBUtVm4dN" resolve="main" />
       </node>
     </node>
-    <node concept="2Pg1uL" id="3jTGQV$9Vxr" role="2VgMA7">
-      <node concept="2Pgd6e" id="3jTGQV$9Vxs" role="1t_9vn" />
-      <node concept="3Vl8EG" id="3jTGQV$9Vxt" role="3VlUeB">
-        <ref role="3Vl8EH" to="svjo:5E1$geH7ANk" resolve="nondetChoice" />
-      </node>
-    </node>
-    <node concept="2Pg1uL" id="3jTGQV$9Vxu" role="2VgMA7">
-      <node concept="2Pgd6e" id="3jTGQV$9Vxv" role="1t_9vn" />
-      <node concept="3Vl8EG" id="3jTGQV$9Vxw" role="3VlUeB">
-        <ref role="3Vl8EH" to="clm3:5hPfJKCsdfs" resolve="main" />
-      </node>
-    </node>
     <node concept="2Pg1uL" id="3jTGQV$9Vxx" role="2VgMA7">
       <node concept="2Pgd6e" id="3jTGQV$9Vxy" role="1t_9vn" />
       <node concept="3Vl8EG" id="3jTGQV$9Vxz" role="3VlUeB">
@@ -195,12 +178,6 @@
       <node concept="2Pgd6e" id="3jTGQV$9Vx_" role="1t_9vn" />
       <node concept="3Vl8EG" id="3jTGQV$9VxA" role="3VlUeB">
         <ref role="3Vl8EH" to="ol92:41KMvfcgcBH" resolve="statemachineTest2C" />
-      </node>
-    </node>
-    <node concept="2Pg1uL" id="3jTGQV$9VxE" role="2VgMA7">
-      <node concept="2Pgd6e" id="3jTGQV$9VxF" role="1t_9vn" />
-      <node concept="3Vl8EG" id="3jTGQV$9VxG" role="3VlUeB">
-        <ref role="3Vl8EH" to="svjo:5E1$geH7FwK" resolve="intervalNondetVar" />
       </node>
     </node>
     <node concept="2Pg1uL" id="3jTGQV$9VxH" role="2VgMA7">
@@ -235,21 +212,6 @@
     <node concept="2VgMA1" id="3jTGQV$9XDl" role="2VgMA7">
       <node concept="3ps74r" id="3jTGQV$9XIE" role="3ps6aC">
         <property role="TrG5h" value="componentsGen" />
-      </node>
-    </node>
-    <node concept="2Pg1uL" id="3jTGQV$9Vyk" role="2VgMA7">
-      <node concept="2Pgd6e" id="3jTGQV$9Vyl" role="1t_9vn" />
-      <node concept="3Vl8EG" id="3jTGQV$9Vym" role="3VlUeB">
-        <ref role="3Vl8EH" to="o7g7:1RY5dqNoqVf" resolve="main" />
-      </node>
-      <node concept="3Vl8EG" id="3jTGQV$9Vyn" role="3VlUeB">
-        <ref role="3Vl8EH" to="o7g7:7MMcIPluyqz" resolve="tl_patterns" />
-      </node>
-      <node concept="3Vl8EG" id="3jTGQV$9Vyo" role="3VlUeB">
-        <ref role="3Vl8EH" to="svjo:7MMcIPltSLe" resolve="basicNondetVar" />
-      </node>
-      <node concept="3Vl8EG" id="3jTGQV$9Vyp" role="3VlUeB">
-        <ref role="3Vl8EH" to="1y62:7DvJ5MZf7IE" resolve="stubbing_main" />
       </node>
     </node>
     <node concept="2Pg1uL" id="3jTGQV$9Vyq" role="2VgMA7">
@@ -355,15 +317,6 @@
       <node concept="2Pgd6e" id="3jTGQV$9Vzp" role="1t_9vn" />
       <node concept="3Vl8EG" id="3jTGQV$9Vzq" role="3VlUeB">
         <ref role="3Vl8EH" to="eyis:6Fg1ERkOkVz" resolve="main" />
-      </node>
-    </node>
-    <node concept="2Pg1uL" id="3jTGQV$9Vzx" role="2VgMA7">
-      <node concept="2Pgd6e" id="3jTGQV$9Vzy" role="1t_9vn" />
-      <node concept="3Vl8EG" id="3jTGQV$9Vzz" role="3VlUeB">
-        <ref role="3Vl8EH" to="mv57:5rSz5xRlRLk" resolve="main" />
-      </node>
-      <node concept="3Vl8EG" id="3jTGQV$9Vz$" role="3VlUeB">
-        <ref role="3Vl8EH" to="mv57:7MMcIPluyqz" resolve="tl_patterns" />
       </node>
     </node>
     <node concept="2Pg1uL" id="3jTGQV$9Vz_" role="2VgMA7">
