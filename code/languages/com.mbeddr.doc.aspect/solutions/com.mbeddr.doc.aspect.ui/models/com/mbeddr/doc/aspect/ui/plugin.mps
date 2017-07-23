@@ -1981,6 +1981,17 @@
     <node concept="2XrIbr" id="1IUlN8Q3KNO" role="2XNbBy">
       <property role="TrG5h" value="showDocumentation" />
       <node concept="3clFbS" id="1IUlN8Q3KNP" role="3clF47">
+        <node concept="3clFbJ" id="7BGk9BOW5Qw" role="3cqZAp">
+          <node concept="3clFbS" id="7BGk9BOW5Qy" role="3clFbx">
+            <node concept="3cpWs6" id="7BGk9BOW6Um" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="7BGk9BOW6$$" role="3clFbw">
+            <node concept="10Nm6u" id="7BGk9BOW6$G" role="3uHU7w" />
+            <node concept="37vLTw" id="7BGk9BOW6bZ" role="3uHU7B">
+              <ref role="3cqZAo" node="1IUlN8Q3LTr" resolve="selectedNode" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="7r8qu42ys8m" role="3cqZAp">
           <node concept="3clFbS" id="7r8qu42ys8o" role="3clFbx">
             <node concept="3cpWs6" id="7r8qu42ysvL" role="3cqZAp" />
