@@ -3708,32 +3708,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="3_DQCSSKWmR" role="3cqZAp">
-                <node concept="2OqwBi" id="3_DQCSSKWnE" role="3clFbG">
-                  <node concept="2OqwBi" id="3_DQCSSKWnf" role="2Oq$k0">
-                    <node concept="1Q6Npb" id="3_DQCSSKWmS" role="2Oq$k0" />
-                    <node concept="2RRcyG" id="3_DQCSSKWnl" role="2OqNvi" />
-                  </node>
-                  <node concept="2es0OD" id="3_DQCSSKWnK" role="2OqNvi">
-                    <node concept="1bVj0M" id="3_DQCSSKWnL" role="23t8la">
-                      <node concept="3clFbS" id="3_DQCSSKWnM" role="1bW5cS">
-                        <node concept="3clFbF" id="3_DQCSSKWnP" role="3cqZAp">
-                          <node concept="2OqwBi" id="3_DQCSSKWob" role="3clFbG">
-                            <node concept="37vLTw" id="3_DQCSSKWnQ" role="2Oq$k0">
-                              <ref role="3cqZAo" node="3_DQCSSKWnN" resolve="it" />
-                            </node>
-                            <node concept="3YRAZt" id="3_DQCSSKWog" role="2OqNvi" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="Rh6nW" id="3_DQCSSKWnN" role="1bW2Oz">
-                        <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="3_DQCSSKWnO" role="1tU5fm" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -3763,6 +3737,60 @@
           </node>
         </node>
         <node concept="3clFbH" id="77eI44NirHr" role="3cqZAp" />
+        <node concept="3clFbJ" id="ybcgwyUz6E" role="3cqZAp">
+          <node concept="3clFbS" id="ybcgwyUz6G" role="3clFbx">
+            <node concept="3clFbF" id="3_DQCSSKWmR" role="3cqZAp">
+              <node concept="2OqwBi" id="3_DQCSSKWnE" role="3clFbG">
+                <node concept="2OqwBi" id="3_DQCSSKWnf" role="2Oq$k0">
+                  <node concept="1Q6Npb" id="3_DQCSSKWmS" role="2Oq$k0" />
+                  <node concept="2RRcyG" id="3_DQCSSKWnl" role="2OqNvi" />
+                </node>
+                <node concept="2es0OD" id="3_DQCSSKWnK" role="2OqNvi">
+                  <node concept="1bVj0M" id="3_DQCSSKWnL" role="23t8la">
+                    <node concept="3clFbS" id="3_DQCSSKWnM" role="1bW5cS">
+                      <node concept="3clFbF" id="3_DQCSSKWnP" role="3cqZAp">
+                        <node concept="2OqwBi" id="3_DQCSSKWob" role="3clFbG">
+                          <node concept="37vLTw" id="3_DQCSSKWnQ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3_DQCSSKWnN" resolve="it" />
+                          </node>
+                          <node concept="3YRAZt" id="3_DQCSSKWog" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="3_DQCSSKWnN" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="3_DQCSSKWnO" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="ybcgwyUCSx" role="3clFbw">
+            <node concept="2OqwBi" id="ybcgwyUDDw" role="3fr31v">
+              <node concept="2ShNRf" id="ybcgwyUDDx" role="2Oq$k0">
+                <node concept="1pGfFk" id="ybcgwyUDDy" role="2ShVmc">
+                  <ref role="37wK5l" to="ap4t:~GenPlanExtractor.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="GenPlanExtractor" />
+                  <node concept="2OqwBi" id="ybcgwyUDDz" role="37wK5m">
+                    <node concept="37vLTw" id="ybcgwyUDD$" role="2Oq$k0">
+                      <ref role="3cqZAo" node="CqDpWV8_Hl" resolve="module" />
+                    </node>
+                    <node concept="liA8E" id="ybcgwyUDD_" role="2OqNvi">
+                      <ref role="37wK5l" to="lui2:~SModule.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="ybcgwyUDDA" role="2OqNvi">
+                <ref role="37wK5l" to="ap4t:~GenPlanExtractor.hasPlan(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="hasPlan" />
+                <node concept="2OqwBi" id="ybcgwyUDDB" role="37wK5m">
+                  <node concept="1iwH7S" id="ybcgwyUDDC" role="2Oq$k0" />
+                  <node concept="1st3f0" id="ybcgwyUDDD" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="3_DQCSSJQma" role="3cqZAp" />
         <node concept="2Gpval" id="3_DQCSSJQUG" role="3cqZAp">
           <node concept="2GrKxI" id="3_DQCSSJQUH" role="2Gsz3X">
