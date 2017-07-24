@@ -1239,6 +1239,43 @@
                   <ref role="3cqZAo" node="ybcgwyy7X8" resolve="downstreamItems" />
                 </node>
               </node>
+              <node concept="3clFbJ" id="ybcgwyBatz" role="3cqZAp">
+                <node concept="3clFbS" id="ybcgwyBat_" role="3clFbx">
+                  <node concept="2MkqsV" id="ybcgwyLKa_" role="3cqZAp">
+                    <node concept="3cpWs3" id="ybcgwyLUvJ" role="2MkJ7o">
+                      <node concept="Xl_RD" id="ybcgwyLUMV" role="3uHU7w">
+                        <property role="Xl_RC" value=" isn't compatible with cross model generation" />
+                      </node>
+                      <node concept="3cpWs3" id="ybcgwyLKYQ" role="3uHU7B">
+                        <node concept="Xl_RD" id="ybcgwyLKaO" role="3uHU7B">
+                          <property role="Xl_RC" value="The configuration item " />
+                        </node>
+                        <node concept="2OqwBi" id="ybcgwyLLrP" role="3uHU7w">
+                          <node concept="2GrUjf" id="ybcgwyLKZ8" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="ybcgwyxYD0" resolve="item" />
+                          </node>
+                          <node concept="2qgKlT" id="ybcgwyLLYA" role="2OqNvi">
+                            <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2GrUjf" id="ybcgwyLY3X" role="2OEOjV">
+                      <ref role="2Gs0qQ" node="ybcgwyxYD0" resolve="item" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="ybcgwyLJS0" role="3clFbw">
+                  <node concept="2OqwBi" id="ybcgwyLJS2" role="3fr31v">
+                    <node concept="2GrUjf" id="ybcgwyLJS3" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="ybcgwyxYD0" resolve="item" />
+                    </node>
+                    <node concept="2qgKlT" id="ybcgwyLJS4" role="2OqNvi">
+                      <ref role="37wK5l" to="hwgx:ybcgwyBbFy" resolve="canHandleCrossModelGeneration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="2OqwBi" id="ybcgwyxXdh" role="2GsD0m">
               <node concept="1YBJjd" id="ybcgwyxX1C" role="2Oq$k0">

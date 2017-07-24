@@ -1230,6 +1230,28 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="ybcgwyBbFy" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="canHandleCrossModelGeneration" />
+      <node concept="3Tm1VV" id="ybcgwyBbFz" role="1B3o_S" />
+      <node concept="10P_77" id="ybcgwyBbTG" role="3clF45" />
+      <node concept="3clFbS" id="ybcgwyBbF_" role="3clF47">
+        <node concept="3clFbF" id="ybcgwyBbVw" role="3cqZAp">
+          <node concept="3clFbT" id="ybcgwyBbVv" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="ybcgwyBbVb" role="lGtFl">
+        <node concept="TZ5HA" id="ybcgwyBbVc" role="TZ5H$">
+          <node concept="1dT_AC" id="ybcgwyBbVd" role="1dT_Ay" />
+        </node>
+        <node concept="x79VA" id="ybcgwyBbVe" role="3nqlJM">
+          <property role="x79VB" value="true if the configuration item is compatible" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="3R$6B6bKw0G" role="13h7CW">
       <node concept="3clFbS" id="3R$6B6bKw0H" role="2VODD2" />
     </node>
