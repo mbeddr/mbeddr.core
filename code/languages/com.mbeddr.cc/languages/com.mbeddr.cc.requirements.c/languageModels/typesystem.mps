@@ -51,6 +51,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -502,6 +503,7 @@
                       <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                     </node>
                   </node>
+                  <node concept="10Nm6u" id="6wNYzrU97jH" role="37wK5m" />
                   <node concept="3clFbT" id="7WAr$Vc4FbS" role="37wK5m">
                     <property role="3clFbU" value="false" />
                   </node>
@@ -537,6 +539,7 @@
                       <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                     </node>
                   </node>
+                  <node concept="10Nm6u" id="6wNYzrU96TM" role="37wK5m" />
                   <node concept="3clFbT" id="7WAr$Vc4Fvl" role="37wK5m">
                     <property role="3clFbU" value="false" />
                   </node>
