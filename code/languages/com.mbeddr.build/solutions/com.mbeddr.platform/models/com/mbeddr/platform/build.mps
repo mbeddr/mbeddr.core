@@ -5847,6 +5847,12 @@
             <ref role="3bR37D" node="5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6wNYzrT71jg" role="3bR37C">
+          <node concept="3bR9La" id="6wNYzrT71jh" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="43aY2QmUMhq" resolve="com.mbeddr.core.traceExplorer" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="48h5VLcq9kG" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5987,6 +5993,12 @@
           <node concept="3bR9La" id="5fGcQI94eer" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6wNYzrT70cf" role="3bR37C">
+          <node concept="3bR9La" id="6wNYzrT70cg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
       </node>

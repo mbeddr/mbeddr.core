@@ -68,6 +68,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -517,6 +518,7 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="7lHetQywugk" role="37wK5m" />
                       <node concept="3clFbT" id="7WAr$Vc4Tgt" role="37wK5m">
                         <property role="3clFbU" value="false" />
                       </node>
@@ -605,6 +607,7 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="7lHetQywquQ" role="37wK5m" />
                       <node concept="3clFbT" id="7WAr$Vc4Tv8" role="37wK5m">
                         <property role="3clFbU" value="false" />
                       </node>
@@ -692,6 +695,7 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="7lHetQywqES" role="37wK5m" />
                       <node concept="3clFbT" id="7WAr$Vc4U0w" role="37wK5m">
                         <property role="3clFbU" value="false" />
                       </node>
@@ -779,6 +783,7 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="7lHetQywqPT" role="37wK5m" />
                       <node concept="3clFbT" id="7WAr$Vc4TRb" role="37wK5m">
                         <property role="3clFbU" value="false" />
                       </node>
@@ -866,6 +871,7 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="7lHetQywr0U" role="37wK5m" />
                       <node concept="3clFbT" id="7WAr$Vc4THQ" role="37wK5m">
                         <property role="3clFbU" value="false" />
                       </node>
