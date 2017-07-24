@@ -8,6 +8,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -29,8 +30,9 @@
     <import index="gtp9" ref="r:007d0985-20e2-4d70-80f1-d0de1aff1076(com.mbeddr.mpsutil.common.graph)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="pu3r" ref="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.core.traceExplorer.plugin)" />
+    <import index="pu3r" ref="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.mpsutil.traceExplorer.plugin)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
@@ -14510,23 +14512,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5Beavy19JPs" role="jymVt" />
-    <node concept="3clFb_" id="7lHetQxMcNL" role="jymVt">
-      <property role="TrG5h" value="getValue" />
-      <node concept="3uibUv" id="7lHetQxMdPd" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-      </node>
-      <node concept="3Tm1VV" id="7lHetQxMcNO" role="1B3o_S" />
-      <node concept="3clFbS" id="7lHetQxMcNP" role="3clF47">
-        <node concept="3clFbF" id="7lHetQxMhBO" role="3cqZAp">
-          <node concept="2OqwBi" id="7lHetQxMhLH" role="3clFbG">
-            <node concept="Xjq3P" id="7lHetQxMhBN" role="2Oq$k0" />
-            <node concept="2OwXpG" id="7lHetQxMi8p" role="2OqNvi">
-              <ref role="2Oxat5" node="7cNsFS_gVMg" resolve="value" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2tJIrI" id="6wNYzrTZhJw" role="jymVt" />
     <node concept="3clFb_" id="6wNYzrTZgHJ" role="jymVt">
       <property role="TrG5h" value="getTime" />
@@ -14592,8 +14577,30 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7lHetQxMbNj" role="jymVt" />
+    <node concept="3clFb_" id="2CFPPn7AGoH" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getTracedValue" />
+      <node concept="3uibUv" id="2CFPPn7AGoI" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="2CFPPn7AGoJ" role="1B3o_S" />
+      <node concept="3clFbS" id="2CFPPn7AGoP" role="3clF47">
+        <node concept="3clFbF" id="2CFPPn7AGoS" role="3cqZAp">
+          <node concept="2OqwBi" id="2CFPPn7AQgp" role="3clFbG">
+            <node concept="Xjq3P" id="2CFPPn7APYW" role="2Oq$k0" />
+            <node concept="2OwXpG" id="2CFPPn7AQr7" role="2OqNvi">
+              <ref role="2Oxat5" node="7cNsFS_gVMg" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2CFPPn7AGoQ" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2CFPPn7AEjl" role="jymVt" />
     <node concept="3Tm1VV" id="7cNsFS_gTK9" role="1B3o_S" />
-    <node concept="3uibUv" id="7obiejCcC9w" role="EKbjA">
+    <node concept="3uibUv" id="3iAE2QOaTQH" role="EKbjA">
       <ref role="3uigEE" to="pu3r:43aY2QmSq3e" resolve="ITraceRecord" />
     </node>
   </node>
