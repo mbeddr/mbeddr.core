@@ -114,6 +114,9 @@
     <node concept="PrWs8" id="3s1LyzGjAbU" role="PzmwI">
       <ref role="PrY4T" to="i2y7:3s1LyzGfrMH" resolve="IMakePathProviderContainer" />
     </node>
+    <node concept="PrWs8" id="6FvlwAlLzOe" role="PzmwI">
+      <ref role="PrY4T" to="68mc:51aJIRsy1$U" resolve="IPathVariableProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6GqYvBOf2Xb">
     <property role="TrG5h" value="ModuleRef" />
@@ -223,6 +226,9 @@
     </node>
     <node concept="PrWs8" id="6RCWEZG3saq" role="PzmwI">
       <ref role="PrY4T" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
+    </node>
+    <node concept="PrWs8" id="6FvlwAlM6BC" role="PzmwI">
+      <ref role="PrY4T" to="68mc:51aJIRsy1$U" resolve="IPathVariableProvider" />
     </node>
     <node concept="1QGGSu" id="7ue4kw5DH0z" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/program.png" />
@@ -593,9 +599,6 @@
       <property role="20kJfa" value="pathPicker" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
-    </node>
-    <node concept="PrWs8" id="51aJIRsydHc" role="PzmwI">
-      <ref role="PrY4T" to="68mc:51aJIRsy1$U" resolve="IPathVariableProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="7FeXv2EtoDW">
