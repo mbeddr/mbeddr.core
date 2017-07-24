@@ -1214,5 +1214,13 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="PlHQZ" id="ADbz7un29O">
+    <property role="EcuMT" value="696138409124307572" />
+    <property role="3GE5qa" value="content" />
+    <property role="TrG5h" value="ISynthesisedDataType" />
+    <node concept="PrWs8" id="ADbz7un29P" role="PrDN$">
+      <ref role="PrY4T" node="6VTlRjrCuQt" resolve="IIncAType" />
+    </node>
+  </node>
 </model>
 

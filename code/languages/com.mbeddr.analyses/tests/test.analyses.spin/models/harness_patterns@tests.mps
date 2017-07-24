@@ -140,7 +140,7 @@
             </node>
             <node concept="2OqwBi" id="63QgsF$PuVg" role="33vP2m">
               <node concept="NRdvd" id="3tIDuP5spbv" role="2Oq$k0">
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
                 <node concept="37vLTw" id="3tIDuP5spbw" role="37wK5m">
                   <ref role="3cqZAo" node="3tIDuP5sifu" resolve="m" />
@@ -204,7 +204,7 @@
             </node>
             <node concept="2OqwBi" id="63QgsF$PfR6" role="33vP2m">
               <node concept="NRdvd" id="2lN4cj_VAC2" role="2Oq$k0">
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
                 <node concept="37vLTw" id="2lN4cj_VAC3" role="37wK5m">
                   <ref role="3cqZAo" node="2lN4cj_VABW" resolve="m" />
@@ -292,7 +292,7 @@
             <node concept="2OqwBi" id="63QgsF$Phm2" role="33vP2m">
               <node concept="NRdvd" id="1GXRyrSXytr" role="2Oq$k0">
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <node concept="37vLTw" id="1GXRyrSXyts" role="37wK5m">
                   <ref role="3cqZAo" node="1GXRyrSXytl" resolve="m" />
                 </node>
@@ -399,7 +399,7 @@
             </node>
             <node concept="2OqwBi" id="63QgsF$PiPF" role="33vP2m">
               <node concept="NRdvd" id="1BFQdmK1ZoY" role="2Oq$k0">
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
                 <node concept="37vLTw" id="1BFQdmK1ZoZ" role="37wK5m">
                   <ref role="3cqZAo" node="1BFQdmK1ZoS" resolve="m" />
@@ -498,7 +498,7 @@
             <node concept="2OqwBi" id="63QgsF$Pkn9" role="33vP2m">
               <node concept="NRdvd" id="4b2d3GUkOCB" role="2Oq$k0">
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <node concept="37vLTw" id="4b2d3GUkOCC" role="37wK5m">
                   <ref role="3cqZAo" node="4b2d3GUkOCx" resolve="m" />
                 </node>
@@ -719,7 +719,7 @@
             <node concept="2OqwBi" id="63QgsF$PwoQ" role="33vP2m">
               <node concept="NRdvd" id="4b2d3GUmUQA" role="2Oq$k0">
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <node concept="37vLTw" id="4b2d3GUmUQB" role="37wK5m">
                   <ref role="3cqZAo" node="4b2d3GUmUQw" resolve="m" />
                 </node>
@@ -831,7 +831,7 @@
             </node>
             <node concept="2OqwBi" id="63QgsF$PlR0" role="33vP2m">
               <node concept="NRdvd" id="4b2d3GUszd_" role="2Oq$k0">
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
                 <node concept="37vLTw" id="4b2d3GUszdA" role="37wK5m">
                   <ref role="3cqZAo" node="4b2d3GUszdv" resolve="m" />
@@ -923,7 +923,7 @@
             <node concept="2OqwBi" id="63QgsF$Penb" role="33vP2m">
               <node concept="NRdvd" id="1BFQdmK6qhu" role="2Oq$k0">
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <node concept="37vLTw" id="1BFQdmK6qhv" role="37wK5m">
                   <ref role="3cqZAo" node="1BFQdmK6qho" resolve="m" />
                 </node>
@@ -1039,7 +1039,7 @@
             <node concept="2OqwBi" id="63QgsF$Pnm0" role="33vP2m">
               <node concept="NRdvd" id="4ly_4leUz$y" role="2Oq$k0">
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <node concept="37vLTw" id="4ly_4leUz$z" role="37wK5m">
                   <ref role="3cqZAo" node="4ly_4leUz$s" resolve="m" />
                 </node>
@@ -1099,7 +1099,7 @@
             <node concept="2OqwBi" id="63QgsF$PoYz" role="33vP2m">
               <node concept="NRdvd" id="4ly_4leUYWx" role="2Oq$k0">
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <node concept="37vLTw" id="4ly_4leUYWy" role="37wK5m">
                   <ref role="3cqZAo" node="4ly_4leUYWr" resolve="m" />
                 </node>
@@ -1162,7 +1162,7 @@
             </node>
             <node concept="2OqwBi" id="63QgsF$Ptsq" role="33vP2m">
               <node concept="NRdvd" id="bnk1STvYSv" role="2Oq$k0">
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
                 <node concept="37vLTw" id="bnk1STvYSw" role="37wK5m">
                   <ref role="3cqZAo" node="bnk1STvYSp" resolve="m" />
@@ -1337,7 +1337,7 @@
             </node>
             <node concept="2OqwBi" id="63QgsF$Pqvo" role="33vP2m">
               <node concept="NRdvd" id="6AAaFOT_c_2" role="2Oq$k0">
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
                 <node concept="37vLTw" id="6AAaFOT_c_3" role="37wK5m">
                   <ref role="3cqZAo" node="6AAaFOT_c$W" resolve="m" />
@@ -1474,7 +1474,7 @@
             <node concept="2OqwBi" id="63QgsF$PrWP" role="33vP2m">
               <node concept="NRdvd" id="6AAaFOT_mT6" role="2Oq$k0">
                 <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
                 <node concept="37vLTw" id="6AAaFOT_mT7" role="37wK5m">
                   <ref role="3cqZAo" node="6AAaFOT_mT0" resolve="m" />
                 </node>
@@ -1649,7 +1649,7 @@
               </node>
             </node>
             <node concept="NRdvd" id="63QgsF$OnAN" role="33vP2m">
-              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
               <node concept="37vLTw" id="63QgsF$OnAO" role="37wK5m">
                 <ref role="3cqZAo" node="63QgsF$OnAH" resolve="m" />
@@ -1814,7 +1814,7 @@
             </node>
             <node concept="NRdvd" id="63QgsF$TmSS" role="33vP2m">
               <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkAssertionAnalysis" />
+              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
               <node concept="37vLTw" id="63QgsF$TmST" role="37wK5m">
                 <ref role="3cqZAo" node="63QgsF$TmSL" resolve="m" />
               </node>
@@ -1850,6 +1850,111 @@
             </node>
             <node concept="liA8E" id="63QgsF$Ty1P" role="2OqNvi">
               <ref role="37wK5l" to="imq8:7XCY$_raaBq" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="46FswZ79z$v">
+    <property role="TrG5h" value="_041_test_foreach" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="46FswZ79z$w" role="1SL9yI">
+      <property role="TrG5h" value="test_foreach_01" />
+      <node concept="3cqZAl" id="46FswZ79z$x" role="3clF45" />
+      <node concept="3clFbS" id="46FswZ79z$y" role="3clF47">
+        <node concept="3cpWs8" id="46FswZ79z$z" role="3cqZAp">
+          <node concept="3cpWsn" id="46FswZ79z$$" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="46FswZ79z$_" role="1tU5fm" />
+            <node concept="BaHAS" id="46FswZ79z$A" role="33vP2m">
+              <property role="BaHAW" value="harness_patterns" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="46FswZ79z$B" role="3cqZAp">
+          <node concept="3cpWsn" id="46FswZ79z$C" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="46FswZ79z$D" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2OqwBi" id="46FswZ79z$E" role="33vP2m">
+              <node concept="NRdvd" id="46FswZ79z$F" role="2Oq$k0">
+                <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+                <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
+                <node concept="37vLTw" id="46FswZ79z$G" role="37wK5m">
+                  <ref role="3cqZAo" node="46FswZ79z$$" resolve="m" />
+                </node>
+                <node concept="Xl_RD" id="46FswZ79z$H" role="37wK5m">
+                  <property role="Xl_RC" value="_041_test_foreach" />
+                </node>
+              </node>
+              <node concept="1uHKPH" id="46FswZ79z$I" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="46FswZ79z$J" role="3cqZAp">
+          <node concept="Xl_RD" id="46FswZ79z$K" role="3tpDZB">
+            <property role="Xl_RC" value="Assert: !allEqualToIdx" />
+          </node>
+          <node concept="2OqwBi" id="46FswZ79z$L" role="3tpDZA">
+            <node concept="37vLTw" id="46FswZ79z$M" role="2Oq$k0">
+              <ref role="3cqZAo" node="46FswZ79z$C" resolve="res" />
+            </node>
+            <node concept="liA8E" id="46FswZ79z$N" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="46FswZ79z$O" role="3cqZAp">
+          <node concept="2OqwBi" id="46FswZ79z$P" role="3vwVQn">
+            <node concept="37vLTw" id="46FswZ79z$Q" role="2Oq$k0">
+              <ref role="3cqZAo" node="46FswZ79z$C" resolve="res" />
+            </node>
+            <node concept="liA8E" id="46FswZ79z$R" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="46FswZ79zTq" role="3cqZAp" />
+        <node concept="30AV9b" id="46FswZ79$1u" role="3cqZAp">
+          <node concept="37vLTw" id="46FswZ79$1v" role="30AzmL">
+            <ref role="3cqZAo" node="46FswZ79z$C" resolve="res" />
+          </node>
+          <node concept="30Azln" id="46FswZ79X$e" role="30Azl8">
+            <property role="30AzUg" value="arr[0]" />
+            <property role="30AzUs" value="0" />
+            <node concept="3Tqbb2" id="46FswZ79X$f" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+          <node concept="30Azln" id="46FswZ79$1w" role="30Azl8">
+            <property role="30AzUg" value="arr[1]" />
+            <property role="30AzUs" value="1" />
+            <node concept="3Tqbb2" id="46FswZ79$1x" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+          <node concept="30Azln" id="46FswZ79XBs" role="30Azl8">
+            <property role="30AzUg" value="arr[2]" />
+            <property role="30AzUs" value="2" />
+            <node concept="3Tqbb2" id="46FswZ79XBt" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+          <node concept="30Azln" id="46FswZ79XD7" role="30Azl8">
+            <property role="30AzUg" value="arr[3]" />
+            <property role="30AzUs" value="3" />
+            <node concept="3Tqbb2" id="46FswZ79XD8" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+          <node concept="30Azln" id="46FswZ79XEO" role="30Azl8">
+            <property role="30AzUg" value="arr[4]" />
+            <property role="30AzUs" value="4" />
+            <node concept="3Tqbb2" id="46FswZ79XEP" role="38rYrG">
+              <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
             </node>
           </node>
         </node>
