@@ -28,6 +28,7 @@
     <import index="n5wa" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="46lm" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.stream(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="u7uj" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.view.util(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="8409" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper.graphstream(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" implicit="true" />
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -1221,11 +1222,41 @@
     </node>
     <node concept="2tJIrI" id="64_1OWeAq15" role="jymVt" />
     <node concept="2YIFZL" id="64_1OWe$XBJ" role="jymVt">
-      <property role="TrG5h" value="getMPSHotfixedView" />
+      <property role="TrG5h" value="getGraphstreamViewForMPS" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="64_1OWe$XBM" role="3clF47">
+        <node concept="3cpWs8" id="LKp7m2Rf2Y" role="3cqZAp">
+          <node concept="3cpWsn" id="LKp7m2Rf2Z" role="3cpWs9">
+            <property role="TrG5h" value="viewCreator" />
+            <node concept="3uibUv" id="LKp7m2Rf30" role="1tU5fm">
+              <ref role="3uigEE" to="8409:~GraphstreamViewCreator" resolve="GraphstreamViewCreator" />
+            </node>
+            <node concept="2ShNRf" id="LKp7m2RfcW" role="33vP2m">
+              <node concept="1pGfFk" id="LKp7m2RCFO" role="2ShVmc">
+                <ref role="37wK5l" to="8409:~GraphstreamViewCreator.&lt;init&gt;(de.itemis.graphstreamwrapper.Graph)" resolve="GraphstreamViewCreator" />
+                <node concept="37vLTw" id="LKp7m2RCJP" role="37wK5m">
+                  <ref role="3cqZAo" node="64_1OWe$XUc" resolve="graph" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="54mvx9XhSkQ" role="3cqZAp">
+          <node concept="2OqwBi" id="54mvx9XhS$p" role="3clFbG">
+            <node concept="37vLTw" id="54mvx9XhSkO" role="2Oq$k0">
+              <ref role="3cqZAo" node="LKp7m2Rf2Z" resolve="viewCreator" />
+            </node>
+            <node concept="liA8E" id="54mvx9XhSMd" role="2OqNvi">
+              <ref role="37wK5l" to="8409:~GraphstreamViewCreator.addStyleCode(java.lang.String):void" resolve="addStyleCode" />
+              <node concept="37vLTw" id="54mvx9XhSUn" role="37wK5m">
+                <ref role="3cqZAo" node="54mvx9XhOHm" resolve="baseStyle" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="LKp7m2RGM6" role="3cqZAp" />
         <node concept="3cpWs8" id="64_1OWewXtY" role="3cqZAp">
           <node concept="3cpWsn" id="64_1OWewXtZ" role="3cpWs9">
             <property role="TrG5h" value="viewer" />
@@ -1235,12 +1266,12 @@
             <node concept="2ShNRf" id="64_1OWewYdn" role="33vP2m">
               <node concept="1pGfFk" id="64_1OWewYqd" role="2ShVmc">
                 <ref role="37wK5l" to="xyqd:~Viewer.&lt;init&gt;(org.graphstream.graph.Graph,org.graphstream.ui.view.Viewer$ThreadingModel)" resolve="Viewer" />
-                <node concept="2OqwBi" id="64_1OWewYW2" role="37wK5m">
-                  <node concept="37vLTw" id="64_1OWewYMT" role="2Oq$k0">
-                    <ref role="3cqZAo" node="64_1OWe$XUc" resolve="creator" />
+                <node concept="2OqwBi" id="LKp7m2RG$n" role="37wK5m">
+                  <node concept="37vLTw" id="LKp7m2RFeK" role="2Oq$k0">
+                    <ref role="3cqZAo" node="LKp7m2Rf2Z" resolve="viewCreator" />
                   </node>
-                  <node concept="liA8E" id="64_1OWewZeI" role="2OqNvi">
-                    <ref role="37wK5l" to="1lk9:~GraphCreator.getGraph():org.graphstream.graph.Graph" resolve="getGraph" />
+                  <node concept="liA8E" id="54mvx9XhDAV" role="2OqNvi">
+                    <ref role="37wK5l" to="8409:~GraphstreamViewCreator.getGraphstreamGraph():org.graphstream.graph.Graph" resolve="getGraphstreamGraph" />
                   </node>
                 </node>
                 <node concept="Rm8GO" id="64_1OWewZwT" role="37wK5m">
@@ -1288,17 +1319,18 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="LKp7m2R7Bz" role="3cqZAp" />
         <node concept="3cpWs6" id="4DzE9lEv6br" role="3cqZAp">
           <node concept="10QFUN" id="64_1OWex3Ee" role="3cqZAk">
             <node concept="3uibUv" id="64_1OWe_beR" role="10QFUM">
               <ref role="3uigEE" node="64_1OWexg7y" resolve="MPSHotfixedView" />
             </node>
             <node concept="2OqwBi" id="64_1OWex2xO" role="10QFUP">
-              <node concept="37vLTw" id="64_1OWex2xP" role="2Oq$k0">
-                <ref role="3cqZAo" node="64_1OWe$XUc" resolve="creator" />
+              <node concept="37vLTw" id="LKp7m2REDs" role="2Oq$k0">
+                <ref role="3cqZAo" node="LKp7m2Rf2Z" resolve="viewCreator" />
               </node>
               <node concept="liA8E" id="64_1OWex2xQ" role="2OqNvi">
-                <ref role="37wK5l" to="1lk9:~GraphCreator.createView(org.graphstream.ui.layout.Layout,org.graphstream.stream.Sink,org.graphstream.ui.view.util.MouseManager,org.graphstream.ui.view.Viewer,java.lang.String):org.graphstream.ui.view.View" resolve="createView" />
+                <ref role="37wK5l" to="8409:~GraphstreamViewCreator.createView(org.graphstream.ui.layout.Layout,org.graphstream.stream.Sink,org.graphstream.ui.view.util.MouseManager,org.graphstream.ui.view.Viewer,java.lang.String):org.graphstream.ui.view.View" resolve="createView" />
                 <node concept="37vLTw" id="64_1OWe_asR" role="37wK5m">
                   <ref role="3cqZAo" node="64_1OWe_7SN" resolve="layout" />
                 </node>
@@ -1324,9 +1356,9 @@
         <ref role="3uigEE" node="64_1OWexg7y" resolve="MPSHotfixedView" />
       </node>
       <node concept="37vLTG" id="64_1OWe$XUc" role="3clF46">
-        <property role="TrG5h" value="creator" />
-        <node concept="3uibUv" id="64_1OWe$XUb" role="1tU5fm">
-          <ref role="3uigEE" to="1lk9:~GraphCreator" resolve="GraphCreator" />
+        <property role="TrG5h" value="graph" />
+        <node concept="3uibUv" id="LKp7m2QXH7" role="1tU5fm">
+          <ref role="3uigEE" to="1lk9:~Graph" resolve="Graph" />
         </node>
       </node>
       <node concept="37vLTG" id="64_1OWe_7SN" role="3clF46">
@@ -1347,6 +1379,12 @@
           <ref role="3uigEE" to="u7uj:~MouseManager" resolve="MouseManager" />
         </node>
       </node>
+      <node concept="37vLTG" id="54mvx9XhOHm" role="3clF46">
+        <property role="TrG5h" value="baseStyle" />
+        <node concept="3uibUv" id="54mvx9XhRSV" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
       <node concept="P$JXv" id="64_1OWeAq9q" role="lGtFl">
         <node concept="TZ5HA" id="64_1OWeAq9r" role="TZ5H$">
           <node concept="1dT_AC" id="64_1OWeAq9s" role="1dT_Ay">
@@ -1354,9 +1392,9 @@
           </node>
         </node>
         <node concept="TUZQ0" id="64_1OWeAq9t" role="3nqlJM">
-          <property role="TUZQ4" value="mandatory, must contain the graph (edges, nodes, sprites etc.) and style information" />
+          <property role="TUZQ4" value="mandatory, the abstract graph (vertices and edges)" />
           <node concept="zr_55" id="64_1OWeAq9v" role="zr_5Q">
-            <ref role="zr_51" node="64_1OWe$XUc" resolve="creator" />
+            <ref role="zr_51" node="64_1OWe$XUc" resolve="graph" />
           </node>
         </node>
         <node concept="TUZQ0" id="64_1OWeAq9w" role="3nqlJM">
