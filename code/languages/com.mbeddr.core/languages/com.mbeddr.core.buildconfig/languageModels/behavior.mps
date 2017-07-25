@@ -2,11 +2,11 @@
 <model ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -6085,19 +6085,6 @@
       <node concept="10P_77" id="1hPQTEM9Qpw" role="3clF45" />
       <node concept="3Tm1VV" id="1hPQTEM9Qpx" role="1B3o_S" />
     </node>
-    <node concept="13i0hz" id="1hPQTEM9Jdp" role="13h7CS">
-      <property role="TrG5h" value="getPrefix" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="48kf:5lKnBeAIfOh" resolve="getPrefix" />
-      <node concept="3Tm1VV" id="1hPQTEM9Jdq" role="1B3o_S" />
-      <node concept="3clFbS" id="1hPQTEM9Jdt" role="3clF47">
-        <node concept="3clFbF" id="1hPQTEM9JwM" role="3cqZAp">
-          <node concept="10Nm6u" id="6fD9I8g2h3v" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="17QB3L" id="1hPQTEM9Jdu" role="3clF45" />
-    </node>
     <node concept="13i0hz" id="1hPQTEM9Jdv" role="13h7CS">
       <property role="TrG5h" value="getErrorMessage" />
       <property role="13i0it" value="false" />
@@ -6107,26 +6094,11 @@
       <node concept="3clFbS" id="1hPQTEM9Jdz" role="3clF47">
         <node concept="3clFbF" id="1hPQTEM9LSn" role="3cqZAp">
           <node concept="Xl_RD" id="2rWX5ToGe4t" role="3clFbG">
-            <property role="Xl_RC" value="not a valid make time path" />
+            <property role="Xl_RC" value="not a valid make time directory path" />
           </node>
         </node>
       </node>
       <node concept="17QB3L" id="1hPQTEM9Jd$" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="1hPQTEM9Jd_" role="13h7CS">
-      <property role="TrG5h" value="getEditorPrefix" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="48kf:5lKnBeAulu0" resolve="getEditorPrefix" />
-      <node concept="3Tm1VV" id="1hPQTEM9JdA" role="1B3o_S" />
-      <node concept="3clFbS" id="1hPQTEM9JdD" role="3clF47">
-        <node concept="3clFbF" id="1hPQTEM9NK_" role="3cqZAp">
-          <node concept="Xl_RD" id="1hPQTEM9NK$" role="3clFbG">
-            <property role="Xl_RC" value="" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="1hPQTEM9JdE" role="3clF45" />
     </node>
     <node concept="13i0hz" id="1hPQTEM9JdF" role="13h7CS">
       <property role="TrG5h" value="isValidSelection" />
