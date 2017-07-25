@@ -669,5 +669,13 @@
     <property role="EcuMT" value="8505972469205113887" />
     <property role="TrG5h" value="ITracerFrame" />
   </node>
+  <node concept="1TIwiD" id="5d4VabuMFGB">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <property role="TrG5h" value="TraceExpression" />
+    <property role="34LRSv" value="trace" />
+    <property role="R4oN_" value="computation trace" />
+    <property role="EcuMT" value="6000180787831028519" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
 </model>
 

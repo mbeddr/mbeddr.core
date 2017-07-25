@@ -1290,5 +1290,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5d4VabuMFH1">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <ref role="1XX52x" to="3673:5d4VabuMFGB" resolve="TraceExpression" />
+    <node concept="3F0ifn" id="5d4VabuMFH3" role="2wV5jI">
+      <property role="3F0ifm" value="trace" />
+    </node>
+  </node>
 </model>
 

@@ -3603,5 +3603,60 @@
       <ref role="1YaFvo" to="3673:6MNhNeUBmBq" resolve="StopExpression" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5d4VabuMGbl">
+    <property role="TrG5h" value="typeof_TraceExpression" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <node concept="3clFbS" id="5d4VabuMGbm" role="18ibNy">
+      <node concept="3cpWs8" id="5d4VabuMGbs" role="3cqZAp">
+        <node concept="3cpWsn" id="5d4VabuMGbt" role="3cpWs9">
+          <property role="TrG5h" value="type" />
+          <node concept="3Tqbb2" id="5d4VabuMGbu" role="1tU5fm">
+            <ref role="ehGHo" to="tpee:g7uibYu" resolve="ClassifierType" />
+          </node>
+          <node concept="2ShNRf" id="5d4VabuMGbv" role="33vP2m">
+            <node concept="3zrR0B" id="5d4VabuMGbw" role="2ShVmc">
+              <node concept="3Tqbb2" id="5d4VabuMGbx" role="3zrR0E">
+                <ref role="ehGHo" to="tpee:g7uibYu" resolve="ClassifierType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbF" id="5d4VabuMGby" role="3cqZAp">
+        <node concept="37vLTI" id="5d4VabuMGbz" role="3clFbG">
+          <node concept="3B5_sB" id="5d4VabuMGb$" role="37vLTx">
+            <ref role="3B5MYn" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
+          </node>
+          <node concept="2OqwBi" id="5d4VabuMGb_" role="37vLTJ">
+            <node concept="37vLTw" id="5d4VabuMGbA" role="2Oq$k0">
+              <ref role="3cqZAo" node="5d4VabuMGbt" resolve="type" />
+            </node>
+            <node concept="3TrEf2" id="5d4VabuMGbB" role="2OqNvi">
+              <ref role="3Tt5mk" to="tpee:g7uigIF" resolve="classifier" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="5d4VabuMGbC" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="5d4VabuMGbD" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5d4VabuMGbE" role="mwGJk">
+            <node concept="1YBJjd" id="5d4VabuMGTY" role="1Z2MuG">
+              <ref role="1YBMHb" node="5d4VabuMGbo" resolve="te" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5d4VabuMGbG" role="1ZfhKB">
+          <node concept="37vLTw" id="5d4VabuMGbH" role="mwGJk">
+            <ref role="3cqZAo" node="5d4VabuMGbt" resolve="type" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5d4VabuMGbo" role="1YuTPh">
+      <property role="TrG5h" value="te" />
+      <ref role="1YaFvo" to="3673:5d4VabuMFGB" resolve="TraceExpression" />
+    </node>
+  </node>
 </model>
 
