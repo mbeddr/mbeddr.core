@@ -2136,7 +2136,7 @@
                     <node concept="liA8E" id="1jYY0u2QbjD" role="2OqNvi">
                       <ref role="37wK5l" to="kz9k:~EditorNavigator.shallSelect(boolean):jetbrains.mps.openapi.navigation.EditorNavigator" resolve="shallSelect" />
                       <node concept="3clFbT" id="3iAE2QOpksT" role="37wK5m">
-                        <property role="3clFbU" value="false" />
+                        <property role="3clFbU" value="true" />
                       </node>
                     </node>
                   </node>
