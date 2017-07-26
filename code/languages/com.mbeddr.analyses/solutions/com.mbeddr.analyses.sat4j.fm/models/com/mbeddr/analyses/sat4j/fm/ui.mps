@@ -403,7 +403,7 @@
             <node concept="liA8E" id="68jd02EoevC" role="2OqNvi">
               <ref role="37wK5l" to="c8ee:~TableColumn.setMaxWidth(int):void" resolve="setMaxWidth" />
               <node concept="3cmrfG" id="68jd02Eoe_8" role="37wK5m">
-                <property role="3cmrfH" value="30" />
+                <property role="3cmrfH" value="32" />
               </node>
             </node>
           </node>
