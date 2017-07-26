@@ -348,12 +348,12 @@
       <node concept="3clFbS" id="2rUHgdX3hAv" role="2VODD2">
         <node concept="3clFbF" id="k_aw1jJzrQ" role="3cqZAp">
           <node concept="2OqwBi" id="k_aw1jJzrS" role="3clFbG">
-            <node concept="2YIFZM" id="k_aw1jJzrT" role="2Oq$k0">
+            <node concept="2YIFZM" id="7TiosyQPjuY" role="2Oq$k0">
+              <ref role="37wK5l" to="ngmm:~FindUtils.getFinder(java.lang.String):jetbrains.mps.ide.findusages.findalgorithm.finders.IInterfacedFinder" resolve="getFinder" />
               <ref role="1Pybhc" to="ngmm:~FindUtils" resolve="FindUtils" />
-              <ref role="37wK5l" to="ngmm:~FindUtils.getFinderByClassName(java.lang.String):jetbrains.mps.ide.findusages.findalgorithm.finders.IInterfacedFinder" resolve="getFinderByClassName" />
-              <node concept="2OqwBi" id="k_aw1jJzHM" role="37wK5m">
-                <node concept="2WthIp" id="k_aw1jJzHP" role="2Oq$k0" />
-                <node concept="2XshWL" id="k_aw1jJzHR" role="2OqNvi">
+              <node concept="2OqwBi" id="7TiosyQPjuZ" role="37wK5m">
+                <node concept="2WthIp" id="7TiosyQPjv0" role="2Oq$k0" />
+                <node concept="2XshWL" id="7TiosyQPjv1" role="2OqNvi">
                   <ref role="2WH_rO" node="2rUHgdX3hAB" resolve="getFinderName" />
                 </node>
               </node>
@@ -428,10 +428,10 @@
               </node>
               <node concept="1gVbGN" id="1KUoCipvFIa" role="3cqZAp">
                 <node concept="2OqwBi" id="2rUHgdX3h97" role="1gVkn0">
-                  <node concept="2YIFZM" id="2rUHgdX3h4I" role="2Oq$k0">
+                  <node concept="2YIFZM" id="7TiosyQPgNr" role="2Oq$k0">
+                    <ref role="37wK5l" to="ngmm:~FindUtils.getFinder(java.lang.String):jetbrains.mps.ide.findusages.findalgorithm.finders.IInterfacedFinder" resolve="getFinder" />
                     <ref role="1Pybhc" to="ngmm:~FindUtils" resolve="FindUtils" />
-                    <ref role="37wK5l" to="ngmm:~FindUtils.getFinderByClassName(java.lang.String):jetbrains.mps.ide.findusages.findalgorithm.finders.IInterfacedFinder" resolve="getFinderByClassName" />
-                    <node concept="37vLTw" id="2BHiRxgm62S" role="37wK5m">
+                    <node concept="37vLTw" id="7TiosyQPgNs" role="37wK5m">
                       <ref role="3cqZAo" node="32KDjZn214Y" resolve="finderClassName" />
                     </node>
                   </node>
