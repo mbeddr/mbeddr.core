@@ -1222,14 +1222,33 @@
                           <property role="TrG5h" value="file" />
                         </node>
                         <node concept="3clFbS" id="7ZxIDztISUm" role="2LFqv$">
-                          <node concept="3clFbF" id="7ZxIDztISUn" role="3cqZAp">
-                            <node concept="2OqwBi" id="7ZxIDztISUo" role="3clFbG">
-                              <node concept="37vLTw" id="5Dpaey8_Zri" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5lKnBeAu_gx" resolve="proposedFiles" />
+                          <node concept="3clFbJ" id="HgIalQK1VO" role="3cqZAp">
+                            <node concept="3clFbS" id="HgIalQK1VQ" role="3clFbx">
+                              <node concept="3clFbF" id="7ZxIDztISUn" role="3cqZAp">
+                                <node concept="2OqwBi" id="7ZxIDztISUo" role="3clFbG">
+                                  <node concept="37vLTw" id="5Dpaey8_Zri" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="5lKnBeAu_gx" resolve="proposedFiles" />
+                                  </node>
+                                  <node concept="TSZUe" id="7ZxIDztISUq" role="2OqNvi">
+                                    <node concept="2GrUjf" id="7ZxIDztISUr" role="25WWJ7">
+                                      <ref role="2Gs0qQ" node="7ZxIDztISUl" resolve="file" />
+                                    </node>
+                                  </node>
+                                </node>
                               </node>
-                              <node concept="TSZUe" id="7ZxIDztISUq" role="2OqNvi">
-                                <node concept="2GrUjf" id="7ZxIDztISUr" role="25WWJ7">
+                            </node>
+                            <node concept="22lmx$" id="HgIalQK2eJ" role="3clFbw">
+                              <node concept="2OqwBi" id="HgIalQK2xA" role="3uHU7w">
+                                <node concept="2GrUjf" id="HgIalQK2fF" role="2Oq$k0">
                                   <ref role="2Gs0qQ" node="7ZxIDztISUl" resolve="file" />
+                                </node>
+                                <node concept="liA8E" id="HgIalQK3d7" role="2OqNvi">
+                                  <ref role="37wK5l" to="guwi:~File.isDirectory():boolean" resolve="isDirectory" />
+                                </node>
+                              </node>
+                              <node concept="3fqX7Q" id="HgIalQK1X4" role="3uHU7B">
+                                <node concept="BsUDl" id="HgIalQK1X6" role="3fr31v">
+                                  <ref role="37wK5l" node="5lKnBeB0qXj" resolve="pickDirOnly" />
                                 </node>
                               </node>
                             </node>
