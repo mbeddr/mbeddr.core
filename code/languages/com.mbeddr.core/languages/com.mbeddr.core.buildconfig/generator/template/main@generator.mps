@@ -643,6 +643,9 @@
                                 <property role="Xl_RC" value=" " />
                               </node>
                               <node concept="3cpWs3" id="3_q$DSkzMK0" role="3uHU7B">
+                                <node concept="37vLTw" id="3_q$DSkzMK1" role="3uHU7B">
+                                  <ref role="3cqZAo" node="3_q$DSkzMJN" resolve="result" />
+                                </node>
                                 <node concept="2OqwBi" id="6fD9I8g1mWG" role="3uHU7w">
                                   <node concept="2OqwBi" id="3_q$DSkzMK2" role="2Oq$k0">
                                     <node concept="2GrUjf" id="3_q$DSkzMK3" role="2Oq$k0">
@@ -655,9 +658,6 @@
                                   <node concept="2qgKlT" id="6fD9I8g1not" role="2OqNvi">
                                     <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                                   </node>
-                                </node>
-                                <node concept="37vLTw" id="3_q$DSkzMK1" role="3uHU7B">
-                                  <ref role="3cqZAo" node="3_q$DSkzMJN" resolve="result" />
                                 </node>
                               </node>
                             </node>
@@ -1392,6 +1392,9 @@
                                 <property role="Xl_RC" value=" " />
                               </node>
                               <node concept="3cpWs3" id="2Rx8UqeIBib" role="3uHU7B">
+                                <node concept="37vLTw" id="2Rx8UqeIBic" role="3uHU7B">
+                                  <ref role="3cqZAo" node="2Rx8UqeIBhY" resolve="result" />
+                                </node>
                                 <node concept="2OqwBi" id="6fD9I8g1s3u" role="3uHU7w">
                                   <node concept="2OqwBi" id="2Rx8UqeIBid" role="2Oq$k0">
                                     <node concept="2GrUjf" id="2Rx8UqeIBie" role="2Oq$k0">
@@ -1404,9 +1407,6 @@
                                   <node concept="2qgKlT" id="6fD9I8g1svy" role="2OqNvi">
                                     <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                                   </node>
-                                </node>
-                                <node concept="37vLTw" id="2Rx8UqeIBic" role="3uHU7B">
-                                  <ref role="3cqZAo" node="2Rx8UqeIBhY" resolve="result" />
                                 </node>
                               </node>
                             </node>
@@ -1644,6 +1644,9 @@
                                 <property role="Xl_RC" value=" " />
                               </node>
                               <node concept="3cpWs3" id="2Rx8UqeJ6rq" role="3uHU7B">
+                                <node concept="37vLTw" id="2Rx8UqeJ6rr" role="3uHU7B">
+                                  <ref role="3cqZAo" node="2Rx8UqeJ6rd" resolve="result" />
+                                </node>
                                 <node concept="2OqwBi" id="6fD9I8g1usL" role="3uHU7w">
                                   <node concept="2OqwBi" id="2Rx8UqeJ6rs" role="2Oq$k0">
                                     <node concept="2GrUjf" id="2Rx8UqeJ6rt" role="2Oq$k0">
@@ -1656,9 +1659,6 @@
                                   <node concept="2qgKlT" id="6fD9I8g1v8d" role="2OqNvi">
                                     <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                                   </node>
-                                </node>
-                                <node concept="37vLTw" id="2Rx8UqeJ6rr" role="3uHU7B">
-                                  <ref role="3cqZAo" node="2Rx8UqeJ6rd" resolve="result" />
                                 </node>
                               </node>
                             </node>
@@ -3085,6 +3085,9 @@
                     <node concept="3clFbF" id="2Rx8UqeMq_i" role="3cqZAp">
                       <node concept="d57v9" id="2Rx8UqeMq_j" role="3clFbG">
                         <node concept="3cpWs3" id="2Rx8UqeMq_k" role="37vLTx">
+                          <node concept="Xl_RD" id="2Rx8UqeMq_l" role="3uHU7w">
+                            <property role="Xl_RC" value=" " />
+                          </node>
                           <node concept="2OqwBi" id="6fD9I8g12UO" role="3uHU7B">
                             <node concept="2OqwBi" id="2Rx8UqeMq_m" role="2Oq$k0">
                               <node concept="2GrUjf" id="2Rx8UqeMq_n" role="2Oq$k0">
@@ -3097,9 +3100,6 @@
                             <node concept="2qgKlT" id="6fD9I8g13GL" role="2OqNvi">
                               <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                             </node>
-                          </node>
-                          <node concept="Xl_RD" id="2Rx8UqeMq_l" role="3uHU7w">
-                            <property role="Xl_RC" value=" " />
                           </node>
                         </node>
                         <node concept="3cpWsa" id="2Rx8UqeMq_p" role="37vLTJ">
@@ -3470,7 +3470,7 @@
       <property role="3O_Fa2" value="clean" />
       <node concept="3O_FaX" id="2b2D8jTVZBf" role="3O_FaS">
         <node concept="3G69iQ" id="2Rx8UqeMqAN" role="3G69ia">
-          <property role="3G69iL" value="$(if $(wildcard $(OBJODIR)), $(vecho) &quot;  RM $(OBJODIR)&quot;)" />
+          <property role="3G69iL" value="$(if $(wildcard $(OBJODIR)), $(vecho) &quot;RM $(OBJODIR)&quot;)" />
           <node concept="17Uvod" id="Qn6HUAcSHY" role="lGtFl">
             <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211590947/3373914745211590948" />
             <property role="2qtEX9" value="text" />
@@ -3890,6 +3890,9 @@
                     <node concept="3clFbF" id="2Rx8UqeMqBV" role="3cqZAp">
                       <node concept="d57v9" id="2Rx8UqeMqBW" role="3clFbG">
                         <node concept="3cpWs3" id="2Rx8UqeMqBX" role="37vLTx">
+                          <node concept="Xl_RD" id="2Rx8UqeMqBY" role="3uHU7w">
+                            <property role="Xl_RC" value=" " />
+                          </node>
                           <node concept="2OqwBi" id="6fD9I8g15b8" role="3uHU7B">
                             <node concept="2OqwBi" id="2Rx8UqeMqBZ" role="2Oq$k0">
                               <node concept="2GrUjf" id="2Rx8UqeMqC0" role="2Oq$k0">
@@ -3902,9 +3905,6 @@
                             <node concept="2qgKlT" id="6fD9I8g15X5" role="2OqNvi">
                               <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                             </node>
-                          </node>
-                          <node concept="Xl_RD" id="2Rx8UqeMqBY" role="3uHU7w">
-                            <property role="Xl_RC" value=" " />
                           </node>
                         </node>
                         <node concept="3cpWsa" id="2Rx8UqeMqC2" role="37vLTJ">
@@ -4324,7 +4324,7 @@
         </node>
         <node concept="3O_FaX" id="Qn6HUAt_Ug" role="3O_FaS">
           <node concept="3G69iQ" id="Qn6HUAtAdi" role="3G69ia">
-            <property role="3G69iL" value="$(vecho) &quot;  CC $$&lt;&quot;" />
+            <property role="3G69iL" value="$(vecho) &quot;CC $$&lt;&quot;" />
           </node>
         </node>
         <node concept="3O_FaX" id="Qn6HUAtApQ" role="3O_FaS">
@@ -4575,7 +4575,7 @@
         <property role="3r3y0D" value="$(HOST)" />
         <property role="3r3yED" value="$(Target)" />
         <node concept="12Eqlt" id="2b2D8jTWkhF" role="3r8OHu">
-          <property role="12ErFq" value="$(vecho) &quot;  LD $@&quot;" />
+          <property role="12ErFq" value="$(vecho) &quot;LD $@&quot;" />
         </node>
         <node concept="12Eqlt" id="2b2D8jTWm6Z" role="3r8OHu">
           <property role="12ErFq" value="executable" />
@@ -4724,7 +4724,7 @@
         <property role="3r3y0D" value="$(HOST)" />
         <property role="3r3yED" value="$(Target)" />
         <node concept="12Eqlt" id="2b2D8jTWBMZ" role="3r8OHu">
-          <property role="12ErFq" value="$(vecho) &quot;  AR $@&quot;" />
+          <property role="12ErFq" value="$(vecho) &quot;AR $@&quot;" />
         </node>
         <node concept="12Eqlt" id="2b2D8jTWBN0" role="3r8OHu">
           <property role="12ErFq" value="library" />
