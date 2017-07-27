@@ -253,10 +253,6 @@
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
-      <concept id="1217960314443" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowMessageBase" flags="nn" index="2k5Stg">
-        <child id="1217960314448" name="messageText" index="2k5Stb" />
-      </concept>
-      <concept id="1217969995796" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowWarningMessage" flags="nn" index="2kEO4f" />
       <concept id="1229477454423" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalCopiedInputByOutput" flags="nn" index="12$id9">
         <child id="1229477520175" name="outputNode" index="12$y8L" />
       </concept>
@@ -1385,31 +1381,6 @@
                         </node>
                       </node>
                       <node concept="3clFbS" id="2Rx8UqeIBi6" role="2LFqv$">
-                        <node concept="3clFbF" id="3I9mnakb4PY" role="3cqZAp">
-                          <node concept="2OqwBi" id="3I9mnakb5jA" role="3clFbG">
-                            <node concept="1iwH7S" id="3I9mnakb4PW" role="2Oq$k0" />
-                            <node concept="2kEO4f" id="3I9mnakb5LP" role="2OqNvi">
-                              <node concept="3cpWs3" id="79tBoorZU2b" role="2k5Stb">
-                                <node concept="Xl_RD" id="79tBoorZPxo" role="3uHU7B">
-                                  <property role="Xl_RC" value="!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! include.pathPicker.getCanonicalPath() = " />
-                                </node>
-                                <node concept="2OqwBi" id="79tBoorZUp4" role="3uHU7w">
-                                  <node concept="2OqwBi" id="79tBoorZUp5" role="2Oq$k0">
-                                    <node concept="2GrUjf" id="79tBoorZUp6" role="2Oq$k0">
-                                      <ref role="2Gs0qQ" node="2Rx8UqeIBi2" resolve="include" />
-                                    </node>
-                                    <node concept="3TrEf2" id="79tBoorZUp7" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="51wr:1hPQTELVfEa" resolve="pathPicker" />
-                                    </node>
-                                  </node>
-                                  <node concept="2qgKlT" id="79tBoorZUp8" role="2OqNvi">
-                                    <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
                         <node concept="3clFbF" id="2Rx8UqeIBi7" role="3cqZAp">
                           <node concept="37vLTI" id="2Rx8UqeIBi8" role="3clFbG">
                             <node concept="3cpWs3" id="2Rx8UqeIBi9" role="37vLTx">
@@ -1436,21 +1407,6 @@
                               </node>
                             </node>
                             <node concept="37vLTw" id="2Rx8UqeIBig" role="37vLTJ">
-                              <ref role="3cqZAo" node="2Rx8UqeIBhY" resolve="result" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="3I9mnakb8q3" role="3cqZAp">
-                      <node concept="2OqwBi" id="3I9mnakb8RR" role="3clFbG">
-                        <node concept="1iwH7S" id="3I9mnakb8pZ" role="2Oq$k0" />
-                        <node concept="2kEO4f" id="3I9mnakb9u4" role="2OqNvi">
-                          <node concept="3cpWs3" id="79tBoos04Qa" role="2k5Stb">
-                            <node concept="Xl_RD" id="79tBoos04Qb" role="3uHU7B">
-                              <property role="Xl_RC" value="§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ result = " />
-                            </node>
-                            <node concept="37vLTw" id="79tBoos05Np" role="3uHU7w">
                               <ref role="3cqZAo" node="2Rx8UqeIBhY" resolve="result" />
                             </node>
                           </node>
