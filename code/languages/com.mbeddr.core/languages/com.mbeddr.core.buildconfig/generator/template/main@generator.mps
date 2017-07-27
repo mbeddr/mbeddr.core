@@ -3454,7 +3454,7 @@
       <property role="3O_Fa2" value="clean" />
       <node concept="3O_FaX" id="2b2D8jTVZBf" role="3O_FaS">
         <node concept="3G69iQ" id="2Rx8UqeMqAN" role="3G69ia">
-          <property role="3G69iL" value="$(if $(wildcard $(OBJODIR)), $(vecho) &quot;  RM $(OBJODIR)&quot;)" />
+          <property role="3G69iL" value="$(if $(wildcard $(OBJODIR)), $(vecho) &quot;RM $(OBJODIR)&quot;)" />
           <node concept="17Uvod" id="Qn6HUAcSHY" role="lGtFl">
             <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211590947/3373914745211590948" />
             <property role="2qtEX9" value="text" />
@@ -4308,7 +4308,7 @@
         </node>
         <node concept="3O_FaX" id="Qn6HUAt_Ug" role="3O_FaS">
           <node concept="3G69iQ" id="Qn6HUAtAdi" role="3G69ia">
-            <property role="3G69iL" value="$(vecho) &quot;  CC $$&lt;&quot;" />
+            <property role="3G69iL" value="$(vecho) &quot;CC $$&lt;&quot;" />
           </node>
         </node>
         <node concept="3O_FaX" id="Qn6HUAtApQ" role="3O_FaS">
@@ -4559,7 +4559,7 @@
         <property role="3r3y0D" value="$(HOST)" />
         <property role="3r3yED" value="$(Target)" />
         <node concept="12Eqlt" id="2b2D8jTWkhF" role="3r8OHu">
-          <property role="12ErFq" value="$(vecho) &quot;  LD $@&quot;" />
+          <property role="12ErFq" value="$(vecho) &quot;LD $@&quot;" />
         </node>
         <node concept="12Eqlt" id="2b2D8jTWm6Z" role="3r8OHu">
           <property role="12ErFq" value="executable" />
@@ -4708,7 +4708,7 @@
         <property role="3r3y0D" value="$(HOST)" />
         <property role="3r3yED" value="$(Target)" />
         <node concept="12Eqlt" id="2b2D8jTWBMZ" role="3r8OHu">
-          <property role="12ErFq" value="$(vecho) &quot;  AR $@&quot;" />
+          <property role="12ErFq" value="$(vecho) &quot;AR $@&quot;" />
         </node>
         <node concept="12Eqlt" id="2b2D8jTWBN0" role="3r8OHu">
           <property role="12ErFq" value="library" />
