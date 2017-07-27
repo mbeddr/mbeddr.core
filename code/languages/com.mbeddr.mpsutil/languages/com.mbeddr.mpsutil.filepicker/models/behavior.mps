@@ -2,10 +2,10 @@
 <model ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -1222,14 +1222,33 @@
                           <property role="TrG5h" value="file" />
                         </node>
                         <node concept="3clFbS" id="7ZxIDztISUm" role="2LFqv$">
-                          <node concept="3clFbF" id="7ZxIDztISUn" role="3cqZAp">
-                            <node concept="2OqwBi" id="7ZxIDztISUo" role="3clFbG">
-                              <node concept="37vLTw" id="5Dpaey8_Zri" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5lKnBeAu_gx" resolve="proposedFiles" />
+                          <node concept="3clFbJ" id="HgIalQK1VO" role="3cqZAp">
+                            <node concept="3clFbS" id="HgIalQK1VQ" role="3clFbx">
+                              <node concept="3clFbF" id="7ZxIDztISUn" role="3cqZAp">
+                                <node concept="2OqwBi" id="7ZxIDztISUo" role="3clFbG">
+                                  <node concept="37vLTw" id="5Dpaey8_Zri" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="5lKnBeAu_gx" resolve="proposedFiles" />
+                                  </node>
+                                  <node concept="TSZUe" id="7ZxIDztISUq" role="2OqNvi">
+                                    <node concept="2GrUjf" id="7ZxIDztISUr" role="25WWJ7">
+                                      <ref role="2Gs0qQ" node="7ZxIDztISUl" resolve="file" />
+                                    </node>
+                                  </node>
+                                </node>
                               </node>
-                              <node concept="TSZUe" id="7ZxIDztISUq" role="2OqNvi">
-                                <node concept="2GrUjf" id="7ZxIDztISUr" role="25WWJ7">
+                            </node>
+                            <node concept="22lmx$" id="HgIalQK2eJ" role="3clFbw">
+                              <node concept="2OqwBi" id="HgIalQK2xA" role="3uHU7w">
+                                <node concept="2GrUjf" id="HgIalQK2fF" role="2Oq$k0">
                                   <ref role="2Gs0qQ" node="7ZxIDztISUl" resolve="file" />
+                                </node>
+                                <node concept="liA8E" id="HgIalQK3d7" role="2OqNvi">
+                                  <ref role="37wK5l" to="guwi:~File.isDirectory():boolean" resolve="isDirectory" />
+                                </node>
+                              </node>
+                              <node concept="3fqX7Q" id="HgIalQK1X4" role="3uHU7B">
+                                <node concept="BsUDl" id="HgIalQK1X6" role="3fr31v">
+                                  <ref role="37wK5l" node="5lKnBeB0qXj" resolve="pickDirOnly" />
                                 </node>
                               </node>
                             </node>
