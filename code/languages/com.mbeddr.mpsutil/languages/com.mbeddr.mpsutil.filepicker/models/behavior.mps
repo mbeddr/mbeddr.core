@@ -2201,17 +2201,17 @@
       <ref role="13i0hy" node="5lKnBeAIfOh" resolve="getPrefix" />
       <node concept="3Tm1VV" id="7c_RIoB8IKt" role="1B3o_S" />
       <node concept="3clFbS" id="7c_RIoB8IKw" role="3clF47">
-        <node concept="3clFbF" id="7c_RIoB8TKk" role="3cqZAp">
-          <node concept="2OqwBi" id="7c_RIoB8TKm" role="3clFbG">
-            <node concept="2YIFZM" id="7c_RIoB8TKn" role="2Oq$k0">
+        <node concept="3cpWs6" id="HgIalQMxED" role="3cqZAp">
+          <node concept="2OqwBi" id="HgIalQMxEE" role="3cqZAk">
+            <node concept="2YIFZM" id="HgIalQMxEF" role="2Oq$k0">
               <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
               <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
             </node>
-            <node concept="liA8E" id="7c_RIoB8TKo" role="2OqNvi">
+            <node concept="liA8E" id="HgIalQMxEG" role="2OqNvi">
               <ref role="37wK5l" to="z1c3:~PathMacros.getValue(java.lang.String):java.lang.String" resolve="getValue" />
-              <node concept="2OqwBi" id="7c_RIoB8TQf" role="37wK5m">
-                <node concept="13iPFW" id="7c_RIoB8TMH" role="2Oq$k0" />
-                <node concept="3TrcHB" id="7c_RIoB8UbC" role="2OqNvi">
+              <node concept="2OqwBi" id="HgIalQMxEH" role="37wK5m">
+                <node concept="13iPFW" id="HgIalQMxEI" role="2Oq$k0" />
+                <node concept="3TrcHB" id="HgIalQMxEJ" role="2OqNvi">
                   <ref role="3TsBF5" to="68mc:7c_RIoB8OqH" resolve="macro" />
                 </node>
               </node>
