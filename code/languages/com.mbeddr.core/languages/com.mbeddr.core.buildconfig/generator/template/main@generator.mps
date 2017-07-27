@@ -24,7 +24,6 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -56,9 +55,6 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -257,6 +253,10 @@
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
+      <concept id="1217960314443" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowMessageBase" flags="nn" index="2k5Stg">
+        <child id="1217960314448" name="messageText" index="2k5Stb" />
+      </concept>
+      <concept id="1217969995796" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowWarningMessage" flags="nn" index="2kEO4f" />
       <concept id="1229477454423" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalCopiedInputByOutput" flags="nn" index="12$id9">
         <child id="1229477520175" name="outputNode" index="12$y8L" />
       </concept>
@@ -1385,15 +1385,11 @@
                         </node>
                       </node>
                       <node concept="3clFbS" id="2Rx8UqeIBi6" role="2LFqv$">
-                        <node concept="3clFbF" id="79tBoorZMCl" role="3cqZAp">
-                          <node concept="2OqwBi" id="79tBoorZO0o" role="3clFbG">
-                            <node concept="10M0yZ" id="79tBoorZMYF" role="2Oq$k0">
-                              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                            </node>
-                            <node concept="liA8E" id="79tBoorZPaW" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                              <node concept="3cpWs3" id="79tBoorZU2b" role="37wK5m">
+                        <node concept="3clFbF" id="3I9mnakb4PY" role="3cqZAp">
+                          <node concept="2OqwBi" id="3I9mnakb5jA" role="3clFbG">
+                            <node concept="1iwH7S" id="3I9mnakb4PW" role="2Oq$k0" />
+                            <node concept="2kEO4f" id="3I9mnakb5LP" role="2OqNvi">
+                              <node concept="3cpWs3" id="79tBoorZU2b" role="2k5Stb">
                                 <node concept="Xl_RD" id="79tBoorZPxo" role="3uHU7B">
                                   <property role="Xl_RC" value="!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! include.pathPicker.getCanonicalPath() = " />
                                 </node>
@@ -1446,15 +1442,11 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbF" id="79tBoos04Q6" role="3cqZAp">
-                      <node concept="2OqwBi" id="79tBoos04Q7" role="3clFbG">
-                        <node concept="10M0yZ" id="79tBoos04Q8" role="2Oq$k0">
-                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                        </node>
-                        <node concept="liA8E" id="79tBoos04Q9" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                          <node concept="3cpWs3" id="79tBoos04Qa" role="37wK5m">
+                    <node concept="3clFbF" id="3I9mnakb8q3" role="3cqZAp">
+                      <node concept="2OqwBi" id="3I9mnakb8RR" role="3clFbG">
+                        <node concept="1iwH7S" id="3I9mnakb8pZ" role="2Oq$k0" />
+                        <node concept="2kEO4f" id="3I9mnakb9u4" role="2OqNvi">
+                          <node concept="3cpWs3" id="79tBoos04Qa" role="2k5Stb">
                             <node concept="Xl_RD" id="79tBoos04Qb" role="3uHU7B">
                               <property role="Xl_RC" value="§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ result = " />
                             </node>
@@ -1465,7 +1457,6 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbH" id="79tBoos04uP" role="3cqZAp" />
                     <node concept="3cpWs6" id="2Rx8UqeIBih" role="3cqZAp">
                       <node concept="37vLTw" id="2Rx8UqeIBii" role="3cqZAk">
                         <ref role="3cqZAo" node="2Rx8UqeIBhY" resolve="result" />
