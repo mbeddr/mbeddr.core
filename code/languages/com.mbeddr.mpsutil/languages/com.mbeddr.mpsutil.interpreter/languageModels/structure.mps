@@ -15,6 +15,13 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -664,6 +671,34 @@
   <node concept="PlHQZ" id="6bG6MAFRAaG">
     <property role="EcuMT" value="7128102176011739820" />
     <property role="TrG5h" value="IInterpreterWrapperType" />
+  </node>
+  <node concept="PlHQZ" id="7obiejCehKv">
+    <property role="EcuMT" value="8505972469205113887" />
+    <property role="TrG5h" value="ITracerFrame" />
+    <property role="3GE5qa" value="tracing" />
+  </node>
+  <node concept="1TIwiD" id="5d4VabuMFGB">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <property role="TrG5h" value="TraceExpression" />
+    <property role="34LRSv" value="trace" />
+    <property role="R4oN_" value="computation trace" />
+    <property role="EcuMT" value="6000180787831028519" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="4yQfyMjhSV2">
+    <property role="EcuMT" value="5239443577662574274" />
+    <property role="TrG5h" value="RevealAnnotation" />
+    <property role="3GE5qa" value="tracing" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="4yQfyMjhSVT" role="lGtFl">
+      <property role="Hh88m" value="reveal" />
+      <node concept="trNpa" id="4yQfyMjhSW5" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="4yQfyMjhSXs" role="PzmwI">
+      <ref role="PrY4T" node="7obiejCehKv" resolve="ITracerFrame" />
+    </node>
   </node>
 </model>
 
