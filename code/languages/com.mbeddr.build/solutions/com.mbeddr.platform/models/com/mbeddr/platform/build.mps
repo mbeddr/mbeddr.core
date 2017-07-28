@@ -5847,6 +5847,12 @@
             <ref role="3bR37D" node="5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6wNYzrT71jg" role="3bR37C">
+          <node concept="3bR9La" id="6wNYzrT71jh" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="43aY2QmUMhq" resolve="com.mbeddr.mpsutil.traceExplorer" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="48h5VLcq9kG" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5987,6 +5993,18 @@
           <node concept="3bR9La" id="5fGcQI94eer" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6wNYzrT70cf" role="3bR37C">
+          <node concept="3bR9La" id="6wNYzrT70cg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5IR_boGMSg7" role="3bR37C">
+          <node concept="3bR9La" id="5IR_boGMSg8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="43aY2QmUMhq" resolve="com.mbeddr.mpsutil.traceExplorer" />
           </node>
         </node>
       </node>
@@ -11630,17 +11648,17 @@
       </node>
       <node concept="1E1JtA" id="43aY2QmUMhq" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="com.mbeddr.core.traceExplorer" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.traceExplorer" />
         <property role="3LESm3" value="726886d1-ef90-4249-a08f-1e3ec23a7113" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="43aY2QmUNfR" role="3LF7KH">
-          <ref role="398BVh" node="$bJ0jguQbM" resolve="mbeddr.core" />
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
           <node concept="2Ry0Ak" id="43aY2QmUNfS" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="43aY2QmUNfT" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.core.traceExplorer" />
-              <node concept="2Ry0Ak" id="43aY2QmUOmH" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.core.traceExplorer.msd" />
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.traceExplorer" />
+              <node concept="2Ry0Ak" id="3iAE2QOrip1" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.traceExplorer.msd" />
               </node>
             </node>
           </node>

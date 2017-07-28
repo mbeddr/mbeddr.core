@@ -191,6 +191,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.test.util/com.mbeddr.mpsutil.test.util.msd" folder="rest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.test/com.mbeddr.mpsutil.test.msd" folder="rest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.toolrunner/com.mbeddr.mpsutil.toolrunner.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.traceExplorer/com.mbeddr.mpsutil.traceExplorer.msd" folder="staging.traceExplorer" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.treenotation.runtime/com.mbeddr.mpsutil.treenotation.runtime.msd" folder="staging.treenotation" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.treenotation.sandbox/com.mbeddr.mpsutil.treenotation.sandbox.msd" folder="staging.treenotation" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.typesystem.rt/com.mbeddr.mpsutil.typesystem.rt.msd" folder="rest.typesystem.trace" />

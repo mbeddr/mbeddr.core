@@ -316,6 +316,9 @@
       <concept id="8444296659257696249" name="com.mbeddr.core.modules.structure.IArgumentLike" flags="ng" index="k8FjF">
         <child id="883533952987441014" name="kind" index="3U$Ho4" />
       </concept>
+      <concept id="1028666136487545270" name="com.mbeddr.core.modules.structure.CommentModuleContent" flags="ng" index="2B_Gvg">
+        <child id="1028666136487550078" name="text" index="2B_H8o" />
+      </concept>
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
@@ -373,6 +376,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
@@ -2822,6 +2832,15 @@
     <property role="TrG5h" value="crc16_harness" />
     <node concept="1HfwJk" id="1BFQdmK2lsD" role="N3F5h">
       <property role="TrG5h" value="decls" />
+      <node concept="2B_Gvg" id="3daAcQbVYqa" role="fMItF">
+        <node concept="OjmMv" id="3daAcQbVYqc" role="2B_H8o">
+          <node concept="19SGf9" id="3daAcQbVYqd" role="OjmMu">
+            <node concept="19SUe$" id="3daAcQbVYqe" role="19SJt6">
+              <property role="19SUeA" value="below, any value bigger than 10 will lead to verification failure ..." />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="4WHVk" id="1BFQdmK2lsE" role="fMItF">
         <property role="TrG5h" value="ERROR_BURST_SIZE" />
         <property role="2OOxQR" value="false" />
@@ -2940,6 +2959,25 @@
             <property role="2hmy$m" value="0" />
           </node>
         </node>
+        <node concept="1X3_iC" id="3daAcQbSXXK" role="lGtFl">
+          <property role="3V$3am" value="statements" />
+          <property role="3V$3ak" value="a9d69647-0840-491e-bf39-2eb0805d2011/4185783222026475861/4185783222026475862" />
+          <node concept="WlspI" id="3daAcQbSnmJ" role="8Wnug">
+            <node concept="1S7827" id="3daAcQbSnq0" role="Wlsuc">
+              <ref role="1S7826" node="1BFQdmK2lsI" resolve="my_message" />
+            </node>
+            <node concept="1vV05I" id="3daAcQbSnql" role="2DF6ot">
+              <property role="n43Ve" value="true" />
+              <node concept="3TlMh9" id="3daAcQbSnqB" role="1vV05J">
+                <property role="2hmy$m" value="0" />
+              </node>
+              <node concept="3TlMh9" id="3daAcQbSnr1" role="1vV05C">
+                <property role="2hmy$m" value="5" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="3daAcQbSX55" role="3XIRFZ" />
         <node concept="1_9egQ" id="1BFQdmK2luk" role="3XIRFZ">
           <node concept="3pqW6w" id="1BFQdmK2lul" role="1_9egR">
             <node concept="3O_q_g" id="1BFQdmK2lum" role="3TlMhJ">
@@ -2997,7 +3035,7 @@
         <node concept="1hRGTU" id="1BFQdmKcaGn" role="3XIRFZ">
           <node concept="1hKoE2" id="1BFQdmKcaGq" role="1hRGTw">
             <property role="TrG5h" value="bitIdx" />
-            <node concept="26Vqp4" id="ZBFZM$EQuC" role="2C2TGm">
+            <node concept="26Vqp4" id="3daAcQbRT7Y" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
