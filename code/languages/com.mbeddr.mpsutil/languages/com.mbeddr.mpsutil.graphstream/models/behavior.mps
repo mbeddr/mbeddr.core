@@ -6,7 +6,7 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="tirk" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.swingViewer(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="upej" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="4m0a" ref="r:e5f563f0-3312-4f0d-a6fe-8d43c8a221d4(com.mbeddr.mpsutil.graphstream.structure)" implicit="true" />
   </imports>
   <registry>
@@ -74,10 +74,10 @@
     <node concept="13i0hz" id="4DzE9lEtSAp" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getView" />
+      <property role="TrG5h" value="constructViewManager" />
       <node concept="3Tm1VV" id="4DzE9lEtSAq" role="1B3o_S" />
-      <node concept="3uibUv" id="4DzE9lEu1GJ" role="3clF45">
-        <ref role="3uigEE" to="tirk:~ViewPanel" resolve="ViewPanel" />
+      <node concept="3uibUv" id="3ZcygOy$EFJ" role="3clF45">
+        <ref role="3uigEE" to="upej:~IViewManager" resolve="IViewManager" />
       </node>
       <node concept="3clFbS" id="4DzE9lEtSAs" role="3clF47" />
       <node concept="37vLTG" id="4DzE9lEu1Hk" role="3clF46">
