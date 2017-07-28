@@ -7322,28 +7322,6 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5BXRi0X3F6x" role="3bR37C">
-          <node concept="1BurEX" id="5BXRi0X3F6y" role="1SiIV1">
-            <node concept="398BVA" id="5BXRi0X3F6i" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="5BXRi0X3F6j" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5BXRi0X3F6k" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.graphstream" />
-                  <node concept="2Ry0Ak" id="5BXRi0X3F6l" role="2Ry0An">
-                    <property role="2Ry0Am" value="runtime" />
-                    <node concept="2Ry0Ak" id="5BXRi0X3F6m" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="5BXRi0X3F6n" role="2Ry0An">
-                        <property role="2Ry0Am" value="graphstreamwrapper.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="5BXRi0X3F6M" role="3bR37C">
           <node concept="1BurEX" id="5BXRi0X3F6N" role="1SiIV1">
             <node concept="398BVA" id="5BXRi0X3F6z" role="1BurEY">
@@ -7424,6 +7402,50 @@
                       <property role="2Ry0Am" value="lib" />
                       <node concept="2Ry0Ak" id="4HqDKleBpOG" role="2Ry0An">
                         <property role="2Ry0Am" value="jgraphx-3.7.4.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3OWFeKp4n7X" role="3bR37C">
+          <node concept="1BurEX" id="3OWFeKp4n7Y" role="1SiIV1">
+            <node concept="398BVA" id="3OWFeKp4n7I" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3OWFeKp4n7J" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3OWFeKp4n7K" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.graphstream" />
+                  <node concept="2Ry0Ak" id="3OWFeKp4n7L" role="2Ry0An">
+                    <property role="2Ry0Am" value="runtime" />
+                    <node concept="2Ry0Ak" id="3OWFeKp4n7M" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                      <node concept="2Ry0Ak" id="3OWFeKp4n7N" role="2Ry0An">
+                        <property role="2Ry0Am" value="abego-treelayout-1.0.3.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3OWFeKp4n8e" role="3bR37C">
+          <node concept="1BurEX" id="3OWFeKp4n8f" role="1SiIV1">
+            <node concept="398BVA" id="3OWFeKp4n7Z" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3OWFeKp4n80" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3OWFeKp4n81" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.graphstream" />
+                  <node concept="2Ry0Ak" id="3OWFeKp4n82" role="2Ry0An">
+                    <property role="2Ry0Am" value="runtime" />
+                    <node concept="2Ry0Ak" id="3OWFeKp4n83" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                      <node concept="2Ry0Ak" id="3OWFeKp4n84" role="2Ry0An">
+                        <property role="2Ry0Am" value="de.itemis.graphing.jar" />
                       </node>
                     </node>
                   </node>
