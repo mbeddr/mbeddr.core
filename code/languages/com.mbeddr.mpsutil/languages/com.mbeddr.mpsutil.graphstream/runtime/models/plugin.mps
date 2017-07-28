@@ -31,6 +31,7 @@
     <import index="5svn" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="uc57" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.graphstream(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="3ngp" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.listeners(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" implicit="true" />
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -1268,8 +1269,8 @@
         <property role="TrG5h" value="interactionListeners" />
         <node concept="3uibUv" id="16YVkUU6cGf" role="1tU5fm">
           <ref role="3uigEE" to="33ny:~List" resolve="List" />
-          <node concept="3uibUv" id="5FnIwHmhY1C" role="11_B2D">
-            <ref role="3uigEE" to="5svn:~IInteractionListener" resolve="IInteractionListener" />
+          <node concept="3uibUv" id="34dNJ9UkKWS" role="11_B2D">
+            <ref role="3uigEE" to="3ngp:~IInteractionListener" resolve="IInteractionListener" />
           </node>
         </node>
       </node>
