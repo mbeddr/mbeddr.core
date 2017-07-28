@@ -1892,35 +1892,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3cpWs8" id="7PyP3ULiff$" role="3cqZAp">
-                  <node concept="3cpWsn" id="7PyP3ULiff_" role="3cpWs9">
-                    <property role="TrG5h" value="kits" />
-                    <node concept="_YKpA" id="7PyP3ULj3wA" role="1tU5fm">
-                      <node concept="3uibUv" id="7PyP3ULj9mH" role="_ZDj9">
-                        <ref role="3uigEE" to="z1c3:~DevKit" resolve="DevKit" />
-                      </node>
-                    </node>
-                    <node concept="2ShNRf" id="7PyP3ULiffA" role="33vP2m">
-                      <node concept="2Jqq0_" id="7PyP3ULiffB" role="2ShVmc">
-                        <node concept="3uibUv" id="7PyP3ULiffC" role="HW$YZ">
-                          <ref role="3uigEE" to="z1c3:~DevKit" resolve="DevKit" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="7PyP3ULioHH" role="3cqZAp">
-                  <node concept="2OqwBi" id="7PyP3ULirqn" role="3clFbG">
-                    <node concept="37vLTw" id="7PyP3ULioHF" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7PyP3ULiff_" resolve="kits" />
-                    </node>
-                    <node concept="TSZUe" id="7PyP3ULixPn" role="2OqNvi">
-                      <node concept="37vLTw" id="7PyP3ULi$q7" role="25WWJ7">
-                        <ref role="3cqZAo" node="7PyP3ULh88f" resolve="mbeddrCore" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3clFbF" id="7PyP3ULhANk" role="3cqZAp">
                   <node concept="2YIFZM" id="7PyP3ULhDlL" role="3clFbG">
                     <ref role="37wK5l" to="8tyk:7Ynnt_OamtB" resolve="addDevkits" />
@@ -1928,8 +1899,12 @@
                     <node concept="37vLTw" id="7PyP3ULhFIN" role="37wK5m">
                       <ref role="3cqZAo" node="4ZRMpUzfw1V" resolve="model" />
                     </node>
-                    <node concept="37vLTw" id="7PyP3ULiffD" role="37wK5m">
-                      <ref role="3cqZAo" node="7PyP3ULiff_" resolve="kits" />
+                    <node concept="2YIFZM" id="7PyP3ULlmZN" role="37wK5m">
+                      <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+                      <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
+                      <node concept="37vLTw" id="7PyP3ULlmZO" role="37wK5m">
+                        <ref role="3cqZAo" node="7PyP3ULh88f" resolve="mbeddrCore" />
+                      </node>
                     </node>
                   </node>
                 </node>
