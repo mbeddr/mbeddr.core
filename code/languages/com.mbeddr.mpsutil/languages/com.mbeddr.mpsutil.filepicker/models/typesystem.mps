@@ -30,6 +30,7 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -432,72 +433,48 @@
       <ref role="1YaFvo" to="68mc:5lKnBeAtNw8" resolve="AbstractPicker" />
     </node>
   </node>
-  <node concept="18kY7G" id="HgIalQMCie">
-    <property role="TrG5h" value="check_MacroFilePicker" />
-    <property role="3GE5qa" value="pathAndFile" />
-    <node concept="3clFbS" id="HgIalQMCif" role="18ibNy">
-      <node concept="3clFbJ" id="HgIalQMCil" role="3cqZAp">
-        <node concept="3clFbS" id="HgIalQMCim" role="3clFbx">
-          <node concept="2MkqsV" id="HgIalQMCin" role="3cqZAp">
-            <node concept="3cpWs3" id="HgIalQMNwt" role="2MkJ7o">
-              <node concept="3cpWs3" id="HgIalQMOU4" role="3uHU7B">
-                <node concept="Xl_RD" id="HgIalQMOZQ" role="3uHU7B">
-                  <property role="Xl_RC" value="path macro " />
-                </node>
-                <node concept="2OqwBi" id="HgIalQMNMZ" role="3uHU7w">
-                  <node concept="1YBJjd" id="HgIalQMNA0" role="2Oq$k0">
-                    <ref role="1YBMHb" node="HgIalQMCih" resolve="macroFilePicker" />
-                  </node>
-                  <node concept="3TrcHB" id="HgIalQMOgt" role="2OqNvi">
-                    <ref role="3TsBF5" to="68mc:7c_RIoB8OqH" resolve="macro" />
-                  </node>
-                </node>
-              </node>
-              <node concept="Xl_RD" id="HgIalQMCio" role="3uHU7w">
-                <property role="Xl_RC" value=" does not exist" />
-              </node>
-            </node>
-            <node concept="1YBJjd" id="HgIalQMCwf" role="2OEOjV">
-              <ref role="1YBMHb" node="HgIalQMCih" resolve="macroFilePicker" />
-            </node>
-          </node>
-        </node>
-        <node concept="3fqX7Q" id="HgIalQMCiq" role="3clFbw">
-          <node concept="2OqwBi" id="HgIalQMCir" role="3fr31v">
-            <node concept="2OqwBi" id="HgIalQMCis" role="2Oq$k0">
-              <node concept="2YIFZM" id="HgIalQMCit" role="2Oq$k0">
-                <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
-                <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
-              </node>
-              <node concept="liA8E" id="HgIalQMCiu" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~PathMacros.getNames():java.util.Set" resolve="getNames" />
-              </node>
-            </node>
-            <node concept="liA8E" id="HgIalQMCiv" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
-              <node concept="2OqwBi" id="HgIalQMCiw" role="37wK5m">
-                <node concept="1YBJjd" id="HgIalQMCqX" role="2Oq$k0">
-                  <ref role="1YBMHb" node="HgIalQMCih" resolve="macroFilePicker" />
-                </node>
-                <node concept="3TrcHB" id="HgIalQMCiy" role="2OqNvi">
-                  <ref role="3TsBF5" to="68mc:7c_RIoB8OqH" resolve="macro" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="HgIalQMCih" role="1YuTPh">
-      <property role="TrG5h" value="macroFilePicker" />
-      <ref role="1YaFvo" to="68mc:7c_RIoB8H2I" resolve="MacroFilePicker" />
-    </node>
-  </node>
   <node concept="18kY7G" id="HgIalQMxLc">
     <property role="TrG5h" value="check_MacroFolderPicker" />
     <property role="3GE5qa" value="pathAndFile" />
     <node concept="3clFbS" id="HgIalQMxLd" role="18ibNy">
       <node concept="3clFbJ" id="HgIalQMxLj" role="3cqZAp">
+        <node concept="1Wc70l" id="65RgutRGMHW" role="3clFbw">
+          <node concept="3fqX7Q" id="HgIalQMByF" role="3uHU7w">
+            <node concept="2OqwBi" id="HgIalQMByH" role="3fr31v">
+              <node concept="2OqwBi" id="HgIalQMByI" role="2Oq$k0">
+                <node concept="2YIFZM" id="HgIalQMByJ" role="2Oq$k0">
+                  <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
+                  <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
+                </node>
+                <node concept="liA8E" id="HgIalQMByK" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~PathMacros.getNames():java.util.Set" resolve="getNames" />
+                </node>
+              </node>
+              <node concept="liA8E" id="HgIalQMByL" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
+                <node concept="2OqwBi" id="HgIalQMByM" role="37wK5m">
+                  <node concept="1YBJjd" id="HgIalQMByN" role="2Oq$k0">
+                    <ref role="1YBMHb" node="HgIalQMxLf" resolve="macroFolderPicker" />
+                  </node>
+                  <node concept="3TrcHB" id="HgIalQMByO" role="2OqNvi">
+                    <ref role="3TsBF5" to="68mc:4eXJ6EO9ZKy" resolve="macro" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="65RgutRGMWe" role="3uHU7B">
+            <node concept="2OqwBi" id="65RgutRGMWf" role="2Oq$k0">
+              <node concept="1YBJjd" id="65RgutRGQRU" role="2Oq$k0">
+                <ref role="1YBMHb" node="HgIalQMxLf" resolve="macroFolderPicker" />
+              </node>
+              <node concept="3TrcHB" id="65RgutRGMWh" role="2OqNvi">
+                <ref role="3TsBF5" to="68mc:4eXJ6EO9ZKy" resolve="macro" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="65RgutRGMWi" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3clFbS" id="HgIalQMxLl" role="3clFbx">
           <node concept="2MkqsV" id="HgIalQMBE3" role="3cqZAp">
             <node concept="1YBJjd" id="HgIalQMBHg" role="2OEOjV">
@@ -523,35 +500,85 @@
             </node>
           </node>
         </node>
-        <node concept="3fqX7Q" id="HgIalQMByF" role="3clFbw">
-          <node concept="2OqwBi" id="HgIalQMByH" role="3fr31v">
-            <node concept="2OqwBi" id="HgIalQMByI" role="2Oq$k0">
-              <node concept="2YIFZM" id="HgIalQMByJ" role="2Oq$k0">
-                <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
-                <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
-              </node>
-              <node concept="liA8E" id="HgIalQMByK" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~PathMacros.getNames():java.util.Set" resolve="getNames" />
-              </node>
-            </node>
-            <node concept="liA8E" id="HgIalQMByL" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
-              <node concept="2OqwBi" id="HgIalQMByM" role="37wK5m">
-                <node concept="1YBJjd" id="HgIalQMByN" role="2Oq$k0">
-                  <ref role="1YBMHb" node="HgIalQMxLf" resolve="macroFolderPicker" />
-                </node>
-                <node concept="3TrcHB" id="HgIalQMByO" role="2OqNvi">
-                  <ref role="3TsBF5" to="68mc:4eXJ6EO9ZKy" resolve="macro" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="1YaCAy" id="HgIalQMxLf" role="1YuTPh">
       <property role="TrG5h" value="macroFolderPicker" />
       <ref role="1YaFvo" to="68mc:4eXJ6EO9ZKx" resolve="MacroFolderPicker" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="HgIalQMCie">
+    <property role="TrG5h" value="check_MacroFilePicker" />
+    <property role="3GE5qa" value="pathAndFile" />
+    <node concept="3clFbS" id="HgIalQMCif" role="18ibNy">
+      <node concept="3clFbJ" id="HgIalQMCil" role="3cqZAp">
+        <node concept="1Wc70l" id="65RgutRGJhL" role="3clFbw">
+          <node concept="2OqwBi" id="65RgutRGL_W" role="3uHU7B">
+            <node concept="2OqwBi" id="65RgutRGKrb" role="2Oq$k0">
+              <node concept="1YBJjd" id="65RgutRGKeJ" role="2Oq$k0">
+                <ref role="1YBMHb" node="HgIalQMCih" resolve="macroFilePicker" />
+              </node>
+              <node concept="3TrcHB" id="65RgutRGKV7" role="2OqNvi">
+                <ref role="3TsBF5" to="68mc:7c_RIoB8OqH" resolve="macro" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="65RgutRGMr7" role="2OqNvi" />
+          </node>
+          <node concept="3fqX7Q" id="HgIalQMCiq" role="3uHU7w">
+            <node concept="2OqwBi" id="HgIalQMCir" role="3fr31v">
+              <node concept="2OqwBi" id="HgIalQMCis" role="2Oq$k0">
+                <node concept="2YIFZM" id="HgIalQMCit" role="2Oq$k0">
+                  <ref role="1Pybhc" to="z1c3:~PathMacros" resolve="PathMacros" />
+                  <ref role="37wK5l" to="z1c3:~PathMacros.getInstance():jetbrains.mps.project.PathMacros" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="HgIalQMCiu" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~PathMacros.getNames():java.util.Set" resolve="getNames" />
+                </node>
+              </node>
+              <node concept="liA8E" id="HgIalQMCiv" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
+                <node concept="2OqwBi" id="HgIalQMCiw" role="37wK5m">
+                  <node concept="1YBJjd" id="HgIalQMCqX" role="2Oq$k0">
+                    <ref role="1YBMHb" node="HgIalQMCih" resolve="macroFilePicker" />
+                  </node>
+                  <node concept="3TrcHB" id="HgIalQMCiy" role="2OqNvi">
+                    <ref role="3TsBF5" to="68mc:7c_RIoB8OqH" resolve="macro" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="HgIalQMCim" role="3clFbx">
+          <node concept="2MkqsV" id="HgIalQMCin" role="3cqZAp">
+            <node concept="3cpWs3" id="HgIalQMNwt" role="2MkJ7o">
+              <node concept="3cpWs3" id="HgIalQMOU4" role="3uHU7B">
+                <node concept="Xl_RD" id="HgIalQMOZQ" role="3uHU7B">
+                  <property role="Xl_RC" value="path macro " />
+                </node>
+                <node concept="2OqwBi" id="HgIalQMNMZ" role="3uHU7w">
+                  <node concept="1YBJjd" id="HgIalQMNA0" role="2Oq$k0">
+                    <ref role="1YBMHb" node="HgIalQMCih" resolve="macroFilePicker" />
+                  </node>
+                  <node concept="3TrcHB" id="HgIalQMOgt" role="2OqNvi">
+                    <ref role="3TsBF5" to="68mc:7c_RIoB8OqH" resolve="macro" />
+                  </node>
+                </node>
+              </node>
+              <node concept="Xl_RD" id="HgIalQMCio" role="3uHU7w">
+                <property role="Xl_RC" value=" does not exist" />
+              </node>
+            </node>
+            <node concept="1YBJjd" id="HgIalQMCwf" role="2OEOjV">
+              <ref role="1YBMHb" node="HgIalQMCih" resolve="macroFilePicker" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="HgIalQMCih" role="1YuTPh">
+      <property role="TrG5h" value="macroFilePicker" />
+      <ref role="1YaFvo" to="68mc:7c_RIoB8H2I" resolve="MacroFilePicker" />
     </node>
   </node>
 </model>
