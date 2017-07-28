@@ -5,19 +5,21 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="graphstreamwrapper.jar" />
       <sourceRoot location="gs-algo-1.3.jar" />
       <sourceRoot location="gs-core-1.3.jar" />
       <sourceRoot location="gs-ui-1.3.jar" />
       <sourceRoot location="jgraphx-3.7.4.jar" />
+      <sourceRoot location="abego-treelayout-1.0.3.jar" />
+      <sourceRoot location="de.itemis.graphing.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/graphstreamwrapper.jar" />
     <stubModelEntry path="${module}/lib/gs-algo-1.3.jar" />
     <stubModelEntry path="${module}/lib/gs-core-1.3.jar" />
     <stubModelEntry path="${module}/lib/gs-ui-1.3.jar" />
     <stubModelEntry path="${module}/lib/jgraphx-3.7.4.jar" />
+    <stubModelEntry path="${module}/lib/abego-treelayout-1.0.3.jar" />
+    <stubModelEntry path="${module}/lib/de.itemis.graphing.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

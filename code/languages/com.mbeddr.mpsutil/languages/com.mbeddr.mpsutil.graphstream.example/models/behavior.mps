@@ -10,10 +10,12 @@
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" />
     <import index="tirk" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.swingViewer(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="udin" ref="r:fe8ee6c8-7e5c-4efd-b608-c5ea6827be30(com.mbeddr.mpsutil.graphstream.runtime.plugin)" />
-    <import index="l5np" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper.example(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="1lk9" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="9voo" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper.graphstream.layout.hierarchical(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="hrr9" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphstreamwrapper.example.graphstream(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="5svn" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="dsms" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.example(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="upej" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="2yw0" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="fblp" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.graphstream.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="3ngp" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.listeners(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="thhq" ref="r:f4b2cfe1-da62-4992-a88f-cc8c90918a31(com.mbeddr.mpsutil.graphstream.example.structure)" implicit="true" />
   </imports>
   <registry>
@@ -43,7 +45,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -89,6 +90,9 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -129,52 +133,81 @@
     <node concept="13i0hz" id="4DzE9lEv6a8" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getView" />
-      <ref role="13i0hy" to="7noo:4DzE9lEtSAp" resolve="getView" />
+      <property role="TrG5h" value="getViewManager" />
+      <ref role="13i0hy" to="7noo:4DzE9lEtSAp" resolve="constructViewManager" />
       <node concept="3Tm1VV" id="4DzE9lEv6a9" role="1B3o_S" />
       <node concept="3clFbS" id="4DzE9lEv6ae" role="3clF47">
         <node concept="3cpWs8" id="LKp7m2RSVc" role="3cqZAp">
           <node concept="3cpWsn" id="LKp7m2RSVd" role="3cpWs9">
             <property role="TrG5h" value="graph" />
-            <node concept="3uibUv" id="LKp7m2RSVe" role="1tU5fm">
-              <ref role="3uigEE" to="1lk9:~Graph" resolve="Graph" />
+            <node concept="3uibUv" id="16YVkUU6Df9" role="1tU5fm">
+              <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
             </node>
-            <node concept="2YIFZM" id="LKp7m2RXvg" role="33vP2m">
-              <ref role="37wK5l" to="l5np:~ExampleGraph.getExampleGraph():de.itemis.graphstreamwrapper.Graph" resolve="getExampleGraph" />
-              <ref role="1Pybhc" to="l5np:~ExampleGraph" resolve="ExampleGraph" />
+            <node concept="2YIFZM" id="16YVkUU6Dhx" role="33vP2m">
+              <ref role="37wK5l" to="dsms:~ExampleGraph.getExampleGraph():de.itemis.graphing.model.Graph" resolve="getExampleGraph" />
+              <ref role="1Pybhc" to="dsms:~ExampleGraph" resolve="ExampleGraph" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="16YVkUU6HKu" role="3cqZAp">
+          <node concept="3cpWsn" id="16YVkUU6HKx" role="3cpWs9">
+            <property role="TrG5h" value="interactionListeners" />
+            <node concept="_YKpA" id="16YVkUU6HKq" role="1tU5fm">
+              <node concept="3uibUv" id="5FnIwHmhYb$" role="_ZDj9">
+                <ref role="3uigEE" to="5svn:~IInteractionListener" resolve="IInteractionListener" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="16YVkUU6HNE" role="33vP2m">
+              <node concept="2Jqq0_" id="16YVkUU6I78" role="2ShVmc">
+                <node concept="3uibUv" id="5FnIwHmhYtu" role="HW$YZ">
+                  <ref role="3uigEE" to="5svn:~IInteractionListener" resolve="IInteractionListener" />
+                </node>
+                <node concept="2ShNRf" id="5tNg61HfMN4" role="HW$Y0">
+                  <node concept="1pGfFk" id="5tNg61HfSJZ" role="2ShVmc">
+                    <ref role="37wK5l" to="3ngp:~HighlightInteractions.&lt;init&gt;()" resolve="HighlightInteractions" />
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="5tNg61HfSWF" role="HW$Y0">
+                  <node concept="1pGfFk" id="5tNg61HfT7K" role="2ShVmc">
+                    <ref role="37wK5l" to="3ngp:~AutomarkLinks.&lt;init&gt;()" resolve="AutomarkLinks" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="3cpWs6" id="4DzE9lEv6br" role="3cqZAp">
           <node concept="2YIFZM" id="64_1OWe_3Gg" role="3cqZAk">
-            <ref role="37wK5l" to="udin:64_1OWe$XBJ" resolve="getGraphstreamViewForMPS" />
+            <ref role="37wK5l" to="udin:64_1OWe$XBJ" resolve="getConfiguredGraphstreamViewManagerForMPS" />
             <ref role="1Pybhc" to="udin:64_1OWe$WQQ" resolve="ViewHelper" />
             <node concept="37vLTw" id="LKp7m2RXzf" role="37wK5m">
               <ref role="3cqZAo" node="LKp7m2RSVd" resolve="graph" />
             </node>
-            <node concept="2ShNRf" id="4HqDKle_Ew0" role="37wK5m">
-              <node concept="1pGfFk" id="4HqDKle_KyN" role="2ShVmc">
-                <ref role="37wK5l" to="9voo:~HierarchicalLayoutJGraphX.&lt;init&gt;(de.itemis.graphstreamwrapper.Graph)" resolve="HierarchicalLayoutJGraphX" />
-                <node concept="37vLTw" id="LKp7m2RXLl" role="37wK5m">
+            <node concept="2ShNRf" id="16YVkUU6IQn" role="37wK5m">
+              <node concept="1pGfFk" id="16YVkUU6J3S" role="2ShVmc">
+                <ref role="37wK5l" to="fblp:~StaticLayout.&lt;init&gt;(de.itemis.graphing.model.Graph,de.itemis.graphing.layout.ILayout)" resolve="StaticLayout" />
+                <node concept="37vLTw" id="16YVkUU6J6B" role="37wK5m">
                   <ref role="3cqZAo" node="LKp7m2RSVd" resolve="graph" />
+                </node>
+                <node concept="2ShNRf" id="16YVkUU6Jcl" role="37wK5m">
+                  <node concept="1pGfFk" id="16YVkUU6JoI" role="2ShVmc">
+                    <ref role="37wK5l" to="2yw0:~HierarchicalLayoutJGraphX.&lt;init&gt;()" resolve="HierarchicalLayoutJGraphX" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="10Nm6u" id="64_1OWe_cQV" role="37wK5m" />
-            <node concept="10Nm6u" id="64_1OWe_dyz" role="37wK5m" />
-            <node concept="2YIFZM" id="54mvx9XhOCD" role="37wK5m">
-              <ref role="37wK5l" to="hrr9:~ExampleGraphstreamView.getExampleStyle():java.lang.String" resolve="getExampleStyle" />
-              <ref role="1Pybhc" to="hrr9:~ExampleGraphstreamView" resolve="ExampleGraphstreamView" />
+            <node concept="37vLTw" id="16YVkUU6IuS" role="37wK5m">
+              <ref role="3cqZAo" node="16YVkUU6HKx" resolve="interactionListeners" />
             </node>
           </node>
         </node>
       </node>
       <node concept="37vLTG" id="4DzE9lEv6af" role="3clF46">
         <property role="TrG5h" value="viewID" />
-        <node concept="17QB3L" id="4DzE9lEv6ag" role="1tU5fm" />
+        <node concept="17QB3L" id="16YVkUU6DiB" role="1tU5fm" />
       </node>
-      <node concept="3uibUv" id="4DzE9lEv6ah" role="3clF45">
-        <ref role="3uigEE" to="tirk:~ViewPanel" resolve="ViewPanel" />
+      <node concept="3uibUv" id="16YVkUU6DiA" role="3clF45">
+        <ref role="3uigEE" to="upej:~IViewManager" resolve="IViewManager" />
       </node>
     </node>
   </node>
