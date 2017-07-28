@@ -467,9 +467,6 @@
       <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
         <child id="1678062499342629861" name="moduleId" index="37shsm" />
       </concept>
-      <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
-        <property id="4040588429969021683" name="moduleId" index="3rM5sR" />
-      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -511,10 +508,6 @@
       <concept id="3692959419668441282" name="com.mbeddr.mpsutil.smodule.structure.AddModelOperation" flags="ng" index="2o1iZ4">
         <child id="9193920352840482545" name="storageType" index="bRicC" />
         <child id="386247815699769479" name="name" index="2fkxbg" />
-      </concept>
-      <concept id="3692959419665703528" name="com.mbeddr.mpsutil.smodule.structure.DevKitRef" flags="ng" index="2omQlI" />
-      <concept id="3692959419666382910" name="com.mbeddr.mpsutil.smodule.structure.AddDevKitOperation" flags="ng" index="2opssS">
-        <child id="3692959419666408899" name="kits" index="2opyb5" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1871,18 +1864,6 @@
           <node concept="1QHqEF" id="5fqMIVnw7Dv" role="3cqZAp">
             <node concept="1QHqEC" id="5fqMIVnw7Dx" role="1QHqEI">
               <node concept="3clFbS" id="5fqMIVnw7Dz" role="1bW5cS">
-                <node concept="3clFbF" id="7PyP3ULdrA7" role="3cqZAp">
-                  <node concept="2OqwBi" id="7PyP3ULdtxs" role="3clFbG">
-                    <node concept="37vLTw" id="7PyP3ULdrA5" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4ZRMpUzfw1V" resolve="model" />
-                    </node>
-                    <node concept="2opssS" id="7PyP3ULdwou" role="2OqNvi">
-                      <node concept="2omQlI" id="7PyP3ULdwow" role="2opyb5">
-                        <property role="3rM5sR" value="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3KaCP$" id="4ZRMpUzfubj" role="3cqZAp">
                   <node concept="3KbdKl" id="4ZRMpUzfuCe" role="3KbHQx">
                     <node concept="Rm8GO" id="4ZRMpUzfuEC" role="3Kbmr1">
