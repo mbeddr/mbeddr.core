@@ -574,7 +574,7 @@
   </node>
   <node concept="1TIwiD" id="1Qze4b32ew4">
     <property role="3GE5qa" value="configuration.cbmc" />
-    <property role="TrG5h" value="CBMCAnalysisConfiguration" />
+    <property role="TrG5h" value="CBMCAnalysisConfigurationContainer" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Analyses Configuration Container (CBMC)" />
     <property role="R4oN_" value="an analysis configuration container contains multiple analyses" />
@@ -743,7 +743,7 @@
       <property role="20kJfa" value="config" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8772310394718172126" />
-      <ref role="20lvS9" node="1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+      <ref role="20lvS9" node="1Qze4b32ew4" resolve="CBMCAnalysisConfigurationContainer" />
       <node concept="asaX9" id="6BJ5EqKuQmh" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="fupCadh9n" role="PzmwI">
@@ -760,7 +760,7 @@
       <property role="20kJfa" value="config" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7633344798597539200" />
-      <ref role="20lvS9" node="1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+      <ref role="20lvS9" node="1Qze4b32ew4" resolve="CBMCAnalysisConfigurationContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="1$MI$rgzQnB">
