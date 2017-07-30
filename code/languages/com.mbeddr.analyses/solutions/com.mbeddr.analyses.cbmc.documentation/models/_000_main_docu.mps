@@ -11,6 +11,7 @@
   <imports>
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="hj5x" ref="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" />
+    <import index="93wt" ref="r:4af2b6e4-5f55-4700-a23a-ed43656466aa(com.mbeddr.analyses.cbmc.documentation._010_core_examples)" />
   </imports>
   <registry>
     <language id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect">
@@ -39,6 +40,12 @@
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
+        <reference id="2286331641395252233" name="node" index="2NCMaa" />
+      </concept>
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
+        <child id="2286331641395252236" name="elements" index="2NCMaf" />
+      </concept>
       <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
@@ -51,6 +58,13 @@
       </concept>
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="988357225295489881" name="com.mbeddr.doc.structure.TableOfContents" flags="ng" index="3xmJbL" />
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
+        <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
+      </concept>
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922836" name="language" index="3z_lpW" />
+      </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
       </concept>
@@ -257,20 +271,20 @@
               </node>
             </node>
           </node>
-          <node concept="3X6T9g" id="7PyP3ULsG$L" role="3Xp5NH">
-            <node concept="OjmMv" id="7PyP3ULsG$M" role="3X6T9h">
-              <node concept="19SGf9" id="7PyP3ULsG$N" role="OjmMu">
-                <node concept="19SUe$" id="7PyP3ULsG$O" role="19SJt6">
-                  <property role="19SUeA" value="(optional) the global CBMC settings which are defined for ALL analyses configurations" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3X6T9g" id="7PyP3ULsG_p" role="3Xp5NH">
             <node concept="OjmMv" id="7PyP3ULsG_q" role="3X6T9h">
               <node concept="19SGf9" id="7PyP3ULsG_r" role="OjmMu">
                 <node concept="19SUe$" id="7PyP3ULsG_s" role="19SJt6">
                   <property role="19SUeA" value="a set of analyses configurations" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="7PyP3ULsG$L" role="3Xp5NH">
+            <node concept="OjmMv" id="7PyP3ULsG$M" role="3X6T9h">
+              <node concept="19SGf9" id="7PyP3ULsG$N" role="OjmMu">
+                <node concept="19SUe$" id="7PyP3ULsG$O" role="19SJt6">
+                  <property role="19SUeA" value="(optional) the global CBMC settings which are defined for ALL analyses configurations. An analysis configuration can overwrite each of these settings. " />
                 </node>
               </node>
             </node>
@@ -293,6 +307,18 @@
             </node>
             <node concept="19SUe$" id="7PyP3ULsHQh" role="19SJt6">
               <property role="19SUeA" value=" devkit to the 'used languages'." />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="7PyP3ULMCD6" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="7PyP3ULMvTW" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="2NCZwO" id="7PyP3ULMvTX" role="3z_lpI">
+            <node concept="2NCMab" id="7PyP3ULMvVp" role="2NCMaf">
+              <ref role="2NCMaa" to="93wt:7PyP3ULsHMK" resolve="analyses_container_example" />
             </node>
           </node>
         </node>
