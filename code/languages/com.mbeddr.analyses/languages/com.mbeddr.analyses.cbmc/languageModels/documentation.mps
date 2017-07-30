@@ -7,7 +7,7 @@
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
-    <import index="h0qv" ref="r:52276921-e1d3-4d9e-ab8f-f8be12f4fb06(com.mbeddr.analyses.cbmc.documentation.main)" />
+    <import index="h0qv" ref="r:52276921-e1d3-4d9e-ab8f-f8be12f4fb06(com.mbeddr.analyses.cbmc.documentation._000_main_docu)" />
   </imports>
   <registry>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">

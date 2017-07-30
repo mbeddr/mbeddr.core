@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:52276921-e1d3-4d9e-ab8f-f8be12f4fb06(com.mbeddr.analyses.cbmc.documentation.main)">
+<model ref="r:52276921-e1d3-4d9e-ab8f-f8be12f4fb06(com.mbeddr.analyses.cbmc.documentation._000_main_docu)">
   <persistence version="9" />
   <languages>
     <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />
@@ -27,8 +27,12 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="620304030119138923" name="com.mbeddr.doc.structure.BoldFormattedText" flags="ng" index="2vpllh" />
       <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
         <child id="6165313375056012515" name="ref" index="$CzcU" />
+      </concept>
+      <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
+        <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
@@ -64,6 +68,17 @@
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
       <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
+      <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
+        <child id="5378658552262903589" name="text" index="3X6T9h" />
+      </concept>
+      <concept id="5378658552262893169" name="com.mbeddr.doc.structure.ItemList" flags="ng" index="3X6WG5">
+        <child id="5378658552262986137" name="items" index="3Xp5NH" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
@@ -135,7 +150,60 @@
         <node concept="1_0LV8" id="7VkE0BpsrfU" role="1_0VJ0">
           <node concept="19SGf9" id="7VkE0BpsrfV" role="1_0LWR">
             <node concept="19SUe$" id="7VkE0BpsrfW" role="19SJt6">
-              <property role="19SUeA" value="The verification stack of MBEDDR is based on the CBMC model checker. We provide DSLs to define analyses configurations and verification harnesses. The verification results delivered by CBMC are presented in MBEDDR and lifted at the abstraction level of the used languages. " />
+              <property role="19SUeA" value="The verification stack of MBEDDR is based on the CBMC model checker. We provide DSLs to define analyses configurations and verification harnesses. The verification results (analyses pass/fail, witnesses) which are delivered by CBMC are presented in MBEDDR and lifted at the abstraction level of the used DSLs. The following DevKits are needed for using the analyses:" />
+            </node>
+          </node>
+        </node>
+        <node concept="3X6WG5" id="7PyP3ULsGD1" role="1_0VJ0">
+          <node concept="3X6T9g" id="7PyP3ULsGD2" role="3Xp5NH">
+            <node concept="OjmMv" id="7PyP3ULsGD3" role="3X6T9h">
+              <node concept="19SGf9" id="7PyP3ULsGD4" role="OjmMu">
+                <node concept="19SUe$" id="7PyP3ULsGDy" role="19SJt6" />
+                <node concept="2vpllh" id="7PyP3ULsGDv" role="19SJt6">
+                  <node concept="19SGf9" id="7PyP3ULsGDw" role="$DsGW">
+                    <node concept="19SUe$" id="7PyP3ULsGDx" role="19SJt6">
+                      <property role="19SUeA" value="com.mbeddr.analyses.core" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="7PyP3ULsGDz" role="19SJt6">
+                  <property role="19SUeA" value=" for defining harnesses and basic analyses which can be used on plain C code" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="7PyP3ULsGDN" role="3Xp5NH">
+            <node concept="OjmMv" id="7PyP3ULsGDO" role="3X6T9h">
+              <node concept="19SGf9" id="7PyP3ULsGDP" role="OjmMu">
+                <node concept="19SUe$" id="7PyP3ULsGEu" role="19SJt6" />
+                <node concept="2vpllh" id="7PyP3ULsGEr" role="19SJt6">
+                  <node concept="19SGf9" id="7PyP3ULsGEs" role="$DsGW">
+                    <node concept="19SUe$" id="7PyP3ULsGEt" role="19SJt6">
+                      <property role="19SUeA" value="com.mbeddr.analyses.statemachines" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="7PyP3ULsGEv" role="19SJt6">
+                  <property role="19SUeA" value=" for state-machines specific analyses" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="7PyP3ULsGEX" role="3Xp5NH">
+            <node concept="OjmMv" id="7PyP3ULsGFX" role="3X6T9h">
+              <node concept="19SGf9" id="7PyP3ULsGFY" role="OjmMu">
+                <node concept="19SUe$" id="7PyP3ULsGFZ" role="19SJt6" />
+                <node concept="2vpllh" id="7PyP3ULsGG0" role="19SJt6">
+                  <node concept="19SGf9" id="7PyP3ULsGG1" role="$DsGW">
+                    <node concept="19SUe$" id="7PyP3ULsGG2" role="19SJt6">
+                      <property role="19SUeA" value="com.mbeddr.analyses.components" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="7PyP3ULsGG3" role="19SJt6">
+                  <property role="19SUeA" value=" for components specific analyses" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -162,12 +230,71 @@
         <node concept="1_0LV8" id="7PyP3ULmhoe" role="1_0VJ0">
           <node concept="19SGf9" id="7PyP3ULmhof" role="1_0LWR">
             <node concept="19SUe$" id="7PyP3ULmhog" role="19SJt6">
-              <property role="19SUeA" value="A container contains multiple analyses configurations.  " />
+              <property role="19SUeA" value="Running a CBMC-based analysis needs an analysis configuration. Analyses configurations are contained into a root node called 'Analysis Configuration Containers'. A container contains:   " />
             </node>
           </node>
         </node>
         <node concept="3n9NSn" id="7PyP3ULmhoL" role="lGtFl">
           <ref role="3nadW_" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfigurationContainer" />
+        </node>
+        <node concept="3X6WG5" id="7PyP3ULsG$0" role="1_0VJ0">
+          <node concept="3X6T9g" id="7PyP3ULsG$1" role="3Xp5NH">
+            <node concept="OjmMv" id="7PyP3ULsG$2" role="3X6T9h">
+              <node concept="19SGf9" id="7PyP3ULsG$3" role="OjmMu">
+                <node concept="19SUe$" id="7PyP3ULsG$4" role="19SJt6">
+                  <property role="19SUeA" value="a set of " />
+                </node>
+                <node concept="2vpllh" id="7PyP3ULsG$u" role="19SJt6">
+                  <node concept="19SGf9" id="7PyP3ULsG$v" role="$DsGW">
+                    <node concept="19SUe$" id="7PyP3ULsG$w" role="19SJt6">
+                      <property role="19SUeA" value="imports" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="7PyP3ULsG$x" role="19SJt6">
+                  <property role="19SUeA" value=" of implementation modules which contain the entry points in the analyses" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="7PyP3ULsG$L" role="3Xp5NH">
+            <node concept="OjmMv" id="7PyP3ULsG$M" role="3X6T9h">
+              <node concept="19SGf9" id="7PyP3ULsG$N" role="OjmMu">
+                <node concept="19SUe$" id="7PyP3ULsG$O" role="19SJt6">
+                  <property role="19SUeA" value="(optional) the global CBMC settings which are defined for ALL analyses configurations" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="7PyP3ULsG_p" role="3Xp5NH">
+            <node concept="OjmMv" id="7PyP3ULsG_q" role="3X6T9h">
+              <node concept="19SGf9" id="7PyP3ULsG_r" role="OjmMu">
+                <node concept="19SUe$" id="7PyP3ULsG_s" role="19SJt6">
+                  <property role="19SUeA" value="a set of analyses configurations" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="7PyP3ULsHMZ" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="1_0LV8" id="7PyP3ULsHP2" role="1_0VJ0">
+          <node concept="19SGf9" id="7PyP3ULsHP3" role="1_0LWR">
+            <node concept="19SUe$" id="7PyP3ULsHP4" role="19SJt6">
+              <property role="19SUeA" value="In order to instantiate this node, one needs to add the " />
+            </node>
+            <node concept="2vpllh" id="7PyP3ULsHQe" role="19SJt6">
+              <node concept="19SGf9" id="7PyP3ULsHQf" role="$DsGW">
+                <node concept="19SUe$" id="7PyP3ULsHQg" role="19SJt6">
+                  <property role="19SUeA" value="com.mbeddr.analyses.core" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="7PyP3ULsHQh" role="19SJt6">
+              <property role="19SUeA" value=" devkit to the 'used languages'." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1_1sxE" id="7PyP3ULnnrB" role="1_0VJ0">
