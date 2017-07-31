@@ -2,8 +2,7 @@
 <model ref="r:66c17d34-25db-41cf-bc64-6216bebeaf58(com.mbeddr.mpsutil.smodule.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -26,7 +25,7 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
@@ -131,7 +130,7 @@
             <node concept="2pJPED" id="6X6$P3A2cf6" role="2pJPEn">
               <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
               <node concept="2pIpSj" id="6X6$P3A2cge" role="2pJxcM">
-                <ref role="2pIpSl" to="tpee:g7uigIF" />
+                <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
                 <node concept="36bGnv" id="lse_ua6cy9" role="2pJxcZ">
                   <ref role="36bGnp" to="z1c4:~MPSProject" resolve="MPSProject" />
                 </node>
@@ -187,7 +186,7 @@
                 <ref role="1YBMHb" node="6X6$P3A2pbg" resolve="ads" />
               </node>
               <node concept="3TrEf2" id="6X6$P3A2ptF" role="2OqNvi">
-                <ref role="3Tt5mk" to="gt8j:6X6$P3A2cyr" />
+                <ref role="3Tt5mk" to="gt8j:6X6$P3A2cyr" resolve="name" />
               </node>
             </node>
           </node>
@@ -208,7 +207,7 @@
                 <ref role="1YBMHb" node="6X6$P3A2pbg" resolve="ads" />
               </node>
               <node concept="3TrEf2" id="6X6$P3A2pUS" role="2OqNvi">
-                <ref role="3Tt5mk" to="gt8j:6X6$P3A2cyw" />
+                <ref role="3Tt5mk" to="gt8j:6X6$P3A2cyw" resolve="relativeFolder" />
               </node>
             </node>
           </node>
@@ -285,7 +284,7 @@
                 <ref role="1YBMHb" node="3d01KqFjELB" resolve="addModelOperation" />
               </node>
               <node concept="3TrEf2" id="lse_ua3$Ok" role="2OqNvi">
-                <ref role="3Tt5mk" to="gt8j:lse_ua3yy7" />
+                <ref role="3Tt5mk" to="gt8j:lse_ua3yy7" resolve="name" />
               </node>
             </node>
           </node>
@@ -305,7 +304,7 @@
           <node concept="2pJPED" id="lse_ua4Gsa" role="2pJPEn">
             <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
             <node concept="2pIpSj" id="lse_ua4Gsv" role="2pJxcM">
-              <ref role="2pIpSl" to="tpee:g7uigIF" />
+              <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
               <node concept="36bGnv" id="lse_ua4GxP" role="2pJxcZ">
                 <ref role="36bGnp" to="z1c3:~Solution" resolve="Solution" />
               </node>
@@ -377,7 +376,7 @@
             <ref role="1YBMHb" node="2gGfLsWUgzt" resolve="addDependencyOperation" />
           </node>
           <node concept="3Tsc0h" id="2gGfLsWUgNI" role="2OqNvi">
-            <ref role="3TtcxE" to="gt8j:2gGfLsWUgzc" />
+            <ref role="3TtcxE" to="gt8j:2gGfLsWUgzc" resolve="modelsExpr" />
           </node>
         </node>
       </node>

@@ -2,8 +2,7 @@
 <model ref="r:da19e2e5-db28-44bc-aaee-a9ea353fdb38(com.mbeddr.mpsutil.propertydefault.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="tp1t" ref="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" />
@@ -139,11 +138,11 @@
                 <ref role="3cqZAo" node="1m4fy7KKEhE" resolve="ancestor" />
               </node>
               <node concept="3TrEf2" id="1m4fy7KKwg0" role="2OqNvi">
-                <ref role="3Tt5mk" to="tp1t:gGEom_V" />
+                <ref role="3Tt5mk" to="tp1t:gGEom_V" resolve="applicableProperty" />
               </node>
             </node>
             <node concept="3TrEf2" id="1m4fy7KKwg1" role="2OqNvi">
-              <ref role="3Tt5mk" to="tpce:fKAX2Z_" />
+              <ref role="3Tt5mk" to="tpce:fKAX2Z_" resolve="dataType" />
             </node>
           </node>
         </node>
@@ -159,7 +158,7 @@
                     <ref role="1YBMHb" node="1m4fy7KJjH_" resolve="iPropertyDefaultValue" />
                   </node>
                   <node concept="3TrEf2" id="1m4fy7KK$oF" role="2OqNvi">
-                    <ref role="3Tt5mk" to="d5g1:1m4fy7KJh_U" />
+                    <ref role="3Tt5mk" to="d5g1:1m4fy7KJh_U" resolve="defaultValue" />
                   </node>
                 </node>
               </node>
@@ -192,7 +191,7 @@
                 <ref role="1YBMHb" node="1m4fy7KJjH_" resolve="iPropertyDefaultValue" />
               </node>
               <node concept="3TrEf2" id="1m4fy7KLC4o" role="2OqNvi">
-                <ref role="3Tt5mk" to="d5g1:1m4fy7KJh_U" />
+                <ref role="3Tt5mk" to="d5g1:1m4fy7KJh_U" resolve="defaultValue" />
               </node>
             </node>
           </node>

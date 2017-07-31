@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -258,7 +258,7 @@
                       <ref role="3cqZAo" node="2gGfLsWTiuK" resolve="buildProject" />
                     </node>
                     <node concept="3Tsc0h" id="2gGfLsWTpqb" role="2OqNvi">
-                      <ref role="3TtcxE" to="3ior:4RPz6WoY4Cy" />
+                      <ref role="3TtcxE" to="3ior:4RPz6WoY4Cy" resolve="macros" />
                     </node>
                   </node>
                   <node concept="2HwmR7" id="2gGfLsWTpqc" role="2OqNvi">
@@ -301,7 +301,7 @@
                     </node>
                     <node concept="1sne9v" id="2gGfLsWTrTQ" role="37vLTx">
                       <node concept="1sne01" id="2gGfLsWTrTR" role="1sne8H">
-                        <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                        <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                         <node concept="1snrkl" id="2gGfLsWTrUH" role="1sne05">
                           <ref role="1snrk2" to="tpck:h0TrG11" resolve="name" />
                           <node concept="Xl_RD" id="2gGfLsWTrVv" role="1snq_E">
@@ -322,7 +322,7 @@
                         <ref role="3cqZAo" node="2gGfLsWTiuK" resolve="buildProject" />
                       </node>
                       <node concept="3Tsc0h" id="2gGfLsWTsrq" role="2OqNvi">
-                        <ref role="3TtcxE" to="3ior:4RPz6WoY4Cy" />
+                        <ref role="3TtcxE" to="3ior:4RPz6WoY4Cy" resolve="macros" />
                       </node>
                     </node>
                     <node concept="TSZUe" id="2gGfLsWTuI0" role="2OqNvi">
@@ -352,7 +352,7 @@
                               <ref role="3cqZAo" node="2gGfLsWTiuK" resolve="buildProject" />
                             </node>
                             <node concept="3Tsc0h" id="2gGfLsWTvyL" role="2OqNvi">
-                              <ref role="3TtcxE" to="3ior:4RPz6WoY4Cy" />
+                              <ref role="3TtcxE" to="3ior:4RPz6WoY4Cy" resolve="macros" />
                             </node>
                           </node>
                           <node concept="v3k3i" id="2gGfLsWT$oS" role="2OqNvi">
@@ -409,7 +409,7 @@
                 </node>
                 <node concept="1sne9v" id="2gGfLsWTCtS" role="33vP2m">
                   <node concept="1sne01" id="2gGfLsWTCtT" role="1sne8H">
-                    <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                    <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                     <node concept="1snrkl" id="2gGfLsWTCtU" role="1sne05">
                       <ref role="1snrk2" to="tpck:h0TrG11" resolve="name" />
                       <node concept="3cpWs3" id="2gGfLsWTCtV" role="1snq_E">
@@ -427,15 +427,15 @@
                       </node>
                     </node>
                     <node concept="1sne01" id="2gGfLsWTCu0" role="1sne05">
-                      <ref role="1snh0D" to="3ior:6qcrfIJFv3E" />
+                      <ref role="1snh0D" to="3ior:6qcrfIJFv3E" resolve="defaultPath" />
                       <node concept="1sh8R2" id="2gGfLsWTCu1" role="1sne05">
-                        <ref role="1sh8R3" to="3ior:6qcrfIJFx8E" />
+                        <ref role="1sh8R3" to="3ior:6qcrfIJFx8E" resolve="macro" />
                         <node concept="37vLTw" id="2gGfLsWTCu2" role="1sh8R0">
                           <ref role="3cqZAo" node="2gGfLsWTs2x" resolve="artifactsRootMacro" />
                         </node>
                       </node>
                       <node concept="1sne01" id="2gGfLsWTCu3" role="1sne05">
-                        <ref role="1snh0D" to="3ior:6mpuAlRaIJb" />
+                        <ref role="1snh0D" to="3ior:6mpuAlRaIJb" resolve="compositePart" />
                         <node concept="1snrkl" id="2gGfLsWTCu4" role="1sne05">
                           <ref role="1snrk2" to="3ior:7usrAn056vN" resolve="head" />
                           <node concept="2OqwBi" id="2gGfLsWTCu5" role="1snq_E">
@@ -469,7 +469,7 @@
                     <ref role="3cqZAo" node="2gGfLsWTiuK" resolve="buildProject" />
                   </node>
                   <node concept="3Tsc0h" id="2gGfLsWT_tj" role="2OqNvi">
-                    <ref role="3TtcxE" to="3ior:4RPz6WoY4Cy" />
+                    <ref role="3TtcxE" to="3ior:4RPz6WoY4Cy" resolve="macros" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="2gGfLsWTBLO" role="2OqNvi">
@@ -492,17 +492,17 @@
                 </node>
                 <node concept="1sne9v" id="2gGfLsWTCne" role="37vLTx">
                   <node concept="1sne01" id="2gGfLsWTCnf" role="1sne8H">
-                    <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                    <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                     <node concept="1sh8R2" id="2gGfLsWTCng" role="1sne05">
-                      <ref role="1sh8R3" to="3ior:4RPz6WoY4C$" />
+                      <ref role="1sh8R3" to="3ior:4RPz6WoY4C$" resolve="script" />
                       <node concept="37vLTw" id="2gGfLsWTCnh" role="1sh8R0">
                         <ref role="3cqZAo" node="2gGfLsWTiuM" resolve="newDependency" />
                       </node>
                     </node>
                     <node concept="1sne01" id="2gGfLsWTCrB" role="1sne05">
-                      <ref role="1snh0D" to="3ior:3_glsEmonOM" />
+                      <ref role="1snh0D" to="3ior:3_glsEmonOM" resolve="artifacts" />
                       <node concept="1sh8R2" id="2gGfLsWTDPH" role="1sne05">
-                        <ref role="1sh8R3" to="3ior:6qcrfIJFx8E" />
+                        <ref role="1sh8R3" to="3ior:6qcrfIJFx8E" resolve="macro" />
                         <node concept="37vLTw" id="2gGfLsWTDQt" role="1sh8R0">
                           <ref role="3cqZAo" node="2gGfLsWTCtR" resolve="newDependencyMacro" />
                         </node>
@@ -536,9 +536,9 @@
                   </node>
                   <node concept="1sne9v" id="2gGfLsWTlvF" role="37vLTx">
                     <node concept="1sne01" id="2gGfLsWTlvG" role="1sne8H">
-                      <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                      <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                       <node concept="1sh8R2" id="2gGfLsWTlvH" role="1sne05">
-                        <ref role="1sh8R3" to="3ior:4RPz6WoY4C$" />
+                        <ref role="1sh8R3" to="3ior:4RPz6WoY4C$" resolve="script" />
                         <node concept="37vLTw" id="2gGfLsWTlvI" role="1sh8R0">
                           <ref role="3cqZAo" node="2gGfLsWTiuM" resolve="newDependency" />
                         </node>
@@ -566,7 +566,7 @@
                 <ref role="3cqZAo" node="2gGfLsWTiuK" resolve="buildProject" />
               </node>
               <node concept="3Tsc0h" id="2gGfLsWTjnf" role="2OqNvi">
-                <ref role="3TtcxE" to="3ior:4RPz6WoY4C_" />
+                <ref role="3TtcxE" to="3ior:4RPz6WoY4C_" resolve="dependencies" />
               </node>
             </node>
             <node concept="TSZUe" id="2gGfLsWTll2" role="2OqNvi">
@@ -634,7 +634,7 @@
                   <ref role="3cqZAo" node="2gGfLsWSTXu" resolve="buildProject" />
                 </node>
                 <node concept="3Tsc0h" id="2gGfLsWSUaV" role="2OqNvi">
-                  <ref role="3TtcxE" to="3ior:4RPz6WoY4C_" />
+                  <ref role="3TtcxE" to="3ior:4RPz6WoY4C_" resolve="dependencies" />
                 </node>
               </node>
               <node concept="v3k3i" id="2gGfLsWSW2j" role="2OqNvi">
@@ -656,7 +656,7 @@
                           <ref role="3cqZAo" node="2gGfLsWSWbA" resolve="dep" />
                         </node>
                         <node concept="3TrEf2" id="2gGfLsWSW$A" role="2OqNvi">
-                          <ref role="3Tt5mk" to="3ior:4RPz6WoY4C$" />
+                          <ref role="3Tt5mk" to="3ior:4RPz6WoY4C$" resolve="script" />
                         </node>
                       </node>
                     </node>
@@ -802,7 +802,7 @@
                     <ref role="3cqZAo" node="2YK7iA9SyZv" resolve="buildProject" />
                   </node>
                   <node concept="3Tsc0h" id="2YK7iA9Sz3K" role="2OqNvi">
-                    <ref role="3TtcxE" to="3ior:4RPz6WoY4C_" />
+                    <ref role="3TtcxE" to="3ior:4RPz6WoY4C_" resolve="dependencies" />
                   </node>
                 </node>
                 <node concept="v3k3i" id="2YK7iA9Sz3L" role="2OqNvi">
@@ -820,7 +820,7 @@
                           <ref role="3cqZAo" node="2YK7iA9Sz3U" resolve="it" />
                         </node>
                         <node concept="3TrEf2" id="2YK7iA9Sz3T" role="2OqNvi">
-                          <ref role="3Tt5mk" to="3ior:4RPz6WoY4C$" />
+                          <ref role="3Tt5mk" to="3ior:4RPz6WoY4C$" resolve="script" />
                         </node>
                       </node>
                     </node>
