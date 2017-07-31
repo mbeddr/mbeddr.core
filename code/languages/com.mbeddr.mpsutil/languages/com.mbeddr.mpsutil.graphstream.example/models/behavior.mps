@@ -33,6 +33,10 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -55,6 +59,9 @@
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
@@ -104,7 +111,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="4IojDAdiT24">
-    <ref role="13h7C2" to="thhq:4IojDAdiT07" resolve="ExampleViewable" />
+    <ref role="13h7C2" to="thhq:4IojDAdiT07" resolve="ExampleGraphingElement" />
     <node concept="13hLZK" id="4IojDAdiT25" role="13h7CW">
       <node concept="3clFbS" id="4IojDAdiT26" role="2VODD2" />
     </node>
@@ -153,14 +160,14 @@
           <node concept="3cpWsn" id="16YVkUU6HKx" role="3cpWs9">
             <property role="TrG5h" value="interactionListeners" />
             <node concept="_YKpA" id="16YVkUU6HKq" role="1tU5fm">
-              <node concept="3uibUv" id="5FnIwHmhYb$" role="_ZDj9">
-                <ref role="3uigEE" to="5svn:~IInteractionListener" resolve="IInteractionListener" />
+              <node concept="3uibUv" id="5Lex0lnUeoF" role="_ZDj9">
+                <ref role="3uigEE" to="3ngp:~IInteractionListener" resolve="IInteractionListener" />
               </node>
             </node>
             <node concept="2ShNRf" id="16YVkUU6HNE" role="33vP2m">
               <node concept="2Jqq0_" id="16YVkUU6I78" role="2ShVmc">
-                <node concept="3uibUv" id="5FnIwHmhYtu" role="HW$YZ">
-                  <ref role="3uigEE" to="5svn:~IInteractionListener" resolve="IInteractionListener" />
+                <node concept="3uibUv" id="5Lex0lnUeKP" role="HW$YZ">
+                  <ref role="3uigEE" to="3ngp:~IInteractionListener" resolve="IInteractionListener" />
                 </node>
                 <node concept="2ShNRf" id="5tNg61HfMN4" role="HW$Y0">
                   <node concept="1pGfFk" id="5tNg61HfSJZ" role="2ShVmc">
@@ -170,6 +177,24 @@
                 <node concept="2ShNRf" id="5tNg61HfSWF" role="HW$Y0">
                   <node concept="1pGfFk" id="5tNg61HfT7K" role="2ShVmc">
                     <ref role="37wK5l" to="3ngp:~AutomarkLinks.&lt;init&gt;()" resolve="AutomarkLinks" />
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="izXu77fiSq" role="HW$Y0">
+                  <node concept="1pGfFk" id="izXu77foot" role="2ShVmc">
+                    <ref role="37wK5l" to="3ngp:~ShowDeleteButtons.&lt;init&gt;(double,double,double,de.itemis.graphing.model.Attachment$ELocation)" resolve="ShowDeleteButtons" />
+                    <node concept="3b6qkQ" id="izXu77foxB" role="37wK5m">
+                      <property role="$nhwW" value="0.2" />
+                    </node>
+                    <node concept="3b6qkQ" id="izXu77fpcA" role="37wK5m">
+                      <property role="$nhwW" value="0.2" />
+                    </node>
+                    <node concept="3b6qkQ" id="izXu77fpvy" role="37wK5m">
+                      <property role="$nhwW" value="0.05" />
+                    </node>
+                    <node concept="Rm8GO" id="izXu77froV" role="37wK5m">
+                      <ref role="Rm8GQ" to="5svn:~Attachment$ELocation.West" resolve="West" />
+                      <ref role="1Px2BO" to="5svn:~Attachment$ELocation" resolve="Attachment.ELocation" />
+                    </node>
                   </node>
                 </node>
               </node>

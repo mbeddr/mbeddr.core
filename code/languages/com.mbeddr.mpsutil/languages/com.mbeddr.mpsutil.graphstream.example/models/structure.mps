@@ -31,11 +31,11 @@
   </registry>
   <node concept="1TIwiD" id="4IojDAdiT07">
     <property role="EcuMT" value="5447190170712117255" />
-    <property role="TrG5h" value="ExampleViewable" />
+    <property role="TrG5h" value="ExampleGraphingElement" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4IojDAdiT08" role="PzmwI">
-      <ref role="PrY4T" to="4m0a:4IojDAdic49" resolve="GraphstreamViewable" />
+      <ref role="PrY4T" to="4m0a:4IojDAdic49" resolve="GraphingElement" />
     </node>
     <node concept="PrWs8" id="77LxFpnM6hp" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

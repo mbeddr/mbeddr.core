@@ -41,10 +41,13 @@
     </language>
   </registry>
   <node concept="24kQdi" id="4IojDAdiWn8">
-    <ref role="1XX52x" to="thhq:4IojDAdiT07" resolve="ExampleViewable" />
+    <ref role="1XX52x" to="thhq:4IojDAdiT07" resolve="ExampleGraphingElement" />
     <node concept="3EZMnI" id="4IojDAdkshC" role="2wV5jI">
+      <node concept="3F0ifn" id="5Lex0lo3yBL" role="3EZMnx">
+        <property role="3F0ifm" value="example" />
+      </node>
       <node concept="3F0ifn" id="4IojDAdksik" role="3EZMnx">
-        <property role="3F0ifm" value="graphstream" />
+        <property role="3F0ifm" value="graphing" />
         <node concept="3$7fVu" id="4IojDAdksil" role="3F10Kt">
           <property role="3$6WeP" value="0.5" />
         </node>
@@ -52,14 +55,8 @@
           <property role="3$6WeP" value="0.5" />
         </node>
       </node>
-      <node concept="3F0ifn" id="4IojDAdksin" role="3EZMnx">
-        <property role="3F0ifm" value="example" />
-        <node concept="3$7fVu" id="4IojDAdksio" role="3F10Kt">
-          <property role="3$6WeP" value="0.5" />
-        </node>
-        <node concept="3$7jql" id="4IojDAdksip" role="3F10Kt">
-          <property role="3$6WeP" value="0.5" />
-        </node>
+      <node concept="3F0ifn" id="5Lex0lnU7Qp" role="3EZMnx">
+        <property role="3F0ifm" value="element" />
       </node>
       <node concept="3F0A7n" id="4IojDAdkshQ" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
