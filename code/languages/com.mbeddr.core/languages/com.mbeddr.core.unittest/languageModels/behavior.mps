@@ -172,23 +172,6 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="4481811096721038000" name="com.mbeddr.mpsutil.blutil.structure.RefStep" flags="ng" index="1sh8R2">
-        <reference id="4481811096721038001" name="refLink" index="1sh8R3" />
-        <child id="4481811096721038002" name="target" index="1sh8R0" />
-      </concept>
-      <concept id="4481811096720976618" name="com.mbeddr.mpsutil.blutil.structure.ConceptRef" flags="ng" index="1shVQo">
-        <reference id="4481811096720976619" name="concept" index="1shVQp" />
-      </concept>
-      <concept id="4481811096720537459" name="com.mbeddr.mpsutil.blutil.structure.ChildStep" flags="ng" index="1sne01">
-        <reference id="4481811096720607067" name="childLink" index="1snh0D" />
-        <child id="6308171743671982944" name="value" index="ccFIB" />
-        <child id="4481811096720537463" name="children" index="1sne05" />
-      </concept>
-      <concept id="4481811096720536877" name="com.mbeddr.mpsutil.blutil.structure.BuilderExpression" flags="ng" index="1sne9v">
-        <child id="4481811096720536927" name="root" index="1sne8H" />
-      </concept>
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -676,15 +659,14 @@
       <node concept="3Tm1VV" id="dkANm6sANa" role="1B3o_S" />
       <node concept="3clFbS" id="dkANm6sANd" role="3clF47">
         <node concept="3clFbF" id="dkANm6sBg3" role="3cqZAp">
-          <node concept="1sne9v" id="dkANm6sBg0" role="3clFbG">
-            <node concept="1sne01" id="dkANm6sBg1" role="1sne8H">
-              <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
-              <node concept="1shVQo" id="dkANm6sDuE" role="ccFIB">
-                <ref role="1shVQp" to="yz9a:4VEDcE28GXT" resolve="TestCaseRef" />
-              </node>
-              <node concept="1sh8R2" id="dkANm6sDwu" role="1sne05">
-                <ref role="1sh8R3" to="yz9a:4VEDcE28GXU" resolve="testcase" />
-                <node concept="13iPFW" id="dkANm6sDxS" role="1sh8R0" />
+          <node concept="2pJPEk" id="7NouExiI7Sj" role="3clFbG">
+            <node concept="2pJPED" id="7NouExiI7Sf" role="2pJPEn">
+              <ref role="2pJxaS" to="yz9a:4VEDcE28GXT" resolve="TestCaseRef" />
+              <node concept="2pIpSj" id="7NouExiI7Sg" role="2pJxcM">
+                <ref role="2pIpSl" to="yz9a:4VEDcE28GXU" resolve="testcase" />
+                <node concept="36biLy" id="7NouExiI7Si" role="2pJxcZ">
+                  <node concept="13iPFW" id="7NouExiI7Sh" role="36biLW" />
+                </node>
               </node>
             </node>
           </node>

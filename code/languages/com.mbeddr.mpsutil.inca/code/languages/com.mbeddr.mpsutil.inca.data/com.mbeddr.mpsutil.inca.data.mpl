@@ -18,7 +18,7 @@
         <dependency reexport="false">985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)</dependency>
         <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-        <dependency reexport="false">7766a138-716a-422a-9c88-131459fb8d6a(com.mbeddr.mpsutil.inca.core.runtime)</dependency>
+        <dependency reexport="false">7766a138-716a-422a-9c88-131459fb8d6a(org.eclipse.incquery.mps.core)</dependency>
         <dependency reexport="false">8f5e7b65-fd75-4aa6-b49e-44ecf418fcb5(com.mbeddr.mpsutil.inca.fun#4530729936991344015)</dependency>
         <dependency reexport="false">cd2909da-ecb4-49dc-b176-33e5c619e516(com.mbeddr.mpsutil.inca.gp)</dependency>
         <dependency reexport="false">1bc49cec-41e6-417f-a12b-f0e0125494e9(com.mbeddr.mpsutil.inca.core#4530729936991344007)</dependency>
@@ -126,7 +126,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)</dependency>
-    <dependency reexport="true">bc791f96-4749-4311-a6e4-241e47ca97f9(com.mbeddr.mpsutil.inca.core.util)</dependency>
+    <dependency reexport="true">bc791f96-4749-4311-a6e4-241e47ca97f9(org.eclipse.incquery.mps.base.runtime)</dependency>
     <dependency reexport="false">8c9a2720-9d21-4370-a226-819eb3e76e1e(com.mbeddr.mpsutil.inca.fun)</dependency>
     <dependency reexport="false">80e42679-e00d-400f-8714-aee80946d2f9(com.mbeddr.mpsutil.inca.styles)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
@@ -197,7 +197,7 @@
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">c80e20e1-4247-4086-b73c-55a273900ebd(com.mbeddr.mpsutil.inca.data.runtime)</dependency>
-    <dependency reexport="false">bc791f96-4749-4311-a6e4-241e47ca97f9(com.mbeddr.mpsutil.inca.core.util)</dependency>
+    <dependency reexport="false">bc791f96-4749-4311-a6e4-241e47ca97f9(org.eclipse.incquery.mps.base.runtime)</dependency>
   </runtime>
   <extendedLanguages>
     <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>

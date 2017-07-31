@@ -15,11 +15,11 @@
       </models>
       <external-templates />
       <dependencies>
-        <dependency reexport="true">7766a138-716a-422a-9c88-131459fb8d6a(com.mbeddr.mpsutil.inca.core.runtime)</dependency>
+        <dependency reexport="true">7766a138-716a-422a-9c88-131459fb8d6a(org.eclipse.incquery.mps.core)</dependency>
         <dependency reexport="false">1bc49cec-41e6-417f-a12b-f0e0125494e9(com.mbeddr.mpsutil.inca.core#4530729936991344007)</dependency>
         <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
         <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
-        <dependency reexport="false">bc791f96-4749-4311-a6e4-241e47ca97f9(com.mbeddr.mpsutil.inca.core.util)</dependency>
+        <dependency reexport="false">bc791f96-4749-4311-a6e4-241e47ca97f9(org.eclipse.incquery.mps.base.runtime)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
         <dependency reexport="false">eca96cff-ea64-44b3-8770-9c7ecd91f5a6(com.mbeddr.mpsutil.inca.hints)</dependency>
         <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
@@ -111,7 +111,7 @@
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
-    <dependency reexport="false">bc791f96-4749-4311-a6e4-241e47ca97f9(com.mbeddr.mpsutil.inca.core.util)</dependency>
+    <dependency reexport="false">bc791f96-4749-4311-a6e4-241e47ca97f9(org.eclipse.incquery.mps.base.runtime)</dependency>
     <dependency reexport="false">80e42679-e00d-400f-8714-aee80946d2f9(com.mbeddr.mpsutil.inca.styles)</dependency>
   </dependencies>
   <languageVersions>
@@ -164,7 +164,7 @@
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">eca96cff-ea64-44b3-8770-9c7ecd91f5a6(com.mbeddr.mpsutil.inca.hints)</dependency>
-    <dependency reexport="false">670160fe-66be-49fe-956f-aaa840493c4b(com.mbeddr.mpsutil.inca.gp.runtime)</dependency>
+    <dependency reexport="false">670160fe-66be-49fe-956f-aaa840493c4b(org.eclipse.incquery.mps.gp.runtime)</dependency>
   </runtime>
   <extendedLanguages>
     <extendedLanguage>b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)</extendedLanguage>
