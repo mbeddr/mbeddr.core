@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="upej" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="udin" ref="r:fe8ee6c8-7e5c-4efd-b608-c5ea6827be30(com.mbeddr.mpsutil.graphstream.runtime.plugin)" />
     <import index="4m0a" ref="r:e5f563f0-3312-4f0d-a6fe-8d43c8a221d4(com.mbeddr.mpsutil.graphstream.structure)" implicit="true" />
   </imports>
   <registry>
@@ -57,7 +58,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="4IojDAdiv06">
-    <ref role="13h7C2" to="4m0a:4IojDAdic49" resolve="GraphstreamViewable" />
+    <ref role="13h7C2" to="4m0a:4IojDAdic49" resolve="GraphingElement" />
     <node concept="13hLZK" id="4IojDAdiv07" role="13h7CW">
       <node concept="3clFbS" id="4IojDAdiv08" role="2VODD2" />
     </node>
@@ -74,10 +75,10 @@
     <node concept="13i0hz" id="4DzE9lEtSAp" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="constructViewManager" />
+      <property role="TrG5h" value="getGraphingToolProvider" />
       <node concept="3Tm1VV" id="4DzE9lEtSAq" role="1B3o_S" />
-      <node concept="3uibUv" id="3ZcygOy$EFJ" role="3clF45">
-        <ref role="3uigEE" to="upej:~IViewManager" resolve="IViewManager" />
+      <node concept="3uibUv" id="izXu77MRLm" role="3clF45">
+        <ref role="3uigEE" to="udin:izXu77MQHW" resolve="IGraphingToolProvider" />
       </node>
       <node concept="3clFbS" id="4DzE9lEtSAs" role="3clF47" />
       <node concept="37vLTG" id="4DzE9lEu1Hk" role="3clF46">
