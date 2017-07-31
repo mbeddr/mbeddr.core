@@ -263,6 +263,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -368,9 +369,9 @@
   </registry>
   <node concept="2DaZZR" id="4IojDAdgZru" />
   <node concept="sEfby" id="1X6acCMyKUd">
-    <property role="TrG5h" value="GraphstreamViewer" />
+    <property role="TrG5h" value="GraphingTool" />
     <property role="2bmUCM" value="RIGHT" />
-    <property role="2XNbzY" value="Graphstream Viewer" />
+    <property role="2XNbzY" value="Graphing" />
     <node concept="2XrIbr" id="2sPLpCfQjFo" role="2XNbBy">
       <property role="TrG5h" value="zoomIn" />
       <node concept="3cqZAl" id="2sPLpCfQjFp" role="3clF45" />
@@ -432,7 +433,7 @@
       <node concept="3Tm1VV" id="4IojDAdhAN5" role="1B3o_S" />
     </node>
     <node concept="2XrIbr" id="7UAF5eCH0Q" role="2XNbBy">
-      <property role="TrG5h" value="relayout" />
+      <property role="TrG5h" value="autoLayout" />
       <node concept="3cqZAl" id="7UAF5eCH0R" role="3clF45" />
       <node concept="3clFbS" id="7UAF5eCH0S" role="3clF47">
         <node concept="3clFbF" id="7UAF5eCH0T" role="3cqZAp">
@@ -450,6 +451,47 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="7UAF5eCH0Z" role="1B3o_S" />
+    </node>
+    <node concept="2XrIbr" id="5Lex0lo6PWM" role="2XNbBy">
+      <property role="TrG5h" value="getSelectedElements" />
+      <node concept="3uibUv" id="5Lex0lo6Rbo" role="3clF45">
+        <ref role="3uigEE" to="33ny:~LinkedList" resolve="LinkedList" />
+        <node concept="3uibUv" id="5Lex0lo6SYC" role="11_B2D">
+          <ref role="3uigEE" to="5svn:~BaseGraphElement" resolve="BaseGraphElement" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5Lex0lo6PWO" role="3clF47">
+        <node concept="3cpWs6" id="5Lex0lo6ROG" role="3cqZAp">
+          <node concept="10Nm6u" id="5Lex0lo6ROP" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5Lex0lo6PWV" role="1B3o_S" />
+    </node>
+    <node concept="2XrIbr" id="5Lex0lo4gPu" role="2XNbBy">
+      <property role="TrG5h" value="setCustomToolbar" />
+      <node concept="3cqZAl" id="5Lex0lo4gPv" role="3clF45" />
+      <node concept="3clFbS" id="5Lex0lo4gPw" role="3clF47">
+        <node concept="3clFbF" id="5Lex0lo6ia9" role="3cqZAp">
+          <node concept="37vLTI" id="5Lex0lo6AZP" role="3clFbG">
+            <node concept="37vLTw" id="5Lex0lo6Bs3" role="37vLTx">
+              <ref role="3cqZAo" node="5Lex0lo4htb" resolve="toolbar" />
+            </node>
+            <node concept="2OqwBi" id="5Lex0lo6ia3" role="37vLTJ">
+              <node concept="2WthIp" id="5Lex0lo6ia6" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="5Lex0lo6ia8" role="2OqNvi">
+                <ref role="2WH_rO" node="5Lex0lo4hE2" resolve="customToolbar" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5Lex0lo4gPB" role="1B3o_S" />
+      <node concept="37vLTG" id="5Lex0lo4htb" role="3clF46">
+        <property role="TrG5h" value="toolbar" />
+        <node concept="3uibUv" id="5Lex0lo4hta" role="1tU5fm">
+          <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
+        </node>
+      </node>
     </node>
     <node concept="2XrIbr" id="18ZQ$P85dt6" role="2XNbBy">
       <property role="TrG5h" value="show" />
@@ -498,22 +540,12 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5Lex0lo6BZT" role="3cqZAp" />
         <node concept="3clFbF" id="5FnIwHmiDrT" role="3cqZAp">
           <node concept="2OqwBi" id="5FnIwHmiDCZ" role="3clFbG">
             <node concept="2WthIp" id="5FnIwHmiDrR" role="2Oq$k0" />
             <node concept="2XshWL" id="5FnIwHmiE1q" role="2OqNvi">
               <ref role="2WH_rO" node="5FnIwHmiAqG" resolve="setContainerContent" />
-              <node concept="2OqwBi" id="5FnIwHmitEM" role="2XxRq1">
-                <node concept="2OqwBi" id="5FnIwHmitr1" role="2Oq$k0">
-                  <node concept="2WthIp" id="5FnIwHmitr4" role="2Oq$k0" />
-                  <node concept="2BZ7hE" id="5FnIwHmitr6" role="2OqNvi">
-                    <ref role="2WH_rO" node="4JBT2R9Uvdi" resolve="viewManager" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="5FnIwHmiud4" role="2OqNvi">
-                  <ref role="37wK5l" to="upej:~IViewManager.getView():javax.swing.JPanel" resolve="getView" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -533,7 +565,7 @@
       <node concept="37vLTG" id="18ZQ$P85dta" role="3clF46">
         <property role="TrG5h" value="element" />
         <node concept="3Tqbb2" id="2sPLpCfQjGm" role="1tU5fm">
-          <ref role="ehGHo" to="4m0a:4IojDAdic49" resolve="GraphstreamViewable" />
+          <ref role="ehGHo" to="4m0a:4IojDAdic49" resolve="GraphingElement" />
         </node>
       </node>
       <node concept="37vLTG" id="2sPLpCfQnhP" role="3clF46">
@@ -559,42 +591,123 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5Lex0lo6mSy" role="3cqZAp" />
+        <node concept="3cpWs8" id="5Lex0lo6nrN" role="3cqZAp">
+          <node concept="3cpWsn" id="5Lex0lo6nrO" role="3cpWs9">
+            <property role="TrG5h" value="toolbarsContainer" />
+            <node concept="3uibUv" id="5Lex0lo6ppl" role="1tU5fm">
+              <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
+            </node>
+            <node concept="2ShNRf" id="5Lex0lo6nFC" role="33vP2m">
+              <node concept="1pGfFk" id="5Lex0lo6pkf" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5Lex0lo6pL$" role="3cqZAp">
+          <node concept="2OqwBi" id="5Lex0lo6qlx" role="3clFbG">
+            <node concept="37vLTw" id="5Lex0lo6pLy" role="2Oq$k0">
+              <ref role="3cqZAo" node="5Lex0lo6nrO" resolve="toolbarsContainer" />
+            </node>
+            <node concept="liA8E" id="5Lex0lo6t08" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.setLayout(java.awt.LayoutManager):void" resolve="setLayout" />
+              <node concept="2ShNRf" id="5Lex0lo6t3M" role="37wK5m">
+                <node concept="1pGfFk" id="5Lex0lo6tIW" role="2ShVmc">
+                  <ref role="37wK5l" to="dxuu:~BoxLayout.&lt;init&gt;(java.awt.Container,int)" resolve="BoxLayout" />
+                  <node concept="37vLTw" id="5Lex0lo6tMg" role="37wK5m">
+                    <ref role="3cqZAo" node="5Lex0lo6nrO" resolve="toolbarsContainer" />
+                  </node>
+                  <node concept="10M0yZ" id="5Lex0lo6NFH" role="37wK5m">
+                    <ref role="3cqZAo" to="dxuu:~BoxLayout.Y_AXIS" resolve="Y_AXIS" />
+                    <ref role="1PxDUh" to="dxuu:~BoxLayout" resolve="BoxLayout" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="5FnIwHmiHJZ" role="3cqZAp" />
         <node concept="3cpWs8" id="5FnIwHmiBds" role="3cqZAp">
           <node concept="3cpWsn" id="5FnIwHmiBdt" role="3cpWs9">
-            <property role="TrG5h" value="toolbar" />
+            <property role="TrG5h" value="mainToolbar" />
             <node concept="3uibUv" id="5FnIwHmiBdu" role="1tU5fm">
               <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
             </node>
             <node concept="2w_yjB" id="5FnIwHmiBdv" role="33vP2m">
               <property role="3c3Q82" value="true" />
               <node concept="2OkkDf" id="5FnIwHmiBdw" role="1YAHcy">
-                <ref role="2Okoww" node="18ZQ$P85bbH" resolve="GraphstreamToolbar" />
+                <ref role="2Okoww" node="18ZQ$P85bbH" resolve="GraphingToolbar" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5FnIwHmiBdx" role="3cqZAp">
-          <node concept="2OqwBi" id="5FnIwHmiBdy" role="3clFbG">
-            <node concept="2OqwBi" id="5FnIwHmiBdz" role="2Oq$k0">
-              <node concept="2WthIp" id="5FnIwHmiBd$" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="5FnIwHmiBd_" role="2OqNvi">
+        <node concept="3clFbF" id="5Lex0lo6D1I" role="3cqZAp">
+          <node concept="2OqwBi" id="5Lex0lo6DBT" role="3clFbG">
+            <node concept="37vLTw" id="5Lex0lo6D1G" role="2Oq$k0">
+              <ref role="3cqZAo" node="5Lex0lo6nrO" resolve="toolbarsContainer" />
+            </node>
+            <node concept="liA8E" id="5Lex0lo6EqP" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="5Lex0lo6ErY" role="37wK5m">
+                <ref role="3cqZAo" node="5FnIwHmiBdt" resolve="mainToolbar" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5Lex0lo6InM" role="3cqZAp" />
+        <node concept="3clFbJ" id="5Lex0lo6Fs9" role="3cqZAp">
+          <node concept="3clFbS" id="5Lex0lo6Fsb" role="3clFbx">
+            <node concept="3clFbF" id="5Lex0lo6EBC" role="3cqZAp">
+              <node concept="2OqwBi" id="5Lex0lo6EBD" role="3clFbG">
+                <node concept="37vLTw" id="5Lex0lo6EBE" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5Lex0lo6nrO" resolve="toolbarsContainer" />
+                </node>
+                <node concept="liA8E" id="5Lex0lo6EBF" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                  <node concept="2OqwBi" id="5Lex0lo6F2$" role="37wK5m">
+                    <node concept="2WthIp" id="5Lex0lo6F2B" role="2Oq$k0" />
+                    <node concept="2BZ7hE" id="5Lex0lo6F2D" role="2OqNvi">
+                      <ref role="2WH_rO" node="5Lex0lo4hE2" resolve="customToolbar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1eOMI4" id="5Lex0lo6FHo" role="3clFbw">
+            <node concept="3y3z36" id="5Lex0lo6H7Q" role="1eOMHV">
+              <node concept="10Nm6u" id="5Lex0lo6H8s" role="3uHU7w" />
+              <node concept="2OqwBi" id="5Lex0lo6GaV" role="3uHU7B">
+                <node concept="2WthIp" id="5Lex0lo6G0Q" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="5Lex0lo6GuP" role="2OqNvi">
+                  <ref role="2WH_rO" node="5Lex0lo4hE2" resolve="customToolbar" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5Lex0lo5gF6" role="3cqZAp" />
+        <node concept="3clFbF" id="5Lex0lo6wdO" role="3cqZAp">
+          <node concept="2OqwBi" id="5Lex0lo6xzb" role="3clFbG">
+            <node concept="2OqwBi" id="5Lex0lo6wBM" role="2Oq$k0">
+              <node concept="2WthIp" id="5Lex0lo6wdM" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="5Lex0lo6x4c" role="2OqNvi">
                 <ref role="2WH_rO" node="5FnIwHmi$9y" resolve="containerPanel" />
               </node>
             </node>
-            <node concept="liA8E" id="5FnIwHmiBdA" role="2OqNvi">
+            <node concept="liA8E" id="5Lex0lo6yYT" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Container.add(java.lang.String,java.awt.Component):java.awt.Component" resolve="add" />
-              <node concept="10M0yZ" id="5FnIwHmiBdB" role="37wK5m">
+              <node concept="10M0yZ" id="5Lex0lo6z8a" role="37wK5m">
                 <ref role="3cqZAo" to="z60i:~BorderLayout.NORTH" resolve="NORTH" />
                 <ref role="1PxDUh" to="z60i:~BorderLayout" resolve="BorderLayout" />
               </node>
-              <node concept="37vLTw" id="5FnIwHmiBdC" role="37wK5m">
-                <ref role="3cqZAo" node="5FnIwHmiBdt" resolve="toolbar" />
+              <node concept="37vLTw" id="5Lex0lo6zlm" role="37wK5m">
+                <ref role="3cqZAo" node="5Lex0lo6nrO" resolve="toolbarsContainer" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5FnIwHmiHyJ" role="3cqZAp" />
         <node concept="3clFbF" id="5FnIwHmit0n" role="3cqZAp">
           <node concept="2OqwBi" id="5FnIwHmit0o" role="3clFbG">
             <node concept="2OqwBi" id="5FnIwHmiEqG" role="2Oq$k0">
@@ -609,20 +722,22 @@
                 <ref role="1PxDUh" to="z60i:~BorderLayout" resolve="BorderLayout" />
                 <ref role="3cqZAo" to="z60i:~BorderLayout.CENTER" resolve="CENTER" />
               </node>
-              <node concept="37vLTw" id="5FnIwHmiD1J" role="37wK5m">
-                <ref role="3cqZAo" node="5FnIwHmiCzx" resolve="graphView" />
+              <node concept="2OqwBi" id="5Lex0lo6vz8" role="37wK5m">
+                <node concept="2OqwBi" id="5Lex0lo6vz9" role="2Oq$k0">
+                  <node concept="2WthIp" id="5Lex0lo6vza" role="2Oq$k0" />
+                  <node concept="2BZ7hE" id="5Lex0lo6vzb" role="2OqNvi">
+                    <ref role="2WH_rO" node="4JBT2R9Uvdi" resolve="viewManager" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5Lex0lo6vzc" role="2OqNvi">
+                  <ref role="37wK5l" to="upej:~IViewManager.getView():javax.swing.JPanel" resolve="getView" />
+                </node>
               </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tm6S6" id="5FnIwHmiBDL" role="1B3o_S" />
-      <node concept="37vLTG" id="5FnIwHmiCzx" role="3clF46">
-        <property role="TrG5h" value="graphView" />
-        <node concept="3uibUv" id="5FnIwHmiCzw" role="1tU5fm">
-          <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
-        </node>
-      </node>
     </node>
     <node concept="2BZ0e9" id="5FnIwHmi$9y" role="2XNbBz">
       <property role="TrG5h" value="containerPanel" />
@@ -639,6 +754,14 @@
         <ref role="3uigEE" to="upej:~IViewManager" resolve="IViewManager" />
       </node>
       <node concept="10Nm6u" id="4JBT2R9UvNn" role="33vP2m" />
+    </node>
+    <node concept="2BZ0e9" id="5Lex0lo4hE2" role="2XNbBz">
+      <property role="TrG5h" value="customToolbar" />
+      <node concept="3Tm6S6" id="5Lex0lo4hE3" role="1B3o_S" />
+      <node concept="3uibUv" id="5Lex0lo6$9e" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
+      </node>
+      <node concept="10Nm6u" id="5Lex0lo6_O6" role="33vP2m" />
     </node>
     <node concept="2UmK3q" id="1X6acCMyKUe" role="2Um5zG">
       <node concept="3clFbS" id="1X6acCMyKUf" role="2VODD2">
@@ -677,7 +800,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="53G_t0Fb_PQ" role="1nVCmq">
-      <property role="1iqoE4" value="${module}/icons/gs-logo.png" />
+      <property role="1iqoE4" value="${module}/icons/graphingTool.png" />
     </node>
   </node>
   <node concept="sE7Ow" id="4ppn3W9rGUJ">
@@ -688,9 +811,9 @@
       <node concept="3clFbS" id="4ppn3W9rGUL" role="2VODD2">
         <node concept="3cpWs8" id="4ppn3W9rGUM" role="3cqZAp">
           <node concept="3cpWsn" id="4ppn3W9rGUN" role="3cpWs9">
-            <property role="TrG5h" value="content" />
+            <property role="TrG5h" value="graphingTool" />
             <node concept="1xUVSX" id="4ppn3W9rGUO" role="1tU5fm">
-              <ref role="1xYkEM" node="1X6acCMyKUd" resolve="GraphstreamViewer" />
+              <ref role="1xYkEM" node="1X6acCMyKUd" resolve="GraphingTool" />
             </node>
             <node concept="2OqwBi" id="4ppn3W9rGUP" role="33vP2m">
               <node concept="2OqwBi" id="4ppn3W9rGUQ" role="2Oq$k0">
@@ -700,7 +823,7 @@
                 </node>
               </node>
               <node concept="LR4U6" id="4ppn3W9rGUT" role="2OqNvi">
-                <ref role="LR4U5" node="1X6acCMyKUd" resolve="GraphstreamViewer" />
+                <ref role="LR4U5" node="1X6acCMyKUd" resolve="GraphingTool" />
               </node>
             </node>
           </node>
@@ -708,7 +831,7 @@
         <node concept="3clFbF" id="4ppn3W9rGUU" role="3cqZAp">
           <node concept="2OqwBi" id="4ppn3W9rGUV" role="3clFbG">
             <node concept="37vLTw" id="4ppn3W9rGUW" role="2Oq$k0">
-              <ref role="3cqZAo" node="4ppn3W9rGUN" resolve="content" />
+              <ref role="3cqZAo" node="4ppn3W9rGUN" resolve="graphingTool" />
             </node>
             <node concept="2XshWL" id="4IojDAdhB14" role="2OqNvi">
               <ref role="2WH_rO" node="4IojDAdh_vG" resolve="fitView" />
@@ -727,7 +850,7 @@
     </node>
   </node>
   <node concept="tC5Ba" id="18ZQ$P85bbH">
-    <property role="TrG5h" value="GraphstreamToolbar" />
+    <property role="TrG5h" value="GraphingToolbar" />
     <property role="3GE5qa" value="toolbar" />
     <node concept="ftmFs" id="18ZQ$P85bbJ" role="ftER_">
       <node concept="tCFHf" id="2sPLpCfQjjQ" role="ftvYc">
@@ -740,10 +863,6 @@
       <node concept="tCFHf" id="4ppn3W9rIuA" role="ftvYc">
         <ref role="tCJdB" node="4ppn3W9rGUJ" resolve="FitView" />
       </node>
-      <node concept="2a7GMi" id="7UAF5eCiyo" role="ftvYc" />
-      <node concept="tCFHf" id="7UAF5eCIZ2" role="ftvYc">
-        <ref role="tCJdB" node="7UAF5eCiyA" resolve="Relayout" />
-      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="18ZQ$P82xbr">
@@ -754,9 +873,9 @@
       <node concept="3clFbS" id="18ZQ$P82xbt" role="2VODD2">
         <node concept="3cpWs8" id="18ZQ$P85bR_" role="3cqZAp">
           <node concept="3cpWsn" id="18ZQ$P85bRA" role="3cpWs9">
-            <property role="TrG5h" value="content" />
+            <property role="TrG5h" value="graphingTool" />
             <node concept="1xUVSX" id="18ZQ$P85ciz" role="1tU5fm">
-              <ref role="1xYkEM" node="1X6acCMyKUd" resolve="GraphstreamViewer" />
+              <ref role="1xYkEM" node="1X6acCMyKUd" resolve="GraphingTool" />
             </node>
             <node concept="2OqwBi" id="18ZQ$P85c$S" role="33vP2m">
               <node concept="2OqwBi" id="18ZQ$P85cwx" role="2Oq$k0">
@@ -766,7 +885,7 @@
                 </node>
               </node>
               <node concept="LR4U6" id="18ZQ$P85cQM" role="2OqNvi">
-                <ref role="LR4U5" node="1X6acCMyKUd" resolve="GraphstreamViewer" />
+                <ref role="LR4U5" node="1X6acCMyKUd" resolve="GraphingTool" />
               </node>
             </node>
           </node>
@@ -774,7 +893,7 @@
         <node concept="3clFbF" id="18ZQ$P85dxr" role="3cqZAp">
           <node concept="2OqwBi" id="18ZQ$P85dxL" role="3clFbG">
             <node concept="37vLTw" id="18ZQ$P85dxs" role="2Oq$k0">
-              <ref role="3cqZAo" node="18ZQ$P85bRA" resolve="content" />
+              <ref role="3cqZAo" node="18ZQ$P85bRA" resolve="graphingTool" />
             </node>
             <node concept="2XshWL" id="2sPLpCfQjFX" role="2OqNvi">
               <ref role="2WH_rO" node="2sPLpCfQjFo" resolve="zoomIn" />
@@ -800,9 +919,9 @@
       <node concept="3clFbS" id="2sPLpCfQjiB" role="2VODD2">
         <node concept="3cpWs8" id="2sPLpCfQjiC" role="3cqZAp">
           <node concept="3cpWsn" id="2sPLpCfQjiD" role="3cpWs9">
-            <property role="TrG5h" value="content" />
+            <property role="TrG5h" value="graphingTool" />
             <node concept="1xUVSX" id="2sPLpCfQjiE" role="1tU5fm">
-              <ref role="1xYkEM" node="1X6acCMyKUd" resolve="GraphstreamViewer" />
+              <ref role="1xYkEM" node="1X6acCMyKUd" resolve="GraphingTool" />
             </node>
             <node concept="2OqwBi" id="2sPLpCfQjiF" role="33vP2m">
               <node concept="2OqwBi" id="2sPLpCfQjiG" role="2Oq$k0">
@@ -812,7 +931,7 @@
                 </node>
               </node>
               <node concept="LR4U6" id="2sPLpCfQjiJ" role="2OqNvi">
-                <ref role="LR4U5" node="1X6acCMyKUd" resolve="GraphstreamViewer" />
+                <ref role="LR4U5" node="1X6acCMyKUd" resolve="GraphingTool" />
               </node>
             </node>
           </node>
@@ -820,7 +939,7 @@
         <node concept="3clFbF" id="2sPLpCfQjiK" role="3cqZAp">
           <node concept="2OqwBi" id="2sPLpCfQjiL" role="3clFbG">
             <node concept="37vLTw" id="2sPLpCfQjiM" role="2Oq$k0">
-              <ref role="3cqZAo" node="2sPLpCfQjiD" resolve="content" />
+              <ref role="3cqZAo" node="2sPLpCfQjiD" resolve="graphingTool" />
             </node>
             <node concept="2XshWL" id="2sPLpCfQjFT" role="2OqNvi">
               <ref role="2WH_rO" node="2sPLpCfQjF_" resolve="zoomOut" />
@@ -839,10 +958,10 @@
     </node>
   </node>
   <node concept="tC5Ba" id="bhVSeGf9hE">
-    <property role="TrG5h" value="ViewInGraphstreamGroup" />
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="View Graph" />
     <property role="1rdrE6" value="true" />
+    <property role="TrG5h" value="GraphingToolActionGroup" />
     <node concept="2OiAzN" id="bhVSeGf9rc" role="ftER_">
       <node concept="2OiTZ2" id="bhVSeGf9rd" role="2Oj6PV">
         <node concept="3clFbS" id="bhVSeGf9re" role="2VODD2">
@@ -913,7 +1032,7 @@
                   <ref role="37wK5l" to="18ew:~IconUtil.getIcon(java.lang.String):javax.swing.Icon" resolve="getIcon" />
                   <ref role="1Pybhc" to="18ew:~IconUtil" resolve="IconUtil" />
                   <node concept="Xl_RD" id="4DzE9lEwERr" role="37wK5m">
-                    <property role="Xl_RC" value="gs-logo.png" />
+                    <property role="Xl_RC" value="graphingTool.png" />
                   </node>
                 </node>
               </node>
@@ -934,7 +1053,7 @@
                         <ref role="3cqZAo" node="4vCqlNf_Czc" resolve="node" />
                       </node>
                       <node concept="chp4Y" id="4DzE9lEuWuw" role="3oSUPX">
-                        <ref role="cht4Q" to="4m0a:4IojDAdic49" resolve="GraphstreamViewable" />
+                        <ref role="cht4Q" to="4m0a:4IojDAdic49" resolve="GraphingElement" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="4DzE9lEuWLs" role="2OqNvi">
@@ -955,7 +1074,7 @@
                     <node concept="3clFbS" id="4DzE9lEuZtV" role="2LFqv$">
                       <node concept="2JFkCU" id="bhVSeGfQdx" role="3cqZAp">
                         <node concept="tCFHf" id="bhVSeGfQdy" role="2JFLmv">
-                          <ref role="tCJdB" node="bhVSeGf3sb" resolve="ViewInGraphstreamAction" />
+                          <ref role="tCJdB" node="bhVSeGf3sb" resolve="ViewInGraphingToolAction" />
                           <node concept="2GrUjf" id="4DzE9lEv06A" role="2J__8u">
                             <ref role="2Gs0qQ" node="4DzE9lEuZtR" resolve="id" />
                           </node>
@@ -988,7 +1107,7 @@
               </node>
               <node concept="1mIQ4w" id="bhVSeGfMOU" role="2OqNvi">
                 <node concept="chp4Y" id="4DzE9lEuWr5" role="cj9EA">
-                  <ref role="cht4Q" to="4m0a:4IojDAdic49" resolve="GraphstreamViewable" />
+                  <ref role="cht4Q" to="4m0a:4IojDAdic49" resolve="GraphingElement" />
                 </node>
               </node>
             </node>
@@ -1002,8 +1121,8 @@
     </node>
   </node>
   <node concept="sE7Ow" id="bhVSeGf3sb">
-    <property role="TrG5h" value="ViewInGraphstreamAction" />
-    <property role="2uzpH1" value="Graphstream" />
+    <property role="TrG5h" value="ViewInGraphingToolAction" />
+    <property role="2uzpH1" value="Graphing" />
     <node concept="2JriF1" id="bhVSeGf4__" role="2JrayB">
       <property role="TrG5h" value="viewID" />
       <node concept="3Tm6S6" id="bhVSeGf4_A" role="1B3o_S" />
@@ -1019,7 +1138,7 @@
       <node concept="3Tm6S6" id="bhVSeGf3sf" role="1B3o_S" />
       <node concept="1oajcY" id="bhVSeGf3sg" role="1oa70y" />
       <node concept="3Tqbb2" id="bhVSeGf3sh" role="1tU5fm">
-        <ref role="ehGHo" to="4m0a:4IojDAdic49" resolve="GraphstreamViewable" />
+        <ref role="ehGHo" to="4m0a:4IojDAdic49" resolve="GraphingElement" />
       </node>
     </node>
     <node concept="tnohg" id="bhVSeGf3si" role="tncku">
@@ -1028,7 +1147,7 @@
           <node concept="3cpWsn" id="bhVSeGf3sl" role="3cpWs9">
             <property role="TrG5h" value="graphstreamViewerTool" />
             <node concept="1xUVSX" id="bhVSeGf3sm" role="1tU5fm">
-              <ref role="1xYkEM" node="1X6acCMyKUd" resolve="GraphstreamViewer" />
+              <ref role="1xYkEM" node="1X6acCMyKUd" resolve="GraphingTool" />
             </node>
             <node concept="2OqwBi" id="bhVSeGf3sn" role="33vP2m">
               <node concept="2OqwBi" id="bhVSeGf3so" role="2Oq$k0">
@@ -1038,7 +1157,7 @@
                 </node>
               </node>
               <node concept="LR4U6" id="bhVSeGf3sr" role="2OqNvi">
-                <ref role="LR4U5" node="1X6acCMyKUd" resolve="GraphstreamViewer" />
+                <ref role="LR4U5" node="1X6acCMyKUd" resolve="GraphingTool" />
               </node>
             </node>
           </node>
@@ -1461,52 +1580,6 @@
     <node concept="3Tm1VV" id="64_1OWexg7z" role="1B3o_S" />
     <node concept="3uibUv" id="64_1OWexg81" role="1zkMxy">
       <ref role="3uigEE" to="tirk:~DefaultView" resolve="DefaultView" />
-    </node>
-  </node>
-  <node concept="sE7Ow" id="7UAF5eCiyA">
-    <property role="TrG5h" value="Relayout" />
-    <property role="2uzpH1" value="Relayout" />
-    <property role="3GE5qa" value="toolbar" />
-    <node concept="tnohg" id="7UAF5eCiyB" role="tncku">
-      <node concept="3clFbS" id="7UAF5eCiyC" role="2VODD2">
-        <node concept="3cpWs8" id="7UAF5eCiyD" role="3cqZAp">
-          <node concept="3cpWsn" id="7UAF5eCiyE" role="3cpWs9">
-            <property role="TrG5h" value="content" />
-            <node concept="1xUVSX" id="7UAF5eCiyF" role="1tU5fm">
-              <ref role="1xYkEM" node="1X6acCMyKUd" resolve="GraphstreamViewer" />
-            </node>
-            <node concept="2OqwBi" id="7UAF5eCiyG" role="33vP2m">
-              <node concept="2OqwBi" id="7UAF5eCiyH" role="2Oq$k0">
-                <node concept="2WthIp" id="7UAF5eCiyI" role="2Oq$k0" />
-                <node concept="1DTwFV" id="7UAF5eCiyJ" role="2OqNvi">
-                  <ref role="2WH_rO" node="7UAF5eCiyQ" resolve="project" />
-                </node>
-              </node>
-              <node concept="LR4U6" id="7UAF5eCiyK" role="2OqNvi">
-                <ref role="LR4U5" node="1X6acCMyKUd" resolve="GraphstreamViewer" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7UAF5eCiyL" role="3cqZAp">
-          <node concept="2OqwBi" id="7UAF5eCiyM" role="3clFbG">
-            <node concept="37vLTw" id="7UAF5eCiyN" role="2Oq$k0">
-              <ref role="3cqZAo" node="7UAF5eCiyE" resolve="content" />
-            </node>
-            <node concept="2XshWL" id="7UAF5eCIPu" role="2OqNvi">
-              <ref role="2WH_rO" node="7UAF5eCH0Q" resolve="relayout" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1QGGSu" id="7UAF5eCiyP" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/autolayout.png" />
-    </node>
-    <node concept="1DS2jV" id="7UAF5eCiyQ" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7UAF5eCiyR" role="1oa70y" />
     </node>
   </node>
 </model>

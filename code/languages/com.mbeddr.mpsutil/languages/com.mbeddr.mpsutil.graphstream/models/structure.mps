@@ -20,7 +20,7 @@
   </registry>
   <node concept="PlHQZ" id="4IojDAdic49">
     <property role="EcuMT" value="5447190170711933193" />
-    <property role="TrG5h" value="GraphstreamViewable" />
+    <property role="TrG5h" value="GraphingElement" />
   </node>
 </model>
 
