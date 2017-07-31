@@ -11,7 +11,6 @@ task downloadMPS(type: Download) {
             ant.mkdir(dir: mpsDownloadDir)
         }
     }
-
     src "http://download.jetbrains.com/mps/${mpsMajor}/MPS-${mpsBuild}.zip"
     dest mpsDownloadFile
     overwrite false

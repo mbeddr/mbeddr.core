@@ -3,8 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
@@ -79,11 +78,11 @@
                 <ref role="1YBMHb" node="7moa1g0QHEN" resolve="reflectionFieldAccess" />
               </node>
               <node concept="3TrEf2" id="7moa1g0QI2I" role="2OqNvi">
-                <ref role="3Tt5mk" to="oiz3:hqOxapj" />
+                <ref role="3Tt5mk" to="oiz3:hqOxapj" resolve="fieldDeclaration" />
               </node>
             </node>
             <node concept="3TrEf2" id="7moa1g0QJYs" role="2OqNvi">
-              <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
+              <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" resolve="type" />
             </node>
           </node>
         </node>
