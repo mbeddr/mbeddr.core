@@ -2,7 +2,8 @@ import de.undercouch.gradle.tasks.download.Download
 
 def mpsDownloadDir = new File(project.buildDir, "MPS-${mpsBuild}")
 def mpsDownloadFile = new File(mpsDownloadDir, "MPS-${mpsBuild}.zip")
-def mpsUnpackedDir = new File(mpsDownloadDir, "MPS " + mpsMajor)
+def eapSuffix = mpsBuild.contains("EAP") ? " EAP" : ""
+def mpsUnpackedDir = new File(mpsDownloadDir, "MPS ${mpsMajor}${eapSuffix}")
 
 // Downloads MPS from jetbrains.com into ${mpsDownloadFile}
 task downloadMPS(type: Download) {

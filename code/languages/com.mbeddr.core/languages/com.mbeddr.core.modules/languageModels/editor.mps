@@ -5631,16 +5631,15 @@
                                 <node concept="17RvpY" id="2cvVnUv6BYY" role="2OqNvi" />
                               </node>
                               <node concept="2YIFZM" id="2cvVnUv6BYZ" role="3uHU7w">
-                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
                                 <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                                <node concept="37vLTw" id="2cvVnUv6BZ1" role="37wK5m">
-                                  <ref role="3cqZAo" node="2cvVnUv6BZ9" resolve="it" />
-                                </node>
+                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
                                 <node concept="2OqwBi" id="2cvVnUv6BZ3" role="37wK5m">
                                   <node concept="7Obwk" id="2cvVnUv6BZe" role="2Oq$k0" />
                                   <node concept="1mfA1w" id="2cvVnUv6BZ5" role="2OqNvi" />
                                 </node>
-                                <node concept="10Nm6u" id="2cvVnUv6BZ6" role="37wK5m" />
+                                <node concept="37vLTw" id="2cvVnUv6BZ1" role="37wK5m">
+                                  <ref role="3cqZAo" node="2cvVnUv6BZ9" resolve="it" />
+                                </node>
                                 <node concept="10Nm6u" id="2cvVnUv6BZ7" role="37wK5m" />
                                 <node concept="10Nm6u" id="2cvVnUv6BZ8" role="37wK5m" />
                               </node>
@@ -5779,16 +5778,15 @@
                                 <node concept="17RvpY" id="2cvVnUv6C0f" role="2OqNvi" />
                               </node>
                               <node concept="2YIFZM" id="2cvVnUv6C0g" role="3uHU7w">
-                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
                                 <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                                <node concept="37vLTw" id="2cvVnUv6C0i" role="37wK5m">
-                                  <ref role="3cqZAo" node="2cvVnUv6C0q" resolve="it" />
-                                </node>
+                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
                                 <node concept="2OqwBi" id="2cvVnUv6C0k" role="37wK5m">
                                   <node concept="7Obwk" id="2cvVnUv6C0v" role="2Oq$k0" />
                                   <node concept="1mfA1w" id="2cvVnUv6C0m" role="2OqNvi" />
                                 </node>
-                                <node concept="10Nm6u" id="2cvVnUv6C0n" role="37wK5m" />
+                                <node concept="37vLTw" id="2cvVnUv6C0i" role="37wK5m">
+                                  <ref role="3cqZAo" node="2cvVnUv6C0q" resolve="it" />
+                                </node>
                                 <node concept="10Nm6u" id="2cvVnUv6C0o" role="37wK5m" />
                                 <node concept="10Nm6u" id="2cvVnUv6C0p" role="37wK5m" />
                               </node>

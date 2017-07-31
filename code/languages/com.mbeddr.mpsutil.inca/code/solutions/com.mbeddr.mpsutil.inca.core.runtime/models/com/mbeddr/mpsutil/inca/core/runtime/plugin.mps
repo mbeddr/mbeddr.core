@@ -2,12 +2,12 @@
 <model ref="r:25bfb30f-3676-4451-9448-27a17343be80(com.mbeddr.mpsutil.inca.core.runtime.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports>
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
@@ -12212,18 +12212,13 @@
           <node concept="3clFbS" id="TYxU2xywuW" role="3clFbx">
             <node concept="3clFbF" id="TYxU2xywuX" role="3cqZAp">
               <node concept="2OqwBi" id="TYxU2xywuY" role="3clFbG">
-                <node concept="1eOMI4" id="TYxU2xywuZ" role="2Oq$k0">
-                  <node concept="10QFUN" id="TYxU2xywv0" role="1eOMHV">
-                    <node concept="3uibUv" id="TYxU2xywv1" role="10QFUM">
-                      <ref role="3uigEE" to="g3l6:~EditableSModelBase" resolve="EditableSModelBase" />
-                    </node>
-                    <node concept="37vLTw" id="TYxU2xyxtj" role="10QFUP">
-                      <ref role="3cqZAo" node="TYxU2xyqTt" resolve="model" />
-                    </node>
+                <node concept="2JrnkZ" id="7TiosyQOy$O" role="2Oq$k0">
+                  <node concept="37vLTw" id="TYxU2xyxtj" role="2JrQYb">
+                    <ref role="3cqZAo" node="TYxU2xyqTt" resolve="model" />
                   </node>
                 </node>
                 <node concept="liA8E" id="TYxU2xywv5" role="2OqNvi">
-                  <ref role="37wK5l" to="g3l6:~EditableSModelBase.removeChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener):void" resolve="removeChangeListener" />
+                  <ref role="37wK5l" to="mhbf:~SModel.removeChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener):void" resolve="removeChangeListener" />
                   <node concept="37vLTw" id="TYxU2xywv6" role="37wK5m">
                     <ref role="3cqZAo" node="TYxU2xywuI" resolve="modelListener" />
                   </node>
@@ -12232,18 +12227,13 @@
             </node>
             <node concept="3clFbF" id="TYxU2xywv7" role="3cqZAp">
               <node concept="2OqwBi" id="TYxU2xywv8" role="3clFbG">
-                <node concept="1eOMI4" id="TYxU2xywv9" role="2Oq$k0">
-                  <node concept="10QFUN" id="TYxU2xywva" role="1eOMHV">
-                    <node concept="3uibUv" id="TYxU2xywvb" role="10QFUM">
-                      <ref role="3uigEE" to="g3l6:~EditableSModelBase" resolve="EditableSModelBase" />
-                    </node>
-                    <node concept="37vLTw" id="TYxU2xyxzB" role="10QFUP">
-                      <ref role="3cqZAo" node="TYxU2xyqTt" resolve="model" />
-                    </node>
+                <node concept="2JrnkZ" id="7TiosyQOzIC" role="2Oq$k0">
+                  <node concept="37vLTw" id="7TiosyQOzvb" role="2JrQYb">
+                    <ref role="3cqZAo" node="TYxU2xyqTt" resolve="model" />
                   </node>
                 </node>
                 <node concept="liA8E" id="TYxU2xywvf" role="2OqNvi">
-                  <ref role="37wK5l" to="g3l6:~EditableSModelBase.addChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener):void" resolve="addChangeListener" />
+                  <ref role="37wK5l" to="mhbf:~SModel.addChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener):void" resolve="addChangeListener" />
                   <node concept="37vLTw" id="TYxU2xywvg" role="37wK5m">
                     <ref role="3cqZAo" node="TYxU2xywuI" resolve="modelListener" />
                   </node>
@@ -12580,18 +12570,13 @@
           <node concept="3clFbS" id="TYxU2xz2yS" role="3clFbx">
             <node concept="3clFbF" id="TYxU2xz2yT" role="3cqZAp">
               <node concept="2OqwBi" id="TYxU2xz2yU" role="3clFbG">
-                <node concept="1eOMI4" id="TYxU2xz2yV" role="2Oq$k0">
-                  <node concept="10QFUN" id="TYxU2xz2yW" role="1eOMHV">
-                    <node concept="3uibUv" id="TYxU2xz2yX" role="10QFUM">
-                      <ref role="3uigEE" to="g3l6:~EditableSModelBase" resolve="EditableSModelBase" />
-                    </node>
-                    <node concept="37vLTw" id="TYxU2xz2yY" role="10QFUP">
-                      <ref role="3cqZAo" node="TYxU2xyVQa" resolve="model" />
-                    </node>
+                <node concept="2JrnkZ" id="7TiosyQOGX6" role="2Oq$k0">
+                  <node concept="37vLTw" id="7TiosyQOGHl" role="2JrQYb">
+                    <ref role="3cqZAo" node="TYxU2xyVQa" resolve="model" />
                   </node>
                 </node>
                 <node concept="liA8E" id="TYxU2xz2yZ" role="2OqNvi">
-                  <ref role="37wK5l" to="g3l6:~EditableSModelBase.removeChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener):void" resolve="removeChangeListener" />
+                  <ref role="37wK5l" to="mhbf:~SModel.removeChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener):void" resolve="removeChangeListener" />
                   <node concept="37vLTw" id="TYxU2xz2z0" role="37wK5m">
                     <ref role="3cqZAo" node="TYxU2xz2yL" resolve="modelListener" />
                   </node>
