@@ -11,15 +11,15 @@
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
-    <dependency reexport="false">7766a138-716a-422a-9c88-131459fb8d6a(com.mbeddr.mpsutil.inca.core.runtime)</dependency>
+    <dependency reexport="false">7766a138-716a-422a-9c88-131459fb8d6a(org.eclipse.incquery.mps.core)</dependency>
     <dependency reexport="false">4f0197ca-971d-45b6-82d7-0a2bf8511267(com.mbeddr.mpsutil.soot)</dependency>
     <dependency reexport="false">b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)</dependency>
     <dependency reexport="false">9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:b802a056-92a2-4fbc-902e-f8e5004c331f:com.mbeddr.mpsutil.inca.core" version="0" />
-    <language slang="l:8c9a2720-9d21-4370-a226-819eb3e76e1e:com.mbeddr.mpsutil.inca.fun" version="0" />
-    <language slang="l:cd2909da-ecb4-49dc-b176-33e5c619e516:com.mbeddr.mpsutil.inca.gp" version="0" />
+    <language slang="l:b802a056-92a2-4fbc-902e-f8e5004c331f:org.eclipse.incquery.mps.base" version="0" />
+    <language slang="l:8c9a2720-9d21-4370-a226-819eb3e76e1e:org.eclipse.incquery.mps.sq" version="0" />
+    <language slang="l:cd2909da-ecb4-49dc-b176-33e5c619e516:org.eclipse.incquery.mps.gp" version="0" />
     <language slang="l:4f0197ca-971d-45b6-82d7-0a2bf8511267:com.mbeddr.mpsutil.soot" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
