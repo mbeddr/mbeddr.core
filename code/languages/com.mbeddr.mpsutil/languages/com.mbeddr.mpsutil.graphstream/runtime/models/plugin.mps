@@ -437,8 +437,8 @@
       <property role="TrG5h" value="getSelectedElements" />
       <node concept="3uibUv" id="5Lex0lo6Rbo" role="3clF45">
         <ref role="3uigEE" to="33ny:~LinkedList" resolve="LinkedList" />
-        <node concept="3uibUv" id="5Lex0lo6SYC" role="11_B2D">
-          <ref role="3uigEE" to="5svn:~BaseGraphElement" resolve="BaseGraphElement" />
+        <node concept="3uibUv" id="mmrhULzQ_$" role="11_B2D">
+          <ref role="3uigEE" to="5svn:~GraphElement" resolve="GraphElement" />
         </node>
       </node>
       <node concept="3clFbS" id="5Lex0lo6PWO" role="3clF47">
@@ -511,7 +511,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="izXu77SKHN" role="2OqNvi">
-                <ref role="37wK5l" node="izXu77MRkK" resolve="createViewManager" />
+                <ref role="37wK5l" node="izXu77MRkK" resolve="getViewManager" />
               </node>
             </node>
           </node>
@@ -532,7 +532,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="izXu77SLaf" role="2OqNvi">
-                <ref role="37wK5l" node="izXu77MRtP" resolve="createToolbar" />
+                <ref role="37wK5l" node="izXu77MRtP" resolve="getToolbar" />
               </node>
             </node>
           </node>
@@ -967,6 +967,10 @@
     <property role="2f7twF" value="View Graph" />
     <property role="1rdrE6" value="true" />
     <property role="TrG5h" value="GraphingToolActionGroup" />
+    <node concept="tT9cl" id="2N1CSrzSaIc" role="2f5YQi">
+      <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
+      <ref role="2f8Tey" to="ekwn:6S3xhs4vzRz" resolve="diagram" />
+    </node>
     <node concept="2OiAzN" id="bhVSeGf9rc" role="ftER_">
       <node concept="2OiTZ2" id="bhVSeGf9rd" role="2Oj6PV">
         <node concept="3clFbS" id="bhVSeGf9re" role="2VODD2">
@@ -1119,10 +1123,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="tT9cl" id="2N1CSrzSaIc" role="2f5YQi">
-      <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
-      <ref role="2f8Tey" to="ekwn:6S3xhs4vzRz" resolve="diagram" />
     </node>
   </node>
   <node concept="sE7Ow" id="bhVSeGf3sb">
@@ -1592,7 +1592,7 @@
     <node concept="3clFb_" id="izXu77MRkK" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createViewManager" />
+      <property role="TrG5h" value="getViewManager" />
       <node concept="3clFbS" id="izXu77MRkN" role="3clF47" />
       <node concept="3Tm1VV" id="izXu77MRkO" role="1B3o_S" />
       <node concept="3uibUv" id="izXu77MRk_" role="3clF45">
@@ -1602,7 +1602,7 @@
     <node concept="3clFb_" id="izXu77MRtP" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createToolbar" />
+      <property role="TrG5h" value="getToolbar" />
       <node concept="3clFbS" id="izXu77MRtS" role="3clF47" />
       <node concept="3Tm1VV" id="izXu77MRtT" role="1B3o_S" />
       <node concept="3uibUv" id="izXu77MRtz" role="3clF45">
