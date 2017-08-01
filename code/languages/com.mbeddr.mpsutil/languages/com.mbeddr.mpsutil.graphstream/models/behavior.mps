@@ -77,8 +77,8 @@
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getGraphingToolProvider" />
       <node concept="3Tm1VV" id="4DzE9lEtSAq" role="1B3o_S" />
-      <node concept="3uibUv" id="izXu77MRLm" role="3clF45">
-        <ref role="3uigEE" to="udin:izXu77MQHW" resolve="IGraphingToolProvider" />
+      <node concept="3uibUv" id="4iv9KfRrOxI" role="3clF45">
+        <ref role="3uigEE" to="udin:4iv9KfRoOZ$" resolve="AbstractGraphingToolProvider" />
       </node>
       <node concept="3clFbS" id="4DzE9lEtSAs" role="3clF47" />
       <node concept="37vLTG" id="4DzE9lEu1Hk" role="3clF46">
