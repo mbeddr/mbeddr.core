@@ -14,7 +14,7 @@
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -207,6 +207,9 @@
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <child id="1221064706952" name="query" index="1d8cEk" />
       </concept>
+      <concept id="1164996492011" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReferentPrimary" flags="ng" index="ZcVJ$">
+        <child id="6918029743851332884" name="matchingText" index="1NQq9M" />
+      </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
       </concept>
@@ -325,6 +328,8 @@
       <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
+      <concept id="6918029743850363447" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_targetNode" flags="ng" index="1NM5Ph" />
+      <concept id="6918029743850308467" name="jetbrains.mps.lang.editor.structure.QueryFunction_RefPresentation" flags="ig" index="1NMggl" />
       <concept id="3647146066980922272" name="jetbrains.mps.lang.editor.structure.SelectInEditorOperation" flags="nn" index="1OKiuA">
         <child id="1948540814633499358" name="editorContext" index="lBI5i" />
         <child id="1948540814635895774" name="cellSelector" index="lGT1i" />
@@ -1310,6 +1315,22 @@
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <ref role="1k5W1q" node="2TZO3DbviIs" resolve="structure" />
+          </node>
+        </node>
+        <node concept="OXEIz" id="1WO2x6ZxmbD" role="P5bDN">
+          <node concept="ZcVJ$" id="1WO2x6ZxmbC" role="OY2wv">
+            <node concept="1NMggl" id="1WO2x6ZxmbE" role="1NQq9M">
+              <node concept="3clFbS" id="1WO2x6ZxmbF" role="2VODD2">
+                <node concept="3clFbF" id="1WO2x6ZxmbG" role="3cqZAp">
+                  <node concept="2OqwBi" id="1WO2x6ZxmbH" role="3clFbG">
+                    <node concept="1NM5Ph" id="1WO2x6ZxmbK" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="1WO2x6ZxmbJ" role="2OqNvi">
+                      <ref role="37wK5l" to="4gky:2TZO3DbvVw0" resolve="qualifiedName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

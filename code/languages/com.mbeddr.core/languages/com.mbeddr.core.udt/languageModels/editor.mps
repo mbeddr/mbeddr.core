@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="9" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -99,6 +99,9 @@
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
+      <concept id="1164996492011" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReferentPrimary" flags="ng" index="ZcVJ$">
+        <child id="6918029743851332884" name="matchingText" index="1NQq9M" />
+      </concept>
       <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ng" index="2Z_bC8">
         <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
       </concept>
@@ -182,6 +185,8 @@
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
+      <concept id="6918029743850363447" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_targetNode" flags="ng" index="1NM5Ph" />
+      <concept id="6918029743850308467" name="jetbrains.mps.lang.editor.structure.QueryFunction_RefPresentation" flags="ig" index="1NMggl" />
       <concept id="3647146066980922272" name="jetbrains.mps.lang.editor.structure.SelectInEditorOperation" flags="nn" index="1OKiuA">
         <child id="1948540814633499358" name="editorContext" index="lBI5i" />
         <child id="1948540814635895774" name="cellSelector" index="lGT1i" />
@@ -393,6 +398,22 @@
             <ref role="1k5W1q" to="r4b4:2CEi94di1o$" resolve="TypeDef" />
             <node concept="VPRnO" id="4JYoVJbfhJD" role="3F10Kt">
               <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="OXEIz" id="1WO2x6Zt9Jl" role="P5bDN">
+          <node concept="ZcVJ$" id="1WO2x6Zt9Jk" role="OY2wv">
+            <node concept="1NMggl" id="1WO2x6Zt9Jm" role="1NQq9M">
+              <node concept="3clFbS" id="1WO2x6Zt9Jn" role="2VODD2">
+                <node concept="3clFbF" id="1WO2x6Zt9Jo" role="3cqZAp">
+                  <node concept="2OqwBi" id="1WO2x6Zt9Jp" role="3clFbG">
+                    <node concept="1NM5Ph" id="1WO2x6Zt9Js" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="1WO2x6Zt9Jr" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

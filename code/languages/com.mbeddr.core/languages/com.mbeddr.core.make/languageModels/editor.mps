@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="9" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
   </languages>
@@ -57,6 +57,9 @@
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
       <concept id="8449131619432941427" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Super" flags="ng" index="L$LW2" />
+      <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
+        <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
       <concept id="3738029991950788349" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Named" flags="ng" index="Q6S24" />
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
@@ -66,6 +69,9 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1164996492011" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReferentPrimary" flags="ng" index="ZcVJ$">
+        <child id="6918029743851332884" name="matchingText" index="1NQq9M" />
+      </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
       </concept>
@@ -103,6 +109,7 @@
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
+        <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -125,6 +132,8 @@
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
+      <concept id="6918029743850363447" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_targetNode" flags="ng" index="1NM5Ph" />
+      <concept id="6918029743850308467" name="jetbrains.mps.lang.editor.structure.QueryFunction_RefPresentation" flags="ig" index="1NMggl" />
       <concept id="3647146066980922272" name="jetbrains.mps.lang.editor.structure.SelectInEditorOperation" flags="nn" index="1OKiuA">
         <child id="1948540814633499358" name="editorContext" index="lBI5i" />
         <child id="1948540814635895774" name="cellSelector" index="lGT1i" />
@@ -472,6 +481,22 @@
       </node>
       <node concept="Vb9p2" id="Dp4TemBLC1" role="3F10Kt">
         <property role="Vbekb" value="ITALIC" />
+      </node>
+      <node concept="OXEIz" id="1WO2x6Zt9Gx" role="P5bDN">
+        <node concept="ZcVJ$" id="1WO2x6Zt9Gw" role="OY2wv">
+          <node concept="1NMggl" id="1WO2x6Zt9Gy" role="1NQq9M">
+            <node concept="3clFbS" id="1WO2x6Zt9Gz" role="2VODD2">
+              <node concept="3clFbF" id="1WO2x6Zt9G$" role="3cqZAp">
+                <node concept="2OqwBi" id="1WO2x6Zt9G_" role="3clFbG">
+                  <node concept="1NM5Ph" id="1WO2x6Zt9GC" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1WO2x6Zt9GB" role="2OqNvi">
+                    <ref role="3TsBF5" to="i2y7:5ak6HMA0Exu" resolve="label" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
