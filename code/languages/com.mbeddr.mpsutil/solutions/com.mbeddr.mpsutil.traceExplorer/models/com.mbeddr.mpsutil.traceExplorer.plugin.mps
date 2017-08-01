@@ -12,6 +12,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
@@ -40,6 +41,11 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="5896642449625987000" name="jetbrains.mps.lang.plugin.structure.AddTabOperation" flags="nn" index="2wDMaC">
         <child id="7566788359602201160" name="tab" index="11Dce$" />
@@ -58,6 +64,7 @@
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
+        <child id="6791676465872004185" name="toolIcon" index="1nVCmq" />
       </concept>
       <concept id="1862809785209122566" name="jetbrains.mps.lang.plugin.structure.GetSelectedTabOperation" flags="nn" index="1imeyB" />
       <concept id="4295816563224240545" name="jetbrains.mps.lang.plugin.structure.PinTabOperation" flags="ng" index="1kDqZ6">
@@ -743,6 +750,9 @@
       <node concept="3uibUv" id="2jSY3BOacgd" role="1tU5fm">
         <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
       </node>
+    </node>
+    <node concept="1QGGSu" id="5d4VabvUrnR" role="1nVCmq">
+      <property role="1iqoE4" value="${module}/icons/trace.png" />
     </node>
   </node>
   <node concept="312cEu" id="2jSY3BO406M">
@@ -2624,25 +2634,6 @@
               </node>
               <node concept="37vLTw" id="5syY_AMN5$m" role="37vLTJ">
                 <ref role="3cqZAo" node="4yQfyMjm4Ms" resolve="treeExpansionState" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="5syY_AMMa4q" role="3cqZAp">
-            <node concept="2OqwBi" id="5syY_AMMa4n" role="3clFbG">
-              <node concept="10M0yZ" id="5syY_AMMa4o" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-              </node>
-              <node concept="liA8E" id="5syY_AMMa4p" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                <node concept="3cpWs3" id="5syY_AMMblF" role="37wK5m">
-                  <node concept="37vLTw" id="5syY_AMMbX$" role="3uHU7w">
-                    <ref role="3cqZAo" node="5syY_AMvz70" resolve="b" />
-                  </node>
-                  <node concept="Xl_RD" id="5syY_AMMaXw" role="3uHU7B">
-                    <property role="Xl_RC" value="setting cf to " />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -4908,20 +4899,6 @@
       <node concept="3clFbS" id="2Qbt$1tTQmx" role="3clF47">
         <node concept="3clFbJ" id="2Qbt$1tTUYx" role="3cqZAp">
           <node concept="3clFbS" id="2Qbt$1tTUYz" role="3clFbx">
-            <node concept="3clFbF" id="2CFPPn7Mk2G" role="3cqZAp">
-              <node concept="2OqwBi" id="2CFPPn7Mk2D" role="3clFbG">
-                <node concept="10M0yZ" id="2CFPPn7Mk2E" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                </node>
-                <node concept="liA8E" id="2CFPPn7Mk2F" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="Xl_RD" id="2CFPPn7Mkfq" role="37wK5m">
-                    <property role="Xl_RC" value="renderer setup" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="WieAE6GpU2" role="3cqZAp">
               <node concept="3cpWsn" id="WieAE6GpU3" role="3cpWs9">
                 <property role="TrG5h" value="ep" />
@@ -4964,25 +4941,6 @@
                       <node concept="3uibUv" id="13FXotcVGEP" role="UnYnz">
                         <ref role="3uigEE" node="13FXotcVCgO" resolve="CustomValueRenderer" />
                       </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2CFPPn7MkUO" role="3cqZAp">
-              <node concept="2OqwBi" id="2CFPPn7MkUL" role="3clFbG">
-                <node concept="10M0yZ" id="2CFPPn7MkUM" role="2Oq$k0">
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                </node>
-                <node concept="liA8E" id="2CFPPn7MkUN" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="2CFPPn7MlKu" role="37wK5m">
-                    <node concept="37vLTw" id="13FXotcVBur" role="3uHU7w">
-                      <ref role="3cqZAo" node="2Qbt$1tTV1x" resolve="renderers" />
-                    </node>
-                    <node concept="Xl_RD" id="2CFPPn7Ml1z" role="3uHU7B">
-                      <property role="Xl_RC" value="all rendeers: " />
                     </node>
                   </node>
                 </node>

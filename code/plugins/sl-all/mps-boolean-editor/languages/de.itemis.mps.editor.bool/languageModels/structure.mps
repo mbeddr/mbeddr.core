@@ -15,6 +15,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -39,8 +40,9 @@
   </registry>
   <node concept="1TIwiD" id="4g2H4r3SHDB">
     <property role="TrG5h" value="CellModel_Checkbox" />
-    <property role="34LRSv" value="checkbox{&lt;{propertyDeclaration}&gt;}" />
+    <property role="34LRSv" value="checkbox" />
     <property role="EcuMT" value="4900677560559655527" />
+    <property role="R4oN_" value="checkbox{&lt;{propertyDeclaration}&gt;}" />
     <ref role="1TJDcQ" to="tpc2:fBF0A4I" resolve="CellModel_Property" />
     <node concept="1TJgyi" id="gSMwhzt" role="1TKVEl">
       <property role="TrG5h" value="iconPathTrue" />
@@ -65,8 +67,9 @@
   </node>
   <node concept="1TIwiD" id="6bmIkNC799Q">
     <property role="TrG5h" value="CellModel_BooleanText" />
-    <property role="34LRSv" value="bool{&lt;{propertyDeclaration}&gt;}" />
+    <property role="34LRSv" value="bool" />
     <property role="EcuMT" value="7122083600695857782" />
+    <property role="R4oN_" value="bool{&lt;{propertyDeclaration}&gt;}" />
     <ref role="1TJDcQ" to="tpc2:fBF0A4I" resolve="CellModel_Property" />
     <node concept="1TJgyi" id="6bmIkNCb966" role="1TKVEl">
       <property role="TrG5h" value="trueText" />

@@ -23,6 +23,7 @@
     <import index="gtp9" ref="r:007d0985-20e2-4d70-80f1-d0de1aff1076(com.mbeddr.mpsutil.common.graph)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="pu3r" ref="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.mpsutil.traceExplorer.plugin)" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -4417,6 +4418,34 @@
               <node concept="2I9FWS" id="5Beavy19nuL" role="2T96Bj" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="2kg0xI3thT2" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="constructCustomFrame" />
+      <node concept="3Tm1VV" id="2kg0xI3thT3" role="1B3o_S" />
+      <node concept="3uibUv" id="2kg0xI3tic6" role="3clF45">
+        <ref role="3uigEE" to="pu3r:43aY2QmSq3e" resolve="ITraceRecord" />
+      </node>
+      <node concept="3clFbS" id="2kg0xI3thT5" role="3clF47">
+        <node concept="3cpWs6" id="2kg0xI3tidb" role="3cqZAp">
+          <node concept="37vLTw" id="2kg0xI3tiex" role="3cqZAk">
+            <ref role="3cqZAo" node="2kg0xI3tid_" resolve="original" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="2kg0xI3utEn" role="3clF46">
+        <property role="TrG5h" value="parent" />
+        <node concept="3uibUv" id="2kg0xI3utEJ" role="1tU5fm">
+          <ref role="3uigEE" to="pu3r:43aY2QmSq3e" resolve="ITraceRecord" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2kg0xI3tid_" role="3clF46">
+        <property role="TrG5h" value="original" />
+        <node concept="3uibUv" id="2kg0xI3tid$" role="1tU5fm">
+          <ref role="3uigEE" to="pu3r:43aY2QmSq3e" resolve="ITraceRecord" />
         </node>
       </node>
     </node>
