@@ -165,7 +165,7 @@
     <node concept="13i0hz" id="4DzE9lEv6a8" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getViewManager" />
+      <property role="TrG5h" value="getGraphingToolProvider" />
       <ref role="13i0hy" to="7noo:4DzE9lEtSAp" resolve="getGraphingToolProvider" />
       <node concept="3Tm1VV" id="4DzE9lEv6a9" role="1B3o_S" />
       <node concept="3clFbS" id="4DzE9lEv6ae" role="3clF47">
@@ -185,7 +185,7 @@
                   <node concept="3clFb_" id="izXu77MSV_" role="jymVt">
                     <property role="1EzhhJ" value="false" />
                     <property role="2aFKle" value="false" />
-                    <property role="TrG5h" value="createViewManager" />
+                    <property role="TrG5h" value="getViewManager" />
                     <node concept="3Tm1VV" id="izXu77MSVB" role="1B3o_S" />
                     <node concept="3uibUv" id="izXu77MSVC" role="3clF45">
                       <ref role="3uigEE" to="upej:~IViewManager" resolve="IViewManager" />
@@ -281,7 +281,7 @@
                   <node concept="3clFb_" id="izXu77MSVF" role="jymVt">
                     <property role="1EzhhJ" value="false" />
                     <property role="2aFKle" value="false" />
-                    <property role="TrG5h" value="createToolbar" />
+                    <property role="TrG5h" value="getToolbar" />
                     <node concept="3Tm1VV" id="izXu77MSVH" role="1B3o_S" />
                     <node concept="3uibUv" id="izXu77MSVI" role="3clF45">
                       <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
