@@ -17,6 +17,7 @@
     <import index="fblp" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.graphstream.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="3ngp" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.listeners(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="thhq" ref="r:f4b2cfe1-da62-4992-a88f-cc8c90918a31(com.mbeddr.mpsutil.graphstream.example.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -35,16 +36,15 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
-        <child id="1068498886297" name="rValue" index="37vLTx" />
-        <child id="1068498886295" name="lValue" index="37vLTJ" />
-      </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
@@ -68,7 +68,7 @@
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
-        <child id="1165602531693" name="superclass" index="1zkMxy" />
+        <child id="1095933932569" name="implementedInterface" index="EKbjA" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -78,7 +78,6 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
-      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -87,6 +86,8 @@
         <property id="1113006610751" name="value" index="$nhwW" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
+        <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -100,7 +101,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -108,7 +108,6 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -178,14 +177,14 @@
     <node concept="13i0hz" id="4DzE9lEv6a8" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getGraphingToolProvider" />
-      <ref role="13i0hy" to="7noo:4DzE9lEtSAp" resolve="getGraphingToolProvider" />
+      <property role="TrG5h" value="getGraphingInformation" />
+      <ref role="13i0hy" to="7noo:4DzE9lEtSAp" resolve="getGraphingInformation" />
       <node concept="3Tm1VV" id="4DzE9lEv6a9" role="1B3o_S" />
       <node concept="3clFbS" id="4DzE9lEv6ae" role="3clF47">
         <node concept="3cpWs6" id="izXu77MVbo" role="3cqZAp">
           <node concept="2ShNRf" id="4iv9KfRs3XS" role="3cqZAk">
-            <node concept="1pGfFk" id="4iv9KfRtOcO" role="2ShVmc">
-              <ref role="37wK5l" node="4iv9KfRtLkz" resolve="ExampleGraphingToolProvider" />
+            <node concept="HV5vD" id="50Rn4r1HiA8" role="2ShVmc">
+              <ref role="HV5vE" node="4iv9KfRtLiL" resolve="ExampleGraphingToolProvider" />
             </node>
           </node>
         </node>
@@ -194,8 +193,8 @@
         <property role="TrG5h" value="viewID" />
         <node concept="17QB3L" id="izXu77MRXD" role="1tU5fm" />
       </node>
-      <node concept="3uibUv" id="4iv9KfRrOK1" role="3clF45">
-        <ref role="3uigEE" to="udin:4iv9KfRoOZ$" resolve="AbstractGraphingToolProvider" />
+      <node concept="3uibUv" id="50Rn4r1HiAN" role="3clF45">
+        <ref role="3uigEE" to="udin:50Rn4r1HbyJ" resolve="IGraphingInformation" />
       </node>
     </node>
   </node>
@@ -216,123 +215,150 @@
       </node>
       <node concept="3Tm6S6" id="4iv9KfRtLku" role="1B3o_S" />
     </node>
-    <node concept="312cEg" id="4iv9KfRtLkv" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="_viewManager" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="4iv9KfRtLkw" role="1B3o_S" />
-      <node concept="3uibUv" id="4iv9KfRtLkx" role="1tU5fm">
-        <ref role="3uigEE" to="upej:~IViewManager" resolve="IViewManager" />
-      </node>
-    </node>
     <node concept="2tJIrI" id="4iv9KfRtLky" role="jymVt" />
-    <node concept="3clFbW" id="4iv9KfRtLkz" role="jymVt">
-      <node concept="3cqZAl" id="4iv9KfRtLk$" role="3clF45" />
-      <node concept="3Tm1VV" id="4iv9KfRtLk_" role="1B3o_S" />
-      <node concept="3clFbS" id="4iv9KfRtLkA" role="3clF47">
-        <node concept="3cpWs8" id="4iv9KfRtLkB" role="3cqZAp">
-          <node concept="3cpWsn" id="4iv9KfRtLkC" role="3cpWs9">
-            <property role="TrG5h" value="interactionListeners" />
-            <node concept="_YKpA" id="4iv9KfRtLkD" role="1tU5fm">
-              <node concept="3uibUv" id="4iv9KfRtLkE" role="_ZDj9">
-                <ref role="3uigEE" to="3ngp:~IInteractionListener" resolve="IInteractionListener" />
-              </node>
-            </node>
-            <node concept="2ShNRf" id="4iv9KfRtLkF" role="33vP2m">
-              <node concept="2Jqq0_" id="4iv9KfRtLkG" role="2ShVmc">
-                <node concept="3uibUv" id="4iv9KfRtLkH" role="HW$YZ">
-                  <ref role="3uigEE" to="3ngp:~IInteractionListener" resolve="IInteractionListener" />
-                </node>
-                <node concept="2ShNRf" id="4iv9KfRtLkI" role="HW$Y0">
-                  <node concept="1pGfFk" id="4iv9KfRtLkJ" role="2ShVmc">
-                    <ref role="37wK5l" to="3ngp:~HighlightInteractions.&lt;init&gt;()" resolve="HighlightInteractions" />
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="4iv9KfRtLkK" role="HW$Y0">
-                  <node concept="1pGfFk" id="4iv9KfRtLkL" role="2ShVmc">
-                    <ref role="37wK5l" to="3ngp:~AutomarkLinks.&lt;init&gt;()" resolve="AutomarkLinks" />
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="4iv9KfRtLkM" role="HW$Y0">
-                  <node concept="1pGfFk" id="4iv9KfRtLkN" role="2ShVmc">
-                    <ref role="37wK5l" to="3ngp:~ShowDeleteButtons.&lt;init&gt;(double,double,double,de.itemis.graphing.model.Attachment$ELocation)" resolve="ShowDeleteButtons" />
-                    <node concept="3b6qkQ" id="4iv9KfRtLkO" role="37wK5m">
-                      <property role="$nhwW" value="0.2" />
-                    </node>
-                    <node concept="3b6qkQ" id="4iv9KfRtLkP" role="37wK5m">
-                      <property role="$nhwW" value="0.2" />
-                    </node>
-                    <node concept="3b6qkQ" id="4iv9KfRtLkQ" role="37wK5m">
-                      <property role="$nhwW" value="0.05" />
-                    </node>
-                    <node concept="Rm8GO" id="4iv9KfRtLkR" role="37wK5m">
-                      <ref role="1Px2BO" to="5svn:~Attachment$ELocation" resolve="Attachment.ELocation" />
-                      <ref role="Rm8GQ" to="5svn:~Attachment$ELocation.West" resolve="West" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4iv9KfRtLkS" role="3cqZAp">
-          <node concept="37vLTI" id="4iv9KfRtLkT" role="3clFbG">
-            <node concept="37vLTw" id="4iv9KfRtLkU" role="37vLTJ">
-              <ref role="3cqZAo" node="4iv9KfRtLkv" resolve="_viewManager" />
-            </node>
-            <node concept="2YIFZM" id="4iv9KfRtLkV" role="37vLTx">
-              <ref role="1Pybhc" to="udin:64_1OWe$WQQ" resolve="ViewHelper" />
-              <ref role="37wK5l" to="udin:64_1OWe$XBJ" resolve="getConfiguredGraphstreamViewManagerForMPS" />
-              <node concept="37vLTw" id="4iv9KfRtLkW" role="37wK5m">
-                <ref role="3cqZAo" node="4iv9KfRtLkq" resolve="_graph" />
-              </node>
-              <node concept="2ShNRf" id="4iv9KfRtLkX" role="37wK5m">
-                <node concept="1pGfFk" id="4iv9KfRtLkY" role="2ShVmc">
-                  <ref role="37wK5l" to="fblp:~StaticLayout.&lt;init&gt;(de.itemis.graphing.model.Graph,de.itemis.graphing.layout.ILayout)" resolve="StaticLayout" />
-                  <node concept="37vLTw" id="4iv9KfRtLkZ" role="37wK5m">
-                    <ref role="3cqZAo" node="4iv9KfRtLkq" resolve="_graph" />
-                  </node>
-                  <node concept="2ShNRf" id="4iv9KfRtLl0" role="37wK5m">
-                    <node concept="1pGfFk" id="4iv9KfRtLl1" role="2ShVmc">
-                      <ref role="37wK5l" to="2yw0:~HierarchicalLayoutJGraphX.&lt;init&gt;()" resolve="HierarchicalLayoutJGraphX" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="37vLTw" id="4iv9KfRtLl2" role="37wK5m">
-                <ref role="3cqZAo" node="4iv9KfRtLkC" resolve="interactionListeners" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="4iv9KfRtLl3" role="jymVt" />
-    <node concept="3clFb_" id="4iv9KfRtLl4" role="jymVt">
+    <node concept="3clFb_" id="50Rn4r1GjEZ" role="jymVt">
       <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getGraph" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getViewManager" />
-      <node concept="3Tm1VV" id="4iv9KfRtLl5" role="1B3o_S" />
-      <node concept="3uibUv" id="4iv9KfRtLl6" role="3clF45">
-        <ref role="3uigEE" to="upej:~IViewManager" resolve="IViewManager" />
+      <node concept="3Tm1VV" id="50Rn4r1GjF1" role="1B3o_S" />
+      <node concept="3uibUv" id="50Rn4r1GjF2" role="3clF45">
+        <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
       </node>
-      <node concept="3clFbS" id="4iv9KfRtLl7" role="3clF47">
-        <node concept="3cpWs6" id="4iv9KfRtLl8" role="3cqZAp">
-          <node concept="37vLTw" id="4iv9KfRtLl9" role="3cqZAk">
-            <ref role="3cqZAo" node="4iv9KfRtLkv" resolve="_viewManager" />
+      <node concept="3clFbS" id="50Rn4r1GjF3" role="3clF47">
+        <node concept="3cpWs8" id="50Rn4r1GjYf" role="3cqZAp">
+          <node concept="3cpWsn" id="50Rn4r1GjYg" role="3cpWs9">
+            <property role="TrG5h" value="g" />
+            <node concept="3uibUv" id="50Rn4r1GjYh" role="1tU5fm">
+              <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
+            </node>
+            <node concept="2ShNRf" id="50Rn4r1Gk7z" role="33vP2m">
+              <node concept="1pGfFk" id="50Rn4r1Gkmg" role="2ShVmc">
+                <ref role="37wK5l" to="5svn:~Graph.&lt;init&gt;()" resolve="Graph" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="50Rn4r1Gkxb" role="3cqZAp">
+          <node concept="2YIFZM" id="50Rn4r1Gk_I" role="3clFbG">
+            <ref role="37wK5l" to="dsms:~ExampleGraph.fillExampleGraph(de.itemis.graphing.model.Graph):void" resolve="fillExampleGraph" />
+            <ref role="1Pybhc" to="dsms:~ExampleGraph" resolve="ExampleGraph" />
+            <node concept="37vLTw" id="50Rn4r1GkDQ" role="37wK5m">
+              <ref role="3cqZAo" node="50Rn4r1GjYg" resolve="g" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="50Rn4r1GkOb" role="3cqZAp">
+          <node concept="37vLTw" id="50Rn4r1GkSt" role="3cqZAk">
+            <ref role="3cqZAo" node="50Rn4r1GjYg" resolve="g" />
           </node>
         </node>
       </node>
-      <node concept="2AHcQZ" id="4iv9KfRtLla" role="2AJF6D">
+      <node concept="2AHcQZ" id="50Rn4r1GjF4" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="4iv9KfRtLlb" role="jymVt" />
+    <node concept="3clFb_" id="50Rn4r1Fjsh" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getLayout" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3Tm1VV" id="50Rn4r1Fjsj" role="1B3o_S" />
+      <node concept="3uibUv" id="50Rn4r1Fjsk" role="3clF45">
+        <ref role="3uigEE" to="2yw0:~ILayout" resolve="ILayout" />
+      </node>
+      <node concept="3clFbS" id="50Rn4r1Fjsl" role="3clF47">
+        <node concept="3cpWs6" id="50Rn4r1Fsv0" role="3cqZAp">
+          <node concept="2ShNRf" id="50Rn4r1FsSO" role="3cqZAk">
+            <node concept="1pGfFk" id="50Rn4r1FsSP" role="2ShVmc">
+              <ref role="37wK5l" to="2yw0:~HierarchicalLayoutJGraphX.&lt;init&gt;()" resolve="HierarchicalLayoutJGraphX" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="50Rn4r1Fjsm" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="50Rn4r1Fk2f" role="jymVt" />
+    <node concept="3clFb_" id="50Rn4r1Fjsp" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getInteractionListeners" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3Tm1VV" id="50Rn4r1Fjsr" role="1B3o_S" />
+      <node concept="_YKpA" id="50Rn4r1FkA3" role="3clF45">
+        <node concept="3uibUv" id="50Rn4r1FkA5" role="_ZDj9">
+          <ref role="3uigEE" to="3ngp:~IInteractionListener" resolve="IInteractionListener" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="50Rn4r1Fjsu" role="3clF47">
+        <node concept="3cpWs6" id="50Rn4r1Fn4j" role="3cqZAp">
+          <node concept="2ShNRf" id="50Rn4r1Fn5S" role="3cqZAk">
+            <node concept="2Jqq0_" id="50Rn4r1Fn5T" role="2ShVmc">
+              <node concept="3uibUv" id="50Rn4r1Fn5U" role="HW$YZ">
+                <ref role="3uigEE" to="3ngp:~IInteractionListener" resolve="IInteractionListener" />
+              </node>
+              <node concept="2ShNRf" id="50Rn4r1Fn5X" role="HW$Y0">
+                <node concept="1pGfFk" id="50Rn4r1Fn5Y" role="2ShVmc">
+                  <ref role="37wK5l" to="3ngp:~AutomarkLinks.&lt;init&gt;()" resolve="AutomarkLinks" />
+                </node>
+              </node>
+              <node concept="2ShNRf" id="50Rn4r1Fn5Z" role="HW$Y0">
+                <node concept="1pGfFk" id="50Rn4r1Fn60" role="2ShVmc">
+                  <ref role="37wK5l" to="3ngp:~ShowDeleteButtons.&lt;init&gt;(double,double,double,de.itemis.graphing.model.Attachment$ELocation)" resolve="ShowDeleteButtons" />
+                  <node concept="3b6qkQ" id="50Rn4r1Fn61" role="37wK5m">
+                    <property role="$nhwW" value="0.2" />
+                  </node>
+                  <node concept="3b6qkQ" id="50Rn4r1Fn62" role="37wK5m">
+                    <property role="$nhwW" value="0.2" />
+                  </node>
+                  <node concept="3b6qkQ" id="50Rn4r1Fn63" role="37wK5m">
+                    <property role="$nhwW" value="0.05" />
+                  </node>
+                  <node concept="Rm8GO" id="50Rn4r1Fn64" role="37wK5m">
+                    <ref role="1Px2BO" to="5svn:~Attachment$ELocation" resolve="Attachment.ELocation" />
+                    <ref role="Rm8GQ" to="5svn:~Attachment$ELocation.West" resolve="West" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="50Rn4r1Fjsv" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="50Rn4r1MAZT" role="jymVt" />
+    <node concept="3clFb_" id="50Rn4r1MtqV" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getRenderingTechnology" />
+      <node concept="3Tm1VV" id="50Rn4r1MtqX" role="1B3o_S" />
+      <node concept="3uibUv" id="50Rn4r1MtqY" role="3clF45">
+        <ref role="3uigEE" to="udin:50Rn4r1MriY" resolve="IGraphingInformation.ERenderingTechnology" />
+      </node>
+      <node concept="3clFbS" id="50Rn4r1MtqZ" role="3clF47">
+        <node concept="3cpWs6" id="50Rn4r1MxLo" role="3cqZAp">
+          <node concept="Rm8GO" id="50Rn4r1M$HS" role="3cqZAk">
+            <ref role="1Px2BO" to="udin:50Rn4r1MriY" resolve="IGraphingInformation.ERenderingTechnology" />
+            <ref role="Rm8GQ" to="udin:50Rn4r1Mrq1" resolve="Graphstream" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="50Rn4r1Mtr0" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="50Rn4r1FujS" role="jymVt" />
     <node concept="3clFb_" id="4iv9KfRtLlc" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getToolbar" />
+      <property role="TrG5h" value="getToolbarContribution" />
       <node concept="3Tm1VV" id="4iv9KfRtLld" role="1B3o_S" />
       <node concept="3uibUv" id="4iv9KfRtLle" role="3clF45">
         <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
@@ -347,37 +373,9 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4iv9KfRtLlj" role="jymVt" />
-    <node concept="3clFb_" id="4iv9KfRtLlk" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="buildGraph" />
-      <node concept="3Tm1VV" id="4iv9KfRtLll" role="1B3o_S" />
-      <node concept="3cqZAl" id="4iv9KfRtLlm" role="3clF45" />
-      <node concept="37vLTG" id="4iv9KfRtLln" role="3clF46">
-        <property role="TrG5h" value="historyItem" />
-        <node concept="3uibUv" id="4iv9KfRtLlo" role="1tU5fm">
-          <ref role="3uigEE" to="udin:4iv9KfRoeA9" resolve="IHistoryItem" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="4iv9KfRtLlp" role="3clF47">
-        <node concept="3clFbF" id="4iv9KfRtLlq" role="3cqZAp">
-          <node concept="2YIFZM" id="4iv9KfRtLlr" role="3clFbG">
-            <ref role="37wK5l" to="dsms:~ExampleGraph.fillExampleGraph(de.itemis.graphing.model.Graph):void" resolve="fillExampleGraph" />
-            <ref role="1Pybhc" to="dsms:~ExampleGraph" resolve="ExampleGraph" />
-            <node concept="37vLTw" id="4iv9KfRtLls" role="37wK5m">
-              <ref role="3cqZAo" node="4iv9KfRtLkq" resolve="_graph" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="4iv9KfRtLlt" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="4iv9KfRtLkh" role="jymVt" />
     <node concept="3Tm1VV" id="4iv9KfRtLiM" role="1B3o_S" />
-    <node concept="3uibUv" id="4iv9KfRtLG3" role="1zkMxy">
-      <ref role="3uigEE" to="udin:4iv9KfRoOZ$" resolve="AbstractGraphingToolProvider" />
+    <node concept="3uibUv" id="50Rn4r1Hc_3" role="EKbjA">
+      <ref role="3uigEE" to="udin:50Rn4r1HbyJ" resolve="IGraphingInformation" />
     </node>
   </node>
 </model>

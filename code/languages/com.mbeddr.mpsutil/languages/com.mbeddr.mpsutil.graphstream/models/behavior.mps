@@ -75,10 +75,10 @@
     <node concept="13i0hz" id="4DzE9lEtSAp" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getGraphingToolProvider" />
+      <property role="TrG5h" value="getGraphingInformation" />
       <node concept="3Tm1VV" id="4DzE9lEtSAq" role="1B3o_S" />
-      <node concept="3uibUv" id="4iv9KfRrOxI" role="3clF45">
-        <ref role="3uigEE" to="udin:4iv9KfRoOZ$" resolve="AbstractGraphingToolProvider" />
+      <node concept="3uibUv" id="50Rn4r1HiDt" role="3clF45">
+        <ref role="3uigEE" to="udin:50Rn4r1HbyJ" resolve="IGraphingInformation" />
       </node>
       <node concept="3clFbS" id="4DzE9lEtSAs" role="3clF47" />
       <node concept="37vLTG" id="4DzE9lEu1Hk" role="3clF46">
