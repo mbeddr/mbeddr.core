@@ -700,5 +700,10 @@
       <ref role="PrY4T" node="7obiejCehKv" resolve="ITracerFrame" />
     </node>
   </node>
+  <node concept="PlHQZ" id="3T40JVg3mgZ">
+    <property role="EcuMT" value="4486714422203343935" />
+    <property role="3GE5qa" value="tracing" />
+    <property role="TrG5h" value="ITrivialNode" />
+  </node>
 </model>
 
