@@ -98,7 +98,7 @@
           </node>
           <node concept="2iRfu4" id="6bmIkNC4$I5" role="2iSdaV" />
         </node>
-        <node concept="3F0ifn" id="6bmIkNC4BbV" role="3EZMnx" />
+        <node concept="3F0ifn" id="3HnK7Io0hSM" role="3EZMnx" />
         <node concept="3EZMnI" id="6bmIkNC4$IU" role="3EZMnx">
           <node concept="VPM3Z" id="6bmIkNC4$IW" role="3F10Kt">
             <property role="VOm3f" value="false" />
@@ -146,6 +146,9 @@
             <ref role="1NtTu8" to="81p:4g2H4r3UdeO" resolve="testproperty" />
           </node>
           <node concept="2iRfu4" id="6bmIkNC4$HC" role="2iSdaV" />
+        </node>
+        <node concept="3F0A7n" id="1ZAaMb1bK2n" role="3EZMnx">
+          <ref role="1NtTu8" to="81p:QvUN5MYk1L" resolve="stringProperty" />
         </node>
         <node concept="3F0ifn" id="6bmIkNC4E6m" role="3EZMnx" />
         <node concept="3F0ifn" id="7m16RPrk3lL" role="3EZMnx">
