@@ -48,6 +48,7 @@
   <dependencies>
     <dependency reexport="false">5787a8ed-1486-4469-94b0-fa3fc6c8538d(com.mbeddr.mpsutil.graphstream)</dependency>
     <dependency reexport="true">ab71436a-a7d1-4689-ac02-b5fde2ec681f(com.mbeddr.mpsutil.graphstream.runtime)</dependency>
+    <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
