@@ -28,6 +28,7 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="4400783559374052800" name="com.mbeddr.doc.structure.EmphFormattedText" flags="ng" index="28N2ik" />
       <concept id="620304030119138923" name="com.mbeddr.doc.structure.BoldFormattedText" flags="ng" index="2vpllh" />
       <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
         <child id="6165313375056012515" name="ref" index="$CzcU" />
@@ -327,10 +328,142 @@
         <property role="TrG5h" value="empty_-1" />
       </node>
       <node concept="1_0VNX" id="7PyP3ULnntU" role="1_0VJ0">
-        <property role="TrG5h" value="AssertionsAnalyses" />
+        <property role="TrG5h" value="AssertionsCBMCAnalysis" />
         <property role="1_0VJr" value="Assertions Analyses" />
         <node concept="3n9NSn" id="7PyP3ULnnuo" role="lGtFl">
           <ref role="3nadW_" to="hj5x:3x0R1LJfFaN" resolve="AssertionsCBMCAnalysis" />
+        </node>
+        <node concept="1_0LV8" id="3U8qTcjPlqH" role="1_0VJ0">
+          <node concept="19SGf9" id="3U8qTcjPlqI" role="1_0LWR">
+            <node concept="19SUe$" id="3U8qTcjPlqR" role="19SJt6" />
+            <node concept="2vpllh" id="3U8qTcjPlqO" role="19SJt6">
+              <node concept="19SGf9" id="3U8qTcjPlqP" role="$DsGW">
+                <node concept="19SUe$" id="3U8qTcjPlqQ" role="19SJt6">
+                  <property role="19SUeA" value="Summary:" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="3U8qTcjPlqS" role="19SJt6">
+              <property role="19SUeA" value=" checks assertions which are reachable from the entry point.&#10;&#10;The assertions at C code level can originate from mbeddr assertions or can be generated from higher-level constructs (e.g. ACSL contracts)." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="3U8qTcjPlqY" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="3U8qTcjPlsr" role="1_0VJ0">
+        <property role="TrG5h" value="CommonOptions" />
+        <property role="1_0VJr" value="Common Options" />
+        <node concept="3X6WG5" id="3U8qTcjPltq" role="1_0VJ0">
+          <node concept="3X6T9g" id="3U8qTcjPltr" role="3Xp5NH">
+            <node concept="OjmMv" id="3U8qTcjPlts" role="3X6T9h">
+              <node concept="19SGf9" id="3U8qTcjPltt" role="OjmMu">
+                <node concept="19SUe$" id="3U8qTcjPltC" role="19SJt6" />
+                <node concept="2vpllh" id="3U8qTcjPlt$" role="19SJt6">
+                  <node concept="19SGf9" id="3U8qTcjPlt_" role="$DsGW">
+                    <node concept="19SUe$" id="3U8qTcjPltA" role="19SJt6">
+                      <property role="19SUeA" value="external files" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="3U8qTcjPltB" role="19SJt6">
+                  <property role="19SUeA" value=" - a set of single C files or directory containing C files which are given as arguments to CBMC. In the case when a directory is given, all C files contained in the directory or subdirectories of that directory will be collected in a recursive manner.          &#10;" />
+                </node>
+                <node concept="28N2ik" id="3U8qTcjPluk" role="19SJt6">
+                  <node concept="19SGf9" id="3U8qTcjPlul" role="$DsGW">
+                    <node concept="19SUe$" id="3U8qTcjPlum" role="19SJt6">
+                      <property role="19SUeA" value="WARNING 1:" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="3U8qTcjPlun" role="19SJt6">
+                  <property role="19SUeA" value=" if the verified system makes use of function defined in external files and if these files are not given as 'external files', then CBMC wil considered those functions to be uninterpreted.             " />
+                </node>
+                <node concept="28N2ik" id="3U8qTcjPluz" role="19SJt6">
+                  <node concept="19SGf9" id="3U8qTcjPlu$" role="$DsGW">
+                    <node concept="19SUe$" id="3U8qTcjPlu_" role="19SJt6">
+                      <property role="19SUeA" value="WARNING 2:" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="3U8qTcjPluA" role="19SJt6">
+                  <property role="19SUeA" value=" the more C-files are given to CBMC, the more files CBMC has to process and thereby the slower analyes will be.                                                  " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="3U8qTcjPlu0" role="3Xp5NH">
+            <node concept="OjmMv" id="3U8qTcjPlu1" role="3X6T9h">
+              <node concept="19SGf9" id="3U8qTcjPlu2" role="OjmMu">
+                <node concept="19SUe$" id="3U8qTcjPti3" role="19SJt6" />
+                <node concept="2vpllh" id="3U8qTcjPthZ" role="19SJt6">
+                  <node concept="19SGf9" id="3U8qTcjPti0" role="$DsGW">
+                    <node concept="19SUe$" id="3U8qTcjPti1" role="19SJt6">
+                      <property role="19SUeA" value="macro" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="3U8qTcjPti2" role="19SJt6">
+                  <property role="19SUeA" value="         - defines macros to be passed to the preprocessor via CBMC" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="3U8qTcjPltK" role="3Xp5NH">
+            <node concept="OjmMv" id="3U8qTcjPltL" role="3X6T9h">
+              <node concept="19SGf9" id="3U8qTcjPltM" role="OjmMu">
+                <node concept="19SUe$" id="3U8qTcjPltN" role="19SJt6">
+                  <property role="19SUeA" value="slicing              - parts of the program that do not influence the analysis result will be removed     &#10;                       positive: the analysis will be much faster, counterexamples shorter                &#10;                       negative: the counterexamples might have missing steps and be harder to follow     &#10;" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="3U8qTcjPluQ" role="3Xp5NH">
+            <node concept="OjmMv" id="3U8qTcjPluR" role="3X6T9h">
+              <node concept="19SGf9" id="3U8qTcjPluS" role="OjmMu">
+                <node concept="19SUe$" id="3U8qTcjPluT" role="19SJt6">
+                  <property role="19SUeA" value="loops unwinding      - number of times loops should be unwound during the analysis                        " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="3U8qTcjPlvm" role="3Xp5NH">
+            <node concept="OjmMv" id="3U8qTcjPlvn" role="3X6T9h">
+              <node concept="19SGf9" id="3U8qTcjPlvo" role="OjmMu">
+                <node concept="19SUe$" id="3U8qTcjPlvp" role="19SJt6">
+                  <property role="19SUeA" value="unwinding assertions - if checked then each loop is checked whether its unwinding is enough;              &#10;                       if not then the analysis fails                                                     " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="3U8qTcjPlvU" role="3Xp5NH">
+            <node concept="OjmMv" id="3U8qTcjPlvV" role="3X6T9h">
+              <node concept="19SGf9" id="3U8qTcjPlvW" role="OjmMu">
+                <node concept="19SUe$" id="3U8qTcjPlvX" role="19SJt6">
+                  <property role="19SUeA" value="partial loops        - allow analysis to continue even if the loops unwinding is incomplete. By checking  &#10;                       option more bugs can be discovered. However, both false positives and false        &#10;                       negatives can occur.                                                               " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="3U8qTcjPlwy" role="3Xp5NH">
+            <node concept="OjmMv" id="3U8qTcjPlwz" role="3X6T9h">
+              <node concept="19SGf9" id="3U8qTcjPlw$" role="OjmMu">
+                <node concept="19SUe$" id="3U8qTcjPlw_" role="19SJt6">
+                  <property role="19SUeA" value="use refinement       - (in CBMC experimental) instructs CBMC to use a refinement procedure.               &#10;                       It substantially speeds up some analyses in the presence of doubles.               " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3X6T9g" id="3U8qTcjPlxm" role="3Xp5NH">
+            <node concept="OjmMv" id="3U8qTcjPlxn" role="3X6T9h">
+              <node concept="19SGf9" id="3U8qTcjPlxo" role="OjmMu">
+                <node concept="19SUe$" id="3U8qTcjPlxp" role="19SJt6">
+                  <property role="19SUeA" value="analysis depth       - (expert) the maximum number of micro-steps (SSA-level) counted from the entry point" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
