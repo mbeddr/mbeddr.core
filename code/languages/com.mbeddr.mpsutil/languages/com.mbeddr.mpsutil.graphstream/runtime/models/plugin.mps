@@ -29,7 +29,6 @@
     <import index="5svn" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="uc57" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.graphstream(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="3ngp" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.listeners(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="2yw0" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="fblp" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.graphstream.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
@@ -605,6 +604,16 @@
         </node>
         <node concept="3clFbJ" id="50Rn4r1Mjci" role="3cqZAp">
           <node concept="3clFbS" id="50Rn4r1Mjcj" role="3clFbx">
+            <node concept="3clFbF" id="5zrVLV_TReI" role="3cqZAp">
+              <node concept="2OqwBi" id="5zrVLV_TRjl" role="3clFbG">
+                <node concept="37vLTw" id="5zrVLV_TReG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="50Rn4r1Mj8H" resolve="gi" />
+                </node>
+                <node concept="liA8E" id="5zrVLV_TUZu" role="2OqNvi">
+                  <ref role="37wK5l" node="5zrVLV_TRYW" resolve="refresh" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="50Rn4r1Mjck" role="3cqZAp">
               <node concept="2OqwBi" id="50Rn4r1Mjcl" role="3clFbG">
                 <node concept="2WthIp" id="50Rn4r1Mjcm" role="2Oq$k0" />
@@ -959,20 +968,43 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="50Rn4r1GAVX" role="37wK5m">
-                    <node concept="liA8E" id="50Rn4r1GBjB" role="2OqNvi">
-                      <ref role="37wK5l" node="50Rn4r1HbzZ" resolve="getInteractionListeners" />
-                    </node>
-                    <node concept="37vLTw" id="50Rn4r1H49z" role="2Oq$k0">
-                      <ref role="3cqZAo" node="50Rn4r1H1tN" resolve="gi" />
-                    </node>
-                  </node>
                 </node>
                 <node concept="2OqwBi" id="50Rn4r1G8Zw" role="37vLTJ">
                   <node concept="2WthIp" id="50Rn4r1G8Zx" role="2Oq$k0" />
                   <node concept="2BZ7hE" id="50Rn4r1G8Zy" role="2OqNvi">
                     <ref role="2WH_rO" node="4JBT2R9Uvdi" resolve="viewManager" />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2Gpval" id="6hT4HFplUlo" role="3cqZAp">
+              <node concept="2GrKxI" id="6hT4HFplUlq" role="2Gsz3X">
+                <property role="TrG5h" value="interactionListener" />
+              </node>
+              <node concept="3clFbS" id="6hT4HFplUlu" role="2LFqv$">
+                <node concept="3clFbF" id="6hT4HFplU_a" role="3cqZAp">
+                  <node concept="2OqwBi" id="6hT4HFplUNg" role="3clFbG">
+                    <node concept="2OqwBi" id="6hT4HFplU_4" role="2Oq$k0">
+                      <node concept="2WthIp" id="6hT4HFplU_7" role="2Oq$k0" />
+                      <node concept="2BZ7hE" id="6hT4HFplU_9" role="2OqNvi">
+                        <ref role="2WH_rO" node="4JBT2R9Uvdi" resolve="viewManager" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6hT4HFplUU2" role="2OqNvi">
+                      <ref role="37wK5l" to="upej:~IViewManager.registerInteractionListener(de.itemis.graphing.view.IInteractionListener):void" resolve="registerInteractionListener" />
+                      <node concept="2GrUjf" id="6hT4HFplUUK" role="37wK5m">
+                        <ref role="2Gs0qQ" node="6hT4HFplUlq" resolve="interactionListener" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="50Rn4r1GAVX" role="2GsD0m">
+                <node concept="liA8E" id="50Rn4r1GBjB" role="2OqNvi">
+                  <ref role="37wK5l" node="50Rn4r1HbzZ" resolve="getInteractionListeners" />
+                </node>
+                <node concept="37vLTw" id="50Rn4r1H49z" role="2Oq$k0">
+                  <ref role="3cqZAo" node="50Rn4r1H1tN" resolve="gi" />
                 </node>
               </node>
             </node>
@@ -1910,12 +1942,9 @@
               <ref role="3cqZAo" node="LKp7m2Rf2Z" resolve="viewManager" />
             </node>
             <node concept="liA8E" id="16YVkUU6_gu" role="2OqNvi">
-              <ref role="37wK5l" to="uc57:~GraphstreamViewManager.configure(org.graphstream.ui.layout.Layout,java.util.List,org.graphstream.ui.view.Viewer,java.lang.String):void" resolve="configure" />
+              <ref role="37wK5l" to="uc57:~GraphstreamViewManager.configure(org.graphstream.ui.layout.Layout,org.graphstream.ui.view.Viewer,java.lang.String):void" resolve="configure" />
               <node concept="37vLTw" id="16YVkUU6_oA" role="37wK5m">
                 <ref role="3cqZAo" node="64_1OWe_7SN" resolve="layout" />
-              </node>
-              <node concept="37vLTw" id="16YVkUU6_zN" role="37wK5m">
-                <ref role="3cqZAo" node="16YVkUU6cgk" resolve="interactionListeners" />
               </node>
               <node concept="37vLTw" id="16YVkUU6_Gl" role="37wK5m">
                 <ref role="3cqZAo" node="64_1OWewXtZ" resolve="viewer" />
@@ -1949,15 +1978,6 @@
           <ref role="3uigEE" to="n5wa:~Layout" resolve="Layout" />
         </node>
       </node>
-      <node concept="37vLTG" id="16YVkUU6cgk" role="3clF46">
-        <property role="TrG5h" value="interactionListeners" />
-        <node concept="3uibUv" id="16YVkUU6cGf" role="1tU5fm">
-          <ref role="3uigEE" to="33ny:~List" resolve="List" />
-          <node concept="3uibUv" id="34dNJ9UkKWS" role="11_B2D">
-            <ref role="3uigEE" to="3ngp:~IInteractionListener" resolve="IInteractionListener" />
-          </node>
-        </node>
-      </node>
       <node concept="P$JXv" id="64_1OWeAq9q" role="lGtFl">
         <node concept="TZ5HA" id="64_1OWeAq9r" role="TZ5H$">
           <node concept="1dT_AC" id="64_1OWeAq9s" role="1dT_Ay">
@@ -1974,12 +1994,6 @@
           <property role="TUZQ4" value="              : optional, Graphstreams default layout is used if null" />
           <node concept="zr_55" id="64_1OWeAq9y" role="zr_5Q">
             <ref role="zr_51" node="64_1OWe_7SN" resolve="layout" />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="16YVkUU6d1v" role="3nqlJM">
-          <property role="TUZQ4" value=": optional, listeners that are registered to catch interaction events" />
-          <node concept="zr_55" id="16YVkUU6d1U" role="zr_5Q">
-            <ref role="zr_51" node="16YVkUU6cgk" resolve="interactionListeners" />
           </node>
         </node>
       </node>
@@ -2665,6 +2679,7 @@
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
     </node>
+    <node concept="2tJIrI" id="5zrVLV_TRQU" role="jymVt" />
     <node concept="3clFb_" id="1aZIu9YoDKL" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
@@ -2685,6 +2700,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5zrVLV_TROL" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1HbzR" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getGraph" />
@@ -2719,7 +2735,7 @@
       <node concept="3Tm1VV" id="50Rn4r1Hb$1" role="1B3o_S" />
       <node concept="_YKpA" id="50Rn4r1Hb$2" role="3clF45">
         <node concept="3uibUv" id="50Rn4r1Hb$3" role="_ZDj9">
-          <ref role="3uigEE" to="3ngp:~IInteractionListener" resolve="IInteractionListener" />
+          <ref role="3uigEE" to="upej:~IInteractionListener" resolve="IInteractionListener" />
         </node>
       </node>
     </node>
@@ -2742,6 +2758,15 @@
       <node concept="3uibUv" id="50Rn4r1Hb$7" role="3clF45">
         <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
+    </node>
+    <node concept="2tJIrI" id="5zrVLV_TRNI" role="jymVt" />
+    <node concept="3clFb_" id="5zrVLV_TRYW" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="refresh" />
+      <node concept="3clFbS" id="5zrVLV_TRYZ" role="3clF47" />
+      <node concept="3Tm1VV" id="5zrVLV_TRZ0" role="1B3o_S" />
+      <node concept="3cqZAl" id="5zrVLV_TRXN" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="50Rn4r1HbyK" role="1B3o_S" />
   </node>
