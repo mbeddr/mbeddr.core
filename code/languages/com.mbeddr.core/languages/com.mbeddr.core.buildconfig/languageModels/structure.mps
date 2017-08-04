@@ -598,20 +598,5 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6eRyKv6L44j">
-    <property role="EcuMT" value="7185364596008698131" />
-    <property role="TrG5h" value="ModelIncludePath" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6eRyKv6L44k" role="1TKVEl">
-      <property role="IQ2nx" value="7185364596008698132" />
-      <property role="TrG5h" value="modelName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="6eRyKv6P5qI" role="1TKVEl">
-      <property role="IQ2nx" value="7185364596009752238" />
-      <property role="TrG5h" value="modelOutputFolder" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
 </model>
 

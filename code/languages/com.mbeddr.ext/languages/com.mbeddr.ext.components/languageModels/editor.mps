@@ -1937,9 +1937,6 @@
       <node concept="1kIj98" id="5V9BP5IMRGn" role="3EZMnx">
         <node concept="3F1sOY" id="71UKpntmSmE" role="1kIj9b">
           <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
-          <node concept="11L4FC" id="ybcgwys6Vy" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
       </node>
       <node concept="l2Vlx" id="71UKpntmSmD" role="2iSdaV" />

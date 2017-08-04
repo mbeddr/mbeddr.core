@@ -505,9 +505,6 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
-        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
-      </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -1149,107 +1146,6 @@
       </node>
       <node concept="3Tqbb2" id="3R$6B6bKw0M" role="3clF45">
         <ref role="ehGHo" to="vs0r:3R$6B6bKw0D" resolve="IConfigurationContainer" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="ybcgwyxJcI" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="isCompatible" />
-      <node concept="3Tm1VV" id="ybcgwyxJcJ" role="1B3o_S" />
-      <node concept="10P_77" id="ybcgwyxUp5" role="3clF45" />
-      <node concept="3clFbS" id="ybcgwyxJcL" role="3clF47">
-        <node concept="3clFbF" id="ybcgwyxUqW" role="3cqZAp">
-          <node concept="2OqwBi" id="ybcgwyxV8s" role="3clFbG">
-            <node concept="2OqwBi" id="ybcgwyxU$X" role="2Oq$k0">
-              <node concept="13iPFW" id="ybcgwyxUqV" role="2Oq$k0" />
-              <node concept="2yIwOk" id="ybcgwyxUPm" role="2OqNvi" />
-            </node>
-            <node concept="3O6GUB" id="ybcgwyxVjm" role="2OqNvi">
-              <node concept="25Kdxt" id="ybcgwyxVpR" role="3QVz_e">
-                <node concept="2OqwBi" id="ybcgwyxVBm" role="25KhWn">
-                  <node concept="37vLTw" id="ybcgwyxVt1" role="2Oq$k0">
-                    <ref role="3cqZAo" node="ybcgwyxUq7" resolve="other" />
-                  </node>
-                  <node concept="2yIwOk" id="ybcgwyxVY0" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="ybcgwyxUq7" role="3clF46">
-        <property role="TrG5h" value="other" />
-        <node concept="3Tqbb2" id="ybcgwyxUq6" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
-        </node>
-      </node>
-      <node concept="P$JXv" id="ybcgwyxW1m" role="lGtFl">
-        <node concept="TZ5HA" id="ybcgwyxW1n" role="TZ5H$">
-          <node concept="1dT_AC" id="ybcgwyxW1o" role="1dT_Ay">
-            <property role="1dT_AB" value="This is mainly used for x model generation it checks if the other" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="ybcgwyxW6i" role="TZ5H$">
-          <node concept="1dT_AC" id="ybcgwyxW6j" role="1dT_Ay">
-            <property role="1dT_AB" value="item is compatible with this one. In some cases actual configuration" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="ybcgwyxW6y" role="TZ5H$">
-          <node concept="1dT_AC" id="ybcgwyxW6z" role="1dT_Ay">
-            <property role="1dT_AB" value="details can differ but the items might still be compatible. The caller" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="ybcgwyxW7p" role="TZ5H$">
-          <node concept="1dT_AC" id="ybcgwyxW7q" role="1dT_Ay">
-            <property role="1dT_AB" value="should make sure to only call this with matching (sub)concepts. But" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="ybcgwyxW7H" role="TZ5H$">
-          <node concept="1dT_AC" id="ybcgwyxW7I" role="1dT_Ay">
-            <property role="1dT_AB" value="there is no way to express this in MPS terms of the type system so" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="ybcgwyxW83" role="TZ5H$">
-          <node concept="1dT_AC" id="ybcgwyxW84" role="1dT_Ay">
-            <property role="1dT_AB" value="each implementation needs to make sure that it can handle caese where" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="ybcgwyxW8r" role="TZ5H$">
-          <node concept="1dT_AC" id="ybcgwyxW8s" role="1dT_Ay">
-            <property role="1dT_AB" value="the other concept is not a subconcept of its own concept." />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="ybcgwyxW1p" role="3nqlJM">
-          <property role="TUZQ4" value="the other configuration item to check against" />
-          <node concept="zr_55" id="ybcgwyxW1r" role="zr_5Q">
-            <ref role="zr_51" node="ybcgwyxUq7" resolve="other" />
-          </node>
-        </node>
-        <node concept="x79VA" id="ybcgwyxW1s" role="3nqlJM">
-          <property role="x79VB" value="if the two items are compatible" />
-        </node>
-      </node>
-    </node>
-    <node concept="13i0hz" id="ybcgwyBbFy" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="canHandleCrossModelGeneration" />
-      <node concept="3Tm1VV" id="ybcgwyBbFz" role="1B3o_S" />
-      <node concept="10P_77" id="ybcgwyBbTG" role="3clF45" />
-      <node concept="3clFbS" id="ybcgwyBbF_" role="3clF47">
-        <node concept="3clFbF" id="ybcgwyBbVw" role="3cqZAp">
-          <node concept="3clFbT" id="ybcgwyBbVv" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="P$JXv" id="ybcgwyBbVb" role="lGtFl">
-        <node concept="TZ5HA" id="ybcgwyBbVc" role="TZ5H$">
-          <node concept="1dT_AC" id="ybcgwyBbVd" role="1dT_Ay" />
-        </node>
-        <node concept="x79VA" id="ybcgwyBbVe" role="3nqlJM">
-          <property role="x79VB" value="true if the configuration item is compatible" />
-        </node>
       </node>
     </node>
     <node concept="13hLZK" id="3R$6B6bKw0G" role="13h7CW">

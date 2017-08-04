@@ -1553,8 +1553,8 @@
         <node concept="3clFbJ" id="2jSY3BO87k4" role="3cqZAp">
           <node concept="3fqX7Q" id="2jSY3BO87k5" role="3clFbw">
             <node concept="2ZW3vV" id="2jSY3BO87k6" role="3fr31v">
-              <node concept="3uibUv" id="1rUbSeF5y_" role="2ZW6by">
-                <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
+              <node concept="3uibUv" id="2jSY3BO87k7" role="2ZW6by">
+                <ref role="3uigEE" node="2jSY3BO406M" resolve="DefaultTraceRecord" />
               </node>
               <node concept="37vLTw" id="2jSY3BO87k8" role="2ZW6bz">
                 <ref role="3cqZAo" node="2jSY3BO87jZ" resolve="userObject" />

@@ -293,35 +293,5 @@
       <ref role="PrY4T" to="x27k:19a6$uAAqkn" resolve="IModuleContentContainer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1NwarDnRX0I">
-    <property role="EcuMT" value="2080708908160110638" />
-    <property role="3GE5qa" value="module" />
-    <property role="TrG5h" value="GenForignExtModuleImport" />
-    <ref role="1TJDcQ" node="34x64NyTNWu" resolve="GenModuleImport" />
-    <node concept="1TJgyj" id="1NwarDnRY03" role="1TKVEi">
-      <property role="IQ2ns" value="2080708908160114691" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="module" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
-    </node>
-    <node concept="PrWs8" id="1NwarDnRXZW" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:6clJcrJZLbn" resolve="IChunkDependency" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1lWQE5EvL9X">
-    <property role="EcuMT" value="1548352758719910525" />
-    <property role="TrG5h" value="ForceCopyIn" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="1lWQE5EvL9Y" role="lGtFl">
-      <property role="Hh88m" value="forceCopy" />
-      <node concept="tn0Fv" id="1lWQE5EvLa1" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
-      <node concept="trNpa" id="1lWQE5EvLa4" role="EQaZv">
-        <ref role="trN6q" to="x27k:5_l8w1EmTcX" resolve="Module" />
-      </node>
-    </node>
-  </node>
 </model>
 
