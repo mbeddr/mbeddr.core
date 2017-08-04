@@ -969,6 +969,36 @@
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
+    <node concept="m$_wf" id="62XMcUo5GnA" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.debugger.testing" />
+      <node concept="3_J27D" id="62XMcUo5GnB" role="m$_yQ">
+        <node concept="3Mxwew" id="62XMcUo5GnC" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.debugger.testing" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="62XMcUo5GnD" role="m$_w8">
+        <node concept="3Mxwew" id="62XMcUo5GnE" role="3MwsjC">
+          <property role="3MwjfP" value="1.0" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="62XMcUo6G_e" role="m$_yh">
+        <ref role="m$f5T" node="62XMcUo5GnJ" resolve="com.mbeddr.debugger.testing" />
+      </node>
+      <node concept="m$_yC" id="62XMcUo5GnG" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="2coa6Xmpp_V" role="m$_yJ">
+        <ref role="m$_y1" node="7uZw0yZ43Jz" resolve="com.mbeddr.core" />
+      </node>
+      <node concept="m$_yC" id="2coa6XmppB3" role="m$_yJ">
+        <ref role="m$_y1" node="5qO$P$Prhta" resolve="com.mbeddr.debugger" />
+      </node>
+      <node concept="3_J27D" id="62XMcUo5GnH" role="m_cZH">
+        <node concept="3Mxwew" id="62XMcUo5GnI" role="3MwsjC">
+          <property role="3MwjfP" value="debugger.testing" />
+        </node>
+      </node>
+    </node>
     <node concept="m$_wf" id="3qyGNHcRb2h" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.xmodel" />
       <node concept="3_J27D" id="3qyGNHcRb2j" role="m$_yQ">
@@ -12635,6 +12665,9 @@
       </node>
       <node concept="m$_wl" id="3AVJcIMsTav" role="39821P">
         <ref role="m_rDy" node="4i9pOwKZppd" resolve="com.mbeddr.ext.math" />
+      </node>
+      <node concept="m$_wl" id="62XMcUo5Gn_" role="39821P">
+        <ref role="m_rDy" node="62XMcUo5GnA" resolve="com.mbeddr.debugger.testing" />
       </node>
       <node concept="m$_wl" id="3qyGNHcRjTb" role="39821P">
         <ref role="m_rDy" node="3qyGNHcRb2h" resolve="com.mbeddr.xmodel" />
