@@ -228,8 +228,8 @@
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.platform" />
     <node concept="2igEWh" id="$bJ0jguQs8" role="1hWBAP">
       <property role="2igJW4" value="true" />
-      <property role="3UIfUI" value="4096" />
-      <property role="1YnnvL" value="1024" />
+      <property role="3UIfUI" value="16384" />
+      <property role="1YnnvL" value="4096" />
     </node>
     <node concept="2_Ic$z" id="7OyG8hrcgea" role="3989C9">
       <property role="2_Ic$$" value="true" />
@@ -13903,12 +13903,6 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5uY69zv6z5n" role="3bR37C">
-          <node concept="3bR9La" id="5uY69zv6z5o" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
-          </node>
-        </node>
         <node concept="1yeLz9" id="3Gj8GGYk00e" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.mpsutil.nodes_tracing.test#8887445761569382511" />
           <property role="3LESm3" value="d19dba79-b97f-4874-b95a-fbe6e7f32607" />
@@ -13936,6 +13930,12 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5uY69zv6z5n" role="3bR37C">
+          <node concept="3bR9La" id="5uY69zv6z5o" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
       </node>

@@ -28,6 +28,7 @@
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
@@ -48,6 +49,7 @@
       <node concept="9PVaO" id="OnnrMNolpf" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images" />
       </node>
     </node>
     <node concept="2SbYGw" id="2fBMM_3XZ4F" role="2SbYGa">
@@ -55,6 +57,7 @@
       <node concept="9PVaO" id="OnnrMNolpi" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images/cextensions/statemachines" />
       </node>
     </node>
     <node concept="2SbYGw" id="2fBMM_3XZ4H" role="2SbYGa">
@@ -62,6 +65,7 @@
       <node concept="9PVaO" id="OnnrMNolpl" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images/concepts" />
       </node>
     </node>
     <node concept="2SbYGw" id="2fBMM_3XZ4J" role="2SbYGa">
@@ -69,6 +73,7 @@
       <node concept="9PVaO" id="OnnrMNolpo" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images/ctooling/helloWolrd" />
       </node>
     </node>
     <node concept="2SbYGw" id="2fBMM_3XZ4L" role="2SbYGa">
@@ -76,6 +81,7 @@
       <node concept="9PVaO" id="OnnrMNolpr" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images/fundamentals" />
       </node>
     </node>
     <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
@@ -83,6 +89,7 @@
       <node concept="9PVaO" id="OnnrMNolpu" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images/processSupport" />
       </node>
     </node>
     <node concept="3SH5f5" id="2fBMM_3XZ4N" role="3SH5Mq">

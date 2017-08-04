@@ -22,6 +22,7 @@ void quick_sort (int *a, int n) {
     quick_sort(a + i, n - i);
 }
 
+/*
 int main (void) {
     int a[] = {4, 65, 2, -31, 0, 99, 2, 83, 782, 1};
     int n = sizeof a / sizeof a[0];
@@ -32,4 +33,4 @@ int main (void) {
     for (i = 0; i < n; i++)
         printf("%d%s", a[i], i == n - 1 ? "\n" : " ");
     return 0;
-}
+}*/

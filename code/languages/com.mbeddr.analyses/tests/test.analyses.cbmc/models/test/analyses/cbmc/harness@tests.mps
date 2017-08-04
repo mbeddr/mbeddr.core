@@ -1874,6 +1874,35 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="Or98vosMwj" role="3cqZAp" />
+        <node concept="3cpWs8" id="Or98vosMFj" role="3cqZAp">
+          <node concept="3cpWsn" id="Or98vosMFk" role="3cpWs9">
+            <property role="TrG5h" value="res6" />
+            <node concept="3uibUv" id="Or98vosMFl" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="Or98vosMFm" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <node concept="37vLTw" id="Or98vosMFn" role="37wK5m">
+                <ref role="3cqZAo" node="2hSqXWTvWjW" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="Or98vosMFo" role="37wK5m">
+                <property role="Xl_RC" value="Assert: b != 30" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="Or98vosMFp" role="3cqZAp">
+          <node concept="2OqwBi" id="Or98vosMFq" role="3vwVQn">
+            <node concept="37vLTw" id="Or98vosMFr" role="2Oq$k0">
+              <ref role="3cqZAo" node="Or98vosMFk" resolve="res6" />
+            </node>
+            <node concept="liA8E" id="Or98vosMFs" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

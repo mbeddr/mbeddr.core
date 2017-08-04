@@ -140,8 +140,8 @@
       <property role="20kJfa" value="operation" />
       <ref role="20lvS9" node="7tOfV2_AEhe" resolve="ILatticeElementCombinator" />
     </node>
-    <node concept="PrWs8" id="2A0WHmBhrxw" role="PzmwI">
-      <ref role="PrY4T" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+    <node concept="PrWs8" id="ADbz7un2lm" role="PzmwI">
+      <ref role="PrY4T" to="hqsm:ADbz7un29O" resolve="ISynthesisedDataType" />
     </node>
   </node>
   <node concept="PlHQZ" id="7tOfV2_Eo$0">

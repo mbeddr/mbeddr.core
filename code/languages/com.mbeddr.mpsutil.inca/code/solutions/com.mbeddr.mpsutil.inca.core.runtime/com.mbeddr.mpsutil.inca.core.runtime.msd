@@ -22,6 +22,7 @@
       <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete_1.6.0.2017.jar" />
       <sourceRoot location="lib/org.eclipse.viatra.query.runtime_1.6.0.2017.jar" />
       <sourceRoot location="lib/org.eclipse.viatra.transformation.evm_1.6.0.2017.jar" />
+      <sourceRoot location="lib/capsule-0.4.0-20170621.132553-7.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
@@ -42,6 +43,7 @@
     <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete_1.6.0.2017.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime_1.6.0.2017.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.viatra.transformation.evm_1.6.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/capsule-0.4.0-20170621.132553-7.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

@@ -202,6 +202,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -256,9 +259,13 @@
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
     </language>
+    <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
+      <concept id="1548352758719910525" name="com.mbeddr.core.modules.gen.structure.ForceCopyIn" flags="ng" index="1Z0Wzs" />
+    </language>
   </registry>
   <node concept="N3F5e" id="5usoWIKp1Ew">
     <property role="TrG5h" value="UnitTestMessages" />
+    <node concept="1Z0Wzs" id="2vBUIEivSEI" role="lGtFl" />
     <node concept="2vmPJd" id="EAKPqgNvnJ" role="N3F5h">
       <property role="TrG5h" value="___testing" />
       <property role="2OOxQR" value="true" />
@@ -464,6 +471,7 @@
   </node>
   <node concept="N3F5e" id="4DjlAm4JRko">
     <property role="TrG5h" value="Unittest_Helper" />
+    <node concept="1Z0Wzs" id="2vBUIEivR1C" role="lGtFl" />
     <node concept="2NXPZ9" id="4DjlAm4JU2D" role="N3F5h">
       <property role="TrG5h" value="empty_1448393283251_12" />
     </node>
@@ -2929,6 +2937,7 @@
   </node>
   <node concept="N3F5e" id="44MAav6D2s">
     <property role="TrG5h" value="Unittest_Helper_Isolated" />
+    <node concept="1Z0Wzs" id="2vBUIEivS2I" role="lGtFl" />
     <node concept="N3Fnx" id="4DjlAm4LY2K" role="N3F5h">
       <property role="TrG5h" value="run_tests" />
       <property role="2OOxQR" value="true" />
@@ -3854,6 +3863,7 @@
   </node>
   <node concept="N3F5e" id="44MAav6Nkc">
     <property role="TrG5h" value="Unittest_Helper_NonIsolated" />
+    <node concept="1Z0Wzs" id="2vBUIEivSCJ" role="lGtFl" />
     <node concept="N3Fnx" id="44MAav6Nkd" role="N3F5h">
       <property role="TrG5h" value="run_tests" />
       <property role="2OOxQR" value="true" />

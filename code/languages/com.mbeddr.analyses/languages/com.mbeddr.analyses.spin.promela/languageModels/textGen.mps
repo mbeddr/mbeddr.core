@@ -1606,5 +1606,18 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="3daAcQbXUZJ">
+    <property role="3GE5qa" value="type" />
+    <ref role="WuzLi" to="ir22:49ppWwAfbw3" resolve="ShortType" />
+    <node concept="11bSqf" id="3daAcQbXUZK" role="11c4hB">
+      <node concept="3clFbS" id="3daAcQbXUZL" role="2VODD2">
+        <node concept="lc7rE" id="3daAcQbXV05" role="3cqZAp">
+          <node concept="la8eA" id="3daAcQbXV0t" role="lcghm">
+            <property role="lacIc" value="short" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
