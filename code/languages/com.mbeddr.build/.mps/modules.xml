@@ -18,7 +18,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" folder="platform" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.rcp/com.mbeddr.rcp.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.templates/com.mbeddr.build.templates.msd" folder="templates" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.xmodel.tests.build/com.mbeddr.xmodel.tests.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.xmodel.build/com.mbeddr.xmodel.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/jetbrains.mps.minimal/jetbrains.mps.minimal.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.core.buildvalidation/test.com.mbeddr.mpsutil.build.msd" folder="build.test" />
     </projectModules>

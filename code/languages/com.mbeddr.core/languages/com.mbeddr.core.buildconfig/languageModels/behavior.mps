@@ -3400,6 +3400,19 @@
       </node>
       <node concept="10P_77" id="3D9$r$Xcjd" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="6eRyKv6J$$i" role="13h7CS">
+      <property role="TrG5h" value="canHandleCrossmodelGeneration" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="6eRyKv6J$$j" role="1B3o_S" />
+      <node concept="10P_77" id="6eRyKv6JEqb" role="3clF45" />
+      <node concept="3clFbS" id="6eRyKv6J$$l" role="3clF47">
+        <node concept="3clFbF" id="6eRyKv6JEr1" role="3cqZAp">
+          <node concept="3clFbT" id="6eRyKv6JEr0" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="34x64NyRAM2">
     <property role="3GE5qa" value="platform" />
@@ -3952,6 +3965,21 @@
         </node>
       </node>
       <node concept="10P_77" id="3D9$r$XcRR" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6eRyKv6JFv7" role="13h7CS">
+      <property role="TrG5h" value="canHandleCrossmodelGeneration" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="6eRyKv6J$$i" resolve="canHandleCrossmodelGeneration" />
+      <node concept="3Tm1VV" id="6eRyKv6JFv8" role="1B3o_S" />
+      <node concept="3clFbS" id="6eRyKv6JFvd" role="3clF47">
+        <node concept="3clFbF" id="6eRyKv6JGHh" role="3cqZAp">
+          <node concept="3clFbT" id="6eRyKv6JGHg" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="6eRyKv6JFve" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="1mfTBng0dAQ">
