@@ -3557,7 +3557,7 @@
           </node>
           <node concept="38rIoz" id="7MMcIPlqfe1" role="38rM$J">
             <property role="38rIoG" value="d" />
-            <property role="38rMdH" value="5.000000" />
+            <property role="38rMdH" value="5.0l" />
             <node concept="3Tqbb2" id="7MMcIPlqfe2" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -3714,7 +3714,7 @@
           </node>
           <node concept="38rIoz" id="7MMcIPlrjmo" role="38rM$J">
             <property role="38rIoG" value="head.next" />
-            <property role="38rMdH" value="((struct recursive_datatypes_node *)NULL)" />
+            <property role="38rMdH" value="((recursive_datatypes_node_t *)NULL)" />
             <node concept="3Tqbb2" id="7MMcIPlrjmp" role="38rYrG">
               <ref role="ehGHo" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
             </node>
@@ -4174,14 +4174,14 @@
           </node>
           <node concept="38rIoz" id="70FTS8keh8F" role="38rM$J">
             <property role="38rIoG" value="floatLiteral" />
-            <property role="38rMdH" value="5.100000e+0f" />
+            <property role="38rMdH" value="5.1f" />
             <node concept="3Tqbb2" id="70FTS8kehkT" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
           </node>
           <node concept="38rIoz" id="70FTS8kehmv" role="38rM$J">
             <property role="38rIoG" value="doubleLiteral" />
-            <property role="38rMdH" value="5.100000e+0" />
+            <property role="38rMdH" value="5.1l" />
             <node concept="3Tqbb2" id="70FTS8kehq7" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -5324,7 +5324,7 @@
           </node>
           <node concept="38rIoz" id="PS2VOYR_Na" role="38rM$J">
             <property role="38rIoG" value="a" />
-            <property role="38rMdH" value="3.141500e+0" />
+            <property role="38rMdH" value="3.1415l" />
             <node concept="3Tqbb2" id="PS2VOYRBlV" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>

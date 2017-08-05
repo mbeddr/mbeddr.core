@@ -1650,7 +1650,7 @@
                 <ref role="3cqZAo" node="1iGXuG00n7H" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5EwdfGVhEuw" role="37wK5m">
-                <property role="Xl_RC" value="division by zero in (double)1 / (1.000000e-1 - (double)x)" />
+                <property role="Xl_RC" value="division by zero in (double)1 / (0.1l - (double)x)" />
               </node>
             </node>
           </node>
@@ -1684,7 +1684,7 @@
                 <ref role="3cqZAo" node="1iGXuG00n7H" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5EwdfGVhF1I" role="37wK5m">
-                <property role="Xl_RC" value="NaN on / in (double)1 / (1.000000e-1 - (double)x)" />
+                <property role="Xl_RC" value="NaN on / in (double)1 / (0.1l - (double)x)" />
               </node>
             </node>
           </node>
