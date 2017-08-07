@@ -191,7 +191,7 @@ task test_mbeddr_ext_ex << {
 
 task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
 
-task test_mbeddr_xmodel(dependsOn: [build_mbeddr_xmodel_ex]) {}
+task test_mbeddr_xmodel(dependsOn: []) {}
 
 task test_mbeddr(dependsOn: [test_mbeddr_core, test_mbeddr_performance, test_mbeddr_cc, test_mbeddr_ext, test_mbeddr_xmodel]) {}
 
