@@ -1908,6 +1908,7 @@
     <property role="TrG5h" value="exportedFlag" />
     <ref role="1XX52x" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     <node concept="1kHk_G" id="7bCENxTSAK4" role="2wV5jI">
+      <property role="ZpkCL" value="true" />
       <ref role="1NtTu8" to="x27k:19a6$uAA0vK" resolve="exported" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
