@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="" namespace="com.mbeddr.core.dataflow.test#4320071007239569355" uuid="d68c94df-4a9f-4124-a76c-4ab2b04bdbf3">
+    <generator namespace="com.mbeddr.core.dataflow.test#6915596127089483079" uuid="d68c94df-4a9f-4124-a76c-4ab2b04bdbf3">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -43,7 +43,7 @@
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="634f797b-d41a-4313-bbef-0ea543b20eff(com.mbeddr.core.dataflow.test)" version="0" />
-        <module reference="d68c94df-4a9f-4124-a76c-4ab2b04bdbf3(com.mbeddr.core.dataflow.test#4320071007239569355)" version="0" />
+        <module reference="d68c94df-4a9f-4124-a76c-4ab2b04bdbf3(com.mbeddr.core.dataflow.test#6915596127089483079)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
         <module reference="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" version="0" />
@@ -62,7 +62,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_after">
           <greater-priority-mapping>
-            <generator generatorUID="d68c94df-4a9f-4124-a76c-4ab2b04bdbf3(com.mbeddr.core.dataflow.test#4320071007239569355)" />
+            <generator generatorUID="d68c94df-4a9f-4124-a76c-4ab2b04bdbf3(com.mbeddr.core.dataflow.test#6915596127089483079)" />
             <external-mapping>
               <mapping-node modelUID="r:a183752a-f0dc-42d9-a6d9-606fc22cec72(com.mbeddr.core.dataflow.test.generator.template.main@generator)" nodeID="4320071007239569356" />
             </external-mapping>

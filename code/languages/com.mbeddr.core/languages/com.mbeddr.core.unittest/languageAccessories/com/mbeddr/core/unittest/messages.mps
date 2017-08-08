@@ -202,6 +202,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -255,6 +258,9 @@
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
+    </language>
+    <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
+      <concept id="1548352758719910525" name="com.mbeddr.core.modules.gen.structure.ForceCopyIn" flags="ng" index="1Z0Wzs" />
     </language>
   </registry>
   <node concept="N3F5e" id="5usoWIKp1Ew">
@@ -424,6 +430,7 @@
         </node>
       </node>
     </node>
+    <node concept="1Z0Wzs" id="1lWQE5E$EbO" role="lGtFl" />
   </node>
   <node concept="N3F5e" id="4DjlAm4JRko">
     <property role="TrG5h" value="Unittest_Helper" />
@@ -2732,6 +2739,7 @@
       <ref role="3GEb4d" to="3y0n:2RIhi0HBZdt" resolve="string" />
     </node>
     <node concept="1CU$1Q" id="2y8cGnjUbe_" role="2OODSX" />
+    <node concept="1Z0Wzs" id="1lWQE5E$GgR" role="lGtFl" />
   </node>
   <node concept="N3F5e" id="44MAav6D2s">
     <property role="TrG5h" value="Unittest_Helper_Isolated" />
@@ -3657,6 +3665,7 @@
     <node concept="3GEVxB" id="44MAav6M0T" role="2OODSX">
       <ref role="3GEb4d" to="ml7g:6LsWDiKmfzg" resolve="unistd" />
     </node>
+    <node concept="1Z0Wzs" id="1lWQE5E$Hi0" role="lGtFl" />
   </node>
   <node concept="N3F5e" id="44MAav6Nkc">
     <property role="TrG5h" value="Unittest_Helper_NonIsolated" />
@@ -4181,6 +4190,7 @@
     <node concept="3GEVxB" id="44MAav6Nnm" role="2OODSX">
       <ref role="3GEb4d" to="ml7g:6LsWDiKmfzg" resolve="unistd" />
     </node>
+    <node concept="1Z0Wzs" id="1lWQE5E$HS2" role="lGtFl" />
   </node>
 </model>
 

@@ -8,7 +8,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="com.mbeddr.core.pointers#5684014141267676678" uuid="14d73e6e-46fd-4344-9b23-aa2a7bf13e0c">
+    <generator namespace="com.mbeddr.core.pointers#6915596127089483081" uuid="14d73e6e-46fd-4344-9b23-aa2a7bf13e0c">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -85,13 +85,13 @@
       <mapping-priorities>
         <mapping-priority-rule kind="before_or_together">
           <greater-priority-mapping>
-            <generator generatorUID="14d73e6e-46fd-4344-9b23-aa2a7bf13e0c(com.mbeddr.core.pointers#5684014141267676678)" />
+            <generator generatorUID="14d73e6e-46fd-4344-9b23-aa2a7bf13e0c(com.mbeddr.core.pointers#6915596127089483081)" />
             <external-mapping>
               <mapping-node modelUID="r:f0608da8-581c-4036-9ab1-efc7bbb5db1c(com.mbeddr.core.pointers.generator.template.main@generator)" nodeID="5684014141267676763" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
-            <generator generatorUID="14d73e6e-46fd-4344-9b23-aa2a7bf13e0c(com.mbeddr.core.pointers#5684014141267676678)" />
+            <generator generatorUID="14d73e6e-46fd-4344-9b23-aa2a7bf13e0c(com.mbeddr.core.pointers#6915596127089483081)" />
             <external-mapping>
               <mapping-node modelUID="r:f0608da8-581c-4036-9ab1-efc7bbb5db1c(com.mbeddr.core.pointers.generator.template.main@generator)" nodeID="5684014141267676763" />
             </external-mapping>

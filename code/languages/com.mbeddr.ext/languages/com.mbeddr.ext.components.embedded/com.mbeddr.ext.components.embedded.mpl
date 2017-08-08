@@ -14,8 +14,8 @@
         </modelRoot>
       </models>
       <external-templates>
-        <generator generatorUID="7f02a174-6bab-4ef7-8a81-22b54a82846a(com.mbeddr.core.embedded#6847490852669402965)" />
         <generator generatorUID="6285e77c-f535-44cc-be5b-103da66e3c19(com.mbeddr.ext.components.gen_nomw#8105003328815413560)" />
+        <generator generatorUID="7f02a174-6bab-4ef7-8a81-22b54a82846a(com.mbeddr.core.embedded#6847490852669402965)" />
       </external-templates>
       <dependencies>
         <dependency reexport="false">bd640b8f-4be4-42b6-8dc0-2c94d1ddf606(com.mbeddr.ext.components.gen_nomw)</dependency>
