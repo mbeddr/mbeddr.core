@@ -122,6 +122,7 @@
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <property id="1184950341882" name="topPriorityGroup" index="3$yP7D" />
         <child id="7830515785164764091" name="condition" index="avys_" />
+        <child id="7473026166162327259" name="dropAttrubuteRule" index="CYSdJ" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
       </concept>
@@ -129,6 +130,9 @@
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
+      </concept>
+      <concept id="7473026166162297915" name="jetbrains.mps.lang.generator.structure.DropAttributeRule" flags="lg" index="CY16f">
+        <reference id="7473026166162297918" name="applicableConcept" index="CY16a" />
       </concept>
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
@@ -676,10 +680,6 @@
         </node>
       </node>
     </node>
-    <node concept="3aamgX" id="7PLQ5$qaDOg" role="3acgRq">
-      <ref role="30HIoZ" to="97v6:3i$cQqpAZ4J" resolve="FunctionContract" />
-      <node concept="b5Tf3" id="7PLQ5$qaN91" role="1lVwrX" />
-    </node>
     <node concept="3aamgX" id="7PLQ5$qaN__" role="3acgRq">
       <ref role="30HIoZ" to="97v6:3i$cQqpAZi1" resolve="Requires" />
       <node concept="b5Tf3" id="7PLQ5$qaO3h" role="1lVwrX" />
@@ -825,6 +825,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="CY16f" id="68RlEeX4K7y" role="CYSdJ">
+      <ref role="CY16a" to="97v6:3i$cQqpAZ4J" resolve="FunctionContract" />
     </node>
   </node>
 </model>
