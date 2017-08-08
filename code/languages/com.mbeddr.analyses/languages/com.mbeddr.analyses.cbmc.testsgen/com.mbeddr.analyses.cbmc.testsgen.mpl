@@ -79,6 +79,7 @@
     <dependency reexport="false">66fa30ae-4b73-4f2b-b199-9a072902ec06(com.mbeddr.analyses.cbmc.testsgen)</dependency>
     <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+    <dependency reexport="false">5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />

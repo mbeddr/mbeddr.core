@@ -17,6 +17,7 @@
     <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
     <dependency reexport="false">a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</dependency>
     <dependency reexport="false">97d24244-51db-4e2e-97fc-7bd73b1f5f40(com.mbeddr.ext.components)</dependency>
+    <dependency reexport="false">5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:b92f861d-0184-446d-b88b-6dcf0e070241:com.mbeddr.mpsutil.intentions" version="0" />
