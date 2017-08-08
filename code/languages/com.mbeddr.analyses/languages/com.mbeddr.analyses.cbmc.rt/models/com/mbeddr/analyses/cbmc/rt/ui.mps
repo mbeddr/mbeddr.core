@@ -2405,9 +2405,9 @@
                                 <node concept="37vLTw" id="2k2dPZH4h9L" role="2Oq$k0">
                                   <ref role="3cqZAo" node="JsaLOcjmZd" resolve="jcbLast100" />
                                 </node>
-                                <node concept="liA8E" id="2k2dPZH4h9M" role="2OqNvi">
-                                  <ref role="37wK5l" to="z60i:~Component.show(boolean):void" resolve="show" />
-                                  <node concept="3clFbT" id="2k2dPZH4h9N" role="37wK5m">
+                                <node concept="liA8E" id="3IsZZlk11AO" role="2OqNvi">
+                                  <ref role="37wK5l" to="dxuu:~JComponent.setVisible(boolean):void" resolve="setVisible" />
+                                  <node concept="3clFbT" id="3IsZZlk12qK" role="37wK5m">
                                     <property role="3clFbU" value="true" />
                                   </node>
                                 </node>
@@ -2418,9 +2418,9 @@
                                 <node concept="37vLTw" id="2k2dPZH4h9Q" role="2Oq$k0">
                                   <ref role="3cqZAo" node="JsaLOcqwkl" resolve="jcbCallReturn" />
                                 </node>
-                                <node concept="liA8E" id="2k2dPZH4h9R" role="2OqNvi">
-                                  <ref role="37wK5l" to="z60i:~Component.show(boolean):void" resolve="show" />
-                                  <node concept="3clFbT" id="2k2dPZH4h9S" role="37wK5m">
+                                <node concept="liA8E" id="3IsZZlk12Jg" role="2OqNvi">
+                                  <ref role="37wK5l" to="dxuu:~JComponent.setVisible(boolean):void" resolve="setVisible" />
+                                  <node concept="3clFbT" id="3IsZZlk12Jh" role="37wK5m">
                                     <property role="3clFbU" value="true" />
                                   </node>
                                 </node>
@@ -2431,9 +2431,9 @@
                                 <node concept="37vLTw" id="2k2dPZH4h9V" role="2Oq$k0">
                                   <ref role="3cqZAo" node="2nqAz1ilKvU" resolve="projectCounterexample" />
                                 </node>
-                                <node concept="liA8E" id="2k2dPZH4h9W" role="2OqNvi">
-                                  <ref role="37wK5l" to="z60i:~Component.show(boolean):void" resolve="show" />
-                                  <node concept="3clFbT" id="2k2dPZH4h9X" role="37wK5m">
+                                <node concept="liA8E" id="3IsZZlk139R" role="2OqNvi">
+                                  <ref role="37wK5l" to="dxuu:~JComponent.setVisible(boolean):void" resolve="setVisible" />
+                                  <node concept="3clFbT" id="3IsZZlk139S" role="37wK5m">
                                     <property role="3clFbU" value="true" />
                                   </node>
                                 </node>
@@ -2455,9 +2455,9 @@
                                   <node concept="37vLTw" id="2k2dPZH4ha5" role="2Oq$k0">
                                     <ref role="3cqZAo" node="JsaLOcjmZd" resolve="jcbLast100" />
                                   </node>
-                                  <node concept="liA8E" id="2k2dPZH4ha6" role="2OqNvi">
-                                    <ref role="37wK5l" to="z60i:~Component.show(boolean):void" resolve="show" />
-                                    <node concept="3clFbT" id="2k2dPZH4ha7" role="37wK5m" />
+                                  <node concept="liA8E" id="3IsZZlk13$G" role="2OqNvi">
+                                    <ref role="37wK5l" to="dxuu:~JComponent.setVisible(boolean):void" resolve="setVisible" />
+                                    <node concept="3clFbT" id="3IsZZlk13$H" role="37wK5m" />
                                   </node>
                                 </node>
                               </node>
@@ -2466,9 +2466,9 @@
                                   <node concept="37vLTw" id="2k2dPZH4haa" role="2Oq$k0">
                                     <ref role="3cqZAo" node="JsaLOcqwkl" resolve="jcbCallReturn" />
                                   </node>
-                                  <node concept="liA8E" id="2k2dPZH4hab" role="2OqNvi">
-                                    <ref role="37wK5l" to="z60i:~Component.show(boolean):void" resolve="show" />
-                                    <node concept="3clFbT" id="2k2dPZH4hac" role="37wK5m" />
+                                  <node concept="liA8E" id="3IsZZlk14vx" role="2OqNvi">
+                                    <ref role="37wK5l" to="dxuu:~JComponent.setVisible(boolean):void" resolve="setVisible" />
+                                    <node concept="3clFbT" id="3IsZZlk14vy" role="37wK5m" />
                                   </node>
                                 </node>
                               </node>
@@ -2477,11 +2477,9 @@
                                   <node concept="37vLTw" id="2k2dPZH4haf" role="2Oq$k0">
                                     <ref role="3cqZAo" node="2nqAz1ilKvU" resolve="projectCounterexample" />
                                   </node>
-                                  <node concept="liA8E" id="2k2dPZH4hag" role="2OqNvi">
-                                    <ref role="37wK5l" to="z60i:~Component.show(boolean):void" resolve="show" />
-                                    <node concept="3clFbT" id="2k2dPZH4hah" role="37wK5m">
-                                      <property role="3clFbU" value="false" />
-                                    </node>
+                                  <node concept="liA8E" id="3IsZZlk14Um" role="2OqNvi">
+                                    <ref role="37wK5l" to="dxuu:~JComponent.setVisible(boolean):void" resolve="setVisible" />
+                                    <node concept="3clFbT" id="3IsZZlk14Un" role="37wK5m" />
                                   </node>
                                 </node>
                               </node>

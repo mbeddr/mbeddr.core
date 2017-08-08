@@ -86,7 +86,6 @@
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
-      <concept id="7785501532031639928" name="jetbrains.mps.baseLanguage.structure.LocalInstanceFieldReference" flags="nn" index="2N2G$s" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -2609,7 +2608,7 @@
         <node concept="17QB3L" id="40PV5hA1E7d" role="3clF45" />
         <node concept="3clFbS" id="40PV5hA1E78" role="3clF47">
           <node concept="3cpWs6" id="40PV5hA1E7a" role="3cqZAp">
-            <node concept="2N2G$s" id="40PV5hA1E7c" role="3cqZAk">
+            <node concept="37vLTw" id="3IsZZlk0TdB" role="3cqZAk">
               <ref role="3cqZAo" node="40PV5hA1DQL" resolve="cmd" />
             </node>
           </node>
@@ -2813,8 +2812,8 @@
         <property role="TrG5h" value="getCommand" />
         <node concept="17QB3L" id="4AQNBfVaxbM" role="3clF45" />
         <node concept="3clFbS" id="4AQNBfVaxbN" role="3clF47">
-          <node concept="3cpWs6" id="4AQNBfVaxbO" role="3cqZAp">
-            <node concept="2N2G$s" id="4AQNBfVaxbP" role="3cqZAk">
+          <node concept="3cpWs6" id="3IsZZlk0QlU" role="3cqZAp">
+            <node concept="37vLTw" id="3IsZZlk0QOx" role="3cqZAk">
               <ref role="3cqZAo" node="4AQNBfVaxby" resolve="cmd" />
             </node>
           </node>
