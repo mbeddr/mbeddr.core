@@ -12,6 +12,7 @@
     <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="hj5x" ref="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" />
     <import index="93wt" ref="r:4af2b6e4-5f55-4700-a23a-ed43656466aa(com.mbeddr.analyses.cbmc.documentation._020_analyses_configurations_examples)" />
+    <import index="t4hs" ref="r:b89fcd5c-b71e-4285-acba-1527201846fe(com.mbeddr.analyses.cbmc.documentation._030_environment_definition_examples)" />
   </imports>
   <registry>
     <language id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect">
@@ -57,6 +58,7 @@
         <property id="126932837435370852" name="email" index="Wq1Bq" />
         <property id="126932837435370851" name="name" index="Wq1Bt" />
       </concept>
+      <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="988357225295489881" name="com.mbeddr.doc.structure.TableOfContents" flags="ng" index="3xmJbL" />
       <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
@@ -137,11 +139,19 @@
         <ref role="1_0j5g" node="7PyP3ULmhob" resolve="_020_CBMC_Ch2_AnalysesConfigurations" />
       </node>
     </node>
+    <node concept="$CzcT" id="5TsycMJBdNE" role="1_0VJ0">
+      <node concept="1_0j5j" id="5TsycMJBdOD" role="$CzcU">
+        <ref role="1_0j5g" node="5TsycMJAQHN" resolve="_030_CBMC_Ch3_EnvironmentDefinition" />
+      </node>
+    </node>
     <node concept="1_0j5j" id="7VkE0BpsriV" role="1DXQ57">
       <ref role="1_0j5g" node="7VkE0Bpq5Fn" resolve="_010_CBMC_Ch1_Intro" />
     </node>
     <node concept="1_0j5j" id="7PyP3ULnjM_" role="1DXQ57">
       <ref role="1_0j5g" node="7PyP3ULmhob" resolve="_020_CBMC_Ch2_AnalysesConfigurations" />
+    </node>
+    <node concept="1_0j5j" id="5TsycMJBdOr" role="1DXQ57">
+      <ref role="1_0j5g" node="5TsycMJAQHN" resolve="_030_CBMC_Ch3_EnvironmentDefinition" />
     </node>
   </node>
   <node concept="2SbYGP" id="5HlC91LJJQk">
@@ -347,7 +357,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="3U8qTcjPlqS" role="19SJt6">
-              <property role="19SUeA" value=" checks assertions which are reachable from the entry point.&#10;&#10;The assertions at C code level can originate from mbeddr assertions or can be generated from higher-level constructs (e.g. ACSL contracts). Options common to all CBMC-based analyses are described in " />
+              <property role="19SUeA" value=" checks assertions which are reachable from the entry point.&#10;&#10;The assertions at C code level can originate from mbeddr assertions or can be generated from higher-level constructs (e.g. ACSL contracts). &#10;&#10;Options common to all CBMC-based analyses are described in " />
             </node>
             <node concept="1_0GAv" id="2uLpxJ0WLwz" role="19SJt6">
               <ref role="1_0GAl" node="3U8qTcjPlsr" resolve="CommonOptions" />
@@ -376,12 +386,77 @@
               </node>
             </node>
             <node concept="19SUe$" id="2uLpxJ0WLou" role="19SJt6">
-              <property role="19SUeA" value=" checks code robustness properties which are reachable from the entry point.&#10;&#10;Robustness problems with the C code can lead to security issues (e.g. buffer overflows), runtime errors (e.g. division by zero) or cases of unspecified behaviour (e.g. overflows). CBMC automatically instruments the code for checking the absence of robustness issues." />
+              <property role="19SUeA" value=" checks code robustness properties which are reachable from the entry point.&#10;&#10;Robustness problems with the C code can lead to security issues (e.g. buffer overflows), runtime errors (e.g. division by zero) or cases of unspecified behaviour (e.g. overflows). CBMC automatically instruments the code for checking the absence of robustness issues.&#10;&#10;Options common to all CBMC-based analyses are described in " />
+            </node>
+            <node concept="1_0GAv" id="5TsycMJAQHy" role="19SJt6">
+              <ref role="1_0GAl" node="3U8qTcjPlsr" resolve="CommonOptions" />
+            </node>
+            <node concept="19SUe$" id="5TsycMJAQHz" role="19SJt6">
+              <property role="19SUeA" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5TsycMJBdIg" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="5TsycMJBdHx" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="5TsycMJBdHy" role="3z_lpI">
+            <node concept="2NCMab" id="5TsycMJBdJ1" role="2NCMaf">
+              <ref role="2NCMaa" to="93wt:7PyP3ULsHMK" resolve="analyses_container_example" />
+            </node>
+            <node concept="2NCMab" id="5TsycMJBdJz" role="2NCMaf">
+              <ref role="2NCMaa" to="93wt:5TsycMJBdJb" resolve="aRobustnessAnalysis" />
             </node>
           </node>
         </node>
       </node>
       <node concept="1_1sxE" id="2uLpxJ0WLgP" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="5TsycMJBdx4" role="1_0VJ0">
+        <property role="TrG5h" value="DecTabCBMCAnalysis" />
+        <property role="1_0VJr" value="DecTab Analyses" />
+        <node concept="3n9NSn" id="5TsycMJBdx5" role="lGtFl">
+          <ref role="3nadW_" to="hj5x:3x0R1LJfFaO" resolve="DecTabCBMCAnalysis" />
+        </node>
+        <node concept="1_0LV8" id="5TsycMJBdx6" role="1_0VJ0">
+          <node concept="19SGf9" id="5TsycMJBdx7" role="1_0LWR">
+            <node concept="19SUe$" id="5TsycMJBdx8" role="19SJt6" />
+            <node concept="2vpllh" id="5TsycMJBdx9" role="19SJt6">
+              <node concept="19SGf9" id="5TsycMJBdxa" role="$DsGW">
+                <node concept="19SUe$" id="5TsycMJBdxb" role="19SJt6">
+                  <property role="19SUeA" value="Summary:" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="5TsycMJBdxc" role="19SJt6">
+              <property role="19SUeA" value=" checks code completeness and consistency of a decision table with respect to a starting point.&#10;&#10;This analysis checks the situations in which not all possible combinations of values are covered (completeness),&#10;when two cells from the table can be active at the same time (consistency) and when cells of a table cannot be reached (activation). &#10;&#10;Options common to all CBMC-based analyses are described in " />
+            </node>
+            <node concept="1_0GAv" id="5TsycMJBdxd" role="19SJt6">
+              <ref role="1_0GAl" node="3U8qTcjPlsr" resolve="CommonOptions" />
+            </node>
+            <node concept="19SUe$" id="5TsycMJBdxe" role="19SJt6">
+              <property role="19SUeA" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5TsycMJBdJH" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="5TsycMJBdL3" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="5TsycMJBdL4" role="3z_lpI">
+            <node concept="2NCMab" id="5TsycMJBdLQ" role="2NCMaf">
+              <ref role="2NCMaa" to="93wt:7PyP3ULsHMK" resolve="analyses_container_example" />
+            </node>
+            <node concept="2NCMab" id="5TsycMJBdM4" role="2NCMaf">
+              <ref role="2NCMaa" to="93wt:5TsycMJBdJ6" resolve="aDecTabAnalysis" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="5TsycMJBdoF" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
       <node concept="1_0VNX" id="3U8qTcjPlsr" role="1_0VJ0">
@@ -551,6 +626,195 @@
       <property role="TrG5h" value="empty_-1" />
     </node>
     <node concept="Wq1Bs" id="7PyP3ULmhoi" role="Wq1Bf">
+      <property role="Wq1Bt" value="Daniel Ratiu" />
+      <property role="Wq1Bq" value="ratiud@googlemail.com" />
+    </node>
+  </node>
+  <node concept="1_1swa" id="5TsycMJAQHN">
+    <property role="yApLE" value="2" />
+    <property role="TrG5h" value="_030_CBMC_Ch3_EnvironmentDefinition" />
+    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
+    <node concept="1mvXsy" id="5TsycMJAQHO" role="1_0VJ0">
+      <property role="TrG5h" value="EnvironmentSpecification" />
+      <property role="1_0VJr" value="Environment Definition" />
+      <node concept="1_1sxE" id="5TsycMJAQQy" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="5TsycMJAQHP" role="1_0VJ0">
+        <property role="TrG5h" value="Harness" />
+        <property role="1_0VJr" value="Harness Section" />
+        <node concept="3n9NSn" id="5TsycMJAQHT" role="lGtFl">
+          <ref role="3nadW_" to="q5q6:7MOa6vKIydb" resolve="HarnessModule" />
+        </node>
+        <node concept="1_0LV8" id="5TsycMJAQQN" role="1_0VJ0">
+          <node concept="19SGf9" id="5TsycMJAQQO" role="1_0LWR">
+            <node concept="19SUe$" id="5TsycMJAQQP" role="19SJt6">
+              <property role="19SUeA" value="A " />
+            </node>
+            <node concept="2vpllh" id="5TsycMJAQQZ" role="19SJt6">
+              <node concept="19SGf9" id="5TsycMJAQR0" role="$DsGW">
+                <node concept="19SUe$" id="5TsycMJAQR1" role="19SJt6">
+                  <property role="19SUeA" value="harness" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="5TsycMJAQR2" role="19SJt6">
+              <property role="19SUeA" value=" is a special statement which can be used to define the environment.&#10;Inside a harness, one can use special DSL constructs (e.g. " />
+            </node>
+            <node concept="28N2ik" id="5TsycMJAQTi" role="19SJt6">
+              <node concept="19SGf9" id="5TsycMJAQTj" role="$DsGW">
+                <node concept="19SUe$" id="5TsycMJAQTk" role="19SJt6">
+                  <property role="19SUeA" value="nondet_assign" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="5TsycMJAQTl" role="19SJt6">
+              <property role="19SUeA" value=", " />
+            </node>
+            <node concept="28N2ik" id="5TsycMJAQTC" role="19SJt6">
+              <node concept="19SGf9" id="5TsycMJAQTD" role="$DsGW">
+                <node concept="19SUe$" id="5TsycMJAQTE" role="19SJt6">
+                  <property role="19SUeA" value="nondet_choice" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="5TsycMJAQTF" role="19SJt6">
+              <property role="19SUeA" value=") as described in the following sections. " />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5TsycMJAQR_" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="1_0LV8" id="5TsycMJAQSK" role="1_0VJ0">
+          <node concept="19SGf9" id="5TsycMJAQSL" role="1_0LWR">
+            <node concept="19SUe$" id="5TsycMJAQSM" role="19SJt6">
+              <property role="19SUeA" value="In the example below we show a simple harness which is used to nondeterministically initialize&#10;three variables: my_x, my_y and my_z." />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5TsycMJAQSl" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="5TsycMJAQRd" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="2NCZwO" id="5TsycMJAQRe" role="3z_lpI">
+            <node concept="2NCMab" id="5TsycMJAQRy" role="2NCMaf">
+              <ref role="2NCMaa" to="t4hs:7PyP3ULMymk" resolve="_010_suv1_harness" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="5TsycMJAQIn" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="5TsycMJAQU6" role="1_0VJ0">
+        <property role="TrG5h" value="NondetVarAssignment" />
+        <property role="1_0VJr" value="Nondeterministic Variables Assignment" />
+        <node concept="3n9NSn" id="5TsycMJAQU7" role="lGtFl">
+          <ref role="3nadW_" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
+        </node>
+        <node concept="1_0LV8" id="5TsycMJAQU8" role="1_0VJ0">
+          <node concept="19SGf9" id="5TsycMJAQU9" role="1_0LWR">
+            <node concept="19SUe$" id="5TsycMJAQUa" role="19SJt6">
+              <property role="19SUeA" value="A " />
+            </node>
+            <node concept="2vpllh" id="5TsycMJAQUb" role="19SJt6">
+              <node concept="19SGf9" id="5TsycMJAQUc" role="$DsGW">
+                <node concept="19SUe$" id="5TsycMJAQUd" role="19SJt6">
+                  <property role="19SUeA" value="nondet_assign" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="5TsycMJAQUe" role="19SJt6">
+              <property role="19SUeA" value=" is used to assign a variable in non-deterministic manner such that &#10;given constraints are fulfilled (i.e. the variable will take all possible values which are allowed by&#10;its type and constraints)." />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5TsycMJAQUn" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="1_0LV8" id="5TsycMJAQUo" role="1_0VJ0">
+          <node concept="19SGf9" id="5TsycMJAQUp" role="1_0LWR">
+            <node concept="19SUe$" id="5TsycMJAQUq" role="19SJt6">
+              <property role="19SUeA" value="In the example below we show a simple harness which is used to nondeterministically initialize&#10;three variables: my_x, my_y and my_z. Variabme my_x can take all possible values allowed by uint8, variable my_y &#10;can take values between 10 and 20, and the variable my_z needs to satisfy more complex constraints. " />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5TsycMJAQUr" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="5TsycMJAQUs" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="2NCZwO" id="5TsycMJAQUt" role="3z_lpI">
+            <node concept="2NCMab" id="5TsycMJAQUu" role="2NCMaf">
+              <ref role="2NCMaa" to="t4hs:7PyP3ULMymk" resolve="_010_suv1_harness" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="5TsycMJAQIz" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="5TsycMJAUvw" role="1_0VJ0">
+        <property role="TrG5h" value="NondetChoice" />
+        <property role="1_0VJr" value="Nondeterministic Choice" />
+        <node concept="3n9NSn" id="5TsycMJAUvx" role="lGtFl">
+          <ref role="3nadW_" to="q5q6:7MOa6vKJ9cQ" resolve="GuardedNonDeterministicChoice" />
+        </node>
+        <node concept="1_0LV8" id="5TsycMJAUvy" role="1_0VJ0">
+          <node concept="19SGf9" id="5TsycMJAUvz" role="1_0LWR">
+            <node concept="19SUe$" id="5TsycMJAUv$" role="19SJt6">
+              <property role="19SUeA" value="A " />
+            </node>
+            <node concept="2vpllh" id="5TsycMJAUv_" role="19SJt6">
+              <node concept="19SGf9" id="5TsycMJAUvA" role="$DsGW">
+                <node concept="19SUe$" id="5TsycMJAUvB" role="19SJt6">
+                  <property role="19SUeA" value="nondet_choice" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="5TsycMJAUvC" role="19SJt6">
+              <property role="19SUeA" value=" contains a set of choices (possibly guarded) which can be taken in a nondeterministic manner. Usually, a " />
+            </node>
+            <node concept="1jUjqm" id="5TsycMJAUyd" role="19SJt6">
+              <node concept="19SGf9" id="5TsycMJAUye" role="$DsGW">
+                <node concept="19SUe$" id="5TsycMJAUyf" role="19SJt6">
+                  <property role="19SUeA" value="nondet_choice" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="5TsycMJAUyg" role="19SJt6">
+              <property role="19SUeA" value=" is used in a for loop for a multi-step verification." />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5TsycMJAUvD" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="5TsycMJAUvI" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="2NCZwO" id="5TsycMJAUvJ" role="3z_lpI">
+            <node concept="2NCMab" id="5TsycMJAUy7" role="2NCMaf">
+              <ref role="2NCMaa" to="t4hs:5TsycMJARPG" resolve="_020_nondet_choice" />
+            </node>
+            <node concept="2NCMab" id="5TsycMJAYDH" role="2NCMaf">
+              <ref role="2NCMaa" to="t4hs:5TsycMJARPH" resolve="multi_step_verification_harness" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="5TsycMJAQIJ" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+    </node>
+    <node concept="1_1sxE" id="5TsycMJAQJU" role="1_0VJ0">
+      <property role="TrG5h" value="empty_-1" />
+    </node>
+    <node concept="Wq1Bs" id="5TsycMJAQJV" role="Wq1Bf">
       <property role="Wq1Bt" value="Daniel Ratiu" />
       <property role="Wq1Bq" value="ratiud@googlemail.com" />
     </node>
