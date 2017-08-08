@@ -178,6 +178,7 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
@@ -425,6 +426,13 @@
                 </node>
                 <node concept="Xl_RD" id="5pNvrIDclrT" role="37wK5m">
                   <property role="Xl_RC" value="Major error: 'lastOutputModel' is null!!!" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="68RlEeX1pRL" role="3cqZAp">
+              <node concept="2ShNRf" id="68RlEeX1q6t" role="3cqZAk">
+                <node concept="Tc6Ow" id="68RlEeX1rhv" role="2ShVmc">
+                  <node concept="3Tqbb2" id="68RlEeX1rKD" role="HW$YZ" />
                 </node>
               </node>
             </node>
