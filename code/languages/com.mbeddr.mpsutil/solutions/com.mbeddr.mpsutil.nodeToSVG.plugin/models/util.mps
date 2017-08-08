@@ -82,6 +82,10 @@
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -382,6 +386,18 @@
       <node concept="10Nm6u" id="2k2f42FzkZ_" role="33vP2m" />
     </node>
     <node concept="2tJIrI" id="6Pe8Sabmir8" role="jymVt" />
+    <node concept="Wx3nA" id="2k2f42G3FDP" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="singleton" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="2k2f42G3ADS" role="1B3o_S" />
+      <node concept="10Nm6u" id="2k2f42G3LtX" role="33vP2m" />
+      <node concept="3uibUv" id="2k2f42G3K7h" role="1tU5fm">
+        <ref role="3uigEE" node="6Pe8SaaZbkO" resolve="NodeToSVG_" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2k2f42G3yeV" role="jymVt" />
     <node concept="3clFbW" id="6Pe8Sabmvl9" role="jymVt">
       <node concept="3cqZAl" id="6Pe8Sabmvla" role="3clF45" />
       <node concept="3clFbS" id="6Pe8Sabmvlc" role="3clF47">
@@ -527,6 +543,46 @@
       <node concept="3Tm1VV" id="6Pe8SabmtJ$" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="6Pe8Sabmsa4" role="jymVt" />
+    <node concept="3clFb_" id="2k2f42G3WfL" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getInstance" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2k2f42G3WfO" role="3clF47">
+        <node concept="3clFbJ" id="2k2f42G40Ni" role="3cqZAp">
+          <node concept="3clFbC" id="2k2f42G41B3" role="3clFbw">
+            <node concept="10Nm6u" id="2k2f42G42cs" role="3uHU7w" />
+            <node concept="37vLTw" id="2k2f42G40XI" role="3uHU7B">
+              <ref role="3cqZAo" node="2k2f42G3FDP" resolve="singleton" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="2k2f42G40Nk" role="3clFbx">
+            <node concept="3clFbF" id="2k2f42G42Ua" role="3cqZAp">
+              <node concept="37vLTI" id="2k2f42G43yg" role="3clFbG">
+                <node concept="2ShNRf" id="2k2f42G44cI" role="37vLTx">
+                  <node concept="1pGfFk" id="2k2f42G447F" role="2ShVmc">
+                    <ref role="37wK5l" node="6Pe8Sabmvl9" resolve="NodeToSVG_" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2k2f42G42U9" role="37vLTJ">
+                  <ref role="3cqZAo" node="2k2f42G3FDP" resolve="singleton" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2k2f42G45jX" role="3cqZAp">
+          <node concept="37vLTw" id="2k2f42G45Sp" role="3cqZAk">
+            <ref role="3cqZAo" node="2k2f42G3FDP" resolve="singleton" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2k2f42G3QtO" role="1B3o_S" />
+      <node concept="3uibUv" id="2k2f42G3UYc" role="3clF45">
+        <ref role="3uigEE" node="6Pe8SaaZbkO" resolve="NodeToSVG_" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="2k2f42F_Pcl" role="jymVt" />
     <node concept="3clFb_" id="6Pe8SaaZtK7" role="jymVt">
       <property role="1EzhhJ" value="false" />
