@@ -36,7 +36,6 @@
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -1220,6 +1219,25 @@
           </node>
         </node>
         <node concept="3clFbH" id="5Lex0lo5gF6" role="3cqZAp" />
+        <node concept="3cpWs8" id="Xy7PSdc_6p" role="3cqZAp">
+          <node concept="3cpWsn" id="Xy7PSdc_6q" role="3cpWs9">
+            <property role="TrG5h" value="view" />
+            <node concept="3uibUv" id="Xy7PSdc_Uj" role="1tU5fm">
+              <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
+            </node>
+            <node concept="2OqwBi" id="Xy7PSdc_nG" role="33vP2m">
+              <node concept="2OqwBi" id="Xy7PSdc_nH" role="2Oq$k0">
+                <node concept="2WthIp" id="Xy7PSdc_nI" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="Xy7PSdc_nJ" role="2OqNvi">
+                  <ref role="2WH_rO" node="4JBT2R9Uvdi" resolve="viewManager" />
+                </node>
+              </node>
+              <node concept="liA8E" id="Xy7PSdc_nK" role="2OqNvi">
+                <ref role="37wK5l" to="upej:~IViewManager.getView():javax.swing.JPanel" resolve="getView" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5Lex0lo6wdO" role="3cqZAp">
           <node concept="2OqwBi" id="5Lex0lo6xzb" role="3clFbG">
             <node concept="2OqwBi" id="5Lex0lo6wBM" role="2Oq$k0">
@@ -1254,17 +1272,19 @@
                 <ref role="1PxDUh" to="z60i:~BorderLayout" resolve="BorderLayout" />
                 <ref role="3cqZAo" to="z60i:~BorderLayout.CENTER" resolve="CENTER" />
               </node>
-              <node concept="2OqwBi" id="5Lex0lo6vz8" role="37wK5m">
-                <node concept="2OqwBi" id="5Lex0lo6vz9" role="2Oq$k0">
-                  <node concept="2WthIp" id="5Lex0lo6vza" role="2Oq$k0" />
-                  <node concept="2BZ7hE" id="5Lex0lo6vzb" role="2OqNvi">
-                    <ref role="2WH_rO" node="4JBT2R9Uvdi" resolve="viewManager" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="5Lex0lo6vzc" role="2OqNvi">
-                  <ref role="37wK5l" to="upej:~IViewManager.getView():javax.swing.JPanel" resolve="getView" />
-                </node>
+              <node concept="37vLTw" id="Xy7PSdcAjC" role="37wK5m">
+                <ref role="3cqZAo" node="Xy7PSdc_6q" resolve="view" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="Xy7PSdcAC9" role="3cqZAp">
+          <node concept="2OqwBi" id="Xy7PSdcB5K" role="3clFbG">
+            <node concept="37vLTw" id="Xy7PSdcAC7" role="2Oq$k0">
+              <ref role="3cqZAo" node="Xy7PSdc_6q" resolve="view" />
+            </node>
+            <node concept="liA8E" id="Xy7PSdcCxZ" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.requestFocus():void" resolve="requestFocus" />
             </node>
           </node>
         </node>
@@ -2419,20 +2439,6 @@
       <node concept="3clFbS" id="4iv9KfRpehY" role="3clF47">
         <node concept="3clFbJ" id="2WKsGdMmWAZ" role="3cqZAp">
           <node concept="3clFbS" id="2WKsGdMmWB1" role="3clFbx">
-            <node concept="3clFbF" id="2WKsGdNfkzC" role="3cqZAp">
-              <node concept="2OqwBi" id="2WKsGdNfkz_" role="3clFbG">
-                <node concept="10M0yZ" id="2WKsGdNfkzA" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                </node>
-                <node concept="liA8E" id="2WKsGdNfkzB" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="Xl_RD" id="2WKsGdNfkRh" role="37wK5m">
-                    <property role="Xl_RC" value="DEBUG: item already contained in history - not inserting" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="2WKsGdMnbYY" role="3cqZAp">
               <node concept="37vLTI" id="2WKsGdMnfUu" role="3clFbG">
                 <node concept="2OqwBi" id="2WKsGdMnikP" role="37vLTx">
