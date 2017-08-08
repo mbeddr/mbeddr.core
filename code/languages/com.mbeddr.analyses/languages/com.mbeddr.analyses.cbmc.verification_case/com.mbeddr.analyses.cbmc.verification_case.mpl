@@ -2,7 +2,7 @@
 <language namespace="com.mbeddr.analyses.cbmc.verification_case" uuid="dce6c938-92a0-4619-a1d8-62fdb4b872e8" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
-      <sourceRoot path="${module}/languageModels" />
+      <sourceRoot location="languageModels" />
     </modelRoot>
   </models>
   <accessoryModels />
