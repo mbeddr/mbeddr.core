@@ -93,6 +93,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -726,6 +727,14 @@
             <node concept="3__QtB" id="395kdzFr3Ey" role="2Oq$k0" />
             <node concept="3TrEf2" id="395kdzFr3Jh" role="2OqNvi">
               <ref role="3Tt5mk" to="hba4:7xRvYDMDfZo" resolve="body" />
+            </node>
+          </node>
+        </node>
+        <node concept="3_J$rt" id="3IsZZljTwHP" role="3cqZAp">
+          <node concept="3_IKw2" id="3IsZZljTwLj" role="3_JbIs">
+            <node concept="2OqwBi" id="3IsZZljTwT4" role="3_I9Fq">
+              <node concept="3__QtB" id="3IsZZljTwLM" role="2Oq$k0" />
+              <node concept="1mfA1w" id="3IsZZljTx8m" role="2OqNvi" />
             </node>
           </node>
         </node>
