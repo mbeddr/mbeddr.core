@@ -10,6 +10,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
@@ -257,6 +258,16 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA" />
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
+        <child id="2667874559098216723" name="text" index="3HnX3l" />
+      </concept>
+    </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1216860049633" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextType" flags="in" index="1iwH7U" />
       <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
@@ -335,21 +346,6 @@
       </node>
       <node concept="NWlO9" id="15d7XIo_3VN" role="lGtFl">
         <property role="NWlVz" value="Is the make process active?" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="15d7XIo_3k$" role="jymVt" />
-    <node concept="Wx3nA" id="7Z4mKjkuL6D" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="DEBUG" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="7Z4mKjkuKfs" role="1B3o_S" />
-      <node concept="10P_77" id="7Z4mKjkuL6_" role="1tU5fm" />
-      <node concept="3clFbT" id="7Z4mKjkuMh3" role="33vP2m">
-        <property role="3clFbU" value="false" />
-      </node>
-      <node concept="NWlO9" id="505H3_WOIav" role="lGtFl">
-        <property role="NWlVz" value="Should we debug?" />
       </node>
     </node>
     <node concept="2tJIrI" id="47xghtTLgLK" role="jymVt" />
@@ -1717,6 +1713,11 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="68RlEeX1ye$" role="3cqZAp">
+          <node concept="3SKdUq" id="68RlEeX1yeA" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: this code looks strange" />
+          </node>
+        </node>
         <node concept="3cpWs6" id="6h7pCbA3ZH5" role="3cqZAp">
           <node concept="2OqwBi" id="6h7pCbA4d3C" role="3cqZAk">
             <node concept="2OqwBi" id="6h7pCbA43SK" role="2Oq$k0">
@@ -1759,6 +1760,14 @@
       <node concept="NWlO9" id="6h7pCbA4k$Y" role="lGtFl">
         <property role="NWlVz" value="Returns a sequence with full path names of C files generated from all models of a solution." />
       </node>
+      <node concept="P$JXv" id="68RlEeX1xLl" role="lGtFl">
+        <node concept="TZ5HI" id="68RlEeX1xLm" role="3nqlJM">
+          <node concept="TZ5HA" id="68RlEeX1xLn" role="3HnX3l" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="68RlEeX1xLo" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
     </node>
     <node concept="2tJIrI" id="5jEg_CuwdUR" role="jymVt" />
     <node concept="2YIFZL" id="4EriiVv$nkk" role="jymVt">
@@ -1774,7 +1783,6 @@
             <node concept="A3Dl8" id="6h7pCbAnjzZ" role="1tU5fm">
               <node concept="17QB3L" id="6h7pCbAnj$2" role="A3Ik2" />
             </node>
-            <node concept="10Nm6u" id="40ZXlOnIK1i" role="33vP2m" />
           </node>
         </node>
         <node concept="3kxDZ6" id="40ZXlOnIKEV" role="3cqZAp">
@@ -1917,7 +1925,6 @@
           <node concept="3cpWsn" id="PjgLhiuQ6i" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="17QB3L" id="PjgLhiuW_s" role="1tU5fm" />
-            <node concept="10Nm6u" id="PjgLhiv2dv" role="33vP2m" />
           </node>
         </node>
         <node concept="3kxDZ6" id="40ZXlOnILAD" role="3cqZAp">
