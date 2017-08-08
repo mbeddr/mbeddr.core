@@ -312,9 +312,6 @@
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
-      <concept id="1226566855640" name="jetbrains.mps.baseLanguage.collections.structure.AddSetElementOperation" flags="nn" index="2l5eF5">
-        <child id="1226567214363" name="argument" index="2l6Ag6" />
-      </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -786,13 +783,13 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="33$Pd7D7LMf" role="3cqZAp">
-          <node concept="2OqwBi" id="33$Pd7D7NAj" role="3clFbG">
-            <node concept="37vLTw" id="33$Pd7D7LMd" role="2Oq$k0">
+        <node concept="3clFbF" id="3IsZZljQbOn" role="3cqZAp">
+          <node concept="2OqwBi" id="3IsZZljQds0" role="3clFbG">
+            <node concept="37vLTw" id="3IsZZljQbOl" role="2Oq$k0">
               <ref role="3cqZAo" node="33$Pd7D7l7V" resolve="alreadySavedVectors" />
             </node>
-            <node concept="2l5eF5" id="33$Pd7D7PfB" role="2OqNvi">
-              <node concept="37vLTw" id="33$Pd7D7Q2e" role="2l6Ag6">
+            <node concept="TSZUe" id="3IsZZljQgRC" role="2OqNvi">
+              <node concept="37vLTw" id="3IsZZljQhKx" role="25WWJ7">
                 <ref role="3cqZAo" node="33$Pd7D7k8w" resolve="inputs2Values" />
               </node>
             </node>
