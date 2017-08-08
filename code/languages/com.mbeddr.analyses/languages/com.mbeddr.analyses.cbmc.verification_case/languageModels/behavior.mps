@@ -737,8 +737,8 @@
                       <property role="Xl_RC" value="1" />
                     </node>
                   </node>
-                  <node concept="1shVQo" id="XYEPTirUsX" role="ccFIB">
-                    <ref role="1shVQp" to="mj1l:68dbbc7rHp$" resolve="UnsignedIntegerLiteral" />
+                  <node concept="1shVQo" id="3IsZZlkblam" role="ccFIB">
+                    <ref role="1shVQp" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                   </node>
                 </node>
                 <node concept="1snrkl" id="XYEPTirUBC" role="1sne05">
@@ -755,8 +755,8 @@
                       <property role="Xl_RC" value="1" />
                     </node>
                   </node>
-                  <node concept="1shVQo" id="XYEPTirUKy" role="ccFIB">
-                    <ref role="1shVQp" to="mj1l:68dbbc7rHp$" resolve="UnsignedIntegerLiteral" />
+                  <node concept="1shVQo" id="3IsZZlkblaJ" role="ccFIB">
+                    <ref role="1shVQp" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                   </node>
                 </node>
                 <node concept="1snrkl" id="XYEPTirUKz" role="1sne05">
