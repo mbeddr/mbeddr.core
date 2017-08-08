@@ -158,7 +158,6 @@
         <child id="1170075728144" name="expression" index="1HWFw0" />
         <child id="1170075736412" name="block" index="1HWHxc" />
       </concept>
-      <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -403,7 +402,7 @@
               <ref role="Rm8GQ" to="rbq9:6oOIJNsBXl4" resolve="PROPERTY_HOLDS" />
               <ref role="1Px2BO" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
             </node>
-            <node concept="3P9mCS" id="4arT0cnsjYs" role="3uHU7B">
+            <node concept="1rXfSq" id="3IsZZljEszU" role="3uHU7B">
               <ref role="37wK5l" node="4arT0cnsjY0" resolve="getResultKind" />
             </node>
           </node>
@@ -418,7 +417,7 @@
       <node concept="3clFbS" id="4arT0cnsjYx" role="3clF47">
         <node concept="3clFbF" id="4arT0cnsjYy" role="3cqZAp">
           <node concept="3clFbC" id="4arT0cnsjYz" role="3clFbG">
-            <node concept="3P9mCS" id="4arT0cnsjY_" role="3uHU7B">
+            <node concept="1rXfSq" id="3IsZZljEszV" role="3uHU7B">
               <ref role="37wK5l" node="4arT0cnsjY0" resolve="getResultKind" />
             </node>
             <node concept="Rm8GO" id="4arT0cnsjY$" role="3uHU7w">
