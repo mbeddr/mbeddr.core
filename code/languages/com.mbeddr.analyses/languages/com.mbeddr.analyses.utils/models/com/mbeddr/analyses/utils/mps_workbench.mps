@@ -41,10 +41,14 @@
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
+      <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
+        <child id="1182160096073" name="cls" index="YeSDq" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534604311" name="jetbrains.mps.baseLanguage.structure.ByteType" flags="in" index="10PrrI" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
@@ -103,6 +107,7 @@
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
@@ -118,7 +123,16 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
+        <reference id="1170346070688" name="classifier" index="1Y3XeK" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -412,8 +426,39 @@
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
       <node concept="3clFbS" id="5xg5HONnvpo" role="3clF47">
-        <node concept="3clFbF" id="5xg5HONnvpq" role="3cqZAp">
-          <node concept="10Nm6u" id="5xg5HONnvpp" role="3clFbG" />
+        <node concept="3clFbF" id="68RlEeX1Af3" role="3cqZAp">
+          <node concept="2ShNRf" id="68RlEeX1AeZ" role="3clFbG">
+            <node concept="YeOm9" id="68RlEeX1NWt" role="2ShVmc">
+              <node concept="1Y3b0j" id="68RlEeX1NWw" role="YeSDq">
+                <property role="2bfB8j" value="true" />
+                <ref role="1Y3XeK" to="guwi:~OutputStream" resolve="OutputStream" />
+                <ref role="37wK5l" to="guwi:~OutputStream.&lt;init&gt;()" resolve="OutputStream" />
+                <node concept="3Tm1VV" id="68RlEeX1NWx" role="1B3o_S" />
+                <node concept="3clFb_" id="68RlEeX1NW$" role="jymVt">
+                  <property role="1EzhhJ" value="false" />
+                  <property role="TrG5h" value="write" />
+                  <property role="DiZV1" value="false" />
+                  <property role="od$2w" value="false" />
+                  <node concept="3Tm1VV" id="68RlEeX1NW_" role="1B3o_S" />
+                  <node concept="3cqZAl" id="68RlEeX1NWB" role="3clF45" />
+                  <node concept="37vLTG" id="68RlEeX1NWC" role="3clF46">
+                    <property role="TrG5h" value="p0" />
+                    <node concept="10Oyi0" id="68RlEeX1NWD" role="1tU5fm" />
+                  </node>
+                  <node concept="3uibUv" id="68RlEeX1NWE" role="Sfmx6">
+                    <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                  </node>
+                  <node concept="3clFbS" id="68RlEeX1NWF" role="3clF47">
+                    <node concept="3SKdUt" id="68RlEeX1Oqb" role="3cqZAp">
+                      <node concept="3SKdUq" id="68RlEeX1Oqc" role="3SKWNk">
+                        <property role="3SKdUp" value="do nothing" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
