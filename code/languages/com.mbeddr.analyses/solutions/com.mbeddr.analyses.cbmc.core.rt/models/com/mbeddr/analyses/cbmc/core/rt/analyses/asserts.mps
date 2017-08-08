@@ -825,9 +825,6 @@
           <node concept="3cpWsn" id="7MMcIPlmLcF" role="3cpWs9">
             <property role="TrG5h" value="msg" />
             <node concept="17QB3L" id="7MMcIPlmLcA" role="1tU5fm" />
-            <node concept="Xl_RD" id="46evrC8dZF7" role="33vP2m">
-              <property role="Xl_RC" value="" />
-            </node>
           </node>
         </node>
         <node concept="3kxDZ6" id="5EwdfGVj_ZL" role="3cqZAp">
