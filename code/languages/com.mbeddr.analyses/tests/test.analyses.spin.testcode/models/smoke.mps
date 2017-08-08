@@ -34,7 +34,6 @@
         <reference id="2390327893064270003" name="literal" index="33SuoY" />
       </concept>
       <concept id="2390327893064382862" name="com.mbeddr.analyses.spin.promela.structure.ChanDeclaration" flags="ng" index="33SPW3">
-        <property id="2390327893064382872" name="size" index="33SPWl" />
         <child id="682261312585237108" name="channelSize" index="25PmdS" />
         <child id="2390327893064382921" name="types" index="33SPX4" />
       </concept>
@@ -742,7 +741,6 @@
     </node>
     <node concept="33SPW3" id="7Hmzdkr7XB3" role="N3F5h">
       <property role="TrG5h" value="c" />
-      <property role="33SPWl" value="1" />
       <node concept="2D2Mot" id="7Hmzdkr7XDg" role="33SPX4">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
@@ -794,7 +792,6 @@
     <property role="TrG5h" value="sender_receiver" />
     <node concept="33SPW3" id="7Hmzdkr8RxM" role="N3F5h">
       <property role="TrG5h" value="c" />
-      <property role="33SPWl" value="1" />
       <node concept="2D2Mot" id="7Hmzdkr8R_b" role="33SPX4">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
@@ -914,7 +911,6 @@
     </node>
     <node concept="33SPW3" id="7Hmzdkr8PRr" role="N3F5h">
       <property role="TrG5h" value="toS" />
-      <property role="33SPWl" value="2" />
       <node concept="2CGWmI" id="7Hmzdkr8Q3q" role="33SPX4">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
@@ -929,7 +925,6 @@
     </node>
     <node concept="33SPW3" id="7Hmzdkr8QiO" role="N3F5h">
       <property role="TrG5h" value="toR" />
-      <property role="33SPWl" value="2" />
       <node concept="2CGWmI" id="7Hmzdkr8QuT" role="33SPX4">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
