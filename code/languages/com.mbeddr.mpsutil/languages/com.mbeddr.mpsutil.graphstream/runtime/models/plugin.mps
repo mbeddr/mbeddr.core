@@ -33,6 +33,8 @@
     <import index="fblp" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.graphstream.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
+    <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
+    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" implicit="true" />
@@ -174,6 +176,7 @@
         <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
         <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
+      <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -203,6 +206,7 @@
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <child id="1095933932569" name="implementedInterface" index="EKbjA" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -335,6 +339,7 @@
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
@@ -2082,6 +2087,25 @@
             <ref role="3cqZAo" node="64_1OWexi$v" resolve="graphRenderer" />
           </node>
         </node>
+        <node concept="3clFbH" id="6I5RWbd4jPh" role="3cqZAp" />
+        <node concept="3clFbF" id="6I5RWbd4aPn" role="3cqZAp">
+          <node concept="2OqwBi" id="6I5RWbd4bsd" role="3clFbG">
+            <node concept="Xjq3P" id="6I5RWbd4aPl" role="2Oq$k0" />
+            <node concept="liA8E" id="6I5RWbd4ehc" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Component.addMouseMotionListener(java.awt.event.MouseMotionListener):void" resolve="addMouseMotionListener" />
+              <node concept="Xjq3P" id="6I5RWbd4eRf" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6I5RWbd4fFf" role="3cqZAp">
+          <node concept="2OqwBi" id="6I5RWbd4gkZ" role="3clFbG">
+            <node concept="Xjq3P" id="6I5RWbd4fFd" role="2Oq$k0" />
+            <node concept="liA8E" id="6I5RWbd4jcX" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.addAncestorListener(javax.swing.event.AncestorListener):void" resolve="addAncestorListener" />
+              <node concept="Xjq3P" id="6I5RWbd4jMO" role="37wK5m" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="64_1OWexiy6" role="3clF46">
         <property role="TrG5h" value="viewer" />
@@ -2120,7 +2144,7 @@
       <node concept="3clFbS" id="64_1OWexjgE" role="3clF47">
         <node concept="3SKdUt" id="64_1OWe$NDA" role="3cqZAp">
           <node concept="3SKdUq" id="64_1OWe$NDC" role="3SKWNk">
-            <property role="3SKdUp" value="bugfix for MPS problem. if paintComponent is called in the context of a tool-window-repaint, the drawing is erased. call to repaint() fixes this problem." />
+            <property role="3SKdUp" value="if paintComponent is called in the context of a tool-window-repaint, the drawing is erased. call to repaint() fixes this problem." />
           </node>
         </node>
         <node concept="3cpWs8" id="64_1OWezR6r" role="3cqZAp">
@@ -2218,10 +2242,198 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="64_1OWexWPa" role="jymVt" />
+    <node concept="2tJIrI" id="6I5RWbd3QGz" role="jymVt" />
+    <node concept="3clFb_" id="6I5RWbd3OdC" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="mouseDragged" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="6I5RWbd3OdD" role="1B3o_S" />
+      <node concept="3cqZAl" id="6I5RWbd3OdF" role="3clF45" />
+      <node concept="37vLTG" id="6I5RWbd3OdG" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="6I5RWbd3OdH" role="1tU5fm">
+          <ref role="3uigEE" to="hyam:~MouseEvent" resolve="MouseEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6I5RWbd3OdM" role="3clF47" />
+      <node concept="2AHcQZ" id="6I5RWbd3OdN" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6I5RWbd3P3S" role="jymVt" />
+    <node concept="3clFb_" id="6I5RWbd3OdO" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="mouseMoved" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="6I5RWbd3OdP" role="1B3o_S" />
+      <node concept="3cqZAl" id="6I5RWbd3OdR" role="3clF45" />
+      <node concept="37vLTG" id="6I5RWbd3OdS" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="6I5RWbd3OdT" role="1tU5fm">
+          <ref role="3uigEE" to="hyam:~MouseEvent" resolve="MouseEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6I5RWbd3OdY" role="3clF47">
+        <node concept="3SKdUt" id="6I5RWbd3PVx" role="3cqZAp">
+          <node concept="3SKdUq" id="6I5RWbd3PVy" role="3SKWNk">
+            <property role="3SKdUp" value="the camera does not seem to be in synch after the view lost the focus in MPS. maybe related to repaint() problem above." />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6I5RWbd40fJ" role="3cqZAp">
+          <node concept="3SKdUq" id="6I5RWbd40fL" role="3SKWNk">
+            <property role="3SKdUp" value="move the camera to fix the problem" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6I5RWbd40YT" role="3cqZAp">
+          <node concept="3clFbS" id="6I5RWbd40YV" role="3clFbx">
+            <node concept="3clFbF" id="6I5RWbd3U0Y" role="3cqZAp">
+              <node concept="2OqwBi" id="6I5RWbd3Udo" role="3clFbG">
+                <node concept="1rXfSq" id="6I5RWbd3U0W" role="2Oq$k0">
+                  <ref role="37wK5l" to="tirk:~DefaultView.getCamera():org.graphstream.ui.view.Camera" resolve="getCamera" />
+                </node>
+                <node concept="liA8E" id="6I5RWbd3UEq" role="2OqNvi">
+                  <ref role="37wK5l" to="xyqd:~Camera.setViewPercent(double):void" resolve="setViewPercent" />
+                  <node concept="2OqwBi" id="6I5RWbd3WKP" role="37wK5m">
+                    <node concept="1rXfSq" id="6I5RWbd3V__" role="2Oq$k0">
+                      <ref role="37wK5l" to="tirk:~DefaultView.getCamera():org.graphstream.ui.view.Camera" resolve="getCamera" />
+                    </node>
+                    <node concept="liA8E" id="6I5RWbd3X94" role="2OqNvi">
+                      <ref role="37wK5l" to="xyqd:~Camera.getViewPercent():double" resolve="getViewPercent" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="6I5RWbd43_z" role="3clFbw">
+            <node concept="1rXfSq" id="6I5RWbd43__" role="3fr31v">
+              <ref role="37wK5l" to="z60i:~Component.hasFocus():boolean" resolve="hasFocus" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6I5RWbd3OdZ" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6I5RWbd3O8N" role="jymVt" />
+    <node concept="3clFb_" id="6I5RWbd3Od7" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="ancestorAdded" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="6I5RWbd3Od8" role="1B3o_S" />
+      <node concept="3cqZAl" id="6I5RWbd3Oda" role="3clF45" />
+      <node concept="37vLTG" id="6I5RWbd3Odb" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="6I5RWbd3Odc" role="1tU5fm">
+          <ref role="3uigEE" to="gsia:~AncestorEvent" resolve="AncestorEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6I5RWbd3Odg" role="3clF47">
+        <node concept="3SKdUt" id="6I5RWbd44L8" role="3cqZAp">
+          <node concept="3SKdUq" id="6I5RWbd44L9" role="3SKWNk">
+            <property role="3SKdUp" value="due to possible camera movement after mouse move (see above) AutoFitView may be disabled before drawing is rendered for the first time." />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6I5RWbd48KD" role="3cqZAp">
+          <node concept="3SKdUq" id="6I5RWbd48KF" role="3SKWNk">
+            <property role="3SKdUp" value="this causes wrong positioning at startup. normally it should be enough to set AutoFitView in the &quot;ancestorAdded&quot; method, but for MPS" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6I5RWbd49v8" role="3cqZAp">
+          <node concept="3SKdUq" id="6I5RWbd49va" role="3SKWNk">
+            <property role="3SKdUp" value="we also have to issue it for &quot;ancestorMove&quot;. This causes auto-fit after resize (not considered harmful atm)" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6I5RWbd46Tc" role="3cqZAp">
+          <node concept="2OqwBi" id="6I5RWbd474s" role="3clFbG">
+            <node concept="1rXfSq" id="6I5RWbd46Ta" role="2Oq$k0">
+              <ref role="37wK5l" to="tirk:~DefaultView.getCamera():org.graphstream.ui.view.Camera" resolve="getCamera" />
+            </node>
+            <node concept="liA8E" id="6I5RWbd47qL" role="2OqNvi">
+              <ref role="37wK5l" to="xyqd:~Camera.setAutoFitView(boolean):void" resolve="setAutoFitView" />
+              <node concept="3clFbT" id="6I5RWbd47SM" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6I5RWbd3Odh" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6I5RWbd3OTu" role="jymVt" />
+    <node concept="3clFb_" id="6I5RWbd3Odi" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="ancestorRemoved" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="6I5RWbd3Odj" role="1B3o_S" />
+      <node concept="3cqZAl" id="6I5RWbd3Odl" role="3clF45" />
+      <node concept="37vLTG" id="6I5RWbd3Odm" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="6I5RWbd3Odn" role="1tU5fm">
+          <ref role="3uigEE" to="gsia:~AncestorEvent" resolve="AncestorEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6I5RWbd3Odr" role="3clF47" />
+      <node concept="2AHcQZ" id="6I5RWbd3Ods" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6I5RWbd3OJ5" role="jymVt" />
+    <node concept="3clFb_" id="6I5RWbd3Odt" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="ancestorMoved" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="6I5RWbd3Odu" role="1B3o_S" />
+      <node concept="3cqZAl" id="6I5RWbd3Odw" role="3clF45" />
+      <node concept="37vLTG" id="6I5RWbd3Odx" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="6I5RWbd3Ody" role="1tU5fm">
+          <ref role="3uigEE" to="gsia:~AncestorEvent" resolve="AncestorEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6I5RWbd3OdA" role="3clF47">
+        <node concept="3clFbF" id="6I5RWbd47TF" role="3cqZAp">
+          <node concept="2OqwBi" id="6I5RWbd47TG" role="3clFbG">
+            <node concept="1rXfSq" id="6I5RWbd47TH" role="2Oq$k0">
+              <ref role="37wK5l" to="tirk:~DefaultView.getCamera():org.graphstream.ui.view.Camera" resolve="getCamera" />
+            </node>
+            <node concept="liA8E" id="6I5RWbd47TI" role="2OqNvi">
+              <ref role="37wK5l" to="xyqd:~Camera.setAutoFitView(boolean):void" resolve="setAutoFitView" />
+              <node concept="3clFbT" id="6I5RWbd47TJ" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6I5RWbd3OdB" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="64_1OWexg7z" role="1B3o_S" />
     <node concept="3uibUv" id="64_1OWexg81" role="1zkMxy">
       <ref role="3uigEE" to="tirk:~DefaultView" resolve="DefaultView" />
+    </node>
+    <node concept="3uibUv" id="6I5RWbd3O1x" role="EKbjA">
+      <ref role="3uigEE" to="gsia:~AncestorListener" resolve="AncestorListener" />
+    </node>
+    <node concept="3uibUv" id="6I5RWbd3O6n" role="EKbjA">
+      <ref role="3uigEE" to="hyam:~MouseMotionListener" resolve="MouseMotionListener" />
+    </node>
+    <node concept="3UR2Jj" id="6I5RWbd3PVO" role="lGtFl">
+      <node concept="TZ5HA" id="6I5RWbd3PVP" role="TZ5H$">
+        <node concept="1dT_AC" id="6I5RWbd3PVQ" role="1dT_Ay">
+          <property role="1dT_AB" value="MPS seems to do use AWT in a strange (or even bad) way. This class combines several fixes to circumvent most problems" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="4iv9KfRBKWH">
