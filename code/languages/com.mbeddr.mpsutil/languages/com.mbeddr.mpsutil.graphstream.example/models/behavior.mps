@@ -377,6 +377,17 @@
     <node concept="3uibUv" id="50Rn4r1Hc_3" role="EKbjA">
       <ref role="3uigEE" to="udin:50Rn4r1HbyJ" resolve="IGraphingInformation" />
     </node>
+    <node concept="3clFb_" id="1UCHB4chrgH" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="toolCreated" />
+      <node concept="3Tm1VV" id="1UCHB4chrgJ" role="1B3o_S" />
+      <node concept="3cqZAl" id="1UCHB4chrgK" role="3clF45" />
+      <node concept="3clFbS" id="1UCHB4chrgL" role="3clF47" />
+      <node concept="2AHcQZ" id="1UCHB4chrgM" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
   </node>
 </model>
 
