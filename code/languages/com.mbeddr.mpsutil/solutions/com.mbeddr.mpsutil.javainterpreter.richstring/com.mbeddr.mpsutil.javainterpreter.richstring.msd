@@ -33,6 +33,7 @@
     <module reference="b1884779-4586-489d-a56d-57e19a9137d4(com.mbeddr.mpsutil.javainterpreter)" version="0" />
     <module reference="71d44b97-2997-4a8d-8431-0df3fabaa31b(com.mbeddr.mpsutil.javainterpreter.richstring)" version="0" />
     <module reference="442d3b7d-fe4a-4293-a7c1-6744d440ecaa(com.mbeddr.mpsutil.richstring)" version="0" />
+    <module reference="726886d1-ef90-4249-a08f-1e3ec23a7113(com.mbeddr.mpsutil.traceExplorer)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />

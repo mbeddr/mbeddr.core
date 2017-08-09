@@ -575,6 +575,12 @@
       <property role="IQ2ns" value="8729447926330241139" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
+    <node concept="1TJgyj" id="7PyP3ULsLFW" role="1TKVEi">
+      <property role="IQ2ns" value="9035017168188807932" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    </node>
     <node concept="1TJgyi" id="2I5SFMdvWx6" role="1TKVEl">
       <property role="TrG5h" value="countBackwards" />
       <property role="IQ2nx" value="3136162014989109318" />
