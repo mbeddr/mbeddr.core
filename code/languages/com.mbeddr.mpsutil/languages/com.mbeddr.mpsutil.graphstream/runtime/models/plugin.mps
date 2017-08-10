@@ -905,7 +905,7 @@
               <ref role="3cqZAo" node="50Rn4r1GlT$" resolve="graph" />
             </node>
             <node concept="liA8E" id="2XJmEcjzlFM" role="2OqNvi">
-              <ref role="37wK5l" to="5svn:~Graph.resetHighlighting():void" resolve="resetHighlighting" />
+              <ref role="37wK5l" to="5svn:~Graph.clearHighlighting():void" resolve="clearHighlighting" />
             </node>
           </node>
         </node>
