@@ -5555,6 +5555,9 @@
         <node concept="3LEDTy" id="7eF9rfAu$pM" role="3LEDUa">
           <ref role="3LEDTV" node="7eF9rfAu$oJ" resolve="com.mbeddr.ext.statemachines" />
         </node>
+        <node concept="3LEDTy" id="7sWVAK3s204" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAuyUG" role="3989C9">
