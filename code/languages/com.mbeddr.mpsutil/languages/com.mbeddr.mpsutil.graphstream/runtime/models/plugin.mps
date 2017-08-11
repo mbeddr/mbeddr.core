@@ -265,9 +265,6 @@
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
-      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
-        <child id="1081516765348" name="expression" index="3fr31v" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -2335,30 +2332,21 @@
             <property role="3SKdUp" value="move the camera to fix the problem" />
           </node>
         </node>
-        <node concept="3clFbJ" id="6I5RWbd40YT" role="3cqZAp">
-          <node concept="3clFbS" id="6I5RWbd40YV" role="3clFbx">
-            <node concept="3clFbF" id="6I5RWbd3U0Y" role="3cqZAp">
-              <node concept="2OqwBi" id="6I5RWbd3Udo" role="3clFbG">
-                <node concept="1rXfSq" id="6I5RWbd3U0W" role="2Oq$k0">
+        <node concept="3clFbF" id="6I5RWbd3U0Y" role="3cqZAp">
+          <node concept="2OqwBi" id="6I5RWbd3Udo" role="3clFbG">
+            <node concept="1rXfSq" id="6I5RWbd3U0W" role="2Oq$k0">
+              <ref role="37wK5l" to="tirk:~DefaultView.getCamera():org.graphstream.ui.view.Camera" resolve="getCamera" />
+            </node>
+            <node concept="liA8E" id="6I5RWbd3UEq" role="2OqNvi">
+              <ref role="37wK5l" to="xyqd:~Camera.setViewPercent(double):void" resolve="setViewPercent" />
+              <node concept="2OqwBi" id="6I5RWbd3WKP" role="37wK5m">
+                <node concept="1rXfSq" id="6I5RWbd3V__" role="2Oq$k0">
                   <ref role="37wK5l" to="tirk:~DefaultView.getCamera():org.graphstream.ui.view.Camera" resolve="getCamera" />
                 </node>
-                <node concept="liA8E" id="6I5RWbd3UEq" role="2OqNvi">
-                  <ref role="37wK5l" to="xyqd:~Camera.setViewPercent(double):void" resolve="setViewPercent" />
-                  <node concept="2OqwBi" id="6I5RWbd3WKP" role="37wK5m">
-                    <node concept="1rXfSq" id="6I5RWbd3V__" role="2Oq$k0">
-                      <ref role="37wK5l" to="tirk:~DefaultView.getCamera():org.graphstream.ui.view.Camera" resolve="getCamera" />
-                    </node>
-                    <node concept="liA8E" id="6I5RWbd3X94" role="2OqNvi">
-                      <ref role="37wK5l" to="xyqd:~Camera.getViewPercent():double" resolve="getViewPercent" />
-                    </node>
-                  </node>
+                <node concept="liA8E" id="6I5RWbd3X94" role="2OqNvi">
+                  <ref role="37wK5l" to="xyqd:~Camera.getViewPercent():double" resolve="getViewPercent" />
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3fqX7Q" id="6I5RWbd43_z" role="3clFbw">
-            <node concept="1rXfSq" id="6I5RWbd43__" role="3fr31v">
-              <ref role="37wK5l" to="z60i:~Component.hasFocus():boolean" resolve="hasFocus" />
             </node>
           </node>
         </node>

@@ -36,6 +36,7 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
@@ -45,6 +46,10 @@
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
@@ -98,6 +103,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -209,6 +215,22 @@
       </node>
       <node concept="3Tm6S6" id="4iv9KfRtLku" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="7PLVYgqIA9b" role="jymVt" />
+    <node concept="3clFbW" id="7PLVYgqIBl5" role="jymVt">
+      <node concept="3cqZAl" id="7PLVYgqIBl7" role="3clF45" />
+      <node concept="3Tm1VV" id="7PLVYgqIBl8" role="1B3o_S" />
+      <node concept="3clFbS" id="7PLVYgqIBl9" role="3clF47">
+        <node concept="3clFbF" id="7PLVYgqIBvH" role="3cqZAp">
+          <node concept="2YIFZM" id="7PLVYgqIBvI" role="3clFbG">
+            <ref role="1Pybhc" to="dsms:~ExampleGraph" resolve="ExampleGraph" />
+            <ref role="37wK5l" to="dsms:~ExampleGraph.fillExampleGraph(de.itemis.graphing.model.Graph):void" resolve="fillExampleGraph" />
+            <node concept="37vLTw" id="7PLVYgqIBvJ" role="37wK5m">
+              <ref role="3cqZAo" node="4iv9KfRtLkq" resolve="_graph" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="4iv9KfRtLky" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1GjEZ" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -221,15 +243,6 @@
         <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
       </node>
       <node concept="3clFbS" id="50Rn4r1GjF3" role="3clF47">
-        <node concept="3clFbF" id="50Rn4r1Gkxb" role="3cqZAp">
-          <node concept="2YIFZM" id="50Rn4r1Gk_I" role="3clFbG">
-            <ref role="37wK5l" to="dsms:~ExampleGraph.fillExampleGraph(de.itemis.graphing.model.Graph):void" resolve="fillExampleGraph" />
-            <ref role="1Pybhc" to="dsms:~ExampleGraph" resolve="ExampleGraph" />
-            <node concept="37vLTw" id="5zrVLV_RYl6" role="37wK5m">
-              <ref role="3cqZAo" node="4iv9KfRtLkq" resolve="_graph" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="50Rn4r1GkOb" role="3cqZAp">
           <node concept="37vLTw" id="5zrVLV_RYEa" role="3cqZAk">
             <ref role="3cqZAo" node="4iv9KfRtLkq" resolve="_graph" />
@@ -367,7 +380,27 @@
       <property role="TrG5h" value="refresh" />
       <node concept="3Tm1VV" id="5zrVLV_TS8N" role="1B3o_S" />
       <node concept="3cqZAl" id="5zrVLV_TS8O" role="3clF45" />
-      <node concept="3clFbS" id="5zrVLV_TS8P" role="3clF47" />
+      <node concept="3clFbS" id="5zrVLV_TS8P" role="3clF47">
+        <node concept="3clFbF" id="7PLVYgqIC6n" role="3cqZAp">
+          <node concept="2OqwBi" id="7PLVYgqICrl" role="3clFbG">
+            <node concept="37vLTw" id="7PLVYgqIC6m" role="2Oq$k0">
+              <ref role="3cqZAo" node="4iv9KfRtLkq" resolve="_graph" />
+            </node>
+            <node concept="liA8E" id="7PLVYgqICF4" role="2OqNvi">
+              <ref role="37wK5l" to="5svn:~Graph.clear():void" resolve="clear" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PLVYgqIDfh" role="3cqZAp">
+          <node concept="2YIFZM" id="7PLVYgqIDfi" role="3clFbG">
+            <ref role="1Pybhc" to="dsms:~ExampleGraph" resolve="ExampleGraph" />
+            <ref role="37wK5l" to="dsms:~ExampleGraph.fillExampleGraph(de.itemis.graphing.model.Graph):void" resolve="fillExampleGraph" />
+            <node concept="37vLTw" id="7PLVYgqIDfj" role="37wK5m">
+              <ref role="3cqZAo" node="4iv9KfRtLkq" resolve="_graph" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="2AHcQZ" id="5zrVLV_TS8Q" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
