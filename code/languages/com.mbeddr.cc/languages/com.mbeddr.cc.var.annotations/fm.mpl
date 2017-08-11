@@ -28,6 +28,7 @@
         <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
         <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
         <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</dependency>
+        <dependency reexport="false">2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:017fba0e-af15-4a23-b0a8-02b5c1141e75:com.mbeddr.cc.var.annotations" version="0" />
@@ -117,6 +118,20 @@
             <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
             <external-mapping>
               <mapping-node modelUID="r:5f62df63-885f-42f0-80d6-e13ad6c51489(com.mbeddr.core.modules.gen.generator.template.main@generator)" nodeID="1252295221377568075" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="2a2a2e9e-d6c5-45da-a1d8-743a2d7fdafe(com.mbeddr.cc.var.annotations#6514264311693705814)" />
+            <external-mapping>
+              <mapping-node modelUID="r:62d92012-8061-40a9-9f5f-893e60f8aedd(com.mbeddr.cc.var.annotations.generator.template.main@generator)" nodeID="6514264311693705815" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)" />
+            <external-mapping>
+              <mapping-node modelUID="r:949d91ba-b3c5-483a-aab7-460e656aee7b(com.mbeddr.core.base.generator.template.main@generator)" nodeID="8626086128958649591" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
