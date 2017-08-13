@@ -319,11 +319,6 @@
       <node concept="3XIRFW" id="6JVEnxIhjQ5" role="3XIRFX">
         <node concept="3t9XKO" id="3_MZZHrtJCD" role="3XIRFZ">
           <ref role="3t9XKR" node="3_MZZHrtJCB" resolve="wiring" />
-          <node concept="1xGALR" id="73SKUHF8Hop" role="lGtFl">
-            <node concept="1xFd8N" id="73SKUHFbe$G" role="1xGcb7">
-              <property role="1xFd8M" value="Main_wiring__init();" />
-            </node>
-          </node>
         </node>
         <node concept="2BFjQ_" id="6JVEnxIhjQ8" role="3XIRFZ">
           <node concept="3TlMh9" id="6JVEnxIhjQ9" role="2BFjQA">
