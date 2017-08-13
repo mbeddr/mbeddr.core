@@ -22,6 +22,9 @@ def releaseNotes = """Automated Nighly build from ${t as String}
 
 There is currently a known issue that the RCP doesn't extract the tutorial correctly. Please download and extract it maually."""
 
+def fileName = "mbeddr-win-" + t.getYear() + "-" +
+				t.getMonthValue() +"-"+ t.getDayOfMonth() +".exe"
+
 github {
     owner = 'mbeddr'
     repo = 'mbeddr.core'
@@ -35,11 +38,25 @@ github {
             artifactsRoot + "/com.mbeddr.allInOne/com.mbeddr.allInOne.zip",
             artifactsRoot + "/com.mbeddr.tutorial/com.mbeddr.tutorial.zip",
             artifactsRoot + "/com.mbeddr.platform.distribution/platform-distribution.zip",
-            artifactsRoot + "/rcp/Setup.exe",
+            artifactsRoot + "/rcp/" + fileName,
             artifactsRoot + "/rcp/mbeddr-macos.dmg"
     ]
 }
 
-githubRelease.dependsOn ':build:com.mbeddr:distribution:build_platform_distribution',
+task renameWindowsFile(type: Copy) {
+		println artifactsRoot + " " + fileName
+
+		from(artifactsRoot+ "/rcp")
+		into(artifactsRoot + "/rcp")
+		include('Setup.exe')
+		rename ('Setup.exe', fileName)
+}
+
+task copyRenameAndDeleteSetupFile(type: Delete, dependsOn: [renameWindowsFile]) {
+		delete artifactsRoot + "/rcp/Setup.exe"
+}
+
+githubRelease.dependsOn copyRenameAndDeleteSetupFile,
+ ':build:com.mbeddr:distribution:build_platform_distribution',
  ':build:com.mbeddr:distribution:package_tutorial',
  ':build:com.mbeddr:distribution:build_all_in_one'

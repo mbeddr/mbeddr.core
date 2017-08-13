@@ -1069,18 +1069,10 @@
                   <node concept="1pGfFk" id="7836$RyWakW" role="2ShVmc">
                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                     <node concept="3cpWs3" id="7836$RyVWo_" role="37wK5m">
-                      <node concept="3cpWs3" id="7836$RyVWoA" role="3uHU7B">
-                        <node concept="37vLTw" id="7836$RyVWoB" role="3uHU7B">
-                          <ref role="3cqZAo" node="7836$RyVWom" resolve="tmpDir" />
-                        </node>
-                        <node concept="10M0yZ" id="7836$RyWalH" role="3uHU7w">
-                          <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                          <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                        </node>
+                      <node concept="37vLTw" id="7836$RyVWoB" role="3uHU7B">
+                        <ref role="3cqZAo" node="7836$RyVWom" resolve="tmpDir" />
                       </node>
-                      <node concept="Xl_RD" id="FAWk6GbILF" role="3uHU7w">
-                        <property role="Xl_RC" value="tutorial" />
-                      </node>
+                      <node concept="Xl_RD" id="FAWk6GbILF" role="3uHU7w" />
                     </node>
                   </node>
                 </node>
