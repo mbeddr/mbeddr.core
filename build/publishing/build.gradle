@@ -65,7 +65,7 @@ task copyRenameAndDeleteMacosSetupFile(type: Delete, dependsOn: [renameMacosFile
 		delete artifactsRoot + "/rcp/mbeddr-macos.dmg"
 }
 
-githubRelease.dependsOn copyRenameAndDeleteWindowsSetupFile, copyRenameAndDeleteMacosSetupFile
+githubRelease.dependsOn copyRenameAndDeleteWindowsSetupFile, copyRenameAndDeleteMacosSetupFile,
  ':build:com.mbeddr:distribution:build_platform_distribution',
  ':build:com.mbeddr:distribution:package_tutorial',
  ':build:com.mbeddr:distribution:build_all_in_one'
