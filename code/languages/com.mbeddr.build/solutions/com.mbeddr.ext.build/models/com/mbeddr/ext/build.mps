@@ -784,7 +784,7 @@
             <node concept="2Ry0Ak" id="7IMscoYPuSR" role="iGT6I">
               <property role="2Ry0Am" value="tests" />
               <node concept="2Ry0Ak" id="7IMscoYPuSY" role="2Ry0An">
-                <property role="2Ry0Am" value="test.ex.ext.components.nodes_tracing" />
+                <property role="2Ry0Am" value="test.ext.components.nodes_tracing" />
                 <node concept="2Ry0Ak" id="7IMscoYPuT5" role="2Ry0An">
                   <property role="2Ry0Am" value="source_gen" />
                 </node>
