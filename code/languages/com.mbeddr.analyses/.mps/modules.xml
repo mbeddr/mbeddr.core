@@ -52,6 +52,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.pluginSolution/com.mbeddr.analyses.cbmc.statemachines.pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.rt/com.mbeddr.analyses.cbmc.statemachines.rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.testsgen.rt/com.mbeddr.analyses.cbmc.testsgen.rt.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.xmodel.plan/com.mbeddr.analyses.cbmc.xmodel.plan.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cpa.pluginSolution/com.mbeddr.analyses.cpa.pluginSolution.msd" folder="cpa" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cpa.rt/com.mbeddr.analyses.cpa.rt.msd" folder="cpa" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.lantest.pluginSolution/com.mbeddr.analyses.lantest.pluginSolution.msd" folder="lantest" />
@@ -75,6 +76,8 @@
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testsgen.testcode/test.analyses.cbmc.testsgen.testcode.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.testsgen/test.analyses.cbmc.testsgen.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.ts/test.analyses.cbmc.ts.msd" folder="test.cbmc" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.xmodel.testcode/test.analyses.cbmc.xmodel.testcode.msd" folder="test.cbmc" />
+      <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc.xmodel/test.analyses.cbmc.xmodel.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cbmc/cbmc.msd" folder="test.cbmc" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cpa.testcode/test.analyses.cpa.testcode.msd" folder="test.cpa" />
       <modulePath path="$PROJECT_DIR$/tests/test.analyses.cpa/test.analyses.cpa.msd" folder="test.cpa" />
