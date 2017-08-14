@@ -707,6 +707,20 @@
             </node>
           </node>
         </node>
+        <node concept="2HvfSZ" id="6AA6Z09osPp" role="39821P">
+          <node concept="398BVA" id="6AA6Z09osUE" role="2HvfZ0">
+            <ref role="398BVh" node="7Vt15sLWjMb" resolve="mbeddr.analyses" />
+            <node concept="2Ry0Ak" id="6AA6Z09osYK" role="iGT6I">
+              <property role="2Ry0Am" value="tests" />
+              <node concept="2Ry0Ak" id="6AA6Z09osYT" role="2Ry0An">
+                <property role="2Ry0Am" value="test.analyses.cbmc.xmodel.testcode" />
+                <node concept="2Ry0Ak" id="6AA6Z09osZ2" role="2Ry0An">
+                  <property role="2Ry0Am" value="source_gen" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="2HvfSZ" id="51ECGN585bS" role="39821P">
           <node concept="398BVA" id="51ECGN585bT" role="2HvfZ0">
             <ref role="398BVh" node="7Vt15sLWjMb" resolve="mbeddr.analyses" />
@@ -733,6 +747,12 @@
       </node>
       <node concept="L2wRC" id="16rWggKnWut" role="39821P">
         <ref role="L2wRA" node="16rWggKnW4y" resolve="test.analyses.cbmc.ts" />
+      </node>
+      <node concept="L2wRC" id="6AA6Z09ot5a" role="39821P">
+        <ref role="L2wRA" node="7bmaDMyc2mJ" resolve="test.analyses.cbmc.xmodel" />
+      </node>
+      <node concept="L2wRC" id="6AA6Z09otli" role="39821P">
+        <ref role="L2wRA" node="7bmaDMyc24e" resolve="test.analyses.cbmc.xmodel.testcode" />
       </node>
       <node concept="L2wRC" id="16rWggKnVPJ" role="39821P">
         <ref role="L2wRA" node="16rWggKnV4I" resolve="test.analyses.acsl" />
@@ -963,6 +983,62 @@
           <node concept="3bR9La" id="5rSz5xRLMnP" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:5rSz5xRGzPC" resolve="com.mbeddr.analyses.base.verification_conditions" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="7bmaDMyc2mJ" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.analyses.cbmc.xmodel" />
+        <property role="3LESm3" value="32da6157-dd01-4e32-aefe-973923fa741a" />
+        <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="sources and tests" />
+        <node concept="398BVA" id="7bmaDMyc2sA" role="3LF7KH">
+          <ref role="398BVh" node="7Vt15sLWjMb" resolve="mbeddr.analyses" />
+          <node concept="2Ry0Ak" id="7bmaDMyc2yI" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="6AA6Z09kCoi" role="2Ry0An">
+              <property role="2Ry0Am" value="test.analyses.cbmc.xmodel" />
+              <node concept="2Ry0Ak" id="6AA6Z09kCsl" role="2Ry0An">
+                <property role="2Ry0Am" value="test.analyses.cbmc.xmodel.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6AA6Z09kCum" role="3bR37C">
+          <node concept="3bR9La" id="6AA6Z09kCun" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:6BM8NjXiJFj" resolve="com.mbeddr.analyses.cbmc.core.rt" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6AA6Z09kCuo" role="3bR37C">
+          <node concept="3bR9La" id="6AA6Z09kCup" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7eF9rfAuFx$" resolve="com.mbeddr.analyses.cbmc.rt" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="7bmaDMyc24e" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.analyses.cbmc.xmodel.testcode" />
+        <property role="3LESm3" value="3356a855-d10d-4fe9-8789-eb4d9abd8cd7" />
+        <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="sources and tests" />
+        <node concept="398BVA" id="7bmaDMyc29q" role="3LF7KH">
+          <ref role="398BVh" node="7Vt15sLWjMb" resolve="mbeddr.analyses" />
+          <node concept="2Ry0Ak" id="7bmaDMyc29r" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="7bmaDMyc29s" role="2Ry0An">
+              <property role="2Ry0Am" value="test.analyses.cbmc.xmodel.testcode" />
+              <node concept="2Ry0Ak" id="7bmaDMyc2da" role="2Ry0An">
+                <property role="2Ry0Am" value="test.analyses.cbmc.xmodel.testcode.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6AA6Z09orYS" role="3bR37C">
+          <node concept="3bR9La" id="6AA6Z09orYT" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:6AA6Z09kE7k" resolve="com.mbeddr.analyses.cbmc.xmodel.plan" />
           </node>
         </node>
       </node>
@@ -1213,6 +1289,12 @@
       </node>
       <node concept="22LTRM" id="3wYrwRBHPr0" role="22LTRK">
         <ref role="22LTRN" node="3C6_kML$S7q" resolve="test.analyses.cbmc.testcode_analyses_config" />
+      </node>
+      <node concept="22LTRM" id="6AA6Z09otOH" role="22LTRK">
+        <ref role="22LTRN" node="7bmaDMyc2mJ" resolve="test.analyses.cbmc.xmodel" />
+      </node>
+      <node concept="22LTRM" id="6AA6Z09otXN" role="22LTRK">
+        <ref role="22LTRN" node="7bmaDMyc24e" resolve="test.analyses.cbmc.xmodel.testcode" />
       </node>
       <node concept="22LTRM" id="16rWggKnWFm" role="22LTRK">
         <ref role="22LTRN" node="16rWggKnW4y" resolve="test.analyses.cbmc.ts" />

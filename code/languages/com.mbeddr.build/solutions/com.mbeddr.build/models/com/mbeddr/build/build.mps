@@ -12347,6 +12347,23 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="6AA6Z09kE7k" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.analyses.cbmc.xmodel.plan" />
+        <property role="3LESm3" value="89149c16-0102-4ac4-b76c-cce9604a7e8c" />
+        <node concept="398BVA" id="6AA6Z09kF4k" role="3LF7KH">
+          <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
+          <node concept="2Ry0Ak" id="6AA6Z09kF4l" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="6AA6Z09kF4m" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.analyses.cbmc.xmodel.plan" />
+              <node concept="2Ry0Ak" id="6AA6Z09kLSk" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.analyses.cbmc.xmodel.plan.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="23LEVbRX3hP" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
