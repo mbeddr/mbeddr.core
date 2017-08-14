@@ -293,7 +293,7 @@
       <property role="TrG5h" value="Main" />
       <ref role="3oK8_y" node="4LhGMnjpR7z" resolve="portable" />
       <node concept="2v9HqM" id="73SKUHF8Pyb" role="2eOfOg">
-        <ref role="2v9HqP" node="73SKUHF8COj" resolve="Main" />
+        <ref role="2v9HqP" node="73SKUHF8COj" resolve="ComponentsTracingTest" />
       </node>
     </node>
     <node concept="2AWWZL" id="6JVEnxIhjQY" role="2AWWZH">
@@ -318,7 +318,7 @@
     </node>
   </node>
   <node concept="N3F5e" id="73SKUHF8COj">
-    <property role="TrG5h" value="Main" />
+    <property role="TrG5h" value="ComponentsTracingTest" />
     <node concept="N3Fnx" id="6JVEnxIhjQ4" role="N3F5h">
       <property role="TrG5h" value="main" />
       <property role="2OOxQR" value="true" />
@@ -1272,7 +1272,7 @@
       <property role="TrG5h" value="empty_1497626027356_18" />
     </node>
     <node concept="1xGQPs" id="73SKUHF8COl" role="lGtFl">
-      <property role="1xGaoo" value="Main.c" />
+      <property role="1xGaoo" value="ComponentsTracingTest.c" />
     </node>
   </node>
   <node concept="2XOHcx" id="7Rf0$0HBv7U">
