@@ -5,17 +5,15 @@
       <sourceRoot location="languageModels" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/commons-codec-1.5.jar" />
-      <sourceRoot location="lib/commons-logging-1.1.jar" />
-      <sourceRoot location="lib/dom4j-1.6.1.jar" />
-      <sourceRoot location="lib/log4j-1.2.13.jar" />
-      <sourceRoot location="lib/poi-3.9-20121203.jar" />
-      <sourceRoot location="lib/poi-excelant-3.9-20121203.jar" />
-      <sourceRoot location="lib/poi-ooxml-3.9-20121203.jar" />
-      <sourceRoot location="lib/poi-ooxml-schemas-3.9-20121203.jar" />
-      <sourceRoot location="lib/poi-scratchpad-3.9-20121203.jar" />
       <sourceRoot location="lib/stax-api-1.0.1.jar" />
-      <sourceRoot location="lib/xmlbeans-2.3.0.jar" />
+      <sourceRoot path="${module}/lib/commons-codec-1.10.jar" />
+      <sourceRoot path="${module}/lib/commons-collections4-4.1.jar" />
+      <sourceRoot path="${module}/lib/curvesapi-1.04.jar" />
+      <sourceRoot path="${module}/lib/poi-3.16.jar" />
+      <sourceRoot path="${module}/lib/poi-ooxml-3.16.jar" />
+      <sourceRoot path="${module}/lib/poi-ooxml-schemas-3.16.jar" />
+      <sourceRoot path="${module}/lib/stax-api-1.0.1.jar" />
+      <sourceRoot path="${module}/lib/xmlbeans-2.6.0.jar" />
     </modelRoot>
   </models>
   <accessoryModels />
@@ -119,17 +117,14 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/commons-codec-1.5.jar" />
-    <stubModelEntry path="${module}/lib/commons-logging-1.1.jar" />
-    <stubModelEntry path="${module}/lib/dom4j-1.6.1.jar" />
-    <stubModelEntry path="${module}/lib/log4j-1.2.13.jar" />
-    <stubModelEntry path="${module}/lib/poi-3.9-20121203.jar" />
-    <stubModelEntry path="${module}/lib/poi-excelant-3.9-20121203.jar" />
-    <stubModelEntry path="${module}/lib/poi-ooxml-3.9-20121203.jar" />
-    <stubModelEntry path="${module}/lib/poi-ooxml-schemas-3.9-20121203.jar" />
-    <stubModelEntry path="${module}/lib/poi-scratchpad-3.9-20121203.jar" />
     <stubModelEntry path="${module}/lib/stax-api-1.0.1.jar" />
-    <stubModelEntry path="${module}/lib/xmlbeans-2.3.0.jar" />
+    <stubModelEntry path="${module}/lib/poi-3.16.jar" />
+    <stubModelEntry path="${module}/lib/xmlbeans-2.6.0.jar" />
+    <stubModelEntry path="${module}/lib/poi-ooxml-schemas-3.16.jar" />
+    <stubModelEntry path="${module}/lib/curvesapi-1.04.jar" />
+    <stubModelEntry path="${module}/lib/commons-codec-1.10.jar" />
+    <stubModelEntry path="${module}/lib/commons-collections4-4.1.jar" />
+    <stubModelEntry path="${module}/lib/poi-ooxml-3.16.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
