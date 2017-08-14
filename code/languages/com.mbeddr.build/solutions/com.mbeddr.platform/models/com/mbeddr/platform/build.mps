@@ -7487,6 +7487,12 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7lzCojAZ2Je" role="3bR37C">
+          <node concept="3bR9La" id="7lzCojAZ2Jf" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2N1CSrzSJt4" resolve="com.mbeddr.mpsutil.plantuml.pluginSolution" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5BXRi0X3p58" role="2G$12L">
         <property role="BnDLt" value="true" />
