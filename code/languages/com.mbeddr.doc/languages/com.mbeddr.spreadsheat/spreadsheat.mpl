@@ -6,14 +6,14 @@
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="lib/stax-api-1.0.1.jar" />
-      <sourceRoot path="${module}/lib/commons-codec-1.10.jar" />
-      <sourceRoot path="${module}/lib/commons-collections4-4.1.jar" />
-      <sourceRoot path="${module}/lib/curvesapi-1.04.jar" />
-      <sourceRoot path="${module}/lib/poi-3.16.jar" />
-      <sourceRoot path="${module}/lib/poi-ooxml-3.16.jar" />
-      <sourceRoot path="${module}/lib/poi-ooxml-schemas-3.16.jar" />
-      <sourceRoot path="${module}/lib/stax-api-1.0.1.jar" />
-      <sourceRoot path="${module}/lib/xmlbeans-2.6.0.jar" />
+      <sourceRoot location="lib/commons-codec-1.10.jar" />
+      <sourceRoot location="lib/commons-collections4-4.1.jar" />
+      <sourceRoot location="lib/curvesapi-1.04.jar" />
+      <sourceRoot location="lib/poi-3.16.jar" />
+      <sourceRoot location="lib/poi-ooxml-3.16.jar" />
+      <sourceRoot location="lib/poi-ooxml-schemas-3.16.jar" />
+      <sourceRoot location="lib/stax-api-1.0.1.jar" />
+      <sourceRoot location="lib/xmlbeans-2.6.0.jar" />
     </modelRoot>
   </models>
   <accessoryModels />
