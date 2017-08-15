@@ -2,7 +2,7 @@
 <model ref="r:0934fbfc-465d-4db6-a286-a64cc07392f2(com.mbeddr.cc.trace.typesystem)">
   <persistence version="9" />
   <languages>
-    <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="y6af" ref="r:266125ed-2b05-4b4a-aa3e-7e3d1931d4cd(com.mbeddr.cc.trace.behavior)" />
@@ -203,7 +203,7 @@
               <ref role="3cqZAo" node="6pDXxhBc3e9" resolve="annotation" />
             </node>
             <node concept="3Tsc0h" id="6pDXxhBc66a" role="2OqNvi">
-              <ref role="3TtcxE" to="26ao:3Y7ywckFJXd" />
+              <ref role="3TtcxE" to="26ao:3Y7ywckFJXd" resolve="refs" />
             </node>
           </node>
           <node concept="v3k3i" id="GKLijSDK9f" role="2OqNvi">
@@ -228,7 +228,7 @@
                       <ref role="2Gs0qQ" node="6pDXxhBc1NY" resolve="traceRef" />
                     </node>
                     <node concept="3TrEf2" id="GKLijSDKDR" role="2OqNvi">
-                      <ref role="3Tt5mk" to="26ao:opE5jFgg97" />
+                      <ref role="3Tt5mk" to="26ao:opE5jFgg97" resolve="target" />
                     </node>
                   </node>
                 </node>
