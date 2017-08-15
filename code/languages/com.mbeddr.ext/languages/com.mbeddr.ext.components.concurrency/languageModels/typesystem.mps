@@ -2,8 +2,7 @@
 <model ref="r:2eb68f07-620a-4ea1-ab06-706ea2793643(com.mbeddr.ext.components.concurrency.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="qnb1" ref="r:20269589-2670-4f99-b5ae-af443d8a5c29(com.mbeddr.ext.components.concurrency.structure)" implicit="true" />
@@ -71,11 +70,11 @@
                 <ref role="1YBMHb" node="7tWSY$OOvko" resolve="node" />
               </node>
               <node concept="3TrEf2" id="7tWSY$OOvEX" role="2OqNvi">
-                <ref role="3Tt5mk" to="qnb1:7tWSY$ONvaG" />
+                <ref role="3Tt5mk" to="qnb1:7tWSY$ONvaG" resolve="field" />
               </node>
             </node>
             <node concept="3TrEf2" id="7tWSY$OOwEk" role="2OqNvi">
-              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
             </node>
           </node>
         </node>
@@ -105,11 +104,11 @@
                 <ref role="1YBMHb" node="7tWSY$OO$O0" resolve="node" />
               </node>
               <node concept="3TrEf2" id="7tWSY$OO_aF" role="2OqNvi">
-                <ref role="3Tt5mk" to="qnb1:7tWSY$ONvgv" />
+                <ref role="3Tt5mk" to="qnb1:7tWSY$ONvgv" resolve="runnable" />
               </node>
             </node>
             <node concept="3TrEf2" id="7tWSY$OOAF6" role="2OqNvi">
-              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
             </node>
           </node>
         </node>
