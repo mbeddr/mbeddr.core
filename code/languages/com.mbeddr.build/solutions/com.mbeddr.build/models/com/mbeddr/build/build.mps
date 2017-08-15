@@ -1673,6 +1673,12 @@
             <ref role="3bR37D" node="6YaWssNXVWy" resolve="Eclipse.Debugger" />
           </node>
         </node>
+        <node concept="1SiIV0" id="65o8lrfJi7" role="3bR37C">
+          <node concept="3bR9La" id="65o8lrfJi8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:5qO$P$Pp2$u" resolve="com.mbeddr.mpsutil.genutil" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="VC7Rv4uQK2" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1847,6 +1853,7 @@
           </node>
           <node concept="1SiIV0" id="2wu1bNQpfxA" role="3bR37C">
             <node concept="3bR9La" id="2wu1bNQpfx_" role="1SiIV1">
+              <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:7YI57w6K0hX" resolve="jetbrains.mps.lang.behavior#1225195312923" />
             </node>
           </node>
