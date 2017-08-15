@@ -1526,7 +1526,6 @@
         <node concept="lj46D" id="25_ZyMI4IwF" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="pj6Ft" id="25_ZyMI4IzU" role="3F10Kt" />
         <node concept="pVoyu" id="25_ZyMI6Ewe" role="3F10Kt">
           <property role="VOm3f" value="true" />
           <node concept="3nzxsE" id="25_ZyMIdQlh" role="3n$kyP">
@@ -7410,7 +7409,7 @@
   </node>
   <node concept="24kQdi" id="1Qze4b32f60">
     <property role="3GE5qa" value="configuration.cbmc" />
-    <ref role="1XX52x" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+    <ref role="1XX52x" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfigurationContainer" />
     <node concept="3EZMnI" id="1H8VqTw7U76" role="2wV5jI">
       <node concept="2iRkQZ" id="1H8VqTw7U77" role="2iSdaV" />
       <node concept="3EZMnI" id="3r83Ks0g9P$" role="3EZMnx">
@@ -7445,9 +7444,6 @@
               <node concept="VPxyj" id="3FBBKmmMM1E" role="3F10Kt">
                 <property role="VOm3f" value="true" />
               </node>
-            </node>
-            <node concept="pj6Ft" id="7apEgWbIFgo" role="3F10Kt">
-              <property role="VOm3f" value="false" />
             </node>
             <node concept="2iRkQZ" id="3r83Ks0g8fR" role="2czzBx" />
             <node concept="ljvvj" id="7apEgWbIFgq" role="3F10Kt">
@@ -7572,9 +7568,6 @@
         <ref role="1NtTu8" to="q46j:5BkFC2yh8uK" resolve="analyses" />
         <node concept="2iRkQZ" id="gaSsNU7iPA" role="2czzBx" />
         <node concept="pVoyu" id="3R$6B6bKxEI" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pj6Ft" id="3R$6B6bKxEM" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F0ifn" id="gaSsNU7iPF" role="2czzBI">

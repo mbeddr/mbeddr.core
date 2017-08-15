@@ -451,158 +451,6 @@
             <ref role="3bR37D" node="6_du9upXhrc" resolve="com.mbeddr.mpsutil.inca.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="11cllTXflNu" role="3bR37C">
-          <node concept="1BurEX" id="11cllTXflNv" role="1SiIV1">
-            <node concept="398BVA" id="11cllTXflNg" role="1BurEY">
-              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
-              <node concept="2Ry0Ak" id="11cllTXflNh" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="11cllTXflNi" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
-                  <node concept="2Ry0Ak" id="11cllTXflNj" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="11cllTXflNk" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.viatra.addon.databinding.runtime_1.6.0.2017.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="11cllTXflNI" role="3bR37C">
-          <node concept="1BurEX" id="11cllTXflNJ" role="1SiIV1">
-            <node concept="398BVA" id="11cllTXflNw" role="1BurEY">
-              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
-              <node concept="2Ry0Ak" id="11cllTXflNx" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="11cllTXflNy" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
-                  <node concept="2Ry0Ak" id="11cllTXflNz" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="11cllTXflN$" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.viatra.query.runtime.base.itc_1.6.0.2017.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="11cllTXflNY" role="3bR37C">
-          <node concept="1BurEX" id="11cllTXflNZ" role="1SiIV1">
-            <node concept="398BVA" id="11cllTXflNK" role="1BurEY">
-              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
-              <node concept="2Ry0Ak" id="11cllTXflNL" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="11cllTXflNM" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
-                  <node concept="2Ry0Ak" id="11cllTXflNN" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="11cllTXflNO" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.viatra.query.runtime.base_1.6.0.2017.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="11cllTXflOe" role="3bR37C">
-          <node concept="1BurEX" id="11cllTXflOf" role="1SiIV1">
-            <node concept="398BVA" id="11cllTXflO0" role="1BurEY">
-              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
-              <node concept="2Ry0Ak" id="11cllTXflO1" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="11cllTXflO2" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
-                  <node concept="2Ry0Ak" id="11cllTXflO3" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="11cllTXflO4" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.viatra.query.runtime.matchers_1.6.0.2017.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="11cllTXflOu" role="3bR37C">
-          <node concept="1BurEX" id="11cllTXflOv" role="1SiIV1">
-            <node concept="398BVA" id="11cllTXflOg" role="1BurEY">
-              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
-              <node concept="2Ry0Ak" id="11cllTXflOh" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="11cllTXflOi" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
-                  <node concept="2Ry0Ak" id="11cllTXflOj" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="11cllTXflOk" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.viatra.query.runtime.rete.recipes_1.6.0.2017.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="11cllTXflOI" role="3bR37C">
-          <node concept="1BurEX" id="11cllTXflOJ" role="1SiIV1">
-            <node concept="398BVA" id="11cllTXflOw" role="1BurEY">
-              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
-              <node concept="2Ry0Ak" id="11cllTXflOx" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="11cllTXflOy" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
-                  <node concept="2Ry0Ak" id="11cllTXflOz" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="11cllTXflO$" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.viatra.query.runtime.rete_1.6.0.2017.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="11cllTXflOY" role="3bR37C">
-          <node concept="1BurEX" id="11cllTXflOZ" role="1SiIV1">
-            <node concept="398BVA" id="11cllTXflOK" role="1BurEY">
-              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
-              <node concept="2Ry0Ak" id="11cllTXflOL" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="11cllTXflOM" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
-                  <node concept="2Ry0Ak" id="11cllTXflON" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="11cllTXflOO" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.viatra.query.runtime_1.6.0.2017.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="11cllTXflPe" role="3bR37C">
-          <node concept="1BurEX" id="11cllTXflPf" role="1SiIV1">
-            <node concept="398BVA" id="11cllTXflP0" role="1BurEY">
-              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
-              <node concept="2Ry0Ak" id="11cllTXflP1" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="11cllTXflP2" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
-                  <node concept="2Ry0Ak" id="11cllTXflP3" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="11cllTXflP4" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.viatra.transformation.evm_1.6.0.2017.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="1MKH4iUOWBw" role="3bR37C">
           <node concept="1BurEX" id="1MKH4iUOWBx" role="1SiIV1">
             <node concept="398BVA" id="1MKH4iUOWBi" role="1BurEY">
@@ -615,6 +463,177 @@
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="1MKH4iUOWBm" role="2Ry0An">
                       <property role="2Ry0Am" value="capsule-0.4.0-20170621.132553-7.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7k57" role="3bR37C">
+          <node concept="1BurEX" id="3At2vBg7k58" role="1SiIV1">
+            <node concept="398BVA" id="3At2vBg7k4T" role="1BurEY">
+              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
+              <node concept="2Ry0Ak" id="3At2vBg7k4U" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3At2vBg7k4V" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
+                  <node concept="2Ry0Ak" id="3At2vBg7k4W" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3At2vBg7k4X" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.viatra.addon.databinding.runtime_1.7.0.2017.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7k5n" role="3bR37C">
+          <node concept="1BurEX" id="3At2vBg7k5o" role="1SiIV1">
+            <node concept="398BVA" id="3At2vBg7k59" role="1BurEY">
+              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
+              <node concept="2Ry0Ak" id="3At2vBg7k5a" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3At2vBg7k5b" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
+                  <node concept="2Ry0Ak" id="3At2vBg7k5c" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3At2vBg7k5d" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.viatra.query.runtime.base.itc_1.7.0.2017.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7k5B" role="3bR37C">
+          <node concept="1BurEX" id="3At2vBg7k5C" role="1SiIV1">
+            <node concept="398BVA" id="3At2vBg7k5p" role="1BurEY">
+              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
+              <node concept="2Ry0Ak" id="3At2vBg7k5q" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3At2vBg7k5r" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
+                  <node concept="2Ry0Ak" id="3At2vBg7k5s" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3At2vBg7k5t" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.viatra.query.runtime.base_1.7.0.2017.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7k5R" role="3bR37C">
+          <node concept="1BurEX" id="3At2vBg7k5S" role="1SiIV1">
+            <node concept="398BVA" id="3At2vBg7k5D" role="1BurEY">
+              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
+              <node concept="2Ry0Ak" id="3At2vBg7k5E" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3At2vBg7k5F" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
+                  <node concept="2Ry0Ak" id="3At2vBg7k5G" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3At2vBg7k5H" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.viatra.query.runtime.matchers_1.7.0.2017.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7k67" role="3bR37C">
+          <node concept="1BurEX" id="3At2vBg7k68" role="1SiIV1">
+            <node concept="398BVA" id="3At2vBg7k5T" role="1BurEY">
+              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
+              <node concept="2Ry0Ak" id="3At2vBg7k5U" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3At2vBg7k5V" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
+                  <node concept="2Ry0Ak" id="3At2vBg7k5W" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3At2vBg7k5X" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.viatra.query.runtime.rete.recipes_1.7.0.2017.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7k6n" role="3bR37C">
+          <node concept="1BurEX" id="3At2vBg7k6o" role="1SiIV1">
+            <node concept="398BVA" id="3At2vBg7k69" role="1BurEY">
+              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
+              <node concept="2Ry0Ak" id="3At2vBg7k6a" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3At2vBg7k6b" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
+                  <node concept="2Ry0Ak" id="3At2vBg7k6c" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3At2vBg7k6d" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.viatra.query.runtime.rete_1.7.0.2017.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7k6B" role="3bR37C">
+          <node concept="1BurEX" id="3At2vBg7k6C" role="1SiIV1">
+            <node concept="398BVA" id="3At2vBg7k6p" role="1BurEY">
+              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
+              <node concept="2Ry0Ak" id="3At2vBg7k6q" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3At2vBg7k6r" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
+                  <node concept="2Ry0Ak" id="3At2vBg7k6s" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3At2vBg7k6t" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.viatra.query.runtime_1.7.0.2017.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7k6R" role="3bR37C">
+          <node concept="1BurEX" id="3At2vBg7k6S" role="1SiIV1">
+            <node concept="398BVA" id="3At2vBg7k6D" role="1BurEY">
+              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
+              <node concept="2Ry0Ak" id="3At2vBg7k6E" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3At2vBg7k6F" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
+                  <node concept="2Ry0Ak" id="3At2vBg7k6G" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3At2vBg7k6H" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.viatra.transformation.evm_1.7.0.2017.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7k7l" role="3bR37C">
+          <node concept="1BurEX" id="3At2vBg7k7m" role="1SiIV1">
+            <node concept="398BVA" id="3At2vBg7k77" role="1BurEY">
+              <ref role="398BVh" node="6_du9upXeiS" resolve="inca" />
+              <node concept="2Ry0Ak" id="3At2vBg7k78" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3At2vBg7k79" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.inca.core.runtime" />
+                  <node concept="2Ry0Ak" id="3At2vBg7k7a" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3At2vBg7k7b" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.collections_8.2.0.v20170622-1916.jar" />
                     </node>
                   </node>
                 </node>
@@ -1585,6 +1604,36 @@
           <node concept="3bR9La" id="1Yj6cTtZpRt" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="90a9:2Xjt3l57hh_" resolve="de.slisson.mps.reflection" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7kav" role="3bR37C">
+          <node concept="3bR9La" id="3At2vBg7kaw" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7kax" role="3bR37C">
+          <node concept="3bR9La" id="3At2vBg7kay" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7kaz" role="3bR37C">
+          <node concept="3bR9La" id="3At2vBg7ka$" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="11cllTXfno5" resolve="com.mbeddr.mpsutil.soot.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7ka_" role="3bR37C">
+          <node concept="3bR9La" id="3At2vBg7kaA" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8Y" resolve="jetbrains.mps.lang.project" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3At2vBg7kaB" role="3bR37C">
+          <node concept="3bR9La" id="3At2vBg7kaC" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
       </node>

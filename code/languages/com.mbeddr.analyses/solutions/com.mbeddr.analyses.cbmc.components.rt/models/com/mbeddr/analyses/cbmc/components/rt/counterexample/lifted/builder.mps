@@ -397,21 +397,6 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="4arT0cnseG8" role="3clF47">
-        <node concept="3cpWs8" id="13FtHz6d5PJ" role="3cqZAp">
-          <node concept="3cpWsn" id="13FtHz6d5PK" role="3cpWs9">
-            <property role="TrG5h" value="lhs" />
-            <node concept="17QB3L" id="13FtHz6d5PI" role="1tU5fm" />
-            <node concept="2OqwBi" id="13FtHz6d5PL" role="33vP2m">
-              <node concept="37vLTw" id="13FtHz6d5PM" role="2Oq$k0">
-                <ref role="3cqZAo" node="4arT0cnseGi" resolve="rawAssig" />
-              </node>
-              <node concept="liA8E" id="13FtHz6d5PN" role="2OqNvi">
-                <ref role="37wK5l" to="rbq9:WwTuEsr2_k" resolve="getFullLHS" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="13FtHz6cOr1" role="3cqZAp" />
         <node concept="3cpWs8" id="13FtHz6cRlP" role="3cqZAp">
           <node concept="3cpWsn" id="13FtHz6cRlQ" role="3cpWs9">
             <property role="TrG5h" value="originalNode" />

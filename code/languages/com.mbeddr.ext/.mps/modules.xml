@@ -44,6 +44,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.serialization/test.ex.ext.serialization.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.statemachine/statemachine.msd" folder="tests.statemachine" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.units/test.ex.ext.units.msd" folder="tests.units" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ext.components.nodes_tracing/test.ext.components.nodes_tracing.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ext.math.nodes_tracing/test.ext.math.nodes_tracing.msd" folder="tests.math" />
       <modulePath path="$PROJECT_DIR$/tests/test.ext.statemachine.nodes_tracing/test.ext.statemachine.nodes_tracing.msd" folder="tests.statemachine" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.ext.components/components.msd" folder="tests.comp" />

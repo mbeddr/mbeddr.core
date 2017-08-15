@@ -45,6 +45,7 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -403,6 +404,7 @@
           <node concept="3cpWs8" id="2RSm1Cz28aj" role="3cqZAp">
             <node concept="3cpWsn" id="2RSm1Cz28ak" role="3cpWs9">
               <property role="TrG5h" value="call" />
+              <property role="3TUv4t" value="true" />
               <node concept="3Tqbb2" id="2RSm1Cz28al" role="1tU5fm">
                 <ref role="ehGHo" to="uu1k:54ERyg8J8QQ" resolve="QualifiedLatticeMemberCall" />
               </node>
@@ -463,6 +465,7 @@
                 <node concept="3cpWs8" id="2RSm1Cz28aH" role="3cqZAp">
                   <node concept="3cpWsn" id="2RSm1Cz28aI" role="3cpWs9">
                     <property role="TrG5h" value="modules" />
+                    <property role="3TUv4t" value="true" />
                     <node concept="2hMVRd" id="2RSm1Cz28aJ" role="1tU5fm">
                       <node concept="3Tqbb2" id="2RSm1Cz28aK" role="2hN53Y">
                         <ref role="ehGHo" to="hqsm:Y78e7A6TUt" resolve="IIncaModule" />
@@ -491,6 +494,7 @@
                 <node concept="3cpWs8" id="2RSm1Cz28aT" role="3cqZAp">
                   <node concept="3cpWsn" id="2RSm1Cz28aU" role="3cpWs9">
                     <property role="TrG5h" value="constructors" />
+                    <property role="3TUv4t" value="true" />
                     <node concept="_YKpA" id="2RSm1Cz28aV" role="1tU5fm">
                       <node concept="3Tqbb2" id="2RSm1Cz28aW" role="_ZDj9">
                         <ref role="ehGHo" to="uu1k:3l0M8IajV$$" resolve="IDataConstructor" />
@@ -549,6 +553,7 @@
                 <node concept="3cpWs8" id="2RSm1Cz28bi" role="3cqZAp">
                   <node concept="3cpWsn" id="2RSm1Cz28bj" role="3cpWs9">
                     <property role="TrG5h" value="nameMap" />
+                    <property role="3TUv4t" value="true" />
                     <node concept="3uibUv" id="2RSm1Cz28bk" role="1tU5fm">
                       <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
                       <node concept="17QB3L" id="2RSm1Cz28bl" role="11_B2D" />
@@ -705,6 +710,7 @@
                 <node concept="3cpWs8" id="2RSm1Cz28cj" role="3cqZAp">
                   <node concept="3cpWsn" id="2RSm1Cz28ck" role="3cpWs9">
                     <property role="TrG5h" value="result" />
+                    <property role="3TUv4t" value="true" />
                     <node concept="_YKpA" id="2RSm1Cz28cl" role="1tU5fm">
                       <node concept="3Tqbb2" id="2RSm1Cz28cm" role="_ZDj9">
                         <ref role="ehGHo" to="uu1k:3l0M8IajV$$" resolve="IDataConstructor" />
