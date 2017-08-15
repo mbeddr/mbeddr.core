@@ -2,7 +2,7 @@
 <model ref="r:a81711cf-0f40-4048-a3c7-d81e15b4c39b(com.mbeddr.analyses.acsl.cbmc.gen.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
+    <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports />
   <registry />

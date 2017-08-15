@@ -2,9 +2,7 @@
 <model ref="r:071dfb19-bba7-4a45-a209-478de09a1fc8(com.mbeddr.analyses.cbmc.concurrency.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
@@ -47,7 +45,7 @@
     <property role="EcuMT" value="325797382106458702" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="3V3CJZuMTCa" role="PzmwI">
-      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
+      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="3V3CJZuJLdS">
@@ -71,7 +69,7 @@
       <ref role="20lvS9" to="x27k:5HTuIUPB$3z" resolve="LabelStatement" />
     </node>
     <node concept="PrWs8" id="3V3CJZuMTCN" role="PzmwI">
-      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
+      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLike" />
     </node>
   </node>
 </model>
