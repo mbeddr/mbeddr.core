@@ -433,13 +433,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -967,93 +960,16 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2XJmEcjzl1b" role="3cqZAp">
-          <node concept="2OqwBi" id="2XJmEcjzlfQ" role="3clFbG">
-            <node concept="37vLTw" id="2XJmEcjzl19" role="2Oq$k0">
-              <ref role="3cqZAo" node="50Rn4r1GlT$" resolve="graph" />
-            </node>
-            <node concept="liA8E" id="2XJmEcjzlFM" role="2OqNvi">
-              <ref role="37wK5l" to="5svn:~Graph.clearHighlighting():void" resolve="clearHighlighting" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="7nFmMse02_W" role="3cqZAp" />
         <node concept="3clFbJ" id="50Rn4r1MClU" role="3cqZAp">
           <node concept="3clFbS" id="50Rn4r1MClW" role="3clFbx">
-            <node concept="3SKdUt" id="7nFmMsdFKh6" role="3cqZAp">
-              <node concept="3SKdUq" id="7nFmMsdFKh8" role="3SKWNk">
-                <property role="3SKdUp" value="following commented code is how regular creation would work." />
-              </node>
-            </node>
-            <node concept="3SKdUt" id="6x5UxX32sXX" role="3cqZAp">
-              <node concept="3SKdUq" id="6x5UxX32sXY" role="3SKWNk">
-                <property role="3SKdUp" value="Unfortunately MPS does some strange things in the UI, so some hotfixes are applied (see ViewHelper)" />
-              </node>
-            </node>
-            <node concept="1X3_iC" id="7nFmMsdFJd0" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3cpWs8" id="7nFmMsdFbpG" role="8Wnug">
-                <node concept="3cpWsn" id="7nFmMsdFbpH" role="3cpWs9">
-                  <property role="TrG5h" value="viewManager" />
-                  <node concept="3uibUv" id="7nFmMsdFbpI" role="1tU5fm">
-                    <ref role="3uigEE" to="uc57:~GraphstreamViewManager" resolve="GraphstreamViewManager" />
-                  </node>
-                  <node concept="2ShNRf" id="7nFmMsdFbpJ" role="33vP2m">
-                    <node concept="1pGfFk" id="7nFmMsdFbpK" role="2ShVmc">
-                      <ref role="37wK5l" to="uc57:~GraphstreamViewManager.&lt;init&gt;(de.itemis.graphing.model.Graph)" resolve="GraphstreamViewManager" />
-                      <node concept="37vLTw" id="7nFmMsdFbpL" role="37wK5m">
-                        <ref role="3cqZAo" node="50Rn4r1GlT$" resolve="graph" />
-                      </node>
-                    </node>
-                  </node>
+            <node concept="3clFbF" id="2XJmEcjzl1b" role="3cqZAp">
+              <node concept="2OqwBi" id="2XJmEcjzlfQ" role="3clFbG">
+                <node concept="37vLTw" id="2XJmEcjzl19" role="2Oq$k0">
+                  <ref role="3cqZAo" node="50Rn4r1GlT$" resolve="graph" />
                 </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="7nFmMsdFJlg" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="7nFmMsdFd7c" role="8Wnug">
-                <node concept="2OqwBi" id="7nFmMsdFdnk" role="3clFbG">
-                  <node concept="37vLTw" id="7nFmMsdFd7a" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7nFmMsdFbpH" resolve="viewManager" />
-                  </node>
-                  <node concept="liA8E" id="7nFmMsdFe3d" role="2OqNvi">
-                    <ref role="37wK5l" to="uc57:~GraphstreamViewManager.configure(org.graphstream.ui.layout.Layout):void" resolve="configure" />
-                    <node concept="2ShNRf" id="7nFmMsdFe4M" role="37wK5m">
-                      <node concept="1pGfFk" id="7nFmMsdFe4N" role="2ShVmc">
-                        <ref role="37wK5l" to="fblp:~StaticLayout.&lt;init&gt;(de.itemis.graphing.model.Graph,de.itemis.graphing.layout.ILayout)" resolve="StaticLayout" />
-                        <node concept="37vLTw" id="7nFmMsdFe4O" role="37wK5m">
-                          <ref role="3cqZAo" node="50Rn4r1GlT$" resolve="graph" />
-                        </node>
-                        <node concept="2OqwBi" id="7nFmMsdFe4P" role="37wK5m">
-                          <node concept="37vLTw" id="7nFmMsdFe4Q" role="2Oq$k0">
-                            <ref role="3cqZAo" node="50Rn4r1H1tN" resolve="gi" />
-                          </node>
-                          <node concept="liA8E" id="7nFmMsdFe4R" role="2OqNvi">
-                            <ref role="37wK5l" node="50Rn4r1HbzV" resolve="getLayout" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="7nFmMsdFJtT" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="7nFmMsdFzPs" role="8Wnug">
-                <node concept="37vLTI" id="7nFmMsdF$kF" role="3clFbG">
-                  <node concept="37vLTw" id="7nFmMsdF$my" role="37vLTx">
-                    <ref role="3cqZAo" node="7nFmMsdFbpH" resolve="viewManager" />
-                  </node>
-                  <node concept="2OqwBi" id="7nFmMsdFzZV" role="37vLTJ">
-                    <node concept="2WthIp" id="7nFmMsdFzPq" role="2Oq$k0" />
-                    <node concept="2BZ7hE" id="7nFmMsdF$a4" role="2OqNvi">
-                      <ref role="2WH_rO" node="4JBT2R9Uvdi" resolve="viewManager" />
-                    </node>
-                  </node>
+                <node concept="liA8E" id="2XJmEcjzlFM" role="2OqNvi">
+                  <ref role="37wK5l" to="5svn:~Graph.clearHighlighting():void" resolve="clearHighlighting" />
                 </node>
               </node>
             </node>
@@ -3217,18 +3133,24 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5zrVLV_TROL" role="jymVt" />
-    <node concept="3clFb_" id="50Rn4r1HbzR" role="jymVt">
+    <node concept="3clFb_" id="50Rn4r1MrGZ" role="jymVt">
       <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="getGraph" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="50Rn4r1HbzS" role="3clF47" />
-      <node concept="3Tm1VV" id="50Rn4r1HbzT" role="1B3o_S" />
-      <node concept="3uibUv" id="50Rn4r1HbzU" role="3clF45">
-        <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
+      <property role="TrG5h" value="getRenderingTechnology" />
+      <node concept="3clFbS" id="50Rn4r1MrH2" role="3clF47" />
+      <node concept="3Tm1VV" id="50Rn4r1MrH3" role="1B3o_S" />
+      <node concept="3uibUv" id="50Rn4r1MrBu" role="3clF45">
+        <ref role="3uigEE" node="50Rn4r1MriY" resolve="IGraphingInformation.ERenderingTechnology" />
+      </node>
+      <node concept="P$JXv" id="4G2jA20fCeZ" role="lGtFl">
+        <node concept="TZ5HA" id="4G2jA20fCf0" role="TZ5H$">
+          <node concept="1dT_AC" id="4G2jA20fCf1" role="1dT_Ay">
+            <property role="1dT_AB" value="Should always return ERenderingTechnology.Graphstream (only interactive renderer currently available)" />
+          </node>
+        </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4G2jA20fBLp" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1HbzV" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getLayout" />
@@ -3240,7 +3162,45 @@
       <node concept="3uibUv" id="50Rn4r1HbzY" role="3clF45">
         <ref role="3uigEE" to="2yw0:~ILayout" resolve="ILayout" />
       </node>
+      <node concept="P$JXv" id="4G2jA20fCkc" role="lGtFl">
+        <node concept="TZ5HA" id="4G2jA20fCkd" role="TZ5H$">
+          <node concept="1dT_AC" id="4G2jA20fCke" role="1dT_Ay">
+            <property role="1dT_AB" value="Returning &quot;HierarchicalLayoutJGraphX()&quot; is recommended. Alternatives are available. Must not be null." />
+          </node>
+        </node>
+      </node>
     </node>
+    <node concept="2tJIrI" id="4G2jA20fBJE" role="jymVt" />
+    <node concept="3clFb_" id="50Rn4r1HbzR" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getGraph" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="50Rn4r1HbzS" role="3clF47" />
+      <node concept="3Tm1VV" id="50Rn4r1HbzT" role="1B3o_S" />
+      <node concept="3uibUv" id="50Rn4r1HbzU" role="3clF45">
+        <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
+      </node>
+      <node concept="P$JXv" id="4G2jA20fAU0" role="lGtFl">
+        <node concept="TZ5HA" id="4G2jA20fAU1" role="TZ5H$">
+          <node concept="1dT_AC" id="4G2jA20fAU2" role="1dT_Ay">
+            <property role="1dT_AB" value="Called by the framework to retrieve the graph." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4G2jA20fB0l" role="TZ5H$">
+          <node concept="1dT_AC" id="4G2jA20fB0m" role="1dT_Ay">
+            <property role="1dT_AB" value="Initial rendering is faster when Vertexes and Edges are already inserted but" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4G2jA20fB3Z" role="TZ5H$">
+          <node concept="1dT_AC" id="4G2jA20fB40" role="1dT_Ay">
+            <property role="1dT_AB" value="most viewers support adding additional elements to the graph later." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4G2jA20fB8$" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1HbzZ" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getInteractionListeners" />
@@ -3254,17 +3214,15 @@
           <ref role="3uigEE" to="upej:~IInteractionListener" resolve="IInteractionListener" />
         </node>
       </node>
-    </node>
-    <node concept="3clFb_" id="50Rn4r1MrGZ" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getRenderingTechnology" />
-      <node concept="3clFbS" id="50Rn4r1MrH2" role="3clF47" />
-      <node concept="3Tm1VV" id="50Rn4r1MrH3" role="1B3o_S" />
-      <node concept="3uibUv" id="50Rn4r1MrBu" role="3clF45">
-        <ref role="3uigEE" node="50Rn4r1MriY" resolve="IGraphingInformation.ERenderingTechnology" />
+      <node concept="P$JXv" id="4G2jA20fBdp" role="lGtFl">
+        <node concept="TZ5HA" id="4G2jA20fBdq" role="TZ5H$">
+          <node concept="1dT_AC" id="4G2jA20fBdr" role="1dT_Ay">
+            <property role="1dT_AB" value="The interaction listeners returned by this function are registered at the viewer by the framework. May be null." />
+          </node>
+        </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4G2jA20fBaa" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1Hb$4" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
@@ -3273,6 +3231,13 @@
       <node concept="3Tm1VV" id="50Rn4r1Hb$6" role="1B3o_S" />
       <node concept="3uibUv" id="50Rn4r1Hb$7" role="3clF45">
         <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
+      </node>
+      <node concept="P$JXv" id="4G2jA20fBQ$" role="lGtFl">
+        <node concept="TZ5HA" id="4G2jA20fBQ_" role="TZ5H$">
+          <node concept="1dT_AC" id="4G2jA20fBQA" role="1dT_Ay">
+            <property role="1dT_AB" value="The component returned by this function is added below the main toolbar of the graphing tool. May be null." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5zrVLV_TRNI" role="jymVt" />
@@ -3283,7 +3248,15 @@
       <node concept="3clFbS" id="7nFmMse05VM" role="3clF47" />
       <node concept="3Tm1VV" id="7nFmMse05VN" role="1B3o_S" />
       <node concept="3cqZAl" id="7nFmMse05Uu" role="3clF45" />
+      <node concept="P$JXv" id="4G2jA20fBUV" role="lGtFl">
+        <node concept="TZ5HA" id="4G2jA20fBUW" role="TZ5H$">
+          <node concept="1dT_AC" id="4G2jA20fBUX" role="1dT_Ay">
+            <property role="1dT_AB" value="Called by the framework when the tool is created and initialized." />
+          </node>
+        </node>
+      </node>
     </node>
+    <node concept="2tJIrI" id="4G2jA20fBZG" role="jymVt" />
     <node concept="3clFb_" id="5zrVLV_TRYW" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
@@ -3291,6 +3264,13 @@
       <node concept="3clFbS" id="5zrVLV_TRYZ" role="3clF47" />
       <node concept="3Tm1VV" id="5zrVLV_TRZ0" role="1B3o_S" />
       <node concept="3cqZAl" id="5zrVLV_TRXN" role="3clF45" />
+      <node concept="P$JXv" id="4G2jA20fC9N" role="lGtFl">
+        <node concept="TZ5HA" id="4G2jA20fC9O" role="TZ5H$">
+          <node concept="1dT_AC" id="4G2jA20fC9P" role="1dT_Ay">
+            <property role="1dT_AB" value="Called by the framework when users clicks &quot;refresh&quot;." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="50Rn4r1HbyK" role="1B3o_S" />
   </node>
@@ -4469,17 +4449,6 @@
     <property role="3GE5qa" value="api" />
     <property role="TrG5h" value="GraphingInformationBase" />
     <property role="1sVAO0" value="true" />
-    <node concept="312cEg" id="6x5UxX31siQ" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="_graph" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tmbuc" id="6x5UxX31r$s" role="1B3o_S" />
-      <node concept="3uibUv" id="6x5UxX31sbo" role="1tU5fm">
-        <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6x5UxX31rd_" role="jymVt" />
     <node concept="312cEg" id="6x5UxX31hzP" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -4501,29 +4470,6 @@
       <node concept="3Tmbuc" id="6x5UxX31hTw" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="6x5UxX31hSy" role="jymVt" />
-    <node concept="3clFbW" id="6x5UxX31t5l" role="jymVt">
-      <node concept="3cqZAl" id="6x5UxX31t5n" role="3clF45" />
-      <node concept="3Tm1VV" id="6x5UxX31t5o" role="1B3o_S" />
-      <node concept="3clFbS" id="6x5UxX31t5p" role="3clF47">
-        <node concept="3clFbF" id="6x5UxX31tPq" role="3cqZAp">
-          <node concept="37vLTI" id="6x5UxX31uAf" role="3clFbG">
-            <node concept="37vLTw" id="6x5UxX31uZw" role="37vLTx">
-              <ref role="3cqZAo" node="6x5UxX31toJ" resolve="graph" />
-            </node>
-            <node concept="37vLTw" id="6x5UxX31tPp" role="37vLTJ">
-              <ref role="3cqZAo" node="6x5UxX31siQ" resolve="_graph" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="6x5UxX31toJ" role="3clF46">
-        <property role="TrG5h" value="graph" />
-        <node concept="3uibUv" id="6x5UxX31toI" role="1tU5fm">
-          <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6x5UxX31qTn" role="jymVt" />
     <node concept="3clFb_" id="6x5UxX31gvI" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="2aFKle" value="false" />
@@ -4569,24 +4515,47 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6x5UxX31wcd" role="jymVt" />
-    <node concept="3clFb_" id="6x5UxX31gvS" role="jymVt">
+    <node concept="3clFb_" id="4G2jA20ffnf" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getGraph" />
+      <property role="TrG5h" value="getLayout" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3Tm1VV" id="6x5UxX31gvU" role="1B3o_S" />
-      <node concept="3uibUv" id="6x5UxX31gvV" role="3clF45">
-        <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
+      <node concept="3Tm1VV" id="4G2jA20ffnh" role="1B3o_S" />
+      <node concept="3uibUv" id="4G2jA20ffni" role="3clF45">
+        <ref role="3uigEE" to="2yw0:~ILayout" resolve="ILayout" />
       </node>
-      <node concept="3clFbS" id="6x5UxX31gvW" role="3clF47">
-        <node concept="3cpWs6" id="6x5UxX31viR" role="3cqZAp">
-          <node concept="37vLTw" id="6x5UxX31vwQ" role="3cqZAk">
-            <ref role="3cqZAo" node="6x5UxX31siQ" resolve="_graph" />
+      <node concept="3clFbS" id="4G2jA20ffnj" role="3clF47">
+        <node concept="3cpWs6" id="50Rn4r1Fsv0" role="3cqZAp">
+          <node concept="2ShNRf" id="50Rn4r1FsSO" role="3cqZAk">
+            <node concept="1pGfFk" id="50Rn4r1FsSP" role="2ShVmc">
+              <ref role="37wK5l" to="2yw0:~HierarchicalLayoutJGraphX.&lt;init&gt;()" resolve="HierarchicalLayoutJGraphX" />
+            </node>
           </node>
         </node>
       </node>
-      <node concept="2AHcQZ" id="6x5UxX31gvX" role="2AJF6D">
+      <node concept="2AHcQZ" id="4G2jA20ffnk" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4G2jA20ffMI" role="jymVt" />
+    <node concept="3clFb_" id="4G2jA20ffnn" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getRenderingTechnology" />
+      <node concept="3Tm1VV" id="4G2jA20ffnp" role="1B3o_S" />
+      <node concept="3uibUv" id="4G2jA20ffnq" role="3clF45">
+        <ref role="3uigEE" node="50Rn4r1MriY" resolve="IGraphingInformation.ERenderingTechnology" />
+      </node>
+      <node concept="3clFbS" id="4G2jA20ffnr" role="3clF47">
+        <node concept="3cpWs6" id="50Rn4r1MxLo" role="3cqZAp">
+          <node concept="Rm8GO" id="50Rn4r1M$HS" role="3cqZAk">
+            <ref role="1Px2BO" node="50Rn4r1MriY" resolve="IGraphingInformation.ERenderingTechnology" />
+            <ref role="Rm8GQ" node="50Rn4r1Mrq1" resolve="Graphstream" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4G2jA20ffns" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
@@ -4614,17 +4583,6 @@
       <node concept="3cqZAl" id="6x5UxX32z3f" role="3clF45" />
       <node concept="3Tm1VV" id="6x5UxX32z3g" role="1B3o_S" />
       <node concept="3clFbS" id="6x5UxX32z3h" role="3clF47">
-        <node concept="XkiVB" id="6x5UxX32zUI" role="3cqZAp">
-          <ref role="37wK5l" node="6x5UxX31t5l" resolve="GraphingInformationBase" />
-          <node concept="2OqwBi" id="6x5UxX32$ia" role="37wK5m">
-            <node concept="37vLTw" id="6x5UxX32$5x" role="2Oq$k0">
-              <ref role="3cqZAo" node="6x5UxX32zr0" resolve="originalGI" />
-            </node>
-            <node concept="liA8E" id="6x5UxX32$vq" role="2OqNvi">
-              <ref role="37wK5l" node="50Rn4r1HbzR" resolve="getGraph" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6x5UxX32LDB" role="3cqZAp">
           <node concept="37vLTI" id="6x5UxX32MrC" role="3clFbG">
             <node concept="37vLTw" id="6x5UxX32MI8" role="37vLTx">
@@ -4644,6 +4602,27 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6x5UxX32Rk$" role="jymVt" />
+    <node concept="3clFb_" id="6x5UxX32v24" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getRenderingTechnology" />
+      <node concept="3Tm1VV" id="6x5UxX32v26" role="1B3o_S" />
+      <node concept="3uibUv" id="6x5UxX32v27" role="3clF45">
+        <ref role="3uigEE" node="50Rn4r1MriY" resolve="IGraphingInformation.ERenderingTechnology" />
+      </node>
+      <node concept="3clFbS" id="6x5UxX32v29" role="3clF47">
+        <node concept="3cpWs6" id="6x5UxX32xbo" role="3cqZAp">
+          <node concept="Rm8GO" id="6x5UxX32y5H" role="3cqZAk">
+            <ref role="1Px2BO" node="50Rn4r1MriY" resolve="IGraphingInformation.ERenderingTechnology" />
+            <ref role="Rm8GQ" node="6x5UxX30LPA" resolve="GraphViz" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6x5UxX32v2a" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4G2jA20g4JM" role="jymVt" />
     <node concept="3clFb_" id="6x5UxX32v1N" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getLayout" />
@@ -4664,6 +4643,33 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6x5UxX32R2Z" role="jymVt" />
+    <node concept="3clFb_" id="4G2jA20g5ms" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getGraph" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3Tm1VV" id="4G2jA20g5mu" role="1B3o_S" />
+      <node concept="3uibUv" id="4G2jA20g5mv" role="3clF45">
+        <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
+      </node>
+      <node concept="3clFbS" id="4G2jA20g5mC" role="3clF47">
+        <node concept="3cpWs6" id="4G2jA20g6m8" role="3cqZAp">
+          <node concept="2OqwBi" id="4G2jA20g71m" role="3cqZAk">
+            <node concept="37vLTw" id="4G2jA20g6B3" role="2Oq$k0">
+              <ref role="3cqZAo" node="6x5UxX32Kbu" resolve="_originalGI" />
+            </node>
+            <node concept="liA8E" id="4G2jA20g7sE" role="2OqNvi">
+              <ref role="37wK5l" node="50Rn4r1HbzR" resolve="getGraph" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4G2jA20g5mD" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4G2jA20g5BN" role="jymVt" />
     <node concept="3clFb_" id="6x5UxX32v1W" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getInteractionListeners" />
@@ -4686,27 +4692,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6x5UxX32QPL" role="jymVt" />
-    <node concept="3clFb_" id="6x5UxX32v24" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getRenderingTechnology" />
-      <node concept="3Tm1VV" id="6x5UxX32v26" role="1B3o_S" />
-      <node concept="3uibUv" id="6x5UxX32v27" role="3clF45">
-        <ref role="3uigEE" node="50Rn4r1MriY" resolve="IGraphingInformation.ERenderingTechnology" />
-      </node>
-      <node concept="3clFbS" id="6x5UxX32v29" role="3clF47">
-        <node concept="3cpWs6" id="6x5UxX32xbo" role="3cqZAp">
-          <node concept="Rm8GO" id="6x5UxX32y5H" role="3cqZAk">
-            <ref role="1Px2BO" node="50Rn4r1MriY" resolve="IGraphingInformation.ERenderingTechnology" />
-            <ref role="Rm8GQ" node="6x5UxX30LPA" resolve="GraphViz" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="6x5UxX32v2a" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6x5UxX32Q$e" role="jymVt" />
     <node concept="3clFb_" id="6x5UxX32v2d" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="2aFKle" value="false" />
