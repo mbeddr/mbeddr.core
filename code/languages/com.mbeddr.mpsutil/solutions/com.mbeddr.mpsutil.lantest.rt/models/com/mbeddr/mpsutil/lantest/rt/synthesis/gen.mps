@@ -930,7 +930,7 @@
               <ref role="3cqZAo" node="4m$eX95mSeU" resolve="cc" />
             </node>
             <node concept="liA8E" id="4m$eX95mSf7" role="2OqNvi">
-              <ref role="37wK5l" to="k2t0:~ConstraintsChecker.checkNode(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.checkers.LanguageErrorsComponent,org.jetbrains.mps.openapi.module.SRepository):void" resolve="checkNode" />
+              <ref role="37wK5l" to="k2t0:~ConstraintsChecker.checkNode(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.checkers.LanguageErrorsCollector,org.jetbrains.mps.openapi.module.SRepository):void" resolve="checkNode" />
               <node concept="37vLTw" id="4m$eX95n12e" role="37wK5m">
                 <ref role="3cqZAo" node="4m$eX95mjAH" resolve="aNode" />
               </node>
@@ -1031,7 +1031,7 @@
               <ref role="3cqZAo" node="3h3WLdWgWXn" resolve="cc" />
             </node>
             <node concept="liA8E" id="3h3WLdWgWXA" role="2OqNvi">
-              <ref role="37wK5l" to="k2t0:~RefScopeChecker.checkNode(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.checkers.LanguageErrorsComponent,org.jetbrains.mps.openapi.module.SRepository):void" resolve="checkNode" />
+              <ref role="37wK5l" to="k2t0:~RefScopeChecker.checkNode(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.checkers.LanguageErrorsCollector,org.jetbrains.mps.openapi.module.SRepository):void" resolve="checkNode" />
               <node concept="37vLTw" id="3h3WLdWgWXB" role="37wK5m">
                 <ref role="3cqZAo" node="3h3WLdWgWXT" resolve="aNode" />
               </node>
@@ -1132,7 +1132,7 @@
               <ref role="3cqZAo" node="5B6zmQu48Sg" resolve="tcc" />
             </node>
             <node concept="liA8E" id="5B6zmQu48Sv" role="2OqNvi">
-              <ref role="37wK5l" to="k2t0:~TargetConceptChecker.checkNode(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.checkers.LanguageErrorsComponent,org.jetbrains.mps.openapi.module.SRepository):void" resolve="checkNode" />
+              <ref role="37wK5l" to="k2t0:~TargetConceptChecker.checkNode(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.checkers.LanguageErrorsCollector,org.jetbrains.mps.openapi.module.SRepository):void" resolve="checkNode" />
               <node concept="37vLTw" id="5B6zmQu48Sw" role="37wK5m">
                 <ref role="3cqZAo" node="5B6zmQu48SM" resolve="aNode" />
               </node>
