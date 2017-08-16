@@ -521,15 +521,6 @@
       <node concept="3F2HdR" id="3R$6B6bKxEG" role="3EZMnx">
         <ref role="1NtTu8" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
         <node concept="2EHx9g" id="2hmLFgaotdy" role="2czzBx" />
-        <node concept="pVoyu" id="3R$6B6bKxEI" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="3R$6B6bKxEK" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pj6Ft" id="3R$6B6bKxEM" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="3F0ifn" id="72IKZbjZk99" role="2czzBI">
           <property role="3F0ifm" value="" />
           <node concept="VPxyj" id="72IKZbjZk9a" role="3F10Kt">
