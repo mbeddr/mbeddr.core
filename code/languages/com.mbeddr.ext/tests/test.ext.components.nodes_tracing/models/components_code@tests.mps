@@ -64,7 +64,7 @@
             <property role="BaGAP" value="" />
           </node>
           <node concept="Xl_RD" id="73SKUHF91YP" role="1xDQ1B">
-            <property role="Xl_RC" value="Main" />
+            <property role="Xl_RC" value="ComponentsTracingTest" />
           </node>
         </node>
       </node>
