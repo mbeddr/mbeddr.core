@@ -1051,15 +1051,15 @@
         <node concept="3cpWs8" id="7r8qu42xnk7" role="3cqZAp">
           <node concept="3cpWsn" id="7r8qu42xnk8" role="3cpWs9">
             <property role="TrG5h" value="editorComponent" />
-            <node concept="3uibUv" id="7r8qu42xnk6" role="1tU5fm">
-              <ref role="3uigEE" to="exr9:~NodeEditorComponent" resolve="NodeEditorComponent" />
+            <node concept="3uibUv" id="5M27kBXP3Bs" role="1tU5fm">
+              <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
             </node>
             <node concept="2ShNRf" id="7r8qu42xnk9" role="33vP2m">
               <node concept="YeOm9" id="7r8qu42xnka" role="2ShVmc">
                 <node concept="1Y3b0j" id="7r8qu42xnkb" role="YeSDq">
                   <property role="2bfB8j" value="true" />
-                  <ref role="1Y3XeK" to="exr9:~NodeEditorComponent" resolve="NodeEditorComponent" />
-                  <ref role="37wK5l" to="exr9:~NodeEditorComponent.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="NodeEditorComponent" />
+                  <ref role="1Y3XeK" to="exr9:~UIEditorComponent" resolve="UIEditorComponent" />
+                  <ref role="37wK5l" to="exr9:~UIEditorComponent.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,jetbrains.mps.nodeEditor.inspector.InspectorEditorComponent)" resolve="UIEditorComponent" />
                   <node concept="3Tm1VV" id="7r8qu42xnkc" role="1B3o_S" />
                   <node concept="2OqwBi" id="7r8qu42xnkd" role="37wK5m">
                     <node concept="2OqwBi" id="7r8qu42xnke" role="2Oq$k0">
@@ -1074,6 +1074,7 @@
                       <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                     </node>
                   </node>
+                  <node concept="10Nm6u" id="5M27kBXP6aR" role="37wK5m" />
                   <node concept="3clFb_" id="7r8qu42xnki" role="jymVt">
                     <property role="1EzhhJ" value="false" />
                     <property role="TrG5h" value="isReadOnly" />
