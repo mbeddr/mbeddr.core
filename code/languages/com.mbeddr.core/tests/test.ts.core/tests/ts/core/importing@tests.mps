@@ -39,9 +39,6 @@
       </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
-      <concept id="8850915533694634145" name="com.mbeddr.core.statements.structure.InitExpression" flags="ng" index="3o3WLD">
-        <child id="8850915533694634146" name="elements" index="3o3WLE" />
-      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
@@ -56,11 +53,6 @@
       </concept>
       <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
         <reference id="8719112291175211414" name="template" index="2xfifS" />
-      </concept>
-    </language>
-    <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
-      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
-        <property id="6113173064526131578" name="value" index="PhEJT" />
       </concept>
     </language>
     <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
@@ -79,18 +71,11 @@
       <concept id="6116558314501347863" name="com.mbeddr.core.udt.structure.TypeDefType" flags="ng" index="rcJHQ">
         <reference id="6116558314501347864" name="typeDef" index="rcJHT" />
       </concept>
-      <concept id="4202685725779366523" name="com.mbeddr.core.udt.structure.MemberInitExpression" flags="ng" index="2xZu8t">
-        <reference id="4202685725779391329" name="element" index="2xZoc7" />
-        <child id="4202685725779390438" name="value" index="2xZpY0" />
-      </concept>
       <concept id="7099329415459817973" name="com.mbeddr.core.udt.structure.SUDeclaration" flags="ng" index="HsMI8">
         <child id="7099329415459888018" name="members" index="HszBJ" />
       </concept>
       <concept id="5882395403881875736" name="com.mbeddr.core.udt.structure.Member" flags="ng" index="1dpRTG" />
       <concept id="6394819151180597807" name="com.mbeddr.core.udt.structure.StructDeclaration" flags="ng" index="1sgJKc" />
-      <concept id="6394819151180597816" name="com.mbeddr.core.udt.structure.StructType" flags="ng" index="1sgJKr">
-        <reference id="6394819151180597817" name="struct" index="1sgJKq" />
-      </concept>
       <concept id="8811614583515725853" name="com.mbeddr.core.udt.structure.EnumLiteral" flags="ng" index="1AkAjq">
         <child id="8811614583515725856" name="init" index="1AkAjB" />
       </concept>
@@ -169,7 +154,6 @@
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
-      <concept id="8860443239512128099" name="com.mbeddr.core.expressions.structure.FalseLiteral" flags="ng" index="3TlMhd" />
     </language>
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
       <concept id="5943183680458525568" name="com.mbeddr.core.modules.gen.structure.ForceImportReferencedElements" flags="ng" index="3YQQmh" />
@@ -421,58 +405,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1qefOq" id="4a$W5l2ElR3" role="1SKRRt">
-      <node concept="N3F5e" id="4a$W5l2Emgn" role="1qenE9">
-        <property role="TrG5h" value="user_config" />
-        <node concept="3GEVxB" id="4a$W5l2Emns" role="2OODSX">
-          <property role="3GEa6x" value="false" />
-          <ref role="3GEb4d" node="4AYy6hk7SkY" resolve="SimpleHTTPFOTAUpdateRequestBuilderImpl" />
-          <node concept="7CXmI" id="4a$W5l2EmLX" role="lGtFl">
-            <node concept="1TM$A" id="4a$W5l2EmLY" role="7EUXB">
-              <node concept="2PYRI3" id="4a$W5l2EmM5" role="3lydEf">
-                <ref role="39XzEq" to="p3tm:a8pihN4Iev" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1S7NMz" id="4a$W5l2Emnv" role="N3F5h">
-          <property role="TrG5h" value="HTTP_FOTA_UPDATE_REQUEST_DEFAULT_CONFIG" />
-          <property role="2OOxQR" value="true" />
-          <node concept="1sgJKr" id="4a$W5l2Emnw" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="2fj$BeOcT42" resolve="HTTPFOTAUpdateRequestConfig" />
-          </node>
-          <node concept="3o3WLD" id="4a$W5l2Emnx" role="1cecVj">
-            <node concept="2xZu8t" id="4a$W5l2Emny" role="3o3WLE">
-              <ref role="2xZoc7" node="2fj$BeOcT3V" resolve="secure" />
-              <node concept="3TlMhd" id="4a$W5l2Emnz" role="2xZpY0" />
-            </node>
-            <node concept="2xZu8t" id="4a$W5l2Emn$" role="3o3WLE">
-              <ref role="2xZoc7" node="2fj$BeOcT3X" resolve="hostName" />
-              <node concept="PhEJO" id="4a$W5l2Emn_" role="2xZpY0">
-                <property role="PhEJT" value="192.168.1.8" />
-              </node>
-            </node>
-            <node concept="2xZu8t" id="4a$W5l2EmnA" role="3o3WLE">
-              <ref role="2xZoc7" node="2fj$BeOcT3Z" resolve="port" />
-              <node concept="3TlMh9" id="4a$W5l2EmnB" role="2xZpY0">
-                <property role="2hmy$m" value="80" />
-              </node>
-            </node>
-            <node concept="2xZu8t" id="4a$W5l2EmnC" role="3o3WLE">
-              <ref role="2xZoc7" node="2fj$BeOcT41" resolve="firmwarePathPattern" />
-              <node concept="PhEJO" id="4a$W5l2EmnD" role="2xZpY0">
-                <property role="PhEJT" value="/user%d.bin" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="7CXmI" id="4a$W5l2Emgu" role="lGtFl">
-          <node concept="7OXhh" id="4a$W5l2Emgv" role="7EUXB" />
         </node>
       </node>
     </node>
