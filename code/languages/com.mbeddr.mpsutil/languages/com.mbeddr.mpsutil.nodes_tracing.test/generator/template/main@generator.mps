@@ -132,9 +132,13 @@
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="7473026166162327259" name="dropAttrubuteRule" index="CYSdJ" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
       </concept>
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
+      <concept id="7473026166162297915" name="jetbrains.mps.lang.generator.structure.DropAttributeRule" flags="lg" index="CY16f">
+        <reference id="7473026166162297918" name="applicableConcept" index="CY16a" />
+      </concept>
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
@@ -1069,6 +1073,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="CY16f" id="QIiPbL_fmo" role="CYSdJ">
+      <ref role="CY16a" to="ls3:7HmzdkqTe2y" resolve="TracingAnnotation" />
     </node>
   </node>
 </model>
