@@ -22,8 +22,8 @@
     <import index="j807" ref="r:54210dde-4071-421e-b973-a22bb864eeac(com.mbeddr.core.pointers.typesystem)" />
     <import index="u2l0" ref="r:39d65015-9994-4ec8-bfc1-fb277098386e(com.mbeddr.ext.components.units.typesystem)" />
     <import index="go54" ref="r:a7e7800a-15b6-4c02-ae4d-6b40a48c7370(com.mbeddr.core.statements.typesystem)" />
-    <import index="cuyy" ref="r:ac11ea24-ba0f-4e43-93bd-726a7671bbc7(tests.ts.core.importing@tests)" implicit="true" />
     <import index="cmgk" ref="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" implicit="true" />
+    <import index="cuyy" ref="r:ac11ea24-ba0f-4e43-93bd-726a7671bbc7(tests.ts.core.importing@tests)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -900,22 +900,22 @@
             <node concept="3R_36c" id="2xYE3fFESdL" role="3R_39I">
               <ref role="3R_36f" node="2xYE3fFC9rU" resolve="pDefaultConfig" />
               <node concept="YInwV" id="2xYE3fFESdM" role="3R_36e">
-                <node concept="1S7827" id="2xYE3fFESdN" role="1_9fRO">
-                  <ref role="1S7826" to="cuyy:2fj$BeOcYEn" resolve="HTTP_FOTA_UPDATE_REQUEST_DEFAULT_CONFIG" />
+                <node concept="1S7827" id="7cBI1LfY9bS" role="1_9fRO">
+                  <ref role="1S7826" node="2fj$BeOcYEn" resolve="HTTP_FOTA_UPDATE_REQUEST_DEFAULT_CONFIG" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3GEVxB" id="2xYE3fFESdQ" role="2OODSX">
-          <ref role="3GEb4d" to="cuyy:4AYy6hk7SkY" resolve="SimpleHTTPFOTAUpdateRequestBuilderImpl" />
+        <node concept="3GEVxB" id="7cBI1LfY9bM" role="2OODSX">
+          <ref role="3GEb4d" node="4AYy6hk7SkY" resolve="SimpleHTTPFOTAUpdateRequestBuilderImpl" />
         </node>
         <node concept="3GEVxB" id="2xYE3fFESdR" role="2OODSX">
           <ref role="3GEb4d" node="2xYE3fFxAvw" resolve="EspressifHTTPFOTAUpdateRequestBuilderImpl" />
         </node>
         <node concept="3GEVxB" id="2xYE3fFESdS" role="2OODSX">
           <property role="3GEa6x" value="true" />
-          <ref role="3GEb4d" node="3AX8Th8_W7_" resolve="user_config" />
+          <ref role="3GEb4d" node="3hNaH_Dpt6C" resolve="user_config" />
         </node>
         <node concept="7CXmI" id="2xYE3fFGvND" role="lGtFl">
           <node concept="7OXhh" id="2xYE3fFGvNF" role="7EUXB">
