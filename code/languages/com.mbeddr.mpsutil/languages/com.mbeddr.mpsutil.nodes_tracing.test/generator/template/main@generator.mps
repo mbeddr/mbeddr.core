@@ -526,7 +526,7 @@
                             </node>
                             <node concept="3cpWs3" id="7UNoqC67Toy" role="3uHU7B">
                               <node concept="Xl_RD" id="7UNoqC67QFO" role="3uHU7B">
-                                <property role="Xl_RC" value="DEBUG: node searched: '" />
+                                <property role="Xl_RC" value="NODES TRACING DEBUG: node searched: '" />
                               </node>
                               <node concept="2GrUjf" id="7UNoqC67UK_" role="3uHU7w">
                                 <ref role="2Gs0qQ" node="7HmzdkqUAiG" resolve="nwa" />
@@ -638,7 +638,7 @@
                                 </node>
                                 <node concept="3cpWs3" id="7UNoqC69QG4" role="3uHU7B">
                                   <node concept="Xl_RD" id="7UNoqC69PC5" role="3uHU7B">
-                                    <property role="Xl_RC" value="DEBUG: corresponding generated line: '" />
+                                    <property role="Xl_RC" value="NODES TRACING DEBUG: corresponding generated line: '" />
                                   </node>
                                   <node concept="37vLTw" id="7UNoqC69REu" role="3uHU7w">
                                     <ref role="3cqZAo" node="7HmzdkqYCfk" resolve="normalizedSearchedLine" />
@@ -759,7 +759,7 @@
                                         </node>
                                         <node concept="3cpWs3" id="QIiPbLxuSA" role="3uHU7B">
                                           <node concept="Xl_RD" id="QIiPbLxsCH" role="3uHU7B">
-                                            <property role="Xl_RC" value="DEBUG: Line NOT found in file: '" />
+                                            <property role="Xl_RC" value="NODES TRACING DEBUG: Line NOT found in file: '" />
                                           </node>
                                           <node concept="37vLTw" id="QIiPbLxuX_" role="3uHU7w">
                                             <ref role="3cqZAo" node="7HmzdkqYpZx" resolve="fn" />
@@ -973,6 +973,45 @@
                                 </node>
                                 <node concept="37vLTw" id="7Hmzdkr0b$O" role="37wK5m">
                                   <ref role="3cqZAo" node="7HmzdkqUWWV" resolve="line" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="QIiPbLyJZ5" role="3cqZAp">
+                            <node concept="2OqwBi" id="QIiPbLyJZ2" role="3clFbG">
+                              <node concept="10M0yZ" id="QIiPbLyJZ3" role="2Oq$k0">
+                                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                              </node>
+                              <node concept="liA8E" id="QIiPbLyJZ4" role="2OqNvi">
+                                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                <node concept="3cpWs3" id="QIiPbLz0dA" role="37wK5m">
+                                  <node concept="37vLTw" id="QIiPbLz2tw" role="3uHU7w">
+                                    <ref role="3cqZAo" node="7Hmzdkr07Lt" resolve="originalNodes" />
+                                  </node>
+                                  <node concept="3cpWs3" id="QIiPbLyVy2" role="3uHU7B">
+                                    <node concept="3cpWs3" id="QIiPbLyTw_" role="3uHU7B">
+                                      <node concept="3cpWs3" id="QIiPbLyP3Q" role="3uHU7B">
+                                        <node concept="3cpWs3" id="QIiPbLyNv7" role="3uHU7B">
+                                          <node concept="Xl_RD" id="QIiPbLyKCT" role="3uHU7B">
+                                            <property role="Xl_RC" value="NODES TRACING DEBUG: file: '" />
+                                          </node>
+                                          <node concept="37vLTw" id="QIiPbLyOEb" role="3uHU7w">
+                                            <ref role="3cqZAo" node="7HmzdkqYpZx" resolve="fn" />
+                                          </node>
+                                        </node>
+                                        <node concept="Xl_RD" id="QIiPbLyRcK" role="3uHU7w">
+                                          <property role="Xl_RC" value="' - line: '" />
+                                        </node>
+                                      </node>
+                                      <node concept="37vLTw" id="QIiPbLyUEV" role="3uHU7w">
+                                        <ref role="3cqZAo" node="7HmzdkqUWWV" resolve="line" />
+                                      </node>
+                                    </node>
+                                    <node concept="Xl_RD" id="QIiPbLyY4N" role="3uHU7w">
+                                      <property role="Xl_RC" value="' - nodes: " />
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
