@@ -2,8 +2,7 @@
 <model ref="r:3154421c-68b6-458f-9d35-c7dcc90643cd(com.mbeddr.mpsutil.compare.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="8do3" ref="r:cea04c4b-adba-417e-a192-34c7a8799ac1(com.mbeddr.mpsutil.compare.structure)" />
@@ -47,7 +46,7 @@
           <node concept="2OqwBi" id="h$beNph" role="3Ah4Yx">
             <node concept="3__QtB" id="h$beNkB" role="2Oq$k0" />
             <node concept="3TrEf2" id="7jPoEeD_jQ3" role="2OqNvi">
-              <ref role="3Tt5mk" to="tpe3:7jPoEeD$ZP4" />
+              <ref role="3Tt5mk" to="tpe3:7jPoEeD$ZP4" resolve="expected" />
             </node>
           </node>
         </node>
@@ -55,7 +54,7 @@
           <node concept="2OqwBi" id="h$beQ0w" role="3Ah4Yx">
             <node concept="3__QtB" id="h$bePX4" role="2Oq$k0" />
             <node concept="3TrEf2" id="7jPoEeD_jQ4" role="2OqNvi">
-              <ref role="3Tt5mk" to="tpe3:7jPoEeD$ZP5" />
+              <ref role="3Tt5mk" to="tpe3:7jPoEeD$ZP5" resolve="actual" />
             </node>
           </node>
         </node>

@@ -2,8 +2,7 @@
 <model ref="r:45c7dafb-78d6-4475-8883-022502390b0a(com.mbeddr.mpsutil.smodule.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="gt8j" ref="r:d62dd985-922e-46d1-a30d-00dd9ec6278a(com.mbeddr.mpsutil.smodule.structure)" implicit="true" />
@@ -46,7 +45,7 @@
           <node concept="2OqwBi" id="4ZRMpUzfqk_" role="3Ah4Yx">
             <node concept="3__QtB" id="4ZRMpUzfqid" role="2Oq$k0" />
             <node concept="3TrEf2" id="4ZRMpUzfqxW" role="2OqNvi">
-              <ref role="3Tt5mk" to="gt8j:6X6$P3A2cyr" />
+              <ref role="3Tt5mk" to="gt8j:6X6$P3A2cyr" resolve="name" />
             </node>
           </node>
         </node>
@@ -54,7 +53,7 @@
           <node concept="2OqwBi" id="4ZRMpUzfqGC" role="3Ah4Yx">
             <node concept="3__QtB" id="4ZRMpUzfqEg" role="2Oq$k0" />
             <node concept="3TrEf2" id="4ZRMpUzfqTZ" role="2OqNvi">
-              <ref role="3Tt5mk" to="gt8j:6X6$P3A2cyw" />
+              <ref role="3Tt5mk" to="gt8j:6X6$P3A2cyw" resolve="relativeFolder" />
             </node>
           </node>
         </node>

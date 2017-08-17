@@ -7,7 +7,7 @@
     <use id="fe9d76d7-5809-45c9-ae28-a40915b4d6ff" name="jetbrains.mps.lang.checkedName" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -139,7 +139,7 @@
   <node concept="2S6QgY" id="2h3YlM502AZ">
     <property role="3GE5qa" value="verification_condition" />
     <property role="TrG5h" value="toggleDisabled" />
-    <ref role="2ZfgGC" to="q5q6:6$qhYL9Fk4m" resolve="VerificationConditionBase" />
+    <ref role="2ZfgGC" to="q5q6:6$qhYL9Fk4m" resolve="VerificationConditionBase_old" />
     <node concept="2S6ZIM" id="2h3YlM502B0" role="2ZfVej">
       <node concept="3clFbS" id="2h3YlM502B1" role="2VODD2">
         <node concept="3clFbF" id="2h3YlM505e4" role="3cqZAp">
@@ -157,14 +157,14 @@
               <node concept="2OqwBi" id="2h3YlM505fi" role="3fr31v">
                 <node concept="2Sf5sV" id="2h3YlM505eX" role="2Oq$k0" />
                 <node concept="3TrcHB" id="2h3YlM505fn" role="2OqNvi">
-                  <ref role="3TsBF5" to="q5q6:7erX1gT1KjQ" resolve="disabled" />
+                  <ref role="3TsBF5" to="q5q6:7erX1gT1KjQ" resolve="disabled_old" />
                 </node>
               </node>
             </node>
             <node concept="2OqwBi" id="2h3YlM505es" role="37vLTJ">
               <node concept="2Sf5sV" id="2h3YlM505e7" role="2Oq$k0" />
               <node concept="3TrcHB" id="2h3YlM505ex" role="2OqNvi">
-                <ref role="3TsBF5" to="q5q6:7erX1gT1KjQ" resolve="disabled" />
+                <ref role="3TsBF5" to="q5q6:7erX1gT1KjQ" resolve="disabled_old" />
               </node>
             </node>
           </node>
@@ -761,7 +761,7 @@
   <node concept="2S6QgY" id="6RCrcvOuqzZ">
     <property role="3GE5qa" value="statements" />
     <property role="TrG5h" value="toggleExplanation" />
-    <ref role="2ZfgGC" to="q5q6:637qsduSbtp" resolve="Assert" />
+    <ref role="2ZfgGC" to="q5q6:637qsduSbtp" resolve="Assert_old" />
     <node concept="2Sbjvc" id="6RCrcvOuq$0" role="2ZfgGD">
       <node concept="3clFbS" id="6RCrcvOuq$1" role="2VODD2">
         <node concept="3clFbJ" id="6RCrcvOus4R" role="3cqZAp">
@@ -774,7 +774,7 @@
                 <node concept="2OqwBi" id="6RCrcvOutzj" role="37vLTJ">
                   <node concept="2Sf5sV" id="6RCrcvOutvl" role="2Oq$k0" />
                   <node concept="3TrcHB" id="6RCrcvOuuef" role="2OqNvi">
-                    <ref role="3TsBF5" to="q5q6:6RCrcvOtNXu" resolve="explanation" />
+                    <ref role="3TsBF5" to="q5q6:6RCrcvOtNXu" resolve="explanation_old" />
                   </node>
                 </node>
               </node>
@@ -785,7 +785,7 @@
             <node concept="2OqwBi" id="6RCrcvOusak" role="3uHU7B">
               <node concept="2Sf5sV" id="6RCrcvOus5p" role="2Oq$k0" />
               <node concept="3TrcHB" id="6RCrcvOusPk" role="2OqNvi">
-                <ref role="3TsBF5" to="q5q6:6RCrcvOtNXu" resolve="explanation" />
+                <ref role="3TsBF5" to="q5q6:6RCrcvOtNXu" resolve="explanation_old" />
               </node>
             </node>
           </node>
@@ -797,7 +797,7 @@
                   <node concept="2OqwBi" id="6RCrcvOuvcI" role="37vLTJ">
                     <node concept="2Sf5sV" id="6RCrcvOuv8K" role="2Oq$k0" />
                     <node concept="3TrcHB" id="6RCrcvOuvRM" role="2OqNvi">
-                      <ref role="3TsBF5" to="q5q6:6RCrcvOtNXu" resolve="explanation" />
+                      <ref role="3TsBF5" to="q5q6:6RCrcvOtNXu" resolve="explanation_old" />
                     </node>
                   </node>
                 </node>

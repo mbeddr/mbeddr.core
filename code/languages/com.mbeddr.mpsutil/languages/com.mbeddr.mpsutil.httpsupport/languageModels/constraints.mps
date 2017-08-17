@@ -2,8 +2,7 @@
 <model ref="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9/r:6b630a9f-1ae2-4742-af77-66c76f25365c(com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
     <import index="pz2c" ref="r:2a308ea0-c7e3-4fa5-a624-ad74ee5cfab5(jetbrains.mps.baseLanguage.util)" />

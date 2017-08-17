@@ -2,9 +2,8 @@
 <model ref="r:dbd37a42-0f53-4052-b085-bc802c3685ef(com.mbeddr.analyses.z3.testing.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="nemf" ref="r:25031baa-17b8-457a-9a77-5e0160aafd16(com.mbeddr.analyses.z3.run)" />
@@ -154,7 +153,7 @@
               <ref role="1YBMHb" node="5uyAK6LjYPt" resolve="checkSAT" />
             </node>
             <node concept="3TrEf2" id="5uyAK6Lk0Wb" role="2OqNvi">
-              <ref role="3Tt5mk" to="o0kk:5uyAK6LjYrZ" />
+              <ref role="3Tt5mk" to="o0kk:5uyAK6LjYrZ" resolve="expression" />
             </node>
           </node>
         </node>

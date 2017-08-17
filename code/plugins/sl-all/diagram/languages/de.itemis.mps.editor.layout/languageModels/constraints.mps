@@ -2,8 +2,7 @@
 <model ref="r:ca28e596-8086-4b96-9530-e6c48a71df84(de.itemis.mps.editor.layout.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
     <import index="7cyn" ref="776efd50-4c6d-4d39-90b3-7f994c98f819/java:net.miginfocom.layout(de.itemis.mps.editor.layout.runtime/)" />

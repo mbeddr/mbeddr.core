@@ -2,8 +2,7 @@
 <model ref="b67a6ca0-735e-4903-b238-4b525bddf96a/r:d35df76c-0c11-473a-b96e-497aad5378bd(com.mbeddr.mpsutil.genutil/com.mbeddr.mpsutil.genutil.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="jphc" ref="b67a6ca0-735e-4903-b238-4b525bddf96a/r:f5e22059-6c2f-430a-9e46-6dae72a4d73d(com.mbeddr.mpsutil.genutil/com.mbeddr.mpsutil.genutil.structure)" />
@@ -46,7 +45,7 @@
           <node concept="2OqwBi" id="2ZUGF54lpaS" role="3Ah4Yx">
             <node concept="3__QtB" id="2ZUGF54lpaz" role="2Oq$k0" />
             <node concept="3TrEf2" id="2ZUGF54lpb4" role="2OqNvi">
-              <ref role="3Tt5mk" to="jphc:7ee7PEvaQQc" />
+              <ref role="3Tt5mk" to="jphc:7ee7PEvaQQc" resolve="ctxNode" />
             </node>
           </node>
         </node>
@@ -54,7 +53,7 @@
           <node concept="2OqwBi" id="2ZUGF54lpb0" role="3Ah4Yx">
             <node concept="3__QtB" id="2ZUGF54lpb1" role="2Oq$k0" />
             <node concept="3TrEf2" id="2ZUGF54lpb2" role="2OqNvi">
-              <ref role="3Tt5mk" to="jphc:7ee7PEvaQQe" />
+              <ref role="3Tt5mk" to="jphc:7ee7PEvaQQe" resolve="target" />
             </node>
           </node>
         </node>
@@ -69,7 +68,7 @@
           <node concept="2OqwBi" id="2ZUGF54m9k4" role="3Ah4Yx">
             <node concept="3__QtB" id="2ZUGF54m9k5" role="2Oq$k0" />
             <node concept="3TrEf2" id="2ZUGF54m9kc" role="2OqNvi">
-              <ref role="3Tt5mk" to="jphc:2ZUGF54m9is" />
+              <ref role="3Tt5mk" to="jphc:2ZUGF54m9is" resolve="ctxNode" />
             </node>
           </node>
         </node>
@@ -77,7 +76,7 @@
           <node concept="2OqwBi" id="2ZUGF54m9k8" role="3Ah4Yx">
             <node concept="3__QtB" id="2ZUGF54m9k9" role="2Oq$k0" />
             <node concept="3TrEf2" id="2ZUGF54m9kf" role="2OqNvi">
-              <ref role="3Tt5mk" to="jphc:2ZUGF54m9it" />
+              <ref role="3Tt5mk" to="jphc:2ZUGF54m9it" resolve="value" />
             </node>
           </node>
         </node>

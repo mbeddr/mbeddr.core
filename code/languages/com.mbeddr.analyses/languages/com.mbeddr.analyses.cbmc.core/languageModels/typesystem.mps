@@ -2,8 +2,7 @@
 <model ref="r:5a1a5556-31c6-4b58-ab31-cdb132b414fb(com.mbeddr.analyses.cbmc.core.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
@@ -573,7 +572,7 @@
         <node concept="3cpWsn" id="fupCapc38" role="3cpWs9">
           <property role="TrG5h" value="cfg" />
           <node concept="3Tqbb2" id="fupCapc32" role="1tU5fm">
-            <ref role="ehGHo" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+            <ref role="ehGHo" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfigurationContainer" />
           </node>
           <node concept="2OqwBi" id="fupCapc39" role="33vP2m">
             <node concept="1YBJjd" id="fupCapc3a" role="2Oq$k0">
@@ -582,7 +581,7 @@
             <node concept="2Xjw5R" id="fupCapc3b" role="2OqNvi">
               <node concept="1xMEDy" id="fupCapc3c" role="1xVPHs">
                 <node concept="chp4Y" id="fupCapc3d" role="ri$Ld">
-                  <ref role="cht4Q" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+                  <ref role="cht4Q" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfigurationContainer" />
                 </node>
               </node>
               <node concept="1xIGOp" id="fupCapc3e" role="1xVPHs" />

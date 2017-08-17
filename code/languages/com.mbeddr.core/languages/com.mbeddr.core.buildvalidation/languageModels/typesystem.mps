@@ -2,8 +2,7 @@
 <model ref="r:1083cc90-dbb0-4d3e-b36d-fb72279678a1(com.mbeddr.core.buildvalidation.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="p8c7" ref="r:a81d40ef-e0ca-4e82-b235-4b068157ec1c(com.mbeddr.core.buildvalidation.behavior)" />
@@ -150,7 +149,7 @@
             <ref role="1YBMHb" node="7uEcx53EJMV" resolve="bvc" />
           </node>
           <node concept="3Tsc0h" id="7uEcx53EK1s" role="2OqNvi">
-            <ref role="3TtcxE" to="cepq:7uEcx53DQqS" />
+            <ref role="3TtcxE" to="cepq:7uEcx53DQqS" resolve="targets" />
           </node>
         </node>
         <node concept="3clFbS" id="7uEcx53EJNv" role="2LFqv$">
@@ -163,7 +162,7 @@
                 <ref role="1YBMHb" node="7uEcx53EJMV" resolve="bvc" />
               </node>
               <node concept="3Tsc0h" id="7uEcx53EKlz" role="2OqNvi">
-                <ref role="3TtcxE" to="cepq:7uEcx53DQqU" />
+                <ref role="3TtcxE" to="cepq:7uEcx53DQqU" resolve="rules" />
               </node>
             </node>
             <node concept="3clFbS" id="7uEcx53EK5C" role="2LFqv$">

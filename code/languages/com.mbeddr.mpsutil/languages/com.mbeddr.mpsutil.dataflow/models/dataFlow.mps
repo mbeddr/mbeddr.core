@@ -2,8 +2,7 @@
 <model ref="r:b611ae9b-a7f4-4df7-aaf0-85b465374686(com.mbeddr.mpsutil.dataflow.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="tp41" ref="r:00000000-0000-4000-0000-011c8959037d(jetbrains.mps.lang.dataFlow.structure)" />
@@ -57,7 +56,7 @@
           <node concept="2OqwBi" id="6ddb09abn6T" role="3Ah4Yx">
             <node concept="3__QtB" id="6ddb09abn3e" role="2Oq$k0" />
             <node concept="3TrEf2" id="5IQr1TuNc_L" role="2OqNvi">
-              <ref role="3Tt5mk" to="6qry:2U8JvBXrt1g" />
+              <ref role="3Tt5mk" to="6qry:2U8JvBXrt1g" resolve="point" />
             </node>
           </node>
         </node>
@@ -72,7 +71,7 @@
           <node concept="2OqwBi" id="6ddb09abl0v" role="3Ah4Yx">
             <node concept="3__QtB" id="6ddb09abkWO" role="2Oq$k0" />
             <node concept="3TrEf2" id="5IQr1TuNcVz" role="2OqNvi">
-              <ref role="3Tt5mk" to="6qry:_oDvx5U56o" />
+              <ref role="3Tt5mk" to="6qry:_oDvx5U56o" resolve="target" />
             </node>
           </node>
         </node>
@@ -89,7 +88,7 @@
               <node concept="2OqwBi" id="6ddb09abiDe" role="3Ah4Yx">
                 <node concept="3__QtB" id="6ddb09abi$L" role="2Oq$k0" />
                 <node concept="3TrEf2" id="5IQr1TuNd_L" role="2OqNvi">
-                  <ref role="3Tt5mk" to="6qry:6ddb09ab16u" />
+                  <ref role="3Tt5mk" to="6qry:6ddb09ab16u" resolve="source" />
                 </node>
               </node>
             </node>
@@ -99,7 +98,7 @@
             <node concept="2OqwBi" id="6ddb09ablYf" role="3uHU7B">
               <node concept="3__QtB" id="6ddb09ablT8" role="2Oq$k0" />
               <node concept="3TrEf2" id="5IQr1TuNdEr" role="2OqNvi">
-                <ref role="3Tt5mk" to="6qry:6ddb09ab16u" />
+                <ref role="3Tt5mk" to="6qry:6ddb09ab16u" resolve="source" />
               </node>
             </node>
           </node>
@@ -110,7 +109,7 @@
               <node concept="2OqwBi" id="6ddb09abiWT" role="3Ah4Yx">
                 <node concept="3__QtB" id="6ddb09abiSs" role="2Oq$k0" />
                 <node concept="3TrEf2" id="6ddb09abj8l" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tp41:hTXBRKV" />
+                  <ref role="3Tt5mk" to="tp41:hTXBRKV" resolve="value" />
                 </node>
               </node>
             </node>
@@ -120,7 +119,7 @@
             <node concept="2OqwBi" id="6ddb09abmxM" role="3uHU7B">
               <node concept="3__QtB" id="6ddb09abmsF" role="2Oq$k0" />
               <node concept="3TrEf2" id="6ddb09abmHe" role="2OqNvi">
-                <ref role="3Tt5mk" to="tp41:hTXBRKV" />
+                <ref role="3Tt5mk" to="tp41:hTXBRKV" resolve="value" />
               </node>
             </node>
           </node>
@@ -129,7 +128,7 @@
           <node concept="2OqwBi" id="6ddb09abjhx" role="3Ah4Yx">
             <node concept="3__QtB" id="6ddb09abjd4" role="2Oq$k0" />
             <node concept="3TrEf2" id="6ddb09abjBZ" role="2OqNvi">
-              <ref role="3Tt5mk" to="tp41:hz_H1WB" />
+              <ref role="3Tt5mk" to="tp41:hz_H1WB" resolve="variable" />
             </node>
           </node>
         </node>
@@ -144,7 +143,7 @@
           <node concept="2OqwBi" id="6ddb09abk1Q" role="3Ah4Yx">
             <node concept="3__QtB" id="6ddb09abjXK" role="2Oq$k0" />
             <node concept="3TrEf2" id="6ddb09abkcf" role="2OqNvi">
-              <ref role="3Tt5mk" to="tp41:hz_H1WB" />
+              <ref role="3Tt5mk" to="tp41:hz_H1WB" resolve="variable" />
             </node>
           </node>
         </node>

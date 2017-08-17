@@ -2,8 +2,7 @@
 <model ref="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:b2834b64-265d-4877-941d-d9125f9bc1d6(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="tnjx" ref="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:b5a6a0ba-90b8-4839-a0b6-fee9cff5d417(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.structure)" />
@@ -344,7 +343,7 @@
                 <ref role="1YBMHb" node="7Ssz$kYlSUd" resolve="richStringMessageKey" />
               </node>
               <node concept="3TrEf2" id="7Ssz$kYlTDo" role="2OqNvi">
-                <ref role="3Tt5mk" to="tnjx:7Ssz$kYb9jR" />
+                <ref role="3Tt5mk" to="tnjx:7Ssz$kYb9jR" resolve="richDefault" />
               </node>
             </node>
             <node concept="2Rf3mk" id="7Ssz$kYlUqS" role="2OqNvi">
@@ -624,7 +623,7 @@
                     <ref role="1YBMHb" node="7Ssz$kYvDxw" resolve="multilingualJavaRichString" />
                   </node>
                   <node concept="3TrEf2" id="7Ssz$kYvPWI" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tnjx:7Ssz$kYbmEd" />
+                    <ref role="3Tt5mk" to="tnjx:7Ssz$kYbmEd" resolve="key" />
                   </node>
                 </node>
                 <node concept="2Rf3mk" id="7Ssz$kYvPWJ" role="2OqNvi">
@@ -674,7 +673,7 @@
               <ref role="1YBMHb" node="7Ssz$kYvDxw" resolve="multilingualJavaRichString" />
             </node>
             <node concept="3Tsc0h" id="7Ssz$kYw7d_" role="2OqNvi">
-              <ref role="3TtcxE" to="tnjx:7Ssz$kYl4OE" />
+              <ref role="3TtcxE" to="tnjx:7Ssz$kYl4OE" resolve="expressions" />
             </node>
           </node>
         </node>

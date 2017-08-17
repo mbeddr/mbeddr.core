@@ -2,8 +2,7 @@
 <model ref="r:5b41f295-f455-400f-a208-b2aeba0fc5a3(de.slisson.mps.structurecheck.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="7met" ref="r:d4a954d0-fb17-418d-bfe1-8fc917bd27a1(de.slisson.mps.structurecheck.structure)" implicit="true" />
@@ -162,7 +161,7 @@
                   <ref role="1YBMHb" node="l6SLw3nD7E" resolve="element" />
                 </node>
                 <node concept="3TrEf2" id="l6SLw3nEQo" role="2OqNvi">
-                  <ref role="3Tt5mk" to="7met:l6SLw3m25B" />
+                  <ref role="3Tt5mk" to="7met:l6SLw3m25B" resolve="subtype" />
                 </node>
               </node>
             </node>
@@ -181,7 +180,7 @@
               <ref role="1YBMHb" node="l6SLw3nD7E" resolve="element" />
             </node>
             <node concept="3TrEf2" id="l6SLw3nFpl" role="2OqNvi">
-              <ref role="3Tt5mk" to="7met:l6SLw3m25B" />
+              <ref role="3Tt5mk" to="7met:l6SLw3m25B" resolve="subtype" />
             </node>
           </node>
           <node concept="3x8VRR" id="l6SLw3nG1l" role="2OqNvi" />
@@ -222,7 +221,7 @@
                 <ref role="1YBMHb" node="l6SLw3nDQV" resolve="sequenceChecker" />
               </node>
               <node concept="3TrEf2" id="l6SLw3vpPl" role="2OqNvi">
-                <ref role="3Tt5mk" to="7met:l6SLw3lTYF" />
+                <ref role="3Tt5mk" to="7met:l6SLw3lTYF" resolve="sequence" />
               </node>
             </node>
           </node>
@@ -245,7 +244,7 @@
                 <ref role="1YBMHb" node="l6SLw3nJIK" resolve="checkStructureStatement" />
               </node>
               <node concept="3TrEf2" id="l6SLw3nKg9" role="2OqNvi">
-                <ref role="3Tt5mk" to="7met:l6SLw3lTJY" />
+                <ref role="3Tt5mk" to="7met:l6SLw3lTJY" resolve="rootElement" />
               </node>
             </node>
           </node>
