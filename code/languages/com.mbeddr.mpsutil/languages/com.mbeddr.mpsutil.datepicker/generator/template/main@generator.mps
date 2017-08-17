@@ -1059,17 +1059,12 @@
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="3cpWs3" id="35WzcHe2QLL" role="37wK5m">
-                                        <node concept="3cmrfG" id="35WzcHe2QMf" role="3uHU7w">
-                                          <property role="3cmrfH" value="1" />
+                                      <node concept="2OqwBi" id="35WzcHe1KwM" role="37wK5m">
+                                        <node concept="37vLTw" id="35WzcHe1K8P" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="35WzcHe1Gf8" resolve="date" />
                                         </node>
-                                        <node concept="2OqwBi" id="35WzcHe1KwM" role="3uHU7B">
-                                          <node concept="37vLTw" id="35WzcHe1K8P" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="35WzcHe1Gf8" resolve="date" />
-                                          </node>
-                                          <node concept="liA8E" id="35WzcHe1LtE" role="2OqNvi">
-                                            <ref role="37wK5l" to="33ny:~Date.getMonth():int" resolve="getMonth" />
-                                          </node>
+                                        <node concept="liA8E" id="35WzcHe1LtE" role="2OqNvi">
+                                          <ref role="37wK5l" to="33ny:~Date.getMonth():int" resolve="getMonth" />
                                         </node>
                                       </node>
                                       <node concept="2OqwBi" id="35WzcHe1LY7" role="37wK5m">
