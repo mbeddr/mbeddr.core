@@ -628,8 +628,8 @@
                 <node concept="nLn13" id="79i$vAY5YzJ" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="79i$vAY5YzK" role="2OqNvi">
                   <node concept="1xMEDy" id="79i$vAY5YzL" role="1xVPHs">
-                    <node concept="chp4Y" id="79i$vAY5YzM" role="ri$Ld">
-                      <ref role="cht4Q" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
+                    <node concept="chp4Y" id="QIiPbLFJLt" role="ri$Ld">
+                      <ref role="cht4Q" to="x27k:QIiPbLCHqs" resolve="IClosureLike" />
                     </node>
                   </node>
                   <node concept="1xIGOp" id="79i$vAY5YzN" role="1xVPHs" />

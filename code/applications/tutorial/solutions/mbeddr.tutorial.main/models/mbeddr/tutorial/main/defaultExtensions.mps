@@ -986,6 +986,7 @@
       <concept id="3830958861296781575" name="com.mbeddr.core.expressions.structure.NotExpression" flags="ng" index="19$8ne" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="2799490600706093744" name="com.mbeddr.core.expressions.structure.ModuloExpression" flags="ng" index="1hY7HI" />
+      <concept id="4273030818770088796" name="com.mbeddr.core.expressions.structure.DirectMultiAssignmentExpression" flags="ng" index="3omEAZ" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="3976803464656498416" name="com.mbeddr.core.expressions.structure.PostDecrementExpression" flags="ng" index="1FldXu" />
       <concept id="1054289341113450444" name="com.mbeddr.core.expressions.structure.HexNumberLiteral" flags="ng" index="3Hbq_t" />
@@ -1725,7 +1726,23 @@
         <node concept="1_9egQ" id="4usdeMNTX$0" role="3XIRFZ">
           <node concept="3pqW6w" id="4usdeMNUtka" role="1_9egR">
             <node concept="1T8GFA" id="4usdeMNUtkj" role="3TlMhJ">
-              <node concept="1fH1aK" id="2jjHQjQCXDe" role="1T8GFz" />
+              <node concept="1fH1aK" id="2jjHQjQCXDe" role="1T8GFz">
+                <node concept="1_9egQ" id="QIiPbLCzQ9" role="3XIRFZ">
+                  <node concept="3omEAZ" id="QIiPbLC_j$" role="1_9egR">
+                    <node concept="2qmXGp" id="QIiPbLCzQl" role="3TlMhI">
+                      <node concept="1E4Tgc" id="QIiPbLCzSt" role="1ESnxz">
+                        <ref role="1E4Tge" node="1w5Xuj1QYMD" resolve="alt" />
+                      </node>
+                      <node concept="1T8GFL" id="QIiPbLCzQ8" role="1_9fRO">
+                        <ref role="1T8GFK" node="4usdeMNUtkr" resolve="tp" />
+                      </node>
+                    </node>
+                    <node concept="3TlMh9" id="QIiPbLC_1Z" role="3TlMhJ">
+                      <property role="2hmy$m" value="2" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="1T8GF_" id="4usdeMNUtkr" role="1T8GF$">
                 <property role="TrG5h" value="tp" />
               </node>
@@ -14268,6 +14285,11 @@
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
                 <ref role="1sgJKq" node="7kmhBx3QIQC" resolve="message" />
+              </node>
+              <node concept="3o3WLD" id="QIiPbLCrTm" role="3XIe9u">
+                <node concept="3TlMh9" id="QIiPbLCrYX" role="3o3WLE">
+                  <property role="2hmy$m" value="0" />
+                </node>
               </node>
             </node>
             <node concept="1_9egQ" id="7kmhBx3XmVj" role="3XIRFZ">

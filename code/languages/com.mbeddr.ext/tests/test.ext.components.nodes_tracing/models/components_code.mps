@@ -365,7 +365,7 @@
         <ref role="2EWCuU" node="6JVEnxIj0gY" resolve="LoggerImpl" />
         <node concept="1xGALR" id="73SKUHFbe_I" role="lGtFl">
           <node concept="1xFd8N" id="73SKUHFbeAM" role="1xGcb7">
-            <property role="1xFd8M" value="Main_wiring_logger_p_logger__ops.log = &amp;Main_LoggerImpl_p_logger_log;" />
+            <property role="1xFd8M" value="ComponentsTracingTest_wiring_logger_p_logger__ops.log = &amp;ComponentsTracingTest_LoggerImpl_p_logger_log;" />
           </node>
         </node>
       </node>
@@ -603,7 +603,7 @@
           </node>
           <node concept="1xGALR" id="73SKUHFbhUU" role="lGtFl">
             <node concept="1xFd8N" id="73SKUHFbtQS" role="1xGcb7">
-              <property role="1xFd8M" value="void  Main_MotorImpl_p_motor_move(int8_t speed, void *___id)" />
+              <property role="1xFd8M" value="void  ComponentsTracingTest_MotorImpl_p_motor_move(int8_t speed, void *___id)" />
             </node>
           </node>
         </node>
@@ -633,7 +633,7 @@
           </node>
           <node concept="1xGALR" id="3zlDaOXovDZ" role="lGtFl">
             <node concept="1xFd8N" id="3zlDaOXovEV" role="1xGcb7">
-              <property role="1xFd8M" value=" Main_LoggerImpl__cdata_t *___cid = ((Main_LoggerImpl__cdata_t *)(___id));" />
+              <property role="1xFd8M" value=" ComponentsTracingTest_LoggerImpl__cdata_t *___cid = ((ComponentsTracingTest_LoggerImpl__cdata_t *)(___id));" />
             </node>
           </node>
         </node>

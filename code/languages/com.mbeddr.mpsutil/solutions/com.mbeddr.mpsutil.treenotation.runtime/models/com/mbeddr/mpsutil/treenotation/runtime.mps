@@ -2067,6 +2067,24 @@
           </node>
         </node>
         <node concept="3clFbH" id="JAaUnmVeFB" role="3cqZAp" />
+        <node concept="3clFbJ" id="6JR7Jr7kQ1o" role="3cqZAp">
+          <node concept="3clFbS" id="6JR7Jr7kQ1q" role="3clFbx">
+            <node concept="3cpWs6" id="6JR7Jr7kQW8" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="6JR7Jr7kNx8" role="3clFbw">
+            <node concept="1rXfSq" id="6JR7Jr7kNdR" role="2Oq$k0">
+              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+            </node>
+            <node concept="liA8E" id="6JR7Jr7kNJ0" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+              <node concept="10M0yZ" id="6JR7Jr7kOVe" role="37wK5m">
+                <ref role="3cqZAo" to="5ueo:~StyleAttributes.READ_ONLY" resolve="READ_ONLY" />
+                <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6JR7Jr7kQWc" role="3cqZAp" />
         <node concept="3cpWs8" id="JAaUnmVdEp" role="3cqZAp">
           <node concept="3cpWsn" id="JAaUnmVdEq" role="3cpWs9">
             <property role="TrG5h" value="treeChildren" />

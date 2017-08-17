@@ -65,6 +65,7 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -92,6 +93,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -101,6 +105,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -125,9 +132,13 @@
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="7473026166162327259" name="dropAttrubuteRule" index="CYSdJ" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
       </concept>
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
+      <concept id="7473026166162297915" name="jetbrains.mps.lang.generator.structure.DropAttributeRule" flags="lg" index="CY16f">
+        <reference id="7473026166162297918" name="applicableConcept" index="CY16a" />
+      </concept>
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
@@ -519,7 +530,7 @@
                             </node>
                             <node concept="3cpWs3" id="7UNoqC67Toy" role="3uHU7B">
                               <node concept="Xl_RD" id="7UNoqC67QFO" role="3uHU7B">
-                                <property role="Xl_RC" value="DEBUG: node searched: '" />
+                                <property role="Xl_RC" value="NODES TRACING DEBUG: node searched: '" />
                               </node>
                               <node concept="2GrUjf" id="7UNoqC67UK_" role="3uHU7w">
                                 <ref role="2Gs0qQ" node="7HmzdkqUAiG" resolve="nwa" />
@@ -631,7 +642,7 @@
                                 </node>
                                 <node concept="3cpWs3" id="7UNoqC69QG4" role="3uHU7B">
                                   <node concept="Xl_RD" id="7UNoqC69PC5" role="3uHU7B">
-                                    <property role="Xl_RC" value="DEBUG: corresponding generated line: '" />
+                                    <property role="Xl_RC" value="NODES TRACING DEBUG: corresponding generated line: '" />
                                   </node>
                                   <node concept="37vLTw" id="7UNoqC69REu" role="3uHU7w">
                                     <ref role="3cqZAo" node="7HmzdkqYCfk" resolve="normalizedSearchedLine" />
@@ -661,6 +672,15 @@
                                       </node>
                                     </node>
                                   </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3cpWs8" id="QIiPbLxOSc" role="3cqZAp">
+                              <node concept="3cpWsn" id="QIiPbLxOSf" role="3cpWs9">
+                                <property role="TrG5h" value="lineFound" />
+                                <node concept="10P_77" id="QIiPbLxOSa" role="1tU5fm" />
+                                <node concept="3clFbT" id="QIiPbLxQr5" role="33vP2m">
+                                  <property role="3clFbU" value="false" />
                                 </node>
                               </node>
                             </node>
@@ -701,6 +721,16 @@
                                 </node>
                                 <node concept="3clFbJ" id="7HmzdkqZf8F" role="3cqZAp">
                                   <node concept="3clFbS" id="7HmzdkqZf8H" role="3clFbx">
+                                    <node concept="3clFbF" id="QIiPbLxSrq" role="3cqZAp">
+                                      <node concept="37vLTI" id="QIiPbLxT84" role="3clFbG">
+                                        <node concept="3clFbT" id="QIiPbLxT8w" role="37vLTx">
+                                          <property role="3clFbU" value="true" />
+                                        </node>
+                                        <node concept="37vLTw" id="QIiPbLxSro" role="37vLTJ">
+                                          <ref role="3cqZAo" node="QIiPbLxOSf" resolve="lineFound" />
+                                        </node>
+                                      </node>
+                                    </node>
                                     <node concept="3zACq4" id="7HmzdkqZmCg" role="3cqZAp" />
                                   </node>
                                   <node concept="2OqwBi" id="7HmzdkqZgrx" role="3clFbw">
@@ -714,6 +744,101 @@
                                       </node>
                                     </node>
                                   </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbJ" id="QIiPbLxULE" role="3cqZAp">
+                              <node concept="3clFbS" id="QIiPbLxULG" role="3clFbx">
+                                <node concept="3clFbF" id="QIiPbLxsoZ" role="3cqZAp">
+                                  <node concept="2OqwBi" id="QIiPbLxsoW" role="3clFbG">
+                                    <node concept="10M0yZ" id="QIiPbLxsoX" role="2Oq$k0">
+                                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                                    </node>
+                                    <node concept="liA8E" id="QIiPbLxsoY" role="2OqNvi">
+                                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                      <node concept="3cpWs3" id="QIiPbLxzES" role="37wK5m">
+                                        <node concept="Xl_RD" id="QIiPbLx$HB" role="3uHU7w">
+                                          <property role="Xl_RC" value="'" />
+                                        </node>
+                                        <node concept="3cpWs3" id="QIiPbLxuSA" role="3uHU7B">
+                                          <node concept="Xl_RD" id="QIiPbLxsCH" role="3uHU7B">
+                                            <property role="Xl_RC" value="NODES TRACING DEBUG: Line NOT found in file: '" />
+                                          </node>
+                                          <node concept="37vLTw" id="QIiPbLxuX_" role="3uHU7w">
+                                            <ref role="3cqZAo" node="7HmzdkqYpZx" resolve="fn" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbF" id="QIiPbLxB9n" role="3cqZAp">
+                                  <node concept="2OqwBi" id="QIiPbLxB9k" role="3clFbG">
+                                    <node concept="10M0yZ" id="QIiPbLxB9l" role="2Oq$k0">
+                                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                                    </node>
+                                    <node concept="liA8E" id="QIiPbLxB9m" role="2OqNvi">
+                                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                      <node concept="3cpWs3" id="QIiPbLxE66" role="37wK5m">
+                                        <node concept="37vLTw" id="QIiPbLxEbe" role="3uHU7w">
+                                          <ref role="3cqZAo" node="7HmzdkqYpZx" resolve="fn" />
+                                        </node>
+                                        <node concept="Xl_RD" id="QIiPbLxBq$" role="3uHU7B">
+                                          <property role="Xl_RC" value="&gt;&gt;&gt;&gt;----------------------------------- START OF FILE: " />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="2Gpval" id="QIiPbLy3OD" role="3cqZAp">
+                                  <node concept="2GrKxI" id="QIiPbLy3OF" role="2Gsz3X">
+                                    <property role="TrG5h" value="l" />
+                                  </node>
+                                  <node concept="37vLTw" id="QIiPbLy4XB" role="2GsD0m">
+                                    <ref role="3cqZAo" node="7HmzdkqYQJ1" resolve="lines" />
+                                  </node>
+                                  <node concept="3clFbS" id="QIiPbLy3OJ" role="2LFqv$">
+                                    <node concept="3clFbF" id="QIiPbLxpIy" role="3cqZAp">
+                                      <node concept="2OqwBi" id="QIiPbLxpIz" role="3clFbG">
+                                        <node concept="10M0yZ" id="QIiPbLxpI$" role="2Oq$k0">
+                                          <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                        </node>
+                                        <node concept="liA8E" id="QIiPbLxpI_" role="2OqNvi">
+                                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                          <node concept="2GrUjf" id="QIiPbLy7oW" role="37wK5m">
+                                            <ref role="2Gs0qQ" node="QIiPbLy3OF" resolve="l" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbF" id="QIiPbLy9Pk" role="3cqZAp">
+                                  <node concept="2OqwBi" id="QIiPbLy9Pl" role="3clFbG">
+                                    <node concept="10M0yZ" id="QIiPbLy9Pm" role="2Oq$k0">
+                                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                                    </node>
+                                    <node concept="liA8E" id="QIiPbLy9Pn" role="2OqNvi">
+                                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                      <node concept="3cpWs3" id="QIiPbLy9Po" role="37wK5m">
+                                        <node concept="37vLTw" id="QIiPbLy9Pp" role="3uHU7w">
+                                          <ref role="3cqZAo" node="7HmzdkqYpZx" resolve="fn" />
+                                        </node>
+                                        <node concept="Xl_RD" id="QIiPbLy9Pq" role="3uHU7B">
+                                          <property role="Xl_RC" value="&lt;&lt;&lt;&lt;----------------------------------- END OF FILE: " />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3fqX7Q" id="QIiPbLxW7y" role="3clFbw">
+                                <node concept="37vLTw" id="QIiPbLxX8S" role="3fr31v">
+                                  <ref role="3cqZAo" node="QIiPbLxOSf" resolve="lineFound" />
                                 </node>
                               </node>
                             </node>
@@ -856,6 +981,45 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="3clFbF" id="QIiPbLyJZ5" role="3cqZAp">
+                            <node concept="2OqwBi" id="QIiPbLyJZ2" role="3clFbG">
+                              <node concept="10M0yZ" id="QIiPbLyJZ3" role="2Oq$k0">
+                                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                              </node>
+                              <node concept="liA8E" id="QIiPbLyJZ4" role="2OqNvi">
+                                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                <node concept="3cpWs3" id="QIiPbLz0dA" role="37wK5m">
+                                  <node concept="37vLTw" id="QIiPbLz2tw" role="3uHU7w">
+                                    <ref role="3cqZAo" node="7Hmzdkr07Lt" resolve="originalNodes" />
+                                  </node>
+                                  <node concept="3cpWs3" id="QIiPbLyVy2" role="3uHU7B">
+                                    <node concept="3cpWs3" id="QIiPbLyTw_" role="3uHU7B">
+                                      <node concept="3cpWs3" id="QIiPbLyP3Q" role="3uHU7B">
+                                        <node concept="3cpWs3" id="QIiPbLyNv7" role="3uHU7B">
+                                          <node concept="Xl_RD" id="QIiPbLyKCT" role="3uHU7B">
+                                            <property role="Xl_RC" value="NODES TRACING DEBUG: file: '" />
+                                          </node>
+                                          <node concept="37vLTw" id="QIiPbLyOEb" role="3uHU7w">
+                                            <ref role="3cqZAo" node="7HmzdkqYpZx" resolve="fn" />
+                                          </node>
+                                        </node>
+                                        <node concept="Xl_RD" id="QIiPbLyRcK" role="3uHU7w">
+                                          <property role="Xl_RC" value="' - line: '" />
+                                        </node>
+                                      </node>
+                                      <node concept="37vLTw" id="QIiPbLyUEV" role="3uHU7w">
+                                        <ref role="3cqZAo" node="7HmzdkqUWWV" resolve="line" />
+                                      </node>
+                                    </node>
+                                    <node concept="Xl_RD" id="QIiPbLyY4N" role="3uHU7w">
+                                      <property role="Xl_RC" value="' - nodes: " />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3vwNmj" id="7Hmzdkr0dbU" role="3cqZAp">
                             <node concept="2OqwBi" id="7Hmzdkr0eYu" role="3vwVQn">
                               <node concept="37vLTw" id="7Hmzdkr0e6t" role="2Oq$k0">
@@ -909,6 +1073,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="CY16f" id="QIiPbL_fmo" role="CYSdJ">
+      <ref role="CY16a" to="ls3:7HmzdkqTe2y" resolve="TracingAnnotation" />
     </node>
   </node>
 </model>

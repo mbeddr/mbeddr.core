@@ -303,6 +303,28 @@
             </node>
           </node>
         </node>
+        <node concept="3EZMnI" id="6JR7Jr70haa" role="3EZMnx">
+          <node concept="2iRfu4" id="6JR7Jr70hab" role="2iSdaV" />
+          <node concept="VPM3Z" id="6JR7Jr70hac" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="6JR7Jr70had" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="6JR7Jr70hae" role="3EZMnx">
+            <property role="3F0ifm" value="collapse by default" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+            <node concept="VPXOz" id="6JR7Jr70haf" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="6JR7Jr70hag" role="3EZMnx">
+            <ref role="1NtTu8" to="hfvq:5qrsiYWrGSD" resolve="collapseByDefaultCondition" />
+            <node concept="VPXOz" id="6JR7Jr70hah" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="VPM3Z" id="hEU$OXo" role="3F10Kt">
         <property role="VOm3f" value="false" />

@@ -650,6 +650,9 @@
     <node concept="PrWs8" id="m8w3_xYrMB" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+    <node concept="PrWs8" id="QIiPbLCI7i" role="PzmwI">
+      <ref role="PrY4T" node="QIiPbLCHqs" resolve="IClosureLike" />
+    </node>
     <node concept="asaX9" id="2jjHQjPOKBV" role="lGtFl">
       <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.util&quot;" />
     </node>
@@ -1723,6 +1726,11 @@
       <property role="IQ2ns" value="6116558314501347862" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="QIiPbLCHqs">
+    <property role="EcuMT" value="985808188054099612" />
+    <property role="3GE5qa" value="functionrefs.closure" />
+    <property role="TrG5h" value="IClosureLike" />
   </node>
 </model>
 
