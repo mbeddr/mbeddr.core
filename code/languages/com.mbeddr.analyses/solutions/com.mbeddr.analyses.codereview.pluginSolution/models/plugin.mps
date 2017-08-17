@@ -55,6 +55,7 @@
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1205851242421" name="methodDeclaration" index="32lrUH" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
+        <child id="8976425910813834639" name="icon" index="3Uehp1" />
       </concept>
       <concept id="1203071677434" name="jetbrains.mps.lang.plugin.structure.ToolDeclaration" flags="ng" index="sEfby">
         <child id="1214307129846" name="getComponentBlock" index="2Um5zG" />
@@ -83,6 +84,7 @@
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
         <child id="471625927503648174" name="shortcut" index="15cTzA" />
+        <child id="6791676465872004185" name="toolIcon" index="1nVCmq" />
       </concept>
       <concept id="471625927503601927" name="jetbrains.mps.lang.plugin.structure.NumberToolShortcut" flags="ng" index="15feLf">
         <property id="471625927503601955" name="number" index="15feLF" />
@@ -456,6 +458,9 @@
     </node>
     <node concept="15feLf" id="48h5VLbZEGE" role="15cTzA">
       <property role="15feLF" value="1" />
+    </node>
+    <node concept="1QGGSu" id="335p1i8LEpE" role="1nVCmq">
+      <property role="1iqoE4" value="${module}/icons/code_review.png" />
     </node>
   </node>
   <node concept="312cEu" id="42B_O5_ardC">
@@ -2051,6 +2056,21 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="335p1i8Le0N" role="3cqZAp">
+              <node concept="2OqwBi" id="335p1i8LjOG" role="3clFbG">
+                <node concept="2OqwBi" id="335p1i8LfbC" role="2Oq$k0">
+                  <node concept="37vLTw" id="335p1i8Le0L" role="2Oq$k0">
+                    <ref role="3cqZAo" node="13$DeUDKIds" resolve="textArea" />
+                  </node>
+                  <node concept="liA8E" id="335p1i8Ljtv" role="2OqNvi">
+                    <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter():javax.swing.text.Highlighter" resolve="getHighlighter" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="335p1i8LkV8" role="2OqNvi">
+                  <ref role="37wK5l" to="r791:~Highlighter.removeAllHighlights():void" resolve="removeAllHighlights" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="TDmWw" id="13$DeUDL49Z" role="TEbGg">
             <node concept="3clFbS" id="13$DeUDL4a0" role="TDEfX">
@@ -2349,6 +2369,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1QGGSu" id="335p1i8Lxpe" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/code_review.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="335p1i8CBb8">
