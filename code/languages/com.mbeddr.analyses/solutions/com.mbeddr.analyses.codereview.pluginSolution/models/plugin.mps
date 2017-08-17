@@ -31,6 +31,8 @@
     <import index="qars" ref="r:1cd5ce6b-eca0-465e-bb52-c96db6e20350(com.mbeddr.analyses.codereview.pluginSolution.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
@@ -279,6 +281,7 @@
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
@@ -410,6 +413,36 @@
         <property role="TrG5h" value="folder" />
         <node concept="3uibUv" id="335p1i8Jjz0" role="1tU5fm">
           <ref role="3uigEE" to="guwi:~File" resolve="File" />
+        </node>
+      </node>
+    </node>
+    <node concept="2XrIbr" id="335p1i8MoGi" role="2XNbBy">
+      <property role="TrG5h" value="setRepository" />
+      <node concept="3cqZAl" id="335p1i8Mp0$" role="3clF45" />
+      <node concept="3clFbS" id="335p1i8MoGk" role="3clF47">
+        <node concept="3clFbF" id="335p1i8Mpd9" role="3cqZAp">
+          <node concept="37vLTI" id="335p1i8MsPU" role="3clFbG">
+            <node concept="37vLTw" id="335p1i8MsRQ" role="37vLTx">
+              <ref role="3cqZAo" node="335p1i8Mp99" resolve="repository" />
+            </node>
+            <node concept="2OqwBi" id="335p1i8Mq9S" role="37vLTJ">
+              <node concept="2OqwBi" id="335p1i8Mpla" role="2Oq$k0">
+                <node concept="2WthIp" id="335p1i8Mpd8" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="335p1i8Mpxh" role="2OqNvi">
+                  <ref role="2WH_rO" node="1ptFCtLsc6c" resolve="panel" />
+                </node>
+              </node>
+              <node concept="2OwXpG" id="335p1i8MrTo" role="2OqNvi">
+                <ref role="2Oxat5" node="335p1i8Mlgv" resolve="repository" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="335p1i8Mp99" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="335p1i8Mp98" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>
@@ -568,7 +601,16 @@
         <ref role="3uigEE" to="guwi:~File" resolve="File" />
       </node>
     </node>
-    <node concept="2tJIrI" id="335p1i8wPby" role="jymVt" />
+    <node concept="312cEg" id="335p1i8Mlgv" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="repository" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="335p1i8Mi2K" role="1tU5fm">
+        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="335p1i8Mao_" role="jymVt" />
     <node concept="3clFb_" id="4_pSipqVBn_" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="DiZV1" value="false" />
@@ -762,9 +804,14 @@
           <node concept="37vLTI" id="5z92V1ozIOJ" role="3clFbG">
             <node concept="2ShNRf" id="5z92V1ozJYL" role="37vLTx">
               <node concept="1pGfFk" id="5z92V1ozMhP" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
-                <node concept="Xl_RD" id="5z92V1ozMJk" role="37wK5m">
-                  <property role="Xl_RC" value="Previous Node" />
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String,javax.swing.Icon)" resolve="JButton" />
+                <node concept="Xl_RD" id="335p1i8MY6m" role="37wK5m">
+                  <property role="Xl_RC" value="" />
+                </node>
+                <node concept="1QGGTA" id="335p1i8MZb4" role="37wK5m">
+                  <node concept="1QGGSu" id="335p1i8MZfK" role="1QGGTw">
+                    <property role="1iqoE4" value="${module}/icons/arrow_left.png" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -777,9 +824,12 @@
           <node concept="37vLTI" id="5z92V1ozRoh" role="3clFbG">
             <node concept="2ShNRf" id="5z92V1ozSUN" role="37vLTx">
               <node concept="1pGfFk" id="5z92V1ozUP2" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
-                <node concept="Xl_RD" id="5z92V1ozViy" role="37wK5m">
-                  <property role="Xl_RC" value="Next Node" />
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String,javax.swing.Icon)" resolve="JButton" />
+                <node concept="Xl_RD" id="5z92V1ozViy" role="37wK5m" />
+                <node concept="1QGGTA" id="335p1i8N09Z" role="37wK5m">
+                  <node concept="1QGGSu" id="335p1i8N0eF" role="1QGGTw">
+                    <property role="1iqoE4" value="${module}/icons/arrow_right.png" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1614,6 +1664,9 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="37vLTw" id="335p1i8MvsO" role="ukAjM">
+                    <ref role="3cqZAo" node="335p1i8Mlgv" resolve="repository" />
+                  </node>
                 </node>
                 <node concept="3SKdUt" id="335p1i8A6zA" role="3cqZAp">
                   <node concept="3SKdUq" id="335p1i8A6zC" role="3SKWNk">
@@ -1906,30 +1959,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="335p1i8JmpZ" role="3cqZAp">
-          <node concept="2OqwBi" id="335p1i8JmpW" role="3clFbG">
-            <node concept="10M0yZ" id="335p1i8JmpX" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="335p1i8JmpY" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="335p1i8Jn$E" role="37wK5m">
-                <node concept="2OqwBi" id="335p1i8JoBu" role="3uHU7w">
-                  <node concept="37vLTw" id="335p1i8JnYO" role="2Oq$k0">
-                    <ref role="3cqZAo" node="335p1i8ITl4" resolve="folder" />
-                  </node>
-                  <node concept="liA8E" id="335p1i8Jpci" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="335p1i8JmPo" role="3uHU7B">
-                  <property role="Xl_RC" value="---- fold: " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="3Tm1VV" id="335p1i8INIc" role="1B3o_S" />
       <node concept="3cqZAl" id="335p1i8IPZa" role="3clF45" />
@@ -2192,6 +2221,11 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="5BkFC2yhAHo" role="1oa70y" />
     </node>
+    <node concept="1DS2jV" id="5KHBa6l6zHO" role="1NuT2Z">
+      <property role="TrG5h" value="mpsProject" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="5KHBa6l6zHP" role="1oa70y" />
+    </node>
     <node concept="tnohg" id="6pgsoSCzlAY" role="tncku">
       <node concept="3clFbS" id="6pgsoSCzlAZ" role="2VODD2">
         <node concept="3cpWs8" id="7TUlQeg0GZu" role="3cqZAp">
@@ -2213,6 +2247,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="335p1i8MtiV" role="3cqZAp">
+          <node concept="2OqwBi" id="335p1i8MtsX" role="3clFbG">
+            <node concept="37vLTw" id="335p1i8MtiT" role="2Oq$k0">
+              <ref role="3cqZAo" node="7TUlQeg0GZx" resolve="crt" />
+            </node>
+            <node concept="2XshWL" id="335p1i8MtPw" role="2OqNvi">
+              <ref role="2WH_rO" node="335p1i8MoGi" resolve="setRepository" />
+              <node concept="2OqwBi" id="335p1i8MdSN" role="2XxRq1">
+                <node concept="2OqwBi" id="335p1i8MdSO" role="2Oq$k0">
+                  <node concept="2WthIp" id="335p1i8MdSP" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="335p1i8MdSQ" role="2OqNvi">
+                    <ref role="2WH_rO" node="5KHBa6l6zHO" resolve="mpsProject" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="335p1i8MdSR" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7TUlQeg0WRR" role="3cqZAp">
           <node concept="2OqwBi" id="7TUlQeg0X0I" role="3clFbG">
             <node concept="37vLTw" id="7TUlQeg0WRP" role="2Oq$k0">
@@ -2227,6 +2282,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1QGGSu" id="335p1i8MDBd" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/code_review.png" />
     </node>
   </node>
   <node concept="tC5Ba" id="6pgsoSCBd_r">
@@ -2324,28 +2382,6 @@
                 <node concept="2WthIp" id="335p1i8J6Xz" role="2Oq$k0" />
                 <node concept="2XshWL" id="335p1i8J7Jv" role="2OqNvi">
                   <ref role="2WH_rO" node="DMIuLumKyB" resolve="getOutputPath" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="335p1i8HmQK" role="3cqZAp">
-          <node concept="2OqwBi" id="335p1i8HmQH" role="3clFbG">
-            <node concept="10M0yZ" id="335p1i8HmQI" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="335p1i8HmQJ" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="335p1i8HnCB" role="37wK5m">
-                <node concept="2OqwBi" id="335p1i8HnKA" role="3uHU7w">
-                  <node concept="2WthIp" id="335p1i8HnKD" role="2Oq$k0" />
-                  <node concept="3gHZIF" id="335p1i8HnKF" role="2OqNvi">
-                    <ref role="2WH_rO" node="7uLL3Mf2Pkn" resolve="model" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="335p1i8HmSs" role="3uHU7B">
-                  <property role="Xl_RC" value="---- " />
                 </node>
               </node>
             </node>
