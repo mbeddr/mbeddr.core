@@ -3,10 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
-    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="-1" />
-    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
+    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -33,6 +33,7 @@
     <import index="vbi4" ref="r:101c6aaa-6376-4550-a0fa-eeca066047cc(com.mbeddr.analyses.utils.results_ui)" />
     <import index="cjpk" ref="r:4cca77bb-25f2-455e-a1a2-de97cca7b4ba(com.mbeddr.analyses.base.verification_conditions.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -7875,6 +7876,19 @@
         <node concept="3XFhqQ" id="2OfxaHaxQot" role="3EZMnx" />
         <node concept="3F2HdR" id="5tDzxi6S15M" role="3EZMnx">
           <ref role="1NtTu8" to="q5q6:2OfxaHaxQ5e" resolve="externalFiles" />
+          <node concept="4$FPG" id="QIiPbLAD4e" role="4_6I_">
+            <node concept="3clFbS" id="QIiPbLAD4f" role="2VODD2">
+              <node concept="3clFbF" id="QIiPbLAD7F" role="3cqZAp">
+                <node concept="2ShNRf" id="QIiPbLAD7D" role="3clFbG">
+                  <node concept="3zrR0B" id="QIiPbLAF3F" role="2ShVmc">
+                    <node concept="3Tqbb2" id="QIiPbLAF3H" role="3zrR0E">
+                      <ref role="ehGHo" to="68mc:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="2iRkQZ" id="5tDzxi6S15P" role="2czzBx" />
           <node concept="VPM3Z" id="5tDzxi6S15Q" role="3F10Kt">
             <property role="VOm3f" value="false" />

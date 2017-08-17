@@ -4,13 +4,34 @@
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
+    <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
+    <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
   </imports>
   <registry>
+    <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
+      <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ng" index="3vooZZ">
+        <property id="8039098920897639409" name="attachedCellId" index="19LeSh" />
+        <reference id="8039098920897680033" name="attachedNode" index="19LoX1" />
+      </concept>
+    </language>
+    <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
+      <concept id="8455208232410333108" name="com.mbeddr.mpsutil.review.annotation.structure.CommentAnnotationContainer" flags="ng" index="2f$52y">
+        <child id="8455208232410333109" name="comments" index="2f$52z" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
@@ -52,7 +73,17 @@
         <property id="4903714810883755350" name="text" index="3MwjfP" />
       </concept>
     </language>
+    <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
+      <concept id="1159656764133526267" name="com.mbeddr.mpsutil.review.structure.ReviewNote" flags="ng" index="3vAitl">
+        <property id="5652920968054438504" name="created" index="3ajGZ3" />
+        <property id="5652920968054438487" name="creator" index="3ajGZW" />
+        <child id="5652920968054438510" name="note" index="3ajGZ5" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -106,6 +137,12 @@
     </node>
     <node concept="398rNT" id="5dchr4QlfDQ" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
+      <node concept="55IIr" id="QIiPbLA7R2" role="398pKh">
+        <node concept="2Ry0Ak" id="QIiPbLA7Rb" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="QIiPbLA7Rq" role="2Ry0An" />
+        </node>
+      </node>
     </node>
     <node concept="55IIr" id="5dchr4QkQlf" role="auvoZ" />
     <node concept="1l3spV" id="5dchr4QkQlg" role="1l3spN" />
@@ -113,9 +150,30 @@
     <node concept="10PD9b" id="5dchr4Ql2LK" role="10PD9s" />
     <node concept="2sgV4H" id="5dchr4QkTfv" role="1l3spa">
       <ref role="1l3spb" to="p6ld:4i9pOwKTFVe" resolve="mbeddr" />
+      <node concept="398BVA" id="QIiPbLA7Qr" role="2JcizS">
+        <ref role="398BVh" node="5dchr4QlfDQ" resolve="mps.home" />
+        <node concept="2Ry0Ak" id="QIiPbLA7Qs" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="QIiPbLA24y" role="1l3spa">
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <node concept="398BVA" id="QIiPbLA7PZ" role="2JcizS">
+        <ref role="398BVh" node="5dchr4QlfDQ" resolve="mps.home" />
+        <node concept="2Ry0Ak" id="QIiPbLA7Q9" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="5dchr4Ql7Kx" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
+      <node concept="398BVA" id="QIiPbLA7QP" role="2JcizS">
+        <ref role="398BVh" node="5dchr4QlfDQ" resolve="mps.home" />
+        <node concept="2Ry0Ak" id="QIiPbLA7QQ" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="5dchr4QlcKU" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
@@ -148,6 +206,19 @@
     </node>
     <node concept="2_Ic$z" id="6towh060P0$" role="3989C9">
       <property role="TZNOO" value="" />
+    </node>
+    <node concept="2f$52y" id="QIiPbLA8tQ" role="lGtFl">
+      <node concept="3vAitl" id="QIiPbLA8tR" role="2f$52z">
+        <property role="3ajGZW" value="dan" />
+        <property role="3ajGZ3" value="16.08.2017 15:30:42" />
+        <property role="19LeSh" value="Collection_io6s4u_a" />
+        <ref role="19LoX1" node="5dchr4QlfDQ" resolve="mps.home" />
+        <node concept="19SGf9" id="QIiPbLA8tS" role="3ajGZ5">
+          <node concept="19SUe$" id="QIiPbLA8tT" role="19SJt6">
+            <property role="19SUeA" value="here must come a relative path to the mbeddr RCP installation (check in Inspector the absolute path)" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

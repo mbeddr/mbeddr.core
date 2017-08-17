@@ -318,7 +318,7 @@
           <node concept="1xGALR" id="EEDqFMyu_B" role="lGtFl">
             <property role="1xEijf" value="2" />
             <node concept="1xFd8N" id="EEDqFMyvFg" role="1xGcb7">
-              <property role="1xFd8M" value="static inline void  SM1_S1_s2_ExitAction1(SM1_S1__data_t *instance)" />
+              <property role="1xFd8M" value="static inline void  SM1_S1_s2_ExitAction2(SM1_S1__data_t *instance)" />
             </node>
           </node>
           <node concept="2xGTIE" id="EEDqFMyuyO" role="S7lxW">

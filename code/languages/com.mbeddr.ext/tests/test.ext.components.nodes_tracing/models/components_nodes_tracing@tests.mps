@@ -8,9 +8,7 @@
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
-  <imports>
-    <import index="mdmf" ref="r:963c4b27-5f46-4fe9-ad5b-ba7dee75e8c4(components_code)" />
-  </imports>
+  <imports />
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
@@ -64,7 +62,7 @@
             <property role="BaGAP" value="" />
           </node>
           <node concept="Xl_RD" id="73SKUHF91YP" role="1xDQ1B">
-            <property role="Xl_RC" value="Main" />
+            <property role="Xl_RC" value="ComponentsTracingTest" />
           </node>
         </node>
       </node>

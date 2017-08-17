@@ -1830,6 +1830,9 @@
     <node concept="PrWs8" id="7Jr7T0w731$" role="PzmwI">
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
+    <node concept="PrWs8" id="QIiPbLCJIv" role="PzmwI">
+      <ref role="PrY4T" to="x27k:QIiPbLCHqs" resolve="IClosureLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7apEgWbIQfE">
     <property role="3GE5qa" value="functionrefs.closure" />
