@@ -833,8 +833,8 @@
                 </node>
                 <node concept="2Xjw5R" id="7ztw3UYMrGf" role="2OqNvi">
                   <node concept="1xMEDy" id="7ztw3UYMrGg" role="1xVPHs">
-                    <node concept="chp4Y" id="78c1wjHeKTp" role="ri$Ld">
-                      <ref role="cht4Q" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
+                    <node concept="chp4Y" id="QIiPbLCIUp" role="ri$Ld">
+                      <ref role="cht4Q" to="x27k:QIiPbLCHqs" resolve="IClosureLike" />
                     </node>
                   </node>
                 </node>
