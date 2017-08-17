@@ -714,6 +714,9 @@
                                           </node>
                                         </node>
                                       </node>
+                                      <node concept="37vLTw" id="7obiejAz99i" role="37wK5m">
+                                        <ref role="3cqZAo" node="7obiejAykvB" resolve="trace" />
+                                      </node>
                                       <node concept="3clFbT" id="5ya_dKp1vwk" role="37wK5m">
                                         <property role="3clFbU" value="false" />
                                       </node>
@@ -823,6 +826,9 @@
                                   </node>
                                   <node concept="37vLTw" id="4_qY3E5iMOp" role="37wK5m">
                                     <ref role="3cqZAo" node="4_qY3E5iLLe" resolve="coverage" />
+                                  </node>
+                                  <node concept="37vLTw" id="7obiejAymX_" role="37wK5m">
+                                    <ref role="3cqZAo" node="7obiejAykvB" resolve="trace" />
                                   </node>
                                   <node concept="3clFbT" id="5ya_dKp1xq_" role="37wK5m">
                                     <property role="3clFbU" value="false" />
@@ -1086,6 +1092,12 @@
                 <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
               </node>
             </node>
+            <node concept="37vLTG" id="7obiejAykvB" role="3clF46">
+              <property role="TrG5h" value="trace" />
+              <node concept="3uibUv" id="6wNYzrUqFss" role="1tU5fm">
+                <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
+              </node>
+            </node>
           </node>
           <node concept="3Tm1VV" id="59qdqedS6Vp" role="1B3o_S" />
         </node>
@@ -1210,6 +1222,9 @@
                     <node concept="37vLTw" id="4_qY3E5iIkW" role="37wK5m">
                       <ref role="3cqZAo" node="4_qY3E5iHgT" resolve="coverage" />
                     </node>
+                    <node concept="37vLTw" id="7obiejAyJOM" role="37wK5m">
+                      <ref role="3cqZAo" node="7obiejAyJ5A" resolve="trace" />
+                    </node>
                     <node concept="3clFbT" id="5ya_dKpaQ89" role="37wK5m">
                       <property role="3clFbU" value="false" />
                       <node concept="17Uvod" id="5ya_dKpaQj6" role="lGtFl">
@@ -1267,6 +1282,12 @@
               <property role="TrG5h" value="coverage" />
               <node concept="3uibUv" id="4_qY3E5iI43" role="1tU5fm">
                 <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
+              </node>
+            </node>
+            <node concept="37vLTG" id="7obiejAyJ5A" role="3clF46">
+              <property role="TrG5h" value="trace" />
+              <node concept="3uibUv" id="7obiejAyJr6" role="1tU5fm">
+                <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
               </node>
             </node>
           </node>
@@ -1745,6 +1766,9 @@
                   <node concept="37vLTw" id="4_qY3E5iKz7" role="37wK5m">
                     <ref role="3cqZAo" node="4_qY3E5iIE7" resolve="coverage" />
                   </node>
+                  <node concept="37vLTw" id="7obiejAzy$0" role="37wK5m">
+                    <ref role="3cqZAo" node="7obiejAzxZC" resolve="trace" />
+                  </node>
                   <node concept="raruj" id="7F2vPZ3WcLB" role="lGtFl" />
                 </node>
               </node>
@@ -1763,6 +1787,12 @@
               <property role="TrG5h" value="coverage" />
               <node concept="3uibUv" id="4_qY3E5iJ3o" role="1tU5fm">
                 <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
+              </node>
+            </node>
+            <node concept="37vLTG" id="7obiejAzxZC" role="3clF46">
+              <property role="TrG5h" value="trace" />
+              <node concept="3uibUv" id="7obiejAzyqI" role="1tU5fm">
+                <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
               </node>
             </node>
           </node>
@@ -1884,6 +1914,9 @@
                   <node concept="37vLTw" id="6MNhNeU50UG" role="37wK5m">
                     <ref role="3cqZAo" node="6MNhNeU50UM" resolve="coverage" />
                   </node>
+                  <node concept="37vLTw" id="7obiejAzzNG" role="37wK5m">
+                    <ref role="3cqZAo" node="7obiejAzyZb" resolve="trace" />
+                  </node>
                   <node concept="raruj" id="6MNhNeU50UH" role="lGtFl" />
                 </node>
               </node>
@@ -1902,6 +1935,12 @@
               <property role="TrG5h" value="coverage" />
               <node concept="3uibUv" id="6MNhNeU50UN" role="1tU5fm">
                 <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
+              </node>
+            </node>
+            <node concept="37vLTG" id="7obiejAzyZb" role="3clF46">
+              <property role="TrG5h" value="trace" />
+              <node concept="3uibUv" id="7obiejAzzkM" role="1tU5fm">
+                <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
               </node>
             </node>
           </node>
@@ -2165,6 +2204,18 @@
                 <ref role="3uigEE" to="2ahs:4X7QcQ31ENp" resolve="IContext" />
               </node>
             </node>
+            <node concept="37vLTG" id="7obiejAOweC" role="3clF46">
+              <property role="TrG5h" value="analyzer" />
+              <node concept="3uibUv" id="7obiejAOwHF" role="1tU5fm">
+                <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
+              </node>
+            </node>
+            <node concept="37vLTG" id="7obiejAzTYd" role="3clF46">
+              <property role="TrG5h" value="trace" />
+              <node concept="3uibUv" id="7obiejAzUnp" role="1tU5fm">
+                <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
+              </node>
+            </node>
             <node concept="3clFbS" id="4mmKsQ9gTNa" role="3clF47">
               <node concept="3clFbF" id="4mmKsQ9gUOC" role="3cqZAp">
                 <node concept="1eOMI4" id="4mmKsQ9mN9l" role="3clFbG">
@@ -2320,6 +2371,49 @@
             <property role="TrG5h" value="coverage" />
             <node concept="3uibUv" id="4_qY3E6qZzw" role="1tU5fm">
               <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5d4VabuMHoe" role="3acgRq">
+      <ref role="30HIoZ" to="3673:5d4VabuMFGB" resolve="TraceExpression" />
+      <node concept="1Koe21" id="5d4VabuMHof" role="1lVwrX">
+        <node concept="3clFb_" id="5d4VabuMHog" role="1Koe22">
+          <property role="TrG5h" value="asdf" />
+          <node concept="3cqZAl" id="5d4VabuMHoh" role="3clF45" />
+          <node concept="3Tm1VV" id="5d4VabuMHoi" role="1B3o_S" />
+          <node concept="3clFbS" id="5d4VabuMHoj" role="3clF47">
+            <node concept="3cpWs8" id="5d4VabuMHok" role="3cqZAp">
+              <node concept="3cpWsn" id="5d4VabuMHol" role="3cpWs9">
+                <property role="TrG5h" value="c" />
+                <node concept="3uibUv" id="5d4VabuMRjA" role="1tU5fm">
+                  <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
+                </node>
+                <node concept="37vLTw" id="5d4VabuMHon" role="33vP2m">
+                  <ref role="3cqZAo" node="5d4VabuMHou" resolve="trace" />
+                  <node concept="raruj" id="5d4VabuMHoo" role="lGtFl" />
+                  <node concept="1ZhdrF" id="5d4VabuMHop" role="lGtFl">
+                    <property role="2qtEX8" value="variableDeclaration" />
+                    <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                    <node concept="3$xsQk" id="5d4VabuMHoq" role="3$ytzL">
+                      <node concept="3clFbS" id="5d4VabuMHor" role="2VODD2">
+                        <node concept="3clFbF" id="5d4VabuMHos" role="3cqZAp">
+                          <node concept="Xl_RD" id="5d4VabuMHot" role="3clFbG">
+                            <property role="Xl_RC" value="trace" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTG" id="5d4VabuMHou" role="3clF46">
+            <property role="TrG5h" value="trace" />
+            <node concept="3uibUv" id="5d4VabuMR9O" role="1tU5fm">
+              <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
             </node>
           </node>
         </node>
@@ -3049,6 +3143,12 @@
                             <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
                           </node>
                         </node>
+                        <node concept="37vLTG" id="7obiejADelj" role="3clF46">
+                          <property role="TrG5h" value="trace" />
+                          <node concept="3uibUv" id="7obiejADgeu" role="1tU5fm">
+                            <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
+                          </node>
+                        </node>
                         <node concept="3clFbS" id="6ENu_m7wxCE" role="3clF47">
                           <node concept="SfApY" id="6ENu_m7wDFk" role="3cqZAp">
                             <node concept="3clFbS" id="6ENu_m7wDFm" role="SfCbr">
@@ -3483,6 +3583,12 @@
                           <property role="TrG5h" value="coverage" />
                           <node concept="3uibUv" id="4_qY3E5iRZg" role="1tU5fm">
                             <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
+                          </node>
+                        </node>
+                        <node concept="37vLTG" id="7obiejA$imj" role="3clF46">
+                          <property role="TrG5h" value="trace" />
+                          <node concept="3uibUv" id="7obiejA$jIR" role="1tU5fm">
+                            <ref role="3uigEE" to="2ahs:7cNsFS_gTK8" resolve="ComputationTrace" />
                           </node>
                         </node>
                         <node concept="3clFbS" id="7oujAIfrG5v" role="3clF47">

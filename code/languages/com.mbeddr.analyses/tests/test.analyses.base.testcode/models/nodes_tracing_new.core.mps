@@ -2,6 +2,7 @@
 <model ref="r:4fd66586-eb16-40a3-aeb5-ffbc7b0517a3(test.analyses.base.testcode.nodes_tracing_new.core)">
   <persistence version="9" />
   <languages>
+    <use id="85e94e86-9fcb-43a2-9083-64c40006219e" name="com.mbeddr.mpsutil.nodes_tracing.test" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>

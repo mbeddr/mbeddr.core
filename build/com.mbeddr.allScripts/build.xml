@@ -722,7 +722,7 @@
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/jetbrains.mps.minimal/jetbrains.mps.minimal.msd" />
       </chunk>
       <jvmargs>
-        <arg value="-Xmx512m" />
+        <arg value="-Xmx4096m" />
       </jvmargs>
       <macro name="artifacts.root" path="${artifacts.root}" />
       <macro name="mps.home" path="${mps.home}" />

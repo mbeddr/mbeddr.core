@@ -78,6 +78,7 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -88,7 +89,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
@@ -196,7 +196,7 @@
       <node concept="3Tm1VV" id="4arT0cns7a9" role="1B3o_S" />
       <node concept="3clFbS" id="4arT0cns7aa" role="3clF47">
         <node concept="3cpWs6" id="4arT0cns7ab" role="3cqZAp">
-          <node concept="3P9mCS" id="4arT0cns7ac" role="3cqZAk">
+          <node concept="1rXfSq" id="3IsZZljEszW" role="3cqZAk">
             <ref role="37wK5l" node="4arT0cns79T" resolve="getStatemachineName" />
           </node>
         </node>

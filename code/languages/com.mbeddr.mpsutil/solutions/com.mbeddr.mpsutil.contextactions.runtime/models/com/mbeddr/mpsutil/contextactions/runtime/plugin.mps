@@ -397,7 +397,7 @@
   </node>
   <node concept="sEfby" id="5tr7YH$U35C">
     <property role="TrG5h" value="ContextActionsTool" />
-    <property role="2XNbzY" value="Context Actions" />
+    <property role="2XNbzY" value="Context Actions 2" />
     <property role="2bmUCM" value="RIGHT" />
     <node concept="2XrIbr" id="4IZABA$xIx4" role="2XNbBy">
       <property role="TrG5h" value="changeContext" />

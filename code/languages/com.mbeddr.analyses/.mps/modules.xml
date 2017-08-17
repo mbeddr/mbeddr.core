@@ -47,6 +47,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.components.rt/com.mbeddr.analyses.cbmc.components.rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.core.pluginSolution/com.mbeddr.analyses.cbmc.core.pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.core.rt/com.mbeddr.analyses.cbmc.core.rt.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.documentation/com.mbeddr.analyses.cbmc.documentation.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.experimental.rt/com.mbeddr.analyses.cbmc.statemachines.experimental.rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.pluginSolution/com.mbeddr.analyses.cbmc.statemachines.pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.rt/com.mbeddr.analyses.cbmc.statemachines.rt.msd" folder="cbmc" />
@@ -57,6 +58,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm.pluginSolution/com.mbeddr.analyses.sat4j.fm.pluginSolution.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm/com.mbeddr.analyses.sat4j.fm.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j/com.mbeddr.analyses.sat4j.msd" folder="sat4j" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.documentation/com.mbeddr.analyses.spin.documentation.msd" folder="spin" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.pluginSolution/com.mbeddr.analyses.spin.pluginSolution.msd" folder="spin" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.rt/com.mbeddr.analyses.spin.rt.msd" folder="spin" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.z3/com.mbeddr.analyses.z3.msd" folder="z3" />

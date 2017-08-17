@@ -34,6 +34,7 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="1703835097132541506" name="jetbrains.mps.lang.behavior.structure.ThisConceptExpression" flags="ng" index="1fM9EW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -78,10 +79,6 @@
       <concept id="1070534555686" name="jetbrains.mps.baseLanguage.structure.CharType" flags="in" index="10Pfzv" />
       <concept id="1070534604311" name="jetbrains.mps.baseLanguage.structure.ByteType" flags="in" index="10PrrI" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
-      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -1182,14 +1179,7 @@
       <node concept="3clFbS" id="6Go9U2y2JzI" role="3clF47">
         <node concept="3cpWs6" id="5Bl4dfr44tf" role="3cqZAp">
           <node concept="2OqwBi" id="5Bl4dfr5bJL" role="3cqZAk">
-            <node concept="1eOMI4" id="5Bl4dfr5bm2" role="2Oq$k0">
-              <node concept="10QFUN" id="5Bl4dfr5bm3" role="1eOMHV">
-                <node concept="13iPFW" id="5Bl4dfr5bm0" role="10QFUP" />
-                <node concept="3THzug" id="5Bl4dfr5dHw" role="10QFUM">
-                  <ref role="3qa414" to="spci:6Go9U2y2EPU" resolve="IInlineFormatCategory" />
-                </node>
-              </node>
-            </node>
+            <node concept="1fM9EW" id="HPmk_w0gAC" role="2Oq$k0" />
             <node concept="2qgKlT" id="5Bl4dfr5bYf" role="2OqNvi">
               <ref role="37wK5l" node="6Go9U2y64Le" resolve="getTypicalTypes" />
             </node>

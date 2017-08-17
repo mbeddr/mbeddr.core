@@ -318,7 +318,6 @@
         <node concept="3cpWs8" id="341WyjDj3Mb" role="3cqZAp">
           <node concept="3cpWsn" id="341WyjDj3Mc" role="3cpWs9">
             <property role="TrG5h" value="result" />
-            <node concept="10Nm6u" id="341WyjDj3Md" role="33vP2m" />
             <node concept="_YKpA" id="341WyjDj3Me" role="1tU5fm">
               <node concept="3uibUv" id="341WyjDj3Mf" role="_ZDj9">
                 <ref role="3uigEE" to="mog:67iKQ7oe8kf" resolve="TestVectorResult" />

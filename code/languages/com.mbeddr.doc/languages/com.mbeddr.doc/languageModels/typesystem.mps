@@ -47,6 +47,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -98,6 +99,9 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
         <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
+      <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
+        <child id="1175517761460" name="condition" index="2MkoU_" />
       </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
@@ -1132,6 +1136,59 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="2CRkjeisemW">
+    <property role="TrG5h" value="check_DocumentInclude" />
+    <node concept="3clFbS" id="2CRkjeisemX" role="18ibNy">
+      <node concept="3clFbJ" id="2CRkjeisen3" role="3cqZAp">
+        <node concept="2OqwBi" id="2CRkjeisezK" role="3clFbw">
+          <node concept="1YBJjd" id="2CRkjeiseni" role="2Oq$k0">
+            <ref role="1YBMHb" node="2CRkjeisemZ" resolve="documentInclude" />
+          </node>
+          <node concept="3TrcHB" id="2CRkjeiseKe" role="2OqNvi">
+            <ref role="3TsBF5" to="2c95:hZfTLLrEWd" resolve="referenceOnly" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="2CRkjeisen5" role="3clFbx">
+          <node concept="2Mj0R9" id="2CRkjeiseMO" role="3cqZAp">
+            <node concept="17R0WA" id="2CRkjeisfzp" role="2MkoU_">
+              <node concept="2OqwBi" id="2CRkjeishdl" role="3uHU7w">
+                <node concept="2OqwBi" id="2CRkjeisgJe" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2CRkjeisfOw" role="2Oq$k0">
+                    <node concept="1YBJjd" id="2CRkjeisfAB" role="2Oq$k0">
+                      <ref role="1YBMHb" node="2CRkjeisemZ" resolve="documentInclude" />
+                    </node>
+                    <node concept="3TrEf2" id="2CRkjeisg3D" role="2OqNvi">
+                      <ref role="3Tt5mk" to="2c95:5mf_X_Lbqjz" resolve="ref" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="2CRkjeisgTJ" role="2OqNvi">
+                    <ref role="3Tt5mk" to="2c95:2TZO3DbvI5E" resolve="doc" />
+                  </node>
+                </node>
+                <node concept="I4A8Y" id="2CRkjeisht_" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="2CRkjeiseZK" role="3uHU7B">
+                <node concept="1YBJjd" id="2CRkjeiseNc" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2CRkjeisemZ" resolve="documentInclude" />
+                </node>
+                <node concept="I4A8Y" id="2CRkjeisfeP" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2CRkjeish$$" role="2MkJ7o">
+              <property role="Xl_RC" value="Currently only references to nodes in the same model are supported" />
+            </node>
+            <node concept="1YBJjd" id="2CRkjeishG4" role="2OEOjV">
+              <ref role="1YBMHb" node="2CRkjeisemZ" resolve="documentInclude" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2CRkjeisemZ" role="1YuTPh">
+      <property role="TrG5h" value="documentInclude" />
+      <ref role="1YaFvo" to="2c95:5mf_X_Lbqjw" resolve="DocumentInclude" />
     </node>
   </node>
 </model>

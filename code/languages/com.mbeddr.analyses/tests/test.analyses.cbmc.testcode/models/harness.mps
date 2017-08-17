@@ -9,7 +9,7 @@
     <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="4" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
-    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="1" />
+    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="2" />
     <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
@@ -2245,6 +2245,7 @@
             </node>
           </node>
         </node>
+        <node concept="3XISUE" id="Or98vorIIu" role="3XIRFZ" />
       </node>
       <node concept="19Rifw" id="2hSqXWTuBxn" role="2C2TGm">
         <property role="2caQfQ" value="false" />
@@ -2425,6 +2426,75 @@
             </node>
           </node>
         </node>
+        <node concept="3XISUE" id="Or98vorK6p" role="3XIRFZ" />
+        <node concept="3XIRlf" id="Or98vorIN2" role="3XIRFZ">
+          <property role="TrG5h" value="a" />
+          <node concept="26Vqqz" id="Or98vorKiU" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3XIRlf" id="Or98vorIRS" role="3XIRFZ">
+          <property role="TrG5h" value="b" />
+          <node concept="26Vqqz" id="Or98vorKum" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="2c3wGG" id="Or98vorIWN" role="3XIRFZ">
+          <node concept="2c3wGE" id="Or98vorIZf" role="3XIRFZ">
+            <property role="2xg5V6" value="false" />
+            <node concept="3ZVu4v" id="Or98vorIZo" role="2c3wGY">
+              <ref role="3ZVs_2" node="Or98vorIN2" resolve="a" />
+            </node>
+          </node>
+          <node concept="2c3wGE" id="Or98vorIZL" role="3XIRFZ">
+            <property role="2xg5V6" value="true" />
+            <node concept="3ZVu4v" id="Or98vorIZZ" role="2c3wGY">
+              <ref role="3ZVs_2" node="Or98vorIRS" resolve="b" />
+            </node>
+            <node concept="1vVjFF" id="Or98vorJ6K" role="2c3wGU">
+              <node concept="2BOciq" id="Or98vorJ6M" role="3TlMhI">
+                <node concept="3ZVu4v" id="Or98vorJ0c" role="3TlMhI">
+                  <ref role="3ZVs_2" node="Or98vorIN2" resolve="a" />
+                </node>
+                <node concept="3ZVu4v" id="Or98vorJ1D" role="3TlMhJ">
+                  <ref role="3ZVs_2" node="Or98vorIRS" resolve="b" />
+                </node>
+              </node>
+              <node concept="1vV05I" id="Or98vorJ6H" role="3TlMhJ">
+                <property role="n43Ve" value="true" />
+                <node concept="3TlMh9" id="Or98vorJ9v" role="1vV05J">
+                  <property role="2hmy$m" value="0" />
+                </node>
+                <node concept="3TlMh9" id="Or98vorJdO" role="1vV05C">
+                  <property role="2hmy$m" value="7" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3XISUE" id="Or98vorJiW" role="3XIRFZ" />
+          <node concept="1QiMYF" id="Or98vorKA2" role="3XIRFZ">
+            <node concept="OjmMv" id="Or98vorKA4" role="3SJzmv">
+              <node concept="19SGf9" id="Or98vorKA5" role="OjmMu">
+                <node concept="19SUe$" id="Or98vorKA6" role="19SJt6">
+                  <property role="19SUeA" value="since the constraint is on a+b there are basic no restrictions on b alone" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="Y9XUq" id="Or98vorJk5" role="3XIRFZ">
+            <node concept="25Bbzn" id="Or98vorJm8" role="Y9XUp">
+              <node concept="3TlMh9" id="Or98vorJr_" role="3TlMhJ">
+                <property role="2hmy$m" value="30" />
+              </node>
+              <node concept="3ZVu4v" id="Or98vorJkI" role="3TlMhI">
+                <ref role="3ZVs_2" node="Or98vorIRS" resolve="b" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="Or98vorK8s" role="3XIRFZ" />
       </node>
       <node concept="19Rifw" id="2hSqXWTvCnV" role="2C2TGm">
         <property role="2caQfQ" value="false" />

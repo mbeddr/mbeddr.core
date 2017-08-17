@@ -196,7 +196,6 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -417,7 +416,7 @@
       <node concept="3Tm1VV" id="6iM0fX1NeWx" role="1B3o_S" />
       <node concept="3clFbS" id="6iM0fX1NeWy" role="3clF47">
         <node concept="3cpWs6" id="3L_Vuqbn5qQ" role="3cqZAp">
-          <node concept="3P9mCS" id="3L_Vuqbn5qV" role="3cqZAk">
+          <node concept="1rXfSq" id="3IsZZljEszL" role="3cqZAk">
             <ref role="37wK5l" node="3L_Vuqbn5oV" resolve="runTool" />
             <node concept="37vLTw" id="3L_Vuqbn5qW" role="37wK5m">
               <ref role="3cqZAo" node="6iM0fX1NeWG" resolve="files" />
@@ -583,7 +582,7 @@
                 <node concept="3uibUv" id="1mocVhAD9ht" role="1tU5fm">
                   <ref role="3uigEE" to="wyt6:~Process" resolve="Process" />
                 </node>
-                <node concept="3P9mCS" id="3L_Vuqbn5pt" role="33vP2m">
+                <node concept="1rXfSq" id="3IsZZljEszM" role="33vP2m">
                   <ref role="37wK5l" node="7YBOkhBhwOi" resolve="doRunToolWithArgs" />
                   <node concept="37vLTw" id="38mk9EIsvkp" role="37wK5m">
                     <ref role="3cqZAo" node="3L_Vuqbn5oW" resolve="files" />
@@ -2128,7 +2127,7 @@
                 </node>
                 <node concept="1Wc70l" id="1XFitunRf8I" role="2$JKZa">
                   <node concept="3fqX7Q" id="1XFitunRf8R" role="3uHU7w">
-                    <node concept="3P9mCS" id="1XFitunRf98" role="3fr31v">
+                    <node concept="1rXfSq" id="3IsZZljEszN" role="3fr31v">
                       <ref role="37wK5l" node="1XFitunRf8T" resolve="timeout" />
                     </node>
                   </node>
@@ -2154,13 +2153,13 @@
               <node concept="3clFbJ" id="5bdxpKkKZRv" role="3cqZAp">
                 <node concept="3clFbS" id="5bdxpKkKZRw" role="3clFbx">
                   <node concept="3clFbF" id="6YINIHwdBrM" role="3cqZAp">
-                    <node concept="3P9mCS" id="6YINIHwdBrN" role="3clFbG">
+                    <node concept="1rXfSq" id="3IsZZljEszO" role="3clFbG">
                       <ref role="37wK5l" node="44z3jezmIih" resolve="doKillExternalProcesses" />
                     </node>
                   </node>
                 </node>
                 <node concept="22lmx$" id="1XFitunRnbI" role="3clFbw">
-                  <node concept="3P9mCS" id="1XFitunRnbL" role="3uHU7w">
+                  <node concept="1rXfSq" id="3IsZZljEszP" role="3uHU7w">
                     <ref role="37wK5l" node="1XFitunRf8T" resolve="timeout" />
                   </node>
                   <node concept="2OqwBi" id="5bdxpKkKZRM" role="3uHU7B">

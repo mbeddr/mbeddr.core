@@ -22,6 +22,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -152,6 +153,21 @@
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
       <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
+      </concept>
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+      </concept>
+      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
+        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -410,6 +426,31 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="7PyP3ULffm_" role="3cqZAp">
+          <node concept="2OqwBi" id="7PyP3ULforb" role="3clFbG">
+            <node concept="2OqwBi" id="7PyP3ULfmdG" role="2Oq$k0">
+              <node concept="37vLTw" id="7PyP3ULffmz" role="2Oq$k0">
+                <ref role="3cqZAo" node="3eWkbyCTBCr" resolve="bc" />
+              </node>
+              <node concept="3Tsc0h" id="7PyP3ULfm$j" role="2OqNvi">
+                <ref role="3TtcxE" to="vs0r:3R$6B6bKw0E" resolve="configurationItems" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="7PyP3ULfsSk" role="2OqNvi">
+              <node concept="2pJPEk" id="7PyP3ULftv8" role="25WWJ7">
+                <node concept="2pJPED" id="7PyP3ULftHW" role="2pJPEn">
+                  <ref role="2pJxaS" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
+                  <node concept="2pIpSj" id="7PyP3ULfuaw" role="2pJxcM">
+                    <ref role="2pIpSl" to="yz9a:ILZbnBPQGC" resolve="testStrategy" />
+                    <node concept="2pJPED" id="7PyP3ULfuob" role="2pJxcZ">
+                      <ref role="2pJxaS" to="yz9a:ILZbnBPQGE" resolve="NoTestIsolationStrategy" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3eWkbyCTBDa" role="3cqZAp">
           <node concept="3cpWsn" id="3eWkbyCTBDb" role="3cpWs9">
             <property role="TrG5h" value="exe" />
@@ -424,6 +465,9 @@
               </node>
               <node concept="37vLTw" id="3eWkbyCTBDf" role="37wK5m">
                 <ref role="3cqZAo" node="7Uz1bYM3TOZ" resolve="immo" />
+              </node>
+              <node concept="37vLTw" id="7PyP3ULbwRa" role="37wK5m">
+                <ref role="3cqZAo" node="3eWkbyCTBCr" resolve="bc" />
               </node>
             </node>
           </node>
