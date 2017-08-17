@@ -118,7 +118,6 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
-        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
@@ -126,23 +125,9 @@
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
-        <child id="5323740605968447026" name="target" index="2AWWZH" />
       </concept>
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
-      </concept>
-      <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
-        <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
-        <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
-        <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
-        <property id="3963667026125442676" name="make" index="3r8Kxs" />
-      </concept>
-      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
-        <child id="1485382076185232212" name="targets" index="3anu1O" />
-      </concept>
-      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
-      <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
-        <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
@@ -538,7 +523,6 @@
   <node concept="2v9HqL" id="16gulW_kO2B">
     <node concept="29Nb31" id="1Xa7X_jmhHr" role="2ePNbc">
       <property role="TrG5h" value="verification_demo" />
-      <ref role="3oK8_y" node="QIiPbLBmNa" resolve="portable" />
       <node concept="2v9HqM" id="1Xa7X_jmm2k" role="2eOfOg">
         <ref role="2v9HqP" node="3iuCLRa88fo" resolve="_030_statemachines_harness" />
       </node>
@@ -630,7 +614,6 @@
     <node concept="2eOfOl" id="7zW9XauV1oF" role="2ePNbc">
       <property role="iO3LB" value="false" />
       <property role="TrG5h" value="hamming" />
-      <ref role="3oK8_y" node="QIiPbLBmNa" resolve="portable" />
       <node concept="2v9HqM" id="7zW9XauV1pr" role="2eOfOg">
         <ref role="2v9HqP" node="7ANKYSIDYxk" resolve="_060_hamming_main" />
       </node>
@@ -667,25 +650,6 @@
     <node concept="22RD12" id="13bv9czoHlZ" role="2Q9xDr" />
     <node concept="12mU2y" id="1U5CTQBq1hn" role="2Q9xDr">
       <node concept="3GpDuo" id="1U5CTQBq1ho" role="3GpDut" />
-    </node>
-    <node concept="2AWWZL" id="QIiPbLBmN6" role="2AWWZH">
-      <property role="2AWWZJ" value="gcc" />
-      <property role="3r8Kw1" value="gdb" />
-      <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99" />
-      <property role="1FkSt$" value="-g" />
-      <node concept="3abb7c" id="QIiPbLBmN7" role="3anu1O">
-        <property role="TrG5h" value="Win32" />
-      </node>
-      <node concept="3abb7c" id="QIiPbLBmN8" role="3anu1O">
-        <property role="TrG5h" value="MacOSX" />
-      </node>
-      <node concept="3abb7c" id="QIiPbLBmN9" role="3anu1O">
-        <property role="TrG5h" value="Linux" />
-      </node>
-      <node concept="3abb7c" id="QIiPbLBmNa" role="3anu1O">
-        <property role="TrG5h" value="portable" />
-      </node>
     </node>
   </node>
   <node concept="N3F5e" id="3iuCLRa88fo">
