@@ -59,21 +59,126 @@
   <node concept="1lH9Xt" id="6XBHSVMFkqf">
     <property role="TrG5h" value="ExporterImporterBaseLineTest" />
     <node concept="1LZb2c" id="6XBHSVMFkts" role="1SL9yI">
-      <property role="TrG5h" value="testModelImporterExporterBaseLine" />
+      <property role="TrG5h" value="testModelImporterExporterBaseLine1" />
       <node concept="3cqZAl" id="6XBHSVMFktt" role="3clF45" />
       <node concept="3clFbS" id="6XBHSVMFktx" role="3clF47">
         <node concept="2xQTxM" id="4MUcKNHp2Ng" role="3cqZAp">
           <node concept="3NXOOs" id="4MUcKNHp2Ni" role="2xQTxN">
             <property role="1RwFax" value="true" />
             <property role="3kgbRO" value="false" />
-            <property role="3N1Lgt" value="EMF_Meta_Models/amalthea.xcore" />
+            <property role="3N1Lgt" value="EMF_Meta_Models/modelImporterExporterTest1.ecore" />
           </node>
           <node concept="BaHAS" id="4MUcKNHp2Nk" role="2xQTyc">
-            <property role="BaHAW" value="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.structure" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1.structure" />
             <property role="BaGAP" value="" />
           </node>
           <node concept="BaHAS" id="4MUcKNHp2Nm" role="2xQTy9">
-            <property role="BaHAW" value="com.mbeddr.mpsutil.ecoretransformationutils.models.sampleamaltheamodel" />
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecore.modelImportExport.testInstance1" />
+            <property role="BaGAP" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2Q$Xn1yHuV$" role="1SL9yI">
+      <property role="TrG5h" value="testModelImporterExporterBaseLine2" />
+      <node concept="3cqZAl" id="2Q$Xn1yHuV_" role="3clF45" />
+      <node concept="3clFbS" id="2Q$Xn1yHuVA" role="3clF47">
+        <node concept="2xQTxM" id="2Q$Xn1yHuVB" role="3cqZAp">
+          <node concept="3NXOOs" id="2Q$Xn1yHuVC" role="2xQTxN">
+            <property role="1RwFax" value="true" />
+            <property role="3kgbRO" value="false" />
+            <property role="3N1Lgt" value="EMF_Meta_Models/modelImporterExporterTest2.ecore" />
+          </node>
+          <node concept="BaHAS" id="2Q$Xn1yHuVD" role="2xQTyc">
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2.structure" />
+            <property role="BaGAP" value="" />
+          </node>
+          <node concept="BaHAS" id="2Q$Xn1yHuVE" role="2xQTy9">
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecore.modelImportExport.testInstance2" />
+            <property role="BaGAP" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2Q$Xn1yHv34" role="1SL9yI">
+      <property role="TrG5h" value="testModelImporterExporterBaseLine3" />
+      <node concept="3cqZAl" id="2Q$Xn1yHv35" role="3clF45" />
+      <node concept="3clFbS" id="2Q$Xn1yHv36" role="3clF47">
+        <node concept="2xQTxM" id="2Q$Xn1yHv37" role="3cqZAp">
+          <node concept="3NXOOs" id="2Q$Xn1yHv38" role="2xQTxN">
+            <property role="1RwFax" value="true" />
+            <property role="3kgbRO" value="false" />
+            <property role="3N1Lgt" value="EMF_Meta_Models/modelImporterExporterTest3.ecore" />
+          </node>
+          <node concept="BaHAS" id="2Q$Xn1yHv39" role="2xQTyc">
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage3.structure" />
+            <property role="BaGAP" value="" />
+          </node>
+          <node concept="BaHAS" id="2Q$Xn1yHv3a" role="2xQTy9">
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecore.modelImportExport.testInstance3" />
+            <property role="BaGAP" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2Q$Xn1yHvdM" role="1SL9yI">
+      <property role="TrG5h" value="testModelImporterExporterBaseLine4" />
+      <node concept="3cqZAl" id="2Q$Xn1yHvdN" role="3clF45" />
+      <node concept="3clFbS" id="2Q$Xn1yHvdO" role="3clF47">
+        <node concept="2xQTxM" id="2Q$Xn1yHvdP" role="3cqZAp">
+          <node concept="3NXOOs" id="2Q$Xn1yHvdQ" role="2xQTxN">
+            <property role="1RwFax" value="true" />
+            <property role="3kgbRO" value="false" />
+            <property role="3N1Lgt" value="EMF_Meta_Models/modelImporterExporterTest4.ecore" />
+          </node>
+          <node concept="BaHAS" id="2Q$Xn1yHvdR" role="2xQTyc">
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage4.structure" />
+            <property role="BaGAP" value="" />
+          </node>
+          <node concept="BaHAS" id="2Q$Xn1yHvdS" role="2xQTy9">
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecore.modelImportExport.testInstance4" />
+            <property role="BaGAP" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2Q$Xn1yHvv9" role="1SL9yI">
+      <property role="TrG5h" value="testModelImporterExporterBaseLine5" />
+      <node concept="3cqZAl" id="2Q$Xn1yHvva" role="3clF45" />
+      <node concept="3clFbS" id="2Q$Xn1yHvvb" role="3clF47">
+        <node concept="2xQTxM" id="2Q$Xn1yHvvc" role="3cqZAp">
+          <node concept="3NXOOs" id="2Q$Xn1yHvvd" role="2xQTxN">
+            <property role="1RwFax" value="true" />
+            <property role="3kgbRO" value="false" />
+            <property role="3N1Lgt" value="EMF_Meta_Models/modelImporterExporterTest5.ecore" />
+          </node>
+          <node concept="BaHAS" id="2Q$Xn1yHvve" role="2xQTyc">
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5.structure" />
+            <property role="BaGAP" value="" />
+          </node>
+          <node concept="BaHAS" id="2Q$Xn1yHvvf" role="2xQTy9">
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecore.modelImportExport.testInstance5" />
+            <property role="BaGAP" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2Q$Xn1yHvH_" role="1SL9yI">
+      <property role="TrG5h" value="testModelImporterExporterBaseLine6" />
+      <node concept="3cqZAl" id="2Q$Xn1yHvHA" role="3clF45" />
+      <node concept="3clFbS" id="2Q$Xn1yHvHB" role="3clF47">
+        <node concept="2xQTxM" id="2Q$Xn1yHvHC" role="3cqZAp">
+          <node concept="3NXOOs" id="2Q$Xn1yHvHD" role="2xQTxN">
+            <property role="1RwFax" value="true" />
+            <property role="3kgbRO" value="false" />
+            <property role="3N1Lgt" value="EMF_Meta_Models/modelImporterExporterTest6.ecore" />
+          </node>
+          <node concept="BaHAS" id="2Q$Xn1yHvHE" role="2xQTyc">
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6.structure" />
+            <property role="BaGAP" value="" />
+          </node>
+          <node concept="BaHAS" id="2Q$Xn1yHvHF" role="2xQTy9">
+            <property role="BaHAW" value="test.com.mbeddr.mpsutil.ecore.modelImportExport.testInstance6" />
             <property role="BaGAP" value="" />
           </node>
         </node>
