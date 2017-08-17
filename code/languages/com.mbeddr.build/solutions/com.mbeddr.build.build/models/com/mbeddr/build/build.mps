@@ -186,15 +186,15 @@
       <property role="TrG5h" value="mbeddr.assembla.ext.home" />
     </node>
     <node concept="398rNT" id="44QTgQqTwas" role="1l3spd">
-      <property role="TrG5h" value="tutorial.home" />
+      <property role="TrG5h" value="tutorial.dsls.extensions.home" />
       <node concept="398BVA" id="44QTgQqV$Qx" role="398pKh">
         <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
         <node concept="2Ry0Ak" id="44QTgQqV$QL" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="44QTgQqVDAC" role="2Ry0An">
             <property role="2Ry0Am" value="applications" />
-            <node concept="2Ry0Ak" id="44QTgQqVDAG" role="2Ry0An">
-              <property role="2Ry0Am" value="tutorial" />
+            <node concept="2Ry0Ak" id="QIiPbLw9Ql" role="2Ry0An">
+              <property role="2Ry0Am" value="tutorial-dsls-extensions" />
             </node>
           </node>
         </node>
@@ -304,6 +304,9 @@
         <node concept="L2wRC" id="1$wpIBy0LL5" role="39821P">
           <ref role="L2wRA" node="6VDcRIteYNQ" resolve="mbeddr.tutorial.shonan.runtime" />
         </node>
+        <node concept="L2wRC" id="QIiPbLw9PP" role="39821P">
+          <ref role="L2wRA" node="QIiPbLwamK" resolve="demo.expr.sandbox" />
+        </node>
         <node concept="3_J27D" id="2lpUxXNvac$" role="Nbhlr">
           <node concept="3Mxwew" id="2lpUxXNvaoz" role="3MwsjC">
             <property role="3MwjfP" value="com.mbeddr.tutorial.languages.zip" />
@@ -340,7 +343,7 @@
         <property role="3LESm3" value="07b580a3-cb92-4b5d-ab7c-9e2d58b9d602" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="44QTgQqTvU0" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="44QTgQqTvU1" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="44QTgQqTvU2" role="2Ry0An">
@@ -388,7 +391,7 @@
         <property role="3LESm3" value="16ff087a-23cd-49b8-9c5b-a2c20cea9d3e" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="44QTgQqTvV0" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="44QTgQqTvV1" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="44QTgQqTvV2" role="2Ry0An">
@@ -457,7 +460,7 @@
         <property role="3LESm3" value="ce2335b7-fcfd-403e-8ace-08dd457fd818" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="44QTgQqTvVS" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="44QTgQqTvVT" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="44QTgQqTvVU" role="2Ry0An">
@@ -505,7 +508,7 @@
         <property role="3LESm3" value="973c8be0-8526-4588-aca6-92bcbb701b50" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="44QTgQqTvWC" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="44QTgQqTvWD" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="44QTgQqTvWE" role="2Ry0An">
@@ -533,7 +536,7 @@
         <property role="3LESm3" value="4930e34b-b776-4ccb-b2ff-c6f31789e126" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="GKLijSCUTI" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="GKLijSCUTJ" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="GKLijSCUTK" role="2Ry0An">
@@ -572,7 +575,7 @@
         <property role="3LESm3" value="7fc59e55-0f30-4694-b8e3-d334e472c924" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="44QTgQqTvXw" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="44QTgQqTvXx" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="44QTgQqTvXy" role="2Ry0An">
@@ -618,7 +621,7 @@
           <ref role="1E0d5P" node="6VDcRIteYNQ" resolve="mbeddr.tutorial.shonan.runtime" />
         </node>
         <node concept="398BVA" id="44QTgQqTvYw" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="44QTgQqTvYx" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="44QTgQqTvYy" role="2Ry0An">
@@ -710,7 +713,7 @@
         <property role="3LESm3" value="b68cce94-7c2b-436e-8b69-c33a9bcb11a0" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="6VDcRIteYZX" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="6VDcRIteZ7T" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="6VDcRIteZ82" role="2Ry0An">
@@ -776,7 +779,7 @@
         <property role="3LESm3" value="8cb5ab9f-a2c3-418b-a67c-c5690ef7361b" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="1yRuzdJ_WVZ" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="1yRuzdJ_WW0" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="1yRuzdJ_WW1" role="2Ry0An">
@@ -809,7 +812,7 @@
         <property role="3LESm3" value="a577a05d-67ad-41db-9547-6e5f0730b85d" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="44QTgQqTw0C" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="44QTgQqTw0D" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="44QTgQqTw0E" role="2Ry0An">
@@ -832,7 +835,7 @@
         <property role="3LESm3" value="8f78d0b6-57c9-4fa8-86fe-8c30d0d5b15c" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="44QTgQqTw30" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="44QTgQqTw31" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="44QTgQqTw32" role="2Ry0An">
@@ -887,7 +890,7 @@
         <property role="3LESm3" value="32128dbe-9db6-4d05-9eaa-43601c29f276" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="44QTgQqTw40" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="44QTgQqTw41" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="44QTgQqTw42" role="2Ry0An">
@@ -941,7 +944,7 @@
         <property role="3LESm3" value="444fc60e-b7e2-46c2-95fa-301dd48918b2" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="360sibZuf$z" role="3LF7KH">
-          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.home" />
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="360sibZuf$$" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="360sibZuf$_" role="2Ry0An">
@@ -967,6 +970,24 @@
           <node concept="3bR9La" id="360sibZufTe" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="QIiPbLwamK" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="demo.expr.sandbox" />
+        <property role="3LESm3" value="c08dd3fc-048f-4ab2-83c8-5a6b63c5df2e" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="QIiPbLwamL" role="3LF7KH">
+          <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+          <node concept="2Ry0Ak" id="QIiPbLwamM" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="QIiPbLwamN" role="2Ry0An">
+              <property role="2Ry0Am" value="demo.expr.sandbox" />
+              <node concept="2Ry0Ak" id="QIiPbLwamO" role="2Ry0An">
+                <property role="2Ry0Am" value="demo.expr.sandbox.msd" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1114,9 +1135,6 @@
         <node concept="L2wRC" id="360sibZutoa" role="39821P">
           <ref role="L2wRA" node="360sibZug2r" resolve="mbeddr.tutorial.main" />
         </node>
-        <node concept="L2wRC" id="360sibZutqm" role="39821P">
-          <ref role="L2wRA" node="1cfjnjdI1lJ" resolve="demo.expr.sandbox" />
-        </node>
       </node>
     </node>
     <node concept="m$_wf" id="1cfjnjdI1j2" role="3989C9">
@@ -1142,24 +1160,6 @@
     </node>
     <node concept="2G$12M" id="1cfjnjdI1ja" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.tutorial.solutions" />
-      <node concept="1E1JtA" id="1cfjnjdI1lJ" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="demo.expr.sandbox" />
-        <property role="3LESm3" value="c08dd3fc-048f-4ab2-83c8-5a6b63c5df2e" />
-        <property role="2GAjPV" value="false" />
-        <node concept="398BVA" id="1cfjnjdI1lK" role="3LF7KH">
-          <ref role="398BVh" node="1cfjnjdI1ie" resolve="tutorial.home" />
-          <node concept="2Ry0Ak" id="1cfjnjdI1lL" role="iGT6I">
-            <property role="2Ry0Am" value="solutions" />
-            <node concept="2Ry0Ak" id="1cfjnjdI1lM" role="2Ry0An">
-              <property role="2Ry0Am" value="demo.expr.sandbox" />
-              <node concept="2Ry0Ak" id="360sibZug4v" role="2Ry0An">
-                <property role="2Ry0Am" value="demo.expr.sandbox.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1E1JtA" id="360sibZug2r" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="mbeddr.tutorial.main" />
@@ -1406,15 +1406,15 @@
       </node>
     </node>
     <node concept="398rNT" id="1cfjnjdGZ8I" role="1l3spd">
-      <property role="TrG5h" value="tutorial.home" />
+      <property role="TrG5h" value="tutorial.dsls.extensions.home" />
       <node concept="398BVA" id="1cfjnjdGZ8J" role="398pKh">
         <ref role="398BVh" node="1cfjnjdGZ8_" resolve="mbeddr.github.core.home" />
         <node concept="2Ry0Ak" id="1cfjnjdGZ8K" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="1cfjnjdGZ8L" role="2Ry0An">
             <property role="2Ry0Am" value="applications" />
-            <node concept="2Ry0Ak" id="1cfjnjdGZ8M" role="2Ry0An">
-              <property role="2Ry0Am" value="tutorial" />
+            <node concept="2Ry0Ak" id="QIiPbLwadn" role="2Ry0An">
+              <property role="2Ry0Am" value="tutorial-dsls-extensions" />
             </node>
           </node>
         </node>
@@ -1551,7 +1551,7 @@
         <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="sources and tests" />
         <node concept="398BVA" id="1cfjnjdGZbC" role="3LF7KH">
-          <ref role="398BVh" node="1cfjnjdGZ8I" resolve="tutorial.home" />
+          <ref role="398BVh" node="1cfjnjdGZ8I" resolve="tutorial.dsls.extensions.home" />
           <node concept="2Ry0Ak" id="1cfjnjdGZbD" role="iGT6I">
             <property role="2Ry0Am" value="tests" />
             <node concept="2Ry0Ak" id="1cfjnjdGZbE" role="2Ry0An">

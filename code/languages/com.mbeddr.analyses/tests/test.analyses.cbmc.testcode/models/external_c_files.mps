@@ -17,6 +17,17 @@
   </languages>
   <imports />
   <registry>
+    <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
+      <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ng" index="3vooZZ">
+        <property id="8039098920897639409" name="attachedCellId" index="19LeSh" />
+        <reference id="8039098920897680033" name="attachedNode" index="19LoX1" />
+      </concept>
+    </language>
+    <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
+      <concept id="8455208232410333108" name="com.mbeddr.mpsutil.review.annotation.structure.CommentAnnotationContainer" flags="ng" index="2f$52y">
+        <child id="8455208232410333109" name="comments" index="2f$52z" />
+      </concept>
+    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
@@ -129,6 +140,7 @@
       <concept id="6116558314501417934" name="com.mbeddr.core.modules.structure.ExternalResourceDescriptor" flags="ng" index="rcWEJ">
         <property id="6116558314501417936" name="path" index="rcWEL" />
       </concept>
+      <concept id="6116558314501417950" name="com.mbeddr.core.modules.structure.ObjResourceDescriptor" flags="ng" index="rcWEZ" />
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
@@ -173,7 +185,17 @@
         <child id="559958203687603517" name="imports" index="3W6d8T" />
       </concept>
     </language>
+    <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
+      <concept id="1159656764133526267" name="com.mbeddr.mpsutil.review.structure.ReviewNote" flags="ng" index="3vAitl">
+        <property id="5652920968054438504" name="created" index="3ajGZ3" />
+        <property id="5652920968054438487" name="creator" index="3ajGZW" />
+        <child id="5652920968054438510" name="note" index="3ajGZ5" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -224,6 +246,9 @@
       </node>
       <node concept="2v9HqM" id="7kPcpiFfCFA" role="2eOfOg">
         <ref role="2v9HqP" node="7kPcpiFfA5U" resolve="_020_external_module" />
+      </node>
+      <node concept="2v9HqM" id="ZdgXCCHVGE" role="2eOfOg">
+        <ref role="2v9HqP" node="ZdgXCCHUE9" resolve="file2" />
       </node>
     </node>
   </node>
@@ -286,6 +311,64 @@
     </node>
     <node concept="2NXPZ9" id="2NVjDoI9sLZ" role="N3F5h">
       <property role="TrG5h" value="empty_1441293496928_1" />
+    </node>
+    <node concept="N3Fnx" id="ZdgXCCHUaE" role="N3F5h">
+      <property role="TrG5h" value="simple_assertion_1_2" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="ZdgXCCHUaF" role="3XIRFX">
+        <node concept="1QiMYF" id="ZdgXCCHUaG" role="3XIRFZ">
+          <node concept="OjmMv" id="ZdgXCCHUaH" role="3SJzmv">
+            <node concept="19SGf9" id="ZdgXCCHUaI" role="OjmMu">
+              <node concept="19SUe$" id="ZdgXCCHUaJ" role="19SJt6">
+                <property role="19SUeA" value="should pass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Y9XUq" id="ZdgXCCHUaK" role="3XIRFZ">
+          <node concept="3TlM44" id="ZdgXCCHUaL" role="Y9XUp">
+            <node concept="3TlMh9" id="ZdgXCCHUaM" role="3TlMhJ">
+              <property role="2hmy$m" value="4" />
+            </node>
+            <node concept="3O_q_g" id="ZdgXCCHUaN" role="3TlMhI">
+              <ref role="3O_q_h" node="ZdgXCCHUEa" resolve="add1" />
+              <node concept="3TlMh9" id="ZdgXCCHUaO" role="3O_q_j">
+                <property role="2hmy$m" value="3" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="ZdgXCCHUaP" role="3XIRFZ" />
+        <node concept="1QiMYF" id="ZdgXCCHUaQ" role="3XIRFZ">
+          <node concept="OjmMv" id="ZdgXCCHUaR" role="3SJzmv">
+            <node concept="19SGf9" id="ZdgXCCHUaS" role="OjmMu">
+              <node concept="19SUe$" id="ZdgXCCHUaT" role="19SJt6">
+                <property role="19SUeA" value="should fail" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Y9XUq" id="ZdgXCCHUaU" role="3XIRFZ">
+          <node concept="3TlM44" id="ZdgXCCHUaV" role="Y9XUp">
+            <node concept="3O_q_g" id="ZdgXCCHUaW" role="3TlMhI">
+              <ref role="3O_q_h" node="ZdgXCCHUEa" resolve="add1" />
+              <node concept="3TlMh9" id="ZdgXCCHUaX" role="3O_q_j">
+                <property role="2hmy$m" value="2" />
+              </node>
+            </node>
+            <node concept="3TlMh9" id="ZdgXCCHUaY" role="3TlMhJ">
+              <property role="2hmy$m" value="4" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="ZdgXCCHUaZ" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="ZdgXCCHTXj" role="N3F5h">
+      <property role="TrG5h" value="empty_1502442876669_164" />
     </node>
     <node concept="N3Fnx" id="28vOu_upFAy" role="N3F5h">
       <property role="TrG5h" value="simple_assertion_2" />
@@ -382,6 +465,9 @@
     <node concept="3GEVxB" id="4PtxuK92Ab4" role="2OODSX">
       <ref role="3GEb4d" node="4PtxuK92A2K" resolve="file1" />
     </node>
+    <node concept="3GEVxB" id="ZdgXCCHUZ_" role="2OODSX">
+      <ref role="3GEb4d" node="ZdgXCCHUE9" resolve="file2" />
+    </node>
   </node>
   <node concept="rcWEw" id="4PtxuK92A2K">
     <property role="TrG5h" value="file1" />
@@ -450,6 +536,22 @@
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file2.c" />
       </node>
+    </node>
+    <node concept="1nvAUJ" id="ZdgXCCHUsl" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="false" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <ref role="3V$Cn$" node="ZdgXCCHUaE" resolve="simple_assertion_1_2" />
     </node>
     <node concept="1nvAUJ" id="5tDzxi6QEb7" role="3V$2$K">
       <property role="2lelRm" value="false" />
@@ -583,6 +685,19 @@
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="external_files/file_with_macros.c" />
+      </node>
+    </node>
+    <node concept="2f$52y" id="ZdgXCCHVGa" role="lGtFl">
+      <node concept="3vAitl" id="ZdgXCCHVGb" role="2f$52z">
+        <property role="3ajGZW" value="z003cemm" />
+        <property role="3ajGZ3" value="11.08.2017 09:21:48" />
+        <property role="19LeSh" value="property_name" />
+        <ref role="19LoX1" node="ZdgXCCHUsl" />
+        <node concept="19SGf9" id="ZdgXCCHVGc" role="3ajGZ5">
+          <node concept="19SUe$" id="ZdgXCCHVGd" role="19SJt6">
+            <property role="19SUeA" value="the hand written files are referenced directly from the external module" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -719,6 +834,42 @@
     </node>
     <node concept="3GEVxB" id="7kPcpiFfACo" role="2OODSX">
       <ref role="3GEb4d" node="7kPcpiFfA5U" resolve="_020_external_module" />
+    </node>
+  </node>
+  <node concept="rcWEw" id="ZdgXCCHUE9">
+    <property role="TrG5h" value="file2" />
+    <node concept="N3Fnw" id="ZdgXCCHUEa" role="N3F5h">
+      <property role="TrG5h" value="add1" />
+      <node concept="26Vqqz" id="ZdgXCCHUEb" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="ZdgXCCHUEc" role="1UOdpc">
+        <property role="TrG5h" value="x" />
+        <node concept="26Vqqz" id="ZdgXCCHUEd" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="rcWE1" id="ZdgXCCHUEe" role="rcWEr">
+      <property role="rcWEL" value="&quot;../../external_files/file2.h&quot;" />
+    </node>
+    <node concept="rcWEZ" id="ZdgXCCHUMm" role="rcWEr">
+      <property role="rcWEL" value="&quot;../../external_files/file2.c&quot;" />
+    </node>
+    <node concept="2f$52y" id="ZdgXCCHUM_" role="lGtFl">
+      <node concept="3vAitl" id="ZdgXCCHUMA" role="2f$52z">
+        <property role="3ajGZW" value="z003cemm" />
+        <property role="3ajGZ3" value="11.08.2017 09:17:05" />
+        <property role="19LeSh" value="IANC_property_name" />
+        <ref role="19LoX1" node="ZdgXCCHUE9" resolve="file2" />
+        <node concept="19SGf9" id="ZdgXCCHUMB" role="3ajGZ5">
+          <node concept="19SUe$" id="ZdgXCCHUMC" role="19SJt6">
+            <property role="19SUeA" value="this external module explicitly references external files" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

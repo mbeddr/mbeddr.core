@@ -15,6 +15,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.fun.runtime/com.mbeddr.mpsutil.inca.fun.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.gp.runtime/com.mbeddr.mpsutil.inca.gp.runtime.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.hints/com.mbeddr.mpsutil.inca.hints.msd" folder="core" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.measurements/com.mbeddr.mpsutil.inca.measurements.msd" folder="measurements" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.ui/com.mbeddr.mpsutil.inca.ui.msd" folder="ui" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.soot.runtime/com.mbeddr.mpsutil.soot.runtime.msd" folder="soot" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.data.test/com.mbeddr.mpsutil.inca.data.test.msd" folder="tests" />

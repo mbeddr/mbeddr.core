@@ -350,6 +350,207 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="ZdgXCCImh4" role="1SL9yI">
+      <property role="TrG5h" value="testSingleExternalFilesPickedViaExternalModules" />
+      <node concept="3cqZAl" id="ZdgXCCImh5" role="3clF45" />
+      <node concept="3clFbS" id="ZdgXCCImh6" role="3clF47">
+        <node concept="3cpWs8" id="ZdgXCCImh7" role="3cqZAp">
+          <node concept="3cpWsn" id="ZdgXCCImh8" role="3cpWs9">
+            <property role="TrG5h" value="model" />
+            <node concept="H_c77" id="ZdgXCCImh9" role="1tU5fm" />
+            <node concept="BaHAS" id="ZdgXCCImha" role="33vP2m">
+              <property role="BaHAW" value="external_c_files" />
+              <property role="BaGAP" value="" />
+              <property role="BaBD8" value="ass" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="ZdgXCCImhb" role="3cqZAp">
+          <node concept="3clFbS" id="ZdgXCCImhc" role="3clFbx">
+            <node concept="3SKdUt" id="ZdgXCCImhd" role="3cqZAp">
+              <node concept="3SKdUq" id="ZdgXCCImhe" role="3SKWNk">
+                <property role="3SKdUp" value="TODO: we are now on server; it is unclear how to test this on the server" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="ZdgXCCImhf" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="ZdgXCCImhg" role="3clFbw">
+            <node concept="2JrnkZ" id="ZdgXCCImhh" role="2Oq$k0">
+              <node concept="37vLTw" id="ZdgXCCImhi" role="2JrQYb">
+                <ref role="3cqZAo" node="ZdgXCCImh8" resolve="model" />
+              </node>
+            </node>
+            <node concept="liA8E" id="ZdgXCCImhj" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.isReadOnly():boolean" resolve="isReadOnly" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="ZdgXCCImhk" role="3cqZAp" />
+        <node concept="3cpWs8" id="ZdgXCCImhl" role="3cqZAp">
+          <node concept="3cpWsn" id="ZdgXCCImhm" role="3cpWs9">
+            <property role="TrG5h" value="results" />
+            <node concept="_YKpA" id="ZdgXCCImhn" role="1tU5fm">
+              <node concept="3uibUv" id="ZdgXCCImho" role="_ZDj9">
+                <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+              </node>
+            </node>
+            <node concept="2YIFZM" id="ZdgXCCImhp" role="33vP2m">
+              <ref role="1Pybhc" to="fxhk:72F6xZzG69G" resolve="CProverTestingFacade" />
+              <ref role="37wK5l" to="fxhk:28vOu_uqzRK" resolve="checkSingleAnalysisConfiguration" />
+              <node concept="37vLTw" id="ZdgXCCImhq" role="37wK5m">
+                <ref role="3cqZAo" node="ZdgXCCImh8" resolve="model" />
+              </node>
+              <node concept="Xl_RD" id="ZdgXCCImhr" role="37wK5m">
+                <property role="Xl_RC" value="simple_assertion_1_2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="ZdgXCCImhs" role="3cqZAp">
+          <node concept="2YIFZM" id="ZdgXCCImht" role="3clFbG">
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <ref role="37wK5l" to="fxhk:17FqOSBEPPO" resolve="prettyPrintResults" />
+            <node concept="37vLTw" id="ZdgXCCImhu" role="37wK5m">
+              <ref role="3cqZAo" node="ZdgXCCImhm" resolve="results" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="ZdgXCCImhv" role="3cqZAp" />
+        <node concept="3vlDli" id="ZdgXCCImhw" role="3cqZAp">
+          <node concept="3cmrfG" id="ZdgXCCImhx" role="3tpDZB">
+            <property role="3cmrfH" value="2" />
+          </node>
+          <node concept="2OqwBi" id="ZdgXCCImhy" role="3tpDZA">
+            <node concept="37vLTw" id="ZdgXCCImhz" role="2Oq$k0">
+              <ref role="3cqZAo" node="ZdgXCCImhm" resolve="results" />
+            </node>
+            <node concept="34oBXx" id="ZdgXCCImh$" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="ZdgXCCImh_" role="3cqZAp" />
+        <node concept="3cpWs8" id="ZdgXCCImhA" role="3cqZAp">
+          <node concept="3cpWsn" id="ZdgXCCImhB" role="3cpWs9">
+            <property role="TrG5h" value="res0" />
+            <node concept="3uibUv" id="ZdgXCCImhC" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="ZdgXCCImhD" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="ZdgXCCImhE" role="37wK5m">
+                <ref role="3cqZAo" node="ZdgXCCImhm" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="ZdgXCCImhF" role="37wK5m">
+                <property role="Xl_RC" value="Assert: add1(3) == 4" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="ZdgXCCImhG" role="3cqZAp">
+          <node concept="2OqwBi" id="ZdgXCCImhH" role="3vwVQn">
+            <node concept="37vLTw" id="ZdgXCCImhI" role="2Oq$k0">
+              <ref role="3cqZAo" node="ZdgXCCImhB" resolve="res0" />
+            </node>
+            <node concept="liA8E" id="ZdgXCCImhJ" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="ZdgXCCImhK" role="3cqZAp" />
+        <node concept="3cpWs8" id="ZdgXCCImhL" role="3cqZAp">
+          <node concept="3cpWsn" id="ZdgXCCImhM" role="3cpWs9">
+            <property role="TrG5h" value="res1" />
+            <node concept="3uibUv" id="ZdgXCCImhN" role="1tU5fm">
+              <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="ZdgXCCImhO" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+              <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+              <node concept="37vLTw" id="ZdgXCCImhP" role="37wK5m">
+                <ref role="3cqZAo" node="ZdgXCCImhm" resolve="results" />
+              </node>
+              <node concept="Xl_RD" id="ZdgXCCImhQ" role="37wK5m">
+                <property role="Xl_RC" value="Assert: add1(2) == 4" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="ZdgXCCImhR" role="3cqZAp">
+          <node concept="2OqwBi" id="ZdgXCCImhS" role="3vwVQn">
+            <node concept="37vLTw" id="ZdgXCCImhT" role="2Oq$k0">
+              <ref role="3cqZAo" node="ZdgXCCImhM" resolve="res1" />
+            </node>
+            <node concept="liA8E" id="ZdgXCCImhU" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:6oOIJNsCfny" resolve="propertyFails" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="ZdgXCCImhV" role="3cqZAp">
+          <node concept="2YIFZM" id="ZdgXCCImhW" role="3clFbG">
+            <ref role="37wK5l" to="fxhk:6izRX52tWlf" resolve="prettyPrintCounterexample" />
+            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
+            <node concept="37vLTw" id="ZdgXCCImhX" role="37wK5m">
+              <ref role="3cqZAo" node="ZdgXCCImhB" resolve="res0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="ZdgXCCImhY" role="3cqZAp" />
+        <node concept="38rL1p" id="ZdgXCCImhZ" role="3cqZAp">
+          <node concept="38rIoz" id="ZdgXCCImi0" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="simple_assertion_1_2" />
+            <node concept="3Tqbb2" id="ZdgXCCImi1" role="38rYrG">
+              <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="ZdgXCCImi2" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="add1" />
+            <node concept="3Tqbb2" id="ZdgXCCImi3" role="38rYrG">
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="ZdgXCCImi4" role="38rM$J">
+            <property role="38rIoG" value="x" />
+            <property role="38rMdH" value="3" />
+            <node concept="3Tqbb2" id="ZdgXCCImi5" role="38rYrG">
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="ZdgXCCLQIh" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="add1" />
+          </node>
+          <node concept="38rIoz" id="ZdgXCCImi7" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="add1" />
+          </node>
+          <node concept="38rIoz" id="ZdgXCCImi8" role="38rM$J">
+            <property role="38rIoG" value="x" />
+            <property role="38rMdH" value="2" />
+            <node concept="3Tqbb2" id="ZdgXCCLQNo" role="38rYrG">
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="ZdgXCCImi9" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="add1" />
+          </node>
+          <node concept="38rIoz" id="ZdgXCCImib" role="38rM$J">
+            <property role="38rIoG" value="FAIL" />
+            <property role="38rMdH" value="Assertion Violated" />
+            <property role="35B3fw" value="false" />
+            <property role="35AWuq" value="5,6" />
+            <node concept="3Tqbb2" id="ZdgXCCLQSt" role="38rYrG">
+              <ref role="ehGHo" to="pyey:637qsduSbtp" resolve="Assert" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="ZdgXCCImic" role="2v6RBE">
+            <ref role="3cqZAo" node="ZdgXCCImhM" resolve="res1" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1LZb2c" id="28vOu_uryPG" role="1SL9yI">
       <property role="TrG5h" value="testExternalDirectoriesPicked" />
       <node concept="3cqZAl" id="28vOu_uryPH" role="3clF45" />

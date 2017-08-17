@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b89fcd5c-b71e-4285-acba-1527201846fe(com.mbeddr.analyses.cbmc.documentation._030_environment_definition_examples)">
+<model ref="r:b89fcd5c-b71e-4285-acba-1527201846fe(com.mbeddr.analyses.cbmc.documentation._030_environment_definition_examples)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
@@ -542,7 +542,7 @@
             <node concept="OjmMv" id="5TsycMJAUu$" role="3SJzmv">
               <node concept="19SGf9" id="5TsycMJAUu_" role="OjmMu">
                 <node concept="19SUe$" id="5TsycMJAUuA" role="19SJt6">
-                  <property role="19SUeA" value="multi-step verification with 9 steps, at each step we either select one &#10;or the other choice. The first choice will be executed only when 'gv != 1'" />
+                  <property role="19SUeA" value="multi-step verification with 9 steps, at each step we either select one &#10;or the other choice. The first choice will be executed only when 'gv != 1'." />
                 </node>
               </node>
             </node>

@@ -18,10 +18,13 @@ if (rootProject.hasProperty("build.number"))
 
 LocalDateTime t = LocalDateTime.now();
 
-def releaseNotes = """Automated Nighly build from ${t as String}
+def releaseNotes = """Automated Nighly build from ${t as String}."""
 
-There is currently a known issue that the RCP doesn't extract the tutorial correctly. Please download and extract it maually."""
+def windowsFileName = "mbeddr-win-" + t.getYear() + "-" +
+				t.getMonthValue() +"-"+ t.getDayOfMonth() +".exe"
 
+def macosFileName = "mbeddr-macos-" + t.getYear() + "-" +
+				t.getMonthValue() +"-"+ t.getDayOfMonth() +".dmg"
 github {
     owner = 'mbeddr'
     repo = 'mbeddr.core'
@@ -35,11 +38,34 @@ github {
             artifactsRoot + "/com.mbeddr.allInOne/com.mbeddr.allInOne.zip",
             artifactsRoot + "/com.mbeddr.tutorial/com.mbeddr.tutorial.zip",
             artifactsRoot + "/com.mbeddr.platform.distribution/platform-distribution.zip",
-            artifactsRoot + "/rcp/Setup.exe",
-            artifactsRoot + "/rcp/mbeddr-macos.dmg"
+            artifactsRoot + "/rcp/" + windowsFileName,
+            artifactsRoot + "/rcp/" + macosFileName
     ]
 }
 
-githubRelease.dependsOn ':build:com.mbeddr:distribution:build_platform_distribution',
+task renameWindowsFile(type: Copy) {
+		from(artifactsRoot+ "/rcp")
+		into(artifactsRoot + "/rcp")
+		include('Setup.exe')
+		rename ('Setup.exe', windowsFileName)
+}
+
+task renameMacosFile(type: Copy) {
+		from(artifactsRoot+ "/rcp")
+		into(artifactsRoot + "/rcp")
+		include('mbeddr-macos.dmg')
+		rename ('mbeddr-macos.dmg', macosFileName)
+}
+
+task copyRenameAndDeleteWindowsSetupFile(type: Delete, dependsOn: [renameWindowsFile]) {
+		delete artifactsRoot + "/rcp/Setup.exe"
+}
+
+task copyRenameAndDeleteMacosSetupFile(type: Delete, dependsOn: [renameMacosFile]) {
+		delete artifactsRoot + "/rcp/mbeddr-macos.dmg"
+}
+
+githubRelease.dependsOn copyRenameAndDeleteWindowsSetupFile, copyRenameAndDeleteMacosSetupFile,
+ ':build:com.mbeddr:distribution:build_platform_distribution',
  ':build:com.mbeddr:distribution:package_tutorial',
  ':build:com.mbeddr:distribution:build_all_in_one'

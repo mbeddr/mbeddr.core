@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4af2b6e4-5f55-4700-a23a-ed43656466aa(com.mbeddr.analyses.cbmc.documentation._020_analyses_configurations_examples)">
+<model ref="r:4af2b6e4-5f55-4700-a23a-ed43656466aa(com.mbeddr.analyses.cbmc.documentation._020_analyses_configurations_examples)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="38a074ed-e5ad-4b2d-be31-ca436911b8aa" name="com.mbeddr.doc.aspect" version="0" />

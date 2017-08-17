@@ -5555,6 +5555,9 @@
         <node concept="3LEDTy" id="7eF9rfAu$pM" role="3LEDUa">
           <ref role="3LEDTV" node="7eF9rfAu$oJ" resolve="com.mbeddr.ext.statemachines" />
         </node>
+        <node concept="3LEDTy" id="7sWVAK3s204" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAuyUG" role="3989C9">
@@ -7772,6 +7775,12 @@
                 <property role="2Ry0Am" value="utils.msd" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7sWVAK3s0vF" role="3bR37C">
+          <node concept="3bR9La" id="7sWVAK3s0vG" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
           </node>
         </node>
       </node>
