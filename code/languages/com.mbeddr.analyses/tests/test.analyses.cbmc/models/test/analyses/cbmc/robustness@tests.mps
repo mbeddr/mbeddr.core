@@ -81,7 +81,6 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -1939,19 +1938,17 @@
             </node>
           </node>
         </node>
-        <node concept="3vwNmj" id="5bSnXVJRAHO" role="3cqZAp">
-          <node concept="3clFbC" id="5bSnXVJRCGx" role="3vwVQn">
-            <node concept="2OqwBi" id="5bSnXVJRAHP" role="3uHU7B">
-              <node concept="37vLTw" id="5bSnXVJRAHQ" role="2Oq$k0">
-                <ref role="3cqZAo" node="5bSnXVJRAHE" resolve="res" />
-              </node>
-              <node concept="liA8E" id="5bSnXVJRAHR" role="2OqNvi">
-                <ref role="37wK5l" to="eqhl:54VWoniify$" resolve="getResultKind" />
-              </node>
+        <node concept="3vlDli" id="23klwgWg5sz" role="3cqZAp">
+          <node concept="Rm8GO" id="23klwgWg62p" role="3tpDZB">
+            <ref role="Rm8GQ" to="rbq9:6oOIJNsBXkZ" resolve="RUNTIME_ERROR" />
+            <ref role="1Px2BO" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
+          </node>
+          <node concept="2OqwBi" id="23klwgWg6qK" role="3tpDZA">
+            <node concept="37vLTw" id="23klwgWg6d8" role="2Oq$k0">
+              <ref role="3cqZAo" node="5bSnXVJRAHE" resolve="res" />
             </node>
-            <node concept="Rm8GO" id="5bSnXVJRCKk" role="3uHU7w">
-              <ref role="Rm8GQ" to="rbq9:6oOIJNsBXkZ" resolve="RUNTIME_ERROR" />
-              <ref role="1Px2BO" to="rbq9:6oOIJNsBVXe" resolve="RAW_RESULT_KIND" />
+            <node concept="liA8E" id="23klwgWg7OB" role="2OqNvi">
+              <ref role="37wK5l" to="eqhl:54VWoniify$" resolve="getResultKind" />
             </node>
           </node>
         </node>
