@@ -53,9 +53,6 @@
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -311,32 +308,18 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="3dXNG5ud1cG" role="3cqZAp">
-              <node concept="2OqwBi" id="3dXNG5ud1cD" role="3clFbG">
-                <node concept="10M0yZ" id="3dXNG5ud1cE" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                </node>
-                <node concept="liA8E" id="3dXNG5ud1cF" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="3dXNG5ud2vK" role="37wK5m">
-                    <node concept="Xl_RD" id="3dXNG5ud1NL" role="3uHU7B">
-                      <property role="Xl_RC" value="-- " />
-                    </node>
-                    <node concept="37vLTw" id="3dXNG5ud2MY" role="3uHU7w">
-                      <ref role="3cqZAo" node="1UfP5ow0FxB" resolve="tmp" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="3dXNG5ucDLm" role="3cqZAp">
               <node concept="3cpWsn" id="3dXNG5ucDLp" role="3cpWs9">
-                <property role="TrG5h" value="j" />
+                <property role="TrG5h" value="lengthFileExtension" />
                 <node concept="10Oyi0" id="3dXNG5ucDLk" role="1tU5fm" />
                 <node concept="3cmrfG" id="3dXNG5ucMwb" role="33vP2m">
                   <property role="3cmrfH" value="0" />
                 </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="2QR_NtQChr$" role="3cqZAp">
+              <node concept="3SKdUq" id="2QR_NtQChrA" role="3SKWNk">
+                <property role="3SKdUp" value="counting the file extension length comprising the &quot;.&quot;" />
               </node>
             </node>
             <node concept="1Dw8fO" id="3dXNG5uctWk" role="3cqZAp">
@@ -349,7 +332,7 @@
                           <ref role="3cqZAo" node="3dXNG5uctWn" resolve="i" />
                         </node>
                         <node concept="37vLTw" id="3dXNG5ucKeb" role="37vLTJ">
-                          <ref role="3cqZAo" node="3dXNG5ucDLp" resolve="j" />
+                          <ref role="3cqZAo" node="3dXNG5ucDLp" resolve="lengthFileExtension" />
                         </node>
                       </node>
                     </node>
@@ -430,7 +413,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="3dXNG5ucKLP" role="3uHU7w">
-                        <ref role="3cqZAo" node="3dXNG5ucDLp" resolve="j" />
+                        <ref role="3cqZAo" node="3dXNG5ucDLp" resolve="lengthFileExtension" />
                       </node>
                     </node>
                   </node>

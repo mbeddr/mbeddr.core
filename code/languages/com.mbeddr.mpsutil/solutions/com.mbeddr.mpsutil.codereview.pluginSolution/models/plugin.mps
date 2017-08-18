@@ -212,7 +212,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -778,8 +777,8 @@
                 <node concept="Xl_RD" id="13$DeUDQdkQ" role="37wK5m">
                   <property role="Xl_RC" value=" Select file to review" />
                 </node>
-                <node concept="1QGGTA" id="13$DeUDSjYl" role="37wK5m">
-                  <node concept="1QGGSu" id="13$DeUDSk2W" role="1QGGTw">
+                <node concept="1QGGTA" id="2QR_NtQCWq4" role="37wK5m">
+                  <node concept="1QGGSu" id="2QR_NtQCX1c" role="1QGGTw">
                     <property role="1iqoE4" value="${module}/icons/folder.png" />
                   </node>
                 </node>
@@ -1512,25 +1511,6 @@
                           </node>
                           <node concept="37vLTw" id="5z92V1o$sml" role="37vLTJ">
                             <ref role="3cqZAo" node="5z92V1o$pmb" resolve="nodesList" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="3dXNG5uaFDG" role="3cqZAp">
-                        <node concept="2OqwBi" id="3dXNG5uaFDD" role="3clFbG">
-                          <node concept="10M0yZ" id="3dXNG5uaFDE" role="2Oq$k0">
-                            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                            <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                          </node>
-                          <node concept="liA8E" id="3dXNG5uaFDF" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                            <node concept="3cpWs3" id="3dXNG5uaOAK" role="37wK5m">
-                              <node concept="37vLTw" id="3dXNG5uaQow" role="3uHU7w">
-                                <ref role="3cqZAo" node="5z92V1o$pmb" resolve="nodesList" />
-                              </node>
-                              <node concept="Xl_RD" id="3dXNG5uaH2n" role="3uHU7B">
-                                <property role="Xl_RC" value="--- Nodes list " />
-                              </node>
-                            </node>
                           </node>
                         </node>
                       </node>
