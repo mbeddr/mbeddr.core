@@ -2,11 +2,11 @@
 <model ref="r:d7788ae3-4afe-431e-a7ca-f1369bead1e8(com.mbeddr.mpsutil.inca.gp.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="cd2909da-ecb4-49dc-b176-33e5c619e516" name="com.mbeddr.mpsutil.inca.gp" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -993,7 +993,7 @@
               <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
               <node concept="355D3s" id="2cknNXbDJU4" role="37wK5m">
                 <ref role="355D3t" to="tpee:fz7wK6G" resolve="BaseMethodCall" />
-                <ref role="355D3u" to="tpck:gOOYy9I" resolve="alias" />
+                <ref role="355D3u" to="tpck:hnGE5uv" resolve="virtualPackage" />
                 <node concept="1ZhdrF" id="2cknNXbDJU5" role="lGtFl">
                   <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2644386474302386080/2644386474302386081" />
                   <property role="2qtEX8" value="conceptDeclaration" />
@@ -4818,7 +4818,7 @@
                       <ref role="37wK5l" to="pzen:7TrMLNbStQa" resolve="ConceptFeatureKey" />
                       <node concept="355D3s" id="yM$tZcRVIO" role="37wK5m">
                         <ref role="355D3t" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
-                        <ref role="355D3u" to="tpck:gOOYy9I" resolve="alias" />
+                        <ref role="355D3u" to="tpck:hnGE5uv" resolve="virtualPackage" />
                         <node concept="1ZhdrF" id="yM$tZcRXUF" role="lGtFl">
                           <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2644386474302386080/2644386474302386081" />
                           <property role="2qtEX8" value="conceptDeclaration" />

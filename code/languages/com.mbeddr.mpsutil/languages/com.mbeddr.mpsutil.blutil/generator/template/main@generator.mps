@@ -6801,8 +6801,8 @@
             </node>
             <node concept="3clFbF" id="7xRvYDMJ7Hk" role="3cqZAp">
               <node concept="2OqwBi" id="7xRvYDMJ7Od" role="3clFbG">
-                <node concept="3TrcHB" id="3VcOHzoeAel" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:gOOYy9I" resolve="alias" />
+                <node concept="3TrcHB" id="1kqI6ch_emO" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
                 </node>
                 <node concept="1eOMI4" id="7xRvYDMJ7Hg" role="2Oq$k0">
                   <node concept="1PxgMI" id="7xRvYDMJ7JM" role="1eOMHV">
