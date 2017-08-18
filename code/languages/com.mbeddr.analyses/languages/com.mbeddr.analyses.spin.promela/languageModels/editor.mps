@@ -714,8 +714,8 @@
   <node concept="24kQdi" id="49ppWwAfbw_">
     <property role="3GE5qa" value="type" />
     <ref role="1XX52x" to="ir22:GpUw9S7577" resolve="IPromelaType" />
-    <node concept="3F0A7n" id="49ppWwAfbWn" role="2wV5jI">
-      <ref role="1NtTu8" to="tpck:gOOYy9I" resolve="alias" />
+    <node concept="PMmxH" id="1kqI6ch_nlP" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="24G9CRyK0tB">
