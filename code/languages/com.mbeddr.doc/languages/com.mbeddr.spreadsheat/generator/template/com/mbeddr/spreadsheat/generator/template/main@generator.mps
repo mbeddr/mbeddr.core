@@ -9,16 +9,15 @@
   </languages>
   <imports>
     <import index="gnwj" ref="r:f6651a85-73de-42f1-9bd6-d372b5b47f05(com.mbeddr.spreadsheat.structure)" />
-    <import index="54ve" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi.ss.usermodel(com.mbeddr.spreadsheat/)" />
-    <import index="wowo" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi.xssf.usermodel(com.mbeddr.spreadsheat/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="770w" ref="r:eac84be5-5018-4dc9-be38-10c5ef2403b9(com.mbeddr.spreadsheat.generator.main.util)" />
-    <import index="ti3a" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi.ss.util(com.mbeddr.spreadsheat/)" />
-    <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="wowo" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi.xssf.usermodel(com.mbeddr.spreadsheat/)" />
+    <import index="54ve" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi.ss.usermodel(com.mbeddr.spreadsheat/)" />
+    <import index="ti3a" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi.ss.util(com.mbeddr.spreadsheat/)" />
     <import index="watd" ref="r:1a1284ce-37a2-4d35-b38f-a54d85ba3c77(com.mbeddr.spreadsheat.behavior)" implicit="true" />
     <import index="bxf8" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi(com.mbeddr.spreadsheat/)" implicit="true" />
   </imports>
@@ -69,6 +68,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070533982221" name="jetbrains.mps.baseLanguage.structure.ShortType" flags="in" index="10N3zO" />
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -103,6 +103,7 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -151,6 +152,7 @@
         <property id="1184950341882" name="topPriorityGroup" index="3$yP7D" />
         <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1195502100749" name="preMappingScript" index="1puA0r" />
+        <child id="1195502346405" name="postMappingScript" index="1pvy6N" />
       </concept>
       <concept id="1195499912406" name="jetbrains.mps.lang.generator.structure.MappingScript" flags="lg" index="1pmfR0">
         <property id="1195595592106" name="scriptKind" index="1v3f2W" />
@@ -162,22 +164,16 @@
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
+      <concept id="1217889725928" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_SessionObjectAccess" flags="nn" index="2fSANN" />
+      <concept id="1217889960776" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_UserObjectAccessBase" flags="nn" index="2fTw9j">
+        <child id="1217890689512" name="userKey" index="2fWi3N" />
+      </concept>
       <concept id="1217960179967" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowErrorMessage" flags="nn" index="2k5nB$" />
       <concept id="1217960314443" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowMessageBase" flags="nn" index="2k5Stg">
         <child id="1217960314448" name="messageText" index="2k5Stb" />
-        <child id="1217960407512" name="referenceNode" index="2k6f33" />
       </concept>
-      <concept id="1217970068025" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowInfoMessage" flags="nn" index="2kF5Gy" />
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
       <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -188,6 +184,7 @@
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -234,6 +231,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1201872418428" name="jetbrains.mps.baseLanguage.collections.structure.GetKeysOperation" flags="nn" index="3lbrtF" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -255,17 +253,40 @@
       <ref role="aOQi4" to="gnwj:1LnB5xduTCM" resolve="Workbook" />
     </node>
     <node concept="1puMqW" id="1LnB5xdvEWW" role="1puA0r">
-      <ref role="1puQsG" node="1LnB5xdv3Ch" resolve="script" />
+      <ref role="1puQsG" node="1LnB5xdv3Ch" resolve="transformToExcelWorkbooks" />
+    </node>
+    <node concept="1puMqW" id="6qrqamS0sTT" role="1pvy6N">
+      <ref role="1puQsG" node="6qrqamRZn1Q" resolve="serializeExcelWorkbooks" />
     </node>
   </node>
   <node concept="1pmfR0" id="1LnB5xdv3Ch">
-    <property role="TrG5h" value="script" />
+    <property role="TrG5h" value="transformToExcelWorkbooks" />
     <property role="1v3f2W" value="pre_processing" />
     <node concept="1pplIY" id="1LnB5xdv3Ci" role="1pqMTA">
       <node concept="3clFbS" id="1LnB5xdv3Cj" role="2VODD2">
+        <node concept="3cpWs8" id="6qrqamS13R5" role="3cqZAp">
+          <node concept="3cpWsn" id="6qrqamS13R8" role="3cpWs9">
+            <property role="TrG5h" value="excelWorkbooks" />
+            <node concept="3rvAFt" id="6qrqamS13QZ" role="1tU5fm">
+              <node concept="17QB3L" id="6qrqamS16gy" role="3rvQeY" />
+              <node concept="3uibUv" id="6qrqamS16h7" role="3rvSg0">
+                <ref role="3uigEE" to="wowo:~XSSFWorkbook" resolve="XSSFWorkbook" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="6qrqamS17er" role="33vP2m">
+              <node concept="3rGOSV" id="6qrqamS17yn" role="2ShVmc">
+                <node concept="17QB3L" id="6qrqamS17Ms" role="3rHrn6" />
+                <node concept="3uibUv" id="6qrqamS17VH" role="3rHtpV">
+                  <ref role="3uigEE" to="wowo:~XSSFWorkbook" resolve="XSSFWorkbook" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6qrqamS17Xy" role="3cqZAp" />
         <node concept="2Gpval" id="1LnB5xdv3Dr" role="3cqZAp">
           <node concept="2GrKxI" id="1LnB5xdv3Ds" role="2Gsz3X">
-            <property role="TrG5h" value="wb" />
+            <property role="TrG5h" value="workbook" />
           </node>
           <node concept="2OqwBi" id="1LnB5xdv3DP" role="2GsD0m">
             <node concept="1Q6Npb" id="1LnB5xdv3Dw" role="2Oq$k0" />
@@ -276,31 +297,51 @@
           <node concept="3clFbS" id="1LnB5xdv3Du" role="2LFqv$">
             <node concept="3cpWs8" id="1LnB5xdv4OO" role="3cqZAp">
               <node concept="3cpWsn" id="1LnB5xdv4OP" role="3cpWs9">
-                <property role="TrG5h" value="excelWb" />
-                <node concept="3uibUv" id="1LnB5xdvRbn" role="1tU5fm">
+                <property role="TrG5h" value="excelWorkbook" />
+                <node concept="3uibUv" id="7bplM0p9T3i" role="1tU5fm">
                   <ref role="3uigEE" to="wowo:~XSSFWorkbook" resolve="XSSFWorkbook" />
                 </node>
                 <node concept="2ShNRf" id="1LnB5xdv4OS" role="33vP2m">
-                  <node concept="1pGfFk" id="1LnB5xdvAi$" role="2ShVmc">
+                  <node concept="1pGfFk" id="7bplM0p9Zgd" role="2ShVmc">
                     <ref role="37wK5l" to="wowo:~XSSFWorkbook.&lt;init&gt;()" resolve="XSSFWorkbook" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1LnB5xdvP0K" role="3cqZAp" />
+            <node concept="3clFbF" id="6qrqamS5ZJU" role="3cqZAp">
+              <node concept="37vLTI" id="6qrqamS68fu" role="3clFbG">
+                <node concept="37vLTw" id="6qrqamS6auk" role="37vLTx">
+                  <ref role="3cqZAo" node="1LnB5xdv4OP" resolve="excelWorkbook" />
+                </node>
+                <node concept="3EllGN" id="6qrqamS62Rz" role="37vLTJ">
+                  <node concept="2OqwBi" id="6qrqamS6377" role="3ElVtu">
+                    <node concept="2GrUjf" id="6qrqamS62T5" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="1LnB5xdv3Ds" resolve="workbook" />
+                    </node>
+                    <node concept="3TrcHB" id="6qrqamS65C8" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="6qrqamS5ZJS" role="3ElQJh">
+                    <ref role="3cqZAo" node="6qrqamS13R8" resolve="excelWorkbooks" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6qrqamS6cGs" role="3cqZAp" />
             <node concept="3cpWs8" id="1LnB5xdvP2u" role="3cqZAp">
               <node concept="3cpWsn" id="1LnB5xdvP2v" role="3cpWs9">
                 <property role="TrG5h" value="styles" />
                 <node concept="3rvAFt" id="1LnB5xdvP2w" role="1tU5fm">
                   <node concept="17QB3L" id="1LnB5xdvP2x" role="3rvQeY" />
-                  <node concept="3uibUv" id="1LnB5xdvP2y" role="3rvSg0">
+                  <node concept="3uibUv" id="7bplM0p9ZVo" role="3rvSg0">
                     <ref role="3uigEE" to="54ve:~CellStyle" resolve="CellStyle" />
                   </node>
                 </node>
                 <node concept="2ShNRf" id="1LnB5xdvP2z" role="33vP2m">
                   <node concept="3rGOSV" id="1LnB5xdvP2$" role="2ShVmc">
                     <node concept="17QB3L" id="1LnB5xdvP2_" role="3rHrn6" />
-                    <node concept="3uibUv" id="1LnB5xdvP2A" role="3rHtpV">
+                    <node concept="3uibUv" id="7bplM0pa01J" role="3rHtpV">
                       <ref role="3uigEE" to="54ve:~CellStyle" resolve="CellStyle" />
                     </node>
                   </node>
@@ -313,7 +354,7 @@
               </node>
               <node concept="2OqwBi" id="1LnB5xdvP1d" role="2GsD0m">
                 <node concept="2GrUjf" id="1LnB5xdvP0S" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="1LnB5xdv3Ds" resolve="wb" />
+                  <ref role="2Gs0qQ" node="1LnB5xdv3Ds" resolve="workbook" />
                 </node>
                 <node concept="2qgKlT" id="7FELQjI1Tp3" role="2OqNvi">
                   <ref role="37wK5l" to="watd:1LnB5xdKrHB" resolve="allStyles" />
@@ -323,14 +364,14 @@
                 <node concept="3cpWs8" id="1LnB5xdvP2m" role="3cqZAp">
                   <node concept="3cpWsn" id="1LnB5xdvP2n" role="3cpWs9">
                     <property role="TrG5h" value="cellStyle" />
-                    <node concept="3uibUv" id="1LnB5xdvRbm" role="1tU5fm">
+                    <node concept="3uibUv" id="7bplM0pa086" role="1tU5fm">
                       <ref role="3uigEE" to="wowo:~XSSFCellStyle" resolve="XSSFCellStyle" />
                     </node>
                     <node concept="2OqwBi" id="1LnB5xdvP2p" role="33vP2m">
                       <node concept="37vLTw" id="5Hxjapw9vib" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1LnB5xdv4OP" resolve="excelWb" />
+                        <ref role="3cqZAo" node="1LnB5xdv4OP" resolve="excelWorkbook" />
                       </node>
-                      <node concept="liA8E" id="1LnB5xdvP2r" role="2OqNvi">
+                      <node concept="liA8E" id="7bplM0pa1k0" role="2OqNvi">
                         <ref role="37wK5l" to="wowo:~XSSFWorkbook.createCellStyle():org.apache.poi.xssf.usermodel.XSSFCellStyle" resolve="createCellStyle" />
                       </node>
                     </node>
@@ -343,14 +384,14 @@
                         <node concept="37vLTw" id="5Hxjapw9vf9" role="2Oq$k0">
                           <ref role="3cqZAo" node="1LnB5xdvP2n" resolve="cellStyle" />
                         </node>
-                        <node concept="liA8E" id="1LnB5xdvP5k" role="2OqNvi">
+                        <node concept="liA8E" id="7bplM0pa9T_" role="2OqNvi">
                           <ref role="37wK5l" to="wowo:~XSSFCellStyle.setFillForegroundColor(org.apache.poi.xssf.usermodel.XSSFColor):void" resolve="setFillForegroundColor" />
                           <node concept="2ShNRf" id="1LnB5xdvRbw" role="37wK5m">
                             <node concept="1pGfFk" id="1LnB5xdvRbB" role="2ShVmc">
                               <ref role="37wK5l" to="wowo:~XSSFColor.&lt;init&gt;(java.awt.Color)" resolve="XSSFColor" />
                               <node concept="2YIFZM" id="1LnB5xdGe3U" role="37wK5m">
-                                <ref role="37wK5l" to="770w:1LnB5xdGe2o" resolve="handleFontColor" />
                                 <ref role="1Pybhc" to="770w:1LnB5xdFTCl" resolve="ColorHelper" />
+                                <ref role="37wK5l" to="770w:1LnB5xdGe2o" resolve="handleFontColor" />
                                 <node concept="2OqwBi" id="1LnB5xdGe3V" role="37wK5m">
                                   <node concept="2GrUjf" id="1LnB5xdGe3W" role="2Oq$k0">
                                     <ref role="2Gs0qQ" node="1LnB5xdvP0P" resolve="style" />
@@ -372,7 +413,7 @@
                         </node>
                         <node concept="liA8E" id="1LnB5xdDZkm" role="2OqNvi">
                           <ref role="37wK5l" to="wowo:~XSSFCellStyle.setFillPattern(short):void" resolve="setFillPattern" />
-                          <node concept="10M0yZ" id="1LnB5xdDZkn" role="37wK5m">
+                          <node concept="10M0yZ" id="7bplM0pa1zy" role="37wK5m">
                             <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
                             <ref role="3cqZAo" to="54ve:~CellStyle.SOLID_FOREGROUND" resolve="SOLID_FOREGROUND" />
                           </node>
@@ -499,12 +540,12 @@
                 <node concept="3cpWs8" id="1LnB5xdvRpy" role="3cqZAp">
                   <node concept="3cpWsn" id="1LnB5xdvRpz" role="3cpWs9">
                     <property role="TrG5h" value="font" />
-                    <node concept="3uibUv" id="1LnB5xdvRp$" role="1tU5fm">
+                    <node concept="3uibUv" id="7bplM0pab81" role="1tU5fm">
                       <ref role="3uigEE" to="wowo:~XSSFFont" resolve="XSSFFont" />
                     </node>
                     <node concept="2OqwBi" id="1LnB5xdvRp_" role="33vP2m">
                       <node concept="37vLTw" id="5Hxjapw9vjx" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1LnB5xdv4OP" resolve="excelWb" />
+                        <ref role="3cqZAo" node="1LnB5xdv4OP" resolve="excelWorkbook" />
                       </node>
                       <node concept="liA8E" id="1LnB5xdvRpB" role="2OqNvi">
                         <ref role="37wK5l" to="wowo:~XSSFWorkbook.createFont():org.apache.poi.xssf.usermodel.XSSFFont" resolve="createFont" />
@@ -519,7 +560,7 @@
                         <node concept="37vLTw" id="5Hxjapw9vhv" role="2Oq$k0">
                           <ref role="3cqZAo" node="1LnB5xdvRpz" resolve="font" />
                         </node>
-                        <node concept="liA8E" id="1LnB5xdxQNB" role="2OqNvi">
+                        <node concept="liA8E" id="7bplM0pah6P" role="2OqNvi">
                           <ref role="37wK5l" to="wowo:~XSSFFont.setFontName(java.lang.String):void" resolve="setFontName" />
                           <node concept="2OqwBi" id="1LnB5xdxQOT" role="37wK5m">
                             <node concept="2GrUjf" id="1LnB5xdxQO$" role="2Oq$k0">
@@ -552,7 +593,7 @@
                         <node concept="37vLTw" id="5Hxjapw9viT" role="2Oq$k0">
                           <ref role="3cqZAo" node="1LnB5xdvRpz" resolve="font" />
                         </node>
-                        <node concept="liA8E" id="7FELQjI3HDe" role="2OqNvi">
+                        <node concept="liA8E" id="7bplM0pahYz" role="2OqNvi">
                           <ref role="37wK5l" to="wowo:~XSSFFont.setFontHeightInPoints(short):void" resolve="setFontHeightInPoints" />
                           <node concept="1eOMI4" id="7FELQjI3HDO" role="37wK5m">
                             <node concept="10QFUN" id="7FELQjI3HDP" role="1eOMHV">
@@ -590,7 +631,7 @@
                     <node concept="37vLTw" id="5Hxjapw9vat" role="2Oq$k0">
                       <ref role="3cqZAo" node="1LnB5xdvRpz" resolve="font" />
                     </node>
-                    <node concept="liA8E" id="1LnB5xdvRq7" role="2OqNvi">
+                    <node concept="liA8E" id="7bplM0paj3v" role="2OqNvi">
                       <ref role="37wK5l" to="wowo:~XSSFFont.setBold(boolean):void" resolve="setBold" />
                       <node concept="2OqwBi" id="1LnB5xdvRqt" role="37wK5m">
                         <node concept="2GrUjf" id="1LnB5xdvRq8" role="2Oq$k0">
@@ -608,7 +649,7 @@
                     <node concept="37vLTw" id="5Hxjapw9v4Q" role="2Oq$k0">
                       <ref role="3cqZAo" node="1LnB5xdvRpz" resolve="font" />
                     </node>
-                    <node concept="liA8E" id="1LnB5xdvRqD" role="2OqNvi">
+                    <node concept="liA8E" id="7bplM0pajZM" role="2OqNvi">
                       <ref role="37wK5l" to="wowo:~XSSFFont.setItalic(boolean):void" resolve="setItalic" />
                       <node concept="2OqwBi" id="1LnB5xdvRqE" role="37wK5m">
                         <node concept="2GrUjf" id="1LnB5xdvRqF" role="2Oq$k0">
@@ -626,7 +667,7 @@
                     <node concept="3cpWs8" id="1LnB5xdEjuM" role="3cqZAp">
                       <node concept="3cpWsn" id="1LnB5xdEjuN" role="3cpWs9">
                         <property role="TrG5h" value="color" />
-                        <node concept="3uibUv" id="1LnB5xdEjuO" role="1tU5fm">
+                        <node concept="3uibUv" id="7bplM0pak86" role="1tU5fm">
                           <ref role="3uigEE" to="wowo:~XSSFColor" resolve="XSSFColor" />
                         </node>
                         <node concept="2ShNRf" id="1LnB5xdEjuP" role="33vP2m">
@@ -653,9 +694,9 @@
                         <node concept="37vLTw" id="5Hxjapw9vir" role="2Oq$k0">
                           <ref role="3cqZAo" node="1LnB5xdvRpz" resolve="font" />
                         </node>
-                        <node concept="liA8E" id="1LnB5xdE9q4" role="2OqNvi">
+                        <node concept="liA8E" id="7bplM0pal8j" role="2OqNvi">
                           <ref role="37wK5l" to="wowo:~XSSFFont.setColor(org.apache.poi.xssf.usermodel.XSSFColor):void" resolve="setColor" />
-                          <node concept="37vLTw" id="5Hxjapw9vdb" role="37wK5m">
+                          <node concept="37vLTw" id="7bplM0palak" role="37wK5m">
                             <ref role="3cqZAo" node="1LnB5xdEjuN" resolve="color" />
                           </node>
                         </node>
@@ -679,9 +720,9 @@
                     <node concept="37vLTw" id="5Hxjapw9vff" role="2Oq$k0">
                       <ref role="3cqZAo" node="1LnB5xdvP2n" resolve="cellStyle" />
                     </node>
-                    <node concept="liA8E" id="1LnB5xdvRtK" role="2OqNvi">
+                    <node concept="liA8E" id="7bplM0palvH" role="2OqNvi">
                       <ref role="37wK5l" to="wowo:~XSSFCellStyle.setFont(org.apache.poi.ss.usermodel.Font):void" resolve="setFont" />
-                      <node concept="37vLTw" id="5Hxjapw9vi3" role="37wK5m">
+                      <node concept="37vLTw" id="7bplM0palxH" role="37wK5m">
                         <ref role="3cqZAo" node="1LnB5xdvRpz" resolve="font" />
                       </node>
                     </node>
@@ -710,35 +751,34 @@
               </node>
             </node>
             <node concept="3clFbH" id="1LnB5xdvP0L" role="3cqZAp" />
-            <node concept="3clFbH" id="1LnB5xdvP0M" role="3cqZAp" />
             <node concept="2Gpval" id="1LnB5xdvB8l" role="3cqZAp">
               <node concept="2GrKxI" id="1LnB5xdvB8m" role="2Gsz3X">
                 <property role="TrG5h" value="sheet" />
               </node>
               <node concept="2OqwBi" id="1LnB5xdvB8I" role="2GsD0m">
                 <node concept="2GrUjf" id="1LnB5xdvB8p" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="1LnB5xdv3Ds" resolve="wb" />
+                  <ref role="2Gs0qQ" node="1LnB5xdv3Ds" resolve="workbook" />
                 </node>
                 <node concept="3Tsc0h" id="1LnB5xdvB8O" role="2OqNvi">
-                  <ref role="3TtcxE" to="gnwj:1LnB5xduTCP" />
+                  <ref role="3TtcxE" to="gnwj:1LnB5xduTCP" resolve="sheets" />
                 </node>
               </node>
               <node concept="3clFbS" id="1LnB5xdvB8o" role="2LFqv$">
                 <node concept="3cpWs8" id="1LnB5xdvB9I" role="3cqZAp">
                   <node concept="3cpWsn" id="1LnB5xdvB9J" role="3cpWs9">
                     <property role="TrG5h" value="excelSheet" />
-                    <node concept="3uibUv" id="1LnB5xdvB9K" role="1tU5fm">
+                    <node concept="3uibUv" id="7bplM0pal_2" role="1tU5fm">
                       <ref role="3uigEE" to="54ve:~Sheet" resolve="Sheet" />
                     </node>
                     <node concept="2OqwBi" id="1LnB5xdvB9L" role="33vP2m">
                       <node concept="37vLTw" id="5Hxjapw9vcG" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1LnB5xdv4OP" resolve="excelWb" />
+                        <ref role="3cqZAo" node="1LnB5xdv4OP" resolve="excelWorkbook" />
                       </node>
                       <node concept="liA8E" id="1LnB5xdvB9N" role="2OqNvi">
                         <ref role="37wK5l" to="wowo:~XSSFWorkbook.createSheet(java.lang.String):org.apache.poi.xssf.usermodel.XSSFSheet" resolve="createSheet" />
                         <node concept="2YIFZM" id="42xPQqC6YYt" role="37wK5m">
-                          <ref role="37wK5l" to="ti3a:~WorkbookUtil.createSafeSheetName(java.lang.String):java.lang.String" resolve="createSafeSheetName" />
                           <ref role="1Pybhc" to="ti3a:~WorkbookUtil" resolve="WorkbookUtil" />
+                          <ref role="37wK5l" to="ti3a:~WorkbookUtil.createSafeSheetName(java.lang.String):java.lang.String" resolve="createSafeSheetName" />
                           <node concept="2OqwBi" id="1LnB5xdvB9O" role="37wK5m">
                             <node concept="2GrUjf" id="1LnB5xdvB9P" role="2Oq$k0">
                               <ref role="2Gs0qQ" node="1LnB5xdvB8m" resolve="sheet" />
@@ -779,23 +819,23 @@
                       <ref role="2Gs0qQ" node="1LnB5xdvB8m" resolve="sheet" />
                     </node>
                     <node concept="3Tsc0h" id="1LnB5xdvCrm" role="2OqNvi">
-                      <ref role="3TtcxE" to="gnwj:1LnB5xduTD8" />
+                      <ref role="3TtcxE" to="gnwj:1LnB5xduTD8" resolve="rows" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="1LnB5xdvBas" role="2LFqv$">
                     <node concept="3cpWs8" id="1LnB5xdvBEc" role="3cqZAp">
                       <node concept="3cpWsn" id="1LnB5xdvBEd" role="3cpWs9">
                         <property role="TrG5h" value="excelRow" />
-                        <node concept="3uibUv" id="1LnB5xdvBEe" role="1tU5fm">
+                        <node concept="3uibUv" id="7bplM0paobq" role="1tU5fm">
                           <ref role="3uigEE" to="54ve:~Row" resolve="Row" />
                         </node>
                         <node concept="2OqwBi" id="1LnB5xdvBEf" role="33vP2m">
                           <node concept="37vLTw" id="5Hxjapw9v6i" role="2Oq$k0">
                             <ref role="3cqZAo" node="1LnB5xdvB9J" resolve="excelSheet" />
                           </node>
-                          <node concept="liA8E" id="1LnB5xdvBEh" role="2OqNvi">
+                          <node concept="liA8E" id="7bplM0patOu" role="2OqNvi">
                             <ref role="37wK5l" to="54ve:~Sheet.createRow(int):org.apache.poi.ss.usermodel.Row" resolve="createRow" />
-                            <node concept="37vLTw" id="5Hxjapw9vcA" role="37wK5m">
+                            <node concept="37vLTw" id="7bplM0pavMt" role="37wK5m">
                               <ref role="3cqZAo" node="1LnB5xdvBDH" resolve="rowcounter" />
                             </node>
                           </node>
@@ -820,23 +860,23 @@
                           <ref role="2Gs0qQ" node="1LnB5xdvBaq" resolve="row" />
                         </node>
                         <node concept="3Tsc0h" id="1LnB5xdvCro" role="2OqNvi">
-                          <ref role="3TtcxE" to="gnwj:1LnB5xduTDx" />
+                          <ref role="3TtcxE" to="gnwj:1LnB5xduTDx" resolve="cells" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="1LnB5xdvBEn" role="2LFqv$">
                         <node concept="3cpWs8" id="1LnB5xdvBFL" role="3cqZAp">
                           <node concept="3cpWsn" id="1LnB5xdvBFM" role="3cpWs9">
                             <property role="TrG5h" value="excelCell" />
-                            <node concept="3uibUv" id="1LnB5xdvBFN" role="1tU5fm">
+                            <node concept="3uibUv" id="7bplM0paokn" role="1tU5fm">
                               <ref role="3uigEE" to="54ve:~Cell" resolve="Cell" />
                             </node>
                             <node concept="2OqwBi" id="1LnB5xdvBFO" role="33vP2m">
                               <node concept="37vLTw" id="5Hxjapw9v9k" role="2Oq$k0">
                                 <ref role="3cqZAo" node="1LnB5xdvBEd" resolve="excelRow" />
                               </node>
-                              <node concept="liA8E" id="1LnB5xdvBFQ" role="2OqNvi">
+                              <node concept="liA8E" id="7bplM0pa$84" role="2OqNvi">
                                 <ref role="37wK5l" to="54ve:~Row.createCell(int):org.apache.poi.ss.usermodel.Cell" resolve="createCell" />
-                                <node concept="37vLTw" id="5Hxjapw9va3" role="37wK5m">
+                                <node concept="37vLTw" id="7bplM0paA5G" role="37wK5m">
                                   <ref role="3cqZAo" node="1LnB5xdvBFj" resolve="cellcounter" />
                                 </node>
                               </node>
@@ -850,7 +890,7 @@
                                 <node concept="37vLTw" id="5Hxjapw9v4Y" role="2Oq$k0">
                                   <ref role="3cqZAo" node="1LnB5xdvBFM" resolve="excelCell" />
                                 </node>
-                                <node concept="liA8E" id="1LnB5xdvRva" role="2OqNvi">
+                                <node concept="liA8E" id="7bplM0paEjM" role="2OqNvi">
                                   <ref role="37wK5l" to="54ve:~Cell.setCellStyle(org.apache.poi.ss.usermodel.CellStyle):void" resolve="setCellStyle" />
                                   <node concept="3EllGN" id="1LnB5xdvRvy" role="37wK5m">
                                     <node concept="2OqwBi" id="1LnB5xdvRwm" role="3ElVtu">
@@ -859,7 +899,7 @@
                                           <ref role="2Gs0qQ" node="1LnB5xdvBEl" resolve="cell" />
                                         </node>
                                         <node concept="3TrEf2" id="1LnB5xdxReq" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="gnwj:1LnB5xdxRds" />
+                                          <ref role="3Tt5mk" to="gnwj:1LnB5xdxRds" resolve="style" />
                                         </node>
                                       </node>
                                       <node concept="3TrcHB" id="1LnB5xdvRwr" role="2OqNvi">
@@ -880,7 +920,7 @@
                                 <ref role="2Gs0qQ" node="1LnB5xdvBEl" resolve="cell" />
                               </node>
                               <node concept="3TrEf2" id="1LnB5xdxRej" role="2OqNvi">
-                                <ref role="3Tt5mk" to="gnwj:1LnB5xdxRds" />
+                                <ref role="3Tt5mk" to="gnwj:1LnB5xdxRds" resolve="style" />
                               </node>
                             </node>
                             <node concept="3x8VRR" id="1LnB5xdvRuH" role="2OqNvi" />
@@ -909,7 +949,7 @@
                                     <node concept="37vLTw" id="5Hxjapw9vgF" role="2Oq$k0">
                                       <ref role="3cqZAo" node="1LnB5xdvBFM" resolve="excelCell" />
                                     </node>
-                                    <node concept="liA8E" id="1LnB5xdvBGj" role="2OqNvi">
+                                    <node concept="liA8E" id="7bplM0paKYx" role="2OqNvi">
                                       <ref role="37wK5l" to="54ve:~Cell.setCellValue(java.lang.String):void" resolve="setCellValue" />
                                       <node concept="2OqwBi" id="1LnB5xdvCnq" role="37wK5m">
                                         <node concept="37vLTw" id="5Hxjapw9v8n" role="2Oq$k0">
@@ -947,7 +987,7 @@
                                     <node concept="37vLTw" id="5Hxjapw9vbK" role="2Oq$k0">
                                       <ref role="3cqZAo" node="1LnB5xdvBFM" resolve="excelCell" />
                                     </node>
-                                    <node concept="liA8E" id="1LnB5xdvCnE" role="2OqNvi">
+                                    <node concept="liA8E" id="7bplM0paQVa" role="2OqNvi">
                                       <ref role="37wK5l" to="54ve:~Cell.setCellValue(double):void" resolve="setCellValue" />
                                       <node concept="2YIFZM" id="1LnB5xdvCo0" role="37wK5m">
                                         <ref role="37wK5l" to="wyt6:~Double.parseDouble(java.lang.String):double" resolve="parseDouble" />
@@ -989,11 +1029,11 @@
                                     <node concept="37vLTw" id="5Hxjapw9viN" role="2Oq$k0">
                                       <ref role="3cqZAo" node="1LnB5xdvBFM" resolve="excelCell" />
                                     </node>
-                                    <node concept="liA8E" id="1LnB5xdvCob" role="2OqNvi">
+                                    <node concept="liA8E" id="7bplM0paWTO" role="2OqNvi">
                                       <ref role="37wK5l" to="54ve:~Cell.setCellValue(boolean):void" resolve="setCellValue" />
                                       <node concept="2YIFZM" id="1LnB5xdvCoq" role="37wK5m">
-                                        <ref role="37wK5l" to="wyt6:~Boolean.getBoolean(java.lang.String):boolean" resolve="getBoolean" />
                                         <ref role="1Pybhc" to="wyt6:~Boolean" resolve="Boolean" />
+                                        <ref role="37wK5l" to="wyt6:~Boolean.getBoolean(java.lang.String):boolean" resolve="getBoolean" />
                                         <node concept="2OqwBi" id="1LnB5xdvCor" role="37wK5m">
                                           <node concept="37vLTw" id="5Hxjapw9va9" role="2Oq$k0">
                                             <ref role="3cqZAo" node="1LnB5xdvClx" resolve="textcell" />
@@ -1076,6 +1116,7 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbH" id="6qrqamRZ_yk" role="3cqZAp" />
                 <node concept="2Gpval" id="1LnB5xdvDM9" role="3cqZAp">
                   <node concept="2GrKxI" id="1LnB5xdvDMa" role="2Gsz3X">
                     <property role="TrG5h" value="group" />
@@ -1085,7 +1126,7 @@
                       <ref role="2Gs0qQ" node="1LnB5xdvB8m" resolve="sheet" />
                     </node>
                     <node concept="3Tsc0h" id="1LnB5xdvDMB" role="2OqNvi">
-                      <ref role="3TtcxE" to="gnwj:1LnB5xdvCoT" />
+                      <ref role="3TtcxE" to="gnwj:1LnB5xdvCoT" resolve="groups" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="1LnB5xdvDMc" role="2LFqv$">
@@ -1106,7 +1147,7 @@
                             <node concept="37vLTw" id="5Hxjapw9v9J" role="2Oq$k0">
                               <ref role="3cqZAo" node="1LnB5xdvB9J" resolve="excelSheet" />
                             </node>
-                            <node concept="liA8E" id="1LnB5xdvDO1" role="2OqNvi">
+                            <node concept="liA8E" id="7bplM0pb4SA" role="2OqNvi">
                               <ref role="37wK5l" to="54ve:~Sheet.groupColumn(int,int):void" resolve="groupColumn" />
                               <node concept="3cpWsd" id="1LnB5xdvDON" role="37wK5m">
                                 <node concept="3cmrfG" id="1LnB5xdvDOQ" role="3uHU7w">
@@ -1145,7 +1186,7 @@
                               <node concept="37vLTw" id="5Hxjapw9vcI" role="2Oq$k0">
                                 <ref role="3cqZAo" node="1LnB5xdvB9J" resolve="excelSheet" />
                               </node>
-                              <node concept="liA8E" id="1LnB5xdvDQa" role="2OqNvi">
+                              <node concept="liA8E" id="7bplM0pbgvv" role="2OqNvi">
                                 <ref role="37wK5l" to="54ve:~Sheet.groupRow(int,int):void" resolve="groupRow" />
                                 <node concept="3cpWsd" id="1LnB5xdvDQW" role="37wK5m">
                                   <node concept="3cmrfG" id="1LnB5xdvDQZ" role="3uHU7w">
@@ -1189,10 +1230,10 @@
                         <node concept="37vLTw" id="5Hxjapw9v8j" role="2Oq$k0">
                           <ref role="3cqZAo" node="1LnB5xdvB9J" resolve="excelSheet" />
                         </node>
-                        <node concept="liA8E" id="7FELQjI2g9L" role="2OqNvi">
+                        <node concept="liA8E" id="7bplM0pbtVC" role="2OqNvi">
                           <ref role="37wK5l" to="54ve:~Sheet.setAutoFilter(org.apache.poi.ss.util.CellRangeAddress):org.apache.poi.ss.usermodel.AutoFilter" resolve="setAutoFilter" />
                           <node concept="2ShNRf" id="7FELQjI2g9M" role="37wK5m">
-                            <node concept="1pGfFk" id="7FELQjI2nbc" role="2ShVmc">
+                            <node concept="1pGfFk" id="7bplM0pbq8j" role="2ShVmc">
                               <ref role="37wK5l" to="ti3a:~CellRangeAddress.&lt;init&gt;(int,int,int,int)" resolve="CellRangeAddress" />
                               <node concept="3cmrfG" id="7FELQjI2q5m" role="37wK5m">
                                 <property role="3cmrfH" value="0" />
@@ -1207,7 +1248,7 @@
                                       <ref role="2Gs0qQ" node="1LnB5xdvB8m" resolve="sheet" />
                                     </node>
                                     <node concept="3Tsc0h" id="7FELQjI2q5X" role="2OqNvi">
-                                      <ref role="3TtcxE" to="gnwj:1LnB5xduTD8" />
+                                      <ref role="3TtcxE" to="gnwj:1LnB5xduTD8" resolve="rows" />
                                     </node>
                                   </node>
                                   <node concept="34oBXx" id="7FELQjI2q6p" role="2OqNvi" />
@@ -1242,9 +1283,9 @@
                         <node concept="37vLTw" id="5Hxjapw9vbh" role="2Oq$k0">
                           <ref role="3cqZAo" node="1LnB5xdvB9J" resolve="excelSheet" />
                         </node>
-                        <node concept="liA8E" id="1LnB5xdH0LS" role="2OqNvi">
+                        <node concept="liA8E" id="7bplM0pbz1e" role="2OqNvi">
                           <ref role="37wK5l" to="54ve:~Sheet.autoSizeColumn(int):void" resolve="autoSizeColumn" />
-                          <node concept="37vLTw" id="5Hxjapw9vab" role="37wK5m">
+                          <node concept="37vLTw" id="7bplM0pb$Ru" role="37wK5m">
                             <ref role="3cqZAo" node="1LnB5xdH0KC" resolve="i" />
                           </node>
                         </node>
@@ -1272,128 +1313,223 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="7FELQjI2fIm" role="3cqZAp" />
               </node>
             </node>
-            <node concept="3clFbH" id="1LnB5xdH0IZ" role="3cqZAp" />
-            <node concept="3clFbH" id="1LnB5xdvAiB" role="3cqZAp" />
-            <node concept="3SKdUt" id="1LnB5xdvAiD" role="3cqZAp">
-              <node concept="3SKdUq" id="1LnB5xdvAiE" role="3SKWNk">
-                <property role="3SKdUp" value="save" />
-              </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6qrqamS1BTp" role="3cqZAp" />
+        <node concept="3SKdUt" id="6qrqamS7kNO" role="3cqZAp">
+          <node concept="3SKdUq" id="6qrqamS7kNP" role="3SKWNk">
+            <property role="3SKdUp" value="Stash Excel workbooks generated from underlying model as session object" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6qrqamRZrsV" role="3cqZAp">
+          <node concept="37vLTI" id="6qrqamRZu_c" role="3clFbG">
+            <node concept="37vLTw" id="6qrqamS1fjx" role="37vLTx">
+              <ref role="3cqZAo" node="6qrqamS13R8" resolve="excelWorkbooks" />
             </node>
-            <node concept="3cpWs8" id="5K5N6Z64Rop" role="3cqZAp">
-              <node concept="3cpWsn" id="5K5N6Z64Roq" role="3cpWs9">
-                <property role="TrG5h" value="model" />
-                <node concept="3uibUv" id="5K5N6Z64Rom" role="1tU5fm">
-                  <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-                </node>
-                <node concept="2JrnkZ" id="5K5N6Z64Ror" role="33vP2m">
-                  <node concept="2OqwBi" id="5K5N6Z64Ros" role="2JrQYb">
-                    <node concept="1iwH7S" id="5K5N6Z64Rot" role="2Oq$k0" />
-                    <node concept="1st3f0" id="5K5N6Z64Rou" role="2OqNvi" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="1LnB5xd$mTe" role="3cqZAp">
-              <node concept="3cpWsn" id="1LnB5xd$mTf" role="3cpWs9">
-                <property role="TrG5h" value="genDir" />
-                <node concept="17QB3L" id="1LnB5xd$mZn" role="1tU5fm" />
-                <node concept="3cpWs3" id="1LnB5xd_Dw7" role="33vP2m">
-                  <node concept="10M0yZ" id="1LnB5xd_Dwa" role="3uHU7w">
-                    <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                    <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                  </node>
-                  <node concept="3cpWs3" id="1LnB5xd_DvK" role="3uHU7B">
-                    <node concept="3cpWs3" id="1LnB5xd_Dvo" role="3uHU7B">
-                      <node concept="2YIFZM" id="5K5N6Z65deD" role="3uHU7B">
-                        <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
-                        <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                        <node concept="37vLTw" id="5K5N6Z65e6Q" role="37wK5m">
-                          <ref role="3cqZAo" node="5K5N6Z64Roq" resolve="model" />
-                        </node>
-                      </node>
-                      <node concept="10M0yZ" id="1LnB5xd_Dvr" role="3uHU7w">
-                        <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                        <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="1LnB5xd_Dn_" role="3uHU7w">
-                      <node concept="2YIFZM" id="5Hxjapw9uCe" role="2Oq$k0">
-                        <ref role="37wK5l" to="unno:7WvVJ3rORmu" resolve="getModelLongName" />
-                        <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
-                        <node concept="2JrnkZ" id="5Hxjapw9uCf" role="37wK5m">
-                          <node concept="1Q6Npb" id="5Hxjapw9uCg" role="2JrQYb" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="1LnB5xd_DnF" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.replace(char,char):java.lang.String" resolve="replace" />
-                        <node concept="1Xhbcc" id="3eFu8Owyk2T" role="37wK5m">
-                          <property role="1XhdNS" value="." />
-                        </node>
-                        <node concept="10M0yZ" id="1LnB5xd_Do5" role="37wK5m">
-                          <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                          <ref role="3cqZAo" to="guwi:~File.separatorChar" resolve="separatorChar" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+            <node concept="2OqwBi" id="6qrqamRZub4" role="37vLTJ">
+              <node concept="1iwH7S" id="6qrqamRZrsT" role="2Oq$k0" />
+              <node concept="2fSANN" id="6qrqamRZuoy" role="2OqNvi">
+                <node concept="2OqwBi" id="6qrqamS6qEz" role="2fWi3N">
+                  <node concept="1iwH7S" id="6qrqamS6qE$" role="2Oq$k0" />
+                  <node concept="1st3f0" id="6qrqamS6qE_" role="2OqNvi" />
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="7AHYCfD5sOt" role="3cqZAp">
-              <node concept="3cpWsn" id="7AHYCfD5sOu" role="3cpWs9">
-                <property role="TrG5h" value="path" />
-                <node concept="17QB3L" id="7AHYCfD5sOv" role="1tU5fm" />
-                <node concept="3cpWs3" id="7AHYCfD5sOw" role="33vP2m">
-                  <node concept="3cpWs3" id="7AHYCfD5sOx" role="3uHU7B">
-                    <node concept="37vLTw" id="5Hxjapw9v54" role="3uHU7B">
-                      <ref role="3cqZAo" node="1LnB5xd$mTf" resolve="genDir" />
-                    </node>
-                    <node concept="2OqwBi" id="7AHYCfD5sOz" role="3uHU7w">
-                      <node concept="2GrUjf" id="7AHYCfD5sO$" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="1LnB5xdv3Ds" resolve="wb" />
-                      </node>
-                      <node concept="3TrcHB" id="7AHYCfD5sO_" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1pmfR0" id="6qrqamRZn1Q">
+    <property role="TrG5h" value="serializeExcelWorkbooks" />
+    <node concept="1pplIY" id="6qrqamRZn1R" role="1pqMTA">
+      <node concept="3clFbS" id="6qrqamRZn1S" role="2VODD2">
+        <node concept="3cpWs8" id="6qrqamS6UtE" role="3cqZAp">
+          <node concept="3cpWsn" id="6qrqamS6UtF" role="3cpWs9">
+            <property role="TrG5h" value="originalInputModel" />
+            <node concept="H_c77" id="6qrqamS6UtB" role="1tU5fm" />
+            <node concept="2OqwBi" id="6qrqamS6UtG" role="33vP2m">
+              <node concept="1iwH7S" id="6qrqamS6UtH" role="2Oq$k0" />
+              <node concept="1st3f0" id="6qrqamS6UtI" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6qrqamS77le" role="3cqZAp" />
+        <node concept="3SKdUt" id="6qrqamS7edI" role="3cqZAp">
+          <node concept="3SKdUq" id="6qrqamS7edK" role="3SKWNk">
+            <property role="3SKdUp" value="Unstash Excel workbooks to serialize from session objects" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6qrqamS1F6P" role="3cqZAp">
+          <node concept="3cpWsn" id="6qrqamS1F6S" role="3cpWs9">
+            <property role="TrG5h" value="excelWorkbooks" />
+            <node concept="3rvAFt" id="6qrqamS1F6J" role="1tU5fm">
+              <node concept="17QB3L" id="6qrqamS1FHr" role="3rvQeY" />
+              <node concept="3uibUv" id="6qrqamS1FJ0" role="3rvSg0">
+                <ref role="3uigEE" to="wowo:~XSSFWorkbook" resolve="XSSFWorkbook" />
+              </node>
+            </node>
+            <node concept="1eOMI4" id="6qrqamS1Gd5" role="33vP2m">
+              <node concept="10QFUN" id="6qrqamS1Gd6" role="1eOMHV">
+                <node concept="2OqwBi" id="6qrqamS1Gd1" role="10QFUP">
+                  <node concept="1iwH7S" id="6qrqamS1Gd2" role="2Oq$k0" />
+                  <node concept="2fSANN" id="6qrqamS1Gd3" role="2OqNvi">
+                    <node concept="37vLTw" id="6qrqamS6UtJ" role="2fWi3N">
+                      <ref role="3cqZAo" node="6qrqamS6UtF" resolve="originalInputModel" />
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="7AHYCfD5sOA" role="3uHU7w">
-                    <property role="Xl_RC" value=".xlsx" />
+                </node>
+                <node concept="3rvAFt" id="6qrqamS1GcY" role="10QFUM">
+                  <node concept="17QB3L" id="6qrqamS1GcZ" role="3rvQeY" />
+                  <node concept="3uibUv" id="6qrqamS1Gd0" role="3rvSg0">
+                    <ref role="3uigEE" to="wowo:~XSSFWorkbook" resolve="XSSFWorkbook" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6qrqamS1OnX" role="3cqZAp">
+          <node concept="3clFbS" id="6qrqamS1OnZ" role="3clFbx">
+            <node concept="3cpWs6" id="6qrqamS7d1j" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="6qrqamS7cNP" role="3clFbw">
+            <node concept="37vLTw" id="6qrqamS1OYv" role="3uHU7B">
+              <ref role="3cqZAo" node="6qrqamS1F6S" resolve="excelWorkbooks" />
+            </node>
+            <node concept="10Nm6u" id="6qrqamS1QpS" role="3uHU7w" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6qrqamS7dBS" role="3cqZAp" />
+        <node concept="3SKdUt" id="6qrqamS7eU1" role="3cqZAp">
+          <node concept="3SKdUq" id="6qrqamS7eU3" role="3SKWNk">
+            <property role="3SKdUp" value="Compute output directory" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6qrqamRS0hW" role="3cqZAp">
+          <node concept="3cpWsn" id="6qrqamRS0hX" role="3cpWs9">
+            <property role="TrG5h" value="outputDir" />
+            <node concept="3uibUv" id="6qrqamRS0hY" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="6qrqamRS3mv" role="33vP2m">
+              <node concept="1pGfFk" id="6qrqamRS5O6" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
+                <node concept="2YIFZM" id="6qrqamRS5Q8" role="37wK5m">
+                  <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
+                  <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+                  <node concept="37vLTw" id="6qrqamRS5Q9" role="37wK5m">
+                    <ref role="3cqZAo" node="6qrqamS6UtF" resolve="originalInputModel" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6qrqamRS6Q6" role="37wK5m">
+                  <node concept="2OqwBi" id="6qrqamRS6Q7" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6qrqamRS6Q8" role="2Oq$k0">
+                      <node concept="2JrnkZ" id="6qrqamS6YNk" role="2Oq$k0">
+                        <node concept="37vLTw" id="6qrqamRS6Q9" role="2JrQYb">
+                          <ref role="3cqZAo" node="6qrqamS6UtF" resolve="originalInputModel" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6qrqamRS6Qa" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6qrqamRS6Qb" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModelName.getLongName():java.lang.String" resolve="getLongName" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6qrqamRS6Qc" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.replace(char,char):java.lang.String" resolve="replace" />
+                    <node concept="1Xhbcc" id="6qrqamRS6Qd" role="37wK5m">
+                      <property role="1XhdNS" value="." />
+                    </node>
+                    <node concept="10M0yZ" id="6qrqamRS6Qe" role="37wK5m">
+                      <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                      <ref role="3cqZAo" to="guwi:~File.separatorChar" resolve="separatorChar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6qrqamRZZRj" role="3cqZAp" />
+        <node concept="3SKdUt" id="6qrqamS7fuc" role="3cqZAp">
+          <node concept="3SKdUq" id="6qrqamS7fue" role="3SKWNk">
+            <property role="3SKdUp" value="Serialize every Excel workbook generated from underlying model" />
+          </node>
+        </node>
+        <node concept="2Gpval" id="6qrqamRZAwq" role="3cqZAp">
+          <node concept="2GrKxI" id="6qrqamRZAwu" role="2Gsz3X">
+            <property role="TrG5h" value="workbookName" />
+          </node>
+          <node concept="3clFbS" id="6qrqamRZAwA" role="2LFqv$">
+            <node concept="3cpWs8" id="6qrqamRZOFP" role="3cqZAp">
+              <node concept="3cpWsn" id="6qrqamRZOFQ" role="3cpWs9">
+                <property role="TrG5h" value="excelWorkbook" />
+                <node concept="3uibUv" id="6qrqamRZPUg" role="1tU5fm">
+                  <ref role="3uigEE" to="wowo:~XSSFWorkbook" resolve="XSSFWorkbook" />
+                </node>
+                <node concept="3EllGN" id="6qrqamS1KEi" role="33vP2m">
+                  <node concept="2GrUjf" id="6qrqamS1KTP" role="3ElVtu">
+                    <ref role="2Gs0qQ" node="6qrqamRZAwu" resolve="workbookName" />
+                  </node>
+                  <node concept="37vLTw" id="6qrqamS1J6H" role="3ElQJh">
+                    <ref role="3cqZAo" node="6qrqamS1F6S" resolve="excelWorkbooks" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6qrqamS0q2R" role="3cqZAp" />
+            <node concept="3cpWs8" id="6qrqamRS$3m" role="3cqZAp">
+              <node concept="3cpWsn" id="6qrqamRS$3n" role="3cpWs9">
+                <property role="TrG5h" value="workbookFile" />
+                <node concept="3uibUv" id="6qrqamRS$3o" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="2ShNRf" id="6qrqamRSDJ4" role="33vP2m">
+                  <node concept="1pGfFk" id="6qrqamRSE3i" role="2ShVmc">
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
+                    <node concept="37vLTw" id="6qrqamRSE5m" role="37wK5m">
+                      <ref role="3cqZAo" node="6qrqamRS0hX" resolve="outputDir" />
+                    </node>
+                    <node concept="3cpWs3" id="6qrqamRSFW0" role="37wK5m">
+                      <node concept="2GrUjf" id="6qrqamRSEaN" role="3uHU7B">
+                        <ref role="2Gs0qQ" node="6qrqamRZAwu" resolve="workbookName" />
+                      </node>
+                      <node concept="Xl_RD" id="6qrqamRSIyK" role="3uHU7w">
+                        <property role="Xl_RC" value=".xlsx" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
             <node concept="SfApY" id="1LnB5xdvDeQ" role="3cqZAp">
               <node concept="3clFbS" id="1LnB5xdvDeR" role="SfCbr">
-                <node concept="3clFbF" id="3fV$BrWaSsX" role="3cqZAp">
-                  <node concept="2OqwBi" id="3fV$BrWaTKR" role="3clFbG">
-                    <node concept="2ShNRf" id="3fV$BrWaSsY" role="2Oq$k0">
-                      <node concept="1pGfFk" id="3fV$BrWaTKr" role="2ShVmc">
-                        <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                        <node concept="37vLTw" id="5Hxjapw9vbl" role="37wK5m">
-                          <ref role="3cqZAo" node="1LnB5xd$mTf" resolve="genDir" />
-                        </node>
-                      </node>
+                <node concept="3clFbF" id="6qrqamRSNSp" role="3cqZAp">
+                  <node concept="2OqwBi" id="6qrqamRSObw" role="3clFbG">
+                    <node concept="37vLTw" id="6qrqamRSNSn" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6qrqamRS0hX" resolve="outputDir" />
                     </node>
-                    <node concept="liA8E" id="3fV$BrWaTL0" role="2OqNvi">
+                    <node concept="liA8E" id="6qrqamRSODo" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~File.mkdirs():boolean" resolve="mkdirs" />
                     </node>
                   </node>
                 </node>
                 <node concept="3cpWs8" id="1LnB5xdvB7b" role="3cqZAp">
                   <node concept="3cpWsn" id="1LnB5xdvB7c" role="3cpWs9">
-                    <property role="TrG5h" value="fos" />
+                    <property role="TrG5h" value="workbookOutputStream" />
                     <node concept="3uibUv" id="1LnB5xdvB7d" role="1tU5fm">
                       <ref role="3uigEE" to="guwi:~FileOutputStream" resolve="FileOutputStream" />
                     </node>
                     <node concept="2ShNRf" id="1LnB5xdvB7e" role="33vP2m">
                       <node concept="1pGfFk" id="1LnB5xdvB7f" role="2ShVmc">
-                        <ref role="37wK5l" to="guwi:~FileOutputStream.&lt;init&gt;(java.lang.String)" resolve="FileOutputStream" />
-                        <node concept="37vLTw" id="5Hxjapw9v7g" role="37wK5m">
-                          <ref role="3cqZAo" node="7AHYCfD5sOu" resolve="path" />
+                        <ref role="37wK5l" to="guwi:~FileOutputStream.&lt;init&gt;(java.io.File)" resolve="FileOutputStream" />
+                        <node concept="37vLTw" id="6qrqamRSORb" role="37wK5m">
+                          <ref role="3cqZAo" node="6qrqamRS$3n" resolve="workbookFile" />
                         </node>
                       </node>
                     </node>
@@ -1402,12 +1538,12 @@
                 <node concept="3clFbF" id="1LnB5xdvB7q" role="3cqZAp">
                   <node concept="2OqwBi" id="1LnB5xdvB7K" role="3clFbG">
                     <node concept="37vLTw" id="5Hxjapw9v6v" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1LnB5xdv4OP" resolve="excelWb" />
+                      <ref role="3cqZAo" node="6qrqamRZOFQ" resolve="excelWorkbook" />
                     </node>
-                    <node concept="liA8E" id="1LnB5xdvB7P" role="2OqNvi">
+                    <node concept="liA8E" id="7bplM0pbDoh" role="2OqNvi">
                       <ref role="37wK5l" to="bxf8:~POIXMLDocument.write(java.io.OutputStream):void" resolve="write" />
-                      <node concept="37vLTw" id="5Hxjapw9vf7" role="37wK5m">
-                        <ref role="3cqZAo" node="1LnB5xdvB7c" resolve="fos" />
+                      <node concept="37vLTw" id="7bplM0pbDqu" role="37wK5m">
+                        <ref role="3cqZAo" node="1LnB5xdvB7c" resolve="workbookOutputStream" />
                       </node>
                     </node>
                   </node>
@@ -1415,25 +1551,10 @@
                 <node concept="3clFbF" id="1LnB5xdvB7S" role="3cqZAp">
                   <node concept="2OqwBi" id="1LnB5xdvB8e" role="3clFbG">
                     <node concept="37vLTw" id="5Hxjapw9v9R" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1LnB5xdvB7c" resolve="fos" />
+                      <ref role="3cqZAo" node="1LnB5xdvB7c" resolve="workbookOutputStream" />
                     </node>
                     <node concept="liA8E" id="1LnB5xdvB8j" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~FileOutputStream.close():void" resolve="close" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="7AHYCfD5sBh" role="3cqZAp">
-                  <node concept="2OqwBi" id="7AHYCfD5sBB" role="3clFbG">
-                    <node concept="1iwH7S" id="7AHYCfD5sBi" role="2Oq$k0" />
-                    <node concept="2kF5Gy" id="7AHYCfD5sBH" role="2OqNvi">
-                      <node concept="3cpWs3" id="7AHYCfD5sP0" role="2k5Stb">
-                        <node concept="37vLTw" id="5Hxjapw9vdS" role="3uHU7w">
-                          <ref role="3cqZAo" node="7AHYCfD5sOu" resolve="path" />
-                        </node>
-                        <node concept="Xl_RD" id="7AHYCfD5sBJ" role="3uHU7B">
-                          <property role="Xl_RC" value="created excel file: " />
-                        </node>
-                      </node>
                     </node>
                   </node>
                 </node>
@@ -1450,53 +1571,46 @@
                     <node concept="2OqwBi" id="1LnB5xdvDfp" role="3clFbG">
                       <node concept="1iwH7S" id="1LnB5xdvDf4" role="2Oq$k0" />
                       <node concept="2k5nB$" id="1LnB5xdvDfv" role="2OqNvi">
-                        <node concept="3cpWs3" id="3fV$BrWaSn7" role="2k5Stb">
-                          <node concept="Xl_RD" id="3fV$BrWaSna" role="3uHU7w">
-                            <property role="Xl_RC" value=")" />
-                          </node>
-                          <node concept="3cpWs3" id="3fV$BrWaSm0" role="3uHU7B">
-                            <node concept="3cpWs3" id="3fV$BrWaSlC" role="3uHU7B">
-                              <node concept="3cpWs3" id="7AHYCfD5sPo" role="3uHU7B">
-                                <node concept="Xl_RD" id="1LnB5xdvDfx" role="3uHU7B">
-                                  <property role="Xl_RC" value="could not write excel file: " />
-                                </node>
-                                <node concept="37vLTw" id="5Hxjapw9vfj" role="3uHU7w">
-                                  <ref role="3cqZAo" node="7AHYCfD5sOu" resolve="path" />
-                                </node>
+                        <node concept="3cpWs3" id="3fV$BrWaSm0" role="2k5Stb">
+                          <node concept="3cpWs3" id="3fV$BrWaSlC" role="3uHU7B">
+                            <node concept="3cpWs3" id="7AHYCfD5sPo" role="3uHU7B">
+                              <node concept="Xl_RD" id="1LnB5xdvDfx" role="3uHU7B">
+                                <property role="Xl_RC" value="Failed to save generated Excel workbook file '" />
                               </node>
-                              <node concept="Xl_RD" id="3fV$BrWaSlF" role="3uHU7w">
-                                <property role="Xl_RC" value=" (reason: " />
+                              <node concept="2OqwBi" id="6qrqamRSXnp" role="3uHU7w">
+                                <node concept="37vLTw" id="6qrqamRSPgz" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6qrqamRS$3n" resolve="workbookFile" />
+                                </node>
+                                <node concept="liA8E" id="6qrqamRSZop" role="2OqNvi">
+                                  <ref role="37wK5l" to="guwi:~File.getPath():java.lang.String" resolve="getPath" />
+                                </node>
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="3fV$BrWaSmo" role="3uHU7w">
-                              <node concept="37vLTw" id="5Hxjapw9v9i" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1LnB5xdvDeT" resolve="ex" />
-                              </node>
-                              <node concept="liA8E" id="3fV$BrWaSmu" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
-                              </node>
+                            <node concept="Xl_RD" id="3fV$BrWaSlF" role="3uHU7w">
+                              <property role="Xl_RC" value="': " />
                             </node>
                           </node>
-                        </node>
-                        <node concept="2GrUjf" id="1LnB5xdvDfy" role="2k6f33">
-                          <ref role="2Gs0qQ" node="1LnB5xdv3Ds" resolve="wb" />
+                          <node concept="2OqwBi" id="3fV$BrWaSmo" role="3uHU7w">
+                            <node concept="37vLTw" id="5Hxjapw9v9i" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1LnB5xdvDeT" resolve="ex" />
+                            </node>
+                            <node concept="liA8E" id="3fV$BrWaSmu" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                            </node>
+                          </node>
                         </node>
                       </node>
-                    </node>
-                  </node>
-                  <node concept="34ab3g" id="3fV$BrWaRmQ" role="3cqZAp">
-                    <property role="35gtTG" value="error" />
-                    <property role="34fQS0" value="true" />
-                    <node concept="Xl_RD" id="3fV$BrWaRmR" role="34bqiv">
-                      <property role="Xl_RC" value="could not write excel file: " />
-                    </node>
-                    <node concept="37vLTw" id="5Hxjapw9v5U" role="34bMjA">
-                      <ref role="3cqZAo" node="1LnB5xdvDeT" resolve="ex" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="2OqwBi" id="6qrqamS1HhC" role="2GsD0m">
+            <node concept="37vLTw" id="6qrqamS1Gr$" role="2Oq$k0">
+              <ref role="3cqZAo" node="6qrqamS1F6S" resolve="excelWorkbooks" />
+            </node>
+            <node concept="3lbrtF" id="6qrqamS1IeX" role="2OqNvi" />
           </node>
         </node>
       </node>
