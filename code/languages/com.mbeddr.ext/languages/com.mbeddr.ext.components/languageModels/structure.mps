@@ -18,6 +18,7 @@
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="878o" ref="r:46fddec3-0db9-4b86-8274-957463dd4499(com.mbeddr.mpsutil.grammarcells.runtimelang.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -719,6 +720,9 @@
     </node>
     <node concept="PrWs8" id="j_pDIZyT7O" role="PzmwI">
       <ref role="PrY4T" to="clbe:IPRL99KNBH" resolve="ICanReferToValueStructure" />
+    </node>
+    <node concept="PrWs8" id="2JQfpiy2xVk" role="PzmwI">
+      <ref role="PrY4T" to="yq40:4$HG0yY9G70" resolve="INullableType" />
     </node>
   </node>
   <node concept="1TIwiD" id="71UKpntoo85">
