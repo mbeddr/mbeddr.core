@@ -144,6 +144,7 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="8463282783691618450" name="com.mbeddr.core.expressions.structure.UnsignedInt32tType" flags="ng" index="26Vqpb" />
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
@@ -187,7 +188,7 @@
         <node concept="2BFjQ_" id="5ePkerKN8gi" role="3XIRFZ">
           <node concept="39$JCU" id="66PbkE$PYew" role="2BFjQA">
             <property role="TrG5h" value="i" />
-            <node concept="26Vqph" id="66PbkE$PYfp" role="39z40R">
+            <node concept="26Vqpb" id="2JQfpiy0pLa" role="39z40R">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
@@ -245,7 +246,7 @@
           <node concept="2zguM6" id="66PbkE$Q6hN" role="2BFjQA">
             <node concept="39$JCU" id="66PbkE$Q5_3" role="2zgELT">
               <property role="TrG5h" value="i" />
-              <node concept="26Vqph" id="66PbkE$Q5_4" role="39z40R">
+              <node concept="26Vqpb" id="2JQfpiy0pJM" role="39z40R">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
               </node>
@@ -601,7 +602,7 @@
               </node>
               <node concept="2zwuTa" id="66PbkE$S_YA" role="2zgELT">
                 <property role="TrG5h" value="i" />
-                <node concept="26Vqph" id="66PbkE$S_YC" role="39z40R">
+                <node concept="26Vqpb" id="2JQfpiy0pM9" role="39z40R">
                   <property role="2caQfQ" value="false" />
                   <property role="2c7vTL" value="false" />
                 </node>
