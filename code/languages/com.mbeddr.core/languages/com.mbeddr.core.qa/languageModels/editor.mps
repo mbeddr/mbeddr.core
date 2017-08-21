@@ -76,6 +76,7 @@
       <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
+      <concept id="625126330682908270" name="jetbrains.mps.lang.editor.structure.CellModel_ReferencePresentation" flags="sg" stub="730538219795961225" index="3SHvHV" />
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
@@ -694,10 +695,7 @@
     <node concept="1iCGBv" id="3RllbSaaAXi" role="2wV5jI">
       <ref role="1NtTu8" to="79wq:3RllbSaaAWO" resolve="root" />
       <node concept="1sVBvm" id="3RllbSaaAXj" role="1sWHZn">
-        <node concept="3F0A7n" id="3RllbSaaAXx" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:gOOYy9I" resolve="alias" />
-        </node>
+        <node concept="3SHvHV" id="7chDFWBV$A2" role="2wV5jI" />
       </node>
     </node>
   </node>
@@ -768,10 +766,7 @@
     <node concept="1iCGBv" id="4DNAmYhj46g" role="2wV5jI">
       <ref role="1NtTu8" to="79wq:4DNAmYhj18z" resolve="part" />
       <node concept="1sVBvm" id="4DNAmYhj46h" role="1sWHZn">
-        <node concept="3F0A7n" id="4DNAmYhj46m" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:gOOYy9I" resolve="alias" />
-        </node>
+        <node concept="3SHvHV" id="7chDFWBVMnL" role="2wV5jI" />
       </node>
     </node>
   </node>
