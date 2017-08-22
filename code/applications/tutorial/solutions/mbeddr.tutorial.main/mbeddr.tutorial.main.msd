@@ -101,18 +101,13 @@
     <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="3" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="0" />
-    <language slang="l:07b580a3-cb92-4b5d-ab7c-9e2d58b9d602:mbeddr.tutorial.blocks" version="0" />
-    <language slang="l:4930e34b-b776-4ccb-b2ff-c6f31789e126:mbeddr.tutorial.extreqref" version="0" />
-    <language slang="l:32128dbe-9db6-4d05-9eaa-43601c29f276:mbeddr.tutorial.foreach" version="0" />
-    <language slang="l:16ff087a-23cd-49b8-9c5b-a2c20cea9d3e:mbeddr.tutorial.heap" version="0" />
-    <language slang="l:8cb5ab9f-a2c3-418b-a67c-c5690ef7361b:mbeddr.tutorial.layers" version="0" />
-    <language slang="l:a577a05d-67ad-41db-9547-6e5f0730b85d:mbeddr.tutorial.osconfig" version="0" />
-    <language slang="l:ce2335b7-fcfd-403e-8ace-08dd457fd818:mbeddr.tutorial.osconfig.cimpl" version="0" />
-    <language slang="l:8f78d0b6-57c9-4fa8-86fe-8c30d0d5b15c:mbeddr.tutorial.smtrigger" version="0" />
-    <language slang="l:973c8be0-8526-4588-aca6-92bcbb701b50:mbeddr.tutotial.osconfig.memory" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
+    <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
+    <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="ecc1a5ec-1e73-4d85-a5c7-cf22734be4aa(com.mbeddr.analyses.acsl.cbmc.rt)" version="0" />
     <module reference="13c63209-1eb7-491d-accf-3ba493379657(com.mbeddr.analyses.cbmc.components.pluginSolution)" version="0" />
     <module reference="603a3466-f1f4-442a-b544-048f481ec3bb(com.mbeddr.analyses.cbmc.components.rt)" version="0" />
