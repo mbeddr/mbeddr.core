@@ -30,9 +30,6 @@
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
-        <child id="1239714902950" name="expression" index="2$L3a6" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -108,7 +105,6 @@
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
       </concept>
-      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -120,6 +116,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -128,9 +127,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1172058436953" name="jetbrains.mps.baseLanguage.structure.LocalStaticMethodCall" flags="nn" index="3$87h9" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -140,10 +137,6 @@
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
-      </concept>
-      <concept id="1144231330558" name="jetbrains.mps.baseLanguage.structure.ForStatement" flags="nn" index="1Dw8fO">
-        <child id="1144231399730" name="condition" index="1Dwp0S" />
-        <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -308,87 +301,25 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="3dXNG5ucDLm" role="3cqZAp">
-              <node concept="3cpWsn" id="3dXNG5ucDLp" role="3cpWs9">
+            <node concept="3cpWs8" id="37J4MLL$oRV" role="3cqZAp">
+              <node concept="3cpWsn" id="37J4MLL$oRY" role="3cpWs9">
                 <property role="TrG5h" value="lengthFileExtension" />
-                <node concept="10Oyi0" id="3dXNG5ucDLk" role="1tU5fm" />
-                <node concept="3cmrfG" id="3dXNG5ucMwb" role="33vP2m">
-                  <property role="3cmrfH" value="0" />
-                </node>
-              </node>
-            </node>
-            <node concept="3SKdUt" id="2QR_NtQChr$" role="3cqZAp">
-              <node concept="3SKdUq" id="2QR_NtQChrA" role="3SKWNk">
-                <property role="3SKdUp" value="counting the file extension length comprising the &quot;.&quot;" />
-              </node>
-            </node>
-            <node concept="1Dw8fO" id="3dXNG5uctWk" role="3cqZAp">
-              <node concept="3clFbS" id="3dXNG5uctWm" role="2LFqv$">
-                <node concept="3clFbJ" id="3dXNG5ucA8z" role="3cqZAp">
-                  <node concept="3clFbS" id="3dXNG5ucA8_" role="3clFbx">
-                    <node concept="3clFbF" id="3dXNG5ucKed" role="3cqZAp">
-                      <node concept="37vLTI" id="3dXNG5ucKKB" role="3clFbG">
-                        <node concept="37vLTw" id="3dXNG5ucKLi" role="37vLTx">
-                          <ref role="3cqZAo" node="3dXNG5uctWn" resolve="i" />
-                        </node>
-                        <node concept="37vLTw" id="3dXNG5ucKeb" role="37vLTJ">
-                          <ref role="3cqZAo" node="3dXNG5ucDLp" resolve="lengthFileExtension" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3zACq4" id="3dXNG5ucCYS" role="3cqZAp" />
+                <node concept="10Oyi0" id="37J4MLL$oRT" role="1tU5fm" />
+                <node concept="3cpWs3" id="37J4MLL$rZ2" role="33vP2m">
+                  <node concept="3cmrfG" id="37J4MLL$rZT" role="3uHU7w">
+                    <property role="3cmrfH" value="1" />
                   </node>
-                  <node concept="3clFbC" id="3dXNG5ucBLS" role="3clFbw">
-                    <node concept="1Xhbcc" id="3dXNG5ucCcS" role="3uHU7w">
-                      <property role="1XhdNS" value="." />
-                    </node>
-                    <node concept="2OqwBi" id="3dXNG5ucxOb" role="3uHU7B">
-                      <node concept="37vLTw" id="3dXNG5ucxAp" role="2Oq$k0">
+                  <node concept="2OqwBi" id="37J4MLL$pEJ" role="3uHU7B">
+                    <node concept="1rXfSq" id="37J4MLL$pj7" role="2Oq$k0">
+                      <ref role="37wK5l" node="37J4MLL$2RX" resolve="getFileExtension" />
+                      <node concept="37vLTw" id="37J4MLL$pp1" role="37wK5m">
                         <ref role="3cqZAo" node="18pUPeO7giO" resolve="fullQualifiedFileName" />
                       </node>
-                      <node concept="liA8E" id="3dXNG5ucyn7" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
-                        <node concept="3cpWsd" id="3dXNG5uc$UV" role="37wK5m">
-                          <node concept="2OqwBi" id="3dXNG5ucyEY" role="3uHU7B">
-                            <node concept="37vLTw" id="3dXNG5ucyoG" role="2Oq$k0">
-                              <ref role="3cqZAo" node="18pUPeO7giO" resolve="fullQualifiedFileName" />
-                            </node>
-                            <node concept="liA8E" id="3dXNG5uczey" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
-                            </node>
-                          </node>
-                          <node concept="37vLTw" id="3dXNG5uc$XZ" role="3uHU7w">
-                            <ref role="3cqZAo" node="3dXNG5uctWn" resolve="i" />
-                          </node>
-                        </node>
-                      </node>
+                    </node>
+                    <node concept="liA8E" id="37J4MLL$qfv" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                     </node>
                   </node>
-                </node>
-              </node>
-              <node concept="3cpWsn" id="3dXNG5uctWn" role="1Duv9x">
-                <property role="TrG5h" value="i" />
-                <node concept="10Oyi0" id="3dXNG5ucFry" role="1tU5fm" />
-                <node concept="3cmrfG" id="3dXNG5ucJNK" role="33vP2m">
-                  <property role="3cmrfH" value="1" />
-                </node>
-              </node>
-              <node concept="3eOVzh" id="3dXNG5ucvxr" role="1Dwp0S">
-                <node concept="2OqwBi" id="3dXNG5ucw5r" role="3uHU7w">
-                  <node concept="37vLTw" id="3dXNG5ucvyS" role="2Oq$k0">
-                    <ref role="3cqZAo" node="18pUPeO7giO" resolve="fullQualifiedFileName" />
-                  </node>
-                  <node concept="liA8E" id="3dXNG5ucwCv" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="3dXNG5uculD" role="3uHU7B">
-                  <ref role="3cqZAo" node="3dXNG5uctWn" resolve="i" />
-                </node>
-              </node>
-              <node concept="3uNrnE" id="3dXNG5ucxkB" role="1Dwrff">
-                <node concept="37vLTw" id="3dXNG5ucxkD" role="2$L3a6">
-                  <ref role="3cqZAo" node="3dXNG5uctWn" resolve="i" />
                 </node>
               </node>
             </node>
@@ -413,7 +344,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="3dXNG5ucKLP" role="3uHU7w">
-                        <ref role="3cqZAo" node="3dXNG5ucDLp" resolve="lengthFileExtension" />
+                        <ref role="3cqZAo" node="37J4MLL$oRY" resolve="lengthFileExtension" />
                       </node>
                     </node>
                   </node>
@@ -879,6 +810,47 @@
         <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
       </node>
       <node concept="3Tm1VV" id="6Zad41Tri9_" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="37J4MLL$2ps" role="jymVt" />
+    <node concept="2YIFZL" id="37J4MLL$2RX" role="jymVt">
+      <property role="TrG5h" value="getFileExtension" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="37J4MLL$2S0" role="3clF47">
+        <node concept="3clFbF" id="37J4MLL$nvD" role="3cqZAp">
+          <node concept="2OqwBi" id="37J4MLL$nkq" role="3clFbG">
+            <node concept="liA8E" id="37J4MLL$nks" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+              <node concept="3cpWs3" id="37J4MLL_S90" role="37wK5m">
+                <node concept="3cmrfG" id="37J4MLL_S9z" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="2OqwBi" id="37J4MLL$nkt" role="3uHU7B">
+                  <node concept="37vLTw" id="37J4MLL$or0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="37J4MLL$32b" resolve="path" />
+                  </node>
+                  <node concept="liA8E" id="37J4MLL$nkv" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.lastIndexOf(java.lang.String):int" resolve="lastIndexOf" />
+                    <node concept="Xl_RD" id="37J4MLL$nkw" role="37wK5m">
+                      <property role="Xl_RC" value="." />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="37J4MLL$ol$" role="2Oq$k0">
+              <ref role="3cqZAo" node="37J4MLL$32b" resolve="path" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="37J4MLL$2Hg" role="1B3o_S" />
+      <node concept="17QB3L" id="37J4MLL$2RA" role="3clF45" />
+      <node concept="37vLTG" id="37J4MLL$32b" role="3clF46">
+        <property role="TrG5h" value="path" />
+        <node concept="17QB3L" id="37J4MLL$32a" role="1tU5fm" />
+      </node>
     </node>
     <node concept="NWlO9" id="55eOZdvWZ1R" role="lGtFl">
       <property role="NWlVz" value="General utility methods." />
