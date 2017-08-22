@@ -6310,18 +6310,23 @@
             <node concept="3clFbJ" id="dxqELdskl0" role="3cqZAp">
               <node concept="3clFbS" id="dxqELdskl1" role="3clFbx">
                 <node concept="34ab3g" id="dxqELdskl2" role="3cqZAp">
-                  <property role="35gtTG" value="error" />
-                  <node concept="3cpWs3" id="dxqELdskl3" role="34bqiv">
-                    <node concept="2OqwBi" id="dxqELdskl4" role="3uHU7w">
-                      <node concept="2GrUjf" id="dxqELdskl5" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="dxqELdsioL" resolve="module" />
-                      </node>
-                      <node concept="3TrcHB" id="dxqELdskl6" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
+                  <property role="35gtTG" value="warn" />
+                  <node concept="3cpWs3" id="jK_Dl7cbZ" role="34bqiv">
+                    <node concept="Xl_RD" id="jK_Dl7khT" role="3uHU7w">
+                      <property role="Xl_RC" value="' due to cycle between some module content items" />
                     </node>
-                    <node concept="Xl_RD" id="dxqELdskl7" role="3uHU7B">
-                      <property role="Xl_RC" value="Cycle detected between module contents in GenModuleC named " />
+                    <node concept="3cpWs3" id="dxqELdskl3" role="3uHU7B">
+                      <node concept="Xl_RD" id="dxqELdskl7" role="3uHU7B">
+                        <property role="Xl_RC" value="Unable to sort contents of GenModuleC '" />
+                      </node>
+                      <node concept="2OqwBi" id="dxqELdskl4" role="3uHU7w">
+                        <node concept="2GrUjf" id="dxqELdskl5" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="dxqELdsioL" resolve="module" />
+                        </node>
+                        <node concept="3TrcHB" id="dxqELdskl6" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -6406,18 +6411,23 @@
             <node concept="3clFbJ" id="dxqELdt3wj" role="3cqZAp">
               <node concept="3clFbS" id="dxqELdt3wk" role="3clFbx">
                 <node concept="34ab3g" id="dxqELdt3wl" role="3cqZAp">
-                  <property role="35gtTG" value="error" />
-                  <node concept="3cpWs3" id="dxqELdt3wm" role="34bqiv">
-                    <node concept="2OqwBi" id="dxqELdt3wn" role="3uHU7w">
-                      <node concept="2GrUjf" id="dxqELdt3wo" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="dxqELdt3w8" resolve="module" />
-                      </node>
-                      <node concept="3TrcHB" id="dxqELdt3wp" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
+                  <property role="35gtTG" value="warn" />
+                  <node concept="3cpWs3" id="jK_Dl7m8h" role="34bqiv">
+                    <node concept="Xl_RD" id="jK_Dl7m8i" role="3uHU7w">
+                      <property role="Xl_RC" value="' due to cycle between some module content items" />
                     </node>
-                    <node concept="Xl_RD" id="dxqELdt3wq" role="3uHU7B">
-                      <property role="Xl_RC" value="Cycle detected between module contents in GenModuleH named " />
+                    <node concept="3cpWs3" id="jK_Dl7m8j" role="3uHU7B">
+                      <node concept="Xl_RD" id="jK_Dl7m8k" role="3uHU7B">
+                        <property role="Xl_RC" value="Unable to sort contents of GenModuleH '" />
+                      </node>
+                      <node concept="2OqwBi" id="jK_Dl7m8l" role="3uHU7w">
+                        <node concept="2GrUjf" id="jK_Dl7m8m" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="dxqELdt3w8" resolve="module" />
+                        </node>
+                        <node concept="3TrcHB" id="jK_Dl7m8n" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
