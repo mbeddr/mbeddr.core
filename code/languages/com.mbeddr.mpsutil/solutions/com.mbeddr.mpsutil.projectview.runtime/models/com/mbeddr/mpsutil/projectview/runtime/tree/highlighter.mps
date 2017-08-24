@@ -1955,28 +1955,11 @@
           </node>
         </node>
         <node concept="3clFbS" id="6B7erwvECUs" role="3clF47">
-          <node concept="1DcWWT" id="6B7erwvECUt" role="3cqZAp">
-            <node concept="1rXfSq" id="6B7erwvECUF" role="1DdaDG">
-              <ref role="37wK5l" node="6B7erwvED1C" resolve="findTreeNode" />
-              <node concept="37vLTw" id="6B7erwvECUG" role="37wK5m">
+          <node concept="3clFbF" id="2eav8rFuXQI" role="3cqZAp">
+            <node concept="1rXfSq" id="2eav8rFuXQH" role="3clFbG">
+              <ref role="37wK5l" node="6B7erwvED1o" resolve="refreshAffectedTreeNodes" />
+              <node concept="37vLTw" id="2eav8rFuY5p" role="37wK5m">
                 <ref role="3cqZAo" node="6B7erwvECUq" resolve="model" />
-              </node>
-            </node>
-            <node concept="3cpWsn" id="6B7erwvECUC" role="1Duv9x">
-              <property role="3TUv4t" value="false" />
-              <property role="TrG5h" value="treeNode" />
-              <node concept="3uibUv" id="5TgxKE20NwV" role="1tU5fm">
-                <ref role="3uigEE" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="6B7erwvECUv" role="2LFqv$">
-              <node concept="3clFbF" id="6B7erwvECU_" role="3cqZAp">
-                <node concept="1rXfSq" id="6B7erwvECUA" role="3clFbG">
-                  <ref role="37wK5l" node="6B7erwvED22" resolve="refreshTreeNodes" />
-                  <node concept="37vLTw" id="6B7erwvECUB" role="37wK5m">
-                    <ref role="3cqZAo" node="6B7erwvECUC" resolve="treeNode" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -1999,28 +1982,11 @@
           </node>
         </node>
         <node concept="3clFbS" id="6B7erwvECUN" role="3clF47">
-          <node concept="1DcWWT" id="6B7erwvECUO" role="3cqZAp">
-            <node concept="1rXfSq" id="6B7erwvECV2" role="1DdaDG">
-              <ref role="37wK5l" node="6B7erwvED1C" resolve="findTreeNode" />
-              <node concept="37vLTw" id="6B7erwvECV3" role="37wK5m">
+          <node concept="3clFbF" id="2eav8rFuYjg" role="3cqZAp">
+            <node concept="1rXfSq" id="2eav8rFuYjh" role="3clFbG">
+              <ref role="37wK5l" node="6B7erwvED1o" resolve="refreshAffectedTreeNodes" />
+              <node concept="37vLTw" id="2eav8rFuYji" role="37wK5m">
                 <ref role="3cqZAo" node="6B7erwvECUL" resolve="model" />
-              </node>
-            </node>
-            <node concept="3cpWsn" id="6B7erwvECUZ" role="1Duv9x">
-              <property role="3TUv4t" value="false" />
-              <property role="TrG5h" value="treeNode" />
-              <node concept="3uibUv" id="5TgxKE20OSU" role="1tU5fm">
-                <ref role="3uigEE" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="6B7erwvECUQ" role="2LFqv$">
-              <node concept="3clFbF" id="6B7erwvECUW" role="3cqZAp">
-                <node concept="1rXfSq" id="6B7erwvECUX" role="3clFbG">
-                  <ref role="37wK5l" node="6B7erwvED22" resolve="refreshTreeNodes" />
-                  <node concept="37vLTw" id="6B7erwvECUY" role="37wK5m">
-                    <ref role="3cqZAo" node="6B7erwvECUZ" resolve="treeNode" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -2054,6 +2020,40 @@
         </node>
         <node concept="3Tm1VV" id="6B7erwvECVe" role="1B3o_S" />
         <node concept="3cqZAl" id="6B7erwvECVf" role="3clF45" />
+      </node>
+      <node concept="3clFb_" id="6B7erwvECVg" role="jymVt">
+        <property role="TrG5h" value="modelLoadingStateChanged" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="2AHcQZ" id="6B7erwvECVh" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+        <node concept="37vLTG" id="6B7erwvECVi" role="3clF46">
+          <property role="TrG5h" value="sm" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="6B7erwvECVj" role="1tU5fm">
+            <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+          </node>
+        </node>
+        <node concept="37vLTG" id="6B7erwvECVk" role="3clF46">
+          <property role="TrG5h" value="newState" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="6B7erwvECVl" role="1tU5fm">
+            <ref role="3uigEE" to="4it6:~ModelLoadingState" resolve="ModelLoadingState" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="6B7erwvECVm" role="3clF47">
+          <node concept="3clFbF" id="2eav8rFuYpE" role="3cqZAp">
+            <node concept="1rXfSq" id="2eav8rFuYpF" role="3clFbG">
+              <ref role="37wK5l" node="6B7erwvED1o" resolve="refreshAffectedTreeNodes" />
+              <node concept="37vLTw" id="2eav8rFuYAh" role="37wK5m">
+                <ref role="3cqZAo" node="6B7erwvECVi" resolve="sm" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="6B7erwvECV$" role="1B3o_S" />
+        <node concept="3cqZAl" id="6B7erwvECV_" role="3clF45" />
       </node>
     </node>
     <node concept="312cEu" id="6B7erwvECVA" role="jymVt">
