@@ -146,5 +146,20 @@
       <node concept="3clFbS" id="3s1LyzGfrMK" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="3dZgFhDSzjk">
+    <property role="3GE5qa" value="parallelizableMakeGenerator" />
+    <ref role="13h7C2" to="i2y7:3dZgFhDSw4V" resolve="IGeneratesToMakefile" />
+    <node concept="13i0hz" id="3dZgFhDSzmf" role="13h7CS">
+      <property role="TrG5h" value="canBeParallelized" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="3dZgFhDSzmg" role="1B3o_S" />
+      <node concept="10P_77" id="3dZgFhDSzmh" role="3clF45" />
+      <node concept="3clFbS" id="3dZgFhDSzmi" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="3dZgFhDSzjl" role="13h7CW">
+      <node concept="3clFbS" id="3dZgFhDSzjm" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

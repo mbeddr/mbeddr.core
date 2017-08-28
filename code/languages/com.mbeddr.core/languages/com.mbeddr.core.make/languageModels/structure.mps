@@ -485,5 +485,10 @@
     <property role="34LRSv" value="ifeq" />
     <ref role="1TJDcQ" node="2b2D8jTN4pN" resolve="ConditionalDirective" />
   </node>
+  <node concept="PlHQZ" id="3dZgFhDSw4V">
+    <property role="EcuMT" value="3710757960614543675" />
+    <property role="TrG5h" value="IGeneratesToMakefile" />
+    <property role="3GE5qa" value="parallelizableMakeGenerator" />
+  </node>
 </model>
 
