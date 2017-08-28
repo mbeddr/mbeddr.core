@@ -128,7 +128,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="7DxvnULnjxw" role="3EZMnx">
-        <property role="3F0ifm" value="hihi" />
+        <property role="3F0ifm" value="hihi " />
       </node>
       <node concept="3F1sOY" id="7DxvnULeCE9" role="3EZMnx">
         <ref role="1NtTu8" to="pneg:7DxvnULeAMk" resolve="otherChild" />
