@@ -1068,10 +1068,10 @@
       <property role="2l50Km" value="none" />
       <property role="2lUGeZ" value="true" />
       <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="25" />
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
-      <property role="2l50Mm" value="false" />
+      <property role="2l50Mm" value="true" />
+      <property role="2lUHrg" value="5" />
       <ref role="3V$Cn$" node="7Tdla9PMVW8" resolve="harness_junction" />
       <ref role="1W1s6P" node="7Tdla9PMVz$" resolve="JunctionSM" />
     </node>
@@ -1180,7 +1180,7 @@
                 <property role="2hmy$m" value="0" />
               </node>
               <node concept="3TlMh9" id="7Tdla9PMVYD" role="1vV05C">
-                <property role="2hmy$m" value="10" />
+                <property role="2hmy$m" value="4" />
               </node>
             </node>
             <node concept="3XIRFW" id="7Tdla9PMVXN" role="n2wFg">
