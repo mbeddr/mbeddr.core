@@ -49,7 +49,6 @@
   <dependencies>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</dependency>
-    <dependency reexport="false">c983bb33-b80e-43c9-96f5-1ed720e4a297(de.itemis.webdiff.plugin)</dependency>
     <dependency reexport="false">817e4e70-961e-4a95-98a1-15e9f32231f1(jetbrains.mps.ide.httpsupport)</dependency>
   </dependencies>
   <languageVersions>
@@ -73,7 +72,6 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="a994cf75-61e2-4d16-9c4d-0cdc14682cfa(com.mbeddr.mpsutil.nodeToSVG.plugin)" version="0" />
-    <module reference="c983bb33-b80e-43c9-96f5-1ed720e4a297(de.itemis.webdiff.plugin)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
     <module reference="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" version="0" />
