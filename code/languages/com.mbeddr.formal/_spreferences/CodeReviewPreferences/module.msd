@@ -6,7 +6,11 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <languageVersions />
-  <dependencyVersions />
+  <languageVersions>
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
+  </languageVersions>
+  <dependencyVersions>
+    <module reference="~_PreferencesModule#com.mbeddr.formal.__spreferences.CodeReviewPreferences(com.mbeddr.formal.__spreferences.CodeReviewPreferences)" version="0" />
+  </dependencyVersions>
 </solution>
 
