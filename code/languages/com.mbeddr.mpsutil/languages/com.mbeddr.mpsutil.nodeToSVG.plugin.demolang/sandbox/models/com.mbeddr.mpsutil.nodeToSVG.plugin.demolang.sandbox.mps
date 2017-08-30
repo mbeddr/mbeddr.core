@@ -8,7 +8,6 @@
   <registry>
     <language id="0c45b691-16bf-4122-bd43-57d8e3d47d29" name="com.mbeddr.mpsutil.nodeToSVG.plugin.demolang">
       <concept id="8818467528460795612" name="com.mbeddr.mpsutil.nodeToSVG.plugin.demolang.structure.AConcept" flags="ng" index="3bmoey">
-        <reference id="8818467528460889240" name="otherRef" index="3bmL7A" />
         <child id="8818467528460889236" name="otherChild" index="3bmL7E" />
       </concept>
     </language>
@@ -18,23 +17,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="3bmoey" id="7DxvnULekwR">
-    <property role="TrG5h" value="mea" />
-  </node>
-  <node concept="3bmoey" id="7DxvnULel1X">
-    <property role="TrG5h" value="myNamefa" />
-    <ref role="3bmL7A" node="7DxvnULekwR" resolve="mea" />
-    <node concept="3bmoey" id="7DxvnULeCD5" role="3bmL7E">
-      <property role="TrG5h" value="theotherchild" />
-      <ref role="3bmL7A" node="7DxvnULeCD5" resolve="theotherchild" />
-    </node>
-  </node>
-  <node concept="3bmoey" id="7DxvnULeJi7">
-    <property role="TrG5h" value="third" />
-    <node concept="3bmoey" id="7DxvnULniTF" role="3bmL7E">
-      <property role="TrG5h" value="testing" />
-    </node>
-  </node>
   <node concept="3bmoey" id="7DxvnULnjxt">
     <property role="TrG5h" value="four" />
     <node concept="3bmoey" id="7DxvnULnjxu" role="3bmL7E">

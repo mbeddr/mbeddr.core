@@ -17,6 +17,9 @@
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -26,7 +29,9 @@
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
+        <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -50,6 +55,18 @@
   </registry>
   <node concept="312cEu" id="7DxvnULbG33">
     <property role="TrG5h" value="A" />
+    <node concept="2tJIrI" id="4u5EI4s7U1u" role="jymVt" />
+    <node concept="312cEg" id="4u5EI4s7U8x" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="test" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="4u5EI4s7U8b" role="1B3o_S" />
+      <node concept="17QB3L" id="4u5EI4s7U8q" role="1tU5fm" />
+      <node concept="Xl_RD" id="4u5EI4s7U9f" role="33vP2m">
+        <property role="Xl_RC" value="hello" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="7DxvnULbG34" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="7DxvnULbG4X">
