@@ -8,7 +8,9 @@
   <registry>
     <language id="0c45b691-16bf-4122-bd43-57d8e3d47d29" name="com.mbeddr.mpsutil.nodeToSVG.plugin.demolang">
       <concept id="8818467528460795612" name="com.mbeddr.mpsutil.nodeToSVG.plugin.demolang.structure.AConcept" flags="ng" index="3bmoey">
-        <child id="8818467528460889236" name="otherChild" index="3bmL7E" />
+        <reference id="4493102530253466195" name="right" index="xs1Ux" />
+        <reference id="4493102530253466198" name="this" index="xs1U$" />
+        <reference id="8818467528460889240" name="left" index="3bmL7A" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -17,11 +19,23 @@
       </concept>
     </language>
   </registry>
-  <node concept="3bmoey" id="7DxvnULnjxt">
-    <property role="TrG5h" value="four" />
-    <node concept="3bmoey" id="7DxvnULnjxu" role="3bmL7E">
-      <property role="TrG5h" value="test" />
-    </node>
+  <node concept="3bmoey" id="3TqHf8v8TaN">
+    <property role="TrG5h" value="default_" />
+    <ref role="3bmL7A" node="3TqHf8v8TaP" resolve="second_" />
+    <ref role="xs1Ux" node="3TqHf8v8TaO" resolve="first_" />
+    <ref role="xs1U$" node="3TqHf8v8TaN" resolve="default_" />
+  </node>
+  <node concept="3bmoey" id="3TqHf8v8TaO">
+    <property role="TrG5h" value="first_" />
+    <ref role="3bmL7A" node="3TqHf8v8TaN" resolve="default_" />
+    <ref role="xs1Ux" node="3TqHf8v8TaP" resolve="second_" />
+    <ref role="xs1U$" node="3TqHf8v8TaO" resolve="first_" />
+  </node>
+  <node concept="3bmoey" id="3TqHf8v8TaP">
+    <property role="TrG5h" value="second_" />
+    <ref role="3bmL7A" node="3TqHf8v8TaO" resolve="first_" />
+    <ref role="xs1Ux" node="3TqHf8v8TaN" resolve="default_" />
+    <ref role="xs1U$" node="3TqHf8v8TaP" resolve="second_" />
   </node>
 </model>
 
