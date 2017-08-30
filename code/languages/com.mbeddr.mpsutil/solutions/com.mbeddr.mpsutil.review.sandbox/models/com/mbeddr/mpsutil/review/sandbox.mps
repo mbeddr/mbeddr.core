@@ -120,7 +120,7 @@
       <ref role="19LoX1" node="10nVqVfBERe" resolve="myFunc" />
       <node concept="19SGf9" id="7lmVLrUsyki" role="3ajGZ5">
         <node concept="19SUe$" id="7lmVLrUsykj" role="19SJt6">
-          <property role="19SUeA" value="This is some test example text with quite some text in it" />
+          <property role="19SUeA" value="This is some test example text with quite some text in it testmeif" />
         </node>
       </node>
     </node>
