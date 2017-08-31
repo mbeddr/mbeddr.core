@@ -21,6 +21,7 @@
     <import index="gx1z" ref="r:716d4aa1-57d8-4a9c-b02d-c1375c64785d(com.mbeddr.doc.generator.template.main@generator)" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" />
+    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -417,8 +418,8 @@
             </node>
             <node concept="3clFbF" id="7$DvC4gQTRT" role="3cqZAp">
               <node concept="2YIFZM" id="7$DvC4gQTRV" role="3clFbG">
-                <ref role="1Pybhc" to="hwgx:1yFmGPnLcL9" resolve="CellEditorScreenshooter" />
-                <ref role="37wK5l" to="hwgx:54ozzUwn_74" resolve="takeScreenshot" />
+                <ref role="1Pybhc" to="r4b4:1yFmGPnLcL9" resolve="CellEditorScreenshooter" />
+                <ref role="37wK5l" to="r4b4:54ozzUwn_74" resolve="takeScreenshot" />
                 <node concept="37vLTw" id="5Hxjapw9veh" role="37wK5m">
                   <ref role="3cqZAo" node="7$DvC4gSb_j" resolve="original" />
                 </node>
