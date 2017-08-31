@@ -24,6 +24,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" implicit="true" />
   </imports>
@@ -1359,8 +1360,8 @@
             </node>
             <node concept="3clFbF" id="7$DvC4gQTRT" role="3cqZAp">
               <node concept="2YIFZM" id="7$DvC4gQTRV" role="3clFbG">
-                <ref role="1Pybhc" to="hwgx:1yFmGPnLcL9" resolve="CellEditorScreenshooter" />
-                <ref role="37wK5l" to="hwgx:54ozzUwn_74" resolve="takeScreenshot" />
+                <ref role="1Pybhc" to="r4b4:1yFmGPnLcL9" resolve="CellEditorScreenshooter" />
+                <ref role="37wK5l" to="r4b4:54ozzUwn_74" resolve="takeScreenshot" />
                 <node concept="37vLTw" id="5Hxjapw9v6m" role="37wK5m">
                   <ref role="3cqZAo" node="7$DvC4gSb_j" resolve="original" />
                 </node>

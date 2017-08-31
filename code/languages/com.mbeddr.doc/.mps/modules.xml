@@ -4,8 +4,6 @@
     <projectModules>
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.documentation/com.mbeddr.documentation.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.expressions/com.mbeddr.doc.expressions.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_latex/com.mbeddr.doc.gen_latex.mpl" folder="" />
@@ -19,7 +17,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.slides/com.mbeddr.slides.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.spreadsheat/spreadsheat.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/terms/com.mbeddr.doc.terms.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.doc/com.mbeddr.doc.doc.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.slides.sandbox/com.mbeddr.doc.slides.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.spreadsheat.sandbox/com.mbeddr.spreadsheat.sandbox.msd" folder="" />
     </projectModules>

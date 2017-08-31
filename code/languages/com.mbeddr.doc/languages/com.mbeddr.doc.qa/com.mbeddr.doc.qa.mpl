@@ -46,7 +46,7 @@
         <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-        <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="1" />
+        <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="2" />
         <module reference="0c8e0d19-c3cf-4b31-af77-531227edbce8(com.mbeddr.core.qa)" version="0" />
         <module reference="5344b781-2242-4d23-be90-673ee10bea46(com.mbeddr.doc.qa)" version="0" />
         <module reference="1e7f8eb6-99b3-402c-b540-6329ea3de584(com.mbeddr.doc.qa#97836352114790758)" version="0" />
@@ -108,7 +108,7 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="1" />
+    <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="2" />
     <module reference="0c8e0d19-c3cf-4b31-af77-531227edbce8(com.mbeddr.core.qa)" version="0" />
     <module reference="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" version="0" />
     <module reference="5344b781-2242-4d23-be90-673ee10bea46(com.mbeddr.doc.qa)" version="0" />
