@@ -2992,6 +2992,20 @@
           </node>
           <node concept="15s5l7" id="6$TCdl67NmM" role="lGtFl" />
         </node>
+        <node concept="3cpWs8" id="aQnmvII6d9" role="3cqZAp">
+          <node concept="3cpWsn" id="aQnmvII6da" role="3cpWs9">
+            <property role="TrG5h" value="classLoader" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="aQnmvII6d8" role="1tU5fm">
+              <ref role="3uigEE" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
+            </node>
+            <node concept="2YIFZM" id="aQnmvII6db" role="33vP2m">
+              <ref role="37wK5l" to="3qmy:~ClassLoaderManager.getInstance():jetbrains.mps.classloading.ClassLoaderManager" resolve="getInstance" />
+              <ref role="1Pybhc" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
+            </node>
+          </node>
+          <node concept="15s5l7" id="aQnmvIInbZ" role="lGtFl" />
+        </node>
         <node concept="3cpWs8" id="4RsLK_FPgP_" role="3cqZAp">
           <node concept="3cpWsn" id="4RsLK_FPgPA" role="3cpWs9">
             <property role="TrG5h" value="specificationClass" />
@@ -3000,9 +3014,8 @@
               <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
             </node>
             <node concept="2OqwBi" id="4RsLK_FPgPB" role="33vP2m">
-              <node concept="2YIFZM" id="4RsLK_FPgPC" role="2Oq$k0">
-                <ref role="37wK5l" to="3qmy:~ClassLoaderManager.getInstance():jetbrains.mps.classloading.ClassLoaderManager" resolve="getInstance" />
-                <ref role="1Pybhc" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
+              <node concept="37vLTw" id="aQnmvII6dc" role="2Oq$k0">
+                <ref role="3cqZAo" node="aQnmvII6da" resolve="classLoader" />
               </node>
               <node concept="liA8E" id="4RsLK_FPgPD" role="2OqNvi">
                 <ref role="37wK5l" to="3qmy:~ClassLoaderManager.getOwnClass(org.jetbrains.mps.openapi.module.SModule,java.lang.String):java.lang.Class" resolve="getOwnClass" />
@@ -3126,10 +3139,8 @@
                               <node concept="37vLTw" id="X9$Hg9SVE2" role="37wK5m">
                                 <ref role="3cqZAo" node="X9$Hg9SL3M" resolve="queryExplorer" />
                               </node>
-                              <node concept="1eOMI4" id="4dLFELwtpHo" role="37wK5m">
-                                <node concept="37vLTw" id="6KdnYMOoYX6" role="1eOMHV">
-                                  <ref role="3cqZAo" node="6KdnYMOoYX2" resolve="specification" />
-                                </node>
+                              <node concept="37vLTw" id="6KdnYMOoYX6" role="37wK5m">
+                                <ref role="3cqZAo" node="6KdnYMOoYX2" resolve="specification" />
                               </node>
                               <node concept="2OqwBi" id="4RsLK_FGQZm" role="37wK5m">
                                 <node concept="37vLTw" id="4RsLK_FGQX1" role="2Oq$k0">

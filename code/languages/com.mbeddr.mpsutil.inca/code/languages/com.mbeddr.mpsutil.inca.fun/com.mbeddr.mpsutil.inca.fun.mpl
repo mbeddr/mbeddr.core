@@ -21,9 +21,9 @@
         <dependency reexport="false">44851301-9e9d-4b21-9608-3740a9f299a4(com.mbeddr.mpsutil.inca.gp#4530729936991344011)</dependency>
       </dependencies>
       <languageVersions>
-        <language slang="l:b802a056-92a2-4fbc-902e-f8e5004c331f:com.mbeddr.mpsutil.inca.core" version="-1" />
-        <language slang="l:8c9a2720-9d21-4370-a226-819eb3e76e1e:com.mbeddr.mpsutil.inca.fun" version="-1" />
-        <language slang="l:cd2909da-ecb4-49dc-b176-33e5c619e516:com.mbeddr.mpsutil.inca.gp" version="-1" />
+        <language slang="l:b802a056-92a2-4fbc-902e-f8e5004c331f:com.mbeddr.mpsutil.inca.core" version="0" />
+        <language slang="l:8c9a2720-9d21-4370-a226-819eb3e76e1e:com.mbeddr.mpsutil.inca.fun" version="0" />
+        <language slang="l:cd2909da-ecb4-49dc-b176-33e5c619e516:com.mbeddr.mpsutil.inca.gp" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="0" />

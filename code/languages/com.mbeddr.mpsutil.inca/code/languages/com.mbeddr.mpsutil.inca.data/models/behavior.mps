@@ -2,9 +2,9 @@
 <model ref="r:13275e02-3f14-48b5-8a82-fa91f2c33c15(com.mbeddr.mpsutil.inca.data.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -285,7 +285,7 @@
           <node concept="2ShNRf" id="2aWpJMnb0oH" role="3cqZAk">
             <node concept="2HTt$P" id="2aWpJMnb1F_" role="2ShVmc">
               <node concept="3Tqbb2" id="2aWpJMnb1Kc" role="2HTBi0">
-                <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+                <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
               </node>
               <node concept="13iPFW" id="2aWpJMnb1T6" role="2HTEbv" />
             </node>
@@ -294,7 +294,7 @@
       </node>
       <node concept="A3Dl8" id="2aWpJMnb26D" role="3clF45">
         <node concept="3Tqbb2" id="2aWpJMnaZCy" role="A3Ik2">
-          <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+          <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
         </node>
       </node>
     </node>
@@ -1250,10 +1250,10 @@
           <node concept="2YIFZM" id="ziWFuXy888" role="3cqZAk">
             <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
             <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
-            <node concept="3B5_sB" id="2RSm1CzrVub" role="37wK5m">
+            <node concept="2OqwBi" id="2RSm1CzrVub" role="37wK5m">
               <ref role="3B5MYn" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
             </node>
-            <node concept="3B5_sB" id="2RSm1CzrXP$" role="37wK5m">
+            <node concept="2OqwBi" id="2RSm1CzrXP$" role="37wK5m">
               <ref role="3B5MYn" to="ebqt:Tz5AFeCUC5" resolve="FunTemporaryVariable" />
             </node>
             <node concept="3Tqbb2" id="ziWFuXy88f" role="3PaCim">
@@ -1514,10 +1514,10 @@
           <node concept="2YIFZM" id="4aOuL3PKwzJ" role="3cqZAk">
             <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
             <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
-            <node concept="3B5_sB" id="2RSm1Czs0_R" role="37wK5m">
+            <node concept="2OqwBi" id="2RSm1Czs0_R" role="37wK5m">
               <ref role="3B5MYn" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
             </node>
-            <node concept="3B5_sB" id="2RSm1Czs3bU" role="37wK5m">
+            <node concept="2OqwBi" id="2RSm1Czs3bU" role="37wK5m">
               <ref role="3B5MYn" to="ebqt:Tz5AFeCUC5" resolve="FunTemporaryVariable" />
             </node>
             <node concept="3Tqbb2" id="4aOuL3PKwzQ" role="3PaCim">

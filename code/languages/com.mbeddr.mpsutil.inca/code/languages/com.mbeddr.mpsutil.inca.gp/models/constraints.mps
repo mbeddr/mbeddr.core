@@ -222,7 +222,7 @@
               <node concept="2DD5aU" id="2RSm1Cz26XD" role="2Oq$k0" />
               <node concept="2Zo12i" id="2RSm1Cz26Xu" role="2OqNvi">
                 <node concept="chp4Y" id="2RSm1Cz26Xv" role="2Zo12j">
-                  <ref role="cht4Q" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+                  <ref role="cht4Q" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
                 </node>
               </node>
             </node>

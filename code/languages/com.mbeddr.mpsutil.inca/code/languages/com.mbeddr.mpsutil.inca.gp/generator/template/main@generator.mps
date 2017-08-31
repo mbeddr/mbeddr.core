@@ -2,11 +2,11 @@
 <model ref="r:d7788ae3-4afe-431e-a7ca-f1369bead1e8(com.mbeddr.mpsutil.inca.gp.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="cd2909da-ecb4-49dc-b176-33e5c619e516" name="com.mbeddr.mpsutil.inca.gp" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -705,7 +705,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="1qP1$ZSSYtk" role="3acgRq">
-      <ref role="30HIoZ" to="hqsm:1UJP1A0V$Ki" resolve="JoinSNodeType" />
+      <ref role="30HIoZ" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
       <node concept="j$656" id="1qP1$ZSSYNt" role="1lVwrX">
         <ref role="v9R2y" to="cj1d:1qP1$ZSSW8S" resolve="template_RuntimeJoinType" />
       </node>
@@ -4136,7 +4136,7 @@
                     <property role="TrG5h" value="types" />
                     <node concept="A3Dl8" id="5xvu2kSi3zj" role="1tU5fm">
                       <node concept="3Tqbb2" id="5xvu2kSi3zm" role="A3Ik2">
-                        <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+                        <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="5xvu2kSi3BD" role="33vP2m">
@@ -4178,7 +4178,7 @@
                   <node concept="3cpWsn" id="3B59fJNbbNx" role="3cpWs9">
                     <property role="TrG5h" value="mostSpecific" />
                     <node concept="3Tqbb2" id="3B59fJNbbNs" role="1tU5fm">
-                      <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+                      <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
                     </node>
                     <node concept="2YIFZM" id="3B59fJNbcOK" role="33vP2m">
                       <ref role="37wK5l" to="zt8v:3B59fJNb0YM" resolve="getMostSpecificIncAType" />

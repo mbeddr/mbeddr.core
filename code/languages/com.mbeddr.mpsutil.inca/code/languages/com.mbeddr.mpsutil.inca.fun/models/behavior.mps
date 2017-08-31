@@ -2,9 +2,9 @@
 <model ref="r:ad5b8223-9439-4270-8687-d790b5c09c3f(com.mbeddr.mpsutil.inca.fun.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -706,7 +706,7 @@
           <node concept="9aQIb" id="57LMU4VjngL" role="9aQIa">
             <node concept="3clFbS" id="57LMU4VjngM" role="9aQI4">
               <node concept="3cpWs6" id="57LMU4Vjnrw" role="3cqZAp">
-                <node concept="3B5_sB" id="2RSm1Cz_FRU" role="3cqZAk">
+                <node concept="2OqwBi" id="2RSm1Cz_FRU" role="3cqZAk">
                   <ref role="3B5MYn" to="tpck:gw2VY9q" resolve="BaseConcept" />
                 </node>
               </node>
@@ -729,7 +729,7 @@
           <node concept="2YIFZM" id="Tz5AFeEZA4" role="3cqZAk">
             <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
             <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
-            <node concept="3B5_sB" id="2RSm1Cz_Eo3" role="37wK5m">
+            <node concept="2OqwBi" id="2RSm1Cz_Eo3" role="37wK5m">
               <ref role="3B5MYn" to="ebqt:52HBLukRnnV" resolve="ITuple" />
             </node>
             <node concept="3Tqbb2" id="Tz5AFeFqjQ" role="3PaCim">
@@ -1279,7 +1279,7 @@
                             <property role="TrG5h" value="type" />
                             <property role="3TUv4t" value="true" />
                             <node concept="3Tqbb2" id="2tNwKiVArel" role="1tU5fm">
-                              <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+                              <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
                             </node>
                             <node concept="2OqwBi" id="2tNwKiVArem" role="33vP2m">
                               <node concept="2OqwBi" id="2tNwKiVAren" role="2Oq$k0">
@@ -1422,10 +1422,10 @@
               <node concept="2YIFZM" id="3oMuSXR87ih" role="3cqZAk">
                 <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
                 <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
-                <node concept="3B5_sB" id="2RSm1Cz_xZj" role="37wK5m">
+                <node concept="2OqwBi" id="2RSm1Cz_xZj" role="37wK5m">
                   <ref role="3B5MYn" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
                 </node>
-                <node concept="3B5_sB" id="2RSm1Cz_$zm" role="37wK5m">
+                <node concept="2OqwBi" id="2RSm1Cz_$zm" role="37wK5m">
                   <ref role="3B5MYn" to="ebqt:Tz5AFeCUC5" resolve="FunTemporaryVariable" />
                 </node>
                 <node concept="3Tqbb2" id="3oMuSXR87il" role="3PaCim">
@@ -1446,7 +1446,7 @@
                 <node concept="2YIFZM" id="Tz5AFeF1Nq" role="3cqZAk">
                   <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
                   <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
-                  <node concept="3B5_sB" id="2RSm1Cz_Bvr" role="37wK5m">
+                  <node concept="2OqwBi" id="2RSm1Cz_Bvr" role="37wK5m">
                     <ref role="3B5MYn" to="ebqt:52HBLukRnnV" resolve="ITuple" />
                   </node>
                   <node concept="3Tqbb2" id="Tz5AFeFr1c" role="3PaCim">
@@ -2258,7 +2258,7 @@
               <ref role="3cqZAo" node="4oNjwzxol4N" resolve="result" />
             </node>
             <node concept="TSZUe" id="4oNjwzxom_O" role="2OqNvi">
-              <node concept="3B5_sB" id="2RSm1Cz_MUg" role="25WWJ7">
+              <node concept="2OqwBi" id="2RSm1Cz_MUg" role="25WWJ7">
                 <ref role="3B5MYn" to="ebqt:52HBLukRnnV" resolve="ITuple" />
               </node>
             </node>
@@ -2270,7 +2270,7 @@
               <ref role="3cqZAo" node="4oNjwzxol4N" resolve="result" />
             </node>
             <node concept="TSZUe" id="3oMuSXR7nn8" role="2OqNvi">
-              <node concept="3B5_sB" id="2RSm1Cz_NPU" role="25WWJ7">
+              <node concept="2OqwBi" id="2RSm1Cz_NPU" role="25WWJ7">
                 <ref role="3B5MYn" to="ebqt:3oMuSXR7kAP" resolve="EvalValue" />
               </node>
             </node>
@@ -2434,7 +2434,7 @@
               <ref role="3cqZAo" node="4oNjwzxoplz" resolve="result" />
             </node>
             <node concept="TSZUe" id="3oMuSXR7ogW" role="2OqNvi">
-              <node concept="3B5_sB" id="2RSm1Cz_Lux" role="25WWJ7">
+              <node concept="2OqwBi" id="2RSm1Cz_Lux" role="25WWJ7">
                 <ref role="3B5MYn" to="ebqt:4oNjwzxnlUy" resolve="LiteralValue" />
               </node>
             </node>
@@ -2446,7 +2446,7 @@
               <ref role="3cqZAo" node="4oNjwzxoplz" resolve="result" />
             </node>
             <node concept="TSZUe" id="3oMuSXR7oh3" role="2OqNvi">
-              <node concept="3B5_sB" id="2RSm1Cz_LLv" role="25WWJ7">
+              <node concept="2OqwBi" id="2RSm1Cz_LLv" role="25WWJ7">
                 <ref role="3B5MYn" to="ebqt:3oMuSXR7kAP" resolve="EvalValue" />
               </node>
             </node>
@@ -2668,10 +2668,10 @@
           <node concept="2YIFZM" id="4oNjwzxnmeq" role="3cqZAk">
             <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
             <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
-            <node concept="3B5_sB" id="2RSm1Cz_J0P" role="37wK5m">
+            <node concept="2OqwBi" id="2RSm1Cz_J0P" role="37wK5m">
               <ref role="3B5MYn" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
             </node>
-            <node concept="3B5_sB" id="2RSm1Cz_K2U" role="37wK5m">
+            <node concept="2OqwBi" id="2RSm1Cz_K2U" role="37wK5m">
               <ref role="3B5MYn" to="ebqt:Tz5AFeCUC5" resolve="FunTemporaryVariable" />
             </node>
             <node concept="3Tqbb2" id="4oNjwzxnmeB" role="3PaCim">
@@ -2851,10 +2851,10 @@
           <node concept="2YIFZM" id="3oMuSXR7loM" role="3cqZAk">
             <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
             <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
-            <node concept="3B5_sB" id="2RSm1Cz_Riq" role="37wK5m">
+            <node concept="2OqwBi" id="2RSm1Cz_Riq" role="37wK5m">
               <ref role="3B5MYn" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
             </node>
-            <node concept="3B5_sB" id="2RSm1Cz_Rxs" role="37wK5m">
+            <node concept="2OqwBi" id="2RSm1Cz_Rxs" role="37wK5m">
               <ref role="3B5MYn" to="ebqt:Tz5AFeCUC5" resolve="FunTemporaryVariable" />
             </node>
             <node concept="3Tqbb2" id="3oMuSXR7loT" role="3PaCim">
@@ -5811,6 +5811,54 @@
     </node>
     <node concept="13hLZK" id="InJBIGIrpe" role="13h7CW">
       <node concept="3clFbS" id="InJBIGIrpf" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="aQnmvI6CKu">
+    <property role="3GE5qa" value="expression" />
+    <ref role="13h7C2" to="ebqt:52HBLukRnnV" resolve="ITuple" />
+    <node concept="13hLZK" id="aQnmvI6CKv" role="13h7CW">
+      <node concept="3clFbS" id="aQnmvI6CKw" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="aQnmvI6CKD" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTypeConstraintsFor" />
+      <ref role="13i0hy" to="gcg1:1i65yRATv6S" resolve="getTypeConstraintsFor" />
+      <node concept="3Tm1VV" id="aQnmvI6CKE" role="1B3o_S" />
+      <node concept="3clFbS" id="aQnmvI6CKM" role="3clF47">
+        <node concept="3cpWs6" id="aQnmvI6CQy" role="3cqZAp">
+          <node concept="2OqwBi" id="aQnmvI6DHo" role="3cqZAk">
+            <node concept="2OqwBi" id="aQnmvI6D4p" role="2Oq$k0">
+              <node concept="13iPFW" id="aQnmvI6CQT" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="aQnmvI6Dwt" role="2OqNvi">
+                <node concept="1xMEDy" id="aQnmvI6Dwv" role="1xVPHs">
+                  <node concept="chp4Y" id="aQnmvI79eC" role="ri$Ld">
+                    <ref role="cht4Q" to="ebqt:52HBLukNl0O" resolve="IBinary" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="aQnmvI6E07" role="2OqNvi">
+              <ref role="37wK5l" to="gcg1:1i65yRATv6S" resolve="getTypeConstraintsFor" />
+              <node concept="37vLTw" id="aQnmvI6E4u" role="37wK5m">
+                <ref role="3cqZAo" node="aQnmvI6CKN" resolve="variable" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="aQnmvI6CKN" role="3clF46">
+        <property role="TrG5h" value="variable" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tqbb2" id="aQnmvI6CKO" role="1tU5fm">
+          <ref role="ehGHo" to="hqsm:3VwoHXNAdmi" resolve="IVariable" />
+        </node>
+      </node>
+      <node concept="3vKaQO" id="aQnmvI6CKP" role="3clF45">
+        <node concept="3Tqbb2" id="aQnmvI6CKQ" role="3O5elw">
+          <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

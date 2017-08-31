@@ -4465,7 +4465,7 @@
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="nodeFactory" />
-      <property role="3TUv4t" value="false" />
+      <property role="3TUv4t" value="true" />
       <node concept="3Tmbuc" id="3azqxJjwcmr" role="1B3o_S" />
       <node concept="3uibUv" id="3azqxJjwcoL" role="1tU5fm">
         <ref role="3uigEE" node="3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
@@ -4508,6 +4508,7 @@
       <node concept="3Tm1VV" id="3azqxJjwcer" role="1B3o_S" />
       <node concept="37vLTG" id="3azqxJjwcfV" role="3clF46">
         <property role="TrG5h" value="nodeFactory" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="3azqxJjwcfU" role="1tU5fm">
           <ref role="3uigEE" node="3azqxJjwbc4" resolve="AVLTreeNodeFactory" />
           <node concept="16syzq" id="3azqxJjwcjT" role="11_B2D">
@@ -4536,6 +4537,7 @@
       </node>
       <node concept="37vLTG" id="3azqxJjwd7P" role="3clF46">
         <property role="TrG5h" value="value" />
+        <property role="3TUv4t" value="true" />
         <node concept="16syzq" id="3azqxJjwd7R" role="1tU5fm">
           <ref role="16sUi3" node="3RjqiPadK74" resolve="ValueType" />
         </node>
@@ -4589,6 +4591,7 @@
             <node concept="3cpWs8" id="3RjqiP9ZkDl" role="3cqZAp">
               <node concept="3cpWsn" id="3RjqiP9ZkDm" role="3cpWs9">
                 <property role="TrG5h" value="child" />
+                <property role="3TUv4t" value="true" />
                 <node concept="2OqwBi" id="3RjqiP9ZkDn" role="33vP2m">
                   <node concept="2OqwBi" id="3RjqiP9ZkDo" role="2Oq$k0">
                     <node concept="Xjq3P" id="3RjqiP9ZkDp" role="2Oq$k0" />
@@ -4625,6 +4628,7 @@
               <node concept="3cpWs8" id="5JGdS3N9V4L" role="3cqZAp">
                 <node concept="3cpWsn" id="5JGdS3N9V4M" role="3cpWs9">
                   <property role="TrG5h" value="result" />
+                  <property role="3TUv4t" value="true" />
                   <node concept="10Oyi0" id="5JGdS3N9V4n" role="1tU5fm" />
                   <node concept="2OqwBi" id="3RjqiPae5wN" role="33vP2m">
                     <node concept="37vLTw" id="3RjqiPae5ir" role="2Oq$k0">
@@ -4650,6 +4654,7 @@
                   <node concept="3cpWs8" id="5JGdS3Na92C" role="3cqZAp">
                     <node concept="3cpWsn" id="5JGdS3Na92D" role="3cpWs9">
                       <property role="TrG5h" value="newLeftChild" />
+                      <property role="3TUv4t" value="true" />
                       <node concept="3uibUv" id="5JGdS3Na92s" role="1tU5fm">
                         <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
                         <node concept="16syzq" id="5JGdS3Na92v" role="11_B2D">
@@ -4731,6 +4736,7 @@
                     <node concept="3cpWs8" id="5JGdS3NagiR" role="3cqZAp">
                       <node concept="3cpWsn" id="5JGdS3NagiS" role="3cpWs9">
                         <property role="TrG5h" value="newRightChild" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3uibUv" id="5JGdS3NagiT" role="1tU5fm">
                           <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
                           <node concept="16syzq" id="5JGdS3NagiU" role="11_B2D">
@@ -4791,6 +4797,7 @@
               <node concept="3cpWs8" id="5JGdS3NaZ8k" role="3cqZAp">
                 <node concept="3cpWsn" id="5JGdS3NaZ8n" role="3cpWs9">
                   <property role="TrG5h" value="factor" />
+                  <property role="3TUv4t" value="true" />
                   <node concept="10Oyi0" id="5JGdS3NaZ8i" role="1tU5fm" />
                   <node concept="2YIFZM" id="3RjqiPa1rgz" role="33vP2m">
                     <ref role="37wK5l" node="3RjqiPa18E4" resolve="getBalanceFactor" />
@@ -4852,6 +4859,7 @@
                         <node concept="3cpWs8" id="Atm5KsIAOK" role="3cqZAp">
                           <node concept="3cpWsn" id="Atm5KsIAOL" role="3cpWs9">
                             <property role="TrG5h" value="newLeftChild" />
+                            <property role="3TUv4t" value="true" />
                             <node concept="3uibUv" id="Atm5KsIAOM" role="1tU5fm">
                               <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
                               <node concept="16syzq" id="Atm5KsIAON" role="11_B2D">
@@ -4962,6 +4970,7 @@
                           <node concept="3cpWs8" id="Atm5KsIAPr" role="3cqZAp">
                             <node concept="3cpWsn" id="Atm5KsIAPs" role="3cpWs9">
                               <property role="TrG5h" value="newRightChild" />
+                              <property role="3TUv4t" value="true" />
                               <node concept="3uibUv" id="Atm5KsIAPt" role="1tU5fm">
                                 <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
                                 <node concept="16syzq" id="Atm5KsIAPu" role="11_B2D">
@@ -5021,6 +5030,7 @@
       <node concept="3Tmbuc" id="5JGdS3N9HO2" role="1B3o_S" />
       <node concept="37vLTG" id="5JGdS3N9JvC" role="3clF46">
         <property role="TrG5h" value="node" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="4uaOjKj1bAY" role="1tU5fm">
           <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="4uaOjKj1drq" role="11_B2D">
@@ -5030,6 +5040,7 @@
       </node>
       <node concept="37vLTG" id="5JGdS3N9Kwj" role="3clF46">
         <property role="TrG5h" value="value" />
+        <property role="3TUv4t" value="true" />
         <node concept="16syzq" id="5JGdS3N9LcQ" role="1tU5fm">
           <ref role="16sUi3" node="3RjqiPadK74" resolve="ValueType" />
         </node>
@@ -5049,6 +5060,7 @@
       <node concept="3Tm1VV" id="3azqxJjwd7W" role="1B3o_S" />
       <node concept="37vLTG" id="3azqxJjwd7Y" role="3clF46">
         <property role="TrG5h" value="value" />
+        <property role="3TUv4t" value="true" />
         <node concept="16syzq" id="3azqxJjwd80" role="1tU5fm">
           <ref role="16sUi3" node="3RjqiPadK74" resolve="ValueType" />
         </node>
@@ -5121,12 +5133,14 @@
       </node>
       <node concept="37vLTG" id="1fBCE0PZCWb" role="3clF46">
         <property role="TrG5h" value="value" />
+        <property role="3TUv4t" value="true" />
         <node concept="16syzq" id="1fBCE0PZCWh" role="1tU5fm">
           <ref role="16sUi3" node="3RjqiPadK74" resolve="ValueType" />
         </node>
       </node>
       <node concept="37vLTG" id="1fBCE0PZCWd" role="3clF46">
         <property role="TrG5h" value="mustBePresent" />
+        <property role="3TUv4t" value="true" />
         <node concept="10P_77" id="1fBCE0PZCWe" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="1fBCE0PZCWi" role="3clF47">
@@ -5227,6 +5241,7 @@
               <node concept="3cpWs8" id="Atm5Ksy$Go" role="3cqZAp">
                 <node concept="3cpWsn" id="Atm5Ksy$Gr" role="3cpWs9">
                   <property role="TrG5h" value="result" />
+                  <property role="3TUv4t" value="true" />
                   <node concept="10Oyi0" id="Atm5Ksy$Gm" role="1tU5fm" />
                   <node concept="2OqwBi" id="Atm5Ksy$R_" role="33vP2m">
                     <node concept="37vLTw" id="Atm5Ksy$J2" role="2Oq$k0">
@@ -5252,6 +5267,7 @@
                   <node concept="3cpWs8" id="Atm5KsyIwK" role="3cqZAp">
                     <node concept="3cpWsn" id="Atm5KsyIwL" role="3cpWs9">
                       <property role="TrG5h" value="newLeftChild" />
+                      <property role="3TUv4t" value="true" />
                       <node concept="3uibUv" id="Atm5KsyIwF" role="1tU5fm">
                         <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
                         <node concept="16syzq" id="Atm5KsyIwI" role="11_B2D">
@@ -5315,6 +5331,7 @@
                     <node concept="3cpWs8" id="Atm5KsyQ72" role="3cqZAp">
                       <node concept="3cpWsn" id="Atm5KsyQ73" role="3cpWs9">
                         <property role="TrG5h" value="newRightChild" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3uibUv" id="Atm5KsyQ74" role="1tU5fm">
                           <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
                           <node concept="16syzq" id="Atm5KsyQ75" role="11_B2D">
@@ -5495,6 +5512,26 @@
                                         <property role="3SKdUp" value="one child case" />
                                       </node>
                                     </node>
+                                    <node concept="3cpWs8" id="6FndTAAuBt9" role="3cqZAp">
+                                      <node concept="3cpWsn" id="6FndTAAuBta" role="3cpWs9">
+                                        <property role="TrG5h" value="originalParent" />
+                                        <property role="3TUv4t" value="true" />
+                                        <node concept="3uibUv" id="6FndTAAuBt5" role="1tU5fm">
+                                          <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
+                                          <node concept="16syzq" id="6FndTAAuBt8" role="11_B2D">
+                                            <ref role="16sUi3" node="3RjqiPadK74" resolve="ValueType" />
+                                          </node>
+                                        </node>
+                                        <node concept="2OqwBi" id="6FndTAAuBtb" role="33vP2m">
+                                          <node concept="37vLTw" id="6FndTAAuBtc" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="Atm5Ksyoo4" resolve="node" />
+                                          </node>
+                                          <node concept="liA8E" id="6FndTAAuBtd" role="2OqNvi">
+                                            <ref role="37wK5l" node="3azqxJjwlk2" resolve="getParent" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
                                     <node concept="3clFbF" id="Atm5Ksz6GY" role="3cqZAp">
                                       <node concept="37vLTI" id="Atm5Ksz6Vu" role="3clFbG">
                                         <node concept="37vLTw" id="Atm5Ksz76I" role="37vLTx">
@@ -5505,9 +5542,23 @@
                                         </node>
                                       </node>
                                     </node>
+                                    <node concept="3clFbF" id="6FndTAAuC6H" role="3cqZAp">
+                                      <node concept="2OqwBi" id="6FndTAAuCaX" role="3clFbG">
+                                        <node concept="37vLTw" id="6FndTAAuC6F" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="Atm5Ksyoo4" resolve="node" />
+                                        </node>
+                                        <node concept="liA8E" id="6FndTAAuCx_" role="2OqNvi">
+                                          <ref role="37wK5l" node="5JGdS3N9X3K" resolve="setParent" />
+                                          <node concept="37vLTw" id="6FndTAAuCDw" role="37wK5m">
+                                            <ref role="3cqZAo" node="6FndTAAuBta" resolve="originalParent" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
                                   </node>
                                 </node>
                               </node>
+                              <node concept="3clFbH" id="6FndTAAuxBS" role="3cqZAp" />
                             </node>
                             <node concept="22lmx$" id="Atm5KsyYTE" role="3clFbw">
                               <node concept="3clFbC" id="Atm5KsyZCz" role="3uHU7w">
@@ -5543,6 +5594,7 @@
                                 <node concept="3cpWs8" id="Atm5KszmyL" role="3cqZAp">
                                   <node concept="3cpWsn" id="Atm5KszmyM" role="3cpWs9">
                                     <property role="TrG5h" value="child" />
+                                    <property role="3TUv4t" value="true" />
                                     <node concept="1rXfSq" id="Atm5Kszn29" role="33vP2m">
                                       <ref role="37wK5l" node="Atm5KszfZu" resolve="getLeftMostLeaf" />
                                       <node concept="2OqwBi" id="Atm5KszngU" role="37wK5m">
@@ -5601,6 +5653,7 @@
                                 <node concept="3cpWs8" id="Atm5KszLsr" role="3cqZAp">
                                   <node concept="3cpWsn" id="Atm5KszLss" role="3cpWs9">
                                     <property role="TrG5h" value="newRightChild" />
+                                    <property role="3TUv4t" value="true" />
                                     <node concept="1rXfSq" id="Atm5KszLst" role="33vP2m">
                                       <ref role="37wK5l" node="Atm5Ksync2" resolve="remove" />
                                       <node concept="2OqwBi" id="Atm5KszLsu" role="37wK5m">
@@ -5685,6 +5738,7 @@
               <node concept="3cpWs8" id="Atm5KszWfM" role="3cqZAp">
                 <node concept="3cpWsn" id="Atm5KszWfN" role="3cpWs9">
                   <property role="TrG5h" value="factor" />
+                  <property role="3TUv4t" value="true" />
                   <node concept="10Oyi0" id="Atm5KszWfO" role="1tU5fm" />
                   <node concept="2YIFZM" id="Atm5KszWfP" role="33vP2m">
                     <ref role="37wK5l" node="3RjqiPa18E4" resolve="getBalanceFactor" />
@@ -5746,6 +5800,7 @@
                         <node concept="3cpWs8" id="Atm5Ks$gMv" role="3cqZAp">
                           <node concept="3cpWsn" id="Atm5Ks$gMw" role="3cpWs9">
                             <property role="TrG5h" value="newLeftChild" />
+                            <property role="3TUv4t" value="true" />
                             <node concept="3uibUv" id="Atm5Ks$gMx" role="1tU5fm">
                               <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
                               <node concept="16syzq" id="Atm5Ks$gMy" role="11_B2D">
@@ -5856,6 +5911,7 @@
                           <node concept="3cpWs8" id="Atm5Ks$wOC" role="3cqZAp">
                             <node concept="3cpWsn" id="Atm5Ks$wOD" role="3cpWs9">
                               <property role="TrG5h" value="newRightChild" />
+                              <property role="3TUv4t" value="true" />
                               <node concept="3uibUv" id="Atm5Ks$wOE" role="1tU5fm">
                                 <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
                                 <node concept="16syzq" id="Atm5Ks$wOF" role="11_B2D">
@@ -5921,6 +5977,7 @@
       </node>
       <node concept="37vLTG" id="Atm5Ksyoo4" role="3clF46">
         <property role="TrG5h" value="node" />
+        <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="4uaOjKj0Zmc" role="1tU5fm">
           <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="4uaOjKj0Zmd" role="11_B2D">
@@ -5930,16 +5987,19 @@
       </node>
       <node concept="37vLTG" id="Atm5KsypLk" role="3clF46">
         <property role="TrG5h" value="value" />
+        <property role="3TUv4t" value="true" />
         <node concept="16syzq" id="Atm5KsyqMk" role="1tU5fm">
           <ref role="16sUi3" node="3RjqiPadK74" resolve="ValueType" />
         </node>
       </node>
       <node concept="37vLTG" id="Atm5KszBKO" role="3clF46">
         <property role="TrG5h" value="removeAll" />
+        <property role="3TUv4t" value="true" />
         <node concept="10P_77" id="Atm5KszD9a" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="1fBCE0PZH8c" role="3clF46">
         <property role="TrG5h" value="mustBePresent" />
+        <property role="3TUv4t" value="true" />
         <node concept="10P_77" id="1fBCE0PZH8n" role="1tU5fm" />
       </node>
     </node>
@@ -6012,6 +6072,7 @@
       </node>
       <node concept="37vLTG" id="Atm5Kszh$y" role="3clF46">
         <property role="TrG5h" value="node" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="Atm5Kszh$x" role="1tU5fm">
           <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="Atm5KsziS4" role="11_B2D">
@@ -6031,6 +6092,7 @@
         <node concept="3cpWs8" id="3RjqiP9XBa4" role="3cqZAp">
           <node concept="3cpWsn" id="3RjqiP9XBa5" role="3cpWs9">
             <property role="TrG5h" value="right" />
+            <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="3RjqiP9XB9W" role="1tU5fm">
               <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
               <node concept="16syzq" id="3RjqiP9XB9Z" role="11_B2D">
@@ -6050,6 +6112,7 @@
         <node concept="3cpWs8" id="3RjqiP9XI2w" role="3cqZAp">
           <node concept="3cpWsn" id="3RjqiP9XI2x" role="3cpWs9">
             <property role="TrG5h" value="rightLeft" />
+            <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="3RjqiP9XI20" role="1tU5fm">
               <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
               <node concept="16syzq" id="3RjqiP9XI23" role="11_B2D">
@@ -6144,6 +6207,7 @@
       </node>
       <node concept="37vLTG" id="5JGdS3NbnS$" role="3clF46">
         <property role="TrG5h" value="node" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="5JGdS3NbnSz" role="1tU5fm">
           <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="5JGdS3NboWL" role="11_B2D">
@@ -6163,6 +6227,7 @@
         <node concept="3cpWs8" id="3RjqiP9YrWz" role="3cqZAp">
           <node concept="3cpWsn" id="3RjqiP9YrW$" role="3cpWs9">
             <property role="TrG5h" value="left" />
+            <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="3RjqiP9YrW_" role="1tU5fm">
               <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
               <node concept="16syzq" id="3RjqiP9YrWA" role="11_B2D">
@@ -6182,6 +6247,7 @@
         <node concept="3cpWs8" id="3RjqiP9YrWE" role="3cqZAp">
           <node concept="3cpWsn" id="3RjqiP9YrWF" role="3cpWs9">
             <property role="TrG5h" value="leftRight" />
+            <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="3RjqiP9YrWG" role="1tU5fm">
               <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
               <node concept="16syzq" id="3RjqiP9YrWH" role="11_B2D">
@@ -6276,6 +6342,7 @@
       </node>
       <node concept="37vLTG" id="5JGdS3NbqbV" role="3clF46">
         <property role="TrG5h" value="node" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="5JGdS3NbqbW" role="1tU5fm">
           <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="5JGdS3NbqbX" role="11_B2D">
@@ -6630,6 +6697,7 @@
       <node concept="3Tm1VV" id="3azqxJjwjyr" role="1B3o_S" />
       <node concept="37vLTG" id="3azqxJjwjDj" role="3clF46">
         <property role="TrG5h" value="value" />
+        <property role="3TUv4t" value="true" />
         <node concept="16syzq" id="3azqxJjwjDi" role="1tU5fm">
           <ref role="16sUi3" node="3RjqiPae7Gz" resolve="T" />
         </node>
@@ -6665,6 +6733,7 @@
       <node concept="3cqZAl" id="Atm5Kszssv" role="3clF45" />
       <node concept="37vLTG" id="Atm5Kszssw" role="3clF46">
         <property role="TrG5h" value="count" />
+        <property role="3TUv4t" value="true" />
         <node concept="10Oyi0" id="Atm5Kszssx" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="Atm5Kszssy" role="3clF47">
@@ -6793,6 +6862,7 @@
       <node concept="3cqZAl" id="Atm5KszxlR" role="3clF45" />
       <node concept="37vLTG" id="Atm5KszxlS" role="3clF46">
         <property role="TrG5h" value="value" />
+        <property role="3TUv4t" value="true" />
         <node concept="16syzq" id="Atm5KszxlU" role="1tU5fm">
           <ref role="16sUi3" node="3RjqiPae7Gz" resolve="T" />
         </node>
@@ -6942,6 +7012,7 @@
       </node>
       <node concept="37vLTG" id="3RjqiPa1jm7" role="3clF46">
         <property role="TrG5h" value="height" />
+        <property role="3TUv4t" value="true" />
         <node concept="10Oyi0" id="3RjqiPa1jm6" role="1tU5fm" />
       </node>
     </node>
@@ -6954,6 +7025,7 @@
       <node concept="3cqZAl" id="5JGdS3N9Y7t" role="3clF45" />
       <node concept="37vLTG" id="5JGdS3N9Y7u" role="3clF46">
         <property role="TrG5h" value="child" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="5JGdS3N9Y7v" role="1tU5fm">
           <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="5JGdS3N9Y7x" role="11_B2D">
@@ -6965,6 +7037,7 @@
         <node concept="3cpWs8" id="5JGdS3NaiLT" role="3cqZAp">
           <node concept="3cpWsn" id="5JGdS3NaiLU" role="3cpWs9">
             <property role="TrG5h" value="oldChild" />
+            <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="5JGdS3NaiLR" role="1tU5fm">
               <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
               <node concept="16syzq" id="5JGdS3Naj2m" role="11_B2D">
@@ -7069,6 +7142,7 @@
       <node concept="3cqZAl" id="5JGdS3N9Y7B" role="3clF45" />
       <node concept="37vLTG" id="5JGdS3N9Y7C" role="3clF46">
         <property role="TrG5h" value="child" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="5JGdS3N9Y7D" role="1tU5fm">
           <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="5JGdS3N9Y7F" role="11_B2D">
@@ -7080,6 +7154,7 @@
         <node concept="3cpWs8" id="5JGdS3NalPg" role="3cqZAp">
           <node concept="3cpWsn" id="5JGdS3NalPh" role="3cpWs9">
             <property role="TrG5h" value="oldChild" />
+            <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="5JGdS3NalPi" role="1tU5fm">
               <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
               <node concept="16syzq" id="5JGdS3NalPj" role="11_B2D">
@@ -7184,6 +7259,7 @@
       <node concept="3cqZAl" id="5JGdS3N9Y7L" role="3clF45" />
       <node concept="37vLTG" id="5JGdS3N9Y7M" role="3clF46">
         <property role="TrG5h" value="parent" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="5JGdS3N9Y7N" role="1tU5fm">
           <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="5JGdS3N9Y7P" role="11_B2D">
@@ -7195,6 +7271,7 @@
         <node concept="3cpWs8" id="5JGdS3Nanz$" role="3cqZAp">
           <node concept="3cpWsn" id="5JGdS3Nanz_" role="3cpWs9">
             <property role="TrG5h" value="oldParent" />
+            <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="5JGdS3NanzA" role="1tU5fm">
               <ref role="3uigEE" node="3azqxJjwbof" resolve="AVLTreeNode" />
               <node concept="16syzq" id="5JGdS3NanzB" role="11_B2D">
