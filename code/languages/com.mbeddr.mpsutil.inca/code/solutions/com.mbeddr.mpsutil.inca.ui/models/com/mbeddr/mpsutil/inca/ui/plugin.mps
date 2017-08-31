@@ -3327,6 +3327,43 @@
         </node>
         <node concept="3clFbH" id="5SFFWx82W$p" role="3cqZAp" />
         <node concept="3clFbJ" id="5SFFWx82Zr6" role="3cqZAp">
+          <node concept="3eNFk2" id="2oRZV_1Om4Q" role="3eNLev">
+            <node concept="3clFbC" id="2oRZV_1OoiX" role="3eO9$A">
+              <node concept="10Nm6u" id="2oRZV_1OowO" role="3uHU7w" />
+              <node concept="37vLTw" id="2oRZV_1OnEB" role="3uHU7B">
+                <ref role="3cqZAo" node="2oRZV_1ObWs" resolve="hintClass" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="2oRZV_1Om4S" role="3eOfB_">
+              <node concept="YS8fn" id="2oRZV_1OoFk" role="3cqZAp">
+                <node concept="2ShNRf" id="2oRZV_1OoFl" role="YScLw">
+                  <node concept="1pGfFk" id="2oRZV_1OoFm" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                    <node concept="3cpWs3" id="2oRZV_1OoFn" role="37wK5m">
+                      <node concept="Xl_RD" id="2oRZV_1OoFo" role="3uHU7w">
+                        <property role="Xl_RC" value="! (Probably not generated)" />
+                      </node>
+                      <node concept="3cpWs3" id="2oRZV_1OoFp" role="3uHU7B">
+                        <node concept="Xl_RD" id="2oRZV_1OoFq" role="3uHU7B">
+                          <property role="Xl_RC" value="The QuerySpecificationHints class is not available in " />
+                        </node>
+                        <node concept="2OqwBi" id="2oRZV_1OoFr" role="3uHU7w">
+                          <node concept="2JrnkZ" id="2oRZV_1OoFs" role="2Oq$k0">
+                            <node concept="37vLTw" id="2oRZV_1OoFt" role="2JrQYb">
+                              <ref role="3cqZAo" node="2oRZV_1O6Wr" resolve="model" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="2oRZV_1OoFu" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbS" id="5SFFWx82Zr8" role="3clFbx">
             <node concept="YS8fn" id="5SFFWx830x0" role="3cqZAp">
               <node concept="2ShNRf" id="5SFFWx830yM" role="YScLw">
@@ -3677,43 +3714,6 @@
                     <property role="3TUv4t" value="true" />
                     <node concept="3uibUv" id="4RsLK_FPizz" role="1tU5fm">
                       <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3eNFk2" id="2oRZV_1Om4Q" role="3eNLev">
-            <node concept="3clFbC" id="2oRZV_1OoiX" role="3eO9$A">
-              <node concept="10Nm6u" id="2oRZV_1OowO" role="3uHU7w" />
-              <node concept="37vLTw" id="2oRZV_1OnEB" role="3uHU7B">
-                <ref role="3cqZAo" node="2oRZV_1ObWs" resolve="hintClass" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="2oRZV_1Om4S" role="3eOfB_">
-              <node concept="YS8fn" id="2oRZV_1OoFk" role="3cqZAp">
-                <node concept="2ShNRf" id="2oRZV_1OoFl" role="YScLw">
-                  <node concept="1pGfFk" id="2oRZV_1OoFm" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                    <node concept="3cpWs3" id="2oRZV_1OoFn" role="37wK5m">
-                      <node concept="Xl_RD" id="2oRZV_1OoFo" role="3uHU7w">
-                        <property role="Xl_RC" value="! (Probably not generated)" />
-                      </node>
-                      <node concept="3cpWs3" id="2oRZV_1OoFp" role="3uHU7B">
-                        <node concept="Xl_RD" id="2oRZV_1OoFq" role="3uHU7B">
-                          <property role="Xl_RC" value="The QuerySpecificationHints class is not available in " />
-                        </node>
-                        <node concept="2OqwBi" id="2oRZV_1OoFr" role="3uHU7w">
-                          <node concept="2JrnkZ" id="2oRZV_1OoFs" role="2Oq$k0">
-                            <node concept="37vLTw" id="2oRZV_1OoFt" role="2JrQYb">
-                              <ref role="3cqZAo" node="2oRZV_1O6Wr" resolve="model" />
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="2oRZV_1OoFu" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
-                          </node>
-                        </node>
-                      </node>
                     </node>
                   </node>
                 </node>

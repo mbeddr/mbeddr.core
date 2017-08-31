@@ -2,8 +2,8 @@
 <model ref="r:2c8ba03c-3980-4a62-ad18-50b7c822a241(com.mbeddr.mpsutil.inca.core.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="-1" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -589,16 +589,6 @@
                 </node>
               </node>
               <node concept="1Wc70l" id="2RSm1Cz27ns" role="3eO9$A">
-                <node concept="2OqwBi" id="2RSm1Czrpyt" role="3uHU7w">
-                  <node concept="3dgs5T" id="2RSm1Cz27pj" role="2Oq$k0" />
-                  <node concept="liA8E" id="2RSm1CzrqLA" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
-                    <node concept="359W_D" id="2RSm1Cz27pk" role="37wK5m">
-                      <ref role="359W_E" to="hqsm:3VwoHXNAdvt" resolve="IPatternBody" />
-                      <ref role="359W_F" to="hqsm:3VwoHXNC_4v" resolve="contents" />
-                    </node>
-                  </node>
-                </node>
                 <node concept="1Wc70l" id="3bb8fvX1Z9G" role="3uHU7B">
                   <node concept="3y3z36" id="3bb8fvX21mW" role="3uHU7B">
                     <node concept="10Nm6u" id="3bb8fvX222l" role="3uHU7w" />
@@ -612,6 +602,16 @@
                       <node concept="chp4Y" id="2RSm1Cz27nz" role="cj9EA">
                         <ref role="cht4Q" to="hqsm:3VwoHXNAdvt" resolve="IPatternBody" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="2RSm1Czrpyt" role="3uHU7w">
+                  <node concept="3dgs5T" id="2RSm1Cz27pj" role="2Oq$k0" />
+                  <node concept="liA8E" id="2RSm1CzrqLA" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="359W_D" id="2RSm1Cz27pk" role="37wK5m">
+                      <ref role="359W_E" to="hqsm:3VwoHXNAdvt" resolve="IPatternBody" />
+                      <ref role="359W_F" to="hqsm:3VwoHXNC_4v" resolve="contents" />
                     </node>
                   </node>
                 </node>
