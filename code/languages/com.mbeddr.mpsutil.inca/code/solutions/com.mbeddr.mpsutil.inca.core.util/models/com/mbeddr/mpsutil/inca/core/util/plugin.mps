@@ -2851,14 +2851,14 @@
             <node concept="3rvAFt" id="3B59fJNb1lg" role="1tU5fm">
               <node concept="3Tqbb2" id="3B59fJNb1m7" role="3rvQeY" />
               <node concept="3Tqbb2" id="3B59fJNb1mH" role="3rvSg0">
-                <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+                <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
               </node>
             </node>
             <node concept="2ShNRf" id="3B59fJNb1yp" role="33vP2m">
               <node concept="3rGOSV" id="3B59fJNb1qc" role="2ShVmc">
                 <node concept="3Tqbb2" id="3B59fJNb1qd" role="3rHrn6" />
                 <node concept="3Tqbb2" id="3B59fJNb1qe" role="3rHtpV">
-                  <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+                  <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
                 </node>
               </node>
             </node>
@@ -2963,13 +2963,13 @@
       </node>
       <node concept="3Tm1VV" id="3B59fJNb0Sz" role="1B3o_S" />
       <node concept="3Tqbb2" id="3B59fJNb0Yl" role="3clF45">
-        <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+        <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
       </node>
       <node concept="37vLTG" id="3B59fJNb14y" role="3clF46">
         <property role="TrG5h" value="types" />
         <node concept="A3Dl8" id="3B59fJNb14w" role="1tU5fm">
           <node concept="3Tqbb2" id="3B59fJNb15a" role="A3Ik2">
-            <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+            <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
           </node>
         </node>
       </node>

@@ -433,7 +433,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3VwoHXNBVN9">
-    <property role="3GE5qa" value="content" />
+    <property role="3GE5qa" value="type.compileTime" />
     <ref role="1XX52x" to="hqsm:RjyNapTFLl" resolve="ConceptReferenceType" />
     <node concept="1iCGBv" id="6hXIxNuN5yp" role="2wV5jI">
       <ref role="1NtTu8" to="hqsm:6hXIxNuN5nr" resolve="concept" />
@@ -448,11 +448,11 @@
     </node>
   </node>
   <node concept="24kQdi" id="3VwoHXNC1LH">
-    <property role="3GE5qa" value="content" />
-    <ref role="1XX52x" to="hqsm:6VTlRjrCuGI" resolve="DataTypeReference" />
+    <property role="3GE5qa" value="type.compileTime" />
+    <ref role="1XX52x" to="hqsm:6VTlRjrCuGI" resolve="DataTypeReferenceType" />
     <node concept="3EZMnI" id="6VTlRjrD5V2" role="2wV5jI">
       <node concept="1iCGBv" id="6VTlRjrD5V3" role="3EZMnx">
-        <ref role="1NtTu8" to="hqsm:6VTlRjrCuOl" resolve="type" />
+        <ref role="1NtTu8" to="hqsm:6VTlRjrCuOl" resolve="dataTypeDeclaration" />
         <node concept="1sVBvm" id="6VTlRjrD5V4" role="1sWHZn">
           <node concept="3F0A7n" id="6VTlRjrD5V5" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -2681,7 +2681,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7a3nU34ZPCZ">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.compileTime" />
     <ref role="1XX52x" to="hqsm:7a3nU34ZPCK" resolve="JoinType" />
     <node concept="1iCGBv" id="7a3nU34ZPD1" role="2wV5jI">
       <ref role="1NtTu8" to="hqsm:7a3nU34ZPCO" resolve="joinTypeDef" />
@@ -2695,8 +2695,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="1UJP1A0VCI4">
-    <property role="3GE5qa" value="type" />
-    <ref role="1XX52x" to="hqsm:1UJP1A0V$Ki" resolve="JoinSNodeType" />
+    <property role="3GE5qa" value="type.runtime" />
+    <ref role="1XX52x" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
     <node concept="3EZMnI" id="1UJP1A0VCI9" role="2wV5jI">
       <node concept="l2Vlx" id="1UJP1A0VCIa" role="2iSdaV" />
       <node concept="3F0ifn" id="1UJP1A0VCI6" role="3EZMnx">
@@ -2830,6 +2830,19 @@
       </node>
     </node>
     <node concept="382kZG" id="5JQC2dmqeRq" role="lGtFl" />
+  </node>
+  <node concept="3p36aQ" id="14vNbVhZNjO">
+    <property role="3GE5qa" value="type.compileTime" />
+    <ref role="aqKnT" to="hqsm:14vNbVhZNjn" resolve="BodyIdentifierType" />
+  </node>
+  <node concept="24kQdi" id="7nnxZ$Ctjj7">
+    <property role="3GE5qa" value="type.compileTime" />
+    <ref role="1XX52x" to="hqsm:14vNbVhZNjn" resolve="BodyIdentifierType" />
+    <node concept="3F0ifn" id="7nnxZ$Ctjj9" role="2wV5jI">
+      <property role="3F0ifm" value="BodyIdentifier" />
+      <ref role="1k5W1q" to="3sc9:7tOfV2_EoPv" resolve="Type" />
+      <node concept="Vb9p2" id="7nnxZ$Cuqye" role="3F10Kt" />
+    </node>
   </node>
 </model>
 

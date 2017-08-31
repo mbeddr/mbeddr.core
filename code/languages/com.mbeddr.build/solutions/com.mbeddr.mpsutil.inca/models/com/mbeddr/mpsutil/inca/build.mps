@@ -749,6 +749,30 @@
             <ref role="3bR37D" to="al5i:5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5WCyHyJnGZl" role="3bR37C">
+          <node concept="3bR9La" id="5WCyHyJnGZm" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6_du9upXhYK" resolve="com.mbeddr.mpsutil.inca.data" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5WCyHyJnGZn" role="3bR37C">
+          <node concept="3bR9La" id="5WCyHyJnGZo" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5WCyHyJnGZp" role="3bR37C">
+          <node concept="3bR9La" id="5WCyHyJnGZq" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6_du9upXhrc" resolve="com.mbeddr.mpsutil.inca.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5WCyHyJnGZr" role="3bR37C">
+          <node concept="3bR9La" id="5WCyHyJnGZs" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6_du9upXhzN" resolve="com.mbeddr.mpsutil.inca.gp" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6_du9upXijF" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1535,12 +1559,6 @@
             <node concept="3bR9La" id="6_du9upXk0u" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="6_du9upXjw8" resolve="com.mbeddr.mpsutil.inca.fun#4530729936991344015" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="6_du9upXk0v" role="3bR37C">
-            <node concept="3bR9La" id="6_du9upXk0w" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="6_du9upXhzN" resolve="com.mbeddr.mpsutil.inca.gp" />
             </node>
           </node>
           <node concept="1SiIV0" id="6_du9upXk0x" role="3bR37C">

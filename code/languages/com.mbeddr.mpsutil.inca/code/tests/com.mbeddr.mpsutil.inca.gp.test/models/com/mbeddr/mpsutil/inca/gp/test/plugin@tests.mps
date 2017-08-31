@@ -195,7 +195,7 @@
       <concept id="996292992025672789" name="com.mbeddr.mpsutil.inca.core.structure.ConceptReferenceType" flags="ng" index="2kdjtB">
         <reference id="7241148409041409499" name="concept" index="2UGuZ7" />
       </concept>
-      <concept id="2211219148064574482" name="com.mbeddr.mpsutil.inca.core.structure.JoinSNodeType" flags="ig" index="2ugpwb">
+      <concept id="2211219148064574482" name="com.mbeddr.mpsutil.inca.core.structure.RuntimeJoinType" flags="ig" index="2ugpwb">
         <reference id="2211219148064590714" name="joinTypeDef" index="2uglXz" />
       </concept>
       <concept id="2281067221947980594" name="com.mbeddr.mpsutil.inca.core.structure.VariableReference" flags="ng" index="2vme6Z">
@@ -216,8 +216,8 @@
         <property id="266511528377428276" name="text" index="2MMnZA" />
         <reference id="266511528377428278" name="parameter" index="2MMnZ$" />
       </concept>
-      <concept id="7996518772785670958" name="com.mbeddr.mpsutil.inca.core.structure.DataTypeReference" flags="ng" index="2PmbLq">
-        <reference id="7996518772785671445" name="type" index="2PmbDx" />
+      <concept id="7996518772785670958" name="com.mbeddr.mpsutil.inca.core.structure.DataTypeReferenceType" flags="ng" index="2PmbLq">
+        <reference id="7996518772785671445" name="dataTypeDeclaration" index="2PmbDx" />
       </concept>
       <concept id="8251544086377355824" name="com.mbeddr.mpsutil.inca.core.structure.JoinType" flags="ng" index="2Qv0mg">
         <reference id="8251544086377355828" name="joinTypeDef" index="2Qv0mk" />

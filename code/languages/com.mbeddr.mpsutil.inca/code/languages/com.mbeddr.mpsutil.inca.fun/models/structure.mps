@@ -542,7 +542,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+      <ref role="20lvS9" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
     </node>
     <node concept="1TJgyj" id="7a3nU35cEJP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

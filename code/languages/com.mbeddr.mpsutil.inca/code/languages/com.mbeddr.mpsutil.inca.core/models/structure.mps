@@ -124,7 +124,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="IQ2ns" value="4530729936991365310" />
-      <ref role="20lvS9" node="6VTlRjrCuQt" resolve="IIncAType" />
+      <ref role="20lvS9" node="6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
     </node>
     <node concept="PrWs8" id="3VwoHXNAiyP" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -134,8 +134,8 @@
     </node>
   </node>
   <node concept="PlHQZ" id="6VTlRjrCuQt">
-    <property role="3GE5qa" value="content" />
-    <property role="TrG5h" value="IIncAType" />
+    <property role="3GE5qa" value="type.compileTime" />
+    <property role="TrG5h" value="ICompileTimeIncAType" />
     <property role="EcuMT" value="7996518772785671581" />
     <node concept="PrWs8" id="5xvu2kSi7EA" role="PrDN$">
       <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
@@ -225,7 +225,7 @@
   </node>
   <node concept="1TIwiD" id="RjyNapTFLl">
     <property role="TrG5h" value="ConceptReferenceType" />
-    <property role="3GE5qa" value="content" />
+    <property role="3GE5qa" value="type.compileTime" />
     <property role="EcuMT" value="996292992025672789" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6hXIxNuN5nr" role="1TKVEi">
@@ -236,29 +236,29 @@
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
     <node concept="PrWs8" id="3VwoHXNBLEE" role="PzmwI">
-      <ref role="PrY4T" node="6VTlRjrCuQt" resolve="IIncAType" />
+      <ref role="PrY4T" node="6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
     </node>
     <node concept="RPilO" id="5JQC2dmn0jR" role="lGtFl">
       <ref role="RPilL" node="6hXIxNuN5nr" resolve="concept" />
     </node>
   </node>
   <node concept="1TIwiD" id="6VTlRjrCuGI">
-    <property role="3GE5qa" value="content" />
-    <property role="TrG5h" value="DataTypeReference" />
+    <property role="3GE5qa" value="type.compileTime" />
+    <property role="TrG5h" value="DataTypeReferenceType" />
     <property role="EcuMT" value="7996518772785670958" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6VTlRjrCuOl" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="type" />
+      <property role="20kJfa" value="dataTypeDeclaration" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7996518772785671445" />
       <ref role="20lvS9" to="tpce:fKAxPRU" resolve="DataTypeDeclaration" />
     </node>
     <node concept="PrWs8" id="3VwoHXNC1L_" role="PzmwI">
-      <ref role="PrY4T" node="6VTlRjrCuQt" resolve="IIncAType" />
+      <ref role="PrY4T" node="6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
     </node>
     <node concept="RPilO" id="5JQC2dmn0jT" role="lGtFl">
-      <ref role="RPilL" node="6VTlRjrCuOl" resolve="type" />
+      <ref role="RPilL" node="6VTlRjrCuOl" resolve="dataTypeDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="3hiszdZDhip">
@@ -683,7 +683,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6VTlRjrCuQt" resolve="IIncAType" />
+      <ref role="20lvS9" node="6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
     </node>
     <node concept="PrWs8" id="1i65yRAUpWB" role="PzmwI">
       <ref role="PrY4T" node="3VwoHXNAdvs" resolve="IPatternBodyContent" />
@@ -1165,7 +1165,7 @@
   </node>
   <node concept="1TIwiD" id="7a3nU34ZPCK">
     <property role="EcuMT" value="8251544086377355824" />
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.compileTime" />
     <property role="TrG5h" value="JoinType" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7a3nU34ZPCO" role="1TKVEi">
@@ -1176,7 +1176,7 @@
       <ref role="20lvS9" node="7a3nU354JVn" resolve="IJoinTypeDef" />
     </node>
     <node concept="PrWs8" id="7a3nU34ZPCL" role="PzmwI">
-      <ref role="PrY4T" node="6VTlRjrCuQt" resolve="IIncAType" />
+      <ref role="PrY4T" node="6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
     </node>
   </node>
   <node concept="PlHQZ" id="7a3nU351sZC">
@@ -1202,13 +1202,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="types" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6VTlRjrCuQt" resolve="IIncAType" />
+      <ref role="20lvS9" node="6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
     </node>
   </node>
   <node concept="1TIwiD" id="1UJP1A0V$Ki">
     <property role="EcuMT" value="2211219148064574482" />
-    <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="JoinSNodeType" />
+    <property role="3GE5qa" value="type.runtime" />
+    <property role="TrG5h" value="RuntimeJoinType" />
     <property role="34LRSv" value="join" />
     <property role="R4oN_" value="join type" />
     <ref role="1TJDcQ" to="tp25:gzTqbfa" resolve="SNodeType" />
@@ -1218,6 +1218,9 @@
       <property role="20kJfa" value="joinTypeDef" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7a3nU354JVn" resolve="IJoinTypeDef" />
+    </node>
+    <node concept="PrWs8" id="aQnmvHEmTJ" role="PzmwI">
+      <ref role="PrY4T" node="aQnmvHEm_S" resolve="IRuntimeIncAType" />
     </node>
   </node>
   <node concept="1TIwiD" id="6ZsaHh09WeF">
@@ -1234,7 +1237,24 @@
     <property role="3GE5qa" value="content" />
     <property role="TrG5h" value="ISynthesisedDataType" />
     <node concept="PrWs8" id="ADbz7un29P" role="PrDN$">
-      <ref role="PrY4T" node="6VTlRjrCuQt" resolve="IIncAType" />
+      <ref role="PrY4T" node="6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="aQnmvHEm_S">
+    <property role="EcuMT" value="195446334787512696" />
+    <property role="3GE5qa" value="type.runtime" />
+    <property role="TrG5h" value="IRuntimeIncAType" />
+    <node concept="PrWs8" id="aQnmvHEm_T" role="PrDN$">
+      <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="14vNbVhZNjn">
+    <property role="EcuMT" value="1233929942861821143" />
+    <property role="3GE5qa" value="type.compileTime" />
+    <property role="TrG5h" value="BodyIdentifierType" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="14vNbVhZNjo" role="PzmwI">
+      <ref role="PrY4T" node="6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
     </node>
   </node>
 </model>

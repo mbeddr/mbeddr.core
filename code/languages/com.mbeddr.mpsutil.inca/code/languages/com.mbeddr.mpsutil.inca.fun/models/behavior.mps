@@ -1286,7 +1286,7 @@
                             <property role="TrG5h" value="type" />
                             <property role="3TUv4t" value="true" />
                             <node concept="3Tqbb2" id="2tNwKiVArel" role="1tU5fm">
-                              <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+                              <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
                             </node>
                             <node concept="2OqwBi" id="2tNwKiVArem" role="33vP2m">
                               <node concept="2OqwBi" id="2tNwKiVAren" role="2Oq$k0">
@@ -5851,6 +5851,54 @@
     </node>
     <node concept="13hLZK" id="InJBIGIrpe" role="13h7CW">
       <node concept="3clFbS" id="InJBIGIrpf" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="aQnmvI6CKu">
+    <property role="3GE5qa" value="expression" />
+    <ref role="13h7C2" to="ebqt:52HBLukRnnV" resolve="ITuple" />
+    <node concept="13hLZK" id="aQnmvI6CKv" role="13h7CW">
+      <node concept="3clFbS" id="aQnmvI6CKw" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="aQnmvI6CKD" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTypeConstraintsFor" />
+      <ref role="13i0hy" to="gcg1:1i65yRATv6S" resolve="getTypeConstraintsFor" />
+      <node concept="3Tm1VV" id="aQnmvI6CKE" role="1B3o_S" />
+      <node concept="3clFbS" id="aQnmvI6CKM" role="3clF47">
+        <node concept="3cpWs6" id="aQnmvI6CQy" role="3cqZAp">
+          <node concept="2OqwBi" id="aQnmvI6DHo" role="3cqZAk">
+            <node concept="2OqwBi" id="aQnmvI6D4p" role="2Oq$k0">
+              <node concept="13iPFW" id="aQnmvI6CQT" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="aQnmvI6Dwt" role="2OqNvi">
+                <node concept="1xMEDy" id="aQnmvI6Dwv" role="1xVPHs">
+                  <node concept="chp4Y" id="aQnmvI79eC" role="ri$Ld">
+                    <ref role="cht4Q" to="ebqt:52HBLukNl0O" resolve="IBinary" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="aQnmvI6E07" role="2OqNvi">
+              <ref role="37wK5l" to="gcg1:1i65yRATv6S" resolve="getTypeConstraintsFor" />
+              <node concept="37vLTw" id="aQnmvI6E4u" role="37wK5m">
+                <ref role="3cqZAo" node="aQnmvI6CKN" resolve="variable" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="aQnmvI6CKN" role="3clF46">
+        <property role="TrG5h" value="variable" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tqbb2" id="aQnmvI6CKO" role="1tU5fm">
+          <ref role="ehGHo" to="hqsm:3VwoHXNAdmi" resolve="IVariable" />
+        </node>
+      </node>
+      <node concept="3vKaQO" id="aQnmvI6CKP" role="3clF45">
+        <node concept="3Tqbb2" id="aQnmvI6CKQ" role="3O5elw">
+          <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
