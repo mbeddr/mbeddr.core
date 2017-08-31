@@ -705,7 +705,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="1qP1$ZSSYtk" role="3acgRq">
-      <ref role="30HIoZ" to="hqsm:1UJP1A0V$Ki" resolve="JoinSNodeType" />
+      <ref role="30HIoZ" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
       <node concept="j$656" id="1qP1$ZSSYNt" role="1lVwrX">
         <ref role="v9R2y" to="cj1d:1qP1$ZSSW8S" resolve="template_RuntimeJoinType" />
       </node>
@@ -4136,7 +4136,7 @@
                     <property role="TrG5h" value="types" />
                     <node concept="A3Dl8" id="5xvu2kSi3zj" role="1tU5fm">
                       <node concept="3Tqbb2" id="5xvu2kSi3zm" role="A3Ik2">
-                        <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+                        <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="5xvu2kSi3BD" role="33vP2m">
@@ -4178,7 +4178,7 @@
                   <node concept="3cpWsn" id="3B59fJNbbNx" role="3cpWs9">
                     <property role="TrG5h" value="mostSpecific" />
                     <node concept="3Tqbb2" id="3B59fJNbbNs" role="1tU5fm">
-                      <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+                      <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
                     </node>
                     <node concept="2YIFZM" id="3B59fJNbcOK" role="33vP2m">
                       <ref role="37wK5l" to="zt8v:3B59fJNb0YM" resolve="getMostSpecificIncAType" />

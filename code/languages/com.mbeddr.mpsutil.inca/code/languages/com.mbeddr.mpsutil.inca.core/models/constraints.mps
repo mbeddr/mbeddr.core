@@ -2112,10 +2112,10 @@
     </node>
   </node>
   <node concept="1M2fIO" id="6SzVr$NUhf0">
-    <property role="3GE5qa" value="content" />
-    <ref role="1M2myG" to="hqsm:6VTlRjrCuGI" resolve="DataTypeReference" />
+    <property role="3GE5qa" value="type.compileTime" />
+    <ref role="1M2myG" to="hqsm:6VTlRjrCuGI" resolve="DataTypeReferenceType" />
     <node concept="1N5Pfh" id="6SzVr$NUhf1" role="1Mr941">
-      <ref role="1N5Vy1" to="hqsm:6VTlRjrCuOl" resolve="type" />
+      <ref role="1N5Vy1" to="hqsm:6VTlRjrCuOl" resolve="dataTypeDeclaration" />
       <node concept="3dgokm" id="6SzVr$NUhEG" role="1N6uqs">
         <node concept="3clFbS" id="2RSm1Cz27iD" role="2VODD2">
           <node concept="3cpWs6" id="2RSm1CzsV9Q" role="3cqZAp">
@@ -2135,7 +2135,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="6SzVr$NUsGi">
-    <property role="3GE5qa" value="content" />
+    <property role="3GE5qa" value="type.compileTime" />
     <ref role="1M2myG" to="hqsm:RjyNapTFLl" resolve="ConceptReferenceType" />
     <node concept="1N5Pfh" id="6SzVr$NUsGj" role="1Mr941">
       <ref role="1N5Vy1" to="hqsm:6hXIxNuN5nr" resolve="concept" />
@@ -2473,7 +2473,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7a3nU354yh4">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.compileTime" />
     <ref role="1M2myG" to="hqsm:7a3nU34ZPCK" resolve="JoinType" />
     <node concept="1N5Pfh" id="7a3nU354yh5" role="1Mr941">
       <ref role="1N5Vy1" to="hqsm:7a3nU34ZPCO" resolve="joinTypeDef" />
@@ -2600,7 +2600,7 @@
                     <node concept="2DD5aU" id="2RSm1Cz26Op" role="2Oq$k0" />
                     <node concept="3O6GUB" id="2RSm1Cz26Oa" role="2OqNvi">
                       <node concept="chp4Y" id="2RSm1Cz26Ob" role="3QVz_e">
-                        <ref role="cht4Q" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+                        <ref role="cht4Q" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
                       </node>
                     </node>
                   </node>

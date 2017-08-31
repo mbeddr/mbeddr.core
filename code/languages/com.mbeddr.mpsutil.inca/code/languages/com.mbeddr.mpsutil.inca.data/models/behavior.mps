@@ -286,7 +286,7 @@
           <node concept="2ShNRf" id="2aWpJMnb0oH" role="3cqZAk">
             <node concept="2HTt$P" id="2aWpJMnb1F_" role="2ShVmc">
               <node concept="3Tqbb2" id="2aWpJMnb1Kc" role="2HTBi0">
-                <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+                <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
               </node>
               <node concept="13iPFW" id="2aWpJMnb1T6" role="2HTEbv" />
             </node>
@@ -295,7 +295,7 @@
       </node>
       <node concept="A3Dl8" id="2aWpJMnb26D" role="3clF45">
         <node concept="3Tqbb2" id="2aWpJMnaZCy" role="A3Ik2">
-          <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+          <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
         </node>
       </node>
     </node>

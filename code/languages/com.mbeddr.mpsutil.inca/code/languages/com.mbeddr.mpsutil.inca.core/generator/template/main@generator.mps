@@ -3935,7 +3935,7 @@
     </node>
     <node concept="3aamgX" id="8hZAV__E3o" role="3aUrZf">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="hqsm:6VTlRjrCuGI" resolve="DataTypeReference" />
+      <ref role="30HIoZ" to="hqsm:6VTlRjrCuGI" resolve="DataTypeReferenceType" />
       <node concept="1Koe21" id="8hZAV__E5g" role="1lVwrX">
         <node concept="2ShNRf" id="8hZAV__E5o" role="1Koe22">
           <node concept="1pGfFk" id="8hZAV__E5p" role="2ShVmc">
@@ -3955,7 +3955,7 @@
                             <node concept="2OqwBi" id="8hZAV__I_E" role="2Oq$k0">
                               <node concept="30H73N" id="8hZAV__Inh" role="2Oq$k0" />
                               <node concept="3TrEf2" id="8hZAV__MAK" role="2OqNvi">
-                                <ref role="3Tt5mk" to="hqsm:6VTlRjrCuOl" resolve="type" />
+                                <ref role="3Tt5mk" to="hqsm:6VTlRjrCuOl" resolve="dataTypeDeclaration" />
                               </node>
                             </node>
                             <node concept="2qgKlT" id="8hZAV__NfP" role="2OqNvi">
@@ -3971,6 +3971,17 @@
             </node>
           </node>
           <node concept="raruj" id="8hZAV__E5y" role="lGtFl" />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="14vNbVhZQ4l" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="hqsm:14vNbVhZNjn" resolve="BodyIdentifierType" />
+      <node concept="1Koe21" id="14vNbVhZQ4m" role="1lVwrX">
+        <node concept="10M0yZ" id="14vNbVhZRKw" role="1Koe22">
+          <ref role="3cqZAo" to="pzen:14vNbVhZeWv" resolve="INSTANCE" />
+          <ref role="1PxDUh" to="pzen:14vNbVhYN2s" resolve="BodyIdentifierKey" />
+          <node concept="raruj" id="14vNbVhZSlq" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -4269,9 +4280,9 @@
     </node>
   </node>
   <node concept="13MO4I" id="1qP1$ZSSW8S">
-    <property role="3GE5qa" value="templates" />
+    <property role="3GE5qa" value="type.runtime" />
     <property role="TrG5h" value="template_RuntimeJoinType" />
-    <ref role="3gUMe" to="hqsm:1UJP1A0V$Ki" resolve="JoinSNodeType" />
+    <ref role="3gUMe" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
     <node concept="3Tqbb2" id="1qP1$ZSSWaJ" role="13RCb5">
       <node concept="raruj" id="1qP1$ZSSWaL" role="lGtFl" />
     </node>

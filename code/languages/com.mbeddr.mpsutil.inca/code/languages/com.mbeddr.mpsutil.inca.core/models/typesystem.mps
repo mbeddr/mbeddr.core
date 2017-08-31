@@ -3317,7 +3317,7 @@
     </node>
   </node>
   <node concept="35pCF_" id="5xvu2kSKy$u">
-    <property role="3GE5qa" value="content" />
+    <property role="3GE5qa" value="type.compileTime" />
     <property role="TrG5h" value="ConceptReferenceType_SubTyping" />
     <node concept="1YaCAy" id="5xvu2kSKy$T" role="35pZ6h">
       <property role="TrG5h" value="sup" />
@@ -3361,7 +3361,7 @@
     <property role="TrG5h" value="JoinSNodeType_SubTyping" />
     <node concept="1YaCAy" id="xoAMGDx$z2" role="35pZ6h">
       <property role="TrG5h" value="sup" />
-      <ref role="1YaFvo" to="hqsm:1UJP1A0V$Ki" resolve="JoinSNodeType" />
+      <ref role="1YaFvo" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
     </node>
     <node concept="3clFbS" id="xoAMGDx$xQ" role="2sgrp5" />
     <node concept="1YaCAy" id="xoAMGDx$y8" role="1YuTPh">
@@ -3421,7 +3421,7 @@
     </node>
   </node>
   <node concept="35pCF_" id="1UJP1A0W2Q7">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.runtime" />
     <property role="TrG5h" value="JoinSNodeType_SuperTyping" />
     <node concept="1YaCAy" id="1UJP1A0W2Q8" role="35pZ6h">
       <property role="TrG5h" value="sup" />
@@ -3430,7 +3430,7 @@
     <node concept="3clFbS" id="1UJP1A0W2Q9" role="2sgrp5" />
     <node concept="1YaCAy" id="1UJP1A0W2Qa" role="1YuTPh">
       <property role="TrG5h" value="sub" />
-      <ref role="1YaFvo" to="hqsm:1UJP1A0V$Ki" resolve="JoinSNodeType" />
+      <ref role="1YaFvo" to="hqsm:1UJP1A0V$Ki" resolve="RuntimeJoinType" />
     </node>
     <node concept="1xSnZT" id="1UJP1A0W2Qb" role="1xSnZW">
       <node concept="3clFbS" id="1UJP1A0W2Qc" role="2VODD2">
@@ -3494,7 +3494,7 @@
           <property role="3TUv4t" value="true" />
           <node concept="A3Dl8" id="1IUWmS1ohsH" role="1tU5fm">
             <node concept="3Tqbb2" id="1IUWmS1ohsK" role="A3Ik2">
-              <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="IIncAType" />
+              <ref role="ehGHo" to="hqsm:6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
             </node>
           </node>
           <node concept="2OqwBi" id="1IUWmS1ohsT" role="33vP2m">
