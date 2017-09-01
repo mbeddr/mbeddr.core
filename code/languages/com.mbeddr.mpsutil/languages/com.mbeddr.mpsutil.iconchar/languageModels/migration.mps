@@ -12,6 +12,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="1oap" ref="r:03d44d4c-3d65-461c-9085-0f48e9569e59(jetbrains.mps.lang.resources.structure)" />
+    <import index="dkm4" ref="r:b921e97e-c79b-49a1-bb6f-d836bc131175(jetbrains.mps.lang.resources.actions)" />
     <import index="slm6" ref="90746344-04fd-4286-97d5-b46ae6a81709/r:52a3d974-bd4f-4651-ba6e-a2de5e336d95(jetbrains.mps.lang.migration/jetbrains.mps.lang.migration.methods)" implicit="true" />
     <import index="i0j2" ref="r:ac910013-4472-4dc2-a9a9-59a46aac5d5b(com.mbeddr.mpsutil.iconchar.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -30,6 +31,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -262,6 +266,16 @@
                         <node concept="2pJPEk" id="72HfR5Q9S5u" role="33vP2m">
                           <node concept="2pJPED" id="72HfR5Q9S7n" role="2pJPEn">
                             <ref role="2pJxaS" to="1oap:2p1v3tObwP5" resolve="TextIcon" />
+                            <node concept="2pJxcG" id="72HfR5QckWT" role="2pJxcM">
+                              <ref role="2pJxcJ" to="1oap:1brHjIQHw0T" resolve="iconId" />
+                              <node concept="2YIFZM" id="72HfR5Qcl5S" role="2pJxcZ">
+                                <ref role="37wK5l" to="dkm4:73kiaCI7Sw4" resolve="createId" />
+                                <ref role="1Pybhc" to="dkm4:73kiaCI7Su6" resolve="IconHelper" />
+                                <node concept="37vLTw" id="72HfR5Qcl7p" role="37wK5m">
+                                  <ref role="3cqZAo" node="72HfR5Q9_H6" resolve="mdl" />
+                                </node>
+                              </node>
+                            </node>
                             <node concept="2pIpSj" id="72HfR5Q9S88" role="2pJxcM">
                               <ref role="2pIpSl" to="1oap:2p1v3tObwTA" resolve="layers" />
                               <node concept="2pJPED" id="72HfR5Q9S9H" role="2pJxcZ">
