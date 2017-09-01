@@ -27,6 +27,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -137,6 +138,9 @@
       <node concept="trNpa" id="5GEPw8vxTYY" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
+    </node>
+    <node concept="PrWs8" id="6OO5J4wxqcf" role="PzmwI">
+      <ref role="PrY4T" node="6OO5J4wxqcd" resolve="IConditionalAnnotation" />
     </node>
   </node>
   <node concept="1TIwiD" id="2h6lNbWo01H">
@@ -263,6 +267,9 @@
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
     </node>
+    <node concept="PrWs8" id="6OO5J4wxqcg" role="PzmwI">
+      <ref role="PrY4T" node="6OO5J4wxqcd" resolve="IConditionalAnnotation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1wLq5fNouGZ">
     <property role="3GE5qa" value="programannotations" />
@@ -283,6 +290,9 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="1743289240543947593" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="PrWs8" id="6OO5J4wxqch" role="PzmwI">
+      <ref role="PrY4T" node="6OO5J4wxqcd" resolve="IConditionalAnnotation" />
     </node>
   </node>
   <node concept="1TIwiD" id="5DBke2vwmTj">
@@ -343,6 +353,9 @@
         <ref role="trN6q" to="tpck:h0TrEE$" resolve="INamedConcept" />
       </node>
     </node>
+    <node concept="PrWs8" id="6OO5J4wxqce" role="PzmwI">
+      <ref role="PrY4T" node="6OO5J4wxqcd" resolve="IConditionalAnnotation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="10hF$bDHk9">
     <property role="3GE5qa" value="programannotations" />
@@ -365,6 +378,16 @@
     <node concept="PrWs8" id="1HBb4ql6EAg" role="PzmwI">
       <ref role="PrY4T" to="qqyh:5USXI9KzkZI" resolve="IMapping" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="6OO5J4wolUA">
+    <property role="EcuMT" value="7868939673809280678" />
+    <property role="3GE5qa" value="programannotations" />
+    <property role="TrG5h" value="IMayNotBeConditionallyReplaced" />
+  </node>
+  <node concept="PlHQZ" id="6OO5J4wxqcd">
+    <property role="EcuMT" value="7868939673811657485" />
+    <property role="3GE5qa" value="programannotations" />
+    <property role="TrG5h" value="IConditionalAnnotation" />
   </node>
 </model>
 
