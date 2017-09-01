@@ -42,6 +42,7 @@
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
     <import index="tqvn" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.tempmodel(MPS.Core/)" />
     <import index="2gg1" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors(MPS.Core/)" />
+    <import index="d6hs" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors.item(MPS.Core/)" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
@@ -4366,8 +4367,8 @@
                                   <node concept="37vLTG" id="6B7erwvEDh_" role="3clF46">
                                     <property role="TrG5h" value="problem" />
                                     <property role="3TUv4t" value="false" />
-                                    <node concept="3uibUv" id="6B7erwvEDhA" role="1tU5fm">
-                                      <ref role="3uigEE" to="6if8:~ValidationProblem" resolve="ValidationProblem" />
+                                    <node concept="3uibUv" id="4qRZ55FmUQd" role="1tU5fm">
+                                      <ref role="3uigEE" to="d6hs:~ModelReportItem" resolve="ModelReportItem" />
                                     </node>
                                   </node>
                                   <node concept="3clFbS" id="6B7erwvEDhB" role="3clF47">
@@ -4378,7 +4379,7 @@
                                             <ref role="3cqZAo" node="6B7erwvEDh_" resolve="problem" />
                                           </node>
                                           <node concept="liA8E" id="6B7erwvEJtK" role="2OqNvi">
-                                            <ref role="37wK5l" to="6if8:~ValidationProblem.getSeverity():jetbrains.mps.errors.MessageStatus" resolve="getSeverity" />
+                                            <ref role="37wK5l" to="d6hs:~ReportItem.getSeverity():jetbrains.mps.errors.MessageStatus" resolve="getSeverity" />
                                           </node>
                                         </node>
                                         <node concept="Rm8GO" id="eN_bhYMG1r" role="3uHU7w">
@@ -4400,7 +4401,7 @@
                                                     <ref role="3cqZAo" node="6B7erwvEDh_" resolve="problem" />
                                                   </node>
                                                   <node concept="liA8E" id="6B7erwvEJui" role="2OqNvi">
-                                                    <ref role="37wK5l" to="6if8:~ValidationProblem.getMessage():java.lang.String" resolve="getMessage" />
+                                                    <ref role="37wK5l" to="d6hs:~ReportItem.getMessage():java.lang.String" resolve="getMessage" />
                                                   </node>
                                                 </node>
                                               </node>
@@ -4421,7 +4422,7 @@
                                                   <ref role="3cqZAo" node="6B7erwvEDh_" resolve="problem" />
                                                 </node>
                                                 <node concept="liA8E" id="6B7erwvEJuE" role="2OqNvi">
-                                                  <ref role="37wK5l" to="6if8:~ValidationProblem.getMessage():java.lang.String" resolve="getMessage" />
+                                                  <ref role="37wK5l" to="d6hs:~ReportItem.getMessage():java.lang.String" resolve="getMessage" />
                                                 </node>
                                               </node>
                                             </node>
@@ -4438,8 +4439,8 @@
                                   <node concept="3Tm1VV" id="6B7erwvEDhS" role="1B3o_S" />
                                   <node concept="10P_77" id="6B7erwvEDhT" role="3clF45" />
                                 </node>
-                                <node concept="3uibUv" id="6B7erwvEDhU" role="2Ghqu4">
-                                  <ref role="3uigEE" to="6if8:~ValidationProblem" resolve="ValidationProblem" />
+                                <node concept="3uibUv" id="4qRZ55FmUBI" role="2Ghqu4">
+                                  <ref role="3uigEE" to="d6hs:~ModelReportItem" resolve="ModelReportItem" />
                                 </node>
                               </node>
                             </node>
@@ -4575,8 +4576,8 @@
                           <property role="TrG5h" value="collector" />
                           <node concept="3uibUv" id="6B7erwvEDiz" role="1tU5fm">
                             <ref role="3uigEE" to="6if8:~MessageCollectProcessor" resolve="MessageCollectProcessor" />
-                            <node concept="3uibUv" id="eN_bhYMKG7" role="11_B2D">
-                              <ref role="3uigEE" to="6if8:~ValidationProblem" resolve="ValidationProblem" />
+                            <node concept="3uibUv" id="4qRZ55FT$58" role="11_B2D">
+                              <ref role="3uigEE" to="d6hs:~ModuleReportItem" resolve="ModuleReportItem" />
                             </node>
                           </node>
                           <node concept="2ShNRf" id="6B7erwvEJv2" role="33vP2m">
@@ -4584,6 +4585,9 @@
                               <ref role="37wK5l" to="6if8:~MessageCollectProcessor.&lt;init&gt;(boolean)" resolve="MessageCollectProcessor" />
                               <node concept="3clFbT" id="6B7erwvEDi_" role="37wK5m">
                                 <property role="3clFbU" value="true" />
+                              </node>
+                              <node concept="3uibUv" id="4qRZ55FTBt3" role="1pMfVU">
+                                <ref role="3uigEE" to="d6hs:~ModuleReportItem" resolve="ModuleReportItem" />
                               </node>
                             </node>
                           </node>
