@@ -14,6 +14,7 @@
     <import index="hqsm" ref="r:aa4c3470-43ab-4dad-b73e-20da0ee43be1(com.mbeddr.mpsutil.inca.core.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="3sc9" ref="r:7b49db30-2b41-4747-a24c-d8b355719ffd(com.mbeddr.mpsutil.inca.styles.editor)" />
+    <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
   </imports>
@@ -195,6 +196,10 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
+        <child id="1081256993305" name="classType" index="2ZW6by" />
+        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -235,6 +240,9 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -760,8 +768,47 @@
   <node concept="24kQdi" id="5xy6TexD5fK">
     <property role="3GE5qa" value="misc" />
     <ref role="1XX52x" to="ebqt:5xy6TexD5fE" resolve="PatternFunctionAnonymousParameter" />
-    <node concept="3F1sOY" id="5xy6TexD5fM" role="2wV5jI">
-      <ref role="1NtTu8" to="hqsm:3VwoHXNAiyY" resolve="type" />
+    <node concept="3EZMnI" id="2XoPn7od1rf" role="2wV5jI">
+      <node concept="l2Vlx" id="2XoPn7od1rg" role="2iSdaV" />
+      <node concept="3F0A7n" id="2XoPn7od1G1" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="pkWqt" id="2XoPn7od1G9" role="pqm2j">
+          <node concept="3clFbS" id="2XoPn7od1Ga" role="2VODD2">
+            <node concept="3cpWs6" id="2XoPn7od3J7" role="3cqZAp">
+              <node concept="2ZW3vV" id="2XoPn7od3J8" role="3cqZAk">
+                <node concept="3uibUv" id="2XoPn7od3J9" role="2ZW6by">
+                  <ref role="3uigEE" to="g3l6:~TransientSModel" resolve="TransientSModel" />
+                </node>
+                <node concept="2OqwBi" id="2XoPn7od3Ja" role="2ZW6bz">
+                  <node concept="pncrf" id="2XoPn7od3Jb" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="2XoPn7od3Jc" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2XoPn7od1r_" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="pkWqt" id="2XoPn7od3XS" role="pqm2j">
+          <node concept="3clFbS" id="2XoPn7od3XT" role="2VODD2">
+            <node concept="3cpWs6" id="2XoPn7od3Y1" role="3cqZAp">
+              <node concept="2ZW3vV" id="2XoPn7od3Y2" role="3cqZAk">
+                <node concept="3uibUv" id="2XoPn7od3Y3" role="2ZW6by">
+                  <ref role="3uigEE" to="g3l6:~TransientSModel" resolve="TransientSModel" />
+                </node>
+                <node concept="2OqwBi" id="2XoPn7od3Y4" role="2ZW6bz">
+                  <node concept="pncrf" id="2XoPn7od3Y5" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="2XoPn7od3Y6" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5xy6TexD5fM" role="3EZMnx">
+        <ref role="1NtTu8" to="hqsm:3VwoHXNAiyY" resolve="type" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="5xy6TexDeiU">
