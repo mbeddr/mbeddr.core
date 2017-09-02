@@ -45,12 +45,12 @@
     <import index="gg94" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.rete.util(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="wduz" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.matchers.backend(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="fen0" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.rete.aggregation(com.mbeddr.mpsutil.inca.core.runtime/)" />
-    <import index="cqwv" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.base.itc.graphimpl(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="cqwv" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.base.itc.graphimpl(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="soy4" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.rete.index(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="gtp9" ref="r:007d0985-20e2-4d70-80f1-d0de1aff1076(com.mbeddr.mpsutil.common.graph)" />
-    <import index="69r6" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.rete.eval(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="69r6" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.rete.eval(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="gcg1" ref="r:d6f14cc5-a2a7-4aaf-8f86-e35059edbf3b(com.mbeddr.mpsutil.inca.core.behavior)" implicit="true" />
   </imports>
   <registry>
