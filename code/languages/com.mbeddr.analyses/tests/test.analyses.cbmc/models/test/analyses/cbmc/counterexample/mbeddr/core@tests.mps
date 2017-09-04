@@ -3557,7 +3557,7 @@
           </node>
           <node concept="38rIoz" id="7MMcIPlqfe1" role="38rM$J">
             <property role="38rIoG" value="d" />
-            <property role="38rMdH" value="5.0l" />
+            <property role="38rMdH" value="5.0" />
             <node concept="3Tqbb2" id="7MMcIPlqfe2" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -4181,7 +4181,7 @@
           </node>
           <node concept="38rIoz" id="70FTS8kehmv" role="38rM$J">
             <property role="38rIoG" value="doubleLiteral" />
-            <property role="38rMdH" value="5.1l" />
+            <property role="38rMdH" value="5.1" />
             <node concept="3Tqbb2" id="70FTS8kehq7" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -5324,7 +5324,7 @@
           </node>
           <node concept="38rIoz" id="PS2VOYR_Na" role="38rM$J">
             <property role="38rIoG" value="a" />
-            <property role="38rMdH" value="3.1415l" />
+            <property role="38rMdH" value="3.1415" />
             <node concept="3Tqbb2" id="PS2VOYRBlV" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
