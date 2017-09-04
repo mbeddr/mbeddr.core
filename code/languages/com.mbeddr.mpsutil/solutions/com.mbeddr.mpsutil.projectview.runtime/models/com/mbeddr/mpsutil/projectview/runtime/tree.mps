@@ -6353,13 +6353,11 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5X0QIdOS3sy" role="jymVt" />
     <node concept="3clFb_" id="4gq8yQBZ74s" role="jymVt">
       <property role="TrG5h" value="selectNextModel" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="2AHcQZ" id="4gq8yQBZ74t" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
       <node concept="37vLTG" id="4gq8yQBZ74u" role="3clF46">
         <property role="TrG5h" value="modelDescriptor" />
         <property role="3TUv4t" value="false" />
@@ -6368,6 +6366,21 @@
         </node>
       </node>
       <node concept="3clFbS" id="4gq8yQBZ74w" role="3clF47">
+        <node concept="3SKdUt" id="5X0QIdOS_VD" role="3cqZAp">
+          <node concept="3SKdUq" id="5X0QIdOSA3c" role="3SKWNk">
+            <property role="3SKdUp" value="FIXME the method used to override an unused method in superclass, which" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="5X0QIdOSAD8" role="3cqZAp">
+          <node concept="3SKdUq" id="5X0QIdOSADa" role="3SKWNk">
+            <property role="3SKdUp" value="      has been removed in MPS 2017.3, and you can drop the method once switch to " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="5X0QIdOSBfG" role="3cqZAp">
+          <node concept="3SKdUq" id="5X0QIdOSBfI" role="3SKWNk">
+            <property role="3SKdUp" value="      newer version (providedmbeddr itself doesn't use it)" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="4gq8yQBZ74x" role="3cqZAp">
           <node concept="3cpWsn" id="4gq8yQBZ74y" role="3cpWs9">
             <property role="3TUv4t" value="true" />
@@ -6415,6 +6428,7 @@
       <node concept="3Tm1VV" id="4gq8yQBZ753" role="1B3o_S" />
       <node concept="3cqZAl" id="4gq8yQBZ754" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="5X0QIdORVOU" role="jymVt" />
     <node concept="3clFb_" id="4gq8yQBZ755" role="jymVt">
       <property role="TrG5h" value="selectNextNode" />
       <property role="DiZV1" value="false" />
