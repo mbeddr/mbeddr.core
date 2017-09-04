@@ -501,7 +501,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1156234966388" name="shortDescription" index="OYnhT" />
-        <property id="1156235010670" name="alias" index="OYydz" />
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
@@ -27130,13 +27129,11 @@
                 <property role="3GE5qa" value="0" />
                 <node concept="1S8S4T" id="5ZDGpDSy2vr" role="1_9fRO">
                   <property role="OYnhT" value="0" />
-                  <property role="OYydz" value="0" />
                   <property role="3GE5qa" value="0" />
                   <node concept="26Vqpk" id="5ZDGpDSy2vs" role="1S8S4N">
                     <property role="2caQfQ" value="false" />
                     <property role="2c7vTL" value="true" />
                     <property role="OYnhT" value="0" />
-                    <property role="OYydz" value="0" />
                     <property role="3GE5qa" value="0" />
                   </node>
                   <node concept="3TlMh9" id="5ZDGpDSy2vt" role="1S8S4V">

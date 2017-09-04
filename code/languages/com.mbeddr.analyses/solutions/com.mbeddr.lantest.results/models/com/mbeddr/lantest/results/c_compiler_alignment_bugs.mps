@@ -106,7 +106,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1156234966388" name="shortDescription" index="OYnhT" />
-        <property id="1156235010670" name="alias" index="OYydz" />
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -201,12 +200,10 @@
           <node concept="3XIRFW" id="5atDsHNhyoV" role="1_amYn">
             <node concept="1_9egQ" id="5atDsHNhyoW" role="3XIRFZ">
               <property role="OYnhT" value="0" />
-              <property role="OYydz" value="0" />
               <property role="3GE5qa" value="0" />
               <node concept="3DXrvS" id="5atDsHNhyoX" role="1_9egR">
                 <node concept="3TlMhd" id="5atDsHNhyoY" role="3D7$A5">
                   <property role="OYnhT" value="0" />
-                  <property role="OYydz" value="0" />
                   <property role="3GE5qa" value="0" />
                 </node>
               </node>
@@ -268,7 +265,6 @@
             <node concept="3XIRlf" id="4m$eX95rMX_" role="3XIRFZ">
               <property role="TrG5h" value="aName_1397921554532" />
               <property role="OYnhT" value="0" />
-              <property role="OYydz" value="0" />
               <property role="3GE5qa" value="0" />
               <property role="3emlUp" value="true" />
               <property role="8PNL8" value="false" />
@@ -276,7 +272,6 @@
                 <property role="2caQfQ" value="true" />
                 <property role="2c7vTL" value="true" />
                 <property role="OYnhT" value="0" />
-                <property role="OYydz" value="0" />
                 <property role="3GE5qa" value="0" />
               </node>
               <node concept="3TlMh9" id="4m$eX95rRbI" role="3XIe9u">
@@ -287,13 +282,11 @@
             <node concept="3XIRlf" id="4m$eX95rMXy" role="3XIRFZ">
               <property role="TrG5h" value="aName_1397921554520" />
               <property role="OYnhT" value="0" />
-              <property role="OYydz" value="0" />
               <property role="3GE5qa" value="0" />
               <property role="3emlUp" value="false" />
               <property role="8PNL8" value="true" />
               <node concept="3ZVu4v" id="4m$eX95rMXz" role="3XIe9u">
                 <property role="OYnhT" value="0" />
-                <property role="OYydz" value="0" />
                 <property role="3GE5qa" value="0" />
                 <ref role="3ZVs_2" node="4m$eX95rMX_" resolve="aName_1397921554532" />
               </node>
@@ -301,7 +294,6 @@
                 <property role="2caQfQ" value="true" />
                 <property role="2c7vTL" value="true" />
                 <property role="OYnhT" value="0" />
-                <property role="OYydz" value="0" />
                 <property role="3GE5qa" value="0" />
               </node>
             </node>
