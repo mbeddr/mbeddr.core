@@ -3104,7 +3104,7 @@
                         </node>
                         <node concept="3cpWs3" id="37J4MLLxVRg" role="3uHU7B">
                           <node concept="Xl_RD" id="37J4MLLxVRh" role="3uHU7B">
-                            <property role="Xl_RC" value="(\\b|@|^)" />
+                            <property role="Xl_RC" value="(\\b|@|\n|^)" />
                           </node>
                           <node concept="2GrUjf" id="37J4MLLxVRi" role="3uHU7w">
                             <ref role="2Gs0qQ" node="7V4Ing5xmxQ" resolve="word" />
