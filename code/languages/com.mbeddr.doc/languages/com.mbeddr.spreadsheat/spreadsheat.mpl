@@ -5,17 +5,13 @@
       <sourceRoot location="languageModels" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/commons-codec-1.5.jar" />
-      <sourceRoot location="lib/commons-logging-1.1.jar" />
-      <sourceRoot location="lib/dom4j-1.6.1.jar" />
-      <sourceRoot location="lib/log4j-1.2.13.jar" />
-      <sourceRoot location="lib/poi-3.9-20121203.jar" />
-      <sourceRoot location="lib/poi-excelant-3.9-20121203.jar" />
-      <sourceRoot location="lib/poi-ooxml-3.9-20121203.jar" />
-      <sourceRoot location="lib/poi-ooxml-schemas-3.9-20121203.jar" />
-      <sourceRoot location="lib/poi-scratchpad-3.9-20121203.jar" />
-      <sourceRoot location="lib/stax-api-1.0.1.jar" />
-      <sourceRoot location="lib/xmlbeans-2.3.0.jar" />
+      <sourceRoot location="lib/commons-codec-1.10.jar" />
+      <sourceRoot location="lib/commons-collections4-4.1.jar" />
+      <sourceRoot location="lib/curvesapi-1.04.jar" />
+      <sourceRoot location="lib/poi-3.16.jar" />
+      <sourceRoot location="lib/poi-ooxml-3.16.jar" />
+      <sourceRoot location="lib/poi-ooxml-schemas-3.16.jar" />
+      <sourceRoot location="lib/xmlbeans-2.6.0.jar" />
     </modelRoot>
   </models>
   <accessoryModels />
@@ -29,7 +25,7 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">1d891f7b-dc93-42f9-a4bc-b016656b14e2(com.mbeddr.spreadsheat)</dependency>
-        <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
+        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false" scope="design">be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)</dependency>
       </dependencies>
       <languageVersions>
@@ -81,7 +77,6 @@
         <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
         <module reference="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" version="0" />
         <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
-        <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
         <module reference="63650c59-16c8-498a-99c8-005c7ee9515d(jetbrains.mps.lang.access)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
@@ -109,17 +104,13 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/commons-codec-1.5.jar" />
-    <stubModelEntry path="${module}/lib/commons-logging-1.1.jar" />
-    <stubModelEntry path="${module}/lib/dom4j-1.6.1.jar" />
-    <stubModelEntry path="${module}/lib/log4j-1.2.13.jar" />
-    <stubModelEntry path="${module}/lib/poi-3.9-20121203.jar" />
-    <stubModelEntry path="${module}/lib/poi-excelant-3.9-20121203.jar" />
-    <stubModelEntry path="${module}/lib/poi-ooxml-3.9-20121203.jar" />
-    <stubModelEntry path="${module}/lib/poi-ooxml-schemas-3.9-20121203.jar" />
-    <stubModelEntry path="${module}/lib/poi-scratchpad-3.9-20121203.jar" />
-    <stubModelEntry path="${module}/lib/stax-api-1.0.1.jar" />
-    <stubModelEntry path="${module}/lib/xmlbeans-2.3.0.jar" />
+    <stubModelEntry path="${module}/lib/commons-codec-1.10.jar" />
+    <stubModelEntry path="${module}/lib/commons-collections4-4.1.jar" />
+    <stubModelEntry path="${module}/lib/curvesapi-1.04.jar" />
+    <stubModelEntry path="${module}/lib/poi-3.16.jar" />
+    <stubModelEntry path="${module}/lib/poi-ooxml-3.16.jar" />
+    <stubModelEntry path="${module}/lib/poi-ooxml-schemas-3.16.jar" />
+    <stubModelEntry path="${module}/lib/xmlbeans-2.6.0.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

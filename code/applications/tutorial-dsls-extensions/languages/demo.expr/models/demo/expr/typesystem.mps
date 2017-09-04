@@ -2,8 +2,7 @@
 <model ref="r:af74927c-4c06-40ed-aa1d-c55b4c92053f(demo.expr.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="usyq" ref="r:9cdd4513-d443-4d67-ade0-9f644c838532(demo.expr.structure)" implicit="true" />
@@ -141,7 +140,7 @@
                 <ref role="1YBMHb" node="3xDNhgd618E" resolve="parensExpression" />
               </node>
               <node concept="3TrEf2" id="3xDNhgd61jf" role="2OqNvi">
-                <ref role="3Tt5mk" to="usyq:3xDNhgd3xSW" />
+                <ref role="3Tt5mk" to="usyq:3xDNhgd3xSW" resolve="expr" />
               </node>
             </node>
           </node>
@@ -170,7 +169,7 @@
               <ref role="1YBMHb" node="3xDNhgd61l2" resolve="variable" />
             </node>
             <node concept="3TrEf2" id="3xDNhgd61_H" role="2OqNvi">
-              <ref role="3Tt5mk" to="usyq:3xDNhgd1hA0" />
+              <ref role="3Tt5mk" to="usyq:3xDNhgd1hA0" resolve="type" />
             </node>
           </node>
         </node>
@@ -199,7 +198,7 @@
                 <ref role="1YBMHb" node="3xDNhgd61B3" resolve="varRef" />
               </node>
               <node concept="3TrEf2" id="3xDNhgd61Kj" role="2OqNvi">
-                <ref role="3Tt5mk" to="usyq:3xDNhgd4nKa" />
+                <ref role="3Tt5mk" to="usyq:3xDNhgd4nKa" resolve="var" />
               </node>
             </node>
           </node>
@@ -321,7 +320,7 @@
                   <ref role="1YBMHb" node="3xDNhgd62np" resolve="be" />
                 </node>
                 <node concept="3TrEf2" id="3xDNhgd7kGr" role="2OqNvi">
-                  <ref role="3Tt5mk" to="usyq:3xDNhgd32l6" />
+                  <ref role="3Tt5mk" to="usyq:3xDNhgd32l6" resolve="right" />
                 </node>
               </node>
             </node>
@@ -341,7 +340,7 @@
               <ref role="1YBMHb" node="3xDNhgd62np" resolve="be" />
             </node>
             <node concept="3TrEf2" id="3xDNhgd62zt" role="2OqNvi">
-              <ref role="3Tt5mk" to="usyq:3xDNhgd32l4" />
+              <ref role="3Tt5mk" to="usyq:3xDNhgd32l4" resolve="left" />
             </node>
           </node>
         </node>

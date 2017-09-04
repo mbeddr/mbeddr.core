@@ -2,7 +2,7 @@
 <model ref="r:4f1c8a59-d217-4da1-a46c-f37182e9100a(cbmc_arguments)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="4" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
@@ -113,7 +113,7 @@
       <concept id="6642137243243214613" name="com.mbeddr.analyses.cbmc.structure.CPROVERisinff" flags="ng" index="38MIIO" />
       <concept id="6642137243243857703" name="com.mbeddr.analyses.cbmc.structure.CPROVERisinfd" flags="ng" index="38RdI6" />
       <concept id="6642137243243857704" name="com.mbeddr.analyses.cbmc.structure.CPROVERisnand" flags="ng" index="38RdI9" />
-      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>

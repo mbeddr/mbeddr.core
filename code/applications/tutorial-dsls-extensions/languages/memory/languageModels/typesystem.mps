@@ -2,8 +2,7 @@
 <model ref="r:ea718656-8eb5-4658-8e09-c53862cd882b(mbeddr.tutotial.osconfig.memory.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="wlut" ref="r:39f56ab1-7cb7-441d-9f40-9b3dac9d6334(mbeddr.tutotial.osconfig.memory.structure)" />
@@ -79,11 +78,11 @@
                   <ref role="1YBMHb" node="4Kv0gUyBAQs" resolve="eoe" />
                 </node>
                 <node concept="3TrEf2" id="4Kv0gUyBKqa" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wlut:4Kv0gUyBJzo" />
+                  <ref role="3Tt5mk" to="wlut:4Kv0gUyBJzo" resolve="region" />
                 </node>
               </node>
               <node concept="3TrEf2" id="4Kv0gUyBKqc" role="2OqNvi">
-                <ref role="3Tt5mk" to="wlut:4Kv0gUyBAga" />
+                <ref role="3Tt5mk" to="wlut:4Kv0gUyBAga" resolve="startsAt" />
               </node>
             </node>
           </node>
@@ -122,7 +121,7 @@
                 <ref role="1YBMHb" node="4Kv0gUyBBj$" resolve="r" />
               </node>
               <node concept="3TrEf2" id="4Kv0gUyBBk3" role="2OqNvi">
-                <ref role="3Tt5mk" to="wlut:4Kv0gUyBAga" />
+                <ref role="3Tt5mk" to="wlut:4Kv0gUyBAga" resolve="startsAt" />
               </node>
             </node>
           </node>
@@ -145,7 +144,7 @@
                 <ref role="1YBMHb" node="4Kv0gUyBBj$" resolve="r" />
               </node>
               <node concept="3TrEf2" id="4Kv0gUyBBkQ" role="2OqNvi">
-                <ref role="3Tt5mk" to="wlut:4Kv0gUyBAz1" />
+                <ref role="3Tt5mk" to="wlut:4Kv0gUyBAz1" resolve="endsAt" />
               </node>
             </node>
           </node>
@@ -169,11 +168,11 @@
                   <ref role="1YBMHb" node="4Kv0gUyBFil" resolve="eoe" />
                 </node>
                 <node concept="3TrEf2" id="4Kv0gUyBKq4" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wlut:4Kv0gUyBJzo" />
+                  <ref role="3Tt5mk" to="wlut:4Kv0gUyBJzo" resolve="region" />
                 </node>
               </node>
               <node concept="3TrEf2" id="4Kv0gUyBKqe" role="2OqNvi">
-                <ref role="3Tt5mk" to="wlut:4Kv0gUyBAga" />
+                <ref role="3Tt5mk" to="wlut:4Kv0gUyBAga" resolve="startsAt" />
               </node>
             </node>
           </node>
@@ -211,11 +210,11 @@
                   <ref role="1YBMHb" node="4Kv0gUyBFiN" resolve="soe" />
                 </node>
                 <node concept="3TrEf2" id="4Kv0gUyBKq6" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wlut:4Kv0gUyBJzo" />
+                  <ref role="3Tt5mk" to="wlut:4Kv0gUyBJzo" resolve="region" />
                 </node>
               </node>
               <node concept="3TrEf2" id="4Kv0gUyBKqg" role="2OqNvi">
-                <ref role="3Tt5mk" to="wlut:4Kv0gUyBAga" />
+                <ref role="3Tt5mk" to="wlut:4Kv0gUyBAga" resolve="startsAt" />
               </node>
             </node>
           </node>
@@ -237,11 +236,11 @@
                   <ref role="1YBMHb" node="4Kv0gUyBFiN" resolve="soe" />
                 </node>
                 <node concept="3TrEf2" id="4Kv0gUyBKq8" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wlut:4Kv0gUyBJzo" />
+                  <ref role="3Tt5mk" to="wlut:4Kv0gUyBJzo" resolve="region" />
                 </node>
               </node>
               <node concept="3TrEf2" id="4Kv0gUyBKqi" role="2OqNvi">
-                <ref role="3Tt5mk" to="wlut:4Kv0gUyBAz1" />
+                <ref role="3Tt5mk" to="wlut:4Kv0gUyBAz1" resolve="endsAt" />
               </node>
             </node>
           </node>
