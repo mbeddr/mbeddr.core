@@ -347,7 +347,9 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="6Pe8SabgUhD" role="1B3o_S" />
       <node concept="10P_77" id="6Pe8SabgUzO" role="1tU5fm" />
-      <node concept="3clFbT" id="6Pe8SabgUT9" role="33vP2m" />
+      <node concept="3clFbT" id="6Pe8SabgUT9" role="33vP2m">
+        <property role="3clFbU" value="true" />
+      </node>
     </node>
     <node concept="312cEg" id="6Pe8SabmMVR" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -2373,8 +2375,13 @@
                       <node concept="2ShNRf" id="2N2upCcDxkP" role="YScLw">
                         <node concept="1pGfFk" id="2N2upCcDxkQ" role="2ShVmc">
                           <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                          <node concept="Xl_RD" id="2N2upCcDxkR" role="37wK5m">
-                            <property role="Xl_RC" value="error on update for editorcell_collection" />
+                          <node concept="3cpWs3" id="2N2upCcLdDn" role="37wK5m">
+                            <node concept="37vLTw" id="2N2upCcLdXH" role="3uHU7w">
+                              <ref role="3cqZAo" node="2N2upCcDxkt" resolve="id" />
+                            </node>
+                            <node concept="Xl_RD" id="2N2upCcDxkR" role="3uHU7B">
+                              <property role="Xl_RC" value="error on update for editorcell_collection: " />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -3943,6 +3950,43 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2N2upCcJ8kX" role="3cqZAp" />
+        <node concept="3clFbJ" id="2N2upCcJbPi" role="3cqZAp">
+          <node concept="3clFbS" id="2N2upCcJbPk" role="3clFbx">
+            <node concept="YS8fn" id="2N2upCcJif1" role="3cqZAp">
+              <node concept="2ShNRf" id="2N2upCcJiEi" role="YScLw">
+                <node concept="1pGfFk" id="2N2upCcJjWU" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="3cpWs3" id="2N2upCcJnqO" role="37wK5m">
+                    <node concept="2OqwBi" id="2N2upCcJpyj" role="3uHU7w">
+                      <node concept="2OqwBi" id="2N2upCcJoa_" role="2Oq$k0">
+                        <node concept="37vLTw" id="2N2upCcJnRJ" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2k2f42FCN7Z" resolve="ec" />
+                        </node>
+                        <node concept="liA8E" id="2N2upCcJoR0" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="2N2upCcJqBO" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Class.getCanonicalName():java.lang.String" resolve="getCanonicalName" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="2N2upCcJkpr" role="3uHU7B">
+                      <property role="Xl_RC" value="Cannot extract group for type: " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2N2upCcJgHD" role="3clFbw">
+            <node concept="10Nm6u" id="2N2upCcJh7h" role="3uHU7w" />
+            <node concept="37vLTw" id="2N2upCcJfcg" role="3uHU7B">
+              <ref role="3cqZAo" node="2k2f42FppuP" resolve="w3cElement" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2N2upCcJ8xg" role="3cqZAp" />
         <node concept="3SKdUt" id="2k2f42FpBzH" role="3cqZAp">
           <node concept="3SKdUq" id="2k2f42FpBzJ" role="3SKWNk">
             <property role="3SKdUp" value="IMPORTANT: change owner-Document of the new Element" />
@@ -13554,6 +13598,29 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2N2upCcHsp2" role="3cqZAp">
+          <node concept="37vLTI" id="2N2upCcHsAp" role="3clFbG">
+            <node concept="2ShNRf" id="2N2upCcHsJg" role="37vLTx">
+              <node concept="HV5vD" id="2N2upCcHtfW" role="2ShVmc">
+                <ref role="HV5vE" node="2N2upCcGNON" resolve="TraversalError" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2N2upCcHsp0" role="37vLTJ">
+              <ref role="3cqZAo" node="2N2upCcHrqN" resolve="traversalError" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2N2upCcHlq5" role="3cqZAp">
+          <node concept="2OqwBi" id="2N2upCcHlwd" role="3clFbG">
+            <node concept="Xjq3P" id="2N2upCcHlq3" role="2Oq$k0" />
+            <node concept="liA8E" id="2N2upCcHlGY" role="2OqNvi">
+              <ref role="37wK5l" node="2N2upCcFgM4" resolve="registerInner" />
+              <node concept="37vLTw" id="2N2upCcHt$y" role="37wK5m">
+                <ref role="3cqZAo" node="2N2upCcHrqN" resolve="traversalError" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm6S6" id="2N2upCcAYwS" role="1B3o_S" />
     </node>
@@ -13568,6 +13635,18 @@
       </node>
       <node concept="10Nm6u" id="2N2upCcB2Al" role="33vP2m" />
       <node concept="3Tm6S6" id="2N2upCcB2Aj" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2N2upCcHpvO" role="jymVt" />
+    <node concept="312cEg" id="2N2upCcHrqN" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="traversalError" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="2N2upCcHq29" role="1B3o_S" />
+      <node concept="3uibUv" id="2N2upCcHqxg" role="1tU5fm">
+        <ref role="3uigEE" node="2N2upCcAFgP" resolve="Traversal" />
+      </node>
+      <node concept="10Nm6u" id="2N2upCcHrWs" role="33vP2m" />
     </node>
     <node concept="2tJIrI" id="2N2upCcB2xv" role="jymVt" />
     <node concept="2YIFZL" id="2N2upCcB4jn" role="jymVt">
@@ -14007,29 +14086,44 @@
           </node>
         </node>
         <node concept="3clFbH" id="2N2upCcBpvx" role="3cqZAp" />
-        <node concept="YS8fn" id="2N2upCcBpQo" role="3cqZAp">
-          <node concept="2ShNRf" id="2N2upCcBqau" role="YScLw">
-            <node concept="1pGfFk" id="2N2upCcBrlj" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-              <node concept="3cpWs3" id="2N2upCcBvgX" role="37wK5m">
-                <node concept="Xl_RD" id="2N2upCcBvVX" role="3uHU7w">
-                  <property role="Xl_RC" value=", is not registered @TraversalProvider" />
-                </node>
-                <node concept="3cpWs3" id="2N2upCcBsnw" role="3uHU7B">
-                  <node concept="Xl_RD" id="2N2upCcBrrN" role="3uHU7B">
-                    <property role="Xl_RC" value="Traversal for: " />
+        <node concept="3cpWs6" id="2N2upCcHnVT" role="3cqZAp">
+          <node concept="2OqwBi" id="2N2upCcHoQJ" role="3cqZAk">
+            <node concept="1rXfSq" id="2N2upCcHozx" role="2Oq$k0">
+              <ref role="37wK5l" node="2N2upCcB4jn" resolve="getInstance" />
+            </node>
+            <node concept="2OwXpG" id="2N2upCcHtNw" role="2OqNvi">
+              <ref role="2Oxat5" node="2N2upCcHrqN" resolve="traversalError" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2N2upCcHnmr" role="3cqZAp" />
+        <node concept="1X3_iC" id="2N2upCcHmSc" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="YS8fn" id="2N2upCcBpQo" role="8Wnug">
+            <node concept="2ShNRf" id="2N2upCcBqau" role="YScLw">
+              <node concept="1pGfFk" id="2N2upCcBrlj" role="2ShVmc">
+                <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                <node concept="3cpWs3" id="2N2upCcBvgX" role="37wK5m">
+                  <node concept="Xl_RD" id="2N2upCcBvVX" role="3uHU7w">
+                    <property role="Xl_RC" value=", is not registered @TraversalProvider" />
                   </node>
-                  <node concept="2OqwBi" id="2N2upCcBtng" role="3uHU7w">
-                    <node concept="2OqwBi" id="2N2upCcBsG8" role="2Oq$k0">
-                      <node concept="37vLTw" id="2N2upCcBsuq" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2N2upCcBapn" resolve="ec" />
-                      </node>
-                      <node concept="liA8E" id="2N2upCcBt1P" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                      </node>
+                  <node concept="3cpWs3" id="2N2upCcBsnw" role="3uHU7B">
+                    <node concept="Xl_RD" id="2N2upCcBrrN" role="3uHU7B">
+                      <property role="Xl_RC" value="Traversal for: " />
                     </node>
-                    <node concept="liA8E" id="2N2upCcBu5W" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Class.getCanonicalName():java.lang.String" resolve="getCanonicalName" />
+                    <node concept="2OqwBi" id="2N2upCcBtng" role="3uHU7w">
+                      <node concept="2OqwBi" id="2N2upCcBsG8" role="2Oq$k0">
+                        <node concept="37vLTw" id="2N2upCcBsuq" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2N2upCcBapn" resolve="ec" />
+                        </node>
+                        <node concept="liA8E" id="2N2upCcBt1P" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="2N2upCcBu5W" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Class.getCanonicalName():java.lang.String" resolve="getCanonicalName" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -14113,6 +14207,32 @@
               </node>
               <node concept="37vLTw" id="2N2upCcCe4d" role="37wK5m">
                 <ref role="3cqZAo" node="2N2upCcBEkA" resolve="update" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2N2upCcKde$" role="3cqZAp">
+          <node concept="2OqwBi" id="2N2upCcKdAS" role="3clFbG">
+            <node concept="37vLTw" id="2N2upCcKdey" role="2Oq$k0">
+              <ref role="3cqZAo" node="2N2upCcCcJ9" resolve="w3cElement" />
+            </node>
+            <node concept="liA8E" id="2N2upCcKdVk" role="2OqNvi">
+              <ref role="37wK5l" to="lhjl:~Element.setAttribute(java.lang.String,java.lang.String):void" resolve="setAttribute" />
+              <node concept="Xl_RD" id="2N2upCcKe72" role="37wK5m">
+                <property role="Xl_RC" value="debug-cell-type" />
+              </node>
+              <node concept="2OqwBi" id="2N2upCcKfFN" role="37wK5m">
+                <node concept="2OqwBi" id="2N2upCcKeWU" role="2Oq$k0">
+                  <node concept="37vLTw" id="2N2upCcKeEG" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2N2upCcBEky" resolve="ec" />
+                  </node>
+                  <node concept="liA8E" id="2N2upCcKfoF" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="2N2upCcKgvE" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Class.getCanonicalName():java.lang.String" resolve="getCanonicalName" />
+                </node>
               </node>
             </node>
           </node>
@@ -14321,6 +14441,220 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2N2upCcCh2l" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="2N2upCcGNON">
+    <property role="TrG5h" value="TraversalError" />
+    <node concept="3Tm1VV" id="2N2upCcGNOO" role="1B3o_S" />
+    <node concept="3uibUv" id="2N2upCcGNPW" role="EKbjA">
+      <ref role="3uigEE" node="2N2upCcAFgP" resolve="Traversal" />
+    </node>
+    <node concept="3clFb_" id="2N2upCcGNQk" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getEditorCellClass" />
+      <node concept="3Tm1VV" id="2N2upCcGNQm" role="1B3o_S" />
+      <node concept="3uibUv" id="2N2upCcGNQn" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+      </node>
+      <node concept="3clFbS" id="2N2upCcGNQo" role="3clF47">
+        <node concept="3cpWs6" id="2N2upCcGOs4" role="3cqZAp">
+          <node concept="3VsKOn" id="2N2upCcGP4a" role="3cqZAk">
+            <ref role="3VsUkX" to="wyt6:~Error" resolve="Error" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2N2upCcGNQp" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="2N2upCcGNQs" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="visit" />
+      <node concept="3Tm1VV" id="2N2upCcGNQu" role="1B3o_S" />
+      <node concept="3uibUv" id="2N2upCcGNQv" role="3clF45">
+        <ref role="3uigEE" to="lhjl:~Element" resolve="Element" />
+      </node>
+      <node concept="37vLTG" id="2N2upCcGNQw" role="3clF46">
+        <property role="TrG5h" value="ec" />
+        <node concept="3uibUv" id="2N2upCcGNQx" role="1tU5fm">
+          <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2N2upCcGNQy" role="3clF46">
+        <property role="TrG5h" value="svgGraphics" />
+        <node concept="3uibUv" id="2N2upCcGNQz" role="1tU5fm">
+          <ref role="3uigEE" to="nxzt:~SVGGraphics2D" resolve="SVGGraphics2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2N2upCcGNQ$" role="3clF46">
+        <property role="TrG5h" value="update" />
+        <node concept="10P_77" id="2N2upCcGNQ_" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="2N2upCcGNQA" role="3clF47">
+        <node concept="3cpWs8" id="2N2upCcGSsx" role="3cqZAp">
+          <node concept="3cpWsn" id="2N2upCcGSsy" role="3cpWs9">
+            <property role="TrG5h" value="error" />
+            <node concept="3uibUv" id="2N2upCcGSsz" role="1tU5fm">
+              <ref role="3uigEE" to="lhjl:~Element" resolve="Element" />
+            </node>
+            <node concept="2YIFZM" id="2N2upCcGSXI" role="33vP2m">
+              <ref role="37wK5l" node="2N2upCcCKNW" resolve="createElement" />
+              <ref role="1Pybhc" node="2N2upCcAF$e" resolve="TraversalProvider" />
+              <node concept="Xl_RD" id="2N2upCcGT7N" role="37wK5m">
+                <property role="Xl_RC" value="ERROR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2N2upCcGTCn" role="3cqZAp">
+          <node concept="2OqwBi" id="2N2upCcGTSA" role="3clFbG">
+            <node concept="37vLTw" id="2N2upCcGTCl" role="2Oq$k0">
+              <ref role="3cqZAo" node="2N2upCcGSsy" resolve="error" />
+            </node>
+            <node concept="liA8E" id="2N2upCcGU7E" role="2OqNvi">
+              <ref role="37wK5l" to="lhjl:~Node.setTextContent(java.lang.String):void" resolve="setTextContent" />
+              <node concept="3cpWs3" id="2N2upCcGVh_" role="37wK5m">
+                <node concept="Xl_RD" id="2N2upCcGVhA" role="3uHU7w">
+                  <property role="Xl_RC" value=" is currently not supported @NodeToSVG, maybe you must provide or register a Traversal." />
+                </node>
+                <node concept="2OqwBi" id="2N2upCcGVhB" role="3uHU7B">
+                  <node concept="2OqwBi" id="2N2upCcGVhC" role="2Oq$k0">
+                    <node concept="37vLTw" id="2N2upCcGVhD" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2N2upCcGNQw" resolve="ec" />
+                    </node>
+                    <node concept="liA8E" id="2N2upCcGVhE" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2N2upCcGVhF" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Class.getCanonicalName():java.lang.String" resolve="getCanonicalName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2N2upCcH0XK" role="3cqZAp">
+          <node concept="2OqwBi" id="2N2upCcH1on" role="3clFbG">
+            <node concept="37vLTw" id="2N2upCcH0XI" role="2Oq$k0">
+              <ref role="3cqZAo" node="2N2upCcGSsy" resolve="error" />
+            </node>
+            <node concept="liA8E" id="2N2upCcH1LQ" role="2OqNvi">
+              <ref role="37wK5l" to="lhjl:~Element.setAttribute(java.lang.String,java.lang.String):void" resolve="setAttribute" />
+              <node concept="Xl_RD" id="2N2upCcH1Yn" role="37wK5m">
+                <property role="Xl_RC" value="ec-type" />
+              </node>
+              <node concept="2OqwBi" id="2N2upCcH3rL" role="37wK5m">
+                <node concept="2OqwBi" id="2N2upCcH2FK" role="2Oq$k0">
+                  <node concept="37vLTw" id="2N2upCcH2oh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2N2upCcGNQw" resolve="ec" />
+                  </node>
+                  <node concept="liA8E" id="2N2upCcH37o" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="2N2upCcH4fX" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Class.getCanonicalName():java.lang.String" resolve="getCanonicalName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2N2upCcH6hJ" role="3cqZAp">
+          <node concept="2OqwBi" id="2N2upCcH6Kb" role="3clFbG">
+            <node concept="37vLTw" id="2N2upCcH6hH" role="2Oq$k0">
+              <ref role="3cqZAo" node="2N2upCcGSsy" resolve="error" />
+            </node>
+            <node concept="liA8E" id="2N2upCcH760" role="2OqNvi">
+              <ref role="37wK5l" to="lhjl:~Element.setAttribute(java.lang.String,java.lang.String):void" resolve="setAttribute" />
+              <node concept="Xl_RD" id="2N2upCcH7mo" role="37wK5m">
+                <property role="Xl_RC" value="cellId" />
+              </node>
+              <node concept="2OqwBi" id="2N2upCcH7Yd" role="37wK5m">
+                <node concept="37vLTw" id="2N2upCcH7FZ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2N2upCcGNQw" resolve="ec" />
+                </node>
+                <node concept="liA8E" id="2N2upCcH8o$" role="2OqNvi">
+                  <ref role="37wK5l" to="f4zo:~EditorCell.getCellId():java.lang.String" resolve="getCellId" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2N2upCcHb7W" role="3cqZAp">
+          <node concept="2OqwBi" id="2N2upCcHbBd" role="3clFbG">
+            <node concept="37vLTw" id="2N2upCcHb7U" role="2Oq$k0">
+              <ref role="3cqZAo" node="2N2upCcGSsy" resolve="error" />
+            </node>
+            <node concept="liA8E" id="2N2upCcHc52" role="2OqNvi">
+              <ref role="37wK5l" to="lhjl:~Element.setAttribute(java.lang.String,java.lang.String):void" resolve="setAttribute" />
+              <node concept="Xl_RD" id="2N2upCcHcgk" role="37wK5m">
+                <property role="Xl_RC" value="cellInfo" />
+              </node>
+              <node concept="2OqwBi" id="2N2upCcHdu5" role="37wK5m">
+                <node concept="2OqwBi" id="2N2upCcHcYq" role="2Oq$k0">
+                  <node concept="37vLTw" id="2N2upCcHcC9" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2N2upCcGNQw" resolve="ec" />
+                  </node>
+                  <node concept="liA8E" id="2N2upCcHdoh" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getCellInfo():jetbrains.mps.openapi.editor.cells.CellInfo" resolve="getCellInfo" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="2N2upCcHdHY" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2N2upCcHeiX" role="3cqZAp">
+          <node concept="3clFbS" id="2N2upCcHeiZ" role="3clFbx">
+            <node concept="3clFbF" id="2N2upCcHhmG" role="3cqZAp">
+              <node concept="2OqwBi" id="2N2upCcHhAC" role="3clFbG">
+                <node concept="37vLTw" id="2N2upCcHhmE" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2N2upCcGSsy" resolve="error" />
+                </node>
+                <node concept="liA8E" id="2N2upCcHhPI" role="2OqNvi">
+                  <ref role="37wK5l" to="lhjl:~Element.setAttribute(java.lang.String,java.lang.String):void" resolve="setAttribute" />
+                  <node concept="Xl_RD" id="2N2upCcHi11" role="37wK5m">
+                    <property role="Xl_RC" value="role" />
+                  </node>
+                  <node concept="2OqwBi" id="2N2upCcHi_l" role="37wK5m">
+                    <node concept="37vLTw" id="2N2upCcHij7" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2N2upCcGNQw" resolve="ec" />
+                    </node>
+                    <node concept="liA8E" id="2N2upCcHiPK" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell.getRole():java.lang.String" resolve="getRole" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2N2upCcHg3P" role="3clFbw">
+            <node concept="2OqwBi" id="2N2upCcHfef" role="2Oq$k0">
+              <node concept="37vLTw" id="2N2upCcHeHm" role="2Oq$k0">
+                <ref role="3cqZAo" node="2N2upCcGNQw" resolve="ec" />
+              </node>
+              <node concept="liA8E" id="2N2upCcHfMe" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getRole():java.lang.String" resolve="getRole" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="2N2upCcHgO$" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="2N2upCcH4Ol" role="3cqZAp" />
+        <node concept="3cpWs6" id="2N2upCcH5gG" role="3cqZAp">
+          <node concept="37vLTw" id="2N2upCcH5AI" role="3cqZAk">
+            <ref role="3cqZAo" node="2N2upCcGSsy" resolve="error" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2N2upCcGNQB" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
