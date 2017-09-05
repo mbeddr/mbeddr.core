@@ -2645,7 +2645,7 @@
   <node concept="sE7Ow" id="6pgsoSCzlAX">
     <property role="TrG5h" value="CodeReviewToolOpenerAction" />
     <property role="2uzpH1" value="Open Review Tool" />
-    <property role="1WHSii" value="Opens Tab for reviewing the generated artifacts" />
+    <property role="1WHSii" value="Opens a tool for reviewing the generated artifacts" />
     <property role="fJN8o" value="true" />
     <node concept="1DS2jV" id="5BkFC2yhAHn" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -2730,15 +2730,15 @@
         <ref role="tCJdB" node="6pgsoSCzlAX" resolve="CodeReviewToolOpenerAction" />
       </node>
       <node concept="tCFHf" id="37J4MLLDHzm" role="ftvYc">
-        <ref role="tCJdB" node="2TQvFxbywia" resolve="FindCodeForNodeAction" />
+        <ref role="tCJdB" node="2TQvFxbywia" resolve="HighlightCodeForNodeAction" />
       </node>
     </node>
   </node>
   <node concept="sE7Ow" id="335p1i8CBaN">
-    <property role="TrG5h" value="SelectModelToCodeReviewAction" />
-    <property role="2uzpH1" value="Select Model for Code Review" />
+    <property role="TrG5h" value="SetPathToGeneratedArtifactsToReviewAction" />
+    <property role="2uzpH1" value="Set Path to the Generated Artifacts to Be Reviewed" />
     <property role="fJN8o" value="true" />
-    <property role="1WHSii" value="Select Model which will be review thanks to the Code Review Tab" />
+    <property role="1WHSii" value="The location to the generated artifacts is set as the generation output for this model" />
     <node concept="2XrIbr" id="DMIuLumKyB" role="32lrUH">
       <property role="TrG5h" value="getOutputPath" />
       <node concept="3clFbS" id="DMIuLumKyC" role="3clF47">
@@ -2849,7 +2849,7 @@
     <property role="TrG5h" value="SelectModelToCodeReview" />
     <node concept="ftmFs" id="335p1i8CBba" role="ftER_">
       <node concept="tCFHf" id="335p1i8FwaN" role="ftvYc">
-        <ref role="tCJdB" node="335p1i8CBaN" resolve="SelectModelToCodeReviewAction" />
+        <ref role="tCJdB" node="335p1i8CBaN" resolve="SetPathToGeneratedArtifactsToReviewAction" />
       </node>
     </node>
     <node concept="tT9cl" id="335p1i8CBbf" role="2f5YQi">
@@ -3233,8 +3233,9 @@
     <node concept="2tJIrI" id="7XJGPBq16np" role="jymVt" />
   </node>
   <node concept="sE7Ow" id="2TQvFxbywia">
-    <property role="TrG5h" value="FindCodeForNodeAction" />
-    <property role="2uzpH1" value="Find Generated Lines" />
+    <property role="TrG5h" value="HighlightCodeForNodeAction" />
+    <property role="2uzpH1" value="Highlight Generated Lines" />
+    <property role="1WHSii" value="Highlights the generated lines corresponding to the current node" />
     <node concept="1DS2jV" id="37J4MLLDMlp" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -3259,7 +3260,6 @@
     </node>
     <node concept="tnohg" id="2TQvFxbywib" role="tncku">
       <node concept="3clFbS" id="2TQvFxbywic" role="2VODD2">
-        <node concept="3clFbH" id="3h_NS8ztuUL" role="3cqZAp" />
         <node concept="3cpWs8" id="37J4MLLDLX9" role="3cqZAp">
           <node concept="3cpWsn" id="37J4MLLDLXa" role="3cpWs9">
             <property role="TrG5h" value="crt" />
