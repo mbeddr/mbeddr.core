@@ -5617,6 +5617,31 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2k2f42G9$BD" role="jymVt" />
+    <node concept="2tJIrI" id="2v_vgVUevcd" role="jymVt" />
+    <node concept="Wx3nA" id="2v_vgVUewqo" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="errorCellIdCounter" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="2v_vgVUevZO" role="1B3o_S" />
+      <node concept="10Oyi0" id="2v_vgVUewq8" role="1tU5fm" />
+      <node concept="3cmrfG" id="2v_vgVUewTX" role="33vP2m">
+        <property role="3cmrfH" value="0" />
+      </node>
+      <node concept="z59LJ" id="2v_vgVUfrlV" role="lGtFl">
+        <node concept="TZ5HA" id="2v_vgVUfrlW" role="TZ5H$">
+          <node concept="1dT_AC" id="2v_vgVUfrlX" role="1dT_Ay">
+            <property role="1dT_AB" value="In some cases the cellId is not set. To avoid errors because of double-tracing, an counter is " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2v_vgVUfrwP" role="TZ5H$">
+          <node concept="1dT_AC" id="2v_vgVUfrwQ" role="1dT_Ay">
+            <property role="1dT_AB" value="appended to the end of the cellId. @see: getTargetCellId()" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2v_vgVUevC8" role="jymVt" />
     <node concept="2tJIrI" id="7DxvnULgZ9G" role="jymVt" />
     <node concept="3clFb_" id="7DxvnULgZVd" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -6548,6 +6573,42 @@
                 <node concept="37vLTw" id="yrP$RyvjCQ" role="37vLTJ">
                   <ref role="3cqZAo" node="yrP$RyvjC3" resolve="propId" />
                 </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="2v_vgVUexaT" role="3cqZAp">
+              <node concept="3clFbS" id="2v_vgVUexaV" role="3clFbx">
+                <node concept="3clFbF" id="2v_vgVUeyX1" role="3cqZAp">
+                  <node concept="d57v9" id="2v_vgVUezfa" role="3clFbG">
+                    <node concept="3cpWs3" id="2v_vgVUe$62" role="37vLTx">
+                      <node concept="2YIFZM" id="2v_vgVUe$vq" role="3uHU7w">
+                        <ref role="37wK5l" to="wyt6:~Integer.toBinaryString(int):java.lang.String" resolve="toBinaryString" />
+                        <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                        <node concept="3uNrnE" id="2v_vgVUeA$E" role="37wK5m">
+                          <node concept="37vLTw" id="2v_vgVUeA$G" role="2$L3a6">
+                            <ref role="3cqZAo" node="2v_vgVUewqo" resolve="errorCellIdCounter" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="2v_vgVUezkC" role="3uHU7B">
+                        <property role="Xl_RC" value="_" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="2v_vgVUeyWZ" role="37vLTJ">
+                      <ref role="3cqZAo" node="yrP$RyvjC3" resolve="propId" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2v_vgVUeyf6" role="3clFbw">
+                <node concept="2OqwBi" id="2v_vgVUex_e" role="2Oq$k0">
+                  <node concept="37vLTw" id="2v_vgVUexlh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="yrP$RyvjCZ" resolve="ec" />
+                  </node>
+                  <node concept="liA8E" id="2v_vgVUexTx" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getCellId():java.lang.String" resolve="getCellId" />
+                  </node>
+                </node>
+                <node concept="17RlXB" id="2v_vgVUeyKf" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -13598,6 +13659,33 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2v_vgVU8Dq2" role="3cqZAp">
+          <node concept="2OqwBi" id="2v_vgVU8Dy3" role="3clFbG">
+            <node concept="Xjq3P" id="2v_vgVU8Dq0" role="2Oq$k0" />
+            <node concept="liA8E" id="2v_vgVU8DJZ" role="2OqNvi">
+              <ref role="37wK5l" node="2N2upCcFgM4" resolve="registerInner" />
+              <node concept="2ShNRf" id="2v_vgVU8DPN" role="37wK5m">
+                <node concept="HV5vD" id="2v_vgVU8ZbV" role="2ShVmc">
+                  <ref role="HV5vE" node="2v_vgVU7O5O" resolve="TraverseEcComponent" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2v_vgVUa_BI" role="3cqZAp">
+          <node concept="2OqwBi" id="2v_vgVUa_KI" role="3clFbG">
+            <node concept="Xjq3P" id="2v_vgVUa_BG" role="2Oq$k0" />
+            <node concept="liA8E" id="2v_vgVUa_ZJ" role="2OqNvi">
+              <ref role="37wK5l" node="2N2upCcFgM4" resolve="registerInner" />
+              <node concept="2ShNRf" id="2v_vgVUaA5z" role="37wK5m">
+                <node concept="HV5vD" id="2v_vgVUaBl0" role="2ShVmc">
+                  <ref role="HV5vE" node="2v_vgVU9IU3" resolve="TraverseEcComponentBase" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2v_vgVU8Dei" role="3cqZAp" />
         <node concept="3clFbF" id="2N2upCcHsp2" role="3cqZAp">
           <node concept="37vLTI" id="2N2upCcHsAp" role="3clFbG">
             <node concept="2ShNRf" id="2N2upCcHsJg" role="37vLTx">
@@ -14143,6 +14231,29 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="2v_vgVU7Rbi" role="jymVt" />
+    <node concept="2YIFZL" id="2v_vgVU7Sjc" role="jymVt">
+      <property role="TrG5h" value="getTraversalError" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2v_vgVU7Sjf" role="3clF47">
+        <node concept="3cpWs6" id="2v_vgVU7SRO" role="3cqZAp">
+          <node concept="2OqwBi" id="2v_vgVU7T7s" role="3cqZAk">
+            <node concept="1rXfSq" id="2v_vgVU7T2k" role="2Oq$k0">
+              <ref role="37wK5l" node="2N2upCcB4jn" resolve="getInstance" />
+            </node>
+            <node concept="2OwXpG" id="2v_vgVU7TiQ" role="2OqNvi">
+              <ref role="2Oxat5" node="2N2upCcHrqN" resolve="traversalError" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2v_vgVU7RIl" role="1B3o_S" />
+      <node concept="3uibUv" id="2v_vgVU7SiO" role="3clF45">
+        <ref role="3uigEE" node="2N2upCcAFgP" resolve="Traversal" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="2N2upCcAF$f" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="2N2upCcBEih">
@@ -14655,6 +14766,214 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2N2upCcGNQB" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="2v_vgVU7O5O">
+    <property role="TrG5h" value="TraverseEcComponent" />
+    <node concept="3Tm1VV" id="2v_vgVU7O5P" role="1B3o_S" />
+    <node concept="3uibUv" id="2v_vgVU7P$r" role="EKbjA">
+      <ref role="3uigEE" node="2N2upCcAFgP" resolve="Traversal" />
+    </node>
+    <node concept="3clFb_" id="2v_vgVU7P$N" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="visit" />
+      <node concept="3Tm1VV" id="2v_vgVU7P$P" role="1B3o_S" />
+      <node concept="3uibUv" id="2v_vgVU7P$Q" role="3clF45">
+        <ref role="3uigEE" to="lhjl:~Element" resolve="Element" />
+      </node>
+      <node concept="37vLTG" id="2v_vgVU7P$R" role="3clF46">
+        <property role="TrG5h" value="ec" />
+        <node concept="3uibUv" id="2v_vgVU7P$S" role="1tU5fm">
+          <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2v_vgVU7P$T" role="3clF46">
+        <property role="TrG5h" value="svgGraphics" />
+        <node concept="3uibUv" id="2v_vgVU7P$U" role="1tU5fm">
+          <ref role="3uigEE" to="nxzt:~SVGGraphics2D" resolve="SVGGraphics2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2v_vgVU7P$V" role="3clF46">
+        <property role="TrG5h" value="update" />
+        <node concept="10P_77" id="2v_vgVU7P$W" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="2v_vgVU7P$X" role="3clF47">
+        <node concept="3clFbF" id="2v_vgVU7P_0" role="3cqZAp">
+          <node concept="2OqwBi" id="2v_vgVU7Ts7" role="3clFbG">
+            <node concept="2YIFZM" id="2v_vgVU7TnD" role="2Oq$k0">
+              <ref role="37wK5l" node="2v_vgVU7Sjc" resolve="getTraversalError" />
+              <ref role="1Pybhc" node="2N2upCcAF$e" resolve="TraversalProvider" />
+            </node>
+            <node concept="liA8E" id="2v_vgVU7TAQ" role="2OqNvi">
+              <ref role="37wK5l" node="2N2upCcAFjQ" resolve="visit" />
+              <node concept="37vLTw" id="2v_vgVU7TNv" role="37wK5m">
+                <ref role="3cqZAo" node="2v_vgVU7P$R" resolve="ec" />
+              </node>
+              <node concept="37vLTw" id="2v_vgVU7Uct" role="37wK5m">
+                <ref role="3cqZAo" node="2v_vgVU7P$T" resolve="svgGraphics" />
+              </node>
+              <node concept="37vLTw" id="2v_vgVU7U_S" role="37wK5m">
+                <ref role="3cqZAo" node="2v_vgVU7P$V" resolve="update" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2v_vgVU7P$Y" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="2v_vgVU9IOg" role="lGtFl">
+        <node concept="TZ5HA" id="2v_vgVU9IOh" role="TZ5H$">
+          <node concept="1dT_AC" id="2v_vgVU9IOi" role="1dT_Ay">
+            <property role="1dT_AB" value="TODO: implement." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2v_vgVU9IOj" role="3nqlJM">
+          <property role="TUZQ4" value="EditorCell" />
+          <node concept="zr_55" id="2v_vgVU9IOl" role="zr_5Q">
+            <ref role="zr_51" node="2v_vgVU7P$R" resolve="ec" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2v_vgVU9IOm" role="3nqlJM">
+          <property role="TUZQ4" value="SVGGraphics2D" />
+          <node concept="zr_55" id="2v_vgVU9IOo" role="zr_5Q">
+            <ref role="zr_51" node="2v_vgVU7P$T" resolve="svgGraphics" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2v_vgVU9IOp" role="3nqlJM">
+          <property role="TUZQ4" value="boolean" />
+          <node concept="zr_55" id="2v_vgVU9IOr" role="zr_5Q">
+            <ref role="zr_51" node="2v_vgVU7P$V" resolve="update" />
+          </node>
+        </node>
+        <node concept="x79VA" id="2v_vgVU9IOs" role="3nqlJM">
+          <property role="x79VB" value="w3c.Element" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="2v_vgVU7P_1" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getEditorCellClass" />
+      <node concept="3Tm1VV" id="2v_vgVU7P_3" role="1B3o_S" />
+      <node concept="3uibUv" id="2v_vgVU7P_4" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+      </node>
+      <node concept="3clFbS" id="2v_vgVU7P_5" role="3clF47">
+        <node concept="3clFbF" id="2v_vgVU7Q5M" role="3cqZAp">
+          <node concept="3VsKOn" id="2v_vgVU7QlR" role="3clFbG">
+            <ref role="3VsUkX" to="g51k:~EditorCell_Component" resolve="EditorCell_Component" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2v_vgVU7P_6" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="2v_vgVU9IU3">
+    <property role="TrG5h" value="TraverseEcComponentBase" />
+    <node concept="3Tm1VV" id="2v_vgVU9IU4" role="1B3o_S" />
+    <node concept="3uibUv" id="2v_vgVU9N4H" role="EKbjA">
+      <ref role="3uigEE" node="2N2upCcAFgP" resolve="Traversal" />
+    </node>
+    <node concept="3clFb_" id="2v_vgVU9N52" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="visit" />
+      <node concept="3Tm1VV" id="2v_vgVU9N54" role="1B3o_S" />
+      <node concept="3uibUv" id="2v_vgVU9N55" role="3clF45">
+        <ref role="3uigEE" to="lhjl:~Element" resolve="Element" />
+      </node>
+      <node concept="37vLTG" id="2v_vgVU9N56" role="3clF46">
+        <property role="TrG5h" value="ec" />
+        <node concept="3uibUv" id="2v_vgVU9N57" role="1tU5fm">
+          <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2v_vgVU9N58" role="3clF46">
+        <property role="TrG5h" value="svgGraphics" />
+        <node concept="3uibUv" id="2v_vgVU9N59" role="1tU5fm">
+          <ref role="3uigEE" to="nxzt:~SVGGraphics2D" resolve="SVGGraphics2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2v_vgVU9N5a" role="3clF46">
+        <property role="TrG5h" value="update" />
+        <node concept="10P_77" id="2v_vgVU9N5b" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="2v_vgVU9N5c" role="3clF47">
+        <node concept="3clFbF" id="2v_vgVU9OrY" role="3cqZAp">
+          <node concept="2OqwBi" id="2v_vgVU9PAe" role="3clFbG">
+            <node concept="2YIFZM" id="2v_vgVU9OAV" role="2Oq$k0">
+              <ref role="37wK5l" node="2v_vgVU7Sjc" resolve="getTraversalError" />
+              <ref role="1Pybhc" node="2N2upCcAF$e" resolve="TraversalProvider" />
+            </node>
+            <node concept="liA8E" id="2v_vgVU9PFU" role="2OqNvi">
+              <ref role="37wK5l" node="2N2upCcAFjQ" resolve="visit" />
+              <node concept="37vLTw" id="2v_vgVU9PSB" role="37wK5m">
+                <ref role="3cqZAo" node="2v_vgVU9N56" resolve="ec" />
+              </node>
+              <node concept="37vLTw" id="2v_vgVU9Qh_" role="37wK5m">
+                <ref role="3cqZAo" node="2v_vgVU9N58" resolve="svgGraphics" />
+              </node>
+              <node concept="37vLTw" id="2v_vgVU9QF0" role="37wK5m">
+                <ref role="3cqZAo" node="2v_vgVU9N5a" resolve="update" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2v_vgVU9N5d" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="2v_vgVU9QIi" role="lGtFl">
+        <node concept="TZ5HA" id="2v_vgVU9QIj" role="TZ5H$">
+          <node concept="1dT_AC" id="2v_vgVU9QIk" role="1dT_Ay">
+            <property role="1dT_AB" value="TODO: implement." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2v_vgVU9QIl" role="3nqlJM">
+          <property role="TUZQ4" value="EditorCell" />
+          <node concept="zr_55" id="2v_vgVU9QIn" role="zr_5Q">
+            <ref role="zr_51" node="2v_vgVU9N56" resolve="ec" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2v_vgVU9QIo" role="3nqlJM">
+          <property role="TUZQ4" value="SVGGraphics2D" />
+          <node concept="zr_55" id="2v_vgVU9QIq" role="zr_5Q">
+            <ref role="zr_51" node="2v_vgVU9N58" resolve="svgGraphics" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2v_vgVU9QIr" role="3nqlJM">
+          <property role="TUZQ4" value="boolean" />
+          <node concept="zr_55" id="2v_vgVU9QIt" role="zr_5Q">
+            <ref role="zr_51" node="2v_vgVU9N5a" resolve="update" />
+          </node>
+        </node>
+        <node concept="x79VA" id="2v_vgVU9QIu" role="3nqlJM">
+          <property role="x79VB" value="w3c.Element" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="2v_vgVU9N5g" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getEditorCellClass" />
+      <node concept="3Tm1VV" id="2v_vgVU9N5i" role="1B3o_S" />
+      <node concept="3uibUv" id="2v_vgVU9N5j" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+      </node>
+      <node concept="3clFbS" id="2v_vgVU9N5k" role="3clF47">
+        <node concept="3clFbF" id="2v_vgVU9NA1" role="3cqZAp">
+          <node concept="3VsKOn" id="2v_vgVU9NQ8" role="3clFbG">
+            <ref role="3VsUkX" to="g51k:~EditorCell_ComponentBase" resolve="EditorCell_ComponentBase" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2v_vgVU9N5l" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
