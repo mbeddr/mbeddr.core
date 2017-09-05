@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.enumeration.demolang/de.itemis.mps.editor.enumeration.demolang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.enumeration/de.itemis.mps.editor.enumeration.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.enumeration/runtime/de.itemis.mps.editor.enumeration.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.enumeration/sandbox/de.itemis.mps.editor.enumeration.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

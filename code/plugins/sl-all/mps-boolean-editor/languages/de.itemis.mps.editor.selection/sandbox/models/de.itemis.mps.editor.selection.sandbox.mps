@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="667ad365-920c-4eda-9a36-c5f52ac6b8d4" name="de.itemis.mps.editor.selection" version="-1" />
+    <use id="de02aa7e-1387-4005-8aa1-531c2a96fba0" name="de.itemis.mps.editor.selection.demolang" version="-1" />
   </languages>
   <imports />
   <registry />

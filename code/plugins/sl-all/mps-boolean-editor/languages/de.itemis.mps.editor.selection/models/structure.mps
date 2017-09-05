@@ -13,6 +13,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -45,7 +46,8 @@
   <node concept="1TIwiD" id="3HnK7Io01_8">
     <property role="EcuMT" value="4276098008275229000" />
     <property role="TrG5h" value="CellModel_SelectionText" />
-    <property role="34LRSv" value="selection{&lt;{propertyDeclaration}&gt;}" />
+    <property role="34LRSv" value="selection" />
+    <property role="R4oN_" value="selection{&lt;{propertyDeclaration}&gt;}" />
     <ref role="1TJDcQ" to="tpc2:fBF0A4I" resolve="CellModel_Property" />
     <node concept="1TJgyj" id="3HnK7Io01Ag" role="1TKVEi">
       <property role="IQ2ns" value="4276098008275229072" />
@@ -79,7 +81,8 @@
   <node concept="1TIwiD" id="3HnK7Io01Ak">
     <property role="EcuMT" value="4276098008275229076" />
     <property role="TrG5h" value="CellModel_SelectionIcon" />
-    <property role="34LRSv" value="selectionbox{&lt;{propertyDeclaration}&gt;}" />
+    <property role="34LRSv" value="selectionbox" />
+    <property role="R4oN_" value="selectionbox{&lt;{propertyDeclaration}&gt;}" />
     <ref role="1TJDcQ" to="tpc2:fBF0A4I" resolve="CellModel_Property" />
     <node concept="1TJgyj" id="3HnK7Io01AB" role="1TKVEi">
       <property role="IQ2ns" value="4276098008275229095" />
@@ -119,6 +122,25 @@
     <property role="EcuMT" value="4276098008275242808" />
     <property role="TrG5h" value="SelectionboxDefaultIcons" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5GZVC4bksb0" role="1TKVEi">
+      <property role="IQ2ns" value="6575236218992313024" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="selectionIcons" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5GZVC4bksa3" resolve="SelectionIconRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5GZVC4bksa3">
+    <property role="EcuMT" value="6575236218992312963" />
+    <property role="TrG5h" value="SelectionIconRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5GZVC4bksa4" role="1TKVEi">
+      <property role="IQ2ns" value="6575236218992312964" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="selectionIcon" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3HnK7Io01At" resolve="SelectionIcon" />
+    </node>
   </node>
 </model>
 

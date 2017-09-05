@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e9faaf3f-8d0a-43e9-ae16-c3c2ed94c028(de.itemis.mps.editor.selection.demolang.structure)">
+<model ref="r:994e6b20-945f-4368-bc32-f11204b8007d(de.itemis.mps.editor.enumeration.demolang.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
@@ -10,6 +10,15 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -29,15 +38,32 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="3HnK7Io0edz">
-    <property role="EcuMT" value="4276098008275280739" />
-    <property role="TrG5h" value="ExampleRoot" />
+  <node concept="1TIwiD" id="1QyV25GL5Ny">
+    <property role="EcuMT" value="2135528801629920482" />
+    <property role="TrG5h" value="TestRoot" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="3HnK7Io0ed$" role="1TKVEl">
-      <property role="IQ2nx" value="4276098008275280740" />
-      <property role="TrG5h" value="stringProperty" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyi" id="1QyV25GL5NF" role="1TKVEl">
+      <property role="IQ2nx" value="2135528801629920491" />
+      <property role="TrG5h" value="test1" />
+      <ref role="AX2Wp" node="1QyV25GL5N$" resolve="TestEnum" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="1QyV25GL5N$">
+    <property role="TrG5h" value="TestEnum" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="1QyV25GL5N_" role="M5hS2">
+      <property role="1uS6qo" value="a" />
+      <property role="1uS6qv" value="a" />
+    </node>
+    <node concept="M4N5e" id="1QyV25GL5NA" role="M5hS2">
+      <property role="1uS6qo" value="b" />
+      <property role="1uS6qv" value="b" />
+    </node>
+    <node concept="M4N5e" id="1vp0nsAbecS" role="M5hS2">
+      <property role="1uS6qo" value="c" />
+      <property role="1uS6qv" value="c" />
     </node>
   </node>
 </model>
