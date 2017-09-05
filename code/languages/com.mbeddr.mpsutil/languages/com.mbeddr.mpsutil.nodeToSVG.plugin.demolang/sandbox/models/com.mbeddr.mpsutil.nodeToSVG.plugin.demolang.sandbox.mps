@@ -37,5 +37,11 @@
     <ref role="xs1Ux" node="3TqHf8v8TaN" resolve="default_" />
     <ref role="xs1U$" node="3TqHf8v8TaP" resolve="second_" />
   </node>
+  <node concept="3bmoey" id="2v_vgVUgOkj">
+    <property role="TrG5h" value="four" />
+    <ref role="3bmL7A" node="3TqHf8v8TaN" resolve="default_" />
+    <ref role="xs1Ux" node="3TqHf8v8TaN" resolve="default_" />
+    <ref role="xs1U$" node="2v_vgVUgOkj" resolve="four" />
+  </node>
 </model>
 
