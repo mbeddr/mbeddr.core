@@ -189,7 +189,6 @@
       <concept id="5785245534400582270" name="com.mbeddr.cc.requirements.scenario2doc.structure.Scenarios2DocConfigItem" flags="ng" index="C5s1n" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="671216505796623802" name="com.mbeddr.core.base.structure.DefaultAssessmentSummary" flags="ng" index="qc_Tx">
         <property id="671216505796623807" name="newlyAdded" index="qc_T$" />
         <property id="671216505796623806" name="ok" index="qc_T_" />
@@ -230,9 +229,6 @@
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
-      </concept>
     </language>
     <language id="7a52ca96-9053-41d2-ae13-8cee05f36698" name="com.mbeddr.cc.requirements.c2doc">
       <concept id="5785245534400582270" name="com.mbeddr.cc.requirements.c2doc.structure.RequirementsC2DocConfigItem" flags="ng" index="C5s1o" />
@@ -259,6 +255,14 @@
       </concept>
       <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
+      </concept>
+    </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="e865cad2-7cc8-437a-951a-665bcbcb8b1a" name="com.mbeddr.cc.requirements">
@@ -1765,7 +1769,9 @@
     <property role="TrG5h" value="Config" />
     <node concept="2SbYGw" id="519ky_SpGLu" role="Cbewh">
       <property role="TrG5h" value="temp" />
-      <node concept="9PVaO" id="2iGZqsHPPqc" role="9PVG_">
+      <node concept="9PVaO" id="6HUmFahzA$" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="temp" />
       </node>
     </node>
