@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:174967fe-415c-4e71-855a-2def28cd8f4d(de.itemis.mps.editor.bool.demolang.editor)">
   <persistence version="9" />
-  <attribute name="concise" value="true" />
   <languages>
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -98,7 +97,7 @@
           </node>
           <node concept="2iRfu4" id="6bmIkNC4$I5" role="2iSdaV" />
         </node>
-        <node concept="3F0ifn" id="6bmIkNC4BbV" role="3EZMnx" />
+        <node concept="3F0ifn" id="3HnK7Io0hSM" role="3EZMnx" />
         <node concept="3EZMnI" id="6bmIkNC4$IU" role="3EZMnx">
           <node concept="VPM3Z" id="6bmIkNC4$IW" role="3F10Kt">
             <property role="VOm3f" value="false" />
@@ -146,6 +145,9 @@
             <ref role="1NtTu8" to="81p:4g2H4r3UdeO" resolve="testproperty" />
           </node>
           <node concept="2iRfu4" id="6bmIkNC4$HC" role="2iSdaV" />
+        </node>
+        <node concept="3F0A7n" id="1ZAaMb1bK2n" role="3EZMnx">
+          <ref role="1NtTu8" to="81p:QvUN5MYk1L" resolve="stringProperty" />
         </node>
         <node concept="3F0ifn" id="6bmIkNC4E6m" role="3EZMnx" />
         <node concept="3F0ifn" id="7m16RPrk3lL" role="3EZMnx">
