@@ -19,6 +19,7 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
+    <import index="gkt" ref="r:f29b6853-4e1d-40bc-a331-9233266a6f31(com.mbeddr.ext.units.runtime.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="rmg4" ref="r:18211265-1331-48c8-8298-565ed01be497(com.mbeddr.core.unittest.behavior)" implicit="true" />
   </imports>
@@ -32,6 +33,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1224500799915" name="jetbrains.mps.baseLanguage.structure.BitwiseXorExpression" flags="nn" index="pVQyQ" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -1235,6 +1237,35 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbJ" id="16Hl1ytZbjw" role="3cqZAp">
+            <node concept="3clFbS" id="16Hl1ytZbjx" role="3clFbx">
+              <node concept="2MkqsV" id="16Hl1ytZbjy" role="3cqZAp">
+                <node concept="Xl_RD" id="16Hl1ytZbjz" role="2MkJ7o">
+                  <property role="Xl_RC" value="An annotated type and a non-annotated type is not comparable!" />
+                </node>
+                <node concept="1YBJjd" id="16Hl1yu26FD" role="2OEOjV">
+                  <ref role="1YBMHb" node="x1qBkTy4v" resolve="sboas" />
+                </node>
+              </node>
+            </node>
+            <node concept="pVQyQ" id="16Hl1ytZbj_" role="3clFbw">
+              <node concept="2YIFZM" id="16Hl1ytZbjA" role="3uHU7B">
+                <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                <ref role="37wK5l" to="gkt:26hWC1Idg93" resolve="isUnitLessType" />
+                <node concept="37vLTw" id="16Hl1yu25X6" role="37wK5m">
+                  <ref role="3cqZAo" node="3xLG8$efdn$" resolve="exp" />
+                </node>
+              </node>
+              <node concept="2YIFZM" id="16Hl1ytZbjC" role="3uHU7w">
+                <ref role="37wK5l" to="gkt:26hWC1Idg93" resolve="isUnitLessType" />
+                <ref role="1Pybhc" to="gkt:4jkbLB5RJZL" resolve="UnitConversionUtil" />
+                <node concept="37vLTw" id="16Hl1yu26vj" role="37wK5m">
+                  <ref role="3cqZAo" node="3xLG8$efdnH" resolve="act" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="16Hl1yu25nK" role="3cqZAp" />
         </node>
         <node concept="2OqwBi" id="6Kj2zNCqk8Q" role="3clFbw">
           <node concept="2qgKlT" id="6Kj2zNCqkpY" role="2OqNvi">
