@@ -5,20 +5,21 @@
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.documentation/com.mbeddr.documentation.devkit" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.expressions/com.mbeddr.doc.expressions.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_latex/com.mbeddr.doc.gen_latex.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_xhtml/com.mbeddr.doc.gen_xhtml.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.latex/com.mbeddr.doc.latex.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.meta/com.mbeddr.doc.meta.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.qa/com.mbeddr.doc.qa.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.self/com.mbeddr.doc.self.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc/doc.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc/solutions/pluginssolution/com.mbeddr.doc.pluginsolution.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.slides/com.mbeddr.slides.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.spreadsheat/spreadsheat.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/terms/com.mbeddr.doc.terms.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.slides.sandbox/com.mbeddr.doc.slides.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.spreadsheat.sandbox/com.mbeddr.spreadsheat.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.expressions/com.mbeddr.doc.expressions.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_latex/com.mbeddr.doc.gen_latex.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_xhtml/com.mbeddr.doc.gen_xhtml.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.latex/com.mbeddr.doc.latex.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.meta/com.mbeddr.doc.meta.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.qa/com.mbeddr.doc.qa.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.self/com.mbeddr.doc.self.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc/doc.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc/solutions/pluginssolution/com.mbeddr.doc.pluginsolution.msd" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.slides/com.mbeddr.slides.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.spreadsheat/spreadsheat.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/terms/com.mbeddr.doc.terms.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.slides.sandbox/com.mbeddr.doc.slides.sandbox.msd" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.test.documents/com.mbeddr.doc.test.documents.msd" folder="test" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.spreadsheat.sandbox/com.mbeddr.spreadsheat.sandbox.msd" folder="lang" />
     </projectModules>
   </component>
 </project>
