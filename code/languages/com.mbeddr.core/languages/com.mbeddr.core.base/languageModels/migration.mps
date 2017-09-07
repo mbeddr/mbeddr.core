@@ -136,7 +136,7 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="6911370362349121511" name="jetbrains.mps.lang.smodel.structure.ConceptId" flags="ng" index="2x4n5u">
+      <concept id="6911370362349121511" name="jetbrains.mps.lang.smodel.structure.ConceptId" flags="nn" index="2x4n5u">
         <property id="6911370362349122519" name="conceptName" index="2x4mPI" />
         <property id="6911370362349121516" name="conceptId" index="2x4n5l" />
         <property id="6911370362349133804" name="isInterface" index="2x4o5l" />
@@ -149,7 +149,7 @@
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
-      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
@@ -22286,6 +22286,2979 @@
       <node concept="2pBcaW" id="VdALacrzap" role="hSBgs">
         <property role="2pBcoG" value="1777614315915103476" />
         <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@58792" />
+      </node>
+    </node>
+  </node>
+  <node concept="W$Crc" id="4pIcGABEqiz">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="2" />
+    <property role="TrG5h" value="RefactoringLog_2" />
+    <node concept="1w76tK" id="4pIcGABEqi$" role="1w76sc">
+      <node concept="1w76tN" id="4pIcGABEqi_" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="4pIcGABEqiA" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="4pIcGABEqiB" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqiD" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsz" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103305" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="CellEditorScreenshooter" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqiC" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103305" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="CellEditorScreenshooter" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqiF" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEps$" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103306" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="PublicVisibility@58870" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqiE" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103306" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="PublicVisibility@58870" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqiH" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEps_" role="hSBgu">
+        <property role="2pBcoG" value="8845474088395277573" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="PlaceholderMember@33100" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqiG" role="hSBgs">
+        <property role="2pBcoG" value="8845474088395277573" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="PlaceholderMember@33100" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqiL" role="W$Crh">
+      <property role="hSBgo" value="moveNode.moveStaticMethod" />
+      <node concept="34ulmB" id="4pIcGABEpsC" role="hSBgu">
+        <node concept="2pBcaW" id="4pIcGABEpsA" role="34ulmC">
+          <property role="2pBcoG" value="1777614315915103307" />
+          <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+          <property role="2pBc3U" value="takeScreenshot" />
+        </node>
+        <node concept="2pBcaW" id="4pIcGABEpsB" role="34ulmE">
+          <property role="2pBcoG" value="1777614315915103305" />
+          <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+          <property role="2pBc3U" value="CellEditorScreenshooter" />
+        </node>
+      </node>
+      <node concept="34ulmB" id="4pIcGABEqiK" role="hSBgs">
+        <node concept="2pBcaW" id="4pIcGABEqiI" role="34ulmC">
+          <property role="2pBcoG" value="1777614315915103307" />
+          <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+          <property role="2pBc3U" value="takeScreenshot" />
+        </node>
+        <node concept="2pBcaW" id="4pIcGABEqiJ" role="34ulmE">
+          <property role="2pBcoG" value="1777614315915103305" />
+          <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+          <property role="2pBc3U" value="CellEditorScreenshooter" />
+        </node>
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqiN" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsD" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103307" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="takeScreenshot" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqiM" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103307" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="takeScreenshot" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqiP" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsE" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103308" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VoidType@58864" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqiO" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103308" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VoidType@58864" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqiR" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsF" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103309" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="PublicVisibility@58863" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqiQ" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103309" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="PublicVisibility@58863" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqiT" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsG" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103310" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StatementList@58866" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqiS" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103310" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StatementList@58866" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqiV" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsH" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103311" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@58865" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqiU" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103311" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@58865" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqiX" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsI" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103312" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticMethodCall@58892" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqiW" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103312" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticMethodCall@58892" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqiZ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsJ" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103313" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@58891" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqiY" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103313" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@58891" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqj1" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsK" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103316" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@58888" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqj0" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103316" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@58888" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqj3" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsL" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142933263" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="GenericNewExpression@113784" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqj2" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142933263" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="GenericNewExpression@113784" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqj5" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsM" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142937276" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ArrayCreator@117705" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqj4" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142937276" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ArrayCreator@117705" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqj7" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsN" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142937278" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DimensionExpression@117703" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqj6" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142937278" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DimensionExpression@117703" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqj9" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsO" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142937709" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="IntegerConstant@117146" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqj8" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142937709" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="IntegerConstant@117146" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjb" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsP" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142937221" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StringType@117762" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqja" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142937221" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StringType@117762" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjd" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsQ" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103317" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="n" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjc" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103317" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="n" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjf" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsR" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103318" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="SNodeType@58890" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqje" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103318" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="SNodeType@58890" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjh" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsS" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103323" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="imageFileName" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjg" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103323" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="imageFileName" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjj" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsT" role="hSBgu">
+        <property role="2pBcoG" value="1777614315918218737" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StringType@24219" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqji" role="hSBgs">
+        <property role="2pBcoG" value="1777614315918218737" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StringType@24219" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjl" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsU" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142871888" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="PlaceholderMember@117940" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjk" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142871888" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="PlaceholderMember@117940" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjp" role="W$Crh">
+      <property role="hSBgo" value="moveNode.moveStaticMethod" />
+      <node concept="34ulmB" id="4pIcGABEpsX" role="hSBgu">
+        <node concept="2pBcaW" id="4pIcGABEpsV" role="34ulmC">
+          <property role="2pBcoG" value="5843576916142870980" />
+          <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+          <property role="2pBc3U" value="takeScreenshot" />
+        </node>
+        <node concept="2pBcaW" id="4pIcGABEpsW" role="34ulmE">
+          <property role="2pBcoG" value="1777614315915103305" />
+          <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+          <property role="2pBc3U" value="CellEditorScreenshooter" />
+        </node>
+      </node>
+      <node concept="34ulmB" id="4pIcGABEqjo" role="hSBgs">
+        <node concept="2pBcaW" id="4pIcGABEqjm" role="34ulmC">
+          <property role="2pBcoG" value="5843576916142870980" />
+          <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+          <property role="2pBc3U" value="takeScreenshot" />
+        </node>
+        <node concept="2pBcaW" id="4pIcGABEqjn" role="34ulmE">
+          <property role="2pBcoG" value="1777614315915103305" />
+          <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+          <property role="2pBc3U" value="CellEditorScreenshooter" />
+        </node>
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjr" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsY" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142870980" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="takeScreenshot" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjq" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142870980" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="takeScreenshot" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjt" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpsZ" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142870981" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VoidType@119105" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjs" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142870981" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VoidType@119105" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjv" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpt0" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142870982" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="PublicVisibility@119102" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqju" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142870982" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="PublicVisibility@119102" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjx" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpt1" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142870983" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StatementList@119103" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjw" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142870983" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StatementList@119103" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjz" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpt2" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142870984" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@119100" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjy" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142870984" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@119100" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqj_" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpt3" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142870985" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticMethodCall@119101" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqj$" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142870985" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticMethodCall@119101" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjB" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpt4" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142870986" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@119098" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjA" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142870986" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@119098" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjD" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpt5" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142870988" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@119096" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjC" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142870988" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@119096" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjF" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpt6" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142938178" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@116675" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjE" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142938178" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@116675" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjH" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpt7" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142870989" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="n" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjG" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142870989" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="n" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjJ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpt8" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142870990" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="SNodeType@119094" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjI" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142870990" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="SNodeType@119094" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjL" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpt9" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142870993" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="imageFileName" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjK" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142870993" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="imageFileName" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjN" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpta" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142870994" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StringType@119090" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjM" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142870994" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StringType@119090" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjP" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptb" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142872725" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="hints" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjO" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142872725" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="hints" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjR" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptc" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142876904" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ArrayType@120860" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjQ" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142876904" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ArrayType@120860" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjT" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptd" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142876770" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StringType@120738" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjS" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142876770" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StringType@120738" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjV" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpte" role="hSBgu">
+        <property role="2pBcoG" value="8845474088395278491" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="PlaceholderMember@32194" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqjU" role="hSBgs">
+        <property role="2pBcoG" value="8845474088395278491" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="PlaceholderMember@32194" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqjZ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.moveStaticMethod" />
+      <node concept="34ulmB" id="4pIcGABEpth" role="hSBgu">
+        <node concept="2pBcaW" id="4pIcGABEptf" role="34ulmC">
+          <property role="2pBcoG" value="1777614315915103325" />
+          <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+          <property role="2pBc3U" value="createImage" />
+        </node>
+        <node concept="2pBcaW" id="4pIcGABEptg" role="34ulmE">
+          <property role="2pBcoG" value="1777614315915103305" />
+          <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+          <property role="2pBc3U" value="CellEditorScreenshooter" />
+        </node>
+      </node>
+      <node concept="34ulmB" id="4pIcGABEqjY" role="hSBgs">
+        <node concept="2pBcaW" id="4pIcGABEqjW" role="34ulmC">
+          <property role="2pBcoG" value="1777614315915103325" />
+          <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+          <property role="2pBc3U" value="createImage" />
+        </node>
+        <node concept="2pBcaW" id="4pIcGABEqjX" role="34ulmE">
+          <property role="2pBcoG" value="1777614315915103305" />
+          <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+          <property role="2pBc3U" value="CellEditorScreenshooter" />
+        </node>
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqk1" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpti" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103325" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="createImage" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqk0" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103325" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="createImage" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqk3" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptj" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103326" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="PrivateVisibility@58882" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqk2" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103326" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="PrivateVisibility@58882" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqk5" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptk" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103327" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VoidType@58881" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqk4" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103327" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VoidType@58881" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqk7" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptl" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103328" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="n" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqk6" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103328" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="n" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqk9" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptm" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103329" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="SNodeType@58907" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqk8" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103329" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="SNodeType@58907" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkb" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptn" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103334" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="imageFileName" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqka" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103334" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="imageFileName" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkd" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpto" role="hSBgu">
+        <property role="2pBcoG" value="1777614315918235993" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StringType@70387" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkc" role="hSBgs">
+        <property role="2pBcoG" value="1777614315918235993" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StringType@70387" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkf" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptp" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142876957" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="hints" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqke" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142876957" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="hints" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkh" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptq" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142876958" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ArrayType@120934" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkg" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142876958" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ArrayType@120934" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkj" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptr" role="hSBgu">
+        <property role="2pBcoG" value="5843576916142876959" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StringType@120935" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqki" role="hSBgs">
+        <property role="2pBcoG" value="5843576916142876959" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StringType@120935" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkl" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpts" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103336" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StatementList@58900" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkk" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103336" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StatementList@58900" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkn" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptt" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103337" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="TryCatchStatement@58899" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkm" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103337" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="TryCatchStatement@58899" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkp" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptu" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103338" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StatementList@58902" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqko" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103338" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StatementList@58902" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkr" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptv" role="hSBgu">
+        <property role="2pBcoG" value="6722479689594293900" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="Statement@69221" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkq" role="hSBgs">
+        <property role="2pBcoG" value="6722479689594293900" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="Statement@69221" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkt" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptw" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103339" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@58901" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqks" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103339" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@58901" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkv" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptx" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329758" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticMethodCall@57543" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqku" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329758" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticMethodCall@57543" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkx" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpty" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329759" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="GenericNewExpression@57542" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkw" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329759" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="GenericNewExpression@57542" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkz" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptz" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329760" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="AnonymousClassCreator@57497" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqky" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329760" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="AnonymousClassCreator@57497" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqk_" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpt$" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329761" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="Runnable$anonymous" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqk$" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329761" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="Runnable$anonymous" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkB" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpt_" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329762" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="PublicVisibility@57499" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkA" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329762" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="PublicVisibility@57499" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkD" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptA" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329763" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="run" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkC" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329763" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="run" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkF" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptB" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329764" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="PublicVisibility@57501" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkE" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329764" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="PublicVisibility@57501" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkH" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptC" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329765" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VoidType@57500" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkG" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329765" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VoidType@57500" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkJ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptD" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329766" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StatementList@57503" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkI" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329766" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StatementList@57503" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkL" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptE" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329767" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExecuteLightweightCommandStatement@57502" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkK" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329767" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExecuteLightweightCommandStatement@57502" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkN" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptF" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329768" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="CommandClosureLiteral@57489" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkM" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329768" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="CommandClosureLiteral@57489" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkP" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptG" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329769" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StatementList@57488" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkO" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329769" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StatementList@57488" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkR" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptH" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329770" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57491" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkQ" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329770" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57491" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkT" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptI" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329771" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="editorComp" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkS" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329771" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="editorComp" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkV" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptJ" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329772" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ClassifierType@57493" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkU" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329772" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ClassifierType@57493" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkX" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptK" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329773" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="GenericNewExpression@57492" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkW" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329773" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="GenericNewExpression@57492" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqkZ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptL" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329774" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ClassCreator@57495" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqkY" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329774" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ClassCreator@57495" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEql1" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptM" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329775" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57494" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEql0" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329775" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57494" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEql3" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptN" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329776" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57513" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEql2" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329776" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57513" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEql5" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptO" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329777" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57512" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEql4" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329777" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57512" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEql7" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptP" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329778" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="SemanticDowncastExpression@57515" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEql6" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329778" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="SemanticDowncastExpression@57515" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEql9" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptQ" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329779" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57514" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEql8" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329779" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57514" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlb" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptR" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329780" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57517" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqla" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329780" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57517" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqld" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptS" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329781" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57516" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlc" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329781" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57516" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlf" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptT" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329782" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="IfStatement@57519" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqle" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329782" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="IfStatement@57519" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlh" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptU" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329783" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StatementList@57518" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlg" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329783" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StatementList@57518" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlj" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptV" role="hSBgu">
+        <property role="2pBcoG" value="5075049671775827348" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="BaseCommentAttribute@59684" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqli" role="hSBgs">
+        <property role="2pBcoG" value="5075049671775827348" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="BaseCommentAttribute@59684" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqll" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptW" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329784" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@57505" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlk" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329784" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@57505" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqln" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptX" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329785" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57504" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlm" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329785" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57504" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlp" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptY" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329786" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57507" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlo" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329786" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57507" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlr" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEptZ" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329787" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57506" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlq" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329787" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57506" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlt" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpu0" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329788" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57509" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqls" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329788" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57509" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlv" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpu1" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329789" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57508" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlu" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329789" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57508" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlx" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpu2" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329790" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57511" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlw" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329790" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57511" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlz" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpu3" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329791" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57510" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqly" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329791" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57510" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEql_" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpu4" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329792" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57337" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEql$" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329792" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57337" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlB" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpu5" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329793" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57336" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlA" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329793" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57336" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlD" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpu6" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329794" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57339" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlC" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329794" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57339" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlF" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpu7" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329795" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="cell" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlE" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329795" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="cell" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlH" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpu8" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329796" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ClassifierType@57341" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlG" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329796" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ClassifierType@57341" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlJ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpu9" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329797" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57340" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlI" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329797" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57340" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlL" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpua" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329798" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57343" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlK" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329798" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57343" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlN" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpub" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329799" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57342" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlM" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329799" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57342" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlP" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuc" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329800" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57329" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlO" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329800" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57329" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlR" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpud" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329801" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="width" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlQ" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329801" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="width" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlT" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpue" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329802" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="IntegerType@57331" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlS" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329802" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="IntegerType@57331" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlV" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuf" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329803" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="PlusExpression@57330" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlU" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329803" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="PlusExpression@57330" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlX" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpug" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329804" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="IntegerConstant@57333" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlW" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329804" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="IntegerConstant@57333" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqlZ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuh" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329805" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57332" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqlY" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329805" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57332" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqm1" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpui" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329806" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57335" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqm0" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329806" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57335" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqm3" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuj" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329807" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57334" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqm2" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329807" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57334" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqm5" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuk" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329808" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57353" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqm4" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329808" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57353" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqm7" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpul" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329809" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="height" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqm6" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329809" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="height" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqm9" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpum" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329810" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="IntegerType@57355" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqm8" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329810" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="IntegerType@57355" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmb" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpun" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329811" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="PlusExpression@57354" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqma" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329811" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="PlusExpression@57354" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmd" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuo" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329812" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="IntegerConstant@57357" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmc" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329812" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="IntegerConstant@57357" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmf" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpup" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329813" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57356" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqme" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329813" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57356" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmh" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuq" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329814" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57359" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmg" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329814" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57359" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmj" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpur" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329815" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57358" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmi" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329815" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57358" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqml" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpus" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329816" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="Statement@57345" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmk" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329816" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="Statement@57345" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmn" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEput" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329817" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57344" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmm" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329817" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57344" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmp" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuu" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329818" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="image" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmo" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329818" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="image" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmr" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuv" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329819" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ClassifierType@57346" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmq" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329819" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ClassifierType@57346" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmt" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuw" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329820" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="GenericNewExpression@57349" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqms" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329820" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="GenericNewExpression@57349" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmv" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpux" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329821" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ClassCreator@57348" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmu" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329821" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ClassCreator@57348" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmx" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuy" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329822" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57351" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmw" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329822" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57351" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmz" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuz" role="hSBgu">
+        <property role="2pBcoG" value="8027619142979851594" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@48757" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmy" role="hSBgs">
+        <property role="2pBcoG" value="8027619142979851594" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@48757" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqm_" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpu$" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329824" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticFieldReference@57305" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqm$" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329824" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticFieldReference@57305" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmB" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpu_" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329825" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57304" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmA" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329825" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57304" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmD" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuA" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329826" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="g" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmC" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329826" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="g" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmF" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuB" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329827" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ClassifierType@57306" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmE" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329827" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ClassifierType@57306" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmH" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuC" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329828" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57309" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmG" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329828" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57309" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmJ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuD" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329829" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57308" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmI" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329829" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57308" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmL" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuE" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329830" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57311" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmK" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329830" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57311" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmN" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuF" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489210826" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@78277" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmM" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489210826" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@78277" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmP" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuG" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489213306" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@76629" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmO" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489213306" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@76629" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmR" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuH" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489210824" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@78279" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmQ" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489210824" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@78279" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmT" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuI" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489216165" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@76084" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmS" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489216165" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@76084" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmV" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuJ" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489232291" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticFieldReference@58926" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmU" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489232291" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticFieldReference@58926" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmX" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuK" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489264472" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticFieldReference@25399" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmW" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489264472" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticFieldReference@25399" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqmZ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuL" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489275786" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@81922" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqmY" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489275786" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@81922" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqn1" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuM" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489275787" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@81923" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqn0" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489275787" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@81923" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqn3" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuN" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489275788" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@81928" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqn2" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489275788" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@81928" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqn5" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuO" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489275789" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@81929" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqn4" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489275789" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@81929" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqn7" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuP" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489290137" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticFieldReference@67573" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqn6" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489290137" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticFieldReference@67573" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqn9" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuQ" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489313895" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticFieldReference@42607" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqn8" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489313895" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticFieldReference@42607" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnb" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuR" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489282644" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@72768" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqna" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489282644" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@72768" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnd" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuS" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489282645" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@72769" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnc" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489282645" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@72769" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnf" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuT" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489282646" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@72766" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqne" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489282646" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@72766" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnh" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuU" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489282647" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@72767" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqng" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489282647" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@72767" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnj" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuV" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489302136" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticFieldReference@55380" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqni" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489302136" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticFieldReference@55380" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnl" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuW" role="hSBgu">
+        <property role="2pBcoG" value="9142018459489325657" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticFieldReference@29749" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnk" role="hSBgs">
+        <property role="2pBcoG" value="9142018459489325657" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticFieldReference@29749" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnn" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuX" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329831" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@57310" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnm" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329831" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@57310" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnp" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuY" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329832" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57297" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqno" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329832" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57297" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnr" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpuZ" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329833" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57296" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnq" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329833" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57296" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnt" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpv0" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329834" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57299" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqns" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329834" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57299" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnv" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpv1" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329835" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticFieldReference@57298" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnu" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329835" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticFieldReference@57298" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnx" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpv2" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329836" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@57301" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnw" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329836" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@57301" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnz" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpv3" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329837" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57300" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqny" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329837" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57300" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqn_" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpv4" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329838" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57303" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqn$" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329838" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57303" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnB" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpv5" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329839" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57302" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnA" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329839" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57302" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnD" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpv6" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329840" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="IntegerConstant@57321" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnC" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329840" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="IntegerConstant@57321" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnF" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpv7" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329841" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="IntegerConstant@57320" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnE" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329841" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="IntegerConstant@57320" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnH" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpv8" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329842" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57323" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnG" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329842" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57323" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnJ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpv9" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329843" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57322" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnI" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329843" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57322" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnL" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpva" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329844" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@57325" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnK" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329844" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@57325" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnN" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvb" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329845" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57324" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnM" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329845" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57324" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnP" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvc" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329846" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ParenthesizedExpression@57327" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnO" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329846" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ParenthesizedExpression@57327" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnR" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvd" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329847" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="CastExpression@57326" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnQ" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329847" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="CastExpression@57326" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnT" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpve" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329848" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57313" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnS" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329848" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57313" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnV" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvf" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329849" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ClassifierType@57312" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnU" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329849" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ClassifierType@57312" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnX" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvg" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329850" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57315" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnW" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329850" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57315" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqnZ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvh" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329851" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57314" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqnY" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329851" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57314" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqo1" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvi" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329852" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticMethodCall@57317" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqo0" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329852" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticMethodCall@57317" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqo3" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvj" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329853" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@57316" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqo2" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329853" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@57316" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqo5" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvk" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329854" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57319" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqo4" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329854" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57319" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqo7" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvl" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329855" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ParenthesizedExpression@57318" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqo6" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329855" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ParenthesizedExpression@57318" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqo9" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvm" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329856" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="CastExpression@57401" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqo8" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329856" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="CastExpression@57401" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqob" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvn" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329857" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57400" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoa" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329857" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57400" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqod" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvo" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329858" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ClassifierType@57403" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoc" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329858" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ClassifierType@57403" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqof" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvp" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329859" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57402" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoe" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329859" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57402" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoh" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvq" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329860" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57405" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqog" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329860" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57405" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoj" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvr" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329861" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="TryStatement@57404" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoi" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329861" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="TryStatement@57404" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqol" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvs" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329862" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StatementList@57407" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqok" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329862" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StatementList@57407" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqon" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvt" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329863" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57406" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqom" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329863" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="LocalVariableDeclarationStatement@57406" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqop" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvu" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329864" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="t" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoo" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329864" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="t" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqor" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvv" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329865" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ClassifierType@57392" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoq" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329865" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ClassifierType@57392" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqot" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvw" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329866" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="GenericNewExpression@57395" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqos" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329866" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="GenericNewExpression@57395" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqov" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvx" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329867" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DefaultClassCreator@57394" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqou" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329867" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DefaultClassCreator@57394" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqox" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvy" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329868" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@57397" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqow" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329868" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@57397" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoz" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvz" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329869" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StaticMethodCall@57396" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoy" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329869" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StaticMethodCall@57396" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqo_" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpv$" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329870" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57399" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqo$" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329870" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57399" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoB" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpv_" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329871" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57398" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoA" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329871" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57398" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoD" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvA" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329872" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57417" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoC" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329872" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57417" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoF" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvB" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329873" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57416" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoE" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329873" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57416" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoH" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvC" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329874" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="IntegerConstant@57419" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoG" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329874" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="IntegerConstant@57419" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoJ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvD" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329875" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="png" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoI" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329875" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="png" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoL" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvE" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329876" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="GenericNewExpression@57421" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoK" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329876" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="GenericNewExpression@57421" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoN" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvF" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329877" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ClassCreator@57420" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoM" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329877" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ClassCreator@57420" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoP" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvG" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329878" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57423" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoO" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329878" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57423" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoR" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvH" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329879" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="CatchClause@57422" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoQ" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329879" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="CatchClause@57422" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoT" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvI" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329880" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ex" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoS" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329880" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ex" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoV" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvJ" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329881" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ClassifierType@57408" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoU" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329881" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ClassifierType@57408" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoX" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvK" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329882" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StatementList@57411" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoW" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329882" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StatementList@57411" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqoZ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvL" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329883" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@57410" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqoY" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329883" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@57410" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqp1" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvM" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329884" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57413" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqp0" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329884" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57413" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqp3" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvN" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329885" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57412" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqp2" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329885" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57412" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqp5" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvO" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329886" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57415" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqp4" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329886" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57415" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqp7" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvP" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329887" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@57414" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqp6" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329887" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@57414" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqp9" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvQ" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329888" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57369" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqp8" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329888" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57369" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpb" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvR" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329889" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57368" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpa" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329889" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57368" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpd" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvS" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329890" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57371" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpc" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329890" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57371" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpf" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvT" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329891" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57370" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpe" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329891" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57370" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqph" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvU" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329892" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57373" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpg" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329892" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57373" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpj" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvV" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329893" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StatementList@57372" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpi" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329893" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StatementList@57372" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpl" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvW" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329894" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@57375" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpk" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329894" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@57375" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpn" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvX" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329895" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@57374" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpm" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329895" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@57374" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpp" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvY" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329896" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@57361" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpo" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329896" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@57361" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpr" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpvZ" role="hSBgu">
+        <property role="2pBcoG" value="6722479689595329897" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57360" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpq" role="hSBgs">
+        <property role="2pBcoG" value="6722479689595329897" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@57360" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpt" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpw0" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103468" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="Statement@58768" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqps" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103468" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="Statement@58768" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpv" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpw1" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103469" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="CatchClause@58767" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpu" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103469" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="CatchClause@58767" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpx" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpw2" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103470" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ex" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpw" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103470" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ex" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpz" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpw3" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103471" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ClassifierType@58769" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpy" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103471" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ClassifierType@58769" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqp_" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpw4" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103472" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="StatementList@58796" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqp$" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103472" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="StatementList@58796" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpB" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpw5" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103473" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="ExpressionStatement@58795" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpA" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103473" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="ExpressionStatement@58795" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpD" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpw6" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103474" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="DotExpression@58798" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpC" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103474" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="DotExpression@58798" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpF" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpw7" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103475" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="VariableReference@58797" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpE" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103475" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+        <property role="2pBc3U" value="VariableReference@58797" />
+      </node>
+    </node>
+    <node concept="7amoh" id="4pIcGABEqpH" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="4pIcGABEpw8" role="hSBgu">
+        <property role="2pBcoG" value="1777614315915103476" />
+        <property role="2pBcow" value="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+        <property role="2pBc3U" value="InstanceMethodCallOperation@58792" />
+      </node>
+      <node concept="2pBcaW" id="4pIcGABEqpG" role="hSBgs">
+        <property role="2pBcoG" value="1777614315915103476" />
+        <property role="2pBcow" value="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
         <property role="2pBc3U" value="InstanceMethodCallOperation@58792" />
       </node>
     </node>
