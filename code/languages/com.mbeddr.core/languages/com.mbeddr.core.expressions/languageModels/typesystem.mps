@@ -11720,27 +11720,16 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3fqX7Q" id="7ii2FhSpevN" role="3clFbw">
-                  <node concept="2OqwBi" id="7ii2FhSp7Vi" role="3fr31v">
-                    <node concept="2OqwBi" id="7ii2FhSp6By" role="2Oq$k0">
-                      <node concept="2QUAEa" id="7ii2FhSp6lU" role="2Oq$k0" />
-                      <node concept="liA8E" id="7ii2FhSp7M$" role="2OqNvi">
-                        <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
-                      </node>
+                <node concept="3y3z36" id="2bJJ_DhjYNx" role="3clFbw">
+                  <node concept="37vLTw" id="2bJJ_DhjZc$" role="3uHU7w">
+                    <ref role="3cqZAo" node="7ii2FhSunev" resolve="prescribed" />
+                  </node>
+                  <node concept="2OqwBi" id="2bJJ_DhjXWN" role="3uHU7B">
+                    <node concept="1YBJjd" id="2bJJ_DhjXGv" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7ii2FhSp42l" resolve="it" />
                     </node>
-                    <node concept="liA8E" id="7ii2FhSp8rW" role="2OqNvi">
-                      <ref role="37wK5l" to="u78q:~SubtypingManager.isSubtype(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):boolean" resolve="isSubtype" />
-                      <node concept="2OqwBi" id="7ii2FhSp8BY" role="37wK5m">
-                        <node concept="1YBJjd" id="7ii2FhSp8$h" role="2Oq$k0">
-                          <ref role="1YBMHb" node="7ii2FhSp42l" resolve="it" />
-                        </node>
-                        <node concept="3TrEf2" id="7ii2FhSp9rR" role="2OqNvi">
-                          <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
-                        </node>
-                      </node>
-                      <node concept="37vLTw" id="7ii2FhSune_" role="37wK5m">
-                        <ref role="3cqZAo" node="7ii2FhSunev" resolve="prescribed" />
-                      </node>
+                    <node concept="3TrEf2" id="2bJJ_DhjYw_" role="2OqNvi">
+                      <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
                     </node>
                   </node>
                 </node>
