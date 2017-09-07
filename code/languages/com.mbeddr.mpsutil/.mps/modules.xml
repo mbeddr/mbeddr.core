@@ -31,6 +31,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoreimporter.testing/com.mbeddr.mpsutil.ecore.testing.mpl" folder="rest.ecore.impl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoreimporter.util/com.mbeddr.mpsutil.ecore.mpl" folder="rest.ecore.impl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel/com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.mpl" folder="rest.ecore.tests" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoretransofmation.sandbox/com.mbeddr.mpsutil.ecoretransofmation.sandbox.mpl" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide.execution.lang/com.mbeddr.mpsutil.editingGuide.execution.lang.mpl" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide/com.mbeddr.mpsutil.editingGuide.mpl" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" folder="staging.querylist" />
@@ -47,15 +48,24 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells.runtimelang/com.mbeddr.mpsutil.grammarcells.runtimelang.mpl" folder="staging.grammarCells" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells.sandboxlang/com.mbeddr.mpsutil.grammarcells.sandboxlang.mpl" folder="staging.grammarCells" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.mpl" folder="staging.grammarCells" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream.example/com.mbeddr.mpsutil.graphstream.example.mpl" folder="staging.graphstream.example" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream.example/sandbox/com.mbeddr.mpsutil.graphstream.example.sandbox.msd" folder="staging.graphstream.example" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream/com.mbeddr.mpsutil.graphstream.mpl" folder="staging.graphstream" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream/runtime/com.mbeddr.mpsutil.graphstream.runtime.msd" folder="staging.graphstream" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.mpl" folder="staging.httpSupport" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.mpl" folder="staging" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.iconchar/com.mbeddr.mpsutil.iconchar.mpl" folder="stable.iconchar" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.incrementalcomputation.example/com.mbeddr.mpsutil.incrementalcomputation.example.mpl" folder="staging.incrementalcomputation.example" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.incrementalcomputation.example/sandbox/com.mbeddr.mpsutil.incrementalcomputation.example.sandbox.msd" folder="staging.incrementalcomputation.example" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.incrementalcomputation/com.mbeddr.mpsutil.incrementalcomputation.mpl" folder="staging.incrementalcomputation" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.incrementalcomputation/runtime/com.mbeddr.mpsutil.incrementalcomputation.runtime.msd" folder="staging.incrementalcomputation" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.intentions/com.mbeddr.mpsutil.intentions.mpl" folder="stable.intentions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.mpl" folder="staging.interpreter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.mpl" folder="staging.interpreter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.interpreter/runtime/com.mbeddr.mpsutil.interpreter.runtime.msd" folder="staging.interpreter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.jfreechart.sandboxlang/com.mbeddr.mpsutil.jfreechart.sandboxlang.mpl" folder="staging.jfreechart" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.jfreechart/com.mbeddr.mpsutil.jfreechart.mpl" folder="staging.jfreechart" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.json/com.mbeddr.mpsutil.json.mpl" folder="rest.json" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.mpl" folder="rest.jung" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/com.mbeddr.mpsutil.jung.pluginSolution.msd" folder="rest.jung" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.lang.plugin.extensions/com.mbeddr.mpsutil.lang.plugin.extensions.mpl" folder="" />
@@ -115,6 +125,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.reftarget.runtime/com.mbeddr.mpsutil.ccmenu.reftarget.runtime.msd" folder="rest.ccmenu" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.runtime/com.mbeddr.mpsutil.ccmenu.runtime.msd" folder="rest.ccmenu" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.sandbox/com.mbeddr.mpsutil.ccmenu.sandbox.msd" folder="rest.ccmenu" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.codereview.pluginSolution/com.mbeddr.mpsutil.codereview.pluginSolution.msd" folder="rest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.comparator/comparator.msd" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.compare.pattern.generator.runtime/com.mbeddr.mpsutil.compare.pattern.generator.runtime.msd" folder="staging.comparator" />
@@ -153,6 +164,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.javainterpreter/com.mbeddr.mpsutil.javainterpreter.msd" folder="staging.javainterpreter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.jfreechart.runtime/com.mbeddr.mpsutil.jfreechart.runtime.msd" folder="staging.jfreechart" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.jfreechart.sandbox/com.mbeddr.mpsutil.jfreechart.sandbox.msd" folder="staging.jfreechart" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.json.sandbox/com.mbeddr.mpsutil.json.sandbox.msd" folder="rest.json" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.assertions.sandbox/com.mbeddr.mpsutil.lantest.assertions.sandbox.msd" folder="rest.lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.pluginSolution/com.mbeddr.mpsutil.lantest.pluginSolution.msd" folder="rest.lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.msd" folder="rest.lantest" />
@@ -205,6 +217,12 @@
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.compare/test.com.mbeddr.mpsutil.compare.msd" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecore.modelImportExport/test.com.mbeddr.mpsutil.ecore.modelImportExport.msd" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoreimporter.runtime/test.com.mbeddr.mpsutil.ecore.metaModelImport.msd" folder="rest.ecore.tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1.mpl" folder="rest.ecore.tests.modelImporterExporterLanguages" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2.mpl" folder="rest.ecore.tests.modelImporterExporterLanguages" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage3/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage3.mpl" folder="rest.ecore.tests.modelImporterExporterLanguages" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage4/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage4.mpl" folder="rest.ecore.tests.modelImporterExporterLanguages" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5.mpl" folder="rest.ecore.tests.modelImporterExporterLanguages" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6.mpl" folder="rest.ecore.tests.modelImporterExporterLanguages" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.extensionclass/test.com.mbeddr.mpsutil.extensionclass.msd" folder="staging.extensionclass" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar.test/test.com.mbeddr.mpsutil.iconchar.test.msd" folder="stable.iconchar" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar/test.com.mbeddr.mpsutil.iconchar.mpl" folder="stable.iconchar" />

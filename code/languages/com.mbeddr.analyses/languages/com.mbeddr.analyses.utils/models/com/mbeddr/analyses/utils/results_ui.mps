@@ -227,7 +227,6 @@
         <child id="1163670677455" name="expression" index="3Kbmr1" />
         <child id="1163670683720" name="body" index="3Kbo56" />
       </concept>
-      <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -4438,7 +4437,7 @@
           </node>
         </node>
         <node concept="3clFbF" id="1gub2tHzbkE" role="3cqZAp">
-          <node concept="3P9mCS" id="1gub2tHzbkF" role="3clFbG">
+          <node concept="1rXfSq" id="3IsZZljDyyG" role="3clFbG">
             <ref role="37wK5l" node="1gub2tHyR4y" resolve="filterResults" />
           </node>
         </node>
@@ -4468,7 +4467,7 @@
           </node>
         </node>
         <node concept="3clFbF" id="4vtpFxbqvlB" role="3cqZAp">
-          <node concept="3P9mCS" id="4vtpFxbqvlC" role="3clFbG">
+          <node concept="1rXfSq" id="3IsZZljDyyH" role="3clFbG">
             <ref role="37wK5l" node="1gub2tHyR4y" resolve="filterResults" />
           </node>
         </node>
@@ -5814,7 +5813,7 @@
           </node>
         </node>
         <node concept="3clFbF" id="7SEzm$2fGf" role="3cqZAp">
-          <node concept="3P9mCS" id="7SEzm$2fGg" role="3clFbG">
+          <node concept="1rXfSq" id="3IsZZljEszK" role="3clFbG">
             <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
             <node concept="37vLTw" id="7SEzm$2fGh" role="37wK5m">
               <ref role="3cqZAo" node="7GDRoB0LkZT" resolve="splitPane" />

@@ -2,7 +2,7 @@
 <model ref="r:191d4094-120c-4eb3-b601-c05696ec8de9(com.mbeddr.analyses.cbmc.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
@@ -600,21 +600,34 @@
     <property role="3GE5qa" value="configuration.cbmc" />
     <node concept="3clFbS" id="1XFitunRfdc" role="18ibNy">
       <node concept="3clFbJ" id="1XFitunRfdn" role="3cqZAp">
-        <node concept="3fqX7Q" id="2GZiJUXMe6B" role="3clFbw">
-          <node concept="2OqwBi" id="2GZiJUXMe6D" role="3fr31v">
-            <node concept="2OqwBi" id="2GZiJUXMe6E" role="2Oq$k0">
-              <node concept="1YBJjd" id="2GZiJUXMe6F" role="2Oq$k0">
+        <node concept="1Wc70l" id="3Ni$kxM0fmH" role="3clFbw">
+          <node concept="2OqwBi" id="3Ni$kxM0hjA" role="3uHU7B">
+            <node concept="2OqwBi" id="3Ni$kxM0fQp" role="2Oq$k0">
+              <node concept="1YBJjd" id="3Ni$kxM0fBe" role="2Oq$k0">
                 <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
               </node>
-              <node concept="3TrcHB" id="2GZiJUXMe6G" role="2OqNvi">
+              <node concept="3TrcHB" id="3Ni$kxM0gxz" role="2OqNvi">
                 <ref role="3TsBF5" to="q5q6:7ehmsbAxln8" resolve="timeoutInSeconds" />
               </node>
             </node>
-            <node concept="liA8E" id="2GZiJUXMe6H" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-              <node concept="10M0yZ" id="2GZiJUXMe6I" role="37wK5m">
-                <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
-                <ref role="3cqZAo" to="tzyt:6Pij_UBJNiv" resolve="NO_TIMEOUT_STRING" />
+            <node concept="17RvpY" id="3Ni$kxM0imb" role="2OqNvi" />
+          </node>
+          <node concept="3fqX7Q" id="2GZiJUXMe6B" role="3uHU7w">
+            <node concept="2OqwBi" id="2GZiJUXMe6D" role="3fr31v">
+              <node concept="2OqwBi" id="2GZiJUXMe6E" role="2Oq$k0">
+                <node concept="1YBJjd" id="2GZiJUXMe6F" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1XFitunRfdd" resolve="analysis" />
+                </node>
+                <node concept="3TrcHB" id="2GZiJUXMe6G" role="2OqNvi">
+                  <ref role="3TsBF5" to="q5q6:7ehmsbAxln8" resolve="timeoutInSeconds" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2GZiJUXMe6H" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="10M0yZ" id="2GZiJUXMe6I" role="37wK5m">
+                  <ref role="1PxDUh" to="tzyt:1K0nRNgY1ms" resolve="VerificationConfigurationUtils" />
+                  <ref role="3cqZAo" to="tzyt:6Pij_UBJNiv" resolve="NO_TIMEOUT_STRING" />
+                </node>
               </node>
             </node>
           </node>
@@ -1633,7 +1646,7 @@
     </node>
     <node concept="1YaCAy" id="6$rx9V1Q7yn" role="1YuTPh">
       <property role="TrG5h" value="ac" />
-      <ref role="1YaFvo" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+      <ref role="1YaFvo" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfigurationContainer" />
     </node>
   </node>
   <node concept="Q5z_Y" id="3i$cQqpw9ox">
@@ -1642,7 +1655,7 @@
     <node concept="Q6JDH" id="3i$cQqpw9Ok" role="Q6Id_">
       <property role="TrG5h" value="ac" />
       <node concept="3Tqbb2" id="3i$cQqpw9Ou" role="Q6QK4">
-        <ref role="ehGHo" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+        <ref role="ehGHo" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfigurationContainer" />
       </node>
     </node>
     <node concept="Q5ZZ6" id="3i$cQqpw9oy" role="Q6x$H">

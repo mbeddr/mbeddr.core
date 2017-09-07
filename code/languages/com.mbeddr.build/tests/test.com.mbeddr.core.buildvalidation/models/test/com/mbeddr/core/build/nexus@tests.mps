@@ -2,7 +2,7 @@
 <model ref="r:9e9fe393-62bd-4694-8a3f-3e61261a879b(test.com.mbeddr.core.build.nexus@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
   </languages>
   <imports />
   <registry>

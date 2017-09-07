@@ -14,15 +14,16 @@
       <sourceRoot location="lib/org.eclipse.osgi_3.11.1.v20160708-1632.jar" />
       <sourceRoot location="lib/org.eclipse.xtext.xbase_2.10.0.v201605250459.jar" />
       <sourceRoot location="lib/org.eclipse.xtext.xbase.lib_2.10.0.v201605250459.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.addon.databinding.runtime_1.6.0.2017.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base.itc_1.6.0.2017.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base_1.6.0.2017.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.matchers_1.6.0.2017.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete.recipes_1.6.0.2017.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete_1.6.0.2017.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.query.runtime_1.6.0.2017.jar" />
-      <sourceRoot location="lib/org.eclipse.viatra.transformation.evm_1.6.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.addon.databinding.runtime_1.7.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base.itc_1.7.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.base_1.7.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.matchers_1.7.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete.recipes_1.7.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime.rete_1.7.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.query.runtime_1.7.0.2017.jar" />
+      <sourceRoot location="lib/org.eclipse.viatra.transformation.evm_1.7.0.2017.jar" />
       <sourceRoot location="lib/capsule-0.4.0-20170621.132553-7.jar" />
+      <sourceRoot location="lib/org.eclipse.collections_8.2.0.v20170622-1916.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
@@ -35,15 +36,16 @@
     <stubModelEntry path="${module}/lib/org.eclipse.osgi_3.11.1.v20160708-1632.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.xbase_2.10.0.v201605250459.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.xbase.lib_2.10.0.v201605250459.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.addon.databinding.runtime_1.6.0.2017.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base.itc_1.6.0.2017.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base_1.6.0.2017.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.matchers_1.6.0.2017.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete.recipes_1.6.0.2017.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete_1.6.0.2017.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime_1.6.0.2017.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.viatra.transformation.evm_1.6.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.addon.databinding.runtime_1.7.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base.itc_1.7.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.base_1.7.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.matchers_1.7.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete.recipes_1.7.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime.rete_1.7.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.query.runtime_1.7.0.2017.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.viatra.transformation.evm_1.7.0.2017.jar" />
     <stubModelEntry path="${module}/lib/capsule-0.4.0-20170621.132553-7.jar" />
+    <stubModelEntry path="${module}/lib/org.eclipse.collections_8.2.0.v20170622-1916.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

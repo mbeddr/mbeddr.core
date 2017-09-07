@@ -4,7 +4,7 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
@@ -459,14 +459,12 @@
             <node concept="3uibUv" id="3x0R1LIQ83A" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
             </node>
-            <node concept="10Nm6u" id="3x0R1LIQ83B" role="33vP2m" />
           </node>
         </node>
         <node concept="3cpWs8" id="3x0R1LIQ83C" role="3cqZAp">
           <node concept="3cpWsn" id="3x0R1LIQ83D" role="3cpWs9">
             <property role="TrG5h" value="varName" />
             <node concept="17QB3L" id="3x0R1LIQ83E" role="1tU5fm" />
-            <node concept="10Nm6u" id="3x0R1LIQ83F" role="33vP2m" />
           </node>
         </node>
         <node concept="3clFbH" id="3x0R1LIQ83G" role="3cqZAp" />
@@ -6528,16 +6526,6 @@
   </node>
   <node concept="312cEu" id="67iKQ7oFQ6S">
     <property role="TrG5h" value="LocationsLifterCore" />
-    <node concept="2tJIrI" id="67iKQ7oFQ6T" role="jymVt" />
-    <node concept="312cEg" id="67iKQ7oFQ6U" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="DEBUG" />
-      <property role="3TUv4t" value="false" />
-      <node concept="10P_77" id="67iKQ7oFQ6V" role="1tU5fm" />
-      <node concept="3clFbT" id="67iKQ7oFQ6W" role="33vP2m" />
-      <node concept="3Tm6S6" id="67iKQ7oFQ6X" role="1B3o_S" />
-    </node>
     <node concept="2tJIrI" id="67iKQ7oFQ6Y" role="jymVt" />
     <node concept="3clFb_" id="67iKQ7oFQ6Z" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -6570,7 +6558,6 @@
             <node concept="3uibUv" id="67iKQ7oFQ7c" role="1tU5fm">
               <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
             </node>
-            <node concept="10Nm6u" id="67iKQ7oFQ7d" role="33vP2m" />
           </node>
         </node>
         <node concept="3cpWs8" id="67iKQ7oG3_a" role="3cqZAp">
@@ -6638,7 +6625,6 @@
       <node concept="3Tm1VV" id="67iKQ7oFQdv" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="67iKQ7oFQdw" role="jymVt" />
-    <node concept="2tJIrI" id="67iKQ7oFQg0" role="jymVt" />
     <node concept="3clFb_" id="67iKQ7oFQju" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="canLift" />

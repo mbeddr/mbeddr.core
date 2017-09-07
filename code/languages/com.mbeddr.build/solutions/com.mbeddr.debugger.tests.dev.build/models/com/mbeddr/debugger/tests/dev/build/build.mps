@@ -434,12 +434,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L0C" resolve="collections.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7eF9rfAuv5m" role="3bR37C">
-          <node concept="3bR9La" id="7eF9rfAuv5n" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L3o" resolve="jetbrains.mps.baseLanguage.unitTest.libs" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7eF9rfAuv5o" role="3bR37C">
           <node concept="3bR9La" id="7eF9rfAuv5p" role="1SiIV1">
             <property role="3bR36h" value="false" />

@@ -2,8 +2,7 @@
 <model ref="r:b61bde82-ab60-46a0-986b-81515d72f0bf(com.mbeddr.mpsutil.suppresswarning.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
@@ -134,7 +133,7 @@
               <ref role="1YBMHb" node="7U3Fobb_8GV" resolve="suppressWarnings" />
             </node>
             <node concept="3Tsc0h" id="7U3Fobb_8GT" role="2OqNvi">
-              <ref role="3TtcxE" to="bdcd:7U3Fobb_8Em" />
+              <ref role="3TtcxE" to="bdcd:7U3Fobb_8Em" resolve="kinds" />
             </node>
           </node>
           <node concept="1v1jN8" id="7U3Fobb_8GU" role="2OqNvi" />
@@ -164,7 +163,7 @@
                 <ref role="QwW4h" node="5Sez0xU3ifq" resolve="suppressWarnings" />
               </node>
               <node concept="3Tsc0h" id="5Sez0xU3jdl" role="2OqNvi">
-                <ref role="3TtcxE" to="bdcd:7U3Fobb_8Em" />
+                <ref role="3TtcxE" to="bdcd:7U3Fobb_8Em" resolve="kinds" />
               </node>
             </node>
             <node concept="TSZUe" id="5Sez0xU3kUN" role="2OqNvi">

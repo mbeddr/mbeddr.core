@@ -2,7 +2,7 @@
 <model ref="r:aa4c3470-43ab-4dad-b73e-20da0ee43be1(com.mbeddr.mpsutil.inca.core.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="m373" ref="r:4095af4f-a097-4799-aaa9-03df087ddfa6(jetbrains.mps.baseLanguage.javadoc.structure)" />
@@ -49,6 +49,9 @@
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
+        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -224,7 +227,6 @@
     <property role="TrG5h" value="ConceptReferenceType" />
     <property role="3GE5qa" value="content" />
     <property role="EcuMT" value="996292992025672789" />
-    <property role="34LRSv" value="&lt;{concept}&gt;" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6hXIxNuN5nr" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -236,12 +238,14 @@
     <node concept="PrWs8" id="3VwoHXNBLEE" role="PzmwI">
       <ref role="PrY4T" node="6VTlRjrCuQt" resolve="IIncAType" />
     </node>
+    <node concept="RPilO" id="5JQC2dmn0jR" role="lGtFl">
+      <ref role="RPilL" node="6hXIxNuN5nr" resolve="concept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6VTlRjrCuGI">
     <property role="3GE5qa" value="content" />
     <property role="TrG5h" value="DataTypeReference" />
     <property role="EcuMT" value="7996518772785670958" />
-    <property role="34LRSv" value="&lt;{type}&gt;" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6VTlRjrCuOl" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -252,6 +256,9 @@
     </node>
     <node concept="PrWs8" id="3VwoHXNC1L_" role="PzmwI">
       <ref role="PrY4T" node="6VTlRjrCuQt" resolve="IIncAType" />
+    </node>
+    <node concept="RPilO" id="5JQC2dmn0jT" role="lGtFl">
+      <ref role="RPilL" node="6VTlRjrCuOl" resolve="type" />
     </node>
   </node>
   <node concept="1TIwiD" id="3hiszdZDhip">
@@ -275,7 +282,6 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="reference" />
     <property role="EcuMT" value="2281067221947980594" />
-    <property role="34LRSv" value="&lt;{variable}&gt;" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="EE49sRYMQu" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -289,6 +295,9 @@
     </node>
     <node concept="PrWs8" id="2J6v22V3oi9" role="PzmwI">
       <ref role="PrY4T" node="2J6v22V3ohT" resolve="IVariableValue" />
+    </node>
+    <node concept="RPilO" id="5JQC2dmn0jO" role="lGtFl">
+      <ref role="RPilL" node="EE49sRYMQu" resolve="variable" />
     </node>
   </node>
   <node concept="1TIwiD" id="6trdyn5sMcA">
@@ -490,10 +499,12 @@
     <property role="TrG5h" value="PatternCall" />
     <property role="3GE5qa" value="constraints" />
     <property role="EcuMT" value="996292992024566952" />
-    <property role="34LRSv" value="&lt;{pattern}&gt;" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3ybyOPMm8im" role="PzmwI">
       <ref role="PrY4T" node="3ybyOPMm8il" resolve="IPatternCall" />
+    </node>
+    <node concept="RPilO" id="5JQC2dmn0jP" role="lGtFl">
+      <ref role="RPilL" node="RjyNaq4vP3" resolve="pattern" />
     </node>
   </node>
   <node concept="1TIwiD" id="RjyNapPtMn">
@@ -826,7 +837,6 @@
   <node concept="1TIwiD" id="39KhnTIfy1V">
     <property role="3GE5qa" value="reference" />
     <property role="TrG5h" value="BaseVariableReference" />
-    <property role="34LRSv" value="&lt;{variable}&gt;" />
     <property role="EcuMT" value="3634481308605751419" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="39KhnTIfy1W" role="1TKVEi">
@@ -838,6 +848,9 @@
     </node>
     <node concept="PrWs8" id="39KhnTIfy4D" role="PzmwI">
       <ref role="PrY4T" node="1YBYCQ13COO" resolve="IGenNameProvider" />
+    </node>
+    <node concept="RPilO" id="5JQC2dmn0jQ" role="lGtFl">
+      <ref role="RPilL" node="39KhnTIfy1W" resolve="variable" />
     </node>
   </node>
   <node concept="PlHQZ" id="4IZiQsKumaj">
@@ -897,7 +910,6 @@
     <property role="EcuMT" value="3909214783373897140" />
     <property role="3GE5qa" value="values" />
     <property role="TrG5h" value="EnumValue" />
-    <property role="34LRSv" value="&lt;{enum}&gt;" />
     <property role="R4oN_" value="enum value" />
     <ref role="1TJDcQ" node="RjyNapPty$" resolve="AbstractLiteralValue" />
     <node concept="1TJgyj" id="637Y3IJQwST" role="1TKVEi">
@@ -906,6 +918,9 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="6973815483243564601" />
       <ref role="20lvS9" to="tpce:fKAxPRV" resolve="EnumerationDataTypeDeclaration" />
+    </node>
+    <node concept="RPilO" id="5JQC2dmn0jS" role="lGtFl">
+      <ref role="RPilL" node="637Y3IJQwST" resolve="enum" />
     </node>
   </node>
   <node concept="PlHQZ" id="7A0HCuGt5rY">

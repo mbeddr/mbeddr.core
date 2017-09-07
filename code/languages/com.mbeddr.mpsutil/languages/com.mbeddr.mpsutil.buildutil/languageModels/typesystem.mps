@@ -2,8 +2,7 @@
 <model ref="692e0a46-0d23-4c8a-8ce0-ea4c2266672a/r:7da9a6cb-20d9-4049-9428-5208a6c49365(com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="3ior" ref="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" />
@@ -123,7 +122,7 @@
                 <ref role="1YBMHb" node="2gGfLsWQR4l" resolve="dependsOnOperation" />
               </node>
               <node concept="3TrEf2" id="2gGfLsWSke_" role="2OqNvi">
-                <ref role="3Tt5mk" to="fnbo:2gGfLsWSk0j" />
+                <ref role="3Tt5mk" to="fnbo:2gGfLsWSk0j" resolve="buildProject" />
               </node>
             </node>
           </node>
@@ -155,7 +154,7 @@
                 <ref role="1YBMHb" node="2gGfLsWRuht" resolve="buildProjectOperationParameter" />
               </node>
               <node concept="3TrEf2" id="2gGfLsWRurs" role="2OqNvi">
-                <ref role="3Tt5mk" to="fnbo:2gGfLsWRufd" />
+                <ref role="3Tt5mk" to="fnbo:2gGfLsWRufd" resolve="buildProject" />
               </node>
             </node>
           </node>
@@ -209,7 +208,7 @@
                 <ref role="1YBMHb" node="2gGfLsWS2iq" resolve="addBuildProjectDependencyOperation" />
               </node>
               <node concept="3TrEf2" id="2gGfLsWS7uj" role="2OqNvi">
-                <ref role="3Tt5mk" to="fnbo:2gGfLsWS4vk" />
+                <ref role="3Tt5mk" to="fnbo:2gGfLsWS4vk" resolve="buildProject" />
               </node>
             </node>
           </node>
@@ -277,7 +276,7 @@
                 <ref role="1YBMHb" node="6YaWssNZJ9c" resolve="hasDependencyOnBuildProjectOperation" />
               </node>
               <node concept="3TrEf2" id="6YaWssNZJjY" role="2OqNvi">
-                <ref role="3Tt5mk" to="fnbo:6YaWssNZJ5Y" />
+                <ref role="3Tt5mk" to="fnbo:6YaWssNZJ5Y" resolve="buildProject" />
               </node>
             </node>
           </node>

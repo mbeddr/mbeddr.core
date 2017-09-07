@@ -14,10 +14,10 @@
     <dependency reexport="false">53f72aed-03c9-433e-8bca-b0a0c1ec0c31(com.mbeddr.mpsutil.ecore.testing.runtime)</dependency>
     <dependency reexport="false">d08b2078-ada5-40fa-a3c5-d721088dc626(com.mbeddr.mpsutil.ecore.testing)</dependency>
     <dependency reexport="false">d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)</dependency>
+    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d08b2078-ada5-40fa-a3c5-d721088dc626:com.mbeddr.mpsutil.ecoreimporter.testing" version="0" />
-    <language slang="l:ad8b5993-1cc2-49c0-b7a0-0283da231703:com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -26,8 +26,14 @@
     <language slang="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="8" />
-    <language slang="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" version="1" />
+    <language slang="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" version="2" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
+    <language slang="l:98309aa4-0aee-4c83-b79a-2ab22ee75043:test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1" version="0" />
+    <language slang="l:8cff051b-53c3-4e5f-bf0a-6688f069e505:test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2" version="0" />
+    <language slang="l:028d5289-4615-4ec1-9058-1fdf1373966c:test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage3" version="0" />
+    <language slang="l:42b42fb4-1209-425a-8ff3-87a670a3a5b5:test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage4" version="0" />
+    <language slang="l:b883f758-9a65-4140-ac15-f5b95052c219:test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5" version="0" />
+    <language slang="l:36dc6740-50ca-47a8-b44f-4cf0c584b822:test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />

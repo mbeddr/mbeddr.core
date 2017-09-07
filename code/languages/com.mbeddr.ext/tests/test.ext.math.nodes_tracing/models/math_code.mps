@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="85e94e86-9fcb-43a2-9083-64c40006219e" name="com.mbeddr.mpsutil.nodes_tracing.test" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <devkit ref="bad61089-aa44-4252-8f72-63f3375f5e64(com.mbeddr.math)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -236,6 +236,40 @@
           </node>
         </node>
         <node concept="3XISUE" id="63QgsF$VMh_" role="3XIRFZ" />
+        <node concept="1_9egQ" id="70fpbbg$A1k" role="3XIRFZ">
+          <node concept="39$JCU" id="70fpbbg$A1b" role="1_9egR">
+            <property role="TrG5h" value="k" />
+            <node concept="26Vqph" id="70fpbbg$A1d" role="39z40R">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="3TlMh9" id="70fpbbg$A2f" role="39z1js">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="3TlMh9" id="70fpbbg$A2F" role="39$JC6">
+              <property role="2hmy$m" value="88" />
+            </node>
+            <node concept="2zguM6" id="70fpbbg$A3d" role="39$JDZ">
+              <node concept="3TlMh9" id="70fpbbg$A3x" role="2zgELT">
+                <property role="2hmy$m" value="1" />
+              </node>
+              <node concept="2BOcij" id="70fpbbg$A7z" role="2zgELu">
+                <node concept="39$JEu" id="70fpbbg$A7H" role="3TlMhJ">
+                  <ref role="39zGOu" node="70fpbbg$A1b" resolve="k" />
+                </node>
+                <node concept="3TlMh9" id="70fpbbg$A3Y" role="3TlMhI">
+                  <property role="2hmy$m" value="2" />
+                </node>
+                <node concept="1xGALR" id="70fpbbg$Adb" role="lGtFl">
+                  <property role="1xEijf" value="2" />
+                  <node concept="1xFd8N" id="70fpbbg$Asr" role="1xGcb7">
+                    <property role="1xFd8M" value="sum_a5a0 += (((1) / (2 * k)));" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3XISUE" id="70fpbbg$A0v" role="3XIRFZ" />
         <node concept="3XIRlf" id="pq_X7Ya4nP" role="3XIRFZ">
           <property role="TrG5h" value="sum2" />

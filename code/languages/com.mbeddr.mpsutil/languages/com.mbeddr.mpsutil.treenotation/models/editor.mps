@@ -2,7 +2,7 @@
 <model ref="r:67fcb547-f436-44b7-b04d-6372a563654a(com.mbeddr.mpsutil.treenotation.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -299,6 +299,28 @@
           <node concept="3F1sOY" id="7k8R9gKMajH" role="3EZMnx">
             <ref role="1NtTu8" to="hfvq:7k8R9gKMaj0" resolve="incomingShape" />
             <node concept="VPXOz" id="7k8R9gKMajI" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="3EZMnI" id="6JR7Jr70haa" role="3EZMnx">
+          <node concept="2iRfu4" id="6JR7Jr70hab" role="2iSdaV" />
+          <node concept="VPM3Z" id="6JR7Jr70hac" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="6JR7Jr70had" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="6JR7Jr70hae" role="3EZMnx">
+            <property role="3F0ifm" value="collapse by default" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+            <node concept="VPXOz" id="6JR7Jr70haf" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="6JR7Jr70hag" role="3EZMnx">
+            <ref role="1NtTu8" to="hfvq:5qrsiYWrGSD" resolve="collapseByDefaultCondition" />
+            <node concept="VPXOz" id="6JR7Jr70hah" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
           </node>

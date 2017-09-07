@@ -2,9 +2,7 @@
 <model ref="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" />
@@ -38,6 +36,14 @@
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
+      <concept id="8842732777748464990" name="jetbrains.mps.lang.structure.structure.RefPresentationTemplate" flags="ng" index="ROjv2">
+        <property id="4307758654697524060" name="suffix" index="1W_73K" />
+        <property id="4307758654697524057" name="prefix" index="1W_73P" />
+      </concept>
+      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
+        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
+        <child id="8842732777748474935" name="refPresentationTemplate" index="ROhUF" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="5404671619616246344" name="staticScope" index="2_RsDV" />
         <property id="1096454100552" name="rootable" index="19KtqR" />
@@ -60,6 +66,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -176,17 +183,22 @@
   </node>
   <node concept="1TIwiD" id="86yKXFVk5m">
     <property role="TrG5h" value="GetPreferenceFormInProjectOperation" />
-    <property role="34LRSv" value="preferenceForm&lt;&lt;{formDeclaration}&gt;&gt;" />
     <property role="3GE5qa" value="getter" />
     <property role="EcuMT" value="145956936287600982" />
     <ref role="1TJDcQ" to="tp4k:2TmYHHddPWB" resolve="BaseProjectOperation" />
     <node concept="PrWs8" id="2DIWO7Y817z" role="PzmwI">
       <ref role="PrY4T" node="2DIWO7Y817r" resolve="IPreferenceFormExpression" />
     </node>
+    <node concept="RPilO" id="3Q2hMLtKlLR" role="lGtFl">
+      <ref role="RPilL" node="86yKXFVl2p" resolve="formDeclaration" />
+      <node concept="ROjv2" id="3Q2hMLtKlLS" role="ROhUF">
+        <property role="1W_73P" value="preferenceForm&lt;" />
+        <property role="1W_73K" value="&gt;" />
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="86yKXFV_6e">
     <property role="TrG5h" value="PreferenceFormType" />
-    <property role="34LRSv" value="preferenceForm&lt;&lt;{preferenceForm}&gt;&gt;" />
     <property role="EcuMT" value="145956936287670670" />
     <ref role="1TJDcQ" to="tp4f:hyWtXx5" resolve="BaseClassifierType" />
     <node concept="1TJgyj" id="86yKXFVA3h" role="1TKVEi">
@@ -195,6 +207,13 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="145956936287674577" />
       <ref role="20lvS9" node="86yKXFERvb" resolve="PreferenceForm" />
+    </node>
+    <node concept="RPilO" id="3Q2hMLtKlLP" role="lGtFl">
+      <ref role="RPilL" node="86yKXFVA3h" resolve="preferenceForm" />
+      <node concept="ROjv2" id="3Q2hMLtKlLQ" role="ROhUF">
+        <property role="1W_73P" value="preferenceForm&lt;" />
+        <property role="1W_73K" value="&gt;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="86yKXFY5Xg">
@@ -306,11 +325,17 @@
   <node concept="1TIwiD" id="5YZamx7K_J4">
     <property role="3GE5qa" value="getter" />
     <property role="TrG5h" value="GetPreferenceFormInApplicationExpression" />
-    <property role="34LRSv" value="preferenceForm&lt;&lt;{formDeclaration}&gt;&gt;" />
     <property role="EcuMT" value="6899278682012146628" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="PrWs8" id="2DIWO7Y817B" role="PzmwI">
       <ref role="PrY4T" node="2DIWO7Y817r" resolve="IPreferenceFormExpression" />
+    </node>
+    <node concept="RPilO" id="3Q2hMLtKlLN" role="lGtFl">
+      <ref role="RPilL" node="86yKXFVl2p" resolve="formDeclaration" />
+      <node concept="ROjv2" id="3Q2hMLtKlLO" role="ROhUF">
+        <property role="1W_73P" value="preferenceForm&lt;" />
+        <property role="1W_73K" value="&gt;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="77gEP6zh3ts">

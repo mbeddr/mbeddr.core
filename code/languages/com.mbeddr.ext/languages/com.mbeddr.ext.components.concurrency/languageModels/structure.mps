@@ -2,9 +2,7 @@
 <model ref="r:20269589-2670-4f99-b5ae-af443d8a5c29(com.mbeddr.ext.components.concurrency.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -27,6 +25,9 @@
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
+        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -129,7 +130,6 @@
   </node>
   <node concept="1TIwiD" id="7tWSY$OC418">
     <property role="TrG5h" value="TaskInComponentReference" />
-    <property role="34LRSv" value="&lt;{componentInstance}&gt;" />
     <property role="EcuMT" value="8610007178375348296" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7tWSY$OC42X" role="1TKVEi">
@@ -148,6 +148,9 @@
     </node>
     <node concept="PrWs8" id="7tWSY$OC42U" role="PzmwI">
       <ref role="PrY4T" to="5wll:3qlQk_gySDw" resolve="ITaskReference" />
+    </node>
+    <node concept="RPilO" id="2oITgcLXnK8" role="lGtFl">
+      <ref role="RPilL" node="7tWSY$OCY0$" resolve="componentInstance" />
     </node>
   </node>
   <node concept="1TIwiD" id="7tWSY$ONv9C">

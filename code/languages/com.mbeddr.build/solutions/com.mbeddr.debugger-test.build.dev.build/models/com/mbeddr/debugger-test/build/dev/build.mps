@@ -687,12 +687,6 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
             </node>
           </node>
-          <node concept="1SiIV0" id="29so9VbJ8UD" role="3bR37C">
-            <node concept="3bR9La" id="29so9VbJ8UE" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="ffeo:7Kfy9QB6L3o" resolve="jetbrains.mps.baseLanguage.unitTest.libs" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="29so9VbJ8UH" role="3bR37C">
             <node concept="3bR9La" id="29so9VbJ8UI" role="1SiIV1">
               <property role="3bR36h" value="false" />
@@ -780,6 +774,12 @@
           <node concept="1SiIV0" id="2wu1bNQpouu" role="3bR37C">
             <node concept="3bR9La" id="2wu1bNQpout" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:7YI57w6K08j" resolve="jetbrains.mps.baseLanguage#1129914002933" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="7TtUY1TijCK" role="3bR37C">
+            <node concept="3bR9La" id="7TtUY1TijCL" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
             </node>
           </node>
         </node>

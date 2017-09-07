@@ -3,11 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1020,8 +1020,8 @@
                     <node concept="13iPFW" id="2abYtBe$xgs" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="2abYtBe$xgt" role="2OqNvi">
                       <node concept="1xMEDy" id="2abYtBe$xgu" role="1xVPHs">
-                        <node concept="chp4Y" id="78c1wjHeJAb" role="ri$Ld">
-                          <ref role="cht4Q" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
+                        <node concept="chp4Y" id="QIiPbLCIzG" role="ri$Ld">
+                          <ref role="cht4Q" to="x27k:QIiPbLCHqs" resolve="IClosureLike" />
                         </node>
                       </node>
                     </node>
@@ -1122,8 +1122,8 @@
               <node concept="13iPFW" id="7ztw3UYMrFO" role="2Oq$k0" />
               <node concept="2Xjw5R" id="7ztw3UYMrFP" role="2OqNvi">
                 <node concept="1xMEDy" id="7ztw3UYMrFQ" role="1xVPHs">
-                  <node concept="chp4Y" id="78c1wjHeJU4" role="ri$Ld">
-                    <ref role="cht4Q" to="x27k:7apEgWbIQfD" resolve="Closure_old" />
+                  <node concept="chp4Y" id="QIiPbLCIw$" role="ri$Ld">
+                    <ref role="cht4Q" to="x27k:QIiPbLCHqs" resolve="IClosureLike" />
                   </node>
                 </node>
               </node>

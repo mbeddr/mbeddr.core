@@ -2,10 +2,10 @@
 <model ref="r:55549eb8-b827-44b3-bd84-ef3114bd2fe2(com.mbeddr.mpsutil.treenotation.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="-1" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2067,6 +2067,24 @@
           </node>
         </node>
         <node concept="3clFbH" id="JAaUnmVeFB" role="3cqZAp" />
+        <node concept="3clFbJ" id="6JR7Jr7kQ1o" role="3cqZAp">
+          <node concept="3clFbS" id="6JR7Jr7kQ1q" role="3clFbx">
+            <node concept="3cpWs6" id="6JR7Jr7kQW8" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="6JR7Jr7kNx8" role="3clFbw">
+            <node concept="1rXfSq" id="6JR7Jr7kNdR" role="2Oq$k0">
+              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+            </node>
+            <node concept="liA8E" id="6JR7Jr7kNJ0" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+              <node concept="10M0yZ" id="6JR7Jr7kOVe" role="37wK5m">
+                <ref role="3cqZAo" to="5ueo:~StyleAttributes.READ_ONLY" resolve="READ_ONLY" />
+                <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6JR7Jr7kQWc" role="3cqZAp" />
         <node concept="3cpWs8" id="JAaUnmVdEp" role="3cqZAp">
           <node concept="3cpWsn" id="JAaUnmVdEq" role="3cpWs9">
             <property role="TrG5h" value="treeChildren" />

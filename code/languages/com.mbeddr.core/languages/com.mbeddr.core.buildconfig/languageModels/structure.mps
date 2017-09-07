@@ -2,8 +2,7 @@
 <model ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -11,6 +10,7 @@
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="i2y7" ref="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -113,6 +113,9 @@
     </node>
     <node concept="PrWs8" id="3s1LyzGjAbU" role="PzmwI">
       <ref role="PrY4T" to="i2y7:3s1LyzGfrMH" resolve="IMakePathProviderContainer" />
+    </node>
+    <node concept="PrWs8" id="6FvlwAlLzOe" role="PzmwI">
+      <ref role="PrY4T" to="68mc:51aJIRsy1$U" resolve="IPathVariableProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="6GqYvBOf2Xb">
@@ -224,6 +227,9 @@
     <node concept="PrWs8" id="6RCWEZG3saq" role="PzmwI">
       <ref role="PrY4T" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
     </node>
+    <node concept="PrWs8" id="6FvlwAlM6BC" role="PzmwI">
+      <ref role="PrY4T" to="68mc:51aJIRsy1$U" resolve="IPathVariableProvider" />
+    </node>
     <node concept="1QGGSu" id="7ue4kw5DH0z" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/program.png" />
     </node>
@@ -310,6 +316,9 @@
     </node>
     <node concept="PrWs8" id="3s1LyzGeKd9" role="PzmwI">
       <ref role="PrY4T" to="i2y7:3s1LyzGeK9o" resolve="IMakePathProvider" />
+    </node>
+    <node concept="PrWs8" id="3dZgFhDSziU" role="PzmwI">
+      <ref role="PrY4T" to="i2y7:3dZgFhDSw4V" resolve="IGeneratesToMakefile" />
     </node>
   </node>
   <node concept="1TIwiD" id="4BxItZJ4BoI">
@@ -581,10 +590,18 @@
     <property role="3GE5qa" value="binary" />
     <property role="TrG5h" value="ExternalPath" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1hPQTELVfEa" role="1TKVEi">
+      <property role="IQ2ns" value="1474325910490249866" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="pathPicker" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
+    </node>
     <node concept="1TJgyi" id="5lP9ZVaAU_v" role="1TKVEl">
       <property role="IQ2nx" value="6157872040773396831" />
-      <property role="TrG5h" value="path" />
+      <property role="TrG5h" value="path_old" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="1hPQTELVfE8" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="7FeXv2EtoDW">
@@ -597,6 +614,16 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="4_vItr5czAZ">
+    <property role="EcuMT" value="5287148819638794687" />
+    <property role="TrG5h" value="IHostTargetAwarePicker" />
+  </node>
+  <node concept="1TIwiD" id="1hPQTEM4W9y">
+    <property role="EcuMT" value="1474325910492791394" />
+    <property role="TrG5h" value="MakeTimeDirPicker" />
+    <property role="34LRSv" value="make time dir picker" />
+    <ref role="1TJDcQ" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
   </node>
 </model>
 

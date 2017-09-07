@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="85e94e86-9fcb-43a2-9083-64c40006219e" name="com.mbeddr.mpsutil.nodes_tracing.test" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   </languages>
@@ -318,7 +318,7 @@
           <node concept="1xGALR" id="EEDqFMyu_B" role="lGtFl">
             <property role="1xEijf" value="2" />
             <node concept="1xFd8N" id="EEDqFMyvFg" role="1xGcb7">
-              <property role="1xFd8M" value="static inline void  SM1_S1_s2_ExitAction1(SM1_S1__data_t *instance)" />
+              <property role="1xFd8M" value="static inline void  SM1_S1_s2_ExitAction2(SM1_S1__data_t *instance)" />
             </node>
           </node>
           <node concept="2xGTIE" id="EEDqFMyuyO" role="S7lxW">

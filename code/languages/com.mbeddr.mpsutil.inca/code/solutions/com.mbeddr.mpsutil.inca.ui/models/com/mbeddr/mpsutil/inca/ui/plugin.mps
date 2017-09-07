@@ -583,7 +583,7 @@
     <property role="3GE5qa" value="tool" />
     <node concept="2BZ0e9" id="4$anqIi0kA_" role="2XNbBz">
       <property role="TrG5h" value="queryExplorer" />
-      <node concept="3Tm6S6" id="4$anqIi0kAA" role="1B3o_S" />
+      <node concept="3Tm1VV" id="7N0GnG$MaxP" role="1B3o_S" />
       <node concept="3uibUv" id="4$anqIi0kGF" role="1tU5fm">
         <ref role="3uigEE" node="492h0wvb3Z" resolve="QueryExplorer" />
       </node>
@@ -710,6 +710,58 @@
             </node>
           </node>
         </node>
+        <node concept="2Gpval" id="7N0GnG$K22I" role="3cqZAp">
+          <node concept="2GrKxI" id="7N0GnG$K22K" role="2Gsz3X">
+            <property role="TrG5h" value="content" />
+          </node>
+          <node concept="2OqwBi" id="7N0GnG$LXV3" role="2GsD0m">
+            <node concept="2OqwBi" id="7N0GnG$LVXD" role="2Oq$k0">
+              <node concept="2OqwBi" id="7N0GnG$LV3p" role="2Oq$k0">
+                <node concept="37vLTw" id="7N0GnG$LUSg" role="2Oq$k0">
+                  <ref role="3cqZAo" node="SiDpbq1nQB" resolve="queryExplorer" />
+                </node>
+                <node concept="2BZ7hE" id="7N0GnG$LVet" role="2OqNvi">
+                  <ref role="2WH_rO" node="4$anqIi0kA_" resolve="queryExplorer" />
+                </node>
+              </node>
+              <node concept="2OwXpG" id="7N0GnG$LWFk" role="2OqNvi">
+                <ref role="2Oxat5" node="4BWlfm3w0ib" resolve="rootContent" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7N0GnG$LYCT" role="2OqNvi">
+              <ref role="37wK5l" node="4BWlfm3poMy" resolve="getChildren" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="7N0GnG$K22O" role="2LFqv$">
+            <node concept="3cpWs8" id="7N0GnG$K3Gj" role="3cqZAp">
+              <node concept="3cpWsn" id="7N0GnG$K3Gk" role="3cpWs9">
+                <property role="TrG5h" value="engine" />
+                <property role="3TUv4t" value="true" />
+                <node concept="3uibUv" id="7N0GnG$K3FU" role="1tU5fm">
+                  <ref role="3uigEE" to="h57a:~AdvancedViatraQueryEngine" resolve="AdvancedViatraQueryEngine" />
+                </node>
+                <node concept="2OqwBi" id="7N0GnG$K3Gl" role="33vP2m">
+                  <node concept="2GrUjf" id="7N0GnG$K3Gm" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="7N0GnG$K22K" resolve="content" />
+                  </node>
+                  <node concept="liA8E" id="7N0GnG$K3Gn" role="2OqNvi">
+                    <ref role="37wK5l" node="7N0GnG$Jq1k" resolve="getEngine" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7N0GnG$K4as" role="3cqZAp">
+              <node concept="2YIFZM" id="7N0GnG$K4ba" role="3clFbG">
+                <ref role="37wK5l" to="pzen:7N0GnG$GMaW" resolve="printDebugInfo" />
+                <ref role="1Pybhc" to="pzen:7N0GnG$EadP" resolve="ReteDebugger" />
+                <node concept="37vLTw" id="7N0GnG$K4cp" role="37wK5m">
+                  <ref role="3cqZAo" node="7N0GnG$K3Gk" resolve="engine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7N0GnG$LUBp" role="3cqZAp" />
       </node>
     </node>
     <node concept="1DS2jV" id="SiDpbq1nFT" role="1NuT2Z">
@@ -2866,6 +2918,32 @@
       </node>
       <node concept="3Tm1VV" id="4k1r0DoGntX" role="1B3o_S" />
       <node concept="H_c77" id="4k1r0DoGpjG" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="7N0GnG$Jy2Q" role="jymVt" />
+    <node concept="3clFb_" id="7N0GnG$Jq1k" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getEngine" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <node concept="3clFbS" id="7N0GnG$Jq1l" role="3clF47">
+        <node concept="3cpWs6" id="7N0GnG$Jq1m" role="3cqZAp">
+          <node concept="2OqwBi" id="7N0GnG$Jq1n" role="3cqZAk">
+            <node concept="2OqwBi" id="7N0GnG$Jq1o" role="2Oq$k0">
+              <node concept="Xjq3P" id="7N0GnG$Jq1p" role="2Oq$k0" />
+              <node concept="2OwXpG" id="7N0GnG$Jq1q" role="2OqNvi">
+                <ref role="2Oxat5" node="4BWlfm3wFtO" resolve="key" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7N0GnG$JwCB" role="2OqNvi">
+              <ref role="37wK5l" node="4BWlfm3poHC" resolve="getEngine" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7N0GnG$Jq1s" role="1B3o_S" />
+      <node concept="3uibUv" id="7N0GnG$JrW4" role="3clF45">
+        <ref role="3uigEE" to="h57a:~AdvancedViatraQueryEngine" resolve="AdvancedViatraQueryEngine" />
+      </node>
     </node>
     <node concept="2tJIrI" id="4RsLK_FEmhl" role="jymVt" />
     <node concept="3clFb_" id="4RsLK_FEsyJ" role="jymVt">

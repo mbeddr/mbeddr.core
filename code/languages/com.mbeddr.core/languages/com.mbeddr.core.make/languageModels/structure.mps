@@ -2,8 +2,7 @@
 <model ref="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -485,6 +484,11 @@
     <property role="TrG5h" value="IfEqDirective" />
     <property role="34LRSv" value="ifeq" />
     <ref role="1TJDcQ" node="2b2D8jTN4pN" resolve="ConditionalDirective" />
+  </node>
+  <node concept="PlHQZ" id="3dZgFhDSw4V">
+    <property role="EcuMT" value="3710757960614543675" />
+    <property role="TrG5h" value="IGeneratesToMakefile" />
+    <property role="3GE5qa" value="parallelizableMakeGenerator" />
   </node>
 </model>
 

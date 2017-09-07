@@ -5,7 +5,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
   </languages>
   <imports>
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" />
@@ -37,7 +37,6 @@
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
-      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -230,13 +229,7 @@
                 <property role="VOm3f" value="true" />
               </node>
             </node>
-            <node concept="pj6Ft" id="7apEgWbIFgo" role="3F10Kt">
-              <property role="VOm3f" value="false" />
-            </node>
             <node concept="2iRkQZ" id="3r83Ks0g8fR" role="2czzBx" />
-            <node concept="ljvvj" id="7apEgWbIFgq" role="3F10Kt">
-              <property role="VOm3f" value="false" />
-            </node>
             <node concept="1HlG4h" id="3r83Ks0g8fT" role="3EmGlc">
               <node concept="1HfYo3" id="3r83Ks0g8fU" role="1HlULh">
                 <node concept="3TQlhw" id="3r83Ks0g8fV" role="1Hhtcw">
@@ -321,12 +314,6 @@
         <property role="2czwfO" value="\n" />
         <ref role="1NtTu8" to="q46j:5BkFC2yh8uK" resolve="analyses" />
         <node concept="2iRkQZ" id="gaSsNU7iPA" role="2czzBx" />
-        <node concept="pVoyu" id="3R$6B6bKxEI" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pj6Ft" id="3R$6B6bKxEM" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="3F0ifn" id="gaSsNU7iPF" role="2czzBI">
           <property role="3F0ifm" value="" />
           <node concept="VPxyj" id="gaSsNU7iQu" role="3F10Kt">

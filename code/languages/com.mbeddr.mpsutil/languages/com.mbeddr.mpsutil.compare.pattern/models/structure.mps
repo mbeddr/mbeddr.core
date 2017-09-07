@@ -2,9 +2,7 @@
 <model ref="r:5a244481-ee36-4984-a70c-5d4ba8e7e090(com.mbeddr.mpsutil.compare.pattern.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -45,6 +43,9 @@
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
+        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -153,7 +154,6 @@
     <property role="3GE5qa" value="member" />
     <property role="TrG5h" value="LinkMember" />
     <property role="R4oN_" value="link : expression" />
-    <property role="34LRSv" value="&lt;{link}&gt;" />
     <property role="EcuMT" value="3560698633098558194" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IP40Bi38Ss" role="1TKVEi">
@@ -166,12 +166,14 @@
     <node concept="PrWs8" id="35E98Eq3JFN" role="PzmwI">
       <ref role="PrY4T" node="35E98Eq2KJO" resolve="IInitPart" />
     </node>
+    <node concept="RPilO" id="3Q2hMLtKlLE" role="lGtFl">
+      <ref role="RPilL" node="4IP40Bi38Ss" resolve="link" />
+    </node>
   </node>
   <node concept="1TIwiD" id="35E98Eq3JFR">
     <property role="3GE5qa" value="member" />
     <property role="TrG5h" value="PropertyMember" />
     <property role="R4oN_" value="property : value" />
-    <property role="34LRSv" value="&lt;{property}&gt;" />
     <property role="EcuMT" value="3560698633098558199" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IP40Bi2KcA" role="1TKVEi">
@@ -183,6 +185,9 @@
     </node>
     <node concept="PrWs8" id="35E98Eq3JFS" role="PzmwI">
       <ref role="PrY4T" node="35E98Eq2KJO" resolve="IInitPart" />
+    </node>
+    <node concept="RPilO" id="3Q2hMLtKlLF" role="lGtFl">
+      <ref role="RPilL" node="4IP40Bi2KcA" resolve="property" />
     </node>
   </node>
   <node concept="1TIwiD" id="35E98Eq3U8I">

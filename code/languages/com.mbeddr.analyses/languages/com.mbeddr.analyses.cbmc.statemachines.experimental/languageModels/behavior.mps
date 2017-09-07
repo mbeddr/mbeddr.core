@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -971,11 +971,16 @@
                         <node concept="3Tqbb2" id="1hHz6uwpihu" role="1tU5fm">
                           <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
                         </node>
-                        <node concept="2OqwBi" id="1hHz6uwpihv" role="33vP2m">
-                          <node concept="37vLTw" id="1hHz6uwpihw" role="2Oq$k0">
-                            <ref role="3cqZAo" node="GPHxorRhve" resolve="where" />
+                        <node concept="1PxgMI" id="3IsZZljxV1A" role="33vP2m">
+                          <node concept="chp4Y" id="3IsZZljxVlG" role="3oSUPX">
+                            <ref role="cht4Q" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
                           </node>
-                          <node concept="1$rogu" id="1hHz6uwpihx" role="2OqNvi" />
+                          <node concept="2OqwBi" id="1hHz6uwpihv" role="1m5AlR">
+                            <node concept="37vLTw" id="1hHz6uwpihw" role="2Oq$k0">
+                              <ref role="3cqZAo" node="GPHxorRhve" resolve="where" />
+                            </node>
+                            <node concept="1$rogu" id="1hHz6uwpihx" role="2OqNvi" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1052,11 +1057,16 @@
                         <node concept="3Tqbb2" id="1hHz6uwph26" role="1tU5fm">
                           <ref role="ehGHo" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
                         </node>
-                        <node concept="2OqwBi" id="1hHz6uwph27" role="33vP2m">
-                          <node concept="37vLTw" id="1hHz6uwph28" role="2Oq$k0">
-                            <ref role="3cqZAo" node="GPHxorRhve" resolve="where" />
+                        <node concept="1PxgMI" id="3IsZZljxU1I" role="33vP2m">
+                          <node concept="chp4Y" id="3IsZZljxUlO" role="3oSUPX">
+                            <ref role="cht4Q" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
                           </node>
-                          <node concept="1$rogu" id="1hHz6uwph29" role="2OqNvi" />
+                          <node concept="2OqwBi" id="1hHz6uwph27" role="1m5AlR">
+                            <node concept="37vLTw" id="1hHz6uwph28" role="2Oq$k0">
+                              <ref role="3cqZAo" node="GPHxorRhve" resolve="where" />
+                            </node>
+                            <node concept="1$rogu" id="1hHz6uwph29" role="2OqNvi" />
+                          </node>
                         </node>
                       </node>
                     </node>

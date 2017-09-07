@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -135,7 +135,7 @@
             <node concept="3cpWs6" id="6MQFh3uqeS2" role="3cqZAp">
               <node concept="1sne9v" id="6MQFh3uqeS3" role="3cqZAk">
                 <node concept="1sne01" id="6MQFh3uqeS4" role="1sne8H">
-                  <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                  <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                   <node concept="1shVQo" id="6MQFh3uqghd" role="ccFIB">
                     <ref role="1shVQp" to="mj1l:1spqZOskLyG" resolve="CharLiteral" />
                   </node>
@@ -165,7 +165,7 @@
                 <node concept="3cpWs6" id="518euTyxh1G" role="3cqZAp">
                   <node concept="1sne9v" id="518euTyxh7r" role="3cqZAk">
                     <node concept="1sne01" id="518euTyxh7s" role="1sne8H">
-                      <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                      <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                       <node concept="1shVQo" id="518euTyxhcq" role="ccFIB">
                         <ref role="1shVQp" to="mj1l:7FQByU3CrDz" resolve="FalseLiteral" />
                       </node>
@@ -191,7 +191,7 @@
             <node concept="3cpWs6" id="518euTyxenA" role="3cqZAp">
               <node concept="1sne9v" id="518euTyxenB" role="3cqZAk">
                 <node concept="1sne01" id="518euTyxenC" role="1sne8H">
-                  <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                  <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                   <node concept="1shVQo" id="518euTyxhii" role="ccFIB">
                     <ref role="1shVQp" to="mj1l:7FQByU3CrDu" resolve="TrueLiteral" />
                   </node>
@@ -213,7 +213,7 @@
             <node concept="3cpWs6" id="6MQFh3uqlc3" role="3cqZAp">
               <node concept="1sne9v" id="6MQFh3uqlc4" role="3cqZAk">
                 <node concept="1sne01" id="6MQFh3uqlc5" role="1sne8H">
-                  <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                  <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                   <node concept="1shVQo" id="6MQFh3uqm_C" role="ccFIB">
                     <ref role="1shVQp" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
                   </node>
@@ -241,7 +241,7 @@
             <node concept="3cpWs6" id="b$zJlAIK7f" role="3cqZAp">
               <node concept="1sne9v" id="b$zJlAIK7g" role="3cqZAk">
                 <node concept="1sne01" id="b$zJlAIK7h" role="1sne8H">
-                  <ref role="1snh0D" to="tpck:4uZwTti3__2" />
+                  <ref role="1snh0D" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                   <node concept="1shVQo" id="b$zJlAIK7i" role="ccFIB">
                     <ref role="1shVQp" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
                   </node>

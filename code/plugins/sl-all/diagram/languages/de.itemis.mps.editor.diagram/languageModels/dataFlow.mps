@@ -2,8 +2,7 @@
 <model ref="r:bff3041d-05ad-4af4-97a4-951f43e7c138(de.itemis.mps.editor.diagram.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="2qld" ref="r:24bac084-437d-402d-b9a3-49599b18a0d1(de.itemis.mps.editor.diagram.structure)" />
@@ -46,7 +45,7 @@
           <node concept="2OqwBi" id="3QtXdiPdl_3" role="3Ah4Yx">
             <node concept="3__QtB" id="3QtXdiPdlz1" role="2Oq$k0" />
             <node concept="3TrEf2" id="3QtXdiPdlRZ" role="2OqNvi">
-              <ref role="3Tt5mk" to="2qld:3FRjz$v5Aed" />
+              <ref role="3Tt5mk" to="2qld:3FRjz$v5Aed" resolve="label" />
             </node>
           </node>
         </node>
@@ -54,7 +53,7 @@
           <node concept="2OqwBi" id="3QtXdiPdlU3" role="3Ah4Yx">
             <node concept="3__QtB" id="3QtXdiPdlU4" role="2Oq$k0" />
             <node concept="3TrEf2" id="3QtXdiPdmak" role="2OqNvi">
-              <ref role="3Tt5mk" to="2qld:3FRjz$v5Aeg" />
+              <ref role="3Tt5mk" to="2qld:3FRjz$v5Aeg" resolve="isOutput" />
             </node>
           </node>
         </node>
@@ -62,7 +61,7 @@
           <node concept="2OqwBi" id="3QtXdiPdlV9" role="3Ah4Yx">
             <node concept="3__QtB" id="3QtXdiPdlVa" role="2Oq$k0" />
             <node concept="3TrEf2" id="3QtXdiPdmlv" role="2OqNvi">
-              <ref role="3Tt5mk" to="2qld:3FRjz$vpgIL" />
+              <ref role="3Tt5mk" to="2qld:3FRjz$vpgIL" resolve="positionX" />
             </node>
           </node>
         </node>
@@ -70,7 +69,7 @@
           <node concept="2OqwBi" id="3QtXdiPdlWp" role="3Ah4Yx">
             <node concept="3__QtB" id="3QtXdiPdlWq" role="2Oq$k0" />
             <node concept="3TrEf2" id="3QtXdiPdmwE" role="2OqNvi">
-              <ref role="3Tt5mk" to="2qld:3FRjz$vpgK$" />
+              <ref role="3Tt5mk" to="2qld:3FRjz$vpgK$" resolve="positionY" />
             </node>
           </node>
         </node>
