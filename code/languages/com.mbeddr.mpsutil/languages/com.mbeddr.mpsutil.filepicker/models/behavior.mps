@@ -549,7 +549,7 @@
               <node concept="1pGfFk" id="5lKnBeAu912" role="2ShVmc">
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                 <node concept="BsUDl" id="5lKnBeAuMPa" role="37wK5m">
-                  <ref role="37wK5l" node="5lKnBeAuiS4" resolve="getCanonicalPath" />
+                  <ref role="37wK5l" node="7c_RIoAVXmk" resolve="getNonCanonicalPath" />
                   <node concept="2OqwBi" id="7ZxIDztH8iB" role="37wK5m">
                     <node concept="13iPFW" id="7ZxIDztH8gg" role="2Oq$k0" />
                     <node concept="3TrcHB" id="7ZxIDztH8si" role="2OqNvi">
@@ -588,7 +588,7 @@
               <node concept="1pGfFk" id="5lKnBeAufgi" role="2ShVmc">
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                 <node concept="BsUDl" id="5lKnBeAuNLE" role="37wK5m">
-                  <ref role="37wK5l" node="5lKnBeAuiS4" resolve="getCanonicalPath" />
+                  <ref role="37wK5l" node="7c_RIoAVXmk" resolve="getNonCanonicalPath" />
                   <node concept="2OqwBi" id="7ZxIDztH6FT" role="37wK5m">
                     <node concept="13iPFW" id="7ZxIDztH6$$" role="2Oq$k0" />
                     <node concept="3TrcHB" id="7ZxIDztH6RE" role="2OqNvi">
@@ -637,7 +637,7 @@
               <node concept="1pGfFk" id="5lKnBeAuivf" role="2ShVmc">
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                 <node concept="BsUDl" id="5lKnBeAuOm2" role="37wK5m">
-                  <ref role="37wK5l" node="5lKnBeAuiS4" resolve="getCanonicalPath" />
+                  <ref role="37wK5l" node="7c_RIoAVXmk" resolve="getNonCanonicalPath" />
                   <node concept="2OqwBi" id="7ZxIDztH7Ub" role="37wK5m">
                     <node concept="13iPFW" id="7ZxIDztH7RM" role="2Oq$k0" />
                     <node concept="3TrcHB" id="7ZxIDztH85k" role="2OqNvi">
