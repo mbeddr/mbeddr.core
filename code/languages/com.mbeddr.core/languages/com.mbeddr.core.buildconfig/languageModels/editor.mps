@@ -10,6 +10,7 @@
     <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="-1" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="-1" />
+    <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
   </languages>
   <imports>
     <import index="51wr" ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" />
@@ -26,9 +27,9 @@
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
+    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -1421,88 +1422,111 @@
         <ref role="1k5W1q" to="r4b4:2$$_2GR98qO" resolve="readOnly" />
       </node>
       <node concept="3F0ifn" id="4BxItZJ4Bp4" role="3EZMnx">
-        <property role="3F0ifm" value="make:" />
+        <property role="3F0ifm" value="make" />
         <node concept="lj46D" id="4BxItZJ4Bp5" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
         <node concept="pVoyu" id="4BxItZJ4Bp6" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-      </node>
-      <node concept="3F0A7n" id="4BxItZJ4Bp7" role="3EZMnx">
-        <ref role="1NtTu8" to="51wr:3s1LyzG8GTO" resolve="make" />
-        <node concept="ljvvj" id="4BxItZJ4Bp8" role="3F10Kt">
+        <node concept="ljvvj" id="7GmkyIHE0B3" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3EZMnI" id="71C71cVkZip" role="3EZMnx">
-        <node concept="VPM3Z" id="71C71cVkZiq" role="3F10Kt">
+      <node concept="3EZMnI" id="7GmkyIHE0KJ" role="3EZMnx">
+        <node concept="VPM3Z" id="7GmkyIHEhqa" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="lj46D" id="71C71cVkZir" role="3F10Kt">
+        <node concept="lj46D" id="7GmkyIHEhqb" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="pVoyu" id="71C71cVkZis" role="3F10Kt">
+        <node concept="pVoyu" id="7GmkyIHEhqc" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="3F0ifn" id="71C71cVkZit" role="3EZMnx">
-          <property role="3F0ifm" value="parallel processes: " />
-          <node concept="lj46D" id="71C71cVkZiu" role="3F10Kt">
+        <node concept="3F0ifn" id="7GmkyIHE0Ul" role="3EZMnx">
+          <property role="3F0ifm" value="path to executable:" />
+          <node concept="lj46D" id="7GmkyIHE0Um" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3ZSo5i" id="71C71cVkZZX" role="3EZMnx">
-          <node concept="3F0A7n" id="71C71cVkZZY" role="3EZMny">
+        <node concept="3F0A7n" id="4BxItZJ4Bp7" role="3EZMnx">
+          <ref role="1NtTu8" to="51wr:3s1LyzG8GTO" resolve="make" />
+          <node concept="ljvvj" id="4BxItZJ4Bp8" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="7GmkyIHE14g" role="3EZMnx">
+          <property role="3F0ifm" value="parallel processes:" />
+          <node concept="lj46D" id="7GmkyIHE14h" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3ZSo5i" id="7GmkyIHE14i" role="3EZMnx">
+          <node concept="3F0A7n" id="7GmkyIHE14j" role="3EZMny">
             <property role="1O74Pk" value="true" />
             <ref role="1NtTu8" to="51wr:71C71cTwLEc" resolve="parallelProcesses" />
           </node>
-          <node concept="3VJUX5" id="71C71cVkZZZ" role="3ZZHOD">
-            <node concept="3clFbS" id="71C71cVl000" role="2VODD2">
-              <node concept="3clFbF" id="71C71cVl001" role="3cqZAp">
-                <node concept="2OqwBi" id="71C71cVl002" role="3clFbG">
-                  <node concept="1eOMI4" id="71C71cVl003" role="2Oq$k0">
-                    <node concept="10QFUN" id="71C71cVl004" role="1eOMHV">
-                      <node concept="3uibUv" id="71C71cVl005" role="10QFUM">
-                        <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
-                      </node>
-                      <node concept="1Q80Hy" id="71C71cVl006" role="10QFUP" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="71C71cVl007" role="2OqNvi">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Label.setDefaultText(java.lang.String):void" resolve="setDefaultText" />
-                    <node concept="2YIFZM" id="71C71cVl008" role="37wK5m">
-                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                      <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                      <node concept="2OqwBi" id="71C71cVl009" role="37wK5m">
-                        <node concept="pncrf" id="71C71cVl00a" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="71C71cVl00b" role="2OqNvi">
-                          <ref role="37wK5l" to="vog7:71C71cTwEkc" resolve="defaultParallelProcesses" />
-                        </node>
+          <node concept="3VJUX5" id="7GmkyIHE14k" role="3ZZHOD">
+            <node concept="3clFbS" id="7GmkyIHE14l" role="2VODD2">
+              <node concept="3cpWs8" id="7GmkyIHFirJ" role="3cqZAp">
+                <node concept="3cpWsn" id="7GmkyIHFirK" role="3cpWs9">
+                  <property role="TrG5h" value="defaultValue" />
+                  <node concept="17QB3L" id="7GmkyIHFj8c" role="1tU5fm" />
+                  <node concept="2YIFZM" id="7GmkyIHFirL" role="33vP2m">
+                    <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                    <node concept="2OqwBi" id="7GmkyIHFirM" role="37wK5m">
+                      <node concept="pncrf" id="7GmkyIHFirN" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="7GmkyIHFirO" role="2OqNvi">
+                        <ref role="37wK5l" to="vog7:71C71cTwEkc" resolve="defaultParallelProcesses" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs6" id="71C71cVl00c" role="3cqZAp">
-                <node concept="1Q80Hy" id="71C71cVl00d" role="3cqZAk" />
+              <node concept="3clFbF" id="7GmkyIHEOFx" role="3cqZAp">
+                <node concept="2OqwBi" id="7GmkyIHEOZ2" role="3clFbG">
+                  <node concept="1eOMI4" id="7GmkyIHEOFz" role="2Oq$k0">
+                    <node concept="10QFUN" id="7GmkyIHEOF$" role="1eOMHV">
+                      <node concept="3uibUv" id="7GmkyIHF1$g" role="10QFUM">
+                        <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
+                      </node>
+                      <node concept="1Q80Hy" id="7GmkyIHEOFA" role="10QFUP" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7GmkyIHF2Lv" role="2OqNvi">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Label.setDefaultText(java.lang.String):void" resolve="setDefaultText" />
+                    <node concept="3cpWs3" id="7GmkyIHFjxE" role="37wK5m">
+                      <node concept="Xl_RD" id="7GmkyIHFjJi" role="3uHU7w">
+                        <property role="Xl_RC" value=" (default)" />
+                      </node>
+                      <node concept="37vLTw" id="7GmkyIHFirP" role="3uHU7B">
+                        <ref role="3cqZAo" node="7GmkyIHFirK" resolve="defaultValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="7GmkyIHE14x" role="3cqZAp">
+                <node concept="1Q80Hy" id="7GmkyIHE14y" role="3cqZAk" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="l2Vlx" id="71C71cVkZiJ" role="2iSdaV" />
+        <node concept="l2Vlx" id="7GmkyIHE144" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="3s1LyzG8JCK" role="3EZMnx">
         <property role="3F0ifm" value="gdb:" />
-        <node concept="lj46D" id="3s1LyzG8JCL" role="3F10Kt">
+        <node concept="lj46D" id="7GmkyIHE2mg" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="pVoyu" id="3s1LyzG8JCM" role="3F10Kt">
+        <node concept="pVoyu" id="7GmkyIHE2mh" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0A7n" id="3s1LyzG8JCN" role="3EZMnx">
+      <node concept="3F0A7n" id="7GmkyIHEwBB" role="3EZMnx">
         <ref role="1NtTu8" to="51wr:3s1LyzG8GSD" resolve="gdb" />
-        <node concept="ljvvj" id="3s1LyzG8JCO" role="3F10Kt">
+        <node concept="ljvvj" id="7GmkyIHEwBC" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
