@@ -321,6 +321,11 @@
     <property role="3GE5qa" value="platform" />
     <property role="EcuMT" value="5323740605968447022" />
     <ref role="1TJDcQ" node="4BxItZJ4BoF" resolve="Platform" />
+    <node concept="1TJgyi" id="71C71cTwLEc" role="1TKVEl">
+      <property role="IQ2nx" value="8099754798720686732" />
+      <property role="TrG5h" value="parallelProcesses" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="PrWs8" id="77mJsGsFMiE" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>

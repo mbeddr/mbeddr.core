@@ -9,6 +9,7 @@
     <import index="i2y7" ref="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -29,6 +30,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -45,6 +47,10 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
@@ -57,6 +63,17 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+      <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -156,6 +173,39 @@
       <node concept="3Tm1VV" id="3dZgFhDSzmg" role="1B3o_S" />
       <node concept="10P_77" id="3dZgFhDSzmh" role="3clF45" />
       <node concept="3clFbS" id="3dZgFhDSzmi" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="71C71cTwEiX" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="parallelProcesses" />
+      <node concept="3Tm1VV" id="71C71cTwEiY" role="1B3o_S" />
+      <node concept="10Oyi0" id="71C71cTwEjx" role="3clF45" />
+      <node concept="3clFbS" id="71C71cTwEj0" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="71C71cTwEkc" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="defaultParallelProcesses" />
+      <node concept="3Tm1VV" id="71C71cTwEkd" role="1B3o_S" />
+      <node concept="10Oyi0" id="71C71cTwEk$" role="3clF45" />
+      <node concept="3clFbS" id="71C71cTwEkf" role="3clF47">
+        <node concept="3clFbF" id="71C71cTwK5Q" role="3cqZAp">
+          <node concept="3cpWsd" id="71C71cTwLsR" role="3clFbG">
+            <node concept="3cmrfG" id="71C71cTwLsU" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="5mK2hjZx9bG" role="3uHU7B">
+              <node concept="2YIFZM" id="5mK2hjZx8X$" role="2Oq$k0">
+                <ref role="37wK5l" to="wyt6:~Runtime.getRuntime():java.lang.Runtime" resolve="getRuntime" />
+                <ref role="1Pybhc" to="wyt6:~Runtime" resolve="Runtime" />
+              </node>
+              <node concept="liA8E" id="5mK2hjZx9pP" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Runtime.availableProcessors():int" resolve="availableProcessors" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="3dZgFhDSzjl" role="13h7CW">
       <node concept="3clFbS" id="3dZgFhDSzjm" role="2VODD2" />
