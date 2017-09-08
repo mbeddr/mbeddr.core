@@ -26,7 +26,9 @@
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -277,6 +279,14 @@
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
     </language>
+    <language id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell">
+      <concept id="1161622981231" name="de.slisson.mps.richtext.customcell.structure.ConceptFunctionParameter_cell" flags="nn" index="1Q80Hy" />
+      <concept id="1176749715029" name="de.slisson.mps.richtext.customcell.structure.QueryFunction_Cell" flags="in" index="3VJUX5" />
+      <concept id="2490242408670732052" name="de.slisson.mps.richtext.customcell.structure.CellModel_CustomFactory" flags="ng" index="3ZSo5i">
+        <child id="1073389446424" name="childCellModel" index="3EZMny" />
+        <child id="2490242408670937967" name="factoryMethod" index="3ZZHOD" />
+      </concept>
+    </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
@@ -296,6 +306,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -1423,6 +1434,53 @@
         <node concept="ljvvj" id="4BxItZJ4Bp8" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+      </node>
+      <node concept="3EZMnI" id="3dlzMguGMuB" role="3EZMnx">
+        <node concept="VPM3Z" id="3dlzMguGMuC" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="3dlzMguGMuD" role="3EZMnx">
+          <property role="3F0ifm" value="custom number of parallel processes (for parallel make): " />
+        </node>
+        <node concept="3ZSo5i" id="1m7X3OE$r37" role="3EZMnx">
+          <node concept="3F0A7n" id="3dlzMguGMuE" role="3EZMny">
+            <property role="1O74Pk" value="true" />
+            <ref role="1NtTu8" to="51wr:71C71cTwLEc" resolve="parallelProcesses" />
+          </node>
+          <node concept="3VJUX5" id="1m7X3OE$tIa" role="3ZZHOD">
+            <node concept="3clFbS" id="1m7X3OE$tIb" role="2VODD2">
+              <node concept="3clFbF" id="1m7X3OE$xTh" role="3cqZAp">
+                <node concept="2OqwBi" id="1m7X3OEA8JT" role="3clFbG">
+                  <node concept="1eOMI4" id="1m7X3OEA8BT" role="2Oq$k0">
+                    <node concept="10QFUN" id="1m7X3OEA8BU" role="1eOMHV">
+                      <node concept="3uibUv" id="1m7X3OEA8BV" role="10QFUM">
+                        <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
+                      </node>
+                      <node concept="1Q80Hy" id="1m7X3OEA8BW" role="10QFUP" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1m7X3OEAatu" role="2OqNvi">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Label.setDefaultText(java.lang.String):void" resolve="setDefaultText" />
+                    <node concept="2YIFZM" id="71C71cUdpTI" role="37wK5m">
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                      <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                      <node concept="2OqwBi" id="71C71cUdmr8" role="37wK5m">
+                        <node concept="pncrf" id="71C71cUdmed" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="71C71cUdn20" role="2OqNvi">
+                          <ref role="37wK5l" to="vog7:71C71cTwEkc" resolve="defaultParallelProcesses" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="1m7X3OEAb9Y" role="3cqZAp">
+                <node concept="1Q80Hy" id="1m7X3OEAbdV" role="3cqZAk" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2iRfu4" id="3dlzMguGMuF" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="3s1LyzG8JCK" role="3EZMnx">
         <property role="3F0ifm" value="gdb:" />

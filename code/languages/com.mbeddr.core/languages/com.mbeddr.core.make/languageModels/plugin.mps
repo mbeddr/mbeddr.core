@@ -235,7 +235,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
@@ -1043,14 +1042,8 @@
                       <node concept="3cpWsn" id="5mK2hjZx6bJ" role="3cpWs9">
                         <property role="TrG5h" value="noOfCores" />
                         <node concept="10Oyi0" id="5mK2hjZx6bE" role="1tU5fm" />
-                        <node concept="2OqwBi" id="5mK2hjZx9bG" role="33vP2m">
-                          <node concept="2YIFZM" id="5mK2hjZx8X$" role="2Oq$k0">
-                            <ref role="37wK5l" to="wyt6:~Runtime.getRuntime():java.lang.Runtime" resolve="getRuntime" />
-                            <ref role="1Pybhc" to="wyt6:~Runtime" resolve="Runtime" />
-                          </node>
-                          <node concept="liA8E" id="5mK2hjZx9pP" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Runtime.availableProcessors():int" resolve="availableProcessors" />
-                          </node>
+                        <node concept="3cmrfG" id="71C71cUddP3" role="33vP2m">
+                          <property role="3cmrfH" value="1" />
                         </node>
                       </node>
                     </node>
@@ -1087,6 +1080,21 @@
                                 <node concept="2GrUjf" id="42NvuOOGFwo" role="1LFl5Q">
                                   <ref role="2Gs0qQ" node="5zgShfbCz4u" resolve="pathTuple" />
                                 </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="71C71cUdfX1" role="3cqZAp">
+                            <node concept="37vLTI" id="71C71cUdgRL" role="3clFbG">
+                              <node concept="2OqwBi" id="71C71cUdhtN" role="37vLTx">
+                                <node concept="37vLTw" id="71C71cUdhgT" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="42NvuOOGDBs" resolve="platform" />
+                                </node>
+                                <node concept="2qgKlT" id="71C71cUdi4Y" role="2OqNvi">
+                                  <ref role="37wK5l" to="vog7:71C71cTwEiX" resolve="parallelProcesses" />
+                                </node>
+                              </node>
+                              <node concept="37vLTw" id="71C71cUdfWZ" role="37vLTJ">
+                                <ref role="3cqZAo" node="5mK2hjZx6bJ" resolve="noOfCores" />
                               </node>
                             </node>
                           </node>
@@ -1146,13 +1154,8 @@
                                     <property role="Xl_RC" value="-j" />
                                   </node>
                                   <node concept="1eOMI4" id="3dZgFhDBtIx" role="3uHU7w">
-                                    <node concept="3cpWsd" id="3dZgFhDBtIy" role="1eOMHV">
-                                      <node concept="37vLTw" id="3dZgFhDBtIz" role="3uHU7B">
-                                        <ref role="3cqZAo" node="5mK2hjZx6bJ" resolve="noOfCores" />
-                                      </node>
-                                      <node concept="3cmrfG" id="3dZgFhDBtI$" role="3uHU7w">
-                                        <property role="3cmrfH" value="1" />
-                                      </node>
+                                    <node concept="37vLTw" id="3dZgFhDBtIz" role="1eOMHV">
+                                      <ref role="3cqZAo" node="5mK2hjZx6bJ" resolve="noOfCores" />
                                     </node>
                                   </node>
                                 </node>
