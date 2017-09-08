@@ -4106,20 +4106,6 @@
       <ref role="13i0hy" to="vog7:71C71cTwEiX" resolve="parallelProcesses" />
       <node concept="3Tm1VV" id="71C71cTwLFy" role="1B3o_S" />
       <node concept="3clFbS" id="71C71cTwLF_" role="3clF47">
-        <node concept="3clFbF" id="71C71cUooLN" role="3cqZAp">
-          <node concept="2OqwBi" id="71C71cUooLK" role="3clFbG">
-            <node concept="10M0yZ" id="71C71cUooLL" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="71C71cUooLM" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="71C71cUooSK" role="37wK5m">
-                <property role="Xl_RC" value="number of va" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="71C71cUqy8n" role="3cqZAp">
           <node concept="3cpWsn" id="71C71cUqy8q" role="3cpWs9">
             <property role="TrG5h" value="retVal" />
@@ -4128,29 +4114,6 @@
               <node concept="13iPFW" id="71C71cUqype" role="2Oq$k0" />
               <node concept="2qgKlT" id="71C71cUqz_s" role="2OqNvi">
                 <ref role="37wK5l" to="vog7:71C71cTwEkc" resolve="defaultParallelProcesses" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="71C71cUop5q" role="3cqZAp">
-          <node concept="2OqwBi" id="71C71cUop5n" role="3clFbG">
-            <node concept="10M0yZ" id="71C71cUop5o" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="71C71cUop5p" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="2OqwBi" id="71C71cUopcM" role="37wK5m">
-                <node concept="2JrnkZ" id="71C71cUopcN" role="2Oq$k0">
-                  <node concept="13iPFW" id="71C71cUopcO" role="2JrQYb" />
-                </node>
-                <node concept="liA8E" id="71C71cUopcP" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty):java.lang.String" resolve="getProperty" />
-                  <node concept="355D3s" id="71C71cUopcQ" role="37wK5m">
-                    <ref role="355D3t" to="51wr:4BxItZJ4BoI" resolve="DesktopPlatform" />
-                    <ref role="355D3u" to="51wr:71C71cTwLEc" resolve="parallelProcesses" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>

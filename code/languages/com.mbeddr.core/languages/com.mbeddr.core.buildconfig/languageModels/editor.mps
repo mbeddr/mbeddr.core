@@ -1435,38 +1435,47 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3EZMnI" id="3dlzMguGMuB" role="3EZMnx">
-        <node concept="VPM3Z" id="3dlzMguGMuC" role="3F10Kt">
+      <node concept="3EZMnI" id="71C71cVkZip" role="3EZMnx">
+        <node concept="VPM3Z" id="71C71cVkZiq" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="3F0ifn" id="3dlzMguGMuD" role="3EZMnx">
-          <property role="3F0ifm" value="custom number of parallel processes (for parallel make): " />
+        <node concept="lj46D" id="71C71cVkZir" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
-        <node concept="3ZSo5i" id="1m7X3OE$r37" role="3EZMnx">
-          <node concept="3F0A7n" id="3dlzMguGMuE" role="3EZMny">
+        <node concept="pVoyu" id="71C71cVkZis" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="71C71cVkZit" role="3EZMnx">
+          <property role="3F0ifm" value="parallel processes: " />
+          <node concept="lj46D" id="71C71cVkZiu" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3ZSo5i" id="71C71cVkZZX" role="3EZMnx">
+          <node concept="3F0A7n" id="71C71cVkZZY" role="3EZMny">
             <property role="1O74Pk" value="true" />
             <ref role="1NtTu8" to="51wr:71C71cTwLEc" resolve="parallelProcesses" />
           </node>
-          <node concept="3VJUX5" id="1m7X3OE$tIa" role="3ZZHOD">
-            <node concept="3clFbS" id="1m7X3OE$tIb" role="2VODD2">
-              <node concept="3clFbF" id="1m7X3OE$xTh" role="3cqZAp">
-                <node concept="2OqwBi" id="1m7X3OEA8JT" role="3clFbG">
-                  <node concept="1eOMI4" id="1m7X3OEA8BT" role="2Oq$k0">
-                    <node concept="10QFUN" id="1m7X3OEA8BU" role="1eOMHV">
-                      <node concept="3uibUv" id="1m7X3OEA8BV" role="10QFUM">
+          <node concept="3VJUX5" id="71C71cVkZZZ" role="3ZZHOD">
+            <node concept="3clFbS" id="71C71cVl000" role="2VODD2">
+              <node concept="3clFbF" id="71C71cVl001" role="3cqZAp">
+                <node concept="2OqwBi" id="71C71cVl002" role="3clFbG">
+                  <node concept="1eOMI4" id="71C71cVl003" role="2Oq$k0">
+                    <node concept="10QFUN" id="71C71cVl004" role="1eOMHV">
+                      <node concept="3uibUv" id="71C71cVl005" role="10QFUM">
                         <ref role="3uigEE" to="g51k:~EditorCell_Label" resolve="EditorCell_Label" />
                       </node>
-                      <node concept="1Q80Hy" id="1m7X3OEA8BW" role="10QFUP" />
+                      <node concept="1Q80Hy" id="71C71cVl006" role="10QFUP" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="1m7X3OEAatu" role="2OqNvi">
+                  <node concept="liA8E" id="71C71cVl007" role="2OqNvi">
                     <ref role="37wK5l" to="g51k:~EditorCell_Label.setDefaultText(java.lang.String):void" resolve="setDefaultText" />
-                    <node concept="2YIFZM" id="71C71cUdpTI" role="37wK5m">
+                    <node concept="2YIFZM" id="71C71cVl008" role="37wK5m">
                       <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                       <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                      <node concept="2OqwBi" id="71C71cUdmr8" role="37wK5m">
-                        <node concept="pncrf" id="71C71cUdmed" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="71C71cUdn20" role="2OqNvi">
+                      <node concept="2OqwBi" id="71C71cVl009" role="37wK5m">
+                        <node concept="pncrf" id="71C71cVl00a" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="71C71cVl00b" role="2OqNvi">
                           <ref role="37wK5l" to="vog7:71C71cTwEkc" resolve="defaultParallelProcesses" />
                         </node>
                       </node>
@@ -1474,13 +1483,13 @@
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs6" id="1m7X3OEAb9Y" role="3cqZAp">
-                <node concept="1Q80Hy" id="1m7X3OEAbdV" role="3cqZAk" />
+              <node concept="3cpWs6" id="71C71cVl00c" role="3cqZAp">
+                <node concept="1Q80Hy" id="71C71cVl00d" role="3cqZAk" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="2iRfu4" id="3dlzMguGMuF" role="2iSdaV" />
+        <node concept="l2Vlx" id="71C71cVkZiJ" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="3s1LyzG8JCK" role="3EZMnx">
         <property role="3F0ifm" value="gdb:" />
