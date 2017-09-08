@@ -2647,6 +2647,12 @@
             <ref role="1Busuk" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7GmkyIHYwHl" role="3bR37C">
+          <node concept="3bR9La" id="7GmkyIHYwHm" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7uZw0yZ43L4" resolve="com.mbeddr.core.make" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43L9" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -12364,6 +12370,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.analyses.cbmc.xmodel.plan" />
         <property role="3LESm3" value="89149c16-0102-4ac4-b76c-cce9604a7e8c" />
+        <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="6AA6Z09kF4k" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAuDUw" resolve="mbeddr.analyses" />
           <node concept="2Ry0Ak" id="6AA6Z09kF4l" role="iGT6I">
