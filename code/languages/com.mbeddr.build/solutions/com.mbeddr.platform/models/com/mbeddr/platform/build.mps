@@ -10739,6 +10739,12 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="6Bos28VNwYB" role="3bR37C">
+          <node concept="3bR9La" id="6Bos28VNwYC" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="2Z2H3pkY6Sh" resolve="com.mbeddr.mpsutil.userstyles.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2Z2H3pkYxDf" role="2G$12L">
         <property role="BnDLt" value="true" />
