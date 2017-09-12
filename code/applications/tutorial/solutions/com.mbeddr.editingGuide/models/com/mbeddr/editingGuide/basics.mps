@@ -57,7 +57,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1639,7 +1639,7 @@
           <property role="JL01g" value="2" />
         </node>
         <node concept="19SUe$" id="2C54m44RKux" role="19SJt6">
-          <property role="19SUeA" value=", the type " />
+          <property role="19SUeA" value=", then type " />
         </node>
         <node concept="JL3FK" id="2C54m44RKuW" role="19SJt6">
           <property role="JL3FM" value="+" />
@@ -1943,7 +1943,7 @@
           <property role="19SUeA" value=" on the right of the " />
         </node>
         <node concept="JL00X" id="2C54m44ShJ0" role="19SJt6">
-          <property role="JL01g" value="3" />
+          <property role="JL01g" value="2" />
         </node>
         <node concept="19SUe$" id="2C54m44ShJ1" role="19SJt6" />
       </node>
@@ -2267,7 +2267,7 @@
           <property role="19SUeA" value=". To demonstrate this, select the " />
         </node>
         <node concept="JL00X" id="4x22hTwhtkB" role="19SJt6">
-          <property role="JL01g" value="d" />
+          <property role="JL01g" value="b" />
         </node>
         <node concept="19SUe$" id="4x22hTwhtkC" role="19SJt6">
           <property role="19SUeA" value=" variable and press&#10;duplicate it. Note that this will lead to an error because you will&#10;have two variables with the same name. Change one of them to " />
