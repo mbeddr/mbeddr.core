@@ -23,6 +23,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
+    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -4484,15 +4485,28 @@
                     <property role="Xl_RC" value=" $(OBJODIR)" />
                   </node>
                   <node concept="3cpWs3" id="7FaD$wT6n53" role="3uHU7B">
-                    <node concept="3cpWs3" id="7FaD$wT6vvX" role="3uHU7B">
-                      <node concept="2OqwBi" id="7FaD$wT6wh_" role="3uHU7B">
-                        <node concept="30H73N" id="7FaD$wT6vCF" role="2Oq$k0" />
-                        <node concept="3TrcHB" id="7FaD$wT6ygR" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
+                    <node concept="3cpWs3" id="2Ai0Gt9R0CL" role="3uHU7B">
                       <node concept="Xl_RD" id="7FaD$wT6n54" role="3uHU7w">
-                        <property role="Xl_RC" value=".c " />
+                        <property role="Xl_RC" value=" " />
+                      </node>
+                      <node concept="3cpWs3" id="2Ai0Gt9Raur" role="3uHU7B">
+                        <node concept="2OqwBi" id="2Ai0Gt9R1v9" role="3uHU7w">
+                          <node concept="30H73N" id="2Ai0Gt9R0Xg" role="2Oq$k0" />
+                          <node concept="2qgKlT" id="2Ai0Gt9R3_2" role="2OqNvi">
+                            <ref role="37wK5l" to="qd6m:3N$tYyGbO1v" resolve="getSourceFileExtension" />
+                          </node>
+                        </node>
+                        <node concept="3cpWs3" id="7FaD$wT6vvX" role="3uHU7B">
+                          <node concept="2OqwBi" id="7FaD$wT6wh_" role="3uHU7B">
+                            <node concept="30H73N" id="7FaD$wT6vCF" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="7FaD$wT6ygR" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="2Ai0Gt9RaT_" role="3uHU7w">
+                            <property role="Xl_RC" value="." />
+                          </node>
+                        </node>
                       </node>
                     </node>
                     <node concept="37vLTw" id="7FaD$wT6n55" role="3uHU7w">
