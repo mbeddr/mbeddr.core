@@ -10,22 +10,18 @@
     <generator alias="" namespace="com.mbeddr.doc.aspect#8077410651477853286" uuid="85e5c424-ced3-49dc-8d44-c20cfe8896c2">
       <models>
         <modelRoot contentPath="${module}" type="default">
-          <sourceRoot path="${module}/generator/template" />
+          <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
-      <external-templates />
+      <external-templates>
+        <generator generatorUID="3ac18869-0828-4401-abad-822a47bf83f1(jetbrains.mps.lang.descriptor#9020561928507175817)" />
+      </external-templates>
       <dependencies>
-        <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
         <dependency reexport="false">38a074ed-e5ad-4b2d-be31-ca436911b8aa(com.mbeddr.doc.aspect)</dependency>
         <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
-        <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
-        <dependency reexport="false">3ac18869-0828-4401-abad-822a47bf83f1(jetbrains.mps.lang.descriptor#9020561928507175817)</dependency>
         <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
-        <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-        <dependency reexport="false">2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
-        <dependency reexport="false">9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
@@ -89,7 +85,6 @@
         <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="1" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
-        <module reference="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
