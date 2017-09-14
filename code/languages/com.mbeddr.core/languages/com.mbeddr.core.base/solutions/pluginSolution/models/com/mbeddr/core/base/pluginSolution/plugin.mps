@@ -112,6 +112,7 @@
     <import index="7a0s" ref="r:2af017c2-293f-4ebb-99f3-81e353b3d6e6(jetbrains.mps.editor.runtime)" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
+    <import index="f061" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application.ex(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -20959,14 +20960,25 @@
                                     </node>
                                   </node>
                                   <node concept="3clFbS" id="5Pb2U$k6TP_" role="2GVbov">
-                                    <node concept="3clFbF" id="5Pb2U$k6TPA" role="3cqZAp">
-                                      <node concept="2OqwBi" id="5Pb2U$k6TPB" role="3clFbG">
-                                        <node concept="37vLTw" id="5Pb2U$k6TPC" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="5Pb2U$k6TNF" resolve="editorComp" />
+                                    <node concept="3clFbJ" id="1f8URW$GqPg" role="3cqZAp">
+                                      <node concept="3clFbS" id="1f8URW$GqPi" role="3clFbx">
+                                        <node concept="3clFbF" id="5Pb2U$k6TPA" role="3cqZAp">
+                                          <node concept="2OqwBi" id="5Pb2U$k6TPB" role="3clFbG">
+                                            <node concept="37vLTw" id="5Pb2U$k6TPC" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="5Pb2U$k6TNF" resolve="editorComp" />
+                                            </node>
+                                            <node concept="liA8E" id="5Pb2U$k6TPD" role="2OqNvi">
+                                              <ref role="37wK5l" to="exr9:~EditorComponent.dispose():void" resolve="dispose" />
+                                            </node>
+                                          </node>
                                         </node>
-                                        <node concept="liA8E" id="5Pb2U$k6TPD" role="2OqNvi">
-                                          <ref role="37wK5l" to="exr9:~EditorComponent.dispose():void" resolve="dispose" />
+                                      </node>
+                                      <node concept="3y3z36" id="1f8URW$GQ7C" role="3clFbw">
+                                        <node concept="2YIFZM" id="1f8URW$GM7$" role="3uHU7B">
+                                          <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+                                          <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                                         </node>
+                                        <node concept="10Nm6u" id="1f8URW$GPzq" role="3uHU7w" />
                                       </node>
                                     </node>
                                   </node>
