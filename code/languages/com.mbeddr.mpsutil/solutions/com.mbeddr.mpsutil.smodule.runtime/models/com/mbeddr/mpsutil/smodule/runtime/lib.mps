@@ -1221,14 +1221,9 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="4YitgkJ$egT" role="3clFbw">
-            <node concept="2YIFZM" id="4YitgkJ$egU" role="2Oq$k0">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-            </node>
-            <node concept="liA8E" id="4YitgkJ$egV" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.isInEDT():boolean" resolve="isInEDT" />
-            </node>
+          <node concept="2YIFZM" id="7Xu1QHtTwW1" role="3clFbw">
+            <ref role="37wK5l" to="3a50:~ThreadUtils.isInEDT():boolean" resolve="isInEDT" />
+            <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
           </node>
         </node>
         <node concept="3cpWs8" id="4YitgkJ$egW" role="3cqZAp">
@@ -1254,12 +1249,16 @@
         <node concept="3clFbH" id="4YitgkJ$eh3" role="3cqZAp" />
         <node concept="3clFbF" id="4YitgkJ$eh4" role="3cqZAp">
           <node concept="2OqwBi" id="4YitgkJ$eh5" role="3clFbG">
-            <node concept="2YIFZM" id="4YitgkJ$eh6" role="2Oq$k0">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance():jetbrains.mps.smodel.ModelAccess" resolve="instance" />
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
+            <node concept="2OqwBi" id="7Xu1QHtTycm" role="2Oq$k0">
+              <node concept="37vLTw" id="7Xu1QHtTxyC" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YitgkJ$ehI" resolve="project" />
+              </node>
+              <node concept="liA8E" id="7Xu1QHtTz9D" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+              </node>
             </node>
             <node concept="liA8E" id="4YitgkJ$eh7" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteInEDT(java.lang.Runnable):void" resolve="runWriteInEDT" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.runWriteInEDT(java.lang.Runnable):void" resolve="runWriteInEDT" />
               <node concept="2ShNRf" id="4YitgkJ$eh8" role="37wK5m">
                 <node concept="YeOm9" id="4YitgkJ$eh9" role="2ShVmc">
                   <node concept="1Y3b0j" id="4YitgkJ$eha" role="YeSDq">
