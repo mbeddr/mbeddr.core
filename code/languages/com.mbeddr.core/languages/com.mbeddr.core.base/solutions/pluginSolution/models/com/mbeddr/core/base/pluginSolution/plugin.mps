@@ -114,6 +114,8 @@
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="f061" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application.ex(MPS.IDEA/)" />
     <import index="17wx" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.locks(JDK/)" />
+    <import index="ixe9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.concurrency(MPS.IDEA/)" />
+    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -20562,26 +20564,29 @@
       <node concept="3clFbS" id="1yFmGPnLcLC" role="3clF47">
         <node concept="SfApY" id="1yFmGPnLcLD" role="3cqZAp">
           <node concept="3clFbS" id="1yFmGPnLcLE" role="SfCbr">
-            <node concept="3cpWs8" id="1f8URW$HAs$" role="3cqZAp">
-              <node concept="3cpWsn" id="1f8URW$HAs_" role="3cpWs9">
-                <property role="TrG5h" value="lock" />
-                <node concept="3uibUv" id="1f8URW$HAsA" role="1tU5fm">
-                  <ref role="3uigEE" to="17wx:~ReentrantLock" resolve="ReentrantLock" />
+            <node concept="3cpWs8" id="1f8URW$J$Yn" role="3cqZAp">
+              <node concept="3cpWsn" id="1f8URW$J$Yo" role="3cpWs9">
+                <property role="TrG5h" value="semaphore" />
+                <node concept="3uibUv" id="1f8URW$J$Yp" role="1tU5fm">
+                  <ref role="3uigEE" to="5zyv:~Semaphore" resolve="Semaphore" />
                 </node>
-                <node concept="2ShNRf" id="1f8URW$HAL2" role="33vP2m">
-                  <node concept="1pGfFk" id="1f8URW$HVDg" role="2ShVmc">
-                    <ref role="37wK5l" to="17wx:~ReentrantLock.&lt;init&gt;()" resolve="ReentrantLock" />
+                <node concept="2ShNRf" id="1f8URW$J_lo" role="33vP2m">
+                  <node concept="1pGfFk" id="1f8URW$JB_X" role="2ShVmc">
+                    <ref role="37wK5l" to="5zyv:~Semaphore.&lt;init&gt;(int)" resolve="Semaphore" />
+                    <node concept="3cmrfG" id="1f8URW$JBS$" role="37wK5m">
+                      <property role="3cmrfH" value="1" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1f8URW$HW1R" role="3cqZAp">
-              <node concept="2OqwBi" id="1f8URW$HWo1" role="3clFbG">
-                <node concept="37vLTw" id="1f8URW$HW1P" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1f8URW$HAs_" resolve="lock" />
+            <node concept="3clFbF" id="1f8URW$JCtL" role="3cqZAp">
+              <node concept="2OqwBi" id="1f8URW$JCO0" role="3clFbG">
+                <node concept="37vLTw" id="1f8URW$JCtJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1f8URW$J$Yo" resolve="semaphore" />
                 </node>
-                <node concept="liA8E" id="1f8URW$HWRg" role="2OqNvi">
-                  <ref role="37wK5l" to="17wx:~ReentrantLock.lock():void" resolve="lock" />
+                <node concept="liA8E" id="1f8URW$JD2h" role="2OqNvi">
+                  <ref role="37wK5l" to="5zyv:~Semaphore.acquire():void" resolve="acquire" />
                 </node>
               </node>
             </node>
@@ -20596,6 +20601,7 @@
                       <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
                       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                       <node concept="3Tm1VV" id="5Pb2U$k6TNy" role="1B3o_S" />
+                      <node concept="2tJIrI" id="1f8URW$JBU$" role="jymVt" />
                       <node concept="3clFb_" id="5Pb2U$k6TNz" role="jymVt">
                         <property role="1EzhhJ" value="false" />
                         <property role="TrG5h" value="run" />
@@ -21004,13 +21010,27 @@
                                         <node concept="10Nm6u" id="1f8URW$GPzq" role="3uHU7w" />
                                       </node>
                                     </node>
-                                    <node concept="3clFbF" id="1f8URW$HY0E" role="3cqZAp">
-                                      <node concept="2OqwBi" id="1f8URW$HYY$" role="3clFbG">
-                                        <node concept="37vLTw" id="1f8URW$HY0C" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="1f8URW$HAs_" resolve="lock" />
+                                    <node concept="3clFbF" id="1f8URW$KyFt" role="3cqZAp">
+                                      <node concept="2OqwBi" id="1f8URW$KyFq" role="3clFbG">
+                                        <node concept="10M0yZ" id="1f8URW$KyFr" role="2Oq$k0">
+                                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                         </node>
-                                        <node concept="liA8E" id="1f8URW$HZZg" role="2OqNvi">
-                                          <ref role="37wK5l" to="17wx:~ReentrantLock.unlock():void" resolve="unlock" />
+                                        <node concept="liA8E" id="1f8URW$KyFs" role="2OqNvi">
+                                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                          <node concept="Xl_RD" id="1f8URW$KzCn" role="37wK5m">
+                                            <property role="Xl_RC" value="release" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbF" id="1f8URW$JGrC" role="3cqZAp">
+                                      <node concept="2OqwBi" id="1f8URW$JHs4" role="3clFbG">
+                                        <node concept="37vLTw" id="1f8URW$JGrA" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="1f8URW$J$Yo" resolve="semaphore" />
+                                        </node>
+                                        <node concept="liA8E" id="1f8URW$JIbe" role="2OqNvi">
+                                          <ref role="37wK5l" to="5zyv:~Semaphore.release():void" resolve="release" />
                                         </node>
                                       </node>
                                     </node>
@@ -21026,13 +21046,41 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1f8URW$I0NH" role="3cqZAp">
-              <node concept="2OqwBi" id="1f8URW$I1aa" role="3clFbG">
-                <node concept="37vLTw" id="1f8URW$I0NF" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1f8URW$HAs_" resolve="lock" />
+            <node concept="3clFbF" id="1f8URW$KvLe" role="3cqZAp">
+              <node concept="2OqwBi" id="1f8URW$KvLb" role="3clFbG">
+                <node concept="10M0yZ" id="1f8URW$KvLc" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                 </node>
-                <node concept="liA8E" id="1f8URW$I1IP" role="2OqNvi">
-                  <ref role="37wK5l" to="17wx:~ReentrantLock.lock():void" resolve="lock" />
+                <node concept="liA8E" id="1f8URW$KvLd" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="1f8URW$Kw5Y" role="37wK5m">
+                    <property role="Xl_RC" value="waiting" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1f8URW$JJd8" role="3cqZAp">
+              <node concept="2OqwBi" id="1f8URW$JJzN" role="3clFbG">
+                <node concept="37vLTw" id="1f8URW$JJd6" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1f8URW$J$Yo" resolve="semaphore" />
+                </node>
+                <node concept="liA8E" id="1f8URW$JL7G" role="2OqNvi">
+                  <ref role="37wK5l" to="5zyv:~Semaphore.acquire():void" resolve="acquire" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1f8URW$KwTU" role="3cqZAp">
+              <node concept="2OqwBi" id="1f8URW$KwTR" role="3clFbG">
+                <node concept="10M0yZ" id="1f8URW$KwTS" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                </node>
+                <node concept="liA8E" id="1f8URW$KwTT" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="1f8URW$Kxfg" role="37wK5m">
+                    <property role="Xl_RC" value="complete" />
+                  </node>
                 </node>
               </node>
             </node>
