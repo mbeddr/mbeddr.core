@@ -113,6 +113,7 @@
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="f061" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application.ex(MPS.IDEA/)" />
+    <import index="17wx" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.locks(JDK/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -20561,7 +20562,29 @@
       <node concept="3clFbS" id="1yFmGPnLcLC" role="3clF47">
         <node concept="SfApY" id="1yFmGPnLcLD" role="3cqZAp">
           <node concept="3clFbS" id="1yFmGPnLcLE" role="SfCbr">
-            <node concept="3clFbH" id="5Pb2U$k2WUc" role="3cqZAp" />
+            <node concept="3cpWs8" id="1f8URW$HAs$" role="3cqZAp">
+              <node concept="3cpWsn" id="1f8URW$HAs_" role="3cpWs9">
+                <property role="TrG5h" value="lock" />
+                <node concept="3uibUv" id="1f8URW$HAsA" role="1tU5fm">
+                  <ref role="3uigEE" to="17wx:~ReentrantLock" resolve="ReentrantLock" />
+                </node>
+                <node concept="2ShNRf" id="1f8URW$HAL2" role="33vP2m">
+                  <node concept="1pGfFk" id="1f8URW$HVDg" role="2ShVmc">
+                    <ref role="37wK5l" to="17wx:~ReentrantLock.&lt;init&gt;()" resolve="ReentrantLock" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1f8URW$HW1R" role="3cqZAp">
+              <node concept="2OqwBi" id="1f8URW$HWo1" role="3clFbG">
+                <node concept="37vLTw" id="1f8URW$HW1P" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1f8URW$HAs_" resolve="lock" />
+                </node>
+                <node concept="liA8E" id="1f8URW$HWRg" role="2OqNvi">
+                  <ref role="37wK5l" to="17wx:~ReentrantLock.lock():void" resolve="lock" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="1yFmGPnLcLF" role="3cqZAp">
               <node concept="2YIFZM" id="5Pb2U$k6TNu" role="3clFbG">
                 <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable):void" resolve="invokeLater" />
@@ -20981,6 +21004,16 @@
                                         <node concept="10Nm6u" id="1f8URW$GPzq" role="3uHU7w" />
                                       </node>
                                     </node>
+                                    <node concept="3clFbF" id="1f8URW$HY0E" role="3cqZAp">
+                                      <node concept="2OqwBi" id="1f8URW$HYY$" role="3clFbG">
+                                        <node concept="37vLTw" id="1f8URW$HY0C" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="1f8URW$HAs_" resolve="lock" />
+                                        </node>
+                                        <node concept="liA8E" id="1f8URW$HZZg" role="2OqNvi">
+                                          <ref role="37wK5l" to="17wx:~ReentrantLock.unlock():void" resolve="unlock" />
+                                        </node>
+                                      </node>
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -20993,7 +21026,16 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1yFmGPnLcNG" role="3cqZAp" />
+            <node concept="3clFbF" id="1f8URW$I0NH" role="3cqZAp">
+              <node concept="2OqwBi" id="1f8URW$I1aa" role="3clFbG">
+                <node concept="37vLTw" id="1f8URW$I0NF" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1f8URW$HAs_" resolve="lock" />
+                </node>
+                <node concept="liA8E" id="1f8URW$I1IP" role="2OqNvi">
+                  <ref role="37wK5l" to="17wx:~ReentrantLock.lock():void" resolve="lock" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="TDmWw" id="1yFmGPnLcNH" role="TEbGg">
             <node concept="3cpWsn" id="1yFmGPnLcNI" role="TDEfY">
