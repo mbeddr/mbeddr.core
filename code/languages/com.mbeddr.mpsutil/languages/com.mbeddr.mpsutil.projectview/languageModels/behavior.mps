@@ -48,9 +48,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -96,7 +93,6 @@
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -743,19 +739,15 @@
               </node>
             </node>
             <node concept="3cpWs3" id="3ZnFyBjv3uj" role="3uHU7B">
-              <node concept="2YIFZM" id="3ZnFyBjv2_D" role="3uHU7B">
-                <ref role="37wK5l" to="w1kc:~SModelStereotype.withoutStereotype(java.lang.String):java.lang.String" resolve="withoutStereotype" />
-                <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-                <node concept="2OqwBi" id="3ZnFyBjv37H" role="37wK5m">
-                  <node concept="2OqwBi" id="3ZnFyBjv2Lz" role="2Oq$k0">
-                    <node concept="13iPFW" id="3ZnFyBjv5eF" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="3ZnFyBjv5qE" role="2OqNvi" />
-                  </node>
-                  <node concept="LkI2h" id="3ZnFyBjv3l0" role="2OqNvi" />
-                </node>
-              </node>
               <node concept="Xl_RD" id="3ZnFyBjv3uy" role="3uHU7w">
                 <property role="Xl_RC" value="." />
+              </node>
+              <node concept="2OqwBi" id="3ZnFyBjv37H" role="3uHU7B">
+                <node concept="2OqwBi" id="3ZnFyBjv2Lz" role="2Oq$k0">
+                  <node concept="13iPFW" id="3ZnFyBjv5eF" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="3ZnFyBjv5qE" role="2OqNvi" />
+                </node>
+                <node concept="LkI2h" id="3ZnFyBjv3l0" role="2OqNvi" />
               </node>
             </node>
           </node>

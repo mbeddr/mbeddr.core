@@ -5258,25 +5258,17 @@
                       <node concept="37vLTw" id="2Nt6pro9jmr" role="37wK5m">
                         <ref role="3cqZAo" node="2Nt6pro9jmi" resolve="rootModelDescriptor" />
                       </node>
-                      <node concept="2YIFZM" id="2Nt6pro9jrV" role="37wK5m">
-                        <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-                        <ref role="37wK5l" to="18ew:~NameUtil.namespaceFromLongName(java.lang.String):java.lang.String" resolve="namespaceFromLongName" />
-                        <node concept="2YIFZM" id="2Nt6pro9jrY" role="37wK5m">
-                          <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-                          <ref role="37wK5l" to="w1kc:~SModelStereotype.withoutStereotype(java.lang.String):java.lang.String" resolve="withoutStereotype" />
-                          <node concept="2OqwBi" id="2Nt6pro9jmu" role="37wK5m">
-                            <node concept="2OqwBi" id="2Nt6pro9js2" role="2Oq$k0">
-                              <node concept="37vLTw" id="2Nt6pro9js1" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2Nt6pro9jmi" resolve="rootModelDescriptor" />
-                              </node>
-                              <node concept="liA8E" id="2Nt6pro9js3" role="2OqNvi">
-                                <ref role="37wK5l" to="mhbf:~SModel.getReference():org.jetbrains.mps.openapi.model.SModelReference" resolve="getReference" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="2Nt6pro9jmw" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SModelReference.getModelName():java.lang.String" resolve="getModelName" />
-                            </node>
+                      <node concept="2OqwBi" id="7AkySkb7C_" role="37wK5m">
+                        <node concept="2OqwBi" id="2Nt6pro9jmu" role="2Oq$k0">
+                          <node concept="37vLTw" id="2Nt6pro9js1" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2Nt6pro9jmi" resolve="rootModelDescriptor" />
                           </node>
+                          <node concept="liA8E" id="2Nt6pro9jmw" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="7AkySkb88q" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SModelName.getNamespace():java.lang.String" resolve="getNamespace" />
                         </node>
                       </node>
                     </node>
