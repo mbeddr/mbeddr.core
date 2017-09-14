@@ -347,9 +347,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="6Pe8SabgUhD" role="1B3o_S" />
       <node concept="10P_77" id="6Pe8SabgUzO" role="1tU5fm" />
-      <node concept="3clFbT" id="6Pe8SabgUT9" role="33vP2m">
-        <property role="3clFbU" value="true" />
-      </node>
+      <node concept="3clFbT" id="6Pe8SabgUT9" role="33vP2m" />
     </node>
     <node concept="312cEg" id="6Pe8SabmMVR" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -1594,18 +1592,22 @@
           </node>
         </node>
         <node concept="3clFbH" id="yrP$Rymg7q" role="3cqZAp" />
-        <node concept="3clFbF" id="yrP$Rymkp7" role="3cqZAp">
-          <node concept="2OqwBi" id="yrP$RymrNo" role="3clFbG">
-            <node concept="2OqwBi" id="yrP$RymqmH" role="2Oq$k0">
-              <node concept="37vLTw" id="yrP$RympOP" role="2Oq$k0">
-                <ref role="3cqZAo" node="6Pe8SaaZtPs" resolve="editorComponent" />
+        <node concept="1X3_iC" id="2v_vgVUsAG0" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="yrP$Rymkp7" role="8Wnug">
+            <node concept="2OqwBi" id="yrP$RymrNo" role="3clFbG">
+              <node concept="2OqwBi" id="yrP$RymqmH" role="2Oq$k0">
+                <node concept="37vLTw" id="yrP$RympOP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6Pe8SaaZtPs" resolve="editorComponent" />
+                </node>
+                <node concept="liA8E" id="yrP$RymreY" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorComponent.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                </node>
               </node>
-              <node concept="liA8E" id="yrP$RymreY" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorComponent.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+              <node concept="liA8E" id="yrP$RymszI" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getInspector():jetbrains.mps.openapi.editor.EditorInspector" resolve="getInspector" />
               </node>
-            </node>
-            <node concept="liA8E" id="yrP$RymszI" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorContext.getInspector():jetbrains.mps.openapi.editor.EditorInspector" resolve="getInspector" />
             </node>
           </node>
         </node>
@@ -5576,6 +5578,13 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="3TqHf8vo4jc" role="1B3o_S" />
+    <node concept="3UR2Jj" id="2v_vgVUn7zy" role="lGtFl">
+      <node concept="TZ5HA" id="2v_vgVUn7zz" role="TZ5H$">
+        <node concept="1dT_AC" id="2v_vgVUn7z$" role="1dT_Ay">
+          <property role="1dT_AB" value="Copy-Paste of sub-nodes can cause problems!" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="2k2f42FJuQe">
     <property role="TrG5h" value="AbstractReferenceIdProvider" />
@@ -14494,6 +14503,12 @@
                         <ref role="3cqZAo" node="2N2upCcCSzS" resolve="w3cSubNode" />
                       </node>
                     </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="2v_vgVUjsZn" role="3cqZAp" />
+                <node concept="3SKdUt" id="2v_vgVUjtgm" role="3cqZAp">
+                  <node concept="3SKdUq" id="2v_vgVUjtgo" role="3SKWNk">
+                    <property role="3SKdUp" value="Bug-Fix -&gt; TODO: check if stable." />
                   </node>
                 </node>
               </node>
