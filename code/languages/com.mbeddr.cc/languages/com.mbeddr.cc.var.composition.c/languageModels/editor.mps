@@ -9,6 +9,7 @@
     <import index="xr8g" ref="r:a34fe219-429e-4501-bb74-7bfdd6e6bfc5(com.mbeddr.cc.var.composition.c.structure)" />
     <import index="mntj" ref="r:cbcf1573-e9f3-4829-a7ec-4101a2386c4c(com.mbeddr.cc.var.composition.editor)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -26,10 +27,15 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -125,6 +131,32 @@
         <ref role="1NtTu8" to="xr8g:5B$wwdfk7mc" resolve="hookName" />
       </node>
       <node concept="l2Vlx" id="5B$wwdfjpTf" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="12n15PAcvx0">
+    <property role="3GE5qa" value="function_calls" />
+    <ref role="1XX52x" to="xr8g:12n15PAcvwN" resolve="FunctionCallsMatcher" />
+    <node concept="3EZMnI" id="12n15PAcvx2" role="2wV5jI">
+      <node concept="3F0ifn" id="12n15PAcvxf" role="3EZMnx">
+        <property role="3F0ifm" value="call to function:" />
+      </node>
+      <node concept="1iCGBv" id="12n15PAcvxr" role="3EZMnx">
+        <ref role="1NtTu8" to="xr8g:12n15PAcvwO" resolve="function" />
+        <node concept="1sVBvm" id="12n15PAcvxt" role="1sWHZn">
+          <node concept="3F0A7n" id="12n15PAcvxM" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="12n15PAcvx5" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="12n15PAd47q">
+    <property role="3GE5qa" value="function_calls" />
+    <ref role="1XX52x" to="xr8g:12n15PAd47h" resolve="ReplaceCall" />
+    <node concept="3F0ifn" id="12n15PAd47s" role="2wV5jI">
+      <property role="3F0ifm" value="replace with call to this" />
     </node>
   </node>
 </model>

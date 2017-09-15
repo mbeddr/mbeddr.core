@@ -8,6 +8,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="11rw" ref="r:7d4741f1-b780-4151-bf5a-811bc0aa7587(com.mbeddr.cc.var.composition.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -117,6 +118,27 @@
       <property role="IQ2nx" value="6477445114792801676" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="12n15PAcvwN">
+    <property role="EcuMT" value="1195429025283176499" />
+    <property role="3GE5qa" value="function_calls" />
+    <property role="TrG5h" value="FunctionCallsMatcher" />
+    <property role="34LRSv" value="calls to function" />
+    <ref role="1TJDcQ" to="11rw:3YyHFqO5xVX" resolve="MatchStrategy" />
+    <node concept="1TJgyj" id="12n15PAcvwO" role="1TKVEi">
+      <property role="IQ2ns" value="1195429025283176500" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="function" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="12n15PAd47h">
+    <property role="EcuMT" value="1195429025283326417" />
+    <property role="3GE5qa" value="function_calls" />
+    <property role="TrG5h" value="ReplaceCall" />
+    <property role="34LRSv" value="replace with call to this" />
+    <ref role="1TJDcQ" to="11rw:3YyHFqO6ljB" resolve="CompositionStrategy" />
   </node>
 </model>
 

@@ -91,16 +91,15 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
-      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
-        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
-      </concept>
-      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -109,13 +108,15 @@
         <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -197,15 +198,16 @@
         </node>
         <node concept="2OqwBi" id="5be2k4jVP80" role="3clFbw">
           <node concept="2OqwBi" id="5be2k4jVO8K" role="2Oq$k0">
-            <node concept="1PxgMI" id="5be2k4jVO1F" role="2Oq$k0">
-              <node concept="2OqwBi" id="5be2k4jVY7W" role="1m5AlR">
-                <node concept="1YBJjd" id="5be2k4jVY6F" role="2Oq$k0">
-                  <ref role="1YBMHb" node="5be2k4jVHWk" resolve="icc" />
-                </node>
-                <node concept="2Rxl7S" id="5be2k4jVYmr" role="2OqNvi" />
+            <node concept="2OqwBi" id="5be2k4jVY7W" role="2Oq$k0">
+              <node concept="1YBJjd" id="5be2k4jVY6F" role="2Oq$k0">
+                <ref role="1YBMHb" node="5be2k4jVHWk" resolve="icc" />
               </node>
-              <node concept="chp4Y" id="79i$vAY7iGq" role="3oSUPX">
-                <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+              <node concept="2Xjw5R" id="352CMsvLDDO" role="2OqNvi">
+                <node concept="1xMEDy" id="352CMsvLDDQ" role="1xVPHs">
+                  <node concept="chp4Y" id="352CMsvLDDR" role="ri$Ld">
+                    <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="3CFZ6_" id="5be2k4jVOUq" role="2OqNvi">
