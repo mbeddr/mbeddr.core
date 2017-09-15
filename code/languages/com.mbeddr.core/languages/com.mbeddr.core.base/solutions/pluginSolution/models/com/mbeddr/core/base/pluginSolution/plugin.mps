@@ -20654,20 +20654,8 @@
                                         </node>
                                       </node>
                                     </node>
-                                    <node concept="3clFbJ" id="5Pb2U$k6TNQ" role="3cqZAp">
-                                      <node concept="3clFbS" id="5Pb2U$k6TNR" role="3clFbx">
-                                        <node concept="3clFbF" id="5Pb2U$k6TNS" role="3cqZAp">
-                                          <node concept="2OqwBi" id="5Pb2U$k6TNT" role="3clFbG">
-                                            <node concept="37vLTw" id="5Pb2U$k6TNU" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="5Pb2U$k6TNF" resolve="editorComp" />
-                                            </node>
-                                            <node concept="liA8E" id="5Pb2U$k6TNV" role="2OqNvi">
-                                              <ref role="37wK5l" to="exr9:~EditorComponent.update():void" resolve="update" />
-                                            </node>
-                                          </node>
-                                        </node>
-                                      </node>
-                                      <node concept="2OqwBi" id="5Pb2U$k6TNW" role="3clFbw">
+                                    <node concept="3clFbF" id="PgCWzngEmo" role="3cqZAp">
+                                      <node concept="2OqwBi" id="5Pb2U$k6TNW" role="3clFbG">
                                         <node concept="2OqwBi" id="5Pb2U$k6TNX" role="2Oq$k0">
                                           <node concept="37vLTw" id="5Pb2U$k6TNY" role="2Oq$k0">
                                             <ref role="3cqZAo" node="5Pb2U$k6TNF" resolve="editorComp" />
@@ -20684,6 +20672,7 @@
                                         </node>
                                       </node>
                                     </node>
+                                    <node concept="3clFbH" id="PgCWzngFNK" role="3cqZAp" />
                                     <node concept="3cpWs8" id="5Pb2U$k6TO2" role="3cqZAp">
                                       <node concept="3cpWsn" id="5Pb2U$k6TO3" role="3cpWs9">
                                         <property role="TrG5h" value="cell" />
