@@ -2,11 +2,11 @@
 <model ref="r:c4dde78b-0cea-4f29-a25c-12470ecb152a(test.analyses.cbmc.robustness@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -426,6 +426,21 @@
               </node>
               <node concept="2S8uIT" id="41thbhvmPDM" role="2OqNvi">
                 <ref role="2S8YL0" to="tzyt:7QgqANUCWGQ" resolve="checkSignedOverflow" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="59fy8wd$b2m" role="3cqZAp">
+          <node concept="37vLTI" id="59fy8wd$cyZ" role="3clFbG">
+            <node concept="3clFbT" id="59fy8wd$c$P" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="59fy8wd$bjS" role="37vLTJ">
+              <node concept="37vLTw" id="59fy8wd$b2k" role="2Oq$k0">
+                <ref role="3cqZAo" node="5V$HkqNYbZ8" resolve="config" />
+              </node>
+              <node concept="2S8uIT" id="59fy8wd$c8x" role="2OqNvi">
+                <ref role="2S8YL0" to="tzyt:6BNByWj0KHz" resolve="checkConversion" />
               </node>
             </node>
           </node>
@@ -1633,7 +1648,7 @@
                 <ref role="3cqZAo" node="1iGXuG00n7H" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5EwdfGVhEuw" role="37wK5m">
-                <property role="Xl_RC" value="division by zero in (double)1 / (1.000000e-1 - (double)x)" />
+                <property role="Xl_RC" value="division by zero in (double)1 / (0.1l - (double)x)" />
               </node>
             </node>
           </node>
@@ -1667,7 +1682,7 @@
                 <ref role="3cqZAo" node="1iGXuG00n7H" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5EwdfGVhF1I" role="37wK5m">
-                <property role="Xl_RC" value="NaN on / in (double)1 / (1.000000e-1 - (double)x)" />
+                <property role="Xl_RC" value="NaN on / in (double)1 / (0.1l - (double)x)" />
               </node>
             </node>
           </node>

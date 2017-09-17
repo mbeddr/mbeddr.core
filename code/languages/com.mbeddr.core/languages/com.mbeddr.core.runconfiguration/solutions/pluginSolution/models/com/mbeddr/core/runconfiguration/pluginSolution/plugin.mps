@@ -1718,7 +1718,7 @@
               <property role="TrG5h" value="isBreakpointSupport" />
               <node concept="10P_77" id="VC7RuZUIBb" role="1tU5fm" />
               <node concept="2OqwBi" id="VC7RuZUIBg" role="33vP2m">
-                <node concept="3KmjVe" id="1k1VwvtRtpA" role="2Oq$k0" />
+                <node concept="3KmjVe" id="5ZSJngDQMbQ" role="2Oq$k0" />
                 <node concept="2Zo12i" id="VC7RuZUIBi" role="2OqNvi">
                   <node concept="chp4Y" id="VC7RuZUIBj" role="2Zo12j">
                     <ref role="cht4Q" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
@@ -14367,26 +14367,6 @@
       </node>
     </node>
   </node>
-  <node concept="2uRRBC" id="Gz1BlfcZ5V">
-    <property role="3GE5qa" value="generated_code_review" />
-    <property role="TrG5h" value="CHighlightingInitializer" />
-    <node concept="2uRRBj" id="Gz1BlfcZ5W" role="2uRRBE">
-      <node concept="3clFbS" id="Gz1BlfcZ5X" role="2VODD2">
-        <node concept="3clFbF" id="Gz1BlfcZcn" role="3cqZAp">
-          <node concept="2YIFZM" id="Gz1Blfd0nv" role="3clFbG">
-            <ref role="37wK5l" node="Gz1Blfd03d" resolve="register" />
-            <ref role="1Pybhc" node="37J4MLLC9PJ" resolve="CFilesHighlightingStrategy" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="7XJGPBq40MU" role="3cqZAp">
-          <node concept="2YIFZM" id="7XJGPBq40PH" role="3clFbG">
-            <ref role="37wK5l" node="7XJGPBq3dsj" resolve="register" />
-            <ref role="1Pybhc" node="7XJGPBq3dhe" resolve="MakefilesHighlightingStrategy" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="312cEu" id="7XJGPBq3dhe">
     <property role="3GE5qa" value="generated_code_review" />
     <property role="TrG5h" value="MakefilesHighlightingStrategy" />
@@ -14565,6 +14545,26 @@
     <node concept="3Tm1VV" id="7XJGPBq3dhf" role="1B3o_S" />
     <node concept="3uibUv" id="7XJGPBq3doq" role="1zkMxy">
       <ref role="3uigEE" to="f9gx:2TQvFxb$wDf" resolve="HighlightingStrategyBase" />
+    </node>
+  </node>
+  <node concept="2uRRBC" id="Gz1BlfcZ5V">
+    <property role="3GE5qa" value="generated_code_review" />
+    <property role="TrG5h" value="CHighlightingInitializer" />
+    <node concept="2uRRBj" id="Gz1BlfcZ5W" role="2uRRBE">
+      <node concept="3clFbS" id="Gz1BlfcZ5X" role="2VODD2">
+        <node concept="3clFbF" id="Gz1BlfcZcn" role="3cqZAp">
+          <node concept="2YIFZM" id="Gz1Blfd0nv" role="3clFbG">
+            <ref role="37wK5l" node="Gz1Blfd03d" resolve="register" />
+            <ref role="1Pybhc" node="37J4MLLC9PJ" resolve="CFilesHighlightingStrategy" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7XJGPBq40MU" role="3cqZAp">
+          <node concept="2YIFZM" id="7XJGPBq40PH" role="3clFbG">
+            <ref role="37wK5l" node="7XJGPBq3dsj" resolve="register" />
+            <ref role="1Pybhc" node="7XJGPBq3dhe" resolve="MakefilesHighlightingStrategy" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="" namespace="com.mbeddr.mpsutil.breadcrumb.editor#4317384196708997038" uuid="98fa6203-83d1-4103-a949-bdcb67b49503">
+    <generator namespace="com.mbeddr.mpsutil.breadcrumb.editor#4354378109086982953" uuid="98fa6203-83d1-4103-a949-bdcb67b49503">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -47,7 +47,7 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="53a2e8ff-4795-41ec-949d-d5c6bc4895de(com.mbeddr.mpsutil.breadcrumb.editor)" version="0" />
-        <module reference="98fa6203-83d1-4103-a949-bdcb67b49503(com.mbeddr.mpsutil.breadcrumb.editor#4317384196708997038)" version="0" />
+        <module reference="98fa6203-83d1-4103-a949-bdcb67b49503(com.mbeddr.mpsutil.breadcrumb.editor#4354378109086982953)" version="0" />
         <module reference="fd28f7ed-d277-425b-a282-684ac4cbead6(com.mbeddr.mpsutil.breadcrumb.runtime)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />
@@ -67,7 +67,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_together">
           <greater-priority-mapping>
-            <generator generatorUID="98fa6203-83d1-4103-a949-bdcb67b49503(com.mbeddr.mpsutil.breadcrumb.editor#4317384196708997038)" />
+            <generator generatorUID="98fa6203-83d1-4103-a949-bdcb67b49503(com.mbeddr.mpsutil.breadcrumb.editor#4354378109086982953)" />
             <external-mapping>
               <mapping-node modelUID="r:cd652b55-d477-4c92-91d5-e3d421d4f0fc(com.mbeddr.mpsutil.breadcrumb.editor.generator.template.main@generator)" nodeID="4317384196708997039" />
             </external-mapping>

@@ -16,7 +16,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="com.mbeddr.spreadsheat#2042272859106851293" uuid="7986ede4-bb02-4e5d-8e13-03458d393ab7">
+    <generator namespace="com.mbeddr.spreadsheat#4354378109086982931" uuid="7986ede4-bb02-4e5d-8e13-03458d393ab7">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -70,7 +70,7 @@
         <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
         <module reference="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)" version="0" />
         <module reference="1d891f7b-dc93-42f9-a4bc-b016656b14e2(com.mbeddr.spreadsheat)" version="0" />
-        <module reference="7986ede4-bb02-4e5d-8e13-03458d393ab7(com.mbeddr.spreadsheat#2042272859106851293)" version="0" />
+        <module reference="7986ede4-bb02-4e5d-8e13-03458d393ab7(com.mbeddr.spreadsheat#4354378109086982931)" version="0" />
         <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
         <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
@@ -88,7 +88,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="7986ede4-bb02-4e5d-8e13-03458d393ab7(com.mbeddr.spreadsheat#2042272859106851293)" />
+            <generator generatorUID="7986ede4-bb02-4e5d-8e13-03458d393ab7(com.mbeddr.spreadsheat#4354378109086982931)" />
             <external-mapping>
               <mapping-node modelUID="r:e5112c1a-86c5-4178-8db2-7e1be9fc4f78(com.mbeddr.spreadsheat.generator.template.main@generator)" nodeID="2042272859106851326" />
             </external-mapping>

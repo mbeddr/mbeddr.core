@@ -792,7 +792,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9Kmr" role="37wK5m">
-                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (signed short int)(2 / (signed int)par)" />
+                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (int16_t)(2 / (signed int)par)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9Kms" role="2OqNvi">
@@ -826,7 +826,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9Lkj" role="37wK5m">
-                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (signed short int)((signed int)r * (signed int)r * (signed int)r)" />
+                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (int16_t)((signed int)r * (signed int)r * (signed int)r)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9Lkk" role="2OqNvi">
@@ -860,7 +860,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9MBH" role="37wK5m">
-                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (signed short int)((signed int)*aPointer * (signed int)r3)" />
+                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (int16_t)((signed int)*aPointer * (signed int)r3)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9MBI" role="2OqNvi">

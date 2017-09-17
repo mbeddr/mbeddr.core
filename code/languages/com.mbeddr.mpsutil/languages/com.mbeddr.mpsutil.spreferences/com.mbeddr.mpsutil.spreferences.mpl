@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="" namespace="com.mbeddr.mpsutil.spreferences#93055092064275899" uuid="133fc71e-c76b-4695-a2eb-9812b3860efe">
+    <generator namespace="com.mbeddr.mpsutil.spreferences#4354378109086982946" uuid="133fc71e-c76b-4695-a2eb-9812b3860efe">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -49,7 +49,7 @@
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" version="0" />
         <module reference="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1(com.mbeddr.mpsutil.spreferences)" version="0" />
-        <module reference="133fc71e-c76b-4695-a2eb-9812b3860efe(com.mbeddr.mpsutil.spreferences#93055092064275899)" version="0" />
+        <module reference="133fc71e-c76b-4695-a2eb-9812b3860efe(com.mbeddr.mpsutil.spreferences#4354378109086982946)" version="0" />
         <module reference="e78f91af-08a8-4a7a-bed6-b22739ed069a(com.mbeddr.mpsutil.spreferences.runtime)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" version="0" />
@@ -66,7 +66,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="133fc71e-c76b-4695-a2eb-9812b3860efe(com.mbeddr.mpsutil.spreferences#93055092064275899)" />
+            <generator generatorUID="133fc71e-c76b-4695-a2eb-9812b3860efe(com.mbeddr.mpsutil.spreferences#4354378109086982946)" />
             <external-mapping>
               <mapping-node modelUID="133fc71e-c76b-4695-a2eb-9812b3860efe/r:f1ed5fd1-b1cf-470a-9824-a11020c850ca(com.mbeddr.mpsutil.spreferences#93055092064275899/com.mbeddr.mpsutil.spreferences.generator.template.main@generator)" nodeID="93055092064275900" />
             </external-mapping>

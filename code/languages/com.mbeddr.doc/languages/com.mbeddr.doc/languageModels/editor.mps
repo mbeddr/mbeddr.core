@@ -2,18 +2,18 @@
 <model ref="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)">
   <persistence version="9" />
   <languages>
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
-    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="-1" />
-    <use id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell" version="-1" />
-    <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="-1" />
-    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
-    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="-1" />
-    <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
-    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
-    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
+    <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
+    <use id="b33d119e-196d-4497-977c-5c167b21fe33" name="com.mbeddr.mpsutil.framecell" version="0" />
+    <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="0" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
+    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
+    <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -1310,13 +1310,6 @@
       </node>
       <node concept="1iCGBv" id="2TZO3DbvhAK" role="3EZMnx">
         <ref role="1NtTu8" to="2c95:2TZO3DbvhAJ" resolve="target" />
-        <node concept="1sVBvm" id="2TZO3DbvhAL" role="1sWHZn">
-          <node concept="3F0A7n" id="2TZO3DbvhAN" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <ref role="1k5W1q" node="2TZO3DbviIs" resolve="structure" />
-          </node>
-        </node>
         <node concept="OXEIz" id="1WO2x6ZxmbD" role="P5bDN">
           <node concept="ZcVJ$" id="1WO2x6ZxmbC" role="OY2wv">
             <node concept="1NMggl" id="1WO2x6ZxmbE" role="1NQq9M">
@@ -1331,6 +1324,13 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1sVBvm" id="2TZO3DbvhAL" role="1sWHZn">
+          <node concept="3F0A7n" id="2TZO3DbvhAN" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" node="2TZO3DbviIs" resolve="structure" />
           </node>
         </node>
       </node>
@@ -12086,6 +12086,10 @@
       <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
     </node>
   </node>
+  <node concept="3p36aQ" id="2CRkjeiouPg">
+    <property role="3GE5qa" value="structure" />
+    <ref role="aqKnT" to="2c95:2CRkjeimvKE" resolve="DocumentRefSection" />
+  </node>
   <node concept="24kQdi" id="2CRkjeiouOD">
     <property role="3GE5qa" value="structure" />
     <ref role="1XX52x" to="2c95:2CRkjeimvKE" resolve="DocumentRefSection" />
@@ -12240,9 +12244,8 @@
       </node>
     </node>
   </node>
-  <node concept="3p36aQ" id="2CRkjeiouPg">
-    <property role="3GE5qa" value="structure" />
-    <ref role="aqKnT" to="2c95:2CRkjeimvKE" resolve="DocumentRefSection" />
+  <node concept="3p36aQ" id="143iErn7gNA">
+    <ref role="aqKnT" to="2c95:2TZO3Dbuxxg" resolve="EmptyDocContent" />
   </node>
 </model>
 
