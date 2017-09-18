@@ -906,6 +906,7 @@
           <ref role="3GEb4d" node="4AYy6hk7SkY" resolve="SimpleHTTPFOTAUpdateRequestBuilderImpl" />
         </node>
         <node concept="3GEVxB" id="2xYE3fFESdR" role="2OODSX">
+          <property role="3GEa6x" value="true" />
           <ref role="3GEb4d" node="2xYE3fFxAvw" resolve="EspressifHTTPFOTAUpdateRequestBuilderImpl" />
         </node>
         <node concept="3GEVxB" id="2xYE3fFESdS" role="2OODSX">
