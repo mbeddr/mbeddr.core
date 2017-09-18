@@ -3354,7 +3354,7 @@
           <node concept="2OqwBi" id="CqDpWV40Gk" role="3clFbw">
             <node concept="2ShNRf" id="CqDpWV3ESd" role="2Oq$k0">
               <node concept="1pGfFk" id="CqDpWV40e3" role="2ShVmc">
-                <ref role="37wK5l" to="ap4t:~GenPlanExtractor.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="GenPlanExtractor" />
+                <ref role="37wK5l" to="ap4t:~GenPlanExtractor.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,jetbrains.mps.messages.IMessageHandler)" resolve="GenPlanExtractor" />
                 <node concept="2OqwBi" id="CqDpWV7i6w" role="37wK5m">
                   <node concept="37vLTw" id="CqDpWV8_Hs" role="2Oq$k0">
                     <ref role="3cqZAo" node="CqDpWV8_Hl" resolve="module" />
@@ -3363,6 +3363,7 @@
                     <ref role="37wK5l" to="lui2:~SModule.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                   </node>
                 </node>
+                <node concept="10Nm6u" id="63B3GLJyKpj" role="37wK5m" />
               </node>
             </node>
             <node concept="liA8E" id="CqDpWV44pw" role="2OqNvi">
@@ -3746,7 +3747,7 @@
             <node concept="2OqwBi" id="ybcgwyUDDw" role="3fr31v">
               <node concept="2ShNRf" id="ybcgwyUDDx" role="2Oq$k0">
                 <node concept="1pGfFk" id="ybcgwyUDDy" role="2ShVmc">
-                  <ref role="37wK5l" to="ap4t:~GenPlanExtractor.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="GenPlanExtractor" />
+                  <ref role="37wK5l" to="ap4t:~GenPlanExtractor.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,jetbrains.mps.messages.IMessageHandler)" resolve="GenPlanExtractor" />
                   <node concept="2OqwBi" id="ybcgwyUDDz" role="37wK5m">
                     <node concept="37vLTw" id="ybcgwyUDD$" role="2Oq$k0">
                       <ref role="3cqZAo" node="CqDpWV8_Hl" resolve="module" />
@@ -3755,6 +3756,7 @@
                       <ref role="37wK5l" to="lui2:~SModule.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                     </node>
                   </node>
+                  <node concept="10Nm6u" id="63B3GLJyKm$" role="37wK5m" />
                 </node>
               </node>
               <node concept="liA8E" id="ybcgwyUDDA" role="2OqNvi">

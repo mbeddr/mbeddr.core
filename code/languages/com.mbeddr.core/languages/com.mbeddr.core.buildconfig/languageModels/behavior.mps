@@ -4191,7 +4191,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="parallelProcesses" />
-      <ref role="13i0hy" to=":^" resolve="parallelProcesses" />
+      <ref role="13i0hy" to="vog7:71C71cTwEiX" resolve="parallelProcesses" />
       <node concept="3Tm1VV" id="71C71cTwLFy" role="1B3o_S" />
       <node concept="3clFbS" id="71C71cTwLF_" role="3clF47">
         <node concept="3cpWs8" id="71C71cUqy8n" role="3cqZAp">
@@ -4200,8 +4200,8 @@
             <node concept="10Oyi0" id="71C71cUqy8l" role="1tU5fm" />
             <node concept="2OqwBi" id="71C71cUqyAw" role="33vP2m">
               <node concept="13iPFW" id="71C71cUqype" role="2Oq$k0" />
-              <node concept="2qgKlT" id="71C71cUqz_s" role="2OqNvi">
-                <ref role="37wK5l" to=":^" resolve="defaultParallelProcesses" />
+              <node concept="2qgKlT" id="63B3GLJ9xER" role="2OqNvi">
+                <ref role="37wK5l" to="vog7:71C71cTwEkc" resolve="defaultParallelProcesses" />
               </node>
             </node>
           </node>
@@ -4213,7 +4213,7 @@
                 <node concept="2OqwBi" id="71C71cUq_Y1" role="37vLTx">
                   <node concept="13iPFW" id="71C71cUq_KD" role="2Oq$k0" />
                   <node concept="3TrcHB" id="71C71cUqAA9" role="2OqNvi">
-                    <ref role="3TsBF5" to=":^" resolve="parallelProcesses" />
+                    <ref role="3TsBF5" to="51wr:71C71cTwLEc" resolve="parallelProcesses" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="71C71cUq$Pm" role="37vLTJ">
@@ -4232,7 +4232,7 @@
                 <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty):java.lang.String" resolve="getProperty" />
                 <node concept="355D3s" id="71C71cUjcCu" role="37wK5m">
                   <ref role="355D3t" to="51wr:4BxItZJ4BoI" resolve="DesktopPlatform" />
-                  <ref role="355D3u" to=":^" resolve="parallelProcesses" />
+                  <ref role="355D3u" to="51wr:71C71cTwLEc" resolve="parallelProcesses" />
                 </node>
               </node>
             </node>
