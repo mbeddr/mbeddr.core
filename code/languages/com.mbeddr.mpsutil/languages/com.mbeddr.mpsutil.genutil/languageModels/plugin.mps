@@ -24,6 +24,7 @@
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -86,7 +87,7 @@
           <node concept="2OqwBi" id="CqDpWV40Gk" role="3clFbG">
             <node concept="2ShNRf" id="CqDpWV3ESd" role="2Oq$k0">
               <node concept="1pGfFk" id="CqDpWV40e3" role="2ShVmc">
-                <ref role="37wK5l" to="ap4t:~GenPlanExtractor.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="GenPlanExtractor" />
+                <ref role="37wK5l" to="ap4t:~GenPlanExtractor.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,jetbrains.mps.messages.IMessageHandler)" resolve="GenPlanExtractor" />
                 <node concept="2OqwBi" id="CqDpWV7i6w" role="37wK5m">
                   <node concept="liA8E" id="CqDpWV7iiw" role="2OqNvi">
                     <ref role="37wK5l" to="lui2:~SModule.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
@@ -102,6 +103,7 @@
                     </node>
                   </node>
                 </node>
+                <node concept="10Nm6u" id="63B3GLJ02lk" role="37wK5m" />
               </node>
             </node>
             <node concept="liA8E" id="CqDpWV44pw" role="2OqNvi">
