@@ -87,8 +87,11 @@
     <language id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core">
       <concept id="4053481679317021366" name="com.mbeddr.analyses.cbmc.core.structure.RobustnessCBMCAnalysis" flags="ng" index="1nvAUE">
         <property id="9020927825194549928" name="check_memory_leak" index="2o64iB" />
+        <property id="4053481679317021372" name="check_nan" index="1nvAUw" />
         <property id="4053481679317021368" name="check_pointer" index="1nvAU$" />
+        <property id="4053481679317021369" name="check_array_bounds" index="1nvAU_" />
         <property id="4053481679317021370" name="check_signed_overflow" index="1nvAUA" />
+        <property id="4053481679317021371" name="check_unsigned_overflow" index="1nvAUB" />
         <property id="4053481679317021367" name="check_div_by_zero" index="1nvAUF" />
         <property id="7634619718342724140" name="check_conversion" index="1UWlg3" />
       </concept>
@@ -1119,6 +1122,9 @@
     <node concept="3GEVxB" id="prDxnvfD9m" role="3W6d8T">
       <ref role="3GEb4d" node="7UiQjZi_RH3" resolve="DivByZeroUserInput" />
     </node>
+    <node concept="3GEVxB" id="77XjP8HUx9E" role="3W6d8T">
+      <ref role="3GEb4d" node="5bSnXVJN5tY" resolve="DivByZeroFloatApproximation" />
+    </node>
     <node concept="3GEVxB" id="prDxnvg6ZP" role="3W6d8T">
       <ref role="3GEb4d" node="5V$HkqNY91f" resolve="Pointer" />
     </node>
@@ -1216,6 +1222,31 @@
       <property role="1UWlg3" value="true" />
       <property role="1nvAUA" value="true" />
       <ref role="3V$Cn$" node="4tIZ4QIjwgh" resolve="libCall2" />
+    </node>
+    <node concept="1nvAUE" id="77XjP8HUx9S" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <property role="1nvAU_" value="true" />
+      <property role="1nvAUF" value="true" />
+      <property role="1nvAUw" value="true" />
+      <property role="1nvAU$" value="true" />
+      <property role="1nvAUA" value="true" />
+      <property role="1nvAUB" value="true" />
+      <property role="1UWlg3" value="true" />
+      <property role="2o64iB" value="true" />
+      <ref role="3V$Cn$" node="5bSnXVJN5u0" resolve="floatApproximation" />
     </node>
   </node>
 </model>
