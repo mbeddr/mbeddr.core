@@ -22,12 +22,16 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -1663,6 +1667,25 @@
       <property role="20kJfa" value="externalDocument" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5gTlpaky5gD" resolve="AbstractExport" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2cjkfC8rZLR">
+    <property role="EcuMT" value="2527452850698583159" />
+    <property role="TrG5h" value="PlaceInfolder" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="2cjkfC8rZLY" role="1TKVEl">
+      <property role="IQ2nx" value="2527452850698583166" />
+      <property role="TrG5h" value="subfolder" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="M6xJ_" id="2cjkfC8rZLS" role="lGtFl">
+      <property role="Hh88m" value="placeAt" />
+      <node concept="tn0Fv" id="2cjkfC8rZLU" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="2cjkfC8rZLW" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
     </node>
   </node>
 </model>
