@@ -2607,6 +2607,25 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="6lu2bgTp$OZ" role="3cqZAp">
+          <node concept="3SKdUq" id="6lu2bgTp$P1" role="3SKWNk">
+            <property role="3SKdUp" value="there are scenarios where node doc viewer might need to have presentation mode enabled as well" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6lu2bgTpveJ" role="3cqZAp">
+          <node concept="2OqwBi" id="6lu2bgTpveK" role="3clFbG">
+            <node concept="2WthIp" id="6lu2bgTpveL" role="2Oq$k0" />
+            <node concept="2XshWL" id="6lu2bgTpveM" role="2OqNvi">
+              <ref role="2WH_rO" node="1KDc5EfHWG0" resolve="addPresentationModeHint" />
+              <node concept="2OqwBi" id="6lu2bgTpveN" role="2XxRq1">
+                <node concept="2WthIp" id="6lu2bgTpveO" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="6lu2bgTpwgT" role="2OqNvi">
+                  <ref role="2WH_rO" node="7r8qu42xp1O" resolve="nodeDocEditor" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="7r8qu42xMwz" role="3cqZAp" />
         <node concept="3clFbF" id="6aFOdqu5hnj" role="3cqZAp">
           <node concept="2OqwBi" id="6aFOdqu5hwi" role="3clFbG">
