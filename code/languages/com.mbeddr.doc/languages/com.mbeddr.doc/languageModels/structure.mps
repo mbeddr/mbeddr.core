@@ -448,6 +448,13 @@
       <property role="IQ2ns" value="3352153450711894224" />
       <ref role="20lvS9" node="2U5fsQei4zf" resolve="IDocConfigItem" />
     </node>
+    <node concept="1TJgyj" id="5JlMPDXOsfV" role="1TKVEi">
+      <property role="IQ2ns" value="6617418817009206267" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="defaultImagePath" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5JlMPDXMgjR" resolve="DefaultImagePath" />
+    </node>
     <node concept="PrWs8" id="5yxqZJwzC3f" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
@@ -1388,13 +1395,6 @@
     <node concept="1QGGSu" id="1N5Tah$Cg8O" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/code.png" />
     </node>
-    <node concept="1TJgyj" id="627_yy34G1c" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="path" />
-      <property role="20lbJX" value="0..1" />
-      <property role="IQ2ns" value="6955693250238922828" />
-      <ref role="20lvS9" node="5yxqZJwzC3r" resolve="PathDefinition" />
-    </node>
     <node concept="PrWs8" id="627_yy34G1d" role="PzmwI">
       <ref role="PrY4T" node="47ZkZt5XzTh" resolve="IInterspersed" />
     </node>
@@ -1693,6 +1693,12 @@
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
     </node>
+  </node>
+  <node concept="1TIwiD" id="5JlMPDXMgjR">
+    <property role="EcuMT" value="6617418817008633079" />
+    <property role="3GE5qa" value="config" />
+    <property role="TrG5h" value="DefaultImagePath" />
+    <ref role="1TJDcQ" node="5yxqZJwzC3r" resolve="PathDefinition" />
   </node>
 </model>
 

@@ -8204,33 +8204,6 @@
             <ref role="1NtTu8" to="2c95:627_yy34G16" resolve="codeptr" />
           </node>
         </node>
-        <node concept="3F0ifn" id="627_yy34Gwb" role="3EZMnx">
-          <property role="3F0ifm" value="location:" />
-          <ref role="1k5W1q" node="3RseghId8o$" resolve="nodeReference" />
-          <node concept="pVoyu" id="627_yy34Gwc" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="lj46D" id="627_yy34Gwd" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="1iCGBv" id="627_yy34Gwe" role="3EZMnx">
-          <ref role="1NtTu8" to="2c95:627_yy34G1c" resolve="path" />
-          <node concept="1sVBvm" id="627_yy34Gwf" role="1sWHZn">
-            <node concept="3F0A7n" id="627_yy34Gwg" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              <ref role="1k5W1q" node="3RseghId8o$" resolve="nodeReference" />
-            </node>
-          </node>
-        </node>
-        <node concept="3F0ifn" id="627_yy34Gwh" role="3EZMnx">
-          <property role="3F0ifm" value=":/" />
-          <ref role="1k5W1q" node="3RseghId8o$" resolve="nodeReference" />
-          <node concept="11L4FC" id="627_yy34Gwi" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
         <node concept="3F0ifn" id="627_yy34Gwj" role="3EZMnx">
           <property role="3F0ifm" value="scaling: " />
           <ref role="1k5W1q" node="3RseghId8o$" resolve="nodeReference" />
