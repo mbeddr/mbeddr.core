@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml" version="0" />
-    <use id="f44f6b9a-bf30-4f73-866e-fac17c177409" name="com.mbeddr.doc.gen_latex" version="0" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
   </languages>
   <imports>
@@ -40,10 +39,10 @@
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
       <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="3352153450711894224" name="configItems" index="2wNnkt" />
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
       <concept id="6068976060904002601" name="com.mbeddr.doc.structure.AbstractExport" flags="ng" index="30Gg6V">
-        <child id="6068976060904007487" name="renderer" index="30GjaH" />
         <child id="6068976060904007490" name="mappings" index="30Gjbg" />
         <child id="6068976060904007489" name="root" index="30Gjbj" />
       </concept>
@@ -129,7 +128,6 @@
   <node concept="1_08Dk" id="4pIcGABsMkZ">
     <property role="TrG5h" value="AndIAlsoNeedThis" />
     <property role="WqcPg" value="My strange export config" />
-    <node concept="1_07dB" id="4pIcGABsMl5" role="30GjaH" />
     <node concept="1_0j5j" id="4pIcGABsMl2" role="30Gjbj">
       <ref role="1_0j5g" node="4pIcGABsAb1" resolve="myDocument" />
     </node>
@@ -140,6 +138,7 @@
   </node>
   <node concept="2SbYGP" id="4pIcGABsMlJ">
     <property role="TrG5h" value="IneedThisShitToo" />
+    <node concept="1_07dB" id="4pIcGABsMl5" role="2wNnkt" />
     <node concept="2SbYGw" id="4pIcGABsMlK" role="Cbewh">
       <property role="TrG5h" value="main" />
       <node concept="9PVaO" id="4pIcGABsMlL" role="9PVG_">

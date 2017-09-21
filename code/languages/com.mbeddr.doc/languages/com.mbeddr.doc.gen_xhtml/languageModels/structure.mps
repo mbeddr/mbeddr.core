@@ -56,7 +56,7 @@
     <property role="TrG5h" value="HTMLRenderer" />
     <property role="34LRSv" value="html" />
     <property role="EcuMT" value="3350625596580275037" />
-    <ref role="1TJDcQ" to="2c95:2TZO3DbvSLN" resolve="DocumentRenderer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzIqw10" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="cssSpec" />
@@ -67,6 +67,9 @@
       <property role="TrG5h" value="stylesheet" />
       <property role="IQ2nx" value="4457500422381329081" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3$$jtHg5LBL" role="PzmwI">
+      <ref role="PrY4T" to="2c95:2U5fsQei4zf" resolve="IDocConfigItem" />
     </node>
   </node>
   <node concept="1TIwiD" id="1T7O9iX4wD_">
