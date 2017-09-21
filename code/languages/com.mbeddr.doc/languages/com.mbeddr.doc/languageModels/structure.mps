@@ -22,6 +22,9 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
         <property id="6054523464626875854" name="value" index="tnX3d" />
       </concept>
@@ -1675,8 +1678,11 @@
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyi" id="2cjkfC8rZLY" role="1TKVEl">
       <property role="IQ2nx" value="2527452850698583166" />
-      <property role="TrG5h" value="subfolder" />
+      <property role="TrG5h" value="location" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="t5JxF" id="49PUF$HQnyy" role="lGtFl">
+        <property role="t5JxN" value="absolut location where the resulting file should get placed. This is the folder and not the file." />
+      </node>
     </node>
     <node concept="M6xJ_" id="2cjkfC8rZLS" role="lGtFl">
       <property role="Hh88m" value="placeAt" />
