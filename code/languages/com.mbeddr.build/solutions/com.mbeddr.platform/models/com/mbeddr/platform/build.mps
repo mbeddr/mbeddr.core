@@ -12399,6 +12399,12 @@
         <property role="TrG5h" value="com.mbeddr.doc" />
         <property role="3LESm3" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a" />
         <property role="2GAjPV" value="false" />
+        <node concept="1E0d5M" id="rGCnUiUCSa" role="1E1XAP">
+          <ref role="1E0d5P" node="7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+        </node>
+        <node concept="1E0d5M" id="rGCnUiUCSb" role="1E1XAP">
+          <ref role="1E0d5P" node="2Z2H3pkY6Sh" resolve="com.mbeddr.mpsutil.userstyles.runtime" />
+        </node>
         <node concept="398BVA" id="1YMM4SJ3di" role="3LF7KH">
           <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
           <node concept="2Ry0Ak" id="1YMM4SJ4M7" role="iGT6I">
@@ -12569,11 +12575,11 @@
             <ref role="3bR37D" node="1qdZ14g6jVZ" resolve="com.mbeddr.mpsutil.margincell" />
           </node>
         </node>
-        <node concept="1E0d5M" id="rGCnUiUCSa" role="1E1XAP">
-          <ref role="1E0d5P" node="7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
-        </node>
-        <node concept="1E0d5M" id="rGCnUiUCSb" role="1E1XAP">
-          <ref role="1E0d5P" node="2Z2H3pkY6Sh" resolve="com.mbeddr.mpsutil.userstyles.runtime" />
+        <node concept="1SiIV0" id="3$$jtHg5w0g" role="3bR37C">
+          <node concept="3bR9La" id="3$$jtHg5w0h" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1YMM4SJ2m0" resolve="com.mbeddr.doc" />
+          </node>
         </node>
       </node>
       <node concept="1E1JtD" id="7tNo_gxoK97" role="2G$12L">
