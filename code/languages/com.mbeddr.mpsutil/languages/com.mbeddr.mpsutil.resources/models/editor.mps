@@ -45,7 +45,7 @@
     <node concept="3EZMnI" id="2p1v3tObZuW" role="2wV5jI">
       <node concept="l2Vlx" id="2p1v3tObZuX" role="2iSdaV" />
       <node concept="3F0ifn" id="2p1v3tObZvD" role="3EZMnx">
-        <property role="3F0ifm" value="character:" />
+        <property role="3F0ifm" value="text:" />
       </node>
       <node concept="3F0A7n" id="2p1v3tObZx5" role="3EZMnx">
         <ref role="1NtTu8" to="1oap:2p1v3tObyyY" resolve="text" />

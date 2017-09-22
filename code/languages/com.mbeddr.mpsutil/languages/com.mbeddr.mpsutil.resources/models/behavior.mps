@@ -170,7 +170,21 @@
   <node concept="13h7C7" id="4kGsAe0sSZb">
     <ref role="13h7C2" to="e8s3:4kGsAe0sBd_" resolve="TextCustomizable" />
     <node concept="13hLZK" id="4kGsAe0sSZc" role="13h7CW">
-      <node concept="3clFbS" id="4kGsAe0sSZd" role="2VODD2" />
+      <node concept="3clFbS" id="4kGsAe0sSZd" role="2VODD2">
+        <node concept="3clFbF" id="3YXxk$zEcMt" role="3cqZAp">
+          <node concept="37vLTI" id="3YXxk$zEwWU" role="3clFbG">
+            <node concept="3cmrfG" id="3YXxk$zEwZB" role="37vLTx">
+              <property role="3cmrfH" value="10" />
+            </node>
+            <node concept="2OqwBi" id="3YXxk$zEvgC" role="37vLTJ">
+              <node concept="13iPFW" id="3YXxk$zEcMs" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3YXxk$zEvzR" role="2OqNvi">
+                <ref role="3TsBF5" to="e8s3:4kGsAe0sBgA" resolve="fontSize" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="4kGsAe0sT22" role="13h7CS">
       <property role="13i0iv" value="false" />
