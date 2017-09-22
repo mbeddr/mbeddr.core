@@ -149,6 +149,9 @@
     <node concept="PrWs8" id="3YyHFqO8SAq" role="PzmwI">
       <ref role="PrY4T" node="3YyHFqO8SAp" resolve="ICompositionControl" />
     </node>
+    <node concept="PrWs8" id="12n15PAduaO" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3YyHFqO5xVX">
     <property role="3GE5qa" value="match" />
