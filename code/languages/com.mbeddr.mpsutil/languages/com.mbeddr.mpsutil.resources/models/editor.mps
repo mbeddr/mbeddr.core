@@ -69,10 +69,10 @@
         </node>
       </node>
       <node concept="3F0ifn" id="4kGsAe0wcPU" role="3EZMnx">
-        <property role="3F0ifm" value="font-face:" />
+        <property role="3F0ifm" value="font-family:" />
       </node>
       <node concept="3F0A7n" id="4kGsAe0wcPV" role="3EZMnx">
-        <ref role="1NtTu8" to="e8s3:4kGsAe0sSYF" resolve="fontFace" />
+        <ref role="1NtTu8" to="e8s3:4kGsAe0sSYF" resolve="fontFamily" />
       </node>
       <node concept="3F0ifn" id="1BguvjG4kLK" role="3EZMnx">
         <property role="3F0ifm" value="," />
