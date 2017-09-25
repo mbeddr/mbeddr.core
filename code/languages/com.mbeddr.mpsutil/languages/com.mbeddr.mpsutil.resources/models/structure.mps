@@ -110,5 +110,15 @@
       <property role="1uS6qv" value="Italic" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6ZzNS$a2vGs">
+    <property role="EcuMT" value="8062515945409215260" />
+    <property role="TrG5h" value="CircleCustomizable" />
+    <ref role="1TJDcQ" to="1oap:2p1v3tObwTw" resolve="Circle" />
+    <node concept="1TJgyi" id="6ZzNS$a2vGt" role="1TKVEl">
+      <property role="IQ2nx" value="8062515945409215261" />
+      <property role="TrG5h" value="thickness" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 
