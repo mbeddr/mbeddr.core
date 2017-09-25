@@ -18,6 +18,7 @@
       </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -48,8 +49,8 @@
     </node>
     <node concept="1TJgyi" id="4kGsAe0sSYF" role="1TKVEl">
       <property role="IQ2nx" value="4984484659274682283" />
-      <property role="TrG5h" value="fontFace" />
-      <ref role="AX2Wp" node="4kGsAe0sSXV" resolve="EFontFace" />
+      <property role="TrG5h" value="fontFamily" />
+      <ref role="AX2Wp" node="4kGsAe0sSXV" resolve="EFontFamily" />
     </node>
     <node concept="1TJgyi" id="4kGsAe0sBgA" role="1TKVEl">
       <property role="IQ2nx" value="4984484659274609702" />
@@ -58,36 +59,45 @@
     </node>
   </node>
   <node concept="AxPO7" id="4kGsAe0sSXV">
-    <property role="TrG5h" value="EFontFace" />
-    <property role="3lZH7k" value="derive_from_presentation" />
+    <property role="TrG5h" value="EFontFamily" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="4kGsAe0sSXW" role="M5hS2">
       <property role="1uS6qo" value="Dialog" />
+      <property role="1uS6qv" value="Dialog" />
     </node>
     <node concept="M4N5e" id="4kGsAe0sSYg" role="M5hS2">
       <property role="1uS6qo" value="DialogInput" />
+      <property role="1uS6qv" value="DialogInput" />
     </node>
     <node concept="M4N5e" id="4kGsAe0sSYb" role="M5hS2">
       <property role="1uS6qo" value="SansSerif" />
+      <property role="1uS6qv" value="SansSerif" />
     </node>
     <node concept="M4N5e" id="4kGsAe0sSYn" role="M5hS2">
       <property role="1uS6qo" value="Serif" />
+      <property role="1uS6qv" value="Serif" />
     </node>
     <node concept="M4N5e" id="4kGsAe0sSYw" role="M5hS2">
       <property role="1uS6qo" value="Monospaced" />
+      <property role="1uS6qv" value="Monospaced" />
     </node>
   </node>
   <node concept="AxPO7" id="4kGsAe0tlF8">
     <property role="TrG5h" value="EFontStyle" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="4kGsAe0tlFf" role="M5hS2">
       <property role="1uS6qo" value="Plain" />
+      <property role="1uS6qv" value="Plain" />
     </node>
     <node concept="M4N5e" id="4kGsAe0tlF9" role="M5hS2">
       <property role="1uS6qo" value="Bold" />
+      <property role="1uS6qv" value="Bold" />
     </node>
     <node concept="M4N5e" id="4kGsAe0tlFa" role="M5hS2">
       <property role="1uS6qo" value="Italic" />
+      <property role="1uS6qv" value="Italic" />
     </node>
   </node>
 </model>
