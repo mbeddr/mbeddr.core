@@ -98,6 +98,30 @@
       <node concept="3F0A7n" id="4kGsAe0sBiL" role="3EZMnx">
         <ref role="1NtTu8" to="e8s3:4kGsAe0sBgA" resolve="fontSize" />
       </node>
+      <node concept="3F0ifn" id="3mKaBWVV$gP" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="3mKaBWVV$gQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3mKaBWVV$gR" role="3EZMnx">
+        <property role="3F0ifm" value="x-Offs:" />
+      </node>
+      <node concept="3F0A7n" id="3mKaBWVV$gS" role="3EZMnx">
+        <ref role="1NtTu8" to="e8s3:3mKaBWVV7Vo" resolve="xOffset" />
+      </node>
+      <node concept="3F0ifn" id="3mKaBWVV$hf" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="3mKaBWVV$hg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3mKaBWVV$hh" role="3EZMnx">
+        <property role="3F0ifm" value="y-Offs:" />
+      </node>
+      <node concept="3F0A7n" id="3mKaBWVV$hi" role="3EZMnx">
+        <ref role="1NtTu8" to="e8s3:3mKaBWVV7Vt" resolve="yOffset" />
+      </node>
     </node>
   </node>
 </model>
