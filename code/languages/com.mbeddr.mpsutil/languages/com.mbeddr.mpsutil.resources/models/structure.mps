@@ -57,6 +57,16 @@
       <property role="TrG5h" value="fontSize" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="3mKaBWVV7Vo" role="1TKVEl">
+      <property role="IQ2nx" value="3868638805865823960" />
+      <property role="TrG5h" value="xOffset" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3mKaBWVV7Vt" role="1TKVEl">
+      <property role="IQ2nx" value="3868638805865823965" />
+      <property role="TrG5h" value="yOffset" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="AxPO7" id="4kGsAe0sSXV">
     <property role="TrG5h" value="EFontFamily" />
