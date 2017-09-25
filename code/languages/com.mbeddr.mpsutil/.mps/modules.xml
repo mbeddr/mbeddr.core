@@ -96,6 +96,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.rcp/runtime/com.mbeddr.mpsutil.rcp.runtime.msd" folder="staging.rcp" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring.rt/rt.msd" folder="staging.refactoring" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="staging.refactoring" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.resources/com.mbeddr.mpsutil.resources.mpl" folder="staging" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.review.annotation/com.mbeddr.mpsutil.review.annotation.mpl" folder="staging.margincell_review" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.review.readonly/com.mbeddr.mpsutil.review.readonly.mpl" folder="staging.margincell_review" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.review/com.mbeddr.mpsutil.review.mpl" folder="staging.margincell_review" />
