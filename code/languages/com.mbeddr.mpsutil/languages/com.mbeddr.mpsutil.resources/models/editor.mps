@@ -8,6 +8,7 @@
   <imports>
     <import index="e8s3" ref="r:3a350e23-1ecf-4b26-b501-4772d34dff84(com.mbeddr.mpsutil.resources.structure)" implicit="true" />
     <import index="1oap" ref="r:03d44d4c-3d65-461c-9085-0f48e9569e59(jetbrains.mps.lang.resources.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -20,6 +21,10 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -34,7 +39,10 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY">
+        <property id="16410578721444372" name="customizeEmptyCell" index="2ru_X1" />
+        <child id="16410578721629643" name="emptyCellModel" index="2ruayu" />
+      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -121,6 +129,98 @@
       </node>
       <node concept="3F0A7n" id="3mKaBWVV$hi" role="3EZMnx">
         <ref role="1NtTu8" to="e8s3:3mKaBWVV7Vt" resolve="yOffset" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6ZzNS$a2wga">
+    <ref role="1XX52x" to="e8s3:6ZzNS$a2vGs" resolve="CircleCustomizable" />
+    <node concept="3EZMnI" id="2p1v3tObyz5" role="2wV5jI">
+      <node concept="l2Vlx" id="2p1v3tObyz6" role="2iSdaV" />
+      <node concept="3F0ifn" id="2p1v3tObyz7" role="3EZMnx">
+        <property role="3F0ifm" value="circle" />
+      </node>
+      <node concept="3F0ifn" id="2p1v3tObyzc" role="3EZMnx">
+        <property role="3F0ifm" value="fill" />
+      </node>
+      <node concept="3F0ifn" id="1ng4Vf3TdIk" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+        <node concept="11L4FC" id="1ng4Vf3TdIC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="1ng4Vf3TdID" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1BguvjG4Cpx" role="3EZMnx">
+        <ref role="1NtTu8" to="1oap:1BguvjG4kKh" resolve="fillColor" />
+      </node>
+      <node concept="3F0ifn" id="2p1v3tObyzg" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="2p1v3tObyzh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2p1v3tObyzi" role="3EZMnx">
+        <property role="3F0ifm" value="border" />
+      </node>
+      <node concept="3F0ifn" id="1ng4Vf3TdHE" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+        <node concept="11L4FC" id="1ng4Vf3TdHV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="1ng4Vf3TdHW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1BguvjG5_qd" role="3EZMnx">
+        <property role="2ru_X1" value="true" />
+        <ref role="1NtTu8" to="1oap:1BguvjG4kKj" resolve="borderColor" />
+        <node concept="3F0ifn" id="1ng4Vf3Tp2X" role="2ruayu">
+          <property role="3F0ifm" value="&lt;default&gt;" />
+          <ref role="1k5W1q" to="tpco:3VARyd8XcQs" resolve="Comment" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2p1v3tObyzm" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="2p1v3tObyzn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2p1v3tObyzo" role="3EZMnx">
+        <property role="3F0ifm" value="size" />
+      </node>
+      <node concept="3F0ifn" id="1ng4Vf3Tbv2" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+        <node concept="11L4FC" id="1ng4Vf3TbwS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="1ng4Vf3TbxO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="1ng4Vf3VLdY" role="3EZMnx">
+        <ref role="1NtTu8" to="1oap:2p1v3tObyz1" resolve="r" />
+      </node>
+      <node concept="3F0ifn" id="6ZzNS$a2wgM" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="6ZzNS$a2wgN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6ZzNS$a2wgO" role="3EZMnx">
+        <property role="3F0ifm" value="thickness" />
+      </node>
+      <node concept="3F0ifn" id="6ZzNS$a2wgP" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+        <node concept="11L4FC" id="6ZzNS$a2wgQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="6ZzNS$a2wgR" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6ZzNS$a2wgS" role="3EZMnx">
+        <ref role="1NtTu8" to="e8s3:6ZzNS$a2vGt" resolve="thickness" />
       </node>
     </node>
   </node>
