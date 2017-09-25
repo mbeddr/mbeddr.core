@@ -11,6 +11,7 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="p9f4" ref="r:36aeb616-f561-40d2-aedb-9476bc0a6442(com.mbeddr.mpsutil.modellisteners.runtime.plugin)" />
     <import index="wlk" ref="r:aa2e9fa0-d890-401e-b521-21670da212d1(com.mbeddr.mpsutil.modellisteners.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="6zkc" ref="r:0c81e2c1-ba6e-4ec9-83d9-30ec00711168(com.mbeddr.mpsutil.modellisteners.behavior)" implicit="true" />
@@ -28,10 +29,6 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
-      </concept>
-      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
-        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
-        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -72,7 +69,6 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -89,9 +85,6 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -135,6 +128,9 @@
       <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
         <child id="1177093586806" name="templateNode" index="gfFT$" />
       </concept>
+      <concept id="1168559512253" name="jetbrains.mps.lang.generator.structure.DismissTopMappingRule" flags="lg" index="j$LIH">
+        <child id="1169669152123" name="generatorMessage" index="1lHHLF" />
+      </concept>
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4" />
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
       <concept id="1167087469898" name="jetbrains.mps.lang.generator.structure.CreateRootRule" flags="lg" index="2VPoh5">
@@ -142,15 +138,21 @@
         <child id="1167087469900" name="conditionFunction" index="2VPoh3" />
       </concept>
       <concept id="1167087518662" name="jetbrains.mps.lang.generator.structure.CreateRootRule_Condition" flags="in" index="2VP$b9" />
+      <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
+        <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
       <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
       </concept>
       <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
+      </concept>
+      <concept id="1169670156577" name="jetbrains.mps.lang.generator.structure.GeneratorMessage" flags="lg" index="1lLz0L">
+        <property id="1169670173015" name="messageText" index="1lLB17" />
+        <property id="1169670356567" name="messageType" index="1lMjX7" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
@@ -178,9 +180,6 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
-      </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
@@ -243,6 +242,31 @@
   </registry>
   <node concept="bUwia" id="52ZF9D36sjw">
     <property role="TrG5h" value="main" />
+    <node concept="3aamgX" id="9$iJr8XPBG" role="3acgRq">
+      <ref role="30HIoZ" to="wlk:52ZF9D39XYf" resolve="ConceptModelListeners" />
+      <node concept="j$LIH" id="9$iJr8XXRG" role="1lVwrX">
+        <node concept="1lLz0L" id="9$iJr8XXZf" role="1lHHLF">
+          <property role="1lMjX7" value="error" />
+          <property role="1lLB17" value="Move model listeners to the 'listeners' aspect" />
+        </node>
+      </node>
+      <node concept="30G5F_" id="9$iJr8XV_y" role="30HLyM">
+        <node concept="3clFbS" id="9$iJr8XV_z" role="2VODD2">
+          <node concept="3clFbF" id="9$iJr8XWyR" role="3cqZAp">
+            <node concept="3fqX7Q" id="9$iJr8XXJi" role="3clFbG">
+              <node concept="2YIFZM" id="9$iJr8XXJk" role="3fr31v">
+                <ref role="37wK5l" to="slod:9$iJr8WJei" resolve="is" />
+                <ref role="1Pybhc" to="slod:9$iJr8WJ9Q" resolve="ListenersAspect" />
+                <node concept="2OqwBi" id="9$iJr8XXJl" role="37wK5m">
+                  <node concept="1iwH7S" id="9$iJr8XXJm" role="2Oq$k0" />
+                  <node concept="1st3f0" id="9$iJr8XXJn" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="52ZF9D3c63S" role="3acgRq">
       <ref role="30HIoZ" to="wlk:52ZF9D3a9ga" resolve="ChildAddedListener" />
       <node concept="1Koe21" id="52ZF9D3c64f" role="1lVwrX">
@@ -1394,23 +1418,6 @@
           </node>
           <node concept="3clFbF" id="40EGsDCsY$4" role="3cqZAp">
             <node concept="1Wc70l" id="40EGsDCsY$5" role="3clFbG">
-              <node concept="1eOMI4" id="40EGsDCsY$6" role="3uHU7B">
-                <node concept="3clFbC" id="40EGsDCsY$7" role="1eOMHV">
-                  <node concept="Rm8GO" id="40EGsDCsY$8" role="3uHU7w">
-                    <ref role="1Px2BO" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
-                    <ref role="Rm8GQ" to="w1kc:~LanguageAspect.CONSTRAINTS" resolve="CONSTRAINTS" />
-                  </node>
-                  <node concept="2YIFZM" id="40EGsDCsY$9" role="3uHU7B">
-                    <ref role="37wK5l" to="w1kc:~Language.getModelAspect(org.jetbrains.mps.openapi.model.SModel):jetbrains.mps.smodel.LanguageAspect" resolve="getModelAspect" />
-                    <ref role="1Pybhc" to="w1kc:~Language" resolve="Language" />
-                    <node concept="2JrnkZ" id="40EGsDCsY$b" role="37wK5m">
-                      <node concept="37vLTw" id="3GM_nagTytc" role="2JrQYb">
-                        <ref role="3cqZAo" node="5Cioe7RLP3z" resolve="model" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3fqX7Q" id="40EGsDCsY$e" role="3uHU7w">
                 <node concept="2OqwBi" id="40EGsDCsY$f" role="3fr31v">
                   <node concept="2OqwBi" id="40EGsDCsY$g" role="2Oq$k0">
@@ -1422,6 +1429,13 @@
                     </node>
                   </node>
                   <node concept="1v1jN8" id="40EGsDCsY$j" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="2YIFZM" id="9$iJr8XbqG" role="3uHU7B">
+                <ref role="37wK5l" to="slod:9$iJr8WJei" resolve="is" />
+                <ref role="1Pybhc" to="slod:9$iJr8WJ9Q" resolve="ListenersAspect" />
+                <node concept="37vLTw" id="9$iJr8Xb4X" role="37wK5m">
+                  <ref role="3cqZAo" node="5Cioe7RLP3z" resolve="model" />
                 </node>
               </node>
             </node>
