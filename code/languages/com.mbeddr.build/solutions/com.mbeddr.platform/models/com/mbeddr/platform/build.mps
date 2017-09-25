@@ -950,6 +950,39 @@
         </node>
       </node>
     </node>
+    <node concept="m$_wf" id="3l$sBid_$5k" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.nodeToSVG" />
+      <node concept="3_J27D" id="3l$sBid_$5m" role="m$_yQ">
+        <node concept="3Mxwew" id="3l$sBid_H66" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.nodeToSVG" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3l$sBid_$5o" role="m_cZH">
+        <node concept="3Mxwew" id="3l$sBid_H69" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.nodeToSVG" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3l$sBid_$5q" role="m$_w8">
+        <node concept="3Mxwey" id="3l$sBid_KuH" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3l$sBid_Jmv" role="3s6cr7">
+        <node concept="3Mxwew" id="3l$sBid_Jmy" role="3MwsjC">
+          <property role="3MwjfP" value="Plugin for serializing " />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="3l$sBid_LAS" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com" />
+      </node>
+      <node concept="m$f5U" id="3l$sBidAj4g" role="m$_yh">
+        <ref role="m$f5T" node="3l$sBid_Sn$" resolve="group.mpsutil.nodeToSVG" />
+      </node>
+      <node concept="m$_yC" id="3l$sBidAkgP" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+    </node>
     <node concept="m$_wf" id="7tNo_gxoK8h" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.doc" />
       <node concept="m$_yC" id="5fGcQI99y$D" role="m$_yJ">
@@ -2282,6 +2315,441 @@
     </node>
     <node concept="2G$12M" id="7uZw0yZ2_Jz" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.mpsutil" />
+    </node>
+    <node concept="2G$12M" id="3l$sBid_Sn$" role="3989C9">
+      <property role="TrG5h" value="group.mpsutil.nodeToSVG" />
+      <node concept="1E1JtA" id="3l$sBid_Z8k" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+        <property role="3LESm3" value="a994cf75-61e2-4d16-9c4d-0cdc14682cfa" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="3l$sBidA0g$" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="3l$sBidA2wW" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="3l$sBidA4Lj" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+              <node concept="2Ry0Ak" id="3l$sBidA71E" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA89P" role="3bR37C">
+          <node concept="3bR9La" id="3l$sBidA89Q" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:5xhjlkpPkMG" resolve="jetbrains.mps.ide.httpsupport" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA89R" role="3bR37C">
+          <node concept="3bR9La" id="3l$sBidA89S" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA89T" role="3bR37C">
+          <node concept="3bR9La" id="3l$sBidA89U" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L2l" resolve="jetbrains.mps.baseLanguage.logging" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8aa" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8ab" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA89V" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA89W" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA89X" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA89Y" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA89Z" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8a0" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-anim.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8ar" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8as" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8ac" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8ad" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8ae" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8af" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8ag" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8ah" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-awt-util.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8aG" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8aH" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8at" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8au" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8av" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8aw" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8ax" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8ay" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-bridge.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8aX" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8aY" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8aI" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8aJ" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8aK" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8aL" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8aM" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8aN" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-css.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8be" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8bf" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8aZ" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8b0" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8b1" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8b2" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8b3" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8b4" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-codec.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8bv" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8bw" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8bg" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8bh" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8bi" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8bj" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8bk" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8bl" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-dom.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8bK" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8bL" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8bx" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8by" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8bz" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8b$" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8b_" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8bA" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-ext.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8c1" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8c2" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8bM" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8bN" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8bO" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8bP" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8bQ" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8bR" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-extension.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8ci" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8cj" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8c3" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8c4" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8c5" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8c6" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8c7" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8c8" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-gui-util.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8cz" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8c$" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8ck" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8cl" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8cm" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8cn" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8co" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8cp" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-gvt.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8cO" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8cP" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8c_" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8cA" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8cB" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8cC" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8cD" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8cE" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-parser.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8d5" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8d6" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8cQ" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8cR" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8cS" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8cT" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8cU" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8cV" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-script.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8dm" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8dn" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8d7" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8d8" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8d9" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8da" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8db" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8dc" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-svg-dom.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8dB" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8dC" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8do" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8dp" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8dq" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8dr" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8ds" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8dt" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-svggen.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8dS" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8dT" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8dD" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8dE" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8dF" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8dG" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8dH" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8dI" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-swing.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8e9" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8ea" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8dU" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8dV" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8dW" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8dX" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8dY" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8dZ" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-transcoder.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8eq" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8er" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8eb" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8ec" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8ed" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8ee" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8ef" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8eg" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-util.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3l$sBidA8eF" role="3bR37C">
+          <node concept="1BurEX" id="3l$sBidA8eG" role="1SiIV1">
+            <node concept="398BVA" id="3l$sBidA8es" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidA8et" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidA8eu" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidA8ev" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidA8ew" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="3l$sBidA8ex" role="2Ry0An">
+                        <property role="2Ry0Am" value="batik-xml.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="11w71XmfwQH" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.mpsutil.apis" />
@@ -14493,6 +14961,33 @@
       </node>
       <node concept="m$_wl" id="6ucYLjolhRD" role="39821P">
         <ref role="m_rDy" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
+      </node>
+      <node concept="m$_wl" id="3l$sBidAnXa" role="39821P">
+        <ref role="m_rDy" node="3l$sBid_$5k" resolve="com.mbeddr.mpsutil.nodeToSVG" />
+        <node concept="398223" id="3l$sBidAqsW" role="39821P">
+          <node concept="3_J27D" id="3l$sBidAqsX" role="Nbhlr">
+            <node concept="3Mxwew" id="3l$sBidArDz" role="3MwsjC">
+              <property role="3MwjfP" value="lib" />
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="3l$sBidArDA" role="39821P">
+            <node concept="398BVA" id="3l$sBidAsQd" role="2HvfZ0">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3l$sBidAsQe" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3l$sBidAsQf" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="3l$sBidAsQg" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3l$sBidAsQh" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="m$_wl" id="6ucYLjol8_u" role="39821P">
         <ref role="m_rDy" node="7tNo_gxoK8h" resolve="com.mbeddr.doc" />
