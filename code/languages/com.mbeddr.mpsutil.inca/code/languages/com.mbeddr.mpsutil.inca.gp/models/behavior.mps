@@ -1566,5 +1566,48 @@
       <node concept="3clFbS" id="2K9A72IyXjT" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="360F32cu62U">
+    <property role="3GE5qa" value="constraints" />
+    <ref role="13h7C2" to="55iy:360F32cu5YZ" resolve="PrevPathElement" />
+    <node concept="13i0hz" id="360F32cu62V" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getScopeProviderConcept" />
+      <ref role="13i0hy" to="gcg1:5Os6JboGgK9" resolve="getScopeProviderConcept" />
+      <node concept="3Tm1VV" id="360F32cu62W" role="1B3o_S" />
+      <node concept="3clFbS" id="360F32cu62X" role="3clF47">
+        <node concept="3cpWs6" id="360F32cu62Y" role="3cqZAp">
+          <node concept="2OqwBi" id="360F32cu62Z" role="3cqZAk">
+            <node concept="35c_gC" id="360F32cu630" role="2Oq$k0">
+              <ref role="35c_gD" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
+            </node>
+            <node concept="FGMqu" id="360F32cu631" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="360F32cu632" role="3clF45">
+        <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="360F32cu633" role="13h7CW">
+      <node concept="3clFbS" id="360F32cu634" role="2VODD2">
+        <node concept="3clFbF" id="360F32cu635" role="3cqZAp">
+          <node concept="37vLTI" id="360F32cu636" role="3clFbG">
+            <node concept="2OqwBi" id="360F32cu637" role="37vLTJ">
+              <node concept="13iPFW" id="360F32cu638" role="2Oq$k0" />
+              <node concept="3TrEf2" id="360F32cu639" role="2OqNvi">
+                <ref role="3Tt5mk" to="hqsm:1ERTnBTmuSL" resolve="interfacePart" />
+              </node>
+            </node>
+            <node concept="28GBK8" id="360F32cu63a" role="37vLTx">
+              <ref role="28GBKb" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
+              <ref role="28H3Ia" to="hqsm:360F32cu70D" resolve="prev" />
+            </node>
+          </node>
+          <node concept="15s5l7" id="360F32cu63b" role="lGtFl" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
