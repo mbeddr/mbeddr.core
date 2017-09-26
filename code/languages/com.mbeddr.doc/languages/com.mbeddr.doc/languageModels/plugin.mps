@@ -688,6 +688,25 @@
                                   </node>
                                 </node>
                               </node>
+                              <node concept="TDmWw" id="30PIwxM_Ut_" role="TEbGg">
+                                <node concept="3cpWsn" id="30PIwxM_UtA" role="TDEfY">
+                                  <property role="TrG5h" value="e" />
+                                  <node concept="3uibUv" id="30PIwxM_UKU" role="1tU5fm">
+                                    <ref role="3uigEE" to="wyt6:~NullPointerException" resolve="NullPointerException" />
+                                  </node>
+                                </node>
+                                <node concept="3clFbS" id="30PIwxM_UtC" role="TDEfX">
+                                  <node concept="RRSsy" id="30PIwxM_VjY" role="3cqZAp">
+                                    <property role="RRSoG" value="error" />
+                                    <node concept="Xl_RD" id="30PIwxM_Vk0" role="RRSoy">
+                                      <property role="Xl_RC" value="Can't delete as file is null" />
+                                    </node>
+                                    <node concept="37vLTw" id="30PIwxM_Vk2" role="RRSow">
+                                      <ref role="3cqZAo" node="30PIwxM_UtA" resolve="e" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>

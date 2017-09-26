@@ -20580,16 +20580,39 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1f8URW$JCtL" role="3cqZAp">
-              <node concept="2OqwBi" id="1f8URW$JCO0" role="3clFbG">
-                <node concept="37vLTw" id="1f8URW$JCtJ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1f8URW$J$Yo" resolve="semaphore" />
-                </node>
-                <node concept="liA8E" id="1f8URW$JD2h" role="2OqNvi">
-                  <ref role="37wK5l" to="5zyv:~Semaphore.acquire():void" resolve="acquire" />
+            <node concept="3cpWs8" id="V7UcT0CDFS" role="3cqZAp">
+              <node concept="3cpWsn" id="V7UcT0CDFT" role="3cpWs9">
+                <property role="TrG5h" value="isHeadless" />
+                <node concept="10P_77" id="V7UcT0CDFP" role="1tU5fm" />
+                <node concept="2OqwBi" id="V7UcT0CDFU" role="33vP2m">
+                  <node concept="2YIFZM" id="V7UcT0CDFV" role="2Oq$k0">
+                    <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+                    <ref role="1Pybhc" to="f061:~ApplicationManagerEx" resolve="ApplicationManagerEx" />
+                  </node>
+                  <node concept="liA8E" id="V7UcT0CDFW" role="2OqNvi">
+                    <ref role="37wK5l" to="bd8o:~Application.isHeadlessEnvironment():boolean" resolve="isHeadlessEnvironment" />
+                  </node>
                 </node>
               </node>
             </node>
+            <node concept="3clFbJ" id="V7UcT0CCVD" role="3cqZAp">
+              <node concept="3clFbS" id="V7UcT0CCVL" role="3clFbx">
+                <node concept="3clFbF" id="1f8URW$JCtL" role="3cqZAp">
+                  <node concept="2OqwBi" id="1f8URW$JCO0" role="3clFbG">
+                    <node concept="37vLTw" id="1f8URW$JCtJ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1f8URW$J$Yo" resolve="semaphore" />
+                    </node>
+                    <node concept="liA8E" id="1f8URW$JD2h" role="2OqNvi">
+                      <ref role="37wK5l" to="5zyv:~Semaphore.acquire():void" resolve="acquire" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="V7UcT0CDFX" role="3clFbw">
+                <ref role="3cqZAo" node="V7UcT0CDFT" resolve="isHeadless" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="V7UcT0C03W" role="3cqZAp" />
             <node concept="3clFbF" id="1yFmGPnLcLF" role="3cqZAp">
               <node concept="2YIFZM" id="5Pb2U$k6TNu" role="3clFbG">
                 <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable):void" resolve="invokeLater" />
@@ -21067,13 +21090,20 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1f8URW$JJd8" role="3cqZAp">
-              <node concept="2OqwBi" id="1f8URW$JJzN" role="3clFbG">
-                <node concept="37vLTw" id="1f8URW$JJd6" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1f8URW$J$Yo" resolve="semaphore" />
-                </node>
-                <node concept="liA8E" id="1f8URW$JL7G" role="2OqNvi">
-                  <ref role="37wK5l" to="5zyv:~Semaphore.acquire():void" resolve="acquire" />
+            <node concept="3clFbJ" id="V7UcT0CLGl" role="3cqZAp">
+              <node concept="37vLTw" id="V7UcT0CM_j" role="3clFbw">
+                <ref role="3cqZAo" node="V7UcT0CDFT" resolve="isHeadless" />
+              </node>
+              <node concept="3clFbS" id="V7UcT0CLGn" role="3clFbx">
+                <node concept="3clFbF" id="1f8URW$JJd8" role="3cqZAp">
+                  <node concept="2OqwBi" id="1f8URW$JJzN" role="3clFbG">
+                    <node concept="37vLTw" id="1f8URW$JJd6" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1f8URW$J$Yo" resolve="semaphore" />
+                    </node>
+                    <node concept="liA8E" id="1f8URW$JL7G" role="2OqNvi">
+                      <ref role="37wK5l" to="5zyv:~Semaphore.acquire():void" resolve="acquire" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
