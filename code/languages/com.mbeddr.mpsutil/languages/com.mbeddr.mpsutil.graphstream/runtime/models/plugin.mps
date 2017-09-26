@@ -2009,9 +2009,15 @@
             </node>
             <node concept="2ShNRf" id="LKp7m2RfcW" role="33vP2m">
               <node concept="1pGfFk" id="LKp7m2RCFO" role="2ShVmc">
-                <ref role="37wK5l" to="uc57:~GraphstreamViewManager.&lt;init&gt;(de.itemis.graphing.model.Graph)" resolve="GraphstreamViewManager" />
+                <ref role="37wK5l" to="uc57:~GraphstreamViewManager.&lt;init&gt;(de.itemis.graphing.model.Graph,double,double)" resolve="GraphstreamViewManager" />
                 <node concept="37vLTw" id="LKp7m2RCJP" role="37wK5m">
                   <ref role="3cqZAo" node="64_1OWe$XUc" resolve="graph" />
+                </node>
+                <node concept="3cmrfG" id="1Svlw54D6We" role="37wK5m">
+                  <property role="3cmrfH" value="35" />
+                </node>
+                <node concept="3cmrfG" id="1Svlw54D7HM" role="37wK5m">
+                  <property role="3cmrfH" value="65" />
                 </node>
               </node>
             </node>
