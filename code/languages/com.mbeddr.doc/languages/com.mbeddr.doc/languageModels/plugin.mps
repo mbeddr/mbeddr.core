@@ -660,10 +660,10 @@
                             <node concept="SfApY" id="2DWJLXXASXh" role="3cqZAp">
                               <node concept="3clFbS" id="2DWJLXXASXi" role="SfCbr">
                                 <node concept="3clFbF" id="2DWJLXXAI2U" role="3cqZAp">
-                                  <node concept="2YIFZM" id="2DWJLXXASQC" role="3clFbG">
-                                    <ref role="37wK5l" to="8oaq:~FileUtils.deleteDirectory(java.io.File):void" resolve="deleteDirectory" />
+                                  <node concept="2YIFZM" id="30PIwxM$O5s" role="3clFbG">
+                                    <ref role="37wK5l" to="8oaq:~FileUtils.forceDelete(java.io.File):void" resolve="forceDelete" />
                                     <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-                                    <node concept="2GrUjf" id="2DWJLXXASRg" role="37wK5m">
+                                    <node concept="2GrUjf" id="30PIwxM$O5t" role="37wK5m">
                                       <ref role="2Gs0qQ" node="2DWJLXXzQJQ" resolve="file" />
                                     </node>
                                   </node>
