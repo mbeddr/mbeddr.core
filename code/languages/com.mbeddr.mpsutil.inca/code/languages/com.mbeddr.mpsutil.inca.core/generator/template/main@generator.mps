@@ -2,10 +2,10 @@
 <model ref="r:dadf47ad-7e8d-4c91-82b3-0e585f24ae05(com.mbeddr.mpsutil.inca.core.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -21,8 +21,6 @@
     <import index="h6k5" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.matchers.psystem.basicenumerables(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="4azy" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.matchers.psystem.queries(com.mbeddr.mpsutil.inca.core.runtime/)" />
     <import index="4v9i" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.matchers.context(com.mbeddr.mpsutil.inca.core.runtime/)" />
-    <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
-    <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="gcg1" ref="r:d6f14cc5-a2a7-4aaf-8f86-e35059edbf3b(com.mbeddr.mpsutil.inca.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -3998,27 +3996,26 @@
         <node concept="2ShNRf" id="8hZAV__E5o" role="1Koe22">
           <node concept="1pGfFk" id="8hZAV__E5p" role="2ShVmc">
             <ref role="37wK5l" to="pzen:7TrMLNbRyYU" resolve="DataTypeKey" />
-            <node concept="2ShNRf" id="8hZAV__HS3" role="37wK5m">
-              <node concept="1pGfFk" id="8hZAV__IaC" role="2ShVmc">
-                <ref role="37wK5l" to="pzen:yM$tZcY5Gm" resolve="UniqueDataType" />
-                <node concept="Xl_RD" id="8hZAV__IbA" role="37wK5m">
-                  <property role="Xl_RC" value="id" />
-                  <node concept="17Uvod" id="8hZAV__Id_" role="lGtFl">
-                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                    <property role="2qtEX9" value="value" />
-                    <node concept="3zFVjK" id="8hZAV__IdA" role="3zH0cK">
-                      <node concept="3clFbS" id="8hZAV__IdB" role="2VODD2">
-                        <node concept="3cpWs6" id="8hZAV__In3" role="3cqZAp">
-                          <node concept="2OqwBi" id="8hZAV__MW$" role="3cqZAk">
-                            <node concept="2OqwBi" id="8hZAV__I_E" role="2Oq$k0">
-                              <node concept="30H73N" id="8hZAV__Inh" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="8hZAV__MAK" role="2OqNvi">
-                                <ref role="3Tt5mk" to="hqsm:6VTlRjrCuOl" resolve="dataTypeDeclaration" />
-                              </node>
+            <node concept="2YIFZM" id="3v8A$eE7mlp" role="37wK5m">
+              <ref role="37wK5l" to="pzen:3v8A$eDUDA8" resolve="from" />
+              <ref role="1Pybhc" to="pzen:yM$tZcY5nk" resolve="UniqueDataType" />
+              <node concept="Xl_RD" id="8hZAV__IbA" role="37wK5m">
+                <property role="Xl_RC" value="id" />
+                <node concept="17Uvod" id="8hZAV__Id_" role="lGtFl">
+                  <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                  <property role="2qtEX9" value="value" />
+                  <node concept="3zFVjK" id="8hZAV__IdA" role="3zH0cK">
+                    <node concept="3clFbS" id="8hZAV__IdB" role="2VODD2">
+                      <node concept="3cpWs6" id="8hZAV__In3" role="3cqZAp">
+                        <node concept="2OqwBi" id="8hZAV__MW$" role="3cqZAk">
+                          <node concept="2OqwBi" id="8hZAV__I_E" role="2Oq$k0">
+                            <node concept="30H73N" id="8hZAV__Inh" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="8hZAV__MAK" role="2OqNvi">
+                              <ref role="3Tt5mk" to="hqsm:6VTlRjrCuOl" resolve="dataTypeDeclaration" />
                             </node>
-                            <node concept="2qgKlT" id="8hZAV__NfP" role="2OqNvi">
-                              <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
-                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="8hZAV__NfP" role="2OqNvi">
+                            <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
                           </node>
                         </node>
                       </node>

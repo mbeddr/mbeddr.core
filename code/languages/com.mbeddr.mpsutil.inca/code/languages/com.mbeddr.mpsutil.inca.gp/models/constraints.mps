@@ -442,6 +442,20 @@
             </node>
             <node concept="15s5l7" id="2RSm1CzGhbQ" role="lGtFl" />
           </node>
+          <node concept="3clFbF" id="360F32cMqzT" role="3cqZAp">
+            <node concept="2OqwBi" id="360F32cMqzU" role="3clFbG">
+              <node concept="37vLTw" id="360F32cMqzV" role="2Oq$k0">
+                <ref role="3cqZAo" node="2RSm1Cz28yC" resolve="scope" />
+              </node>
+              <node concept="3dhRuq" id="360F32cMqzW" role="2OqNvi">
+                <node concept="28GBK8" id="360F32cMqzX" role="25WWJ7">
+                  <ref role="28GBKb" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
+                  <ref role="28H3Ia" to="hqsm:360F32cu70D" resolve="prev" />
+                </node>
+              </node>
+            </node>
+            <node concept="15s5l7" id="360F32cMqzY" role="lGtFl" />
+          </node>
           <node concept="3clFbH" id="2RSm1CzVXtT" role="3cqZAp" />
           <node concept="3cpWs6" id="2RSm1Cz$zhP" role="3cqZAp">
             <node concept="2ShNRf" id="2RSm1Cz$zir" role="3cqZAk">

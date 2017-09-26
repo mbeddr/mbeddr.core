@@ -478,7 +478,7 @@
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="5813477617635832092" />
-      <ref role="20lvS9" node="RjyNapPkSs" resolve="PatternFunctionCall" />
+      <ref role="20lvS9" node="1i65yRAQ7jk" resolve="IExpression" />
     </node>
     <node concept="PrWs8" id="52HBLukRz4p" role="PzmwI">
       <ref role="PrY4T" node="52HBLukNkpc" resolve="ICondition" />
@@ -496,7 +496,7 @@
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="5746856838774042549" />
-      <ref role="20lvS9" node="RjyNapPkSs" resolve="PatternFunctionCall" />
+      <ref role="20lvS9" node="1i65yRAQ7jk" resolve="IExpression" />
     </node>
     <node concept="PrWs8" id="4Z0VXz29EYM" role="PzmwI">
       <ref role="PrY4T" node="52HBLukNkpc" resolve="ICondition" />
