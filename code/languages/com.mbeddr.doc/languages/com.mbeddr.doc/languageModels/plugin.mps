@@ -28,6 +28,7 @@
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="fn29" ref="r:6ba2667b-185e-45cd-ac65-e4b9d66da28e(jetbrains.mps.smodel.resources)" />
+    <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" implicit="true" />
     <import index="fy8e" ref="r:89c0fb70-0977-7777-a076-5906f9d8630f(jetbrains.mps.make.facets)" implicit="true" />
   </imports>
@@ -101,8 +102,16 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -117,6 +126,9 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -164,7 +176,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -261,6 +272,7 @@
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
         <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
         <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
@@ -581,6 +593,20 @@
       <node concept="2aLE7I" id="7dpRDOjHSh6" role="ElM8M">
         <node concept="ElOhj" id="7dpRDOjHSh7" role="2aLE7H">
           <node concept="3clFbS" id="7dpRDOjHSh8" role="2VODD2">
+            <node concept="3clFbF" id="2DWJLXXCNm8" role="3cqZAp">
+              <node concept="2OqwBi" id="2DWJLXXCNm5" role="3clFbG">
+                <node concept="10M0yZ" id="2DWJLXXCNm6" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                </node>
+                <node concept="liA8E" id="2DWJLXXCNm7" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="2DWJLXXCNyG" role="37wK5m">
+                    <property role="Xl_RC" value="##### DELETING DOC_GEN CONTENT #####" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="2Gpval" id="2DWJLXXzFmL" role="3cqZAp">
               <node concept="2GrKxI" id="2DWJLXXzFmN" role="2Gsz3X">
                 <property role="TrG5h" value="res" />
@@ -631,32 +657,34 @@
                             </node>
                           </node>
                           <node concept="3clFbS" id="2DWJLXXzQJU" role="2LFqv$">
-                            <node concept="3clFbJ" id="2DWJLXXzTbb" role="3cqZAp">
-                              <node concept="3clFbS" id="2DWJLXXzTbj" role="3clFbx">
-                                <node concept="RRSsy" id="2DWJLXXzTP6" role="3cqZAp">
-                                  <property role="RRSoG" value="error" />
-                                  <node concept="3cpWs3" id="2DWJLXXzU8e" role="RRSoy">
-                                    <node concept="2OqwBi" id="2DWJLXXzUr1" role="3uHU7w">
-                                      <node concept="2GrUjf" id="2DWJLXXzU8E" role="2Oq$k0">
-                                        <ref role="2Gs0qQ" node="2DWJLXXzQJQ" resolve="file" />
-                                      </node>
-                                      <node concept="liA8E" id="2DWJLXXzV5a" role="2OqNvi">
-                                        <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
-                                      </node>
-                                    </node>
-                                    <node concept="Xl_RD" id="2DWJLXXzTP8" role="3uHU7B">
-                                      <property role="Xl_RC" value="Can't delete file: " />
+                            <node concept="SfApY" id="2DWJLXXASXh" role="3cqZAp">
+                              <node concept="3clFbS" id="2DWJLXXASXi" role="SfCbr">
+                                <node concept="3clFbF" id="2DWJLXXAI2U" role="3cqZAp">
+                                  <node concept="2YIFZM" id="2DWJLXXASQC" role="3clFbG">
+                                    <ref role="37wK5l" to="8oaq:~FileUtils.deleteDirectory(java.io.File):void" resolve="deleteDirectory" />
+                                    <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
+                                    <node concept="2GrUjf" id="2DWJLXXASRg" role="37wK5m">
+                                      <ref role="2Gs0qQ" node="2DWJLXXzQJQ" resolve="file" />
                                     </node>
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3fqX7Q" id="2DWJLXXzTwo" role="3clFbw">
-                                <node concept="2OqwBi" id="2DWJLXXzTwq" role="3fr31v">
-                                  <node concept="2GrUjf" id="2DWJLXXzTwr" role="2Oq$k0">
-                                    <ref role="2Gs0qQ" node="2DWJLXXzQJQ" resolve="file" />
+                              <node concept="TDmWw" id="2DWJLXXASXo" role="TEbGg">
+                                <node concept="3clFbS" id="2DWJLXXASXr" role="TDEfX">
+                                  <node concept="RRSsy" id="2DWJLXXzTP6" role="3cqZAp">
+                                    <property role="RRSoG" value="error" />
+                                    <node concept="Xl_RD" id="2DWJLXXzTP8" role="RRSoy">
+                                      <property role="Xl_RC" value="Can't delete doc_gen content" />
+                                    </node>
+                                    <node concept="37vLTw" id="2DWJLXXAVgm" role="RRSow">
+                                      <ref role="3cqZAo" node="2DWJLXXASXs" resolve="e" />
+                                    </node>
                                   </node>
-                                  <node concept="liA8E" id="2DWJLXXzTws" role="2OqNvi">
-                                    <ref role="37wK5l" to="guwi:~File.delete():boolean" resolve="delete" />
+                                </node>
+                                <node concept="3cpWsn" id="2DWJLXXASXs" role="TDEfY">
+                                  <property role="TrG5h" value="e" />
+                                  <node concept="3uibUv" id="2DWJLXXASXn" role="1tU5fm">
+                                    <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
                                   </node>
                                 </node>
                               </node>
@@ -760,6 +788,20 @@
         <node concept="ElOhj" id="2cjkfC8rZMz" role="2aLE7H">
           <node concept="3clFbS" id="2cjkfC8rZM$" role="2VODD2">
             <node concept="3clFbH" id="49PUF$HPHUO" role="3cqZAp" />
+            <node concept="3clFbF" id="2DWJLXXCNT0" role="3cqZAp">
+              <node concept="2OqwBi" id="2DWJLXXCNT1" role="3clFbG">
+                <node concept="10M0yZ" id="2DWJLXXCNT2" role="2Oq$k0">
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                </node>
+                <node concept="liA8E" id="2DWJLXXCNT3" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="2DWJLXXCNT4" role="37wK5m">
+                    <property role="Xl_RC" value="##### PLACING DOC_GEN CONTENT #####" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbH" id="49PUF$HV8C9" role="3cqZAp" />
             <node concept="2Gpval" id="2cjkfC8sMvC" role="3cqZAp">
               <node concept="2GrKxI" id="2cjkfC8sMvD" role="2Gsz3X">
