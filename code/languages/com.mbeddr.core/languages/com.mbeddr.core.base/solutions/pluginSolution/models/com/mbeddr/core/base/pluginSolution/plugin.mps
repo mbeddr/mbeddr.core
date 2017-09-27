@@ -451,6 +451,9 @@
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="1171903607971" name="jetbrains.mps.baseLanguage.structure.WildCardType" flags="in" index="3qTvmN" />
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -20584,14 +20587,8 @@
               <node concept="3cpWsn" id="V7UcT0CDFT" role="3cpWs9">
                 <property role="TrG5h" value="isHeadless" />
                 <node concept="10P_77" id="V7UcT0CDFP" role="1tU5fm" />
-                <node concept="2OqwBi" id="V7UcT0CDFU" role="33vP2m">
-                  <node concept="2YIFZM" id="V7UcT0CDFV" role="2Oq$k0">
-                    <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
-                    <ref role="1Pybhc" to="f061:~ApplicationManagerEx" resolve="ApplicationManagerEx" />
-                  </node>
-                  <node concept="liA8E" id="V7UcT0CDFW" role="2OqNvi">
-                    <ref role="37wK5l" to="bd8o:~Application.isHeadlessEnvironment():boolean" resolve="isHeadlessEnvironment" />
-                  </node>
+                <node concept="1rXfSq" id="7Ubp4TG_mUH" role="33vP2m">
+                  <ref role="37wK5l" node="7Ubp4TG_kbn" resolve="isHeadlessMode" />
                 </node>
               </node>
             </node>
@@ -21130,6 +21127,47 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2tJIrI" id="7Ubp4TG_j7H" role="jymVt" />
+    <node concept="2YIFZL" id="7Ubp4TG_kbn" role="jymVt">
+      <property role="TrG5h" value="isHeadlessMode" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="7Ubp4TG_kbq" role="3clF47">
+        <node concept="3cpWs8" id="7Ubp4TG_kBs" role="3cqZAp">
+          <node concept="3cpWsn" id="7Ubp4TG_kBt" role="3cpWs9">
+            <property role="TrG5h" value="application" />
+            <node concept="3uibUv" id="7Ubp4TG_kBr" role="1tU5fm">
+              <ref role="3uigEE" to="bd8o:~Application" resolve="Application" />
+            </node>
+            <node concept="2YIFZM" id="7Ubp4TG_kBu" role="33vP2m">
+              <ref role="1Pybhc" to="f061:~ApplicationManagerEx" resolve="ApplicationManagerEx" />
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7Ubp4TG_kZj" role="3cqZAp">
+          <node concept="22lmx$" id="7Ubp4TG_mH_" role="3cqZAk">
+            <node concept="3clFbC" id="7Ubp4TG_m$v" role="3uHU7B">
+              <node concept="10Nm6u" id="7Ubp4TG_mGs" role="3uHU7w" />
+              <node concept="37vLTw" id="7Ubp4TG_mbd" role="3uHU7B">
+                <ref role="3cqZAo" node="7Ubp4TG_kBt" resolve="application" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7Ubp4TG_kZl" role="3uHU7w">
+              <node concept="37vLTw" id="7Ubp4TG_kZm" role="2Oq$k0">
+                <ref role="3cqZAo" node="7Ubp4TG_kBt" resolve="application" />
+              </node>
+              <node concept="liA8E" id="7Ubp4TG_kZn" role="2OqNvi">
+                <ref role="37wK5l" to="bd8o:~Application.isHeadlessEnvironment():boolean" resolve="isHeadlessEnvironment" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="7Ubp4TG_jFv" role="1B3o_S" />
+      <node concept="10P_77" id="7Ubp4TG_kb8" role="3clF45" />
     </node>
   </node>
 </model>
