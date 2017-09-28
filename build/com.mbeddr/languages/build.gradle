@@ -65,8 +65,10 @@ task install_spawner(type: Copy, dependsOn: build_spawner) {
     into "$mpsInstallationDir/plugins"
 }
 
-task install(dependsOn: [install_spawner, ':build:com.mbeddr:platform:install_sl_all_nativelibs']) {}
+task install(dependsOn: [install_spawner, ':build:com.mbeddr:platform:install_sl_all_nativelibs', ':build:com.mbeddr:platform:install_actionsfilter']) {}
 
+/*
+*
 gradle.taskGraph.whenReady {taskGraph ->
     if (taskGraph.hasTask(install)) {
         if (!project.hasProperty("MPS_Installation")) {
@@ -75,6 +77,7 @@ gradle.taskGraph.whenReady {taskGraph ->
         }
     }
 }
+* */
 
 ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
         classpath: configurations.junitAnt.asPath)
