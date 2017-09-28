@@ -19629,6 +19629,37 @@
                                               </node>
                                             </node>
                                           </node>
+                                          <node concept="3clFbF" id="2ILUSdpDRKJ" role="3cqZAp">
+                                            <node concept="3vZ8ra" id="2ILUSdpDRKK" role="3clFbG">
+                                              <node concept="2YIFZM" id="2ILUSdpDWS$" role="37vLTx">
+                                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
+                                                <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+                                                <node concept="2OqwBi" id="2ILUSdpNP1M" role="37wK5m">
+                                                  <node concept="37vLTw" id="2ILUSdpNP1N" role="2Oq$k0">
+                                                    <ref role="3cqZAo" node="6B579NGqKwq" resolve="sourceNode" />
+                                                  </node>
+                                                  <node concept="1mfA1w" id="2ILUSdpNP1O" role="2OqNvi" />
+                                                </node>
+                                                <node concept="37vLTw" id="2ILUSdpDWSC" role="37wK5m">
+                                                  <ref role="3cqZAo" node="5n4nn1a7a1f" resolve="subconcept" />
+                                                </node>
+                                                <node concept="2OqwBi" id="2ILUSdpDWSD" role="37wK5m">
+                                                  <node concept="2JrnkZ" id="2ILUSdpDWSE" role="2Oq$k0">
+                                                    <node concept="37vLTw" id="2ILUSdpDWSF" role="2JrQYb">
+                                                      <ref role="3cqZAo" node="6B579NGqKwq" resolve="sourceNode" />
+                                                    </node>
+                                                  </node>
+                                                  <node concept="liA8E" id="2ILUSdpDWSG" role="2OqNvi">
+                                                    <ref role="37wK5l" to="mhbf:~SNode.getContainmentLink():org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+                                                  </node>
+                                                </node>
+                                                <node concept="10Nm6u" id="2ILUSdpDWSH" role="37wK5m" />
+                                              </node>
+                                              <node concept="37vLTw" id="2ILUSdpDRKV" role="37vLTJ">
+                                                <ref role="3cqZAo" node="49FqtR5VyJY" resolve="sideTransformationEnabled" />
+                                              </node>
+                                            </node>
+                                          </node>
                                           <node concept="3clFbF" id="49FqtR5VyK1" role="3cqZAp">
                                             <node concept="3vZ8ra" id="1MG9P_Yg5Q7" role="3clFbG">
                                               <node concept="37vLTw" id="1MG9P_Yg5QQ" role="37vLTJ">
