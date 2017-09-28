@@ -321,6 +321,33 @@
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
     </node>
+    <node concept="m$_wf" id="4mEgncq7aaz" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.xmlImport" />
+      <node concept="3_J27D" id="4mEgncq7aa_" role="m$_yQ">
+        <node concept="3Mxwew" id="4mEgncq7pYH" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.xmlImport" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="4mEgncq7aaB" role="m_cZH">
+        <node concept="3Mxwew" id="4mEgncq7pYJ" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.xmlImport" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="4mEgncq7aaD" role="m$_w8">
+        <node concept="3Mxwey" id="4mEgncq7r74" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="4mEgncq7sfp" role="m$_yh">
+        <ref role="m$f5T" node="4mEgncq6MuZ" resolve="group.xml.actions" />
+      </node>
+      <node concept="m$_yC" id="4mEgncq7tnI" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="4mEgncq7uw6" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
+      </node>
+    </node>
     <node concept="m$_wf" id="7uZw0yZ2_Jq" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil" />
       <node concept="m$_yC" id="70BL6LoGNLc" role="m$_yJ">
@@ -14273,6 +14300,51 @@
         </node>
       </node>
     </node>
+    <node concept="2G$12M" id="4mEgncq6MuZ" role="3989C9">
+      <property role="TrG5h" value="group.xml.actions" />
+      <node concept="1E1JtA" id="4mEgncq6XK3" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.xmlImport" />
+        <property role="3LESm3" value="6f6d5be9-a352-48db-9081-851a6d5c535b" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="4mEgncq6YSf" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="4mEgncq718_" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="4mEgncq73oU" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.xmlImport" />
+              <node concept="2Ry0Ak" id="4mEgncq75Df" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.xmlImport.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4mEgncq76Lp" role="3bR37C">
+          <node concept="3bR9La" id="4mEgncq76Lq" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4mEgncq76Lr" role="3bR37C">
+          <node concept="3bR9La" id="4mEgncq76Ls" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4mEgncq76Lt" role="3bR37C">
+          <node concept="3bR9La" id="4mEgncq76Lu" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:568PkTlOK5Q" resolve="jetbrains.mps.core.xml" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4mEgncq76Lv" role="3bR37C">
+          <node concept="3bR9La" id="4mEgncq76Lw" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2G$12M" id="6o5cjw5gxJq" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.mpsutil.json" />
       <node concept="1E1JtD" id="6o5cjw5gEyi" role="2G$12L">
@@ -14966,6 +15038,9 @@
       </node>
       <node concept="m$_wl" id="5fGcQI9hje9" role="39821P">
         <ref role="m_rDy" node="5fGcQI9h7GO" resolve="com.mbeddr.mpsutil.grammarcells" />
+      </node>
+      <node concept="m$_wl" id="4mEgncq7xWr" role="39821P">
+        <ref role="m_rDy" node="4mEgncq7aaz" resolve="com.mbeddr.mpsutil.xmlImport" />
       </node>
       <node concept="398223" id="pdbBRzg10k" role="39821P">
         <node concept="3_J27D" id="pdbBRzg10m" role="Nbhlr">
