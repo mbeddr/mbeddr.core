@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml" version="1" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="1" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
   </languages>
   <imports>
     <import index="u9wj" ref="r:5de29430-c053-484a-9826-87e7556eee3e(com.mbeddr.doc.test.documents.code)" />
@@ -11,6 +11,7 @@
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
       <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -45,11 +46,11 @@
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
       <concept id="6068976060904002601" name="com.mbeddr.doc.structure.AbstractExport" flags="ng" index="30Gg6V">
+        <child id="6068976060904007487" name="renderer" index="30GjaH" />
         <child id="6068976060904007490" name="mappings" index="30Gjbg" />
         <child id="6068976060904007489" name="root" index="30Gjbj" />
       </concept>
       <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
-        <reference id="6955693250238922828" name="path" index="3z_lp$" />
         <child id="6955693250238922832" name="description" index="3z_lpS" />
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
@@ -111,7 +112,6 @@
     </node>
     <node concept="3z_lpz" id="4pIcGABsAbh" role="1_0VJ0">
       <property role="TrG5h" value="class" />
-      <ref role="3z_lp$" node="4pIcGABsMlK" resolve="main" />
       <node concept="OjmMv" id="4pIcGABsAbj" role="3z_lpS">
         <node concept="19SGf9" id="4pIcGABsAbk" role="OjmMu">
           <node concept="19SUe$" id="4pIcGABsAbl" role="19SJt6">
@@ -137,6 +137,7 @@
       <property role="2SbEId" value="/Users/kdummann/source/mbeddr/mbeddr.core/" />
       <ref role="2SbEIe" node="4pIcGABsMlK" resolve="main" />
     </node>
+    <node concept="1TaS0h" id="1xGVIWdAy29" role="30GjaH" />
   </node>
   <node concept="2SbYGP" id="4pIcGABsMlJ">
     <property role="TrG5h" value="IneedThisShitToo" />
