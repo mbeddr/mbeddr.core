@@ -339,7 +339,7 @@
                           <node concept="2ShNRf" id="32cJsh9EVqW" role="37vLTx">
                             <node concept="3zrR0B" id="32cJsh9EXtg" role="2ShVmc">
                               <node concept="3Tqbb2" id="32cJsh9EXti" role="3zrR0E">
-                                <ref role="ehGHo" to="lsus:32cJsh9DNRl" resolve="HTMLDummyRendere" />
+                                <ref role="ehGHo" to="lsus:32cJsh9DNRl" resolve="HTMLDummyRenderer" />
                               </node>
                             </node>
                           </node>
