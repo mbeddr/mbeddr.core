@@ -1401,9 +1401,6 @@
     <node concept="PrWs8" id="627_yy34G1e" role="PzmwI">
       <ref role="PrY4T" node="47ZkZt5YzN8" resolve="IFloating" />
     </node>
-    <node concept="PrWs8" id="627_yy34G1f" role="PzmwI">
-      <ref role="PrY4T" node="3UlEobTHU0C" resolve="IUsesExternalPath" />
-    </node>
     <node concept="1TJgyj" id="627_yy34G1g" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="description" />
