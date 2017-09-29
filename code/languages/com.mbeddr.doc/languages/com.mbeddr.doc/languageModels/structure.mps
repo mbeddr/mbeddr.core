@@ -22,6 +22,9 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -1392,6 +1395,16 @@
     <property role="3GE5qa" value="modelContent" />
     <property role="EcuMT" value="6955693250238922827" />
     <ref role="1TJDcQ" node="627_yy34G14" resolve="AbstractModelContentParagraph" />
+    <node concept="1TJgyj" id="627_yy34G1c" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="path" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="6955693250238922828" />
+      <ref role="20lvS9" node="5yxqZJwzC3r" resolve="PathDefinition" />
+      <node concept="asaX9" id="1xGVIWdDkpc" role="lGtFl">
+        <property role="YLQ7P" value="removed since there is now a default image location" />
+      </node>
+    </node>
     <node concept="1QGGSu" id="1N5Tah$Cg8O" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/code.png" />
     </node>
