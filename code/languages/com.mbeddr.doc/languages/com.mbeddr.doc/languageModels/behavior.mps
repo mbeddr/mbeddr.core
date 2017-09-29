@@ -6604,40 +6604,6 @@
     <node concept="13hLZK" id="627_yy34Gn4" role="13h7CW">
       <node concept="3clFbS" id="627_yy34Gn5" role="2VODD2" />
     </node>
-    <node concept="13i0hz" id="627_yy34Gn6" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getPath" />
-      <ref role="13i0hy" node="3UlEobTHU0G" resolve="getPath" />
-      <node concept="3Tm1VV" id="627_yy34Gn7" role="1B3o_S" />
-      <node concept="3clFbS" id="627_yy34Gn8" role="3clF47">
-        <node concept="3cpWs6" id="627_yy34Gng" role="3cqZAp">
-          <node concept="2OqwBi" id="627_yy34Gnh" role="3cqZAk">
-            <node concept="2OqwBi" id="627_yy34Gni" role="2Oq$k0">
-              <node concept="2OqwBi" id="627_yy34Gnj" role="2Oq$k0">
-                <node concept="13iPFW" id="627_yy34Gnk" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="627_yy34Gnl" role="2OqNvi">
-                  <node concept="1xMEDy" id="627_yy34Gnm" role="1xVPHs">
-                    <node concept="chp4Y" id="627_yy34Gnn" role="ri$Ld">
-                      <ref role="cht4Q" to="2c95:5L$H31Kgq3f" resolve="IDocumentLike" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3TrEf2" id="627_yy34Gno" role="2OqNvi">
-                <ref role="3Tt5mk" to="2c95:5L$H31Kgq3g" resolve="config" />
-              </node>
-            </node>
-            <node concept="3TrEf2" id="5JlMPDXOz07" role="2OqNvi">
-              <ref role="3Tt5mk" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="627_yy34Gnu" role="3clF45">
-        <ref role="ehGHo" to="2c95:5yxqZJwzC3r" resolve="PathDefinition" />
-      </node>
-    </node>
   </node>
   <node concept="13h7C7" id="627_yy34Gnv">
     <property role="3GE5qa" value="modelContent" />
