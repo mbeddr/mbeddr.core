@@ -60,6 +60,7 @@ task build_platform(type: BuildLanguages, dependsOn: copy_sl_all_nativelibs) {
 
 task test_mbeddr_platform(type: TestLanguages, dependsOn: build_platform) {
     script script_test_mbeddrPlatform
+    description "execute typesystem and generator tests for the plaform"
 }
 
 task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platform, test_mbeddr_platform]) {

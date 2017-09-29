@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="0" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -138,11 +138,11 @@
                       <node concept="2OqwBi" id="7rXn3flJG0s" role="2Oq$k0">
                         <node concept="30H73N" id="7rXn3flJG07" role="2Oq$k0" />
                         <node concept="3TrEf2" id="7rXn3flJG0$" role="2OqNvi">
-                          <ref role="3Tt5mk" to="8zu2:7rXn3flJFxk" />
+                          <ref role="3Tt5mk" to="8zu2:7rXn3flJFxk" resolve="text" />
                         </node>
                       </node>
                       <node concept="3TrEf2" id="7rXn3flJG10" role="2OqNvi">
-                        <ref role="3Tt5mk" to="vs0r:7gVrg_0tw6n" />
+                        <ref role="3Tt5mk" to="vs0r:7gVrg_0tw6n" resolve="text" />
                       </node>
                     </node>
                   </node>
@@ -197,7 +197,7 @@
                               <node concept="2OqwBi" id="7rXn3flJBuw" role="2Oq$k0">
                                 <node concept="30H73N" id="7rXn3flJBub" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="7rXn3flJBuA" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="8zu2:7rXn3flJtYD" />
+                                  <ref role="3Tt5mk" to="8zu2:7rXn3flJtYD" resolve="term" />
                                 </node>
                               </node>
                               <node concept="3TrcHB" id="7rXn3flJI6v" role="2OqNvi">
@@ -260,7 +260,7 @@
                         <node concept="2OqwBi" id="2nGCZEu8wGa" role="2Oq$k0">
                           <node concept="30H73N" id="2nGCZEu8wFP" role="2Oq$k0" />
                           <node concept="3TrEf2" id="2nGCZEu8GO3" role="2OqNvi">
-                            <ref role="3Tt5mk" to="2c95:5mf_X_La_N_" />
+                            <ref role="3Tt5mk" to="2c95:5mf_X_La_N_" resolve="text" />
                           </node>
                         </node>
                         <node concept="2qgKlT" id="2nGCZEu8GOv" role="2OqNvi">
