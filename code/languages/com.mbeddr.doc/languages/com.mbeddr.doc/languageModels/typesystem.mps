@@ -242,6 +242,7 @@
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
+      <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
@@ -409,8 +410,30 @@
             <node concept="2GrKxI" id="3UlEobTHJTm" role="2Gsz3X">
               <property role="TrG5h" value="p" />
             </node>
-            <node concept="37vLTw" id="5Hxjapw9v7u" role="2GsD0m">
-              <ref role="3cqZAo" node="5mf_X_LbzR9" resolve="allTransitivePaths" />
+            <node concept="2OqwBi" id="2i$odZBB8WP" role="2GsD0m">
+              <node concept="37vLTw" id="5Hxjapw9v7u" role="2Oq$k0">
+                <ref role="3cqZAo" node="5mf_X_LbzR9" resolve="allTransitivePaths" />
+              </node>
+              <node concept="3zZkjj" id="2i$odZBB9Dc" role="2OqNvi">
+                <node concept="1bVj0M" id="2i$odZBB9De" role="23t8la">
+                  <node concept="3clFbS" id="2i$odZBB9Df" role="1bW5cS">
+                    <node concept="3clFbF" id="2i$odZBB9J1" role="3cqZAp">
+                      <node concept="2OqwBi" id="2i$odZBBa6i" role="3clFbG">
+                        <node concept="37vLTw" id="2i$odZBB9J0" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2i$odZBB9Dg" resolve="it" />
+                        </node>
+                        <node concept="2qgKlT" id="2i$odZBBaPu" role="2OqNvi">
+                          <ref role="37wK5l" to="4gky:2i$odZBB7La" resolve="needsMapping" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="2i$odZBB9Dg" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="2i$odZBB9Dh" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="3clFbS" id="3UlEobTHJTo" role="2LFqv$">
               <node concept="3clFbJ" id="3UlEobTHJTq" role="3cqZAp">
@@ -1188,6 +1211,43 @@
     <node concept="1YaCAy" id="2CRkjeisemZ" role="1YuTPh">
       <property role="TrG5h" value="documentInclude" />
       <ref role="1YaFvo" to="2c95:5mf_X_Lbqjw" resolve="DocumentInclude" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="10MSw5ZQLuO">
+    <property role="TrG5h" value="check_SectRefWord" />
+    <property role="3GE5qa" value="words" />
+    <node concept="3clFbS" id="10MSw5ZQLuP" role="18ibNy">
+      <node concept="2Mj0R9" id="10MSw5ZQLuV" role="3cqZAp">
+        <node concept="17R0WA" id="10MSw5ZQLuW" role="2MkoU_">
+          <node concept="2OqwBi" id="10MSw5ZQLv4" role="3uHU7B">
+            <node concept="2OqwBi" id="10MSw5ZQLUt" role="2Oq$k0">
+              <node concept="1YBJjd" id="10MSw5ZQLBi" role="2Oq$k0">
+                <ref role="1YBMHb" node="10MSw5ZQLuR" resolve="sectRefWord" />
+              </node>
+              <node concept="3TrEf2" id="10MSw5ZQM8N" role="2OqNvi">
+                <ref role="3Tt5mk" to="2c95:2TZO3DbvhAJ" resolve="target" />
+              </node>
+            </node>
+            <node concept="I4A8Y" id="10MSw5ZQLv6" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="10MSw5ZQMBI" role="3uHU7w">
+            <node concept="1YBJjd" id="10MSw5ZQMmq" role="2Oq$k0">
+              <ref role="1YBMHb" node="10MSw5ZQLuR" resolve="sectRefWord" />
+            </node>
+            <node concept="I4A8Y" id="10MSw5ZQMTR" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="10MSw5ZQLv7" role="2MkJ7o">
+          <property role="Xl_RC" value="Currently only references to nodes in the same model are supported" />
+        </node>
+        <node concept="1YBJjd" id="10MSw5ZQN0R" role="2OEOjV">
+          <ref role="1YBMHb" node="10MSw5ZQLuR" resolve="sectRefWord" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="10MSw5ZQLuR" role="1YuTPh">
+      <property role="TrG5h" value="sectRefWord" />
+      <ref role="1YaFvo" to="2c95:2TZO3DbvhA_" resolve="SectRefWord" />
     </node>
   </node>
 </model>
