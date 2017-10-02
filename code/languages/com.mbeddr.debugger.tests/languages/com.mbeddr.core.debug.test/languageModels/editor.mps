@@ -2,9 +2,9 @@
 <model ref="r:566c3417-ad82-456e-bd2d-4f4c15a9f767(com.mbeddr.core.debug.test.editor)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
@@ -140,6 +140,7 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
+      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -656,9 +657,6 @@
       <node concept="3F0ifn" id="13C5RDf_9cD" role="3EZMnx">
         <property role="3F0ifm" value="suspended at:" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
-        <node concept="ljvvj" id="13C5RDf_9cE" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="VechU" id="13C5RDf_9cP" role="3F10Kt">
           <property role="Vb096" value="blue" />
         </node>
@@ -1196,9 +1194,6 @@
         <node concept="3F1sOY" id="5S3xvtirxq" role="3EZMnx">
           <property role="1$x2rV" value="&lt;suspension point&gt;" />
           <ref role="1NtTu8" to="rpmx:5S3xvtirwc" resolve="suspension" />
-          <node concept="lj46D" id="5S3xvtiDrU" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
         <node concept="2iRfu4" id="5S3xvtiDE3" role="2iSdaV" />
       </node>
@@ -2319,9 +2314,6 @@
       </node>
       <node concept="3F0ifn" id="13C5RDfBevM" role="3EZMnx">
         <property role="3F0ifm" value=":" />
-        <node concept="ljvvj" id="13C5RDfBevS" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="11L4FC" id="13C5RDfBiAz" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -5647,6 +5639,18 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="3GPxRNR7V3j">
+    <ref role="aqKnT" to="rpmx:1WWn8BUrL8C" resolve="DebuggerDetachedValidation" />
+  </node>
+  <node concept="3p36aQ" id="3GPxRNR8GVH">
+    <ref role="aqKnT" to="rpmx:3ELV2aQBC_Y" resolve="CallStackDeclaration" />
+  </node>
+  <node concept="3p36aQ" id="3GPxRNR7Cxa">
+    <ref role="aqKnT" to="rpmx:3ELV2aP1ZdU" resolve="LevelStackDeclaration" />
+  </node>
+  <node concept="3p36aQ" id="3GPxRNR8b_b">
+    <ref role="aqKnT" to="rpmx:6g5LwObJaJ7" resolve="DebuggerRunningValidation" />
   </node>
 </model>
 

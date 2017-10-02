@@ -620,11 +620,6 @@
             <node concept="PJ_cn" id="6hS8P3pzf1E" role="PJ_c3">
               <ref role="PJ_cm" node="6hS8P3pzf1y" resolve="thisOneIsNotAbstract" />
               <node concept="7CXmI" id="3lIakVHnG2v" role="lGtFl">
-                <node concept="39XrGg" id="6qOUCDpKa4I" role="7EUXB">
-                  <node concept="2u4KIi" id="6qOUCDpKa4J" role="39rjcI">
-                    <ref role="39XzEq" to="bt4i:3PT6Z48Mc0u" />
-                  </node>
-                </node>
                 <node concept="1TM$A" id="6qOUCDpKa4K" role="7EUXB">
                   <node concept="2PYRI3" id="6qOUCDpKa4L" role="3lydEf">
                     <ref role="39XzEq" to="e39d:3PT6Z48LOBj" />
@@ -911,6 +906,7 @@
           <ref role="3GEb4d" node="4AYy6hk7SkY" resolve="SimpleHTTPFOTAUpdateRequestBuilderImpl" />
         </node>
         <node concept="3GEVxB" id="2xYE3fFESdR" role="2OODSX">
+          <property role="3GEa6x" value="true" />
           <ref role="3GEb4d" node="2xYE3fFxAvw" resolve="EspressifHTTPFOTAUpdateRequestBuilderImpl" />
         </node>
         <node concept="3GEVxB" id="2xYE3fFESdS" role="2OODSX">

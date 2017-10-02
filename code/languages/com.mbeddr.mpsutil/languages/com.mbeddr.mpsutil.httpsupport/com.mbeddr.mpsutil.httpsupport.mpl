@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="" namespace="com.mbeddr.mpsutil.httpsupport#5573986434797587358" uuid="ac7a34cd-70de-4956-b82c-de645db62700">
+    <generator namespace="com.mbeddr.mpsutil.httpsupport#4354378109086982942" uuid="ac7a34cd-70de-4956-b82c-de645db62700">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -45,7 +45,7 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="c2788093-51e8-4cfe-943b-eefd5ff309ff(com.mbeddr.mpsutil.httpserver)" version="0" />
         <module reference="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9(com.mbeddr.mpsutil.httpsupport)" version="0" />
-        <module reference="ac7a34cd-70de-4956-b82c-de645db62700(com.mbeddr.mpsutil.httpsupport#5573986434797587358)" version="0" />
+        <module reference="ac7a34cd-70de-4956-b82c-de645db62700(com.mbeddr.mpsutil.httpsupport#4354378109086982942)" version="0" />
         <module reference="7f0984ac-9f5d-4001-9257-17f7d10f3fd5(com.mbeddr.mpsutil.httpsupport.rt)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" version="0" />
@@ -62,13 +62,13 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="ac7a34cd-70de-4956-b82c-de645db62700(com.mbeddr.mpsutil.httpsupport#5573986434797587358)" />
+            <generator generatorUID="ac7a34cd-70de-4956-b82c-de645db62700(com.mbeddr.mpsutil.httpsupport#4354378109086982942)" />
             <external-mapping>
               <mapping-node modelUID="ac7a34cd-70de-4956-b82c-de645db62700/r:f91beaaf-33c3-4f82-8847-7e64a3b7ce07(com.mbeddr.mpsutil.httpsupport#5573986434797587358/com.mbeddr.mpsutil.httpsupport.generator.template.main@generator)" nodeID="5573986434797587359" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
-            <generator generatorUID="ac7a34cd-70de-4956-b82c-de645db62700(com.mbeddr.mpsutil.httpsupport#5573986434797587358)" />
+            <generator generatorUID="ac7a34cd-70de-4956-b82c-de645db62700(com.mbeddr.mpsutil.httpsupport#4354378109086982942)" />
             <external-mapping>
               <mapping-set>
                 <mapping-set-element>
