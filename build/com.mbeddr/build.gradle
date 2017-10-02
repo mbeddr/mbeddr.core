@@ -1,18 +1,15 @@
 import de.itemis.mps.gradle.GitBasedVersioning
 
-def userHome = System.properties['java.home']
-if (file("$userHome/.MPS$mpsBuild").isDirectory()) {
-    ext.mpsUserConfigDir = "$userHome/.MPS$mpsBuild"
-} else if (file("$userHome/.MPS$mpsMajor").isDirectory()) {
-    ext.mpsUserConfigDir = "$userHome/.MPS$mpsMajor"
+def userHome = System.properties['user.home']
+def osSpecificPart = System.properties['os.name'].toLowerCase().contains('mac') ? 'Library/Application Support' : ''
+if (project.hasProperty("MPS_PATHS_SELECTOR")) {
+    ext.mpsUserConfigDir = "$userHome/$osSpecificPart/" + project.getProperty("MPS_PATHS_SELECTOR") + "/config"
+} else if (file("$userHome/$osSpecificPart/.MPS$mpsBuild").isDirectory()) {
+    ext.mpsUserConfigDir = "$userHome/$osSpecificPart/.MPS$mpsBuild/config"
+} else if (file("$userHome/$osSpecificPart/.MPS$mpsMajor").isDirectory()) {
+    ext.mpsUserConfigDir = "$userHome/$osSpecificPart/.MPS$mpsMajor/config"
 } else {
     ext.mpsUserConfigDir = ""
-}
-
-if (project.hasProperty("MPS_Installation")) {
-    ext.mpsInstallationDir = project.getProperty("MPS_Installation")
-} else {
-    ext.mpsInstallationDir = ""
 }
 
 ext.mbeddrMajor = "1"
