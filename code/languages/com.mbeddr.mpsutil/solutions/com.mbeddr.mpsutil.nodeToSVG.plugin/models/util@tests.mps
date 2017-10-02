@@ -341,15 +341,98 @@
           </node>
         </node>
         <node concept="3clFbH" id="2v_vgVUoNlY" role="3cqZAp" />
+        <node concept="3cpWs8" id="1giBB3CsFeh" role="3cqZAp">
+          <node concept="3cpWsn" id="1giBB3CsFek" role="3cpWs9">
+            <property role="TrG5h" value="temp" />
+            <node concept="10P_77" id="1giBB3CsFef" role="1tU5fm" />
+            <node concept="3clFbT" id="1giBB3CsH30" role="33vP2m">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1giBB3CsDs3" role="3cqZAp" />
         <node concept="3cpWs8" id="2v_vgVUoNz6" role="3cqZAp">
           <node concept="3cpWsn" id="2v_vgVUoNz9" role="3cpWs9">
             <property role="TrG5h" value="testFolder" />
             <node concept="17QB3L" id="2v_vgVUoNz4" role="1tU5fm" />
-            <node concept="Xl_RD" id="2v_vgVUoNKn" role="33vP2m">
+            <node concept="10Nm6u" id="1giBB3CsaKC" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1giBB3CswWK" role="3cqZAp">
+          <node concept="3cpWsn" id="1giBB3CswWL" role="3cpWs9">
+            <property role="TrG5h" value="tempPath" />
+            <node concept="3uibUv" id="1giBB3CswWM" role="1tU5fm">
+              <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+            </node>
+            <node concept="10Nm6u" id="1giBB3CsyRB" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="1giBB3CsBzZ" role="3cqZAp" />
+        <node concept="3clFbF" id="1giBB3Cr$iB" role="3cqZAp">
+          <node concept="37vLTI" id="1giBB3Cr$iD" role="3clFbG">
+            <node concept="Xl_RD" id="2v_vgVUoNKn" role="37vLTx">
               <property role="Xl_RC" value="C:/temp/test/" />
+            </node>
+            <node concept="37vLTw" id="1giBB3Cr$iH" role="37vLTJ">
+              <ref role="3cqZAo" node="2v_vgVUoNz9" resolve="testFolder" />
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="1giBB3CsLBb" role="3cqZAp">
+          <node concept="3clFbS" id="1giBB3CsLBd" role="3clFbx">
+            <node concept="SfApY" id="1giBB3CrPYw" role="3cqZAp">
+              <node concept="3clFbS" id="1giBB3CrPYx" role="SfCbr">
+                <node concept="3clFbF" id="1giBB3Cs_5x" role="3cqZAp">
+                  <node concept="37vLTI" id="1giBB3Cs_yn" role="3clFbG">
+                    <node concept="2YIFZM" id="1giBB3CsVwl" role="37vLTx">
+                      <ref role="37wK5l" to="eoo2:~Files.createTempDirectory(java.lang.String,java.nio.file.attribute.FileAttribute...):java.nio.file.Path" resolve="createTempDirectory" />
+                      <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                      <node concept="Xl_RD" id="1giBB3CsVy2" role="37wK5m">
+                        <property role="Xl_RC" value="test" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="1giBB3Cs_5v" role="37vLTJ">
+                      <ref role="3cqZAo" node="1giBB3CswWL" resolve="tempPath" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="1giBB3CsZSM" role="3cqZAp">
+                  <node concept="37vLTI" id="1giBB3Ct07I" role="3clFbG">
+                    <node concept="2OqwBi" id="1giBB3CtajT" role="37vLTx">
+                      <node concept="2OqwBi" id="1giBB3Ct8ML" role="2Oq$k0">
+                        <node concept="37vLTw" id="1giBB3Ct8sh" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1giBB3CswWL" resolve="tempPath" />
+                        </node>
+                        <node concept="liA8E" id="1giBB3Cta2F" role="2OqNvi">
+                          <ref role="37wK5l" to="eoo2:~Path.toFile():java.io.File" resolve="toFile" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="1giBB3Ctbun" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="1giBB3CsZSK" role="37vLTJ">
+                      <ref role="3cqZAo" node="2v_vgVUoNz9" resolve="testFolder" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="1giBB3CrPYs" role="TEbGg">
+                <node concept="3clFbS" id="1giBB3CrPYt" role="TDEfX" />
+                <node concept="3cpWsn" id="1giBB3CrPYu" role="TDEfY">
+                  <property role="TrG5h" value="e" />
+                  <node concept="3uibUv" id="1giBB3CrPYv" role="1tU5fm">
+                    <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="1giBB3CsOJl" role="3clFbw">
+            <ref role="3cqZAo" node="1giBB3CsFek" resolve="temp" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="1giBB3CsI5h" role="3cqZAp" />
         <node concept="3clFbH" id="2v_vgVUoKi8" role="3cqZAp" />
         <node concept="3cpWs8" id="jbwownMJ5S" role="3cqZAp">
           <node concept="3cpWsn" id="jbwownMJ5Y" role="3cpWs9">
