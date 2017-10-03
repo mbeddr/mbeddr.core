@@ -563,5 +563,23 @@
       <ref role="PrY4T" node="5luHlsCrxe_" resolve="IPatternFunctionModuleContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5YhdhgZIEPp">
+    <property role="EcuMT" value="6886343666311015769" />
+    <property role="3GE5qa" value="statement" />
+    <property role="TrG5h" value="SwitchStatement" />
+    <property role="R4oN_" value="switch statement" />
+    <property role="34LRSv" value="switch" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1ERTnBTmkXe" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="alternatives" />
+      <property role="20lbJX" value="1..n" />
+      <property role="IQ2ns" value="1925259677761359694" />
+      <ref role="20lvS9" node="1ERTnBTmryq" resolve="PatternFunctionBody" />
+    </node>
+    <node concept="PrWs8" id="5YhdhgZIEPq" role="PzmwI">
+      <ref role="PrY4T" node="5luHlsCq70i" resolve="IStatement" />
+    </node>
+  </node>
 </model>
 
