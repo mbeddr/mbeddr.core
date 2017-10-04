@@ -22,7 +22,6 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false" scope="design">be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)</dependency>
-        <dependency reexport="false">4f4aece1-173b-4822-9f43-c693c18d901f(com.mbeddr.core.modules.gen.rt)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
