@@ -2,12 +2,13 @@ import de.itemis.mps.gradle.GitBasedVersioning
 
 def userHome = System.properties['user.home']
 def osSpecificPart = System.properties['os.name'].toLowerCase().contains('mac') ? 'Library/Application Support' : ''
+def mpsUserConfigBase = "$userHome/$osSpecificPart"
 if (project.hasProperty("MPS_PATHS_SELECTOR")) {
-    ext.mpsUserConfigDir = "$userHome/$osSpecificPart/" + project.getProperty("MPS_PATHS_SELECTOR") + "/config"
-} else if (file("$userHome/$osSpecificPart/.MPS$mpsBuild").isDirectory()) {
-    ext.mpsUserConfigDir = "$userHome/$osSpecificPart/.MPS$mpsBuild/config"
-} else if (file("$userHome/$osSpecificPart/.MPS$mpsMajor").isDirectory()) {
-    ext.mpsUserConfigDir = "$userHome/$osSpecificPart/.MPS$mpsMajor/config"
+    ext.mpsUserConfigDir = "$mpsUserConfigBase/" + project.getProperty("MPS_PATHS_SELECTOR") + "/config"
+} else if (file("$mpsUserConfigBase/.MPS$mpsBuild").isDirectory()) {
+    ext.mpsUserConfigDir = "$mpsUserConfigBase/.MPS$mpsBuild/config"
+} else if (file("$mpsUserConfigBase/.MPS$mpsMajor").isDirectory()) {
+    ext.mpsUserConfigDir = "$mpsUserConfigBase/.MPS$mpsMajor/config"
 } else {
     ext.mpsUserConfigDir = ""
 }
