@@ -156,6 +156,11 @@
     <property role="34LRSv" value="diagram.box" />
     <property role="EcuMT" value="6237710625713195816" />
     <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+    <node concept="1TJgyi" id="7eLeaWFPq1P" role="1TKVEl">
+      <property role="IQ2nx" value="8336506710245351541" />
+      <property role="TrG5h" value="ignoreEdgesOnDeletion" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="1mYz8rWOnbW" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ports2" />
@@ -920,6 +925,11 @@
     </node>
     <node concept="PrWs8" id="7L$rKAV50Iu" role="PzmwI">
       <ref role="PrY4T" node="2J9gLgxqr14" resolve="IDiagramContent" />
+    </node>
+    <node concept="1TJgyi" id="7eLeaWG2Tlc" role="1TKVEl">
+      <property role="IQ2nx" value="8336506710248887628" />
+      <property role="TrG5h" value="ignoreEdgesOnDeletion" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="7L$rKAV31Yz">
