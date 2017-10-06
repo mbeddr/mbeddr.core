@@ -164,7 +164,7 @@
   <node concept="1_1swa" id="tMF5FXsCLB">
     <property role="yApLE" value="11" />
     <property role="TrG5h" value="F_ProductLineVariability" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="3mn43GO8h4S" role="1_0VJ0">
       <property role="TrG5h" value="productlinevariability" />
       <property role="1_0VJr" value="Product Line Variability" />
@@ -1320,7 +1320,7 @@
   <node concept="1_1swa" id="1OEOMsplkCQ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_ProcessSupport" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1OEOMsplmw0" role="1_0VJ0">
       <property role="1_0VJr" value="Process Support" />
       <property role="TrG5h" value="processSupport" />
@@ -1380,7 +1380,7 @@
   <node concept="1_1swa" id="2NmTaRWzPSk">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="D_Documentation" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="2NmTaRWzPSl" role="1_0VJ0">
       <property role="TrG5h" value="doc" />
       <property role="1_0VJr" value="Documentation Language" />
@@ -2055,7 +2055,7 @@
   <node concept="1_1swa" id="2NmTaRWzR$P">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_Assessments" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="2f$52y" id="58xH_U77Be1" role="lGtFl" />
     <node concept="1_0VNX" id="2NmTaRWzR$Q" role="1_0VJ0">
       <property role="TrG5h" value="assess" />
@@ -2308,7 +2308,7 @@
   <node concept="1_1swa" id="12l$qjdcYKY">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_Requirements" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="4IT6uo9ZSC" role="1DXQ57">
       <ref role="1_0j5g" to="bmc6:1ig5EljjfU0" resolve="C_Editor" />
     </node>
@@ -2778,7 +2778,7 @@
           <property role="TrG5h" value="reqtree" />
           <node concept="2Sb_l4" id="2fBMM_3Y7tJ" role="2SbwM5">
             <property role="2Sb_kV" value="reqtree.png" />
-            <ref role="2Sb_kU" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
+            <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" resolve="imagesProcessSupport" />
           </node>
           <node concept="OjmMv" id="12l$qjdhStY" role="2SaI5j">
             <node concept="19SGf9" id="12l$qjdhStZ" role="OjmMu">
@@ -2795,7 +2795,7 @@
   <node concept="1_1swa" id="2rKfGsVR7RQ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="B_Tracing" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="2f$52y" id="Mty5N5B1iq" role="lGtFl" />
     <node concept="1_0VNX" id="2rKfGsVRhPV" role="1_0VJ0">
       <property role="TrG5h" value="tracing" />
@@ -3005,7 +3005,7 @@
         <property role="TrG5h" value="detailedTraces" />
         <node concept="2Sb_l4" id="2fBMM_3Y7tN" role="2SbwM5">
           <property role="2Sb_kV" value="detailedTraces.png" />
-          <ref role="2Sb_kU" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
+          <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" resolve="imagesProcessSupport" />
         </node>
         <node concept="OjmMv" id="4IT6uofhsx" role="2SaI5j">
           <node concept="19SGf9" id="4IT6uofhsy" role="OjmMu">
@@ -3020,7 +3020,7 @@
         <property role="TrG5h" value="littleTs" />
         <node concept="2Sb_l4" id="2fBMM_3Y7tR" role="2SbwM5">
           <property role="2Sb_kV" value="littleTTraces.png" />
-          <ref role="2Sb_kU" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
+          <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" resolve="imagesProcessSupport" />
         </node>
         <node concept="OjmMv" id="4IT6uoa8FO" role="2SaI5j">
           <node concept="19SGf9" id="4IT6uoa8FP" role="OjmMu">
@@ -3178,7 +3178,7 @@
           <property role="TrG5h" value="findUsagesDialog" />
           <node concept="2Sb_l4" id="2fBMM_3Y7tV" role="2SbwM5">
             <property role="2Sb_kV" value="findUsagesDialog.png" />
-            <ref role="2Sb_kU" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
+            <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" resolve="imagesProcessSupport" />
           </node>
           <node concept="OjmMv" id="3PCHQK6fb$4" role="2SaI5j">
             <node concept="19SGf9" id="3PCHQK6fb$5" role="OjmMu">
@@ -3193,7 +3193,7 @@
           <property role="TrG5h" value="findUsagesResult" />
           <node concept="2Sb_l4" id="2fBMM_3Y7tZ" role="2SbwM5">
             <property role="2Sb_kV" value="findUsagesResult.png" />
-            <ref role="2Sb_kU" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
+            <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" resolve="imagesProcessSupport" />
           </node>
           <node concept="OjmMv" id="3PCHQK6jpq0" role="2SaI5j">
             <node concept="19SGf9" id="3PCHQK6jpq1" role="OjmMu">
@@ -3273,7 +3273,7 @@
   <node concept="1_1swa" id="3PCHQK6j_Bu">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="E_CodeReview" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="2f$52y" id="58xH_U7b$n0" role="lGtFl" />
     <node concept="1_0j5j" id="4IT6uo43go" role="1DXQ57">
       <ref role="1_0j5g" node="2NmTaRWzR$P" resolve="C_Assessments" />
