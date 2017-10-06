@@ -8,9 +8,10 @@
   </languages>
   <imports>
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
-    <import index="noo3" ref="r:5eb1387c-bc23-490d-af28-3b8a81f4fd58(com.mbeddr.mpsutil.inca.analysis.runtime.AnalysisHelper)" />
+    <import index="noo3" ref="r:5eb1387c-bc23-490d-af28-3b8a81f4fd58(com.mbeddr.mpsutil.inca.analysis.runtime.DependentLinksGetter)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -20,7 +21,6 @@
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
-        <property id="1211298967294" name="outsideCommandExecution" index="72QZ$" />
         <property id="1207149998849" name="isAlwaysVisible" index="fJN8o" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
@@ -77,7 +77,6 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -135,12 +134,6 @@
     <property role="2uzpH1" value="Invoke Analysis Helper" />
     <property role="3GE5qa" value="actions" />
     <property role="fJN8o" value="true" />
-    <property role="72QZ$" value="true" />
-    <node concept="1DS2jV" id="16VcpKZWZmF" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
-      <node concept="1oajcY" id="16VcpKZWZmG" role="1oa70y" />
-    </node>
     <node concept="1DS2jV" id="2qt8$BV6zFM" role="1NuT2Z">
       <property role="TrG5h" value="methodNode" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.NODE" resolve="NODE" />
@@ -152,11 +145,13 @@
           <node concept="3cpWsn" id="2qt8$BV7bVX" role="3cpWs9">
             <property role="TrG5h" value="dependencyLinks" />
             <node concept="_YKpA" id="5HQAW7oDM5D" role="1tU5fm">
-              <node concept="17QB3L" id="5HQAW7oDM5E" role="_ZDj9" />
+              <node concept="3Tqbb2" id="3Bfstkoeh2z" role="_ZDj9">
+                <ref role="ehGHo" to="tp25:3vpu_siOTrb" resolve="ILinkAccess" />
+              </node>
             </node>
             <node concept="2YIFZM" id="1BAjn25aeVt" role="33vP2m">
               <ref role="37wK5l" to="noo3:1BAjn259nJD" resolve="getDependencyLinksFromInput" />
-              <ref role="1Pybhc" to="noo3:4F$fNiC0JTZ" resolve="AnalysisHelper" />
+              <ref role="1Pybhc" to="noo3:4F$fNiC0JTZ" resolve="DependentLinksHelper" />
               <node concept="10QFUN" id="1BAjn25aeVu" role="37wK5m">
                 <node concept="2OqwBi" id="1BAjn25aeVv" role="10QFUP">
                   <node concept="2WthIp" id="1BAjn25aeVw" role="2Oq$k0" />
@@ -171,15 +166,15 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2qt8$BV7dsO" role="3cqZAp">
-          <node concept="2OqwBi" id="2qt8$BV7dsL" role="3clFbG">
-            <node concept="10M0yZ" id="2qt8$BV7dsM" role="2Oq$k0">
+        <node concept="3clFbF" id="2e7uem8k1YP" role="3cqZAp">
+          <node concept="2OqwBi" id="2e7uem8k1YM" role="3clFbG">
+            <node concept="10M0yZ" id="2e7uem8k1YN" role="2Oq$k0">
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
-            <node concept="liA8E" id="2qt8$BV7dsN" role="2OqNvi">
+            <node concept="liA8E" id="2e7uem8k1YO" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-              <node concept="37vLTw" id="2qt8$BV7dwS" role="37wK5m">
+              <node concept="37vLTw" id="2e7uem8k22E" role="37wK5m">
                 <ref role="3cqZAo" node="2qt8$BV7bVX" resolve="dependencyLinks" />
               </node>
             </node>
