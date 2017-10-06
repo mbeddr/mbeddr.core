@@ -144,7 +144,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -962,26 +961,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5Clwc3sQPBb" role="3cqZAp">
-          <node concept="2OqwBi" id="5Clwc3sQPBc" role="3clFbG">
-            <node concept="10M0yZ" id="5Clwc3sQPBd" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="5Clwc3sQPBe" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object):void" resolve="println" />
-              <node concept="2OqwBi" id="5Clwc3sQPBf" role="37wK5m">
-                <node concept="37vLTw" id="5Clwc3sQPBg" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5Clwc3sQofU" resolve="creator" />
-                </node>
-                <node concept="3TrEf2" id="5Clwc3sQPBh" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tp2q:i0HW$Uv" resolve="elementType" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4j6hX7p8pZ5" role="3cqZAp" />
         <node concept="3cpWs8" id="4j6hX7p8qbn" role="3cqZAp">
           <node concept="3cpWsn" id="4j6hX7p8qbo" role="3cpWs9">
             <property role="TrG5h" value="initValue" />
