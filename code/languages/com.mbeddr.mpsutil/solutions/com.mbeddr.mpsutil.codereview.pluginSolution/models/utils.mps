@@ -615,7 +615,7 @@
                   <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
                   <node concept="3cpWs3" id="GSc6LT5M6k" role="37wK5m">
                     <node concept="Xl_RD" id="GSc6LT5M6l" role="3uHU7w">
-                      <property role="Xl_RC" value=" should reside in a source_gen or classes_gen folder" />
+                      <property role="Xl_RC" value=" should reside in a source_gen, test_gen or classes_gen folder" />
                     </node>
                     <node concept="37vLTw" id="GSc6LT5M6m" role="3uHU7B">
                       <ref role="3cqZAo" node="6Zad41Tri9h" resolve="fullQualifiedFileName" />
@@ -625,29 +625,44 @@
               </node>
             </node>
           </node>
-          <node concept="1Wc70l" id="GSc6LT5WsV" role="3clFbw">
-            <node concept="3fqX7Q" id="GSc6LT5WsX" role="3uHU7B">
-              <node concept="2OqwBi" id="GSc6LT5WsY" role="3fr31v">
-                <node concept="37vLTw" id="GSc6LT5WsZ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6Zad41Tri9h" resolve="fullQualifiedFileName" />
+          <node concept="1Wc70l" id="4PBxP34ZZSb" role="3clFbw">
+            <node concept="1Wc70l" id="GSc6LT5WsV" role="3uHU7B">
+              <node concept="3fqX7Q" id="GSc6LT5WsX" role="3uHU7B">
+                <node concept="2OqwBi" id="GSc6LT5WsY" role="3fr31v">
+                  <node concept="37vLTw" id="GSc6LT5WsZ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6Zad41Tri9h" resolve="fullQualifiedFileName" />
+                  </node>
+                  <node concept="liA8E" id="GSc6LT5Wt0" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <node concept="Xl_RD" id="GSc6LT5Wt1" role="37wK5m">
+                      <property role="Xl_RC" value="source_gen" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="liA8E" id="GSc6LT5Wt0" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                  <node concept="Xl_RD" id="GSc6LT5Wt1" role="37wK5m">
-                    <property role="Xl_RC" value="source_gen" />
+              </node>
+              <node concept="3fqX7Q" id="GSc6LT5Wtd" role="3uHU7w">
+                <node concept="2OqwBi" id="GSc6LT5Wte" role="3fr31v">
+                  <node concept="37vLTw" id="GSc6LT5Wtf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6Zad41Tri9h" resolve="fullQualifiedFileName" />
+                  </node>
+                  <node concept="liA8E" id="GSc6LT5Wtg" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <node concept="Xl_RD" id="GSc6LT5Wth" role="37wK5m">
+                      <property role="Xl_RC" value="classes_gen" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3fqX7Q" id="GSc6LT5Wtd" role="3uHU7w">
-              <node concept="2OqwBi" id="GSc6LT5Wte" role="3fr31v">
-                <node concept="37vLTw" id="GSc6LT5Wtf" role="2Oq$k0">
+            <node concept="3fqX7Q" id="4PBxP3500EG" role="3uHU7w">
+              <node concept="2OqwBi" id="4PBxP3500EI" role="3fr31v">
+                <node concept="37vLTw" id="4PBxP3500EJ" role="2Oq$k0">
                   <ref role="3cqZAo" node="6Zad41Tri9h" resolve="fullQualifiedFileName" />
                 </node>
-                <node concept="liA8E" id="GSc6LT5Wtg" role="2OqNvi">
+                <node concept="liA8E" id="4PBxP3500EK" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                  <node concept="Xl_RD" id="GSc6LT5Wth" role="37wK5m">
-                    <property role="Xl_RC" value="classes_gen" />
+                  <node concept="Xl_RD" id="4PBxP3500EL" role="37wK5m">
+                    <property role="Xl_RC" value="test_gen" />
                   </node>
                 </node>
               </node>
@@ -718,6 +733,37 @@
                 <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
                 <node concept="Xl_RD" id="18pUPeO7gib" role="37wK5m">
                   <property role="Xl_RC" value="classes_gen" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="4PBxP34ZQX1" role="3eNLev">
+            <node concept="3clFbS" id="4PBxP34ZQX2" role="3eOfB_">
+              <node concept="3clFbF" id="4PBxP34ZQX3" role="3cqZAp">
+                <node concept="37vLTI" id="4PBxP34ZQX4" role="3clFbG">
+                  <node concept="3$87h9" id="4PBxP34ZQX5" role="37vLTx">
+                    <ref role="37wK5l" node="3ccRFHLez5F" resolve="extractUnitName" />
+                    <node concept="37vLTw" id="4PBxP34ZQX6" role="37wK5m">
+                      <ref role="3cqZAo" node="6Zad41Tri9h" resolve="fullQualifiedFileName" />
+                    </node>
+                    <node concept="Xl_RD" id="4PBxP34ZQX7" role="37wK5m">
+                      <property role="Xl_RC" value="test_gen" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="4PBxP34ZQX8" role="37vLTJ">
+                    <ref role="3cqZAo" node="6Zad41Tri8e" resolve="result" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4PBxP34ZQX9" role="3eO9$A">
+              <node concept="37vLTw" id="4PBxP34ZQXa" role="2Oq$k0">
+                <ref role="3cqZAo" node="6Zad41Tri9h" resolve="fullQualifiedFileName" />
+              </node>
+              <node concept="liA8E" id="4PBxP34ZQXb" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                <node concept="Xl_RD" id="4PBxP34ZQXc" role="37wK5m">
+                  <property role="Xl_RC" value="test_gen" />
                 </node>
               </node>
             </node>
@@ -1554,26 +1600,39 @@
               </node>
             </node>
           </node>
-          <node concept="22lmx$" id="3dXNG5u6AXN" role="3clFbw">
-            <node concept="2OqwBi" id="3dXNG5u6AXO" role="3uHU7B">
-              <node concept="37vLTw" id="3dXNG5u6AXP" role="2Oq$k0">
+          <node concept="22lmx$" id="4PBxP34ZRCw" role="3clFbw">
+            <node concept="2OqwBi" id="4PBxP34ZT0O" role="3uHU7w">
+              <node concept="37vLTw" id="4PBxP34ZSEj" role="2Oq$k0">
                 <ref role="3cqZAo" node="3dXNG5u6AVy" resolve="file" />
               </node>
-              <node concept="liA8E" id="3dXNG5u6AXQ" role="2OqNvi">
+              <node concept="liA8E" id="4PBxP34ZTEK" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                <node concept="Xl_RD" id="3dXNG5u6AXR" role="37wK5m">
-                  <property role="Xl_RC" value="source_gen" />
+                <node concept="Xl_RD" id="4PBxP34ZTMA" role="37wK5m">
+                  <property role="Xl_RC" value="test_gen" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="3dXNG5u6AXS" role="3uHU7w">
-              <node concept="37vLTw" id="3dXNG5u6AXT" role="2Oq$k0">
-                <ref role="3cqZAo" node="3dXNG5u6AVy" resolve="file" />
+            <node concept="22lmx$" id="3dXNG5u6AXN" role="3uHU7B">
+              <node concept="2OqwBi" id="3dXNG5u6AXO" role="3uHU7B">
+                <node concept="37vLTw" id="3dXNG5u6AXP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3dXNG5u6AVy" resolve="file" />
+                </node>
+                <node concept="liA8E" id="3dXNG5u6AXQ" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="Xl_RD" id="3dXNG5u6AXR" role="37wK5m">
+                    <property role="Xl_RC" value="source_gen" />
+                  </node>
+                </node>
               </node>
-              <node concept="liA8E" id="3dXNG5u6AXU" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                <node concept="Xl_RD" id="3dXNG5u6AXV" role="37wK5m">
-                  <property role="Xl_RC" value="classes_gen" />
+              <node concept="2OqwBi" id="3dXNG5u6AXS" role="3uHU7w">
+                <node concept="37vLTw" id="3dXNG5u6AXT" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3dXNG5u6AVy" resolve="file" />
+                </node>
+                <node concept="liA8E" id="3dXNG5u6AXU" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="Xl_RD" id="3dXNG5u6AXV" role="37wK5m">
+                    <property role="Xl_RC" value="classes_gen" />
+                  </node>
                 </node>
               </node>
             </node>
