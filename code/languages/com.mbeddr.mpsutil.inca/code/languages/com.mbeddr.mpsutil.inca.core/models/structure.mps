@@ -603,7 +603,10 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="2XlXuxNCQND" role="PzmwI">
-      <ref role="PrY4T" node="2XlXuxNCQnA" resolve="IExpressionContext" />
+      <ref role="PrY4T" node="2XlXuxNCQnA" resolve="IJavaContext" />
+    </node>
+    <node concept="PrWs8" id="7Zw$ExQ6XHr" role="PzmwI">
+      <ref role="PrY4T" node="7Zw$ExQ6Xxe" resolve="IContainsJavaExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="RjyNapPtyP">
@@ -659,7 +662,10 @@
       <ref role="PrY4T" node="3VwoHXNAdvs" resolve="IPatternBodyContent" />
     </node>
     <node concept="PrWs8" id="2XlXuxNCQFt" role="PzmwI">
-      <ref role="PrY4T" node="2XlXuxNCQnA" resolve="IExpressionContext" />
+      <ref role="PrY4T" node="2XlXuxNCQnA" resolve="IJavaContext" />
+    </node>
+    <node concept="PrWs8" id="7Zw$ExQ6Ydu" role="PzmwI">
+      <ref role="PrY4T" node="7Zw$ExQ6Xxe" resolve="IContainsJavaExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="4QgsNmKLL_q">
@@ -1047,7 +1053,7 @@
   <node concept="PlHQZ" id="2XlXuxNCQnA">
     <property role="EcuMT" value="3410902671524324838" />
     <property role="3GE5qa" value="misc" />
-    <property role="TrG5h" value="IExpressionContext" />
+    <property role="TrG5h" value="IJavaContext" />
   </node>
   <node concept="PlHQZ" id="Y78e7A6TUt">
     <property role="EcuMT" value="1118899187025157789" />
@@ -1212,15 +1218,15 @@
     <property role="34LRSv" value="join" />
     <property role="R4oN_" value="join type" />
     <ref role="1TJDcQ" to="tp25:gzTqbfa" resolve="SNodeType" />
-    <node concept="PrWs8" id="aQnmvHEmTJ" role="PzmwI">
-      <ref role="PrY4T" node="aQnmvHEm_S" resolve="IRuntimeIncAType" />
-    </node>
     <node concept="1TJgyj" id="1UJP1A0VCHU" role="1TKVEi">
       <property role="IQ2ns" value="2211219148064590714" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="joinTypeDef" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7a3nU354JVn" resolve="IJoinTypeDef" />
+    </node>
+    <node concept="PrWs8" id="aQnmvHEmTJ" role="PzmwI">
+      <ref role="PrY4T" node="aQnmvHEm_S" resolve="IRuntimeIncAType" />
     </node>
   </node>
   <node concept="1TIwiD" id="6ZsaHh09WeF">
@@ -1256,6 +1262,11 @@
     <node concept="PrWs8" id="14vNbVhZNjo" role="PzmwI">
       <ref role="PrY4T" node="6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="7Zw$ExQ6Xxe">
+    <property role="EcuMT" value="9214526089833732174" />
+    <property role="3GE5qa" value="misc" />
+    <property role="TrG5h" value="IContainsJavaExpression" />
   </node>
 </model>
 

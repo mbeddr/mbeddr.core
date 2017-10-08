@@ -2,10 +2,10 @@
 <model ref="r:996ba3fb-778e-480a-b3c2-859e96b9d79f(com.mbeddr.mpsutil.inca.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -1134,6 +1134,12 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
             </node>
           </node>
+          <node concept="1SiIV0" id="6iC45Wrf2Wc" role="3bR37C">
+            <node concept="3bR9La" id="6iC45Wrf2Wd" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="1UJP1A1c$T0" role="3bR37C">
           <node concept="1Busua" id="1UJP1A1c$T1" role="1SiIV1">
@@ -1286,8 +1292,14 @@
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
             </node>
           </node>
-          <node concept="1SiIV0" id="63B3GLINV1E" role="3bR37C">
-            <node concept="3bR9La" id="63B3GLINV1F" role="1SiIV1">
+          <node concept="1SiIV0" id="6jyNf4ape4z" role="3bR37C">
+            <node concept="3bR9La" id="6jyNf4ape4$" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6jyNf4ape4_" role="3bR37C">
+            <node concept="3bR9La" id="6jyNf4ape4A" role="1SiIV1">
               <property role="3bR36h" value="true" />
               <ref role="3bR37D" node="11w71Xmfzpd" resolve="com.mbeddr.mpsutil.inca.core.runtime" />
             </node>
