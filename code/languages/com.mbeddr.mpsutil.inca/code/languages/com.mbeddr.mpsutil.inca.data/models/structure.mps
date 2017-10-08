@@ -2,7 +2,7 @@
 <model ref="r:5d05a0a1-0178-4953-8047-22b44c66dcde(com.mbeddr.mpsutil.inca.data.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -341,7 +341,7 @@
       <ref role="20lvS9" node="3l0M8IajV$$" resolve="IDataConstructor" />
     </node>
     <node concept="PrWs8" id="2XlXuxNCRiQ" role="PrDN$">
-      <ref role="PrY4T" to="hqsm:2XlXuxNCQnA" resolve="IExpressionContext" />
+      <ref role="PrY4T" to="hqsm:2XlXuxNCQnA" resolve="IJavaContext" />
     </node>
     <node concept="PrWs8" id="ziWFuXy7Er" role="PrDN$">
       <ref role="PrY4T" to="ebqt:1i65yRAQ7jk" resolve="IExpression" />
@@ -575,9 +575,6 @@
     <node concept="PrWs8" id="54ERyg8MVdv" role="PzmwI">
       <ref role="PrY4T" node="54ERyg8GXCY" resolve="ILatticeOperationCall" />
     </node>
-    <node concept="PrWs8" id="5ZcZlaf7FbX" role="PzmwI">
-      <ref role="PrY4T" to="hqsm:2XlXuxNCQnA" resolve="IExpressionContext" />
-    </node>
     <node concept="RPilO" id="5JQC2dmn0kc" role="lGtFl">
       <ref role="RPilL" node="4aOuL3PUQhL" resolve="operation" />
     </node>
@@ -610,6 +607,9 @@
     </node>
     <node concept="PrWs8" id="54ERyg8J8SK" role="PrDN$">
       <ref role="PrY4T" node="54ERyg8J8SJ" resolve="ILatticeMemberCall" />
+    </node>
+    <node concept="PrWs8" id="7Zw$ExQ6Is0" role="PrDN$">
+      <ref role="PrY4T" to="hqsm:2XlXuxNCQnA" resolve="IJavaContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="54ERyg8J8QQ">

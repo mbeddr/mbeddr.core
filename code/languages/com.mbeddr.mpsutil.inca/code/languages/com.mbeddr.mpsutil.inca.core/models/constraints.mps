@@ -2020,7 +2020,7 @@
               <node concept="2Xjw5R" id="2RSm1Cz26MZ" role="2OqNvi">
                 <node concept="1xMEDy" id="2RSm1Cz26N0" role="1xVPHs">
                   <node concept="chp4Y" id="2RSm1Cz26N1" role="ri$Ld">
-                    <ref role="cht4Q" to="hqsm:2XlXuxNCQnA" resolve="IExpressionContext" />
+                    <ref role="cht4Q" to="hqsm:2XlXuxNCQnA" resolve="IJavaContext" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="2RSm1Cz26N2" role="1xVPHs" />
