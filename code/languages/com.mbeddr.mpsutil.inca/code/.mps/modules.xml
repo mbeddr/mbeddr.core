@@ -22,6 +22,7 @@
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.fun.test/com.mbeddr.mpsutil.inca.fun.test.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.fun.testlangs/com.mbeddr.mpsutil.inca.fun.testlangs.mpl" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.gp.test/com.mbeddr.mpsutil.inca.gp.test.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.sa.test/com.mbeddr.mpsutil.inca.sa.test.msd" folder="tests" />
     </projectModules>
   </component>
 </project>
