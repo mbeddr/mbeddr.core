@@ -21199,7 +21199,7 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="79jc6YzhufJ" role="3uHU7w">
-                    <property role="Xl_RC" value="/screenshot-node-" />
+                    <property role="Xl_RC" value="/cell-screenshots/screenshot-node-" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="79jc6YzgSbc" role="3uHU7w">
