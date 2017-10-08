@@ -116,6 +116,7 @@
     <import index="17wx" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.locks(JDK/)" />
     <import index="ixe9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.concurrency(MPS.IDEA/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
+    <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -21168,6 +21169,141 @@
       </node>
       <node concept="3Tm6S6" id="7Ubp4TG_jFv" role="1B3o_S" />
       <node concept="10P_77" id="7Ubp4TG_kb8" role="3clF45" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="79jc6YzgefC">
+    <property role="TrG5h" value="screenshotNode" />
+    <property role="2uzpH1" value="Print Editor" />
+    <property role="3GE5qa" value="screenshot" />
+    <node concept="tnohg" id="79jc6YzgefD" role="tncku">
+      <node concept="3clFbS" id="79jc6YzgefE" role="2VODD2">
+        <node concept="3cpWs8" id="79jc6YzhufB" role="3cqZAp">
+          <node concept="3cpWsn" id="79jc6YzhufC" role="3cpWs9">
+            <property role="TrG5h" value="filename" />
+            <node concept="17QB3L" id="79jc6Yzhufw" role="1tU5fm" />
+            <node concept="3cpWs3" id="79jc6YzhSIJ" role="33vP2m">
+              <node concept="Xl_RD" id="79jc6YzhSIZ" role="3uHU7w">
+                <property role="Xl_RC" value=".png" />
+              </node>
+              <node concept="3cpWs3" id="79jc6YzhF2R" role="3uHU7B">
+                <node concept="3cpWs3" id="79jc6YzhufD" role="3uHU7B">
+                  <node concept="2OqwBi" id="79jc6YzhufE" role="3uHU7B">
+                    <node concept="2OqwBi" id="79jc6YzhufF" role="2Oq$k0">
+                      <node concept="2WthIp" id="79jc6YzhufG" role="2Oq$k0" />
+                      <node concept="1DTwFV" id="79jc6YzhufH" role="2OqNvi">
+                        <ref role="2WH_rO" node="79jc6YzgNsR" resolve="prj" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="79jc6YzhufI" role="2OqNvi">
+                      <ref role="37wK5l" to="4nm9:~Project.getBasePath():java.lang.String" resolve="getBasePath" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="79jc6YzhufJ" role="3uHU7w">
+                    <property role="Xl_RC" value="/screenshot-node-" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="79jc6YzgSbc" role="3uHU7w">
+                  <node concept="2OqwBi" id="79jc6YzgRvd" role="2Oq$k0">
+                    <node concept="2JrnkZ" id="79jc6YzgReC" role="2Oq$k0">
+                      <node concept="2OqwBi" id="79jc6YzgQap" role="2JrQYb">
+                        <node concept="2WthIp" id="79jc6YzgQas" role="2Oq$k0" />
+                        <node concept="3gHZIF" id="79jc6YzgQau" role="2OqNvi">
+                          <ref role="2WH_rO" node="79jc6YzgMET" resolve="node" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="79jc6YzgRWv" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="79jc6YzgS_2" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="79jc6YzgMjq" role="3cqZAp">
+          <node concept="2YIFZM" id="79jc6YzgMlO" role="3clFbG">
+            <ref role="1Pybhc" node="1yFmGPnLcL9" resolve="CellEditorScreenshooter" />
+            <ref role="37wK5l" node="1yFmGPnLcLb" resolve="takeScreenshot" />
+            <node concept="2OqwBi" id="79jc6YzgMFR" role="37wK5m">
+              <node concept="2WthIp" id="79jc6YzgMFU" role="2Oq$k0" />
+              <node concept="3gHZIF" id="79jc6YzgMFW" role="2OqNvi">
+                <ref role="2WH_rO" node="79jc6YzgMET" resolve="node" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="79jc6YzhufK" role="37wK5m">
+              <ref role="3cqZAo" node="79jc6YzhufC" resolve="filename" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="79jc6YziMUJ" role="3cqZAp">
+          <node concept="3cpWsn" id="79jc6YziMUK" role="3cpWs9">
+            <property role="TrG5h" value="sl" />
+            <node concept="3uibUv" id="79jc6YziMUL" role="1tU5fm">
+              <ref role="3uigEE" to="kt01:~StringSelection" resolve="StringSelection" />
+            </node>
+            <node concept="2ShNRf" id="79jc6YziNca" role="33vP2m">
+              <node concept="1pGfFk" id="79jc6YziMW$" role="2ShVmc">
+                <ref role="37wK5l" to="kt01:~StringSelection.&lt;init&gt;(java.lang.String)" resolve="StringSelection" />
+                <node concept="37vLTw" id="79jc6YziNd2" role="37wK5m">
+                  <ref role="3cqZAo" node="79jc6YzhufC" resolve="filename" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="79jc6YziK8j" role="3cqZAp">
+          <node concept="2OqwBi" id="79jc6YziLFm" role="3clFbG">
+            <node concept="2OqwBi" id="79jc6YziKVQ" role="2Oq$k0">
+              <node concept="2YIFZM" id="79jc6YziKBp" role="2Oq$k0">
+                <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit():java.awt.Toolkit" resolve="getDefaultToolkit" />
+                <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
+              </node>
+              <node concept="liA8E" id="79jc6YziLn5" role="2OqNvi">
+                <ref role="37wK5l" to="z60i:~Toolkit.getSystemClipboard():java.awt.datatransfer.Clipboard" resolve="getSystemClipboard" />
+              </node>
+            </node>
+            <node concept="liA8E" id="79jc6YziM4q" role="2OqNvi">
+              <ref role="37wK5l" to="kt01:~Clipboard.setContents(java.awt.datatransfer.Transferable,java.awt.datatransfer.ClipboardOwner):void" resolve="setContents" />
+              <node concept="37vLTw" id="79jc6YziNdW" role="37wK5m">
+                <ref role="3cqZAo" node="79jc6YziMUK" resolve="sl" />
+              </node>
+              <node concept="10Nm6u" id="79jc6YziNj4" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S4$dB" id="79jc6YzgMET" role="1NuT2Z">
+      <property role="TrG5h" value="node" />
+      <node concept="3Tm6S6" id="79jc6YzgMEU" role="1B3o_S" />
+      <node concept="1oajcY" id="79jc6YzgMEV" role="1oa70y" />
+      <node concept="3Tqbb2" id="79jc6YzgMms" role="1tU5fm" />
+    </node>
+    <node concept="1DS2jV" id="79jc6YzgNsR" role="1NuT2Z">
+      <property role="TrG5h" value="prj" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <node concept="1oajcY" id="79jc6YzgNsS" role="1oa70y" />
+    </node>
+    <node concept="1QGGSu" id="79jc6YzgSN2" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/screenshot.png" />
+    </node>
+  </node>
+  <node concept="tC5Ba" id="79jc6Yzh4Gr">
+    <property role="3GE5qa" value="screenshot" />
+    <property role="TrG5h" value="screenshotting" />
+    <node concept="ftmFs" id="79jc6Yzh5lQ" role="ftER_">
+      <node concept="2a7GMi" id="79jc6YzhUcS" role="ftvYc" />
+      <node concept="tCFHf" id="79jc6Yzh5lT" role="ftvYc">
+        <ref role="tCJdB" node="79jc6YzgefC" resolve="screenshotNode" />
+      </node>
+      <node concept="2a7GMi" id="79jc6YzhUcW" role="ftvYc" />
+    </node>
+    <node concept="tT9cl" id="79jc6Yzh5lV" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:WmrxDqd_N1" resolve="IDEAToolBar" />
     </node>
   </node>
 </model>
