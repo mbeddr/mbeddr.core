@@ -622,5 +622,46 @@
       </node>
     </node>
   </node>
+  <node concept="1YbPZF" id="360F32cu7gq">
+    <property role="TrG5h" value="typeof_PrevPathElement" />
+    <property role="3GE5qa" value="constraints" />
+    <node concept="3clFbS" id="360F32cu7gr" role="18ibNy">
+      <node concept="1Z5TYs" id="360F32cu7gs" role="3cqZAp">
+        <node concept="mw_s8" id="360F32cu7gt" role="1ZfhKB">
+          <node concept="2pJPEk" id="360F32cu7gu" role="mwGJk">
+            <node concept="2pJPED" id="360F32cu7gv" role="2pJPEn">
+              <ref role="2pJxaS" to="tp25:gzTqbfa" resolve="SNodeType" />
+              <node concept="2pIpSj" id="360F32cu7gw" role="2pJxcM">
+                <ref role="2pIpSl" to="tp25:g$ehGDh" resolve="concept" />
+                <node concept="36bGnv" id="360F32cu7gx" role="2pJxcZ">
+                  <ref role="36bGnp" to="tpck:gw2VY9q" resolve="BaseConcept" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="360F32cu7gy" role="1ZfhK$">
+          <node concept="1Z2H0r" id="360F32cu7gz" role="mwGJk">
+            <node concept="1YBJjd" id="360F32cu7g$" role="1Z2MuG">
+              <ref role="1YBMHb" node="360F32cu7g_" resolve="prevPathElement" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="360F32cu7g_" role="1YuTPh">
+      <property role="TrG5h" value="prevPathElement" />
+      <ref role="1YaFvo" to="55iy:360F32cu5YZ" resolve="PrevPathElement" />
+    </node>
+    <node concept="bXqS6" id="360F32cu7gA" role="bX4a1">
+      <node concept="3clFbS" id="360F32cu7gB" role="2VODD2">
+        <node concept="3cpWs6" id="360F32cu7gC" role="3cqZAp">
+          <node concept="3clFbT" id="360F32cu7gD" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

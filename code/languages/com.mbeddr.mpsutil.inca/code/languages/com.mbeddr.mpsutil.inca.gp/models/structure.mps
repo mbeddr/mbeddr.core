@@ -335,5 +335,13 @@
       <ref role="PrY4T" to="hqsm:1ERTnBTmuSC" resolve="IPathElement" />
     </node>
   </node>
+  <node concept="1TIwiD" id="360F32cu5YZ">
+    <property role="EcuMT" value="3567040229392539583" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="PrevPathElement" />
+    <property role="34LRSv" value="prev" />
+    <property role="R4oN_" value="previous reference" />
+    <ref role="1TJDcQ" node="2K9A72IyXjN" resolve="AbstractPathElement" />
+  </node>
 </model>
 

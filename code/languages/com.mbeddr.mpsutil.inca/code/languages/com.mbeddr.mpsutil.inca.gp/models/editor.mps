@@ -1555,5 +1555,45 @@
     <property role="3GE5qa" value="constraints" />
     <ref role="aqKnT" to="55iy:5Dmozv0zaht" resolve="GraphPatternConceptConstraint" />
   </node>
+  <node concept="24kQdi" id="360F32cu5Z0">
+    <property role="3GE5qa" value="constraints" />
+    <ref role="1XX52x" to="55iy:360F32cu5YZ" resolve="PrevPathElement" />
+    <node concept="1WcQYu" id="360F32cu5Z1" role="2wV5jI">
+      <node concept="2ElW$n" id="360F32cu5Z2" role="2El2Yn" />
+      <node concept="3EZMnI" id="360F32cu5Z3" role="1LiK7o">
+        <node concept="3F0ifn" id="360F32cu5Z4" role="3EZMnx">
+          <property role="3F0ifm" value="prev" />
+          <node concept="Vb9p2" id="360F32cu5Z5" role="3F10Kt" />
+        </node>
+        <node concept="_tjkj" id="360F32cu5Z6" role="3EZMnx">
+          <node concept="3EZMnI" id="360F32cu5Z7" role="_tjki">
+            <node concept="l2Vlx" id="360F32cu5Z8" role="2iSdaV" />
+            <node concept="3F0ifn" id="360F32cu5Z9" role="3EZMnx">
+              <property role="3F0ifm" value="." />
+              <node concept="11L4FC" id="360F32cu5Za" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+              <node concept="11LMrY" id="360F32cu5Zb" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+            </node>
+            <node concept="3F1sOY" id="360F32cu5Zc" role="3EZMnx">
+              <ref role="1NtTu8" to="hqsm:360F32cu60t" resolve="prev" />
+            </node>
+          </node>
+          <node concept="ZYGn8" id="360F32cu5Zd" role="ZWbT9">
+            <node concept="3clFbS" id="360F32cu5Ze" role="2VODD2">
+              <node concept="3cpWs6" id="360F32cu5Zf" role="3cqZAp">
+                <node concept="Xl_RD" id="360F32cu5Zg" role="3cqZAk">
+                  <property role="Xl_RC" value="." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="l2Vlx" id="360F32cu5Zh" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
 </model>
 
