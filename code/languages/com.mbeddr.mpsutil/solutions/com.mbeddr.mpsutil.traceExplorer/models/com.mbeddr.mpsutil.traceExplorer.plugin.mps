@@ -2395,20 +2395,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5U8d23PQw2u" role="3cqZAp">
-          <node concept="2OqwBi" id="5U8d23PQxdl" role="3clFbG">
-            <node concept="37vLTw" id="5U8d23PQw2s" role="2Oq$k0">
-              <ref role="3cqZAo" node="5IR_boHPfLL" resolve="tree" />
-            </node>
-            <node concept="liA8E" id="5U8d23PQzSV" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setBackground(java.awt.Color):void" resolve="setBackground" />
-              <node concept="10M0yZ" id="5U8d23PQFW1" role="37wK5m">
-                <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="5U8d23PQHpH" role="3cqZAp">
           <node concept="2OqwBi" id="5U8d23PQIw8" role="3clFbG">
             <node concept="37vLTw" id="5U8d23PQHpF" role="2Oq$k0">
@@ -4816,20 +4802,6 @@
               <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
               <node concept="37vLTw" id="4yQfyMjkoLz" role="37wK5m">
                 <ref role="3cqZAo" node="4yQfyMjknSh" resolve="comp" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4yQfyMjkzbN" role="3cqZAp">
-          <node concept="2OqwBi" id="4yQfyMjk$aW" role="3clFbG">
-            <node concept="37vLTw" id="4yQfyMjkzbL" role="2Oq$k0">
-              <ref role="3cqZAo" node="4yQfyMjkope" resolve="box" />
-            </node>
-            <node concept="liA8E" id="4yQfyMjk_7N" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setBackground(java.awt.Color):void" resolve="setBackground" />
-              <node concept="10M0yZ" id="4yQfyMjk_BQ" role="37wK5m">
-                <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
               </node>
             </node>
           </node>
