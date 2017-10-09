@@ -17,11 +17,11 @@
     <import index="xojk" ref="r:ec4f318b-4ee4-4063-b222-8a04b6ed816c(com.mbeddr.tutorial.documentation.ug.installation)" />
     <import index="c4ys" ref="r:4fb22f91-1e13-48a0-a300-21fa004a07ef(com.mbeddr.tutorial.documentation.ug.mbeddrCvsC99)" />
     <import index="vi23" ref="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)" />
-    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
   </imports>
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
       <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -337,12 +337,12 @@
     <node concept="1_0j5j" id="Gd6QB8f5OP" role="30Gjbj">
       <ref role="1_0j5g" node="hZfTLLg0H0" resolve="mbeddrUserGuide" />
     </node>
-    <node concept="1_07dB" id="4pE1MOiXbR_" role="30GjaH" />
     <node concept="1jVoCB" id="4pE1MOiXbRA" role="30Gjbi">
       <property role="1jVoCx" value="report" />
       <property role="1xA$Bs" value="true" />
       <property role="43dxY" value="mbeddr-prolog.ltx" />
     </node>
+    <node concept="1TaS0h" id="2khznRHxBb1" role="30GjaH" />
   </node>
   <node concept="2SbYGP" id="2fBMM_3XZ4C">
     <property role="TrG5h" value="Config" />
