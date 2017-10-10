@@ -1616,7 +1616,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7XSydqoF7d">
-    <property role="3GE5qa" value="c-integration.test" />
+    <property role="3GE5qa" value="c-integration" />
     <ref role="1M2myG" to="clqz:7XSydqoCpA" resolve="SmSetStateTarget" />
     <node concept="1N5Pfh" id="7XSydqoFj1" role="1Mr941">
       <ref role="1N5Vy1" to="clqz:7XSydqoCt2" resolve="state" />

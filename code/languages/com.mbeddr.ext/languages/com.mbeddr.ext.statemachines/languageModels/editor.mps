@@ -3962,7 +3962,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7XSydqoCPu">
-    <property role="3GE5qa" value="c-integration.test" />
+    <property role="3GE5qa" value="c-integration" />
     <ref role="1XX52x" to="clqz:7XSydqoCpA" resolve="SmSetStateTarget" />
     <node concept="3EZMnI" id="7XSydqoDb5" role="2wV5jI">
       <node concept="l2Vlx" id="7XSydqoDb6" role="2iSdaV" />
