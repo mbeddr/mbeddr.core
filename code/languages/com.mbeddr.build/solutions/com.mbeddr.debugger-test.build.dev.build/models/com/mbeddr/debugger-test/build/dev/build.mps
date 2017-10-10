@@ -425,8 +425,8 @@
         <node concept="3LEDTy" id="2coa6Xmppv9" role="3LEDUa">
           <ref role="3LEDTV" to="p6ld:7uZw0yZ43K1" resolve="com.mbeddr.core.debug" />
         </node>
-        <node concept="3LEDTy" id="63B3GLIRdGb" role="3LEDUa">
-          <ref role="3LEDTV" to="p6ld:62XMcUo5Go6" resolve="com.mbeddr.core.debug.test" />
+        <node concept="3LEDTy" id="3wIDmNcE9qz" role="3LEDUa">
+          <ref role="3LEDTV" to="p6ld:3wIDmNcxJQH" resolve="com.mbeddr.core.debug.test" />
         </node>
       </node>
       <node concept="1E1JtA" id="62XMcUo5GoU" role="2G$12L">
@@ -775,16 +775,16 @@
               <ref role="3bR37D" to="ffeo:7YI57w6K08j" resolve="jetbrains.mps.baseLanguage#1129914002933" />
             </node>
           </node>
-          <node concept="1SiIV0" id="7TtUY1TijCK" role="3bR37C">
-            <node concept="3bR9La" id="7TtUY1TijCL" role="1SiIV1">
+          <node concept="1SiIV0" id="3wIDmNcE9p5" role="3bR37C">
+            <node concept="3bR9La" id="3wIDmNcE9p6" role="1SiIV1">
               <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L3o" resolve="jetbrains.mps.baseLanguage.unitTest.libs" />
             </node>
           </node>
-          <node concept="1SiIV0" id="63B3GLIRdHS" role="3bR37C">
-            <node concept="3bR9La" id="63B3GLIRdHT" role="1SiIV1">
+          <node concept="1SiIV0" id="3wIDmNcE9p7" role="3bR37C">
+            <node concept="3bR9La" id="3wIDmNcE9p8" role="1SiIV1">
               <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="p6ld:62XMcUo5Go6" resolve="com.mbeddr.core.debug.test" />
+              <ref role="3bR37D" to="p6ld:3wIDmNcxJQH" resolve="com.mbeddr.core.debug.test" />
             </node>
           </node>
         </node>
@@ -936,16 +936,16 @@
             <ref role="3bR37D" to="p6ld:5jdSgR7UUMt" resolve="com.mbeddr.core.debugger.gdb" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6v3tcHGMVSg" role="3bR37C">
-          <node concept="3bR9La" id="6v3tcHGMVSh" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:62XMcUo5Go6" resolve="com.mbeddr.core.debug.test" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6v3tcHGMX6l" role="3bR37C">
           <node concept="3bR9La" id="6v3tcHGMX6m" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="62XMcUo6Gwb" resolve="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3wIDmNcE9lB" role="3bR37C">
+          <node concept="3bR9La" id="3wIDmNcE9lC" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:3wIDmNcxJQH" resolve="com.mbeddr.core.debug.test" />
           </node>
         </node>
       </node>
@@ -2632,16 +2632,16 @@
             <ref role="3bR37D" to="p6ld:5jdSgR7UUMt" resolve="com.mbeddr.core.debugger.gdb" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3q6VMvxn4be" role="3bR37C">
-          <node concept="3bR9La" id="3q6VMvxn4bf" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:62XMcUo5Go6" resolve="com.mbeddr.core.debug.test" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3q6VMvxn4bg" role="3bR37C">
           <node concept="3bR9La" id="3q6VMvxn4bh" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="3q6VMvxn4jl" resolve="com.mbeddr.debugger.tests.__spreferences.PlatformTemplates" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3wIDmNcE9mS" role="3bR37C">
+          <node concept="3bR9La" id="3wIDmNcE9mT" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:3wIDmNcxJQH" resolve="com.mbeddr.core.debug.test" />
           </node>
         </node>
       </node>

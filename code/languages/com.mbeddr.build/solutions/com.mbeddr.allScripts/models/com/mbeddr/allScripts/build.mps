@@ -132,6 +132,17 @@
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.allScripts" />
     <node concept="398rNT" id="5ueaxoTn60W" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
+      <node concept="55IIr" id="3wIDmNcVjTA" role="398pKh">
+        <node concept="2Ry0Ak" id="3wIDmNcVjTB" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3wIDmNcVjTC" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="3wIDmNcVk1k" role="2Ry0An">
+              <property role="2Ry0Am" value="artifacts" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
@@ -1067,10 +1078,13 @@
               <property role="2Ry0Am" value=".." />
               <node concept="2Ry0Ak" id="23LEVbRX3hU" role="2Ry0An">
                 <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="23LEVbRX3hV" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="23LEVbRX3hW" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="3wIDmNcVjyp" role="2Ry0An">
+                  <property role="2Ry0Am" value="MPS" />
+                  <node concept="2Ry0Ak" id="3wIDmNcVjHU" role="2Ry0An">
+                    <property role="2Ry0Am" value="MPS-2017.1.2.app" />
+                    <node concept="2Ry0Ak" id="3wIDmNcVjQ$" role="2Ry0An">
+                      <property role="2Ry0Am" value="Contents" />
+                    </node>
                   </node>
                 </node>
               </node>
