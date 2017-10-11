@@ -5,7 +5,7 @@
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
-    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
+    <import index="ntnz" ref="r:7f372397-146b-40d5-9f20-607974c4fed4(com.mbeddr.tutorial.documentation.ug._main)" />
   </imports>
   <registry>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
@@ -32,7 +32,7 @@
   <node concept="1_1swa" id="1OEOMspldJi">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_ComplexProjects" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1OEOMsplmw8" role="1_0VJ0">
       <property role="TrG5h" value="complexProjects" />
       <property role="1_0VJr" value="Structuring Complex Projects" />

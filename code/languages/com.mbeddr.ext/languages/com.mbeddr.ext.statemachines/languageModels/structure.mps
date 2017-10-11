@@ -978,7 +978,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7XSydqoCpA">
-    <property role="3GE5qa" value="c-integration.test" />
+    <property role="3GE5qa" value="c-integration" />
     <property role="TrG5h" value="SmSetStateTarget" />
     <property role="34LRSv" value="setState" />
     <property role="R4oN_" value="sets the state machine into a specific state" />
@@ -990,9 +990,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="143519404613863234" />
       <ref role="20lvS9" node="3FSHg1aADay" resolve="AbstractState" />
-    </node>
-    <node concept="PrWs8" id="7XSydqoC_3" role="PzmwI">
-      <ref role="PrY4T" to="yz9a:2W4z3PKVgeS" resolve="IRestrictToTests" />
     </node>
   </node>
 </model>

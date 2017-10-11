@@ -2,6 +2,8 @@
 <model ref="r:7f372397-146b-40d5-9f20-607974c4fed4(com.mbeddr.tutorial.documentation.ug._main)">
   <persistence version="9" />
   <languages>
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
+    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
@@ -15,11 +17,11 @@
     <import index="xojk" ref="r:ec4f318b-4ee4-4063-b222-8a04b6ed816c(com.mbeddr.tutorial.documentation.ug.installation)" />
     <import index="c4ys" ref="r:4fb22f91-1e13-48a0-a300-21fa004a07ef(com.mbeddr.tutorial.documentation.ug.mbeddrCvsC99)" />
     <import index="vi23" ref="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)" />
-    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
   </imports>
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
       <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -42,6 +44,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
+      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
@@ -49,6 +52,16 @@
       <concept id="6386504476136554612" name="com.mbeddr.doc.structure.PathMapping" flags="ng" index="2SbEIf">
         <property id="6386504476136554614" name="mappedPath" index="2SbEId" />
         <reference id="6386504476136554613" name="pathDef" index="2SbEIe" />
+      </concept>
+      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
+        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
+      </concept>
+      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="3352153450711894224" name="configItems" index="2wNnkt" />
+        <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
+        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
+        <child id="6386504476136472817" name="paths" index="2SbYGa" />
+        <child id="8624890525767800998" name="sizeSpecs" index="3SH5Mq" />
       </concept>
       <concept id="6068976060904002601" name="com.mbeddr.doc.structure.AbstractExport" flags="ng" index="30Gg6V">
         <child id="6068976060904007487" name="renderer" index="30GjaH" />
@@ -81,6 +94,12 @@
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
       <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
+      <concept id="8624890525767637976" name="com.mbeddr.doc.structure.PageWidthSizeSpec" flags="ng" index="3SGHZ$">
+        <property id="8624890525767637977" name="percentage" index="3SGHZ_" />
+      </concept>
+      <concept id="8624890525767800825" name="com.mbeddr.doc.structure.NamedSizeSpec" flags="ng" index="3SH5f5">
+        <child id="8624890525767800827" name="spec" index="3SH5f7" />
+      </concept>
     </language>
     <language id="f44f6b9a-bf30-4f73-866e-fac17c177409" name="com.mbeddr.doc.gen_latex">
       <concept id="4457500422381351715" name="com.mbeddr.doc.gen_latex.structure.LatexRenderer" flags="ng" index="1jVoCB">
@@ -89,7 +108,18 @@
         <property id="5185579450379315413" name="hasTOC" index="1xA$Bs" />
       </concept>
     </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -98,7 +128,7 @@
   <node concept="1_1swa" id="hZfTLLg0H0">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="mbeddrUserGuide" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" node="2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="hZfTLLCm6$" role="1DXQ57">
       <ref role="1_0j5g" to="9w7i:1ig5Eljjfz2" resolve="Z_CHAPTER_Concepts" />
     </node>
@@ -278,40 +308,118 @@
     <property role="WqcPg" value="mbeddr User Guide" />
     <node concept="2SbEIf" id="Gd6QB8f5P3" role="30Gjbg">
       <property role="2SbEId" value="images/_vis" />
-      <ref role="2SbEIe" to="1842:2fBMM_3XZ4R" resolve="vis" />
+      <ref role="2SbEIe" node="2fBMM_3XZ4R" resolve="vis" />
     </node>
     <node concept="2SbEIf" id="Gd6QB8f5OX" role="30Gjbg">
       <property role="2SbEId" value="images" />
-      <ref role="2SbEIe" to="1842:2fBMM_3XZ4D" resolve="images" />
+      <ref role="2SbEIe" node="2fBMM_3XZ4D" resolve="images" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3vY" role="30Gjbg">
       <property role="2SbEId" value="images/concepts" />
-      <ref role="2SbEIe" to="1842:2fBMM_3XZ4H" resolve="conceptImages" />
+      <ref role="2SbEIe" node="2fBMM_3XZ4H" resolve="conceptImages" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3wf" role="30Gjbg">
       <property role="2SbEId" value="images/fundamentals" />
-      <ref role="2SbEIe" to="1842:2fBMM_3XZ4L" resolve="fundamentalImages" />
+      <ref role="2SbEIe" node="2fBMM_3XZ4L" resolve="fundamentalImages" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3w$" role="30Gjbg">
       <property role="2SbEId" value="images/ctooling/helloWolrd" />
-      <ref role="2SbEIe" to="1842:2fBMM_3XZ4J" resolve="hwimages" />
+      <ref role="2SbEIe" node="2fBMM_3XZ4J" resolve="hwimages" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3wX" role="30Gjbg">
       <property role="2SbEId" value="images/processSupport" />
-      <ref role="2SbEIe" to="1842:45LXldJZEw7" resolve="imagesProcessSupport" />
+      <ref role="2SbEIe" node="45LXldJZEw7" resolve="imagesProcessSupport" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3xq" role="30Gjbg">
       <property role="2SbEId" value="images/cextensions/statemachines" />
-      <ref role="2SbEIe" to="1842:2fBMM_3XZ4F" resolve="smimages" />
+      <ref role="2SbEIe" node="2fBMM_3XZ4F" resolve="smimages" />
     </node>
     <node concept="1_0j5j" id="Gd6QB8f5OP" role="30Gjbj">
       <ref role="1_0j5g" node="hZfTLLg0H0" resolve="mbeddrUserGuide" />
     </node>
-    <node concept="1_07dB" id="4pE1MOiXbR_" role="30GjaH" />
     <node concept="1jVoCB" id="4pE1MOiXbRA" role="30Gjbi">
       <property role="1jVoCx" value="report" />
       <property role="1xA$Bs" value="true" />
       <property role="43dxY" value="mbeddr-prolog.ltx" />
+    </node>
+    <node concept="1TaS0h" id="2khznRHxBb1" role="30GjaH" />
+  </node>
+  <node concept="2SbYGP" id="2fBMM_3XZ4C">
+    <property role="TrG5h" value="Config" />
+    <property role="3GE5qa" value="" />
+    <node concept="1_07dB" id="4PBxP34YM31" role="2wNnkt" />
+    <node concept="2SbYGw" id="2fBMM_3XZ4D" role="2SbYGa">
+      <property role="TrG5h" value="images" />
+      <node concept="9PVaO" id="OnnrMNolpf" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images" />
+      </node>
+    </node>
+    <node concept="2SbYGw" id="2fBMM_3XZ4F" role="2SbYGa">
+      <property role="TrG5h" value="smimages" />
+      <node concept="9PVaO" id="OnnrMNolpi" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images/cextensions/statemachines" />
+      </node>
+    </node>
+    <node concept="2SbYGw" id="2fBMM_3XZ4H" role="2SbYGa">
+      <property role="TrG5h" value="conceptImages" />
+      <node concept="9PVaO" id="OnnrMNolpl" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images/concepts" />
+      </node>
+    </node>
+    <node concept="2SbYGw" id="2fBMM_3XZ4J" role="2SbYGa">
+      <property role="TrG5h" value="hwimages" />
+      <node concept="9PVaO" id="OnnrMNolpo" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images/ctooling/helloWolrd" />
+      </node>
+    </node>
+    <node concept="2SbYGw" id="2fBMM_3XZ4L" role="2SbYGa">
+      <property role="TrG5h" value="fundamentalImages" />
+      <node concept="9PVaO" id="OnnrMNolpr" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images/fundamentals" />
+      </node>
+    </node>
+    <node concept="2SbYGw" id="45LXldJZEw7" role="2SbYGa">
+      <property role="TrG5h" value="imagesProcessSupport" />
+      <node concept="9PVaO" id="OnnrMNolpu" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images/processSupport" />
+      </node>
+    </node>
+    <node concept="3SH5f5" id="2fBMM_3XZ4N" role="3SH5Mq">
+      <property role="TrG5h" value="width100" />
+      <node concept="3SGHZ$" id="2fBMM_3XZ4O" role="3SH5f7">
+        <property role="3SGHZ_" value="100" />
+      </node>
+    </node>
+    <node concept="3SH5f5" id="2fBMM_3XZ4P" role="3SH5Mq">
+      <property role="TrG5h" value="width80" />
+      <node concept="3SGHZ$" id="2fBMM_3XZ4Q" role="3SH5f7">
+        <property role="3SGHZ_" value="80" />
+      </node>
+    </node>
+    <node concept="2SbYGw" id="2fBMM_3XZ4R" role="Cbewh">
+      <property role="TrG5h" value="vis" />
+      <node concept="9PVaO" id="OnnrMNolpx" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+      </node>
+    </node>
+    <node concept="A7cYH" id="4PBxP34YM2y" role="A10yx">
+      <node concept="9PVaO" id="4PBxP34YM2z" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+      </node>
     </node>
   </node>
 </model>

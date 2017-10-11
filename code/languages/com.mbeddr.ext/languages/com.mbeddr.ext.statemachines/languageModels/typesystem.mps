@@ -2220,7 +2220,7 @@
   </node>
   <node concept="1YbPZF" id="7XSydqoI5x">
     <property role="TrG5h" value="typeof_SmSetStateTarget" />
-    <property role="3GE5qa" value="c-integration.test" />
+    <property role="3GE5qa" value="c-integration" />
     <node concept="3clFbS" id="7XSydqoI5y" role="18ibNy">
       <node concept="1Z5TYs" id="7XSydqoI$i" role="3cqZAp">
         <node concept="mw_s8" id="7XSydqoI$D" role="1ZfhKB">

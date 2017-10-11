@@ -9038,7 +9038,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7XSydqr7WM">
-    <property role="3GE5qa" value="c-integration.test" />
+    <property role="3GE5qa" value="c-integration" />
     <ref role="13h7C2" to="clqz:7XSydqoCpA" resolve="SmSetStateTarget" />
     <node concept="13i0hz" id="7XSydqr7WP" role="13h7CS">
       <property role="TrG5h" value="getTarget" />

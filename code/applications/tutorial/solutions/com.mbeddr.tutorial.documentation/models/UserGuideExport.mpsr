@@ -2,11 +2,11 @@
 <model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" implicit="true" />
+    <import index="ntnz" ref="r:7f372397-146b-40d5-9f20-607974c4fed4(com.mbeddr.tutorial.documentation.ug._main)" implicit="true" />
   </imports>
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
-      <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
       <concept id="6386504476136554612" name="com.mbeddr.doc.structure.PathMapping" flags="ng" index="2SbEIf">
@@ -44,25 +44,25 @@
     <property role="WqcPg" value="export Test" />
     <node concept="2SbEIf" id="Gd6QB8m3nB" role="30Gjbg">
       <property role="2SbEId" value="_image" />
-      <ref role="2SbEIe" to="1842:2fBMM_3XZ4D" resolve="images" />
+      <ref role="2SbEIe" to="ntnz:2fBMM_3XZ4D" resolve="images" />
     </node>
     <node concept="2SbEIf" id="Gd6QB8m3nF" role="30Gjbg">
       <property role="2SbEId" value="_vis" />
-      <ref role="2SbEIe" to="1842:2fBMM_3XZ4R" resolve="vis" />
+      <ref role="2SbEIe" to="ntnz:2fBMM_3XZ4R" resolve="vis" />
     </node>
     <node concept="2SbEIf" id="Gd6QB8m3nN" role="30Gjbg">
       <property role="2SbEId" value="_smimages" />
-      <ref role="2SbEIe" to="1842:2fBMM_3XZ4F" resolve="smimages" />
+      <ref role="2SbEIe" to="ntnz:2fBMM_3XZ4F" resolve="smimages" />
     </node>
     <node concept="1_0j5j" id="5Z6oVUve9Ds" role="30Gjbj">
       <ref role="1_0j5g" node="1OEOMspkYrg" resolve="Z_CHAPTER_CExtensions" />
     </node>
-    <node concept="1_07dB" id="Gd6QB8irkt" role="30GjaH" />
     <node concept="1jVoCB" id="Gd6QB8irku" role="30Gjbi">
       <property role="1jVoCx" value="article" />
       <property role="1xA$Bs" value="true" />
       <property role="43dxY" value="/Users/nikostotz/git/mbeddr.core/code/languages/com.mbeddr.doc/latex-support/mbeddr-prolog.ltx" />
     </node>
+    <node concept="1TaS0h" id="5V9QM6osbIa" role="30GjaH" />
   </node>
 </model>
 
