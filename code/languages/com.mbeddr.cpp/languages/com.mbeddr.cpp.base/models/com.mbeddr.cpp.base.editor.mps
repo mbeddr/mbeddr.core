@@ -5,6 +5,9 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="b4f35ed8-45af-4efa-abe4-00ac26956e69" name="com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -138,8 +141,8 @@
   <node concept="24kQdi" id="4o2nsMgBCkM">
     <ref role="1XX52x" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
     <node concept="3EZMnI" id="3v5DuFDnNFt" role="2wV5jI">
-      <node concept="3F0A7n" id="3v5DuFDnNFB" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
+      <node concept="PMmxH" id="59MAV0ydrUB" role="3EZMnx">
+        <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
       </node>
       <node concept="PMmxH" id="3v5DuFDoxUa" role="3EZMnx">
         <ref role="PMmxG" node="3v5DuFDr9bv" resolve="methodSignature" />
@@ -231,8 +234,8 @@
   <node concept="24kQdi" id="4o2nsMgBIrp">
     <ref role="1XX52x" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
     <node concept="3EZMnI" id="4o2nsMgBJ4d" role="2wV5jI">
-      <node concept="3F0A7n" id="3v5DuFDsrLQ" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
+      <node concept="PMmxH" id="59MAV0yaZs9" role="3EZMnx">
+        <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
       </node>
       <node concept="l2Vlx" id="4o2nsMgBJ4g" role="2iSdaV" />
       <node concept="3F1sOY" id="3v5DuFDsWjm" role="3EZMnx">
@@ -364,6 +367,13 @@
       <node concept="2$oqgb" id="2$xXL4Hmq4q" role="3F10Kt">
         <ref role="Bvoe9" to="cl6c:2$xXL4HmqJz" resolve="FunctionLikeParameterHint" />
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="59MAV0yaZn2">
+    <property role="TrG5h" value="VisibilityFlag" />
+    <ref role="1XX52x" to="wnzg:4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
+    <node concept="3F0A7n" id="59MAV0ycZT1" role="2wV5jI">
+      <ref role="1NtTu8" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
     </node>
   </node>
 </model>
