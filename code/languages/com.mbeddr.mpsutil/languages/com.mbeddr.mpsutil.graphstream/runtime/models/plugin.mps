@@ -469,6 +469,9 @@
         <child id="1205679832066" name="ascending" index="2S7zOq" />
       </concept>
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
+        <child id="4611582986551314344" name="requestedType" index="UnYnz" />
+      </concept>
       <concept id="1171391069720" name="jetbrains.mps.baseLanguage.collections.structure.GetIndexOfOperation" flags="nn" index="2WmjW8" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
@@ -3752,7 +3755,7 @@
                   <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
                   <node concept="2YIFZM" id="6x5UxX393lD" role="37wK5m">
                     <ref role="37wK5l" node="6x5UxX38Zw_" resolve="convert" />
-                    <ref role="1Pybhc" node="6x5UxX38YmZ" resolve="AttachmentsToHTML" />
+                    <ref role="1Pybhc" node="6x5UxX38YmZ" resolve="TablularAttachmentsToHTML" />
                     <node concept="37vLTw" id="6x5UxX393xz" role="37wK5m">
                       <ref role="3cqZAo" node="6x5UxX36b7$" resolve="v" />
                     </node>
@@ -5192,27 +5195,47 @@
   </node>
   <node concept="312cEu" id="6x5UxX38YmZ">
     <property role="3GE5qa" value="view.graphviz" />
-    <property role="TrG5h" value="AttachmentsToHTML" />
+    <property role="TrG5h" value="TablularAttachmentsToHTML" />
     <node concept="2YIFZL" id="6x5UxX38Zw_" role="jymVt">
       <property role="TrG5h" value="convert" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="6x5UxX38ZwC" role="3clF47">
-        <node concept="3cpWs8" id="6x5UxX39rYT" role="3cqZAp">
-          <node concept="3cpWsn" id="6x5UxX39rYW" role="3cpWs9">
-            <property role="TrG5h" value="attachments" />
-            <node concept="A3Dl8" id="6x5UxX39rYQ" role="1tU5fm">
-              <node concept="3uibUv" id="6x5UxX39sic" role="A3Ik2">
-                <ref role="3uigEE" to="5svn:~Attachment" resolve="Attachment" />
+        <node concept="3cpWs8" id="2Bnb59bHINR" role="3cqZAp">
+          <node concept="3cpWsn" id="2Bnb59bHINS" role="3cpWs9">
+            <property role="TrG5h" value="allAttachments" />
+            <node concept="A3Dl8" id="2Bnb59bHINT" role="1tU5fm">
+              <node concept="3uibUv" id="2Bnb59bHINU" role="A3Ik2">
+                <ref role="3uigEE" to="5svn:~AttachmentBase" resolve="AttachmentBase" />
               </node>
             </node>
-            <node concept="2OqwBi" id="6x5UxX39s$R" role="33vP2m">
-              <node concept="37vLTw" id="6x5UxX39sna" role="2Oq$k0">
+            <node concept="2OqwBi" id="2Bnb59bHINV" role="33vP2m">
+              <node concept="37vLTw" id="2Bnb59bHINW" role="2Oq$k0">
                 <ref role="3cqZAo" node="6x5UxX38ZBe" resolve="v" />
               </node>
-              <node concept="liA8E" id="6x5UxX39t7c" role="2OqNvi">
+              <node concept="liA8E" id="2Bnb59bHINX" role="2OqNvi">
                 <ref role="37wK5l" to="5svn:~Vertex.getAttachments():java.util.List" resolve="getAttachments" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6x5UxX39rYT" role="3cqZAp">
+          <node concept="3cpWsn" id="6x5UxX39rYW" role="3cpWs9">
+            <property role="TrG5h" value="tabularAttachments" />
+            <node concept="A3Dl8" id="6x5UxX39rYQ" role="1tU5fm">
+              <node concept="3uibUv" id="6gx$b_Ai34" role="A3Ik2">
+                <ref role="3uigEE" to="5svn:~TabularAttachment" resolve="TabularAttachment" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2Bnb59bHRgh" role="33vP2m">
+              <node concept="37vLTw" id="2Bnb59bHQk6" role="2Oq$k0">
+                <ref role="3cqZAo" node="2Bnb59bHINS" resolve="allAttachments" />
+              </node>
+              <node concept="UnYns" id="2Bnb59bHSdK" role="2OqNvi">
+                <node concept="3uibUv" id="6gx$b_Am6g" role="UnYnz">
+                  <ref role="3uigEE" to="5svn:~TabularAttachment" resolve="TabularAttachment" />
+                </node>
               </node>
             </node>
           </node>
@@ -5254,7 +5277,7 @@
               </node>
               <node concept="2OqwBi" id="6x5UxX39RDb" role="3uHU7B">
                 <node concept="37vLTw" id="6x5UxX39RDc" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6x5UxX39rYW" resolve="attachments" />
+                  <ref role="3cqZAo" node="6x5UxX39rYW" resolve="tabularAttachments" />
                 </node>
                 <node concept="1MD8d$" id="6x5UxX39RDd" role="2OqNvi">
                   <node concept="1bVj0M" id="6x5UxX39RDe" role="23t8la">
@@ -5266,7 +5289,7 @@
                               <ref role="3cqZAo" node="6x5UxX39RDt" resolve="it" />
                             </node>
                             <node concept="liA8E" id="6x5UxX39RDk" role="2OqNvi">
-                              <ref role="37wK5l" to="5svn:~Attachment.getRowIndex():int" resolve="getRowIndex" />
+                              <ref role="37wK5l" to="5svn:~TabularAttachment.getRowIndex():int" resolve="getRowIndex" />
                             </node>
                           </node>
                           <node concept="37vLTw" id="6x5UxX39RDl" role="3K4GZi">
@@ -5281,7 +5304,7 @@
                                 <ref role="3cqZAo" node="6x5UxX39RDt" resolve="it" />
                               </node>
                               <node concept="liA8E" id="6x5UxX39RDq" role="2OqNvi">
-                                <ref role="37wK5l" to="5svn:~Attachment.getRowIndex():int" resolve="getRowIndex" />
+                                <ref role="37wK5l" to="5svn:~TabularAttachment.getRowIndex():int" resolve="getRowIndex" />
                               </node>
                             </node>
                           </node>
@@ -5412,7 +5435,7 @@
                             <ref role="2Gs0qQ" node="6x5UxX3ahEb" resolve="a" />
                           </node>
                           <node concept="liA8E" id="6x5UxX3cdUN" role="2OqNvi">
-                            <ref role="37wK5l" to="5svn:~Attachment.getColSpan():int" resolve="getColSpan" />
+                            <ref role="37wK5l" to="5svn:~TabularAttachment.getColSpan():int" resolve="getColSpan" />
                           </node>
                         </node>
                       </node>
@@ -5447,7 +5470,7 @@
                             <ref role="2Gs0qQ" node="6x5UxX3ahEb" resolve="a" />
                           </node>
                           <node concept="liA8E" id="6x5UxX3cihv" role="2OqNvi">
-                            <ref role="37wK5l" to="5svn:~Attachment.getRowSpan():int" resolve="getRowSpan" />
+                            <ref role="37wK5l" to="5svn:~TabularAttachment.getRowSpan():int" resolve="getRowSpan" />
                           </node>
                         </node>
                       </node>
@@ -5653,7 +5676,7 @@
               <node concept="2OqwBi" id="6x5UxX3aq4v" role="2GsD0m">
                 <node concept="2OqwBi" id="6x5UxX3aq4w" role="2Oq$k0">
                   <node concept="37vLTw" id="6x5UxX3aq4x" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6x5UxX39rYW" resolve="attachments" />
+                    <ref role="3cqZAo" node="6x5UxX39rYW" resolve="tabularAttachments" />
                   </node>
                   <node concept="3zZkjj" id="6x5UxX3aq4y" role="2OqNvi">
                     <node concept="1bVj0M" id="6x5UxX3aq4z" role="23t8la">
@@ -5668,7 +5691,7 @@
                                 <ref role="3cqZAo" node="6x5UxX3aq4F" resolve="it" />
                               </node>
                               <node concept="liA8E" id="6x5UxX3aq4E" role="2OqNvi">
-                                <ref role="37wK5l" to="5svn:~Attachment.getRowIndex():int" resolve="getRowIndex" />
+                                <ref role="37wK5l" to="5svn:~TabularAttachment.getRowIndex():int" resolve="getRowIndex" />
                               </node>
                             </node>
                           </node>
@@ -5690,7 +5713,7 @@
                             <ref role="3cqZAo" node="6x5UxX3aq4O" resolve="it" />
                           </node>
                           <node concept="liA8E" id="6x5UxX3aq4N" role="2OqNvi">
-                            <ref role="37wK5l" to="5svn:~Attachment.getColIndex():int" resolve="getColIndex" />
+                            <ref role="37wK5l" to="5svn:~TabularAttachment.getColIndex():int" resolve="getColIndex" />
                           </node>
                         </node>
                       </node>
