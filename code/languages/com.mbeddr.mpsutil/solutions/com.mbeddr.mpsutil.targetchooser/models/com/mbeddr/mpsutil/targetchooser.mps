@@ -858,6 +858,27 @@
         <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
     </node>
+    <node concept="2tJIrI" id="5nMUAz4WCfd" role="jymVt" />
+    <node concept="3clFb_" id="5nMUAz4WDKA" role="jymVt">
+      <property role="TrG5h" value="getPreferredFocusedComponent" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="2AHcQZ" id="5nMUAz4WDKB" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="5nMUAz4WDKC" role="3clF47">
+        <node concept="3cpWs6" id="5nMUAz4WDKD" role="3cqZAp">
+          <node concept="1rXfSq" id="5nMUAz4WOcc" role="3cqZAk">
+            <ref role="37wK5l" node="72neNfy7reN" resolve="getTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5nMUAz4WDKF" role="1B3o_S" />
+      <node concept="3uibUv" id="5nMUAz4WDKG" role="3clF45">
+        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5nMUAz4WCYc" role="jymVt" />
     <node concept="2tJIrI" id="72neNfy7prp" role="jymVt" />
     <node concept="3clFb_" id="72neNfy7reN" role="jymVt">
       <property role="TrG5h" value="getTree" />
