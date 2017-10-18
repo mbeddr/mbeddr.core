@@ -762,6 +762,21 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="hoMN8EU$FP" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getReadableDescription" />
+      <ref role="13i0hy" to="hwgx:hoMN8EUxzt" resolve="getReadableDescription" />
+      <node concept="3Tm1VV" id="hoMN8EU$FQ" role="1B3o_S" />
+      <node concept="3clFbS" id="hoMN8EU$FT" role="3clF47">
+        <node concept="3clFbF" id="hoMN8EUDxR" role="3cqZAp">
+          <node concept="Xl_RD" id="hoMN8EUDxQ" role="3clFbG">
+            <property role="Xl_RC" value="Build Configuration" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="hoMN8EU$FU" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="Dp4TemBUyr">
     <property role="3GE5qa" value="binary" />

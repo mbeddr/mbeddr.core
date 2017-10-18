@@ -23610,5 +23610,20 @@
       <node concept="3clFbS" id="1S6A2cmQVtP" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="hoMN8EUw04">
+    <property role="3GE5qa" value="documentation" />
+    <ref role="13h7C2" to="vs0r:hoMN8ESh5l" resolve="ICannotLiveInDocModel" />
+    <node concept="13i0hz" id="hoMN8EUxzt" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getReadableDescription" />
+      <node concept="3Tm1VV" id="hoMN8EUxzu" role="1B3o_S" />
+      <node concept="17QB3L" id="hoMN8EUz$A" role="3clF45" />
+      <node concept="3clFbS" id="hoMN8EUxzw" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="hoMN8EUw05" role="13h7CW">
+      <node concept="3clFbS" id="hoMN8EUw06" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

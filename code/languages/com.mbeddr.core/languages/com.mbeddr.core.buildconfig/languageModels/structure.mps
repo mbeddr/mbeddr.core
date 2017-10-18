@@ -114,6 +114,9 @@
     <node concept="PrWs8" id="3s1LyzGjAbU" role="PzmwI">
       <ref role="PrY4T" to="i2y7:3s1LyzGfrMH" resolve="IMakePathProviderContainer" />
     </node>
+    <node concept="PrWs8" id="hoMN8ESh5z" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:hoMN8ESh5l" resolve="ICannotLiveInDocModel" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6GqYvBOf2Xb">
     <property role="TrG5h" value="ModuleRef" />
