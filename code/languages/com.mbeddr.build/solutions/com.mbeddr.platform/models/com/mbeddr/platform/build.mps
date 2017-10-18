@@ -351,6 +351,34 @@
         <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
       </node>
     </node>
+    <node concept="m$_wf" id="hCVXosGNJH" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.modellisteners" />
+      <node concept="3_J27D" id="hCVXosGNJJ" role="m$_yQ">
+        <node concept="3Mxwew" id="hCVXosGSiq" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.modellisteners" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="hCVXosGNJL" role="m_cZH">
+        <node concept="3Mxwew" id="hCVXosGSis" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.modellisteners" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="hCVXosGNJN" role="m$_w8">
+        <node concept="3Mxwey" id="hCVXosGTqW" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="hCVXosGQ1s" role="m$_yh">
+        <ref role="m$f5T" node="3quoVcnHjIe" resolve="com.mbeddr.mpsutil.modellisteners" />
+      </node>
+      <node concept="m$_yC" id="hCVXosGUzs" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="2iUeEo" id="hCVXosGWPj" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com" />
+      </node>
+    </node>
     <node concept="m$_wf" id="7uZw0yZ2_Jq" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil" />
       <node concept="m$_yC" id="70BL6LoGNLc" role="m$_yJ">
@@ -443,9 +471,6 @@
       </node>
       <node concept="m$f5U" id="5l4WPWBt2QY" role="m$_yh">
         <ref role="m$f5T" node="5l4WPWBsSaB" resolve="com.mbeddr.mpsutil.editingGuide.devkit" />
-      </node>
-      <node concept="m$f5U" id="3quoVcnS5hK" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnHjIe" resolve="com.mbeddr.mpsutil.modellisteners" />
       </node>
       <node concept="m$f5U" id="3quoVcnS5jC" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnL8hF" resolve="com.mbeddr.mpsutil.plantuml" />
@@ -15202,6 +15227,9 @@
       </node>
       <node concept="m$_wl" id="4mEgncq7xWr" role="39821P">
         <ref role="m_rDy" node="4mEgncq7aaz" resolve="com.mbeddr.mpsutil.xmlImport" />
+      </node>
+      <node concept="m$_wl" id="hCVXosGXXN" role="39821P">
+        <ref role="m_rDy" node="hCVXosGNJH" resolve="com.mbeddr.mpsutil.modellisteners" />
       </node>
       <node concept="398223" id="pdbBRzg10k" role="39821P">
         <node concept="3_J27D" id="pdbBRzg10m" role="Nbhlr">
