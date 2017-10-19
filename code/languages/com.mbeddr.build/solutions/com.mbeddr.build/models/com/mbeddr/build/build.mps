@@ -3752,6 +3752,12 @@
               <ref role="3bR37D" node="7uZw0yZ43K6" resolve="com.mbeddr.core.modules.gen" />
             </node>
           </node>
+          <node concept="1SiIV0" id="2J_yKI8PXvG" role="3bR37C">
+            <node concept="3bR9La" id="2J_yKI8PXvH" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="3xxBtygh0L0" role="3bR37C">
           <node concept="3bR9La" id="3xxBtygh0L1" role="1SiIV1">
