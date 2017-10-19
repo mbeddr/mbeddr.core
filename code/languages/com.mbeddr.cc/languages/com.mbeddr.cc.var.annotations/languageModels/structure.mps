@@ -77,6 +77,9 @@
     <node concept="PrWs8" id="5DBke2vxOrf" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
     </node>
+    <node concept="PrWs8" id="36vfsFTONxp" role="PzmwI">
+      <ref role="PrY4T" node="6OO5J4wxqcd" resolve="IConditionalAnnotation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="$GQ7u4ko40">
     <property role="3GE5qa" value="programannotations" />
@@ -290,9 +293,6 @@
       <property role="IQ2ns" value="1743289240543947593" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
-    <node concept="PrWs8" id="6OO5J4wxqch" role="PzmwI">
-      <ref role="PrY4T" node="6OO5J4wxqcd" resolve="IConditionalAnnotation" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5DBke2vwmTj">
     <property role="TrG5h" value="VariabilityConfigItem" />
@@ -325,6 +325,9 @@
       <node concept="trNpa" id="6ixWMI$2kAC" role="EQaZv">
         <ref role="trN6q" to="tpck:h0TrEE$" resolve="INamedConcept" />
       </node>
+    </node>
+    <node concept="PrWs8" id="36vfsFTOPxJ" role="PzmwI">
+      <ref role="PrY4T" node="6OO5J4wxqcd" resolve="IConditionalAnnotation" />
     </node>
   </node>
   <node concept="1TIwiD" id="6ixWMIzApPv">

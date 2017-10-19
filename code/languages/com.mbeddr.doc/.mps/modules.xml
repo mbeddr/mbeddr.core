@@ -4,6 +4,8 @@
     <projectModules>
       <modulePath path="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.doc.dev.build/com.mbeddr.doc.dev.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.documentation/com.mbeddr.documentation.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.expressions/com.mbeddr.doc.expressions.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_latex/com.mbeddr.doc.gen_latex.mpl" folder="lang" />
@@ -20,6 +22,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.slides.sandbox/com.mbeddr.doc.slides.sandbox.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.doc.test.documents/com.mbeddr.doc.test.documents.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.spreadsheat.sandbox/com.mbeddr.spreadsheat.sandbox.msd" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/tests/tests.ts.doc/tests.ts.doc.msd" folder="" />
     </projectModules>
   </component>
 </project>

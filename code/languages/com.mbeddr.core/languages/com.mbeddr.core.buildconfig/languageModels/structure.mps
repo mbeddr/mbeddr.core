@@ -117,6 +117,9 @@
     <node concept="PrWs8" id="6FvlwAlLzOe" role="PzmwI">
       <ref role="PrY4T" to="68mc:51aJIRsy1$U" resolve="IPathVariableProvider" />
     </node>
+    <node concept="PrWs8" id="59MAV0ygvy9" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:hoMN8ESh5l" resolve="ICannotLiveInDocModel" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6GqYvBOf2Xb">
     <property role="TrG5h" value="ModuleRef" />
@@ -620,16 +623,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="PlHQZ" id="4_vItr5czAZ">
-    <property role="EcuMT" value="5287148819638794687" />
-    <property role="TrG5h" value="IHostTargetAwarePicker" />
-  </node>
-  <node concept="1TIwiD" id="1hPQTEM4W9y">
-    <property role="EcuMT" value="1474325910492791394" />
-    <property role="TrG5h" value="MakeTimeDirPicker" />
-    <property role="34LRSv" value="make time dir picker" />
-    <ref role="1TJDcQ" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
-  </node>
   <node concept="1TIwiD" id="6eRyKv6L44j">
     <property role="EcuMT" value="7185364596008698131" />
     <property role="TrG5h" value="ModelInfo" />
@@ -644,6 +637,16 @@
       <property role="TrG5h" value="outputLocation" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="4_vItr5czAZ">
+    <property role="EcuMT" value="5287148819638794687" />
+    <property role="TrG5h" value="IHostTargetAwarePicker" />
+  </node>
+  <node concept="1TIwiD" id="1hPQTEM4W9y">
+    <property role="EcuMT" value="1474325910492791394" />
+    <property role="TrG5h" value="MakeTimeDirPicker" />
+    <property role="34LRSv" value="make time dir picker" />
+    <ref role="1TJDcQ" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
   </node>
 </model>
 

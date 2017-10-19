@@ -102,7 +102,6 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -3156,14 +3155,6 @@
   <node concept="13h7C7" id="6OO5J4won7S">
     <property role="3GE5qa" value="programannotations" />
     <ref role="13h7C2" to="qdv7:6OO5J4wolUA" resolve="IMayNotBeConditionallyReplaced" />
-    <node concept="13i0hz" id="6OO5J4won83" role="13h7CS">
-      <property role="13i0iv" value="true" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getReason" />
-      <node concept="3Tm1VV" id="6OO5J4won84" role="1B3o_S" />
-      <node concept="17QB3L" id="6OO5J4wonlU" role="3clF45" />
-      <node concept="3clFbS" id="6OO5J4won86" role="3clF47" />
-    </node>
     <node concept="13i0hz" id="6OO5J4wC_AZ" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />

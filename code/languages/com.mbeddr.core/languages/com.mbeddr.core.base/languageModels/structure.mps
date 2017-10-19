@@ -1959,5 +1959,10 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="PlHQZ" id="hoMN8ESh5l">
+    <property role="EcuMT" value="313223590430445909" />
+    <property role="3GE5qa" value="documentation" />
+    <property role="TrG5h" value="ICannotLiveInDocModel" />
+  </node>
 </model>
 
