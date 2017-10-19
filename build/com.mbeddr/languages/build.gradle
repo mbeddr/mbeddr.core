@@ -62,16 +62,16 @@ task copy_logConfig(type: Copy, dependsOn: ':build:com.mbeddr:platform:copy_allS
 task install_spawner(type: Copy, dependsOn: build_spawner) {
     from "$rootDir/artifacts/spawner/"
     include "mbeddr.spawner/"
-    into "$mpsUserConfigDir/plugins"
+    into "$mpsPluginsDir"
 }
 
 task install(dependsOn: [install_spawner, ':build:com.mbeddr:platform:install_sl_all_nativelibs', ':build:com.mbeddr:platform:install_actionsfilter']) {}
 
 gradle.taskGraph.whenReady {taskGraph ->
     if (taskGraph.hasTask(install)) {
-        println "Installing required mbeddr plugins to '$mpsUserConfigDir/plugins'"
+        println "Installing required mbeddr plugins to '$mpsPluginsDir'"
         if (!project.hasProperty("MPS_PATHS_SELECTOR")) {
-            println "To change '.MPS<>' part, pass MPS_PATHS_SELECTOR property to gradle with -PMPS_PATHS_SELECTOR=<custom path selectot>"
+            println "To change 'MPS<>' part, pass MPS_PATHS_SELECTOR property to gradle with -PMPS_PATHS_SELECTOR=<custom path selectot>"
         }
     }
 }

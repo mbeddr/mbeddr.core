@@ -49,7 +49,7 @@ task copy_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
 task install_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
     from "$rootDir/artifacts/mps-sl-all/"
     include "de.itemis.mps.nativelibs.loader/"
-    into "$mpsUserConfigDir/plugins"
+    into "$mpsPluginsDir"
 }
 
 
@@ -61,7 +61,7 @@ task build_platform(type: BuildLanguages, dependsOn: copy_sl_all_nativelibs) {
 task install_actionsfilter(type: Copy, dependsOn: build_platform) {
     from "$rootDir/artifacts/com.mbeddr.platform/"
     include "com.mbeddr.mpsutil.actionsfilter/"
-    into "$mpsUserConfigDir/plugins"
+    into "$mpsPluginsDir"
 }
 
 task test_mbeddr_platform(type: TestLanguages, dependsOn: build_platform) {
