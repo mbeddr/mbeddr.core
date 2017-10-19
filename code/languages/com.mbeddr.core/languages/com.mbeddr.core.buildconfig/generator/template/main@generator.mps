@@ -23,11 +23,14 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="itvd" ref="r:dada7e41-3b5e-4551-8ce8-e06186d667c8(com.mbeddr.core.modules.gen.rt.runtime)" />
+    <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -336,9 +339,6 @@
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
-        <reference id="3562215692195600259" name="link" index="13MTZf" />
-      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -2925,10 +2925,6 @@
       <property role="TrG5h" value="OBJODIR" />
       <property role="3G5mJX" value=" ./bin" />
     </node>
-    <node concept="3G52F3" id="56KIRAx7DMF" role="12RR68">
-      <property role="TrG5h" value="EXTERNALSOURCESTARGET" />
-      <property role="3G5mJX" value="compileExternalSources" />
-    </node>
     <node concept="12Nxi1" id="2Rx8UqeMqzj" role="12RR68" />
     <node concept="3O_Fa1" id="2Rx8UqeMqzk" role="12RR68">
       <property role="3O_Fa2" value="Main" />
@@ -5349,105 +5345,6 @@
       </node>
     </node>
     <node concept="12Nxi1" id="42NvuOOVzBV" role="12RR68" />
-    <node concept="12Nxi1" id="3YIp25rt6ck" role="12RR68" />
-    <node concept="12Nxi1" id="3YIp25rsQzf" role="12RR68" />
-    <node concept="3O_Fa1" id="56KIRAx0xaB" role="12RR68">
-      <property role="3O_Fa2" value="$(EXTERNALSOURCESTARGET)" />
-      <node concept="3O_FaX" id="56KIRAx0M$v" role="3O_FaS">
-        <node concept="3G69iQ" id="56KIRAx0M$_" role="3G69ia">
-          <property role="3G69iL" value="for file in C:/CImport01/solutions/ThermalModel/CCode/*.c; do\" />
-          <node concept="17Uvod" id="56KIRAx8Iyt" role="lGtFl">
-            <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211590947/3373914745211590948" />
-            <property role="2qtEX9" value="text" />
-            <node concept="3zFVjK" id="56KIRAx8Iyu" role="3zH0cK">
-              <node concept="3clFbS" id="56KIRAx8Iyv" role="2VODD2">
-                <node concept="3cpWs8" id="56KIRAxenTN" role="3cqZAp">
-                  <node concept="3cpWsn" id="56KIRAxenTQ" role="3cpWs9">
-                    <property role="TrG5h" value="searchPath" />
-                    <node concept="17QB3L" id="56KIRAxenTL" role="1tU5fm" />
-                    <node concept="3cpWs3" id="56KIRAxbY1c" role="33vP2m">
-                      <node concept="2OqwBi" id="56KIRAx8Q5f" role="3uHU7w">
-                        <node concept="30H73N" id="56KIRAx8PNe" role="2Oq$k0" />
-                        <node concept="3TrcHB" id="56KIRAx8QFe" role="2OqNvi">
-                          <ref role="3TsBF5" to="51wr:51p726V_PmM" resolve="namePattern" />
-                        </node>
-                      </node>
-                      <node concept="3cpWs3" id="56KIRAx8Pzw" role="3uHU7B">
-                        <node concept="2OqwBi" id="56KIRAx8MBs" role="3uHU7B">
-                          <node concept="30H73N" id="56KIRAx8MlP" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="56KIRAx8MWZ" role="2OqNvi">
-                            <ref role="37wK5l" to="ahli:5lP9ZVaAXK7" resolve="getFullPath" />
-                          </node>
-                        </node>
-                        <node concept="10M0yZ" id="56KIRAxbYBL" role="3uHU7w">
-                          <ref role="3cqZAo" to="guwi:~File.separatorChar" resolve="separatorChar" />
-                          <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="56KIRAxevdj" role="3cqZAp">
-                  <node concept="3cpWs3" id="56KIRAxeKgp" role="3clFbG">
-                    <node concept="3cpWs3" id="56KIRAxew$V" role="3uHU7B">
-                      <node concept="Xl_RD" id="56KIRAxevdl" role="3uHU7B">
-                        <property role="Xl_RC" value="for file in " />
-                      </node>
-                      <node concept="2OqwBi" id="56KIRAxexX0" role="3uHU7w">
-                        <node concept="37vLTw" id="56KIRAxex8r" role="2Oq$k0">
-                          <ref role="3cqZAo" node="56KIRAxenTQ" resolve="searchPath" />
-                        </node>
-                        <node concept="liA8E" id="56KIRAxezjs" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
-                          <node concept="Xl_RD" id="56KIRAxe$rK" role="37wK5m">
-                            <property role="Xl_RC" value="\\" />
-                          </node>
-                          <node concept="Xl_RD" id="56KIRAxeC2C" role="37wK5m">
-                            <property role="Xl_RC" value="/" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="56KIRAxeOlf" role="3uHU7w">
-                      <property role="Xl_RC" value="; do\\" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbH" id="56KIRAxeuDh" role="3cqZAp" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3G69iQ" id="56KIRAx0M$Z" role="3G69ia">
-          <property role="3G69iL" value="    echo &quot;$(CC) $(CFLAGS) -c -o $(OBJODIR)/$$(basename $$file .c).o $$file&quot;;\" />
-        </node>
-        <node concept="3G69iQ" id="56KIRAx0M_c" role="3G69ia">
-          <property role="3G69iL" value="    $(CC) $(CFLAGS) -c -o $(OBJODIR)/$$(basename $$file .c).o $$file;\" />
-        </node>
-        <node concept="3G69iQ" id="56KIRAx0M_t" role="3G69ia">
-          <property role="3G69iL" value="done" />
-        </node>
-        <node concept="1WS0z7" id="56KIRAx8$yP" role="lGtFl">
-          <node concept="3JmXsc" id="56KIRAx8$yS" role="3Jn$fo">
-            <node concept="3clFbS" id="56KIRAx8$yT" role="2VODD2">
-              <node concept="3clFbF" id="56KIRAx8$yZ" role="3cqZAp">
-                <node concept="2OqwBi" id="56KIRAx8Bpe" role="3clFbG">
-                  <node concept="2OqwBi" id="56KIRAx8$yU" role="2Oq$k0">
-                    <node concept="3Tsc0h" id="56KIRAx8$yX" role="2OqNvi">
-                      <ref role="3TtcxE" to="51wr:4o9sgv8R$fb" resolve="binaries" />
-                    </node>
-                    <node concept="30H73N" id="56KIRAx8$yY" role="2Oq$k0" />
-                  </node>
-                  <node concept="13MTOL" id="56KIRAx8Im4" role="2OqNvi">
-                    <ref role="13MTZf" to="51wr:51p726V_PmD" resolve="externalSources" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="12Nxi1" id="42NvuOOVexc" role="12RR68" />
     <node concept="12Nxi1" id="2Rx8UqeMqEA" role="12RR68" />
     <node concept="3O_Fa1" id="2Rx8UqeMqEB" role="12RR68">
@@ -5629,16 +5526,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="56KIRAx7sgm" role="3cqZAp">
-                <node concept="d57v9" id="56KIRAx7t$c" role="3clFbG">
-                  <node concept="Xl_RD" id="56KIRAx7ueR" role="37vLTx">
-                    <property role="Xl_RC" value=" $(EXTERNALSOURCESTARGET)" />
-                  </node>
-                  <node concept="37vLTw" id="56KIRAx7sgk" role="37vLTJ">
-                    <ref role="3cqZAo" node="33Md2MBWekh" resolve="result" />
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="33Md2MBWgL4" role="3cqZAp">
                 <node concept="37vLTw" id="33Md2MBWgL2" role="3clFbG">
                   <ref role="3cqZAo" node="33Md2MBWekh" resolve="result" />
@@ -5727,7 +5614,7 @@
                         <node concept="3cpWs3" id="2Rx8UqeMqEZ" role="3uHU7B">
                           <node concept="3cpWs3" id="2Rx8UqeMqF0" role="3uHU7B">
                             <node concept="Xl_RD" id="2Rx8UqeMqF1" role="3uHU7B">
-                              <property role="Xl_RC" value="$(Q) $(CC) $(LDFLAGS) -o $@ $(OBJODIR)/*.o $(EXT_LIBDIR_FLAGS_" />
+                              <property role="Xl_RC" value="$(Q) $(CC) $(LDFLAGS) -o $@ $^ $(EXT_LIBDIR_FLAGS_" />
                             </node>
                             <node concept="2OqwBi" id="2Rx8UqeMqF2" role="3uHU7w">
                               <node concept="30H73N" id="2Rx8UqeMqF3" role="2Oq$k0" />
@@ -5871,7 +5758,7 @@
               <node concept="3clFbS" id="2b2D8jTWBN3" role="2VODD2">
                 <node concept="3clFbF" id="2b2D8jTWE4T" role="3cqZAp">
                   <node concept="Xl_RD" id="1d4J0utA2tj" role="3clFbG">
-                    <property role="Xl_RC" value="$(Q) $(AR) $(ARFLAGS) $@ $(OBJODIR)/*.o" />
+                    <property role="Xl_RC" value="$(Q) $(AR) $(ARFLAGS) $@ $^" />
                   </node>
                 </node>
               </node>
@@ -6146,16 +6033,6 @@
                   <node concept="30H73N" id="33Md2MBWnO2" role="2Oq$k0" />
                   <node concept="2qgKlT" id="33Md2MBWnO3" role="2OqNvi">
                     <ref role="37wK5l" to="ahli:7RiewQ_lHPf" resolve="referencedImplModules" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="56KIRAxcScJ" role="3cqZAp">
-                <node concept="d57v9" id="56KIRAxcScK" role="3clFbG">
-                  <node concept="Xl_RD" id="56KIRAxcScL" role="37vLTx">
-                    <property role="Xl_RC" value=" $(EXTERNALSOURCESTARGET)" />
-                  </node>
-                  <node concept="37vLTw" id="56KIRAxcScM" role="37vLTJ">
-                    <ref role="3cqZAo" node="33Md2MBWnMT" resolve="result" />
                   </node>
                 </node>
               </node>
