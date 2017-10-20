@@ -1213,42 +1213,5 @@
       <ref role="1YaFvo" to="2c95:5mf_X_Lbqjw" resolve="DocumentInclude" />
     </node>
   </node>
-  <node concept="18kY7G" id="10MSw5ZQLuO">
-    <property role="TrG5h" value="check_SectRefWord" />
-    <property role="3GE5qa" value="words" />
-    <node concept="3clFbS" id="10MSw5ZQLuP" role="18ibNy">
-      <node concept="2Mj0R9" id="10MSw5ZQLuV" role="3cqZAp">
-        <node concept="17R0WA" id="10MSw5ZQLuW" role="2MkoU_">
-          <node concept="2OqwBi" id="10MSw5ZQLv4" role="3uHU7B">
-            <node concept="2OqwBi" id="10MSw5ZQLUt" role="2Oq$k0">
-              <node concept="1YBJjd" id="10MSw5ZQLBi" role="2Oq$k0">
-                <ref role="1YBMHb" node="10MSw5ZQLuR" resolve="sectRefWord" />
-              </node>
-              <node concept="3TrEf2" id="10MSw5ZQM8N" role="2OqNvi">
-                <ref role="3Tt5mk" to="2c95:2TZO3DbvhAJ" resolve="target" />
-              </node>
-            </node>
-            <node concept="I4A8Y" id="10MSw5ZQLv6" role="2OqNvi" />
-          </node>
-          <node concept="2OqwBi" id="10MSw5ZQMBI" role="3uHU7w">
-            <node concept="1YBJjd" id="10MSw5ZQMmq" role="2Oq$k0">
-              <ref role="1YBMHb" node="10MSw5ZQLuR" resolve="sectRefWord" />
-            </node>
-            <node concept="I4A8Y" id="10MSw5ZQMTR" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="Xl_RD" id="10MSw5ZQLv7" role="2MkJ7o">
-          <property role="Xl_RC" value="Currently only references to nodes in the same model are supported" />
-        </node>
-        <node concept="1YBJjd" id="10MSw5ZQN0R" role="2OEOjV">
-          <ref role="1YBMHb" node="10MSw5ZQLuR" resolve="sectRefWord" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="10MSw5ZQLuR" role="1YuTPh">
-      <property role="TrG5h" value="sectRefWord" />
-      <ref role="1YaFvo" to="2c95:2TZO3DbvhA_" resolve="SectRefWord" />
-    </node>
-  </node>
 </model>
 
