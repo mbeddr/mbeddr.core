@@ -106,7 +106,7 @@
   </registry>
   <node concept="1_1swa" id="2khznRHyx5W">
     <property role="yApLE" value="1" />
-    <property role="TrG5h" value="main_document_2" />
+    <property role="TrG5h" value="main_document_including_other_docs" />
     <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
     <node concept="1_0VNX" id="2khznRHyx5X" role="1_0VJ0">
       <property role="TrG5h" value="firstsection" />
@@ -172,7 +172,7 @@
       <ref role="2SbEIe" node="2khznRHyx6e" resolve="main" />
     </node>
     <node concept="1_0j5j" id="2khznRHyx6i" role="30Gjbj">
-      <ref role="1_0j5g" node="2khznRHyx5W" resolve="main_document_2" />
+      <ref role="1_0j5g" node="2khznRHyx5W" resolve="main_document_including_other_docs" />
     </node>
     <node concept="1TaS0h" id="2khznRHyx6b" role="30GjaH" />
   </node>
