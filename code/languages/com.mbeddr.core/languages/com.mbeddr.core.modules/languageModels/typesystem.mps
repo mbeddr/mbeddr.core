@@ -11006,16 +11006,53 @@
                       <node concept="3clFbH" id="4zpe2QHb1LF" role="3cqZAp" />
                       <node concept="3clFbJ" id="5MZxerZXKKI" role="3cqZAp">
                         <node concept="3clFbS" id="5MZxerZXKKJ" role="3clFbx">
-                          <node concept="2MkqsV" id="5MZxerZXKKK" role="3cqZAp">
-                            <node concept="Xl_RD" id="5MZxerZXKKL" role="2MkJ7o">
-                              <property role="Xl_RC" value="cannot pass const pointer as argument to parameter expecting non-const pointer" />
+                          <node concept="3SKdUt" id="4QC5Hc5ktW4" role="3cqZAp">
+                            <node concept="3SKdUq" id="4QC5Hc5ktW6" role="3SKWNk">
+                              <property role="3SKdUp" value="Be less strict with parameters of functions in external modules to avoid pointless typesystem errors in " />
                             </node>
-                            <node concept="3M$PaV" id="5MZxerZXKKM" role="2OEOjV">
-                              <ref role="3M$S_o" node="3LtIbWJFwVj" resolve="actual" />
+                          </node>
+                          <node concept="3SKdUt" id="4QC5Hc5ktWz" role="3cqZAp">
+                            <node concept="3SKdUq" id="4QC5Hc5ktW$" role="3SKWNk">
+                              <property role="3SKdUp" value="conjunction with external API that we have hardly able to change" />
+                            </node>
+                          </node>
+                          <node concept="3clFbJ" id="4QC5Hc5ksTh" role="3cqZAp">
+                            <node concept="3clFbS" id="4QC5Hc5ksTj" role="3clFbx">
+                              <node concept="2MkqsV" id="5MZxerZXKKK" role="3cqZAp">
+                                <node concept="Xl_RD" id="5MZxerZXKKL" role="2MkJ7o">
+                                  <property role="Xl_RC" value="cannot pass const pointer as argument to parameter expecting non-const pointer" />
+                                </node>
+                                <node concept="3M$PaV" id="5MZxerZXKKM" role="2OEOjV">
+                                  <ref role="3M$S_o" node="3LtIbWJFwVj" resolve="actual" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="4QC5Hc5jEXn" role="3clFbw">
+                              <node concept="2OqwBi" id="4QC5Hc5jCaQ" role="2Oq$k0">
+                                <node concept="3M$PaV" id="4QC5Hc5jBVA" role="2Oq$k0">
+                                  <ref role="3M$S_o" node="3LtIbWJFwX9" resolve="formal" />
+                                </node>
+                                <node concept="2Xjw5R" id="4QC5Hc5jDrH" role="2OqNvi">
+                                  <node concept="1xMEDy" id="4QC5Hc5jDrJ" role="1xVPHs">
+                                    <node concept="chp4Y" id="4QC5Hc5jE2f" role="ri$Ld">
+                                      <ref role="cht4Q" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3w_OXm" id="4QC5Hc5jGCO" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
                         <node concept="1Wc70l" id="5MZxerZXKKN" role="3clFbw">
+                          <node concept="2OqwBi" id="5MZxerZXKKU" role="3uHU7B">
+                            <node concept="37vLTw" id="5MZxerZYgyy" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5MZxerZYddQ" resolve="actualType" />
+                            </node>
+                            <node concept="3TrcHB" id="5MZxerZXKKW" role="2OqNvi">
+                              <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
+                            </node>
+                          </node>
                           <node concept="3fqX7Q" id="5MZxerZXKKO" role="3uHU7w">
                             <node concept="2OqwBi" id="5MZxerZXKKP" role="3fr31v">
                               <node concept="2OqwBi" id="5MZxerZXKKQ" role="2Oq$k0">
@@ -11031,24 +11068,45 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="5MZxerZXKKU" role="3uHU7B">
-                            <node concept="37vLTw" id="5MZxerZYgyy" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5MZxerZYddQ" resolve="actualType" />
-                            </node>
-                            <node concept="3TrcHB" id="5MZxerZXKKW" role="2OqNvi">
-                              <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
-                            </node>
-                          </node>
                         </node>
                       </node>
                       <node concept="3clFbJ" id="5MZxerZXKKX" role="3cqZAp">
                         <node concept="3clFbS" id="5MZxerZXKKY" role="3clFbx">
-                          <node concept="2MkqsV" id="5MZxerZXKKZ" role="3cqZAp">
-                            <node concept="Xl_RD" id="5MZxerZXKL0" role="2MkJ7o">
-                              <property role="Xl_RC" value="cannot pass volatile pointer as argument to parameter expecting non-volatile pointer" />
+                          <node concept="3SKdUt" id="4QC5Hc5ktYg" role="3cqZAp">
+                            <node concept="3SKdUq" id="4QC5Hc5ktYh" role="3SKWNk">
+                              <property role="3SKdUp" value="Be less strict with parameters of functions in external modules to avoid pointless typesystem errors in " />
                             </node>
-                            <node concept="3M$PaV" id="5MZxerZXKL1" role="2OEOjV">
-                              <ref role="3M$S_o" node="3LtIbWJFwVj" resolve="actual" />
+                          </node>
+                          <node concept="3SKdUt" id="4QC5Hc5ktYi" role="3cqZAp">
+                            <node concept="3SKdUq" id="4QC5Hc5ktYj" role="3SKWNk">
+                              <property role="3SKdUp" value="conjunction with external API that we have hardly able to change" />
+                            </node>
+                          </node>
+                          <node concept="3clFbJ" id="4QC5Hc5ktXh" role="3cqZAp">
+                            <node concept="3clFbS" id="4QC5Hc5ktXj" role="3clFbx">
+                              <node concept="2MkqsV" id="5MZxerZXKKZ" role="3cqZAp">
+                                <node concept="Xl_RD" id="5MZxerZXKL0" role="2MkJ7o">
+                                  <property role="Xl_RC" value="cannot pass volatile pointer as argument to parameter expecting non-volatile pointer" />
+                                </node>
+                                <node concept="3M$PaV" id="5MZxerZXKL1" role="2OEOjV">
+                                  <ref role="3M$S_o" node="3LtIbWJFwVj" resolve="actual" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="4QC5Hc5ktZ4" role="3clFbw">
+                              <node concept="2OqwBi" id="4QC5Hc5ktZ5" role="2Oq$k0">
+                                <node concept="3M$PaV" id="4QC5Hc5ktZ6" role="2Oq$k0">
+                                  <ref role="3M$S_o" node="3LtIbWJFwX9" resolve="formal" />
+                                </node>
+                                <node concept="2Xjw5R" id="4QC5Hc5ktZ7" role="2OqNvi">
+                                  <node concept="1xMEDy" id="4QC5Hc5ktZ8" role="1xVPHs">
+                                    <node concept="chp4Y" id="4QC5Hc5ktZ9" role="ri$Ld">
+                                      <ref role="cht4Q" to="x27k:5jyom5fOqJ1" resolve="ExternalModule" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3w_OXm" id="4QC5Hc5ktZa" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
