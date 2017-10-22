@@ -17,7 +17,8 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
-    <import index="t2jb" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.interactions(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="7vlr" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.interaction(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="60v7" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.example.handlers(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="thhq" ref="r:f4b2cfe1-da62-4992-a88f-cc8c90918a31(com.mbeddr.mpsutil.graphstream.example.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -250,26 +251,36 @@
     <node concept="2tJIrI" id="4iv9KfRtLky" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1Fjsp" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getInteractionListeners" />
+      <property role="TrG5h" value="getInteractionHandlers" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3Tm1VV" id="50Rn4r1Fjsr" role="1B3o_S" />
       <node concept="_YKpA" id="50Rn4r1FkA3" role="3clF45">
-        <node concept="3uibUv" id="6hT4HFpk2yW" role="_ZDj9">
-          <ref role="3uigEE" to="upej:~IInteractionListener" resolve="IInteractionListener" />
+        <node concept="3uibUv" id="1V72FUbxZiQ" role="_ZDj9">
+          <ref role="3uigEE" to="7vlr:~IInteractionHandler" resolve="IInteractionHandler" />
         </node>
       </node>
       <node concept="3clFbS" id="50Rn4r1Fjsu" role="3clF47">
         <node concept="3cpWs6" id="50Rn4r1Fn4j" role="3cqZAp">
           <node concept="2ShNRf" id="50Rn4r1Fn5S" role="3cqZAk">
             <node concept="2Jqq0_" id="50Rn4r1Fn5T" role="2ShVmc">
-              <node concept="3uibUv" id="50Rn4r1Fn5U" role="HW$YZ">
-                <ref role="3uigEE" to="upej:~IInteractionListener" resolve="IInteractionListener" />
+              <node concept="3uibUv" id="1V72FUby4hd" role="HW$YZ">
+                <ref role="3uigEE" to="7vlr:~IInteractionHandler" resolve="IInteractionHandler" />
               </node>
               <node concept="2ShNRf" id="50Rn4r1Fn5X" role="HW$Y0">
                 <node concept="1pGfFk" id="50Rn4r1Fn5Y" role="2ShVmc">
-                  <ref role="37wK5l" to="t2jb:~AutomarkLinks.&lt;init&gt;()" resolve="AutomarkLinks" />
+                  <ref role="37wK5l" to="7vlr:~HighlightLinksClickHandler.&lt;init&gt;()" resolve="HighlightLinksClickHandler" />
+                </node>
+              </node>
+              <node concept="2ShNRf" id="1V72FUbzOu$" role="HW$Y0">
+                <node concept="1pGfFk" id="1V72FUbzP_j" role="2ShVmc">
+                  <ref role="37wK5l" to="60v7:~ShowLabelTooltipHoverHandler.&lt;init&gt;()" resolve="ShowLabelTooltipHoverHandler" />
+                </node>
+              </node>
+              <node concept="2ShNRf" id="1V72FUbzQgu" role="HW$Y0">
+                <node concept="1pGfFk" id="1V72FUbzR77" role="2ShVmc">
+                  <ref role="37wK5l" to="60v7:~ShowButtonsExampleHoverHandler.&lt;init&gt;()" resolve="ShowButtonsExampleHoverHandler" />
                 </node>
               </node>
             </node>

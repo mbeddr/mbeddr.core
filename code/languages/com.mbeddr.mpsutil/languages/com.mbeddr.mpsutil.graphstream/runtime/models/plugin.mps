@@ -41,6 +41,7 @@
     <import index="41rc" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.swing.gvt(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="u99y" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model.style(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="7vlr" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.interaction(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" implicit="true" />
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" implicit="true" />
   </imports>
@@ -167,6 +168,9 @@
         <child id="1153952416686" name="body" index="2GV8ay" />
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
         <child id="1164903700860" name="catchClause" index="TEXxN" />
+      </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -1022,7 +1026,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="6hT4HFplUU2" role="2OqNvi">
-                      <ref role="37wK5l" to="upej:~IViewManager.registerInteractionListener(de.itemis.graphing.view.IInteractionListener):void" resolve="registerInteractionListener" />
+                      <ref role="37wK5l" to="upej:~IViewManager.registerHandler(de.itemis.graphing.view.interaction.IInteractionHandler):void" resolve="registerHandler" />
                       <node concept="2GrUjf" id="6hT4HFplUUK" role="37wK5m">
                         <ref role="2Gs0qQ" node="6hT4HFplUlq" resolve="interactionListener" />
                       </node>
@@ -1032,7 +1036,7 @@
               </node>
               <node concept="2OqwBi" id="50Rn4r1GAVX" role="2GsD0m">
                 <node concept="liA8E" id="50Rn4r1GBjB" role="2OqNvi">
-                  <ref role="37wK5l" node="50Rn4r1HbzZ" resolve="getInteractionListeners" />
+                  <ref role="37wK5l" node="50Rn4r1HbzZ" resolve="getInteractionHandlers" />
                 </node>
                 <node concept="37vLTw" id="50Rn4r1H49z" role="2Oq$k0">
                   <ref role="3cqZAo" node="50Rn4r1H1tN" resolve="gi" />
@@ -3211,21 +3215,21 @@
     <node concept="2tJIrI" id="4G2jA20fB8$" role="jymVt" />
     <node concept="3clFb_" id="50Rn4r1HbzZ" role="jymVt">
       <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="getInteractionListeners" />
+      <property role="TrG5h" value="getInteractionHandlers" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="50Rn4r1Hb$0" role="3clF47" />
       <node concept="3Tm1VV" id="50Rn4r1Hb$1" role="1B3o_S" />
       <node concept="_YKpA" id="50Rn4r1Hb$2" role="3clF45">
-        <node concept="3uibUv" id="50Rn4r1Hb$3" role="_ZDj9">
-          <ref role="3uigEE" to="upej:~IInteractionListener" resolve="IInteractionListener" />
+        <node concept="3uibUv" id="1V72FUbyOIf" role="_ZDj9">
+          <ref role="3uigEE" to="7vlr:~IInteractionHandler" resolve="IInteractionHandler" />
         </node>
       </node>
       <node concept="P$JXv" id="4G2jA20fBdp" role="lGtFl">
         <node concept="TZ5HA" id="4G2jA20fBdq" role="TZ5H$">
           <node concept="1dT_AC" id="4G2jA20fBdr" role="1dT_Ay">
-            <property role="1dT_AB" value="The interaction listeners returned by this function are registered at the viewer by the framework. May be null." />
+            <property role="1dT_AB" value="The interaction handlers returned by this function are registered at the viewer by the framework. May be null." />
           </node>
         </node>
       </node>
@@ -3674,6 +3678,62 @@
       </node>
       <node concept="3Tm6S6" id="6x5UxX2ZH2b" role="1B3o_S" />
       <node concept="17QB3L" id="6x5UxX2ZHGX" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="1V72FUbyZIZ" role="jymVt" />
+    <node concept="3clFb_" id="1V72FUbz0RM" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="calculateTextSize" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="1V72FUbz0RN" role="1B3o_S" />
+      <node concept="3uibUv" id="1V72FUbz0RP" role="3clF45">
+        <ref role="3uigEE" to="5svn:~Size" resolve="Size" />
+      </node>
+      <node concept="37vLTG" id="1V72FUbz0RQ" role="3clF46">
+        <property role="TrG5h" value="string" />
+        <node concept="3uibUv" id="1V72FUbz0RR" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1V72FUbz0RS" role="3clF46">
+        <property role="TrG5h" value="style" />
+        <node concept="3uibUv" id="1V72FUbz0RT" role="1tU5fm">
+          <ref role="3uigEE" to="u99y:~Style" resolve="Style" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1V72FUbz0RW" role="3clF47">
+        <node concept="YS8fn" id="1V72FUbz3u1" role="3cqZAp">
+          <node concept="2ShNRf" id="1V72FUbz3yj" role="YScLw">
+            <node concept="HV5vD" id="1V72FUbzaYl" role="2ShVmc">
+              <ref role="HV5vE" to="wyt6:~UnsupportedOperationException" resolve="UnsupportedOperationException" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1V72FUbz0RX" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1V72FUbz26K" role="jymVt" />
+    <node concept="3clFb_" id="1V72FUbz0S0" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getGraphicalUnitsPerPixel" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="1V72FUbz0S1" role="1B3o_S" />
+      <node concept="10P55v" id="1V72FUbz0S3" role="3clF45" />
+      <node concept="3clFbS" id="1V72FUbz0S6" role="3clF47">
+        <node concept="YS8fn" id="1V72FUbzb19" role="3cqZAp">
+          <node concept="2ShNRf" id="1V72FUbzb1a" role="YScLw">
+            <node concept="HV5vD" id="1V72FUbzb1b" role="2ShVmc">
+              <ref role="HV5vE" to="wyt6:~UnsupportedOperationException" resolve="UnsupportedOperationException" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1V72FUbz0S7" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
     <node concept="2tJIrI" id="6x5UxX352g5" role="jymVt" />
     <node concept="3clFb_" id="6x5UxX36b6H" role="jymVt">
@@ -4683,14 +4743,14 @@
     <node concept="2tJIrI" id="4G2jA20g5BN" role="jymVt" />
     <node concept="3clFb_" id="6x5UxX32v1W" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getInteractionListeners" />
+      <property role="TrG5h" value="getInteractionHandlers" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3Tm1VV" id="6x5UxX32v1Y" role="1B3o_S" />
       <node concept="_YKpA" id="6x5UxX32v1Z" role="3clF45">
-        <node concept="3uibUv" id="6x5UxX32v20" role="_ZDj9">
-          <ref role="3uigEE" to="upej:~IInteractionListener" resolve="IInteractionListener" />
+        <node concept="3uibUv" id="1V72FUbyQ$x" role="_ZDj9">
+          <ref role="3uigEE" to="7vlr:~IInteractionHandler" resolve="IInteractionHandler" />
         </node>
       </node>
       <node concept="3clFbS" id="6x5UxX32v22" role="3clF47">
