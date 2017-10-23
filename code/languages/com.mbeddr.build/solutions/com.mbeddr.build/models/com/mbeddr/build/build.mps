@@ -2853,7 +2853,7 @@
         </node>
         <node concept="1SiIV0" id="52dnnqbJhvt" role="3bR37C">
           <node concept="3bR9La" id="52dnnqbJhvu" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
           </node>
         </node>
@@ -2873,6 +2873,12 @@
           <node concept="3bR9La" id="4sjR92KlW2i" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:4sjR92JQmCy" resolve="com.mbeddr.mpsutil.dataflow.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="kHDGx7_Dl4" role="3bR37C">
+          <node concept="3bR9La" id="kHDGx7_Dl5" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:1qokWp1VAAr" resolve="jetbrains.mps.refactoring" />
           </node>
         </node>
       </node>
