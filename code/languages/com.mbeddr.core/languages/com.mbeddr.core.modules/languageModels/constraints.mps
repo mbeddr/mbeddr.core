@@ -175,7 +175,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -200,6 +199,9 @@
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
@@ -1972,11 +1974,8 @@
                       </node>
                       <node concept="2qgKlT" id="7f3Z9jeIsUv" role="2OqNvi">
                         <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                        <node concept="2OqwBi" id="7f3Z9jeIE3P" role="37wK5m">
-                          <node concept="35c_gC" id="7f3Z9jeIvCt" role="2Oq$k0">
-                            <ref role="35c_gD" to="x27k:6GaKBF50ksn" resolve="ITypeDef" />
-                          </node>
-                          <node concept="FGMqu" id="5ZSJngDQV5o" role="2OqNvi" />
+                        <node concept="3B5_sB" id="7f3Z9jeIE3P" role="37wK5m">
+                          <ref role="3B5MYn" to="x27k:6GaKBF50ksn" resolve="ITypeDef" />
                         </node>
                       </node>
                     </node>

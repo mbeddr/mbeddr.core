@@ -185,14 +185,14 @@
                 <ref role="3cqZAo" node="1T7O9iX4KA0" resolve="result" />
               </node>
               <node concept="3Tsc0h" id="1T7O9iX4Le8" role="2OqNvi">
-                <ref role="3TtcxE" to="iuxj:5M4a$b5iL2P" />
+                <ref role="3TtcxE" to="iuxj:5M4a$b5iL2P" resolve="attributes" />
               </node>
             </node>
             <node concept="X8dFx" id="1T7O9iX4Qho" role="2OqNvi">
               <node concept="2OqwBi" id="1T7O9iX4Szj" role="25WWJ7">
                 <node concept="2Sf5sV" id="1T7O9iX4RTh" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="1T7O9iX4Tbz" role="2OqNvi">
-                  <ref role="3TtcxE" to="iuxj:5M4a$b5iL2P" />
+                  <ref role="3TtcxE" to="iuxj:5M4a$b5iL2P" resolve="attributes" />
                 </node>
               </node>
             </node>
@@ -205,14 +205,14 @@
                 <ref role="3cqZAo" node="1T7O9iX4KA0" resolve="result" />
               </node>
               <node concept="3Tsc0h" id="1T7O9iX4Yq_" role="2OqNvi">
-                <ref role="3TtcxE" to="iuxj:1q3yNZeA$$y" />
+                <ref role="3TtcxE" to="iuxj:1q3yNZeA$$y" resolve="content" />
               </node>
             </node>
             <node concept="X8dFx" id="1T7O9iX51eL" role="2OqNvi">
               <node concept="2OqwBi" id="1T7O9iX53ta" role="25WWJ7">
                 <node concept="2Sf5sV" id="1T7O9iX533W" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="1T7O9iX56nP" role="2OqNvi">
-                  <ref role="3TtcxE" to="iuxj:1q3yNZeA$$y" />
+                  <ref role="3TtcxE" to="iuxj:1q3yNZeA$$y" resolve="content" />
                 </node>
               </node>
             </node>
@@ -243,14 +243,14 @@
                 <ref role="3cqZAo" node="1T7O9iX4KA0" resolve="result" />
               </node>
               <node concept="3Tsc0h" id="1T7O9iX5fVd" role="2OqNvi">
-                <ref role="3TtcxE" to="tpck:4uZwTti3__2" />
+                <ref role="3TtcxE" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
               </node>
             </node>
             <node concept="X8dFx" id="1T7O9iX5ioN" role="2OqNvi">
               <node concept="2OqwBi" id="1T7O9iX5jl7" role="25WWJ7">
                 <node concept="2Sf5sV" id="1T7O9iX5iVQ" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="1T7O9iX5kGG" role="2OqNvi">
-                  <ref role="3TtcxE" to="tpck:4uZwTti3__2" />
+                  <ref role="3TtcxE" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                 </node>
               </node>
             </node>

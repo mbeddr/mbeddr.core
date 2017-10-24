@@ -276,7 +276,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -299,6 +298,9 @@
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
@@ -6706,11 +6708,8 @@
         <node concept="3cpWs6" id="xoAMGDsVxE" role="3cqZAp">
           <node concept="2ShNRf" id="xoAMGDsWj1" role="3cqZAk">
             <node concept="Tc6Ow" id="xoAMGDsXGq" role="2ShVmc">
-              <node concept="2OqwBi" id="2RSm1Cz_Z6W" role="HW$Y0">
-                <node concept="35c_gC" id="2RSm1Cz_YPs" role="2Oq$k0">
-                  <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
-                </node>
-                <node concept="FGMqu" id="2RSm1Cz_Zt$" role="2OqNvi" />
+              <node concept="3B5_sB" id="2RSm1Cz_Z6W" role="HW$Y0">
+                <ref role="3B5MYn" to="tpck:gw2VY9q" resolve="BaseConcept" />
               </node>
               <node concept="3Tqbb2" id="xoAMGDsY8u" role="HW$YZ">
                 <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />

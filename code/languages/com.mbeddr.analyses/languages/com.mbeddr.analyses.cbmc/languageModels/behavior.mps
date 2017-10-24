@@ -2680,7 +2680,7 @@
             <property role="TrG5h" value="list" />
             <node concept="_YKpA" id="6BJ5EqKuX2S" role="1tU5fm">
               <node concept="3Tqbb2" id="6BJ5EqKuX2V" role="_ZDj9">
-                <ref role="ehGHo" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+                <ref role="ehGHo" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfigurationContainer" />
               </node>
             </node>
             <node concept="2OqwBi" id="6BJ5EqKuX3T" role="33vP2m">
@@ -2805,7 +2805,7 @@
       </node>
       <node concept="A3Dl8" id="6BJ5EqKweqr" role="3clF45">
         <node concept="3Tqbb2" id="6BJ5EqKvK$n" role="A3Ik2">
-          <ref role="ehGHo" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+          <ref role="ehGHo" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfigurationContainer" />
         </node>
       </node>
     </node>
@@ -2863,7 +2863,7 @@
       <node concept="37vLTG" id="6BJ5EqKvLjk" role="3clF46">
         <property role="TrG5h" value="cfg" />
         <node concept="3Tqbb2" id="6BJ5EqKvLjj" role="1tU5fm">
-          <ref role="ehGHo" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+          <ref role="ehGHo" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfigurationContainer" />
         </node>
       </node>
     </node>
@@ -2873,7 +2873,7 @@
   </node>
   <node concept="13h7C7" id="24_rWT3okuz">
     <property role="3GE5qa" value="configuration.cbmc" />
-    <ref role="13h7C2" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
+    <ref role="13h7C2" to="q5q6:1Qze4b32ew4" resolve="CBMCAnalysisConfigurationContainer" />
     <node concept="13i0hz" id="v5nKjVRSip" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
