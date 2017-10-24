@@ -363,7 +363,7 @@
                               <ref role="37wK5l" to="prhr:IRJfuKbwmU" resolve="filterLocationsStates" />
                               <node concept="3cpWsa" id="5ePBVhSIqfL" role="37wK5m">
                                 <ref role="3cqZAo" node="49Y2Xia4Bjv" resolve="res" />
-                                <node concept="13_zln" id="hODJYS_PC3" role="lGtFl">
+                                <node concept="13_zln" id="hODJYRpcT_" role="lGtFl">
                                   <property role="13_zl8" value="unknown attributes" />
                                   <property role="13_zlf" value="This node should have been migrated, but has annotations not recognised by the migration. Please review this code and migrate manually if necessary. Unknown attribute: jetbrains.mps.lang.generator.structure.ReferenceMacro" />
                                   <property role="13BvtO" value="Migrates LocalInstanceFieldReferences, LocalStaticFieldReferences, LocalVariableReferences and ParameterReferences to VariableReferences" />
@@ -719,7 +719,7 @@
                               <ref role="37wK5l" to="prhr:IRJfuKbwmU" resolve="filterLocationsStates" />
                               <node concept="3cpWsa" id="IRJfuKiFXr" role="37wK5m">
                                 <ref role="3cqZAo" node="1eEm1HSGlmN" resolve="res" />
-                                <node concept="13_zln" id="hODJYS_PC4" role="lGtFl">
+                                <node concept="13_zln" id="hODJYRpcTA" role="lGtFl">
                                   <property role="13_zl8" value="unknown attributes" />
                                   <property role="13_zlf" value="This node should have been migrated, but has annotations not recognised by the migration. Please review this code and migrate manually if necessary. Unknown attribute: jetbrains.mps.lang.generator.structure.ReferenceMacro" />
                                   <property role="13BvtO" value="Migrates LocalInstanceFieldReferences, LocalStaticFieldReferences, LocalVariableReferences and ParameterReferences to VariableReferences" />
@@ -1177,7 +1177,7 @@
                                   <ref role="37wK5l" to="prhr:IRJfuKbwmU" resolve="filterLocationsStates" />
                                   <node concept="3cpWsa" id="IRJfuKiPoq" role="37wK5m">
                                     <ref role="3cqZAo" node="4Uw4KibeWb5" resolve="res" />
-                                    <node concept="13_zln" id="hODJYS_PC1" role="lGtFl">
+                                    <node concept="13_zln" id="hODJYRpcTz" role="lGtFl">
                                       <property role="13_zl8" value="unknown attributes" />
                                       <property role="13_zlf" value="This node should have been migrated, but has annotations not recognised by the migration. Please review this code and migrate manually if necessary. Unknown attribute: jetbrains.mps.lang.generator.structure.ReferenceMacro" />
                                       <property role="13BvtO" value="Migrates LocalInstanceFieldReferences, LocalStaticFieldReferences, LocalVariableReferences and ParameterReferences to VariableReferences" />
@@ -1620,7 +1620,7 @@
                                   <ref role="37wK5l" to="prhr:IRJfuKbwmU" resolve="filterLocationsStates" />
                                   <node concept="3cpWsa" id="IRJfuKiM2h" role="37wK5m">
                                     <ref role="3cqZAo" node="1eEm1HSGUv2" resolve="res" />
-                                    <node concept="13_zln" id="hODJYS_PC2" role="lGtFl">
+                                    <node concept="13_zln" id="hODJYRpcT$" role="lGtFl">
                                       <property role="13_zl8" value="unknown attributes" />
                                       <property role="13_zlf" value="This node should have been migrated, but has annotations not recognised by the migration. Please review this code and migrate manually if necessary. Unknown attribute: jetbrains.mps.lang.generator.structure.ReferenceMacro" />
                                       <property role="13BvtO" value="Migrates LocalInstanceFieldReferences, LocalStaticFieldReferences, LocalVariableReferences and ParameterReferences to VariableReferences" />
