@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.analysis.taintAnalysis/com.mbeddr.mpsutil.inca.analysis.impactAnalysis.mpl" folder="analysis" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.core/com.mbeddr.mpsutil.inca.core.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.data/com.mbeddr.mpsutil.inca.data.mpl" folder="data" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.fun/com.mbeddr.mpsutil.inca.fun.mpl" folder="core" />
@@ -19,7 +20,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.ui/com.mbeddr.mpsutil.inca.ui.msd" folder="ui" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.soot.runtime/com.mbeddr.mpsutil.soot.runtime.msd" folder="soot" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.data.test/com.mbeddr.mpsutil.inca.data.test.msd" folder="tests" />
-      <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.dep.test/com.mbeddr.mpsutil.inca.dep.test.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.dep.test/com.mbeddr.mpsutil.inca.impactanalysis.test.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.fun.test/com.mbeddr.mpsutil.inca.fun.test.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.fun.testlangs/com.mbeddr.mpsutil.inca.fun.testlangs.mpl" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.gp.test/com.mbeddr.mpsutil.inca.gp.test.msd" folder="tests" />
