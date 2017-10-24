@@ -216,7 +216,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -226,9 +225,6 @@
       <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
-      </concept>
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -242,6 +238,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
+      </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -707,11 +706,8 @@
           <node concept="9aQIb" id="57LMU4VjngL" role="9aQIa">
             <node concept="3clFbS" id="57LMU4VjngM" role="9aQI4">
               <node concept="3cpWs6" id="57LMU4Vjnrw" role="3cqZAp">
-                <node concept="2OqwBi" id="2RSm1Cz_FRU" role="3cqZAk">
-                  <node concept="35c_gC" id="2RSm1Cz_Fqe" role="2Oq$k0">
-                    <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
-                  </node>
-                  <node concept="FGMqu" id="2RSm1Cz_G_B" role="2OqNvi" />
+                <node concept="3B5_sB" id="2RSm1Cz_FRU" role="3cqZAk">
+                  <ref role="3B5MYn" to="tpck:gw2VY9q" resolve="BaseConcept" />
                 </node>
               </node>
             </node>
@@ -733,11 +729,8 @@
           <node concept="2YIFZM" id="Tz5AFeEZA4" role="3cqZAk">
             <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
             <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
-            <node concept="2OqwBi" id="2RSm1Cz_Eo3" role="37wK5m">
-              <node concept="35c_gC" id="2RSm1Cz_DF4" role="2Oq$k0">
-                <ref role="35c_gD" to="ebqt:52HBLukRnnV" resolve="ITuple" />
-              </node>
-              <node concept="FGMqu" id="2RSm1Cz_F2g" role="2OqNvi" />
+            <node concept="3B5_sB" id="2RSm1Cz_Eo3" role="37wK5m">
+              <ref role="3B5MYn" to="ebqt:52HBLukRnnV" resolve="ITuple" />
             </node>
             <node concept="3Tqbb2" id="Tz5AFeFqjQ" role="3PaCim">
               <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
@@ -1429,17 +1422,11 @@
               <node concept="2YIFZM" id="3oMuSXR87ih" role="3cqZAk">
                 <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
                 <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
-                <node concept="2OqwBi" id="2RSm1Cz_xZj" role="37wK5m">
-                  <node concept="35c_gC" id="2RSm1Cz_xcE" role="2Oq$k0">
-                    <ref role="35c_gD" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
-                  </node>
-                  <node concept="FGMqu" id="2RSm1Cz_ySP" role="2OqNvi" />
+                <node concept="3B5_sB" id="2RSm1Cz_xZj" role="37wK5m">
+                  <ref role="3B5MYn" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
                 </node>
-                <node concept="2OqwBi" id="2RSm1Cz_$zm" role="37wK5m">
-                  <node concept="35c_gC" id="2RSm1Cz_zzp" role="2Oq$k0">
-                    <ref role="35c_gD" to="ebqt:Tz5AFeCUC5" resolve="FunTemporaryVariable" />
-                  </node>
-                  <node concept="FGMqu" id="2RSm1Cz__$D" role="2OqNvi" />
+                <node concept="3B5_sB" id="2RSm1Cz_$zm" role="37wK5m">
+                  <ref role="3B5MYn" to="ebqt:Tz5AFeCUC5" resolve="FunTemporaryVariable" />
                 </node>
                 <node concept="3Tqbb2" id="3oMuSXR87il" role="3PaCim">
                   <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
@@ -1459,11 +1446,8 @@
                 <node concept="2YIFZM" id="Tz5AFeF1Nq" role="3cqZAk">
                   <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
                   <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
-                  <node concept="2OqwBi" id="2RSm1Cz_Bvr" role="37wK5m">
-                    <node concept="35c_gC" id="2RSm1Cz_An2" role="2Oq$k0">
-                      <ref role="35c_gD" to="ebqt:52HBLukRnnV" resolve="ITuple" />
-                    </node>
-                    <node concept="FGMqu" id="2RSm1Cz_Cnl" role="2OqNvi" />
+                  <node concept="3B5_sB" id="2RSm1Cz_Bvr" role="37wK5m">
+                    <ref role="3B5MYn" to="ebqt:52HBLukRnnV" resolve="ITuple" />
                   </node>
                   <node concept="3Tqbb2" id="Tz5AFeFr1c" role="3PaCim">
                     <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
@@ -2274,11 +2258,8 @@
               <ref role="3cqZAo" node="4oNjwzxol4N" resolve="result" />
             </node>
             <node concept="TSZUe" id="4oNjwzxom_O" role="2OqNvi">
-              <node concept="2OqwBi" id="2RSm1Cz_MUg" role="25WWJ7">
-                <node concept="35c_gC" id="2RSm1Cz_MUh" role="2Oq$k0">
-                  <ref role="35c_gD" to="ebqt:52HBLukRnnV" resolve="ITuple" />
-                </node>
-                <node concept="FGMqu" id="2RSm1Cz_MUi" role="2OqNvi" />
+              <node concept="3B5_sB" id="2RSm1Cz_MUg" role="25WWJ7">
+                <ref role="3B5MYn" to="ebqt:52HBLukRnnV" resolve="ITuple" />
               </node>
             </node>
           </node>
@@ -2289,11 +2270,8 @@
               <ref role="3cqZAo" node="4oNjwzxol4N" resolve="result" />
             </node>
             <node concept="TSZUe" id="3oMuSXR7nn8" role="2OqNvi">
-              <node concept="2OqwBi" id="2RSm1Cz_NPU" role="25WWJ7">
-                <node concept="35c_gC" id="2RSm1Cz_NPV" role="2Oq$k0">
-                  <ref role="35c_gD" to="ebqt:3oMuSXR7kAP" resolve="EvalValue" />
-                </node>
-                <node concept="FGMqu" id="2RSm1Cz_NPW" role="2OqNvi" />
+              <node concept="3B5_sB" id="2RSm1Cz_NPU" role="25WWJ7">
+                <ref role="3B5MYn" to="ebqt:3oMuSXR7kAP" resolve="EvalValue" />
               </node>
             </node>
           </node>
@@ -2456,11 +2434,8 @@
               <ref role="3cqZAo" node="4oNjwzxoplz" resolve="result" />
             </node>
             <node concept="TSZUe" id="3oMuSXR7ogW" role="2OqNvi">
-              <node concept="2OqwBi" id="2RSm1Cz_Lux" role="25WWJ7">
-                <node concept="35c_gC" id="2RSm1Cz_Luy" role="2Oq$k0">
-                  <ref role="35c_gD" to="ebqt:4oNjwzxnlUy" resolve="LiteralValue" />
-                </node>
-                <node concept="FGMqu" id="2RSm1Cz_Luz" role="2OqNvi" />
+              <node concept="3B5_sB" id="2RSm1Cz_Lux" role="25WWJ7">
+                <ref role="3B5MYn" to="ebqt:4oNjwzxnlUy" resolve="LiteralValue" />
               </node>
             </node>
           </node>
@@ -2471,11 +2446,8 @@
               <ref role="3cqZAo" node="4oNjwzxoplz" resolve="result" />
             </node>
             <node concept="TSZUe" id="3oMuSXR7oh3" role="2OqNvi">
-              <node concept="2OqwBi" id="2RSm1Cz_LLv" role="25WWJ7">
-                <node concept="35c_gC" id="2RSm1Cz_LLw" role="2Oq$k0">
-                  <ref role="35c_gD" to="ebqt:3oMuSXR7kAP" resolve="EvalValue" />
-                </node>
-                <node concept="FGMqu" id="2RSm1Cz_LLx" role="2OqNvi" />
+              <node concept="3B5_sB" id="2RSm1Cz_LLv" role="25WWJ7">
+                <ref role="3B5MYn" to="ebqt:3oMuSXR7kAP" resolve="EvalValue" />
               </node>
             </node>
           </node>
@@ -2696,17 +2668,11 @@
           <node concept="2YIFZM" id="4oNjwzxnmeq" role="3cqZAk">
             <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
             <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
-            <node concept="2OqwBi" id="2RSm1Cz_J0P" role="37wK5m">
-              <node concept="35c_gC" id="2RSm1Cz_Io6" role="2Oq$k0">
-                <ref role="35c_gD" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
-              </node>
-              <node concept="FGMqu" id="2RSm1Cz_JNY" role="2OqNvi" />
+            <node concept="3B5_sB" id="2RSm1Cz_J0P" role="37wK5m">
+              <ref role="3B5MYn" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
             </node>
-            <node concept="2OqwBi" id="2RSm1Cz_K2U" role="37wK5m">
-              <node concept="35c_gC" id="2RSm1Cz_K2V" role="2Oq$k0">
-                <ref role="35c_gD" to="ebqt:Tz5AFeCUC5" resolve="FunTemporaryVariable" />
-              </node>
-              <node concept="FGMqu" id="2RSm1Cz_K2W" role="2OqNvi" />
+            <node concept="3B5_sB" id="2RSm1Cz_K2U" role="37wK5m">
+              <ref role="3B5MYn" to="ebqt:Tz5AFeCUC5" resolve="FunTemporaryVariable" />
             </node>
             <node concept="3Tqbb2" id="4oNjwzxnmeB" role="3PaCim">
               <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
@@ -2885,17 +2851,11 @@
           <node concept="2YIFZM" id="3oMuSXR7loM" role="3cqZAk">
             <ref role="37wK5l" to="3o3z:~Sets.newHashSet(java.lang.Object...):java.util.HashSet" resolve="newHashSet" />
             <ref role="1Pybhc" to="3o3z:~Sets" resolve="Sets" />
-            <node concept="2OqwBi" id="2RSm1Cz_Riq" role="37wK5m">
-              <node concept="35c_gC" id="2RSm1Cz_Rir" role="2Oq$k0">
-                <ref role="35c_gD" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
-              </node>
-              <node concept="FGMqu" id="2RSm1Cz_Ris" role="2OqNvi" />
+            <node concept="3B5_sB" id="2RSm1Cz_Riq" role="37wK5m">
+              <ref role="3B5MYn" to="ebqt:Tz5AFeF__S" resolve="FunVariableReference" />
             </node>
-            <node concept="2OqwBi" id="2RSm1Cz_Rxs" role="37wK5m">
-              <node concept="35c_gC" id="2RSm1Cz_Rxt" role="2Oq$k0">
-                <ref role="35c_gD" to="ebqt:Tz5AFeCUC5" resolve="FunTemporaryVariable" />
-              </node>
-              <node concept="FGMqu" id="2RSm1Cz_Rxu" role="2OqNvi" />
+            <node concept="3B5_sB" id="2RSm1Cz_Rxs" role="37wK5m">
+              <ref role="3B5MYn" to="ebqt:Tz5AFeCUC5" resolve="FunTemporaryVariable" />
             </node>
             <node concept="3Tqbb2" id="3oMuSXR7loT" role="3PaCim">
               <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />

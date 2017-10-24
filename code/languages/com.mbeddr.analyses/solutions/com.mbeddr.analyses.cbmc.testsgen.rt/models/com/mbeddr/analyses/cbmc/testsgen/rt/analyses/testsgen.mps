@@ -701,7 +701,7 @@
             <node concept="3Tqbb2" id="3Kl8TLCOUkm" role="1tU5fm" />
             <node concept="2YIFZM" id="3Kl8TLCOUks" role="33vP2m">
               <ref role="1Pybhc" to="g4f5:73BQep1N5pg" resolve="TestsSaver" />
-              <ref role="37wK5l" to="g4f5:73BQep1N5pi" resolve="saveTests" />
+              <ref role="37wK5l" to="g4f5:73BQep1N5pi" resolve="saveTest" />
               <node concept="37vLTw" id="3Kl8TLCOUkt" role="37wK5m">
                 <ref role="3cqZAo" node="1UHnSpz_GCr" resolve="tvr" />
               </node>

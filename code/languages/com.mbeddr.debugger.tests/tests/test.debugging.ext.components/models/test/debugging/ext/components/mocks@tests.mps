@@ -19,7 +19,6 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports>
-    <import index="q9ah" ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" />
     <import index="p843" ref="r:41205d0b-93d2-4837-937e-e020f16d8b4f(test.debugging.ext.components.mocks)" />
   </imports>
   <registry>

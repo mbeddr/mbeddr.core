@@ -1143,7 +1143,7 @@
                 <property role="3clFbU" value="false" />
               </node>
               <node concept="10M0yZ" id="6SMTLRtvfh6" role="37vLTJ">
-                <ref role="3cqZAo" to="wtuq:6SMTLRtvcFc" resolve="preventSelectionHandling" />
+                <ref role="3cqZAo" to="wtuq:6SMTLRtvcFc" resolve="_preventSelectionHandling" />
                 <ref role="1PxDUh" to="wtuq:4$G0AukZNCp" resolve="RichtextUtil" />
               </node>
             </node>
@@ -1603,7 +1603,7 @@
             </node>
             <node concept="3fqX7Q" id="6SMTLRtviop" role="3clFbw">
               <node concept="10M0yZ" id="6SMTLRtvj16" role="3fr31v">
-                <ref role="3cqZAo" to="wtuq:6SMTLRtvcFc" resolve="preventSelectionHandling" />
+                <ref role="3cqZAo" to="wtuq:6SMTLRtvcFc" resolve="_preventSelectionHandling" />
                 <ref role="1PxDUh" to="wtuq:4$G0AukZNCp" resolve="RichtextUtil" />
               </node>
             </node>

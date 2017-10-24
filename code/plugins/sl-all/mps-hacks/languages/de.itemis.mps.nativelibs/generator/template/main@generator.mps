@@ -375,7 +375,7 @@
                 <node concept="3clFbF" id="2H_mjOXu6DQ" role="3cqZAp">
                   <node concept="2OqwBi" id="2H_mjOXu6DL" role="3clFbG">
                     <node concept="3Tsc0h" id="2H_mjOXu6DO" role="2OqNvi">
-                      <ref role="3TtcxE" to="9lvj:2H_mjOXpLc9" />
+                      <ref role="3TtcxE" to="9lvj:2H_mjOXpLc9" resolve="libraries" />
                     </node>
                     <node concept="30H73N" id="2H_mjOXu6DP" role="2Oq$k0" />
                   </node>
@@ -440,7 +440,7 @@
                 <node concept="3clFbF" id="1HOG8KqQ2r3" role="3cqZAp">
                   <node concept="2OqwBi" id="1HOG8KqQ2qY" role="3clFbG">
                     <node concept="3Tsc0h" id="1HOG8KqQ2r1" role="2OqNvi">
-                      <ref role="3TtcxE" to="9lvj:1HOG8KqOFMM" />
+                      <ref role="3TtcxE" to="9lvj:1HOG8KqOFMM" resolve="jars" />
                     </node>
                     <node concept="30H73N" id="1HOG8KqQ2r2" role="2Oq$k0" />
                   </node>

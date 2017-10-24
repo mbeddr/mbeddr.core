@@ -82,13 +82,13 @@
             <node concept="2OqwBi" id="6I2T_LF62OV" role="37wK5m">
               <node concept="2Sf5sV" id="6I2T_LF62MG" role="2Oq$k0" />
               <node concept="3TrEf2" id="6I2T_LF62Wk" role="2OqNvi">
-                <ref role="3Tt5mk" to="p2i4:6I2T_LF60YP" />
+                <ref role="3Tt5mk" to="p2i4:6I2T_LF60YP" resolve="im" />
               </node>
             </node>
             <node concept="2OqwBi" id="6I2T_LF6zB1" role="37wK5m">
               <node concept="2Sf5sV" id="6I2T_LF6z$m" role="2Oq$k0" />
               <node concept="3TrEf2" id="6I2T_LF6zJl" role="2OqNvi">
-                <ref role="3Tt5mk" to="p2i4:6I2T_LF6x$Y" />
+                <ref role="3Tt5mk" to="p2i4:6I2T_LF6x$Y" resolve="harness" />
               </node>
             </node>
             <node concept="2OqwBi" id="6I2T_LF63jo" role="37wK5m">
