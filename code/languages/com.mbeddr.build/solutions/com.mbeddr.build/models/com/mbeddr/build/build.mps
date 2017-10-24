@@ -6457,6 +6457,12 @@
           <property role="TrG5h" value="com.mbeddr.ext.units#7696659106845773538" />
           <property role="3LESm3" value="4946b1ce-99f4-4894-90b6-e08eb8b6de40" />
           <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="7RqsRsdaZDb" role="3bR37C">
+            <node concept="3bR9La" id="7RqsRsdaZDc" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="X9ZTK72v9G" role="3bR37C">
           <node concept="3bR9La" id="X9ZTK72v9H" role="1SiIV1">
