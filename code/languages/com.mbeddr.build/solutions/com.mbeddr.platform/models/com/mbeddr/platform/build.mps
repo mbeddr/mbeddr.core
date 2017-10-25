@@ -9675,14 +9675,14 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7LLAKnnJeWr" role="3bR37C">
-          <node concept="3bR9La" id="7LLAKnnJeWs" role="1SiIV1">
+        <node concept="1SiIV0" id="2DWJLXXDk_d" role="3bR37C">
+          <node concept="3bR9La" id="2DWJLXXDk_e" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7LLAKnnJeWt" role="3bR37C">
-          <node concept="3bR9La" id="7LLAKnnJeWu" role="1SiIV1">
+        <node concept="1SiIV0" id="2DWJLXXDk_f" role="3bR37C">
+          <node concept="3bR9La" id="2DWJLXXDk_g" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
@@ -9741,8 +9741,8 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7LLAKnnJg5k" role="3bR37C">
-          <node concept="3bR9La" id="7LLAKnnJg5l" role="1SiIV1">
+        <node concept="1SiIV0" id="2DWJLXXDlHQ" role="3bR37C">
+          <node concept="3bR9La" id="2DWJLXXDlHR" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="52ZF9D3gLhJ" resolve="com.mbeddr.mpsutil.modellisteners.runtime" />
           </node>
@@ -10869,6 +10869,12 @@
         <node concept="1SiIV0" id="4RSukN8i0pM" role="3bR37C">
           <node concept="1Busua" id="4RSukN8i0pN" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2DWJLXXDjsp" role="3bR37C">
+          <node concept="3bR9La" id="2DWJLXXDjsq" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="2Z2H3pkY6Sh" resolve="com.mbeddr.mpsutil.userstyles.runtime" />
           </node>
         </node>
         <node concept="1E0d5M" id="2Z2H3pkYtfC" role="1E1XAP">
