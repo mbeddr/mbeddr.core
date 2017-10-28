@@ -168,7 +168,7 @@
     <property role="TrG5h" value="Export" />
     <property role="WqcPg" value="My strange export config" />
     <node concept="2SbEIf" id="4eRbT2iEycg" role="30Gjbg">
-      <property role="2SbEId" value="dummy_path" />
+      <property role="2SbEId" value="/Users/kdummann/source/mbeddr/mbeddr.core/" />
       <ref role="2SbEIe" node="2khznRHyx6e" resolve="main" />
     </node>
     <node concept="1_0j5j" id="2khznRHyx6i" role="30Gjbj">
