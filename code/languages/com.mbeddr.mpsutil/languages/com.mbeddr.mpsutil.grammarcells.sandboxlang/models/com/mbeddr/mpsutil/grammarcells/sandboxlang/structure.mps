@@ -2,6 +2,7 @@
 <model ref="r:ad27d4b4-fc2c-4b6d-9e22-455eb0ccf354(com.mbeddr.mpsutil.grammarcells.sandboxlang.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -518,7 +519,7 @@
   </node>
   <node concept="AxPO7" id="7FkgTXZtQev">
     <property role="TrG5h" value="Enum1" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
+    <property role="3lZH7k" value="derive_from_presentation" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="7FkgTXZtQew" role="M5hS2">
       <property role="1uS6qo" value="a" />

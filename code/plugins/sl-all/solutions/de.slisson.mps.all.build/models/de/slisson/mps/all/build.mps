@@ -3444,7 +3444,7 @@
         <property role="TrG5h" value="de.itemis.mps.editor.diagram.devkit" />
         <property role="3LESm3" value="b1972fb0-9171-4e58-8cee-05866bb91ec2" />
         <node concept="398BVA" id="5kDpuTS3htL" role="3LF7KH">
-          <ref role="398BVh" node="3vzyAKEJSiZ" />
+          <ref role="398BVh" node="3vzyAKEJSiZ" resolve="sl-all.home" />
           <node concept="2Ry0Ak" id="5kDpuTS3ink" role="iGT6I">
             <property role="2Ry0Am" value="diagram" />
             <node concept="2Ry0Ak" id="3vzyAKEK3lS" role="2Ry0An">
@@ -3456,10 +3456,10 @@
           </node>
         </node>
         <node concept="3LEDTy" id="5kDpuTS3jgQ" role="3LEDUa">
-          <ref role="3LEDTV" node="56Tfdun3uan" />
+          <ref role="3LEDTV" node="56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
         </node>
         <node concept="3LEDTy" id="5kDpuTS3jgR" role="3LEDUa">
-          <ref role="3LEDTV" node="4be$WTb1CbJ" />
+          <ref role="3LEDTV" node="4be$WTb1CbJ" resolve="de.itemis.mps.editor.diagram" />
         </node>
       </node>
     </node>

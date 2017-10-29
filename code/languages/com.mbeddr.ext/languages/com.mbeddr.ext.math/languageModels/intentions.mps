@@ -145,7 +145,7 @@
                 <ref role="3cqZAo" node="3bfDwHbD0vo" resolve="frac" />
               </node>
               <node concept="3TrEf2" id="3bfDwHbD1Ub" role="2OqNvi">
-                <ref role="3Tt5mk" to="cetu:4r1mNB_wZt0" />
+                <ref role="3Tt5mk" to="cetu:4r1mNB_wZt0" resolve="left" />
               </node>
             </node>
           </node>
@@ -203,7 +203,7 @@
                 <ref role="3cqZAo" node="3bfDwHbD2mw" resolve="frac" />
               </node>
               <node concept="3TrEf2" id="3bfDwHbD3wX" role="2OqNvi">
-                <ref role="3Tt5mk" to="cetu:4r1mNB_wZtB" />
+                <ref role="3Tt5mk" to="cetu:4r1mNB_wZtB" resolve="right" />
               </node>
             </node>
           </node>

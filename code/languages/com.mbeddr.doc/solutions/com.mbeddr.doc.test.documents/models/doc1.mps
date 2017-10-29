@@ -98,7 +98,7 @@
   <node concept="1_1swa" id="4pIcGABsAb1">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="myDocument" />
-    <ref role="G9hjw" node="4pIcGABsMlJ" resolve="IneedThisShitToo" />
+    <ref role="G9hjw" node="4pIcGABsMlJ" resolve="IneedThisToo" />
     <node concept="1_0VNX" id="4pIcGABsAb2" role="1_0VJ0">
       <property role="TrG5h" value="firstsection" />
       <property role="1_0VJr" value="This the first section" />
@@ -115,7 +115,7 @@
       <node concept="OjmMv" id="4pIcGABsAbj" role="3z_lpS">
         <node concept="19SGf9" id="4pIcGABsAbk" role="OjmMu">
           <node concept="19SUe$" id="4pIcGABsAbl" role="19SJt6">
-            <property role="19SUeA" value="fuck this shitty generator" />
+            <property role="19SUeA" value="Embedded code" />
           </node>
         </node>
       </node>
@@ -140,7 +140,7 @@
     <node concept="1TaS0h" id="1xGVIWdAy29" role="30GjaH" />
   </node>
   <node concept="2SbYGP" id="4pIcGABsMlJ">
-    <property role="TrG5h" value="IneedThisShitToo" />
+    <property role="TrG5h" value="IneedThisToo" />
     <node concept="1_07dB" id="4pIcGABsMl5" role="2wNnkt" />
     <node concept="2SbYGw" id="4pIcGABsMlK" role="Cbewh">
       <property role="TrG5h" value="main" />

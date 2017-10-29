@@ -189,11 +189,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
-      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -204,6 +200,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
       </concept>
@@ -1187,11 +1186,8 @@
       <node concept="3Tm1VV" id="3k78NV$pWtf" role="1B3o_S" />
       <node concept="3clFbS" id="3k78NV$pWtg" role="3clF47">
         <node concept="3cpWs6" id="3k78NV$pWth" role="3cqZAp">
-          <node concept="2OqwBi" id="2RSm1Cz_kHL" role="3cqZAk">
-            <node concept="35c_gC" id="2RSm1Cz_ksK" role="2Oq$k0">
-              <ref role="35c_gD" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
-            </node>
-            <node concept="FGMqu" id="2RSm1Cz_l4s" role="2OqNvi" />
+          <node concept="3B5_sB" id="2RSm1Cz_kHL" role="3cqZAk">
+            <ref role="3B5MYn" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
           </node>
         </node>
       </node>
@@ -1249,11 +1245,8 @@
       <node concept="3Tm1VV" id="3k78NV$pVSP" role="1B3o_S" />
       <node concept="3clFbS" id="3k78NV$pVSU" role="3clF47">
         <node concept="3cpWs6" id="3k78NV$pW0G" role="3cqZAp">
-          <node concept="2OqwBi" id="2RSm1Cz_jSF" role="3cqZAk">
-            <node concept="35c_gC" id="2RSm1Cz_jBy" role="2Oq$k0">
-              <ref role="35c_gD" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
-            </node>
-            <node concept="FGMqu" id="2RSm1Cz_kfm" role="2OqNvi" />
+          <node concept="3B5_sB" id="2RSm1Cz_jSF" role="3cqZAk">
+            <ref role="3B5MYn" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
           </node>
         </node>
       </node>

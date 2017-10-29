@@ -204,7 +204,7 @@
               <node concept="2Sf5sV" id="6AAaFOTDhhA" role="2Oq$k0" />
               <node concept="3CFZ6_" id="6AAaFOTDiWN" role="2OqNvi">
                 <node concept="3CFYIy" id="6AAaFOTDj5v" role="3CFYIz">
-                  <ref role="3CFYIx" to="llb3:6AAaFOTBk1q" resolve="HarnesSaver" />
+                  <ref role="3CFYIx" to="llb3:6AAaFOTBk1q" resolve="CollectTraces" />
                 </node>
               </node>
             </node>
@@ -217,7 +217,7 @@
                   <node concept="2Sf5sV" id="6AAaFOTDk1U" role="2Oq$k0" />
                   <node concept="3CFZ6_" id="6AAaFOTDlAJ" role="2OqNvi">
                     <node concept="3CFYIy" id="6AAaFOTDlHM" role="3CFYIz">
-                      <ref role="3CFYIx" to="llb3:6AAaFOTBk1q" resolve="HarnesSaver" />
+                      <ref role="3CFYIx" to="llb3:6AAaFOTBk1q" resolve="CollectTraces" />
                     </node>
                   </node>
                 </node>
@@ -233,7 +233,7 @@
                     <node concept="2Sf5sV" id="6AAaFOTDmO6" role="2Oq$k0" />
                     <node concept="3CFZ6_" id="6AAaFOTDooV" role="2OqNvi">
                       <node concept="3CFYIy" id="6AAaFOTDovY" role="3CFYIz">
-                        <ref role="3CFYIx" to="llb3:6AAaFOTBk1q" resolve="HarnesSaver" />
+                        <ref role="3CFYIx" to="llb3:6AAaFOTBk1q" resolve="CollectTraces" />
                       </node>
                     </node>
                   </node>
