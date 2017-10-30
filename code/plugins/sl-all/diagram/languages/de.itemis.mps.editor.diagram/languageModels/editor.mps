@@ -1055,6 +1055,27 @@
         </node>
         <node concept="2EHx9g" id="63Tq0M9tPFK" role="2iSdaV" />
       </node>
+      <node concept="3F0ifn" id="5aBcFaYeoFv" role="3EZMnx" />
+      <node concept="3EZMnI" id="7eLeaWFPqdW" role="3EZMnx">
+        <node concept="VPM3Z" id="7eLeaWFPqdY" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="VPXOz" id="5aBcFaYcv6z" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="7eLeaWFPqe0" role="3EZMnx">
+          <property role="3F0ifm" value="Ignore associated edges while deleting box: " />
+          <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+        </node>
+        <node concept="3F0A7n" id="7eLeaWFPqeI" role="3EZMnx">
+          <property role="1$x2rV" value="true" />
+          <ref role="1NtTu8" to="2qld:7eLeaWFPq1P" resolve="ignoreEdgesOnDeletion" />
+          <node concept="Vb9p2" id="5aBcFaYeMVR" role="3F10Kt">
+            <property role="Vbekb" value="ITALIC" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="7eLeaWFPqe1" role="2iSdaV" />
+      </node>
       <node concept="VPM3Z" id="63Tq0M9tPFL" role="3F10Kt">
         <property role="VOm3f" value="false" />
       </node>
@@ -2604,6 +2625,26 @@
       </node>
       <node concept="PMmxH" id="4GZkTSmg$TT" role="3EZMnx">
         <ref role="PMmxG" to="tpc5:1cEk0X7pP35" resolve="CellStyle_Component" />
+      </node>
+      <node concept="3F0ifn" id="5aBcFaYdYLc" role="3EZMnx" />
+      <node concept="3EZMnI" id="7eLeaWG2Vdr" role="3EZMnx">
+        <node concept="VPM3Z" id="7eLeaWG2Vds" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="VPXOz" id="5aBcFaYcv4W" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="7eLeaWG2Vdt" role="3EZMnx">
+          <property role="3F0ifm" value="Ignore associated edges while deleting box: " />
+          <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+        </node>
+        <node concept="3F0A7n" id="7eLeaWG2Vdu" role="3EZMnx">
+          <ref role="1NtTu8" to="2qld:7eLeaWG2Tlc" resolve="ignoreEdgesOnDeletion" />
+          <node concept="Vb9p2" id="5aBcFaYeMWa" role="3F10Kt">
+            <property role="Vbekb" value="ITALIC" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="7eLeaWG2Vdv" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="4GZkTSmg$TU" role="2iSdaV" />
     </node>
