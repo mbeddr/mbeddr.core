@@ -876,6 +876,9 @@
     </node>
     <node concept="m$_wf" id="$bJ0jguQdg" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.platform" />
+      <node concept="m$_yC" id="kHDGx7tv66" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:6WtY9M1bDO_" resolve="jetbrains.mps.ide.java" />
+      </node>
       <node concept="3_J27D" id="$bJ0jguQdh" role="m$_yQ">
         <node concept="3Mxwew" id="$bJ0jguQdi" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.platform" />

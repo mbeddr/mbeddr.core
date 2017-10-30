@@ -168,6 +168,7 @@
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
+      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -3188,6 +3189,19 @@
                       <property role="3cmrfH" value="0" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2D$HA$_$qCh" role="3cqZAp">
+              <node concept="37vLTI" id="2D$HA$__2Kk" role="3clFbG">
+                <node concept="37vLTw" id="2D$HA$__2L5" role="37vLTJ">
+                  <ref role="3cqZAo" node="2cCHKvASMe1" resolve="typeName" />
+                </node>
+                <node concept="2OqwBi" id="2D$HA$_$r74" role="37vLTx">
+                  <node concept="37vLTw" id="2D$HA$_$qCf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2cCHKvASMe1" resolve="typeName" />
+                  </node>
+                  <node concept="17S1cR" id="2D$HA$_$rEp" role="2OqNvi" />
                 </node>
               </node>
             </node>
