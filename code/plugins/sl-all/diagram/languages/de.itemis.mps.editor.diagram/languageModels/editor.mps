@@ -95,6 +95,7 @@
       <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -2602,6 +2603,26 @@
           </node>
           <node concept="2iRfu4" id="7tKD69sBktw" role="2iSdaV" />
         </node>
+        <node concept="3EZMnI" id="3uS6dOiR6XJ" role="3EZMnx">
+          <node concept="VPM3Z" id="3uS6dOiRS9J" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="3uS6dOiRS9K" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="3uS6dOiR6XN" role="3EZMnx">
+            <property role="3F0ifm" value="can delete edges " />
+          </node>
+          <node concept="3F1sOY" id="3uS6dOiR72a" role="3EZMnx">
+            <property role="39s7Ar" value="true" />
+            <property role="1$x2rV" value="true" />
+            <ref role="1NtTu8" to="2qld:3uS6dOiR6Sv" resolve="canDeleteEdges" />
+            <node concept="VPXOz" id="3uS6dOiSEDo" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="3uS6dOiR6XO" role="2iSdaV" />
+        </node>
         <node concept="VPM3Z" id="7L$rKAV3q3j" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
@@ -2625,26 +2646,6 @@
       </node>
       <node concept="PMmxH" id="4GZkTSmg$TT" role="3EZMnx">
         <ref role="PMmxG" to="tpc5:1cEk0X7pP35" resolve="CellStyle_Component" />
-      </node>
-      <node concept="3F0ifn" id="5aBcFaYdYLc" role="3EZMnx" />
-      <node concept="3EZMnI" id="7eLeaWG2Vdr" role="3EZMnx">
-        <node concept="VPM3Z" id="7eLeaWG2Vds" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="VPXOz" id="5aBcFaYcv4W" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="3F0ifn" id="7eLeaWG2Vdt" role="3EZMnx">
-          <property role="3F0ifm" value="Ignore associated edges while deleting box: " />
-          <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
-        </node>
-        <node concept="3F0A7n" id="7eLeaWG2Vdu" role="3EZMnx">
-          <ref role="1NtTu8" to="2qld:7eLeaWG2Tlc" resolve="ignoreEdgesOnDeletion" />
-          <node concept="Vb9p2" id="5aBcFaYeMWa" role="3F10Kt">
-            <property role="Vbekb" value="ITALIC" />
-          </node>
-        </node>
-        <node concept="l2Vlx" id="7eLeaWG2Vdv" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="4GZkTSmg$TU" role="2iSdaV" />
     </node>
