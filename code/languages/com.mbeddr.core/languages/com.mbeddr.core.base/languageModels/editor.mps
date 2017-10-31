@@ -7385,15 +7385,10 @@
             <property role="TrG5h" value="settings" />
             <node concept="2ShNRf" id="633huCnq1w2" role="33vP2m">
               <node concept="1pGfFk" id="633huCnq1w3" role="2ShVmc">
-                <ref role="37wK5l" to="zwau:~ConceptEditorHintSettings.&lt;init&gt;(java.lang.Iterable)" resolve="ConceptEditorHintSettings" />
-                <node concept="2OqwBi" id="633huCnq1w4" role="37wK5m">
-                  <node concept="2YIFZM" id="633huCnq1w5" role="2Oq$k0">
-                    <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-                    <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance():jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
-                  </node>
-                  <node concept="liA8E" id="633huCnq1w6" role="2OqNvi">
-                    <ref role="37wK5l" to="vndm:~LanguageRegistry.getAvailableLanguages():java.util.Collection" resolve="getAvailableLanguages" />
-                  </node>
+                <ref role="37wK5l" to="zwau:~ConceptEditorHintSettings.&lt;init&gt;(jetbrains.mps.smodel.language.LanguageRegistry)" resolve="ConceptEditorHintSettings" />
+                <node concept="2YIFZM" id="633huCnq1w5" role="37wK5m">
+                  <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
+                  <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance():jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
                 </node>
               </node>
             </node>
