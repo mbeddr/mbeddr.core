@@ -65,20 +65,15 @@
   </registry>
   <node concept="1Lo5vl" id="1QyV25GL5M5">
     <property role="TrG5h" value="MyIcons" />
-    <node concept="1Lo5v9" id="1QyV25GL5MW" role="1Lo5vp">
-      <property role="TrG5h" value="iconb" />
-      <property role="1Lo5vd" value="${mbeddr.github.core.home}/code/plugins/sl-all/mps-boolean-editor/languages/de.itemis.mps.editor.bool.demolang/icons/dialog-close.png" />
-      <property role="1Lo5ve" value="0.4" />
-    </node>
-    <node concept="1Lo5v9" id="1QyV25GLgy6" role="1Lo5vp">
+    <node concept="1Lo5v9" id="1kojPMTgynt" role="1Lo5vp">
       <property role="TrG5h" value="icona" />
       <property role="1Lo5vd" value="${mbeddr.github.core.home}/code/plugins/sl-all/mps-boolean-editor/languages/de.itemis.mps.editor.bool.demolang/icons/dialog-ok-3.png" />
       <property role="1Lo5ve" value="0.4" />
     </node>
-    <node concept="1Lo5v9" id="1vp0nsAbfqk" role="1Lo5vp">
-      <property role="TrG5h" value="iconc" />
-      <property role="1Lo5vd" value="${mbeddr.github.core.home}/code/plugins/sl-all/mps-boolean-editor/languages/de.itemis.mps.editor.bool.demolang/icons/circle.png" />
-      <property role="1Lo5ve" value="0.3" />
+    <node concept="1Lo5v9" id="1kojPMTgyn$" role="1Lo5vp">
+      <property role="TrG5h" value="iconb" />
+      <property role="1Lo5vd" value="${mbeddr.github.core.home}/code/plugins/sl-all/mps-boolean-editor/languages/de.itemis.mps.editor.bool.demolang/icons/dialog-close.png" />
+      <property role="1Lo5ve" value="0.4" />
     </node>
   </node>
   <node concept="24kQdi" id="1QyV25GL5NV">
@@ -92,25 +87,25 @@
           <property role="3F0ifm" value="test: " />
         </node>
         <node concept="3XFhqQ" id="GXE8OPdFBW" role="3EZMnx" />
-        <node concept="1Lo5uZ" id="GXE8OPcUUu" role="3EZMnx">
+        <node concept="1Lo5uZ" id="2c44_0Lhdwj" role="3EZMnx">
           <ref role="1NtTu8" to="xd7r:1QyV25GL5NF" resolve="test1" />
-          <node concept="1Lo5v5" id="GXE8OPdia8" role="1LpEKq">
-            <property role="TrG5h" value="checkbox_a" />
-            <ref role="1Lo5vu" node="1QyV25GLgy6" resolve="icona" />
+          <node concept="1Lo5v5" id="1kojPMTgvmb" role="1LpEKq">
+            <property role="TrG5h" value="a" />
             <ref role="1Lo50z" to="xd7r:1QyV25GL5N_" />
-            <ref role="1Vnzw9" node="GXE8OPdiaa" resolve="checkbox_b" />
+            <ref role="1Lo5vu" node="1kojPMTgynt" resolve="icona" />
+            <ref role="1Vnzw9" node="1kojPMTgymo" resolve="b" />
           </node>
-          <node concept="1Lo5v5" id="GXE8OPdiaa" role="1LpEKq">
-            <property role="TrG5h" value="checkbox_b" />
-            <ref role="1Lo5vu" node="1QyV25GL5MW" resolve="iconb" />
+          <node concept="1Lo5v5" id="1kojPMTgymo" role="1LpEKq">
+            <property role="TrG5h" value="b" />
             <ref role="1Lo50z" to="xd7r:1QyV25GL5NA" />
-            <ref role="1Vnzw9" node="1vp0nsAbecW" resolve="checkbox_c" />
+            <ref role="1Vnzw9" node="1kojPMTgvmb" resolve="a" />
+            <ref role="1Lo5vu" node="1kojPMTgyn$" resolve="iconb" />
           </node>
-          <node concept="1Lo5v5" id="1vp0nsAbecW" role="1LpEKq">
-            <property role="TrG5h" value="checkbox_c" />
+          <node concept="1Lo5v5" id="5ZOdHnczaBr" role="1LpEKq">
+            <property role="TrG5h" value="c" />
             <ref role="1Lo50z" to="xd7r:1vp0nsAbecS" />
-            <ref role="1Lo5vu" node="1vp0nsAbfqk" resolve="iconc" />
-            <ref role="1Vnzw9" node="GXE8OPdiaa" resolve="checkbox_b" />
+            <ref role="1Lo5vu" node="1kojPMTgyn$" resolve="iconb" />
+            <ref role="1Vnzw9" node="5ZOdHnczaBr" resolve="c" />
           </node>
         </node>
         <node concept="l2Vlx" id="GXE8OPcUUe" role="2iSdaV" />
