@@ -133,7 +133,6 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
@@ -396,11 +395,8 @@
                               <node concept="2GrUjf" id="3YyHFqO7Fdc" role="37wK5m">
                                 <ref role="2Gs0qQ" node="3YyHFqO7DzL" resolve="target" />
                               </node>
-                              <node concept="2OqwBi" id="3YyHFqO7Jrg" role="37wK5m">
-                                <node concept="37vLTw" id="3YyHFqO7Fhm" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="3YyHFqO7Bo2" resolve="matchNode" />
-                                </node>
-                                <node concept="1$rogu" id="3YyHFqO7J$O" role="2OqNvi" />
+                              <node concept="37vLTw" id="3YyHFqO7Fhm" role="37wK5m">
+                                <ref role="3cqZAo" node="3YyHFqO7Bo2" resolve="matchNode" />
                               </node>
                               <node concept="37vLTw" id="5B$wwdf6FY$" role="37wK5m">
                                 <ref role="3cqZAo" node="5be2k4k3ZWA" resolve="context" />

@@ -29,6 +29,7 @@ TEST-*.xml
 junit*.properties
 
 classes_gen
+doc_gen
 source_gen
 source_gen.caches
 result_gen

@@ -244,7 +244,7 @@
           </node>
           <node concept="38rIoz" id="4kJ3EIm6ieR" role="38rM$J">
             <property role="38rIoG" value="cnt.flag" />
-            <property role="38rMdH" value="0.000000f" />
+            <property role="38rMdH" value="0.0f" />
             <node concept="3Tqbb2" id="4kJ3EIm6ieS" role="38rYrG">
               <ref role="ehGHo" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
             </node>
@@ -265,7 +265,7 @@
           </node>
           <node concept="38rIoz" id="4kJ3EIm6ieX" role="38rM$J">
             <property role="38rIoG" value="cnt.flag" />
-            <property role="38rMdH" value="1.100000e+0f" />
+            <property role="38rMdH" value="1.1f" />
           </node>
           <node concept="38rIoz" id="4kJ3EIm6ieY" role="38rM$J">
             <property role="38rIoG" value="leave statemachine init" />

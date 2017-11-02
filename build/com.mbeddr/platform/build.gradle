@@ -49,7 +49,7 @@ task copy_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
 task install_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
     from "$rootDir/artifacts/mps-sl-all/"
     include "de.itemis.mps.nativelibs.loader/"
-    into "$mpsInstallationDir/plugins"
+    into "$mpsPluginsDir"
 }
 
 
@@ -58,8 +58,15 @@ task build_platform(type: BuildLanguages, dependsOn: copy_sl_all_nativelibs) {
     script scriptFile('com.mbeddr.platform/build.xml')
 }
 
+task install_actionsfilter(type: Copy, dependsOn: build_platform) {
+    from "$rootDir/artifacts/com.mbeddr.platform/"
+    include "com.mbeddr.mpsutil.actionsfilter/"
+    into "$mpsPluginsDir"
+}
+
 task test_mbeddr_platform(type: TestLanguages, dependsOn: build_platform) {
     script script_test_mbeddrPlatform
+    description "execute typesystem and generator tests for the plaform"
 }
 
 task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platform, test_mbeddr_platform]) {

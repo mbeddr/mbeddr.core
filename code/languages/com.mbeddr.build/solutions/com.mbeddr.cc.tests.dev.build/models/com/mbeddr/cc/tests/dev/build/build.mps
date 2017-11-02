@@ -296,6 +296,9 @@
       <node concept="L2wRC" id="7eF9rfAnzV4" role="39821P">
         <ref role="L2wRA" node="7eF9rfAnzVe" resolve="test.ts.requirements" />
       </node>
+      <node concept="L2wRC" id="352CMsvKMMs" role="39821P">
+        <ref role="L2wRA" node="352CMsvKMzF" resolve="test.ts.cc.var.composition" />
+      </node>
     </node>
     <node concept="m$_wf" id="7eF9rfAnzV5" role="3989C9">
       <property role="m$_wk" value="dummy" />
@@ -413,6 +416,31 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="352CMsvKMzF" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.ts.cc.var.composition" />
+        <property role="3LESm3" value="02934d30-d149-4f7d-864e-7f376629ae8f" />
+        <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="sources and tests" />
+        <node concept="398BVA" id="352CMsvKM_L" role="3LF7KH">
+          <ref role="398BVh" node="7eF9rfAnzUi" resolve="mbeddr.cc" />
+          <node concept="2Ry0Ak" id="352CMsvKM_M" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="352CMsvKMDl" role="2Ry0An">
+              <property role="2Ry0Am" value="test.ts.cc.var.composition" />
+              <node concept="2Ry0Ak" id="352CMsvKMHW" role="2Ry0An">
+                <property role="2Ry0Am" value="test.ts.cc.var.composition.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="352CMsvKMJ7" role="3bR37C">
+          <node concept="3bR9La" id="352CMsvKMJ8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:1Ua9OmPacfS" resolve="com.mbeddr.cc.var.composition.c" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="22LTRH" id="7eF9rfAnzVt" role="1hWBAP">
       <property role="TrG5h" value="com.mbeddr.cc.tests" />
@@ -424,6 +452,9 @@
       </node>
       <node concept="22LTRM" id="7eF9rfAnzVw" role="22LTRK">
         <ref role="22LTRN" node="7eF9rfAnzVe" resolve="test.ts.requirements" />
+      </node>
+      <node concept="22LTRM" id="352CMsvKMSn" role="22LTRK">
+        <ref role="22LTRN" node="352CMsvKMzF" resolve="test.ts.cc.var.composition" />
       </node>
     </node>
     <node concept="398rNT" id="6BHziVHZYZK" role="1l3spd">

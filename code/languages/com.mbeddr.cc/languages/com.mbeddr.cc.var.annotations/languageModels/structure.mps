@@ -2,6 +2,7 @@
 <model ref="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -26,6 +27,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -75,6 +77,9 @@
     </node>
     <node concept="PrWs8" id="5DBke2vxOrf" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
+    </node>
+    <node concept="PrWs8" id="36vfsFTONxp" role="PzmwI">
+      <ref role="PrY4T" node="6OO5J4wxqcd" resolve="IConditionalAnnotation" />
     </node>
   </node>
   <node concept="1TIwiD" id="$GQ7u4ko40">
@@ -136,6 +141,9 @@
       <node concept="trNpa" id="5GEPw8vxTYY" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
+    </node>
+    <node concept="PrWs8" id="6OO5J4wxqcf" role="PzmwI">
+      <ref role="PrY4T" node="6OO5J4wxqcd" resolve="IConditionalAnnotation" />
     </node>
   </node>
   <node concept="1TIwiD" id="2h6lNbWo01H">
@@ -262,6 +270,9 @@
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
     </node>
+    <node concept="PrWs8" id="6OO5J4wxqcg" role="PzmwI">
+      <ref role="PrY4T" node="6OO5J4wxqcd" resolve="IConditionalAnnotation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1wLq5fNouGZ">
     <property role="3GE5qa" value="programannotations" />
@@ -316,6 +327,9 @@
         <ref role="trN6q" to="tpck:h0TrEE$" resolve="INamedConcept" />
       </node>
     </node>
+    <node concept="PrWs8" id="36vfsFTOPxJ" role="PzmwI">
+      <ref role="PrY4T" node="6OO5J4wxqcd" resolve="IConditionalAnnotation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6ixWMIzApPv">
     <property role="3GE5qa" value="programannotations" />
@@ -342,6 +356,9 @@
         <ref role="trN6q" to="tpck:h0TrEE$" resolve="INamedConcept" />
       </node>
     </node>
+    <node concept="PrWs8" id="6OO5J4wxqce" role="PzmwI">
+      <ref role="PrY4T" node="6OO5J4wxqcd" resolve="IConditionalAnnotation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="10hF$bDHk9">
     <property role="3GE5qa" value="programannotations" />
@@ -364,6 +381,16 @@
     <node concept="PrWs8" id="1HBb4ql6EAg" role="PzmwI">
       <ref role="PrY4T" to="qqyh:5USXI9KzkZI" resolve="IMapping" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="6OO5J4wolUA">
+    <property role="EcuMT" value="7868939673809280678" />
+    <property role="3GE5qa" value="programannotations" />
+    <property role="TrG5h" value="IMayNotBeConditionallyReplaced" />
+  </node>
+  <node concept="PlHQZ" id="6OO5J4wxqcd">
+    <property role="EcuMT" value="7868939673811657485" />
+    <property role="3GE5qa" value="programannotations" />
+    <property role="TrG5h" value="IConditionalAnnotation" />
   </node>
 </model>
 

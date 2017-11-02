@@ -3,16 +3,16 @@
   <persistence version="9" />
   <languages>
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
-    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="-1" />
+    <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
-    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="-1" />
+    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="0" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
-    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
-    <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="-1" />
+    <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
+    <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
   </languages>
   <imports />
@@ -87,8 +87,11 @@
     <language id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core">
       <concept id="4053481679317021366" name="com.mbeddr.analyses.cbmc.core.structure.RobustnessCBMCAnalysis" flags="ng" index="1nvAUE">
         <property id="9020927825194549928" name="check_memory_leak" index="2o64iB" />
+        <property id="4053481679317021372" name="check_nan" index="1nvAUw" />
         <property id="4053481679317021368" name="check_pointer" index="1nvAU$" />
+        <property id="4053481679317021369" name="check_array_bounds" index="1nvAU_" />
         <property id="4053481679317021370" name="check_signed_overflow" index="1nvAUA" />
+        <property id="4053481679317021371" name="check_unsigned_overflow" index="1nvAUB" />
         <property id="4053481679317021367" name="check_div_by_zero" index="1nvAUF" />
         <property id="7634619718342724140" name="check_conversion" index="1UWlg3" />
       </concept>
@@ -1119,6 +1122,9 @@
     <node concept="3GEVxB" id="prDxnvfD9m" role="3W6d8T">
       <ref role="3GEb4d" node="7UiQjZi_RH3" resolve="DivByZeroUserInput" />
     </node>
+    <node concept="3GEVxB" id="77XjP8HUx9E" role="3W6d8T">
+      <ref role="3GEb4d" node="5bSnXVJN5tY" resolve="DivByZeroFloatApproximation" />
+    </node>
     <node concept="3GEVxB" id="prDxnvg6ZP" role="3W6d8T">
       <ref role="3GEb4d" node="5V$HkqNY91f" resolve="Pointer" />
     </node>
@@ -1216,6 +1222,31 @@
       <property role="1UWlg3" value="true" />
       <property role="1nvAUA" value="true" />
       <ref role="3V$Cn$" node="4tIZ4QIjwgh" resolve="libCall2" />
+    </node>
+    <node concept="1nvAUE" id="77XjP8HUx9S" role="3V$2$K">
+      <property role="2lelRm" value="false" />
+      <property role="2lUGe1" value="true" />
+      <property role="2l50Lc" value="false" />
+      <property role="22uFEx" value="false" />
+      <property role="1Bxwel" value="false" />
+      <property role="3u2WvC" value="false" />
+      <property role="2l50Ka" value="none" />
+      <property role="2l50Km" value="none" />
+      <property role="2lUGeZ" value="true" />
+      <property role="2lUGdP" value="false" />
+      <property role="2lUHrg" value="25" />
+      <property role="2lUGbD" value="none" />
+      <property role="2lUGcN" value="false" />
+      <property role="2l50Mm" value="false" />
+      <property role="1nvAU_" value="true" />
+      <property role="1nvAUF" value="true" />
+      <property role="1nvAUw" value="true" />
+      <property role="1nvAU$" value="true" />
+      <property role="1nvAUA" value="true" />
+      <property role="1nvAUB" value="true" />
+      <property role="1UWlg3" value="true" />
+      <property role="2o64iB" value="true" />
+      <ref role="3V$Cn$" node="5bSnXVJN5u0" resolve="floatApproximation" />
     </node>
   </node>
 </model>

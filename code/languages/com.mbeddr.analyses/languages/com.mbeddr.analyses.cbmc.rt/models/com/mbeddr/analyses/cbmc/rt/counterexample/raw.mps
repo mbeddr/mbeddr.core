@@ -6625,7 +6625,7 @@
               </node>
             </node>
           </node>
-          <node concept="1Wc70l" id="6VCbeAJkKSb" role="3clFbw">
+          <node concept="1Wc70l" id="gWE$qazJg9" role="3clFbw">
             <node concept="1eOMI4" id="6VCbeAJkL03" role="3uHU7w">
               <node concept="22lmx$" id="6VCbeAJkS0C" role="1eOMHV">
                 <node concept="2OqwBi" id="6VCbeAJkV5_" role="3uHU7w">
@@ -6662,14 +6662,27 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="6VCbeAJkJpE" role="3uHU7B">
-              <node concept="37vLTw" id="6VCbeAJkJ7f" role="2Oq$k0">
-                <ref role="3cqZAo" node="6Iw$iGXiNQs" resolve="qName" />
+            <node concept="1Wc70l" id="6VCbeAJkKSb" role="3uHU7B">
+              <node concept="2OqwBi" id="6VCbeAJkJpE" role="3uHU7B">
+                <node concept="37vLTw" id="6VCbeAJkJ7f" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6Iw$iGXiNQs" resolve="qName" />
+                </node>
+                <node concept="liA8E" id="6VCbeAJkJXT" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="6VCbeAJkK0U" role="37wK5m">
+                    <property role="Xl_RC" value="unknown" />
+                  </node>
+                </node>
               </node>
-              <node concept="liA8E" id="6VCbeAJkJXT" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                <node concept="Xl_RD" id="6VCbeAJkK0U" role="37wK5m">
-                  <property role="Xl_RC" value="unknown" />
+              <node concept="3y3z36" id="gWE$qazPqj" role="3uHU7w">
+                <node concept="10Nm6u" id="gWE$qazQlB" role="3uHU7w" />
+                <node concept="2OqwBi" id="gWE$qazL9F" role="3uHU7B">
+                  <node concept="37vLTw" id="gWE$qazL9G" role="2Oq$k0">
+                    <ref role="3cqZAo" node="WwTuEsv1z1" resolve="currentState" />
+                  </node>
+                  <node concept="liA8E" id="gWE$qazL9H" role="2OqNvi">
+                    <ref role="37wK5l" node="WwTuEsr2_s" resolve="getFullLHSValue" />
+                  </node>
                 </node>
               </node>
             </node>

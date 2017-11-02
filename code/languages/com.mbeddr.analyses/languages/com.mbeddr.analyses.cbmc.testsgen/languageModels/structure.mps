@@ -2,6 +2,7 @@
 <model ref="r:3e67bdff-5e9f-43bc-9cf3-65e492181be4(com.mbeddr.analyses.cbmc.testsgen.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -74,6 +75,10 @@
     <node concept="M4N5e" id="8eVegzF8LN" role="M5hS2">
       <property role="1uS6qo" value="condition" />
       <property role="1uS6qv" value="condition" />
+    </node>
+    <node concept="M4N5e" id="5YccjAeca2A" role="M5hS2">
+      <property role="1uS6qv" value="mcdc" />
+      <property role="1uS6qo" value="mcdc" />
     </node>
   </node>
   <node concept="PlHQZ" id="1UHnSpzBief">

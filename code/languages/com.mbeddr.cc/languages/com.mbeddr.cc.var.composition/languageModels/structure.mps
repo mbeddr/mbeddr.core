@@ -2,6 +2,7 @@
 <model ref="r:7d4741f1-b780-4151-bf5a-811bc0aa7587(com.mbeddr.cc.var.composition.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -148,6 +149,9 @@
     </node>
     <node concept="PrWs8" id="3YyHFqO8SAq" role="PzmwI">
       <ref role="PrY4T" node="3YyHFqO8SAp" resolve="ICompositionControl" />
+    </node>
+    <node concept="PrWs8" id="12n15PAduaO" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1rXJcsmD0fG" resolve="IRequiresConfigItem" />
     </node>
   </node>
   <node concept="1TIwiD" id="3YyHFqO5xVX">

@@ -2,10 +2,10 @@
 <model ref="r:1f4ec22e-71ca-4d2d-9dd6-ed345595375d(com.mbeddr.core.make.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="-1" />
-    <use id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" name="jetbrains.mps.make.script" version="-1" />
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="0" />
+    <use id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" name="jetbrains.mps.make.script" version="0" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -32,7 +32,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
-    <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
+    <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" implicit="true" />
   </imports>
@@ -235,7 +235,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
@@ -1039,35 +1038,11 @@
                       </node>
                     </node>
                     <node concept="3clFbH" id="6KI2Y3YYJvZ" role="3cqZAp" />
-                    <node concept="3cpWs8" id="5mK2hjZx6bG" role="3cqZAp">
-                      <node concept="3cpWsn" id="5mK2hjZx6bJ" role="3cpWs9">
-                        <property role="TrG5h" value="noOfCores" />
-                        <node concept="10Oyi0" id="5mK2hjZx6bE" role="1tU5fm" />
-                        <node concept="2OqwBi" id="5mK2hjZx9bG" role="33vP2m">
-                          <node concept="2YIFZM" id="5mK2hjZx8X$" role="2Oq$k0">
-                            <ref role="37wK5l" to="wyt6:~Runtime.getRuntime():java.lang.Runtime" resolve="getRuntime" />
-                            <ref role="1Pybhc" to="wyt6:~Runtime" resolve="Runtime" />
-                          </node>
-                          <node concept="liA8E" id="5mK2hjZx9pP" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Runtime.availableProcessors():int" resolve="availableProcessors" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                     <node concept="3cpWs8" id="3dZgFhDBrjc" role="3cqZAp">
                       <node concept="3cpWsn" id="3dZgFhDBrjd" role="3cpWs9">
                         <property role="TrG5h" value="processBuilder" />
                         <node concept="3uibUv" id="3dZgFhDBrje" role="1tU5fm">
                           <ref role="3uigEE" to="wyt6:~ProcessBuilder" resolve="ProcessBuilder" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3cpWs8" id="42NvuOOOzJm" role="3cqZAp">
-                      <node concept="3cpWsn" id="42NvuOOOzJp" role="3cpWs9">
-                        <property role="TrG5h" value="mustRunMakeInParallel" />
-                        <node concept="10P_77" id="42NvuOOOzJk" role="1tU5fm" />
-                        <node concept="3clFbT" id="42NvuOOO_Wj" role="33vP2m">
-                          <property role="3clFbU" value="false" />
                         </node>
                       </node>
                     </node>
@@ -1090,68 +1065,70 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="3clFbF" id="42NvuOOOAtR" role="3cqZAp">
-                            <node concept="37vLTI" id="42NvuOOOCbq" role="3clFbG">
-                              <node concept="37vLTw" id="42NvuOOOAtP" role="37vLTJ">
-                                <ref role="3cqZAo" node="42NvuOOOzJp" resolve="mustRunMakeInParallel" />
-                              </node>
-                              <node concept="1Wc70l" id="3dZgFhDUEnc" role="37vLTx">
-                                <node concept="2OqwBi" id="3dZgFhDUH3k" role="3uHU7w">
-                                  <node concept="37vLTw" id="42NvuOOGGkb" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="42NvuOOGDBs" resolve="platform" />
-                                  </node>
-                                  <node concept="2qgKlT" id="3dZgFhDUIvY" role="2OqNvi">
-                                    <ref role="37wK5l" to="vog7:3dZgFhDSzmf" resolve="canBeParallelized" />
-                                  </node>
-                                </node>
-                                <node concept="3eOSWO" id="3dZgFhDBqft" role="3uHU7B">
-                                  <node concept="37vLTw" id="3dZgFhDBplh" role="3uHU7B">
-                                    <ref role="3cqZAo" node="5mK2hjZx6bJ" resolve="noOfCores" />
-                                  </node>
-                                  <node concept="3cmrfG" id="3dZgFhDBqfw" role="3uHU7w">
-                                    <property role="3cmrfH" value="1" />
-                                  </node>
+                          <node concept="3clFbJ" id="7GmkyIHGcyx" role="3cqZAp">
+                            <node concept="3clFbS" id="7GmkyIHGcyz" role="3clFbx">
+                              <node concept="3SKdUt" id="3dZgFhDBGCf" role="3cqZAp">
+                                <node concept="3SKdUq" id="3dZgFhDBGCh" role="3SKWNk">
+                                  <property role="3SKdUp" value="The -j option instructs the make to run it's recipes in parallel. The -1 is to " />
                                 </node>
                               </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbJ" id="3dZgFhDBosY" role="3cqZAp">
-                      <node concept="3clFbS" id="3dZgFhDBot0" role="3clFbx">
-                        <node concept="3SKdUt" id="3dZgFhDBGCf" role="3cqZAp">
-                          <node concept="3SKdUq" id="3dZgFhDBGCh" role="3SKWNk">
-                            <property role="3SKdUp" value=" The -j option instructs the make to run it's recipes in parallel. The -1 is to " />
-                          </node>
-                        </node>
-                        <node concept="3SKdUt" id="3dZgFhDBGVL" role="3cqZAp">
-                          <node concept="3SKdUq" id="3dZgFhDBGVN" role="3SKWNk">
-                            <property role="3SKdUp" value="ensure that there is atleast one available processor for external IO operations." />
-                          </node>
-                        </node>
-                        <node concept="3clFbF" id="3dZgFhDBtn_" role="3cqZAp">
-                          <node concept="37vLTI" id="3dZgFhDBt$X" role="3clFbG">
-                            <node concept="37vLTw" id="3dZgFhDBtnz" role="37vLTJ">
-                              <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
-                            </node>
-                            <node concept="2ShNRf" id="3dZgFhDBtIs" role="37vLTx">
-                              <node concept="1pGfFk" id="3dZgFhDBtIt" role="2ShVmc">
-                                <ref role="37wK5l" to="wyt6:~ProcessBuilder.&lt;init&gt;(java.lang.String...)" resolve="ProcessBuilder" />
-                                <node concept="37vLTw" id="3dZgFhDBtIu" role="37wK5m">
-                                  <ref role="3cqZAo" node="3s1LyzGriHV" resolve="path" />
+                              <node concept="3SKdUt" id="3dZgFhDBGVL" role="3cqZAp">
+                                <node concept="3SKdUq" id="3dZgFhDBGVN" role="3SKWNk">
+                                  <property role="3SKdUp" value="ensure that there is atleast one available processor for external IO operations." />
                                 </node>
-                                <node concept="3cpWs3" id="3dZgFhDBtIv" role="37wK5m">
-                                  <node concept="Xl_RD" id="3dZgFhDBtIw" role="3uHU7B">
-                                    <property role="Xl_RC" value="-j" />
+                              </node>
+                              <node concept="3clFbF" id="3dZgFhDBtn_" role="3cqZAp">
+                                <node concept="37vLTI" id="3dZgFhDBt$X" role="3clFbG">
+                                  <node concept="37vLTw" id="3dZgFhDBtnz" role="37vLTJ">
+                                    <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
                                   </node>
-                                  <node concept="1eOMI4" id="3dZgFhDBtIx" role="3uHU7w">
-                                    <node concept="3cpWsd" id="3dZgFhDBtIy" role="1eOMHV">
-                                      <node concept="37vLTw" id="3dZgFhDBtIz" role="3uHU7B">
-                                        <ref role="3cqZAo" node="5mK2hjZx6bJ" resolve="noOfCores" />
+                                  <node concept="2ShNRf" id="3dZgFhDBtIs" role="37vLTx">
+                                    <node concept="1pGfFk" id="3dZgFhDBtIt" role="2ShVmc">
+                                      <ref role="37wK5l" to="wyt6:~ProcessBuilder.&lt;init&gt;(java.lang.String...)" resolve="ProcessBuilder" />
+                                      <node concept="37vLTw" id="3dZgFhDBtIu" role="37wK5m">
+                                        <ref role="3cqZAo" node="3s1LyzGriHV" resolve="path" />
                                       </node>
-                                      <node concept="3cmrfG" id="3dZgFhDBtI$" role="3uHU7w">
-                                        <property role="3cmrfH" value="1" />
+                                      <node concept="3cpWs3" id="3dZgFhDBtIv" role="37wK5m">
+                                        <node concept="Xl_RD" id="3dZgFhDBtIw" role="3uHU7B">
+                                          <property role="Xl_RC" value="-j" />
+                                        </node>
+                                        <node concept="1eOMI4" id="3dZgFhDBtIx" role="3uHU7w">
+                                          <node concept="2OqwBi" id="7GmkyIHGdWN" role="1eOMHV">
+                                            <node concept="37vLTw" id="7GmkyIHGdWO" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="42NvuOOGDBs" resolve="platform" />
+                                            </node>
+                                            <node concept="2qgKlT" id="7GmkyIHGdWP" role="2OqNvi">
+                                              <ref role="37wK5l" to="vog7:71C71cTwEiX" resolve="parallelProcesses" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="7GmkyIHGcK_" role="3clFbw">
+                              <node concept="37vLTw" id="7GmkyIHGcKA" role="2Oq$k0">
+                                <ref role="3cqZAo" node="42NvuOOGDBs" resolve="platform" />
+                              </node>
+                              <node concept="2qgKlT" id="7GmkyIHGcKB" role="2OqNvi">
+                                <ref role="37wK5l" to="vog7:3dZgFhDSzmf" resolve="canBeParallelized" />
+                              </node>
+                            </node>
+                            <node concept="9aQIb" id="7GmkyIHGd13" role="9aQIa">
+                              <node concept="3clFbS" id="7GmkyIHGd14" role="9aQI4">
+                                <node concept="3clFbF" id="7GmkyIHGegj" role="3cqZAp">
+                                  <node concept="37vLTI" id="7GmkyIHGegk" role="3clFbG">
+                                    <node concept="37vLTw" id="7GmkyIHGegl" role="37vLTJ">
+                                      <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
+                                    </node>
+                                    <node concept="2ShNRf" id="7GmkyIHGegm" role="37vLTx">
+                                      <node concept="1pGfFk" id="7GmkyIHGegn" role="2ShVmc">
+                                        <ref role="37wK5l" to="wyt6:~ProcessBuilder.&lt;init&gt;(java.lang.String...)" resolve="ProcessBuilder" />
+                                        <node concept="37vLTw" id="7GmkyIHGego" role="37wK5m">
+                                          <ref role="3cqZAo" node="3s1LyzGriHV" resolve="path" />
+                                        </node>
                                       </node>
                                     </node>
                                   </node>
@@ -1160,28 +1137,6 @@
                             </node>
                           </node>
                         </node>
-                      </node>
-                      <node concept="9aQIb" id="3dZgFhDBu33" role="9aQIa">
-                        <node concept="3clFbS" id="3dZgFhDBu34" role="9aQI4">
-                          <node concept="3clFbF" id="3dZgFhDBuiO" role="3cqZAp">
-                            <node concept="37vLTI" id="3dZgFhDBuxQ" role="3clFbG">
-                              <node concept="37vLTw" id="3dZgFhDBuiN" role="37vLTJ">
-                                <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
-                              </node>
-                              <node concept="2ShNRf" id="3dZgFhDBuFH" role="37vLTx">
-                                <node concept="1pGfFk" id="3dZgFhDBuFI" role="2ShVmc">
-                                  <ref role="37wK5l" to="wyt6:~ProcessBuilder.&lt;init&gt;(java.lang.String...)" resolve="ProcessBuilder" />
-                                  <node concept="37vLTw" id="3dZgFhDBuFJ" role="37wK5m">
-                                    <ref role="3cqZAo" node="3s1LyzGriHV" resolve="path" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="37vLTw" id="42NvuOOOrU7" role="3clFbw">
-                        <ref role="3cqZAo" node="42NvuOOOzJp" resolve="mustRunMakeInParallel" />
                       </node>
                     </node>
                     <node concept="3clFbH" id="5mK2hjZyYM_" role="3cqZAp" />
@@ -1490,31 +1445,46 @@
                         </node>
                         <node concept="1daRAt" id="3cN5OOfB11x" role="3cqZAp">
                           <property role="1daRAr" value="ERROR" />
-                          <node concept="3cpWs3" id="5zgShfbCz6_" role="1daK9t">
-                            <node concept="3cpWs3" id="5zgShfbCz6A" role="3uHU7B">
-                              <node concept="3cpWs3" id="5zgShfbCz6B" role="3uHU7B">
-                                <node concept="Xl_RD" id="5zgShfbCz6C" role="3uHU7B">
-                                  <property role="Xl_RC" value="make failed with exit code " />
-                                </node>
-                                <node concept="2OqwBi" id="5zgShfbCz6D" role="3uHU7w">
-                                  <node concept="37vLTw" id="4OhLxlrNjjw" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="5zgShfbCz51" resolve="process" />
-                                  </node>
-                                  <node concept="liA8E" id="5zgShfbCz6F" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Process.exitValue():int" resolve="exitValue" />
-                                  </node>
-                                </node>
+                          <node concept="3cpWs3" id="6VqaxF9P7Sl" role="1daK9t">
+                            <node concept="2OqwBi" id="6VqaxF9P8Xn" role="3uHU7w">
+                              <node concept="37vLTw" id="6VqaxF9P8Na" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
                               </node>
-                              <node concept="Xl_RD" id="5zgShfbCz6G" role="3uHU7w">
-                                <property role="Xl_RC" value=" for " />
+                              <node concept="liA8E" id="6VqaxF9P9n1" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~ProcessBuilder.command():java.util.List" resolve="command" />
                               </node>
                             </node>
-                            <node concept="1LFfDK" id="5zgShfbCz6H" role="3uHU7w">
-                              <node concept="2GrUjf" id="4OhLxlrNh8T" role="1LFl5Q">
-                                <ref role="2Gs0qQ" node="5zgShfbCz4u" resolve="pathTuple" />
+                            <node concept="3cpWs3" id="6VqaxF9P61J" role="3uHU7B">
+                              <node concept="3cpWs3" id="5zgShfbCz6_" role="3uHU7B">
+                                <node concept="3cpWs3" id="5zgShfbCz6A" role="3uHU7B">
+                                  <node concept="3cpWs3" id="5zgShfbCz6B" role="3uHU7B">
+                                    <node concept="Xl_RD" id="5zgShfbCz6C" role="3uHU7B">
+                                      <property role="Xl_RC" value="make failed with exit code " />
+                                    </node>
+                                    <node concept="2OqwBi" id="5zgShfbCz6D" role="3uHU7w">
+                                      <node concept="37vLTw" id="4OhLxlrNjjw" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="5zgShfbCz51" resolve="process" />
+                                      </node>
+                                      <node concept="liA8E" id="5zgShfbCz6F" role="2OqNvi">
+                                        <ref role="37wK5l" to="wyt6:~Process.exitValue():int" resolve="exitValue" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="5zgShfbCz6G" role="3uHU7w">
+                                    <property role="Xl_RC" value=" for " />
+                                  </node>
+                                </node>
+                                <node concept="1LFfDK" id="5zgShfbCz6H" role="3uHU7w">
+                                  <node concept="2GrUjf" id="4OhLxlrNh8T" role="1LFl5Q">
+                                    <ref role="2Gs0qQ" node="5zgShfbCz4u" resolve="pathTuple" />
+                                  </node>
+                                  <node concept="3cmrfG" id="5zgShfbCz6J" role="1LF_Uc">
+                                    <property role="3cmrfH" value="1" />
+                                  </node>
+                                </node>
                               </node>
-                              <node concept="3cmrfG" id="5zgShfbCz6J" role="1LF_Uc">
-                                <property role="3cmrfH" value="1" />
+                              <node concept="Xl_RD" id="6VqaxF9P7a4" role="3uHU7w">
+                                <property role="Xl_RC" value=" with make command " />
                               </node>
                             </node>
                           </node>

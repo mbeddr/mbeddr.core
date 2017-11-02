@@ -66,7 +66,7 @@
         <child id="3793213301909617373" name="functionContractMember" index="2HfWAV" />
       </concept>
       <concept id="3793213301909615744" name="com.mbeddr.analyses.acsl.structure.IAtomicContract" flags="ng" index="2HfWvA">
-        <child id="75361647380517795" name="atomicContractExpression" index="3sLAUB" />
+        <child id="75361647380517795" name="exp" index="3sLAUB" />
       </concept>
       <concept id="3793213301909615745" name="com.mbeddr.analyses.acsl.structure.Requires" flags="ng" index="2HfWvB" />
       <concept id="1156681608090939298" name="com.mbeddr.analyses.acsl.structure.Valid" flags="ng" index="10srhD">

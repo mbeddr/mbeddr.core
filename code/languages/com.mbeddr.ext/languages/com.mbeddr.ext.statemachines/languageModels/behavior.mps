@@ -354,6 +354,9 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
+        <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -422,6 +425,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
@@ -3872,6 +3876,60 @@
   <node concept="13h7C7" id="47Sr75PnO81">
     <property role="3GE5qa" value="machine.states.actions" />
     <ref role="13h7C2" to="clqz:47Sr75PmDA0" resolve="EntryAction" />
+    <node concept="13i0hz" id="GD738HremQ" role="13h7CS">
+      <property role="TrG5h" value="hasSelfTriggeringActions" />
+      <node concept="3Tm1VV" id="GD738HremR" role="1B3o_S" />
+      <node concept="10P_77" id="GD738Hrerf" role="3clF45" />
+      <node concept="3clFbS" id="GD738HremT" role="3clF47">
+        <node concept="3clFbF" id="GD738HresF" role="3cqZAp">
+          <node concept="2OqwBi" id="GD738Hrww2" role="3clFbG">
+            <node concept="2OqwBi" id="GD738HroIL" role="2Oq$k0">
+              <node concept="2OqwBi" id="GD738Hrgfg" role="2Oq$k0">
+                <node concept="2OqwBi" id="GD738Hrf5e" role="2Oq$k0">
+                  <node concept="13iPFW" id="GD738HresE" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="GD738Hrful" role="2OqNvi">
+                    <ref role="3Tt5mk" to="clqz:7iNM$5cFD8X" resolve="body" />
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="GD738HrgII" role="2OqNvi">
+                  <node concept="1xMEDy" id="GD738HrgIK" role="1xVPHs">
+                    <node concept="chp4Y" id="GD738Hrh2N" role="ri$Ld">
+                      <ref role="cht4Q" to="clqz:1GDnlaUAGrS" resolve="ActionList" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="GD738Hrj7V" role="1xVPHs" />
+                </node>
+              </node>
+              <node concept="13MTOL" id="GD738Hrsxx" role="2OqNvi">
+                <ref role="13MTZf" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
+              </node>
+            </node>
+            <node concept="2HwmR7" id="GD738HrwG1" role="2OqNvi">
+              <node concept="1bVj0M" id="GD738HrwG3" role="23t8la">
+                <node concept="3clFbS" id="GD738HrwG4" role="1bW5cS">
+                  <node concept="3clFbF" id="GD738HrwQp" role="3cqZAp">
+                    <node concept="2OqwBi" id="GD738Hrx9C" role="3clFbG">
+                      <node concept="37vLTw" id="GD738HrwQo" role="2Oq$k0">
+                        <ref role="3cqZAo" node="GD738HrwG5" resolve="it" />
+                      </node>
+                      <node concept="1mIQ4w" id="GD738Hrxxk" role="2OqNvi">
+                        <node concept="chp4Y" id="GD738HrxHE" role="cj9EA">
+                          <ref role="cht4Q" to="clqz:1nOZGI8BYAa" resolve="TriggerSelfStatement" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="GD738HrwG5" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="GD738HrwG6" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="47Sr75PnO82" role="13h7CW">
       <node concept="3clFbS" id="47Sr75PnO83" role="2VODD2">
         <node concept="3clFbF" id="47Sr75PnO84" role="3cqZAp">
@@ -8980,7 +9038,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7XSydqr7WM">
-    <property role="3GE5qa" value="c-integration.test" />
+    <property role="3GE5qa" value="c-integration" />
     <ref role="13h7C2" to="clqz:7XSydqoCpA" resolve="SmSetStateTarget" />
     <node concept="13i0hz" id="7XSydqr7WP" role="13h7CS">
       <property role="TrG5h" value="getTarget" />

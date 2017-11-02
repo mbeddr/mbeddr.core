@@ -331,5 +331,11 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="32cJsh9DNRu">
+    <ref role="1XX52x" to="lsus:32cJsh9DNRl" resolve="HTMLDummyRenderer" />
+    <node concept="3F0ifn" id="32cJsh9DNRw" role="2wV5jI">
+      <property role="3F0ifm" value="HTMLRenderer (set HTML Rendering options in Document Configuration)" />
+    </node>
+  </node>
 </model>
 

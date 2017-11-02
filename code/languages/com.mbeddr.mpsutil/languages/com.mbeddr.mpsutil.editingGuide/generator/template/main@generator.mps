@@ -163,11 +163,11 @@
                           <node concept="2OqwBi" id="4TMjSvbDpvE" role="2Oq$k0">
                             <node concept="30H73N" id="4TMjSvbDpqe" role="2Oq$k0" />
                             <node concept="3TrEf2" id="4TMjSvbDpEj" role="2OqNvi">
-                              <ref role="3Tt5mk" to="tpee:gyVODHa" />
+                              <ref role="3Tt5mk" to="tpee:gyVODHa" resolve="body" />
                             </node>
                           </node>
                           <node concept="3Tsc0h" id="4TMjSvbDqKm" role="2OqNvi">
-                            <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                            <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
                           </node>
                         </node>
                       </node>
