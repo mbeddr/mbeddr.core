@@ -48,6 +48,11 @@
       <property role="TrG5h" value="test1" />
       <ref role="AX2Wp" node="1QyV25GL5N$" resolve="TestEnum" />
     </node>
+    <node concept="1TJgyi" id="1lcLMGyEfGg" role="1TKVEl">
+      <property role="IQ2nx" value="1534820561105517328" />
+      <property role="TrG5h" value="strProp" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="AxPO7" id="1QyV25GL5N$">
     <property role="TrG5h" value="TestEnum" />
