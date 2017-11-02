@@ -296,6 +296,9 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
@@ -316,6 +319,7 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -326,6 +330,10 @@
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -3417,6 +3425,36 @@
       </node>
       <node concept="3uibUv" id="29BUUxcmPiD" role="3clF45">
         <ref role="3uigEE" to="iq8l:1YPL71YljyH" resolve="IToken" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="1tHnH2eMNl8" role="13h7CS">
+      <property role="TrG5h" value="dependentModuleContent" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ywuz:1tHnH2eLwg4" resolve="dependentModuleContent" />
+      <node concept="3Tm1VV" id="1tHnH2eMNl9" role="1B3o_S" />
+      <node concept="3clFbS" id="1tHnH2eMNlg" role="3clF47">
+        <node concept="3clFbF" id="1tHnH2eMPbz" role="3cqZAp">
+          <node concept="2OqwBi" id="1tHnH2eMQuF" role="3clFbG">
+            <node concept="2OqwBi" id="1tHnH2eMPtv" role="2Oq$k0">
+              <node concept="13iPFW" id="1tHnH2eMPby" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1tHnH2eMPPT" role="2OqNvi">
+                <ref role="3Tt5mk" to="yq40:1gDNXlE1$cN" resolve="sizeExpr" />
+              </node>
+            </node>
+            <node concept="2Rf3mk" id="1tHnH2eMR5k" role="2OqNvi">
+              <node concept="1xMEDy" id="1tHnH2eMR5m" role="1xVPHs">
+                <node concept="chp4Y" id="1tHnH2eMRk0" role="ri$Ld">
+                  <ref role="cht4Q" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
+                </node>
+              </node>
+              <node concept="1xIGOp" id="1tHnH2eMRs$" role="1xVPHs" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="1tHnH2eMNlh" role="3clF45">
+        <ref role="2I9WkF" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
       </node>
     </node>
   </node>

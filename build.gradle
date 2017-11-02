@@ -1,4 +1,4 @@
-ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr' 
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
  
 ext.mpsMajor = "2017.1"

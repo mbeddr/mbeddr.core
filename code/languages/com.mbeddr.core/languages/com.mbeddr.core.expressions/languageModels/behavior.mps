@@ -35,6 +35,7 @@
     <import index="b3bi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.impl.cellActions(MPS.Editor/)" />
     <import index="iq8l" ref="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" implicit="true" />
@@ -401,6 +402,9 @@
       </concept>
       <concept id="1181949435690" name="jetbrains.mps.lang.smodel.structure.Concept_NewInstance" flags="nn" index="LFhST" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
+        <child id="1145567471833" name="createdType" index="2T96Bj" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -3472,6 +3476,25 @@
                 <node concept="chp4Y" id="7oI7FI6rVlW" role="ri$Ld">
                   <ref role="cht4Q" to="mj1l:7FQByU3CrCQ" resolve="Type" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1tHnH2eLwg4" role="13h7CS">
+      <property role="TrG5h" value="dependentModuleContents" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="1tHnH2eLwg5" role="1B3o_S" />
+      <node concept="2I9FWS" id="1tHnH2eLwg6" role="3clF45">
+        <ref role="2I9WkF" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
+      </node>
+      <node concept="3clFbS" id="1tHnH2eLwg7" role="3clF47">
+        <node concept="3clFbF" id="1tHnH2eLxQh" role="3cqZAp">
+          <node concept="2ShNRf" id="1tHnH2eLxQf" role="3clFbG">
+            <node concept="2T8Vx0" id="1tHnH2eL_Sl" role="2ShVmc">
+              <node concept="2I9FWS" id="1tHnH2eL_Sn" role="2T96Bj">
+                <ref role="2I9WkF" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
               </node>
             </node>
           </node>
