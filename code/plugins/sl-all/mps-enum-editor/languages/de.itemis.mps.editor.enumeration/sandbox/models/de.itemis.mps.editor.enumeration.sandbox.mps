@@ -14,7 +14,7 @@
     </language>
   </registry>
   <node concept="1LpF33" id="1kojPMTjczR">
-    <property role="1LpF3a" value="b" />
+    <property role="1LpF3a" value="a" />
   </node>
 </model>
 

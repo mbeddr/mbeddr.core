@@ -2622,17 +2622,26 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="44Oik0UoRpk" role="3clF47">
-        <node concept="3clFbF" id="44Oik0UoRTG" role="3cqZAp">
-          <node concept="2OqwBi" id="44Oik0UoS2W" role="3clFbG">
-            <node concept="37vLTw" id="44Oik0UoRTF" role="2Oq$k0">
-              <ref role="3cqZAo" node="7bBLNlFI_Dg" resolve="image" />
-            </node>
-            <node concept="liA8E" id="44Oik0UoSe4" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Image.getWidth(java.awt.image.ImageObserver):int" resolve="getWidth" />
-              <node concept="37vLTw" id="44Oik0UoSnG" role="37wK5m">
-                <ref role="3cqZAo" node="44Oik0UoRDl" resolve="o" />
+        <node concept="3cpWs8" id="5Jq1ilvYDP8" role="3cqZAp">
+          <node concept="3cpWsn" id="5Jq1ilvYDPb" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="10P55v" id="5Jq1ilvYDP6" role="1tU5fm" />
+            <node concept="2OqwBi" id="5Jq1ilvYE84" role="33vP2m">
+              <node concept="37vLTw" id="5Jq1ilvYDYE" role="2Oq$k0">
+                <ref role="3cqZAo" node="7bBLNlFI_Dg" resolve="image" />
+              </node>
+              <node concept="liA8E" id="5Jq1ilvYEg9" role="2OqNvi">
+                <ref role="37wK5l" to="z60i:~Image.getWidth(java.awt.image.ImageObserver):int" resolve="getWidth" />
+                <node concept="37vLTw" id="5Jq1ilvYEsB" role="37wK5m">
+                  <ref role="3cqZAo" node="44Oik0UoRDl" resolve="o" />
+                </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5Jq1ilvYGRJ" role="3cqZAp">
+          <node concept="37vLTw" id="5Jq1ilvYH2M" role="3cqZAk">
+            <ref role="3cqZAo" node="5Jq1ilvYDPb" resolve="result" />
           </node>
         </node>
       </node>
