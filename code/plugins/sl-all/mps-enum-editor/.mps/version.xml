@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CompilerSettings">
-    <option name="targetVersion" value="1.8" />
+  <component name="ProjectVersion">
+    <option name="version" value="3.1" />
   </component>
 </project>
