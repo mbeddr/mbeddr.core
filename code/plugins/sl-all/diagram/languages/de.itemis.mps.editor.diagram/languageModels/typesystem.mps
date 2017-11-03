@@ -810,6 +810,29 @@
           </node>
         </node>
       </node>
+      <node concept="1ZobV4" id="3uS6dOiTdsG" role="3cqZAp">
+        <node concept="mw_s8" id="3uS6dOiTdsH" role="1ZfhKB">
+          <node concept="2ShNRf" id="3uS6dOiTdsI" role="mwGJk">
+            <node concept="3zrR0B" id="3uS6dOiTdsJ" role="2ShVmc">
+              <node concept="3Tqbb2" id="3uS6dOiTdsK" role="3zrR0E">
+                <ref role="ehGHo" to="tpee:f_0P_4Y" resolve="BooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3uS6dOiTdsL" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3uS6dOiTdsM" role="mwGJk">
+            <node concept="2OqwBi" id="3uS6dOiTdsN" role="1Z2MuG">
+              <node concept="1YBJjd" id="3uS6dOiTdsO" role="2Oq$k0">
+                <ref role="1YBMHb" node="D0N6Dj0ofZ" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="3uS6dOiTdKW" role="2OqNvi">
+                <ref role="3Tt5mk" to="2qld:3uS6dOiR6Sv" resolve="canDeleteEdges" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="2Gpval" id="iP2DEOXI7w" role="3cqZAp">
         <node concept="2GrKxI" id="iP2DEOXI7x" role="2Gsz3X">
           <property role="TrG5h" value="refTarget" />
