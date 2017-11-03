@@ -1219,6 +1219,43 @@
       <ref role="1YaFvo" to="2c95:5mf_X_Lbqjw" resolve="DocumentInclude" />
     </node>
   </node>
+  <node concept="18kY7G" id="t5DIOhGZfv">
+    <property role="TrG5h" value="check_DocRefWord" />
+    <property role="3GE5qa" value="words" />
+    <node concept="3clFbS" id="t5DIOhGZfw" role="18ibNy">
+      <node concept="2Mj0R9" id="t5DIOhGZm_" role="3cqZAp">
+        <node concept="1YBJjd" id="5J0kEUnY5sd" role="2OEOjV">
+          <ref role="1YBMHb" node="t5DIOhGZfy" resolve="docRefWord" />
+        </node>
+        <node concept="17R0WA" id="t5DIOhGZmA" role="2MkoU_">
+          <node concept="2OqwBi" id="t5DIOhGZmB" role="3uHU7B">
+            <node concept="2OqwBi" id="t5DIOhGZmC" role="2Oq$k0">
+              <node concept="1YBJjd" id="t5DIOhGZu1" role="2Oq$k0">
+                <ref role="1YBMHb" node="t5DIOhGZfy" resolve="docRefWord" />
+              </node>
+              <node concept="3TrEf2" id="t5DIOhH4$2" role="2OqNvi">
+                <ref role="3Tt5mk" to="2c95:2T4ELtZGU9" resolve="target" />
+              </node>
+            </node>
+            <node concept="I4A8Y" id="t5DIOhGZmF" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="t5DIOhGZmG" role="3uHU7w">
+            <node concept="1YBJjd" id="t5DIOhGZB8" role="2Oq$k0">
+              <ref role="1YBMHb" node="t5DIOhGZfy" resolve="docRefWord" />
+            </node>
+            <node concept="I4A8Y" id="t5DIOhGZmI" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="t5DIOhGZmJ" role="2MkJ7o">
+          <property role="Xl_RC" value="Currently only references to nodes in the same model are supported" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="t5DIOhGZfy" role="1YuTPh">
+      <property role="TrG5h" value="docRefWord" />
+      <ref role="1YaFvo" to="2c95:2T4ELtZGU8" resolve="DocRefWord" />
+    </node>
+  </node>
   <node concept="18kY7G" id="hoMN8EQ94W">
     <property role="TrG5h" value="check_BuildConfiguration_Presence" />
     <property role="3GE5qa" value="modelContent" />
