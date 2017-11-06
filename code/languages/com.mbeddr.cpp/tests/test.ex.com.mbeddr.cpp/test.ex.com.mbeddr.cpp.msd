@@ -8,7 +8,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)</dependency>
-    <dependency reexport="false">~_PreferencesModule#com.mbeddr.cpp.__spreferences.PlatformTemplates(com.mbeddr.cpp.__spreferences.PlatformTemplates)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
@@ -28,7 +27,6 @@
     <language slang="l:efda956e-491e-4f00-ba14-36af2f213ecf:com.mbeddr.core.udt" version="2" />
     <language slang="l:06d68b77-b699-4918-83b8-857e63787800:com.mbeddr.core.unittest" version="3" />
     <language slang="l:2693fc71-9b0e-4b05-ab13-f57227d675f2:com.mbeddr.core.util" version="0" />
-    <language slang="l:8c081446-e4ba-48b7-a7e0-3db40e2c3439:com.mbeddr.cpp" version="-1" />
     <language slang="l:6e81d0c1-347c-43fc-99ef-bdd47021c2b7:com.mbeddr.cpp.buildconfig" version="0" />
     <language slang="l:b341759a-c721-4072-90cf-328bb2724684:com.mbeddr.cpp.expressions" version="-1" />
     <language slang="l:dd4979e3-3be6-46b3-9e1e-c36309e30758:com.mbeddr.cpp.modules" version="-1" />
@@ -58,7 +56,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)" version="0" />
-    <module reference="~_PreferencesModule#com.mbeddr.cpp.__spreferences.PlatformTemplates(com.mbeddr.cpp.__spreferences.PlatformTemplates)" version="0" />
     <module reference="a2a03fd8-cc5a-4e82-b374-eb6c0f29cc9e(test.ex.com.mbeddr.cpp)" version="0" />
   </dependencyVersions>
 </solution>

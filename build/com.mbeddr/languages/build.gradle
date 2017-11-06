@@ -106,6 +106,8 @@ def script_test_mbeddrCcEx = new File(scriptsBasePath + "/com.mbeddr.cc/" + "bui
 def script_test_mbeddrExtTs = new File(scriptsBasePath + "/com.mbeddr.ext/" + "build-ts-tests.xml")
 def script_test_mbeddrExtEx = new File(scriptsBasePath + "/com.mbeddr.ext/" + "build-ex-tests.xml")
 def script_test_mbeddrXmodelEx = new File(scriptsBasePath + "/com.mbeddr.xmodel/" + "build-ex-tests.xml")
+def script_test_mbeddrCppEx = new File(scriptsBasePath + "/com.mbeddr.cpp/" + "build-cpp-ex-tests.xml")
+def script_test_mbeddrCppTs = new File(scriptsBasePath + "/com.mbeddr.cpp/" + "build-cpp-ts-tests.xml")
 
 
 def script_build_tutorialLanguages = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-languages.xml")
@@ -189,11 +191,25 @@ task test_mbeddr_ext_ex << {
     ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.ext")
 }
 
+task test_mbeddr_cpp_ts(type: TestLanguages, dependsOn: build_mbeddr) {    
+	script script_test_mbeddrCppTs
+}
+
+task build_mbeddr_cpp_ex(type: BuildLanguages, dependsOn: [build_mbeddr, copy_logConfig]) {    
+	script script_test_mbeddrCppEx
+}
+
+task test_mbeddr_cpp_ex << {    
+	ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.cpp")
+}
+
+task test_mbeddr_cpp(dependsOn: [build_mbeddr_cpp_ex, test_mbeddr_cpp_ex, test_mbeddr_cpp_ts]) {}
+
 task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
 
 task test_mbeddr_xmodel(dependsOn: []) {}
 
-task test_mbeddr(dependsOn: [test_mbeddr_core, test_mbeddr_performance, test_mbeddr_cc, test_mbeddr_ext, test_mbeddr_xmodel]) {}
+task test_mbeddr(dependsOn: [test_mbeddr_core, test_mbeddr_performance, test_mbeddr_cc, test_mbeddr_ext, test_mbeddr_xmodel, test_mbeddr_cpp]) {}
 
 def pubDeb
 if (ciBuild) {

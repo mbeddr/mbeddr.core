@@ -24,7 +24,6 @@
     <language slang="l:efda956e-491e-4f00-ba14-36af2f213ecf:com.mbeddr.core.udt" version="2" />
     <language slang="l:06d68b77-b699-4918-83b8-857e63787800:com.mbeddr.core.unittest" version="3" />
     <language slang="l:2693fc71-9b0e-4b05-ab13-f57227d675f2:com.mbeddr.core.util" version="0" />
-    <language slang="l:8c081446-e4ba-48b7-a7e0-3db40e2c3439:com.mbeddr.cpp" version="0" />
     <language slang="l:6e81d0c1-347c-43fc-99ef-bdd47021c2b7:com.mbeddr.cpp.buildconfig" version="0" />
     <language slang="l:b341759a-c721-4072-90cf-328bb2724684:com.mbeddr.cpp.expressions" version="0" />
     <language slang="l:dd4979e3-3be6-46b3-9e1e-c36309e30758:com.mbeddr.cpp.modules" version="0" />
