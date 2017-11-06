@@ -169,15 +169,37 @@
                 </node>
               </node>
             </node>
+            <node concept="3eNFk2" id="4WvfojApy5B" role="3eNLev">
+              <node concept="2OqwBi" id="4WvfojApy$h" role="3eO9$A">
+                <node concept="1YBJjd" id="4WvfojApyq7" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
+                </node>
+                <node concept="1mIQ4w" id="4WvfojApz5f" role="2OqNvi">
+                  <node concept="chp4Y" id="4WvfojApz7l" role="cj9EA">
+                    <ref role="cht4Q" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="4WvfojApy5D" role="3eOfB_">
+                <node concept="2MkqsV" id="4WvfojApzcH" role="3cqZAp">
+                  <node concept="Xl_RD" id="4WvfojApzcI" role="2MkJ7o">
+                    <property role="Xl_RC" value="a valid folder must be picked." />
+                  </node>
+                  <node concept="1YBJjd" id="4WvfojApzcJ" role="2OEOjV">
+                    <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="2OqwBi" id="5lKnBeB9R_A" role="3clFbw">
           <node concept="2OqwBi" id="5lKnBeB9ObJ" role="2Oq$k0">
-            <node concept="1YBJjd" id="5lKnBeB9O9z" role="2Oq$k0">
-              <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
-            </node>
             <node concept="3TrcHB" id="5lKnBeB9PVd" role="2OqNvi">
               <ref role="3TsBF5" to="68mc:5lKnBeAtODI" resolve="path" />
+            </node>
+            <node concept="1YBJjd" id="5lKnBeB9O9z" role="2Oq$k0">
+              <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
             </node>
           </node>
           <node concept="17RlXB" id="5lKnBeB9WvV" role="2OqNvi" />
@@ -202,6 +224,86 @@
             <node concept="3clFbJ" id="ql$XAlgR10" role="3cqZAp">
               <node concept="3clFbS" id="ql$XAlgR12" role="3clFbx">
                 <node concept="3clFbJ" id="5lKnBeAW4ap" role="3cqZAp">
+                  <node concept="9aQIb" id="5lKnBeAW7KN" role="9aQIa">
+                    <node concept="3clFbS" id="5lKnBeAW7KO" role="9aQI4">
+                      <node concept="3SKdUt" id="4WvfojApmoX" role="3cqZAp">
+                        <node concept="3SKdUq" id="4WvfojApmoZ" role="3SKWNk">
+                          <property role="3SKdUp" value="error for not a valid selection only makes sense for paths expected to exist" />
+                        </node>
+                      </node>
+                      <node concept="3clFbJ" id="5lKnBeAutwK" role="3cqZAp">
+                        <node concept="1Wc70l" id="4WvfojAplRr" role="3clFbw">
+                          <node concept="3fqX7Q" id="5lKnBeAutx2" role="3uHU7B">
+                            <node concept="2OqwBi" id="5lKnBeAut$k" role="3fr31v">
+                              <node concept="1YBJjd" id="5lKnBeAutxx" role="2Oq$k0">
+                                <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
+                              </node>
+                              <node concept="2qgKlT" id="5lKnBeAuufq" role="2OqNvi">
+                                <ref role="37wK5l" to="48kf:5lKnBeAusVW" resolve="isValidSelection" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="4WvfojApmch" role="3uHU7w">
+                            <node concept="1YBJjd" id="4WvfojApmci" role="2Oq$k0">
+                              <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
+                            </node>
+                            <node concept="3TrcHB" id="4WvfojApmcj" role="2OqNvi">
+                              <ref role="3TsBF5" to="68mc:2mxBqli8MW4" resolve="pointOnlyToExistingFile" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="5lKnBeAutwL" role="3clFbx">
+                          <node concept="2MkqsV" id="5lKnBeAuw_c" role="3cqZAp">
+                            <node concept="2OqwBi" id="5lKnBeAuwEr" role="2MkJ7o">
+                              <node concept="1YBJjd" id="5lKnBeAuwBs" role="2Oq$k0">
+                                <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
+                              </node>
+                              <node concept="2qgKlT" id="5lKnBeAuxmb" role="2OqNvi">
+                                <ref role="37wK5l" to="48kf:5lKnBeAutg0" resolve="getErrorMessage" />
+                              </node>
+                            </node>
+                            <node concept="1YBJjd" id="5lKnBeAuxog" role="2OEOjV">
+                              <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
+                            </node>
+                            <node concept="2ODE4t" id="5lKnBeAuxrw" role="2OEWyd">
+                              <ref role="2ODJFN" to="68mc:5lKnBeAtODI" resolve="path" />
+                            </node>
+                          </node>
+                          <node concept="3clFbJ" id="3PuSfTTlfOp" role="3cqZAp">
+                            <node concept="3clFbS" id="3PuSfTTlfOr" role="3clFbx">
+                              <node concept="2MkqsV" id="3PuSfTTlh4x" role="3cqZAp">
+                                <node concept="Xl_RD" id="3PuSfTTlh4K" role="2MkJ7o">
+                                  <property role="Xl_RC" value="Even on Windows, please use a forward slash (/) as a separator." />
+                                </node>
+                                <node concept="1YBJjd" id="3PuSfTTlh81" role="2OEOjV">
+                                  <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
+                                </node>
+                                <node concept="2ODE4t" id="3PuSfTTlh8E" role="2OEWyd">
+                                  <ref role="2ODJFN" to="68mc:5lKnBeAtODI" resolve="path" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="3PuSfTTlgdl" role="3clFbw">
+                              <node concept="2OqwBi" id="3PuSfTTlfR0" role="2Oq$k0">
+                                <node concept="1YBJjd" id="3PuSfTTlfPK" role="2Oq$k0">
+                                  <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
+                                </node>
+                                <node concept="2qgKlT" id="3PuSfTTlg5_" role="2OqNvi">
+                                  <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="3PuSfTTlh15" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                                <node concept="Xl_RD" id="3PuSfTTlh2i" role="37wK5m">
+                                  <property role="Xl_RC" value="\\" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbS" id="5lKnBeAW4as" role="3clFbx">
                     <node concept="3clFbJ" id="51aJIRsCq$H" role="3cqZAp">
                       <node concept="3clFbS" id="51aJIRsCq$J" role="3clFbx">
@@ -296,71 +398,6 @@
                         </node>
                         <node concept="2qgKlT" id="5lKnBeAW567" role="2OqNvi">
                           <ref role="37wK5l" to="48kf:5lKnBeAtTZu" resolve="exists" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="9aQIb" id="5lKnBeAW7KN" role="9aQIa">
-                    <node concept="3clFbS" id="5lKnBeAW7KO" role="9aQI4">
-                      <node concept="3clFbJ" id="5lKnBeAutwK" role="3cqZAp">
-                        <node concept="3clFbS" id="5lKnBeAutwL" role="3clFbx">
-                          <node concept="2MkqsV" id="5lKnBeAuw_c" role="3cqZAp">
-                            <node concept="2OqwBi" id="5lKnBeAuwEr" role="2MkJ7o">
-                              <node concept="1YBJjd" id="5lKnBeAuwBs" role="2Oq$k0">
-                                <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
-                              </node>
-                              <node concept="2qgKlT" id="5lKnBeAuxmb" role="2OqNvi">
-                                <ref role="37wK5l" to="48kf:5lKnBeAutg0" resolve="getErrorMessage" />
-                              </node>
-                            </node>
-                            <node concept="1YBJjd" id="5lKnBeAuxog" role="2OEOjV">
-                              <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
-                            </node>
-                            <node concept="2ODE4t" id="5lKnBeAuxrw" role="2OEWyd">
-                              <ref role="2ODJFN" to="68mc:5lKnBeAtODI" resolve="path" />
-                            </node>
-                          </node>
-                          <node concept="3clFbJ" id="3PuSfTTlfOp" role="3cqZAp">
-                            <node concept="3clFbS" id="3PuSfTTlfOr" role="3clFbx">
-                              <node concept="2MkqsV" id="3PuSfTTlh4x" role="3cqZAp">
-                                <node concept="Xl_RD" id="3PuSfTTlh4K" role="2MkJ7o">
-                                  <property role="Xl_RC" value="Even on Windows, please use a forward slash (/) as a separator." />
-                                </node>
-                                <node concept="1YBJjd" id="3PuSfTTlh81" role="2OEOjV">
-                                  <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
-                                </node>
-                                <node concept="2ODE4t" id="3PuSfTTlh8E" role="2OEWyd">
-                                  <ref role="2ODJFN" to="68mc:5lKnBeAtODI" resolve="path" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="2OqwBi" id="3PuSfTTlgdl" role="3clFbw">
-                              <node concept="2OqwBi" id="3PuSfTTlfR0" role="2Oq$k0">
-                                <node concept="1YBJjd" id="3PuSfTTlfPK" role="2Oq$k0">
-                                  <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
-                                </node>
-                                <node concept="2qgKlT" id="3PuSfTTlg5_" role="2OqNvi">
-                                  <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="3PuSfTTlh15" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                                <node concept="Xl_RD" id="3PuSfTTlh2i" role="37wK5m">
-                                  <property role="Xl_RC" value="\\" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3fqX7Q" id="5lKnBeAutx2" role="3clFbw">
-                          <node concept="2OqwBi" id="5lKnBeAut$k" role="3fr31v">
-                            <node concept="1YBJjd" id="5lKnBeAutxx" role="2Oq$k0">
-                              <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
-                            </node>
-                            <node concept="2qgKlT" id="5lKnBeAuufq" role="2OqNvi">
-                              <ref role="37wK5l" to="48kf:5lKnBeAusVW" resolve="isValidSelection" />
-                            </node>
-                          </node>
                         </node>
                       </node>
                     </node>

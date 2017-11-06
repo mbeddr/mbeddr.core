@@ -96,7 +96,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="4x22hTwjMjA" role="2OqNvi">
-                <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" />
+                <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
               </node>
             </node>
             <node concept="2Kehj3" id="4x22hTwjNcf" role="2OqNvi" />
@@ -116,7 +116,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="4x22hTwjQhb" role="2OqNvi">
-                <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" />
+                <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
               </node>
             </node>
             <node concept="WFELt" id="4x22hTwjRGe" role="2OqNvi">

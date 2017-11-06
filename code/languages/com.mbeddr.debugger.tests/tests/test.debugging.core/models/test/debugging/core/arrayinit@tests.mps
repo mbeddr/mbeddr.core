@@ -16,7 +16,6 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports>
-    <import index="q9ah" ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" />
     <import index="yl9u" ref="r:d47f5cb3-cc35-48f0-97d1-61bdd42866cc(test.debugging.core.dummy)" />
     <import index="mycg" ref="r:d5a5436e-c9aa-4532-b7fa-04ee68be9ad2(test.debugging.core.arrayinit)" />
   </imports>

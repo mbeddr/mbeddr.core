@@ -30,6 +30,7 @@
     <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
   </imports>
@@ -623,7 +624,7 @@
                   <node concept="1bVj0M" id="7wXnfGE1GrT" role="37wK5m">
                     <node concept="3clFbS" id="7wXnfGE1GrU" role="1bW5cS">
                       <node concept="3clFbF" id="7wXnfGE1GvN" role="3cqZAp">
-                        <node concept="1rXfSq" id="7wXnfGE1GvM" role="3clFbG">
+                        <node concept="1rXfSq" id="7bBLNlFKG1G" role="3clFbG">
                           <ref role="37wK5l" node="20OtND1zYyN" resolve="commit" />
                         </node>
                       </node>
@@ -673,7 +674,6 @@
             <property role="3SKdUp" value="this method is copied from EditorCell_Property" />
           </node>
         </node>
-        <node concept="3clFbH" id="20OtND1$543" role="3cqZAp" />
         <node concept="3clFbF" id="7wXnfGE9_cE" role="3cqZAp">
           <node concept="2OqwBi" id="7wXnfGE9AoU" role="3clFbG">
             <node concept="2OqwBi" id="7wXnfGE9__5" role="2Oq$k0">
@@ -1352,6 +1352,8 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="1psyxY8SGG" role="jymVt" />
+    <node concept="2tJIrI" id="1psyxY8TRU" role="jymVt" />
     <node concept="3Tm1VV" id="4g2H4r3V4OF" role="1B3o_S" />
     <node concept="3uibUv" id="4g2H4r3V57T" role="1zkMxy">
       <ref role="3uigEE" to="g51k:~EditorCell_Basic" resolve="EditorCell_Basic" />
@@ -2770,20 +2772,20 @@
               </node>
               <node concept="10Nm6u" id="20OtND1EgVI" role="3uHU7w" />
             </node>
-            <node concept="2OqwBi" id="20OtND1EgVJ" role="3uHU7w">
-              <node concept="2OqwBi" id="20OtND1EgVK" role="2Oq$k0">
-                <node concept="2YIFZM" id="20OtND1EikR" role="2Oq$k0">
+            <node concept="2OqwBi" id="7bBLNlFJM$O" role="3uHU7w">
+              <node concept="2OqwBi" id="7bBLNlFJMgN" role="2Oq$k0">
+                <node concept="2YIFZM" id="7bBLNlFJM8c" role="2Oq$k0">
                   <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
                   <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
                 </node>
-                <node concept="liA8E" id="20OtND1EgVM" role="2OqNvi">
+                <node concept="liA8E" id="7bBLNlFJMp5" role="2OqNvi">
                   <ref role="37wK5l" to="3ju5:~FileSystem.getFileByPath(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFileByPath" />
-                  <node concept="37vLTw" id="20OtND1EgVN" role="37wK5m">
+                  <node concept="37vLTw" id="7bBLNlFJMud" role="37wK5m">
                     <ref role="3cqZAo" node="20OtND1EgVB" resolve="fileName" />
                   </node>
                 </node>
               </node>
-              <node concept="liA8E" id="20OtND1EgVO" role="2OqNvi">
+              <node concept="liA8E" id="7bBLNlFJMLy" role="2OqNvi">
                 <ref role="37wK5l" to="3ju5:~IFile.exists():boolean" resolve="exists" />
               </node>
             </node>

@@ -222,7 +222,7 @@
                 <ref role="3cqZAo" node="3mf03aPEUYM" resolve="dependenciesDiagram" />
               </node>
               <node concept="3Tsc0h" id="3mf03aPEW2T" role="2OqNvi">
-                <ref role="3TtcxE" to="pjld:6bKTjCNaIOY" />
+                <ref role="3TtcxE" to="pjld:6bKTjCNaIOY" resolve="models" />
               </node>
             </node>
             <node concept="X8dFx" id="3mf03aPF1tN" role="2OqNvi">
@@ -465,7 +465,7 @@
                 <ref role="3cqZAo" node="3mf03aPVI3y" resolve="dependenciesDiagram" />
               </node>
               <node concept="3Tsc0h" id="3mf03aPVO_U" role="2OqNvi">
-                <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" />
+                <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" resolve="modules" />
               </node>
             </node>
             <node concept="X8dFx" id="3mf03aPVRRF" role="2OqNvi">
@@ -710,7 +710,7 @@
                 <ref role="3cqZAo" node="3mf03aPWFZy" resolve="dependenciesDiagram" />
               </node>
               <node concept="3Tsc0h" id="3mf03aPWHo$" role="2OqNvi">
-                <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" />
+                <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" resolve="modules" />
               </node>
             </node>
             <node concept="X8dFx" id="3mf03aPWHo_" role="2OqNvi">
@@ -956,7 +956,7 @@
                 <ref role="3cqZAo" node="7Pfa1XGjBvI" resolve="dependenciesDiagram" />
               </node>
               <node concept="3Tsc0h" id="7Pfa1XGjBwl" role="2OqNvi">
-                <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" />
+                <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" resolve="modules" />
               </node>
             </node>
             <node concept="X8dFx" id="7Pfa1XGjBwm" role="2OqNvi">
@@ -1239,7 +1239,7 @@
                 <ref role="3cqZAo" node="7Pfa1XGjBxq" resolve="dependenciesDiagram" />
               </node>
               <node concept="3Tsc0h" id="7Pfa1XGjBy1" role="2OqNvi">
-                <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" />
+                <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" resolve="modules" />
               </node>
             </node>
             <node concept="X8dFx" id="7Pfa1XGjBy2" role="2OqNvi">

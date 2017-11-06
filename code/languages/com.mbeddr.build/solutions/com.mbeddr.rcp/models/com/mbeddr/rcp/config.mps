@@ -1382,7 +1382,7 @@
         </node>
         <node concept="3981dx" id="5msqZjqRrUc" role="39821P">
           <node concept="1zDrgl" id="5msqZjqRsYY" role="39821P">
-            <ref role="1zDrgn" node="5msqZjqQCeD" resolve="mbeddr" />
+            <ref role="1zDrgn" node="5msqZjqQCeD" resolve="mbeddr IDE 0.1" />
           </node>
           <node concept="3_J27D" id="5msqZjqRrUd" role="Nbhlr">
             <node concept="3Mxwew" id="5msqZjqRss$" role="3MwsjC">
@@ -3620,7 +3620,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="1BPeV_LjXvw" role="39821P">
-            <ref role="1zDrgn" node="1BPeV_LjXsL" resolve="mbeddr" />
+            <ref role="1zDrgn" node="1BPeV_LjXsL" resolve="mbeddr IDE 2017.1" />
           </node>
           <node concept="28jJK3" id="7FHOzp5h07H" role="39821P">
             <node concept="398BVA" id="7FHOzp5h081" role="28jJRO">

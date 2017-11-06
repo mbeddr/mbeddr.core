@@ -2,6 +2,7 @@
 <model ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -685,6 +686,20 @@
     <property role="EcuMT" value="4934857995791833872" />
     <property role="3GE5qa" value="tracing" />
     <property role="TrG5h" value="IReveal" />
+  </node>
+  <node concept="1TIwiD" id="37V13JR9f0m">
+    <property role="EcuMT" value="3601476982608818198" />
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions.cov" />
+    <property role="TrG5h" value="CoverConceptStatement" />
+    <property role="34LRSv" value="cover" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="1TJgyj" id="37V13JR9f6$" role="1TKVEi">
+      <property role="IQ2ns" value="3601476982608818596" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="conc" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+    </node>
   </node>
 </model>
 

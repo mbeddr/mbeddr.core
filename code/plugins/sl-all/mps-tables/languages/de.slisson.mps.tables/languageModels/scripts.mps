@@ -112,7 +112,7 @@
                 <node concept="2OqwBi" id="1U60oYwZ_1I" role="2Oq$k0">
                   <node concept="_YI3z" id="1U60oYwZ$Z8" role="2Oq$k0" />
                   <node concept="3TrEf2" id="1U60oYwZ_ga" role="2OqNvi">
-                    <ref role="3Tt5mk" to="bnk3:1U60oYwNp44" />
+                    <ref role="3Tt5mk" to="bnk3:1U60oYwNp44" resolve="columnHeaders" />
                   </node>
                 </node>
                 <node concept="zfrQC" id="1U60oYwZ_Sc" role="2OqNvi">
@@ -145,7 +145,7 @@
                 <node concept="2OqwBi" id="1U60oYwZWNz" role="25WWJ7">
                   <node concept="_YI3z" id="1U60oYwZVNN" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="1U60oYwZYvO" role="2OqNvi">
-                    <ref role="3TtcxE" to="bnk3:1dAqnm8s8AA" />
+                    <ref role="3TtcxE" to="bnk3:1dAqnm8s8AA" resolve="headers" />
                   </node>
                 </node>
               </node>
@@ -156,7 +156,7 @@
               <node concept="2OqwBi" id="1U60oYx00Sp" role="2Oq$k0">
                 <node concept="_YI3z" id="1U60oYx00s8" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="1U60oYx01sB" role="2OqNvi">
-                  <ref role="3TtcxE" to="bnk3:1dAqnm8s8AA" />
+                  <ref role="3TtcxE" to="bnk3:1dAqnm8s8AA" resolve="headers" />
                 </node>
               </node>
               <node concept="2Kehj3" id="1U60oYx046j" role="2OqNvi" />
@@ -169,7 +169,7 @@
                   <ref role="3cqZAo" node="1U60oYwZA0F" resolve="headerCollection" />
                 </node>
                 <node concept="3Tsc0h" id="1U60oYwZBiw" role="2OqNvi">
-                  <ref role="3TtcxE" to="bnk3:5XAg1h1LWbU" />
+                  <ref role="3TtcxE" to="bnk3:5XAg1h1LWbU" resolve="childs" />
                 </node>
               </node>
               <node concept="X8dFx" id="1U60oYwZDTz" role="2OqNvi">
@@ -188,7 +188,7 @@
               <node concept="2OqwBi" id="1U60oYwZxU3" role="2Oq$k0">
                 <node concept="_YI3z" id="1U60oYwZxOe" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="1U60oYwZywn" role="2OqNvi">
-                  <ref role="3TtcxE" to="bnk3:1dAqnm8s8AA" />
+                  <ref role="3TtcxE" to="bnk3:1dAqnm8s8AA" resolve="headers" />
                 </node>
               </node>
               <node concept="3GX2aA" id="1U60oYwZ$Md" role="2OqNvi" />

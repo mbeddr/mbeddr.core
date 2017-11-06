@@ -2,6 +2,7 @@
 <model ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -978,7 +979,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7XSydqoCpA">
-    <property role="3GE5qa" value="c-integration.test" />
+    <property role="3GE5qa" value="c-integration" />
     <property role="TrG5h" value="SmSetStateTarget" />
     <property role="34LRSv" value="setState" />
     <property role="R4oN_" value="sets the state machine into a specific state" />
@@ -990,9 +991,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="143519404613863234" />
       <ref role="20lvS9" node="3FSHg1aADay" resolve="AbstractState" />
-    </node>
-    <node concept="PrWs8" id="7XSydqoC_3" role="PzmwI">
-      <ref role="PrY4T" to="yz9a:2W4z3PKVgeS" resolve="IRestrictToTests" />
     </node>
   </node>
 </model>

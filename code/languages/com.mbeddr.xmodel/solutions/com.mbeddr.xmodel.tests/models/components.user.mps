@@ -6,7 +6,6 @@
   </languages>
   <imports>
     <import index="en1q" ref="r:89cf737e-ac07-4ee7-842b-ea0fe47d54b8(com.mbeddr.xmodel.tests.components.lib)" />
-    <import index="en1q" ref="r:89cf737e-ac07-4ee7-842b-ea0fe47d54b8(com.mbeddr.xmodel.tests.components.lib)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">

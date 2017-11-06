@@ -188,7 +188,7 @@
             <node concept="2OqwBi" id="7eG1RIauLoU" role="2Oq$k0">
               <node concept="2Sf5sV" id="7eG1RIauLkL" role="2Oq$k0" />
               <node concept="3Tsc0h" id="7eG1RIauLyH" role="2OqNvi">
-                <ref role="3TtcxE" to="r5xn:Uhkfo4FJib" />
+                <ref role="3TtcxE" to="r5xn:Uhkfo4FJib" resolve="expectedScopeContents" />
               </node>
             </node>
             <node concept="2Kehj3" id="7eG1RIauNqE" role="2OqNvi" />
@@ -199,7 +199,7 @@
             <node concept="2OqwBi" id="7eG1RIauPzP" role="2Oq$k0">
               <node concept="2Sf5sV" id="7eG1RIauOKs" role="2Oq$k0" />
               <node concept="3Tsc0h" id="7eG1RIauPNx" role="2OqNvi">
-                <ref role="3TtcxE" to="r5xn:Uhkfo4FJib" />
+                <ref role="3TtcxE" to="r5xn:Uhkfo4FJib" resolve="expectedScopeContents" />
               </node>
             </node>
             <node concept="X8dFx" id="7eG1RIauRFu" role="2OqNvi">
@@ -215,7 +215,7 @@
                           <node concept="2pJPED" id="7eG1RIauUEt" role="2pJPEn">
                             <ref role="2pJxaS" to="r5xn:Uhkfo4FJid" resolve="NodeInScopeRef" />
                             <node concept="2pIpSj" id="7eG1RIauV1e" role="2pJxcM">
-                              <ref role="2pIpSl" to="r5xn:Uhkfo4FJie" />
+                              <ref role="2pIpSl" to="r5xn:Uhkfo4FJie" resolve="target" />
                               <node concept="36biLy" id="7eG1RIauVK5" role="2pJxcZ">
                                 <node concept="37vLTw" id="7eG1RIauWoC" role="36biLW">
                                   <ref role="3cqZAo" node="7eG1RIauUb4" resolve="it" />

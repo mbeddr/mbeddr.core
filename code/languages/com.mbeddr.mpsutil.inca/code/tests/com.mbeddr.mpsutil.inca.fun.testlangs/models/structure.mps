@@ -2,6 +2,7 @@
 <model ref="r:0f17df74-12d3-495c-9401-0232a712e8ff(com.mbeddr.mpsutil.inca.fun.testlangs.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>

@@ -39,7 +39,6 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="pjrh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter(MPS.Core/)" />
     <import index="j7l4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystemEngine.checker(MPS.Core/)" />
-    <import index="h9bu" ref="r:7e7e32d8-af70-42df-8993-b4832d5a25fe(jetbrains.mps.project.validation)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="ntri" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context.typechecking(MPS.Core/)" />
@@ -704,86 +703,38 @@
           </node>
         </node>
         <node concept="3clFbH" id="6fGXG$6p2y3" role="3cqZAp" />
-        <node concept="3cpWs8" id="KiQtdg5FjC" role="3cqZAp">
-          <node concept="3cpWsn" id="KiQtdg5FjD" role="3cpWs9">
-            <property role="TrG5h" value="lc" />
-            <node concept="3uibUv" id="KiQtdg5FjE" role="1tU5fm">
-              <ref role="3uigEE" to="k2t0:~LanguageChecker" resolve="LanguageChecker" />
-            </node>
-            <node concept="2ShNRf" id="KiQtdg5FZU" role="33vP2m">
-              <node concept="1pGfFk" id="KiQtdg5Wu7" role="2ShVmc">
-                <ref role="37wK5l" to="k2t0:~LanguageChecker.&lt;init&gt;()" resolve="LanguageChecker" />
-              </node>
-            </node>
+        <node concept="3SKdUt" id="hODJYROP_O" role="3cqZAp">
+          <node concept="3SKdUq" id="hODJYROP_Q" role="3SKWNk">
+            <property role="3SKdUp" value="TODO Add again. Broken in 2017.2.2" />
           </node>
         </node>
-        <node concept="2Gpval" id="5pBHv2J66zu" role="3cqZAp">
-          <node concept="2GrKxI" id="5pBHv2J66zv" role="2Gsz3X">
-            <property role="TrG5h" value="crtNode" />
+        <node concept="3SKdUt" id="hODJYRPbzM" role="3cqZAp">
+          <node concept="3SKdUq" id="hODJYRPbzO" role="3SKWNk">
+            <property role="3SKdUp" value="LanguageChecker lc = new LanguageChecker() " />
           </node>
-          <node concept="3clFbS" id="5pBHv2J66zw" role="2LFqv$">
-            <node concept="3cpWs8" id="6fGXG$6oZ5Z" role="3cqZAp">
-              <node concept="3cpWsn" id="6fGXG$6oZ60" role="3cpWs9">
-                <property role="TrG5h" value="errors" />
-                <node concept="3uibUv" id="6fGXG$6oZ5l" role="1tU5fm">
-                  <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
-                  <node concept="3uibUv" id="6fGXG$6oZ5o" role="11_B2D">
-                    <ref role="3uigEE" to="2gg1:~IErrorReporter" resolve="IErrorReporter" />
-                  </node>
+        </node>
+        <node concept="1X3_iC" id="hODJYRONsi" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="2Gpval" id="5pBHv2J66zu" role="8Wnug">
+            <node concept="2GrKxI" id="5pBHv2J66zv" role="2Gsz3X">
+              <property role="TrG5h" value="crtNode" />
+            </node>
+            <node concept="3clFbS" id="5pBHv2J66zw" role="2LFqv$">
+              <node concept="3SKdUt" id="hODJYRPd$D" role="3cqZAp">
+                <node concept="3SKdUq" id="hODJYRPd$F" role="3SKWNk">
+                  <property role="3SKdUp" value="Set&lt;IErrorReporter&gt; errors = lc.getErrors(crtNode, MPSModuleRepository.getInstance()); " />
                 </node>
-                <node concept="2OqwBi" id="6fGXG$6oZ61" role="33vP2m">
-                  <node concept="37vLTw" id="6fGXG$6oZ62" role="2Oq$k0">
-                    <ref role="3cqZAo" node="KiQtdg5FjD" resolve="lc" />
-                  </node>
-                  <node concept="liA8E" id="6fGXG$6oZ63" role="2OqNvi">
-                    <ref role="37wK5l" to="k2t0:~LanguageChecker.getErrors(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository):java.util.Set" resolve="getErrors" />
-                    <node concept="2GrUjf" id="6fGXG$6oZ64" role="37wK5m">
-                      <ref role="2Gs0qQ" node="5pBHv2J66zv" resolve="crtNode" />
-                    </node>
-                    <node concept="2YIFZM" id="6fGXG$6oZ65" role="37wK5m">
-                      <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-                      <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                    </node>
-                  </node>
+              </node>
+              <node concept="3SKdUt" id="hODJYRPexR" role="3cqZAp">
+                <node concept="3SKdUq" id="hODJYRPexT" role="3SKWNk">
+                  <property role="3SKdUp" value="foreach e in errors { \n  if (e.getMessageStatus() == MessageStatus.ERROR) { return false; } \n} " />
                 </node>
               </node>
             </node>
-            <node concept="2Gpval" id="6fGXG$6oZsF" role="3cqZAp">
-              <node concept="2GrKxI" id="6fGXG$6oZsH" role="2Gsz3X">
-                <property role="TrG5h" value="e" />
-              </node>
-              <node concept="3clFbS" id="6fGXG$6oZsJ" role="2LFqv$">
-                <node concept="3clFbJ" id="KiQtdg5WzN" role="3cqZAp">
-                  <node concept="3clFbS" id="KiQtdg5WzP" role="3clFbx">
-                    <node concept="3cpWs6" id="KiQtdg6269" role="3cqZAp">
-                      <node concept="3clFbT" id="KiQtdg62uW" role="3cqZAk">
-                        <property role="3clFbU" value="false" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbC" id="6fGXG$6p1fQ" role="3clFbw">
-                    <node concept="Rm8GO" id="6fGXG$6p1tV" role="3uHU7w">
-                      <ref role="Rm8GQ" to="2gg1:~MessageStatus.ERROR" resolve="ERROR" />
-                      <ref role="1Px2BO" to="2gg1:~MessageStatus" resolve="MessageStatus" />
-                    </node>
-                    <node concept="2OqwBi" id="6fGXG$6p0b7" role="3uHU7B">
-                      <node concept="2GrUjf" id="6fGXG$6p00R" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="6fGXG$6oZsH" resolve="e" />
-                      </node>
-                      <node concept="liA8E" id="6fGXG$6p0mR" role="2OqNvi">
-                        <ref role="37wK5l" to="2gg1:~IErrorReporter.getMessageStatus():jetbrains.mps.errors.MessageStatus" resolve="getMessageStatus" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="37vLTw" id="6fGXG$6oZC3" role="2GsD0m">
-                <ref role="3cqZAo" node="6fGXG$6oZ60" resolve="errors" />
-              </node>
+            <node concept="37vLTw" id="5pBHv2J66zx" role="2GsD0m">
+              <ref role="3cqZAo" node="5pBHv2J64Gq" resolve="allDescendants" />
             </node>
-          </node>
-          <node concept="37vLTw" id="5pBHv2J66zx" role="2GsD0m">
-            <ref role="3cqZAo" node="5pBHv2J64Gq" resolve="allDescendants" />
           </node>
         </node>
         <node concept="3clFbH" id="6fGXG$6p4PR" role="3cqZAp" />
@@ -1252,66 +1203,18 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2RMHhGkQ$58" role="3cqZAp">
-          <node concept="2YIFZM" id="7zX9aIUx1Gc" role="3clFbG">
-            <ref role="37wK5l" to="6if8:~ValidationUtil.validateSingleNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.util.Processor):boolean" resolve="validateSingleNode" />
-            <ref role="1Pybhc" to="6if8:~ValidationUtil" resolve="ValidationUtil" />
-            <node concept="37vLTw" id="7zX9aIUx1Gf" role="37wK5m">
-              <ref role="3cqZAo" node="4m$eX95upom" resolve="aNode" />
-            </node>
-            <node concept="2ShNRf" id="7zX9aIUx1Gi" role="37wK5m">
-              <node concept="1pGfFk" id="7zX9aIUx1Gj" role="2ShVmc">
-                <ref role="37wK5l" to="h9bu:w2yda4ezwI" resolve="SuppressingAwareProcessorDecorator" />
-                <node concept="1bVj0M" id="7zX9aIUx1Gk" role="37wK5m">
-                  <node concept="3clFbS" id="7zX9aIUx1Gl" role="1bW5cS">
-                    <node concept="3clFbJ" id="7zX9aIUx1Gm" role="3cqZAp">
-                      <node concept="3clFbS" id="7zX9aIUx1Gn" role="3clFbx">
-                        <node concept="3cpWs6" id="7zX9aIUx1Go" role="3cqZAp">
-                          <node concept="3clFbT" id="7zX9aIUx1Gp" role="3cqZAk">
-                            <property role="3clFbU" value="true" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3fqX7Q" id="7zX9aIUx1Gq" role="3clFbw">
-                        <node concept="1eOMI4" id="7zX9aIUx1Gr" role="3fr31v">
-                          <node concept="2ZW3vV" id="7zX9aIUx1Gs" role="1eOMHV">
-                            <node concept="3uibUv" id="7zX9aIUx1Gt" role="2ZW6by">
-                              <ref role="3uigEE" to="6if8:~NodeValidationProblem" resolve="NodeValidationProblem" />
-                            </node>
-                            <node concept="37vLTw" id="7zX9aIUx1Gu" role="2ZW6bz">
-                              <ref role="3cqZAo" node="7zX9aIUx1GC" resolve="vp" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="7zX9aIUx6Nc" role="3cqZAp">
-                      <node concept="37vLTI" id="7zX9aIUx6Sd" role="3clFbG">
-                        <node concept="3clFbT" id="7zX9aIUx6VA" role="37vLTx">
-                          <property role="3clFbU" value="false" />
-                        </node>
-                        <node concept="37vLTw" id="7zX9aIUx6Na" role="37vLTJ">
-                          <ref role="3cqZAo" node="7zX9aIUx6fM" resolve="structureOk" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3cpWs6" id="7zX9aIUx1GA" role="3cqZAp">
-                      <node concept="3clFbT" id="7zX9aIUx1GB" role="3cqZAk">
-                        <property role="3clFbU" value="true" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="37vLTG" id="7zX9aIUx1GC" role="1bW2Oz">
-                    <property role="TrG5h" value="vp" />
-                    <node concept="3uibUv" id="7zX9aIUx1GD" role="1tU5fm">
-                      <ref role="3uigEE" to="6if8:~ValidationProblem" resolve="ValidationProblem" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
+        <node concept="3SKdUt" id="hODJYRPlsc" role="3cqZAp">
+          <node concept="3SKdUq" id="hODJYRPlse" role="3SKWNk">
+            <property role="3SKdUp" value="TODO re-enable" />
           </node>
         </node>
+        <node concept="3SKdUt" id="hODJYRPm82" role="3cqZAp">
+          <node concept="3SKdUq" id="hODJYRPm84" role="3SKWNk">
+            <property role="3SKdUp" value="ValidationUtil.validateSingleNode(aNode, new SuppressingAwareProcessorDecorator({ValidationProblem vp =&gt; \n  if (!(vp instanceof NodeValidationProblem)) { return true; } \n  structureOk = false; \n  return true; \n})); " />
+          </node>
+        </node>
+        <node concept="3clFbH" id="hODJYRPmPK" role="3cqZAp" />
+        <node concept="3clFbH" id="hODJYRPnau" role="3cqZAp" />
         <node concept="3clFbH" id="7zX9aIUx03L" role="3cqZAp" />
         <node concept="3clFbH" id="7zX9aIUwAxL" role="3cqZAp" />
         <node concept="1X3_iC" id="2xOuuoy_iBb" role="lGtFl">
