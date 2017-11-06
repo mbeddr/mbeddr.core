@@ -3735,6 +3735,27 @@
           <node concept="3LWZYq" id="32YXDrSqjt0" role="1juEy9">
             <property role="3LWZYl" value="samples.jar" />
           </node>
+          <node concept="3LWZYq" id="1xh_EoiZTSX" role="1juEy9">
+            <property role="3LWZYl" value="diagramEditor/**" />
+          </node>
+          <node concept="3LWZYq" id="1xh_EoiZTSY" role="1juEy9">
+            <property role="3LWZYl" value="ideaIntegration.jar" />
+          </node>
+          <node concept="3LWZYq" id="1xh_EoiZTSZ" role="1juEy9">
+            <property role="3LWZYl" value="mps-devkit/**" />
+          </node>
+          <node concept="3LWZYq" id="1xh_EoiZTT0" role="1juEy9">
+            <property role="3LWZYl" value="mps-console/**" />
+          </node>
+          <node concept="3LWZYq" id="1xh_EoiZTT1" role="1juEy9">
+            <property role="3LWZYl" value="mps-trove/**" />
+          </node>
+          <node concept="3LWZYq" id="1xh_EoiZTT2" role="1juEy9">
+            <property role="3LWZYl" value="mps-java/**" />
+          </node>
+          <node concept="3LWZYq" id="1xh_EoiZTT3" role="1juEy9">
+            <property role="3LWZYl" value="jetpad/**" />
+          </node>
         </node>
         <node concept="3_J27D" id="1BPeV_LjXvJ" role="Nbhlr">
           <node concept="3Mxwew" id="1BPeV_LjXvK" role="3MwsjC">

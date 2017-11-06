@@ -765,6 +765,24 @@
     <node concept="2flH9Z" id="2zyvt0HGdvd" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.ModelNewActions_ActionGroup" />
     </node>
+    <node concept="2flH9Z" id="4dmlckbYDzb" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.NewModel_Action" />
+    </node>
+    <node concept="2flH9Z" id="1xh_EoiZJqs" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.ModelNewActions_ActionGroupnewRoot" />
+    </node>
+    <node concept="2flH9Z" id="1xh_EoiZJA5" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.CreateRootNode_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="1xh_EoiZJyc" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.NewSubModel_Action" />
+    </node>
+    <node concept="2flH9Z" id="1xh_EoiZJHP" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.NewSubTestModel_Action" />
+    </node>
+    <node concept="2flH9Z" id="1xh_EoiZTE6" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.SolutionNewActions_ActionGroup" />
+    </node>
   </node>
   <node concept="2flHaf" id="5re6bl11R$A">
     <property role="TrG5h" value="EverythingActions" />
