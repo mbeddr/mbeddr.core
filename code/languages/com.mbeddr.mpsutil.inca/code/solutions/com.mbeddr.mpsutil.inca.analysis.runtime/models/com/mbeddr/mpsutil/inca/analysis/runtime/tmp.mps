@@ -14,6 +14,9 @@
   </imports>
   <registry>
     <language id="8c9a2720-9d21-4370-a226-819eb3e76e1e" name="com.mbeddr.mpsutil.inca.fun">
+      <concept id="996292992024530460" name="com.mbeddr.mpsutil.inca.fun.structure.PatternFunctionCall" flags="ng" index="2k1GkI">
+        <child id="996292992028393460" name="call" index="2nKVj6" />
+      </concept>
       <concept id="1036696987215326970" name="com.mbeddr.mpsutil.inca.fun.structure.ReturnStatement" flags="ng" index="30Nfyg">
         <child id="1036696987215326979" name="expression" index="30Nf_D" />
       </concept>
@@ -23,12 +26,12 @@
       <concept id="1925259677761386650" name="com.mbeddr.mpsutil.inca.fun.structure.PatternFunctionBody" flags="ng" index="3zV_Rz" />
       <concept id="6368683143941319361" name="com.mbeddr.mpsutil.inca.fun.structure.PatternFunctionModule" flags="ng" index="3TKv5i" />
       <concept id="6368683143941346282" name="com.mbeddr.mpsutil.inca.fun.structure.PatternFunctionAnonymousParameter" flags="ng" index="3TL$xT" />
-      <concept id="5458164179963309291" name="com.mbeddr.mpsutil.inca.fun.structure.PatternFunctionParameter" flags="ng" index="1VLyuc" />
       <concept id="6151553526979403289" name="com.mbeddr.mpsutil.inca.fun.structure.PatternFunctionEmptyContent" flags="ng" index="1XdyHe" />
     </language>
     <language id="e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2" name="com.mbeddr.mpsutil.inca.data">
       <concept id="2990657152022329319" name="com.mbeddr.mpsutil.inca.data.structure.TypeConstructorTypeWrapper" flags="ng" index="2eLkkM">
         <child id="2990657152023305369" name="type" index="2eP6Tc" />
+        <child id="4064994170503934946" name="operation" index="iwB5b" />
       </concept>
       <concept id="7225463921150186994" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperation" flags="ig" index="hMdjl" />
       <concept id="7225463921150311746" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperationParameterDeclaration" flags="ig" index="hPFL_" />
@@ -53,16 +56,9 @@
         <reference id="3837287384171340390" name="dataConstructor" index="2ZRyFH" />
       </concept>
       <concept id="3837287384171340388" name="com.mbeddr.mpsutil.inca.data.structure.DataConstructorCall" flags="ng" index="2ZRyFJ" />
-      <concept id="8400401379548959316" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperationCall" flags="ng" index="1i8UFo" />
+      <concept id="8607574815738007253" name="com.mbeddr.mpsutil.inca.data.structure.JoinOperation" flags="ng" index="3iRr5_" />
       <concept id="5848731312440774191" name="com.mbeddr.mpsutil.inca.data.structure.ILatticeMemberCall" flags="ng" index="1p__0b">
         <child id="3837287384171340393" name="arguments" index="2ZRyFy" />
-      </concept>
-      <concept id="5848731312440774070" name="com.mbeddr.mpsutil.inca.data.structure.QualifiedLatticeMemberCall" flags="ng" index="1p__ei">
-        <child id="5848731312440774081" name="typeConstructor" index="1p__f_" />
-        <child id="5848731312440826198" name="memberCall" index="1p_StM" />
-      </concept>
-      <concept id="5848731312440203838" name="com.mbeddr.mpsutil.inca.data.structure.ILatticeOperationCall" flags="ng" index="1pAggq">
-        <reference id="4806602015086699633" name="operation" index="2RnLXx" />
       </concept>
       <concept id="6779281757084048802" name="com.mbeddr.mpsutil.inca.data.structure.DataConstructorPatternTypeElement" flags="ng" index="1tkKlP">
         <reference id="6779281757084071662" name="constructor" index="1tneST" />
@@ -85,10 +81,6 @@
       </concept>
       <concept id="7197326959317258822" name="com.mbeddr.mpsutil.inca.data.structure.WildCardPattern" flags="ng" index="3_$9zU" />
       <concept id="7197326959317524891" name="com.mbeddr.mpsutil.inca.data.structure.Pattern" flags="ng" index="3__aGB" />
-      <concept id="7197326959315955332" name="com.mbeddr.mpsutil.inca.data.structure.TypeConstructorReference" flags="ng" index="3_JagS" />
-      <concept id="7197326959315955301" name="com.mbeddr.mpsutil.inca.data.structure.ITypeConstructorReference" flags="ng" index="3_Jajp">
-        <reference id="7197326959315955302" name="constructor" index="3_Jajq" />
-      </concept>
       <concept id="2778512680760986556" name="com.mbeddr.mpsutil.inca.data.structure.ILatticeDefinitionModule" flags="ng" index="3U8w$N">
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
@@ -221,11 +213,12 @@
       </concept>
     </language>
     <language id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="com.mbeddr.mpsutil.inca.core">
-      <concept id="996292992025672789" name="com.mbeddr.mpsutil.inca.core.structure.ConceptReferenceType" flags="ng" index="2kdjtB">
-        <reference id="7241148409041409499" name="concept" index="2UGuZ7" />
-      </concept>
+      <concept id="996292992024566952" name="com.mbeddr.mpsutil.inca.core.structure.PatternCall" flags="ng" index="2k1_uq" />
       <concept id="1024655549788599478" name="com.mbeddr.mpsutil.inca.core.structure.IIncaModuleImport" flags="ng" index="ws7DX">
         <reference id="1024655549788599479" name="module" index="ws7DW" />
+      </concept>
+      <concept id="4074503452633891989" name="com.mbeddr.mpsutil.inca.core.structure.IPatternCall" flags="ng" index="1aOKZo">
+        <reference id="996292992028507459" name="pattern" index="2nKBpL" />
       </concept>
       <concept id="4530729936991344605" name="com.mbeddr.mpsutil.inca.core.structure.IPatternBody" flags="ng" index="1dubk2">
         <child id="4530729936991965471" name="contents" index="1dgzf0" />
@@ -237,11 +230,7 @@
         <child id="4530729936991365310" name="type" index="1dukDx" />
       </concept>
       <concept id="4530729936991344017" name="com.mbeddr.mpsutil.inca.core.structure.IPattern" flags="ng" index="1dubte">
-        <child id="4530729936991567856" name="parameters" index="1dv5OJ" />
         <child id="1925259677761359694" name="bodies" index="3zVECR" />
-      </concept>
-      <concept id="3634481308605751419" name="com.mbeddr.mpsutil.inca.core.structure.BaseVariableReference" flags="ng" index="1sjAk5">
-        <reference id="3634481308605751420" name="variable" index="1sjAk2" />
       </concept>
       <concept id="1118899187025157789" name="com.mbeddr.mpsutil.inca.core.structure.IIncaModule" flags="ng" index="3DBbTW">
         <child id="8118018043742924547" name="imports" index="xaH5_" />
@@ -277,24 +266,21 @@
   <node concept="3TKv5i" id="2qfgCZsEZXU">
     <property role="TrG5h" value="Test" />
     <node concept="3zyOaA" id="7xh$8$gZohE" role="1dubk0">
-      <property role="TrG5h" value="test" />
-      <node concept="1VLyuc" id="7xh$8$gZohF" role="1dv5OJ">
-        <property role="TrG5h" value="at" />
-        <node concept="2kdjtB" id="7xh$8$gZDKc" role="1dukDx">
-          <ref role="2UGuZ7" to="tpee:f_0Q1BR" resolve="ArrayType" />
-        </node>
-      </node>
+      <property role="TrG5h" value="test1" />
       <node concept="3zV_Rz" id="7xh$8$gZohG" role="3zVECR">
         <node concept="30Nfyg" id="6CkKQsJsB4f" role="1dgzf0">
-          <node concept="1p__ei" id="6WacHbsZMel" role="30Nf_D">
-            <node concept="1i8UFo" id="6WacHbsZO2n" role="1p_StM">
-              <ref role="2RnLXx" node="7xh$8$gZhAT" resolve="construct" />
-              <node concept="1sjAk5" id="7xh$8$gZP53" role="2ZRyFy">
-                <ref role="1sjAk2" node="7xh$8$gZohF" resolve="at" />
-              </node>
+          <node concept="2k1GkI" id="6LDH8ykjBRQ" role="30Nf_D">
+            <node concept="2k1_uq" id="6LDH8ykjBRO" role="2nKVj6">
+              <ref role="2nKBpL" node="6LDH8ykjBHB" resolve="test2" />
             </node>
-            <node concept="3_JagS" id="7xh$8$gZP2U" role="1p__f_">
-              <ref role="3_Jajq" node="6h60itPAxDx" resolve="Lat" />
+          </node>
+        </node>
+      </node>
+      <node concept="3zV_Rz" id="6LDH8ykjBZL" role="3zVECR">
+        <node concept="30Nfyg" id="6LDH8ykjC0G" role="1dgzf0">
+          <node concept="2k1GkI" id="6LDH8ykjC0H" role="30Nf_D">
+            <node concept="2k1_uq" id="6LDH8ykjC1G" role="2nKVj6">
+              <ref role="2nKBpL" node="6LDH8ykjBV2" resolve="test3" />
             </node>
           </node>
         </node>
@@ -304,6 +290,70 @@
           <node concept="2ZQB9c" id="7xh$8$gZqSF" role="2eP6Tc">
             <ref role="2ZQB93" node="6h60itPAxDx" resolve="Lat" />
           </node>
+          <node concept="3iRr5_" id="2Yoto85RNkM" role="iwB5b" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XdyHe" id="6LDH8ykjBKJ" role="1dubk0" />
+    <node concept="3zyOaA" id="6LDH8ykjBHB" role="1dubk0">
+      <property role="TrG5h" value="test2" />
+      <node concept="3zV_Rz" id="6LDH8ykjBHE" role="3zVECR">
+        <node concept="30Nfyg" id="6LDH8ykjBHF" role="1dgzf0">
+          <node concept="2k1GkI" id="6LDH8ykjBTg" role="30Nf_D">
+            <node concept="2k1_uq" id="6LDH8ykjBTb" role="2nKVj6">
+              <ref role="2nKBpL" node="7xh$8$gZohE" resolve="test1" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3TL$xT" id="6LDH8ykjBHK" role="3TLBbI">
+        <node concept="2eLkkM" id="6LDH8ykjBHL" role="1dukDx">
+          <node concept="2ZQB9c" id="6LDH8ykjBHM" role="2eP6Tc">
+            <ref role="2ZQB93" node="6h60itPAxDx" resolve="Lat" />
+          </node>
+          <node concept="3iRr5_" id="6LDH8ykjBYU" role="iwB5b" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XdyHe" id="6LDH8ykjBXF" role="1dubk0" />
+    <node concept="3zyOaA" id="6LDH8ykjBV2" role="1dubk0">
+      <property role="TrG5h" value="test3" />
+      <node concept="3zV_Rz" id="6LDH8ykjBV3" role="3zVECR">
+        <node concept="30Nfyg" id="6LDH8ykjBV4" role="1dgzf0">
+          <node concept="2k1GkI" id="6LDH8ykjBV5" role="30Nf_D">
+            <node concept="2k1_uq" id="6LDH8ykjCd3" role="2nKVj6">
+              <ref role="2nKBpL" node="6LDH8ykjC2D" resolve="test4" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3TL$xT" id="6LDH8ykjBV7" role="3TLBbI">
+        <node concept="2eLkkM" id="6LDH8ykjBV8" role="1dukDx">
+          <node concept="2ZQB9c" id="6LDH8ykjBV9" role="2eP6Tc">
+            <ref role="2ZQB93" node="6h60itPAxDx" resolve="Lat" />
+          </node>
+          <node concept="3iRr5_" id="6LDH8ykjCa_" role="iwB5b" />
+        </node>
+      </node>
+    </node>
+    <node concept="1XdyHe" id="6LDH8ykjC6k" role="1dubk0" />
+    <node concept="3zyOaA" id="6LDH8ykjC2D" role="1dubk0">
+      <property role="TrG5h" value="test4" />
+      <node concept="3zV_Rz" id="6LDH8ykjC2E" role="3zVECR">
+        <node concept="30Nfyg" id="6LDH8ykjC2F" role="1dgzf0">
+          <node concept="2k1GkI" id="6LDH8ykjC2G" role="30Nf_D">
+            <node concept="2k1_uq" id="6LDH8ykjCbQ" role="2nKVj6">
+              <ref role="2nKBpL" node="6LDH8ykjBV2" resolve="test3" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3TL$xT" id="6LDH8ykjC2I" role="3TLBbI">
+        <node concept="2eLkkM" id="6LDH8ykjC2J" role="1dukDx">
+          <node concept="2ZQB9c" id="6LDH8ykjC2K" role="2eP6Tc">
+            <ref role="2ZQB93" node="6h60itPAxDx" resolve="Lat" />
+          </node>
+          <node concept="3iRr5_" id="6LDH8ykjCeg" role="iwB5b" />
         </node>
       </node>
     </node>

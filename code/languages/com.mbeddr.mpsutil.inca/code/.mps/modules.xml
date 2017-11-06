@@ -19,6 +19,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.ui/com.mbeddr.mpsutil.inca.ui.msd" folder="ui" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.soot.runtime/com.mbeddr.mpsutil.soot.runtime.msd" folder="soot" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.data.test/com.mbeddr.mpsutil.inca.data.test.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.dep.test/com.mbeddr.mpsutil.inca.dep.test.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.fun.test/com.mbeddr.mpsutil.inca.fun.test.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.fun.testlangs/com.mbeddr.mpsutil.inca.fun.testlangs.mpl" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.inca.gp.test/com.mbeddr.mpsutil.inca.gp.test.msd" folder="tests" />
