@@ -88,6 +88,7 @@ ext.slall_home = ['-Dsl-all.home=' + file(rootProject.projectDir.absolutePath + 
 ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
 ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home]
 
+
 // path locations
 ext.mbeddrScripts_basePath = file(ant.properties['mbeddr.github.core.home'] + "/build").getAbsolutePath()
 ext.allScripts_buildFileLocation = file(mbeddrScripts_basePath + "/" + "com.mbeddr.allScripts").getAbsolutePath()
