@@ -3,9 +3,6 @@ import de.itemis.mps.gradle.CreateDmg
 configurations {
     junitAnt
     mpsArtifacts
-    cbmcWin {
-        description = 'cbmc windows'
-    }
     jreWin
 }
 
@@ -20,7 +17,7 @@ dependencies {
 }
 
 task resolveMpsArtifacts() {
-    doLast {
+    doLast { 
         copy {
             from {
                     configurations.mpsArtifacts.resolve().collect { zipTree(it) }
@@ -29,10 +26,6 @@ task resolveMpsArtifacts() {
         }
     }
 }
-
-
-
-
 
 def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
 
@@ -85,20 +78,8 @@ task prepare_installer(type: Copy, dependsOn: [build_mbeddrRCP, resolve_jreWindo
     into installer_repo + "/files/"
 }
 
-task resolve_cbmcWinForInstaller(type: Copy)  {
-    from {
-        configurations.cbmcWin.collect { zipTree(it) }
-    }
-    into rootProject.projectDir.absolutePath + "/artifacts/cbmc"
-}
 
-
-task unzip_cbmcWinZipForInstaller(type: Copy, dependsOn: resolve_cbmcWinForInstaller)  {
-    from zipTree(rootProject.projectDir.absolutePath + "/artifacts/cbmc/"+ "cbmc-win.zip")
-    into file(installer_repo +"/files/3rd-party/cbmc")
-}
-
-task build_installer(type:Exec, dependsOn: [prepare_installer, unzip_cbmcWinZipForInstaller]) {
+task build_installer(type:Exec, dependsOn: [prepare_installer]) {
   workingDir installer_repo
 
   //on windows:
