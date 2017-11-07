@@ -1,8 +1,4 @@
 import de.itemis.mps.gradle.CreateDmg
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.Properties;
 
 configurations {
     junitAnt
@@ -12,8 +8,6 @@ configurations {
     }
     jreWin
 }
-
-String mpsBuildNumberPrefix = "MPS-172"
 
 ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr',
@@ -36,21 +30,9 @@ task resolveMpsArtifacts() {
     }
 }
 
-// extracting the major MPS version
-Properties prop = new Properties();
-InputStream input = null;
-try {
-	input = new FileInputStream(new File(mpsHomeDir.getAbsolutePath() + "/" + "build.properties"));
-	prop.load(input);
-	String mpsVersion = prop.getProperty("mps.build.number");
-	String mpsMajorVersion = mpsVersion.split("\\.")[0];
-	ext.dependsOnMbeddr_scriptArgs = ['-Dmps.majorVersion='+mpsMajorVersion, *dependsOnMbeddr_scriptArgs];
-} catch (IOException io) {
-	io.printStackTrace();
-} finally {
-	input.close();
-}
-	
+
+
+
 
 def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
 
@@ -61,7 +43,6 @@ task build_all_in_one(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platf
 task build_platform_distribution(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]) {
     script scriptFile('com.mbeddr.platform/build-distribution.xml')
     // Support incremental build
-	println("### path: " + dependsOnMbeddr_scriptArgs);
     inputs.file(script)
 }
 

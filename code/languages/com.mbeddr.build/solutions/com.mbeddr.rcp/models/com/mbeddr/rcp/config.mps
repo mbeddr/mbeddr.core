@@ -1775,25 +1775,12 @@
         </node>
       </node>
     </node>
-    <node concept="2kB4xC" id="zDnYUHv5xq" role="1l3spd">
-      <property role="TrG5h" value="mps.majorVersion" />
-      <node concept="aVJcg" id="zDnYUHv5yj" role="aVJcv">
-        <node concept="NbPM2" id="zDnYUHv5yi" role="aVJcq">
-          <node concept="3Mxwew" id="zDnYUHv5yh" role="3MwsjC">
-            <property role="3MwjfP" value="MPS-173" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2kB4xC" id="3IKDaVZnAxg" role="1l3spd">
       <property role="TrG5h" value="mps.build.number" />
       <node concept="aVJcg" id="6hnvgFycl60" role="aVJcv">
         <node concept="NbPM2" id="6hnvgFycl61" role="aVJcq">
-          <node concept="3Mxwey" id="zDnYUHv5$a" role="3MwsjC">
-            <ref role="3Mxwex" node="zDnYUHv5xq" resolve="mps.majorVersion" />
-          </node>
-          <node concept="3Mxwew" id="zDnYUHv5$d" role="3MwsjC">
-            <property role="3MwjfP" value="." />
+          <node concept="3Mxwew" id="5wLtKNeUYBj" role="3MwsjC">
+            <property role="3MwjfP" value="MPS-172." />
           </node>
           <node concept="3Mxwey" id="32YXDrSqvWF" role="3MwsjC">
             <ref role="3Mxwex" node="32YXDrSqvS3" resolve="mbeddr.buildNumber" />
@@ -1979,7 +1966,7 @@
       </node>
       <node concept="3_J27D" id="1BPeV_LjXt6" role="2EteIg">
         <node concept="3Mxwey" id="1BPeV_LjXt7" role="3MwsjC">
-          <ref role="3Mxwex" node="zDnYUHv5An" resolve="mps.build.number" />
+          <ref role="3Mxwex" node="jueD0WYgWw" resolve="mps.build.number" />
         </node>
       </node>
       <node concept="3_J27D" id="1BPeV_LjXt8" role="2EtHGA">
@@ -2401,27 +2388,14 @@
         </node>
       </node>
     </node>
-    <node concept="2kB4xC" id="zDnYUHv5Aj" role="1l3spd">
-      <property role="TrG5h" value="mps.majorVersion" />
-      <node concept="aVJcg" id="zDnYUHv5Ak" role="aVJcv">
-        <node concept="NbPM2" id="zDnYUHv5Al" role="aVJcq">
-          <node concept="3Mxwew" id="zDnYUHv5Am" role="3MwsjC">
-            <property role="3MwjfP" value="MPS-173" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2kB4xC" id="zDnYUHv5An" role="1l3spd">
+    <node concept="2kB4xC" id="jueD0WYgWw" role="1l3spd">
       <property role="TrG5h" value="mps.build.number" />
-      <node concept="aVJcg" id="zDnYUHv5Ao" role="aVJcv">
-        <node concept="NbPM2" id="zDnYUHv5Ap" role="aVJcq">
-          <node concept="3Mxwey" id="zDnYUHv5Aq" role="3MwsjC">
-            <ref role="3Mxwex" node="zDnYUHv5Aj" resolve="mps.majorVersion" />
+      <node concept="aVJcg" id="jueD0WYgWx" role="aVJcv">
+        <node concept="NbPM2" id="jueD0WYgWy" role="aVJcq">
+          <node concept="3Mxwew" id="jueD0WYgWz" role="3MwsjC">
+            <property role="3MwjfP" value="MPS-172." />
           </node>
-          <node concept="3Mxwew" id="zDnYUHv5Ar" role="3MwsjC">
-            <property role="3MwjfP" value="." />
-          </node>
-          <node concept="3Mxwey" id="zDnYUHv5As" role="3MwsjC">
+          <node concept="3Mxwey" id="jueD0WYgW$" role="3MwsjC">
             <ref role="3Mxwex" node="jueD0WYgWs" resolve="mbeddr.buildNumber" />
           </node>
         </node>
@@ -2754,7 +2728,7 @@
           <property role="1TblLn" value="build.number" />
           <node concept="NbPM2" id="1BPeV_LjXw0" role="1TblLm">
             <node concept="3Mxwey" id="1BPeV_LjXw1" role="3MwsjC">
-              <ref role="3Mxwex" node="zDnYUHv5An" resolve="mps.build.number" />
+              <ref role="3Mxwex" node="jueD0WYgWw" resolve="mps.build.number" />
             </node>
           </node>
         </node>
