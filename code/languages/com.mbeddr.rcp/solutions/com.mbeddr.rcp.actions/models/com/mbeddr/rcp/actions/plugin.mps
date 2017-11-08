@@ -690,6 +690,15 @@
     <node concept="2flH9Z" id="6XvT233Ixzj" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.make.actions.JavaModuleActions_ActionGroup" />
     </node>
+    <node concept="2flH9Z" id="3ZkhnXRbRNa" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.make.actions.MakeModule_Action" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRbSiT" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.make.actions.RebuildModule_Action" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRbSMJ" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.make.actions.CleanModule_Action" />
+    </node>
     <node concept="2flH9Z" id="6XvT233Iz$s" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.vcs.plugin.ModuleVcsActions_ActionGroup" />
     </node>
@@ -782,6 +791,21 @@
     </node>
     <node concept="2flH9Z" id="1xh_EoiZTE6" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.SolutionNewActions_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRbR3Q" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.DebugActions_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRbTyx" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.lang.typesystem.pluginSolution.plugin.ShowNodeType_Action" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRcIfi" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.mpsutil.dataflow.ui.plugin.DataFlowGroup_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRcHBa" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.mpsutil.dataflow.ui.plugin.ShowInterProceduralDataFlowGraph_Action" />
+    </node>
+    <node concept="2flH9Z" id="3ZkhnXRcIR$" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.mpsutil.dataflow.ui.plugin.ShowAugmentedInterProceduralDataFlowGraph_Action" />
     </node>
   </node>
   <node concept="2flHaf" id="5re6bl11R$A">
