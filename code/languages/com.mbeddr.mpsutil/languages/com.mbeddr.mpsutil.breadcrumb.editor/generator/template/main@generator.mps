@@ -22,6 +22,7 @@
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" />
     <import index="fyhk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps(MPS.Core/)" />
+    <import index="7a0s" ref="r:2af017c2-293f-4ebb-99f3-81e353b3d6e6(jetbrains.mps.editor.runtime)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -59,6 +60,10 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
+        <child id="1081256993305" name="classType" index="2ZW6by" />
+        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -302,36 +307,51 @@
           </node>
           <node concept="3clFbH" id="3JErwPFIF3Q" role="3cqZAp" />
           <node concept="3clFbJ" id="3JErwPFIF3R" role="3cqZAp">
-            <node concept="22lmx$" id="263VI$g7NR5" role="3clFbw">
-              <node concept="2YIFZM" id="263VI$g7S4W" role="3uHU7w">
-                <ref role="37wK5l" to="fyhk:~RuntimeFlags.isTestMode():boolean" resolve="isTestMode" />
-                <ref role="1Pybhc" to="fyhk:~RuntimeFlags" resolve="RuntimeFlags" />
-              </node>
-              <node concept="22lmx$" id="2RawscbPHzP" role="3uHU7B">
-                <node concept="22lmx$" id="3JErwPFIF3V" role="3uHU7B">
-                  <node concept="2YIFZM" id="3JErwPFIF40" role="3uHU7B">
-                    <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
-                    <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-                    <node concept="2OqwBi" id="3JErwPFIF41" role="37wK5m">
-                      <node concept="37vLTw" id="3JErwPFIF42" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
-                      </node>
-                      <node concept="I4A8Y" id="3JErwPFIF43" role="2OqNvi" />
-                    </node>
+            <node concept="22lmx$" id="1DVF61P8ojp" role="3clFbw">
+              <node concept="2ZW3vV" id="1DVF61P8qV4" role="3uHU7w">
+                <node concept="3uibUv" id="1DVF61P8rgx" role="2ZW6by">
+                  <ref role="3uigEE" to="7a0s:6qGpHl7IHpK" resolve="HeadlessEditorComponent" />
+                </node>
+                <node concept="2OqwBi" id="1DVF61P8qdo" role="2ZW6bz">
+                  <node concept="37vLTw" id="1DVF61P8pWV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3JErwPFIF8V" resolve="editorContext" />
                   </node>
-                  <node concept="2YIFZM" id="3JErwPFIF3W" role="3uHU7w">
-                    <ref role="37wK5l" to="w1kc:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isTestModel" />
-                    <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-                    <node concept="2OqwBi" id="3JErwPFIF3X" role="37wK5m">
-                      <node concept="37vLTw" id="3JErwPFIF3Y" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
-                      </node>
-                      <node concept="I4A8Y" id="3JErwPFIF3Z" role="2OqNvi" />
-                    </node>
+                  <node concept="liA8E" id="1DVF61P8qvO" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
                   </node>
                 </node>
-                <node concept="2YIFZM" id="2RawscbQDb6" role="3uHU7w">
-                  <ref role="37wK5l" to="fyhk:~RuntimeFlags.isMergeDriverMode():boolean" resolve="isMergeDriverMode" />
+              </node>
+              <node concept="22lmx$" id="263VI$g7NR5" role="3uHU7B">
+                <node concept="22lmx$" id="2RawscbPHzP" role="3uHU7B">
+                  <node concept="22lmx$" id="3JErwPFIF3V" role="3uHU7B">
+                    <node concept="2YIFZM" id="3JErwPFIF40" role="3uHU7B">
+                      <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isGeneratorModel" />
+                      <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
+                      <node concept="2OqwBi" id="3JErwPFIF41" role="37wK5m">
+                        <node concept="37vLTw" id="3JErwPFIF42" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
+                        </node>
+                        <node concept="I4A8Y" id="3JErwPFIF43" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="2YIFZM" id="3JErwPFIF3W" role="3uHU7w">
+                      <ref role="37wK5l" to="w1kc:~SModelStereotype.isTestModel(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="isTestModel" />
+                      <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
+                      <node concept="2OqwBi" id="3JErwPFIF3X" role="37wK5m">
+                        <node concept="37vLTw" id="3JErwPFIF3Y" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3JErwPFIF8X" resolve="node" />
+                        </node>
+                        <node concept="I4A8Y" id="3JErwPFIF3Z" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="2RawscbQDb6" role="3uHU7w">
+                    <ref role="37wK5l" to="fyhk:~RuntimeFlags.isMergeDriverMode():boolean" resolve="isMergeDriverMode" />
+                    <ref role="1Pybhc" to="fyhk:~RuntimeFlags" resolve="RuntimeFlags" />
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="263VI$g7S4W" role="3uHU7w">
+                  <ref role="37wK5l" to="fyhk:~RuntimeFlags.isTestMode():boolean" resolve="isTestMode" />
                   <ref role="1Pybhc" to="fyhk:~RuntimeFlags" resolve="RuntimeFlags" />
                 </node>
               </node>
