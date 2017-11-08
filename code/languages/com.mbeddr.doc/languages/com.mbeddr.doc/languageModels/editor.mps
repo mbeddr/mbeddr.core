@@ -11189,14 +11189,9 @@
                 <node concept="3uibUv" id="6LzhH3ucw3Z" role="1tU5fm">
                   <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
                 </node>
-                <node concept="1eOMI4" id="26B0wrEuNmr" role="33vP2m">
-                  <node concept="10QFUN" id="26B0wrEuNms" role="1eOMHV">
-                    <node concept="3uibUv" id="6LzhH3ucw99" role="10QFUM">
-                      <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
-                    </node>
-                    <node concept="37vLTw" id="26B0wrEuNmt" role="10QFUP">
-                      <ref role="3cqZAo" node="26B0wrEuNlo" resolve="result" />
-                    </node>
+                <node concept="2ShNRf" id="1DVF61Pb972" role="33vP2m">
+                  <node concept="1pGfFk" id="1DVF61Pbjpz" role="2ShVmc">
+                    <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;()" resolve="TextBuilderImpl" />
                   </node>
                 </node>
               </node>
