@@ -6805,7 +6805,6 @@
         <node concept="3cpWs8" id="7vufT$lrSZu" role="3cqZAp">
           <node concept="3cpWsn" id="7vufT$lrSZx" role="3cpWs9">
             <property role="TrG5h" value="folder" />
-            <node concept="17QB3L" id="7vufT$lrSZs" role="1tU5fm" />
             <node concept="2OqwBi" id="63AkbuOKnB6" role="33vP2m">
               <node concept="1rXfSq" id="lNQZNoxHc3" role="2Oq$k0">
                 <ref role="37wK5l" node="lNQZNowrwP" resolve="getDiagramAccessor" />
@@ -6820,6 +6819,7 @@
                 </node>
               </node>
             </node>
+            <node concept="17QB3L" id="7vufT$lrSZs" role="1tU5fm" />
           </node>
         </node>
         <node concept="3cpWs6" id="7vufT$lrTp5" role="3cqZAp">
@@ -18259,6 +18259,21 @@
                 </node>
                 <node concept="3clFbJ" id="7jhYr4huY1V" role="3cqZAp">
                   <node concept="3clFbS" id="7jhYr4huY1W" role="3clFbx">
+                    <node concept="3clFbF" id="ywgKCSAxK_" role="3cqZAp">
+                      <node concept="37vLTI" id="ywgKCSAy_k" role="3clFbG">
+                        <node concept="2OqwBi" id="ywgKCSAyNh" role="37vLTx">
+                          <node concept="37vLTw" id="ywgKCSAyAN" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7jhYr4huY1K" resolve="pending" />
+                          </node>
+                          <node concept="liA8E" id="ywgKCSAzuq" role="2OqNvi">
+                            <ref role="37wK5l" node="190K99K25OU" resolve="getBounds" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="ywgKCSAxKz" role="37vLTJ">
+                          <ref role="3cqZAo" node="ywgKCSAnoz" resolve="myBoundsForNewBox" />
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3clFbF" id="ywgKCS6R2t" role="3cqZAp">
                       <node concept="2OqwBi" id="ywgKCS6RIZ" role="3clFbG">
                         <node concept="37vLTw" id="ywgKCS6R2r" role="2Oq$k0">
@@ -18724,21 +18739,6 @@
                               </node>
                             </node>
                           </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="ywgKCSAxK_" role="3cqZAp">
-                      <node concept="37vLTI" id="ywgKCSAy_k" role="3clFbG">
-                        <node concept="2OqwBi" id="ywgKCSAyNh" role="37vLTx">
-                          <node concept="37vLTw" id="ywgKCSAyAN" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7jhYr4huY1K" resolve="pending" />
-                          </node>
-                          <node concept="liA8E" id="ywgKCSAzuq" role="2OqNvi">
-                            <ref role="37wK5l" node="190K99K25OU" resolve="getBounds" />
-                          </node>
-                        </node>
-                        <node concept="37vLTw" id="ywgKCSAxKz" role="37vLTJ">
-                          <ref role="3cqZAo" node="ywgKCSAnoz" resolve="myBoundsForNewBox" />
                         </node>
                       </node>
                     </node>
