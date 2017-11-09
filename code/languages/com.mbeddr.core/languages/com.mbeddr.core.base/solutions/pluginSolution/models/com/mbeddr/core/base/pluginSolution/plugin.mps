@@ -21177,6 +21177,43 @@
     <property role="3GE5qa" value="screenshot" />
     <node concept="tnohg" id="79jc6YzgefD" role="tncku">
       <node concept="3clFbS" id="79jc6YzgefE" role="2VODD2">
+        <node concept="3cpWs8" id="6EZwrPBQ1Hx" role="3cqZAp">
+          <node concept="3cpWsn" id="6EZwrPBQ1Hy" role="3cpWs9">
+            <property role="TrG5h" value="path" />
+            <node concept="17QB3L" id="6EZwrPBQ1Hw" role="1tU5fm" />
+            <node concept="3cpWs3" id="6EZwrPBQ1Hz" role="33vP2m">
+              <node concept="2OqwBi" id="6EZwrPBQ1H$" role="3uHU7B">
+                <node concept="2OqwBi" id="6EZwrPBQ1H_" role="2Oq$k0">
+                  <node concept="2WthIp" id="6EZwrPBQ1HA" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="6EZwrPBQ1HB" role="2OqNvi">
+                    <ref role="2WH_rO" node="79jc6YzgNsR" resolve="prj" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6EZwrPBQ1HC" role="2OqNvi">
+                  <ref role="37wK5l" to="4nm9:~Project.getBasePath():java.lang.String" resolve="getBasePath" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="6EZwrPBQ1HD" role="3uHU7w">
+                <property role="Xl_RC" value="/cell-screenshots/" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="79jc6Yzv8zk" role="3cqZAp">
+          <node concept="2OqwBi" id="79jc6YzvbXC" role="3clFbG">
+            <node concept="2ShNRf" id="79jc6Yzv8zg" role="2Oq$k0">
+              <node concept="1pGfFk" id="79jc6YzvbwA" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="37vLTw" id="6EZwrPBQUk9" role="37wK5m">
+                  <ref role="3cqZAo" node="6EZwrPBQ1Hy" resolve="path" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="79jc6YzvcIt" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~File.mkdirs():boolean" resolve="mkdirs" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="79jc6YzhufB" role="3cqZAp">
           <node concept="3cpWsn" id="79jc6YzhufC" role="3cpWs9">
             <property role="TrG5h" value="filename" />
@@ -21186,20 +21223,12 @@
                 <property role="Xl_RC" value=".png" />
               </node>
               <node concept="3cpWs3" id="79jc6YzhF2R" role="3uHU7B">
-                <node concept="3cpWs3" id="79jc6YzhufD" role="3uHU7B">
-                  <node concept="2OqwBi" id="79jc6YzhufE" role="3uHU7B">
-                    <node concept="2OqwBi" id="79jc6YzhufF" role="2Oq$k0">
-                      <node concept="2WthIp" id="79jc6YzhufG" role="2Oq$k0" />
-                      <node concept="1DTwFV" id="79jc6YzhufH" role="2OqNvi">
-                        <ref role="2WH_rO" node="79jc6YzgNsR" resolve="prj" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="79jc6YzhufI" role="2OqNvi">
-                      <ref role="37wK5l" to="4nm9:~Project.getBasePath():java.lang.String" resolve="getBasePath" />
-                    </node>
+                <node concept="3cpWs3" id="6EZwrPBQ14O" role="3uHU7B">
+                  <node concept="37vLTw" id="6EZwrPBQ1HE" role="3uHU7B">
+                    <ref role="3cqZAo" node="6EZwrPBQ1Hy" resolve="path" />
                   </node>
-                  <node concept="Xl_RD" id="79jc6YzhufJ" role="3uHU7w">
-                    <property role="Xl_RC" value="/cell-screenshots/screenshot-node-" />
+                  <node concept="Xl_RD" id="6EZwrPBQ14W" role="3uHU7w">
+                    <property role="Xl_RC" value="screenshot-node-" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="79jc6YzgSbc" role="3uHU7w">
@@ -21221,21 +21250,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="79jc6Yzv8zk" role="3cqZAp">
-          <node concept="2OqwBi" id="79jc6YzvbXC" role="3clFbG">
-            <node concept="2ShNRf" id="79jc6Yzv8zg" role="2Oq$k0">
-              <node concept="1pGfFk" id="79jc6YzvbwA" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="37vLTw" id="79jc6YzvbIy" role="37wK5m">
-                  <ref role="3cqZAo" node="79jc6YzhufC" resolve="filename" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="79jc6YzvcIt" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.mkdirs():boolean" resolve="mkdirs" />
             </node>
           </node>
         </node>
