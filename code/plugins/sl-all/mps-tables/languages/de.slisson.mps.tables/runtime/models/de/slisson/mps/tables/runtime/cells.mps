@@ -520,6 +520,7 @@
         <child id="1225711182005" name="list" index="1y566C" />
         <child id="1225711191269" name="index" index="1y58nS" />
       </concept>
+      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="9042586985346099698" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachStatement" flags="nn" index="1_o_46">
@@ -21529,6 +21530,27 @@
           </node>
           <node concept="3clFbJ" id="2I5v7E77OdC" role="3cqZAp">
             <node concept="3clFbS" id="2I5v7E77OdD" role="3clFbx">
+              <node concept="3cpWs8" id="1DVF61Pd_pQ" role="3cqZAp">
+                <node concept="3cpWsn" id="1DVF61Pd_pR" role="3cpWs9">
+                  <property role="TrG5h" value="leafs" />
+                  <node concept="_YKpA" id="1DVF61PdBQY" role="1tU5fm">
+                    <node concept="3uibUv" id="1DVF61PdCI0" role="_ZDj9">
+                      <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="1DVF61Pd_pS" role="33vP2m">
+                    <ref role="37wK5l" node="7VuKdV9Fx5x" resolve="getDescendants" />
+                    <ref role="1Pybhc" node="4gCFRNz2KOM" resolve="TableTraversalUtil" />
+                    <node concept="37vLTw" id="1DVF61Pd_pT" role="37wK5m">
+                      <ref role="3cqZAo" node="2I5v7E77Odj" resolve="gridCell" />
+                    </node>
+                    <node concept="10M0yZ" id="1DVF61Pd_pU" role="37wK5m">
+                      <ref role="3cqZAo" to="f4zo:~CellConditions.SELECTABLE_lEAF" resolve="SELECTABLE_lEAF" />
+                      <ref role="1PxDUh" to="f4zo:~CellConditions" resolve="CellConditions" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs8" id="2I5v7E78thu" role="3cqZAp">
                 <node concept="3cpWsn" id="2I5v7E78thv" role="3cpWs9">
                   <property role="TrG5h" value="leaf" />
@@ -21536,19 +21558,17 @@
                     <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
                   </node>
                   <node concept="3K4zz7" id="2I5v7E78Bpu" role="33vP2m">
-                    <node concept="2YIFZM" id="2I5v7E78Gbw" role="3K4E3e">
-                      <ref role="1Pybhc" node="4gCFRNz2KOM" resolve="TableTraversalUtil" />
-                      <ref role="37wK5l" node="4zzNcfNAKcj" resolve="getFirstLeaf" />
-                      <node concept="37vLTw" id="2I5v7E78KUM" role="37wK5m">
-                        <ref role="3cqZAo" node="2I5v7E77Odj" resolve="gridCell" />
+                    <node concept="2OqwBi" id="1DVF61PdEdw" role="3K4E3e">
+                      <node concept="37vLTw" id="1DVF61PdD9O" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1DVF61Pd_pR" resolve="leafs" />
                       </node>
+                      <node concept="1uHKPH" id="1DVF61PdFAi" role="2OqNvi" />
                     </node>
-                    <node concept="2YIFZM" id="2I5v7E78PLj" role="3K4GZi">
-                      <ref role="1Pybhc" node="4gCFRNz2KOM" resolve="TableTraversalUtil" />
-                      <ref role="37wK5l" node="4zzNcfNAMBz" resolve="getLastLeaf" />
-                      <node concept="37vLTw" id="2I5v7E78U$a" role="37wK5m">
-                        <ref role="3cqZAo" node="2I5v7E77Odj" resolve="gridCell" />
+                    <node concept="2OqwBi" id="1DVF61PdGKD" role="3K4GZi">
+                      <node concept="37vLTw" id="1DVF61PdFO0" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1DVF61Pd_pR" resolve="leafs" />
                       </node>
+                      <node concept="1yVyf7" id="1DVF61PdI5y" role="2OqNvi" />
                     </node>
                     <node concept="37vLTw" id="2I5v7E78yc1" role="3K4Cdx">
                       <ref role="3cqZAo" node="2I5v7E77PLg" resolve="myNext" />
