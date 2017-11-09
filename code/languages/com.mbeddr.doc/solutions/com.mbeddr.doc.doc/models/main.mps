@@ -18,6 +18,7 @@
       <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB">
         <property id="4457500422381329081" name="stylesheet" index="1jVmeX" />
       </concept>
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -42,6 +43,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
+      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="5785245534399940636" name="com.mbeddr.doc.structure.InlineTableParagraph" flags="ng" index="C6TCP" />
       <concept id="5785245534399928042" name="com.mbeddr.doc.structure.AbstractTableParagraph" flags="ng" index="C6Wj3">
         <property id="5785245534399940634" name="numCols" index="C6TCN" />
@@ -79,6 +81,8 @@
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
       <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="3352153450711894224" name="configItems" index="2wNnkt" />
+        <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
         <child id="6386504476136472817" name="paths" index="2SbYGa" />
         <child id="8624890525767800998" name="sizeSpecs" index="3SH5Mq" />
@@ -109,7 +113,6 @@
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
       <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
-        <reference id="6955693250238922828" name="path" index="3z_lp$" />
         <child id="6955693250238922832" name="description" index="3z_lpS" />
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
@@ -345,6 +348,15 @@
         <property role="3kgbRO" value="false" />
       </node>
     </node>
+    <node concept="A7cYH" id="hODJYRp92F" role="A10yx">
+      <node concept="9PVaO" id="hODJYRp92G" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+      </node>
+    </node>
+    <node concept="1_07dB" id="hODJYRp92N" role="2wNnkt">
+      <property role="1jVmeX" value="htmlexport.css" />
+    </node>
   </node>
   <node concept="1_08Dk" id="1ZiHc0gLrRv">
     <property role="TrG5h" value="DocumentationDocumentation" />
@@ -368,15 +380,13 @@
         </node>
       </node>
     </node>
-    <node concept="1_07dB" id="gZbLBLfq3n" role="30GjaH">
-      <property role="1jVmeX" value="htmlexport.css" />
-    </node>
     <node concept="1jVoCB" id="gZbLBLfq3o" role="30Gjbi">
       <property role="1jVoCx" value="article" />
       <property role="43dxY" value="mbeddr-prolog.ltx" />
       <property role="1xA$Bs" value="true" />
       <property role="1xAxd1" value="true" />
     </node>
+    <node concept="1TaS0h" id="hODJYRp92O" role="30GjaH" />
   </node>
   <node concept="1_1swa" id="7$DvC4gPSHs">
     <property role="TrG5h" value="B_SimpleDocuments" />
@@ -1062,7 +1072,6 @@
         </node>
         <node concept="3z_lpz" id="7$DvC4gSHKy" role="1_0VJ0">
           <property role="TrG5h" value="calculator" />
-          <ref role="3z_lp$" node="7$DvC4gPWka" resolve="imgTemp" />
           <node concept="OjmMv" id="7$DvC4gSHKz" role="3z_lpS">
             <node concept="19SGf9" id="7$DvC4gSHK$" role="OjmMu">
               <node concept="19SUe$" id="7$DvC4gSHK_" role="19SJt6">
@@ -1179,7 +1188,6 @@
         </node>
         <node concept="3z_lpz" id="7$DvC4gSPb$" role="1_0VJ0">
           <property role="TrG5h" value="addOp" />
-          <ref role="3z_lp$" node="7$DvC4gPWka" resolve="imgTemp" />
           <node concept="OjmMv" id="7$DvC4gSPb_" role="3z_lpS">
             <node concept="19SGf9" id="7$DvC4gSPbA" role="OjmMu">
               <node concept="19SUe$" id="7$DvC4gSPbB" role="19SJt6">

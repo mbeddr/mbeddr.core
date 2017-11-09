@@ -337,9 +337,7 @@
         <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -7395,9 +7393,6 @@
             <property role="1dT_AB" value="TODO make use of this information everywhere in the impl." />
           </node>
         </node>
-        <node concept="x79VA" id="aLe9abBUXm" role="x79VK">
-          <property role="x79VB" value="true if left is less or equal to right, false otherwise" />
-        </node>
         <node concept="TUZQ0" id="2DKFXe9Q7_q" role="3nqlJM">
           <property role="TUZQ4" value="the left Interval element" />
           <node concept="zr_55" id="2DKFXe9Q7_C" role="zr_5Q">
@@ -7409,6 +7404,9 @@
           <node concept="zr_55" id="2DKFXe9Q7Ar" role="zr_5Q">
             <ref role="zr_51" node="2XlXuxNCdnT" resolve="r" />
           </node>
+        </node>
+        <node concept="x79VA" id="aLe9abBUXm" role="3nqlJM">
+          <property role="x79VB" value="true if left is less or equal to right, false otherwise" />
         </node>
       </node>
     </node>

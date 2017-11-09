@@ -181,7 +181,6 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
@@ -936,7 +935,6 @@
                                   <ref role="ehGHo" to="gnwj:1LnB5xduTDw" resolve="TextCell" />
                                 </node>
                                 <node concept="1PxgMI" id="1LnB5xdvClz" role="33vP2m">
-                                  <ref role="1m5ApE" to="gnwj:1LnB5xduTDw" resolve="TextCell" />
                                   <node concept="2GrUjf" id="1LnB5xdvCl$" role="1m5AlR">
                                     <ref role="2Gs0qQ" node="1LnB5xdvBEl" resolve="cell" />
                                   </node>

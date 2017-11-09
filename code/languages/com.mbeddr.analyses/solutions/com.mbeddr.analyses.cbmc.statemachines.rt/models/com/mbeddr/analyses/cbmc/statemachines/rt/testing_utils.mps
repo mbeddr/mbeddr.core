@@ -140,6 +140,9 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
+        <reference id="1171315804605" name="concept" index="2RRcyH" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -179,6 +182,7 @@
       <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
         <child id="4611582986551314344" name="requestedType" index="UnYnz" />
       </concept>
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
   </registry>
@@ -205,13 +209,6 @@
             <node concept="3Tqbb2" id="6m6BTo4RgN5" role="1tU5fm">
               <ref role="ehGHo" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
             </node>
-            <node concept="NRdvd" id="6m6BTo4RgN6" role="33vP2m">
-              <ref role="37wK5l" to="d8ej:7OHQ0Tp2Mtf" resolve="findAnalysisConfiguration" />
-              <ref role="1Pybhc" to="d8ej:6ehuSNUoLrK" resolve="GenericNodesFindingUtils" />
-              <node concept="37vLTw" id="6m6BTo4RgN7" role="37wK5m">
-                <ref role="3cqZAo" node="6m6BTo4RgNI" resolve="model" />
-              </node>
-            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="6m6BTo4RLx_" role="3cqZAp">
@@ -225,6 +222,24 @@
         <node concept="3kxDZ6" id="1ZGLNk_MaVi" role="3cqZAp">
           <node concept="9aQIb" id="1ZGLNk_Mbg4" role="3kxCCa">
             <node concept="3clFbS" id="1ZGLNk_Mbg6" role="9aQI4">
+              <node concept="3clFbF" id="7mSH3Wn1$J5" role="3cqZAp">
+                <node concept="37vLTI" id="7mSH3Wn1$J7" role="3clFbG">
+                  <node concept="2OqwBi" id="7mSH3Wn1FPX" role="37vLTx">
+                    <node concept="2OqwBi" id="7mSH3Wn1Amh" role="2Oq$k0">
+                      <node concept="37vLTw" id="7mSH3Wn1A1m" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6m6BTo4RgNI" resolve="model" />
+                      </node>
+                      <node concept="2RRcyG" id="7mSH3Wn1Buw" role="2OqNvi">
+                        <ref role="2RRcyH" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7mSH3Wn1Nw9" role="2OqNvi" />
+                  </node>
+                  <node concept="37vLTw" id="7mSH3Wn1$Jb" role="37vLTJ">
+                    <ref role="3cqZAo" node="6m6BTo4RgN4" resolve="conf" />
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs8" id="6m6BTo4RIeF" role="3cqZAp">
                 <node concept="3cpWsn" id="6m6BTo4RIeG" role="3cpWs9">
                   <property role="TrG5h" value="smConfigs" />
@@ -325,9 +340,7 @@
       </node>
       <node concept="37vLTG" id="6m6BTo4RgNI" role="3clF46">
         <property role="TrG5h" value="model" />
-        <node concept="3uibUv" id="6m6BTo4RgNJ" role="1tU5fm">
-          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-        </node>
+        <node concept="H_c77" id="7mSH3Wn1Bag" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="6m6BTo4RcLc" role="3clF46">
         <property role="TrG5h" value="entryName" />

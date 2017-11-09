@@ -369,6 +369,10 @@
       <concept id="1217884725453" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetCopiedOutputByInput" flags="nn" index="2f_y7m">
         <child id="1217884725459" name="inputNode" index="2f_y78" />
       </concept>
+      <concept id="1218047638031" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_CreateUniqueName" flags="nn" index="2piZGk">
+        <child id="1218047638032" name="baseName" index="2piZGb" />
+        <child id="1218049772449" name="contextNode" index="2pr8EU" />
+      </concept>
       <concept id="2537089342344712322" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_CopyWithTrace" flags="ng" index="2QPPRi">
         <child id="2537089342344730415" name="nodes" index="2QPDDZ" />
       </concept>
@@ -2878,14 +2882,14 @@
                     <property role="2qtEX9" value="name" />
                     <node concept="3zFVjK" id="5yEkkqTjfms" role="3zH0cK">
                       <node concept="3clFbS" id="5yEkkqTjfmt" role="2VODD2">
-                        <node concept="3clFbF" id="5yEkkqTjfFM" role="3cqZAp">
-                          <node concept="3cpWs3" id="5yEkkqTjfM7" role="3clFbG">
-                            <node concept="2OqwBi" id="5yEkkqTjfVo" role="3uHU7w">
-                              <node concept="30H73N" id="5yEkkqTjfNt" role="2Oq$k0" />
-                              <node concept="2bSWHS" id="5yEkkqTjgfh" role="2OqNvi" />
-                            </node>
-                            <node concept="Xl_RD" id="5yEkkqTjfFL" role="3uHU7B">
-                              <property role="Xl_RC" value="___actualStruct" />
+                        <node concept="3clFbF" id="6yzF65frHIt" role="3cqZAp">
+                          <node concept="2OqwBi" id="6yzF65frHZh" role="3clFbG">
+                            <node concept="1iwH7S" id="6yzF65frHIr" role="2Oq$k0" />
+                            <node concept="2piZGk" id="6yzF65frIdv" role="2OqNvi">
+                              <node concept="30H73N" id="6yzF65frImi" role="2pr8EU" />
+                              <node concept="Xl_RD" id="6yzF65frIv8" role="2piZGb">
+                                <property role="Xl_RC" value="___actualStruct" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -2950,14 +2954,14 @@
                     <property role="2qtEX9" value="name" />
                     <node concept="3zFVjK" id="5yEkkqTjgXL" role="3zH0cK">
                       <node concept="3clFbS" id="5yEkkqTjgXM" role="2VODD2">
-                        <node concept="3clFbF" id="5yEkkqTjgXN" role="3cqZAp">
-                          <node concept="3cpWs3" id="5yEkkqTjgXO" role="3clFbG">
-                            <node concept="2OqwBi" id="5yEkkqTjgXP" role="3uHU7w">
-                              <node concept="30H73N" id="5yEkkqTjgXQ" role="2Oq$k0" />
-                              <node concept="2bSWHS" id="5yEkkqTjgXR" role="2OqNvi" />
-                            </node>
-                            <node concept="Xl_RD" id="5yEkkqTjgXS" role="3uHU7B">
-                              <property role="Xl_RC" value="___expectedStruct" />
+                        <node concept="3clFbF" id="6yzF65fu1x0" role="3cqZAp">
+                          <node concept="2OqwBi" id="6yzF65fu1x1" role="3clFbG">
+                            <node concept="1iwH7S" id="6yzF65fu1x2" role="2Oq$k0" />
+                            <node concept="2piZGk" id="6yzF65fu1x3" role="2OqNvi">
+                              <node concept="30H73N" id="6yzF65fu1x4" role="2pr8EU" />
+                              <node concept="Xl_RD" id="6yzF65fu1x5" role="2piZGb">
+                                <property role="Xl_RC" value="___expectedStruct" />
+                              </node>
                             </node>
                           </node>
                         </node>

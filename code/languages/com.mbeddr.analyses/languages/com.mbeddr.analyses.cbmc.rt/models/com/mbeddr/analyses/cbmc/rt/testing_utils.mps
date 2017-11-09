@@ -642,11 +642,24 @@
             <node concept="3Tqbb2" id="7OHQ0Tp2MvI" role="1tU5fm">
               <ref role="ehGHo" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
             </node>
-            <node concept="NRdvd" id="5A94f9EtUFy" role="33vP2m">
-              <ref role="1Pybhc" to="d8ej:6ehuSNUoLrK" resolve="GenericNodesFindingUtils" />
-              <ref role="37wK5l" to="d8ej:7OHQ0Tp2Mtf" resolve="findAnalysisConfiguration" />
-              <node concept="37vLTw" id="2tzgwZjIlq8" role="37wK5m">
-                <ref role="3cqZAo" node="JsaLOcUcGn" resolve="model" />
+          </node>
+        </node>
+        <node concept="3kxDZ6" id="7mSH3Wn1Qix" role="3cqZAp">
+          <node concept="3clFbF" id="7mSH3Wn1QD2" role="3kxCCa">
+            <node concept="37vLTI" id="7mSH3Wn1R0K" role="3clFbG">
+              <node concept="2OqwBi" id="7mSH3Wn1VtI" role="37vLTx">
+                <node concept="2OqwBi" id="7mSH3Wn1Rm5" role="2Oq$k0">
+                  <node concept="37vLTw" id="7mSH3Wn1Rah" role="2Oq$k0">
+                    <ref role="3cqZAo" node="JsaLOcUcGn" resolve="model" />
+                  </node>
+                  <node concept="2RRcyG" id="7mSH3Wn1Ryr" role="2OqNvi">
+                    <ref role="2RRcyH" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="7mSH3Wn22Uq" role="2OqNvi" />
+              </node>
+              <node concept="37vLTw" id="7mSH3Wn1QD0" role="37vLTJ">
+                <ref role="3cqZAo" node="7OHQ0Tp2MvH" resolve="conf" />
               </node>
             </node>
           </node>
@@ -755,9 +768,7 @@
       </node>
       <node concept="37vLTG" id="JsaLOcUcGn" role="3clF46">
         <property role="TrG5h" value="model" />
-        <node concept="3uibUv" id="JsaLOcUcGo" role="1tU5fm">
-          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-        </node>
+        <node concept="H_c77" id="7mSH3Wn1Pyv" role="1tU5fm" />
       </node>
       <node concept="NWlO9" id="3hNQKr2z32W" role="lGtFl">
         <property role="NWlVz" value="Check an analysis configuration." />
@@ -1073,11 +1084,24 @@
             <node concept="3Tqbb2" id="1opdK91neV0" role="1tU5fm">
               <ref role="ehGHo" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
             </node>
-            <node concept="NRdvd" id="5A94f9Eu0Q6" role="33vP2m">
-              <ref role="1Pybhc" to="d8ej:6ehuSNUoLrK" resolve="GenericNodesFindingUtils" />
-              <ref role="37wK5l" to="d8ej:7OHQ0Tp2Mtf" resolve="findAnalysisConfiguration" />
-              <node concept="37vLTw" id="2tzgwZjIozd" role="37wK5m">
-                <ref role="3cqZAo" node="JsaLOcUgiy" resolve="model" />
+          </node>
+        </node>
+        <node concept="3kxDZ6" id="7mSH3Wn23BD" role="3cqZAp">
+          <node concept="3clFbF" id="7mSH3Wn23BE" role="3kxCCa">
+            <node concept="37vLTI" id="7mSH3Wn23BF" role="3clFbG">
+              <node concept="2OqwBi" id="7mSH3Wn23BG" role="37vLTx">
+                <node concept="2OqwBi" id="7mSH3Wn23BH" role="2Oq$k0">
+                  <node concept="37vLTw" id="7mSH3Wn23BI" role="2Oq$k0">
+                    <ref role="3cqZAo" node="JsaLOcUgiy" resolve="model" />
+                  </node>
+                  <node concept="2RRcyG" id="7mSH3Wn23BJ" role="2OqNvi">
+                    <ref role="2RRcyH" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="7mSH3Wn23BK" role="2OqNvi" />
+              </node>
+              <node concept="37vLTw" id="7mSH3Wn23BL" role="37vLTJ">
+                <ref role="3cqZAo" node="1opdK91neUZ" resolve="conf" />
               </node>
             </node>
           </node>
@@ -1196,9 +1220,7 @@
       </node>
       <node concept="37vLTG" id="JsaLOcUgiy" role="3clF46">
         <property role="TrG5h" value="model" />
-        <node concept="3uibUv" id="JsaLOcUgiz" role="1tU5fm">
-          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-        </node>
+        <node concept="H_c77" id="7mSH3Wn23V3" role="1tU5fm" />
       </node>
       <node concept="NWlO9" id="3hNQKr2z2KK" role="lGtFl">
         <property role="NWlVz" value="Facade to load the analysis results." />

@@ -65,6 +65,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -1528,6 +1531,40 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="36vfsFTLIg1">
+    <property role="3GE5qa" value="programannotations" />
+    <ref role="1M2myG" to="qdv7:6OO5J4wxqcd" resolve="IConditionalAnnotation" />
+    <node concept="9S07l" id="36vfsFTMgqx" role="9Vyp8">
+      <node concept="3clFbS" id="36vfsFTMgqy" role="2VODD2">
+        <node concept="3clFbF" id="36vfsFTLKqX" role="3cqZAp">
+          <node concept="3K4zz7" id="36vfsFTLLNm" role="3clFbG">
+            <node concept="2OqwBi" id="36vfsFTLOeU" role="3K4E3e">
+              <node concept="1PxgMI" id="36vfsFTLNuu" role="2Oq$k0">
+                <node concept="chp4Y" id="36vfsFTLNCB" role="3oSUPX">
+                  <ref role="cht4Q" to="qdv7:6OO5J4wolUA" resolve="IMayNotBeConditionallyReplaced" />
+                </node>
+                <node concept="nLn13" id="36vfsFTMgX1" role="1m5AlR" />
+              </node>
+              <node concept="2qgKlT" id="36vfsFTLOww" role="2OqNvi">
+                <ref role="37wK5l" to="rpdm:6OO5J4wC_AZ" resolve="canBeConditionallyReplaced" />
+              </node>
+            </node>
+            <node concept="3clFbT" id="36vfsFTLLXr" role="3K4GZi">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="36vfsFTLKE1" role="3K4Cdx">
+              <node concept="nLn13" id="36vfsFTMgJH" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="36vfsFTLKXu" role="2OqNvi">
+                <node concept="chp4Y" id="36vfsFTLLoA" role="cj9EA">
+                  <ref role="cht4Q" to="qdv7:6OO5J4wolUA" resolve="IMayNotBeConditionallyReplaced" />
                 </node>
               </node>
             </node>

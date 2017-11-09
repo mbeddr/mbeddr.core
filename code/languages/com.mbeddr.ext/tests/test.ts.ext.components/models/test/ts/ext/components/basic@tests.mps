@@ -23,7 +23,6 @@
     <import index="u2l0" ref="r:39d65015-9994-4ec8-bfc1-fb277098386e(com.mbeddr.ext.components.units.typesystem)" />
     <import index="go54" ref="r:a7e7800a-15b6-4c02-ae4d-6b40a48c7370(com.mbeddr.core.statements.typesystem)" />
     <import index="cmgk" ref="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" implicit="true" />
-    <import index="cuyy" ref="r:ac11ea24-ba0f-4e43-93bd-726a7671bbc7(tests.ts.core.importing@tests)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -4869,7 +4868,7 @@
     </node>
     <node concept="3GEVxB" id="2fj$BeOcYA0" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" to="cuyy:4AYy6hk7SkY" resolve="SimpleHTTPFOTAUpdateRequestBuilderImpl" />
+      <ref role="3GEb4d" node="4AYy6hk7SkY" resolve="SimpleHTTPFOTAUpdateRequestBuilderImpl" />
     </node>
     <node concept="3GEVxB" id="2xYE3fFC9Pl" role="2OODSX">
       <property role="3GEa6x" value="true" />

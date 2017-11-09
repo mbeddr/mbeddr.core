@@ -16,7 +16,6 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports>
-    <import index="q9ah" ref="r:881cd106-b9c3-33d3-8c69-9a76f591f92a(com.mbeddr.debugger.tests.__spreferences.PlatformTemplates)" />
     <import index="jz4c" ref="r:dd031eba-ced3-46e5-a32e-7a59148de78a(test.debugging.ext.statemachines.step_out)" />
   </imports>
   <registry>

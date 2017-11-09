@@ -2,6 +2,7 @@
 <model ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -116,6 +117,9 @@
     </node>
     <node concept="PrWs8" id="6FvlwAlLzOe" role="PzmwI">
       <ref role="PrY4T" to="68mc:51aJIRsy1$U" resolve="IPathVariableProvider" />
+    </node>
+    <node concept="PrWs8" id="59MAV0ygvy9" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:hoMN8ESh5l" resolve="ICannotLiveInDocModel" />
     </node>
   </node>
   <node concept="1TIwiD" id="6GqYvBOf2Xb">
@@ -620,16 +624,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="PlHQZ" id="4_vItr5czAZ">
-    <property role="EcuMT" value="5287148819638794687" />
-    <property role="TrG5h" value="IHostTargetAwarePicker" />
-  </node>
-  <node concept="1TIwiD" id="1hPQTEM4W9y">
-    <property role="EcuMT" value="1474325910492791394" />
-    <property role="TrG5h" value="MakeTimeDirPicker" />
-    <property role="34LRSv" value="make time dir picker" />
-    <ref role="1TJDcQ" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
-  </node>
   <node concept="1TIwiD" id="6eRyKv6L44j">
     <property role="EcuMT" value="7185364596008698131" />
     <property role="TrG5h" value="ModelInfo" />
@@ -644,6 +638,16 @@
       <property role="TrG5h" value="outputLocation" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="4_vItr5czAZ">
+    <property role="EcuMT" value="5287148819638794687" />
+    <property role="TrG5h" value="IHostTargetAwarePicker" />
+  </node>
+  <node concept="1TIwiD" id="1hPQTEM4W9y">
+    <property role="EcuMT" value="1474325910492791394" />
+    <property role="TrG5h" value="MakeTimeDirPicker" />
+    <property role="34LRSv" value="make time dir picker" />
+    <ref role="1TJDcQ" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
   </node>
 </model>
 
