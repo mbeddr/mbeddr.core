@@ -1581,6 +1581,16 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbF" id="5f7J_BAB981" role="3cqZAp">
+                          <node concept="2OqwBi" id="5f7J_BAB9KP" role="3clFbG">
+                            <node concept="37vLTw" id="5f7J_BAB97Z" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7obiejAtXpl" resolve="newTrace" />
+                            </node>
+                            <node concept="liA8E" id="5f7J_BABa2Z" role="2OqNvi">
+                              <ref role="37wK5l" node="4hW8Ne0e_Tr" resolve="markForReveal" />
+                            </node>
+                          </node>
+                        </node>
                         <node concept="YS8fn" id="4e_7uAsLit2" role="3cqZAp">
                           <node concept="2ShNRf" id="4e_7uAsLp7f" role="YScLw">
                             <node concept="1pGfFk" id="4e_7uAsLpug" role="2ShVmc">
