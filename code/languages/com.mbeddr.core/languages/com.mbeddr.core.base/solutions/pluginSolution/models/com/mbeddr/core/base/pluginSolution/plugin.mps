@@ -21326,6 +21326,17 @@
       <ref role="tU$_T" to="tprs:WmrxDqd_N1" resolve="IDEAToolBar" />
     </node>
   </node>
+  <node concept="Zd50a" id="7HcPDtljNZk">
+    <property role="3GE5qa" value="documentationStuff" />
+    <property role="TrG5h" value="addDocumentationKeymap" />
+    <node concept="Zd509" id="7HcPDtljNZu" role="Zd508">
+      <ref role="1bYAoF" node="7HcPDtlhKSD" resolve="AddDocumentation" />
+      <node concept="pLAjd" id="7HcPDtljNZv" role="Zd501">
+        <property role="pLAjc" value="ctrl" />
+        <property role="pLAjf" value="VK_A" />
+      </node>
+    </node>
+  </node>
   <node concept="sE7Ow" id="7HcPDtlhKSD">
     <property role="3GE5qa" value="documentationStuff" />
     <property role="TrG5h" value="AddDocumentation" />
@@ -21480,6 +21491,42 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="63CFXsPEld" role="3cqZAp">
+          <node concept="3cpWsn" id="63CFXsPEle" role="3cpWs9">
+            <property role="TrG5h" value="canBeAncestor" />
+            <node concept="10P_77" id="63CFXsPEl7" role="1tU5fm" />
+            <node concept="2YIFZM" id="63CFXsROIC" role="33vP2m">
+              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
+              <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+              <node concept="2OqwBi" id="2ZC4d8r2JKS" role="37wK5m">
+                <node concept="2WthIp" id="2ZC4d8r2JoI" role="2Oq$k0" />
+                <node concept="3gHZIF" id="2ZC4d8r2KzS" role="2OqNvi">
+                  <ref role="2WH_rO" node="7HcPDtliWhO" resolve="contextNode" />
+                </node>
+              </node>
+              <node concept="35c_gC" id="63CFXsROIE" role="37wK5m">
+                <ref role="35c_gD" to="vs0r:3m8H$lmFM5W" resolve="ElementDocumentation" />
+              </node>
+              <node concept="10Nm6u" id="63CFXsROIF" role="37wK5m" />
+              <node concept="10Nm6u" id="63CFXsROIG" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3ni3WidACYr" role="3cqZAp">
+          <node concept="3clFbS" id="3ni3WidACYt" role="3clFbx">
+            <node concept="3cpWs6" id="3ni3WidADD4" role="3cqZAp">
+              <node concept="3clFbT" id="3ni3WidADP1" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="3ni3WidADeh" role="3clFbw">
+            <node concept="37vLTw" id="3ni3WidADq0" role="3fr31v">
+              <ref role="3cqZAo" node="63CFXsPEle" resolve="canBeAncestor" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2ZC4d8r2L2A" role="3cqZAp" />
         <node concept="3cpWs6" id="7HcPDtljE8d" role="3cqZAp">
           <node concept="1Wc70l" id="rK9hH149J7" role="3cqZAk">
             <node concept="3fqX7Q" id="rK9hH149Ja" role="3uHU7w">
@@ -21520,17 +21567,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="Zd50a" id="7HcPDtljNZk">
-    <property role="3GE5qa" value="documentationStuff" />
-    <property role="TrG5h" value="addDocumentationKeymap" />
-    <node concept="Zd509" id="7HcPDtljNZu" role="Zd508">
-      <ref role="1bYAoF" node="7HcPDtlhKSD" resolve="AddDocumentation" />
-      <node concept="pLAjd" id="7HcPDtljNZv" role="Zd501">
-        <property role="pLAjc" value="ctrl" />
-        <property role="pLAjf" value="VK_A" />
       </node>
     </node>
   </node>
