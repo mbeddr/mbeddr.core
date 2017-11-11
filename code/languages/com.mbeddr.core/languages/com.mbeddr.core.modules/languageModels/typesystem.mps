@@ -14126,5 +14126,177 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="20agw22$IwB">
+    <property role="TrG5h" value="check_IImplementsKnownFunctionPrototype" />
+    <property role="3GE5qa" value="functions" />
+    <node concept="3clFbS" id="20agw22$IwC" role="18ibNy">
+      <node concept="Jncv_" id="20agw22$M$J" role="3cqZAp">
+        <ref role="JncvD" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+        <node concept="1YBJjd" id="20agw22$MAV" role="JncvB">
+          <ref role="1YBMHb" node="20agw22$IwE" resolve="implementsKnownFunctionPrototype" />
+        </node>
+        <node concept="3clFbS" id="20agw22$M$N" role="Jncv$">
+          <node concept="3clFbJ" id="1Ge_bcBUSAV" role="3cqZAp">
+            <node concept="3clFbS" id="1Ge_bcBUSAW" role="3clFbx">
+              <node concept="2MkqsV" id="20agw22$OBE" role="3cqZAp">
+                <node concept="Jnkvi" id="20agw22$OO$" role="2OEOjV">
+                  <ref role="1M0zk5" node="20agw22$M$P" resolve="moduleContent" />
+                </node>
+                <node concept="3cpWs3" id="20agw22$OCz" role="2MkJ7o">
+                  <node concept="Xl_RD" id="20agw22$OC$" role="3uHU7w">
+                    <property role="Xl_RC" value=" is always prevented" />
+                  </node>
+                  <node concept="3cpWs3" id="20agw22$OC_" role="3uHU7B">
+                    <node concept="Xl_RD" id="20agw22$OCA" role="3uHU7B">
+                      <property role="Xl_RC" value="name mangling for function " />
+                    </node>
+                    <node concept="2OqwBi" id="20agw22$OCB" role="3uHU7w">
+                      <node concept="Jnkvi" id="20agw22$OCC" role="2Oq$k0">
+                        <ref role="1M0zk5" node="20agw22$M$P" resolve="moduleContent" />
+                      </node>
+                      <node concept="3TrcHB" id="20agw22$OCD" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Cnw8n" id="20agw22CaLB" role="2OEOjU">
+                  <property role="ARO6o" value="true" />
+                  <ref role="QpYPw" node="1Ge_bcBSFlf" resolve="fix_IImplementsKnownFunctionPrototype_preventNameMangling" />
+                  <node concept="3CnSsL" id="20agw22CaUK" role="3Coj4f">
+                    <ref role="QkamJ" node="1Ge_bcBSFlu" resolve="implementsKnownFunctionPrototype" />
+                    <node concept="Jnkvi" id="20agw22CaV1" role="3CoRuB">
+                      <ref role="1M0zk5" node="20agw22$M$P" resolve="moduleContent" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1Ge_bcBUSB9" role="3clFbw">
+              <node concept="Jnkvi" id="20agw22$N2v" role="2Oq$k0">
+                <ref role="1M0zk5" node="20agw22$M$P" resolve="moduleContent" />
+              </node>
+              <node concept="3TrcHB" id="1Ge_bcBUSBb" role="2OqNvi">
+                <ref role="3TsBF5" to="x27k:5Oog2UbP_d2" resolve="preventNameMangling" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="1Ge_bcBUSAD" role="3cqZAp">
+            <node concept="3fqX7Q" id="1Ge_bcBUSAE" role="3clFbw">
+              <node concept="2OqwBi" id="1Ge_bcBUSAF" role="3fr31v">
+                <node concept="Jnkvi" id="20agw22$Nd7" role="2Oq$k0">
+                  <ref role="1M0zk5" node="20agw22$M$P" resolve="moduleContent" />
+                </node>
+                <node concept="3TrcHB" id="1Ge_bcBUSAH" role="2OqNvi">
+                  <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="1Ge_bcBUSAI" role="3clFbx">
+              <node concept="2MkqsV" id="20agw22$P6q" role="3cqZAp">
+                <node concept="Jnkvi" id="20agw22$Pm1" role="2OEOjV">
+                  <ref role="1M0zk5" node="20agw22$M$P" resolve="moduleContent" />
+                </node>
+                <node concept="3cpWs3" id="20agw22$P7j" role="2MkJ7o">
+                  <node concept="Xl_RD" id="20agw22$P7k" role="3uHU7w">
+                    <property role="Xl_RC" value=" must be exported" />
+                  </node>
+                  <node concept="3cpWs3" id="20agw22$P7l" role="3uHU7B">
+                    <node concept="Xl_RD" id="20agw22$P7m" role="3uHU7B">
+                      <property role="Xl_RC" value="function " />
+                    </node>
+                    <node concept="2OqwBi" id="20agw22$P7n" role="3uHU7w">
+                      <node concept="Jnkvi" id="20agw22$P7o" role="2Oq$k0">
+                        <ref role="1M0zk5" node="20agw22$M$P" resolve="moduleContent" />
+                      </node>
+                      <node concept="3TrcHB" id="20agw22$P7p" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Cnw8n" id="20agw22CaVe" role="2OEOjU">
+                  <property role="ARO6o" value="true" />
+                  <ref role="QpYPw" node="1Ge_bcBSvQ3" resolve="fix_IImplementsKnownFunctionPrototype_exported" />
+                  <node concept="3CnSsL" id="20agw22Cb4v" role="3Coj4f">
+                    <ref role="QkamJ" node="1Ge_bcBSvXL" resolve="implementsKnownFunctionPrototype" />
+                    <node concept="Jnkvi" id="20agw22Cb4K" role="3CoRuB">
+                      <ref role="1M0zk5" node="20agw22$M$P" resolve="moduleContent" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="JncvC" id="20agw22$M$P" role="JncvA">
+          <property role="TrG5h" value="moduleContent" />
+          <node concept="2jxLKc" id="20agw22$M$Q" role="1tU5fm" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="20agw22$IwE" role="1YuTPh">
+      <property role="TrG5h" value="implementsKnownFunctionPrototype" />
+      <ref role="1YaFvo" to="x27k:20agw21I6x2" resolve="IImplementsKnownFunctionPrototype" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="1Ge_bcBSvQ3">
+    <property role="TrG5h" value="fix_IImplementsKnownFunctionPrototype_exported" />
+    <property role="3GE5qa" value="functions" />
+    <node concept="Q5ZZ6" id="1Ge_bcBSvQ4" role="Q6x$H">
+      <node concept="3clFbS" id="1Ge_bcBSvQ5" role="2VODD2">
+        <node concept="3clFbF" id="1Ge_bcBSvYs" role="3cqZAp">
+          <node concept="37vLTI" id="1Ge_bcBSxrZ" role="3clFbG">
+            <node concept="3clFbT" id="1Ge_bcBSxst" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="1Ge_bcBSwbw" role="37vLTJ">
+              <node concept="QwW4i" id="1Ge_bcBSvYr" role="2Oq$k0">
+                <ref role="QwW4h" node="1Ge_bcBSvXL" resolve="implementsKnownFunctionPrototype" />
+              </node>
+              <node concept="3TrcHB" id="1Ge_bcBSwNH" role="2OqNvi">
+                <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Q6JDH" id="1Ge_bcBSvXL" role="Q6Id_">
+      <property role="TrG5h" value="implementsKnownFunctionPrototype" />
+      <node concept="3Tqbb2" id="1Ge_bcBSvXR" role="Q6QK4">
+        <ref role="ehGHo" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+      </node>
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="1Ge_bcBSFlf">
+    <property role="TrG5h" value="fix_IImplementsKnownFunctionPrototype_preventNameMangling" />
+    <property role="3GE5qa" value="functions" />
+    <node concept="Q5ZZ6" id="1Ge_bcBSFlg" role="Q6x$H">
+      <node concept="3clFbS" id="1Ge_bcBSFlh" role="2VODD2">
+        <node concept="3clFbF" id="1Ge_bcBSFlo" role="3cqZAp">
+          <node concept="37vLTI" id="1Ge_bcBSFlp" role="3clFbG">
+            <node concept="3clFbT" id="1Ge_bcBSFlq" role="37vLTx">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="2OqwBi" id="1Ge_bcBSFlr" role="37vLTJ">
+              <node concept="QwW4i" id="1Ge_bcBSFls" role="2Oq$k0">
+                <ref role="QwW4h" node="1Ge_bcBSFlu" resolve="implementsKnownFunctionPrototype" />
+              </node>
+              <node concept="3TrcHB" id="1Ge_bcBSFlt" role="2OqNvi">
+                <ref role="3TsBF5" to="x27k:5Oog2UbP_d2" resolve="preventNameMangling" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Q6JDH" id="1Ge_bcBSFlu" role="Q6Id_">
+      <property role="TrG5h" value="implementsKnownFunctionPrototype" />
+      <node concept="3Tqbb2" id="1Ge_bcBSFlv" role="Q6QK4">
+        <ref role="ehGHo" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+      </node>
+    </node>
+  </node>
 </model>
 

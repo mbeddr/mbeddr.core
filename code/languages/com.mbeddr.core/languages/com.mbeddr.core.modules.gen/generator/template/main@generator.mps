@@ -1561,17 +1561,31 @@
                   <node concept="1bVj0M" id="1H6zsul6IzB" role="23t8la">
                     <node concept="3clFbS" id="1H6zsul6IzC" role="1bW5cS">
                       <node concept="3clFbF" id="1H6zsul6JrB" role="3cqZAp">
-                        <node concept="2OqwBi" id="1H6zsul6Kij" role="3clFbG">
-                          <node concept="1PxgMI" id="6CpO2H4IjE7" role="2Oq$k0">
-                            <node concept="chp4Y" id="1SbcsM$Fuze" role="3oSUPX">
-                              <ref role="cht4Q" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-                            </node>
-                            <node concept="37vLTw" id="1H6zsul6JrA" role="1m5AlR">
-                              <ref role="3cqZAo" node="1H6zsul6IzD" resolve="it" />
+                        <node concept="1Wc70l" id="20agw22$Bna" role="3clFbG">
+                          <node concept="3fqX7Q" id="20agw22$BW2" role="3uHU7w">
+                            <node concept="2OqwBi" id="20agw22$Cpp" role="3fr31v">
+                              <node concept="37vLTw" id="20agw22$BWg" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1H6zsul6IzD" resolve="it" />
+                              </node>
+                              <node concept="1mIQ4w" id="20agw22$DJY" role="2OqNvi">
+                                <node concept="chp4Y" id="20agw22$EnV" role="cj9EA">
+                                  <ref role="cht4Q" to="x27k:20agw21I6x2" resolve="IImplementsKnownFunctionPrototype" />
+                                </node>
+                              </node>
                             </node>
                           </node>
-                          <node concept="3TrcHB" id="6CpO2H4Iq9e" role="2OqNvi">
-                            <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+                          <node concept="2OqwBi" id="1H6zsul6Kij" role="3uHU7B">
+                            <node concept="1PxgMI" id="6CpO2H4IjE7" role="2Oq$k0">
+                              <node concept="chp4Y" id="1SbcsM$Fuze" role="3oSUPX">
+                                <ref role="cht4Q" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+                              </node>
+                              <node concept="37vLTw" id="1H6zsul6JrA" role="1m5AlR">
+                                <ref role="3cqZAo" node="1H6zsul6IzD" resolve="it" />
+                              </node>
+                            </node>
+                            <node concept="3TrcHB" id="6CpO2H4Iq9e" role="2OqNvi">
+                              <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -7833,24 +7847,6 @@
                     <node concept="3clFbS" id="10qKQykNDlX" role="1bW5cS">
                       <node concept="3clFbF" id="10qKQykNDlY" role="3cqZAp">
                         <node concept="1Wc70l" id="10qKQykNDlZ" role="3clFbG">
-                          <node concept="2OqwBi" id="10qKQykNDm0" role="3uHU7w">
-                            <node concept="2OqwBi" id="10qKQykNDm1" role="2Oq$k0">
-                              <node concept="1PxgMI" id="10qKQykNDm2" role="2Oq$k0">
-                                <node concept="chp4Y" id="1SbcsM$Fuzh" role="3oSUPX">
-                                  <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
-                                </node>
-                                <node concept="37vLTw" id="10qKQykNDm3" role="1m5AlR">
-                                  <ref role="3cqZAo" node="10qKQykNDmm" resolve="it" />
-                                </node>
-                              </node>
-                              <node concept="3CFZ6_" id="10qKQykNDm4" role="2OqNvi">
-                                <node concept="3CFYIy" id="10qKQykNDm5" role="3CFYIz">
-                                  <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3w_OXm" id="10qKQykNDm6" role="2OqNvi" />
-                          </node>
                           <node concept="1Wc70l" id="10qKQykNDm7" role="3uHU7B">
                             <node concept="1Wc70l" id="10qKQykNDm8" role="3uHU7B">
                               <node concept="2OqwBi" id="10qKQykNDm9" role="3uHU7B">
@@ -7889,6 +7885,24 @@
                                 </node>
                               </node>
                             </node>
+                          </node>
+                          <node concept="2OqwBi" id="10qKQykNDm0" role="3uHU7w">
+                            <node concept="2OqwBi" id="10qKQykNDm1" role="2Oq$k0">
+                              <node concept="1PxgMI" id="10qKQykNDm2" role="2Oq$k0">
+                                <node concept="chp4Y" id="1SbcsM$Fuzh" role="3oSUPX">
+                                  <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                                </node>
+                                <node concept="37vLTw" id="10qKQykNDm3" role="1m5AlR">
+                                  <ref role="3cqZAo" node="10qKQykNDmm" resolve="it" />
+                                </node>
+                              </node>
+                              <node concept="3CFZ6_" id="10qKQykNDm4" role="2OqNvi">
+                                <node concept="3CFYIy" id="10qKQykNDm5" role="3CFYIz">
+                                  <ref role="3CFYIx" to="x27k:7x9scHw5pU_" resolve="ImplementsExternalFunction" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3w_OXm" id="10qKQykNDm6" role="2OqNvi" />
                           </node>
                         </node>
                       </node>

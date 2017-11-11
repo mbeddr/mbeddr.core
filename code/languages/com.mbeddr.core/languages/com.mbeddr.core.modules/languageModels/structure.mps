@@ -1732,5 +1732,12 @@
     <property role="3GE5qa" value="functionrefs.closure" />
     <property role="TrG5h" value="IClosureLike" />
   </node>
+  <node concept="PlHQZ" id="20agw21I6x2">
+    <property role="EcuMT" value="2308730328924579906" />
+    <property role="TrG5h" value="IImplementsKnownFunctionPrototype" />
+    <node concept="PrWs8" id="20agw21I6Ig" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
+    </node>
+  </node>
 </model>
 
