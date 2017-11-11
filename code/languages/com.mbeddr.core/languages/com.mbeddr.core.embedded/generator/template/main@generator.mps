@@ -428,7 +428,7 @@
       <node concept="b5Tf3" id="to$mQWqpWa" role="1lVwrX" />
     </node>
     <node concept="3aamgX" id="to$mQWqpWb" role="3acgRq">
-      <ref role="30HIoZ" to="nbyu:SwwM9UHwwI" resolve="Isr" />
+      <ref role="30HIoZ" to="nbyu:SwwM9UHwwI" resolve="ISR" />
       <node concept="1Koe21" id="to$mQWqpWc" role="1lVwrX">
         <node concept="N3F5e" id="to$mQWqpWd" role="1Koe22">
           <property role="TrG5h" value="aModule" />

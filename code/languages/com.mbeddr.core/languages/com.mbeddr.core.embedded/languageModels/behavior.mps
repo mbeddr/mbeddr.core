@@ -829,7 +829,7 @@
   </node>
   <node concept="13h7C7" id="SwwM9UHwxg">
     <property role="3GE5qa" value="isr" />
-    <ref role="13h7C2" to="nbyu:SwwM9UHwwI" resolve="Isr" />
+    <ref role="13h7C2" to="nbyu:SwwM9UHwwI" resolve="ISR" />
     <node concept="13i0hz" id="7X9xw2qEeH9" role="13h7CS">
       <property role="TrG5h" value="getConfigItem" />
       <property role="2Ki8OM" value="true" />
@@ -1038,7 +1038,7 @@
             <property role="TrG5h" value="nodesIncludingImported" />
             <node concept="A3Dl8" id="SwwM9UHCH5" role="1tU5fm">
               <node concept="3Tqbb2" id="SwwM9UHCH6" role="A3Ik2">
-                <ref role="ehGHo" to="nbyu:SwwM9UHwwI" resolve="Isr" />
+                <ref role="ehGHo" to="nbyu:SwwM9UHwwI" resolve="ISR" />
               </node>
             </node>
             <node concept="2OqwBi" id="SwwM9UHCH7" role="33vP2m">
@@ -1048,7 +1048,7 @@
                   <node concept="I4A8Y" id="SwwM9UHCHb" role="2OqNvi" />
                 </node>
                 <node concept="1j9C0f" id="SwwM9UHCHc" role="2OqNvi">
-                  <ref role="1j9C0d" to="nbyu:SwwM9UHwwI" resolve="Isr" />
+                  <ref role="1j9C0d" to="nbyu:SwwM9UHwwI" resolve="ISR" />
                 </node>
               </node>
               <node concept="3zZkjj" id="SwwM9UHCHe" role="2OqNvi">
@@ -1085,7 +1085,7 @@
       </node>
       <node concept="A3Dl8" id="SwwM9UHCHt" role="3clF45">
         <node concept="3Tqbb2" id="SwwM9UHCHu" role="A3Ik2">
-          <ref role="ehGHo" to="nbyu:SwwM9UHwwI" resolve="Isr" />
+          <ref role="ehGHo" to="nbyu:SwwM9UHwwI" resolve="ISR" />
         </node>
       </node>
     </node>
