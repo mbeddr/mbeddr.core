@@ -283,11 +283,6 @@
     <property role="34LRSv" value="isr" />
     <property role="EcuMT" value="1017957699896608814" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="SwwM9UHwwJ" role="1TKVEl">
-      <property role="TrG5h" value="irqAsString" />
-      <property role="IQ2nx" value="1017957699896608815" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="SwwM9UHwwK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
@@ -300,9 +295,6 @@
     </node>
     <node concept="PrWs8" id="SwwM9UHwwM" role="PzmwI">
       <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
-    </node>
-    <node concept="PrWs8" id="2Lu1JfksAYA" role="PzmwI">
-      <ref role="PrY4T" to="x27k:20agw21I6x2" resolve="IImplementsKnownFunctionPrototype" />
     </node>
     <node concept="PrWs8" id="SwwM9UHwwN" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
