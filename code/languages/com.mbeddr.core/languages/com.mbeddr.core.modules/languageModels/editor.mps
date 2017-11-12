@@ -3830,7 +3830,6 @@
         <ref role="1k5W1q" to="r4b4:y826GHffn9" resolve="Op" />
       </node>
       <node concept="3F0A7n" id="5lpZMeghM$j" role="3EZMnx">
-        <property role="39s7Ar" value="true" />
         <ref role="1NtTu8" to="x27k:5lpZMegh_R_" resolve="value" />
       </node>
       <node concept="l2Vlx" id="5lpZMeghM$c" role="2iSdaV" />
