@@ -1458,7 +1458,6 @@
                 <node concept="3zZkjj" id="3ilck8KrEI9" role="2OqNvi">
                   <node concept="1bVj0M" id="3ilck8KrEIa" role="23t8la">
                     <node concept="3clFbS" id="3ilck8KrEIb" role="1bW5cS">
-                      <node concept="3clFbH" id="7jSUHHvja4u" role="3cqZAp" />
                       <node concept="3cpWs8" id="7jSUHHvja4v" role="3cqZAp">
                         <node concept="3cpWsn" id="7jSUHHvja4w" role="3cpWs9">
                           <property role="TrG5h" value="notFUnctionOrGVD" />
@@ -1481,8 +1480,8 @@
                                     <ref role="3cqZAo" node="3ilck8KrEIm" resolve="it" />
                                   </node>
                                   <node concept="1mIQ4w" id="4OlFaNL4V9K" role="2OqNvi">
-                                    <node concept="chp4Y" id="4OlFaNL4V9L" role="cj9EA">
-                                      <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                                    <node concept="chp4Y" id="2Lu1Jfl3xQu" role="cj9EA">
+                                      <ref role="cht4Q" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
                                     </node>
                                   </node>
                                 </node>
@@ -1609,8 +1608,8 @@
               <node concept="3clFbF" id="3z4m8Hko3Hf" role="3cqZAp">
                 <node concept="2OqwBi" id="3z4m8Hko3QO" role="3clFbG">
                   <node concept="1PxgMI" id="3z4m8Hkodxi" role="2Oq$k0">
-                    <node concept="chp4Y" id="1SbcsM$Fuzo" role="3oSUPX">
-                      <ref role="cht4Q" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
+                    <node concept="chp4Y" id="2Lu1JfkRBWN" role="3oSUPX">
+                      <ref role="cht4Q" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
                     </node>
                     <node concept="30H73N" id="3z4m8Hko3He" role="1m5AlR" />
                   </node>
