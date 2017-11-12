@@ -159,6 +159,12 @@
     <property role="R4oN_" value="call evaluator on arbitrary expression" />
     <property role="EcuMT" value="8615074351687435493" />
     <ref role="1TJDcQ" node="7oujAIeQkO7" resolve="AbstractRecursionExpression" />
+    <node concept="1TJgyj" id="7dN4gbai3_k" role="1TKVEi">
+      <property role="IQ2ns" value="8319011640364775764" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="trace" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4X7QcQ2Rofu">
     <property role="3GE5qa" value="Evaluator.Implementation" />
