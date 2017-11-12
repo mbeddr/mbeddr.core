@@ -1243,23 +1243,73 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbF" id="7obiejAu0FV" role="3cqZAp">
-                      <node concept="2OqwBi" id="7obiejAu1vj" role="3clFbG">
-                        <node concept="37vLTw" id="7obiejAu0FT" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7obiejAtXpl" resolve="newTrace" />
-                        </node>
-                        <node concept="liA8E" id="7obiejAu6vr" role="2OqNvi">
-                          <ref role="37wK5l" node="6wNYzrTZcmV" resolve="setValue" />
-                          <node concept="37vLTw" id="7lHetQxP2cx" role="37wK5m">
-                            <ref role="3cqZAo" node="7lHetQxOLoF" resolve="result" />
-                          </node>
-                          <node concept="3cpWsd" id="6wNYzrTZpBU" role="37wK5m">
-                            <node concept="37vLTw" id="6wNYzrTZpFB" role="3uHU7w">
-                              <ref role="3cqZAo" node="6wNYzrTZngH" resolve="start" />
+                    <node concept="3clFbJ" id="7dN4gbad1rT" role="3cqZAp">
+                      <node concept="3clFbS" id="7dN4gbad1rV" role="3clFbx">
+                        <node concept="3clFbF" id="7obiejAu0FV" role="3cqZAp">
+                          <node concept="2OqwBi" id="7obiejAu1vj" role="3clFbG">
+                            <node concept="37vLTw" id="7obiejAu0FT" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7obiejAtXpl" resolve="newTrace" />
                             </node>
-                            <node concept="2YIFZM" id="6wNYzrTZp14" role="3uHU7B">
-                              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
-                              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                            <node concept="liA8E" id="7obiejAu6vr" role="2OqNvi">
+                              <ref role="37wK5l" node="6wNYzrTZcmV" resolve="setValue" />
+                              <node concept="2OqwBi" id="7dN4gbad8_T" role="37wK5m">
+                                <node concept="1eOMI4" id="7dN4gbad8nx" role="2Oq$k0">
+                                  <node concept="10QFUN" id="7dN4gbad7sz" role="1eOMHV">
+                                    <node concept="37vLTw" id="7dN4gbad7sy" role="10QFUP">
+                                      <ref role="3cqZAo" node="7lHetQxOLoF" resolve="result" />
+                                    </node>
+                                    <node concept="3uibUv" id="7dN4gbad7WP" role="10QFUM">
+                                      <ref role="3uigEE" node="7dN4gbacQgJ" resolve="IRequiresSnapshot" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="7dN4gbad8Tw" role="2OqNvi">
+                                  <ref role="37wK5l" node="7dN4gbacZzh" resolve="createSnapshot" />
+                                </node>
+                              </node>
+                              <node concept="3cpWsd" id="6wNYzrTZpBU" role="37wK5m">
+                                <node concept="37vLTw" id="6wNYzrTZpFB" role="3uHU7w">
+                                  <ref role="3cqZAo" node="6wNYzrTZngH" resolve="start" />
+                                </node>
+                                <node concept="2YIFZM" id="6wNYzrTZp14" role="3uHU7B">
+                                  <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2ZW3vV" id="7dN4gbad6Ve" role="3clFbw">
+                        <node concept="3uibUv" id="7dN4gbad77a" role="2ZW6by">
+                          <ref role="3uigEE" node="7dN4gbacQgJ" resolve="IRequiresSnapshot" />
+                        </node>
+                        <node concept="37vLTw" id="7dN4gbad6gA" role="2ZW6bz">
+                          <ref role="3cqZAo" node="7lHetQxOLoF" resolve="result" />
+                        </node>
+                      </node>
+                      <node concept="9aQIb" id="7dN4gbad9qd" role="9aQIa">
+                        <node concept="3clFbS" id="7dN4gbad9qe" role="9aQI4">
+                          <node concept="3clFbF" id="7dN4gbad9xg" role="3cqZAp">
+                            <node concept="2OqwBi" id="7dN4gbad9xh" role="3clFbG">
+                              <node concept="37vLTw" id="7dN4gbad9xi" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7obiejAtXpl" resolve="newTrace" />
+                              </node>
+                              <node concept="liA8E" id="7dN4gbad9xj" role="2OqNvi">
+                                <ref role="37wK5l" node="6wNYzrTZcmV" resolve="setValue" />
+                                <node concept="37vLTw" id="7dN4gbadaq_" role="37wK5m">
+                                  <ref role="3cqZAo" node="7lHetQxOLoF" resolve="result" />
+                                </node>
+                                <node concept="3cpWsd" id="7dN4gbad9xq" role="37wK5m">
+                                  <node concept="37vLTw" id="7dN4gbad9xr" role="3uHU7w">
+                                    <ref role="3cqZAo" node="6wNYzrTZngH" resolve="start" />
+                                  </node>
+                                  <node concept="2YIFZM" id="7dN4gbad9xs" role="3uHU7B">
+                                    <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                                    <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                                  </node>
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -16278,6 +16328,22 @@
     <node concept="3uibUv" id="5IR_boHCAh0" role="EKbjA">
       <ref role="3uigEE" to="pu3r:5IR_boHB23v" resolve="IRerunnableTraceRecord" />
     </node>
+  </node>
+  <node concept="3HP615" id="7dN4gbacQgJ">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="IRequiresSnapshot" />
+    <node concept="2tJIrI" id="7dN4gbacQh1" role="jymVt" />
+    <node concept="3clFb_" id="7dN4gbacZzh" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="createSnapshot" />
+      <node concept="3uibUv" id="7dN4gbacZA4" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="7dN4gbacZzk" role="1B3o_S" />
+      <node concept="3clFbS" id="7dN4gbacZzl" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="7dN4gbacQh6" role="jymVt" />
+    <node concept="3Tm1VV" id="7dN4gbacQgK" role="1B3o_S" />
   </node>
 </model>
 
