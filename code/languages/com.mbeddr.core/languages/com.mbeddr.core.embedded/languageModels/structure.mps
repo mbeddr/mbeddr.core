@@ -301,6 +301,9 @@
     <node concept="PrWs8" id="SwwM9UHwwM" role="PzmwI">
       <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
     </node>
+    <node concept="PrWs8" id="2Lu1JfksAYA" role="PzmwI">
+      <ref role="PrY4T" to="x27k:20agw21I6x2" resolve="IImplementsKnownFunctionPrototype" />
+    </node>
     <node concept="PrWs8" id="SwwM9UHwwN" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>

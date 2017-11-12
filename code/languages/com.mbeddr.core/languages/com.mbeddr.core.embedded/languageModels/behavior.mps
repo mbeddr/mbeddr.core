@@ -18,7 +18,7 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
     <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1024,6 +1024,21 @@
         </node>
       </node>
       <node concept="3cqZAl" id="2h5hmpsyQAF" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2Lu1JfksC6v" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="headerToImport" />
+      <ref role="13i0hy" to="hwgx:7RHXOmw3XK4" resolve="headerToImport" />
+      <node concept="3Tm1VV" id="2Lu1JfksC6w" role="1B3o_S" />
+      <node concept="3clFbS" id="2Lu1JfksC6z" role="3clF47">
+        <node concept="3clFbF" id="2Lu1JfksCsw" role="3cqZAp">
+          <node concept="Xl_RD" id="2Lu1JfksCsv" role="3clFbG">
+            <property role="Xl_RC" value="" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2Lu1JfksC6$" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="SwwM9UHCGZ">
