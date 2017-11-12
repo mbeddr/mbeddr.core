@@ -1069,12 +1069,7 @@
                             <node concept="3clFbS" id="7GmkyIHGcyz" role="3clFbx">
                               <node concept="3SKdUt" id="3dZgFhDBGCf" role="3cqZAp">
                                 <node concept="3SKdUq" id="3dZgFhDBGCh" role="3SKWNk">
-                                  <property role="3SKdUp" value="The -j option instructs the make to run it's recipes in parallel. The -1 is to " />
-                                </node>
-                              </node>
-                              <node concept="3SKdUt" id="3dZgFhDBGVL" role="3cqZAp">
-                                <node concept="3SKdUq" id="3dZgFhDBGVN" role="3SKWNk">
-                                  <property role="3SKdUp" value="ensure that there is atleast one available processor for external IO operations." />
+                                  <property role="3SKdUp" value="The -j option instructs the make to run it's recipes in parallel" />
                                 </node>
                               </node>
                               <node concept="3clFbF" id="3dZgFhDBtn_" role="3cqZAp">
