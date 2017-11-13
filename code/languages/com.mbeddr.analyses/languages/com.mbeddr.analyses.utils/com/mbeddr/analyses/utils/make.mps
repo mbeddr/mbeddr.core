@@ -1255,7 +1255,7 @@
                       <node concept="liA8E" id="640gwNkG91r" role="2OqNvi">
                         <ref role="37wK5l" to="5zyv:~Future.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
                         <node concept="3cmrfG" id="4RbsEloWEMk" role="37wK5m">
-                          <property role="3cmrfH" value="30" />
+                          <property role="3cmrfH" value="300" />
                         </node>
                         <node concept="Rm8GO" id="4RbsEloWFtL" role="37wK5m">
                           <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />
