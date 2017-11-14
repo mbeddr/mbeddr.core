@@ -627,14 +627,8 @@
     <node concept="2flH9Z" id="6XvT233IskQ" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.devkit.actions.GoToOverridingBehaviorMethod_Action" />
     </node>
-    <node concept="2flH9Z" id="6XvT233Iso1" role="2flH9W">
-      <property role="2flH96" value="MainToolBarSettings" />
-    </node>
     <node concept="2flH9Z" id="6XvT233Isrd" role="2flH9W">
       <property role="2flH96" value="VcsToobarActions" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Isuq" role="2flH9W">
-      <property role="2flH96" value="ShowSettings" />
     </node>
     <node concept="2flH9Z" id="6XvT233IsxC" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.CopyNodeName_Action" />

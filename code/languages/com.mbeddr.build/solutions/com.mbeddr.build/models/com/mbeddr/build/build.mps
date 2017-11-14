@@ -11180,6 +11180,18 @@
             <ref role="3bR37D" to="al5i:5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5PjCZ8mQ$kA" role="3bR37C">
+          <node concept="3bR9La" id="5PjCZ8mQ$kB" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1ZViq9oppal" resolve="jetbrains.mps.make.facets" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5PjCZ8mQ$kC" role="3bR37C">
+          <node concept="3bR9La" id="5PjCZ8mQ$kD" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3JmJHJb$M36" role="2G$12L">
         <property role="BnDLt" value="true" />
