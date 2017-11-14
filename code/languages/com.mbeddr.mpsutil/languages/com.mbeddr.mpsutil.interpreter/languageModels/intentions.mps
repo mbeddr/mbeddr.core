@@ -385,7 +385,7 @@
       <node concept="3clFbS" id="7F2vPZ3BGzv" role="2VODD2">
         <node concept="3clFbF" id="7F2vPZ3BGUW" role="3cqZAp">
           <node concept="Xl_RD" id="7F2vPZ3BGUV" role="3clFbG">
-            <property role="Xl_RC" value="Toggle Caching" />
+            <property role="Xl_RC" value="Toggle Caching of Values" />
           </node>
         </node>
       </node>
@@ -398,14 +398,14 @@
               <node concept="2OqwBi" id="7F2vPZ3BMHm" role="3fr31v">
                 <node concept="2Sf5sV" id="7F2vPZ3BMD6" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7F2vPZ3BNm4" role="2OqNvi">
-                  <ref role="3TsBF5" to="3673:7F2vPZ3BCjK" resolve="cache" />
+                  <ref role="3TsBF5" to="3673:7F2vPZ3BCjK" resolve="cacheValues" />
                 </node>
               </node>
             </node>
             <node concept="2OqwBi" id="7F2vPZ3BJ00" role="37vLTJ">
               <node concept="2Sf5sV" id="7F2vPZ3BIWm" role="2Oq$k0" />
               <node concept="3TrcHB" id="7F2vPZ3BJT2" role="2OqNvi">
-                <ref role="3TsBF5" to="3673:7F2vPZ3BCjK" resolve="cache" />
+                <ref role="3TsBF5" to="3673:7F2vPZ3BCjK" resolve="cacheValues" />
               </node>
             </node>
           </node>
