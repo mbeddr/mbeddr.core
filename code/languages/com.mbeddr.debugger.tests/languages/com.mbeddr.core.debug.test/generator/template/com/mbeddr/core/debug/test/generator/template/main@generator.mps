@@ -414,7 +414,7 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
     </language>
     <language id="4457ca2e-a7c9-4452-9578-e94701cc4942" name="com.mbeddr.core.debug.util">
-      <concept id="9152682018127982951" name="com.mbeddr.core.debug.util.structure.MbeddrClassConcept" flags="ng" index="fAQEE" />
+      <concept id="9152682018127982951" name="com.mbeddr.core.debug.util.structure.MbeddrClassConcept" flags="ig" index="fAQEE" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
