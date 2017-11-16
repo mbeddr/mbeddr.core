@@ -397,7 +397,7 @@
                   <node concept="1pGfFk" id="1zHTo2aFg_H" role="2ShVmc">
                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                     <node concept="37vLTw" id="1zHTo2aFg_I" role="37wK5m">
-                      <ref role="3cqZAo" node="5lKnBeAuGqW" />
+                      <ref role="3cqZAo" node="5lKnBeAuGqW" resolve="path" />
                     </node>
                   </node>
                 </node>
@@ -409,13 +409,13 @@
                   <node concept="3clFbS" id="1zHTo2aFvAI" role="SfCbr">
                     <node concept="3cpWs6" id="1zHTo2aFvAJ" role="3cqZAp">
                       <node concept="BsUDl" id="1zHTo2aFvAK" role="3cqZAk">
-                        <ref role="37wK5l" node="3NapiAKWSal" />
+                        <ref role="37wK5l" node="3NapiAKWSal" resolve="rep" />
                         <node concept="2OqwBi" id="1zHTo2aFvAL" role="37wK5m">
                           <node concept="liA8E" id="1zHTo2aFvAM" role="2OqNvi">
                             <ref role="37wK5l" to="guwi:~File.getCanonicalPath():java.lang.String" resolve="getCanonicalPath" />
                           </node>
                           <node concept="37vLTw" id="1zHTo2aFvAN" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1zHTo2aFg_F" />
+                            <ref role="3cqZAo" node="1zHTo2aFg_F" resolve="file" />
                           </node>
                         </node>
                       </node>
@@ -451,7 +451,7 @@
         </node>
         <node concept="3cpWs6" id="1zHTo2aFvA_" role="3cqZAp">
           <node concept="37vLTw" id="51aJIRsCkiq" role="3cqZAk">
-            <ref role="3cqZAo" node="5lKnBeAuGqW" />
+            <ref role="3cqZAo" node="5lKnBeAuGqW" resolve="path" />
           </node>
         </node>
       </node>
@@ -1444,11 +1444,11 @@
                 <node concept="3clFbF" id="7ZxIDztGcqU" role="3cqZAp">
                   <node concept="2OqwBi" id="7ZxIDztGcMr" role="3clFbG">
                     <node concept="37vLTw" id="7ZxIDztGcqS" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7ZxIDztwncY" />
+                      <ref role="3cqZAo" node="7ZxIDztwncY" resolve="result" />
                     </node>
                     <node concept="TSZUe" id="7ZxIDztGeH5" role="2OqNvi">
                       <node concept="37vLTw" id="7ZxIDztGeJt" role="25WWJ7">
-                        <ref role="3cqZAo" node="7ZxIDztwyKb" />
+                        <ref role="3cqZAo" node="7ZxIDztwyKb" resolve="proposedPath" />
                       </node>
                     </node>
                   </node>

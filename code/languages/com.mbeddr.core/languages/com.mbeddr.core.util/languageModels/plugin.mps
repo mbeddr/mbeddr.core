@@ -123,7 +123,7 @@
         <child id="5934114435582613364" name="body" index="3vcmbn" />
       </concept>
       <concept id="5934114435583058812" name="com.mbeddr.mpsutil.interpreter.structure.AbstractEvaluator" flags="ng" index="3va1rv">
-        <property id="8845772667389641968" name="cache" index="2TnfIJ" />
+        <property id="8845772667389641968" name="cacheValues" index="2TnfIJ" />
         <child id="5934114435584084790" name="evaluator" index="3vQZUl" />
       </concept>
       <concept id="6663324787724559041" name="com.mbeddr.mpsutil.interpreter.structure.AbstractInterpreterRelationship" flags="ng" index="1J641m">

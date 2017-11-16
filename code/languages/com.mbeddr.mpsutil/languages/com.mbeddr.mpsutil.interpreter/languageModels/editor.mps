@@ -712,6 +712,21 @@
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
+          <node concept="OXEIz" id="3xFG3biNL6v" role="P5bDN">
+            <node concept="ZcVJ$" id="3xFG3biNL6u" role="OY2wv">
+              <node concept="1NMggl" id="3xFG3biNL6w" role="1NQq9M">
+                <node concept="3clFbS" id="3xFG3biNL6x" role="2VODD2">
+                  <node concept="3clFbF" id="3xFG3biNL6y" role="3cqZAp">
+                    <node concept="2YIFZM" id="3xFG3biNL6z" role="3clFbG">
+                      <ref role="37wK5l" to="kqnq:7F2vPZ5WBgu" resolve="getDetailedConceptPresentation" />
+                      <ref role="1Pybhc" to="kqnq:GsqojXZZ9Y" resolve="Util" />
+                      <node concept="1NM5Ph" id="3xFG3biNL6_" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="642_vmCYzJs" role="3EZMnx">
           <property role="3F0ifm" value="(" />
