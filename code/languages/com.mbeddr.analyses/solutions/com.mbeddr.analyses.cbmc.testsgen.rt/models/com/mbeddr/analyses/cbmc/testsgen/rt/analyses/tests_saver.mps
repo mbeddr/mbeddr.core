@@ -1629,6 +1629,39 @@
           </node>
         </node>
         <node concept="3clFbH" id="1_w0TkqQrap" role="3cqZAp" />
+        <node concept="Jncv_" id="4eowKyZ7gZH" role="3cqZAp">
+          <ref role="JncvD" to="clbe:5jyom5fO9Cn" resolve="TypeDefType" />
+          <node concept="37vLTw" id="4eowKyZ7gZI" role="JncvB">
+            <ref role="3cqZAo" node="1ENIgcph1MA" resolve="tpe" />
+          </node>
+          <node concept="3clFbS" id="4eowKyZ7gZJ" role="Jncv$">
+            <node concept="3clFbF" id="4eowKyZ7gZK" role="3cqZAp">
+              <node concept="37vLTI" id="4eowKyZ7gZL" role="3clFbG">
+                <node concept="2OqwBi" id="4eowKyZ7lgL" role="37vLTx">
+                  <node concept="2OqwBi" id="4eowKyZ7gZN" role="2Oq$k0">
+                    <node concept="Jnkvi" id="4eowKyZ7gZO" role="2Oq$k0">
+                      <ref role="1M0zk5" node="4eowKyZ7gZS" resolve="tdt" />
+                    </node>
+                    <node concept="3TrEf2" id="4eowKyZ7ky3" role="2OqNvi">
+                      <ref role="3Tt5mk" to="clbe:5jyom5fO9Co" resolve="typeDef" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="4eowKyZ7mof" role="2OqNvi">
+                    <ref role="37wK5l" to="2rho:1u7i4LCvTIV" resolve="bottomType" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="4eowKyZ7gZR" role="37vLTJ">
+                  <ref role="3cqZAo" node="79ucxoro$G3" resolve="coreTpe" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="4eowKyZ7gZS" role="JncvA">
+            <property role="TrG5h" value="tdt" />
+            <node concept="2jxLKc" id="4eowKyZ7gZT" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4eowKyZ7gbK" role="3cqZAp" />
         <node concept="3cpWs8" id="1ENIgcph1LW" role="3cqZAp">
           <node concept="3cpWsn" id="1ENIgcph1LX" role="3cpWs9">
             <property role="TrG5h" value="res" />
