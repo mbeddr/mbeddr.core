@@ -11,6 +11,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
@@ -61,6 +62,7 @@
     <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
   </imports>
@@ -15186,8 +15188,9 @@
             <node concept="3uibUv" id="4zzNcfNJZ1O" role="1tU5fm">
               <ref role="3uigEE" to="y2d0:~CursorPositionTracker" resolve="CursorPositionTracker" />
             </node>
-            <node concept="1rXfSq" id="MOb1pQbGFb" role="33vP2m">
-              <ref role="37wK5l" node="MOb1pQbyfb" resolve="getPositionTracker" />
+            <node concept="2YIFZM" id="6d7zaBDOg$Y" role="33vP2m">
+              <ref role="37wK5l" to="kvq8:MOb1pQbyfb" resolve="getPositionTracker" />
+              <ref role="1Pybhc" to="kvq8:2WlJ6VKOwRU" resolve="EditorComponentHacks" />
               <node concept="2OqwBi" id="MOb1pQbOjf" role="37wK5m">
                 <node concept="37vLTw" id="MOb1pQbKHw" role="2Oq$k0">
                   <ref role="3cqZAo" node="4zzNcfNGxs3" resolve="editorContext" />
@@ -15296,187 +15299,6 @@
       </node>
       <node concept="3cqZAl" id="4zzNcfNE8AN" role="3clF45" />
       <node concept="3Tm1VV" id="4zzNcfNE8AO" role="1B3o_S" />
-    </node>
-    <node concept="2tJIrI" id="4zzNcfNE4vD" role="jymVt" />
-    <node concept="2YIFZL" id="MOb1pQbyfb" role="jymVt">
-      <property role="TrG5h" value="getPositionTracker" />
-      <property role="IEkAT" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3clFbS" id="MOb1pQ8MtD" role="3clF47">
-        <node concept="SfApY" id="MOb1pQa6fk" role="3cqZAp">
-          <node concept="3clFbS" id="MOb1pQa6fm" role="SfCbr">
-            <node concept="3cpWs8" id="MOb1pQaX_w" role="3cqZAp">
-              <node concept="3cpWsn" id="MOb1pQaX_x" role="3cpWs9">
-                <property role="TrG5h" value="actionMapField" />
-                <node concept="3uibUv" id="MOb1pQaX_y" role="1tU5fm">
-                  <ref role="3uigEE" to="t6h5:~Field" resolve="Field" />
-                </node>
-                <node concept="2OqwBi" id="MOb1pQb13Z" role="33vP2m">
-                  <node concept="3VsKOn" id="MOb1pQb0I$" role="2Oq$k0">
-                    <ref role="3VsUkX" to="exr9:~EditorComponent" resolve="EditorComponent" />
-                  </node>
-                  <node concept="liA8E" id="MOb1pQb2dq" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Class.getDeclaredField(java.lang.String):java.lang.reflect.Field" resolve="getDeclaredField" />
-                    <node concept="Xl_RD" id="MOb1pQb2lS" role="37wK5m">
-                      <property role="Xl_RC" value="myActionMap" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="MOb1pQb30q" role="3cqZAp">
-              <node concept="2OqwBi" id="MOb1pQb3jF" role="3clFbG">
-                <node concept="37vLTw" id="MOb1pQb30p" role="2Oq$k0">
-                  <ref role="3cqZAo" node="MOb1pQaX_x" resolve="actionMapField" />
-                </node>
-                <node concept="liA8E" id="MOb1pQb3tF" role="2OqNvi">
-                  <ref role="37wK5l" to="t6h5:~AccessibleObject.setAccessible(boolean):void" resolve="setAccessible" />
-                  <node concept="3clFbT" id="MOb1pQb3$e" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="MOb1pQb47i" role="3cqZAp">
-              <node concept="3cpWsn" id="MOb1pQb47j" role="3cpWs9">
-                <property role="TrG5h" value="actionMap" />
-                <node concept="3uibUv" id="MOb1pQb47g" role="1tU5fm">
-                  <ref role="3uigEE" to="33ny:~HashMap" resolve="HashMap" />
-                  <node concept="3uibUv" id="MOb1pQb4rV" role="11_B2D">
-                    <ref role="3uigEE" to="f4zo:~CellActionType" resolve="CellActionType" />
-                  </node>
-                  <node concept="3uibUv" id="MOb1pQb4_m" role="11_B2D">
-                    <ref role="3uigEE" to="f4zo:~CellAction" resolve="CellAction" />
-                  </node>
-                </node>
-                <node concept="10QFUN" id="MOb1pQb6Vm" role="33vP2m">
-                  <node concept="2OqwBi" id="MOb1pQb5LD" role="10QFUP">
-                    <node concept="37vLTw" id="MOb1pQb5B9" role="2Oq$k0">
-                      <ref role="3cqZAo" node="MOb1pQaX_x" resolve="actionMapField" />
-                    </node>
-                    <node concept="liA8E" id="MOb1pQb6dE" role="2OqNvi">
-                      <ref role="37wK5l" to="t6h5:~Field.get(java.lang.Object):java.lang.Object" resolve="get" />
-                      <node concept="37vLTw" id="MOb1pQb6mj" role="37wK5m">
-                        <ref role="3cqZAo" node="MOb1pQ96EZ" resolve="editorComponent" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3uibUv" id="MOb1pQb6Vn" role="10QFUM">
-                    <ref role="3uigEE" to="33ny:~HashMap" resolve="HashMap" />
-                    <node concept="3uibUv" id="MOb1pQb6Vo" role="11_B2D">
-                      <ref role="3uigEE" to="f4zo:~CellActionType" resolve="CellActionType" />
-                    </node>
-                    <node concept="3uibUv" id="MOb1pQb6Vp" role="11_B2D">
-                      <ref role="3uigEE" to="f4zo:~CellAction" resolve="CellAction" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="MOb1pQ9XuP" role="3cqZAp">
-              <node concept="3cpWsn" id="MOb1pQ9XuQ" role="3cpWs9">
-                <property role="TrG5h" value="field" />
-                <node concept="3uibUv" id="MOb1pQ9XuR" role="1tU5fm">
-                  <ref role="3uigEE" to="t6h5:~Field" resolve="Field" />
-                </node>
-                <node concept="2OqwBi" id="MOb1pQa0xZ" role="33vP2m">
-                  <node concept="3VsKOn" id="MOb1pQa0gg" role="2Oq$k0">
-                    <ref role="3VsUkX" to="exr9:~NodeEditorActions$MoveDown" resolve="NodeEditorActions.MoveDown" />
-                  </node>
-                  <node concept="liA8E" id="MOb1pQa3kv" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Class.getDeclaredField(java.lang.String):java.lang.reflect.Field" resolve="getDeclaredField" />
-                    <node concept="Xl_RD" id="MOb1pQaBJK" role="37wK5m">
-                      <property role="Xl_RC" value="myPositionTracker" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="MOb1pQaEP5" role="3cqZAp">
-              <node concept="2OqwBi" id="MOb1pQaEXA" role="3clFbG">
-                <node concept="37vLTw" id="MOb1pQaEP4" role="2Oq$k0">
-                  <ref role="3cqZAo" node="MOb1pQ9XuQ" resolve="field" />
-                </node>
-                <node concept="liA8E" id="MOb1pQaF7A" role="2OqNvi">
-                  <ref role="37wK5l" to="t6h5:~AccessibleObject.setAccessible(boolean):void" resolve="setAccessible" />
-                  <node concept="3clFbT" id="MOb1pQaFaG" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="MOb1pQaFqW" role="3cqZAp">
-              <node concept="3cpWsn" id="MOb1pQaFqX" role="3cpWs9">
-                <property role="TrG5h" value="tracker" />
-                <node concept="3uibUv" id="MOb1pQaFqY" role="1tU5fm">
-                  <ref role="3uigEE" to="y2d0:~CursorPositionTracker" resolve="CursorPositionTracker" />
-                </node>
-                <node concept="10QFUN" id="MOb1pQboNv" role="33vP2m">
-                  <node concept="2OqwBi" id="MOb1pQaFBe" role="10QFUP">
-                    <node concept="37vLTw" id="MOb1pQaF$h" role="2Oq$k0">
-                      <ref role="3cqZAo" node="MOb1pQ9XuQ" resolve="field" />
-                    </node>
-                    <node concept="liA8E" id="MOb1pQaFZZ" role="2OqNvi">
-                      <ref role="37wK5l" to="t6h5:~Field.get(java.lang.Object):java.lang.Object" resolve="get" />
-                      <node concept="2OqwBi" id="MOb1pQb9Vu" role="37wK5m">
-                        <node concept="37vLTw" id="MOb1pQb9jj" role="2Oq$k0">
-                          <ref role="3cqZAo" node="MOb1pQb47j" resolve="actionMap" />
-                        </node>
-                        <node concept="liA8E" id="MOb1pQbdsQ" role="2OqNvi">
-                          <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
-                          <node concept="Rm8GO" id="MOb1pQbjo0" role="37wK5m">
-                            <ref role="Rm8GQ" to="f4zo:~CellActionType.DOWN" resolve="DOWN" />
-                            <ref role="1Px2BO" to="f4zo:~CellActionType" resolve="CellActionType" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3uibUv" id="MOb1pQboNw" role="10QFUM">
-                    <ref role="3uigEE" to="y2d0:~CursorPositionTracker" resolve="CursorPositionTracker" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="MOb1pQbpAA" role="3cqZAp">
-              <node concept="37vLTw" id="MOb1pQbqcG" role="3cqZAk">
-                <ref role="3cqZAo" node="MOb1pQaFqX" resolve="tracker" />
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="MOb1pQa6fn" role="TEbGg">
-            <node concept="3cpWsn" id="MOb1pQa6fp" role="TDEfY">
-              <property role="TrG5h" value="ex" />
-              <node concept="3uibUv" id="MOb1pQa6lh" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="MOb1pQa6ft" role="TDEfX">
-              <node concept="YS8fn" id="MOb1pQa6F1" role="3cqZAp">
-                <node concept="2ShNRf" id="MOb1pQa6GK" role="YScLw">
-                  <node concept="1pGfFk" id="MOb1pQaBAE" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
-                    <node concept="37vLTw" id="MOb1pQaBCs" role="37wK5m">
-                      <ref role="3cqZAo" node="MOb1pQa6fp" resolve="ex" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="MOb1pQ96EZ" role="3clF46">
-        <property role="TrG5h" value="editorComponent" />
-        <node concept="3uibUv" id="MOb1pQbX1J" role="1tU5fm">
-          <ref role="3uigEE" to="cj4x:~EditorComponent" resolve="EditorComponent" />
-        </node>
-      </node>
-      <node concept="3uibUv" id="MOb1pQ9aE1" role="3clF45">
-        <ref role="3uigEE" to="y2d0:~CursorPositionTracker" resolve="CursorPositionTracker" />
-      </node>
-      <node concept="3Tm6S6" id="MOb1pQbC_b" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="MOb1pQ8F1f" role="jymVt" />
     <node concept="312cEu" id="4zzNcfNzzMK" role="jymVt">

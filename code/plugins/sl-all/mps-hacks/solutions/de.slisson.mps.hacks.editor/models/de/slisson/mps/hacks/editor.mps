@@ -38,6 +38,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="78sh" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.substitute(MPS.Editor/)" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
+    <import index="y2d0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.actions(MPS.Editor/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -73,6 +74,10 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
@@ -431,6 +436,91 @@
       <node concept="3Tm1VV" id="2WlJ6VKOISV" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="2WlJ6VKO_X$" role="jymVt" />
+    <node concept="2YIFZL" id="MOb1pQbyfb" role="jymVt">
+      <property role="TrG5h" value="getPositionTracker" />
+      <property role="IEkAT" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="MOb1pQ8MtD" role="3clF47">
+        <node concept="3clFbF" id="6d7zaBDR5NB" role="3cqZAp">
+          <node concept="2OqwBi" id="6d7zaBDR5YI" role="3clFbG">
+            <node concept="37vLTw" id="6d7zaBDR5N_" role="2Oq$k0">
+              <ref role="3cqZAo" node="MOb1pQ96EZ" resolve="editorComponent" />
+            </node>
+            <node concept="liA8E" id="6d7zaBDR6ev" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorComponent.getComponentAction(jetbrains.mps.openapi.editor.cells.CellActionType):jetbrains.mps.openapi.editor.cells.CellAction" resolve="getComponentAction" />
+              <node concept="Rm8GO" id="6d7zaBDR6js" role="37wK5m">
+                <ref role="Rm8GQ" to="f4zo:~CellActionType.DOWN" resolve="DOWN" />
+                <ref role="1Px2BO" to="f4zo:~CellActionType" resolve="CellActionType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6d7zaBDMLST" role="3cqZAp">
+          <node concept="3cpWsn" id="6d7zaBDMLSU" role="3cpWs9">
+            <property role="TrG5h" value="downAction" />
+            <node concept="3uibUv" id="6d7zaBDMNUm" role="1tU5fm">
+              <ref role="3uigEE" to="exr9:~NodeEditorActions$MoveDown" resolve="NodeEditorActions.MoveDown" />
+            </node>
+            <node concept="10QFUN" id="6d7zaBDMSVb" role="33vP2m">
+              <node concept="2OqwBi" id="6d7zaBDMSV0" role="10QFUP">
+                <node concept="2OqwBi" id="6d7zaBDMSV1" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6d7zaBDMSV2" role="2Oq$k0">
+                    <node concept="1eOMI4" id="6d7zaBDMSV3" role="2Oq$k0">
+                      <node concept="10QFUN" id="6d7zaBDMSV4" role="1eOMHV">
+                        <node concept="37vLTw" id="6d7zaBDMSV5" role="10QFUP">
+                          <ref role="3cqZAo" node="MOb1pQ96EZ" resolve="editorComponent" />
+                        </node>
+                        <node concept="3uibUv" id="6d7zaBDMSV6" role="10QFUM">
+                          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1PnCL0" id="6d7zaBDMSV7" role="2OqNvi">
+                      <ref role="2Oxat5" to="exr9:~EditorComponent.myEditorComponentActions" resolve="myEditorComponentActions" />
+                    </node>
+                  </node>
+                  <node concept="1PnCL0" id="6d7zaBDMSV8" role="2OqNvi">
+                    <ref role="2Oxat5" to="exr9:~EditorComponentActions.myActionMap" resolve="myActionMap" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6d7zaBDMSV9" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                  <node concept="Rm8GO" id="6d7zaBDMSVa" role="37wK5m">
+                    <ref role="Rm8GQ" to="f4zo:~CellActionType.DOWN" resolve="DOWN" />
+                    <ref role="1Px2BO" to="f4zo:~CellActionType" resolve="CellActionType" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3uibUv" id="6d7zaBDMSUZ" role="10QFUM">
+                <ref role="3uigEE" to="exr9:~NodeEditorActions$MoveDown" resolve="NodeEditorActions.MoveDown" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6d7zaBDMS23" role="3cqZAp">
+          <node concept="2OqwBi" id="6d7zaBDMS25" role="3cqZAk">
+            <node concept="37vLTw" id="6d7zaBDMS26" role="2Oq$k0">
+              <ref role="3cqZAo" node="6d7zaBDMLSU" resolve="downAction" />
+            </node>
+            <node concept="1PnCL0" id="6d7zaBDMS27" role="2OqNvi">
+              <ref role="2Oxat5" to="exr9:~NodeEditorActions$MoveDown.myPositionTracker" resolve="myPositionTracker" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="MOb1pQ96EZ" role="3clF46">
+        <property role="TrG5h" value="editorComponent" />
+        <node concept="3uibUv" id="MOb1pQbX1J" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorComponent" resolve="EditorComponent" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="MOb1pQ9aE1" role="3clF45">
+        <ref role="3uigEE" to="y2d0:~CursorPositionTracker" resolve="CursorPositionTracker" />
+      </node>
+      <node concept="3Tm1VV" id="6d7zaBDO4jc" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="6d7zaBDO3Jk" role="jymVt" />
     <node concept="3Tm1VV" id="2WlJ6VKOwRV" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="2WlJ6VKPQcy">

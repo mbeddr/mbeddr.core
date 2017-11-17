@@ -2079,6 +2079,9 @@
     </node>
     <node concept="m$_wf" id="2Xjt3l57cLw" role="3989C9">
       <property role="m$_wk" value="de.itemis.mps.editor.math" />
+      <node concept="m$_yC" id="6d7zaBDP3rM" role="m$_yJ">
+        <ref role="m$_y1" node="2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
+      </node>
       <node concept="3_J27D" id="2Xjt3l57cLx" role="m$_yQ">
         <node concept="3Mxwew" id="2Xjt3l57cLy" role="3MwsjC">
           <property role="3MwjfP" value="MPS Math Editor" />
@@ -2159,6 +2162,12 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6d7zaBDP2JE" role="3bR37C">
+          <node concept="3bR9La" id="6d7zaBDP2JF" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
           </node>
         </node>
       </node>
