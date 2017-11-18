@@ -17,6 +17,7 @@
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
       <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
     </language>
     <language id="d6714220-402d-48cb-a4a2-88223c6257f6" name="com.mbeddr.cc.requirements.scenarios">
       <concept id="6514529288613812198" name="com.mbeddr.cc.requirements.scenarios.structure.UseCaseKind" flags="ng" index="4R1oT" />
@@ -136,6 +137,7 @@
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
       <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="3352153450711894224" name="configItems" index="2wNnkt" />
         <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
@@ -247,6 +249,7 @@
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
@@ -1746,17 +1749,21 @@
   <node concept="2SbYGP" id="519ky_SmMST">
     <property role="3GE5qa" value="report" />
     <property role="TrG5h" value="Config" />
+    <node concept="1_07dB" id="36cijvu66TG" role="2wNnkt" />
     <node concept="2SbYGw" id="519ky_SpGLu" role="Cbewh">
       <property role="TrG5h" value="temp" />
       <node concept="9PVaO" id="2vBUIEiugPA" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="." />
       </node>
     </node>
     <node concept="A7cYH" id="4PBxP34YM2w" role="A10yx">
+      <property role="TrG5h" value="img" />
       <node concept="9PVaO" id="4PBxP34YM2x" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="." />
       </node>
     </node>
   </node>
@@ -1764,6 +1771,7 @@
     <property role="3GE5qa" value="report" />
     <property role="TrG5h" value="RequirementsReport" />
     <property role="WqcPg" value="Requirements for Flight Judgement" />
+    <node concept="1TaS0h" id="36cijvu66Ty" role="30Gjbi" />
     <node concept="1_0j5j" id="519ky_SmMTb" role="30Gjbj">
       <ref role="1_0j5g" node="519ky_SmMSS" resolve="requirementsReport" />
     </node>
@@ -1775,7 +1783,6 @@
       <property role="43dxY" value="mbeddr-prolog.ltx" />
       <property role="1jVoCx" value="article" />
     </node>
-    <node concept="1_07dB" id="5cV09KeG4gu" role="30Gjbi" />
   </node>
   <node concept="3pwaUo" id="3jNX2XuM62I">
     <property role="TrG5h" value="EffortsAndVisualizations" />
