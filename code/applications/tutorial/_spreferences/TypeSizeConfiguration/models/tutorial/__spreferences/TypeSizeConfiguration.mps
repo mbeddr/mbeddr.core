@@ -40,6 +40,8 @@
         <child id="3335993110369805710" name="specifications" index="MXv61" />
         <child id="8863019357864392147" name="sizeTType" index="2O5j3Q" />
         <child id="3813668170744198630" name="pointerDiffType" index="3kxMGo" />
+        <child id="7808382574383152989" name="intPtrType" index="3sasR9" />
+        <child id="7808382574383153001" name="uintPtrType" index="3sasRX" />
         <child id="5598157691785092886" name="vaList" index="3EM3Bk" />
         <child id="6658270785788810330" name="minFloatValue" index="3LaRDq" />
         <child id="6658270785788810339" name="maxDoubleValue" index="3LaRDz" />
@@ -230,6 +232,14 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
+    </node>
+    <node concept="1X9cn3" id="36cijvuamyx" role="3sasR9">
+      <property role="2caQfQ" value="false" />
+      <property role="2c7vTL" value="false" />
+    </node>
+    <node concept="26VBNf" id="36cijvuam$0" role="3sasRX">
+      <property role="2caQfQ" value="false" />
+      <property role="2c7vTL" value="false" />
     </node>
   </node>
 </model>

@@ -17,6 +17,7 @@
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
       <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
     </language>
     <language id="d6714220-402d-48cb-a4a2-88223c6257f6" name="com.mbeddr.cc.requirements.scenarios">
       <concept id="6514529288613812198" name="com.mbeddr.cc.requirements.scenarios.structure.UseCaseKind" flags="ng" index="4R1oT" />
@@ -113,9 +114,6 @@
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
-    <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL" />
-    </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
       <concept id="4400783559374052800" name="com.mbeddr.doc.structure.EmphFormattedText" flags="ng" index="28N2ik" />
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
@@ -139,6 +137,7 @@
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
       <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="3352153450711894224" name="configItems" index="2wNnkt" />
         <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
@@ -183,13 +182,6 @@
         <child id="6209595569797584864" name="cExpr" index="eGNQ_" />
         <child id="4143042878078342166" name="def" index="34rlYt" />
       </concept>
-      <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
-        <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
-      </concept>
-      <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
-    </language>
-    <language id="b9f5080f-7f6a-4d86-b994-77d4c982153a" name="com.mbeddr.cc.requirements.scenario2doc">
-      <concept id="5785245534400582270" name="com.mbeddr.cc.requirements.scenario2doc.structure.Scenarios2DocConfigItem" flags="ng" index="C5s1n" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="671216505796623802" name="com.mbeddr.core.base.structure.DefaultAssessmentSummary" flags="ng" index="qc_Tx">
@@ -199,9 +191,6 @@
       </concept>
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
-      </concept>
-      <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
-        <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
       <concept id="865293814733114043" name="com.mbeddr.core.base.structure.AssessmentContainer" flags="ng" index="3pwaUo">
         <child id="865293814733114045" name="assessments" index="3pwaUu" />
@@ -232,9 +221,6 @@
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
     </language>
-    <language id="7a52ca96-9053-41d2-ae13-8cee05f36698" name="com.mbeddr.cc.requirements.c2doc">
-      <concept id="5785245534400582270" name="com.mbeddr.cc.requirements.c2doc.structure.RequirementsC2DocConfigItem" flags="ng" index="C5s1o" />
-    </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
@@ -263,6 +249,7 @@
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
@@ -1762,17 +1749,21 @@
   <node concept="2SbYGP" id="519ky_SmMST">
     <property role="3GE5qa" value="report" />
     <property role="TrG5h" value="Config" />
+    <node concept="1_07dB" id="36cijvu66TG" role="2wNnkt" />
     <node concept="2SbYGw" id="519ky_SpGLu" role="Cbewh">
       <property role="TrG5h" value="temp" />
       <node concept="9PVaO" id="2vBUIEiugPA" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="." />
       </node>
     </node>
     <node concept="A7cYH" id="4PBxP34YM2w" role="A10yx">
+      <property role="TrG5h" value="img" />
       <node concept="9PVaO" id="4PBxP34YM2x" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="." />
       </node>
     </node>
   </node>
@@ -1791,14 +1782,7 @@
       <property role="43dxY" value="mbeddr-prolog.ltx" />
       <property role="1jVoCx" value="article" />
     </node>
-    <node concept="1_07dB" id="5cV09KeG4gu" role="30Gjbi" />
-  </node>
-  <node concept="2v9HqL" id="519ky_SmMTQ">
-    <node concept="2Q9Fgs" id="519ky_Sn93t" role="2Q9xDr">
-      <node concept="2Q9FjX" id="519ky_Sn93u" role="2Q9FjI" />
-    </node>
-    <node concept="C5s1o" id="519ky_Sn9eW" role="2Q9xDr" />
-    <node concept="C5s1n" id="519ky_SpEl5" role="2Q9xDr" />
+    <node concept="1TaS0h" id="36cijvu66Ty" role="30Gjbi" />
   </node>
   <node concept="3pwaUo" id="3jNX2XuM62I">
     <property role="TrG5h" value="EffortsAndVisualizations" />

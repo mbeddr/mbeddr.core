@@ -413,12 +413,15 @@
       <node concept="9PVaO" id="OnnrMNolpx" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="." />
       </node>
     </node>
     <node concept="A7cYH" id="4PBxP34YM2y" role="A10yx">
+      <property role="TrG5h" value="img" />
       <node concept="9PVaO" id="4PBxP34YM2z" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="." />
       </node>
     </node>
   </node>
