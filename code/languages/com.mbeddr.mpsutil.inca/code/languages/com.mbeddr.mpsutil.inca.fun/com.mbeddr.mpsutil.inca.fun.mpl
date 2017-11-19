@@ -16,10 +16,8 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">cd2909da-ecb4-49dc-b176-33e5c619e516(com.mbeddr.mpsutil.inca.gp)</dependency>
-        <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
         <dependency reexport="false">1bc49cec-41e6-417f-a12b-f0e0125494e9(com.mbeddr.mpsutil.inca.core#4530729936991344007)</dependency>
         <dependency reexport="false">44851301-9e9d-4b21-9608-3740a9f299a4(com.mbeddr.mpsutil.inca.gp#4530729936991344011)</dependency>
-        <dependency reexport="false">8d229d59-8739-4677-a240-23d8a9ef55b6(com.mbeddr.mpsutil.inca.analysis.runtime)</dependency>
         <dependency reexport="false">e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2(com.mbeddr.mpsutil.inca.data)</dependency>
       </dependencies>
       <languageVersions>
@@ -48,7 +46,6 @@
         <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-        <module reference="8d229d59-8739-4677-a240-23d8a9ef55b6(com.mbeddr.mpsutil.inca.analysis.runtime)" version="0" />
         <module reference="b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)" version="0" />
         <module reference="1bc49cec-41e6-417f-a12b-f0e0125494e9(com.mbeddr.mpsutil.inca.core#4530729936991344007)" version="0" />
         <module reference="7766a138-716a-422a-9c88-131459fb8d6a(com.mbeddr.mpsutil.inca.core.runtime)" version="0" />
@@ -169,7 +166,6 @@
   <runtime>
     <dependency reexport="false">22355160-0462-42a7-b4f6-c5057d6e9d54(com.mbeddr.mpsutil.inca.fun.runtime)</dependency>
     <dependency reexport="false">bc791f96-4749-4311-a6e4-241e47ca97f9(com.mbeddr.mpsutil.inca.core.util)</dependency>
-    <dependency reexport="false">8d229d59-8739-4677-a240-23d8a9ef55b6(com.mbeddr.mpsutil.inca.analysis.runtime)</dependency>
   </runtime>
   <extendedLanguages>
     <extendedLanguage>b802a056-92a2-4fbc-902e-f8e5004c331f(com.mbeddr.mpsutil.inca.core)</extendedLanguage>
