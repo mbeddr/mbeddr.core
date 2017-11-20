@@ -2,6 +2,7 @@
 <model ref="04e1f940-330e-483b-9a6a-1648b396a81c/r:37f50128-ed0b-4a8e-8eb6-28a9121943e9(com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>

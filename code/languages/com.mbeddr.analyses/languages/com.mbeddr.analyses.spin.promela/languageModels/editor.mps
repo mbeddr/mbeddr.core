@@ -4,7 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -714,8 +714,8 @@
   <node concept="24kQdi" id="49ppWwAfbw_">
     <property role="3GE5qa" value="type" />
     <ref role="1XX52x" to="ir22:GpUw9S7577" resolve="IPromelaType" />
-    <node concept="3F0A7n" id="49ppWwAfbWn" role="2wV5jI">
-      <ref role="1NtTu8" to="tpck:gOOYy9I" resolve="alias" />
+    <node concept="PMmxH" id="1kqI6ch_nlP" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="24G9CRyK0tB">

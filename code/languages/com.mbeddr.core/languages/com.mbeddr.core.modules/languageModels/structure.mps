@@ -2,6 +2,7 @@
 <model ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -1730,6 +1731,13 @@
     <property role="EcuMT" value="985808188054099612" />
     <property role="3GE5qa" value="functionrefs.closure" />
     <property role="TrG5h" value="IClosureLike" />
+  </node>
+  <node concept="PlHQZ" id="20agw21I6x2">
+    <property role="EcuMT" value="2308730328924579906" />
+    <property role="TrG5h" value="IImplementsKnownFunctionPrototype" />
+    <node concept="PrWs8" id="20agw21I6Ig" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
+    </node>
   </node>
 </model>
 

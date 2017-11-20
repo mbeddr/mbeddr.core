@@ -6,7 +6,7 @@
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
-    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
+    <import index="ntnz" ref="r:7f372397-146b-40d5-9f20-607974c4fed4(com.mbeddr.tutorial.documentation.ug._main)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -112,7 +112,7 @@
   <node concept="1_1swa" id="1mCCOvys5p0">
     <property role="yApLE" value="5" />
     <property role="TrG5h" value="E_MPSAndJava" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="5zu8XJxPfM$" role="1_0VJ0">
       <property role="TrG5h" value="MPS" />
       <property role="1_0VJr" value="JetBrains MPS and Java" />
@@ -433,7 +433,7 @@
   <node concept="1_1swa" id="1mCCOvyiECJ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_GccMakeAndGdb" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="5zu8XJxPfMf" role="1_0VJ0">
       <property role="TrG5h" value="GccMakeAndGdb" />
       <property role="1_0VJr" value="Gcc, Make and Gdb" />
@@ -715,7 +715,7 @@
   <node concept="1_1swa" id="1mCCOvyiIY_">
     <property role="yApLE" value="2" />
     <property role="TrG5h" value="B_Graphviz" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="2en8HnCsqc1" role="1_0VJ0">
       <property role="TrG5h" value="Graphviz" />
       <property role="1_0VJr" value="Graphviz" />
@@ -799,7 +799,7 @@
   <node concept="1_1swa" id="1mCCOvys4ZP">
     <property role="yApLE" value="4" />
     <property role="TrG5h" value="D_Mbeddr" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1mCCOvyhqb4" role="1_0VJ0">
       <property role="TrG5h" value="mbeddr" />
       <property role="1_0VJr" value="mbeddr" />
@@ -1672,7 +1672,7 @@
             <property role="1DKIkx" value="true" />
             <node concept="2Sb_l4" id="3DAECxFCHcV" role="2SbwM5">
               <property role="2Sb_kV" value="core/SettingsGlobalLibraries.png" />
-              <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
+              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="2en8HnCx1zQ" role="2SaI5j">
               <node concept="19SGf9" id="2en8HnCx1zR" role="OjmMu">
@@ -1710,7 +1710,7 @@
   <node concept="1_1swa" id="1mCCOvys41P">
     <property role="yApLE" value="3" />
     <property role="TrG5h" value="C_VerificationTool" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="2en8HnCx1H$" role="1_0VJ0">
       <property role="TrG5h" value="VerificationTools" />
       <property role="1_0VJr" value="Verification Tools" />
@@ -1771,7 +1771,7 @@
   <node concept="1_1swa" id="1OEOMsplgM2">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_Installation" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="45z$aXlRMDH" role="1DXQ57">
       <ref role="1_0j5g" node="1mCCOvyiECJ" resolve="A_GccMakeAndGdb" />
     </node>
@@ -1843,7 +1843,7 @@
   <node concept="1_1swa" id="45z$aXlT6vE">
     <property role="yApLE" value="6" />
     <property role="TrG5h" value="F_ChangingPath" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="45z$aXlT6Js" role="1_0VJ0">
       <property role="TrG5h" value="ChangingPath" />
       <property role="1_0VJr" value="Adding Tools to the System Path" />
@@ -2145,7 +2145,7 @@
   <node concept="1_1swa" id="1LxA8cJZyH7">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="G_ToolsAndVersions" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1LxA8cJZySu" role="1_0VJ0">
       <property role="TrG5h" value="ToolsAndVersions" />
       <property role="1_0VJr" value="Required Tools and Versions" />

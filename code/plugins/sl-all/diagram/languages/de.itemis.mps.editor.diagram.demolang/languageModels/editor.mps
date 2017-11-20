@@ -237,6 +237,9 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
+    </language>
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram">
       <concept id="6554619383005871291" name="de.itemis.mps.editor.diagram.structure.PortQuery" flags="ng" index="230Hcy">
         <child id="6554619383005871296" name="portFactory" index="230Hdp" />
@@ -1592,7 +1595,7 @@
               <node concept="3cpWsn" id="3GatLR3$k18" role="3cpWs9">
                 <property role="TrG5h" value="folder" />
                 <node concept="17QB3L" id="3GatLR3$k16" role="1tU5fm" />
-                <node concept="2OqwBi" id="3GatLR3$k19" role="33vP2m">
+                <node concept="2EnYce" id="1DVF61OWU8u" role="33vP2m">
                   <node concept="1yATlc" id="3GatLR3$k1a" role="2Oq$k0" />
                   <node concept="liA8E" id="5KX1OsEbaSj" role="2OqNvi">
                     <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />

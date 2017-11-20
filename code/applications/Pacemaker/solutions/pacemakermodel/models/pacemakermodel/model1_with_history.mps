@@ -4,6 +4,7 @@
   <languages>
     <use id="d4fa79fb-29ec-4908-bbeb-dbe5fc8500cd" name="history" version="0" />
     <use id="e462c189-8b5a-4c70-b928-a493585c0765" name="com.mbeddr.analyses.cbmc.statemachines.experimental" version="0" />
+    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <engage id="d4fa79fb-29ec-4908-bbeb-dbe5fc8500cd" name="history" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
@@ -105,6 +106,7 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
@@ -122,11 +124,16 @@
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
@@ -134,6 +141,7 @@
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
       <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
@@ -172,15 +180,6 @@
         <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
       </concept>
-      <concept id="7573444803550855448" name="com.mbeddr.analyses.cbmc.structure.AfterPThenQ" flags="ng" index="wHKrO" />
-      <concept id="7573444803550855446" name="com.mbeddr.analyses.cbmc.structure.VerificationConditionBase" flags="ng" index="wHKrU">
-        <property id="8330520303445148918" name="disabled" index="1aBf3y" />
-      </concept>
-      <concept id="7392194941658581812" name="com.mbeddr.analyses.cbmc.structure.BinaryVerificationCondition" flags="ng" index="xqp4m">
-        <child id="7392194941658581814" name="q" index="xqp4k" />
-        <child id="7392194941658581813" name="p" index="xqp4n" />
-      </concept>
-      <concept id="2609337213949315048" name="com.mbeddr.analyses.cbmc.structure.BeforePExistsQ" flags="ng" index="GBzQR" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
@@ -205,7 +204,6 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
@@ -219,8 +217,8 @@
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path_old" index="3N1Lgt" />
       </concept>
     </language>
     <language id="d4fa79fb-29ec-4908-bbeb-dbe5fc8500cd" name="history">
@@ -262,6 +260,13 @@
       </concept>
       <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
+      </concept>
+    </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpW">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="e865cad2-7cc8-437a-951a-665bcbcb8b1a" name="com.mbeddr.cc.requirements">
@@ -420,11 +425,24 @@
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
       <concept id="4375898003726285487" name="com.mbeddr.core.expressions.structure.PreIncrementExpression" flags="ng" index="3TM6Ez" />
     </language>
+    <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
+      <concept id="7573444803550855448" name="com.mbeddr.analyses.base.verification_conditions.structure.AfterPThenQ" flags="ng" index="wHKrO" />
+      <concept id="7573444803550855446" name="com.mbeddr.analyses.base.verification_conditions.structure.VerificationConditionBase" flags="ng" index="wHKrU">
+        <property id="4723851297114348676" name="documentation" index="19ME4Y" />
+        <property id="8330520303445148918" name="disabled" index="1aBf3y" />
+      </concept>
+      <concept id="7392194941658581812" name="com.mbeddr.analyses.base.verification_conditions.structure.BinaryVerificationCondition" flags="ng" index="xqp4m">
+        <child id="7392194941658581814" name="q" index="xqp4k" />
+        <child id="7392194941658581813" name="p" index="xqp4n" />
+      </concept>
+      <concept id="2609337213949315048" name="com.mbeddr.analyses.base.verification_conditions.structure.BeforeQExistsP" flags="ng" index="GBzQR" />
+    </language>
   </registry>
   <node concept="2v9HqL" id="9zybxv$FXl">
     <property role="3GE5qa" value="" />
     <node concept="29Nb31" id="3fuiA4Lz_Tb" role="2ePNbc">
       <property role="TrG5h" value="bla" />
+      <ref role="3oK8_y" node="5V9QM6osavO" resolve="portable" />
       <node concept="2v9HqM" id="3fuiA4Lz_To" role="2eOfOg">
         <ref role="2v9HqP" node="9zybxv$G07" resolve="DDDSystem" />
       </node>
@@ -440,12 +458,25 @@
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3I8uaA" value="" />
+      <node concept="3abb7c" id="5V9QM6osavL" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="5V9QM6osavM" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="5V9QM6osavN" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="5V9QM6osavO" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
     <node concept="3yF7LM" id="9zybxv$FXs" role="2Q9xDr">
       <property role="3yF7Mc" value="true" />
     </node>
     <node concept="2eOfOl" id="3fuiA4LztHR" role="2ePNbc">
       <property role="TrG5h" value="test" />
+      <ref role="3oK8_y" node="5V9QM6osavO" resolve="portable" />
       <node concept="2v9HqM" id="3fuiA4LztIb" role="2eOfOg">
         <ref role="2v9HqP" node="4sYKtP1i6a8" resolve="TestAdapter" />
       </node>
@@ -477,7 +508,15 @@
     <node concept="2SbYGw" id="9zybxv$FYq" role="Cbewh">
       <property role="TrG5h" value="temp" />
       <node concept="9PVaO" id="6j9shswV7kC" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="source_gen" />
+      </node>
+    </node>
+    <node concept="A7cYH" id="5V9QM6osavT" role="A10yx">
+      <node concept="9PVaO" id="5V9QM6osavU" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
   </node>
@@ -2575,8 +2614,9 @@
             <node concept="3XISUE" id="9zybxv$G8H" role="3XIRFZ" />
             <node concept="3XISUE" id="9zybxv$G8R" role="3XIRFZ" />
             <node concept="3XISUE" id="5EA63UsER70" role="3XIRFZ" />
-            <node concept="wHKrO" id="9zybxv$G8S" role="3XIRFZ">
-              <property role="1aBf3y" value="true" />
+            <node concept="wHKrO" id="5V9QM6osavX" role="3XIRFZ">
+              <property role="1aBf3y" value="false" />
+              <property role="19ME4Y" value="after event 'P' occurs, from the next step on, the condition 'Q' should be true forever" />
               <node concept="3Tl9Jr" id="9zybxv$G8T" role="xqp4n">
                 <node concept="3TlMh9" id="9zybxv$G8U" role="3TlMhJ">
                   <property role="2hmy$m" value="1" />
@@ -2628,19 +2668,11 @@
                   </node>
                 </node>
               </node>
-              <node concept="1z9TsT" id="72i$66ePOzD" role="lGtFl">
-                <node concept="OjmMv" id="72i$66ePOzE" role="1w35rA">
-                  <node concept="19SGf9" id="72i$66ePOzF" role="OjmMu">
-                    <node concept="19SUe$" id="72i$66ePOzG" role="19SJt6">
-                      <property role="19SUeA" value="Assures that the machine is not pacing more often than is specified by URI" />
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
             <node concept="3XISUE" id="9zybxv$G9g" role="3XIRFZ" />
-            <node concept="wHKrO" id="9zybxv$G9h" role="3XIRFZ">
-              <property role="1aBf3y" value="true" />
+            <node concept="wHKrO" id="5V9QM6osavY" role="3XIRFZ">
+              <property role="1aBf3y" value="false" />
+              <property role="19ME4Y" value="after event 'P' occurs, from the next step on, the condition 'Q' should be true forever" />
               <node concept="3Tl9Jr" id="9zybxv$G9i" role="xqp4n">
                 <node concept="3TlMh9" id="9zybxv$G9j" role="3TlMhJ">
                   <property role="2hmy$m" value="1" />
@@ -2658,19 +2690,11 @@
                   </node>
                 </node>
               </node>
-              <node concept="1z9TsT" id="72i$66ePO_H" role="lGtFl">
-                <node concept="OjmMv" id="72i$66ePO_I" role="1w35rA">
-                  <node concept="19SGf9" id="72i$66ePO_J" role="OjmMu">
-                    <node concept="19SUe$" id="72i$66ePO_K" role="19SJt6">
-                      <property role="19SUeA" value="Assures that the machine paces often enough" />
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
             <node concept="3XISUE" id="72i$66ePO_P" role="3XIRFZ" />
-            <node concept="wHKrO" id="9zybxv$G9q" role="3XIRFZ">
+            <node concept="wHKrO" id="5V9QM6osavZ" role="3XIRFZ">
               <property role="1aBf3y" value="false" />
+              <property role="19ME4Y" value="after event 'P' occurs, from the next step on, the condition 'Q' should be true forever" />
               <node concept="3Tl9Jr" id="9zybxv$G9r" role="xqp4n">
                 <node concept="3TlMh9" id="9zybxv$G9s" role="3TlMhJ">
                   <property role="2hmy$m" value="0" />
@@ -2697,21 +2721,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="1z9TsT" id="72i$66ePOCj" role="lGtFl">
-                <node concept="OjmMv" id="72i$66ePOCk" role="1w35rA">
-                  <node concept="19SGf9" id="72i$66ePOCl" role="OjmMu">
-                    <node concept="19SUe$" id="72i$66ePOCm" role="19SJt6">
-                      <property role="19SUeA" value="Assures that the atria are paced timely" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3HmicQ" id="LrcV1Xkx6H" role="lGtFl">
-                <node concept="3HmicZ" id="LrcV1Xkx6I" role="Fanlf" />
-                <node concept="3HmcO9" id="LrcV1XkCZa" role="Fanle">
-                  <ref role="3HmaCj" node="9zybxv$FYP" resolve="atrialPacing" />
-                </node>
-              </node>
             </node>
             <node concept="3XISUE" id="9zybxv$G9_" role="3XIRFZ" />
             <node concept="3XISUE" id="72i$66ePOCr" role="3XIRFZ">
@@ -2726,28 +2735,20 @@
               </node>
             </node>
             <node concept="3XISUE" id="9zybxv$G9A" role="3XIRFZ" />
-            <node concept="GBzQR" id="9zybxv$G9B" role="3XIRFZ">
-              <property role="1aBf3y" value="true" />
-              <node concept="3Tl9Jr" id="9zybxv$G9C" role="xqp4k">
-                <node concept="3ZVu4v" id="9zybxv$G9D" role="3TlMhJ">
-                  <ref role="3ZVs_2" node="9zybxv$G65" resolve="LRI" />
-                </node>
-                <node concept="1WKC1E" id="9zybxv$G9E" role="3TlMhI" />
-              </node>
+            <node concept="GBzQR" id="5V9QM6osaw0" role="3XIRFZ">
+              <property role="1aBf3y" value="false" />
+              <property role="19ME4Y" value="before event 'P' occurs first time, condition 'Q' must be true at least once" />
               <node concept="1WPq8x" id="9zybxv$G9F" role="xqp4n">
                 <ref role="1WPq8z" node="9zybxv$G6i" resolve="Invariant" />
                 <node concept="3ZVu4v" id="9zybxv$G9G" role="1WPq8y">
                   <ref role="3ZVs_2" node="9zybxv$G7V" resolve="ddd" />
                 </node>
               </node>
-              <node concept="1z9TsT" id="72i$66ePOIm" role="lGtFl">
-                <node concept="OjmMv" id="72i$66ePOIn" role="1w35rA">
-                  <node concept="19SGf9" id="72i$66ePOIo" role="OjmMu">
-                    <node concept="19SUe$" id="72i$66ePOIp" role="19SJt6">
-                      <property role="19SUeA" value="The machine returns into the initial state. This makes it possible \nto conclude, that the assertions above always hold, during every\nheart cycle, by induction!" />
-                    </node>
-                  </node>
+              <node concept="3Tl9Jr" id="9zybxv$G9C" role="xqp4k">
+                <node concept="3ZVu4v" id="9zybxv$G9D" role="3TlMhJ">
+                  <ref role="3ZVs_2" node="9zybxv$G65" resolve="LRI" />
                 </node>
+                <node concept="1WKC1E" id="9zybxv$G9E" role="3TlMhI" />
               </node>
             </node>
             <node concept="3XISUE" id="9zybxv$G9H" role="3XIRFZ" />

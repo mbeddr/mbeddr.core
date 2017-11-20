@@ -114,7 +114,7 @@
                   <ref role="3cqZAo" node="5fn4FV$bIsC" resolve="mock" />
                 </node>
                 <node concept="3Tsc0h" id="5fn4FV$bItd" role="2OqNvi">
-                  <ref role="3TtcxE" to="v7ag:5fn4FV$9N5o" />
+                  <ref role="3TtcxE" to="v7ag:5fn4FV$9N5o" resolve="contents" />
                 </node>
               </node>
               <node concept="TSZUe" id="5fn4FV$bItD" role="2OqNvi">

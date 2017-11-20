@@ -6,9 +6,7 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <languageVersions>
-    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
-  </languageVersions>
+  <languageVersions />
   <dependencyVersions>
     <module reference="670160fe-66be-49fe-956f-aaa840493c4b(com.mbeddr.mpsutil.inca.gp.runtime)" version="0" />
   </dependencyVersions>

@@ -128,7 +128,7 @@
                 <ref role="3cqZAo" node="6LfBX8YgMK2" resolve="n" />
               </node>
               <node concept="3Tsc0h" id="6LfBX8YgNjc" role="2OqNvi">
-                <ref role="3TtcxE" to="d04j:$6jtTwUXNq" />
+                <ref role="3TtcxE" to="d04j:$6jtTwUXNq" resolve="childTreeNodes" />
               </node>
             </node>
             <node concept="TSZUe" id="6LfBX8YgQ49" role="2OqNvi">

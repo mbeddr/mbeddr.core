@@ -6,9 +6,7 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <languageVersions>
-    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
-  </languageVersions>
+  <languageVersions />
   <dependencyVersions>
     <module reference="82e207b8-5675-4dc6-8a49-c20a38dccf66(de.slisson.mps.editor.celllayout)" version="0" />
   </dependencyVersions>

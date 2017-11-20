@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="" namespace="com.mbeddr.mpsutil.spreferences#93055092064275899" uuid="133fc71e-c76b-4695-a2eb-9812b3860efe">
+    <generator namespace="com.mbeddr.mpsutil.spreferences#4354378109086982946" uuid="133fc71e-c76b-4695-a2eb-9812b3860efe">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -37,6 +37,7 @@
         <language slang="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" version="0" />
         <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="0" />
         <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="8" />
+        <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
       </languageVersions>
       <dependencyVersions>
@@ -49,7 +50,7 @@
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" version="0" />
         <module reference="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1(com.mbeddr.mpsutil.spreferences)" version="0" />
-        <module reference="133fc71e-c76b-4695-a2eb-9812b3860efe(com.mbeddr.mpsutil.spreferences#93055092064275899)" version="0" />
+        <module reference="133fc71e-c76b-4695-a2eb-9812b3860efe(com.mbeddr.mpsutil.spreferences#4354378109086982946)" version="0" />
         <module reference="e78f91af-08a8-4a7a-bed6-b22739ed069a(com.mbeddr.mpsutil.spreferences.runtime)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" version="0" />
@@ -66,7 +67,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="133fc71e-c76b-4695-a2eb-9812b3860efe(com.mbeddr.mpsutil.spreferences#93055092064275899)" />
+            <generator generatorUID="133fc71e-c76b-4695-a2eb-9812b3860efe(com.mbeddr.mpsutil.spreferences#4354378109086982946)" />
             <external-mapping>
               <mapping-node modelUID="133fc71e-c76b-4695-a2eb-9812b3860efe/r:f1ed5fd1-b1cf-470a-9824-a11020c850ca(com.mbeddr.mpsutil.spreferences#93055092064275899/com.mbeddr.mpsutil.spreferences.generator.template.main@generator)" nodeID="93055092064275900" />
             </external-mapping>
@@ -109,7 +110,8 @@
     <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="0" />
     <language slang="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" version="2" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="8" />
-    <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="5" />
+    <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="6" />
+    <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="1" />
   </languageVersions>

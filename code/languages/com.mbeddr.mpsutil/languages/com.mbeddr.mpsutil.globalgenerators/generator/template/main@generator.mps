@@ -174,15 +174,15 @@
                       <node concept="2OqwBi" id="5IjJXlXZGHW" role="2Oq$k0">
                         <node concept="30H73N" id="5IjJXlXZGD_" role="2Oq$k0" />
                         <node concept="3TrEf2" id="5IjJXlXZGYj" role="2OqNvi">
-                          <ref role="3Tt5mk" to="wo4c:5IjJXlXZmNS" />
+                          <ref role="3Tt5mk" to="wo4c:5IjJXlXZmNS" resolve="query" />
                         </node>
                       </node>
                       <node concept="3TrEf2" id="5IjJXlXZHXg" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:gyVODHa" />
+                        <ref role="3Tt5mk" to="tpee:gyVODHa" resolve="body" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="5IjJXlXZJ8g" role="2OqNvi">
-                      <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                      <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
                     </node>
                   </node>
                 </node>

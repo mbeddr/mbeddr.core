@@ -2,7 +2,7 @@
 <model ref="r:717da79d-5632-4537-9680-813308745bcf(com.mbeddr.doc.gen_xhtml.defaults)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
-    <use id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml" version="0" />
+    <use id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml" version="1" />
   </languages>
   <imports />
   <registry>
@@ -632,6 +632,11 @@
     <node concept="3zOSV2" id="QRmqzIt8LW" role="3zO_yG">
       <node concept="3zO__Y" id="QRmqzIt8Nx" role="3zO_yJ">
         <property role="3zO_yB" value=".sectRef" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="t5DIOhLS0T" role="3zO_yG">
+      <node concept="3zO__Y" id="t5DIOhLS3Q" role="3zO_yJ">
+        <property role="3zO_yB" value=".docRef" />
       </node>
     </node>
     <node concept="3zOSV2" id="QRmqzIt8RZ" role="3zO_yG">

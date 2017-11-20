@@ -7,7 +7,7 @@
     <use id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded" version="-1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
   </languages>
   <imports />
@@ -94,7 +94,7 @@
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
-      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.EmulatedInterruptKind" flags="ng" index="3_UBHe" />
+      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.DefaultInterruptKind" flags="ng" index="3_UBHe" />
       <concept id="9172009453269230746" name="com.mbeddr.core.embedded.structure.InterruptConfigItem" flags="ng" index="3_UEaq">
         <child id="9172009453269286214" name="kind" index="3_UBH6" />
       </concept>
@@ -106,7 +106,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1156234966388" name="shortDescription" index="OYnhT" />
-        <property id="1156235010670" name="alias" index="OYydz" />
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -201,12 +200,10 @@
           <node concept="3XIRFW" id="5atDsHNhyoV" role="1_amYn">
             <node concept="1_9egQ" id="5atDsHNhyoW" role="3XIRFZ">
               <property role="OYnhT" value="0" />
-              <property role="OYydz" value="0" />
               <property role="3GE5qa" value="0" />
               <node concept="3DXrvS" id="5atDsHNhyoX" role="1_9egR">
                 <node concept="3TlMhd" id="5atDsHNhyoY" role="3D7$A5">
                   <property role="OYnhT" value="0" />
-                  <property role="OYydz" value="0" />
                   <property role="3GE5qa" value="0" />
                 </node>
               </node>
@@ -268,7 +265,6 @@
             <node concept="3XIRlf" id="4m$eX95rMX_" role="3XIRFZ">
               <property role="TrG5h" value="aName_1397921554532" />
               <property role="OYnhT" value="0" />
-              <property role="OYydz" value="0" />
               <property role="3GE5qa" value="0" />
               <property role="3emlUp" value="true" />
               <property role="8PNL8" value="false" />
@@ -276,7 +272,6 @@
                 <property role="2caQfQ" value="true" />
                 <property role="2c7vTL" value="true" />
                 <property role="OYnhT" value="0" />
-                <property role="OYydz" value="0" />
                 <property role="3GE5qa" value="0" />
               </node>
               <node concept="3TlMh9" id="4m$eX95rRbI" role="3XIe9u">
@@ -287,13 +282,11 @@
             <node concept="3XIRlf" id="4m$eX95rMXy" role="3XIRFZ">
               <property role="TrG5h" value="aName_1397921554520" />
               <property role="OYnhT" value="0" />
-              <property role="OYydz" value="0" />
               <property role="3GE5qa" value="0" />
               <property role="3emlUp" value="false" />
               <property role="8PNL8" value="true" />
               <node concept="3ZVu4v" id="4m$eX95rMXz" role="3XIe9u">
                 <property role="OYnhT" value="0" />
-                <property role="OYydz" value="0" />
                 <property role="3GE5qa" value="0" />
                 <ref role="3ZVs_2" node="4m$eX95rMX_" resolve="aName_1397921554532" />
               </node>
@@ -301,7 +294,6 @@
                 <property role="2caQfQ" value="true" />
                 <property role="2c7vTL" value="true" />
                 <property role="OYnhT" value="0" />
-                <property role="OYydz" value="0" />
                 <property role="3GE5qa" value="0" />
               </node>
             </node>

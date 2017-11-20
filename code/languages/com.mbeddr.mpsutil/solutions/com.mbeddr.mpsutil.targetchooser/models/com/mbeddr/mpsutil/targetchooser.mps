@@ -858,6 +858,27 @@
         <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
     </node>
+    <node concept="2tJIrI" id="5nMUAz4WCfd" role="jymVt" />
+    <node concept="3clFb_" id="5nMUAz4WDKA" role="jymVt">
+      <property role="TrG5h" value="getPreferredFocusedComponent" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="2AHcQZ" id="5nMUAz4WDKB" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="5nMUAz4WDKC" role="3clF47">
+        <node concept="3cpWs6" id="5nMUAz4WDKD" role="3cqZAp">
+          <node concept="1rXfSq" id="5nMUAz4WOcc" role="3cqZAk">
+            <ref role="37wK5l" node="72neNfy7reN" resolve="getTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5nMUAz4WDKF" role="1B3o_S" />
+      <node concept="3uibUv" id="5nMUAz4WDKG" role="3clF45">
+        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5nMUAz4WCYc" role="jymVt" />
     <node concept="2tJIrI" id="72neNfy7prp" role="jymVt" />
     <node concept="3clFb_" id="72neNfy7reN" role="jymVt">
       <property role="TrG5h" value="getTree" />
@@ -5258,25 +5279,17 @@
                       <node concept="37vLTw" id="2Nt6pro9jmr" role="37wK5m">
                         <ref role="3cqZAo" node="2Nt6pro9jmi" resolve="rootModelDescriptor" />
                       </node>
-                      <node concept="2YIFZM" id="2Nt6pro9jrV" role="37wK5m">
-                        <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-                        <ref role="37wK5l" to="18ew:~NameUtil.namespaceFromLongName(java.lang.String):java.lang.String" resolve="namespaceFromLongName" />
-                        <node concept="2YIFZM" id="2Nt6pro9jrY" role="37wK5m">
-                          <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-                          <ref role="37wK5l" to="w1kc:~SModelStereotype.withoutStereotype(java.lang.String):java.lang.String" resolve="withoutStereotype" />
-                          <node concept="2OqwBi" id="2Nt6pro9jmu" role="37wK5m">
-                            <node concept="2OqwBi" id="2Nt6pro9js2" role="2Oq$k0">
-                              <node concept="37vLTw" id="2Nt6pro9js1" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2Nt6pro9jmi" resolve="rootModelDescriptor" />
-                              </node>
-                              <node concept="liA8E" id="2Nt6pro9js3" role="2OqNvi">
-                                <ref role="37wK5l" to="mhbf:~SModel.getReference():org.jetbrains.mps.openapi.model.SModelReference" resolve="getReference" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="2Nt6pro9jmw" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SModelReference.getModelName():java.lang.String" resolve="getModelName" />
-                            </node>
+                      <node concept="2OqwBi" id="7AkySkb7C_" role="37wK5m">
+                        <node concept="2OqwBi" id="2Nt6pro9jmu" role="2Oq$k0">
+                          <node concept="37vLTw" id="2Nt6pro9js1" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2Nt6pro9jmi" resolve="rootModelDescriptor" />
                           </node>
+                          <node concept="liA8E" id="2Nt6pro9jmw" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="7AkySkb88q" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SModelName.getNamespace():java.lang.String" resolve="getNamespace" />
                         </node>
                       </node>
                     </node>

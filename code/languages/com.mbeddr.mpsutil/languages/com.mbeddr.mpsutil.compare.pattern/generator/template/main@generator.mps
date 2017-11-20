@@ -1110,7 +1110,7 @@
                     <node concept="2OqwBi" id="2cknNXbNf9I" role="10QFUP">
                       <node concept="355D3s" id="2cknNXbDJU4" role="2Oq$k0">
                         <ref role="355D3t" to="tpee:fz7wK6G" resolve="BaseMethodCall" />
-                        <ref role="355D3u" to="tpck:gOOYy9I" resolve="alias" />
+                        <ref role="355D3u" to="tpck:hnGE5uv" resolve="virtualPackage" />
                         <node concept="1ZhdrF" id="2cknNXbDJU5" role="lGtFl">
                           <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2644386474302386080/2644386474302386081" />
                           <property role="2qtEX8" value="conceptDeclaration" />

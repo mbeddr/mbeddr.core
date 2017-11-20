@@ -94,7 +94,7 @@
                 </node>
               </node>
               <node concept="3TrEf2" id="3GatLR31jYK" role="2OqNvi">
-                <ref role="3Tt5mk" to="2qld:3GatLR314kP" />
+                <ref role="3Tt5mk" to="2qld:3GatLR314kP" resolve="shape" />
               </node>
             </node>
             <node concept="2oxUTD" id="3GatLR31kR5" role="2OqNvi">

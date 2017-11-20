@@ -29,7 +29,6 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
-    <import index="bzg8" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime.impl(MPS.Core/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="6lvu" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellMenu(MPS.Editor/)" />
     <import index="6lq" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.impl.cellMenu(MPS.Editor/)" />
@@ -2606,11 +2605,7 @@
                       <node concept="37vLTw" id="4UuUKLR25N0" role="37wK5m">
                         <ref role="3cqZAo" node="2CFqHq6q0uS" resolve="myLink" />
                       </node>
-                      <node concept="2ShNRf" id="4UuUKLR26hL" role="37wK5m">
-                        <node concept="1pGfFk" id="4UuUKLR28Vs" role="2ShVmc">
-                          <ref role="37wK5l" to="bzg8:~CheckingNodeContext.&lt;init&gt;()" resolve="CheckingNodeContext" />
-                        </node>
-                      </node>
+                      <node concept="10Nm6u" id="6QsQiTDQ3RN" role="37wK5m" />
                     </node>
                   </node>
                 </node>

@@ -212,7 +212,7 @@
                               <node concept="2OqwBi" id="2bng37t3fI3" role="2Oq$k0">
                                 <node concept="30H73N" id="2bng37t3fI4" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="2bng37t3fI5" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="sxyo:2bng37t1yrs" />
+                                  <ref role="3Tt5mk" to="sxyo:2bng37t1yrs" resolve="key" />
                                 </node>
                               </node>
                               <node concept="2qgKlT" id="2bng37t3fI6" role="2OqNvi">
@@ -236,7 +236,7 @@
                               <node concept="2OqwBi" id="2bng37t3fId" role="2Oq$k0">
                                 <node concept="30H73N" id="2bng37t3fIe" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="2bng37t3fIf" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="sxyo:2bng37t1yrs" />
+                                  <ref role="3Tt5mk" to="sxyo:2bng37t1yrs" resolve="key" />
                                 </node>
                               </node>
                               <node concept="3TrcHB" id="2bng37t3fIg" role="2OqNvi">
@@ -345,7 +345,7 @@
                               <node concept="2OqwBi" id="7Ssz$kYQJmg" role="2Oq$k0">
                                 <node concept="30H73N" id="7Ssz$kYQJmh" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="7Ssz$kYQKv0" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="tnjx:7Ssz$kYbmEd" />
+                                  <ref role="3Tt5mk" to="tnjx:7Ssz$kYbmEd" resolve="key" />
                                 </node>
                               </node>
                               <node concept="2qgKlT" id="7Ssz$kYQKRN" role="2OqNvi">
@@ -372,19 +372,19 @@
                                     <node concept="2OqwBi" id="5YIFEcouSZ4" role="2Oq$k0">
                                       <node concept="30H73N" id="5YIFEcouSZ5" role="2Oq$k0" />
                                       <node concept="3TrEf2" id="2F_EZZy8gu5" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="tnjx:7Ssz$kYbmEd" />
+                                        <ref role="3Tt5mk" to="tnjx:7Ssz$kYbmEd" resolve="key" />
                                       </node>
                                     </node>
                                     <node concept="3TrEf2" id="2F_EZZy8hvn" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="tnjx:7Ssz$kYb9jR" />
+                                      <ref role="3Tt5mk" to="tnjx:7Ssz$kYb9jR" resolve="richDefault" />
                                     </node>
                                   </node>
                                   <node concept="3TrEf2" id="2F_EZZy8isk" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="spci:2UbT3C4cXXD" />
+                                    <ref role="3Tt5mk" to="spci:2UbT3C4cXXD" resolve="text" />
                                   </node>
                                 </node>
                                 <node concept="3Tsc0h" id="5YIFEcouSZ7" role="2OqNvi">
-                                  <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" />
+                                  <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
                                 </node>
                               </node>
                             </node>
@@ -454,7 +454,7 @@
                           <node concept="3clFbF" id="7Ssz$kYQNJ5" role="3cqZAp">
                             <node concept="2OqwBi" id="7Ssz$kYQNJ0" role="3clFbG">
                               <node concept="3Tsc0h" id="7Ssz$kYQNJ3" role="2OqNvi">
-                                <ref role="3TtcxE" to="tnjx:7Ssz$kYl4OE" />
+                                <ref role="3TtcxE" to="tnjx:7Ssz$kYl4OE" resolve="expressions" />
                               </node>
                               <node concept="30H73N" id="7Ssz$kYQNJ4" role="2Oq$k0" />
                             </node>

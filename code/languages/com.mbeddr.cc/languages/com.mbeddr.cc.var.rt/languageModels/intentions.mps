@@ -82,7 +82,7 @@
             <node concept="2OqwBi" id="6W8yq39o$xR" role="2Oq$k0">
               <node concept="2Sf5sV" id="6W8yq39o$xy" role="2Oq$k0" />
               <node concept="3Tsc0h" id="6W8yq39o$xX" role="2OqNvi">
-                <ref role="3TtcxE" to="yvrq:7H6_Qip5U2m" />
+                <ref role="3TtcxE" to="yvrq:7H6_Qip5U2m" resolve="options" />
               </node>
             </node>
             <node concept="WFELt" id="6W8yq39o$yp" role="2OqNvi">
@@ -116,7 +116,7 @@
             <node concept="2OqwBi" id="6W8yq39o$y_" role="2Oq$k0">
               <node concept="2Sf5sV" id="6W8yq39o$yA" role="2Oq$k0" />
               <node concept="3Tsc0h" id="6W8yq39o$yB" role="2OqNvi">
-                <ref role="3TtcxE" to="yvrq:7H6_Qip5U2m" />
+                <ref role="3TtcxE" to="yvrq:7H6_Qip5U2m" resolve="options" />
               </node>
             </node>
             <node concept="WFELt" id="6W8yq39o$yC" role="2OqNvi">

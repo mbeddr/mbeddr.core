@@ -323,7 +323,6 @@
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -3531,12 +3530,15 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbC" id="6t992PQ42XD" role="3clFbw">
-            <node concept="38Zlrr" id="6t992PQ42xf" role="3uHU7B" />
-            <node concept="3HcIyF" id="6t992PQ43gB" role="3uHU7w">
-              <ref role="3HcIyG" to="x27k:3_CPcn39dht" resolve="ArgumentKind" />
-              <node concept="3HdYuL" id="6t992PQ43gC" role="3Hdvt7">
-                <ref role="3HdYuM" to="x27k:3_CPcn39dwy" />
+          <node concept="2OqwBi" id="3aeYVP5k_TN" role="3clFbw">
+            <node concept="38Zlrr" id="6t992PQ42xf" role="2Oq$k0" />
+            <node concept="liA8E" id="3aeYVP5kAkJ" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="3HcIyF" id="3aeYVP5kAEb" role="37wK5m">
+                <ref role="3HcIyG" to="x27k:3_CPcn39dht" resolve="ArgumentKind" />
+                <node concept="3HdYuL" id="3aeYVP5kAEc" role="3Hdvt7">
+                  <ref role="3HdYuM" to="x27k:3_CPcn39dwy" />
+                </node>
               </node>
             </node>
           </node>
@@ -3761,12 +3763,15 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbC" id="6t992PQ47ut" role="3clFbw">
-            <node concept="38Zlrr" id="6t992PQ47uu" role="3uHU7B" />
-            <node concept="3HcIyF" id="6t992PQ47uv" role="3uHU7w">
-              <ref role="3HcIyG" to="x27k:3_CPcn39dht" resolve="ArgumentKind" />
-              <node concept="3HdYuL" id="6t992PQ47uw" role="3Hdvt7">
-                <ref role="3HdYuM" to="x27k:3_CPcn39dwy" />
+          <node concept="2OqwBi" id="3aeYVP5k0Pt" role="3clFbw">
+            <node concept="38Zlrr" id="6t992PQ47uu" role="2Oq$k0" />
+            <node concept="liA8E" id="3aeYVP5k1gp" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="3HcIyF" id="6t992PQ47uv" role="37wK5m">
+                <ref role="3HcIyG" to="x27k:3_CPcn39dht" resolve="ArgumentKind" />
+                <node concept="3HdYuL" id="6t992PQ47uw" role="3Hdvt7">
+                  <ref role="3HdYuM" to="x27k:3_CPcn39dwy" />
+                </node>
               </node>
             </node>
           </node>
@@ -3995,12 +4000,15 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbC" id="1fLWRClraqJ" role="3clFbw">
-            <node concept="38Zlrr" id="1fLWRClraqK" role="3uHU7B" />
-            <node concept="3HcIyF" id="1fLWRClraqL" role="3uHU7w">
-              <ref role="3HcIyG" to="x27k:3_CPcn39dht" resolve="ArgumentKind" />
-              <node concept="3HdYuL" id="1fLWRClraqM" role="3Hdvt7">
-                <ref role="3HdYuM" to="x27k:3_CPcn39dwy" />
+          <node concept="2OqwBi" id="3aeYVP5kec4" role="3clFbw">
+            <node concept="38Zlrr" id="1fLWRClraqK" role="2Oq$k0" />
+            <node concept="liA8E" id="3aeYVP5keAR" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="3HcIyF" id="1fLWRClraqL" role="37wK5m">
+                <ref role="3HcIyG" to="x27k:3_CPcn39dht" resolve="ArgumentKind" />
+                <node concept="3HdYuL" id="1fLWRClraqM" role="3Hdvt7">
+                  <ref role="3HdYuM" to="x27k:3_CPcn39dwy" />
+                </node>
               </node>
             </node>
           </node>
@@ -4227,12 +4235,15 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbC" id="1nR_M39PVsQ" role="3clFbw">
-            <node concept="38Zlrr" id="1nR_M39PVsR" role="3uHU7B" />
-            <node concept="3HcIyF" id="1nR_M39PVsS" role="3uHU7w">
-              <ref role="3HcIyG" to="x27k:3_CPcn39dht" resolve="ArgumentKind" />
-              <node concept="3HdYuL" id="1nR_M39PVsT" role="3Hdvt7">
-                <ref role="3HdYuM" to="x27k:3_CPcn39dwy" />
+          <node concept="2OqwBi" id="3aeYVP5kfLW" role="3clFbw">
+            <node concept="38Zlrr" id="1nR_M39PVsR" role="2Oq$k0" />
+            <node concept="liA8E" id="3aeYVP5kgcS" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="3HcIyF" id="3aeYVP5kgyk" role="37wK5m">
+                <ref role="3HcIyG" to="x27k:3_CPcn39dht" resolve="ArgumentKind" />
+                <node concept="3HdYuL" id="3aeYVP5kgyl" role="3Hdvt7">
+                  <ref role="3HdYuM" to="x27k:3_CPcn39dwy" />
+                </node>
               </node>
             </node>
           </node>
@@ -4803,7 +4814,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1PgB_6" id="2Y6jbdkdYFV" role="2OqNvi" />
+                <node concept="3YRAZt" id="5ZSJngDQUxF" role="2OqNvi" />
               </node>
             </node>
             <node concept="3clFbF" id="2Y6jbdkdYFW" role="3cqZAp">

@@ -240,7 +240,7 @@
   </node>
   <node concept="1M2fIO" id="SwwM9UHwwP">
     <property role="3GE5qa" value="isr" />
-    <ref role="1M2myG" to="nbyu:SwwM9UHwwI" resolve="Isr" />
+    <ref role="1M2myG" to="nbyu:SwwM9UHwwI" resolve="ISR" />
     <node concept="1N5Pfh" id="SwwM9UHwwQ" role="1Mr941">
       <ref role="1N5Vy1" to="nbyu:SwwM9UHwwO" resolve="interrupt" />
       <node concept="Bn3R3" id="6CpO2H4rfWC" role="Bn3R6">

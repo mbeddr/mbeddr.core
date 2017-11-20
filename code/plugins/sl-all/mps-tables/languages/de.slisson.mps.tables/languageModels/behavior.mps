@@ -231,7 +231,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -1840,11 +1839,8 @@
           <node concept="3clFbS" id="5TlQvVU$tg" role="3clFbx">
             <node concept="3clFbF" id="5TlQvVU$R8" role="3cqZAp">
               <node concept="37vLTI" id="5TlQvVU$RZ" role="3clFbG">
-                <node concept="2OqwBi" id="7cBI1LfVufI" role="37vLTx">
-                  <node concept="35c_gC" id="5TlQvVU_oK" role="2Oq$k0">
-                    <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
-                  </node>
-                  <node concept="FGMqu" id="7cBI1LfVuV9" role="2OqNvi" />
+                <node concept="3B5_sB" id="7cBI1LfVufI" role="37vLTx">
+                  <ref role="3B5MYn" to="tpck:gw2VY9q" resolve="BaseConcept" />
                 </node>
                 <node concept="37vLTw" id="5TlQvVU$R7" role="37vLTJ">
                   <ref role="3cqZAo" node="5TlQvVUu62" resolve="result" />
@@ -1915,11 +1911,8 @@
                 <ref role="37wK5l" node="7AHcygo6MWw" resolve="getCellRootConcept" />
               </node>
             </node>
-            <node concept="2OqwBi" id="7cBI1LfVrfK" role="3K4E3e">
-              <node concept="35c_gC" id="1x69AmkddcW" role="2Oq$k0">
-                <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
-              </node>
-              <node concept="FGMqu" id="7cBI1LfVrFZ" role="2OqNvi" />
+            <node concept="3B5_sB" id="7cBI1LfVrfK" role="3K4E3e">
+              <ref role="3B5MYn" to="tpck:gw2VY9q" resolve="BaseConcept" />
             </node>
             <node concept="3clFbC" id="1x69AmkddaG" role="3K4Cdx">
               <node concept="10Nm6u" id="1x69Amkddbu" role="3uHU7w" />
@@ -1955,11 +1948,8 @@
                 <ref role="37wK5l" node="7AHcygo6uTm" resolve="getConceptForMenu" />
               </node>
             </node>
-            <node concept="2OqwBi" id="7cBI1LfVwc4" role="3K4E3e">
-              <node concept="35c_gC" id="7cBI1LfVv7H" role="2Oq$k0">
-                <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
-              </node>
-              <node concept="FGMqu" id="7cBI1LfVwCj" role="2OqNvi" />
+            <node concept="3B5_sB" id="7cBI1LfVwc4" role="3K4E3e">
+              <ref role="3B5MYn" to="tpck:gw2VY9q" resolve="BaseConcept" />
             </node>
             <node concept="3clFbC" id="1x69Amkde1S" role="3K4Cdx">
               <node concept="10Nm6u" id="1x69Amkde34" role="3uHU7w" />

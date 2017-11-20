@@ -6,9 +6,9 @@
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
-    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
     <import index="xojk" ref="r:ec4f318b-4ee4-4063-b222-8a04b6ed816c(com.mbeddr.tutorial.documentation.ug.installation)" />
     <import index="us0v" ref="r:22b9d29d-483d-4f08-8d1b-4e6567157caf(com.mbeddr.tutorial.documentation.ug.analyses)" />
+    <import index="ntnz" ref="r:7f372397-146b-40d5-9f20-607974c4fed4(com.mbeddr.tutorial.documentation.ug._main)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -95,7 +95,7 @@
   <node concept="1_1swa" id="1ig5Elj9K1M">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_MPS" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5Elj9VE4" role="1_0VJ0">
       <property role="TrG5h" value="mps" />
       <property role="1_0VJr" value="JetBrains MPS" />
@@ -247,7 +247,7 @@
   <node concept="1_1swa" id="1ig5EljbCbt">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="B_mbeddr" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljbCc6" role="1_0VJ0">
       <property role="TrG5h" value="mbeddr" />
       <property role="1_0VJr" value="mbeddr" />
@@ -354,7 +354,7 @@
           <property role="TrG5h" value="mbeddrArchitecture" />
           <node concept="2Sb_l4" id="2fBMM_3YhqV" role="2SbwM5">
             <property role="2Sb_kV" value="architecture.png" />
-            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4H" resolve="conceptImages" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4H" resolve="conceptImages" />
           </node>
           <node concept="OjmMv" id="1ig5EljeuEn" role="2SaI5j">
             <node concept="19SGf9" id="1ig5EljeuEo" role="OjmMu">
@@ -401,7 +401,7 @@
   <node concept="1_1swa" id="1ig5EljhyTp">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="D_CBMC" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljhyWt" role="1_0VJ0">
       <property role="TrG5h" value="cbmc" />
       <property role="1_0VJr" value="CBMC" />
@@ -491,7 +491,7 @@
   <node concept="1_1swa" id="1ig5Eljjea0">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="E_Graphviz" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljjecF" role="1_0VJ0">
       <property role="TrG5h" value="PlantUMLAndGraphviz" />
       <property role="1_0VJr" value="PlantUML and Graphviz" />
@@ -536,7 +536,7 @@
   <node concept="1_1swa" id="1ig5Eljjeuk">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_GccMakeGdb" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5Eljjexg" role="1_0VJ0">
       <property role="TrG5h" value="gccMakeGdb" />
       <property role="1_0VJr" value="gcc, make and gdb" />
@@ -615,7 +615,7 @@
   <node concept="1_1swa" id="1ig5EljjePI">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="F_Java" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljjePJ" role="1_0VJ0">
       <property role="TrG5h" value="java" />
       <property role="1_0VJr" value="Java" />
@@ -638,7 +638,7 @@
   <node concept="1_1swa" id="1ig5Eljjfz2">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_Concepts" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1ig5EljjfA_" role="1_0VJ0">
       <property role="TrG5h" value="concepts" />
       <property role="1_0VJr" value="mbeddr Concepts" />

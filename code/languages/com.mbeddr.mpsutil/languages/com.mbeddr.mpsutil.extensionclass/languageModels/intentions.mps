@@ -167,7 +167,7 @@
             <node concept="2OqwBi" id="4X7wieqMkZ2" role="2Oq$k0">
               <node concept="2Sf5sV" id="4X7wieqMkVs" role="2Oq$k0" />
               <node concept="3Tsc0h" id="4X7wieqPLF1" role="2OqNvi">
-                <ref role="3TtcxE" to="sh3l:4X7wiequnHl" />
+                <ref role="3TtcxE" to="sh3l:4X7wiequnHl" resolve="annotations" />
               </node>
             </node>
             <node concept="X8dFx" id="4X7wieqMw33" role="2OqNvi">
@@ -178,7 +178,7 @@
                       <node concept="2OqwBi" id="4X7wieqMzcC" role="2Oq$k0">
                         <node concept="2Sf5sV" id="4X7wieqMwzq" role="2Oq$k0" />
                         <node concept="3TrEf2" id="4X7wieqMA6$" role="2OqNvi">
-                          <ref role="3Tt5mk" to="sh3l:4X7wieq8jk6" />
+                          <ref role="3Tt5mk" to="sh3l:4X7wieq8jk6" resolve="class" />
                         </node>
                       </node>
                       <node concept="2qgKlT" id="4X7wieqMMVO" role="2OqNvi">
@@ -200,7 +200,7 @@
                                       <ref role="3cqZAo" node="4X7wieqMWSy" resolve="it" />
                                     </node>
                                     <node concept="3Tsc0h" id="4X7wieqQG9P" role="2OqNvi">
-                                      <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                                      <ref role="3TtcxE" to="tpee:fzclF7Y" resolve="parameter" />
                                     </node>
                                   </node>
                                   <node concept="34oBXx" id="4X7wieqQQs8" role="2OqNvi" />
@@ -212,7 +212,7 @@
                                     <ref role="3cqZAo" node="4X7wieqMWSy" resolve="it" />
                                   </node>
                                   <node concept="3Tsc0h" id="4X7wieqN63h" role="2OqNvi">
-                                    <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                                    <ref role="3TtcxE" to="tpee:fzclF7Y" resolve="parameter" />
                                   </node>
                                 </node>
                                 <node concept="2HxqBE" id="4X7wieqNnfT" role="2OqNvi">
@@ -262,7 +262,7 @@
                             <node concept="2pJPED" id="4X7wieqO69p" role="2pJPEn">
                               <ref role="2pJxaS" to="sh3l:4X7wieqsg3v" resolve="ExtensionClassMethodAnnotation" />
                               <node concept="2pIpSj" id="4X7wieqOgCf" role="2pJxcM">
-                                <ref role="2pIpSl" to="sh3l:4X7wieqsg3V" />
+                                <ref role="2pIpSl" to="sh3l:4X7wieqsg3V" resolve="method" />
                                 <node concept="36biLy" id="4X7wieqOjWf" role="2pJxcZ">
                                   <node concept="37vLTw" id="4X7wieqOkni" role="36biLW">
                                     <ref role="3cqZAo" node="4X7wieqO1_j" resolve="method" />
@@ -270,7 +270,7 @@
                                 </node>
                               </node>
                               <node concept="2pIpSj" id="4X7wieqOsjy" role="2pJxcM">
-                                <ref role="2pIpSl" to="sh3l:4X7wieqsgeg" />
+                                <ref role="2pIpSl" to="sh3l:4X7wieqsgeg" resolve="parameters" />
                                 <node concept="36biLy" id="4X7wieqOsIL" role="2pJxcZ">
                                   <node concept="2OqwBi" id="4X7wieqOVMN" role="36biLW">
                                     <node concept="2OqwBi" id="4X7wieqO_3C" role="2Oq$k0">
@@ -279,7 +279,7 @@
                                           <ref role="3cqZAo" node="4X7wieqO1_j" resolve="method" />
                                         </node>
                                         <node concept="3Tsc0h" id="4X7wieqOyrH" role="2OqNvi">
-                                          <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                                          <ref role="3TtcxE" to="tpee:fzclF7Y" resolve="parameter" />
                                         </node>
                                       </node>
                                       <node concept="3zZkjj" id="4X7wieqOFMy" role="2OqNvi">
@@ -360,7 +360,7 @@
                               <ref role="3cqZAo" node="4X7wieqRvXm" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="4X7wieqR_TG" role="2OqNvi">
-                              <ref role="3Tt5mk" to="sh3l:4X7wieqsg3V" />
+                              <ref role="3Tt5mk" to="sh3l:4X7wieqsg3V" resolve="method" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="4X7wieqRDnI" role="2OqNvi">
@@ -391,7 +391,7 @@
             <node concept="2OqwBi" id="4X7wieqMGLF" role="2Oq$k0">
               <node concept="2Sf5sV" id="4X7wieqMGEJ" role="2Oq$k0" />
               <node concept="3TrEf2" id="4X7wieqMH7T" role="2OqNvi">
-                <ref role="3Tt5mk" to="sh3l:4X7wieq8jk6" />
+                <ref role="3Tt5mk" to="sh3l:4X7wieq8jk6" resolve="class" />
               </node>
             </node>
             <node concept="3x8VRR" id="4X7wieqMIUa" role="2OqNvi" />

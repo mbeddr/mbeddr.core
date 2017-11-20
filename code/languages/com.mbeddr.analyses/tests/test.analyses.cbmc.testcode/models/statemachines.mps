@@ -8,7 +8,7 @@
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="daa1849d-6955-4fef-afe3-8aea1f61e6fa" name="com.mbeddr.analyses.cbmc.statemachines" version="0" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="0" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
@@ -1030,7 +1030,7 @@
       <property role="2lelRm" value="true" />
       <property role="2lUGcN" value="false" />
       <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="2" />
+      <property role="2lUHrg" value="5" />
       <ref role="1W1s6P" node="21PlWakTqun" resolve="EpsilonSM" />
       <ref role="3V$Cn$" node="21PlWakTqve" resolve="testEpsilonEntry" />
     </node>
@@ -1068,10 +1068,10 @@
       <property role="2l50Km" value="none" />
       <property role="2lUGeZ" value="true" />
       <property role="2lUGdP" value="false" />
-      <property role="2lUHrg" value="25" />
+      <property role="2lUHrg" value="5" />
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
-      <property role="2l50Mm" value="false" />
+      <property role="2l50Mm" value="true" />
       <ref role="3V$Cn$" node="7Tdla9PMVW8" resolve="harness_junction" />
       <ref role="1W1s6P" node="7Tdla9PMVz$" resolve="JunctionSM" />
     </node>
@@ -1180,7 +1180,7 @@
                 <property role="2hmy$m" value="0" />
               </node>
               <node concept="3TlMh9" id="7Tdla9PMVYD" role="1vV05C">
-                <property role="2hmy$m" value="10" />
+                <property role="2hmy$m" value="4" />
               </node>
             </node>
             <node concept="3XIRFW" id="7Tdla9PMVXN" role="n2wFg">

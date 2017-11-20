@@ -2,6 +2,7 @@
 <model ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -22,12 +23,22 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -440,6 +451,13 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="3352153450711894224" />
       <ref role="20lvS9" node="2U5fsQei4zf" resolve="IDocConfigItem" />
+    </node>
+    <node concept="1TJgyj" id="5JlMPDXOsfV" role="1TKVEi">
+      <property role="IQ2ns" value="6617418817009206267" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="defaultImagePath" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5JlMPDXMgjR" resolve="DefaultImagePath" />
     </node>
     <node concept="PrWs8" id="5yxqZJwzC3f" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -1378,15 +1396,18 @@
     <property role="3GE5qa" value="modelContent" />
     <property role="EcuMT" value="6955693250238922827" />
     <ref role="1TJDcQ" node="627_yy34G14" resolve="AbstractModelContentParagraph" />
-    <node concept="1QGGSu" id="1N5Tah$Cg8O" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/code.png" />
-    </node>
     <node concept="1TJgyj" id="627_yy34G1c" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="path" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="6955693250238922828" />
       <ref role="20lvS9" node="5yxqZJwzC3r" resolve="PathDefinition" />
+      <node concept="asaX9" id="1xGVIWdDkpc" role="lGtFl">
+        <property role="YLQ7P" value="removed since there is now a default image location" />
+      </node>
+    </node>
+    <node concept="1QGGSu" id="1N5Tah$Cg8O" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/code.png" />
     </node>
     <node concept="PrWs8" id="627_yy34G1d" role="PzmwI">
       <ref role="PrY4T" node="47ZkZt5XzTh" resolve="IInterspersed" />
@@ -1663,6 +1684,49 @@
       <property role="20kJfa" value="externalDocument" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5gTlpaky5gD" resolve="AbstractExport" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2cjkfC8rZLR">
+    <property role="EcuMT" value="2527452850698583159" />
+    <property role="TrG5h" value="PlaceInfolder" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="2cjkfC8rZLY" role="1TKVEl">
+      <property role="IQ2nx" value="2527452850698583166" />
+      <property role="TrG5h" value="location" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="t5JxF" id="49PUF$HQnyy" role="lGtFl">
+        <property role="t5JxN" value="absolut location where the resulting file should get placed. This is the folder and not the file." />
+      </node>
+    </node>
+    <node concept="M6xJ_" id="2cjkfC8rZLS" role="lGtFl">
+      <property role="Hh88m" value="placeAt" />
+      <node concept="tn0Fv" id="2cjkfC8rZLU" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="2cjkfC8rZLW" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5JlMPDXMgjR">
+    <property role="EcuMT" value="6617418817008633079" />
+    <property role="3GE5qa" value="config" />
+    <property role="TrG5h" value="DefaultImagePath" />
+    <ref role="1TJDcQ" node="5yxqZJwzC3r" resolve="PathDefinition" />
+  </node>
+  <node concept="1TIwiD" id="2T4ELtZGU8">
+    <property role="EcuMT" value="52093402212126344" />
+    <property role="3GE5qa" value="words" />
+    <property role="TrG5h" value="DocRefWord" />
+    <property role="34LRSv" value="@doc" />
+    <property role="R4oN_" value="references a document" />
+    <ref role="1TJDcQ" node="3mn43GPgUJP" resolve="AbstractRefWord" />
+    <node concept="1TJgyj" id="2T4ELtZGU9" role="1TKVEi">
+      <property role="IQ2ns" value="52093402212126345" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2TZO3DbuxwK" resolve="Document" />
     </node>
   </node>
 </model>
