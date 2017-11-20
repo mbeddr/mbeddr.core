@@ -12725,6 +12725,12 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2543XrQNfKC" role="3bR37C">
+          <node concept="3bR9La" id="2543XrQNfKD" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="2Z2H3pkY6Sh" resolve="com.mbeddr.mpsutil.userstyles.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7tNo_gxoK97" role="2G$12L">
         <property role="BnDLt" value="true" />
