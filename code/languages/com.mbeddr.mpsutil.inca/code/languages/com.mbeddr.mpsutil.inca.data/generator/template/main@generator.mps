@@ -29,6 +29,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="d3yh" ref="r:1b93ee56-a19c-40b4-ae7b-489c132cd837(com.mbeddr.mpsutil.inca.fun.generator.template.main@generator)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="j60j" ref="r:13275e02-3f14-48b5-8a82-fa91f2c33c15(com.mbeddr.mpsutil.inca.data.behavior)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
@@ -3092,6 +3093,9 @@
   </node>
   <node concept="bUwia" id="606mdnYjXfF">
     <property role="TrG5h" value="funPatternLangPreprocessing" />
+    <node concept="1puMqW" id="4Mox7H_9wzN" role="1puA0r">
+      <ref role="1puQsG" to="d3yh:28bFZSiFVgc" resolve="rewriteSwitchStatements" />
+    </node>
     <node concept="1puMqW" id="606mdnYkASW" role="1puA0r">
       <ref role="1puQsG" node="606mdnYjXfG" resolve="rewriteLatticeAggregation" />
     </node>
