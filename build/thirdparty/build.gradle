@@ -1,0 +1,23 @@
+plugins {
+    id 'de.undercouch.download' version '3.1.1' apply false
+}
+
+subprojects {
+    apply plugin: 'de.undercouch.download'
+    apply plugin: 'base'
+    apply plugin: 'maven-publish'
+
+    publishing {
+        repositories {
+            maven {
+                if (project.hasProperty('nexusUsername')) {
+                    credentials {
+                        username project.getProperty('nexusUsername')
+                        password project.getProperty('nexusPassword')
+                    }
+                }
+                url project.releaseRepository
+            }
+        }
+    }
+}

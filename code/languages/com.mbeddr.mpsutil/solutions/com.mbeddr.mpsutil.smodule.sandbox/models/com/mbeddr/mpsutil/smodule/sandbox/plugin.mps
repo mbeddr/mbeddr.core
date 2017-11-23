@@ -2,14 +2,14 @@
 <model ref="r:7c74ea14-a042-4e84-9000-68e17f86cdb8(com.mbeddr.mpsutil.smodule.sandbox.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="5xh9" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.actions(MPS.Platform/jetbrains.mps.ide.actions@java_stub)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -124,7 +124,7 @@
     <property role="2uzpH1" value="add devkit" />
     <node concept="1DS2jV" id="7Ynnt_OeWdW" role="1NuT2Z">
       <property role="TrG5h" value="model" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
       <node concept="1oajcY" id="7Ynnt_OeWdX" role="1oa70y" />
     </node>
     <node concept="tnohg" id="7Ynnt_OeSdH" role="tncku">
@@ -167,7 +167,7 @@
     <property role="2uzpH1" value="add lang" />
     <node concept="1DS2jV" id="7Ynnt_OfT43" role="1NuT2Z">
       <property role="TrG5h" value="modl" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
       <node concept="1oajcY" id="7Ynnt_OfT44" role="1oa70y" />
     </node>
     <node concept="tnohg" id="7Ynnt_OfT3n" role="tncku">
@@ -242,7 +242,7 @@
     </node>
     <node concept="1DS2jV" id="lse_ua4Mc6" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="5xh9:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
       <node concept="1oajcY" id="lse_ua4Mc7" role="1oa70y" />
     </node>
   </node>

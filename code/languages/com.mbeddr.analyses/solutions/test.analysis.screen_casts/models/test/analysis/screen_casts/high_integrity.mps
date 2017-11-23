@@ -22,13 +22,18 @@
   </imports>
   <registry>
     <language id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units">
+      <concept id="1741902046311368052" name="com.mbeddr.ext.units.structure.ConversionSpecifier" flags="ng" index="27LzZq">
+        <child id="1741902046311628549" name="expression" index="27K$mF" />
+        <child id="1741902046316071821" name="type" index="2S7B4z" />
+      </concept>
+      <concept id="5348704582971040037" name="com.mbeddr.ext.units.structure.UnitConfigItem" flags="ng" index="2eh4Hv" />
+      <concept id="5185104661801317038" name="com.mbeddr.ext.units.structure.ValExpression" flags="ng" index="2m5Cep" />
       <concept id="8337440621611212272" name="com.mbeddr.ext.units.structure.AnnotatedExpression" flags="ng" index="CIdvy">
         <child id="8337440621611267898" name="innerExpression" index="CIrOC" />
         <child id="8337440621611353453" name="specification" index="CIwXZ" />
       </concept>
       <concept id="8337440621611267903" name="com.mbeddr.ext.units.structure.Unit" flags="ng" index="CIrOH">
         <property id="8337440621611269512" name="description" index="CIruq" />
-        <child id="8337440621611270427" name="spec" index="CIsG9" />
       </concept>
       <concept id="8337440621611267900" name="com.mbeddr.ext.units.structure.UnitContainer" flags="ng" index="CIrOI">
         <child id="8337440621611267904" name="contents" index="CIrPi" />
@@ -42,9 +47,15 @@
       <concept id="8337440621611400980" name="com.mbeddr.ext.units.structure.AnnotatedType" flags="ng" index="CIVk6">
         <child id="8337440621611401032" name="specification" index="CIVlq" />
       </concept>
+      <concept id="1069230850837260491" name="com.mbeddr.ext.units.structure.ConversionRule" flags="ng" index="TRoc0">
+        <reference id="1741902046312150360" name="sourceUnit" index="27Q$ZQ" />
+        <reference id="1741902046312150361" name="targetUnit" index="27Q$ZR" />
+        <child id="1741902046312299423" name="specifiers" index="27P04L" />
+      </concept>
+      <concept id="6111466015651074424" name="com.mbeddr.ext.units.structure.EmptyUnitContainerContent" flags="ng" index="134lye" />
     </language>
     <language id="f47ddd18-d113-4647-938b-1d9b2e1910dc" name="com.mbeddr.analyses.acsl.cbmc.gen">
-      <concept id="3569172384853804038" name="com.mbeddr.analyses.acsl.cbmc.gen.structure.CheckACSLContractsWithCBMC" flags="ng" index="2sO7Hp" />
+      <concept id="6715381068726883448" name="com.mbeddr.analyses.acsl.cbmc.gen.structure.ACSLContractsGenerationForCBMC" flags="ng" index="31U8vS" />
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="6275792049641600983" name="com.mbeddr.core.statements.structure.IfStatement" flags="ng" index="c0U19">
@@ -66,18 +77,28 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
+        <child id="5323740605968447026" name="target" index="2AWWZH" />
       </concept>
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
-    </language>
-    <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
-      <concept id="6973658835837826905" name="com.mbeddr.analyses.cbmc.structure.Assert" flags="ng" index="Y9XUq">
-        <child id="6973658835837826906" name="exp" index="Y9XUp" />
+      <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
+        <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
+        <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
+        <property id="3963667026125442676" name="make" index="3r8Kxs" />
+      </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
+      <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
+        <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
@@ -122,6 +143,9 @@
       <concept id="3793213301909798351" name="com.mbeddr.analyses.acsl.structure.Result" flags="ng" index="2HeCUD" />
       <concept id="3793213301909614895" name="com.mbeddr.analyses.acsl.structure.FunctionContract" flags="ng" index="2HfW99">
         <child id="3793213301909617373" name="functionContractMember" index="2HfWAV" />
+      </concept>
+      <concept id="6715381068726883387" name="com.mbeddr.analyses.acsl.structure.ACSLContractsGenerationConfigItem" flags="ng" index="31U8uV">
+        <child id="6715381068726941300" name="generationKind" index="31UYnO" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -177,13 +201,19 @@
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
+      <concept id="5763383285156373018" name="com.mbeddr.core.expressions.structure.MinusExpression" flags="ng" index="2BOcil" />
+      <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="8399455261460717640" name="com.mbeddr.core.expressions.structure.AndExpression" flags="ng" index="2EHzL6" />
+      <concept id="5924821888882196543" name="com.mbeddr.core.expressions.structure.ExpressionList" flags="ng" index="2Ysn8y">
+        <child id="5924821888882211457" name="expressions" index="2Yskys" />
+      </concept>
       <concept id="3830958861296781575" name="com.mbeddr.core.expressions.structure.NotExpression" flags="ng" index="19$8ne" />
       <concept id="9013371069686136255" name="com.mbeddr.core.expressions.structure.BitwiseLeftShiftExpression" flags="ng" index="3oul24" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
+      <concept id="4739982148980385695" name="com.mbeddr.core.expressions.structure.FloatType" flags="ng" index="3AreGT" />
       <concept id="743779816742251347" name="com.mbeddr.core.expressions.structure.ITypeDecorator" flags="ng" index="1Ml8iu">
         <child id="7336544617004013388" name="valueType" index="UxbcT" />
       </concept>
@@ -201,6 +231,11 @@
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
+    </language>
+    <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
+      <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
+        <child id="6973658835837826906" name="exp" index="Y9XUp" />
+      </concept>
     </language>
   </registry>
   <node concept="N3F5e" id="368fPYHjDKi">
@@ -362,7 +397,6 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node concept="2Bs1N1" id="368fPYHjQCC" role="lGtFl" />
     </node>
     <node concept="2NXPZ9" id="368fPYHjMRH" role="N3F5h">
       <property role="TrG5h" value="empty_1435523121389_5" />
@@ -440,7 +474,7 @@
     <node concept="3GEVxB" id="368fPYHkb2d" role="2OODSX">
       <ref role="3GEb4d" node="368fPYHk9Sl" resolve="units" />
     </node>
-    <node concept="3GEVxB" id="368fPYHkgy4" role="2OODSX">
+    <node concept="3GEVxB" id="7Pk2mb7Jw71" role="2OODSX">
       <ref role="3GEb4d" to="cmgk:yGiRIF6Rhw" resolve="SIUnits" />
     </node>
     <node concept="2NXPZ9" id="368fPYHjSHx" role="N3F5h">
@@ -847,8 +881,47 @@
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="C" />
       <property role="CIruq" value="Grad Celsius" />
-      <node concept="CIsGf" id="368fPYHk9Sn" role="CIsG9" />
     </node>
+    <node concept="134lye" id="7Pk2mb7Ju_A" role="CIrPi" />
+    <node concept="TRoc0" id="7Pk2mb7JdvM" role="CIrPi">
+      <property role="2OOxQR" value="true" />
+      <ref role="27Q$ZQ" node="368fPYHk9Sm" resolve="C" />
+      <ref role="27Q$ZR" to="cmgk:6TeNRL7trDy" resolve="K" />
+      <node concept="27LzZq" id="7Pk2mb7JdvO" role="27P04L">
+        <node concept="2BOciq" id="7Pk2mb7JnCR" role="27K$mF">
+          <node concept="2Ysn8y" id="7Pk2mb7Jo3n" role="3TlMhJ">
+            <node concept="3TlMh9" id="7Pk2mb7JnDs" role="2Yskys">
+              <property role="2hmy$m" value="273.15" />
+            </node>
+          </node>
+          <node concept="2m5Cep" id="7Pk2mb7JnCm" role="3TlMhI" />
+        </node>
+        <node concept="3AreGT" id="7Pk2mb7Jdwe" role="2S7B4z">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="TRoc0" id="7Pk2mb7Jpcz" role="CIrPi">
+      <property role="2OOxQR" value="true" />
+      <ref role="27Q$ZR" node="368fPYHk9Sm" resolve="C" />
+      <ref role="27Q$ZQ" to="cmgk:6TeNRL7trDy" resolve="K" />
+      <node concept="27LzZq" id="7Pk2mb7Jpc$" role="27P04L">
+        <node concept="2BOcil" id="7Pk2mb7JppY" role="27K$mF">
+          <node concept="2m5Cep" id="7Pk2mb7JpcC" role="3TlMhI" />
+          <node concept="2Ysn8y" id="7Pk2mb7JpcA" role="3TlMhJ">
+            <node concept="3TlMh9" id="7Pk2mb7JpcB" role="2Yskys">
+              <property role="2hmy$m" value="273.15" />
+            </node>
+          </node>
+        </node>
+        <node concept="3AreGT" id="7Pk2mb7JpcD" role="2S7B4z">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="134lye" id="7Pk2mb7Jp9T" role="CIrPi" />
   </node>
   <node concept="N3F5e" id="368fPYHkkMd">
     <property role="TrG5h" value="_01_cooling_acsl" />
@@ -1037,6 +1110,7 @@
   <node concept="2v9HqL" id="368fPYHknoL">
     <node concept="29Nb31" id="368fPYHknoM" role="2ePNbc">
       <property role="TrG5h" value="lib" />
+      <ref role="3oK8_y" node="7fmKiPEtWzC" resolve="portable" />
       <node concept="2v9HqM" id="368fPYHknoO" role="2eOfOg">
         <ref role="2v9HqP" node="368fPYHjUTB" resolve="_01_cooling_dt" />
       </node>
@@ -1053,7 +1127,29 @@
     <node concept="2Q9Fgs" id="368fPYHkqvj" role="2Q9xDr">
       <node concept="2Q9FjX" id="368fPYHkqvk" role="2Q9FjI" />
     </node>
-    <node concept="2sO7Hp" id="368fPYHmjAN" role="2Q9xDr" />
+    <node concept="31U8uV" id="3WMUl3DggBg" role="2Q9xDr">
+      <node concept="31U8vS" id="3WMUl3DggBr" role="31UYnO" />
+    </node>
+    <node concept="2eh4Hv" id="7Pk2mb7JbjC" role="2Q9xDr" />
+    <node concept="2AWWZL" id="7Pk2mb7JbjN" role="2AWWZH">
+      <property role="2AWWZJ" value="gcc" />
+      <property role="3r8Kw1" value="gdb" />
+      <property role="3r8Kxs" value="make" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
+      <node concept="3abb7c" id="7fmKiPEtWz_" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWzA" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWzB" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtWzC" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
+    </node>
   </node>
   <node concept="N3F5e" id="368fPYHmp$X">
     <property role="TrG5h" value="_02_static_analysis" />

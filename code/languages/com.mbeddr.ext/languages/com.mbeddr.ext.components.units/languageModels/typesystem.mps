@@ -221,6 +221,10 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -244,10 +248,7 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -971,8 +972,8 @@
                       <ref role="ehGHo" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
                     </node>
                     <node concept="1PxgMI" id="qWsmfOTUGs" role="33vP2m">
-                      <ref role="1PxNhF" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
-                      <node concept="2X3wrD" id="qWsmfOWKvt" role="1PxMeX">
+                      <ref role="1m5ApE" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
+                      <node concept="2X3wrD" id="qWsmfOWKvt" role="1m5AlR">
                         <ref role="2X3Bk0" node="qWsmfOWAvh" resolve="type" />
                       </node>
                     </node>
@@ -1216,8 +1217,8 @@
                             </node>
                             <node concept="2OqwBi" id="AeX2DkxKg_" role="37vLTJ">
                               <node concept="1PxgMI" id="AeX2DkxKa_" role="2Oq$k0">
-                                <ref role="1PxNhF" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
-                                <node concept="37vLTw" id="AeX2DkxJq1" role="1PxMeX">
+                                <ref role="1m5ApE" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
+                                <node concept="37vLTw" id="AeX2DkxJq1" role="1m5AlR">
                                   <ref role="3cqZAo" node="qWsmfOTUGr" resolve="returnType" />
                                 </node>
                               </node>
@@ -1269,8 +1270,8 @@
                       <ref role="37wK5l" to="gkt:AeX2Dk$pwx" resolve="getUnitMap_UnitSpecification" />
                       <node concept="2OqwBi" id="2XknsxcljIy" role="37wK5m">
                         <node concept="1PxgMI" id="2Xknsxcljwz" role="2Oq$k0">
-                          <ref role="1PxNhF" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
-                          <node concept="37vLTw" id="2Xknsxcljk0" role="1PxMeX">
+                          <ref role="1m5ApE" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
+                          <node concept="37vLTw" id="2Xknsxcljk0" role="1m5AlR">
                             <ref role="3cqZAo" node="qWsmfOTUGr" resolve="returnType" />
                           </node>
                         </node>
@@ -1280,8 +1281,8 @@
                       </node>
                       <node concept="2OqwBi" id="2Xknsxcl_IS" role="37wK5m">
                         <node concept="1PxgMI" id="2Xknsxcl_pY" role="2Oq$k0">
-                          <ref role="1PxNhF" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
-                          <node concept="37vLTw" id="2Xknsxcl_dg" role="1PxMeX">
+                          <ref role="1m5ApE" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
+                          <node concept="37vLTw" id="2Xknsxcl_dg" role="1m5AlR">
                             <ref role="3cqZAo" node="qWsmfOTUGr" resolve="returnType" />
                           </node>
                         </node>
@@ -1319,8 +1320,8 @@
                         <node concept="2OqwBi" id="7zu0AJ2tk0O" role="2Oq$k0">
                           <node concept="2OqwBi" id="7zu0AJ2t0l3" role="2Oq$k0">
                             <node concept="1PxgMI" id="7zu0AJ2t0ei" role="2Oq$k0">
-                              <ref role="1PxNhF" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
-                              <node concept="37vLTw" id="7zu0AJ2t0bp" role="1PxMeX">
+                              <ref role="1m5ApE" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
+                              <node concept="37vLTw" id="7zu0AJ2t0bp" role="1m5AlR">
                                 <ref role="3cqZAo" node="qWsmfOTUGr" resolve="returnType" />
                               </node>
                             </node>
@@ -1340,8 +1341,8 @@
                         <node concept="2OqwBi" id="7zu0AJ2ttM1" role="2Oq$k0">
                           <node concept="2OqwBi" id="7zu0AJ2tsVr" role="2Oq$k0">
                             <node concept="1PxgMI" id="7zu0AJ2tsPf" role="2Oq$k0">
-                              <ref role="1PxNhF" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
-                              <node concept="37vLTw" id="7zu0AJ2tsHM" role="1PxMeX">
+                              <ref role="1m5ApE" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
+                              <node concept="37vLTw" id="7zu0AJ2tsHM" role="1m5AlR">
                                 <ref role="3cqZAo" node="qWsmfOTUGr" resolve="returnType" />
                               </node>
                             </node>
@@ -1410,8 +1411,8 @@
                         <node concept="mw_s8" id="1GIWTDAVptC" role="1ZfhK$">
                           <node concept="2OqwBi" id="1GIWTDAVscn" role="mwGJk">
                             <node concept="1PxgMI" id="1GIWTDAVs61" role="2Oq$k0">
-                              <ref role="1PxNhF" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
-                              <node concept="37vLTw" id="1GIWTDAVptD" role="1PxMeX">
+                              <ref role="1m5ApE" to="qlb5:7eOyx9r3NWk" resolve="AnnotatedType" />
+                              <node concept="37vLTw" id="1GIWTDAVptD" role="1m5AlR">
                                 <ref role="3cqZAo" node="qWsmfOTUGr" resolve="returnType" />
                               </node>
                             </node>

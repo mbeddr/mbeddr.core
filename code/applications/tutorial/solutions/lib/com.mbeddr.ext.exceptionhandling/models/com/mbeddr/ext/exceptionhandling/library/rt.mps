@@ -54,6 +54,7 @@
       <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
         <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -191,6 +192,8 @@
         <child id="3335993110369805710" name="specifications" index="MXv61" />
         <child id="8863019357864392147" name="sizeTType" index="2O5j3Q" />
         <child id="3813668170744198630" name="pointerDiffType" index="3kxMGo" />
+        <child id="7808382574383152989" name="intPtrType" index="3sasR9" />
+        <child id="7808382574383153001" name="uintPtrType" index="3sasRX" />
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="3976803464656498416" name="com.mbeddr.core.expressions.structure.PostDecrementExpression" flags="ng" index="1FldXu" />
@@ -216,6 +219,7 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
+      <property role="3I8uaA" value="" />
     </node>
     <node concept="2Q9Fgs" id="3WQPxwFiy_9" role="2Q9xDr">
       <node concept="2Q9FjX" id="3WQPxwFiy_a" role="2Q9FjI" />
@@ -346,6 +350,14 @@
       <property role="2c7vTL" value="false" />
     </node>
     <node concept="26Vqph" id="3WQPxwFiyIL" role="2O5j3Q">
+      <property role="2caQfQ" value="false" />
+      <property role="2c7vTL" value="false" />
+    </node>
+    <node concept="1X9cn3" id="5OPKfxQ3lYX" role="3sasR9">
+      <property role="2caQfQ" value="false" />
+      <property role="2c7vTL" value="false" />
+    </node>
+    <node concept="26VBNf" id="5OPKfxQ3lYY" role="3sasRX">
       <property role="2caQfQ" value="false" />
       <property role="2c7vTL" value="false" />
     </node>

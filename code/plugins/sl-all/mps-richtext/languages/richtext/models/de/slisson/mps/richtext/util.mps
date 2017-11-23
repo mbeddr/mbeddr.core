@@ -175,6 +175,7 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -1352,8 +1353,8 @@
     <node concept="2YIFZL" id="4$G0AukZy$i" role="jymVt">
       <property role="TrG5h" value="getAllConstantCells" />
       <node concept="_YKpA" id="4$G0AukZy$m" role="3clF45">
-        <node concept="3uibUv" id="4$G0AukZy$o" role="_ZDj9">
-          <ref role="3uigEE" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
+        <node concept="3uibUv" id="5pfU$MGfyTY" role="_ZDj9">
+          <ref role="3uigEE" to="f4zo:~EditorCell_Label" resolve="EditorCell_Label" />
         </node>
       </node>
       <node concept="3Tm1VV" id="4$G0AukZy$k" role="1B3o_S" />
@@ -1362,14 +1363,14 @@
           <node concept="3cpWsn" id="4$G0AukZyAK" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="_YKpA" id="4$G0AukZyAL" role="1tU5fm">
-              <node concept="3uibUv" id="4$G0AukZyAN" role="_ZDj9">
-                <ref role="3uigEE" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
+              <node concept="3uibUv" id="5pfU$MGfyU6" role="_ZDj9">
+                <ref role="3uigEE" to="f4zo:~EditorCell_Label" resolve="EditorCell_Label" />
               </node>
             </node>
             <node concept="2ShNRf" id="4$G0AukZyAP" role="33vP2m">
               <node concept="Tc6Ow" id="4$G0AukZyAQ" role="2ShVmc">
-                <node concept="3uibUv" id="4$G0AukZyAR" role="HW$YZ">
-                  <ref role="3uigEE" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
+                <node concept="3uibUv" id="5pfU$MGfyUe" role="HW$YZ">
+                  <ref role="3uigEE" to="f4zo:~EditorCell_Label" resolve="EditorCell_Label" />
                 </node>
               </node>
             </node>
@@ -1407,8 +1408,8 @@
                     </node>
                     <node concept="TSZUe" id="4$G0AukZyB$" role="2OqNvi">
                       <node concept="10QFUN" id="4$G0AukZyBC" role="25WWJ7">
-                        <node concept="3uibUv" id="4$G0AukZyBF" role="10QFUM">
-                          <ref role="3uigEE" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
+                        <node concept="3uibUv" id="5pfU$MGfyUm" role="10QFUM">
+                          <ref role="3uigEE" to="f4zo:~EditorCell_Label" resolve="EditorCell_Label" />
                         </node>
                         <node concept="3cpWsa" id="4$G0AukZyBA" role="10QFUP">
                           <ref role="3cqZAo" node="4$G0AukZy$U" resolve="currentLeaf" />
@@ -1418,12 +1419,31 @@
                   </node>
                 </node>
               </node>
-              <node concept="2ZW3vV" id="4$G0AukZyAE" role="3clFbw">
-                <node concept="3uibUv" id="4$G0AukZyAH" role="2ZW6by">
-                  <ref role="3uigEE" to="g51k:~EditorCell_Constant" resolve="EditorCell_Constant" />
+              <node concept="1Wc70l" id="5pfU$MGf$$1" role="3clFbw">
+                <node concept="3fqX7Q" id="5pfU$MGf_uu" role="3uHU7w">
+                  <node concept="2OqwBi" id="5pfU$MGf_uw" role="3fr31v">
+                    <node concept="1eOMI4" id="5pfU$MGf_ux" role="2Oq$k0">
+                      <node concept="10QFUN" id="5pfU$MGf_uy" role="1eOMHV">
+                        <node concept="37vLTw" id="5pfU$MGf_uz" role="10QFUP">
+                          <ref role="3cqZAo" node="4$G0AukZy$U" resolve="currentLeaf" />
+                        </node>
+                        <node concept="3uibUv" id="5pfU$MGf_u$" role="10QFUM">
+                          <ref role="3uigEE" to="f4zo:~EditorCell_Label" resolve="EditorCell_Label" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="5pfU$MGf_u_" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell_Label.isEditable():boolean" resolve="isEditable" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="3cpWsa" id="4$G0AukZyAD" role="2ZW6bz">
-                  <ref role="3cqZAo" node="4$G0AukZy$U" resolve="currentLeaf" />
+                <node concept="2ZW3vV" id="5pfU$MGf$15" role="3uHU7B">
+                  <node concept="3uibUv" id="5pfU$MGf$1q" role="2ZW6by">
+                    <ref role="3uigEE" to="f4zo:~EditorCell_Label" resolve="EditorCell_Label" />
+                  </node>
+                  <node concept="37vLTw" id="5pfU$MGfzNl" role="2ZW6bz">
+                    <ref role="3cqZAo" node="4$G0AukZy$U" resolve="currentLeaf" />
+                  </node>
                 </node>
               </node>
             </node>

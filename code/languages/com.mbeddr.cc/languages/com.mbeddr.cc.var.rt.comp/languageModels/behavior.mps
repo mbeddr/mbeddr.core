@@ -46,11 +46,12 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -76,12 +77,12 @@
         <node concept="3clFbF" id="6W8yq39oS5v" role="3cqZAp">
           <node concept="2OqwBi" id="6W8yq39oS8e" role="3clFbG">
             <node concept="1PxgMI" id="6W8yq39oS7S" role="2Oq$k0">
-              <ref role="1PxNhF" to="yvrq:7H6_Qip5JI_" resolve="RtFeatureModelType" />
-              <node concept="2OqwBi" id="6W8yq39oS7s" role="1PxMeX">
+              <ref role="1m5ApE" to="yvrq:7H6_Qip5JI_" resolve="RtFeatureModelType" />
+              <node concept="2OqwBi" id="6W8yq39oS7s" role="1m5AlR">
                 <node concept="2OqwBi" id="6W8yq39oS70" role="2Oq$k0">
                   <node concept="1PxgMI" id="6W8yq39oS6E" role="2Oq$k0">
-                    <ref role="1PxNhF" to="v7ag:F_QT7XsuCt" resolve="InitFieldInitializer" />
-                    <node concept="2OqwBi" id="6W8yq39oS5P" role="1PxMeX">
+                    <ref role="1m5ApE" to="v7ag:F_QT7XsuCt" resolve="InitFieldInitializer" />
+                    <node concept="2OqwBi" id="6W8yq39oS5P" role="1m5AlR">
                       <node concept="13iPFW" id="6W8yq39oS5w" role="2Oq$k0" />
                       <node concept="1mfA1w" id="6W8yq39oS5V" role="2OqNvi" />
                     </node>

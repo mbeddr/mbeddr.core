@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4c0bf0c4-14f1-408b-8efc-a95a982abe96(test.com.mbeddr.mpsutil.placeholderTextList.sandbox)">
+<model ref="r:4c0bf0c4-14f1-408b-8efc-a95a982abe96(test.com.mbeddr.mpsutil.placeholderTextList.sandbox)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="03411b7a-a9ce-4d39-bc96-3ef49f103e72" name="test.com.mbeddr.mpsutil.placeholderTextList.testlang" version="0" />

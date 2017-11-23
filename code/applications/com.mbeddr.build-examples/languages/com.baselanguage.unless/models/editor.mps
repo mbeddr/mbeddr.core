@@ -2,7 +2,7 @@
 <model ref="r:979acbc1-b232-4d9b-96c1-49b8cafdbae7(com.baselanguage.unless.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -62,7 +62,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4Rn9djDk5dn" role="3EZMnx">
-        <ref role="1NtTu8" to="tt0h:4Rn9djDk5cq" />
+        <ref role="1NtTu8" to="tt0h:4Rn9djDk5cq" resolve="condition" />
       </node>
       <node concept="3F0ifn" id="4Rn9djDk5dJ" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -80,7 +80,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4Rn9djDk5fr" role="3EZMnx">
-        <ref role="1NtTu8" to="tt0h:4Rn9djDk5cu" />
+        <ref role="1NtTu8" to="tt0h:4Rn9djDk5cu" resolve="body" />
         <node concept="lj46D" id="4Rn9djDkaoN" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

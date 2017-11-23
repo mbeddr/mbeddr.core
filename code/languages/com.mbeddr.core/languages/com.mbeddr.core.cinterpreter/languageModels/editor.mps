@@ -2,12 +2,12 @@
 <model ref="r:e9554d5d-d84e-4b29-8bb5-62d44ef6635b(com.mbeddr.core.cinterpreter.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="xi9i" ref="r:1a0a0fc6-4a62-41d0-9af4-610c85e7bcac(com.mbeddr.core.cinterpreter.structure)" />
-    <import index="7cx9" ref="1c897ba5-9d43-4035-ac7f-0306495743ac/r:af793ab9-042b-414b-8d5e-765e4059f681(com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.structure)" implicit="true" />
+    <import index="7cx9" ref="r:af793ab9-042b-414b-8d5e-765e4059f681(com.mbeddr.mpsutil.interpreter.test.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -100,7 +100,7 @@
           </node>
         </node>
         <node concept="3F1sOY" id="65E6xpGSp0N" role="3EZMnx">
-          <ref role="1NtTu8" to="xi9i:65E6xpGSSNL" />
+          <ref role="1NtTu8" to="xi9i:65E6xpGSSNL" resolve="expression" />
           <node concept="VechU" id="65E6xpGSukT" role="3F10Kt">
             <property role="Vb096" value="DARK_GREEN" />
           </node>

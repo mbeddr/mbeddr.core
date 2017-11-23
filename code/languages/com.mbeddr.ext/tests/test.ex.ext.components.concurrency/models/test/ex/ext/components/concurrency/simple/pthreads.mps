@@ -3,11 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="3f445ef3-54ad-4ae5-a22d-91c3ce06375e" name="com.mbeddr.ext.components.concurrency" version="0" />
-    <generationPart ref="efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)" />
-    <generationPart ref="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" />
-    <generationPart ref="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
-    <generationPart ref="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
-    <generationPart ref="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
+    <engage id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" />
+    <engage id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" />
+    <engage id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" />
+    <engage id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" />
+    <engage id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" />
     <devkit ref="aa72fbcf-7e79-465b-a4d9-4517ef4624ee(com.mbeddr.concurrency)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
@@ -21,6 +21,7 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
@@ -40,6 +41,10 @@
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -94,13 +99,26 @@
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
-      <property role="2AWWZI" value="-std=c99 -I/usr/include -pthread" />
+      <property role="2AWWZI" value="-std=gnu99 -I/usr/include" />
       <property role="1FkSt$" value="-g  -I/usr/include/" />
-      <property role="3I8uaA" value="" />
+      <property role="3I8uaA" value="-pthread" />
+      <node concept="3abb7c" id="4LhGMnjpRcG" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="4LhGMnjpRcH" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="4LhGMnjpRcI" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="4LhGMnjpRcJ" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
     <node concept="2eOfOl" id="3xRFG9PQKjc" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="TwoTasks" />
+      <ref role="3oK8_y" node="4LhGMnjpRcI" resolve="Linux" />
       <node concept="2v9HqM" id="3qlQk_ggWAG" role="2eOfOg">
         <ref role="2v9HqP" to="boqp:3Xsb2sPPkKA" resolve="twoTasks" />
       </node>

@@ -10,9 +10,9 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -27,6 +27,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -114,6 +115,7 @@
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -137,6 +139,7 @@
   </registry>
   <node concept="1lH9Xt" id="4QaxHToaZxv">
     <property role="TrG5h" value="DeadCodeStatemachine_Tests" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="4pAFZeasiYR" role="1SL9yI">
       <property role="TrG5h" value="testAllReachable" />
       <node concept="3cqZAl" id="4pAFZeasiYS" role="3clF45" />
@@ -282,6 +285,7 @@
   </node>
   <node concept="1lH9Xt" id="153zJclN7Oc">
     <property role="TrG5h" value="DeadCodeSmoke_Tests" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="153zJclN7Od" role="1SL9yI">
       <property role="TrG5h" value="testEntry" />
       <node concept="3cqZAl" id="153zJclN7Oe" role="3clF45" />
@@ -563,10 +567,22 @@
   </node>
   <node concept="1lH9Xt" id="153zJclTKiY">
     <property role="TrG5h" value="DeadCodeComponent_Tests" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="153zJclTKiZ" role="1SL9yI">
       <property role="TrG5h" value="test" />
       <node concept="3cqZAl" id="153zJclTKj0" role="3clF45" />
       <node concept="3clFbS" id="153zJclTKj1" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVgZy3" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVgZy4" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVgZy2" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVgZy5" role="33vP2m">
+              <property role="BaBD8" value="ass" />
+              <property role="BaHAW" value="dead_code" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="153zJclTKj2" role="3cqZAp">
           <node concept="3cpWsn" id="153zJclTKj3" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -578,10 +594,8 @@
             <node concept="NRdvd" id="153zJclTKj6" role="33vP2m">
               <ref role="37wK5l" to="3h46:4QaxHToa8PJ" resolve="checkDeadCode" />
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
-              <node concept="BaHAS" id="153zJclTKj7" role="37wK5m">
-                <property role="BaBD8" value="ass" />
-                <property role="BaHAW" value="dead_code" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVgZy6" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVgZy4" resolve="m" />
               </node>
               <node concept="Xl_RD" id="153zJclTKj8" role="37wK5m">
                 <property role="Xl_RC" value="component" />
@@ -604,16 +618,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="153zJclTKjf" role="3cqZAp" />
-        <node concept="3clFbF" id="153zJclTKjg" role="3cqZAp">
-          <node concept="2YIFZM" id="153zJclTKjh" role="3clFbG">
-            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-            <ref role="37wK5l" to="fxhk:17FqOSBEPPO" resolve="prettyPrintResults" />
-            <node concept="37vLTw" id="153zJclTKji" role="37wK5m">
-              <ref role="3cqZAo" node="153zJclTKj3" resolve="results" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="153zJclTKjj" role="3cqZAp" />
         <node concept="3cpWs8" id="153zJclTKjk" role="3cqZAp">
           <node concept="3cpWsn" id="153zJclTKjl" role="3cpWs9">
             <property role="TrG5h" value="r0" />

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -64,7 +64,7 @@
         <property role="3F0ifm" value="check structure of" />
       </node>
       <node concept="3F1sOY" id="l6SLw3lTK1" role="3EZMnx">
-        <ref role="1NtTu8" to="7met:l6SLw3lTJY" />
+        <ref role="1NtTu8" to="7met:l6SLw3lTJY" resolve="rootElement" />
       </node>
       <node concept="3F0ifn" id="l6SLw3lTKe" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -73,7 +73,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="l6SLw3paNn" role="3EZMnx">
-        <ref role="1NtTu8" to="7met:l6SLw3paLx" />
+        <ref role="1NtTu8" to="7met:l6SLw3paLx" resolve="checkers" />
         <node concept="lj46D" id="l6SLw3paPI" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -100,13 +100,13 @@
         <property role="3F0ifm" value="property" />
       </node>
       <node concept="3F1sOY" id="l6SLw3lTQT" role="3EZMnx">
-        <ref role="1NtTu8" to="7met:l6SLw3lTQL" />
+        <ref role="1NtTu8" to="7met:l6SLw3lTQL" resolve="expected" />
       </node>
       <node concept="3F0ifn" id="l6SLw3lTR6" role="3EZMnx">
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="l6SLw3lTRn" role="3EZMnx">
-        <ref role="1NtTu8" to="7met:l6SLw3lTQO" />
+        <ref role="1NtTu8" to="7met:l6SLw3lTQO" resolve="actual" />
       </node>
       <node concept="l2Vlx" id="l6SLw3lTQx" role="2iSdaV" />
     </node>
@@ -118,7 +118,7 @@
         <property role="3F0ifm" value="condition" />
       </node>
       <node concept="3F1sOY" id="l6SLw3lTUC" role="3EZMnx">
-        <ref role="1NtTu8" to="7met:l6SLw3lTUb" />
+        <ref role="1NtTu8" to="7met:l6SLw3lTUb" resolve="condition" />
       </node>
       <node concept="3F0ifn" id="l6SLw3xvVQ" role="3EZMnx">
         <property role="3F0ifm" value=" " />
@@ -136,7 +136,7 @@
         <property role="3F0ifm" value="sequence" />
       </node>
       <node concept="3F1sOY" id="l6SLw3lTYI" role="3EZMnx">
-        <ref role="1NtTu8" to="7met:l6SLw3lTYF" />
+        <ref role="1NtTu8" to="7met:l6SLw3lTYF" resolve="sequence" />
       </node>
       <node concept="3F0ifn" id="l6SLw3lU0e" role="3EZMnx">
         <property role="3F0ifm" value="contains" />
@@ -156,7 +156,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="l6SLw3lUEn" role="3EZMnx">
-        <ref role="1NtTu8" to="7met:l6SLw3lUE8" />
+        <ref role="1NtTu8" to="7met:l6SLw3lUE8" resolve="elements" />
         <node concept="l2Vlx" id="l6SLw3lUEp" role="2czzBx" />
         <node concept="lj46D" id="l6SLw3m1pH" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -188,13 +188,13 @@
       </node>
       <node concept="3F1sOY" id="l6SLw3m22X" role="3EZMnx">
         <property role="1$x2rV" value="1" />
-        <ref role="1NtTu8" to="7met:l6SLw3m22j" />
+        <ref role="1NtTu8" to="7met:l6SLw3m22j" resolve="multiplier" />
       </node>
       <node concept="3F0ifn" id="l6SLw3m260" role="3EZMnx">
         <property role="3F0ifm" value="of type" />
       </node>
       <node concept="3F1sOY" id="l6SLw3m26v" role="3EZMnx">
-        <ref role="1NtTu8" to="7met:l6SLw3m25B" />
+        <ref role="1NtTu8" to="7met:l6SLw3m25B" resolve="subtype" />
       </node>
       <node concept="3F0ifn" id="l6SLw3m278" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -203,7 +203,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="l6SLw3paHJ" role="3EZMnx">
-        <ref role="1NtTu8" to="7met:l6SLw3paGd" />
+        <ref role="1NtTu8" to="7met:l6SLw3paGd" resolve="checkers" />
         <node concept="lj46D" id="l6SLw3paLr" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -220,7 +220,7 @@
   <node concept="24kQdi" id="l6SLw3paE5">
     <ref role="1XX52x" to="7met:l6SLw3paDi" resolve="CompositeChecker" />
     <node concept="3F2HdR" id="l6SLw3paEd" role="2wV5jI">
-      <ref role="1NtTu8" to="7met:l6SLw3paDU" />
+      <ref role="1NtTu8" to="7met:l6SLw3paDU" resolve="checkers" />
       <node concept="pj6Ft" id="l6SLw3paFW" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>

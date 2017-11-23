@@ -117,6 +117,10 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -136,10 +140,7 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -312,8 +313,8 @@
                       <node concept="2OqwBi" id="5B$wwdfhB5R" role="3clFbw">
                         <node concept="2OqwBi" id="5B$wwdfhA5u" role="2Oq$k0">
                           <node concept="1PxgMI" id="5B$wwdfh_Q1" role="2Oq$k0">
-                            <ref role="1PxNhF" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
-                            <node concept="2OqwBi" id="5B$wwdfh$aL" role="1PxMeX">
+                            <ref role="1m5ApE" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                            <node concept="2OqwBi" id="5B$wwdfh$aL" role="1m5AlR">
                               <node concept="2GrUjf" id="5B$wwdfh$8Z" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="3YyHFqO7DzL" resolve="target" />
                               </node>

@@ -10,7 +10,6 @@
   </languages>
   <imports>
     <import index="p3tm" ref="r:7b158038-abbe-4e11-b171-d5a959b4e91a(com.mbeddr.core.modules.typesystem)" />
-    <import index="go54" ref="r:a7e7800a-15b6-4c02-ae4d-6b40a48c7370(com.mbeddr.core.statements.typesystem)" />
     <import index="j807" ref="r:54210dde-4071-421e-b973-a22bb864eeac(com.mbeddr.core.pointers.typesystem)" />
   </imports>
   <registry>
@@ -283,9 +282,6 @@
       <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
     </language>
   </registry>
-  <node concept="2XOHcx" id="5h6rdrH6iYK">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
-  </node>
   <node concept="1lH9Xt" id="2QNVH28HPXA">
     <property role="TrG5h" value="DataflowTest_misc" />
     <node concept="1LZb2c" id="20xms4Afg0W" role="1SL9yI">
@@ -2774,6 +2770,9 @@
         <property role="TrG5h" value="doCheck" />
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="5h6rdrH6iYK">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
   </node>
 </model>
 

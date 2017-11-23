@@ -2,7 +2,7 @@
 <model ref="b33d119e-196d-4497-977c-5c167b21fe33/r:8077d170-2614-4b30-988b-3ce31615d69d(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -301,15 +301,20 @@
                   <node concept="2ShNRf" id="58xH_U7uWIo" role="37wK5m">
                     <node concept="1pGfFk" id="58xH_U7uXn2" role="2ShVmc">
                       <ref role="37wK5l" to="z60i:~BasicStroke.&lt;init&gt;(float)" resolve="BasicStroke" />
-                      <node concept="2OqwBi" id="7AjS6YEz2ak" role="37wK5m">
-                        <node concept="1rXfSq" id="7AjS6YEz1Ec" role="2Oq$k0">
-                          <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
-                        </node>
-                        <node concept="liA8E" id="7AjS6YEz2uU" role="2OqNvi">
-                          <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
-                          <node concept="1Z6Ecs" id="7AjS6YEz2xG" role="37wK5m">
-                            <ref role="1Z6EpT" to="epcs:7AjS6YEz03y" resolve="frame-width" />
+                      <node concept="2OqwBi" id="3__qLm0CDmh" role="37wK5m">
+                        <node concept="2OqwBi" id="7AjS6YEz2ak" role="2Oq$k0">
+                          <node concept="1rXfSq" id="7AjS6YEz1Ec" role="2Oq$k0">
+                            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
                           </node>
+                          <node concept="liA8E" id="7AjS6YEz2uU" role="2OqNvi">
+                            <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+                            <node concept="1Z6Ecs" id="7AjS6YEz2xG" role="37wK5m">
+                              <ref role="1Z6EpT" to="epcs:7AjS6YEz03y" resolve="frame-width" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3__qLm0CEcv" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Integer.intValue():int" resolve="intValue" />
                         </node>
                       </node>
                     </node>

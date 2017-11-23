@@ -9,6 +9,7 @@
     <import index="qozy" ref="r:38fcb48b-92c2-41af-9039-dc087bb8b822(com.mbeddr.ext.concurrency.behavior)" />
     <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="izv8" ref="r:0f1bbf76-e39a-467c-9afd-098f51838591(com.mbeddr.ext.concurrency.plainC.structure)" implicit="true" />
   </imports>
   <registry>
@@ -39,6 +40,9 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
@@ -176,6 +180,50 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="4PdWDflgRs$">
+    <property role="3GE5qa" value="internal" />
+    <ref role="13h7C2" to="izv8:42ri$nYm5NG" resolve="TaskDataPointerExpression" />
+    <node concept="13hLZK" id="4PdWDflgRs_" role="13h7CW">
+      <node concept="3clFbS" id="4PdWDflgRsA" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4PdWDflgRsW" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="4PdWDflgRsX" role="1B3o_S" />
+      <node concept="3clFbS" id="4PdWDflgRtk" role="3clF47">
+        <node concept="3clFbF" id="4PdWDflgShU" role="3cqZAp">
+          <node concept="Xl_RD" id="4PdWDflgShT" role="3clFbG">
+            <property role="Xl_RC" value="taskDataPointer" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4PdWDflgRtl" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4PdWDflhDQK">
+    <property role="3GE5qa" value="internal" />
+    <ref role="13h7C2" to="izv8:1TgsdXP$fAc" resolve="CurrentTimeExpression" />
+    <node concept="13hLZK" id="4PdWDflhDQL" role="13h7CW">
+      <node concept="3clFbS" id="4PdWDflhDQM" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4PdWDflhDR8" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="4PdWDflhDR9" role="1B3o_S" />
+      <node concept="3clFbS" id="4PdWDflhDRw" role="3clF47">
+        <node concept="3clFbF" id="4PdWDflhE1m" role="3cqZAp">
+          <node concept="Xl_RD" id="4PdWDflhE1l" role="3clFbG">
+            <property role="Xl_RC" value="currentTime" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4PdWDflhDRx" role="3clF45" />
     </node>
   </node>
 </model>

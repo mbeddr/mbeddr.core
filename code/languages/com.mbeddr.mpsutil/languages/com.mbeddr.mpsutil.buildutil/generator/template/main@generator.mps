@@ -13,9 +13,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="3ior" ref="798100da-4f0a-421a-b991-71f8c50ce5d2/r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build/jetbrains.mps.build.structure)" />
-    <import index="kdzh" ref="0cf935df-4699-4e9c-a132-fa109541cba3/r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps/jetbrains.mps.build.mps.structure)" />
-    <import index="tken" ref="0cf935df-4699-4e9c-a132-fa109541cba3/r:38bad86e-d92c-4ea7-ad52-a111dc6c2457(jetbrains.mps.build.mps/jetbrains.mps.build.mps.util)" />
+    <import index="3ior" ref="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" />
+    <import index="kdzh" ref="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" />
+    <import index="tken" ref="r:38bad86e-d92c-4ea7-ad52-a111dc6c2457(jetbrains.mps.build.mps.util)" />
     <import index="fnbo" ref="692e0a46-0d23-4c8a-8ce0-ea4c2266672a/r:d89d60fc-e488-474b-a7de-9d6e3b77d10d(com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.structure)" />
     <import index="bnx0" ref="r:94ac12e3-4c32-4cb6-8399-36bc96943d3d(com.mbeddr.mpsutil.buildutil.runtime.lib)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -77,13 +77,14 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -136,8 +137,8 @@
                   <node concept="3clFbF" id="6YaWssNZJM0" role="3cqZAp">
                     <node concept="2OqwBi" id="6YaWssNZJM1" role="3clFbG">
                       <node concept="1PxgMI" id="6YaWssNZJM2" role="2Oq$k0">
-                        <ref role="1PxNhF" to="fnbo:2gGfLsWQL6y" resolve="TransitivelyDependsOnBuildProjectOperation" />
-                        <node concept="2OqwBi" id="6YaWssNZJM3" role="1PxMeX">
+                        <ref role="1m5ApE" to="fnbo:2gGfLsWQL6y" resolve="TransitivelyDependsOnBuildProjectOperation" />
+                        <node concept="2OqwBi" id="6YaWssNZJM3" role="1m5AlR">
                           <node concept="3TrEf2" id="6YaWssNZJM4" role="2OqNvi">
                             <ref role="3Tt5mk" to="tpee:hqOqNr4" />
                           </node>
@@ -204,8 +205,8 @@
                   <node concept="3clFbF" id="6YaWssNZ2Y$" role="3cqZAp">
                     <node concept="2OqwBi" id="6YaWssNZ2Y_" role="3clFbG">
                       <node concept="1PxgMI" id="6YaWssNZ2YA" role="2Oq$k0">
-                        <ref role="1PxNhF" to="fnbo:6YaWssNZJ5X" resolve="HasDependencyOnBuildProjectOperation" />
-                        <node concept="2OqwBi" id="6YaWssNZ2YB" role="1PxMeX">
+                        <ref role="1m5ApE" to="fnbo:6YaWssNZJ5X" resolve="HasDependencyOnBuildProjectOperation" />
+                        <node concept="2OqwBi" id="6YaWssNZ2YB" role="1m5AlR">
                           <node concept="3TrEf2" id="6YaWssNZ2YC" role="2OqNvi">
                             <ref role="3Tt5mk" to="tpee:hqOqNr4" />
                           </node>
@@ -272,8 +273,8 @@
                   <node concept="3clFbF" id="2gGfLsWU109" role="3cqZAp">
                     <node concept="2OqwBi" id="2gGfLsWU10a" role="3clFbG">
                       <node concept="1PxgMI" id="2gGfLsWU10b" role="2Oq$k0">
-                        <ref role="1PxNhF" to="fnbo:2gGfLsWS1ZN" resolve="AddBuildProjectDependencyOperation" />
-                        <node concept="2OqwBi" id="2gGfLsWU10c" role="1PxMeX">
+                        <ref role="1m5ApE" to="fnbo:2gGfLsWS1ZN" resolve="AddBuildProjectDependencyOperation" />
+                        <node concept="2OqwBi" id="2gGfLsWU10c" role="1m5AlR">
                           <node concept="3TrEf2" id="2gGfLsWU10d" role="2OqNvi">
                             <ref role="3Tt5mk" to="tpee:hqOqNr4" />
                           </node>
@@ -299,8 +300,8 @@
                   <node concept="3clFbF" id="2gGfLsWU1m9" role="3cqZAp">
                     <node concept="2OqwBi" id="2gGfLsWU1pI" role="3clFbG">
                       <node concept="1PxgMI" id="2gGfLsWU1mb" role="2Oq$k0">
-                        <ref role="1PxNhF" to="fnbo:2gGfLsWS1ZN" resolve="AddBuildProjectDependencyOperation" />
-                        <node concept="2OqwBi" id="2gGfLsWU1mc" role="1PxMeX">
+                        <ref role="1m5ApE" to="fnbo:2gGfLsWS1ZN" resolve="AddBuildProjectDependencyOperation" />
+                        <node concept="2OqwBi" id="2gGfLsWU1mc" role="1m5AlR">
                           <node concept="3TrEf2" id="2gGfLsWU1md" role="2OqNvi">
                             <ref role="3Tt5mk" to="tpee:hqOqNr4" />
                           </node>

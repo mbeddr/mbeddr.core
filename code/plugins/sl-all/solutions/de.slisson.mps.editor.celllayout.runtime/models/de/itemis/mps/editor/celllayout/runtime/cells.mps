@@ -2,7 +2,7 @@
 <model ref="r:02240f59-d215-4642-b459-56f9f2ccb58d(de.itemis.mps.editor.celllayout.runtime.cells)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -12,8 +12,8 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="z0fb" ref="r:0b928dd6-dd7e-45a8-b309-a2e315b7877a(de.itemis.mps.editor.celllayout.styles.editor)" />
-    <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang()" implicit="true" />
+    <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -38,12 +38,14 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -91,11 +93,13 @@
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -106,6 +110,90 @@
   </registry>
   <node concept="312cEu" id="4U82Y3yZDCl">
     <property role="TrG5h" value="HorizontalLineCell" />
+    <node concept="Wx3nA" id="2iZPrFZnLjr" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="MARGIN_TOP" />
+      <node concept="3Tm6S6" id="2iZPrFZnLjn" role="1B3o_S" />
+      <node concept="3uibUv" id="2iZPrFZnLjo" role="1tU5fm">
+        <ref role="3uigEE" to="hox0:~StyleAttribute" resolve="StyleAttribute" />
+        <node concept="3uibUv" id="2iZPrFZnLjp" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+        </node>
+      </node>
+      <node concept="1Z6Ecs" id="2iZPrFZnLjq" role="33vP2m">
+        <ref role="1Z6EpT" to="z0fb:vtaHb5XoqY" resolve="_margin-top" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="2iZPrFZnLET" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="MARGIN_BOTTOM" />
+      <node concept="3Tm6S6" id="2iZPrFZnLEP" role="1B3o_S" />
+      <node concept="3uibUv" id="2iZPrFZnLEQ" role="1tU5fm">
+        <ref role="3uigEE" to="hox0:~StyleAttribute" resolve="StyleAttribute" />
+        <node concept="3uibUv" id="2iZPrFZnLER" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+        </node>
+      </node>
+      <node concept="1Z6Ecs" id="2iZPrFZnLES" role="33vP2m">
+        <ref role="1Z6EpT" to="z0fb:vtaHb5XorS" resolve="_margin-bottom" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="2iZPrFZnM2F" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="HORIZONTAL_LINE_WIDTH" />
+      <node concept="3Tm6S6" id="2iZPrFZnM2B" role="1B3o_S" />
+      <node concept="3uibUv" id="2iZPrFZnM2C" role="1tU5fm">
+        <ref role="3uigEE" to="hox0:~StyleAttribute" resolve="StyleAttribute" />
+        <node concept="3uibUv" id="2iZPrFZnM2D" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+        </node>
+      </node>
+      <node concept="1Z6Ecs" id="2iZPrFZnM2E" role="33vP2m">
+        <ref role="1Z6EpT" to="z0fb:43ViAfTrUko" resolve="_horizontal-line-width" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="2iZPrFZnMqF" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="HORIZONTAL_LINE_COLOR" />
+      <node concept="3Tm6S6" id="2iZPrFZnMqB" role="1B3o_S" />
+      <node concept="3uibUv" id="2iZPrFZnMqC" role="1tU5fm">
+        <ref role="3uigEE" to="hox0:~StyleAttribute" resolve="StyleAttribute" />
+        <node concept="3uibUv" id="2iZPrFZnMqD" role="11_B2D">
+          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+        </node>
+      </node>
+      <node concept="1Z6Ecs" id="2iZPrFZnMqE" role="33vP2m">
+        <ref role="1Z6EpT" to="z0fb:43ViAfTrUia" resolve="_horizontal-line-color" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="2iZPrFZnMN9" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="GROW_X" />
+      <node concept="3Tm6S6" id="2iZPrFZnMN5" role="1B3o_S" />
+      <node concept="3uibUv" id="2iZPrFZnMN6" role="1tU5fm">
+        <ref role="3uigEE" to="hox0:~StyleAttribute" resolve="StyleAttribute" />
+        <node concept="3uibUv" id="2iZPrFZnMN7" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+        </node>
+      </node>
+      <node concept="1Z6Ecs" id="2iZPrFZnMN8" role="33vP2m">
+        <ref role="1Z6EpT" to="z0fb:7lS0O5066sF" resolve="_grow-x" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="2iZPrFZnNch" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="PUSH_X" />
+      <node concept="3Tm6S6" id="2iZPrFZnNcd" role="1B3o_S" />
+      <node concept="3uibUv" id="2iZPrFZnNce" role="1tU5fm">
+        <ref role="3uigEE" to="hox0:~StyleAttribute" resolve="StyleAttribute" />
+        <node concept="3uibUv" id="2iZPrFZnNcf" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+        </node>
+      </node>
+      <node concept="1Z6Ecs" id="2iZPrFZnNcg" role="33vP2m">
+        <ref role="1Z6EpT" to="z0fb:7lS0O5066tP" resolve="_push-x" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="4U82Y3yZKRS" role="jymVt" />
     <node concept="3Tm1VV" id="4U82Y3yZDCm" role="1B3o_S" />
     <node concept="3uibUv" id="4U82Y3yZDZj" role="1zkMxy">
@@ -131,8 +219,8 @@
             </node>
             <node concept="liA8E" id="4U82Y3yZNKx" role="2OqNvi">
               <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
-              <node concept="1Z6Ecs" id="4U82Y3yZNT0" role="37wK5m">
-                <ref role="1Z6EpT" to="z0fb:7lS0O5066tP" resolve="_push-x" />
+              <node concept="37vLTw" id="2iZPrFZnNcp" role="37wK5m">
+                <ref role="3cqZAo" node="2iZPrFZnNch" resolve="PUSH_X" />
               </node>
               <node concept="3clFbT" id="4U82Y3yZOyR" role="37wK5m">
                 <property role="3clFbU" value="true" />
@@ -147,8 +235,8 @@
             </node>
             <node concept="liA8E" id="4U82Y3yZOUI" role="2OqNvi">
               <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
-              <node concept="1Z6Ecs" id="4U82Y3yZOUJ" role="37wK5m">
-                <ref role="1Z6EpT" to="z0fb:7lS0O5066sF" resolve="_grow-x" />
+              <node concept="37vLTw" id="2iZPrFZnMNh" role="37wK5m">
+                <ref role="3cqZAo" node="2iZPrFZnMN9" resolve="GROW_X" />
               </node>
               <node concept="3clFbT" id="4U82Y3yZOUK" role="37wK5m">
                 <property role="3clFbU" value="true" />
@@ -200,8 +288,8 @@
             </node>
             <node concept="liA8E" id="43ViAfTrXus" role="2OqNvi">
               <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
-              <node concept="1Z6Ecs" id="43ViAfTrXut" role="37wK5m">
-                <ref role="1Z6EpT" to="z0fb:43ViAfTrUia" resolve="_horizontal-line-color" />
+              <node concept="37vLTw" id="2iZPrFZnNZ$" role="37wK5m">
+                <ref role="3cqZAo" node="2iZPrFZnMqF" resolve="HORIZONTAL_LINE_COLOR" />
               </node>
               <node concept="37vLTw" id="43ViAfTrXGZ" role="37wK5m">
                 <ref role="3cqZAo" node="4U82Y3yZM6S" resolve="color" />
@@ -228,8 +316,8 @@
             </node>
             <node concept="liA8E" id="43ViAfTrYi4" role="2OqNvi">
               <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
-              <node concept="1Z6Ecs" id="43ViAfTrYi5" role="37wK5m">
-                <ref role="1Z6EpT" to="z0fb:43ViAfTrUko" resolve="_horizontal-line-width" />
+              <node concept="37vLTw" id="2iZPrFZnN_P" role="37wK5m">
+                <ref role="3cqZAo" node="2iZPrFZnM2F" resolve="HORIZONTAL_LINE_WIDTH" />
               </node>
               <node concept="37vLTw" id="43ViAfTrYs2" role="37wK5m">
                 <ref role="3cqZAo" node="4U82Y3yZMMR" resolve="lineWidth" />
@@ -256,8 +344,8 @@
             </node>
             <node concept="liA8E" id="4U82Y3z0z9K" role="2OqNvi">
               <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
-              <node concept="1Z6Ecs" id="4U82Y3z0zft" role="37wK5m">
-                <ref role="1Z6EpT" to="z0fb:vtaHb5XoqY" resolve="_margin-top" />
+              <node concept="37vLTw" id="2iZPrFZnLjz" role="37wK5m">
+                <ref role="3cqZAo" node="2iZPrFZnLjr" resolve="MARGIN_TOP" />
               </node>
               <node concept="37vLTw" id="4U82Y3z0zkU" role="37wK5m">
                 <ref role="3cqZAo" node="4U82Y3z0yIE" resolve="margin" />
@@ -284,8 +372,8 @@
             </node>
             <node concept="liA8E" id="4U82Y3z0zmc" role="2OqNvi">
               <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
-              <node concept="1Z6Ecs" id="4U82Y3z0zmd" role="37wK5m">
-                <ref role="1Z6EpT" to="z0fb:vtaHb5XorS" resolve="_margin-bottom" />
+              <node concept="37vLTw" id="2iZPrFZnLF1" role="37wK5m">
+                <ref role="3cqZAo" node="2iZPrFZnLET" resolve="MARGIN_BOTTOM" />
               </node>
               <node concept="37vLTw" id="4U82Y3z0zme" role="37wK5m">
                 <ref role="3cqZAo" node="4U82Y3z0zm4" resolve="margin" />
@@ -347,8 +435,8 @@
                     </node>
                     <node concept="liA8E" id="43ViAfTrY9Y" role="2OqNvi">
                       <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
-                      <node concept="1Z6Ecs" id="43ViAfTrY9Z" role="37wK5m">
-                        <ref role="1Z6EpT" to="z0fb:43ViAfTrUia" resolve="_horizontal-line-color" />
+                      <node concept="37vLTw" id="2iZPrFZnMqN" role="37wK5m">
+                        <ref role="3cqZAo" node="2iZPrFZnMqF" resolve="HORIZONTAL_LINE_COLOR" />
                       </node>
                     </node>
                   </node>
@@ -419,8 +507,8 @@
               </node>
               <node concept="liA8E" id="43ViAfTrZdo" role="2OqNvi">
                 <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
-                <node concept="1Z6Ecs" id="43ViAfTrZdp" role="37wK5m">
-                  <ref role="1Z6EpT" to="z0fb:43ViAfTrUko" resolve="_horizontal-line-width" />
+                <node concept="37vLTw" id="2iZPrFZnM2N" role="37wK5m">
+                  <ref role="3cqZAo" node="2iZPrFZnM2F" resolve="HORIZONTAL_LINE_WIDTH" />
                 </node>
               </node>
             </node>

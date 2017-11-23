@@ -50,13 +50,14 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1828409047608048457" name="jetbrains.mps.lang.smodel.structure.NodePointerExpression" flags="nn" index="1N_AGu">
         <reference id="1828409047608048458" name="referentNode" index="1N_AGt" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -69,8 +70,8 @@
         <node concept="3clFbF" id="eRZjv$WqrJ" role="3cqZAp">
           <node concept="37vLTI" id="eRZjv$WqJW" role="3clFbG">
             <node concept="1PxgMI" id="eRZjv$WL6G" role="37vLTx">
-              <ref role="1PxNhF" to="tp4k:hwtC5zi" resolve="ActionGroupDeclaration" />
-              <node concept="2OqwBi" id="eRZjv$WKQe" role="1PxMeX">
+              <ref role="1m5ApE" to="tp4k:hwtC5zi" resolve="ActionGroupDeclaration" />
+              <node concept="2OqwBi" id="eRZjv$WKQe" role="1m5AlR">
                 <node concept="1N_AGu" id="eRZjv$WKI2" role="2Oq$k0">
                   <ref role="1N_AGt" to="e4sx:eRZjv$WKyw" resolve="dummy" />
                 </node>

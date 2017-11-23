@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:c8f6abe2-4235-462a-965b-fe6307bc1863(com.mbeddr.analyses.spin.behavior)">
+  <persistence version="9" />
+  <languages>
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+  </languages>
+  <imports />
+  <registry />
+</model>
+

@@ -2,7 +2,7 @@
 <model ref="r:ae695312-4932-44b0-a686-07d695b8fe35(com.mbeddr.embedded.esp8266.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -71,7 +71,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="1EZSCJhb3J$" role="3EZMnx">
-        <ref role="1NtTu8" to="bq7f:1EZSCJhb09e" />
+        <ref role="1NtTu8" to="bq7f:1EZSCJhb09e" resolve="sdk" />
       </node>
       <node concept="3F0ifn" id="4BxItZJ4Bp4" role="3EZMnx">
         <property role="3F0ifm" value="xtensa:" />
@@ -83,7 +83,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="1EZSCJhb3Kk" role="3EZMnx">
-        <ref role="1NtTu8" to="bq7f:1EZSCJhaZJ0" />
+        <ref role="1NtTu8" to="bq7f:1EZSCJhaZJ0" resolve="xtensaRoot" />
       </node>
       <node concept="3F0ifn" id="6_CUGSFAbG0" role="3EZMnx">
         <property role="3F0ifm" value="port:" />
@@ -124,7 +124,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="1EZSCJhe6Dy" role="3EZMnx">
-        <ref role="1NtTu8" to="bq7f:1EZSCJhe5KJ" />
+        <ref role="1NtTu8" to="bq7f:1EZSCJhe5KJ" resolve="body" />
       </node>
       <node concept="l2Vlx" id="1EZSCJhe6D6" role="2iSdaV" />
     </node>

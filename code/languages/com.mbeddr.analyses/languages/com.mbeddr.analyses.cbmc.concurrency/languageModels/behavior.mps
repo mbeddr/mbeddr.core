@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="th2u" ref="r:0d1aaf3f-8f5d-43b9-be00-7a4293d0c172(com.mbeddr.analyses.cbmc.behavior)" />
+    <import index="i1of" ref="r:34d92fb4-3bcd-4a16-881f-8e6acf83c737(com.mbeddr.analyses.base.verification_conditions.behavior)" />
     <import index="nok9" ref="r:071dfb19-bba7-4a45-a209-478de09a1fc8(com.mbeddr.analyses.cbmc.concurrency.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -83,7 +84,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getMessage" />
-      <ref role="13i0hy" to="th2u:3V3CJZuMSfi" resolve="getMessage" />
+      <ref role="13i0hy" to="i1of:3V3CJZuMSfi" resolve="getMessage" />
       <node concept="3Tm1VV" id="3V3CJZuMTCi" role="1B3o_S" />
       <node concept="3clFbS" id="3V3CJZuMTCl" role="3clF47">
         <node concept="3clFbF" id="3V3CJZuzvQr" role="3cqZAp">
@@ -104,7 +105,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getMessage" />
-      <ref role="13i0hy" to="th2u:3V3CJZuMSfi" resolve="getMessage" />
+      <ref role="13i0hy" to="i1of:3V3CJZuMSfi" resolve="getMessage" />
       <node concept="3Tm1VV" id="3V3CJZuMTCT" role="1B3o_S" />
       <node concept="3clFbS" id="3V3CJZuMTCW" role="3clF47">
         <node concept="3cpWs6" id="3V3CJZuMXvU" role="3cqZAp">
@@ -113,7 +114,7 @@
               <node concept="2OqwBi" id="3V3CJZuMVBm" role="2Oq$k0">
                 <node concept="13iPFW" id="3V3CJZuMVwn" role="2Oq$k0" />
                 <node concept="3TrEf2" id="3V3CJZuMW13" role="2OqNvi">
-                  <ref role="3Tt5mk" to="nok9:3V3CJZuKQVX" />
+                  <ref role="3Tt5mk" to="nok9:3V3CJZuKQVX" resolve="second" />
                 </node>
               </node>
               <node concept="3TrcHB" id="3V3CJZuPg2o" role="2OqNvi">
@@ -125,7 +126,7 @@
                 <node concept="2OqwBi" id="3V3CJZuMTIg" role="2Oq$k0">
                   <node concept="13iPFW" id="3V3CJZuMTD2" role="2Oq$k0" />
                   <node concept="3TrEf2" id="3V3CJZuMU5h" role="2OqNvi">
-                    <ref role="3Tt5mk" to="nok9:3V3CJZuKQVQ" />
+                    <ref role="3Tt5mk" to="nok9:3V3CJZuKQVQ" resolve="first" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="3V3CJZuPf4o" role="2OqNvi">

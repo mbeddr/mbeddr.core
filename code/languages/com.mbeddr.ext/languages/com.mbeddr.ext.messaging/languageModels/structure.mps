@@ -2,7 +2,8 @@
 <model ref="r:030bc2d0-ab1f-4013-9326-cb8d964c9de2(com.mbeddr.ext.messaging.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,8 +16,8 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -30,6 +31,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -45,17 +47,19 @@
   <node concept="1TIwiD" id="6MQ2rNXIlg1">
     <property role="TrG5h" value="MessageDeclaration" />
     <property role="34LRSv" value="message" />
-    <property role="1pbfSe" value="1785683389" />
+    <property role="EcuMT" value="7833459309172839425" />
     <node concept="1TJgyj" id="6MQ2rNXJFfn" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="id" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="7833459309173191639" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="6MQ2rNXJFfp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="members" />
       <property role="20lbJX" value="1..n" />
+      <property role="IQ2ns" value="7833459309173191641" />
       <ref role="20lvS9" node="6MQ2rNXJFf4" resolve="MessageMember" />
     </node>
     <node concept="PrWs8" id="6MQ2rNXJFf2" role="PzmwI">
@@ -67,12 +71,13 @@
   </node>
   <node concept="1TIwiD" id="6MQ2rNXJAO$">
     <property role="TrG5h" value="MessageType" />
-    <property role="1pbfSe" value="1786017504" />
+    <property role="EcuMT" value="7833459309173173540" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="1TJgyj" id="2hvQkqcLEjv" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="decl" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2621052405185684703" />
       <ref role="20lvS9" node="6MQ2rNXIlg1" resolve="MessageDeclaration" />
     </node>
     <node concept="PrWs8" id="2hvQkqcMFPh" role="PzmwI">
@@ -81,7 +86,7 @@
   </node>
   <node concept="1TIwiD" id="6MQ2rNXJFf4">
     <property role="TrG5h" value="MessageMember" />
-    <property role="1pbfSe" value="1786035584" />
+    <property role="EcuMT" value="7833459309173191620" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6MQ2rNXJFf5" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
@@ -92,18 +97,20 @@
   </node>
   <node concept="1TIwiD" id="2hvQkqcPm0v">
     <property role="TrG5h" value="MessageMemberInitExpr" />
-    <property role="1pbfSe" value="1321911963" />
+    <property role="EcuMT" value="2621052405186650143" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="2hvQkqcRa5B" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2621052405187125607" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="2hvQkqcPt92" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="member" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2621052405186679362" />
       <ref role="20lvS9" node="6MQ2rNXJFf4" resolve="MessageMember" />
     </node>
     <node concept="PrWs8" id="2hvQkqcRKzY" role="PzmwI">
@@ -113,12 +120,13 @@
   <node concept="1TIwiD" id="2hvQkqcWqnP">
     <property role="TrG5h" value="SendDotTarget" />
     <property role="34LRSv" value="send" />
-    <property role="1pbfSe" value="1320059077" />
+    <property role="EcuMT" value="2621052405188503029" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2hvQkqcWqnU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="message" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2621052405188503034" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="2hvQkqcWqnQ" role="PzmwI">
@@ -129,36 +137,40 @@
     <property role="TrG5h" value="MessageReceiveStatement" />
     <property role="34LRSv" value="receive from" />
     <property role="3GE5qa" value="receive" />
-    <property role="1pbfSe" value="1319138803" />
+    <property role="EcuMT" value="2621052405189423303" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="2hvQkqcZVlB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="serCtx" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2621052405189424487" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="2hvQkqcZVlD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="handler" />
       <property role="20lbJX" value="1..n" />
+      <property role="IQ2ns" value="2621052405189424489" />
       <ref role="20lvS9" node="2hvQkqcZV6v" resolve="MessageReceiveHandler" />
     </node>
   </node>
   <node concept="1TIwiD" id="2hvQkqcZV6v">
     <property role="TrG5h" value="MessageReceiveHandler" />
     <property role="3GE5qa" value="receive" />
-    <property role="1pbfSe" value="1319138587" />
+    <property role="EcuMT" value="2621052405189423519" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2hvQkqd0JfY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2621052405189637118" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
     <node concept="1TJgyj" id="2hvQkqd0JfW" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="msg" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2621052405189637116" />
       <ref role="20lvS9" node="6MQ2rNXIlg1" resolve="MessageDeclaration" />
     </node>
   </node>
@@ -166,12 +178,12 @@
     <property role="TrG5h" value="MessageExpression" />
     <property role="34LRSv" value="msg" />
     <property role="3GE5qa" value="receive" />
-    <property role="1pbfSe" value="1318839771" />
+    <property role="EcuMT" value="2621052405189722335" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="2hvQkqd1$WE">
     <property role="TrG5h" value="MessageMemberTarget" />
-    <property role="1pbfSe" value="1318705040" />
+    <property role="EcuMT" value="2621052405189857066" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2hvQkqd1$WL" role="PzmwI">
       <ref role="PrY4T" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
@@ -180,13 +192,14 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="member" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="2621052405189857075" />
       <ref role="20lvS9" node="6MQ2rNXJFf4" resolve="MessageMember" />
     </node>
   </node>
   <node concept="1TIwiD" id="2hvQkqd3RcE">
     <property role="TrG5h" value="AnonymousMessageType" />
     <property role="34LRSv" value="message" />
-    <property role="1pbfSe" value="1318106000" />
+    <property role="EcuMT" value="2621052405190456106" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
   </node>
 </model>

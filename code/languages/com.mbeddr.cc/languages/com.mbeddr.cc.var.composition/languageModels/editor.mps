@@ -2,7 +2,7 @@
 <model ref="r:cbcf1573-e9f3-4829-a7ec-4101a2386c4c(com.mbeddr.cc.var.composition.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -157,7 +157,7 @@
         <property role="3F0ifm" value="binary" />
       </node>
       <node concept="1iCGBv" id="3YyHFqO0w4u" role="3EZMnx">
-        <ref role="1NtTu8" to="11rw:3YyHFqO0tTi" />
+        <ref role="1NtTu8" to="11rw:3YyHFqO0tTi" resolve="binary" />
         <node concept="1sVBvm" id="3YyHFqO0w4v" role="1sWHZn">
           <node concept="3F0A7n" id="3YyHFqO0w4C" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -211,7 +211,7 @@
             <property role="3F0ifm" value="scope" />
           </node>
           <node concept="3F1sOY" id="3YyHFqO14u_" role="3EZMnx">
-            <ref role="1NtTu8" to="11rw:3YyHFqO0LwK" />
+            <ref role="1NtTu8" to="11rw:3YyHFqO0LwK" resolve="scope" />
           </node>
         </node>
         <node concept="3EZMnI" id="3YyHFqO1a1b" role="3EZMnx">
@@ -220,7 +220,7 @@
             <property role="3F0ifm" value="compose-only chunks:" />
           </node>
           <node concept="3F2HdR" id="3YyHFqO1a1p" role="3EZMnx">
-            <ref role="1NtTu8" to="11rw:3YyHFqO19VG" />
+            <ref role="1NtTu8" to="11rw:3YyHFqO19VG" resolve="compositionChunks" />
             <node concept="2iRkQZ" id="3YyHFqO1a1u" role="2czzBx" />
             <node concept="3F0ifn" id="3YyHFqO1a1x" role="2czzBI">
               <property role="3F0ifm" value="" />
@@ -249,7 +249,7 @@
     <property role="3GE5qa" value="build" />
     <ref role="1XX52x" to="11rw:3YyHFqO1fOH" resolve="ComposeChunkRef" />
     <node concept="1iCGBv" id="3YyHFqO1fP9" role="2wV5jI">
-      <ref role="1NtTu8" to="11rw:3YyHFqO1fOI" />
+      <ref role="1NtTu8" to="11rw:3YyHFqO1fOI" resolve="chunk" />
       <node concept="1sVBvm" id="3YyHFqO1fPa" role="1sWHZn">
         <node concept="3F0A7n" id="3YyHFqO1fPo" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -288,7 +288,7 @@
           <ref role="1ERwB7" node="5be2k4jT5A6" resolve="deleteAnnotation" />
         </node>
         <node concept="3F1sOY" id="3YyHFqO5xWs" role="3EZMnx">
-          <ref role="1NtTu8" to="11rw:3YyHFqO5xVY" />
+          <ref role="1NtTu8" to="11rw:3YyHFqO5xVY" resolve="matchStrategy" />
         </node>
         <node concept="3F0ifn" id="5B$wwdfpOgc" role="3EZMnx">
           <property role="3F0ifm" value="?" />
@@ -304,11 +304,11 @@
                     <node concept="2OqwBi" id="5B$wwdfpOxH" role="2Oq$k0">
                       <node concept="pncrf" id="5B$wwdfpOsj" role="2Oq$k0" />
                       <node concept="3TrEf2" id="5B$wwdfpQK6" role="2OqNvi">
-                        <ref role="3Tt5mk" to="11rw:3YyHFqO5xVY" />
+                        <ref role="3Tt5mk" to="11rw:3YyHFqO5xVY" resolve="matchStrategy" />
                       </node>
                     </node>
                     <node concept="3TrEf2" id="5B$wwdfpRy9" role="2OqNvi">
-                      <ref role="3Tt5mk" to="11rw:5B$wwdfmUtU" />
+                      <ref role="3Tt5mk" to="11rw:5B$wwdfmUtU" resolve="pointcut" />
                     </node>
                   </node>
                 </node>
@@ -320,7 +320,7 @@
           <property role="3F0ifm" value="-&gt;" />
         </node>
         <node concept="3F1sOY" id="3YyHFqO6ln4" role="3EZMnx">
-          <ref role="1NtTu8" to="11rw:3YyHFqO6lm$" />
+          <ref role="1NtTu8" to="11rw:3YyHFqO6lm$" resolve="compositionStrategy" />
         </node>
         <node concept="3F0ifn" id="3YyHFqO5xWi" role="3EZMnx">
           <property role="3F0ifm" value="]" />
@@ -343,7 +343,7 @@
         <property role="3F0ifm" value="same concept by ref:" />
       </node>
       <node concept="1iCGBv" id="3YyHFqO5_ta" role="3EZMnx">
-        <ref role="1NtTu8" to="11rw:3YyHFqO5_sz" />
+        <ref role="1NtTu8" to="11rw:3YyHFqO5_sz" resolve="ref" />
         <node concept="1sVBvm" id="3YyHFqO5_tb" role="1sWHZn">
           <node concept="3F0A7n" id="3YyHFqO5_tn" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -417,7 +417,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5be2k4jYbg3" role="3EZMnx">
-        <ref role="1NtTu8" to="11rw:5be2k4jYbg1" />
+        <ref role="1NtTu8" to="11rw:5be2k4jYbg1" resolve="op" />
         <ref role="1k5W1q" node="3YyHFqO5oWz" resolve="annotations" />
       </node>
       <node concept="3F0ifn" id="5be2k4jXNRj" role="3EZMnx">
@@ -447,7 +447,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5be2k4jZ3Dn" role="3EZMnx">
-        <ref role="1NtTu8" to="11rw:5be2k4jZ3D4" />
+        <ref role="1NtTu8" to="11rw:5be2k4jZ3D4" resolve="location" />
       </node>
     </node>
   </node>
@@ -511,7 +511,7 @@
         <property role="3F0ifm" value="condition" />
       </node>
       <node concept="3F1sOY" id="5B$wwdfmUv9" role="3EZMnx">
-        <ref role="1NtTu8" to="11rw:5B$wwdfmUtU" />
+        <ref role="1NtTu8" to="11rw:5B$wwdfmUtU" resolve="pointcut" />
       </node>
     </node>
   </node>

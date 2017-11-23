@@ -165,6 +165,10 @@
       <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
@@ -189,10 +193,7 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -860,8 +861,8 @@
                             <node concept="2OqwBi" id="4oNjwzxsQjE" role="3cqZAk">
                               <node concept="2OqwBi" id="4oNjwzxsL8L" role="2Oq$k0">
                                 <node concept="1PxgMI" id="4oNjwzxsKMk" role="2Oq$k0">
-                                  <ref role="1PxNhF" to="iqxq:53_zXRSOXY" resolve="PatternBuilderList" />
-                                  <node concept="2OqwBi" id="4oNjwzxsJTt" role="1PxMeX">
+                                  <ref role="1m5ApE" to="iqxq:53_zXRSOXY" resolve="PatternBuilderList" />
+                                  <node concept="2OqwBi" id="4oNjwzxsJTt" role="1m5AlR">
                                     <node concept="30H73N" id="4oNjwzxsJN_" role="2Oq$k0" />
                                     <node concept="3TrEf2" id="$WtIWnynj6" role="2OqNvi">
                                       <ref role="3Tt5mk" to="iqxq:4IP40Bi2KcQ" />

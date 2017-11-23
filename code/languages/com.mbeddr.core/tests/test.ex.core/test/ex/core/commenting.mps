@@ -64,6 +64,7 @@
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
@@ -117,9 +118,6 @@
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
-      <concept id="5950410542643524492" name="com.mbeddr.core.modules.structure.FunctionCall" flags="ng" index="3O_q_g">
-        <reference id="5950410542643524493" name="function" index="3O_q_h" />
-      </concept>
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz">
         <child id="2771264470558526601" name="init" index="1cecVj" />
       </concept>
@@ -745,20 +743,7 @@
           </node>
         </node>
         <node concept="3XISUE" id="4LLYoS44Si" role="3XIRFZ" />
-        <node concept="1X3_iC" id="6BsOKKG1dBJ" role="lGtFl">
-          <property role="3V$3am" value="statements" />
-          <property role="3V$3ak" value="a9d69647-0840-491e-bf39-2eb0805d2011/4185783222026475861/4185783222026475862" />
-          <node concept="1_9egQ" id="6BsOKKG1dBF" role="8Wnug">
-            <node concept="2BOciq" id="6BsOKKG1dBG" role="1_9egR">
-              <node concept="3TlMh9" id="6BsOKKG1dBH" role="3TlMhJ">
-                <property role="2hmy$m" value="2" />
-              </node>
-              <node concept="3O_q_g" id="6BsOKKG1dBI" role="3TlMhI">
-                <ref role="3O_q_h" node="3jCcpnp1H9r" resolve="main" />
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="3XISUE" id="3N5$iCDw6o7" role="3XIRFZ" />
         <node concept="3XISUE" id="4LLYoS8w9Q" role="3XIRFZ" />
         <node concept="3XISUE" id="4LLYoSbqWn" role="3XIRFZ" />
         <node concept="1QiMYF" id="7QNKF_rYxAH" role="3XIRFZ">
@@ -797,6 +782,7 @@
     <node concept="2eOfOl" id="3jCcpnp1H9p" role="2ePNbc">
       <property role="TrG5h" value="Commenting" />
       <property role="iO3LB" value="true" />
+      <ref role="3oK8_y" to="1ok9:4LhGMnjfiNC" resolve="portable" />
       <node concept="2v9HqM" id="3jCcpnp1H9q" role="2eOfOg">
         <ref role="2v9HqP" node="3jCcpnp1H8B" resolve="AModule" />
       </node>

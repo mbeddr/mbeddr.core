@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -134,7 +134,7 @@
         </node>
         <node concept="1iCGBv" id="Uhkfo4GMeR" role="3EZMnx">
           <property role="1$x2rV" value="first" />
-          <ref role="1NtTu8" to="r5xn:Uhkfo4G1LT" />
+          <ref role="1NtTu8" to="r5xn:Uhkfo4G1LT" resolve="reference" />
           <node concept="1sVBvm" id="Uhkfo4GMeT" role="1sWHZn">
             <node concept="3SHvHV" id="Uhkfo4GMf2" role="2wV5jI" />
           </node>
@@ -148,11 +148,11 @@
           <property role="3F0ifm" value="expected scope contents:" />
         </node>
         <node concept="3F1sOY" id="Uhkfo4FZKc" role="3EZMnx">
-          <ref role="1NtTu8" to="r5xn:Uhkfo4FJp5" />
+          <ref role="1NtTu8" to="r5xn:Uhkfo4FJp5" resolve="kind" />
         </node>
       </node>
       <node concept="3F2HdR" id="Uhkfo4FZJE" role="3EZMnx">
-        <ref role="1NtTu8" to="r5xn:Uhkfo4FJib" />
+        <ref role="1NtTu8" to="r5xn:Uhkfo4FJib" resolve="expectedScopeContents" />
         <node concept="2iRkQZ" id="Uhkfo4FZJG" role="2czzBx" />
       </node>
       <node concept="2iRkQZ" id="Uhkfo4FZJz" role="2iSdaV" />
@@ -163,7 +163,7 @@
     <node concept="3EZMnI" id="Uhkfo4Gde7" role="2wV5jI">
       <node concept="1iCGBv" id="Uhkfo4Gdee" role="3EZMnx">
         <property role="1$x2rV" value="select target" />
-        <ref role="1NtTu8" to="r5xn:Uhkfo4FJie" />
+        <ref role="1NtTu8" to="r5xn:Uhkfo4FJie" resolve="target" />
         <node concept="1sVBvm" id="Uhkfo4Gdeg" role="1sWHZn">
           <node concept="3SHvHV" id="Uhkfo4Gden" role="2wV5jI" />
         </node>
@@ -178,7 +178,7 @@
                     <node concept="2EnYce" id="7eG1RIauDQw" role="2Oq$k0">
                       <node concept="pncrf" id="Uhkfo4GdfQ" role="2Oq$k0" />
                       <node concept="3TrEf2" id="Uhkfo4Geex" role="2OqNvi">
-                        <ref role="3Tt5mk" to="r5xn:Uhkfo4FJie" />
+                        <ref role="3Tt5mk" to="r5xn:Uhkfo4FJie" resolve="target" />
                       </node>
                     </node>
                     <node concept="2yIwOk" id="Uhkfo4GdoQ" role="2OqNvi" />

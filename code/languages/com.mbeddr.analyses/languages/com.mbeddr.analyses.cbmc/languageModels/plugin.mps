@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -48,7 +48,6 @@
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
       <concept id="3729007189729192406" name="jetbrains.mps.lang.extension.structure.ExtensionPointDeclaration" flags="ng" index="vrV6u">
-        <property id="5911785528834333590" name="extensionName" index="20vvCb" />
         <child id="8029776554053057803" name="objectType" index="luc8K" />
       </concept>
       <concept id="126958800891274162" name="jetbrains.mps.lang.extension.structure.Extension" flags="ig" index="1lYeZD">
@@ -76,31 +75,31 @@
   </registry>
   <node concept="2DaZZR" id="3Hq87cj$2Yi" />
   <node concept="vrV6u" id="58S6eLQM0$n">
-    <property role="20vvCb" value="AssignmentsLifterProvider" />
+    <property role="TrG5h" value="AssignmentsLifterProvider" />
     <node concept="3uibUv" id="58S6eLQM0$o" role="luc8K">
       <ref role="3uigEE" to="8ear:7iLQIU34QN7" resolve="CounterexampleLifterBase" />
     </node>
   </node>
   <node concept="vrV6u" id="58S6eLQNVyr">
-    <property role="20vvCb" value="FunctionCallsLifterProvider" />
+    <property role="TrG5h" value="FunctionCallsLifterProvider" />
     <node concept="3uibUv" id="58S6eLQNVBm" role="luc8K">
       <ref role="3uigEE" to="8ear:7iLQIU37gC6" resolve="FunctionCallsAndReturnsLifterBase" />
     </node>
   </node>
   <node concept="vrV6u" id="58S6eLQNVBz">
-    <property role="20vvCb" value="FunctionReturnsLifterProvider" />
+    <property role="TrG5h" value="FunctionReturnsLifterProvider" />
     <node concept="3uibUv" id="58S6eLQNVB$" role="luc8K">
       <ref role="3uigEE" to="8ear:7iLQIU37gC6" resolve="FunctionCallsAndReturnsLifterBase" />
     </node>
   </node>
   <node concept="vrV6u" id="576QrOJctw9">
-    <property role="20vvCb" value="FailuresLifterProvider" />
+    <property role="TrG5h" value="FailuresLifterProvider" />
     <node concept="3uibUv" id="576QrOJcEar" role="luc8K">
       <ref role="3uigEE" to="8ear:7iLQIU34QN7" resolve="CounterexampleLifterBase" />
     </node>
   </node>
   <node concept="vrV6u" id="67iKQ7oGe0U">
-    <property role="20vvCb" value="LocationsLifterProvider" />
+    <property role="TrG5h" value="LocationsLifterProvider" />
     <node concept="3uibUv" id="67iKQ7oGe0V" role="luc8K">
       <ref role="3uigEE" to="8ear:7iLQIU34QN7" resolve="CounterexampleLifterBase" />
     </node>

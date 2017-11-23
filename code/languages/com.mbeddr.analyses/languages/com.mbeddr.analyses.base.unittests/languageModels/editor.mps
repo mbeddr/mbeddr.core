@@ -2,7 +2,7 @@
 <model ref="r:4256640a-6763-428e-be83-493e9ca6d58d(com.mbeddr.analyses.base.unittests.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
   </languages>
   <imports>
     <import index="1b9n" ref="r:95fb8574-9ce6-4567-a8e8-253c9bdeb164(com.mbeddr.analyses.base.unittests.structure)" />
@@ -67,7 +67,7 @@
       </node>
       <node concept="3F1sOY" id="3iRIfZ2nblG" role="3EZMnx">
         <property role="1$x2rV" value="expected" />
-        <ref role="1NtTu8" to="1b9n:3iRIfZ2nbly" />
+        <ref role="1NtTu8" to="1b9n:3iRIfZ2nbly" resolve="lineNumber" />
       </node>
       <node concept="3F0ifn" id="3iRIfZ2nblH" role="3EZMnx">
         <property role="3F0ifm" value="equals" />
@@ -77,7 +77,7 @@
       </node>
       <node concept="3F1sOY" id="3iRIfZ2nblJ" role="3EZMnx">
         <property role="1$x2rV" value="actual" />
-        <ref role="1NtTu8" to="1b9n:3iRIfZ2nblz" />
+        <ref role="1NtTu8" to="1b9n:3iRIfZ2nblz" resolve="expected" />
       </node>
       <node concept="3F0ifn" id="3iRIfZ2nblK" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -116,7 +116,7 @@
         </node>
         <node concept="3XFhqQ" id="3iRIfZ2nblY" role="3EZMnx" />
         <node concept="3F2HdR" id="3iRIfZ2nblZ" role="3EZMnx">
-          <ref role="1NtTu8" to="1b9n:3iRIfZ2nbl_" />
+          <ref role="1NtTu8" to="1b9n:3iRIfZ2nbl_" resolve="lines" />
           <node concept="2iRkQZ" id="3iRIfZ2nbm0" role="2czzBx" />
         </node>
         <node concept="l2Vlx" id="3iRIfZ2nbm1" role="2iSdaV" />

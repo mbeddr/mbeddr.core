@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="80515795-6cd1-4659-9f1c-7b6dfde4bf59" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="80515795-6cd1-4659-9f1c-7b6dfde4bf59" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
   <name>Package mbeddr Tutorial</name>
   <description />
   <settings ref="RequiresMpsExtions">
@@ -45,23 +45,23 @@ mv %teamcity.build.checkoutDir%/mbeddr.core/code/applications/com.mbeddr.tutoria
     <requirements />
     <build-triggers />
     <artifact-dependencies>
-      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="false">
+      <dependency id="ARTIFACT_DEPENDENCY_93" sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%mps.artifact-rule%" />
       </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_GenerateBuildScripts" cleanDestination="false">
+      <dependency id="ARTIFACT_DEPENDENCY_94" sourceBuildTypeId="Mbeddr2_Bootstrap_GenerateBuildScripts" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%buildscripts.artifact-rule%" />
       </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Build_BuildLanguages" cleanDestination="false">
+      <dependency id="ARTIFACT_DEPENDENCY_95" sourceBuildTypeId="Mbeddr2_Build_BuildLanguages" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
       </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Mbeddr_Build_BuildTutorial" cleanDestination="false">
+      <dependency id="ARTIFACT_DEPENDENCY_96" sourceBuildTypeId="Mbeddr2_Mbeddr_Build_BuildTutorial" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
       </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Build_BuildSlAll" cleanDestination="false">
+      <dependency id="ARTIFACT_DEPENDENCY_97" sourceBuildTypeId="Mbeddr2_Build_BuildSlAll" cleanDestination="false">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
       </dependency>

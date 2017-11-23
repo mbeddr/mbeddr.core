@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -400,7 +400,7 @@
       </node>
       <node concept="3F0ifn" id="5ReuVUpd28C" role="3EZMnx" />
       <node concept="3F2HdR" id="7LkwBl9HKIt" role="3EZMnx">
-        <ref role="1NtTu8" to="au0v:5FJiYrlIpAq" />
+        <ref role="1NtTu8" to="au0v:5FJiYrlIpAq" resolve="actions" />
         <node concept="2iRkQZ" id="7LkwBl9HKIv" role="2czzBx" />
         <node concept="4$FPG" id="1TS1BLORAfK" role="4_6I_">
           <node concept="3clFbS" id="1TS1BLORAfL" role="2VODD2">
@@ -1237,7 +1237,7 @@
                                                   <ref role="3cqZAo" node="7LkwBl9I0MB" resolve="myNode" />
                                                 </node>
                                                 <node concept="3Tsc0h" id="5FJiYrlJmxg" role="2OqNvi">
-                                                  <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" />
+                                                  <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" resolve="actions" />
                                                 </node>
                                               </node>
                                               <node concept="2DeJg1" id="7LkwBl9K2QH" role="2OqNvi">
@@ -1284,7 +1284,7 @@
                                                     <ref role="3cqZAo" node="7LkwBl9I0MB" resolve="myNode" />
                                                   </node>
                                                   <node concept="3Tsc0h" id="5ReuVUpdx3M" role="2OqNvi">
-                                                    <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" />
+                                                    <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" resolve="actions" />
                                                   </node>
                                                 </node>
                                                 <node concept="2DeJg1" id="5ReuVUpdx3N" role="2OqNvi">
@@ -1342,7 +1342,7 @@
                                           <ref role="3cqZAo" node="7LkwBl9I0MB" resolve="myNode" />
                                         </node>
                                         <node concept="3Tsc0h" id="5FJiYrlJlja" role="2OqNvi">
-                                          <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" />
+                                          <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" resolve="actions" />
                                         </node>
                                       </node>
                                       <node concept="1aUR6E" id="7LkwBl9K7lA" role="2OqNvi">
@@ -1408,7 +1408,7 @@
                                       <ref role="3cqZAo" node="7LkwBl9I0MB" resolve="myNode" />
                                     </node>
                                     <node concept="3Tsc0h" id="5FJiYrlJnLk" role="2OqNvi">
-                                      <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" />
+                                      <ref role="3TtcxE" to="au0v:5FJiYrlIpAq" resolve="actions" />
                                     </node>
                                   </node>
                                   <node concept="1z4cxt" id="7LkwBl9JSUu" role="2OqNvi">

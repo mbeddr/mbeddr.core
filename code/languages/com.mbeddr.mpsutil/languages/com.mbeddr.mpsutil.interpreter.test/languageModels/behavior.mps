@@ -35,6 +35,9 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -87,6 +90,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
@@ -409,6 +415,12 @@
                   <ref role="3cqZAo" node="27Skbdzgkqm" resolve="interpreter" />
                 </node>
               </node>
+              <node concept="BsUDl" id="4_qY3E73_NO" role="37wK5m">
+                <ref role="37wK5l" node="4_qY3E73$v_" resolve="createCoverageAnalyzer" />
+              </node>
+              <node concept="3clFbT" id="5ya_dKpN523" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
             </node>
           </node>
         </node>
@@ -464,6 +476,24 @@
               <node concept="37vLTw" id="6glrYM_6jqM" role="37wK5m">
                 <ref role="3cqZAo" node="6glrYM_6jqK" resolve="interpreter" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4_qY3E73$v_" role="13h7CS">
+      <property role="2Ki8OM" value="false" />
+      <property role="TrG5h" value="createCoverageAnalyzer" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tmbuc" id="4_qY3E73$vA" role="1B3o_S" />
+      <node concept="3uibUv" id="4_qY3E73Afn" role="3clF45">
+        <ref role="3uigEE" to="2ahs:4_qY3E5ifTh" resolve="ICoverageAnalyzer" />
+      </node>
+      <node concept="3clFbS" id="4_qY3E73$vE" role="3clF47">
+        <node concept="3cpWs6" id="4_qY3E73$vF" role="3cqZAp">
+          <node concept="2ShNRf" id="4_qY3E73$vG" role="3cqZAk">
+            <node concept="HV5vD" id="4_qY3E73_bE" role="2ShVmc">
+              <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
             </node>
           </node>
         </node>
