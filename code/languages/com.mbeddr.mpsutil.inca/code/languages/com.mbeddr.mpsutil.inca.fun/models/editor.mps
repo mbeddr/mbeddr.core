@@ -102,9 +102,6 @@
       <concept id="7342352913006985483" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Action" flags="ng" index="3eGOop">
         <child id="8612453216082699922" name="substituteHandler" index="3aKz83" />
       </concept>
-      <concept id="414384289274424754" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_AddConcept" flags="ng" index="3ft5Ry">
-        <reference id="697754674827630451" name="concept" index="4PJHt" />
-      </concept>
       <concept id="414384289274418283" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Group" flags="ng" index="3ft6gV">
         <child id="414384289274424750" name="condition" index="3ft5RY" />
         <child id="414384289274424751" name="parts" index="3ft5RZ" />
@@ -1879,13 +1876,6 @@
   <node concept="3p36aQ" id="3p0ky8LQHz9">
     <property role="3GE5qa" value="expression" />
     <ref role="aqKnT" to="ebqt:RjyNapPkSs" resolve="PatternFunctionCall" />
-  </node>
-  <node concept="3p36aQ" id="3p0ky8LTaWD">
-    <property role="3GE5qa" value="misc" />
-    <ref role="aqKnT" to="ebqt:1ERTnBTfavv" resolve="PatternFunction" />
-    <node concept="3ft5Ry" id="3p0ky8LTaWE" role="3ft7WO">
-      <ref role="4PJHt" to="ebqt:1ERTnBTfavv" resolve="PatternFunction" />
-    </node>
   </node>
   <node concept="3p36aQ" id="1suAdVkIphb">
     <property role="3GE5qa" value="misc" />
