@@ -6,10 +6,20 @@
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="2" />
+    <use id="f44f6b9a-bf30-4f73-866e-fac17c177409" name="com.mbeddr.doc.gen_latex" version="0" />
+    <use id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml" version="1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="983e02f8-8062-426e-b60d-bc044a46b93a" name="com.mbeddr.cc.requirements.report" version="0" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="iwll" ref="r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d(mbeddr.tutorial.main.req)" />
+  </imports>
   <registry>
+    <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
+      <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+    </language>
     <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
       <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ng" index="3vooZZ">
         <property id="8039098920897639409" name="attachedCellId" index="19LeSh" />
@@ -30,10 +40,18 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="4400783559374052800" name="com.mbeddr.doc.structure.EmphFormattedText" flags="ng" index="28N2ik" />
+      <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
+        <child id="6165313375055797477" name="text" index="$DsGW" />
+      </concept>
       <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
+      </concept>
+      <concept id="6386504476136554612" name="com.mbeddr.doc.structure.PathMapping" flags="ng" index="2SbEIf">
+        <property id="6386504476136554614" name="mappedPath" index="2SbEId" />
+        <reference id="6386504476136554613" name="pathDef" index="2SbEIe" />
       </concept>
       <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
@@ -48,8 +66,20 @@
         <property id="126932837435370852" name="email" index="Wq1Bq" />
         <property id="126932837435370851" name="name" index="Wq1Bt" />
       </concept>
+      <concept id="6068976060904002601" name="com.mbeddr.doc.structure.AbstractExport" flags="ng" index="30Gg6V">
+        <child id="6068976060904007487" name="renderer" index="30GjaH" />
+        <child id="6068976060904007490" name="mappings" index="30Gjbg" />
+        <child id="6068976060904007488" name="inactiveRenderer" index="30Gjbi" />
+        <child id="6068976060904007489" name="root" index="30Gjbj" />
+      </concept>
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
+      </concept>
+      <concept id="3350625596580256366" name="com.mbeddr.doc.structure.DocumentExport" flags="ng" index="1_08Dk">
+        <property id="126932837435324910" name="title" index="WqcPg" />
+      </concept>
+      <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
+        <reference id="3350625596580225386" name="doc" index="1_0j5g" />
       </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="5185579450379273128" name="header" index="1xAIax" />
@@ -73,10 +103,17 @@
         <child id="8624890525767800827" name="spec" index="3SH5f7" />
       </concept>
     </language>
+    <language id="f44f6b9a-bf30-4f73-866e-fac17c177409" name="com.mbeddr.doc.gen_latex">
+      <concept id="4457500422381351715" name="com.mbeddr.doc.gen_latex.structure.LatexRenderer" flags="ng" index="1jVoCB">
+        <property id="4755612053022149513" name="prolog" index="43dxY" />
+        <property id="4457500422381351717" name="documentClass" index="1jVoCx" />
+      </concept>
+    </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
@@ -95,6 +132,11 @@
       <concept id="5378658552263151447" name="com.mbeddr.doc.expressions.structure.Equation" flags="ng" index="3XpXCz">
         <child id="5378658552263151448" name="rvalue" index="3XpXCG" />
         <child id="5378658552263151449" name="lvalue" index="3XpXCH" />
+      </concept>
+    </language>
+    <language id="983e02f8-8062-426e-b60d-bc044a46b93a" name="com.mbeddr.cc.requirements.report">
+      <concept id="5785245534400474241" name="com.mbeddr.cc.requirements.report.structure.RequirementsParagraph" flags="ng" index="C4VUC">
+        <reference id="5785245534400474242" name="module" index="C4VUF" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -263,6 +305,95 @@
     </node>
     <node concept="1_1sxE" id="G4T4hEvDFe" role="1_0VJ0">
       <property role="TrG5h" value="empty_1362234784534_11" />
+    </node>
+  </node>
+  <node concept="2SbYGP" id="519ky_SmMST">
+    <property role="3GE5qa" value="report" />
+    <property role="TrG5h" value="Config" />
+    <node concept="2SbYGw" id="519ky_SpGLu" role="Cbewh">
+      <property role="TrG5h" value="temp" />
+      <node concept="9PVaO" id="2vBUIEiugPA" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="temp" />
+      </node>
+    </node>
+    <node concept="A7cYH" id="4PBxP34YM2w" role="A10yx">
+      <property role="TrG5h" value="images" />
+      <node concept="9PVaO" id="4PBxP34YM2x" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images" />
+      </node>
+    </node>
+  </node>
+  <node concept="1_08Dk" id="519ky_SmMT8">
+    <property role="3GE5qa" value="report" />
+    <property role="TrG5h" value="RequirementsReport" />
+    <property role="WqcPg" value="Requirements for Flight Judgement" />
+    <node concept="1_0j5j" id="519ky_SmMTb" role="30Gjbj">
+      <ref role="1_0j5g" node="519ky_SmMSS" resolve="requirementsReport" />
+    </node>
+    <node concept="2SbEIf" id="7IezpGAfN_l" role="30Gjbg">
+      <property role="2SbEId" value="_vis" />
+      <ref role="2SbEIe" node="519ky_SpGLu" resolve="temp" />
+    </node>
+    <node concept="1jVoCB" id="5cV09KeG4gt" role="30GjaH">
+      <property role="43dxY" value="mbeddr-prolog.ltx" />
+      <property role="1jVoCx" value="article" />
+    </node>
+    <node concept="1_07dB" id="5cV09KeG4gu" role="30Gjbi" />
+  </node>
+  <node concept="1_1swa" id="519ky_SmMSS">
+    <property role="TrG5h" value="requirementsReport" />
+    <property role="3GE5qa" value="report" />
+    <property role="yApLE" value="1" />
+    <ref role="G9hjw" node="519ky_SmMST" resolve="Config" />
+    <node concept="1_0VNX" id="519ky_SmMSZ" role="1_0VJ0">
+      <property role="TrG5h" value="intro" />
+      <property role="1_0VJr" value="Introduction" />
+      <node concept="1_0LV8" id="519ky_SmMT0" role="1_0VJ0">
+        <node concept="19SGf9" id="519ky_SmMT1" role="1_0LWR">
+          <node concept="19SUe$" id="519ky_SmMT2" role="19SJt6">
+            <property role="19SUeA" value="This document contains the requirements for the flight judgement rules. \nIt is automatically generated from the requirements document. As of now,\nthis is still a demo. For example, cross-references between requirements\nare still missing. Also, many of the texts are simply " />
+          </node>
+          <node concept="28N2ik" id="3OiIliPS5AG" role="19SJt6">
+            <node concept="19SGf9" id="3OiIliPS5AH" role="$DsGW">
+              <node concept="19SUe$" id="3OiIliPS5AI" role="19SJt6">
+                <property role="19SUeA" value="lorem ipsums" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="3OiIliPS5AF" role="19SJt6">
+            <property role="19SUeA" value="." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1_1sxE" id="519ky_SmWGf" role="1_0VJ0">
+      <property role="TrG5h" value="empty_1363362083279_3" />
+    </node>
+    <node concept="1_0VNX" id="2HzhasNz0qP" role="1_0VJ0">
+      <property role="TrG5h" value="req" />
+      <property role="1_0VJr" value="Requirements" />
+      <node concept="C4VUC" id="519ky_SmMT7" role="1_0VJ0">
+        <ref role="C4VUF" to="iwll:1fAuj8TwdSV" resolve="FlightJudgementRules" />
+      </node>
+      <node concept="C4VUC" id="519ky_Spkqd" role="1_0VJ0">
+        <ref role="C4VUF" to="iwll:72IKZbjZLi7" resolve="ArchitecturalComponents" />
+      </node>
+      <node concept="C4VUC" id="519ky_Spkqf" role="1_0VJ0">
+        <ref role="C4VUF" to="iwll:5YVZL2kzViv" resolve="UseCases" />
+      </node>
+    </node>
+    <node concept="1_1sxE" id="2HzhasNz0qO" role="1_0VJ0">
+      <property role="TrG5h" value="empty_1363510699098_2" />
+    </node>
+    <node concept="1_1sxE" id="519ky_SmMSV" role="1_0VJ0">
+      <property role="TrG5h" value="empty_1363360812865_2" />
+    </node>
+    <node concept="1_1sxE" id="519ky_SmMSW" role="1_0VJ0">
+      <property role="TrG5h" value="empty_1363360812993_3" />
     </node>
   </node>
 </model>
