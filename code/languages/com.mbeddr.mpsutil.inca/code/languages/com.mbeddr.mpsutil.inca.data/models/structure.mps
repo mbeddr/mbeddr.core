@@ -152,26 +152,6 @@
     <property role="3GE5qa" value="definition" />
     <property role="TrG5h" value="ILatticeDefinitionModuleContent" />
   </node>
-  <node concept="1TIwiD" id="7tOfV2_EoD2">
-    <property role="EcuMT" value="8607574815738006082" />
-    <property role="TrG5h" value="MeetOperation" />
-    <property role="34LRSv" value="glb" />
-    <property role="3GE5qa" value="definition" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7tOfV2_EoDF" role="PzmwI">
-      <ref role="PrY4T" node="7tOfV2_AEhe" resolve="ILatticeElementCombinator" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7tOfV2_EoVl">
-    <property role="EcuMT" value="8607574815738007253" />
-    <property role="TrG5h" value="JoinOperation" />
-    <property role="34LRSv" value="lub" />
-    <property role="3GE5qa" value="definition" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7tOfV2_EoVY" role="PzmwI">
-      <ref role="PrY4T" node="7tOfV2_AEhe" resolve="ILatticeElementCombinator" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="6fy2FM6rc9J">
     <property role="EcuMT" value="7197326959316877935" />
     <property role="TrG5h" value="IMatchCase" />
@@ -325,9 +305,6 @@
     <node concept="PrWs8" id="3l0M8IaBI9I" role="PzmwI">
       <ref role="PrY4T" node="3l0M8IaBI9_" resolve="IDataConstructorCall" />
     </node>
-    <node concept="RPilO" id="5JQC2dmn0k7" role="lGtFl">
-      <ref role="RPilL" node="3l0M8IaBI9A" resolve="dataConstructor" />
-    </node>
   </node>
   <node concept="PlHQZ" id="3l0M8IaBI9_">
     <property role="EcuMT" value="3837287384171340389" />
@@ -363,9 +340,6 @@
     </node>
     <node concept="PrWs8" id="4K3_GpArMim" role="PzmwI">
       <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
-    </node>
-    <node concept="RPilO" id="5JQC2dmn0kb" role="lGtFl">
-      <ref role="RPilL" node="3l0M8IaAFF8" resolve="constructor" />
     </node>
   </node>
   <node concept="PlHQZ" id="3l0M8IajUvc">
@@ -650,21 +624,27 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="465N1Z1sbyB">
-    <property role="EcuMT" value="4721404221129275559" />
-    <property role="3GE5qa" value="definition" />
-    <property role="TrG5h" value="NoneOperation" />
-    <property role="34LRSv" value="none" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="465N1Z1sbyC" role="PzmwI">
-      <ref role="PrY4T" node="7tOfV2_AEhe" resolve="ILatticeElementCombinator" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="465N1Z1tAip">
     <property role="EcuMT" value="4721404221129647257" />
     <property role="3GE5qa" value="definition" />
     <property role="TrG5h" value="Lattice" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1rEZ6Y2nNzy">
+    <property role="EcuMT" value="1651409769243556066" />
+    <property role="3GE5qa" value="definition" />
+    <property role="TrG5h" value="JavaMethodCombinator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1rEZ6Y2nNzJ" role="1TKVEi">
+      <property role="IQ2ns" value="1651409769243556079" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="method" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+    </node>
+    <node concept="PrWs8" id="1rEZ6Y2nNzz" role="PzmwI">
+      <ref role="PrY4T" node="7tOfV2_AEhe" resolve="ILatticeElementCombinator" />
+    </node>
   </node>
 </model>
 
