@@ -373,6 +373,9 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -2946,14 +2949,24 @@
                       </node>
                     </node>
                     <node concept="3cpWs6" id="348dMqppFmv" role="3cqZAp">
-                      <node concept="2OqwBi" id="348dMqppFmw" role="3cqZAk">
-                        <node concept="37vLTw" id="348dMqpsimh" role="2Oq$k0">
-                          <ref role="3cqZAo" node="348dMqpsimc" resolve="name" />
+                      <node concept="22lmx$" id="3r_GFXp2vk0" role="3cqZAk">
+                        <node concept="2OqwBi" id="3r_GFXp2_lz" role="3uHU7w">
+                          <node concept="1GpqW3" id="3r_GFXp2$ZK" role="2Oq$k0" />
+                          <node concept="2Zo12i" id="3r_GFXp2_P4" role="2OqNvi">
+                            <node concept="chp4Y" id="3r_GFXp2A30" role="2Zo12j">
+                              <ref role="cht4Q" to="hqsm:7a3nU351sZC" resolve="ISharedPatternModuleContent" />
+                            </node>
+                          </node>
                         </node>
-                        <node concept="liA8E" id="348dMqppFm$" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-                          <node concept="Xl_RD" id="348dMqppFm_" role="37wK5m">
-                            <property role="Xl_RC" value="com.mbeddr.mpsutil.inca.fun" />
+                        <node concept="2OqwBi" id="348dMqppFmw" role="3uHU7B">
+                          <node concept="37vLTw" id="348dMqpsimh" role="2Oq$k0">
+                            <ref role="3cqZAo" node="348dMqpsimc" resolve="name" />
+                          </node>
+                          <node concept="liA8E" id="348dMqppFm$" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                            <node concept="Xl_RD" id="348dMqppFm_" role="37wK5m">
+                              <property role="Xl_RC" value="com.mbeddr.mpsutil.inca.fun" />
+                            </node>
                           </node>
                         </node>
                       </node>
