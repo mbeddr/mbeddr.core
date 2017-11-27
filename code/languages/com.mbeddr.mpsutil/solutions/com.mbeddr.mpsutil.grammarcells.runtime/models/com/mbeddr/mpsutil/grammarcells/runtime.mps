@@ -61,6 +61,7 @@
     <import index="78sh" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.substitute(MPS.Editor/)" />
     <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
     <import index="pjrh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter(MPS.Core/)" />
+    <import index="x4mf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus(MPS.Editor/)" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
@@ -27271,6 +27272,13 @@
         <ref role="3uigEE" to="78sh:~SubstituteMenuContext" resolve="SubstituteMenuContext" />
       </node>
     </node>
+    <node concept="312cEg" id="4Fanv3Xd3zg" role="jymVt">
+      <property role="TrG5h" value="trace" />
+      <node concept="3Tm6S6" id="4Fanv3Xd3zh" role="1B3o_S" />
+      <node concept="3uibUv" id="4Fanv3Xd43x" role="1tU5fm">
+        <ref role="3uigEE" to="x4mf:~EditorMenuTraceInfo" resolve="EditorMenuTraceInfo" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="7NlRaxAJR11" role="jymVt" />
     <node concept="3uibUv" id="7NlRaxAJWCA" role="1zkMxy">
       <ref role="3uigEE" to="qtqj:~DefaultSubstituteMenuItem" resolve="DefaultSubstituteMenuItem" />
@@ -27329,6 +27337,26 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4Fanv3Xd4Wv" role="3cqZAp">
+          <node concept="37vLTI" id="4Fanv3Xd5dD" role="3clFbG">
+            <node concept="2OqwBi" id="4Fanv3Xd5JO" role="37vLTx">
+              <node concept="2OqwBi" id="4Fanv3Xd5tH" role="2Oq$k0">
+                <node concept="37vLTw" id="4Fanv3Xd5mH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7NlRaxAJXKA" resolve="context" />
+                </node>
+                <node concept="liA8E" id="4Fanv3Xd5Bb" role="2OqNvi">
+                  <ref role="37wK5l" to="78sh:~SubstituteMenuContext.getEditorMenuTrace():jetbrains.mps.openapi.editor.menus.EditorMenuTrace" resolve="getEditorMenuTrace" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4Fanv3Xd635" role="2OqNvi">
+                <ref role="37wK5l" to="x4mf:~EditorMenuTrace.getTraceInfo():jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo" resolve="getTraceInfo" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="4Fanv3Xd4Wt" role="37vLTJ">
+              <ref role="3cqZAo" node="4Fanv3Xd3zg" resolve="trace" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="7NlRaxAJR1x" role="3clF46">
         <property role="TrG5h" value="parentNode" />
@@ -27361,6 +27389,27 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7NlRaxAJR1S" role="jymVt" />
+    <node concept="3clFb_" id="4Fanv3Xd4aG" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getTraceInfo" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="4Fanv3Xd4aH" role="1B3o_S" />
+      <node concept="3uibUv" id="4Fanv3Xd4aJ" role="3clF45">
+        <ref role="3uigEE" to="x4mf:~EditorMenuTraceInfo" resolve="EditorMenuTraceInfo" />
+      </node>
+      <node concept="3clFbS" id="4Fanv3Xd4aK" role="3clF47">
+        <node concept="3clFbF" id="4Fanv3Xd4IX" role="3cqZAp">
+          <node concept="37vLTw" id="4Fanv3Xd4IU" role="3clFbG">
+            <ref role="3cqZAo" node="4Fanv3Xd3zg" resolve="trace" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4Fanv3Xd4aL" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4Fanv3Xd674" role="jymVt" />
     <node concept="3clFb_" id="7NlRaxAJR1T" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getMatchingText" />
