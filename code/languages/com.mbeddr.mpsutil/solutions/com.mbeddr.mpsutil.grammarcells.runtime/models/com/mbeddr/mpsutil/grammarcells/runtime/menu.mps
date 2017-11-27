@@ -27,6 +27,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" />
+    <import index="x4mf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -333,6 +334,13 @@
         <ref role="3uigEE" to="uddc:~TransformationMenuContext" resolve="TransformationMenuContext" />
       </node>
     </node>
+    <node concept="312cEg" id="4Fanv3UR54W" role="jymVt">
+      <property role="TrG5h" value="trace" />
+      <node concept="3Tm6S6" id="4Fanv3UR54X" role="1B3o_S" />
+      <node concept="3uibUv" id="4Fanv3UR6zm" role="1tU5fm">
+        <ref role="3uigEE" to="x4mf:~EditorMenuTraceInfo" resolve="EditorMenuTraceInfo" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="My09KinCNP" role="jymVt" />
     <node concept="3clFbW" id="My09KinEek" role="jymVt">
       <node concept="3cqZAl" id="My09KinEel" role="3clF45" />
@@ -348,6 +356,26 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4Fanv3URf9d" role="3cqZAp">
+          <node concept="37vLTI" id="4Fanv3URfJE" role="3clFbG">
+            <node concept="2OqwBi" id="4Fanv3URgB3" role="37vLTx">
+              <node concept="2OqwBi" id="4Fanv3URgo4" role="2Oq$k0">
+                <node concept="37vLTw" id="4Fanv3URgfR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="My09KinEer" resolve="context" />
+                </node>
+                <node concept="liA8E" id="4Fanv3URgvY" role="2OqNvi">
+                  <ref role="37wK5l" to="uddc:~TransformationMenuContext.getEditorMenuTrace():jetbrains.mps.openapi.editor.menus.EditorMenuTrace" resolve="getEditorMenuTrace" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4Fanv3URgK8" role="2OqNvi">
+                <ref role="37wK5l" to="x4mf:~EditorMenuTrace.getTraceInfo():jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo" resolve="getTraceInfo" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="4Fanv3URf9b" role="37vLTJ">
+              <ref role="3cqZAo" node="4Fanv3UR54W" resolve="trace" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="My09KinEer" role="3clF46">
         <property role="TrG5h" value="context" />
@@ -357,6 +385,30 @@
       </node>
     </node>
     <node concept="2tJIrI" id="My09Kin_LS" role="jymVt" />
+    <node concept="3clFb_" id="4Fanv3UR5IV" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getTraceInfo" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="4Fanv3UR5IW" role="1B3o_S" />
+      <node concept="2AHcQZ" id="4Fanv3UR5IY" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="3uibUv" id="4Fanv3UR5IZ" role="3clF45">
+        <ref role="3uigEE" to="x4mf:~EditorMenuTraceInfo" resolve="EditorMenuTraceInfo" />
+      </node>
+      <node concept="3clFbS" id="4Fanv3UR5J5" role="3clF47">
+        <node concept="3clFbF" id="4Fanv3UR7y5" role="3cqZAp">
+          <node concept="37vLTw" id="4Fanv3UR7y4" role="3clFbG">
+            <ref role="3cqZAo" node="4Fanv3UR54W" resolve="trace" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4Fanv3UR5J6" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4Fanv3UR82H" role="jymVt" />
     <node concept="3Tm1VV" id="1YKLYyyGBzU" role="1B3o_S" />
     <node concept="3uibUv" id="1YKLYyyGCs5" role="EKbjA">
       <ref role="3uigEE" to="6lvu:~SideTransformCompletionActionItem" resolve="SideTransformCompletionActionItem" />
