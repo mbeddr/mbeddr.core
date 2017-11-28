@@ -3558,16 +3558,6 @@
                 </node>
               </node>
             </node>
-            <node concept="1_9egQ" id="67DSmmslXPd" role="3XIRFZ">
-              <node concept="3pqW6w" id="67DSmmslXZG" role="1_9egR">
-                <node concept="3ZUYvv" id="67DSmmslYkL" role="3TlMhJ">
-                  <ref role="3ZUYvu" node="1pVBHwpeQ$n" resolve="tp" />
-                </node>
-                <node concept="EbZIE" id="67DSmmslXPb" role="3TlMhI">
-                  <ref role="EbZID" node="1w5Xuj1RQ0H" resolve="storedTP" />
-                </node>
-              </node>
-            </node>
             <node concept="2BFjQ_" id="R7C7bPxT_X" role="3XIRFZ" />
           </node>
           <node concept="2EWDw0" id="1w5Xuj1RQ0g" role="2EWDeT">
@@ -5790,13 +5780,6 @@
           <ref role="1zztin" node="6GXPbpLjGfl" resolve="beforeFlight" />
           <node concept="349iI2" id="6GXPbpLjGgd" role="2qxFSM">
             <ref role="1bNv6r" node="6GXPbpLjGg1" resolve="reset" />
-          </node>
-          <node concept="1z9TsT" id="KaB72$QZG6" role="lGtFl">
-            <node concept="OjmMv" id="KaB72$QZG7" role="1w35rA">
-              <node concept="19SGf9" id="KaB72$QZG8" role="OjmMu">
-                <node concept="19SUe$" id="KaB72$QZG9" role="19SJt6" />
-              </node>
-            </node>
           </node>
         </node>
       </node>
