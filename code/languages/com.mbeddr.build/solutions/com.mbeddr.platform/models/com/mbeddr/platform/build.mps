@@ -12734,6 +12734,12 @@
               <ref role="3bR37D" to="ffeo:7YI57w6K0iE" resolve="jetbrains.mps.lang.editor#1129914002149" />
             </node>
           </node>
+          <node concept="1SiIV0" id="4Fanv3X94yr" role="3bR37C">
+            <node concept="3bR9La" id="4Fanv3X94ys" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="4lwBYGqDsSZ" role="3bR37C">
           <node concept="3bR9La" id="4lwBYGqDsT0" role="1SiIV1">
