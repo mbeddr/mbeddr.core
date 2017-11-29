@@ -3880,138 +3880,149 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4QICnJ5Jd0u" role="3cqZAp" />
-        <node concept="3clFbJ" id="4QICnJ5Jb8N" role="3cqZAp">
-          <node concept="3clFbS" id="4QICnJ5Jb8P" role="3clFbx">
-            <node concept="3clFbF" id="4QICnJ5JcCD" role="3cqZAp">
-              <node concept="2OqwBi" id="4QICnJ5JcCE" role="3clFbG">
-                <node concept="2YIFZM" id="4QICnJ5JcCK" role="2Oq$k0">
-                  <ref role="1Pybhc" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
-                  <ref role="37wK5l" to="3qmy:~ClassLoaderManager.getInstance():jetbrains.mps.classloading.ClassLoaderManager" resolve="getInstance" />
-                </node>
-                <node concept="liA8E" id="4QICnJ5JcCG" role="2OqNvi">
-                  <ref role="37wK5l" to="3qmy:~ClassLoaderManager.removeClassesHandler(jetbrains.mps.classloading.MPSClassesListener):void" resolve="removeClassesHandler" />
-                  <node concept="37vLTw" id="4QICnJ5JcCH" role="37wK5m">
-                    <ref role="3cqZAo" node="4QICnJ5Heu5" resolve="myClassesListener" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="4QICnJ5JdCV" role="3clFbw">
-            <node concept="37vLTw" id="4QICnJ5JdrW" role="2Oq$k0">
-              <ref role="3cqZAo" node="4QICnJ5Jd1r" resolve="myDescriptor" />
-            </node>
-            <node concept="liA8E" id="4QICnJ5JdJr" role="2OqNvi">
-              <ref role="37wK5l" to="imq3:4QICnJ5Fgq$" resolve="rebuildOnClassLoad" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4QICnJ5Je38" role="3cqZAp" />
-        <node concept="3clFbJ" id="4QICnJ5JeWU" role="3cqZAp">
-          <node concept="3clFbS" id="4QICnJ5JeWW" role="3clFbx">
-            <node concept="3clFbJ" id="4QICnJ5JbFT" role="3cqZAp">
-              <node concept="2YIFZM" id="4QICnJ5JbGq" role="3clFbw">
-                <ref role="1Pybhc" to="hfuk:7yGn3z4MRqM" resolve="IMakeService.INSTANCE" />
-                <ref role="37wK5l" to="hfuk:mmOAtMHTPM" resolve="hasMakeService" />
-              </node>
-              <node concept="3clFbS" id="4QICnJ5JbFW" role="3clFbx">
-                <node concept="3clFbF" id="4QICnJ5JbFX" role="3cqZAp">
-                  <node concept="2OqwBi" id="4QICnJ5JbFY" role="3clFbG">
-                    <node concept="2YIFZM" id="4QICnJ5JbGt" role="2Oq$k0">
-                      <ref role="1Pybhc" to="hfuk:7yGn3z4MRqM" resolve="IMakeService.INSTANCE" />
-                      <ref role="37wK5l" to="hfuk:7yGn3z4MRr2" resolve="get" />
+        <node concept="3clFbH" id="1MRbFm2qeLy" role="3cqZAp" />
+        <node concept="3clFbJ" id="1MRbFm2qk7L" role="3cqZAp">
+          <node concept="3clFbS" id="1MRbFm2qk7N" role="3clFbx">
+            <node concept="3clFbJ" id="4QICnJ5Jb8N" role="3cqZAp">
+              <node concept="3clFbS" id="4QICnJ5Jb8P" role="3clFbx">
+                <node concept="3clFbF" id="4QICnJ5JcCD" role="3cqZAp">
+                  <node concept="2OqwBi" id="4QICnJ5JcCE" role="3clFbG">
+                    <node concept="2YIFZM" id="4QICnJ5JcCK" role="2Oq$k0">
+                      <ref role="1Pybhc" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
+                      <ref role="37wK5l" to="3qmy:~ClassLoaderManager.getInstance():jetbrains.mps.classloading.ClassLoaderManager" resolve="getInstance" />
                     </node>
-                    <node concept="liA8E" id="4QICnJ5JbG0" role="2OqNvi">
-                      <ref role="37wK5l" to="hfuk:7lTD6YZtjhT" resolve="removeListener" />
-                      <node concept="37vLTw" id="4QICnJ5JbG1" role="37wK5m">
-                        <ref role="3cqZAo" node="4QICnJ5Heuo" resolve="myMakeNotificationListener" />
+                    <node concept="liA8E" id="4QICnJ5JcCG" role="2OqNvi">
+                      <ref role="37wK5l" to="3qmy:~ClassLoaderManager.removeClassesHandler(jetbrains.mps.classloading.MPSClassesListener):void" resolve="removeClassesHandler" />
+                      <node concept="37vLTw" id="4QICnJ5JcCH" role="37wK5m">
+                        <ref role="3cqZAo" node="4QICnJ5Heu5" resolve="myClassesListener" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="4QICnJ5JfxI" role="3clFbw">
-            <node concept="37vLTw" id="4QICnJ5Jfkb" role="2Oq$k0">
-              <ref role="3cqZAo" node="4QICnJ5Jd1r" resolve="myDescriptor" />
-            </node>
-            <node concept="liA8E" id="4QICnJ5JfFH" role="2OqNvi">
-              <ref role="37wK5l" to="imq3:4QICnJ5Fg$g" resolve="rebuildOnMake" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="4QICnJ5JgBl" role="3cqZAp">
-          <node concept="3clFbS" id="4QICnJ5JgBn" role="3clFbx">
-            <node concept="3clFbF" id="4QICnJ5JbG2" role="3cqZAp">
-              <node concept="2OqwBi" id="4QICnJ5JbG3" role="3clFbG">
-                <node concept="2YIFZM" id="4QICnJ5JbGw" role="2Oq$k0">
-                  <ref role="1Pybhc" to="jlff:~VirtualFileManager" resolve="VirtualFileManager" />
-                  <ref role="37wK5l" to="jlff:~VirtualFileManager.getInstance():com.intellij.openapi.vfs.VirtualFileManager" resolve="getInstance" />
+              <node concept="2OqwBi" id="4QICnJ5JdCV" role="3clFbw">
+                <node concept="37vLTw" id="4QICnJ5JdrW" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4QICnJ5Jd1r" resolve="myDescriptor" />
                 </node>
-                <node concept="liA8E" id="4QICnJ5JbG5" role="2OqNvi">
-                  <ref role="37wK5l" to="jlff:~VirtualFileManager.removeVirtualFileManagerListener(com.intellij.openapi.vfs.VirtualFileManagerListener):void" resolve="removeVirtualFileManagerListener" />
-                  <node concept="37vLTw" id="4QICnJ5JbG6" role="37wK5m">
-                    <ref role="3cqZAo" node="4QICnJ5HetR" resolve="myRefreshListener" />
+                <node concept="liA8E" id="4QICnJ5JdJr" role="2OqNvi">
+                  <ref role="37wK5l" to="imq3:4QICnJ5Fgq$" resolve="rebuildOnClassLoad" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="4QICnJ5Je38" role="3cqZAp" />
+            <node concept="3clFbJ" id="4QICnJ5JeWU" role="3cqZAp">
+              <node concept="3clFbS" id="4QICnJ5JeWW" role="3clFbx">
+                <node concept="3clFbJ" id="4QICnJ5JbFT" role="3cqZAp">
+                  <node concept="2YIFZM" id="4QICnJ5JbGq" role="3clFbw">
+                    <ref role="1Pybhc" to="hfuk:7yGn3z4MRqM" resolve="IMakeService.INSTANCE" />
+                    <ref role="37wK5l" to="hfuk:mmOAtMHTPM" resolve="hasMakeService" />
+                  </node>
+                  <node concept="3clFbS" id="4QICnJ5JbFW" role="3clFbx">
+                    <node concept="3clFbF" id="4QICnJ5JbFX" role="3cqZAp">
+                      <node concept="2OqwBi" id="4QICnJ5JbFY" role="3clFbG">
+                        <node concept="2YIFZM" id="4QICnJ5JbGt" role="2Oq$k0">
+                          <ref role="1Pybhc" to="hfuk:7yGn3z4MRqM" resolve="IMakeService.INSTANCE" />
+                          <ref role="37wK5l" to="hfuk:7yGn3z4MRr2" resolve="get" />
+                        </node>
+                        <node concept="liA8E" id="4QICnJ5JbG0" role="2OqNvi">
+                          <ref role="37wK5l" to="hfuk:7lTD6YZtjhT" resolve="removeListener" />
+                          <node concept="37vLTw" id="4QICnJ5JbG1" role="37wK5m">
+                            <ref role="3cqZAo" node="4QICnJ5Heuo" resolve="myMakeNotificationListener" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="4QICnJ5Jhct" role="3clFbw">
-            <node concept="37vLTw" id="4QICnJ5JgYW" role="2Oq$k0">
-              <ref role="3cqZAo" node="4QICnJ5Jd1r" resolve="myDescriptor" />
-            </node>
-            <node concept="liA8E" id="4QICnJ5Jhl4" role="2OqNvi">
-              <ref role="37wK5l" to="imq3:4QICnJ5Fghg" resolve="rebuildOnFileChange" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="4QICnJ5Jix8" role="3cqZAp">
-          <node concept="3clFbS" id="4QICnJ5Jixa" role="3clFbx">
-            <node concept="3clFbF" id="4gq8yQBZ6Pf" role="3cqZAp">
-              <node concept="2EnYce" id="4egT6VZCBuP" role="3clFbG">
-                <node concept="37vLTw" id="4gq8yQBZ6Ph" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4gq8yQBZ6Oz" resolve="myConnection" />
+              <node concept="2OqwBi" id="4QICnJ5JfxI" role="3clFbw">
+                <node concept="37vLTw" id="4QICnJ5Jfkb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4QICnJ5Jd1r" resolve="myDescriptor" />
                 </node>
-                <node concept="liA8E" id="4gq8yQBZ6Pi" role="2OqNvi">
-                  <ref role="37wK5l" to="4b2m:~MessageBusConnection.disconnect():void" resolve="disconnect" />
+                <node concept="liA8E" id="4QICnJ5JfFH" role="2OqNvi">
+                  <ref role="37wK5l" to="imq3:4QICnJ5Fg$g" resolve="rebuildOnMake" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="4gq8yQBZ6Pj" role="3cqZAp">
-              <node concept="37vLTI" id="4gq8yQBZ6Pk" role="3clFbG">
-                <node concept="37vLTw" id="4gq8yQBZ6Pl" role="37vLTJ">
-                  <ref role="3cqZAo" node="4gq8yQBZ6Oz" resolve="myConnection" />
-                </node>
-                <node concept="10Nm6u" id="4gq8yQBZ6Pm" role="37vLTx" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="4gq8yQBZ6Pn" role="3cqZAp">
-              <node concept="2OqwBi" id="4gq8yQBZ6Po" role="3clFbG">
-                <node concept="2YIFZM" id="4gq8yQBZ6Pp" role="2Oq$k0">
-                  <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-                </node>
-                <node concept="liA8E" id="4gq8yQBZ6Pq" role="2OqNvi">
-                  <ref role="37wK5l" to="31cb:~SRepositoryBase.removeRepositoryListener(org.jetbrains.mps.openapi.module.SRepositoryListener):void" resolve="removeRepositoryListener" />
-                  <node concept="37vLTw" id="4gq8yQBZ6Pr" role="37wK5m">
-                    <ref role="3cqZAo" node="4gq8yQBZ6Ml" resolve="myRepositoryListener" />
+            <node concept="3clFbJ" id="4QICnJ5JgBl" role="3cqZAp">
+              <node concept="3clFbS" id="4QICnJ5JgBn" role="3clFbx">
+                <node concept="3clFbF" id="4QICnJ5JbG2" role="3cqZAp">
+                  <node concept="2OqwBi" id="4QICnJ5JbG3" role="3clFbG">
+                    <node concept="2YIFZM" id="4QICnJ5JbGw" role="2Oq$k0">
+                      <ref role="1Pybhc" to="jlff:~VirtualFileManager" resolve="VirtualFileManager" />
+                      <ref role="37wK5l" to="jlff:~VirtualFileManager.getInstance():com.intellij.openapi.vfs.VirtualFileManager" resolve="getInstance" />
+                    </node>
+                    <node concept="liA8E" id="4QICnJ5JbG5" role="2OqNvi">
+                      <ref role="37wK5l" to="jlff:~VirtualFileManager.removeVirtualFileManagerListener(com.intellij.openapi.vfs.VirtualFileManagerListener):void" resolve="removeVirtualFileManagerListener" />
+                      <node concept="37vLTw" id="4QICnJ5JbG6" role="37wK5m">
+                        <ref role="3cqZAo" node="4QICnJ5HetR" resolve="myRefreshListener" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
+              <node concept="2OqwBi" id="4QICnJ5Jhct" role="3clFbw">
+                <node concept="37vLTw" id="4QICnJ5JgYW" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4QICnJ5Jd1r" resolve="myDescriptor" />
+                </node>
+                <node concept="liA8E" id="4QICnJ5Jhl4" role="2OqNvi">
+                  <ref role="37wK5l" to="imq3:4QICnJ5Fghg" resolve="rebuildOnFileChange" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="4QICnJ5Jix8" role="3cqZAp">
+              <node concept="3clFbS" id="4QICnJ5Jixa" role="3clFbx">
+                <node concept="3clFbF" id="4gq8yQBZ6Pf" role="3cqZAp">
+                  <node concept="2EnYce" id="4egT6VZCBuP" role="3clFbG">
+                    <node concept="37vLTw" id="4gq8yQBZ6Ph" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4gq8yQBZ6Oz" resolve="myConnection" />
+                    </node>
+                    <node concept="liA8E" id="4gq8yQBZ6Pi" role="2OqNvi">
+                      <ref role="37wK5l" to="4b2m:~MessageBusConnection.disconnect():void" resolve="disconnect" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4gq8yQBZ6Pj" role="3cqZAp">
+                  <node concept="37vLTI" id="4gq8yQBZ6Pk" role="3clFbG">
+                    <node concept="37vLTw" id="4gq8yQBZ6Pl" role="37vLTJ">
+                      <ref role="3cqZAo" node="4gq8yQBZ6Oz" resolve="myConnection" />
+                    </node>
+                    <node concept="10Nm6u" id="4gq8yQBZ6Pm" role="37vLTx" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4gq8yQBZ6Pn" role="3cqZAp">
+                  <node concept="2OqwBi" id="4gq8yQBZ6Po" role="3clFbG">
+                    <node concept="2YIFZM" id="4gq8yQBZ6Pp" role="2Oq$k0">
+                      <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                      <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                    </node>
+                    <node concept="liA8E" id="4gq8yQBZ6Pq" role="2OqNvi">
+                      <ref role="37wK5l" to="31cb:~SRepositoryBase.removeRepositoryListener(org.jetbrains.mps.openapi.module.SRepositoryListener):void" resolve="removeRepositoryListener" />
+                      <node concept="37vLTw" id="4gq8yQBZ6Pr" role="37wK5m">
+                        <ref role="3cqZAo" node="4gq8yQBZ6Ml" resolve="myRepositoryListener" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4QICnJ5Jj6R" role="3clFbw">
+                <node concept="37vLTw" id="4QICnJ5JiT5" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4QICnJ5Jd1r" resolve="myDescriptor" />
+                </node>
+                <node concept="liA8E" id="4QICnJ5Jje6" role="2OqNvi">
+                  <ref role="37wK5l" to="imq3:4QICnJ5FgIk" resolve="rebuildOnRepoChange" />
+                </node>
+              </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="4QICnJ5Jj6R" role="3clFbw">
-            <node concept="37vLTw" id="4QICnJ5JiT5" role="2Oq$k0">
+          <node concept="3y3z36" id="1MRbFm2qlGY" role="3clFbw">
+            <node concept="10Nm6u" id="1MRbFm2qmk9" role="3uHU7w" />
+            <node concept="37vLTw" id="1MRbFm2ql0w" role="3uHU7B">
               <ref role="3cqZAo" node="4QICnJ5Jd1r" resolve="myDescriptor" />
-            </node>
-            <node concept="liA8E" id="4QICnJ5Jje6" role="2OqNvi">
-              <ref role="37wK5l" to="imq3:4QICnJ5FgIk" resolve="rebuildOnRepoChange" />
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4QICnJ5Jd0u" role="3cqZAp" />
         <node concept="3cpWs8" id="7N_XUEP318Z" role="3cqZAp">
           <node concept="3cpWsn" id="7N_XUEP3190" role="3cpWs9">
             <property role="TrG5h" value="mpsProject" />
@@ -4270,44 +4281,54 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7N_XUEP2X9V" role="3cqZAp">
-          <node concept="2OqwBi" id="7N_XUEP2X9W" role="3clFbG">
-            <node concept="2ShNRf" id="7N_XUEP2XV3" role="2Oq$k0">
-              <node concept="1pGfFk" id="7N_XUEP2XV4" role="2ShVmc">
-                <ref role="37wK5l" to="w1kc:~RepoListenerRegistrar.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,org.jetbrains.mps.openapi.module.SRepositoryListener)" resolve="RepoListenerRegistrar" />
-                <node concept="2OqwBi" id="7N_XUEP2ZJp" role="37wK5m">
-                  <node concept="37vLTw" id="7N_XUEP2ZJo" role="2Oq$k0">
+        <node concept="3clFbJ" id="1MRbFm2qpY0" role="3cqZAp">
+          <node concept="3clFbS" id="1MRbFm2qpY2" role="3clFbx">
+            <node concept="3clFbF" id="7N_XUEP2X9V" role="3cqZAp">
+              <node concept="2OqwBi" id="7N_XUEP2X9W" role="3clFbG">
+                <node concept="2ShNRf" id="7N_XUEP2XV3" role="2Oq$k0">
+                  <node concept="1pGfFk" id="7N_XUEP2XV4" role="2ShVmc">
+                    <ref role="37wK5l" to="w1kc:~RepoListenerRegistrar.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,org.jetbrains.mps.openapi.module.SRepositoryListener)" resolve="RepoListenerRegistrar" />
+                    <node concept="2OqwBi" id="7N_XUEP2ZJp" role="37wK5m">
+                      <node concept="37vLTw" id="7N_XUEP2ZJo" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7N_XUEP2Zq_" resolve="mpsProject" />
+                      </node>
+                      <node concept="liA8E" id="7N_XUEP2ZJq" role="2OqNvi">
+                        <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="7N_XUEP30tD" role="37wK5m">
+                      <ref role="3cqZAo" node="7N_XUEP2OI9" resolve="commandRepoListener" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="7N_XUEP2Xa0" role="2OqNvi">
+                  <ref role="37wK5l" to="w1kc:~RepoListenerRegistrar.attach():void" resolve="attach" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7N_XUEP2Xa1" role="3cqZAp">
+              <node concept="2OqwBi" id="7N_XUEP2Xa2" role="3clFbG">
+                <node concept="2OqwBi" id="7N_XUEP2ZNt" role="2Oq$k0">
+                  <node concept="37vLTw" id="7N_XUEP2ZNs" role="2Oq$k0">
                     <ref role="3cqZAo" node="7N_XUEP2Zq_" resolve="mpsProject" />
                   </node>
-                  <node concept="liA8E" id="7N_XUEP2ZJq" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  <node concept="liA8E" id="7N_XUEP2ZNu" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="7N_XUEP30tD" role="37wK5m">
-                  <ref role="3cqZAo" node="7N_XUEP2OI9" resolve="commandRepoListener" />
+                <node concept="liA8E" id="7N_XUEP2Xa4" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.addCommandListener(org.jetbrains.mps.openapi.repository.CommandListener):void" resolve="addCommandListener" />
+                  <node concept="37vLTw" id="7N_XUEP30Vt" role="37wK5m">
+                    <ref role="3cqZAo" node="7N_XUEP2OI9" resolve="commandRepoListener" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="liA8E" id="7N_XUEP2Xa0" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~RepoListenerRegistrar.attach():void" resolve="attach" />
-            </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="7N_XUEP2Xa1" role="3cqZAp">
-          <node concept="2OqwBi" id="7N_XUEP2Xa2" role="3clFbG">
-            <node concept="2OqwBi" id="7N_XUEP2ZNt" role="2Oq$k0">
-              <node concept="37vLTw" id="7N_XUEP2ZNs" role="2Oq$k0">
-                <ref role="3cqZAo" node="7N_XUEP2Zq_" resolve="mpsProject" />
-              </node>
-              <node concept="liA8E" id="7N_XUEP2ZNu" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
-              </node>
-            </node>
-            <node concept="liA8E" id="7N_XUEP2Xa4" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~ModelAccess.addCommandListener(org.jetbrains.mps.openapi.repository.CommandListener):void" resolve="addCommandListener" />
-              <node concept="37vLTw" id="7N_XUEP30Vt" role="37wK5m">
-                <ref role="3cqZAo" node="7N_XUEP2OI9" resolve="commandRepoListener" />
-              </node>
+          <node concept="3y3z36" id="1MRbFm2qs2W" role="3clFbw">
+            <node concept="10Nm6u" id="1MRbFm2qsiU" role="3uHU7w" />
+            <node concept="37vLTw" id="1MRbFm2qqUM" role="3uHU7B">
+              <ref role="3cqZAo" node="7N_XUEP2Zq_" resolve="mpsProject" />
             </node>
           </node>
         </node>
