@@ -1517,5 +1517,42 @@
       <ref role="1YaFvo" to="uu1k:54ERyg8GXCY" resolve="ILatticeOperationCall" />
     </node>
   </node>
+  <node concept="18kY7G" id="7OQV_dm0Z6i">
+    <property role="TrG5h" value="check_illegalDotExpression" />
+    <property role="3GE5qa" value="definition" />
+    <node concept="3clFbS" id="7OQV_dm0Z6j" role="18ibNy">
+      <node concept="3clFbJ" id="7OQV_dlZpIR" role="3cqZAp">
+        <node concept="3y3z36" id="7OQV_dlZqHw" role="3clFbw">
+          <node concept="10Nm6u" id="7OQV_dlZqIW" role="3uHU7w" />
+          <node concept="2OqwBi" id="7OQV_dlZpU4" role="3uHU7B">
+            <node concept="1YBJjd" id="7OQV_dlZpJ9" role="2Oq$k0">
+              <ref role="1YBMHb" node="7OQV_dm0Z6l" resolve="dotExpression" />
+            </node>
+            <node concept="2Xjw5R" id="7OQV_dlZqe7" role="2OqNvi">
+              <node concept="1xMEDy" id="7OQV_dlZqe9" role="1xVPHs">
+                <node concept="chp4Y" id="7OQV_dm0Z9G" role="ri$Ld">
+                  <ref role="cht4Q" to="uu1k:7ike8KAHT9k" resolve="LatticeOperationCall" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="7OQV_dlZpIT" role="3clFbx">
+          <node concept="2MkqsV" id="7OQV_dlZqif" role="3cqZAp">
+            <node concept="Xl_RD" id="7OQV_dlZqi$" role="2MkJ7o">
+              <property role="Xl_RC" value="Dot expression not allowed in this context" />
+            </node>
+            <node concept="1YBJjd" id="7OQV_dlZqjy" role="2OEOjV">
+              <ref role="1YBMHb" node="7OQV_dm0Z6l" resolve="dotExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7OQV_dm0Z6l" role="1YuTPh">
+      <property role="TrG5h" value="dotExpression" />
+      <ref role="1YaFvo" to="tpee:hqOqwz4" resolve="DotExpression" />
+    </node>
+  </node>
 </model>
 
