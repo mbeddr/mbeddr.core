@@ -116,12 +116,6 @@
         <reference id="4957503999941447495" name="param" index="1XQxzo" />
       </concept>
     </language>
-    <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
-      <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ng" index="3vooZZ">
-        <property id="8039098920897639409" name="attachedCellId" index="19LeSh" />
-        <reference id="8039098920897680033" name="attachedNode" index="19LoX1" />
-      </concept>
-    </language>
     <language id="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f" name="com.mbeddr.analyses.cbmc.components">
       <concept id="6638119994895244601" name="com.mbeddr.analyses.cbmc.components.structure.VerificationConfigurationAttribute" flags="ng" index="1cekJe">
         <property id="6638119994895244606" name="analysisDepth" index="1cekJ9" />
@@ -133,11 +127,6 @@
     <language id="ca9e3cd7-a4a7-4d94-943e-79c063754879" name="com.mbeddr.mpsutil.favourites">
       <concept id="1259468517902790203" name="com.mbeddr.mpsutil.favourites.structure.FavouritesAnnotation" flags="ng" index="2Y6aBa">
         <property id="1259468517902790204" name="category" index="2Y6aBd" />
-      </concept>
-    </language>
-    <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
-      <concept id="8455208232410333108" name="com.mbeddr.mpsutil.review.annotation.structure.CommentAnnotationContainer" flags="ng" index="2f$52y">
-        <child id="8455208232410333109" name="comments" index="2f$52z" />
       </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -657,16 +646,6 @@
       </concept>
       <concept id="7780999115923947731" name="com.mbeddr.ext.compositecomponents.structure.CompositeComponentInstanceConfig" flags="ng" index="5JiAF" />
       <concept id="7780999115923829680" name="com.mbeddr.ext.compositecomponents.structure.CompositeComponent" flags="ng" index="5JLF8" />
-    </language>
-    <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
-      <concept id="1159656764133538905" name="com.mbeddr.mpsutil.review.structure.ReviewReplyNote" flags="ng" index="3vAh7R">
-        <reference id="1159656764133538906" name="repliedNote" index="3vAh7O" />
-      </concept>
-      <concept id="1159656764133526267" name="com.mbeddr.mpsutil.review.structure.ReviewNote" flags="ng" index="3vAitl">
-        <property id="5652920968054438504" name="created" index="3ajGZ3" />
-        <property id="5652920968054438487" name="creator" index="3ajGZW" />
-        <child id="5652920968054438510" name="note" index="3ajGZ5" />
-      </concept>
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
       <concept id="666324024671982185" name="com.mbeddr.ext.math.structure.MathConfigurationItem" flags="ng" index="22RD12" />
@@ -2635,7 +2614,7 @@
               </node>
               <node concept="1_9egQ" id="21ict8otbVB" role="3XIRFZ">
                 <node concept="3pqW6w" id="21ict8otcz$" role="1_9egR">
-                  <node concept="2BOcih" id="7sXa7wV4SNI" role="3TlMhJ">
+                  <node concept="2BOcij" id="4voDClGIOSu" role="3TlMhJ">
                     <node concept="3ZVu4v" id="7sXa7wV4SNK" role="3TlMhI">
                       <ref role="3ZVs_2" node="21ict8otB3m" resolve="dAlt" />
                     </node>
@@ -2867,31 +2846,6 @@
     </node>
     <node concept="3GEVxB" id="1VMOGozBg9P" role="2OODSX">
       <ref role="3GEb4d" to="cmgk:yGiRIF6Rhw" resolve="SIUnits" />
-    </node>
-    <node concept="2f$52y" id="4IT6unCFJX" role="lGtFl">
-      <node concept="3vAitl" id="4IT6unCFJY" role="2f$52z">
-        <property role="3ajGZW" value="markusvoelter" />
-        <property role="3ajGZ3" value="Nov 6, 2014 8:15:32 AM" />
-        <property role="19LeSh" value="FS_property_name" />
-        <ref role="19LoX1" node="21ict8otauW" resolve="calcVerticalSpeed" />
-        <node concept="19SGf9" id="4IT6unCFJZ" role="3ajGZ5">
-          <node concept="19SUe$" id="4IT6unCFK0" role="19SJt6">
-            <property role="19SUeA" value="Here is a margin comment for a function in the C code. " />
-          </node>
-        </node>
-      </node>
-      <node concept="3vAh7R" id="4IT6unD4Z_" role="2f$52z">
-        <property role="3ajGZW" value="markusvoelter" />
-        <property role="3ajGZ3" value="Nov 6, 2014 8:17:09 AM" />
-        <property role="19LeSh" value="FS_property_name" />
-        <ref role="3vAh7O" node="4IT6unCFJY" />
-        <ref role="19LoX1" node="21ict8otauW" resolve="calcVerticalSpeed" />
-        <node concept="19SGf9" id="4IT6unD4ZA" role="3ajGZ5">
-          <node concept="19SUe$" id="4IT6unD4ZB" role="19SJt6">
-            <property role="19SUeA" value="You can also add a reply by using the Reply item in the context menu." />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2Y6aBa" id="FniR$CkWVg" role="lGtFl">
       <property role="2Y6aBd" value="C Extensions" />
