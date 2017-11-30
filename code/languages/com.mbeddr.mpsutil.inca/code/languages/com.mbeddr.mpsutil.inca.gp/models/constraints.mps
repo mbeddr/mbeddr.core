@@ -254,50 +254,60 @@
     <node concept="9SLcT" id="5luHlsCrwim" role="9SGkU">
       <node concept="3clFbS" id="2RSm1Cz26XH" role="2VODD2">
         <node concept="3cpWs6" id="2RSm1Cz26XI" role="3cqZAp">
-          <node concept="22lmx$" id="2RSm1Cz26XJ" role="3cqZAk">
-            <node concept="2OqwBi" id="2RSm1Cz26XK" role="3uHU7w">
-              <node concept="2DD5aU" id="2RSm1Cz26Y7" role="2Oq$k0" />
-              <node concept="2Zo12i" id="2RSm1Cz26XM" role="2OqNvi">
-                <node concept="chp4Y" id="2RSm1Cz26XN" role="2Zo12j">
-                  <ref role="cht4Q" to="hqsm:SSjGGIHU5T" resolve="IPatternVisibility" />
+          <node concept="22lmx$" id="2jl89KF0$nV" role="3cqZAk">
+            <node concept="22lmx$" id="2RSm1Cz26XJ" role="3uHU7B">
+              <node concept="22lmx$" id="2RSm1Cz26XO" role="3uHU7B">
+                <node concept="2OqwBi" id="2RSm1Cz26XP" role="3uHU7w">
+                  <node concept="2DD5aU" id="2RSm1Cz26Y8" role="2Oq$k0" />
+                  <node concept="3O6GUB" id="2RSm1Cz26XR" role="2OqNvi">
+                    <node concept="chp4Y" id="2RSm1Cz26XS" role="3QVz_e">
+                      <ref role="cht4Q" to="55iy:SSjGGIxddQ" resolve="GraphPatternModuleImport" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="22lmx$" id="2RSm1Cz26XT" role="3uHU7B">
+                  <node concept="22lmx$" id="2RSm1Cz26XU" role="3uHU7B">
+                    <node concept="2OqwBi" id="2RSm1Cz26XV" role="3uHU7w">
+                      <node concept="2DD5aU" id="2RSm1Cz26Y9" role="2Oq$k0" />
+                      <node concept="2Zo12i" id="2RSm1Cz26XX" role="2OqNvi">
+                        <node concept="chp4Y" id="2RSm1Cz26XY" role="2Zo12j">
+                          <ref role="cht4Q" to="55iy:5luHlsCrwig" resolve="IGraphPatternModuleContent" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="2RSm1Cz26XZ" role="3uHU7B">
+                      <node concept="2DD5aU" id="2RSm1Cz26Ya" role="2Oq$k0" />
+                      <node concept="2Zo12i" id="2RSm1Cz26Y1" role="2OqNvi">
+                        <node concept="chp4Y" id="2RSm1Cz26Y2" role="2Zo12j">
+                          <ref role="cht4Q" to="hqsm:7a3nU351sZC" resolve="ISharedPatternModuleContent" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="2RSm1Cz26Y3" role="3uHU7w">
+                    <node concept="2DD5aU" id="2RSm1Cz26Yb" role="2Oq$k0" />
+                    <node concept="3O6GUB" id="2RSm1Cz26Y5" role="2OqNvi">
+                      <node concept="chp4Y" id="2RSm1Cz26Y6" role="3QVz_e">
+                        <ref role="cht4Q" to="hqsm:SSjGGIi3iQ" resolve="IIncaModuleImport" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2RSm1Cz26XK" role="3uHU7w">
+                <node concept="2DD5aU" id="2RSm1Cz26Y7" role="2Oq$k0" />
+                <node concept="2Zo12i" id="2RSm1Cz26XM" role="2OqNvi">
+                  <node concept="chp4Y" id="2RSm1Cz26XN" role="2Zo12j">
+                    <ref role="cht4Q" to="hqsm:SSjGGIHU5T" resolve="IPatternVisibility" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="22lmx$" id="2RSm1Cz26XO" role="3uHU7B">
-              <node concept="2OqwBi" id="2RSm1Cz26XP" role="3uHU7w">
-                <node concept="2DD5aU" id="2RSm1Cz26Y8" role="2Oq$k0" />
-                <node concept="3O6GUB" id="2RSm1Cz26XR" role="2OqNvi">
-                  <node concept="chp4Y" id="2RSm1Cz26XS" role="3QVz_e">
-                    <ref role="cht4Q" to="55iy:SSjGGIxddQ" resolve="GraphPatternModuleImport" />
-                  </node>
-                </node>
-              </node>
-              <node concept="22lmx$" id="2RSm1Cz26XT" role="3uHU7B">
-                <node concept="22lmx$" id="2RSm1Cz26XU" role="3uHU7B">
-                  <node concept="2OqwBi" id="2RSm1Cz26XV" role="3uHU7w">
-                    <node concept="2DD5aU" id="2RSm1Cz26Y9" role="2Oq$k0" />
-                    <node concept="2Zo12i" id="2RSm1Cz26XX" role="2OqNvi">
-                      <node concept="chp4Y" id="2RSm1Cz26XY" role="2Zo12j">
-                        <ref role="cht4Q" to="55iy:5luHlsCrwig" resolve="IGraphPatternModuleContent" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="2RSm1Cz26XZ" role="3uHU7B">
-                    <node concept="2DD5aU" id="2RSm1Cz26Ya" role="2Oq$k0" />
-                    <node concept="2Zo12i" id="2RSm1Cz26Y1" role="2OqNvi">
-                      <node concept="chp4Y" id="2RSm1Cz26Y2" role="2Zo12j">
-                        <ref role="cht4Q" to="hqsm:7a3nU351sZC" resolve="ISharedPatternModuleContent" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="2RSm1Cz26Y3" role="3uHU7w">
-                  <node concept="2DD5aU" id="2RSm1Cz26Yb" role="2Oq$k0" />
-                  <node concept="3O6GUB" id="2RSm1Cz26Y5" role="2OqNvi">
-                    <node concept="chp4Y" id="2RSm1Cz26Y6" role="3QVz_e">
-                      <ref role="cht4Q" to="hqsm:SSjGGIi3iQ" resolve="IIncaModuleImport" />
-                    </node>
-                  </node>
+            <node concept="2OqwBi" id="2jl89KF0zhk" role="3uHU7w">
+              <node concept="2DD5aU" id="2jl89KF0yWJ" role="2Oq$k0" />
+              <node concept="2Zo12i" id="2jl89KF0zF_" role="2OqNvi">
+                <node concept="chp4Y" id="2jl89KF0zQo" role="2Zo12j">
+                  <ref role="cht4Q" to="hqsm:2jl89KEYIg_" resolve="DisableJavaWarningAttribute" />
                 </node>
               </node>
             </node>

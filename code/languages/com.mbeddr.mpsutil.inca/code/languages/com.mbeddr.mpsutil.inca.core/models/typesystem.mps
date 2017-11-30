@@ -283,6 +283,12 @@
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
+        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
+      </concept>
+      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
+        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -3648,6 +3654,105 @@
     <node concept="1YaCAy" id="1OpGjkrVbiK" role="1YuTPh">
       <property role="TrG5h" value="evaluator" />
       <ref role="1YaFvo" to="hqsm:7wcU5h3ekti" resolve="IncaEvaluator" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2jl89KELt1s">
+    <property role="TrG5h" value="check_SNodeOperation" />
+    <property role="3GE5qa" value="usage" />
+    <node concept="3clFbS" id="2jl89KELt1t" role="18ibNy">
+      <node concept="3clFbJ" id="2jl89KEYPpp" role="3cqZAp">
+        <node concept="3clFbS" id="2jl89KEYPpr" role="3clFbx">
+          <node concept="3clFbJ" id="2jl89KELv2r" role="3cqZAp">
+            <node concept="3clFbS" id="2jl89KELv2t" role="3clFbx">
+              <node concept="3clFbJ" id="2jl89KELwmw" role="3cqZAp">
+                <node concept="3clFbS" id="2jl89KELwmy" role="3clFbx">
+                  <node concept="2MkqsV" id="2jl89KELx4U" role="3cqZAp">
+                    <node concept="3cpWs3" id="2jl89KELxEM" role="2MkJ7o">
+                      <node concept="Xl_RD" id="2jl89KELxEP" role="3uHU7w">
+                        <property role="Xl_RC" value="') must happen in relational code!" />
+                      </node>
+                      <node concept="3cpWs3" id="2jl89KELxsR" role="3uHU7B">
+                        <node concept="Xl_RD" id="2jl89KELx6q" role="3uHU7B">
+                          <property role="Xl_RC" value="Java code is black box for IncA: AST traversals (like '" />
+                        </node>
+                        <node concept="1YBJjd" id="2jl89KELxtd" role="3uHU7w">
+                          <ref role="1YBMHb" node="2jl89KELt1v" resolve="op" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1YBJjd" id="2jl89KELzpF" role="2OEOjV">
+                      <ref role="1YBMHb" node="2jl89KELt1v" resolve="op" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3y3z36" id="2jl89KELwYS" role="3clFbw">
+                  <node concept="10Nm6u" id="2jl89KELx4q" role="3uHU7w" />
+                  <node concept="2OqwBi" id="2jl89KELwwd" role="3uHU7B">
+                    <node concept="1YBJjd" id="2jl89KELwmT" role="2Oq$k0">
+                      <ref role="1YBMHb" node="2jl89KELt1v" resolve="op" />
+                    </node>
+                    <node concept="2Xjw5R" id="2jl89KELwNM" role="2OqNvi">
+                      <node concept="1xMEDy" id="2jl89KELwNO" role="1xVPHs">
+                        <node concept="chp4Y" id="2jl89KELwPY" role="ri$Ld">
+                          <ref role="cht4Q" to="hqsm:2XlXuxNCQnA" resolve="IJavaContext" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="22lmx$" id="2jl89KELvK_" role="3clFbw">
+              <node concept="2OqwBi" id="2jl89KELvXg" role="3uHU7w">
+                <node concept="1YBJjd" id="2jl89KELvNu" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2jl89KELt1v" resolve="op" />
+                </node>
+                <node concept="1mIQ4w" id="2jl89KELwez" role="2OqNvi">
+                  <node concept="chp4Y" id="2jl89KELwho" role="cj9EA">
+                    <ref role="cht4Q" to="tp25:gzTrcDJ" resolve="SPropertyAccess" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2jl89KELvc2" role="3uHU7B">
+                <node concept="1YBJjd" id="2jl89KELv2I" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2jl89KELt1v" resolve="op" />
+                </node>
+                <node concept="1mIQ4w" id="2jl89KELvqW" role="2OqNvi">
+                  <node concept="chp4Y" id="2jl89KELvtf" role="cj9EA">
+                    <ref role="cht4Q" to="tp25:3vpu_siOTrb" resolve="ILinkAccess" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbC" id="2jl89KEYQE5" role="3clFbw">
+          <node concept="10Nm6u" id="2jl89KEYQUA" role="3uHU7w" />
+          <node concept="2OqwBi" id="2jl89KEYQ8p" role="3uHU7B">
+            <node concept="2OqwBi" id="2jl89KEYPzQ" role="2Oq$k0">
+              <node concept="1YBJjd" id="2jl89KEYPqy" role="2Oq$k0">
+                <ref role="1YBMHb" node="2jl89KELt1v" resolve="op" />
+              </node>
+              <node concept="2Xjw5R" id="2jl89KEYPWw" role="2OqNvi">
+                <node concept="1xMEDy" id="2jl89KEYPWy" role="1xVPHs">
+                  <node concept="chp4Y" id="2jl89KEYPYG" role="ri$Ld">
+                    <ref role="cht4Q" to="hqsm:Y78e7A6TUt" resolve="IIncaModule" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3CFZ6_" id="2jl89KEYQqi" role="2OqNvi">
+              <node concept="3CFYIy" id="2jl89KEYQu0" role="3CFYIz">
+                <ref role="3CFYIx" to="hqsm:2jl89KEYIg_" resolve="DisableJavaWarningAttribute" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2jl89KELt1v" role="1YuTPh">
+      <property role="TrG5h" value="op" />
+      <ref role="1YaFvo" to="tp25:g$eCIIG" resolve="SNodeOperation" />
     </node>
   </node>
 </model>

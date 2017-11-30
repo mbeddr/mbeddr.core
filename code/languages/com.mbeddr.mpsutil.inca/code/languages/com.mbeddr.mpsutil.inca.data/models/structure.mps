@@ -81,6 +81,9 @@
     <node concept="PrWs8" id="37xW3uCggSD" role="PzmwI">
       <ref role="PrY4T" node="2qfgCZsFkIW" resolve="ILatticeDefinitionModule" />
     </node>
+    <node concept="PrWs8" id="2jl89KELt1m" role="PzmwI">
+      <ref role="PrY4T" to="hqsm:2XlXuxNCQnA" resolve="IJavaContext" />
+    </node>
     <node concept="1irR5M" id="2qfgCZsFOXt" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irR9n" id="2qfgCZsFOXu" role="1irR9h">

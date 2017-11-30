@@ -1240,15 +1240,15 @@
     <property role="34LRSv" value="join" />
     <property role="R4oN_" value="join type" />
     <ref role="1TJDcQ" to="tp25:gzTqbfa" resolve="SNodeType" />
-    <node concept="PrWs8" id="aQnmvHEmTJ" role="PzmwI">
-      <ref role="PrY4T" node="aQnmvHEm_S" resolve="IRuntimeIncAType" />
-    </node>
     <node concept="1TJgyj" id="1UJP1A0VCHU" role="1TKVEi">
       <property role="IQ2ns" value="2211219148064590714" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="joinTypeDef" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7a3nU354JVn" resolve="IJoinTypeDef" />
+    </node>
+    <node concept="PrWs8" id="aQnmvHEmTJ" role="PzmwI">
+      <ref role="PrY4T" node="aQnmvHEm_S" resolve="IRuntimeIncAType" />
     </node>
   </node>
   <node concept="1TIwiD" id="6ZsaHh09WeF">
@@ -1289,6 +1289,21 @@
     <property role="EcuMT" value="9214526089833732174" />
     <property role="3GE5qa" value="misc" />
     <property role="TrG5h" value="IContainsJavaExpression" />
+  </node>
+  <node concept="1TIwiD" id="2jl89KEYIg_">
+    <property role="EcuMT" value="2654063410512847909" />
+    <property role="3GE5qa" value="usage" />
+    <property role="TrG5h" value="DisableJavaWarningAttribute" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="2jl89KEYJeM" role="lGtFl">
+      <property role="Hh88m" value="disableJavaWarning" />
+      <node concept="tn0Fv" id="2jl89KEYJeP" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="2jl89KEYJeS" role="EQaZv">
+        <ref role="trN6q" node="Y78e7A6TUt" resolve="IIncaModule" />
+      </node>
+    </node>
   </node>
 </model>
 
