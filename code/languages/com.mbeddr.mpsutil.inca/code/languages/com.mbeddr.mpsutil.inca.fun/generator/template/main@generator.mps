@@ -36,6 +36,9 @@
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
+      <concept id="1177666668936" name="jetbrains.mps.baseLanguage.structure.DoWhileStatement" flags="nn" index="MpOyq">
+        <child id="1177666688034" name="condition" index="MpTkK" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -66,6 +69,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -76,6 +80,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -268,6 +275,7 @@
         <child id="1197687026896" name="keyType" index="3rHrn6" />
         <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
+      <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
   </registry>
   <node concept="bUwia" id="3oMuSXR7IsQ">
@@ -922,208 +930,287 @@
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="28bFZSiFVgd" role="1pqMTA">
       <node concept="3clFbS" id="28bFZSiFVge" role="2VODD2">
-        <node concept="2Gpval" id="28bFZSiFWpc" role="3cqZAp">
-          <node concept="2GrKxI" id="28bFZSiFWpd" role="2Gsz3X">
-            <property role="TrG5h" value="swit" />
+        <node concept="3cpWs8" id="2oS0yTqUP3r" role="3cqZAp">
+          <node concept="3cpWsn" id="2oS0yTqUP3u" role="3cpWs9">
+            <property role="TrG5h" value="replacedSwitch" />
+            <node concept="10P_77" id="2oS0yTqUP3p" role="1tU5fm" />
           </node>
-          <node concept="2OqwBi" id="28bFZSiFWyh" role="2GsD0m">
-            <node concept="1Q6Npb" id="28bFZSiFWq2" role="2Oq$k0" />
-            <node concept="2SmgA7" id="28bFZSiFWAY" role="2OqNvi">
-              <node concept="chp4Y" id="28bFZSiFWCl" role="1dBWTz">
-                <ref role="cht4Q" to="ebqt:5YhdhgZIEPp" resolve="SwitchStatement" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="28bFZSiFWpf" role="2LFqv$">
-            <node concept="3SKdUt" id="28bFZSiG9fC" role="3cqZAp">
-              <node concept="3SKdUq" id="28bFZSiG9fE" role="3SKWNk">
-                <property role="3SKdUp" value="surrounding function body" />
-              </node>
-            </node>
-            <node concept="3cpWs8" id="28bFZSiFWEj" role="3cqZAp">
-              <node concept="3cpWsn" id="28bFZSiFWEm" role="3cpWs9">
-                <property role="TrG5h" value="originalBody" />
-                <property role="3TUv4t" value="true" />
-                <node concept="3Tqbb2" id="28bFZSiFWEi" role="1tU5fm">
-                  <ref role="ehGHo" to="ebqt:1ERTnBTmryq" resolve="PatternFunctionBody" />
+        </node>
+        <node concept="MpOyq" id="2oS0yTqUPjb" role="3cqZAp">
+          <node concept="3clFbS" id="2oS0yTqUPjd" role="2LFqv$">
+            <node concept="3clFbF" id="2oS0yTqUQbN" role="3cqZAp">
+              <node concept="37vLTI" id="2oS0yTqUQPV" role="3clFbG">
+                <node concept="3clFbT" id="2oS0yTqUQQv" role="37vLTx">
+                  <property role="3clFbU" value="false" />
                 </node>
-                <node concept="2OqwBi" id="28bFZSiFWRf" role="33vP2m">
-                  <node concept="2GrUjf" id="28bFZSiFWFn" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="28bFZSiFWpd" resolve="swit" />
+                <node concept="37vLTw" id="2oS0yTqUQbL" role="37vLTJ">
+                  <ref role="3cqZAo" node="2oS0yTqUP3u" resolve="replacedSwitch" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2oS0yTqZOFO" role="3cqZAp" />
+            <node concept="3SKdUt" id="2oS0yTqZOU2" role="3cqZAp">
+              <node concept="3SKdUq" id="2oS0yTqZOU4" role="3SKWNk">
+                <property role="3SKdUp" value="find all non-nested (i.e. outer level) switch statements" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="2oS0yTqZSdH" role="3cqZAp">
+              <node concept="3SKdUq" id="2oS0yTqZSdI" role="3SKWNk">
+                <property role="3SKdUp" value="nested switches will be replaced in later iterations of the do-while loop" />
+              </node>
+            </node>
+            <node concept="2Gpval" id="28bFZSiFWpc" role="3cqZAp">
+              <node concept="2GrKxI" id="28bFZSiFWpd" role="2Gsz3X">
+                <property role="TrG5h" value="swit" />
+              </node>
+              <node concept="2OqwBi" id="2oS0yTqUJKJ" role="2GsD0m">
+                <node concept="2OqwBi" id="28bFZSiFWyh" role="2Oq$k0">
+                  <node concept="1Q6Npb" id="28bFZSiFWq2" role="2Oq$k0" />
+                  <node concept="2SmgA7" id="28bFZSiFWAY" role="2OqNvi">
+                    <node concept="chp4Y" id="28bFZSiFWCl" role="1dBWTz">
+                      <ref role="cht4Q" to="ebqt:5YhdhgZIEPp" resolve="SwitchStatement" />
+                    </node>
                   </node>
-                  <node concept="2Xjw5R" id="28bFZSiFXg1" role="2OqNvi">
-                    <node concept="1xMEDy" id="28bFZSiFXg3" role="1xVPHs">
-                      <node concept="chp4Y" id="28bFZSiFXgI" role="ri$Ld">
-                        <ref role="cht4Q" to="ebqt:1ERTnBTmryq" resolve="PatternFunctionBody" />
+                </node>
+                <node concept="3zZkjj" id="2oS0yTqULAx" role="2OqNvi">
+                  <node concept="1bVj0M" id="2oS0yTqULAz" role="23t8la">
+                    <node concept="3clFbS" id="2oS0yTqULA$" role="1bW5cS">
+                      <node concept="3clFbF" id="2oS0yTqZPiZ" role="3cqZAp">
+                        <node concept="3clFbC" id="2oS0yTqZRNb" role="3clFbG">
+                          <node concept="10Nm6u" id="2oS0yTqZRVE" role="3uHU7w" />
+                          <node concept="2OqwBi" id="2oS0yTqZPyQ" role="3uHU7B">
+                            <node concept="37vLTw" id="2oS0yTqZPiY" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2oS0yTqULA_" resolve="it" />
+                            </node>
+                            <node concept="2Xjw5R" id="2oS0yTqZQP8" role="2OqNvi">
+                              <node concept="1xMEDy" id="2oS0yTqZQPa" role="1xVPHs">
+                                <node concept="chp4Y" id="2oS0yTqZQS8" role="ri$Ld">
+                                  <ref role="cht4Q" to="ebqt:5YhdhgZIEPp" resolve="SwitchStatement" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
+                    </node>
+                    <node concept="Rh6nW" id="2oS0yTqULA_" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="2oS0yTqULAA" role="1tU5fm" />
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="3clFbH" id="28bFZSiG60O" role="3cqZAp" />
-            <node concept="2Gpval" id="28bFZSiFXiZ" role="3cqZAp">
-              <node concept="2GrKxI" id="28bFZSiFXj1" role="2Gsz3X">
-                <property role="TrG5h" value="alt" />
-              </node>
-              <node concept="2OqwBi" id="28bFZSiFXvX" role="2GsD0m">
-                <node concept="2GrUjf" id="28bFZSiFXjX" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="28bFZSiFWpd" resolve="swit" />
-                </node>
-                <node concept="3Tsc0h" id="28bFZSiFXT1" role="2OqNvi">
-                  <ref role="3TtcxE" to="ebqt:1ERTnBTmkXe" resolve="alternatives" />
-                </node>
-              </node>
-              <node concept="3clFbS" id="28bFZSiFXj5" role="2LFqv$">
-                <node concept="3SKdUt" id="28bFZSiG9c6" role="3cqZAp">
-                  <node concept="3SKdUq" id="28bFZSiG9c8" role="3SKWNk">
-                    <property role="3SKdUp" value="copy surrounding function body" />
+              <node concept="3clFbS" id="28bFZSiFWpf" role="2LFqv$">
+                <node concept="3SKdUt" id="2oS0yTqZSqC" role="3cqZAp">
+                  <node concept="3SKdUq" id="2oS0yTqZSqE" role="3SKWNk">
+                    <property role="3SKdUp" value="we do an actual replacement, so we need another iteration of the do-while loop" />
                   </node>
                 </node>
-                <node concept="3cpWs8" id="28bFZSiFXVR" role="3cqZAp">
-                  <node concept="3cpWsn" id="28bFZSiFXVU" role="3cpWs9">
-                    <property role="TrG5h" value="newbody" />
+                <node concept="3clFbF" id="2oS0yTqY8rl" role="3cqZAp">
+                  <node concept="37vLTI" id="2oS0yTqY8rf" role="3clFbG">
+                    <node concept="37vLTw" id="2oS0yTqY8wK" role="37vLTJ">
+                      <ref role="3cqZAo" node="2oS0yTqUP3u" resolve="replacedSwitch" />
+                    </node>
+                    <node concept="3clFbT" id="2oS0yTqY8x6" role="37vLTx">
+                      <property role="3clFbU" value="true" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="2oS0yTqZOnA" role="3cqZAp" />
+                <node concept="3SKdUt" id="28bFZSiG9fC" role="3cqZAp">
+                  <node concept="3SKdUq" id="28bFZSiG9fE" role="3SKWNk">
+                    <property role="3SKdUp" value="surrounding function body" />
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="28bFZSiFWEj" role="3cqZAp">
+                  <node concept="3cpWsn" id="28bFZSiFWEm" role="3cpWs9">
+                    <property role="TrG5h" value="originalBody" />
                     <property role="3TUv4t" value="true" />
-                    <node concept="3Tqbb2" id="28bFZSiFXVQ" role="1tU5fm">
+                    <node concept="3Tqbb2" id="28bFZSiFWEi" role="1tU5fm">
                       <ref role="ehGHo" to="ebqt:1ERTnBTmryq" resolve="PatternFunctionBody" />
                     </node>
-                    <node concept="2OqwBi" id="28bFZSiFY5s" role="33vP2m">
-                      <node concept="37vLTw" id="28bFZSiFXWS" role="2Oq$k0">
-                        <ref role="3cqZAo" node="28bFZSiFWEm" resolve="originalBody" />
+                    <node concept="2OqwBi" id="28bFZSiFWRf" role="33vP2m">
+                      <node concept="2GrUjf" id="28bFZSiFWFn" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="28bFZSiFWpd" resolve="swit" />
                       </node>
-                      <node concept="1$rogu" id="28bFZSiFYns" role="2OqNvi" />
+                      <node concept="2Xjw5R" id="28bFZSiFXg1" role="2OqNvi">
+                        <node concept="1xMEDy" id="28bFZSiFXg3" role="1xVPHs">
+                          <node concept="chp4Y" id="28bFZSiFXgI" role="ri$Ld">
+                            <ref role="cht4Q" to="ebqt:1ERTnBTmryq" resolve="PatternFunctionBody" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3SKdUt" id="28bFZSiG9je" role="3cqZAp">
-                  <node concept="3SKdUq" id="28bFZSiG9jg" role="3SKWNk">
-                    <property role="3SKdUp" value="find original switch node in copied body" />
+                <node concept="3clFbH" id="28bFZSiG60O" role="3cqZAp" />
+                <node concept="2Gpval" id="28bFZSiFXiZ" role="3cqZAp">
+                  <node concept="2GrKxI" id="28bFZSiFXj1" role="2Gsz3X">
+                    <property role="TrG5h" value="alt" />
                   </node>
-                </node>
-                <node concept="3cpWs8" id="28bFZSiG5EI" role="3cqZAp">
-                  <node concept="3cpWsn" id="28bFZSiG5EJ" role="3cpWs9">
-                    <property role="TrG5h" value="copiedSwitch" />
-                    <property role="3TUv4t" value="true" />
-                    <node concept="3Tqbb2" id="28bFZSiG5EE" role="1tU5fm">
-                      <ref role="ehGHo" to="ebqt:5YhdhgZIEPp" resolve="SwitchStatement" />
+                  <node concept="2OqwBi" id="28bFZSiFXvX" role="2GsD0m">
+                    <node concept="2GrUjf" id="28bFZSiFXjX" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="28bFZSiFWpd" resolve="swit" />
                     </node>
-                    <node concept="1PxgMI" id="28bFZSiKXPR" role="33vP2m">
-                      <node concept="chp4Y" id="28bFZSiKXYO" role="3oSUPX">
-                        <ref role="cht4Q" to="ebqt:5YhdhgZIEPp" resolve="SwitchStatement" />
+                    <node concept="3Tsc0h" id="28bFZSiFXT1" role="2OqNvi">
+                      <ref role="3TtcxE" to="ebqt:1ERTnBTmkXe" resolve="alternatives" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="28bFZSiFXj5" role="2LFqv$">
+                    <node concept="3SKdUt" id="28bFZSiG9c6" role="3cqZAp">
+                      <node concept="3SKdUq" id="28bFZSiG9c8" role="3SKWNk">
+                        <property role="3SKdUp" value="copy surrounding function body" />
                       </node>
-                      <node concept="2OqwBi" id="28bFZSiG5EK" role="1m5AlR">
-                        <node concept="2OqwBi" id="28bFZSiG5EL" role="2Oq$k0">
-                          <node concept="37vLTw" id="28bFZSiG5EM" role="2Oq$k0">
+                    </node>
+                    <node concept="3cpWs8" id="28bFZSiFXVR" role="3cqZAp">
+                      <node concept="3cpWsn" id="28bFZSiFXVU" role="3cpWs9">
+                        <property role="TrG5h" value="newbody" />
+                        <property role="3TUv4t" value="true" />
+                        <node concept="3Tqbb2" id="28bFZSiFXVQ" role="1tU5fm">
+                          <ref role="ehGHo" to="ebqt:1ERTnBTmryq" resolve="PatternFunctionBody" />
+                        </node>
+                        <node concept="2OqwBi" id="28bFZSiFY5s" role="33vP2m">
+                          <node concept="37vLTw" id="28bFZSiFXWS" role="2Oq$k0">
+                            <ref role="3cqZAo" node="28bFZSiFWEm" resolve="originalBody" />
+                          </node>
+                          <node concept="1$rogu" id="28bFZSiFYns" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3SKdUt" id="28bFZSiG9je" role="3cqZAp">
+                      <node concept="3SKdUq" id="28bFZSiG9jg" role="3SKWNk">
+                        <property role="3SKdUp" value="find original switch node in copied body" />
+                      </node>
+                    </node>
+                    <node concept="3cpWs8" id="28bFZSiG5EI" role="3cqZAp">
+                      <node concept="3cpWsn" id="28bFZSiG5EJ" role="3cpWs9">
+                        <property role="TrG5h" value="copiedSwitch" />
+                        <property role="3TUv4t" value="true" />
+                        <node concept="3Tqbb2" id="28bFZSiG5EE" role="1tU5fm">
+                          <ref role="ehGHo" to="ebqt:5YhdhgZIEPp" resolve="SwitchStatement" />
+                        </node>
+                        <node concept="1PxgMI" id="28bFZSiKXPR" role="33vP2m">
+                          <node concept="chp4Y" id="28bFZSiKXYO" role="3oSUPX">
+                            <ref role="cht4Q" to="ebqt:5YhdhgZIEPp" resolve="SwitchStatement" />
+                          </node>
+                          <node concept="2OqwBi" id="28bFZSiG5EK" role="1m5AlR">
+                            <node concept="2OqwBi" id="28bFZSiG5EL" role="2Oq$k0">
+                              <node concept="37vLTw" id="28bFZSiG5EM" role="2Oq$k0">
+                                <ref role="3cqZAo" node="28bFZSiFXVU" resolve="newbody" />
+                              </node>
+                              <node concept="3Tsc0h" id="6xhm47xeAmq" role="2OqNvi">
+                                <ref role="3TtcxE" to="hqsm:3VwoHXNC_4v" resolve="contents" />
+                              </node>
+                            </node>
+                            <node concept="34jXtK" id="28bFZSiG5EQ" role="2OqNvi">
+                              <node concept="2OqwBi" id="28bFZSiG5ER" role="25WWJ7">
+                                <node concept="2GrUjf" id="28bFZSiG5ES" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="28bFZSiFWpd" resolve="swit" />
+                                </node>
+                                <node concept="2bSWHS" id="28bFZSiG5ET" role="2OqNvi" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3SKdUt" id="28bFZSiGaai" role="3cqZAp">
+                      <node concept="3SKdUq" id="28bFZSiGaak" role="3SKWNk">
+                        <property role="3SKdUp" value="copy content of current alternative just behind switch node" />
+                      </node>
+                    </node>
+                    <node concept="2Gpval" id="28bFZSiG6_R" role="3cqZAp">
+                      <node concept="2GrKxI" id="28bFZSiG6_T" role="2Gsz3X">
+                        <property role="TrG5h" value="stm" />
+                      </node>
+                      <node concept="2OqwBi" id="28bFZSiL5nf" role="2GsD0m">
+                        <node concept="2OqwBi" id="28bFZSiL0eq" role="2Oq$k0">
+                          <node concept="2OqwBi" id="28bFZSiKWfi" role="2Oq$k0">
+                            <node concept="37vLTw" id="28bFZSiKVZq" role="2Oq$k0">
+                              <ref role="3cqZAo" node="28bFZSiG5EJ" resolve="copiedSwitch" />
+                            </node>
+                            <node concept="3Tsc0h" id="28bFZSiKYh$" role="2OqNvi">
+                              <ref role="3TtcxE" to="ebqt:1ERTnBTmkXe" resolve="alternatives" />
+                            </node>
+                          </node>
+                          <node concept="34jXtK" id="28bFZSiL3js" role="2OqNvi">
+                            <node concept="2OqwBi" id="28bFZSiL3I5" role="25WWJ7">
+                              <node concept="2GrUjf" id="28bFZSiL3mu" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="28bFZSiFXj1" resolve="alt" />
+                              </node>
+                              <node concept="2bSWHS" id="28bFZSiL4b_" role="2OqNvi" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3Tsc0h" id="28bFZSiL5EK" role="2OqNvi">
+                          <ref role="3TtcxE" to="hqsm:3VwoHXNC_4v" resolve="contents" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="28bFZSiG6_X" role="2LFqv$">
+                        <node concept="3clFbF" id="28bFZSiG74A" role="3cqZAp">
+                          <node concept="2OqwBi" id="28bFZSiG7b_" role="3clFbG">
+                            <node concept="37vLTw" id="28bFZSiG74_" role="2Oq$k0">
+                              <ref role="3cqZAo" node="28bFZSiG5EJ" resolve="copiedSwitch" />
+                            </node>
+                            <node concept="HtX7F" id="28bFZSiLi3_" role="2OqNvi">
+                              <node concept="2GrUjf" id="28bFZSiLieF" role="HtX7I">
+                                <ref role="2Gs0qQ" node="28bFZSiG6_T" resolve="stm" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3SKdUt" id="28bFZSiGaeG" role="3cqZAp">
+                      <node concept="3SKdUq" id="28bFZSiGaeI" role="3SKWNk">
+                        <property role="3SKdUp" value="delete switch node" />
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="28bFZSiG7yh" role="3cqZAp">
+                      <node concept="2OqwBi" id="28bFZSiG7Ec" role="3clFbG">
+                        <node concept="37vLTw" id="28bFZSiG7yf" role="2Oq$k0">
+                          <ref role="3cqZAo" node="28bFZSiG5EJ" resolve="copiedSwitch" />
+                        </node>
+                        <node concept="3YRAZt" id="28bFZSiG83g" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="3SKdUt" id="28bFZSiGahY" role="3cqZAp">
+                      <node concept="3SKdUq" id="28bFZSiGai0" role="3SKWNk">
+                        <property role="3SKdUp" value="add copied and expanded body to original function" />
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="28bFZSiG88d" role="3cqZAp">
+                      <node concept="2OqwBi" id="28bFZSiG8hK" role="3clFbG">
+                        <node concept="37vLTw" id="28bFZSiG88b" role="2Oq$k0">
+                          <ref role="3cqZAo" node="28bFZSiFWEm" resolve="originalBody" />
+                        </node>
+                        <node concept="HtX7F" id="28bFZSiGW8m" role="2OqNvi">
+                          <node concept="37vLTw" id="28bFZSiGW8X" role="HtX7I">
                             <ref role="3cqZAo" node="28bFZSiFXVU" resolve="newbody" />
                           </node>
-                          <node concept="3Tsc0h" id="6xhm47xeAmq" role="2OqNvi">
-                            <ref role="3TtcxE" to="hqsm:3VwoHXNC_4v" resolve="contents" />
-                          </node>
-                        </node>
-                        <node concept="34jXtK" id="28bFZSiG5EQ" role="2OqNvi">
-                          <node concept="2OqwBi" id="28bFZSiG5ER" role="25WWJ7">
-                            <node concept="2GrUjf" id="28bFZSiG5ES" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="28bFZSiFWpd" resolve="swit" />
-                            </node>
-                            <node concept="2bSWHS" id="28bFZSiG5ET" role="2OqNvi" />
-                          </node>
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3SKdUt" id="28bFZSiGaai" role="3cqZAp">
-                  <node concept="3SKdUq" id="28bFZSiGaak" role="3SKWNk">
-                    <property role="3SKdUp" value="copy content of current alternative just behind switch node" />
+                <node concept="3SKdUt" id="28bFZSiGajF" role="3cqZAp">
+                  <node concept="3SKdUq" id="28bFZSiGajH" role="3SKWNk">
+                    <property role="3SKdUp" value="delete original body" />
                   </node>
                 </node>
-                <node concept="2Gpval" id="28bFZSiG6_R" role="3cqZAp">
-                  <node concept="2GrKxI" id="28bFZSiG6_T" role="2Gsz3X">
-                    <property role="TrG5h" value="stm" />
-                  </node>
-                  <node concept="2OqwBi" id="28bFZSiL5nf" role="2GsD0m">
-                    <node concept="2OqwBi" id="28bFZSiL0eq" role="2Oq$k0">
-                      <node concept="2OqwBi" id="28bFZSiKWfi" role="2Oq$k0">
-                        <node concept="37vLTw" id="28bFZSiKVZq" role="2Oq$k0">
-                          <ref role="3cqZAo" node="28bFZSiG5EJ" resolve="copiedSwitch" />
-                        </node>
-                        <node concept="3Tsc0h" id="28bFZSiKYh$" role="2OqNvi">
-                          <ref role="3TtcxE" to="ebqt:1ERTnBTmkXe" resolve="alternatives" />
-                        </node>
-                      </node>
-                      <node concept="34jXtK" id="28bFZSiL3js" role="2OqNvi">
-                        <node concept="2OqwBi" id="28bFZSiL3I5" role="25WWJ7">
-                          <node concept="2GrUjf" id="28bFZSiL3mu" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="28bFZSiFXj1" resolve="alt" />
-                          </node>
-                          <node concept="2bSWHS" id="28bFZSiL4b_" role="2OqNvi" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3Tsc0h" id="28bFZSiL5EK" role="2OqNvi">
-                      <ref role="3TtcxE" to="hqsm:3VwoHXNC_4v" resolve="contents" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="28bFZSiG6_X" role="2LFqv$">
-                    <node concept="3clFbF" id="28bFZSiG74A" role="3cqZAp">
-                      <node concept="2OqwBi" id="28bFZSiG7b_" role="3clFbG">
-                        <node concept="37vLTw" id="28bFZSiG74_" role="2Oq$k0">
-                          <ref role="3cqZAo" node="28bFZSiG5EJ" resolve="copiedSwitch" />
-                        </node>
-                        <node concept="HtX7F" id="28bFZSiLi3_" role="2OqNvi">
-                          <node concept="2GrUjf" id="28bFZSiLieF" role="HtX7I">
-                            <ref role="2Gs0qQ" node="28bFZSiG6_T" resolve="stm" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3SKdUt" id="28bFZSiGaeG" role="3cqZAp">
-                  <node concept="3SKdUq" id="28bFZSiGaeI" role="3SKWNk">
-                    <property role="3SKdUp" value="delete switch node" />
-                  </node>
-                </node>
-                <node concept="3clFbF" id="28bFZSiG7yh" role="3cqZAp">
-                  <node concept="2OqwBi" id="28bFZSiG7Ec" role="3clFbG">
-                    <node concept="37vLTw" id="28bFZSiG7yf" role="2Oq$k0">
-                      <ref role="3cqZAo" node="28bFZSiG5EJ" resolve="copiedSwitch" />
-                    </node>
-                    <node concept="3YRAZt" id="28bFZSiG83g" role="2OqNvi" />
-                  </node>
-                </node>
-                <node concept="3SKdUt" id="28bFZSiGahY" role="3cqZAp">
-                  <node concept="3SKdUq" id="28bFZSiGai0" role="3SKWNk">
-                    <property role="3SKdUp" value="add copied and expanded body to original function" />
-                  </node>
-                </node>
-                <node concept="3clFbF" id="28bFZSiG88d" role="3cqZAp">
-                  <node concept="2OqwBi" id="28bFZSiG8hK" role="3clFbG">
-                    <node concept="37vLTw" id="28bFZSiG88b" role="2Oq$k0">
+                <node concept="3clFbF" id="28bFZSiG8Gc" role="3cqZAp">
+                  <node concept="2OqwBi" id="28bFZSiG8Qp" role="3clFbG">
+                    <node concept="37vLTw" id="28bFZSiG8Ga" role="2Oq$k0">
                       <ref role="3cqZAo" node="28bFZSiFWEm" resolve="originalBody" />
                     </node>
-                    <node concept="HtX7F" id="28bFZSiGW8m" role="2OqNvi">
-                      <node concept="37vLTw" id="28bFZSiGW8X" role="HtX7I">
-                        <ref role="3cqZAo" node="28bFZSiFXVU" resolve="newbody" />
-                      </node>
-                    </node>
+                    <node concept="3YRAZt" id="28bFZSiG98k" role="2OqNvi" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3SKdUt" id="28bFZSiGajF" role="3cqZAp">
-              <node concept="3SKdUq" id="28bFZSiGajH" role="3SKWNk">
-                <property role="3SKdUp" value="delete original body" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="28bFZSiG8Gc" role="3cqZAp">
-              <node concept="2OqwBi" id="28bFZSiG8Qp" role="3clFbG">
-                <node concept="37vLTw" id="28bFZSiG8Ga" role="2Oq$k0">
-                  <ref role="3cqZAo" node="28bFZSiFWEm" resolve="originalBody" />
-                </node>
-                <node concept="3YRAZt" id="28bFZSiG98k" role="2OqNvi" />
-              </node>
-            </node>
+          </node>
+          <node concept="37vLTw" id="2oS0yTqUQ4L" role="MpTkK">
+            <ref role="3cqZAo" node="2oS0yTqUP3u" resolve="replacedSwitch" />
           </node>
         </node>
       </node>
