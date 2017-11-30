@@ -15,14 +15,6 @@
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
-        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <child id="1083172003582" name="member" index="M5hS2" />
-      </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
-      </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
@@ -106,7 +98,7 @@
     <node concept="1TJgyi" id="fx1tsHglwA" role="1TKVEl">
       <property role="TrG5h" value="lastReviewState" />
       <property role="IQ2nx" value="279511073609046054" />
-      <ref role="AX2Wp" node="1tDstbgKlCo" resolve="CodeState" />
+      <ref role="AX2Wp" to="vs0r:1tDstbgKlCo" resolve="CodeState" />
     </node>
     <node concept="1TJgyi" id="4g52gaNPEri" role="1TKVEl">
       <property role="TrG5h" value="reviewIsCurrent" />
@@ -116,28 +108,13 @@
     <node concept="1TJgyi" id="1tDstbgKluR" role="1TKVEl">
       <property role="TrG5h" value="codeState" />
       <property role="IQ2nx" value="1687004685686364087" />
-      <ref role="AX2Wp" node="1tDstbgKlCo" resolve="CodeState" />
+      <ref role="AX2Wp" to="vs0r:1tDstbgKlCo" resolve="CodeState" />
     </node>
     <node concept="M6xJ_" id="4g52gaNN$a_" role="lGtFl">
       <property role="Hh88m" value="codereview" />
       <node concept="trNpa" id="1tDstbgC7cf" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
-    </node>
-  </node>
-  <node concept="AxPO7" id="1tDstbgKlCo">
-    <property role="3GE5qa" value="codereview" />
-    <property role="TrG5h" value="CodeState" />
-    <property role="3lZH7k" value="derive_from_presentation" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="1tDstbgKlCp" role="M5hS2">
-      <property role="1uS6qo" value="raw" />
-    </node>
-    <node concept="M4N5e" id="1tDstbgKlCq" role="M5hS2">
-      <property role="1uS6qo" value="ready" />
-    </node>
-    <node concept="M4N5e" id="1tDstbgKlCv" role="M5hS2">
-      <property role="1uS6qo" value="reviewed" />
     </node>
   </node>
   <node concept="1TIwiD" id="gjBy3ThgJz">
