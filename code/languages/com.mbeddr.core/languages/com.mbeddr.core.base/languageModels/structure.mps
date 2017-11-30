@@ -18,6 +18,7 @@
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="10jo" ref="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.structure)" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
+    <import index="w8vz" ref="r:70f80dec-8580-44c0-ad9d-103cf07213ef(com.mbeddr.core.codereview.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -156,7 +157,6 @@
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
-        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
@@ -1637,82 +1637,121 @@
   </node>
   <node concept="1TIwiD" id="4g52gaNPZ6t">
     <property role="3GE5qa" value="codereview" />
-    <property role="TrG5h" value="ReviewAssessmentResult" />
+    <property role="TrG5h" value="ReviewAssessmentResult_old" />
     <property role="EcuMT" value="4901333676674511261" />
     <ref role="1TJDcQ" node="K292flwHw9" resolve="AssessmentResult" />
     <node concept="1TJgyj" id="4g52gaNPZk9" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="code" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="code_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="4901333676674512137" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      <node concept="asaX9" id="48qh2gXL8uj" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.codereview.structure.ReviewAssessmentResult&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="48qh2gXL8sr" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.codereview&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="4g52gaNQxok">
     <property role="3GE5qa" value="codereview" />
-    <property role="TrG5h" value="ReviewAssessmentQuery" />
+    <property role="TrG5h" value="ReviewAssessmentQuery_old" />
     <property role="34LRSv" value="code review summary" />
     <property role="EcuMT" value="4901333676674651668" />
     <ref role="1TJDcQ" node="K292flwD4r" resolve="AssessmentQuery" />
     <node concept="1TJgyi" id="3DYDRw0Qxwo" role="1TKVEl">
-      <property role="TrG5h" value="doNotShowGreen" />
+      <property role="TrG5h" value="doNotShowGreen_old" />
       <property role="IQ2nx" value="4214990435117570072" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="48qh2gXL8tB" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.ReviewAssessmentQuery&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="7nkDZJXlKZu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="scope" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="scope_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8490595898229198814" />
       <ref role="20lvS9" node="7nkDZJXluO4" resolve="AssessmentScope" />
+      <node concept="asaX9" id="48qh2gXL8tX" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.codereview.structure.ReviewAssessmentQuery&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="48qh2gXL8sh" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.codereview&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="4g52gaNN$a$">
-    <property role="TrG5h" value="CodeReviewData" />
+    <property role="TrG5h" value="CodeReviewData_old" />
     <property role="3GE5qa" value="codereview" />
     <property role="EcuMT" value="4901333676673876644" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyi" id="4g52gaNOHw2" role="1TKVEl">
-      <property role="TrG5h" value="lastReviewTimestamp" />
+      <property role="TrG5h" value="lastReviewTimestamp_old" />
       <property role="IQ2nx" value="4901333676674177026" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="48qh2gXL8s_" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewData&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="4g52gaNOHw7" role="1TKVEl">
-      <property role="TrG5h" value="lastReviewReviewer" />
+      <property role="TrG5h" value="lastReviewReviewer_old" />
       <property role="IQ2nx" value="4901333676674177031" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="48qh2gXL8sK" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewData&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="4g52gaNOHwg" role="1TKVEl">
-      <property role="TrG5h" value="lastReviewHash" />
+      <property role="TrG5h" value="lastReviewHash_old" />
       <property role="IQ2nx" value="4901333676674177040" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <node concept="asaX9" id="48qh2gXL8sV" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewData&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="fx1tsHglwA" role="1TKVEl">
-      <property role="TrG5h" value="lastReviewState" />
+      <property role="TrG5h" value="lastReviewState_old" />
       <property role="IQ2nx" value="279511073609046054" />
-      <ref role="AX2Wp" node="1tDstbgKlCo" resolve="CodeState" />
+      <ref role="AX2Wp" to="w8vz:1tDstbgKlCo" resolve="CodeState" />
+      <node concept="asaX9" id="48qh2gXL8t6" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewData&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="4g52gaNPEri" role="1TKVEl">
-      <property role="TrG5h" value="reviewIsCurrent" />
+      <property role="TrG5h" value="reviewIsCurrent_old" />
       <property role="IQ2nx" value="4901333676674426578" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="48qh2gXL8th" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewData&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="1tDstbgKluR" role="1TKVEl">
-      <property role="TrG5h" value="codeState" />
+      <property role="TrG5h" value="codeState_old" />
       <property role="IQ2nx" value="1687004685686364087" />
-      <ref role="AX2Wp" node="1tDstbgKlCo" resolve="CodeState" />
+      <ref role="AX2Wp" to="w8vz:1tDstbgKlCo" resolve="CodeState" />
+      <node concept="asaX9" id="48qh2gXL8ts" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewData&quot;" />
+      </node>
     </node>
     <node concept="M6xJ_" id="4g52gaNN$a_" role="lGtFl">
-      <property role="Hh88m" value="codereview" />
+      <property role="Hh88m" value="codereview_old" />
       <node concept="trNpa" id="1tDstbgC7cf" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
     </node>
+    <node concept="asaX9" id="48qh2gXL8rM" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.codereview&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4g52gaNN$9K">
-    <property role="TrG5h" value="ICodeReviewEntity" />
+    <property role="TrG5h" value="ICodeReviewEntity_old" />
     <property role="3GE5qa" value="codereview" />
     <property role="EcuMT" value="4901333676673876592" />
+    <node concept="asaX9" id="48qh2gXL8s6" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.codereview&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7nkDZJXluO4">
     <property role="TrG5h" value="AssessmentScope" />
@@ -1752,47 +1791,44 @@
   </node>
   <node concept="1TIwiD" id="gjBy3TfZQv">
     <property role="3GE5qa" value="codereview" />
-    <property role="TrG5h" value="CodeReviewConfig" />
+    <property role="TrG5h" value="CodeReviewConfig_old" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="293752265167076767" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="gjBy3ThgKr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="concepts" />
+      <property role="20kJfa" value="concepts_old" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="293752265167408155" />
-      <ref role="20lvS9" node="gjBy3ThgJz" resolve="ConceptDeclarationReference" />
+      <ref role="20lvS9" node="gjBy3ThgJz" resolve="ConceptDeclarationReference_old" />
+      <node concept="asaX9" id="48qh2gXL8tM" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.codereview.structure.CodeReviewConfig&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="1ir19b4JZNn" role="PzmwI">
       <ref role="PrY4T" node="IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
+    <node concept="asaX9" id="48qh2gXL8rC" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.codereview&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="gjBy3ThgJz">
     <property role="3GE5qa" value="codereview" />
-    <property role="TrG5h" value="ConceptDeclarationReference" />
+    <property role="TrG5h" value="ConceptDeclarationReference_old" />
     <property role="EcuMT" value="293752265167408099" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4uR15_er0pl" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="concept" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="concept_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="5167603879045236309" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+      <node concept="asaX9" id="48qh2gXL8u8" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.codereview.structure.ConceptDeclarationReference&quot;" />
+      </node>
     </node>
-  </node>
-  <node concept="AxPO7" id="1tDstbgKlCo">
-    <property role="3GE5qa" value="codereview" />
-    <property role="TrG5h" value="CodeState" />
-    <property role="3lZH7k" value="derive_from_presentation" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="1tDstbgKlCp" role="M5hS2">
-      <property role="1uS6qo" value="raw" />
-    </node>
-    <node concept="M4N5e" id="1tDstbgKlCq" role="M5hS2">
-      <property role="1uS6qo" value="ready" />
-    </node>
-    <node concept="M4N5e" id="1tDstbgKlCv" role="M5hS2">
-      <property role="1uS6qo" value="reviewed" />
+    <node concept="asaX9" id="48qh2gXL8rW" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.codereview&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="1JcbkuyFcOM">
