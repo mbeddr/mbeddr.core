@@ -4826,9 +4826,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3TlMh9" id="1zeZsIb1CQU" role="3XIe9u">
-                    <property role="2hmy$m" value="0" />
-                  </node>
                 </node>
                 <node concept="3XIRlf" id="1zeZsIb1Dsp" role="3XIRFZ">
                   <property role="TrG5h" value="___taken" />
