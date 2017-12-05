@@ -43,9 +43,6 @@
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
-      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
-        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
-      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -63,7 +60,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -286,9 +282,6 @@
       <property role="20kJfa" value="element" />
       <ref role="20lvS9" node="6fy2FM6rkms" resolve="IPatternMemberElement" />
     </node>
-    <node concept="RPilO" id="5JQC2dmn0k8" role="lGtFl">
-      <ref role="RPilL" node="5SkQds3jOHd" resolve="element" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6fy2FM6sD96">
     <property role="EcuMT" value="7197326959317258822" />
@@ -380,9 +373,6 @@
     <node concept="PrWs8" id="4K3_GpArEu3" role="PzmwI">
       <ref role="PrY4T" node="6fy2FM6rkmr" resolve="IPatternTypeElement" />
     </node>
-    <node concept="RPilO" id="5JQC2dmn0k6" role="lGtFl">
-      <ref role="RPilL" node="5SkQds3i3rI" resolve="constructor" />
-    </node>
   </node>
   <node concept="PlHQZ" id="3l0M8IajVIG">
     <property role="EcuMT" value="3837287384166153132" />
@@ -430,9 +420,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6fy2FM6nEU5" role="PzmwI">
       <ref role="PrY4T" node="6fy2FM6nET_" resolve="ITypeConstructorReference" />
-    </node>
-    <node concept="RPilO" id="5JQC2dmn0k9" role="lGtFl">
-      <ref role="RPilL" node="6fy2FM6nETA" resolve="constructor" />
     </node>
   </node>
   <node concept="PlHQZ" id="6fy2FM6nET_">
@@ -540,9 +527,6 @@
     <property role="3GE5qa" value="definition" />
     <property role="TrG5h" value="LatticeDefinitionModuleImport" />
     <ref role="1TJDcQ" to="hqsm:SSjGGIi3iP" resolve="AbstractIncaModuleImport" />
-    <node concept="RPilO" id="5JQC2dmn0ka" role="lGtFl">
-      <ref role="RPilL" to="hqsm:SSjGGIi3iR" resolve="module" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7ike8KAHT9k">
     <property role="EcuMT" value="8400401379548959316" />
@@ -551,9 +535,6 @@
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="PrWs8" id="54ERyg8MVdv" role="PzmwI">
       <ref role="PrY4T" node="54ERyg8GXCY" resolve="ILatticeOperationCall" />
-    </node>
-    <node concept="RPilO" id="5JQC2dmn0kc" role="lGtFl">
-      <ref role="RPilL" node="4aOuL3PUQhL" resolve="operation" />
     </node>
   </node>
   <node concept="1TIwiD" id="606mdnYmDzq">

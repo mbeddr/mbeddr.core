@@ -51,9 +51,6 @@
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
-      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
-        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
-      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -239,9 +236,6 @@
     <node concept="PrWs8" id="3VwoHXNBLEE" role="PzmwI">
       <ref role="PrY4T" node="6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
     </node>
-    <node concept="RPilO" id="5JQC2dmn0jR" role="lGtFl">
-      <ref role="RPilL" node="6hXIxNuN5nr" resolve="concept" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6VTlRjrCuGI">
     <property role="3GE5qa" value="type.compileTime" />
@@ -257,9 +251,6 @@
     </node>
     <node concept="PrWs8" id="3VwoHXNC1L_" role="PzmwI">
       <ref role="PrY4T" node="6VTlRjrCuQt" resolve="ICompileTimeIncAType" />
-    </node>
-    <node concept="RPilO" id="5JQC2dmn0jT" role="lGtFl">
-      <ref role="RPilL" node="6VTlRjrCuOl" resolve="dataTypeDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="3hiszdZDhip">
@@ -296,9 +287,6 @@
     </node>
     <node concept="PrWs8" id="2J6v22V3oi9" role="PzmwI">
       <ref role="PrY4T" node="2J6v22V3ohT" resolve="IVariableValue" />
-    </node>
-    <node concept="RPilO" id="5JQC2dmn0jO" role="lGtFl">
-      <ref role="RPilL" node="EE49sRYMQu" resolve="variable" />
     </node>
   </node>
   <node concept="1TIwiD" id="6trdyn5sMcA">
@@ -503,9 +491,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3ybyOPMm8im" role="PzmwI">
       <ref role="PrY4T" node="3ybyOPMm8il" resolve="IPatternCall" />
-    </node>
-    <node concept="RPilO" id="5JQC2dmn0jP" role="lGtFl">
-      <ref role="RPilL" node="RjyNaq4vP3" resolve="pattern" />
     </node>
   </node>
   <node concept="1TIwiD" id="RjyNapPtMn">
@@ -856,9 +841,6 @@
     <node concept="PrWs8" id="39KhnTIfy4D" role="PzmwI">
       <ref role="PrY4T" node="1YBYCQ13COO" resolve="IGenNameProvider" />
     </node>
-    <node concept="RPilO" id="5JQC2dmn0jQ" role="lGtFl">
-      <ref role="RPilL" node="39KhnTIfy1W" resolve="variable" />
-    </node>
   </node>
   <node concept="PlHQZ" id="4IZiQsKumaj">
     <property role="3GE5qa" value="content" />
@@ -925,9 +907,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="6973815483243564601" />
       <ref role="20lvS9" to="tpce:fKAxPRV" resolve="EnumerationDataTypeDeclaration" />
-    </node>
-    <node concept="RPilO" id="5JQC2dmn0jS" role="lGtFl">
-      <ref role="RPilL" node="637Y3IJQwST" resolve="enum" />
     </node>
   </node>
   <node concept="PlHQZ" id="7A0HCuGt5rY">

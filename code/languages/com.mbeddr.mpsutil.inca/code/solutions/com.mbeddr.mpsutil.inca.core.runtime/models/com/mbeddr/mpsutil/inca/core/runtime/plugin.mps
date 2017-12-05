@@ -50,6 +50,7 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="vxxo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure.concept(MPS.Core/)" />
     <import index="69r6" ref="7766a138-716a-422a-9c88-131459fb8d6a/java:org.eclipse.viatra.query.runtime.rete.eval(com.mbeddr.mpsutil.inca.core.runtime/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="gcg1" ref="r:d6f14cc5-a2a7-4aaf-8f86-e35059edbf3b(com.mbeddr.mpsutil.inca.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -6296,26 +6297,54 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="1D4dCkVpf8L" role="3eOfB_">
-                    <node concept="3cpWs6" id="1D4dCkVpfNh" role="3cqZAp">
-                      <node concept="2OqwBi" id="1D4dCkVpfNi" role="3cqZAk">
-                        <node concept="37vLTw" id="1D4dCkVpfXY" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1D4dCkVnMzg" resolve="indexedConceptFeatures" />
+                    <node concept="3cpWs8" id="2051hW7QVDC" role="3cqZAp">
+                      <node concept="3cpWsn" id="2051hW7QVDD" role="3cpWs9">
+                        <property role="TrG5h" value="feature" />
+                        <property role="3TUv4t" value="true" />
+                        <node concept="3uibUv" id="2051hW7QVDy" role="1tU5fm">
+                          <ref role="3uigEE" to="c17a:~SConceptFeature" resolve="SConceptFeature" />
                         </node>
-                        <node concept="liA8E" id="1D4dCkVpfNk" role="2OqNvi">
-                          <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
-                          <node concept="2OqwBi" id="1D4dCkVpfNl" role="37wK5m">
-                            <node concept="1eOMI4" id="1D4dCkVpfNm" role="2Oq$k0">
-                              <node concept="10QFUN" id="1D4dCkVpfNn" role="1eOMHV">
-                                <node concept="37vLTw" id="1D4dCkVpfNo" role="10QFUP">
-                                  <ref role="3cqZAo" node="1D4dCkVp2tU" resolve="key" />
-                                </node>
-                                <node concept="3uibUv" id="1D4dCkVpgzR" role="10QFUM">
-                                  <ref role="3uigEE" node="7TrMLNbStQ8" resolve="ConceptFeatureKey" />
-                                </node>
+                        <node concept="2OqwBi" id="2051hW7QVDE" role="33vP2m">
+                          <node concept="1eOMI4" id="2051hW7QVDF" role="2Oq$k0">
+                            <node concept="10QFUN" id="2051hW7QVDG" role="1eOMHV">
+                              <node concept="37vLTw" id="2051hW7RdUU" role="10QFUP">
+                                <ref role="3cqZAo" node="1D4dCkVp2tU" resolve="key" />
+                              </node>
+                              <node concept="3uibUv" id="2051hW7QVDI" role="10QFUM">
+                                <ref role="3uigEE" node="7TrMLNbStQ8" resolve="ConceptFeatureKey" />
                               </node>
                             </node>
-                            <node concept="liA8E" id="1D4dCkVpfNq" role="2OqNvi">
-                              <ref role="37wK5l" node="7TrMLNbRsct" resolve="getKey" />
+                          </node>
+                          <node concept="liA8E" id="2051hW7QVDJ" role="2OqNvi">
+                            <ref role="37wK5l" node="7TrMLNbRsct" resolve="getKey" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs6" id="1D4dCkVpfNh" role="3cqZAp">
+                      <node concept="22lmx$" id="2051hW7Riyf" role="3cqZAk">
+                        <node concept="2OqwBi" id="2051hW7R_3N" role="3uHU7w">
+                          <node concept="2OqwBi" id="2051hW7RsqF" role="2Oq$k0">
+                            <node concept="Xjq3P" id="2051hW7Roio" role="2Oq$k0" />
+                            <node concept="2OwXpG" id="2051hW7RwWx" role="2OqNvi">
+                              <ref role="2Oxat5" node="1D4dCkVnK4t" resolve="baseIndex" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="2051hW7RDAB" role="2OqNvi">
+                            <ref role="37wK5l" node="2051hW7OYKe" resolve="isVirtualLink" />
+                            <node concept="37vLTw" id="2051hW7RHYg" role="37wK5m">
+                              <ref role="3cqZAo" node="2051hW7QVDD" resolve="feature" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="1D4dCkVpfNi" role="3uHU7B">
+                          <node concept="37vLTw" id="1D4dCkVpfXY" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1D4dCkVnMzg" resolve="indexedConceptFeatures" />
+                          </node>
+                          <node concept="liA8E" id="1D4dCkVpfNk" role="2OqNvi">
+                            <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object):boolean" resolve="contains" />
+                            <node concept="37vLTw" id="2051hW7QVDK" role="37wK5m">
+                              <ref role="3cqZAo" node="2051hW7QVDD" resolve="feature" />
                             </node>
                           </node>
                         </node>
@@ -7264,12 +7293,11 @@
                       </node>
                       <node concept="liA8E" id="1D4dCkVsQSi" role="2OqNvi">
                         <ref role="37wK5l" to="33ny:~Collection.add(java.lang.Object):boolean" resolve="add" />
-                        <node concept="2ShNRf" id="1D4dCkVsQVc" role="37wK5m">
-                          <node concept="1pGfFk" id="1D4dCkVsRW0" role="2ShVmc">
-                            <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                            <node concept="37vLTw" id="1D4dCkVsSEZ" role="37wK5m">
-                              <ref role="3cqZAo" node="1D4dCkVsMee" resolve="internalElement" />
-                            </node>
+                        <node concept="2YIFZM" id="2051hW8mZAA" role="37wK5m">
+                          <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                          <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                          <node concept="37vLTw" id="2051hW8n0BG" role="37wK5m">
+                            <ref role="3cqZAo" node="1D4dCkVsMee" resolve="internalElement" />
                           </node>
                         </node>
                       </node>
@@ -7407,12 +7435,11 @@
                         </node>
                         <node concept="liA8E" id="1D4dCkVtWDY" role="2OqNvi">
                           <ref role="37wK5l" to="33ny:~Collection.add(java.lang.Object):boolean" resolve="add" />
-                          <node concept="2ShNRf" id="1D4dCkVtWDZ" role="37wK5m">
-                            <node concept="1pGfFk" id="1D4dCkVtWE0" role="2ShVmc">
-                              <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                              <node concept="37vLTw" id="1D4dCkVtWE1" role="37wK5m">
-                                <ref role="3cqZAo" node="1D4dCkVtUkv" resolve="internalElement" />
-                              </node>
+                          <node concept="2YIFZM" id="2051hW8mKbA" role="37wK5m">
+                            <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                            <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                            <node concept="37vLTw" id="2051hW8mLcs" role="37wK5m">
+                              <ref role="3cqZAo" node="1D4dCkVtUkv" resolve="internalElement" />
                             </node>
                           </node>
                         </node>
@@ -7532,15 +7559,14 @@
                           </node>
                           <node concept="liA8E" id="1D4dCkVuhqx" role="2OqNvi">
                             <ref role="37wK5l" to="33ny:~Collection.add(java.lang.Object):boolean" resolve="add" />
-                            <node concept="2ShNRf" id="1D4dCkVuhtn" role="37wK5m">
-                              <node concept="1pGfFk" id="1D4dCkVui2j" role="2ShVmc">
-                                <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                                <node concept="2GrUjf" id="1D4dCkVui56" role="37wK5m">
-                                  <ref role="2Gs0qQ" node="1D4dCkVufZz" resolve="holder" />
-                                </node>
-                                <node concept="37vLTw" id="1D4dCkVuien" role="37wK5m">
-                                  <ref role="3cqZAo" node="1D4dCkVu8X1" resolve="internalTarget" />
-                                </node>
+                            <node concept="2YIFZM" id="2051hW8mGQG" role="37wK5m">
+                              <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                              <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                              <node concept="2GrUjf" id="1D4dCkVui56" role="37wK5m">
+                                <ref role="2Gs0qQ" node="1D4dCkVufZz" resolve="holder" />
+                              </node>
+                              <node concept="37vLTw" id="1D4dCkVuien" role="37wK5m">
+                                <ref role="3cqZAo" node="1D4dCkVu8X1" resolve="internalTarget" />
                               </node>
                             </node>
                           </node>
@@ -7591,15 +7617,14 @@
                             </node>
                             <node concept="liA8E" id="1D4dCkVukRk" role="2OqNvi">
                               <ref role="37wK5l" to="33ny:~Collection.add(java.lang.Object):boolean" resolve="add" />
-                              <node concept="2ShNRf" id="1D4dCkVukUa" role="37wK5m">
-                                <node concept="1pGfFk" id="1D4dCkVulv6" role="2ShVmc">
-                                  <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                                  <node concept="37vLTw" id="1D4dCkVulxU" role="37wK5m">
-                                    <ref role="3cqZAo" node="1D4dCkVu8kD" resolve="internalSource" />
-                                  </node>
-                                  <node concept="37vLTw" id="1D4dCkVulA$" role="37wK5m">
-                                    <ref role="3cqZAo" node="1D4dCkVu8X1" resolve="internalTarget" />
-                                  </node>
+                              <node concept="2YIFZM" id="2051hW8mNnl" role="37wK5m">
+                                <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                                <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                                <node concept="37vLTw" id="1D4dCkVulxU" role="37wK5m">
+                                  <ref role="3cqZAo" node="1D4dCkVu8kD" resolve="internalSource" />
+                                </node>
+                                <node concept="37vLTw" id="1D4dCkVulA$" role="37wK5m">
+                                  <ref role="3cqZAo" node="1D4dCkVu8X1" resolve="internalTarget" />
                                 </node>
                               </node>
                             </node>
@@ -7683,15 +7708,14 @@
                                         </node>
                                         <node concept="liA8E" id="1D4dCkVuLwa" role="2OqNvi">
                                           <ref role="37wK5l" to="33ny:~Collection.add(java.lang.Object):boolean" resolve="add" />
-                                          <node concept="2ShNRf" id="1D4dCkVuLyw" role="37wK5m">
-                                            <node concept="1pGfFk" id="1D4dCkVuM6y" role="2ShVmc">
-                                              <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                                              <node concept="37vLTw" id="1D4dCkVuM8E" role="37wK5m">
-                                                <ref role="3cqZAo" node="1D4dCkVuJYx" resolve="source" />
-                                              </node>
-                                              <node concept="37vLTw" id="1D4dCkVuMeo" role="37wK5m">
-                                                <ref role="3cqZAo" node="1D4dCkVuJY_" resolve="target" />
-                                              </node>
+                                          <node concept="2YIFZM" id="2051hW8mQrf" role="37wK5m">
+                                            <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                                            <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                                            <node concept="37vLTw" id="1D4dCkVuM8E" role="37wK5m">
+                                              <ref role="3cqZAo" node="1D4dCkVuJYx" resolve="source" />
+                                            </node>
+                                            <node concept="37vLTw" id="1D4dCkVuMeo" role="37wK5m">
+                                              <ref role="3cqZAo" node="1D4dCkVuJY_" resolve="target" />
                                             </node>
                                           </node>
                                         </node>
@@ -7735,15 +7759,14 @@
                             </node>
                             <node concept="liA8E" id="1D4dCkVv2V4" role="2OqNvi">
                               <ref role="37wK5l" to="33ny:~Collection.add(java.lang.Object):boolean" resolve="add" />
-                              <node concept="2ShNRf" id="1D4dCkVv2V5" role="37wK5m">
-                                <node concept="1pGfFk" id="1D4dCkVv2V6" role="2ShVmc">
-                                  <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                                  <node concept="37vLTw" id="1D4dCkVv33s" role="37wK5m">
-                                    <ref role="3cqZAo" node="1D4dCkVu8kD" resolve="internalSource" />
-                                  </node>
-                                  <node concept="2GrUjf" id="1D4dCkVv4Zo" role="37wK5m">
-                                    <ref role="2Gs0qQ" node="1D4dCkVv162" resolve="target" />
-                                  </node>
+                              <node concept="2YIFZM" id="2051hW8mTVg" role="37wK5m">
+                                <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                                <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                                <node concept="37vLTw" id="1D4dCkVv33s" role="37wK5m">
+                                  <ref role="3cqZAo" node="1D4dCkVu8kD" resolve="internalSource" />
+                                </node>
+                                <node concept="2GrUjf" id="1D4dCkVv4Zo" role="37wK5m">
+                                  <ref role="2Gs0qQ" node="1D4dCkVv162" resolve="target" />
                                 </node>
                               </node>
                             </node>
@@ -7979,12 +8002,11 @@
               </node>
               <node concept="3clFbS" id="1D4dCkVtcEA" role="3clF47">
                 <node concept="3cpWs6" id="1D4dCkVtfO3" role="3cqZAp">
-                  <node concept="2ShNRf" id="1D4dCkVtfOO" role="3cqZAk">
-                    <node concept="1pGfFk" id="1D4dCkVtg4z" role="2ShVmc">
-                      <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                      <node concept="37vLTw" id="1D4dCkVtgc0" role="37wK5m">
-                        <ref role="3cqZAo" node="1D4dCkVtcEy" resolve="element" />
-                      </node>
+                  <node concept="2YIFZM" id="2051hW8mW5C" role="3cqZAk">
+                    <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                    <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                    <node concept="37vLTw" id="2051hW8mWP5" role="37wK5m">
+                      <ref role="3cqZAo" node="1D4dCkVtcEy" resolve="element" />
                     </node>
                   </node>
                 </node>
@@ -10939,12 +10961,11 @@
                   </node>
                 </node>
               </node>
-              <node concept="2ShNRf" id="1D4dCkVyUzb" role="37wK5m">
-                <node concept="1pGfFk" id="1D4dCkVyUzc" role="2ShVmc">
-                  <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                  <node concept="37vLTw" id="1D4dCkVyUyu" role="37wK5m">
-                    <ref role="3cqZAo" node="1D4dCkVyUyc" resolve="instance" />
-                  </node>
+              <node concept="2YIFZM" id="2051hW8msYt" role="37wK5m">
+                <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                <node concept="37vLTw" id="2051hW8msYu" role="37wK5m">
+                  <ref role="3cqZAo" node="1D4dCkVyUyc" resolve="instance" />
                 </node>
               </node>
               <node concept="3clFbT" id="1D4dCkVyUyv" role="37wK5m">
@@ -11028,12 +11049,11 @@
                   </node>
                 </node>
               </node>
-              <node concept="2ShNRf" id="1D4dCkVyUzr" role="37wK5m">
-                <node concept="1pGfFk" id="1D4dCkVyUzs" role="2ShVmc">
-                  <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                  <node concept="37vLTw" id="1D4dCkVyUyS" role="37wK5m">
-                    <ref role="3cqZAo" node="1D4dCkVyUyA" resolve="instance" />
-                  </node>
+              <node concept="2YIFZM" id="2051hW8msC2" role="37wK5m">
+                <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                <node concept="37vLTw" id="2051hW8msMU" role="37wK5m">
+                  <ref role="3cqZAo" node="1D4dCkVyUyA" resolve="instance" />
                 </node>
               </node>
               <node concept="3clFbT" id="1D4dCkVyUyT" role="37wK5m">
@@ -11258,12 +11278,11 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2ShNRf" id="1D4dCkVzhQI" role="37wK5m">
-                    <node concept="1pGfFk" id="1D4dCkVzhQJ" role="2ShVmc">
-                      <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                      <node concept="37vLTw" id="1D4dCkVzhPV" role="37wK5m">
-                        <ref role="3cqZAo" node="1D4dCkVzhPz" resolve="value" />
-                      </node>
+                  <node concept="2YIFZM" id="2051hW8mtZi" role="37wK5m">
+                    <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                    <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                    <node concept="37vLTw" id="2051hW8mu9Y" role="37wK5m">
+                      <ref role="3cqZAo" node="1D4dCkVzhPz" resolve="value" />
                     </node>
                   </node>
                   <node concept="3clFbT" id="1D4dCkVzhPW" role="37wK5m">
@@ -11361,12 +11380,11 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2ShNRf" id="1D4dCkVzhQY" role="37wK5m">
-                    <node concept="1pGfFk" id="1D4dCkVzhQZ" role="2ShVmc">
-                      <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                      <node concept="37vLTw" id="1D4dCkVzhQr" role="37wK5m">
-                        <ref role="3cqZAo" node="1D4dCkVzhQ3" resolve="value" />
-                      </node>
+                  <node concept="2YIFZM" id="2051hW8mul7" role="37wK5m">
+                    <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                    <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                    <node concept="37vLTw" id="2051hW8mul8" role="37wK5m">
+                      <ref role="3cqZAo" node="1D4dCkVzhQ3" resolve="value" />
                     </node>
                   </node>
                   <node concept="3clFbT" id="1D4dCkVzhQs" role="37wK5m">
@@ -11822,15 +11840,14 @@
                   </node>
                 </node>
               </node>
-              <node concept="2ShNRf" id="1D4dCkVzojZ" role="37wK5m">
-                <node concept="1pGfFk" id="1D4dCkVzok0" role="2ShVmc">
-                  <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                  <node concept="37vLTw" id="1D4dCkVzoiX" role="37wK5m">
-                    <ref role="3cqZAo" node="1D4dCkVzoit" resolve="holder" />
-                  </node>
-                  <node concept="37vLTw" id="1D4dCkVzoiY" role="37wK5m">
-                    <ref role="3cqZAo" node="1D4dCkVzoix" resolve="value" />
-                  </node>
+              <node concept="2YIFZM" id="2051hW8mqLA" role="37wK5m">
+                <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                <node concept="37vLTw" id="1D4dCkVzoiX" role="37wK5m">
+                  <ref role="3cqZAo" node="1D4dCkVzoit" resolve="holder" />
+                </node>
+                <node concept="37vLTw" id="1D4dCkVzoiY" role="37wK5m">
+                  <ref role="3cqZAo" node="1D4dCkVzoix" resolve="value" />
                 </node>
               </node>
               <node concept="3clFbT" id="1D4dCkVzoiZ" role="37wK5m">
@@ -11953,15 +11970,14 @@
                   </node>
                 </node>
               </node>
-              <node concept="2ShNRf" id="1D4dCkVzokm" role="37wK5m">
-                <node concept="1pGfFk" id="1D4dCkVzokn" role="2ShVmc">
-                  <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                  <node concept="37vLTw" id="1D4dCkVzoj$" role="37wK5m">
-                    <ref role="3cqZAo" node="1D4dCkVzoj4" resolve="holder" />
-                  </node>
-                  <node concept="37vLTw" id="1D4dCkVzoj_" role="37wK5m">
-                    <ref role="3cqZAo" node="1D4dCkVzoj8" resolve="value" />
-                  </node>
+              <node concept="2YIFZM" id="2051hW8mrAq" role="37wK5m">
+                <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                <node concept="37vLTw" id="1D4dCkVzoj$" role="37wK5m">
+                  <ref role="3cqZAo" node="1D4dCkVzoj4" resolve="holder" />
+                </node>
+                <node concept="37vLTw" id="1D4dCkVzoj_" role="37wK5m">
+                  <ref role="3cqZAo" node="1D4dCkVzoj8" resolve="value" />
                 </node>
               </node>
               <node concept="3clFbT" id="1D4dCkVzojA" role="37wK5m">
@@ -12058,12 +12074,11 @@
                 <ref role="2Oxat5" node="1D4dCkVyLyD" resolve="tuple" />
               </node>
             </node>
-            <node concept="2ShNRf" id="1D4dCkVyL_i" role="37vLTx">
-              <node concept="1pGfFk" id="1D4dCkVyL_j" role="2ShVmc">
-                <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                <node concept="37vLTw" id="1D4dCkVyLz0" role="37wK5m">
-                  <ref role="3cqZAo" node="1D4dCkVyLyK" resolve="tuple" />
-                </node>
+            <node concept="2YIFZM" id="2051hW8mvuQ" role="37vLTx">
+              <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+              <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+              <node concept="37vLTw" id="2051hW8mvx8" role="37wK5m">
+                <ref role="3cqZAo" node="1D4dCkVyLyK" resolve="tuple" />
               </node>
             </node>
           </node>
@@ -16486,6 +16501,38 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="2051hW84F3X" role="3cqZAp" />
+            <node concept="3SKdUt" id="2051hW84GGf" role="3cqZAp">
+              <node concept="3SKdUq" id="2051hW84GGh" role="3SKWNk">
+                <property role="3SKdUp" value="add BaseConcept as a superconcept for interfaces" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="2051hW84Hue" role="3cqZAp">
+              <node concept="3clFbS" id="2051hW84Hug" role="3clFbx">
+                <node concept="3clFbF" id="2051hW84MxT" role="3cqZAp">
+                  <node concept="2OqwBi" id="2051hW84MTw" role="3clFbG">
+                    <node concept="37vLTw" id="2051hW84MxR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5VMWdq5MeGI" resolve="superConcepts" />
+                    </node>
+                    <node concept="liA8E" id="2051hW84NQL" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
+                      <node concept="35c_gC" id="2051hW84OVh" role="37wK5m">
+                        <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2ZW3vV" id="2051hW84Mop" role="3clFbw">
+                <node concept="3uibUv" id="2051hW84MtU" role="2ZW6by">
+                  <ref role="3uigEE" to="c17a:~SInterfaceConcept" resolve="SInterfaceConcept" />
+                </node>
+                <node concept="37vLTw" id="2051hW84HRO" role="2ZW6bz">
+                  <ref role="3cqZAo" node="3ZCX9YpLMKX" resolve="concept" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2051hW84Gi5" role="3cqZAp" />
             <node concept="3SKdUt" id="6UZv67BdYjX" role="3cqZAp">
               <node concept="3SKdUq" id="6UZv67BdYjZ" role="3SKWNk">
                 <property role="3SKdUp" value="special handling of the ContextPointer concept" />
@@ -16626,6 +16673,7 @@
       <node concept="3cqZAl" id="3ZCX9YpLMKW" role="3clF45" />
       <node concept="37vLTG" id="3ZCX9YpLMKX" role="3clF46">
         <property role="TrG5h" value="concept" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="4XO8PV4zunM" role="1tU5fm">
           <ref role="3uigEE" to="c17a:~SAbstractConcept" resolve="SAbstractConcept" />
         </node>
@@ -17226,6 +17274,22 @@
       </node>
       <node concept="16euLQ" id="4NnxEzfVeko" role="16eVyc">
         <property role="TrG5h" value="V" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2051hW7OY0m" role="jymVt" />
+    <node concept="3clFb_" id="2051hW7OYKe" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isVirtualLink" />
+      <node concept="3clFbS" id="2051hW7OYKh" role="3clF47" />
+      <node concept="3Tm1VV" id="2051hW7OYKi" role="1B3o_S" />
+      <node concept="10P_77" id="2051hW7OY_x" role="3clF45" />
+      <node concept="37vLTG" id="2051hW7OZb0" role="3clF46">
+        <property role="TrG5h" value="feature" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="2051hW7OZaZ" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SConceptFeature" resolve="SConceptFeature" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4ZRA7ouhuKi" role="jymVt" />
@@ -18122,6 +18186,109 @@
         <node concept="3uibUv" id="4erl$guvlFh" role="1tU5fm">
           <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
         </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2051hW7Pxc4" role="jymVt" />
+    <node concept="3clFb_" id="2051hW7PjE2" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isVirtualLink" />
+      <node concept="3Tm1VV" id="2051hW7PjE4" role="1B3o_S" />
+      <node concept="10P_77" id="2051hW7PjE5" role="3clF45" />
+      <node concept="37vLTG" id="2051hW7PjE6" role="3clF46">
+        <property role="TrG5h" value="feature" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="2051hW7PjE7" role="1tU5fm">
+          <ref role="3uigEE" to="c17a:~SConceptFeature" resolve="SConceptFeature" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2051hW7PjE8" role="3clF47">
+        <node concept="3clFbJ" id="2051hW7PI$Q" role="3cqZAp">
+          <node concept="3clFbS" id="2051hW7PI$S" role="3clFbx">
+            <node concept="3cpWs6" id="2051hW7PKey" role="3cqZAp">
+              <node concept="3clFbT" id="2051hW7PKgH" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2ZW3vV" id="2051hW7PIW$" role="3clFbw">
+            <node concept="3uibUv" id="2051hW7PJV4" role="2ZW6by">
+              <ref role="3uigEE" node="2WpF3SwqDgM" resolve="VirtualIsDefinedProperty" />
+            </node>
+            <node concept="37vLTw" id="2051hW7PIBa" role="2ZW6bz">
+              <ref role="3cqZAo" node="2051hW7PjE6" resolve="feature" />
+            </node>
+          </node>
+          <node concept="3eNFk2" id="2051hW7PKjz" role="3eNLev">
+            <node concept="3clFbS" id="2051hW7PKj_" role="3eOfB_">
+              <node concept="3cpWs6" id="2051hW7Q0mF" role="3cqZAp">
+                <node concept="3clFbT" id="2051hW7Q0oP" role="3cqZAk">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="2051hW7PYnf" role="3eO9$A">
+              <ref role="37wK5l" to="33ny:~Objects.equals(java.lang.Object,java.lang.Object):boolean" resolve="equals" />
+              <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
+              <node concept="37vLTw" id="2051hW7PYq3" role="37wK5m">
+                <ref role="3cqZAo" node="2051hW7PjE6" resolve="feature" />
+              </node>
+              <node concept="37vLTw" id="2051hW7PZnC" role="37wK5m">
+                <ref role="3cqZAo" node="3_9MzUj627U" resolve="nextLink" />
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="2051hW7Q0pd" role="3eNLev">
+            <node concept="3clFbS" id="2051hW7Q0pf" role="3eOfB_">
+              <node concept="3cpWs6" id="2051hW7QNDa" role="3cqZAp">
+                <node concept="3clFbT" id="2051hW7QNDb" role="3cqZAk">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="2051hW7QJb3" role="3eO9$A">
+              <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
+              <ref role="37wK5l" to="33ny:~Objects.equals(java.lang.Object,java.lang.Object):boolean" resolve="equals" />
+              <node concept="37vLTw" id="2051hW7QJb4" role="37wK5m">
+                <ref role="3cqZAo" node="2051hW7PjE6" resolve="feature" />
+              </node>
+              <node concept="37vLTw" id="2051hW7QKr0" role="37wK5m">
+                <ref role="3cqZAo" node="360F32cyCro" resolve="prevLink" />
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="2051hW7Qc52" role="3eNLev">
+            <node concept="3clFbS" id="2051hW7Qc54" role="3eOfB_">
+              <node concept="3cpWs6" id="2051hW7QNAA" role="3cqZAp">
+                <node concept="3clFbT" id="2051hW7QNCK" role="3cqZAk">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="2051hW7QLnD" role="3eO9$A">
+              <ref role="1Pybhc" to="33ny:~Objects" resolve="Objects" />
+              <ref role="37wK5l" to="33ny:~Objects.equals(java.lang.Object,java.lang.Object):boolean" resolve="equals" />
+              <node concept="37vLTw" id="2051hW7QLnE" role="37wK5m">
+                <ref role="3cqZAo" node="2051hW7PjE6" resolve="feature" />
+              </node>
+              <node concept="37vLTw" id="2051hW7QMBw" role="37wK5m">
+                <ref role="3cqZAo" node="3_9MzUj613I" resolve="parentLink" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="2051hW7QnL0" role="9aQIa">
+            <node concept="3clFbS" id="2051hW7QnL1" role="9aQI4">
+              <node concept="3cpWs6" id="2051hW7QyZS" role="3cqZAp">
+                <node concept="3clFbT" id="2051hW7Qz22" role="3cqZAk">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2051hW7PjE9" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="4erl$guxnpi" role="jymVt" />
@@ -28952,9 +29119,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="1gckXeMyQ83" role="1B3o_S" />
       <node concept="10P_77" id="1gckXeMyQ84" role="1tU5fm" />
-      <node concept="3clFbT" id="1gckXeMz5Hp" role="33vP2m">
-        <property role="3clFbU" value="true" />
-      </node>
+      <node concept="3clFbT" id="1gckXeMz5Hp" role="33vP2m" />
     </node>
     <node concept="Wx3nA" id="1gckXeMyQ92" role="jymVt">
       <property role="2dlcS1" value="false" />
@@ -32504,6 +32669,7 @@
       <node concept="3Tm6S6" id="2WpF3SwuIFd" role="1B3o_S" />
       <node concept="10P_77" id="2WpF3SwuJfX" role="1tU5fm" />
     </node>
+    <node concept="2tJIrI" id="2051hW8moZV" role="jymVt" />
     <node concept="3clFbW" id="2WpF3Swu6pF" role="jymVt">
       <node concept="3clFbS" id="2WpF3Swu6pG" role="3clF47">
         <node concept="3clFbF" id="2WpF3Swu6pK" role="3cqZAp">
@@ -32546,6 +32712,7 @@
         <node concept="10P_77" id="2WpF3SwuI5$" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="2051hW8mo4Y" role="jymVt" />
     <node concept="3Tm1VV" id="2WpF3Swuz9Q" role="1B3o_S" />
     <node concept="3clFb_" id="4wicJwLme4Y" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -32556,9 +32723,7 @@
       <node concept="2AHcQZ" id="4wicJwLme51" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
-      <node concept="3uibUv" id="4wicJwLme55" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="2051hW8mb_Z" role="3clF45" />
       <node concept="3clFbS" id="4wicJwLme56" role="3clF47">
         <node concept="3cpWs6" id="4wicJwLmhtG" role="3cqZAp">
           <node concept="3cpWs3" id="4wicJwLmpnK" role="3cqZAk">
@@ -32587,9 +32752,11 @@
               </node>
             </node>
           </node>
+          <node concept="15s5l7" id="2051hW8mcsb" role="lGtFl" />
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="2051hW8mna3" role="jymVt" />
     <node concept="3clFb_" id="4wicJwLmxw5" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getName" />
@@ -32599,9 +32766,7 @@
       <node concept="2AHcQZ" id="4wicJwLmxw8" role="2AJF6D">
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
-      <node concept="3uibUv" id="4wicJwLmxw9" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="2051hW8maK9" role="3clF45" />
       <node concept="3clFbS" id="4wicJwLmxwd" role="3clF47">
         <node concept="3cpWs6" id="4wicJwLmzki" role="3cqZAp">
           <node concept="3cpWs3" id="4wicJwLmAjd" role="3cqZAk">
@@ -32636,6 +32801,7 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="2051hW8mmfa" role="jymVt" />
     <node concept="3clFb_" id="4wicJwLmxwh" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getOwner" />
@@ -32667,6 +32833,7 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="2051hW8mjz9" role="jymVt" />
     <node concept="3clFb_" id="4wicJwLmxws" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="isValid" />
@@ -32693,6 +32860,7 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="2051hW8miCo" role="jymVt" />
     <node concept="3clFb_" id="4wicJwLme58" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getTargetConcept" />
@@ -32721,6 +32889,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="2051hW8mktW" role="jymVt" />
     <node concept="3clFb_" id="4wicJwLme5f" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="isReference" />
@@ -32738,7 +32907,11 @@
           </node>
         </node>
       </node>
+      <node concept="2AHcQZ" id="2051hW8mlp1" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
+    <node concept="2tJIrI" id="2051hW8mf6Y" role="jymVt" />
     <node concept="3clFb_" id="4wicJwLme5p" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="isOptional" />
@@ -32753,7 +32926,11 @@
           </node>
         </node>
       </node>
+      <node concept="2AHcQZ" id="2051hW8mgWq" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
+    <node concept="2tJIrI" id="2051hW8mg1B" role="jymVt" />
     <node concept="3clFb_" id="4wicJwLme5v" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="isMultiple" />
@@ -32767,6 +32944,9 @@
             <property role="3clFbU" value="false" />
           </node>
         </node>
+      </node>
+      <node concept="2AHcQZ" id="2051hW8mhMp" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="2WpF3Swq1pU" role="jymVt" />
@@ -32855,6 +33035,7 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="2051hW8mdhM" role="jymVt" />
     <node concept="3clFb_" id="2WpF3Swq2y$" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="hashCode" />
@@ -32887,6 +33068,7 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="2051hW8mecn" role="jymVt" />
     <node concept="3uibUv" id="2WpF3Swu6pE" role="EKbjA">
       <ref role="3uigEE" to="c17a:~SAbstractLink" resolve="SAbstractLink" />
     </node>
@@ -32974,9 +33156,7 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="Yaq6rgwhnD" role="1B3o_S" />
-      <node concept="3uibUv" id="Yaq6rgwhnF" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="2051hW7NIWS" role="3clF45" />
       <node concept="3clFbS" id="Yaq6rgwhnJ" role="3clF47">
         <node concept="3clFbF" id="Yaq6rgwhnM" role="3cqZAp">
           <node concept="1rXfSq" id="Yaq6rgwjqr" role="3clFbG">

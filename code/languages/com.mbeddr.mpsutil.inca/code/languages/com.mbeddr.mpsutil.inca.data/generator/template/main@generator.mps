@@ -6136,22 +6136,21 @@
                   <node concept="37vLTw" id="1Wcd$PdAmbC" role="37wK5m">
                     <ref role="3cqZAo" node="8FTmV8tlCi" resolve="body" />
                   </node>
-                  <node concept="2ShNRf" id="1Wcd$PdAuHU" role="37wK5m">
-                    <node concept="1pGfFk" id="1Wcd$PdAv1F" role="2ShVmc">
-                      <ref role="37wK5l" to="inmn:~FlatTuple.&lt;init&gt;(java.lang.Object...)" resolve="FlatTuple" />
-                      <node concept="37vLTw" id="1Wcd$PdAv2T" role="37wK5m">
-                        <ref role="3cqZAo" node="1Wcd$PdAqON" resolve="var" />
-                        <node concept="1ZhdrF" id="1Wcd$PdAxC3" role="lGtFl">
-                          <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
-                          <property role="2qtEX8" value="variableDeclaration" />
-                          <node concept="3$xsQk" id="1Wcd$PdAxC4" role="3$ytzL">
-                            <node concept="3clFbS" id="1Wcd$PdAxC5" role="2VODD2">
-                              <node concept="3cpWs6" id="6JEY8lSiAMx" role="3cqZAp">
-                                <node concept="2OqwBi" id="6JEY8lSiAMy" role="3cqZAk">
-                                  <node concept="30H73N" id="6JEY8lSiAMz" role="2Oq$k0" />
-                                  <node concept="2qgKlT" id="6JEY8lSiAM$" role="2OqNvi">
-                                    <ref role="37wK5l" to="gcg1:1YBYCQ13CPf" resolve="genName" />
-                                  </node>
+                  <node concept="2YIFZM" id="2051hW8o301" role="37wK5m">
+                    <ref role="37wK5l" to="inmn:~Tuples.flatTupleOf(java.lang.Object...):org.eclipse.viatra.query.runtime.matchers.tuple.Tuple" resolve="flatTupleOf" />
+                    <ref role="1Pybhc" to="inmn:~Tuples" resolve="Tuples" />
+                    <node concept="37vLTw" id="1Wcd$PdAv2T" role="37wK5m">
+                      <ref role="3cqZAo" node="1Wcd$PdAqON" resolve="var" />
+                      <node concept="1ZhdrF" id="1Wcd$PdAxC3" role="lGtFl">
+                        <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                        <property role="2qtEX8" value="variableDeclaration" />
+                        <node concept="3$xsQk" id="1Wcd$PdAxC4" role="3$ytzL">
+                          <node concept="3clFbS" id="1Wcd$PdAxC5" role="2VODD2">
+                            <node concept="3cpWs6" id="6JEY8lSiAMx" role="3cqZAp">
+                              <node concept="2OqwBi" id="6JEY8lSiAMy" role="3cqZAk">
+                                <node concept="30H73N" id="6JEY8lSiAMz" role="2Oq$k0" />
+                                <node concept="2qgKlT" id="6JEY8lSiAM$" role="2OqNvi">
+                                  <ref role="37wK5l" to="gcg1:1YBYCQ13CPf" resolve="genName" />
                                 </node>
                               </node>
                             </node>
