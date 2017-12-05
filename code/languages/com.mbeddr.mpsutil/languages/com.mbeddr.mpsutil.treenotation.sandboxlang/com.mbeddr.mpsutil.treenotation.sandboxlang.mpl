@@ -9,7 +9,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">bda054c4-5d71-46ca-aba0-7104e3070b5a(com.mbeddr.mpsutil.treenotation.styles)</dependency>
-    <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
+    <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons.math3)</dependency>
     <dependency reexport="false">e9d9e7bc-3ca3-4ef7-8aa7-316a55bcc1ab(com.mbeddr.mpsutil.treenotation.runtime)</dependency>
   </dependencies>
   <languageVersions>

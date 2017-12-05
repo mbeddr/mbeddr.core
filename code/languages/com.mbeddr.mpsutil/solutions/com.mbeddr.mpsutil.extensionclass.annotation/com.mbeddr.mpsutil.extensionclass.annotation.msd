@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="true">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
+    <dependency reexport="true">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons.math3)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f39336d3-1288-47ee-bbfe-ad2ea7e4504e:com.mbeddr.mpsutil.extensionclass" version="1" />

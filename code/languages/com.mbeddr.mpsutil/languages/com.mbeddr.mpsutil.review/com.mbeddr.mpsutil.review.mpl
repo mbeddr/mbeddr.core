@@ -64,7 +64,7 @@
     <dependency reexport="false">bb6926d3-ebcc-4ca6-a3be-c618633c0dc1(com.mbeddr.mpsutil.review.runtime)</dependency>
     <dependency reexport="true">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
-    <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
+    <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons.math3)</dependency>
     <dependency reexport="false">e33ff641-cba8-4703-98f4-59e63936d940(com.mbeddr.mpsutil.margincell.editor)</dependency>
   </dependencies>
   <languageVersions>
