@@ -8305,150 +8305,155 @@
       <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
       <ref role="2f8Tey" to="tprs:1ePK2dvwshF" resolve="newActions" />
     </node>
-    <node concept="2OiAzN" id="IviauYoeP" role="ftER_">
-      <node concept="2OiTZ2" id="IviauYoeR" role="2Oj6PV">
-        <node concept="3clFbS" id="IviauYoeT" role="2VODD2">
-          <node concept="3clFbF" id="3EDTYYULw_U" role="3cqZAp">
-            <node concept="2OqwBi" id="3EDTYYULx7q" role="3clFbG">
-              <node concept="2WthIp" id="3EDTYYULw_S" role="2Oq$k0" />
-              <node concept="liA8E" id="3EDTYYULCMQ" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~DefaultActionGroup.removeAll():void" resolve="removeAll" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbH" id="Iviav9g1h" role="3cqZAp" />
-          <node concept="3cpWs8" id="IviauYqHe" role="3cqZAp">
-            <node concept="3cpWsn" id="IviauYqHf" role="3cpWs9">
-              <property role="TrG5h" value="model" />
-              <node concept="3uibUv" id="IviauYvTM" role="1tU5fm">
-                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-              </node>
-              <node concept="2OqwBi" id="IviauYr4s" role="33vP2m">
-                <node concept="tl45R" id="IviauYqIm" role="2Oq$k0" />
-                <node concept="liA8E" id="IviauYtNk" role="2OqNvi">
-                  <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey):java.lang.Object" resolve="getData" />
-                  <node concept="10M0yZ" id="IviauYusl" role="37wK5m">
-                    <ref role="1PxDUh" to="qq03:~MPSCommonDataKeys" resolve="MPSCommonDataKeys" />
-                    <ref role="3cqZAo" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
+    <node concept="ftmFs" id="5BNookPI_PU" role="ftER_">
+      <node concept="tC5Ba" id="5BNookPIAbK" role="ftvYc">
+        <property role="TrG5h" value="CreateMbeddrRootsUpdateGroup" />
+        <node concept="2OiAzN" id="5BNookPIAmH" role="ftER_">
+          <node concept="2OiTZ2" id="5BNookPIAn8" role="2Oj6PV">
+            <node concept="3clFbS" id="5BNookPIAn9" role="2VODD2">
+              <node concept="3clFbF" id="5BNookPIAna" role="3cqZAp">
+                <node concept="2OqwBi" id="5BNookPIAnb" role="3clFbG">
+                  <node concept="2WthIp" id="5BNookPIAnc" role="2Oq$k0" />
+                  <node concept="liA8E" id="5BNookPIAnd" role="2OqNvi">
+                    <ref role="37wK5l" to="qkt:~DefaultActionGroup.removeAll():void" resolve="removeAll" />
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="23GX$R4jmn" role="3cqZAp">
-            <node concept="3cpWsn" id="23GX$R4jmo" role="3cpWs9">
-              <property role="TrG5h" value="project" />
-              <node concept="3uibUv" id="23GX$R4jmp" role="1tU5fm">
-                <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
-              </node>
-              <node concept="2OqwBi" id="23GX$R4jUy" role="33vP2m">
-                <node concept="tl45R" id="23GX$R4j$v" role="2Oq$k0" />
-                <node concept="liA8E" id="23GX$R4mDq" role="2OqNvi">
-                  <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey):java.lang.Object" resolve="getData" />
-                  <node concept="10M0yZ" id="23GX$R4mEl" role="37wK5m">
-                    <ref role="1PxDUh" to="qq03:~MPSCommonDataKeys" resolve="MPSCommonDataKeys" />
-                    <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+              <node concept="3clFbH" id="5BNookPIAne" role="3cqZAp" />
+              <node concept="3cpWs8" id="5BNookPIAnf" role="3cqZAp">
+                <node concept="3cpWsn" id="5BNookPIAng" role="3cpWs9">
+                  <property role="TrG5h" value="model" />
+                  <node concept="3uibUv" id="5BNookPIAnh" role="1tU5fm">
+                    <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+                  </node>
+                  <node concept="2OqwBi" id="5BNookPIAni" role="33vP2m">
+                    <node concept="tl45R" id="5BNookPIAnj" role="2Oq$k0" />
+                    <node concept="liA8E" id="5BNookPIAnk" role="2OqNvi">
+                      <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey):java.lang.Object" resolve="getData" />
+                      <node concept="10M0yZ" id="5BNookPIAnl" role="37wK5m">
+                        <ref role="3cqZAo" to="qq03:~MPSCommonDataKeys.CONTEXT_MODEL" resolve="CONTEXT_MODEL" />
+                        <ref role="1PxDUh" to="qq03:~MPSCommonDataKeys" resolve="MPSCommonDataKeys" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3clFbH" id="1uL8CIsGMMX" role="3cqZAp" />
-          <node concept="3clFbJ" id="1uL8CIsGQE0" role="3cqZAp">
-            <node concept="3clFbS" id="1uL8CIsGQE3" role="3clFbx">
-              <node concept="3clFbF" id="Iviav7ZKa" role="3cqZAp">
-                <node concept="2OqwBi" id="Iviav85sd" role="3clFbG">
-                  <node concept="2OqwBi" id="Iviav81qU" role="2Oq$k0">
-                    <node concept="tl45R" id="Iviav7ZK8" role="2Oq$k0" />
-                    <node concept="liA8E" id="Iviav85ko" role="2OqNvi">
+              <node concept="3cpWs8" id="5BNookPIAnm" role="3cqZAp">
+                <node concept="3cpWsn" id="5BNookPIAnn" role="3cpWs9">
+                  <property role="TrG5h" value="project" />
+                  <node concept="3uibUv" id="5BNookPIAno" role="1tU5fm">
+                    <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+                  </node>
+                  <node concept="2OqwBi" id="5BNookPIAnp" role="33vP2m">
+                    <node concept="tl45R" id="5BNookPIAnq" role="2Oq$k0" />
+                    <node concept="liA8E" id="5BNookPIAnr" role="2OqNvi">
+                      <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey):java.lang.Object" resolve="getData" />
+                      <node concept="10M0yZ" id="5BNookPIAns" role="37wK5m">
+                        <ref role="1PxDUh" to="qq03:~MPSCommonDataKeys" resolve="MPSCommonDataKeys" />
+                        <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="5BNookPIAnt" role="3cqZAp" />
+              <node concept="3clFbJ" id="5BNookPIAnu" role="3cqZAp">
+                <node concept="3clFbS" id="5BNookPIAnv" role="3clFbx">
+                  <node concept="3clFbF" id="5BNookPIAnw" role="3cqZAp">
+                    <node concept="2OqwBi" id="5BNookPIAnx" role="3clFbG">
+                      <node concept="2OqwBi" id="5BNookPIAny" role="2Oq$k0">
+                        <node concept="tl45R" id="5BNookPIAnz" role="2Oq$k0" />
+                        <node concept="liA8E" id="5BNookPIAn$" role="2OqNvi">
+                          <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation():com.intellij.openapi.actionSystem.Presentation" resolve="getPresentation" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="5BNookPIAn_" role="2OqNvi">
+                        <ref role="37wK5l" to="qkt:~Presentation.setEnabled(boolean):void" resolve="setEnabled" />
+                        <node concept="3clFbT" id="5BNookPIAnA" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="5BNookPIAnB" role="3cqZAp">
+                    <node concept="2OqwBi" id="5BNookPIAnC" role="3clFbG">
+                      <node concept="2OqwBi" id="5BNookPIAnD" role="2Oq$k0">
+                        <node concept="tl45R" id="5BNookPIAnE" role="2Oq$k0" />
+                        <node concept="liA8E" id="5BNookPIAnF" role="2OqNvi">
+                          <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation():com.intellij.openapi.actionSystem.Presentation" resolve="getPresentation" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="5BNookPIAnG" role="2OqNvi">
+                        <ref role="37wK5l" to="qkt:~Presentation.setVisible(boolean):void" resolve="setVisible" />
+                        <node concept="3clFbT" id="5BNookPIAnH" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWs6" id="5BNookPIAnI" role="3cqZAp" />
+                </node>
+                <node concept="22lmx$" id="5BNookPIAnJ" role="3clFbw">
+                  <node concept="3fqX7Q" id="5BNookPIAnK" role="3uHU7w">
+                    <node concept="2YIFZM" id="5BNookPIAnL" role="3fr31v">
+                      <ref role="37wK5l" node="23GX$QSGoV" resolve="isMbeddrMenuEnabled" />
+                      <ref role="1Pybhc" node="5FfxSinVg0H" resolve="MbeddrMenuHelper" />
+                      <node concept="37vLTw" id="5BNookPIAnM" role="37wK5m">
+                        <ref role="3cqZAo" node="5BNookPIAnn" resolve="project" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3fqX7Q" id="5BNookPIAnN" role="3uHU7B">
+                    <node concept="2YIFZM" id="5BNookPIAnO" role="3fr31v">
+                      <ref role="1Pybhc" node="5FfxSinVg0H" resolve="MbeddrMenuHelper" />
+                      <ref role="37wK5l" node="IviauU9ix" resolve="isMbeddrModel" />
+                      <node concept="37vLTw" id="5BNookPIAnP" role="37wK5m">
+                        <ref role="3cqZAo" node="5BNookPIAng" resolve="model" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="5BNookPIAnQ" role="3cqZAp" />
+              <node concept="3clFbF" id="5BNookPIAnR" role="3cqZAp">
+                <node concept="2OqwBi" id="5BNookPIAnS" role="3clFbG">
+                  <node concept="2OqwBi" id="5BNookPIAnT" role="2Oq$k0">
+                    <node concept="tl45R" id="5BNookPIAnU" role="2Oq$k0" />
+                    <node concept="liA8E" id="5BNookPIAnV" role="2OqNvi">
                       <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation():com.intellij.openapi.actionSystem.Presentation" resolve="getPresentation" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="Iviav87s0" role="2OqNvi">
+                  <node concept="liA8E" id="5BNookPIAnW" role="2OqNvi">
                     <ref role="37wK5l" to="qkt:~Presentation.setEnabled(boolean):void" resolve="setEnabled" />
-                    <node concept="3clFbT" id="Iviav87ta" role="37wK5m" />
+                    <node concept="3clFbT" id="5BNookPIAnX" role="37wK5m">
+                      <property role="3clFbU" value="true" />
+                    </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="Iviav88Zg" role="3cqZAp">
-                <node concept="2OqwBi" id="Iviav8dxc" role="3clFbG">
-                  <node concept="2OqwBi" id="Iviav89fs" role="2Oq$k0">
-                    <node concept="tl45R" id="Iviav88Ze" role="2Oq$k0" />
-                    <node concept="liA8E" id="Iviav8dpn" role="2OqNvi">
+              <node concept="3clFbF" id="5BNookPIAnY" role="3cqZAp">
+                <node concept="2OqwBi" id="5BNookPIAnZ" role="3clFbG">
+                  <node concept="2OqwBi" id="5BNookPIAo0" role="2Oq$k0">
+                    <node concept="tl45R" id="5BNookPIAo1" role="2Oq$k0" />
+                    <node concept="liA8E" id="5BNookPIAo2" role="2OqNvi">
                       <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation():com.intellij.openapi.actionSystem.Presentation" resolve="getPresentation" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="Iviav8fxm" role="2OqNvi">
+                  <node concept="liA8E" id="5BNookPIAo3" role="2OqNvi">
                     <ref role="37wK5l" to="qkt:~Presentation.setVisible(boolean):void" resolve="setVisible" />
-                    <node concept="3clFbT" id="Iviav8fyv" role="37wK5m" />
+                    <node concept="3clFbT" id="5BNookPIAo4" role="37wK5m">
+                      <property role="3clFbU" value="true" />
+                    </node>
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs6" id="1uL8CIsGU4g" role="3cqZAp" />
-            </node>
-            <node concept="22lmx$" id="23GX$QTiHO" role="3clFbw">
-              <node concept="3fqX7Q" id="6yTp2XrqkEj" role="3uHU7w">
-                <node concept="2YIFZM" id="6yTp2XrqkEk" role="3fr31v">
-                  <ref role="37wK5l" node="23GX$QSGoV" resolve="isMbeddrMenuEnabled" />
+              <node concept="3clFbH" id="5BNookPIAo5" role="3cqZAp" />
+              <node concept="3clFbF" id="5BNookPIAo6" role="3cqZAp">
+                <node concept="2YIFZM" id="5BNookPIAo7" role="3clFbG">
                   <ref role="1Pybhc" node="5FfxSinVg0H" resolve="MbeddrMenuHelper" />
-                  <node concept="37vLTw" id="6yTp2XrqkEl" role="37wK5m">
-                    <ref role="3cqZAo" node="23GX$R4jmo" resolve="project" />
+                  <ref role="37wK5l" node="1PMOMKdiL0d" resolve="attachMebberRootMenu" />
+                  <node concept="37vLTw" id="5BNookPIAo8" role="37wK5m">
+                    <ref role="3cqZAo" node="5BNookPIAng" resolve="model" />
                   </node>
+                  <node concept="2WthIp" id="5BNookPIAo9" role="37wK5m" />
                 </node>
               </node>
-              <node concept="3fqX7Q" id="1uL8CIsGRxi" role="3uHU7B">
-                <node concept="2YIFZM" id="1uL8CIsGS5h" role="3fr31v">
-                  <ref role="37wK5l" node="IviauU9ix" resolve="isMbeddrModel" />
-                  <ref role="1Pybhc" node="5FfxSinVg0H" resolve="MbeddrMenuHelper" />
-                  <node concept="37vLTw" id="1uL8CIsGS5O" role="37wK5m">
-                    <ref role="3cqZAo" node="IviauYqHf" resolve="model" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbH" id="1uL8CIsGU6C" role="3cqZAp" />
-          <node concept="3clFbF" id="1uL8CIsGT16" role="3cqZAp">
-            <node concept="2OqwBi" id="1uL8CIsGT17" role="3clFbG">
-              <node concept="2OqwBi" id="1uL8CIsGT18" role="2Oq$k0">
-                <node concept="tl45R" id="1uL8CIsGT19" role="2Oq$k0" />
-                <node concept="liA8E" id="1uL8CIsGT1a" role="2OqNvi">
-                  <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation():com.intellij.openapi.actionSystem.Presentation" resolve="getPresentation" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1uL8CIsGT1b" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~Presentation.setEnabled(boolean):void" resolve="setEnabled" />
-                <node concept="3clFbT" id="1uL8CIsGT1c" role="37wK5m">
-                  <property role="3clFbU" value="true" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="1uL8CIsGT1d" role="3cqZAp">
-            <node concept="2OqwBi" id="1uL8CIsGT1e" role="3clFbG">
-              <node concept="2OqwBi" id="1uL8CIsGT1f" role="2Oq$k0">
-                <node concept="tl45R" id="1uL8CIsGT1g" role="2Oq$k0" />
-                <node concept="liA8E" id="1uL8CIsGT1h" role="2OqNvi">
-                  <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation():com.intellij.openapi.actionSystem.Presentation" resolve="getPresentation" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1uL8CIsGT1i" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~Presentation.setVisible(boolean):void" resolve="setVisible" />
-                <node concept="3clFbT" id="1uL8CIsGT1j" role="37wK5m">
-                  <property role="3clFbU" value="true" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbH" id="5mPyAfd3VN5" role="3cqZAp" />
-          <node concept="3clFbF" id="5mPyAfd9j4Y" role="3cqZAp">
-            <node concept="2YIFZM" id="1PMOMKdiWg2" role="3clFbG">
-              <ref role="1Pybhc" node="5FfxSinVg0H" resolve="MbeddrMenuHelper" />
-              <ref role="37wK5l" node="1PMOMKdiL0d" resolve="attachMebberRootMenu" />
-              <node concept="37vLTw" id="1PMOMKdiWmO" role="37wK5m">
-                <ref role="3cqZAo" node="IviauYqHf" resolve="model" />
-              </node>
-              <node concept="2WthIp" id="1PMOMKdiWo0" role="37wK5m" />
             </node>
           </node>
         </node>
