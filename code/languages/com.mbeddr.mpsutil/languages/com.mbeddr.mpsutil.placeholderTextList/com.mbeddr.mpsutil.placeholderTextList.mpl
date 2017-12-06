@@ -96,6 +96,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="true">b8cd51c2-0845-4e1a-be50-29c6044bc90f(com.mbeddr.mpsutil.placeholderTextList.runtime)</dependency>
+    <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
