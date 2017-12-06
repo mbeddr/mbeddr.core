@@ -248,6 +248,9 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -1624,6 +1627,39 @@
               </node>
               <node concept="3cpWs6" id="7GmkyIHE14x" role="3cqZAp">
                 <node concept="1Q80Hx" id="7GmkyIHE14y" role="3cqZAk" />
+              </node>
+            </node>
+          </node>
+          <node concept="pkWqt" id="70OfiL2QigI" role="pqm2j">
+            <node concept="3clFbS" id="70OfiL2QigJ" role="2VODD2">
+              <node concept="3clFbF" id="70OfiL2Qi_w" role="3cqZAp">
+                <node concept="2OqwBi" id="70OfiL2QiO1" role="3clFbG">
+                  <node concept="pncrf" id="70OfiL2Qi_v" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="70OfiL2QjA4" role="2OqNvi">
+                    <ref role="37wK5l" to="vog7:3dZgFhDSzmf" resolve="canBeParallelized" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="70OfiL2Qkxd" role="3EZMnx">
+          <property role="3F0ifm" value="disabled" />
+          <node concept="Vb9p2" id="70OfiL2QkQK" role="3F10Kt" />
+          <node concept="VechU" id="70OfiL2QkQP" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+          <node concept="pkWqt" id="70OfiL2Qliy" role="pqm2j">
+            <node concept="3clFbS" id="70OfiL2Qliz" role="2VODD2">
+              <node concept="3clFbF" id="70OfiL2QlpG" role="3cqZAp">
+                <node concept="3fqX7Q" id="70OfiL2QmR4" role="3clFbG">
+                  <node concept="2OqwBi" id="70OfiL2QmR6" role="3fr31v">
+                    <node concept="pncrf" id="70OfiL2QmR7" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="70OfiL2QmR8" role="2OqNvi">
+                      <ref role="37wK5l" to="vog7:3dZgFhDSzmf" resolve="canBeParallelized" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
