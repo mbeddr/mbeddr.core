@@ -415,6 +415,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1235566831861" name="jetbrains.mps.baseLanguage.collections.structure.AllOperation" flags="nn" index="2HxqBE" />
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435808" name="initValue" index="HW$Y0" />
         <child id="1237721435807" name="elementType" index="HW$YZ" />
@@ -3675,9 +3676,51 @@
       <ref role="13i0hy" to="vog7:3dZgFhDSzmf" resolve="canBeParallelized" />
       <node concept="3Tm1VV" id="3dZgFhDSB3P" role="1B3o_S" />
       <node concept="3clFbS" id="3dZgFhDSB3U" role="3clF47">
+        <node concept="3SKdUt" id="5Tkpp$X3djz" role="3cqZAp">
+          <node concept="3SKdUq" id="5Tkpp$X3dj_" role="3SKWNk">
+            <property role="3SKdUp" value="Never parallelize make of mbeddr-generated code when it relies on external makes to ensure that the latter complete before the former starts" />
+          </node>
+        </node>
         <node concept="3clFbF" id="3dZgFhDSCdM" role="3cqZAp">
-          <node concept="3clFbT" id="3dZgFhDSCdL" role="3clFbG">
-            <property role="3clFbU" value="true" />
+          <node concept="2OqwBi" id="5Tkpp$X2U4m" role="3clFbG">
+            <node concept="2OqwBi" id="5Tkpp$X2POM" role="2Oq$k0">
+              <node concept="2OqwBi" id="5Tkpp$X2JH9" role="2Oq$k0">
+                <node concept="13iPFW" id="5Tkpp$X2JhW" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="5Tkpp$X2Py_" role="2OqNvi">
+                  <node concept="1xMEDy" id="5Tkpp$X2PyB" role="1xVPHs">
+                    <node concept="chp4Y" id="5Tkpp$X2P$V" role="ri$Ld">
+                      <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="5Tkpp$X2QrI" role="2OqNvi">
+                <ref role="3TtcxE" to="51wr:4o9sgv8R$fb" resolve="binaries" />
+              </node>
+            </node>
+            <node concept="2HxqBE" id="5Tkpp$X39b1" role="2OqNvi">
+              <node concept="1bVj0M" id="5Tkpp$X39b3" role="23t8la">
+                <node concept="3clFbS" id="5Tkpp$X39b4" role="1bW5cS">
+                  <node concept="3clFbF" id="5Tkpp$X39b5" role="3cqZAp">
+                    <node concept="2OqwBi" id="5Tkpp$X39b6" role="3clFbG">
+                      <node concept="2OqwBi" id="5Tkpp$X39b7" role="2Oq$k0">
+                        <node concept="37vLTw" id="5Tkpp$X39b8" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5Tkpp$X39bb" resolve="it" />
+                        </node>
+                        <node concept="3Tsc0h" id="5Tkpp$X39b9" role="2OqNvi">
+                          <ref role="3TtcxE" to="51wr:51p726VIDVA" resolve="externalBuilds" />
+                        </node>
+                      </node>
+                      <node concept="1v1jN8" id="5Tkpp$X3cPj" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="5Tkpp$X39bb" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="5Tkpp$X39bc" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
