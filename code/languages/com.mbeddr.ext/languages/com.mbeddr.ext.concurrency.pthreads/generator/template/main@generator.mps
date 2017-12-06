@@ -44,6 +44,7 @@
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
     <import index="bicj" ref="r:db3de8e3-03eb-4b65-ac3c-d199e56b93bc(com.mbeddr.ext.concurrency.pthreads.util)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -4826,6 +4827,53 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3TlMh9" id="3LeMY0p89aR" role="3XIe9u">
+                    <property role="2hmy$m" value="0" />
+                    <node concept="29HgVG" id="3LeMY0p89pZ" role="lGtFl">
+                      <node concept="3NFfHV" id="3LeMY0p89q0" role="3NFExx">
+                        <node concept="3clFbS" id="3LeMY0p89q1" role="2VODD2">
+                          <node concept="3clFbF" id="3LeMY0p89q7" role="3cqZAp">
+                            <node concept="2OqwBi" id="3LeMY0p8aLM" role="3clFbG">
+                              <node concept="2OqwBi" id="3LeMY0p89M0" role="2Oq$k0">
+                                <node concept="2OqwBi" id="3LeMY0p89M1" role="2Oq$k0">
+                                  <node concept="1PxgMI" id="3LeMY0p89M2" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="3LeMY0p89M3" role="1m5AlR">
+                                      <node concept="2OqwBi" id="3LeMY0p89M4" role="2Oq$k0">
+                                        <node concept="2OqwBi" id="3LeMY0p89M5" role="2Oq$k0">
+                                          <node concept="30H73N" id="3LeMY0p89M6" role="2Oq$k0" />
+                                          <node concept="3TrEf2" id="3LeMY0p89M7" role="2OqNvi">
+                                            <ref role="3Tt5mk" to="5wll:4mSSgpjgrEl" resolve="queue" />
+                                          </node>
+                                        </node>
+                                        <node concept="3TrEf2" id="3LeMY0p89M8" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="x27k:5IYyAOzCwFF" resolve="var" />
+                                        </node>
+                                      </node>
+                                      <node concept="3TrEf2" id="3LeMY0p89M9" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+                                      </node>
+                                    </node>
+                                    <node concept="chp4Y" id="3LeMY0p89Ma" role="3oSUPX">
+                                      <ref role="cht4Q" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrEf2" id="3LeMY0p89Mb" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="5wll:1UML6duC7CO" resolve="queue" />
+                                  </node>
+                                </node>
+                                <node concept="3TrEf2" id="3LeMY0p89Mc" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="5wll:1zeZsIbBad_" resolve="elementType" />
+                                </node>
+                              </node>
+                              <node concept="2qgKlT" id="3LeMY0p8bk1" role="2OqNvi">
+                                <ref role="37wK5l" to="ywuz:4jc_TWT4LGD" resolve="getDefaultValue" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
                 <node concept="3XIRlf" id="1zeZsIb1Dsp" role="3XIRFZ">
                   <property role="TrG5h" value="___taken" />
@@ -5157,6 +5205,53 @@
                               </node>
                               <node concept="3TrEf2" id="1UML6duTsuY" role="2OqNvi">
                                 <ref role="3Tt5mk" to="5wll:1zeZsIbBad_" resolve="elementType" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TlMh9" id="3LeMY0p8bQq" role="3XIe9u">
+                    <property role="2hmy$m" value="0" />
+                    <node concept="29HgVG" id="3LeMY0p8bQr" role="lGtFl">
+                      <node concept="3NFfHV" id="3LeMY0p8bQs" role="3NFExx">
+                        <node concept="3clFbS" id="3LeMY0p8bQt" role="2VODD2">
+                          <node concept="3clFbF" id="3LeMY0p8bQu" role="3cqZAp">
+                            <node concept="2OqwBi" id="3LeMY0p8bQv" role="3clFbG">
+                              <node concept="2OqwBi" id="3LeMY0p8bQw" role="2Oq$k0">
+                                <node concept="2OqwBi" id="3LeMY0p8bQx" role="2Oq$k0">
+                                  <node concept="1PxgMI" id="3LeMY0p8bQy" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="3LeMY0p8bQz" role="1m5AlR">
+                                      <node concept="2OqwBi" id="3LeMY0p8bQ$" role="2Oq$k0">
+                                        <node concept="2OqwBi" id="3LeMY0p8bQ_" role="2Oq$k0">
+                                          <node concept="30H73N" id="3LeMY0p8bQA" role="2Oq$k0" />
+                                          <node concept="3TrEf2" id="3LeMY0p8bQB" role="2OqNvi">
+                                            <ref role="3Tt5mk" to="5wll:4mSSgpjgrEl" resolve="queue" />
+                                          </node>
+                                        </node>
+                                        <node concept="3TrEf2" id="3LeMY0p8bQC" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="x27k:5IYyAOzCwFF" resolve="var" />
+                                        </node>
+                                      </node>
+                                      <node concept="3TrEf2" id="3LeMY0p8bQD" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+                                      </node>
+                                    </node>
+                                    <node concept="chp4Y" id="3LeMY0p8bQE" role="3oSUPX">
+                                      <ref role="cht4Q" to="5wll:1UML6duC7CN" resolve="ConcurrentQueueType" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrEf2" id="3LeMY0p8bQF" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="5wll:1UML6duC7CO" resolve="queue" />
+                                  </node>
+                                </node>
+                                <node concept="3TrEf2" id="3LeMY0p8bQG" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="5wll:1zeZsIbBad_" resolve="elementType" />
+                                </node>
+                              </node>
+                              <node concept="2qgKlT" id="3LeMY0p8bQH" role="2OqNvi">
+                                <ref role="37wK5l" to="ywuz:4jc_TWT4LGD" resolve="getDefaultValue" />
                               </node>
                             </node>
                           </node>
