@@ -3265,6 +3265,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="72jca_MZta7" role="3bR37C">
+          <node concept="3bR9La" id="72jca_MZujm" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
         <node concept="1SiIV0" id="2N1CSrzsp0O" role="3bR37C">
           <node concept="3bR9La" id="2N1CSrzsp0P" role="1SiIV1">
             <property role="3bR36h" value="false" />
