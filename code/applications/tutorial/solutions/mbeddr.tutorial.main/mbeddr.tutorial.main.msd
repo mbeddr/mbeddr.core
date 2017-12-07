@@ -42,6 +42,7 @@
     <language slang="l:2d7fadf5-33f6-4e80-a78f-0f739add2bde:com.mbeddr.core.buildconfig" version="5" />
     <language slang="l:b2da2e1a-b542-47f5-9be0-4dc21efe74a4:com.mbeddr.core.checks" version="0" />
     <language slang="l:390de4af-0c8d-4716-8dec-3d05ca751b28:com.mbeddr.core.cinterpreter" version="0" />
+    <language slang="l:7d323e61-8358-4656-a071-a2bb68438615:com.mbeddr.core.codereview" version="0" />
     <language slang="l:223dd778-c44f-4ef3-9535-7aa7d12244a6:com.mbeddr.core.debug" version="0" />
     <language slang="l:ebb5e132-d298-4649-b320-b3f4d7f3acff:com.mbeddr.core.debug.blext" version="0" />
     <language slang="l:783af01f-87a7-412c-be99-293a162652b5:com.mbeddr.core.embedded" version="0" />
