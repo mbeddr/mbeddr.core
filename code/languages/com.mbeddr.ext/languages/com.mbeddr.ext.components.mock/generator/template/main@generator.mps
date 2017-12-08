@@ -2750,8 +2750,8 @@
                     </node>
                     <node concept="2OqwBi" id="5fn4FV$bpGT" role="33vP2m">
                       <node concept="30H73N" id="5fn4FV$bpGU" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="5fn4FV$bpGV" role="2OqNvi">
-                        <ref role="37wK5l" to="eup9:5fn4FV$aPPc" resolve="ports" />
+                      <node concept="2qgKlT" id="1xGCG5oH_rg" role="2OqNvi">
+                        <ref role="37wK5l" to="eup9:6WCyKlekwqK" resolve="providedPorts" />
                       </node>
                     </node>
                   </node>
