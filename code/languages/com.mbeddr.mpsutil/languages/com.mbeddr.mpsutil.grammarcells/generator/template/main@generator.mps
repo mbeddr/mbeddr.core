@@ -1660,7 +1660,7 @@
                           </node>
                           <node concept="2YIFZM" id="20mebiUgYgR" role="1DdaDG">
                             <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
-                            <ref role="37wK5l" to="czm:20mebiUzWg8" resolve="getVisibleSubconceptsNonAbstract" />
+                            <ref role="37wK5l" to="czm:1E6FxvcT6Ns" resolve="getVisibleSubconceptsNonAbstract" />
                             <node concept="37vLTw" id="20mebiUgYgS" role="37wK5m">
                               <ref role="3cqZAo" node="qT5MFmnLhQ" resolve="outputConcept" />
                             </node>
@@ -1673,6 +1673,12 @@
                             <node concept="10Nm6u" id="20mebiUIQWU" role="37wK5m">
                               <node concept="5jKBG" id="20mebiUISg8" role="lGtFl">
                                 <ref role="v9R2y" node="20mebiUIPgp" resolve="template_conceptEditorClass" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="1E6FxvcTj2O" role="37wK5m">
+                              <node concept="2kYc5w" id="1E6FxvcThdQ" role="2Oq$k0" />
+                              <node concept="liA8E" id="1E6FxvcTkZL" role="2OqNvi">
+                                <ref role="37wK5l" to="78sh:~SubstituteMenuContext.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
                               </node>
                             </node>
                           </node>
@@ -9293,7 +9299,7 @@
                       </node>
                       <node concept="2YIFZM" id="7NlRaxB4Hzt" role="2GsD0m">
                         <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
-                        <ref role="37wK5l" to="czm:20mebiUzWg8" resolve="getVisibleSubconceptsNonAbstract" />
+                        <ref role="37wK5l" to="czm:1E6FxvcT6Ns" resolve="getVisibleSubconceptsNonAbstract" />
                         <node concept="35c_gC" id="7NlRaxB4Hzu" role="37wK5m">
                           <ref role="35c_gD" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
                           <node concept="1ZhdrF" id="7NlRaxB4Hzv" role="lGtFl">
@@ -9333,6 +9339,14 @@
                         <node concept="10Nm6u" id="7NlRaxB4HzH" role="37wK5m">
                           <node concept="5jKBG" id="7NlRaxB4HzI" role="lGtFl">
                             <ref role="v9R2y" node="20mebiUIPgp" resolve="template_conceptEditorClass" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="1E6FxvcTAzj" role="37wK5m">
+                          <node concept="37vLTw" id="1E6FxvcTDH3" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2mvFNoUxG2A" resolve="_context" />
+                          </node>
+                          <node concept="liA8E" id="1E6FxvcTAzl" role="2OqNvi">
+                            <ref role="37wK5l" to="78sh:~SubstituteMenuContext.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
                           </node>
                         </node>
                       </node>
@@ -10223,8 +10237,8 @@
                         </node>
                       </node>
                       <node concept="2YIFZM" id="5AkACHrYh2J" role="2GsD0m">
-                        <ref role="37wK5l" to="czm:20mebiUzWg8" resolve="getVisibleSubconceptsNonAbstract" />
                         <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
+                        <ref role="37wK5l" to="czm:1E6FxvcT6Ns" resolve="getVisibleSubconceptsNonAbstract" />
                         <node concept="35c_gC" id="5AkACHrYh4u" role="37wK5m">
                           <ref role="35c_gD" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
                           <node concept="1ZhdrF" id="5AkACHrYh4v" role="lGtFl">
@@ -10264,6 +10278,14 @@
                         <node concept="10Nm6u" id="5AkACHrYB99" role="37wK5m">
                           <node concept="5jKBG" id="5AkACHrYB9a" role="lGtFl">
                             <ref role="v9R2y" node="20mebiUIPgp" resolve="template_conceptEditorClass" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="1E6FxvcTGke" role="37wK5m">
+                          <node concept="37vLTw" id="1E6FxvcTGkf" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2mvFNoUxYFZ" resolve="_context" />
+                          </node>
+                          <node concept="liA8E" id="1E6FxvcTGkg" role="2OqNvi">
+                            <ref role="37wK5l" to="78sh:~SubstituteMenuContext.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
                           </node>
                         </node>
                       </node>
@@ -10438,8 +10460,8 @@
                         <property role="TrG5h" value="subconcept" />
                       </node>
                       <node concept="2YIFZM" id="5AkACHrYIZX" role="2GsD0m">
-                        <ref role="37wK5l" to="czm:20mebiUzWg8" resolve="getVisibleSubconceptsNonAbstract" />
                         <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
+                        <ref role="37wK5l" to="czm:1E6FxvcT6Ns" resolve="getVisibleSubconceptsNonAbstract" />
                         <node concept="35c_gC" id="5AkACHrYJ1H" role="37wK5m">
                           <ref role="35c_gD" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
                           <node concept="1ZhdrF" id="5AkACHrYJ1I" role="lGtFl">
@@ -10479,6 +10501,14 @@
                         <node concept="10Nm6u" id="5AkACHrYJzW" role="37wK5m">
                           <node concept="5jKBG" id="5AkACHrYJHh" role="lGtFl">
                             <ref role="v9R2y" node="20mebiUIPgp" resolve="template_conceptEditorClass" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="1E6FxvcTJhs" role="37wK5m">
+                          <node concept="37vLTw" id="1E6FxvcTJht" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2mvFNoUy03S" resolve="_context" />
+                          </node>
+                          <node concept="liA8E" id="1E6FxvcTJhu" role="2OqNvi">
+                            <ref role="37wK5l" to="78sh:~SubstituteMenuContext.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
                           </node>
                         </node>
                       </node>
@@ -13175,7 +13205,7 @@
                           <ref role="1Pybhc" to="czm:20mebiUT0Ry" resolve="EditorHierachyCache" />
                         </node>
                         <node concept="liA8E" id="1yC42OQ0eM" role="2OqNvi">
-                          <ref role="37wK5l" to="czm:20mebiUT6$I" resolve="isActiveEditor" />
+                          <ref role="37wK5l" to="czm:1E6FxvcRHO_" resolve="isActiveEditor" />
                           <node concept="10Nm6u" id="1yC42OQ0wZ" role="37wK5m">
                             <node concept="5jKBG" id="1yC42OQ0x0" role="lGtFl">
                               <ref role="v9R2y" node="20mebiUIPgp" resolve="template_conceptEditorClass" />
@@ -13183,6 +13213,18 @@
                           </node>
                           <node concept="37vLTw" id="1yC42OQ0ho" role="37wK5m">
                             <ref role="3cqZAo" node="RbLMy6bFxY" resolve="concept" />
+                          </node>
+                          <node concept="2YIFZM" id="1E6FxvcSNGj" role="37wK5m">
+                            <ref role="37wK5l" to="czm:1E6FxvcSLbD" resolve="getSelectionHints" />
+                            <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
+                            <node concept="2OqwBi" id="1E6FxvcSNTW" role="37wK5m">
+                              <node concept="37vLTw" id="1E6FxvcSNKq" role="2Oq$k0">
+                                <ref role="3cqZAo" node="RbLMy69QlL" resolve="_context" />
+                              </node>
+                              <node concept="liA8E" id="1E6FxvcSO5f" role="2OqNvi">
+                                <ref role="37wK5l" to="uddc:~TransformationMenuContext.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -17488,7 +17530,7 @@
                                           <ref role="1Pybhc" to="czm:20mebiUT0Ry" resolve="EditorHierachyCache" />
                                         </node>
                                         <node concept="liA8E" id="65G7Yo_0Bzx" role="2OqNvi">
-                                          <ref role="37wK5l" to="czm:20mebiUT6$I" resolve="isActiveEditor" />
+                                          <ref role="37wK5l" to="czm:1E6FxvcRHO_" resolve="isActiveEditor" />
                                           <node concept="10Nm6u" id="65G7Yo_0Bzy" role="37wK5m">
                                             <node concept="5jKBG" id="65G7Yo_0Bzz" role="lGtFl">
                                               <ref role="v9R2y" node="20mebiUIPgp" resolve="template_conceptEditorClass" />
@@ -17505,6 +17547,18 @@
                                             </node>
                                             <node concept="liA8E" id="65G7Yo_0BzC" role="2OqNvi">
                                               <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                                            </node>
+                                          </node>
+                                          <node concept="2YIFZM" id="1E6FxvcSOgH" role="37wK5m">
+                                            <ref role="37wK5l" to="czm:1E6FxvcSLbD" resolve="getSelectionHints" />
+                                            <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
+                                            <node concept="2OqwBi" id="1E6FxvcSOgI" role="37wK5m">
+                                              <node concept="37vLTw" id="1E6FxvcSOgJ" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="4eBi5gdpjnX" resolve="_context" />
+                                              </node>
+                                              <node concept="liA8E" id="1E6FxvcSOgK" role="2OqNvi">
+                                                <ref role="37wK5l" to="uddc:~TransformationMenuContext.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                                              </node>
                                             </node>
                                           </node>
                                         </node>
@@ -21621,7 +21675,7 @@
                                 </node>
                                 <node concept="2YIFZM" id="20mebiUh41w" role="1DdaDG">
                                   <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
-                                  <ref role="37wK5l" to="czm:20mebiUzWg8" resolve="getVisibleSubconceptsNonAbstract" />
+                                  <ref role="37wK5l" to="czm:1E6FxvcT6Ns" resolve="getVisibleSubconceptsNonAbstract" />
                                   <node concept="35c_gC" id="20mebiUh41x" role="37wK5m">
                                     <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
                                     <node concept="1ZhdrF" id="20mebiUh41y" role="lGtFl">
@@ -21661,6 +21715,14 @@
                                   <node concept="10Nm6u" id="20mebiUIZh8" role="37wK5m">
                                     <node concept="5jKBG" id="20mebiUIZh9" role="lGtFl">
                                       <ref role="v9R2y" node="20mebiUIPgp" resolve="template_conceptEditorClass" />
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="1E6FxvcTP47" role="37wK5m">
+                                    <node concept="37vLTw" id="1E6FxvcTP48" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="5n4nn1a79YN" resolve="_context" />
+                                    </node>
+                                    <node concept="liA8E" id="1E6FxvcTP49" role="2OqNvi">
+                                      <ref role="37wK5l" to="uddc:~TransformationMenuContext.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
                                     </node>
                                   </node>
                                 </node>
