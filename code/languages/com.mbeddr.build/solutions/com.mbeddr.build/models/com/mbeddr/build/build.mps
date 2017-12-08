@@ -13265,6 +13265,12 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="18LnSWDDlep" role="3bR37C">
+          <node concept="3bR9La" id="18LnSWDDleq" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1d41uYMTVPB" resolve="jetbrains.mps.lang.scopes.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3JmJHJb$WUS" role="2G$12L">
         <property role="BnDLt" value="true" />
