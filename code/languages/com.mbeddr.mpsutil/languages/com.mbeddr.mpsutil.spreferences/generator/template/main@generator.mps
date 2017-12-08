@@ -1192,6 +1192,19 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="2OqwBi" id="2jU2mH6peVb" role="37wK5m">
+                      <node concept="2OqwBi" id="2jU2mH6pb4h" role="2Oq$k0">
+                        <node concept="Xjq3P" id="2jU2mH6pcTY" role="2Oq$k0">
+                          <ref role="1HBi2w" node="5aAhNV7FeB" resolve="SPreferences_ProjectPlugin" />
+                        </node>
+                        <node concept="liA8E" id="2jU2mH6pefD" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="2jU2mH6pg3a" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                      </node>
+                    </node>
                     <node concept="37vLTw" id="1m7X3OEDu5W" role="37wK5m">
                       <ref role="3cqZAo" node="1m7X3OECvI4" resolve="factory" />
                     </node>
