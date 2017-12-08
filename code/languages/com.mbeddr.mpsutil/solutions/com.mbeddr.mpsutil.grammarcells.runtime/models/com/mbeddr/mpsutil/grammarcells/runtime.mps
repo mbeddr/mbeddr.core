@@ -3699,10 +3699,10 @@
           </node>
         </node>
         <node concept="3cpWs6" id="1E6FxvcSugx" role="3cqZAp">
-          <node concept="2ShNRf" id="1E6FxvcSuHU" role="3cqZAk">
-            <node concept="2i4dXS" id="1E6FxvcSuG5" role="2ShVmc">
-              <node concept="17QB3L" id="1E6FxvcSuG6" role="HW$YZ" />
-              <node concept="37vLTw" id="1E6FxvcSJl3" role="I$8f6">
+          <node concept="2ShNRf" id="2KKFBatn0wU" role="3cqZAk">
+            <node concept="2i4dXS" id="2KKFBatn0wV" role="2ShVmc">
+              <node concept="17QB3L" id="2KKFBatn0wW" role="HW$YZ" />
+              <node concept="37vLTw" id="2KKFBatn0wX" role="I$8f6">
                 <ref role="3cqZAo" node="1E6FxvcStgU" resolve="hints" />
               </node>
             </node>
@@ -25235,10 +25235,74 @@
         <node concept="3cpWs6" id="20mebiUT764" role="3cqZAp">
           <node concept="2OqwBi" id="20mebiUT765" role="3cqZAk">
             <node concept="2ShNRf" id="20mebiUT766" role="2Oq$k0">
-              <node concept="1pGfFk" id="20mebiUT767" role="2ShVmc">
-                <ref role="37wK5l" to="gkj1:20mebiU_kAr" resolve="ConceptEditorRegistry" />
-                <node concept="37vLTw" id="1E6FxvcRGGN" role="37wK5m">
-                  <ref role="3cqZAo" node="1E6FxvcREIm" resolve="hints" />
+              <node concept="YeOm9" id="2KKFBatpWrk" role="2ShVmc">
+                <node concept="1Y3b0j" id="2KKFBatpWrn" role="YeSDq">
+                  <property role="2bfB8j" value="true" />
+                  <ref role="1Y3XeK" to="gkj1:20mebiU_kAm" resolve="ConceptEditorRegistry" />
+                  <ref role="37wK5l" to="gkj1:20mebiU_kAr" resolve="ConceptEditorRegistry" />
+                  <node concept="3Tm1VV" id="2KKFBatpWro" role="1B3o_S" />
+                  <node concept="37vLTw" id="1E6FxvcRGGN" role="37wK5m">
+                    <ref role="3cqZAo" node="1E6FxvcREIm" resolve="hints" />
+                  </node>
+                  <node concept="3clFb_" id="2KKFBatpWPe" role="jymVt">
+                    <property role="TrG5h" value="ignoreEditor" />
+                    <property role="1EzhhJ" value="false" />
+                    <node concept="37vLTG" id="2KKFBatpWPf" role="3clF46">
+                      <property role="TrG5h" value="editor" />
+                      <node concept="3uibUv" id="2KKFBatpWPp" role="1tU5fm">
+                        <ref role="3uigEE" to="iwf0:~ConceptEditor" resolve="ConceptEditor" />
+                      </node>
+                    </node>
+                    <node concept="10P_77" id="2KKFBatpWPh" role="3clF45" />
+                    <node concept="3Tmbuc" id="2KKFBatpWPi" role="1B3o_S" />
+                    <node concept="3clFbS" id="2KKFBatpWPq" role="3clF47">
+                      <node concept="3SKdUt" id="2KKFBatCWOw" role="3cqZAp">
+                        <node concept="3SKdUq" id="2KKFBatCWOy" role="3SKWNk">
+                          <property role="3SKdUp" value="Conditional editor are usually used as annotations without a model element." />
+                        </node>
+                      </node>
+                      <node concept="3SKdUt" id="2KKFBatCZgP" role="3cqZAp">
+                        <node concept="3SKdUq" id="2KKFBatCZgR" role="3SKWNk">
+                          <property role="3SKdUp" value="They are wrappers around the original editor and should not result in disabled actions." />
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="2KKFBatq0vP" role="3cqZAp">
+                        <node concept="3cpWsn" id="2KKFBatq0vQ" role="3cpWs9">
+                          <property role="TrG5h" value="name" />
+                          <node concept="17QB3L" id="2KKFBatq0P1" role="1tU5fm" />
+                          <node concept="2OqwBi" id="2KKFBatq0vR" role="33vP2m">
+                            <node concept="2OqwBi" id="2KKFBatq0vS" role="2Oq$k0">
+                              <node concept="37vLTw" id="2KKFBatq0vT" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2KKFBatpWPf" resolve="editor" />
+                              </node>
+                              <node concept="liA8E" id="2KKFBatq0vU" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="2KKFBatq0vV" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs6" id="2KKFBatqdb_" role="3cqZAp">
+                        <node concept="2OqwBi" id="2KKFBat_ZwB" role="3cqZAk">
+                          <node concept="37vLTw" id="2KKFBat_Xz5" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2KKFBatq0vQ" resolve="name" />
+                          </node>
+                          <node concept="liA8E" id="2KKFBatA0pa" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                            <node concept="Xl_RD" id="2KKFBatA4k8" role="37wK5m">
+                              <property role="Xl_RC" value="_conditionalEditor_" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="2KKFBatpWPr" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
