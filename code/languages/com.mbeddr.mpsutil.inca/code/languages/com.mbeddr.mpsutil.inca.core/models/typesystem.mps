@@ -268,6 +268,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
@@ -3753,6 +3754,41 @@
     <node concept="1YaCAy" id="2jl89KELt1v" role="1YuTPh">
       <property role="TrG5h" value="op" />
       <ref role="1YaFvo" to="tp25:g$eCIIG" resolve="SNodeOperation" />
+    </node>
+  </node>
+  <node concept="35pCF_" id="4D4o8mafXe3">
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="replace_SNodeType_SNodeType" />
+    <node concept="1YaCAy" id="4D4o8mafXfk" role="35pZ6h">
+      <property role="TrG5h" value="sup" />
+      <ref role="1YaFvo" to="tp25:gzTqbfa" resolve="SNodeType" />
+    </node>
+    <node concept="3clFbS" id="4D4o8mafXe5" role="2sgrp5" />
+    <node concept="1YaCAy" id="4D4o8mafXeJ" role="1YuTPh">
+      <property role="TrG5h" value="sub" />
+      <ref role="1YaFvo" to="tp25:gzTqbfa" resolve="SNodeType" />
+    </node>
+    <node concept="1xSnZT" id="4D4o8mafXg4" role="1xSnZW">
+      <node concept="3clFbS" id="4D4o8mafXg5" role="2VODD2">
+        <node concept="3cpWs6" id="4D4o8mafXAf" role="3cqZAp">
+          <node concept="3clFbC" id="4D4o8mafYBV" role="3cqZAk">
+            <node concept="2OqwBi" id="4D4o8mafZBl" role="3uHU7w">
+              <node concept="35c_gC" id="4D4o8mafYQg" role="2Oq$k0">
+                <ref role="35c_gD" to="hqsm:7A0HCuGt5rY" resolve="ContextPointer" />
+              </node>
+              <node concept="FGMqu" id="4D4o8mag0El" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="4D4o8mafXR8" role="3uHU7B">
+              <node concept="1YBJjd" id="4D4o8mafXA$" role="2Oq$k0">
+                <ref role="1YBMHb" node="4D4o8mafXfk" resolve="sup" />
+              </node>
+              <node concept="3TrEf2" id="4D4o8mafY8x" role="2OqNvi">
+                <ref role="3Tt5mk" to="tp25:g$ehGDh" resolve="concept" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

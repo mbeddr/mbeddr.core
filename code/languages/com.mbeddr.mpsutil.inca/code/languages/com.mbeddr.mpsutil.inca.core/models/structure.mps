@@ -288,6 +288,9 @@
     <node concept="PrWs8" id="2J6v22V3oi9" role="PzmwI">
       <ref role="PrY4T" node="2J6v22V3ohT" resolve="IVariableValue" />
     </node>
+    <node concept="PrWs8" id="4dGlLy5IKXh" role="PzmwI">
+      <ref role="PrY4T" node="4dGlLy5IJCD" resolve="ITypeHintKeyProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6trdyn5sMcA">
     <property role="3GE5qa" value="usage.match" />
@@ -841,6 +844,9 @@
     <node concept="PrWs8" id="39KhnTIfy4D" role="PzmwI">
       <ref role="PrY4T" node="1YBYCQ13COO" resolve="IGenNameProvider" />
     </node>
+    <node concept="PrWs8" id="4dGlLy5IJE2" role="PzmwI">
+      <ref role="PrY4T" node="4dGlLy5IJCD" resolve="ITypeHintKeyProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4IZiQsKumaj">
     <property role="3GE5qa" value="content" />
@@ -1111,6 +1117,7 @@
   <node concept="1TIwiD" id="5u4fwtOD5TI">
     <property role="EcuMT" value="6306233579968159342" />
     <property role="TrG5h" value="UserObjectMap" />
+    <property role="3GE5qa" value="typeHint" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="5u4fwtOD63c" role="1TKVEi">
       <property role="IQ2ns" value="6306233579968159948" />
@@ -1129,6 +1136,7 @@
   <node concept="1TIwiD" id="5u4fwtOD5TT">
     <property role="EcuMT" value="6306233579968159353" />
     <property role="TrG5h" value="UserObjectEntry" />
+    <property role="3GE5qa" value="typeHint" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5u4fwtOD5TX" role="1TKVEi">
       <property role="IQ2ns" value="6306233579968159357" />
@@ -1283,6 +1291,24 @@
         <ref role="trN6q" node="Y78e7A6TUt" resolve="IIncaModule" />
       </node>
     </node>
+  </node>
+  <node concept="PlHQZ" id="4dGlLy5PlyT">
+    <property role="EcuMT" value="4858353860862105785" />
+    <property role="3GE5qa" value="typeHint" />
+    <property role="TrG5h" value="ITypeHintConsumer" />
+  </node>
+  <node concept="PlHQZ" id="4D4o8maaVLo">
+    <property role="EcuMT" value="5351508383888030808" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="IGeneratorPathElement" />
+    <node concept="PrWs8" id="4D4o8maaVMb" role="PrDN$">
+      <ref role="PrY4T" node="1ERTnBTmuSC" resolve="IPathElement" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4dGlLy5IJCD">
+    <property role="EcuMT" value="4858353860860377641" />
+    <property role="3GE5qa" value="typeHint" />
+    <property role="TrG5h" value="ITypeHintKeyProvider" />
   </node>
 </model>
 

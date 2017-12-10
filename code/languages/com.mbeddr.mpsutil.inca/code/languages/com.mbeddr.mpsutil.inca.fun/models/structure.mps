@@ -292,6 +292,9 @@
     <node concept="PrWs8" id="52HBLukSipF" role="PzmwI">
       <ref role="PrY4T" node="52HBLukRnnV" resolve="ITuple" />
     </node>
+    <node concept="PrWs8" id="4dGlLy5Pl$W" role="PzmwI">
+      <ref role="PrY4T" to="hqsm:4dGlLy5PlyT" resolve="ITypeHintConsumer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="Tz5AFeFYVU">
     <property role="3GE5qa" value="statement" />

@@ -1208,7 +1208,7 @@
       <node concept="3Tm6S6" id="7Q_hKADSyT3" role="1B3o_S" />
     </node>
     <node concept="1LZb2c" id="6AFedOHG9vM" role="1SL9yI">
-      <property role="TrG5h" value="test_CI_CONFUSED_INHERITANCE" />
+      <property role="TrG5h" value="test_ReachabilityAnalysisTest" />
       <node concept="3cqZAl" id="6AFedOHG9vN" role="3clF45" />
       <node concept="3clFbS" id="6AFedOHG9vO" role="3clF47">
         <node concept="3cpWs8" id="6AFedOHG$oT" role="3cqZAp">

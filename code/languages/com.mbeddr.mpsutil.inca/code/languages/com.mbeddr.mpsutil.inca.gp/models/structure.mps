@@ -293,7 +293,7 @@
   </node>
   <node concept="1TIwiD" id="3p0ky8Li2E$">
     <property role="EcuMT" value="3909214783366769316" />
-    <property role="3GE5qa" value="constraints" />
+    <property role="3GE5qa" value="constraints.element" />
     <property role="TrG5h" value="PathElement" />
     <ref role="1TJDcQ" node="2K9A72IyXjN" resolve="AbstractPathElement" />
   </node>
@@ -304,7 +304,7 @@
   </node>
   <node concept="1TIwiD" id="7A0HCuGr2fn">
     <property role="EcuMT" value="8755198369437852631" />
-    <property role="3GE5qa" value="constraints" />
+    <property role="3GE5qa" value="constraints.element.virtual" />
     <property role="TrG5h" value="NextPathElement" />
     <property role="34LRSv" value="next" />
     <property role="R4oN_" value="next reference" />
@@ -315,7 +315,7 @@
   </node>
   <node concept="1TIwiD" id="7A0HCuGr2aH">
     <property role="EcuMT" value="8755198369437852333" />
-    <property role="3GE5qa" value="constraints" />
+    <property role="3GE5qa" value="constraints.element.virtual" />
     <property role="TrG5h" value="ParentPathElement" />
     <property role="34LRSv" value="parent" />
     <property role="R4oN_" value="parent reference" />
@@ -326,7 +326,7 @@
   </node>
   <node concept="1TIwiD" id="2K9A72IyXjN">
     <property role="EcuMT" value="3173235022191383795" />
-    <property role="3GE5qa" value="constraints" />
+    <property role="3GE5qa" value="constraints.element" />
     <property role="TrG5h" value="AbstractPathElement" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -337,7 +337,7 @@
   </node>
   <node concept="1TIwiD" id="360F32cu5YZ">
     <property role="EcuMT" value="3567040229392539583" />
-    <property role="3GE5qa" value="constraints" />
+    <property role="3GE5qa" value="constraints.element.virtual" />
     <property role="TrG5h" value="PrevPathElement" />
     <property role="34LRSv" value="prev" />
     <property role="R4oN_" value="previous reference" />
@@ -348,23 +348,23 @@
   </node>
   <node concept="1TIwiD" id="360F32dey26">
     <property role="EcuMT" value="3567040229405237382" />
-    <property role="3GE5qa" value="constraints" />
-    <property role="TrG5h" value="FirstListPathElement" />
+    <property role="3GE5qa" value="constraints.element.virtual" />
+    <property role="TrG5h" value="FirstPathElement" />
     <property role="R4oN_" value="first element of sequence" />
     <property role="34LRSv" value="first" />
     <ref role="1TJDcQ" node="4wicJwLtjud" resolve="AbstractListPathElement" />
   </node>
   <node concept="1TIwiD" id="4wicJwLeUU4">
     <property role="EcuMT" value="5193269361870876292" />
-    <property role="3GE5qa" value="constraints" />
-    <property role="TrG5h" value="LastListPathElement" />
+    <property role="3GE5qa" value="constraints.element.virtual" />
+    <property role="TrG5h" value="LastPathElement" />
     <property role="R4oN_" value="last element of sequence" />
     <property role="34LRSv" value="last" />
     <ref role="1TJDcQ" node="4wicJwLtjud" resolve="AbstractListPathElement" />
   </node>
   <node concept="1TIwiD" id="4wicJwLtjud">
     <property role="EcuMT" value="5193269361874646925" />
-    <property role="3GE5qa" value="constraints" />
+    <property role="3GE5qa" value="constraints.element" />
     <property role="TrG5h" value="AbstractListPathElement" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -372,20 +372,37 @@
     <node concept="PrWs8" id="4wicJwLtjue" role="PzmwI">
       <ref role="PrY4T" to="hqsm:1ERTnBTmuSC" resolve="IPathElement" />
     </node>
+    <node concept="PrWs8" id="7rH8wA$sfvp" role="PzmwI">
+      <ref role="PrY4T" node="7Hdi_qc0u2y" resolve="IVirtualPathElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2WpF3SwEcqX">
     <property role="EcuMT" value="3393933177036261053" />
-    <property role="3GE5qa" value="constraints" />
-    <property role="TrG5h" value="IsDefinedPathElement" />
+    <property role="3GE5qa" value="constraints.element.gen" />
+    <property role="TrG5h" value="GenIsDefinedPathElement" />
     <ref role="1TJDcQ" node="2K9A72IyXjN" resolve="AbstractPathElement" />
-    <node concept="PrWs8" id="7Hdi_qc0u3g" role="PzmwI">
-      <ref role="PrY4T" node="7Hdi_qc0u2y" resolve="IVirtualPathElement" />
+    <node concept="PrWs8" id="4D4o8maaVMe" role="PzmwI">
+      <ref role="PrY4T" to="hqsm:4D4o8maaVLo" resolve="IGeneratorPathElement" />
     </node>
   </node>
   <node concept="PlHQZ" id="7Hdi_qc0u2y">
     <property role="EcuMT" value="8884839375448432802" />
-    <property role="3GE5qa" value="constraints" />
+    <property role="3GE5qa" value="constraints.element.virtual" />
     <property role="TrG5h" value="IVirtualPathElement" />
+  </node>
+  <node concept="1TIwiD" id="4D4o8mamJ6i">
+    <property role="EcuMT" value="5351508383891124626" />
+    <property role="3GE5qa" value="constraints.element.gen" />
+    <property role="TrG5h" value="GenListPathElement" />
+    <ref role="1TJDcQ" node="2K9A72IyXjN" resolve="AbstractPathElement" />
+    <node concept="1TJgyi" id="4D4o8mamJ6m" role="1TKVEl">
+      <property role="IQ2nx" value="5351508383891124630" />
+      <property role="TrG5h" value="isFirst" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="4D4o8mamJ6j" role="PzmwI">
+      <ref role="PrY4T" to="hqsm:4D4o8maaVLo" resolve="IGeneratorPathElement" />
+    </node>
   </node>
 </model>
 

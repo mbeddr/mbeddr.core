@@ -10,9 +10,9 @@
     <use id="8c9a2720-9d21-4370-a226-819eb3e76e1e" name="com.mbeddr.mpsutil.inca.fun" version="0" />
   </languages>
   <imports>
-    <import index="wyff" ref="r:25ca5b61-00c9-4ed9-9329-b2195383c9ea(com.mbeddr.mpsutil.inca.fun.test.plugin@tests)" />
+    <import index="wyff" ref="r:25ca5b61-00c9-4ed9-9329-b2195383c9ea(com.mbeddr.mpsutil.inca.fun.test.test1@tests)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="i9sa" ref="r:758bd704-3a6f-448b-889c-cbce5c88424b(com.mbeddr.mpsutil.inca.fun.test.base)" />
+    <import index="i9sa" ref="r:758bd704-3a6f-448b-889c-cbce5c88424b(com.mbeddr.mpsutil.inca.fun.test.model1)" />
     <import index="pzen" ref="r:25bfb30f-3676-4451-9448-27a17343be80(com.mbeddr.mpsutil.inca.core.runtime.plugin)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -819,7 +819,7 @@
             <property role="3TUv4t" value="true" />
             <node concept="H_c77" id="3hFXrOfT8xm" role="1tU5fm" />
             <node concept="BaHAS" id="3hFXrOfT8xn" role="33vP2m">
-              <property role="BaHAW" value="com.mbeddr.mpsutil.inca.fun.test.plugin" />
+              <property role="BaHAW" value="com.mbeddr.mpsutil.inca.fun.test.soot" />
               <property role="BaGAP" value="tests" />
             </node>
           </node>
