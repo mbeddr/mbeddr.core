@@ -3729,6 +3729,7 @@
                     <node concept="3cpWs8" id="2x9xdhRBMF7" role="3cqZAp">
                       <node concept="3cpWsn" id="2x9xdhRBMFa" role="3cpWs9">
                         <property role="TrG5h" value="conceptConstraint" />
+                        <property role="3TUv4t" value="true" />
                         <node concept="3Tqbb2" id="2x9xdhRBMF5" role="1tU5fm">
                           <ref role="ehGHo" to="55iy:5Dmozv0zaht" resolve="GraphPatternConceptConstraint" />
                         </node>
@@ -3868,6 +3869,7 @@
                       <node concept="3cpWs8" id="2x9xdhRBSNE" role="3cqZAp">
                         <node concept="3cpWsn" id="2x9xdhRBSNH" role="3cpWs9">
                           <property role="TrG5h" value="temporaryVariable" />
+                          <property role="3TUv4t" value="true" />
                           <node concept="3Tqbb2" id="2x9xdhRBSNC" role="1tU5fm">
                             <ref role="ehGHo" to="hqsm:6L84cjtSlH$" resolve="TemporaryVariable" />
                           </node>
@@ -6943,6 +6945,20 @@
     <node concept="1pplIY" id="3Cx0Htp8KDt" role="1pqMTA">
       <node concept="3clFbS" id="3Cx0Htp8KDu" role="2VODD2">
         <node concept="2Gpval" id="5te8vJ2H0O8" role="3cqZAp">
+          <node concept="2GrKxI" id="5te8vJ2H0Oa" role="2Gsz3X">
+            <property role="TrG5h" value="reference" />
+          </node>
+          <node concept="3clFbS" id="5te8vJ2H0Oc" role="2LFqv$">
+            <node concept="3clFbF" id="5te8vJ2J_B_" role="3cqZAp">
+              <node concept="2YIFZM" id="5te8vJ2J_Ql" role="3clFbG">
+                <ref role="1Pybhc" to="zt8v:8FTmV8DtfS" resolve="CodeGenerationHelper" />
+                <ref role="37wK5l" to="zt8v:5te8vJ2Jmh9" resolve="putUserObjectType" />
+                <node concept="2GrUjf" id="5te8vJ2J_R4" role="37wK5m">
+                  <ref role="2Gs0qQ" node="5te8vJ2H0Oa" resolve="reference" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="2OqwBi" id="4dGlLy5BDvV" role="2GsD0m">
             <node concept="2OqwBi" id="5te8vJ2H1Du" role="2Oq$k0">
               <node concept="1Q6Npb" id="5te8vJ2H1zw" role="2Oq$k0" />
@@ -6959,20 +6975,6 @@
                   <node concept="chp4Y" id="4dGlLy5BHCn" role="1dBWTz">
                     <ref role="cht4Q" to="hqsm:1YBYCQ0ZLGM" resolve="VariableReference" />
                   </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2GrKxI" id="5te8vJ2H0Oa" role="2Gsz3X">
-            <property role="TrG5h" value="reference" />
-          </node>
-          <node concept="3clFbS" id="5te8vJ2H0Oc" role="2LFqv$">
-            <node concept="3clFbF" id="5te8vJ2J_B_" role="3cqZAp">
-              <node concept="2YIFZM" id="5te8vJ2J_Ql" role="3clFbG">
-                <ref role="1Pybhc" to="zt8v:8FTmV8DtfS" resolve="CodeGenerationHelper" />
-                <ref role="37wK5l" to="zt8v:5te8vJ2Jmh9" resolve="putUserObjectType" />
-                <node concept="2GrUjf" id="5te8vJ2J_R4" role="37wK5m">
-                  <ref role="2Gs0qQ" node="5te8vJ2H0Oa" resolve="reference" />
                 </node>
               </node>
             </node>

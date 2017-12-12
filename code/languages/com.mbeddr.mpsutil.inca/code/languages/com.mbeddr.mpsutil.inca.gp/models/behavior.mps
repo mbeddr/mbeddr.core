@@ -2,12 +2,12 @@
 <model ref="r:bc65b41d-9fbe-4fcb-85d9-7844799c6ae6(com.mbeddr.mpsutil.inca.gp.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1972,6 +1972,54 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3gA3b2A4WTG">
+    <property role="3GE5qa" value="constraints.element.gen" />
+    <ref role="13h7C2" to="55iy:2WpF3SwEcqX" resolve="GenIsDefinedPathElement" />
+    <node concept="13i0hz" id="3gA3b2A4X1$" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getScopeProviderConcept" />
+      <ref role="13i0hy" to="gcg1:5Os6JboGgK9" resolve="getScopeProviderConcept" />
+      <node concept="37vLTG" id="3gA3b2A4X1_" role="3clF46">
+        <property role="TrG5h" value="contextBody" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tqbb2" id="3gA3b2A4X1A" role="1tU5fm">
+          <ref role="ehGHo" to="hqsm:3VwoHXNAdvt" resolve="IPatternBody" />
+        </node>
+        <node concept="2AHcQZ" id="3gA3b2A4X1B" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3gA3b2A4X1C" role="1B3o_S" />
+      <node concept="3clFbS" id="3gA3b2A4X1D" role="3clF47">
+        <node concept="3cpWs6" id="3gA3b2A4X1E" role="3cqZAp">
+          <node concept="2OqwBi" id="3gA3b2A4X1F" role="3cqZAk">
+            <node concept="1PxgMI" id="3gA3b2A4X1G" role="2Oq$k0">
+              <node concept="chp4Y" id="3gA3b2A4X1H" role="3oSUPX">
+                <ref role="cht4Q" to="hqsm:3p0ky8Li8px" resolve="IPathElementScopeProvider" />
+              </node>
+              <node concept="2OqwBi" id="3gA3b2A4X1I" role="1m5AlR">
+                <node concept="13iPFW" id="3gA3b2A4X1J" role="2Oq$k0" />
+                <node concept="1mfA1w" id="3gA3b2A4X1K" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="3gA3b2A4X1L" role="2OqNvi">
+              <ref role="37wK5l" to="gcg1:5Os6JboGgK9" resolve="getScopeProviderConcept" />
+              <node concept="37vLTw" id="3gA3b2A4X1M" role="37wK5m">
+                <ref role="3cqZAo" node="3gA3b2A4X1_" resolve="contextBody" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3gA3b2A4X1N" role="3clF45">
+        <ref role="ehGHo" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="3gA3b2A4WTH" role="13h7CW">
+      <node concept="3clFbS" id="3gA3b2A4WTI" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -4548,6 +4548,95 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3cpWs8" id="3gA3b2_VIM3" role="3cqZAp">
+                  <node concept="3cpWsn" id="3gA3b2_VIM4" role="3cpWs9">
+                    <property role="TrG5h" value="wrapper" />
+                    <property role="3TUv4t" value="true" />
+                    <node concept="3Tqbb2" id="3gA3b2_VILM" role="1tU5fm">
+                      <ref role="ehGHo" to="uu1k:2A0WHmBhrvB" resolve="TypeConstructorTypeWrapper" />
+                    </node>
+                    <node concept="1PxgMI" id="3gA3b2_VIM5" role="33vP2m">
+                      <node concept="2OqwBi" id="3gA3b2_VIM6" role="1m5AlR">
+                        <node concept="37vLTw" id="3gA3b2_VIM7" role="2Oq$k0">
+                          <ref role="3cqZAo" node="aQnmvIkpUM" resolve="resultAggregatedParameter" />
+                        </node>
+                        <node concept="3TrEf2" id="3gA3b2_VIM8" role="2OqNvi">
+                          <ref role="3Tt5mk" to="hqsm:3VwoHXNAiyY" resolve="type" />
+                        </node>
+                      </node>
+                      <node concept="chp4Y" id="3gA3b2_VIM9" role="3oSUPX">
+                        <ref role="cht4Q" to="uu1k:2A0WHmBhrvB" resolve="TypeConstructorTypeWrapper" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="3gA3b2_VMpX" role="3cqZAp">
+                  <node concept="3cpWsn" id="3gA3b2_VMpY" role="3cpWs9">
+                    <property role="TrG5h" value="lattice" />
+                    <property role="3TUv4t" value="true" />
+                    <node concept="3Tqbb2" id="3gA3b2_VMoO" role="1tU5fm">
+                      <ref role="ehGHo" to="uu1k:2qfgCZsFkIW" resolve="ILatticeDefinitionModule" />
+                    </node>
+                    <node concept="1PxgMI" id="3gA3b2_VMpZ" role="33vP2m">
+                      <property role="1BlNFB" value="true" />
+                      <node concept="chp4Y" id="3gA3b2_VMq0" role="3oSUPX">
+                        <ref role="cht4Q" to="uu1k:2qfgCZsFkIW" resolve="ILatticeDefinitionModule" />
+                      </node>
+                      <node concept="2OqwBi" id="3gA3b2_VMq1" role="1m5AlR">
+                        <node concept="2OqwBi" id="3gA3b2_VMq2" role="2Oq$k0">
+                          <node concept="37vLTw" id="3gA3b2_VMq3" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3gA3b2_VIM4" resolve="wrapper" />
+                          </node>
+                          <node concept="3TrEf2" id="3gA3b2_VMq4" role="2OqNvi">
+                            <ref role="3Tt5mk" to="uu1k:2A0WHmBl9Mp" resolve="type" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="3gA3b2_VMq5" role="2OqNvi">
+                          <ref role="3Tt5mk" to="uu1k:3l0M8IaAFF8" resolve="constructor" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="3gA3b2_Vvly" role="3cqZAp">
+                  <node concept="3cpWsn" id="3gA3b2_Vvlz" role="3cpWs9">
+                    <property role="TrG5h" value="combinator" />
+                    <property role="3TUv4t" value="true" />
+                    <node concept="3Tqbb2" id="3gA3b2_Vvlo" role="1tU5fm">
+                      <ref role="ehGHo" to="uu1k:7tOfV2_AEhe" resolve="ILatticeElementCombinator" />
+                    </node>
+                    <node concept="2OqwBi" id="3gA3b2_Vvl$" role="33vP2m">
+                      <node concept="37vLTw" id="3gA3b2_VIMa" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3gA3b2_VIM4" resolve="wrapper" />
+                      </node>
+                      <node concept="2qgKlT" id="3gA3b2_VvlE" role="2OqNvi">
+                        <ref role="37wK5l" to="j60j:3xDKE$EUVg8" resolve="getLatticeOperation" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="3gA3b2_VH1C" role="3cqZAp">
+                  <node concept="37vLTI" id="3gA3b2_VIwZ" role="3clFbG">
+                    <node concept="37vLTw" id="3gA3b2_VO6G" role="37vLTx">
+                      <ref role="3cqZAo" node="3gA3b2_VMpY" resolve="lattice" />
+                    </node>
+                    <node concept="2OqwBi" id="3gA3b2_VI6m" role="37vLTJ">
+                      <node concept="1PxgMI" id="3gA3b2_VHYz" role="2Oq$k0">
+                        <property role="1BlNFB" value="true" />
+                        <node concept="chp4Y" id="3gA3b2_VHZY" role="3oSUPX">
+                          <ref role="cht4Q" to="uu1k:1rEZ6Y2nNzy" resolve="JavaMethodCombinator" />
+                        </node>
+                        <node concept="37vLTw" id="3gA3b2_VH1A" role="1m5AlR">
+                          <ref role="3cqZAo" node="3gA3b2_Vvlz" resolve="combinator" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="3gA3b2_VIfK" role="2OqNvi">
+                        <ref role="3Tt5mk" to="uu1k:3gA3b2_V43J" resolve="lattice" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="3gA3b2_VwrQ" role="3cqZAp" />
                 <node concept="3clFbF" id="aQnmvIk5d7" role="3cqZAp">
                   <node concept="37vLTI" id="aQnmvIk5d8" role="3clFbG">
                     <node concept="2pJPEk" id="aQnmvIk5d9" role="37vLTx">
@@ -4560,23 +4649,8 @@
                             <node concept="2pIpSj" id="aQnmvIk5dd" role="2pJxcM">
                               <ref role="2pIpSl" to="uu1k:606mdnYmDzT" resolve="operation" />
                               <node concept="36biLy" id="aQnmvIk5de" role="2pJxcZ">
-                                <node concept="2OqwBi" id="aQnmvIk5df" role="36biLW">
-                                  <node concept="1PxgMI" id="aQnmvIk5dg" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="aQnmvIk5dh" role="1m5AlR">
-                                      <node concept="37vLTw" id="2XoPn7nZNoK" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="aQnmvIkpUM" resolve="resultAggregatedParameter" />
-                                      </node>
-                                      <node concept="3TrEf2" id="aQnmvIk5dj" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="hqsm:3VwoHXNAiyY" resolve="type" />
-                                      </node>
-                                    </node>
-                                    <node concept="chp4Y" id="aQnmvIk5dk" role="3oSUPX">
-                                      <ref role="cht4Q" to="uu1k:2A0WHmBhrvB" resolve="TypeConstructorTypeWrapper" />
-                                    </node>
-                                  </node>
-                                  <node concept="2qgKlT" id="aQnmvIk5dl" role="2OqNvi">
-                                    <ref role="37wK5l" to="j60j:3xDKE$EUVg8" resolve="getLatticeOperation" />
-                                  </node>
+                                <node concept="37vLTw" id="3gA3b2_VvlF" role="36biLW">
+                                  <ref role="3cqZAo" node="3gA3b2_Vvlz" resolve="combinator" />
                                 </node>
                               </node>
                             </node>

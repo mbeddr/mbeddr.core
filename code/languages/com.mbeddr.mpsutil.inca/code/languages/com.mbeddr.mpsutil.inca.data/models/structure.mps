@@ -626,6 +626,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
     </node>
+    <node concept="1TJgyj" id="3gA3b2_V43J" role="1TKVEi">
+      <property role="IQ2ns" value="3757704891924758767" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="lattice" />
+      <ref role="20lvS9" node="2qfgCZsFkIW" resolve="ILatticeDefinitionModule" />
+    </node>
     <node concept="PrWs8" id="1rEZ6Y2nNzz" role="PzmwI">
       <ref role="PrY4T" node="7tOfV2_AEhe" resolve="ILatticeElementCombinator" />
     </node>
