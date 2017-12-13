@@ -61,6 +61,9 @@
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
+      <concept id="841011766565753074" name="jetbrains.mps.build.structure.BuildLayout_Import" flags="ng" index="3_I8Xc">
+        <reference id="841011766565753076" name="target" index="3_I8Xa" />
+      </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
       <concept id="5248329904288051100" name="jetbrains.mps.build.structure.BuildFileIncludeSelector" flags="ng" index="3LWZYx">
         <property id="5248329904288051101" name="pattern" index="3LWZYw" />
@@ -1580,6 +1583,9 @@
     <node concept="1l3spV" id="7uZw0yZ43Ju" role="1l3spN">
       <node concept="m$_wl" id="6XXe7bCzKWL" role="39821P">
         <ref role="m_rDy" node="46zCYP2pxWG" resolve="com.mbeddr.allScripts" />
+      </node>
+      <node concept="3_I8Xc" id="DJVnBnJZ9T" role="39821P">
+        <ref role="3_I8Xa" to="90a9:4hvHh3QWqH0" resolve="de.slisson.mps.all" />
       </node>
     </node>
     <node concept="2igEWh" id="3R8XMuzZsAh" role="1hWBAP">
