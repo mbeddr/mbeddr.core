@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:bca9e149-5c0b-4cc7-af4c-5cf2e9ee7871(com.mbeddr.mpsutil.inca.data.test.plugin@tests)">
+<model ref="r:bca9e149-5c0b-4cc7-af4c-5cf2e9ee7871(com.mbeddr.mpsutil.inca.data.test.test1@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
@@ -1217,7 +1217,7 @@
             <property role="3TUv4t" value="true" />
             <node concept="H_c77" id="6AFedOHG$oV" role="1tU5fm" />
             <node concept="BaHAS" id="6AFedOHG$oW" role="33vP2m">
-              <property role="BaHAW" value="com.mbeddr.mpsutil.inca.data.test.base" />
+              <property role="BaHAW" value="com.mbeddr.mpsutil.inca.data.test.model1" />
               <property role="BaGAP" value="" />
             </node>
           </node>
@@ -1229,7 +1229,7 @@
             <property role="3TUv4t" value="true" />
             <node concept="H_c77" id="6AFedOHG$p0" role="1tU5fm" />
             <node concept="BaHAS" id="6AFedOHG$p1" role="33vP2m">
-              <property role="BaHAW" value="com.mbeddr.mpsutil.inca.data.test.plugin" />
+              <property role="BaHAW" value="com.mbeddr.mpsutil.inca.data.test.test1" />
               <property role="BaGAP" value="tests" />
             </node>
           </node>

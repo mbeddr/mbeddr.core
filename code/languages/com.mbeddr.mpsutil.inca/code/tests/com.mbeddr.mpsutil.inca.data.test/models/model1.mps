@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b246389f-c376-4fd1-9944-aebd32bee320(com.mbeddr.mpsutil.inca.data.test.base)">
+<model ref="r:b246389f-c376-4fd1-9944-aebd32bee320(com.mbeddr.mpsutil.inca.data.test.model1)">
   <persistence version="9" />
   <languages>
     <use id="9c179615-5b01-47d6-8747-de24f81c45dc" name="com.mbeddr.mpsutil.inca.fun.testlangs" version="0" />
