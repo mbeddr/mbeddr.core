@@ -8527,7 +8527,7 @@
       <node concept="3clFbS" id="5PHeJi9YzY$" role="3clF47">
         <node concept="3cpWs6" id="5PHeJi9YzY_" role="3cqZAp">
           <node concept="3cmrfG" id="1os3ELXdYL8" role="3cqZAk">
-            <property role="3cmrfH" value="300" />
+            <property role="3cmrfH" value="100" />
           </node>
         </node>
       </node>

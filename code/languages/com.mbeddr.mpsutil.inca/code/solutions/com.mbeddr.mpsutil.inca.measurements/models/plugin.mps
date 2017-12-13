@@ -107,9 +107,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -230,7 +228,7 @@
                 </node>
                 <node concept="2ShNRf" id="3XQWGS7yN$5" role="33vP2m">
                   <node concept="1pGfFk" id="3XQWGS7yN$6" role="2ShVmc">
-                    <ref role="37wK5l" to="kn4z:3jUy2c7hVaT" resolve="AllStringAnalysis_BerkeleyDB_Measurment" />
+                    <ref role="37wK5l" to="kn4z:5PHeJi9YzYi" resolve="PointsToSU_BerkeleyDB_Measurment" />
                     <node concept="37vLTw" id="3XQWGS7yN$7" role="37wK5m">
                       <ref role="3cqZAo" node="3XQWGS7yOwy" resolve="outputFolder" />
                     </node>
@@ -240,9 +238,7 @@
                         <ref role="2WH_rO" node="7$Y1SICub6" resolve="project" />
                       </node>
                     </node>
-                    <node concept="3clFbT" id="5iq_ag118fK" role="37wK5m">
-                      <property role="3clFbU" value="true" />
-                    </node>
+                    <node concept="3clFbT" id="5iq_ag118fK" role="37wK5m" />
                   </node>
                 </node>
               </node>

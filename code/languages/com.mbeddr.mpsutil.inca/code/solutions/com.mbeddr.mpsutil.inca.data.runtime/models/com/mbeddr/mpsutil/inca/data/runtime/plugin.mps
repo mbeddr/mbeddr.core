@@ -1728,7 +1728,7 @@
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="binaryOperation" />
-      <property role="3TUv4t" value="false" />
+      <property role="3TUv4t" value="true" />
       <node concept="3Tmbuc" id="4uaOjKj9aTa" role="1B3o_S" />
       <node concept="1ajhzC" id="4uaOjKj9aTb" role="1tU5fm">
         <node concept="16syzq" id="4uaOjKj9aTc" role="1ajw0F">
@@ -1746,12 +1746,14 @@
     <node concept="3clFbW" id="4uaOjKj97CZ" role="jymVt">
       <node concept="37vLTG" id="4uaOjKj97D0" role="3clF46">
         <property role="TrG5h" value="value" />
+        <property role="3TUv4t" value="true" />
         <node concept="16syzq" id="4uaOjKj97D1" role="1tU5fm">
           <ref role="16sUi3" node="4uaOjKj96yW" resolve="T" />
         </node>
       </node>
       <node concept="37vLTG" id="4uaOjKj9a5J" role="3clF46">
         <property role="TrG5h" value="binaryOperation" />
+        <property role="3TUv4t" value="true" />
         <node concept="1ajhzC" id="4uaOjKj9a5K" role="1tU5fm">
           <node concept="16syzq" id="4uaOjKj9a5L" role="1ajw0F">
             <ref role="16sUi3" node="4uaOjKj96yW" resolve="T" />
@@ -1810,6 +1812,7 @@
       <node concept="3cqZAl" id="4uaOjKj97DN" role="3clF45" />
       <node concept="37vLTG" id="4uaOjKj97DO" role="3clF46">
         <property role="TrG5h" value="newChild" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="4uaOjKj97DP" role="1tU5fm">
           <ref role="3uigEE" to="gtp9:3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="4uaOjKj97DQ" role="11_B2D">
@@ -1846,6 +1849,7 @@
       <node concept="3cqZAl" id="4uaOjKj97J4" role="3clF45" />
       <node concept="37vLTG" id="4uaOjKj97J5" role="3clF46">
         <property role="TrG5h" value="newChild" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="4uaOjKj97J6" role="1tU5fm">
           <ref role="3uigEE" to="gtp9:3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="4uaOjKj97J7" role="11_B2D">
@@ -1882,6 +1886,7 @@
       <property role="2aFKle" value="false" />
       <node concept="37vLTG" id="1JTIsqoihLQ" role="3clF46">
         <property role="TrG5h" value="_left" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="1JTIsqoiikm" role="1tU5fm">
           <ref role="3uigEE" to="gtp9:3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="1JTIsqoiikn" role="11_B2D">
@@ -1891,6 +1896,7 @@
       </node>
       <node concept="37vLTG" id="1JTIsqoiizy" role="3clF46">
         <property role="TrG5h" value="_right" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="1JTIsqoij4C" role="1tU5fm">
           <ref role="3uigEE" to="gtp9:3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="1JTIsqoij4D" role="11_B2D">
@@ -1902,6 +1908,7 @@
         <node concept="3cpWs8" id="1JTIsqoio9u" role="3cqZAp">
           <node concept="3cpWsn" id="1JTIsqoio9v" role="3cpWs9">
             <property role="TrG5h" value="oldValue" />
+            <property role="3TUv4t" value="true" />
             <node concept="16syzq" id="1JTIsqoio9w" role="1tU5fm">
               <ref role="16sUi3" node="4uaOjKj96yW" resolve="T" />
             </node>
@@ -1916,6 +1923,7 @@
         <node concept="3cpWs8" id="1JTIsqoioam" role="3cqZAp">
           <node concept="3cpWsn" id="1JTIsqoioan" role="3cpWs9">
             <property role="TrG5h" value="newValue" />
+            <property role="3TUv4t" value="false" />
             <node concept="16syzq" id="1JTIsqoioao" role="1tU5fm">
               <ref role="16sUi3" node="4uaOjKj96yW" resolve="T" />
             </node>
@@ -1933,6 +1941,7 @@
             <node concept="3cpWs8" id="3bc3bQZRJOE" role="3cqZAp">
               <node concept="3cpWsn" id="3bc3bQZRJOF" role="3cpWs9">
                 <property role="TrG5h" value="leftComputed" />
+                <property role="3TUv4t" value="true" />
                 <node concept="16syzq" id="3bc3bQZRJOo" role="1tU5fm">
                   <ref role="16sUi3" node="4uaOjKj96yW" resolve="T" />
                 </node>
@@ -1989,6 +1998,7 @@
             <node concept="3cpWs8" id="3bc3bQZRKyI" role="3cqZAp">
               <node concept="3cpWsn" id="3bc3bQZRKyJ" role="3cpWs9">
                 <property role="TrG5h" value="rightComputed" />
+                <property role="3TUv4t" value="true" />
                 <node concept="16syzq" id="3bc3bQZRKyK" role="1tU5fm">
                   <ref role="16sUi3" node="4uaOjKj96yW" resolve="T" />
                 </node>
@@ -2149,6 +2159,7 @@
       <node concept="3cqZAl" id="4uaOjKj97Ov" role="3clF45" />
       <node concept="37vLTG" id="4uaOjKj97Ow" role="3clF46">
         <property role="TrG5h" value="newParent" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="4uaOjKj97Ox" role="1tU5fm">
           <ref role="3uigEE" to="gtp9:3azqxJjwbof" resolve="AVLTreeNode" />
           <node concept="16syzq" id="4uaOjKj97Oy" role="11_B2D">
