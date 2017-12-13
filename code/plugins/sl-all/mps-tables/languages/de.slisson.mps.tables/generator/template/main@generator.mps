@@ -437,6 +437,7 @@
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
+      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -12325,24 +12326,41 @@
       <node concept="30G5F_" id="3zAWwLKmlxW" role="30HLyM">
         <node concept="3clFbS" id="3zAWwLKmlxX" role="2VODD2">
           <node concept="3clFbF" id="3zAWwLKmlSp" role="3cqZAp">
-            <node concept="3fqX7Q" id="3zAWwLKmoTE" role="3clFbG">
-              <node concept="2OqwBi" id="3zAWwLKmoTG" role="3fr31v">
-                <node concept="2OqwBi" id="3zAWwLKmoTH" role="2Oq$k0">
-                  <node concept="2OqwBi" id="3zAWwLKmoTI" role="2Oq$k0">
-                    <node concept="30H73N" id="3zAWwLKmoTJ" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="3zAWwLKmoTK" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tpee:gDPybl6" resolve="classConcept" />
+            <node concept="1Wc70l" id="49YCxIP$Eb0" role="3clFbG">
+              <node concept="3clFbC" id="49YCxIP$Ox_" role="3uHU7w">
+                <node concept="2OqwBi" id="49YCxIP$RE5" role="3uHU7w">
+                  <node concept="2OqwBi" id="49YCxIP$P9K" role="2Oq$k0">
+                    <node concept="30H73N" id="49YCxIP$ORx" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="49YCxIP$QG9" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tpee:fIYIWN3" resolve="staticMethodDeclaration" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="3zAWwLKmoTL" role="2OqNvi">
-                    <ref role="37wK5l" to="tpek:hEwJjl2" resolve="getMembers" />
-                  </node>
+                  <node concept="2Rxl7S" id="49YCxIP$Tvr" role="2OqNvi" />
                 </node>
-                <node concept="3JPx81" id="3zAWwLKmoTM" role="2OqNvi">
-                  <node concept="2OqwBi" id="3zAWwLKmoTN" role="25WWJ7">
-                    <node concept="30H73N" id="3zAWwLKmoTO" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="3zAWwLKmoTP" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tpee:fIYIWN3" resolve="staticMethodDeclaration" />
+                <node concept="2OqwBi" id="49YCxIP$JFU" role="3uHU7B">
+                  <node concept="30H73N" id="49YCxIP$JpX" role="2Oq$k0" />
+                  <node concept="2Rxl7S" id="49YCxIP$M0A" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="3zAWwLKmoTE" role="3uHU7B">
+                <node concept="2OqwBi" id="3zAWwLKmoTG" role="3fr31v">
+                  <node concept="2OqwBi" id="3zAWwLKmoTH" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3zAWwLKmoTI" role="2Oq$k0">
+                      <node concept="30H73N" id="3zAWwLKmoTJ" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="3zAWwLKmoTK" role="2OqNvi">
+                        <ref role="3Tt5mk" to="tpee:gDPybl6" resolve="classConcept" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="3zAWwLKmoTL" role="2OqNvi">
+                      <ref role="37wK5l" to="tpek:hEwJjl2" resolve="getMembers" />
+                    </node>
+                  </node>
+                  <node concept="3JPx81" id="3zAWwLKmoTM" role="2OqNvi">
+                    <node concept="2OqwBi" id="3zAWwLKmoTN" role="25WWJ7">
+                      <node concept="30H73N" id="3zAWwLKmoTO" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="3zAWwLKmoTP" role="2OqNvi">
+                        <ref role="3Tt5mk" to="tpee:fIYIWN3" resolve="staticMethodDeclaration" />
+                      </node>
                     </node>
                   </node>
                 </node>
