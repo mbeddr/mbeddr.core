@@ -455,6 +455,64 @@
         <node concept="10P_77" id="6fymoI4Tzhk" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="4zngrhRwb0q" role="jymVt" />
+    <node concept="2YIFZL" id="4zngrhRwdqI" role="jymVt">
+      <property role="TrG5h" value="compare" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4zngrhRwdqJ" role="3clF47">
+        <node concept="3cpWs6" id="4zngrhRwfJ1" role="3cqZAp">
+          <node concept="1rXfSq" id="4zngrhRwfTA" role="3cqZAk">
+            <ref role="37wK5l" node="6fymoI4RKZK" resolve="compare" />
+            <node concept="37vLTw" id="4zngrhRwfTB" role="37wK5m">
+              <ref role="3cqZAo" node="4zngrhRwds$" resolve="expected" />
+            </node>
+            <node concept="37vLTw" id="4zngrhRwfTC" role="37wK5m">
+              <ref role="3cqZAo" node="4zngrhRwdsA" resolve="actual" />
+            </node>
+            <node concept="37vLTw" id="4zngrhRwhkL" role="37wK5m">
+              <ref role="3cqZAo" node="4zngrhRwdsC" resolve="ignoredProperties" />
+            </node>
+            <node concept="10Nm6u" id="4zngrhRwfTE" role="37wK5m" />
+            <node concept="37vLTw" id="4zngrhRwfTF" role="37wK5m">
+              <ref role="3cqZAo" node="4zngrhRwdsI" resolve="compareChildren" />
+            </node>
+            <node concept="37vLTw" id="4zngrhRwhyX" role="37wK5m">
+              <ref role="3cqZAo" node="4zngrhRwdsK" resolve="verbose" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4zngrhRwdsy" role="1B3o_S" />
+      <node concept="3uibUv" id="4zngrhRwdsz" role="3clF45">
+        <ref role="3uigEE" node="494SuRWLRaN" resolve="MPSNodeComparisonResult" />
+      </node>
+      <node concept="37vLTG" id="4zngrhRwds$" role="3clF46">
+        <property role="TrG5h" value="expected" />
+        <node concept="3Tqbb2" id="4zngrhRwds_" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4zngrhRwdsA" role="3clF46">
+        <property role="TrG5h" value="actual" />
+        <node concept="3Tqbb2" id="4zngrhRwdsB" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4zngrhRwdsC" role="3clF46">
+        <property role="TrG5h" value="ignoredProperties" />
+        <node concept="_YKpA" id="4zngrhRwdsD" role="1tU5fm">
+          <node concept="3uibUv" id="4zngrhRwdsE" role="_ZDj9">
+            <ref role="3uigEE" node="DYlgnBstFb" resolve="IgnoredProperty" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4zngrhRwdsI" role="3clF46">
+        <property role="TrG5h" value="compareChildren" />
+        <node concept="10P_77" id="4zngrhRwdsJ" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4zngrhRwdsK" role="3clF46">
+        <property role="TrG5h" value="verbose" />
+        <node concept="10P_77" id="4zngrhRwdsL" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="6fymoI4Tr4S" role="jymVt" />
     <node concept="2YIFZL" id="6fymoI4RKZK" role="jymVt">
       <property role="TrG5h" value="compare" />

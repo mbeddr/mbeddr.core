@@ -548,10 +548,10 @@
       </node>
       <node concept="3EZMnI" id="3qPjHtY$alk" role="3EZMnx">
         <node concept="3F0ifn" id="3qPjHtY$all" role="3EZMnx">
-          <property role="3F0ifm" value="ignored properties:" />
+          <property role="3F0ifm" value="ignored references:" />
         </node>
         <node concept="3F1sOY" id="3qPjHtY$alm" role="3EZMnx">
-          <ref role="1NtTu8" to="8do3:1_DWnhqnLaj" resolve="ignoredProperties" />
+          <ref role="1NtTu8" to="8do3:3qPjHtY$alZ" resolve="ignoredReferences" />
         </node>
         <node concept="2iRfu4" id="3qPjHtY$aln" role="2iSdaV" />
       </node>
