@@ -5579,11 +5579,11 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="5n6IlFzxZf4" role="2OqNvi">
-                      <ref role="37wK5l" to="3ju5:~IFile.toPath():jetbrains.mps.vfs.path.Path" resolve="toPath" />
+                      <ref role="37wK5l" to="3ju5:~IFile.toPath():jetbrains.mps.vfs.path.UniPath" resolve="toPath" />
                     </node>
                   </node>
                   <node concept="liA8E" id="5n6IlFzy0lc" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                    <ref role="37wK5l" to="eurq:~UniPath.toString():java.lang.String" resolve="toString" />
                   </node>
                 </node>
               </node>
