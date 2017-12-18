@@ -3052,14 +3052,14 @@
   </node>
   <node concept="3p36aQ" id="2jl89KEYIgZ">
     <property role="3GE5qa" value="usage" />
-    <ref role="aqKnT" to="hqsm:2jl89KEYIg_" resolve="DisableJavaWarningAttribute" />
+    <ref role="aqKnT" to="hqsm:2jl89KEYIg_" resolve="DisableCompilerChecks" />
   </node>
   <node concept="24kQdi" id="2jl89KEYIhp">
     <property role="3GE5qa" value="usage" />
-    <ref role="1XX52x" to="hqsm:2jl89KEYIg_" resolve="DisableJavaWarningAttribute" />
+    <ref role="1XX52x" to="hqsm:2jl89KEYIg_" resolve="DisableCompilerChecks" />
     <node concept="3EZMnI" id="2jl89KEYIhv" role="2wV5jI">
       <node concept="3F0ifn" id="2jl89KEYIhI" role="3EZMnx">
-        <property role="3F0ifm" value="@DisableJavaWarning" />
+        <property role="3F0ifm" value="@DisableCompilerChecks" />
       </node>
       <node concept="l2Vlx" id="2jl89KEYIhw" role="2iSdaV" />
       <node concept="2SsqMj" id="2jl89KEYIhr" role="3EZMnx">

@@ -4,6 +4,8 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
   </languages>
   <imports>
     <import index="nk28" ref="r:c26e1b9d-8c52-4dd5-aa74-076b11122b73(com.mbeddr.mpsutil.inca.analysis.runtime.meta)" />
@@ -150,7 +152,7 @@
   <node concept="1lH9Xt" id="4g31fZDjr3b">
     <property role="TrG5h" value="InconsistentLatticeUsageTest" />
     <node concept="1LZb2c" id="4g31fZDjr3c" role="1SL9yI">
-      <property role="TrG5h" value="test_NegationInRecursion" />
+      <property role="TrG5h" value="test_InconsistentLatticeUsageTest" />
       <node concept="3cqZAl" id="4g31fZDjr3d" role="3clF45" />
       <node concept="3clFbS" id="4g31fZDjr3e" role="3clF47">
         <node concept="3cpWs8" id="4g31fZDjr3f" role="3cqZAp">
@@ -192,7 +194,7 @@
               <node concept="34oBXx" id="4g31fZDjr3v" role="2OqNvi" />
             </node>
             <node concept="3cmrfG" id="4g31fZDjyyi" role="3uHU7w">
-              <property role="3cmrfH" value="4" />
+              <property role="3cmrfH" value="2" />
             </node>
           </node>
         </node>

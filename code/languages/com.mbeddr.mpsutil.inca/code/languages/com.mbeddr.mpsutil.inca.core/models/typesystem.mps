@@ -3769,7 +3769,7 @@
             </node>
             <node concept="3CFZ6_" id="2jl89KEYQqi" role="2OqNvi">
               <node concept="3CFYIy" id="2jl89KEYQu0" role="3CFYIz">
-                <ref role="3CFYIx" to="hqsm:2jl89KEYIg_" resolve="DisableJavaWarningAttribute" />
+                <ref role="3CFYIx" to="hqsm:2jl89KEYIg_" resolve="DisableCompilerChecks" />
               </node>
             </node>
           </node>

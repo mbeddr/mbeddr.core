@@ -332,13 +332,6 @@
           </node>
         </node>
       </node>
-      <node concept="1k99o6" id="4g31fZDjqBa" role="lGtFl">
-        <node concept="TZ5HA" id="4g31fZDjqBb" role="TZ5H$">
-          <node concept="1dT_AC" id="4g31fZDjqBc" role="1dT_Ay">
-            <property role="1dT_AB" value="candidate" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="1XdyHe" id="33oWlMHhJN0" role="1dubk0" />
     <node concept="3zyOaA" id="33oWlMHhKUY" role="1dubk0">
@@ -359,13 +352,6 @@
           </node>
           <node concept="2kHsid" id="4g31fZDjpW9" role="iwB5b">
             <ref role="2kHsi0" node="2XlXuxNCHlj" resolve="glb" />
-          </node>
-        </node>
-      </node>
-      <node concept="1k99o6" id="4g31fZDjqBS" role="lGtFl">
-        <node concept="TZ5HA" id="4g31fZDjqBT" role="TZ5H$">
-          <node concept="1dT_AC" id="4g31fZDjqBU" role="1dT_Ay">
-            <property role="1dT_AB" value="candidate" />
           </node>
         </node>
       </node>

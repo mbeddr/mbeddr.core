@@ -1280,10 +1280,10 @@
   <node concept="1TIwiD" id="2jl89KEYIg_">
     <property role="EcuMT" value="2654063410512847909" />
     <property role="3GE5qa" value="usage" />
-    <property role="TrG5h" value="DisableJavaWarningAttribute" />
+    <property role="TrG5h" value="DisableCompilerChecks" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="2jl89KEYJeM" role="lGtFl">
-      <property role="Hh88m" value="disableJavaWarning" />
+      <property role="Hh88m" value="disableCompilerChecks" />
       <node concept="tn0Fv" id="2jl89KEYJeP" role="HhnKV">
         <property role="tnX3d" value="false" />
       </node>
