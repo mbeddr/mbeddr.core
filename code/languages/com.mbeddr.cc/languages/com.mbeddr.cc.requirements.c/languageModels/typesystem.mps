@@ -426,9 +426,6 @@
               <node concept="2YIFZM" id="2yaxsm5sV6v" role="33vP2m">
                 <ref role="37wK5l" to="1v9t:2yaxsm5ofaZ" resolve="createInterpreter" />
                 <ref role="1Pybhc" to="1v9t:$bJ0jgVdf3" resolve="DebugHelper" />
-                <node concept="1YBJjd" id="jgTeXj3Vk0" role="37wK5m">
-                  <ref role="1YBMHb" node="35Kh8LWsI4x" resolve="tc" />
-                </node>
               </node>
               <node concept="3uibUv" id="3iWeQsvo_yg" role="1tU5fm">
                 <ref role="3uigEE" to="2ahs:4X7QcQ36WR7" resolve="IInterpreter" />
