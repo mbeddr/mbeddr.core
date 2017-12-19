@@ -21,7 +21,6 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="yo81" ref="r:4ea5a78b-cb8a-4831-b227-f7860a22491d(jetbrains.mps.make.resources)" />
-    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
     <import index="fn29" ref="r:6ba2667b-185e-45cd-ac65-e4b9d66da28e(jetbrains.mps.smodel.resources)" />
     <import index="o6ex" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.generator(MPS.Workbench/)" />
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
@@ -332,7 +331,6 @@
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
-      <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
       <concept id="1180964022718" name="jetbrains.mps.baseLanguage.collections.structure.ConcatOperation" flags="nn" index="3QWeyG" />
@@ -2244,39 +2242,13 @@
             <node concept="2ShNRf" id="7iCFfvQNc2g" role="2Oq$k0">
               <node concept="1pGfFk" id="7iCFfvQNf3W" role="2ShVmc">
                 <ref role="37wK5l" to="fn29:6zsZmIC0WqK" resolve="ModelsToResources" />
-                <node concept="2OqwBi" id="7iCFfvQNfrZ" role="37wK5m">
-                  <node concept="37vLTw" id="7iCFfvQNf50" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7iCFfvQMSPW" resolve="smds" />
-                  </node>
-                  <node concept="3zZkjj" id="7iCFfvQMX2s" role="2OqNvi">
-                    <node concept="1bVj0M" id="7iCFfvQMX2u" role="23t8la">
-                      <node concept="3clFbS" id="7iCFfvQMX2v" role="1bW5cS">
-                        <node concept="3clFbF" id="7iCFfvQMXle" role="3cqZAp">
-                          <node concept="2YIFZM" id="7iCFfvQMXlg" role="3clFbG">
-                            <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
-                            <ref role="37wK5l" to="unno:54ElNE$imKq" resolve="isGeneratable" />
-                            <node concept="37vLTw" id="7iCFfvQMXPk" role="37wK5m">
-                              <ref role="3cqZAo" node="7iCFfvQMX2w" resolve="it" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="Rh6nW" id="7iCFfvQMX2w" role="1bW2Oz">
-                        <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="7iCFfvQMX2x" role="1tU5fm" />
-                      </node>
-                    </node>
-                  </node>
+                <node concept="37vLTw" id="7iCFfvQNf50" role="37wK5m">
+                  <ref role="3cqZAo" node="7iCFfvQMSPW" resolve="smds" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="7iCFfvQNgL2" role="2OqNvi">
-              <ref role="37wK5l" to="fn29:6gLh390ElAV" resolve="resources" />
-              <node concept="3fqX7Q" id="7iCFfvQNgNt" role="37wK5m">
-                <node concept="37vLTw" id="7iCFfvQNgQq" role="3fr31v">
-                  <ref role="3cqZAo" node="7iCFfvQwao8" resolve="myCleanBuild" />
-                </node>
-              </node>
+              <ref role="37wK5l" to="fn29:713BH0S$TAn" resolve="resources" />
             </node>
           </node>
         </node>
