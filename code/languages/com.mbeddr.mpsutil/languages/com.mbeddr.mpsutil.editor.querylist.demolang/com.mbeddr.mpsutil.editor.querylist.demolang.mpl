@@ -38,6 +38,8 @@
         <module reference="9b71d0db-bcaf-4144-bb2e-1ddef2b249b9(com.mbeddr.mpsutil.editor.querylist.demolang)" version="0" />
         <module reference="91208f02-68b6-4cfd-881a-12b7e34fa630(com.mbeddr.mpsutil.editor.querylist.demolang#6202678563380233177)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
+        <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
