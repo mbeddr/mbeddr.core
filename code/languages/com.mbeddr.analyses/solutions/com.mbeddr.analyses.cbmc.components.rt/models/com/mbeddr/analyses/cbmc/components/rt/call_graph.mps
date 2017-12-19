@@ -280,11 +280,11 @@
                         <ref role="2Gs0qQ" node="153zJclMo9a" resolve="p" />
                       </node>
                       <node concept="3TrEf2" id="153zJclNLpQ" role="2OqNvi">
-                        <ref role="3Tt5mk" to="v7ag:pTHqv6KODI" />
+                        <ref role="3Tt5mk" to="v7ag:pTHqv6KODI" resolve="portAdapter" />
                       </node>
                     </node>
                     <node concept="3TrEf2" id="153zJclNLpR" role="2OqNvi">
-                      <ref role="3Tt5mk" to="v7ag:71UKpntog8q" />
+                      <ref role="3Tt5mk" to="v7ag:71UKpntog8q" resolve="portAdater" />
                     </node>
                   </node>
                   <node concept="2Xjw5R" id="153zJclNLpS" role="2OqNvi">
@@ -323,7 +323,7 @@
                                     <ref role="3cqZAo" node="153zJclNWK_" resolve="it" />
                                   </node>
                                   <node concept="3TrEf2" id="153zJclNXDH" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTR" />
+                                    <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTR" resolve="component" />
                                   </node>
                                 </node>
                               </node>

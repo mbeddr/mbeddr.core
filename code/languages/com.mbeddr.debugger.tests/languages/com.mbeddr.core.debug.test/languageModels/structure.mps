@@ -5,6 +5,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -290,7 +291,7 @@
   <node concept="1TIwiD" id="5S3xvtirw9">
     <property role="3GE5qa" value="testcase" />
     <property role="TrG5h" value="DebuggerTestcase" />
-    <property role="34LRSv" value="test" />
+    <property role="34LRSv" value="debugger test" />
     <property role="EcuMT" value="105850086902839305" />
     <ref role="1TJDcQ" to="tp5g:hHlHkQ8" resolve="NodesTestMethod" />
     <node concept="1TJgyi" id="5S3xvtjRLp" role="1TKVEl">
@@ -581,7 +582,7 @@
   <node concept="1TIwiD" id="13C5RDf$Xkh">
     <property role="3GE5qa" value="watchables" />
     <property role="TrG5h" value="WatchablesDeclaration" />
-    <property role="34LRSv" value="specific watchables" />
+    <property role="34LRSv" value="watchables" />
     <property role="EcuMT" value="1218249513292256529" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4WY_RKGyy8M" role="1TKVEi">

@@ -635,7 +635,7 @@
   </node>
   <node concept="24kQdi" id="SwwM9UHwx6">
     <property role="3GE5qa" value="isr" />
-    <ref role="1XX52x" to="nbyu:SwwM9UHwwI" resolve="Isr" />
+    <ref role="1XX52x" to="nbyu:SwwM9UHwwI" resolve="ISR" />
     <node concept="3EZMnI" id="SwwM9UHwx7" role="2wV5jI">
       <node concept="3F0ifn" id="SwwM9UHwx8" role="3EZMnx">
         <property role="3F0ifm" value="ISR" />

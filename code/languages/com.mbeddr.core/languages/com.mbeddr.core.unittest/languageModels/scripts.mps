@@ -65,7 +65,7 @@
               <node concept="2OqwBi" id="4WTYg$PSM9d" role="2Oq$k0">
                 <node concept="_YI3z" id="4WTYg$PSM9c" role="2Oq$k0" />
                 <node concept="3TrEf2" id="4WTYg$PSM9h" role="2OqNvi">
-                  <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+                  <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
                 </node>
               </node>
               <node concept="zfrQC" id="4WTYg$PSM9m" role="2OqNvi">

@@ -218,7 +218,7 @@
               <node concept="2OqwBi" id="7ekR8t0jsLe" role="2Oq$k0">
                 <node concept="_YI3z" id="7ekR8t0jsIm" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="7ekR8t0jtg6" role="2OqNvi">
-                  <ref role="3TtcxE" to="talm:7ekR8t0bmac" />
+                  <ref role="3TtcxE" to="talm:7ekR8t0bmac" resolve="variableKinds" />
                 </node>
               </node>
               <node concept="TSZUe" id="7ekR8t0jvBJ" role="2OqNvi">

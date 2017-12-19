@@ -6,8 +6,8 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -642,11 +642,24 @@
             <node concept="3Tqbb2" id="7OHQ0Tp2MvI" role="1tU5fm">
               <ref role="ehGHo" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
             </node>
-            <node concept="NRdvd" id="5A94f9EtUFy" role="33vP2m">
-              <ref role="1Pybhc" to="d8ej:6ehuSNUoLrK" resolve="GenericNodesFindingUtils" />
-              <ref role="37wK5l" to="d8ej:7OHQ0Tp2Mtf" resolve="findAnalysisConfiguration" />
-              <node concept="37vLTw" id="2tzgwZjIlq8" role="37wK5m">
-                <ref role="3cqZAo" node="JsaLOcUcGn" resolve="model" />
+          </node>
+        </node>
+        <node concept="3kxDZ6" id="7mSH3Wn1Qix" role="3cqZAp">
+          <node concept="3clFbF" id="7mSH3Wn1QD2" role="3kxCCa">
+            <node concept="37vLTI" id="7mSH3Wn1R0K" role="3clFbG">
+              <node concept="2OqwBi" id="7mSH3Wn1VtI" role="37vLTx">
+                <node concept="2OqwBi" id="7mSH3Wn1Rm5" role="2Oq$k0">
+                  <node concept="37vLTw" id="7mSH3Wn1Rah" role="2Oq$k0">
+                    <ref role="3cqZAo" node="JsaLOcUcGn" resolve="model" />
+                  </node>
+                  <node concept="2RRcyG" id="7mSH3Wn1Ryr" role="2OqNvi">
+                    <ref role="2RRcyH" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="7mSH3Wn22Uq" role="2OqNvi" />
+              </node>
+              <node concept="37vLTw" id="7mSH3Wn1QD0" role="37vLTJ">
+                <ref role="3cqZAo" node="7OHQ0Tp2MvH" resolve="conf" />
               </node>
             </node>
           </node>
@@ -755,9 +768,7 @@
       </node>
       <node concept="37vLTG" id="JsaLOcUcGn" role="3clF46">
         <property role="TrG5h" value="model" />
-        <node concept="3uibUv" id="JsaLOcUcGo" role="1tU5fm">
-          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-        </node>
+        <node concept="H_c77" id="7mSH3Wn1Pyv" role="1tU5fm" />
       </node>
       <node concept="NWlO9" id="3hNQKr2z32W" role="lGtFl">
         <property role="NWlVz" value="Check an analysis configuration." />
@@ -1073,11 +1084,24 @@
             <node concept="3Tqbb2" id="1opdK91neV0" role="1tU5fm">
               <ref role="ehGHo" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
             </node>
-            <node concept="NRdvd" id="5A94f9Eu0Q6" role="33vP2m">
-              <ref role="1Pybhc" to="d8ej:6ehuSNUoLrK" resolve="GenericNodesFindingUtils" />
-              <ref role="37wK5l" to="d8ej:7OHQ0Tp2Mtf" resolve="findAnalysisConfiguration" />
-              <node concept="37vLTw" id="2tzgwZjIozd" role="37wK5m">
-                <ref role="3cqZAo" node="JsaLOcUgiy" resolve="model" />
+          </node>
+        </node>
+        <node concept="3kxDZ6" id="7mSH3Wn23BD" role="3cqZAp">
+          <node concept="3clFbF" id="7mSH3Wn23BE" role="3kxCCa">
+            <node concept="37vLTI" id="7mSH3Wn23BF" role="3clFbG">
+              <node concept="2OqwBi" id="7mSH3Wn23BG" role="37vLTx">
+                <node concept="2OqwBi" id="7mSH3Wn23BH" role="2Oq$k0">
+                  <node concept="37vLTw" id="7mSH3Wn23BI" role="2Oq$k0">
+                    <ref role="3cqZAo" node="JsaLOcUgiy" resolve="model" />
+                  </node>
+                  <node concept="2RRcyG" id="7mSH3Wn23BJ" role="2OqNvi">
+                    <ref role="2RRcyH" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="7mSH3Wn23BK" role="2OqNvi" />
+              </node>
+              <node concept="37vLTw" id="7mSH3Wn23BL" role="37vLTJ">
+                <ref role="3cqZAo" node="1opdK91neUZ" resolve="conf" />
               </node>
             </node>
           </node>
@@ -1196,9 +1220,7 @@
       </node>
       <node concept="37vLTG" id="JsaLOcUgiy" role="3clF46">
         <property role="TrG5h" value="model" />
-        <node concept="3uibUv" id="JsaLOcUgiz" role="1tU5fm">
-          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-        </node>
+        <node concept="H_c77" id="7mSH3Wn23V3" role="1tU5fm" />
       </node>
       <node concept="NWlO9" id="3hNQKr2z2KK" role="lGtFl">
         <property role="NWlVz" value="Facade to load the analysis results." />
@@ -2150,7 +2172,7 @@
             <node concept="3clFbS" id="5EwdfGVjjD7" role="9aQI4">
               <node concept="3clFbF" id="17FqOSBERe2" role="3cqZAp">
                 <node concept="2OqwBi" id="17FqOSBERdY" role="3clFbG">
-                  <node concept="10M0yZ" id="1ZJ5ED9gHpn" role="2Oq$k0">
+                  <node concept="10M0yZ" id="7HMmVgSgIVu" role="2Oq$k0">
                     <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                     <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                   </node>
@@ -2219,7 +2241,7 @@
                   </node>
                   <node concept="3clFbF" id="17FqOSBETfD" role="3cqZAp">
                     <node concept="2OqwBi" id="17FqOSBETr5" role="3clFbG">
-                      <node concept="10M0yZ" id="1ZJ5ED9gHqF" role="2Oq$k0">
+                      <node concept="10M0yZ" id="7HMmVgSgIWN" role="2Oq$k0">
                         <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                         <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                       </node>
@@ -2289,7 +2311,7 @@
                     <node concept="3clFbS" id="3y5ubmcu5Cy" role="3clFbx">
                       <node concept="3clFbF" id="3y5ubmcu9eT" role="3cqZAp">
                         <node concept="2OqwBi" id="3y5ubmcu9eU" role="3clFbG">
-                          <node concept="10M0yZ" id="1ZJ5ED9gHO1" role="2Oq$k0">
+                          <node concept="10M0yZ" id="7HMmVgSgJoV" role="2Oq$k0">
                             <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                             <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                           </node>
@@ -2323,7 +2345,7 @@
                   </node>
                   <node concept="3clFbF" id="3y5ubmcubPO" role="3cqZAp">
                     <node concept="2OqwBi" id="3y5ubmcubPK" role="3clFbG">
-                      <node concept="10M0yZ" id="1ZJ5ED9gHmR" role="2Oq$k0">
+                      <node concept="10M0yZ" id="7HMmVgSgJP3" role="2Oq$k0">
                         <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                         <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                       </node>
@@ -2336,7 +2358,7 @@
               </node>
               <node concept="3clFbF" id="17FqOSBEX0A" role="3cqZAp">
                 <node concept="2OqwBi" id="17FqOSBEX0B" role="3clFbG">
-                  <node concept="10M0yZ" id="1ZJ5ED9gHo3" role="2Oq$k0">
+                  <node concept="10M0yZ" id="7HMmVgSgJQg" role="2Oq$k0">
                     <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                     <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                   </node>

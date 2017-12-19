@@ -30,6 +30,7 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
@@ -38,6 +39,7 @@
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
       <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
         <child id="6386504476136472817" name="paths" index="2SbYGa" />
         <child id="8624890525767800998" name="sizeSpecs" index="3SH5Mq" />
@@ -166,6 +168,12 @@
             <property role="19SUeA" value="If there is an error indicated, use an intention to create the respective missing directory." />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="A7cYH" id="4PBxP34YM2u" role="A10yx">
+      <node concept="9PVaO" id="4PBxP34YM2v" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
   </node>

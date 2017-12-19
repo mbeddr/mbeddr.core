@@ -1311,6 +1311,7 @@
     <ref role="13h7C2" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     <node concept="13i0hz" id="4Lll81Ty9os" role="13h7CS">
       <property role="TrG5h" value="normalizeStructure" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="4Lll81Ty9ot" role="1B3o_S" />
       <node concept="3cqZAl" id="4Lll81Ty9ow" role="3clF45" />
       <node concept="3clFbS" id="4Lll81Ty9ov" role="3clF47">
@@ -1641,6 +1642,7 @@
     </node>
     <node concept="13i0hz" id="IKrxbBHaGP" role="13h7CS">
       <property role="TrG5h" value="isNormalized" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="IKrxbBHaGQ" role="1B3o_S" />
       <node concept="10P_77" id="IKrxbBHaGT" role="3clF45" />
       <node concept="3clFbS" id="IKrxbBHaGS" role="3clF47">
@@ -1811,6 +1813,7 @@
     </node>
     <node concept="13i0hz" id="3mI$71cQ6Aw" role="13h7CS">
       <property role="TrG5h" value="ensureNormalized" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="3mI$71cQbKV" role="1B3o_S" />
       <node concept="3clFbS" id="3mI$71cQ6Az" role="3clF47">
         <node concept="3clFbJ" id="3mI$71cQ6A_" role="3cqZAp">

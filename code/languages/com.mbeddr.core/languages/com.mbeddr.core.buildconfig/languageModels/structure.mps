@@ -2,6 +2,7 @@
 <model ref="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -116,6 +117,9 @@
     </node>
     <node concept="PrWs8" id="6FvlwAlLzOe" role="PzmwI">
       <ref role="PrY4T" to="68mc:51aJIRsy1$U" resolve="IPathVariableProvider" />
+    </node>
+    <node concept="PrWs8" id="59MAV0ygvy9" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:hoMN8ESh5l" resolve="ICannotLiveInDocModel" />
     </node>
   </node>
   <node concept="1TIwiD" id="6GqYvBOf2Xb">
@@ -327,6 +331,11 @@
     <property role="3GE5qa" value="platform" />
     <property role="EcuMT" value="5323740605968447022" />
     <ref role="1TJDcQ" node="4BxItZJ4BoF" resolve="Platform" />
+    <node concept="1TJgyi" id="71C71cTwLEc" role="1TKVEl">
+      <property role="IQ2nx" value="8099754798720686732" />
+      <property role="TrG5h" value="parallelProcesses" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="PrWs8" id="77mJsGsFMiE" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
@@ -612,6 +621,21 @@
     <node concept="1TJgyi" id="7FeXv2EtpOY" role="1TKVEl">
       <property role="IQ2nx" value="8849280731830394174" />
       <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6eRyKv6L44j">
+    <property role="EcuMT" value="7185364596008698131" />
+    <property role="TrG5h" value="ModelInfo" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6eRyKv6L44k" role="1TKVEl">
+      <property role="IQ2nx" value="7185364596008698132" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6eRyKv6P5qI" role="1TKVEl">
+      <property role="IQ2nx" value="7185364596009752238" />
+      <property role="TrG5h" value="outputLocation" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

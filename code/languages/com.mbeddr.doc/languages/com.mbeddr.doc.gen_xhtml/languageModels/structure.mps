@@ -2,6 +2,7 @@
 <model ref="r:25d6e7db-06a4-44ee-83aa-8c5bf17f3b3a(com.mbeddr.doc.gen_xhtml.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -56,7 +57,7 @@
     <property role="TrG5h" value="HTMLRenderer" />
     <property role="34LRSv" value="html" />
     <property role="EcuMT" value="3350625596580275037" />
-    <ref role="1TJDcQ" to="2c95:2TZO3DbvSLN" resolve="DocumentRenderer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzIqw10" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="cssSpec" />
@@ -67,6 +68,9 @@
       <property role="TrG5h" value="stylesheet" />
       <property role="IQ2nx" value="4457500422381329081" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3$$jtHg5LBL" role="PzmwI">
+      <ref role="PrY4T" to="2c95:2U5fsQei4zf" resolve="IDocConfigItem" />
     </node>
   </node>
   <node concept="1TIwiD" id="1T7O9iX4wD_">
@@ -213,6 +217,12 @@
       <property role="IQ2nx" value="988357225357050853" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="32cJsh9DNRl">
+    <property role="EcuMT" value="3498379661306969557" />
+    <property role="TrG5h" value="HTMLDummyRenderer" />
+    <property role="34LRSv" value="HTMLRenderer" />
+    <ref role="1TJDcQ" to="2c95:2TZO3DbvSLP" resolve="NullRenderer" />
   </node>
 </model>
 

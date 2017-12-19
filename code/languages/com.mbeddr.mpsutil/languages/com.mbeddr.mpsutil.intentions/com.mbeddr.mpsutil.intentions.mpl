@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="" namespace="com.mbeddr.mpsutil.intentions#5846558918537372607" uuid="d8b925c6-05d7-4247-8905-0d6d8767608f">
+    <generator namespace="com.mbeddr.mpsutil.intentions#4354378109086982941" uuid="d8b925c6-05d7-4247-8905-0d6d8767608f">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -44,7 +44,7 @@
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="b92f861d-0184-446d-b88b-6dcf0e070241(com.mbeddr.mpsutil.intentions)" version="0" />
-        <module reference="d8b925c6-05d7-4247-8905-0d6d8767608f(com.mbeddr.mpsutil.intentions#5846558918537372607)" version="0" />
+        <module reference="d8b925c6-05d7-4247-8905-0d6d8767608f(com.mbeddr.mpsutil.intentions#4354378109086982941)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67(jetbrains.mps.baseLanguage.lightweightdsl)" version="0" />
         <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
@@ -61,7 +61,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="before_or_together">
           <greater-priority-mapping>
-            <generator generatorUID="d8b925c6-05d7-4247-8905-0d6d8767608f(com.mbeddr.mpsutil.intentions#5846558918537372607)" />
+            <generator generatorUID="d8b925c6-05d7-4247-8905-0d6d8767608f(com.mbeddr.mpsutil.intentions#4354378109086982941)" />
             <external-mapping>
               <mapping-node modelUID="r:28cecf8e-387b-4a4b-858c-55dfa8f20d33(com.mbeddr.mpsutil.intentions.generator.template.main@generator)" nodeID="5846558918537372608" />
             </external-mapping>

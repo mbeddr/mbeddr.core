@@ -97,7 +97,7 @@
       <concept id="2551560715014439919" name="com.mbeddr.analyses.cbmc.structure.CPROVERasync1" flags="ng" index="2UbZks">
         <child id="2551560715014497608" name="statement" index="2UbLeV" />
       </concept>
-      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
       <concept id="4522637670643455480" name="com.mbeddr.analyses.cbmc.structure.CPROVERatomic" flags="ng" index="3wgRs7">
         <child id="4522637670643533264" name="section" index="3wgqsJ" />
       </concept>

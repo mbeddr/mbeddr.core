@@ -166,6 +166,9 @@
         <child id="7621529404689461538" name="inner" index="22saQY" />
       </concept>
       <concept id="7621529404689601115" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.PreIncrementExpression" flags="ng" index="22sGV7" />
+      <concept id="8850773520007259009" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.TEST_EnumWrapper" flags="ng" index="5CM0u">
+        <property id="8850773520007259153" name="enum1" index="5CMue" />
+      </concept>
       <concept id="1749127723000260978" name="com.mbeddr.mpsutil.grammarcells.sandboxlang.structure.Module" flags="ng" index="2cssWn">
         <child id="1749127723000260979" name="content" index="2cssWm" />
       </concept>
@@ -1991,6 +1994,68 @@
       <node concept="2TK7Tu" id="5AkACHrY8d3" role="3cqZAp">
         <property role="2TTd_B" value="[1" />
       </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3iPRerNKY6G">
+    <property role="TrG5h" value="EnumWrapper" />
+    <node concept="2cssWn" id="3iPRerNKY6H" role="LiRBU">
+      <property role="TrG5h" value="m" />
+      <node concept="2cssWt" id="3iPRerNKY6I" role="2cssWm">
+        <property role="TrG5h" value="f" />
+        <node concept="2cssWo" id="3iPRerNKY6J" role="2cssWr">
+          <node concept="1kHs8n" id="3iPRerNKY6K" role="2cssZA">
+            <property role="TrG5h" value="i" />
+            <node concept="2cvBGp" id="3iPRerNKY6L" role="1kHs7J" />
+            <node concept="yA7Z4" id="3iPRerNKY9e" role="1kHs8a">
+              <property role="yA7Zo" value="1" />
+              <node concept="LIFWc" id="3iPRerNKYaE" role="lGtFl">
+                <property role="ZRATv" value="true" />
+                <property role="OXtK3" value="true" />
+                <property role="p6zMq" value="1" />
+                <property role="p6zMs" value="1" />
+                <property role="LIFWd" value="property_value" />
+              </node>
+            </node>
+          </node>
+          <node concept="2cssZR" id="3iPRerNKY6U" role="2cssZA" />
+        </node>
+        <node concept="yzEQC" id="3iPRerNKY6V" role="yzEPe" />
+      </node>
+      <node concept="2cssZD" id="3iPRerNKY6W" role="2cssWm" />
+    </node>
+    <node concept="2cssWn" id="3iPRerNKY6X" role="LiZbd">
+      <property role="TrG5h" value="m" />
+      <node concept="2cssWt" id="3iPRerNKY6Y" role="2cssWm">
+        <property role="TrG5h" value="f" />
+        <node concept="2cssWo" id="3iPRerNKY6Z" role="2cssWr">
+          <node concept="1kHs8n" id="3iPRerNKY70" role="2cssZA">
+            <property role="TrG5h" value="i" />
+            <node concept="2cvBGp" id="3iPRerNKY71" role="1kHs7J" />
+            <node concept="ywmH7" id="3iPRerNKYcv" role="1kHs8a">
+              <node concept="ywmH7" id="3iPRerNKYcw" role="ywYUd">
+                <node concept="yA7Z4" id="3iPRerNKYcx" role="ywYUd">
+                  <property role="yA7Zo" value="1" />
+                </node>
+                <node concept="5CM0u" id="3iPRerNKYbU" role="ywYU2">
+                  <property role="5CMue" value="102" />
+                </node>
+              </node>
+              <node concept="5CM0u" id="3iPRerNKYc$" role="ywYU2">
+                <property role="5CMue" value="103" />
+              </node>
+            </node>
+          </node>
+          <node concept="2cssZR" id="3iPRerNKY77" role="2cssZA" />
+        </node>
+        <node concept="yzEQC" id="3iPRerNKY78" role="yzEPe" />
+      </node>
+      <node concept="2cssZD" id="3iPRerNKY79" role="2cssWm" />
+    </node>
+    <node concept="3clFbS" id="3iPRerNKY7a" role="LjaKd">
+      <node concept="2TK7Tu" id="3iPRerNKYeF" role="3cqZAp">
+        <property role="2TTd_B" value="+c+d" />
+      </node>
+      <node concept="3clFbH" id="3iPRerNKY7f" role="3cqZAp" />
     </node>
   </node>
 </model>

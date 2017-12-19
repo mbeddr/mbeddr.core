@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="" namespace="com.mbeddr.mpsutil.runconfiguration#1074143110309249536" uuid="256cd7af-2a1c-46c0-b544-845d10b7eab5">
+    <generator namespace="com.mbeddr.mpsutil.runconfiguration#4354378109086982952" uuid="256cd7af-2a1c-46c0-b544-845d10b7eab5">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -38,7 +38,7 @@
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="aa6a62c5-a61c-4ec5-94a7-61bc8b137d79(com.mbeddr.mpsutil.runconfiguration)" version="0" />
-        <module reference="256cd7af-2a1c-46c0-b544-845d10b7eab5(com.mbeddr.mpsutil.runconfiguration#1074143110309249536)" version="0" />
+        <module reference="256cd7af-2a1c-46c0-b544-845d10b7eab5(com.mbeddr.mpsutil.runconfiguration#4354378109086982952)" version="0" />
         <module reference="3df702fd-160b-4712-9dac-1f5e287fe3bb(jetbrains.mps.debugger.api.lang#1270798772176052788)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
@@ -47,7 +47,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="256cd7af-2a1c-46c0-b544-845d10b7eab5(com.mbeddr.mpsutil.runconfiguration#1074143110309249536)" />
+            <generator generatorUID="256cd7af-2a1c-46c0-b544-845d10b7eab5(com.mbeddr.mpsutil.runconfiguration#4354378109086982952)" />
             <external-mapping>
               <mapping-node modelUID="r:af01e13e-b26e-457f-9e0c-d36a1d545680(com.mbeddr.mpsutil.runconfiguration.generator.template.main@generator)" nodeID="1074143110309249537" />
             </external-mapping>

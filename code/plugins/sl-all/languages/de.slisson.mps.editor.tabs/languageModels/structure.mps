@@ -2,6 +2,7 @@
 <model ref="r:394f6642-a91e-4a8e-8653-0fa92d002563(de.slisson.mps.editor.tabs.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>

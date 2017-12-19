@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="" namespace="com.mbeddr.mpsutil.breadcrumb.editor#4317384196708997038" uuid="98fa6203-83d1-4103-a949-bdcb67b49503">
+    <generator namespace="com.mbeddr.mpsutil.breadcrumb.editor#4354378109086982953" uuid="98fa6203-83d1-4103-a949-bdcb67b49503">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -19,6 +19,7 @@
       <dependencies>
         <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
         <dependency reexport="false">fd28f7ed-d277-425b-a282-684ac4cbead6(com.mbeddr.mpsutil.breadcrumb.runtime)</dependency>
+        <dependency reexport="false">34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:53a2e8ff-4795-41ec-949d-d5c6bc4895de:com.mbeddr.mpsutil.breadcrumb.editor" version="0" />
@@ -47,13 +48,14 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="53a2e8ff-4795-41ec-949d-d5c6bc4895de(com.mbeddr.mpsutil.breadcrumb.editor)" version="0" />
-        <module reference="98fa6203-83d1-4103-a949-bdcb67b49503(com.mbeddr.mpsutil.breadcrumb.editor#4317384196708997038)" version="0" />
+        <module reference="98fa6203-83d1-4103-a949-bdcb67b49503(com.mbeddr.mpsutil.breadcrumb.editor#4354378109086982953)" version="0" />
         <module reference="fd28f7ed-d277-425b-a282-684ac4cbead6(com.mbeddr.mpsutil.breadcrumb.runtime)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />
         <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
         <module reference="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" version="0" />
         <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
+        <module reference="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" version="0" />
         <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="3ac18869-0828-4401-abad-822a47bf83f1(jetbrains.mps.lang.descriptor#9020561928507175817)" version="0" />
@@ -67,7 +69,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_together">
           <greater-priority-mapping>
-            <generator generatorUID="98fa6203-83d1-4103-a949-bdcb67b49503(com.mbeddr.mpsutil.breadcrumb.editor#4317384196708997038)" />
+            <generator generatorUID="98fa6203-83d1-4103-a949-bdcb67b49503(com.mbeddr.mpsutil.breadcrumb.editor#4354378109086982953)" />
             <external-mapping>
               <mapping-node modelUID="r:cd652b55-d477-4c92-91d5-e3d421d4f0fc(com.mbeddr.mpsutil.breadcrumb.editor.generator.template.main@generator)" nodeID="4317384196708997039" />
             </external-mapping>

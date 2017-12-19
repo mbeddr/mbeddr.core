@@ -169,9 +169,17 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -241,10 +249,14 @@
       <node concept="3cqZAl" id="6BowXlDxMWQ" role="3clF45" />
       <node concept="3Tm1VV" id="6BowXlDxMWR" role="1B3o_S" />
       <node concept="3clFbS" id="6BowXlDxMWS" role="3clF47">
-        <node concept="3clFbF" id="6BowXlDxMWT" role="3cqZAp">
-          <node concept="2YIFZM" id="6BowXlDxMWU" role="3clFbG">
-            <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-            <ref role="37wK5l" to="wyt6:~Thread.dumpStack():void" resolve="dumpStack" />
+        <node concept="1X3_iC" id="4UbVLfmYVZ5" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="6BowXlDxMWT" role="8Wnug">
+            <node concept="2YIFZM" id="6BowXlDxMWU" role="3clFbG">
+              <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
+              <ref role="37wK5l" to="wyt6:~Thread.dumpStack():void" resolve="dumpStack" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="6BowXlDxQ7U" role="3cqZAp">

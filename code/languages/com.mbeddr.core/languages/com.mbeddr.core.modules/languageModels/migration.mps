@@ -9,23 +9,23 @@
   <imports />
   <registry>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="6911370362349121511" name="jetbrains.mps.lang.smodel.structure.ConceptId" flags="ng" index="2x4n5u">
+      <concept id="6911370362349121511" name="jetbrains.mps.lang.smodel.structure.ConceptId" flags="nn" index="2x4n5u">
         <property id="6911370362349122519" name="conceptName" index="2x4mPI" />
         <property id="6911370362349121516" name="conceptId" index="2x4n5l" />
         <property id="6911370362349133804" name="isInterface" index="2x4o5l" />
         <child id="6911370362349121514" name="languageIdentity" index="2x4n5j" />
       </concept>
-      <concept id="8415841354032330476" name="jetbrains.mps.lang.smodel.structure.ReferenceId" flags="ng" index="HUanN">
+      <concept id="8415841354032330476" name="jetbrains.mps.lang.smodel.structure.ReferenceLinkId" flags="ng" index="HUanN">
         <property id="8415841354032330479" name="referenceName" index="HUanK" />
         <property id="8415841354032330478" name="referenceId" index="HUanL" />
         <child id="8415841354032330477" name="conceptIdentity" index="HUanM" />
       </concept>
-      <concept id="8415841354032330471" name="jetbrains.mps.lang.smodel.structure.LinkId" flags="ng" index="HUanS">
+      <concept id="8415841354032330471" name="jetbrains.mps.lang.smodel.structure.ContainmentLinkId" flags="ng" index="HUanS">
         <property id="8415841354032330474" name="linkName" index="HUanP" />
         <property id="8415841354032330473" name="linkId" index="HUanQ" />
         <child id="8415841354032330472" name="conceptIdentity" index="HUanR" />
       </concept>
-      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>

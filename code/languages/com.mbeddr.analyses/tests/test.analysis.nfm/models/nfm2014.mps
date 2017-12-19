@@ -105,7 +105,7 @@
         <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
         <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
       </concept>
-      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
@@ -273,7 +273,7 @@
         <child id="7392194941658581813" name="p" index="xqp4n" />
       </concept>
       <concept id="2609337213949315030" name="com.mbeddr.analyses.base.verification_conditions.structure.AfterQUntilRExistsP" flags="ng" index="GBzQ9" />
-      <concept id="2609337213949315048" name="com.mbeddr.analyses.base.verification_conditions.structure.BeforePExistsQ" flags="ng" index="GBzQR" />
+      <concept id="2609337213949315048" name="com.mbeddr.analyses.base.verification_conditions.structure.BeforeQExistsP" flags="ng" index="GBzQR" />
       <concept id="6876648630975719717" name="com.mbeddr.analyses.base.verification_conditions.structure.TernaryVerificationCondition" flags="ng" index="2L5iDr">
         <child id="6876648630975719722" name="r" index="2L5iDk" />
         <child id="6876648630975719720" name="q" index="2L5iDm" />

@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="com.mbeddr.mpsutil.refactoring#7518061998923596540" uuid="f47c72c0-b22e-4aef-a0e3-1bd67990c535">
+    <generator namespace="com.mbeddr.mpsutil.refactoring#4354378109086982944" uuid="f47c72c0-b22e-4aef-a0e3-1bd67990c535">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -57,7 +57,7 @@
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" version="0" />
         <module reference="1fc20ffe-f35b-4791-a0b7-d706bad5c49a(com.mbeddr.mpsutil.refactoring)" version="0" />
-        <module reference="f47c72c0-b22e-4aef-a0e3-1bd67990c535(com.mbeddr.mpsutil.refactoring#7518061998923596540)" version="0" />
+        <module reference="f47c72c0-b22e-4aef-a0e3-1bd67990c535(com.mbeddr.mpsutil.refactoring#4354378109086982944)" version="0" />
         <module reference="8f16104e-22e6-406d-8251-ef9688474557(com.mbeddr.mpsutil.refactoring.rt)" version="0" />
         <module reference="e1808c0b-7a09-4f46-9950-17a7f0b53c29(com.mbeddr.mpsutil.targetchooser)" version="0" />
         <module reference="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" version="0" />
@@ -76,7 +76,7 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
           <greater-priority-mapping>
-            <generator generatorUID="f47c72c0-b22e-4aef-a0e3-1bd67990c535(com.mbeddr.mpsutil.refactoring#7518061998923596540)" />
+            <generator generatorUID="f47c72c0-b22e-4aef-a0e3-1bd67990c535(com.mbeddr.mpsutil.refactoring#4354378109086982944)" />
             <external-mapping>
               <mapping-set>
                 <mapping-set-element>
