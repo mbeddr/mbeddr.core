@@ -1966,5 +1966,9 @@
     <property role="3GE5qa" value="documentation" />
     <property role="TrG5h" value="ICannotLiveInDocModel" />
   </node>
+  <node concept="PlHQZ" id="3x8oZgKbem1">
+    <property role="EcuMT" value="4055601364878550401" />
+    <property role="TrG5h" value="ISupportsLocalLanguage" />
+  </node>
 </model>
 

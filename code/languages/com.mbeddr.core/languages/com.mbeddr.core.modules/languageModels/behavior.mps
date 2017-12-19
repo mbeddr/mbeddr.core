@@ -11757,7 +11757,7 @@
                 <ref role="3cqZAo" node="7oI7FI6rWpY" resolve="t" />
               </node>
               <node concept="2qgKlT" id="1tHnH2eLCvS" role="2OqNvi">
-                <ref role="37wK5l" to="ywuz:1tHnH2eLwg4" resolve="furtherDependencies" />
+                <ref role="37wK5l" to="ywuz:1tHnH2eLwg4" resolve="dependentModuleContents" />
               </node>
             </node>
             <node concept="2es0OD" id="1tHnH2eLFXZ" role="2OqNvi">

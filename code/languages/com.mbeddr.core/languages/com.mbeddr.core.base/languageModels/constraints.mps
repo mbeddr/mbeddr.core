@@ -301,6 +301,21 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbJ" id="3x8oZgKbyH8" role="3cqZAp">
+            <node concept="3clFbS" id="3x8oZgKbyHa" role="3clFbx">
+              <node concept="3cpWs6" id="3x8oZgKb$8B" role="3cqZAp">
+                <node concept="3clFbT" id="3x8oZgKb$8Q" role="3cqZAk">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3x8oZgKbzjm" role="3clFbw">
+              <node concept="EsrRn" id="3x8oZgKbz07" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3x8oZgKbzP6" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:3x8oZgKaOZT" resolve="allowLocalLanguageSupport" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbJ" id="8q0nkX_fZM" role="3cqZAp">
             <node concept="3clFbS" id="8q0nkX_fZN" role="3clFbx">
               <node concept="3cpWs6" id="8q0nkX_fZO" role="3cqZAp">
