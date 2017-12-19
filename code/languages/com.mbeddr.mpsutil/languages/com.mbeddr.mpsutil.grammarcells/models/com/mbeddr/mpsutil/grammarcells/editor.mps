@@ -917,6 +917,22 @@
           </node>
           <node concept="2iRfu4" id="6ASs6LmXZ49" role="2iSdaV" />
         </node>
+        <node concept="3EZMnI" id="4AuGfbNQXlT" role="3EZMnx">
+          <node concept="3F0ifn" id="4AuGfbNQXlU" role="3EZMnx">
+            <property role="3F0ifm" value="inverted" />
+            <ref role="1k5W1q" to="tpc5:hF4H1c8" resolve="property" />
+          </node>
+          <node concept="3F0A7n" id="4AuGfbNSX5R" role="3EZMnx">
+            <ref role="1NtTu8" to="teg0:4AuGfbNSWr4" resolve="inverted" />
+          </node>
+          <node concept="VPM3Z" id="4AuGfbNQXlW" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="VPXOz" id="4AuGfbNQXlX" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="2iRfu4" id="4AuGfbNQXlY" role="2iSdaV" />
+        </node>
         <node concept="3EZMnI" id="qT5MFmsg5M" role="3EZMnx">
           <node concept="3F0ifn" id="qT5MFmsg5N" role="3EZMnx">
             <property role="3F0ifm" value="substitute condition" />
