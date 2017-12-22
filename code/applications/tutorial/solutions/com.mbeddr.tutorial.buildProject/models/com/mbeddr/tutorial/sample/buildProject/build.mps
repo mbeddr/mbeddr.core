@@ -197,25 +197,25 @@
       <property role="TrG5h" value="com.mbeddr.tutorial.sample.CProject" />
       <property role="3LESm3" value="2bd5059a-12b0-4f35-8cc0-1327110664f0" />
       <property role="2GAjPV" value="false" />
+      <node concept="3rtmxn" id="1lMVil75Qe2" role="3bR31x">
+        <node concept="3LXTmp" id="1lMVil75Qe3" role="3rtmxm">
+          <node concept="3qWCbU" id="1lMVil75Qe4" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="1lMVil75Qe5" role="3LXTmr">
+            <ref role="398BVh" node="5dchr4QkTfM" resolve="sample.project" />
+            <node concept="2Ry0Ak" id="1lMVil75Qe6" role="iGT6I">
+              <property role="2Ry0Am" value="com.mbeddr.tutorial.sample.CProject" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="398BVA" id="5dchr4QkTfY" role="3LF7KH">
         <ref role="398BVh" node="5dchr4QkTfM" resolve="sample.project" />
         <node concept="2Ry0Ak" id="5dchr4QkTg3" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.tutorial.sample.CProject" />
           <node concept="2Ry0Ak" id="5dchr4QkTg7" role="2Ry0An">
             <property role="2Ry0Am" value="com.mbeddr.tutorial.sample.CProject.msd" />
-          </node>
-        </node>
-      </node>
-      <node concept="3rtmxn" id="6vuuYkaWART" role="3bR31x">
-        <node concept="3LXTmp" id="6vuuYkaWARU" role="3rtmxm">
-          <node concept="3qWCbU" id="6vuuYkaWARV" role="3LXTna">
-            <property role="3qWCbO" value="icons/**, resources/**" />
-          </node>
-          <node concept="398BVA" id="6vuuYkaWARW" role="3LXTmr">
-            <ref role="398BVh" node="5dchr4QkTfM" resolve="sample.project" />
-            <node concept="2Ry0Ak" id="6vuuYkaWARX" role="iGT6I">
-              <property role="2Ry0Am" value="com.mbeddr.tutorial.sample.CProject" />
-            </node>
           </node>
         </node>
       </node>
