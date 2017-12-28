@@ -3218,23 +3218,24 @@
       <node concept="3Tm1VV" id="2Nt6procffD" role="1B3o_S" />
       <node concept="3clFbS" id="2Nt6procffE" role="3clF47">
         <node concept="XkiVB" id="2Nt6procffF" role="3cqZAp">
-          <ref role="37wK5l" to="xr52:~SModelTreeNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SModel,java.lang.String,boolean,org.jetbrains.mps.util.Condition,int)" resolve="SModelTreeNode" />
+          <ref role="37wK5l" to="xr52:~SModelTreeNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SModel,jetbrains.mps.ide.ui.tree.TreeNodeTextSource)" resolve="SModelTreeNode" />
           <node concept="37vLTw" id="2Nt6procffG" role="37wK5m">
             <ref role="3cqZAo" node="2Nt6procffL" resolve="modelDescriptor" />
           </node>
-          <node concept="37vLTw" id="2Nt6procffH" role="37wK5m">
-            <ref role="3cqZAo" node="2Nt6procffN" resolve="label" />
-          </node>
-          <node concept="37vLTw" id="2Nt6procgoM" role="37wK5m">
-            <ref role="3cqZAo" node="2Nt6procg4G" resolve="showLongName" />
-          </node>
-          <node concept="2ShNRf" id="6yXTMcUd_VF" role="37wK5m">
-            <node concept="HV5vD" id="6yXTMcUdA$k" role="2ShVmc">
-              <ref role="HV5vE" node="6yXTMcUde6W" resolve="InvalidSNodeCondition" />
+          <node concept="3K4zz7" id="4cZcoof1uhE" role="37wK5m">
+            <node concept="2ShNRf" id="4cZcoof1uU8" role="3K4E3e">
+              <node concept="HV5vD" id="4cZcoof1Lrx" role="2ShVmc">
+                <ref role="HV5vE" to="xr52:~SModelTreeNode$LongModelNameText" resolve="SModelTreeNode.LongModelNameText" />
+              </node>
             </node>
-          </node>
-          <node concept="37vLTw" id="2Nt6procffK" role="37wK5m">
-            <ref role="3cqZAo" node="2Nt6procffS" resolve="countNamePart" />
+            <node concept="2ShNRf" id="4cZcoof1N2p" role="3K4GZi">
+              <node concept="HV5vD" id="4cZcoof1Sl$" role="2ShVmc">
+                <ref role="HV5vE" to="xr52:~SModelTreeNode$ShortModelNameText" resolve="SModelTreeNode.ShortModelNameText" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2Nt6procgoM" role="3K4Cdx">
+              <ref role="3cqZAo" node="2Nt6procg4G" resolve="showLongName" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="6yXTMcUd_JU" role="3cqZAp">
@@ -3255,7 +3256,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2Nt6procffN" role="3clF46">
-        <property role="TrG5h" value="label" />
+        <property role="TrG5h" value="label_UNUSED" />
         <node concept="17QB3L" id="2Nt6procffO" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="2Nt6procg4G" role="3clF46">
@@ -3269,7 +3270,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2Nt6procffS" role="3clF46">
-        <property role="TrG5h" value="countNamePart" />
+        <property role="TrG5h" value="countNamePart_UNUSED" />
         <node concept="10Oyi0" id="2Nt6procffT" role="1tU5fm" />
       </node>
     </node>
@@ -3593,7 +3594,7 @@
                           <ref role="37wK5l" to="7e8u:~MPSTreeNode.getTree():jetbrains.mps.ide.ui.tree.MPSTree" resolve="getTree" />
                         </node>
                         <node concept="liA8E" id="6yXTMcUetc9" role="2OqNvi">
-                          <ref role="37wK5l" to="dxuu:~JTree.getModel():javax.swing.tree.TreeModel" resolve="getModel" />
+                          <ref role="37wK5l" to="7e8u:~MPSTree.getModel():javax.swing.tree.DefaultTreeModel" resolve="getModel" />
                         </node>
                       </node>
                       <node concept="3uibUv" id="6yXTMcUetca" role="10QFUM">
@@ -3857,7 +3858,7 @@
                       <ref role="37wK5l" to="7e8u:~MPSTreeNode.getTree():jetbrains.mps.ide.ui.tree.MPSTree" resolve="getTree" />
                     </node>
                     <node concept="liA8E" id="6yXTMcUetdL" role="2OqNvi">
-                      <ref role="37wK5l" to="dxuu:~JTree.getModel():javax.swing.tree.TreeModel" resolve="getModel" />
+                      <ref role="37wK5l" to="7e8u:~MPSTree.getModel():javax.swing.tree.DefaultTreeModel" resolve="getModel" />
                     </node>
                   </node>
                   <node concept="3uibUv" id="6yXTMcUetdM" role="10QFUM">
