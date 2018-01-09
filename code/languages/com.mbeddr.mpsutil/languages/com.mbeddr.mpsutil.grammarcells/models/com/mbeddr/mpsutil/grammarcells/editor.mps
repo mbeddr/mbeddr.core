@@ -2,7 +2,7 @@
 <model ref="r:34838764-df6d-423e-8a2f-80a26962ac8c(com.mbeddr.mpsutil.grammarcells.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2368,6 +2368,16 @@
     </node>
     <node concept="3ft5Ry" id="3iPRerNa4AW" role="3ft7WO">
       <ref role="4PJHt" to="teg0:6oKG1kMxv_T" resolve="FlagCell" />
+    </node>
+  </node>
+  <node concept="3p309x" id="7Pt6c$zz$Tp">
+    <property role="3GE5qa" value="cells" />
+    <property role="TrG5h" value="SplittableCell" />
+    <node concept="2kknPJ" id="7Pt6c$zz$Tr" role="1IG6uw">
+      <ref role="2ZyFGn" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+    </node>
+    <node concept="3ft5Ry" id="7Pt6c$zz$Tx" role="3ft7WO">
+      <ref role="4PJHt" to="teg0:3pFNVizDvwD" resolve="SplittableCell" />
     </node>
   </node>
 </model>
