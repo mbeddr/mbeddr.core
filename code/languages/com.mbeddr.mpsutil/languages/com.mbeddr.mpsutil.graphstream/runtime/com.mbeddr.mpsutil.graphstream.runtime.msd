@@ -10,6 +10,7 @@
       <sourceRoot location="jgraphx-3.7.4.jar" />
       <sourceRoot location="abego-treelayout-1.0.3.jar" />
       <sourceRoot location="de.itemis.graphing.jar" />
+      <sourceRoot location="scala-2.10.1.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
@@ -18,6 +19,7 @@
     <stubModelEntry path="${module}/lib/gs-core-1.3.jar" />
     <stubModelEntry path="${module}/lib/gs-ui-1.3.jar" />
     <stubModelEntry path="${module}/lib/jgraphx-3.7.4.jar" />
+    <stubModelEntry path="${module}/lib/scala-2.10.1.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
