@@ -7496,28 +7496,6 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5BXRi0X3F6M" role="3bR37C">
-          <node concept="1BurEX" id="5BXRi0X3F6N" role="1SiIV1">
-            <node concept="398BVA" id="5BXRi0X3F6z" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="5BXRi0X3F6$" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5BXRi0X3F6_" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.graphstream" />
-                  <node concept="2Ry0Ak" id="5BXRi0X3F6A" role="2Ry0An">
-                    <property role="2Ry0Am" value="runtime" />
-                    <node concept="2Ry0Ak" id="5BXRi0X3F6B" role="2Ry0An">
-                      <property role="2Ry0Am" value="lib" />
-                      <node concept="2Ry0Ak" id="5BXRi0X3F6C" role="2Ry0An">
-                        <property role="2Ry0Am" value="gs-algo-1.3.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="5BXRi0X3F73" role="3bR37C">
           <node concept="1BurEX" id="5BXRi0X3F74" role="1SiIV1">
             <node concept="398BVA" id="5BXRi0X3F6O" role="1BurEY">
@@ -7620,6 +7598,28 @@
                       <property role="2Ry0Am" value="lib" />
                       <node concept="2Ry0Ak" id="3OWFeKp4n84" role="2Ry0An">
                         <property role="2Ry0Am" value="de.itemis.graphing.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3$HhLEexMl_" role="3bR37C">
+          <node concept="1BurEX" id="3$HhLEexMlA" role="1SiIV1">
+            <node concept="398BVA" id="3$HhLEexMlm" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3$HhLEexMln" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3$HhLEexMlo" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.graphstream" />
+                  <node concept="2Ry0Ak" id="3$HhLEexMlp" role="2Ry0An">
+                    <property role="2Ry0Am" value="runtime" />
+                    <node concept="2Ry0Ak" id="3$HhLEexMlq" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                      <node concept="2Ry0Ak" id="3$HhLEexMlr" role="2Ry0An">
+                        <property role="2Ry0Am" value="scala-2.10.1.jar" />
                       </node>
                     </node>
                   </node>
