@@ -2386,5 +2386,15 @@
       <ref role="4PJHt" to="teg0:6oKG1kMxv_T" resolve="FlagCell" />
     </node>
   </node>
+  <node concept="3p309x" id="7Pt6c$zz$Tp">
+    <property role="3GE5qa" value="cells" />
+    <property role="TrG5h" value="SplittableCell" />
+    <node concept="2kknPJ" id="7Pt6c$zz$Tr" role="1IG6uw">
+      <ref role="2ZyFGn" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+    </node>
+    <node concept="3ft5Ry" id="7Pt6c$zz$Tx" role="3ft7WO">
+      <ref role="4PJHt" to="teg0:3pFNVizDvwD" resolve="SplittableCell" />
+    </node>
+  </node>
 </model>
 
