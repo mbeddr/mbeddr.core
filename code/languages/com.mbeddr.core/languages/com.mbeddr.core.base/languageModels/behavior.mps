@@ -448,6 +448,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -4169,7 +4170,7 @@
       <node concept="3clFbS" id="6clJcrJXo2D" role="3clF47">
         <node concept="3clFbF" id="jS_CvxMlS8" role="3cqZAp">
           <node concept="BsUDl" id="jS_CvxMlS7" role="3clFbG">
-            <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfType" />
+            <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
             <node concept="2OqwBi" id="jS_CvxMm4P" role="37wK5m">
               <node concept="37vLTw" id="jS_CvxMlTf" role="2Oq$k0">
                 <ref role="3cqZAo" node="6clJcrJXo2A" resolve="targetConcept" />
@@ -4187,8 +4188,8 @@
           <node concept="TZ5HA" id="79$zShlSQKl" role="3HnX3l" />
         </node>
         <node concept="VUp57" id="jS_CvxLmb8" role="3nqlJM">
-          <node concept="VXe0Z" id="jS_CvxLy_0" role="VUp5m">
-            <ref role="VXe0S" node="3g6LnlWuSo8" resolve="visibleContentsOfType" />
+          <node concept="VXe0Z" id="jS_CvxQdPS" role="VUp5m">
+            <ref role="VXe0S" node="79$zShlSHxZ" resolve="visibleContentsOfType" />
           </node>
         </node>
         <node concept="TZ5HA" id="79$zShlSQUO" role="TZ5H$">
@@ -4216,11 +4217,6 @@
             <property role="1dT_AB" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="jS_CvxNw3q" role="TZ5H$">
-          <node concept="1dT_AC" id="jS_CvxNw3r" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
-          </node>
-        </node>
         <node concept="TZ5HA" id="jS_CvxNw3E" role="TZ5H$">
           <node concept="1dT_AC" id="jS_CvxNw3F" role="1dT_Ay">
             <property role="1dT_AB" value="@Deprecated" />
@@ -4236,7 +4232,7 @@
         </node>
         <node concept="TZ5HA" id="jS_CvxOvYJ" role="TZ5H$">
           <node concept="1dT_AC" id="jS_CvxOvYK" role="1dT_Ay">
-            <property role="1dT_AB" value="  visibleContentsOfType(targetConcept.asConcept); " />
+            <property role="1dT_AB" value="  visibleContentsOfTypeAsSequence(targetConcept.asConcept); " />
           </node>
         </node>
         <node concept="TZ5HA" id="jS_CvxOw0_" role="TZ5H$">
@@ -4271,7 +4267,7 @@
     </node>
     <node concept="13i0hz" id="79$zShlSHxZ" role="13h7CS">
       <property role="TrG5h" value="visibleContentsOfType" />
-      <property role="13i0it" value="false" />
+      <property role="13i0it" value="true" />
       <property role="13i0iv" value="false" />
       <node concept="37vLTG" id="79$zShlSHy0" role="3clF46">
         <property role="TrG5h" value="targetConcept" />
@@ -4284,16 +4280,19 @@
             <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
             <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
             <node concept="BsUDl" id="79$zShlSNxj" role="37wK5m">
-              <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfType" />
-              <node concept="37vLTw" id="79$zShlSO$h" role="37wK5m">
-                <ref role="3cqZAo" node="79$zShlSHy0" resolve="targetConcept" />
+              <ref role="37wK5l" node="6clJcrJXo2_" resolve="visibleContentsOfType" />
+              <node concept="2OqwBi" id="jS_CvxQAq1" role="37wK5m">
+                <node concept="37vLTw" id="79$zShlSO$h" role="2Oq$k0">
+                  <ref role="3cqZAo" node="79$zShlSHy0" resolve="targetConcept" />
+                </node>
+                <node concept="FGMqu" id="jS_CvxQARU" role="2OqNvi" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="3uibUv" id="3jEbQoczdtt" role="3clF45">
-        <ref role="3uigEE" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+      <node concept="3uibUv" id="jS_CvxQ7xv" role="3clF45">
+        <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
       </node>
     </node>
     <node concept="13i0hz" id="7Vd878lThb_" role="13h7CS">
@@ -4356,7 +4355,7 @@
         <node concept="3clFbF" id="jS_CvxKV1f" role="3cqZAp">
           <node concept="2OqwBi" id="jS_CvxKV1g" role="3clFbG">
             <node concept="BsUDl" id="jS_CvxKV1h" role="2Oq$k0">
-              <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfType" />
+              <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
               <node concept="37vLTw" id="jS_CvxKV1i" role="37wK5m">
                 <ref role="3cqZAo" node="jS_CvxKV1b" resolve="targetConcept" />
               </node>
@@ -4440,7 +4439,7 @@
           <node concept="2OqwBi" id="jS_CvxKV46" role="3clFbG">
             <node concept="2OqwBi" id="jS_CvxKV47" role="2Oq$k0">
               <node concept="BsUDl" id="jS_CvxKV48" role="2Oq$k0">
-                <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfType" />
+                <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
                 <node concept="37vLTw" id="jS_CvxKV49" role="37wK5m">
                   <ref role="3cqZAo" node="jS_CvxKV3Y" resolve="targetConcept" />
                 </node>
@@ -4482,8 +4481,8 @@
     </node>
     <node concept="13i0hz" id="3g6LnlWuSo8" role="13h7CS">
       <property role="13i0iv" value="false" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="visibleContentsOfType" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="visibleContentsOfTypeAsSequence" />
       <node concept="37vLTG" id="3g6LnlWuV_C" role="3clF46">
         <property role="TrG5h" value="targetConcept" />
         <node concept="3bZ5Sz" id="3g6LnlWuV_D" role="1tU5fm" />
@@ -4502,7 +4501,7 @@
               </node>
             </node>
             <node concept="liA8E" id="3g6LnlWuVW$" role="2OqNvi">
-              <ref role="37wK5l" to="o8zo:4IP40Bi3eCU" resolve="getAvailableElements" />
+              <ref role="37wK5l" to="o8zo:3fifI_xCtP7" resolve="getAvailableElements" />
               <node concept="10Nm6u" id="3g6LnlWuVY_" role="37wK5m" />
             </node>
           </node>
