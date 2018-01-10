@@ -23,7 +23,6 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="xyqd" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="h5a6" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.j2dviewer(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="tdww" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm.impl(MPS.IDEA/)" />
     <import index="n5wa" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="upej" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="5svn" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model(com.mbeddr.mpsutil.graphstream.runtime/)" />
@@ -942,34 +941,34 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="5an5Z4m36Z4" role="3cqZAp">
-              <node concept="37vLTI" id="5an5Z4m36Z5" role="3clFbG">
-                <node concept="2YIFZM" id="5an5Z4m3a3y" role="37vLTx">
-                  <ref role="37wK5l" node="3v1N7lL_C$q" resolve="getDefaultGraphstreamViewManager" />
+            <node concept="3clFbF" id="4gnhEDihs_L" role="3cqZAp">
+              <node concept="37vLTI" id="4gnhEDihs_M" role="3clFbG">
+                <node concept="2YIFZM" id="4gnhEDihs_O" role="37vLTx">
+                  <ref role="37wK5l" node="64_1OWe$XBJ" resolve="getDefaultGraphstreamViewManager" />
                   <ref role="1Pybhc" node="64_1OWe$WQQ" resolve="ViewHelper" />
-                  <node concept="37vLTw" id="5an5Z4m3a3z" role="37wK5m">
+                  <node concept="37vLTw" id="50Rn4r1GnuC" role="37wK5m">
                     <ref role="3cqZAo" node="50Rn4r1GlT$" resolve="graph" />
                   </node>
-                  <node concept="2ShNRf" id="5an5Z4m3a3$" role="37wK5m">
-                    <node concept="1pGfFk" id="5an5Z4m3a3_" role="2ShVmc">
+                  <node concept="2ShNRf" id="4gnhEDihs_Q" role="37wK5m">
+                    <node concept="1pGfFk" id="4gnhEDihs_R" role="2ShVmc">
                       <ref role="37wK5l" to="fblp:~StaticLayout.&lt;init&gt;(de.itemis.graphing.model.Graph,de.itemis.graphing.layout.ILayout)" resolve="StaticLayout" />
-                      <node concept="37vLTw" id="5an5Z4m3a3A" role="37wK5m">
+                      <node concept="37vLTw" id="50Rn4r1GnDz" role="37wK5m">
                         <ref role="3cqZAo" node="50Rn4r1GlT$" resolve="graph" />
                       </node>
-                      <node concept="2OqwBi" id="5an5Z4m3a3B" role="37wK5m">
-                        <node concept="37vLTw" id="5an5Z4m3a3C" role="2Oq$k0">
+                      <node concept="2OqwBi" id="50Rn4r1G_4R" role="37wK5m">
+                        <node concept="37vLTw" id="50Rn4r1H44M" role="2Oq$k0">
                           <ref role="3cqZAo" node="50Rn4r1H1tN" resolve="gi" />
                         </node>
-                        <node concept="liA8E" id="5an5Z4m3a3D" role="2OqNvi">
+                        <node concept="liA8E" id="50Rn4r1G_lF" role="2OqNvi">
                           <ref role="37wK5l" node="50Rn4r1HbzV" resolve="getLayout" />
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="2OqwBi" id="5an5Z4m36Ze" role="37vLTJ">
-                  <node concept="2WthIp" id="5an5Z4m36Zf" role="2Oq$k0" />
-                  <node concept="2BZ7hE" id="5an5Z4m36Zg" role="2OqNvi">
+                <node concept="2OqwBi" id="50Rn4r1G8Zw" role="37vLTJ">
+                  <node concept="2WthIp" id="50Rn4r1G8Zx" role="2Oq$k0" />
+                  <node concept="2BZ7hE" id="50Rn4r1G8Zy" role="2OqNvi">
                     <ref role="2WH_rO" node="4JBT2R9Uvdi" resolve="viewManager" />
                   </node>
                 </node>
@@ -1965,84 +1964,84 @@
       <node concept="3Tm1VV" id="4IojDAdiT2g" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="64_1OWeAq15" role="jymVt" />
-    <node concept="2YIFZL" id="3v1N7lL_C$q" role="jymVt">
+    <node concept="2YIFZL" id="64_1OWe$XBJ" role="jymVt">
       <property role="TrG5h" value="getDefaultGraphstreamViewManager" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="3v1N7lL_C$r" role="3clF47">
-        <node concept="3cpWs8" id="3v1N7lL_C$s" role="3cqZAp">
-          <node concept="3cpWsn" id="3v1N7lL_C$t" role="3cpWs9">
+      <node concept="3clFbS" id="64_1OWe$XBM" role="3clF47">
+        <node concept="3cpWs8" id="3bGF07wUqP" role="3cqZAp">
+          <node concept="3cpWsn" id="3bGF07wUqQ" role="3cpWs9">
             <property role="TrG5h" value="viewManager" />
-            <node concept="3uibUv" id="3v1N7lL_C$u" role="1tU5fm">
+            <node concept="3uibUv" id="3bGF07wUqR" role="1tU5fm">
               <ref role="3uigEE" to="uc57:~GraphstreamViewManager" resolve="GraphstreamViewManager" />
             </node>
-            <node concept="2ShNRf" id="3v1N7lL_C$v" role="33vP2m">
-              <node concept="1pGfFk" id="3v1N7lL_C$w" role="2ShVmc">
+            <node concept="2ShNRf" id="3bGF07wUqS" role="33vP2m">
+              <node concept="1pGfFk" id="3bGF07wUqT" role="2ShVmc">
                 <ref role="37wK5l" to="uc57:~GraphstreamViewManager.&lt;init&gt;(de.itemis.graphing.model.Graph)" resolve="GraphstreamViewManager" />
-                <node concept="37vLTw" id="3v1N7lL_C$x" role="37wK5m">
-                  <ref role="3cqZAo" node="3v1N7lL_C_5" resolve="graph" />
+                <node concept="37vLTw" id="3bGF07wUqU" role="37wK5m">
+                  <ref role="3cqZAo" node="64_1OWe$XUc" resolve="graph" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3v1N7lL_C$U" role="3cqZAp">
-          <node concept="2OqwBi" id="3v1N7lL_C$V" role="3clFbG">
-            <node concept="37vLTw" id="3v1N7lL_C$W" role="2Oq$k0">
-              <ref role="3cqZAo" node="3v1N7lL_C$t" resolve="viewManager" />
+        <node concept="3clFbF" id="3bGF07wUqV" role="3cqZAp">
+          <node concept="2OqwBi" id="3bGF07wUqW" role="3clFbG">
+            <node concept="37vLTw" id="3bGF07wUqX" role="2Oq$k0">
+              <ref role="3cqZAo" node="3bGF07wUqQ" resolve="viewManager" />
             </node>
-            <node concept="liA8E" id="3v1N7lL_C$X" role="2OqNvi">
+            <node concept="liA8E" id="3bGF07wUqY" role="2OqNvi">
               <ref role="37wK5l" to="uc57:~GraphstreamViewManager.configure(org.graphstream.ui.layout.Layout):void" resolve="configure" />
-              <node concept="37vLTw" id="3v1N7lL_C$Y" role="37wK5m">
-                <ref role="3cqZAo" node="3v1N7lL_C_7" resolve="layout" />
+              <node concept="37vLTw" id="3bGF07wUqZ" role="37wK5m">
+                <ref role="3cqZAo" node="64_1OWe_7SN" resolve="layout" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="3v1N7lL_C_1" role="3cqZAp">
-          <node concept="37vLTw" id="3v1N7lL_C_2" role="3cqZAk">
-            <ref role="3cqZAo" node="3v1N7lL_C$t" resolve="viewManager" />
+        <node concept="3cpWs6" id="3bGF07wUr0" role="3cqZAp">
+          <node concept="37vLTw" id="3bGF07wUr1" role="3cqZAk">
+            <ref role="3cqZAo" node="3bGF07wUqQ" resolve="viewManager" />
           </node>
         </node>
       </node>
-      <node concept="3Tm1VV" id="3v1N7lL_C_3" role="1B3o_S" />
-      <node concept="3uibUv" id="3v1N7lL_C_4" role="3clF45">
+      <node concept="3Tm1VV" id="64_1OWe$WXs" role="1B3o_S" />
+      <node concept="3uibUv" id="16YVkUU6bOq" role="3clF45">
         <ref role="3uigEE" to="upej:~IViewManager" resolve="IViewManager" />
       </node>
-      <node concept="37vLTG" id="3v1N7lL_C_5" role="3clF46">
+      <node concept="37vLTG" id="64_1OWe$XUc" role="3clF46">
         <property role="TrG5h" value="graph" />
-        <node concept="3uibUv" id="3v1N7lL_C_6" role="1tU5fm">
+        <node concept="3uibUv" id="16YVkUU6bff" role="1tU5fm">
           <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
         </node>
       </node>
-      <node concept="37vLTG" id="3v1N7lL_C_7" role="3clF46">
+      <node concept="37vLTG" id="64_1OWe_7SN" role="3clF46">
         <property role="TrG5h" value="layout" />
-        <node concept="3uibUv" id="3v1N7lL_C_8" role="1tU5fm">
+        <node concept="3uibUv" id="64_1OWe_9mQ" role="1tU5fm">
           <ref role="3uigEE" to="n5wa:~Layout" resolve="Layout" />
         </node>
       </node>
-      <node concept="P$JXv" id="3v1N7lL_C_9" role="lGtFl">
-        <node concept="TZ5HA" id="3v1N7lL_C_a" role="TZ5H$">
-          <node concept="1dT_AC" id="3v1N7lL_C_b" role="1dT_Ay">
+      <node concept="P$JXv" id="64_1OWeAq9q" role="lGtFl">
+        <node concept="TZ5HA" id="64_1OWeAq9r" role="TZ5H$">
+          <node concept="1dT_AC" id="64_1OWeAq9s" role="1dT_Ay">
             <property role="1dT_AB" value="Returns the configured GraphstreamViewManager using the DefaultView of Graphstream." />
           </node>
         </node>
-        <node concept="TUZQ0" id="3v1N7lL_C_c" role="3nqlJM">
+        <node concept="TUZQ0" id="64_1OWeAq9t" role="3nqlJM">
           <property role="TUZQ4" value="               : mandatory, the abstract graph (vertices and edges)" />
-          <node concept="zr_55" id="3v1N7lL_C_d" role="zr_5Q">
-            <ref role="zr_51" node="3v1N7lL_C_5" resolve="graph" />
+          <node concept="zr_55" id="64_1OWeAq9v" role="zr_5Q">
+            <ref role="zr_51" node="64_1OWe$XUc" resolve="graph" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3v1N7lL_C_e" role="3nqlJM">
+        <node concept="TUZQ0" id="64_1OWeAq9w" role="3nqlJM">
           <property role="TUZQ4" value="              : optional, Graphstreams default layout is used if null" />
-          <node concept="zr_55" id="3v1N7lL_C_f" role="zr_5Q">
-            <ref role="zr_51" node="3v1N7lL_C_7" resolve="layout" />
+          <node concept="zr_55" id="64_1OWeAq9y" role="zr_5Q">
+            <ref role="zr_51" node="64_1OWe_7SN" resolve="layout" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="3v1N7lL_Cz0" role="jymVt" />
+    <node concept="2tJIrI" id="3v1N7lL_CxB" role="jymVt" />
     <node concept="3Tm1VV" id="64_1OWe$WQR" role="1B3o_S" />
   </node>
   <node concept="sE7Ow" id="4iv9KfRBKWH">
