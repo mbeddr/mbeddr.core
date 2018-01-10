@@ -23,7 +23,6 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="xyqd" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="h5a6" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.j2dviewer(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="tdww" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm.impl(MPS.IDEA/)" />
     <import index="n5wa" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="upej" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="5svn" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model(com.mbeddr.mpsutil.graphstream.runtime/)" />
@@ -153,10 +152,6 @@
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
-      <concept id="1173175405605" name="jetbrains.mps.baseLanguage.structure.ArrayAccessExpression" flags="nn" index="AH0OO">
-        <child id="1173175577737" name="index" index="AHEQo" />
-        <child id="1173175590490" name="array" index="AHHXb" />
-      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -164,11 +159,6 @@
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
-      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
-        <child id="1153952416686" name="body" index="2GV8ay" />
-        <child id="1153952429843" name="finallyBody" index="2GVbov" />
-        <child id="1164903700860" name="catchClause" index="TEXxN" />
-      </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
@@ -193,10 +183,6 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
-      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
-        <child id="1164903359218" name="catchBody" index="TDEfX" />
-        <child id="1164903359217" name="throwable" index="TDEfY" />
-      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -204,13 +190,9 @@
         <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
         <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
-      <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
-        <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
@@ -229,10 +211,6 @@
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
-      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
-      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
-        <child id="1070534760952" name="componentType" index="10Q1$1" />
-      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -315,10 +293,8 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1073063089578" name="jetbrains.mps.baseLanguage.structure.SuperMethodCall" flags="nn" index="3nyPlj" />
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
-        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
@@ -336,7 +312,6 @@
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1214918975462" name="jetbrains.mps.baseLanguage.structure.PostfixDecrementExpression" flags="nn" index="3uO5VW" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -353,23 +328,10 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
-      <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
-        <reference id="1170346070688" name="classifier" index="1Y3XeK" />
-      </concept>
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -982,7 +944,7 @@
             <node concept="3clFbF" id="4gnhEDihs_L" role="3cqZAp">
               <node concept="37vLTI" id="4gnhEDihs_M" role="3clFbG">
                 <node concept="2YIFZM" id="4gnhEDihs_O" role="37vLTx">
-                  <ref role="37wK5l" node="64_1OWe$XBJ" resolve="getConfiguredGraphstreamViewManagerForMPS" />
+                  <ref role="37wK5l" node="64_1OWe$XBJ" resolve="getDefaultGraphstreamViewManager" />
                   <ref role="1Pybhc" node="64_1OWe$WQQ" resolve="ViewHelper" />
                   <node concept="37vLTw" id="50Rn4r1GnuC" role="37wK5m">
                     <ref role="3cqZAo" node="50Rn4r1GlT$" resolve="graph" />
@@ -2003,114 +1965,43 @@
     </node>
     <node concept="2tJIrI" id="64_1OWeAq15" role="jymVt" />
     <node concept="2YIFZL" id="64_1OWe$XBJ" role="jymVt">
-      <property role="TrG5h" value="getConfiguredGraphstreamViewManagerForMPS" />
+      <property role="TrG5h" value="getDefaultGraphstreamViewManager" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="64_1OWe$XBM" role="3clF47">
-        <node concept="3cpWs8" id="LKp7m2Rf2Y" role="3cqZAp">
-          <node concept="3cpWsn" id="LKp7m2Rf2Z" role="3cpWs9">
+        <node concept="3cpWs8" id="3bGF07wUqP" role="3cqZAp">
+          <node concept="3cpWsn" id="3bGF07wUqQ" role="3cpWs9">
             <property role="TrG5h" value="viewManager" />
-            <node concept="3uibUv" id="16YVkUU6dyw" role="1tU5fm">
+            <node concept="3uibUv" id="3bGF07wUqR" role="1tU5fm">
               <ref role="3uigEE" to="uc57:~GraphstreamViewManager" resolve="GraphstreamViewManager" />
             </node>
-            <node concept="2ShNRf" id="LKp7m2RfcW" role="33vP2m">
-              <node concept="1pGfFk" id="LKp7m2RCFO" role="2ShVmc">
+            <node concept="2ShNRf" id="3bGF07wUqS" role="33vP2m">
+              <node concept="1pGfFk" id="3bGF07wUqT" role="2ShVmc">
                 <ref role="37wK5l" to="uc57:~GraphstreamViewManager.&lt;init&gt;(de.itemis.graphing.model.Graph)" resolve="GraphstreamViewManager" />
-                <node concept="37vLTw" id="LKp7m2RCJP" role="37wK5m">
+                <node concept="37vLTw" id="3bGF07wUqU" role="37wK5m">
                   <ref role="3cqZAo" node="64_1OWe$XUc" resolve="graph" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="LKp7m2RGM6" role="3cqZAp" />
-        <node concept="3cpWs8" id="64_1OWewXtY" role="3cqZAp">
-          <node concept="3cpWsn" id="64_1OWewXtZ" role="3cpWs9">
-            <property role="TrG5h" value="viewer" />
-            <node concept="3uibUv" id="64_1OWewXu0" role="1tU5fm">
-              <ref role="3uigEE" to="xyqd:~Viewer" resolve="Viewer" />
+        <node concept="3clFbF" id="3bGF07wUqV" role="3cqZAp">
+          <node concept="2OqwBi" id="3bGF07wUqW" role="3clFbG">
+            <node concept="37vLTw" id="3bGF07wUqX" role="2Oq$k0">
+              <ref role="3cqZAo" node="3bGF07wUqQ" resolve="viewManager" />
             </node>
-            <node concept="2ShNRf" id="64_1OWewYdn" role="33vP2m">
-              <node concept="1pGfFk" id="64_1OWewYqd" role="2ShVmc">
-                <ref role="37wK5l" to="xyqd:~Viewer.&lt;init&gt;(org.graphstream.graph.Graph,org.graphstream.ui.view.Viewer$ThreadingModel)" resolve="Viewer" />
-                <node concept="2OqwBi" id="LKp7m2RG$n" role="37wK5m">
-                  <node concept="37vLTw" id="LKp7m2RFeK" role="2Oq$k0">
-                    <ref role="3cqZAo" node="LKp7m2Rf2Z" resolve="viewManager" />
-                  </node>
-                  <node concept="liA8E" id="54mvx9XhDAV" role="2OqNvi">
-                    <ref role="37wK5l" to="uc57:~GraphstreamViewManager.getGraphstreamGraph():org.graphstream.graph.Graph" resolve="getGraphstreamGraph" />
-                  </node>
-                </node>
-                <node concept="Rm8GO" id="64_1OWewZwT" role="37wK5m">
-                  <ref role="1Px2BO" to="xyqd:~Viewer$ThreadingModel" resolve="Viewer.ThreadingModel" />
-                  <ref role="Rm8GQ" to="xyqd:~Viewer$ThreadingModel.GRAPH_IN_GUI_THREAD" resolve="GRAPH_IN_GUI_THREAD" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="64_1OWewZJf" role="3cqZAp">
-          <node concept="3cpWsn" id="64_1OWewZJg" role="3cpWs9">
-            <property role="TrG5h" value="view" />
-            <node concept="3uibUv" id="64_1OWe_1Ai" role="1tU5fm">
-              <ref role="3uigEE" node="64_1OWexg7y" resolve="MPSHotfixedView" />
-            </node>
-            <node concept="2ShNRf" id="64_1OWewZOL" role="33vP2m">
-              <node concept="1pGfFk" id="64_1OWewZY8" role="2ShVmc">
-                <ref role="37wK5l" node="64_1OWexi9R" resolve="MPSHotfixedView" />
-                <node concept="37vLTw" id="64_1OWewZYw" role="37wK5m">
-                  <ref role="3cqZAo" node="64_1OWewXtZ" resolve="viewer" />
-                </node>
-                <node concept="37vLTw" id="64_1OWe_2H1" role="37wK5m">
-                  <ref role="3cqZAo" node="64_1OWe_2eG" resolve="HOTFIXED_VIEW_ID" />
-                </node>
-                <node concept="2ShNRf" id="64_1OWex01f" role="37wK5m">
-                  <node concept="1pGfFk" id="64_1OWex0xz" role="2ShVmc">
-                    <ref role="37wK5l" to="h5a6:~J2DGraphRenderer.&lt;init&gt;()" resolve="J2DGraphRenderer" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="64_1OWex1lx" role="3cqZAp">
-          <node concept="2OqwBi" id="64_1OWex1B8" role="3clFbG">
-            <node concept="37vLTw" id="64_1OWex1lv" role="2Oq$k0">
-              <ref role="3cqZAo" node="64_1OWewXtZ" resolve="viewer" />
-            </node>
-            <node concept="liA8E" id="64_1OWex2cv" role="2OqNvi">
-              <ref role="37wK5l" to="xyqd:~Viewer.addView(org.graphstream.ui.view.View):org.graphstream.ui.view.View" resolve="addView" />
-              <node concept="37vLTw" id="64_1OWex2es" role="37wK5m">
-                <ref role="3cqZAo" node="64_1OWewZJg" resolve="view" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="16YVkUU6ynt" role="3cqZAp" />
-        <node concept="3clFbF" id="16YVkUU6$tk" role="3cqZAp">
-          <node concept="2OqwBi" id="16YVkUU6$Kf" role="3clFbG">
-            <node concept="37vLTw" id="16YVkUU6$ti" role="2Oq$k0">
-              <ref role="3cqZAo" node="LKp7m2Rf2Z" resolve="viewManager" />
-            </node>
-            <node concept="liA8E" id="16YVkUU6_gu" role="2OqNvi">
-              <ref role="37wK5l" to="uc57:~GraphstreamViewManager.configure(org.graphstream.ui.layout.Layout,org.graphstream.ui.view.Viewer,java.lang.String):void" resolve="configure" />
-              <node concept="37vLTw" id="16YVkUU6_oA" role="37wK5m">
+            <node concept="liA8E" id="3bGF07wUqY" role="2OqNvi">
+              <ref role="37wK5l" to="uc57:~GraphstreamViewManager.configure(org.graphstream.ui.layout.Layout):void" resolve="configure" />
+              <node concept="37vLTw" id="3bGF07wUqZ" role="37wK5m">
                 <ref role="3cqZAo" node="64_1OWe_7SN" resolve="layout" />
               </node>
-              <node concept="37vLTw" id="16YVkUU6_Gl" role="37wK5m">
-                <ref role="3cqZAo" node="64_1OWewXtZ" resolve="viewer" />
-              </node>
-              <node concept="37vLTw" id="16YVkUU6Apr" role="37wK5m">
-                <ref role="3cqZAo" node="64_1OWe_2eG" resolve="HOTFIXED_VIEW_ID" />
-              </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="LKp7m2R7Bz" role="3cqZAp" />
-        <node concept="3cpWs6" id="4DzE9lEv6br" role="3cqZAp">
-          <node concept="37vLTw" id="LKp7m2REDs" role="3cqZAk">
-            <ref role="3cqZAo" node="LKp7m2Rf2Z" resolve="viewManager" />
+        <node concept="3cpWs6" id="3bGF07wUr0" role="3cqZAp">
+          <node concept="37vLTw" id="3bGF07wUr1" role="3cqZAk">
+            <ref role="3cqZAo" node="3bGF07wUqQ" resolve="viewManager" />
           </node>
         </node>
       </node>
@@ -2133,7 +2024,7 @@
       <node concept="P$JXv" id="64_1OWeAq9q" role="lGtFl">
         <node concept="TZ5HA" id="64_1OWeAq9r" role="TZ5H$">
           <node concept="1dT_AC" id="64_1OWeAq9s" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the configured GraphstreamViewManager using a hotfixed version of the Graphstream DefaultView (see of MPSHotfixedView)." />
+            <property role="1dT_AB" value="Returns the configured GraphstreamViewManager using the DefaultView of Graphstream." />
           </node>
         </node>
         <node concept="TUZQ0" id="64_1OWeAq9t" role="3nqlJM">
@@ -2150,464 +2041,8 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="3v1N7lL_CxB" role="jymVt" />
     <node concept="3Tm1VV" id="64_1OWe$WQR" role="1B3o_S" />
-  </node>
-  <node concept="312cEu" id="64_1OWexg7y">
-    <property role="TrG5h" value="MPSHotfixedView" />
-    <property role="3GE5qa" value="view.graphstream" />
-    <node concept="2tJIrI" id="7PLVYgqJafk" role="jymVt" />
-    <node concept="312cEg" id="7PLVYgqN6YK" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="_mouseListenerAdded" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="7PLVYgqN5MO" role="1B3o_S" />
-      <node concept="10P_77" id="7PLVYgqN6RE" role="1tU5fm" />
-      <node concept="3clFbT" id="7PLVYgqN7TG" role="33vP2m">
-        <property role="3clFbU" value="false" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="7PLVYgqN80T" role="jymVt" />
-    <node concept="3clFbW" id="64_1OWexi9R" role="jymVt">
-      <node concept="3cqZAl" id="64_1OWexi9T" role="3clF45" />
-      <node concept="3Tm1VV" id="64_1OWexi9U" role="1B3o_S" />
-      <node concept="3clFbS" id="64_1OWexi9V" role="3clF47">
-        <node concept="XkiVB" id="64_1OWexirQ" role="3cqZAp">
-          <ref role="37wK5l" to="tirk:~DefaultView.&lt;init&gt;(org.graphstream.ui.view.Viewer,java.lang.String,org.graphstream.ui.swingViewer.GraphRenderer)" resolve="DefaultView" />
-          <node concept="37vLTw" id="64_1OWexjdQ" role="37wK5m">
-            <ref role="3cqZAo" node="64_1OWexiy6" resolve="viewer" />
-          </node>
-          <node concept="37vLTw" id="64_1OWexiPy" role="37wK5m">
-            <ref role="3cqZAo" node="64_1OWexiyR" resolve="identifier" />
-          </node>
-          <node concept="37vLTw" id="64_1OWexj5u" role="37wK5m">
-            <ref role="3cqZAo" node="64_1OWexi$v" resolve="graphRenderer" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="6I5RWbd4fFf" role="3cqZAp">
-          <node concept="2OqwBi" id="6I5RWbd4gkZ" role="3clFbG">
-            <node concept="Xjq3P" id="6I5RWbd4fFd" role="2Oq$k0" />
-            <node concept="liA8E" id="6I5RWbd4jcX" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.addAncestorListener(javax.swing.event.AncestorListener):void" resolve="addAncestorListener" />
-              <node concept="Xjq3P" id="6I5RWbd4jMO" role="37wK5m" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="64_1OWexiy6" role="3clF46">
-        <property role="TrG5h" value="viewer" />
-        <node concept="3uibUv" id="64_1OWexiy5" role="1tU5fm">
-          <ref role="3uigEE" to="xyqd:~Viewer" resolve="Viewer" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="64_1OWexiyR" role="3clF46">
-        <property role="TrG5h" value="identifier" />
-        <node concept="3uibUv" id="64_1OWexizO" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="64_1OWexi$v" role="3clF46">
-        <property role="TrG5h" value="graphRenderer" />
-        <node concept="3uibUv" id="64_1OWexi_d" role="1tU5fm">
-          <ref role="3uigEE" to="tirk:~GraphRenderer" resolve="GraphRenderer" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="64_1OWexjfG" role="jymVt" />
-    <node concept="3clFb_" id="64_1OWexjg$" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="paintComponent" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="64_1OWexjg_" role="1B3o_S" />
-      <node concept="3cqZAl" id="64_1OWexjgB" role="3clF45" />
-      <node concept="37vLTG" id="64_1OWexjgC" role="3clF46">
-        <property role="TrG5h" value="g" />
-        <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="64_1OWexjgD" role="1tU5fm">
-          <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="64_1OWexjgE" role="3clF47">
-        <node concept="3SKdUt" id="64_1OWe$NDA" role="3cqZAp">
-          <node concept="3SKdUq" id="64_1OWe$NDC" role="3SKWNk">
-            <property role="3SKdUp" value="if paintComponent is called in the context of a tool-window-repaint, the drawing is erased. call to repaint() fixes this problem." />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="64_1OWezR6r" role="3cqZAp">
-          <node concept="3cpWsn" id="64_1OWezR6s" role="3cpWs9">
-            <property role="TrG5h" value="stackElements" />
-            <node concept="10Q1$e" id="64_1OWezRjE" role="1tU5fm">
-              <node concept="3uibUv" id="64_1OWezR6t" role="10Q1$1">
-                <ref role="3uigEE" to="wyt6:~StackTraceElement" resolve="StackTraceElement" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="64_1OWezRX2" role="33vP2m">
-              <node concept="2YIFZM" id="64_1OWezRX3" role="2Oq$k0">
-                <ref role="37wK5l" to="wyt6:~Thread.currentThread():java.lang.Thread" resolve="currentThread" />
-                <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-              </node>
-              <node concept="liA8E" id="64_1OWezRX4" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Thread.getStackTrace():java.lang.StackTraceElement[]" resolve="getStackTrace" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1Dw8fO" id="64_1OWezHf3" role="3cqZAp">
-          <node concept="3clFbS" id="64_1OWezHf5" role="2LFqv$">
-            <node concept="3clFbJ" id="64_1OWe$h80" role="3cqZAp">
-              <node concept="3clFbS" id="64_1OWe$h82" role="3clFbx">
-                <node concept="3clFbF" id="64_1OWe$FrS" role="3cqZAp">
-                  <node concept="1rXfSq" id="64_1OWe$FrQ" role="3clFbG">
-                    <ref role="37wK5l" to="z60i:~Component.repaint():void" resolve="repaint" />
-                  </node>
-                </node>
-                <node concept="3zACq4" id="64_1OWe$TDm" role="3cqZAp" />
-              </node>
-              <node concept="2OqwBi" id="64_1OWe$i2E" role="3clFbw">
-                <node concept="2OqwBi" id="64_1OWe$i2F" role="2Oq$k0">
-                  <node concept="AH0OO" id="64_1OWe$i2G" role="2Oq$k0">
-                    <node concept="37vLTw" id="64_1OWe$i2H" role="AHEQo">
-                      <ref role="3cqZAo" node="64_1OWezHf6" resolve="i" />
-                    </node>
-                    <node concept="37vLTw" id="64_1OWe$i2I" role="AHHXb">
-                      <ref role="3cqZAo" node="64_1OWezR6s" resolve="stackElements" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="64_1OWe$i2J" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~StackTraceElement.getClassName():java.lang.String" resolve="getClassName" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="64_1OWe$i2K" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                  <node concept="2OqwBi" id="64_1OWe$$DW" role="37wK5m">
-                    <node concept="3VsKOn" id="64_1OWe$i2L" role="2Oq$k0">
-                      <ref role="3VsUkX" to="tdww:~ToolWindowsPane" resolve="ToolWindowsPane" />
-                    </node>
-                    <node concept="liA8E" id="64_1OWe$_hD" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWsn" id="64_1OWezHf6" role="1Duv9x">
-            <property role="TrG5h" value="i" />
-            <node concept="10Oyi0" id="64_1OWezHrx" role="1tU5fm" />
-            <node concept="3cmrfG" id="64_1OWezI4v" role="33vP2m">
-              <property role="3cmrfH" value="0" />
-            </node>
-          </node>
-          <node concept="3uNrnE" id="64_1OWezJnn" role="1Dwrff">
-            <node concept="37vLTw" id="64_1OWezJnp" role="2$L3a6">
-              <ref role="3cqZAo" node="64_1OWezHf6" resolve="i" />
-            </node>
-          </node>
-          <node concept="3eOVzh" id="64_1OWezLwq" role="1Dwp0S">
-            <node concept="2OqwBi" id="64_1OWezTGJ" role="3uHU7w">
-              <node concept="37vLTw" id="64_1OWezSEk" role="2Oq$k0">
-                <ref role="3cqZAo" node="64_1OWezR6s" resolve="stackElements" />
-              </node>
-              <node concept="1Rwk04" id="64_1OWezU3S" role="2OqNvi" />
-            </node>
-            <node concept="37vLTw" id="64_1OWezK5m" role="3uHU7B">
-              <ref role="3cqZAo" node="64_1OWezHf6" resolve="i" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="64_1OWexjgI" role="3cqZAp">
-          <node concept="3nyPlj" id="64_1OWexjgH" role="3clFbG">
-            <ref role="37wK5l" to="tirk:~DefaultView.paintComponent(java.awt.Graphics):void" resolve="paintComponent" />
-            <node concept="37vLTw" id="64_1OWexjgG" role="37wK5m">
-              <ref role="3cqZAo" node="64_1OWexjgC" resolve="g" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="64_1OWexjgF" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6I5RWbd3QGz" role="jymVt" />
-    <node concept="3clFb_" id="6I5RWbd3OdC" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="mouseDragged" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="6I5RWbd3OdD" role="1B3o_S" />
-      <node concept="3cqZAl" id="6I5RWbd3OdF" role="3clF45" />
-      <node concept="37vLTG" id="6I5RWbd3OdG" role="3clF46">
-        <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="6I5RWbd3OdH" role="1tU5fm">
-          <ref role="3uigEE" to="hyam:~MouseEvent" resolve="MouseEvent" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="6I5RWbd3OdM" role="3clF47" />
-      <node concept="2AHcQZ" id="6I5RWbd3OdN" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6I5RWbd3P3S" role="jymVt" />
-    <node concept="3clFb_" id="6I5RWbd3OdO" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="mouseMoved" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="6I5RWbd3OdP" role="1B3o_S" />
-      <node concept="3cqZAl" id="6I5RWbd3OdR" role="3clF45" />
-      <node concept="37vLTG" id="6I5RWbd3OdS" role="3clF46">
-        <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="6I5RWbd3OdT" role="1tU5fm">
-          <ref role="3uigEE" to="hyam:~MouseEvent" resolve="MouseEvent" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="6I5RWbd3OdY" role="3clF47">
-        <node concept="3SKdUt" id="6I5RWbd3PVx" role="3cqZAp">
-          <node concept="3SKdUq" id="6I5RWbd3PVy" role="3SKWNk">
-            <property role="3SKdUp" value="the camera does not seem to be in synch after the view lost the focus in MPS. maybe related to repaint() problem above." />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="6I5RWbd40fJ" role="3cqZAp">
-          <node concept="3SKdUq" id="6I5RWbd40fL" role="3SKWNk">
-            <property role="3SKdUp" value="move the camera to fix the problem" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="6I5RWbd3U0Y" role="3cqZAp">
-          <node concept="2OqwBi" id="6I5RWbd3Udo" role="3clFbG">
-            <node concept="1rXfSq" id="6I5RWbd3U0W" role="2Oq$k0">
-              <ref role="37wK5l" to="tirk:~DefaultView.getCamera():org.graphstream.ui.view.Camera" resolve="getCamera" />
-            </node>
-            <node concept="liA8E" id="6I5RWbd3UEq" role="2OqNvi">
-              <ref role="37wK5l" to="xyqd:~Camera.setViewPercent(double):void" resolve="setViewPercent" />
-              <node concept="2OqwBi" id="6I5RWbd3WKP" role="37wK5m">
-                <node concept="1rXfSq" id="6I5RWbd3V__" role="2Oq$k0">
-                  <ref role="37wK5l" to="tirk:~DefaultView.getCamera():org.graphstream.ui.view.Camera" resolve="getCamera" />
-                </node>
-                <node concept="liA8E" id="6I5RWbd3X94" role="2OqNvi">
-                  <ref role="37wK5l" to="xyqd:~Camera.getViewPercent():double" resolve="getViewPercent" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="6I5RWbd3OdZ" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6I5RWbd3O8N" role="jymVt" />
-    <node concept="3clFb_" id="6I5RWbd3Od7" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="ancestorAdded" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="6I5RWbd3Od8" role="1B3o_S" />
-      <node concept="3cqZAl" id="6I5RWbd3Oda" role="3clF45" />
-      <node concept="37vLTG" id="6I5RWbd3Odb" role="3clF46">
-        <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="6I5RWbd3Odc" role="1tU5fm">
-          <ref role="3uigEE" to="gsia:~AncestorEvent" resolve="AncestorEvent" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="6I5RWbd3Odg" role="3clF47" />
-      <node concept="2AHcQZ" id="6I5RWbd3Odh" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6I5RWbd3OTu" role="jymVt" />
-    <node concept="3clFb_" id="6I5RWbd3Odi" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="ancestorRemoved" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="6I5RWbd3Odj" role="1B3o_S" />
-      <node concept="3cqZAl" id="6I5RWbd3Odl" role="3clF45" />
-      <node concept="37vLTG" id="6I5RWbd3Odm" role="3clF46">
-        <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="6I5RWbd3Odn" role="1tU5fm">
-          <ref role="3uigEE" to="gsia:~AncestorEvent" resolve="AncestorEvent" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="6I5RWbd3Odr" role="3clF47" />
-      <node concept="2AHcQZ" id="6I5RWbd3Ods" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6I5RWbd3OJ5" role="jymVt" />
-    <node concept="3clFb_" id="6I5RWbd3Odt" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="ancestorMoved" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="6I5RWbd3Odu" role="1B3o_S" />
-      <node concept="3cqZAl" id="6I5RWbd3Odw" role="3clF45" />
-      <node concept="37vLTG" id="6I5RWbd3Odx" role="3clF46">
-        <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="6I5RWbd3Ody" role="1tU5fm">
-          <ref role="3uigEE" to="gsia:~AncestorEvent" resolve="AncestorEvent" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="6I5RWbd3OdA" role="3clF47">
-        <node concept="3SKdUt" id="6I5RWbd44L8" role="3cqZAp">
-          <node concept="3SKdUq" id="6I5RWbd44L9" role="3SKWNk">
-            <property role="3SKdUp" value="This registers a mouse listener that forces camera synch before the use clicks somewhere (see above)" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="7PLVYgqNj9v" role="3cqZAp">
-          <node concept="3SKdUq" id="7PLVYgqNj9x" role="3SKWNk">
-            <property role="3SKdUp" value="First idea was to place it in AncestorAdded, but it seems to be called to early. In MPS ancestorMoved also seems to" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="7PLVYgqNk0Y" role="3cqZAp">
-          <node concept="3SKdUq" id="7PLVYgqNk10" role="3SKWNk">
-            <property role="3SKdUp" value="be called every time (WHY??!), so maybe this is a better place." />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="7PLVYgqL5gI" role="3cqZAp">
-          <node concept="3SKdUq" id="7PLVYgqL5gJ" role="3SKWNk">
-            <property role="3SKdUp" value="The additional delay makes sure that view is built up before MouseMotionListener gets registered (otherwise autofit" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="7PLVYgqNkqJ" role="3cqZAp">
-          <node concept="3SKdUq" id="7PLVYgqNkqK" role="3SKWNk">
-            <property role="3SKdUp" value="might be disabled too early)" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="7PLVYgqNhj4" role="3cqZAp" />
-        <node concept="3clFbJ" id="7PLVYgqNcjc" role="3cqZAp">
-          <node concept="3clFbS" id="7PLVYgqNcje" role="3clFbx">
-            <node concept="3cpWs6" id="7PLVYgqNgEC" role="3cqZAp" />
-          </node>
-          <node concept="37vLTw" id="7PLVYgqNfOW" role="3clFbw">
-            <ref role="3cqZAo" node="7PLVYgqN6YK" resolve="_mouseListenerAdded" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="7PLVYgqN_DY" role="3cqZAp" />
-        <node concept="3clFbF" id="7PLVYgqN9Uh" role="3cqZAp">
-          <node concept="37vLTI" id="7PLVYgqNaQW" role="3clFbG">
-            <node concept="3clFbT" id="7PLVYgqNblz" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="37vLTw" id="7PLVYgqN9Uf" role="37vLTJ">
-              <ref role="3cqZAo" node="7PLVYgqN6YK" resolve="_mouseListenerAdded" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7PLVYgqN8nr" role="3cqZAp" />
-        <node concept="3cpWs8" id="7PLVYgqKRVG" role="3cqZAp">
-          <node concept="3cpWsn" id="7PLVYgqKRVE" role="3cpWs9">
-            <property role="3TUv4t" value="true" />
-            <property role="TrG5h" value="instance" />
-            <node concept="3uibUv" id="7PLVYgqKSvY" role="1tU5fm">
-              <ref role="3uigEE" node="64_1OWexg7y" resolve="MPSHotfixedView" />
-            </node>
-            <node concept="Xjq3P" id="7PLVYgqKT69" role="33vP2m" />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="7PLVYgqKviE" role="3cqZAp">
-          <node concept="3cpWsn" id="7PLVYgqKviF" role="3cpWs9">
-            <property role="TrG5h" value="r" />
-            <node concept="3uibUv" id="7PLVYgqKviG" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~Runnable" resolve="Runnable" />
-            </node>
-            <node concept="2ShNRf" id="7PLVYgqKvOi" role="33vP2m">
-              <node concept="YeOm9" id="7PLVYgqKNRY" role="2ShVmc">
-                <node concept="1Y3b0j" id="7PLVYgqKNS1" role="YeSDq">
-                  <property role="2bfB8j" value="true" />
-                  <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
-                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                  <node concept="3Tm1VV" id="7PLVYgqKNS2" role="1B3o_S" />
-                  <node concept="3clFb_" id="7PLVYgqKNS3" role="jymVt">
-                    <property role="1EzhhJ" value="false" />
-                    <property role="TrG5h" value="run" />
-                    <property role="DiZV1" value="false" />
-                    <property role="od$2w" value="false" />
-                    <node concept="3Tm1VV" id="7PLVYgqKNS4" role="1B3o_S" />
-                    <node concept="3cqZAl" id="7PLVYgqKNS6" role="3clF45" />
-                    <node concept="3clFbS" id="7PLVYgqKNS7" role="3clF47">
-                      <node concept="2GUZhq" id="7PLVYgqLwEH" role="3cqZAp">
-                        <node concept="3clFbS" id="7PLVYgqLwpv" role="2GV8ay">
-                          <node concept="3clFbF" id="7PLVYgqLvb3" role="3cqZAp">
-                            <node concept="2YIFZM" id="7PLVYgqLvgr" role="3clFbG">
-                              <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                              <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
-                              <node concept="3cmrfG" id="7PLVYgqLwlC" role="37wK5m">
-                                <property role="3cmrfH" value="100" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="TDmWw" id="7PLVYgqLwpq" role="TEXxN">
-                          <node concept="3clFbS" id="7PLVYgqLwpr" role="TDEfX" />
-                          <node concept="3cpWsn" id="7PLVYgqLwps" role="TDEfY">
-                            <property role="TrG5h" value="e" />
-                            <node concept="3uibUv" id="7PLVYgqLwpt" role="1tU5fm">
-                              <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3clFbS" id="7PLVYgqLwEK" role="2GVbov">
-                          <node concept="3clFbF" id="7PLVYgqKfoh" role="3cqZAp">
-                            <node concept="2OqwBi" id="7PLVYgqKfoi" role="3clFbG">
-                              <node concept="37vLTw" id="7PLVYgqKU61" role="2Oq$k0">
-                                <ref role="3cqZAo" node="7PLVYgqKRVE" resolve="instance" />
-                              </node>
-                              <node concept="liA8E" id="7PLVYgqKfok" role="2OqNvi">
-                                <ref role="37wK5l" to="z60i:~Component.addMouseMotionListener(java.awt.event.MouseMotionListener):void" resolve="addMouseMotionListener" />
-                                <node concept="37vLTw" id="7PLVYgqKUKP" role="37wK5m">
-                                  <ref role="3cqZAo" node="7PLVYgqKRVE" resolve="instance" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7PLVYgqLUqv" role="3cqZAp" />
-        <node concept="3clFbF" id="7PLVYgqLVnc" role="3cqZAp">
-          <node concept="2OqwBi" id="7PLVYgqLV_N" role="3clFbG">
-            <node concept="2ShNRf" id="7PLVYgqLVne" role="2Oq$k0">
-              <node concept="1pGfFk" id="7PLVYgqLVnf" role="2ShVmc">
-                <ref role="37wK5l" to="wyt6:~Thread.&lt;init&gt;(java.lang.Runnable)" resolve="Thread" />
-                <node concept="37vLTw" id="7PLVYgqLVng" role="37wK5m">
-                  <ref role="3cqZAo" node="7PLVYgqKviF" resolve="r" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="7PLVYgqLVWu" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Thread.start():void" resolve="start" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="6I5RWbd3OdB" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="64_1OWexg7z" role="1B3o_S" />
-    <node concept="3uibUv" id="64_1OWexg81" role="1zkMxy">
-      <ref role="3uigEE" to="tirk:~DefaultView" resolve="DefaultView" />
-    </node>
-    <node concept="3uibUv" id="6I5RWbd3O1x" role="EKbjA">
-      <ref role="3uigEE" to="gsia:~AncestorListener" resolve="AncestorListener" />
-    </node>
-    <node concept="3uibUv" id="6I5RWbd3O6n" role="EKbjA">
-      <ref role="3uigEE" to="hyam:~MouseMotionListener" resolve="MouseMotionListener" />
-    </node>
-    <node concept="3UR2Jj" id="6I5RWbd3PVO" role="lGtFl">
-      <node concept="TZ5HA" id="6I5RWbd3PVP" role="TZ5H$">
-        <node concept="1dT_AC" id="6I5RWbd3PVQ" role="1dT_Ay">
-          <property role="1dT_AB" value="MPS seems to do use AWT in a strange (or even bad) way. This class combines several fixes to circumvent most problems" />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="sE7Ow" id="4iv9KfRBKWH">
     <property role="TrG5h" value="HistoryGoBack" />
