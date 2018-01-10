@@ -395,6 +395,12 @@
       <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
         <child id="2667874559098216723" name="text" index="3HnX3l" />
       </concept>
+      <concept id="2217234381367190443" name="jetbrains.mps.baseLanguage.javadoc.structure.SeeBlockDocTag" flags="ng" index="VUp57">
+        <child id="2217234381367190458" name="reference" index="VUp5m" />
+      </concept>
+      <concept id="2217234381367530195" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocReference" flags="ng" index="VXe0Z">
+        <reference id="2217234381367530196" name="methodDeclaration" index="VXe0S" />
+      </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
@@ -442,7 +448,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -4161,13 +4166,30 @@
         <node concept="3THzug" id="78ltAeXG2Qz" role="1tU5fm" />
       </node>
       <node concept="3Tm1VV" id="6clJcrJXo2C" role="1B3o_S" />
-      <node concept="3clFbS" id="6clJcrJXo2D" role="3clF47" />
+      <node concept="3clFbS" id="6clJcrJXo2D" role="3clF47">
+        <node concept="3clFbF" id="jS_CvxMlS8" role="3cqZAp">
+          <node concept="BsUDl" id="jS_CvxMlS7" role="3clFbG">
+            <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfType" />
+            <node concept="2OqwBi" id="jS_CvxMm4P" role="37wK5m">
+              <node concept="37vLTw" id="jS_CvxMlTf" role="2Oq$k0">
+                <ref role="3cqZAo" node="6clJcrJXo2A" resolve="targetConcept" />
+              </node>
+              <node concept="1rGIog" id="jS_CvxMmj$" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="A3Dl8" id="6clJcrJXo2E" role="3clF45">
         <node concept="3Tqbb2" id="6clJcrJXo2F" role="A3Ik2" />
       </node>
       <node concept="P$JXv" id="79$zShlSQKj" role="lGtFl">
         <node concept="TZ5HI" id="79$zShlSQKk" role="3nqlJM">
           <node concept="TZ5HA" id="79$zShlSQKl" role="3HnX3l" />
+        </node>
+        <node concept="VUp57" id="jS_CvxLmb8" role="3nqlJM">
+          <node concept="VXe0Z" id="jS_CvxLy_0" role="VUp5m">
+            <ref role="VXe0S" node="3g6LnlWuSo8" resolve="visibleContentsOfType" />
+          </node>
         </node>
         <node concept="TZ5HA" id="79$zShlSQUO" role="TZ5H$">
           <node concept="1dT_AC" id="79$zShlSQUP" role="1dT_Ay">
@@ -4177,6 +4199,69 @@
         <node concept="TZ5HA" id="79$zShlSQZf" role="TZ5H$">
           <node concept="1dT_AC" id="79$zShlSQZg" role="1dT_Ay">
             <property role="1dT_AB" value="This method will be removed in future releases!" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxLBr$" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxLBr_" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxLBrG" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxLBrH" role="1dT_Ay">
+            <property role="1dT_AB" value="As the method is still abstract needs to be implemented we suggest an implementation like this:" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxMlMh" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxMlMi" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxNw3q" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxNw3r" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxNw3E" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxNw3F" role="1dT_Ay">
+            <property role="1dT_AB" value="@Deprecated" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxNw4c" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxNw4d" role="1dT_Ay">
+            <property role="1dT_AB" value="public virtual sequence&lt;node&lt;&gt;&gt; visibleContentsOfType(conceptNode&lt;&gt; targetConcept) { " />
+          </node>
+          <node concept="1dT_AC" id="jS_CvxNw59" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxOvYJ" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxOvYK" role="1dT_Ay">
+            <property role="1dT_AB" value="  visibleContentsOfType(targetConcept.asConcept); " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxOw0_" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxOw0A" role="1dT_Ay">
+            <property role="1dT_AB" value="}" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxOw1e" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxOw1f" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxOw1D" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxOw1E" role="1dT_Ay">
+            <property role="1dT_AB" value="This simply calles through to the new implementation and casts the conceptNode to a concept. That way you " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxOw2m" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxOw2n" role="1dT_Ay">
+            <property role="1dT_AB" value="should be future prove and only need to delete this method implementation once we remove it from the interface" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxMlMt" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxMlMu" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
           </node>
         </node>
       </node>
@@ -4199,12 +4284,9 @@
             <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
             <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
             <node concept="BsUDl" id="79$zShlSNxj" role="37wK5m">
-              <ref role="37wK5l" node="6clJcrJXo2_" resolve="visibleContentsOfType" />
-              <node concept="2OqwBi" id="79$zShlSPTy" role="37wK5m">
-                <node concept="FGMqu" id="5ZSJngDQBJ9" role="2OqNvi" />
-                <node concept="37vLTw" id="79$zShlSO$h" role="2Oq$k0">
-                  <ref role="3cqZAo" node="79$zShlSHy0" resolve="targetConcept" />
-                </node>
+              <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfType" />
+              <node concept="37vLTw" id="79$zShlSO$h" role="37wK5m">
+                <ref role="3cqZAo" node="79$zShlSHy0" resolve="targetConcept" />
               </node>
             </node>
           </node>
@@ -4225,18 +4307,65 @@
       <node concept="3Tm1VV" id="7Vd878lThbC" role="1B3o_S" />
       <node concept="3clFbS" id="7Vd878lThbD" role="3clF47">
         <node concept="3clFbF" id="7Vd878lThdv" role="3cqZAp">
-          <node concept="2OqwBi" id="7Vd878lThCs" role="3clFbG">
-            <node concept="BsUDl" id="7Vd878lThdu" role="2Oq$k0">
-              <ref role="37wK5l" node="6clJcrJXo2_" resolve="visibleContentsOfType" />
-              <node concept="37vLTw" id="7Vd878lThjn" role="37wK5m">
+          <node concept="BsUDl" id="7Vd878lThdu" role="3clFbG">
+            <ref role="37wK5l" node="jS_CvxKV1a" resolve="hasVisibleContentsOfType" />
+            <node concept="2OqwBi" id="jS_CvxLCyQ" role="37wK5m">
+              <node concept="37vLTw" id="jS_CvxLBzN" role="2Oq$k0">
                 <ref role="3cqZAo" node="7Vd878lThbA" resolve="targetConcept" />
               </node>
+              <node concept="1rGIog" id="jS_CvxLCLo" role="2OqNvi" />
             </node>
-            <node concept="3GX2aA" id="7Vd878lTiVf" role="2OqNvi" />
           </node>
         </node>
       </node>
       <node concept="10P_77" id="7Vd878lThdp" role="3clF45" />
+      <node concept="P$JXv" id="jS_CvxKVFJ" role="lGtFl">
+        <node concept="TZ5HA" id="jS_CvxKVVm" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxKVVn" role="1dT_Ay">
+            <property role="1dT_AB" value="Please consider using the new method overload that takes a concept instead of conceptNode" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxKVVo" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxKVVp" role="1dT_Ay">
+            <property role="1dT_AB" value="This method will be removed in future releases!" />
+          </node>
+        </node>
+        <node concept="TZ5HI" id="jS_CvxKVFK" role="3nqlJM">
+          <node concept="TZ5HA" id="jS_CvxKVFL" role="3HnX3l" />
+        </node>
+        <node concept="VUp57" id="jS_CvxLb7M" role="3nqlJM">
+          <node concept="VXe0Z" id="jS_CvxLhkS" role="VUp5m">
+            <ref role="VXe0S" node="jS_CvxKV1a" resolve="hasVisibleContentsOfType" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="jS_CvxKVFM" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="jS_CvxKV1a" role="13h7CS">
+      <property role="TrG5h" value="hasVisibleContentsOfType" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="false" />
+      <node concept="37vLTG" id="jS_CvxKV1b" role="3clF46">
+        <property role="TrG5h" value="targetConcept" />
+        <node concept="3bZ5Sz" id="jS_CvxKV$K" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="jS_CvxKV1d" role="1B3o_S" />
+      <node concept="3clFbS" id="jS_CvxKV1e" role="3clF47">
+        <node concept="3clFbF" id="jS_CvxKV1f" role="3cqZAp">
+          <node concept="2OqwBi" id="jS_CvxKV1g" role="3clFbG">
+            <node concept="BsUDl" id="jS_CvxKV1h" role="2Oq$k0">
+              <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfType" />
+              <node concept="37vLTw" id="jS_CvxKV1i" role="37wK5m">
+                <ref role="3cqZAo" node="jS_CvxKV1b" resolve="targetConcept" />
+              </node>
+            </node>
+            <node concept="3GX2aA" id="jS_CvxKV1j" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="jS_CvxKV1k" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6clJcrJXo2G" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -4253,82 +4382,107 @@
       <node concept="3Tm1VV" id="6clJcrJXo2L" role="1B3o_S" />
       <node concept="3Tqbb2" id="6clJcrJXo2M" role="3clF45" />
       <node concept="3clFbS" id="6clJcrJXo2N" role="3clF47">
-        <node concept="3cpWs8" id="6clJcrJXo2O" role="3cqZAp">
-          <node concept="3cpWsn" id="6clJcrJXo2P" role="3cpWs9">
-            <property role="TrG5h" value="elements" />
-            <node concept="A3Dl8" id="6clJcrJXo2Q" role="1tU5fm">
-              <node concept="3Tqbb2" id="6clJcrJXo2R" role="A3Ik2" />
-            </node>
-            <node concept="BsUDl" id="6clJcrJXo2S" role="33vP2m">
-              <ref role="37wK5l" node="6clJcrJXo2_" resolve="visibleContentsOfType" />
-              <node concept="37vLTw" id="6clJcrJXo2T" role="37wK5m">
+        <node concept="3clFbF" id="jS_CvxOw4X" role="3cqZAp">
+          <node concept="BsUDl" id="jS_CvxOw4W" role="3clFbG">
+            <ref role="37wK5l" node="jS_CvxKV3X" resolve="findByName" />
+            <node concept="2OqwBi" id="jS_CvxOwgU" role="37wK5m">
+              <node concept="37vLTw" id="jS_CvxOw5w" role="2Oq$k0">
                 <ref role="3cqZAo" node="6clJcrJXo2H" resolve="targetConcept" />
               </node>
+              <node concept="1rGIog" id="jS_CvxOwwD" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="jS_CvxOwKS" role="37wK5m">
+              <ref role="3cqZAo" node="6clJcrJXo2J" resolve="name" />
             </node>
           </node>
         </node>
-        <node concept="2Gpval" id="6clJcrJXo2U" role="3cqZAp">
-          <node concept="2GrKxI" id="6clJcrJXo2V" role="2Gsz3X">
-            <property role="TrG5h" value="e" />
+      </node>
+      <node concept="P$JXv" id="jS_CvxKVu5" role="lGtFl">
+        <node concept="TZ5HA" id="jS_CvxKVVC" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxKVVD" role="1dT_Ay">
+            <property role="1dT_AB" value="Please consider using the new method overload that takes a concept instead of conceptNode" />
           </node>
-          <node concept="37vLTw" id="6clJcrJXo2W" role="2GsD0m">
-            <ref role="3cqZAo" node="6clJcrJXo2P" resolve="elements" />
+        </node>
+        <node concept="TZ5HA" id="jS_CvxKVVE" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxKVVF" role="1dT_Ay">
+            <property role="1dT_AB" value="This method will be removed in future releases! " />
           </node>
-          <node concept="3clFbS" id="6clJcrJXo2X" role="2LFqv$">
-            <node concept="3clFbJ" id="6clJcrJXo2Y" role="3cqZAp">
-              <node concept="2OqwBi" id="6clJcrJXo2Z" role="3clFbw">
-                <node concept="2GrUjf" id="6clJcrJXo30" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="6clJcrJXo2V" resolve="e" />
-                </node>
-                <node concept="1mIQ4w" id="6clJcrJXo31" role="2OqNvi">
-                  <node concept="chp4Y" id="6clJcrJXo32" role="cj9EA">
-                    <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                  </node>
+        </node>
+        <node concept="TZ5HI" id="jS_CvxKVu6" role="3nqlJM">
+          <node concept="TZ5HA" id="jS_CvxKVu7" role="3HnX3l" />
+        </node>
+        <node concept="VUp57" id="jS_CvxKVWm" role="3nqlJM">
+          <node concept="VXe0Z" id="jS_CvxL6ho" role="VUp5m">
+            <ref role="VXe0S" node="jS_CvxKV3X" resolve="findByName" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="jS_CvxKVu8" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="jS_CvxKV3X" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="findByName" />
+      <node concept="37vLTG" id="jS_CvxKV3Y" role="3clF46">
+        <property role="TrG5h" value="targetConcept" />
+        <node concept="3bZ5Sz" id="jS_CvxKVhs" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="jS_CvxKV40" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="jS_CvxKV41" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="jS_CvxKV42" role="1B3o_S" />
+      <node concept="3Tqbb2" id="jS_CvxKV43" role="3clF45" />
+      <node concept="3clFbS" id="jS_CvxKV44" role="3clF47">
+        <node concept="3clFbF" id="jS_CvxKV45" role="3cqZAp">
+          <node concept="2OqwBi" id="jS_CvxKV46" role="3clFbG">
+            <node concept="2OqwBi" id="jS_CvxKV47" role="2Oq$k0">
+              <node concept="BsUDl" id="jS_CvxKV48" role="2Oq$k0">
+                <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfType" />
+                <node concept="37vLTw" id="jS_CvxKV49" role="37wK5m">
+                  <ref role="3cqZAo" node="jS_CvxKV3Y" resolve="targetConcept" />
                 </node>
               </node>
-              <node concept="3clFbS" id="6clJcrJXo33" role="3clFbx">
-                <node concept="3clFbJ" id="6clJcrJXo34" role="3cqZAp">
-                  <node concept="2OqwBi" id="6clJcrJXo35" role="3clFbw">
-                    <node concept="2OqwBi" id="6clJcrJXo36" role="2Oq$k0">
-                      <node concept="1PxgMI" id="6clJcrJXo37" role="2Oq$k0">
-                        <node concept="chp4Y" id="79i$vAY5P5L" role="3oSUPX">
-                          <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                        </node>
-                        <node concept="2GrUjf" id="6clJcrJXo38" role="1m5AlR">
-                          <ref role="2Gs0qQ" node="6clJcrJXo2V" resolve="e" />
-                        </node>
+              <node concept="v3k3i" id="jS_CvxKV4a" role="2OqNvi">
+                <node concept="chp4Y" id="jS_CvxKV4b" role="v3oSu">
+                  <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                </node>
+              </node>
+            </node>
+            <node concept="1z4cxt" id="jS_CvxKV4c" role="2OqNvi">
+              <node concept="1bVj0M" id="jS_CvxKV4d" role="23t8la">
+                <node concept="3clFbS" id="jS_CvxKV4e" role="1bW5cS">
+                  <node concept="3clFbF" id="jS_CvxKV4f" role="3cqZAp">
+                    <node concept="17R0WA" id="jS_CvxKV4g" role="3clFbG">
+                      <node concept="37vLTw" id="jS_CvxKV4h" role="3uHU7w">
+                        <ref role="3cqZAo" node="jS_CvxKV40" resolve="name" />
                       </node>
-                      <node concept="3TrcHB" id="6clJcrJXo39" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="6clJcrJXo3a" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                      <node concept="37vLTw" id="6clJcrJXo3b" role="37wK5m">
-                        <ref role="3cqZAo" node="6clJcrJXo2J" resolve="name" />
+                      <node concept="2OqwBi" id="jS_CvxKV4i" role="3uHU7B">
+                        <node concept="37vLTw" id="jS_CvxKV4j" role="2Oq$k0">
+                          <ref role="3cqZAo" node="jS_CvxKV4l" resolve="it" />
+                        </node>
+                        <node concept="3TrcHB" id="jS_CvxKV4k" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbS" id="6clJcrJXo3c" role="3clFbx">
-                    <node concept="3cpWs6" id="6clJcrJXo3d" role="3cqZAp">
-                      <node concept="2GrUjf" id="6clJcrJXo3e" role="3cqZAk">
-                        <ref role="2Gs0qQ" node="6clJcrJXo2V" resolve="e" />
-                      </node>
-                    </node>
-                  </node>
+                </node>
+                <node concept="Rh6nW" id="jS_CvxKV4l" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="jS_CvxKV4m" role="1tU5fm" />
                 </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="6clJcrJXo3f" role="3cqZAp">
-          <node concept="10Nm6u" id="6clJcrJXo3g" role="3clFbG" />
         </node>
       </node>
     </node>
     <node concept="13i0hz" id="3g6LnlWuSo8" role="13h7CS">
       <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
+      <property role="13i0it" value="true" />
       <property role="TrG5h" value="visibleContentsOfType" />
       <node concept="37vLTG" id="3g6LnlWuV_C" role="3clF46">
         <property role="TrG5h" value="targetConcept" />
