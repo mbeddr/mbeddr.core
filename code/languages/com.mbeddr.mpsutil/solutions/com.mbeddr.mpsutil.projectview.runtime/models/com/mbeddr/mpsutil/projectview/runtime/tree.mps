@@ -1578,11 +1578,11 @@
             </node>
           </node>
           <node concept="2OqwBi" id="2xfLpXm7egC" role="ukAjM">
-            <node concept="1rXfSq" id="5GuprjiGHpi" role="2Oq$k0">
-              <ref role="37wK5l" node="4gq8yQBZ6QW" resolve="getMPSProject" />
-            </node>
             <node concept="liA8E" id="2xfLpXm7eBs" role="2OqNvi">
               <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+            </node>
+            <node concept="1rXfSq" id="5GuprjiGHpi" role="2Oq$k0">
+              <ref role="37wK5l" node="4gq8yQBZ6QW" resolve="getMPSProject" />
             </node>
           </node>
         </node>
@@ -3415,17 +3415,14 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="myEditorListener" />
       <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="5GuprjiHqD3" role="1tU5fm">
-        <ref role="3uigEE" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
-      </node>
       <node concept="2ShNRf" id="4gq8yQBZ6Nd" role="33vP2m">
         <node concept="YeOm9" id="4gq8yQBZ6Ne" role="2ShVmc">
           <node concept="1Y3b0j" id="4gq8yQBZ6Nf" role="YeSDq">
             <property role="2bfB8j" value="true" />
             <property role="1sVAO0" value="false" />
             <property role="1EXbeo" value="false" />
-            <ref role="1Y3XeK" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
             <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+            <ref role="1Y3XeK" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
             <node concept="3Tm1VV" id="4gq8yQBZ6Ng" role="1B3o_S" />
             <node concept="3clFb_" id="4gq8yQBZ6Nh" role="jymVt">
               <property role="TrG5h" value="selectionChanged" />
@@ -3574,6 +3571,9 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="4gq8yQBZ6O8" role="1B3o_S" />
+      <node concept="3uibUv" id="5GuprjiHqD3" role="1tU5fm">
+        <ref role="3uigEE" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
+      </node>
     </node>
     <node concept="312cEg" id="4gq8yQBZ6Of" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -3718,7 +3718,7 @@
               <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
             </node>
             <node concept="1rXfSq" id="7N_XUEP3192" role="33vP2m">
-              <ref role="37wK5l" node="4gq8yQBZ6QW" resolve="getMPSProject" />
+              <ref role="37wK5l" node="4gq8yQBZ6QW" />
             </node>
           </node>
         </node>
@@ -4047,7 +4047,7 @@
               <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
             </node>
             <node concept="1rXfSq" id="7N_XUEP2ZqA" role="33vP2m">
-              <ref role="37wK5l" node="4gq8yQBZ6QW" resolve="getMPSProject" />
+              <ref role="37wK5l" node="4gq8yQBZ6QW" />
             </node>
           </node>
         </node>
@@ -5107,9 +5107,6 @@
                       </node>
                       <node concept="3clFbS" id="4gq8yQBZ6Uj" role="3clF47">
                         <node concept="3clFbJ" id="4gq8yQBZ6Uk" role="3cqZAp">
-                          <node concept="3clFbS" id="4gq8yQBZ6Us" role="3clFbx">
-                            <node concept="3cpWs6" id="4gq8yQBZ6Ut" role="3cqZAp" />
-                          </node>
                           <node concept="22lmx$" id="7hK0gatljdi" role="3clFbw">
                             <node concept="2OqwBi" id="7hK0gatlnHK" role="3uHU7w">
                               <node concept="1rXfSq" id="7hK0gatllVt" role="2Oq$k0">
@@ -5135,6 +5132,9 @@
                                 </node>
                               </node>
                             </node>
+                          </node>
+                          <node concept="3clFbS" id="4gq8yQBZ6Us" role="3clFbx">
+                            <node concept="3cpWs6" id="4gq8yQBZ6Ut" role="3cqZAp" />
                           </node>
                         </node>
                         <node concept="3clFbF" id="gKF6tcRVK0" role="3cqZAp">
@@ -13624,13 +13624,27 @@
       <node concept="3cqZAl" id="7PuCnEL_Efi" role="3clF45" />
       <node concept="3Tm1VV" id="7PuCnEL_Efj" role="1B3o_S" />
       <node concept="3clFbS" id="7PuCnEL_Efk" role="3clF47">
-        <node concept="3clFbF" id="7PuCnELBFEK" role="3cqZAp">
-          <node concept="2OqwBi" id="7PuCnELBFHS" role="3clFbG">
-            <node concept="37vLTw" id="7PuCnELBFEJ" role="2Oq$k0">
-              <ref role="3cqZAo" node="7PuCnEL_DQr" resolve="myEventsCollector" />
+        <node concept="1QHqEK" id="4N4h8p3CrtS" role="3cqZAp">
+          <node concept="1QHqEC" id="4N4h8p3CrtU" role="1QHqEI">
+            <node concept="3clFbS" id="4N4h8p3CrtW" role="1bW5cS">
+              <node concept="3clFbF" id="7PuCnELBFEK" role="3cqZAp">
+                <node concept="2OqwBi" id="7PuCnELBFHS" role="3clFbG">
+                  <node concept="37vLTw" id="7PuCnELBFEJ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7PuCnEL_DQr" resolve="myEventsCollector" />
+                  </node>
+                  <node concept="liA8E" id="7PuCnELBFQ0" role="2OqNvi">
+                    <ref role="37wK5l" node="ncHX0OSY2s" resolve="stop" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="liA8E" id="7PuCnELBFQ0" role="2OqNvi">
-              <ref role="37wK5l" node="ncHX0OSY2s" resolve="stop" />
+          </node>
+          <node concept="2OqwBi" id="4N4h8p3CrX9" role="ukAjM">
+            <node concept="37vLTw" id="4N4h8p3CrE_" role="2Oq$k0">
+              <ref role="3cqZAo" node="7PuCnEL_Kgc" resolve="myProject" />
+            </node>
+            <node concept="liA8E" id="4N4h8p3Csqv" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
             </node>
           </node>
         </node>
