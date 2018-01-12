@@ -395,6 +395,12 @@
       <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
         <child id="2667874559098216723" name="text" index="3HnX3l" />
       </concept>
+      <concept id="2217234381367190443" name="jetbrains.mps.baseLanguage.javadoc.structure.SeeBlockDocTag" flags="ng" index="VUp57">
+        <child id="2217234381367190458" name="reference" index="VUp5m" />
+      </concept>
+      <concept id="2217234381367530195" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocReference" flags="ng" index="VXe0Z">
+        <reference id="2217234381367530196" name="methodDeclaration" index="VXe0S" />
+      </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
@@ -466,6 +472,9 @@
       <concept id="1145572800087" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingsOperation" flags="nn" index="2Ttrtt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -4169,6 +4178,11 @@
         <node concept="TZ5HI" id="79$zShlSQKk" role="3nqlJM">
           <node concept="TZ5HA" id="79$zShlSQKl" role="3HnX3l" />
         </node>
+        <node concept="VUp57" id="jS_CvxLmb8" role="3nqlJM">
+          <node concept="VXe0Z" id="jS_CvxQdPS" role="VUp5m">
+            <ref role="VXe0S" node="79$zShlSHxZ" resolve="visibleContentsOfType" />
+          </node>
+        </node>
         <node concept="TZ5HA" id="79$zShlSQUO" role="TZ5H$">
           <node concept="1dT_AC" id="79$zShlSQUP" role="1dT_Ay">
             <property role="1dT_AB" value="Please consider using and overwriting the new method overload that takes a concept instead of conceptNode" />
@@ -4179,6 +4193,79 @@
             <property role="1dT_AB" value="This method will be removed in future releases!" />
           </node>
         </node>
+        <node concept="TZ5HA" id="jS_CvxLBr$" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxLBr_" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxLBrG" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxLBrH" role="1dT_Ay">
+            <property role="1dT_AB" value="As the method is still abstract needs to be implemented we suggest an implementation like this:" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxMlMh" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxMlMi" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxNw3E" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxNw3F" role="1dT_Ay">
+            <property role="1dT_AB" value="@Deprecated" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxNw4c" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxNw4d" role="1dT_Ay">
+            <property role="1dT_AB" value="public virtual sequence&lt;node&lt;&gt;&gt; visibleContentsOfType(conceptNode&lt;&gt; targetConcept) { " />
+          </node>
+          <node concept="1dT_AC" id="jS_CvxNw59" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxOvYJ" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxOvYK" role="1dT_Ay">
+            <property role="1dT_AB" value="  visibleContentsOfTypeAsSequence(targetConcept.asConcept); " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxOw0_" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxOw0A" role="1dT_Ay">
+            <property role="1dT_AB" value="}" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxOw1e" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxOw1f" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxOw1D" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxOw1E" role="1dT_Ay">
+            <property role="1dT_AB" value="This simply calles through to the new implementation and casts the conceptNode to a concept. That way you " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxOw2m" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxOw2n" role="1dT_Ay">
+            <property role="1dT_AB" value="should be future prove and only need to delete this method implementation once we remove it from the interface" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxMlMt" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxMlMu" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7fyPPvBTuQ0" role="TZ5H$">
+          <node concept="1dT_AC" id="7fyPPvBTuQ1" role="1dT_Ay">
+            <property role="1dT_AB" value="Be careful when implementing the method this way. If you don't override the new overload that takes the concept " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7fyPPvBTuT5" role="TZ5H$">
+          <node concept="1dT_AC" id="7fyPPvBTuT6" role="1dT_Ay">
+            <property role="1dT_AB" value="then this will end up creating a stack overflow because the implementation of the framework will call into your" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7fyPPvBTuTI" role="TZ5H$">
+          <node concept="1dT_AC" id="7fyPPvBTuTJ" role="1dT_Ay">
+            <property role="1dT_AB" value="method again." />
+          </node>
+        </node>
       </node>
       <node concept="2AHcQZ" id="79$zShlSQKm" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
@@ -4186,7 +4273,7 @@
     </node>
     <node concept="13i0hz" id="79$zShlSHxZ" role="13h7CS">
       <property role="TrG5h" value="visibleContentsOfType" />
-      <property role="13i0it" value="false" />
+      <property role="13i0it" value="true" />
       <property role="13i0iv" value="false" />
       <node concept="37vLTG" id="79$zShlSHy0" role="3clF46">
         <property role="TrG5h" value="targetConcept" />
@@ -4200,18 +4287,18 @@
             <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
             <node concept="BsUDl" id="79$zShlSNxj" role="37wK5m">
               <ref role="37wK5l" node="6clJcrJXo2_" resolve="visibleContentsOfType" />
-              <node concept="2OqwBi" id="79$zShlSPTy" role="37wK5m">
-                <node concept="FGMqu" id="5ZSJngDQBJ9" role="2OqNvi" />
+              <node concept="2OqwBi" id="jS_CvxQAq1" role="37wK5m">
                 <node concept="37vLTw" id="79$zShlSO$h" role="2Oq$k0">
                   <ref role="3cqZAo" node="79$zShlSHy0" resolve="targetConcept" />
                 </node>
+                <node concept="FGMqu" id="jS_CvxQARU" role="2OqNvi" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="3uibUv" id="3jEbQoczdtt" role="3clF45">
-        <ref role="3uigEE" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+      <node concept="3uibUv" id="jS_CvxQ7xv" role="3clF45">
+        <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
       </node>
     </node>
     <node concept="13i0hz" id="7Vd878lThb_" role="13h7CS">
@@ -4225,18 +4312,81 @@
       <node concept="3Tm1VV" id="7Vd878lThbC" role="1B3o_S" />
       <node concept="3clFbS" id="7Vd878lThbD" role="3clF47">
         <node concept="3clFbF" id="7Vd878lThdv" role="3cqZAp">
-          <node concept="2OqwBi" id="7Vd878lThCs" role="3clFbG">
-            <node concept="BsUDl" id="7Vd878lThdu" role="2Oq$k0">
-              <ref role="37wK5l" node="6clJcrJXo2_" resolve="visibleContentsOfType" />
-              <node concept="37vLTw" id="7Vd878lThjn" role="37wK5m">
+          <node concept="BsUDl" id="7Vd878lThdu" role="3clFbG">
+            <ref role="37wK5l" node="jS_CvxKV1a" resolve="hasVisibleContentsOfType" />
+            <node concept="2OqwBi" id="jS_CvxLCyQ" role="37wK5m">
+              <node concept="37vLTw" id="jS_CvxLBzN" role="2Oq$k0">
                 <ref role="3cqZAo" node="7Vd878lThbA" resolve="targetConcept" />
               </node>
+              <node concept="1rGIog" id="jS_CvxLCLo" role="2OqNvi" />
             </node>
-            <node concept="3GX2aA" id="7Vd878lTiVf" role="2OqNvi" />
           </node>
         </node>
       </node>
       <node concept="10P_77" id="7Vd878lThdp" role="3clF45" />
+      <node concept="P$JXv" id="jS_CvxKVFJ" role="lGtFl">
+        <node concept="TZ5HA" id="jS_CvxKVVm" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxKVVn" role="1dT_Ay">
+            <property role="1dT_AB" value="Please consider using the new method overload that takes a concept instead of conceptNode" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="jS_CvxKVVo" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxKVVp" role="1dT_Ay">
+            <property role="1dT_AB" value="This method will be removed in future releases!" />
+          </node>
+        </node>
+        <node concept="TZ5HI" id="jS_CvxKVFK" role="3nqlJM">
+          <node concept="TZ5HA" id="jS_CvxKVFL" role="3HnX3l" />
+        </node>
+        <node concept="VUp57" id="jS_CvxLb7M" role="3nqlJM">
+          <node concept="VXe0Z" id="jS_CvxLhkS" role="VUp5m">
+            <ref role="VXe0S" node="jS_CvxKV1a" resolve="hasVisibleContentsOfType" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="jS_CvxKVFM" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="jS_CvxKV1a" role="13h7CS">
+      <property role="TrG5h" value="hasVisibleContentsOfType" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="false" />
+      <node concept="37vLTG" id="jS_CvxKV1b" role="3clF46">
+        <property role="TrG5h" value="targetConcept" />
+        <node concept="3bZ5Sz" id="jS_CvxKV$K" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="jS_CvxKV1d" role="1B3o_S" />
+      <node concept="3clFbS" id="jS_CvxKV1e" role="3clF47">
+        <node concept="3clFbF" id="jS_CvxKV1f" role="3cqZAp">
+          <node concept="2OqwBi" id="jS_CvxKV1g" role="3clFbG">
+            <node concept="BsUDl" id="jS_CvxKV1h" role="2Oq$k0">
+              <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+              <node concept="37vLTw" id="jS_CvxKV1i" role="37wK5m">
+                <ref role="3cqZAo" node="jS_CvxKV1b" resolve="targetConcept" />
+              </node>
+            </node>
+            <node concept="3GX2aA" id="jS_CvxKV1j" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="jS_CvxKV1k" role="3clF45" />
+      <node concept="P$JXv" id="4sJC01P2WDI" role="lGtFl">
+        <node concept="TZ5HA" id="4sJC01P2WDJ" role="TZ5H$">
+          <node concept="1dT_AC" id="4sJC01P2WDK" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks if there is any element of a concept visisble" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4sJC01P2WDL" role="3nqlJM">
+          <property role="TUZQ4" value="the concept to check for" />
+          <node concept="zr_55" id="4sJC01P2WDN" role="zr_5Q">
+            <ref role="zr_51" node="jS_CvxKV1b" resolve="targetConcept" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4sJC01P2WDO" role="3nqlJM">
+          <property role="x79VB" value="true is there is any inscope, false if not" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6clJcrJXo2G" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -4253,83 +4403,167 @@
       <node concept="3Tm1VV" id="6clJcrJXo2L" role="1B3o_S" />
       <node concept="3Tqbb2" id="6clJcrJXo2M" role="3clF45" />
       <node concept="3clFbS" id="6clJcrJXo2N" role="3clF47">
-        <node concept="3cpWs8" id="6clJcrJXo2O" role="3cqZAp">
-          <node concept="3cpWsn" id="6clJcrJXo2P" role="3cpWs9">
-            <property role="TrG5h" value="elements" />
-            <node concept="A3Dl8" id="6clJcrJXo2Q" role="1tU5fm">
-              <node concept="3Tqbb2" id="6clJcrJXo2R" role="A3Ik2" />
-            </node>
-            <node concept="BsUDl" id="6clJcrJXo2S" role="33vP2m">
-              <ref role="37wK5l" node="6clJcrJXo2_" resolve="visibleContentsOfType" />
-              <node concept="37vLTw" id="6clJcrJXo2T" role="37wK5m">
+        <node concept="3clFbF" id="jS_CvxOw4X" role="3cqZAp">
+          <node concept="BsUDl" id="jS_CvxOw4W" role="3clFbG">
+            <ref role="37wK5l" node="jS_CvxKV3X" resolve="findByName" />
+            <node concept="2OqwBi" id="jS_CvxOwgU" role="37wK5m">
+              <node concept="37vLTw" id="jS_CvxOw5w" role="2Oq$k0">
                 <ref role="3cqZAo" node="6clJcrJXo2H" resolve="targetConcept" />
               </node>
+              <node concept="1rGIog" id="jS_CvxOwwD" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="jS_CvxOwKS" role="37wK5m">
+              <ref role="3cqZAo" node="6clJcrJXo2J" resolve="name" />
             </node>
           </node>
         </node>
-        <node concept="2Gpval" id="6clJcrJXo2U" role="3cqZAp">
-          <node concept="2GrKxI" id="6clJcrJXo2V" role="2Gsz3X">
-            <property role="TrG5h" value="e" />
+      </node>
+      <node concept="P$JXv" id="jS_CvxKVu5" role="lGtFl">
+        <node concept="TZ5HA" id="jS_CvxKVVC" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxKVVD" role="1dT_Ay">
+            <property role="1dT_AB" value="Please consider using the new method overload that takes a concept instead of conceptNode" />
           </node>
-          <node concept="37vLTw" id="6clJcrJXo2W" role="2GsD0m">
-            <ref role="3cqZAo" node="6clJcrJXo2P" resolve="elements" />
+        </node>
+        <node concept="TZ5HA" id="jS_CvxKVVE" role="TZ5H$">
+          <node concept="1dT_AC" id="jS_CvxKVVF" role="1dT_Ay">
+            <property role="1dT_AB" value="This method will be removed in future releases! " />
           </node>
-          <node concept="3clFbS" id="6clJcrJXo2X" role="2LFqv$">
-            <node concept="3clFbJ" id="6clJcrJXo2Y" role="3cqZAp">
-              <node concept="2OqwBi" id="6clJcrJXo2Z" role="3clFbw">
-                <node concept="2GrUjf" id="6clJcrJXo30" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="6clJcrJXo2V" resolve="e" />
-                </node>
-                <node concept="1mIQ4w" id="6clJcrJXo31" role="2OqNvi">
-                  <node concept="chp4Y" id="6clJcrJXo32" role="cj9EA">
-                    <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbS" id="6clJcrJXo33" role="3clFbx">
-                <node concept="3clFbJ" id="6clJcrJXo34" role="3cqZAp">
-                  <node concept="2OqwBi" id="6clJcrJXo35" role="3clFbw">
-                    <node concept="2OqwBi" id="6clJcrJXo36" role="2Oq$k0">
-                      <node concept="1PxgMI" id="6clJcrJXo37" role="2Oq$k0">
-                        <node concept="chp4Y" id="79i$vAY5P5L" role="3oSUPX">
-                          <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                        </node>
-                        <node concept="2GrUjf" id="6clJcrJXo38" role="1m5AlR">
-                          <ref role="2Gs0qQ" node="6clJcrJXo2V" resolve="e" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="6clJcrJXo39" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="6clJcrJXo3a" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                      <node concept="37vLTw" id="6clJcrJXo3b" role="37wK5m">
-                        <ref role="3cqZAo" node="6clJcrJXo2J" resolve="name" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="6clJcrJXo3c" role="3clFbx">
-                    <node concept="3cpWs6" id="6clJcrJXo3d" role="3cqZAp">
-                      <node concept="2GrUjf" id="6clJcrJXo3e" role="3cqZAk">
-                        <ref role="2Gs0qQ" node="6clJcrJXo2V" resolve="e" />
-                      </node>
-                    </node>
+        </node>
+        <node concept="TZ5HI" id="jS_CvxKVu6" role="3nqlJM">
+          <node concept="TZ5HA" id="jS_CvxKVu7" role="3HnX3l" />
+        </node>
+        <node concept="VUp57" id="jS_CvxKVWm" role="3nqlJM">
+          <node concept="VXe0Z" id="jS_CvxL6ho" role="VUp5m">
+            <ref role="VXe0S" node="jS_CvxKV3X" resolve="findByName" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="jS_CvxKVu8" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="jS_CvxKV3X" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="findByName" />
+      <node concept="37vLTG" id="jS_CvxKV3Y" role="3clF46">
+        <property role="TrG5h" value="targetConcept" />
+        <node concept="3bZ5Sz" id="jS_CvxKVhs" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="jS_CvxKV40" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="jS_CvxKV41" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="jS_CvxKV42" role="1B3o_S" />
+      <node concept="3Tqbb2" id="jS_CvxKV43" role="3clF45" />
+      <node concept="3clFbS" id="jS_CvxKV44" role="3clF47">
+        <node concept="3clFbJ" id="7fyPPvBTv4f" role="3cqZAp">
+          <node concept="3clFbS" id="7fyPPvBTv4h" role="3clFbx">
+            <node concept="YS8fn" id="7fyPPvBTvLr" role="3cqZAp">
+              <node concept="2ShNRf" id="7fyPPvBTvMm" role="YScLw">
+                <node concept="1pGfFk" id="7fyPPvBTHDY" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
+                  <node concept="Xl_RD" id="7fyPPvBTHGx" role="37wK5m">
+                    <property role="Xl_RC" value="targetConcept must implement INamedConcept" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
+          <node concept="3fqX7Q" id="7fyPPvBTvEh" role="3clFbw">
+            <node concept="2OqwBi" id="7fyPPvBTvEj" role="3fr31v">
+              <node concept="37vLTw" id="7fyPPvBTvEk" role="2Oq$k0">
+                <ref role="3cqZAo" node="jS_CvxKV3Y" resolve="targetConcept" />
+              </node>
+              <node concept="2Zo12i" id="7fyPPvBTvEl" role="2OqNvi">
+                <node concept="chp4Y" id="7fyPPvBTvEm" role="2Zo12j">
+                  <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
-        <node concept="3clFbF" id="6clJcrJXo3f" role="3cqZAp">
-          <node concept="10Nm6u" id="6clJcrJXo3g" role="3clFbG" />
+        <node concept="3clFbH" id="7fyPPvBTIjS" role="3cqZAp" />
+        <node concept="3clFbF" id="jS_CvxKV45" role="3cqZAp">
+          <node concept="2OqwBi" id="jS_CvxKV46" role="3clFbG">
+            <node concept="2OqwBi" id="jS_CvxKV47" role="2Oq$k0">
+              <node concept="BsUDl" id="jS_CvxKV48" role="2Oq$k0">
+                <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
+                <node concept="37vLTw" id="jS_CvxKV49" role="37wK5m">
+                  <ref role="3cqZAo" node="jS_CvxKV3Y" resolve="targetConcept" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="jS_CvxKV4a" role="2OqNvi">
+                <node concept="chp4Y" id="jS_CvxKV4b" role="v3oSu">
+                  <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                </node>
+              </node>
+            </node>
+            <node concept="1z4cxt" id="jS_CvxKV4c" role="2OqNvi">
+              <node concept="1bVj0M" id="jS_CvxKV4d" role="23t8la">
+                <node concept="3clFbS" id="jS_CvxKV4e" role="1bW5cS">
+                  <node concept="3clFbF" id="jS_CvxKV4f" role="3cqZAp">
+                    <node concept="17R0WA" id="jS_CvxKV4g" role="3clFbG">
+                      <node concept="37vLTw" id="jS_CvxKV4h" role="3uHU7w">
+                        <ref role="3cqZAo" node="jS_CvxKV40" resolve="name" />
+                      </node>
+                      <node concept="2OqwBi" id="jS_CvxKV4i" role="3uHU7B">
+                        <node concept="37vLTw" id="jS_CvxKV4j" role="2Oq$k0">
+                          <ref role="3cqZAo" node="jS_CvxKV4l" resolve="it" />
+                        </node>
+                        <node concept="3TrcHB" id="jS_CvxKV4k" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="jS_CvxKV4l" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="jS_CvxKV4m" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4sJC01P2WxU" role="lGtFl">
+        <node concept="TZ5HA" id="4sJC01P2WxV" role="TZ5H$">
+          <node concept="1dT_AC" id="4sJC01P2WxW" role="1dT_Ay">
+            <property role="1dT_AB" value="Searches for the first item that matches concept and name. If your langauge supports multiple items with the same " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7fyPPvBTuUp" role="TZ5H$">
+          <node concept="1dT_AC" id="7fyPPvBTuUq" role="1dT_Ay">
+            <property role="1dT_AB" value="name and concept in scope this will only return the first matching both. It only works for Concepts that implement" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7fyPPvBTuYY" role="TZ5H$">
+          <node concept="1dT_AC" id="7fyPPvBTuYZ" role="1dT_Ay">
+            <property role="1dT_AB" value="INamedConcept." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4sJC01P2WxX" role="3nqlJM">
+          <property role="TUZQ4" value="concept to search for" />
+          <node concept="zr_55" id="4sJC01P2WxZ" role="zr_5Q">
+            <ref role="zr_51" node="jS_CvxKV3Y" resolve="targetConcept" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4sJC01P2Wy0" role="3nqlJM">
+          <property role="TUZQ4" value="name of the item" />
+          <node concept="zr_55" id="4sJC01P2Wy2" role="zr_5Q">
+            <ref role="zr_51" node="jS_CvxKV40" resolve="name" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4sJC01P2Wy3" role="3nqlJM">
+          <property role="x79VB" value="the first item matching concep and name" />
         </node>
       </node>
     </node>
     <node concept="13i0hz" id="3g6LnlWuSo8" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="visibleContentsOfType" />
+      <property role="TrG5h" value="visibleContentsOfTypeAsSequence" />
       <node concept="37vLTG" id="3g6LnlWuV_C" role="3clF46">
         <property role="TrG5h" value="targetConcept" />
         <node concept="3bZ5Sz" id="3g6LnlWuV_D" role="1tU5fm" />
@@ -4348,9 +4582,35 @@
               </node>
             </node>
             <node concept="liA8E" id="3g6LnlWuVW$" role="2OqNvi">
-              <ref role="37wK5l" to="o8zo:4IP40Bi3eCU" resolve="getAvailableElements" />
+              <ref role="37wK5l" to="o8zo:3fifI_xCtP7" resolve="getAvailableElements" />
               <node concept="10Nm6u" id="3g6LnlWuVY_" role="37wK5m" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4sJC01P2Wrj" role="lGtFl">
+        <node concept="TZ5HA" id="4sJC01P2Wrk" role="TZ5H$">
+          <node concept="1dT_AC" id="4sJC01P2Wrl" role="1dT_Ay">
+            <property role="1dT_AB" value="Get all items in scope as a sequence. " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7fyPPvBTuWC" role="TZ5H$">
+          <node concept="1dT_AC" id="7fyPPvBTuWD" role="1dT_Ay">
+            <property role="1dT_AB" value="If you require a Scope then please use the method that directly returns a Scope. " />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4sJC01P2Wrm" role="3nqlJM">
+          <property role="TUZQ4" value="concept to search for" />
+          <node concept="zr_55" id="4sJC01P2Wro" role="zr_5Q">
+            <ref role="zr_51" node="3g6LnlWuV_C" resolve="targetConcept" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4sJC01P2Wrp" role="3nqlJM">
+          <property role="x79VB" value="all items of the concept visible" />
+        </node>
+        <node concept="VUp57" id="7fyPPvBT9xL" role="3nqlJM">
+          <node concept="VXe0Z" id="7fyPPvBTlab" role="VUp5m">
+            <ref role="VXe0S" node="79$zShlSHxZ" resolve="visibleContentsOfType" />
           </node>
         </node>
       </node>
