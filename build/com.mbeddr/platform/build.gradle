@@ -82,6 +82,21 @@ task publish_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
     include "com.mbeddr.platform/**"
 }
 
+task defaultWrapper(dependsOn: build_platform) {
+    doFirst {
+        println "######################################################################################"
+        println "#                      THE DEFAULT TASKED HAS BEEN CHANGED                           #"
+        println "#                                                                                    #"
+        println "# The default tasked now only builds the mbeddr platform and no longer all of mbeddr #"
+        println "# including the C part. In order to build everything you will have to invoke the     #"
+        println "# task build_mbeddr. This will give you the old behaviour of building everything.    #"
+        println "######################################################################################"
+    }
+
+}
+
+rootProject.defaultTasks 'defaultWrapper'
+
 task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrAllScriptsPublicationToMavenLocal', 'publishMbeddrPlatformPublicationToMavenLocal'])
 
 tasks.getByPath(':build:com.mbeddr:install').dependsOn install_actionsfilter
