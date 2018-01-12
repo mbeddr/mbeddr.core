@@ -472,6 +472,9 @@
       <concept id="1145572800087" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingsOperation" flags="nn" index="2Ttrtt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -4167,19 +4170,7 @@
         <node concept="3THzug" id="78ltAeXG2Qz" role="1tU5fm" />
       </node>
       <node concept="3Tm1VV" id="6clJcrJXo2C" role="1B3o_S" />
-      <node concept="3clFbS" id="6clJcrJXo2D" role="3clF47">
-        <node concept="3clFbF" id="jS_CvxMlS8" role="3cqZAp">
-          <node concept="BsUDl" id="jS_CvxMlS7" role="3clFbG">
-            <ref role="37wK5l" node="3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
-            <node concept="2OqwBi" id="jS_CvxMm4P" role="37wK5m">
-              <node concept="37vLTw" id="jS_CvxMlTf" role="2Oq$k0">
-                <ref role="3cqZAo" node="6clJcrJXo2A" resolve="targetConcept" />
-              </node>
-              <node concept="1rGIog" id="jS_CvxMmj$" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="6clJcrJXo2D" role="3clF47" />
       <node concept="A3Dl8" id="6clJcrJXo2E" role="3clF45">
         <node concept="3Tqbb2" id="6clJcrJXo2F" role="A3Ik2" />
       </node>
@@ -4258,6 +4249,21 @@
         <node concept="TZ5HA" id="jS_CvxMlMt" role="TZ5H$">
           <node concept="1dT_AC" id="jS_CvxMlMu" role="1dT_Ay">
             <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7fyPPvBTuQ0" role="TZ5H$">
+          <node concept="1dT_AC" id="7fyPPvBTuQ1" role="1dT_Ay">
+            <property role="1dT_AB" value="Be careful when implementing the method this way. If you don't override the new overload that takes the concept " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7fyPPvBTuT5" role="TZ5H$">
+          <node concept="1dT_AC" id="7fyPPvBTuT6" role="1dT_Ay">
+            <property role="1dT_AB" value="then this will end up creating a stack overflow because the implementation of the framework will call into your" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7fyPPvBTuTI" role="TZ5H$">
+          <node concept="1dT_AC" id="7fyPPvBTuTJ" role="1dT_Ay">
+            <property role="1dT_AB" value="method again." />
           </node>
         </node>
       </node>
@@ -4365,6 +4371,22 @@
         </node>
       </node>
       <node concept="10P_77" id="jS_CvxKV1k" role="3clF45" />
+      <node concept="P$JXv" id="4sJC01P2WDI" role="lGtFl">
+        <node concept="TZ5HA" id="4sJC01P2WDJ" role="TZ5H$">
+          <node concept="1dT_AC" id="4sJC01P2WDK" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks if there is any element of a concept visisble" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4sJC01P2WDL" role="3nqlJM">
+          <property role="TUZQ4" value="the concept to check for" />
+          <node concept="zr_55" id="4sJC01P2WDN" role="zr_5Q">
+            <ref role="zr_51" node="jS_CvxKV1b" resolve="targetConcept" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4sJC01P2WDO" role="3nqlJM">
+          <property role="x79VB" value="true is there is any inscope, false if not" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6clJcrJXo2G" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -4435,6 +4457,33 @@
       <node concept="3Tm1VV" id="jS_CvxKV42" role="1B3o_S" />
       <node concept="3Tqbb2" id="jS_CvxKV43" role="3clF45" />
       <node concept="3clFbS" id="jS_CvxKV44" role="3clF47">
+        <node concept="3clFbJ" id="7fyPPvBTv4f" role="3cqZAp">
+          <node concept="3clFbS" id="7fyPPvBTv4h" role="3clFbx">
+            <node concept="YS8fn" id="7fyPPvBTvLr" role="3cqZAp">
+              <node concept="2ShNRf" id="7fyPPvBTvMm" role="YScLw">
+                <node concept="1pGfFk" id="7fyPPvBTHDY" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
+                  <node concept="Xl_RD" id="7fyPPvBTHGx" role="37wK5m">
+                    <property role="Xl_RC" value="targetConcept must implement INamedConcept" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="7fyPPvBTvEh" role="3clFbw">
+            <node concept="2OqwBi" id="7fyPPvBTvEj" role="3fr31v">
+              <node concept="37vLTw" id="7fyPPvBTvEk" role="2Oq$k0">
+                <ref role="3cqZAo" node="jS_CvxKV3Y" resolve="targetConcept" />
+              </node>
+              <node concept="2Zo12i" id="7fyPPvBTvEl" role="2OqNvi">
+                <node concept="chp4Y" id="7fyPPvBTvEm" role="2Zo12j">
+                  <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7fyPPvBTIjS" role="3cqZAp" />
         <node concept="3clFbF" id="jS_CvxKV45" role="3cqZAp">
           <node concept="2OqwBi" id="jS_CvxKV46" role="3clFbG">
             <node concept="2OqwBi" id="jS_CvxKV47" role="2Oq$k0">
@@ -4478,6 +4527,38 @@
           </node>
         </node>
       </node>
+      <node concept="P$JXv" id="4sJC01P2WxU" role="lGtFl">
+        <node concept="TZ5HA" id="4sJC01P2WxV" role="TZ5H$">
+          <node concept="1dT_AC" id="4sJC01P2WxW" role="1dT_Ay">
+            <property role="1dT_AB" value="Searches for the first item that matches concept and name. If your langauge supports multiple items with the same " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7fyPPvBTuUp" role="TZ5H$">
+          <node concept="1dT_AC" id="7fyPPvBTuUq" role="1dT_Ay">
+            <property role="1dT_AB" value="name and concept in scope this will only return the first matching both. It only works for Concepts that implement" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7fyPPvBTuYY" role="TZ5H$">
+          <node concept="1dT_AC" id="7fyPPvBTuYZ" role="1dT_Ay">
+            <property role="1dT_AB" value="INamedConcept." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4sJC01P2WxX" role="3nqlJM">
+          <property role="TUZQ4" value="concept to search for" />
+          <node concept="zr_55" id="4sJC01P2WxZ" role="zr_5Q">
+            <ref role="zr_51" node="jS_CvxKV3Y" resolve="targetConcept" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4sJC01P2Wy0" role="3nqlJM">
+          <property role="TUZQ4" value="name of the item" />
+          <node concept="zr_55" id="4sJC01P2Wy2" role="zr_5Q">
+            <ref role="zr_51" node="jS_CvxKV40" resolve="name" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4sJC01P2Wy3" role="3nqlJM">
+          <property role="x79VB" value="the first item matching concep and name" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="3g6LnlWuSo8" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -4504,6 +4585,32 @@
               <ref role="37wK5l" to="o8zo:3fifI_xCtP7" resolve="getAvailableElements" />
               <node concept="10Nm6u" id="3g6LnlWuVY_" role="37wK5m" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4sJC01P2Wrj" role="lGtFl">
+        <node concept="TZ5HA" id="4sJC01P2Wrk" role="TZ5H$">
+          <node concept="1dT_AC" id="4sJC01P2Wrl" role="1dT_Ay">
+            <property role="1dT_AB" value="Get all items in scope as a sequence. " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7fyPPvBTuWC" role="TZ5H$">
+          <node concept="1dT_AC" id="7fyPPvBTuWD" role="1dT_Ay">
+            <property role="1dT_AB" value="If you require a Scope then please use the method that directly returns a Scope. " />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4sJC01P2Wrm" role="3nqlJM">
+          <property role="TUZQ4" value="concept to search for" />
+          <node concept="zr_55" id="4sJC01P2Wro" role="zr_5Q">
+            <ref role="zr_51" node="3g6LnlWuV_C" resolve="targetConcept" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4sJC01P2Wrp" role="3nqlJM">
+          <property role="x79VB" value="all items of the concept visible" />
+        </node>
+        <node concept="VUp57" id="7fyPPvBT9xL" role="3nqlJM">
+          <node concept="VXe0Z" id="7fyPPvBTlab" role="VUp5m">
+            <ref role="VXe0S" node="79$zShlSHxZ" resolve="visibleContentsOfType" />
           </node>
         </node>
       </node>
