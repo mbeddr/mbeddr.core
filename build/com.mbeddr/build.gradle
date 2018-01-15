@@ -1,19 +1,5 @@
 import de.itemis.mps.gradle.GitBasedVersioning
 
-def userHome = System.properties['user.home']
-def mpsPluginsDirPattern
-if (System.properties['os.name'].toLowerCase().contains('mac')) {
-    mpsPluginsDirPattern = "$userHome/Library/Application Support/%s"
-} else {
-    mpsPluginsDirPattern = "$userHome/.%s/config/plugins"
-}
-
-if (project.hasProperty("MPS_PATHS_SELECTOR")) {
-    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
-} else {
-    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, "MPS$mpsMajor")
-}
-
 ext.mbeddrMajor = "1"
 ext.mbeddrMinor = "0"
 
@@ -59,6 +45,31 @@ if (project.hasProperty("mbeddrVersion")) {
 // the root directory).
 ext.skipResolveMps = project.hasProperty('mpsHomeDir')
 ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "MPS/MPS-mbeddr-$mpsBuild/")
+
+def userHome = System.properties['user.home']
+def mpsPluginsDirPattern
+if (System.properties['os.name'].toLowerCase().contains('mac')) {
+    mpsPluginsDirPattern = "$userHome/Library/Application Support/%s"
+} else {
+    mpsPluginsDirPattern = "$userHome/.%s/config/plugins"
+}
+
+if (project.hasProperty("MPS_PATHS_SELECTOR")) {
+    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
+} else {
+    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, "MPS$mpsMajor")
+}
+
+task install() {
+    doFirst {
+        // check parent gradle file for definition of the variables
+        println "Installing required mbeddr plugins to '$mpsPluginsDir'"
+        if (!project.hasProperty("MPS_PATHS_SELECTOR")) {
+            println "To change 'MPS<>' part, pass MPS_PATHS_SELECTOR property to gradle with -PMPS_PATHS_SELECTOR=<custom path selector>"
+            println "The path selector only contains the the actual selector for instance \"MPS2017.3\" not the full qualifies path to the user plugin directory."
+        }
+    }
+}
 
 logger.info "skipResolveMps: {}, mpsHomeDir: {}", ext.skipResolveMps, ext.mpsHomeDir
 

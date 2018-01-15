@@ -1967,15 +1967,6 @@
         </node>
       </node>
     </node>
-    <node concept="qq9P1" id="41Fzz2alwHA" role="qq9xR">
-      <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="tpee:fzcpWvU" resolve="ParameterReference" />
-      <node concept="3vetai" id="41Fzz2alwI9" role="3vQZUl">
-        <node concept="rqRoa" id="2BvMmLdLlN" role="3vdyny">
-          <ref role="rqRob" to="tpee:f_2OKrz" resolve="parameterDeclaration" />
-        </node>
-      </node>
-    </node>
     <node concept="qq9P1" id="41Fzz2aBJxi" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="tpee:fzcpWvY" resolve="ReturnStatement" />

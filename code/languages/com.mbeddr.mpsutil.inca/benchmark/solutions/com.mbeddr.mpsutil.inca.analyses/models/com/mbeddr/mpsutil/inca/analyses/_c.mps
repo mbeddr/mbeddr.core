@@ -2,14 +2,14 @@
 <model ref="r:58572861-3812-4f16-bf5c-0dfe289ef139(com.mbeddr.mpsutil.inca.analyses._c)">
   <persistence version="9" />
   <languages>
-    <use id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="com.mbeddr.mpsutil.inca.core" version="0" />
-    <use id="cd2909da-ecb4-49dc-b176-33e5c619e516" name="com.mbeddr.mpsutil.inca.gp" version="0" />
-    <use id="8c9a2720-9d21-4370-a226-819eb3e76e1e" name="com.mbeddr.mpsutil.inca.fun" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers" version="0" />
-    <use id="e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2" name="com.mbeddr.mpsutil.inca.data" version="0" />
+    <use id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="com.mbeddr.mpsutil.inca.core" version="-1" />
+    <use id="cd2909da-ecb4-49dc-b176-33e5c619e516" name="com.mbeddr.mpsutil.inca.gp" version="-1" />
+    <use id="8c9a2720-9d21-4370-a226-819eb3e76e1e" name="com.mbeddr.mpsutil.inca.fun" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="97a52717-898f-4598-8150-573d9fd03868" name="jetbrains.mps.lang.dataFlow.analyzers" version="-1" />
+    <use id="e6d2ffd5-9c56-41f8-99ac-9d1ceb13daa2" name="com.mbeddr.mpsutil.inca.data" version="-1" />
   </languages>
   <imports>
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
@@ -94,6 +94,9 @@
       </concept>
       <concept id="7225463921150186994" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperation" flags="ig" index="hMdjl" />
       <concept id="7225463921150311746" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperationParameterDeclaration" flags="ig" index="hPFL_" />
+      <concept id="1651409769243556066" name="com.mbeddr.mpsutil.inca.data.structure.JavaMethodCombinator" flags="ng" index="2kHsid">
+        <reference id="1651409769243556079" name="method" index="2kHsi0" />
+      </concept>
       <concept id="8648799613703210042" name="com.mbeddr.mpsutil.inca.data.structure.EmptyLatticeDefinitionModuleContent" flags="ng" index="2slB5m" />
       <concept id="3600735916649583998" name="com.mbeddr.mpsutil.inca.data.structure.LatticeDefinitionModuleImport" flags="ng" index="C6Zt3" />
       <concept id="3837287384166152484" name="com.mbeddr.mpsutil.inca.data.structure.IDataConstructor" flags="ng" index="2Z3R6J">
@@ -116,7 +119,6 @@
       </concept>
       <concept id="3837287384171340388" name="com.mbeddr.mpsutil.inca.data.structure.DataConstructorCall" flags="ng" index="2ZRyFJ" />
       <concept id="8400401379548959316" name="com.mbeddr.mpsutil.inca.data.structure.LatticeOperationCall" flags="ng" index="1i8UFo" />
-      <concept id="8607574815738007253" name="com.mbeddr.mpsutil.inca.data.structure.JoinOperation" flags="ng" index="3iRr5_" />
       <concept id="5848731312440774191" name="com.mbeddr.mpsutil.inca.data.structure.ILatticeMemberCall" flags="ng" index="1p__0b">
         <child id="3837287384171340393" name="arguments" index="2ZRyFy" />
       </concept>
@@ -350,6 +352,7 @@
       </concept>
     </language>
     <language id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="com.mbeddr.mpsutil.inca.core">
+      <concept id="2654063410512847909" name="com.mbeddr.mpsutil.inca.core.structure.DisableJavaWarningAttribute" flags="ng" index="ebWiT" />
       <concept id="996292992024567127" name="com.mbeddr.mpsutil.inca.core.structure.ExpressionEvaluationValue" flags="ng" index="2k1_p_">
         <child id="996292992024567128" name="expression" index="2k1_pE" />
       </concept>
@@ -4841,6 +4844,7 @@
     <node concept="wJ9QX" id="ziWFuXt4JX" role="xaH5_">
       <ref role="ws7DW" node="ziWFuXsZ1K" resolve="ExpressionHelper" />
     </node>
+    <node concept="ebWiT" id="7cZgJWx$IcV" role="lGtFl" />
   </node>
   <node concept="312cEu" id="5O4bqrThHde">
     <property role="3GE5qa" value="util" />
@@ -8340,10 +8344,12 @@
       </node>
       <node concept="3TL$xT" id="ziWFuXs3JX" role="3TLBbI">
         <node concept="2eLkkM" id="ziWFuXs3K5" role="1dukDx">
+          <node concept="2kHsid" id="4suYlEuBTGa" role="iwB5b">
+            <ref role="2kHsi0" node="2XlXuxNCH7F" resolve="lub" />
+          </node>
           <node concept="2ZQB9c" id="ziWFuXs3K4" role="2eP6Tc">
             <ref role="2ZQB93" node="5sJvx6oOTEM" resolve="IntervalLattice" />
           </node>
-          <node concept="3iRr5_" id="2VqyA73Rj0z" role="iwB5b" />
         </node>
       </node>
     </node>
@@ -8450,10 +8456,12 @@
       </node>
       <node concept="3TL$xT" id="ziWFuXsWST" role="3TLBbI">
         <node concept="2eLkkM" id="ziWFuXsWSU" role="1dukDx">
+          <node concept="2kHsid" id="4suYlEuBYXG" role="iwB5b">
+            <ref role="2kHsi0" node="2XlXuxNCH7F" resolve="lub" />
+          </node>
           <node concept="2ZQB9c" id="ziWFuXsWSV" role="2eP6Tc">
             <ref role="2ZQB93" node="5sJvx6oOTEM" resolve="IntervalLattice" />
           </node>
-          <node concept="3iRr5_" id="2VqyA73RrRZ" role="iwB5b" />
         </node>
       </node>
       <node concept="3inDWU" id="7sJixMGbyCX" role="lGtFl" />
@@ -9211,10 +9219,12 @@
       </node>
       <node concept="3TL$xT" id="ziWFuXo41n" role="3TLBbI">
         <node concept="2eLkkM" id="ziWFuXo41v" role="1dukDx">
+          <node concept="2kHsid" id="4suYlEuC4sg" role="iwB5b">
+            <ref role="2kHsi0" node="2XlXuxNCH7F" resolve="lub" />
+          </node>
           <node concept="2ZQB9c" id="ziWFuXo41u" role="2eP6Tc">
             <ref role="2ZQB93" node="5sJvx6oOTEM" resolve="IntervalLattice" />
           </node>
-          <node concept="3iRr5_" id="2VqyA73R$IS" role="iwB5b" />
         </node>
       </node>
       <node concept="wzYhD" id="23zDCDoD8WE" role="wzYgH" />
@@ -9298,10 +9308,12 @@
       </node>
       <node concept="3TL$xT" id="5zFTUsxEu$Z" role="3TLBbI">
         <node concept="2eLkkM" id="5zFTUsxEu_0" role="1dukDx">
+          <node concept="2kHsid" id="4suYlEuCfUg" role="iwB5b">
+            <ref role="2kHsi0" node="5zFTUsxEGHd" resolve="lub" />
+          </node>
           <node concept="2ZQB9c" id="5zFTUsxFg8C" role="2eP6Tc">
             <ref role="2ZQB93" node="5zFTUsxEGGa" resolve="NumberLattice" />
           </node>
-          <node concept="3iRr5_" id="2VqyA73RLKs" role="iwB5b" />
         </node>
       </node>
     </node>
@@ -9408,10 +9420,12 @@
       </node>
       <node concept="3TL$xT" id="5zFTUsxEu_D" role="3TLBbI">
         <node concept="2eLkkM" id="5zFTUsxEu_E" role="1dukDx">
+          <node concept="2kHsid" id="4suYlEuCkx_" role="iwB5b">
+            <ref role="2kHsi0" node="5zFTUsxEGHd" resolve="lub" />
+          </node>
           <node concept="2ZQB9c" id="5zFTUsxFk0s" role="2eP6Tc">
             <ref role="2ZQB93" node="5zFTUsxEGGa" resolve="NumberLattice" />
           </node>
-          <node concept="3iRr5_" id="2VqyA73RQdN" role="iwB5b" />
         </node>
       </node>
       <node concept="3inDWU" id="7sJixMGaL4k" role="lGtFl" />
@@ -10106,10 +10120,12 @@
       </node>
       <node concept="3TL$xT" id="5zFTUsxEuDD" role="3TLBbI">
         <node concept="2eLkkM" id="5zFTUsxEuDE" role="1dukDx">
+          <node concept="2kHsid" id="4suYlEuCuny" role="iwB5b">
+            <ref role="2kHsi0" node="5zFTUsxEGHd" resolve="lub" />
+          </node>
           <node concept="2ZQB9c" id="5zFTUsxFnXa" role="2eP6Tc">
             <ref role="2ZQB93" node="5zFTUsxEGGa" resolve="NumberLattice" />
           </node>
-          <node concept="3iRr5_" id="2VqyA73RU9m" role="iwB5b" />
         </node>
       </node>
       <node concept="wzYhD" id="5zFTUsxEuDG" role="wzYgH" />

@@ -5,6 +5,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
@@ -31,6 +32,7 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
   </imports>
@@ -78,8 +80,16 @@
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
@@ -244,6 +254,13 @@
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -2764,6 +2781,26 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="20OtND1EgVD" role="3clF47">
+        <node concept="3cpWs8" id="HtNrEHAIQG" role="3cqZAp">
+          <node concept="3cpWsn" id="HtNrEHAIQH" role="3cpWs9">
+            <property role="TrG5h" value="imageFile" />
+            <node concept="3uibUv" id="HtNrEHAIQB" role="1tU5fm">
+              <ref role="3uigEE" to="3ju5:~IFile" resolve="IFile" />
+            </node>
+            <node concept="2OqwBi" id="HtNrEHAIQI" role="33vP2m">
+              <node concept="2YIFZM" id="HtNrEHAIQJ" role="2Oq$k0">
+                <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
+                <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="HtNrEHAIQK" role="2OqNvi">
+                <ref role="37wK5l" to="3ju5:~FileSystem.getFile(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFile" />
+                <node concept="37vLTw" id="HtNrEHAIQL" role="37wK5m">
+                  <ref role="3cqZAo" node="20OtND1EgVB" resolve="fileName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="20OtND1EgVE" role="3cqZAp">
           <node concept="1Wc70l" id="20OtND1EgVF" role="3clFbw">
             <node concept="3y3z36" id="20OtND1EgVG" role="3uHU7B">
@@ -2773,17 +2810,8 @@
               <node concept="10Nm6u" id="20OtND1EgVI" role="3uHU7w" />
             </node>
             <node concept="2OqwBi" id="7bBLNlFJM$O" role="3uHU7w">
-              <node concept="2OqwBi" id="7bBLNlFJMgN" role="2Oq$k0">
-                <node concept="2YIFZM" id="7bBLNlFJM8c" role="2Oq$k0">
-                  <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
-                  <ref role="37wK5l" to="3ju5:~FileSystem.getInstance():jetbrains.mps.vfs.FileSystem" resolve="getInstance" />
-                </node>
-                <node concept="liA8E" id="7bBLNlFJMp5" role="2OqNvi">
-                  <ref role="37wK5l" to="3ju5:~FileSystem.getFileByPath(java.lang.String):jetbrains.mps.vfs.IFile" resolve="getFileByPath" />
-                  <node concept="37vLTw" id="7bBLNlFJMud" role="37wK5m">
-                    <ref role="3cqZAo" node="20OtND1EgVB" resolve="fileName" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="HtNrEHAIQM" role="2Oq$k0">
+                <ref role="3cqZAo" node="HtNrEHAIQH" resolve="imageFile" />
               </node>
               <node concept="liA8E" id="7bBLNlFJMLy" role="2OqNvi">
                 <ref role="37wK5l" to="3ju5:~IFile.exists():boolean" resolve="exists" />
@@ -2791,16 +2819,44 @@
             </node>
           </node>
           <node concept="3clFbS" id="20OtND1EgVQ" role="3clFbx">
-            <node concept="3cpWs6" id="20OtND1EjlH" role="3cqZAp">
-              <node concept="2OqwBi" id="20OtND1EgVU" role="3cqZAk">
-                <node concept="2YIFZM" id="20OtND1EgW3" role="2Oq$k0">
-                  <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit():java.awt.Toolkit" resolve="getDefaultToolkit" />
-                  <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
+            <node concept="SfApY" id="HtNrEHANwY" role="3cqZAp">
+              <node concept="3clFbS" id="HtNrEHANwZ" role="SfCbr">
+                <node concept="3cpWs6" id="20OtND1EjlH" role="3cqZAp">
+                  <node concept="2OqwBi" id="20OtND1EgVU" role="3cqZAk">
+                    <node concept="2YIFZM" id="20OtND1EgW3" role="2Oq$k0">
+                      <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit():java.awt.Toolkit" resolve="getDefaultToolkit" />
+                      <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
+                    </node>
+                    <node concept="liA8E" id="20OtND1EgVW" role="2OqNvi">
+                      <ref role="37wK5l" to="z60i:~Toolkit.getImage(java.net.URL):java.awt.Image" resolve="getImage" />
+                      <node concept="2OqwBi" id="HtNrEHAMVX" role="37wK5m">
+                        <node concept="37vLTw" id="HtNrEHAJiD" role="2Oq$k0">
+                          <ref role="3cqZAo" node="HtNrEHAIQH" resolve="imageFile" />
+                        </node>
+                        <node concept="liA8E" id="HtNrEHAN5d" role="2OqNvi">
+                          <ref role="37wK5l" to="3ju5:~IFile.getUrl():java.net.URL" resolve="getUrl" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="liA8E" id="20OtND1EgVW" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Toolkit.getImage(java.lang.String):java.awt.Image" resolve="getImage" />
-                  <node concept="37vLTw" id="20OtND1EgVX" role="37wK5m">
-                    <ref role="3cqZAo" node="20OtND1EgVB" resolve="fileName" />
+              </node>
+              <node concept="TDmWw" id="HtNrEHANx5" role="TEbGg">
+                <node concept="3clFbS" id="HtNrEHANx8" role="TDEfX">
+                  <node concept="RRSsy" id="HtNrEHAY8_" role="3cqZAp">
+                    <property role="RRSoG" value="error" />
+                    <node concept="Xl_RD" id="HtNrEHAY8B" role="RRSoy">
+                      <property role="Xl_RC" value="Failed to load checkbox image" />
+                    </node>
+                    <node concept="37vLTw" id="HtNrEHAY8D" role="RRSow">
+                      <ref role="3cqZAo" node="HtNrEHANx9" resolve="e" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWsn" id="HtNrEHANx9" role="TDEfY">
+                  <property role="TrG5h" value="e" />
+                  <node concept="3uibUv" id="HtNrEHAVul" role="1tU5fm">
+                    <ref role="3uigEE" to="zf81:~MalformedURLException" resolve="MalformedURLException" />
                   </node>
                 </node>
               </node>
