@@ -51,6 +51,12 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow">
@@ -729,11 +735,19 @@
             </node>
           </node>
         </node>
-        <node concept="3_J$rt" id="3IsZZljTwHP" role="3cqZAp">
-          <node concept="3_IKw2" id="3IsZZljTwLj" role="3_JbIs">
-            <node concept="2OqwBi" id="3IsZZljTwT4" role="3_I9Fq">
-              <node concept="3__QtB" id="3IsZZljTwLM" role="2Oq$k0" />
-              <node concept="1mfA1w" id="3IsZZljTx8m" role="2OqNvi" />
+        <node concept="3clFbH" id="1Ld$kZt7jlh" role="3cqZAp" />
+        <node concept="3SKdUt" id="1Ld$kZt7jc7" role="3cqZAp">
+          <node concept="3SKdUq" id="1Ld$kZt7jc9" role="3SKWNk">
+            <property role="3SKdUp" value="May be unreachable if body contains a return" />
+          </node>
+        </node>
+        <node concept="3F2QtG" id="1Ld$kZsJwlh" role="3cqZAp">
+          <node concept="3_JC1X" id="1Ld$kZsJvZL" role="3F2SoO">
+            <node concept="3_IKw2" id="1Ld$kZsJw2L" role="3_JbIs">
+              <node concept="2OqwBi" id="1Ld$kZsJwb9" role="3_I9Fq">
+                <node concept="3__QtB" id="1Ld$kZsJw3c" role="2Oq$k0" />
+                <node concept="1mfA1w" id="1Ld$kZsJwkE" role="2OqNvi" />
+              </node>
             </node>
           </node>
         </node>
