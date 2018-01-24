@@ -337,6 +337,17 @@
           </node>
         </node>
       </node>
+      <node concept="3EZMnI" id="5RfdBauVkl_" role="3EZMnx">
+        <node concept="2iRfu4" id="5RfdBauVklA" role="2iSdaV" />
+        <node concept="3XFhqQ" id="5RfdBauVklB" role="3EZMnx" />
+        <node concept="3F0ifn" id="5RfdBauVklC" role="3EZMnx">
+          <property role="3F0ifm" value="disabled context actions: " />
+        </node>
+        <node concept="3F2HdR" id="5RfdBauX4Yq" role="3EZMnx">
+          <ref role="1NtTu8" to="4w5v:5RfdBauVjKG" resolve="disabledContextActions" />
+          <node concept="l2Vlx" id="5RfdBauX4Yt" role="2czzBx" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3onExzPmfSk">

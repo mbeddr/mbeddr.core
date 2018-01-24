@@ -328,6 +328,12 @@
       <property role="IQ2ns" value="5022141054905293092" />
       <ref role="20lvS9" node="4mMeETlyh$F" resolve="GenericActionSource_ExecuteFunction" />
     </node>
+    <node concept="1TJgyj" id="$ugHPy8Xpg" role="1TKVEi">
+      <property role="IQ2ns" value="657036114244392528" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="originalContextActionID" />
+      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4mMeETlyh$F">
     <property role="TrG5h" value="GenericActionSource_ExecuteFunction" />
@@ -609,7 +615,6 @@
   </node>
   <node concept="1TIwiD" id="7uF2w19TiCc">
     <property role="TrG5h" value="ConceptInstanceAction" />
-    <property role="34LRSv" value="concept instance action" />
     <property role="EcuMT" value="8622996907886979596" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7uF2w19Vfp1" role="1TKVEl">
@@ -628,7 +633,7 @@
       <property role="20kJfa" value="label" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8622996907887081686" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
     </node>
     <node concept="1TJgyj" id="23_jb1yL7J" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -735,6 +740,18 @@
     <property role="34LRSv" value="contextNode" />
     <property role="EcuMT" value="37037267178195404" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3y7CaIpppfq">
+    <property role="EcuMT" value="4073401046853325786" />
+    <property role="TrG5h" value="DisableContextInstanceAction" />
+    <property role="34LRSv" value="disable context actions" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="3y7CaIpppfr" role="1TKVEi">
+      <property role="IQ2ns" value="4073401046853325787" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="actionSource" />
+      <ref role="20lvS9" node="7uF2w19TiCc" resolve="ConceptInstanceAction" />
+    </node>
   </node>
 </model>
 
