@@ -415,6 +415,9 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
+        <child id="1143224066849" name="insertedNode" index="HtI8F" />
+      </concept>
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
@@ -5624,8 +5627,8 @@
                       <node concept="37vLTw" id="6towh06aHow" role="2Oq$k0">
                         <ref role="3cqZAo" node="6towh06aHp6" resolve="enumDecl" />
                       </node>
-                      <node concept="HtX7F" id="6towh06aHox" role="2OqNvi">
-                        <node concept="37vLTw" id="6towh06aHoy" role="HtX7I">
+                      <node concept="HtI8k" id="44$3$$8iji4" role="2OqNvi">
+                        <node concept="37vLTw" id="44$3$$8ikv1" role="HtI8F">
                           <ref role="3cqZAo" node="6towh06aHo7" resolve="typeDefForEnum" />
                         </node>
                       </node>

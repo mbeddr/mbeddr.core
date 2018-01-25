@@ -1341,6 +1341,9 @@
       <node concept="2v9HqM" id="7wbBBG6T4ZM" role="2eOfOg">
         <ref role="2v9HqP" node="_N$P_AvbHG" resolve="nestedStructDefinitions" />
       </node>
+      <node concept="2v9HqM" id="44$3$$8hr9X" role="2eOfOg">
+        <ref role="2v9HqP" node="44$3$$8gJaQ" resolve="Issue1759" />
+      </node>
     </node>
     <node concept="2xfidK" id="1WKZBvBXE1v" role="2AWWZH">
       <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
@@ -2750,6 +2753,19 @@
     </node>
     <node concept="2NXPZ9" id="7wbBBG6SPSh" role="N3F5h">
       <property role="TrG5h" value="empty_1507794979417_5" />
+    </node>
+  </node>
+  <node concept="N3F5e" id="44$3$$8gJaQ">
+    <property role="TrG5h" value="Issue1759" />
+    <node concept="1AkAjs" id="44$3$$8gJaZ" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="myEnum" />
+      <node concept="1AkAjq" id="44$3$$8gJb0" role="1AkAjA">
+        <property role="TrG5h" value="item1" />
+      </node>
+      <node concept="1AkAjq" id="44$3$$8gJbc" role="1AkAjA">
+        <property role="TrG5h" value="item2" />
+      </node>
     </node>
   </node>
 </model>
