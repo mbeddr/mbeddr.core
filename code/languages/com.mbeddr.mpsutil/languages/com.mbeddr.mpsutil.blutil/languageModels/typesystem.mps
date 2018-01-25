@@ -123,6 +123,12 @@
       <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
         <child id="1196350785114" name="quotedNode" index="2c44tc" />
       </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+      </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
@@ -3579,6 +3585,84 @@
     <node concept="1YaCAy" id="5KHBa6l7GUS" role="1YuTPh">
       <property role="TrG5h" value="safeWriteAction" />
       <ref role="1YaFvo" to="hba4:1IlnVQ9J0Vi" resolve="SafeWriteAction" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3DSLkDUvPaC">
+    <property role="TrG5h" value="typeof_RootMappingExecutedExpression" />
+    <property role="3GE5qa" value="genUtil" />
+    <node concept="3clFbS" id="3DSLkDUvPaD" role="18ibNy">
+      <node concept="1Z5TYs" id="3DSLkDUvTPh" role="3cqZAp">
+        <node concept="mw_s8" id="3DSLkDUvTPk" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3DSLkDUvRoo" role="mwGJk">
+            <node concept="1YBJjd" id="3DSLkDUvRoE" role="1Z2MuG">
+              <ref role="1YBMHb" node="3DSLkDUvPaF" resolve="rootMappingExecutedExpression" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3DSLkDUvUl_" role="1ZfhKB">
+          <node concept="2pJPEk" id="3DSLkDUvUlx" role="mwGJk">
+            <node concept="2pJPED" id="3DSLkDUvUlK" role="2pJPEn">
+              <ref role="2pJxaS" to="tpee:f_0P_4Y" resolve="BooleanType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3DSLkDUvPaF" role="1YuTPh">
+      <property role="TrG5h" value="rootMappingExecutedExpression" />
+      <ref role="1YaFvo" to="hba4:3DSLkDUvP9k" resolve="RootMappingHasBeenExecutedExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3DSLkDUGEYr">
+    <property role="TrG5h" value="typeof_RootMappingExecuteOnceExpression" />
+    <property role="3GE5qa" value="genUtil" />
+    <node concept="3clFbS" id="3DSLkDUGEYs" role="18ibNy">
+      <node concept="1Z5TYs" id="3DSLkDUGF_C" role="3cqZAp">
+        <node concept="mw_s8" id="3DSLkDUGFA4" role="1ZfhKB">
+          <node concept="2pJPEk" id="3DSLkDUGFA0" role="mwGJk">
+            <node concept="2pJPED" id="3DSLkDUGFAi" role="2pJPEn">
+              <ref role="2pJxaS" to="tpee:f_0P_4Y" resolve="BooleanType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3DSLkDUGF_F" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3DSLkDUGEYy" role="mwGJk">
+            <node concept="1YBJjd" id="3DSLkDUGF0l" role="1Z2MuG">
+              <ref role="1YBMHb" node="3DSLkDUGEYu" resolve="rootMappingExecuteOnceExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3DSLkDUGEYu" role="1YuTPh">
+      <property role="TrG5h" value="rootMappingExecuteOnceExpression" />
+      <ref role="1YaFvo" to="hba4:3DSLkDUGEYj" resolve="RootMappingExecuteOnceExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3DSLkDUGFBj">
+    <property role="TrG5h" value="typeof_SetRootMappingHasBeenExecutedExpression" />
+    <property role="3GE5qa" value="genUtil" />
+    <node concept="3clFbS" id="3DSLkDUGFBk" role="18ibNy">
+      <node concept="1Z5TYs" id="3DSLkDUGFQw" role="3cqZAp">
+        <node concept="mw_s8" id="3DSLkDUGFQW" role="1ZfhKB">
+          <node concept="2pJPEk" id="3DSLkDUGFQS" role="mwGJk">
+            <node concept="2pJPED" id="3DSLkDUGFRa" role="2pJPEn">
+              <ref role="2pJxaS" to="tpee:fzcqZ_H" resolve="VoidType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3DSLkDUGFQz" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3DSLkDUGFBq" role="mwGJk">
+            <node concept="1YBJjd" id="3DSLkDUGFBH" role="1Z2MuG">
+              <ref role="1YBMHb" node="3DSLkDUGFBm" resolve="setRootMappingHasBeenExecutedExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3DSLkDUGFBm" role="1YuTPh">
+      <property role="TrG5h" value="setRootMappingHasBeenExecutedExpression" />
+      <ref role="1YaFvo" to="hba4:3DSLkDUGEYi" resolve="SetRootMappingHasBeenExecutedExpression" />
     </node>
   </node>
 </model>
