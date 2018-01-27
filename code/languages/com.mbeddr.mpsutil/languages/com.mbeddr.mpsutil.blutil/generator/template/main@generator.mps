@@ -34,8 +34,6 @@
     <import index="17wx" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.locks(JDK/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="q1l7" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.template(MPS.Core/)" />
-    <import index="mt0u" ref="r:817e5f99-00a7-4e0a-a330-9b858666e078(com.mbeddr.mpsutil.blutil.rt.genUtil)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -96,7 +94,6 @@
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
-      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -254,7 +251,6 @@
       </concept>
       <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
-        <property id="1184950341882" name="topPriorityGroup" index="3$yP7D" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
@@ -9607,161 +9603,6 @@
             </node>
           </node>
           <node concept="3Tm1VV" id="1IlnVQ9J4cM" role="1B3o_S" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="bUwia" id="3DSLkDUwnD6">
-    <property role="TrG5h" value="GeneratorUtil" />
-    <property role="3$yP7D" value="true" />
-    <property role="3GE5qa" value="genUtil" />
-    <node concept="3aamgX" id="3DSLkDUwnD7" role="3acgRq">
-      <ref role="30HIoZ" to="hba4:3DSLkDUvP9k" resolve="RootMappingHasBeenExecutedExpression" />
-      <node concept="1Koe21" id="3DSLkDUwnDj" role="1lVwrX">
-        <node concept="2YIFZL" id="5piO3v54xr0" role="1Koe22">
-          <property role="TrG5h" value="baseMappingRuleCondition" />
-          <node concept="3Tm1VV" id="5piO3v54xr2" role="1B3o_S" />
-          <node concept="10P_77" id="ZIbLn6YOYI" role="3clF45" />
-          <node concept="37vLTG" id="ZIbLn6YOYG" role="3clF46">
-            <property role="TrG5h" value="_context" />
-            <property role="3TUv4t" value="true" />
-            <node concept="3uibUv" id="ZIbLn6YOYH" role="1tU5fm">
-              <ref role="3uigEE" to="q1l7:~BaseMappingRuleContext" resolve="BaseMappingRuleContext" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="Vt8Qt9Zg0U" role="3clF47">
-            <node concept="3clFbF" id="3DSLkDUwFRu" role="3cqZAp">
-              <node concept="2YIFZM" id="3DSLkDUwFUm" role="3clFbG">
-                <ref role="37wK5l" to="mt0u:3DSLkDUw7Le" resolve="hasBeenExecuted" />
-                <ref role="1Pybhc" to="mt0u:3DSLkDUw7Gx" resolve="GeneratorUtil" />
-                <node concept="2OqwBi" id="3DSLkDUwFVw" role="37wK5m">
-                  <node concept="37vLTw" id="3DSLkDUwFVx" role="2Oq$k0">
-                    <ref role="3cqZAo" node="ZIbLn6YOYG" resolve="_context" />
-                  </node>
-                  <node concept="liA8E" id="3DSLkDUwFVy" role="2OqNvi">
-                    <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getInputNode():org.jetbrains.mps.openapi.model.SNode" resolve="getInputNode" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="3DSLkDUwFYU" role="37wK5m">
-                  <ref role="3cqZAo" node="ZIbLn6YOYG" resolve="_context" />
-                </node>
-                <node concept="2OqwBi" id="3DSLkDUwHkR" role="37wK5m">
-                  <node concept="2OqwBi" id="3DSLkDUwGsQ" role="2Oq$k0">
-                    <node concept="37vLTw" id="3DSLkDUwGcA" role="2Oq$k0">
-                      <ref role="3cqZAo" node="ZIbLn6YOYG" resolve="_context" />
-                    </node>
-                    <node concept="liA8E" id="3DSLkDUwGEr" role="2OqNvi">
-                      <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getTemplateNode():org.jetbrains.mps.openapi.model.SNode" resolve="getTemplateNode" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="3DSLkDUwHvP" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
-                  </node>
-                </node>
-                <node concept="raruj" id="3DSLkDUwInw" role="lGtFl" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3aamgX" id="3DSLkDUGFX0" role="3acgRq">
-      <ref role="30HIoZ" to="hba4:3DSLkDUGEYi" resolve="SetRootMappingHasBeenExecutedExpression" />
-      <node concept="1Koe21" id="3DSLkDUGFX1" role="1lVwrX">
-        <node concept="2YIFZL" id="3DSLkDUGFX2" role="1Koe22">
-          <property role="TrG5h" value="baseMappingRuleCondition" />
-          <node concept="3Tm1VV" id="3DSLkDUGFX3" role="1B3o_S" />
-          <node concept="10P_77" id="3DSLkDUGFX4" role="3clF45" />
-          <node concept="37vLTG" id="3DSLkDUGFX5" role="3clF46">
-            <property role="TrG5h" value="_context" />
-            <property role="3TUv4t" value="true" />
-            <node concept="3uibUv" id="3DSLkDUGFX6" role="1tU5fm">
-              <ref role="3uigEE" to="q1l7:~BaseMappingRuleContext" resolve="BaseMappingRuleContext" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="3DSLkDUGFX7" role="3clF47">
-            <node concept="3clFbF" id="3DSLkDUGFX8" role="3cqZAp">
-              <node concept="2YIFZM" id="3DSLkDUGGfB" role="3clFbG">
-                <ref role="37wK5l" to="mt0u:3DSLkDUwhCD" resolve="setHasBeenExecuted" />
-                <ref role="1Pybhc" to="mt0u:3DSLkDUw7Gx" resolve="GeneratorUtil" />
-                <node concept="2OqwBi" id="3DSLkDUGGfC" role="37wK5m">
-                  <node concept="37vLTw" id="3DSLkDUGGfD" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3DSLkDUGFX5" resolve="_context" />
-                  </node>
-                  <node concept="liA8E" id="3DSLkDUGGfE" role="2OqNvi">
-                    <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getInputNode():org.jetbrains.mps.openapi.model.SNode" resolve="getInputNode" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="3DSLkDUGGfF" role="37wK5m">
-                  <ref role="3cqZAo" node="3DSLkDUGFX5" resolve="_context" />
-                </node>
-                <node concept="2OqwBi" id="3DSLkDUGGfG" role="37wK5m">
-                  <node concept="2OqwBi" id="3DSLkDUGGfH" role="2Oq$k0">
-                    <node concept="37vLTw" id="3DSLkDUGGfI" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3DSLkDUGFX5" resolve="_context" />
-                    </node>
-                    <node concept="liA8E" id="3DSLkDUGGfJ" role="2OqNvi">
-                      <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getTemplateNode():org.jetbrains.mps.openapi.model.SNode" resolve="getTemplateNode" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="3DSLkDUGGfK" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
-                  </node>
-                </node>
-                <node concept="raruj" id="3DSLkDUGGfL" role="lGtFl" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3aamgX" id="3DSLkDUGG5_" role="3acgRq">
-      <ref role="30HIoZ" to="hba4:3DSLkDUGEYj" resolve="RootMappingExecuteOnceExpression" />
-      <node concept="1Koe21" id="3DSLkDUGG5A" role="1lVwrX">
-        <node concept="2YIFZL" id="3DSLkDUGG5B" role="1Koe22">
-          <property role="TrG5h" value="baseMappingRuleCondition" />
-          <node concept="3Tm1VV" id="3DSLkDUGG5C" role="1B3o_S" />
-          <node concept="10P_77" id="3DSLkDUGG5D" role="3clF45" />
-          <node concept="37vLTG" id="3DSLkDUGG5E" role="3clF46">
-            <property role="TrG5h" value="_context" />
-            <property role="3TUv4t" value="true" />
-            <node concept="3uibUv" id="3DSLkDUGG5F" role="1tU5fm">
-              <ref role="3uigEE" to="q1l7:~BaseMappingRuleContext" resolve="BaseMappingRuleContext" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="3DSLkDUGG5G" role="3clF47">
-            <node concept="3clFbF" id="3DSLkDUGG5H" role="3cqZAp">
-              <node concept="2YIFZM" id="3DSLkDUGGSn" role="3clFbG">
-                <ref role="37wK5l" to="mt0u:3DSLkDUwhE0" resolve="executedOnce" />
-                <ref role="1Pybhc" to="mt0u:3DSLkDUw7Gx" resolve="GeneratorUtil" />
-                <node concept="2OqwBi" id="3DSLkDUGGSo" role="37wK5m">
-                  <node concept="37vLTw" id="3DSLkDUGGSp" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3DSLkDUGG5E" resolve="_context" />
-                  </node>
-                  <node concept="liA8E" id="3DSLkDUGGSq" role="2OqNvi">
-                    <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getInputNode():org.jetbrains.mps.openapi.model.SNode" resolve="getInputNode" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="3DSLkDUGGSr" role="37wK5m">
-                  <ref role="3cqZAo" node="3DSLkDUGG5E" resolve="_context" />
-                </node>
-                <node concept="2OqwBi" id="3DSLkDUGGSs" role="37wK5m">
-                  <node concept="2OqwBi" id="3DSLkDUGGSt" role="2Oq$k0">
-                    <node concept="37vLTw" id="3DSLkDUGGSu" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3DSLkDUGG5E" resolve="_context" />
-                    </node>
-                    <node concept="liA8E" id="3DSLkDUGGSv" role="2OqNvi">
-                      <ref role="37wK5l" to="q1l7:~TemplateQueryContext.getTemplateNode():org.jetbrains.mps.openapi.model.SNode" resolve="getTemplateNode" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="3DSLkDUGGSw" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
-                  </node>
-                </node>
-                <node concept="raruj" id="3DSLkDUGGSx" role="lGtFl" />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
     </node>

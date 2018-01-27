@@ -19,7 +19,6 @@
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="fnmy" ref="r:89c0fb70-0977-4113-a076-5906f9d8630f(jetbrains.mps.baseLanguage.scopes)" />
-    <import index="tpf8" ref="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1238,30 +1237,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="3DSLkDUvUne">
-    <property role="3GE5qa" value="genUtil" />
-    <ref role="1M2myG" to="hba4:3DSLkDUvP9k" resolve="RootMappingHasBeenExecutedExpression" />
-    <node concept="9S07l" id="3DSLkDUvUnf" role="9Vyp8">
-      <node concept="3clFbS" id="3DSLkDUvUng" role="2VODD2">
-        <node concept="3clFbF" id="3DSLkDUvZaZ" role="3cqZAp">
-          <node concept="2OqwBi" id="3DSLkDUw0XD" role="3clFbG">
-            <node concept="2OqwBi" id="3DSLkDUvZq3" role="2Oq$k0">
-              <node concept="nLn13" id="3DSLkDUvZaY" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="3DSLkDUvZEO" role="2OqNvi">
-                <node concept="1xMEDy" id="3DSLkDUvZEQ" role="1xVPHs">
-                  <node concept="chp4Y" id="3DSLkDUw0fb" role="ri$Ld">
-                    <ref role="cht4Q" to="tpf8:gZlhOrr" resolve="Root_MappingRule" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="3DSLkDUw0Fm" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="3DSLkDUw1pX" role="2OqNvi" />
           </node>
         </node>
       </node>
