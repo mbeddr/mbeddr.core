@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/languages/EcoreImporter_TestLanguage1/EcoreImporter_TestLanguage1.mpl" folder="testlanguages" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.actionsfilter/com.mbeddr.mpsutil.actionsfilter.mpl" folder="staging.actionsfilter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.bldoc/com.mbeddr.mpsutil.bldoc.mpl" folder="rest" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.blutil.genutil/com.mbeddr.mpsutil.blutil.genutil.mpl" folder="staging.blutil" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" folder="staging.blutil" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.blutil/solutions/com.mbeddr.mpsutil.blutil.rt.msd" folder="staging.blutil" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.breadcrumb.editor/com.mbeddr.mpsutil.breadcrumb.editor.mpl" folder="rest.breadcrumb" />
@@ -121,6 +122,7 @@
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/test.com.mbeddr.mpsutil.blutil.genutil.lang/test.com.mbeddr.mpsutil.blutil.genutil.lang.mpl" folder="staging.blutil" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="staging.actionsfilter" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.blutil.genutil.rt/com.mbeddr.mpsutil.blutil.genutil.rt.msd" folder="staging.blutil" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.breadcrumb.runtime/com.mbeddr.mpsutil.breadcrumb.runtime.msd" folder="rest.breadcrumb" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.buildassistant/com.mbeddr.mpsutil.buildassistant.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.buildutil.runtime/com.mbeddr.mpsutil.buildutil.runtime.msd" folder="rest.buildutil" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="test.com.mbeddr.mpsutil.blutil.genutil.lang" uuid="2980eccb-8de2-4e74-96a0-1908c0172899" languageVersion="0" moduleVersion="0">
+<language namespace="com.mbeddr.mpsutil.blutil.genutil" uuid="189537ea-2a28-44c9-91aa-a8e68b3e1e1b" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,18 +7,19 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="test.com.mbeddr.mpsutil.blutil.genutil.lang#4213334375079416143" uuid="b174e65b-8333-4361-ae60-201190bf7c0a" reflective-queries="true">
+    <generator alias="main" namespace="com.mbeddr.mpsutil.blutil.genutil#8997822907117612984" uuid="afbe2b2e-ae8e-4fde-a4ba-1b3fa862ed4f" reflective-queries="true">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
         </modelRoot>
       </models>
-      <external-templates />
+      <external-templates>
+        <generator generatorUID="f1457ec8-c780-4f6f-89b4-c79af7789be1(jetbrains.mps.lang.generator#1167163152317)" />
+      </external-templates>
       <dependencies>
-        <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+        <dependency reexport="true">6c5bab3e-5035-4a48-b9ea-62747c04e3d6(com.mbeddr.mpsutil.blutil.genutil.rt)</dependency>
       </dependencies>
       <languageVersions>
-        <language slang="l:189537ea-2a28-44c9-91aa-a8e68b3e1e1b:com.mbeddr.mpsutil.blutil.genutil" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="0" />
@@ -40,20 +41,40 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+        <module reference="189537ea-2a28-44c9-91aa-a8e68b3e1e1b(com.mbeddr.mpsutil.blutil.genutil)" version="0" />
+        <module reference="afbe2b2e-ae8e-4fde-a4ba-1b3fa862ed4f(com.mbeddr.mpsutil.blutil.genutil#8997822907117612984)" version="0" />
+        <module reference="6c5bab3e-5035-4a48-b9ea-62747c04e3d6(com.mbeddr.mpsutil.blutil.genutil.rt)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
         <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="f1457ec8-c780-4f6f-89b4-c79af7789be1(jetbrains.mps.lang.generator#1167163152317)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
-        <module reference="2980eccb-8de2-4e74-96a0-1908c0172899(test.com.mbeddr.mpsutil.blutil.genutil.lang)" version="0" />
-        <module reference="b174e65b-8333-4361-ae60-201190bf7c0a(test.com.mbeddr.mpsutil.blutil.genutil.lang#4213334375079416143)" version="0" />
       </dependencyVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="after_or_together">
+          <greater-priority-mapping>
+            <generator generatorUID="afbe2b2e-ae8e-4fde-a4ba-1b3fa862ed4f(com.mbeddr.mpsutil.blutil.genutil#8997822907117612984)" />
+            <external-mapping>
+              <mapping-node modelUID="r:97d56114-1dce-45d8-861d-a7c3e9a761c6(main@generator)" nodeID="8997822907117612985" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="f1457ec8-c780-4f6f-89b4-c79af7789be1(jetbrains.mps.lang.generator#1167163152317)" />
+            <external-mapping>
+              <mapping-node modelUID="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" nodeID="4914935534438618871" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="true">6c5bab3e-5035-4a48-b9ea-62747c04e3d6(com.mbeddr.mpsutil.blutil.genutil.rt)</dependency>
+  </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -94,12 +115,22 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="189537ea-2a28-44c9-91aa-a8e68b3e1e1b(com.mbeddr.mpsutil.blutil.genutil)" version="0" />
+    <module reference="6c5bab3e-5035-4a48-b9ea-62747c04e3d6(com.mbeddr.mpsutil.blutil.genutil.rt)" version="0" />
+    <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
+    <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
+    <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
-    <module reference="2980eccb-8de2-4e74-96a0-1908c0172899(test.com.mbeddr.mpsutil.blutil.genutil.lang)" version="0" />
+    <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <runtime>
+    <dependency reexport="false">6c5bab3e-5035-4a48-b9ea-62747c04e3d6(com.mbeddr.mpsutil.blutil.genutil.rt)</dependency>
+  </runtime>
+  <extendedLanguages>
+    <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>
+  </extendedLanguages>
 </language>
 
