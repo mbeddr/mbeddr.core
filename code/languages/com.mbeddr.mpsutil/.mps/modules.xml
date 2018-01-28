@@ -83,7 +83,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.concept/com.mbeddr.mpsutil.multilingual.concept.mpl" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.editor/com.mbeddr.mpsutil.multilingual.editor.mpl" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodeToSVG.plugin.demolang/com.mbeddr.mpsutil.nodeToSVG.plugin.demolang.mpl" folder="staging" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodeToSVG.plugin.demolang/sandbox/com.mbeddr.mpsutil.nodeToSVG.plugin.demolang.sandbox.msd" folder="staging" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodeToSVG.plugin.demolang/sandbox/com.mbeddr.mpsutil.nodeToSVG.plugin.demolang.sandbox.msd" folder="staging.node2svg" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodes_tracing.test/com.mbeddr.mpsutil.nodes_tracing.test.mpl" folder="rest.lantest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.placeholderTextList/com.mbeddr.mpsutil.placeholderTextList.mpl" folder="staging.placeholderTextList" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.mpl" folder="staging.plantuml" />
@@ -181,9 +181,10 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.common.runtime/com.mbeddr.mpsutil.multilingual.common.runtime.msd" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.concept.runtime/com.mbeddr.mpsutil.multilingual.concept.runtime.msd" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.multilingual.settings.runtime/com.mbeddr.mpsutil.multilingual.settings.runtime.msd" folder="rest.multilingual" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin.playground/com.mbeddr.mpsutil.nodeToSVG.plugin.playground.msd" folder="staging" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin.plugin/com.mbeddr.mpsutil.nodeToSVG.plugin.plugin.msd" folder="staging" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/com.mbeddr.mpsutil.nodeToSVG.plugin.msd" folder="staging" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin.playground/com.mbeddr.mpsutil.nodeToSVG.plugin.playground.msd" folder="staging.node2svg" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin.plugin/com.mbeddr.mpsutil.nodeToSVG.plugin.plugin.msd" folder="staging.node2svg" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/com.mbeddr.mpsutil.nodeToSVG.plugin.msd" folder="staging.node2svg" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeToSVG.tests/com.mbeddr.mpsutil.nodeToSVG.tests.msd" folder="staging.node2svg" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodediff/com.mbeddr.mpsutil.nodediff.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.placeholderTextList.runtime/com.mbeddr.mpsutil.placeholderTextList.runtime.msd" folder="staging.placeholderTextList" />
