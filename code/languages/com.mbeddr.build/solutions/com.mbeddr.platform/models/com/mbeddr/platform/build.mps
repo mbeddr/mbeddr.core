@@ -5330,11 +5330,6 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7NuG4bMPUY5" role="3bR37C">
-          <node concept="1Busua" id="7NuG4bMPUY6" role="1SiIV1">
-            <ref role="1Busuk" to="ffeo:7Kfy9QB6L6C" resolve="jetbrains.mps.lang.generator" />
-          </node>
-        </node>
         <node concept="1yeLz9" id="7NuG4bMPUY7" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.mpsutil.blutil.genutil#8997822907117612984" />
           <property role="3LESm3" value="afbe2b2e-ae8e-4fde-a4ba-1b3fa862ed4f" />
@@ -15337,11 +15332,6 @@
           <node concept="1Busua" id="4kGsAe0vODC" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:14x5$qAUbkv" resolve="jetbrains.mps.lang.resources" />
           </node>
-        </node>
-        <node concept="1yeLz9" id="4kGsAe0vODD" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.mpsutil.resources#4984484659274609526" />
-          <property role="3LESm3" value="fcda5b8f-0669-4004-88f6-3a09d92eb150" />
-          <property role="2GAjPV" value="false" />
         </node>
       </node>
     </node>
