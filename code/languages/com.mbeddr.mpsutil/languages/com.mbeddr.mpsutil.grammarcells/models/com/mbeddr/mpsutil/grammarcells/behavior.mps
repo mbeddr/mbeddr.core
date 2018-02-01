@@ -3095,6 +3095,9 @@
               <node concept="35c_gC" id="1L96m4u4nJy" role="HW$Y0">
                 <ref role="35c_gD" to="teg0:qT5MFmswdL" resolve="FlagCell_SubstituteCondition_substitutedNode" />
               </node>
+              <node concept="35c_gC" id="2c4RKQNz4hO" role="HW$Y0">
+                <ref role="35c_gD" to="teg0:2c4RKQNz44w" resolve="FlagCell_SubstituteCondition_parentNode" />
+              </node>
               <node concept="35c_gC" id="1L96m4u4nJz" role="HW$Y0">
                 <ref role="35c_gD" to="teg0:2aaSxIgh9is" resolve="Parameter_editorContext" />
               </node>
@@ -3444,6 +3447,30 @@
     </node>
     <node concept="13hLZK" id="6uixmKZ2zAo" role="13h7CW">
       <node concept="3clFbS" id="6uixmKZ2zAp" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2c4RKQNz44x">
+    <property role="3GE5qa" value="cells" />
+    <ref role="13h7C2" to="teg0:2c4RKQNz44w" resolve="FlagCell_SubstituteCondition_parentNode" />
+    <node concept="13i0hz" id="2c4RKQNz44G" role="13h7CS">
+      <property role="TrG5h" value="getType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:27DJnJtIQ9C" resolve="getType" />
+      <node concept="3Tm1VV" id="2c4RKQNz44H" role="1B3o_S" />
+      <node concept="3clFbS" id="2c4RKQNz44I" role="3clF47">
+        <node concept="3clFbF" id="2c4RKQNz44J" role="3cqZAp">
+          <node concept="2c44tf" id="2c4RKQNz44K" role="3clFbG">
+            <node concept="3Tqbb2" id="2c4RKQNz44L" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2c4RKQNz44M" role="3clF45">
+        <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="2c4RKQNz44y" role="13h7CW">
+      <node concept="3clFbS" id="2c4RKQNz44z" role="2VODD2" />
     </node>
   </node>
 </model>
