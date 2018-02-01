@@ -25,6 +25,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.concurrency.pthreads/com.mbeddr.ext.concurrency.pthreads.mpl" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.concurrency/com.mbeddr.ext.concurrency.mpl" folder="concurrency" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.math/com.mbeddr.ext.math.mpl" folder="math" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.mathunitadapter/com.mbeddr.ext.mathunitadapter.mpl" folder="math" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.messaging/com.mbeddr.ext.messaging.mpl" folder="serialization" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.serialization/com.mbeddr.ext.serialization.mpl" folder="serialization" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/pluginSolution/com.mbeddr.ext.statemachines.pluginSolution.msd" folder="statemachine" />
