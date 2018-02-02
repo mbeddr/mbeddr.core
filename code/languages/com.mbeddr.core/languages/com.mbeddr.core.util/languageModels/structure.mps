@@ -855,6 +855,9 @@
     <node concept="PrWs8" id="5uVxDlUcwLe" role="PzmwI">
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
+    <node concept="PrWs8" id="33xYbhPQm_r" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:7HkFchP0Cf3" resolve="ILoopStatement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="__7kBU9WPI">
     <property role="3GE5qa" value="flags" />
