@@ -2,16 +2,16 @@
 <model ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
-    <use id="3ecd7c84-cde3-45de-886c-135ecc69b742" name="jetbrains.mps.lang.refactoring" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
+    <use id="3ecd7c84-cde3-45de-886c-135ecc69b742" name="jetbrains.mps.lang.refactoring" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="677f00fb-4488-405e-9885-abb75d472fd1" name="com.mbeddr.mpsutil.contextactions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -2554,17 +2554,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3y7CaIpp3fm" role="jymVt" />
-    <node concept="Wx3nA" id="1URh_kuAGuU" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="justDisabledContextActions" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="1URh_kuAD3p" role="1B3o_S" />
-      <node concept="10P_77" id="1URh_kuAFXr" role="1tU5fm" />
-      <node concept="3clFbT" id="1URh_kuAKaM" role="33vP2m">
-        <property role="3clFbU" value="false" />
-      </node>
-    </node>
     <node concept="2tJIrI" id="1URh_kuAKgq" role="jymVt" />
     <node concept="2YIFZL" id="5lGdLibY2Rh" role="jymVt">
       <property role="IEkAT" value="false" />
@@ -2623,30 +2612,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1URh_ku_bof" role="jymVt" />
-    <node concept="2YIFZL" id="1URh_kuBePl" role="jymVt">
-      <property role="TrG5h" value="updateJustDisabledActions" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="1URh_kuBePo" role="3clF47">
-        <node concept="3clFbF" id="1URh_kuBjra" role="3cqZAp">
-          <node concept="37vLTI" id="1URh_kuBke0" role="3clFbG">
-            <node concept="37vLTw" id="1URh_kuBkEp" role="37vLTx">
-              <ref role="3cqZAo" node="1URh_kuBibt" resolve="val" />
-            </node>
-            <node concept="37vLTw" id="1URh_kuBjr9" role="37vLTJ">
-              <ref role="3cqZAo" node="1URh_kuAGuU" resolve="justDisabledContextActions" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="1URh_kuBbE2" role="1B3o_S" />
-      <node concept="3cqZAl" id="1URh_kuBhwd" role="3clF45" />
-      <node concept="37vLTG" id="1URh_kuBibt" role="3clF46">
-        <property role="TrG5h" value="val" />
-        <node concept="10P_77" id="1URh_kuBibs" role="1tU5fm" />
-      </node>
-    </node>
     <node concept="2YIFZL" id="1URh_ku_isv" role="jymVt">
       <property role="TrG5h" value="emptyDisabledContextActionIds" />
       <property role="od$2w" value="false" />
@@ -3380,32 +3345,17 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbJ" id="1URh_kuByQd" role="3cqZAp">
-              <node concept="3clFbS" id="1URh_kuByQf" role="3clFbx">
-                <node concept="3clFbF" id="1URh_kuBDWZ" role="3cqZAp">
-                  <node concept="1rXfSq" id="1URh_kuBEYE" role="3clFbG">
-                    <ref role="37wK5l" node="1URh_ku_isv" resolve="emptyDisabledContextActionIds" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3fqX7Q" id="1URh_kuBIC0" role="3clFbw">
-                <node concept="37vLTw" id="2IKe2num2Ov" role="3fr31v">
-                  <ref role="3cqZAo" node="1URh_kuAGuU" resolve="justDisabledContextActions" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="1URh_kuBGek" role="3cqZAp">
-              <node concept="1rXfSq" id="1URh_kuBGei" role="3clFbG">
-                <ref role="37wK5l" node="1URh_kuBePl" resolve="updateJustDisabledActions" />
-                <node concept="3clFbT" id="1URh_kuBGKN" role="37wK5m" />
-              </node>
-            </node>
           </node>
           <node concept="3y3z36" id="6vxclkwS3$c" role="3clFbw">
             <node concept="10Nm6u" id="6vxclkwS3GD" role="3uHU7w" />
             <node concept="37vLTw" id="6vxclkwS3gh" role="3uHU7B">
               <ref role="3cqZAo" node="6vxclkwS2mX" resolve="selection" />
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3oz$EqI0QUg" role="3cqZAp">
+          <node concept="1rXfSq" id="3oz$EqI0QUe" role="3clFbG">
+            <ref role="37wK5l" node="1URh_ku_isv" resolve="emptyDisabledContextActionIds" />
           </node>
         </node>
       </node>
@@ -3469,17 +3419,6 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="1URh_kuB_A2" role="3cqZAp">
-          <node concept="3SKdUq" id="1URh_kuB_A4" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Consider a better mechanism for this?" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="1URh_kuBB2I" role="3cqZAp">
-          <node concept="3SKdUq" id="1URh_kuBB2K" role="3SKWNk">
-            <property role="3SKdUp" value="This condition checks if the disabled context actions was just appended to by external. If not, the disabled actions need to be refreshed in order to have all the available actions" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="1URh_kuBHfI" role="3cqZAp" />
         <node concept="3clFbF" id="5Ljw4ONo3b8" role="3cqZAp">
           <node concept="37vLTI" id="5Ljw4ONo3mT" role="3clFbG">
             <node concept="37vLTw" id="5Ljw4ONo3IO" role="37vLTx">
@@ -3851,9 +3790,6 @@
                   </node>
                   <node concept="3clFbS" id="FmgK_vTVQW" role="2LFqv$">
                     <node concept="3clFbJ" id="3XH9vvmhtxn" role="3cqZAp">
-                      <node concept="3clFbS" id="3XH9vvmhtxp" role="3clFbx">
-                        <node concept="3N13vt" id="3XH9vvmhB$b" role="3cqZAp" />
-                      </node>
                       <node concept="22lmx$" id="$ugHPzBkTP" role="3clFbw">
                         <node concept="2OqwBi" id="$ugHPzBpPg" role="3uHU7w">
                           <node concept="37vLTw" id="$ugHPzBoyw" role="2Oq$k0">
@@ -3886,6 +3822,9 @@
                             </node>
                           </node>
                         </node>
+                      </node>
+                      <node concept="3clFbS" id="3XH9vvmhtxp" role="3clFbx">
+                        <node concept="3N13vt" id="3XH9vvmhB$b" role="3cqZAp" />
                       </node>
                     </node>
                     <node concept="3clFbJ" id="1URh_kuLt9B" role="3cqZAp">
@@ -12738,12 +12677,6 @@
         </node>
       </node>
     </node>
-    <node concept="16euLQ" id="4mMeETlyRx0" role="16eVyc">
-      <property role="TrG5h" value="E" />
-    </node>
-    <node concept="3uibUv" id="4mMeETlzbT5" role="EKbjA">
-      <ref role="3uigEE" node="5tr7YH$UwUd" resolve="IContextActionSource" />
-    </node>
     <node concept="3clFb_" id="$ugHPyV41j" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="2aFKle" value="false" />
@@ -12760,6 +12693,12 @@
       <node concept="2AHcQZ" id="$ugHPyV41p" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+    <node concept="16euLQ" id="4mMeETlyRx0" role="16eVyc">
+      <property role="TrG5h" value="E" />
+    </node>
+    <node concept="3uibUv" id="4mMeETlzbT5" role="EKbjA">
+      <ref role="3uigEE" node="5tr7YH$UwUd" resolve="IContextActionSource" />
     </node>
   </node>
   <node concept="312cEu" id="4mMeETlzbPE">

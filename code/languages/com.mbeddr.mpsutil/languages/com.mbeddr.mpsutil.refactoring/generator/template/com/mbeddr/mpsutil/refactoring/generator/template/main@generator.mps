@@ -2911,15 +2911,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1URh_kuDpS2" role="3cqZAp">
-          <node concept="2YIFZM" id="1URh_kuDqla" role="3clFbG">
-            <ref role="37wK5l" to="1ne1:1URh_kuBePl" resolve="updateJustDisabledActions" />
-            <ref role="1Pybhc" to="1ne1:5lGdLibXIsq" resolve="ToolComponent" />
-            <node concept="3clFbT" id="1URh_kuDqz6" role="37wK5m">
-              <property role="3clFbU" value="true" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="5RfdBauWe5Y" role="3cqZAp">
           <node concept="1WS0z7" id="5RfdBauWh4P" role="lGtFl">
             <node concept="3JmXsc" id="5RfdBauWh4S" role="3Jn$fo">
@@ -3414,15 +3405,6 @@
               </node>
               <node concept="37vLTw" id="1URh_ku$bd0" role="37wK5m">
                 <ref role="3cqZAo" node="1URh_ku$bbx" resolve="pushHint" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="1URh_kuBmV$" role="3cqZAp">
-            <node concept="2YIFZM" id="1URh_kuBnv$" role="3clFbG">
-              <ref role="37wK5l" to="1ne1:1URh_kuBePl" resolve="updateJustDisabledActions" />
-              <ref role="1Pybhc" to="1ne1:5lGdLibXIsq" resolve="ToolComponent" />
-              <node concept="3clFbT" id="1URh_kuBnHP" role="37wK5m">
-                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
