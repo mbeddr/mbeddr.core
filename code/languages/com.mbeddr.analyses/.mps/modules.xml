@@ -44,7 +44,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.z3.testing/com.mbeddr.analyses.z3.testing.mpl" folder="z3" />
       <modulePath path="$PROJECT_DIR$/languages/testing/com.mbeddr.analyses.cbmc.testing.mpl" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.acsl.cbmc.rt/com.mbeddr.analyses.acsl.cbmc.rt.msd" folder="acsl" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.components.pluginSolution/com.mbeddr.analyses.cbmc.components.pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.components.rt/com.mbeddr.analyses.cbmc.components.rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.core.pluginSolution/com.mbeddr.analyses.cbmc.core.pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.core.rt/com.mbeddr.analyses.cbmc.core.rt.msd" folder="cbmc" />
