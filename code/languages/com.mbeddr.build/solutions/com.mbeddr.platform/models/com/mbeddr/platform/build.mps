@@ -3681,10 +3681,9 @@
           <property role="3LESm3" value="93d07035-b779-4c5e-b375-11d6ac076571" />
           <property role="2GAjPV" value="false" />
         </node>
-        <node concept="1SiIV0" id="1fMSMe7$VJK" role="3bR37C">
-          <node concept="3bR9La" id="1fMSMe7$VJL" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+        <node concept="1SiIV0" id="3TVsKviPsx1" role="3bR37C">
+          <node concept="1Busua" id="3TVsKviPsx2" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
       </node>
