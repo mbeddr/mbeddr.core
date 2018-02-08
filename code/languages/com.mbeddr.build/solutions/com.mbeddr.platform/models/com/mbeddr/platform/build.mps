@@ -5242,16 +5242,16 @@
               <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
             </node>
           </node>
-          <node concept="1SiIV0" id="79XufXV55L3" role="3bR37C">
-            <node concept="3bR9La" id="79XufXV55L4" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="79XufXV55L5" role="3bR37C">
             <node concept="3bR9La" id="79XufXV55L6" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="NZAi8Ctq$a" role="3bR37C">
+            <node concept="3bR9La" id="NZAi8Ctq$b" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
             </node>
           </node>
         </node>
@@ -5279,16 +5279,16 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
           </node>
         </node>
-        <node concept="1SiIV0" id="79XufXV55KZ" role="3bR37C">
-          <node concept="3bR9La" id="79XufXV55L0" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="7vUP_qcXA_1" resolve="com.mbeddr.mpsutil.contextactions" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6RxTA0OjB$E" role="3bR37C">
           <node concept="3bR9La" id="6RxTA0OjB$F" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="NZAi8Ctq$8" role="3bR37C">
+          <node concept="3bR9La" id="NZAi8Ctq$9" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
       </node>
