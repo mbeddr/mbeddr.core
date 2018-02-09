@@ -9,7 +9,6 @@
   <exported-solutions>
     <exported-solution>397da8bd-bcff-4d80-87cb-c4eaba8e2cb2(com.mbeddr.analyses.cbmc.pluginSolution)</exported-solution>
     <exported-solution>0a31509b-f803-4558-b840-db9f6dc14b2f(com.mbeddr.analyses.cbmc.statemachines.rt)</exported-solution>
-    <exported-solution>93df2f50-c615-4300-ad92-915871dcae02(com.mbeddr.analyses.cbmc.statemachines.pluginSolution)</exported-solution>
     <exported-solution>a3733d9d-fa94-4706-bdd4-596b968eba8e(com.mbeddr.analyses.cbmc.rt)</exported-solution>
   </exported-solutions>
 </dev-kit>
