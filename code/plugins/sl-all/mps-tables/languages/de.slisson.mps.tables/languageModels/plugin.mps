@@ -1362,10 +1362,15 @@
                                     <node concept="Xl_RD" id="4Fanv3X8Uph" role="3uHU7w">
                                       <property role="Xl_RC" value=".plugin" />
                                     </node>
-                                    <node concept="37shsh" id="4Fanv3X8TBF" role="3uHU7B">
-                                      <node concept="20RdaH" id="4Fanv3X8U56" role="37shsm">
-                                        <property role="20Rdg5" value="7e450f4e-1ac3-41ef-a851-4598161bdb94" />
-                                        <property role="20Rdg7" value="de.slisson.mps.tables" />
+                                    <node concept="2OqwBi" id="1x$5PmO0T6j" role="3uHU7B">
+                                      <node concept="37shsh" id="4Fanv3X8TBF" role="2Oq$k0">
+                                        <node concept="20RdaH" id="4Fanv3X8U56" role="37shsm">
+                                          <property role="20Rdg5" value="7e450f4e-1ac3-41ef-a851-4598161bdb94" />
+                                          <property role="20Rdg7" value="de.slisson.mps.tables" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="1x$5PmO0Twb" role="2OqNvi">
+                                        <ref role="37wK5l" to="lui2:~SModuleReference.getModuleName():java.lang.String" resolve="getModuleName" />
                                       </node>
                                     </node>
                                   </node>
