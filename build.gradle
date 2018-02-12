@@ -1,3 +1,5 @@
+import de.itemis.mps.gradle.GitBasedVersioning
+
 ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 
@@ -24,6 +26,45 @@ subprojects {
     // required plugins
     apply plugin: "base"
     apply plugin: "maven-publish"
+    ext.mbeddrMajor = "1"
+    ext.mbeddrMinor = "0"
+
+    if (project.hasProperty("mbeddrVersion")) {
+        ext.mbeddrBuildNumber = project.getProperty('mbeddrVersion')
+    } else {
+        // locally versions are SNAPSHOT
+        if (ciBuild) {
+            // setting mbeddrMajor
+            if (project.hasProperty('mbeddrMajor')) {
+                ext.mbeddrMajor = project.getProperty('mbeddrMajor')
+            }
+
+            // setting mbeddrMinor
+            if (project.hasProperty('mbeddrMinor')) {
+                ext.mbeddrMinor = project.getProperty('mbeddrMinor')
+            }
+
+            // setting mbeddrBuild
+            if (project.hasProperty('mbeddrBuild')) {
+                ext.mbeddrBuild = project.getProperty('mbeddrBuild')
+            } else {
+                ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
+            }
+
+            if (project.hasProperty("mbeddrBuildCounter")) {
+                ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
+            } else {
+                ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
+            }
+            if(mbeddrBuild == "stable") {
+                mbeddrBuild = "master"
+            }
+            ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
+        } else {
+            println "Local build detected. Build will be a SNAPSHOT."
+            ext.mbeddrBuildNumber = "1.0-SNAPSHOT"
+        }
+    }
 }
 
 task wrapper(type: Wrapper) {
