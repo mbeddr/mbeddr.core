@@ -60,7 +60,7 @@ task install_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
 }
 */
 
-task build_platform(type: BuildLanguages, dependsOn: copy_sl_all_nativelibs) {
+task build_platform(type: BuildLanguages, dependsOn: copy_allScripts) {
     script scriptFile('com.mbeddr.platform/build.xml')
 }
 
@@ -108,8 +108,6 @@ rootProject.defaultTasks 'defaultWrapper'
 
 task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrAllScriptsPublicationToMavenLocal', 'publishMbeddrPlatformPublicationToMavenLocal'])
 
-tasks.getByPath(':build:com.mbeddr:install').dependsOn install_actionsfilter
-tasks.getByPath(':build:com.mbeddr:install').dependsOn install_sl_all_nativelibs
 
 publishing {
     publications {
