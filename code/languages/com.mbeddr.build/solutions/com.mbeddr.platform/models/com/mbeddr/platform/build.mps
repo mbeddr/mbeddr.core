@@ -17904,13 +17904,19 @@
     </node>
     <node concept="398rNT" id="4MR$$QmqomQ" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
+      <node concept="398BVA" id="3AjhVMbHnLi" role="398pKh">
+        <ref role="398BVh" node="3AVJcIMlF8p" resolve="mbeddr.github.core.home" />
+        <node concept="2Ry0Ak" id="3AjhVMbHsUR" role="iGT6I">
+          <property role="2Ry0Am" value="artifacts" />
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="3AVJcIMlF95" role="1l3spd">
       <property role="TrG5h" value="artifacts.sl-all" />
       <node concept="398BVA" id="4MR$$QmqtJh" role="398pKh">
         <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="4MR$$QmqtJm" role="iGT6I">
-          <property role="2Ry0Am" value="mps-sl-all" />
+        <node concept="2Ry0Ak" id="3AjhVMbHu4r" role="iGT6I">
+          <property role="2Ry0Am" value="de.itemis.mps.extensions" />
         </node>
       </node>
     </node>
@@ -18858,7 +18864,7 @@
       <node concept="398BVA" id="5ueaxoTp$uT" role="398pKh">
         <ref role="398BVh" node="5ueaxoTn61l" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="5ueaxoTp$uU" role="iGT6I">
-          <property role="2Ry0Am" value="mps-sl-all" />
+          <property role="2Ry0Am" value="de.itemis.mps.extensions" />
         </node>
       </node>
     </node>

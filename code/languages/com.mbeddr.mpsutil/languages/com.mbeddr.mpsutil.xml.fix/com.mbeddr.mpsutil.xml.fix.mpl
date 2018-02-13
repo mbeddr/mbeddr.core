@@ -18,7 +18,7 @@
       </external-templates>
       <dependencies>
         <dependency reexport="false">479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</dependency>
-        <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons.math3)</dependency>
+        <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:771359e3-76e1-4788-8a8b-4c991a9c4893:com.mbeddr.mpsutil.xml.fix" version="0" />
