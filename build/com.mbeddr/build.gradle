@@ -1,44 +1,4 @@
-import de.itemis.mps.gradle.GitBasedVersioning
 
-ext.mbeddrMajor = "1"
-ext.mbeddrMinor = "0"
-
-if (project.hasProperty("mbeddrVersion")) {
-    ext.mbeddrBuildNumber = project.getProperty('mbeddrVersion')
-} else {
-    // locally versions are SNAPSHOT
-    if (ciBuild) {
-        // setting mbeddrMajor
-        if (project.hasProperty('mbeddrMajor')) {
-            ext.mbeddrMajor = project.getProperty('mbeddrMajor')
-        }
-
-        // setting mbeddrMinor
-        if (project.hasProperty('mbeddrMinor')) {
-            ext.mbeddrMinor = project.getProperty('mbeddrMinor')
-        }
-
-        // setting mbeddrBuild
-        if (project.hasProperty('mbeddrBuild')) {
-            ext.mbeddrBuild = project.getProperty('mbeddrBuild')
-        } else {
-            ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
-        }
-
-        if (project.hasProperty("mbeddrBuildCounter")) {
-            ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
-        } else {
-            ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
-        }
-        if(mbeddrBuild == "stable") {
-            mbeddrBuild = "master"
-        }
-        ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter)
-    } else {
-        println "Local build detected. Build will be a SNAPSHOT."
-        ext.mbeddrBuildNumber = "1.0-SNAPSHOT"
-    }
-}
 
 // path variables
 // If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
@@ -91,9 +51,9 @@ logger.info "jdk_home: $jdk_home"
 ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
 ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
 ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()
-String buildVersion = '-Dbuild=' + mbeddrBuildNumber
-String majorVersion = '-Dmajor.version=' + mbeddrMajor
-String minorVersion = '-Dminor.version=' + mbeddrMinor
+String buildVersion = '-Dbuild=' + ext.mbeddrBuildNumber
+String majorVersion = '-Dmajor.version=' + ext.mbeddrMajor
+String minorVersion = '-Dminor.version=' + ext.mbeddrMinor
 ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
 ext.slall_home = ['-Dsl-all.home=' + file(rootProject.projectDir.absolutePath + '/code/plugins/sl-all').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
 ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
@@ -170,6 +130,6 @@ private static void configureRepositories(Project project) {
 
 task printVersion {
     doLast {
-        println "mbeddrBuildNumber: ${mbeddrBuildNumber}"
+        println "mbeddrBuildNumber: ${ext.mbeddrBuildNumber}"
     }
 }
