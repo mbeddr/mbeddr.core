@@ -1729,5 +1729,27 @@
       <ref role="20lvS9" node="2TZO3DbuxwK" resolve="Document" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4VYjeLHNjIp">
+    <property role="EcuMT" value="5692071557381045145" />
+    <property role="TrG5h" value="TemporaryFileName" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="4VYjeLHNjIw" role="1TKVEl">
+      <property role="IQ2nx" value="5692071557381045152" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="M6xJ_" id="4VYjeLHNjIq" role="lGtFl">
+      <property role="Hh88m" value="tempFileName" />
+      <node concept="tn0Fv" id="4VYjeLHNjIu" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="4VYjeLHNLKB" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="t5JxF" id="4VYjeLHNXKZ" role="lGtFl">
+      <property role="t5JxN" value="Annotation can be use used to avoid documents naming conflicts. Annotated documents will be generated with name property from this annotation." />
+    </node>
+  </node>
 </model>
 
