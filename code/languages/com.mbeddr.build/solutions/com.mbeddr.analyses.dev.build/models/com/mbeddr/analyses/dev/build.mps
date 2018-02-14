@@ -1024,7 +1024,7 @@
         <node concept="1SiIV0" id="7i5Cc6LAWyx" role="3bR37C">
           <node concept="3bR9La" id="7i5Cc6LAWyy" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons.math3" />
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
       </node>
