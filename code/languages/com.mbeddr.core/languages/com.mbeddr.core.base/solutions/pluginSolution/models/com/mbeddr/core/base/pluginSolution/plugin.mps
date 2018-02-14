@@ -21038,6 +21038,7 @@
     <property role="TrG5h" value="screenshotNode" />
     <property role="2uzpH1" value="Print Editor" />
     <property role="3GE5qa" value="screenshot" />
+    <property role="fJN8o" value="true" />
     <node concept="tnohg" id="79jc6YzgefD" role="tncku">
       <node concept="3clFbS" id="79jc6YzgefE" role="2VODD2">
         <node concept="3cpWs8" id="6EZwrPBQ1Hx" role="3cqZAp">
@@ -21182,6 +21183,21 @@
     </node>
     <node concept="1QGGSu" id="79jc6YzgSN2" role="3Uehp1">
       <property role="1iqoE4" value="${module}/icons/screenshot.png" />
+    </node>
+    <node concept="2ScWuX" id="4uMJoRGaut7" role="tmbBb">
+      <node concept="3clFbS" id="4uMJoRGaut8" role="2VODD2">
+        <node concept="3clFbF" id="4uMJoRGaxUA" role="3cqZAp">
+          <node concept="3y3z36" id="4uMJoRGaysC" role="3clFbG">
+            <node concept="10Nm6u" id="4uMJoRGayt0" role="3uHU7w" />
+            <node concept="2OqwBi" id="4uMJoRGaxUw" role="3uHU7B">
+              <node concept="2WthIp" id="4uMJoRGaxUz" role="2Oq$k0" />
+              <node concept="3gHZIF" id="4uMJoRGaxU_" role="2OqNvi">
+                <ref role="2WH_rO" node="79jc6YzgMET" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="tC5Ba" id="79jc6Yzh4Gr">
