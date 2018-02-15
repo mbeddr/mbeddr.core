@@ -48,6 +48,8 @@ if (!hasProperty("jdk_home")) {
 
 logger.info "jdk_home: $jdk_home"
 
+ext.artifactsDir = file(rootProject.projectDir.absolutePath + "/artifacts")
+
 ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
 ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
 ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()
@@ -55,7 +57,7 @@ String buildVersion = '-Dbuild=' + ext.mbeddrBuildNumber
 String majorVersion = '-Dmajor.version=' + ext.mbeddrMajor
 String minorVersion = '-Dminor.version=' + ext.mbeddrMinor
 ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
-ext.slall_home = ['-Dsl-all.home=' + file(rootProject.projectDir.absolutePath + '/code/plugins/sl-all').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
+ext.slall_home = ['-Dsl-all.home=' + file(artifactsDir.absolutePath + '/de.itemis.mps.extensions').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
 ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
 ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home]
 
@@ -80,11 +82,13 @@ subprojects {
     // configs
     configurations {
         mps
+        mpsExtensions
         ant_lib
     }
 
     dependencies {
         mps "com.jetbrains:mps:$mpsBuild"
+        mpsExtensions "de.itemis.mps:extensions:0.1+"
         ant_lib "org.apache.ant:ant-junit:1.10.1"
     }
 }

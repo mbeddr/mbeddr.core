@@ -11,6 +11,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="mps.extensions">
+          <value>
+            <Library>
+              <option name="name" value="mps.extensions" />
+              <option name="path" value="${mps.extensions.home}/code" />
+            </Library>
+          </value>
+        </entry>
         <entry key="sl-all">
           <value>
             <Library>
