@@ -501,6 +501,12 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="5UDKTeAw5YY" role="3bR37C">
+          <node concept="3bR9La" id="5UDKTeAw5YZ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="20rWHx3zP6G" role="2G$12L">
         <property role="BnDLt" value="true" />
