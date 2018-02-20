@@ -15,15 +15,7 @@
           <value>
             <Library>
               <option name="name" value="mps.extensions" />
-              <option name="path" value="${mps.extensions.home}/code" />
-            </Library>
-          </value>
-        </entry>
-        <entry key="sl-all">
-          <value>
-            <Library>
-              <option name="name" value="sl-all" />
-              <option name="path" value="${mbeddr.github.core.home}/code/plugins/sl-all" />
+              <option name="path" value="${mps.extensions.github.core.home}/code" />
             </Library>
           </value>
         </entry>
