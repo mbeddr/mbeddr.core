@@ -5992,9 +5992,10 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
             </node>
           </node>
-          <node concept="1SiIV0" id="7VbYB1xEAP6" role="3bR37C">
-            <node concept="3bR9La" id="7VbYB1xEAP5" role="1SiIV1">
-              <ref role="3bR37D" to="90a9:2NyZxKpUHqw" resolve="com.mbeddr.mpsutil.blutil#4354378109086982937" />
+          <node concept="1SiIV0" id="DnqfiuZcEk" role="3bR37C">
+            <node concept="3bR9La" id="DnqfiuZcEl" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7YI57w6K08j" resolve="jetbrains.mps.baseLanguage#1129914002933" />
             </node>
           </node>
         </node>
@@ -6716,12 +6717,6 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2N1CSrzswAv" role="3bR37C">
-          <node concept="3bR9La" id="2N1CSrzswAw" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="2N1CSrzsp0s" resolve="com.mbeddr.mpsutil.serializer.xml" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2VC4eVYf7ui" role="3bR37C">
           <node concept="3bR9La" id="2VC4eVYf7uj" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -6738,6 +6733,12 @@
           <node concept="3bR9La" id="2lop6rS5vC2" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="DnqfiuZcHx" role="3bR37C">
+          <node concept="3bR9La" id="DnqfiuZcHy" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
           </node>
         </node>
       </node>
@@ -14834,12 +14835,6 @@
             <ref role="3bR37D" node="61Pvu7KHlD1" resolve="com.mbeddr.mpsutil.breadcrumb.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4ZN$fokaFTe" role="3bR37C">
-          <node concept="3bR9La" id="4ZN$fokaFTf" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="2N1CSrzsp0s" resolve="com.mbeddr.mpsutil.serializer.xml" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3soxMz$rkWc" role="3bR37C">
           <node concept="3bR9La" id="3soxMz$rkWd" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -14943,6 +14938,12 @@
         <node concept="1SiIV0" id="7VbYB1xEBqp" role="3bR37C">
           <node concept="1Busua" id="7VbYB1xEBqq" role="1SiIV1">
             <ref role="1Busuk" to="90a9:2NyZxKpUE9j" resolve="com.mbeddr.mpsutil.blutil" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="DnqfiuZdfA" role="3bR37C">
+          <node concept="3bR9La" id="DnqfiuZdfB" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
           </node>
         </node>
       </node>
@@ -17552,12 +17553,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="48qh2gYgvda" role="3bR37C">
-          <node concept="3bR9La" id="48qh2gYgvdb" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="2N1CSrzsp0s" resolve="com.mbeddr.mpsutil.serializer.xml" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="48qh2gYgvdc" role="3bR37C">
           <node concept="1Busua" id="48qh2gYgvdd" role="1SiIV1">
             <ref role="1Busuk" node="$bJ0jguQfr" resolve="com.mbeddr.core.base" />
@@ -17573,6 +17568,12 @@
           <node concept="3bR9La" id="2avgMTl5sLM" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="DnqfiuZdqk" role="3bR37C">
+          <node concept="3bR9La" id="DnqfiuZdql" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
           </node>
         </node>
       </node>
