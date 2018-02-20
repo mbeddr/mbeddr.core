@@ -550,38 +550,6 @@
       <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.platform-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.layout}/mbeddr.allScripts/languages" />
-    <mkdir dir="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.mpsutil.inca" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.inca.jar" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.inca.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.inca.jar/META-INF/module.xml">
-      <module namespace="com.mbeddr.mpsutil.inca" type="solution" uuid="eab292a4-1c65-44e3-bf7b-a451b47bdb12">
-        <dependencies />
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="com.mbeddr.mpsutil.inca-src.jar" descriptor="com.mbeddr.mpsutil.inca.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.mpsutil.inca/com.mbeddr.mpsutil.inca.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.inca" />
-      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.mpsutil.inca" includes="icons/**, resources/**" />
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.mpsutil.inca/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.inca.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.inca-models">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.mpsutil.inca/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.mpsutil.inca/com.mbeddr.mpsutil.inca-src.jar" duplicate="preserve">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.mpsutil.inca/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.mpsutil.inca/com.mbeddr.mpsutil.inca.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.inca-models" prefix="module/models" />
-    </jar>
     <mkdir dir="${build.layout}/de.slisson.mps.all" />
     <copy todir="${build.layout}/de.slisson.mps.all">
       <fileset dir="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all" />
@@ -600,7 +568,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.allScripts, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.platform, java.compile.jetbrains.mps.minimal, java.compile.com.mbeddr.rcp, java.compile.com.mbeddr.build, java.compile.com.mbeddr.mpsutil.inca, java.compile.com.mbeddr.xmodel.build" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.allScripts, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.platform, java.compile.jetbrains.mps.minimal, java.compile.com.mbeddr.rcp, java.compile.com.mbeddr.build, java.compile.com.mbeddr.xmodel.build" />
   
   <target name="processResources" />
   
@@ -725,7 +693,6 @@
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.tests.dev.build/com.mbeddr.debugger.tests.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.build/build.msd" />
-        <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.mpsutil.inca/com.mbeddr.mpsutil.inca.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/com.mbeddr.rcp.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.build.build/com.mbeddr.build.build.msd" />
@@ -1056,26 +1023,6 @@
     </copy>
   </target>
   
-  <target name="java.compile.com.mbeddr.mpsutil.inca" depends="java.compile.com.mbeddr.platform">
-    <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.mpsutil.inca/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.inca" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.inca" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${mbeddr.build}/solutions/com.mbeddr.mpsutil.inca/source_gen" />
-      </src>
-      <classpath>
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
-      </classpath>
-    </javac>
-    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.inca">
-      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.mpsutil.inca/source_gen">
-        <include name="**/*.info" />
-      </fileset>
-    </copy>
-  </target>
-  
   <target name="java.compile.com.mbeddr.xmodel.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.platform">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.xmodel.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.xmodel.build" />
@@ -1108,7 +1055,6 @@
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.debugger-test.build.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.debugger.tests.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/source_gen" />
-    <delete dir="${mbeddr.build}/solutions/com.mbeddr.mpsutil.inca/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.rcp/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.build.build/source_gen" />
