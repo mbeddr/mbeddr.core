@@ -6735,10 +6735,10 @@
             <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="DnqfiuZcHx" role="3bR37C">
-          <node concept="3bR9La" id="DnqfiuZcHy" role="1SiIV1">
+        <node concept="1SiIV0" id="3DD_H0$wBa9" role="3bR37C">
+          <node concept="3bR9La" id="3DD_H0$wBaa" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
+            <ref role="3bR37D" node="2N1CSrzsp0s" resolve="com.mbeddr.mpsutil.serializer.xml" />
           </node>
         </node>
       </node>
@@ -14940,10 +14940,10 @@
             <ref role="1Busuk" to="90a9:2NyZxKpUE9j" resolve="com.mbeddr.mpsutil.blutil" />
           </node>
         </node>
-        <node concept="1SiIV0" id="DnqfiuZdfA" role="3bR37C">
-          <node concept="3bR9La" id="DnqfiuZdfB" role="1SiIV1">
+        <node concept="1SiIV0" id="3DD_H0$wBGe" role="3bR37C">
+          <node concept="3bR9La" id="3DD_H0$wBGf" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
+            <ref role="3bR37D" node="2N1CSrzsp0s" resolve="com.mbeddr.mpsutil.serializer.xml" />
           </node>
         </node>
       </node>
@@ -17570,10 +17570,10 @@
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
-        <node concept="1SiIV0" id="DnqfiuZdqk" role="3bR37C">
-          <node concept="3bR9La" id="DnqfiuZdql" role="1SiIV1">
+        <node concept="1SiIV0" id="3DD_H0$wBQW" role="3bR37C">
+          <node concept="3bR9La" id="3DD_H0$wBQX" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
+            <ref role="3bR37D" node="2N1CSrzsp0s" resolve="com.mbeddr.mpsutil.serializer.xml" />
           </node>
         </node>
       </node>
