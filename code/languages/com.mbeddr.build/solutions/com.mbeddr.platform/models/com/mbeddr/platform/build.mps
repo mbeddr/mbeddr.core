@@ -1598,6 +1598,34 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7LGfKJ4FZsj" role="3bR37C">
+          <node concept="3bR9La" id="7LGfKJ4FZsk" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7LGfKJ4Gy9m" role="3bR37C">
+          <node concept="1BurEX" id="7LGfKJ4Gy9n" role="1SiIV1">
+            <node concept="398BVA" id="7LGfKJ4Gy97" role="1BurEY">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="7LGfKJ4Gy98" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7LGfKJ4Gy99" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.nodeToSVG.plugin" />
+                  <node concept="2Ry0Ak" id="7LGfKJ4Gy9a" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7LGfKJ4Gy9b" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik" />
+                      <node concept="2Ry0Ak" id="7LGfKJ4Gy9c" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.w3c.dom.svg.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6SUd0BfESU3" role="2G$12L">
         <property role="BnDLt" value="true" />
