@@ -3,6 +3,14 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="batik-lib">
+          <value>
+            <Library>
+              <option name="name" value="batik-lib" />
+              <option name="path" value="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mbeddr.core">
           <value>
             <Library>

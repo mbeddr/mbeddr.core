@@ -4,7 +4,49 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik" type="java_classes">
+      <sourceRoot location="batik-anim.jar" />
+      <sourceRoot location="batik-awt-util.jar" />
+      <sourceRoot location="batik-bridge.jar" />
+      <sourceRoot location="batik-codec.jar" />
+      <sourceRoot location="batik-css.jar" />
+      <sourceRoot location="batik-dom.jar" />
+      <sourceRoot location="batik-ext.jar" />
+      <sourceRoot location="batik-extension.jar" />
+      <sourceRoot location="batik-gui-util.jar" />
+      <sourceRoot location="batik-gvt.jar" />
+      <sourceRoot location="batik-parser.jar" />
+      <sourceRoot location="batik-script.jar" />
+      <sourceRoot location="batik-svg-dom.jar" />
+      <sourceRoot location="batik-svggen.jar" />
+      <sourceRoot location="batik-swing.jar" />
+      <sourceRoot location="batik-transcoder.jar" />
+      <sourceRoot location="batik-util.jar" />
+      <sourceRoot location="batik-xml.jar" />
+      <sourceRoot location="org.w3c.dom.svg.jar" />
+    </modelRoot>
   </models>
+  <stubModelEntries>
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-anim.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-awt-util.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-bridge.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-codec.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-css.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-dom.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-ext.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-extension.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-gui-util.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-gvt.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-parser.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-script.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-svg-dom.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-svggen.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-swing.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-transcoder.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-util.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/batik-xml.jar" />
+    <stubModelEntry path="/Users/hbaechmann/repositories/mbeddr.core.nodeToSvg/mbeddr.core/code/languages/com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.nodeToSVG.plugin/lib/batik/org.w3c.dom.svg.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>

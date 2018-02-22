@@ -44,11 +44,13 @@
     <stubModelEntry path="${module}/lib/batik/batik-transcoder.jar" />
     <stubModelEntry path="${module}/lib/batik/batik-util.jar" />
     <stubModelEntry path="${module}/lib/batik/batik-xml.jar" />
+    <stubModelEntry path="${module}/lib/batik/org.w3c.dom.svg.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:e776175c-3bf6-498e-ad36-e4c7dfa5fbe9:com.mbeddr.mpsutil.httpsupport" version="0" />
