@@ -21,6 +21,8 @@ if (project.hasProperty("MPS_PATHS_SELECTOR")) {
 }
 
 task install() {
+    description "Install the required plugins into the MPS plugin repository"
+    group "Build Setup"
     doFirst {
         // check parent gradle file for definition of the variables
         println "Installing required mbeddr plugins to '$mpsPluginsDir'"
