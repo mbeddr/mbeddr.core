@@ -1047,6 +1047,14 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="46A7_62EKyr" role="3cqZAp">
+          <node concept="1rXfSq" id="46A7_62EKyp" role="3clFbG">
+            <ref role="37wK5l" to="v4mk:~JXTreeTable.setLeafIcon(javax.swing.Icon):void" resolve="setLeafIcon" />
+            <node concept="37vLTw" id="46A7_62EMOX" role="37wK5m">
+              <ref role="3cqZAo" node="6rPcxxUZL9p" resolve="emptyIcon" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7LklpYzSzWV" role="3cqZAp">
           <node concept="1rXfSq" id="7LklpYzSzWT" role="3clFbG">
             <ref role="37wK5l" to="v4mk:~JXTreeTable.setSelectionMode(int):void" resolve="setSelectionMode" />
@@ -1069,23 +1077,23 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4ngEEZdm4mJ" role="3cqZAp">
-          <node concept="2OqwBi" id="4ngEEZdm4mK" role="3clFbG">
-            <node concept="2OqwBi" id="4ngEEZdm4mL" role="2Oq$k0">
-              <node concept="37vLTw" id="4ngEEZdm4mM" role="2Oq$k0">
+        <node concept="3clFbF" id="46A7_62Bmbo" role="3cqZAp">
+          <node concept="2OqwBi" id="46A7_62Bmbp" role="3clFbG">
+            <node concept="2OqwBi" id="46A7_62Bmbq" role="2Oq$k0">
+              <node concept="37vLTw" id="46A7_62Bmbr" role="2Oq$k0">
                 <ref role="3cqZAo" node="4_pSipqULG7" resolve="colModel" />
               </node>
-              <node concept="liA8E" id="4ngEEZdm4mN" role="2OqNvi">
+              <node concept="liA8E" id="46A7_62Bmbs" role="2OqNvi">
                 <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int):javax.swing.table.TableColumn" resolve="getColumn" />
-                <node concept="3cmrfG" id="4ngEEZdm4mO" role="37wK5m">
+                <node concept="3cmrfG" id="46A7_62Bmbt" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
               </node>
             </node>
-            <node concept="liA8E" id="4ngEEZdm4mP" role="2OqNvi">
+            <node concept="liA8E" id="46A7_62Bmbu" role="2OqNvi">
               <ref role="37wK5l" to="c8ee:~TableColumn.setMaxWidth(int):void" resolve="setMaxWidth" />
-              <node concept="3cmrfG" id="6rPcxxUMMNY" role="37wK5m">
-                <property role="3cmrfH" value="40" />
+              <node concept="3cmrfG" id="46A7_62Bmbv" role="37wK5m">
+                <property role="3cmrfH" value="65" />
               </node>
             </node>
           </node>
