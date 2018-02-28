@@ -225,5 +225,4 @@ task publishMbeddrToLocal (dependsOn: ['publishMbeddrPublicationToMavenLocal',
 
 check.dependsOn test_mbeddr
 
-tasks.getByPath(':build:com.mbeddr:install').dependsOn install_spawner
-//dependsOn: [install_spawner, ':build:com.mbeddr:platform:install_sl_all_nativelibs', ':build:com.mbeddr:platform:install_actionsfilter']
+tasks.getByPath(':build:com.mbeddr:install').dependsOn install_spawner , ':build:com.mbeddr:platform:install_actionsfilter'
