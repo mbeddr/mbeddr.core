@@ -4162,6 +4162,38 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbJ" id="5n5oZwYb8Mf" role="3cqZAp">
+        <node concept="3clFbS" id="5n5oZwYb8Mh" role="3clFbx">
+          <node concept="2MkqsV" id="5n5oZwYbaKc" role="3cqZAp">
+            <node concept="Xl_RD" id="5n5oZwYbaKr" role="2MkJ7o">
+              <property role="Xl_RC" value="Data loggers donot support array type for items" />
+            </node>
+            <node concept="2OqwBi" id="5n5oZwYbaVy" role="2OEOjV">
+              <node concept="1YBJjd" id="5n5oZwYbaLn" role="2Oq$k0">
+                <ref role="1YBMHb" node="4itX8XVBigF" resolve="di" />
+              </node>
+              <node concept="3TrEf2" id="5n5oZwYbbEp" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="5n5oZwYb9V8" role="3clFbw">
+          <node concept="2OqwBi" id="5n5oZwYb92J" role="2Oq$k0">
+            <node concept="1YBJjd" id="5n5oZwYb8R5" role="2Oq$k0">
+              <ref role="1YBMHb" node="4itX8XVBigF" resolve="di" />
+            </node>
+            <node concept="3TrEf2" id="5n5oZwYb9v9" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+            </node>
+          </node>
+          <node concept="1mIQ4w" id="5n5oZwYbaBE" role="2OqNvi">
+            <node concept="chp4Y" id="5n5oZwYbaEy" role="cj9EA">
+              <ref role="cht4Q" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="4itX8XVBigF" role="1YuTPh">
       <property role="TrG5h" value="di" />
