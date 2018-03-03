@@ -7,7 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="mqum" ref="r:ec874b45-e888-42e6-995a-a298cefdff55(com.mbeddr.cimport.comparator.code)" />
+    <import index="mqum" ref="r:ec874b45-e888-42e6-995a-a298cefdff55(com.mbeddr.mpsutil.comparator.code)" />
     <import index="8do3" ref="r:cea04c4b-adba-417e-a192-34c7a8799ac1(com.mbeddr.mpsutil.compare.structure)" />
     <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -232,7 +232,7 @@
                 <property role="TrG5h" value="references" />
                 <node concept="_YKpA" id="3qPjHtYuXpv" role="1tU5fm">
                   <node concept="3uibUv" id="3qPjHtYuXF4" role="_ZDj9">
-                    <ref role="3uigEE" to="mqum:3qPjHtYqUfg" resolve="IgnoredReference" />
+                    <ref role="3uigEE" to="mqum:2mzdNw3ouFX" resolve="IgnoredReference" />
                   </node>
                 </node>
                 <node concept="10Nm6u" id="3qPjHtYuXpx" role="33vP2m" />
@@ -384,7 +384,7 @@
                                                   <node concept="2pIpSj" id="3qPjHtYuXWk" role="2pJxcM">
                                                     <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
                                                     <node concept="36bGnv" id="3qPjHtYuZA8" role="2pJxcZ">
-                                                      <ref role="36bGnp" to="mqum:3qPjHtYqUfg" resolve="IgnoredReference" />
+                                                      <ref role="36bGnp" to="mqum:2mzdNw3ouFX" resolve="IgnoredReference" />
                                                     </node>
                                                   </node>
                                                 </node>
@@ -549,7 +549,7 @@
                 <property role="TrG5h" value="references" />
                 <node concept="_YKpA" id="3qPjHtYuZGE" role="1tU5fm">
                   <node concept="3uibUv" id="3qPjHtYuZGF" role="_ZDj9">
-                    <ref role="3uigEE" to="mqum:3qPjHtYqUfg" resolve="IgnoredReference" />
+                    <ref role="3uigEE" to="mqum:2mzdNw3ouFX" resolve="IgnoredReference" />
                   </node>
                 </node>
                 <node concept="10Nm6u" id="3qPjHtYuZGG" role="33vP2m" />
@@ -736,7 +736,7 @@
                                               <node concept="2pIpSj" id="3qPjHtY$aM7" role="2pJxcM">
                                                 <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
                                                 <node concept="36bGnv" id="3qPjHtY$aM8" role="2pJxcZ">
-                                                  <ref role="36bGnp" to="mqum:3qPjHtYqUfg" resolve="IgnoredReference" />
+                                                  <ref role="36bGnp" to="mqum:2mzdNw3ouFX" resolve="IgnoredReference" />
                                                 </node>
                                               </node>
                                             </node>
