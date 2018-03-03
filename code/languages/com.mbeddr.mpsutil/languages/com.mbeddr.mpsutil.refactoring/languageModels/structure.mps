@@ -2,7 +2,7 @@
 <model ref="1fc20ffe-f35b-4791-a0b7-d706bad5c49a/r:18d75373-a465-46d0-9749-aacc22a947bc(com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -11,6 +11,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="aozb" ref="r:79fc204c-e983-452d-a03e-6b06e96e9690(com.mbeddr.mpsutil.contextactions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -186,6 +187,13 @@
     <property role="34LRSv" value="option" />
     <property role="EcuMT" value="3897771026684496949" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5RfdBauVjKG" role="1TKVEi">
+      <property role="IQ2ns" value="6759681431626923052" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="disabledContextActions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="aozb:3y7CaIpppfq" resolve="DisableContextInstanceAction" />
+    </node>
     <node concept="1TJgyi" id="3onExzPlXp7" role="1TKVEl">
       <property role="TrG5h" value="menuLabel" />
       <property role="IQ2nx" value="3897771026684565063" />

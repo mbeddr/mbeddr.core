@@ -269,6 +269,7 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
+      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
@@ -33165,7 +33166,7 @@
                 </node>
                 <node concept="3clFbF" id="5Acmi3lC7ba" role="3cqZAp">
                   <node concept="2OqwBi" id="5Acmi3lC7bb" role="3clFbG">
-                    <node concept="37vLTw" id="5Acmi3lC7bc" role="2Oq$k0">
+                    <node concept="3cpWsa" id="5Acmi3lC7bc" role="2Oq$k0">
                       <ref role="3cqZAo" node="6Zad41Tri3h" resolve="contributorHierarchy" />
                     </node>
                     <node concept="TSZUe" id="5Acmi3lC7bd" role="2OqNvi">
@@ -35366,39 +35367,6 @@
                             </node>
                             <node concept="liA8E" id="31LexW00y9L" role="2OqNvi">
                               <ref role="37wK5l" to="fwk:~PositionInfo.getFileName():java.lang.String" resolve="getFileName" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="2TuqXhavW$C" role="3cqZAp">
-                        <node concept="2OqwBi" id="2TuqXhavW$_" role="3clFbG">
-                          <node concept="10M0yZ" id="2TuqXhavW$A" role="2Oq$k0">
-                            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                            <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                          </node>
-                          <node concept="liA8E" id="2TuqXhavW$B" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                            <node concept="3cpWs3" id="2TuqXhavYVn" role="37wK5m">
-                              <node concept="2OqwBi" id="2TuqXhawf06" role="3uHU7w">
-                                <node concept="2JrnkZ" id="2TuqXhawdb8" role="2Oq$k0">
-                                  <node concept="1eOMI4" id="2TuqXhawapE" role="2JrQYb">
-                                    <node concept="2OqwBi" id="2TuqXhawapF" role="1eOMHV">
-                                      <node concept="2GrUjf" id="2TuqXhawapG" role="2Oq$k0">
-                                        <ref role="2Gs0qQ" node="6EW69Px1GXX" resolve="frameMapping" />
-                                      </node>
-                                      <node concept="2S8uIT" id="2TuqXhawapH" role="2OqNvi">
-                                        <ref role="2S8YL0" node="229N9i$8VWM" resolve="currentNode" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="2TuqXhawh5e" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
-                                </node>
-                              </node>
-                              <node concept="Xl_RD" id="2TuqXhavYqR" role="3uHU7B">
-                                <property role="Xl_RC" value="## pc: " />
-                              </node>
                             </node>
                           </node>
                         </node>

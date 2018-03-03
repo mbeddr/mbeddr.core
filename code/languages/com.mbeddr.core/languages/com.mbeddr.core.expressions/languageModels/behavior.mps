@@ -2,14 +2,14 @@
 <model ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -35,6 +35,7 @@
     <import index="b3bi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.impl.cellActions(MPS.Editor/)" />
     <import index="iq8l" ref="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" implicit="true" />
@@ -168,6 +169,7 @@
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
+      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -400,6 +402,9 @@
       </concept>
       <concept id="1181949435690" name="jetbrains.mps.lang.smodel.structure.Concept_NewInstance" flags="nn" index="LFhST" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
+        <child id="1145567471833" name="createdType" index="2T96Bj" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -2988,15 +2993,15 @@
                   </node>
                   <node concept="2OqwBi" id="2cCHKvAT0ff" role="33vP2m">
                     <node concept="2OqwBi" id="2cCHKvAT0fg" role="2Oq$k0">
+                      <node concept="3Tsc0h" id="2cCHKvAT0fk" role="2OqNvi">
+                        <ref role="3TtcxE" to="tpce:f_TKVDF" resolve="linkDeclaration" />
+                      </node>
                       <node concept="2OqwBi" id="5ZSJngDQJbS" role="2Oq$k0">
                         <node concept="2OqwBi" id="5ZSJngDQJbT" role="2Oq$k0">
                           <node concept="13iPFW" id="5ZSJngDQJbU" role="2Oq$k0" />
                           <node concept="2yIwOk" id="5ZSJngDQJbV" role="2OqNvi" />
                         </node>
                         <node concept="FGMqu" id="5ZSJngDQJbW" role="2OqNvi" />
-                      </node>
-                      <node concept="3Tsc0h" id="2cCHKvAT0fk" role="2OqNvi">
-                        <ref role="3TtcxE" to="tpce:f_TKVDF" resolve="linkDeclaration" />
                       </node>
                     </node>
                     <node concept="3zZkjj" id="2cCHKvAT0fl" role="2OqNvi">
@@ -3188,6 +3193,19 @@
                       <property role="3cmrfH" value="0" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2D$HA$_$qCh" role="3cqZAp">
+              <node concept="37vLTI" id="2D$HA$__2Kk" role="3clFbG">
+                <node concept="37vLTw" id="2D$HA$__2L5" role="37vLTJ">
+                  <ref role="3cqZAo" node="2cCHKvASMe1" resolve="typeName" />
+                </node>
+                <node concept="2OqwBi" id="2D$HA$_$r74" role="37vLTx">
+                  <node concept="37vLTw" id="2D$HA$_$qCf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2cCHKvASMe1" resolve="typeName" />
+                  </node>
+                  <node concept="17S1cR" id="2D$HA$_$rEp" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -3458,6 +3476,25 @@
                 <node concept="chp4Y" id="7oI7FI6rVlW" role="ri$Ld">
                   <ref role="cht4Q" to="mj1l:7FQByU3CrCQ" resolve="Type" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1tHnH2eLwg4" role="13h7CS">
+      <property role="TrG5h" value="dependentModuleContents" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="1tHnH2eLwg5" role="1B3o_S" />
+      <node concept="2I9FWS" id="1tHnH2eLwg6" role="3clF45">
+        <ref role="2I9WkF" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
+      </node>
+      <node concept="3clFbS" id="1tHnH2eLwg7" role="3clF47">
+        <node concept="3clFbF" id="1tHnH2eLxQh" role="3cqZAp">
+          <node concept="2ShNRf" id="1tHnH2eLxQf" role="3clFbG">
+            <node concept="2T8Vx0" id="1tHnH2eL_Sl" role="2ShVmc">
+              <node concept="2I9FWS" id="1tHnH2eL_Sn" role="2T96Bj">
+                <ref role="2I9WkF" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
               </node>
             </node>
           </node>
@@ -9059,8 +9096,8 @@
               <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="3cpWs3" id="6mzZsELplxk" role="37wK5m">
                 <node concept="2OqwBi" id="6mzZsELplxl" role="3uHU7w">
-                  <node concept="13iPFW" id="6mzZsELplxm" role="2Oq$k0" />
                   <node concept="2yIwOk" id="5CkU_dHsm_1" role="2OqNvi" />
+                  <node concept="13iPFW" id="6mzZsELplxm" role="2Oq$k0" />
                 </node>
                 <node concept="Xl_RD" id="6mzZsELplxo" role="3uHU7B">
                   <property role="Xl_RC" value="Left child cannot be set for this expression: " />
@@ -9091,8 +9128,8 @@
               <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="3cpWs3" id="6mzZsELplgy" role="37wK5m">
                 <node concept="2OqwBi" id="6mzZsELplgz" role="3uHU7w">
-                  <node concept="13iPFW" id="6mzZsELplg$" role="2Oq$k0" />
                   <node concept="2yIwOk" id="5CkU_dHsn4n" role="2OqNvi" />
+                  <node concept="13iPFW" id="6mzZsELplg$" role="2Oq$k0" />
                 </node>
                 <node concept="Xl_RD" id="6mzZsELplgA" role="3uHU7B">
                   <property role="Xl_RC" value="Right child cannot be set for this expression: " />
@@ -14467,10 +14504,10 @@
                             <property role="Xl_RC" value="static evaluation for " />
                           </node>
                           <node concept="2OqwBi" id="6kPQpqHgQdm" role="3uHU7w">
+                            <node concept="2yIwOk" id="5CkU_dHsi9l" role="2OqNvi" />
                             <node concept="37vLTw" id="6kPQpqHgQ3z" role="2Oq$k0">
                               <ref role="3cqZAo" node="6ngD7lvosk$" resolve="e" />
                             </node>
-                            <node concept="2yIwOk" id="5CkU_dHsi9l" role="2OqNvi" />
                           </node>
                         </node>
                       </node>
@@ -20773,15 +20810,15 @@
             </node>
             <node concept="2OqwBi" id="7x2kTsyzGCR" role="33vP2m">
               <node concept="2OqwBi" id="7x2kTsyzFkt" role="2Oq$k0">
+                <node concept="3Tsc0h" id="7x2kTsyzFBS" role="2OqNvi">
+                  <ref role="3TtcxE" to="tpce:f_TKVDF" resolve="linkDeclaration" />
+                </node>
                 <node concept="2OqwBi" id="5ZSJngDQGHv" role="2Oq$k0">
                   <node concept="2OqwBi" id="5ZSJngDQGHw" role="2Oq$k0">
                     <node concept="13iPFW" id="5ZSJngDQGHx" role="2Oq$k0" />
                     <node concept="2yIwOk" id="5ZSJngDQGHy" role="2OqNvi" />
                   </node>
                   <node concept="FGMqu" id="5ZSJngDQGHz" role="2OqNvi" />
-                </node>
-                <node concept="3Tsc0h" id="7x2kTsyzFBS" role="2OqNvi">
-                  <ref role="3TtcxE" to="tpce:f_TKVDF" resolve="linkDeclaration" />
                 </node>
               </node>
               <node concept="4Tj9Z" id="7x2kTsyzIoA" role="2OqNvi">
@@ -21314,8 +21351,8 @@
               <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="3cpWs3" id="6mzZsELnRIl" role="37wK5m">
                 <node concept="2OqwBi" id="6mzZsELnROU" role="3uHU7w">
-                  <node concept="13iPFW" id="6mzZsELnRK$" role="2Oq$k0" />
                   <node concept="2yIwOk" id="5CkU_dHslka" role="2OqNvi" />
+                  <node concept="13iPFW" id="6mzZsELnRK$" role="2Oq$k0" />
                 </node>
                 <node concept="Xl_RD" id="6mzZsELnR5i" role="3uHU7B">
                   <property role="Xl_RC" value="Left child cannot be set for this expression: " />
@@ -21358,8 +21395,8 @@
               <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
               <node concept="3cpWs3" id="6mzZsELnSmW" role="37wK5m">
                 <node concept="2OqwBi" id="6mzZsELnSmX" role="3uHU7w">
-                  <node concept="13iPFW" id="6mzZsELnSmY" role="2Oq$k0" />
                   <node concept="2yIwOk" id="5CkU_dHslBt" role="2OqNvi" />
+                  <node concept="13iPFW" id="6mzZsELnSmY" role="2Oq$k0" />
                 </node>
                 <node concept="Xl_RD" id="6mzZsELnSn0" role="3uHU7B">
                   <property role="Xl_RC" value="Right child cannot be set for this expression: " />

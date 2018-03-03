@@ -2,7 +2,6 @@
 <model ref="r:79fc204c-e983-452d-a03e-6b06e96e9690(com.mbeddr.mpsutil.contextactions.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -10,6 +9,7 @@
     <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" />
     <import index="tp3j" ref="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" />
     <import index="tp1h" ref="r:00000000-0000-4000-0000-011c89590319(jetbrains.mps.lang.refactoring.structure)" />
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -327,6 +327,12 @@
       <property role="IQ2ns" value="5022141054905293092" />
       <ref role="20lvS9" node="4mMeETlyh$F" resolve="GenericActionSource_ExecuteFunction" />
     </node>
+    <node concept="1TJgyj" id="$ugHPy8Xpg" role="1TKVEi">
+      <property role="IQ2ns" value="657036114244392528" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="originalContextActionID" />
+      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4mMeETlyh$F">
     <property role="TrG5h" value="GenericActionSource_ExecuteFunction" />
@@ -608,7 +614,6 @@
   </node>
   <node concept="1TIwiD" id="7uF2w19TiCc">
     <property role="TrG5h" value="ConceptInstanceAction" />
-    <property role="34LRSv" value="concept instance action" />
     <property role="EcuMT" value="8622996907886979596" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7uF2w19Vfp1" role="1TKVEl">
@@ -627,7 +632,7 @@
       <property role="20kJfa" value="label" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="8622996907887081686" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
     </node>
     <node concept="1TJgyj" id="23_jb1yL7J" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -734,6 +739,24 @@
     <property role="34LRSv" value="contextNode" />
     <property role="EcuMT" value="37037267178195404" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3y7CaIpppfq">
+    <property role="EcuMT" value="4073401046853325786" />
+    <property role="TrG5h" value="DisableContextInstanceAction" />
+    <property role="34LRSv" value="disable context actions" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="3y7CaIpppfr" role="1TKVEi">
+      <property role="IQ2ns" value="4073401046853325787" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="actionSource" />
+      <ref role="20lvS9" node="7uF2w19TiCc" resolve="ConceptInstanceAction" />
+    </node>
+    <node concept="1TJgyj" id="NZAi8Ck1BE" role="1TKVEi">
+      <property role="IQ2ns" value="936635619500628458" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="hint" />
+      <ref role="20lvS9" to="tpc2:4b_Ukfr7MRg" resolve="ConceptEditorHintDeclarationReferenceExpression" />
+    </node>
   </node>
 </model>
 

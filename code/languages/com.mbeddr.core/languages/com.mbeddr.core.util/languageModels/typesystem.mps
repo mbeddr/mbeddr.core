@@ -4111,6 +4111,91 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbJ" id="1Dj9kKMwBY5" role="3cqZAp">
+        <node concept="3clFbS" id="1Dj9kKMwBY7" role="3clFbx">
+          <node concept="2MkqsV" id="1Dj9kKMwJm_" role="3cqZAp">
+            <node concept="Xl_RD" id="1Dj9kKMwJmO" role="2MkJ7o">
+              <property role="Xl_RC" value="Init value of data logger item can only be literals or references to global constants" />
+            </node>
+            <node concept="2OqwBi" id="1Dj9kKMwJzj" role="2OEOjV">
+              <node concept="1YBJjd" id="1Dj9kKMwJoJ" role="2Oq$k0">
+                <ref role="1YBMHb" node="4itX8XVBigF" resolve="di" />
+              </node>
+              <node concept="3TrEf2" id="1Dj9kKMwKe7" role="2OqNvi">
+                <ref role="3Tt5mk" to="k146:2PpKJy$1T$t" resolve="initValue" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="1Dj9kKMwY0t" role="3clFbw">
+          <node concept="1eOMI4" id="1Dj9kKMwY0v" role="3fr31v">
+            <node concept="22lmx$" id="1Dj9kKMwY0w" role="1eOMHV">
+              <node concept="2OqwBi" id="1Dj9kKMwY0x" role="3uHU7w">
+                <node concept="2OqwBi" id="1Dj9kKMwY0y" role="2Oq$k0">
+                  <node concept="1YBJjd" id="1Dj9kKMwY0z" role="2Oq$k0">
+                    <ref role="1YBMHb" node="4itX8XVBigF" resolve="di" />
+                  </node>
+                  <node concept="3TrEf2" id="1Dj9kKMwY0$" role="2OqNvi">
+                    <ref role="3Tt5mk" to="k146:2PpKJy$1T$t" resolve="initValue" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="1Dj9kKMwY0_" role="2OqNvi">
+                  <node concept="chp4Y" id="1Dj9kKMwY0A" role="cj9EA">
+                    <ref role="cht4Q" to="mj1l:7FQByU3CrDq" resolve="Literal" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1Dj9kKMwY0B" role="3uHU7B">
+                <node concept="2OqwBi" id="1Dj9kKMwY0C" role="2Oq$k0">
+                  <node concept="1YBJjd" id="1Dj9kKMwY0D" role="2Oq$k0">
+                    <ref role="1YBMHb" node="4itX8XVBigF" resolve="di" />
+                  </node>
+                  <node concept="3TrEf2" id="1Dj9kKMwY0E" role="2OqNvi">
+                    <ref role="3Tt5mk" to="k146:2PpKJy$1T$t" resolve="initValue" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="1Dj9kKMwY0F" role="2OqNvi">
+                  <node concept="chp4Y" id="1Dj9kKMwY0G" role="cj9EA">
+                    <ref role="cht4Q" to="x27k:3ilck8KqBqr" resolve="GlobalConstantRef" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5n5oZwYb8Mf" role="3cqZAp">
+        <node concept="3clFbS" id="5n5oZwYb8Mh" role="3clFbx">
+          <node concept="2MkqsV" id="5n5oZwYbaKc" role="3cqZAp">
+            <node concept="Xl_RD" id="5n5oZwYbaKr" role="2MkJ7o">
+              <property role="Xl_RC" value="Data loggers donot support array type for items" />
+            </node>
+            <node concept="2OqwBi" id="5n5oZwYbaVy" role="2OEOjV">
+              <node concept="1YBJjd" id="5n5oZwYbaLn" role="2Oq$k0">
+                <ref role="1YBMHb" node="4itX8XVBigF" resolve="di" />
+              </node>
+              <node concept="3TrEf2" id="5n5oZwYbbEp" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="5n5oZwYb9V8" role="3clFbw">
+          <node concept="2OqwBi" id="5n5oZwYb92J" role="2Oq$k0">
+            <node concept="1YBJjd" id="5n5oZwYb8R5" role="2Oq$k0">
+              <ref role="1YBMHb" node="4itX8XVBigF" resolve="di" />
+            </node>
+            <node concept="3TrEf2" id="5n5oZwYb9v9" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+            </node>
+          </node>
+          <node concept="1mIQ4w" id="5n5oZwYbaBE" role="2OqNvi">
+            <node concept="chp4Y" id="5n5oZwYbaEy" role="cj9EA">
+              <ref role="cht4Q" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="4itX8XVBigF" role="1YuTPh">
       <property role="TrG5h" value="di" />

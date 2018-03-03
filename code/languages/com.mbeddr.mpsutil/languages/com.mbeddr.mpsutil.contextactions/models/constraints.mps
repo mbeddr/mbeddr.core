@@ -2,7 +2,7 @@
 <model ref="r:b9b17836-fd34-4212-8343-214556d2275d(com.mbeddr.mpsutil.contextactions.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -519,6 +519,31 @@
               </node>
             </node>
             <node concept="3x8VRR" id="5RIakkDITuJ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3y7CaIppTuH">
+    <ref role="1M2myG" to="aozb:3y7CaIpppfq" resolve="DisableContextInstanceAction" />
+    <node concept="1N5Pfh" id="3y7CaIppTCo" role="1Mr941">
+      <ref role="1N5Vy1" to="aozb:3y7CaIpppfr" resolve="actionSource" />
+      <node concept="3dgokm" id="3y7CaIppTCs" role="1N6uqs">
+        <node concept="3clFbS" id="3y7CaIppTCu" role="2VODD2">
+          <node concept="3clFbF" id="7C6N2UpuYe_" role="3cqZAp">
+            <node concept="2ShNRf" id="7C6N2UpuYeA" role="3clFbG">
+              <node concept="1pGfFk" id="7C6N2UpuYeB" role="2ShVmc">
+                <ref role="37wK5l" to="o8zo:4k9eBec$QVW" resolve="ModelPlusImportedScope" />
+                <node concept="2OqwBi" id="7C6N2UpuYeC" role="37wK5m">
+                  <node concept="2rP1CM" id="7C6N2UpuYeD" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="7C6N2UpuYeE" role="2OqNvi" />
+                </node>
+                <node concept="3clFbT" id="7C6N2UpuYeF" role="37wK5m" />
+                <node concept="35c_gC" id="7C6N2UpuYeG" role="37wK5m">
+                  <ref role="35c_gD" to="aozb:7uF2w19TiCc" resolve="ConceptInstanceAction" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

@@ -26,6 +26,7 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
   </imports>
@@ -99,6 +100,7 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -106,6 +108,7 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
+      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
         <child id="1206060619838" name="condition" index="3eO9$A" />
@@ -426,7 +429,7 @@
           <node concept="3clFbC" id="3R$6B6bPvJa" role="3clFbw">
             <node concept="10Nm6u" id="3R$6B6bPvJd" role="3uHU7w" />
             <node concept="2OqwBi" id="3R$6B6bPvJ5" role="3uHU7B">
-              <node concept="37vLTw" id="3R$6B6bPvJ4" role="2Oq$k0">
+              <node concept="3cpWsa" id="3R$6B6bPvJ4" role="2Oq$k0">
                 <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
               </node>
               <node concept="3TrEf2" id="3R$6B6bPvJ9" role="2OqNvi">
@@ -438,7 +441,7 @@
         <node concept="3clFbF" id="4BxItZJ4BCS" role="3cqZAp">
           <node concept="2OqwBi" id="4BxItZJ4BDC" role="3clFbG">
             <node concept="2OqwBi" id="4BxItZJ4BDz" role="2Oq$k0">
-              <node concept="37vLTw" id="4BxItZJ4BDy" role="2Oq$k0">
+              <node concept="3cpWsa" id="4BxItZJ4BDy" role="2Oq$k0">
                 <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
               </node>
               <node concept="3TrEf2" id="4BxItZJ4BDB" role="2OqNvi">
@@ -503,7 +506,7 @@
         <node concept="3clFbF" id="otWcsA_eBd" role="3cqZAp">
           <node concept="2OqwBi" id="otWcsA_eBe" role="3clFbG">
             <node concept="2OqwBi" id="otWcsA_eBf" role="2Oq$k0">
-              <node concept="37vLTw" id="otWcsA_eBg" role="2Oq$k0">
+              <node concept="3cpWsa" id="otWcsA_eBg" role="2Oq$k0">
                 <ref role="3cqZAo" node="78Ts1skprlw" resolve="bc" />
               </node>
               <node concept="3TrEf2" id="otWcsA_eBh" role="2OqNvi">
@@ -561,7 +564,7 @@
               </node>
             </node>
             <node concept="2OqwBi" id="4qSf1u20kk8" role="2Oq$k0">
-              <node concept="37vLTw" id="4qSf1u20kk5" role="2Oq$k0">
+              <node concept="3cpWsa" id="4qSf1u20kk5" role="2Oq$k0">
                 <ref role="3cqZAo" node="78Ts1skprlC" resolve="bc" />
               </node>
               <node concept="3Tsc0h" id="4qSf1u20kke" role="2OqNvi">
@@ -1033,6 +1036,15 @@
       <property role="TrG5h" value="OBJODIR" />
       <property role="3G5mJX" value=" ./bin" />
     </node>
+    <node concept="3G52F3" id="6O2$eQdjK5j" role="12RR68">
+      <property role="TrG5h" value="EXTOBJODIR" />
+      <property role="3G5mJX" value="./extbin" />
+    </node>
+    <node concept="3G52F3" id="56KIRAx7DMF" role="12RR68">
+      <property role="TrG5h" value="EXTERNALSOURCESTARGET" />
+      <property role="3G5mJX" value="compileExternalSources" />
+    </node>
+    <node concept="12Nxi1" id="6O2$eQdjztH" role="12RR68" />
     <node concept="12Nxi1" id="2Rx8UqeMqzj" role="12RR68" />
     <node concept="3r3xyQ" id="6VqaxFaerfN" role="12RR68">
       <property role="3r3y0D" value="$(HOST)" />
@@ -3431,7 +3443,7 @@
                       <node concept="3clFbS" id="1d4J0utBf1w" role="1bW5cS">
                         <node concept="3clFbF" id="1d4J0utBf1x" role="3cqZAp">
                           <node concept="2OqwBi" id="1d4J0utBf1y" role="3clFbG">
-                            <node concept="37vLTw" id="1d4J0utBf1z" role="2Oq$k0">
+                            <node concept="3cpWs2" id="1d4J0utBf1z" role="2Oq$k0">
                               <ref role="3cqZAo" node="1d4J0utBf1_" resolve="it" />
                             </node>
                             <node concept="3TrcHB" id="1d4J0utBf1$" role="2OqNvi">
@@ -3529,7 +3541,7 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="37vLTw" id="1d4J0utH7rj" role="37vLTJ">
+                          <node concept="3cpWsa" id="1d4J0utH7rj" role="37vLTJ">
                             <ref role="3cqZAo" node="2Rx8UqeMq$D" resolve="result" />
                           </node>
                         </node>
@@ -3572,7 +3584,7 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="37vLTw" id="1d4J0utH7r_" role="37vLTJ">
+                            <node concept="3cpWsa" id="1d4J0utH7r_" role="37vLTJ">
                               <ref role="3cqZAo" node="2Rx8UqeMq$D" resolve="result" />
                             </node>
                           </node>
@@ -4423,7 +4435,7 @@
                     <node concept="3clFbS" id="2Rx8UqeMqCo" role="1bW5cS">
                       <node concept="3clFbF" id="2Rx8UqeMqCp" role="3cqZAp">
                         <node concept="2OqwBi" id="2Rx8UqeMqCq" role="3clFbG">
-                          <node concept="37vLTw" id="2Rx8UqeMqCr" role="2Oq$k0">
+                          <node concept="3cpWs2" id="2Rx8UqeMqCr" role="2Oq$k0">
                             <ref role="3cqZAo" node="2Rx8UqeMqCt" resolve="it" />
                           </node>
                           <node concept="3TrcHB" id="2Rx8UqeMqCs" role="2OqNvi">
@@ -4468,7 +4480,7 @@
                       <node concept="3clFbS" id="2Rx8UqeMqCH" role="1bW5cS">
                         <node concept="3clFbF" id="2Rx8UqeMqCI" role="3cqZAp">
                           <node concept="2OqwBi" id="2Rx8UqeMqCJ" role="3clFbG">
-                            <node concept="37vLTw" id="2Rx8UqeMqCK" role="2Oq$k0">
+                            <node concept="3cpWs2" id="2Rx8UqeMqCK" role="2Oq$k0">
                               <ref role="3cqZAo" node="2Rx8UqeMqCM" resolve="it" />
                             </node>
                             <node concept="3TrcHB" id="2Rx8UqeMqCL" role="2OqNvi">
@@ -4539,7 +4551,7 @@
                               <node concept="3TrcHB" id="2Rx8UqeMqDf" role="2OqNvi">
                                 <ref role="3TsBF5" to="51wr:2YvytGXjVmW" resolve="isTest" />
                               </node>
-                              <node concept="37vLTw" id="2Rx8UqeMqDg" role="2Oq$k0">
+                              <node concept="3cpWs2" id="2Rx8UqeMqDg" role="2Oq$k0">
                                 <ref role="3cqZAo" node="2Rx8UqeMqDh" resolve="it" />
                               </node>
                             </node>
@@ -4595,7 +4607,7 @@
       </node>
       <node concept="3O_FaX" id="Qn6HUAjFGy" role="3O_FaS">
         <node concept="3G69iQ" id="Qn6HUAjFGG" role="3G69ia">
-          <property role="3G69iL" value=" " />
+          <property role="3G69iL" value="$(Q) mkdir -p $(EXTOBJODIR)" />
         </node>
       </node>
     </node>

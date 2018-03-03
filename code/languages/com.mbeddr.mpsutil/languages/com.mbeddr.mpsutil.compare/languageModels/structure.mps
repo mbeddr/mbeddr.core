@@ -2,7 +2,7 @@
 <model ref="r:cea04c4b-adba-417e-a192-34c7a8799ac1(com.mbeddr.mpsutil.compare.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -64,6 +64,12 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ignoredProperties" />
       <property role="IQ2ns" value="2691439673111601841" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3qPjHtYqU7z" role="1TKVEi">
+      <property role="IQ2ns" value="3942143736278655459" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ignoredReferences" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
@@ -150,6 +156,12 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ignoredProperties" />
       <property role="IQ2ns" value="1831260205537497747" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3qPjHtY$alZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ignoredReferences" />
+      <property role="IQ2ns" value="3942143736281081215" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
