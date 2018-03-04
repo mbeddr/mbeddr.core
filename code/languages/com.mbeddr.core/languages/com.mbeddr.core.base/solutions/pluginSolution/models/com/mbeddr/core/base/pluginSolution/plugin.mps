@@ -20579,7 +20579,7 @@
                                         <node concept="10Oyi0" id="5Pb2U$k6TOa" role="1tU5fm" />
                                         <node concept="3cpWs3" id="5Pb2U$k6TOb" role="33vP2m">
                                           <node concept="3cmrfG" id="5Pb2U$k6TOc" role="3uHU7w">
-                                            <property role="3cmrfH" value="15" />
+                                            <property role="3cmrfH" value="20" />
                                           </node>
                                           <node concept="2OqwBi" id="5Pb2U$k6TOd" role="3uHU7B">
                                             <node concept="37vLTw" id="5Pb2U$k6TOe" role="2Oq$k0">
@@ -20598,7 +20598,7 @@
                                         <node concept="10Oyi0" id="5Pb2U$k6TOi" role="1tU5fm" />
                                         <node concept="3cpWs3" id="5Pb2U$k6TOj" role="33vP2m">
                                           <node concept="3cmrfG" id="5Pb2U$k6TOk" role="3uHU7w">
-                                            <property role="3cmrfH" value="10" />
+                                            <property role="3cmrfH" value="15" />
                                           </node>
                                           <node concept="2OqwBi" id="5Pb2U$k6TOl" role="3uHU7B">
                                             <node concept="37vLTw" id="5Pb2U$k6TOm" role="2Oq$k0">
@@ -20662,8 +20662,8 @@
                                             <ref role="3cqZAo" to="z60i:~RenderingHints.KEY_TEXT_ANTIALIASING" resolve="KEY_TEXT_ANTIALIASING" />
                                             <ref role="1PxDUh" to="z60i:~RenderingHints" resolve="RenderingHints" />
                                           </node>
-                                          <node concept="10M0yZ" id="7VuYlCRUYdo" role="37wK5m">
-                                            <ref role="3cqZAo" to="z60i:~RenderingHints.VALUE_TEXT_ANTIALIAS_ON" resolve="VALUE_TEXT_ANTIALIAS_ON" />
+                                          <node concept="10M0yZ" id="2c2AzQcCF1l" role="37wK5m">
+                                            <ref role="3cqZAo" to="z60i:~RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_VBGR" resolve="VALUE_TEXT_ANTIALIAS_LCD_VBGR" />
                                             <ref role="1PxDUh" to="z60i:~RenderingHints" resolve="RenderingHints" />
                                           </node>
                                         </node>
@@ -20700,6 +20700,24 @@
                                           </node>
                                           <node concept="10M0yZ" id="7VuYlCRVd9p" role="37wK5m">
                                             <ref role="3cqZAo" to="z60i:~RenderingHints.VALUE_RENDER_QUALITY" resolve="VALUE_RENDER_QUALITY" />
+                                            <ref role="1PxDUh" to="z60i:~RenderingHints" resolve="RenderingHints" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbF" id="2c2AzQcDkLf" role="3cqZAp">
+                                      <node concept="2OqwBi" id="2c2AzQcDkLg" role="3clFbG">
+                                        <node concept="37vLTw" id="2c2AzQcDkLh" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="5Pb2U$k6TOy" resolve="g" />
+                                        </node>
+                                        <node concept="liA8E" id="2c2AzQcDkLi" role="2OqNvi">
+                                          <ref role="37wK5l" to="z60i:~Graphics2D.setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object):void" resolve="setRenderingHint" />
+                                          <node concept="10M0yZ" id="2c2AzQcDm5I" role="37wK5m">
+                                            <ref role="3cqZAo" to="z60i:~RenderingHints.KEY_DITHERING" resolve="KEY_DITHERING" />
+                                            <ref role="1PxDUh" to="z60i:~RenderingHints" resolve="RenderingHints" />
+                                          </node>
+                                          <node concept="10M0yZ" id="2c2AzQcDnT7" role="37wK5m">
+                                            <ref role="3cqZAo" to="z60i:~RenderingHints.VALUE_DITHER_ENABLE" resolve="VALUE_DITHER_ENABLE" />
                                             <ref role="1PxDUh" to="z60i:~RenderingHints" resolve="RenderingHints" />
                                           </node>
                                         </node>
@@ -20811,7 +20829,7 @@
                                             <node concept="37vLTw" id="5Pb2U$k6TPh" role="37wK5m">
                                               <ref role="3cqZAo" node="5Pb2U$k6TOq" resolve="image" />
                                             </node>
-                                            <node concept="3cmrfG" id="5Pb2U$k6TPi" role="37wK5m">
+                                            <node concept="3cmrfG" id="2c2AzQcImfq" role="37wK5m">
                                               <property role="3cmrfH" value="0" />
                                             </node>
                                           </node>
