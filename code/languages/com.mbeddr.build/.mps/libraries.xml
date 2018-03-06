@@ -15,7 +15,7 @@
           <value>
             <Library>
               <option name="name" value="mps.extensions" />
-              <option name="path" value="${mps.extensions.github.core.home}/code" />
+              <option name="path" value="${extensions.home}/code" />
             </Library>
           </value>
         </entry>
