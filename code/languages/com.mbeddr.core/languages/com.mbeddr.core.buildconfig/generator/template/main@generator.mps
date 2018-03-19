@@ -26,6 +26,7 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
   </imports>
@@ -1033,6 +1034,15 @@
       <property role="TrG5h" value="OBJODIR" />
       <property role="3G5mJX" value=" ./bin" />
     </node>
+    <node concept="3G52F3" id="6O2$eQdjK5j" role="12RR68">
+      <property role="TrG5h" value="EXTOBJODIR" />
+      <property role="3G5mJX" value="./extbin" />
+    </node>
+    <node concept="3G52F3" id="56KIRAx7DMF" role="12RR68">
+      <property role="TrG5h" value="EXTERNALSOURCESTARGET" />
+      <property role="3G5mJX" value="compileExternalSources" />
+    </node>
+    <node concept="12Nxi1" id="6O2$eQdjztH" role="12RR68" />
     <node concept="12Nxi1" id="2Rx8UqeMqzj" role="12RR68" />
     <node concept="3r3xyQ" id="6VqaxFaerfN" role="12RR68">
       <property role="3r3y0D" value="$(HOST)" />
@@ -4595,7 +4605,7 @@
       </node>
       <node concept="3O_FaX" id="Qn6HUAjFGy" role="3O_FaS">
         <node concept="3G69iQ" id="Qn6HUAjFGG" role="3G69ia">
-          <property role="3G69iL" value=" " />
+          <property role="3G69iL" value="$(Q) mkdir -p $(EXTOBJODIR)" />
         </node>
       </node>
     </node>

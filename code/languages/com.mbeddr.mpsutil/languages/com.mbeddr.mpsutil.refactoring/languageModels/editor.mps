@@ -2,7 +2,7 @@
 <model ref="1fc20ffe-f35b-4791-a0b7-d706bad5c49a/r:b2e0f29e-b4e7-47f4-9575-7a2036488f0a(com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -335,6 +335,17 @@
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="5RfdBauVkl_" role="3EZMnx">
+        <node concept="2iRfu4" id="5RfdBauVklA" role="2iSdaV" />
+        <node concept="3XFhqQ" id="5RfdBauVklB" role="3EZMnx" />
+        <node concept="3F0ifn" id="5RfdBauVklC" role="3EZMnx">
+          <property role="3F0ifm" value="disabled context actions: " />
+        </node>
+        <node concept="3F2HdR" id="5RfdBauX4Yq" role="3EZMnx">
+          <ref role="1NtTu8" to="4w5v:5RfdBauVjKG" resolve="disabledContextActions" />
+          <node concept="l2Vlx" id="5RfdBauX4Yt" role="2czzBx" />
         </node>
       </node>
     </node>

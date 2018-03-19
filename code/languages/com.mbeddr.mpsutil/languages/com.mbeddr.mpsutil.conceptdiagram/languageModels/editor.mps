@@ -413,6 +413,9 @@
         <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
+      </concept>
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
@@ -4892,11 +4895,8 @@
               <node concept="2ShNRf" id="6vp$_2vHaiU" role="25WWJ7">
                 <node concept="1pGfFk" id="6vp$_2vHaiV" role="2ShVmc">
                   <ref role="37wK5l" node="6vp$_2v_W9h" resolve="NewSubstituteAction" />
-                  <node concept="2OqwBi" id="1ilJQfUxASc" role="37wK5m">
-                    <node concept="35c_gC" id="1ilJQfUxu6H" role="2Oq$k0">
-                      <ref role="35c_gD" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
-                    </node>
-                    <node concept="FGMqu" id="1ilJQfUxBlL" role="2OqNvi" />
+                  <node concept="3B5_sB" id="1ilJQfUxASc" role="37wK5m">
+                    <ref role="3B5MYn" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                   </node>
                   <node concept="37vLTw" id="6vp$_2vHr_d" role="37wK5m">
                     <ref role="3cqZAo" node="6vp$_2vHHVs" resolve="diagram" />
@@ -4915,11 +4915,8 @@
               <node concept="2ShNRf" id="1ilJQfUxBAd" role="25WWJ7">
                 <node concept="1pGfFk" id="1ilJQfUxBAe" role="2ShVmc">
                   <ref role="37wK5l" node="6vp$_2v_W9h" resolve="NewSubstituteAction" />
-                  <node concept="2OqwBi" id="1ilJQfUxBAf" role="37wK5m">
-                    <node concept="35c_gC" id="1ilJQfUxBAg" role="2Oq$k0">
-                      <ref role="35c_gD" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
-                    </node>
-                    <node concept="FGMqu" id="1ilJQfUxBAh" role="2OqNvi" />
+                  <node concept="3B5_sB" id="1ilJQfUxBAf" role="37wK5m">
+                    <ref role="3B5MYn" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
                   </node>
                   <node concept="37vLTw" id="1ilJQfUxBAi" role="37wK5m">
                     <ref role="3cqZAo" node="6vp$_2vHHVs" resolve="diagram" />

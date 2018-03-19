@@ -2,7 +2,7 @@
 <model ref="r:17b09ba0-cbd7-488a-91a1-9ee54b7e6e87(com.mbeddr.mpsutil.compare.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -184,53 +184,64 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
-      <node concept="3EZMnI" id="3C6_kMLMVMF" role="3EZMnx">
-        <node concept="VPM3Z" id="3C6_kMLMVMH" role="3F10Kt">
+      <node concept="3F0ifn" id="h3vlOlH" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="35P6krskVwG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="3qPjHtYqUHD" role="3EZMnx">
+        <node concept="VPM3Z" id="3qPjHtYqUHF" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="3F0ifn" id="2lpUxXMduU_" role="3EZMnx">
-          <property role="3F0ifm" value="(" />
-          <node concept="11LMrY" id="2lpUxXMduZ4" role="3F10Kt">
-            <property role="VOm3f" value="true" />
+        <node concept="3EZMnI" id="3C6_kMLMVMF" role="3EZMnx">
+          <node concept="VPM3Z" id="3C6_kMLMVMH" role="3F10Kt">
+            <property role="VOm3f" value="false" />
           </node>
-        </node>
-        <node concept="3F0ifn" id="2lpUxXMduUZ" role="3EZMnx">
-          <property role="3F0ifm" value="ignore properties:" />
-          <node concept="11L4FC" id="2lpUxXMdv0_" role="3F10Kt">
-            <property role="VOm3f" value="true" />
+          <node concept="3F0ifn" id="2lpUxXMduU_" role="3EZMnx">
+            <property role="3F0ifm" value="(" />
+            <node concept="11LMrY" id="2lpUxXMduZ4" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
           </node>
-        </node>
-        <node concept="3F1sOY" id="2lpUxXMduVr" role="3EZMnx">
-          <ref role="1NtTu8" to="8do3:2lpUxXMduaL" resolve="ignoredProperties" />
-        </node>
-        <node concept="3F0ifn" id="2lpUxXMduVS" role="3EZMnx">
-          <property role="3F0ifm" value=")" />
-          <node concept="11L4FC" id="2lpUxXMdv3J" role="3F10Kt">
-            <property role="VOm3f" value="true" />
+          <node concept="3F0ifn" id="2lpUxXMduUZ" role="3EZMnx">
+            <property role="3F0ifm" value="ignore properties:" />
+            <node concept="11L4FC" id="2lpUxXMdv0_" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
           </node>
-        </node>
-        <node concept="2iRfu4" id="3C6_kMLMVMK" role="2iSdaV" />
-        <node concept="pkWqt" id="3C6_kMLMVNw" role="pqm2j">
-          <node concept="3clFbS" id="3C6_kMLMVNx" role="2VODD2">
-            <node concept="3clFbF" id="3C6_kMLMW0a" role="3cqZAp">
-              <node concept="2YIFZM" id="1TS1BLOX$z7" role="3clFbG">
-                <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
-                <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
-                <node concept="1bVj0M" id="1TS1BLOX$z8" role="37wK5m">
-                  <node concept="3clFbS" id="1TS1BLOX$z9" role="1bW5cS">
-                    <node concept="3clFbF" id="1TS1BLOX$za" role="3cqZAp">
-                      <node concept="2OqwBi" id="1TS1BLOX$zb" role="3clFbG">
-                        <node concept="2OqwBi" id="1TS1BLOX$zc" role="2Oq$k0">
-                          <node concept="pncrf" id="1TS1BLOX$zd" role="2Oq$k0" />
-                          <node concept="2Xjw5R" id="1TS1BLOX$ze" role="2OqNvi">
-                            <node concept="1xMEDy" id="1TS1BLOX$zf" role="1xVPHs">
-                              <node concept="chp4Y" id="1TS1BLOX$zg" role="ri$Ld">
-                                <ref role="cht4Q" to="8do3:_QVyJyxpbR" resolve="IgnoredPropertiesProvider" />
+          <node concept="3F1sOY" id="2lpUxXMduVr" role="3EZMnx">
+            <ref role="1NtTu8" to="8do3:2lpUxXMduaL" resolve="ignoredProperties" />
+          </node>
+          <node concept="3F0ifn" id="2lpUxXMduVS" role="3EZMnx">
+            <property role="3F0ifm" value=")" />
+            <node concept="11L4FC" id="2lpUxXMdv3J" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="3C6_kMLMVMK" role="2iSdaV" />
+          <node concept="pkWqt" id="3C6_kMLMVNw" role="pqm2j">
+            <node concept="3clFbS" id="3C6_kMLMVNx" role="2VODD2">
+              <node concept="3clFbF" id="3C6_kMLMW0a" role="3cqZAp">
+                <node concept="2YIFZM" id="1TS1BLOX$z7" role="3clFbG">
+                  <ref role="1Pybhc" to="w1kc:~NodeReadAccessCasterInEditor" resolve="NodeReadAccessCasterInEditor" />
+                  <ref role="37wK5l" to="w1kc:~NodeReadAccessCasterInEditor.runReadTransparentAction(jetbrains.mps.util.Computable):java.lang.Object" resolve="runReadTransparentAction" />
+                  <node concept="1bVj0M" id="1TS1BLOX$z8" role="37wK5m">
+                    <node concept="3clFbS" id="1TS1BLOX$z9" role="1bW5cS">
+                      <node concept="3clFbF" id="1TS1BLOX$za" role="3cqZAp">
+                        <node concept="2OqwBi" id="1TS1BLOX$zb" role="3clFbG">
+                          <node concept="2OqwBi" id="1TS1BLOX$zc" role="2Oq$k0">
+                            <node concept="pncrf" id="1TS1BLOX$zd" role="2Oq$k0" />
+                            <node concept="2Xjw5R" id="1TS1BLOX$ze" role="2OqNvi">
+                              <node concept="1xMEDy" id="1TS1BLOX$zf" role="1xVPHs">
+                                <node concept="chp4Y" id="1TS1BLOX$zg" role="ri$Ld">
+                                  <ref role="cht4Q" to="8do3:_QVyJyxpbR" resolve="IgnoredPropertiesProvider" />
+                                </node>
                               </node>
                             </node>
                           </node>
+                          <node concept="3w_OXm" id="1TS1BLOX$zh" role="2OqNvi" />
                         </node>
-                        <node concept="3w_OXm" id="1TS1BLOX$zh" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
@@ -239,12 +250,34 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="3F0ifn" id="h3vlOlH" role="3EZMnx">
-        <property role="3F0ifm" value=";" />
-        <node concept="11L4FC" id="35P6krskVwG" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+        <node concept="3EZMnI" id="3qPjHtYqVRv" role="3EZMnx">
+          <node concept="VPM3Z" id="3qPjHtYqVRw" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="3qPjHtYqVRx" role="3EZMnx">
+            <property role="3F0ifm" value="(" />
+            <node concept="11LMrY" id="3qPjHtYqVRy" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="3qPjHtYqVRz" role="3EZMnx">
+            <property role="3F0ifm" value="ignore references:" />
+            <node concept="11L4FC" id="3qPjHtYqVR$" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="3qPjHtYqVR_" role="3EZMnx">
+            <ref role="1NtTu8" to="8do3:3qPjHtYqU7z" resolve="ignoredReferences" />
+          </node>
+          <node concept="3F0ifn" id="3qPjHtYqVRA" role="3EZMnx">
+            <property role="3F0ifm" value=")" />
+            <node concept="11L4FC" id="3qPjHtYqVRB" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="3qPjHtYqVRC" role="2iSdaV" />
         </node>
+        <node concept="2iRkQZ" id="3qPjHtYqUHI" role="2iSdaV" />
       </node>
       <node concept="l2Vlx" id="i0MG184" role="2iSdaV" />
     </node>
@@ -491,6 +524,27 @@
   </node>
   <node concept="24kQdi" id="1_DWnhqnLas">
     <ref role="1XX52x" to="8do3:1_DWnhqnL9Y" resolve="AreEqualExpression" />
+    <node concept="3EZMnI" id="3qPjHtY$akV" role="6VMZX">
+      <node concept="3EZMnI" id="1_DWnhqnLAa" role="3EZMnx">
+        <node concept="3F0ifn" id="1_DWnhqnLAn" role="3EZMnx">
+          <property role="3F0ifm" value="ignored properties:" />
+        </node>
+        <node concept="3F1sOY" id="1_DWnhqnLAz" role="3EZMnx">
+          <ref role="1NtTu8" to="8do3:1_DWnhqnLaj" resolve="ignoredProperties" />
+        </node>
+        <node concept="2iRfu4" id="1_DWnhqnLAd" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="3qPjHtY$alk" role="3EZMnx">
+        <node concept="3F0ifn" id="3qPjHtY$all" role="3EZMnx">
+          <property role="3F0ifm" value="ignored references:" />
+        </node>
+        <node concept="3F1sOY" id="3qPjHtY$alm" role="3EZMnx">
+          <ref role="1NtTu8" to="8do3:3qPjHtY$alZ" resolve="ignoredReferences" />
+        </node>
+        <node concept="2iRfu4" id="3qPjHtY$aln" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="3qPjHtY$akW" role="2iSdaV" />
+    </node>
     <node concept="3EZMnI" id="1_DWnhqnL_6" role="2wV5jI">
       <node concept="3F1sOY" id="1_DWnhqnL_t" role="3EZMnx">
         <ref role="1NtTu8" to="tpee:fJuHU4s" resolve="leftExpression" />
@@ -502,15 +556,6 @@
         <ref role="1NtTu8" to="tpee:fJuHU4r" resolve="rightExpression" />
       </node>
       <node concept="2iRfu4" id="1_DWnhqnL_9" role="2iSdaV" />
-    </node>
-    <node concept="3EZMnI" id="1_DWnhqnLAa" role="6VMZX">
-      <node concept="3F0ifn" id="1_DWnhqnLAn" role="3EZMnx">
-        <property role="3F0ifm" value="ignored properties:" />
-      </node>
-      <node concept="3F1sOY" id="1_DWnhqnLAz" role="3EZMnx">
-        <ref role="1NtTu8" to="8do3:1_DWnhqnLaj" resolve="ignoredProperties" />
-      </node>
-      <node concept="2iRfu4" id="1_DWnhqnLAd" role="2iSdaV" />
     </node>
   </node>
 </model>
