@@ -23484,5 +23484,19 @@
       <node concept="3clFbS" id="hoMN8EUw06" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="4yaQL1YaUN5">
+    <ref role="13h7C2" to="vs0r:4yaQL1YaUM8" resolve="IHasQualifiedName" />
+    <node concept="13i0hz" id="4yaQL1YaUNL" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getQualifiedName" />
+      <node concept="3Tm1VV" id="4yaQL1YaUNM" role="1B3o_S" />
+      <node concept="17QB3L" id="4yaQL1Ybi2E" role="3clF45" />
+      <node concept="3clFbS" id="4yaQL1YaUNO" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="4yaQL1YaUN6" role="13h7CW">
+      <node concept="3clFbS" id="4yaQL1YaUN7" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

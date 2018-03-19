@@ -2017,5 +2017,12 @@
       <property role="1uS6qo" value="reviewed" />
     </node>
   </node>
+  <node concept="PlHQZ" id="4yaQL1YaUM8">
+    <property role="EcuMT" value="5227231181399633032" />
+    <property role="TrG5h" value="IHasQualifiedName" />
+    <node concept="PrWs8" id="4yaQL1YaUME" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
