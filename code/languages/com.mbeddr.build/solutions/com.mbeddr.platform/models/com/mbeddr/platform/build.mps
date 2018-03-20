@@ -267,14 +267,17 @@
       <node concept="m$_yC" id="vOGyTeKxr6" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
-      <node concept="m$_yC" id="vOGyTeMzpM" role="m$_yJ">
-        <ref role="m$_y1" node="7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
-      </node>
       <node concept="m$_yC" id="vOGyTeMA5D" role="m$_yJ">
         <ref role="m$_y1" node="Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
       </node>
       <node concept="m$_yC" id="5ZsrU$Jfnm_" role="m$_yJ">
         <ref role="m$_y1" node="5fGcQI8WTaQ" resolve="com.mbeddr.mpsutil.smodule" />
+      </node>
+      <node concept="m$_yC" id="64SK4bcNSkG" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
+      </node>
+      <node concept="m$_yC" id="64SK4bcNVGq" role="m$_yJ">
+        <ref role="m$_y1" node="DnqfiuSO_Q" resolve="com.mbeddr.mpsutil.compare" />
       </node>
     </node>
     <node concept="m$_wf" id="33r_JpZ6k_l" role="3989C9">
@@ -1318,7 +1321,7 @@
         </node>
       </node>
       <node concept="2iUeEo" id="7tNo_gxoK8t" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
