@@ -6,6 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -48,6 +49,13 @@
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="2634829965775258652" />
       <ref role="20lvS9" node="2igMYjpPzq7" resolve="AbstractConceptDeclarationRef" />
+    </node>
+    <node concept="1TJgyj" id="7APyAbMnxWJ" role="1TKVEi">
+      <property role="IQ2ns" value="8770068006951591727" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="languagesInScope" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
     </node>
     <node concept="PrWs8" id="2igMYjp$jPf" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
