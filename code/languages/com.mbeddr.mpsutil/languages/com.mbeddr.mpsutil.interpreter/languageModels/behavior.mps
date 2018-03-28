@@ -4556,5 +4556,33 @@
       <node concept="3clFbS" id="4hW8Ne0aLI7" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="2ufoZQIGI7O">
+    <ref role="13h7C2" to="3673:2ufoZQIGI7m" resolve="ValueInspector" />
+    <node concept="13i0hz" id="2ufoZQIGI7Z" role="13h7CS">
+      <property role="TrG5h" value="addValue" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="2ufoZQIGI80" role="1B3o_S" />
+      <node concept="3cqZAl" id="2ufoZQIGI8f" role="3clF45" />
+      <node concept="3clFbS" id="2ufoZQIGI82" role="3clF47" />
+      <node concept="37vLTG" id="2ufoZQIGI8N" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="3uibUv" id="2ufoZQIGI8M" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="2ufoZQIGI9k" role="13h7CS">
+      <property role="TrG5h" value="clearValues" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="2ufoZQIGI9l" role="1B3o_S" />
+      <node concept="3cqZAl" id="2ufoZQIGI9m" role="3clF45" />
+      <node concept="3clFbS" id="2ufoZQIGI9n" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="2ufoZQIGI7P" role="13h7CW">
+      <node concept="3clFbS" id="2ufoZQIGI7Q" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

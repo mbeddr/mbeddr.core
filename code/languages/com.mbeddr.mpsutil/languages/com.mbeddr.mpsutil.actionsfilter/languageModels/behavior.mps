@@ -129,6 +129,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -373,6 +376,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5ReuVUpdzRj">
+    <property role="3GE5qa" value="filter" />
     <ref role="13h7C2" to="au0v:5ReuVUpc9z_" resolve="AllowAction" />
     <node concept="13hLZK" id="5ReuVUpdzRk" role="13h7CW">
       <node concept="3clFbS" id="5ReuVUpdzRl" role="2VODD2" />
@@ -417,6 +421,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5ReuVUpd_wZ">
+    <property role="3GE5qa" value="filter" />
     <ref role="13h7C2" to="au0v:5FJiYrlIpAp" resolve="RemoveAction" />
     <node concept="13i0hz" id="5ReuVUpd_x2" role="13h7CS">
       <property role="TrG5h" value="refersToActionId" />
