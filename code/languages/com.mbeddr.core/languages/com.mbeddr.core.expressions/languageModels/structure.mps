@@ -180,6 +180,9 @@
     <node concept="PrWs8" id="7FQByU3C_3R" role="PzmwI">
       <ref role="PrY4T" node="7FQByU3C_31" resolve="IComparable" />
     </node>
+    <node concept="PrWs8" id="27dKu0HjpdI" role="PzmwI">
+      <ref role="PrY4T" node="67O0HaCtjdR" resolve="IUnsigned" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCZ">
     <property role="TrG5h" value="BinaryComparisonExpression" />
