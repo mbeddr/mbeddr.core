@@ -15,7 +15,7 @@
           <value>
             <Library>
               <option name="name" value="mps.extensions" />
-              <option name="path" value="${extensions.home}/code" />
+              <option name="path" value="${mbeddr.github.core.home}/artifacts/de.itemis.mps.extensions" />
             </Library>
           </value>
         </entry>
