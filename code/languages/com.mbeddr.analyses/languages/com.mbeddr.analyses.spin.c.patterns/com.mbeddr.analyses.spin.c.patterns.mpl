@@ -251,6 +251,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="063391c8-9b85-4087-8720-9745c869a2fb(com.mbeddr.analyses.spin.c.patterns#4708346905221050054)" />
+            <external-mapping>
+              <mapping-node modelUID="r:6a0514ef-f9af-4058-8141-75e0f3e9ee48(com.mbeddr.analyses.spin.c.patterns.generator.template.main@generator)" nodeID="9106136985228529067" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="063391c8-9b85-4087-8720-9745c869a2fb(com.mbeddr.analyses.spin.c.patterns#4708346905221050054)" />
+            <external-mapping>
+              <mapping-node modelUID="r:6a0514ef-f9af-4058-8141-75e0f3e9ee48(com.mbeddr.analyses.spin.c.patterns.generator.template.main@generator)" nodeID="6405535025147123927" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>

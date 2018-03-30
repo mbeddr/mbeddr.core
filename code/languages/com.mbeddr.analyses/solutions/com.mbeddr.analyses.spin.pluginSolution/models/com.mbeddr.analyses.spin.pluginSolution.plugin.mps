@@ -398,12 +398,12 @@
           <node concept="3cpWsn" id="3lXW7OZ6VXn" role="3cpWs9">
             <property role="TrG5h" value="aa" />
             <node concept="3Tqbb2" id="3lXW7OZ6VXi" role="1tU5fm">
-              <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
+              <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
             </node>
             <node concept="2ShNRf" id="3lXW7OZ6W2T" role="33vP2m">
               <node concept="3zrR0B" id="3lXW7OZ6Wfj" role="2ShVmc">
                 <node concept="3Tqbb2" id="3lXW7OZ6Wfl" role="3zrR0E">
-                  <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
+                  <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
                 </node>
               </node>
             </node>
@@ -658,29 +658,6 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="hgayPfdUfU" role="3cqZAp">
-          <node concept="3SKdUq" id="hgayPfdUfW" role="3SKWNk">
-            <property role="3SKdUp" value="We need the next line so we can update the RawTrail from LiftedTable" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="71H03GAY$wn" role="3cqZAp">
-          <node concept="2OqwBi" id="71H03GAY$Of" role="3clFbG">
-            <node concept="37vLTw" id="71H03GAY$wl" role="2Oq$k0">
-              <ref role="3cqZAo" node="7XCY$_raYfy" resolve="spinLiftedResultsTool" />
-            </node>
-            <node concept="2XshWL" id="71H03GAY_mt" role="2OqNvi">
-              <ref role="2WH_rO" node="71H03GAXEs3" resolve="setSpinRawResultsPanel" />
-              <node concept="2OqwBi" id="hgayPfeC$Z" role="2XxRq1">
-                <node concept="37vLTw" id="71H03GAY_xX" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="spinRawResultsTool" />
-                </node>
-                <node concept="2XshWL" id="hgayPfeEr2" role="2OqNvi">
-                  <ref role="2WH_rO" node="hgayPfeilJ" resolve="getPanel" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="54ptZbPSKpz" role="3cqZAp">
           <node concept="1rXfSq" id="54ptZbPSKpx" role="3clFbG">
             <ref role="37wK5l" node="2UdJgvCNFe3" resolve="clearResults" />
@@ -839,6 +816,29 @@
                   <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
                   <node concept="3clFbT" id="6izRX53r8Hy" role="37wK5m">
                     <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="hgayPfdUfU" role="3cqZAp">
+              <node concept="3SKdUq" id="hgayPfdUfW" role="3SKWNk">
+                <property role="3SKdUp" value="We need the next line so we can update the RawTrail from LiftedTable" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="71H03GAY$wn" role="3cqZAp">
+              <node concept="2OqwBi" id="71H03GAY$Of" role="3clFbG">
+                <node concept="37vLTw" id="71H03GAY$wl" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7XCY$_raYfy" resolve="spinLiftedResultsTool" />
+                </node>
+                <node concept="2XshWL" id="71H03GAY_mt" role="2OqNvi">
+                  <ref role="2WH_rO" node="71H03GAXEs3" resolve="setSpinRawResultsPanel" />
+                  <node concept="2OqwBi" id="hgayPfeC$Z" role="2XxRq1">
+                    <node concept="37vLTw" id="71H03GAY_xX" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="spinRawResultsTool" />
+                    </node>
+                    <node concept="2XshWL" id="hgayPfeEr2" role="2OqNvi">
+                      <ref role="2WH_rO" node="hgayPfeilJ" resolve="getPanel" />
+                    </node>
                   </node>
                 </node>
               </node>
