@@ -35,7 +35,6 @@
         <language slang="l:2693fc71-9b0e-4b05-ab13-f57227d675f2:com.mbeddr.core.util" version="0" />
         <language slang="l:97d24244-51db-4e2e-97fc-7bd73b1f5f40:com.mbeddr.ext.components" version="1" />
         <language slang="l:3f445ef3-54ad-4ae5-a22d-91c3ce06375e:com.mbeddr.ext.components.concurrency" version="0" />
-        <language slang="l:bd640b8f-4be4-42b6-8dc0-2c94d1ddf606:com.mbeddr.ext.components.gen_nomw" version="0" />
         <language slang="l:41911c23-eb23-4ee6-872f-bc7f7ebce290:com.mbeddr.ext.components.test" version="0" />
         <language slang="l:54f2a59b-97bb-4c09-af92-928ebf9c5966:com.mbeddr.ext.compositecomponents" version="0" />
         <language slang="l:b879012d-402b-40e0-8df7-e6fa93b9b711:com.mbeddr.ext.concurrency" version="0" />
