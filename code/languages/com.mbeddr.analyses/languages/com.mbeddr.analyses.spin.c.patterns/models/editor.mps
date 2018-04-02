@@ -985,5 +985,54 @@
     <property role="3GE5qa" value="harness.combinatorial" />
     <ref role="aqKnT" to="llb3:7TvvPtSxhGd" resolve="EmptyCombinatorialEntry" />
   </node>
+  <node concept="24kQdi" id="4XXfoy4MXkR">
+    <property role="3GE5qa" value="harness.fuzzy" />
+    <ref role="1XX52x" to="llb3:4XXfoy4MWim" resolve="Fuzzy" />
+    <node concept="3EZMnI" id="4XXfoy4MXkY" role="2wV5jI">
+      <node concept="3F0ifn" id="4XXfoy4MXle" role="3EZMnx">
+        <property role="3F0ifm" value="fuzz" />
+      </node>
+      <node concept="3F0ifn" id="4XXfoy4MXlt" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="4XXfoy4MXqv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="4XXfoy4MXqH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4XXfoy4MXlO" role="3EZMnx">
+        <ref role="1NtTu8" to="llb3:45nq91X0EWs" resolve="exp" />
+      </node>
+      <node concept="3F0ifn" id="4XXfoy4MXmj" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="4XXfoy4MXqR" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4XXfoy4MXmU" role="3EZMnx">
+        <ref role="1NtTu8" to="llb3:1BFQdmKhVV8" resolve="vals" />
+      </node>
+      <node concept="3F0ifn" id="4XXfoy4MXnD" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="4XXfoy4MXqW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4XXfoy4MXoY" role="3EZMnx">
+        <ref role="1NtTu8" to="llb3:4XXfoy4MXkT" resolve="size" />
+      </node>
+      <node concept="3F0ifn" id="4XXfoy4MXpX" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="4XXfoy4MXr1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4XXfoy4NhKq" role="3EZMnx">
+        <ref role="1NtTu8" to="llb3:4XXfoy4NhIu" resolve="body" />
+      </node>
+      <node concept="l2Vlx" id="4XXfoy4MXl1" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

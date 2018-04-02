@@ -1325,5 +1325,112 @@
     </node>
     <node concept="2tJIrI" id="7TvvPtS_ZvW" role="jymVt" />
   </node>
+  <node concept="312cEu" id="4XXfoy4Niut">
+    <property role="TrG5h" value="FuzzyUtils" />
+    <node concept="3Tm1VV" id="4XXfoy4Niuu" role="1B3o_S" />
+    <node concept="2tJIrI" id="4XXfoy4NiuX" role="jymVt" />
+    <node concept="2YIFZL" id="4XXfoy4NkKS" role="jymVt">
+      <property role="TrG5h" value="byteIndexVarName" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4XXfoy4NkKV" role="3clF47">
+        <node concept="3clFbF" id="4XXfoy4NkMN" role="3cqZAp">
+          <node concept="3cpWs3" id="4XXfoy4Nl6t" role="3clFbG">
+            <node concept="2OqwBi" id="4XXfoy4NlSj" role="3uHU7w">
+              <node concept="2JrnkZ" id="4XXfoy4NlEY" role="2Oq$k0">
+                <node concept="37vLTw" id="4XXfoy4Nl7p" role="2JrQYb">
+                  <ref role="3cqZAo" node="4XXfoy4NkLz" resolve="fuzzy" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4XXfoy4Nmko" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4XXfoy4NkMM" role="3uHU7B">
+              <property role="Xl_RC" value="byteIndexVar_fuzzy_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4XXfoy4Nivu" role="1B3o_S" />
+      <node concept="17QB3L" id="4XXfoy4NivW" role="3clF45" />
+      <node concept="37vLTG" id="4XXfoy4NkLz" role="3clF46">
+        <property role="TrG5h" value="fuzzy" />
+        <node concept="3Tqbb2" id="4XXfoy4NkLy" role="1tU5fm">
+          <ref role="ehGHo" to="llb3:4XXfoy4MWim" resolve="Fuzzy" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4XXfoy4Nivb" role="jymVt" />
+    <node concept="2YIFZL" id="4XXfoy4Nm$M" role="jymVt">
+      <property role="TrG5h" value="bitIndexVarName" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4XXfoy4Nm$N" role="3clF47">
+        <node concept="3clFbF" id="4XXfoy4Nm$O" role="3cqZAp">
+          <node concept="3cpWs3" id="4XXfoy4Nm$P" role="3clFbG">
+            <node concept="2OqwBi" id="4XXfoy4Nm$Q" role="3uHU7w">
+              <node concept="2JrnkZ" id="4XXfoy4Nm$R" role="2Oq$k0">
+                <node concept="37vLTw" id="4XXfoy4Nm$S" role="2JrQYb">
+                  <ref role="3cqZAo" node="4XXfoy4Nm$X" resolve="fuzzy" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4XXfoy4Nm$T" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4XXfoy4Nm$U" role="3uHU7B">
+              <property role="Xl_RC" value="bitIndexVar_fuzzy_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4XXfoy4Nm$V" role="1B3o_S" />
+      <node concept="17QB3L" id="4XXfoy4Nm$W" role="3clF45" />
+      <node concept="37vLTG" id="4XXfoy4Nm$X" role="3clF46">
+        <property role="TrG5h" value="fuzzy" />
+        <node concept="3Tqbb2" id="4XXfoy4Nm$Y" role="1tU5fm">
+          <ref role="ehGHo" to="llb3:4XXfoy4MWim" resolve="Fuzzy" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4XXfoy4NmzE" role="jymVt" />
+    <node concept="2YIFZL" id="4XXfoy4NnbH" role="jymVt">
+      <property role="TrG5h" value="bitInByteVarName" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4XXfoy4NnbI" role="3clF47">
+        <node concept="3clFbF" id="4XXfoy4NnbJ" role="3cqZAp">
+          <node concept="3cpWs3" id="4XXfoy4NnbK" role="3clFbG">
+            <node concept="2OqwBi" id="4XXfoy4NnbL" role="3uHU7w">
+              <node concept="2JrnkZ" id="4XXfoy4NnbM" role="2Oq$k0">
+                <node concept="37vLTw" id="4XXfoy4NnbN" role="2JrQYb">
+                  <ref role="3cqZAo" node="4XXfoy4NnbS" resolve="fuzzy" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4XXfoy4NnbO" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4XXfoy4NnbP" role="3uHU7B">
+              <property role="Xl_RC" value="bitInByteVar_fuzzy_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4XXfoy4NnbQ" role="1B3o_S" />
+      <node concept="17QB3L" id="4XXfoy4NnbR" role="3clF45" />
+      <node concept="37vLTG" id="4XXfoy4NnbS" role="3clF46">
+        <property role="TrG5h" value="fuzzy" />
+        <node concept="3Tqbb2" id="4XXfoy4NnbT" role="1tU5fm">
+          <ref role="ehGHo" to="llb3:4XXfoy4MWim" resolve="Fuzzy" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4XXfoy4Nn9G" role="jymVt" />
+  </node>
 </model>
 

@@ -520,5 +520,33 @@
     <property role="3GE5qa" value="harness.base" />
     <property role="TrG5h" value="IDiscreteValuesContext" />
   </node>
+  <node concept="1TIwiD" id="4XXfoy4MWim">
+    <property role="EcuMT" value="5727801957637932182" />
+    <property role="3GE5qa" value="harness.fuzzy" />
+    <property role="TrG5h" value="Fuzzy" />
+    <property role="34LRSv" value="fuzz" />
+    <property role="R4oN_" value="fuzzes the region of memory presented as entry" />
+    <ref role="1TJDcQ" node="1BFQdmKfJHu" resolve="AbstractAssign" />
+    <node concept="1TJgyj" id="4XXfoy4MXkT" role="1TKVEi">
+      <property role="IQ2ns" value="5727801957637936441" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
+    </node>
+    <node concept="1TJgyj" id="4XXfoy4NhIu" role="1TKVEi">
+      <property role="IQ2ns" value="5727801957638019998" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="4XXfoy4MWin" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
+    </node>
+    <node concept="PrWs8" id="4XXfoy4PkWv" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:7oI7FI6oqPw" resolve="IInitializationContext" />
+    </node>
+  </node>
 </model>
 

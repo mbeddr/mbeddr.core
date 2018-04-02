@@ -1003,6 +1003,25 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="4XXfoy4P742" role="3cqZAp">
+          <node concept="3clFbS" id="4XXfoy4P743" role="3clFbx">
+            <node concept="3cpWs6" id="4XXfoy4P744" role="3cqZAp">
+              <node concept="3clFbT" id="4XXfoy4P745" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4XXfoy4P746" role="3clFbw">
+            <node concept="37vLTw" id="4XXfoy4P747" role="2Oq$k0">
+              <ref role="3cqZAo" node="7VkE0BpwzSg" resolve="childConcept" />
+            </node>
+            <node concept="3O6GUB" id="4XXfoy4P748" role="2OqNvi">
+              <node concept="chp4Y" id="4XXfoy4P7ol" role="3QVz_e">
+                <ref role="cht4Q" to="llb3:4XXfoy4MWim" resolve="Fuzzy" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="7TvvPtSyue4" role="3cqZAp" />
         <node concept="3clFbJ" id="7VkE0Bpw$lw" role="3cqZAp">
           <node concept="3clFbS" id="7VkE0Bpw$lx" role="3clFbx">
@@ -1197,6 +1216,24 @@
         <node concept="3clFbF" id="7TvvPtSxp8D" role="3cqZAp">
           <node concept="3clFbT" id="7TvvPtSxp8C" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4XXfoy4MWis">
+    <property role="3GE5qa" value="harness.combinatorial" />
+    <ref role="1M2myG" to="llb3:7TvvPtSxhGc" resolve="ICombinatorialEntry" />
+    <node concept="9S07l" id="4XXfoy4MWit" role="9Vyp8">
+      <node concept="3clFbS" id="4XXfoy4MWiu" role="2VODD2">
+        <node concept="3clFbF" id="4XXfoy4MWpH" role="3cqZAp">
+          <node concept="2OqwBi" id="4XXfoy4MWCR" role="3clFbG">
+            <node concept="nLn13" id="4XXfoy4MWpG" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4XXfoy4MWTR" role="2OqNvi">
+              <node concept="chp4Y" id="4XXfoy4MX6p" role="cj9EA">
+                <ref role="cht4Q" to="llb3:7TvvPtSxhG5" resolve="Combinatorial" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
