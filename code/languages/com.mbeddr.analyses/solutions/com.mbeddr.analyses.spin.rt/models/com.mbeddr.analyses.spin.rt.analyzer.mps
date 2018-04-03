@@ -1034,6 +1034,15 @@
     <node concept="NWlO9" id="7XCY$_rajCc" role="lGtFl">
       <property role="NWlVz" value="Lifter for Spin results." />
     </node>
+    <node concept="Wx3nA" id="6VUBYZeeuR_" role="jymVt">
+      <property role="TrG5h" value="SANITIZER_ERROR_MARKER" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="6VUBYZeeuRA" role="1tU5fm" />
+      <node concept="3Tm6S6" id="6VUBYZeeuRB" role="1B3o_S" />
+      <node concept="Xl_RD" id="6VUBYZeeuRC" role="33vP2m">
+        <property role="Xl_RC" value="sanitizer error" />
+      </node>
+    </node>
     <node concept="Wx3nA" id="71901EGHkiP" role="jymVt">
       <property role="TrG5h" value="WHITENESS_STRING_MARKER" />
       <property role="3TUv4t" value="true" />
@@ -1542,14 +1551,55 @@
                             <node concept="3cpWsn" id="71H03GANRcQ" role="3cpWs9">
                               <property role="TrG5h" value="assertionExpression" />
                               <node concept="17QB3L" id="71H03GANRcR" role="1tU5fm" />
-                              <node concept="1rXfSq" id="71H03GANRcS" role="33vP2m">
-                                <ref role="37wK5l" node="6jYTukVVdZW" resolve="extractAssertionExpression" />
-                                <node concept="AH0OO" id="71H03GANS82" role="37wK5m">
-                                  <node concept="37vLTw" id="71H03GANSj4" role="AHEQo">
-                                    <ref role="3cqZAo" node="5hi7ucOpTwV" resolve="i" />
+                            </node>
+                          </node>
+                          <node concept="3clFbJ" id="6VUBYZeeP16" role="3cqZAp">
+                            <node concept="3clFbS" id="6VUBYZeeP18" role="3clFbx">
+                              <node concept="3clFbF" id="6VUBYZeeNBr" role="3cqZAp">
+                                <node concept="37vLTI" id="6VUBYZeeNBt" role="3clFbG">
+                                  <node concept="1rXfSq" id="71H03GANRcS" role="37vLTx">
+                                    <ref role="37wK5l" node="6jYTukVVdZW" resolve="extractAssertionExpression" />
+                                    <node concept="AH0OO" id="71H03GANS82" role="37wK5m">
+                                      <node concept="37vLTw" id="71H03GANSj4" role="AHEQo">
+                                        <ref role="3cqZAo" node="5hi7ucOpTwV" resolve="i" />
+                                      </node>
+                                      <node concept="37vLTw" id="71H03GANRKX" role="AHHXb">
+                                        <ref role="3cqZAo" node="5hi7ucOpTwu" resolve="lines" />
+                                      </node>
+                                    </node>
                                   </node>
-                                  <node concept="37vLTw" id="71H03GANRKX" role="AHHXb">
-                                    <ref role="3cqZAo" node="5hi7ucOpTwu" resolve="lines" />
+                                  <node concept="37vLTw" id="6VUBYZeeNBx" role="37vLTJ">
+                                    <ref role="3cqZAo" node="71H03GANRcQ" resolve="assertionExpression" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="6VUBYZeePI2" role="3clFbw">
+                              <node concept="AH0OO" id="6VUBYZeePI3" role="2Oq$k0">
+                                <node concept="37vLTw" id="6VUBYZeePI4" role="AHEQo">
+                                  <ref role="3cqZAo" node="5hi7ucOpTwV" resolve="i" />
+                                </node>
+                                <node concept="37vLTw" id="6VUBYZeePI5" role="AHHXb">
+                                  <ref role="3cqZAo" node="5hi7ucOpTwu" resolve="lines" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="6VUBYZeePI6" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                                <node concept="37vLTw" id="6VUBYZeePIg" role="37wK5m">
+                                  <ref role="3cqZAo" node="7XCY$_rb3Un" resolve="ASSERTION_VIOLATED_MARKER" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="9aQIb" id="6VUBYZeeSuk" role="9aQIa">
+                              <node concept="3clFbS" id="6VUBYZeeSul" role="9aQI4">
+                                <node concept="3clFbF" id="6VUBYZeeT1P" role="3cqZAp">
+                                  <node concept="37vLTI" id="6VUBYZeeT1Q" role="3clFbG">
+                                    <node concept="37vLTw" id="6VUBYZeeTJs" role="37vLTx">
+                                      <ref role="3cqZAo" node="6VUBYZeeuR_" resolve="SANITIZER_ERROR_MARKER" />
+                                    </node>
+                                    <node concept="37vLTw" id="6VUBYZeeT1V" role="37vLTJ">
+                                      <ref role="3cqZAo" node="71H03GANRcQ" resolve="assertionExpression" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -1852,19 +1902,37 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="2OqwBi" id="5hi7ucOpTwP" role="3clFbw">
-                          <node concept="AH0OO" id="5hi7ucOpTwQ" role="2Oq$k0">
-                            <node concept="37vLTw" id="5hi7ucOpTwR" role="AHEQo">
-                              <ref role="3cqZAo" node="5hi7ucOpTwV" resolve="i" />
+                        <node concept="22lmx$" id="6VUBYZeewPL" role="3clFbw">
+                          <node concept="2OqwBi" id="5hi7ucOpTwP" role="3uHU7B">
+                            <node concept="AH0OO" id="5hi7ucOpTwQ" role="2Oq$k0">
+                              <node concept="37vLTw" id="5hi7ucOpTwR" role="AHEQo">
+                                <ref role="3cqZAo" node="5hi7ucOpTwV" resolve="i" />
+                              </node>
+                              <node concept="37vLTw" id="5hi7ucOpTwS" role="AHHXb">
+                                <ref role="3cqZAo" node="5hi7ucOpTwu" resolve="lines" />
+                              </node>
                             </node>
-                            <node concept="37vLTw" id="5hi7ucOpTwS" role="AHHXb">
-                              <ref role="3cqZAo" node="5hi7ucOpTwu" resolve="lines" />
+                            <node concept="liA8E" id="5hi7ucOpTwT" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                              <node concept="37vLTw" id="5hi7ucOpUp5" role="37wK5m">
+                                <ref role="3cqZAo" node="7XCY$_rb3Un" resolve="ASSERTION_VIOLATED_MARKER" />
+                              </node>
                             </node>
                           </node>
-                          <node concept="liA8E" id="5hi7ucOpTwT" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                            <node concept="37vLTw" id="5hi7ucOpUp5" role="37wK5m">
-                              <ref role="3cqZAo" node="7XCY$_rb3Un" resolve="ASSERTION_VIOLATED_MARKER" />
+                          <node concept="2OqwBi" id="6VUBYZeeyCM" role="3uHU7w">
+                            <node concept="AH0OO" id="6VUBYZeeyCN" role="2Oq$k0">
+                              <node concept="37vLTw" id="6VUBYZeeyCO" role="AHEQo">
+                                <ref role="3cqZAo" node="5hi7ucOpTwV" resolve="i" />
+                              </node>
+                              <node concept="37vLTw" id="6VUBYZeeyCP" role="AHHXb">
+                                <ref role="3cqZAo" node="5hi7ucOpTwu" resolve="lines" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="6VUBYZeeyCQ" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                              <node concept="37vLTw" id="6VUBYZee$WB" role="37wK5m">
+                                <ref role="3cqZAo" node="6VUBYZeeuR_" resolve="SANITIZER_ERROR_MARKER" />
+                              </node>
                             </node>
                           </node>
                         </node>
