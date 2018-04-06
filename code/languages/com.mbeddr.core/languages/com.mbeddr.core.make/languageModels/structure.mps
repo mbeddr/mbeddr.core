@@ -89,6 +89,7 @@
       <property role="TrG5h" value="include" />
       <property role="IQ2nx" value="8883346479719598695" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="gGhq7horWY" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="2Vizpn2LEtl" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -114,6 +115,7 @@
     <property role="TrG5h" value="Target" />
     <property role="R4oN_" value="a make target" />
     <property role="EcuMT" value="5950410542643587165" />
+    <property role="34LRSv" value="tar" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5ak6HMA0Exz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -403,7 +405,7 @@
   </node>
   <node concept="1TIwiD" id="6_CUGSFJ0HT">
     <property role="TrG5h" value="Define" />
-    <property role="34LRSv" value="define" />
+    <property role="34LRSv" value="def" />
     <property role="EcuMT" value="7595578942778248057" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6_CUGSFJ0HU" role="PzmwI">
@@ -429,7 +431,7 @@
   </node>
   <node concept="1TIwiD" id="6_CUGSFKkYj">
     <property role="TrG5h" value="CommandContent" />
-    <property role="34LRSv" value="command" />
+    <property role="34LRSv" value="com" />
     <property role="EcuMT" value="7595578942778593171" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6_CUGSFKl0i" role="PzmwI">
@@ -490,6 +492,20 @@
     <property role="EcuMT" value="3710757960614543675" />
     <property role="TrG5h" value="IGeneratesToMakefile" />
     <property role="3GE5qa" value="parallelizableMakeGenerator" />
+  </node>
+  <node concept="1TIwiD" id="gGhq7hkZHZ">
+    <property role="EcuMT" value="300691836430973823" />
+    <property role="TrG5h" value="Include" />
+    <property role="34LRSv" value="inc" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="gGhq7hkZI0" role="PzmwI">
+      <ref role="PrY4T" node="6_CUGSFHTGe" resolve="IMakefileContent" />
+    </node>
+    <node concept="1TJgyi" id="gGhq7hntWl" role="1TKVEl">
+      <property role="IQ2nx" value="300691836431621909" />
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 
