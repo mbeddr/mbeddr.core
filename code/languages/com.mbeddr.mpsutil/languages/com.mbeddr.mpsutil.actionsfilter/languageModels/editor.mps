@@ -453,7 +453,7 @@
         </node>
         <node concept="3F0ifn" id="6hyuZyX9wzG" role="3EZMnx" />
         <node concept="3F0ifn" id="7I52n9WCDhs" role="3EZMnx">
-          <property role="3F0ifm" value="Toolbar actions cannot be filtered out from the whole action profile" />
+          <property role="3F0ifm" value="Make sure actions from the toolbar aren't filtered elsewhere otherwise runtime problems may appear" />
           <node concept="Veino" id="7I52n9WCDYl" role="3F10Kt">
             <property role="Vb096" value="lightGray" />
           </node>
