@@ -1751,5 +1751,12 @@
       <property role="t5JxN" value="Annotation can be use used to avoid documents naming conflicts. Annotated documents will be generated with name property from this annotation." />
     </node>
   </node>
+  <node concept="1TIwiD" id="3aMV05sDEog">
+    <property role="EcuMT" value="3653241738344441360" />
+    <property role="3GE5qa" value="words.formatted" />
+    <property role="TrG5h" value="SuperScriptWord" />
+    <property role="34LRSv" value="superscript" />
+    <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
+  </node>
 </model>
 
