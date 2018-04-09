@@ -210,6 +210,7 @@
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
         <child id="1237721435807" name="elementType" index="HW$YZ" />
         <child id="1237731803878" name="copyFrom" index="I$8f6" />
       </concept>
@@ -225,6 +226,35 @@
   </registry>
   <node concept="13h7C7" id="2S2eLhiN6yY">
     <ref role="13h7C2" to="ej70:2S2eLhiN6xF" resolve="GraphNode" />
+    <node concept="13i0hz" id="7rpuqnfCrYq" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getValueSelectorsToUpdate" />
+      <ref role="13i0hy" to="ao0u:7rpuqnf_WYv" resolve="getValueSelectorsToUpdate" />
+      <node concept="3Tm1VV" id="7rpuqnfCrYr" role="1B3o_S" />
+      <node concept="3clFbS" id="7rpuqnfCrYy" role="3clF47">
+        <node concept="3cpWs6" id="7rpuqnfCx0l" role="3cqZAp">
+          <node concept="2ShNRf" id="7rpuqnfCx0T" role="3cqZAk">
+            <node concept="2Jqq0_" id="7rpuqnfCx8L" role="2ShVmc">
+              <node concept="3uibUv" id="7rpuqnfCx$f" role="HW$YZ">
+                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+              </node>
+              <node concept="35c_gC" id="7rpuqnfCxFE" role="HW$Y0">
+                <ref role="35c_gD" to="ej70:2S2eLhiN6BW" resolve="ValueA" />
+              </node>
+              <node concept="35c_gC" id="7rpuqnfCxPM" role="HW$Y0">
+                <ref role="35c_gD" to="ej70:3mJtqpyOBRB" resolve="ValueB" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="7rpuqnfCrYz" role="3clF45">
+        <node concept="3uibUv" id="7rpuqnfCrY$" role="A3Ik2">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="2S2eLhiN6yZ" role="13h7CW">
       <node concept="3clFbS" id="2S2eLhiN6z0" role="2VODD2" />
     </node>

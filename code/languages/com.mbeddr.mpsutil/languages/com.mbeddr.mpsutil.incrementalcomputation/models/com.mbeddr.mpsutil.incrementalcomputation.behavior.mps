@@ -151,6 +151,25 @@
   </registry>
   <node concept="13h7C7" id="2S2eLhiMx3g">
     <ref role="13h7C2" to="kzoi:2S2eLhiMx2Q" resolve="IncrementallyComputedValueHolder" />
+    <node concept="13i0hz" id="7rpuqnf_WYv" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getValueSelectorsToUpdate" />
+      <node concept="3Tm1VV" id="7rpuqnf_WYw" role="1B3o_S" />
+      <node concept="A3Dl8" id="7rpuqnf_X3E" role="3clF45">
+        <node concept="3uibUv" id="7rpuqnf_X3R" role="A3Ik2">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7rpuqnf_WYy" role="3clF47" />
+      <node concept="P$JXv" id="7rpuqnf_X4y" role="lGtFl">
+        <node concept="TZ5HA" id="7rpuqnf_X4z" role="TZ5H$">
+          <node concept="1dT_AC" id="7rpuqnf_X4$" role="1dT_Ay">
+            <property role="1dT_AB" value="This method is called by the propagation framework to retrieve all value selectors that are notified on updates." />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="2S2eLhiMx3h" role="13h7CW">
       <node concept="3clFbS" id="2S2eLhiMx3i" role="2VODD2" />
     </node>
@@ -304,7 +323,7 @@
         </node>
         <node concept="TZ5HA" id="5nAcTtnb1YL" role="TZ5H$">
           <node concept="1dT_AC" id="5nAcTtnb1YM" role="1dT_Ay">
-            <property role="1dT_AB" value="editor cells of this node are updated automatically (does not seem to work atm)." />
+            <property role="1dT_AB" value="editor cells of this node are updated automatically (! NOT YET OPERATIONAL !)." />
           </node>
         </node>
       </node>
