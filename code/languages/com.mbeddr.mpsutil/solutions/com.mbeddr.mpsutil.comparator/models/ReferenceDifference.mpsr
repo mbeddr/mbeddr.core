@@ -123,7 +123,7 @@
       <node concept="3cqZAl" id="DYlgnAAQyn" role="3clF45" />
       <node concept="3clFbS" id="DYlgnAAQyo" role="3clF47">
         <node concept="XkiVB" id="DYlgnAAQyp" role="3cqZAp">
-          <ref role="37wK5l" node="DYlgnA$tJ6" resolve="NodeDifference" />
+          <ref role="37wK5l" node="DYlgnA$tJ6" resolve="Difference" />
           <node concept="37vLTw" id="DYlgnAAQyq" role="37wK5m">
             <ref role="3cqZAo" node="DYlgnAAQyE" resolve="expected" />
           </node>
@@ -210,7 +210,7 @@
       <property role="TrG5h" value="getReferenceDifferences" />
       <node concept="_YKpA" id="DYlgnAAR3w" role="3clF45">
         <node concept="3uibUv" id="DYlgnAAR3x" role="_ZDj9">
-          <ref role="3uigEE" node="DYlgnA$re5" resolve="NodeDifference" />
+          <ref role="3uigEE" node="DYlgnA$re5" resolve="Difference" />
         </node>
       </node>
       <node concept="3Tm1VV" id="DYlgnAAR3y" role="1B3o_S" />
@@ -237,7 +237,7 @@
       <node concept="3Tm1VV" id="Pu8Vy2dmAT" role="1B3o_S" />
       <node concept="_YKpA" id="Pu8Vy2dmAU" role="3clF45">
         <node concept="3uibUv" id="Pu8Vy2dmAV" role="_ZDj9">
-          <ref role="3uigEE" node="DYlgnA$re5" resolve="NodeDifference" />
+          <ref role="3uigEE" node="DYlgnA$re5" resolve="Difference" />
         </node>
       </node>
       <node concept="3clFbS" id="Pu8Vy2dmAW" role="3clF47">
@@ -258,7 +258,7 @@
         <node concept="3cpWs6" id="6fymoI4X_0I" role="3cqZAp">
           <node concept="3cpWs3" id="6fymoI4X_0J" role="3cqZAk">
             <node concept="2YIFZM" id="6fymoI4X_0K" role="3uHU7w">
-              <ref role="1Pybhc" node="DYlgnAAVf1" resolve="StringUtils" />
+              <ref role="1Pybhc" node="DYlgnAAVf1" resolve="ComparatorUtils" />
               <ref role="37wK5l" node="DYlgnAAVkz" resolve="indent" />
               <node concept="2OqwBi" id="6fymoI4X_0L" role="37wK5m">
                 <node concept="37vLTw" id="6fymoI4X_0M" role="2Oq$k0">
@@ -297,7 +297,7 @@
     <node concept="2tJIrI" id="DYlgnAAQX2" role="jymVt" />
     <node concept="3Tm1VV" id="DYlgnAAPA2" role="1B3o_S" />
     <node concept="3uibUv" id="DYlgnAAPWl" role="1zkMxy">
-      <ref role="3uigEE" node="DYlgnA$re5" resolve="NodeDifference" />
+      <ref role="3uigEE" node="DYlgnA$re5" resolve="Difference" />
     </node>
   </node>
 </model>

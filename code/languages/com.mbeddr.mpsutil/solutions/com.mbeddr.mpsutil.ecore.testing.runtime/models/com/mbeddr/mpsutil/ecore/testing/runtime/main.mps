@@ -217,7 +217,7 @@
       <node concept="3uibUv" id="7ESlTHs1PHP" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="7ESlTHscW7I" role="11_B2D">
-          <ref role="3uigEE" to="mqum:DYlgnA$re5" resolve="NodeDifference" />
+          <ref role="3uigEE" to="mqum:DYlgnA$re5" resolve="Difference" />
         </node>
       </node>
       <node concept="3Tm6S6" id="7ESlTHs1PHO" role="1B3o_S" />
@@ -245,7 +245,7 @@
               <node concept="1pGfFk" id="7ESlTHs1S2d" role="2ShVmc">
                 <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
                 <node concept="3uibUv" id="7ESlTHscWL0" role="1pMfVU">
-                  <ref role="3uigEE" to="mqum:DYlgnA$re5" resolve="NodeDifference" />
+                  <ref role="3uigEE" to="mqum:DYlgnA$re5" resolve="Difference" />
                 </node>
               </node>
             </node>
@@ -344,7 +344,7 @@
                           <node concept="2OqwBi" id="7ESlTHsd2r9" role="37wK5m">
                             <node concept="2YIFZM" id="7ESlTHs1S2V" role="2Oq$k0">
                               <ref role="1Pybhc" to="mqum:3n2rqT9UxKL" resolve="MPSNodeComparator" />
-                              <ref role="37wK5l" to="mqum:6fymoI4RKZK" resolve="compare" />
+                              <ref role="37wK5l" to="mqum:4zngrhRwdqI" resolve="compareDeprecated" />
                               <node concept="37vLTw" id="7ESlTHs1S2W" role="37wK5m">
                                 <ref role="3cqZAo" node="7ESlTHs1S3o" resolve="classExpected" />
                               </node>
@@ -604,7 +604,7 @@
           <node concept="3cpWsn" id="7ESlTHs4ReQ" role="1Duv9x">
             <property role="TrG5h" value="nodeDifference" />
             <node concept="3uibUv" id="7ESlTHs4Ros" role="1tU5fm">
-              <ref role="3uigEE" to="mqum:DYlgnA$re5" resolve="NodeDifference" />
+              <ref role="3uigEE" to="mqum:DYlgnA$re5" resolve="Difference" />
             </node>
           </node>
           <node concept="37vLTw" id="7ESlTHscYqt" role="1DdaDG">
@@ -730,7 +730,7 @@
       <node concept="3uibUv" id="rt4C5o0Ym_" role="3clF45">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="7ESlTHsd0ZB" role="11_B2D">
-          <ref role="3uigEE" to="mqum:DYlgnA$re5" resolve="NodeDifference" />
+          <ref role="3uigEE" to="mqum:DYlgnA$re5" resolve="Difference" />
         </node>
       </node>
       <node concept="3Tm1VV" id="rt4C5o0YmF" role="1B3o_S" />
@@ -751,7 +751,7 @@
       <node concept="3uibUv" id="rt4C5nZIp6" role="3clF45">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="7ESlTHscZHH" role="11_B2D">
-          <ref role="3uigEE" to="mqum:DYlgnA$re5" resolve="NodeDifference" />
+          <ref role="3uigEE" to="mqum:DYlgnA$re5" resolve="Difference" />
         </node>
       </node>
       <node concept="3Tm1VV" id="rt4C5nZIp8" role="1B3o_S" />
@@ -1089,7 +1089,7 @@
             </node>
             <node concept="2YIFZM" id="1XBwKttfXx9" role="33vP2m">
               <ref role="1Pybhc" to="mqum:3n2rqT9UxKL" resolve="MPSNodeComparator" />
-              <ref role="37wK5l" to="mqum:6fymoI4RKZK" resolve="compare" />
+              <ref role="37wK5l" to="mqum:6fymoI4RKZK" resolve="compareDeprecated" />
               <node concept="2OqwBi" id="1XBwKttfYTE" role="37wK5m">
                 <node concept="2OqwBi" id="1XBwKttfXOY" role="2Oq$k0">
                   <node concept="37vLTw" id="1XBwKttfXDi" role="2Oq$k0">

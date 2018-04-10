@@ -127,7 +127,7 @@
       <node concept="3cqZAl" id="DYlgnA$izd" role="3clF45" />
       <node concept="3clFbS" id="DYlgnA$ize" role="3clF47">
         <node concept="XkiVB" id="DYlgnA$izf" role="3cqZAp">
-          <ref role="37wK5l" node="DYlgnA$tJ6" resolve="NodeDifference" />
+          <ref role="37wK5l" node="DYlgnA$tJ6" resolve="Difference" />
           <node concept="37vLTw" id="DYlgnA$izg" role="37wK5m">
             <ref role="3cqZAo" node="DYlgnA$izA" resolve="expected" />
           </node>
@@ -256,7 +256,7 @@
       </node>
       <node concept="_YKpA" id="DYlgnA$j_G" role="3clF45">
         <node concept="3uibUv" id="DYlgnA$j_H" role="_ZDj9">
-          <ref role="3uigEE" node="DYlgnA$re5" resolve="NodeDifference" />
+          <ref role="3uigEE" node="DYlgnA$re5" resolve="Difference" />
         </node>
       </node>
     </node>
@@ -270,7 +270,7 @@
       <node concept="3Tm1VV" id="Pu8Vy2dhLM" role="1B3o_S" />
       <node concept="_YKpA" id="Pu8Vy2dhLN" role="3clF45">
         <node concept="3uibUv" id="Pu8Vy2dhLO" role="_ZDj9">
-          <ref role="3uigEE" node="DYlgnA$re5" resolve="NodeDifference" />
+          <ref role="3uigEE" node="DYlgnA$re5" resolve="Difference" />
         </node>
       </node>
       <node concept="3clFbS" id="Pu8Vy2dhLP" role="3clF47">
@@ -291,7 +291,7 @@
         <node concept="3clFbF" id="DYlgnA$j_M" role="3cqZAp">
           <node concept="3cpWs3" id="DYlgnA$j_N" role="3clFbG">
             <node concept="2YIFZM" id="DYlgnA$j_O" role="3uHU7w">
-              <ref role="1Pybhc" node="DYlgnAAVf1" resolve="StringUtils" />
+              <ref role="1Pybhc" node="DYlgnAAVf1" resolve="ComparatorUtils" />
               <ref role="37wK5l" node="DYlgnAAVkz" resolve="indent" />
               <node concept="2OqwBi" id="DYlgnA$j_P" role="37wK5m">
                 <node concept="37vLTw" id="DYlgnA$j_Q" role="2Oq$k0">
@@ -355,7 +355,7 @@
     <node concept="2tJIrI" id="DYlgnA$jp_" role="jymVt" />
     <node concept="3Tm1VV" id="DYlgnA$0Yp" role="1B3o_S" />
     <node concept="3uibUv" id="DYlgnA$by8" role="1zkMxy">
-      <ref role="3uigEE" node="DYlgnA$re5" resolve="NodeDifference" />
+      <ref role="3uigEE" node="DYlgnA$re5" resolve="Difference" />
     </node>
   </node>
 </model>
