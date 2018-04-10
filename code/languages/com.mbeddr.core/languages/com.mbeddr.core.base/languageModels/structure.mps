@@ -8,8 +8,8 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -294,6 +294,9 @@
     </node>
     <node concept="PrWs8" id="6wvhQs7n6SX" role="PzmwI">
       <ref role="PrY4T" node="6yeRgC0uAED" resolve="IIsDocumentationComment" />
+    </node>
+    <node concept="PrWs8" id="5hKIe0b4_3t" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hLJPP0O" resolve="IWrapper" />
     </node>
     <node concept="M6xJ_" id="5GEPw8vxMCk" role="lGtFl">
       <property role="Hh88m" value="elementDocumentation" />
@@ -2016,6 +2019,17 @@
     <node concept="M4N5e" id="1tDstbgKlCv" role="M5hS2">
       <property role="1uS6qo" value="reviewed" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="4yaQL1YaUM8">
+    <property role="EcuMT" value="5227231181399633032" />
+    <property role="TrG5h" value="IHasQualifiedName" />
+    <node concept="PrWs8" id="4yaQL1YaUME" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3x8oZgKbem1">
+    <property role="EcuMT" value="4055601364878550401" />
+    <property role="TrG5h" value="ISupportsLocalLanguage" />
   </node>
 </model>
 

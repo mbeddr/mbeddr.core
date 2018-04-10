@@ -7,10 +7,10 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
   </languages>
   <imports>
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
@@ -1684,6 +1684,9 @@
     <node concept="2tJIrI" id="5jEg_Cuwe35" role="jymVt" />
     <node concept="2YIFZL" id="7N0A15Xm8Kv" role="jymVt">
       <property role="TrG5h" value="collectAllCFilesFromGeneratedTestDirectory" />
+      <node concept="2AHcQZ" id="68RlEeX1xLo" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
       <node concept="A3Dl8" id="6h7pCbA90oH" role="3clF45">
         <node concept="17QB3L" id="6h7pCbA90oJ" role="A3Ik2" />
       </node>
@@ -1763,9 +1766,6 @@
         <node concept="TZ5HI" id="68RlEeX1xLm" role="3nqlJM">
           <node concept="TZ5HA" id="68RlEeX1xLn" role="3HnX3l" />
         </node>
-      </node>
-      <node concept="2AHcQZ" id="68RlEeX1xLo" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
     <node concept="2tJIrI" id="5jEg_CuwdUR" role="jymVt" />

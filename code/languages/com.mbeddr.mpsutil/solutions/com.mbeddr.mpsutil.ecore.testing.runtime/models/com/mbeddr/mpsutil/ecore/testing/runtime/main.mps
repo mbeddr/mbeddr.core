@@ -2,14 +2,14 @@
 <model ref="r:62e76a73-7fd3-4d03-9b49-0da2a82f5479(com.mbeddr.mpsutil.ecore.testing.runtime.main)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
   </languages>
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="mqum" ref="r:ec874b45-e888-42e6-995a-a298cefdff55(com.mbeddr.cimport.comparator.code)" />
+    <import index="mqum" ref="r:ec874b45-e888-42e6-995a-a298cefdff55(com.mbeddr.mpsutil.comparator.code)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -786,12 +786,12 @@
         <node concept="3cpWs8" id="60d$i5slwrS" role="3cqZAp">
           <node concept="3cpWsn" id="60d$i5slwrT" role="3cpWs9">
             <property role="TrG5h" value="importer" />
-            <node concept="3uibUv" id="1SbcsM_V4Ch" role="1tU5fm">
-              <ref role="3uigEE" to="rpb:WAKHA7EgZh" resolve="MetaModelImporter" />
+            <node concept="3uibUv" id="375LOh7fzQm" role="1tU5fm">
+              <ref role="3uigEE" to="rpb:375LOh7d6S7" resolve="MetaModelFreshImporter" />
             </node>
             <node concept="2ShNRf" id="60d$i5slwrV" role="33vP2m">
               <node concept="1pGfFk" id="60d$i5slwrW" role="2ShVmc">
-                <ref role="37wK5l" to="rpb:60d$i5shS_Q" resolve="MetaModelImporter" />
+                <ref role="37wK5l" to="rpb:375LOh7ddUX" resolve="MetaModelFreshImporter" />
                 <node concept="37vLTw" id="60d$i5slwrX" role="37wK5m">
                   <ref role="3cqZAo" node="60d$i5slwPl" resolve="structureModel" />
                 </node>
@@ -811,7 +811,7 @@
               <ref role="3cqZAo" node="60d$i5slwrT" resolve="importer" />
             </node>
             <node concept="liA8E" id="60d$i5slws3" role="2OqNvi">
-              <ref role="37wK5l" to="rpb:60d$i5sil8R" resolve="importIntoMPS" />
+              <ref role="37wK5l" to="rpb:375LOh7doDo" resolve="importIntoMPS" />
             </node>
           </node>
         </node>

@@ -10214,11 +10214,7 @@
           </node>
           <node concept="2ShNRf" id="22fCzk08S0f" role="33vP2m">
             <node concept="1pGfFk" id="22fCzk08S0e" role="2ShVmc">
-              <ref role="37wK5l" to="aplb:3HJD4JbIvBv" resolve="MPSProgramBuilder" />
-              <node concept="2YIFZM" id="22fCzk08S1F" role="37wK5m">
-                <ref role="37wK5l" to="aplb:3HJD4JbIwg9" resolve="getInstance" />
-                <ref role="1Pybhc" to="aplb:3HJD4JbIwfM" resolve="DataFlowManager" />
-              </node>
+              <ref role="37wK5l" to="aplb:4mpxoQud1f6" resolve="MPSProgramBuilder" />
             </node>
           </node>
         </node>

@@ -1021,5 +1021,12 @@
     <property role="EcuMT" value="7463174232466930070" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
+  <node concept="1TIwiD" id="2c4RKQNz44w">
+    <property role="EcuMT" value="2523386941174202656" />
+    <property role="3GE5qa" value="cells" />
+    <property role="TrG5h" value="FlagCell_SubstituteCondition_parentNode" />
+    <property role="34LRSv" value="parentNode" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
 </model>
 

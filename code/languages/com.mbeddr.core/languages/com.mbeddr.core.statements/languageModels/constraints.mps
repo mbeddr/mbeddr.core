@@ -123,10 +123,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
-        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
-      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -144,12 +140,8 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
-      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
-        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -483,22 +475,12 @@
     <ref role="1M2myG" to="c4fa:3hOuikE_raa" resolve="ForVarRef" />
     <node concept="9S07l" id="79i$vAY5Zhd" role="9Vyp8">
       <node concept="3clFbS" id="79i$vAY5Zhe" role="2VODD2">
-        <node concept="3clFbF" id="79i$vAY5Zhf" role="3cqZAp">
-          <node concept="2OqwBi" id="79i$vAY5Zhg" role="3clFbG">
-            <node concept="2OqwBi" id="79i$vAY5Zhh" role="2Oq$k0">
-              <node concept="1PxgMI" id="79i$vAY5Zhi" role="2Oq$k0">
-                <node concept="nLn13" id="79i$vAY5Zhj" role="1m5AlR" />
-                <node concept="chp4Y" id="79i$vAY5Zhk" role="3oSUPX">
-                  <ref role="cht4Q" to="c4fa:6iIoqg1xIpQ" resolve="ForStatement" />
-                </node>
-              </node>
-              <node concept="3TrEf2" id="79i$vAY5Zhl" role="2OqNvi">
-                <ref role="3Tt5mk" to="c4fa:6iIoqg1xKT0" resolve="iterator" />
-              </node>
-            </node>
-            <node concept="1mIQ4w" id="79i$vAY5Zhm" role="2OqNvi">
-              <node concept="chp4Y" id="79i$vAY5Zhn" role="cj9EA">
-                <ref role="cht4Q" to="c4fa:3hOuikE_raa" resolve="ForVarRef" />
+        <node concept="3clFbF" id="3_5y3elgSo$" role="3cqZAp">
+          <node concept="2OqwBi" id="3_5y3elgSBC" role="3clFbG">
+            <node concept="nLn13" id="3_5y3elgSoq" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="3_5y3elgSRY" role="2OqNvi">
+              <node concept="chp4Y" id="3_5y3elgT4s" role="cj9EA">
+                <ref role="cht4Q" to="c4fa:6iIoqg1xIpQ" resolve="ForStatement" />
               </node>
             </node>
           </node>

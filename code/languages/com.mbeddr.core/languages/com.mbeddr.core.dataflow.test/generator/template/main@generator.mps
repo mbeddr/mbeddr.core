@@ -409,12 +409,13 @@
                           </node>
                           <node concept="2OqwBi" id="3JNYr4Z9iCu" role="37vLTx">
                             <node concept="2OqwBi" id="3JNYr4Z9hVP" role="2Oq$k0">
-                              <node concept="2YIFZM" id="3JNYr4Z9hTJ" role="2Oq$k0">
-                                <ref role="37wK5l" to="aplb:3HJD4JbIwg9" resolve="getInstance" />
-                                <ref role="1Pybhc" to="aplb:3HJD4JbIwfM" resolve="DataFlowManager" />
+                              <node concept="2ShNRf" id="535puMur61R" role="2Oq$k0">
+                                <node concept="1pGfFk" id="535puMur9f2" role="2ShVmc">
+                                  <ref role="37wK5l" to="aplb:4mpxoQud1f6" resolve="MPSProgramBuilder" />
+                                </node>
                               </node>
                               <node concept="liA8E" id="3JNYr4Z9i$u" role="2OqNvi">
-                                <ref role="37wK5l" to="aplb:3HJD4JbIwhr" resolve="buildProgramFor" />
+                                <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.buildProgram(java.lang.Object):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgram" />
                                 <node concept="2OqwBi" id="6tnqEScHo5R" role="37wK5m">
                                   <node concept="2ShNRf" id="6tnqEScHmj3" role="2Oq$k0">
                                     <node concept="1pGfFk" id="6tnqEScHmw$" role="2ShVmc">

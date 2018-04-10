@@ -16,8 +16,16 @@ if (project.skipResolveMps) {
     }
 }
 
+task resolve_extensions(type: Copy) {
+    dependsOn configurations.mpsExtensions
+    from {
+        configurations.mpsExtensions.resolve().collect { zipTree(it) }
+    }
+    into artifactsDir
+}
 
-task build_allScripts(type: BuildLanguages, dependsOn: resolve_mps) {
+
+task build_allScripts(type: BuildLanguages, dependsOn: [resolve_mps, resolve_extensions]) {
     script rootProject.file('build/com.mbeddr.allScripts/build.xml')
 }
 
@@ -34,12 +42,12 @@ task publish_allScripts(type: Zip, dependsOn: build_allScripts) {
     include "com.mbeddr.allScripts.build/**"
 }
 
-
+/*
 task build_sl_all(type: BuildLanguages, dependsOn: copy_allScripts) {
     script scriptFile('sl-all/build.xml')
 }
 
-task copy_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
+task copy_sl_all_nativelibs(type: Copy, dependsOn: copy_allScripts) {
     from "$rootDir/artifacts/mps-sl-all/"
     include "de.itemis.mps.nativelibs.loader/"
     into "$mpsHomeDir/plugins"
@@ -50,8 +58,9 @@ task install_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
     include "de.itemis.mps.nativelibs.loader/"
     into "$mpsPluginsDir"
 }
+*/
 
-task build_platform(type: BuildLanguages, dependsOn: copy_sl_all_nativelibs) {
+task build_platform(type: BuildLanguages, dependsOn: copy_allScripts) {
     script scriptFile('com.mbeddr.platform/build.xml')
 }
 
@@ -82,10 +91,23 @@ task publish_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
     include "com.mbeddr.platform/**"
 }
 
+task defaultWrapper(dependsOn: build_platform) {
+    doFirst {
+        println "####################################################################################"
+        println "#                      THE DEFAULT TASK HAS BEEN CHANGED                           #"
+        println "#                                                                                  #"
+        println "# The default task now only builds the mbeddr platform and no longer all of mbeddr #"
+        println "# including the C part. In order to build everything you will have to invoke the   #"
+        println "# task build_mbeddr. This will give you the old behaviour of building everything.  #"
+        println "####################################################################################"
+    }
+
+}
+
+rootProject.defaultTasks 'defaultWrapper'
+
 task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrAllScriptsPublicationToMavenLocal', 'publishMbeddrPlatformPublicationToMavenLocal'])
 
-tasks.getByPath(':build:com.mbeddr:install').dependsOn install_actionsfilter
-tasks.getByPath(':build:com.mbeddr:install').dependsOn install_sl_all_nativelibs
 
 publishing {
     publications {
@@ -104,6 +126,13 @@ publishing {
                     dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
                     dependencyNode.appendNode('scope', 'provided')
                 }
+                /*configurations.mpsExtensions.resolvedConfiguration.firstLevelModuleDependencies.each{
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }*/
             }
         }
         mbeddrAllScripts(MavenPublication) {

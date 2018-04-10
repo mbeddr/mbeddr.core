@@ -1447,6 +1447,19 @@
                         </node>
                       </node>
                       <node concept="3clFbS" id="qT5MFmnLih" role="3clFbx">
+                        <node concept="3cpWs8" id="2c4RKQNyRNr" role="3cqZAp">
+                          <node concept="3cpWsn" id="2c4RKQNyRNs" role="3cpWs9">
+                            <property role="TrG5h" value="parentNode" />
+                            <property role="3TUv4t" value="true" />
+                            <node concept="3Tqbb2" id="2c4RKQNz2e3" role="1tU5fm" />
+                            <node concept="2OqwBi" id="2c4RKQNyRNt" role="33vP2m">
+                              <node concept="2kYc5w" id="2c4RKQNyRNu" role="2Oq$k0" />
+                              <node concept="liA8E" id="2c4RKQNyRNv" role="2OqNvi">
+                                <ref role="37wK5l" to="78sh:~SubstituteMenuContext.getParentNode():org.jetbrains.mps.openapi.model.SNode" resolve="getParentNode" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3cpWs8" id="yuUZPtY3wZ" role="3cqZAp">
                           <node concept="3cpWsn" id="yuUZPtY3x2" role="3cpWs9">
                             <property role="TrG5h" value="substitutedNode" />
@@ -1562,11 +1575,8 @@
                                       <node concept="2ShNRf" id="qT5MFmnLim" role="25WWJ7">
                                         <node concept="1pGfFk" id="qT5MFmnLin" role="2ShVmc">
                                           <ref role="37wK5l" to="czm:4AuGfbNRh27" resolve="FlagSubstituteMenuItem" />
-                                          <node concept="2OqwBi" id="qT5MFmnLio" role="37wK5m">
-                                            <node concept="2kYc5w" id="qT5MFmnMBJ" role="2Oq$k0" />
-                                            <node concept="liA8E" id="qT5MFmnLiq" role="2OqNvi">
-                                              <ref role="37wK5l" to="78sh:~SubstituteMenuContext.getParentNode():org.jetbrains.mps.openapi.model.SNode" resolve="getParentNode" />
-                                            </node>
+                                          <node concept="37vLTw" id="2c4RKQNyRNx" role="37wK5m">
+                                            <ref role="3cqZAo" node="2c4RKQNyRNs" resolve="parentNode" />
                                           </node>
                                           <node concept="2OqwBi" id="qT5MFmnLir" role="37wK5m">
                                             <node concept="2kYc5w" id="qT5MFmnMhf" role="2Oq$k0" />
