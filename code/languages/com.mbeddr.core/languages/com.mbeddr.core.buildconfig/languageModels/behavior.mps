@@ -352,6 +352,7 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
         <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
@@ -4003,8 +4004,11 @@
                         </node>
                       </node>
                       <node concept="TSZUe" id="5Dpaey8tUNG" role="2OqNvi">
-                        <node concept="37vLTw" id="5Dpaey8tV49" role="25WWJ7">
-                          <ref role="3cqZAo" node="5Dpaey8tOZP" resolve="it" />
+                        <node concept="2OqwBi" id="3RPD9Ku7F4K" role="25WWJ7">
+                          <node concept="37vLTw" id="5Dpaey8tV49" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5Dpaey8tOZP" resolve="it" />
+                          </node>
+                          <node concept="1$rogu" id="3RPD9Ku7FXs" role="2OqNvi" />
                         </node>
                       </node>
                     </node>
