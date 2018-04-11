@@ -15,7 +15,6 @@
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
-    <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="10jo" ref="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.structure)" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
@@ -294,6 +293,9 @@
     </node>
     <node concept="PrWs8" id="6wvhQs7n6SX" role="PzmwI">
       <ref role="PrY4T" node="6yeRgC0uAED" resolve="IIsDocumentationComment" />
+    </node>
+    <node concept="PrWs8" id="5hKIe0b4_3t" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hLJPP0O" resolve="IWrapper" />
     </node>
     <node concept="M6xJ_" id="5GEPw8vxMCk" role="lGtFl">
       <property role="Hh88m" value="elementDocumentation" />
@@ -1612,9 +1614,6 @@
     <property role="EcuMT" value="7941623276298081733" />
     <node concept="PrWs8" id="6SQk4GjInaQ" role="PrDN$">
       <ref role="PrY4T" node="6SQk4GjV1Md" resolve="IHierarchicalStructureBase" />
-    </node>
-    <node concept="PrWs8" id="6SQk4GjJG$Z" role="PrDN$">
-      <ref role="PrY4T" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
     </node>
   </node>
   <node concept="PlHQZ" id="6SQk4GjUJRB">

@@ -9,7 +9,6 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
-    <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -108,9 +107,6 @@
     <node concept="PrWs8" id="60pdW7uM1gq" role="PzmwI">
       <ref role="PrY4T" to="vs0r:9MiAwFsXp0" resolve="ITreeViewRoot" />
     </node>
-    <node concept="PrWs8" id="4zsoa5EdazX" role="PzmwI">
-      <ref role="PrY4T" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
-    </node>
   </node>
   <node concept="PlHQZ" id="2TZO3DbuxwP">
     <property role="TrG5h" value="IDocumentContent" />
@@ -118,9 +114,6 @@
     <property role="EcuMT" value="3350625596579911733" />
     <node concept="PrWs8" id="2TZO3Dbv5pF" role="PrDN$">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
-    </node>
-    <node concept="PrWs8" id="1o2NPvZml3z" role="PrDN$">
-      <ref role="PrY4T" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
     </node>
   </node>
   <node concept="1TIwiD" id="2TZO3Dbuxxg">
@@ -159,9 +152,6 @@
     </node>
     <node concept="PrWs8" id="jpyKDg34iD" role="PzmwI">
       <ref role="PrY4T" to="vs0r:jpyKDg1onz" resolve="ISearchSupport" />
-    </node>
-    <node concept="PrWs8" id="1F0U9H6cCL0" role="PzmwI">
-      <ref role="PrY4T" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
     </node>
     <node concept="PrWs8" id="39jEAIlrcKU" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
@@ -1298,9 +1288,6 @@
     <node concept="PrWs8" id="3DAECxG6nQF" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
-    <node concept="PrWs8" id="aiIotWrcya" role="PzmwI">
-      <ref role="PrY4T" to="570t:4o4$mVTwnFM" resolve="ISectionIndex" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1YUFCeFQmC9">
     <property role="3GE5qa" value="words.formatted" />
@@ -1750,6 +1737,13 @@
     <node concept="t5JxF" id="4VYjeLHNXKZ" role="lGtFl">
       <property role="t5JxN" value="Annotation can be use used to avoid documents naming conflicts. Annotated documents will be generated with name property from this annotation." />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3aMV05sDEog">
+    <property role="EcuMT" value="3653241738344441360" />
+    <property role="3GE5qa" value="words.formatted" />
+    <property role="TrG5h" value="SuperScriptWord" />
+    <property role="34LRSv" value="superscript" />
+    <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
   </node>
 </model>
 

@@ -70,10 +70,12 @@
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1165253627126" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup" flags="ng" index="1exORT">
         <property id="1165254125954" name="presentation" index="1ezIyd" />
@@ -439,11 +441,27 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7LkwBl9HKH4" role="3EZMnx" />
-      <node concept="3F0ifn" id="6nrtUqYcU5t" role="3EZMnx">
-        <property role="3F0ifm" value="specify toolbar" />
-        <node concept="VechU" id="6nrtUqYcU5u" role="3F10Kt">
-          <property role="Vb096" value="DARK_BLUE" />
+      <node concept="3EZMnI" id="7I52n9WCCw9" role="3EZMnx">
+        <node concept="VPM3Z" id="7I52n9WCCwc" role="3F10Kt">
+          <property role="VOm3f" value="false" />
         </node>
+        <node concept="3F0ifn" id="7I52n9WCCwe" role="3EZMnx">
+          <property role="3F0ifm" value="specify toolbar" />
+          <node concept="VechU" id="7I52n9WCCwf" role="3F10Kt">
+            <property role="Vb096" value="DARK_BLUE" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="6hyuZyX9wzG" role="3EZMnx" />
+        <node concept="3F0ifn" id="7I52n9WCDhs" role="3EZMnx">
+          <property role="3F0ifm" value="Make sure actions from the toolbar aren't filtered elsewhere otherwise runtime problems may appear" />
+          <node concept="Veino" id="7I52n9WCDYl" role="3F10Kt">
+            <property role="Vb096" value="lightGray" />
+          </node>
+          <node concept="30gYXW" id="6hyuZyX9xgE" role="3F10Kt">
+            <property role="Vb096" value="lightGray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="7I52n9WCCwg" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7LkwBl9HKJ3" role="3EZMnx" />
       <node concept="3F1sOY" id="6nrtUqYeO1M" role="3EZMnx">
