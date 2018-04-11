@@ -709,9 +709,6 @@
       <node concept="m$f5U" id="3quoVcnS5uV" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnPcDz" resolve="group.rcp" />
       </node>
-      <node concept="m$f5U" id="3quoVcnS5w5" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnM__n" resolve="group.refactoring" />
-      </node>
       <node concept="m$f5U" id="3quoVcnS5yp" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnJkAK" resolve="group.spreferences" />
       </node>
@@ -801,6 +798,9 @@
       </node>
       <node concept="m$_yC" id="NMVW79ysTx" role="m$_yJ">
         <ref role="m$_y1" node="NMVW79yitG" resolve="com.mbeddr.mpsutil.userstyles" />
+      </node>
+      <node concept="m$_yC" id="nnCEsShA5M" role="m$_yJ">
+        <ref role="m$_y1" node="nnCEsSfXF5" resolve="com.mbeddr.mpsutil.refactoring" />
       </node>
       <node concept="3_J27D" id="7uZw0yZ2_Jx" role="m_cZH">
         <node concept="3Mxwew" id="7uZw0yZ2_Jy" role="3MwsjC">
@@ -8482,6 +8482,39 @@
           <property role="3LESm3" value="0781c462-1b42-4608-a3c9-75d33b8f589a" />
           <property role="2GAjPV" value="false" />
         </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="nnCEsSfXF5" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.refactoring" />
+      <node concept="3_J27D" id="nnCEsSfXF7" role="m$_yQ">
+        <node concept="3Mxwew" id="nnCEsSg3W6" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.refactoring" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="nnCEsSfXF9" role="m_cZH">
+        <node concept="3Mxwew" id="nnCEsSg3W9" role="3MwsjC">
+          <property role="3MwjfP" value="mpsutil.refactoring" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="nnCEsSfXFb" role="m$_w8">
+        <node concept="3Mxwey" id="nnCEsSho_D" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="nnCEsShpHv" role="m$_yh">
+        <ref role="m$f5T" node="3quoVcnM__n" resolve="group.refactoring" />
+      </node>
+      <node concept="m$_yC" id="nnCEsShrX8" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="nnCEsShucQ" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
+      </node>
+      <node concept="m$_yC" id="nnCEsShwsD" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
+      </node>
+      <node concept="m$_yC" id="nnCEsShyGw" role="m$_yJ">
+        <ref role="m$_y1" node="6rBfBe1XaAA" resolve="com.mbeddr.mpsutil.contextactions" />
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnM__n" role="3989C9">
@@ -18749,6 +18782,9 @@
       </node>
       <node concept="m$_wl" id="48qh2gYgI9M" role="39821P">
         <ref role="m_rDy" node="48qh2gYgNmx" resolve="com.mbeddr.codereview" />
+      </node>
+      <node concept="m$_wl" id="2DUWZ4YFgC6" role="39821P">
+        <ref role="m_rDy" node="nnCEsSfXF5" resolve="com.mbeddr.mpsutil.refactoring" />
       </node>
     </node>
   </node>
