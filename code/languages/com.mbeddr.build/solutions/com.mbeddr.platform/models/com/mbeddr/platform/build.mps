@@ -700,9 +700,6 @@
       <node concept="m$f5U" id="5l4WPWBt2QY" role="m$_yh">
         <ref role="m$f5T" node="5l4WPWBsSaB" resolve="group.editingGuide.devkit" />
       </node>
-      <node concept="m$f5U" id="3quoVcnS5jC" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnL8hF" resolve="group.plantuml" />
-      </node>
       <node concept="m$f5U" id="3quoVcnS5k$" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnI9Jv" resolve="group.preferenceform" />
       </node>
@@ -3469,22 +3466,10 @@
         <node concept="1E0d5M" id="2N1CSrzSKpw" role="1E1XAP">
           <ref role="1E0d5P" node="4Hbnsm4OhEo" resolve="com.mbeddr.mpsutil.editor.querylist.runtime" />
         </node>
-        <node concept="1SiIV0" id="2N1CSrzSOBy" role="3bR37C">
-          <node concept="3bR9La" id="2N1CSrzSOBz" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="2N1CSrzsvbI" resolve="com.mbeddr.mpsutil.nodeaccess" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2VC4eVYcgRz" role="3bR37C">
           <node concept="3bR9La" id="2VC4eVYcgR$" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2lop6rS5AmA" role="3bR37C">
-          <node concept="3bR9La" id="2lop6rS5AmB" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
           </node>
         </node>
       </node>
