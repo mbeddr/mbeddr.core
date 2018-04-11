@@ -15609,12 +15609,6 @@
           <property role="TrG5h" value="com.mbeddr.doc.gen_latex#4457500422381351720" />
           <property role="3LESm3" value="ae22a5d5-bb74-4acf-b102-de4ea6203c98" />
           <property role="2GAjPV" value="false" />
-          <node concept="1SiIV0" id="1iUWk_eIt3a" role="3bR37C">
-            <node concept="3bR9La" id="1iUWk_eIt3b" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="2N1CSrzsvbI" resolve="com.mbeddr.mpsutil.nodeaccess" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="4hvHh3QYjC5" role="3bR37C">
             <node concept="3bR9La" id="4hvHh3QYjC6" role="1SiIV1">
               <property role="3bR36h" value="false" />
@@ -15638,22 +15632,10 @@
               <ref role="3bR37D" node="1YMM4SJ6o1" resolve="com.mbeddr.doc#4457500422381538528" />
             </node>
           </node>
-          <node concept="1SiIV0" id="2lop6rS5Qmj" role="3bR37C">
-            <node concept="3bR9La" id="2lop6rS5Qmk" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
-            </node>
-          </node>
         </node>
         <node concept="1SiIV0" id="1YMM4SJ8pO" role="3bR37C">
           <node concept="1Busua" id="1YMM4SJ8pP" role="1SiIV1">
             <ref role="1Busuk" node="1YMM4SJ2m0" resolve="com.mbeddr.doc" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="79i$vAY6Rpx" role="3bR37C">
-          <node concept="3bR9La" id="79i$vAY6Rpy" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="t9Ud9KwRJv" resolve="com.mbeddr.doc.latex" />
           </node>
         </node>
       </node>
