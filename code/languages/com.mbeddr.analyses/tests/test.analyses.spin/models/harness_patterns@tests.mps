@@ -9,6 +9,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -1955,6 +1956,274 @@
             <property role="30AzUs" value="4" />
             <node concept="3Tqbb2" id="46FswZ79XEP" role="38rYrG">
               <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="1U8LoddT13U">
+    <property role="TrG5h" value="_400_combinatorial" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="1U8LoddT13V" role="1SL9yI">
+      <property role="TrG5h" value="test_combinatorial_pass" />
+      <node concept="3cqZAl" id="1U8LoddT13W" role="3clF45" />
+      <node concept="3clFbS" id="1U8LoddT13X" role="3clF47">
+        <node concept="3cpWs8" id="1U8LoddT13Y" role="3cqZAp">
+          <node concept="3cpWsn" id="1U8LoddT13Z" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="1U8LoddT140" role="1tU5fm" />
+            <node concept="BaHAS" id="1U8LoddT141" role="33vP2m">
+              <property role="BaHAW" value="harness_patterns" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1U8LoddT142" role="3cqZAp">
+          <node concept="3cpWsn" id="1U8LoddT143" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="_YKpA" id="1U8LoddT144" role="1tU5fm">
+              <node concept="3uibUv" id="1U8LoddT145" role="_ZDj9">
+                <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="1U8LoddT146" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
+              <node concept="37vLTw" id="1U8LoddT147" role="37wK5m">
+                <ref role="3cqZAo" node="1U8LoddT13Z" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="1U8LoddT148" role="37wK5m">
+                <property role="Xl_RC" value="_400_combinatorial_pass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1U8LoddT149" role="3cqZAp" />
+        <node concept="3cpWs8" id="1U8LoddT14a" role="3cqZAp">
+          <node concept="3cpWsn" id="1U8LoddT14b" role="3cpWs9">
+            <property role="TrG5h" value="r0" />
+            <node concept="3uibUv" id="1U8LoddT14c" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="1U8LoddT14d" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:63QgsF$OV5n" resolve="findResultByUserFriendlyMessage" />
+              <node concept="37vLTw" id="1U8LoddT14e" role="37wK5m">
+                <ref role="3cqZAo" node="1U8LoddT143" resolve="res" />
+              </node>
+              <node concept="Xl_RD" id="1U8LoddT14f" role="37wK5m">
+                <property role="Xl_RC" value="assertions" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="1U8LoddT14g" role="3cqZAp">
+          <node concept="2OqwBi" id="1U8LoddT14h" role="3vwVQn">
+            <node concept="37vLTw" id="1U8LoddT14i" role="2Oq$k0">
+              <ref role="3cqZAo" node="1U8LoddT14b" resolve="r0" />
+            </node>
+            <node concept="liA8E" id="1U8LoddT14j" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaBq" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1U8LoddT5X3" role="1SL9yI">
+      <property role="TrG5h" value="test_combinatorial_fail" />
+      <node concept="3cqZAl" id="1U8LoddT5X4" role="3clF45" />
+      <node concept="3clFbS" id="1U8LoddT5X5" role="3clF47">
+        <node concept="3cpWs8" id="1U8LoddT5X6" role="3cqZAp">
+          <node concept="3cpWsn" id="1U8LoddT5X7" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="1U8LoddT5X8" role="1tU5fm" />
+            <node concept="BaHAS" id="1U8LoddT5X9" role="33vP2m">
+              <property role="BaHAW" value="harness_patterns" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1U8LoddT5Xa" role="3cqZAp">
+          <node concept="3cpWsn" id="1U8LoddT5Xb" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="_YKpA" id="1U8LoddT5Xc" role="1tU5fm">
+              <node concept="3uibUv" id="1U8LoddT5Xd" role="_ZDj9">
+                <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="1U8LoddT5Xe" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
+              <node concept="37vLTw" id="1U8LoddT5Xf" role="37wK5m">
+                <ref role="3cqZAo" node="1U8LoddT5X7" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="1U8LoddT5Xg" role="37wK5m">
+                <property role="Xl_RC" value="_400_combinatorial_fail" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1U8LoddT5Xh" role="3cqZAp" />
+        <node concept="3cpWs8" id="1U8LoddT5Xi" role="3cqZAp">
+          <node concept="3cpWsn" id="1U8LoddT5Xj" role="3cpWs9">
+            <property role="TrG5h" value="r0" />
+            <node concept="3uibUv" id="1U8LoddT5Xk" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="1U8LoddT5Xl" role="33vP2m">
+              <ref role="37wK5l" to="hr62:63QgsF$OV5n" resolve="findResultByUserFriendlyMessage" />
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <node concept="37vLTw" id="1U8LoddT5Xm" role="37wK5m">
+                <ref role="3cqZAo" node="1U8LoddT5Xb" resolve="res" />
+              </node>
+              <node concept="Xl_RD" id="1U8LoddT5Xn" role="37wK5m">
+                <property role="Xl_RC" value="Assert: a != 1 || c != 222 || d != 2222" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="1U8LoddT5Xo" role="3cqZAp">
+          <node concept="2OqwBi" id="1U8LoddT5Xp" role="3vwVQn">
+            <node concept="37vLTw" id="1U8LoddT5Xq" role="2Oq$k0">
+              <ref role="3cqZAo" node="1U8LoddT5Xj" resolve="r0" />
+            </node>
+            <node concept="liA8E" id="1U8LoddT5Xr" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5NkG1_QHnG8">
+    <property role="TrG5h" value="_450_fuzzy" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="5NkG1_QHnG9" role="1SL9yI">
+      <property role="TrG5h" value="test_fuzzy_pass" />
+      <node concept="3cqZAl" id="5NkG1_QHnGa" role="3clF45" />
+      <node concept="3clFbS" id="5NkG1_QHnGb" role="3clF47">
+        <node concept="3cpWs8" id="5NkG1_QHnGc" role="3cqZAp">
+          <node concept="3cpWsn" id="5NkG1_QHnGd" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5NkG1_QHnGe" role="1tU5fm" />
+            <node concept="BaHAS" id="5NkG1_QHnGf" role="33vP2m">
+              <property role="BaHAW" value="harness_patterns" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5NkG1_QHnGg" role="3cqZAp">
+          <node concept="3cpWsn" id="5NkG1_QHnGh" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="_YKpA" id="5NkG1_QHnGi" role="1tU5fm">
+              <node concept="3uibUv" id="5NkG1_QHnGj" role="_ZDj9">
+                <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="5NkG1_QHnGk" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
+              <node concept="37vLTw" id="5NkG1_QHnGl" role="37wK5m">
+                <ref role="3cqZAo" node="5NkG1_QHnGd" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="5NkG1_QHnGm" role="37wK5m">
+                <property role="Xl_RC" value="_450_fuzzy_pass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5NkG1_QHnGn" role="3cqZAp" />
+        <node concept="3cpWs8" id="5NkG1_QHnGo" role="3cqZAp">
+          <node concept="3cpWsn" id="5NkG1_QHnGp" role="3cpWs9">
+            <property role="TrG5h" value="r0" />
+            <node concept="3uibUv" id="5NkG1_QHnGq" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="5NkG1_QHnGr" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:63QgsF$OV5n" resolve="findResultByUserFriendlyMessage" />
+              <node concept="37vLTw" id="5NkG1_QHnGs" role="37wK5m">
+                <ref role="3cqZAo" node="5NkG1_QHnGh" resolve="res" />
+              </node>
+              <node concept="Xl_RD" id="5NkG1_QHnGt" role="37wK5m">
+                <property role="Xl_RC" value="assertions" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="5NkG1_QHnGu" role="3cqZAp">
+          <node concept="2OqwBi" id="5NkG1_QHnGv" role="3vwVQn">
+            <node concept="37vLTw" id="5NkG1_QHnGw" role="2Oq$k0">
+              <ref role="3cqZAo" node="5NkG1_QHnGp" resolve="r0" />
+            </node>
+            <node concept="liA8E" id="5NkG1_QHnGx" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaBq" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5NkG1_QHnGy" role="1SL9yI">
+      <property role="TrG5h" value="test_fuzzy_fail" />
+      <node concept="3cqZAl" id="5NkG1_QHnGz" role="3clF45" />
+      <node concept="3clFbS" id="5NkG1_QHnG$" role="3clF47">
+        <node concept="3cpWs8" id="5NkG1_QHnG_" role="3cqZAp">
+          <node concept="3cpWsn" id="5NkG1_QHnGA" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5NkG1_QHnGB" role="1tU5fm" />
+            <node concept="BaHAS" id="5NkG1_QHnGC" role="33vP2m">
+              <property role="BaHAW" value="harness_patterns" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5NkG1_QHnGD" role="3cqZAp">
+          <node concept="3cpWsn" id="5NkG1_QHnGE" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="_YKpA" id="5NkG1_QHnGF" role="1tU5fm">
+              <node concept="3uibUv" id="5NkG1_QHnGG" role="_ZDj9">
+                <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+              </node>
+            </node>
+            <node concept="NRdvd" id="5NkG1_QHnGH" role="33vP2m">
+              <ref role="37wK5l" to="hr62:5yxSA$IRHT2" resolve="checkSpinBasedAnalysis" />
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <node concept="37vLTw" id="5NkG1_QHnGI" role="37wK5m">
+                <ref role="3cqZAo" node="5NkG1_QHnGA" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="5NkG1_QHnGJ" role="37wK5m">
+                <property role="Xl_RC" value="_450_fuzzy_fail" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5NkG1_QHnGK" role="3cqZAp" />
+        <node concept="3cpWs8" id="5NkG1_QHnGL" role="3cqZAp">
+          <node concept="3cpWsn" id="5NkG1_QHnGM" role="3cpWs9">
+            <property role="TrG5h" value="r0" />
+            <node concept="3uibUv" id="5NkG1_QHnGN" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="5NkG1_QHnGO" role="33vP2m">
+              <ref role="37wK5l" to="hr62:63QgsF$OV5n" resolve="findResultByUserFriendlyMessage" />
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <node concept="37vLTw" id="5NkG1_QHnGP" role="37wK5m">
+                <ref role="3cqZAo" node="5NkG1_QHnGE" resolve="res" />
+              </node>
+              <node concept="Xl_RD" id="5NkG1_QHnGQ" role="37wK5m">
+                <property role="Xl_RC" value="Assert: data[1] != 1 || data[2] != 0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="5NkG1_QHnGR" role="3cqZAp">
+          <node concept="2OqwBi" id="5NkG1_QHnGS" role="3vwVQn">
+            <node concept="37vLTw" id="5NkG1_QHnGT" role="2Oq$k0">
+              <ref role="3cqZAo" node="5NkG1_QHnGM" resolve="r0" />
+            </node>
+            <node concept="liA8E" id="5NkG1_QHnGU" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
             </node>
           </node>
         </node>

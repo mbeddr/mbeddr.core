@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,8 +13,6 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
-    <import index="u8e7" ref="r:4acb4e42-0ef5-487c-a21d-496738d115a6(com.mbeddr.mpsutil.breadcrumb.behavior)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
@@ -399,21 +396,6 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="2W7DBH1CpS3" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="showInBreadcrumb" />
-      <ref role="13i0hy" to="u8e7:1pmorAautNF" resolve="showInBreadcrumb" />
-      <node concept="3Tm1VV" id="2W7DBH1CpS4" role="1B3o_S" />
-      <node concept="3clFbS" id="2W7DBH1CpS9" role="3clF47">
-        <node concept="3clFbF" id="2W7DBH1CrZ8" role="3cqZAp">
-          <node concept="3clFbT" id="2W7DBH1CrZ7" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="2W7DBH1CpSa" role="3clF45" />
-    </node>
   </node>
   <node concept="13h7C7" id="2TZO3Dbvd_K">
     <property role="3GE5qa" value="paragraphs" />
@@ -756,21 +738,6 @@
       </node>
       <node concept="10P_77" id="3il$LAnWBYe" role="3clF45" />
       <node concept="3Tm1VV" id="3il$LAnWBYf" role="1B3o_S" />
-    </node>
-    <node concept="13i0hz" id="1o2NPvZtAES" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="showInBreadcrumb" />
-      <ref role="13i0hy" to="u8e7:1pmorAautNF" resolve="showInBreadcrumb" />
-      <node concept="3Tm1VV" id="1o2NPvZtAET" role="1B3o_S" />
-      <node concept="3clFbS" id="1o2NPvZtAEY" role="3clF47">
-        <node concept="3clFbF" id="1o2NPvZtC11" role="3cqZAp">
-          <node concept="3clFbT" id="1o2NPvZtC10" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="1o2NPvZtAEZ" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="2TZO3DbvK_h">
@@ -2373,24 +2340,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="13i0hz" id="2FK2lSA6Vnf" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getBreadcrumbText" />
-      <ref role="13i0hy" to="u8e7:3JrMqIyfmQ4" resolve="getBreadcrumbText" />
-      <node concept="3Tm1VV" id="2FK2lSA6Vng" role="1B3o_S" />
-      <node concept="3clFbS" id="2FK2lSA6Vnn" role="3clF47">
-        <node concept="3clFbF" id="5wmuVxvF2lo" role="3cqZAp">
-          <node concept="2OqwBi" id="5wmuVxvF2ts" role="3clFbG">
-            <node concept="13iPFW" id="5wmuVxvF2ln" role="2Oq$k0" />
-            <node concept="2qgKlT" id="5wmuVxvF3hW" role="2OqNvi">
-              <ref role="37wK5l" node="5wmuVxvF0fD" resolve="getIndexedText" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="2FK2lSA6Vno" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="5yxqZJwzdPm">
@@ -7456,24 +7405,6 @@
     <ref role="13h7C2" to="2c95:3DAECxG6nQE" resolve="Chapter" />
     <node concept="13hLZK" id="aiIotWBg4P" role="13h7CW">
       <node concept="3clFbS" id="aiIotWBg4Q" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="aiIotWBg4R" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getSectionIndexText" />
-      <ref role="13i0hy" to="u8e7:4o4$mVTwnPA" resolve="getBookmarkText" />
-      <node concept="3Tm1VV" id="aiIotWBg4S" role="1B3o_S" />
-      <node concept="3clFbS" id="aiIotWBg4Z" role="3clF47">
-        <node concept="3clFbF" id="aiIotWBg6u" role="3cqZAp">
-          <node concept="2OqwBi" id="aiIotWBgnx" role="3clFbG">
-            <node concept="13iPFW" id="aiIotWBg6p" role="2Oq$k0" />
-            <node concept="2qgKlT" id="aiIotWBhec" role="2OqNvi">
-              <ref role="37wK5l" to="u8e7:3JrMqIyfmQ4" resolve="getBreadcrumbText" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="aiIotWBg50" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6TjoDcE5T6A">
