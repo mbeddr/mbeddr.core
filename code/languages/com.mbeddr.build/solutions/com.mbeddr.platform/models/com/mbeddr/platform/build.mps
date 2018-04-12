@@ -15632,10 +15632,22 @@
               <ref role="3bR37D" node="1YMM4SJ6o1" resolve="com.mbeddr.doc#4457500422381538528" />
             </node>
           </node>
+          <node concept="1SiIV0" id="4qk3XzADiCY" role="3bR37C">
+            <node concept="3bR9La" id="4qk3XzADiCZ" role="1SiIV1">
+              <property role="3bR36h" value="true" />
+              <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="1YMM4SJ8pO" role="3bR37C">
           <node concept="1Busua" id="1YMM4SJ8pP" role="1SiIV1">
             <ref role="1Busuk" node="1YMM4SJ2m0" resolve="com.mbeddr.doc" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4qk3XzADiCW" role="3bR37C">
+          <node concept="3bR9La" id="4qk3XzADiCX" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
           </node>
         </node>
       </node>
@@ -15704,6 +15716,12 @@
               <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
             </node>
           </node>
+          <node concept="1SiIV0" id="4qk3XzADiDq" role="3bR37C">
+            <node concept="3bR9La" id="4qk3XzADiDr" role="1SiIV1">
+              <property role="3bR36h" value="true" />
+              <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="1YMM4SJ8q7" role="3bR37C">
           <node concept="1Busua" id="1YMM4SJ8q8" role="1SiIV1">
@@ -15750,6 +15768,12 @@
           <node concept="3bR9La" id="2avgMTl5sCG" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4qk3XzADiDo" role="3bR37C">
+          <node concept="3bR9La" id="4qk3XzADiDp" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
           </node>
         </node>
       </node>
