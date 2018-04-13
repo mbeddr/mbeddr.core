@@ -766,9 +766,6 @@
       <node concept="m$_yC" id="7VbYB1xE_k8" role="m$_yJ">
         <ref role="m$_y1" to="90a9:2NyZxKpUXYJ" resolve="de.itemis.mps.blutil" />
       </node>
-      <node concept="m$_yC" id="3lZeU8ehJeh" role="m$_yJ">
-        <ref role="m$_y1" node="3lZeU8ehrPx" resolve="com.mbeddr.mpsutil.httpsupport" />
-      </node>
       <node concept="m$_yC" id="64SK4bcNIGW" role="m$_yJ">
         <ref role="m$_y1" node="64SK4bcNyQW" resolve="com.mbeddr.mpsutil.editorsupport" />
       </node>
@@ -1213,9 +1210,6 @@
       </node>
       <node concept="m$_yC" id="64SK4bcIgn_" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
-      </node>
-      <node concept="m$_yC" id="64SK4bcIiBv" role="m$_yJ">
-        <ref role="m$_y1" node="3lZeU8ehrPx" resolve="com.mbeddr.mpsutil.httpsupport" />
       </node>
       <node concept="m$_yC" id="64SK4bcIkRr" role="m$_yJ">
         <ref role="m$_y1" to="90a9:2NyZxKpUXYJ" resolve="de.itemis.mps.blutil" />
@@ -3511,9 +3505,6 @@
       </node>
       <node concept="m$_yC" id="64SK4bcJ_T5" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="jetbrains.mps.ide.httpsupport" />
-      </node>
-      <node concept="m$_yC" id="64SK4bcJC8W" role="m$_yJ">
-        <ref role="m$_y1" node="3lZeU8ehrPx" resolve="com.mbeddr.mpsutil.httpsupport" />
       </node>
     </node>
     <node concept="2G$12M" id="4VgGsUqP22z" role="3989C9">
