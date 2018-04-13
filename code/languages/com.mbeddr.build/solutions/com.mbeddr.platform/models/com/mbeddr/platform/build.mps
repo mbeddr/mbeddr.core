@@ -3512,9 +3512,6 @@
       <node concept="m$_yC" id="64SK4bcJ_T5" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="jetbrains.mps.ide.httpsupport" />
       </node>
-      <node concept="m$_yC" id="64SK4bcJC8W" role="m$_yJ">
-        <ref role="m$_y1" node="3lZeU8ehrPx" resolve="com.mbeddr.mpsutil.httpsupport" />
-      </node>
     </node>
     <node concept="2G$12M" id="4VgGsUqP22z" role="3989C9">
       <property role="TrG5h" value="group.build" />
