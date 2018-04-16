@@ -104,7 +104,6 @@
     <import index="y49u" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.util(MPS.OpenAPI/)" />
     <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
     <import index="oqcp" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio(JDK/)" />
-    <import index="abz6" ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3/r:3fab45ce-fdba-4ae7-82aa-b5092a48bd02(com.mbeddr.mpsutil.nodeaccess/com.mbeddr.mpsutil.nodeaccess.plugin)" />
     <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
     <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="pjrh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter(MPS.Core/)" />
@@ -20045,71 +20044,6 @@
     <node concept="tT9cl" id="3onExzPnGun" role="2hfP89">
       <ref role="tU$_T" node="goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
       <ref role="2f8Tey" node="goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
-    </node>
-  </node>
-  <node concept="312cEu" id="627_yy3filz">
-    <property role="TrG5h" value="CodeReferenceStore" />
-    <property role="3GE5qa" value="coderef" />
-    <node concept="2tJIrI" id="627_yy3filT" role="jymVt" />
-    <node concept="Wx3nA" id="627_yy3flYy" role="jymVt">
-      <property role="IEkAT" value="false" />
-      <property role="TrG5h" value="copiedCode" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="627_yy3guN3" role="1tU5fm">
-        <ref role="3uigEE" to="w1kc:~SNodePointer" resolve="SNodePointer" />
-      </node>
-      <node concept="3Tm1VV" id="627_yy3flXU" role="1B3o_S" />
-      <node concept="10Nm6u" id="627_yy3flX$" role="33vP2m" />
-    </node>
-    <node concept="2tJIrI" id="627_yy3fim1" role="jymVt" />
-    <node concept="3Tm1VV" id="627_yy3fil$" role="1B3o_S" />
-  </node>
-  <node concept="sE7Ow" id="627_yy3fe66">
-    <property role="TrG5h" value="CopyCodeReference" />
-    <property role="2uzpH1" value="Copy Code Reference (Doc)" />
-    <property role="3GE5qa" value="coderef" />
-    <node concept="2S4$dB" id="627_yy3fe6k" role="1NuT2Z">
-      <property role="TrG5h" value="selectedNdoe" />
-      <node concept="3Tm6S6" id="627_yy3fe6l" role="1B3o_S" />
-      <node concept="1oajcY" id="627_yy3fe6m" role="1oa70y" />
-      <node concept="3Tqbb2" id="627_yy3fe6n" role="1tU5fm" />
-    </node>
-    <node concept="tnohg" id="627_yy3fe6o" role="tncku">
-      <node concept="3clFbS" id="627_yy3fe6p" role="2VODD2">
-        <node concept="3clFbF" id="627_yy3fnu9" role="3cqZAp">
-          <node concept="37vLTI" id="627_yy3guOD" role="3clFbG">
-            <node concept="2ShNRf" id="627_yy3gCuz" role="37vLTx">
-              <node concept="1pGfFk" id="627_yy3gD8O" role="2ShVmc">
-                <ref role="37wK5l" to="w1kc:~SNodePointer.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="SNodePointer" />
-                <node concept="2OqwBi" id="627_yy3gD9G" role="37wK5m">
-                  <node concept="2WthIp" id="627_yy3gD9J" role="2Oq$k0" />
-                  <node concept="3gHZIF" id="627_yy3gD9L" role="2OqNvi">
-                    <ref role="2WH_rO" node="627_yy3fe6k" resolve="selectedNdoe" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="10M0yZ" id="627_yy3fnAY" role="37vLTJ">
-              <ref role="1PxDUh" node="627_yy3filz" resolve="CodeReferenceStore" />
-              <ref role="3cqZAo" node="627_yy3flYy" resolve="copiedCode" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="tC5Ba" id="2Y27DzrvvF0">
-    <property role="TrG5h" value="docGroup" />
-    <property role="3GE5qa" value="coderef" />
-    <node concept="ftmFs" id="2Y27DzrvDv2" role="ftER_">
-      <node concept="2a7GMi" id="2Y27DzrvFLp" role="ftvYc" />
-      <node concept="tCFHf" id="627_yy3gUsV" role="ftvYc">
-        <ref role="tCJdB" node="627_yy3fe66" resolve="CopyCodeReference" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="2Y27DzrvF82" role="2f5YQi">
-      <ref role="2f8Tey" to="abz6:1WzkXggGER5" resolve="moreCopySpecial" />
-      <ref role="tU$_T" to="abz6:2N1CSrzm3gG" resolve="mbeddrClipboardStuffInEditMenuCopySpecial" />
     </node>
   </node>
   <node concept="sE7Ow" id="4EItucYCCBf">
