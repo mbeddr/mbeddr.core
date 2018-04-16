@@ -590,7 +590,7 @@
       <plugin path="${artifacts.mps}/plugins/mps-execution-configurations" />
       <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
-      <library file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+      <library file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -744,7 +744,7 @@
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/languages/mps-execution-configurations/jetbrains.mps.execution.configurations.implementation.plugin.jar" />
       </classpath>
     </javac>
@@ -767,7 +767,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.debugger.tests.dev.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.debugger.testing.build.dev.build">
@@ -788,7 +788,7 @@
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.core.tests.build">
@@ -809,7 +809,7 @@
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.core.tests.performance.build">
@@ -830,7 +830,7 @@
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.debugger.tests.dev.build">
@@ -851,7 +851,7 @@
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.cc.tests.dev.build">
@@ -872,7 +872,7 @@
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.ext.tests.build">
@@ -893,7 +893,7 @@
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.analyses.tests.dev.build">
@@ -914,7 +914,7 @@
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.tutorial.dev.build">
@@ -935,7 +935,7 @@
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.allInOne">
@@ -954,7 +954,7 @@
         <path location="${mbeddr.build}/solutions/com.mbeddr.platform/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.platform">
@@ -1012,7 +1012,7 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.build">
