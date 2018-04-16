@@ -1201,7 +1201,7 @@
         <node concept="2AHcQZ" id="7836$RyWIEX" role="2B70Vg">
           <ref role="2AI5Lk" to="1m72:~Storage" resolve="Storage" />
           <node concept="2B6LJw" id="7836$RyWIT5" role="2B76xF">
-            <ref role="2B6OnR" to="1m72:~Storage.id()" resolve="id" />
+            <ref role="2B6OnR" to="1m72:~Storage.value()" resolve="value" />
             <node concept="Xl_RD" id="7836$RyWJ6q" role="2B70Vg">
               <property role="Xl_RC" value="other" />
             </node>
