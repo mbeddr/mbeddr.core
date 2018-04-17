@@ -8,7 +8,7 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
   </imports>
@@ -1078,7 +1078,7 @@
         <node concept="1SiIV0" id="7i5Cc6LAW7o" role="3bR37C">
           <node concept="3bR9La" id="7i5Cc6LAW7p" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons.math3" />
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
         <node concept="3rtmxn" id="3xFG3bj5bUZ" role="3bR31x">
@@ -1304,7 +1304,7 @@
         <node concept="1SiIV0" id="7i5Cc6LAW8L" role="3bR37C">
           <node concept="3bR9La" id="7i5Cc6LAW8M" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons.math3" />
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
         <node concept="3rtmxn" id="3xFG3bj5bUS" role="3bR31x">
@@ -1351,7 +1351,7 @@
         <node concept="1SiIV0" id="7i5Cc6LAW95" role="3bR37C">
           <node concept="3bR9La" id="7i5Cc6LAW96" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons.math3" />
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
         <node concept="3rtmxn" id="3xFG3bj5bTT" role="3bR31x">
