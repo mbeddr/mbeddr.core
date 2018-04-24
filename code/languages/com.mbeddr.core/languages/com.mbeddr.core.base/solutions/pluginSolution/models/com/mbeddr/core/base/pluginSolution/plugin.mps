@@ -21091,19 +21091,6 @@
                                         </node>
                                       </node>
                                     </node>
-                                    <node concept="3clFbF" id="C_BpXjJb_l" role="3cqZAp">
-                                      <node concept="2OqwBi" id="C_BpXjJdpX" role="3clFbG">
-                                        <node concept="37vLTw" id="C_BpXjJb_j" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="5Pb2U$k6TNF" resolve="editorComp" />
-                                        </node>
-                                        <node concept="liA8E" id="C_BpXjJgRF" role="2OqNvi">
-                                          <ref role="37wK5l" to="exr9:~EditorComponent.paint(java.awt.Graphics):void" resolve="paint" />
-                                          <node concept="37vLTw" id="C_BpXjJi1V" role="37wK5m">
-                                            <ref role="3cqZAo" node="5Pb2U$k6TOy" resolve="g" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
                                     <node concept="3cpWs8" id="5Pb2U$k6TP7" role="3cqZAp">
                                       <node concept="3cpWsn" id="5Pb2U$k6TP8" role="3cpWs9">
                                         <property role="TrG5h" value="t" />
