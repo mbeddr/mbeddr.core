@@ -16873,24 +16873,43 @@
             </node>
           </node>
         </node>
-        <node concept="2Gpval" id="ncHX0OT1il" role="3cqZAp">
-          <node concept="2GrKxI" id="ncHX0OT1im" role="2Gsz3X">
-            <property role="TrG5h" value="module" />
-          </node>
-          <node concept="2OqwBi" id="ncHX0OT1_6" role="2GsD0m">
-            <node concept="37vLTw" id="ncHX0OT1qH" role="2Oq$k0">
-              <ref role="3cqZAo" node="ncHX0OT0da" resolve="repository" />
+        <node concept="3clFbF" id="4QSxvIxsy3w" role="3cqZAp">
+          <node concept="2OqwBi" id="4QSxvIxsyDd" role="3clFbG">
+            <node concept="2OqwBi" id="4QSxvIxsyhi" role="2Oq$k0">
+              <node concept="37vLTw" id="4QSxvIxsy3u" role="2Oq$k0">
+                <ref role="3cqZAo" node="ncHX0OT0da" resolve="repository" />
+              </node>
+              <node concept="liA8E" id="4QSxvIxsyy9" role="2OqNvi">
+                <ref role="37wK5l" to="lui2:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+              </node>
             </node>
-            <node concept="liA8E" id="ncHX0OT1Ll" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SRepository.getModules():java.lang.Iterable" resolve="getModules" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="ncHX0OT1io" role="2LFqv$">
-            <node concept="3clFbF" id="ncHX0OT20Q" role="3cqZAp">
-              <node concept="1rXfSq" id="ncHX0OT20P" role="3clFbG">
-                <ref role="37wK5l" node="ncHX0OS6J7" resolve="stop" />
-                <node concept="2GrUjf" id="ncHX0OT2cq" role="37wK5m">
-                  <ref role="2Gs0qQ" node="ncHX0OT1im" resolve="module" />
+            <node concept="liA8E" id="4QSxvIxsz0o" role="2OqNvi">
+              <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
+              <node concept="1bVj0M" id="4QSxvIxszc9" role="37wK5m">
+                <node concept="3clFbS" id="4QSxvIxszca" role="1bW5cS">
+                  <node concept="2Gpval" id="ncHX0OT1il" role="3cqZAp">
+                    <node concept="2GrKxI" id="ncHX0OT1im" role="2Gsz3X">
+                      <property role="TrG5h" value="module" />
+                    </node>
+                    <node concept="2OqwBi" id="ncHX0OT1_6" role="2GsD0m">
+                      <node concept="37vLTw" id="ncHX0OT1qH" role="2Oq$k0">
+                        <ref role="3cqZAo" node="ncHX0OT0da" resolve="repository" />
+                      </node>
+                      <node concept="liA8E" id="ncHX0OT1Ll" role="2OqNvi">
+                        <ref role="37wK5l" to="lui2:~SRepository.getModules():java.lang.Iterable" resolve="getModules" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="ncHX0OT1io" role="2LFqv$">
+                      <node concept="3clFbF" id="ncHX0OT20Q" role="3cqZAp">
+                        <node concept="1rXfSq" id="ncHX0OT20P" role="3clFbG">
+                          <ref role="37wK5l" node="ncHX0OS6J7" resolve="stop" />
+                          <node concept="2GrUjf" id="ncHX0OT2cq" role="37wK5m">
+                            <ref role="2Gs0qQ" node="ncHX0OT1im" resolve="module" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
