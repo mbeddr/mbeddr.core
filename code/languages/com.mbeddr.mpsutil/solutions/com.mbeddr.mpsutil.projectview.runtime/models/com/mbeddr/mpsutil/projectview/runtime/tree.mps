@@ -2,14 +2,14 @@
 <model ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)">
   <persistence version="9" />
   <languages>
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="qqrq" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.components(MPS.IDEA/)" />
@@ -16724,24 +16724,43 @@
             </node>
           </node>
         </node>
-        <node concept="2Gpval" id="ncHX0OT1il" role="3cqZAp">
-          <node concept="2GrKxI" id="ncHX0OT1im" role="2Gsz3X">
-            <property role="TrG5h" value="module" />
-          </node>
-          <node concept="2OqwBi" id="ncHX0OT1_6" role="2GsD0m">
-            <node concept="37vLTw" id="ncHX0OT1qH" role="2Oq$k0">
-              <ref role="3cqZAo" node="ncHX0OT0da" resolve="repository" />
+        <node concept="3clFbF" id="4QSxvIxsy3w" role="3cqZAp">
+          <node concept="2OqwBi" id="4QSxvIxsyDd" role="3clFbG">
+            <node concept="2OqwBi" id="4QSxvIxsyhi" role="2Oq$k0">
+              <node concept="37vLTw" id="4QSxvIxsy3u" role="2Oq$k0">
+                <ref role="3cqZAo" node="ncHX0OT0da" resolve="repository" />
+              </node>
+              <node concept="liA8E" id="4QSxvIxsyy9" role="2OqNvi">
+                <ref role="37wK5l" to="lui2:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+              </node>
             </node>
-            <node concept="liA8E" id="ncHX0OT1Ll" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SRepository.getModules():java.lang.Iterable" resolve="getModules" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="ncHX0OT1io" role="2LFqv$">
-            <node concept="3clFbF" id="ncHX0OT20Q" role="3cqZAp">
-              <node concept="1rXfSq" id="ncHX0OT20P" role="3clFbG">
-                <ref role="37wK5l" node="ncHX0OS6J7" resolve="stop" />
-                <node concept="2GrUjf" id="ncHX0OT2cq" role="37wK5m">
-                  <ref role="2Gs0qQ" node="ncHX0OT1im" resolve="module" />
+            <node concept="liA8E" id="4QSxvIxsz0o" role="2OqNvi">
+              <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable):void" resolve="runReadAction" />
+              <node concept="1bVj0M" id="4QSxvIxszc9" role="37wK5m">
+                <node concept="3clFbS" id="4QSxvIxszca" role="1bW5cS">
+                  <node concept="2Gpval" id="ncHX0OT1il" role="3cqZAp">
+                    <node concept="2GrKxI" id="ncHX0OT1im" role="2Gsz3X">
+                      <property role="TrG5h" value="module" />
+                    </node>
+                    <node concept="2OqwBi" id="ncHX0OT1_6" role="2GsD0m">
+                      <node concept="37vLTw" id="ncHX0OT1qH" role="2Oq$k0">
+                        <ref role="3cqZAo" node="ncHX0OT0da" resolve="repository" />
+                      </node>
+                      <node concept="liA8E" id="ncHX0OT1Ll" role="2OqNvi">
+                        <ref role="37wK5l" to="lui2:~SRepository.getModules():java.lang.Iterable" resolve="getModules" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="ncHX0OT1io" role="2LFqv$">
+                      <node concept="3clFbF" id="ncHX0OT20Q" role="3cqZAp">
+                        <node concept="1rXfSq" id="ncHX0OT20P" role="3clFbG">
+                          <ref role="37wK5l" node="ncHX0OS6J7" resolve="stop" />
+                          <node concept="2GrUjf" id="ncHX0OT2cq" role="37wK5m">
+                            <ref role="2Gs0qQ" node="ncHX0OT1im" resolve="module" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
