@@ -37,6 +37,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -81,6 +82,9 @@
     </node>
     <node concept="PrWs8" id="4ATA_JBrQG2" role="PzmwI">
       <ref role="PrY4T" to="k146:6viY8n0hYkZ" resolve="IRangeContext" />
+    </node>
+    <node concept="PrWs8" id="7TvvPtS_6df" role="PzmwI">
+      <ref role="PrY4T" node="7TvvPtS_6d2" resolve="IDiscreteValuesContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="439FXGf05P">
@@ -270,7 +274,7 @@
   </node>
   <node concept="1TIwiD" id="1BFQdmJZZ5k">
     <property role="EcuMT" value="1867824882767622484" />
-    <property role="3GE5qa" value="harness.assign" />
+    <property role="3GE5qa" value="harness.base" />
     <property role="TrG5h" value="DiscreteValuesExpression" />
     <property role="34LRSv" value="{" />
     <property role="R4oN_" value="discrete values - e.g. {a, b, c}" />
@@ -457,6 +461,91 @@
       <property role="20kJfa" value="resetFunction" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="x27k:7qHzltJ0oT3" resolve="FunctionRefExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7TvvPtSxhG5">
+    <property role="EcuMT" value="9106136985227303685" />
+    <property role="3GE5qa" value="harness.combinatorial" />
+    <property role="TrG5h" value="Combinatorial" />
+    <property role="34LRSv" value="combinatorial" />
+    <property role="R4oN_" value="combinatorial testing" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="PrWs8" id="7TvvPtSxhG6" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
+    </node>
+    <node concept="1TJgyj" id="7TvvPtSxhHi" role="1TKVEi">
+      <property role="IQ2ns" value="9106136985227303762" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="entries" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7TvvPtSxhGc" resolve="ICombinatorialEntry" />
+    </node>
+    <node concept="1TJgyj" id="7TvvPtS_X31" role="1TKVEi">
+      <property role="IQ2ns" value="9106136985228529857" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="combinations" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7TvvPtSxhGb">
+    <property role="EcuMT" value="9106136985227303691" />
+    <property role="3GE5qa" value="harness.combinatorial" />
+    <property role="TrG5h" value="CombinatorialEntry" />
+    <property role="34LRSv" value="entry" />
+    <property role="R4oN_" value="an entry representing values of a variable" />
+    <ref role="1TJDcQ" node="1BFQdmKfJHu" resolve="AbstractAssign" />
+    <node concept="PrWs8" id="7TvvPtSzKN$" role="PzmwI">
+      <ref role="PrY4T" node="7TvvPtSxhGc" resolve="ICombinatorialEntry" />
+    </node>
+    <node concept="PrWs8" id="7TvvPtS_6D0" role="PzmwI">
+      <ref role="PrY4T" node="7TvvPtS_6d2" resolve="IDiscreteValuesContext" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7TvvPtSxhGc">
+    <property role="EcuMT" value="9106136985227303692" />
+    <property role="3GE5qa" value="harness.combinatorial" />
+    <property role="TrG5h" value="ICombinatorialEntry" />
+  </node>
+  <node concept="1TIwiD" id="7TvvPtSxhGd">
+    <property role="EcuMT" value="9106136985227303693" />
+    <property role="3GE5qa" value="harness.combinatorial" />
+    <property role="TrG5h" value="EmptyCombinatorialEntry" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7TvvPtSxhGe" role="PzmwI">
+      <ref role="PrY4T" node="7TvvPtSxhGc" resolve="ICombinatorialEntry" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7TvvPtS_6d2">
+    <property role="EcuMT" value="9106136985228305218" />
+    <property role="3GE5qa" value="harness.base" />
+    <property role="TrG5h" value="IDiscreteValuesContext" />
+  </node>
+  <node concept="1TIwiD" id="4XXfoy4MWim">
+    <property role="EcuMT" value="5727801957637932182" />
+    <property role="3GE5qa" value="harness.fuzzy" />
+    <property role="TrG5h" value="Fuzzy" />
+    <property role="34LRSv" value="fuzz" />
+    <property role="R4oN_" value="fuzzes the region of memory presented as entry" />
+    <ref role="1TJDcQ" node="1BFQdmKfJHu" resolve="AbstractAssign" />
+    <node concept="1TJgyj" id="4XXfoy4MXkT" role="1TKVEi">
+      <property role="IQ2ns" value="5727801957637936441" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
+    </node>
+    <node concept="1TJgyj" id="4XXfoy4NhIu" role="1TKVEi">
+      <property role="IQ2ns" value="5727801957638019998" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="4XXfoy4MWin" role="PzmwI">
+      <ref role="PrY4T" to="ir22:7Hmzdkr1hpt" resolve="IPromelaStatement" />
+    </node>
+    <node concept="PrWs8" id="4XXfoy4PkWv" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:7oI7FI6oqPw" resolve="IInitializationContext" />
     </node>
   </node>
 </model>

@@ -157,13 +157,13 @@
   </registry>
   <node concept="1YbPZF" id="1BFQdmK00_A">
     <property role="TrG5h" value="typeof_DiscreteValuesExpression" />
-    <property role="3GE5qa" value="harness.assign" />
+    <property role="3GE5qa" value="harness.base" />
     <node concept="3clFbS" id="1BFQdmK00_B" role="18ibNy">
       <node concept="3cpWs8" id="1BFQdmK01P9" role="3cqZAp">
         <node concept="3cpWsn" id="1BFQdmK01Pa" role="3cpWs9">
-          <property role="TrG5h" value="na" />
+          <property role="TrG5h" value="aa" />
           <node concept="3Tqbb2" id="1BFQdmK01P7" role="1tU5fm">
-            <ref role="ehGHo" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            <ref role="ehGHo" to="llb3:1BFQdmKfJHu" resolve="AbstractAssign" />
           </node>
           <node concept="1PxgMI" id="1BFQdmK01Pb" role="33vP2m">
             <node concept="2OqwBi" id="1BFQdmK01Pc" role="1m5AlR">
@@ -172,8 +172,8 @@
               </node>
               <node concept="1mfA1w" id="1BFQdmK01Pe" role="2OqNvi" />
             </node>
-            <node concept="chp4Y" id="79i$vAY7skZ" role="3oSUPX">
-              <ref role="cht4Q" to="llb3:45nq91X0EVY" resolve="NondetAssign" />
+            <node concept="chp4Y" id="2i1mzkRToP1" role="3oSUPX">
+              <ref role="cht4Q" to="llb3:1BFQdmKfJHu" resolve="AbstractAssign" />
             </node>
           </node>
         </node>
@@ -187,7 +187,7 @@
           </node>
           <node concept="2OqwBi" id="1BFQdmK03qD" role="33vP2m">
             <node concept="37vLTw" id="1BFQdmK03qE" role="2Oq$k0">
-              <ref role="3cqZAo" node="1BFQdmK01Pa" resolve="na" />
+              <ref role="3cqZAo" node="1BFQdmK01Pa" resolve="aa" />
             </node>
             <node concept="3TrEf2" id="1BFQdmK03qF" role="2OqNvi">
               <ref role="3Tt5mk" to="llb3:45nq91X0EWs" resolve="exp" />

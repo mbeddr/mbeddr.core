@@ -1248,6 +1248,37 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="3aMV05sDQUH" role="3acgRq">
+      <ref role="30HIoZ" to="2c95:3aMV05sDEog" resolve="SuperScriptWord" />
+      <node concept="gft3U" id="3aMV05sDR1V" role="1lVwrX">
+        <node concept="2pNNFK" id="3aMV05sDRhc" role="gfFT$">
+          <property role="2pNNFO" value="sup" />
+          <node concept="2pNUuL" id="3aMV05sDRhg" role="2pNNFR">
+            <property role="2pNUuO" value="class" />
+            <node concept="2pMdtt" id="3aMV05sDRhi" role="2pMdts">
+              <property role="2pMdty" value="superscript" />
+            </node>
+          </node>
+          <node concept="3o6iSG" id="3aMV05sDRhC" role="3o6s8t">
+            <property role="3o6i5n" value="superScriptText" />
+            <node concept="29HgVG" id="3aMV05sDRhG" role="lGtFl">
+              <node concept="3NFfHV" id="3aMV05sDRhM" role="3NFExx">
+                <node concept="3clFbS" id="3aMV05sDRhN" role="2VODD2">
+                  <node concept="3clFbF" id="3aMV05sDRl8" role="3cqZAp">
+                    <node concept="2OqwBi" id="3aMV05sDRwN" role="3clFbG">
+                      <node concept="30H73N" id="3aMV05sDRl7" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="3aMV05sDSfu" role="2OqNvi">
+                        <ref role="3Tt5mk" to="2c95:5mf_X_La_N_" resolve="text" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="avzCv" id="QRmqzHYvrI" role="avys_">
       <node concept="3clFbS" id="QRmqzHYvrJ" role="2VODD2">
         <node concept="3clFbF" id="QRmqzHYUAL" role="3cqZAp">

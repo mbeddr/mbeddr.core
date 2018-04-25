@@ -1289,13 +1289,14 @@
   </node>
   <node concept="35pCF_" id="5nhrDHCijw9">
     <property role="TrG5h" value="uint8AsBitFields" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="5nhrDHCijwb" role="2sgrp5" />
     <node concept="1YaCAy" id="5nhrDHCijHM" role="1YuTPh">
       <property role="TrG5h" value="uint8" />
       <ref role="1YaFvo" to="mj1l:7lNBHBNBzyt" resolve="UnsignedInt8tType" />
     </node>
     <node concept="1YaCAy" id="5nhrDHCiAUS" role="35pZ6h">
-      <property role="TrG5h" value="bi" />
+      <property role="TrG5h" value="unsignedBitType" />
       <ref role="1YaFvo" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
     </node>
     <node concept="1xSnZT" id="ARxxiZMCdb" role="1xSnZW">
@@ -1304,7 +1305,7 @@
           <node concept="2OqwBi" id="ARxxiZMJUA" role="3clFbG">
             <node concept="2OqwBi" id="ARxxiZMCdz" role="2Oq$k0">
               <node concept="1YBJjd" id="ARxxiZMCde" role="2Oq$k0">
-                <ref role="1YBMHb" node="5nhrDHCiAUS" resolve="bi" />
+                <ref role="1YBMHb" node="5nhrDHCiAUS" resolve="unsignedBitType" />
               </node>
               <node concept="2qgKlT" id="ARxxiZMJUh" role="2OqNvi">
                 <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
@@ -1349,13 +1350,14 @@
   </node>
   <node concept="35pCF_" id="ARxxiZMMeq">
     <property role="TrG5h" value="uint16AsBitFields" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="ARxxiZMMer" role="2sgrp5" />
     <node concept="1YaCAy" id="ARxxiZMMes" role="1YuTPh">
       <property role="TrG5h" value="unsignedInt16tType" />
       <ref role="1YaFvo" to="mj1l:7lNBHBNBzyy" resolve="UnsignedInt16tType" />
     </node>
     <node concept="1YaCAy" id="ARxxiZMMet" role="35pZ6h">
-      <property role="TrG5h" value="bi" />
+      <property role="TrG5h" value="unsignedBitType" />
       <ref role="1YaFvo" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
     </node>
     <node concept="1xSnZT" id="ARxxiZMMeu" role="1xSnZW">
@@ -1364,7 +1366,7 @@
           <node concept="2OqwBi" id="ARxxiZMMex" role="3clFbG">
             <node concept="2OqwBi" id="ARxxiZMMey" role="2Oq$k0">
               <node concept="1YBJjd" id="ARxxiZMMez" role="2Oq$k0">
-                <ref role="1YBMHb" node="ARxxiZMMet" resolve="bi" />
+                <ref role="1YBMHb" node="ARxxiZMMet" resolve="unsignedBitType" />
               </node>
               <node concept="2qgKlT" id="ARxxiZMMe$" role="2OqNvi">
                 <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
@@ -1382,13 +1384,14 @@
   </node>
   <node concept="35pCF_" id="ARxxiZMMeC">
     <property role="TrG5h" value="uint32AsBitFields" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="ARxxiZMMeD" role="2sgrp5" />
     <node concept="1YaCAy" id="ARxxiZMMeE" role="1YuTPh">
       <property role="TrG5h" value="unsignedInt32tType" />
       <ref role="1YaFvo" to="mj1l:7lNBHBNBzyi" resolve="UnsignedInt32tType" />
     </node>
     <node concept="1YaCAy" id="ARxxiZMMeF" role="35pZ6h">
-      <property role="TrG5h" value="bi" />
+      <property role="TrG5h" value="unsignedBitType" />
       <ref role="1YaFvo" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
     </node>
     <node concept="1xSnZT" id="ARxxiZMMeG" role="1xSnZW">
@@ -1397,7 +1400,7 @@
           <node concept="2OqwBi" id="ARxxiZMMeJ" role="3clFbG">
             <node concept="2OqwBi" id="ARxxiZMMeK" role="2Oq$k0">
               <node concept="1YBJjd" id="ARxxiZMMeL" role="2Oq$k0">
-                <ref role="1YBMHb" node="ARxxiZMMeF" resolve="bi" />
+                <ref role="1YBMHb" node="ARxxiZMMeF" resolve="unsignedBitType" />
               </node>
               <node concept="2qgKlT" id="ARxxiZMMeM" role="2OqNvi">
                 <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
@@ -1415,13 +1418,14 @@
   </node>
   <node concept="35pCF_" id="ARxxiZMMeQ">
     <property role="TrG5h" value="uint64AsBitFields" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="ARxxiZMMeR" role="2sgrp5" />
     <node concept="1YaCAy" id="ARxxiZMMeS" role="1YuTPh">
       <property role="TrG5h" value="unsignedInt64tType" />
       <ref role="1YaFvo" to="mj1l:7lNBHBNBzyo" resolve="UnsignedInt64tType" />
     </node>
     <node concept="1YaCAy" id="ARxxiZMMeT" role="35pZ6h">
-      <property role="TrG5h" value="bi" />
+      <property role="TrG5h" value="unsignedBitType" />
       <ref role="1YaFvo" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
     </node>
     <node concept="1xSnZT" id="ARxxiZMMeU" role="1xSnZW">
@@ -1430,7 +1434,7 @@
           <node concept="2OqwBi" id="ARxxiZMMeX" role="3clFbG">
             <node concept="2OqwBi" id="ARxxiZMMeY" role="2Oq$k0">
               <node concept="1YBJjd" id="ARxxiZMMeZ" role="2Oq$k0">
-                <ref role="1YBMHb" node="ARxxiZMMeT" resolve="bi" />
+                <ref role="1YBMHb" node="ARxxiZMMeT" resolve="unsignedBitType" />
               </node>
               <node concept="2qgKlT" id="ARxxiZMMf0" role="2OqNvi">
                 <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
@@ -1448,13 +1452,14 @@
   </node>
   <node concept="35pCF_" id="ARxxiZMWIL">
     <property role="TrG5h" value="ubit8AsUInt8" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="ARxxiZMWIM" role="2sgrp5" />
     <node concept="1YaCAy" id="ARxxiZMWIN" role="1YuTPh">
-      <property role="TrG5h" value="ubit" />
+      <property role="TrG5h" value="unsignedBitType" />
       <ref role="1YaFvo" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
     </node>
     <node concept="1YaCAy" id="ARxxiZMWIO" role="35pZ6h">
-      <property role="TrG5h" value="uint" />
+      <property role="TrG5h" value="unsignedInt8tType" />
       <ref role="1YaFvo" to="mj1l:7lNBHBNBzyt" resolve="UnsignedInt8tType" />
     </node>
     <node concept="1xSnZT" id="ARxxiZMWIP" role="1xSnZW">
@@ -1463,7 +1468,7 @@
           <node concept="2OqwBi" id="ARxxiZMWIS" role="3clFbG">
             <node concept="2OqwBi" id="ARxxiZMWIT" role="2Oq$k0">
               <node concept="1YBJjd" id="ARxxiZMWIY" role="2Oq$k0">
-                <ref role="1YBMHb" node="ARxxiZMWIN" resolve="ubit" />
+                <ref role="1YBMHb" node="ARxxiZMWIN" resolve="unsignedBitType" />
               </node>
               <node concept="2qgKlT" id="ARxxiZMWIV" role="2OqNvi">
                 <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
@@ -1481,9 +1486,10 @@
   </node>
   <node concept="35pCF_" id="ARxxiZMWIZ">
     <property role="TrG5h" value="ubit32AsUInt32" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="ARxxiZMWJ0" role="2sgrp5" />
     <node concept="1YaCAy" id="ARxxiZMWJ1" role="1YuTPh">
-      <property role="TrG5h" value="ubit" />
+      <property role="TrG5h" value="unsignedBitType" />
       <ref role="1YaFvo" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
     </node>
     <node concept="1YaCAy" id="ARxxiZMWJ2" role="35pZ6h">
@@ -1496,7 +1502,7 @@
           <node concept="2OqwBi" id="ARxxiZMWJ6" role="3clFbG">
             <node concept="2OqwBi" id="ARxxiZMWJ7" role="2Oq$k0">
               <node concept="1YBJjd" id="ARxxiZMWJ8" role="2Oq$k0">
-                <ref role="1YBMHb" node="ARxxiZMWJ1" resolve="ubit" />
+                <ref role="1YBMHb" node="ARxxiZMWJ1" resolve="unsignedBitType" />
               </node>
               <node concept="2qgKlT" id="ARxxiZMWJ9" role="2OqNvi">
                 <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
@@ -1514,9 +1520,10 @@
   </node>
   <node concept="35pCF_" id="ARxxiZMWJd">
     <property role="TrG5h" value="ubit16AsUInt16" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="ARxxiZMWJe" role="2sgrp5" />
     <node concept="1YaCAy" id="ARxxiZMWJf" role="1YuTPh">
-      <property role="TrG5h" value="ubit" />
+      <property role="TrG5h" value="unsignedBitType" />
       <ref role="1YaFvo" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
     </node>
     <node concept="1YaCAy" id="ARxxiZMWJg" role="35pZ6h">
@@ -1529,7 +1536,7 @@
           <node concept="2OqwBi" id="ARxxiZMWJk" role="3clFbG">
             <node concept="2OqwBi" id="ARxxiZMWJl" role="2Oq$k0">
               <node concept="1YBJjd" id="ARxxiZMWJm" role="2Oq$k0">
-                <ref role="1YBMHb" node="ARxxiZMWJf" resolve="ubit" />
+                <ref role="1YBMHb" node="ARxxiZMWJf" resolve="unsignedBitType" />
               </node>
               <node concept="2qgKlT" id="ARxxiZMWJn" role="2OqNvi">
                 <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
@@ -1547,9 +1554,10 @@
   </node>
   <node concept="35pCF_" id="ARxxiZMWJr">
     <property role="TrG5h" value="ubit64AsUInt64" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="ARxxiZMWJs" role="2sgrp5" />
     <node concept="1YaCAy" id="ARxxiZMWJt" role="1YuTPh">
-      <property role="TrG5h" value="ubit" />
+      <property role="TrG5h" value="unsignedBitType" />
       <ref role="1YaFvo" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
     </node>
     <node concept="1YaCAy" id="ARxxiZMWJu" role="35pZ6h">
@@ -1562,7 +1570,7 @@
           <node concept="2OqwBi" id="ARxxiZMWJy" role="3clFbG">
             <node concept="2OqwBi" id="ARxxiZMWJz" role="2Oq$k0">
               <node concept="1YBJjd" id="ARxxiZMWJ$" role="2Oq$k0">
-                <ref role="1YBMHb" node="ARxxiZMWJt" resolve="ubit" />
+                <ref role="1YBMHb" node="ARxxiZMWJt" resolve="unsignedBitType" />
               </node>
               <node concept="2qgKlT" id="ARxxiZMWJ_" role="2OqNvi">
                 <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
@@ -2376,6 +2384,7 @@
   </node>
   <node concept="1YbPZF" id="3DiW6qrHJKE">
     <property role="TrG5h" value="typeof_MemberInitExpression" />
+    <property role="3GE5qa" value="su" />
     <node concept="3clFbS" id="3DiW6qrHJKF" role="18ibNy">
       <node concept="yXGxS" id="6LiskZ_tzhq" role="3cqZAp">
         <node concept="2OqwBi" id="5bScZCwdF$6" role="yXQkb">
@@ -3092,6 +3101,7 @@
   </node>
   <node concept="35pCF_" id="34uiID1tL2x">
     <property role="TrG5h" value="bit16AsInt16" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="34uiID1tL2y" role="2sgrp5" />
     <node concept="1YaCAy" id="34uiID1tL2z" role="1YuTPh">
       <property role="TrG5h" value="signedBitType" />
@@ -3125,6 +3135,7 @@
   </node>
   <node concept="35pCF_" id="34uiID1tLDC">
     <property role="TrG5h" value="bit32AsInt32" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="34uiID1tLDD" role="2sgrp5" />
     <node concept="1YaCAy" id="34uiID1tLDE" role="1YuTPh">
       <property role="TrG5h" value="signedBitType" />
@@ -3158,6 +3169,7 @@
   </node>
   <node concept="35pCF_" id="34uiID1tM78">
     <property role="TrG5h" value="bit64AsInt64" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="34uiID1tM79" role="2sgrp5" />
     <node concept="1YaCAy" id="34uiID1tM7a" role="1YuTPh">
       <property role="TrG5h" value="signedBitType" />
@@ -3191,6 +3203,7 @@
   </node>
   <node concept="35pCF_" id="34uiID1tN1d">
     <property role="TrG5h" value="bit8AsInt8" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="34uiID1tN1e" role="2sgrp5" />
     <node concept="1YaCAy" id="34uiID1tN1f" role="1YuTPh">
       <property role="TrG5h" value="signedBitType" />
@@ -3224,6 +3237,7 @@
   </node>
   <node concept="35pCF_" id="34uiID1tO7l">
     <property role="TrG5h" value="int16AsBitFields" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="34uiID1tO7m" role="2sgrp5" />
     <node concept="1YaCAy" id="34uiID1tO7n" role="1YuTPh">
       <property role="TrG5h" value="int16tType" />
@@ -3257,6 +3271,7 @@
   </node>
   <node concept="35pCF_" id="34uiID1tO7y">
     <property role="TrG5h" value="int32AsBitFields" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="34uiID1tO7z" role="2sgrp5" />
     <node concept="1YaCAy" id="34uiID1tO7$" role="1YuTPh">
       <property role="TrG5h" value="int32tType" />
@@ -3290,6 +3305,7 @@
   </node>
   <node concept="35pCF_" id="34uiID1tO7J">
     <property role="TrG5h" value="int64AsBitFields" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="34uiID1tO7K" role="2sgrp5" />
     <node concept="1YaCAy" id="34uiID1tO7L" role="1YuTPh">
       <property role="TrG5h" value="int64tType" />
@@ -3323,6 +3339,7 @@
   </node>
   <node concept="35pCF_" id="34uiID1tO7W">
     <property role="TrG5h" value="int8AsBitFields" />
+    <property role="3GE5qa" value="bitfield" />
     <node concept="3clFbS" id="34uiID1tO7X" role="2sgrp5" />
     <node concept="1YaCAy" id="34uiID1tO7Y" role="1YuTPh">
       <property role="TrG5h" value="int8tType" />
@@ -3439,6 +3456,122 @@
     <node concept="1YaCAy" id="1Q5RJWOHD4K" role="1YuTPh">
       <property role="TrG5h" value="member" />
       <ref role="1YaFvo" to="clbe:56ytRgsLg$o" resolve="Member" />
+    </node>
+  </node>
+  <node concept="35pCF_" id="5PDEzC9r_0">
+    <property role="3GE5qa" value="bitfield" />
+    <property role="TrG5h" value="ubit8AsBoolean" />
+    <node concept="1YaCAy" id="5PDEzC9rAu" role="35pZ6h">
+      <property role="TrG5h" value="booleanType" />
+      <ref role="1YaFvo" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+    </node>
+    <node concept="3clFbS" id="5PDEzC9r_2" role="2sgrp5" />
+    <node concept="1YaCAy" id="5PDEzC9r_4" role="1YuTPh">
+      <property role="TrG5h" value="unsignedBitType" />
+      <ref role="1YaFvo" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
+    </node>
+    <node concept="1xSnZT" id="5PDEzC9s8y" role="1xSnZW">
+      <node concept="3clFbS" id="5PDEzC9s8z" role="2VODD2">
+        <node concept="3clFbF" id="5PDEzC9sfV" role="3cqZAp">
+          <node concept="2OqwBi" id="5PDEzC9sfX" role="3clFbG">
+            <node concept="2OqwBi" id="5PDEzC9sfY" role="2Oq$k0">
+              <node concept="1YBJjd" id="5PDEzC9sfZ" role="2Oq$k0">
+                <ref role="1YBMHb" node="5PDEzC9r_4" resolve="unsignedBitType" />
+              </node>
+              <node concept="2qgKlT" id="5PDEzC9sg0" role="2OqNvi">
+                <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="5PDEzC9sg1" role="2OqNvi">
+              <node concept="chp4Y" id="5PDEzC9sC9" role="cj9EA">
+                <ref role="cht4Q" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="35pCF_" id="27dKu0Hg06N">
+    <property role="TrG5h" value="booleanAsBitFields" />
+    <property role="3GE5qa" value="bitfield" />
+    <node concept="1YaCAy" id="27dKu0Hg0uH" role="35pZ6h">
+      <property role="TrG5h" value="unsignedBitType" />
+      <ref role="1YaFvo" to="clbe:5nhrDHCgX5n" resolve="UnsignedBitType" />
+    </node>
+    <node concept="3clFbS" id="27dKu0Hg06P" role="2sgrp5" />
+    <node concept="1YaCAy" id="27dKu0Hg0u3" role="1YuTPh">
+      <property role="TrG5h" value="booleanType" />
+      <ref role="1YaFvo" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+    </node>
+    <node concept="1xSnZT" id="27dKu0Hg1R4" role="1xSnZW">
+      <node concept="3clFbS" id="27dKu0Hg1R5" role="2VODD2">
+        <node concept="3clFbF" id="27dKu0Hg1Yn" role="3cqZAp">
+          <node concept="2OqwBi" id="27dKu0Hg1Yp" role="3clFbG">
+            <node concept="2OqwBi" id="27dKu0Hg1Yq" role="2Oq$k0">
+              <node concept="1YBJjd" id="27dKu0Hg4ZE" role="2Oq$k0">
+                <ref role="1YBMHb" node="27dKu0Hg0uH" resolve="unsignedBitType" />
+              </node>
+              <node concept="2qgKlT" id="27dKu0Hg1Ys" role="2OqNvi">
+                <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="27dKu0Hg1Yt" role="2OqNvi">
+              <node concept="chp4Y" id="27dKu0Hg5LW" role="cj9EA">
+                <ref role="cht4Q" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2sgARr" id="27dKu0Hrz0b">
+    <property role="3GE5qa" value="bitfield" />
+    <property role="TrG5h" value="superTypeOfBitType" />
+    <node concept="3clFbS" id="27dKu0Hrz0c" role="2sgrp5">
+      <node concept="3cpWs8" id="27dKu0HrzTv" role="3cqZAp">
+        <node concept="3cpWsn" id="27dKu0HrzTw" role="3cpWs9">
+          <property role="TrG5h" value="result" />
+          <node concept="2I9FWS" id="27dKu0HrzTx" role="1tU5fm">
+            <ref role="2I9WkF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+          </node>
+          <node concept="2ShNRf" id="27dKu0HrzTy" role="33vP2m">
+            <node concept="2T8Vx0" id="27dKu0HrzTz" role="2ShVmc">
+              <node concept="2I9FWS" id="27dKu0HrzT$" role="2T96Bj">
+                <ref role="2I9WkF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbF" id="27dKu0HrzT_" role="3cqZAp">
+        <node concept="2OqwBi" id="27dKu0HrzTA" role="3clFbG">
+          <node concept="37vLTw" id="27dKu0HrzTB" role="2Oq$k0">
+            <ref role="3cqZAo" node="27dKu0HrzTw" resolve="result" />
+          </node>
+          <node concept="TSZUe" id="27dKu0HrzTC" role="2OqNvi">
+            <node concept="2OqwBi" id="27dKu0Hr_AR" role="25WWJ7">
+              <node concept="1YBJjd" id="27dKu0Hr_9W" role="2Oq$k0">
+                <ref role="1YBMHb" node="27dKu0Hrz1Y" resolve="abstractBitType" />
+              </node>
+              <node concept="2qgKlT" id="27dKu0HrAa5" role="2OqNvi">
+                <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs6" id="27dKu0HrzTG" role="3cqZAp">
+        <node concept="37vLTw" id="27dKu0HrzTH" role="3cqZAk">
+          <ref role="3cqZAo" node="27dKu0HrzTw" resolve="result" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="27dKu0HrzSY" role="3cqZAp" />
+    </node>
+    <node concept="1YaCAy" id="27dKu0Hrz1Y" role="1YuTPh">
+      <property role="TrG5h" value="abstractBitType" />
+      <ref role="1YaFvo" to="clbe:2H3Yrqdbnnx" resolve="AbstractBitType" />
     </node>
   </node>
 </model>
