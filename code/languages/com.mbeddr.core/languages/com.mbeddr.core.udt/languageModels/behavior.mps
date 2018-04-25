@@ -3790,9 +3790,21 @@
       <node concept="3Tm1VV" id="34uiID1zL1U" role="1B3o_S" />
       <node concept="3clFbS" id="34uiID1zL1X" role="3clF47">
         <node concept="3clFbF" id="34uiID1zOdO" role="3cqZAp">
-          <node concept="2OqwBi" id="34uiID1zOjd" role="3clFbG">
-            <node concept="13iPFW" id="34uiID1zOdN" role="2Oq$k0" />
-            <node concept="1$rogu" id="34uiID1zOHz" role="2OqNvi" />
+          <node concept="2OqwBi" id="5n9FwLWoMCb" role="3clFbG">
+            <node concept="1PxgMI" id="5n9FwLWoMbZ" role="2Oq$k0">
+              <node concept="chp4Y" id="5n9FwLWoMnD" role="3oSUPX">
+                <ref role="cht4Q" to="mj1l:67O0HaCtjdR" resolve="IUnsigned" />
+              </node>
+              <node concept="2OqwBi" id="34uiID1zOjd" role="1m5AlR">
+                <node concept="13iPFW" id="34uiID1zOdN" role="2Oq$k0" />
+                <node concept="2qgKlT" id="5n9FwLWoLNM" role="2OqNvi">
+                  <ref role="37wK5l" node="5nhrDHCiU60" resolve="getBaseType" />
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5n9FwLWoN6N" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:6cGRlFg47bM" resolve="createNextBiggerSignedCompanion" />
+            </node>
           </node>
         </node>
       </node>
@@ -7552,9 +7564,21 @@
       <node concept="3Tm1VV" id="34uiID1zvu2" role="1B3o_S" />
       <node concept="3clFbS" id="34uiID1zvu5" role="3clF47">
         <node concept="3clFbF" id="34uiID1zJxP" role="3cqZAp">
-          <node concept="2OqwBi" id="34uiID1zK1_" role="3clFbG">
-            <node concept="13iPFW" id="34uiID1zJWc" role="2Oq$k0" />
-            <node concept="1$rogu" id="34uiID1zKPT" role="2OqNvi" />
+          <node concept="2OqwBi" id="5n9FwLWoK3m" role="3clFbG">
+            <node concept="1PxgMI" id="5n9FwLWoJBa" role="2Oq$k0">
+              <node concept="chp4Y" id="5n9FwLWoJMO" role="3oSUPX">
+                <ref role="cht4Q" to="mj1l:24lM_j3AaK6" resolve="ISigned" />
+              </node>
+              <node concept="2OqwBi" id="34uiID1zK1_" role="1m5AlR">
+                <node concept="13iPFW" id="34uiID1zJWc" role="2Oq$k0" />
+                <node concept="2qgKlT" id="5n9FwLWoGhN" role="2OqNvi">
+                  <ref role="37wK5l" node="5nhrDHCiU60" resolve="getBaseType" />
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5n9FwLWoKxY" role="2OqNvi">
+              <ref role="37wK5l" to="ywuz:4O$fzoYZDgS" resolve="createNextBiggerSignedCompanion" />
+            </node>
           </node>
         </node>
       </node>
