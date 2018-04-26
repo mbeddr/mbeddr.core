@@ -5,7 +5,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="3qmy" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.classloading(MPS.Core/)" />
@@ -20,6 +20,14 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
+        <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="1213273179528" name="description" index="1WHSii" />
+        <child id="1203083461638" name="executeFunction" index="tncku" />
+      </concept>
+      <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="481983775135178851" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginInitBlock" flags="in" index="2uRRBj" />
       <concept id="481983775135178840" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginDeclaration" flags="ng" index="2uRRBC">
@@ -47,6 +55,9 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
@@ -117,7 +128,16 @@
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -146,7 +166,7 @@
               <node concept="3Tm1VV" id="2hXd3rt0vPL" role="1B3o_S" />
               <node concept="3cqZAl" id="2hXd3rt0vPN" role="3clF45" />
               <node concept="37vLTG" id="2hXd3rt0vPO" role="3clF46">
-                <property role="TrG5h" value="p0" />
+                <property role="TrG5h" value="modules" />
                 <node concept="3uibUv" id="2hXd3rt0vPP" role="1tU5fm">
                   <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
                   <node concept="3uibUv" id="2hXd3rt0vPQ" role="11_B2D">
@@ -155,7 +175,7 @@
                 </node>
               </node>
               <node concept="37vLTG" id="2hXd3rt0vPR" role="3clF46">
-                <property role="TrG5h" value="p1" />
+                <property role="TrG5h" value="monitor" />
                 <node concept="3uibUv" id="2hXd3rt0vPS" role="1tU5fm">
                   <ref role="3uigEE" to="yyf4:~ProgressMonitor" resolve="ProgressMonitor" />
                 </node>
@@ -164,14 +184,14 @@
                 </node>
               </node>
               <node concept="3clFbS" id="2hXd3rt0vPU" role="3clF47">
-                <node concept="3clFbF" id="KudFejZGJ5" role="3cqZAp">
-                  <node concept="2OqwBi" id="KudFejZGR2" role="3clFbG">
-                    <node concept="2YIFZM" id="KudFejZGKA" role="2Oq$k0">
-                      <ref role="37wK5l" to="hz0z:KudFejUySV" resolve="getInstance" />
+                <node concept="3clFbF" id="2VTIauqJHQc" role="3cqZAp">
+                  <node concept="2OqwBi" id="2VTIauqJHQd" role="3clFbG">
+                    <node concept="2YIFZM" id="2VTIauqJHQe" role="2Oq$k0">
                       <ref role="1Pybhc" to="hz0z:KudFejUlPb" resolve="ChangeEventManager" />
+                      <ref role="37wK5l" to="hz0z:KudFejUySV" resolve="getInstance" />
                     </node>
-                    <node concept="liA8E" id="KudFejZH17" role="2OqNvi">
-                      <ref role="37wK5l" to="hz0z:KudFejUovH" resolve="reset" />
+                    <node concept="liA8E" id="2VTIauqJHQf" role="2OqNvi">
+                      <ref role="37wK5l" to="hz0z:KudFejUovH" resolve="dispose" />
                     </node>
                   </node>
                 </node>
@@ -300,5 +320,32 @@
     </node>
   </node>
   <node concept="2DaZZR" id="4lDxEimjLEU" />
+  <node concept="sE7Ow" id="6MN7yMJ6tMQ">
+    <property role="3GE5qa" value="actions" />
+    <property role="TrG5h" value="ClearCalculationCache" />
+    <property role="2uzpH1" value="Clear Cache (Incremental Computation)" />
+    <property role="1WHSii" value="Clears the cache of the incremental computation plugin" />
+    <node concept="tnohg" id="6MN7yMJ6tMV" role="tncku">
+      <node concept="3clFbS" id="6MN7yMJ6tMW" role="2VODD2">
+        <node concept="3clFbF" id="6MN7yMJ7aCD" role="3cqZAp">
+          <node concept="2OqwBi" id="6MN7yMJ7xry" role="3clFbG">
+            <node concept="2YIFZM" id="6MN7yMJ7xlD" role="2Oq$k0">
+              <ref role="37wK5l" to="hz0z:KudFejUySV" resolve="getInstance" />
+              <ref role="1Pybhc" to="hz0z:KudFejUlPb" resolve="ChangeEventManager" />
+            </node>
+            <node concept="liA8E" id="6MN7yMJ7xyI" role="2OqNvi">
+              <ref role="37wK5l" to="hz0z:KudFejUovH" resolve="dispose" />
+            </node>
+          </node>
+        </node>
+        <node concept="RRSsy" id="62eK_r5dogZ" role="3cqZAp">
+          <property role="RRSoG" value="warn" />
+          <node concept="Xl_RD" id="62eK_r5doiq" role="RRSoy">
+            <property role="Xl_RC" value="CACHE DISPOSED" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
