@@ -1056,14 +1056,23 @@
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="3m8H$lmIlFa" role="1hA7z_">
         <node concept="3clFbS" id="3m8H$lmIlFb" role="2VODD2">
-          <node concept="3clFbJ" id="1lmGFD6De_F" role="3cqZAp">
-            <node concept="3clFbS" id="1lmGFD6De_H" role="3clFbx">
-              <node concept="3cpWs6" id="1lmGFD6EBpw" role="3cqZAp" />
+          <node concept="3SKdUt" id="4xXsQXut1BE" role="3cqZAp">
+            <node concept="3SKdUq" id="4xXsQXut1BG" role="3SKWNk">
+              <property role="3SKdUp" value="Would make commented node to be highlited for deletion. We remove it for the time being" />
             </node>
-            <node concept="2OqwBi" id="5hKIe0b6HGc" role="3clFbw">
-              <node concept="0IXxy" id="5hKIe0b6HwT" role="2Oq$k0" />
-              <node concept="2xy62i" id="5hKIe0b6Ie$" role="2OqNvi">
-                <node concept="1Q80Hx" id="5hKIe0b6IiS" role="2xHN3q" />
+          </node>
+          <node concept="1X3_iC" id="4xXsQXusufo" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbJ" id="1lmGFD6De_F" role="8Wnug">
+              <node concept="3clFbS" id="1lmGFD6De_H" role="3clFbx">
+                <node concept="3cpWs6" id="1lmGFD6EBpw" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="5hKIe0b6HGc" role="3clFbw">
+                <node concept="0IXxy" id="5hKIe0b6HwT" role="2Oq$k0" />
+                <node concept="2xy62i" id="5hKIe0b6Ie$" role="2OqNvi">
+                  <node concept="1Q80Hx" id="5hKIe0b6IiS" role="2xHN3q" />
+                </node>
               </node>
             </node>
           </node>
