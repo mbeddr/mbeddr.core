@@ -15,8 +15,8 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -1056,15 +1056,24 @@
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="3m8H$lmIlFa" role="1hA7z_">
         <node concept="3clFbS" id="3m8H$lmIlFb" role="2VODD2">
-          <node concept="3clFbJ" id="1lmGFD6De_F" role="3cqZAp">
-            <node concept="3clFbS" id="1lmGFD6De_H" role="3clFbx">
-              <node concept="3cpWs6" id="1lmGFD6EBpw" role="3cqZAp" />
-            </node>
-            <node concept="2OqwBi" id="5hKIe0b6HGc" role="3clFbw">
-              <node concept="0IXxy" id="5hKIe0b6HwT" role="2Oq$k0" />
-              <node concept="2xy62i" id="5hKIe0b6Ie$" role="2OqNvi">
-                <node concept="1Q80Hx" id="5hKIe0b6IiS" role="2xHN3q" />
+          <node concept="1X3_iC" id="4xXsQXusufo" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbJ" id="1lmGFD6De_F" role="8Wnug">
+              <node concept="3clFbS" id="1lmGFD6De_H" role="3clFbx">
+                <node concept="3cpWs6" id="1lmGFD6EBpw" role="3cqZAp" />
               </node>
+              <node concept="2OqwBi" id="5hKIe0b6HGc" role="3clFbw">
+                <node concept="0IXxy" id="5hKIe0b6HwT" role="2Oq$k0" />
+                <node concept="2xy62i" id="5hKIe0b6Ie$" role="2OqNvi">
+                  <node concept="1Q80Hx" id="5hKIe0b6IiS" role="2xHN3q" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3SKdUt" id="4xXsQXut1BE" role="3cqZAp">
+            <node concept="3SKdUq" id="4xXsQXut1BG" role="3SKWNk">
+              <property role="3SKdUp" value="Would make commented node to be highlited for deletion. We remove it for the time being" />
             </node>
           </node>
           <node concept="3cpWs8" id="6PYNGEsYwS4" role="3cqZAp">
