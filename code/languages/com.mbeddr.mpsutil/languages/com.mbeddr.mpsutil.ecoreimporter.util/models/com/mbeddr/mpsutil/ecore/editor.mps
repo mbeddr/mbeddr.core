@@ -33,6 +33,7 @@
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -115,6 +116,15 @@
         <ref role="1NtTu8" to="hvgx:5n6IlFzyEc9" resolve="pathToEcoreFile" />
       </node>
       <node concept="2iRfu4" id="5n6IlFzyEea" role="2iSdaV" />
+      <node concept="3F0ifn" id="375LOh7jL0O" role="3EZMnx">
+        <property role="3F0ifm" value="( Version : " />
+      </node>
+      <node concept="3F0A7n" id="375LOh7jL0Y" role="3EZMnx">
+        <ref role="1NtTu8" to="hvgx:375LOh7jL0I" resolve="version" />
+      </node>
+      <node concept="3F0ifn" id="375LOh7jL1a" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
     </node>
   </node>
 </model>

@@ -44,10 +44,19 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
     </language>
   </registry>
   <node concept="1M2fIO" id="32cN67EdwMp">
+    <property role="3GE5qa" value="filter" />
     <ref role="1M2myG" to="au0v:5ReuVUpc9z_" resolve="AllowAction" />
     <node concept="9S07l" id="5RIakkDIITf" role="9Vyp8">
       <node concept="3clFbS" id="5RIakkDIITg" role="2VODD2">
@@ -68,6 +77,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="32cN67Ed$zc">
+    <property role="3GE5qa" value="filter" />
     <ref role="1M2myG" to="au0v:5FJiYrlIpAp" resolve="RemoveAction" />
     <node concept="9S07l" id="5RIakkDIITm" role="9Vyp8">
       <node concept="3clFbS" id="5RIakkDIITn" role="2VODD2">
@@ -81,6 +91,24 @@
             </node>
             <node concept="2qgKlT" id="5RIakkDIITs" role="2OqNvi">
               <ref role="37wK5l" to="jm5d:1TS1BLORxU1" resolve="isRemoveMode" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6nrtUqYemoi">
+    <property role="3GE5qa" value="toolBar" />
+    <ref role="1M2myG" to="au0v:6nrtUqYemgJ" resolve="ToolBarEntry" />
+    <node concept="9S07l" id="6nrtUqYemoj" role="9Vyp8">
+      <node concept="3clFbS" id="6nrtUqYemok" role="2VODD2">
+        <node concept="3clFbF" id="6nrtUqYemvt" role="3cqZAp">
+          <node concept="2OqwBi" id="6nrtUqYemIx" role="3clFbG">
+            <node concept="nLn13" id="6nrtUqYemvs" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="6nrtUqYemUC" role="2OqNvi">
+              <node concept="chp4Y" id="6nrtUqYen74" role="cj9EA">
+                <ref role="cht4Q" to="au0v:6nrtUqYelxU" resolve="ToolBar" />
+              </node>
             </node>
           </node>
         </node>

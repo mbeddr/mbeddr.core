@@ -74,5 +74,12 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="7TvvPtSxhGX">
+    <property role="3GE5qa" value="harness.combinatorial" />
+    <ref role="WuzLi" to="llb3:7TvvPtSxhGd" resolve="EmptyCombinatorialEntry" />
+    <node concept="11bSqf" id="7TvvPtSxhGY" role="11c4hB">
+      <node concept="3clFbS" id="7TvvPtSxhGZ" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

@@ -170,6 +170,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -248,6 +249,11 @@
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -262,6 +268,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
@@ -398,12 +405,12 @@
           <node concept="3cpWsn" id="3lXW7OZ6VXn" role="3cpWs9">
             <property role="TrG5h" value="aa" />
             <node concept="3Tqbb2" id="3lXW7OZ6VXi" role="1tU5fm">
-              <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
+              <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
             </node>
             <node concept="2ShNRf" id="3lXW7OZ6W2T" role="33vP2m">
               <node concept="3zrR0B" id="3lXW7OZ6Wfj" role="2ShVmc">
                 <node concept="3Tqbb2" id="3lXW7OZ6Wfl" role="3zrR0E">
-                  <ref role="ehGHo" to="v326:3lXW7OZ6Uci" resolve="SpinBasedAnalysis" />
+                  <ref role="ehGHo" to="v326:3lXW7OZ693P" resolve="AssertionsSpinAnalysis" />
                 </node>
               </node>
             </node>
@@ -658,29 +665,6 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="hgayPfdUfU" role="3cqZAp">
-          <node concept="3SKdUq" id="hgayPfdUfW" role="3SKWNk">
-            <property role="3SKdUp" value="We need the next line so we can update the RawTrail from LiftedTable" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="71H03GAY$wn" role="3cqZAp">
-          <node concept="2OqwBi" id="71H03GAY$Of" role="3clFbG">
-            <node concept="37vLTw" id="71H03GAY$wl" role="2Oq$k0">
-              <ref role="3cqZAo" node="7XCY$_raYfy" resolve="spinLiftedResultsTool" />
-            </node>
-            <node concept="2XshWL" id="71H03GAY_mt" role="2OqNvi">
-              <ref role="2WH_rO" node="71H03GAXEs3" resolve="setSpinRawResultsPanel" />
-              <node concept="2OqwBi" id="hgayPfeC$Z" role="2XxRq1">
-                <node concept="37vLTw" id="71H03GAY_xX" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="spinRawResultsTool" />
-                </node>
-                <node concept="2XshWL" id="hgayPfeEr2" role="2OqNvi">
-                  <ref role="2WH_rO" node="hgayPfeilJ" resolve="getPanel" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="54ptZbPSKpz" role="3cqZAp">
           <node concept="1rXfSq" id="54ptZbPSKpx" role="3clFbG">
             <ref role="37wK5l" node="2UdJgvCNFe3" resolve="clearResults" />
@@ -843,6 +827,29 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="hgayPfdUfU" role="3cqZAp">
+              <node concept="3SKdUq" id="hgayPfdUfW" role="3SKWNk">
+                <property role="3SKdUp" value="We need the next line so we can update the RawTrail from LiftedTable" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="71H03GAY$wn" role="3cqZAp">
+              <node concept="2OqwBi" id="71H03GAY$Of" role="3clFbG">
+                <node concept="37vLTw" id="71H03GAY$wl" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7XCY$_raYfy" resolve="spinLiftedResultsTool" />
+                </node>
+                <node concept="2XshWL" id="71H03GAY_mt" role="2OqNvi">
+                  <ref role="2WH_rO" node="71H03GAXEs3" resolve="setSpinRawResultsPanel" />
+                  <node concept="2OqwBi" id="hgayPfeC$Z" role="2XxRq1">
+                    <node concept="37vLTw" id="71H03GAY_xX" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="spinRawResultsTool" />
+                    </node>
+                    <node concept="2XshWL" id="hgayPfeEr2" role="2OqNvi">
+                      <ref role="2WH_rO" node="hgayPfeilJ" resolve="getPanel" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3fqX7Q" id="6izRX53r8Hz" role="3clFbw">
             <node concept="2OqwBi" id="6izRX53r8H$" role="3fr31v">
@@ -872,38 +879,56 @@
         <property role="NWlVz" value="{@inheritDoc}" />
       </node>
       <node concept="3clFbS" id="2UdJgvCNFe4" role="3clF47">
-        <node concept="3clFbF" id="1wu5Hv6fLPL" role="3cqZAp">
-          <node concept="2OqwBi" id="1wu5Hv6fLS5" role="3clFbG">
-            <node concept="37vLTw" id="1wu5Hv6fLPK" role="2Oq$k0">
-              <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="spinRawResultsTool" />
+        <node concept="3clFbJ" id="6VUBYZefoNV" role="3cqZAp">
+          <node concept="3clFbS" id="6VUBYZefoNX" role="3clFbx">
+            <node concept="3clFbF" id="1wu5Hv6fLPL" role="3cqZAp">
+              <node concept="2OqwBi" id="1wu5Hv6fLS5" role="3clFbG">
+                <node concept="37vLTw" id="1wu5Hv6fLPK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="spinRawResultsTool" />
+                </node>
+                <node concept="2XshWL" id="1wu5Hv6fM4I" role="2OqNvi">
+                  <ref role="2WH_rO" node="3Ymokd9FeZe" resolve="setOutput" />
+                  <node concept="Xl_RD" id="1wu5Hv6fM5B" role="2XxRq1">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                  <node concept="Xl_RD" id="7Rf0$0HTmUI" role="2XxRq1">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                  <node concept="Xl_RD" id="1wu5Hv6fM6R" role="2XxRq1">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                  <node concept="Xl_RD" id="71901EGGTuA" role="2XxRq1">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                  <node concept="Xl_RD" id="1wu5Hv6fM8h" role="2XxRq1">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="2XshWL" id="1wu5Hv6fM4I" role="2OqNvi">
-              <ref role="2WH_rO" node="3Ymokd9FeZe" resolve="setOutput" />
-              <node concept="Xl_RD" id="1wu5Hv6fM5B" role="2XxRq1">
-                <property role="Xl_RC" value="" />
-              </node>
-              <node concept="Xl_RD" id="7Rf0$0HTmUI" role="2XxRq1">
-                <property role="Xl_RC" value="" />
-              </node>
-              <node concept="Xl_RD" id="1wu5Hv6fM6R" role="2XxRq1">
-                <property role="Xl_RC" value="" />
-              </node>
-              <node concept="Xl_RD" id="71901EGGTuA" role="2XxRq1">
-                <property role="Xl_RC" value="" />
-              </node>
-              <node concept="Xl_RD" id="1wu5Hv6fM8h" role="2XxRq1">
-                <property role="Xl_RC" value="" />
+            <node concept="3clFbF" id="7XCY$_rclGo" role="3cqZAp">
+              <node concept="2OqwBi" id="7XCY$_rclW6" role="3clFbG">
+                <node concept="37vLTw" id="7XCY$_rclGm" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7XCY$_raYfy" resolve="spinLiftedResultsTool" />
+                </node>
+                <node concept="2XshWL" id="7XCY$_rcmeZ" role="2OqNvi">
+                  <ref role="2WH_rO" node="7yT88Oq5pnS" resolve="clearResults" />
+                </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="7XCY$_rclGo" role="3cqZAp">
-          <node concept="2OqwBi" id="7XCY$_rclW6" role="3clFbG">
-            <node concept="37vLTw" id="7XCY$_rclGm" role="2Oq$k0">
-              <ref role="3cqZAo" node="7XCY$_raYfy" resolve="spinLiftedResultsTool" />
+          <node concept="1Wc70l" id="6VUBYZeg2AM" role="3clFbw">
+            <node concept="3y3z36" id="6VUBYZeg31f" role="3uHU7w">
+              <node concept="10Nm6u" id="6VUBYZeg3dP" role="3uHU7w" />
+              <node concept="37vLTw" id="6VUBYZeg2N_" role="3uHU7B">
+                <ref role="3cqZAo" node="7XCY$_raYfy" resolve="spinLiftedResultsTool" />
+              </node>
             </node>
-            <node concept="2XshWL" id="7XCY$_rcmeZ" role="2OqNvi">
-              <ref role="2WH_rO" node="7yT88Oq5pnS" resolve="clearResults" />
+            <node concept="3y3z36" id="6VUBYZefqAU" role="3uHU7B">
+              <node concept="37vLTw" id="6VUBYZefoYe" role="3uHU7B">
+                <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="spinRawResultsTool" />
+              </node>
+              <node concept="10Nm6u" id="6VUBYZefqMz" role="3uHU7w" />
             </node>
           </node>
         </node>
