@@ -217,6 +217,7 @@
       </concept>
       <concept id="7612819212320194650" name="com.mbeddr.analyses.spin.c.patterns.structure.CollectTraces" flags="ng" index="1geQFB">
         <child id="204720398808872902" name="tracesHandler" index="V$2vo" />
+        <child id="4638741387737896259" name="suv" index="1dpgJO" />
       </concept>
       <concept id="6769883793264410611" name="com.mbeddr.analyses.spin.c.patterns.structure.ForEachVarDecl" flags="ng" index="1hKoE2" />
       <concept id="6769883793264065291" name="com.mbeddr.analyses.spin.c.patterns.structure.ForEachStatement" flags="ng" index="1hRGTU">
@@ -3413,6 +3414,9 @@
       </node>
       <node concept="1geQFB" id="bnk1STkVIl" role="lGtFl">
         <node concept="VxAmM" id="bnk1STmazW" role="V$2vo" />
+        <node concept="3GEVxB" id="41w7Fsd4KhN" role="1dpgJO">
+          <ref role="3GEb4d" node="6E3dSCjBkxO" resolve="_051_suv" />
+        </node>
       </node>
     </node>
     <node concept="3GEVxB" id="6AAaFOTEQcH" role="2OODSX">
@@ -3507,6 +3511,9 @@
           <node concept="pF0ck" id="bnk1STvCNx" role="VFDjm">
             <ref role="pF0ci" node="bnk1STvLje" resolve="suv_init" />
           </node>
+        </node>
+        <node concept="3GEVxB" id="41w7Fsd4Kek" role="1dpgJO">
+          <ref role="3GEb4d" node="bnk1STvLj8" resolve="_055_suv" />
         </node>
       </node>
     </node>
