@@ -2,10 +2,10 @@
 <model ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -18700,6 +18700,9 @@
       </node>
       <node concept="m$_wl" id="1dYDWxACMO_" role="39821P">
         <ref role="m_rDy" node="4VgGsUqOKxx" resolve="com.mbeddr.mpsutil.buildassistent" />
+      </node>
+      <node concept="m$_wl" id="3EcqwqNNlVY" role="39821P">
+        <ref role="m_rDy" node="TGQG6khGGJ" resolve="com.mbeddr.mpsutil.uisupport" />
       </node>
       <node concept="398223" id="pdbBRzg10k" role="39821P">
         <node concept="3_J27D" id="pdbBRzg10m" role="Nbhlr">
