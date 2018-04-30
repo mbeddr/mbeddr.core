@@ -657,9 +657,6 @@
     </node>
     <node concept="m$_wf" id="7uZw0yZ2_Jq" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil" />
-      <node concept="m$f5U" id="4luIyUvmc5y" role="m$_yh">
-        <ref role="m$f5T" node="4sjR92JQf0t" resolve="group.dataflow" />
-      </node>
       <node concept="m$_yC" id="64SK4bcJIU1" role="m$_yJ">
         <ref role="m$_y1" node="64SK4bcJmGP" resolve="com.mbeddr.mpsutil.plantuml" />
       </node>
@@ -681,6 +678,9 @@
         <node concept="3Mxwey" id="2HHioL2NwSM" role="3MwsjC">
           <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
+      </node>
+      <node concept="m$f5U" id="4luIyUvmc5y" role="m$_yh">
+        <ref role="m$f5T" node="4sjR92JQf0t" resolve="group.dataflow" />
       </node>
       <node concept="m$f5U" id="5l4WPWBsMzR" role="m$_yh">
         <ref role="m$f5T" node="5l4WPWBsBct" resolve="group.commenting.devkit" />
@@ -799,6 +799,9 @@
       <node concept="m$_yC" id="nnCEsShA5M" role="m$_yJ">
         <ref role="m$_y1" node="nnCEsSfXF5" resolve="com.mbeddr.mpsutil.refactoring" />
       </node>
+      <node concept="m$_yC" id="TGQG6kicFm" role="m$_yJ">
+        <ref role="m$_y1" node="TGQG6khGGJ" resolve="com.mbeddr.mpsutil.uisupport" />
+      </node>
       <node concept="3_J27D" id="7uZw0yZ2_Jx" role="m_cZH">
         <node concept="3Mxwew" id="7uZw0yZ2_Jy" role="3MwsjC">
           <property role="3MwjfP" value="mbeddr.mpsutil" />
@@ -807,14 +810,6 @@
       <node concept="2iUeEo" id="7uZw0yZ41GZ" role="2iVFfd">
         <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
-      </node>
-      <node concept="3_J27D" id="6YZfJyAKvHX" role="3s6cr7">
-        <node concept="3Mxwew" id="6YZfJyAKvI0" role="3MwsjC">
-          <property role="3MwjfP" value="Original all-in-one mpsutil plugin (use specific plugins instead)" />
-        </node>
-      </node>
-      <node concept="m$_yC" id="TGQG6kicFm" role="m$_yJ">
-        <ref role="m$_y1" node="TGQG6khGGJ" resolve="com.mbeddr.mpsutil.uisupport" />
       </node>
       <node concept="m$_yC" id="2puCPkOW5Zb" role="m$_yJ">
         <ref role="m$_y1" node="5VnTKgGaKuH" resolve="com.mbeddr.mpsutil.gensupport" />
@@ -833,6 +828,11 @@
       </node>
       <node concept="m$_yC" id="4luIyUvmc4_" role="m$_yJ">
         <ref role="m$_y1" node="TGQG6khGGJ" resolve="com.mbeddr.mpsutil.uisupport" />
+      </node>
+      <node concept="3_J27D" id="6YZfJyAKvHX" role="3s6cr7">
+        <node concept="3Mxwew" id="6YZfJyAKvI0" role="3MwsjC">
+          <property role="3MwjfP" value="Original all-in-one mpsutil plugin (use specific plugins instead)" />
+        </node>
       </node>
     </node>
     <node concept="m$_wf" id="2LIUxufzuEG" role="3989C9">
@@ -4683,6 +4683,7 @@
         </node>
         <node concept="1SiIV0" id="TGQG6ki8xf" role="3bR37C">
           <node concept="3bR9La" id="TGQG6ki8xg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
@@ -15199,13 +15200,13 @@
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
+        <node concept="1E0d5M" id="7VFn0cOv0F$" role="1E1XAP">
+          <ref role="1E0d5P" to="90a9:F1NWDqq_DA" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+        </node>
         <node concept="1SiIV0" id="3WqLVgfDbIU" role="3bR37C">
           <node concept="3bR9La" id="3WqLVgfDbIV" role="1SiIV1">
             <ref role="3bR37D" node="Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
           </node>
-        </node>
-        <node concept="1E0d5M" id="7VFn0cOv0F$" role="1E1XAP">
-          <ref role="1E0d5P" to="90a9:F1NWDqq_DA" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
         </node>
       </node>
       <node concept="1E1JtD" id="7tNo_gxoK97" role="2G$12L">
