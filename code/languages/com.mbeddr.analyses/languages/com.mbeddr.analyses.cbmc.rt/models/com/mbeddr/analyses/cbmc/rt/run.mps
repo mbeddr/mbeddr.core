@@ -454,6 +454,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
@@ -7446,24 +7447,25 @@
                 <node concept="3cpWs8" id="2UdJgvD2kjP" role="3cqZAp">
                   <node concept="3cpWsn" id="2UdJgvD2kjQ" role="3cpWs9">
                     <property role="TrG5h" value="delay" />
-                    <node concept="2YIFZM" id="3_HSwtcFgNc" role="33vP2m">
-                      <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object):java.util.List" resolve="singletonList" />
-                      <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-                      <node concept="2YIFZM" id="2UdJgvD2kk0" role="37wK5m">
-                        <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
-                        <ref role="37wK5l" to="wyt6:~Long.toString(long):java.lang.String" resolve="toString" />
-                        <node concept="2OqwBi" id="2UdJgvD2kk1" role="37wK5m">
-                          <node concept="37vLTw" id="3IsZZljIB5y" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2UdJgvD2kgV" resolve="result" />
-                          </node>
-                          <node concept="2OwXpG" id="2UdJgvD2kk3" role="2OqNvi">
-                            <ref role="2Oxat5" to="8e9v:4CtHBqNlszv" resolve="delay" />
+                    <node concept="_YKpA" id="2UdJgvD2kjR" role="1tU5fm">
+                      <node concept="17QB3L" id="2UdJgvD2kjS" role="_ZDj9" />
+                    </node>
+                    <node concept="2ShNRf" id="7ApeIpsU_Mz" role="33vP2m">
+                      <node concept="Tc6Ow" id="7ApeIpsU_M$" role="2ShVmc">
+                        <node concept="17QB3L" id="7ApeIpsU_M_" role="HW$YZ" />
+                        <node concept="2YIFZM" id="7ApeIpsU_MA" role="HW$Y0">
+                          <ref role="37wK5l" to="wyt6:~Long.toString(long):java.lang.String" resolve="toString" />
+                          <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
+                          <node concept="2OqwBi" id="7ApeIpsU_MB" role="37wK5m">
+                            <node concept="37vLTw" id="7ApeIpsU_MC" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2UdJgvD2kgV" resolve="result" />
+                            </node>
+                            <node concept="2OwXpG" id="7ApeIpsU_MD" role="2OqNvi">
+                              <ref role="2Oxat5" to="8e9v:4CtHBqNlszv" resolve="delay" />
+                            </node>
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="_YKpA" id="2UdJgvD2kjR" role="1tU5fm">
-                      <node concept="17QB3L" id="2UdJgvD2kjS" role="_ZDj9" />
                     </node>
                   </node>
                 </node>
