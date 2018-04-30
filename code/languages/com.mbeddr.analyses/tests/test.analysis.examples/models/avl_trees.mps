@@ -1045,6 +1045,7 @@
       <ref role="3GEb4d" node="3RK4Y9HHmDd" resolve="_080_avl_base" />
     </node>
     <node concept="3GEVxB" id="3RK4Y9HHmwf" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="3RK4Y9HHl6T" resolve="_080_malloc_stubs" />
     </node>
     <node concept="2DPCBB" id="ogNGNPXRkj" role="N3F5h">
