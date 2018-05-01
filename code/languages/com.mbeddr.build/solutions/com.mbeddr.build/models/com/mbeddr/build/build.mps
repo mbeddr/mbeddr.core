@@ -1247,7 +1247,7 @@
           <ref role="3LEDTV" node="7uZw0yZ43K1" resolve="com.mbeddr.core.debug" />
         </node>
         <node concept="3LEDTy" id="3wIDmNcxMs7" role="3LEDUa">
-          <ref role="3LEDTV" node="3wIDmNcxJQH" resolve="com.mbeddr.core.debug.test" />
+          <ref role="3LEDTV" node="62XMcUo5Go6" resolve="com.mbeddr.core.debug.test" />
         </node>
       </node>
       <node concept="1E1JtA" id="62XMcUo5GoU" role="2G$12L">
