@@ -656,7 +656,9 @@
       <property role="TrG5h" value="allMethods" />
       <node concept="3Tm1VV" id="gWE$qahG7N" role="1B3o_S" />
       <node concept="A3Dl8" id="gWE$qahG7O" role="3clF45">
-        <node concept="3Tqbb2" id="gWE$qahG7P" role="A3Ik2" />
+        <node concept="3Tqbb2" id="gWE$qahG7P" role="A3Ik2">
+          <ref role="ehGHo" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
+        </node>
       </node>
       <node concept="3clFbS" id="gWE$qahG7Q" role="3clF47">
         <node concept="3clFbF" id="gWE$qahG7R" role="3cqZAp">

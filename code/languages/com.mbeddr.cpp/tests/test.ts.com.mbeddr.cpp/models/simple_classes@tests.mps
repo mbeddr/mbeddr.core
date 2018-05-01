@@ -6,7 +6,7 @@
     <devkit ref="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" />
   </languages>
   <imports>
-    <import index="yfw2" ref="r:05946c96-acc1-4c74-9ca9-1c2a3fe7543a(com.mbeddr.cpp.__spreferences.PlatformTemplates)" implicit="true" />
+    <import index="ux7" ref="r:7a7d22ce-1d67-4772-b659-fbcc3b235afb(com.mbeddr.cpp.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -122,7 +122,7 @@
       </concept>
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
-      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.EmulatedInterruptKind" flags="ng" index="3_UBHe" />
+      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.DefaultInterruptKind" flags="ng" index="3_UBHe" />
       <concept id="9172009453269230746" name="com.mbeddr.core.embedded.structure.InterruptConfigItem" flags="ng" index="3_UEaq">
         <child id="9172009453269286214" name="kind" index="3_UBH6" />
       </concept>
@@ -531,8 +531,8 @@
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cpp/" />
   </node>
   <node concept="2v9HqL" id="7pg8HYlqyX2">
-    <node concept="2xfidK" id="2nospmWbMx9" role="2AWWZH">
-      <ref role="2xfifS" to="yfw2:4o2nsMgCtVE" resolve="Desktop Platform" />
+    <node concept="2xfidK" id="7ApeIptaldc" role="2AWWZH">
+      <ref role="2xfifS" to="ux7:4FIECQpE9e1" resolve="Desktop Platform" />
     </node>
     <node concept="2Q9Fgs" id="7pg8HYlqyX4" role="2Q9xDr">
       <node concept="2Q9FjX" id="7pg8HYlqyX5" role="2Q9FjI" />
