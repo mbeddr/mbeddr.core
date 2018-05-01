@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="com.mbeddr.cpp" uuid="bdd1ab49-ce55-4bff-86d1-5394fa0aa930">
+  <exported-language name="dd4979e3-3be6-46b3-9e1e-c36309e30758(com.mbeddr.cpp.modules)" />
+  <exported-language name="236f3e56-2360-4657-9b9d-0cb84f56784d(com.mbeddr.cpp.modules.gen)" />
+  <exported-language name="8c081446-e4ba-48b7-a7e0-3db40e2c3439(com.mbeddr.cpp.base)" />
+  <exported-language name="b341759a-c721-4072-90cf-328bb2724684(com.mbeddr.cpp.expressions)" />
+  <exported-language name="6e81d0c1-347c-43fc-99ef-bdd47021c2b7(com.mbeddr.cpp.buildconfig)" />
+  <extendedDevKits>
+    <extendedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+
