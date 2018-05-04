@@ -35,6 +35,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -95,6 +98,9 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -150,6 +156,14 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -693,12 +707,29 @@
       <ref role="EomxK" to="tpck:gOOYnlO" resolve="shortDescription" />
       <node concept="Eqf_E" id="6a5SBPfZlY2" role="EtsB7">
         <node concept="3clFbS" id="6a5SBPfZlY3" role="2VODD2">
-          <node concept="3clFbF" id="6a5SBPfZlY4" role="3cqZAp">
-            <node concept="2OqwBi" id="6a5SBPfZlY5" role="3clFbG">
-              <node concept="EsrRn" id="6a5SBPfZlY6" role="2Oq$k0" />
-              <node concept="2qgKlT" id="6a5SBPfZlY7" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:4JF77iuPRBw" resolve="shortDescriptionForCCMenu" />
+          <node concept="Jncv_" id="7VeUlv7pbdJ" role="3cqZAp">
+            <ref role="JncvD" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+            <node concept="EsrRn" id="7VeUlv7pbsn" role="JncvB" />
+            <node concept="3clFbS" id="7VeUlv7pbdN" role="Jncv$">
+              <node concept="3cpWs6" id="7VeUlv7pd8_" role="3cqZAp">
+                <node concept="2OqwBi" id="7VeUlv7pd8B" role="3cqZAk">
+                  <node concept="Jnkvi" id="7VeUlv7pd8C" role="2Oq$k0">
+                    <ref role="1M0zk5" node="7VeUlv7pbdP" resolve="iinc" />
+                  </node>
+                  <node concept="2qgKlT" id="7VeUlv7pd8D" role="2OqNvi">
+                    <ref role="37wK5l" to="hwgx:4JF77iuPRBw" resolve="shortDescriptionForCCMenu" />
+                  </node>
+                </node>
               </node>
+            </node>
+            <node concept="JncvC" id="7VeUlv7pbdP" role="JncvA">
+              <property role="TrG5h" value="iinc" />
+              <node concept="2jxLKc" id="7VeUlv7pbdQ" role="1tU5fm" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7VeUlv7pdz0" role="3cqZAp">
+            <node concept="Xl_RD" id="7VeUlv7pdyZ" role="3clFbG">
+              <property role="Xl_RC" value="" />
             </node>
           </node>
         </node>
