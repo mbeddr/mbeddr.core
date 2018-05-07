@@ -618,6 +618,18 @@
       <node concept="2SsqMj" id="tJrHRTVPK6" role="3EZMnx" />
       <node concept="2iRkQZ" id="tJrHRTVPJQ" role="2iSdaV" />
     </node>
+    <node concept="3EZMnI" id="7VeUlv6ZvDU" role="6VMZX">
+      <node concept="2iRfu4" id="7VeUlv6ZvDV" role="2iSdaV" />
+      <node concept="3F0ifn" id="7VeUlv6ZvDW" role="3EZMnx">
+        <property role="3F0ifm" value="StackTrace" />
+        <node concept="Veino" id="7VeUlv6ZvDX" role="3F10Kt">
+          <property role="Vb096" value="red" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="7VeUlv6ZvDY" role="3EZMnx">
+        <ref role="1NtTu8" to="gfdq:7VeUlv6Zsjs" resolve="stackTrace" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="3S9K2OvqeWE">
     <property role="3GE5qa" value="concept_chooser" />

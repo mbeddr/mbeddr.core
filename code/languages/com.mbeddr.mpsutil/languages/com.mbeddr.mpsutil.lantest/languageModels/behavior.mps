@@ -28,6 +28,8 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="tase" ref="r:636418bd-de3f-4994-9ed6-575fd575a6a8(com.mbeddr.mpsutil.lantest.rt.checker.code_generator)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -234,6 +236,9 @@
             <node concept="2ShNRf" id="4XCJ8CcQD14" role="33vP2m">
               <node concept="1pGfFk" id="4XCJ8CcU9A$" role="2ShVmc">
                 <ref role="37wK5l" to="9n5q:4XCJ8CcT45H" resolve="ModelsGenerator" />
+                <node concept="37vLTw" id="7VeUlv7Y$00" role="37wK5m">
+                  <ref role="3cqZAo" node="7VeUlv7YzBY" resolve="repo" />
+                </node>
                 <node concept="13iPFW" id="4XCJ8CcU9B1" role="37wK5m" />
                 <node concept="37vLTw" id="433ob2TkGy4" role="37wK5m">
                   <ref role="3cqZAo" node="433ob2TkGxY" resolve="specificSaver" />
@@ -272,6 +277,12 @@
           <node concept="37vLTw" id="2P6psD9Dt60" role="3cqZAk">
             <ref role="3cqZAo" node="2P6psD9B2_Z" resolve="mg" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7VeUlv7YzBY" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="7VeUlv7YzBX" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>

@@ -306,6 +306,11 @@
       <property role="IQ2nx" value="6993138224520770965" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="7VeUlv6Zsjs" role="1TKVEl">
+      <property role="IQ2nx" value="9137497257191261404" />
+      <property role="TrG5h" value="stackTrace" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="M6xJ_" id="tJrHRTVPJA" role="lGtFl">
       <property role="Hh88m" value="exception" />
       <node concept="trNpa" id="tJrHRTVPJD" role="EQaZv">
