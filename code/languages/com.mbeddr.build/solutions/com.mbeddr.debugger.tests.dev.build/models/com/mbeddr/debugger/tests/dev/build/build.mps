@@ -2,13 +2,13 @@
 <model ref="r:346f24ce-56b5-4622-adc7-4452196677a2(com.mbeddr.debugger.tests.dev.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
   </imports>
@@ -331,9 +331,6 @@
       <node concept="m$_yC" id="2coa6XmXBNm" role="m$_yJ">
         <ref role="m$_y1" to="p6ld:5qO$P$Prhta" resolve="com.mbeddr.debugger" />
       </node>
-      <node concept="m$_yC" id="6xaPNaK93q6" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:6xaPNaK8P2s" resolve="org.mockito" />
-      </node>
       <node concept="3_J27D" id="7eF9rfAuv4y" role="m_cZH">
         <node concept="3Mxwew" id="7eF9rfAuv4z" role="3MwsjC">
           <property role="3MwjfP" value="debugger.tests" />
@@ -341,6 +338,9 @@
       </node>
       <node concept="m$f5U" id="7eF9rfAuv4$" role="m$_yh">
         <ref role="m$f5T" node="7eF9rfAuv4_" resolve="com.mbeddr.core.debugger.tests" />
+      </node>
+      <node concept="m$_yC" id="6xaPNaK93q6" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:6xaPNaK8P2s" resolve="org.mockito" />
       </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAuv4_" role="3989C9">

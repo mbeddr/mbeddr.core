@@ -3,12 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
   </imports>
@@ -1035,11 +1035,6 @@
             <ref role="3bR37D" to="p6ld:ZmkllFPpkT" resolve="com.mbeddr.ext.components.units" />
           </node>
         </node>
-        <node concept="1SiIV0" id="27dKu0Hyd1F" role="3bR37C">
-          <node concept="3bR9La" id="27dKu0Hyd1G" role="1SiIV1">
-            <ref role="3bR37D" to="p6ld:7uZw0yZ43JW" resolve="com.mbeddr.core.util" />
-          </node>
-        </node>
         <node concept="398BVA" id="7Vt15sLW_os" role="3LF7KH">
           <ref role="398BVh" node="7Vt15sLW_nb" resolve="mbeddr.ext" />
           <node concept="2Ry0Ak" id="7Vt15sLW_ot" role="iGT6I">
@@ -1066,6 +1061,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="27dKu0Hyd1F" role="3bR37C">
+          <node concept="3bR9La" id="27dKu0Hyd1G" role="1SiIV1">
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43JW" resolve="com.mbeddr.core.util" />
           </node>
         </node>
       </node>
@@ -1179,11 +1179,6 @@
             <ref role="3bR37D" to="p6ld:yklW1G3HMa" resolve="com.mbeddr.ext.units" />
           </node>
         </node>
-        <node concept="1SiIV0" id="27dKu0Hyd2h" role="3bR37C">
-          <node concept="3bR9La" id="27dKu0Hyd2i" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
-          </node>
-        </node>
         <node concept="3rtmxn" id="3xFG3bj5bVy" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5bVz" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5bV$" role="3LXTna">
@@ -1198,6 +1193,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="27dKu0Hyd2h" role="3bR37C">
+          <node concept="3bR9La" id="27dKu0Hyd2i" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
           </node>
         </node>
       </node>
