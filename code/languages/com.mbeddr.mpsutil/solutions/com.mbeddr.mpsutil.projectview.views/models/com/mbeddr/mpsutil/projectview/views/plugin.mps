@@ -28,6 +28,7 @@
     <import index="xnls" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.icons(MPS.Platform/)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -57,6 +58,9 @@
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -170,6 +174,9 @@
       </concept>
     </language>
     <language id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview">
+      <concept id="3706182042894827072" name="com.mbeddr.mpsutil.projectview.structure.ViewParamter" flags="ng" index="2SKBUI" />
+      <concept id="3706182042894444408" name="com.mbeddr.mpsutil.projectview.structure.DataProviderFunction" flags="ig" index="2SMaum" />
+      <concept id="3706182042894444980" name="com.mbeddr.mpsutil.projectview.structure.DataKeyParamter" flags="ng" index="2SMa_q" />
       <concept id="8309912865649381503" name="com.mbeddr.mpsutil.projectview.structure.MPSProjectExpression" flags="ng" index="14a6R6" />
       <concept id="8309912865649284794" name="com.mbeddr.mpsutil.projectview.structure.TreeNodeElement" flags="ng" index="14aYG3">
         <reference id="8309912865649343723" name="parent" index="14a85i" />
@@ -193,6 +200,7 @@
         <property id="5597588939837555676" name="rebuildOnFileChange" index="280IaB" />
         <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <reference id="8309912865649284888" name="extends" index="14aYEx" />
+        <child id="3706182042894444402" name="dataProvider" index="2SMaus" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
       </concept>
       <concept id="8309912865649636002" name="com.mbeddr.mpsutil.projectview.structure.QueryElementReference" flags="ng" index="14b0Wr">
@@ -1366,6 +1374,32 @@
         <node concept="2qgKlT" id="4dJXybkfnlB" role="2OqNvi">
           <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
         </node>
+      </node>
+    </node>
+    <node concept="2SMaum" id="3dJ0eUbJC8D" role="2SMaus">
+      <node concept="3clFbS" id="3dJ0eUbJC8E" role="2VODD2">
+        <node concept="3clFbJ" id="3dJ0eUbJEHA" role="3cqZAp">
+          <node concept="3clFbS" id="3dJ0eUbJEHI" role="3clFbx">
+            <node concept="3cpWs6" id="3dJ0eUbJI9C" role="3cqZAp">
+              <node concept="10Nm6u" id="3dJ0eUbJIe5" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="3dJ0eUbJEa5" role="3clFbw">
+            <node concept="Xl_RD" id="3dJ0eUbJEiu" role="3uHU7w">
+              <property role="Xl_RC" value="fsdf" />
+            </node>
+            <node concept="2SMa_q" id="3dJ0eUbJDJH" role="3uHU7B" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3dJ0eUbJIvm" role="3cqZAp">
+          <node concept="2OqwBi" id="3dJ0eUbJITP" role="3clFbG">
+            <node concept="2SKBUI" id="3dJ0eUbJIvk" role="2Oq$k0" />
+            <node concept="liA8E" id="3dJ0eUbJJrL" role="2OqNvi">
+              <ref role="37wK5l" to="uhdf:2ZGhpRfeyB3" resolve="getId" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3dJ0eUbJEza" role="3cqZAp" />
       </node>
     </node>
   </node>

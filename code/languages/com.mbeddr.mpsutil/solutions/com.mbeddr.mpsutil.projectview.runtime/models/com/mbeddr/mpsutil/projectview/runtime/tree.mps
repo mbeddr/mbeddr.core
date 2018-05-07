@@ -1729,6 +1729,75 @@
         <node concept="17QB3L" id="75_oBQVx_yt" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="75_oBQVxzQN" role="3clF47">
+        <node concept="3clFbH" id="3dJ0eUbC1pN" role="3cqZAp" />
+        <node concept="3cpWs8" id="3dJ0eUbC_iZ" role="3cqZAp">
+          <node concept="3cpWsn" id="3dJ0eUbC_j0" role="3cpWs9">
+            <property role="TrG5h" value="descriptor" />
+            <node concept="3uibUv" id="3dJ0eUbC_iV" role="1tU5fm">
+              <ref role="3uigEE" to="imq3:3ZnFyBjtwPw" resolve="IViewDescriptor" />
+            </node>
+            <node concept="2OqwBi" id="3dJ0eUbC_j1" role="33vP2m">
+              <node concept="2YIFZM" id="3dJ0eUbC_j2" role="2Oq$k0">
+                <ref role="1Pybhc" to="imq3:3ZnFyBjty2p" resolve="ViewRegistry" />
+                <ref role="37wK5l" to="imq3:3ZnFyBjwwsd" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="3dJ0eUbC_j3" role="2OqNvi">
+                <ref role="37wK5l" to="imq3:7eKnO66mXNz" resolve="getDescriptor" />
+                <node concept="37vLTw" id="3dJ0eUbC_j4" role="37wK5m">
+                  <ref role="3cqZAo" node="VPgi8eiqeO" resolve="myViewId" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3dJ0eUbDgQG" role="3cqZAp">
+          <node concept="3clFbS" id="3dJ0eUbDgQO" role="3clFbx">
+            <node concept="3cpWs8" id="3dJ0eUbDth$" role="3cqZAp">
+              <node concept="3cpWsn" id="3dJ0eUbDth_" role="3cpWs9">
+                <property role="TrG5h" value="data" />
+                <node concept="3uibUv" id="3dJ0eUbDthy" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+                <node concept="2OqwBi" id="3dJ0eUbDthA" role="33vP2m">
+                  <node concept="37vLTw" id="3dJ0eUbDthB" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3dJ0eUbC_j0" resolve="descriptor" />
+                  </node>
+                  <node concept="liA8E" id="3dJ0eUbDthC" role="2OqNvi">
+                    <ref role="37wK5l" to="imq3:3dJ0eUbDaTz" resolve="getData" />
+                    <node concept="37vLTw" id="3dJ0eUbDthD" role="37wK5m">
+                      <ref role="3cqZAo" node="75_oBQVxzQL" resolve="dataId" />
+                    </node>
+                    <node concept="Xjq3P" id="3dJ0eUbHchI" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="3dJ0eUbDwNq" role="3cqZAp">
+              <node concept="3clFbS" id="3dJ0eUbDwNs" role="3clFbx">
+                <node concept="3cpWs6" id="3dJ0eUbDzSY" role="3cqZAp">
+                  <node concept="37vLTw" id="3dJ0eUbD$LL" role="3cqZAk">
+                    <ref role="3cqZAo" node="3dJ0eUbDth_" resolve="data" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="3dJ0eUbDyCK" role="3clFbw">
+                <node concept="10Nm6u" id="3dJ0eUbDySM" role="3uHU7w" />
+                <node concept="37vLTw" id="3dJ0eUbDxGE" role="3uHU7B">
+                  <ref role="3cqZAo" node="3dJ0eUbDth_" resolve="data" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3dJ0eUbD0YL" role="3clFbw">
+            <node concept="37vLTw" id="3dJ0eUbCUO5" role="2Oq$k0">
+              <ref role="3cqZAo" node="3dJ0eUbC_j0" resolve="descriptor" />
+            </node>
+            <node concept="liA8E" id="3dJ0eUbDg4v" role="2OqNvi">
+              <ref role="37wK5l" to="imq3:3dJ0eUbD8vS" resolve="isDataProvider" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3dJ0eUbCdNC" role="3cqZAp" />
         <node concept="3cpWs8" id="75_oBQVxIh7" role="3cqZAp">
           <node concept="3cpWsn" id="75_oBQVxIh8" role="3cpWs9">
             <property role="TrG5h" value="selectedObjects" />
