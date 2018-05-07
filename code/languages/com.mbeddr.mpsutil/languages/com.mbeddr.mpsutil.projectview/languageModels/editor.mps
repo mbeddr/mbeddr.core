@@ -2,7 +2,7 @@
 <model ref="r:9a2187fb-a1ba-4733-93ff-cba1f1f4bbdf(com.mbeddr.mpsutil.projectview.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -517,6 +517,7 @@
             </node>
             <node concept="2iRfu4" id="1CDgnklGVIc" role="2iSdaV" />
           </node>
+          <node concept="2EHx9g" id="7diJr$RvhaB" role="2iSdaV" />
           <node concept="3EZMnI" id="nuy2XHi9ep" role="3EZMnx">
             <node concept="VPM3Z" id="nuy2XHi9eq" role="3F10Kt">
               <property role="VOm3f" value="false" />
@@ -529,7 +530,6 @@
             </node>
             <node concept="2iRfu4" id="nuy2XHi9et" role="2iSdaV" />
           </node>
-          <node concept="2EHx9g" id="7diJr$RvhaB" role="2iSdaV" />
         </node>
         <node concept="3F0ifn" id="$6jtTwVJ6t" role="3EZMnx">
           <node concept="pkWqt" id="$6jtTwVJ7c" role="pqm2j">
