@@ -13,6 +13,7 @@
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" />
     <import index="9n5q" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:b2118c37-6c67-489b-87f9-b422baeb8ff0(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.gen)" />
+    <import index="7bhk" ref="r:7bb2797e-acd3-426b-9be6-19e432718b19(com.mbeddr.mpsutil.lantest.rt.checker.base)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -26,6 +27,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -270,24 +274,34 @@
                 <ref role="3TsBF5" to="gfdq:64cByBTL3ml" resolve="message" />
               </node>
             </node>
-            <node concept="10M0yZ" id="64cByBTLatc" role="37vLTx">
-              <ref role="1PxDUh" to="9n5q:6vg0wy0KKZn" resolve="ModelCheckerRuntimeErrorsHandler" />
-              <ref role="3cqZAo" to="9n5q:6vg0wy0KUsw" resolve="errorMessage" />
+            <node concept="2OqwBi" id="7VeUlv8N59a" role="37vLTx">
+              <node concept="10M0yZ" id="7VeUlv8N4Yp" role="2Oq$k0">
+                <ref role="3cqZAo" to="9n5q:7VeUlv8MwuE" resolve="INSTANCE" />
+                <ref role="1PxDUh" to="9n5q:6vg0wy0KKZn" resolve="ModelCheckerRuntimeErrorsHandler" />
+              </node>
+              <node concept="2OwXpG" id="7VeUlv8N5qX" role="2OqNvi">
+                <ref role="2Oxat5" to="7bhk:7VeUlv8Ml0D" resolve="errorMessage" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="7VeUlv6ZtLZ" role="3cqZAp">
           <node concept="37vLTI" id="7VeUlv6ZuZi" role="3clFbG">
-            <node concept="10M0yZ" id="7VeUlv6Zvo8" role="37vLTx">
-              <ref role="1PxDUh" to="9n5q:6vg0wy0KKZn" resolve="ModelCheckerRuntimeErrorsHandler" />
-              <ref role="3cqZAo" to="9n5q:7VeUlv6Zp5A" resolve="stackTrace" />
-            </node>
             <node concept="2OqwBi" id="7VeUlv6Zu4H" role="37vLTJ">
               <node concept="37vLTw" id="7VeUlv6ZtLX" role="2Oq$k0">
                 <ref role="3cqZAo" node="64cByBTL89o" resolve="exceptionAnnotation" />
               </node>
               <node concept="3TrcHB" id="7VeUlv6Zupg" role="2OqNvi">
                 <ref role="3TsBF5" to="gfdq:7VeUlv6Zsjs" resolve="stackTrace" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7VeUlv8N5uA" role="37vLTx">
+              <node concept="10M0yZ" id="7VeUlv8N5uB" role="2Oq$k0">
+                <ref role="3cqZAo" to="9n5q:7VeUlv8MwuE" resolve="INSTANCE" />
+                <ref role="1PxDUh" to="9n5q:6vg0wy0KKZn" resolve="ModelCheckerRuntimeErrorsHandler" />
+              </node>
+              <node concept="2OwXpG" id="7VeUlv8N5Ls" role="2OqNvi">
+                <ref role="2Oxat5" to="7bhk:7VeUlv8Mlq5" resolve="stackTrace" />
               </node>
             </node>
           </node>

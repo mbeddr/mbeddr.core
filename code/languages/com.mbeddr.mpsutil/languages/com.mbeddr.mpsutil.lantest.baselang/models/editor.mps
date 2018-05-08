@@ -97,7 +97,7 @@
               <property role="3F0ifm" value="temporary model:" />
             </node>
             <node concept="3F1sOY" id="3Ts5Ln3NdZg" role="3EZMnx">
-              <ref role="1NtTu8" to="pgnu:3Ts5Ln3NdYJ" resolve="tempModel" />
+              <ref role="1NtTu8" to="pgnu:3Ts5Ln3NdYJ" resolve="temporaryModel" />
             </node>
             <node concept="l2Vlx" id="3Ts5Ln3NdZh" role="2iSdaV" />
           </node>

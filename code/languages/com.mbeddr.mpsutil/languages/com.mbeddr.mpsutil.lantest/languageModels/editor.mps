@@ -390,16 +390,6 @@
         <node concept="l2Vlx" id="484XVyxOHMd" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="484XVyxOHKJ" role="3EZMnx" />
-      <node concept="3EZMnI" id="4XCJ8CcQ6YI" role="3EZMnx">
-        <node concept="VPM3Z" id="4XCJ8CcQ6YJ" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3XFhqQ" id="4XCJ8CcQ6YK" role="3EZMnx" />
-        <node concept="3F0ifn" id="4XCJ8CcQ6YL" role="3EZMnx">
-          <property role="3F0ifm" value="coverage criteria (ToDo):" />
-        </node>
-        <node concept="l2Vlx" id="4XCJ8CcQ6YM" role="2iSdaV" />
-      </node>
       <node concept="3EZMnI" id="1ir9k2TCuAm" role="3EZMnx">
         <node concept="2iRkQZ" id="1ir9k2TCuAn" role="2iSdaV" />
         <node concept="3EZMnI" id="1ir9k2TCuxj" role="3EZMnx">
@@ -421,7 +411,7 @@
           <node concept="3F0ifn" id="1ir9k2TCuDT" role="3EZMnx">
             <property role="3F0ifm" value="force save all mutants:" />
           </node>
-          <node concept="3F0A7n" id="1ir9k2TCuEa" role="3EZMnx">
+          <node concept="27S6Sx" id="7VeUlv8Z0We" role="3EZMnx">
             <ref role="1NtTu8" to="gfdq:1ir9k2TCuuL" resolve="forceSavingOfAllModels" />
           </node>
           <node concept="l2Vlx" id="1ir9k2TCuDl" role="2iSdaV" />
@@ -449,13 +439,6 @@
         <node concept="l2Vlx" id="7K2NL56H6SV" role="2czzBx" />
       </node>
       <node concept="l2Vlx" id="2P6psD9DHhn" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="3jJnA6J6Olv">
-    <property role="3GE5qa" value="coverage" />
-    <ref role="1XX52x" to="gfdq:3jJnA6J6Olp" resolve="NoCoverageChecker" />
-    <node concept="3F0ifn" id="3jJnA6J6OlE" role="2wV5jI">
-      <property role="3F0ifm" value="none" />
     </node>
   </node>
   <node concept="24kQdi" id="5aWlhTu2Z$M">

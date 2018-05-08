@@ -16,7 +16,6 @@
     <import index="9n5q" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:b2118c37-6c67-489b-87f9-b422baeb8ff0(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.gen)" />
     <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" />
     <import index="cg7n" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:958b1fc2-ce2f-49b5-9a5c-0628d05fdd4c(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.seed)" />
-    <import index="7ai1" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:b8065b2e-a033-48ba-9ab9-5b1ff3550962(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.coverage)" />
     <import index="v5ts" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:d411f908-940a-47de-a6bb-6c4bd57886dd(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.saver)" />
     <import index="2l8" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:bcbcc941-b1ce-4077-84a0-535ddfca3377(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.filter)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -287,7 +286,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="2WJ8cS_vWVE" role="13h7CS">
-      <property role="TrG5h" value="targetModel" />
+      <property role="TrG5h" value="modelWithSavedResults" />
       <node concept="3Tm1VV" id="3acDVtIDYz3" role="1B3o_S" />
       <node concept="3uibUv" id="2WJ8cS_wyW3" role="3clF45">
         <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
@@ -569,49 +568,6 @@
       </node>
       <node concept="3uibUv" id="2P6psD9EqMM" role="3clF45">
         <ref role="3uigEE" to="cg7n:7sjDQ2_oZCX" resolve="IMutationSeed" />
-      </node>
-    </node>
-  </node>
-  <node concept="13h7C7" id="3jJnA6J6Ofi">
-    <property role="3GE5qa" value="coverage" />
-    <ref role="13h7C2" to="gfdq:3jJnA6J6Ofh" resolve="ICoverageCriteria" />
-    <node concept="13i0hz" id="3jJnA6J6Og8" role="13h7CS">
-      <property role="13i0iv" value="true" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getCoverageChecker" />
-      <node concept="3Tm1VV" id="3jJnA6J6Og9" role="1B3o_S" />
-      <node concept="3uibUv" id="3jJnA6J6Okp" role="3clF45">
-        <ref role="3uigEE" to="7ai1:7sjDQ2_p0Nh" resolve="ICoverageChecker" />
-      </node>
-      <node concept="3clFbS" id="3jJnA6J6Ogb" role="3clF47" />
-    </node>
-    <node concept="13hLZK" id="3jJnA6J6Ofj" role="13h7CW">
-      <node concept="3clFbS" id="3jJnA6J6Ofk" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="3jJnA6J6Om4">
-    <property role="3GE5qa" value="coverage" />
-    <ref role="13h7C2" to="gfdq:3jJnA6J6Olp" resolve="NoCoverageChecker" />
-    <node concept="13hLZK" id="3jJnA6J6Om5" role="13h7CW">
-      <node concept="3clFbS" id="3jJnA6J6Om6" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="3jJnA6J6Om9" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getCoverageChecker" />
-      <ref role="13i0hy" node="3jJnA6J6Og8" resolve="getCoverageChecker" />
-      <node concept="3Tm1VV" id="3jJnA6J6Oma" role="1B3o_S" />
-      <node concept="3clFbS" id="3jJnA6J6Omd" role="3clF47">
-        <node concept="3cpWs6" id="3jJnA6J6OmB" role="3cqZAp">
-          <node concept="2ShNRf" id="3jJnA6J6Onn" role="3cqZAk">
-            <node concept="HV5vD" id="3jJnA6J6Qkn" role="2ShVmc">
-              <ref role="HV5vE" to="7ai1:7sjDQ2_p0OD" resolve="NoCoverage" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="3jJnA6J6Ome" role="3clF45">
-        <ref role="3uigEE" to="7ai1:7sjDQ2_p0Nh" resolve="ICoverageChecker" />
       </node>
     </node>
   </node>

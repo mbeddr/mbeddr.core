@@ -201,21 +201,6 @@
       <ref role="20lvS9" node="7K2NL56H6Rb" resolve="AbstractConceptDeclarationRef" />
     </node>
   </node>
-  <node concept="PlHQZ" id="3jJnA6J6Ofh">
-    <property role="TrG5h" value="ICoverageCriteria" />
-    <property role="3GE5qa" value="coverage" />
-    <property role="EcuMT" value="3814371183048737745" />
-  </node>
-  <node concept="1TIwiD" id="3jJnA6J6Olp">
-    <property role="TrG5h" value="NoCoverageChecker" />
-    <property role="34LRSv" value="none" />
-    <property role="3GE5qa" value="coverage" />
-    <property role="EcuMT" value="3814371183048738137" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3jJnA6J6Om7" role="PzmwI">
-      <ref role="PrY4T" node="3jJnA6J6Ofh" resolve="ICoverageCriteria" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="33cGTVo609o">
     <property role="TrG5h" value="ILanguageSpecificConfig" />
     <property role="EcuMT" value="3516382903881171544" />

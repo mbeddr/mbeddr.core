@@ -30,6 +30,9 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
+    <import index="7bhk" ref="r:7bb2797e-acd3-426b-9be6-19e432718b19(com.mbeddr.mpsutil.lantest.rt.checker.base)" />
+    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
+    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" implicit="true" />
     <import index="uu96" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:170ef591-83b8-43a2-8998-a090f5a13f09(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -44,6 +47,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
@@ -215,6 +219,7 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -1753,6 +1758,22 @@
         <node concept="3clFbH" id="6OuwAtxV6hV" role="3cqZAp" />
         <node concept="MpOyq" id="wzWurgzbH2" role="3cqZAp">
           <node concept="3clFbS" id="wzWurgzbH4" role="2LFqv$">
+            <node concept="3clFbJ" id="7VeUlv8jV8w" role="3cqZAp">
+              <node concept="3clFbS" id="7VeUlv8jV8y" role="3clFbx">
+                <node concept="3zACq4" id="7VeUlv8k1uL" role="3cqZAp" />
+              </node>
+              <node concept="2dkUwp" id="7VeUlv8ke6Q" role="3clFbw">
+                <node concept="2OqwBi" id="7VeUlv8jXe3" role="3uHU7B">
+                  <node concept="37vLTw" id="7VeUlv8jWkD" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5oO2AcYig5H" resolve="allRoots" />
+                  </node>
+                  <node concept="34oBXx" id="7VeUlv8jZ4C" role="2OqNvi" />
+                </node>
+                <node concept="37vLTw" id="7VeUlv8k11h" role="3uHU7w">
+                  <ref role="3cqZAo" node="5oO2AcYig6e" resolve="crtIndex" />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="wzWurgz6sm" role="3cqZAp">
               <node concept="3cpWsn" id="wzWurgz6sp" role="3cpWs9">
                 <property role="TrG5h" value="currentRootNode" />
@@ -2123,9 +2144,6 @@
                     <node concept="37vLTw" id="1EeUs_U2eL5" role="3fr31v">
                       <ref role="3cqZAo" node="5oO2AcYig7W" resolve="modelIsValid" />
                     </node>
-                  </node>
-                  <node concept="9aQIb" id="1EeUs_U2ge4" role="9aQIa">
-                    <node concept="3clFbS" id="1EeUs_U2ge5" role="9aQI4" />
                   </node>
                 </node>
               </node>
@@ -2910,6 +2928,17 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="5oO2AcYiIBf" role="3clF47">
+        <node concept="3clFbF" id="7VeUlv8egME" role="3cqZAp">
+          <node concept="2OqwBi" id="7VeUlv8M_vo" role="3clFbG">
+            <node concept="10M0yZ" id="7VeUlv8M_ml" role="2Oq$k0">
+              <ref role="3cqZAo" node="7VeUlv8MqQc" resolve="INSTANCE" />
+              <ref role="1PxDUh" node="6vg0wy0KKZn" resolve="EditorRuntimeErrorsHandler" />
+            </node>
+            <node concept="liA8E" id="7VeUlv8M_Ln" role="2OqNvi">
+              <ref role="37wK5l" to="7bhk:7VeUlv8Mmvn" resolve="startNewChecking" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3Ts5Ln3Fa01" role="3cqZAp">
           <node concept="3cpWsn" id="3Ts5Ln3Fa02" role="3cpWs9">
             <property role="TrG5h" value="latch" />
@@ -3095,8 +3124,21 @@
         </node>
         <node concept="3clFbH" id="3Ts5Ln3FfPm" role="3cqZAp" />
         <node concept="3clFbF" id="5oO2AcYiNGT" role="3cqZAp">
-          <node concept="37vLTw" id="5oO2AcYiNGR" role="3clFbG">
-            <ref role="3cqZAo" node="5oO2AcYiN_H" resolve="nodeSuccessfullyOpened" />
+          <node concept="1Wc70l" id="7VeUlv8ehNy" role="3clFbG">
+            <node concept="3fqX7Q" id="7VeUlv8k1Fg" role="3uHU7w">
+              <node concept="2OqwBi" id="7VeUlv8M_Y7" role="3fr31v">
+                <node concept="10M0yZ" id="7VeUlv8M_OV" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7VeUlv8MqQc" resolve="INSTANCE" />
+                  <ref role="1PxDUh" node="6vg0wy0KKZn" resolve="EditorRuntimeErrorsHandler" />
+                </node>
+                <node concept="2OwXpG" id="7VeUlv8MAex" role="2OqNvi">
+                  <ref role="2Oxat5" to="7bhk:7VeUlv8MkGN" resolve="errorOccurredDuringChecking" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="5oO2AcYiNGR" role="3uHU7B">
+              <ref role="3cqZAo" node="5oO2AcYiN_H" resolve="nodeSuccessfullyOpened" />
+            </node>
           </node>
         </node>
       </node>
@@ -3121,6 +3163,63 @@
     <node concept="3Tm1VV" id="5oO2AcYiI_N" role="1B3o_S" />
     <node concept="NWlO9" id="5oO2AcYiICP" role="lGtFl">
       <property role="NWlVz" value="Utility methods to check editors' robustness." />
+    </node>
+  </node>
+  <node concept="312cEu" id="6vg0wy0KKZn">
+    <property role="TrG5h" value="EditorRuntimeErrorsHandler" />
+    <node concept="2tJIrI" id="6vg0wy0KL0m" role="jymVt" />
+    <node concept="Wx3nA" id="7VeUlv8MqQc" role="jymVt">
+      <property role="TrG5h" value="INSTANCE" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="7VeUlv8MoPE" role="1tU5fm">
+        <ref role="3uigEE" node="6vg0wy0KKZn" resolve="EditorRuntimeErrorsHandler" />
+      </node>
+      <node concept="2ShNRf" id="7VeUlv8Mp51" role="33vP2m">
+        <node concept="1pGfFk" id="7VeUlv8MqPF" role="2ShVmc">
+          <ref role="37wK5l" node="7VeUlv8Mo64" resolve="EditorRuntimeErrorsHandler" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7VeUlv8MoAX" role="jymVt" />
+    <node concept="312cEg" id="7VeUlv8MnvN" role="jymVt">
+      <property role="TrG5h" value="EDITOR_CELL_FACTORY_IMPL_LOG" />
+      <property role="34CwA1" value="false" />
+      <property role="3TUv4t" value="true" />
+      <property role="eg7rD" value="false" />
+      <node concept="3uibUv" id="7VeUlv8MnvQ" role="1tU5fm">
+        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
+      </node>
+      <node concept="2YIFZM" id="7VeUlv8MnvS" role="33vP2m">
+        <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
+        <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class):org.apache.log4j.Logger" resolve="getLogger" />
+        <node concept="3VsKOn" id="7VeUlv8MnvT" role="37wK5m">
+          <ref role="3VsUkX" to="g51k:~EditorCellFactoryImpl" resolve="EditorCellFactoryImpl" />
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="7VeUlv8MnvR" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="7VeUlv8dzvW" role="jymVt" />
+    <node concept="3clFbW" id="7VeUlv8Mo64" role="jymVt">
+      <node concept="3cqZAl" id="7VeUlv8Mo66" role="3clF45" />
+      <node concept="3Tm6S6" id="7VeUlv8MqYl" role="1B3o_S" />
+      <node concept="3clFbS" id="7VeUlv8Mo68" role="3clF47">
+        <node concept="3clFbF" id="7VeUlv8Molh" role="3cqZAp">
+          <node concept="1rXfSq" id="7VeUlv8Molg" role="3clFbG">
+            <ref role="37wK5l" to="7bhk:7VeUlv8MmUS" resolve="addAppender" />
+            <node concept="37vLTw" id="7VeUlv8Momz" role="37wK5m">
+              <ref role="3cqZAo" node="7VeUlv8MnvN" resolve="EDITOR_CELL_FACTORY_IMPL_LOG" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7VeUlv8Modl" role="jymVt" />
+    <node concept="3Tm1VV" id="6vg0wy0KKZo" role="1B3o_S" />
+    <node concept="NWlO9" id="6vg0wy0KL0d" role="lGtFl">
+      <property role="NWlVz" value="Handler class for runtime errors in editor." />
+    </node>
+    <node concept="3uibUv" id="7VeUlv8dBWs" role="1zkMxy">
+      <ref role="3uigEE" to="7bhk:7VeUlv8dAWL" resolve="LoggedExceptionsHandlerBase" />
     </node>
   </node>
 </model>
