@@ -653,6 +653,11 @@
         <property role="3zO_yB" value=".cref" />
       </node>
     </node>
+    <node concept="3zOSV2" id="3aMV05sDRaK" role="3zO_yG">
+      <node concept="3zO__Y" id="3aMV05sDRdJ" role="3zO_yJ">
+        <property role="3zO_yB" value=".superscript" />
+      </node>
+    </node>
   </node>
 </model>
 
