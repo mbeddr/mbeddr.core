@@ -100,6 +100,12 @@
       <property role="IQ2ns" value="5782973724855443006" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="3dJ0eUbDUtM" role="1TKVEi">
+      <property role="IQ2ns" value="3706182042894444402" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dataProvider" />
+      <ref role="20lvS9" node="3dJ0eUbDUtS" resolve="DataProviderFunction" />
+    </node>
     <node concept="1TJgyj" id="7diJr$Rulso" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="extends" />
@@ -251,6 +257,23 @@
       <property role="IQ2ns" value="5782973724855054027" />
       <ref role="20lvS9" to="tp4k:hwtC5zi" resolve="ActionGroupDeclaration" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3dJ0eUbDUtS">
+    <property role="EcuMT" value="3706182042894444408" />
+    <property role="TrG5h" value="DataProviderFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="3dJ0eUbDUAO">
+    <property role="EcuMT" value="3706182042894444980" />
+    <property role="TrG5h" value="DataIdParamter" />
+    <property role="34LRSv" value="dataId" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="3dJ0eUbFnT0">
+    <property role="EcuMT" value="3706182042894827072" />
+    <property role="TrG5h" value="ViewParamter" />
+    <property role="34LRSv" value="view" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>
 
