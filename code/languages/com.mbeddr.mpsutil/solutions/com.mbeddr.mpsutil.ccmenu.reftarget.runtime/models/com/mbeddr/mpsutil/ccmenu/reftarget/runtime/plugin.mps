@@ -2103,35 +2103,29 @@
             <node concept="3uibUv" id="2CFqHq6q6jQ" role="1tU5fm">
               <ref role="3uigEE" to="ykok:~ReferenceDescriptor" resolve="ReferenceDescriptor" />
             </node>
-            <node concept="2YIFZM" id="1SwultAixFB" role="33vP2m">
+            <node concept="2YIFZM" id="2CFqHq6q6jR" role="33vP2m">
+              <ref role="37wK5l" to="ykok:~ModelConstraints.getSmartReferenceDescriptor(org.jetbrains.mps.openapi.model.SNode,java.lang.String,int,org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.smodel.constraints.ReferenceDescriptor" resolve="getSmartReferenceDescriptor" />
               <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-              <ref role="37wK5l" to="ykok:~ModelConstraints.getReferenceDescriptor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink,int,org.jetbrains.mps.openapi.language.SReferenceLink,org.jetbrains.mps.openapi.language.SAbstractConcept):jetbrains.mps.smodel.constraints.ReferenceDescriptor" resolve="getReferenceDescriptor" />
-              <node concept="37vLTw" id="1SwultAixFC" role="37wK5m">
+              <node concept="37vLTw" id="2CFqHq6q6jS" role="37wK5m">
                 <ref role="3cqZAo" node="2CFqHq6q6jC" resolve="parent" />
               </node>
-              <node concept="37vLTw" id="1SwultAixFD" role="37wK5m">
-                <ref role="3cqZAo" node="2CFqHq6q6jE" resolve="linkInParent" />
-              </node>
-              <node concept="3cmrfG" id="1SwultAixFE" role="37wK5m">
-                <property role="3cmrfH" value="0" />
-              </node>
-              <node concept="2YIFZM" id="1SwultAi$UV" role="37wK5m">
-                <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getReferenceLink(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SReferenceLink" resolve="getReferenceLink" />
-                <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
-                <node concept="37vLTw" id="1SwultAiAEh" role="37wK5m">
-                  <ref role="3cqZAo" node="2CFqHq6q6jI" resolve="smartRefLink" />
+              <node concept="2OqwBi" id="2CFqHq6q6jT" role="37wK5m">
+                <node concept="37vLTw" id="2CFqHq6q6jU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2CFqHq6q6jE" resolve="linkInParent" />
+                </node>
+                <node concept="liA8E" id="2CFqHq6r6FM" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
                 </node>
               </node>
-              <node concept="2YIFZM" id="1SwultAiN4E" role="37wK5m">
-                <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getConcept(org.jetbrains.mps.openapi.model.SNode):org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getConcept" />
-                <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
-                <node concept="2OqwBi" id="1SwultAiFuo" role="37wK5m">
-                  <node concept="37vLTw" id="1SwultAiE2O" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2CFqHq6q6jI" resolve="smartRefLink" />
-                  </node>
-                  <node concept="3TrEf2" id="1SwultAiHT$" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
-                  </node>
+              <node concept="3cmrfG" id="2CFqHq6q6jW" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="2OqwBi" id="2CFqHq6q6jX" role="37wK5m">
+                <node concept="37vLTw" id="2CFqHq6q6jY" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2CFqHq6q6jG" resolve="smartRefConcept" />
+                </node>
+                <node concept="liA8E" id="2CFqHq6q6jZ" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
                 </node>
               </node>
             </node>

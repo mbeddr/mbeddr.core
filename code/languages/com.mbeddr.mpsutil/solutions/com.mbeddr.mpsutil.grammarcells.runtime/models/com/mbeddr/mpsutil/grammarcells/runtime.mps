@@ -23395,12 +23395,12 @@
             </node>
             <node concept="2ShNRf" id="3pFNVizDM_c" role="33vP2m">
               <node concept="1pGfFk" id="3pFNVizDM_F" role="2ShVmc">
-                <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyAccessor" />
+                <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String,boolean,boolean,jetbrains.mps.openapi.editor.EditorContext)" resolve="PropertyAccessor" />
                 <node concept="1rXfSq" id="3pFNVizDM$u" role="37wK5m">
                   <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
                 </node>
                 <node concept="1rXfSq" id="3pFNVizDN6e" role="37wK5m">
-                  <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getProperty():org.jetbrains.mps.openapi.language.SProperty" resolve="getProperty" />
+                  <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getPropertyName():java.lang.String" resolve="getPropertyName" />
                 </node>
                 <node concept="37vLTw" id="3pFNVizDM$w" role="37wK5m">
                   <ref role="3cqZAo" to="emqf:~CellProviderWithRole.myReadOnly" resolve="myReadOnly" />
@@ -23521,12 +23521,12 @@
                   </node>
                   <node concept="2ShNRf" id="3pFNVizDNCi" role="37wK5m">
                     <node concept="1pGfFk" id="3pFNVizDNCj" role="2ShVmc">
-                      <ref role="37wK5l" to="b3bi:~CellAction_DeleteSPropertyOrNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty)" resolve="CellAction_DeleteSPropertyOrNode" />
+                      <ref role="37wK5l" to="b3bi:~CellAction_DeletePropertyOrNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="CellAction_DeletePropertyOrNode" />
                       <node concept="1rXfSq" id="3pFNVizDM$Q" role="37wK5m">
                         <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
                       </node>
                       <node concept="1rXfSq" id="3pFNVizDNjI" role="37wK5m">
-                        <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getProperty():org.jetbrains.mps.openapi.language.SProperty" resolve="getProperty" />
+                        <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getPropertyName():java.lang.String" resolve="getPropertyName" />
                       </node>
                     </node>
                   </node>
@@ -23546,12 +23546,12 @@
                   </node>
                   <node concept="2ShNRf" id="3pFNVizDNBW" role="37wK5m">
                     <node concept="1pGfFk" id="3pFNVizDNBX" role="2ShVmc">
-                      <ref role="37wK5l" to="b3bi:~CellAction_DeleteSPropertyOrNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty)" resolve="CellAction_DeleteSPropertyOrNode" />
+                      <ref role="37wK5l" to="b3bi:~CellAction_DeletePropertyOrNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="CellAction_DeletePropertyOrNode" />
                       <node concept="1rXfSq" id="3pFNVizDM$W" role="37wK5m">
                         <ref role="37wK5l" to="exr9:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
                       </node>
                       <node concept="1rXfSq" id="3pFNVizDNm5" role="37wK5m">
-                        <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getProperty():org.jetbrains.mps.openapi.language.SProperty" resolve="getProperty" />
+                        <ref role="37wK5l" to="p9jd:~PropertyCellProvider.getPropertyName():java.lang.String" resolve="getPropertyName" />
                       </node>
                     </node>
                   </node>
