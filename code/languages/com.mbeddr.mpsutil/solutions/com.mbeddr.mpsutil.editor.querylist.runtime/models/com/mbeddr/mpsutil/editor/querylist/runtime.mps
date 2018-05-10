@@ -415,7 +415,7 @@
       <node concept="3Tm1VV" id="1BXECvJT4Uj" role="1B3o_S" />
       <node concept="3clFbS" id="1BXECvJT4Uk" role="3clF47">
         <node concept="XkiVB" id="1BXECvJT51l" role="3cqZAp">
-          <ref role="37wK5l" to="emqf:~AbstractCellListHandler.&lt;init&gt;(java.lang.String,jetbrains.mps.openapi.editor.EditorContext)" resolve="AbstractCellListHandler" />
+          <ref role="37wK5l" to="emqf:~AbstractCellListHandler.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext)" resolve="AbstractCellListHandler" />
           <node concept="37vLTw" id="1BXECvJT5bk" role="37wK5m">
             <ref role="3cqZAo" node="1BXECvJT53g" resolve="context" />
           </node>
@@ -680,9 +680,9 @@
               <ref role="3cqZAo" node="4DLCSzVGnq8" resolve="emptyCell" />
             </node>
             <node concept="liA8E" id="4DLCSzVGnqy" role="2OqNvi">
-              <ref role="37wK5l" to="g51k:~EditorCell_Basic.setSRole(org.jetbrains.mps.openapi.language.SConceptFeature):void" resolve="setSRole" />
+              <ref role="37wK5l" to="g51k:~EditorCell_Basic.setRole(java.lang.String):void" resolve="setRole" />
               <node concept="1rXfSq" id="4DLCSzVGnqz" role="37wK5m">
-                <ref role="37wK5l" to="emqf:~AbstractCellListHandler.getElementSRole():org.jetbrains.mps.openapi.language.SConceptFeature" resolve="getElementSRole" />
+                <ref role="37wK5l" to="emqf:~AbstractCellListHandler.getElementRole():java.lang.String" resolve="getElementRole" />
               </node>
             </node>
           </node>
