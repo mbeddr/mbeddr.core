@@ -448,7 +448,7 @@
     <node concept="2tJIrI" id="1BXECvJT4NA" role="jymVt" />
     <node concept="3clFb_" id="6gcdt_WBB3R" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getElementSRole" />
+      <property role="TrG5h" value="getElementRole" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="6gcdt_WBB3S" role="1B3o_S" />
@@ -706,7 +706,7 @@
             <node concept="liA8E" id="4DLCSzVGnqy" role="2OqNvi">
               <ref role="37wK5l" to="g51k:~EditorCell_Basic.setRole(java.lang.String):void" resolve="setRole" />
               <node concept="1rXfSq" id="4DLCSzVGnqz" role="37wK5m">
-                <ref role="37wK5l" to="emqf:~AbstractCellListHandler.getElementRole():java.lang.String" resolve="getElementRole" />
+                <ref role="37wK5l" node="6gcdt_WBB3R" resolve="getElementRole" />
               </node>
             </node>
           </node>
