@@ -91,7 +91,7 @@
       <property role="20kJfa" value="scope" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="5961733595647167384" />
-      <ref role="20lvS9" node="5aWlhTu2ZzL" resolve="LanguageRegexReference" />
+      <ref role="20lvS9" node="5aWlhTu2ZzL" resolve="InterestingLanguages" />
     </node>
     <node concept="1TJgyj" id="30nlpkLbz5c" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -151,6 +151,11 @@
       <property role="TrG5h" value="checkEditor" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="5JsRhvvgGh" role="1TKVEl">
+      <property role="IQ2nx" value="103428260108241681" />
+      <property role="TrG5h" value="checkEditorOnTheFly" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyi" id="484XVyxOHK2" role="1TKVEl">
       <property role="IQ2nx" value="4757199478771080194" />
       <property role="TrG5h" value="checkGeneratedCode" />
@@ -207,14 +212,17 @@
     <property role="3GE5qa" value="language_specific_config" />
   </node>
   <node concept="1TIwiD" id="5aWlhTu2ZzL">
-    <property role="TrG5h" value="LanguageRegexReference" />
+    <property role="TrG5h" value="InterestingLanguages" />
     <property role="EcuMT" value="5961733595646916849" />
-    <property role="34LRSv" value="language name matcher based on regex" />
+    <property role="34LRSv" value="interesting languages matcher" />
+    <property role="3GE5qa" value="language_scope" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5aWlhTu2Z$m" role="1TKVEl">
-      <property role="TrG5h" value="regex" />
-      <property role="IQ2nx" value="5961733595646916886" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyj" id="6CKjFdBPe0z" role="1TKVEi">
+      <property role="IQ2ns" value="7651702299350589475" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="interestingLanguages" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6CKjFdBPdCS" resolve="InterestingLanguage" />
     </node>
   </node>
   <node concept="1TIwiD" id="2A9nHKANPGu">
@@ -318,6 +326,43 @@
     </node>
     <node concept="PrWs8" id="3S9K2OvqeXM" role="PzmwI">
       <ref role="PrY4T" node="30nlpkLbzJw" resolve="IConceptChooser" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6CKjFdBPdCS">
+    <property role="EcuMT" value="7651702299350587960" />
+    <property role="TrG5h" value="InterestingLanguage" />
+    <property role="34LRSv" value="language" />
+    <property role="R4oN_" value="allow/dissallow languages based on their name" />
+    <property role="3GE5qa" value="language_scope" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6CKjFdBR33G" role="1TKVEi">
+      <property role="IQ2ns" value="7651702299351068908" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="excluded" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6CKjFdBR33w" resolve="LanguageExcluded" />
+    </node>
+    <node concept="1TJgyi" id="6CKjFdBPdCT" role="1TKVEl">
+      <property role="IQ2nx" value="7651702299350587961" />
+      <property role="TrG5h" value="languageNameSubstring" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6CKjFdBPdDc" role="1TKVEl">
+      <property role="IQ2nx" value="7651702299350587980" />
+      <property role="TrG5h" value="languageNameSubstringIsRegex" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6CKjFdBR33w">
+    <property role="EcuMT" value="7651702299351068896" />
+    <property role="3GE5qa" value="language_scope" />
+    <property role="TrG5h" value="LanguageExcluded" />
+    <property role="34LRSv" value="excluded" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6CKjFdBR33x" role="1TKVEl">
+      <property role="IQ2nx" value="7651702299351068897" />
+      <property role="TrG5h" value="languageNameSubstring" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
