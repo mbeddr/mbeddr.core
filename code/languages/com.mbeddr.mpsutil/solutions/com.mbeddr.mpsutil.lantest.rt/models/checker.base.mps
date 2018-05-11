@@ -13,6 +13,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -38,6 +39,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
@@ -73,6 +75,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -107,6 +110,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -250,6 +254,7 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3clFbH" id="4HEygJ_mp18" role="3cqZAp" />
                     <node concept="3clFbF" id="7VeUlv8MlOZ" role="3cqZAp">
                       <node concept="37vLTI" id="7VeUlv8MlP0" role="3clFbG">
                         <node concept="37vLTw" id="7VeUlv8MlP1" role="37vLTJ">
@@ -275,17 +280,30 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbC" id="7VeUlv92S4p" role="3clFbw">
-                    <node concept="10M0yZ" id="7VeUlv92SwU" role="3uHU7w">
-                      <ref role="3cqZAo" to="q7tw:~Level.ERROR" resolve="ERROR" />
-                      <ref role="1PxDUh" to="q7tw:~Level" resolve="Level" />
-                    </node>
-                    <node concept="2OqwBi" id="7VeUlv92Qtk" role="3uHU7B">
-                      <node concept="37vLTw" id="7VeUlv92QhB" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
+                  <node concept="22lmx$" id="3mOqkJu85aL" role="3clFbw">
+                    <node concept="3clFbC" id="7VeUlv92S4p" role="3uHU7B">
+                      <node concept="2OqwBi" id="7VeUlv92Qtk" role="3uHU7B">
+                        <node concept="37vLTw" id="7VeUlv92QhB" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
+                        </node>
+                        <node concept="liA8E" id="7VeUlv92Rrg" role="2OqNvi">
+                          <ref role="37wK5l" to="lx42:~LoggingEvent.getLevel():org.apache.log4j.Level" resolve="getLevel" />
+                        </node>
                       </node>
-                      <node concept="liA8E" id="7VeUlv92Rrg" role="2OqNvi">
-                        <ref role="37wK5l" to="lx42:~LoggingEvent.getLevel():org.apache.log4j.Level" resolve="getLevel" />
+                      <node concept="10M0yZ" id="7VeUlv92SwU" role="3uHU7w">
+                        <ref role="3cqZAo" to="q7tw:~Level.ERROR" resolve="ERROR" />
+                        <ref role="1PxDUh" to="q7tw:~Level" resolve="Level" />
+                      </node>
+                    </node>
+                    <node concept="3y3z36" id="3mOqkJu86My" role="3uHU7w">
+                      <node concept="10Nm6u" id="3mOqkJu86VI" role="3uHU7w" />
+                      <node concept="2OqwBi" id="3mOqkJu8606" role="3uHU7B">
+                        <node concept="37vLTw" id="3mOqkJu8607" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
+                        </node>
+                        <node concept="liA8E" id="3mOqkJu8608" role="2OqNvi">
+                          <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation():org.apache.log4j.spi.ThrowableInformation" resolve="getThrowableInformation" />
+                        </node>
                       </node>
                     </node>
                   </node>
