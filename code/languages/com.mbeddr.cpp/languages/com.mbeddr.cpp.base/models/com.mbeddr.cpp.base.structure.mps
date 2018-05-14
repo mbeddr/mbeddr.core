@@ -56,6 +56,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -73,6 +76,13 @@
       <property role="20kJfa" value="members" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="3UsoL$l5qj8" role="1TKVEi">
+      <property role="IQ2ns" value="4511589886097466568" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ancestors" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3UsoL$l5qkL" resolve="InheritanceInstance" />
     </node>
     <node concept="PrWs8" id="4o2nsMgB$iI" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -215,6 +225,25 @@
     </node>
     <node concept="PrWs8" id="5C47DuoDR$z" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3UsoL$l5qkL">
+    <property role="EcuMT" value="4511589886097466673" />
+    <property role="TrG5h" value="InheritanceInstance" />
+    <property role="R4oN_" value="holds a reference to the inherited class and it's visibility" />
+    <property role="3GE5qa" value="inheritance" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3UsoL$l5qkM" role="1TKVEi">
+      <property role="IQ2ns" value="4511589886097466674" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="parent_class" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    </node>
+    <node concept="1TJgyi" id="3UsoL$l5qkP" role="1TKVEl">
+      <property role="IQ2nx" value="4511589886097466677" />
+      <property role="TrG5h" value="visibility" />
+      <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
     </node>
   </node>
 </model>

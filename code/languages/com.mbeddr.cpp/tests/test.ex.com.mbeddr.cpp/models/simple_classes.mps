@@ -306,6 +306,24 @@
         </node>
       </node>
     </node>
+    <node concept="2NXPZ9" id="3UsoL$l7dlO" role="N3F5h">
+      <property role="TrG5h" value="empty_1526304061930_4" />
+    </node>
+    <node concept="3mBW2U" id="3UsoL$l7dj4" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="ParentClass" />
+      <node concept="3mBbG7" id="3UsoL$l7doC" role="3mBdys">
+        <property role="1wg9_F" value="public" />
+        <property role="TrG5h" value="x" />
+        <node concept="26Vqqz" id="3UsoL$l7doU" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="3UsoL$l7dpl" role="3XIe9u">
+          <property role="2hmy$m" value="4" />
+        </node>
+      </node>
+    </node>
     <node concept="2NXPZ9" id="3v5DuFDsqvx" role="N3F5h">
       <property role="TrG5h" value="empty_1504793450056_2" />
     </node>
