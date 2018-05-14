@@ -18,6 +18,7 @@
     <import index="j4gk" ref="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" implicit="true" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
@@ -240,6 +241,7 @@
         </node>
         <node concept="3F0ifn" id="4o2nsMgBCm5" role="3EZMnx">
           <property role="3F0ifm" value="class" />
+          <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
         </node>
         <node concept="3F0A7n" id="4o2nsMgBCmu" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -488,6 +490,7 @@
     <node concept="3EZMnI" id="3UsoL$l5ql2" role="2wV5jI">
       <node concept="3F0A7n" id="3UsoL$l5qlc" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:3UsoL$l5qkP" resolve="visibility" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
       <node concept="1iCGBv" id="3UsoL$l5qll" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
