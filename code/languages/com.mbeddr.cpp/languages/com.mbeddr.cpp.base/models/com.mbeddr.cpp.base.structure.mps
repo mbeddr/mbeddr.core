@@ -80,7 +80,7 @@
     <node concept="1TJgyj" id="3UsoL$l5qj8" role="1TKVEi">
       <property role="IQ2ns" value="4511589886097466568" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="ancestors" />
+      <property role="20kJfa" value="inherits_from" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3UsoL$l5qkL" resolve="InheritanceInstance" />
     </node>

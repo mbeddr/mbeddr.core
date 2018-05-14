@@ -63,6 +63,7 @@
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
       <concept id="4511589886097466673" name="com.mbeddr.cpp.base.structure.InheritanceInstance" flags="ng" index="FysoC">
+        <property id="4511589886097466677" name="visibility" index="FysoG" />
         <reference id="4511589886097466674" name="parent_class" index="FysoF" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
@@ -78,9 +79,10 @@
         <reference id="5044697665789405054" name="clazz" index="3mBfEM" />
       </concept>
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
-        <child id="4511589886097466568" name="ancestors" index="Fysvh" />
+        <child id="4511589886097466568" name="inherits_from" index="Fysvh" />
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
+      <concept id="2995459757117065467" name="com.mbeddr.cpp.base.structure.MethodPrototype" flags="ng" index="1woGCW" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -312,9 +314,27 @@
       <node concept="FysoC" id="3UsoL$l7Hla" role="Fysvh">
         <ref role="FysoF" node="3UsoL$l7dj4" resolve="ParentClass" />
       </node>
+      <node concept="FysoC" id="3UsoL$l9zCX" role="Fysvh">
+        <ref role="FysoF" node="3UsoL$l7dj4" resolve="ParentClass" />
+      </node>
     </node>
     <node concept="2NXPZ9" id="3UsoL$l7dlO" role="N3F5h">
       <property role="TrG5h" value="empty_1526304061930_4" />
+    </node>
+    <node concept="3mBW2U" id="3UsoL$lcqT7" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="OtherClass" />
+      <node concept="FysoC" id="3UsoL$lcqWn" role="Fysvh">
+        <property role="FysoG" value="public" />
+        <ref role="FysoF" node="2Ai0Gt9Qxgo" resolve="SimpleCounter" />
+      </node>
+      <node concept="1woGCW" id="3UsoL$lcqWq" role="3mBdys">
+        <property role="TrG5h" value="a" />
+        <node concept="26Vqqz" id="3UsoL$lcqW_" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
     </node>
     <node concept="3mBW2U" id="3UsoL$l7dj4" role="N3F5h">
       <property role="2OOxQR" value="true" />

@@ -271,7 +271,7 @@
                     <node concept="2OqwBi" id="3UsoL$l5qS8" role="2Oq$k0">
                       <node concept="pncrf" id="3UsoL$l5qyY" role="2Oq$k0" />
                       <node concept="3Tsc0h" id="3UsoL$l5s3e" role="2OqNvi">
-                        <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
+                        <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
                       </node>
                     </node>
                     <node concept="liA8E" id="3UsoL$l5D2b" role="2OqNvi">
@@ -511,7 +511,7 @@
     <node concept="3EZMnI" id="3UsoL$l5qlD" role="2wV5jI">
       <node concept="3F2HdR" id="3UsoL$l5JwA" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
+        <ref role="1NtTu8" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
         <node concept="2iRfu4" id="3UsoL$l5JwD" role="2czzBx" />
         <node concept="3F0ifn" id="3UsoL$l5JwI" role="2czzBI">
           <property role="3F0ifm" value="," />
@@ -557,7 +557,7 @@
                 <node concept="2OqwBi" id="3UsoL$l61iY" role="2Oq$k0">
                   <node concept="7Obwk" id="3UsoL$l611z" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="3UsoL$l62gE" role="2OqNvi">
-                    <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
+                    <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="3UsoL$l67zU" role="2OqNvi">
@@ -577,7 +577,7 @@
                   <node concept="2OqwBi" id="3UsoL$l5Kzd" role="2Oq$k0">
                     <node concept="7Obwk" id="3UsoL$l5Ke3" role="2Oq$k0" />
                     <node concept="3Tsc0h" id="3UsoL$l5MPV" role="2OqNvi">
-                      <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
+                      <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
                     </node>
                   </node>
                   <node concept="liA8E" id="3UsoL$l5WfQ" role="2OqNvi">
