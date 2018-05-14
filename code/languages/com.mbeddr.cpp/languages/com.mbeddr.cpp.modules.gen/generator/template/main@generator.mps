@@ -149,6 +149,9 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
+      <concept id="4511589886097466673" name="com.mbeddr.cpp.base.structure.InheritanceInstance" flags="ng" index="FysoC">
+        <reference id="4511589886097466674" name="parent_class" index="FysoF" />
+      </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
@@ -160,6 +163,7 @@
         <reference id="5044697665789405054" name="clazz" index="3mBfEM" />
       </concept>
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
+        <child id="4511589886097466568" name="inherits_from" index="Fysvh" />
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
       <concept id="2995459757117065467" name="com.mbeddr.cpp.base.structure.MethodPrototype" flags="ng" index="1woGCW" />
@@ -1140,6 +1144,23 @@
                 <node concept="30H73N" id="2Ai0Gta8Z0g" role="2Oq$k0" />
                 <node concept="3TrcHB" id="2Ai0Gta8ZPi" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="FysoC" id="3UsoL$lgJrO" role="Fysvh">
+        <ref role="FysoF" node="2Ai0Gta7ex0" resolve="Class" />
+        <node concept="2b32R4" id="3UsoL$lh39t" role="lGtFl">
+          <node concept="3JmXsc" id="3UsoL$lh39w" role="2P8S$">
+            <node concept="3clFbS" id="3UsoL$lh39x" role="2VODD2">
+              <node concept="3clFbF" id="3UsoL$lh39B" role="3cqZAp">
+                <node concept="2OqwBi" id="3UsoL$lh39y" role="3clFbG">
+                  <node concept="3Tsc0h" id="3UsoL$lh39_" role="2OqNvi">
+                    <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
+                  </node>
+                  <node concept="30H73N" id="3UsoL$lh39A" role="2Oq$k0" />
                 </node>
               </node>
             </node>
