@@ -376,5 +376,41 @@
       <ref role="1NtTu8" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
     </node>
   </node>
+  <node concept="24kQdi" id="3EDDOqDY7xr">
+    <ref role="1XX52x" to="wnzg:3EDDOqDY7x5" resolve="DeleteKeyword" />
+    <node concept="3EZMnI" id="3EDDOqDY7xt" role="2wV5jI">
+      <node concept="3F0ifn" id="3EDDOqDY7xE" role="3EZMnx">
+        <property role="3F0ifm" value="delete" />
+      </node>
+      <node concept="3F0A7n" id="3EDDOqDY7xQ" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:3EDDOqDY7xa" resolve="expression" />
+      </node>
+      <node concept="3F0ifn" id="3EDDOqDY7y8" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="3EDDOqDY7yj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3EDDOqDY7xw" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3EDDOqDY7yv">
+    <ref role="1XX52x" to="wnzg:3EDDOqDY7xe" resolve="DeleteArrayKeyword" />
+    <node concept="3EZMnI" id="3EDDOqDY7yx" role="2wV5jI">
+      <node concept="3F0ifn" id="3EDDOqDY7yI" role="3EZMnx">
+        <property role="3F0ifm" value="delete []" />
+      </node>
+      <node concept="3F0A7n" id="3EDDOqDY7yU" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:3EDDOqDY7xf" resolve="expression" />
+      </node>
+      <node concept="3F0ifn" id="3EDDOqDY7zc" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="3EDDOqDY7zn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3EDDOqDY7y$" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
