@@ -35,6 +35,9 @@
       </concept>
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
+      <concept id="7166719696753421196" name="jetbrains.mps.lang.textGen.structure.EncodingLiteral" flags="ng" index="22Jior">
+        <property id="7166719696753421197" name="encoding" index="22Jioq" />
+      </concept>
       <concept id="8931911391946696733" name="jetbrains.mps.lang.textGen.structure.ExtensionDeclaration" flags="in" index="9MYSb" />
       <concept id="1237305208784" name="jetbrains.mps.lang.textGen.structure.NewLineAppendPart" flags="ng" index="l8MVK" />
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
@@ -48,6 +51,7 @@
         <reference id="1233670257997" name="conceptDeclaration" index="WuzLi" />
         <child id="1233749296504" name="textGenBlock" index="11c4hB" />
         <child id="7991274449437422201" name="extension" index="33IsuW" />
+        <child id="1224137887853744062" name="encoding" index="19oSPi" />
       </concept>
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
@@ -100,6 +104,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="22Jior" id="nbE_$zAsyL" role="19oSPi">
+      <property role="22Jioq" value="UTF-8" />
     </node>
   </node>
   <node concept="WtQ9Q" id="2Ai0Gt9WzQP">
