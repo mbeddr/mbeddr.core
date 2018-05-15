@@ -17,6 +17,7 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
+      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
@@ -60,6 +61,9 @@
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
+      <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
+        <reference id="747084250476878887" name="chunk" index="3GEb4d" />
+      </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
       <concept id="4511589886097466673" name="com.mbeddr.cpp.base.structure.InheritanceInstance" flags="ng" index="FysoC">
@@ -92,6 +96,7 @@
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
+        <child id="1317894735999304826" name="imports" index="2OODSX" />
       </concept>
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
@@ -399,6 +404,7 @@
             </node>
           </node>
         </node>
+        <node concept="3XISUE" id="4K6s$_sHKnT" role="3XIRFZ" />
         <node concept="2N2KuS" id="3v5DuFDvJ25" role="3XIRFZ">
           <node concept="3TlMh9" id="3v5DuFDvJ26" role="2N2GHh">
             <property role="2hmy$m" value="45" />
@@ -573,6 +579,9 @@
       <node concept="FysoC" id="nbE_$_7W1B" role="Fysvh">
         <ref role="FysoF" node="nbE_$_7VLV" resolve="Parent" />
       </node>
+      <node concept="FysoC" id="4K6s$_sIErF" role="Fysvh">
+        <ref role="FysoF" node="4K6s$_sIEu7" resolve="SomeExportedClass" />
+      </node>
       <node concept="3mBbG7" id="nbE_$_7W7d" role="3mBdys">
         <property role="TrG5h" value="cValue" />
         <property role="1wg9_F" value="public" />
@@ -639,6 +648,9 @@
         </node>
       </node>
     </node>
+    <node concept="3GEVxB" id="4K6s$_sJf6R" role="2OODSX">
+      <ref role="3GEb4d" node="4K6s$_rq3i5" resolve="sister_module" />
+    </node>
   </node>
   <node concept="1whppz" id="4K6s$_rq3i5">
     <property role="TrG5h" value="sister_module" />
@@ -654,6 +666,23 @@
         </node>
         <node concept="3TlMh9" id="4K6s$_rq3j4" role="3XIe9u">
           <property role="2hmy$m" value="33" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="4K6s$_sIEs9" role="N3F5h">
+      <property role="TrG5h" value="empty_1526389650213_1" />
+    </node>
+    <node concept="3mBW2U" id="4K6s$_sIEu7" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="SomeExportedClass" />
+      <node concept="3mBbG7" id="4K6s$_sIEvt" role="3mBdys">
+        <property role="TrG5h" value="some_exported_int" />
+        <node concept="26Vqqz" id="4K6s$_sIEvC" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="4K6s$_sIEw5" role="3XIe9u">
+          <property role="2hmy$m" value="44" />
         </node>
       </node>
     </node>
