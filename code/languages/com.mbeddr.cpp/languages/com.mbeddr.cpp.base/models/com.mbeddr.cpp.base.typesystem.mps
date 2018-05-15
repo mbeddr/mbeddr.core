@@ -45,6 +45,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -169,6 +170,39 @@
     <property role="TrG5h" value="InheritanceCheckingRule" />
     <property role="3GE5qa" value="inheritance" />
     <node concept="3clFbS" id="4K6s$_rq5Gg" role="18ibNy">
+      <node concept="3SKdUt" id="4K6s$_sM9TQ" role="3cqZAp">
+        <node concept="3SKdUq" id="4K6s$_sM9TS" role="3SKWNk">
+          <property role="3SKdUp" value="Don't allow something to inherit from itself." />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="4K6s$_sMayZ" role="3cqZAp">
+        <node concept="3clFbS" id="4K6s$_sMaz1" role="3clFbx">
+          <node concept="2MkqsV" id="4K6s$_sMeU9" role="3cqZAp">
+            <node concept="Xl_RD" id="4K6s$_sMeUr" role="2MkJ7o">
+              <property role="Xl_RC" value="A class cannot extend itself." />
+            </node>
+            <node concept="1YBJjd" id="4K6s$_sMeVa" role="2OEOjV">
+              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbC" id="4K6s$_sMbV4" role="3clFbw">
+          <node concept="2OqwBi" id="4K6s$_sMcGg" role="3uHU7w">
+            <node concept="1YBJjd" id="4K6s$_sMczi" role="2Oq$k0">
+              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+            </node>
+            <node concept="3TrEf2" id="4K6s$_sMefW" role="2OqNvi">
+              <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4K6s$_sMb0z" role="3uHU7B">
+            <node concept="1YBJjd" id="4K6s$_sMaRN" role="2Oq$k0">
+              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+            </node>
+            <node concept="1mfA1w" id="4K6s$_sMbGi" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
       <node concept="3clFbH" id="4K6s$_rqydn" role="3cqZAp" />
       <node concept="3SKdUt" id="4K6s$_rqa83" role="3cqZAp">
         <node concept="3SKdUq" id="4K6s$_rqa85" role="3SKWNk">
