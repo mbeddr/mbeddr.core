@@ -230,7 +230,6 @@
     <property role="R4oN_" value="holds a reference to the inherited class and it's visibility" />
     <property role="3GE5qa" value="inheritance" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4K6s$_sE9EP" role="PzmwI" />
     <node concept="1TJgyj" id="3UsoL$l5qkM" role="1TKVEi">
       <property role="IQ2ns" value="4511589886097466674" />
       <property role="20lmBu" value="reference" />
