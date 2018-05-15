@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c7950158-6cef-4f64-956c-820859f3e040(test.ex.com.mbeddr.cpp.simple_classes)">
+<model ref="r:c7950158-6cef-4f64-956c-820859f3e040(test.ex.com.mbeddr.cpp.classes)">
   <persistence version="9" />
   <languages>
     <engage id="236f3e56-2360-4657-9b9d-0cb84f56784d" name="com.mbeddr.cpp.modules.gen" />
@@ -543,30 +543,4 @@
       </node>
     </node>
   </node>
-  <node concept="1whW_1" id="6e$PORhKiXl">
-    <property role="TrG5h" value="SisterModule" />
-    <node concept="3mBW2U" id="6e$PORhKiXu" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="PubliclyAccessible" />
-      <node concept="3mBbG7" id="6e$PORhKiXK" role="3mBdys">
-        <property role="1wg9_F" value="public" />
-        <property role="TrG5h" value="x" />
-        <node concept="26Vqqz" id="6e$PORhKiY0" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="3TlMh9" id="6e$PORhKiYo" role="3XIe9u">
-          <property role="2hmy$m" value="5" />
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="6e$PORhKiYL" role="N3F5h">
-      <property role="TrG5h" value="empty_1526375597401_4" />
-    </node>
-    <node concept="3mBW2U" id="6e$PORhKiZF" role="N3F5h">
-      <property role="2OOxQR" value="false" />
-      <property role="TrG5h" value="NotAccessible" />
-    </node>
-  </node>
 </model>
-
