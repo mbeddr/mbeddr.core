@@ -84,9 +84,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3UsoL$l5qkL" resolve="InheritanceInstance" />
     </node>
-    <node concept="PrWs8" id="4o2nsMgB$iI" role="PzmwI">
-      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-    </node>
     <node concept="PrWs8" id="4o2nsMgBFbw" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
