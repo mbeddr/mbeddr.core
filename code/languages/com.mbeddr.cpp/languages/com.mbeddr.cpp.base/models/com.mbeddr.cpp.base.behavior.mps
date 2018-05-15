@@ -28,6 +28,7 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
         <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
@@ -65,6 +66,7 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -348,6 +350,19 @@
       </node>
       <node concept="3Tqbb2" id="4o2nsMgBFbU" role="3clF45">
         <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="6e$PORhH7qV" role="13h7CS">
+      <property role="TrG5h" value="isExported" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="6e$PORhHfvg" role="1B3o_S" />
+      <node concept="10P_77" id="6e$PORhH9If" role="3clF45" />
+      <node concept="3clFbS" id="6e$PORhH7qY" role="3clF47">
+        <node concept="3clFbF" id="6e$PORhH9I$" role="3cqZAp">
+          <node concept="3clFbT" id="6e$PORhHhaS" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="3v5DuFDl4M8" role="13h7CS">
