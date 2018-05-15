@@ -70,6 +70,7 @@
         <reference id="4511589886097466674" name="parent_class" index="FysoF" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
+        <property id="5478191656157682870" name="static" index="gNYVZ" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="5044697665789423998" name="com.mbeddr.cpp.base.structure.INamedClassMemberDeclaration" flags="ng" index="3mBaMM">
@@ -593,6 +594,22 @@
           <property role="2hmy$m" value="2" />
         </node>
       </node>
+      <node concept="3mB1cK" id="4K6s$_sMpzO" role="3mBdys">
+        <property role="TrG5h" value="static_method" />
+        <property role="1wg9_F" value="public" />
+        <property role="gNYVZ" value="true" />
+        <node concept="3XIRFW" id="4K6s$_sMpzQ" role="3XIRFX">
+          <node concept="2BFjQ_" id="4K6s$_sMp_B" role="3XIRFZ">
+            <node concept="3TlMh9" id="4K6s$_sMp_O" role="2BFjQA">
+              <property role="2hmy$m" value="5" />
+            </node>
+          </node>
+        </node>
+        <node concept="26Vqqz" id="4K6s$_sMp$Y" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
       <node concept="3mB1cK" id="4K6s$_rq$4L" role="3mBdys">
         <property role="1wg9_F" value="public" />
         <property role="TrG5h" value="getInt8" />
@@ -628,9 +645,19 @@
             <ref role="3mBfEM" node="nbE_$_7VLG" resolve="Child" />
           </node>
         </node>
-        <node concept="1_9egQ" id="4K6s$_sECZ8" role="3XIRFZ">
-          <node concept="3uHcMF" id="4K6s$_sECZ6" role="1_9egR">
-            <ref role="3uHcMG" node="nbE_$_7W7d" resolve="cValue" />
+        <node concept="1_9egQ" id="4K6s$_sMpvK" role="3XIRFZ">
+          <node concept="2qmXGp" id="4K6s$_sMpw9" role="1_9egR">
+            <node concept="3mBbHP" id="4K6s$_sMpwy" role="1ESnxz">
+              <ref role="3mBbHN" node="4K6s$_rq$4L" resolve="getInt8" />
+            </node>
+            <node concept="3ZVu4v" id="4K6s$_sMpvI" role="1_9fRO">
+              <ref role="3ZVs_2" node="nbE_$_7WbC" resolve="child" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="4K6s$_sN6Pf" role="3XIRFZ">
+          <node concept="3ZVu4v" id="4K6s$_sN6Pd" role="1_9egR">
+            <ref role="3ZVs_2" node="nbE_$_7WbC" resolve="child" />
           </node>
         </node>
         <node concept="2N2KuS" id="nbE_$_7WhH" role="3XIRFZ">

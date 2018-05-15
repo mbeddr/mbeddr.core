@@ -10,6 +10,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="3d25" ref="r:b51ed3f8-f18c-4b51-8a93-f4ee7f6adf9a(com.mbeddr.cpp.expressions.structure)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -131,6 +132,9 @@
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -551,6 +555,127 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="4K6s$_sNy5E">
+    <property role="TrG5h" value="StaticClassMethodCallRule" />
+    <node concept="3clFbS" id="4K6s$_sNy5F" role="18ibNy">
+      <node concept="3SKdUt" id="4K6s$_sN_dW" role="3cqZAp">
+        <node concept="3SKdUq" id="4K6s$_sN_dY" role="3SKWNk">
+          <property role="3SKdUp" value="Check if there is an invocation of a static method on the class." />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="4K6s$_sNy9K" role="3cqZAp">
+        <node concept="3clFbS" id="4K6s$_sNy9M" role="3clFbx">
+          <node concept="3cpWs8" id="4K6s$_sNPs_" role="3cqZAp">
+            <node concept="3cpWsn" id="4K6s$_sNPsC" role="3cpWs9">
+              <property role="TrG5h" value="className" />
+              <node concept="17QB3L" id="4K6s$_sNPsz" role="1tU5fm" />
+              <node concept="2OqwBi" id="4K6s$_sNSd3" role="33vP2m">
+                <node concept="2OqwBi" id="4K6s$_sNQz$" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4K6s$_sNPBK" role="2Oq$k0">
+                    <node concept="1YBJjd" id="4K6s$_sNPtq" role="2Oq$k0">
+                      <ref role="1YBMHb" node="4K6s$_sNy9d" resolve="qualifiedMethodCall" />
+                    </node>
+                    <node concept="3TrEf2" id="4K6s$_sNQ5f" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3d25:4o2nsMgBIqZ" resolve="method" />
+                    </node>
+                  </node>
+                  <node concept="2Xjw5R" id="4K6s$_sNRRl" role="2OqNvi">
+                    <node concept="1xMEDy" id="4K6s$_sNRRn" role="1xVPHs">
+                      <node concept="chp4Y" id="4K6s$_sNRTS" role="ri$Ld">
+                        <ref role="cht4Q" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="4K6s$_sNTji" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2MkqsV" id="4K6s$_sNCY7" role="3cqZAp">
+            <node concept="3cpWs3" id="4K6s$_sNUyI" role="2MkJ7o">
+              <node concept="Xl_RD" id="4K6s$_sNUV4" role="3uHU7w">
+                <property role="Xl_RC" value=" is static. Use the :: syntax instead." />
+              </node>
+              <node concept="3cpWs3" id="4K6s$_sNJCY" role="3uHU7B">
+                <node concept="3cpWs3" id="4K6s$_sNGnN" role="3uHU7B">
+                  <node concept="3cpWs3" id="4K6s$_sNDN9" role="3uHU7B">
+                    <node concept="Xl_RD" id="4K6s$_sNCYp" role="3uHU7B">
+                      <property role="Xl_RC" value="Method " />
+                    </node>
+                    <node concept="2OqwBi" id="4K6s$_sNEYh" role="3uHU7w">
+                      <node concept="2OqwBi" id="4K6s$_sNE0c" role="2Oq$k0">
+                        <node concept="1YBJjd" id="4K6s$_sNDNv" role="2Oq$k0">
+                          <ref role="1YBMHb" node="4K6s$_sNy9d" resolve="qualifiedMethodCall" />
+                        </node>
+                        <node concept="3TrEf2" id="4K6s$_sNEoV" role="2OqNvi">
+                          <ref role="3Tt5mk" to="3d25:4o2nsMgBIqZ" resolve="method" />
+                        </node>
+                      </node>
+                      <node concept="3TrcHB" id="4K6s$_sNFHC" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="4K6s$_sNGFW" role="3uHU7w">
+                    <property role="Xl_RC" value=" on class " />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="4K6s$_sNTn2" role="3uHU7w">
+                  <ref role="3cqZAo" node="4K6s$_sNPsC" resolve="className" />
+                </node>
+              </node>
+            </node>
+            <node concept="1YBJjd" id="4K6s$_sNXvZ" role="2OEOjV">
+              <ref role="1YBMHb" node="4K6s$_sNy9d" resolve="qualifiedMethodCall" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="4K6s$_sN_2a" role="3clFbw">
+          <node concept="2OqwBi" id="4K6s$_sNCIQ" role="3uHU7w">
+            <node concept="1eOMI4" id="4K6s$_sNCIR" role="2Oq$k0">
+              <node concept="1PxgMI" id="4K6s$_sNCIS" role="1eOMHV">
+                <node concept="chp4Y" id="4K6s$_sNCIT" role="3oSUPX">
+                  <ref role="cht4Q" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
+                </node>
+                <node concept="2OqwBi" id="4K6s$_sNCIU" role="1m5AlR">
+                  <node concept="1YBJjd" id="4K6s$_sNCIV" role="2Oq$k0">
+                    <ref role="1YBMHb" node="4K6s$_sNy9d" resolve="qualifiedMethodCall" />
+                  </node>
+                  <node concept="3TrEf2" id="4K6s$_sNCIW" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3d25:4o2nsMgBIqZ" resolve="method" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3TrcHB" id="4K6s$_sNCIX" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:4K6s$_sMpMQ" resolve="static" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4K6s$_sNyYA" role="3uHU7B">
+            <node concept="2OqwBi" id="4K6s$_sNymf" role="2Oq$k0">
+              <node concept="1YBJjd" id="4K6s$_sNya3" role="2Oq$k0">
+                <ref role="1YBMHb" node="4K6s$_sNy9d" resolve="qualifiedMethodCall" />
+              </node>
+              <node concept="3TrEf2" id="4K6s$_sNywi" role="2OqNvi">
+                <ref role="3Tt5mk" to="3d25:4o2nsMgBIqZ" resolve="method" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="4K6s$_sN$16" role="2OqNvi">
+              <node concept="chp4Y" id="4K6s$_sN$5B" role="cj9EA">
+                <ref role="cht4Q" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4K6s$_sNy9d" role="1YuTPh">
+      <property role="TrG5h" value="qualifiedMethodCall" />
+      <ref role="1YaFvo" to="3d25:4o2nsMgBIqT" resolve="QualifiedMethodCall" />
     </node>
   </node>
 </model>

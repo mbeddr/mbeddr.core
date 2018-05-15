@@ -192,7 +192,9 @@
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
-      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
+        <property id="7617962380315063287" name="flagText" index="ZjSer" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
@@ -228,6 +230,11 @@
     <node concept="3EZMnI" id="3v5DuFDnNFt" role="2wV5jI">
       <node concept="PMmxH" id="59MAV0ydrUB" role="3EZMnx">
         <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
+      </node>
+      <node concept="1kHk_G" id="4K6s$_sMpMC" role="3EZMnx">
+        <property role="ZjSer" value="static" />
+        <ref role="1NtTu8" to="wnzg:4K6s$_sMpMQ" resolve="static" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
       <node concept="PMmxH" id="3v5DuFDoxUa" role="3EZMnx">
         <ref role="PMmxG" node="3v5DuFDr9bv" resolve="methodSignature" />
