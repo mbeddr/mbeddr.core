@@ -142,6 +142,7 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
@@ -353,8 +354,11 @@
               <ref role="3cqZAo" node="3Ts5Ln3HOqf" resolve="resultsContainer" />
             </node>
             <node concept="3BYIHo" id="3Ts5Ln3HPTN" role="2OqNvi">
-              <node concept="37vLTw" id="3Ts5Ln3HPXG" role="3BYIHq">
-                <ref role="3cqZAo" node="3Ts5Ln3HOqh" resolve="root" />
+              <node concept="2OqwBi" id="qtw2A$T0Vs" role="3BYIHq">
+                <node concept="37vLTw" id="3Ts5Ln3HPXG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3Ts5Ln3HOqh" resolve="root" />
+                </node>
+                <node concept="1$rogu" id="qtw2A$T15j" role="2OqNvi" />
               </node>
             </node>
           </node>
