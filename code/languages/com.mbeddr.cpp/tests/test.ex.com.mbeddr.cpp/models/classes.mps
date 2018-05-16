@@ -84,7 +84,6 @@
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <property id="5478191656157682870" name="static" index="gNYVZ" />
-        <property id="7365406899895837769" name="static" index="wHSF4" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="5044697665789423998" name="com.mbeddr.cpp.base.structure.INamedClassMemberDeclaration" flags="ng" index="3mBaMM">
@@ -101,9 +100,6 @@
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
       <concept id="4018800670853679470" name="com.mbeddr.cpp.base.structure.EmptyClassContent" flags="ng" index="3u$6M4" />
-      <concept id="4018800670855129896" name="com.mbeddr.cpp.base.structure.MethodSignature" flags="ng" index="3uF$V2">
-        <property id="7365406899895087310" name="static" index="wgxT3" />
-      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -636,7 +632,6 @@
         <property role="1wg9_F" value="private" />
         <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="some_private_method" />
-        <property role="wgxT3" value="false" />
         <node concept="3XIRFW" id="6oRbCP69Xxw" role="3XIRFX">
           <node concept="2BFjQ_" id="6oRbCP69X_j" role="3XIRFZ">
             <node concept="3TlMh9" id="6oRbCP69X_r" role="2BFjQA">
@@ -678,8 +673,6 @@
         <property role="TrG5h" value="static_method" />
         <property role="1wg9_F" value="public" />
         <property role="gNYVZ" value="true" />
-        <property role="wgxT3" value="true" />
-        <property role="wHSF4" value="true" />
         <node concept="3XIRFW" id="4K6s$_sMpzQ" role="3XIRFX">
           <node concept="2BFjQ_" id="4K6s$_sMp_B" role="3XIRFZ">
             <node concept="3TlMh9" id="4K6s$_sMp_O" role="2BFjQA">
