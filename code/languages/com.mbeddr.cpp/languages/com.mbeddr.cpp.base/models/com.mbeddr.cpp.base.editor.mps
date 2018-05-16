@@ -33,7 +33,6 @@
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
-      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -144,19 +143,18 @@
       <node concept="PMmxH" id="59MAV0ydrUB" role="3EZMnx">
         <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
       </node>
+      <node concept="PMmxH" id="1TorPL4sJfd" role="3EZMnx">
+        <ref role="PMmxG" node="1TorPL4sJdQ" resolve="PureFlag" />
+      </node>
       <node concept="PMmxH" id="2L1k$oXn3Ob" role="3EZMnx">
         <ref role="PMmxG" node="2L1k$oXm7Pq" resolve="VirtualFlag" />
       </node>
       <node concept="PMmxH" id="3v5DuFDoxUa" role="3EZMnx">
         <ref role="PMmxG" node="3v5DuFDr9bv" resolve="methodSignature" />
       </node>
-      <node concept="3F1sOY" id="3v5DuFDoxUu" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:3CmSUB7Fp_k" resolve="body" />
-        <node concept="VPM3Z" id="3v5DuFDoxUM" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="ljvvj" id="3v5DuFDoxUD" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+      <node concept="_tjkj" id="1TorPL4ukhA" role="3EZMnx">
+        <node concept="3F1sOY" id="1TorPL4ukhQ" role="_tjki">
+          <ref role="1NtTu8" to="wnzg:3CmSUB7Fp_k" resolve="body" />
         </node>
       </node>
       <node concept="l2Vlx" id="3v5DuFDnNFw" role="2iSdaV" />
@@ -389,6 +387,14 @@
     <node concept="1kHk_G" id="2LwGNVbhV8I" role="2wV5jI">
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       <ref role="1NtTu8" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="1TorPL4sJdQ">
+    <property role="TrG5h" value="PureFlag" />
+    <ref role="1XX52x" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualisable" />
+    <node concept="1kHk_G" id="1TorPL4sJdR" role="2wV5jI">
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="pure" />
     </node>
   </node>
 </model>
