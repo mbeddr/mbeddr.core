@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.cpp/com.mbeddr.cpp.devkit" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.base/com.mbeddr.cpp.base.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.buildconfig/com.mbeddr.cpp.buildconfig.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.expressions/com.mbeddr.cpp.expressions.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.modules.gen/com.mbeddr.cpp.modules.gen.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.modules/com.mbeddr.cpp.modules.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.com.mbeddr.cpp/test.ex.com.mbeddr.cpp.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.com.mbeddr.cpp/test.ts.com.mbeddr.cpp.msd" folder="tests" />
+    </projectModules>
+  </component>
+</project>
