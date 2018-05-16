@@ -295,10 +295,10 @@
   </node>
   <node concept="1M2fIO" id="4K6s$_sM33J">
     <ref role="1M2myG" to="3d25:3v5DuFDsm_1" resolve="InternalAttributeRef" />
-    <node concept="1N5Pfh" id="4K6s$_sMljg" role="1Mr941">
+    <node concept="1N5Pfh" id="6oRbCP64IPn" role="1Mr941">
       <ref role="1N5Vy1" to="3d25:3v5DuFDsm_6" resolve="att" />
-      <node concept="1dDu$B" id="4K6s$_sMljj" role="1N6uqs">
-        <ref role="1dDu$A" to="wnzg:4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
+      <node concept="1dDu$B" id="6oRbCP64IPq" role="1N6uqs">
+        <ref role="1dDu$A" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
       </node>
     </node>
   </node>

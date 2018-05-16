@@ -16,6 +16,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -116,6 +117,26 @@
     </node>
     <node concept="PrWs8" id="3v5DuFDsm_2" role="PzmwI">
       <ref role="PrY4T" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oRbCP60$fY">
+    <property role="EcuMT" value="7365406899887555582" />
+    <property role="TrG5h" value="ClassTypeDoubleColonExpression" />
+    <property role="R4oN_" value="access static members with ::" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="6oRbCP61zn9" role="1TKVEi">
+      <property role="IQ2ns" value="7365406899887814089" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="6oRbCP61zvf" role="1TKVEi">
+      <property role="IQ2ns" value="7365406899887814607" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="class_type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="wnzg:6oRbCP62xkS" resolve="ClassTypeAccessor" />
     </node>
   </node>
 </model>

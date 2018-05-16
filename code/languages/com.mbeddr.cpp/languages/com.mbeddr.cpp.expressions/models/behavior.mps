@@ -365,5 +365,11 @@
       <node concept="3Tqbb2" id="3v5DuFDsb2W" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="6oRbCP60VaK">
+    <ref role="13h7C2" to="3d25:6oRbCP60$fY" resolve="ClassTypeDoubleColonExpression" />
+    <node concept="13hLZK" id="6oRbCP60VaL" role="13h7CW">
+      <node concept="3clFbS" id="6oRbCP60VaM" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

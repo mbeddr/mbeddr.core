@@ -59,6 +59,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="2722384699544370949" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Placeholder" flags="ng" index="3VyMlK" />
       <concept id="4307758654696938365" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_RefPresentation" flags="ig" index="1WAQ3h" />
@@ -259,6 +260,21 @@
       <node concept="2kknPI" id="gWE$qahB6J" role="1s_PAo">
         <ref role="2kkw0f" node="gWE$qahwTB" resolve="InternalMethodCall_SmartReference" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6oRbCP60RSA">
+    <ref role="1XX52x" to="3d25:6oRbCP60$fY" resolve="ClassTypeDoubleColonExpression" />
+    <node concept="3EZMnI" id="6oRbCP60S0H" role="2wV5jI">
+      <node concept="3F1sOY" id="6oRbCP62$lk" role="3EZMnx">
+        <ref role="1NtTu8" to="3d25:6oRbCP61zvf" resolve="class_type" />
+      </node>
+      <node concept="3F0ifn" id="6oRbCP62$lx" role="3EZMnx">
+        <property role="3F0ifm" value="::" />
+      </node>
+      <node concept="3F1sOY" id="6oRbCP60S1d" role="3EZMnx">
+        <ref role="1NtTu8" to="3d25:6oRbCP61zn9" resolve="target" />
+      </node>
+      <node concept="2iRfu4" id="6oRbCP60S0K" role="2iSdaV" />
     </node>
   </node>
 </model>
