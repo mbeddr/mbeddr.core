@@ -100,6 +100,11 @@
     <node concept="PrWs8" id="3v5DuFDl4c1" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     </node>
+    <node concept="1TJgyi" id="2L1k$oXkZhn" role="1TKVEl">
+      <property role="IQ2nx" value="3188920472785122391" />
+      <property role="TrG5h" value="virtual" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBEtu">
     <property role="EcuMT" value="5044697665789405022" />

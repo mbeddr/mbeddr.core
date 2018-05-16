@@ -141,6 +141,9 @@
   <node concept="24kQdi" id="4o2nsMgBCkM">
     <ref role="1XX52x" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
     <node concept="3EZMnI" id="3v5DuFDnNFt" role="2wV5jI">
+      <node concept="PMmxH" id="2L1k$oXn3Ob" role="3EZMnx">
+        <ref role="PMmxG" node="2L1k$oXm7Pq" resolve="VirtualFlag" />
+      </node>
       <node concept="PMmxH" id="59MAV0ydrUB" role="3EZMnx">
         <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
       </node>
@@ -374,6 +377,15 @@
     <ref role="1XX52x" to="wnzg:4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     <node concept="3F0A7n" id="59MAV0ycZT1" role="2wV5jI">
       <ref role="1NtTu8" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="2L1k$oXm7Pq">
+    <property role="TrG5h" value="VirtualFlag" />
+    <ref role="1XX52x" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
+    <node concept="1kHk_G" id="2LwGNVbhV8I" role="2wV5jI">
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      <ref role="1NtTu8" to="wnzg:2L1k$oXkZhn" resolve="virtual" />
     </node>
   </node>
 </model>
