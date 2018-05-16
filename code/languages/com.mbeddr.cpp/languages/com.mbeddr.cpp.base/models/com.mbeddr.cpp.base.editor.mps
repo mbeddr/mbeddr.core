@@ -381,6 +381,7 @@
     <node concept="3EZMnI" id="3EDDOqDY7xt" role="2wV5jI">
       <node concept="3F0ifn" id="3EDDOqDY7xE" role="3EZMnx">
         <property role="3F0ifm" value="delete" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="3F0A7n" id="3EDDOqDY7xQ" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:3EDDOqDY7xa" resolve="expression" />
@@ -398,7 +399,11 @@
     <ref role="1XX52x" to="wnzg:3EDDOqDY7xe" resolve="DeleteArrayKeyword" />
     <node concept="3EZMnI" id="3EDDOqDY7yx" role="2wV5jI">
       <node concept="3F0ifn" id="3EDDOqDY7yI" role="3EZMnx">
-        <property role="3F0ifm" value="delete []" />
+        <property role="3F0ifm" value="delete" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0ifn" id="7NHqJDlfsgC" role="3EZMnx">
+        <property role="3F0ifm" value="[]" />
       </node>
       <node concept="3F0A7n" id="3EDDOqDY7yU" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:3EDDOqDY7xf" resolve="expression" />
