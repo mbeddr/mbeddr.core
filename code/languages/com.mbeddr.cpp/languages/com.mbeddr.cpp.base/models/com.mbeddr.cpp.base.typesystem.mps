@@ -596,36 +596,66 @@
             </node>
           </node>
           <node concept="2MkqsV" id="4K6s$_sNCY7" role="3cqZAp">
-            <node concept="3cpWs3" id="4K6s$_sNUyI" role="2MkJ7o">
-              <node concept="Xl_RD" id="4K6s$_sNUV4" role="3uHU7w">
-                <property role="Xl_RC" value=" is static. Use the :: syntax instead." />
+            <node concept="3cpWs3" id="6oRbCP658nj" role="2MkJ7o">
+              <node concept="Xl_RD" id="6oRbCP658NU" role="3uHU7w">
+                <property role="Xl_RC" value=" instead." />
               </node>
-              <node concept="3cpWs3" id="4K6s$_sNJCY" role="3uHU7B">
-                <node concept="3cpWs3" id="4K6s$_sNGnN" role="3uHU7B">
-                  <node concept="3cpWs3" id="4K6s$_sNDN9" role="3uHU7B">
-                    <node concept="Xl_RD" id="4K6s$_sNCYp" role="3uHU7B">
-                      <property role="Xl_RC" value="Method " />
+              <node concept="3cpWs3" id="6oRbCP654$q" role="3uHU7B">
+                <node concept="3cpWs3" id="6oRbCP6530B" role="3uHU7B">
+                  <node concept="3cpWs3" id="6oRbCP651B$" role="3uHU7B">
+                    <node concept="3cpWs3" id="4K6s$_sNUyI" role="3uHU7B">
+                      <node concept="3cpWs3" id="4K6s$_sNJCY" role="3uHU7B">
+                        <node concept="3cpWs3" id="4K6s$_sNGnN" role="3uHU7B">
+                          <node concept="3cpWs3" id="4K6s$_sNDN9" role="3uHU7B">
+                            <node concept="Xl_RD" id="4K6s$_sNCYp" role="3uHU7B">
+                              <property role="Xl_RC" value="Method " />
+                            </node>
+                            <node concept="2OqwBi" id="4K6s$_sNEYh" role="3uHU7w">
+                              <node concept="2OqwBi" id="4K6s$_sNE0c" role="2Oq$k0">
+                                <node concept="1YBJjd" id="4K6s$_sNDNv" role="2Oq$k0">
+                                  <ref role="1YBMHb" node="4K6s$_sNy9d" resolve="qualifiedMethodCall" />
+                                </node>
+                                <node concept="3TrEf2" id="4K6s$_sNEoV" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="3d25:4o2nsMgBIqZ" resolve="method" />
+                                </node>
+                              </node>
+                              <node concept="3TrcHB" id="4K6s$_sNFHC" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="4K6s$_sNGFW" role="3uHU7w">
+                            <property role="Xl_RC" value=" on class " />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="4K6s$_sNTn2" role="3uHU7w">
+                          <ref role="3cqZAo" node="4K6s$_sNPsC" resolve="className" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="6oRbCP64ZKf" role="3uHU7w">
+                        <property role="Xl_RC" value=" is static. Use " />
+                      </node>
                     </node>
-                    <node concept="2OqwBi" id="4K6s$_sNEYh" role="3uHU7w">
-                      <node concept="2OqwBi" id="4K6s$_sNE0c" role="2Oq$k0">
-                        <node concept="1YBJjd" id="4K6s$_sNDNv" role="2Oq$k0">
-                          <ref role="1YBMHb" node="4K6s$_sNy9d" resolve="qualifiedMethodCall" />
-                        </node>
-                        <node concept="3TrEf2" id="4K6s$_sNEoV" role="2OqNvi">
-                          <ref role="3Tt5mk" to="3d25:4o2nsMgBIqZ" resolve="method" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="4K6s$_sNFHC" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
+                    <node concept="37vLTw" id="6oRbCP6522D" role="3uHU7w">
+                      <ref role="3cqZAo" node="4K6s$_sNPsC" resolve="className" />
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="4K6s$_sNGFW" role="3uHU7w">
-                    <property role="Xl_RC" value=" on class " />
+                  <node concept="Xl_RD" id="6oRbCP653s5" role="3uHU7w">
+                    <property role="Xl_RC" value="::" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="4K6s$_sNTn2" role="3uHU7w">
-                  <ref role="3cqZAo" node="4K6s$_sNPsC" resolve="className" />
+                <node concept="2OqwBi" id="6oRbCP656pH" role="3uHU7w">
+                  <node concept="2OqwBi" id="6oRbCP655ek" role="2Oq$k0">
+                    <node concept="1YBJjd" id="6oRbCP6550a" role="2Oq$k0">
+                      <ref role="1YBMHb" node="4K6s$_sNy9d" resolve="qualifiedMethodCall" />
+                    </node>
+                    <node concept="3TrEf2" id="6oRbCP655MI" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3d25:4o2nsMgBIqZ" resolve="method" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="6oRbCP657kB" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
                 </node>
               </node>
             </node>
