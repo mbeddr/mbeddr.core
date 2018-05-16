@@ -82,7 +82,7 @@
     <node concept="1TJgyj" id="33cGTVo60G$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="langSpecificConfig" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="3516382903881173796" />
       <ref role="20lvS9" node="33cGTVo609o" resolve="ILanguageSpecificConfig" />
     </node>
