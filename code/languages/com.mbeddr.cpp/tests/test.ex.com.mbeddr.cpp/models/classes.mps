@@ -10,6 +10,17 @@
     <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
   </imports>
   <registry>
+    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
+        <property id="1883175908513350760" name="description" index="3YCmrE" />
+        <child id="1229187676388" name="nodeToEdit" index="LiRBU" />
+        <child id="1229187707859" name="result" index="LiZbd" />
+        <child id="1229187755283" name="code" index="LjaKd" />
+      </concept>
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
+    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
@@ -73,6 +84,7 @@
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <property id="5478191656157682870" name="static" index="gNYVZ" />
+        <property id="7365406899895837769" name="static" index="wHSF4" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="5044697665789423998" name="com.mbeddr.cpp.base.structure.INamedClassMemberDeclaration" flags="ng" index="3mBaMM">
@@ -89,6 +101,9 @@
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
       <concept id="4018800670853679470" name="com.mbeddr.cpp.base.structure.EmptyClassContent" flags="ng" index="3u$6M4" />
+      <concept id="4018800670855129896" name="com.mbeddr.cpp.base.structure.MethodSignature" flags="ng" index="3uF$V2">
+        <property id="7365406899895087310" name="static" index="wgxT3" />
+      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -621,6 +636,7 @@
         <property role="1wg9_F" value="private" />
         <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="some_private_method" />
+        <property role="wgxT3" value="false" />
         <node concept="3XIRFW" id="6oRbCP69Xxw" role="3XIRFX">
           <node concept="2BFjQ_" id="6oRbCP69X_j" role="3XIRFZ">
             <node concept="3TlMh9" id="6oRbCP69X_r" role="2BFjQA">
@@ -662,6 +678,8 @@
         <property role="TrG5h" value="static_method" />
         <property role="1wg9_F" value="public" />
         <property role="gNYVZ" value="true" />
+        <property role="wgxT3" value="true" />
+        <property role="wHSF4" value="true" />
         <node concept="3XIRFW" id="4K6s$_sMpzQ" role="3XIRFX">
           <node concept="2BFjQ_" id="4K6s$_sMp_B" role="3XIRFZ">
             <node concept="3TlMh9" id="4K6s$_sMp_O" role="2BFjQA">
@@ -769,7 +787,6 @@
             </node>
           </node>
         </node>
-        <node concept="3XISUE" id="6oRbCP67L6B" role="3XIRFZ" />
         <node concept="2N2KuS" id="nbE_$_7WhH" role="3XIRFZ">
           <node concept="3TlMh9" id="nbE_$_7WiR" role="2N2GHh">
             <property role="2hmy$m" value="2" />
@@ -823,6 +840,37 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="LiM7Y" id="6oRbCP66Tr7">
+    <property role="TrG5h" value="ImportIntentionTest" />
+    <property role="3YCmrE" value="Tests the intention that automatically imports the missing module on class extension" />
+    <node concept="1whppz" id="6oRbCP66Trb" role="LiRBU">
+      <property role="TrG5h" value="SomeModule" />
+      <node concept="3mBW2U" id="6oRbCP66TrL" role="N3F5h">
+        <property role="2OOxQR" value="true" />
+        <property role="TrG5h" value="NewClass" />
+        <node concept="FysoC" id="6oRbCP66TrR" role="Fysvh">
+          <ref role="FysoF" node="4K6s$_sIEu7" resolve="SomeExportedClass" />
+        </node>
+      </node>
+    </node>
+    <node concept="1whppz" id="6oRbCP66Trk" role="LiZbd">
+      <property role="TrG5h" value="SomeModule" />
+      <node concept="3mBW2U" id="6oRbCP66Tt3" role="N3F5h">
+        <property role="2OOxQR" value="true" />
+        <property role="TrG5h" value="NewClass" />
+        <node concept="FysoC" id="6oRbCP66Tt4" role="Fysvh">
+          <ref role="FysoF" node="4K6s$_sIEu7" resolve="SomeExportedClass" />
+        </node>
+      </node>
+      <node concept="2NXPZ9" id="6oRbCP66Trl" role="N3F5h">
+        <property role="TrG5h" value="empty_1526458240438_2" />
+      </node>
+      <node concept="3GEVxB" id="6oRbCP66Trq" role="2OODSX">
+        <ref role="3GEb4d" node="4K6s$_rq3i5" resolve="sister_module" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="6oRbCP66U6X" role="LjaKd" />
   </node>
 </model>
 

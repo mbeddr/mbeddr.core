@@ -100,6 +100,11 @@
     <property role="34LRSv" value="method" />
     <property role="R4oN_" value="a method" />
     <ref role="1TJDcQ" node="3v5DuFDqYGC" resolve="MethodSignature" />
+    <node concept="1TJgyi" id="4K6s$_sMpMQ" role="1TKVEl">
+      <property role="IQ2nx" value="5478191656157682870" />
+      <property role="TrG5h" value="static" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="3CmSUB7Fp_k" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
@@ -109,11 +114,6 @@
     </node>
     <node concept="PrWs8" id="3v5DuFDl4c1" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
-    </node>
-    <node concept="1TJgyi" id="4K6s$_sMpMQ" role="1TKVEl">
-      <property role="IQ2nx" value="5478191656157682870" />
-      <property role="TrG5h" value="static" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBEtu">
