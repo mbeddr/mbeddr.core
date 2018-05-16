@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="mbeddr.core">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.core" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
