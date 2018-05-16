@@ -616,6 +616,11 @@
         <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="some_protected_method" />
         <node concept="3XIRFW" id="6oRbCP69j9O" role="3XIRFX">
+          <node concept="1_9egQ" id="6oRbCP6zgS7" role="3XIRFZ">
+            <node concept="3uHhno" id="6oRbCP6zgS5" role="1_9egR">
+              <ref role="3uHhlH" node="6oRbCP69Xxu" resolve="some_private_method" />
+            </node>
+          </node>
           <node concept="2BFjQ_" id="6oRbCP69jcG" role="3XIRFZ">
             <node concept="3TlMh9" id="6oRbCP69jcU" role="2BFjQA">
               <property role="2hmy$m" value="7" />
@@ -776,6 +781,16 @@
               <ref role="3mBbHN" node="6oRbCP68kRM" resolve="some_public_method" />
             </node>
             <node concept="3ZVu4v" id="6oRbCP68YXT" role="1_9fRO">
+              <ref role="3ZVs_2" node="nbE_$_7WbC" resolve="child" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="6oRbCP6zV8n" role="3XIRFZ">
+          <node concept="2qmXGp" id="6oRbCP6zV9g" role="1_9egR">
+            <node concept="3mBbHP" id="6oRbCP6zV9P" role="1ESnxz">
+              <ref role="3mBbHN" node="4K6s$_sMpzO" resolve="static_method" />
+            </node>
+            <node concept="3ZVu4v" id="6oRbCP6zV8l" role="1_9fRO">
               <ref role="3ZVs_2" node="nbE_$_7WbC" resolve="child" />
             </node>
           </node>

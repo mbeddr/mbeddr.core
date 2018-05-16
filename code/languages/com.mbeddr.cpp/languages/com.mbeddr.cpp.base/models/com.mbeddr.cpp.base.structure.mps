@@ -253,7 +253,7 @@
   </node>
   <node concept="1TIwiD" id="6oRbCP62xkS">
     <property role="EcuMT" value="7365406899888067896" />
-    <property role="TrG5h" value="ClassTypeAccessor" />
+    <property role="TrG5h" value="lassTypeAccessor" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6oRbCP62xkT" role="1TKVEi">
       <property role="IQ2ns" value="7365406899888067897" />
