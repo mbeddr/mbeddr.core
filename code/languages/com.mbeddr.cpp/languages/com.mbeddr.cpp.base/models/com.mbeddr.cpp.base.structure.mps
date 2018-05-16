@@ -100,10 +100,8 @@
     <node concept="PrWs8" id="3v5DuFDl4c1" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     </node>
-    <node concept="1TJgyi" id="2L1k$oXkZhn" role="1TKVEl">
-      <property role="IQ2nx" value="3188920472785122391" />
-      <property role="TrG5h" value="virtual" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    <node concept="PrWs8" id="2L1k$oXxnd5" role="PzmwI">
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualisable" />
     </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBEtu">
@@ -184,6 +182,9 @@
     <node concept="PrWs8" id="2Ai0Gtag2pd" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
+    <node concept="PrWs8" id="2L1k$oXxoOS" role="PzmwI">
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualisable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3v5DuFDls_I">
     <property role="EcuMT" value="4018800670853679470" />
@@ -220,6 +221,15 @@
     </node>
     <node concept="PrWs8" id="5C47DuoDR$z" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2L1k$oXxncW">
+    <property role="EcuMT" value="3188920472788366140" />
+    <property role="TrG5h" value="IVirtualisable" />
+    <node concept="1TJgyi" id="2L1k$oXxncX" role="1TKVEl">
+      <property role="IQ2nx" value="3188920472788366141" />
+      <property role="TrG5h" value="virtual" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

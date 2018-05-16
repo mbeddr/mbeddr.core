@@ -62,8 +62,10 @@
       </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
+      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualisable" flags="ng" index="hL25U">
+        <property id="3188920472788366141" name="virtual" index="hL25V" />
+      </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
-        <property id="3188920472785122391" name="virtual" index="h4Eoh" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="5044697665789423998" name="com.mbeddr.cpp.base.structure.INamedClassMemberDeclaration" flags="ng" index="3mBaMM">
@@ -266,8 +268,8 @@
       </node>
       <node concept="3mB1cK" id="3v5DuFDsqls" role="3mBdys">
         <property role="TrG5h" value="incN" />
-        <property role="h4Eoh" value="false" />
         <property role="1wg9_F" value="public" />
+        <property role="hL25V" value="true" />
         <node concept="19RgSI" id="3v5DuFDsqnj" role="1UOdpc">
           <property role="TrG5h" value="n" />
           <node concept="26Vqqz" id="3v5DuFDsqnh" role="2C2TGm">
@@ -295,7 +297,7 @@
       <node concept="3mB1cK" id="3v5DuFDvm4t" role="3mBdys">
         <property role="TrG5h" value="getVal" />
         <property role="1wg9_F" value="public" />
-        <property role="h4Eoh" value="true" />
+        <property role="hL25V" value="true" />
         <node concept="3XIRFW" id="3v5DuFDvm4w" role="3XIRFX">
           <node concept="2BFjQ_" id="3v5DuFDvma7" role="3XIRFZ">
             <node concept="3uHcMF" id="3v5DuFDvma_" role="2BFjQA">

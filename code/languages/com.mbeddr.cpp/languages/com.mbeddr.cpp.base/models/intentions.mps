@@ -71,7 +71,7 @@
   <node concept="2S6QgY" id="2L1k$oXnM2$">
     <property role="TrG5h" value="ToggleVirtual" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
+    <ref role="2ZfgGC" to="wnzg:2L1k$oXxncW" resolve="IVirtualisable" />
     <node concept="2S6ZIM" id="2L1k$oXnM2_" role="2ZfVej">
       <node concept="3clFbS" id="2L1k$oXnM2A" role="2VODD2">
         <node concept="3clFbF" id="2L1k$oXnMc1" role="3cqZAp">
@@ -84,8 +84,8 @@
             </node>
             <node concept="2OqwBi" id="2L1k$oXoEU8" role="3K4Cdx">
               <node concept="2Sf5sV" id="2L1k$oXoEuE" role="2Oq$k0" />
-              <node concept="3TrcHB" id="2L1k$oXoF_v" role="2OqNvi">
-                <ref role="3TsBF5" to="wnzg:2L1k$oXkZhn" resolve="virtual" />
+              <node concept="3TrcHB" id="2L1k$oXxo6O" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
               </node>
             </node>
           </node>
@@ -99,15 +99,15 @@
             <node concept="3fqX7Q" id="2L1k$oXoII8" role="37vLTx">
               <node concept="2OqwBi" id="2L1k$oXoJHj" role="3fr31v">
                 <node concept="2Sf5sV" id="2L1k$oXoJlO" role="2Oq$k0" />
-                <node concept="3TrcHB" id="2L1k$oXoKUP" role="2OqNvi">
-                  <ref role="3TsBF5" to="wnzg:2L1k$oXkZhn" resolve="virtual" />
+                <node concept="3TrcHB" id="2L1k$oXxoMj" role="2OqNvi">
+                  <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
                 </node>
               </node>
             </node>
             <node concept="2OqwBi" id="2L1k$oXnP3j" role="37vLTJ">
               <node concept="2Sf5sV" id="2L1k$oXnOK2" role="2Oq$k0" />
-              <node concept="3TrcHB" id="2L1k$oXnPAw" role="2OqNvi">
-                <ref role="3TsBF5" to="wnzg:2L1k$oXkZhn" resolve="virtual" />
+              <node concept="3TrcHB" id="2L1k$oXxoA5" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
               </node>
             </node>
           </node>
