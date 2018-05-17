@@ -12,6 +12,8 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -325,6 +327,12 @@
     <node concept="PrWs8" id="6NtgknWJ20C" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
+    <node concept="PrWs8" id="6ddXmWdKgbL" role="PzmwI">
+      <ref role="PrY4T" to="tpee:htgVS9_" resolve="IStatementListContainer" />
+    </node>
+    <node concept="PrWs8" id="6ddXmWdKgVj" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
+    </node>
     <node concept="PrWs8" id="6NtgknWJ20V" role="PzmwI">
       <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualableConcept" />
     </node>
@@ -356,8 +364,8 @@
     <node concept="PrWs8" id="6NtgknWJ2Pf" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1DVNPtFPBay" resolve="IShowUpInOutline" />
     </node>
-    <node concept="PrWs8" id="6ddXmWdGsTo" role="PzmwI">
-      <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
+    <node concept="PrWs8" id="6ddXmWdIoF3" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
     </node>
     <node concept="PrWs8" id="6NtgknWJ2P$" role="PzmwI">
       <ref role="PrY4T" to="x27k:2azu63OPjKX" resolve="ICodeLocationContext" />
@@ -370,6 +378,13 @@
     </node>
     <node concept="PrWs8" id="6NtgknWJ2RG" role="PzmwI">
       <ref role="PrY4T" to="vs0r:49YGTZdSIMN" resolve="GenericUnitProvider" />
+    </node>
+    <node concept="1TJgyj" id="6ddXmWdIpGK" role="1TKVEi">
+      <property role="IQ2ns" value="7155645240282028848" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
     </node>
     <node concept="1TJgyj" id="6ddXmWdC9sl" role="1TKVEi">
       <property role="IQ2ns" value="7155645240280389397" />
