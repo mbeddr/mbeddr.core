@@ -663,7 +663,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6oRbCP62xl4">
-    <ref role="1XX52x" to="wnzg:6oRbCP62xkS" resolve="lassTypeAccessor" />
+    <ref role="1XX52x" to="wnzg:6oRbCP62xkS" resolve="ClassTypeAccessor" />
     <node concept="3EZMnI" id="6oRbCP62xl6" role="2wV5jI">
       <node concept="1iCGBv" id="6oRbCP62xlg" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:6oRbCP62xkT" resolve="class" />
