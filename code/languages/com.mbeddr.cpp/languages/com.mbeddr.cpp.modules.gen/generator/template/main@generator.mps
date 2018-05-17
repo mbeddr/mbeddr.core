@@ -2,14 +2,14 @@
 <model ref="r:dabdf1e1-d1e8-460e-b769-3dc289ee74e3(main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="236f3e56-2360-4657-9b9d-0cb84f56784d" name="com.mbeddr.cpp.modules.gen" version="-1" />
+    <use id="236f3e56-2360-4657-9b9d-0cb84f56784d" name="com.mbeddr.cpp.modules.gen" version="0" />
     <use id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base" version="0" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
-    <use id="b341759a-c721-4072-90cf-328bb2724684" name="com.mbeddr.cpp.expressions" version="-1" />
+    <use id="b341759a-c721-4072-90cf-328bb2724684" name="com.mbeddr.cpp.expressions" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -139,8 +139,11 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
-      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualisable" flags="ng" index="hL25U">
-        <property id="3188920472788366141" name="virtual" index="hL25V" />
+      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualableConcept" flags="ng" index="hL25U">
+        <property id="3188920472788366141" name="isVirtual" index="hL25V" />
+      </concept>
+      <concept id="4511589886097466673" name="com.mbeddr.cpp.base.structure.InheritanceInstance" flags="ng" index="FysoC">
+        <reference id="4511589886097466674" name="parent_class" index="FysoF" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
@@ -153,6 +156,7 @@
         <reference id="5044697665789405054" name="clazz" index="3mBfEM" />
       </concept>
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
+        <child id="4511589886097466568" name="inherits_from" index="Fysvh" />
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
       <concept id="2995459757117065467" name="com.mbeddr.cpp.base.structure.MethodPrototype" flags="ng" index="1woGCW" />
@@ -594,6 +598,23 @@
     <node concept="3mBW2U" id="2Ai0Gta7ex0" role="N3F5h">
       <property role="TrG5h" value="Class" />
       <property role="2OOxQR" value="true" />
+      <node concept="FysoC" id="3UsoL$lgJrO" role="Fysvh">
+        <ref role="FysoF" node="2Ai0Gta7ex0" resolve="Class" />
+        <node concept="2b32R4" id="3UsoL$lh39t" role="lGtFl">
+          <node concept="3JmXsc" id="3UsoL$lh39w" role="2P8S$">
+            <node concept="3clFbS" id="3UsoL$lh39x" role="2VODD2">
+              <node concept="3clFbF" id="3UsoL$lh39B" role="3cqZAp">
+                <node concept="2OqwBi" id="3UsoL$lh39y" role="3clFbG">
+                  <node concept="3Tsc0h" id="3UsoL$lh39_" role="2OqNvi">
+                    <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
+                  </node>
+                  <node concept="30H73N" id="3UsoL$lh39A" role="2Oq$k0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1zE6Tr" id="2Ai0Gtaf4eK" role="3mBdys">
         <property role="1zE8bv" value="public" />
         <node concept="3mBbG7" id="2Ai0Gtaf56M" role="1zE6T_">
@@ -725,7 +746,7 @@
                                     <ref role="3cqZAo" node="2Ai0Gtaf_tm" resolve="it" />
                                   </node>
                                   <node concept="3TrcHB" id="2L1k$oXys5T" role="2OqNvi">
-                                    <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+                                    <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
                                   </node>
                                 </node>
                               </node>
@@ -846,7 +867,7 @@
                                   <ref role="3cqZAo" node="2L1k$oXygGT" resolve="it" />
                                 </node>
                                 <node concept="3TrcHB" id="2L1k$oXyEfp" role="2OqNvi">
-                                  <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+                                  <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
                                 </node>
                               </node>
                               <node concept="2OqwBi" id="2L1k$oXygGN" role="3uHU7B">
@@ -1041,7 +1062,7 @@
                                     <ref role="3cqZAo" node="2Ai0GtafK7v" resolve="it" />
                                   </node>
                                   <node concept="3TrcHB" id="2L1k$oXySLu" role="2OqNvi">
-                                    <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+                                    <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
                                   </node>
                                 </node>
                               </node>
@@ -1162,7 +1183,7 @@
                                   <ref role="3cqZAo" node="2L1k$oXyVj0" resolve="it" />
                                 </node>
                                 <node concept="3TrcHB" id="2L1k$oXyViZ" role="2OqNvi">
-                                  <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+                                  <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
                                 </node>
                               </node>
                             </node>
@@ -1327,7 +1348,7 @@
                                     <ref role="3cqZAo" node="2Ai0GtafQdN" resolve="it" />
                                   </node>
                                   <node concept="3TrcHB" id="2L1k$oXz8wc" role="2OqNvi">
-                                    <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+                                    <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
                                   </node>
                                 </node>
                               </node>
@@ -1448,7 +1469,7 @@
                                   <ref role="3cqZAo" node="2L1k$oXzd7b" resolve="it" />
                                 </node>
                                 <node concept="3TrcHB" id="2L1k$oXzd74" role="2OqNvi">
-                                  <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+                                  <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
                                 </node>
                               </node>
                               <node concept="2OqwBi" id="2L1k$oXzd75" role="3uHU7B">
