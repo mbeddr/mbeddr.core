@@ -407,7 +407,7 @@
     </node>
   </node>
   <node concept="Q5z_Y" id="4K6s$_sJmpq">
-    <property role="3GE5qa" value="inheritance" />
+    <property role="3GE5qa" value="class" />
     <property role="TrG5h" value="ImportRequiredModuleForExtension" />
     <node concept="Q5ZZ6" id="4K6s$_sJmpr" role="Q6x$H">
       <node concept="3clFbS" id="4K6s$_sJmps" role="2VODD2">
@@ -562,6 +562,7 @@
   </node>
   <node concept="18kY7G" id="4K6s$_sNy5E">
     <property role="TrG5h" value="StaticClassMethodCallRule" />
+    <property role="3GE5qa" value="class" />
     <node concept="3clFbS" id="4K6s$_sNy5F" role="18ibNy">
       <node concept="3SKdUt" id="4K6s$_sN_dW" role="3cqZAp">
         <node concept="3SKdUq" id="4K6s$_sN_dY" role="3SKWNk">
