@@ -1159,6 +1159,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6ddXmWdG4ve" role="3cqZAp">
+          <node concept="37vLTI" id="6ddXmWdG6kY" role="3clFbG">
+            <node concept="3f7Wdw" id="6ddXmWdG6t6" role="37vLTx">
+              <ref role="3f7vo2" to="wnzg:2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
+              <ref role="3f7u_j" to="wnzg:2Ai0Gt9ODIs" />
+            </node>
+            <node concept="2OqwBi" id="6ddXmWdG4J$" role="37vLTJ">
+              <node concept="13iPFW" id="6ddXmWdG4vc" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6ddXmWdG5G7" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:6NtgknWJ211" resolve="visibility" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="6ddXmWdEGXD" role="13h7CS">

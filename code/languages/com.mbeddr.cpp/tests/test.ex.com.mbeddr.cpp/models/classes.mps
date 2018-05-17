@@ -52,6 +52,9 @@
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
+    <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
+      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO" />
+    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -268,7 +271,15 @@
             <property role="2c7vTL" value="false" />
           </node>
         </node>
-        <node concept="3XIRFW" id="6ddXmWdCZOj" role="1IVm9U" />
+        <node concept="3XIRFW" id="6ddXmWdCZOj" role="1IVm9U">
+          <node concept="1_9egQ" id="6ddXmWdG6KJ" role="3XIRFZ">
+            <node concept="PhEJO" id="6ddXmWdG6KI" role="1_9egR" />
+          </node>
+        </node>
+      </node>
+      <node concept="2gom5y" id="6ddXmWdG4tu" role="3mBdys">
+        <ref role="2gom41" node="2Ai0Gt9Qxgo" resolve="Counter" />
+        <node concept="3XIRFW" id="6ddXmWdG4tv" role="1IVm9U" />
       </node>
       <node concept="3u$6M4" id="nbE_$_7VlV" role="3mBdys" />
       <node concept="3mBbG7" id="3v5DuFDqjul" role="3mBdys">
@@ -365,6 +376,12 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+    </node>
+    <node concept="2NXPZ9" id="6ddXmWdFdJu" role="N3F5h">
+      <property role="TrG5h" value="empty_1526554437131_1" />
+    </node>
+    <node concept="2NXPZ9" id="6ddXmWdFdNl" role="N3F5h">
+      <property role="TrG5h" value="empty_1526554437289_2" />
     </node>
     <node concept="2NXPZ9" id="45rBLTDXEWp" role="N3F5h">
       <property role="TrG5h" value="empty_1526547438983_6" />
