@@ -52,9 +52,6 @@
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
-    <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
-      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO" />
-    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -272,9 +269,7 @@
           </node>
         </node>
         <node concept="3XIRFW" id="6ddXmWdCZOj" role="1IVm9U">
-          <node concept="1_9egQ" id="6ddXmWdG6KJ" role="3XIRFZ">
-            <node concept="PhEJO" id="6ddXmWdG6KI" role="1_9egR" />
-          </node>
+          <node concept="3XISUE" id="6ddXmWdG6WI" role="3XIRFZ" />
         </node>
       </node>
       <node concept="2gom5y" id="6ddXmWdG4tu" role="3mBdys">
