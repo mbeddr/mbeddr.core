@@ -184,3 +184,5 @@ antlib.xml
 **/.project
 # ecore transformation tools
 code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.ecoretransofmation.sandbox
+
+code/languages/com.mbeddr.cpp/.mps/libraries.xml

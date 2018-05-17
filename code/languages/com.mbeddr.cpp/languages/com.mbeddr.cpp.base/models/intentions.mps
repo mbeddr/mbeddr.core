@@ -63,6 +63,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -71,7 +74,8 @@
   <node concept="2S6QgY" id="2L1k$oXnM2$">
     <property role="TrG5h" value="ToggleVirtual" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="wnzg:2L1k$oXxncW" resolve="IVirtualisable" />
+    <property role="3GE5qa" value="method" />
+    <ref role="2ZfgGC" to="wnzg:2L1k$oXxncW" resolve="IVirtualableConcept" />
     <node concept="2S6ZIM" id="2L1k$oXnM2_" role="2ZfVej">
       <node concept="3clFbS" id="2L1k$oXnM2A" role="2VODD2">
         <node concept="3clFbF" id="2L1k$oXnMc1" role="3cqZAp">
@@ -85,7 +89,7 @@
             <node concept="2OqwBi" id="2L1k$oXoEU8" role="3K4Cdx">
               <node concept="2Sf5sV" id="2L1k$oXoEuE" role="2Oq$k0" />
               <node concept="3TrcHB" id="2L1k$oXxo6O" role="2OqNvi">
-                <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+                <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
               </node>
             </node>
           </node>
@@ -100,14 +104,14 @@
               <node concept="2OqwBi" id="2L1k$oXoJHj" role="3fr31v">
                 <node concept="2Sf5sV" id="2L1k$oXoJlO" role="2Oq$k0" />
                 <node concept="3TrcHB" id="2L1k$oXxoMj" role="2OqNvi">
-                  <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+                  <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
                 </node>
               </node>
             </node>
             <node concept="2OqwBi" id="2L1k$oXnP3j" role="37vLTJ">
               <node concept="2Sf5sV" id="2L1k$oXnOK2" role="2Oq$k0" />
               <node concept="3TrcHB" id="2L1k$oXxoA5" role="2OqNvi">
-                <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+                <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
               </node>
             </node>
           </node>
