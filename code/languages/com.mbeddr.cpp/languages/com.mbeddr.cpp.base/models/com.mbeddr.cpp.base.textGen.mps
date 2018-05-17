@@ -10,6 +10,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -701,17 +702,11 @@
             </node>
           </node>
         </node>
-        <node concept="lc7rE" id="1rolTiv7_aK" role="3cqZAp">
-          <node concept="l9S2W" id="1rolTiv7_q_" role="lcghm">
-            <property role="XA4eZ" value="true" />
-            <property role="lbP0B" value=", " />
-            <node concept="2OqwBi" id="1rolTiv7_IK" role="lbANJ">
-              <node concept="117lpO" id="1rolTiv7_$T" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="1rolTiv7A19" role="2OqNvi">
-                <ref role="3TtcxE" to="wnzg:1rolTiv5m$t" resolve="actuals" />
-              </node>
-            </node>
+        <node concept="lc7rE" id="1rolTivoOfk" role="3cqZAp">
+          <node concept="la8eA" id="1rolTivoOvT" role="lcghm">
+            <property role="lacIc" value=";" />
           </node>
+          <node concept="l8MVK" id="1rolTivuL1a" role="lcghm" />
         </node>
       </node>
     </node>

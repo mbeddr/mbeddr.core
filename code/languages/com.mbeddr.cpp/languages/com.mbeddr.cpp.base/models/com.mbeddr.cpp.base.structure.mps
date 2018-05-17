@@ -80,6 +80,9 @@
     <node concept="PrWs8" id="4o2nsMgB$iI" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
+    <node concept="PrWs8" id="1rolTivmV0V" role="PzmwI">
+      <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
+    </node>
     <node concept="PrWs8" id="4o2nsMgBFbw" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
@@ -350,15 +353,28 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgB$VW" resolve="MethodDeclaration" />
     </node>
-    <node concept="1TJgyj" id="1rolTiv5m$t" role="1TKVEi">
-      <property role="IQ2ns" value="1646161959639673117" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="actuals" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="1rolTivilg$" role="PzmwI">
+      <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
     </node>
-    <node concept="PrWs8" id="1rolTiv5m$$" role="PzmwI">
-      <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
+  </node>
+  <node concept="1TIwiD" id="1rolTivlWUK">
+    <property role="EcuMT" value="1646161959644024496" />
+    <property role="TrG5h" value="InnerClassType" />
+    <property role="34LRSv" value="inner class" />
+    <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
+    <node concept="1TJgyj" id="1rolTivlWWa" role="1TKVEi">
+      <property role="IQ2ns" value="1646161959644024586" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="outerclass" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="1rolTivlWWd" role="1TKVEi">
+      <property role="IQ2ns" value="1646161959644024589" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="innerclass" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
     </node>
   </node>
 </model>
