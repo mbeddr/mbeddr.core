@@ -115,6 +115,9 @@
     <node concept="PrWs8" id="3v5DuFDl4c1" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     </node>
+    <node concept="PrWs8" id="2L1k$oXxnd5" role="PzmwI">
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualisable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBEtu">
     <property role="EcuMT" value="5044697665789405022" />
@@ -194,6 +197,9 @@
     <node concept="PrWs8" id="2Ai0Gtag2pd" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
+    <node concept="PrWs8" id="2L1k$oXxoOS" role="PzmwI">
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualisable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3v5DuFDls_I">
     <property role="EcuMT" value="4018800670853679470" />
@@ -249,6 +255,39 @@
       <property role="IQ2nx" value="4511589886097466677" />
       <property role="TrG5h" value="visibility" />
       <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3EDDOqDY7xe">
+    <property role="EcuMT" value="4227093647205103694" />
+    <property role="TrG5h" value="DeleteArrayKeyword" />
+    <property role="34LRSv" value="delete []" />
+    <property role="R4oN_" value="Delete array keyword (delete [] &lt;expression&gt;)" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyi" id="3EDDOqDY7xf" role="1TKVEl">
+      <property role="IQ2nx" value="4227093647205103695" />
+      <property role="TrG5h" value="expression" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3EDDOqDY7x5">
+    <property role="EcuMT" value="4227093647205103685" />
+    <property role="TrG5h" value="DeleteKeyword" />
+    <property role="34LRSv" value="delete" />
+    <property role="R4oN_" value="Delete keyword (delete &lt;expression&gt;)" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyi" id="3EDDOqDY7xa" role="1TKVEl">
+      <property role="IQ2nx" value="4227093647205103690" />
+      <property role="TrG5h" value="expression" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2L1k$oXxncW">
+    <property role="EcuMT" value="3188920472788366140" />
+    <property role="TrG5h" value="IVirtualisable" />
+    <node concept="1TJgyi" id="2L1k$oXxncX" role="1TKVEl">
+      <property role="IQ2nx" value="3188920472788366141" />
+      <property role="TrG5h" value="virtual" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="6oRbCP62xkS">
