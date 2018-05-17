@@ -309,6 +309,7 @@
   </node>
   <node concept="1bsvg0" id="2Ai0Gt9WlKS">
     <property role="TrG5h" value="generateMethodPrototype" />
+    <property role="3GE5qa" value="method" />
     <node concept="1bwezc" id="2Ai0Gt9WlKT" role="1bwxVq">
       <property role="TrG5h" value="generateMethodPrototype" />
       <node concept="3cqZAl" id="2Ai0Gt9WlKU" role="3clF45" />

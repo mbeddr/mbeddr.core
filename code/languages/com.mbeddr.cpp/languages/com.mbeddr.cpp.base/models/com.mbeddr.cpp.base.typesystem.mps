@@ -195,6 +195,12 @@
           </node>
         </node>
         <node concept="3clFbC" id="4K6s$_sMbV4" role="3clFbw">
+          <node concept="2OqwBi" id="4K6s$_sMb0z" role="3uHU7B">
+            <node concept="1YBJjd" id="4K6s$_sMaRN" role="2Oq$k0">
+              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+            </node>
+            <node concept="1mfA1w" id="4K6s$_sMbGi" role="2OqNvi" />
+          </node>
           <node concept="2OqwBi" id="4K6s$_sMcGg" role="3uHU7w">
             <node concept="1YBJjd" id="4K6s$_sMczi" role="2Oq$k0">
               <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
@@ -202,12 +208,6 @@
             <node concept="3TrEf2" id="4K6s$_sMefW" role="2OqNvi">
               <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
             </node>
-          </node>
-          <node concept="2OqwBi" id="4K6s$_sMb0z" role="3uHU7B">
-            <node concept="1YBJjd" id="4K6s$_sMaRN" role="2Oq$k0">
-              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
-            </node>
-            <node concept="1mfA1w" id="4K6s$_sMbGi" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -408,7 +408,7 @@
     </node>
   </node>
   <node concept="Q5z_Y" id="4K6s$_sJmpq">
-    <property role="3GE5qa" value="inheritance" />
+    <property role="3GE5qa" value="class" />
     <property role="TrG5h" value="ImportRequiredModuleForExtension" />
     <node concept="Q5ZZ6" id="4K6s$_sJmpr" role="Q6x$H">
       <node concept="3clFbS" id="4K6s$_sJmps" role="2VODD2">
@@ -563,6 +563,7 @@
   </node>
   <node concept="18kY7G" id="4K6s$_sNy5E">
     <property role="TrG5h" value="StaticClassMethodCallRule" />
+    <property role="3GE5qa" value="class" />
     <node concept="3clFbS" id="4K6s$_sNy5F" role="18ibNy">
       <node concept="3SKdUt" id="4K6s$_sN_dW" role="3cqZAp">
         <node concept="3SKdUq" id="4K6s$_sN_dY" role="3SKWNk">
