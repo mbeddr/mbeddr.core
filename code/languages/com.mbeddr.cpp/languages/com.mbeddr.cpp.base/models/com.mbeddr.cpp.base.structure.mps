@@ -118,7 +118,7 @@
       <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     </node>
     <node concept="PrWs8" id="2L1k$oXxnd5" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualableConcept" />
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualizableConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBEtu">
@@ -205,7 +205,7 @@
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
     <node concept="PrWs8" id="2L1k$oXxoOS" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualableConcept" />
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualizableConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="3v5DuFDls_I">
@@ -294,7 +294,7 @@
   </node>
   <node concept="PlHQZ" id="2L1k$oXxncW">
     <property role="EcuMT" value="3188920472788366140" />
-    <property role="TrG5h" value="IVirtualableConcept" />
+    <property role="TrG5h" value="IVirtualizableConcept" />
     <property role="3GE5qa" value="method" />
     <node concept="1TJgyi" id="2L1k$oXxncX" role="1TKVEl">
       <property role="IQ2nx" value="3188920472788366141" />
