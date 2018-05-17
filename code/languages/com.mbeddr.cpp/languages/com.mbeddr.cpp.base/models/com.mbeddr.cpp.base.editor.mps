@@ -292,6 +292,25 @@
     <node concept="3EZMnI" id="4o2nsMgBJ4d" role="2wV5jI">
       <node concept="PMmxH" id="59MAV0yaZs9" role="3EZMnx">
         <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
+        <node concept="pkWqt" id="1rolTiuN6YE" role="pqm2j">
+          <node concept="3clFbS" id="1rolTiuN6YF" role="2VODD2">
+            <node concept="3clFbF" id="1rolTiuN763" role="3cqZAp">
+              <node concept="2OqwBi" id="1rolTiuN9xA" role="3clFbG">
+                <node concept="2OqwBi" id="1rolTiuN7H4" role="2Oq$k0">
+                  <node concept="pncrf" id="1rolTiuN7ov" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="1rolTiuN8QK" role="2OqNvi">
+                    <node concept="1xMEDy" id="1rolTiuN8QM" role="1xVPHs">
+                      <node concept="chp4Y" id="1rolTiuN97A" role="ri$Ld">
+                        <ref role="cht4Q" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="1rolTiuNadu" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="4o2nsMgBJ4g" role="2iSdaV" />
       <node concept="3F1sOY" id="3v5DuFDsWjm" role="3EZMnx">
