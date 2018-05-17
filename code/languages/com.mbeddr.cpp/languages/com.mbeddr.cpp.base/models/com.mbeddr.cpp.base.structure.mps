@@ -315,5 +315,78 @@
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6NtgknWJ20B">
+    <property role="EcuMT" value="7844497894798008359" />
+    <property role="TrG5h" value="ClassConstructor" />
+    <property role="3GE5qa" value="method" />
+    <property role="34LRSv" value="constructor" />
+    <property role="R4oN_" value="A class constructor" />
+    <ref role="1TJDcQ" node="6NtgknWJ21h" resolve="ClassConstructorSignature" />
+    <node concept="PrWs8" id="6NtgknWJ20C" role="PzmwI">
+      <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="6NtgknWJ20V" role="PzmwI">
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualableConcept" />
+    </node>
+    <node concept="1TJgyi" id="6NtgknWJ211" role="1TKVEl">
+      <property role="IQ2nx" value="7844497894798008385" />
+      <property role="TrG5h" value="visibility" />
+      <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
+    </node>
+    <node concept="1TJgyj" id="6NtgknWJ214" role="1TKVEi">
+      <property role="IQ2ns" value="7844497894798008388" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="parent_class" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6NtgknWJ21h">
+    <property role="EcuMT" value="7844497894798008401" />
+    <property role="3GE5qa" value="method" />
+    <property role="TrG5h" value="ClassConstructorSignature" />
+    <property role="R4oN_" value="very similar to the normal method signature, but has some quirks because it isn't named (all constructors have the same name)" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6NtgknWJ2OD" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:6mfXVgRsmwb" resolve="IVoidTypeContainer" />
+    </node>
+    <node concept="PrWs8" id="6NtgknWJ2OY" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="6NtgknWJ2Pf" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:1DVNPtFPBay" resolve="IShowUpInOutline" />
+    </node>
+    <node concept="PrWs8" id="6NtgknWJ2P$" role="PzmwI">
+      <ref role="PrY4T" to="x27k:2azu63OPjKX" resolve="ICodeLocationContext" />
+    </node>
+    <node concept="PrWs8" id="6NtgknWJ2PX" role="PzmwI">
+      <ref role="PrY4T" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
+    </node>
+    <node concept="PrWs8" id="6NtgknWJ2Qq" role="PzmwI">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
+    </node>
+    <node concept="PrWs8" id="6NtgknWJ2RG" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:49YGTZdSIMN" resolve="GenericUnitProvider" />
+    </node>
+    <node concept="1TJgyj" id="6ddXmWdAKft" role="1TKVEi">
+      <property role="IQ2ns" value="7155645240280024029" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="x27k:7kKaL9x4DZT" resolve="IArgumentLike" />
+    </node>
+    <node concept="1TJgyj" id="6ddXmWdC9sl" role="1TKVEi">
+      <property role="IQ2ns" value="7155645240280389397" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="1TJgyi" id="6ddXmWdALYA" role="1TKVEl">
+      <property role="IQ2nx" value="7155645240280031142" />
+      <property role="TrG5h" value="hasEllipsis" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
 </model>
 

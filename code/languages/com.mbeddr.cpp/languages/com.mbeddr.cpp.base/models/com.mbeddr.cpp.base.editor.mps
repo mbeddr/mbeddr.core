@@ -74,6 +74,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ng" index="2Z_bC8">
         <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
@@ -727,6 +728,58 @@
         </node>
       </node>
       <node concept="l2Vlx" id="3EDDOqDY7xw" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6NtgknWJ21f">
+    <property role="3GE5qa" value="method" />
+    <ref role="1XX52x" to="wnzg:6NtgknWJ20B" resolve="ClassConstructor" />
+    <node concept="3EZMnI" id="6NtgknWJ3xP" role="2wV5jI">
+      <node concept="3F0A7n" id="6NtgknWJ3xZ" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:6NtgknWJ211" resolve="visibility" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="1iCGBv" id="6ddXmWdAFQT" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+        <node concept="1sVBvm" id="6ddXmWdAFQV" role="1sWHZn">
+          <node concept="3F0A7n" id="6ddXmWdAFR9" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+        <node concept="VPxyj" id="6ddXmWdCZQv" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="6NtgknWJ3yp" role="3EZMnx">
+        <ref role="PMmxG" node="6NtgknWJ3yn" resolve="constructorSignature" />
+      </node>
+      <node concept="l2Vlx" id="6NtgknWJ3xS" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="6NtgknWJ3yn">
+    <property role="3GE5qa" value="method" />
+    <property role="TrG5h" value="constructorSignature" />
+    <ref role="1XX52x" to="wnzg:6NtgknWJ21h" resolve="ClassConstructorSignature" />
+    <node concept="3EZMnI" id="6NtgknWJ3yP" role="2wV5jI">
+      <node concept="3F0ifn" id="6ddXmWdAKeG" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F2HdR" id="6ddXmWdAKeP" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="wnzg:6ddXmWdAKft" resolve="arguments" />
+        <node concept="l2Vlx" id="6ddXmWdAKeS" role="2czzBx" />
+      </node>
+      <node concept="1kHk_G" id="6ddXmWdALZ7" role="3EZMnx">
+        <property role="ZjSer" value="..." />
+        <ref role="1NtTu8" to="wnzg:6ddXmWdALYA" resolve="hasEllipsis" />
+      </node>
+      <node concept="l2Vlx" id="6NtgknWJ3yS" role="2iSdaV" />
+      <node concept="3F0ifn" id="6ddXmWdC9rI" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="3F1sOY" id="6ddXmWdC9sq" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:6ddXmWdC9sl" resolve="body" />
+      </node>
     </node>
   </node>
 </model>
