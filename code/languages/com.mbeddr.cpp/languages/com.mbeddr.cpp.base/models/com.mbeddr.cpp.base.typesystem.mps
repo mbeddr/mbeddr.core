@@ -175,7 +175,7 @@
   </registry>
   <node concept="18kY7G" id="4K6s$_rq5Gf">
     <property role="TrG5h" value="InheritanceCheckingRule" />
-    <property role="3GE5qa" value="inheritance" />
+    <property role="3GE5qa" value="class" />
     <node concept="3clFbS" id="4K6s$_rq5Gg" role="18ibNy">
       <node concept="3SKdUt" id="4K6s$_sM9TQ" role="3cqZAp">
         <node concept="3SKdUq" id="4K6s$_sM9TS" role="3SKWNk">

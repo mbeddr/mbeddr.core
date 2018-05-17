@@ -230,6 +230,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="4o2nsMgBCkM">
+    <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
     <node concept="3EZMnI" id="3v5DuFDnNFt" role="2wV5jI">
       <node concept="PMmxH" id="59MAV0ydrUB" role="3EZMnx">
@@ -256,6 +257,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4o2nsMgBClt">
+    <property role="3GE5qa" value="class" />
     <ref role="1XX52x" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
     <node concept="3EZMnI" id="4o2nsMgBClv" role="2wV5jI">
       <node concept="3EZMnI" id="4o2nsMgBClJ" role="3EZMnx">
@@ -354,6 +356,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4o2nsMgBEub">
+    <property role="3GE5qa" value="class" />
     <ref role="1XX52x" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
     <node concept="1iCGBv" id="4o2nsMgBEuj" role="2wV5jI">
       <ref role="1NtTu8" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
@@ -404,6 +407,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2Ai0Gt9Wc$7">
+    <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="wnzg:2Ai0Gt9WczV" resolve="MethodPrototype" />
     <node concept="3EZMnI" id="3v5DuFDrgcR" role="2wV5jI">
       <node concept="PMmxH" id="2L1k$oXxoSI" role="3EZMnx">
@@ -422,11 +426,13 @@
     </node>
   </node>
   <node concept="24kQdi" id="3v5DuFDls_U">
+    <property role="3GE5qa" value="class" />
     <ref role="1XX52x" to="wnzg:3v5DuFDls_I" resolve="EmptyClassContent" />
     <node concept="3F0ifn" id="3v5DuFDls_W" role="2wV5jI" />
   </node>
   <node concept="PKFIW" id="3v5DuFDr9bv">
     <property role="TrG5h" value="methodSignature" />
+    <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="wnzg:3v5DuFDqYGC" resolve="MethodSignature" />
     <node concept="3EZMnI" id="6Q7bJ$$mLHM" role="2wV5jI">
       <node concept="1kHk_G" id="7K_2cV$Golz" role="3EZMnx">
@@ -511,6 +517,7 @@
   </node>
   <node concept="PKFIW" id="59MAV0yaZn2">
     <property role="TrG5h" value="VisibilityFlag" />
+    <property role="3GE5qa" value="class" />
     <ref role="1XX52x" to="wnzg:4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     <node concept="3F0A7n" id="59MAV0ycZT1" role="2wV5jI">
       <ref role="1NtTu8" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
@@ -518,7 +525,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="3UsoL$l5qlB">
-    <property role="3GE5qa" value="inheritance" />
+    <property role="3GE5qa" value="class" />
     <property role="TrG5h" value="AncestorListEditor" />
     <ref role="1XX52x" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
     <node concept="3EZMnI" id="3UsoL$l5qlD" role="2wV5jI">
@@ -534,7 +541,7 @@
     </node>
   </node>
   <node concept="3ICXOK" id="3UsoL$l5JFP">
-    <property role="3GE5qa" value="inheritance" />
+    <property role="3GE5qa" value="class" />
     <property role="TrG5h" value="InheritanceEditorTransform" />
     <ref role="aqKnT" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
     <node concept="1Qtc8_" id="3UsoL$l5JFQ" role="IW6Ez">
@@ -613,7 +620,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3UsoL$l5ql0">
-    <property role="3GE5qa" value="inheritance" />
+    <property role="3GE5qa" value="class" />
     <ref role="1XX52x" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
     <node concept="3EZMnI" id="3UsoL$l5ql2" role="2wV5jI">
       <node concept="3F0A7n" id="3UsoL$l5qlc" role="3EZMnx">
@@ -633,12 +640,12 @@
     </node>
   </node>
   <node concept="3p36aQ" id="6e$PORhH5uX">
-    <property role="3GE5qa" value="inheritance" />
+    <property role="3GE5qa" value="class" />
     <ref role="aqKnT" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
     <node concept="3VyMlK" id="6e$PORhHaAo" role="3ft7WO" />
   </node>
   <node concept="IW6AY" id="6e$PORhMQc$">
-    <property role="3GE5qa" value="inheritance" />
+    <property role="3GE5qa" value="class" />
     <ref role="aqKnT" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
     <node concept="1Qtc8_" id="6e$PORhMQc_" role="IW6Ez">
       <node concept="3eGOoe" id="6e$PORhMQcF" role="1Qtc8$" />
@@ -656,13 +663,15 @@
   </node>
   <node concept="PKFIW" id="2L1k$oXm7Pq">
     <property role="TrG5h" value="VirtualFlag" />
-    <ref role="1XX52x" to="wnzg:2L1k$oXxncW" resolve="IVirtualisable" />
+    <property role="3GE5qa" value="method" />
+    <ref role="1XX52x" to="wnzg:2L1k$oXxncW" resolve="IVirtualableConcept" />
     <node concept="1kHk_G" id="2LwGNVbhV8I" role="2wV5jI">
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      <ref role="1NtTu8" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+      <ref role="1NtTu8" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
     </node>
   </node>
   <node concept="24kQdi" id="6oRbCP62xl4">
+    <property role="3GE5qa" value="class" />
     <ref role="1XX52x" to="wnzg:6oRbCP62xkS" resolve="ClassTypeAccessor" />
     <node concept="3EZMnI" id="6oRbCP62xl6" role="2wV5jI">
       <node concept="1iCGBv" id="6oRbCP62xlg" role="3EZMnx">
@@ -678,7 +687,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="3EDDOqDY7yv">
-    <ref role="1XX52x" to="wnzg:3EDDOqDY7xe" resolve="DeleteArrayKeyword" />
+    <property role="3GE5qa" value="class" />
+    <ref role="1XX52x" to="wnzg:3EDDOqDY7xe" resolve="DeleteArrayDecleration" />
     <node concept="3EZMnI" id="3EDDOqDY7yx" role="2wV5jI">
       <node concept="3F0ifn" id="3EDDOqDY7yI" role="3EZMnx">
         <property role="3F0ifm" value="delete" />
@@ -700,7 +710,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="3EDDOqDY7xr">
-    <ref role="1XX52x" to="wnzg:3EDDOqDY7x5" resolve="DeleteKeyword" />
+    <property role="3GE5qa" value="class" />
+    <ref role="1XX52x" to="wnzg:3EDDOqDY7x5" resolve="DeleteDecleration" />
     <node concept="3EZMnI" id="3EDDOqDY7xt" role="2wV5jI">
       <node concept="3F0ifn" id="3EDDOqDY7xE" role="3EZMnx">
         <property role="3F0ifm" value="delete" />

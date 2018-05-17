@@ -69,12 +69,16 @@
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
   <node concept="3_zdsH" id="3v5DuFDyVp3">
+    <property role="3GE5qa" value="class" />
     <ref role="3_znuS" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
     <node concept="3__wT9" id="3v5DuFDyVp4" role="3_A6iZ">
       <node concept="3clFbS" id="3v5DuFDyVp5" role="2VODD2">

@@ -205,6 +205,9 @@
       <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -245,6 +248,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="4o2nsMgB$W1">
+    <property role="3GE5qa" value="method" />
     <ref role="13h7C2" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
     <node concept="13hLZK" id="4o2nsMgB$W2" role="13h7CW">
       <node concept="3clFbS" id="4o2nsMgB$W3" role="2VODD2">
@@ -299,6 +303,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4o2nsMgBEuL">
+    <property role="3GE5qa" value="class" />
     <ref role="13h7C2" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
     <node concept="13hLZK" id="4o2nsMgBEuM" role="13h7CW">
       <node concept="3clFbS" id="4o2nsMgBEuN" role="2VODD2" />
@@ -325,6 +330,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4o2nsMgBFbE">
+    <property role="3GE5qa" value="class" />
     <ref role="13h7C2" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
     <node concept="13hLZK" id="4o2nsMgBFbF" role="13h7CW">
       <node concept="3clFbS" id="4o2nsMgBFbG" role="2VODD2">
@@ -838,6 +844,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2Ai0Gt9WfLZ">
+    <property role="3GE5qa" value="method" />
     <ref role="13h7C2" to="wnzg:2Ai0Gt9WczV" resolve="MethodPrototype" />
     <node concept="13i0hz" id="4WTYg$PPEcw" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -905,6 +912,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3v5DuFDr92M">
+    <property role="3GE5qa" value="method" />
     <ref role="13h7C2" to="wnzg:3v5DuFDqYGC" resolve="MethodSignature" />
     <node concept="13i0hz" id="1S6A2cmU1yG" role="13h7CS">
       <property role="13i0iv" value="false" />
