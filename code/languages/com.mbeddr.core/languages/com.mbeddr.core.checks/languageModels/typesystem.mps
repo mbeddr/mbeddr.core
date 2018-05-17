@@ -111,6 +111,7 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -118,6 +119,9 @@
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -553,6 +557,23 @@
                 </node>
                 <node concept="chp4Y" id="79i$vAY5PAf" role="3oSUPX">
                   <ref role="cht4Q" to="tpck:hYa1RjM" resolve="IType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7vVGzvOlikG" role="3cqZAp">
+          <node concept="3clFbS" id="7vVGzvOlikI" role="3clFbx">
+            <node concept="3cpWs6" id="7vVGzvOlkdH" role="3cqZAp" />
+          </node>
+          <node concept="3fqX7Q" id="7vVGzvOliFb" role="3clFbw">
+            <node concept="2OqwBi" id="7vVGzvOljTw" role="3fr31v">
+              <node concept="37vLTw" id="7vVGzvOljKS" role="2Oq$k0">
+                <ref role="3cqZAo" node="2sRGoU6nheo" resolve="tpe" />
+              </node>
+              <node concept="1mIQ4w" id="7vVGzvOlk6Q" role="2OqNvi">
+                <node concept="chp4Y" id="7vVGzvOlk91" role="cj9EA">
+                  <ref role="cht4Q" to="mj1l:7lNBHBNB4oP" resolve="PrimitiveC99IntegralType" />
                 </node>
               </node>
             </node>
