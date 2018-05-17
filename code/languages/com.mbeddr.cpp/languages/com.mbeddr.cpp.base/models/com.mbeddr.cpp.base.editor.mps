@@ -43,7 +43,6 @@
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
-      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -236,21 +235,21 @@
       <node concept="PMmxH" id="59MAV0ydrUB" role="3EZMnx">
         <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
       </node>
-      <node concept="1kHk_G" id="4K6s$_sMpMC" role="3EZMnx">
-        <property role="ZjSer" value="static" />
+      <node concept="1kHk_G" id="6ddXmWe4Fhj" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:4K6s$_sMpMQ" resolve="static" />
-        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+      </node>
+      <node concept="PMmxH" id="6ddXmWeaxpU" role="3EZMnx">
+        <ref role="PMmxG" node="1TorPL4sJdQ" resolve="PureFlag" />
+      </node>
+      <node concept="PMmxH" id="2L1k$oXn3Ob" role="3EZMnx">
+        <ref role="PMmxG" node="2L1k$oXm7Pq" resolve="VirtualFlag" />
       </node>
       <node concept="PMmxH" id="3v5DuFDoxUa" role="3EZMnx">
         <ref role="PMmxG" node="3v5DuFDr9bv" resolve="methodSignature" />
       </node>
-      <node concept="3F1sOY" id="3v5DuFDoxUu" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:3CmSUB7Fp_k" resolve="body" />
-        <node concept="VPM3Z" id="3v5DuFDoxUM" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="ljvvj" id="3v5DuFDoxUD" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+      <node concept="_tjkj" id="6ddXmWebFfR" role="3EZMnx">
+        <node concept="3F1sOY" id="6ddXmWebFgf" role="_tjki">
+          <ref role="1NtTu8" to="wnzg:3CmSUB7Fp_k" resolve="body" />
         </node>
       </node>
       <node concept="l2Vlx" id="3v5DuFDnNFw" role="2iSdaV" />
@@ -410,10 +409,13 @@
     <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="wnzg:2Ai0Gt9WczV" resolve="MethodPrototype" />
     <node concept="3EZMnI" id="3v5DuFDrgcR" role="2wV5jI">
-      <node concept="PMmxH" id="2L1k$oXxoSI" role="3EZMnx">
-        <ref role="PMmxG" node="2L1k$oXm7Pq" resolve="VirtualFlag" />
-      </node>
       <node concept="2iRfu4" id="3v5DuFDrgcS" role="2iSdaV" />
+      <node concept="3F0A7n" id="6ddXmWe6Wbq" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+      </node>
+      <node concept="3F0A7n" id="6ddXmWe6WbN" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
+      </node>
       <node concept="PMmxH" id="3v5DuFDpKbk" role="3EZMnx">
         <ref role="PMmxG" node="3v5DuFDr9bv" resolve="methodSignature" />
       </node>
@@ -432,7 +434,6 @@
   </node>
   <node concept="PKFIW" id="3v5DuFDr9bv">
     <property role="TrG5h" value="methodSignature" />
-    <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="wnzg:3v5DuFDqYGC" resolve="MethodSignature" />
     <node concept="3EZMnI" id="6Q7bJ$$mLHM" role="2wV5jI">
       <node concept="1kHk_G" id="7K_2cV$Golz" role="3EZMnx">
@@ -517,11 +518,20 @@
   </node>
   <node concept="PKFIW" id="59MAV0yaZn2">
     <property role="TrG5h" value="VisibilityFlag" />
-    <property role="3GE5qa" value="class" />
     <ref role="1XX52x" to="wnzg:4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     <node concept="3F0A7n" id="59MAV0ycZT1" role="2wV5jI">
       <ref role="1NtTu8" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="2L1k$oXm7Pq">
+    <property role="TrG5h" value="VirtualFlag" />
+    <property role="3GE5qa" value="method" />
+    <ref role="1XX52x" to="wnzg:2L1k$oXxncW" resolve="IVirtualableConcept" />
+    <node concept="1kHk_G" id="2LwGNVbhV8I" role="2wV5jI">
+      <property role="ZjSer" value="virtual" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      <ref role="1NtTu8" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
     </node>
   </node>
   <node concept="PKFIW" id="3UsoL$l5qlB">
@@ -619,73 +629,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="3UsoL$l5ql0">
-    <property role="3GE5qa" value="class" />
-    <ref role="1XX52x" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
-    <node concept="3EZMnI" id="3UsoL$l5ql2" role="2wV5jI">
-      <node concept="3F0A7n" id="3UsoL$l5qlc" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:3UsoL$l5qkP" resolve="visibility" />
-        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
-      </node>
-      <node concept="1iCGBv" id="3UsoL$l5qll" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
-        <node concept="1sVBvm" id="3UsoL$l5qln" role="1sWHZn">
-          <node concept="3F0A7n" id="3UsoL$l5qlz" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="l2Vlx" id="3UsoL$l5ql5" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="3p36aQ" id="6e$PORhH5uX">
-    <property role="3GE5qa" value="class" />
-    <ref role="aqKnT" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
-    <node concept="3VyMlK" id="6e$PORhHaAo" role="3ft7WO" />
-  </node>
-  <node concept="IW6AY" id="6e$PORhMQc$">
-    <property role="3GE5qa" value="class" />
-    <ref role="aqKnT" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
-    <node concept="1Qtc8_" id="6e$PORhMQc_" role="IW6Ez">
-      <node concept="3eGOoe" id="6e$PORhMQcF" role="1Qtc8$" />
-      <node concept="aenpk" id="6e$PORhMQcJ" role="1Qtc8A">
-        <node concept="27VH4U" id="6e$PORhMQcM" role="aenpu">
-          <node concept="3clFbS" id="6e$PORhMQcN" role="2VODD2">
-            <node concept="3cpWs6" id="6e$PORhO5wx" role="3cqZAp">
-              <node concept="3clFbT" id="6e$PORhO5Jb" role="3cqZAk" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1IAO7e" id="6e$PORhO_jI" role="1Qtc8A" />
-    </node>
-  </node>
-  <node concept="PKFIW" id="2L1k$oXm7Pq">
-    <property role="TrG5h" value="VirtualFlag" />
-    <property role="3GE5qa" value="method" />
-    <ref role="1XX52x" to="wnzg:2L1k$oXxncW" resolve="IVirtualizableConcept" />
-    <node concept="1kHk_G" id="2LwGNVbhV8I" role="2wV5jI">
-      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      <ref role="1NtTu8" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="6oRbCP62xl4">
-    <property role="3GE5qa" value="class" />
-    <ref role="1XX52x" to="wnzg:6oRbCP62xkS" resolve="ClassTypeAccessor" />
-    <node concept="3EZMnI" id="6oRbCP62xl6" role="2wV5jI">
-      <node concept="1iCGBv" id="6oRbCP62xlg" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:6oRbCP62xkT" resolve="class" />
-        <node concept="1sVBvm" id="6oRbCP62xli" role="1sWHZn">
-          <node concept="3F0A7n" id="6oRbCP62xls" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="2iRfu4" id="6oRbCP62xl9" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="3EDDOqDY7yv">
     <property role="3GE5qa" value="class" />
     <ref role="1XX52x" to="wnzg:3EDDOqDY7xe" resolve="DeleteArrayDecleration" />
@@ -727,6 +670,72 @@
         </node>
       </node>
       <node concept="l2Vlx" id="3EDDOqDY7xw" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3UsoL$l5ql0">
+    <property role="3GE5qa" value="class" />
+    <ref role="1XX52x" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
+    <node concept="3EZMnI" id="3UsoL$l5ql2" role="2wV5jI">
+      <node concept="3F0A7n" id="3UsoL$l5qlc" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:3UsoL$l5qkP" resolve="visibility" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+      </node>
+      <node concept="1iCGBv" id="3UsoL$l5qll" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+        <node concept="1sVBvm" id="3UsoL$l5qln" role="1sWHZn">
+          <node concept="3F0A7n" id="3UsoL$l5qlz" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3UsoL$l5ql5" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6oRbCP62xl4">
+    <property role="3GE5qa" value="class" />
+    <ref role="1XX52x" to="wnzg:6oRbCP62xkS" resolve="ClassTypeAccessor" />
+    <node concept="3EZMnI" id="6oRbCP62xl6" role="2wV5jI">
+      <node concept="1iCGBv" id="6oRbCP62xlg" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:6oRbCP62xkT" resolve="class" />
+        <node concept="1sVBvm" id="6oRbCP62xli" role="1sWHZn">
+          <node concept="3F0A7n" id="6oRbCP62xls" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="6oRbCP62xl9" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="3p36aQ" id="6e$PORhH5uX">
+    <property role="3GE5qa" value="class" />
+    <ref role="aqKnT" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
+    <node concept="3VyMlK" id="6e$PORhHaAo" role="3ft7WO" />
+  </node>
+  <node concept="IW6AY" id="6e$PORhMQc$">
+    <property role="3GE5qa" value="class" />
+    <ref role="aqKnT" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
+    <node concept="1Qtc8_" id="6e$PORhMQc_" role="IW6Ez">
+      <node concept="3eGOoe" id="6e$PORhMQcF" role="1Qtc8$" />
+      <node concept="aenpk" id="6e$PORhMQcJ" role="1Qtc8A">
+        <node concept="27VH4U" id="6e$PORhMQcM" role="aenpu">
+          <node concept="3clFbS" id="6e$PORhMQcN" role="2VODD2">
+            <node concept="3cpWs6" id="6e$PORhO5wx" role="3cqZAp">
+              <node concept="3clFbT" id="6e$PORhO5Jb" role="3cqZAk" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1IAO7e" id="6e$PORhO_jI" role="1Qtc8A" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="1TorPL4sJdQ">
+    <property role="TrG5h" value="PureFlag" />
+    <ref role="1XX52x" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualisable" />
+    <node concept="1kHk_G" id="1TorPL4sJdR" role="2wV5jI">
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="pure" />
     </node>
   </node>
 </model>

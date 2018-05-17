@@ -110,15 +110,15 @@
     <node concept="1TJgyj" id="3CmSUB7Fp_k" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="4185783222026475860" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
     <node concept="PrWs8" id="3v5DuFDl4c1" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     </node>
-    <node concept="PrWs8" id="2L1k$oXxnd5" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualizableConcept" />
+    <node concept="PrWs8" id="2L1k$oXDqK5" role="PzmwI">
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualisable" />
     </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBEtu">
@@ -204,8 +204,8 @@
     <node concept="PrWs8" id="2Ai0Gtag2pd" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
-    <node concept="PrWs8" id="2L1k$oXxoOS" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualizableConcept" />
+    <node concept="PrWs8" id="2L1k$oXNUaR" role="PzmwI">
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualisable" />
     </node>
   </node>
   <node concept="1TIwiD" id="3v5DuFDls_I">
@@ -247,23 +247,27 @@
       <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3UsoL$l5qkL">
-    <property role="EcuMT" value="4511589886097466673" />
-    <property role="TrG5h" value="InheritanceInstance" />
-    <property role="R4oN_" value="holds a reference to the inherited class and it's visibility" />
+  <node concept="PlHQZ" id="2L1k$oXxncW">
+    <property role="EcuMT" value="3188920472788366140" />
+    <property role="TrG5h" value="IVirtualableConcept" />
+    <property role="3GE5qa" value="method" />
+    <node concept="1TJgyi" id="2L1k$oXxncX" role="1TKVEl">
+      <property role="IQ2nx" value="3188920472788366141" />
+      <property role="TrG5h" value="isVirtual" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oRbCP62xkS">
+    <property role="EcuMT" value="7365406899888067896" />
+    <property role="TrG5h" value="ClassTypeAccessor" />
     <property role="3GE5qa" value="class" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="3UsoL$l5qkM" role="1TKVEi">
-      <property role="IQ2ns" value="4511589886097466674" />
+    <node concept="1TJgyj" id="6oRbCP62xkT" role="1TKVEi">
+      <property role="IQ2ns" value="7365406899888067897" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="parent_class" />
+      <property role="20kJfa" value="class" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
-    </node>
-    <node concept="1TJgyi" id="3UsoL$l5qkP" role="1TKVEl">
-      <property role="IQ2nx" value="4511589886097466677" />
-      <property role="TrG5h" value="visibility" />
-      <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
     </node>
   </node>
   <node concept="1TIwiD" id="3EDDOqDY7xe">
@@ -292,27 +296,35 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="PlHQZ" id="2L1k$oXxncW">
-    <property role="EcuMT" value="3188920472788366140" />
-    <property role="TrG5h" value="IVirtualizableConcept" />
-    <property role="3GE5qa" value="method" />
-    <node concept="1TJgyi" id="2L1k$oXxncX" role="1TKVEl">
-      <property role="IQ2nx" value="3188920472788366141" />
-      <property role="TrG5h" value="isVirtual" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6oRbCP62xkS">
-    <property role="EcuMT" value="7365406899888067896" />
-    <property role="TrG5h" value="ClassTypeAccessor" />
+  <node concept="1TIwiD" id="3UsoL$l5qkL">
+    <property role="EcuMT" value="4511589886097466673" />
+    <property role="TrG5h" value="InheritanceInstance" />
+    <property role="R4oN_" value="holds a reference to the inherited class and it's visibility" />
     <property role="3GE5qa" value="class" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6oRbCP62xkT" role="1TKVEi">
-      <property role="IQ2ns" value="7365406899888067897" />
+    <node concept="1TJgyj" id="3UsoL$l5qkM" role="1TKVEi">
+      <property role="IQ2ns" value="4511589886097466674" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="class" />
+      <property role="20kJfa" value="parent_class" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    </node>
+    <node concept="1TJgyi" id="3UsoL$l5qkP" role="1TKVEl">
+      <property role="IQ2nx" value="4511589886097466677" />
+      <property role="TrG5h" value="visibility" />
+      <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2L1k$oXDqJY">
+    <property role="EcuMT" value="3188920472790477822" />
+    <property role="TrG5h" value="IPureVirtualisable" />
+    <node concept="PrWs8" id="2L1k$oXDqJZ" role="PrDN$">
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualableConcept" />
+    </node>
+    <node concept="1TJgyi" id="2L1k$oXDqK2" role="1TKVEl">
+      <property role="IQ2nx" value="3188920472790477826" />
+      <property role="TrG5h" value="pure" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

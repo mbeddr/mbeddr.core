@@ -138,6 +138,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -710,6 +711,91 @@
     <node concept="1YaCAy" id="4K6s$_sNy9d" role="1YuTPh">
       <property role="TrG5h" value="qualifiedMethodCall" />
       <ref role="1YaFvo" to="3d25:4o2nsMgBIqT" resolve="QualifiedMethodCall" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2L1k$oXFjdZ">
+    <property role="TrG5h" value="check_IPureVirtualisable" />
+    <node concept="3clFbS" id="2L1k$oXFje0" role="18ibNy">
+      <node concept="3clFbJ" id="2L1k$oXFjlp" role="3cqZAp">
+        <node concept="1Wc70l" id="2L1k$oXFkfQ" role="3clFbw">
+          <node concept="3fqX7Q" id="2L1k$oXFkis" role="3uHU7w">
+            <node concept="2OqwBi" id="2L1k$oXFkwp" role="3fr31v">
+              <node concept="1YBJjd" id="2L1k$oXFkkN" role="2Oq$k0">
+                <ref role="1YBMHb" node="2L1k$oXFje2" resolve="iPureVirtualisable" />
+              </node>
+              <node concept="3TrcHB" id="2L1k$oXFkER" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2L1k$oXFjv3" role="3uHU7B">
+            <node concept="1YBJjd" id="2L1k$oXFjlC" role="2Oq$k0">
+              <ref role="1YBMHb" node="2L1k$oXFje2" resolve="iPureVirtualisable" />
+            </node>
+            <node concept="3TrcHB" id="2L1k$oXFjBk" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="2L1k$oXFjlr" role="3clFbx">
+          <node concept="2MkqsV" id="2L1k$oXFkHn" role="3cqZAp">
+            <node concept="Xl_RD" id="2L1k$oXFkHA" role="2MkJ7o">
+              <property role="Xl_RC" value="Non-virtual method can not be pure." />
+            </node>
+            <node concept="1YBJjd" id="2L1k$oXFkHT" role="2OEOjV">
+              <ref role="1YBMHb" node="2L1k$oXFje2" resolve="iPureVirtualisable" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2L1k$oXFje2" role="1YuTPh">
+      <property role="TrG5h" value="iPureVirtualisable" />
+      <ref role="1YaFvo" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualisable" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2L1k$oXKZ8L">
+    <property role="TrG5h" value="check_MethodDeclaration" />
+    <node concept="3clFbS" id="2L1k$oXKZ8M" role="18ibNy">
+      <node concept="3clFbJ" id="2L1k$oXKZ8S" role="3cqZAp">
+        <node concept="3clFbS" id="2L1k$oXKZ8U" role="3clFbx">
+          <node concept="2MkqsV" id="2L1k$oXL3xp" role="3cqZAp">
+            <node concept="Xl_RD" id="2L1k$oXL3xC" role="2MkJ7o">
+              <property role="Xl_RC" value="Non-pure virtual method must have a body" />
+            </node>
+            <node concept="1YBJjd" id="2L1k$oXL3xV" role="2OEOjV">
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="2L1k$oXLZeU" role="3clFbw">
+          <node concept="3fqX7Q" id="2L1k$oXLZpd" role="3uHU7w">
+            <node concept="2OqwBi" id="2L1k$oXLZUQ" role="3fr31v">
+              <node concept="1YBJjd" id="2L1k$oXLZtN" role="2Oq$k0">
+                <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+              </node>
+              <node concept="3TrcHB" id="2L1k$oXM0Ew" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2L1k$oXL2T$" role="3uHU7B">
+            <node concept="2OqwBi" id="2L1k$oXL1lF" role="2Oq$k0">
+              <node concept="1YBJjd" id="2L1k$oXL0WV" role="2Oq$k0">
+                <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+              </node>
+              <node concept="3TrEf2" id="2L1k$oXL1V$" role="2OqNvi">
+                <ref role="3Tt5mk" to="wnzg:3CmSUB7Fp_k" resolve="body" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2L1k$oXL3ta" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2L1k$oXKZ8O" role="1YuTPh">
+      <property role="TrG5h" value="methodDeclaration" />
+      <ref role="1YaFvo" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
     </node>
   </node>
 </model>
