@@ -320,7 +320,7 @@
   <node concept="1TIwiD" id="6NtgknWJ20B">
     <property role="EcuMT" value="7844497894798008359" />
     <property role="TrG5h" value="ClassConstructorDeclaration" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.constructor" />
     <property role="34LRSv" value="constructor" />
     <property role="R4oN_" value="A class constructor" />
     <ref role="1TJDcQ" node="6NtgknWJ21h" resolve="ClassConstructorSignature" />
@@ -335,6 +335,9 @@
     </node>
     <node concept="PrWs8" id="6NtgknWJ20V" role="PzmwI">
       <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualableConcept" />
+    </node>
+    <node concept="PrWs8" id="6ddXmWdS2eK" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
     <node concept="1TJgyi" id="6NtgknWJ211" role="1TKVEl">
       <property role="IQ2nx" value="7844497894798008385" />
@@ -351,7 +354,7 @@
   </node>
   <node concept="1TIwiD" id="6NtgknWJ21h">
     <property role="EcuMT" value="7844497894798008401" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.constructor" />
     <property role="TrG5h" value="ClassConstructorSignature" />
     <property role="R4oN_" value="very similar to the normal method signature, but has some quirks because it isn't named (all constructors have the same name)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -384,7 +387,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="arguments" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+      <ref role="20lvS9" node="6ddXmWdKD9M" resolve="ConstructorLocalVariableDeclaration" />
     </node>
     <node concept="1TJgyj" id="6ddXmWdC9sl" role="1TKVEi">
       <property role="IQ2ns" value="7155645240280389397" />
@@ -399,9 +402,15 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6ddXmWdI0W9">
-    <property role="EcuMT" value="7155645240281927433" />
-    <property role="3GE5qa" value="method" />
+  <node concept="1TIwiD" id="6ddXmWdKD9M">
+    <property role="EcuMT" value="7155645240282616434" />
+    <property role="3GE5qa" value="method.constructor" />
+    <property role="TrG5h" value="ConstructorLocalVariableDeclaration" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+  </node>
+  <node concept="1TIwiD" id="6ddXmWdS2eW">
+    <property role="EcuMT" value="7155645240284554172" />
+    <property role="3GE5qa" value="method.constructor" />
     <property role="TrG5h" value="EmptyConstructorType" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
   </node>

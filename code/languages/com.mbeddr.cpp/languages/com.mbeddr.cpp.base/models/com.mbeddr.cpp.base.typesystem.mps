@@ -713,7 +713,7 @@
   </node>
   <node concept="18kY7G" id="6ddXmWdG7b9">
     <property role="TrG5h" value="check_ClassConstructor" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.constructor" />
     <node concept="3clFbS" id="6ddXmWdG7ba" role="18ibNy">
       <node concept="3cpWs8" id="6ddXmWdG9lV" role="3cqZAp">
         <node concept="3cpWsn" id="6ddXmWdG9lY" role="3cpWs9">
