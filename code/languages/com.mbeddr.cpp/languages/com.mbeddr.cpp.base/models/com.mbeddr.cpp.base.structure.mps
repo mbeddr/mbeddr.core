@@ -317,7 +317,7 @@
   </node>
   <node concept="1TIwiD" id="6NtgknWJ20B">
     <property role="EcuMT" value="7844497894798008359" />
-    <property role="TrG5h" value="ClassConstructor" />
+    <property role="TrG5h" value="ClassConstructorDeclaration" />
     <property role="3GE5qa" value="method" />
     <property role="34LRSv" value="constructor" />
     <property role="R4oN_" value="A class constructor" />
@@ -356,6 +356,9 @@
     <node concept="PrWs8" id="6NtgknWJ2Pf" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1DVNPtFPBay" resolve="IShowUpInOutline" />
     </node>
+    <node concept="PrWs8" id="6ddXmWdGsTo" role="PzmwI">
+      <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
+    </node>
     <node concept="PrWs8" id="6NtgknWJ2P$" role="PzmwI">
       <ref role="PrY4T" to="x27k:2azu63OPjKX" resolve="ICodeLocationContext" />
     </node>
@@ -367,13 +370,6 @@
     </node>
     <node concept="PrWs8" id="6NtgknWJ2RG" role="PzmwI">
       <ref role="PrY4T" to="vs0r:49YGTZdSIMN" resolve="GenericUnitProvider" />
-    </node>
-    <node concept="1TJgyj" id="6ddXmWdAKft" role="1TKVEi">
-      <property role="IQ2ns" value="7155645240280024029" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="arguments" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="x27k:7kKaL9x4DZT" resolve="IArgumentLike" />
     </node>
     <node concept="1TJgyj" id="6ddXmWdC9sl" role="1TKVEi">
       <property role="IQ2ns" value="7155645240280389397" />
@@ -387,6 +383,12 @@
       <property role="TrG5h" value="hasEllipsis" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6ddXmWdI0W9">
+    <property role="EcuMT" value="7155645240281927433" />
+    <property role="3GE5qa" value="method" />
+    <property role="TrG5h" value="EmptyConstructorType" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
   </node>
 </model>
 

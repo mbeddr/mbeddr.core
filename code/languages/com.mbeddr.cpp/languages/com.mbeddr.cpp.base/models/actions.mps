@@ -7,6 +7,8 @@
   </languages>
   <imports>
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -21,12 +23,21 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -57,6 +68,9 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -71,7 +85,7 @@
     <property role="TrG5h" value="ConstructorFactories" />
     <node concept="37WvkG" id="6ddXmWdF5Az" role="37WGs$">
       <property role="3mWdv0" value="Adds the parent class to the constructor immediately at creation." />
-      <ref role="37XkoT" to="wnzg:6NtgknWJ20B" resolve="ClassConstructor" />
+      <ref role="37XkoT" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
       <node concept="37Y9Zx" id="6ddXmWdF5A$" role="37ZfLb">
         <node concept="3clFbS" id="6ddXmWdF5A_" role="2VODD2">
           <node concept="3SKdUt" id="6ddXmWdFe0h" role="3cqZAp">
@@ -101,6 +115,51 @@
                 <node concept="1r4Lsj" id="6ddXmWdFbvN" role="2Oq$k0" />
                 <node concept="3TrEf2" id="6ddXmWdFc3y" role="2OqNvi">
                   <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="6ddXmWdImQq" role="3cqZAp" />
+          <node concept="3SKdUt" id="6ddXmWdIn6o" role="3cqZAp">
+            <node concept="3SKdUq" id="6ddXmWdIn6q" role="3SKWNk">
+              <property role="3SKdUp" value="Because there are parameters, we implement IFunctionLike on this type of object" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="6ddXmWdIn$u" role="3cqZAp">
+            <node concept="3SKdUq" id="6ddXmWdIn$w" role="3SKWNk">
+              <property role="3SKdUp" value="As such, it requires a unique name, so we generate it from the node ID." />
+            </node>
+          </node>
+          <node concept="3clFbF" id="6ddXmWdIe80" role="3cqZAp">
+            <node concept="37vLTI" id="6ddXmWdIfER" role="3clFbG">
+              <node concept="3cpWs3" id="6ddXmWdIlfH" role="37vLTx">
+                <node concept="2OqwBi" id="6ddXmWdIlS0" role="3uHU7w">
+                  <node concept="1r4Lsj" id="6ddXmWdIlx1" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="6ddXmWdImDz" role="2OqNvi">
+                    <ref role="3TsBF5" to="x27k:4rTlJCHVgHT" resolve="contextNodeId" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="6ddXmWdIj7f" role="3uHU7B">
+                  <node concept="2OqwBi" id="6ddXmWdIhNm" role="3uHU7B">
+                    <node concept="2OqwBi" id="6ddXmWdIgiz" role="2Oq$k0">
+                      <node concept="1r4Lsj" id="6ddXmWdIfS0" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="6ddXmWdIgW5" role="2OqNvi">
+                        <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="6ddXmWdIij7" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="6ddXmWdIjg1" role="3uHU7w">
+                    <property role="Xl_RC" value="_Constructor_" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6ddXmWdIerU" role="37vLTJ">
+                <node concept="1r4Lsj" id="6ddXmWdIe7Y" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6ddXmWdIf18" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
             </node>

@@ -773,7 +773,7 @@
     </node>
     <node concept="1YaCAy" id="6ddXmWdG7bc" role="1YuTPh">
       <property role="TrG5h" value="classConstructor" />
-      <ref role="1YaFvo" to="wnzg:6NtgknWJ20B" resolve="ClassConstructor" />
+      <ref role="1YaFvo" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
     </node>
   </node>
 </model>

@@ -732,7 +732,7 @@
   </node>
   <node concept="24kQdi" id="6NtgknWJ21f">
     <property role="3GE5qa" value="method" />
-    <ref role="1XX52x" to="wnzg:6NtgknWJ20B" resolve="ClassConstructor" />
+    <ref role="1XX52x" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
     <node concept="3EZMnI" id="6NtgknWJ3xP" role="2wV5jI">
       <node concept="3F0A7n" id="6NtgknWJ3xZ" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:6NtgknWJ211" resolve="visibility" />
@@ -775,7 +775,7 @@
       </node>
       <node concept="3F2HdR" id="6ddXmWdAKeP" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="wnzg:6ddXmWdAKft" resolve="arguments" />
+        <ref role="1NtTu8" to="x27k:4WTYg$PUiX5" resolve="arguments" />
         <node concept="l2Vlx" id="6ddXmWdAKeS" role="2czzBx" />
       </node>
       <node concept="1kHk_G" id="6ddXmWdALZ7" role="3EZMnx">

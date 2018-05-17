@@ -67,13 +67,6 @@
       </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
-      <concept id="7844497894798008401" name="com.mbeddr.cpp.base.structure.ClassConstructorSignature" flags="ng" index="2gom4k">
-        <child id="7155645240280024029" name="arguments" index="1IPJqM" />
-        <child id="7155645240280389397" name="body" index="1IVm9U" />
-      </concept>
-      <concept id="7844497894798008359" name="com.mbeddr.cpp.base.structure.ClassConstructor" flags="ng" index="2gom5y">
-        <reference id="7844497894798008388" name="parent_class" index="2gom41" />
-      </concept>
       <concept id="4511589886097466673" name="com.mbeddr.cpp.base.structure.InheritanceInstance" flags="ng" index="FysoC">
         <property id="4511589886097466677" name="visibility" index="FysoG" />
         <reference id="4511589886097466674" name="parent_class" index="FysoF" />
@@ -101,7 +94,6 @@
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
-      <concept id="1052812498335653322" name="com.mbeddr.core.modules.structure.VariadicArgument" flags="ng" index="2GZKED" />
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
@@ -183,7 +175,6 @@
       <concept id="3820836583575227340" name="com.mbeddr.core.expressions.structure.DirectPlusAssignmentExpression" flags="ng" index="TPXPH" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
-      <concept id="5598157691785092834" name="com.mbeddr.core.expressions.structure.VaList" flags="ng" index="3EM3ww" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
@@ -252,30 +243,6 @@
       <property role="TrG5h" value="Counter" />
       <property role="2OOxQR" value="false" />
       <node concept="3u$6M4" id="6ddXmWdC9nm" role="3mBdys" />
-      <node concept="2gom5y" id="6ddXmWdC9pE" role="3mBdys">
-        <ref role="2gom41" node="2Ai0Gt9Qxgo" resolve="Counter" />
-        <node concept="19RgSI" id="6ddXmWdC9qW" role="1IPJqM">
-          <property role="TrG5h" value="a" />
-          <node concept="26Vqph" id="6ddXmWdC9qU" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
-        <node concept="2GZKED" id="6ddXmWdC9rj" role="1IPJqM">
-          <property role="TrG5h" value="va_args" />
-          <node concept="3EM3ww" id="6ddXmWdC9rk" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
-        <node concept="3XIRFW" id="6ddXmWdCZOj" role="1IVm9U">
-          <node concept="3XISUE" id="6ddXmWdG6WI" role="3XIRFZ" />
-        </node>
-      </node>
-      <node concept="2gom5y" id="6ddXmWdG4tu" role="3mBdys">
-        <ref role="2gom41" node="2Ai0Gt9Qxgo" resolve="Counter" />
-        <node concept="3XIRFW" id="6ddXmWdG4tv" role="1IVm9U" />
-      </node>
       <node concept="3u$6M4" id="nbE_$_7VlV" role="3mBdys" />
       <node concept="3mBbG7" id="3v5DuFDqjul" role="3mBdys">
         <property role="TrG5h" value="value" />
