@@ -18692,15 +18692,33 @@
       <node concept="3Tm1VV" id="6ngD7lvkLhL" role="1B3o_S" />
       <node concept="3clFbS" id="6ngD7lvkLhM" role="3clF47">
         <node concept="3clFbF" id="6ngD7lvkLhN" role="3cqZAp">
-          <node concept="2OqwBi" id="6ngD7lvkLhU" role="3clFbG">
-            <node concept="2OqwBi" id="6ngD7lvkLhV" role="2Oq$k0">
-              <node concept="13iPFW" id="6ngD7lvkLhW" role="2Oq$k0" />
-              <node concept="3TrEf2" id="6ngD7lvkLif" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+          <node concept="1Wc70l" id="7vVGzvOlqLG" role="3clFbG">
+            <node concept="2OqwBi" id="6ngD7lvkLhU" role="3uHU7B">
+              <node concept="2OqwBi" id="6ngD7lvkLhV" role="2Oq$k0">
+                <node concept="13iPFW" id="6ngD7lvkLhW" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6ngD7lvkLif" role="2OqNvi">
+                  <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6ngD7lvkLhY" role="2OqNvi">
+                <ref role="37wK5l" node="3ilck8Kr3zN" resolve="isStaticallyEvaluatable" />
               </node>
             </node>
-            <node concept="2qgKlT" id="6ngD7lvkLhY" role="2OqNvi">
-              <ref role="37wK5l" node="3ilck8Kr3zN" resolve="isStaticallyEvaluatable" />
+            <node concept="2ZW3vV" id="7vVGzvOlruD" role="3uHU7w">
+              <node concept="3uibUv" id="7vVGzvOluSu" role="2ZW6by">
+                <ref role="3uigEE" to="xlxw:~BigInteger" resolve="BigInteger" />
+              </node>
+              <node concept="2OqwBi" id="7vVGzvOlr2u" role="2ZW6bz">
+                <node concept="2OqwBi" id="7vVGzvOlr2v" role="2Oq$k0">
+                  <node concept="13iPFW" id="7vVGzvOlr2w" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7vVGzvOlr2x" role="2OqNvi">
+                    <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="7vVGzvOlr2y" role="2OqNvi">
+                  <ref role="37wK5l" node="6OxpEKG0KPv" resolve="evaluateStatically" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
