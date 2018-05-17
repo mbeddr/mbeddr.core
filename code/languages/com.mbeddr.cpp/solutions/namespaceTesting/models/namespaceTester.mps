@@ -16,6 +16,9 @@
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
       </concept>
+      <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
+        <child id="7254843406768833939" name="expr" index="1_9egR" />
+      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
@@ -58,6 +61,10 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
+      <concept id="1646161959635344797" name="com.mbeddr.cpp.base.structure.UsingNamespaceMethod" flags="ng" index="282KC9">
+        <reference id="1646161959636039663" name="namespace" index="281q1V" />
+        <reference id="1646161959635344853" name="method" index="282KD1" />
+      </concept>
       <concept id="3604003506923204504" name="com.mbeddr.cpp.base.structure.NamespaceDeclaration" flags="ng" index="dq960">
         <child id="3604003506923742410" name="members" index="ds5Fi" />
       </concept>
@@ -162,6 +169,12 @@
           <property role="1wg9_F" value="private" />
           <property role="TrG5h" value="bBool" />
           <node concept="3XIRFW" id="1rolTiuGebj" role="3XIRFX">
+            <node concept="1_9egQ" id="1rolTiv0CGU" role="3XIRFZ">
+              <node concept="282KC9" id="1rolTiv0CGS" role="1_9egR">
+                <ref role="281q1V" node="1rolTiuGea3" resolve="B" />
+                <ref role="282KD1" node="1rolTiuGebi" resolve="bBool" />
+              </node>
+            </node>
             <node concept="2BFjQ_" id="1rolTiuH3HN" role="3XIRFZ">
               <node concept="3TlMhK" id="1rolTiuH3I5" role="2BFjQA" />
             </node>
@@ -173,8 +186,8 @@
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="1rolTiuN14b" role="N3F5h">
-      <property role="TrG5h" value="empty_1526540192938_43" />
+    <node concept="2NXPZ9" id="1rolTiuPFN9" role="N3F5h">
+      <property role="TrG5h" value="empty_1526543609597_58" />
     </node>
     <node concept="N3Fnx" id="1rolTiuAPG6" role="N3F5h">
       <property role="TrG5h" value="main" />
