@@ -117,6 +117,7 @@
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
+      <concept id="1215085197271" name="jetbrains.mps.lang.editor.structure.LastPositionAllowedStyleClassItem" flags="ln" index="3CIbrd" />
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
@@ -932,6 +933,12 @@
         </node>
         <node concept="3F0A7n" id="17yeYAhP0nb" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="11LMrY" id="17yeYAhUJqJ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3CIbrd" id="17yeYAhWWSf" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="1QoScp" id="6hUtorE9bpc" role="3EZMnx">
           <property role="1QpmdY" value="true" />
