@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" implicit="true" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -23,20 +22,13 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -122,30 +114,23 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="6hUtorDPOjy" role="3cqZAp" />
+          <node concept="3SKdUt" id="6hUtorDPOyT" role="3cqZAp">
+            <node concept="3SKdUq" id="6hUtorDPOyV" role="3SKWNk">
+              <property role="3SKdUp" value="Give it an internal name" />
+            </node>
+          </node>
           <node concept="3clFbF" id="6hUtorDLTKw" role="3cqZAp">
             <node concept="37vLTI" id="6hUtorDLVAP" role="3clFbG">
-              <node concept="3cpWs3" id="6hUtorDM2Oz" role="37vLTx">
-                <node concept="2OqwBi" id="6hUtorDM3uL" role="3uHU7w">
-                  <node concept="1r4Lsj" id="6hUtorDM35I" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="6hUtorDM4Ug" role="2OqNvi">
-                    <ref role="3TsBF5" to="x27k:4rTlJCHVgHT" resolve="contextNodeId" />
+              <node concept="2OqwBi" id="6hUtorDLXEi" role="37vLTx">
+                <node concept="2OqwBi" id="6hUtorDLW8B" role="2Oq$k0">
+                  <node concept="1r4Lsj" id="6hUtorDLVJW" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6hUtorDLWMA" role="2OqNvi">
+                    <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
                   </node>
                 </node>
-                <node concept="3cpWs3" id="6hUtorDLYXA" role="3uHU7B">
-                  <node concept="2OqwBi" id="6hUtorDLXEi" role="3uHU7B">
-                    <node concept="2OqwBi" id="6hUtorDLW8B" role="2Oq$k0">
-                      <node concept="1r4Lsj" id="6hUtorDLVJW" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="6hUtorDLWMA" role="2OqNvi">
-                        <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
-                      </node>
-                    </node>
-                    <node concept="3TrcHB" id="6hUtorDLYej" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="6hUtorDM0PH" role="3uHU7w">
-                    <property role="Xl_RC" value="_constr_" />
-                  </node>
+                <node concept="3TrcHB" id="6hUtorDLYej" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
               <node concept="2OqwBi" id="6hUtorDLU61" role="37vLTJ">

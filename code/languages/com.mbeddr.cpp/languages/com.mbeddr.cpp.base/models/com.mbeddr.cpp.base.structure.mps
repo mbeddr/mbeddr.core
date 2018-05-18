@@ -411,5 +411,38 @@
     <property role="R4oN_" value="empty declaration of VoidType" />
     <ref role="1TJDcQ" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
   </node>
+  <node concept="1TIwiD" id="6hUtorDW7AG">
+    <property role="EcuMT" value="7240228573262412204" />
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="LocalClassVariableDeclaration" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+    <node concept="1TJgyj" id="6hUtorE26va" role="1TKVEi">
+      <property role="IQ2ns" value="7240228573263980490" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="constructor" />
+      <ref role="20lvS9" node="6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+    </node>
+    <node concept="PrWs8" id="6hUtorE0l2X" role="PzmwI">
+      <ref role="PrY4T" node="6hUtorE0jsx" resolve="IClassTyped" />
+    </node>
+    <node concept="PrWs8" id="6hUtorEixlO" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
+    </node>
+    <node concept="1TJgyj" id="6hUtorE99Pe" role="1TKVEi">
+      <property role="IQ2ns" value="7240228573265829198" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constructor_arg_actuals" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6hUtorE0jsx">
+    <property role="EcuMT" value="7240228573263509281" />
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="IClassTyped" />
+    <node concept="PrWs8" id="6hUtorE0jsy" role="PrDN$">
+      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
+    </node>
+  </node>
 </model>
 
