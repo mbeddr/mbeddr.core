@@ -17,6 +17,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
@@ -60,6 +63,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -160,7 +164,7 @@
     <node concept="PrWs8" id="59MAV0yaSei" role="PzmwI">
       <ref role="PrY4T" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
     </node>
-    <node concept="PrWs8" id="3v5DuFDm5q4" role="PzmwI">
+    <node concept="PrWs8" id="7DDmkyVqQX" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
   </node>
@@ -392,6 +396,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
+    <node concept="1TJgyj" id="3n$8_Xbh2kv" role="1TKVEi">
+      <property role="IQ2ns" value="3883266571380204831" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="initializers" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3n$8_Xbpg8r" resolve="IAmConstructorInitializable" />
+    </node>
     <node concept="1TJgyi" id="6ddXmWdALYA" role="1TKVEl">
       <property role="IQ2nx" value="7155645240280031142" />
       <property role="TrG5h" value="hasEllipsis" />
@@ -436,6 +447,51 @@
     <property role="TrG5h" value="IClassTyped" />
     <node concept="PrWs8" id="6hUtorE0jsy" role="PrDN$">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3n$8_Xbj1ZK">
+    <property role="EcuMT" value="3883266571380727792" />
+    <property role="3GE5qa" value="method.constructor" />
+    <property role="TrG5h" value="ConstructorInitializationExpression" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="3n$8_Xbpg6P" role="1TKVEi">
+      <property role="IQ2ns" value="3883266571382358453" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="childToInitialize" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3n$8_Xbpg8r" resolve="IAmConstructorInitializable" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3n$8_Xbpg8r">
+    <property role="EcuMT" value="3883266571382358555" />
+    <property role="3GE5qa" value="method.constructor" />
+    <property role="TrG5h" value="IAmConstructorInitializable" />
+    <node concept="t5JxF" id="3n$8_Xbpga3" role="lGtFl">
+      <property role="t5JxN" value="This interface is responsible for things that can come after a : on a constructor implementation." />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7DDmkyVr_r">
+    <property role="EcuMT" value="137823117407795547" />
+    <property role="3GE5qa" value="method.constructor" />
+    <property role="TrG5h" value="ConstructorInitializedAttribute" />
+    <property role="R4oN_" value="ClassConstructor() : attribute(value)" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7DDmkyVr_Y" role="PzmwI">
+      <ref role="PrY4T" node="3n$8_Xbpg8r" resolve="IAmConstructorInitializable" />
+    </node>
+    <node concept="1TJgyj" id="7DDmkz0vm1" role="1TKVEi">
+      <property role="IQ2ns" value="137823117409121665" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="init" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7DDmkz1Ipj" role="1TKVEi">
+      <property role="IQ2ns" value="137823117409445459" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="identity" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
     </node>
   </node>
 </model>

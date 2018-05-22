@@ -734,6 +734,11 @@
         <node concept="3Tqbb2" id="6oRbCP691SX" role="A3Ik2" />
       </node>
       <node concept="3clFbS" id="6oRbCP690yy" role="3clF47">
+        <node concept="3SKdUt" id="3n$8_Xbh1O3" role="3cqZAp">
+          <node concept="3SKdUq" id="3n$8_Xbh1O5" role="3SKWNk">
+            <property role="3SKdUp" value="All fields in this class that can be inherited by a child class (all non-private fields)." />
+          </node>
+        </node>
         <node concept="3clFbF" id="6oRbCP691TM" role="3cqZAp">
           <node concept="2OqwBi" id="6oRbCP692wD" role="3clFbG">
             <node concept="2OqwBi" id="6oRbCP6925D" role="2Oq$k0">
@@ -868,6 +873,11 @@
         <node concept="3Tqbb2" id="6oRbCP69bLo" role="A3Ik2" />
       </node>
       <node concept="3clFbS" id="6oRbCP699MA" role="3clF47">
+        <node concept="3SKdUt" id="3n$8_Xbh1_0" role="3cqZAp">
+          <node concept="3SKdUq" id="3n$8_Xbh1_2" role="3SKWNk">
+            <property role="3SKdUp" value="All methods that can be inherited from this class by a child class (all non-private methods)." />
+          </node>
+        </node>
         <node concept="3clFbF" id="6oRbCP69bM5" role="3cqZAp">
           <node concept="2OqwBi" id="6oRbCP69bYs" role="3clFbG">
             <node concept="BsUDl" id="6oRbCP69bM4" role="2Oq$k0">
@@ -2088,6 +2098,13 @@
       <node concept="3Tqbb2" id="6hUtorEiL0D" role="3clF45">
         <ref role="ehGHo" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7DDmkz3ngd">
+    <property role="3GE5qa" value="method.constructor" />
+    <ref role="13h7C2" to="wnzg:7DDmkyVr_r" resolve="ConstructorInitializedAttribute" />
+    <node concept="13hLZK" id="7DDmkz3nge" role="13h7CW">
+      <node concept="3clFbS" id="7DDmkz3ngf" role="2VODD2" />
     </node>
   </node>
 </model>
