@@ -245,6 +245,9 @@
     <node concept="PrWs8" id="383ZxwZsgdB" role="PzmwI">
       <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
     </node>
+    <node concept="PrWs8" id="1Grcmddq$9_" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:6mfXVgRsmwb" resolve="IVoidTypeContainer" />
+    </node>
     <node concept="1TJgyj" id="383ZxwZsUja" role="1TKVEi">
       <property role="IQ2ns" value="3604003506923742410" />
       <property role="20lmBu" value="aggregation" />
