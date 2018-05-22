@@ -159,7 +159,7 @@
     </language>
   </registry>
   <node concept="1whW_1" id="4WhfN3ocL2A">
-    <property role="TrG5h" value="simple_exception" />
+    <property role="TrG5h" value="Exception" />
     <node concept="c0Qz5" id="4WhfN3oe9fW" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="catchDefault" />
@@ -434,7 +434,7 @@
       <property role="TrG5h" value="ex" />
       <ref role="3oK8_y" node="3v5DuFDkAwn" resolve="portable" />
       <node concept="2v9HqM" id="4WhfN3ojRGp" role="2eOfOg">
-        <ref role="2v9HqP" node="4WhfN3ocL2A" resolve="simple_exception" />
+        <ref role="2v9HqP" node="4WhfN3ocL2A" resolve="Exception" />
       </node>
       <node concept="2v9HqM" id="3v5DuFDttij" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
