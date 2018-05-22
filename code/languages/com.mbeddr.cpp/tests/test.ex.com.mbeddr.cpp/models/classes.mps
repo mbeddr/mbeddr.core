@@ -833,6 +833,12 @@
             <property role="2c7vTL" value="false" />
           </node>
         </node>
+        <node concept="z11KY" id="7DDmkz5lRS" role="1YC0t0">
+          <ref role="yVOcQ" node="6oRbCP68kMc" resolve="privateValue" />
+          <node concept="3ZUYvv" id="7DDmkz5lSd" role="yU53$">
+            <ref role="3ZUYvu" node="3n$8_Xbe9E9" resolve="x" />
+          </node>
+        </node>
         <node concept="z11KY" id="7DDmkz49cC" role="1YC0t0">
           <ref role="yVOcQ" node="nbE_$_7W5f" resolve="publicValue" />
           <node concept="3TlMh9" id="7DDmkz49cV" role="yU53$">
