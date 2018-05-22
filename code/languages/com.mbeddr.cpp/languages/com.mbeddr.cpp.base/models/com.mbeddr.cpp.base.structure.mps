@@ -461,6 +461,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3n$8_Xbpg8r" resolve="IAmConstructorInitializable" />
     </node>
+    <node concept="PrWs8" id="7DDmkz8iHk" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3n$8_Xbpg8r">
     <property role="EcuMT" value="3883266571382358555" />
@@ -492,6 +495,33 @@
       <property role="20kJfa" value="identity" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7DDmkz5m05">
+    <property role="EcuMT" value="137823117410394117" />
+    <property role="3GE5qa" value="method.constructor" />
+    <property role="TrG5h" value="ConstructorInitializedConstructor" />
+    <property role="R4oN_" value="Base constructor calls like ConstructorA(int32 a) : ConstructorB(a)" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7DDmkza$5K" role="PzmwI">
+      <ref role="PrY4T" node="3n$8_Xbpg8r" resolve="IAmConstructorInitializable" />
+    </node>
+    <node concept="PrWs8" id="7DDmkzciFn" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
+    </node>
+    <node concept="1TJgyj" id="7DDmkza$5N" role="1TKVEi">
+      <property role="IQ2ns" value="137823117411762547" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="identity" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="7DDmkza$7B" role="1TKVEi">
+      <property role="IQ2ns" value="137823117411762663" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actual_arguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
 </model>
