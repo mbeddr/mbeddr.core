@@ -398,12 +398,6 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6ddXmWdS2eW">
-    <property role="EcuMT" value="7155645240284554172" />
-    <property role="3GE5qa" value="method.constructor" />
-    <property role="TrG5h" value="EmptyConstructorType" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
-  </node>
   <node concept="1TIwiD" id="6hUtorDPkwW">
     <property role="EcuMT" value="7240228573260630076" />
     <property role="3GE5qa" value="method.constructor" />

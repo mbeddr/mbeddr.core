@@ -793,19 +793,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="6ddXmWdS2eX">
-    <property role="3GE5qa" value="method.constructor" />
-    <ref role="WuzLi" to="wnzg:6ddXmWdS2eW" resolve="EmptyConstructorType" />
-    <node concept="11bSqf" id="6ddXmWdS2eY" role="11c4hB">
-      <node concept="3clFbS" id="6ddXmWdS2eZ" role="2VODD2">
-        <node concept="3SKdUt" id="6ddXmWdS2fi" role="3cqZAp">
-          <node concept="3SKdUq" id="6ddXmWdS2fj" role="3SKWNk">
-            <property role="3SKdUp" value="Empty on purpose" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="6hUtorDPkwX">
     <property role="3GE5qa" value="method.constructor" />
     <ref role="WuzLi" to="wnzg:6hUtorDPkwW" resolve="ConstructorVoidType" />
