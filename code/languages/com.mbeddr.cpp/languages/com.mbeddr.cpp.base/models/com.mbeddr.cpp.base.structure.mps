@@ -330,5 +330,12 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3OWNtRXmIPi">
+    <property role="EcuMT" value="4412628088238304594" />
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="StructStub" />
+    <property role="34LRSv" value="struct" />
+    <ref role="1TJDcQ" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+  </node>
 </model>
 
