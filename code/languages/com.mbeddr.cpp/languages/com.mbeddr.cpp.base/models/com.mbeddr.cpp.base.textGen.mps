@@ -216,7 +216,7 @@
                 <node concept="2OqwBi" id="3UsoL$lghbz" role="lbANJ">
                   <node concept="117lpO" id="3UsoL$lgh03" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="3UsoL$lghSJ" role="2OqNvi">
-                    <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
+                    <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
                   </node>
                 </node>
               </node>
@@ -226,7 +226,7 @@
             <node concept="2OqwBi" id="3UsoL$lguhN" role="2Oq$k0">
               <node concept="117lpO" id="3UsoL$lgu3i" role="2Oq$k0" />
               <node concept="3Tsc0h" id="3UsoL$lguZ0" role="2OqNvi">
-                <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
+                <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
               </node>
             </node>
             <node concept="3GX2aA" id="3UsoL$lgxUs" role="2OqNvi" />
@@ -498,7 +498,7 @@
           <node concept="2OqwBi" id="2L1k$oX_Io8" role="3clFbw">
             <node concept="117lpO" id="2L1k$oX_I4V" role="2Oq$k0" />
             <node concept="3TrcHB" id="2L1k$oX_JpL" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+              <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
             </node>
           </node>
         </node>
@@ -675,7 +675,7 @@
               <node concept="2OqwBi" id="3UsoL$lb2MK" role="2Oq$k0">
                 <node concept="117lpO" id="3UsoL$lb2Et" role="2Oq$k0" />
                 <node concept="3TrEf2" id="3UsoL$lb2Ul" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
                 </node>
               </node>
               <node concept="3TrcHB" id="3UsoL$lb44F" role="2OqNvi">

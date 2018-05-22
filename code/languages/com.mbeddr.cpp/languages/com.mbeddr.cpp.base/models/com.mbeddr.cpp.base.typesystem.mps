@@ -206,7 +206,7 @@
               <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
             </node>
             <node concept="3TrEf2" id="4K6s$_sMefW" role="2OqNvi">
-              <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+              <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
             </node>
           </node>
         </node>
@@ -226,7 +226,7 @@
                   <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
                 </node>
                 <node concept="3TrEf2" id="4K6s$_rq9Zo" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
                 </node>
               </node>
               <node concept="3TrcHB" id="4K6s$_rq9Zp" role="2OqNvi">
@@ -247,7 +247,7 @@
                   <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
                 </node>
                 <node concept="3TrEf2" id="4K6s$_rq6Ui" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
                 </node>
               </node>
               <node concept="1mfA1w" id="4K6s$_rqquA" role="2OqNvi" />
@@ -288,7 +288,7 @@
                 <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
               </node>
               <node concept="3TrEf2" id="4K6s$_sI200" role="2OqNvi">
-                <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
               </node>
             </node>
             <node concept="2Xjw5R" id="4K6s$_sI323" role="2OqNvi">
@@ -447,7 +447,7 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="4K6s$_sJANH" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
                 </node>
               </node>
               <node concept="2Xjw5R" id="4K6s$_sJBE2" role="2OqNvi">
@@ -529,7 +529,7 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="4K6s$_sLTwX" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
                 </node>
               </node>
               <node concept="2Xjw5R" id="4K6s$_sLTwY" role="2OqNvi">
@@ -724,7 +724,7 @@
                 <ref role="1YBMHb" node="2L1k$oXFje2" resolve="iPureVirtualisable" />
               </node>
               <node concept="3TrcHB" id="2L1k$oXFkER" role="2OqNvi">
-                <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="virtual" />
+                <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
               </node>
             </node>
           </node>

@@ -1243,7 +1243,7 @@
               <node concept="3clFbF" id="6ddXmWe8V0z" role="3cqZAp">
                 <node concept="2OqwBi" id="6ddXmWe8V0u" role="3clFbG">
                   <node concept="3Tsc0h" id="6ddXmWe8V0x" role="2OqNvi">
-                    <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
+                    <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
                   </node>
                   <node concept="30H73N" id="6ddXmWe8V0y" role="2Oq$k0" />
                 </node>

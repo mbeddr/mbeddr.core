@@ -81,7 +81,7 @@
     <node concept="1TJgyj" id="3UsoL$l5qj8" role="1TKVEi">
       <property role="IQ2ns" value="4511589886097466568" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="inherits_from" />
+      <property role="20kJfa" value="ancestors" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3UsoL$l5qkL" resolve="InheritanceInstance" />
     </node>
@@ -308,7 +308,7 @@
     <node concept="1TJgyj" id="3UsoL$l5qkM" role="1TKVEi">
       <property role="IQ2ns" value="4511589886097466674" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="parent_class" />
+      <property role="20kJfa" value="parentClass" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
     </node>
