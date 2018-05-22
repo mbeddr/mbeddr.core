@@ -18789,15 +18789,33 @@
       <node concept="3Tm1VV" id="6ngD7lvkLiM" role="1B3o_S" />
       <node concept="3clFbS" id="6ngD7lvkLiN" role="3clF47">
         <node concept="3clFbF" id="6ngD7lvkLiO" role="3cqZAp">
-          <node concept="2OqwBi" id="6ngD7lvkLiV" role="3clFbG">
-            <node concept="2OqwBi" id="6ngD7lvkLiW" role="2Oq$k0">
-              <node concept="13iPFW" id="6ngD7lvkLiX" role="2Oq$k0" />
-              <node concept="3TrEf2" id="6ngD7lvkLjg" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+          <node concept="1Wc70l" id="7vVGzvOnTxG" role="3clFbG">
+            <node concept="2ZW3vV" id="7vVGzvOnWya" role="3uHU7w">
+              <node concept="3uibUv" id="7vVGzvOnWGU" role="2ZW6by">
+                <ref role="3uigEE" to="wyt6:~Number" resolve="Number" />
+              </node>
+              <node concept="2OqwBi" id="7vVGzvOnVpU" role="2ZW6bz">
+                <node concept="2OqwBi" id="7vVGzvOnU3c" role="2Oq$k0">
+                  <node concept="13iPFW" id="7vVGzvOnTEL" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7vVGzvOnUQI" role="2OqNvi">
+                    <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="7vVGzvOnW6f" role="2OqNvi">
+                  <ref role="37wK5l" node="6OxpEKG0KPv" resolve="evaluateStatically" />
+                </node>
               </node>
             </node>
-            <node concept="2qgKlT" id="6ngD7lvkLiZ" role="2OqNvi">
-              <ref role="37wK5l" node="3ilck8Kr3zN" resolve="isStaticallyEvaluatable" />
+            <node concept="2OqwBi" id="6ngD7lvkLiV" role="3uHU7B">
+              <node concept="2OqwBi" id="6ngD7lvkLiW" role="2Oq$k0">
+                <node concept="13iPFW" id="6ngD7lvkLiX" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6ngD7lvkLjg" role="2OqNvi">
+                  <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6ngD7lvkLiZ" role="2OqNvi">
+                <ref role="37wK5l" node="3ilck8Kr3zN" resolve="isStaticallyEvaluatable" />
+              </node>
             </node>
           </node>
         </node>
