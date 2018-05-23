@@ -819,7 +819,7 @@
       <node concept="37vLTG" id="6ddXmWdP_q9" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="6ddXmWdP_q8" role="1tU5fm">
-          <ref role="ehGHo" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+          <ref role="ehGHo" to="wnzg:6NtgknWJ21h" resolve="ClassConstructorSignature" />
         </node>
       </node>
       <node concept="37vLTG" id="6ddXmWdPAB7" role="3clF46">
@@ -1022,21 +1022,31 @@
     <ref role="WuzLi" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
     <node concept="11bSqf" id="4KyQ_QhDpkf" role="11c4hB">
       <node concept="3clFbS" id="4KyQ_QhDpkg" role="2VODD2">
+        <node concept="3SKdUt" id="4KyQ_QhOZ0S" role="3cqZAp">
+          <node concept="3SKdUq" id="4KyQ_QhOZ0U" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: The following line doesn't print the name for some reason." />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4KyQ_QhOZqM" role="3cqZAp">
+          <node concept="3SKdUq" id="4KyQ_QhOZqO" role="3SKWNk">
+            <property role="3SKdUp" value="Not sure why this isn't working, I've tried many alternatives." />
+          </node>
+        </node>
         <node concept="lc7rE" id="4KyQ_QhDpkP" role="3cqZAp">
           <node concept="l9hG8" id="4KyQ_QhDplf" role="lcghm">
-            <node concept="2OqwBi" id="4KyQ_QhEKLY" role="lb14g">
-              <node concept="2OqwBi" id="4KyQ_QhDq7_" role="2Oq$k0">
-                <node concept="2OqwBi" id="4KyQ_QhDpv1" role="2Oq$k0">
-                  <node concept="117lpO" id="4KyQ_QhDpm9" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="4KyQ_QhDpDs" role="2OqNvi">
+            <node concept="2OqwBi" id="4KyQ_QhO0WW" role="lb14g">
+              <node concept="2OqwBi" id="4KyQ_QhNXkL" role="2Oq$k0">
+                <node concept="2OqwBi" id="4KyQ_QhNyr9" role="2Oq$k0">
+                  <node concept="117lpO" id="4KyQ_QhNyi9" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="4KyQ_QhNyB_" role="2OqNvi">
                     <ref role="3Tt5mk" to="wnzg:7DDmkza$5N" resolve="identity" />
                   </node>
                 </node>
-                <node concept="3TrEf2" id="4KyQ_QhEJQ0" role="2OqNvi">
+                <node concept="3TrEf2" id="4KyQ_QhO00Y" role="2OqNvi">
                   <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
                 </node>
               </node>
-              <node concept="3TrcHB" id="4KyQ_QhELGX" role="2OqNvi">
+              <node concept="3TrcHB" id="4KyQ_QhOp44" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>

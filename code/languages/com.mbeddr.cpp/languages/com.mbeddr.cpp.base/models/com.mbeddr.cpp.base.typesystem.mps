@@ -927,5 +927,23 @@
       <ref role="1YaFvo" to="wnzg:7DDmkyVr_r" resolve="ConstructorInitializedAttribute" />
     </node>
   </node>
+  <node concept="18kY7G" id="4KyQ_QhNKFY">
+    <property role="TrG5h" value="check_ConstructorInitializedConstructor" />
+    <property role="3GE5qa" value="method.constructor" />
+    <node concept="3clFbS" id="4KyQ_QhNKFZ" role="18ibNy">
+      <node concept="a7r0C" id="4KyQ_QhNKG5" role="3cqZAp">
+        <node concept="Xl_RD" id="4KyQ_QhNKGq" role="a7wSD">
+          <property role="Xl_RC" value="TODO: TextGen does not generate the constructor name on initialized lists." />
+        </node>
+        <node concept="1YBJjd" id="4KyQ_QhNKIc" role="2OEOjV">
+          <ref role="1YBMHb" node="4KyQ_QhNKG1" resolve="constructorInitializedConstructor" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4KyQ_QhNKG1" role="1YuTPh">
+      <property role="TrG5h" value="constructorInitializedConstructor" />
+      <ref role="1YaFvo" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
+    </node>
+  </node>
 </model>
 

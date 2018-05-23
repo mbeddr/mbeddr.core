@@ -96,6 +96,10 @@
         <property id="7844497894798008385" name="visibility" index="2gom44" />
         <reference id="7844497894798008388" name="parent_class" index="2gom41" />
       </concept>
+      <concept id="137823117410394117" name="com.mbeddr.cpp.base.structure.ConstructorInitializedConstructor" flags="ng" index="yZclw">
+        <reference id="137823117411762547" name="identity" index="yKYgm" />
+        <child id="137823117411762663" name="actual_arguments" index="yKYi2" />
+      </concept>
       <concept id="137823117407795547" name="com.mbeddr.cpp.base.structure.ConstructorInitializedAttribute" flags="ng" index="z11KY">
         <reference id="137823117409445459" name="identity" index="yVOcQ" />
         <child id="137823117409121665" name="init" index="yU53$" />
@@ -807,6 +811,23 @@
     <node concept="3mBW2U" id="nbE_$_7VLV" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="Parent" />
+      <node concept="2gom5y" id="4KyQ_QhKBDo" role="3mBdys">
+        <property role="2gom44" value="public" />
+        <property role="TrG5h" value="Parent" />
+        <ref role="2gom41" node="nbE_$_7VLV" resolve="Parent" />
+        <node concept="3XIRFW" id="4KyQ_QhKBDp" role="1IVm9U" />
+        <node concept="2dFNQU" id="4KyQ_QhKBDq" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="19RgSI" id="4KyQ_QhKBEU" role="1UOdpc">
+          <property role="TrG5h" value="y" />
+          <node concept="26Vqpq" id="4KyQ_QhKBET" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
       <node concept="2gom5y" id="3n$8_Xbe9D1" role="3mBdys">
         <property role="2gom44" value="public" />
         <property role="TrG5h" value="Parent" />
@@ -831,6 +852,12 @@
           <node concept="26Vqqz" id="3n$8_Xbe9E8" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="yZclw" id="4KyQ_QhKBFu" role="1YC0t0">
+          <ref role="yKYgm" node="4KyQ_QhKBDo" resolve="Parent" />
+          <node concept="3TlMh9" id="4KyQ_QhKBFN" role="yKYi2">
+            <property role="2hmy$m" value="25" />
           </node>
         </node>
         <node concept="z11KY" id="7DDmkz5lRS" role="1YC0t0">
@@ -949,6 +976,22 @@
         </node>
         <node concept="3TlMh9" id="nbE_$_7W86" role="3XIe9v">
           <property role="2hmy$m" value="0" />
+        </node>
+      </node>
+      <node concept="2gom5y" id="4KyQ_QhNPoF" role="3mBdys">
+        <property role="2gom44" value="public" />
+        <property role="TrG5h" value="Child" />
+        <ref role="2gom41" node="nbE_$_7VLG" resolve="Child" />
+        <node concept="3XIRFW" id="4KyQ_QhNPoG" role="1IVm9U" />
+        <node concept="2dFNQU" id="4KyQ_QhNPoH" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="yZclw" id="4KyQ_QhNPpN" role="1YC0t0">
+          <ref role="yKYgm" node="4KyQ_QhKBDo" resolve="Parent" />
+          <node concept="3TlMh9" id="4KyQ_QhNPq3" role="yKYi2">
+            <property role="2hmy$m" value="33" />
+          </node>
         </node>
       </node>
       <node concept="3u$6M4" id="45rBLTDuPlu" role="3mBdys" />

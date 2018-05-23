@@ -80,6 +80,7 @@
       <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
         <child id="1177093586806" name="templateNode" index="gfFT$" />
       </concept>
+      <concept id="1168559098955" name="jetbrains.mps.lang.generator.structure.RuleConsequence" flags="lg" index="jzcPr" />
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
@@ -536,6 +537,10 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3aamgX" id="4KyQ_QhPjmW" role="3acgRq">
+      <ref role="30HIoZ" to="pmno:7DDmkzf7zb" resolve="GenConstructorPrototype" />
+      <node concept="jzcPr" id="4KyQ_QhPlhC" role="1lVwrX" />
     </node>
     <node concept="2rT7sh" id="2Ai0Gt9X68v" role="2rTMjI">
       <property role="TrG5h" value="class2Prototype" />
