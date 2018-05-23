@@ -54,7 +54,6 @@
       <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
         <property id="6113173064526131578" name="value" index="PhEJT" />
       </concept>
-      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
@@ -179,12 +178,12 @@
           </node>
           <node concept="3XgwwK" id="62gfOGGrb5r" role="3XIe9u">
             <ref role="3O_q_h" node="2_lkiVk34TH" resolve="identity" />
-            <node concept="Pu267" id="62gfOGGrb6d" role="3XgDS0">
+            <node concept="26Vqph" id="40WVvpgOSsl" role="3XgDS0">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
             </node>
-            <node concept="PhEJO" id="62gfOGGrbak" role="3O_q_j">
-              <property role="PhEJT" value="Hello, World!" />
+            <node concept="PhEJO" id="40WVvpgO7kG" role="3O_q_j">
+              <property role="PhEJT" value="hoi" />
             </node>
           </node>
         </node>
