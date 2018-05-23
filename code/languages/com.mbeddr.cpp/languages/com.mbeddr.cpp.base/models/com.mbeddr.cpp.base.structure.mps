@@ -408,6 +408,11 @@
       <property role="TrG5h" value="hasEllipsis" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="5i01kANicU4" role="1TKVEl">
+      <property role="IQ2nx" value="6088872510303555204" />
+      <property role="TrG5h" value="is_destructor" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6hUtorDPkwW">
     <property role="EcuMT" value="7240228573260630076" />
@@ -486,6 +491,7 @@
     <property role="3GE5qa" value="method.constructor" />
     <property role="TrG5h" value="ConstructorInitializedConstructor" />
     <property role="R4oN_" value="Base constructor calls like ConstructorA(int32 a) : ConstructorB(a)" />
+    <property role="34LRSv" value="destructor" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7DDmkza$5K" role="PzmwI">
       <ref role="PrY4T" node="3n$8_Xbpg8r" resolve="IAmConstructorInitializable" />

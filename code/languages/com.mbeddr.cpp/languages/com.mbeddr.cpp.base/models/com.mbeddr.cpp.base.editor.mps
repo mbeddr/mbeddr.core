@@ -209,7 +209,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -724,6 +726,7 @@
     <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="wnzg:2L1k$oXxncW" resolve="IVirtualableConcept" />
     <node concept="1kHk_G" id="2LwGNVbhV8I" role="2wV5jI">
+      <property role="ZjSer" value="virtual" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       <ref role="1NtTu8" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
     </node>
@@ -795,6 +798,27 @@
         <ref role="1NtTu8" to="wnzg:6NtgknWJ211" resolve="visibility" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
+      <node concept="PMmxH" id="4KyQ_QhPIXq" role="3EZMnx">
+        <ref role="PMmxG" node="2L1k$oXm7Pq" resolve="VirtualFlag" />
+      </node>
+      <node concept="3F0ifn" id="5i01kANig6U" role="3EZMnx">
+        <property role="3F0ifm" value="~" />
+        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+        <ref role="1ERwB7" node="5i01kANoQSk" resolve="Undestructor" />
+        <node concept="pkWqt" id="5i01kANig7e" role="pqm2j">
+          <node concept="3clFbS" id="5i01kANig7f" role="2VODD2">
+            <node concept="3clFbF" id="5i01kANigeA" role="3cqZAp">
+              <node concept="2OqwBi" id="5i01kANigEK" role="3clFbG">
+                <node concept="pncrf" id="5i01kANige_" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5i01kANiikU" role="2OqNvi">
+                  <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="is_destructor" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="11L4FC" id="5i01kANqiUX" role="3F10Kt" />
+      </node>
       <node concept="1iCGBv" id="6ddXmWdAFQT" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:6NtgknWJ214" resolve="parent_class" />
         <node concept="1sVBvm" id="6ddXmWdAFQV" role="1sWHZn">
@@ -808,6 +832,9 @@
         </node>
         <node concept="VPxyj" id="6ddXmWdCZQv" role="3F10Kt">
           <property role="VOm3f" value="false" />
+        </node>
+        <node concept="A1WHu" id="5i01kANlAex" role="3vIgyS">
+          <ref role="A1WHt" node="5i01kANlz3$" resolve="ConstructorToDestructor" />
         </node>
       </node>
       <node concept="PMmxH" id="6NtgknWJ3yp" role="3EZMnx">
@@ -1206,6 +1233,117 @@
         <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
       </node>
       <node concept="l2Vlx" id="7DDmkza$5W" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="3ICXOK" id="5i01kANlz3$">
+    <property role="3GE5qa" value="method.constructor" />
+    <property role="TrG5h" value="ConstructorToDestructor" />
+    <ref role="aqKnT" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+    <node concept="1Qtc8_" id="5i01kANlz3_" role="IW6Ez">
+      <node concept="IWgqT" id="5i01kANlz3X" role="1Qtc8A">
+        <node concept="1hCUdq" id="5i01kANlz3Z" role="1hCUd6">
+          <node concept="3clFbS" id="5i01kANlz41" role="2VODD2">
+            <node concept="3clFbF" id="5i01kANlzcX" role="3cqZAp">
+              <node concept="Xl_RD" id="5i01kANlzcW" role="3clFbG">
+                <property role="Xl_RC" value="~" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="5i01kANlz43" role="IWgqQ">
+          <node concept="3clFbS" id="5i01kANlz45" role="2VODD2">
+            <node concept="3clFbF" id="5i01kANlzuv" role="3cqZAp">
+              <node concept="37vLTI" id="5i01kANl_CH" role="3clFbG">
+                <node concept="3clFbT" id="5i01kANl_LG" role="37vLTx">
+                  <property role="3clFbU" value="true" />
+                </node>
+                <node concept="2OqwBi" id="5i01kANlzML" role="37vLTJ">
+                  <node concept="7Obwk" id="5i01kANlzuu" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5i01kANl$yL" role="2OqNvi">
+                    <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="is_destructor" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cWJ9i" id="5i01kANlz3F" role="1Qtc8$">
+        <node concept="CtIbL" id="5i01kANlz3H" role="CtIbM">
+          <property role="CtIbK" value="LEFT" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="5i01kANoQSk">
+    <property role="3GE5qa" value="method.constructor" />
+    <property role="TrG5h" value="Undestructor" />
+    <ref role="1h_SK9" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+    <node concept="1hA7zw" id="5i01kANoUWz" role="1h_SK8">
+      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hHO97" value="Make a destructor a constsructor" />
+      <node concept="1hAIg9" id="5i01kANoUW$" role="1hA7z_">
+        <node concept="3clFbS" id="5i01kANoUW_" role="2VODD2">
+          <node concept="3clFbF" id="5i01kANoUWA" role="3cqZAp">
+            <node concept="37vLTI" id="5i01kANoUWB" role="3clFbG">
+              <node concept="3clFbT" id="5i01kANoUWC" role="37vLTx">
+                <property role="3clFbU" value="false" />
+              </node>
+              <node concept="2OqwBi" id="5i01kANoUWD" role="37vLTJ">
+                <node concept="0IXxy" id="5i01kANoUWE" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5i01kANoUWF" role="2OqNvi">
+                  <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="is_destructor" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="jK8Ss" id="5i01kANoUWG" role="jK8aL">
+        <node concept="3clFbS" id="5i01kANoUWH" role="2VODD2">
+          <node concept="3clFbF" id="5i01kANoUWI" role="3cqZAp">
+            <node concept="2OqwBi" id="5i01kANoUWJ" role="3clFbG">
+              <node concept="0IXxy" id="5i01kANoUWK" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5i01kANoUWL" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="is_destructor" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="5i01kANoQSl" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hHO97" value="Make a destructor a constsructor" />
+      <node concept="1hAIg9" id="5i01kANoQSm" role="1hA7z_">
+        <node concept="3clFbS" id="5i01kANoQSn" role="2VODD2">
+          <node concept="3clFbF" id="5i01kANoSvJ" role="3cqZAp">
+            <node concept="37vLTI" id="5i01kANoUeR" role="3clFbG">
+              <node concept="3clFbT" id="5i01kANoUnQ" role="37vLTx">
+                <property role="3clFbU" value="false" />
+              </node>
+              <node concept="2OqwBi" id="5i01kANoSO1" role="37vLTJ">
+                <node concept="0IXxy" id="5i01kANoSvI" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5i01kANoT$1" role="2OqNvi">
+                  <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="is_destructor" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="jK8Ss" id="5i01kANoQSA" role="jK8aL">
+        <node concept="3clFbS" id="5i01kANoQSB" role="2VODD2">
+          <node concept="3clFbF" id="5i01kANoQZY" role="3cqZAp">
+            <node concept="2OqwBi" id="5i01kANoRs8" role="3clFbG">
+              <node concept="0IXxy" id="5i01kANoQZX" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5i01kANoSji" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="is_destructor" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
