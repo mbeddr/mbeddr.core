@@ -6,6 +6,8 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="u5dg" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.xtext(com.mbeddr.mpsutil.ecore.stubs/)" />
+    <import index="gkp7" ref="r:a6defc8b-c4d9-46c9-a221-6d68fa6905e1(com.mbeddr.cpp.base.editor)" />
     <import index="pmno" ref="r:fb787694-3ba8-4e1e-89dc-c410426eb36e(com.mbeddr.cpp.modules.gen.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -21,6 +23,9 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -97,6 +102,24 @@
         <node concept="2iRfu4" id="2Ai0GtaeC1K" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="2Ai0GtaeC0A" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7DDmkzf7zq">
+    <ref role="1XX52x" to="pmno:7DDmkzf7zb" resolve="GenConstructorPrototype" />
+    <node concept="3EZMnI" id="27HW4imTxey" role="2wV5jI">
+      <node concept="3F0A7n" id="4KyQ_Qh_zOV" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="27HW4imTxf5" role="3EZMnx">
+        <property role="3F0ifm" value="::" />
+      </node>
+      <node concept="3F0A7n" id="4KyQ_Qh_zOE" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="PMmxH" id="27HW4imWfWI" role="3EZMnx">
+        <ref role="PMmxG" to="gkp7:6NtgknWJ3yn" resolve="constructorSignature" />
+      </node>
+      <node concept="2iRfu4" id="27HW4imTxe_" role="2iSdaV" />
     </node>
   </node>
 </model>

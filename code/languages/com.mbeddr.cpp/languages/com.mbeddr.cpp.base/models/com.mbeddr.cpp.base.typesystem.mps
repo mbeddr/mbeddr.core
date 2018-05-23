@@ -161,6 +161,7 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -759,17 +760,25 @@
         </node>
       </node>
       <node concept="3clFbJ" id="6ddXmWdG7bg" role="3cqZAp">
-        <node concept="3y3z36" id="6ddXmWdG8q5" role="3clFbw">
-          <node concept="2OqwBi" id="6ddXmWdG7s3" role="3uHU7B">
-            <node concept="1YBJjd" id="6ddXmWdG7bv" role="2Oq$k0">
-              <ref role="1YBMHb" node="6ddXmWdG7bc" resolve="classConstructor" />
+        <node concept="1Wc70l" id="27HW4imZBwt" role="3clFbw">
+          <node concept="2OqwBi" id="27HW4imZC0c" role="3uHU7w">
+            <node concept="37vLTw" id="27HW4imZBHM" role="2Oq$k0">
+              <ref role="3cqZAo" node="6ddXmWdG9lY" resolve="ancestorClass" />
             </node>
-            <node concept="3TrEf2" id="6ddXmWdG7M6" role="2OqNvi">
-              <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
-            </node>
+            <node concept="3x8VRR" id="27HW4imZCtK" role="2OqNvi" />
           </node>
-          <node concept="37vLTw" id="6ddXmWdGakc" role="3uHU7w">
-            <ref role="3cqZAo" node="6ddXmWdG9lY" resolve="ancestorClass" />
+          <node concept="3y3z36" id="6ddXmWdG8q5" role="3uHU7B">
+            <node concept="2OqwBi" id="6ddXmWdG7s3" role="3uHU7B">
+              <node concept="1YBJjd" id="6ddXmWdG7bv" role="2Oq$k0">
+                <ref role="1YBMHb" node="6ddXmWdG7bc" resolve="classConstructor" />
+              </node>
+              <node concept="3TrEf2" id="6ddXmWdG7M6" role="2OqNvi">
+                <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6ddXmWdGakc" role="3uHU7w">
+              <ref role="3cqZAo" node="6ddXmWdG9lY" resolve="ancestorClass" />
+            </node>
           </node>
         </node>
         <node concept="3clFbS" id="6ddXmWdG7bi" role="3clFbx">

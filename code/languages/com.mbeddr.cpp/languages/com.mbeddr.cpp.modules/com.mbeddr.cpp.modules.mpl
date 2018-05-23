@@ -82,6 +82,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
+    <dependency reexport="false">8c081446-e4ba-48b7-a7e0-3db40e2c3439(com.mbeddr.cpp.base)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="6" />
@@ -134,6 +135,7 @@
     <module reference="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" version="0" />
     <module reference="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" version="0" />
     <module reference="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" version="0" />
+    <module reference="8c081446-e4ba-48b7-a7e0-3db40e2c3439(com.mbeddr.cpp.base)" version="0" />
     <module reference="dd4979e3-3be6-46b3-9e1e-c36309e30758(com.mbeddr.cpp.modules)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />

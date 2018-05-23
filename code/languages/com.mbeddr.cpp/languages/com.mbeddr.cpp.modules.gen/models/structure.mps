@@ -87,5 +87,14 @@
       <ref role="PrY4T" to="wnzg:4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7DDmkzf7zb">
+    <property role="EcuMT" value="137823117412956363" />
+    <property role="TrG5h" value="GenConstructorPrototype" />
+    <property role="34LRSv" value="gen constructor prototype" />
+    <ref role="1TJDcQ" to="wnzg:6NtgknWJ21h" resolve="ClassConstructorSignature" />
+    <node concept="PrWs8" id="4KyQ_Qh$YaF" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
 </model>
 
