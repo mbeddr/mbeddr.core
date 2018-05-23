@@ -147,6 +147,17 @@
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.allScripts" />
     <node concept="398rNT" id="5ueaxoTn60W" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
+      <node concept="55IIr" id="3wIDmNcVjTA" role="398pKh">
+        <node concept="2Ry0Ak" id="3wIDmNcVjTB" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3wIDmNcVjTC" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="3wIDmNcVk1k" role="2Ry0An">
+              <property role="2Ry0Am" value="artifacts" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
@@ -263,7 +274,7 @@
         <node concept="1SiIV0" id="1RubBbpfBdh" role="3bR37C">
           <node concept="3bR9La" id="1RubBbpfBdi" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="1RubBbpfBdj" role="3bR37C">
@@ -336,7 +347,7 @@
         <node concept="1SiIV0" id="2coa6XmWnYZ" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWnZ0" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWnZ1" role="3bR37C">
@@ -418,7 +429,7 @@
         <node concept="1SiIV0" id="2coa6XmWDDB" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWDDC" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWDDD" role="3bR37C">
@@ -459,6 +470,57 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="2zzTeYjwMN3" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.cpp.tests.build" />
+        <property role="3LESm3" value="04ae2f7a-0c1f-41eb-b335-969d72c24973" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="2zzTeYjwMXe" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
+          <node concept="2Ry0Ak" id="2zzTeYjwN38" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="2zzTeYjwNbS" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="2zzTeYjwNtd" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.build" />
+                <node concept="2Ry0Ak" id="2zzTeYjwNz6" role="2Ry0An">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="2zzTeYjwNCZ" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.cpp.tests.build" />
+                    <node concept="2Ry0Ak" id="2zzTeYjwNIS" role="2Ry0An">
+                      <property role="2Ry0Am" value="com.mbeddr.cpp.tests.build.msd" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2zzTeYjwO8I" role="3bR37C">
+          <node concept="3bR9La" id="2zzTeYjwO8J" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="3AVJcIMl$vr" resolve="com.mbeddr.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2zzTeYjwO8K" role="3bR37C">
+          <node concept="3bR9La" id="2zzTeYjwO8L" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2zzTeYjwO8M" role="3bR37C">
+          <node concept="3bR9La" id="2zzTeYjwO8N" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6ucYLjoxZBc" resolve="com.mbeddr.platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7ApeIpt7StE" role="3bR37C">
+          <node concept="3bR9La" id="7ApeIpt7StF" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="2coa6XmWDsH" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.core.tests.performance.build" />
@@ -494,7 +556,7 @@
         <node concept="1SiIV0" id="2coa6XmWDsR" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWDsS" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWDsT" role="3bR37C">
@@ -570,7 +632,7 @@
         <node concept="1SiIV0" id="2coa6XmWnZe" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWnZf" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWoTy" role="3bR37C">
@@ -646,7 +708,7 @@
         <node concept="1SiIV0" id="2coa6XmWnZg" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWnZh" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWpIQ" role="3bR37C">
@@ -722,7 +784,7 @@
         <node concept="1SiIV0" id="2coa6XmWnZi" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWnZj" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWp8I" role="3bR37C">
@@ -798,7 +860,7 @@
         <node concept="1SiIV0" id="2coa6XmWnZk" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWnZl" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmWpnG" role="3bR37C">
@@ -877,7 +939,7 @@
         <node concept="1SiIV0" id="2e9Iswdy3xp" role="3bR37C">
           <node concept="3bR9La" id="2e9Iswdy3xq" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="3AVJcIMlL5d" role="3bR37C">
@@ -956,7 +1018,7 @@
         <node concept="1SiIV0" id="2e9Iswdy3xA" role="3bR37C">
           <node concept="3bR9La" id="2e9Iswdy3xB" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="3AVJcIMlFMf" role="3bR37C">
@@ -1029,7 +1091,7 @@
         <node concept="1SiIV0" id="6ucYLjoxZFR" role="3bR37C">
           <node concept="3bR9La" id="6ucYLjoxZFS" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="6ucYLjoxZFT" role="3bR37C">
@@ -1230,7 +1292,7 @@
         <node concept="1SiIV0" id="3AVJcIMl$Ko" role="3bR37C">
           <node concept="3bR9La" id="3AVJcIMl$Kp" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="3AVJcIMl$Kq" role="3bR37C">
@@ -1364,10 +1426,13 @@
               <property role="2Ry0Am" value=".." />
               <node concept="2Ry0Ak" id="23LEVbRX3hU" role="2Ry0An">
                 <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="23LEVbRX3hV" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="23LEVbRX3hW" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="3wIDmNcVjyp" role="2Ry0An">
+                  <property role="2Ry0Am" value="MPS" />
+                  <node concept="2Ry0Ak" id="3wIDmNcVjHU" role="2Ry0An">
+                    <property role="2Ry0Am" value="MPS-2017.1.2.app" />
+                    <node concept="2Ry0Ak" id="3wIDmNcVjQ$" role="2Ry0An">
+                      <property role="2Ry0Am" value="Contents" />
+                    </node>
                   </node>
                 </node>
               </node>

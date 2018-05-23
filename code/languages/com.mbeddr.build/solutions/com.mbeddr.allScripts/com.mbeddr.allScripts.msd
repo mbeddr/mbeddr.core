@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">f1fb7b1c-ce0d-423c-9369-4a661d600029(de.slisson.mps.all.build)</dependency>
+    <dependency reexport="false">f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)</dependency>
     <dependency reexport="false">bf659d6c-5638-4ea1-972b-4d492b5a91f2(jetbrains.mps.execution.configurations.implementation.plugin)</dependency>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
   </dependencies>
@@ -23,7 +23,7 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="752496a0-da43-4b5e-bd15-ea1a5aa211f6(com.mbeddr.allScripts)" version="0" />
-    <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.slisson.mps.all.build)" version="0" />
+    <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" version="0" />
     <module reference="bf659d6c-5638-4ea1-972b-4d492b5a91f2(jetbrains.mps.execution.configurations.implementation.plugin)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
   </dependencyVersions>
