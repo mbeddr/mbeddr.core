@@ -215,7 +215,7 @@
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="6oRbCP67UL3" role="2OqNvi">
-                    <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
+                    <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
                   </node>
                 </node>
                 <node concept="3clFbS" id="6oRbCP67PsP" role="2LFqv$">
@@ -245,7 +245,7 @@
                                 <ref role="2Gs0qQ" node="6oRbCP67PsL" resolve="element" />
                               </node>
                               <node concept="3TrEf2" id="6oRbCP68lXW" role="2OqNvi">
-                                <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                                <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
                               </node>
                             </node>
                             <node concept="2qgKlT" id="6oRbCP68lXX" role="2OqNvi">
@@ -373,7 +373,7 @@
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="6oRbCP68F5N" role="2OqNvi">
-                    <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
+                    <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
                   </node>
                 </node>
                 <node concept="3clFbS" id="6oRbCP68CjM" role="2LFqv$">
@@ -398,7 +398,7 @@
                                 <ref role="2Gs0qQ" node="6oRbCP68CjI" resolve="element" />
                               </node>
                               <node concept="3TrEf2" id="6oRbCP68Ioi" role="2OqNvi">
-                                <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                                <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
                               </node>
                             </node>
                             <node concept="2qgKlT" id="6oRbCP68LvM" role="2OqNvi">
@@ -517,7 +517,7 @@
                 <ref role="3cqZAo" node="6oRbCP69jYA" resolve="parentClass" />
               </node>
               <node concept="3Tsc0h" id="6oRbCP69qZL" role="2OqNvi">
-                <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
+                <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
               </node>
             </node>
             <node concept="3clFbS" id="6oRbCP69pgN" role="2LFqv$">
@@ -537,7 +537,7 @@
                             <ref role="2Gs0qQ" node="6oRbCP69pgJ" resolve="element" />
                           </node>
                           <node concept="3TrEf2" id="6oRbCP69xbl" role="2OqNvi">
-                            <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                            <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
                           </node>
                         </node>
                         <node concept="2qgKlT" id="6oRbCP69z41" role="2OqNvi">
@@ -658,7 +658,7 @@
                 <ref role="3cqZAo" node="6oRbCP69YnE" resolve="parentClass" />
               </node>
               <node concept="3Tsc0h" id="6oRbCP6a2_P" role="2OqNvi">
-                <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
+                <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
               </node>
             </node>
             <node concept="3clFbS" id="6oRbCP6a1z2" role="2LFqv$">
@@ -678,7 +678,7 @@
                             <ref role="2Gs0qQ" node="6oRbCP6a1yY" resolve="element" />
                           </node>
                           <node concept="3TrEf2" id="6oRbCP6a436" role="2OqNvi">
-                            <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                            <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
                           </node>
                         </node>
                         <node concept="2qgKlT" id="6oRbCP6a5iV" role="2OqNvi">

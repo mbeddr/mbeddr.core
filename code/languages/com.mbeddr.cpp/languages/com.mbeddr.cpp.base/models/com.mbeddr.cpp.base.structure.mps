@@ -2,7 +2,7 @@
 <model ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -87,7 +87,7 @@
     <node concept="1TJgyj" id="3UsoL$l5qj8" role="1TKVEi">
       <property role="IQ2ns" value="4511589886097466568" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="inherits_from" />
+      <property role="20kJfa" value="ancestors" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3UsoL$l5qkL" resolve="InheritanceInstance" />
     </node>
@@ -99,6 +99,9 @@
     </node>
     <node concept="PrWs8" id="4K6s$_sHKoZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="7U3i_0R_TYH" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgB$VW">
@@ -116,15 +119,15 @@
     <node concept="1TJgyj" id="3CmSUB7Fp_k" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="4185783222026475860" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
     <node concept="PrWs8" id="3v5DuFDl4c1" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     </node>
-    <node concept="PrWs8" id="2L1k$oXxnd5" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualableConcept" />
+    <node concept="PrWs8" id="2L1k$oXDqK5" role="PzmwI">
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualisable" />
     </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBEtu">
@@ -210,8 +213,8 @@
     <node concept="PrWs8" id="2Ai0Gtag2pd" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
-    <node concept="PrWs8" id="2L1k$oXxoOS" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualableConcept" />
+    <node concept="PrWs8" id="2L1k$oXNUaR" role="PzmwI">
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualisable" />
     </node>
   </node>
   <node concept="1TIwiD" id="3v5DuFDls_I">
@@ -262,7 +265,7 @@
     <node concept="1TJgyj" id="3UsoL$l5qkM" role="1TKVEi">
       <property role="IQ2ns" value="4511589886097466674" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="parent_class" />
+      <property role="20kJfa" value="parentClass" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
     </node>
@@ -300,7 +303,7 @@
   </node>
   <node concept="PlHQZ" id="2L1k$oXxncW">
     <property role="EcuMT" value="3188920472788366140" />
-    <property role="TrG5h" value="IVirtualableConcept" />
+    <property role="TrG5h" value="IVirtualisableConcept" />
     <property role="3GE5qa" value="method" />
     <node concept="1TJgyi" id="2L1k$oXxncX" role="1TKVEl">
       <property role="IQ2nx" value="3188920472788366141" />
@@ -321,6 +324,31 @@
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6hUtorDW7AG">
+    <property role="EcuMT" value="7240228573262412204" />
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="LocalClassVariableDeclaration" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+    <node concept="1TJgyj" id="6hUtorE26va" role="1TKVEi">
+      <property role="IQ2ns" value="7240228573263980490" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="constructor" />
+      <ref role="20lvS9" node="6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+    </node>
+    <node concept="PrWs8" id="6hUtorE0l2X" role="PzmwI">
+      <ref role="PrY4T" node="6hUtorE0jsx" resolve="IClassTyped" />
+    </node>
+    <node concept="PrWs8" id="6hUtorEixlO" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
+    </node>
+    <node concept="1TJgyj" id="6hUtorE99Pe" role="1TKVEi">
+      <property role="IQ2ns" value="7240228573265829198" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constructor_arg_actuals" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="6NtgknWJ20B">
     <property role="EcuMT" value="7844497894798008359" />
     <property role="TrG5h" value="ClassConstructorDeclaration" />
@@ -338,7 +366,10 @@
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
     <node concept="PrWs8" id="6NtgknWJ20V" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualableConcept" />
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualisableConcept" />
+    </node>
+    <node concept="PrWs8" id="3OTimPpGcj0" role="PzmwI">
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualisable" />
     </node>
     <node concept="PrWs8" id="6ddXmWdS2eK" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
@@ -354,6 +385,14 @@
       <property role="20kJfa" value="parent_class" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3n$8_Xbpg8r">
+    <property role="EcuMT" value="3883266571382358555" />
+    <property role="3GE5qa" value="method.constructor" />
+    <property role="TrG5h" value="IAmConstructorInitializable" />
+    <node concept="t5JxF" id="3n$8_Xbpga3" role="lGtFl">
+      <property role="t5JxN" value="This interface is responsible for things that can come after a : on a constructor implementation." />
     </node>
   </node>
   <node concept="1TIwiD" id="6NtgknWJ21h">
@@ -421,47 +460,6 @@
     <property role="R4oN_" value="empty declaration of VoidType" />
     <ref role="1TJDcQ" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
   </node>
-  <node concept="1TIwiD" id="6hUtorDW7AG">
-    <property role="EcuMT" value="7240228573262412204" />
-    <property role="3GE5qa" value="class" />
-    <property role="TrG5h" value="LocalClassVariableDeclaration" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-    <node concept="1TJgyj" id="6hUtorE26va" role="1TKVEi">
-      <property role="IQ2ns" value="7240228573263980490" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="constructor" />
-      <ref role="20lvS9" node="6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
-    </node>
-    <node concept="PrWs8" id="6hUtorE0l2X" role="PzmwI">
-      <ref role="PrY4T" node="6hUtorE0jsx" resolve="IClassTyped" />
-    </node>
-    <node concept="PrWs8" id="6hUtorEixlO" role="PzmwI">
-      <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
-    </node>
-    <node concept="1TJgyj" id="6hUtorE99Pe" role="1TKVEi">
-      <property role="IQ2ns" value="7240228573265829198" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="constructor_arg_actuals" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="6hUtorE0jsx">
-    <property role="EcuMT" value="7240228573263509281" />
-    <property role="3GE5qa" value="class" />
-    <property role="TrG5h" value="IClassTyped" />
-    <node concept="PrWs8" id="6hUtorE0jsy" role="PrDN$">
-      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="3n$8_Xbpg8r">
-    <property role="EcuMT" value="3883266571382358555" />
-    <property role="3GE5qa" value="method.constructor" />
-    <property role="TrG5h" value="IAmConstructorInitializable" />
-    <node concept="t5JxF" id="3n$8_Xbpga3" role="lGtFl">
-      <property role="t5JxN" value="This interface is responsible for things that can come after a : on a constructor implementation." />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7DDmkyVr_r">
     <property role="EcuMT" value="137823117407795547" />
     <property role="3GE5qa" value="method.constructor" />
@@ -484,6 +482,14 @@
       <property role="20kJfa" value="identity" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6hUtorE0jsx">
+    <property role="EcuMT" value="7240228573263509281" />
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="IClassTyped" />
+    <node concept="PrWs8" id="6hUtorE0jsy" role="PrDN$">
+      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="7DDmkz5m05">
@@ -512,6 +518,25 @@
       <property role="20kJfa" value="actual_arguments" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3OWNtRXmIPi">
+    <property role="EcuMT" value="4412628088238304594" />
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="StructStub" />
+    <property role="34LRSv" value="struct" />
+    <ref role="1TJDcQ" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+  </node>
+  <node concept="PlHQZ" id="2L1k$oXDqJY">
+    <property role="EcuMT" value="3188920472790477822" />
+    <property role="TrG5h" value="IPureVirtualisable" />
+    <node concept="PrWs8" id="2L1k$oXDqJZ" role="PrDN$">
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualisableConcept" />
+    </node>
+    <node concept="1TJgyi" id="2L1k$oXDqK2" role="1TKVEl">
+      <property role="IQ2nx" value="3188920472790477826" />
+      <property role="TrG5h" value="pure" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
