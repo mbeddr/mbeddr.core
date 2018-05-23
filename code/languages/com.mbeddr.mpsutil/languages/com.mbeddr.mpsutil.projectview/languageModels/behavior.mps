@@ -13,6 +13,7 @@
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -971,11 +972,15 @@
       <ref role="13i0hy" to="tpek:hEwIGRD" resolve="getExpectedReturnType" />
       <node concept="3Tm1VV" id="3dJ0eUbJEQp" role="1B3o_S" />
       <node concept="3clFbS" id="3dJ0eUbJEQr" role="3clF47">
-        <node concept="3clFbF" id="3dJ0eUbJF1i" role="3cqZAp">
-          <node concept="2ShNRf" id="3dJ0eUbJF18" role="3clFbG">
-            <node concept="3zrR0B" id="3dJ0eUbJFcr" role="2ShVmc">
-              <node concept="3Tqbb2" id="3dJ0eUbJFct" role="3zrR0E">
-                <ref role="ehGHo" to="tpee:hP7QB7G" resolve="StringType" />
+        <node concept="3cpWs6" id="19SY20AxLKb" role="3cqZAp">
+          <node concept="2pJPEk" id="19SY20AxLKd" role="3cqZAk">
+            <node concept="2pJPED" id="19SY20AxLKe" role="2pJPEn">
+              <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
+              <node concept="2pIpSj" id="19SY20AxLKf" role="2pJxcM">
+                <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
+                <node concept="36bGnv" id="19SY20AxLKg" role="2pJxcZ">
+                  <ref role="36bGnp" to="wyt6:~Object" resolve="Object" />
+                </node>
               </node>
             </node>
           </node>
