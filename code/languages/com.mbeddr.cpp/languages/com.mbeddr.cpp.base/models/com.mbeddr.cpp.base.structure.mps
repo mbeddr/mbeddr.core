@@ -150,6 +150,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="init" />
       <property role="IQ2ns" value="4185783222026502647" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="4o2nsMgBJ6a" role="PzmwI">
@@ -336,6 +337,29 @@
     <property role="TrG5h" value="StructStub" />
     <property role="34LRSv" value="struct" />
     <ref role="1TJDcQ" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+  </node>
+  <node concept="1TIwiD" id="3fD_lX7L3Ad">
+    <property role="EcuMT" value="3740685201966381453" />
+    <property role="TrG5h" value="AutoDeclaration" />
+    <property role="34LRSv" value="auto" />
+    <property role="R4oN_" value="a variable with type auto" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
+    <node concept="1TJgyj" id="2pPw_DEjkM9" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="init" />
+      <property role="IQ2ns" value="2771264470558526601" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="79L075IEzXZ" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
+    </node>
+    <node concept="PrWs8" id="79L075IEzY7" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="79L075IEzYk" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
+    </node>
   </node>
 </model>
 
