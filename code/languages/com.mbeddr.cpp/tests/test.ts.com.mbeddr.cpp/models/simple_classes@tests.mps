@@ -6,7 +6,7 @@
     <devkit ref="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" />
   </languages>
   <imports>
-    <import index="ux7" ref="r:7a7d22ce-1d67-4772-b659-fbcc3b235afb(com.mbeddr.cpp.__spreferences.PlatformTemplates)" implicit="true" />
+    <import index="ux7" ref="r:7a7d22ce-1d67-4772-b659-fbcc3b235afb(com.mbeddr.cpp.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -531,7 +531,7 @@
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cpp/" />
   </node>
   <node concept="2v9HqL" id="7pg8HYlqyX2">
-    <node concept="2xfidK" id="7ApeIptaldc" role="2AWWZH">
+    <node concept="2xfidK" id="6gFj6gr99Az" role="2AWWZH">
       <ref role="2xfifS" to="ux7:4FIECQpE9e1" resolve="Desktop Platform" />
     </node>
     <node concept="2Q9Fgs" id="7pg8HYlqyX4" role="2Q9xDr">

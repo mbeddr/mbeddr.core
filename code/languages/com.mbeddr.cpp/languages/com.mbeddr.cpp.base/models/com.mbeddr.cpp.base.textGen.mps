@@ -938,5 +938,35 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="6gFj6gq0OZt">
+    <property role="3GE5qa" value="Namespace" />
+    <ref role="WuzLi" to="wnzg:6gFj6gpBJFg" resolve="GlobalUsingGeneralNamespaceDeclaration" />
+    <node concept="11bSqf" id="6gFj6gq0Pf_" role="11c4hB">
+      <node concept="3clFbS" id="6gFj6gq0PfA" role="2VODD2">
+        <node concept="lc7rE" id="6gFj6gq0PfB" role="3cqZAp">
+          <node concept="la8eA" id="6gFj6gq0PfC" role="lcghm">
+            <property role="lacIc" value="using namespace " />
+          </node>
+          <node concept="l9hG8" id="6gFj6gq0PfD" role="lcghm">
+            <node concept="2OqwBi" id="6gFj6gq0PfE" role="lb14g">
+              <node concept="2OqwBi" id="6gFj6gq0PfF" role="2Oq$k0">
+                <node concept="117lpO" id="6gFj6gq0PfG" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6gFj6gq0PfH" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:6gFj6gpBJF$" resolve="namespace" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6gFj6gq0PfI" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6gFj6gq2U1e" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+          <node concept="l8MVK" id="6gFj6gq2Un3" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
