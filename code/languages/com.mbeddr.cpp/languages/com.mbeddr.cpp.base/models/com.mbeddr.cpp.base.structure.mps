@@ -343,7 +343,7 @@
     <property role="TrG5h" value="AutoDeclaration" />
     <property role="34LRSv" value="auto" />
     <property role="R4oN_" value="a variable with type auto" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2pPw_DEjkM9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="init" />
@@ -351,14 +351,14 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
-    <node concept="PrWs8" id="79L075IEzXZ" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
+    <node concept="PrWs8" id="2O2YBLCk51w" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
-    <node concept="PrWs8" id="79L075IEzY7" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
+    <node concept="PrWs8" id="2O2YBLCk51z" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
-    <node concept="PrWs8" id="79L075IEzYk" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
+    <node concept="PrWs8" id="2O2YBLCktFw" role="PzmwI">
+      <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     </node>
   </node>
 </model>
