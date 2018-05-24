@@ -497,7 +497,6 @@
     <property role="3GE5qa" value="method.constructor" />
     <property role="TrG5h" value="ConstructorInitializedConstructor" />
     <property role="R4oN_" value="Base constructor calls like ConstructorA(int32 a) : ConstructorB(a)" />
-    <property role="34LRSv" value="destructor" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7DDmkza$5K" role="PzmwI">
       <ref role="PrY4T" node="3n$8_Xbpg8r" resolve="IAmConstructorInitializable" />
