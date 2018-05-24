@@ -248,16 +248,6 @@
       <property role="IQ2nx" value="9066372830132870213" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="4VhroexNCwp" role="1TKVEl">
-      <property role="TrG5h" value="inline" />
-      <property role="IQ2nx" value="5679441017213716505" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="3LE5RBPIDkQ" role="1TKVEl">
-      <property role="IQ2nx" value="4353317802388133174" />
-      <property role="TrG5h" value="isOverloadedOperator" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="PrWs8" id="4WTYg$PPBc5" role="PzmwI">
       <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
     </node>
@@ -270,12 +260,8 @@
     <node concept="PrWs8" id="5C47DuoDR$z" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
     </node>
-    <node concept="1TJgyj" id="3LE5RBPIED3" role="1TKVEi">
-      <property role="IQ2ns" value="4353317802388138563" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="overloadedOperator" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="3LE5RBPIECT" resolve="OverloadableOperator" />
+    <node concept="PrWs8" id="3LE5RBQ6qAL" role="PzmwI">
+      <ref role="PrY4T" node="3LE5RBQ6qAj" resolve="IAmInlineable" />
     </node>
   </node>
   <node concept="1TIwiD" id="3UsoL$l5qkL">
@@ -757,17 +743,6 @@
       <property role="1uS6qv" value="[]" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3LE5RBPIECT">
-    <property role="EcuMT" value="4353317802388138553" />
-    <property role="3GE5qa" value="method" />
-    <property role="TrG5h" value="OverloadableOperator" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="3LE5RBPIECU" role="1TKVEl">
-      <property role="IQ2nx" value="4353317802388138554" />
-      <property role="TrG5h" value="operator" />
-      <ref role="AX2Wp" node="45rBLTH8Vrc" resolve="EOverloadableOperator" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3LE5RBPQ$rY">
     <property role="EcuMT" value="4353317802390210302" />
     <property role="3GE5qa" value="method" />
@@ -781,6 +756,9 @@
     <node concept="PrWs8" id="3LE5RBPVqod" role="PzmwI">
       <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
     </node>
+    <node concept="PrWs8" id="3LE5RBQ6qWa" role="PzmwI">
+      <ref role="PrY4T" node="3LE5RBQ6qAj" resolve="IAmInlineable" />
+    </node>
     <node concept="1TJgyi" id="3LE5RBPSwkK" role="1TKVEl">
       <property role="IQ2nx" value="4353317802390717744" />
       <property role="TrG5h" value="operator" />
@@ -792,6 +770,16 @@
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3LE5RBQ6qAj">
+    <property role="EcuMT" value="4353317802394364307" />
+    <property role="3GE5qa" value="method" />
+    <property role="TrG5h" value="IAmInlineable" />
+    <node concept="1TJgyi" id="3LE5RBQ6qAk" role="1TKVEl">
+      <property role="IQ2nx" value="4353317802394364308" />
+      <property role="TrG5h" value="inline" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

@@ -498,37 +498,14 @@
     <node concept="3EZMnI" id="6Q7bJ$$mLHM" role="2wV5jI">
       <node concept="1kHk_G" id="7K_2cV$Golz" role="3EZMnx">
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-        <ref role="1NtTu8" to="wnzg:4VhroexNCwp" resolve="inline" />
+        <ref role="1NtTu8" to="wnzg:3LE5RBQ6qAk" resolve="inline" />
       </node>
       <node concept="3F1sOY" id="6Q7bJ$$mLHO" role="3EZMnx">
         <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
       </node>
-      <node concept="1kHk_G" id="3LE5RBPIDQJ" role="3EZMnx">
-        <property role="ZjSer" value="operator" />
-        <ref role="1NtTu8" to="wnzg:3LE5RBPIDkQ" resolve="isOverloadedOperator" />
-      </node>
-      <node concept="1QoScp" id="3LE5RBPIErq" role="3EZMnx">
-        <property role="1QpmdY" value="true" />
-        <node concept="3F1sOY" id="3LE5RBPIH5T" role="1QoS34">
-          <property role="1cu_pB" value="1" />
-          <ref role="1NtTu8" to="wnzg:3LE5RBPIED3" resolve="overloadedOperator" />
-        </node>
-        <node concept="pkWqt" id="3LE5RBPIErt" role="3e4ffs">
-          <node concept="3clFbS" id="3LE5RBPIErv" role="2VODD2">
-            <node concept="3clFbF" id="3LE5RBPIEYi" role="3cqZAp">
-              <node concept="2OqwBi" id="3LE5RBPIFmI" role="3clFbG">
-                <node concept="pncrf" id="3LE5RBPIEYh" role="2Oq$k0" />
-                <node concept="3TrcHB" id="3LE5RBPIGMR" role="2OqNvi">
-                  <ref role="3TsBF5" to="wnzg:3LE5RBPIDkQ" resolve="isOverloadedOperator" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3F0A7n" id="3LE5RBPMCXb" role="1QoVPY">
-          <property role="1cu_pB" value="2" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
+      <node concept="3F0A7n" id="3LE5RBPMCXb" role="3EZMnx">
+        <property role="1cu_pB" value="2" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="6Q7bJ$$mLHQ" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1379,20 +1356,16 @@
       <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="pure" />
     </node>
   </node>
-  <node concept="24kQdi" id="3LE5RBPIEDm">
-    <property role="3GE5qa" value="method" />
-    <ref role="1XX52x" to="wnzg:3LE5RBPIECT" resolve="OverloadableOperator" />
-    <node concept="3F0A7n" id="3LE5RBPIEDo" role="2wV5jI">
-      <ref role="1NtTu8" to="wnzg:3LE5RBPIECU" resolve="operator" />
-      <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
-    </node>
-  </node>
   <node concept="24kQdi" id="3LE5RBPSwkr">
     <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="wnzg:3LE5RBPQ$rY" resolve="OperatorOverloadDeclaration" />
     <node concept="3EZMnI" id="3LE5RBPSwkt" role="2wV5jI">
       <node concept="PMmxH" id="3LE5RBPSwl0" role="3EZMnx">
         <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
+      </node>
+      <node concept="1kHk_G" id="3LE5RBQ6qh4" role="3EZMnx">
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+        <ref role="1NtTu8" to="wnzg:3LE5RBQ6qAk" resolve="inline" />
       </node>
       <node concept="3F1sOY" id="3LE5RBQ04Gy" role="3EZMnx">
         <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />

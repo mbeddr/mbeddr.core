@@ -75,7 +75,7 @@
         <property id="5478191656157682870" name="static" index="gNYVZ" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
-      <concept id="5044697665789423998" name="com.mbeddr.cpp.base.structure.INamedClassMemberDeclaration" flags="ng" index="3mBaMM">
+      <concept id="5044697665789421253" name="com.mbeddr.cpp.base.structure.IClassMemberDeclaration" flags="ng" index="3mBbG9">
         <property id="2995459757115087788" name="visibility" index="1wg9_F" />
       </concept>
       <concept id="5044697665789405022" name="com.mbeddr.cpp.base.structure.ClassType" flags="ng" index="3mBfEi">
@@ -85,7 +85,6 @@
         <child id="4511589886097466568" name="ancestors" index="Fysvh" />
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
-      <concept id="4018800670853679470" name="com.mbeddr.cpp.base.structure.EmptyClassContent" flags="ng" index="3u$6M4" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -142,12 +141,8 @@
       <concept id="2995459757115296646" name="com.mbeddr.cpp.modules.structure.CPPImplementationModule" flags="ng" index="1whW_1" />
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
-      <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
-      </concept>
-      <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
-        <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
       <concept id="4620120465980402700" name="com.mbeddr.core.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
@@ -166,7 +161,6 @@
         <child id="8860443239512128064" name="left" index="3TlMhI" />
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
-      <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
       <concept id="8860443239512128099" name="com.mbeddr.core.expressions.structure.FalseLiteral" flags="ng" index="3TlMhd" />
       <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
     </language>
@@ -218,10 +212,10 @@
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="SomeClass" />
       <node concept="3mB1cK" id="6KmaLbE81K_" role="3mBdys">
-        <property role="1wg9_F" value="public" />
         <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="setFalse" />
         <property role="hL25V" value="false" />
+        <property role="1wg9_F" value="public" />
         <node concept="3TlMgk" id="6KmaLbE81KA" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
@@ -249,23 +243,6 @@
           </node>
         </node>
       </node>
-      <node concept="3u$6M4" id="7wcjSRtodQX" role="3mBdys" />
-      <node concept="3mB1cK" id="7wcjSRtodRL" role="3mBdys">
-        <property role="1wg9_F" value="private" />
-        <property role="gNYVZ" value="false" />
-        <property role="TrG5h" value="setToSomething" />
-        <node concept="26Vqph" id="7wcjSRtodSm" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="3XIRFW" id="7wcjSRtodTV" role="3XIRFX">
-          <node concept="2BFjQ_" id="7wcjSRtodUb" role="3XIRFZ">
-            <node concept="3TlMh9" id="7wcjSRtodUp" role="2BFjQA">
-              <property role="2hmy$m" value="0" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2NXPZ9" id="6KmaLbE81LD" role="N3F5h">
       <property role="TrG5h" value="empty_1527145164400_2" />
@@ -274,9 +251,9 @@
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="AnotherClass" />
       <node concept="3mB1cK" id="6KmaLbE81N_" role="3mBdys">
-        <property role="1wg9_F" value="public" />
         <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="setTrue" />
+        <property role="1wg9_F" value="public" />
         <node concept="3TlMgk" id="6KmaLbE81NA" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
