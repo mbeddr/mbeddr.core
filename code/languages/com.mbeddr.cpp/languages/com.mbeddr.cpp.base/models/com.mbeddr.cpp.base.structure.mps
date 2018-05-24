@@ -12,6 +12,7 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
+    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -343,22 +344,57 @@
     <property role="TrG5h" value="AutoDeclaration" />
     <property role="34LRSv" value="auto" />
     <property role="R4oN_" value="a variable with type auto" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2pPw_DEjkM9" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="init" />
-      <property role="IQ2ns" value="2771264470558526601" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCk51w" role="PzmwI">
-      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
-    </node>
     <node concept="PrWs8" id="2O2YBLCk51z" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
     <node concept="PrWs8" id="2O2YBLCktFw" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCrtmb" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCyL0P" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:52l0VUuN5O_" resolve="ICanBeStoredInRegister" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCyMmv" role="PzmwI">
+      <ref role="PrY4T" to="x27k:2ofiXe_tTHX" resolve="ICanMangleNames" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCz0g5" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCz2sD" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCz2ta" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:6o2p2Z0DOCt" resolve="IAllowsIncompleteTypes" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCz2tJ" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:xAR9nWuwcY" resolve="IHasPrefixes" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCz2uo" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCC3CC" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:7oI7FI6oqPw" resolve="IInitializationContext" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCCydq" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:4Ixybz5aK1O" resolve="IValueLike" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCOCCq" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5Oog2UbPmsI" resolve="IExternable" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCOCDj" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLCVBag" role="PzmwI">
+      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="2O2YBLDq81u" role="1TKVEi">
+      <property role="IQ2ns" value="3243430093911523422" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="initialize" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
 </model>
