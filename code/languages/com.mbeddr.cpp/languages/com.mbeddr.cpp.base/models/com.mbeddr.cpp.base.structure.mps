@@ -342,8 +342,9 @@
   <node concept="1TIwiD" id="3fD_lX7L3Ad">
     <property role="EcuMT" value="3740685201966381453" />
     <property role="TrG5h" value="AutoDeclaration" />
-    <property role="34LRSv" value="auto" />
     <property role="R4oN_" value="a variable with type auto" />
+    <property role="34LRSv" value="auto" />
+    <ref role="1TJDcQ" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
     <node concept="PrWs8" id="2O2YBLCk51z" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
@@ -388,6 +389,12 @@
     </node>
     <node concept="PrWs8" id="2O2YBLCVBag" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLEbGCQ" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:2by6456Kf3p" resolve="IMappableType" />
+    </node>
+    <node concept="PrWs8" id="2O2YBLF0kcE" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1V3wYmOJsDm" resolve="IDontApplyTypesystemRules" />
     </node>
     <node concept="1TJgyj" id="2O2YBLDq81u" role="1TKVEi">
       <property role="IQ2ns" value="3243430093911523422" />
