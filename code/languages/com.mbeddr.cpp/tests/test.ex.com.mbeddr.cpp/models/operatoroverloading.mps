@@ -76,9 +76,6 @@
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
       <concept id="4018800670853679470" name="com.mbeddr.cpp.base.structure.EmptyClassContent" flags="ng" index="3u$6M4" />
-      <concept id="4018800670855129896" name="com.mbeddr.cpp.base.structure.MethodSignature" flags="ng" index="3uF$V2">
-        <property id="5679441017213716505" name="inline" index="3J7Ymq" />
-      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -139,7 +136,6 @@
         <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="setFalse" />
         <property role="hL25V" value="false" />
-        <property role="3J7Ymq" value="false" />
         <node concept="3TlMgk" id="6KmaLbE81KA" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
