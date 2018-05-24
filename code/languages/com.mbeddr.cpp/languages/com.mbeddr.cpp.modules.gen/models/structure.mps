@@ -86,5 +86,21 @@
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3LE5RBQ$srP">
+    <property role="EcuMT" value="4353317802402236149" />
+    <property role="TrG5h" value="GenOperatorDeclaration" />
+    <property role="34LRSv" value="gen operator declaration" />
+    <ref role="1TJDcQ" to="wnzg:3LE5RBPQ$rY" resolve="OperatorOverloadDeclaration" />
+    <node concept="1TJgyj" id="3LE5RBQ$ttT" role="1TKVEi">
+      <property role="IQ2ns" value="4353317802402240377" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="cls" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    </node>
+    <node concept="PrWs8" id="3LE5RBQ_bLz" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
 </model>
 

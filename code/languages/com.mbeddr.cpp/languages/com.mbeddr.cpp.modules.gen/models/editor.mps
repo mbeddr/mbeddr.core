@@ -20,6 +20,7 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -161,6 +162,25 @@
         <ref role="PMmxG" to="gkp7:6NtgknWJ3yn" resolve="constructorSignature" />
       </node>
       <node concept="2iRfu4" id="27HW4imTxe_" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3LE5RBQ_Nom">
+    <ref role="1XX52x" to="pmno:3LE5RBQ$srP" resolve="GenOperatorDeclaration" />
+    <node concept="3EZMnI" id="3LE5RBQ_Noo" role="2wV5jI">
+      <node concept="1iCGBv" id="3LE5RBQ_NoA" role="3EZMnx">
+        <ref role="1NtTu8" to="pmno:3LE5RBQ$ttT" resolve="cls" />
+        <node concept="1sVBvm" id="3LE5RBQ_NoC" role="1sWHZn">
+          <node concept="3F0A7n" id="3LE5RBQ_NoQ" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3LE5RBQ_Np3" role="3EZMnx">
+        <property role="3F0ifm" value="::" />
+      </node>
+      <node concept="B$lHz" id="3LE5RBQ_NsC" role="3EZMnx" />
+      <node concept="l2Vlx" id="3LE5RBQ_Nor" role="2iSdaV" />
     </node>
   </node>
 </model>
