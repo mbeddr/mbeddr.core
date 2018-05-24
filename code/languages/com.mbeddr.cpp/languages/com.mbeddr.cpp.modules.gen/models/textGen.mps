@@ -43,6 +43,9 @@
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
         <child id="1237305790512" name="value" index="lb14g" />
       </concept>
+      <concept id="1237305557638" name="jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart" flags="ng" index="la8eA">
+        <property id="1237305576108" name="value" index="lacIc" />
+      </concept>
       <concept id="1237306079178" name="jetbrains.mps.lang.textGen.structure.AppendOperation" flags="nn" index="lc7rE">
         <child id="1237306115446" name="part" index="lcghm" />
       </concept>
@@ -188,6 +191,41 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="7DDmkzhCyZ">
+    <ref role="WuzLi" to="pmno:7DDmkzf7zb" resolve="GenConstructorPrototype" />
+    <node concept="11bSqf" id="7DDmkzhCz0" role="11c4hB">
+      <node concept="3clFbS" id="7DDmkzhCz1" role="2VODD2">
+        <node concept="lc7rE" id="27HW4imVpNi" role="3cqZAp">
+          <node concept="1bDJIP" id="27HW4imVpNy" role="lcghm">
+            <ref role="1rvKf6" to="yz0i:6ddXmWdP_nH" resolve="generateConstructorPrototype" />
+            <node concept="117lpO" id="27HW4imVpNK" role="1ryhcI" />
+            <node concept="2OqwBi" id="27HW4imVqw8" role="1ryhcI">
+              <node concept="117lpO" id="27HW4imVq7N" role="2Oq$k0" />
+              <node concept="3TrcHB" id="27HW4imVrRR" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="27HW4imVs3d" role="3cqZAp">
+          <node concept="la8eA" id="27HW4imVs94" role="lcghm">
+            <property role="lacIc" value=" " />
+          </node>
+          <node concept="l9hG8" id="27HW4imVs9C" role="lcghm">
+            <node concept="2OqwBi" id="27HW4imVsyL" role="lb14g">
+              <node concept="117lpO" id="27HW4imVsas" role="2Oq$k0" />
+              <node concept="3TrEf2" id="27HW4imVtfd" role="2OqNvi">
+                <ref role="3Tt5mk" to="wnzg:6ddXmWdC9sl" resolve="body" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="27HW4imVtPU" role="3cqZAp">
+          <node concept="l8MVK" id="27HW4imVtZU" role="lcghm" />
         </node>
       </node>
     </node>
