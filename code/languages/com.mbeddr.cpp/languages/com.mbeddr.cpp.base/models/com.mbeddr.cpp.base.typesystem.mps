@@ -17,6 +17,7 @@
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -38,6 +39,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -1181,6 +1185,60 @@
     <node concept="1YaCAy" id="2L1k$oXKZ8O" role="1YuTPh">
       <property role="TrG5h" value="methodDeclaration" />
       <ref role="1YaFvo" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3LE5RBQ5PRC">
+    <property role="TrG5h" value="check_OperatorOverloadDeclaration" />
+    <property role="3GE5qa" value="method" />
+    <node concept="3clFbS" id="3LE5RBQ5PRD" role="18ibNy">
+      <node concept="3cpWs8" id="3LE5RBQ60b7" role="3cqZAp">
+        <node concept="3cpWsn" id="3LE5RBQ60ba" role="3cpWs9">
+          <property role="TrG5h" value="arg_count" />
+          <node concept="10Oyi0" id="3LE5RBQ60b5" role="1tU5fm" />
+          <node concept="2OqwBi" id="3LE5RBQ5U$s" role="33vP2m">
+            <node concept="2OqwBi" id="3LE5RBQ5QbE" role="2Oq$k0">
+              <node concept="1YBJjd" id="3LE5RBQ5PRY" role="2Oq$k0">
+                <ref role="1YBMHb" node="3LE5RBQ5PRF" resolve="operatorOverloadDeclaration" />
+              </node>
+              <node concept="3Tsc0h" id="3LE5RBQ5QBH" role="2OqNvi">
+                <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" resolve="arguments" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="3LE5RBQ5X7V" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="3LE5RBQ5PRJ" role="3cqZAp">
+        <node concept="3eOSWO" id="3LE5RBQ5YMa" role="3clFbw">
+          <node concept="3cmrfG" id="3LE5RBQ5YRT" role="3uHU7w">
+            <property role="3cmrfH" value="2" />
+          </node>
+          <node concept="37vLTw" id="3LE5RBQ60lE" role="3uHU7B">
+            <ref role="3cqZAo" node="3LE5RBQ60ba" resolve="arg_count" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="3LE5RBQ5PRL" role="3clFbx">
+          <node concept="2MkqsV" id="3LE5RBQ5Z2k" role="3cqZAp">
+            <node concept="1YBJjd" id="3LE5RBQ60IS" role="2OEOjV">
+              <ref role="1YBMHb" node="3LE5RBQ5PRF" resolve="operatorOverloadDeclaration" />
+            </node>
+            <node concept="2YIFZM" id="3LE5RBQ5Z3G" role="2MkJ7o">
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <node concept="Xl_RD" id="3LE5RBQ5Z83" role="37wK5m">
+                <property role="Xl_RC" value="Expected a maximum of 2 arguments, got %s" />
+              </node>
+              <node concept="37vLTw" id="3LE5RBQ60r5" role="37wK5m">
+                <ref role="3cqZAo" node="3LE5RBQ60ba" resolve="arg_count" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3LE5RBQ5PRF" role="1YuTPh">
+      <property role="TrG5h" value="operatorOverloadDeclaration" />
+      <ref role="1YaFvo" to="wnzg:3LE5RBPQ$rY" resolve="OperatorOverloadDeclaration" />
     </node>
   </node>
 </model>

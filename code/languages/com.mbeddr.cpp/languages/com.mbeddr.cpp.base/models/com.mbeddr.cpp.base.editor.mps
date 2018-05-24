@@ -23,7 +23,6 @@
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -224,7 +223,6 @@
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -505,38 +503,31 @@
       <node concept="3F1sOY" id="6Q7bJ$$mLHO" role="3EZMnx">
         <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
       </node>
-      <node concept="3F0A7n" id="6Q7bJ$$mLHP" role="3EZMnx">
-        <property role="1cu_pB" value="2" />
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <ref role="1k5W1q" to="r4b4:5v_KyvNCJ0N" resolve="StructuralIdentifier" />
+      <node concept="1kHk_G" id="3LE5RBPIDQJ" role="3EZMnx">
+        <property role="ZjSer" value="operator" />
+        <ref role="1NtTu8" to="wnzg:3LE5RBPIDkQ" resolve="isOverloadedOperator" />
       </node>
-      <node concept="3F0A7n" id="7wcjSRtzVEb" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:7wcjSRtzVE4" resolve="overloadedOperator" />
-        <node concept="pkWqt" id="7wcjSRtzVZ0" role="pqm2j">
-          <node concept="3clFbS" id="7wcjSRtzVZ1" role="2VODD2">
-            <node concept="3clFbF" id="7wcjSRtzW7U" role="3cqZAp">
-              <node concept="2OqwBi" id="7wcjSRt$1Qs" role="3clFbG">
-                <node concept="2OqwBi" id="7wcjSRt$0FR" role="2Oq$k0">
-                  <node concept="pncrf" id="7wcjSRt$0jv" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="7wcjSRt$1th" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="7wcjSRt$2sW" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                  <node concept="Xl_RD" id="7wcjSRt$3e3" role="37wK5m">
-                    <property role="Xl_RC" value="operator" />
-                  </node>
+      <node concept="1QoScp" id="3LE5RBPIErq" role="3EZMnx">
+        <property role="1QpmdY" value="true" />
+        <node concept="3F1sOY" id="3LE5RBPIH5T" role="1QoS34">
+          <property role="1cu_pB" value="1" />
+          <ref role="1NtTu8" to="wnzg:3LE5RBPIED3" resolve="overloadedOperator" />
+        </node>
+        <node concept="pkWqt" id="3LE5RBPIErt" role="3e4ffs">
+          <node concept="3clFbS" id="3LE5RBPIErv" role="2VODD2">
+            <node concept="3clFbF" id="3LE5RBPIEYi" role="3cqZAp">
+              <node concept="2OqwBi" id="3LE5RBPIFmI" role="3clFbG">
+                <node concept="pncrf" id="3LE5RBPIEYh" role="2Oq$k0" />
+                <node concept="3TrcHB" id="3LE5RBPIGMR" role="2OqNvi">
+                  <ref role="3TsBF5" to="wnzg:3LE5RBPIDkQ" resolve="isOverloadedOperator" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="11L4FC" id="7wcjSRt$4di" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="3CHQLq" id="7wcjSRt$4A2" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+        <node concept="3F0A7n" id="3LE5RBPMCXb" role="1QoVPY">
+          <property role="1cu_pB" value="2" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
       <node concept="3F0ifn" id="6Q7bJ$$mLHQ" role="3EZMnx">
@@ -609,7 +600,7 @@
   </node>
   <node concept="PKFIW" id="59MAV0yaZn2">
     <property role="TrG5h" value="VisibilityFlag" />
-    <ref role="1XX52x" to="wnzg:4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
+    <ref role="1XX52x" to="wnzg:4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     <node concept="3F0A7n" id="59MAV0ycZT1" role="2wV5jI">
       <ref role="1NtTu8" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
@@ -937,8 +928,8 @@
     <ref role="1XX52x" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
     <node concept="3EZMnI" id="6NtgknWJ3xP" role="2wV5jI">
       <node concept="3F0A7n" id="6NtgknWJ3xZ" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:6NtgknWJ211" resolve="visibility" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+        <ref role="1NtTu8" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
       </node>
       <node concept="PMmxH" id="3OTimPpGcvI" role="3EZMnx">
         <ref role="PMmxG" node="1TorPL4sJdQ" resolve="PureFlag" />
@@ -1386,6 +1377,51 @@
     <node concept="1kHk_G" id="1TorPL4sJdR" role="2wV5jI">
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3LE5RBPIEDm">
+    <property role="3GE5qa" value="method" />
+    <ref role="1XX52x" to="wnzg:3LE5RBPIECT" resolve="OverloadableOperator" />
+    <node concept="3F0A7n" id="3LE5RBPIEDo" role="2wV5jI">
+      <ref role="1NtTu8" to="wnzg:3LE5RBPIECU" resolve="operator" />
+      <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3LE5RBPSwkr">
+    <property role="3GE5qa" value="method" />
+    <ref role="1XX52x" to="wnzg:3LE5RBPQ$rY" resolve="OperatorOverloadDeclaration" />
+    <node concept="3EZMnI" id="3LE5RBPSwkt" role="2wV5jI">
+      <node concept="PMmxH" id="3LE5RBPSwl0" role="3EZMnx">
+        <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
+      </node>
+      <node concept="3F1sOY" id="3LE5RBQ04Gy" role="3EZMnx">
+        <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
+      </node>
+      <node concept="3F0ifn" id="3LE5RBPSwkB" role="3EZMnx">
+        <property role="3F0ifm" value="operator" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0A7n" id="3LE5RBPSwkN" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:3LE5RBPSwkK" resolve="operator" />
+        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+      </node>
+      <node concept="3F0ifn" id="3LE5RBPXoKZ" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+      </node>
+      <node concept="3F2HdR" id="3LE5RBPXoLo" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="x27k:4WTYg$PUiX5" resolve="arguments" />
+        <node concept="l2Vlx" id="3LE5RBPXoLq" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="3LE5RBPXoLU" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+      </node>
+      <node concept="3F1sOY" id="3LE5RBPSwlj" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:3LE5RBPSwl7" resolve="body" />
+      </node>
+      <node concept="l2Vlx" id="3LE5RBPSwkw" role="2iSdaV" />
     </node>
   </node>
 </model>

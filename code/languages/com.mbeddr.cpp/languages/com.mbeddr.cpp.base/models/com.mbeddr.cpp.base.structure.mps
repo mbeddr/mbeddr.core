@@ -10,6 +10,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
+    <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -86,6 +87,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
+    <node concept="1TJgyj" id="3LE5RBPQ$rR" role="1TKVEi">
+      <property role="IQ2ns" value="4353317802390210295" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operatorOverloads" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3LE5RBPQ$rY" resolve="OperatorOverloadDeclaration" />
+    </node>
     <node concept="1TJgyj" id="3UsoL$l5qj8" role="1TKVEi">
       <property role="IQ2ns" value="4511589886097466568" />
       <property role="20lmBu" value="aggregation" />
@@ -149,6 +157,11 @@
     <property role="EcuMT" value="5044697665789421253" />
     <property role="TrG5h" value="IClassMemberDeclaration" />
     <property role="3GE5qa" value="class" />
+    <node concept="1TJgyi" id="2Ai0Gt9ODIG" role="1TKVEl">
+      <property role="IQ2nx" value="2995459757115087788" />
+      <property role="TrG5h" value="visibility" />
+      <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBIrb">
     <property role="EcuMT" value="5044697665789421259" />
@@ -177,11 +190,6 @@
     <property role="EcuMT" value="5044697665789423998" />
     <property role="TrG5h" value="INamedClassMemberDeclaration" />
     <property role="3GE5qa" value="class" />
-    <node concept="1TJgyi" id="2Ai0Gt9ODIG" role="1TKVEl">
-      <property role="IQ2nx" value="2995459757115087788" />
-      <property role="TrG5h" value="visibility" />
-      <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
-    </node>
     <node concept="PrWs8" id="4o2nsMgBJ5Z" role="PrDN$">
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
@@ -245,10 +253,10 @@
       <property role="IQ2nx" value="5679441017213716505" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="7wcjSRtzVE4" role="1TKVEl">
-      <property role="IQ2nx" value="8650376454998047364" />
-      <property role="TrG5h" value="overloadedOperator" />
-      <ref role="AX2Wp" node="45rBLTH8Vrc" resolve="EOverloadableOperator" />
+    <node concept="1TJgyi" id="3LE5RBPIDkQ" role="1TKVEl">
+      <property role="IQ2nx" value="4353317802388133174" />
+      <property role="TrG5h" value="isOverloadedOperator" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="PrWs8" id="4WTYg$PPBc5" role="PzmwI">
       <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
@@ -261,6 +269,13 @@
     </node>
     <node concept="PrWs8" id="5C47DuoDR$z" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
+    </node>
+    <node concept="1TJgyj" id="3LE5RBPIED3" role="1TKVEi">
+      <property role="IQ2ns" value="4353317802388138563" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="overloadedOperator" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="3LE5RBPIECT" resolve="OverloadableOperator" />
     </node>
   </node>
   <node concept="1TIwiD" id="3UsoL$l5qkL">
@@ -380,11 +395,6 @@
     </node>
     <node concept="PrWs8" id="6ddXmWdS2eK" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
-    </node>
-    <node concept="1TJgyi" id="6NtgknWJ211" role="1TKVEl">
-      <property role="IQ2nx" value="7844497894798008385" />
-      <property role="TrG5h" value="visibility" />
-      <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
     </node>
     <node concept="1TJgyj" id="6NtgknWJ214" role="1TKVEi">
       <property role="IQ2ns" value="7844497894798008388" />
@@ -745,6 +755,43 @@
       <property role="1uS6qo" value="[]" />
       <property role="2fHolG" value="arrayCall" />
       <property role="1uS6qv" value="[]" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3LE5RBPIECT">
+    <property role="EcuMT" value="4353317802388138553" />
+    <property role="3GE5qa" value="method" />
+    <property role="TrG5h" value="OverloadableOperator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3LE5RBPIECU" role="1TKVEl">
+      <property role="IQ2nx" value="4353317802388138554" />
+      <property role="TrG5h" value="operator" />
+      <ref role="AX2Wp" node="45rBLTH8Vrc" resolve="EOverloadableOperator" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3LE5RBPQ$rY">
+    <property role="EcuMT" value="4353317802390210302" />
+    <property role="3GE5qa" value="method" />
+    <property role="TrG5h" value="OperatorOverloadDeclaration" />
+    <property role="34LRSv" value="operator" />
+    <property role="R4oN_" value="Overload an operator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3LE5RBPQ$rZ" role="PzmwI">
+      <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="3LE5RBPVqod" role="PzmwI">
+      <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
+    </node>
+    <node concept="1TJgyi" id="3LE5RBPSwkK" role="1TKVEl">
+      <property role="IQ2nx" value="4353317802390717744" />
+      <property role="TrG5h" value="operator" />
+      <ref role="AX2Wp" node="45rBLTH8Vrc" resolve="EOverloadableOperator" />
+    </node>
+    <node concept="1TJgyj" id="3LE5RBPSwl7" role="1TKVEi">
+      <property role="IQ2ns" value="4353317802390717767" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
   </node>
 </model>
