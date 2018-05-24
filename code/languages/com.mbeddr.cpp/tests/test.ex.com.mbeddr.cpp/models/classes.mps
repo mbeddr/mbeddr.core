@@ -2,7 +2,6 @@
 <model ref="r:c7950158-6cef-4f64-956c-820859f3e040(test.ex.com.mbeddr.cpp.classes)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <engage id="236f3e56-2360-4657-9b9d-0cb84f56784d" name="com.mbeddr.cpp.modules.gen" />
     <devkit ref="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" />
   </languages>
@@ -36,7 +35,9 @@
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
+        <property id="3431613015799084476" name="isTest" index="iO3LB" />
+      </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -225,9 +226,10 @@
     </node>
     <node concept="2eOfOl" id="4o2nsMgBpPF" role="2ePNbc">
       <property role="TrG5h" value="Classes" />
+      <property role="iO3LB" value="true" />
       <ref role="3oK8_y" node="3v5DuFDkAwn" resolve="portable" />
       <node concept="2v9HqM" id="45rBLTFpWcv" role="2eOfOg">
-        <ref role="2v9HqP" node="2Ai0Gt9Pvr9" resolve="Classes" />
+        <ref role="2v9HqP" node="2Ai0Gt9Pvr9" resolve="Class" />
       </node>
       <node concept="2v9HqM" id="45rBLTFpWcO" role="2eOfOg">
         <ref role="2v9HqP" node="nbE_$_7VLA" resolve="Extension" />
@@ -250,7 +252,7 @@
     </node>
   </node>
   <node concept="1whW_1" id="2Ai0Gt9Pvr9">
-    <property role="TrG5h" value="Classes" />
+    <property role="TrG5h" value="Class" />
     <node concept="3mBW2U" id="2Ai0Gt9Qxgo" role="N3F5h">
       <property role="TrG5h" value="Counter" />
       <property role="2OOxQR" value="false" />
@@ -856,6 +858,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1whW_1" id="6KmaLbDZjG7">
+    <property role="TrG5h" value="Constructor" />
+    <node concept="3mBW2U" id="6KmaLbDZm15" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="ParentClass" />
     </node>
   </node>
 </model>
