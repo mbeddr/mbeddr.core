@@ -180,6 +180,9 @@
         <property id="2995459757115087788" name="visibility" index="1wg9_F" />
       </concept>
       <concept id="5044697665789421259" name="com.mbeddr.cpp.base.structure.AttributeDeclaration" flags="ng" index="3mBbG7" />
+      <concept id="5044697665789421253" name="com.mbeddr.cpp.base.structure.IClassMemberDeclaration" flags="ng" index="3mBbG9">
+        <property id="2995459757115087788" name="visibility" index="1wg9_G" />
+      </concept>
       <concept id="5044697665789405022" name="com.mbeddr.cpp.base.structure.ClassType" flags="ng" index="3mBfEi">
         <reference id="5044697665789405054" name="clazz" index="3mBfEM" />
       </concept>
@@ -655,6 +658,7 @@
       </node>
       <node concept="1zE6Tr" id="2Ai0Gtaf4eK" role="3mBdys">
         <property role="1zE8bv" value="public" />
+        <property role="1wg9_G" value="public" />
         <node concept="3mBbG7" id="2Ai0Gtaf56M" role="1zE6T_">
           <property role="TrG5h" value="publicField" />
           <node concept="2b32R4" id="2Ai0Gtafpg6" role="lGtFl">
@@ -1140,6 +1144,7 @@
       </node>
       <node concept="1zE6Tr" id="2Ai0GtafK6u" role="3mBdys">
         <property role="1zE8bv" value="protected" />
+        <property role="1wg9_G" value="protected" />
         <node concept="3mBbG7" id="2Ai0GtafK6v" role="1zE6T_">
           <property role="TrG5h" value="protectedField" />
           <node concept="2b32R4" id="2Ai0GtafK6x" role="lGtFl">
