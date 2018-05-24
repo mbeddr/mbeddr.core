@@ -1189,7 +1189,7 @@
   </node>
   <node concept="18kY7G" id="3LE5RBQ5PRC">
     <property role="TrG5h" value="check_OperatorOverloadDeclaration" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="operator" />
     <node concept="3clFbS" id="3LE5RBQ5PRD" role="18ibNy">
       <node concept="3cpWs8" id="3LE5RBQ60b7" role="3cqZAp">
         <node concept="3cpWsn" id="3LE5RBQ60ba" role="3cpWs9">

@@ -2300,7 +2300,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3LE5RBPSwlt">
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="operator" />
     <ref role="13h7C2" to="wnzg:3LE5RBPQ$rY" resolve="OperatorOverloadDeclaration" />
     <node concept="13hLZK" id="3LE5RBPSwlu" role="13h7CW">
       <node concept="3clFbS" id="3LE5RBPSwlv" role="2VODD2">
@@ -2353,6 +2353,42 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="3LE5RBPXnGP" role="3clF45">
+        <ref role="ehGHo" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3LE5RBQvEH$">
+    <property role="3GE5qa" value="operator" />
+    <ref role="13h7C2" to="wnzg:3LE5RBQoIen" resolve="OperatorOverloadPrototype" />
+    <node concept="13hLZK" id="3LE5RBQvEH_" role="13h7CW">
+      <node concept="3clFbS" id="3LE5RBQvEHA" role="2VODD2">
+        <node concept="3clFbF" id="3LE5RBQvEHK" role="3cqZAp">
+          <node concept="37vLTI" id="3LE5RBQvFTT" role="3clFbG">
+            <node concept="Xl_RD" id="3LE5RBQvFUr" role="37vLTx">
+              <property role="Xl_RC" value="operator prototype" />
+            </node>
+            <node concept="2OqwBi" id="3LE5RBQvEYI" role="37vLTJ">
+              <node concept="13iPFW" id="3LE5RBQvEHJ" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3LE5RBQvF$C" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="3LE5RBQwveZ" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getStatementList" />
+      <ref role="13i0hy" to="qd6m:71UKpntnl7S" resolve="getStatementList" />
+      <node concept="3Tm1VV" id="3LE5RBQwvf0" role="1B3o_S" />
+      <node concept="3clFbS" id="3LE5RBQwvf3" role="3clF47">
+        <node concept="3cpWs6" id="3LE5RBQwvjs" role="3cqZAp">
+          <node concept="10Nm6u" id="3LE5RBQwvj_" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3LE5RBQwvf4" role="3clF45">
         <ref role="ehGHo" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
       </node>
     </node>

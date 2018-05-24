@@ -349,8 +349,8 @@
                                       <node concept="37vLTw" id="3n$8_XbdQ_J" role="2Oq$k0">
                                         <ref role="3cqZAo" node="3n$8_XbdPYR" resolve="it" />
                                       </node>
-                                      <node concept="3TrcHB" id="3n$8_XbdSjK" role="2OqNvi">
-                                        <ref role="3TsBF5" to="wnzg:6NtgknWJ211" resolve="visibility" />
+                                      <node concept="3TrcHB" id="3LE5RBQnZEZ" role="2OqNvi">
+                                        <ref role="3TsBF5" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
                                       </node>
                                     </node>
                                     <node concept="3t7uKx" id="3n$8_XbdUrW" role="2OqNvi">
@@ -459,7 +459,7 @@
                 <ref role="3cqZAo" node="7DDmkz1K87" resolve="pClass" />
               </node>
               <node concept="3Tsc0h" id="7DDmkz1Rwb" role="2OqNvi">
-                <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
+                <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
               </node>
             </node>
             <node concept="3clFbS" id="7DDmkz1P_i" role="2LFqv$">
@@ -479,7 +479,7 @@
                             <ref role="2Gs0qQ" node="7DDmkz1P_e" resolve="parentC" />
                           </node>
                           <node concept="3TrEf2" id="7DDmkz1TIr" role="2OqNvi">
-                            <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                            <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
                           </node>
                         </node>
                         <node concept="2qgKlT" id="7DDmkz1Voy" role="2OqNvi">

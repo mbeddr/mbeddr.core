@@ -62,12 +62,17 @@
         <property id="3188920472788366141" name="isVirtual" index="hL25V" />
       </concept>
       <concept id="4353317802390210302" name="com.mbeddr.cpp.base.structure.OperatorOverloadDeclaration" flags="ng" index="39G567">
-        <property id="4353317802390717744" name="operator" index="39y199" />
         <child id="4353317802390717767" name="body" index="39y18Y" />
+      </concept>
+      <concept id="4353317802399163291" name="com.mbeddr.cpp.base.structure.OperatorOverloadSignature" flags="ng" index="3a2fjy">
+        <property id="4353317802399163336" name="operator" index="3a2fiL" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <property id="5478191656157682870" name="static" index="gNYVZ" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
+      </concept>
+      <concept id="5044697665789421253" name="com.mbeddr.cpp.base.structure.IClassMemberDeclaration" flags="ng" index="3mBbG9">
+        <property id="2995459757115087788" name="visibility" index="1wg9_F" />
       </concept>
       <concept id="5044697665789405022" name="com.mbeddr.cpp.base.structure.ClassType" flags="ng" index="3mBfEi">
         <reference id="5044697665789405054" name="clazz" index="3mBfEM" />
@@ -166,7 +171,8 @@
       <node concept="3u$6M4" id="3LE5RBPVqgq" role="3mBdys" />
       <node concept="39G567" id="3LE5RBQaLPO" role="3mBdys">
         <property role="TrG5h" value="operator" />
-        <property role="39y199" value="+" />
+        <property role="1wg9_F" value="public" />
+        <property role="3a2fiL" value="%" />
         <node concept="3XIRFW" id="3LE5RBQaLPP" role="39y18Y">
           <node concept="2BFjQ_" id="3LE5RBQaLT8" role="3XIRFZ">
             <node concept="3ZUYvv" id="3LE5RBQaLTG" role="2BFjQA">

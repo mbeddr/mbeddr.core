@@ -20,6 +20,7 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
+    <import index="gkp7" ref="r:a6defc8b-c4d9-46c9-a221-6d68fa6905e1(com.mbeddr.cpp.base.editor)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -1357,7 +1358,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3LE5RBPSwkr">
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="operator" />
     <ref role="1XX52x" to="wnzg:3LE5RBPQ$rY" resolve="OperatorOverloadDeclaration" />
     <node concept="3EZMnI" id="3LE5RBPSwkt" role="2wV5jI">
       <node concept="PMmxH" id="3LE5RBPSwl0" role="3EZMnx">
@@ -1367,6 +1368,20 @@
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
         <ref role="1NtTu8" to="wnzg:3LE5RBQ6qAk" resolve="inline" />
       </node>
+      <node concept="PMmxH" id="3LE5RBQoSTw" role="3EZMnx">
+        <ref role="PMmxG" node="3LE5RBQoIeG" resolve="operatorOverloadSignature" />
+      </node>
+      <node concept="3F1sOY" id="3LE5RBPSwlj" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:3LE5RBPSwl7" resolve="body" />
+      </node>
+      <node concept="l2Vlx" id="3LE5RBPSwkw" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="3LE5RBQoIeG">
+    <property role="3GE5qa" value="operator" />
+    <property role="TrG5h" value="operatorOverloadSignature" />
+    <ref role="1XX52x" to="wnzg:3LE5RBQoIer" resolve="OperatorOverloadSignature" />
+    <node concept="3EZMnI" id="3LE5RBQoIeI" role="2wV5jI">
       <node concept="3F1sOY" id="3LE5RBQ04Gy" role="3EZMnx">
         <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
       </node>
@@ -1375,8 +1390,8 @@
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="3F0A7n" id="3LE5RBPSwkN" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:3LE5RBPSwkK" resolve="operator" />
         <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+        <ref role="1NtTu8" to="wnzg:3LE5RBQoIf8" resolve="operator" />
       </node>
       <node concept="3F0ifn" id="3LE5RBPXoKZ" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1387,14 +1402,25 @@
         <ref role="1NtTu8" to="x27k:4WTYg$PUiX5" resolve="arguments" />
         <node concept="l2Vlx" id="3LE5RBPXoLq" role="2czzBx" />
       </node>
-      <node concept="3F0ifn" id="3LE5RBPXoLU" role="3EZMnx">
+      <node concept="3F0ifn" id="3LE5RBQrRlF" role="3EZMnx">
         <property role="3F0ifm" value=")" />
         <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
       </node>
-      <node concept="3F1sOY" id="3LE5RBPSwlj" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:3LE5RBPSwl7" resolve="body" />
+      <node concept="l2Vlx" id="3LE5RBQoIeL" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3LE5RBQtFM7">
+    <property role="3GE5qa" value="operator" />
+    <ref role="1XX52x" to="wnzg:3LE5RBQoIen" resolve="OperatorOverloadPrototype" />
+    <node concept="3EZMnI" id="3LE5RBQtFMe" role="2wV5jI">
+      <node concept="PMmxH" id="3LE5RBQtFMo" role="3EZMnx">
+        <ref role="PMmxG" node="3LE5RBQoIeG" resolve="operatorOverloadSignature" />
       </node>
-      <node concept="l2Vlx" id="3LE5RBPSwkw" role="2iSdaV" />
+      <node concept="3F0ifn" id="3LE5RBQtFMw" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+      </node>
+      <node concept="l2Vlx" id="3LE5RBQtFMh" role="2iSdaV" />
     </node>
   </node>
 </model>
