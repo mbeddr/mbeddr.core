@@ -22,10 +22,12 @@
       </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1192116978809" name="javaIdentifier" index="2fHolG" />
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
@@ -242,6 +244,11 @@
       <property role="TrG5h" value="inline" />
       <property role="IQ2nx" value="5679441017213716505" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7wcjSRtzVE4" role="1TKVEl">
+      <property role="IQ2nx" value="8650376454998047364" />
+      <property role="TrG5h" value="overloadedOperator" />
+      <ref role="AX2Wp" node="45rBLTH8Vrc" resolve="EOverloadableOperator" />
     </node>
     <node concept="PrWs8" id="4WTYg$PPBc5" role="PzmwI">
       <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
@@ -536,6 +543,208 @@
       <property role="IQ2nx" value="3188920472790477826" />
       <property role="TrG5h" value="pure" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="45rBLTH8Vrc">
+    <property role="3GE5qa" value="method" />
+    <property role="TrG5h" value="EOverloadableOperator" />
+    <property role="3lZH7k" value="custom" />
+    <property role="PDuV0" value="false" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="45rBLTH8Vrd" role="M5hS2">
+      <property role="1uS6qo" value="+" />
+      <property role="1uS6qv" value="+" />
+      <property role="2fHolG" value="plus" />
+    </node>
+    <node concept="M4N5e" id="45rBLTH8Vs2" role="M5hS2">
+      <property role="1uS6qo" value="-" />
+      <property role="1uS6qv" value="-" />
+      <property role="2fHolG" value="minus" />
+    </node>
+    <node concept="M4N5e" id="45rBLTH8Vsp" role="M5hS2">
+      <property role="1uS6qv" value="*" />
+      <property role="1uS6qo" value="*" />
+      <property role="2fHolG" value="multiply" />
+    </node>
+    <node concept="M4N5e" id="45rBLTH8VsV" role="M5hS2">
+      <property role="1uS6qo" value="/" />
+      <property role="2fHolG" value="divide" />
+      <property role="1uS6qv" value="/" />
+    </node>
+    <node concept="M4N5e" id="45rBLTH8Vt4" role="M5hS2">
+      <property role="1uS6qo" value="%" />
+      <property role="2fHolG" value="modulus" />
+      <property role="1uS6qv" value="%" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEKVC" role="M5hS2">
+      <property role="1uS6qo" value="^" />
+      <property role="2fHolG" value="power" />
+      <property role="1uS6qv" value="^" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEKVP" role="M5hS2">
+      <property role="1uS6qo" value="&amp;" />
+      <property role="2fHolG" value="AND" />
+      <property role="1uS6qv" value="&amp;" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEKW4" role="M5hS2">
+      <property role="1uS6qo" value="|" />
+      <property role="2fHolG" value="OR" />
+      <property role="1uS6qv" value="|" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEKWl" role="M5hS2">
+      <property role="1uS6qo" value="~" />
+      <property role="2fHolG" value="NOT" />
+      <property role="1uS6qv" value="~" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEKWX" role="M5hS2">
+      <property role="1uS6qo" value="=" />
+      <property role="2fHolG" value="setEqual" />
+      <property role="1uS6qv" value="=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEKWC" role="M5hS2">
+      <property role="1uS6qo" value="!" />
+      <property role="2fHolG" value="negate" />
+      <property role="1uS6qv" value="!" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEKXk" role="M5hS2">
+      <property role="1uS6qo" value="&lt;" />
+      <property role="2fHolG" value="lessThan" />
+      <property role="1uS6qv" value="&lt;" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEKXH" role="M5hS2">
+      <property role="1uS6qo" value="&gt;" />
+      <property role="2fHolG" value="greaterThan" />
+      <property role="1uS6qv" value="&gt;" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEL44" role="M5hS2">
+      <property role="1uS6qo" value="&lt;&lt;" />
+      <property role="2fHolG" value="bitShiftLeft" />
+      <property role="1uS6qv" value="&lt;&lt;" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEL4P" role="M5hS2">
+      <property role="1uS6qo" value="&gt;&gt;" />
+      <property role="2fHolG" value="bitShiftRight" />
+      <property role="1uS6qv" value="&gt;&gt;" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEKZ4" role="M5hS2">
+      <property role="1uS6qo" value="+=" />
+      <property role="2fHolG" value="plusEq" />
+      <property role="1uS6qv" value="+=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEKZ_" role="M5hS2">
+      <property role="1uS6qo" value="-=" />
+      <property role="2fHolG" value="minusEq" />
+      <property role="1uS6qv" value="-=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEL08" role="M5hS2">
+      <property role="1uS6qo" value="*=" />
+      <property role="2fHolG" value="multiplyEq" />
+      <property role="1uS6qv" value="*=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEL0H" role="M5hS2">
+      <property role="1uS6qo" value="/=" />
+      <property role="2fHolG" value="divideEq" />
+      <property role="1uS6qv" value="/=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEL1k" role="M5hS2">
+      <property role="1uS6qo" value="%=" />
+      <property role="2fHolG" value="modulusEq" />
+      <property role="1uS6qv" value="%=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEL1X" role="M5hS2">
+      <property role="1uS6qo" value="^=" />
+      <property role="2fHolG" value="powerEq" />
+      <property role="1uS6qv" value="^=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEL2C" role="M5hS2">
+      <property role="1uS6qo" value="&amp;=" />
+      <property role="2fHolG" value="ANDEq" />
+      <property role="1uS6qv" value="&amp;=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEL3l" role="M5hS2">
+      <property role="1uS6qo" value="|=" />
+      <property role="2fHolG" value="OREq" />
+      <property role="1uS6qv" value="|=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHELiN" role="M5hS2">
+      <property role="1uS6qo" value="==" />
+      <property role="2fHolG" value="compareEqual" />
+      <property role="1uS6qv" value="==" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHELjI" role="M5hS2">
+      <property role="1uS6qo" value="!=" />
+      <property role="2fHolG" value="compareNotEqual" />
+      <property role="1uS6qv" value="!=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHELt7" role="M5hS2">
+      <property role="1uS6qo" value="&lt;=&gt;" />
+      <property role="2fHolG" value="threeWayComparison" />
+      <property role="1uS6qv" value="&lt;=&gt;" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEKY_" role="M5hS2">
+      <property role="1uS6qo" value="&gt;=" />
+      <property role="2fHolG" value="greaterEqThan" />
+      <property role="1uS6qv" value="&gt;=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEKY8" role="M5hS2">
+      <property role="1uS6qo" value="&lt;=" />
+      <property role="2fHolG" value="lessEqThan" />
+      <property role="1uS6qv" value="&lt;=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEL5C" role="M5hS2">
+      <property role="1uS6qo" value="&lt;&lt;=" />
+      <property role="2fHolG" value="bitShiftLeftAssignement" />
+      <property role="1uS6qv" value="&lt;&lt;=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEL6t" role="M5hS2">
+      <property role="1uS6qo" value="&gt;&gt;=" />
+      <property role="2fHolG" value="bitShiftRightAssignement" />
+      <property role="1uS6qv" value="&gt;&gt;=" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHELu4" role="M5hS2">
+      <property role="1uS6qo" value="&amp;&amp;" />
+      <property role="2fHolG" value="logicalAnd" />
+      <property role="1uS6qv" value="&amp;&amp;" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHELv3" role="M5hS2">
+      <property role="1uS6qo" value="||" />
+      <property role="2fHolG" value="logicalOr" />
+      <property role="1uS6qv" value="||" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHELw4" role="M5hS2">
+      <property role="1uS6qo" value="++" />
+      <property role="2fHolG" value="increment" />
+      <property role="1uS6qv" value="++" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHELx7" role="M5hS2">
+      <property role="1uS6qo" value="--" />
+      <property role="2fHolG" value="decrement" />
+      <property role="1uS6qv" value="--" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHELyc" role="M5hS2">
+      <property role="1uS6qo" value="," />
+      <property role="2fHolG" value="comma" />
+      <property role="1uS6qv" value="," />
+    </node>
+    <node concept="M4N5e" id="45rBLTHELzj" role="M5hS2">
+      <property role="1uS6qo" value="-&gt;" />
+      <property role="2fHolG" value="structureDereference" />
+      <property role="1uS6qv" value="-&gt;" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEL$s" role="M5hS2">
+      <property role="1uS6qo" value="-&gt;*" />
+      <property role="2fHolG" value="pointerToMember" />
+      <property role="1uS6qv" value="-&gt;*" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHEL_B" role="M5hS2">
+      <property role="1uS6qo" value="()" />
+      <property role="2fHolG" value="functionCall" />
+      <property role="1uS6qv" value="()" />
+    </node>
+    <node concept="M4N5e" id="45rBLTHELAO" role="M5hS2">
+      <property role="1uS6qo" value="[]" />
+      <property role="2fHolG" value="arrayCall" />
+      <property role="1uS6qv" value="[]" />
     </node>
   </node>
 </model>

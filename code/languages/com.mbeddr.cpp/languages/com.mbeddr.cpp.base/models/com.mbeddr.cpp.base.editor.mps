@@ -23,6 +23,7 @@
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -223,6 +224,7 @@
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -507,6 +509,35 @@
         <property role="1cu_pB" value="2" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <ref role="1k5W1q" to="r4b4:5v_KyvNCJ0N" resolve="StructuralIdentifier" />
+      </node>
+      <node concept="3F0A7n" id="7wcjSRtzVEb" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:7wcjSRtzVE4" resolve="overloadedOperator" />
+        <node concept="pkWqt" id="7wcjSRtzVZ0" role="pqm2j">
+          <node concept="3clFbS" id="7wcjSRtzVZ1" role="2VODD2">
+            <node concept="3clFbF" id="7wcjSRtzW7U" role="3cqZAp">
+              <node concept="2OqwBi" id="7wcjSRt$1Qs" role="3clFbG">
+                <node concept="2OqwBi" id="7wcjSRt$0FR" role="2Oq$k0">
+                  <node concept="pncrf" id="7wcjSRt$0jv" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="7wcjSRt$1th" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="7wcjSRt$2sW" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="7wcjSRt$3e3" role="37wK5m">
+                    <property role="Xl_RC" value="operator" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="11L4FC" id="7wcjSRt$4di" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3CHQLq" id="7wcjSRt$4A2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="6Q7bJ$$mLHQ" role="3EZMnx">
         <property role="3F0ifm" value="(" />
