@@ -315,7 +315,7 @@
                   <node concept="pncrf" id="1rolTiuN7ov" role="2Oq$k0" />
                   <node concept="2Xjw5R" id="1rolTiuN8QK" role="2OqNvi">
                     <node concept="1xMEDy" id="1rolTiuN8QM" role="1xVPHs">
-                      <node concept="chp4Y" id="1rolTiuN97A" role="ri$Ld">
+                      <node concept="chp4Y" id="6gFj6grTlaN" role="ri$Ld">
                         <ref role="cht4Q" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
                       </node>
                     </node>
