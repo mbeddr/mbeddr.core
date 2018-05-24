@@ -214,29 +214,6 @@
   </node>
   <node concept="1whW_1" id="6KmaLbE81Ky">
     <property role="TrG5h" value="Virtual" />
-    <node concept="3mBW2U" id="7wcjSRt4RHH" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="TestClass" />
-      <node concept="3mB1cK" id="7wcjSRt4RJD" role="3mBdys">
-        <property role="1wg9_F" value="private" />
-        <property role="gNYVZ" value="false" />
-        <property role="TrG5h" value="someMethod" />
-        <node concept="26Vqph" id="7wcjSRt4RJO" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="3XIRFW" id="7wcjSRt4RKa" role="3XIRFX">
-          <node concept="2BFjQ_" id="7wcjSRt4RKF" role="3XIRFZ">
-            <node concept="3TlMh9" id="7wcjSRt4RKX" role="2BFjQA">
-              <property role="2hmy$m" value="0" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="7wcjSRt4RFM" role="N3F5h">
-      <property role="TrG5h" value="empty_1527146094309_2" />
-    </node>
     <node concept="3mBW2U" id="6KmaLbE81K$" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="SomeClass" />
