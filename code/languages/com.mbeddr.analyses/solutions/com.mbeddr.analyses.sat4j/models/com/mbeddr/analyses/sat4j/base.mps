@@ -108,9 +108,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -197,9 +195,7 @@
       <property role="TrG5h" value="DEBUG" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tmbuc" id="tSjOfAkl_j" role="1B3o_S" />
-      <node concept="3clFbT" id="tSjOfAbFR2" role="33vP2m">
-        <property role="3clFbU" value="true" />
-      </node>
+      <node concept="3clFbT" id="tSjOfAbFR2" role="33vP2m" />
       <node concept="10P_77" id="tSjOfAbFQ7" role="1tU5fm" />
       <node concept="NWlO9" id="tSjOfAhtAN" role="lGtFl">
         <property role="NWlVz" value="Should we debug?" />

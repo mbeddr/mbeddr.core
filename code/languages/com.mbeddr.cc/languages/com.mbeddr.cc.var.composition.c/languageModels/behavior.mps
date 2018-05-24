@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -112,6 +112,10 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
@@ -135,10 +139,7 @@
       </concept>
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -243,8 +244,8 @@
               <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
             </node>
             <node concept="1PxgMI" id="5B$wwdfc5Gx" role="33vP2m">
-              <ref role="1PxNhF" to="x27k:5_l8w1EmTvx" resolve="Function" />
-              <node concept="37vLTw" id="5B$wwdfc5Gy" role="1PxMeX">
+              <ref role="1m5ApE" to="x27k:5_l8w1EmTvx" resolve="Function" />
+              <node concept="37vLTw" id="5B$wwdfc5Gy" role="1m5AlR">
                 <ref role="3cqZAo" node="5B$wwdfbwwl" resolve="matchNode" />
               </node>
             </node>
@@ -257,8 +258,8 @@
               <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
             </node>
             <node concept="1PxgMI" id="5B$wwdfc8CN" role="33vP2m">
-              <ref role="1PxNhF" to="x27k:5_l8w1EmTvx" resolve="Function" />
-              <node concept="37vLTw" id="5B$wwdfc8CO" role="1PxMeX">
+              <ref role="1m5ApE" to="x27k:5_l8w1EmTvx" resolve="Function" />
+              <node concept="37vLTw" id="5B$wwdfc8CO" role="1m5AlR">
                 <ref role="3cqZAo" node="5B$wwdfbwwj" resolve="target" />
               </node>
             </node>
@@ -560,8 +561,8 @@
                               <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                               <node concept="2OqwBi" id="5B$wwdfkQtb" role="37wK5m">
                                 <node concept="1PxgMI" id="5B$wwdfkQtc" role="2Oq$k0">
-                                  <ref role="1PxNhF" to="xr8g:5B$wwdfjpRz" resolve="ReplaceHookOp" />
-                                  <node concept="2OqwBi" id="5B$wwdfkQtd" role="1PxMeX">
+                                  <ref role="1m5ApE" to="xr8g:5B$wwdfjpRz" resolve="ReplaceHookOp" />
+                                  <node concept="2OqwBi" id="5B$wwdfkQtd" role="1m5AlR">
                                     <node concept="13iPFW" id="5B$wwdfkQte" role="2Oq$k0" />
                                     <node concept="3TrEf2" id="5B$wwdfkQtf" role="2OqNvi">
                                       <ref role="3Tt5mk" to="xr8g:5B$wwdfbsik" />

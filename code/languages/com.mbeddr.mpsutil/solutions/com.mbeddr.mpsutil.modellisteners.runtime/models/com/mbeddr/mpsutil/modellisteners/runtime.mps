@@ -443,9 +443,8 @@
             </node>
           </node>
           <node concept="2OqwBi" id="52ZF9D3g4gR" role="2GsD0m">
-            <node concept="2YIFZM" id="52ZF9D3g4eU" role="2Oq$k0">
-              <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+            <node concept="37vLTw" id="7fP7o0Yu$Lh" role="2Oq$k0">
+              <ref role="3cqZAo" node="7fP7o0Yux8M" resolve="repo" />
             </node>
             <node concept="liA8E" id="52ZF9D3g4tz" role="2OqNvi">
               <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules():java.lang.Iterable" resolve="getModules" />
@@ -456,6 +455,12 @@
           <node concept="1rXfSq" id="52ZF9D3gppY" role="3clFbG">
             <ref role="37wK5l" node="52ZF9D39BwV" resolve="updateListeners" />
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7fP7o0Yux8M" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="7fP7o0Yux8L" role="1tU5fm">
+          <ref role="3uigEE" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
         </node>
       </node>
     </node>

@@ -2,7 +2,7 @@
 <model ref="r:491a72d0-a89c-45f5-92ff-c5c32c0ab953(com.mbeddr.mpsutil.margincell.editor.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -232,7 +232,7 @@
         <ref role="1k5W1q" to="tpc5:hF4yUZ8" resolve="header" />
       </node>
       <node concept="1iCGBv" id="5q2yETTclK" role="3EZMnx">
-        <ref role="1NtTu8" to="tkb5:5q2yETTckU" />
+        <ref role="1NtTu8" to="tkb5:5q2yETTckU" resolve="styleClass" />
         <node concept="1sVBvm" id="5q2yETTclL" role="1sWHZn">
           <node concept="1HlG4h" id="5q2yETTclM" role="2wV5jI">
             <node concept="1HfYo3" id="5q2yETTclN" role="1HlULh">
@@ -256,7 +256,7 @@
     </node>
     <node concept="3EZMnI" id="5q2yETTclV" role="2wV5jI">
       <node concept="3F1sOY" id="5q2yETTclW" role="3EZMnx">
-        <ref role="1NtTu8" to="tkb5:5q2yETTckS" />
+        <ref role="1NtTu8" to="tkb5:5q2yETTckS" resolve="content" />
       </node>
       <node concept="VPM3Z" id="5q2yETTclX" role="3F10Kt">
         <property role="VOm3f" value="false" />
@@ -268,7 +268,7 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="1iCGBv" id="5q2yETTcm0" role="3EZMnx">
-        <ref role="1NtTu8" to="tkb5:5q2yETTckT" />
+        <ref role="1NtTu8" to="tkb5:5q2yETTckT" resolve="marginContents" />
         <node concept="1sVBvm" id="5q2yETTcm1" role="1sWHZn">
           <node concept="3F0A7n" id="5q2yETTcm2" role="2wV5jI">
             <property role="1Intyy" value="true" />

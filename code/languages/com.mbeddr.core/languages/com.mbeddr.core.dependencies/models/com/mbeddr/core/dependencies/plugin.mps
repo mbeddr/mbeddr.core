@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -194,6 +194,10 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -201,10 +205,7 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -308,7 +309,7 @@
                           <ref role="3cqZAo" node="6o2p2Z0FkWN" resolve="it" />
                         </node>
                         <node concept="3TrEf2" id="6o2p2Z0FkWM" role="2OqNvi">
-                          <ref role="3Tt5mk" to="clbe:5jyom5fO9Co" />
+                          <ref role="3Tt5mk" to="clbe:5jyom5fO9Co" resolve="typeDef" />
                         </node>
                       </node>
                     </node>
@@ -359,7 +360,7 @@
                           <ref role="3cqZAo" node="6o2p2Z0FkYr" resolve="it" />
                         </node>
                         <node concept="3TrEf2" id="6o2p2Z0FkYq" role="2OqNvi">
-                          <ref role="3Tt5mk" to="clbe:5yYXyc4Z0CT" />
+                          <ref role="3Tt5mk" to="clbe:5yYXyc4Z0CT" resolve="struct" />
                         </node>
                       </node>
                     </node>
@@ -410,7 +411,7 @@
                           <ref role="3cqZAo" node="6o2p2Z0FkYM" resolve="it" />
                         </node>
                         <node concept="3TrEf2" id="6o2p2Z0FkYL" role="2OqNvi">
-                          <ref role="3Tt5mk" to="clbe:56ytRgsLog7" />
+                          <ref role="3Tt5mk" to="clbe:56ytRgsLog7" resolve="union" />
                         </node>
                       </node>
                     </node>
@@ -461,7 +462,7 @@
                           <ref role="3cqZAo" node="6o2p2Z0FkZ9" resolve="it" />
                         </node>
                         <node concept="3TrEf2" id="6o2p2Z0FkZ8" role="2OqNvi">
-                          <ref role="3Tt5mk" to="clbe:7D99css6O16" />
+                          <ref role="3Tt5mk" to="clbe:7D99css6O16" resolve="enum" />
                         </node>
                       </node>
                     </node>
@@ -1056,8 +1057,8 @@
                       <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
                       <node concept="2OqwBi" id="6o2p2Z1qMpD" role="37wK5m">
                         <node concept="1PxgMI" id="6o2p2Z1qMpE" role="2Oq$k0">
-                          <ref role="1PxNhF" to="tpck:h0TrEE$" resolve="INamedConcept" />
-                          <node concept="2GrUjf" id="6o2p2Z1qMpF" role="1PxMeX">
+                          <ref role="1m5ApE" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                          <node concept="2GrUjf" id="6o2p2Z1qMpF" role="1m5AlR">
                             <ref role="2Gs0qQ" node="6o2p2Z1qMpm" resolve="n" />
                           </node>
                         </node>

@@ -2,7 +2,8 @@
 <model ref="r:a2e68184-e5ff-4dfa-983c-d957a5690db9(com.mbeddr.analyses.cbmc.statemachines.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,8 +21,8 @@
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
@@ -31,6 +32,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -48,18 +50,19 @@
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="StatemachineCBMCAnalysis" />
     <property role="34LRSv" value="State Machine Analysis" />
-    <property role="1pbfSe" value="2095464004" />
+    <property role="EcuMT" value="6085839724192268104" />
     <ref role="1TJDcQ" to="q5q6:7Bqs07i8Hdj" resolve="CProverBasedMbeddrAnalysis" />
     <node concept="1TJgyj" id="5hPfJKCsfX9" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="satemachine" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6085839724192268105" />
       <ref role="20lvS9" to="clqz:50Lk78xBr9L" resolve="Statemachine" />
     </node>
   </node>
   <node concept="1TIwiD" id="5hPfJKCw7Id">
     <property role="TrG5h" value="StatemachineCheckAttribute" />
-    <property role="1pbfSe" value="2096478857" />
+    <property role="EcuMT" value="6085839724193282957" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="5hPfJKCw7Ie" role="lGtFl">
       <property role="Hh88m" value="checked" />

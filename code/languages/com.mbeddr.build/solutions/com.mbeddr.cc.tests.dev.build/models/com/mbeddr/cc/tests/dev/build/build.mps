@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
   </languages>
   <imports>
@@ -134,7 +134,7 @@
     </node>
     <node concept="2_Ic$z" id="2tUvrc9VMMN" role="3989C9">
       <property role="2_GNG2" value="2048" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
     </node>
     <node concept="1wNqPr" id="2B1T7v1mPqn" role="3989C9">
@@ -284,12 +284,6 @@
       <ref role="1l3spb" to="p6ld:4i9pOwKTFVe" resolve="mbeddr" />
       <node concept="398BVA" id="2coa6XmoAJN" role="2JcizS">
         <ref role="398BVh" node="6RmoJr95Has" resolve="mbeddr.artifacts" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="4hvHh3QXKNz" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QXKSB" role="2JcizS">
-        <ref role="398BVh" node="4hvHh3QXKHO" resolve="platform.sl-all" />
       </node>
     </node>
     <node concept="1l3spV" id="7eF9rfAnzV1" role="1l3spN">
@@ -457,7 +451,7 @@
     </node>
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="2tMMEJ5g9j1" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -586,12 +580,6 @@
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="6RmoJr9tcTw" role="2JcizS">
         <ref role="398BVh" node="4AnCPexDnpL" resolve="platform.artifacts" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="4hvHh3QXKkA" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
-      <node concept="398BVA" id="4hvHh3QXKqM" role="2JcizS">
-        <ref role="398BVh" node="2Xjt3l5c8Xb" resolve="platform.sl-all" />
       </node>
     </node>
     <node concept="1l3spV" id="7eF9rfAnzYV" role="1l3spN">

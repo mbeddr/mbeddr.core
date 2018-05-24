@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
   </languages>
   <imports>
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
@@ -148,7 +148,7 @@
     <node concept="2_Ic$z" id="7OyG8hrcgea" role="3989C9">
       <property role="2_Ic$$" value="true" />
       <property role="2_GNG2" value="6096" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="" />
     </node>
     <node concept="m$_wf" id="1YLj_r8S1Mc" role="3989C9">
       <property role="m$_wk" value="yourplugin" />

@@ -2,20 +2,21 @@
 <model ref="r:071dfb19-bba7-4a45-a209-478de09a1fc8(com.mbeddr.analyses.cbmc.concurrency.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
-    <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -29,6 +30,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -42,32 +44,34 @@
     <property role="TrG5h" value="AssertSeq" />
     <property role="34LRSv" value="assert_seq" />
     <property role="R4oN_" value="this code runs only on one thread" />
-    <property role="1pbfSe" value="834314572" />
+    <property role="EcuMT" value="325797382106458702" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="PrWs8" id="3V3CJZuMTCa" role="PzmwI">
-      <ref role="PrY4T" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
     </node>
   </node>
   <node concept="1TIwiD" id="3V3CJZuJLdS">
     <property role="TrG5h" value="HappensAfterPair" />
     <property role="34LRSv" value="happens_after_pair" />
     <property role="R4oN_" value="checks if a portion of code happens after another one" />
-    <property role="1pbfSe" value="495105655" />
+    <property role="EcuMT" value="4522637670647534456" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="3V3CJZuKQVQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="first" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="4522637670647820022" />
       <ref role="20lvS9" to="x27k:5HTuIUPB$3z" resolve="LabelStatement" />
     </node>
     <node concept="1TJgyj" id="3V3CJZuKQVX" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="second" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="4522637670647820029" />
       <ref role="20lvS9" to="x27k:5HTuIUPB$3z" resolve="LabelStatement" />
     </node>
     <node concept="PrWs8" id="3V3CJZuMTCN" role="PzmwI">
-      <ref role="PrY4T" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
+      <ref role="PrY4T" to="pyey:3V3CJZuMScE" resolve="IAssertLyike" />
     </node>
   </node>
 </model>

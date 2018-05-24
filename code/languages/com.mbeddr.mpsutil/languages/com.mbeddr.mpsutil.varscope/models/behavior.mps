@@ -215,6 +215,20 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="1jrHnBBjdKu" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="enforceUniqueNamesAmongContributedScopeElements" />
+      <node concept="3Tm1VV" id="1jrHnBBjdKv" role="1B3o_S" />
+      <node concept="10P_77" id="1jrHnBBje2X" role="3clF45" />
+      <node concept="3clFbS" id="1jrHnBBjdKx" role="3clF47">
+        <node concept="3cpWs6" id="1jrHnBBje5q" role="3cqZAp">
+          <node concept="3clFbT" id="1jrHnBBje5w" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="2tBHhziI8iF" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />

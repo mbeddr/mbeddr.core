@@ -2,7 +2,8 @@
 <model ref="r:ff7cab72-4f58-4133-a2c4-5d907d3fafb0(com.mbeddr.mpsutil.lang.plugin.extensions.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -21,8 +22,8 @@
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -34,12 +35,14 @@
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -52,24 +55,27 @@
   <node concept="1TIwiD" id="3kpOq3PYAGc">
     <property role="TrG5h" value="AddWithConstantArchor" />
     <property role="34LRSv" value="add with const archor" />
-    <property role="1pbfSe" value="722746540" />
+    <property role="EcuMT" value="3826319847679748876" />
     <ref role="1TJDcQ" to="tp4k:hwtT98d" resolve="ModificationStatement" />
     <node concept="1TJgyi" id="3kpOq3PZvMK" role="1TKVEl">
       <property role="TrG5h" value="archor" />
+      <property role="IQ2nx" value="3826319847679982768" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="2BR5zyhBNty" role="1TKVEl">
       <property role="TrG5h" value="anchor" />
+      <property role="IQ2nx" value="3023910107019687778" />
       <ref role="AX2Wp" node="2BR5zyhBNt_" resolve="AnchorEnum" />
     </node>
   </node>
   <node concept="1TIwiD" id="1B5fOaAYp$e">
-    <property role="1pbfSe" value="1061234608" />
     <property role="TrG5h" value="AddToGroupIdAnchor" />
     <property role="34LRSv" value="add using group id" />
+    <property role="EcuMT" value="1856959976861964558" />
     <ref role="1TJDcQ" node="3kpOq3PYAGc" resolve="AddWithConstantArchor" />
     <node concept="1TJgyi" id="1B5fOaAYp$B" role="1TKVEl">
       <property role="TrG5h" value="groupId" />
+      <property role="IQ2nx" value="1856959976861964583" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -94,14 +100,15 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3ItNAtJe66x">
-    <property role="1pbfSe" value="1428803576" />
     <property role="TrG5h" value="PinTabOperation" />
     <property role="34LRSv" value="pinTab" />
+    <property role="EcuMT" value="4295816563224240545" />
     <ref role="1TJDcQ" to="tp4k:71t2ztIwe1c" resolve="TabbedToolOperation" />
     <node concept="1TJgyj" id="618UJ37zUOg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="componentExpression" />
       <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="6938053545825381648" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="3ItNAtJe686" role="PzmwI">

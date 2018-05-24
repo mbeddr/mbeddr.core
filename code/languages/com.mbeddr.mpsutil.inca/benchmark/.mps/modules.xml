@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.core/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.core/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.inca.benchmark.ext/com.mbeddr.mpsutil.inca.benchmark.ext.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.analyses/com.mbeddr.mpsutil.inca.analyses.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.benchmark.itc/com.mbeddr.mpsutil.inca.benchmark.itc.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.benchmark.ui/com.mbeddr.mpsutil.inca.benchmark.ui.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.inca.benchmark/com.mbeddr.mpsutil.inca.benchmark.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

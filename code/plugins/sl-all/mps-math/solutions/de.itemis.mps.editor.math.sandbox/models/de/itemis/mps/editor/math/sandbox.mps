@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:85a6398d-1172-45cf-9f2d-c69bd718cd5a(de.itemis.mps.editor.math.sandbox)">
+<model ref="r:85a6398d-1172-45cf-9f2d-c69bd718cd5a(de.itemis.mps.editor.math.sandbox)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="766348f7-6a67-4b85-9323-384840132299" name="de.itemis.mps.editor.math" version="0" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="37785bfe-16c9-4c59-b369-be2231cb77d5" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="37785bfe-16c9-4c59-b369-be2231cb77d5" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/10.0/project-config.xsd">
   <name>Build mbeddr</name>
   <description />
   <settings ref="RequiresMpsExtions">
@@ -62,15 +62,15 @@ fi]]></param>
     <requirements />
     <build-triggers />
     <artifact-dependencies>
-      <dependency sourceBuildTypeId="Mbeddr2_Build_BuildSlAll" cleanDestination="true">
+      <dependency id="ARTIFACT_DEPENDENCY_12" sourceBuildTypeId="Mbeddr2_Build_BuildSlAll" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%generic.artifact-rule%" />
       </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="true">
+      <dependency id="ARTIFACT_DEPENDENCY_13" sourceBuildTypeId="Mbeddr2_Bootstrap_DownloadMps" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%mps.artifact-rule%" />
       </dependency>
-      <dependency sourceBuildTypeId="Mbeddr2_Bootstrap_GenerateBuildScripts" cleanDestination="true">
+      <dependency id="ARTIFACT_DEPENDENCY_14" sourceBuildTypeId="Mbeddr2_Bootstrap_GenerateBuildScripts" cleanDestination="true">
         <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="%buildscripts.artifact-rule%" />
       </dependency>

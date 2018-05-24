@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:cc9af6eb-7fec-4ac7-8865-77d3a8f6764c(de.slisson.mps.structurecheck.sandbox)">
+<model ref="r:cc9af6eb-7fec-4ac7-8865-77d3a8f6764c(de.slisson.mps.structurecheck.sandbox)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="c6cfed73-685b-4891-8bdd-b38a1dcb107a" name="de.slisson.mps.structurecheck" version="0" />

@@ -12,8 +12,8 @@
   </languages>
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="spci" ref="r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring.structure)" />
-    <import index="d6tz" ref="r:b2834b64-265d-4877-941d-d9125f9bc1d6(com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem)" />
+    <import index="spci" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.structure)" />
+    <import index="d6tz" ref="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:b2834b64-265d-4877-941d-d9125f9bc1d6(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem)" />
     <import index="fw73" ref="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" />
   </imports>
   <registry>

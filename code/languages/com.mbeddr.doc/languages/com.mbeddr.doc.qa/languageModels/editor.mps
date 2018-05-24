@@ -2,7 +2,7 @@
 <model ref="r:d3fef858-9f37-478e-8bd0-8d5e9e74ef8a(com.mbeddr.doc.qa.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -83,7 +83,7 @@
   <node concept="24kQdi" id="5r_qjlVFaX">
     <ref role="1XX52x" to="6otn:5r_qjlVEy3" resolve="SpecificationAssessmentResult" />
     <node concept="1iCGBv" id="5r_qjlVFbM" role="2wV5jI">
-      <ref role="1NtTu8" to="6otn:5r_qjlVEy4" />
+      <ref role="1NtTu8" to="6otn:5r_qjlVEy4" resolve="elem" />
       <node concept="1sVBvm" id="5r_qjlVFbN" role="1sWHZn">
         <node concept="3F0A7n" id="5r_qjlVFc1" role="2wV5jI">
           <property role="1Intyy" value="true" />

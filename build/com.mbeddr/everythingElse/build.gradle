@@ -1,0 +1,228 @@
+// cbmc properties
+ext.cbmcMajor = "0.9"
+ext.cbmcMinor = "1"
+ext.cbmc_groupId = "org.cprover"
+ext.cbmc_artifactId_mac = "cbmc-mac"
+ext.cbmc_artifactId_linux = "cbmc-linux"
+ext.cbmc_artifactId_win = "cbmc-win"
+ext.cbmc_version = mbeddrMajor + "." + mbeddrMinor + "-SNAPSHOT"
+ext.cbmc_resolveDir = "/cbmc/"
+
+// download jre credentials
+ext.serverUser = project.hasProperty('serverUser') ? project.getProperty('serverUser') : '<user>'
+ext.serverPassword = project.hasProperty('serverPassword') ? project.getProperty('serverPassword') : '<password>'
+
+// TODO package cbmc
+//    cbmcLinux group: cbmc_groupId, name: cbmc_artifactId_linux, version: cbmc_version
+//    cbmcMac group: cbmc_groupId, name: cbmc_artifactId_mac, version: cbmc_version
+//    cbmcWin group: cbmc_groupId, name: cbmc_artifactId_win, version: cbmc_version
+
+configurations {
+    mbeddrAllInOne {
+        description = 'mbeddr allInOne'
+    }
+    mbeddrPlatform {
+        description = 'mbeddr platform distribution'
+    }
+    mbeddrRcp {
+        description = 'mbeddr rcp'
+    }
+    mbeddrJre {
+        description = 'jre used for rcp'
+    }
+    mbeddrDmg {
+        description = 'mbeddr dmg for mac'
+    }
+    cbmcWin {
+        description = 'cbmc windows'
+    }
+    cbmcLinux {
+        description = 'cbmc linux'
+    }
+    cbmcMac {
+        description = 'cbmc mac'
+    }
+    mbeddrTutorial {
+        description = 'mbeddr tutorial'
+    }
+}
+
+
+
+// :build:com.mbeddr.tests
+
+import org.apache.tools.ant.taskdefs.condition.Os
+
+
+def cbmc_linux_tar = "cbmc-linux.tar.gz"
+def cbmc_mac_zip = "cbmc-mac.zip"
+def cbmc_win_zip = "cbmc-win.zip"
+
+
+
+
+
+task resolve_cbmc() << { }
+
+if(Os.isFamily(Os.FAMILY_UNIX) && !Os.isFamily(Os.FAMILY_MAC)) {
+    resolve_cbmc.dependsOn 'unzip_cbmcLinuxTar'
+} else if(Os.isFamily(Os.FAMILY_WINDOWS)) {
+    resolve_cbmc.dependsOn 'unzip_cbmcWinZip'
+} else {
+    resolve_cbmc.dependsOn 'unzip_cbmcMacZip'
+}
+
+task resolve_cbmcLinux(type: Copy)  {
+    from {
+        configurations.cbmcLinux.collect { zipTree(it) }
+    }
+    into rootProject.projectDir.absolutePath + cbmc_resolveDir
+}
+
+task unzip_cbmcLinuxTar(type: Copy, dependsOn: resolve_cbmcLinux)  {
+    from tarTree(rootProject.projectDir.absolutePath + cbmc_resolveDir + cbmc_linux_tar)
+    into file(rootProject.projectDir.absolutePath + cbmc_resolveDir)
+}
+
+task resolve_cbmcMac(type: Copy)  {
+    from {
+        configurations.cbmcMac.collect { zipTree(it) }
+    }
+    into rootProject.projectDir.absolutePath + cbmc_resolveDir
+}
+
+task unzip_cbmcMacZip(type: Copy, dependsOn: resolve_cbmcMac)  {
+    from zipTree(rootProject.projectDir.absolutePath + cbmc_resolveDir + cbmc_mac_zip)
+    into file(rootProject.projectDir.absolutePath + cbmc_resolveDir)
+}
+
+task resolve_cbmcWin(type: Copy)  {
+    from {
+        configurations.cbmcWin.collect { zipTree(it) }
+    }
+    into rootProject.projectDir.absolutePath + cbmc_resolveDir
+}
+
+task unzip_cbmcWinZip(type: Copy, dependsOn: resolve_cbmcWin)  {
+    from zipTree(rootProject.projectDir.absolutePath + cbmc_resolveDir + cbmc_win_zip)
+    into file(rootProject.projectDir.absolutePath + cbmc_resolveDir)
+}
+
+
+
+// :build:com.mbeddr.rcp
+publishing {
+    publications {
+        mbeddrJre(MavenPublication) {
+            groupId 'com.mbeddr'
+            artifactId 'jre'
+            version mbeddrBuildNumber
+            artifact(publish_JRE) {}
+        }
+    }
+}
+
+def script_build_mbeddrJRE = new File(rootProject.projectDir.absolutePath + "/buildUtil/" + "build.xml")
+
+
+// invoke this task from the cmd via 'gradle download_jre -PserverUser=<user> -PserverPassword=<password>'
+task download_JRE(type: Exec) {
+    workingDir rootProject.projectDir
+    def args = ['-Dserver.user='+serverUser, '-Dserver.password='+serverPassword, '-f', script_build_mbeddrJRE]
+    commandLine('ant', *args, 'get-jdk')
+}
+
+task publish_JRE(type: Zip, dependsOn: download_JRE) {
+    from rootProject.projectDir.absolutePath + "/buildUtil"
+    include "jdk.zip"
+    include "jdk..tar.gz"
+}
+
+// :build:com.mbeddr.analyses.cbmc
+publishing {
+    publications {
+        cbmcMac(MavenPublication) {
+            groupId cbmc_groupId
+            artifactId cbmc_artifactId_mac
+            version cbmc_version
+            artifact(publish_cbmcMac) {}
+        }
+        cbmcLinux(MavenPublication) {
+            groupId cbmc_groupId
+            artifactId cbmc_artifactId_linux
+            version cbmc_version
+            artifact(publish_cbmcLinux) {}
+        }
+        cbmcWin(MavenPublication) {
+            groupId cbmc_groupId
+            artifactId cbmc_artifactId_win
+            version cbmc_version
+            artifact(publish_cbmcWin) {}
+        }
+    }
+}
+def script_build_cbmcWin = new File(rootProject.projectDir.absolutePath + "/build" + "/com.mbeddr.analyses.cbmc/" + "build-cbmc-win.bat")
+def script_build_cbmcLinux = new File(rootProject.projectDir.absolutePath + "/build" + "/com.mbeddr.analyses.cbmc/" + "build-cbmc-linux.sh")
+def script_build_cbmcMac = new File(rootProject.projectDir.absolutePath + "/build" + "/com.mbeddr.analyses.cbmc/" + "build-cbmc-mac.sh")
+
+File cbmcSrcHome = file(rootProject.projectDir.absolutePath + "/../cbmc/src")
+File cbmcHome = file(rootProject.projectDir.absolutePath + "/../cbmc/")
+
+task build_cbmcWin(type: Exec) {
+    workingDir cbmcSrcHome
+    commandLine(script_build_cbmcWin)
+}
+
+task build_cbmcMac(type: Exec) {
+    workingDir cbmcSrcHome
+    def args = buildProcSpawnArgList([script_build_cbmcMac])
+    commandLine(args)
+}
+
+task build_cbmcLinux(type: Exec) {
+    workingDir cbmcSrcHome
+    def args = buildProcSpawnArgList([script_build_cbmcLinux])
+    commandLine(args)
+}
+
+task publish_cbmcWin(type: Zip) {
+    from file(cbmcHome.absolutePath + "/" + "cbmc-win.zip")
+}
+
+task publish_cbmcMac(type: Zip) {
+    from file(cbmcHome.absolutePath + "/" + "cbmc-mac.zip")
+}
+
+task publish_cbmcLinux(type: Zip) {
+    from file(cbmcHome.absolutePath + "/" + "cbmc-linux.tar.gz")
+}
+
+task resolveAllInOne(type: Copy) {
+    from {
+        configurations.mbeddrAllInOne.collect { zipTree(it) }
+    }
+    into rootProject.projectDir.absolutePath + "/artifacts/"
+}
+
+
+def getVersionName = { ->
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'describe', '--tags'
+        standardOutput = stdout
+    }
+    return stdout.toString().trim()
+}
+
+
+// constructs the argument list that is used for spawning processes on linux/mac and windows
+Iterable<String> buildProcSpawnArgList(Iterable<String> args) {
+    List<String> newArguments = new ArrayList<String>()
+    if(Os.isFamily(Os.FAMILY_WINDOWS)) {
+        // we append the 'cmd /c' command in front
+        newArguments.add(0,'cmd.exe')
+        newArguments.add(1,'/c')
+    }
+    newArguments.addAll(args.toList())
+    return newArguments
+}

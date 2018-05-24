@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="dce6c938-92a0-4619-a1d8-62fdb4b872e8" name="com.mbeddr.analyses.cbmc.verification_case" version="0" />
+    <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
   </languages>
@@ -87,9 +88,6 @@
         <property id="2613206384568936346" name="constraintsEnabled" index="2xg5V6" />
         <child id="8985851583396455261" name="constraints" index="2c3wGU" />
         <child id="8985851583396455257" name="varRef" index="2c3wGY" />
-      </concept>
-      <concept id="6973658835837826905" name="com.mbeddr.analyses.cbmc.structure.Assert" flags="ng" index="Y9XUq">
-        <child id="6973658835837826906" name="exp" index="Y9XUp" />
       </concept>
       <concept id="8817973701946134445" name="com.mbeddr.analyses.cbmc.structure.StubsConfiguration" flags="ng" index="35oZfL" />
       <concept id="4887422885165621122" name="com.mbeddr.analyses.cbmc.structure.CPROVERassume" flags="ng" index="1EIGaU">
@@ -242,6 +240,11 @@
       <concept id="8860443239512128099" name="com.mbeddr.core.expressions.structure.FalseLiteral" flags="ng" index="3TlMhd" />
       <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
+    </language>
+    <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
+      <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
+        <child id="6973658835837826906" name="exp" index="Y9XUp" />
+      </concept>
     </language>
   </registry>
   <node concept="2v9HqL" id="7DvJ5MZ5CJH">

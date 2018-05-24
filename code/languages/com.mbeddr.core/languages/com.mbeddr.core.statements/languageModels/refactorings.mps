@@ -162,6 +162,10 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
@@ -191,10 +195,7 @@
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -373,8 +374,8 @@
               <ref role="37wK5l" to="n7pc:2I5SFMdyIsM" resolve="getConcreteNonConstVolatileSignedType" />
               <ref role="1Pybhc" to="n7pc:7YIk2VQKlj4" resolve="MeetTypeHelper" />
               <node concept="1PxgMI" id="13E6Bevsf9k" role="37wK5m">
-                <ref role="1PxNhF" to="tpck:hYa1RjM" resolve="IType" />
-                <node concept="2OqwBi" id="13E6Bevsf9l" role="1PxMeX">
+                <ref role="1m5ApE" to="tpck:hYa1RjM" resolve="IType" />
+                <node concept="2OqwBi" id="13E6Bevsf9l" role="1m5AlR">
                   <node concept="3cpWsa" id="13E6Bevsf9m" role="2Oq$k0">
                     <ref role="3cqZAo" node="KU5KLY42Ki" resolve="expr" />
                   </node>
@@ -387,8 +388,8 @@
         <node concept="3clFbF" id="3hgxKzbjbSi" role="3cqZAp">
           <node concept="37vLTI" id="3hgxKzbjbSt" role="3clFbG">
             <node concept="1PxgMI" id="4_OjW93xO3S" role="37vLTx">
-              <ref role="1PxNhF" to="mj1l:7FQByU3CrCQ" resolve="Type" />
-              <node concept="2OqwBi" id="3hgxKzbjbSF" role="1PxMeX">
+              <ref role="1m5ApE" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+              <node concept="2OqwBi" id="3hgxKzbjbSF" role="1m5AlR">
                 <node concept="37vLTw" id="5HxjapwgGUS" role="2Oq$k0">
                   <ref role="3cqZAo" node="mVgeaKvKBS" resolve="type" />
                 </node>
@@ -946,8 +947,8 @@
                       <node concept="2OqwBi" id="5Hxjapwgtc1" role="3uHU7B">
                         <node concept="2OqwBi" id="5Hxjapwgtc2" role="2Oq$k0">
                           <node concept="1PxgMI" id="5Hxjapwgtc3" role="2Oq$k0">
-                            <ref role="1PxNhF" to="mj1l:7FQByU3CrCO" resolve="BinaryExpression" />
-                            <node concept="3cpWsa" id="5Hxjapwgtc4" role="1PxMeX">
+                            <ref role="1m5ApE" to="mj1l:7FQByU3CrCO" resolve="BinaryExpression" />
+                            <node concept="3cpWsa" id="5Hxjapwgtc4" role="1m5AlR">
                               <ref role="3cqZAo" node="5GBGtqc$6Gt" resolve="targetCtx" />
                             </node>
                           </node>
@@ -960,8 +961,8 @@
                       <node concept="2OqwBi" id="5Hxjapwgu7t" role="3uHU7w">
                         <node concept="2OqwBi" id="5Hxjapwgu7u" role="2Oq$k0">
                           <node concept="1PxgMI" id="5Hxjapwgu7v" role="2Oq$k0">
-                            <ref role="1PxNhF" to="mj1l:7FQByU3CrCO" resolve="BinaryExpression" />
-                            <node concept="3cpWsa" id="5Hxjapwgu7w" role="1PxMeX">
+                            <ref role="1m5ApE" to="mj1l:7FQByU3CrCO" resolve="BinaryExpression" />
+                            <node concept="3cpWsa" id="5Hxjapwgu7w" role="1m5AlR">
                               <ref role="3cqZAo" node="5GBGtqc$6FB" resolve="copyOfInit" />
                             </node>
                           </node>

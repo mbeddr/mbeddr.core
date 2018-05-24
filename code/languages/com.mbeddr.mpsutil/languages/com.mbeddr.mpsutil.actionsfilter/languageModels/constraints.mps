@@ -38,10 +38,11 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
     </language>
   </registry>
   <node concept="1M2fIO" id="32cN67EdwMp">
@@ -51,8 +52,8 @@
         <node concept="3clFbF" id="32cN67EdwRo" role="3cqZAp">
           <node concept="2OqwBi" id="32cN67Ed$sM" role="3clFbG">
             <node concept="1PxgMI" id="32cN67Ed$sN" role="2Oq$k0">
-              <ref role="1PxNhF" to="au0v:5FJiYrlIp_D" resolve="ActionsProfile" />
-              <node concept="nLn13" id="32cN67Ed$sO" role="1PxMeX" />
+              <ref role="1m5ApE" to="au0v:5FJiYrlIp_D" resolve="ActionsProfile" />
+              <node concept="nLn13" id="32cN67Ed$sO" role="1m5AlR" />
             </node>
             <node concept="2qgKlT" id="1TS1BLOR$Yt" role="2OqNvi">
               <ref role="37wK5l" to="jm5d:1TS1BLORzSI" resolve="isAllowMode" />
@@ -69,8 +70,8 @@
         <node concept="3clFbF" id="32cN67Ed$Ca" role="3cqZAp">
           <node concept="2OqwBi" id="32cN67Edxba" role="3clFbG">
             <node concept="1PxgMI" id="32cN67EdwYS" role="2Oq$k0">
-              <ref role="1PxNhF" to="au0v:5FJiYrlIp_D" resolve="ActionsProfile" />
-              <node concept="nLn13" id="32cN67EdwRn" role="1PxMeX" />
+              <ref role="1m5ApE" to="au0v:5FJiYrlIp_D" resolve="ActionsProfile" />
+              <node concept="nLn13" id="32cN67EdwRn" role="1m5AlR" />
             </node>
             <node concept="2qgKlT" id="1TS1BLOR$$i" role="2OqNvi">
               <ref role="37wK5l" to="jm5d:1TS1BLORxU1" resolve="isRemoveMode" />

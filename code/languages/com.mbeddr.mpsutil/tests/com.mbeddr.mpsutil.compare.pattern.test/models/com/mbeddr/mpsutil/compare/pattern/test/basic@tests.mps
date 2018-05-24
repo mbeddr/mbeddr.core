@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="36590f48-d68b-4c16-bfba-c769260bbac0" name="com.mbeddr.mpsutil.compare.pattern.baselang" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
@@ -20,7 +20,6 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -345,7 +344,7 @@
                   </node>
                 </node>
                 <node concept="2FpdTS" id="1ho_jHB_5CE" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:4VkOLwjf83e" />
+                  <ref role="2pIpSl" to="tpee:4VkOLwjf83e" resolve="type" />
                   <node concept="2Fpoq$" id="5dYb5krQkk7" role="2pJxcZ">
                     <ref role="1QFNBD" to="tpee:f_0OyhT" resolve="IntegerType" />
                   </node>
@@ -371,7 +370,7 @@
                   </node>
                 </node>
                 <node concept="2FpdTS" id="1ho_jHB_5GB" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:h9B3oxE" />
+                  <ref role="2pIpSl" to="tpee:h9B3oxE" resolve="visibility" />
                   <node concept="2Fpoq$" id="1ho_jHB_5Hp" role="2pJxcZ">
                     <ref role="1QFNBD" to="tpee:gFTm6Wc" resolve="PrivateVisibility" />
                   </node>
@@ -948,7 +947,7 @@
                   </node>
                 </node>
                 <node concept="2FpdTS" id="1ho_jHB_lvg" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:fzclF7X" />
+                  <ref role="2pIpSl" to="tpee:fzclF7X" resolve="returnType" />
                   <node concept="2Fpoq$" id="1ho_jHB_oZj" role="2pJxcZ">
                     <ref role="1QFNBD" to="tpee:fzcqZ_H" resolve="VoidType" />
                   </node>
@@ -971,7 +970,7 @@
               <node concept="2Fpoq$" id="1ho_jHB_q_9" role="2pJPEn">
                 <ref role="1QFNBD" to="tpee:fz12cDA" resolve="ClassConcept" />
                 <node concept="2FpdTS" id="1ho_jHB_q_r" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:4EqhHTp4Mw3" />
+                  <ref role="2pIpSl" to="tpee:4EqhHTp4Mw3" resolve="member" />
                   <node concept="1QCd_1" id="1ho_jHB_qOJ" role="2pJxcZ">
                     <property role="2BkaCk" value="1" />
                     <node concept="1QCeBZ" id="1ho_jHB_qP8" role="36be1Z">
@@ -1193,7 +1192,7 @@
             <node concept="2Fpoq$" id="1ho_jHB_kxg" role="2pJPEn">
               <ref role="1QFNBD" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
               <node concept="2FpdTS" id="1ho_jHB_kxz" role="2pJxcM">
-                <ref role="2pIpSl" to="tpee:h9B3oxE" />
+                <ref role="2pIpSl" to="tpee:h9B3oxE" resolve="visibility" />
                 <node concept="2Fpoq$" id="1ho_jHB_ky9" role="2pJxcZ">
                   <ref role="1QFNBD" to="tpee:gFTm6Wc" resolve="PrivateVisibility" />
                 </node>
@@ -1250,7 +1249,7 @@
                   </node>
                 </node>
                 <node concept="2FpdTS" id="1KJPJGe2Vvi" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:h9B3oxE" />
+                  <ref role="2pIpSl" to="tpee:h9B3oxE" resolve="visibility" />
                   <node concept="uEgwc" id="1KJPJGe2Vvk" role="uEg$h">
                     <property role="TrG5h" value="visibility" />
                   </node>
@@ -1362,7 +1361,7 @@
                 <ref role="3cqZAo" node="1KJPJGe37PZ" resolve="arrayType" />
               </node>
               <node concept="3TrEf2" id="1KJPJGe38mi" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpee:f_0Q1BS" />
+                <ref role="3Tt5mk" to="tpee:f_0Q1BS" resolve="componentType" />
               </node>
             </node>
           </node>
@@ -1559,17 +1558,17 @@
               <node concept="2Fpoq$" id="4mypyst6T9F" role="2pJPEn">
                 <ref role="1QFNBD" to="tpee:fzclF8n" resolve="IfStatement" />
                 <node concept="2FpdTS" id="4mypyst6Vx4" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:hzeNLa7" />
+                  <ref role="2pIpSl" to="tpee:hzeNLa7" resolve="elsifClauses" />
                   <node concept="uEgwc" id="5sAZ2ylL1Eu" role="uEg$h">
                     <property role="TrG5h" value="elseifClauses" />
                   </node>
                 </node>
                 <node concept="2FpdTS" id="4mypyst6VzJ" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:fK9aQHQ" />
+                  <ref role="2pIpSl" to="tpee:fK9aQHQ" resolve="ifFalseStatement" />
                   <node concept="1oIMBf" id="4mypyst6V$p" role="2pJxcZ" />
                 </node>
                 <node concept="2FpdTS" id="4mypyst6V_9" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:fzclF8p" />
+                  <ref role="2pIpSl" to="tpee:fzclF8p" resolve="ifTrue" />
                   <node concept="1oIMBb" id="4mypyst6V_R" role="2pJxcZ" />
                 </node>
               </node>
@@ -1589,17 +1588,17 @@
                 <property role="32TQCv" value="true" />
                 <ref role="1QFNBD" to="tpee:fzclF8n" resolve="IfStatement" />
                 <node concept="2FpdTS" id="4mypyst6XuP" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:hzeNLa7" />
+                  <ref role="2pIpSl" to="tpee:hzeNLa7" resolve="elsifClauses" />
                   <node concept="uEgwc" id="5sAZ2ylL2wa" role="uEg$h">
                     <property role="TrG5h" value="elseifClauses" />
                   </node>
                 </node>
                 <node concept="2FpdTS" id="4mypyst6XuR" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:fK9aQHQ" />
+                  <ref role="2pIpSl" to="tpee:fK9aQHQ" resolve="ifFalseStatement" />
                   <node concept="1oIMBb" id="4mypyst6Xxr" role="2pJxcZ" />
                 </node>
                 <node concept="2FpdTS" id="4mypyst6XuT" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:fzclF8p" />
+                  <ref role="2pIpSl" to="tpee:fzclF8p" resolve="ifTrue" />
                   <node concept="1oIMBb" id="4mypyst6XuU" role="2pJxcZ" />
                 </node>
               </node>
@@ -1825,7 +1824,7 @@
               <node concept="2Fpoq$" id="41mTV0gdsS7" role="2pJPEn">
                 <ref role="1QFNBD" to="tpee:gDDw8bY" resolve="ForStatement" />
                 <node concept="2FpdTS" id="41mTV0gdsS$" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:gDDwp4M" />
+                  <ref role="2pIpSl" to="tpee:gDDwp4M" resolve="condition" />
                   <node concept="uEgwc" id="41mTV0gdsT4" role="uEg$h">
                     <property role="TrG5h" value="cond" />
                   </node>
@@ -2011,7 +2010,7 @@
               <node concept="2Fpoq$" id="wcyv5jSYy_" role="2pJPEn">
                 <ref role="1QFNBD" to="tpee:fz12cDA" resolve="ClassConcept" />
                 <node concept="2FpdTS" id="wcyv5jSYyA" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:4EqhHTp4Mw3" />
+                  <ref role="2pIpSl" to="tpee:4EqhHTp4Mw3" resolve="member" />
                   <node concept="1QCd_1" id="wcyv5jSYyB" role="2pJxcZ">
                     <property role="2BkaCk" value="1" />
                     <node concept="1QCeBZ" id="wcyv5jSYyE" role="36be1Z">

@@ -2,7 +2,7 @@
 <model ref="r:3efd56f3-3c7a-439c-a8a9-7c3bc01e6c2e(com.mbeddr.core.dataflow.test.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -121,7 +121,7 @@
       </node>
       <node concept="3F1sOY" id="h3vm$Fz" role="3EZMnx">
         <property role="1$x2rV" value="expected" />
-        <ref role="1NtTu8" to="9btd:3JNYr4YYJby" />
+        <ref role="1NtTu8" to="9btd:3JNYr4YYJby" resolve="expected" />
       </node>
       <node concept="3F0ifn" id="h3vlQYs" role="3EZMnx">
         <property role="3F0ifm" value="equals" />
@@ -134,7 +134,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F1sOY" id="3JNYr4Z1pfw" role="3EZMnx">
-          <ref role="1NtTu8" to="9btd:3JNYr4Z1lvK" />
+          <ref role="1NtTu8" to="9btd:3JNYr4Z1lvK" resolve="actualFromNode" />
         </node>
         <node concept="2iRfu4" id="3JNYr4Z5xEz" role="2iSdaV" />
       </node>
@@ -151,7 +151,7 @@
     <ref role="1XX52x" to="9btd:3JNYr4YYJa2" resolve="DataflowGraph" />
     <node concept="3EZMnI" id="3JNYr4YYJbb" role="2wV5jI">
       <node concept="3F2HdR" id="3JNYr4YYJbi" role="3EZMnx">
-        <ref role="1NtTu8" to="9btd:3JNYr4YYJb2" />
+        <ref role="1NtTu8" to="9btd:3JNYr4YYJb2" resolve="instructionContainers" />
         <node concept="2iRkQZ" id="3JNYr4YYJbj" role="2czzBx" />
       </node>
       <node concept="2iRkQZ" id="3JNYr4YYJbe" role="2iSdaV" />
@@ -185,7 +185,7 @@
         <property role="VOm3f" value="true" />
       </node>
       <node concept="3F1sOY" id="3JNYr4Z1YaI" role="3EZMnx">
-        <ref role="1NtTu8" to="9btd:3JNYr4Z1WGj" />
+        <ref role="1NtTu8" to="9btd:3JNYr4Z1WGj" resolve="instruction" />
       </node>
       <node concept="l2Vlx" id="3JNYr4Z1XrL" role="2iSdaV" />
     </node>
@@ -203,7 +203,7 @@
         <ref role="PMmxG" node="3JNYr4Z3I$5" resolve="AbstractJumpInstructionLabel" />
       </node>
       <node concept="1iCGBv" id="3JNYr4Z2hMe" role="3EZMnx">
-        <ref role="1NtTu8" to="9btd:3JNYr4Z2bZL" />
+        <ref role="1NtTu8" to="9btd:3JNYr4Z2bZL" resolve="instruction" />
         <node concept="1sVBvm" id="3JNYr4Z2hMf" role="1sWHZn">
           <node concept="1HlG4h" id="3JNYr4Z2hMl" role="2wV5jI">
             <node concept="1HfYo3" id="3JNYr4Z2hMn" role="1HlULh">
@@ -265,7 +265,7 @@
         <ref role="PMmxG" node="3JNYr4Z3Yj1" resolve="VariableAccessLabel" />
       </node>
       <node concept="1iCGBv" id="3JNYr4Z3Yji" role="3EZMnx">
-        <ref role="1NtTu8" to="9btd:3JNYr4Z3Yif" />
+        <ref role="1NtTu8" to="9btd:3JNYr4Z3Yif" resolve="variable" />
         <node concept="1sVBvm" id="3JNYr4Z3Yjj" role="1sWHZn">
           <node concept="3F0A7n" id="3JNYr4Z3Yjp" role="2wV5jI">
             <property role="1Intyy" value="true" />

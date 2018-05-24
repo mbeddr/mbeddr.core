@@ -2,7 +2,7 @@
 <model ref="r:3a7cc332-c9fe-4786-9057-673ed81b43d8(mbeddr.tutorial.blocks.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -126,7 +126,7 @@
       </node>
       <node concept="l2Vlx" id="3NI0$JEby1J" role="2iSdaV" />
       <node concept="3F1sOY" id="3NI0$JEby1P" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
+        <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
       </node>
       <node concept="3F0A7n" id="3NI0$JEby1R" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -146,7 +146,7 @@
       <node concept="3EZMnI" id="3NI0$JEbLbV" role="3EZMnx">
         <node concept="2iRkQZ" id="3NI0$JEbLbW" role="2iSdaV" />
         <node concept="3F2HdR" id="3NI0$JEby25" role="3EZMnx">
-          <ref role="1NtTu8" to="bgic:3NI0$JEby1C" />
+          <ref role="1NtTu8" to="bgic:3NI0$JEby1C" resolve="interfaces" />
           <node concept="2iRkQZ" id="3NI0$JEby27" role="2czzBx" />
           <node concept="3vyZuw" id="3NI0$JEby29" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -159,7 +159,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="3NI0$JEbMdr" role="3EZMnx">
-          <ref role="1NtTu8" to="bgic:3NI0$JEbMdq" />
+          <ref role="1NtTu8" to="bgic:3NI0$JEbMdq" resolve="variables" />
           <node concept="2iRkQZ" id="3NI0$JEbMds" role="2czzBx" />
           <node concept="3vyZuw" id="3NI0$JEbMdt" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -176,7 +176,7 @@
         <property role="3F0ifm" value="{" />
       </node>
       <node concept="3F2HdR" id="3NI0$JEbN2K" role="3EZMnx">
-        <ref role="1NtTu8" to="bgic:3NI0$JEbN2A" />
+        <ref role="1NtTu8" to="bgic:3NI0$JEbN2A" resolve="states" />
         <node concept="l2Vlx" id="3NI0$JEbN2L" role="2czzBx" />
         <node concept="pVoyu" id="3NI0$JEbN2M" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -208,7 +208,7 @@
         <property role="3F0ifm" value="property" />
       </node>
       <node concept="3F1sOY" id="3NI0$JEby2m" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
+        <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
       </node>
       <node concept="3F0A7n" id="3NI0$JEby2o" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -224,7 +224,7 @@
         <property role="3F0ifm" value="var" />
       </node>
       <node concept="3F1sOY" id="3NI0$JEbLc8" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
+        <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
       </node>
       <node concept="3F0A7n" id="3NI0$JEbLca" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -243,7 +243,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F1sOY" id="3NI0$JEbN30" role="3EZMnx">
-        <ref role="1NtTu8" to="bgic:3NI0$JEbN2T" />
+        <ref role="1NtTu8" to="bgic:3NI0$JEbN2T" resolve="impl" />
       </node>
     </node>
   </node>
@@ -256,7 +256,7 @@
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="1iCGBv" id="3NI0$JEbOkK" role="3EZMnx">
-        <ref role="1NtTu8" to="bgic:3NI0$JEbOkE" />
+        <ref role="1NtTu8" to="bgic:3NI0$JEbOkE" resolve="state" />
         <node concept="1sVBvm" id="3NI0$JEbOkL" role="1sWHZn">
           <node concept="3F0A7n" id="3NI0$JEbOkN" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -270,14 +270,14 @@
     <property role="3GE5qa" value="impl" />
     <ref role="1XX52x" to="bgic:3NI0$JEbPna" resolve="CalcMethodBSI" />
     <node concept="3F1sOY" id="3NI0$JEbPnf" role="2wV5jI">
-      <ref role="1NtTu8" to="bgic:3NI0$JEbPnc" />
+      <ref role="1NtTu8" to="bgic:3NI0$JEbPnc" resolve="body" />
     </node>
   </node>
   <node concept="24kQdi" id="3NI0$JEbQFS">
     <property role="3GE5qa" value="impl.expr" />
     <ref role="1XX52x" to="bgic:3NI0$JEbQEP" resolve="VarRef" />
     <node concept="1iCGBv" id="3NI0$JEbQFU" role="2wV5jI">
-      <ref role="1NtTu8" to="bgic:3NI0$JEbQFR" />
+      <ref role="1NtTu8" to="bgic:3NI0$JEbQFR" resolve="var" />
       <node concept="1sVBvm" id="3NI0$JEbQFV" role="1sWHZn">
         <node concept="3F0A7n" id="3NI0$JEbQFX" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -290,7 +290,7 @@
     <property role="3GE5qa" value="impl.expr" />
     <ref role="1XX52x" to="bgic:3NI0$JEbQG9" resolve="PortRef" />
     <node concept="1iCGBv" id="3NI0$JEbQGe" role="2wV5jI">
-      <ref role="1NtTu8" to="bgic:3NI0$JEbQGb" />
+      <ref role="1NtTu8" to="bgic:3NI0$JEbQGb" resolve="port" />
       <node concept="1sVBvm" id="3NI0$JEbQGf" role="1sWHZn">
         <node concept="3F0A7n" id="3NI0$JEbQGi" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -358,7 +358,7 @@
     <property role="3GE5qa" value="impl.expr" />
     <ref role="1XX52x" to="bgic:3NI0$JEbQM1" resolve="PropertyRef" />
     <node concept="1iCGBv" id="3NI0$JEbQM6" role="2wV5jI">
-      <ref role="1NtTu8" to="bgic:3NI0$JEbQM3" />
+      <ref role="1NtTu8" to="bgic:3NI0$JEbQM3" resolve="property" />
       <node concept="1sVBvm" id="3NI0$JEbQM7" role="1sWHZn">
         <node concept="3F0A7n" id="3NI0$JEbQM9" role="2wV5jI">
           <property role="1Intyy" value="true" />

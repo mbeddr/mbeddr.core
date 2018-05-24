@@ -13,6 +13,7 @@
     <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -86,7 +87,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -181,6 +182,10 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
@@ -204,10 +209,7 @@
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -617,7 +619,7 @@
     <property role="3GE5qa" value="controlledName" />
     <ref role="1M2myG" to="vs0r:2GIWVTRHgNL" resolve="ControlledNameAttribute" />
     <node concept="1N5Pfh" id="3VMeFNyf9D4" role="1Mr941">
-      <ref role="1N5Vy1" to="vs0r:2GIWVTRHgZp" />
+      <ref role="1N5Vy1" to="vs0r:2GIWVTRHgZp" resolve="nameController" />
       <node concept="3k9gUc" id="6sCGfm8bgov" role="3kmjI7">
         <node concept="3clFbS" id="6sCGfm8bgow" role="2VODD2">
           <node concept="3clFbF" id="6sCGfm8qiVx" role="3cqZAp">
@@ -641,8 +643,8 @@
                 <ref role="ehGHo" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
               </node>
               <node concept="1PxgMI" id="jEMQfWnkwl" role="33vP2m">
-                <ref role="1PxNhF" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
-                <node concept="21POm0" id="jEMQfWnkwm" role="1PxMeX" />
+                <ref role="1m5ApE" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
+                <node concept="21POm0" id="jEMQfWnkwm" role="1m5AlR" />
               </node>
             </node>
           </node>
@@ -770,7 +772,7 @@
     <property role="3GE5qa" value="chunk" />
     <ref role="1M2myG" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
     <node concept="1N5Pfh" id="DubiFAYmyR" role="1Mr941">
-      <ref role="1N5Vy1" to="vs0r:DubiFAXDKB" />
+      <ref role="1N5Vy1" to="vs0r:DubiFAXDKB" resolve="chunk" />
       <node concept="1MUpDS" id="DubiFAYmyV" role="1N6uqs">
         <node concept="3clFbS" id="DubiFAYmyW" role="2VODD2">
           <node concept="3clFbF" id="DubiFAYmM5" role="3cqZAp">
@@ -853,7 +855,7 @@
     <property role="3GE5qa" value="assessment.scope" />
     <ref role="1M2myG" to="vs0r:7nkDZJXlCyb" resolve="ChunkScope" />
     <node concept="1N5Pfh" id="7nkDZJXlCM$" role="1Mr941">
-      <ref role="1N5Vy1" to="vs0r:7nkDZJXlCyc" />
+      <ref role="1N5Vy1" to="vs0r:7nkDZJXlCyc" resolve="chunk" />
       <node concept="1MUpDS" id="7nkDZJXlCMB" role="1N6uqs">
         <node concept="3clFbS" id="7nkDZJXlCMC" role="2VODD2">
           <node concept="3clFbF" id="7nkDZJXlDDl" role="3cqZAp">
@@ -871,7 +873,7 @@
   <node concept="1M2fIO" id="gjBy3ThgJB">
     <ref role="1M2myG" to="vs0r:gjBy3ThgJz" resolve="ConceptDeclarationReference" />
     <node concept="1N5Pfh" id="4uR15_er0x3" role="1Mr941">
-      <ref role="1N5Vy1" to="vs0r:4uR15_er0pl" />
+      <ref role="1N5Vy1" to="vs0r:4uR15_er0pl" resolve="concept" />
       <node concept="1MUpDS" id="4uR15_erk3i" role="1N6uqs">
         <node concept="3clFbS" id="4uR15_erk3j" role="2VODD2">
           <node concept="3clFbF" id="4uR15_etubD" role="3cqZAp">
@@ -890,7 +892,7 @@
     <property role="3GE5qa" value="pathAndFile" />
     <ref role="1M2myG" to="vs0r:1JcbkuyFcOM" resolve="SolutionRelativeHashedFilePicker" />
     <node concept="EnEH3" id="1JcbkuyR6qV" role="1MhHOB">
-      <ref role="EomxK" to="vs0r:5lKnBeAtODI" resolve="path" />
+      <ref role="EomxK" to="68mc:5lKnBeAtODI" resolve="path" />
       <node concept="1LLf8_" id="1JcbkuyR6qY" role="1LXaQT">
         <node concept="3clFbS" id="1JcbkuyR6qZ" role="2VODD2">
           <node concept="3clFbF" id="1JcbkuyR6rl" role="3cqZAp">
@@ -899,7 +901,7 @@
               <node concept="2OqwBi" id="1JcbkuyR6tz" role="37vLTJ">
                 <node concept="EsrRn" id="1JcbkuyR6rk" role="2Oq$k0" />
                 <node concept="3TrcHB" id="1JcbkuyR6Qk" role="2OqNvi">
-                  <ref role="3TsBF5" to="vs0r:5lKnBeAtODI" resolve="path" />
+                  <ref role="3TsBF5" to="68mc:5lKnBeAtODI" resolve="path" />
                 </node>
               </node>
             </node>

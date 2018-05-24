@@ -2,7 +2,7 @@
 <model ref="r:eb1e30db-f9c7-461d-86f0-65e4fe201e3b(com.mbeddr.doc.expressions.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -137,7 +137,7 @@
                     <node concept="2OqwBi" id="1frRXyHtaRR" role="2Oq$k0">
                       <node concept="3GMtW1" id="1frRXyHtaGa" role="2Oq$k0" />
                       <node concept="3TrEf2" id="1frRXyHtbX5" role="2OqNvi">
-                        <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+                        <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="1frRXyHtdjp" role="2OqNvi">
@@ -167,7 +167,7 @@
         <property role="3F0ifm" value="type:" />
       </node>
       <node concept="3F1sOY" id="4E$PniRKKsk" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
+        <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
       </node>
     </node>
   </node>
@@ -199,7 +199,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4E$PniRKKXC" role="3EZMnx">
-        <ref role="1NtTu8" to="f87k:4E$PniRKKXp" />
+        <ref role="1NtTu8" to="f87k:4E$PniRKKXp" resolve="lvalue" />
       </node>
       <node concept="3F0ifn" id="4E$PniRKMCJ" role="3EZMnx">
         <property role="3F0ifm" value=" " />
@@ -230,7 +230,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="4E$PniRKKXG" role="3EZMnx">
-        <ref role="1NtTu8" to="f87k:4E$PniRKKXo" />
+        <ref role="1NtTu8" to="f87k:4E$PniRKKXo" resolve="rvalue" />
       </node>
       <node concept="3F0ifn" id="4E$PniRKKXx" role="3EZMnx">
         <property role="3F0ifm" value="$" />
@@ -247,7 +247,7 @@
   <node concept="24kQdi" id="4E$PniRKKXJ">
     <ref role="1XX52x" to="f87k:4E$PniRKKXH" resolve="VarRef" />
     <node concept="1iCGBv" id="4E$PniRKKXL" role="2wV5jI">
-      <ref role="1NtTu8" to="f87k:4E$PniRKKXI" />
+      <ref role="1NtTu8" to="f87k:4E$PniRKKXI" resolve="var" />
       <node concept="1sVBvm" id="4E$PniRKKXM" role="1sWHZn">
         <node concept="3F0A7n" id="4E$PniRKKXO" role="2wV5jI">
           <property role="1Intyy" value="true" />

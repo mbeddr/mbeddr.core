@@ -34,6 +34,7 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.StaticLibrary" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
@@ -50,6 +51,10 @@
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -57,12 +62,6 @@
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
       <concept id="279446265608463015" name="com.mbeddr.core.pointers.structure.DerefExpr" flags="ng" index="3wxyx2" />
-    </language>
-    <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
-      <concept id="6973658835837826905" name="com.mbeddr.analyses.cbmc.structure.Assert" flags="ng" index="Y9XUq">
-        <property id="7919699550786764638" name="explanation" index="2pBPep" />
-        <child id="6973658835837826906" name="exp" index="Y9XUp" />
-      </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
@@ -173,6 +172,12 @@
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
+    </language>
+    <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
+      <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
+        <property id="7919699550786764638" name="explanation" index="2pBPep" />
+        <child id="6973658835837826906" name="exp" index="Y9XUp" />
+      </concept>
     </language>
   </registry>
   <node concept="N3F5e" id="3i$cQqpBbKz">
@@ -380,6 +385,18 @@
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
       <property role="3I8uaA" value="" />
+      <node concept="3abb7c" id="7fmKiPEtW_t" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtW_u" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtW_v" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="7fmKiPEtW_w" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
     <node concept="2Q9Fgs" id="10dmWHgy0vk" role="2Q9xDr">
       <node concept="2Q9FjX" id="10dmWHgy0vl" role="2Q9FjI" />
@@ -389,6 +406,7 @@
     </node>
     <node concept="29Nb31" id="10dmWHgy0vq" role="2ePNbc">
       <property role="TrG5h" value="lib" />
+      <ref role="3oK8_y" node="7fmKiPEtW_w" resolve="portable" />
       <node concept="2v9HqM" id="10dmWHgy0vt" role="2eOfOg">
         <ref role="2v9HqP" node="3i$cQqpBbKz" resolve="ensures" />
       </node>

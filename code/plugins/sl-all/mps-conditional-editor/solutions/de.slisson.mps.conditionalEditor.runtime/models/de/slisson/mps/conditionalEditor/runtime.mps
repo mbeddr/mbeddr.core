@@ -213,7 +213,7 @@
       <node concept="17QB3L" id="5P1DsEq530m" role="1tU5fm" />
       <node concept="3Tm6S6" id="5P1DsEq530k" role="1B3o_S" />
       <node concept="Xl_RD" id="5P1DsEq53cY" role="33vP2m">
-        <property role="Xl_RC" value="jetbrains.mps.nodeEditor.cells.AbstractEditorRegistry" />
+        <property role="Xl_RC" value="jetbrains.mps.nodeEditor.cells.AbstractEditorHintsSpecificRegistry" />
       </node>
     </node>
     <node concept="2tJIrI" id="2he9CywXPrd" role="jymVt" />
@@ -316,7 +316,7 @@
                     <ref role="3cqZAo" node="6OrbFWF8VAw" resolve="registryClass" />
                   </node>
                   <node concept="Xl_RD" id="6OrbFWF98LN" role="37wK5m">
-                    <property role="Xl_RC" value="getEditorComparator" />
+                    <property role="Xl_RC" value="compareByHintsSizeDescAndClassName" />
                   </node>
                   <node concept="2ShNRf" id="6OrbFWF98LO" role="37wK5m">
                     <node concept="3$_iS1" id="6OrbFWF98LP" role="2ShVmc">
@@ -390,7 +390,7 @@
             </node>
             <node concept="10Nm6u" id="6OrbFWF98_W" role="37wK5m" />
             <node concept="Xl_RD" id="6OrbFWF98_X" role="37wK5m">
-              <property role="Xl_RC" value="myEditorComparator" />
+              <property role="Xl_RC" value="ourCompareByHintsSizeDescAndClassName" />
             </node>
             <node concept="37vLTw" id="6OrbFWF98DH" role="37wK5m">
               <ref role="3cqZAo" node="6OrbFWF8Wiq" resolve="comp" />
@@ -409,7 +409,7 @@
                     <ref role="3cqZAo" node="6OrbFWF8VAw" resolve="registryClass" />
                   </node>
                   <node concept="Xl_RD" id="6OrbFWF99ld" role="37wK5m">
-                    <property role="Xl_RC" value="getAncestorEditorComparator" />
+                    <property role="Xl_RC" value="compareByHintsSizeDesc" />
                   </node>
                   <node concept="2ShNRf" id="6OrbFWF99le" role="37wK5m">
                     <node concept="3$_iS1" id="6OrbFWF99lf" role="2ShVmc">
@@ -483,7 +483,7 @@
             </node>
             <node concept="10Nm6u" id="6OrbFWF99kU" role="37wK5m" />
             <node concept="Xl_RD" id="6OrbFWF99kV" role="37wK5m">
-              <property role="Xl_RC" value="myAncestorEditorComparator" />
+              <property role="Xl_RC" value="ourCompareByHintsSizeDesc" />
             </node>
             <node concept="37vLTw" id="6OrbFWF99kW" role="37wK5m">
               <ref role="3cqZAo" node="6OrbFWF8Wiq" resolve="comp" />
@@ -561,7 +561,7 @@
             </node>
             <node concept="10Nm6u" id="6OrbFWF9awQ" role="37wK5m" />
             <node concept="Xl_RD" id="6OrbFWF9awR" role="37wK5m">
-              <property role="Xl_RC" value="myEditorComparator" />
+              <property role="Xl_RC" value="ourCompareByHintsSizeDescAndClassName" />
             </node>
             <node concept="10Nm6u" id="6OrbFWF9b_T" role="37wK5m" />
           </node>
@@ -574,7 +574,7 @@
               <ref role="3cqZAo" node="6OrbFWF9awc" resolve="registryClass" />
             </node>
             <node concept="Xl_RD" id="6OrbFWF9awr" role="37wK5m">
-              <property role="Xl_RC" value="getEditorComparator" />
+              <property role="Xl_RC" value="compareByHintsSizeDescAndClassName" />
             </node>
             <node concept="2ShNRf" id="6OrbFWF9aws" role="37wK5m">
               <node concept="3$_iS1" id="6OrbFWF9awt" role="2ShVmc">
@@ -612,7 +612,7 @@
             </node>
             <node concept="10Nm6u" id="6OrbFWF9cbu" role="37wK5m" />
             <node concept="Xl_RD" id="6OrbFWF9cbv" role="37wK5m">
-              <property role="Xl_RC" value="myAncestorEditorComparator" />
+              <property role="Xl_RC" value="ourCompareByHintsSizeDesc" />
             </node>
             <node concept="10Nm6u" id="6OrbFWF9cbw" role="37wK5m" />
           </node>
@@ -625,7 +625,7 @@
               <ref role="3cqZAo" node="6OrbFWF9awc" resolve="registryClass" />
             </node>
             <node concept="Xl_RD" id="6OrbFWF9cbg" role="37wK5m">
-              <property role="Xl_RC" value="getAncestorEditorComparator" />
+              <property role="Xl_RC" value="compareByHintsSizeDesc" />
             </node>
             <node concept="2ShNRf" id="6OrbFWF9cbh" role="37wK5m">
               <node concept="3$_iS1" id="6OrbFWF9cbi" role="2ShVmc">

@@ -5,7 +5,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -20,6 +20,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -117,6 +118,7 @@
   </registry>
   <node concept="1lH9Xt" id="6qmmy9803D5">
     <property role="TrG5h" value="AfterThen_Tests" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="6qmmy9803D6" role="1SL9yI">
       <property role="TrG5h" value="testAfterThenNegative" />
       <node concept="3cqZAl" id="6qmmy9803D7" role="3clF45" />
@@ -129,16 +131,25 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="5EwdfGVgL4O" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVgL4P" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVgL4N" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVgL4Q" role="33vP2m">
+              <property role="BaBD8" value="advanced_verification_condition@" />
+              <property role="BaHAW" value="advanced_verification_condition" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="51RbMlWaKPC" role="3cqZAp">
           <node concept="37vLTI" id="51RbMlWaKPE" role="3clFbG">
             <node concept="2OqwBi" id="6mJYm3jsmuK" role="37vLTx">
               <node concept="NRdvd" id="PS2VOZ4MQw" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="BaHAS" id="PS2VOZ4MQx" role="37wK5m">
-                  <property role="BaBD8" value="advanced_verification_condition@" />
-                  <property role="BaHAW" value="advanced_verification_condition" />
-                  <property role="BaGAP" value="" />
+                <node concept="37vLTw" id="5EwdfGVgL4R" role="37wK5m">
+                  <ref role="3cqZAo" node="5EwdfGVgL4P" resolve="m" />
                 </node>
                 <node concept="Xl_RD" id="PS2VOZ4MQy" role="37wK5m">
                   <property role="Xl_RC" value="after_then" />
@@ -161,7 +172,7 @@
         <node concept="3clFbH" id="PS2VOZ4NwA" role="3cqZAp" />
         <node concept="3vlDli" id="PS2VOZ4N5E" role="3cqZAp">
           <node concept="Xl_RD" id="PS2VOZ4Naq" role="3tpDZB">
-            <property role="Xl_RC" value="After: 'x &lt; 0' then 'y &gt; 3'" />
+            <property role="Xl_RC" value="Assert: After: 'x &lt; 0' then 'y &gt; 3'" />
           </node>
           <node concept="2OqwBi" id="PS2VOZ4Nge" role="3tpDZA">
             <node concept="37vLTw" id="PS2VOZ4Ne2" role="2Oq$k0">
@@ -210,16 +221,25 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="5EwdfGVgLaC" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVgLaD" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVgLaB" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVgLaE" role="33vP2m">
+              <property role="BaBD8" value="ad" />
+              <property role="BaHAW" value="advanced_verification_condition" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="51RbMlWaKSI" role="3cqZAp">
           <node concept="37vLTI" id="51RbMlWaKSK" role="3clFbG">
             <node concept="2OqwBi" id="6mJYm3jspqG" role="37vLTx">
               <node concept="NRdvd" id="PS2VOZ4MX$" role="2Oq$k0">
                 <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
                 <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-                <node concept="BaHAS" id="PS2VOZ4MX_" role="37wK5m">
-                  <property role="BaBD8" value="ad" />
-                  <property role="BaHAW" value="advanced_verification_condition" />
-                  <property role="BaGAP" value="" />
+                <node concept="37vLTw" id="5EwdfGVgLaF" role="37wK5m">
+                  <ref role="3cqZAo" node="5EwdfGVgLaD" resolve="m" />
                 </node>
                 <node concept="Xl_RD" id="PS2VOZ4MXA" role="37wK5m">
                   <property role="Xl_RC" value="after_then" />
@@ -242,7 +262,7 @@
         <node concept="3clFbH" id="46evrC8eIXD" role="3cqZAp" />
         <node concept="3vlDli" id="46evrC8eJ5t" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eJ5u" role="3tpDZB">
-            <property role="Xl_RC" value="After: 'x &lt; 0' then 'y &gt; 3'" />
+            <property role="Xl_RC" value="Assert: After: 'x &lt; 0' then 'y &gt; 3'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eJ5v" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eJ5w" role="2Oq$k0">
@@ -268,6 +288,7 @@
   </node>
   <node concept="1lH9Xt" id="6qmmy9803DM">
     <property role="TrG5h" value="BeforeMust" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="6qmmy9803DN" role="1SL9yI">
       <property role="TrG5h" value="testBeforeMustNegative" />
       <node concept="3cqZAl" id="6qmmy9803DO" role="3clF45" />
@@ -314,7 +335,7 @@
         <node concept="3clFbH" id="5O4lpk$xy" role="3cqZAp" />
         <node concept="3vlDli" id="46evrC8eMJw" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eMJx" role="3tpDZB">
-            <property role="Xl_RC" value="Before: 'x &gt; 0' must 'y &gt; 0'" />
+            <property role="Xl_RC" value="Assert: Before: 'x &gt; 0' must 'y &gt; 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eMJy" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eMJz" role="2Oq$k0">
@@ -397,7 +418,7 @@
         <node concept="3clFbH" id="5O4lpk$AK" role="3cqZAp" />
         <node concept="3vlDli" id="46evrC8eN5t" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eN5u" role="3tpDZB">
-            <property role="Xl_RC" value="Before: 'x &gt; 0' must 'y &gt; 0'" />
+            <property role="Xl_RC" value="Assert: Before: 'x &gt; 0' must 'y &gt; 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eN5v" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eN5w" role="2Oq$k0">
@@ -423,6 +444,7 @@
   </node>
   <node concept="1lH9Xt" id="3d1ViLM6N_s">
     <property role="TrG5h" value="AfterUntilMust_Tests" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="3d1ViLM6N_t" role="1SL9yI">
       <property role="TrG5h" value="testAfterUntilMustNegative" />
       <node concept="3cqZAl" id="3d1ViLM6N_u" role="3clF45" />
@@ -469,7 +491,7 @@
         <node concept="3clFbH" id="46evrC8eJsb" role="3cqZAp" />
         <node concept="3vlDli" id="46evrC8eJ_v" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eJ_w" role="3tpDZB">
-            <property role="Xl_RC" value="After: 'x &lt; 0' until 'y &gt; 0' must 'z == 0'" />
+            <property role="Xl_RC" value="Assert: After: 'x &lt; 0' until 'y &gt; 0' must 'z == 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eJ_x" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eJ_y" role="2Oq$k0">
@@ -552,7 +574,7 @@
         <node concept="3clFbH" id="46evrC8eJK1" role="3cqZAp" />
         <node concept="3vlDli" id="46evrC8eJRP" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eJRQ" role="3tpDZB">
-            <property role="Xl_RC" value="After: 'x &lt; 0' until 'y &gt; 0' must 'z == 0'" />
+            <property role="Xl_RC" value="Assert: After: 'x &lt; 0' until 'y &gt; 0' must 'z == 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eJRR" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eJRS" role="2Oq$k0">
@@ -578,6 +600,7 @@
   </node>
   <node concept="1lH9Xt" id="2gQe_W8Fg3l">
     <property role="TrG5h" value="AfterUntilExists_Tests" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="2gQe_W8Fg3m" role="1SL9yI">
       <property role="TrG5h" value="testAfterUntilExistsNegative" />
       <node concept="3cqZAl" id="2gQe_W8Fg3n" role="3clF45" />
@@ -623,7 +646,7 @@
         </node>
         <node concept="3vlDli" id="46evrC8eKqM" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eKqN" role="3tpDZB">
-            <property role="Xl_RC" value="After: 'x &lt; 0' until 'y &gt; 0' exists 'z == 0'" />
+            <property role="Xl_RC" value="Assert: After: 'x &lt; 0' until 'y &gt; 0' exists 'z == 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eKqO" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eKqP" role="2Oq$k0">
@@ -705,7 +728,7 @@
         </node>
         <node concept="3vlDli" id="46evrC8eKDj" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eKDk" role="3tpDZB">
-            <property role="Xl_RC" value="After: 'x &lt; 0' until 'y &gt; 0' exists 'z == 0'" />
+            <property role="Xl_RC" value="Assert: After: 'x &lt; 0' until 'y &gt; 0' exists 'z == 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eKDl" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eKDm" role="2Oq$k0">
@@ -731,6 +754,7 @@
   </node>
   <node concept="1lH9Xt" id="2gQe_W8Fg42">
     <property role="TrG5h" value="BeforeExists" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="2gQe_W8Fg43" role="1SL9yI">
       <property role="TrG5h" value="testBeforeExistsNegative" />
       <node concept="3cqZAl" id="2gQe_W8Fg44" role="3clF45" />
@@ -776,7 +800,7 @@
         </node>
         <node concept="3vlDli" id="46evrC8eM7d" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eM7e" role="3tpDZB">
-            <property role="Xl_RC" value="Before: 'x &gt; 0' exists 'y &gt; 0'" />
+            <property role="Xl_RC" value="Assert: Before: 'x &gt; 0' exists 'y &gt; 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eM7f" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eM7g" role="2Oq$k0">
@@ -858,7 +882,7 @@
         </node>
         <node concept="3vlDli" id="46evrC8eMcL" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eMcM" role="3tpDZB">
-            <property role="Xl_RC" value="Before: 'x &gt; 0' exists 'y &gt; 0'" />
+            <property role="Xl_RC" value="Assert: Before: 'x &gt; 0' exists 'y &gt; 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eMcN" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eMcO" role="2Oq$k0">
@@ -884,6 +908,7 @@
   </node>
   <node concept="1lH9Xt" id="2gQe_W8Fg4J">
     <property role="TrG5h" value="ImmediatelyPrecedes_Tests" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="2gQe_W8Fg4K" role="1SL9yI">
       <property role="TrG5h" value="testPrecedesNegative" />
       <node concept="3cqZAl" id="2gQe_W8Fg4L" role="3clF45" />
@@ -929,7 +954,7 @@
         </node>
         <node concept="3vlDli" id="46evrC8eL4u" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8eL4v" role="3tpDZB">
-            <property role="Xl_RC" value="'x == 0' immediately precedes 'y == 0'" />
+            <property role="Xl_RC" value="Assert: 'x == 0' immediately precedes 'y == 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8eL4w" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8eL4x" role="2Oq$k0">
@@ -1011,7 +1036,7 @@
         </node>
         <node concept="3vlDli" id="46evrC8f728" role="3cqZAp">
           <node concept="Xl_RD" id="46evrC8f729" role="3tpDZB">
-            <property role="Xl_RC" value="'x == 0' immediately precedes 'y == 0'" />
+            <property role="Xl_RC" value="Assert: 'x == 0' immediately precedes 'y == 0'" />
           </node>
           <node concept="2OqwBi" id="46evrC8f72a" role="3tpDZA">
             <node concept="37vLTw" id="46evrC8f72b" role="2Oq$k0">

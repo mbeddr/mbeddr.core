@@ -9,7 +9,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -136,6 +136,10 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -165,10 +169,7 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1586,8 +1587,8 @@
                             </node>
                             <node concept="3JPx81" id="43ZV6u98pMz" role="2OqNvi">
                               <node concept="1PxgMI" id="43ZV6u98pM$" role="25WWJ7">
-                                <ref role="1PxNhF" to="rpmx:3ELV2aP9B$O" resolve="ICallStack" />
-                                <node concept="21POm0" id="43ZV6u98pM_" role="1PxMeX" />
+                                <ref role="1m5ApE" to="rpmx:3ELV2aP9B$O" resolve="ICallStack" />
+                                <node concept="21POm0" id="43ZV6u98pM_" role="1m5AlR" />
                               </node>
                             </node>
                           </node>
@@ -1768,8 +1769,8 @@
                             </node>
                             <node concept="3JPx81" id="5Wc0QVxr69I" role="2OqNvi">
                               <node concept="1PxgMI" id="5Wc0QVxr69J" role="25WWJ7">
-                                <ref role="1PxNhF" to="rpmx:3ELV2aP1ZdU" resolve="LevelStackDeclaration" />
-                                <node concept="21POm0" id="5Wc0QVxr69K" role="1PxMeX" />
+                                <ref role="1m5ApE" to="rpmx:3ELV2aP1ZdU" resolve="LevelStackDeclaration" />
+                                <node concept="21POm0" id="5Wc0QVxr69K" role="1m5AlR" />
                               </node>
                             </node>
                           </node>

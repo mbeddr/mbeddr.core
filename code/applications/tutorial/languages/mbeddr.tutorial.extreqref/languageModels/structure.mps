@@ -2,8 +2,8 @@
 <model ref="r:79803cd7-885d-4e28-8672-973d389d71b6(mbeddr.tutorial.extreqref.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="26ao" ref="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" implicit="true" />
@@ -13,8 +13,8 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -25,6 +25,7 @@
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
     </language>
@@ -37,26 +38,28 @@
   <node concept="1TIwiD" id="GKLijSJPqi">
     <property role="TrG5h" value="ExtReqTraceTarget" />
     <property role="34LRSv" value="ext" />
-    <property role="1pbfSe" value="66067382" />
+    <property role="EcuMT" value="806361095882102418" />
     <ref role="1TJDcQ" to="26ao:GKLijSDr01" resolve="GenericTraceTarget" />
     <node concept="PrWs8" id="GKLijSJPva" role="PzmwI">
       <ref role="PrY4T" to="vs0r:GKLijS$AT1" resolve="IExtRef" />
     </node>
     <node concept="1TJgyi" id="GKLijSJQv_" role="1TKVEl">
       <property role="TrG5h" value="descr" />
+      <property role="IQ2nx" value="806361095882106853" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="2juwowPhZCr">
     <property role="TrG5h" value="WeatherTraceTarget" />
     <property role="34LRSv" value="weather" />
-    <property role="1pbfSe" value="1512471459" />
+    <property role="EcuMT" value="2656703252204616219" />
     <ref role="1TJDcQ" to="26ao:GKLijSDr01" resolve="GenericTraceTarget" />
     <node concept="PrWs8" id="2juwowPhZCs" role="PzmwI">
       <ref role="PrY4T" to="vs0r:GKLijS$AT1" resolve="IExtRef" />
     </node>
     <node concept="1TJgyi" id="2juwowPhZCt" role="1TKVEl">
       <property role="TrG5h" value="descr" />
+      <property role="IQ2nx" value="2656703252204616221" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

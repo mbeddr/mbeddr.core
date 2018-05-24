@@ -32,11 +32,20 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -44,6 +53,10 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -133,6 +146,31 @@
         <node concept="3clFbS" id="6Kj2zNCqjMO" role="3clFbx">
           <node concept="3clFbJ" id="6GqYvBOfgvG" role="3cqZAp">
             <node concept="3clFbS" id="6GqYvBOfgvH" role="3clFbx">
+              <node concept="3cpWs8" id="6fD9I8g1LHU" role="3cqZAp">
+                <node concept="3cpWsn" id="6fD9I8g1LHX" role="3cpWs9">
+                  <property role="TrG5h" value="unprefixedVarName" />
+                  <node concept="17QB3L" id="6fD9I8g1LHS" role="1tU5fm" />
+                  <node concept="2OqwBi" id="6fD9I8g1Khd" role="33vP2m">
+                    <node concept="2OqwBi" id="6fD9I8g1Jv2" role="2Oq$k0">
+                      <node concept="1YBJjd" id="6fD9I8g1JkV" role="2Oq$k0">
+                        <ref role="1YBMHb" node="2Vizpn2MelG" resolve="var" />
+                      </node>
+                      <node concept="3TrcHB" id="6fD9I8g1JHO" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6fD9I8g1KST" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                      <node concept="Xl_RD" id="6fD9I8g1KTD" role="37wK5m">
+                        <property role="Xl_RC" value="export " />
+                      </node>
+                      <node concept="Xl_RD" id="6fD9I8g1Lcl" role="37wK5m">
+                        <property role="Xl_RC" value="" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbJ" id="2Vizpn2MewT" role="3cqZAp">
                 <node concept="3clFbS" id="2Vizpn2MewU" role="3clFbx">
                   <node concept="a7r0C" id="2Vizpn2Mex2" role="3cqZAp">
@@ -159,13 +197,8 @@
                 <node concept="3fqX7Q" id="2Vizpn2MewX" role="3clFbw">
                   <node concept="2OqwBi" id="2Vizpn2MewH" role="3fr31v">
                     <node concept="2OqwBi" id="2Vizpn2MelP" role="2Oq$k0">
-                      <node concept="2OqwBi" id="2Vizpn2MelK" role="2Oq$k0">
-                        <node concept="1YBJjd" id="2Vizpn2MelJ" role="2Oq$k0">
-                          <ref role="1YBMHb" node="2Vizpn2MelG" resolve="var" />
-                        </node>
-                        <node concept="3TrcHB" id="2Vizpn2MelO" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
+                      <node concept="37vLTw" id="6fD9I8g1M1o" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6fD9I8g1LHX" resolve="unprefixedVarName" />
                       </node>
                       <node concept="liA8E" id="2Vizpn2MewG" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
@@ -173,13 +206,8 @@
                     </node>
                     <node concept="liA8E" id="2Vizpn2MewL" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                      <node concept="2OqwBi" id="2Vizpn2MewN" role="37wK5m">
-                        <node concept="1YBJjd" id="2Vizpn2MewM" role="2Oq$k0">
-                          <ref role="1YBMHb" node="2Vizpn2MelG" resolve="var" />
-                        </node>
-                        <node concept="3TrcHB" id="2Vizpn2MewR" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
+                      <node concept="37vLTw" id="6fD9I8g1Mtx" role="37wK5m">
+                        <ref role="3cqZAo" node="6fD9I8g1LHX" resolve="unprefixedVarName" />
                       </node>
                     </node>
                   </node>
@@ -211,7 +239,6 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="6Kj2zNCqRaB" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="2Vizpn2MelG" role="1YuTPh">
       <property role="TrG5h" value="var" />

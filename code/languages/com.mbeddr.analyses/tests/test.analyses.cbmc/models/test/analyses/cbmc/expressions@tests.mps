@@ -5,7 +5,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -20,6 +20,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -84,6 +85,7 @@
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -101,10 +103,22 @@
   </node>
   <node concept="1lH9Xt" id="72mSD5RZmWf">
     <property role="TrG5h" value="ValidEnumeration" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="72mSD5RZmWg" role="1SL9yI">
       <property role="TrG5h" value="testImplies" />
       <node concept="3cqZAl" id="72mSD5RZmWh" role="3clF45" />
       <node concept="3clFbS" id="72mSD5RZmWi" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVh3W8" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVh3W9" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVh3W7" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVh3Wa" role="33vP2m">
+              <property role="BaBD8" value="hppc" />
+              <property role="BaHAW" value="expressions" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="72mSD5RZmWj" role="3cqZAp">
           <node concept="3cpWsn" id="72mSD5RZmWk" role="3cpWs9">
             <property role="TrG5h" value="results" />
@@ -116,10 +130,8 @@
             <node concept="NRdvd" id="72mSD5S011O" role="33vP2m">
               <ref role="1Pybhc" to="3h46:6BM8NjXdyVB" resolve="AnalysesCoreTestingFacade" />
               <ref role="37wK5l" to="3h46:6BM8NjXdBhl" resolve="checkAsserts" />
-              <node concept="BaHAS" id="72mSD5S011P" role="37wK5m">
-                <property role="BaBD8" value="hppc" />
-                <property role="BaHAW" value="expressions" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVh3Wb" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVh3W9" resolve="m" />
               </node>
               <node concept="Xl_RD" id="72mSD5S011Q" role="37wK5m">
                 <property role="Xl_RC" value="valid_enum" />
@@ -169,12 +181,12 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="72mSD5RZmWL" role="3cqZAp" />
       </node>
     </node>
   </node>
   <node concept="1lH9Xt" id="7CSU6RS0JMX">
     <property role="TrG5h" value="Implies" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="7CSU6RS0JMY" role="1SL9yI">
       <property role="TrG5h" value="testImplies" />
       <node concept="3cqZAl" id="7CSU6RS0JMZ" role="3clF45" />
@@ -262,7 +274,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7CSU6RS13C8" role="3cqZAp" />
       </node>
     </node>
   </node>

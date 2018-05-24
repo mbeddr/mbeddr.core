@@ -2,7 +2,7 @@
 <model ref="r:1ea8b6ef-fdd3-44fe-8420-0322a5c98c7d(com.mbeddr.mpsutil.ccmenu.runtime.descriptor)">
   <persistence version="9" />
   <languages>
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -92,9 +92,10 @@
       <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="8465538089690917625" name="param" index="TUOzN" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -244,6 +245,14 @@
     <node concept="3clFb_" id="1uZEtAikauW" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="isApplicable" />
+      <node concept="P$JXv" id="1uZEtAikaE2" role="lGtFl">
+        <node concept="TUZQ0" id="1uZEtAikaE5" role="3nqlJM">
+          <property role="TUZQ4" value="Null means the default tab" />
+          <node concept="zr_55" id="4yYSJc_l6Sd" role="zr_5Q">
+            <ref role="zr_51" node="1uZEtAikaCi" resolve="groupName" />
+          </node>
+        </node>
+      </node>
       <node concept="37vLTG" id="1uZEtAikaCi" role="3clF46">
         <property role="TrG5h" value="groupName" />
         <node concept="17QB3L" id="1uZEtAikaD8" role="1tU5fm" />
@@ -254,14 +263,6 @@
       <node concept="10P_77" id="1uZEtAikaBv" role="3clF45" />
       <node concept="3Tm1VV" id="1uZEtAikauZ" role="1B3o_S" />
       <node concept="3clFbS" id="1uZEtAikav0" role="3clF47" />
-      <node concept="P$JXv" id="1uZEtAikaE2" role="lGtFl">
-        <node concept="TUZQ0" id="1uZEtAikaE5" role="TUOzN">
-          <property role="TUZQ4" value="Null means the default tab" />
-          <node concept="zr_55" id="1uZEtAikaE7" role="zr_5Q">
-            <ref role="zr_51" node="1uZEtAikaCi" resolve="groupName" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="3clFb_" id="1uZEtAijGSg" role="jymVt">
       <property role="1EzhhJ" value="true" />

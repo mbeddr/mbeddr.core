@@ -5,7 +5,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -21,6 +21,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -114,6 +115,7 @@
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -142,10 +144,22 @@
   </registry>
   <node concept="1lH9Xt" id="126LgZ0MXjQ">
     <property role="TrG5h" value="PPC_Tests" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="126LgZ0MXjR" role="1SL9yI">
       <property role="TrG5h" value="testNoPPC" />
       <node concept="3cqZAl" id="126LgZ0MXjS" role="3clF45" />
       <node concept="3clFbS" id="126LgZ0MXjT" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVholr" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhols" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVholq" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVholt" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="ppc" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7yT88Oq2n9V" role="3cqZAp">
           <node concept="3cpWsn" id="7yT88Oq2n9Y" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -157,10 +171,8 @@
             <node concept="NRdvd" id="3_HSwtcLyax" role="33vP2m">
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
               <ref role="37wK5l" to="dxnt:5KvlJsgh9pp" resolve="checkPrePostCondition" />
-              <node concept="BaHAS" id="3_HSwtcLyay" role="37wK5m">
-                <property role="BaBD8" value="pro" />
-                <property role="BaHAW" value="ppc" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVholu" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVhols" resolve="m" />
               </node>
               <node concept="Xl_RD" id="3_HSwtcLyaz" role="37wK5m">
                 <property role="Xl_RC" value="ComponentWithNoPpc" />
@@ -185,6 +197,17 @@
       <property role="TrG5h" value="testPPCNotUsed" />
       <node concept="3cqZAl" id="126LgZ0MXk9" role="3clF45" />
       <node concept="3clFbS" id="126LgZ0MXka" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVhpCb" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhpCc" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVhpCa" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVhpCd" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="ppc" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7yT88Oq2FVa" role="3cqZAp">
           <node concept="3cpWsn" id="7yT88Oq2FVb" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -203,10 +226,8 @@
                 <node concept="NRdvd" id="3_HSwtcLwZd" role="10QFUP">
                   <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
                   <ref role="37wK5l" to="dxnt:5KvlJsgh9pp" resolve="checkPrePostCondition" />
-                  <node concept="BaHAS" id="3_HSwtcLwZe" role="37wK5m">
-                    <property role="BaBD8" value="pro" />
-                    <property role="BaHAW" value="ppc" />
-                    <property role="BaGAP" value="" />
+                  <node concept="37vLTw" id="5EwdfGVhpCe" role="37wK5m">
+                    <ref role="3cqZAo" node="5EwdfGVhpCc" resolve="m" />
                   </node>
                   <node concept="Xl_RD" id="3_HSwtcLwZf" role="37wK5m">
                     <property role="Xl_RC" value="ComponentWithNoUsedPpc" />
@@ -351,6 +372,17 @@
       <property role="TrG5h" value="testTrianglePositive" />
       <node concept="3cqZAl" id="6R7PIUqdvzi" role="3clF45" />
       <node concept="3clFbS" id="6R7PIUqdvzj" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVhqU1" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhqU2" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVhqU0" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVhqU3" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="ppc" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6R7PIUqdvzk" role="3cqZAp">
           <node concept="3cpWsn" id="6R7PIUqdvzl" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -362,10 +394,8 @@
             <node concept="NRdvd" id="3_HSwtcLpsI" role="33vP2m">
               <ref role="37wK5l" to="dxnt:5KvlJsgh9pp" resolve="checkPrePostCondition" />
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
-              <node concept="BaHAS" id="3_HSwtcLpsJ" role="37wK5m">
-                <property role="BaBD8" value="pro" />
-                <property role="BaHAW" value="ppc" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVhqU4" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVhqU2" resolve="m" />
               </node>
               <node concept="Xl_RD" id="3_HSwtcLpsK" role="37wK5m">
                 <property role="Xl_RC" value="TriangleComponentPositive" />
@@ -605,6 +635,17 @@
       <property role="TrG5h" value="testTriangleNegative" />
       <node concept="3cqZAl" id="7hfS_9mlDQZ" role="3clF45" />
       <node concept="3clFbS" id="7hfS_9mlDR0" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVhsbR" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhsbS" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVhsbQ" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVhsbT" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="ppc" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7hfS_9mlDR1" role="3cqZAp">
           <node concept="3cpWsn" id="7hfS_9mlDR2" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -616,10 +657,8 @@
             <node concept="NRdvd" id="3_HSwtcLqIQ" role="33vP2m">
               <ref role="37wK5l" to="dxnt:5KvlJsgh9pp" resolve="checkPrePostCondition" />
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
-              <node concept="BaHAS" id="3_HSwtcLqIR" role="37wK5m">
-                <property role="BaBD8" value="pro" />
-                <property role="BaHAW" value="ppc" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVhsbU" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVhsbS" resolve="m" />
               </node>
               <node concept="Xl_RD" id="3_HSwtcLqIS" role="37wK5m">
                 <property role="Xl_RC" value="TriangleComponentNegative" />
@@ -852,6 +891,17 @@
       <property role="TrG5h" value="testTriangleAlternate" />
       <node concept="3cqZAl" id="7hfS_9mlDSR" role="3clF45" />
       <node concept="3clFbS" id="7hfS_9mlDSS" role="3clF47">
+        <node concept="3cpWs8" id="5EwdfGVhtoO" role="3cqZAp">
+          <node concept="3cpWsn" id="5EwdfGVhtoP" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="5EwdfGVhtoN" role="1tU5fm" />
+            <node concept="BaHAS" id="5EwdfGVhtoQ" role="33vP2m">
+              <property role="BaBD8" value="pro" />
+              <property role="BaHAW" value="ppc" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1kjPA_ylGDo" role="3cqZAp">
           <node concept="3cpWsn" id="1kjPA_ylGDp" role="3cpWs9">
             <property role="TrG5h" value="res" />
@@ -863,10 +913,8 @@
             <node concept="NRdvd" id="1kjPA_ylGDz" role="33vP2m">
               <ref role="1Pybhc" to="dxnt:5KvlJsgh68f" resolve="CProverComponentsTestingFacade" />
               <ref role="37wK5l" to="dxnt:5KvlJsgh9pp" resolve="checkPrePostCondition" />
-              <node concept="BaHAS" id="1kjPA_ylGD$" role="37wK5m">
-                <property role="BaBD8" value="pro" />
-                <property role="BaHAW" value="ppc" />
-                <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="5EwdfGVhtoR" role="37wK5m">
+                <ref role="3cqZAo" node="5EwdfGVhtoP" resolve="m" />
               </node>
               <node concept="Xl_RD" id="1kjPA_ylHBU" role="37wK5m">
                 <property role="Xl_RC" value="TriangleComponentAlternate" />

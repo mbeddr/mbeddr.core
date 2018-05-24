@@ -3,10 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
   </languages>
   <imports>
-    <import index="ffeo" ref="422c2909-59d6-41a9-b318-40e6256b250f/r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build/jetbrains.mps.ide.build)" />
+    <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -113,7 +113,7 @@
     <property role="TrG5h" value="tempalate" />
     <node concept="2_Ic$z" id="16IL9jC9GlE" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="16IL9jC9GlF" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />

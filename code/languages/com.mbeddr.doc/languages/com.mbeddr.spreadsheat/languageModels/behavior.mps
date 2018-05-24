@@ -131,6 +131,10 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -157,10 +161,7 @@
         <reference id="1240930444946" name="member" index="3HdYuM" />
       </concept>
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -412,8 +413,8 @@
                 </node>
                 <node concept="2OqwBi" id="1LnB5xdJsMu" role="33vP2m">
                   <node concept="1PxgMI" id="1LnB5xdJsMv" role="2Oq$k0">
-                    <ref role="1PxNhF" to="gnwj:1LnB5xdvOaC" resolve="Style" />
-                    <node concept="2OqwBi" id="1LnB5xdJsMw" role="1PxMeX">
+                    <ref role="1m5ApE" to="gnwj:1LnB5xdvOaC" resolve="Style" />
+                    <node concept="2OqwBi" id="1LnB5xdJsMw" role="1m5AlR">
                       <node concept="13iPFW" id="1LnB5xdJsMx" role="2Oq$k0" />
                       <node concept="1mfA1w" id="1LnB5xdJsMy" role="2OqNvi" />
                     </node>
@@ -464,8 +465,8 @@
         <node concept="3clFbF" id="1LnB5xdJeg$" role="3cqZAp">
           <node concept="2OqwBi" id="1LnB5xdJeg9" role="3clFbG">
             <node concept="1PxgMI" id="1LnB5xdJega" role="2Oq$k0">
-              <ref role="1PxNhF" to="gnwj:1LnB5xdJcUt" resolve="BoldStyleProperty" />
-              <node concept="2OqwBi" id="1LnB5xdJegb" role="1PxMeX">
+              <ref role="1m5ApE" to="gnwj:1LnB5xdJcUt" resolve="BoldStyleProperty" />
+              <node concept="2OqwBi" id="1LnB5xdJegb" role="1m5AlR">
                 <node concept="13iPFW" id="1LnB5xdJegA" role="2Oq$k0" />
                 <node concept="2qgKlT" id="1LnB5xdJegd" role="2OqNvi">
                   <ref role="37wK5l" node="1LnB5xdJe7T" resolve="findProperty" />
@@ -490,8 +491,8 @@
         <node concept="3clFbF" id="1LnB5xdJegF" role="3cqZAp">
           <node concept="2OqwBi" id="1LnB5xdJegG" role="3clFbG">
             <node concept="1PxgMI" id="1LnB5xdJegH" role="2Oq$k0">
-              <ref role="1PxNhF" to="gnwj:1LnB5xdJcWX" resolve="ItalicStyleProperty" />
-              <node concept="2OqwBi" id="1LnB5xdJegI" role="1PxMeX">
+              <ref role="1m5ApE" to="gnwj:1LnB5xdJcWX" resolve="ItalicStyleProperty" />
+              <node concept="2OqwBi" id="1LnB5xdJegI" role="1m5AlR">
                 <node concept="13iPFW" id="1LnB5xdJegJ" role="2Oq$k0" />
                 <node concept="2qgKlT" id="1LnB5xdJegK" role="2OqNvi">
                   <ref role="37wK5l" node="1LnB5xdJe7T" resolve="findProperty" />
@@ -517,8 +518,8 @@
       <node concept="3clFbS" id="1LnB5xdJeh4" role="3clF47">
         <node concept="3clFbF" id="1LnB5xdJeh5" role="3cqZAp">
           <node concept="1PxgMI" id="1LnB5xdJeh7" role="3clFbG">
-            <ref role="1PxNhF" to="gnwj:1LnB5xdJe7o" resolve="BackgroundColorStyleProperty" />
-            <node concept="2OqwBi" id="1LnB5xdJeh8" role="1PxMeX">
+            <ref role="1m5ApE" to="gnwj:1LnB5xdJe7o" resolve="BackgroundColorStyleProperty" />
+            <node concept="2OqwBi" id="1LnB5xdJeh8" role="1m5AlR">
               <node concept="13iPFW" id="1LnB5xdJeh9" role="2Oq$k0" />
               <node concept="2qgKlT" id="1LnB5xdJeha" role="2OqNvi">
                 <ref role="37wK5l" node="1LnB5xdJe7T" resolve="findProperty" />
@@ -540,8 +541,8 @@
       <node concept="3clFbS" id="1LnB5xdJehh" role="3clF47">
         <node concept="3clFbF" id="1LnB5xdJehi" role="3cqZAp">
           <node concept="1PxgMI" id="1LnB5xdJehj" role="3clFbG">
-            <ref role="1PxNhF" to="gnwj:1LnB5xdJe7m" resolve="TextColorStyleProperty" />
-            <node concept="2OqwBi" id="1LnB5xdJehk" role="1PxMeX">
+            <ref role="1m5ApE" to="gnwj:1LnB5xdJe7m" resolve="TextColorStyleProperty" />
+            <node concept="2OqwBi" id="1LnB5xdJehk" role="1m5AlR">
               <node concept="13iPFW" id="1LnB5xdJehl" role="2Oq$k0" />
               <node concept="2qgKlT" id="1LnB5xdJehm" role="2OqNvi">
                 <ref role="37wK5l" node="1LnB5xdJe7T" resolve="findProperty" />
@@ -562,8 +563,8 @@
         <node concept="3clFbF" id="1LnB5xdJens" role="3cqZAp">
           <node concept="2OqwBi" id="1LnB5xdJer5" role="3clFbG">
             <node concept="1PxgMI" id="1LnB5xdJent" role="2Oq$k0">
-              <ref role="1PxNhF" to="gnwj:1LnB5xdJe6Y" resolve="TopLeftRightBorderStyleProperty" />
-              <node concept="2OqwBi" id="1LnB5xdJenu" role="1PxMeX">
+              <ref role="1m5ApE" to="gnwj:1LnB5xdJe6Y" resolve="TopLeftRightBorderStyleProperty" />
+              <node concept="2OqwBi" id="1LnB5xdJenu" role="1m5AlR">
                 <node concept="13iPFW" id="1LnB5xdJenv" role="2Oq$k0" />
                 <node concept="2qgKlT" id="1LnB5xdJenw" role="2OqNvi">
                   <ref role="37wK5l" node="1LnB5xdJe7T" resolve="findProperty" />
@@ -588,8 +589,8 @@
         <node concept="3clFbF" id="1LnB5xdJenJ" role="3cqZAp">
           <node concept="2OqwBi" id="1LnB5xdJepx" role="3clFbG">
             <node concept="1PxgMI" id="1LnB5xdJenK" role="2Oq$k0">
-              <ref role="1PxNhF" to="gnwj:1LnB5xdJe6O" resolve="BottomBorderStyleProperty" />
-              <node concept="2OqwBi" id="1LnB5xdJenL" role="1PxMeX">
+              <ref role="1m5ApE" to="gnwj:1LnB5xdJe6O" resolve="BottomBorderStyleProperty" />
+              <node concept="2OqwBi" id="1LnB5xdJenL" role="1m5AlR">
                 <node concept="13iPFW" id="1LnB5xdJenM" role="2Oq$k0" />
                 <node concept="2qgKlT" id="1LnB5xdJenN" role="2OqNvi">
                   <ref role="37wK5l" node="1LnB5xdJe7T" resolve="findProperty" />
@@ -614,8 +615,8 @@
         <node concept="3clFbF" id="1LnB5xdJert" role="3cqZAp">
           <node concept="2OqwBi" id="1LnB5xdJeru" role="3clFbG">
             <node concept="1PxgMI" id="1LnB5xdJerv" role="2Oq$k0">
-              <ref role="1PxNhF" to="gnwj:1LnB5xdJe6$" resolve="AlignmentStyleProperty" />
-              <node concept="2OqwBi" id="1LnB5xdJerw" role="1PxMeX">
+              <ref role="1m5ApE" to="gnwj:1LnB5xdJe6$" resolve="AlignmentStyleProperty" />
+              <node concept="2OqwBi" id="1LnB5xdJerw" role="1m5AlR">
                 <node concept="13iPFW" id="1LnB5xdJerx" role="2Oq$k0" />
                 <node concept="2qgKlT" id="1LnB5xdJery" role="2OqNvi">
                   <ref role="37wK5l" node="1LnB5xdJe7T" resolve="findProperty" />
@@ -640,8 +641,8 @@
         <node concept="3clFbF" id="1LnB5xdJesd" role="3cqZAp">
           <node concept="2OqwBi" id="1LnB5xdJese" role="3clFbG">
             <node concept="1PxgMI" id="1LnB5xdJesf" role="2Oq$k0">
-              <ref role="1PxNhF" to="gnwj:1LnB5xdJe5W" resolve="FontStyleProperty" />
-              <node concept="2OqwBi" id="1LnB5xdJesg" role="1PxMeX">
+              <ref role="1m5ApE" to="gnwj:1LnB5xdJe5W" resolve="FontStyleProperty" />
+              <node concept="2OqwBi" id="1LnB5xdJesg" role="1m5AlR">
                 <node concept="13iPFW" id="1LnB5xdJesh" role="2Oq$k0" />
                 <node concept="2qgKlT" id="1LnB5xdJesi" role="2OqNvi">
                   <ref role="37wK5l" node="1LnB5xdJe7T" resolve="findProperty" />
@@ -666,8 +667,8 @@
         <node concept="3clFbF" id="7FELQjI3HCw" role="3cqZAp">
           <node concept="2OqwBi" id="7FELQjI3HCx" role="3clFbG">
             <node concept="1PxgMI" id="7FELQjI3HCy" role="2Oq$k0">
-              <ref role="1PxNhF" to="gnwj:7FELQjI3HCg" resolve="FontSizeStyleProperty" />
-              <node concept="2OqwBi" id="7FELQjI3HCz" role="1PxMeX">
+              <ref role="1m5ApE" to="gnwj:7FELQjI3HCg" resolve="FontSizeStyleProperty" />
+              <node concept="2OqwBi" id="7FELQjI3HCz" role="1m5AlR">
                 <node concept="13iPFW" id="7FELQjI3HC$" role="2Oq$k0" />
                 <node concept="2qgKlT" id="7FELQjI3HC_" role="2OqNvi">
                   <ref role="37wK5l" node="1LnB5xdJe7T" resolve="findProperty" />
