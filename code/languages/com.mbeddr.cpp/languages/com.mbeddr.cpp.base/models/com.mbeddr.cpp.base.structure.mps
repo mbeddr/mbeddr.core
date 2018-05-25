@@ -124,9 +124,6 @@
     <node concept="PrWs8" id="2L1k$oXDqK5" role="PzmwI">
       <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualisableConcept" />
     </node>
-    <node concept="PrWs8" id="1Yr26itUKUf" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticConcept" />
-    </node>
     <node concept="PrWs8" id="1Yr26itUKUw" role="PzmwI">
       <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineConcept" />
     </node>
@@ -148,6 +145,9 @@
     <property role="EcuMT" value="5044697665789421253" />
     <property role="TrG5h" value="IClassMemberDeclaration" />
     <property role="3GE5qa" value="class" />
+    <node concept="PrWs8" id="5eDFAXBm97W" role="PrDN$">
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBIrb">
     <property role="EcuMT" value="5044697665789421259" />

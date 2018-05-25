@@ -439,6 +439,9 @@
       <node concept="PMmxH" id="59MAV0yaZs9" role="3EZMnx">
         <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
       </node>
+      <node concept="PMmxH" id="5eDFAXBm98u" role="3EZMnx">
+        <ref role="PMmxG" node="1Yr26itwx8V" resolve="StaticFlag" />
+      </node>
       <node concept="l2Vlx" id="4o2nsMgBJ4g" role="2iSdaV" />
       <node concept="3F1sOY" id="3v5DuFDsWjm" role="3EZMnx">
         <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />

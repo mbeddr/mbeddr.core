@@ -566,6 +566,21 @@
     <ref role="WuzLi" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
     <node concept="11bSqf" id="3v5DuFDt$Z8" role="11c4hB">
       <node concept="3clFbS" id="3v5DuFDt$Z9" role="2VODD2">
+        <node concept="3clFbJ" id="5eDFAXBthOh" role="3cqZAp">
+          <node concept="3clFbS" id="5eDFAXBthOj" role="3clFbx">
+            <node concept="lc7rE" id="5eDFAXBtiDY" role="3cqZAp">
+              <node concept="la8eA" id="5eDFAXBtiEo" role="lcghm">
+                <property role="lacIc" value="static " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5eDFAXBtihO" role="3clFbw">
+            <node concept="117lpO" id="5eDFAXBti4x" role="2Oq$k0" />
+            <node concept="3TrcHB" id="5eDFAXBtiAb" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+            </node>
+          </node>
+        </node>
         <node concept="lc7rE" id="3v5DuFDt$Zt" role="3cqZAp">
           <node concept="l9hG8" id="3v5DuFDt$ZR" role="lcghm">
             <node concept="2OqwBi" id="3v5DuFDt_c5" role="lb14g">
