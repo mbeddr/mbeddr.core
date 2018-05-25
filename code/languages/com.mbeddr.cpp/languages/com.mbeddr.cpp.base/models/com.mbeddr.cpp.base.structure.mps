@@ -529,6 +529,7 @@
   <node concept="PlHQZ" id="2L1k$oXDqJY">
     <property role="EcuMT" value="3188920472790477822" />
     <property role="TrG5h" value="IPureVirtualisable" />
+    <property role="3GE5qa" value="method" />
     <node concept="PrWs8" id="2L1k$oXDqJZ" role="PrDN$">
       <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualisableConcept" />
     </node>

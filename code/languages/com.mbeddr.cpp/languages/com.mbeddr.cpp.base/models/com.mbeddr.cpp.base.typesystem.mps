@@ -1100,6 +1100,7 @@
   </node>
   <node concept="18kY7G" id="2L1k$oXFjdZ">
     <property role="TrG5h" value="check_IPureVirtualisable" />
+    <property role="3GE5qa" value="method" />
     <node concept="3clFbS" id="2L1k$oXFje0" role="18ibNy">
       <node concept="3clFbJ" id="2L1k$oXFjlp" role="3cqZAp">
         <node concept="1Wc70l" id="2L1k$oXFkfQ" role="3clFbw">

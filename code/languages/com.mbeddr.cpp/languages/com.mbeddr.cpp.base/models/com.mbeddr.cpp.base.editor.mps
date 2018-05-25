@@ -1351,6 +1351,7 @@
   </node>
   <node concept="PKFIW" id="1TorPL4sJdQ">
     <property role="TrG5h" value="PureFlag" />
+    <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualisable" />
     <node concept="1kHk_G" id="1TorPL4sJdR" role="2wV5jI">
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
