@@ -295,8 +295,11 @@
       <node concept="PMmxH" id="59MAV0ydrUB" role="3EZMnx">
         <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
       </node>
-      <node concept="1kHk_G" id="6ddXmWe4Fhj" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:4K6s$_sMpMQ" resolve="static" />
+      <node concept="PMmxH" id="1Yr26itUKV_" role="3EZMnx">
+        <ref role="PMmxG" node="1Yr26itwx8V" resolve="StaticFlag" />
+      </node>
+      <node concept="PMmxH" id="1Yr26itUKV5" role="3EZMnx">
+        <ref role="PMmxG" node="1Yr26itwsTs" resolve="InlineFlag" />
       </node>
       <node concept="PMmxH" id="6ddXmWeaxpU" role="3EZMnx">
         <ref role="PMmxG" node="1TorPL4sJdQ" resolve="PureFlag" />
