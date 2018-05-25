@@ -1424,9 +1424,5 @@
       <node concept="l2Vlx" id="3LE5RBQtFMh" role="2iSdaV" />
     </node>
   </node>
-  <node concept="3p36aQ" id="1uKPZVPvYHk">
-    <property role="3GE5qa" value="class" />
-    <ref role="aqKnT" to="wnzg:3LE5RBQDkXZ" resolve="LocalClassVarRef" />
-  </node>
 </model>
 
