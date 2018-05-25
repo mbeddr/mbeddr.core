@@ -74,10 +74,10 @@
       </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
-      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticConcept" flags="ng" index="226hDU">
+      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlagConcept" flags="ng" index="226hDU">
         <property id="2277423264798216735" name="isStatic" index="226hDV" />
       </concept>
-      <concept id="2277423264798199359" name="com.mbeddr.cpp.base.structure.IInlineConcept" flags="ng" index="226Gpr">
+      <concept id="2277423264798199359" name="com.mbeddr.cpp.base.structure.IInlineFlagConcept" flags="ng" index="226Gpr">
         <property id="2277423264798199360" name="isInlined" index="226Go$" />
       </concept>
       <concept id="7240228573260630076" name="com.mbeddr.cpp.base.structure.ConstructorVoidType" flags="ng" index="2dFNQU" />
@@ -90,10 +90,10 @@
         <property id="7844497894798008385" name="visibility" index="2gom44" />
         <reference id="7844497894798008388" name="parent_class" index="2gom41" />
       </concept>
-      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualisableConcept" flags="ng" index="hL25U">
+      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualFlagConcept" flags="ng" index="hL25U">
         <property id="3188920472788366141" name="isVirtual" index="hL25V" />
       </concept>
-      <concept id="3188920472790477822" name="com.mbeddr.cpp.base.structure.IPureVirtualisableConcept" flags="ng" index="hTfAS">
+      <concept id="3188920472790477822" name="com.mbeddr.cpp.base.structure.IPureVirtualFlagConcept" flags="ng" index="hTfAS">
         <property id="3188920472790477826" name="isPureVirtual" index="hTfT4" />
       </concept>
       <concept id="137823117410394117" name="com.mbeddr.cpp.base.structure.ConstructorInitializedConstructor" flags="ng" index="yZclw">
@@ -971,9 +971,6 @@
           <node concept="3TlMh9" id="7wcjSRttVSd" role="yU53$">
             <property role="2hmy$m" value="3" />
           </node>
-        </node>
-        <node concept="yZclw" id="7wcjSRtzLAr" role="1YC0t0">
-          <ref role="yKYgm" node="7wcjSRttVKs" resolve="ParentClass" />
         </node>
       </node>
       <node concept="2gom5y" id="7wcjSRtzLBl" role="3mBdys">
