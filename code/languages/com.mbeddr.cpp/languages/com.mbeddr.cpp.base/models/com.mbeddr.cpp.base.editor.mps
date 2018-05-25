@@ -478,6 +478,9 @@
       <node concept="3F0A7n" id="6ddXmWe6WbN" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
       </node>
+      <node concept="3F0A7n" id="1Yr26iur2x1" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+      </node>
       <node concept="2iRfu4" id="3v5DuFDrgcS" role="2iSdaV" />
       <node concept="PMmxH" id="3v5DuFDpKbk" role="3EZMnx">
         <ref role="PMmxG" node="3v5DuFDr9bv" resolve="MethodSignature_Editor" />
