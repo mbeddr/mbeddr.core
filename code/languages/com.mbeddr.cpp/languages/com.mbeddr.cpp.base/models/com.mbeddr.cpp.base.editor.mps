@@ -584,7 +584,7 @@
   </node>
   <node concept="PKFIW" id="59MAV0yaZn2">
     <property role="TrG5h" value="AccessModifier" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="class" />
     <ref role="1XX52x" to="wnzg:4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     <node concept="3F0A7n" id="59MAV0ycZT1" role="2wV5jI">
       <ref role="1NtTu8" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
