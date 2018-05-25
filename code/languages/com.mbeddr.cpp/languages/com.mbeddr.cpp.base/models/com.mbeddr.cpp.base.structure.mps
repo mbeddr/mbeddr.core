@@ -568,5 +568,15 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="PlHQZ" id="5eDFAXBC$A7">
+    <property role="EcuMT" value="6028541369715411335" />
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="IConstFlagConcept" />
+    <node concept="1TJgyi" id="5eDFAXBC$A8" role="1TKVEl">
+      <property role="IQ2nx" value="6028541369715411336" />
+      <property role="TrG5h" value="isConstant" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
 </model>
 

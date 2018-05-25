@@ -1396,5 +1396,15 @@
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
+  <node concept="PKFIW" id="5eDFAXBC$A$">
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="ConstFlag" />
+    <ref role="1XX52x" to="wnzg:5eDFAXBC$A7" resolve="IConstFlagConcept" />
+    <node concept="1kHk_G" id="5eDFAXBC$AA" role="2wV5jI">
+      <property role="ZjSer" value="const" />
+      <ref role="1NtTu8" to="wnzg:5eDFAXBC$A8" resolve="isConstant" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
 </model>
 
