@@ -607,7 +607,7 @@
   </node>
   <node concept="18kY7G" id="4K6s$_sNy5E">
     <property role="TrG5h" value="StaticClassMethodCallRule" />
-    <property role="3GE5qa" value="class" />
+    <property role="3GE5qa" value="method" />
     <node concept="3clFbS" id="4K6s$_sNy5F" role="18ibNy">
       <node concept="3SKdUt" id="4K6s$_sN_dW" role="3cqZAp">
         <node concept="3SKdUq" id="4K6s$_sN_dY" role="3SKWNk">
@@ -730,8 +730,8 @@
                 </node>
               </node>
             </node>
-            <node concept="3TrcHB" id="4K6s$_sNCIX" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:4K6s$_sMpMQ" resolve="static" />
+            <node concept="3TrcHB" id="1Yr26iu9rZv" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
             </node>
           </node>
           <node concept="2OqwBi" id="4K6s$_sNyYA" role="3uHU7B">

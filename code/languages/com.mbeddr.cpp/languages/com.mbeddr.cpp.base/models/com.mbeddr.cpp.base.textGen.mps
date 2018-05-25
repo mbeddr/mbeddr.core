@@ -515,6 +515,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="1Yr26iuHnLn" role="3cqZAp">
+          <node concept="3clFbS" id="1Yr26iuHnLp" role="3clFbx">
+            <node concept="lc7rE" id="1Yr26iuvAG2" role="3cqZAp">
+              <node concept="la8eA" id="1Yr26iuvAGs" role="lcghm">
+                <property role="lacIc" value="static " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1Yr26iuHocm" role="3clFbw">
+            <node concept="117lpO" id="1Yr26iuHnRP" role="2Oq$k0" />
+            <node concept="3TrcHB" id="1Yr26iuHpjF" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+            </node>
+          </node>
+        </node>
         <node concept="lc7rE" id="2Ai0Gt9WtTA" role="3cqZAp">
           <node concept="1bDJIP" id="2Ai0Gt9WtTY" role="lcghm">
             <ref role="1rvKf6" node="2Ai0Gt9WlKT" resolve="generateMethodPrototype" />
