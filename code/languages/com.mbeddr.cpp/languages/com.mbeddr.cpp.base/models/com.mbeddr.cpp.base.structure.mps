@@ -682,12 +682,12 @@
     </node>
     <node concept="M4N5e" id="45rBLTHEL5C" role="M5hS2">
       <property role="1uS6qo" value="&lt;&lt;=" />
-      <property role="2fHolG" value="bitShiftLeftAssignement" />
+      <property role="2fHolG" value="bitShiftLeftAssignment" />
       <property role="1uS6qv" value="&lt;&lt;=" />
     </node>
     <node concept="M4N5e" id="45rBLTHEL6t" role="M5hS2">
       <property role="1uS6qo" value="&gt;&gt;=" />
-      <property role="2fHolG" value="bitShiftRightAssignement" />
+      <property role="2fHolG" value="bitShiftRightAssignment" />
       <property role="1uS6qv" value="&gt;&gt;=" />
     </node>
     <node concept="M4N5e" id="45rBLTHELu4" role="M5hS2">
@@ -791,6 +791,7 @@
     <property role="EcuMT" value="4353317802403516287" />
     <property role="3GE5qa" value="class" />
     <property role="TrG5h" value="LocalClassVarRef" />
+    <property role="R4oN_" value="Override LocalVarRef on classes only. Used for operator overloading." />
     <ref role="1TJDcQ" to="c4fa:1OcdQnyStpU" resolve="LocalVarRef" />
   </node>
 </model>
