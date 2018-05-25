@@ -1142,6 +1142,7 @@
   </node>
   <node concept="18kY7G" id="2L1k$oXKZ8L">
     <property role="TrG5h" value="check_MethodDeclaration" />
+    <property role="3GE5qa" value="method" />
     <node concept="3clFbS" id="2L1k$oXKZ8M" role="18ibNy">
       <node concept="3clFbJ" id="2L1k$oXKZ8S" role="3cqZAp">
         <node concept="3clFbS" id="2L1k$oXKZ8U" role="3clFbx">
@@ -1213,6 +1214,76 @@
     <node concept="1YaCAy" id="2L1k$oXKZ8O" role="1YuTPh">
       <property role="TrG5h" value="methodDeclaration" />
       <ref role="1YaFvo" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5eDFAXBGiPA">
+    <property role="TrG5h" value="check_AttributeDeclaration" />
+    <node concept="3clFbS" id="5eDFAXBGiPB" role="18ibNy">
+      <node concept="3clFbJ" id="5eDFAXBGiPH" role="3cqZAp">
+        <node concept="1Wc70l" id="5eDFAXBGk9Y" role="3clFbw">
+          <node concept="2OqwBi" id="5eDFAXBGlz4" role="3uHU7w">
+            <node concept="1YBJjd" id="5eDFAXBGldA" role="2Oq$k0">
+              <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="5eDFAXBGlZ7" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:5eDFAXBC$A8" resolve="isConstant" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5eDFAXBGj7w" role="3uHU7B">
+            <node concept="1YBJjd" id="5eDFAXBGiPW" role="2Oq$k0">
+              <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="5eDFAXBGjvB" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="5eDFAXBGiPJ" role="3clFbx">
+          <node concept="2MkqsV" id="5eDFAXBGm3m" role="3cqZAp">
+            <node concept="Xl_RD" id="5eDFAXBGm3_" role="2MkJ7o">
+              <property role="Xl_RC" value="Field can't be both static and constant" />
+            </node>
+            <node concept="1YBJjd" id="5eDFAXBGm46" role="2OEOjV">
+              <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="5eDFAXBGm62" role="3cqZAp" />
+      <node concept="3clFbJ" id="5eDFAXBGm6V" role="3cqZAp">
+        <node concept="3clFbS" id="5eDFAXBGm6X" role="3clFbx">
+          <node concept="2MkqsV" id="5eDFAXBGpwJ" role="3cqZAp">
+            <node concept="Xl_RD" id="5eDFAXBGpAz" role="2MkJ7o">
+              <property role="Xl_RC" value="Field can't be both static and volatile" />
+            </node>
+            <node concept="1YBJjd" id="5eDFAXBGpFX" role="2OEOjV">
+              <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="5eDFAXBGovH" role="3clFbw">
+          <node concept="2OqwBi" id="5eDFAXBGoVQ" role="3uHU7w">
+            <node concept="1YBJjd" id="5eDFAXBGoAl" role="2Oq$k0">
+              <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="5eDFAXBGpq9" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:5eDFAXBCpes" resolve="isVolatile" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5eDFAXBGmpc" role="3uHU7B">
+            <node concept="1YBJjd" id="5eDFAXBGm7C" role="2Oq$k0">
+              <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="5eDFAXBGmRd" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5eDFAXBGiPD" role="1YuTPh">
+      <property role="TrG5h" value="attributeDeclaration" />
+      <ref role="1YaFvo" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
     </node>
   </node>
 </model>
