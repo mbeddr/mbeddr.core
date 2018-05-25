@@ -558,5 +558,15 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="PlHQZ" id="5eDFAXBCper">
+    <property role="EcuMT" value="6028541369715364763" />
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="IVolatileFlagConcept" />
+    <node concept="1TJgyi" id="5eDFAXBCpes" role="1TKVEl">
+      <property role="IQ2nx" value="6028541369715364764" />
+      <property role="TrG5h" value="isVolatile" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
 </model>
 

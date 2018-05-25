@@ -1386,5 +1386,15 @@
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
+  <node concept="PKFIW" id="5eDFAXBCpeS">
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="VolatileFlag" />
+    <ref role="1XX52x" to="wnzg:5eDFAXBCper" resolve="IVolatileFlagConcept" />
+    <node concept="1kHk_G" id="5eDFAXBCpeU" role="2wV5jI">
+      <property role="ZjSer" value="volatile" />
+      <ref role="1NtTu8" to="wnzg:5eDFAXBCpes" resolve="isVolatile" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
 </model>
 

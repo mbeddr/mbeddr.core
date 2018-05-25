@@ -1178,6 +1178,37 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="5eDFAXB$S1T" role="3cqZAp" />
+      <node concept="3clFbJ" id="5eDFAXB$Ser" role="3cqZAp">
+        <node concept="3clFbS" id="5eDFAXB$Set" role="3clFbx">
+          <node concept="2MkqsV" id="5eDFAXB$VOf" role="3cqZAp">
+            <node concept="Xl_RD" id="5eDFAXB$VOx" role="2MkJ7o">
+              <property role="Xl_RC" value="Static method can't be virtual" />
+            </node>
+            <node concept="1YBJjd" id="5eDFAXB$VP9" role="2OEOjV">
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="5eDFAXB$UdE" role="3clFbw">
+          <node concept="2OqwBi" id="5eDFAXB$UO2" role="3uHU7w">
+            <node concept="1YBJjd" id="5eDFAXB$UpA" role="2Oq$k0">
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="5eDFAXB$VCo" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5eDFAXB$SHU" role="3uHU7B">
+            <node concept="1YBJjd" id="5eDFAXB$Sfe" role="2Oq$k0">
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="5eDFAXB$Ty1" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="2L1k$oXKZ8O" role="1YuTPh">
       <property role="TrG5h" value="methodDeclaration" />
