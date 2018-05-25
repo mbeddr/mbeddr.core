@@ -1441,5 +1441,14 @@
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
+  <node concept="PKFIW" id="5eDFAXBS4m$">
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="ThreadLocalFlag" />
+    <ref role="1XX52x" to="wnzg:5eDFAXBS4m7" resolve="IThreadLocalFlag" />
+    <node concept="1kHk_G" id="5eDFAXBS4mA" role="2wV5jI">
+      <property role="ZjSer" value="thread_local" />
+      <ref role="1NtTu8" to="wnzg:5eDFAXBS4m8" resolve="isThreadLocal" />
+    </node>
+  </node>
 </model>
 
