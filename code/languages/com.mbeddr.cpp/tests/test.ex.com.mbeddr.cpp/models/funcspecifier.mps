@@ -67,6 +67,9 @@
       <concept id="5044697665789423998" name="com.mbeddr.cpp.base.structure.INamedClassMemberDeclaration" flags="ng" index="3mBaMM">
         <property id="2995459757115087788" name="visibility" index="1wg9_F" />
       </concept>
+      <concept id="5044697665789421259" name="com.mbeddr.cpp.base.structure.AttributeDeclaration" flags="ng" index="3mBbG7">
+        <child id="4185783222026502647" name="init" index="3XIe9u" />
+      </concept>
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
@@ -162,6 +165,18 @@
     <node concept="3mBW2U" id="1Yr26iukrN$" role="N3F5h">
       <property role="2OOxQR" value="false" />
       <property role="TrG5h" value="SomeClass" />
+      <node concept="3mBbG7" id="5eDFAXBt0Dc" role="3mBdys">
+        <property role="TrG5h" value="staticField" />
+        <property role="226hDV" value="true" />
+        <node concept="26Vqph" id="5eDFAXBt0Ga" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="5eDFAXBt0GE" role="3XIe9u">
+          <property role="2hmy$m" value="0" />
+        </node>
+      </node>
+      <node concept="3u$6M4" id="5eDFAXBt0Ao" role="3mBdys" />
       <node concept="3mB1cK" id="1Yr26iukrNB" role="3mBdys">
         <property role="1wg9_F" value="private" />
         <property role="TrG5h" value="inlinedMethod" />
