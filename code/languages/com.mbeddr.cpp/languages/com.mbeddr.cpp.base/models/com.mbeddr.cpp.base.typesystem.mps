@@ -1100,6 +1100,7 @@
   </node>
   <node concept="18kY7G" id="2L1k$oXFjdZ">
     <property role="TrG5h" value="check_IPureVirtualisable" />
+    <property role="3GE5qa" value="method.flag" />
     <node concept="3clFbS" id="2L1k$oXFje0" role="18ibNy">
       <node concept="3clFbJ" id="2L1k$oXFjlp" role="3cqZAp">
         <node concept="1Wc70l" id="2L1k$oXFkfQ" role="3clFbw">
@@ -1118,7 +1119,7 @@
               <ref role="1YBMHb" node="2L1k$oXFje2" resolve="iPureVirtualisable" />
             </node>
             <node concept="3TrcHB" id="2L1k$oXFjBk" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+              <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
             </node>
           </node>
         </node>
@@ -1136,7 +1137,7 @@
     </node>
     <node concept="1YaCAy" id="2L1k$oXFje2" role="1YuTPh">
       <property role="TrG5h" value="iPureVirtualisable" />
-      <ref role="1YaFvo" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualisable" />
+      <ref role="1YaFvo" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualisableConcept" />
     </node>
   </node>
   <node concept="18kY7G" id="2L1k$oXKZ8L">
@@ -1160,7 +1161,7 @@
                 <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
               </node>
               <node concept="3TrcHB" id="2L1k$oXM0Ew" role="2OqNvi">
-                <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+                <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
               </node>
             </node>
           </node>

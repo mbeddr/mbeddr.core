@@ -74,7 +74,7 @@
   <node concept="2S6QgY" id="2L1k$oXnM2$">
     <property role="TrG5h" value="ToggleVirtual" />
     <property role="2ZfUl0" value="true" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.flag" />
     <ref role="2ZfgGC" to="wnzg:2L1k$oXxncW" resolve="IVirtualisableConcept" />
     <node concept="2S6ZIM" id="2L1k$oXnM2_" role="2ZfVej">
       <node concept="3clFbS" id="2L1k$oXnM2A" role="2VODD2">

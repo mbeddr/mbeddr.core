@@ -305,7 +305,7 @@
         <ref role="PMmxG" node="2L1k$oXm7Pq" resolve="VirtualFlag" />
       </node>
       <node concept="PMmxH" id="3v5DuFDoxUa" role="3EZMnx">
-        <ref role="PMmxG" node="3v5DuFDr9bv" resolve="methodSignature" />
+        <ref role="PMmxG" node="3v5DuFDr9bv" resolve="MethodSignature_Editor" />
       </node>
       <node concept="_tjkj" id="6ddXmWebFfR" role="3EZMnx">
         <node concept="3F1sOY" id="6ddXmWebFgf" role="_tjki">
@@ -470,14 +470,14 @@
     <ref role="1XX52x" to="wnzg:2Ai0Gt9WczV" resolve="MethodPrototype" />
     <node concept="3EZMnI" id="3v5DuFDrgcR" role="2wV5jI">
       <node concept="3F0A7n" id="6ddXmWe6Wbq" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+        <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
       </node>
       <node concept="3F0A7n" id="6ddXmWe6WbN" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
       </node>
       <node concept="2iRfu4" id="3v5DuFDrgcS" role="2iSdaV" />
       <node concept="PMmxH" id="3v5DuFDpKbk" role="3EZMnx">
-        <ref role="PMmxG" node="3v5DuFDr9bv" resolve="methodSignature" />
+        <ref role="PMmxG" node="3v5DuFDr9bv" resolve="MethodSignature_Editor" />
       </node>
       <node concept="3F0ifn" id="3v5DuFDrgdc" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -493,7 +493,8 @@
     <node concept="3F0ifn" id="3v5DuFDls_W" role="2wV5jI" />
   </node>
   <node concept="PKFIW" id="3v5DuFDr9bv">
-    <property role="TrG5h" value="methodSignature" />
+    <property role="TrG5h" value="MethodSignature_Editor" />
+    <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="wnzg:3v5DuFDqYGC" resolve="MethodSignature" />
     <node concept="3EZMnI" id="6Q7bJ$$mLHM" role="2wV5jI">
       <node concept="1kHk_G" id="7K_2cV$Golz" role="3EZMnx">
@@ -723,7 +724,7 @@
   </node>
   <node concept="PKFIW" id="2L1k$oXm7Pq">
     <property role="TrG5h" value="VirtualFlag" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.flag" />
     <ref role="1XX52x" to="wnzg:2L1k$oXxncW" resolve="IVirtualisableConcept" />
     <node concept="1kHk_G" id="2LwGNVbhV8I" role="2wV5jI">
       <property role="ZjSer" value="virtual" />
@@ -1351,10 +1352,32 @@
   </node>
   <node concept="PKFIW" id="1TorPL4sJdQ">
     <property role="TrG5h" value="PureFlag" />
-    <ref role="1XX52x" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualisable" />
+    <property role="3GE5qa" value="method.flag" />
+    <ref role="1XX52x" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualisableConcept" />
     <node concept="1kHk_G" id="1TorPL4sJdR" role="2wV5jI">
+      <property role="ZjSer" value="pure" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+      <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="1Yr26itwsTs">
+    <property role="3GE5qa" value="method.flag" />
+    <property role="TrG5h" value="InlineFlag" />
+    <ref role="1XX52x" to="wnzg:1Yr26itwsSZ" resolve="IInlineConcept" />
+    <node concept="1kHk_G" id="1Yr26itwsTu" role="2wV5jI">
+      <property role="ZjSer" value="inline" />
+      <ref role="1NtTu8" to="wnzg:1Yr26itwsT0" resolve="isInlined" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="1Yr26itwx8V">
+    <property role="3GE5qa" value="method.flag" />
+    <property role="TrG5h" value="StaticFlag" />
+    <ref role="1XX52x" to="wnzg:1Yr26itwx8u" resolve="IStaticConcept" />
+    <node concept="1kHk_G" id="1Yr26itwx8X" role="2wV5jI">
+      <property role="ZjSer" value="static" />
+      <ref role="1NtTu8" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
 </model>
