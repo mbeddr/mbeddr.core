@@ -49,6 +49,8 @@
         <module reference="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" version="0" />
         <module reference="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" version="0" />
         <module reference="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" version="0" />
+        <module reference="8c081446-e4ba-48b7-a7e0-3db40e2c3439(com.mbeddr.cpp.base)" version="0" />
+        <module reference="b341759a-c721-4072-90cf-328bb2724684(com.mbeddr.cpp.expressions)" version="0" />
         <module reference="5e6018dc-dc26-4070-9526-663fdbfe4c10(com.mbeddr.cpp.templates)" version="0" />
         <module reference="5fc3964b-426c-4c8b-871a-2b6c0113c664(com.mbeddr.cpp.templates#01)" version="0" />
         <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
@@ -87,6 +89,11 @@
     <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
     <dependency reexport="false">5e6018dc-dc26-4070-9526-663fdbfe4c10(com.mbeddr.cpp.templates)</dependency>
     <dependency reexport="false">7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</dependency>
+    <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</dependency>
+    <dependency reexport="false">a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</dependency>
+    <dependency reexport="false">8c081446-e4ba-48b7-a7e0-3db40e2c3439(com.mbeddr.cpp.base)</dependency>
+    <dependency reexport="false">b341759a-c721-4072-90cf-328bb2724684(com.mbeddr.cpp.expressions)</dependency>
+    <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="6" />
@@ -128,6 +135,8 @@
     <module reference="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" version="0" />
     <module reference="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" version="0" />
     <module reference="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" version="0" />
+    <module reference="8c081446-e4ba-48b7-a7e0-3db40e2c3439(com.mbeddr.cpp.base)" version="0" />
+    <module reference="b341759a-c721-4072-90cf-328bb2724684(com.mbeddr.cpp.expressions)" version="0" />
     <module reference="5e6018dc-dc26-4070-9526-663fdbfe4c10(com.mbeddr.cpp.templates)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
@@ -158,10 +167,12 @@
     <module reference="e6368d5c-b931-4d4d-9941-07b7da7d2e2d(jetbrains.mps.tool.builder)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
+    <extendedLanguage>8c081446-e4ba-48b7-a7e0-3db40e2c3439(com.mbeddr.cpp.base)</extendedLanguage>
     <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>
     <extendedLanguage>a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</extendedLanguage>
     <extendedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</extendedLanguage>
     <extendedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</extendedLanguage>
+    <extendedLanguage>b341759a-c721-4072-90cf-328bb2724684(com.mbeddr.cpp.expressions)</extendedLanguage>
   </extendedLanguages>
 </language>
 

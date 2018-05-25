@@ -13,6 +13,7 @@
     <import index="3d25" ref="r:b51ed3f8-f18c-4b51-8a93-f4ee7f6adf9a(com.mbeddr.cpp.expressions.structure)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
+    <import index="1yyn" ref="r:64e0a2a9-7957-424b-8102-a5e8a7a73035(com.mbeddr.cpp.templates.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -401,6 +402,90 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="1N32NMNR5by" role="3cqZAp" />
+      <node concept="3clFbJ" id="1N32NMNTKOy" role="3cqZAp">
+        <node concept="3clFbS" id="1N32NMNTKO$" role="3clFbx">
+          <node concept="2MkqsV" id="1N32NMNTZA1" role="3cqZAp">
+            <node concept="Xl_RD" id="1N32NMNTZAj" role="2MkJ7o">
+              <property role="Xl_RC" value="Template class type without template specifiers." />
+            </node>
+            <node concept="1YBJjd" id="1N32NMNTZAO" role="2OEOjV">
+              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="1N32NMNTTlx" role="3clFbw">
+          <node concept="2OqwBi" id="1N32NMNTWE1" role="3uHU7w">
+            <node concept="2OqwBi" id="1N32NMNTUOw" role="2Oq$k0">
+              <node concept="1YBJjd" id="1N32NMNTU0X" role="2Oq$k0">
+                <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+              </node>
+              <node concept="3TrEf2" id="1N32NMNTVAj" role="2OqNvi">
+                <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="1N32NMNTYbg" role="2OqNvi">
+              <node concept="chp4Y" id="1N32NMNTYQw" role="cj9EA">
+                <ref role="cht4Q" to="1yyn:ZKpU3C3Nka" resolve="TemplateClassDeclaration" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="1N32NMNTPbi" role="3uHU7B">
+            <node concept="2OqwBi" id="1N32NMNTPXK" role="3fr31v">
+              <node concept="1YBJjd" id="1N32NMNTPbj" role="2Oq$k0">
+                <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+              </node>
+              <node concept="1mIQ4w" id="1N32NMNTQP1" role="2OqNvi">
+                <node concept="chp4Y" id="1N32NMNTRv6" role="cj9EA">
+                  <ref role="cht4Q" to="1yyn:ZKpU3C47B6" resolve="ITemplateImpl" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="1N32NMNTZWE" role="3cqZAp">
+        <node concept="3clFbS" id="1N32NMNTZWF" role="3clFbx">
+          <node concept="2MkqsV" id="1N32NMNTZWG" role="3cqZAp">
+            <node concept="Xl_RD" id="1N32NMNTZWH" role="2MkJ7o">
+              <property role="Xl_RC" value="Non-emplate class type with template specifiers." />
+            </node>
+            <node concept="1YBJjd" id="1N32NMNTZWI" role="2OEOjV">
+              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="1N32NMNTZWJ" role="3clFbw">
+          <node concept="3fqX7Q" id="1N32NMNU1k4" role="3uHU7w">
+            <node concept="2OqwBi" id="1N32NMNU1k6" role="3fr31v">
+              <node concept="2OqwBi" id="1N32NMNU1k7" role="2Oq$k0">
+                <node concept="1YBJjd" id="1N32NMNU1k8" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+                </node>
+                <node concept="3TrEf2" id="1N32NMNU1k9" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="1N32NMNU1ka" role="2OqNvi">
+                <node concept="chp4Y" id="1N32NMNU1kb" role="cj9EA">
+                  <ref role="cht4Q" to="1yyn:ZKpU3C3Nka" resolve="TemplateClassDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1N32NMNTZWR" role="3uHU7B">
+            <node concept="1YBJjd" id="1N32NMNTZWS" role="2Oq$k0">
+              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+            </node>
+            <node concept="1mIQ4w" id="1N32NMNTZWT" role="2OqNvi">
+              <node concept="chp4Y" id="1N32NMNTZWU" role="cj9EA">
+                <ref role="cht4Q" to="1yyn:ZKpU3C47B6" resolve="ITemplateImpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="1N32NMNTZBi" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="4K6s$_rq5Gi" role="1YuTPh">
       <property role="TrG5h" value="inheritanceInstance" />

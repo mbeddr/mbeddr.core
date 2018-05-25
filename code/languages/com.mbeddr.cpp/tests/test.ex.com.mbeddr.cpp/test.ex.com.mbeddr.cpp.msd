@@ -33,6 +33,7 @@
     <language slang="l:b341759a-c721-4072-90cf-328bb2724684:com.mbeddr.cpp.expressions" version="-1" />
     <language slang="l:dd4979e3-3be6-46b3-9e1e-c36309e30758:com.mbeddr.cpp.modules" version="-1" />
     <language slang="l:236f3e56-2360-4657-9b9d-0cb84f56784d:com.mbeddr.cpp.modules.gen" version="0" />
+    <language slang="l:5e6018dc-dc26-4070-9526-663fdbfe4c10:com.mbeddr.cpp.templates" version="0" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
     <language slang="l:a482b416-d0c9-473f-8f67-725ed642b3f3:com.mbeddr.mpsutil.breadcrumb" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />

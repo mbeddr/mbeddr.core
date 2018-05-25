@@ -2,6 +2,7 @@
 <model ref="r:9e71b142-f269-4237-8701-257cbfe7c45f(test.ex.com.mbeddr.cpp.exceptions)">
   <persistence version="9" />
   <languages>
+    <engage id="236f3e56-2360-4657-9b9d-0cb84f56784d" name="com.mbeddr.cpp.modules.gen" />
     <devkit ref="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" />
   </languages>
   <imports>
