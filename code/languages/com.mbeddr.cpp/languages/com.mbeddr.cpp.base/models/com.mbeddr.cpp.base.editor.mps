@@ -305,7 +305,7 @@
         <ref role="PMmxG" node="2L1k$oXm7Pq" resolve="VirtualFlag" />
       </node>
       <node concept="PMmxH" id="3v5DuFDoxUa" role="3EZMnx">
-        <ref role="PMmxG" node="3v5DuFDr9bv" resolve="methodSignature" />
+        <ref role="PMmxG" node="3v5DuFDr9bv" resolve="MethodSignature_Editor" />
       </node>
       <node concept="_tjkj" id="6ddXmWebFfR" role="3EZMnx">
         <node concept="3F1sOY" id="6ddXmWebFgf" role="_tjki">
@@ -477,7 +477,7 @@
       </node>
       <node concept="2iRfu4" id="3v5DuFDrgcS" role="2iSdaV" />
       <node concept="PMmxH" id="3v5DuFDpKbk" role="3EZMnx">
-        <ref role="PMmxG" node="3v5DuFDr9bv" resolve="methodSignature" />
+        <ref role="PMmxG" node="3v5DuFDr9bv" resolve="MethodSignature_Editor" />
       </node>
       <node concept="3F0ifn" id="3v5DuFDrgdc" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -493,7 +493,8 @@
     <node concept="3F0ifn" id="3v5DuFDls_W" role="2wV5jI" />
   </node>
   <node concept="PKFIW" id="3v5DuFDr9bv">
-    <property role="TrG5h" value="methodSignature" />
+    <property role="TrG5h" value="MethodSignature_Editor" />
+    <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="wnzg:3v5DuFDqYGC" resolve="MethodSignature" />
     <node concept="3EZMnI" id="6Q7bJ$$mLHM" role="2wV5jI">
       <node concept="1kHk_G" id="7K_2cV$Golz" role="3EZMnx">
