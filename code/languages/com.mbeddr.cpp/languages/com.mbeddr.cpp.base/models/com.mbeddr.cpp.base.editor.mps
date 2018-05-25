@@ -1369,5 +1369,15 @@
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
+  <node concept="PKFIW" id="1Yr26itwx8V">
+    <property role="3GE5qa" value="method" />
+    <property role="TrG5h" value="StaticFlag" />
+    <ref role="1XX52x" to="wnzg:1Yr26itwx8u" resolve="IStaticConcept" />
+    <node concept="1kHk_G" id="1Yr26itwx8X" role="2wV5jI">
+      <property role="ZjSer" value="static" />
+      <ref role="1NtTu8" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
 </model>
 
