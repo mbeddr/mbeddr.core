@@ -304,7 +304,7 @@
   <node concept="PlHQZ" id="2L1k$oXxncW">
     <property role="EcuMT" value="3188920472788366140" />
     <property role="TrG5h" value="IVirtualisableConcept" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.flag" />
     <node concept="1TJgyi" id="2L1k$oXxncX" role="1TKVEl">
       <property role="IQ2nx" value="3188920472788366141" />
       <property role="TrG5h" value="isVirtual" />
@@ -529,7 +529,7 @@
   <node concept="PlHQZ" id="2L1k$oXDqJY">
     <property role="EcuMT" value="3188920472790477822" />
     <property role="TrG5h" value="IPureVirtualisableConcept" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.flag" />
     <node concept="PrWs8" id="2L1k$oXDqJZ" role="PrDN$">
       <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualisableConcept" />
     </node>
@@ -541,7 +541,7 @@
   </node>
   <node concept="PlHQZ" id="1Yr26itwsSZ">
     <property role="EcuMT" value="2277423264798199359" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.flag" />
     <property role="TrG5h" value="IInlineConcept" />
     <node concept="1TJgyi" id="1Yr26itwsT0" role="1TKVEl">
       <property role="IQ2nx" value="2277423264798199360" />
@@ -551,7 +551,7 @@
   </node>
   <node concept="PlHQZ" id="1Yr26itwx8u">
     <property role="EcuMT" value="2277423264798216734" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.flag" />
     <property role="TrG5h" value="IStaticConcept" />
     <node concept="1TJgyi" id="1Yr26itwx8v" role="1TKVEl">
       <property role="IQ2nx" value="2277423264798216735" />
