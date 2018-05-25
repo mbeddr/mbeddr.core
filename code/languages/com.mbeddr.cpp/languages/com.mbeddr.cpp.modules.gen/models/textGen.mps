@@ -27,6 +27,10 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -116,6 +120,36 @@
     <ref role="WuzLi" to="pmno:2Ai0Gt9Wx2A" resolve="GenMethodDeclaration" />
     <node concept="11bSqf" id="2Ai0Gt9WzQQ" role="11c4hB">
       <node concept="3clFbS" id="2Ai0Gt9WzQR" role="2VODD2">
+        <node concept="3clFbJ" id="1Yr26iudMR5" role="3cqZAp">
+          <node concept="3clFbS" id="1Yr26iudMR7" role="3clFbx">
+            <node concept="lc7rE" id="1Yr26iudOmy" role="3cqZAp">
+              <node concept="la8eA" id="1Yr26iudOmO" role="lcghm">
+                <property role="lacIc" value="static " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1Yr26iudNy5" role="3clFbw">
+            <node concept="117lpO" id="1Yr26iudN8A" role="2Oq$k0" />
+            <node concept="3TrcHB" id="1Yr26iudOgY" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1Yr26iudOCN" role="3cqZAp">
+          <node concept="3clFbS" id="1Yr26iudOCP" role="3clFbx">
+            <node concept="lc7rE" id="1Yr26iudQ8I" role="3cqZAp">
+              <node concept="la8eA" id="1Yr26iudQ90" role="lcghm">
+                <property role="lacIc" value="inline " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1Yr26iudPkh" role="3clFbw">
+            <node concept="117lpO" id="1Yr26iudOUG" role="2Oq$k0" />
+            <node concept="3TrcHB" id="1Yr26iudQ3a" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1Yr26itwsT0" resolve="isInlined" />
+            </node>
+          </node>
+        </node>
         <node concept="lc7rE" id="2Ai0Gt9WzRb" role="3cqZAp">
           <node concept="1bDJIP" id="2Ai0Gt9WzRB" role="lcghm">
             <ref role="1rvKf6" to="yz0i:2Ai0Gt9WlKT" resolve="generateMethodPrototype" />
