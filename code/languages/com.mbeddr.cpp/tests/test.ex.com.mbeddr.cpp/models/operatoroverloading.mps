@@ -10,6 +10,9 @@
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
+      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
+        <child id="7763322639126652758" name="baseType" index="2umbIo" />
+      </concept>
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
@@ -17,6 +20,7 @@
         <child id="8624890525768479139" name="textblock" index="3SJzmv" />
       </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
+        <property id="4129593283361406846" name="static" index="8PNL8" />
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
@@ -63,6 +67,9 @@
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
+    </language>
+    <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
+      <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
@@ -149,6 +156,7 @@
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
+      <concept id="1664480272136207708" name="com.mbeddr.core.expressions.structure.CharType" flags="ng" index="biTqx" />
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
@@ -467,6 +475,30 @@
             </node>
             <node concept="3TlMh9" id="3LE5RBQF7cN" role="3XIe9u">
               <property role="2hmy$m" value="5" />
+            </node>
+          </node>
+          <node concept="3XIRlf" id="1uKPZVPHh3l" role="3XIRFZ">
+            <property role="TrG5h" value="y" />
+            <node concept="3wxxNl" id="1uKPZVPHh5g" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <node concept="biTqx" id="1uKPZVPHh3j" role="2umbIo">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="2dywKE" id="1uKPZVPHhxm" role="3XIRFZ">
+            <property role="TrG5h" value="d" />
+            <property role="8PNL8" value="true" />
+            <node concept="3wxxNl" id="1uKPZVPHhzo" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <node concept="3mBfEi" id="1uKPZVPHhxk" role="2umbIo">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="3mBfEM" node="6KmaLbE81K$" resolve="SomeClass" />
+              </node>
             </node>
           </node>
           <node concept="1QiMYF" id="1uKPZVP4Eu8" role="3XIRFZ">
