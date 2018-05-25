@@ -459,7 +459,7 @@
                 <ref role="3cqZAo" node="7DDmkz1K87" resolve="pClass" />
               </node>
               <node concept="3Tsc0h" id="7DDmkz1Rwb" role="2OqNvi">
-                <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
+                <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
               </node>
             </node>
             <node concept="3clFbS" id="7DDmkz1P_i" role="2LFqv$">
@@ -479,7 +479,7 @@
                             <ref role="2Gs0qQ" node="7DDmkz1P_e" resolve="parentC" />
                           </node>
                           <node concept="3TrEf2" id="7DDmkz1TIr" role="2OqNvi">
-                            <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                            <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
                           </node>
                         </node>
                         <node concept="2qgKlT" id="7DDmkz1Voy" role="2OqNvi">

@@ -439,18 +439,18 @@
       <node concept="PMmxH" id="59MAV0yaZs9" role="3EZMnx">
         <ref role="PMmxG" node="59MAV0yaZn2" resolve="AccessModifier" />
       </node>
-      <node concept="PMmxH" id="5eDFAXBCDbH" role="3EZMnx">
-        <ref role="PMmxG" node="5eDFAXBC$A$" resolve="ConstFlag" />
-      </node>
-      <node concept="PMmxH" id="5eDFAXBCDda" role="3EZMnx">
-        <ref role="PMmxG" node="5eDFAXBCpeS" resolve="VolatileFlag" />
-      </node>
       <node concept="PMmxH" id="5eDFAXBm98u" role="3EZMnx">
         <ref role="PMmxG" node="1Yr26itwx8V" resolve="StaticFlag" />
       </node>
       <node concept="l2Vlx" id="4o2nsMgBJ4g" role="2iSdaV" />
       <node concept="3F1sOY" id="3v5DuFDsWjm" role="3EZMnx">
         <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
+      </node>
+      <node concept="PMmxH" id="5eDFAXBCDbH" role="3EZMnx">
+        <ref role="PMmxG" node="5eDFAXBC$A$" resolve="ConstFlag" />
+      </node>
+      <node concept="PMmxH" id="5eDFAXBCDda" role="3EZMnx">
+        <ref role="PMmxG" node="5eDFAXBCpeS" resolve="VolatileFlag" />
       </node>
       <node concept="3F0A7n" id="4o2nsMgBJ5d" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -863,7 +863,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="6hUtorE0haO">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="class" />
     <property role="TrG5h" value="ConstructorObjectInstantiation" />
     <ref role="1XX52x" to="wnzg:6hUtorDW7AG" resolve="LocalClassVariableDeclaration" />
     <node concept="3EZMnI" id="6hUtorE0hXL" role="2wV5jI">
@@ -971,7 +971,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="6hUtorEdeMU">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="class" />
     <property role="TrG5h" value="DeleteCurrentConstructorSelection" />
     <ref role="1h_SK9" to="wnzg:6hUtorDW7AG" resolve="LocalClassVariableDeclaration" />
     <node concept="1hA7zw" id="6hUtorEdeMV" role="1h_SK8">
