@@ -83,7 +83,7 @@
     <node concept="PrWs8" id="1rolTivmV0V" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     </node>
-    <node concept="PrWs8" id="6gFj6gtrf4y" role="PzmwI">
+    <node concept="PrWs8" id="7fNEwqA1QXR" role="PzmwI">
       <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
     </node>
     <node concept="PrWs8" id="4o2nsMgBFbw" role="PzmwI">
@@ -466,6 +466,81 @@
     </node>
     <node concept="PrWs8" id="7RFM8R0Rm5t" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7RFM8R3Me1y">
+    <property role="EcuMT" value="9073566385468661858" />
+    <property role="3GE5qa" value="Namespace" />
+    <property role="TrG5h" value="NamespaceClassInstance" />
+    <property role="34LRSv" value="class instance" />
+    <property role="R4oN_" value="Create instance of namespace class" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="7RFM8R3Me1P" role="PzmwI">
+      <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7RFM8R3Me22" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="1TJgyj" id="7RFM8R3Me2a" role="1TKVEi">
+      <property role="IQ2ns" value="9073566385468661898" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="class" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7fNEwq_6ZJn">
+    <property role="EcuMT" value="8355208679219002327" />
+    <property role="3GE5qa" value="Namespace" />
+    <property role="TrG5h" value="NamespaceClassInstanceAttributeRef" />
+    <property role="R4oN_" value="Refer to namespace class attribute" />
+    <property role="34LRSv" value="." />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="7fNEwq_6ZJT" role="1TKVEi">
+      <property role="IQ2ns" value="8355208679219002361" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="class_instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7RFM8R3Me1y" resolve="NamespaceClassInstance" />
+    </node>
+    <node concept="1TJgyj" id="7fNEwq_6ZLT" role="1TKVEi">
+      <property role="IQ2ns" value="8355208679219002489" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="class_attribute" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7fNEwqBx$6S">
+    <property role="EcuMT" value="8355208679259521464" />
+    <property role="3GE5qa" value="Namespace" />
+    <property role="TrG5h" value="NamespaceClassInstanceMethodCall" />
+    <property role="34LRSv" value="." />
+    <property role="R4oN_" value="Refer to namespace class method" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="7fNEwqBxBea" role="1TKVEi">
+      <property role="IQ2ns" value="8355208679259534218" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actuals" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7fNEwqBx$6T" role="1TKVEi">
+      <property role="IQ2ns" value="8355208679259521465" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="class_instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7RFM8R3Me1y" resolve="NamespaceClassInstance" />
+    </node>
+    <node concept="1TJgyj" id="7fNEwqBx$6W" role="1TKVEi">
+      <property role="IQ2ns" value="8355208679259521468" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="class_method" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgB$VW" resolve="MethodDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7fNEwqBxBek" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
     </node>
   </node>
 </model>

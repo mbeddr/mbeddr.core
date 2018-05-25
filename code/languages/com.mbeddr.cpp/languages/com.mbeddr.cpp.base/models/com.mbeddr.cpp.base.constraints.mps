@@ -691,5 +691,74 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7RFM8R3Szyr">
+    <property role="3GE5qa" value="Namespace" />
+    <ref role="1M2myG" to="wnzg:7RFM8R3Me1y" resolve="NamespaceClassInstance" />
+    <node concept="1N5Pfh" id="7RFM8R3Szys" role="1Mr941">
+      <ref role="1N5Vy1" to="wnzg:7RFM8R3Me2a" resolve="class" />
+      <node concept="3dgokm" id="7RFM8R3Szyy" role="1N6uqs">
+        <node concept="3clFbS" id="7RFM8R3Szy$" role="2VODD2">
+          <node concept="3clFbF" id="7RFM8R3SzD2" role="3cqZAp">
+            <node concept="2YIFZM" id="7RFM8R3SzI4" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="7RFM8R3TYSm" role="37wK5m">
+                <node concept="3kakTB" id="7RFM8R3TYxV" role="2Oq$k0" />
+                <node concept="2qgKlT" id="7RFM8R3TZrB" role="2OqNvi">
+                  <ref role="37wK5l" to="kntn:7RFM8R3Sz_I" resolve="classesWithinNamespaces" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7fNEwq_6ZK6">
+    <property role="3GE5qa" value="Namespace" />
+    <ref role="1M2myG" to="wnzg:7fNEwq_6ZJn" resolve="NamespaceClassInstanceAttributeRef" />
+    <node concept="1N5Pfh" id="7fNEwq_6ZMx" role="1Mr941">
+      <ref role="1N5Vy1" to="wnzg:7fNEwq_6ZLT" resolve="class_attribute" />
+      <node concept="3dgokm" id="7fNEwq_6ZMB" role="1N6uqs">
+        <node concept="3clFbS" id="7fNEwq_6ZMD" role="2VODD2">
+          <node concept="3clFbF" id="7fNEwq_r2Gq" role="3cqZAp">
+            <node concept="2YIFZM" id="7fNEwq_r2On" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="7fNEwq_r3dU" role="37wK5m">
+                <node concept="3kakTB" id="7fNEwq_r2Ta" role="2Oq$k0" />
+                <node concept="2qgKlT" id="7fNEwq_r3FS" role="2OqNvi">
+                  <ref role="37wK5l" to="kntn:7fNEwq_qWne" resolve="allPublicAttributes" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7fNEwqBx$7b">
+    <property role="3GE5qa" value="Namespace" />
+    <ref role="1M2myG" to="wnzg:7fNEwqBx$6S" resolve="NamespaceClassInstanceMethodCall" />
+    <node concept="1N5Pfh" id="7fNEwqBxCee" role="1Mr941">
+      <ref role="1N5Vy1" to="wnzg:7fNEwqBx$6W" resolve="class_method" />
+      <node concept="3dgokm" id="7fNEwqBxCey" role="1N6uqs">
+        <node concept="3clFbS" id="7fNEwqBxCe$" role="2VODD2">
+          <node concept="3clFbF" id="7fNEwqBxCtm" role="3cqZAp">
+            <node concept="2YIFZM" id="7fNEwqBxC_j" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="7fNEwqBym$e" role="37wK5m">
+                <node concept="3kakTB" id="7fNEwqBymgJ" role="2Oq$k0" />
+                <node concept="2qgKlT" id="7fNEwqBymXs" role="2OqNvi">
+                  <ref role="37wK5l" to="kntn:7fNEwqBxD2s" resolve="allPublicMethods" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
