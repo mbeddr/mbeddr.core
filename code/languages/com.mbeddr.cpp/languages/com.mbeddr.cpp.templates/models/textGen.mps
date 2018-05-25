@@ -13,7 +13,6 @@
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="1yyn" ref="r:64e0a2a9-7957-424b-8102-a5e8a7a73035(com.mbeddr.cpp.templates.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="uaom" ref="r:00838eaa-3253-4491-82f7-437f360206d2(com.mbeddr.cpp.templates.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -235,16 +234,24 @@
     <ref role="WuzLi" to="1yyn:2_lkiVjZerV" resolve="TemplateFunction" />
     <node concept="11bSqf" id="1x_Jrt9Ni7m" role="11c4hB">
       <node concept="3clFbS" id="1x_Jrt9Ni7n" role="2VODD2">
-        <node concept="lc7rE" id="ZKpU3B$1hN" role="3cqZAp">
-          <node concept="l9hG8" id="ZKpU3B$2c9" role="lcghm">
-            <node concept="2OqwBi" id="ZKpU3B$31d" role="lb14g">
-              <node concept="117lpO" id="ZKpU3B$2x6" role="2Oq$k0" />
-              <node concept="2qgKlT" id="ZKpU3B$3YC" role="2OqNvi">
-                <ref role="37wK5l" to="uaom:ZKpU3ByUar" resolve="headerString" />
+        <node concept="lc7rE" id="1iZHTjWLsKg" role="3cqZAp">
+          <node concept="la8eA" id="1iZHTjWLsKh" role="lcghm">
+            <property role="lacIc" value="template&lt;" />
+          </node>
+          <node concept="l9S2W" id="1iZHTjWLsKi" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value=", " />
+            <node concept="2OqwBi" id="1iZHTjWLsKj" role="lbANJ">
+              <node concept="117lpO" id="1iZHTjWLsKk" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1iZHTjWLsKl" role="2OqNvi">
+                <ref role="3TtcxE" to="1yyn:ZKpU3BvynB" resolve="types" />
               </node>
             </node>
           </node>
-          <node concept="l8MVK" id="ZKpU3B$4FZ" role="lcghm" />
+          <node concept="la8eA" id="1iZHTjWLsKm" role="lcghm">
+            <property role="lacIc" value="&gt;" />
+          </node>
+          <node concept="l8MVK" id="1iZHTjWLsKn" role="lcghm" />
         </node>
         <node concept="2Gpval" id="xAR9nWvFc1" role="3cqZAp">
           <node concept="2GrKxI" id="xAR9nWvFc2" role="2Gsz3X">
@@ -584,16 +591,24 @@
     <ref role="WuzLi" to="1yyn:ZKpU3C3Nka" resolve="TemplateClassDeclaration" />
     <node concept="11bSqf" id="4o2nsMgC05Y" role="11c4hB">
       <node concept="3clFbS" id="4o2nsMgC05Z" role="2VODD2">
-        <node concept="lc7rE" id="ZKpU3CagAi" role="3cqZAp">
-          <node concept="l9hG8" id="ZKpU3CagJi" role="lcghm">
-            <node concept="2OqwBi" id="ZKpU3Cah1L" role="lb14g">
-              <node concept="117lpO" id="ZKpU3CagKc" role="2Oq$k0" />
-              <node concept="2qgKlT" id="ZKpU3Cahvd" role="2OqNvi">
-                <ref role="37wK5l" to="uaom:ZKpU3ByUar" resolve="headerString" />
+        <node concept="lc7rE" id="1iZHTjWLlFw" role="3cqZAp">
+          <node concept="la8eA" id="1iZHTjWLlPp" role="lcghm">
+            <property role="lacIc" value="template&lt;" />
+          </node>
+          <node concept="l9S2W" id="1iZHTjWLlQ$" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value=", " />
+            <node concept="2OqwBi" id="1iZHTjWLm4H" role="lbANJ">
+              <node concept="117lpO" id="1iZHTjWLlR0" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1iZHTjWLmx_" role="2OqNvi">
+                <ref role="3TtcxE" to="1yyn:ZKpU3BvynB" resolve="types" />
               </node>
             </node>
           </node>
-          <node concept="l8MVK" id="ZKpU3CahOS" role="lcghm" />
+          <node concept="la8eA" id="1iZHTjWLo$7" role="lcghm">
+            <property role="lacIc" value="&gt;" />
+          </node>
+          <node concept="l8MVK" id="1iZHTjWLoHj" role="lcghm" />
         </node>
         <node concept="lc7rE" id="3UsoL$l8L0H" role="3cqZAp">
           <node concept="la8eA" id="3UsoL$l8L8U" role="lcghm">
