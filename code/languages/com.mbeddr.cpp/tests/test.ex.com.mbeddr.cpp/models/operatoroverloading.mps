@@ -363,7 +363,7 @@
       <node concept="3mB1cK" id="3LE5RBQCK1K" role="3mBdys">
         <property role="1wg9_F" value="private" />
         <property role="gNYVZ" value="false" />
-        <property role="TrG5h" value="playsWithOperators" />
+        <property role="TrG5h" value="dancesWithOperators" />
         <node concept="19Rifw" id="3LE5RBQCK3k" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
