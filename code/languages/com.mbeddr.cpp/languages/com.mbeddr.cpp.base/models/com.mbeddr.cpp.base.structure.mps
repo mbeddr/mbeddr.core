@@ -171,6 +171,12 @@
     <node concept="PrWs8" id="7DDmkyVqQX" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
+    <node concept="PrWs8" id="5eDFAXBCDaF" role="PzmwI">
+      <ref role="PrY4T" node="5eDFAXBC$A7" resolve="IConstFlagConcept" />
+    </node>
+    <node concept="PrWs8" id="5eDFAXBCDcW" role="PzmwI">
+      <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlagConcept" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4o2nsMgBJ5Y">
     <property role="EcuMT" value="5044697665789423998" />

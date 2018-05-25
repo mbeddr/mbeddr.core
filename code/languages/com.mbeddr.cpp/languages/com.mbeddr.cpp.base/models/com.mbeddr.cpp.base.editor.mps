@@ -439,6 +439,12 @@
       <node concept="PMmxH" id="59MAV0yaZs9" role="3EZMnx">
         <ref role="PMmxG" node="59MAV0yaZn2" resolve="AccessModifier" />
       </node>
+      <node concept="PMmxH" id="5eDFAXBCDbH" role="3EZMnx">
+        <ref role="PMmxG" node="5eDFAXBC$A$" resolve="ConstFlag" />
+      </node>
+      <node concept="PMmxH" id="5eDFAXBCDda" role="3EZMnx">
+        <ref role="PMmxG" node="5eDFAXBCpeS" resolve="VolatileFlag" />
+      </node>
       <node concept="PMmxH" id="5eDFAXBm98u" role="3EZMnx">
         <ref role="PMmxG" node="1Yr26itwx8V" resolve="StaticFlag" />
       </node>
