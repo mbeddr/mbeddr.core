@@ -177,6 +177,15 @@
     <node concept="PrWs8" id="5eDFAXBCDcW" role="PzmwI">
       <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlagConcept" />
     </node>
+    <node concept="PrWs8" id="5eDFAXBREP4" role="PzmwI">
+      <ref role="PrY4T" node="5eDFAXBRENn" resolve="IExternFlagConcept" />
+    </node>
+    <node concept="PrWs8" id="5eDFAXBRI2X" role="PzmwI">
+      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineFlagConcept" />
+    </node>
+    <node concept="PrWs8" id="5eDFAXBRQi_" role="PzmwI">
+      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4o2nsMgBJ5Y">
     <property role="EcuMT" value="5044697665789423998" />
@@ -581,6 +590,26 @@
     <node concept="1TJgyi" id="5eDFAXBC$A8" role="1TKVEl">
       <property role="IQ2nx" value="6028541369715411336" />
       <property role="TrG5h" value="isConstant" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5eDFAXBRENn">
+    <property role="EcuMT" value="6028541369719368919" />
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="IExternFlagConcept" />
+    <node concept="1TJgyi" id="5eDFAXBRENo" role="1TKVEl">
+      <property role="IQ2nx" value="6028541369719368920" />
+      <property role="TrG5h" value="isExtern" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5eDFAXBRQhJ">
+    <property role="EcuMT" value="6028541369719415919" />
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="IConstExprFlagConcept" />
+    <node concept="1TJgyi" id="5eDFAXBRQhK" role="1TKVEl">
+      <property role="IQ2nx" value="6028541369719415920" />
+      <property role="TrG5h" value="isConstExpr" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>

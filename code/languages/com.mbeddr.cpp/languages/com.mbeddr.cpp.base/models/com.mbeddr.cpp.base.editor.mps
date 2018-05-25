@@ -439,6 +439,15 @@
       <node concept="PMmxH" id="59MAV0yaZs9" role="3EZMnx">
         <ref role="PMmxG" node="59MAV0yaZn2" resolve="AccessModifier" />
       </node>
+      <node concept="PMmxH" id="5eDFAXBRQjs" role="3EZMnx">
+        <ref role="PMmxG" node="5eDFAXBRQic" resolve="ConstExprFlag" />
+      </node>
+      <node concept="PMmxH" id="5eDFAXBRI3K" role="3EZMnx">
+        <ref role="PMmxG" node="1Yr26itwsTs" resolve="InlineFlag" />
+      </node>
+      <node concept="PMmxH" id="5eDFAXBREPN" role="3EZMnx">
+        <ref role="PMmxG" node="5eDFAXBRENO" resolve="ExternFlag" />
+      </node>
       <node concept="PMmxH" id="5eDFAXBm98u" role="3EZMnx">
         <ref role="PMmxG" node="1Yr26itwx8V" resolve="StaticFlag" />
       </node>
@@ -1409,6 +1418,26 @@
     <node concept="1kHk_G" id="5eDFAXBC$AA" role="2wV5jI">
       <property role="ZjSer" value="const" />
       <ref role="1NtTu8" to="wnzg:5eDFAXBC$A8" resolve="isConstant" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="5eDFAXBRENO">
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="ExternFlag" />
+    <ref role="1XX52x" to="wnzg:5eDFAXBRENn" resolve="IExternFlagConcept" />
+    <node concept="1kHk_G" id="5eDFAXBRENQ" role="2wV5jI">
+      <property role="ZjSer" value="extern" />
+      <ref role="1NtTu8" to="wnzg:5eDFAXBRENo" resolve="isExtern" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="5eDFAXBRQic">
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="ConstExprFlag" />
+    <ref role="1XX52x" to="wnzg:5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
+    <node concept="1kHk_G" id="5eDFAXBRQie" role="2wV5jI">
+      <property role="ZjSer" value="constexpr" />
+      <ref role="1NtTu8" to="wnzg:5eDFAXBRQhK" resolve="isConstExpr" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>

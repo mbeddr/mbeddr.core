@@ -1219,63 +1219,63 @@
   <node concept="18kY7G" id="5eDFAXBGiPA">
     <property role="TrG5h" value="check_AttributeDeclaration" />
     <node concept="3clFbS" id="5eDFAXBGiPB" role="18ibNy">
-      <node concept="3clFbJ" id="5eDFAXBGiPH" role="3cqZAp">
-        <node concept="1Wc70l" id="5eDFAXBGk9Y" role="3clFbw">
-          <node concept="2OqwBi" id="5eDFAXBGlz4" role="3uHU7w">
-            <node concept="1YBJjd" id="5eDFAXBGldA" role="2Oq$k0">
+      <node concept="3clFbJ" id="5eDFAXBREZ3" role="3cqZAp">
+        <node concept="3clFbS" id="5eDFAXBREZ5" role="3clFbx">
+          <node concept="2MkqsV" id="5eDFAXBRHRp" role="3cqZAp">
+            <node concept="Xl_RD" id="5eDFAXBRHRq" role="2MkJ7o">
+              <property role="Xl_RC" value="Field can't be both static and extern" />
+            </node>
+            <node concept="1YBJjd" id="5eDFAXBRHRr" role="2OEOjV">
               <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
-            </node>
-            <node concept="3TrcHB" id="5eDFAXBGlZ7" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:5eDFAXBC$A8" resolve="isConstant" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="5eDFAXBGj7w" role="3uHU7B">
-            <node concept="1YBJjd" id="5eDFAXBGiPW" role="2Oq$k0">
-              <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
-            </node>
-            <node concept="3TrcHB" id="5eDFAXBGjvB" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
             </node>
           </node>
         </node>
-        <node concept="3clFbS" id="5eDFAXBGiPJ" role="3clFbx">
-          <node concept="2MkqsV" id="5eDFAXBGm3m" role="3cqZAp">
-            <node concept="Xl_RD" id="5eDFAXBGm3_" role="2MkJ7o">
-              <property role="Xl_RC" value="Field can't be both static and constant" />
-            </node>
-            <node concept="1YBJjd" id="5eDFAXBGm46" role="2OEOjV">
+        <node concept="1Wc70l" id="5eDFAXBRGDc" role="3clFbw">
+          <node concept="2OqwBi" id="5eDFAXBRH9K" role="3uHU7w">
+            <node concept="1YBJjd" id="5eDFAXBRGK9" role="2Oq$k0">
               <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="5eDFAXBRHDP" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:5eDFAXBRENo" resolve="isExtern" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5eDFAXBRFiw" role="3uHU7B">
+            <node concept="1YBJjd" id="5eDFAXBRF0a" role="2Oq$k0">
+              <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="5eDFAXBRFMQ" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="5eDFAXBGm62" role="3cqZAp" />
-      <node concept="3clFbJ" id="5eDFAXBGm6V" role="3cqZAp">
-        <node concept="3clFbS" id="5eDFAXBGm6X" role="3clFbx">
-          <node concept="2MkqsV" id="5eDFAXBGpwJ" role="3cqZAp">
-            <node concept="Xl_RD" id="5eDFAXBGpAz" role="2MkJ7o">
-              <property role="Xl_RC" value="Field can't be both static and volatile" />
+      <node concept="3clFbH" id="5eDFAXBRSkI" role="3cqZAp" />
+      <node concept="3clFbJ" id="5eDFAXBRSsG" role="3cqZAp">
+        <node concept="3clFbS" id="5eDFAXBRSsI" role="3clFbx">
+          <node concept="a7r0C" id="5eDFAXBRVB6" role="3cqZAp">
+            <node concept="Xl_RD" id="5eDFAXBRVBu" role="a7wSD">
+              <property role="Xl_RC" value="Already implicitly inlined because of constexpr" />
             </node>
-            <node concept="1YBJjd" id="5eDFAXBGpFX" role="2OEOjV">
+            <node concept="1YBJjd" id="5eDFAXBRVE6" role="2OEOjV">
               <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
             </node>
           </node>
         </node>
-        <node concept="1Wc70l" id="5eDFAXBGovH" role="3clFbw">
-          <node concept="2OqwBi" id="5eDFAXBGoVQ" role="3uHU7w">
-            <node concept="1YBJjd" id="5eDFAXBGoAl" role="2Oq$k0">
+        <node concept="1Wc70l" id="5eDFAXBRUrU" role="3clFbw">
+          <node concept="2OqwBi" id="5eDFAXBRUVW" role="3uHU7w">
+            <node concept="1YBJjd" id="5eDFAXBRUzx" role="2Oq$k0">
               <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
             </node>
-            <node concept="3TrcHB" id="5eDFAXBGpq9" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:5eDFAXBCpes" resolve="isVolatile" />
+            <node concept="3TrcHB" id="5eDFAXBRVvF" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1Yr26itwsT0" resolve="isInlined" />
             </node>
           </node>
-          <node concept="2OqwBi" id="5eDFAXBGmpc" role="3uHU7B">
-            <node concept="1YBJjd" id="5eDFAXBGm7C" role="2Oq$k0">
+          <node concept="2OqwBi" id="5eDFAXBRSLj" role="3uHU7B">
+            <node concept="1YBJjd" id="5eDFAXBRStp" role="2Oq$k0">
               <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
             </node>
-            <node concept="3TrcHB" id="5eDFAXBGmRd" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+            <node concept="3TrcHB" id="5eDFAXBRTKW" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:5eDFAXBRQhK" resolve="isConstExpr" />
             </node>
           </node>
         </node>
