@@ -318,19 +318,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4K6s$_sMpSd" role="3cqZAp">
-          <node concept="37vLTI" id="4K6s$_sMrys" role="3clFbG">
-            <node concept="3clFbT" id="4K6s$_sMrBo" role="37vLTx">
-              <property role="3clFbU" value="false" />
-            </node>
-            <node concept="2OqwBi" id="4K6s$_sMqbS" role="37vLTJ">
-              <node concept="13iPFW" id="4K6s$_sMpSb" role="2Oq$k0" />
-              <node concept="3TrcHB" id="4K6s$_sMqS8" role="2OqNvi">
-                <ref role="3TsBF5" to="wnzg:4K6s$_sMpMQ" resolve="static" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="13i0hz" id="4o2nsMgB$X4" role="13h7CS">
@@ -1031,7 +1018,7 @@
           <node concept="2OqwBi" id="2xmTzC2MXNX" role="2GsD0m">
             <node concept="13iPFW" id="2xmTzC2MXxC" role="2Oq$k0" />
             <node concept="3Tsc0h" id="2xmTzC2MYOn" role="2OqNvi">
-              <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="inherits_from" />
+              <ref role="3TtcxE" to="wnzg:3UsoL$l5qj8" resolve="ancestors" />
             </node>
           </node>
           <node concept="3clFbS" id="2xmTzC2MXwP" role="2LFqv$">
@@ -1048,7 +1035,7 @@
                           <ref role="2Gs0qQ" node="2xmTzC2MXwN" resolve="parent" />
                         </node>
                         <node concept="3TrEf2" id="3n$8_XbeYkC" role="2OqNvi">
-                          <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parent_class" />
+                          <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
                         </node>
                       </node>
                       <node concept="2qgKlT" id="3n$8_Xbf0Q2" role="2OqNvi">
