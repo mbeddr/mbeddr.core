@@ -55,6 +55,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -190,6 +191,7 @@
       <concept id="1174657487114" name="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" flags="nn" index="1Z2H0r">
         <child id="1174657509053" name="term" index="1Z2MuG" />
       </concept>
+      <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
         <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
@@ -1697,6 +1699,15 @@
                   </node>
                 </node>
               </node>
+              <node concept="3cpWs8" id="1uKPZVP4KdS" role="3cqZAp">
+                <node concept="3cpWsn" id="1uKPZVP4KdV" role="3cpWs9">
+                  <property role="TrG5h" value="_operator" />
+                  <node concept="3Tqbb2" id="1uKPZVP4KdQ" role="1tU5fm">
+                    <ref role="ehGHo" to="wnzg:3LE5RBPQ$rY" resolve="OperatorOverloadDeclaration" />
+                  </node>
+                  <node concept="10Nm6u" id="1uKPZVP4Lbu" role="33vP2m" />
+                </node>
+              </node>
               <node concept="3SKdUt" id="3tvQSYc7kdz" role="3cqZAp">
                 <node concept="3SKdUq" id="3tvQSYc7kd_" role="3SKWNk">
                   <property role="3SKdUp" value="Check each one" />
@@ -1805,6 +1816,16 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbF" id="1uKPZVP4Lc4" role="3cqZAp">
+                        <node concept="37vLTI" id="1uKPZVP4LM$" role="3clFbG">
+                          <node concept="2GrUjf" id="1uKPZVP4LMX" role="37vLTx">
+                            <ref role="2Gs0qQ" node="3tvQSYc7GIo" resolve="op" />
+                          </node>
+                          <node concept="37vLTw" id="1uKPZVP4Lc2" role="37vLTJ">
+                            <ref role="3cqZAo" node="1uKPZVP4KdV" resolve="_operator" />
+                          </node>
+                        </node>
+                      </node>
                       <node concept="3zACq4" id="3tvQSYcprm6" role="3cqZAp" />
                     </node>
                   </node>
@@ -1871,6 +1892,26 @@
                 <node concept="3fqX7Q" id="3tvQSYc7TFI" role="3clFbw">
                   <node concept="37vLTw" id="3tvQSYc7TFO" role="3fr31v">
                     <ref role="3cqZAo" node="3tvQSYc7IES" resolve="valid" />
+                  </node>
+                </node>
+                <node concept="9aQIb" id="1uKPZVP4GsB" role="9aQIa">
+                  <node concept="3clFbS" id="1uKPZVP4GsC" role="9aQI4">
+                    <node concept="1Z5TYs" id="1uKPZVP4Jhn" role="3cqZAp">
+                      <node concept="mw_s8" id="1uKPZVP4Jie" role="1ZfhKB">
+                        <node concept="1Z2H0r" id="1uKPZVP4Jia" role="mwGJk">
+                          <node concept="37vLTw" id="1uKPZVP4LNb" role="1Z2MuG">
+                            <ref role="3cqZAo" node="1uKPZVP4KdV" resolve="_operator" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="mw_s8" id="1uKPZVP4Jhq" role="1ZfhK$">
+                        <node concept="1Z2H0r" id="1uKPZVP4Gz7" role="mwGJk">
+                          <node concept="1YBJjd" id="1uKPZVP4Gzq" role="1Z2MuG">
+                            <ref role="1YBMHb" node="3tvQSYbZXf1" resolve="be" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
