@@ -106,7 +106,7 @@
       </node>
       <node concept="3EZMnI" id="3v5DuFDnNFt" role="3EZMnx">
         <node concept="PMmxH" id="59MAV0ydrUB" role="3EZMnx">
-          <ref role="PMmxG" to="gkp7:59MAV0yaZn2" resolve="VisibilityFlag" />
+          <ref role="PMmxG" to="gkp7:59MAV0yaZn2" resolve="AccessModifier" />
         </node>
         <node concept="PMmxH" id="1Yr26iunEPy" role="3EZMnx">
           <ref role="PMmxG" to="gkp7:1Yr26itwx8V" resolve="StaticFlag" />

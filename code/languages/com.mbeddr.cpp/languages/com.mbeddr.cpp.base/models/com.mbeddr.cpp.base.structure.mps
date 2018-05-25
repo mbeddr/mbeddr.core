@@ -122,10 +122,10 @@
       <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     </node>
     <node concept="PrWs8" id="2L1k$oXDqK5" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualisableConcept" />
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
     </node>
     <node concept="PrWs8" id="1Yr26itUKUw" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineConcept" />
+      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineFlagConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBEtu">
@@ -146,7 +146,7 @@
     <property role="TrG5h" value="IClassMemberDeclaration" />
     <property role="3GE5qa" value="class" />
     <node concept="PrWs8" id="5eDFAXBm97W" role="PrDN$">
-      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticConcept" />
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBIrb">
@@ -215,10 +215,10 @@
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
     <node concept="PrWs8" id="2L1k$oXNUaR" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualisableConcept" />
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
     </node>
     <node concept="PrWs8" id="1Yr26iur2wG" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticConcept" />
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="3v5DuFDls_I">
@@ -302,8 +302,8 @@
   </node>
   <node concept="PlHQZ" id="2L1k$oXxncW">
     <property role="EcuMT" value="3188920472788366140" />
-    <property role="TrG5h" value="IVirtualisableConcept" />
-    <property role="3GE5qa" value="method.flag" />
+    <property role="TrG5h" value="IVirtualFlagConcept" />
+    <property role="3GE5qa" value="flag" />
     <node concept="1TJgyi" id="2L1k$oXxncX" role="1TKVEl">
       <property role="IQ2nx" value="3188920472788366141" />
       <property role="TrG5h" value="isVirtual" />
@@ -365,10 +365,10 @@
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
     <node concept="PrWs8" id="6NtgknWJ20V" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualisableConcept" />
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualFlagConcept" />
     </node>
     <node concept="PrWs8" id="3OTimPpGcj0" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualisableConcept" />
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
     </node>
     <node concept="PrWs8" id="6ddXmWdS2eK" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
@@ -527,10 +527,10 @@
   </node>
   <node concept="PlHQZ" id="2L1k$oXDqJY">
     <property role="EcuMT" value="3188920472790477822" />
-    <property role="TrG5h" value="IPureVirtualisableConcept" />
-    <property role="3GE5qa" value="method.flag" />
+    <property role="TrG5h" value="IPureVirtualFlagConcept" />
+    <property role="3GE5qa" value="flag" />
     <node concept="PrWs8" id="2L1k$oXDqJZ" role="PrDN$">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualisableConcept" />
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualFlagConcept" />
     </node>
     <node concept="1TJgyi" id="2L1k$oXDqK2" role="1TKVEl">
       <property role="IQ2nx" value="3188920472790477826" />
@@ -540,8 +540,8 @@
   </node>
   <node concept="PlHQZ" id="1Yr26itwsSZ">
     <property role="EcuMT" value="2277423264798199359" />
-    <property role="3GE5qa" value="method.flag" />
-    <property role="TrG5h" value="IInlineConcept" />
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="IInlineFlagConcept" />
     <node concept="1TJgyi" id="1Yr26itwsT0" role="1TKVEl">
       <property role="IQ2nx" value="2277423264798199360" />
       <property role="TrG5h" value="isInlined" />
@@ -550,8 +550,8 @@
   </node>
   <node concept="PlHQZ" id="1Yr26itwx8u">
     <property role="EcuMT" value="2277423264798216734" />
-    <property role="3GE5qa" value="method.flag" />
-    <property role="TrG5h" value="IStaticConcept" />
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="IStaticFlagConcept" />
     <node concept="1TJgyi" id="1Yr26itwx8v" role="1TKVEl">
       <property role="IQ2nx" value="2277423264798216735" />
       <property role="TrG5h" value="isStatic" />

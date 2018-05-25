@@ -293,7 +293,7 @@
     <ref role="1XX52x" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
     <node concept="3EZMnI" id="3v5DuFDnNFt" role="2wV5jI">
       <node concept="PMmxH" id="59MAV0ydrUB" role="3EZMnx">
-        <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
+        <ref role="PMmxG" node="59MAV0yaZn2" resolve="AccessModifier" />
       </node>
       <node concept="PMmxH" id="1Yr26itUKV_" role="3EZMnx">
         <ref role="PMmxG" node="1Yr26itwx8V" resolve="StaticFlag" />
@@ -437,7 +437,7 @@
     <ref role="1XX52x" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
     <node concept="3EZMnI" id="4o2nsMgBJ4d" role="2wV5jI">
       <node concept="PMmxH" id="59MAV0yaZs9" role="3EZMnx">
-        <ref role="PMmxG" node="59MAV0yaZn2" resolve="VisibilityFlag" />
+        <ref role="PMmxG" node="59MAV0yaZn2" resolve="AccessModifier" />
       </node>
       <node concept="PMmxH" id="5eDFAXBm98u" role="3EZMnx">
         <ref role="PMmxG" node="1Yr26itwx8V" resolve="StaticFlag" />
@@ -583,7 +583,8 @@
     </node>
   </node>
   <node concept="PKFIW" id="59MAV0yaZn2">
-    <property role="TrG5h" value="VisibilityFlag" />
+    <property role="TrG5h" value="AccessModifier" />
+    <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="wnzg:4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     <node concept="3F0A7n" id="59MAV0ycZT1" role="2wV5jI">
       <ref role="1NtTu8" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
@@ -729,8 +730,8 @@
   </node>
   <node concept="PKFIW" id="2L1k$oXm7Pq">
     <property role="TrG5h" value="VirtualFlag" />
-    <property role="3GE5qa" value="method.flag" />
-    <ref role="1XX52x" to="wnzg:2L1k$oXxncW" resolve="IVirtualisableConcept" />
+    <property role="3GE5qa" value="flag" />
+    <ref role="1XX52x" to="wnzg:2L1k$oXxncW" resolve="IVirtualFlagConcept" />
     <node concept="1kHk_G" id="2LwGNVbhV8I" role="2wV5jI">
       <property role="ZjSer" value="virtual" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
@@ -1357,8 +1358,8 @@
   </node>
   <node concept="PKFIW" id="1TorPL4sJdQ">
     <property role="TrG5h" value="PureFlag" />
-    <property role="3GE5qa" value="method.flag" />
-    <ref role="1XX52x" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualisableConcept" />
+    <property role="3GE5qa" value="flag" />
+    <ref role="1XX52x" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
     <node concept="1kHk_G" id="1TorPL4sJdR" role="2wV5jI">
       <property role="ZjSer" value="pure" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
@@ -1366,9 +1367,9 @@
     </node>
   </node>
   <node concept="PKFIW" id="1Yr26itwsTs">
-    <property role="3GE5qa" value="method.flag" />
+    <property role="3GE5qa" value="flag" />
     <property role="TrG5h" value="InlineFlag" />
-    <ref role="1XX52x" to="wnzg:1Yr26itwsSZ" resolve="IInlineConcept" />
+    <ref role="1XX52x" to="wnzg:1Yr26itwsSZ" resolve="IInlineFlagConcept" />
     <node concept="1kHk_G" id="1Yr26itwsTu" role="2wV5jI">
       <property role="ZjSer" value="inline" />
       <ref role="1NtTu8" to="wnzg:1Yr26itwsT0" resolve="isInlined" />
@@ -1376,9 +1377,9 @@
     </node>
   </node>
   <node concept="PKFIW" id="1Yr26itwx8V">
-    <property role="3GE5qa" value="method.flag" />
+    <property role="3GE5qa" value="flag" />
     <property role="TrG5h" value="StaticFlag" />
-    <ref role="1XX52x" to="wnzg:1Yr26itwx8u" resolve="IStaticConcept" />
+    <ref role="1XX52x" to="wnzg:1Yr26itwx8u" resolve="IStaticFlagConcept" />
     <node concept="1kHk_G" id="1Yr26itwx8X" role="2wV5jI">
       <property role="ZjSer" value="static" />
       <ref role="1NtTu8" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
