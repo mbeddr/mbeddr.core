@@ -535,7 +535,7 @@
     </node>
     <node concept="1TJgyi" id="2L1k$oXDqK2" role="1TKVEl">
       <property role="IQ2nx" value="3188920472790477826" />
-      <property role="TrG5h" value="pure" />
+      <property role="TrG5h" value="isPureVirtual" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>

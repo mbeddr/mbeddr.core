@@ -535,7 +535,7 @@
           <node concept="2OqwBi" id="2L1k$oXWgJ6" role="3clFbw">
             <node concept="117lpO" id="2L1k$oXWgrf" role="2Oq$k0" />
             <node concept="3TrcHB" id="2L1k$oXWhhv" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+              <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
             </node>
           </node>
         </node>

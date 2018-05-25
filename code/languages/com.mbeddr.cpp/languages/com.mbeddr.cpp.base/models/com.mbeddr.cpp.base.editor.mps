@@ -470,7 +470,7 @@
     <ref role="1XX52x" to="wnzg:2Ai0Gt9WczV" resolve="MethodPrototype" />
     <node concept="3EZMnI" id="3v5DuFDrgcR" role="2wV5jI">
       <node concept="3F0A7n" id="6ddXmWe6Wbq" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+        <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
       </node>
       <node concept="3F0A7n" id="6ddXmWe6WbN" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
@@ -1354,8 +1354,9 @@
     <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualisable" />
     <node concept="1kHk_G" id="1TorPL4sJdR" role="2wV5jI">
+      <property role="ZjSer" value="pure" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+      <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
     </node>
   </node>
 </model>

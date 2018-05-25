@@ -847,14 +847,14 @@
           </node>
           <node concept="17Uvod" id="3OTimPpGK2c" role="lGtFl">
             <property role="P4ACc" value="8c081446-e4ba-48b7-a7e0-3db40e2c3439/3188920472790477822/3188920472790477826" />
-            <property role="2qtEX9" value="pure" />
+            <property role="2qtEX9" value="isPureVirtual" />
             <node concept="3zFVjK" id="3OTimPpGK2d" role="3zH0cK">
               <node concept="3clFbS" id="3OTimPpGK2e" role="2VODD2">
                 <node concept="3clFbF" id="3OTimPpGKPt" role="3cqZAp">
                   <node concept="2OqwBi" id="3OTimPpGLiZ" role="3clFbG">
                     <node concept="30H73N" id="3OTimPpGKPs" role="2Oq$k0" />
                     <node concept="3TrcHB" id="3OTimPpGMac" role="2OqNvi">
-                      <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+                      <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
                     </node>
                   </node>
                 </node>
@@ -989,13 +989,13 @@
           </node>
           <node concept="17Uvod" id="2L1k$oXTO7y" role="lGtFl">
             <property role="P4ACc" value="8c081446-e4ba-48b7-a7e0-3db40e2c3439/3188920472790477822/3188920472790477826" />
-            <property role="2qtEX9" value="pure" />
+            <property role="2qtEX9" value="isPureVirtual" />
             <node concept="3zFVjK" id="2L1k$oXTO7_" role="3zH0cK">
               <node concept="3clFbS" id="2L1k$oXTO7A" role="2VODD2">
                 <node concept="3clFbF" id="2L1k$oXTO7G" role="3cqZAp">
                   <node concept="2OqwBi" id="2L1k$oXTO7B" role="3clFbG">
                     <node concept="3TrcHB" id="2L1k$oXTO7E" role="2OqNvi">
-                      <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+                      <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
                     </node>
                     <node concept="30H73N" id="2L1k$oXTO7F" role="2Oq$k0" />
                   </node>
@@ -1223,14 +1223,14 @@
           </node>
           <node concept="17Uvod" id="3OTimPpGwPV" role="lGtFl">
             <property role="P4ACc" value="8c081446-e4ba-48b7-a7e0-3db40e2c3439/3188920472790477822/3188920472790477826" />
-            <property role="2qtEX9" value="pure" />
+            <property role="2qtEX9" value="isPureVirtual" />
             <node concept="3zFVjK" id="3OTimPpGwPW" role="3zH0cK">
               <node concept="3clFbS" id="3OTimPpGwPX" role="2VODD2">
                 <node concept="3clFbF" id="3OTimPpGxDc" role="3cqZAp">
                   <node concept="2OqwBi" id="3OTimPpGy6I" role="3clFbG">
                     <node concept="30H73N" id="3OTimPpGxDb" role="2Oq$k0" />
                     <node concept="3TrcHB" id="3OTimPpGz1A" role="2OqNvi">
-                      <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+                      <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
                     </node>
                   </node>
                 </node>
@@ -1364,13 +1364,13 @@
           </node>
           <node concept="17Uvod" id="2L1k$oXU4Wx" role="lGtFl">
             <property role="P4ACc" value="8c081446-e4ba-48b7-a7e0-3db40e2c3439/3188920472790477822/3188920472790477826" />
-            <property role="2qtEX9" value="pure" />
+            <property role="2qtEX9" value="isPureVirtual" />
             <node concept="3zFVjK" id="2L1k$oXU4W$" role="3zH0cK">
               <node concept="3clFbS" id="2L1k$oXU4W_" role="2VODD2">
                 <node concept="3clFbF" id="2L1k$oXU4WF" role="3cqZAp">
                   <node concept="2OqwBi" id="2L1k$oXU4WA" role="3clFbG">
                     <node concept="3TrcHB" id="2L1k$oXU4WD" role="2OqNvi">
-                      <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+                      <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
                     </node>
                     <node concept="30H73N" id="2L1k$oXU4WE" role="2Oq$k0" />
                   </node>
@@ -1598,14 +1598,14 @@
           </node>
           <node concept="17Uvod" id="3OTimPpG5Ij" role="lGtFl">
             <property role="P4ACc" value="8c081446-e4ba-48b7-a7e0-3db40e2c3439/3188920472790477822/3188920472790477826" />
-            <property role="2qtEX9" value="pure" />
+            <property role="2qtEX9" value="isPureVirtual" />
             <node concept="3zFVjK" id="3OTimPpG5Ik" role="3zH0cK">
               <node concept="3clFbS" id="3OTimPpG5Il" role="2VODD2">
                 <node concept="3clFbF" id="3OTimPpG6xl" role="3cqZAp">
                   <node concept="2OqwBi" id="3OTimPpG6XY" role="3clFbG">
                     <node concept="30H73N" id="3OTimPpG6xk" role="2Oq$k0" />
                     <node concept="3TrcHB" id="3OTimPpGjRM" role="2OqNvi">
-                      <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+                      <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
                     </node>
                   </node>
                 </node>
@@ -1739,15 +1739,15 @@
           </node>
           <node concept="17Uvod" id="3OTimPpFZGm" role="lGtFl">
             <property role="P4ACc" value="8c081446-e4ba-48b7-a7e0-3db40e2c3439/3188920472790477822/3188920472790477826" />
-            <property role="2qtEX9" value="pure" />
+            <property role="2qtEX9" value="isPureVirtual" />
             <node concept="3zFVjK" id="3OTimPpFZGn" role="3zH0cK">
               <node concept="3clFbS" id="3OTimPpFZGo" role="2VODD2">
                 <node concept="3clFbF" id="3OTimPpFZGp" role="3cqZAp">
                   <node concept="2OqwBi" id="3OTimPpFZGq" role="3clFbG">
-                    <node concept="3TrcHB" id="3OTimPpFZGr" role="2OqNvi">
-                      <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="pure" />
-                    </node>
                     <node concept="30H73N" id="3OTimPpFZGs" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="1Yr26itvFYv" role="2OqNvi">
+                      <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
+                    </node>
                   </node>
                 </node>
               </node>
