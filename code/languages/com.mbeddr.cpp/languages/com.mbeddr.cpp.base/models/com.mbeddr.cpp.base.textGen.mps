@@ -968,5 +968,97 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="7RFM8R0xVtk">
+    <property role="3GE5qa" value="Namespace" />
+    <ref role="WuzLi" to="wnzg:7RFM8R0xwre" resolve="GlobalUsingNamespaceAttributeDeclaration" />
+    <node concept="11bSqf" id="7RFM8R0xVtl" role="11c4hB">
+      <node concept="3clFbS" id="7RFM8R0xVtm" role="2VODD2">
+        <node concept="lc7rE" id="7RFM8R0xW8V" role="3cqZAp">
+          <node concept="la8eA" id="7RFM8R0xW8W" role="lcghm">
+            <property role="lacIc" value="using " />
+          </node>
+          <node concept="l9hG8" id="7RFM8R0xW8X" role="lcghm">
+            <node concept="2OqwBi" id="7RFM8R0xW8Y" role="lb14g">
+              <node concept="2OqwBi" id="7RFM8R0xW8Z" role="2Oq$k0">
+                <node concept="117lpO" id="7RFM8R0xW90" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7RFM8R0xW91" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:7RFM8R0xwrf" resolve="namespace" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="7RFM8R0xW92" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="7RFM8R0xW93" role="lcghm">
+            <property role="lacIc" value="::" />
+          </node>
+          <node concept="l9hG8" id="7RFM8R0xW94" role="lcghm">
+            <node concept="2OqwBi" id="7RFM8R0xW95" role="lb14g">
+              <node concept="2OqwBi" id="7RFM8R0xW96" role="2Oq$k0">
+                <node concept="117lpO" id="7RFM8R0xW97" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7RFM8R0xW98" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:7RFM8R0xwrs" resolve="attribute" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="7RFM8R0xW99" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="7RFM8R0xWDi" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+          <node concept="l8MVK" id="7RFM8R0xX60" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="7RFM8R0Rm5D">
+    <property role="3GE5qa" value="Namespace" />
+    <ref role="WuzLi" to="wnzg:7RFM8R0Rm5q" resolve="GlobalUsingNamespaceMethodDeclaration" />
+    <node concept="11bSqf" id="7RFM8R0Rm5E" role="11c4hB">
+      <node concept="3clFbS" id="7RFM8R0Rm5F" role="2VODD2">
+        <node concept="lc7rE" id="7RFM8R0Rxe3" role="3cqZAp">
+          <node concept="la8eA" id="7RFM8R0Rxe4" role="lcghm">
+            <property role="lacIc" value="using " />
+          </node>
+          <node concept="l9hG8" id="7RFM8R0Rxe5" role="lcghm">
+            <node concept="2OqwBi" id="7RFM8R0Rxe6" role="lb14g">
+              <node concept="2OqwBi" id="7RFM8R0Rxe7" role="2Oq$k0">
+                <node concept="117lpO" id="7RFM8R0Rxe8" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7RFM8R0RzdP" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:7RFM8R0Rm5r" resolve="namespace" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="7RFM8R0Rxea" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="7RFM8R0Rxeb" role="lcghm">
+            <property role="lacIc" value="::" />
+          </node>
+          <node concept="l9hG8" id="7RFM8R0Rxec" role="lcghm">
+            <node concept="2OqwBi" id="7RFM8R0Rxed" role="lb14g">
+              <node concept="2OqwBi" id="7RFM8R0Rxee" role="2Oq$k0">
+                <node concept="117lpO" id="7RFM8R0Rxef" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7RFM8R0RyMD" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:7RFM8R0Rm5s" resolve="method" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="7RFM8R0Rxeh" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="7RFM8R0RxKQ" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+          <node concept="l8MVK" id="7RFM8R0Ryg0" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
