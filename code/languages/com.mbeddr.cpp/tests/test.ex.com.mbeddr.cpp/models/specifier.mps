@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:770c1d7a-fde6-4abb-9214-7e1f1cfd210f(test.ex.com.mbeddr.cpp.funcspecifier)">
+<model ref="r:770c1d7a-fde6-4abb-9214-7e1f1cfd210f(test.ex.com.mbeddr.cpp.specifier)">
   <persistence version="9" />
   <languages>
     <engage id="236f3e56-2360-4657-9b9d-0cb84f56784d" name="com.mbeddr.cpp.modules.gen" />
@@ -10,6 +10,9 @@
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
+      <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
+        <child id="7254843406768833939" name="expr" index="1_9egR" />
+      </concept>
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
@@ -55,11 +58,23 @@
       </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
-      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticConcept" flags="ng" index="226hDU">
+      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlagConcept" flags="ng" index="226hDU">
         <property id="2277423264798216735" name="isStatic" index="226hDV" />
       </concept>
-      <concept id="2277423264798199359" name="com.mbeddr.cpp.base.structure.IInlineConcept" flags="ng" index="226Gpr">
+      <concept id="2277423264798199359" name="com.mbeddr.cpp.base.structure.IInlineFlagConcept" flags="ng" index="226Gpr">
         <property id="2277423264798199360" name="isInlined" index="226Go$" />
+      </concept>
+      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualFlagConcept" flags="ng" index="hL25U">
+        <property id="3188920472788366141" name="isVirtual" index="hL25V" />
+      </concept>
+      <concept id="3188920472790477822" name="com.mbeddr.cpp.base.structure.IPureVirtualFlagConcept" flags="ng" index="hTfAS">
+        <property id="3188920472790477826" name="isPureVirtual" index="hTfT4" />
+      </concept>
+      <concept id="6028541369715364763" name="com.mbeddr.cpp.base.structure.IVolatileFlagConcept" flags="ng" index="O23RO">
+        <property id="6028541369715364764" name="isVolatile" index="O23RN" />
+      </concept>
+      <concept id="6028541369715411335" name="com.mbeddr.cpp.base.structure.IConstFlagConcept" flags="ng" index="O2YvC">
+        <property id="6028541369715411336" name="isConstant" index="O2YvB" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
@@ -96,6 +111,11 @@
       </concept>
       <concept id="842732463503928106" name="com.mbeddr.core.unittest.structure.NoTestIsolationStrategy" flags="ng" index="3GpDuv" />
     </language>
+    <language id="b341759a-c721-4072-90cf-328bb2724684" name="com.mbeddr.cpp.expressions">
+      <concept id="4018800670855489857" name="com.mbeddr.cpp.expressions.structure.InternalAttributeRef" flags="ng" index="3uHcMF">
+        <reference id="4018800670855489862" name="att" index="3uHcMG" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -112,9 +132,14 @@
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
+      <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
+      </concept>
+      <concept id="8860443239512128052" name="com.mbeddr.core.expressions.structure.BinaryExpression" flags="ng" index="3TlMgq">
+        <child id="8860443239512128064" name="left" index="3TlMhI" />
+        <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
@@ -144,7 +169,7 @@
       <property role="iO3LB" value="true" />
       <ref role="3oK8_y" node="3v5DuFDkAwn" resolve="portable" />
       <node concept="2v9HqM" id="4WhfN3ojRGp" role="2eOfOg">
-        <ref role="2v9HqP" node="4WhfN3ocL2A" resolve="FunctionSpecifier" />
+        <ref role="2v9HqP" node="4WhfN3ocL2A" resolve="Specifier" />
       </node>
       <node concept="2v9HqM" id="3v5DuFDttij" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
@@ -161,13 +186,15 @@
     </node>
   </node>
   <node concept="1whW_1" id="4WhfN3ocL2A">
-    <property role="TrG5h" value="FunctionSpecifier" />
+    <property role="TrG5h" value="Specifier" />
     <node concept="3mBW2U" id="1Yr26iukrN$" role="N3F5h">
       <property role="2OOxQR" value="false" />
       <property role="TrG5h" value="SomeClass" />
       <node concept="3mBbG7" id="5eDFAXBt0Dc" role="3mBdys">
         <property role="TrG5h" value="staticField" />
         <property role="226hDV" value="true" />
+        <property role="O2YvB" value="false" />
+        <property role="1wg9_F" value="private" />
         <node concept="26Vqph" id="5eDFAXBt0Ga" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
@@ -177,6 +204,44 @@
         </node>
       </node>
       <node concept="3u$6M4" id="5eDFAXBt0Ao" role="3mBdys" />
+      <node concept="3mBbG7" id="5eDFAXBNIRy" role="3mBdys">
+        <property role="TrG5h" value="constField" />
+        <property role="O2YvB" value="true" />
+        <property role="1wg9_F" value="public" />
+        <node concept="26Vqph" id="5eDFAXBNIUC" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="5eDFAXBNIV$" role="3XIe9u">
+          <property role="2hmy$m" value="0" />
+        </node>
+      </node>
+      <node concept="3u$6M4" id="5eDFAXBNIW5" role="3mBdys" />
+      <node concept="3mBbG7" id="5eDFAXBNIZY" role="3mBdys">
+        <property role="TrG5h" value="volatileField" />
+        <property role="O23RN" value="true" />
+        <node concept="26Vqph" id="5eDFAXBNJ3c" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="5eDFAXBNJ3$" role="3XIe9u">
+          <property role="2hmy$m" value="0" />
+        </node>
+      </node>
+      <node concept="3u$6M4" id="5eDFAXBNJ4o" role="3mBdys" />
+      <node concept="3mBbG7" id="5eDFAXBNJ8A" role="3mBdys">
+        <property role="TrG5h" value="constVolatileField" />
+        <property role="O2YvB" value="true" />
+        <property role="O23RN" value="true" />
+        <node concept="26Vqph" id="5eDFAXBNJc1" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="5eDFAXBNJcA" role="3XIe9u">
+          <property role="2hmy$m" value="0" />
+        </node>
+      </node>
+      <node concept="3u$6M4" id="5eDFAXBNIOA" role="3mBdys" />
       <node concept="3mB1cK" id="1Yr26iukrNB" role="3mBdys">
         <property role="1wg9_F" value="private" />
         <property role="TrG5h" value="inlinedMethod" />
@@ -186,6 +251,16 @@
           <property role="2c7vTL" value="false" />
         </node>
         <node concept="3XIRFW" id="1Yr26iukrO8" role="3XIRFX">
+          <node concept="1_9egQ" id="5eDFAXBNTUY" role="3XIRFZ">
+            <node concept="3pqW6w" id="5eDFAXBNTWF" role="1_9egR">
+              <node concept="3TlMh9" id="5eDFAXBNTX5" role="3TlMhJ">
+                <property role="2hmy$m" value="3" />
+              </node>
+              <node concept="3uHcMF" id="5eDFAXBNTUW" role="3TlMhI">
+                <ref role="3uHcMG" node="5eDFAXBNIRy" resolve="constField" />
+              </node>
+            </node>
+          </node>
           <node concept="2BFjQ_" id="1Yr26iukrOE" role="3XIRFZ">
             <node concept="3TlMh9" id="1Yr26iukrOS" role="2BFjQA">
               <property role="2hmy$m" value="0" />
@@ -198,6 +273,8 @@
         <property role="1wg9_F" value="private" />
         <property role="TrG5h" value="staticMethod" />
         <property role="226hDV" value="true" />
+        <property role="hL25V" value="false" />
+        <property role="hTfT4" value="false" />
         <node concept="26Vqph" id="1Yr26iukrZX" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />

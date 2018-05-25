@@ -566,6 +566,36 @@
     <ref role="WuzLi" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
     <node concept="11bSqf" id="3v5DuFDt$Z8" role="11c4hB">
       <node concept="3clFbS" id="3v5DuFDt$Z9" role="2VODD2">
+        <node concept="3clFbJ" id="5eDFAXBK5ll" role="3cqZAp">
+          <node concept="3clFbS" id="5eDFAXBK5ln" role="3clFbx">
+            <node concept="lc7rE" id="5eDFAXBK6AU" role="3cqZAp">
+              <node concept="la8eA" id="5eDFAXBK6Bk" role="lcghm">
+                <property role="lacIc" value="const " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5eDFAXBK5OY" role="3clFbw">
+            <node concept="117lpO" id="5eDFAXBK5An" role="2Oq$k0" />
+            <node concept="3TrcHB" id="5eDFAXBK6yH" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:5eDFAXBC$A8" resolve="isConstant" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5eDFAXBK6T4" role="3cqZAp">
+          <node concept="3clFbS" id="5eDFAXBK6T6" role="3clFbx">
+            <node concept="lc7rE" id="5eDFAXBK7Ov" role="3cqZAp">
+              <node concept="la8eA" id="5eDFAXBK7Pl" role="lcghm">
+                <property role="lacIc" value="volatile " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5eDFAXBK7p5" role="3clFbw">
+            <node concept="117lpO" id="5eDFAXBK7au" role="2Oq$k0" />
+            <node concept="3TrcHB" id="5eDFAXBK7Ki" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:5eDFAXBCpes" resolve="isVolatile" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="5eDFAXBthOh" role="3cqZAp">
           <node concept="3clFbS" id="5eDFAXBthOj" role="3clFbx">
             <node concept="lc7rE" id="5eDFAXBtiDY" role="3cqZAp">
