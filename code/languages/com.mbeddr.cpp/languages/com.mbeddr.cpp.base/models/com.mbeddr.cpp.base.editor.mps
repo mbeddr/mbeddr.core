@@ -1359,5 +1359,15 @@
       <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
     </node>
   </node>
+  <node concept="PKFIW" id="1Yr26itwsTs">
+    <property role="3GE5qa" value="method" />
+    <property role="TrG5h" value="InlineFlag" />
+    <ref role="1XX52x" to="wnzg:1Yr26itwsSZ" resolve="IInlineConcept" />
+    <node concept="1kHk_G" id="1Yr26itwsTu" role="2wV5jI">
+      <property role="ZjSer" value="inline" />
+      <ref role="1NtTu8" to="wnzg:1Yr26itwsT0" resolve="isInlined" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
 </model>
 
