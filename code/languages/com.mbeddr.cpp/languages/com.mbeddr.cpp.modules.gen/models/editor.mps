@@ -3,14 +3,15 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
     <import index="u5dg" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.xtext(com.mbeddr.mpsutil.ecore.stubs/)" />
     <import index="gkp7" ref="r:a6defc8b-c4d9-46c9-a221-6d68fa6905e1(com.mbeddr.cpp.base.editor)" />
+    <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="pmno" ref="r:fb787694-3ba8-4e1e-89dc-c410426eb36e(com.mbeddr.cpp.modules.gen.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -20,12 +21,12 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -55,6 +56,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
@@ -74,6 +76,11 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+    </language>
+    <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -97,8 +104,33 @@
       <node concept="3F0ifn" id="2Ai0Gt9XXY4" role="3EZMnx">
         <property role="3F0ifm" value="::" />
       </node>
+      <node concept="3EZMnI" id="3v5DuFDnNFt" role="3EZMnx">
+        <node concept="PMmxH" id="59MAV0ydrUB" role="3EZMnx">
+          <ref role="PMmxG" to="gkp7:59MAV0yaZn2" resolve="VisibilityFlag" />
+        </node>
+        <node concept="3F0A7n" id="1Yr26iua4wV" role="3EZMnx">
+          <ref role="1NtTu8" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+        </node>
+        <node concept="3F0A7n" id="1Yr26iua4xG" role="3EZMnx">
+          <ref role="1NtTu8" to="wnzg:1Yr26itwsT0" resolve="isInlined" />
+        </node>
+        <node concept="PMmxH" id="6ddXmWeaxpU" role="3EZMnx">
+          <ref role="PMmxG" to="gkp7:1TorPL4sJdQ" resolve="PureFlag" />
+        </node>
+        <node concept="PMmxH" id="2L1k$oXn3Ob" role="3EZMnx">
+          <ref role="PMmxG" to="gkp7:2L1k$oXm7Pq" resolve="VirtualFlag" />
+        </node>
+        <node concept="PMmxH" id="3v5DuFDoxUa" role="3EZMnx">
+          <ref role="PMmxG" to="gkp7:3v5DuFDr9bv" resolve="MethodSignature_Editor" />
+        </node>
+        <node concept="_tjkj" id="6ddXmWebFfR" role="3EZMnx">
+          <node concept="3F1sOY" id="6ddXmWebFgf" role="_tjki">
+            <ref role="1NtTu8" to="wnzg:3CmSUB7Fp_k" resolve="body" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="3v5DuFDnNFw" role="2iSdaV" />
+      </node>
       <node concept="2iRfu4" id="2Ai0Gt9XXX5" role="2iSdaV" />
-      <node concept="B$lHz" id="2Ai0Gt9Xlo6" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="2Ai0GtaeC0k">
