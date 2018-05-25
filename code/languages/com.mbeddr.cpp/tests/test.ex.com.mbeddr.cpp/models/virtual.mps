@@ -72,7 +72,6 @@
         <reference id="4511589886097466674" name="parentClass" index="FysoF" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
-        <property id="5478191656157682870" name="static" index="gNYVZ" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="5044697665789423998" name="com.mbeddr.cpp.base.structure.INamedClassMemberDeclaration" flags="ng" index="3mBaMM">
@@ -219,7 +218,6 @@
       <property role="TrG5h" value="SomeClass" />
       <node concept="3mB1cK" id="6KmaLbE81K_" role="3mBdys">
         <property role="1wg9_F" value="public" />
-        <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="setFalse" />
         <property role="hL25V" value="false" />
         <node concept="3TlMgk" id="6KmaLbE81KA" role="2C2TGm">
@@ -252,7 +250,6 @@
       <node concept="3u$6M4" id="7wcjSRtodQX" role="3mBdys" />
       <node concept="3mB1cK" id="7wcjSRtodRL" role="3mBdys">
         <property role="1wg9_F" value="private" />
-        <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="setToSomething" />
         <node concept="26Vqph" id="7wcjSRtodSm" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -275,7 +272,6 @@
       <property role="TrG5h" value="AnotherClass" />
       <node concept="3mB1cK" id="6KmaLbE81N_" role="3mBdys">
         <property role="1wg9_F" value="public" />
-        <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="setTrue" />
         <node concept="3TlMgk" id="6KmaLbE81NA" role="2C2TGm">
           <property role="2caQfQ" value="false" />
