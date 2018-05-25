@@ -108,8 +108,8 @@
         <node concept="PMmxH" id="59MAV0ydrUB" role="3EZMnx">
           <ref role="PMmxG" to="gkp7:59MAV0yaZn2" resolve="VisibilityFlag" />
         </node>
-        <node concept="3F0A7n" id="1Yr26iua4wV" role="3EZMnx">
-          <ref role="1NtTu8" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+        <node concept="PMmxH" id="1Yr26iunEPy" role="3EZMnx">
+          <ref role="PMmxG" to="gkp7:1Yr26itwx8V" resolve="StaticFlag" />
         </node>
         <node concept="3F0A7n" id="1Yr26iua4xG" role="3EZMnx">
           <ref role="1NtTu8" to="wnzg:1Yr26itwsT0" resolve="isInlined" />
