@@ -744,20 +744,32 @@
             <node concept="2jxLKc" id="2sRGoU6kMOI" role="1tU5fm" />
           </node>
           <node concept="3clFbS" id="2sRGoU6kMOJ" role="Jncv$">
-            <node concept="3clFbF" id="2sRGoU6kMOK" role="3cqZAp">
-              <node concept="2OqwBi" id="2sRGoU6kMOL" role="3clFbG">
-                <node concept="37vLTw" id="2sRGoU6kMOM" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2sRGoU6faLn" resolve="res" />
-                </node>
-                <node concept="TSZUe" id="2sRGoU6kMON" role="2OqNvi">
-                  <node concept="2OqwBi" id="2sRGoU6m3W4" role="25WWJ7">
-                    <node concept="Jnkvi" id="2sRGoU6kMOO" role="2Oq$k0">
-                      <ref role="1M0zk5" node="2sRGoU6kMOH" resolve="ume" />
+            <node concept="3clFbJ" id="4uO_crcbV8w" role="3cqZAp">
+              <node concept="3clFbS" id="4uO_crcbV8y" role="3clFbx">
+                <node concept="3clFbF" id="2sRGoU6kMOK" role="3cqZAp">
+                  <node concept="2OqwBi" id="2sRGoU6kMOL" role="3clFbG">
+                    <node concept="37vLTw" id="2sRGoU6kMOM" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2sRGoU6faLn" resolve="res" />
                     </node>
-                    <node concept="2qgKlT" id="2sRGoU6m4ML" role="2OqNvi">
-                      <ref role="37wK5l" to="ywuz:6OxpEKG0KPv" resolve="evaluateStatically" />
+                    <node concept="TSZUe" id="2sRGoU6kMON" role="2OqNvi">
+                      <node concept="2OqwBi" id="2sRGoU6m3W4" role="25WWJ7">
+                        <node concept="Jnkvi" id="2sRGoU6kMOO" role="2Oq$k0">
+                          <ref role="1M0zk5" node="2sRGoU6kMOH" resolve="ume" />
+                        </node>
+                        <node concept="2qgKlT" id="2sRGoU6m4ML" role="2OqNvi">
+                          <ref role="37wK5l" to="ywuz:6OxpEKG0KPv" resolve="evaluateStatically" />
+                        </node>
+                      </node>
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4uO_crcbVyq" role="3clFbw">
+                <node concept="Jnkvi" id="4uO_crcbVhl" role="2Oq$k0">
+                  <ref role="1M0zk5" node="2sRGoU6kMOH" resolve="ume" />
+                </node>
+                <node concept="2qgKlT" id="4uO_crcbWSH" role="2OqNvi">
+                  <ref role="37wK5l" to="ywuz:3ilck8Kr3zN" resolve="isStaticallyEvaluatable" />
                 </node>
               </node>
             </node>
