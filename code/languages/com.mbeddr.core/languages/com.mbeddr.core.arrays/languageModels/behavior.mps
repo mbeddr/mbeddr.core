@@ -3037,6 +3037,28 @@
       <ref role="13i0hy" to="ywuz:61lw97FtLtJ" resolve="getUsedBytes" />
       <node concept="3Tm1VV" id="61lw97FtLuL" role="1B3o_S" />
       <node concept="3clFbS" id="61lw97FtLuM" role="3clF47">
+        <node concept="3clFbJ" id="4uO_crcbDxx" role="3cqZAp">
+          <node concept="3clFbS" id="4uO_crcbDxz" role="3clFbx">
+            <node concept="3cpWs6" id="4uO_crcbH4V" role="3cqZAp">
+              <node concept="3cmrfG" id="4uO_crcbH_U" role="3cqZAk">
+                <property role="3cmrfH" value="-1" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="4uO_crcbE4B" role="3clFbw">
+            <node concept="2OqwBi" id="4uO_crcbGix" role="3fr31v">
+              <node concept="2OqwBi" id="4uO_crcbERn" role="2Oq$k0">
+                <node concept="13iPFW" id="4uO_crcbE_4" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4uO_crcbFCH" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yq40:1gDNXlE1$cN" resolve="sizeExpr" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="4uO_crcbGUT" role="2OqNvi">
+                <ref role="37wK5l" to="ywuz:3ilck8Kr3zN" resolve="isStaticallyEvaluatable" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="61lw97FulOF" role="3cqZAp">
           <node concept="3cpWsn" id="61lw97FulOG" role="3cpWs9">
             <property role="TrG5h" value="size" />
@@ -3446,7 +3468,7 @@
       <property role="TrG5h" value="dependentModuleContent" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:1tHnH2eLwg4" resolve="dependentModuleContent" />
+      <ref role="13i0hy" to="ywuz:1tHnH2eLwg4" resolve="dependentModuleContents" />
       <node concept="3Tm1VV" id="1tHnH2eMNl9" role="1B3o_S" />
       <node concept="3clFbS" id="1tHnH2eMNlg" role="3clF47">
         <node concept="3clFbF" id="1tHnH2eMPbz" role="3cqZAp">
