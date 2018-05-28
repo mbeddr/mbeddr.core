@@ -445,8 +445,8 @@
       <node concept="PMmxH" id="5eDFAXBRI3K" role="3EZMnx">
         <ref role="PMmxG" node="1Yr26itwsTs" resolve="InlineFlag" />
       </node>
-      <node concept="PMmxH" id="5eDFAXBREPN" role="3EZMnx">
-        <ref role="PMmxG" node="5eDFAXBRENO" resolve="ExternFlag" />
+      <node concept="PMmxH" id="15T8UHynuN1" role="3EZMnx">
+        <ref role="PMmxG" node="15T8UHynq4a" resolve="MutableFlag" />
       </node>
       <node concept="PMmxH" id="5eDFAXBm98u" role="3EZMnx">
         <ref role="PMmxG" node="1Yr26itwx8V" resolve="StaticFlag" />
@@ -1448,6 +1448,16 @@
     <node concept="1kHk_G" id="5eDFAXBS4mA" role="2wV5jI">
       <property role="ZjSer" value="thread_local" />
       <ref role="1NtTu8" to="wnzg:5eDFAXBS4m8" resolve="isThreadLocal" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="15T8UHynq4a">
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="MutableFlag" />
+    <ref role="1XX52x" to="wnzg:15T8UHynq3H" resolve="IMutableFlagConcept" />
+    <node concept="1kHk_G" id="15T8UHynq5E" role="2wV5jI">
+      <property role="ZjSer" value="mutable" />
+      <ref role="1NtTu8" to="wnzg:15T8UHynq3I" resolve="isMutable" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
 </model>
