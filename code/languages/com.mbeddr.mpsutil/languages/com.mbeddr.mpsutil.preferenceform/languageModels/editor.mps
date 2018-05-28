@@ -2,7 +2,7 @@
 <model ref="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -53,7 +53,6 @@
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -289,7 +288,6 @@
   <node concept="24kQdi" id="86yKXFY0WN">
     <ref role="1XX52x" to="3iid:86yKXFV_6e" resolve="PreferenceFormType" />
     <node concept="3EZMnI" id="hB4ApUS" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="3F0ifn" id="6UEaXWpU7mn" role="3EZMnx">
         <property role="3F0ifm" value="preferenceForm" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
@@ -399,7 +397,6 @@
     <property role="TrG5h" value="IPreferenceFormExpressionEditor" />
     <ref role="1XX52x" to="3iid:2DIWO7Y817r" resolve="IPreferenceFormExpression" />
     <node concept="3EZMnI" id="2DIWO7Y85nk" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="3F0ifn" id="2DIWO7Y85nl" role="3EZMnx">
         <property role="3F0ifm" value="preferenceForm" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />

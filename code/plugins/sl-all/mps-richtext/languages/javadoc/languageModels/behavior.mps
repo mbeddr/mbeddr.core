@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -101,7 +101,7 @@
             <node concept="2OqwBi" id="G25GphLpSf" role="2Oq$k0">
               <node concept="13iPFW" id="G25GphLpRU" role="2Oq$k0" />
               <node concept="3TrEf2" id="G25GphLpSl" role="2OqNvi">
-                <ref role="3Tt5mk" to="p95z:ehGfXvIH6m" />
+                <ref role="3Tt5mk" to="p95z:ehGfXvIH6m" resolve="text" />
               </node>
             </node>
             <node concept="zfrQC" id="G25GphLpSL" role="2OqNvi" />
@@ -119,7 +119,7 @@
             <node concept="2OqwBi" id="7nqK$2JOoo_" role="2Oq$k0">
               <node concept="13iPFW" id="7nqK$2JOoog" role="2Oq$k0" />
               <node concept="3TrEf2" id="7nqK$2JOooF" role="2OqNvi">
-                <ref role="3Tt5mk" to="p95z:4F4peXsrXtM" />
+                <ref role="3Tt5mk" to="p95z:4F4peXsrXtM" resolve="text" />
               </node>
             </node>
             <node concept="zfrQC" id="7nqK$2JOop7" role="2OqNvi" />

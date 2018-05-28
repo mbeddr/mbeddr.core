@@ -8,9 +8,9 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -139,7 +139,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -3482,6 +3482,7 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqQb8" role="37wK5m" />
               <node concept="3clFbT" id="7WAr$Vc4S3y" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -3645,6 +3646,7 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqQjM" role="37wK5m" />
               <node concept="3clFbT" id="7WAr$Vc4RYE" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -6185,6 +6187,7 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqOQW" role="37wK5m" />
               <node concept="3clFbT" id="7WAr$Vc4R1g" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -6318,6 +6321,7 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqP0j" role="37wK5m" />
               <node concept="3clFbT" id="7WAr$Vc4R6c" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -6435,6 +6439,7 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqP9E" role="37wK5m" />
               <node concept="3clFbT" id="7WAr$Vc4Rb8" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -6584,6 +6589,7 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqPj1" role="37wK5m" />
               <node concept="3clFbT" id="7WAr$Vc4RgD" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -7742,6 +7748,7 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqNiY" role="37wK5m" />
               <node concept="3clFbT" id="7WAr$Vc4Q3V" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -7875,6 +7882,7 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqNsl" role="37wK5m" />
               <node concept="3clFbT" id="7WAr$Vc4PYZ" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -7992,6 +8000,7 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqN_G" role="37wK5m" />
               <node concept="3clFbT" id="7WAr$Vc4PU3" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -8141,6 +8150,7 @@
                   <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                 </node>
               </node>
+              <node concept="10Nm6u" id="6wNYzrUqNJ3" role="37wK5m" />
               <node concept="3clFbT" id="7WAr$Vc4PP7" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>

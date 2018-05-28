@@ -2,7 +2,7 @@
 <model ref="r:14605b73-d8b0-4e4f-8b1f-a4521795ebbf(tutorial.__spreferences.PlatformTemplates)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="4" />
   </languages>
   <imports />
   <registry>
@@ -44,16 +44,16 @@
         <property role="2AWWZI" value="-std=c99" />
         <property role="1FkSt$" value="-g" />
         <property role="3I8uaA" value="" />
-        <node concept="3abb7c" id="6HUmFakwgm" role="3anu1O">
+        <node concept="3abb7c" id="OnnrMNmT1w" role="3anu1O">
           <property role="TrG5h" value="Win32" />
         </node>
-        <node concept="3abb7c" id="6HUmFakwgn" role="3anu1O">
+        <node concept="3abb7c" id="OnnrMNmT1x" role="3anu1O">
           <property role="TrG5h" value="MacOSX" />
         </node>
-        <node concept="3abb7c" id="6HUmFakwgo" role="3anu1O">
+        <node concept="3abb7c" id="OnnrMNmT1y" role="3anu1O">
           <property role="TrG5h" value="Linux" />
         </node>
-        <node concept="3abb7c" id="6HUmFakwgp" role="3anu1O">
+        <node concept="3abb7c" id="OnnrMNmT1z" role="3anu1O">
           <property role="TrG5h" value="portable" />
         </node>
       </node>

@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -222,8 +222,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -1265,7 +1265,6 @@
           </node>
           <node concept="1PxgMI" id="4aOuL3PUUSH" role="33vP2m">
             <property role="1BlNFB" value="true" />
-            <ref role="1m5ApE" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
             <node concept="2OqwBi" id="4aOuL3PUTvk" role="1m5AlR">
               <node concept="1YBJjd" id="4aOuL3PUTvl" role="2Oq$k0">
                 <ref role="1YBMHb" node="4aOuL3PUSWA" resolve="call" />
@@ -1273,6 +1272,9 @@
               <node concept="3TrEf2" id="4aOuL3PUTvm" role="2OqNvi">
                 <ref role="3Tt5mk" to="uu1k:4aOuL3PUQhL" resolve="operation" />
               </node>
+            </node>
+            <node concept="chp4Y" id="2RSm1Cz26Hi" role="3oSUPX">
+              <ref role="cht4Q" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
             </node>
           </node>
         </node>
@@ -1365,7 +1367,6 @@
           </node>
           <node concept="1PxgMI" id="4aOuL3PVmeu" role="33vP2m">
             <property role="1BlNFB" value="true" />
-            <ref role="1m5ApE" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
             <node concept="2OqwBi" id="4aOuL3PVmev" role="1m5AlR">
               <node concept="1YBJjd" id="4aOuL3PVmew" role="2Oq$k0">
                 <ref role="1YBMHb" node="4aOuL3PVmek" resolve="call" />
@@ -1373,6 +1374,9 @@
               <node concept="3TrEf2" id="4aOuL3PVmex" role="2OqNvi">
                 <ref role="3Tt5mk" to="uu1k:4aOuL3PUQhL" resolve="operation" />
               </node>
+            </node>
+            <node concept="chp4Y" id="2RSm1Cz26Hj" role="3oSUPX">
+              <ref role="cht4Q" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
             </node>
           </node>
         </node>

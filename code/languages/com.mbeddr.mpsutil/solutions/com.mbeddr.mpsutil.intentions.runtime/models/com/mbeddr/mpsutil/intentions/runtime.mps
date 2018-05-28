@@ -38,6 +38,7 @@
     <import index="65en" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.speedSearch(MPS.IDEA/)" />
     <import index="d2fk" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.popup.list(MPS.IDEA/)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
@@ -2305,6 +2306,68 @@
                               </node>
                             </node>
                             <node concept="3clFbS" id="3pwG8PSkQQh" role="3clF47">
+                              <node concept="3clFbF" id="4ptnK4iG$Ri" role="3cqZAp">
+                                <node concept="2OqwBi" id="4ptnK4iG$Rf" role="3clFbG">
+                                  <node concept="10M0yZ" id="4ptnK4iG$Rg" role="2Oq$k0">
+                                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                                  </node>
+                                  <node concept="liA8E" id="4ptnK4iG$Rh" role="2OqNvi">
+                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                    <node concept="3cpWs3" id="4ptnK4iGAeD" role="37wK5m">
+                                      <node concept="2OqwBi" id="4ptnK4iGB59" role="3uHU7w">
+                                        <node concept="37vLTw" id="4ptnK4iGASR" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="3pwG8PSkQPD" resolve="node" />
+                                        </node>
+                                        <node concept="liA8E" id="4ptnK4iGBeV" role="2OqNvi">
+                                          <ref role="37wK5l" to="mhbf:~SNode.getName():java.lang.String" resolve="getName" />
+                                        </node>
+                                      </node>
+                                      <node concept="Xl_RD" id="4ptnK4iG_Rx" role="3uHU7B">
+                                        <property role="Xl_RC" value="itentions node: " />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbF" id="4ptnK4iGGlg" role="3cqZAp">
+                                <node concept="2OqwBi" id="4ptnK4iGGlh" role="3clFbG">
+                                  <node concept="10M0yZ" id="4ptnK4iGGli" role="2Oq$k0">
+                                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                                  </node>
+                                  <node concept="liA8E" id="4ptnK4iGGlj" role="2OqNvi">
+                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                    <node concept="3cpWs3" id="4ptnK4iGGlk" role="37wK5m">
+                                      <node concept="Xl_RD" id="4ptnK4iGGlo" role="3uHU7B">
+                                        <property role="Xl_RC" value="itentions ctx: " />
+                                      </node>
+                                      <node concept="37vLTw" id="4ptnK4iH3LE" role="3uHU7w">
+                                        <ref role="3cqZAo" node="3pwG8PSkQQf" resolve="context" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbF" id="4ptnK4iH6NV" role="3cqZAp">
+                                <node concept="2OqwBi" id="4ptnK4iH6NW" role="3clFbG">
+                                  <node concept="10M0yZ" id="4ptnK4iH6NX" role="2Oq$k0">
+                                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                                  </node>
+                                  <node concept="liA8E" id="4ptnK4iH6NY" role="2OqNvi">
+                                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                    <node concept="3cpWs3" id="4ptnK4iH6NZ" role="37wK5m">
+                                      <node concept="Xl_RD" id="4ptnK4iH6O0" role="3uHU7B">
+                                        <property role="Xl_RC" value="itentions query " />
+                                      </node>
+                                      <node concept="37vLTw" id="4ptnK4iH8KT" role="3uHU7w">
+                                        <ref role="3cqZAo" node="3pwG8PSkQPR" resolve="query" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
                               <node concept="3cpWs6" id="3pwG8PSkQQi" role="3cqZAp">
                                 <node concept="2OqwBi" id="3pwG8PSkQQj" role="3cqZAk">
                                   <node concept="2YIFZM" id="3pwG8PSl48m" role="2Oq$k0">

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -27,7 +27,7 @@
   <node concept="1M2fIO" id="19RCnNmEVoV">
     <ref role="1M2myG" to="x4fh:19RCnNmES40" resolve="ChildCellRef" />
     <node concept="1N5Pfh" id="19RCnNmEVqp" role="1Mr941">
-      <ref role="1N5Vy1" to="x4fh:19RCnNmES5t" />
+      <ref role="1N5Vy1" to="x4fh:19RCnNmES5t" resolve="decl" />
       <node concept="1dDu$B" id="19RCnNmEWsp" role="1N6uqs">
         <ref role="1dDu$A" to="x4fh:19RCnNmEwGZ" resolve="ChildCellDecl" />
       </node>
@@ -36,7 +36,7 @@
   <node concept="1M2fIO" id="QvUN5N1Oiz">
     <ref role="1M2myG" to="x4fh:7UiI8Ooc2LE" resolve="MathSymbolReferenceExpression" />
     <node concept="1N5Pfh" id="QvUN5N1OjE" role="1Mr941">
-      <ref role="1N5Vy1" to="x4fh:7UiI8OocF8U" />
+      <ref role="1N5Vy1" to="x4fh:7UiI8OocF8U" resolve="decl" />
       <node concept="1dDu$B" id="QvUN5N1Okj" role="1N6uqs">
         <ref role="1dDu$A" to="x4fh:7UiI8Oo9CUJ" resolve="MathSymbolDecl" />
       </node>

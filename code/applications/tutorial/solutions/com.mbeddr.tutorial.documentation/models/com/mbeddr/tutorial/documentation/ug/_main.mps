@@ -37,7 +37,6 @@
         <child id="7992580511422656152" name="text" index="20TvsS" />
       </concept>
       <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
-        <property id="324047639344492301" name="referenceOnly" index="1P4p2h" />
         <child id="6165313375056012515" name="ref" index="$CzcU" />
       </concept>
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
@@ -229,55 +228,46 @@
     </node>
     <node concept="3xmJbL" id="QRmqzHO4hm" role="1_0VJ0" />
     <node concept="$CzcT" id="hZfTLLCm6j" role="1_0VJ0">
-      <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="hZfTLLCm6D" role="$CzcU">
         <ref role="1_0j5g" to="9w7i:1ig5Eljjfz2" resolve="Z_CHAPTER_Concepts" />
       </node>
     </node>
     <node concept="$CzcT" id="hZfTLLvFnn" role="1_0VJ0">
-      <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="4v5hnzpb3dK" role="$CzcU">
         <ref role="1_0j5g" to="xojk:1OEOMsplgM2" resolve="Z_CHAPTER_Installation" />
       </node>
     </node>
     <node concept="$CzcT" id="1OEOMsplizW" role="1_0VJ0">
-      <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="1OEOMsplizX" role="$CzcU">
         <ref role="1_0j5g" to="bmc6:1ig5EljjfWv" resolve="Z_CHAPTER_Fundamentals" />
       </node>
     </node>
     <node concept="$CzcT" id="1OEOMsplkC6" role="1_0VJ0">
-      <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="1OEOMsplkCN" role="$CzcU">
         <ref role="1_0j5g" to="c4ys:1OEOMspli$k" resolve="Z_CHAPTER_mbeddrCvsC99" />
       </node>
     </node>
     <node concept="$CzcT" id="hZfTLMek95" role="1_0VJ0">
-      <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="hZfTLMek9i" role="$CzcU">
         <ref role="1_0j5g" to="4v62:1ig5EljjfWv" resolve="Z_CHAPTER_GeneratedCode" />
       </node>
     </node>
     <node concept="$CzcT" id="1OEOMsplgLG" role="1_0VJ0">
-      <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="1OEOMsplgLZ" role="$CzcU">
         <ref role="1_0j5g" to="4kwm:1OEOMsplf5g" resolve="Z_CHAPTER_CTooling" />
       </node>
     </node>
     <node concept="$CzcT" id="1OEOMspldIM" role="1_0VJ0">
-      <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="1OEOMspldJf" role="$CzcU">
         <ref role="1_0j5g" to="vaym:1OEOMspkYrg" resolve="Z_CHAPTER_CExtensions" />
       </node>
     </node>
     <node concept="$CzcT" id="hZfTLMezS0" role="1_0VJ0">
-      <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="1OEOMsplmvX" role="$CzcU">
         <ref role="1_0j5g" to="vi23:1OEOMsplkCQ" resolve="Z_CHAPTER_ProcessSupport" />
       </node>
     </node>
     <node concept="$CzcT" id="1OEOMsplmv$" role="1_0VJ0">
-      <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="1OEOMsplmv_" role="$CzcU">
         <ref role="1_0j5g" to="us0v:1ig5EljjfWv" resolve="Z_CHAPTER_Analyses" />
       </node>

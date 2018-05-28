@@ -89,16 +89,12 @@
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty_old" index="3kgbRO" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile_old" index="1RwFax" />
-      </concept>
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpW">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRP" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFay" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage">
@@ -114,24 +110,11 @@
       </concept>
     </language>
   </registry>
-  <node concept="2SbYGP" id="UK_oBpA4O0">
-    <property role="TrG5h" value="DocumentConfig" />
-    <property role="3GE5qa" value="document" />
-    <node concept="2SbYGw" id="UK_oBpA4O1" role="Cbewh">
-      <property role="TrG5h" value="tmp" />
-      <node concept="9PVaO" id="UK_oBpA4O2" role="9PVG_">
-        <property role="1RwFay" value="true" />
-        <property role="3kgbRP" value="false" />
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
-      </node>
-    </node>
-  </node>
   <node concept="1_1swa" id="UK_oBpA4NZ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="SampleDocument" />
     <property role="3GE5qa" value="document" />
-    <ref role="G9hjw" node="UK_oBpA4O0" resolve="DocumentConfig" />
+    <ref role="G9hjw" node="5CkU_dHcLvS" resolve="DocumentConfig" />
     <node concept="1mvXsy" id="UK_oBpA4O3" role="1_0VJ0">
       <property role="TrG5h" value="ConceptDocChapter" />
       <property role="1_0VJr" value="Concept documentation" />
@@ -305,7 +288,7 @@
     <property role="yApLE" value="1" />
     <property role="3GE5qa" value="document" />
     <property role="TrG5h" value="AnotherDoc" />
-    <ref role="G9hjw" node="UK_oBpA4O0" resolve="DocumentConfig" />
+    <ref role="G9hjw" node="5CkU_dHcLvS" resolve="DocumentConfig" />
     <node concept="1_0VNX" id="4jXS_uRroBW" role="1_0VJ0">
       <property role="TrG5h" value="Section" />
       <property role="1_0VJr" value="AnotherChild" />
@@ -326,7 +309,7 @@
         </node>
         <node concept="2Sb_l4" id="YJrcxt4Nvk" role="2SbwM5">
           <property role="2Sb_kV" value="images\20141103_142727.jpg" />
-          <ref role="2Sb_kU" node="UK_oBpA4O1" resolve="tmp" />
+          <ref role="2Sb_kU" node="5CkU_dHcLvT" resolve="tmp" />
         </node>
         <node concept="3SG1Pu" id="YJrcxt4Ogw" role="3SHJ_F">
           <property role="3SG1Pv" value="10" />
@@ -334,6 +317,17 @@
       </node>
       <node concept="3n9NSn" id="4jXS_uRroC5" role="lGtFl">
         <ref role="3nadW_" to="hauh:4jXS_uRrhkX" resolve="AnotherChild" />
+      </node>
+    </node>
+  </node>
+  <node concept="2SbYGP" id="5CkU_dHcLvS">
+    <property role="3GE5qa" value="document" />
+    <property role="TrG5h" value="DocumentConfig" />
+    <node concept="2SbYGw" id="5CkU_dHcLvT" role="Cbewh">
+      <property role="TrG5h" value="tmp" />
+      <node concept="9PVaO" id="5CkU_dHcLvU" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
       </node>
     </node>
   </node>

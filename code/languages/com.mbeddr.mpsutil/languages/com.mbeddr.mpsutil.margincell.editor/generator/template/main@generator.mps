@@ -207,7 +207,7 @@
                       <node concept="2OqwBi" id="7lmVLrUmw6p" role="3clFbG">
                         <node concept="30H73N" id="7lmVLrUmw3G" role="2Oq$k0" />
                         <node concept="3TrEf2" id="7lmVLrUmwyt" role="2OqNvi">
-                          <ref role="3Tt5mk" to="tkb5:5q2yETTckS" />
+                          <ref role="3Tt5mk" to="tkb5:5q2yETTckS" resolve="content" />
                         </node>
                       </node>
                     </node>
@@ -269,7 +269,7 @@
                               <node concept="2OqwBi" id="10nVqVge7os" role="3cqZAk">
                                 <node concept="30H73N" id="10nVqVge7ot" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="10nVqVge7ou" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="tkb5:5q2yETTckU" />
+                                  <ref role="3Tt5mk" to="tkb5:5q2yETTckU" resolve="styleClass" />
                                 </node>
                               </node>
                             </node>
@@ -278,7 +278,7 @@
                             <node concept="2OqwBi" id="10nVqVge4PS" role="2Oq$k0">
                               <node concept="30H73N" id="10nVqVge4Lo" role="2Oq$k0" />
                               <node concept="3TrEf2" id="10nVqVge5ky" role="2OqNvi">
-                                <ref role="3Tt5mk" to="tkb5:5q2yETTckU" />
+                                <ref role="3Tt5mk" to="tkb5:5q2yETTckU" resolve="styleClass" />
                               </node>
                             </node>
                             <node concept="3x8VRR" id="10nVqVge6hu" role="2OqNvi" />
@@ -332,12 +332,6 @@
                 <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="addEditorCell" />
                 <node concept="1rXfSq" id="7lmVLrUkFQ_" role="37wK5m">
                   <ref role="37wK5l" node="7lmVLrUkz7u" resolve="createContentCell" />
-                  <node concept="37vLTw" id="7lmVLrUkFUH" role="37wK5m">
-                    <ref role="3cqZAo" node="fXln3od" resolve="editorContext" />
-                  </node>
-                  <node concept="37vLTw" id="7lmVLrUkG3c" role="37wK5m">
-                    <ref role="3cqZAo" node="fXln5Dh" resolve="node" />
-                  </node>
                   <node concept="1ZhdrF" id="7lmVLrUmqTW" role="lGtFl">
                     <property role="2qtEX8" value="baseMethodDeclaration" />
                     <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
@@ -347,11 +341,11 @@
                           <node concept="2OqwBi" id="hT7x1rh" role="3clFbG">
                             <node concept="1iwH7S" id="hT7x1ri" role="2Oq$k0" />
                             <node concept="1iwH70" id="hT7x1rj" role="2OqNvi">
-                              <ref role="1iwH77" to="tpc3:hG092h3" resolve="cellFactoryMethod" />
+                              <ref role="1iwH77" to="tpc3:2dNBF9rpTiT" resolve="cellFactory.factoryMethod" />
                               <node concept="2OqwBi" id="7lmVLrUmr7H" role="1iwH7V">
                                 <node concept="30H73N" id="hT7x1rk" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="7lmVLrUmrCD" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="tkb5:5q2yETTckS" />
+                                  <ref role="3Tt5mk" to="tkb5:5q2yETTckS" resolve="content" />
                                 </node>
                               </node>
                             </node>
@@ -422,7 +416,7 @@
                         <node concept="2OqwBi" id="39C6tLerxqr" role="3clFbG">
                           <node concept="30H73N" id="39C6tLerxnp" role="2Oq$k0" />
                           <node concept="3TrEf2" id="39C6tLerxAx" role="2OqNvi">
-                            <ref role="3Tt5mk" to="tkb5:5q2yETTckT" />
+                            <ref role="3Tt5mk" to="tkb5:5q2yETTckT" resolve="marginContents" />
                           </node>
                         </node>
                       </node>
@@ -496,6 +490,22 @@
         </node>
         <node concept="3Tm6S6" id="1y7DiaVv2W2" role="1B3o_S" />
       </node>
+      <node concept="3clFb_" id="4Hw51cn4eQR" role="jymVt">
+        <property role="TrG5h" value="newFactoryMethod" />
+        <node concept="3uibUv" id="4Hw51cn4eQS" role="3clF45">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+        <node concept="3clFbS" id="4Hw51cn4eQT" role="3clF47">
+          <node concept="3cpWs6" id="4Hw51cn4eQU" role="3cqZAp">
+            <node concept="10Nm6u" id="4Hw51cn4eQV" role="3cqZAk" />
+          </node>
+        </node>
+        <node concept="raruj" id="4Hw51cn4eQW" role="lGtFl" />
+        <node concept="5jKBG" id="4Hw51cn4eQX" role="lGtFl">
+          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
+        </node>
+        <node concept="3Tm6S6" id="4Hw51cn4eQY" role="1B3o_S" />
+      </node>
       <node concept="3clFb_" id="7lmVLrUkz7u" role="jymVt">
         <property role="TrG5h" value="createContentCell" />
         <node concept="3uibUv" id="7lmVLrUkCYX" role="3clF45">
@@ -506,16 +516,6 @@
           <node concept="3clFbF" id="7lmVLrUkDmr" role="3cqZAp">
             <node concept="10Nm6u" id="7lmVLrUkDmq" role="3clFbG" />
           </node>
-        </node>
-        <node concept="37vLTG" id="7lmVLrUkBIz" role="3clF46">
-          <property role="TrG5h" value="editorContext" />
-          <node concept="3uibUv" id="7lmVLrUkBIy" role="1tU5fm">
-            <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
-          </node>
-        </node>
-        <node concept="37vLTG" id="7lmVLrUkC6g" role="3clF46">
-          <property role="TrG5h" value="node" />
-          <node concept="3Tqbb2" id="7lmVLrUkCkK" role="1tU5fm" />
         </node>
       </node>
       <node concept="3Tm1VV" id="h9B3Lmg" role="1B3o_S" />

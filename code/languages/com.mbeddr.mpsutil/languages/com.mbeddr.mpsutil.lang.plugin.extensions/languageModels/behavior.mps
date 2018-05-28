@@ -2,15 +2,15 @@
 <model ref="r:b990e3c0-6f19-4d16-8c27-c103313aff4d(com.mbeddr.mpsutil.lang.plugin.extensions.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="e4sx" ref="r:61fb604a-2ab8-423c-94bd-dec61f3a6b61(com.mbeddr.mpsutil.lang.plugin.extensions.dummy)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="gaxt" ref="r:ff7cab72-4f58-4133-a2c4-5d907d3fafb0(com.mbeddr.mpsutil.lang.plugin.extensions.structure)" implicit="true" />
-    <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -50,9 +50,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1828409047608048457" name="jetbrains.mps.lang.smodel.structure.NodePointerExpression" flags="nn" index="1N_AGu">
         <reference id="1828409047608048458" name="referentNode" index="1N_AGt" />
@@ -70,7 +73,6 @@
         <node concept="3clFbF" id="eRZjv$WqrJ" role="3cqZAp">
           <node concept="37vLTI" id="eRZjv$WqJW" role="3clFbG">
             <node concept="1PxgMI" id="eRZjv$WL6G" role="37vLTx">
-              <ref role="1m5ApE" to="tp4k:hwtC5zi" resolve="ActionGroupDeclaration" />
               <node concept="2OqwBi" id="eRZjv$WKQe" role="1m5AlR">
                 <node concept="1N_AGu" id="eRZjv$WKI2" role="2Oq$k0">
                   <ref role="1N_AGt" to="e4sx:eRZjv$WKyw" resolve="dummy" />
@@ -83,11 +85,14 @@
                   </node>
                 </node>
               </node>
+              <node concept="chp4Y" id="5RIakkDIXq5" role="3oSUPX">
+                <ref role="cht4Q" to="tp4k:hwtC5zi" resolve="ActionGroupDeclaration" />
+              </node>
             </node>
             <node concept="2OqwBi" id="eRZjv$WquO" role="37vLTJ">
               <node concept="13iPFW" id="eRZjv$WqrH" role="2Oq$k0" />
               <node concept="3TrEf2" id="eRZjv$Wq_o" role="2OqNvi">
-                <ref role="3Tt5mk" to="tp4k:hwtU$xx" />
+                <ref role="3Tt5mk" to="tp4k:hwtU$xx" resolve="modifiedGroup" />
               </node>
             </node>
           </node>

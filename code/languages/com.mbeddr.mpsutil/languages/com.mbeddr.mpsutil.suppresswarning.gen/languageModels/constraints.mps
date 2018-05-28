@@ -2,7 +2,7 @@
 <model ref="r:ff92def5-2ec5-4bf5-a21f-4f9214c42bb9(com.mbeddr.mpsutil.suppresswarning.gen.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -11,6 +11,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="urda" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.kernel.model(MPS.Core/)" />
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="szok" ref="r:66daf7bf-1a21-494f-a67b-89edb7cdf1b9(com.mbeddr.mpsutil.suppresswarning.gen.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -62,11 +63,11 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
+      <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
-      <concept id="1148684180339" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Factory" flags="in" index="1MUpDS" />
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
         <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
         <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
@@ -79,9 +80,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -108,60 +112,66 @@
     <ref role="1M2myG" to="szok:7U3FobbBed$" resolve="KindReference" />
     <node concept="1N5Pfh" id="79g_UwJJ6De" role="1Mr941">
       <ref role="1N5Vy1" to="szok:7U3FobbBed_" resolve="kind" />
-      <node concept="1MUpDS" id="79g_UwJJ6Dk" role="1N6uqs">
-        <node concept="3clFbS" id="79g_UwJJ6Dm" role="2VODD2">
-          <node concept="3SKdUt" id="5RKBOhe6nW5" role="3cqZAp">
-            <node concept="3SKdUq" id="5RKBOhe6nW7" role="3SKWNk">
+      <node concept="3dgokm" id="79g_UwJJ6Dk" role="1N6uqs">
+        <node concept="3clFbS" id="2lop6rSgbuc" role="2VODD2">
+          <node concept="3SKdUt" id="2lop6rSgbud" role="3cqZAp">
+            <node concept="3SKdUq" id="2lop6rSgbue" role="3SKWNk">
               <property role="3SKdUp" value="todo [Mihail Muhin]: should be rewritten to work on nodes, without translating to concepts. Now MPS misses a method to get concept's ancestors from a node" />
             </node>
           </node>
-          <node concept="3cpWs8" id="79g_UwJZnWu" role="3cqZAp">
-            <node concept="3cpWsn" id="79g_UwJZnWv" role="3cpWs9">
+          <node concept="3cpWs8" id="2lop6rSgbuf" role="3cqZAp">
+            <node concept="3cpWsn" id="2lop6rSgbug" role="3cpWs9">
               <property role="TrG5h" value="concepts" />
-              <node concept="2hMVRd" id="5RKBOhe60v4" role="1tU5fm">
-                <node concept="3uibUv" id="5RKBOhe62wZ" role="2hN53Y">
+              <node concept="2hMVRd" id="2lop6rSgbuh" role="1tU5fm">
+                <node concept="3uibUv" id="2lop6rSgbui" role="2hN53Y">
                   <ref role="3uigEE" to="c17a:~SAbstractConcept" resolve="SAbstractConcept" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="1TDhHkt4vox" role="33vP2m">
-                <node concept="2YIFZM" id="1TDhHkt4vfn" role="2Oq$k0">
+              <node concept="2OqwBi" id="2lop6rSgbuj" role="33vP2m">
+                <node concept="2YIFZM" id="2lop6rSgbuk" role="2Oq$k0">
                   <ref role="37wK5l" to="w1kc:~ConceptDescendantsCache.getInstance():jetbrains.mps.smodel.ConceptDescendantsCache" resolve="getInstance" />
                   <ref role="1Pybhc" to="w1kc:~ConceptDescendantsCache" resolve="ConceptDescendantsCache" />
                 </node>
-                <node concept="liA8E" id="1TDhHkt4vyE" role="2OqNvi">
+                <node concept="liA8E" id="2lop6rSgbul" role="2OqNvi">
                   <ref role="37wK5l" to="w1kc:~ConceptDescendantsCache.getDescendants(org.jetbrains.mps.openapi.language.SAbstractConcept):java.util.Set" resolve="getDescendants" />
-                  <node concept="35c_gC" id="1TDhHkt4vZ9" role="37wK5m">
+                  <node concept="35c_gC" id="2lop6rSgbum" role="37wK5m">
                     <ref role="35c_gD" to="bdcd:7U3Fobb_8Ek" resolve="SuppressWarningKind" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="5RKBOhe63zt" role="3cqZAp">
-            <node concept="2OqwBi" id="5RKBOhe64n5" role="3clFbG">
-              <node concept="37vLTw" id="5RKBOhe63zr" role="2Oq$k0">
-                <ref role="3cqZAo" node="79g_UwJZnWv" resolve="concepts" />
-              </node>
-              <node concept="3$u5V9" id="5RKBOhe65T8" role="2OqNvi">
-                <node concept="1bVj0M" id="5RKBOhe65Ta" role="23t8la">
-                  <node concept="3clFbS" id="5RKBOhe65Tb" role="1bW5cS">
-                    <node concept="3clFbF" id="5RKBOhe66A8" role="3cqZAp">
-                      <node concept="1PxgMI" id="5RKBOhe6hs6" role="3clFbG">
-                        <ref role="1m5ApE" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
-                        <node concept="2OqwBi" id="5RKBOhe67oD" role="1m5AlR">
-                          <node concept="37vLTw" id="5RKBOhe66A7" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5RKBOhe65Tc" resolve="it" />
+          <node concept="3clFbF" id="2lop6rSgbun" role="3cqZAp">
+            <node concept="2YIFZM" id="2lop6rSgbAP" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="2lop6rSgbAQ" role="37wK5m">
+                <node concept="37vLTw" id="2lop6rSgbAR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2lop6rSgbug" resolve="concepts" />
+                </node>
+                <node concept="3$u5V9" id="2lop6rSgbAS" role="2OqNvi">
+                  <node concept="1bVj0M" id="2lop6rSgbAT" role="23t8la">
+                    <node concept="3clFbS" id="2lop6rSgbAU" role="1bW5cS">
+                      <node concept="3clFbF" id="2lop6rSgbAV" role="3cqZAp">
+                        <node concept="1PxgMI" id="2lop6rSgbAW" role="3clFbG">
+                          <node concept="2OqwBi" id="2lop6rSgbAX" role="1m5AlR">
+                            <node concept="37vLTw" id="2lop6rSgbAY" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2lop6rSgbB1" resolve="it" />
+                            </node>
+                            <node concept="liA8E" id="2lop6rSgbAZ" role="2OqNvi">
+                              <ref role="37wK5l" to="c17a:~SAbstractConcept.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
+                            </node>
                           </node>
-                          <node concept="liA8E" id="5RKBOhe6e$$" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SAbstractConcept.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
+                          <node concept="chp4Y" id="2lop6rSgbB0" role="3oSUPX">
+                            <ref role="cht4Q" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                           </node>
                         </node>
                       </node>
                     </node>
-                  </node>
-                  <node concept="Rh6nW" id="5RKBOhe65Tc" role="1bW2Oz">
-                    <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="5RKBOhe65Td" role="1tU5fm" />
+                    <node concept="Rh6nW" id="2lop6rSgbB1" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="2lop6rSgbB2" role="1tU5fm" />
+                    </node>
                   </node>
                 </node>
               </node>

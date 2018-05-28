@@ -25,7 +25,6 @@
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
-      <concept id="1161622753914" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_operationContext" flags="nn" index="1Q79dO" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
@@ -423,7 +422,6 @@
                 <node concept="37vLTw" id="5Hxjapw9veh" role="37wK5m">
                   <ref role="3cqZAo" node="7$DvC4gSb_j" resolve="original" />
                 </node>
-                <node concept="1Q79dO" id="7$DvC4gQTT0" role="37wK5m" />
                 <node concept="37vLTw" id="1yFmGPo4llE" role="37wK5m">
                   <ref role="3cqZAo" node="1yFmGPo4kdo" resolve="fn" />
                 </node>

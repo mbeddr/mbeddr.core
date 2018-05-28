@@ -4,7 +4,7 @@
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -529,6 +529,12 @@
             <ref role="3bR37D" to="p6ld:7uZw0yZ43JH" resolve="com.mbeddr.core.unittest" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2xYE3fFGD1B" role="3bR37C">
+          <node concept="3bR9La" id="2xYE3fFGD1C" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7eF9rfAuAO0" resolve="com.mbeddr.ext.components" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7Ny2UQeBujh" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -633,6 +639,9 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="3bR9La" id="4O5goBat6Av" role="3bR37C">
+          <ref role="3bR37D" to="al5i:5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
+        </node>
       </node>
       <node concept="1E1JtA" id="7dfuMW5yHR9" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -669,6 +678,9 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="7eF9rfAuutL" resolve="com.mbeddr.core.__spreferences.PlatformTemplates" />
           </node>
+        </node>
+        <node concept="3bR9La" id="4O5goBat6zS" role="3bR37C">
+          <ref role="3bR37D" to="al5i:5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
         </node>
       </node>
     </node>

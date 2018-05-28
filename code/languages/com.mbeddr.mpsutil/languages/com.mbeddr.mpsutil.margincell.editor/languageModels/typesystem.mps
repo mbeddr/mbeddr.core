@@ -69,14 +69,14 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -105,11 +105,11 @@
                 <ref role="1YBMHb" node="5q2yETTcl_" resolve="marginCell" />
               </node>
               <node concept="3TrEf2" id="5q2yETTclb" role="2OqNvi">
-                <ref role="3Tt5mk" to="tkb5:5q2yETTckT" />
+                <ref role="3Tt5mk" to="tkb5:5q2yETTckT" resolve="marginContents" />
               </node>
             </node>
             <node concept="3TrEf2" id="5q2yETTclc" role="2OqNvi">
-              <ref role="3Tt5mk" to="tpce:fA0lvVK" />
+              <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
             </node>
           </node>
           <node concept="3w_OXm" id="5q2yETTcld" role="2OqNvi" />
@@ -120,11 +120,11 @@
           <node concept="2MkqsV" id="5q2yETTclg" role="3cqZAp">
             <node concept="3cpWs3" id="5q2yETTclh" role="2MkJ7o">
               <node concept="2OqwBi" id="5q2yETTcli" role="3uHU7w">
-                <node concept="3TUQnm" id="5q2yETTclj" role="2Oq$k0">
-                  <ref role="3TV0OU" to="elym:10nVqVftA9h" resolve="IMarginCellContent" />
-                </node>
                 <node concept="3TrcHB" id="5q2yETTclk" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="3B5_sB" id="3uuB$tyB7$o" role="2Oq$k0">
+                  <ref role="3B5MYn" to="elym:10nVqVftA9h" resolve="IMarginCellContent" />
                 </node>
               </node>
               <node concept="Xl_RD" id="5q2yETTcll" role="3uHU7B">
@@ -136,7 +136,7 @@
                 <ref role="1YBMHb" node="5q2yETTcl_" resolve="marginCell" />
               </node>
               <node concept="3TrEf2" id="5q2yETTclo" role="2OqNvi">
-                <ref role="3Tt5mk" to="tkb5:5q2yETTckT" />
+                <ref role="3Tt5mk" to="tkb5:5q2yETTckT" resolve="marginContents" />
               </node>
             </node>
           </node>
@@ -150,11 +150,11 @@
                     <ref role="1YBMHb" node="5q2yETTcl_" resolve="marginCell" />
                   </node>
                   <node concept="3TrEf2" id="5q2yETTclv" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tkb5:5q2yETTckT" />
+                    <ref role="3Tt5mk" to="tkb5:5q2yETTckT" resolve="marginContents" />
                   </node>
                 </node>
                 <node concept="3TrEf2" id="5q2yETTclw" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tpce:fA0lvVK" />
+                  <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
                 </node>
               </node>
               <node concept="2qgKlT" id="5q2yETTclx" role="2OqNvi">
@@ -165,8 +165,8 @@
               </node>
             </node>
             <node concept="3JPx81" id="5q2yETTclz" role="2OqNvi">
-              <node concept="3TUQnm" id="5q2yETTcl$" role="25WWJ7">
-                <ref role="3TV0OU" to="elym:10nVqVftA9h" resolve="IMarginCellContent" />
+              <node concept="3B5_sB" id="3uuB$tyB7oL" role="25WWJ7">
+                <ref role="3B5MYn" to="elym:10nVqVftA9h" resolve="IMarginCellContent" />
               </node>
             </node>
           </node>

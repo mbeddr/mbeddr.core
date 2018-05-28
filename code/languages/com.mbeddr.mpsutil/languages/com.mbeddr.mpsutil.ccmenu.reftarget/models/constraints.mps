@@ -2,7 +2,7 @@
 <model ref="r:78762027-8aca-41e7-8e70-1c5043fd19c2(com.mbeddr.mpsutil.ccmenu.reftarget.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -71,7 +71,7 @@
     <property role="3GE5qa" value="selectors" />
     <ref role="1M2myG" to="gx98:2PH7Shh7N3Z" resolve="LinkSelector" />
     <node concept="1N5Pfh" id="2PH7Shh7NcY" role="1Mr941">
-      <ref role="1N5Vy1" to="gx98:2PH7Shh7N42" />
+      <ref role="1N5Vy1" to="gx98:2PH7Shh7N42" resolve="linkToRemove" />
       <node concept="Bn3R3" id="2PH7Shh7Nd0" role="Bn3R6">
         <node concept="3clFbS" id="2PH7Shh7Nd1" role="2VODD2">
           <node concept="3clFbF" id="2PH7Shh7Ne9" role="3cqZAp">

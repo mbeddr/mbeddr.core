@@ -2,6 +2,7 @@
 <model ref="r:ec874b45-e888-42e6-995a-a298cefdff55(com.mbeddr.cimport.comparator.code)" content="root">
   <persistence version="9" />
   <imports>
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -106,6 +107,9 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -113,9 +117,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5692182839349412519" name="jetbrains.mps.lang.smodel.structure.Reference_GetRoleOperation" flags="nn" index="90r25" />
       <concept id="8758390115029295477" name="jetbrains.mps.lang.smodel.structure.SReferenceType" flags="in" index="2z4iKi" />
       <concept id="8758390115028452779" name="jetbrains.mps.lang.smodel.structure.Node_GetReferencesOperation" flags="nn" index="2z74zc" />
+      <concept id="2926695023085807517" name="jetbrains.mps.lang.smodel.structure.Reference_ContainingLinkOperation" flags="nn" index="CsP83" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -306,11 +310,16 @@
                       <node concept="1rXfSq" id="Pu8Vy2cu4u" role="3uHU7w">
                         <ref role="37wK5l" node="Pu8Vy2crCu" resolve="getLink" />
                       </node>
-                      <node concept="2OqwBi" id="Pu8Vy2ctTr" role="3uHU7B">
-                        <node concept="37vLTw" id="Pu8Vy2ctRc" role="2Oq$k0">
-                          <ref role="3cqZAo" node="Pu8Vy2ctOZ" resolve="it" />
+                      <node concept="2EnYce" id="Pu8Vy2ctTr" role="3uHU7B">
+                        <node concept="2OqwBi" id="5RIakkDJOTC" role="2Oq$k0">
+                          <node concept="CsP83" id="5RIakkDJOTD" role="2OqNvi" />
+                          <node concept="37vLTw" id="5RIakkDJOTE" role="2Oq$k0">
+                            <ref role="3cqZAo" node="Pu8Vy2ctOZ" resolve="it" />
+                          </node>
                         </node>
-                        <node concept="90r25" id="Pu8Vy2ctWa" role="2OqNvi" />
+                        <node concept="liA8E" id="5RIakkDJOTF" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                        </node>
                       </node>
                     </node>
                   </node>

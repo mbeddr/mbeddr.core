@@ -179,8 +179,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
         <property id="559557797393041554" name="fqName" index="BaBD8" />
@@ -342,12 +342,14 @@
           <node concept="2OqwBi" id="3VM1o5wbxw8" role="3uHU7w">
             <node concept="2OqwBi" id="3VM1o5wbxw9" role="2Oq$k0">
               <node concept="1PxgMI" id="3VM1o5wbxwa" role="2Oq$k0">
-                <ref role="1m5ApE" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
                 <node concept="2OqwBi" id="3VM1o5wbxwb" role="1m5AlR">
                   <node concept="oxGPV" id="3VM1o5wbxwc" role="2Oq$k0" />
                   <node concept="2qgKlT" id="3VM1o5wbxwd" role="2OqNvi">
                     <ref role="37wK5l" to="hwgx:70kXLV4LLzy" resolve="target" />
                   </node>
+                </node>
+                <node concept="chp4Y" id="79i$vAY5Ze4" role="3oSUPX">
+                  <ref role="cht4Q" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
                 </node>
               </node>
               <node concept="3TrEf2" id="3VM1o5wbxwe" role="2OqNvi">

@@ -2,8 +2,8 @@
 <model ref="r:805962ab-df40-4879-a29a-b811f69c6e51(com.mbeddr.analyses.cbmc.statemachines.experimental.rt.counterexample.lifted.model)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -15,7 +15,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="7785501532031639928" name="jetbrains.mps.baseLanguage.structure.LocalInstanceFieldReference" flags="nn" index="2N2G$s" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -59,7 +58,6 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -112,7 +110,7 @@
       <node concept="3clFbS" id="3x0R1LIQvQ1" role="3clF47">
         <node concept="XkiVB" id="3x0R1LIQvQ2" role="3cqZAp">
           <ref role="37wK5l" to="eqhl:60zYyfGfej4" resolve="CBMCLiftedCounterexampleState" />
-          <node concept="3cpWs2" id="3x0R1LIQvQ3" role="37wK5m">
+          <node concept="37vLTw" id="3x0R1LIQvQ3" role="37wK5m">
             <ref role="3cqZAo" node="3x0R1LIQvPV" resolve="aNode" />
           </node>
           <node concept="3clFbT" id="3x0R1LIQvQ4" role="37wK5m">
@@ -121,7 +119,7 @@
         </node>
         <node concept="3clFbF" id="3x0R1LIQvQ5" role="3cqZAp">
           <node concept="37vLTI" id="3x0R1LIQvQ6" role="3clFbG">
-            <node concept="3cpWs2" id="3x0R1LIQvQ7" role="37vLTx">
+            <node concept="37vLTw" id="3x0R1LIQvQ7" role="37vLTx">
               <ref role="3cqZAo" node="3x0R1LIQvPX" resolve="smName" />
             </node>
             <node concept="2OqwBi" id="3x0R1LIQvQ8" role="37vLTJ">
@@ -156,7 +154,7 @@
       <node concept="3Tm1VV" id="3x0R1LIQvQl" role="1B3o_S" />
       <node concept="3clFbS" id="3x0R1LIQvQm" role="3clF47">
         <node concept="3cpWs6" id="3x0R1LIQvQn" role="3cqZAp">
-          <node concept="2N2G$s" id="3x0R1LIQvQo" role="3cqZAk">
+          <node concept="37vLTw" id="3x0R1LIQvQo" role="3cqZAk">
             <ref role="3cqZAo" node="3x0R1LIQvPQ" resolve="smName" />
           </node>
         </node>

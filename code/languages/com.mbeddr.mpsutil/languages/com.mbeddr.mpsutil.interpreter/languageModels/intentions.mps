@@ -3,12 +3,17 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -642,7 +647,7 @@
             <node concept="1P9Npp" id="6MNhNeUI5oH" role="2OqNvi">
               <node concept="2pJPEk" id="6MNhNeUI5qU" role="1P9ThW">
                 <node concept="2pJPED" id="6MNhNeUI5t7" role="2pJPEn">
-                  <ref role="2pJxaS" to="3673:6MNhNeUBmBq" resolve="StopExpressions" />
+                  <ref role="2pJxaS" to="3673:6MNhNeUBmBq" resolve="StopExpression" />
                   <node concept="2pIpSj" id="6MNhNeUI5wq" role="2pJxcM">
                     <ref role="2pIpSl" to="3673:6MNhNeUBmBr" resolve="expression" />
                     <node concept="36biLy" id="6MNhNeUI5z4" role="2pJxcZ">
@@ -664,7 +669,7 @@
               <node concept="2Sf5sV" id="6MNhNeUI4Zb" role="2Oq$k0" />
               <node concept="1mIQ4w" id="6MNhNeUI4Zc" role="2OqNvi">
                 <node concept="chp4Y" id="6MNhNeUI4Zd" role="cj9EA">
-                  <ref role="cht4Q" to="3673:6MNhNeUBmBq" resolve="StopExpressions" />
+                  <ref role="cht4Q" to="3673:6MNhNeUBmBq" resolve="StopExpression" />
                 </node>
               </node>
             </node>

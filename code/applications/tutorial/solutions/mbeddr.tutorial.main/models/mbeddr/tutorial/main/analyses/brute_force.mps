@@ -62,7 +62,6 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
-        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
         <child id="1485382076185232212" name="targets" index="3anu1O" />
@@ -208,7 +207,7 @@
     <node concept="2eOfOl" id="5YWfxoABb5V" role="2ePNbc">
       <property role="iO3LB" value="false" />
       <property role="TrG5h" value="heapsort_explicit_harness" />
-      <ref role="3oK8_y" node="6HUmFakwgP" resolve="portable" />
+      <ref role="3oK8_y" node="OnnrMNmT23" resolve="portable" />
       <node concept="2v9HqM" id="5YWfxoADvrf" role="2eOfOg">
         <ref role="2v9HqP" node="5YWfxoAAhi9" resolve="_020_heapsort_explicit_harness" />
       </node>
@@ -240,17 +239,16 @@
       <property role="3r8Kxs" value="make" />
       <property role="2AWWZI" value="-std=c99" />
       <property role="1FkSt$" value="-g" />
-      <property role="3I8uaA" value="" />
-      <node concept="3abb7c" id="6HUmFakwgM" role="3anu1O">
+      <node concept="3abb7c" id="OnnrMNmT20" role="3anu1O">
         <property role="TrG5h" value="Win32" />
       </node>
-      <node concept="3abb7c" id="6HUmFakwgN" role="3anu1O">
+      <node concept="3abb7c" id="OnnrMNmT21" role="3anu1O">
         <property role="TrG5h" value="MacOSX" />
       </node>
-      <node concept="3abb7c" id="6HUmFakwgO" role="3anu1O">
+      <node concept="3abb7c" id="OnnrMNmT22" role="3anu1O">
         <property role="TrG5h" value="Linux" />
       </node>
-      <node concept="3abb7c" id="6HUmFakwgP" role="3anu1O">
+      <node concept="3abb7c" id="OnnrMNmT23" role="3anu1O">
         <property role="TrG5h" value="portable" />
       </node>
     </node>
@@ -770,7 +768,6 @@
                                   </node>
                                 </node>
                                 <node concept="3XISUE" id="5YWfxoAQ9zo" role="3XIRFZ" />
-                                <node concept="3XISUE" id="5YWfxoAQaCq" role="3XIRFZ" />
                               </node>
                             </node>
                           </node>

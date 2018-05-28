@@ -17,6 +17,7 @@
     <import index="lx0c" ref="r:12c76b04-7fd6-45a2-9d94-f0756fc5ad8f(com.mbeddr.ext.units.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -74,6 +75,7 @@
       </concept>
       <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
@@ -84,10 +86,15 @@
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
+      <concept id="1200911316486" name="jetbrains.mps.lang.generator.structure.MappingLabelDeclaration" flags="lg" index="2rT7sh">
+        <reference id="1200911342686" name="sourceConcept" index="2rTdP9" />
+        <reference id="1200913004646" name="targetConcept" index="2rZz_L" />
+      </concept>
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <property id="1167272244852" name="applyToConceptInheritors" index="36QftV" />
+        <reference id="1200917515464" name="labelDeclaration" index="2sgKRv" />
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
         <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
@@ -115,6 +122,13 @@
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
+    </language>
+    <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
+      <concept id="1216860049627" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" flags="nn" index="1iwH70">
+        <reference id="1216860049628" name="label" index="1iwH77" />
+        <child id="1216860049632" name="inputNode" index="1iwH7V" />
+      </concept>
+      <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="6021475212425916971" name="com.mbeddr.core.modules.structure.GlobalConstantFunctionDeclaration" flags="ng" index="BTY7A">
@@ -147,6 +161,10 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
@@ -155,6 +173,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -211,9 +230,15 @@
   <node concept="bUwia" id="6Fg1ERkOkVz">
     <property role="TrG5h" value="main" />
     <property role="3GE5qa" value="" />
+    <node concept="2rT7sh" id="6OFMQWRCpKk" role="2rTMjI">
+      <property role="TrG5h" value="unitContainer2ImplModule" />
+      <ref role="2rTdP9" to="qlb5:7eOyx9r3jsW" resolve="UnitContainer" />
+      <ref role="2rZz_L" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+    </node>
     <node concept="3lhOvk" id="6ZM2l12_6Zq" role="3lj3bC">
       <ref role="30HIoZ" to="qlb5:7eOyx9r3jsW" resolve="UnitContainer" />
       <ref role="3lhOvi" node="6ZM2l12_6Zs" resolve="map_UnitContainer" />
+      <ref role="2sgKRv" node="6OFMQWRCpKk" resolve="unitContainer2ImplModule" />
     </node>
     <node concept="3aamgX" id="6ZM2l12AbST" role="3acgRq">
       <ref role="30HIoZ" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
@@ -228,16 +253,22 @@
               <property role="P3scX" value="d4280a54-f6df-4383-aa41-d1b2bffa7eb1/747084250476811597/747084250476878887" />
               <node concept="3$xsQk" id="6ZM2l12Ae0v" role="3$ytzL">
                 <node concept="3clFbS" id="6ZM2l12Ae0w" role="2VODD2">
-                  <node concept="3clFbF" id="6ZM2l12Ae0A" role="3cqZAp">
-                    <node concept="2OqwBi" id="6ZM2l12AeMJ" role="3clFbG">
-                      <node concept="2OqwBi" id="6ZM2l12Ae0x" role="2Oq$k0">
-                        <node concept="3TrEf2" id="6ZM2l12Ae0$" role="2OqNvi">
-                          <ref role="3Tt5mk" to="vs0r:DubiFAXDKB" resolve="chunk" />
+                  <node concept="3clFbF" id="6OFMQWRCsO$" role="3cqZAp">
+                    <node concept="2OqwBi" id="6OFMQWRCsYR" role="3clFbG">
+                      <node concept="1iwH7S" id="6OFMQWRCsOz" role="2Oq$k0" />
+                      <node concept="1iwH70" id="6OFMQWRCtac" role="2OqNvi">
+                        <ref role="1iwH77" node="6OFMQWRCpKk" resolve="unitContainer2ImplModule" />
+                        <node concept="1PxgMI" id="6OFMQWRCueI" role="1iwH7V">
+                          <node concept="chp4Y" id="6OFMQWRCumc" role="3oSUPX">
+                            <ref role="cht4Q" to="qlb5:7eOyx9r3jsW" resolve="UnitContainer" />
+                          </node>
+                          <node concept="2OqwBi" id="6OFMQWRCtws" role="1m5AlR">
+                            <node concept="30H73N" id="6OFMQWRCtil" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="6OFMQWRCtIJ" role="2OqNvi">
+                              <ref role="3Tt5mk" to="vs0r:DubiFAXDKB" resolve="chunk" />
+                            </node>
+                          </node>
                         </node>
-                        <node concept="30H73N" id="6ZM2l12Ae0_" role="2Oq$k0" />
-                      </node>
-                      <node concept="3TrcHB" id="6ZM2l12AfzV" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                       </node>
                     </node>
                   </node>

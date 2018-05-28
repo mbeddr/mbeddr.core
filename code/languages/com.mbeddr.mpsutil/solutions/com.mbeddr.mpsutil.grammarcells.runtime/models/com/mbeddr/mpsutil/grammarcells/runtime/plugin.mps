@@ -155,10 +155,10 @@
       <concept id="4040588429969021681" name="jetbrains.mps.lang.smodel.structure.ModuleReferenceExpression" flags="nn" index="3rM5sP">
         <property id="4040588429969021683" name="moduleId" index="3rM5sR" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -259,7 +259,7 @@
                           <node concept="37vLTw" id="4AjdlHqkdbv" role="2Oq$k0">
                             <ref role="3cqZAo" node="3O7ZvCZIZ9P" resolve="annotation" />
                           </node>
-                          <node concept="1PgB_6" id="4AjdlHqkdqK" role="2OqNvi" />
+                          <node concept="3YRAZt" id="4AjdlHqkdqK" role="2OqNvi" />
                         </node>
                       </node>
                       <node concept="3cpWs8" id="1QxZEGO0ms0" role="3cqZAp">

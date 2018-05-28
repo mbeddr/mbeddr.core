@@ -2,7 +2,7 @@
 <model ref="r:01829650-3984-4e50-a84c-5b318a048a6a(com.mbeddr.mpsutil.grammarcells.sandboxlang.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -128,7 +128,7 @@
             <node concept="2OqwBi" id="6B579NFNG9v" role="3uHU7w">
               <node concept="13iPFW" id="6B579NFNG5N" role="2Oq$k0" />
               <node concept="3TrEf2" id="6B579NFNGfl" role="2OqNvi">
-                <ref role="3Tt5mk" to="ibwz:4qdNcH$3y99" />
+                <ref role="3Tt5mk" to="ibwz:4qdNcH$3y99" resolve="right" />
               </node>
             </node>
             <node concept="3cpWs3" id="6B579NFNFuw" role="3uHU7B">
@@ -137,7 +137,7 @@
                   <node concept="2OqwBi" id="6B579NFNFdD" role="3uHU7B">
                     <node concept="13iPFW" id="6B579NFNFb$" role="2Oq$k0" />
                     <node concept="3TrEf2" id="6B579NFNFhy" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ibwz:4qdNcH$3y96" />
+                      <ref role="3Tt5mk" to="ibwz:4qdNcH$3y96" resolve="left" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="6B579NFNFmz" role="3uHU7w">
@@ -253,7 +253,7 @@
               <node concept="2OqwBi" id="6B579NFNGwE" role="3uHU7w">
                 <node concept="13iPFW" id="6B579NFNGtP" role="2Oq$k0" />
                 <node concept="3TrEf2" id="6B579NFNG_U" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ibwz:6B579NFHr4y" />
+                  <ref role="3Tt5mk" to="ibwz:6B579NFHr4y" resolve="inner" />
                 </node>
               </node>
             </node>

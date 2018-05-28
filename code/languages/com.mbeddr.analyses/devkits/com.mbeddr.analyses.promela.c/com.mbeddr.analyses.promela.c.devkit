@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="com.mbeddr.analyses.promela.c" uuid="537c2fcd-71ef-4c92-a9e5-27af92b5182b">
-  <exported-language name="17b818a8-8533-4efe-8f51-f532146ae66b(com.mbeddr.analyses.spin.c)" />
-  <exported-language name="f027a490-7082-492e-99ce-dfe65d7342f7(com.mbeddr.analyses.spin.c.patterns)" />
-  <extendedDevKits>
-    <extendedDevKit>de90e2e8-f051-4d49-9025-394f94f968b8(com.mbeddr.analyses.promela)</extendedDevKit>
-  </extendedDevKits>
-</dev-kit>
-

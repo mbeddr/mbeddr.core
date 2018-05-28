@@ -88,7 +88,6 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -101,6 +100,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -270,7 +270,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1PgB_6" id="5W7baq$5NAB" role="2OqNvi" />
+                <node concept="3YRAZt" id="5W7baq$5NAB" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -319,7 +319,7 @@
             <node concept="2OqwBi" id="30ICD1JmUh$" role="37vLTJ">
               <node concept="2Sf5sV" id="30ICD1JmU9e" role="2Oq$k0" />
               <node concept="3TrEf2" id="30ICD1JmXsv" role="2OqNvi">
-                <ref role="3Tt5mk" to="nbyu:5W7baq$5gqC" />
+                <ref role="3Tt5mk" to="nbyu:5W7baq$5gqC" resolve="setterExpression" />
               </node>
             </node>
             <node concept="2ShNRf" id="5W7baq$5gJo" role="37vLTx">
@@ -340,7 +340,7 @@
             <node concept="2OqwBi" id="30ICD1JmKaT" role="2Oq$k0">
               <node concept="2Sf5sV" id="30ICD1JmJXP" role="2Oq$k0" />
               <node concept="3TrEf2" id="30ICD1JmM3Z" role="2OqNvi">
-                <ref role="3Tt5mk" to="nbyu:5W7baq$5gqC" />
+                <ref role="3Tt5mk" to="nbyu:5W7baq$5gqC" resolve="setterExpression" />
               </node>
             </node>
             <node concept="3w_OXm" id="30ICD1JmSOq" role="2OqNvi" />
@@ -372,7 +372,7 @@
             <node concept="2OqwBi" id="4vpAkafOr3x" role="2Oq$k0">
               <node concept="2Sf5sV" id="4vpAkafOqVb" role="2Oq$k0" />
               <node concept="3Tsc0h" id="4vpAkafOtNj" role="2OqNvi">
-                <ref role="3TtcxE" to="nbyu:4vpAkafMEI9" />
+                <ref role="3TtcxE" to="nbyu:4vpAkafMEI9" resolve="elements" />
               </node>
             </node>
             <node concept="WFELt" id="4vpAkafOBnt" role="2OqNvi" />
@@ -387,7 +387,7 @@
             <node concept="2OqwBi" id="4vpAkafOesy" role="2Oq$k0">
               <node concept="2Sf5sV" id="4vpAkafOefu" role="2Oq$k0" />
               <node concept="3Tsc0h" id="4vpAkafOfYZ" role="2OqNvi">
-                <ref role="3TtcxE" to="nbyu:4vpAkafMEI9" />
+                <ref role="3TtcxE" to="nbyu:4vpAkafMEI9" resolve="elements" />
               </node>
             </node>
             <node concept="1v1jN8" id="4vpAkafOqGO" role="2OqNvi" />
@@ -419,7 +419,7 @@
             <node concept="2OqwBi" id="4vpAkafOSNA" role="2Oq$k0">
               <node concept="2Sf5sV" id="4vpAkafOSFg" role="2Oq$k0" />
               <node concept="3Tsc0h" id="4vpAkafOVzo" role="2OqNvi">
-                <ref role="3TtcxE" to="nbyu:4vpAkafMMGr" />
+                <ref role="3TtcxE" to="nbyu:4vpAkafMMGr" resolve="actions" />
               </node>
             </node>
             <node concept="WFELt" id="4vpAkafP5bf" role="2OqNvi" />
@@ -434,7 +434,7 @@
             <node concept="2OqwBi" id="4vpAkafOF0P" role="2Oq$k0">
               <node concept="2Sf5sV" id="4vpAkafOENL" role="2Oq$k0" />
               <node concept="3Tsc0h" id="4vpAkafOHUV" role="2OqNvi">
-                <ref role="3TtcxE" to="nbyu:4vpAkafMMGr" />
+                <ref role="3TtcxE" to="nbyu:4vpAkafMMGr" resolve="actions" />
               </node>
             </node>
             <node concept="1v1jN8" id="4vpAkafOSsT" role="2OqNvi" />

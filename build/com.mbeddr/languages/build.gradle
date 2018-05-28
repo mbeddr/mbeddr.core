@@ -54,6 +54,11 @@ task copy_spawner(type: Copy, dependsOn: build_spawner) {
     into "$mpsHomeDir/plugins"
 }
 
+task copy_logConfig(type: Copy, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+    from "$rootDir/debug"
+    into "$mpsHomeDir/bin"
+}
+
 task install_spawner(type: Copy, dependsOn: build_spawner) {
     from "$rootDir/artifacts/spawner/"
     include "mbeddr.spawner/"
@@ -130,7 +135,7 @@ task test_mbeddr_debugger(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrDebugger
 }
 
-task build_mbeddr_core_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
+task build_mbeddr_core_ex(type: BuildLanguages, dependsOn: [build_mbeddr, copy_logConfig]) {
     script script_test_mbeddrCoreEx
 }
 

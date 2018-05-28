@@ -144,6 +144,9 @@
       <concept id="3793213301909614895" name="com.mbeddr.analyses.acsl.structure.FunctionContract" flags="ng" index="2HfW99">
         <child id="3793213301909617373" name="functionContractMember" index="2HfWAV" />
       </concept>
+      <concept id="3793213301909615744" name="com.mbeddr.analyses.acsl.structure.IAtomicContract" flags="ng" index="2HfWvA">
+        <child id="75361647380517795" name="atomicContractExpression" index="3sLAUB" />
+      </concept>
       <concept id="6715381068726883387" name="com.mbeddr.analyses.acsl.structure.ACSLContractsGenerationConfigItem" flags="ng" index="31U8uV">
         <child id="6715381068726941300" name="generationKind" index="31UYnO" />
       </concept>
@@ -231,11 +234,6 @@
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
-    </language>
-    <language id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions">
-      <concept id="6973658835837826905" name="com.mbeddr.analyses.base.verification_conditions.structure.Assert" flags="ng" index="Y9XUq">
-        <child id="6973658835837826906" name="exp" index="Y9XUp" />
-      </concept>
     </language>
   </registry>
   <node concept="N3F5e" id="368fPYHjDKi">
@@ -1063,7 +1061,7 @@
             </node>
           </node>
           <node concept="2H0slj" id="368fPYHkmKI" role="2E$nex">
-            <node concept="3TlM44" id="368fPYHkmLl" role="Y9XUp">
+            <node concept="3TlM44" id="368fPYHkmLl" role="3sLAUB">
               <node concept="1AkAhK" id="368fPYHkmXP" role="3TlMhJ">
                 <ref role="1AkAhZ" node="368fPYHjE19" resolve="EMERGENCY" />
               </node>

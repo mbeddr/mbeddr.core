@@ -12,7 +12,7 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
     <use id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" name="com.mbeddr.mpsutil.jung" version="-1" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="4" />
     <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="-1" />
     <use id="53bab999-e9c3-428a-80be-fef5bed08f55" name="com.mbeddr.cc.trace" version="-1" />
     <use id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base" version="-1" />
@@ -231,8 +231,8 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -548,12 +548,14 @@
                         <node concept="3clFbS" id="HiHa_$mfuX" role="2VODD2">
                           <node concept="3clFbF" id="HiHa_$mg8_" role="3cqZAp">
                             <node concept="1PxgMI" id="HiHa_$miuk" role="3clFbG">
-                              <ref role="1m5ApE" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
                               <node concept="2OqwBi" id="HiHa_$mgjN" role="1m5AlR">
                                 <node concept="30H73N" id="HiHa_$mg8$" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="HiHa_$mhGL" role="2OqNvi">
                                   <ref role="3Tt5mk" to="48a0:2L0t9wJ0hAO" resolve="varRef" />
                                 </node>
+                              </node>
+                              <node concept="chp4Y" id="5CkU_dHkz1x" role="3oSUPX">
+                                <ref role="cht4Q" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
                               </node>
                             </node>
                           </node>

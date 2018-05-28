@@ -12,7 +12,7 @@ task downloadMPS(type: Download) {
         }
     }
 
-    src "http://download.jetbrains.com/mps/${mpsMajor.replace(".", "")}/MPS-${mpsBuild}.zip"
+    src "http://download.jetbrains.com/mps/${mpsMajor}/MPS-${mpsBuild}.zip"
     dest mpsDownloadFile
     overwrite false
 }

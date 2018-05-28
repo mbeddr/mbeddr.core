@@ -6,8 +6,8 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -60,7 +60,6 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -83,7 +82,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -101,11 +99,6 @@
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing">
-      <concept id="1348611803040004605" name="com.mbeddr.analyses.cbmc.testing.structure.GeneratorOutputPath" flags="ng" index="QFwaR">
-        <property id="559557797393041554" name="fqName" index="BaBD8" />
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
-      </concept>
       <concept id="4791280061046124023" name="com.mbeddr.analyses.cbmc.testing.structure.CBMCCounterexampleStateTest" flags="ng" index="38rIoz">
         <property id="4791280061046124024" name="nodeKind" index="38rIoG" />
         <property id="4791280061046139065" name="nodeValue" index="38rMdH" />
@@ -123,9 +116,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393041554" name="fqName" index="BaBD9" />
-        <property id="559557797393021807" name="stereotype" index="BaGAQ" />
-        <property id="559557797393017702" name="name" index="BaHAX" />
+        <property id="559557797393041554" name="fqName" index="BaBD8" />
+        <property id="559557797393021807" name="stereotype" index="BaGAP" />
+        <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -183,7 +176,7 @@
         <node concept="3clFbH" id="4kJ3EIm6bHg" role="3cqZAp" />
         <node concept="3vwNmj" id="4kJ3EIm6bHh" role="3cqZAp">
           <node concept="2OqwBi" id="4kJ3EIm6bHi" role="3vwVQn">
-            <node concept="3cpWsa" id="4kJ3EIm6bHj" role="2Oq$k0">
+            <node concept="37vLTw" id="4kJ3EIm6bHj" role="2Oq$k0">
               <ref role="3cqZAo" node="4kJ3EIm6bH5" resolve="res" />
             </node>
             <node concept="liA8E" id="4kJ3EIm6bHk" role="2OqNvi">
@@ -274,7 +267,7 @@
         </node>
         <node concept="3vwNmj" id="4kJ3EIm6bJL" role="3cqZAp">
           <node concept="2OqwBi" id="4kJ3EIm6bJM" role="3vwVQn">
-            <node concept="3cpWsa" id="4kJ3EIm6bJN" role="2Oq$k0">
+            <node concept="37vLTw" id="4kJ3EIm6bJN" role="2Oq$k0">
               <ref role="3cqZAo" node="4kJ3EIm6bJ$" resolve="res" />
             </node>
             <node concept="liA8E" id="4kJ3EIm6bJO" role="2OqNvi">
@@ -402,32 +395,15 @@
       <node concept="3clFbS" id="5djBfpcTb1u" role="3clF47">
         <node concept="3clFbF" id="5djBfpcTb1v" role="3cqZAp">
           <node concept="BaHAS" id="5djBfpcTb1w" role="3clFbG">
-            <property role="BaBD9" value="test.analyses.cbmc.testcode.counterexample.mbeddr.cor" />
-            <property role="BaHAX" value="test.analyses.cbmc.testcode.counterexample.mbeddr.components" />
-            <property role="BaGAQ" value="" />
-          </node>
-        </node>
-      </node>
-      <node concept="H_c77" id="5djBfpcTb1t" role="3clF45" />
-    </node>
-    <node concept="2tJIrI" id="5djBfpcTa1$" role="jymVt" />
-    <node concept="2YIFZL" id="5djBfpcTbJN" role="jymVt">
-      <property role="TrG5h" value="generatorOutputPath" />
-      <property role="IEkAT" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3clFbS" id="5djBfpcTbJo" role="3clF47">
-        <node concept="3clFbF" id="5djBfpcTbJp" role="3cqZAp">
-          <node concept="QFwaR" id="5djBfpcTbJq" role="3clFbG">
-            <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.core" />
+            <property role="BaBD8" value="test.analyses.cbmc.testcode.counterexample.mbeddr.cor" />
             <property role="BaHAW" value="test.analyses.cbmc.testcode.counterexample.mbeddr.components" />
             <property role="BaGAP" value="" />
           </node>
         </node>
       </node>
-      <node concept="17QB3L" id="5djBfpcTbJn" role="3clF45" />
+      <node concept="H_c77" id="5djBfpcTb1t" role="3clF45" />
     </node>
-    <node concept="2tJIrI" id="5djBfpcTbIX" role="jymVt" />
+    <node concept="2tJIrI" id="44EVd0VOHS_" role="jymVt" />
   </node>
   <node concept="1lH9Xt" id="3jtKiJDjpoc">
     <property role="TrG5h" value="StatefulComponents" />
@@ -468,7 +444,7 @@
         <node concept="3clFbH" id="3jtKiJDjpos" role="3cqZAp" />
         <node concept="3vwNmj" id="3jtKiJDjpot" role="3cqZAp">
           <node concept="2OqwBi" id="3jtKiJDjpou" role="3vwVQn">
-            <node concept="3cpWsa" id="3jtKiJDjpov" role="2Oq$k0">
+            <node concept="37vLTw" id="3jtKiJDjpov" role="2Oq$k0">
               <ref role="3cqZAo" node="3jtKiJDjpoh" resolve="res" />
             </node>
             <node concept="liA8E" id="3jtKiJDjpow" role="2OqNvi">
@@ -609,7 +585,7 @@
         <node concept="3clFbH" id="57Wj6IPetoG" role="3cqZAp" />
         <node concept="3vwNmj" id="57Wj6IPetoH" role="3cqZAp">
           <node concept="2OqwBi" id="57Wj6IPetoI" role="3vwVQn">
-            <node concept="3cpWsa" id="57Wj6IPetoJ" role="2Oq$k0">
+            <node concept="37vLTw" id="57Wj6IPetoJ" role="2Oq$k0">
               <ref role="3cqZAo" node="57Wj6IPetoz" resolve="res" />
             </node>
             <node concept="liA8E" id="57Wj6IPetoK" role="2OqNvi">
@@ -750,7 +726,7 @@
         <node concept="3clFbH" id="13FtHz69kyQ" role="3cqZAp" />
         <node concept="3vwNmj" id="13FtHz69kyR" role="3cqZAp">
           <node concept="2OqwBi" id="13FtHz69kyS" role="3vwVQn">
-            <node concept="3cpWsa" id="13FtHz69kyT" role="2Oq$k0">
+            <node concept="37vLTw" id="13FtHz69kyT" role="2Oq$k0">
               <ref role="3cqZAo" node="13FtHz69kyH" resolve="res" />
             </node>
             <node concept="liA8E" id="13FtHz69kyU" role="2OqNvi">
@@ -890,7 +866,7 @@
         <node concept="3clFbH" id="7UyXkgB5zCN" role="3cqZAp" />
         <node concept="3vwNmj" id="7UyXkgB5zCO" role="3cqZAp">
           <node concept="2OqwBi" id="7UyXkgB5zCP" role="3vwVQn">
-            <node concept="3cpWsa" id="7UyXkgB5zCQ" role="2Oq$k0">
+            <node concept="37vLTw" id="7UyXkgB5zCQ" role="2Oq$k0">
               <ref role="3cqZAo" node="7UyXkgB5zCE" resolve="res" />
             </node>
             <node concept="liA8E" id="7UyXkgB5zCR" role="2OqNvi">
@@ -1065,7 +1041,7 @@
         <node concept="3clFbH" id="7lmBuXrWBeO" role="3cqZAp" />
         <node concept="3vwNmj" id="7lmBuXrWBeP" role="3cqZAp">
           <node concept="2OqwBi" id="7lmBuXrWBeQ" role="3vwVQn">
-            <node concept="3cpWsa" id="7lmBuXrWBeR" role="2Oq$k0">
+            <node concept="37vLTw" id="7lmBuXrWBeR" role="2Oq$k0">
               <ref role="3cqZAo" node="7lmBuXrWBeF" resolve="res" />
             </node>
             <node concept="liA8E" id="7lmBuXrWBeS" role="2OqNvi">

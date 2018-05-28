@@ -33,8 +33,8 @@
   </registry>
   <node concept="1TIwiD" id="6Wsm6VK0e7v">
     <property role="TrG5h" value="CellModel_Multiline" />
-    <property role="34LRSv" value="{&lt;{propertyDeclaration}&gt;}\n" />
-    <property role="R4oN_" value="multiline property" />
+    <property role="34LRSv" value="multiline" />
+    <property role="R4oN_" value="multiline {&lt;{propertyDeclaration}&gt;}" />
     <property role="EcuMT" value="8006371471054135775" />
     <ref role="1TJDcQ" to="tpc2:fBF0A4I" resolve="CellModel_Property" />
   </node>

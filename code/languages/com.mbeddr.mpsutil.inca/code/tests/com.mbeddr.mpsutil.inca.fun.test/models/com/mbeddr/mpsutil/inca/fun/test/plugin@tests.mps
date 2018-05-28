@@ -7,7 +7,7 @@
     <use id="b802a056-92a2-4fbc-902e-f8e5004c331f" name="com.mbeddr.mpsutil.inca.core" version="0" />
     <use id="cd2909da-ecb4-49dc-b176-33e5c619e516" name="com.mbeddr.mpsutil.inca.gp" version="0" />
     <use id="8c9a2720-9d21-4370-a226-819eb3e76e1e" name="com.mbeddr.mpsutil.inca.fun" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
@@ -1878,7 +1878,7 @@
             <property role="TrG5h" value="testModel" />
             <node concept="H_c77" id="6AFedOHG$p0" role="1tU5fm" />
             <node concept="BaHAS" id="6AFedOHG$p1" role="33vP2m">
-              <property role="BaHAW" value="com.mbeddr.mpsutil.inca.fun.test.plugin" />
+              <property role="BaHAW" value="com.mbeddr.mpsutil.inca.fun.test.soot" />
               <property role="BaGAP" value="tests" />
             </node>
           </node>

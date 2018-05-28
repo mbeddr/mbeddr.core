@@ -2,7 +2,7 @@
 <model ref="r:7ab299e0-dea5-4e89-907f-a307d15aaed6(de.slisson.mps.hacks.xmodelgen.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -111,7 +111,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="Pogn2S69FT">
-    <ref role="1XX52x" to="gxwz:Pogn2S693Y" resolve="PoisonedLanguageIdentity" />
+    <ref role="1XX52x" to="gxwz:Pogn2S693Y" resolve="MCListLanguageIdentity" />
     <node concept="PMmxH" id="Pogn2S69G0" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>

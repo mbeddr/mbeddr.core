@@ -2,7 +2,7 @@
 <model ref="r:64c2451b-bcd7-49d8-8d0f-23394bea7b68(com.mbeddr.analyses.prism.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,9 +13,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" implicit="true" />
-    <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" implicit="true" />
     <import index="dsgp" ref="r:3f06d04b-0a98-4505-b2ca-4dcc6555fddb(com.mbeddr.analyses.prism.structure)" implicit="true" />
+    <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" implicit="true" />
+    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -429,7 +429,7 @@
             <node concept="2OqwBi" id="3np7U0X_934" role="37vLTJ">
               <node concept="13iPFW" id="3np7U0X_8YM" role="2Oq$k0" />
               <node concept="3TrEf2" id="3np7U0X_9KX" role="2OqNvi">
-                <ref role="3Tt5mk" to="dsgp:3np7U0X$Aov" />
+                <ref role="3Tt5mk" to="dsgp:3np7U0X$Aov" resolve="body" />
               </node>
             </node>
           </node>
@@ -453,7 +453,7 @@
           <node concept="2OqwBi" id="5DZbSdwye0Z" role="3clFbG">
             <node concept="13iPFW" id="5DZbSdwydWp" role="2Oq$k0" />
             <node concept="3TrEf2" id="5DZbSdwyeDz" role="2OqNvi">
-              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
             </node>
           </node>
         </node>
@@ -473,7 +473,7 @@
           <node concept="2OqwBi" id="5DZbSdwyeJT" role="3clFbG">
             <node concept="13iPFW" id="5DZbSdwyeEf" role="2Oq$k0" />
             <node concept="3TrEf2" id="5DZbSdwyfot" role="2OqNvi">
-              <ref role="3Tt5mk" to="dsgp:5DZbSdwydV0" />
+              <ref role="3Tt5mk" to="dsgp:5DZbSdwydV0" resolve="init" />
             </node>
           </node>
         </node>
@@ -499,7 +499,7 @@
           <node concept="2OqwBi" id="5DZbSdwyPKD" role="3cqZAk">
             <node concept="13iPFW" id="5DZbSdwyPEp" role="2Oq$k0" />
             <node concept="3TrEf2" id="5DZbSdwyQAj" role="2OqNvi">
-              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
             </node>
           </node>
         </node>
@@ -519,7 +519,7 @@
           <node concept="2OqwBi" id="5DZbSdwyQIT" role="3cqZAk">
             <node concept="13iPFW" id="5DZbSdwyQCD" role="2Oq$k0" />
             <node concept="3TrEf2" id="5DZbSdwyR$z" role="2OqNvi">
-              <ref role="3Tt5mk" to="dsgp:5DZbSdwyOGg" />
+              <ref role="3Tt5mk" to="dsgp:5DZbSdwyOGg" resolve="init" />
             </node>
           </node>
         </node>
@@ -545,7 +545,7 @@
           <node concept="2OqwBi" id="5DZbSdwzy11" role="3cqZAk">
             <node concept="13iPFW" id="5DZbSdwzxWz" role="2Oq$k0" />
             <node concept="3TrEf2" id="5DZbSdwzykH" role="2OqNvi">
-              <ref role="3Tt5mk" to="dsgp:5DZbSdwyf$N" />
+              <ref role="3Tt5mk" to="dsgp:5DZbSdwyf$N" resolve="localVar" />
             </node>
           </node>
         </node>
@@ -572,7 +572,7 @@
             <node concept="2OqwBi" id="66UVxwgZm_j" role="37vLTJ">
               <node concept="13iPFW" id="66UVxwgZmu9" role="2Oq$k0" />
               <node concept="3TrEf2" id="66UVxwgZnb7" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
               </node>
             </node>
           </node>
@@ -597,7 +597,7 @@
             <node concept="2OqwBi" id="5DZbSdwH1XQ" role="37vLTJ">
               <node concept="13iPFW" id="5DZbSdwH1R1" role="2Oq$k0" />
               <node concept="3TrEf2" id="5DZbSdwH2sN" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
               </node>
             </node>
           </node>
@@ -727,7 +727,7 @@
           <node concept="2OqwBi" id="ZgHAy9P1PK" role="3cqZAk">
             <node concept="13iPFW" id="ZgHAy9P1Nl" role="2Oq$k0" />
             <node concept="3TrEf2" id="ZgHAy9P2bm" role="2OqNvi">
-              <ref role="3Tt5mk" to="dsgp:ZgHAy9IV4j" />
+              <ref role="3Tt5mk" to="dsgp:ZgHAy9IV4j" resolve="prismModel" />
             </node>
           </node>
         </node>

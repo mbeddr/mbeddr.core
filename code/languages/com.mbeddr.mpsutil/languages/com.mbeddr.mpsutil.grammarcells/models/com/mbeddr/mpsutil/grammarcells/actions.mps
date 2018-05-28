@@ -2,7 +2,7 @@
 <model ref="r:061bfcc0-c33c-49e3-8504-3b53c6bba47e(com.mbeddr.mpsutil.grammarcells.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -57,9 +57,8 @@
       <concept id="5584396657084912703" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_NewNode" flags="nn" index="1r4Lsj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -82,11 +81,8 @@
         <node concept="3clFbS" id="6oKG1kMyaR7" role="2VODD2">
           <node concept="3clFbF" id="6oKG1kMyaRf" role="3cqZAp">
             <node concept="37vLTI" id="6oKG1kMyb98" role="3clFbG">
-              <node concept="2OqwBi" id="6oKG1kMybdj" role="37vLTx">
-                <node concept="35c_gC" id="6oKG1kMybax" role="2Oq$k0">
-                  <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
-                </node>
-                <node concept="FGMqu" id="6oKG1kMybj8" role="2OqNvi" />
+              <node concept="3B5_sB" id="6oKG1kMybdj" role="37vLTx">
+                <ref role="3B5MYn" to="tpck:gw2VY9q" resolve="BaseConcept" />
               </node>
               <node concept="2OqwBi" id="6oKG1kMyaTy" role="37vLTJ">
                 <node concept="1r4Lsj" id="6oKG1kMyaRe" role="2Oq$k0" />

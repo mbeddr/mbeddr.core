@@ -124,7 +124,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -143,10 +142,6 @@
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-      </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -235,9 +230,6 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
-      </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
@@ -572,58 +564,6 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3cpWs8" id="5pyBnOIuahJ" role="3cqZAp">
-                      <node concept="3cpWsn" id="5pyBnOIuahK" role="3cpWs9">
-                        <property role="TrG5h" value="modelName" />
-                        <property role="3TUv4t" value="true" />
-                        <node concept="17QB3L" id="5pyBnOIvOIf" role="1tU5fm" />
-                        <node concept="2OqwBi" id="7QYl6nnYPX$" role="33vP2m">
-                          <node concept="2OqwBi" id="5pyBnOIuahL" role="2Oq$k0">
-                            <node concept="2JrnkZ" id="5pyBnOIuahM" role="2Oq$k0">
-                              <node concept="37vLTw" id="7QYl6nnZ8yw" role="2JrQYb">
-                                <ref role="3cqZAo" node="7QYl6nnZ5xi" resolve="model" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="7QYl6nnYNME" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="7QYl6nnYVC$" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModelName.getLongName():java.lang.String" resolve="getLongName" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3cpWs8" id="5pyBnOIxvxl" role="3cqZAp">
-                      <node concept="3cpWsn" id="5pyBnOIxvxo" role="3cpWs9">
-                        <property role="TrG5h" value="outputBase" />
-                        <property role="3TUv4t" value="true" />
-                        <node concept="17QB3L" id="5pyBnOIxvxj" role="1tU5fm" />
-                        <node concept="3cpWs3" id="5pyBnOIxvNQ" role="33vP2m">
-                          <node concept="2YIFZM" id="5pyBnOIxw8n" role="3uHU7w">
-                            <ref role="37wK5l" to="btm1:~StringUtils.replace(java.lang.String,java.lang.String,java.lang.String):java.lang.String" resolve="replace" />
-                            <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                            <node concept="37vLTw" id="5pyBnOIxwbl" role="37wK5m">
-                              <ref role="3cqZAo" node="5pyBnOIuahK" resolve="modelName" />
-                            </node>
-                            <node concept="Xl_RD" id="5pyBnOIxwhz" role="37wK5m">
-                              <property role="Xl_RC" value="." />
-                            </node>
-                            <node concept="Xl_RD" id="3Cx0HtoRNHT" role="37wK5m">
-                              <property role="Xl_RC" value="/" />
-                            </node>
-                          </node>
-                          <node concept="3cpWs3" id="5pyBnOIxvCW" role="3uHU7B">
-                            <node concept="37vLTw" id="5pyBnOIxvzj" role="3uHU7B">
-                              <ref role="3cqZAo" node="5pyBnOIlG50" resolve="outputRoot" />
-                            </node>
-                            <node concept="Xl_RD" id="3Cx0HtoRMIL" role="3uHU7w">
-                              <property role="Xl_RC" value="/" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                     <node concept="3clFbH" id="7QYl6nnZssX" role="3cqZAp" />
                     <node concept="3cpWs8" id="5pyBnOIASLK" role="3cqZAp">
                       <node concept="3cpWsn" id="5pyBnOIASLL" role="3cpWs9">
@@ -635,8 +575,8 @@
                         <node concept="2ShNRf" id="5pyBnOIAT2X" role="33vP2m">
                           <node concept="1pGfFk" id="5pyBnOIAVbR" role="2ShVmc">
                             <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                            <node concept="37vLTw" id="5pyBnOIAVc7" role="37wK5m">
-                              <ref role="3cqZAo" node="5pyBnOIxvxo" resolve="outputBase" />
+                            <node concept="37vLTw" id="6BNByWj9$pe" role="37wK5m">
+                              <ref role="3cqZAo" node="5pyBnOIlG50" resolve="outputRoot" />
                             </node>
                           </node>
                         </node>

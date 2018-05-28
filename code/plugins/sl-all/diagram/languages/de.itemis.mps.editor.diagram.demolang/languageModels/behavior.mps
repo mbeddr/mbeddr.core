@@ -2,7 +2,7 @@
 <model ref="r:31803fcd-8d85-4949-9084-9d2d1e54cbb8(de.itemis.mps.editor.diagram.demolang.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -129,7 +129,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="3FRjz$vg1$i" role="2OqNvi">
-                <ref role="3TtcxE" to="7fae:5qgNcfDnzGK" />
+                <ref role="3TtcxE" to="7fae:5qgNcfDnzGK" resolve="connections" />
               </node>
             </node>
             <node concept="2HwmR7" id="3FRjz$vg77B" role="2OqNvi">
@@ -157,7 +157,7 @@
                               <ref role="3cqZAo" node="3FRjz$vg77F" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="3FRjz$vg9j1" role="2OqNvi">
-                              <ref role="3Tt5mk" to="7fae:5qgNcfDoSha" />
+                              <ref role="3Tt5mk" to="7fae:5qgNcfDoSha" resolve="to" />
                             </node>
                           </node>
                           <node concept="13iPFW" id="3FRjz$vg9qI" role="3uHU7w" />
@@ -170,7 +170,7 @@
                               <ref role="3cqZAo" node="3FRjz$vg77F" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="3FRjz$vg7zW" role="2OqNvi">
-                              <ref role="3Tt5mk" to="7fae:5qgNcfDoSh8" />
+                              <ref role="3Tt5mk" to="7fae:5qgNcfDoSh8" resolve="from" />
                             </node>
                           </node>
                           <node concept="13iPFW" id="3FRjz$vg7Rx" role="3uHU7w" />

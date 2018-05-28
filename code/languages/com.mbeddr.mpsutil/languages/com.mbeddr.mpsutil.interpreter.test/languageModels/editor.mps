@@ -2,7 +2,7 @@
 <model ref="r:12b70fb1-3152-466e-b80a-86270a0592b7(com.mbeddr.mpsutil.interpreter.test.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -37,7 +37,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -55,7 +55,7 @@
           <node concept="3clFbF" id="2pogikRx4gA" role="3cqZAp">
             <node concept="2OqwBi" id="2pogikRx4gB" role="3clFbG">
               <node concept="0IXxy" id="2pogikRx4gC" role="2Oq$k0" />
-              <node concept="1PgB_6" id="2pogikRx4gD" role="2OqNvi" />
+              <node concept="3YRAZt" id="2pogikRx4gD" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -72,7 +72,7 @@
           <node concept="3clFbF" id="5Yf_R4Bt0sQ" role="3cqZAp">
             <node concept="2OqwBi" id="5Yf_R4Bt0xr" role="3clFbG">
               <node concept="0IXxy" id="5Yf_R4Bt0sP" role="2Oq$k0" />
-              <node concept="1PgB_6" id="5Yf_R4Bt1Fx" role="2OqNvi" />
+              <node concept="3YRAZt" id="5Yf_R4Bt1Fx" role="2OqNvi" />
             </node>
           </node>
         </node>

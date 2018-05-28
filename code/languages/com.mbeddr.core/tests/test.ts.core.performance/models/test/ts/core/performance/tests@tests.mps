@@ -6,13 +6,13 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="390de4af-0c8d-4716-8dec-3d05ca751b28" name="com.mbeddr.core.cinterpreter" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
   </languages>
   <imports>
@@ -68,6 +68,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -517,6 +518,7 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="7lHetQywugk" role="37wK5m" />
                       <node concept="3clFbT" id="7WAr$Vc4Tgt" role="37wK5m">
                         <property role="3clFbU" value="false" />
                       </node>
@@ -605,6 +607,7 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="7lHetQywquQ" role="37wK5m" />
                       <node concept="3clFbT" id="7WAr$Vc4Tv8" role="37wK5m">
                         <property role="3clFbU" value="false" />
                       </node>
@@ -692,6 +695,7 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="7lHetQywqES" role="37wK5m" />
                       <node concept="3clFbT" id="7WAr$Vc4U0w" role="37wK5m">
                         <property role="3clFbU" value="false" />
                       </node>
@@ -779,6 +783,7 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="7lHetQywqPT" role="37wK5m" />
                       <node concept="3clFbT" id="7WAr$Vc4TRb" role="37wK5m">
                         <property role="3clFbU" value="false" />
                       </node>
@@ -866,6 +871,7 @@
                           <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                         </node>
                       </node>
+                      <node concept="10Nm6u" id="7lHetQywr0U" role="37wK5m" />
                       <node concept="3clFbT" id="7WAr$Vc4THQ" role="37wK5m">
                         <property role="3clFbU" value="false" />
                       </node>

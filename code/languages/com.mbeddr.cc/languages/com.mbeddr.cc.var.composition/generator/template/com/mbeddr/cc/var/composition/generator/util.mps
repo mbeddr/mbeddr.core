@@ -118,8 +118,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -283,7 +283,7 @@
                           <ref role="2Gs0qQ" node="3YyHFqO7AOA" resolve="matcher" />
                         </node>
                         <node concept="3TrEf2" id="3YyHFqO7Dn$" role="2OqNvi">
-                          <ref role="3Tt5mk" to="11rw:3YyHFqO5xVY" />
+                          <ref role="3Tt5mk" to="11rw:3YyHFqO5xVY" resolve="matchStrategy" />
                         </node>
                       </node>
                       <node concept="2qgKlT" id="3YyHFqO7Dn_" role="2OqNvi">
@@ -313,12 +313,14 @@
                       <node concept="2OqwBi" id="5B$wwdfhB5R" role="3clFbw">
                         <node concept="2OqwBi" id="5B$wwdfhA5u" role="2Oq$k0">
                           <node concept="1PxgMI" id="5B$wwdfh_Q1" role="2Oq$k0">
-                            <ref role="1m5ApE" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
                             <node concept="2OqwBi" id="5B$wwdfh$aL" role="1m5AlR">
                               <node concept="2GrUjf" id="5B$wwdfh$8Z" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="3YyHFqO7DzL" resolve="target" />
                               </node>
                               <node concept="2Rxl7S" id="5B$wwdfh$zq" role="2OqNvi" />
+                            </node>
+                            <node concept="chp4Y" id="79i$vAY7iJH" role="3oSUPX">
+                              <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
                             </node>
                           </node>
                           <node concept="3CFZ6_" id="5B$wwdfhAT0" role="2OqNvi">
@@ -386,7 +388,7 @@
                                 <ref role="2Gs0qQ" node="3YyHFqO7AOA" resolve="matcher" />
                               </node>
                               <node concept="3TrEf2" id="3YyHFqO7EfM" role="2OqNvi">
-                                <ref role="3Tt5mk" to="11rw:3YyHFqO6lm$" />
+                                <ref role="3Tt5mk" to="11rw:3YyHFqO6lm$" resolve="compositionStrategy" />
                               </node>
                             </node>
                             <node concept="2qgKlT" id="3YyHFqO7FbP" role="2OqNvi">
@@ -417,7 +419,7 @@
                     <ref role="2Gs0qQ" node="3YyHFqO7xjh" resolve="cc" />
                   </node>
                   <node concept="3TrEf2" id="1KWs$eZQYxm" role="2OqNvi">
-                    <ref role="3Tt5mk" to="11rw:3YyHFqO1fOI" />
+                    <ref role="3Tt5mk" to="11rw:3YyHFqO1fOI" resolve="chunk" />
                   </node>
                 </node>
                 <node concept="2Rf3mk" id="3YyHFqO88DQ" role="2OqNvi">
@@ -436,7 +438,7 @@
               <ref role="3cqZAo" node="3YyHFqO7ie3" resolve="configItem" />
             </node>
             <node concept="3Tsc0h" id="3YyHFqO7x0Q" role="2OqNvi">
-              <ref role="3TtcxE" to="11rw:3YyHFqO19VG" />
+              <ref role="3TtcxE" to="11rw:3YyHFqO19VG" resolve="compositionChunks" />
             </node>
           </node>
         </node>

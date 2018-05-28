@@ -10,7 +10,7 @@
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="0" />
-    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="1" />
+    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="2" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core" version="0" />
     <use id="6ded8a47-f30e-4acf-a5f2-a70ec5472558" name="com.mbeddr.analyses.base.verification_conditions" version="-1" />
@@ -138,7 +138,7 @@
         <property id="3246959727582218046" name="hasExternalFilesSettings" index="1Bxwel" />
         <child id="3246959727582077262" name="externalFiles" index="1Byen_" />
       </concept>
-      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfiguration" flags="ng" index="3uEX16" />
+      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
       <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
         <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
       </concept>
@@ -163,9 +163,7 @@
       <concept id="6307143892175831839" name="com.mbeddr.core.util.structure.IsInRangeExpression" flags="ng" index="1vVjFF" />
     </language>
     <language id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt">
-      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK">
-        <child id="6116558314501347862" name="original" index="rcJHR" />
-      </concept>
+      <concept id="6116558314501347857" name="com.mbeddr.core.udt.structure.TypeDef" flags="ng" index="rcJHK" />
       <concept id="6116558314501347863" name="com.mbeddr.core.udt.structure.TypeDefType" flags="ng" index="rcJHQ">
         <reference id="6116558314501347864" name="typeDef" index="rcJHT" />
       </concept>
@@ -234,6 +232,9 @@
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
+      <concept id="7713191144372389655" name="com.mbeddr.core.modules.structure.ITypeDef" flags="ng" index="2I2SlH">
+        <child id="6116558314501347862" name="original" index="rcJHR" />
+      </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
         <child id="1317894735999304826" name="imports" index="2OODSX" />
@@ -280,6 +281,7 @@
       </concept>
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
+      <concept id="666324024671982185" name="com.mbeddr.ext.math.structure.MathConfigurationItem" flags="ng" index="22RD12" />
       <concept id="5098456557381295183" name="com.mbeddr.ext.math.structure.AbsExpression" flags="ng" index="2zI4tQ">
         <child id="5098456557381295267" name="expression" index="2zI4uq" />
       </concept>
@@ -4109,6 +4111,7 @@
     <node concept="2Q9Fgs" id="7Syd$1MeUl6" role="2Q9xDr">
       <node concept="2Q9FjX" id="7Syd$1MeUl7" role="2Q9FjI" />
     </node>
+    <node concept="22RD12" id="1SbcsMAqnqj" role="2Q9xDr" />
     <node concept="29Nb31" id="7Syd$1MeUlc" role="2ePNbc">
       <property role="TrG5h" value="lib" />
       <ref role="3oK8_y" node="7fmKiPEtW$w" resolve="portable" />
@@ -4129,6 +4132,12 @@
       </node>
       <node concept="2v9HqM" id="3RK4Y9HHsJ2" role="2eOfOg">
         <ref role="2v9HqP" node="3RK4Y9HHmDd" resolve="_080_avl_base" />
+      </node>
+      <node concept="2v9HqM" id="1SbcsMAp7uG" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:1WTn9U1bbwi" resolve="math" />
+      </node>
+      <node concept="2v9HqM" id="1SbcsMAp7uH" role="2eOfOg">
+        <ref role="2v9HqP" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
       </node>
     </node>
   </node>

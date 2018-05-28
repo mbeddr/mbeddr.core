@@ -51,6 +51,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -80,7 +81,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -503,6 +503,7 @@
                       <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                     </node>
                   </node>
+                  <node concept="10Nm6u" id="6wNYzrU97jH" role="37wK5m" />
                   <node concept="3clFbT" id="7WAr$Vc4FbS" role="37wK5m">
                     <property role="3clFbU" value="false" />
                   </node>
@@ -538,6 +539,7 @@
                       <ref role="HV5vE" to="2ahs:4_qY3E6qZJh" resolve="NullCoverageAnalyzer" />
                     </node>
                   </node>
+                  <node concept="10Nm6u" id="6wNYzrU96TM" role="37wK5m" />
                   <node concept="3clFbT" id="7WAr$Vc4Fvl" role="37wK5m">
                     <property role="3clFbU" value="false" />
                   </node>
@@ -599,7 +601,7 @@
                 <node concept="a7r0C" id="35Kh8LWt8na" role="3cqZAp">
                   <node concept="3cpWs3" id="35Kh8LWt8ny" role="a7wSD">
                     <node concept="2OqwBi" id="35Kh8LWt8nU" role="3uHU7w">
-                      <node concept="3cpWsa" id="35Kh8LWt8n_" role="2Oq$k0">
+                      <node concept="37vLTw" id="35Kh8LWt8n_" role="2Oq$k0">
                         <ref role="3cqZAo" node="35Kh8LWt8n0" resolve="ex" />
                       </node>
                       <node concept="liA8E" id="35Kh8LWt8o0" role="2OqNvi">
@@ -714,7 +716,7 @@
         <node concept="3clFbC" id="35Kh8LWsXdW" role="3clFbw">
           <node concept="2OqwBi" id="35Kh8LWsXdX" role="3uHU7w">
             <node concept="2OqwBi" id="35Kh8LWsXdY" role="2Oq$k0">
-              <node concept="3cpWsa" id="35Kh8LWsXey" role="2Oq$k0">
+              <node concept="37vLTw" id="35Kh8LWsXey" role="2Oq$k0">
                 <ref role="3cqZAo" node="35Kh8LWsXer" resolve="calc" />
               </node>
               <node concept="3Tsc0h" id="35Kh8LWsXe2" role="2OqNvi">

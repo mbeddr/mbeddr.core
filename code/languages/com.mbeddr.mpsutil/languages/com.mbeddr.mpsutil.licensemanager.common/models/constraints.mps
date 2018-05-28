@@ -2,7 +2,7 @@
 <model ref="r:faef85a3-bbd0-48e3-b94f-231fab13e726(com.mbeddr.mpsutil.licensemanager.common.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -44,13 +44,13 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="1227084988347" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeARoot" flags="in" index="2NXJUA" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1227085062429" name="canBeRoot" index="2NY200" />
-        <child id="1213106463729" name="canBeChild" index="1MLUbF" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -65,19 +65,19 @@
   <node concept="1M2fIO" id="4w7It07pbNS">
     <property role="3GE5qa" value="element" />
     <ref role="1M2myG" to="lq3a:4w7It07pbAS" resolve="EditorGuardElement" />
-    <node concept="nKS2y" id="4w7It07pbQS" role="1MLUbF">
-      <node concept="3clFbS" id="4w7It07pbQT" role="2VODD2">
-        <node concept="3cpWs6" id="4w7It07pbRx" role="3cqZAp">
-          <node concept="2OqwBi" id="4w7It07pbYi" role="3cqZAk">
-            <node concept="Rm8GO" id="4w7It07pbTv" role="2Oq$k0">
+    <node concept="9S07l" id="5RIakkDIXGC" role="9Vyp8">
+      <node concept="3clFbS" id="5RIakkDIXGD" role="2VODD2">
+        <node concept="3cpWs6" id="5RIakkDIXGE" role="3cqZAp">
+          <node concept="2OqwBi" id="5RIakkDIXGF" role="3cqZAk">
+            <node concept="Rm8GO" id="5RIakkDIXGG" role="2Oq$k0">
               <ref role="1Px2BO" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
               <ref role="Rm8GQ" to="w1kc:~LanguageAspect.EDITOR" resolve="EDITOR" />
             </node>
-            <node concept="liA8E" id="4w7It07pc7M" role="2OqNvi">
+            <node concept="liA8E" id="5RIakkDIXGH" role="2OqNvi">
               <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
-              <node concept="2OqwBi" id="4w7It07pcbq" role="37wK5m">
-                <node concept="nLn13" id="4w7It07pc98" role="2Oq$k0" />
-                <node concept="I4A8Y" id="4w7It07pcel" role="2OqNvi" />
+              <node concept="2OqwBi" id="5RIakkDIXGI" role="37wK5m">
+                <node concept="nLn13" id="5RIakkDIXGJ" role="2Oq$k0" />
+                <node concept="I4A8Y" id="5RIakkDIXGK" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -88,19 +88,19 @@
   <node concept="1M2fIO" id="4w7It07pji2">
     <property role="3GE5qa" value="element" />
     <ref role="1M2myG" to="lq3a:4w7It07pj6b" resolve="IntentionGuardElement" />
-    <node concept="nKS2y" id="4w7It07pji3" role="1MLUbF">
-      <node concept="3clFbS" id="4w7It07pji4" role="2VODD2">
-        <node concept="3cpWs6" id="4w7It07pjiG" role="3cqZAp">
-          <node concept="2OqwBi" id="4w7It07pjpt" role="3cqZAk">
-            <node concept="Rm8GO" id="4w7It07pjkE" role="2Oq$k0">
+    <node concept="9S07l" id="5RIakkDJ0sx" role="9Vyp8">
+      <node concept="3clFbS" id="5RIakkDJ0sy" role="2VODD2">
+        <node concept="3cpWs6" id="5RIakkDJ0sz" role="3cqZAp">
+          <node concept="2OqwBi" id="5RIakkDJ0s$" role="3cqZAk">
+            <node concept="Rm8GO" id="5RIakkDJ0s_" role="2Oq$k0">
               <ref role="Rm8GQ" to="w1kc:~LanguageAspect.INTENTIONS" resolve="INTENTIONS" />
               <ref role="1Px2BO" to="w1kc:~LanguageAspect" resolve="LanguageAspect" />
             </node>
-            <node concept="liA8E" id="4w7It07pjyX" role="2OqNvi">
+            <node concept="liA8E" id="5RIakkDJ0sA" role="2OqNvi">
               <ref role="37wK5l" to="w1kc:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
-              <node concept="2OqwBi" id="4w7It07pjA_" role="37wK5m">
-                <node concept="nLn13" id="4w7It07pj$j" role="2Oq$k0" />
-                <node concept="I4A8Y" id="4w7It07pjDw" role="2OqNvi" />
+              <node concept="2OqwBi" id="5RIakkDJ0sB" role="37wK5m">
+                <node concept="nLn13" id="5RIakkDJ0sC" role="2Oq$k0" />
+                <node concept="I4A8Y" id="5RIakkDJ0sD" role="2OqNvi" />
               </node>
             </node>
           </node>

@@ -2,7 +2,7 @@
 <model ref="r:6d98dd29-662a-4975-b0ac-2c0fcb27a380(com.mbeddr.doc.qa.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -180,7 +180,7 @@
               <node concept="2OqwBi" id="5r_qjlUXBi" role="37wK5m">
                 <node concept="13iPFW" id="5r_qjlUXBj" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="5r_qjlUXBk" role="2OqNvi">
-                  <ref role="3TtcxE" to="79wq:5r_qjlOi3T" />
+                  <ref role="3TtcxE" to="79wq:5r_qjlOi3T" resolve="langs" />
                 </node>
               </node>
             </node>
@@ -215,7 +215,7 @@
                 <node concept="2OqwBi" id="5r_qjlV2FA" role="2Oq$k0">
                   <node concept="13iPFW" id="5r_qjlV2Bb" role="2Oq$k0" />
                   <node concept="3TrEf2" id="5r_qjlV2Rk" role="2OqNvi">
-                    <ref role="3Tt5mk" to="79wq:5r_qjlOi3U" />
+                    <ref role="3Tt5mk" to="79wq:5r_qjlOi3U" resolve="scope" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="5r_qjlV3dR" role="2OqNvi">
@@ -253,7 +253,7 @@
                             <ref role="3cqZAo" node="5r_qjlVc5v" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="5r_qjlVc5t" role="2OqNvi">
-                            <ref role="3Tt5mk" to="2c95:627_yy34G16" />
+                            <ref role="3Tt5mk" to="2c95:627_yy34G16" resolve="codeptr" />
                           </node>
                         </node>
                         <node concept="2qgKlT" id="5r_qjlVc5u" role="2OqNvi">
@@ -345,7 +345,7 @@
                             <ref role="3cqZAo" node="5r_qjlVmZi" resolve="res" />
                           </node>
                           <node concept="3TrEf2" id="5r_qjlVoIJ" role="2OqNvi">
-                            <ref role="3Tt5mk" to="79wq:jipk886TU_" />
+                            <ref role="3Tt5mk" to="79wq:jipk886TU_" resolve="concept" />
                           </node>
                         </node>
                       </node>
@@ -389,7 +389,7 @@
             <node concept="2OqwBi" id="5r_qjlVEAI" role="2Oq$k0">
               <node concept="13iPFW" id="5r_qjlVE$i" role="2Oq$k0" />
               <node concept="3TrEf2" id="5r_qjlVELI" role="2OqNvi">
-                <ref role="3Tt5mk" to="6otn:5r_qjlVEy4" />
+                <ref role="3Tt5mk" to="6otn:5r_qjlVEy4" resolve="elem" />
               </node>
             </node>
             <node concept="3TrcHB" id="5r_qjlVF5t" role="2OqNvi">
@@ -439,7 +439,7 @@
               <node concept="2OqwBi" id="5r_qjlVNgp" role="37wK5m">
                 <node concept="13iPFW" id="5r_qjlVNgq" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="5r_qjlVNgr" role="2OqNvi">
-                  <ref role="3TtcxE" to="79wq:5r_qjlOi3T" />
+                  <ref role="3TtcxE" to="79wq:5r_qjlOi3T" resolve="langs" />
                 </node>
               </node>
             </node>
@@ -474,7 +474,7 @@
                 <node concept="2OqwBi" id="5r_qjlVNgC" role="2Oq$k0">
                   <node concept="13iPFW" id="5r_qjlVNgD" role="2Oq$k0" />
                   <node concept="3TrEf2" id="5r_qjlVNgE" role="2OqNvi">
-                    <ref role="3Tt5mk" to="79wq:5r_qjlOi3U" />
+                    <ref role="3Tt5mk" to="79wq:5r_qjlOi3U" resolve="scope" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="5r_qjlVNgF" role="2OqNvi">
@@ -512,7 +512,7 @@
                             <ref role="3cqZAo" node="5r_qjlVNgY" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="5r_qjlVNgW" role="2OqNvi">
-                            <ref role="3Tt5mk" to="2c95:627_yy34G16" />
+                            <ref role="3Tt5mk" to="2c95:627_yy34G16" resolve="codeptr" />
                           </node>
                         </node>
                         <node concept="2qgKlT" id="5r_qjlVNgX" role="2OqNvi">
@@ -604,7 +604,7 @@
                             <ref role="3cqZAo" node="5r_qjlVNhq" resolve="res" />
                           </node>
                           <node concept="3TrEf2" id="5r_qjlX8_c" role="2OqNvi">
-                            <ref role="3Tt5mk" to="6otn:5r_qjlVEy4" />
+                            <ref role="3Tt5mk" to="6otn:5r_qjlVEy4" resolve="elem" />
                           </node>
                         </node>
                       </node>

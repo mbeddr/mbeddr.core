@@ -623,7 +623,7 @@
     <node concept="1TJgyj" id="hgVmB5M" role="1TKVEi">
       <property role="20kJfa" value="styleClass" />
       <property role="IQ2ns" value="1186406756722" />
-      <ref role="20lvS9" to="tpc2:hgV5SWv" resolve="StyleSheetClass" />
+      <ref role="20lvS9" to="tpc2:2VNGR_E4AW$" resolve="StyleClass" />
     </node>
   </node>
   <node concept="1TIwiD" id="4UkcdCu_Ksk">

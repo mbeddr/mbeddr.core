@@ -2,8 +2,8 @@
 <model ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
@@ -123,15 +123,21 @@
     <node concept="PrWs8" id="3o2OLGv7388" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
     </node>
-    <node concept="PrWs8" id="2YZ7DHQvvtw" role="PzmwI">
+    <node concept="PrWs8" id="6GaKBF538po" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6GaKBF50ksn" resolve="ITypeDef" />
+    </node>
+    <node concept="PrWs8" id="2fTYV5XMiZ_" role="PzmwI">
       <ref role="PrY4T" to="c4fa:xAR9nWuwcY" resolve="IHasPrefixes" />
     </node>
     <node concept="1TJgyj" id="5jyom5fO9Cm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="original" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="original_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="6116558314501347862" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      <node concept="asaX9" id="79OqY7jVkbj" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.core.modules.structure.ITypeDef&quot;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fO9Cn">

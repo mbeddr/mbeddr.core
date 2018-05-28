@@ -78,8 +78,8 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -121,7 +121,7 @@
                   <node concept="3clFbF" id="6YaWssNZJLS" role="3cqZAp">
                     <node concept="2OqwBi" id="6YaWssNZJLT" role="3clFbG">
                       <node concept="3TrEf2" id="6YaWssNZJLU" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:hqOq$gm" />
+                        <ref role="3Tt5mk" to="tpee:hqOq$gm" resolve="operand" />
                       </node>
                       <node concept="30H73N" id="6YaWssNZJLV" role="2Oq$k0" />
                     </node>
@@ -137,16 +137,18 @@
                   <node concept="3clFbF" id="6YaWssNZJM0" role="3cqZAp">
                     <node concept="2OqwBi" id="6YaWssNZJM1" role="3clFbG">
                       <node concept="1PxgMI" id="6YaWssNZJM2" role="2Oq$k0">
-                        <ref role="1m5ApE" to="fnbo:2gGfLsWQL6y" resolve="TransitivelyDependsOnBuildProjectOperation" />
                         <node concept="2OqwBi" id="6YaWssNZJM3" role="1m5AlR">
                           <node concept="3TrEf2" id="6YaWssNZJM4" role="2OqNvi">
-                            <ref role="3Tt5mk" to="tpee:hqOqNr4" />
+                            <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                           </node>
                           <node concept="30H73N" id="6YaWssNZJM5" role="2Oq$k0" />
                         </node>
+                        <node concept="chp4Y" id="1SbcsM_IKVQ" role="3oSUPX">
+                          <ref role="cht4Q" to="fnbo:2gGfLsWQL6y" resolve="TransitivelyDependsOnBuildProjectOperation" />
+                        </node>
                       </node>
                       <node concept="3TrEf2" id="6YaWssNZJM6" role="2OqNvi">
-                        <ref role="3Tt5mk" to="fnbo:2gGfLsWSk0j" />
+                        <ref role="3Tt5mk" to="fnbo:2gGfLsWSk0j" resolve="buildProject" />
                       </node>
                     </node>
                   </node>
@@ -163,7 +165,7 @@
               <node concept="2OqwBi" id="2YK7iA9SfIH" role="2Oq$k0">
                 <node concept="30H73N" id="2YK7iA9SfII" role="2Oq$k0" />
                 <node concept="3TrEf2" id="2YK7iA9SfIJ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tpee:hqOqNr4" />
+                  <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="2YK7iA9SfIK" role="2OqNvi">
@@ -189,7 +191,7 @@
                   <node concept="3clFbF" id="6YaWssNZ2Ys" role="3cqZAp">
                     <node concept="2OqwBi" id="6YaWssNZ2Yt" role="3clFbG">
                       <node concept="3TrEf2" id="6YaWssNZ2Yu" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:hqOq$gm" />
+                        <ref role="3Tt5mk" to="tpee:hqOq$gm" resolve="operand" />
                       </node>
                       <node concept="30H73N" id="6YaWssNZ2Yv" role="2Oq$k0" />
                     </node>
@@ -205,16 +207,18 @@
                   <node concept="3clFbF" id="6YaWssNZ2Y$" role="3cqZAp">
                     <node concept="2OqwBi" id="6YaWssNZ2Y_" role="3clFbG">
                       <node concept="1PxgMI" id="6YaWssNZ2YA" role="2Oq$k0">
-                        <ref role="1m5ApE" to="fnbo:6YaWssNZJ5X" resolve="HasDependencyOnBuildProjectOperation" />
                         <node concept="2OqwBi" id="6YaWssNZ2YB" role="1m5AlR">
                           <node concept="3TrEf2" id="6YaWssNZ2YC" role="2OqNvi">
-                            <ref role="3Tt5mk" to="tpee:hqOqNr4" />
+                            <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                           </node>
                           <node concept="30H73N" id="6YaWssNZ2YD" role="2Oq$k0" />
                         </node>
+                        <node concept="chp4Y" id="1SbcsM_IKVT" role="3oSUPX">
+                          <ref role="cht4Q" to="fnbo:6YaWssNZJ5X" resolve="HasDependencyOnBuildProjectOperation" />
+                        </node>
                       </node>
                       <node concept="3TrEf2" id="6YaWssNZJUC" role="2OqNvi">
-                        <ref role="3Tt5mk" to="fnbo:6YaWssNZJ5Y" />
+                        <ref role="3Tt5mk" to="fnbo:6YaWssNZJ5Y" resolve="buildProject" />
                       </node>
                     </node>
                   </node>
@@ -231,7 +235,7 @@
               <node concept="2OqwBi" id="6YaWssNZ2YL" role="2Oq$k0">
                 <node concept="30H73N" id="6YaWssNZ2YM" role="2Oq$k0" />
                 <node concept="3TrEf2" id="6YaWssNZ2YN" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tpee:hqOqNr4" />
+                  <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="6YaWssNZ2YO" role="2OqNvi">
@@ -257,7 +261,7 @@
                   <node concept="3clFbF" id="2gGfLsWU101" role="3cqZAp">
                     <node concept="2OqwBi" id="2gGfLsWU102" role="3clFbG">
                       <node concept="3TrEf2" id="2gGfLsWU103" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:hqOq$gm" />
+                        <ref role="3Tt5mk" to="tpee:hqOq$gm" resolve="operand" />
                       </node>
                       <node concept="30H73N" id="2gGfLsWU104" role="2Oq$k0" />
                     </node>
@@ -273,16 +277,18 @@
                   <node concept="3clFbF" id="2gGfLsWU109" role="3cqZAp">
                     <node concept="2OqwBi" id="2gGfLsWU10a" role="3clFbG">
                       <node concept="1PxgMI" id="2gGfLsWU10b" role="2Oq$k0">
-                        <ref role="1m5ApE" to="fnbo:2gGfLsWS1ZN" resolve="AddBuildProjectDependencyOperation" />
                         <node concept="2OqwBi" id="2gGfLsWU10c" role="1m5AlR">
                           <node concept="3TrEf2" id="2gGfLsWU10d" role="2OqNvi">
-                            <ref role="3Tt5mk" to="tpee:hqOqNr4" />
+                            <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                           </node>
                           <node concept="30H73N" id="2gGfLsWU10e" role="2Oq$k0" />
                         </node>
+                        <node concept="chp4Y" id="1SbcsM_IKVR" role="3oSUPX">
+                          <ref role="cht4Q" to="fnbo:2gGfLsWS1ZN" resolve="AddBuildProjectDependencyOperation" />
+                        </node>
                       </node>
                       <node concept="3TrEf2" id="2gGfLsWU5xx" role="2OqNvi">
-                        <ref role="3Tt5mk" to="fnbo:2gGfLsWS4vk" />
+                        <ref role="3Tt5mk" to="fnbo:2gGfLsWS4vk" resolve="buildProject" />
                       </node>
                     </node>
                   </node>
@@ -300,12 +306,14 @@
                   <node concept="3clFbF" id="2gGfLsWU1m9" role="3cqZAp">
                     <node concept="2OqwBi" id="2gGfLsWU1pI" role="3clFbG">
                       <node concept="1PxgMI" id="2gGfLsWU1mb" role="2Oq$k0">
-                        <ref role="1m5ApE" to="fnbo:2gGfLsWS1ZN" resolve="AddBuildProjectDependencyOperation" />
                         <node concept="2OqwBi" id="2gGfLsWU1mc" role="1m5AlR">
                           <node concept="3TrEf2" id="2gGfLsWU1md" role="2OqNvi">
-                            <ref role="3Tt5mk" to="tpee:hqOqNr4" />
+                            <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                           </node>
                           <node concept="30H73N" id="2gGfLsWU1me" role="2Oq$k0" />
+                        </node>
+                        <node concept="chp4Y" id="1SbcsM_IKVS" role="3oSUPX">
+                          <ref role="cht4Q" to="fnbo:2gGfLsWS1ZN" resolve="AddBuildProjectDependencyOperation" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="2gGfLsWU1Oh" role="2OqNvi">
@@ -326,7 +334,7 @@
               <node concept="2OqwBi" id="2gGfLsWT0Db" role="2Oq$k0">
                 <node concept="30H73N" id="2gGfLsWT0_F" role="2Oq$k0" />
                 <node concept="3TrEf2" id="2gGfLsWT1bj" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tpee:hqOqNr4" />
+                  <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="2gGfLsWT137" role="2OqNvi">

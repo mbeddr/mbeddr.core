@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="3ecd7c84-cde3-45de-886c-135ecc69b742" name="jetbrains.mps.lang.refactoring" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -44,7 +44,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -172,7 +171,7 @@
         <node concept="3clFbF" id="3m8H$lmIo35" role="3cqZAp">
           <node concept="2OqwBi" id="3m8H$lmIo3e" role="3clFbG">
             <node concept="2OqwBi" id="3m8H$lmIo37" role="2Oq$k0">
-              <node concept="3cpWsa" id="3m8H$lmIo36" role="2Oq$k0">
+              <node concept="37vLTw" id="3m8H$lmIo36" role="2Oq$k0">
                 <ref role="3cqZAo" node="3m8H$lmIlcz" resolve="n" />
               </node>
               <node concept="3CFZ6_" id="3m8H$lmIo3b" role="2OqNvi">
@@ -182,7 +181,7 @@
               </node>
             </node>
             <node concept="2oxUTD" id="3m8H$lmIo3i" role="2OqNvi">
-              <node concept="3cpWsa" id="3m8H$lmIo3l" role="2oxUTC">
+              <node concept="37vLTw" id="3m8H$lmIo3l" role="2oxUTC">
                 <ref role="3cqZAo" node="3m8H$lmFM6Z" resolve="d" />
               </node>
             </node>

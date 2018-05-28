@@ -100,8 +100,8 @@
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
@@ -1927,7 +1927,7 @@
                               <node concept="2ShNRf" id="6fP9ZN5lSKI" role="37vLTx">
                                 <node concept="3zrR0B" id="6fP9ZN5lSKJ" role="2ShVmc">
                                   <node concept="3Tqbb2" id="6fP9ZN5lSKK" role="3zrR0E">
-                                    <ref role="ehGHo" to="pyey:2gQe_W8E0vC" resolve="BeforePExistsQ" />
+                                    <ref role="ehGHo" to="pyey:2gQe_W8E0vC" resolve="BeforeQExistsP" />
                                   </node>
                                 </node>
                               </node>
@@ -1993,9 +1993,11 @@
                         </node>
                         <node concept="2OqwBi" id="6fP9ZN5lYyl" role="37vLTJ">
                           <node concept="1PxgMI" id="6fP9ZN5m9ap" role="2Oq$k0">
-                            <ref role="1m5ApE" to="pyey:6qmmy97ZWGO" resolve="BinaryVerificationCondition" />
                             <node concept="37vLTw" id="6fP9ZN5lYym" role="1m5AlR">
                               <ref role="3cqZAo" node="6fP9ZN5lPzk" resolve="newVc" />
+                            </node>
+                            <node concept="chp4Y" id="79i$vAY7rMs" role="3oSUPX">
+                              <ref role="cht4Q" to="pyey:6qmmy97ZWGO" resolve="BinaryVerificationCondition" />
                             </node>
                           </node>
                           <node concept="3TrEf2" id="6fP9ZN5m9UH" role="2OqNvi">
@@ -2016,9 +2018,11 @@
                         </node>
                         <node concept="2OqwBi" id="6fP9ZN5m0Qm" role="37vLTJ">
                           <node concept="1PxgMI" id="6fP9ZN5maxi" role="2Oq$k0">
-                            <ref role="1m5ApE" to="pyey:6qmmy97ZWGO" resolve="BinaryVerificationCondition" />
                             <node concept="37vLTw" id="6fP9ZN5m0Qn" role="1m5AlR">
                               <ref role="3cqZAo" node="6fP9ZN5lPzk" resolve="newVc" />
+                            </node>
+                            <node concept="chp4Y" id="79i$vAY7rMu" role="3oSUPX">
+                              <ref role="cht4Q" to="pyey:6qmmy97ZWGO" resolve="BinaryVerificationCondition" />
                             </node>
                           </node>
                           <node concept="3TrEf2" id="6fP9ZN5mbhA" role="2OqNvi">
@@ -2101,9 +2105,11 @@
                         </node>
                         <node concept="2OqwBi" id="6fP9ZN5m4NF" role="37vLTJ">
                           <node concept="1PxgMI" id="6fP9ZN5mbEv" role="2Oq$k0">
-                            <ref role="1m5ApE" to="pyey:5XIKRVIuY$_" resolve="TernaryVerificationCondition" />
                             <node concept="37vLTw" id="6fP9ZN5m4NG" role="1m5AlR">
                               <ref role="3cqZAo" node="6fP9ZN5lPzk" resolve="newVc" />
+                            </node>
+                            <node concept="chp4Y" id="79i$vAY7rMw" role="3oSUPX">
+                              <ref role="cht4Q" to="pyey:5XIKRVIuY$_" resolve="TernaryVerificationCondition" />
                             </node>
                           </node>
                           <node concept="3TrEf2" id="6fP9ZN5mcoq" role="2OqNvi">
@@ -2124,9 +2130,11 @@
                         </node>
                         <node concept="2OqwBi" id="6fP9ZN5mc$q" role="37vLTJ">
                           <node concept="1PxgMI" id="6fP9ZN5mc$r" role="2Oq$k0">
-                            <ref role="1m5ApE" to="pyey:5XIKRVIuY$_" resolve="TernaryVerificationCondition" />
                             <node concept="37vLTw" id="6fP9ZN5mc$s" role="1m5AlR">
                               <ref role="3cqZAo" node="6fP9ZN5lPzk" resolve="newVc" />
+                            </node>
+                            <node concept="chp4Y" id="79i$vAY7rMx" role="3oSUPX">
+                              <ref role="cht4Q" to="pyey:5XIKRVIuY$_" resolve="TernaryVerificationCondition" />
                             </node>
                           </node>
                           <node concept="3TrEf2" id="6fP9ZN5mdXf" role="2OqNvi">
@@ -2147,9 +2155,11 @@
                         </node>
                         <node concept="2OqwBi" id="6fP9ZN5md2G" role="37vLTJ">
                           <node concept="1PxgMI" id="6fP9ZN5md2H" role="2Oq$k0">
-                            <ref role="1m5ApE" to="pyey:5XIKRVIuY$_" resolve="TernaryVerificationCondition" />
                             <node concept="37vLTw" id="6fP9ZN5md2I" role="1m5AlR">
                               <ref role="3cqZAo" node="6fP9ZN5lPzk" resolve="newVc" />
+                            </node>
+                            <node concept="chp4Y" id="79i$vAY7rMv" role="3oSUPX">
+                              <ref role="cht4Q" to="pyey:5XIKRVIuY$_" resolve="TernaryVerificationCondition" />
                             </node>
                           </node>
                           <node concept="3TrEf2" id="6fP9ZN5mfi2" role="2OqNvi">

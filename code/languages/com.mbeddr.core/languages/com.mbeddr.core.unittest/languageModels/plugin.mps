@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -93,8 +93,8 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -144,9 +144,11 @@
                 <ref role="37wK5l" node="4esKCdYvNEp" resolve="getValueType" />
                 <node concept="2OqwBi" id="4esKCdYySNj" role="37wK5m">
                   <node concept="1PxgMI" id="4esKCdYySNk" role="2Oq$k0">
-                    <ref role="1m5ApE" to="mj1l:DirWPS1IHj" resolve="ITypeDecorator" />
                     <node concept="37vLTw" id="4esKCdYySNl" role="1m5AlR">
                       <ref role="3cqZAo" node="4esKCdYvNFi" resolve="type" />
+                    </node>
+                    <node concept="chp4Y" id="79i$vAY60dk" role="3oSUPX">
+                      <ref role="cht4Q" to="mj1l:DirWPS1IHj" resolve="ITypeDecorator" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="4esKCdYySNm" role="2OqNvi">

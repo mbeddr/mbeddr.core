@@ -2,7 +2,7 @@
 <model ref="r:d533995c-a47a-457d-b237-d32ed1fff48e(com.mbeddr.analyses.spin.testing.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -93,9 +93,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -173,10 +176,12 @@
                   <node concept="2OqwBi" id="2lN4cj_UxGE" role="33vP2m">
                     <node concept="2OqwBi" id="2lN4cj_UxGF" role="2Oq$k0">
                       <node concept="1PxgMI" id="2lN4cj_UxGG" role="2Oq$k0">
-                        <ref role="1m5ApE" to="g2l3:2lN4cj_Uaaf" resolve="SpinWhitnessTest" />
                         <node concept="2OqwBi" id="2lN4cj_UxGH" role="1m5AlR">
                           <node concept="pncrf" id="2lN4cj_UxGI" role="2Oq$k0" />
                           <node concept="1mfA1w" id="2lN4cj_UxGJ" role="2OqNvi" />
+                        </node>
+                        <node concept="chp4Y" id="79i$vAY7sZr" role="3oSUPX">
+                          <ref role="cht4Q" to="g2l3:2lN4cj_Uaaf" resolve="SpinWhitnessTest" />
                         </node>
                       </node>
                       <node concept="3Tsc0h" id="2lN4cj_UxGK" role="2OqNvi">

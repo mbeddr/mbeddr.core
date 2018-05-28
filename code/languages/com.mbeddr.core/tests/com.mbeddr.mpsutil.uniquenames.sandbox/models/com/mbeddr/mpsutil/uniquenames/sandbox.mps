@@ -118,8 +118,8 @@
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143221076066" name="jetbrains.mps.lang.smodel.structure.Node_InsertNewPrevSiblingOperation" flags="nn" index="Hik5C">
         <reference id="1143221076069" name="concept" index="Hik5J" />
@@ -456,7 +456,7 @@
             <node concept="17QB3L" id="744F$3RoP9G" role="1tU5fm" />
             <node concept="prKvN" id="744F$3RoP9J" role="33vP2m">
               <ref role="prhl4" to="tpee:fz3vP1J" resolve="Expression" />
-              <ref role="prhl7" to="tpck:4uZwTti3__2" />
+              <ref role="prhl7" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
             </node>
           </node>
         </node>
@@ -468,7 +468,7 @@
             </node>
             <node concept="28GBK8" id="744F$3RpqTC" role="33vP2m">
               <ref role="28GBKb" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-              <ref role="28H3Ia" to="tpck:4uZwTti3__2" />
+              <ref role="28H3Ia" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
             </node>
           </node>
         </node>
@@ -480,7 +480,7 @@
             </node>
             <node concept="359W_D" id="KYwojieHz0" role="33vP2m">
               <ref role="359W_E" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-              <ref role="359W_F" to="tpck:4uZwTti3__2" />
+              <ref role="359W_F" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
             </node>
           </node>
         </node>
@@ -573,7 +573,7 @@
             </node>
             <node concept="1BlSNk" id="744F$3RrRig" role="2OqNvi">
               <ref role="1BmUXE" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-              <ref role="1Bn3mz" to="tpck:4uZwTti3__2" />
+              <ref role="1Bn3mz" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
             </node>
           </node>
         </node>
@@ -628,9 +628,11 @@
             </node>
             <node concept="1PxgMI" id="49195GpYqyz" role="33vP2m">
               <property role="1BlNFB" value="true" />
-              <ref role="1m5ApE" to="mj1l:7FQByU3CrCM" resolve="Expression" />
               <node concept="37vLTw" id="49195GpYqy$" role="1m5AlR">
                 <ref role="3cqZAo" node="744F$3Rqgqj" resolve="a" />
+              </node>
+              <node concept="chp4Y" id="79i$vAY6foN" role="3oSUPX">
+                <ref role="cht4Q" to="mj1l:7FQByU3CrCM" resolve="Expression" />
               </node>
             </node>
           </node>
@@ -730,7 +732,7 @@
                   <ref role="3cqZAo" node="KYwojik0Ad" resolve="b" />
                 </node>
                 <node concept="3Tsc0h" id="KYwojik6C4" role="2OqNvi">
-                  <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                  <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
                 </node>
               </node>
               <node concept="WFELt" id="KYwojikbhL" role="2OqNvi">

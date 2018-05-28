@@ -2,7 +2,7 @@
 <model ref="r:17b09ba0-cbd7-488a-91a1-9ee54b7e6e87(com.mbeddr.mpsutil.compare.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -144,10 +144,10 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -482,7 +482,7 @@
           <node concept="3clFbF" id="5uUCR4LKWKo" role="3cqZAp">
             <node concept="2OqwBi" id="5uUCR4LKWO0" role="3clFbG">
               <node concept="0IXxy" id="5uUCR4LKWKn" role="2Oq$k0" />
-              <node concept="1PgB_6" id="5uUCR4LKXYB" role="2OqNvi" />
+              <node concept="3YRAZt" id="5uUCR4LKXYB" role="2OqNvi" />
             </node>
           </node>
         </node>

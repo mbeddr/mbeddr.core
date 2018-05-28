@@ -153,16 +153,16 @@
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3I8uaA" value="" />
-      <node concept="3abb7c" id="6HUmFakwg6" role="3anu1O">
+      <node concept="3abb7c" id="OnnrMNmT1S" role="3anu1O">
         <property role="TrG5h" value="Win32" />
       </node>
-      <node concept="3abb7c" id="6HUmFakwg7" role="3anu1O">
+      <node concept="3abb7c" id="OnnrMNmT1T" role="3anu1O">
         <property role="TrG5h" value="MacOSX" />
       </node>
-      <node concept="3abb7c" id="6HUmFakwg8" role="3anu1O">
+      <node concept="3abb7c" id="OnnrMNmT1U" role="3anu1O">
         <property role="TrG5h" value="Linux" />
       </node>
-      <node concept="3abb7c" id="6HUmFakwg9" role="3anu1O">
+      <node concept="3abb7c" id="OnnrMNmT1V" role="3anu1O">
         <property role="TrG5h" value="portable" />
       </node>
     </node>
@@ -172,7 +172,7 @@
     <node concept="2eOfOl" id="4Rhu9QGMxdN" role="2ePNbc">
       <property role="iO3LB" value="false" />
       <property role="TrG5h" value="HelloWolrd" />
-      <ref role="3oK8_y" node="6HUmFakwg9" resolve="portable" />
+      <ref role="3oK8_y" node="OnnrMNmT1V" resolve="portable" />
       <node concept="2v9HqM" id="4Rhu9QGMxPp" role="2eOfOg">
         <ref role="2v9HqP" node="4Rhu9QGK$vN" resolve="HelloWorld" />
       </node>

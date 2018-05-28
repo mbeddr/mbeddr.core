@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="com.mbeddr.analyses.spin.mdcc" uuid="537c2fcd-71ef-4c92-a9e5-27af92b5182b">
+  <exported-language name="17b818a8-8533-4efe-8f51-f532146ae66b(com.mbeddr.analyses.spin.c)" />
+  <exported-language name="f027a490-7082-492e-99ce-dfe65d7342f7(com.mbeddr.analyses.spin.c.patterns)" />
+  <exported-language name="9aeff3a1-b145-418c-a75b-9a6e331d7333(com.mbeddr.analyses.spin)" />
+  <exported-language name="877b0e90-e1a6-4468-970c-dcb3f49f95ed(com.mbeddr.analyses.spin.promela)" />
+  <exported-language name="4ddb29eb-11e5-46c6-a894-6b8a4c38587d(com.mbeddr.analyses.spin.promela.patterns)" />
+  <extendedDevKits>
+    <extendedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</extendedDevKit>
+  </extendedDevKits>
+  <exported-solutions>
+    <exported-solution>1dcacc1a-8e53-470e-987d-f654ba2e645c(com.mbeddr.analyses.spin.documentation)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+

@@ -36,7 +36,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242874" name="jetbrains.mps.baseLanguage.structure.ParameterReference" flags="nn" index="3cpWs2" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -64,7 +63,7 @@
       <node concept="3clFbS" id="DYlgnAAVk_" role="3clF47">
         <node concept="3clFbF" id="DYlgnAAVkA" role="3cqZAp">
           <node concept="2OqwBi" id="DYlgnAAVkB" role="3clFbG">
-            <node concept="3cpWs2" id="DYlgnAAVkC" role="2Oq$k0">
+            <node concept="37vLTw" id="DYlgnAAVkC" role="2Oq$k0">
               <ref role="3cqZAo" node="DYlgnAAVkG" resolve="s" />
             </node>
             <node concept="liA8E" id="DYlgnAAVkD" role="2OqNvi">

@@ -2,7 +2,7 @@
 <model ref="r:85abeca6-54b2-49d1-b3a9-2a4d0795ea4f(com.mbeddr.mpsutil.compare.pattern.baselang.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -95,7 +95,6 @@
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -305,7 +304,6 @@
     <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="ycll:$WtIWn_nV3" resolve="NamedGetTarget" />
     <node concept="3EZMnI" id="fHu_EjO" role="2wV5jI">
-      <property role="3EZMnw" value="false" />
       <node concept="3F0ifn" id="fHu_EjP" role="3EZMnx">
         <property role="3F0ifm" value="&quot;" />
         <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />

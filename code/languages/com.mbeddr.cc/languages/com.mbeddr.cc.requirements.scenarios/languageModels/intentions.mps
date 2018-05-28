@@ -63,7 +63,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -148,7 +147,7 @@
             <node concept="2OqwBi" id="4YQM_89ub9S" role="2Oq$k0">
               <node concept="2Sf5sV" id="4YQM_89ub9z" role="2Oq$k0" />
               <node concept="3Tsc0h" id="4YQM_89ub9Y" role="2OqNvi">
-                <ref role="3TtcxE" to="4l29:4YQM_89u3vp" />
+                <ref role="3TtcxE" to="4l29:4YQM_89u3vp" resolve="contents" />
               </node>
             </node>
             <node concept="WFELt" id="4YQM_89ubaq" role="2OqNvi" />
@@ -180,7 +179,7 @@
             <node concept="2OqwBi" id="4YQM_89uVnb" role="2Oq$k0">
               <node concept="2Sf5sV" id="4YQM_89uVmQ" role="2Oq$k0" />
               <node concept="3Tsc0h" id="4YQM_89uVnh" role="2OqNvi">
-                <ref role="3TtcxE" to="4l29:4YQM_89uRD9" />
+                <ref role="3TtcxE" to="4l29:4YQM_89uRD9" resolve="contents" />
               </node>
             </node>
             <node concept="WFELt" id="4YQM_89uVnH" role="2OqNvi" />
@@ -241,7 +240,7 @@
                   <ref role="3cqZAo" node="2oCAQmIIPxf" resolve="text" />
                 </node>
                 <node concept="2OqwBi" id="2oCAQmIIOGF" role="37vLTJ">
-                  <node concept="3cpWsa" id="2oCAQmIIOGG" role="2Oq$k0">
+                  <node concept="37vLTw" id="2oCAQmIIOGG" role="2Oq$k0">
                     <ref role="3cqZAo" node="2oCAQmIIOGz" resolve="cap" />
                   </node>
                   <node concept="3TrcHB" id="2oCAQmIIOGH" role="2OqNvi">
@@ -257,19 +256,19 @@
                     <node concept="2OqwBi" id="4YQM_89v6Zq" role="2Oq$k0">
                       <node concept="2Sf5sV" id="4YQM_89v6Z5" role="2Oq$k0" />
                       <node concept="3TrEf2" id="4YQM_89v6Zw" role="2OqNvi">
-                        <ref role="3Tt5mk" to="4l29:4YQM_89uOtI" />
+                        <ref role="3Tt5mk" to="4l29:4YQM_89uOtI" resolve="targetParticipant" />
                       </node>
                     </node>
                     <node concept="3TrEf2" id="4YQM_89v6ZW" role="2OqNvi">
-                      <ref role="3Tt5mk" to="4l29:4YQM_89uIgb" />
+                      <ref role="3Tt5mk" to="4l29:4YQM_89uIgb" resolve="participant" />
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="4YQM_89v70o" role="2OqNvi">
-                    <ref role="3TtcxE" to="4l29:4YQM_89u6y1" />
+                    <ref role="3TtcxE" to="4l29:4YQM_89u6y1" resolve="contents" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="4YQM_89v70O" role="2OqNvi">
-                  <node concept="3cpWsa" id="4YQM_89v70Q" role="25WWJ7">
+                  <node concept="37vLTw" id="4YQM_89v70Q" role="25WWJ7">
                     <ref role="3cqZAo" node="2oCAQmIIOGz" resolve="cap" />
                   </node>
                 </node>
@@ -278,7 +277,7 @@
           </node>
           <node concept="3y3z36" id="2oCAQmIIPxs" role="3clFbw">
             <node concept="10Nm6u" id="2oCAQmIIPxv" role="3uHU7w" />
-            <node concept="3cpWsa" id="2oCAQmIIPxr" role="3uHU7B">
+            <node concept="37vLTw" id="2oCAQmIIPxr" role="3uHU7B">
               <ref role="3cqZAo" node="2oCAQmIIPxf" resolve="text" />
             </node>
           </node>
@@ -329,7 +328,7 @@
             <node concept="2OqwBi" id="4YQM_89wdk6" role="2Oq$k0">
               <node concept="2Sf5sV" id="4YQM_89wdjL" role="2Oq$k0" />
               <node concept="3Tsc0h" id="4YQM_89wdkc" role="2OqNvi">
-                <ref role="3TtcxE" to="4l29:4YQM_89wdhf" />
+                <ref role="3TtcxE" to="4l29:4YQM_89wdhf" resolve="otherCases" />
               </node>
             </node>
             <node concept="WFELt" id="4YQM_89wdkC" role="2OqNvi" />

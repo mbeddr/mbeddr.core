@@ -178,6 +178,12 @@
       <property role="IQ2ns" value="1954385921685817946" />
       <ref role="20lvS9" node="1GvnUgo6Kzw" resolve="PostprocessFunction" />
     </node>
+    <node concept="1TJgyj" id="6uixmKZ2FIJ" role="1TKVEi">
+      <property role="IQ2ns" value="7463174232466963375" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="descriptionText" />
+      <ref role="20lvS9" node="6uixmKZ2zuG" resolve="WrapperCell_DescriptionText" />
+    </node>
     <node concept="PrWs8" id="6oKG1kMyAVP" role="PzmwI">
       <ref role="PrY4T" node="6oKG1kMyAVO" resolve="IActionGeneratingCell" />
     </node>
@@ -996,6 +1002,19 @@
     <property role="TrG5h" value="Parameter_editorContext" />
     <property role="34LRSv" value="editorContext" />
     <property role="EcuMT" value="2489050352088028316" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="6uixmKZ2zuG">
+    <property role="3GE5qa" value="cells" />
+    <property role="TrG5h" value="WrapperCell_DescriptionText" />
+    <property role="EcuMT" value="7463174232466929580" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="6uixmKZ2zAm">
+    <property role="3GE5qa" value="cells" />
+    <property role="TrG5h" value="Parameter_OriginalText" />
+    <property role="34LRSv" value="originalText" />
+    <property role="EcuMT" value="7463174232466930070" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>

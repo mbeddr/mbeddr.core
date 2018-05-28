@@ -9,7 +9,6 @@
   <imports>
     <import index="rcub" ref="r:c83abd98-3982-4341-b913-7083d86baf99(de.itemis.mps.editor.math.java.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -102,16 +101,14 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -137,7 +134,7 @@
                 <ref role="1YBMHb" node="7OTEScIoGlY" resolve="mathLoop" />
               </node>
               <node concept="3TrEf2" id="4CDVPmpGfZi" role="2OqNvi">
-                <ref role="3Tt5mk" to="rcub:4CDVPmpGfJP" />
+                <ref role="3Tt5mk" to="rcub:4CDVPmpGfJP" resolve="body" />
               </node>
             </node>
           </node>
@@ -250,15 +247,13 @@
                               <node concept="3cpWs3" id="4rnzj9dowVp" role="3uHU7B">
                                 <node concept="3cpWs3" id="4rnzj9dowVj" role="3uHU7B">
                                   <node concept="2OqwBi" id="2wdLO7KfOue" role="3uHU7w">
-                                    <node concept="3TrcHB" id="2wdLO7KfOuf" role="2OqNvi">
-                                      <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
-                                    </node>
-                                    <node concept="2OqwBi" id="2wdLO7KfOug" role="2Oq$k0">
-                                      <node concept="3NT_Vc" id="2wdLO7KfOuh" role="2OqNvi" />
+                                    <node concept="2OqwBi" id="1k1VwvtPGiC" role="2Oq$k0">
+                                      <node concept="2yIwOk" id="1k1VwvtPGiD" role="2OqNvi" />
                                       <node concept="1YBJjd" id="4Ajzui6OmQB" role="2Oq$k0">
                                         <ref role="1YBMHb" node="d4eZmVxi6E" resolve="fraction" />
                                       </node>
                                     </node>
+                                    <node concept="3n3YKJ" id="1k1VwvtPGiE" role="2OqNvi" />
                                   </node>
                                   <node concept="Xl_RD" id="1d383CxV4OL" role="3uHU7B">
                                     <property role="Xl_RC" value="Operator '" />
@@ -295,7 +290,7 @@
                   <ref role="1YBMHb" node="d4eZmVxi6E" resolve="fraction" />
                 </node>
                 <node concept="3TrEf2" id="4Ajzui6OnAm" role="2OqNvi">
-                  <ref role="3Tt5mk" to="rcub:d4eZmVx0UL" />
+                  <ref role="3Tt5mk" to="rcub:d4eZmVx0UL" resolve="denominator" />
                 </node>
               </node>
             </node>
@@ -311,7 +306,7 @@
               <ref role="1YBMHb" node="d4eZmVxi6E" resolve="fraction" />
             </node>
             <node concept="3TrEf2" id="4Ajzui6Ongo" role="2OqNvi">
-              <ref role="3Tt5mk" to="rcub:d4eZmVx0UI" />
+              <ref role="3Tt5mk" to="rcub:d4eZmVx0UI" resolve="numerator" />
             </node>
           </node>
         </node>
@@ -418,7 +413,7 @@
                 <ref role="1YBMHb" node="2979S3p$JbO" resolve="abs" />
               </node>
               <node concept="3TrEf2" id="2979S3p$JAw" role="2OqNvi">
-                <ref role="3Tt5mk" to="rcub:4Ajzui6R4QZ" />
+                <ref role="3Tt5mk" to="rcub:4Ajzui6R4QZ" resolve="expr" />
               </node>
             </node>
           </node>

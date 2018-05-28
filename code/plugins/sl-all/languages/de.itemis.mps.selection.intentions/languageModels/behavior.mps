@@ -2,7 +2,7 @@
 <model ref="r:76cead3b-c307-4552-aa8a-6fb3d2a0575e(de.itemis.mps.selection.intentions.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -71,6 +71,12 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
+        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -79,12 +85,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug">
-        <reference id="1180481110358" name="conceptDeclaraton" index="3qa414" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -128,7 +128,7 @@
               </node>
             </node>
             <node concept="3TrEf2" id="5d_XfTkoBVp" role="2OqNvi">
-              <ref role="3Tt5mk" to="p77b:5d_XfTkoABw" />
+              <ref role="3Tt5mk" to="p77b:5d_XfTkoABw" resolve="selectionType" />
             </node>
           </node>
         </node>
@@ -192,28 +192,28 @@
     <ref role="13h7C2" to="p77b:630t2b83bX0" resolve="SelectionIntentionFunction" />
     <node concept="13i0hz" id="5d_XfTkoCsV" role="13h7CS">
       <property role="13i0is" value="false" />
-      <property role="TrG5h" value="getParameters" />
+      <property role="TrG5h" value="getParameterConcepts" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="tpek:hEwIGRM" resolve="getParameters" />
+      <ref role="13i0hy" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
       <node concept="3Tm1VV" id="5d_XfTkoCts" role="1B3o_S" />
       <node concept="3clFbS" id="5d_XfTkoCtt" role="3clF47">
         <node concept="3clFbF" id="5d_XfTkoCw_" role="3cqZAp">
           <node concept="2ShNRf" id="5d_XfTkoCwr" role="3clFbG">
             <node concept="Tc6Ow" id="5d_XfTkoCAr" role="2ShVmc">
-              <node concept="3THzug" id="5d_XfTkoCLi" role="HW$YZ">
-                <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+              <node concept="3bZ5Sz" id="44e9JOQDY2o" role="HW$YZ">
+                <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
               </node>
-              <node concept="3TUQnm" id="5d_XfTkoD1A" role="HW$Y0">
-                <ref role="3TV0OU" to="p77b:5d_XfTkoAQ0" resolve="Parameter_Selection" />
+              <node concept="35c_gC" id="44e9JOQDY2n" role="HW$Y0">
+                <ref role="35c_gD" to="p77b:5d_XfTkoAQ0" resolve="Parameter_Selection" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="_YKpA" id="5d_XfTkoCtu" role="3clF45">
-        <node concept="3THzug" id="5d_XfTkoCtv" role="_ZDj9">
-          <ref role="3qa414" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+      <node concept="_YKpA" id="44e9JOQDY2l" role="3clF45">
+        <node concept="3bZ5Sz" id="44e9JOQDY2m" role="_ZDj9">
+          <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
         </node>
       </node>
     </node>

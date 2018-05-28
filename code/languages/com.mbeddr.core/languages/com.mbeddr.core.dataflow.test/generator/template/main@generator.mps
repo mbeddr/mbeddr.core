@@ -193,10 +193,13 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -320,7 +323,7 @@
                                     <node concept="2OqwBi" id="3JNYr4Z7Iz9" role="2JrQYb">
                                       <node concept="30H73N" id="3JNYr4Z7Iqa" role="2Oq$k0" />
                                       <node concept="3TrEf2" id="3JNYr4Z8VT3" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="9btd:3JNYr4Z1lvK" />
+                                        <ref role="3Tt5mk" to="9btd:3JNYr4Z1lvK" resolve="actualFromNode" />
                                       </node>
                                     </node>
                                   </node>
@@ -357,7 +360,7 @@
                                     <node concept="2OqwBi" id="3JNYr4Z8QtL" role="2JrQYb">
                                       <node concept="30H73N" id="3JNYr4Z8QtM" role="2Oq$k0" />
                                       <node concept="3TrEf2" id="3JNYr4Z8QtN" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="9btd:3JNYr4YYJby" />
+                                        <ref role="3Tt5mk" to="9btd:3JNYr4YYJby" resolve="expected" />
                                       </node>
                                     </node>
                                   </node>
@@ -448,7 +451,6 @@
                           </node>
                           <node concept="2OqwBi" id="3JNYr4ZoNtG" role="37vLTx">
                             <node concept="1PxgMI" id="3JNYr4ZkPhR" role="2Oq$k0">
-                              <ref role="1m5ApE" to="9btd:3JNYr4YYJa2" resolve="DataflowGraph" />
                               <node concept="2OqwBi" id="3JNYr4Z8KBD" role="1m5AlR">
                                 <node concept="2ShNRf" id="3JNYr4Z8KBE" role="2Oq$k0">
                                   <node concept="1pGfFk" id="3JNYr4Z8KBF" role="2ShVmc">
@@ -468,6 +470,9 @@
                                     <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
                                   </node>
                                 </node>
+                              </node>
+                              <node concept="chp4Y" id="1SbcsM$Fkw2" role="3oSUPX">
+                                <ref role="cht4Q" to="9btd:3JNYr4YYJa2" resolve="DataflowGraph" />
                               </node>
                             </node>
                             <node concept="2qgKlT" id="3JNYr4ZoQl_" role="2OqNvi">

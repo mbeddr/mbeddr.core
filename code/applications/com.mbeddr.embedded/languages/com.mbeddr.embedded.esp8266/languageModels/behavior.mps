@@ -2,7 +2,7 @@
 <model ref="r:c6c22d7a-63a0-4c53-92b8-16a49b5b7223(com.mbeddr.embedded.esp8266.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -194,7 +194,7 @@
             <node concept="2OqwBi" id="1EZSCJhcCRQ" role="37vLTJ">
               <node concept="13iPFW" id="1EZSCJhcCDZ" role="2Oq$k0" />
               <node concept="3TrEf2" id="1EZSCJhcFta" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
               </node>
             </node>
           </node>
@@ -225,7 +225,7 @@
           <node concept="2OqwBi" id="1EZSCJhe5Zh" role="3clFbG">
             <node concept="13iPFW" id="1EZSCJhe5Qv" role="2Oq$k0" />
             <node concept="3TrEf2" id="1EZSCJhe6_0" role="2OqNvi">
-              <ref role="3Tt5mk" to="bq7f:1EZSCJhe5KJ" />
+              <ref role="3Tt5mk" to="bq7f:1EZSCJhe5KJ" resolve="body" />
             </node>
           </node>
         </node>

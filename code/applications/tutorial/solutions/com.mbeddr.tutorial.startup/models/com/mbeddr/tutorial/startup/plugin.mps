@@ -4,7 +4,7 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
@@ -159,7 +159,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1154542696413" name="jetbrains.mps.baseLanguage.structure.ArrayCreatorWithInitializer" flags="nn" index="3g6Rrh">
@@ -404,7 +403,7 @@
                               <node concept="2OqwBi" id="2QDtwSqHBDm" role="33vP2m">
                                 <node concept="liA8E" id="2QDtwSqHBDn" role="2OqNvi">
                                   <ref role="37wK5l" to="mhbf:~SModel.getNode(org.jetbrains.mps.openapi.model.SNodeId):org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
-                                  <node concept="3cpWsa" id="2QDtwSqHBDo" role="37wK5m">
+                                  <node concept="37vLTw" id="2QDtwSqHBDo" role="37wK5m">
                                     <ref role="3cqZAo" node="2QDtwSqHBD7" resolve="nodeID" />
                                   </node>
                                 </node>
@@ -722,7 +721,7 @@
                   <node concept="2OqwBi" id="4PqLM5kUmOv" role="33vP2m">
                     <node concept="liA8E" id="4PqLM5kUmOw" role="2OqNvi">
                       <ref role="37wK5l" to="mhbf:~SModel.getNode(org.jetbrains.mps.openapi.model.SNodeId):org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
-                      <node concept="3cpWsa" id="4PqLM5kUmOx" role="37wK5m">
+                      <node concept="37vLTw" id="4PqLM5kUmOx" role="37wK5m">
                         <ref role="3cqZAo" node="7CAL8BWh$f" resolve="nodeID" />
                       </node>
                     </node>

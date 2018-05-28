@@ -11,12 +11,11 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
-    <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -1651,6 +1650,21 @@
       <property role="20kJfa" value="identity" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tp25:nJmxU5cSSu" resolve="ModuleIdentity" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2CRkjeimvKE">
+    <property role="EcuMT" value="3041989355252612138" />
+    <property role="3GE5qa" value="structure" />
+    <property role="TrG5h" value="DocumentRefSection" />
+    <property role="34LRSv" value="ExternalDocRef" />
+    <property role="R4oN_" value="Not visible for end user and only used for including external documents links in table of contents" />
+    <ref role="1TJDcQ" node="2TZO3Dbv6Ju" resolve="AbstractSection" />
+    <node concept="1TJgyj" id="2CRkjeinZAw" role="1TKVEi">
+      <property role="IQ2ns" value="3041989355253004704" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="externalDocument" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5gTlpaky5gD" resolve="AbstractExport" />
     </node>
   </node>
 </model>

@@ -18,11 +18,9 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="b239" ref="r:393cdd6b-ed8c-4a16-aaea-46c7260e40ef(com.mbeddr.analyses.acsl.cbmc.gen.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="q5q6" ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="107" ref="r:02a12cf8-342d-4301-b167-f3931792f77d(com.mbeddr.analyses.acsl.assertions.gen.generator.template.main@generator)" />
-    <import index="pyey" ref="r:b89a3cc8-64dd-45da-a374-472dedea6945(com.mbeddr.analyses.base.verification_conditions.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -124,6 +122,7 @@
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <property id="1184950341882" name="topPriorityGroup" index="3$yP7D" />
         <child id="7830515785164764091" name="condition" index="avys_" />
+        <child id="7473026166162327259" name="dropAttrubuteRule" index="CYSdJ" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
       </concept>
@@ -131,6 +130,9 @@
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
+      </concept>
+      <concept id="7473026166162297915" name="jetbrains.mps.lang.generator.structure.DropAttributeRule" flags="lg" index="CY16f">
+        <reference id="7473026166162297918" name="applicableConcept" index="CY16a" />
       </concept>
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
@@ -217,8 +219,8 @@
         <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -323,9 +325,11 @@
           <node concept="2OqwBi" id="5OLOS2sRbci" role="3cqZAk">
             <node concept="2OqwBi" id="5OLOS2sRbv$" role="2Oq$k0">
               <node concept="1PxgMI" id="5OLOS2sRb5y" role="2Oq$k0">
-                <ref role="1m5ApE" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
                 <node concept="37vLTw" id="5OLOS2sRrsu" role="1m5AlR">
                   <ref role="3cqZAo" node="5OLOS2sRcQ6" resolve="rc" />
+                </node>
+                <node concept="chp4Y" id="5CkU_dHkz0N" role="3oSUPX">
+                  <ref role="cht4Q" to="97v6:5OLOS2sQlgV" resolve="ACSLContractsGenerationConfigItem" />
                 </node>
               </node>
               <node concept="3TrEf2" id="5OLOS2sRbBW" role="2OqNvi">
@@ -395,8 +399,8 @@
                       <node concept="3clFbS" id="2VCuTRcmtzo" role="2VODD2">
                         <node concept="3clFbF" id="2VCuTRcmtzp" role="3cqZAp">
                           <node concept="2OqwBi" id="2VCuTRcmtzq" role="3clFbG">
-                            <node concept="3TrEf2" id="2VCuTRcmtzr" role="2OqNvi">
-                              <ref role="3Tt5mk" to="pyey:637qsduSbtq" resolve="exp" />
+                            <node concept="3TrEf2" id="4bJgjtOxc6" role="2OqNvi">
+                              <ref role="3Tt5mk" to="97v6:4bJgjtNtez" resolve="exp" />
                             </node>
                             <node concept="30H73N" id="2VCuTRcmtzs" role="2Oq$k0" />
                           </node>
@@ -550,8 +554,8 @@
                       <node concept="3clFbS" id="2VCuTRcm_FJ" role="2VODD2">
                         <node concept="3clFbF" id="2VCuTRcm_FK" role="3cqZAp">
                           <node concept="2OqwBi" id="2VCuTRcm_FL" role="3clFbG">
-                            <node concept="3TrEf2" id="2VCuTRcm_FM" role="2OqNvi">
-                              <ref role="3Tt5mk" to="pyey:637qsduSbtq" resolve="exp" />
+                            <node concept="3TrEf2" id="4bJgjtOy5B" role="2OqNvi">
+                              <ref role="3Tt5mk" to="97v6:4bJgjtNtez" resolve="exp" />
                             </node>
                             <node concept="30H73N" id="2VCuTRcm_FN" role="2Oq$k0" />
                           </node>
@@ -675,10 +679,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="3aamgX" id="7PLQ5$qaDOg" role="3acgRq">
-      <ref role="30HIoZ" to="97v6:3i$cQqpAZ4J" resolve="FunctionContract" />
-      <node concept="b5Tf3" id="7PLQ5$qaN91" role="1lVwrX" />
     </node>
     <node concept="3aamgX" id="7PLQ5$qaN__" role="3acgRq">
       <ref role="30HIoZ" to="97v6:3i$cQqpAZi1" resolve="Requires" />
@@ -825,6 +825,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="CY16f" id="68RlEeX4K7y" role="CYSdJ">
+      <ref role="CY16a" to="97v6:3i$cQqpAZ4J" resolve="FunctionContract" />
     </node>
   </node>
 </model>

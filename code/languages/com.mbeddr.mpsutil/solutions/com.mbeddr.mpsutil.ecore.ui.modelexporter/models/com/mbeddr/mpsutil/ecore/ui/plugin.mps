@@ -2,8 +2,8 @@
 <model ref="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
@@ -14,7 +14,6 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="jlyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.filechooser(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="ghn0" ref="r:e825f101-d38e-41ea-a0c1-6650f91e22f7(com.mbeddr.mpsutil.ecore.runtime.main)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="hu10" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.common.util(com.mbeddr.mpsutil.ecore.stubs/)" />
@@ -29,6 +28,7 @@
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="rpb" ref="r:1764e886-bde7-4513-8b69-527af62b45d0(com.mbeddr.mpsutil.ecoreimporter.runtime.importerruntime)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -48,6 +48,8 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="1204991940915" name="caption" index="2f7twF" />
+        <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -193,6 +195,12 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
@@ -326,12 +334,12 @@
             <node concept="3cpWs8" id="60d$i5slz$i" role="3cqZAp">
               <node concept="3cpWsn" id="60d$i5slz$j" role="3cpWs9">
                 <property role="TrG5h" value="fileImporter" />
-                <node concept="3uibUv" id="60d$i5slz$k" role="1tU5fm">
-                  <ref role="3uigEE" to="ghn0:1a1uQDXH2Rp" resolve="EcoreFileImporter" />
+                <node concept="3uibUv" id="1SbcsM_VtD7" role="1tU5fm">
+                  <ref role="3uigEE" to="rpb:1a1uQDXH2Rp" resolve="EcoreFileImporter" />
                 </node>
                 <node concept="2ShNRf" id="60d$i5slzDh" role="33vP2m">
                   <node concept="1pGfFk" id="60d$i5sl$1u" role="2ShVmc">
-                    <ref role="37wK5l" to="ghn0:60d$i5slx2z" resolve="EcoreFileImporter" />
+                    <ref role="37wK5l" to="rpb:60d$i5slx2z" resolve="EcoreFileImporter" />
                     <node concept="37vLTw" id="60d$i5sl$4s" role="37wK5m">
                       <ref role="3cqZAo" node="6TiIOkR_S7r" resolve="currModel" />
                     </node>
@@ -348,7 +356,7 @@
                   <ref role="3cqZAo" node="60d$i5slz$j" resolve="fileImporter" />
                 </node>
                 <node concept="liA8E" id="60d$i5sl$E2" role="2OqNvi">
-                  <ref role="37wK5l" to="ghn0:60d$i5slwrM" resolve="importEcoreModelFile" />
+                  <ref role="37wK5l" to="rpb:60d$i5slwrM" resolve="importEcoreModelFile" />
                 </node>
               </node>
             </node>
@@ -548,11 +556,11 @@
               <node concept="3cpWsn" id="57zF9H8MFcn" role="3cpWs9">
                 <property role="TrG5h" value="exporter" />
                 <node concept="3uibUv" id="57zF9H8MFco" role="1tU5fm">
-                  <ref role="3uigEE" to="ghn0:6TiIOkRA6CP" resolve="EcoreModelExporter" />
+                  <ref role="3uigEE" to="rpb:6TiIOkRA6CP" resolve="EcoreModelExporter" />
                 </node>
                 <node concept="2ShNRf" id="57zF9H8MFhd" role="33vP2m">
                   <node concept="1pGfFk" id="57zF9H8MJ$V" role="2ShVmc">
-                    <ref role="37wK5l" to="ghn0:6TiIOkRA6D2" resolve="EcoreModelExporter" />
+                    <ref role="37wK5l" to="rpb:6TiIOkRA6D2" resolve="EcoreModelExporter" />
                     <node concept="37vLTw" id="57zF9H8MJBT" role="37wK5m">
                       <ref role="3cqZAo" node="1a1uQDXH4Ig" resolve="currModel" />
                     </node>
@@ -580,7 +588,7 @@
                   <ref role="3cqZAo" node="57zF9H8MFcn" resolve="exporter" />
                 </node>
                 <node concept="liA8E" id="57zF9H8N5xh" role="2OqNvi">
-                  <ref role="37wK5l" to="ghn0:6TiIOkRA6CX" resolve="exportEcoreModel" />
+                  <ref role="37wK5l" to="rpb:6TiIOkRA6CX" resolve="exportEcoreModel" />
                 </node>
               </node>
             </node>
@@ -854,15 +862,20 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3SKdUt" id="177LIHsQzh8" role="3cqZAp">
+                  <node concept="3SKdUq" id="177LIHsQzha" role="3SKWNk">
+                    <property role="3SKdUp" value="TODO: Pass the project.repo" />
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="1I0RpYE8moX" role="3cqZAp">
                   <node concept="3cpWsn" id="1I0RpYE8moY" role="3cpWs9">
                     <property role="TrG5h" value="importer" />
                     <node concept="3uibUv" id="1I0RpYE8moZ" role="1tU5fm">
-                      <ref role="3uigEE" to="ghn0:6TiIOkRA79w" resolve="EcoreModelImporter" />
+                      <ref role="3uigEE" to="rpb:6TiIOkRA79w" resolve="EcoreModelImporter" />
                     </node>
                     <node concept="2ShNRf" id="1I0RpYE8mzq" role="33vP2m">
                       <node concept="1pGfFk" id="1I0RpYE8r46" role="2ShVmc">
-                        <ref role="37wK5l" to="ghn0:6TiIOkRA79Q" resolve="EcoreModelImporter" />
+                        <ref role="37wK5l" to="rpb:6TiIOkRA79Q" resolve="EcoreModelImporter" />
                         <node concept="37vLTw" id="2W468ixhfmR" role="37wK5m">
                           <ref role="3cqZAo" node="6TiIOkRA2Sv" resolve="modelToImportInto" />
                         </node>
@@ -893,7 +906,7 @@
                       <ref role="3cqZAo" node="1I0RpYE8moY" resolve="importer" />
                     </node>
                     <node concept="liA8E" id="1I0RpYE8sK_" role="2OqNvi">
-                      <ref role="37wK5l" to="ghn0:6TiIOkRA79C" resolve="importEcoreModel" />
+                      <ref role="37wK5l" to="rpb:6TiIOkRA79C" resolve="importEcoreModel" />
                     </node>
                   </node>
                 </node>
@@ -1273,7 +1286,7 @@
   <node concept="sE7Ow" id="2CLKXjMmk70">
     <property role="TrG5h" value="exportEcoreModelAction" />
     <property role="2uzpH1" value="Export Ecore Model (mps model to xml file)" />
-    <property role="ngHcd" value="X" />
+    <property role="ngHcd" value="x" />
     <node concept="tnohg" id="2CLKXjMmk71" role="tncku">
       <node concept="3clFbS" id="2CLKXjMmk72" role="2VODD2">
         <node concept="3clFbF" id="57zF9H8KUfk" role="3cqZAp">
@@ -1297,28 +1310,24 @@
       <node concept="H_c77" id="WAKHA7Eyff" role="1tU5fm" />
     </node>
   </node>
-  <node concept="tC5Ba" id="2CLKXjMmszp">
-    <property role="TrG5h" value="exportModelActionGroup" />
-    <node concept="ftmFs" id="2CLKXjMmsz_" role="ftER_">
-      <node concept="tCFHf" id="2CLKXjMmszC" role="ftvYc">
-        <ref role="tCJdB" node="2CLKXjMmk70" resolve="exportEcoreModelAction" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="2CLKXjMmya8" role="2f5YQi">
-      <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
-      <ref role="2f8Tey" to="tprs:1ePK2dvwshF" resolve="newActions" />
-    </node>
-  </node>
   <node concept="tC5Ba" id="6TiIOkR_RTk">
-    <property role="TrG5h" value="importActionGroup" />
+    <property role="TrG5h" value="ecoreActionGroup" />
+    <property role="1XlLyE" value="true" />
+    <property role="2f7twF" value="Ecore Transformation Tools" />
     <node concept="ftmFs" id="6TiIOkR_RTl" role="ftER_">
       <node concept="tCFHf" id="6TiIOkR_RTm" role="ftvYc">
         <ref role="tCJdB" node="6TiIOkR_RTo" resolve="importEcoreAction" />
       </node>
+      <node concept="tCFHf" id="7KEx7AKbw1D" role="ftvYc">
+        <ref role="tCJdB" node="2CLKXjMmk70" resolve="exportEcoreModelAction" />
+      </node>
+      <node concept="tCFHf" id="7KEx7AKbw1L" role="ftvYc">
+        <ref role="tCJdB" node="6TiIOkR_Sie" resolve="importEcoreModelAction" />
+      </node>
     </node>
     <node concept="tT9cl" id="6TiIOkR_RTn" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
-      <ref role="2f8Tey" to="tprs:1ePK2dvwshF" resolve="newActions" />
+      <ref role="2f8Tey" to="tprs:hMfehyW" resolve="refactoring" />
     </node>
   </node>
   <node concept="sE7Ow" id="6TiIOkR_RTo">
@@ -1406,18 +1415,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="tC5Ba" id="6TiIOkR_Sih">
-    <property role="TrG5h" value="importModelActionGroup" />
-    <node concept="ftmFs" id="6TiIOkR_Sii" role="ftER_">
-      <node concept="tCFHf" id="6TiIOkR_Sij" role="ftvYc">
-        <ref role="tCJdB" node="6TiIOkR_Sie" resolve="importEcoreModelAction" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="6TiIOkR_Sik" role="2f5YQi">
-      <ref role="2f8Tey" to="tprs:1ePK2dvwshF" resolve="newActions" />
-      <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
     </node>
   </node>
 </model>
