@@ -11,6 +11,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
+    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -773,6 +774,23 @@
     <property role="TrG5h" value="LocalClassVarRef" />
     <property role="R4oN_" value="Override LocalVarRef on classes only. Used for operator overloading." />
     <ref role="1TJDcQ" to="c4fa:1OcdQnyStpU" resolve="LocalVarRef" />
+  </node>
+  <node concept="AxPO7" id="3CCyXivS5dy">
+    <property role="3GE5qa" value="operator" />
+    <property role="TrG5h" value="EOperatorType" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="3CCyXivS5dz" role="M5hS2">
+      <property role="1uS6qv" value="0" />
+      <property role="1uS6qo" value="Binary" />
+    </node>
+    <node concept="M4N5e" id="3CCyXivS5d$" role="M5hS2">
+      <property role="1uS6qv" value="1" />
+      <property role="1uS6qo" value="PrePostfix" />
+    </node>
+    <node concept="M4N5e" id="3CCyXiw92mb" role="M5hS2">
+      <property role="1uS6qv" value="2" />
+      <property role="1uS6qo" value="ArrayAccess" />
+    </node>
   </node>
 </model>
 
