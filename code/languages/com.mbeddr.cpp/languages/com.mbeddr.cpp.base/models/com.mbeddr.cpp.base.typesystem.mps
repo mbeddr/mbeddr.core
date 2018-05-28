@@ -4561,15 +4561,6 @@
                 </node>
               </node>
               <node concept="3clFbH" id="3CCyXivPU0V" role="3cqZAp" />
-              <node concept="3cpWs8" id="3CCyXivPU0W" role="3cqZAp">
-                <node concept="3cpWsn" id="3CCyXivPU0X" role="3cpWs9">
-                  <property role="TrG5h" value="valid" />
-                  <node concept="10P_77" id="3CCyXivPU0Y" role="1tU5fm" />
-                  <node concept="3clFbT" id="3CCyXivPU0Z" role="33vP2m">
-                    <property role="3clFbU" value="false" />
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs8" id="3CCyXivPU10" role="3cqZAp">
                 <node concept="3cpWsn" id="3CCyXivPU11" role="3cpWs9">
                   <property role="TrG5h" value="_operator" />
