@@ -453,6 +453,43 @@
       <node concept="3Tm1VV" id="4QICnJ5H2$N" role="1B3o_S" />
       <node concept="10P_77" id="4QICnJ5H2z8" role="3clF45" />
     </node>
+    <node concept="3clFb_" id="3dJ0eUbD8vS" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isDataProvider" />
+      <node concept="3clFbS" id="3dJ0eUbD8vV" role="3clF47" />
+      <node concept="3Tm1VV" id="3dJ0eUbD8vW" role="1B3o_S" />
+      <node concept="10P_77" id="3dJ0eUbD8u9" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="3dJ0eUbDaTz" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getData" />
+      <node concept="3clFbS" id="3dJ0eUbDaTA" role="3clF47" />
+      <node concept="3Tm1VV" id="3dJ0eUbDaTB" role="1B3o_S" />
+      <node concept="3uibUv" id="3dJ0eUbDaR_" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="37vLTG" id="3dJ0eUbDaYJ" role="3clF46">
+        <property role="TrG5h" value="dataId" />
+        <node concept="17QB3L" id="3dJ0eUbDaYI" role="1tU5fm" />
+        <node concept="2AHcQZ" id="3dJ0eUbL3RD" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3dJ0eUbHj_Z" role="3clF46">
+        <property role="TrG5h" value="view" />
+        <node concept="3uibUv" id="3dJ0eUbHjFJ" role="1tU5fm">
+          <ref role="3uigEE" to="uhdf:2ZGhpRfcKKF" resolve="CustomProjectView" />
+        </node>
+        <node concept="2AHcQZ" id="3dJ0eUbL3U7" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3dJ0eUbL3P5" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="3ZnFyBjtwPx" role="1B3o_S" />
   </node>
   <node concept="3HP615" id="3ZnFyBjtwWN">
@@ -3166,6 +3203,48 @@
       </node>
       <node concept="3Tm1VV" id="4QICnJ5GLgv" role="1B3o_S" />
       <node concept="10P_77" id="4QICnJ5GLmt" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="3dJ0eUbGh6Y" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isDataProvider" />
+      <node concept="3Tm1VV" id="3dJ0eUbGh70" role="1B3o_S" />
+      <node concept="10P_77" id="3dJ0eUbGh71" role="3clF45" />
+      <node concept="3clFbS" id="3dJ0eUbGh72" role="3clF47">
+        <node concept="3clFbF" id="3dJ0eUbGh75" role="3cqZAp">
+          <node concept="3clFbT" id="3dJ0eUbGh74" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3dJ0eUbGh73" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="3dJ0eUbGh76" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getData" />
+      <node concept="3Tm1VV" id="3dJ0eUbGh78" role="1B3o_S" />
+      <node concept="3uibUv" id="3dJ0eUbGh79" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="37vLTG" id="3dJ0eUbGh7a" role="3clF46">
+        <property role="TrG5h" value="dataId" />
+        <node concept="17QB3L" id="3dJ0eUbGh7b" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3dJ0eUbHCoo" role="3clF46">
+        <property role="TrG5h" value="view" />
+        <node concept="3uibUv" id="3dJ0eUbHCCj" role="1tU5fm">
+          <ref role="3uigEE" to="uhdf:2ZGhpRfcKKF" resolve="CustomProjectView" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3dJ0eUbGh7c" role="3clF47">
+        <node concept="3clFbF" id="3dJ0eUbGh7f" role="3cqZAp">
+          <node concept="10Nm6u" id="3dJ0eUbGh7e" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3dJ0eUbGh7d" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3ZnFyBjv9UY">
