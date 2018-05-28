@@ -147,6 +147,9 @@
         <child id="1205761991995" name="argumentRepresentator" index="2X0Ygz" />
       </concept>
       <concept id="1177406296561" name="jetbrains.mps.lang.typesystem.structure.IsStrongSubtypeExpression" flags="nn" index="yS_3z" />
+      <concept id="1224760201579" name="jetbrains.mps.lang.typesystem.structure.InfoStatement" flags="nn" index="Dpp1Q">
+        <child id="1224760230762" name="infoText" index="Dpw9R" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -4114,6 +4117,45 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="3CCyXivPhaD">
+    <property role="3GE5qa" value="operator" />
+    <property role="TrG5h" value="check_ThreeWayOperatorDefinition" />
+    <node concept="3clFbS" id="3CCyXivPhaE" role="18ibNy">
+      <node concept="3clFbJ" id="3CCyXivPhaT" role="3cqZAp">
+        <node concept="2OqwBi" id="3CCyXivPiUL" role="3clFbw">
+          <node concept="2OqwBi" id="3CCyXivPhwo" role="2Oq$k0">
+            <node concept="1YBJjd" id="3CCyXivPhb8" role="2Oq$k0">
+              <ref role="1YBMHb" node="3CCyXivPhaG" resolve="dec" />
+            </node>
+            <node concept="3TrcHB" id="3CCyXivPi35" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:3LE5RBQoIf8" resolve="operator" />
+            </node>
+          </node>
+          <node concept="liA8E" id="3CCyXivPj$y" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+            <node concept="3f7Wdw" id="3CCyXivPj_L" role="37wK5m">
+              <ref role="3f7vo2" to="wnzg:45rBLTH8Vrc" resolve="EOverloadableOperator" />
+              <ref role="3f7u_j" to="wnzg:45rBLTHELt7" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="3CCyXivPhaV" role="3clFbx">
+          <node concept="Dpp1Q" id="3CCyXivPk1L" role="3cqZAp">
+            <node concept="Xl_RD" id="3CCyXivPk26" role="Dpw9R">
+              <property role="Xl_RC" value="In order to override &lt;=&gt;, you must compile with the C++20 standard." />
+            </node>
+            <node concept="1YBJjd" id="3CCyXivPk4j" role="2OEOjV">
+              <ref role="1YBMHb" node="3CCyXivPhaG" resolve="dec" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3CCyXivPhaG" role="1YuTPh">
+      <property role="TrG5h" value="dec" />
+      <ref role="1YaFvo" to="wnzg:3LE5RBPQ$rY" resolve="OperatorOverloadDeclaration" />
     </node>
   </node>
 </model>
