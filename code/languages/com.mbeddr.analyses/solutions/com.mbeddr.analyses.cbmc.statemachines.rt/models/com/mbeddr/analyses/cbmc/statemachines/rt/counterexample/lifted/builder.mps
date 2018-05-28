@@ -4,7 +4,7 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
@@ -455,6 +455,26 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="3B_Hr1E8JMC" role="3cqZAp">
+          <node concept="3clFbS" id="3B_Hr1E8JMD" role="3clFbx">
+            <node concept="3cpWs6" id="3B_Hr1E8JME" role="3cqZAp">
+              <node concept="3clFbT" id="3B_Hr1E8JMF" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3B_Hr1E8JMG" role="3clFbw">
+            <node concept="37vLTw" id="3B_Hr1E8JMH" role="2Oq$k0">
+              <ref role="3cqZAo" node="1fLSIrNnUNM" resolve="fullLHS" />
+            </node>
+            <node concept="liA8E" id="3B_Hr1E8JMI" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <node concept="Xl_RD" id="3B_Hr1E8JMJ" role="37wK5m">
+                <property role="Xl_RC" value="__isEpsilonEvent" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="4arT0cnseFV" role="3cqZAp">
           <node concept="3clFbS" id="4arT0cnseFW" role="3clFbx">
             <node concept="3cpWs6" id="4arT0cnseFX" role="3cqZAp">
@@ -522,6 +542,32 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="3B_Hr1E9wZD" role="3cqZAp">
+          <node concept="3clFbS" id="3B_Hr1E9wZE" role="3clFbx">
+            <node concept="3cpWs6" id="3B_Hr1E9wZF" role="3cqZAp">
+              <node concept="3clFbT" id="3B_Hr1E9wZG" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3B_Hr1E9wZH" role="3clFbw">
+            <node concept="liA8E" id="3B_Hr1E9wZJ" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <node concept="Xl_RD" id="3B_Hr1E9wZK" role="37wK5m">
+                <property role="Xl_RC" value="__isEpsilonEvent" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3B_Hr1E9zi6" role="2Oq$k0">
+              <node concept="37vLTw" id="3B_Hr1E9zi7" role="2Oq$k0">
+                <ref role="3cqZAo" node="4arT0cnseGi" resolve="crtState" />
+              </node>
+              <node concept="liA8E" id="3B_Hr1E9zi8" role="2OqNvi">
+                <ref role="37wK5l" to="rbq9:WwTuEsr2_k" resolve="getFullLHS" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3B_Hr1E9uTu" role="3cqZAp" />
         <node concept="3clFbF" id="4arT0cnseGf" role="3cqZAp">
           <node concept="3clFbT" id="4arT0cnseGg" role="3clFbG" />
         </node>

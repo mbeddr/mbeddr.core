@@ -2,7 +2,7 @@
 <model ref="r:bbb96e37-f8e8-4936-a0a1-5ee128c2ea4f(com.mbeddr.mpsutil.inca.gp.test.plugin@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="cd2909da-ecb4-49dc-b176-33e5c619e516" name="com.mbeddr.mpsutil.inca.gp" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
@@ -195,7 +195,7 @@
       <concept id="996292992025672789" name="com.mbeddr.mpsutil.inca.core.structure.ConceptReferenceType" flags="ng" index="2kdjtB">
         <reference id="7241148409041409499" name="concept" index="2UGuZ7" />
       </concept>
-      <concept id="2211219148064574482" name="com.mbeddr.mpsutil.inca.core.structure.RuntimeJoinType" flags="ig" index="2ugpwb">
+      <concept id="2211219148064574482" name="com.mbeddr.mpsutil.inca.core.structure.JoinSNodeType" flags="ig" index="2ugpwb">
         <reference id="2211219148064590714" name="joinTypeDef" index="2uglXz" />
       </concept>
       <concept id="2281067221947980594" name="com.mbeddr.mpsutil.inca.core.structure.VariableReference" flags="ng" index="2vme6Z">

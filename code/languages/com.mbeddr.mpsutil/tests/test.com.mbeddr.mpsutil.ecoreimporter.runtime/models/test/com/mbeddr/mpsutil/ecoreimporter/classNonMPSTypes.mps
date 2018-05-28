@@ -2,19 +2,19 @@
 <model ref="r:eaa88d19-3d7d-4ad7-8501-ce8f218af3df(test.com.mbeddr.mpsutil.ecoreimporter.classNonMPSTypes)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecoreimporter.util" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
+    <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecore" version="0" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
-    <language id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecoreimporter.util">
-      <concept id="2995083582054649822" name="com.mbeddr.mpsutil.ecoreimporter.util.structure.EMFDataTypeAnnotation" flags="ng" index="tq6dS">
+    <language id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecore">
+      <concept id="2995083582054649822" name="com.mbeddr.mpsutil.ecore.structure.EMFDataTypeAnnotation" flags="ng" index="tq6dS">
         <child id="2995083582054780911" name="type" index="tqAd9" />
       </concept>
-      <concept id="2995083582054930506" name="com.mbeddr.mpsutil.ecoreimporter.util.structure.EDiagnosticChain" flags="ng" index="trrjG" />
-      <concept id="2995083582054930518" name="com.mbeddr.mpsutil.ecoreimporter.util.structure.EFeatureMapEntry" flags="ng" index="trrjK" />
+      <concept id="2995083582054930506" name="com.mbeddr.mpsutil.ecore.structure.EDiagnosticChain" flags="ng" index="trrjG" />
+      <concept id="2995083582054930518" name="com.mbeddr.mpsutil.ecore.structure.EFeatureMapEntry" flags="ng" index="trrjK" />
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">

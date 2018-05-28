@@ -2,8 +2,7 @@
 <model ref="r:14aaaa43-c0d7-4384-a538-365180ca16b3(com.mbeddr.cc.var.composition.c.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
     <import index="xr8g" ref="r:a34fe219-429e-4501-bb74-7bfdd6e6bfc5(com.mbeddr.cc.var.composition.c.structure)" />
@@ -31,6 +30,11 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
@@ -151,6 +155,44 @@
             <node concept="1mIQ4w" id="79i$vAY7ixH" role="2OqNvi">
               <node concept="chp4Y" id="79i$vAY7ixI" role="cj9EA">
                 <ref role="cht4Q" to="xr8g:5B$wwdfboEI" resolve="FunctionMatcher" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="12n15PAd47x">
+    <property role="3GE5qa" value="function_calls" />
+    <ref role="1M2myG" to="xr8g:12n15PAd47h" resolve="ReplaceCall" />
+    <node concept="9S07l" id="12n15PAd47y" role="9Vyp8">
+      <node concept="3clFbS" id="12n15PAd47z" role="2VODD2">
+        <node concept="3clFbF" id="12n15PAd4eK" role="3cqZAp">
+          <node concept="1Wc70l" id="12n15PAd6c_" role="3clFbG">
+            <node concept="2OqwBi" id="12n15PAd91T" role="3uHU7w">
+              <node concept="2OqwBi" id="12n15PAd7Xh" role="2Oq$k0">
+                <node concept="1PxgMI" id="12n15PAd7nM" role="2Oq$k0">
+                  <node concept="chp4Y" id="12n15PAd7AV" role="3oSUPX">
+                    <ref role="cht4Q" to="11rw:3YyHFqO5xUb" resolve="MatchAnnotation" />
+                  </node>
+                  <node concept="nLn13" id="12n15PAdpSR" role="1m5AlR" />
+                </node>
+                <node concept="3TrEf2" id="12n15PAd8xw" role="2OqNvi">
+                  <ref role="3Tt5mk" to="11rw:3YyHFqO5xVY" resolve="matchStrategy" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="12n15PAd9ro" role="2OqNvi">
+                <node concept="chp4Y" id="12n15PAd9Ij" role="cj9EA">
+                  <ref role="cht4Q" to="xr8g:12n15PAcvwN" resolve="FunctionCallsMatcher" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="12n15PAd58h" role="3uHU7B">
+              <node concept="nLn13" id="12n15PAdpoz" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="12n15PAd5pF" role="2OqNvi">
+                <node concept="chp4Y" id="12n15PAd5DI" role="cj9EA">
+                  <ref role="cht4Q" to="11rw:3YyHFqO5xUb" resolve="MatchAnnotation" />
+                </node>
               </node>
             </node>
           </node>

@@ -2,7 +2,7 @@
 <model ref="r:cda59b28-30ad-4e78-992e-f2596e438a60(test.com.mbeddr.mpsutil.ecoreimporter.emptyClass)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
   </languages>
   <imports />
   <registry>

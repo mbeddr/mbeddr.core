@@ -5,7 +5,7 @@
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
-    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
+    <import index="ntnz" ref="r:7f372397-146b-40d5-9f20-607974c4fed4(com.mbeddr.tutorial.documentation.ug._main)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -63,7 +63,7 @@
     <property role="yApLE" value="1" />
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="A_Efficiency" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="2F6NgTee$3N" role="1_0VJ0">
       <property role="TrG5h" value="efficiency" />
       <property role="1_0VJr" value="Efficiency" />
@@ -124,7 +124,7 @@
     <property role="yApLE" value="1" />
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="B_Readability" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="2F6NgTee$5Y" role="1_0VJ0">
       <property role="TrG5h" value="readability" />
       <property role="1_0VJr" value="Readability" />
@@ -200,7 +200,7 @@
   <node concept="1_1swa" id="1ig5EljjfWv">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_GeneratedCode" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1ig5Eljl80E" role="1_0VJ0">
       <property role="TrG5h" value="generatedCode" />
       <property role="1_0VJr" value="Generated Code" />

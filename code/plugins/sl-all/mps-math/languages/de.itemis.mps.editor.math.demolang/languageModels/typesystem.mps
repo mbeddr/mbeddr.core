@@ -3,8 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="96v7" ref="r:f92b813d-c86e-400b-bec8-065f793ac96a(de.itemis.mps.editor.math.demolang.structure)" implicit="true" />
@@ -74,7 +73,7 @@
                 <ref role="1YBMHb" node="9L22EpByx8" resolve="sum" />
               </node>
               <node concept="3TrEf2" id="9L22EpBz_v" role="2OqNvi">
-                <ref role="3Tt5mk" to="96v7:9L22EoXBFv" />
+                <ref role="3Tt5mk" to="96v7:9L22EoXBFv" resolve="body" />
               </node>
             </node>
           </node>
@@ -135,7 +134,7 @@
                 <ref role="1YBMHb" node="70CVChR73ZX" resolve="division" />
               </node>
               <node concept="3TrEf2" id="70CVChR7de8" role="2OqNvi">
-                <ref role="3Tt5mk" to="96v7:70CVChR5NQa" />
+                <ref role="3Tt5mk" to="96v7:70CVChR5NQa" resolve="upper" />
               </node>
             </node>
           </node>
@@ -158,7 +157,7 @@
                 <ref role="1YBMHb" node="CZjRlGpy_A" resolve="power" />
               </node>
               <node concept="3TrEf2" id="CZjRlGpzId" role="2OqNvi">
-                <ref role="3Tt5mk" to="96v7:19RCnNmEsOh" />
+                <ref role="3Tt5mk" to="96v7:19RCnNmEsOh" resolve="base" />
               </node>
             </node>
           </node>
@@ -211,7 +210,7 @@
                 <ref role="1YBMHb" node="7wCpClEBFZD" resolve="abs" />
               </node>
               <node concept="3TrEf2" id="7wCpClEBH7E" role="2OqNvi">
-                <ref role="3Tt5mk" to="96v7:7wCpClExJMO" />
+                <ref role="3Tt5mk" to="96v7:7wCpClExJMO" resolve="body" />
               </node>
             </node>
           </node>
@@ -264,7 +263,7 @@
                 <ref role="1YBMHb" node="7wCpClF96S2" resolve="parentheses" />
               </node>
               <node concept="3TrEf2" id="7wCpClF97zD" role="2OqNvi">
-                <ref role="3Tt5mk" to="96v7:7wCpClF96RP" />
+                <ref role="3Tt5mk" to="96v7:7wCpClF96RP" resolve="body" />
               </node>
             </node>
           </node>
@@ -294,7 +293,7 @@
                 <ref role="1YBMHb" node="7wCpClFjfkg" resolve="squareBrackets" />
               </node>
               <node concept="3TrEf2" id="7wCpClFjgtv" role="2OqNvi">
-                <ref role="3Tt5mk" to="96v7:7wCpClFhLUC" />
+                <ref role="3Tt5mk" to="96v7:7wCpClFhLUC" resolve="body" />
               </node>
             </node>
           </node>
@@ -324,7 +323,7 @@
                 <ref role="1YBMHb" node="7wCpClFl2c8" resolve="curlyBrackets" />
               </node>
               <node concept="3TrEf2" id="7wCpClFl3k9" role="2OqNvi">
-                <ref role="3Tt5mk" to="96v7:7wCpClFl2iB" />
+                <ref role="3Tt5mk" to="96v7:7wCpClFl2iB" resolve="body" />
               </node>
             </node>
           </node>
@@ -377,7 +376,7 @@
                 <ref role="1YBMHb" node="73f6OzXD6Qs" resolve="vector" />
               </node>
               <node concept="3TrEf2" id="73f6OzXD7Im" role="2OqNvi">
-                <ref role="3Tt5mk" to="96v7:73f6OzXxOZS" />
+                <ref role="3Tt5mk" to="96v7:73f6OzXxOZS" resolve="body" />
               </node>
             </node>
           </node>

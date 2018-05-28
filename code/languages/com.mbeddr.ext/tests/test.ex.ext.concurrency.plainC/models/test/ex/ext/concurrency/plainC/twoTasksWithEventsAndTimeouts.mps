@@ -262,7 +262,7 @@
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
       <property role="2AWWZI" value="-std=c99 -I/usr/include" />
-      <property role="1FkSt$" value="-g " />
+      <property role="1FkSt$" value="-g  -I/usr/include/" />
       <property role="3I8uaA" value="" />
       <node concept="3abb7c" id="4LhGMnjpR5g" role="3anu1O">
         <property role="TrG5h" value="Win32" />
@@ -309,7 +309,7 @@
       </node>
     </node>
     <node concept="12mU2y" id="5B69dDbeJ_f" role="2Q9xDr">
-      <node concept="3GpDuo" id="5B69dDbeJ_g" role="3GpDut" />
+      <node concept="3GpDuo" id="4ctEUnyrJaF" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="6bs538lKHvH">

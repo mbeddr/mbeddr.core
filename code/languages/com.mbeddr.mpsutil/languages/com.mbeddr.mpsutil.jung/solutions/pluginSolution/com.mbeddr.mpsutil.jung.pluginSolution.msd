@@ -23,7 +23,6 @@
     <stubModelEntry path="${module}/lib/jung-jai-samples-2.0.1.jar" />
     <stubModelEntry path="${module}/lib/jung-samples-2.0.1.jar" />
     <stubModelEntry path="${module}/lib/jung-visualization-2.0.1.jar" />
-    <stubModelEntry path="${module}/lib/stax-api-1.0.1.jar" />
     <stubModelEntry path="${module}/lib/vecmath-1.3.1.jar" />
     <stubModelEntry path="${module}/lib/wstx-asl-3.2.6.jar" />
   </stubModelEntries>

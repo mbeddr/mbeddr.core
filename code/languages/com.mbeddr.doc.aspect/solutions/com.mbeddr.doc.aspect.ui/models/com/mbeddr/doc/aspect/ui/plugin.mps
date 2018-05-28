@@ -2,17 +2,17 @@
 <model ref="r:08379c44-00e6-4e72-bdd5-59b9f1f8468b(com.mbeddr.doc.aspect.ui.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
@@ -2603,6 +2603,25 @@
               <node concept="2WthIp" id="7r8qu42xM6J" role="2Oq$k0" />
               <node concept="2BZ7hE" id="7r8qu42xMhz" role="2OqNvi">
                 <ref role="2WH_rO" node="7r8qu42xp1O" resolve="nodeDocEditor" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6lu2bgTp$OZ" role="3cqZAp">
+          <node concept="3SKdUq" id="6lu2bgTp$P1" role="3SKWNk">
+            <property role="3SKdUp" value="there are scenarios where node doc viewer might need to have presentation mode enabled as well" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6lu2bgTpveJ" role="3cqZAp">
+          <node concept="2OqwBi" id="6lu2bgTpveK" role="3clFbG">
+            <node concept="2WthIp" id="6lu2bgTpveL" role="2Oq$k0" />
+            <node concept="2XshWL" id="6lu2bgTpveM" role="2OqNvi">
+              <ref role="2WH_rO" node="1KDc5EfHWG0" resolve="addPresentationModeHint" />
+              <node concept="2OqwBi" id="6lu2bgTpveN" role="2XxRq1">
+                <node concept="2WthIp" id="6lu2bgTpveO" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="6lu2bgTpwgT" role="2OqNvi">
+                  <ref role="2WH_rO" node="7r8qu42xp1O" resolve="nodeDocEditor" />
+                </node>
               </node>
             </node>
           </node>

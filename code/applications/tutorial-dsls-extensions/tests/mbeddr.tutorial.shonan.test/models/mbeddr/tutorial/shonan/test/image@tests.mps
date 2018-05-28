@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="0" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
@@ -12,7 +12,7 @@
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="0" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="3" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="4" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="d00351b1-72a6-4072-aea2-5982add6bee4" name="mbeddr.tutorial.shonan" version="0" />
   </languages>
   <imports>
@@ -27,10 +27,6 @@
       </concept>
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
-      </concept>
-      <concept id="3779779187805893258" name="com.mbeddr.core.statements.structure.ForVarRef" flags="ng" index="uSsIJ">
-        <child id="3779779187805893261" name="init" index="uSsIC" />
-        <child id="3779779187805926915" name="var" index="uS$WA" />
       </concept>
       <concept id="1494329074535282918" name="com.mbeddr.core.statements.structure.ElsePart" flags="ng" index="1ly_i6">
         <child id="1494329074535283249" name="body" index="1ly_ph" />
@@ -2422,15 +2418,17 @@
           </node>
         </node>
         <node concept="3XISUE" id="17Z2wzk4OQQ" role="3XIRFZ" />
-        <node concept="1_a8vi" id="17Z2wzk4NEV" role="3XIRFZ">
-          <node concept="uSsIJ" id="17Z2wzk4NKr" role="1_amZ$">
-            <node concept="3TlMh9" id="17Z2wzk4NEY" role="uSsIC">
-              <property role="2hmy$m" value="1" />
-            </node>
-            <node concept="3ZVu4v" id="17Z2wzk4NLJ" role="uS$WA">
+        <node concept="1_9egQ" id="5V9QM6osdYe" role="3XIRFZ">
+          <node concept="3pqW6w" id="5V9QM6osdYf" role="1_9egR">
+            <node concept="3ZVu4v" id="5V9QM6osdYc" role="3TlMhI">
               <ref role="3ZVs_2" node="17Z2wzk4NBp" resolve="iter" />
             </node>
+            <node concept="3TlMh9" id="5V9QM6osdYd" role="3TlMhJ">
+              <property role="2hmy$m" value="1" />
+            </node>
           </node>
+        </node>
+        <node concept="1_a8vi" id="17Z2wzk4NEV" role="3XIRFZ">
           <node concept="3Tl9Jl" id="17Z2wzk4NF3" role="1_amZB">
             <node concept="3ZVu4v" id="17Z2wzk4NKs" role="3TlMhI">
               <ref role="3ZVs_2" node="17Z2wzk4NBp" resolve="iter" />
@@ -3654,15 +3652,17 @@
           <node concept="2EKWCn" id="6rrVAnc93UU" role="lGtFl" />
         </node>
         <node concept="3XISUE" id="7CyQZiZbbOp" role="3XIRFZ" />
-        <node concept="1_a8vi" id="39TGzx5xPKg" role="3XIRFZ">
-          <node concept="uSsIJ" id="39TGzx5xPKh" role="1_amZ$">
-            <node concept="3TlMh9" id="39TGzx5xPKi" role="uSsIC">
-              <property role="2hmy$m" value="1" />
-            </node>
-            <node concept="3ZVu4v" id="39TGzx5xPKj" role="uS$WA">
+        <node concept="1_9egQ" id="5V9QM6osdYi" role="3XIRFZ">
+          <node concept="3pqW6w" id="5V9QM6osdYj" role="1_9egR">
+            <node concept="3ZVu4v" id="5V9QM6osdYg" role="3TlMhI">
               <ref role="3ZVs_2" node="39TGzx5xPHW" resolve="iter" />
             </node>
+            <node concept="3TlMh9" id="5V9QM6osdYh" role="3TlMhJ">
+              <property role="2hmy$m" value="1" />
+            </node>
           </node>
+        </node>
+        <node concept="1_a8vi" id="39TGzx5xPKg" role="3XIRFZ">
           <node concept="3Tl9Jl" id="39TGzx5xPKk" role="1_amZB">
             <node concept="3ZVu4v" id="39TGzx5xPKl" role="3TlMhI">
               <ref role="3ZVs_2" node="39TGzx5xPHW" resolve="iter" />

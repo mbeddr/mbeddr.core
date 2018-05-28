@@ -2,8 +2,7 @@
 <model ref="r:d2f19bcb-b564-4514-8fa7-0185e11040cd(com.mbeddr.mpsutil.dependenciesdiagram.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="tpcj" ref="r:00000000-0000-4000-0000-011c8959028f(jetbrains.mps.lang.structure.typesystem)" />
@@ -103,7 +102,7 @@
                 <ref role="1YBMHb" node="6GbYcWova9U" resolve="dependenciesDiagram" />
               </node>
               <node concept="3Tsc0h" id="6GbYcWowdIm" role="2OqNvi">
-                <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" />
+                <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" resolve="modules" />
               </node>
             </node>
             <node concept="3zZkjj" id="6GbYcWowq2a" role="2OqNvi">
@@ -116,7 +115,7 @@
                           <ref role="1YBMHb" node="6GbYcWova9U" resolve="dependenciesDiagram" />
                         </node>
                         <node concept="3Tsc0h" id="6GbYcWowq2i" role="2OqNvi">
-                          <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" />
+                          <ref role="3TtcxE" to="pjld:6bKTjCNa4Mj" resolve="modules" />
                         </node>
                       </node>
                       <node concept="2HwmR7" id="6GbYcWowq2j" role="2OqNvi">
@@ -208,7 +207,7 @@
                 <ref role="1YBMHb" node="6GbYcWova9U" resolve="dependenciesDiagram" />
               </node>
               <node concept="3Tsc0h" id="6GbYcWoww01" role="2OqNvi">
-                <ref role="3TtcxE" to="pjld:6bKTjCNaIOY" />
+                <ref role="3TtcxE" to="pjld:6bKTjCNaIOY" resolve="models" />
               </node>
             </node>
             <node concept="3zZkjj" id="6GbYcWowv9j" role="2OqNvi">
@@ -221,7 +220,7 @@
                           <ref role="1YBMHb" node="6GbYcWova9U" resolve="dependenciesDiagram" />
                         </node>
                         <node concept="3Tsc0h" id="6GbYcWowwrn" role="2OqNvi">
-                          <ref role="3TtcxE" to="pjld:6bKTjCNaIOY" />
+                          <ref role="3TtcxE" to="pjld:6bKTjCNaIOY" resolve="models" />
                         </node>
                       </node>
                       <node concept="2HwmR7" id="6GbYcWowv9r" role="2OqNvi">

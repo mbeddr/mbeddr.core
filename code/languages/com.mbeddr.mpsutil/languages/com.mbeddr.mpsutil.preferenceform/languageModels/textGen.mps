@@ -2,8 +2,7 @@
 <model ref="r:1bf1ac25-6ce6-4a6d-acbc-2bd0b7275645(com.mbeddr.mpsutil.preferenceform.textGen)">
   <persistence version="9" />
   <languages>
-    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
     <import index="3iid" ref="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)" implicit="true" />
@@ -61,7 +60,7 @@
               <node concept="2OqwBi" id="1BL2OuqEUMC" role="2Oq$k0">
                 <node concept="117lpO" id="1BL2OuqEUJA" role="2Oq$k0" />
                 <node concept="3TrEf2" id="1BL2OuqEUZa" role="2OqNvi">
-                  <ref role="3Tt5mk" to="3iid:86yKXFY5Xj" />
+                  <ref role="3Tt5mk" to="3iid:86yKXFY5Xj" resolve="formProperty" />
                 </node>
               </node>
               <node concept="3TrcHB" id="1BL2OuqEVq_" role="2OqNvi">

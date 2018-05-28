@@ -23,6 +23,7 @@
     <import index="j8aq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.module(MPS.Core/)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="8m69" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor.markup(MPS.IDEA/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -2480,28 +2481,42 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2qSTDMxYAaB" role="3clF47">
-        <node concept="3cpWs6" id="2qSTDMxYAbr" role="3cqZAp">
-          <node concept="2OqwBi" id="2qSTDMxYAbs" role="3cqZAk">
-            <node concept="2OqwBi" id="2qSTDMxYAbt" role="2Oq$k0">
-              <node concept="2YIFZM" id="2qSTDMxYAbu" role="2Oq$k0">
-                <ref role="1Pybhc" to="drih:~EditorColorsManager" resolve="EditorColorsManager" />
-                <ref role="37wK5l" to="drih:~EditorColorsManager.getInstance():com.intellij.openapi.editor.colors.EditorColorsManager" resolve="getInstance" />
-              </node>
-              <node concept="liA8E" id="2qSTDMxYAbv" role="2OqNvi">
-                <ref role="37wK5l" to="drih:~EditorColorsManager.getGlobalScheme():com.intellij.openapi.editor.colors.EditorColorsScheme" resolve="getGlobalScheme" />
-              </node>
+        <node concept="3clFbJ" id="3whqaarNgRC" role="3cqZAp">
+          <node concept="3y3z36" id="3whqaarNLsg" role="3clFbw">
+            <node concept="10Nm6u" id="3whqaarNLOC" role="3uHU7w" />
+            <node concept="2YIFZM" id="3whqaarNGI8" role="3uHU7B">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
-            <node concept="liA8E" id="2qSTDMxYAbw" role="2OqNvi">
-              <ref role="37wK5l" to="drih:~TextAttributesScheme.getAttributes(com.intellij.openapi.editor.colors.TextAttributesKey):com.intellij.openapi.editor.markup.TextAttributes" resolve="getAttributes" />
-              <node concept="2YIFZM" id="2qSTDMxYAbx" role="37wK5m">
-                <ref role="1Pybhc" to="drih:~TextAttributesKey" resolve="TextAttributesKey" />
-                <ref role="37wK5l" to="drih:~TextAttributesKey.createTextAttributesKey(java.lang.String):com.intellij.openapi.editor.colors.TextAttributesKey" resolve="createTextAttributesKey" />
-                <node concept="37vLTw" id="2qSTDMxYAb_" role="37wK5m">
-                  <ref role="3cqZAo" node="2qSTDMxYAbz" resolve="key" />
+          </node>
+          <node concept="3clFbS" id="3whqaarNgRE" role="3clFbx">
+            <node concept="3cpWs6" id="2qSTDMxYAbr" role="3cqZAp">
+              <node concept="2OqwBi" id="2qSTDMxYAbs" role="3cqZAk">
+                <node concept="2OqwBi" id="2qSTDMxYAbt" role="2Oq$k0">
+                  <node concept="2YIFZM" id="2qSTDMxYAbu" role="2Oq$k0">
+                    <ref role="1Pybhc" to="drih:~EditorColorsManager" resolve="EditorColorsManager" />
+                    <ref role="37wK5l" to="drih:~EditorColorsManager.getInstance():com.intellij.openapi.editor.colors.EditorColorsManager" resolve="getInstance" />
+                  </node>
+                  <node concept="liA8E" id="2qSTDMxYAbv" role="2OqNvi">
+                    <ref role="37wK5l" to="drih:~EditorColorsManager.getGlobalScheme():com.intellij.openapi.editor.colors.EditorColorsScheme" resolve="getGlobalScheme" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="2qSTDMxYAbw" role="2OqNvi">
+                  <ref role="37wK5l" to="drih:~TextAttributesScheme.getAttributes(com.intellij.openapi.editor.colors.TextAttributesKey):com.intellij.openapi.editor.markup.TextAttributes" resolve="getAttributes" />
+                  <node concept="2YIFZM" id="2qSTDMxYAbx" role="37wK5m">
+                    <ref role="1Pybhc" to="drih:~TextAttributesKey" resolve="TextAttributesKey" />
+                    <ref role="37wK5l" to="drih:~TextAttributesKey.createTextAttributesKey(java.lang.String):com.intellij.openapi.editor.colors.TextAttributesKey" resolve="createTextAttributesKey" />
+                    <node concept="37vLTw" id="2qSTDMxYAb_" role="37wK5m">
+                      <ref role="3cqZAo" node="2qSTDMxYAbz" resolve="key" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
           </node>
+        </node>
+        <node concept="3cpWs6" id="3whqaarNMcV" role="3cqZAp">
+          <node concept="10Nm6u" id="3whqaarNM_y" role="3cqZAk" />
         </node>
       </node>
       <node concept="37vLTG" id="2qSTDMxYAbz" role="3clF46">

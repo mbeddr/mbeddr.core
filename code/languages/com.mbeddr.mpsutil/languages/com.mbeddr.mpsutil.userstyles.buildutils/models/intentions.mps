@@ -413,7 +413,7 @@
                                               <ref role="3cqZAo" node="18ZQZhoV7kg" resolve="result" />
                                             </node>
                                             <node concept="3Tsc0h" id="18ZQZhoVmhy" role="2OqNvi">
-                                              <ref role="3TtcxE" to="iuxj:5M4a$b5iL2P" />
+                                              <ref role="3TtcxE" to="iuxj:5M4a$b5iL2P" resolve="attributes" />
                                             </node>
                                           </node>
                                           <node concept="WFELt" id="18ZQZhoVmhz" role="2OqNvi">
@@ -451,7 +451,7 @@
                                                 <ref role="3cqZAo" node="18ZQZhoVmhu" resolve="outputAttribute" />
                                               </node>
                                               <node concept="3Tsc0h" id="18ZQZhoVq5j" role="2OqNvi">
-                                                <ref role="3TtcxE" to="iuxj:5M4a$b5jfOu" />
+                                                <ref role="3TtcxE" to="iuxj:5M4a$b5jfOu" resolve="value" />
                                               </node>
                                             </node>
                                             <node concept="WFELt" id="18ZQZhoVrUg" role="2OqNvi">
@@ -572,7 +572,7 @@
                                             <ref role="3cqZAo" node="18ZQZhoV7kg" resolve="result" />
                                           </node>
                                           <node concept="3Tsc0h" id="18ZQZhoVaF3" role="2OqNvi">
-                                            <ref role="3TtcxE" to="iuxj:1q3yNZeA$$y" />
+                                            <ref role="3TtcxE" to="iuxj:1q3yNZeA$$y" resolve="content" />
                                           </node>
                                         </node>
                                         <node concept="TSZUe" id="18ZQZhoVcUU" role="2OqNvi">
@@ -650,7 +650,7 @@
                 <node concept="2OqwBi" id="18ZQZhoV6IW" role="37vLTJ">
                   <node concept="2Sf5sV" id="18ZQZhoV6EW" role="2Oq$k0" />
                   <node concept="3TrEf2" id="18ZQZhoV752" role="2OqNvi">
-                    <ref role="3Tt5mk" to="3ior:6CY5wCYZQER" />
+                    <ref role="3Tt5mk" to="3ior:6CY5wCYZQER" resolve="element" />
                   </node>
                 </node>
               </node>

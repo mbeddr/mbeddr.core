@@ -2,8 +2,7 @@
 <model ref="r:f7b641c7-0327-4513-80ee-fa0921b93a79(com.mbeddr.mpsutil.compare.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="mqum" ref="r:ec874b45-e888-42e6-995a-a298cefdff55(com.mbeddr.cimport.comparator.code)" />
@@ -108,7 +107,7 @@
                 <ref role="1YBMHb" node="2lpUxXMeGs5" resolve="assertNodeEquals" />
               </node>
               <node concept="3TrEf2" id="2lpUxXMeK8J" role="2OqNvi">
-                <ref role="3Tt5mk" to="8do3:2lpUxXMduaL" />
+                <ref role="3Tt5mk" to="8do3:2lpUxXMduaL" resolve="ignoredProperties" />
               </node>
             </node>
           </node>
@@ -123,7 +122,7 @@
                 <ref role="1YBMHb" node="2lpUxXMeGs5" resolve="assertNodeEquals" />
               </node>
               <node concept="3TrEf2" id="2lpUxXMeYlH" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpe3:7jPoEeD$ZP5" />
+                <ref role="3Tt5mk" to="tpe3:7jPoEeD$ZP5" resolve="actual" />
               </node>
             </node>
           </node>
@@ -143,7 +142,7 @@
                 <ref role="1YBMHb" node="2lpUxXMeGs5" resolve="assertNodeEquals" />
               </node>
               <node concept="3TrEf2" id="2lpUxXMf6TK" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpe3:7jPoEeD$ZP4" />
+                <ref role="3Tt5mk" to="tpe3:7jPoEeD$ZP4" resolve="expected" />
               </node>
             </node>
           </node>
@@ -176,7 +175,7 @@
                 <ref role="1YBMHb" node="3C6_kMLO7Z1" resolve="assertHasElements" />
               </node>
               <node concept="3TrEf2" id="3C6_kMLZpAY" role="2OqNvi">
-                <ref role="3Tt5mk" to="8do3:3C6_kMLP2FL" />
+                <ref role="3Tt5mk" to="8do3:3C6_kMLP2FL" resolve="list" />
               </node>
             </node>
           </node>
@@ -191,7 +190,7 @@
                 <ref role="1YBMHb" node="3C6_kMLO7Z1" resolve="assertHasElements" />
               </node>
               <node concept="3TrEf2" id="3C6_kMLZsns" role="2OqNvi">
-                <ref role="3Tt5mk" to="8do3:3C6_kMLP2FN" />
+                <ref role="3Tt5mk" to="8do3:3C6_kMLP2FN" resolve="size" />
               </node>
             </node>
           </node>
@@ -229,7 +228,7 @@
                 <ref role="1YBMHb" node="1_DWnhqnLJ$" resolve="areEqualExpression" />
               </node>
               <node concept="3TrEf2" id="1_DWnhqnMW6" role="2OqNvi">
-                <ref role="3Tt5mk" to="8do3:1_DWnhqnLaj" />
+                <ref role="3Tt5mk" to="8do3:1_DWnhqnLaj" resolve="ignoredProperties" />
               </node>
             </node>
           </node>
@@ -244,7 +243,7 @@
                 <ref role="1YBMHb" node="1_DWnhqnLJ$" resolve="areEqualExpression" />
               </node>
               <node concept="3TrEf2" id="1_DWnhqnNES" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpee:fJuHU4s" />
+                <ref role="3Tt5mk" to="tpee:fJuHU4s" resolve="leftExpression" />
               </node>
             </node>
           </node>
@@ -264,7 +263,7 @@
                 <ref role="1YBMHb" node="1_DWnhqnLJ$" resolve="areEqualExpression" />
               </node>
               <node concept="3TrEf2" id="1_DWnhqnOce" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpee:fJuHU4r" />
+                <ref role="3Tt5mk" to="tpee:fJuHU4r" resolve="rightExpression" />
               </node>
             </node>
           </node>
@@ -301,7 +300,7 @@
                 <ref role="1YBMHb" node="1_DWnhqnLJ$" resolve="areEqualExpression" />
               </node>
               <node concept="3TrEf2" id="5qLQfLPiBft" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpee:fJuHU4s" />
+                <ref role="3Tt5mk" to="tpee:fJuHU4s" resolve="leftExpression" />
               </node>
             </node>
           </node>
@@ -313,7 +312,7 @@
                 <ref role="1YBMHb" node="1_DWnhqnLJ$" resolve="areEqualExpression" />
               </node>
               <node concept="3TrEf2" id="5qLQfLPiBfy" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpee:fJuHU4r" />
+                <ref role="3Tt5mk" to="tpee:fJuHU4r" resolve="rightExpression" />
               </node>
             </node>
           </node>

@@ -2,16 +2,14 @@
 <model ref="r:ac11ea24-ba0f-4e43-93bd-726a7671bbc7(tests.ts.core.importing@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="-1" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
     <import index="3mvl" ref="r:dfbb97c1-bcef-47dd-a044-a2503489b0dd(com.mbeddr.core.modules.constraints)" />
     <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
     <import index="p3tm" ref="r:7b158038-abbe-4e11-b171-d5a959b4e91a(com.mbeddr.core.modules.typesystem)" />
-    <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -21,9 +19,7 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
-      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
-        <property id="852155438140865198" name="allowWarnings" index="G7GLP" />
-      </concept>
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
       <concept id="7691029917083831655" name="jetbrains.mps.lang.test.structure.UnknownRuleReference" flags="ng" index="2u4KIi" />
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
@@ -43,12 +39,6 @@
       </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
-      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
-        <child id="7763322639126652758" name="baseType" index="2umbIo" />
-      </concept>
-      <concept id="8850915533694634145" name="com.mbeddr.core.statements.structure.InitExpression" flags="ng" index="3o3WLD">
-        <child id="8850915533694634146" name="elements" index="3o3WLE" />
-      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
@@ -64,14 +54,6 @@
       <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
         <reference id="8719112291175211414" name="template" index="2xfifS" />
       </concept>
-    </language>
-    <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
-      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
-        <property id="6113173064526131578" name="value" index="PhEJT" />
-      </concept>
-      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
-      <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
-      <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
     </language>
     <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
       <concept id="9116320848000879253" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressWarnings" flags="ng" index="2P5Msn">
@@ -89,18 +71,11 @@
       <concept id="6116558314501347863" name="com.mbeddr.core.udt.structure.TypeDefType" flags="ng" index="rcJHQ">
         <reference id="6116558314501347864" name="typeDef" index="rcJHT" />
       </concept>
-      <concept id="4202685725779366523" name="com.mbeddr.core.udt.structure.MemberInitExpression" flags="ng" index="2xZu8t">
-        <reference id="4202685725779391329" name="element" index="2xZoc7" />
-        <child id="4202685725779390438" name="value" index="2xZpY0" />
-      </concept>
       <concept id="7099329415459817973" name="com.mbeddr.core.udt.structure.SUDeclaration" flags="ng" index="HsMI8">
         <child id="7099329415459888018" name="members" index="HszBJ" />
       </concept>
       <concept id="5882395403881875736" name="com.mbeddr.core.udt.structure.Member" flags="ng" index="1dpRTG" />
       <concept id="6394819151180597807" name="com.mbeddr.core.udt.structure.StructDeclaration" flags="ng" index="1sgJKc" />
-      <concept id="6394819151180597816" name="com.mbeddr.core.udt.structure.StructType" flags="ng" index="1sgJKr">
-        <reference id="6394819151180597817" name="struct" index="1sgJKq" />
-      </concept>
       <concept id="8811614583515725853" name="com.mbeddr.core.udt.structure.EnumLiteral" flags="ng" index="1AkAjq">
         <child id="8811614583515725856" name="init" index="1AkAjB" />
       </concept>
@@ -157,49 +132,15 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components">
-      <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
-        <child id="7780999115923944213" name="contents" index="5JtDH" />
-      </concept>
-      <concept id="4643433264761566506" name="com.mbeddr.ext.components.structure.OnInitTrigger" flags="ng" index="2cabNp" />
-      <concept id="5308710777891512019" name="com.mbeddr.ext.components.structure.Field" flags="ng" index="EbCE0">
-        <property id="785275130114861516" name="initField" index="3R_39t" />
-      </concept>
-      <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
-      <concept id="4491876417845649014" name="com.mbeddr.ext.components.structure.ComponentInstance" flags="ng" index="2EWCuV">
-        <reference id="4491876417845649015" name="component" index="2EWCuU" />
-        <child id="785275130114861567" name="initializers" index="3R_39I" />
-      </concept>
-      <concept id="4491876417845649011" name="com.mbeddr.ext.components.structure.AtomicComponent" flags="ng" index="2EWCuY">
-        <reference id="4491876417845678669" name="baseComponent" index="2EWKI0" />
-      </concept>
-      <concept id="4491876417845641670" name="com.mbeddr.ext.components.structure.Runnable" flags="ng" index="2EWDwb">
-        <child id="4491876417845643892" name="trigger" index="2EWDeT" />
-        <child id="4491876417845689763" name="body" index="2EWMhI" />
-      </concept>
-      <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
-        <child id="6041318036221669720" name="contents" index="2RW2fA" />
-      </concept>
-      <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
-      <concept id="785275130114861597" name="com.mbeddr.ext.components.structure.InitFieldInitializer" flags="ng" index="3R_36c">
-        <reference id="785275130114861598" name="field" index="3R_36f" />
-        <child id="785275130114861599" name="value" index="3R_36e" />
-      </concept>
-    </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618435" name="com.mbeddr.core.expressions.structure.Int16tType" flags="ng" index="26Vqpq" />
-      <concept id="8463282783691618466" name="com.mbeddr.core.expressions.structure.UnsignedInt16tType" flags="ng" index="26VqpV" />
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
-      <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
-        <child id="7254843406768839760" name="expression" index="1_9fRO" />
-      </concept>
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
@@ -208,13 +149,11 @@
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="1054289341113450444" name="com.mbeddr.core.expressions.structure.HexNumberLiteral" flags="ng" index="3Hbq_t" />
-      <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
-      <concept id="8860443239512128099" name="com.mbeddr.core.expressions.structure.FalseLiteral" flags="ng" index="3TlMhd" />
     </language>
     <language id="62296a07-bc38-46d2-8034-198c24063588" name="com.mbeddr.core.modules.gen">
       <concept id="5943183680458525568" name="com.mbeddr.core.modules.gen.structure.ForceImportReferencedElements" flags="ng" index="3YQQmh" />
@@ -469,94 +408,6 @@
         </node>
       </node>
     </node>
-    <node concept="1qefOq" id="4a$W5l2ElR3" role="1SKRRt">
-      <node concept="N3F5e" id="4a$W5l2Emgn" role="1qenE9">
-        <property role="TrG5h" value="user_config" />
-        <node concept="3GEVxB" id="4a$W5l2Emns" role="2OODSX">
-          <property role="3GEa6x" value="false" />
-          <ref role="3GEb4d" node="4AYy6hk7SkY" resolve="SimpleHTTPFOTAUpdateRequestBuilderImpl" />
-          <node concept="7CXmI" id="4a$W5l2EmLX" role="lGtFl">
-            <node concept="1TM$A" id="4a$W5l2EmLY" role="7EUXB">
-              <node concept="2PYRI3" id="4a$W5l2EmM5" role="3lydEf">
-                <ref role="39XzEq" to="p3tm:a8pihN4Iev" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1S7NMz" id="4a$W5l2Emnv" role="N3F5h">
-          <property role="TrG5h" value="HTTP_FOTA_UPDATE_REQUEST_DEFAULT_CONFIG" />
-          <property role="2OOxQR" value="true" />
-          <node concept="1sgJKr" id="4a$W5l2Emnw" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="2fj$BeOcT42" resolve="HTTPFOTAUpdateRequestConfig" />
-          </node>
-          <node concept="3o3WLD" id="4a$W5l2Emnx" role="1cecVj">
-            <node concept="2xZu8t" id="4a$W5l2Emny" role="3o3WLE">
-              <ref role="2xZoc7" node="2fj$BeOcT3V" resolve="secure" />
-              <node concept="3TlMhd" id="4a$W5l2Emnz" role="2xZpY0" />
-            </node>
-            <node concept="2xZu8t" id="4a$W5l2Emn$" role="3o3WLE">
-              <ref role="2xZoc7" node="2fj$BeOcT3X" resolve="hostName" />
-              <node concept="PhEJO" id="4a$W5l2Emn_" role="2xZpY0">
-                <property role="PhEJT" value="192.168.1.8" />
-              </node>
-            </node>
-            <node concept="2xZu8t" id="4a$W5l2EmnA" role="3o3WLE">
-              <ref role="2xZoc7" node="2fj$BeOcT3Z" resolve="port" />
-              <node concept="3TlMh9" id="4a$W5l2EmnB" role="2xZpY0">
-                <property role="2hmy$m" value="80" />
-              </node>
-            </node>
-            <node concept="2xZu8t" id="4a$W5l2EmnC" role="3o3WLE">
-              <ref role="2xZoc7" node="2fj$BeOcT41" resolve="firmwarePathPattern" />
-              <node concept="PhEJO" id="4a$W5l2EmnD" role="2xZpY0">
-                <property role="PhEJT" value="/user%d.bin" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="7CXmI" id="4a$W5l2Emgu" role="lGtFl">
-          <node concept="7OXhh" id="4a$W5l2Emgv" role="7EUXB" />
-        </node>
-      </node>
-    </node>
-    <node concept="1qefOq" id="2xYE3fFES2V" role="1SKRRt">
-      <node concept="N3F5e" id="2xYE3fFESdI" role="1qenE9">
-        <property role="TrG5h" value="wiring" />
-        <node concept="2EWCtd" id="2xYE3fFESdJ" role="N3F5h">
-          <property role="TrG5h" value="fotaUpdateInstances" />
-          <property role="2OOxQR" value="true" />
-          <node concept="2EWCuV" id="2xYE3fFESdK" role="5JtDH">
-            <property role="TrG5h" value="fotaUpdateRequestBuilderInst" />
-            <ref role="2EWCuU" node="2xYE3fFC9bi" resolve="EspressifHTTPFOTAUpdateRequestBuilderImpl" />
-            <node concept="3R_36c" id="2xYE3fFESdL" role="3R_39I">
-              <ref role="3R_36f" node="2xYE3fFC9rU" resolve="pDefaultConfig" />
-              <node concept="YInwV" id="2xYE3fFESdM" role="3R_36e">
-                <node concept="1S7827" id="2xYE3fFESdN" role="1_9fRO">
-                  <ref role="1S7826" node="2fj$BeOcYEn" resolve="HTTP_FOTA_UPDATE_REQUEST_DEFAULT_CONFIG" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3GEVxB" id="2xYE3fFESdQ" role="2OODSX">
-          <ref role="3GEb4d" node="4AYy6hk7SkY" resolve="SimpleHTTPFOTAUpdateRequestBuilderImpl" />
-        </node>
-        <node concept="3GEVxB" id="2xYE3fFESdR" role="2OODSX">
-          <ref role="3GEb4d" node="2xYE3fFxAvw" resolve="EspressifHTTPFOTAUpdateRequestBuilderImpl" />
-        </node>
-        <node concept="3GEVxB" id="2xYE3fFESdS" role="2OODSX">
-          <property role="3GEa6x" value="true" />
-          <ref role="3GEb4d" node="3hNaH_Dpt6C" resolve="user_config" />
-        </node>
-        <node concept="7CXmI" id="2xYE3fFGvND" role="lGtFl">
-          <node concept="7OXhh" id="2xYE3fFGvNF" role="7EUXB">
-            <property role="G7GLP" value="true" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="N3F5e" id="6uZAbUKexTN">
     <property role="TrG5h" value="M2" />
@@ -687,157 +538,6 @@
       <node concept="3Hbq_t" id="zU6uN$y4l2" role="2DQcEM">
         <property role="2hmy$m" value="01" />
       </node>
-    </node>
-  </node>
-  <node concept="N3F5e" id="3hNaH_Dpt6C">
-    <property role="TrG5h" value="user_config" />
-    <node concept="1S7NMz" id="2fj$BeOcYEn" role="N3F5h">
-      <property role="TrG5h" value="HTTP_FOTA_UPDATE_REQUEST_DEFAULT_CONFIG" />
-      <property role="2OOxQR" value="true" />
-      <node concept="1sgJKr" id="4a$W5l2EkZs" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-        <ref role="1sgJKq" node="2fj$BeOcT42" resolve="HTTPFOTAUpdateRequestConfig" />
-      </node>
-      <node concept="3o3WLD" id="2fj$BeOd0zt" role="1cecVj">
-        <node concept="2xZu8t" id="2fj$BeOd0$5" role="3o3WLE">
-          <ref role="2xZoc7" node="2fj$BeOcT3V" resolve="secure" />
-          <node concept="3TlMhd" id="2fj$BeOd0$S" role="2xZpY0" />
-        </node>
-        <node concept="2xZu8t" id="2fj$BeOd0A9" role="3o3WLE">
-          <ref role="2xZoc7" node="2fj$BeOcT3X" resolve="hostName" />
-          <node concept="PhEJO" id="2fj$BeOd0AS" role="2xZpY0">
-            <property role="PhEJT" value="192.168.1.8" />
-          </node>
-        </node>
-        <node concept="2xZu8t" id="2fj$BeOd0Dh" role="3o3WLE">
-          <ref role="2xZoc7" node="2fj$BeOcT3Z" resolve="port" />
-          <node concept="3TlMh9" id="2fj$BeOd0Ev" role="2xZpY0">
-            <property role="2hmy$m" value="80" />
-          </node>
-        </node>
-        <node concept="2xZu8t" id="2fj$BeOd0JA" role="3o3WLE">
-          <ref role="2xZoc7" node="2fj$BeOcT41" resolve="firmwarePathPattern" />
-          <node concept="PhEJO" id="2fj$BeOd0M8" role="2xZpY0">
-            <property role="PhEJT" value="/user%d.bin" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="2fj$BeOd2cT" role="N3F5h">
-      <property role="TrG5h" value="empty_1475933817763_7" />
-    </node>
-    <node concept="3GEVxB" id="2fj$BeOcYA0" role="2OODSX">
-      <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="4AYy6hk7SkY" resolve="SimpleHTTPFOTAUpdateRequestBuilderImpl" />
-    </node>
-    <node concept="3GEVxB" id="2xYE3fFC9Pl" role="2OODSX">
-      <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="2xYE3fFxAvw" resolve="EspressifHTTPFOTAUpdateRequestBuilderImpl" />
-    </node>
-  </node>
-  <node concept="N3F5e" id="4AYy6hk7SkY">
-    <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="SimpleHTTPFOTAUpdateRequestBuilderImpl" />
-    <node concept="3GEVxB" id="4AYy6hk7Sl0" role="2OODSX">
-      <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="3dbaw5ZEavl" resolve="AbstractHTTPFOTAUpdateRequestBuilderImpl" />
-    </node>
-  </node>
-  <node concept="N3F5e" id="3dbaw5ZEavl">
-    <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="AbstractHTTPFOTAUpdateRequestBuilderImpl" />
-    <node concept="1sgJKc" id="2fj$BeOcT42" role="N3F5h">
-      <property role="TrG5h" value="HTTPFOTAUpdateRequestConfig" />
-      <property role="2OOxQR" value="true" />
-      <node concept="1dpRTG" id="2fj$BeOcT3V" role="HszBJ">
-        <property role="TrG5h" value="secure" />
-        <node concept="3TlMgk" id="2fj$BeOcT3U" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="1dpRTG" id="2fj$BeOcT3X" role="HszBJ">
-        <property role="TrG5h" value="hostName" />
-        <node concept="Pu267" id="2fj$BeOcT3W" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="1dpRTG" id="2fj$BeOcT3Z" role="HszBJ">
-        <property role="TrG5h" value="port" />
-        <node concept="26VqpV" id="2fj$BeOcT3Y" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="1dpRTG" id="2fj$BeOcT41" role="HszBJ">
-        <property role="TrG5h" value="firmwarePathPattern" />
-        <node concept="Pu267" id="2fj$BeOcT40" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="2xYE3fFxAwA" role="N3F5h">
-      <property role="TrG5h" value="empty_1496320547326_14" />
-    </node>
-    <node concept="2EWCuY" id="2xYE3fFC9bR" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="AbstractHTTPFOTAUpdateRequestBuilderImpl" />
-      <node concept="EbCE0" id="2xYE3fFC9rU" role="2RW2fA">
-        <property role="TrG5h" value="pDefaultConfig" />
-        <property role="3R_39t" value="true" />
-        <node concept="3wxxNl" id="2xYE3fFC9t3" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-          <node concept="1sgJKr" id="2xYE3fFC9s6" role="2umbIo">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="true" />
-            <ref role="1sgJKq" node="2fj$BeOcT42" resolve="HTTPFOTAUpdateRequestConfig" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Khz0B" id="2xYE3fFEUFy" role="2RW2fA" />
-      <node concept="2EWDwb" id="2xYE3fFEUIR" role="2RW2fA">
-        <property role="TrG5h" value="init" />
-        <node concept="3XIRFW" id="2xYE3fFEUIS" role="2EWMhI">
-          <node concept="3XISUE" id="2xYE3fFEUIT" role="3XIRFZ" />
-        </node>
-        <node concept="19Rifw" id="2xYE3fFEUJa" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="2cabNp" id="2xYE3fFEUJi" role="2EWDeT" />
-      </node>
-    </node>
-  </node>
-  <node concept="N3F5e" id="2xYE3fFxAvw">
-    <property role="TrG5h" value="EspressifHTTPFOTAUpdateRequestBuilderImpl" />
-    <node concept="4WHVk" id="2xYE3fFEUD3" role="N3F5h">
-      <property role="TrG5h" value="MAX_FOTA_UPDATE_REQUEST_LENGTH" />
-      <node concept="3TlMh9" id="2xYE3fFEUDp" role="2DQcEM">
-        <property role="2hmy$m" value="511" />
-      </node>
-    </node>
-    <node concept="2EWCuY" id="2xYE3fFC9bi" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="EspressifHTTPFOTAUpdateRequestBuilderImpl" />
-      <ref role="2EWKI0" node="2xYE3fFC9bR" resolve="AbstractHTTPFOTAUpdateRequestBuilderImpl" />
-      <node concept="2EWDwb" id="2xYE3fFEUNn" role="2RW2fA">
-        <property role="TrG5h" value="test" />
-        <node concept="3XIRFW" id="2xYE3fFEUNo" role="2EWMhI">
-          <node concept="3XISUE" id="2xYE3fFEUNp" role="3XIRFZ" />
-        </node>
-        <node concept="19Rifw" id="2xYE3fFEUNA" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-    </node>
-    <node concept="3GEVxB" id="2xYE3fFxAxQ" role="2OODSX">
-      <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="3dbaw5ZEavl" resolve="AbstractHTTPFOTAUpdateRequestBuilderImpl" />
     </node>
   </node>
   <node concept="3YQQmh" id="2vdCnKPjSvR" />

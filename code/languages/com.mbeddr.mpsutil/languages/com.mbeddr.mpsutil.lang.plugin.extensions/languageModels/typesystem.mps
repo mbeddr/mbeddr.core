@@ -2,8 +2,7 @@
 <model ref="r:e1dcf4f1-2f88-4a30-9425-fa726fe3c851(com.mbeddr.mpsutil.lang.plugin.extensions.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -98,7 +97,7 @@
                 <ref role="1YBMHb" node="3ItNAtJe9jh" resolve="pinTabOp" />
               </node>
               <node concept="3TrEf2" id="3ItNAtJe9rL" role="2OqNvi">
-                <ref role="3Tt5mk" to="gaxt:618UJ37zUOg" />
+                <ref role="3Tt5mk" to="gaxt:618UJ37zUOg" resolve="componentExpression" />
               </node>
             </node>
           </node>

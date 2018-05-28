@@ -228,7 +228,6 @@
       <concept id="5584396657084920413" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_SampleNode" flags="nn" index="1r4N5L" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -248,15 +247,16 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -291,7 +291,6 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -7452,21 +7451,17 @@
           </node>
           <node concept="3fqX7Q" id="1wu5Hv5M9OC" role="3clFbw">
             <node concept="2YIFZM" id="5L6yXkDjh_c" role="3fr31v">
-              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
               <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-              <node concept="2OqwBi" id="5L6yXkDjh_d" role="37wK5m">
-                <node concept="37vLTw" id="5L6yXkDjh_e" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1wu5Hv5M4dY" resolve="c" />
-                </node>
-                <node concept="1rGIog" id="5L6yXkDjh_f" role="2OqNvi" />
-              </node>
+              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
               <node concept="2OqwBi" id="5L6yXkDjh_g" role="37wK5m">
                 <node concept="37vLTw" id="5L6yXkDjh_h" role="2Oq$k0">
                   <ref role="3cqZAo" node="1wu5Hv5M3Ll" resolve="sourceNode" />
                 </node>
                 <node concept="1mfA1w" id="5L6yXkDjh_i" role="2OqNvi" />
               </node>
-              <node concept="10Nm6u" id="5L6yXkDjh_j" role="37wK5m" />
+              <node concept="37vLTw" id="5L6yXkDjh_e" role="37wK5m">
+                <ref role="3cqZAo" node="1wu5Hv5M4dY" resolve="c" />
+              </node>
               <node concept="10Nm6u" id="5L6yXkDjh_k" role="37wK5m" />
               <node concept="10Nm6u" id="5L6yXkDjh_l" role="37wK5m" />
             </node>
@@ -7483,7 +7478,7 @@
           <node concept="3fqX7Q" id="1wu5Hv5Macs" role="3clFbw">
             <node concept="2YIFZM" id="1wu5Hv5M5Qq" role="3fr31v">
               <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeParent(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeParent" />
+              <ref role="37wK5l" to="ykok:~ModelConstraints.canBeParent(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeParent" />
               <node concept="2OqwBi" id="1wu5Hv5M81P" role="37wK5m">
                 <node concept="37vLTw" id="1wu5Hv5M7Z1" role="2Oq$k0">
                   <ref role="3cqZAo" node="1wu5Hv5M3Ll" resolve="sourceNode" />
@@ -7497,9 +7492,8 @@
                 <node concept="37vLTw" id="1wu5Hv5M9ou" role="2Oq$k0">
                   <ref role="3cqZAo" node="1wu5Hv5M3Ll" resolve="sourceNode" />
                 </node>
-                <node concept="25OxAV" id="1wu5Hv5M9Eg" role="2OqNvi" />
+                <node concept="2NL2c5" id="tRws0cRkpW" role="2OqNvi" />
               </node>
-              <node concept="10Nm6u" id="1wu5Hv5M8sD" role="37wK5m" />
               <node concept="10Nm6u" id="1wu5Hv5M8xi" role="37wK5m" />
             </node>
           </node>
@@ -7520,11 +7514,10 @@
               <node concept="3fqX7Q" id="1wu5Hv5Pn$M" role="3clFbw">
                 <node concept="2YIFZM" id="1wu5Hv5MaHw" role="3fr31v">
                   <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-                  <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
+                  <ref role="37wK5l" to="ykok:~ModelConstraints.canBeAncestor(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeAncestor" />
                   <node concept="2GrUjf" id="1wu5Hv5SllR" role="37wK5m">
                     <ref role="2Gs0qQ" node="1wu5Hv5SkyI" resolve="currentAncestor" />
                   </node>
-                  <node concept="10Nm6u" id="1wu5Hv5MaT4" role="37wK5m" />
                   <node concept="37vLTw" id="1wu5Hv5MaPc" role="37wK5m">
                     <ref role="3cqZAo" node="1wu5Hv5M4dY" resolve="c" />
                   </node>
@@ -7532,7 +7525,7 @@
                     <node concept="37vLTw" id="17pH$TAMFMc" role="2Oq$k0">
                       <ref role="3cqZAo" node="1wu5Hv5M3Ll" resolve="sourceNode" />
                     </node>
-                    <node concept="25OxAV" id="17pH$TAMFMd" role="2OqNvi" />
+                    <node concept="2NL2c5" id="tRws0cRktn" role="2OqNvi" />
                   </node>
                   <node concept="10Nm6u" id="1wu5Hv5MaHC" role="37wK5m" />
                 </node>
@@ -7556,7 +7549,7 @@
       <node concept="10P_77" id="1wu5Hv5M3tj" role="3clF45" />
       <node concept="37vLTG" id="1wu5Hv5M4dY" role="3clF46">
         <property role="TrG5h" value="c" />
-        <node concept="3THzug" id="1wu5Hv5M4xD" role="1tU5fm" />
+        <node concept="3bZ5Sz" id="tRws0cRjPK" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="1wu5Hv5M3Ll" role="3clF46">
         <property role="TrG5h" value="sourceNode" />

@@ -2,8 +2,7 @@
 <model ref="r:143b4f92-2b5a-452b-a7e8-2b07e7558eea(com.mbeddr.core.unittest.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" />
@@ -51,7 +50,7 @@
           <node concept="2OqwBi" id="269SiOLQ6OD" role="3Ah4Yx">
             <node concept="3__QtB" id="269SiOLQ6Ok" role="2Oq$k0" />
             <node concept="3TrEf2" id="269SiOLQ6OI" role="2OqNvi">
-              <ref role="3Tt5mk" to="yz9a:5so5TTr6RXt" />
+              <ref role="3Tt5mk" to="yz9a:5so5TTr6RXt" resolve="body" />
             </node>
           </node>
         </node>
@@ -67,7 +66,7 @@
           <node concept="2OqwBi" id="269SiOLQ$RM" role="3Ah4Yx">
             <node concept="3__QtB" id="269SiOLQ$Rt" role="2Oq$k0" />
             <node concept="3TrEf2" id="269SiOLQ$RS" role="2OqNvi">
-              <ref role="3Tt5mk" to="yz9a:5so5TTr6S9o" />
+              <ref role="3Tt5mk" to="yz9a:5so5TTr6S9o" resolve="expr" />
             </node>
           </node>
         </node>
@@ -83,7 +82,7 @@
           <node concept="2OqwBi" id="6Iyv0noF7S9" role="3Ah4Yx">
             <node concept="3__QtB" id="6Iyv0noF7RO" role="2Oq$k0" />
             <node concept="3TrEf2" id="6Iyv0noF7Sf" role="2OqNvi">
-              <ref role="3Tt5mk" to="yz9a:6Iyv0noEbtk" />
+              <ref role="3Tt5mk" to="yz9a:6Iyv0noEbtk" resolve="expected" />
             </node>
           </node>
         </node>
@@ -91,7 +90,7 @@
           <node concept="2OqwBi" id="6Iyv0noF7Sh" role="3Ah4Yx">
             <node concept="3__QtB" id="6Iyv0noF7Si" role="2Oq$k0" />
             <node concept="3TrEf2" id="6Iyv0noF7Sl" role="2OqNvi">
-              <ref role="3Tt5mk" to="yz9a:6Iyv0noEbtl" />
+              <ref role="3Tt5mk" to="yz9a:6Iyv0noEbtl" resolve="actual" />
             </node>
           </node>
         </node>

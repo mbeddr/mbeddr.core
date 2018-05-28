@@ -2,8 +2,7 @@
 <model ref="r:aad0b82d-5e70-4b30-977b-7c105a4d4452(com.mbeddr.mpsutil.multilingual.common.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="sxyo" ref="r:75716c6a-f9b5-407e-8197-f29f52308c7b(com.mbeddr.mpsutil.multilingual.common.structure)" />
@@ -88,7 +87,7 @@
                 <ref role="1YBMHb" node="3TSnT3Ijpai" resolve="iMessageKeyHolder" />
               </node>
               <node concept="3TrEf2" id="3TSnT3Ioa6W" role="2OqNvi">
-                <ref role="3Tt5mk" to="sxyo:2bng37t1yrs" />
+                <ref role="3Tt5mk" to="sxyo:2bng37t1yrs" resolve="key" />
               </node>
             </node>
             <node concept="I4A8Y" id="3TSnT3Ioa6X" role="2OqNvi" />

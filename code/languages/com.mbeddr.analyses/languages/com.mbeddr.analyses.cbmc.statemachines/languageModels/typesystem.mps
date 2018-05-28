@@ -2,8 +2,7 @@
 <model ref="r:57eea880-52b7-4464-8211-0fd72eeef824(com.mbeddr.analyses.cbmc.statemachines.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="lcpc" ref="r:a2e68184-e5ff-4dfa-983c-d957a5690db9(com.mbeddr.analyses.cbmc.statemachines.structure)" />
@@ -89,7 +88,7 @@
                 <ref role="1YBMHb" node="5hPfJKCsfXp" resolve="smAnalysis" />
               </node>
               <node concept="3TrEf2" id="5hPfJKCsfXl" role="2OqNvi">
-                <ref role="3Tt5mk" to="lcpc:5hPfJKCsfX9" />
+                <ref role="3Tt5mk" to="lcpc:5hPfJKCsfX9" resolve="satemachine" />
               </node>
             </node>
             <node concept="3CFZ6_" id="5hPfJKCsfXm" role="2OqNvi">

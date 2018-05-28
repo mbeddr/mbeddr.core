@@ -2,7 +2,7 @@
 <model ref="r:bf84e45a-3c04-4945-beee-cc4f6ad43bea(mbeddr.tutorial.osconfig.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports />
   <registry />

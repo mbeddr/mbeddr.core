@@ -4,17 +4,17 @@
   <languages>
     <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="0" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="442192fc-0a8e-4f77-b358-f47f229809d1" name="DomainSpecificLanguage" version="0" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="0" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="4" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="4" />
     <use id="daa1849d-6955-4fef-afe3-8aea1f61e6fa" name="com.mbeddr.analyses.cbmc.statemachines" version="0" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
-    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
+    <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="2" />
   </languages>
   <imports>
     <import index="qdz5" ref="r:e8a673f1-b8e8-4906-8e35-863cc461f18a(main_sm_controller)" />
@@ -61,12 +61,10 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="4809476668198796988" name="com.mbeddr.core.buildconfig.structure.Linkable" flags="ng" index="9ewWK">
-        <property id="4809476668198808306" name="name" index="9e_HY" />
-      </concept>
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
-        <child id="4809476668198796998" name="linkables" index="9ewXa" />
+        <reference id="2504745233808502246" name="target" index="3oK8_y" />
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+        <child id="4798312830023267837" name="externalLibs" index="3CaRR_" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
         <property id="3431613015799084476" name="isTest" index="iO3LB" />
@@ -84,6 +82,16 @@
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
+      </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
+      <concept id="8849280731830389372" name="com.mbeddr.core.buildconfig.structure.ExternalItem" flags="ng" index="3gIRYc">
+        <property id="8849280731830394174" name="value" index="3gIQze" />
+      </concept>
+      <concept id="7171543680058566278" name="com.mbeddr.core.buildconfig.structure.ExternalLibraries" flags="ng" index="1A$dpX">
+        <child id="8849280731830394219" name="libraries" index="3gIQyr" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -337,18 +345,33 @@
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3I8uaA" value="" />
+      <node concept="3abb7c" id="5V9QM6os9MM" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="5V9QM6os9MN" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="5V9QM6os9MO" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="5V9QM6os9MP" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
     </node>
     <node concept="2eOfOl" id="6q20vztqmfr" role="2ePNbc">
       <property role="iO3LB" value="false" />
       <property role="TrG5h" value="IntegratedCExample" />
+      <ref role="3oK8_y" node="5V9QM6os9MP" resolve="portable" />
       <node concept="2v9HqM" id="2fPtkzgRGHV" role="2eOfOg">
         <ref role="2v9HqP" node="7iLD7IPXjWJ" resolve="IntegratedCProgramSMAPDTM" />
       </node>
       <node concept="2v9HqM" id="2fPtkzgWHf5" role="2eOfOg">
         <ref role="2v9HqP" node="2fPtkzgUZtJ" resolve="math" />
       </node>
-      <node concept="9ewWK" id="1bry4DhuTmB" role="9ewXa">
-        <property role="9e_HY" value="m" />
+      <node concept="1A$dpX" id="5V9QM6os9Nm" role="3CaRR_">
+        <node concept="3gIRYc" id="5V9QM6os9Nn" role="3gIQyr">
+          <property role="3gIQze" value="m" />
+        </node>
       </node>
     </node>
   </node>

@@ -2,8 +2,7 @@
 <model ref="r:693b7f2c-c614-45fe-9adb-809539ce09a8(mbeddr.tutorial.shonan.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
@@ -49,6 +48,9 @@
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
+        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -275,7 +277,6 @@
   <node concept="1TIwiD" id="yso5_bvi9M">
     <property role="3GE5qa" value="stencil.user" />
     <property role="TrG5h" value="StencilVariableReference" />
-    <property role="34LRSv" value="&lt;{variable}&gt;" />
     <property role="EcuMT" value="620476785305133682" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="yso5_bvi9N" role="1TKVEi">
@@ -287,6 +288,9 @@
     </node>
     <node concept="PrWs8" id="yso5_bwokD" role="PzmwI">
       <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
+    </node>
+    <node concept="RPilO" id="2Ml2NpZFGPG" role="lGtFl">
+      <ref role="RPilL" node="yso5_bvi9N" resolve="variable" />
     </node>
   </node>
   <node concept="1TIwiD" id="4LP87XufKR$">

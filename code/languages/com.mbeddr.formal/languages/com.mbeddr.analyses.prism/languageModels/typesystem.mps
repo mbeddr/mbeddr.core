@@ -2,8 +2,7 @@
 <model ref="r:1d79907b-593e-4bc1-93ad-cd3948cb49b0(com.mbeddr.analyses.prism.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
@@ -127,7 +126,7 @@
                 <ref role="1YBMHb" node="66UVxwg$Zny" resolve="prismGlobalConstantRef" />
               </node>
               <node concept="3TrEf2" id="66UVxwg_pww" role="2OqNvi">
-                <ref role="3Tt5mk" to="dsgp:5DZbSdwz3mR" />
+                <ref role="3Tt5mk" to="dsgp:5DZbSdwz3mR" resolve="constant" />
               </node>
             </node>
           </node>
@@ -157,7 +156,7 @@
                 <ref role="1YBMHb" node="66UVxwgAko5" resolve="prismLocalVarRef" />
               </node>
               <node concept="3TrEf2" id="66UVxwgAkLr" role="2OqNvi">
-                <ref role="3Tt5mk" to="dsgp:5DZbSdwyf$N" />
+                <ref role="3Tt5mk" to="dsgp:5DZbSdwyf$N" resolve="localVar" />
               </node>
             </node>
           </node>
@@ -224,7 +223,7 @@
             <ref role="1YBMHb" node="66UVxwgZ4HR" resolve="prismLocalVarRenaming" />
           </node>
           <node concept="3TrEf2" id="66UVxwgZ5x1" role="2OqNvi">
-            <ref role="3Tt5mk" to="dsgp:5DZbSdwFWJR" />
+            <ref role="3Tt5mk" to="dsgp:5DZbSdwFWJR" resolve="renamedVar" />
           </node>
         </node>
       </node>

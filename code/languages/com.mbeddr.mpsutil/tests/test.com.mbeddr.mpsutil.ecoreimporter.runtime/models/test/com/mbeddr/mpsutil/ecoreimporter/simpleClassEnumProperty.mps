@@ -2,7 +2,7 @@
 <model ref="r:6f8eedfa-a422-40d0-a419-04fb00303d35(test.com.mbeddr.mpsutil.ecoreimporter.simpleClassEnumProperty)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />

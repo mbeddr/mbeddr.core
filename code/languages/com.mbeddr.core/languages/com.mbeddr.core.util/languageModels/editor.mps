@@ -4,7 +4,7 @@
   <languages>
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="-1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
@@ -1725,6 +1725,9 @@
               </node>
             </node>
           </node>
+          <node concept="VPxyj" id="14CuINrLKx0" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="VechU" id="138IYkiv5ih" role="3F10Kt">
           <node concept="3ZlJ5R" id="138IYkiv5ii" role="VblUZ">
@@ -2111,6 +2114,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="VPxyj" id="14CuINrMLIg" role="3F10Kt">
+            <property role="VOm3f" value="true" />
           </node>
         </node>
       </node>
@@ -5457,6 +5463,9 @@
               </node>
             </node>
           </node>
+          <node concept="VPxyj" id="14CuINrKGV2" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="7apEgWbIQfQ" role="3EZMnx">
@@ -5574,6 +5583,10 @@
   </node>
   <node concept="3p36aQ" id="7ue4kw5DEF7">
     <ref role="aqKnT" to="k146:7hIwPwVQD7C" resolve="ClosureStatementList" />
+  </node>
+  <node concept="3p36aQ" id="143iErn7gSH">
+    <property role="3GE5qa" value="reporting" />
+    <ref role="aqKnT" to="k146:69lKCLH$b91" resolve="EmptyMessageDefinition" />
   </node>
 </model>
 

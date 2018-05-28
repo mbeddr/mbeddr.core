@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:1ceac577-a87a-44fb-b001-c110dd319132(migrationData)">
+  <persistence version="9" />
+  <languages />
+  <imports>
+    <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" implicit="true" />
+    <import index="okc0" ref="r:a77b09d3-76cb-4b3b-9620-10102158ec08(com.mbeddr.ext.components.editor)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="3017733173184487099" name="jetbrains.mps.lang.editor.structure.SmartRefMigrationDataEntity" flags="ng" index="ZsZFI">
+        <reference id="3017733173184487105" name="generatedMenu" index="ZsZEk" />
+        <reference id="3017733173184487102" name="conceptNode" index="ZsZFF" />
+      </concept>
+      <concept id="3017733173184487098" name="jetbrains.mps.lang.editor.structure.SmartRefMigrationData" flags="ng" index="ZsZFJ">
+        <child id="3017733173184487121" name="entities" index="ZsZE4" />
+      </concept>
+    </language>
+    <language id="9882f4ad-1955-46fe-8269-94189e5dbbf2" name="jetbrains.mps.lang.migration.util">
+      <concept id="7417095922908669705" name="jetbrains.mps.lang.migration.util.structure.StepData" flags="ng" index="2z5JpS">
+        <property id="1973338949477451252" name="script" index="3qqn2_" />
+        <child id="7417095922908725798" name="data" index="2z5Xdn" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2z5JpS" id="2oITgcLXnM0">
+    <property role="3qqn2_" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)/8" />
+    <node concept="ZsZFJ" id="2oITgcLXnKp" role="2z5Xdn">
+      <node concept="ZsZFI" id="2oITgcLXnKR" role="ZsZE4">
+        <ref role="ZsZFF" to="v7ag:5oFMniD8XPW" resolve="PsmRefState" />
+        <ref role="ZsZEk" to="okc0:2oITgcLXnKL" resolve="PsmRefState_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="2oITgcLXnLQ" role="ZsZE4">
+        <ref role="ZsZFF" to="v7ag:18l4N2Qx3s4" resolve="PortContentRef" />
+        <ref role="ZsZEk" to="okc0:2oITgcLXnLK" resolve="PortContentRef_SmartReference" />
+      </node>
+    </node>
+  </node>
+</model>
+

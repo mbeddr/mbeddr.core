@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -988,6 +988,7 @@
                 <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/1138055754698/1138405853777" />
                 <property role="2qtEX8" value="concept" />
                 <node concept="2OqwBi" id="1Ia5rYl_MK$" role="2c44t1">
+                  <node concept="FGMqu" id="77_OL7CwjJ" role="2OqNvi" />
                   <node concept="2OqwBi" id="1Ia5rYl_MhP" role="2Oq$k0">
                     <node concept="2OqwBi" id="1Ia5rYl_Ktg" role="2Oq$k0">
                       <node concept="13iPFW" id="1Ia5rYl_KpU" role="2Oq$k0" />
@@ -1003,7 +1004,6 @@
                       <ref role="37wK5l" node="3O7ZvCZLQaC" resolve="getWrappedConcept" />
                     </node>
                   </node>
-                  <node concept="FGMqu" id="1Ia5rYl_MVe" role="2OqNvi" />
                 </node>
               </node>
             </node>

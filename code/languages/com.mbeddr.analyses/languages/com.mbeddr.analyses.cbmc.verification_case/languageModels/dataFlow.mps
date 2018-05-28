@@ -2,8 +2,7 @@
 <model ref="r:e3efbd7b-653f-41ff-acd3-667311ad8672(com.mbeddr.analyses.cbmc.verification_case.dataFlow)">
   <persistence version="9" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="48a0" ref="r:0e12ef42-60cb-4fd0-a25c-973475a4894e(com.mbeddr.analyses.cbmc.verification_case.structure)" implicit="true" />
@@ -122,11 +121,11 @@
               <node concept="2OqwBi" id="HiHa_$lT2u" role="2Oq$k0">
                 <node concept="3__QtB" id="HiHa_$lSYc" role="2Oq$k0" />
                 <node concept="3TrEf2" id="HiHa_$lTqF" role="2OqNvi">
-                  <ref role="3Tt5mk" to="48a0:HiHa_$jbln" />
+                  <ref role="3Tt5mk" to="48a0:HiHa_$jbln" resolve="body" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="HiHa_$lULb" role="2OqNvi">
-                <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+                <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
               </node>
             </node>
             <node concept="2es0OD" id="HiHa_$lYZ1" role="2OqNvi">

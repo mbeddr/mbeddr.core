@@ -3,8 +3,7 @@
   <persistence version="9" />
   <attribute name="concise" value="true" />
   <languages>
-    <use id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
     <import index="oiz3" ref="r:879596e5-224b-4613-97ab-fbcbd7050732(de.slisson.mps.reflection.structure)" implicit="true" />
@@ -72,7 +71,7 @@
           <node concept="2OqwBi" id="h$aqqRf" role="1DdaDG">
             <node concept="3__QtB" id="h$aqpqz" role="2Oq$k0" />
             <node concept="3Tsc0h" id="h$aqrfW" role="2OqNvi">
-              <ref role="3TtcxE" to="tpee:fz7wK6I" />
+              <ref role="3TtcxE" to="tpee:fz7wK6I" resolve="actualArgument" />
             </node>
           </node>
           <node concept="3cpWsn" id="h$aqnT2" role="1Duv9x">

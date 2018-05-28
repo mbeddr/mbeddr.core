@@ -2,7 +2,7 @@
 <model ref="r:83dcea33-66e1-38de-859b-c07c0bd136f0(org.fortiss.pacemakermodel.__spreferences.PlatformTemplates)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="5" />
   </languages>
   <imports />
   <registry>
@@ -18,6 +18,10 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -36,6 +40,18 @@
         <property role="2AWWZI" value="-std=c99" />
         <property role="1FkSt$" value="-g" />
         <property role="3I8uaA" value="" />
+        <node concept="3abb7c" id="5V9QM6osavD" role="3anu1O">
+          <property role="TrG5h" value="Win32" />
+        </node>
+        <node concept="3abb7c" id="5V9QM6osavE" role="3anu1O">
+          <property role="TrG5h" value="MacOSX" />
+        </node>
+        <node concept="3abb7c" id="5V9QM6osavF" role="3anu1O">
+          <property role="TrG5h" value="Linux" />
+        </node>
+        <node concept="3abb7c" id="5V9QM6osavG" role="3anu1O">
+          <property role="TrG5h" value="portable" />
+        </node>
       </node>
     </node>
   </node>

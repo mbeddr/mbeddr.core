@@ -12,7 +12,7 @@
     <import index="bmc6" ref="r:4ac377c2-0a54-4908-ae24-f86f1bad7e73(com.mbeddr.tutorial.documentation.ug.fundamentals)" />
     <import index="vi23" ref="r:9b94efb1-dbce-417f-b1ad-19c6a396d423(com.mbeddr.tutorial.documentation.ug.processSupport)" />
     <import index="4kwm" ref="r:5ff4e1a0-ec5b-4e83-a849-9e8c2c4adf79(com.mbeddr.tutorial.documentation.ug.ctooling)" />
-    <import index="1842" ref="r:af9946fd-1a63-4ece-b383-78243d689d45(com.mbeddr.tutorial.documentation.ug.common)" />
+    <import index="ntnz" ref="r:7f372397-146b-40d5-9f20-607974c4fed4(com.mbeddr.tutorial.documentation.ug._main)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -146,7 +146,7 @@
   <node concept="1_1swa" id="4rG3bBO0MpA">
     <property role="TrG5h" value="B_FunctionPointers" />
     <property role="yApLE" value="3" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="4IT6uoQrns" role="1_0VJ0">
       <property role="TrG5h" value="functionPointers" />
       <property role="1_0VJr" value="Function Pointers" />
@@ -597,7 +597,7 @@
   <node concept="1_1swa" id="6TOzdCDFUA5">
     <property role="TrG5h" value="A_c99VsMbeddr" />
     <property role="yApLE" value="2" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="48PTy$RupZW" role="1DXQ57">
       <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" resolve="C_FormalVerification" />
     </node>
@@ -1299,7 +1299,7 @@
           <property role="TrG5h" value="tsc" />
           <node concept="2Sb_l4" id="37qjepT$2Qs" role="2SbwM5">
             <property role="2Sb_kV" value="c99vsmbeddr/typesizeconfig.png" />
-            <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="37qjepT$2P$" role="2SaI5j">
             <node concept="19SGf9" id="37qjepT$2P_" role="OjmMu">
@@ -1656,7 +1656,7 @@
         <property role="TrG5h" value="asserts" />
         <node concept="2Sb_l4" id="2ncjLWki9JI" role="2SbwM5">
           <property role="2Sb_kV" value="tutorial/testing/asserts.png" />
-          <ref role="2Sb_kU" to="1842:2fBMM_3XZ4D" resolve="images" />
+          <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
         </node>
         <node concept="OjmMv" id="2ncjLWki9JJ" role="2SaI5j">
           <node concept="19SGf9" id="2ncjLWki9JK" role="OjmMu">
@@ -1676,7 +1676,7 @@
           </node>
         </node>
         <node concept="3SGC_w" id="2ncjLWksDqg" role="3SHJ_F">
-          <ref role="3SH5fe" to="1842:2fBMM_3XZ4P" resolve="width80" />
+          <ref role="3SH5fe" to="ntnz:2fBMM_3XZ4P" resolve="width80" />
         </node>
       </node>
       <node concept="1_0LV8" id="2ncjLWki9JR" role="1_0VJ0">
@@ -1903,7 +1903,7 @@
   <node concept="1_1swa" id="1OEOMspli$k">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_mbeddrCvsC99" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1OEOMsplmw2" role="1_0VJ0">
       <property role="TrG5h" value="mbeddrCVsC99" />
       <property role="1_0VJr" value="mbeddr C vs. C99" />
@@ -1943,7 +1943,7 @@
   <node concept="1_1swa" id="4IT6unrukQ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_Commenting" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="4IT6unrwrw" role="1_0VJ0">
       <property role="TrG5h" value="commenting" />
       <property role="1_0VJr" value="Commenting" />
@@ -2408,7 +2408,7 @@
   <node concept="1_1swa" id="3uikmEk5Pre">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="D_ArgumentAnnotations" />
-    <ref role="G9hjw" to="1842:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="Wq1Bs" id="3uikmEk5XtK" role="Wq1Bf">
       <property role="Wq1Bt" value="Tamas Szabo" />
       <property role="Wq1Bq" value="tamas.szabo@itemis.de" />

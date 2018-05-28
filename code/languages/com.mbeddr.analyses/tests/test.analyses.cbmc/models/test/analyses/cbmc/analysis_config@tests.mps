@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
@@ -792,7 +792,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9Kmr" role="37wK5m">
-                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (signed short int)(2 / (signed int)par)" />
+                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (int16_t)(2 / (signed int)par)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9Kms" role="2OqNvi">
@@ -826,7 +826,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9Lkj" role="37wK5m">
-                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (signed short int)((signed int)r * (signed int)r * (signed int)r)" />
+                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (int16_t)((signed int)r * (signed int)r * (signed int)r)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9Lkk" role="2OqNvi">
@@ -860,7 +860,7 @@
                 <ref role="3cqZAo" node="3f3CxMdvKM9" resolve="res" />
               </node>
               <node concept="Xl_RD" id="1kjPA_y9MBH" role="37wK5m">
-                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (signed short int)((signed int)*aPointer * (signed int)r3)" />
+                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (int16_t)((signed int)*aPointer * (signed int)r3)" />
               </node>
             </node>
             <node concept="liA8E" id="1kjPA_y9MBI" role="2OqNvi">

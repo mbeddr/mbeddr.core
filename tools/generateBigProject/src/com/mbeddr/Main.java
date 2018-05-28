@@ -7,8 +7,8 @@ import java.io.FileWriter;
 
 public class Main {
 
-    private static File projectDir = new File("/Users/berndkolb/mps/_mps35/mbeddr/mbeddr.core/code/tmp");
-    private static File modulesXml = new File("/Users/berndkolb/mps/_mps35/mbeddr/mbeddr.core/code/tmp/.mps/modules.xml");
+    private static File projectDir = new File("/Users/berndkolb/mps/_mps35/mbeddr/mbeddr.core/tmp/allProject");
+    private static File modulesXml = new File("/Users/berndkolb/mps/_mps35/mbeddr/mbeddr.core/tmp/allProject/.mps/modules.xml");
 
 
     public static void main(String[] args) throws Exception {

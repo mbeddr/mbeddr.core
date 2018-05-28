@@ -98,12 +98,12 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -158,8 +158,8 @@
             <node concept="2YIFZM" id="Pu8Vy2bK5t" role="2Oq$k0">
               <ref role="37wK5l" to="rl4q:5GUwywcuzsX" resolve="findAllInstances" />
               <ref role="1Pybhc" to="rl4q:5GUwywcucmJ" resolve="ConceptInstanceFinder" />
-              <node concept="3TUQnm" id="Pu8Vy2bK6I" role="37wK5m">
-                <ref role="3TV0OU" to="sh3l:4X7wieqsg8d" resolve="ExtensionClassMethodParameterAnnotation" />
+              <node concept="35c_gC" id="2mb3VHysPy9" role="37wK5m">
+                <ref role="35c_gD" to="sh3l:4X7wieqsg8d" resolve="ExtensionClassMethodParameterAnnotation" />
               </node>
             </node>
             <node concept="2es0OD" id="Pu8Vy2bKjl" role="2OqNvi">

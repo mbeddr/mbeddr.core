@@ -2,8 +2,7 @@
 <model ref="r:c23092a6-1b91-4974-8e90-ba6b7da915ad(history.textGen)">
   <persistence version="9" />
   <languages>
-    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
     <import index="xnma" ref="r:0a98087a-fdcc-42b7-8559-9142aa01be5d(history.structure)" implicit="true" />

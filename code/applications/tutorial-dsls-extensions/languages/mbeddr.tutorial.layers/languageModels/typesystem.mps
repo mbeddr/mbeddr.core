@@ -2,8 +2,7 @@
 <model ref="r:57ae4733-d000-49ee-ad6e-21c2419ccdbd(mbeddr.tutorial.layers.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -220,7 +219,7 @@
                           <ref role="2Gs0qQ" node="5rgUaxOstSY" resolve="pp" />
                         </node>
                         <node concept="3TrEf2" id="5rgUaxOszlJ" role="2OqNvi">
-                          <ref role="3Tt5mk" to="v7ag:3TmmsQkC_Q4" />
+                          <ref role="3Tt5mk" to="v7ag:3TmmsQkC_Q4" resolve="intf" />
                         </node>
                       </node>
                       <node concept="2Xjw5R" id="5rgUaxOszlK" role="2OqNvi">
@@ -256,7 +255,7 @@
                               <ref role="2Gs0qQ" node="5rgUaxOstSY" resolve="pp" />
                             </node>
                             <node concept="3TrEf2" id="5rgUaxOs$NQ" role="2OqNvi">
-                              <ref role="3Tt5mk" to="v7ag:3TmmsQkC_Q4" />
+                              <ref role="3Tt5mk" to="v7ag:3TmmsQkC_Q4" resolve="intf" />
                             </node>
                           </node>
                           <node concept="3TrcHB" id="5rgUaxOsAgQ" role="2OqNvi">
@@ -330,7 +329,7 @@
                           <ref role="2Gs0qQ" node="5rgUaxOsDv3" resolve="rp" />
                         </node>
                         <node concept="3TrEf2" id="5rgUaxOsDvf" role="2OqNvi">
-                          <ref role="3Tt5mk" to="v7ag:3TmmsQkC_Q4" />
+                          <ref role="3Tt5mk" to="v7ag:3TmmsQkC_Q4" resolve="intf" />
                         </node>
                       </node>
                       <node concept="2Xjw5R" id="5rgUaxOsDvg" role="2OqNvi">
@@ -380,7 +379,7 @@
                               <ref role="2Gs0qQ" node="5rgUaxOsDv3" resolve="rp" />
                             </node>
                             <node concept="3TrEf2" id="5rgUaxOsDvv" role="2OqNvi">
-                              <ref role="3Tt5mk" to="v7ag:3TmmsQkC_Q4" />
+                              <ref role="3Tt5mk" to="v7ag:3TmmsQkC_Q4" resolve="intf" />
                             </node>
                           </node>
                           <node concept="3TrcHB" id="5rgUaxOsDvw" role="2OqNvi">

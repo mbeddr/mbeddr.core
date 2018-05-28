@@ -2595,23 +2595,17 @@
                 <node concept="3clFbS" id="4UuUKLR24IH" role="1bW5cS">
                   <node concept="3clFbF" id="4UuUKLR24LJ" role="3cqZAp">
                     <node concept="2YIFZM" id="4UuUKLR24Qy" role="3clFbG">
-                      <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
                       <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+                      <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SAbstractConcept,org.jetbrains.mps.openapi.language.SContainmentLink,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
+                      <node concept="37vLTw" id="6tj6RloHa0A" role="37wK5m">
+                        <ref role="3cqZAo" node="2CFqHq6q0te" resolve="myParentNode" />
+                      </node>
                       <node concept="37vLTw" id="4UuUKLR25cK" role="37wK5m">
                         <ref role="3cqZAo" node="4UuUKLR24II" resolve="it" />
                       </node>
-                      <node concept="37vLTw" id="4UuUKLR25lM" role="37wK5m">
-                        <ref role="3cqZAo" node="2CFqHq6q0te" resolve="myParentNode" />
+                      <node concept="37vLTw" id="4UuUKLR25N0" role="37wK5m">
+                        <ref role="3cqZAo" node="2CFqHq6q0uS" resolve="myLink" />
                       </node>
-                      <node concept="2OqwBi" id="4UuUKLR25V$" role="37wK5m">
-                        <node concept="37vLTw" id="4UuUKLR25N0" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2CFqHq6q0uS" resolve="myLink" />
-                        </node>
-                        <node concept="liA8E" id="4UuUKLR26c0" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SContainmentLink.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
-                        </node>
-                      </node>
-                      <node concept="10Nm6u" id="4UuUKLR25wV" role="37wK5m" />
                       <node concept="2ShNRf" id="4UuUKLR26hL" role="37wK5m">
                         <node concept="1pGfFk" id="4UuUKLR28Vs" role="2ShVmc">
                           <ref role="37wK5l" to="bzg8:~CheckingNodeContext.&lt;init&gt;()" resolve="CheckingNodeContext" />

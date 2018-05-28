@@ -5,14 +5,14 @@
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -241,6 +241,11 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="2482611074346661065" name="jetbrains.mps.lang.core.structure.ReviewMigration" flags="ng" index="13_zln">
+        <property id="2482611074346661078" name="reasonShort" index="13_zl8" />
+        <property id="2482611074346661073" name="todo" index="13_zlf" />
+        <property id="2482611074347169514" name="readableId" index="13BvtO" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
@@ -358,6 +363,11 @@
                               <ref role="37wK5l" to="prhr:IRJfuKbwmU" resolve="filterLocationsStates" />
                               <node concept="3cpWsa" id="5ePBVhSIqfL" role="37wK5m">
                                 <ref role="3cqZAo" node="49Y2Xia4Bjv" resolve="res" />
+                                <node concept="13_zln" id="hODJYSAHsq" role="lGtFl">
+                                  <property role="13_zl8" value="unknown attributes" />
+                                  <property role="13_zlf" value="This node should have been migrated, but has annotations not recognised by the migration. Please review this code and migrate manually if necessary. Unknown attribute: jetbrains.mps.lang.generator.structure.ReferenceMacro" />
+                                  <property role="13BvtO" value="Migrates LocalInstanceFieldReferences, LocalStaticFieldReferences, LocalVariableReferences and ParameterReferences to VariableReferences" />
+                                </node>
                                 <node concept="1ZhdrF" id="5ePBVhSIqfM" role="lGtFl">
                                   <property role="2qtEX8" value="variableDeclaration" />
                                   <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
@@ -709,6 +719,11 @@
                               <ref role="37wK5l" to="prhr:IRJfuKbwmU" resolve="filterLocationsStates" />
                               <node concept="3cpWsa" id="IRJfuKiFXr" role="37wK5m">
                                 <ref role="3cqZAo" node="1eEm1HSGlmN" resolve="res" />
+                                <node concept="13_zln" id="hODJYSAHsr" role="lGtFl">
+                                  <property role="13_zl8" value="unknown attributes" />
+                                  <property role="13_zlf" value="This node should have been migrated, but has annotations not recognised by the migration. Please review this code and migrate manually if necessary. Unknown attribute: jetbrains.mps.lang.generator.structure.ReferenceMacro" />
+                                  <property role="13BvtO" value="Migrates LocalInstanceFieldReferences, LocalStaticFieldReferences, LocalVariableReferences and ParameterReferences to VariableReferences" />
+                                </node>
                                 <node concept="1ZhdrF" id="IRJfuKiFXs" role="lGtFl">
                                   <property role="2qtEX8" value="variableDeclaration" />
                                   <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
@@ -1162,6 +1177,11 @@
                                   <ref role="37wK5l" to="prhr:IRJfuKbwmU" resolve="filterLocationsStates" />
                                   <node concept="3cpWsa" id="IRJfuKiPoq" role="37wK5m">
                                     <ref role="3cqZAo" node="4Uw4KibeWb5" resolve="res" />
+                                    <node concept="13_zln" id="hODJYSAHso" role="lGtFl">
+                                      <property role="13_zl8" value="unknown attributes" />
+                                      <property role="13_zlf" value="This node should have been migrated, but has annotations not recognised by the migration. Please review this code and migrate manually if necessary. Unknown attribute: jetbrains.mps.lang.generator.structure.ReferenceMacro" />
+                                      <property role="13BvtO" value="Migrates LocalInstanceFieldReferences, LocalStaticFieldReferences, LocalVariableReferences and ParameterReferences to VariableReferences" />
+                                    </node>
                                     <node concept="1ZhdrF" id="IRJfuKiPor" role="lGtFl">
                                       <property role="2qtEX8" value="variableDeclaration" />
                                       <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
@@ -1600,6 +1620,11 @@
                                   <ref role="37wK5l" to="prhr:IRJfuKbwmU" resolve="filterLocationsStates" />
                                   <node concept="3cpWsa" id="IRJfuKiM2h" role="37wK5m">
                                     <ref role="3cqZAo" node="1eEm1HSGUv2" resolve="res" />
+                                    <node concept="13_zln" id="hODJYSAHsp" role="lGtFl">
+                                      <property role="13_zl8" value="unknown attributes" />
+                                      <property role="13_zlf" value="This node should have been migrated, but has annotations not recognised by the migration. Please review this code and migrate manually if necessary. Unknown attribute: jetbrains.mps.lang.generator.structure.ReferenceMacro" />
+                                      <property role="13BvtO" value="Migrates LocalInstanceFieldReferences, LocalStaticFieldReferences, LocalVariableReferences and ParameterReferences to VariableReferences" />
+                                    </node>
                                     <node concept="1ZhdrF" id="IRJfuKiM2i" role="lGtFl">
                                       <property role="2qtEX8" value="variableDeclaration" />
                                       <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />

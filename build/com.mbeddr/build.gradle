@@ -1,9 +1,17 @@
 import de.itemis.mps.gradle.GitBasedVersioning
 
-if (project.hasProperty("MPS_Installation")) {
-    ext.mpsInstallationDir = project.getProperty("MPS_Installation")
+def userHome = System.properties['user.home']
+def mpsPluginsDirPattern
+if (System.properties['os.name'].toLowerCase().contains('mac')) {
+    mpsPluginsDirPattern = "$userHome/Library/Application Support/%s"
 } else {
-    ext.mpsInstallationDir = ""
+    mpsPluginsDirPattern = "$userHome/.%s/config/plugins"
+}
+
+if (project.hasProperty("MPS_PATHS_SELECTOR")) {
+    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
+} else {
+    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, "MPS$mpsMajor")
 }
 
 ext.mbeddrMajor = "1"

@@ -7,8 +7,8 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language id="444fc60e-b7e2-46c2-95fa-301dd48918b2" fqName="demo.expr" version="0" />
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
+    <language slang="l:444fc60e-b7e2-46c2-95fa-301dd48918b2:demo.expr" version="0" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="c08dd3fc-048f-4ab2-83c8-5a6b63c5df2e(demo.expr.sandbox)" version="0" />
