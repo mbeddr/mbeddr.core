@@ -164,6 +164,7 @@
       </concept>
       <concept id="8860443239512147451" name="com.mbeddr.core.expressions.structure.LessEqualsExpression" flags="ng" index="3Tl9Jl" />
       <concept id="8860443239512147447" name="com.mbeddr.core.expressions.structure.GreaterEqualsExpression" flags="ng" index="3Tl9Jp" />
+      <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
       <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
@@ -565,7 +566,6 @@
               <property role="2hmy$m" value="5" />
             </node>
           </node>
-          <node concept="3XISUE" id="1uKPZVPHZE8" role="3XIRFZ" />
           <node concept="1_9egQ" id="1uKPZVPxUsL" role="3XIRFZ">
             <node concept="3ov6nf" id="1uKPZVPxUuO" role="1_9egR">
               <node concept="1S8S4T" id="1uKPZVPxUxC" role="3TlMhJ">
@@ -671,6 +671,16 @@
                 <ref role="3ZVs_2" node="3LE5RBQCK56" resolve="b" />
               </node>
               <node concept="3aNPw6" id="3CCyXivPgR5" role="3TlMhI">
+                <ref role="3ZVs_2" node="3LE5RBQCK4i" resolve="a" />
+              </node>
+            </node>
+          </node>
+          <node concept="1_9egQ" id="3CCyXivPMSl" role="3XIRFZ">
+            <node concept="3TlM44" id="3CCyXivPMV3" role="1_9egR">
+              <node concept="3aNPw6" id="3CCyXivPMVz" role="3TlMhJ">
+                <ref role="3ZVs_2" node="3LE5RBQCK56" resolve="b" />
+              </node>
+              <node concept="3aNPw6" id="3CCyXivPMSj" role="3TlMhI">
                 <ref role="3ZVs_2" node="3LE5RBQCK4i" resolve="a" />
               </node>
             </node>
