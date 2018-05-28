@@ -2017,7 +2017,7 @@
   </node>
   <node concept="1YbPZF" id="3CCyXivGCGi">
     <property role="3GE5qa" value="operator" />
-    <property role="TrG5h" value="typeof_BinaryOrderedComparisonExpression" />
+    <property role="TrG5h" value="typeof_BinaryOrderedComparisonExpressionOverload" />
     <node concept="3clFbS" id="3CCyXivGCGj" role="18ibNy">
       <node concept="nvevp" id="3CCyXivI7J_" role="3cqZAp">
         <node concept="3clFbS" id="3CCyXivI7JA" role="nvhr_">
@@ -2282,7 +2282,7 @@
   </node>
   <node concept="1YbPZF" id="3CCyXivPMW_">
     <property role="3GE5qa" value="operator" />
-    <property role="TrG5h" value="typeof_EqualsExpression" />
+    <property role="TrG5h" value="typeof_EqualsExpressionOverload" />
     <node concept="3clFbS" id="3CCyXivPMWA" role="18ibNy">
       <node concept="nvevp" id="3CCyXivPTY4" role="3cqZAp">
         <node concept="3clFbS" id="3CCyXivPTY5" role="nvhr_">
