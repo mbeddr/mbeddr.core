@@ -162,6 +162,7 @@
         <child id="6610873504380029790" name="targetType" index="1S8S4N" />
         <child id="6610873504380029782" name="expr" index="1S8S4V" />
       </concept>
+      <concept id="8860443239512147447" name="com.mbeddr.core.expressions.structure.GreaterEqualsExpression" flags="ng" index="3Tl9Jp" />
       <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
@@ -173,6 +174,7 @@
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
       <concept id="8860443239512128099" name="com.mbeddr.core.expressions.structure.FalseLiteral" flags="ng" index="3TlMhd" />
+      <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
       <concept id="4375898003726285487" name="com.mbeddr.core.expressions.structure.PreIncrementExpression" flags="ng" index="3TM6Ez" />
     </language>
@@ -496,6 +498,36 @@
           <ref role="3mBfEM" node="6KmaLbE81K$" resolve="SomeClass" />
         </node>
       </node>
+      <node concept="3u$6M4" id="3CCyXivGA4u" role="3mBdys" />
+      <node concept="39G567" id="3CCyXivGAeU" role="3mBdys">
+        <property role="TrG5h" value="operator" />
+        <property role="3a2fiL" value="&lt;=&gt;" />
+        <node concept="19RgSI" id="3CCyXivGAkO" role="1UOdpc">
+          <property role="TrG5h" value="left" />
+          <node concept="3mBfEi" id="3CCyXivGAkM" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="3mBfEM" node="6KmaLbE81K$" resolve="SomeClass" />
+          </node>
+        </node>
+        <node concept="19RgSI" id="3CCyXivGAln" role="1UOdpc">
+          <property role="TrG5h" value="right" />
+          <node concept="3mBfEi" id="3CCyXivI6VW" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="3mBfEM" node="6KmaLbE81K$" resolve="SomeClass" />
+          </node>
+        </node>
+        <node concept="3XIRFW" id="3CCyXivGAeV" role="39y18Y">
+          <node concept="2BFjQ_" id="3CCyXivGAmu" role="3XIRFZ">
+            <node concept="3TlMhK" id="3CCyXivGAmF" role="2BFjQA" />
+          </node>
+        </node>
+        <node concept="3TlMgk" id="3CCyXivGAkm" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
       <node concept="3u$6M4" id="3LE5RBQCJYY" role="3mBdys" />
       <node concept="3mB1cK" id="3LE5RBQCK1K" role="3mBdys">
         <property role="1wg9_F" value="private" />
@@ -622,6 +654,16 @@
               </node>
             </node>
           </node>
+          <node concept="1_9egQ" id="3CCyXivGC82" role="3XIRFZ">
+            <node concept="3Tl9Jp" id="3CCyXivGCaw" role="1_9egR">
+              <node concept="3aNPw6" id="3CCyXivGCaZ" role="3TlMhJ">
+                <ref role="3ZVs_2" node="3LE5RBQCK56" resolve="b" />
+              </node>
+              <node concept="3aNPw6" id="3CCyXivGC80" role="3TlMhI">
+                <ref role="3ZVs_2" node="3LE5RBQCK4i" resolve="a" />
+              </node>
+            </node>
+          </node>
           <node concept="1_9egQ" id="1uKPZVP4B6$" role="3XIRFZ">
             <node concept="3TM6Ez" id="1uKPZVP4BcF" role="1_9egR">
               <node concept="3aNPw6" id="1uKPZVP4B6y" role="1_9fRO">
@@ -696,11 +738,14 @@
   </node>
   <node concept="2v9HqL" id="3fD_lX6gUJ5">
     <node concept="2eOfOl" id="4o2nsMgBpPF" role="2ePNbc">
-      <property role="TrG5h" value="Virtual" />
+      <property role="TrG5h" value="Overloading" />
       <property role="iO3LB" value="true" />
       <ref role="3oK8_y" node="3v5DuFDkAwn" resolve="portable" />
       <node concept="2v9HqM" id="7wcjSRtanT1" role="2eOfOg">
         <ref role="2v9HqP" node="6KmaLbE81Ky" resolve="OperatorOverloading" />
+      </node>
+      <node concept="2v9HqM" id="3CCyXivG8gq" role="2eOfOg">
+        <ref role="2v9HqP" node="3CCyXivFP3G" resolve="OverloadingDemo" />
       </node>
       <node concept="2v9HqM" id="3v5DuFDttij" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
