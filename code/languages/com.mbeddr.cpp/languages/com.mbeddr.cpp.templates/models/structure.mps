@@ -161,6 +161,8 @@
   <node concept="1TIwiD" id="1iZHTjWJHFX">
     <property role="EcuMT" value="1495115451833703165" />
     <property role="TrG5h" value="TypeTemplateArg" />
+    <property role="34LRSv" value="class" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1iZHTjWJHFY" role="PzmwI">
       <ref role="PrY4T" node="1iZHTjWJijg" resolve="ITemplateArg" />
     </node>
@@ -175,6 +177,7 @@
   <node concept="1TIwiD" id="1iZHTjWMvf4">
     <property role="EcuMT" value="1495115451834430404" />
     <property role="TrG5h" value="TemplateValueParam" />
+    <property role="34LRSv" value="val" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1iZHTjWMvf5" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
@@ -189,6 +192,7 @@
   <node concept="1TIwiD" id="1iZHTjWMS$p">
     <property role="EcuMT" value="1495115451834534169" />
     <property role="TrG5h" value="TemplateValueArg" />
+    <property role="34LRSv" value="val" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1iZHTjWMS$q" role="PzmwI">
       <ref role="PrY4T" node="1iZHTjWJijg" resolve="ITemplateArg" />
