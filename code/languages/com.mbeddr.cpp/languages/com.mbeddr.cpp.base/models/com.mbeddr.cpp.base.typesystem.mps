@@ -22,6 +22,7 @@
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="k8ev" ref="r:f39afe13-666a-48f2-9d7c-2f9366f78fe5(jetbrains.mps.typesystemEngine.checker)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -436,71 +437,7 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="4K6s$_rqydn" role="3cqZAp" />
-      <node concept="3SKdUt" id="4K6s$_rqa83" role="3cqZAp">
-        <node concept="3SKdUq" id="4K6s$_rqa85" role="3SKWNk">
-          <property role="3SKdUp" value="Error should be shown if the user is extending an unexported class that isn't in the current module." />
-        </node>
-      </node>
-      <node concept="3clFbJ" id="4K6s$_rq5Gs" role="3cqZAp">
-        <node concept="1Wc70l" id="4K6s$_rq8t8" role="3clFbw">
-          <node concept="3fqX7Q" id="4K6s$_rq9Zj" role="3uHU7w">
-            <node concept="2OqwBi" id="4K6s$_rq9Zl" role="3fr31v">
-              <node concept="2OqwBi" id="4K6s$_rq9Zm" role="2Oq$k0">
-                <node concept="1YBJjd" id="4K6s$_rq9Zn" role="2Oq$k0">
-                  <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
-                </node>
-                <node concept="3TrEf2" id="4K6s$_rq9Zo" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="4K6s$_rq9Zp" role="2OqNvi">
-                <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="4K6s$_rq7ze" role="3uHU7B">
-            <node concept="2OqwBi" id="4K6s$_rq5Pr" role="3uHU7B">
-              <node concept="1YBJjd" id="4K6s$_rq5GF" role="2Oq$k0">
-                <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
-              </node>
-              <node concept="1mfA1w" id="4K6s$_rq5Wu" role="2OqNvi" />
-            </node>
-            <node concept="2OqwBi" id="4K6s$_rqpYy" role="3uHU7w">
-              <node concept="2OqwBi" id="4K6s$_rq6JX" role="2Oq$k0">
-                <node concept="1YBJjd" id="4K6s$_rq6zN" role="2Oq$k0">
-                  <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
-                </node>
-                <node concept="3TrEf2" id="4K6s$_rq6Ui" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
-                </node>
-              </node>
-              <node concept="1mfA1w" id="4K6s$_rqquA" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="4K6s$_rq5Gu" role="3clFbx">
-          <node concept="2MkqsV" id="4K6s$_rqa8E" role="3cqZAp">
-            <node concept="1YBJjd" id="4K6s$_rqak8" role="2OEOjV">
-              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
-            </node>
-            <node concept="Xl_RD" id="4K6s$_rqajb" role="2MkJ7o">
-              <property role="Xl_RC" value="You can't extend a class from another module if it is not exported." />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3clFbH" id="4K6s$_sHVnl" role="3cqZAp" />
-      <node concept="3SKdUt" id="4K6s$_sHVvE" role="3cqZAp">
-        <node concept="3SKdUq" id="4K6s$_sHVvG" role="3SKWNk">
-          <property role="3SKdUp" value="Error should be shown if the user is extending a class with something that's in an un-included module." />
-        </node>
-      </node>
-      <node concept="3SKdUt" id="4K6s$_sJgYN" role="3cqZAp">
-        <node concept="3SKdUq" id="4K6s$_sJgYP" role="3SKWNk">
-          <property role="3SKdUp" value="Note: Make sure the first module stays generic - otherwise the ancestor search returns null." />
-        </node>
-      </node>
       <node concept="3cpWs8" id="4K6s$_sI1yg" role="3cqZAp">
         <node concept="3cpWsn" id="4K6s$_sI1yj" role="3cpWs9">
           <property role="TrG5h" value="parentClassModule" />
@@ -544,6 +481,84 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="4K6s$_rqydn" role="3cqZAp" />
+      <node concept="3SKdUt" id="4K6s$_rqa83" role="3cqZAp">
+        <node concept="3SKdUq" id="4K6s$_rqa85" role="3SKWNk">
+          <property role="3SKdUp" value="Error should be shown if the user is extending an unexported class that isn't in the current module." />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="4K6s$_rq5Gs" role="3cqZAp">
+        <node concept="1Wc70l" id="681DFyjWG_8" role="3clFbw">
+          <node concept="3y3z36" id="681DFyjWIl2" role="3uHU7w">
+            <node concept="37vLTw" id="681DFyjWIpO" role="3uHU7w">
+              <ref role="3cqZAo" node="4K6s$_sI1yj" resolve="parentClassModule" />
+            </node>
+            <node concept="37vLTw" id="681DFyjWHhN" role="3uHU7B">
+              <ref role="3cqZAo" node="4K6s$_sI$6_" resolve="instanceModule" />
+            </node>
+          </node>
+          <node concept="1Wc70l" id="4K6s$_rq8t8" role="3uHU7B">
+            <node concept="3y3z36" id="4K6s$_rq7ze" role="3uHU7B">
+              <node concept="2OqwBi" id="4K6s$_rq5Pr" role="3uHU7B">
+                <node concept="1YBJjd" id="4K6s$_rq5GF" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+                </node>
+                <node concept="1mfA1w" id="4K6s$_rq5Wu" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="4K6s$_rqpYy" role="3uHU7w">
+                <node concept="2OqwBi" id="4K6s$_rq6JX" role="2Oq$k0">
+                  <node concept="1YBJjd" id="4K6s$_rq6zN" role="2Oq$k0">
+                    <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+                  </node>
+                  <node concept="3TrEf2" id="4K6s$_rq6Ui" role="2OqNvi">
+                    <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
+                  </node>
+                </node>
+                <node concept="1mfA1w" id="4K6s$_rqquA" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="4K6s$_rq9Zj" role="3uHU7w">
+              <node concept="2OqwBi" id="4K6s$_rq9Zl" role="3fr31v">
+                <node concept="2OqwBi" id="4K6s$_rq9Zm" role="2Oq$k0">
+                  <node concept="1YBJjd" id="4K6s$_rq9Zn" role="2Oq$k0">
+                    <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+                  </node>
+                  <node concept="3TrEf2" id="4K6s$_rq9Zo" role="2OqNvi">
+                    <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="4K6s$_rq9Zp" role="2OqNvi">
+                  <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="4K6s$_rq5Gu" role="3clFbx">
+          <node concept="2MkqsV" id="4K6s$_rqa8E" role="3cqZAp">
+            <node concept="1YBJjd" id="4K6s$_rqak8" role="2OEOjV">
+              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
+            </node>
+            <node concept="Xl_RD" id="4K6s$_rqajb" role="2MkJ7o">
+              <property role="Xl_RC" value="You can't extend a class from another module if it is not exported." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="681DFyjW_1g" role="3cqZAp" />
+      <node concept="3SKdUt" id="4K6s$_sHVvE" role="3cqZAp">
+        <node concept="3SKdUq" id="4K6s$_sHVvG" role="3SKWNk">
+          <property role="3SKdUp" value="Error should be shown if the user is extending a class with something that's in an un-includ" />
+        </node>
+        <node concept="3SKdUq" id="681DFyjW$_O" role="3SKWNk">
+          <property role="3SKdUp" value="ed module." />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="4K6s$_sJgYN" role="3cqZAp">
+        <node concept="3SKdUq" id="4K6s$_sJgYP" role="3SKWNk">
+          <property role="3SKdUp" value="Note: Make sure the first module stays generic - otherwise the ancestor search returns null." />
         </node>
       </node>
       <node concept="3clFbJ" id="4K6s$_sHVzH" role="3cqZAp">
@@ -604,7 +619,7 @@
                 <node concept="2qgKlT" id="4K6s$_sIpcS" role="2OqNvi">
                   <ref role="37wK5l" to="qd6m:35JkqCBlGGT" resolve="getAllImportedModules" />
                 </node>
-                <node concept="37vLTw" id="4K6s$_sI_eF" role="2Oq$k0">
+                <node concept="37vLTw" id="681DFyjW_v0" role="2Oq$k0">
                   <ref role="3cqZAo" node="4K6s$_sI$6_" resolve="instanceModule" />
                 </node>
               </node>
@@ -1502,8 +1517,8 @@
               </node>
               <node concept="3clFbF" id="3CCyXiw70Sd" role="3cqZAp">
                 <node concept="2YIFZM" id="3CCyXiw71p2" role="3clFbG">
-                  <ref role="37wK5l" node="3CCyXiw3dK5" resolve="checkOperatorTypes" />
                   <ref role="1Pybhc" node="3CCyXiw3cKB" resolve="OverloadTypeChecker" />
+                  <ref role="37wK5l" node="3CCyXiw3dK5" resolve="checkOperatorTypes" />
                   <node concept="37vLTw" id="3CCyXiw71T7" role="37wK5m">
                     <ref role="3cqZAo" node="3tvQSYc6Q3u" resolve="parentClass" />
                   </node>
