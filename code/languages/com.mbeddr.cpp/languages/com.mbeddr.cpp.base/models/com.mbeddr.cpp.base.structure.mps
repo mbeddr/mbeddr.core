@@ -768,13 +768,6 @@
       <ref role="PrY4T" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3LE5RBQDkXZ">
-    <property role="EcuMT" value="4353317802403516287" />
-    <property role="3GE5qa" value="class" />
-    <property role="TrG5h" value="LocalClassVarRef" />
-    <property role="R4oN_" value="Override LocalVarRef on classes only. Used for operator overloading." />
-    <ref role="1TJDcQ" to="c4fa:1OcdQnyStpU" resolve="LocalVarRef" />
-  </node>
   <node concept="AxPO7" id="3CCyXivS5dy">
     <property role="3GE5qa" value="operator" />
     <property role="TrG5h" value="EOperatorType" />
