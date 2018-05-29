@@ -836,5 +836,22 @@
       <ref role="1YaFvo" to="1yyn:ZKpU3Bvynz" resolve="ITemplate" />
     </node>
   </node>
+  <node concept="18kY7G" id="327D75Ee9c9">
+    <property role="TrG5h" value="check_TemplateStub" />
+    <node concept="3clFbS" id="327D75Ee9ca" role="18ibNy">
+      <node concept="2MkqsV" id="327D75Ee9cg" role="3cqZAp">
+        <node concept="Xl_RD" id="327D75Ee9cv" role="2MkJ7o">
+          <property role="Xl_RC" value="Leftover template stub." />
+        </node>
+        <node concept="1YBJjd" id="327D75Ee9d0" role="2OEOjV">
+          <ref role="1YBMHb" node="327D75Ee9cc" resolve="templateStub" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="327D75Ee9cc" role="1YuTPh">
+      <property role="TrG5h" value="templateStub" />
+      <ref role="1YaFvo" to="1yyn:327D75Ee9bJ" resolve="TemplateStub" />
+    </node>
+  </node>
 </model>
 
