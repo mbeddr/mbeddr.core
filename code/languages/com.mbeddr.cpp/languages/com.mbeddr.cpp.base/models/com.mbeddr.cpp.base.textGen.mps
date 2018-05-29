@@ -1223,5 +1223,40 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="29cSqvdUjFp">
+    <ref role="WuzLi" to="wnzg:29cSqvcoIWH" resolve="NullPointerType" />
+    <node concept="11bSqf" id="29cSqvdUjFq" role="11c4hB">
+      <node concept="3clFbS" id="29cSqvdUjFr" role="2VODD2">
+        <node concept="lc7rE" id="29cSqvdUjFI" role="3cqZAp">
+          <node concept="la8eA" id="29cSqve1vuw" role="lcghm">
+            <property role="lacIc" value="std::nullptr_t" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="29cSqvdUjKq">
+    <ref role="WuzLi" to="wnzg:29cSqvcoIWG" resolve="NullPointerLiteral" />
+    <node concept="11bSqf" id="29cSqvdUjKr" role="11c4hB">
+      <node concept="3clFbS" id="29cSqvdUjKs" role="2VODD2">
+        <node concept="lc7rE" id="29cSqvdUjKJ" role="3cqZAp">
+          <node concept="la8eA" id="29cSqve1vsG" role="lcghm">
+            <property role="lacIc" value="nullptr" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="29cSqve8Gd0">
+    <property role="3GE5qa" value="class" />
+    <ref role="WuzLi" to="wnzg:3v5DuFDls_I" resolve="EmptyClassContent" />
+    <node concept="11bSqf" id="29cSqve8Gd1" role="11c4hB">
+      <node concept="3clFbS" id="29cSqve8Gd2" role="2VODD2">
+        <node concept="lc7rE" id="29cSqve8QPZ" role="3cqZAp">
+          <node concept="l8MVK" id="29cSqve8QRq" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -922,13 +922,14 @@
       <node concept="FysoC" id="7wcjSRttVN$" role="Fysvh">
         <ref role="FysoF" node="6KmaLbDZm15" resolve="ParentClass" />
       </node>
-      <node concept="3mBbG7" id="7wcjSRttVNB" role="3mBdys">
+      <node concept="3mBbG7" id="29cSqvdU9AJ" role="3mBdys">
         <property role="TrG5h" value="x" />
-        <node concept="26Vqph" id="7wcjSRttVNM" role="2C2TGm">
+        <property role="1wg9_F" value="public" />
+        <node concept="26Vqph" id="29cSqvdU9DR" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="3TlMh9" id="7wcjSRttVOd" role="3XIe9v">
+        <node concept="3TlMh9" id="29cSqvdU9Ei" role="3XIe9v">
           <property role="2hmy$m" value="0" />
         </node>
       </node>
@@ -961,7 +962,7 @@
           </node>
         </node>
         <node concept="z11KY" id="7wcjSRttVQk" role="1YC0t0">
-          <ref role="yVOcQ" node="7wcjSRttVNB" resolve="x" />
+          <ref role="yVOcQ" node="29cSqvdU9AJ" resolve="x" />
           <node concept="3ZUYvv" id="7wcjSRttVRj" role="yU53$">
             <ref role="3ZUYvu" node="7wcjSRttVPM" resolve="inputX" />
           </node>
@@ -998,6 +999,9 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+    </node>
+    <node concept="2NXPZ9" id="29cSqvdKMzS" role="N3F5h">
+      <property role="TrG5h" value="empty_1527585668588_10" />
     </node>
   </node>
 </model>
