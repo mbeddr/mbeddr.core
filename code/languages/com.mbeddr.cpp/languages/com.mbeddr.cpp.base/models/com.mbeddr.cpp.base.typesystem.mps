@@ -1500,16 +1500,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs8" id="3tvQSYciAXp" role="3cqZAp">
-                <node concept="3cpWsn" id="3tvQSYciAXs" role="3cpWs9">
-                  <property role="TrG5h" value="possibleOperators" />
-                  <node concept="A3Dl8" id="3tvQSYciAXm" role="1tU5fm">
-                    <node concept="3Tqbb2" id="3tvQSYciCac" role="A3Ik2">
-                      <ref role="ehGHo" to="wnzg:3LE5RBPQ$rY" resolve="OperatorOverloadDeclaration" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="3CCyXiw70Sd" role="3cqZAp">
                 <node concept="2YIFZM" id="3CCyXiw71p2" role="3clFbG">
                   <ref role="37wK5l" node="3CCyXiw3dK5" resolve="checkOperatorTypes" />
@@ -2092,16 +2082,6 @@
                           <ref role="cht4Q" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
                         </node>
                       </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3cpWs8" id="3CCyXivIaRz" role="3cqZAp">
-                <node concept="3cpWsn" id="3CCyXivIaR$" role="3cpWs9">
-                  <property role="TrG5h" value="possibleOperators" />
-                  <node concept="A3Dl8" id="3CCyXivIaR_" role="1tU5fm">
-                    <node concept="3Tqbb2" id="3CCyXivIaRA" role="A3Ik2">
-                      <ref role="ehGHo" to="wnzg:3LE5RBPQ$rY" resolve="OperatorOverloadDeclaration" />
                     </node>
                   </node>
                 </node>
