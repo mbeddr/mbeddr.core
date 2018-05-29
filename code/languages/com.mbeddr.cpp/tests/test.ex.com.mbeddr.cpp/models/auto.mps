@@ -37,6 +37,11 @@
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
+    <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
+      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
+        <property id="6113173064526131578" name="value" index="PhEJT" />
+      </concept>
+    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -49,7 +54,6 @@
       </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
-      <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U" />
       <concept id="3740685201966381453" name="com.mbeddr.cpp.base.structure.AutoDeclaration" flags="ng" index="1ObqNi">
         <child id="3243430093911523422" name="initialize" index="14qBCy" />
       </concept>
@@ -58,9 +62,7 @@
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
       </concept>
-      <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
-        <property id="1317894735999272944" name="exported" index="2OOxQR" />
-      </concept>
+      <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
       </concept>
@@ -141,34 +143,43 @@
   </node>
   <node concept="1whW_1" id="2O2YBLCmwEn">
     <property role="TrG5h" value="Auto" />
-    <node concept="1ObqNi" id="2O2YBLF37Nk" role="N3F5h">
+    <node concept="1ObqNi" id="2O2YBLFeReq" role="N3F5h">
       <property role="TrG5h" value="test" />
-      <node concept="3TlMh9" id="2O2YBLF37Nx" role="14qBCy">
+      <node concept="3TlMh9" id="2O2YBLFeReB" role="14qBCy">
         <property role="2hmy$m" value="1" />
       </node>
-      <node concept="3TlMgo" id="2O2YBLF37Nm" role="2C2TGm">
+      <node concept="3TlMgo" id="2O2YBLFeRes" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
     </node>
-    <node concept="1ObqNi" id="2O2YBLF37NH" role="N3F5h">
+    <node concept="1ObqNi" id="2O2YBLFeReN" role="N3F5h">
       <property role="TrG5h" value="test2" />
-      <node concept="2BOciq" id="2O2YBLF37O7" role="14qBCy">
-        <node concept="3TlMh9" id="2O2YBLF37Od" role="3TlMhJ">
+      <node concept="2BOciq" id="2O2YBLFeRfq" role="14qBCy">
+        <node concept="3TlMh9" id="2O2YBLFeRfw" role="3TlMhJ">
           <property role="2hmy$m" value="1" />
         </node>
-        <node concept="1S7827" id="2O2YBLF37NZ" role="3TlMhI">
-          <ref role="1S7826" node="2O2YBLF37Nk" resolve="test" />
+        <node concept="1S7827" id="2O2YBLFeRfi" role="3TlMhI">
+          <ref role="1S7826" node="2O2YBLFeReq" resolve="test" />
         </node>
       </node>
-      <node concept="3TlMgo" id="2O2YBLF37NL" role="2C2TGm">
+      <node concept="3TlMgo" id="2O2YBLFeReR" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
     </node>
-    <node concept="3mBW2U" id="2O2YBLF37OF" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="testClass" />
+    <node concept="1ObqNi" id="2aC9nXDWpIk" role="N3F5h">
+      <property role="TrG5h" value="test3" />
+      <node concept="PhEJO" id="2aC9nXDWpIT" role="14qBCy">
+        <property role="PhEJT" value="someString" />
+      </node>
+      <node concept="3TlMgo" id="2aC9nXDWpIo" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="2aC9nXDWpIX" role="N3F5h">
+      <property role="TrG5h" value="empty_1527489815707_1" />
     </node>
   </node>
 </model>

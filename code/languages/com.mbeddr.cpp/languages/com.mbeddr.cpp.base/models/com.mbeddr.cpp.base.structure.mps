@@ -393,8 +393,8 @@
     <node concept="PrWs8" id="2O2YBLEbGCQ" role="PzmwI">
       <ref role="PrY4T" to="2gv2:2by6456Kf3p" resolve="IMappableType" />
     </node>
-    <node concept="PrWs8" id="2O2YBLF0kcE" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1V3wYmOJsDm" resolve="IDontApplyTypesystemRules" />
+    <node concept="PrWs8" id="2O2YBLFafz1" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
     </node>
     <node concept="1TJgyj" id="2O2YBLDq81u" role="1TKVEi">
       <property role="IQ2ns" value="3243430093911523422" />
