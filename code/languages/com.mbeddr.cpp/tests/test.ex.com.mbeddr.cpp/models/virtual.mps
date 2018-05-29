@@ -71,6 +71,7 @@
       <concept id="4511589886097466673" name="com.mbeddr.cpp.base.structure.InheritanceInstance" flags="ng" index="FysoC">
         <reference id="4511589886097466674" name="parentClass" index="FysoF" />
       </concept>
+      <concept id="4353317802403516287" name="com.mbeddr.cpp.base.structure.LocalClassVarRef" flags="ng" index="3aNPw6" />
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <property id="5478191656157682870" name="static" index="gNYVZ" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
@@ -315,7 +316,7 @@
               <ref role="3mBbHN" node="6KmaLbE81K_" resolve="setFalse" />
               <node concept="3TlMhK" id="6KmaLbE9XKI" role="3mBtou" />
             </node>
-            <node concept="3ZVu4v" id="6KmaLbE9XIw" role="1_9fRO">
+            <node concept="3aNPw6" id="4L4CbxJOIFO" role="1_9fRO">
               <ref role="3ZVs_2" node="6KmaLbE9XGM" resolve="classA" />
             </node>
           </node>
@@ -347,7 +348,7 @@
                 <ref role="3ZVs_2" node="6KmaLbE822y" resolve="aBool" />
               </node>
             </node>
-            <node concept="3ZVu4v" id="6KmaLbE9XL3" role="1_9fRO">
+            <node concept="3aNPw6" id="4L4CbxJOIGt" role="1_9fRO">
               <ref role="3ZVs_2" node="6KmaLbE9XDP" resolve="classB" />
             </node>
           </node>

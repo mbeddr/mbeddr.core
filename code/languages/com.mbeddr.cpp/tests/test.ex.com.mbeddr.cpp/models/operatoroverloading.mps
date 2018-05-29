@@ -156,7 +156,6 @@
       </concept>
       <concept id="3820836583575227340" name="com.mbeddr.core.expressions.structure.DirectPlusAssignmentExpression" flags="ng" index="TPXPH" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
-      <concept id="9013371069685926132" name="com.mbeddr.core.expressions.structure.BitwiseXORExpression" flags="ng" index="3ov6nf" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="6610873504380029780" name="com.mbeddr.core.expressions.structure.CastExpression" flags="ng" index="1S8S4T">
         <child id="6610873504380029790" name="targetType" index="1S8S4N" />
@@ -564,24 +563,6 @@
             </node>
             <node concept="3TlMh9" id="3LE5RBQF7cN" role="3XIe9u">
               <property role="2hmy$m" value="5" />
-            </node>
-          </node>
-          <node concept="1_9egQ" id="1uKPZVPxUsL" role="3XIRFZ">
-            <node concept="3ov6nf" id="1uKPZVPxUuO" role="1_9egR">
-              <node concept="1S8S4T" id="1uKPZVPxUxC" role="3TlMhJ">
-                <node concept="2BPB98" id="1uKPZVPxUxD" role="1S8S4V">
-                  <node concept="3TlMh9" id="1uKPZVPxUz0" role="1_9fRO">
-                    <property role="2hmy$m" value="5" />
-                  </node>
-                </node>
-                <node concept="26Vqqz" id="1uKPZVPxUym" role="1S8S4N">
-                  <property role="2caQfQ" value="false" />
-                  <property role="2c7vTL" value="false" />
-                </node>
-              </node>
-              <node concept="3aNPw6" id="1uKPZVPHeZf" role="3TlMhI">
-                <ref role="3ZVs_2" node="3LE5RBQCK4i" resolve="a" />
-              </node>
             </node>
           </node>
           <node concept="1_9egQ" id="1uKPZVP4DE0" role="3XIRFZ">
