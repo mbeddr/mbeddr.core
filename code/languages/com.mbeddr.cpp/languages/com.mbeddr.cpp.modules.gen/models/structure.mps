@@ -6,7 +6,6 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -86,6 +85,15 @@
     </node>
     <node concept="PrWs8" id="2Ai0GtaeAMt" role="PzmwI">
       <ref role="PrY4T" to="wnzg:4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7DDmkzf7zb">
+    <property role="EcuMT" value="137823117412956363" />
+    <property role="TrG5h" value="GenConstructorPrototype" />
+    <property role="34LRSv" value="gen constructor prototype" />
+    <ref role="1TJDcQ" to="wnzg:6NtgknWJ21h" resolve="ClassConstructorSignature" />
+    <node concept="PrWs8" id="4KyQ_Qh$YaF" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
   </node>
 </model>

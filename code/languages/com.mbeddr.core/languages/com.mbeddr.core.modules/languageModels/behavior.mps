@@ -513,6 +513,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
+        <property id="779128492853934523" name="cellId" index="1K8rM7" />
+        <property id="779128492853699361" name="side" index="1Kfyot" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -1937,9 +1941,15 @@
     </node>
     <node concept="13i0hz" id="5DwX9xlFNJe" role="13h7CS">
       <property role="TrG5h" value="flattenedContents" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
       <node concept="3Tm1VV" id="5DwX9xlFNJf" role="1B3o_S" />
       <node concept="2I9FWS" id="5DwX9xlGDac" role="3clF45">
         <ref role="2I9WkF" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+        <node concept="1KehLL" id="P_H7yunMRW" role="lGtFl">
+          <property role="1K8rM7" value="Constant_pv0rjz_a0" />
+          <property role="1Kfyot" value="left" />
+        </node>
       </node>
       <node concept="3clFbS" id="5DwX9xlFNJh" role="3clF47">
         <node concept="3cpWs8" id="5DwX9xlFNJm" role="3cqZAp">
@@ -3167,6 +3177,20 @@
       </node>
       <node concept="10P_77" id="4rAJNZmWIkZ" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="ZKpU3BK7B7" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="shouldAppearInHeader" />
+      <node concept="3Tm1VV" id="ZKpU3BK7B8" role="1B3o_S" />
+      <node concept="10P_77" id="ZKpU3BK8E3" role="3clF45" />
+      <node concept="3clFbS" id="ZKpU3BK7Ba" role="3clF47">
+        <node concept="3clFbF" id="ZKpU3BK8Ew" role="3cqZAp">
+          <node concept="3clFbT" id="ZKpU3BK8Ev" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="z9jHpQsjLs">
     <property role="3GE5qa" value="functions" />
@@ -3676,7 +3700,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getParentPopup" />
-      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getParentPopup" />
+      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getCategory" />
       <node concept="3Tm1VV" id="1uL8CIsPEvN" role="1B3o_S" />
       <node concept="3clFbS" id="1uL8CIsPEvQ" role="3clF47">
         <node concept="3clFbF" id="1uL8CIsPIrk" role="3cqZAp">
@@ -4480,6 +4504,7 @@
     </node>
     <node concept="13i0hz" id="4GT16cGhZhY" role="13h7CS">
       <property role="TrG5h" value="importsForImplementation" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="4GT16cGhZhZ" role="1B3o_S" />
       <node concept="3clFbS" id="4GT16cGhZi1" role="3clF47">
         <node concept="3clFbF" id="4GT16cGhZiL" role="3cqZAp">
@@ -4562,6 +4587,7 @@
     </node>
     <node concept="13i0hz" id="4GT16cGhZmM" role="13h7CS">
       <property role="TrG5h" value="importsForHeader" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="4GT16cGhZmN" role="1B3o_S" />
       <node concept="3clFbS" id="4GT16cGhZmO" role="3clF47">
         <node concept="3clFbF" id="4GT16cGhZmP" role="3cqZAp">
@@ -5198,7 +5224,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getParentPopup" />
-      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getParentPopup" />
+      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getCategory" />
       <node concept="3Tm1VV" id="1uL8CIsQ1Tp" role="1B3o_S" />
       <node concept="3clFbS" id="1uL8CIsQ1Ts" role="3clF47">
         <node concept="3clFbF" id="1uL8CIsQ5g$" role="3cqZAp">
@@ -5237,6 +5263,7 @@
     </node>
     <node concept="13i0hz" id="1H6zsul5X7v" role="13h7CS">
       <property role="TrG5h" value="allFunctionsWithoutInlineHeaderFunctions" />
+      <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="1H6zsul5X7w" role="1B3o_S" />
       <node concept="A3Dl8" id="1H6zsul5X7x" role="3clF45">
         <node concept="3Tqbb2" id="1H6zsul5X7y" role="A3Ik2">
