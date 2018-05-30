@@ -619,9 +619,6 @@
   <node concept="bUwia" id="1x_Jrt9NfJl">
     <property role="TrG5h" value="main" />
     <property role="3GE5qa" value="main" />
-    <node concept="1puMqW" id="dxqELdrL6D" role="1pvy6N">
-      <ref role="1puQsG" node="dxqELdrTeE" resolve="sortContents" />
-    </node>
     <node concept="1puMqW" id="6QawkaJdA2D" role="1puA0r">
       <ref role="1puQsG" node="6QawkaJd$1u" resolve="handleTransparentStructMembers" />
     </node>
@@ -1433,6 +1430,9 @@
       <ref role="2rTdP9" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
       <ref role="2rZz_L" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
     </node>
+    <node concept="1puMqW" id="ZKpU3Bm117" role="1pvy6N">
+      <ref role="1puQsG" node="dxqELdrTeE" resolve="sortContents" />
+    </node>
   </node>
   <node concept="1hFVJD" id="1x_Jrt9Ngzb">
     <property role="TrG5h" value="map_ImplementationModule_H" />
@@ -1507,23 +1507,33 @@
                         </node>
                       </node>
                       <node concept="3clFbF" id="3ilck8KrEIc" role="3cqZAp">
-                        <node concept="22lmx$" id="7jSUHHvja5_" role="3clFbG">
-                          <node concept="37vLTw" id="5HxjapweqD_" role="3uHU7w">
-                            <ref role="3cqZAo" node="7jSUHHvja4J" resolve="isGCD" />
+                        <node concept="22lmx$" id="ZKpU3BUydr" role="3clFbG">
+                          <node concept="2OqwBi" id="ZKpU3BUzn4" role="3uHU7w">
+                            <node concept="37vLTw" id="ZKpU3BUyZk" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3ilck8KrEIm" resolve="it" />
+                            </node>
+                            <node concept="2qgKlT" id="ZKpU3BU$Ac" role="2OqNvi">
+                              <ref role="37wK5l" to="qd6m:ZKpU3BK7B7" resolve="shouldAppearInHeader" />
+                            </node>
                           </node>
-                          <node concept="1eOMI4" id="7jSUHHvja68" role="3uHU7B">
-                            <node concept="1Wc70l" id="7jSUHHvja69" role="1eOMHV">
-                              <node concept="37vLTw" id="1IMNmPOx2or" role="3uHU7B">
-                                <ref role="3cqZAo" node="7jSUHHvja4w" resolve="notFUnctionOrGVD" />
-                              </node>
-                              <node concept="2OqwBi" id="7jSUHHvja6b" role="3uHU7w">
-                                <node concept="37vLTw" id="1IMNmPOxv$S" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="3ilck8KrEIm" resolve="it" />
+                          <node concept="22lmx$" id="7jSUHHvja5_" role="3uHU7B">
+                            <node concept="1eOMI4" id="7jSUHHvja68" role="3uHU7B">
+                              <node concept="1Wc70l" id="7jSUHHvja69" role="1eOMHV">
+                                <node concept="37vLTw" id="1IMNmPOx2or" role="3uHU7B">
+                                  <ref role="3cqZAo" node="7jSUHHvja4w" resolve="notFUnctionOrGVD" />
                                 </node>
-                                <node concept="3TrcHB" id="7jSUHHvja6d" role="2OqNvi">
-                                  <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+                                <node concept="2OqwBi" id="7jSUHHvja6b" role="3uHU7w">
+                                  <node concept="37vLTw" id="1IMNmPOxv$S" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="3ilck8KrEIm" resolve="it" />
+                                  </node>
+                                  <node concept="3TrcHB" id="7jSUHHvja6d" role="2OqNvi">
+                                    <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+                                  </node>
                                 </node>
                               </node>
+                            </node>
+                            <node concept="37vLTw" id="5HxjapweqD_" role="3uHU7w">
+                              <ref role="3cqZAo" node="7jSUHHvja4J" resolve="isGCD" />
                             </node>
                           </node>
                         </node>
