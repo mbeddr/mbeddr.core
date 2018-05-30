@@ -146,6 +146,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
     </node>
+    <node concept="PrWs8" id="6nKEiAiyM9j" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:4ZVDCZCa$xx" resolve="IOrdered" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4o2nsMgBIr5">
     <property role="EcuMT" value="5044697665789421253" />
