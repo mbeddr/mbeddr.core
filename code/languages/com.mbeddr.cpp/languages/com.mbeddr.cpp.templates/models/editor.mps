@@ -50,6 +50,7 @@
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
+        <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
@@ -107,6 +108,7 @@
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
+      <concept id="1176809959526" name="jetbrains.mps.lang.editor.structure.QueryFunction_Color" flags="in" index="3ZlJ5R" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
@@ -125,6 +127,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -255,8 +260,18 @@
     <node concept="3EZMnI" id="ZKpU3BvynU" role="2wV5jI">
       <node concept="3F0ifn" id="ZKpU3BvynV" role="3EZMnx">
         <property role="3F0ifm" value="template" />
-        <node concept="VechU" id="ZKpU3BvynW" role="3F10Kt">
-          <property role="Vb096" value="cyan" />
+        <node concept="VechU" id="2CEi94dgMB1" role="3F10Kt">
+          <property role="Vb096" value="DARK_MAGENTA" />
+          <node concept="3ZlJ5R" id="5v_KyvNSsuf" role="VblUZ">
+            <node concept="3clFbS" id="5v_KyvNSsug" role="2VODD2">
+              <node concept="3clFbF" id="5v_KyvNStPq" role="3cqZAp">
+                <node concept="10M0yZ" id="6gudvALptMR" role="3clFbG">
+                  <ref role="3cqZAo" to="r4b4:y826GHHfBE" resolve="METADATA" />
+                  <ref role="1PxDUh" to="r4b4:4tRpPVPUEa3" resolve="BasicColors" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="Vb9p2" id="ZKpU3BvynX" role="3F10Kt">
           <property role="Vbekb" value="BOLD" />
