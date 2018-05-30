@@ -387,9 +387,6 @@
     <node concept="PrWs8" id="2O2YBLCOCDj" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
-    <node concept="PrWs8" id="2O2YBLCVBag" role="PzmwI">
-      <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
-    </node>
     <node concept="PrWs8" id="2O2YBLEbGCQ" role="PzmwI">
       <ref role="PrY4T" to="2gv2:2by6456Kf3p" resolve="IMappableType" />
     </node>
