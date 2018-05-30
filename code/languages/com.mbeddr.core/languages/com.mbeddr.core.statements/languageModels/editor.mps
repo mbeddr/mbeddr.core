@@ -23,6 +23,7 @@
     <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="wcxw" ref="r:b9f36c08-4a75-4513-9277-a390d3426e0f(jetbrains.mps.editor.runtime.impl.cellActions)" />
+    <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -367,6 +368,7 @@
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="7408935449007508559" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition_expectedConcept" flags="ng" index="7dpZ6" />
       <concept id="7408935449007503509" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition" flags="ig" index="7duGs" />
+      <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
       <concept id="7272510943426093121" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_SideTransformActionsBuilderContext" flags="ng" index="2kS8pE" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
@@ -395,6 +397,7 @@
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="7408935449007570592" name="substituteCondition" index="7deOD" />
+        <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
       <concept id="2862331529394480355" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_SubConcept" flags="ng" index="1Lj6YZ" />
@@ -402,6 +405,7 @@
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
       </concept>
+      <concept id="6349233906483558394" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_wrappedConcept" flags="ng" index="1ZN7lz" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
@@ -555,7 +559,7 @@
         <node concept="3F1sOY" id="3CmSUB7FprJ" role="1kIj9b">
           <property role="1cu_pB" value="2" />
           <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
-          <ref role="1ERwB7" node="2VzPqUCsXOi" resolve="makeAssignmentFromLVD" />
+          <ref role="1ERwB7" node="2VzPqUCsXOi" resolve="makeAssignmentFromLVDs" />
           <node concept="pkWqt" id="3CmSUB7Fp$1" role="cStSX">
             <node concept="3clFbS" id="3CmSUB7Fp$2" role="2VODD2">
               <node concept="3clFbF" id="3CmSUB7Fp$3" role="3cqZAp">
@@ -567,6 +571,43 @@
                     </node>
                   </node>
                   <node concept="3w_OXm" id="6iIoqg1yAeC" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2e7140" id="6hUtorDR1wB" role="2e1Fq_">
+          <node concept="3clFbS" id="6hUtorDR1wC" role="2VODD2">
+            <node concept="3SKdUt" id="6hUtorDR1Jy" role="3cqZAp">
+              <node concept="3SKdUq" id="6hUtorDR1Jz" role="3SKWNk">
+                <property role="3SKdUp" value="Prevent it from completing the wrap if the type is a ClassType in CPP" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="6hUtorDR21C" role="3cqZAp">
+              <node concept="3fqX7Q" id="6hUtorDR2gn" role="3cqZAk">
+                <node concept="2OqwBi" id="6hUtorDR3SN" role="3fr31v">
+                  <node concept="1Lj6YZ" id="6hUtorDR3rt" role="2Oq$k0" />
+                  <node concept="3O6GUB" id="6hUtorDR4An" role="2OqNvi">
+                    <node concept="chp4Y" id="6hUtorDR5hy" role="3QVz_e">
+                      <ref role="cht4Q" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="7duGs" id="6hUtorDSVzO" role="7deOD">
+          <node concept="3clFbS" id="6hUtorDSVzP" role="2VODD2">
+            <node concept="3cpWs6" id="6hUtorDSWgb" role="3cqZAp">
+              <node concept="3fqX7Q" id="6hUtorDSWuP" role="3cqZAk">
+                <node concept="2OqwBi" id="6hUtorDSWSk" role="3fr31v">
+                  <node concept="1ZN7lz" id="6hUtorDUyuX" role="2Oq$k0" />
+                  <node concept="3O6GUB" id="6hUtorDSXam" role="2OqNvi">
+                    <node concept="chp4Y" id="6hUtorDSXka" role="3QVz_e">
+                      <ref role="cht4Q" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -2157,7 +2198,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="2VzPqUCsXOi">
-    <property role="TrG5h" value="makeAssignmentFromLVD" />
+    <property role="TrG5h" value="makeAssignmentFromLVDs" />
     <ref role="1h_SK9" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
     <node concept="1hA7zw" id="2VzPqUCsXOj" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
