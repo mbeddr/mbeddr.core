@@ -211,7 +211,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="1iZHTjWGZLa" role="2OqNvi">
-                  <ref role="37wK5l" to="kntn:2QDt3lyralp" resolve="resolveTemplateType" />
+                  <ref role="37wK5l" to="kntn:6_kdBKMGct1" resolve="resolveTemplateType" />
                   <node concept="37vLTw" id="1iZHTjWH0BR" role="37wK5m">
                     <ref role="3cqZAo" node="1iZHTjWG$gq" resolve="attributeType" />
                   </node>
@@ -288,7 +288,7 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="327D75EHcss" role="2OqNvi">
-                      <ref role="37wK5l" to="kntn:2QDt3lyralp" resolve="resolveTemplateType" />
+                      <ref role="37wK5l" to="kntn:6_kdBKMGct1" resolve="resolveTemplateType" />
                       <node concept="37vLTw" id="327D75EHc_P" role="37wK5m">
                         <ref role="3cqZAo" node="2QDt3lyu_RG" resolve="attributeType" />
                       </node>
@@ -418,7 +418,7 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="327D75EIz$P" role="2OqNvi">
-                      <ref role="37wK5l" to="kntn:2QDt3lyralp" resolve="resolveTemplateType" />
+                      <ref role="37wK5l" to="kntn:6_kdBKMGct1" resolve="resolveTemplateType" />
                       <node concept="37vLTw" id="327D75EI$FS" role="37wK5m">
                         <ref role="3cqZAo" node="2QDt3lyuNCP" resolve="methodType" />
                       </node>
@@ -565,7 +565,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="1iZHTjWGYDR" role="2OqNvi">
-                  <ref role="37wK5l" to="kntn:2QDt3lyralp" resolve="resolveTemplateType" />
+                  <ref role="37wK5l" to="kntn:6_kdBKMGct1" resolve="resolveTemplateType" />
                   <node concept="37vLTw" id="1iZHTjWGZ5S" role="37wK5m">
                     <ref role="3cqZAo" node="1iZHTjWGvxR" resolve="methodType" />
                   </node>

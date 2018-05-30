@@ -10,6 +10,7 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <use id="b341759a-c721-4072-90cf-328bb2724684" name="com.mbeddr.cpp.expressions" version="0" />
+    <use id="5e6018dc-dc26-4070-9526-663fdbfe4c10" name="com.mbeddr.cpp.templates" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -175,7 +176,6 @@
         <reference id="4511589886097466674" name="parentClass" index="FysoF" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
-        <property id="5478191656157682870" name="static" index="gNYVZ" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="5044697665789423998" name="com.mbeddr.cpp.base.structure.INamedClassMemberDeclaration" flags="ng" index="3mBaMM">
@@ -2021,7 +2021,6 @@
         </node>
         <node concept="3mB1cK" id="ZKpU3Cesmk" role="1zE6T_">
           <property role="1wg9_F" value="private" />
-          <property role="gNYVZ" value="false" />
           <property role="TrG5h" value="foo" />
           <node concept="19Rifw" id="ZKpU3Cesml" role="2C2TGm">
             <property role="2caQfQ" value="false" />
@@ -2213,7 +2212,6 @@
         </node>
         <node concept="3mB1cK" id="ZKpU3CeqFX" role="1zE6T_">
           <property role="1wg9_F" value="private" />
-          <property role="gNYVZ" value="false" />
           <property role="TrG5h" value="foo" />
           <node concept="19Rifw" id="ZKpU3CeqFY" role="2C2TGm">
             <property role="2caQfQ" value="false" />
@@ -2333,7 +2331,6 @@
         </node>
         <node concept="3mB1cK" id="ZKpU3Ce3NM" role="1zE6T_">
           <property role="1wg9_F" value="private" />
-          <property role="gNYVZ" value="false" />
           <property role="TrG5h" value="foo" />
           <node concept="19Rifw" id="ZKpU3Ce44r" role="2C2TGm">
             <property role="2caQfQ" value="false" />

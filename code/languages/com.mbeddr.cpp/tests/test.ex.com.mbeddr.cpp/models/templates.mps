@@ -97,7 +97,6 @@
         <reference id="4511589886097466674" name="parentClass" index="FysoF" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
-        <property id="5478191656157682870" name="static" index="gNYVZ" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="5044697665789423998" name="com.mbeddr.cpp.base.structure.INamedClassMemberDeclaration" flags="ng" index="3mBaMM">
@@ -421,7 +420,6 @@
       </node>
       <node concept="3mB1cK" id="ZKpU3Ccmax" role="3mBdys">
         <property role="1wg9_F" value="public" />
-        <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="lastItem" />
         <node concept="3XnNuS" id="ZKpU3Ccmbs" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -473,7 +471,6 @@
       <property role="TrG5h" value="IntList" />
       <node concept="3mB1cK" id="1iZHTjWGqmZ" role="3mBdys">
         <property role="1wg9_F" value="public" />
-        <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="sum" />
         <node concept="26Vqph" id="1iZHTjWGqs4" role="2C2TGm">
           <property role="2caQfQ" value="false" />
