@@ -58,9 +58,6 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
-      <concept id="8667582976643931813" name="com.mbeddr.core.modules.structure.ImplementsExternalFunction" flags="ng" index="oneTI">
-        <reference id="8667582976643954445" name="implements" index="on8v6" />
-      </concept>
       <concept id="6116558314501417952" name="com.mbeddr.core.modules.structure.HeaderDescriptor" flags="ng" index="rcWE1" />
       <concept id="6116558314501417921" name="com.mbeddr.core.modules.structure.ExternalModule" flags="ng" index="rcWEw">
         <child id="6116558314501417978" name="descriptors" index="rcWEr" />
@@ -97,9 +94,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -191,19 +185,6 @@
     </node>
     <node concept="2NXPZ9" id="z4vv_ojQSn" role="N3F5h">
       <property role="TrG5h" value="empty_1527679993745_3" />
-    </node>
-    <node concept="N3Fnx" id="z4vv_ojQWk" role="N3F5h">
-      <property role="TrG5h" value="foo" />
-      <property role="2OOxQR" value="false" />
-      <ref role="on8v6" node="z4vv_ojQOV" resolve="foo" />
-      <node concept="3XIRFW" id="z4vv_ojQWm" role="3XIRFX">
-        <node concept="3XISUE" id="z4vv_ojQWn" role="3XIRFZ" />
-      </node>
-      <node concept="19Rifw" id="z4vv_ojQUn" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="oneTI" id="z4vv_ojQYl" role="lGtFl" />
     </node>
   </node>
   <node concept="N3F5e" id="58DJDcMhRF1">
