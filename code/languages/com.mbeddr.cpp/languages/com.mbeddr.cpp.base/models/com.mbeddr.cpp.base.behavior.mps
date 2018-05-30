@@ -1601,7 +1601,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="r2pGcfLDuM">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="13h7C2" to="wnzg:383ZxwZrBkp" resolve="NamespaceAttributeRef" />
     <node concept="13i0hz" id="r2pGcfLSaj" role="13h7CS">
       <property role="TrG5h" value="isDistantAncestorOf" />
@@ -3906,7 +3906,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7RFM8R3Sz_z">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="13h7C2" to="wnzg:7RFM8R3Me1y" resolve="NamespaceClassInstance" />
     <node concept="13i0hz" id="7RFM8R3Sz_I" role="13h7CS">
       <property role="TrG5h" value="classesWithinNamespaces" />
@@ -4282,7 +4282,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="383ZxwZuROF">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="13h7C2" to="wnzg:383ZxwZrBky" resolve="NamespaceMethodCall" />
     <node concept="13i0hz" id="383ZxwZuROQ" role="13h7CS">
       <property role="TrG5h" value="getActuals" />
@@ -6685,7 +6685,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7fNEwq_qWn3">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="13h7C2" to="wnzg:7fNEwq_6ZJn" resolve="NamespaceClassInstanceAttributeRef" />
     <node concept="13i0hz" id="7fNEwq_qWne" role="13h7CS">
       <property role="TrG5h" value="allPublicAttributes" />
@@ -6765,7 +6765,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="383ZxwZt1$1">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="13h7C2" to="wnzg:383ZxwZqQYo" resolve="NamespaceDeclaration" />
     <node concept="13i0hz" id="383ZxwZt1$c" role="13h7CS">
       <property role="TrG5h" value="getMembers" />
@@ -7112,7 +7112,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7fNEwqBx$7c">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="13h7C2" to="wnzg:7fNEwqBx$6S" resolve="NamespaceClassInstanceMethodCall" />
     <node concept="13i0hz" id="7fNEwqBxD2s" role="13h7CS">
       <property role="TrG5h" value="allPublicMethods" />

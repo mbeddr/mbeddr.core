@@ -224,7 +224,7 @@
   </registry>
   <node concept="1YbPZF" id="383ZxwZuZXy">
     <property role="TrG5h" value="typeof_NamespaceMethodCall" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <node concept="3clFbS" id="383ZxwZuZXz" role="18ibNy">
       <node concept="1Z5TYs" id="383ZxwZv0jk" role="3cqZAp">
         <node concept="mw_s8" id="383ZxwZv0jI" role="1ZfhKB">
@@ -261,7 +261,7 @@
   </node>
   <node concept="1YbPZF" id="7fNEwq_kdh2">
     <property role="TrG5h" value="typeof_NamespaceClassInstanceRef" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <node concept="3clFbS" id="7fNEwq_kdh3" role="18ibNy">
       <node concept="1Z5TYs" id="7fNEwq_kdtk" role="3cqZAp">
         <node concept="mw_s8" id="7fNEwq_kdtI" role="1ZfhKB">
@@ -298,7 +298,7 @@
   </node>
   <node concept="1YbPZF" id="383ZxwZuziJ">
     <property role="TrG5h" value="typeof_NamespaceAttributeRef" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <node concept="3clFbS" id="383ZxwZuziK" role="18ibNy">
       <node concept="1Z5TYs" id="383ZxwZuzva" role="3cqZAp">
         <node concept="mw_s8" id="383ZxwZuzv$" role="1ZfhKB">

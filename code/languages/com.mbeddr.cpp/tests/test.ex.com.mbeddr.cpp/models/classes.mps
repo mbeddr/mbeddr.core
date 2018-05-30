@@ -80,6 +80,7 @@
       <concept id="2277423264798199359" name="com.mbeddr.cpp.base.structure.IInlineFlagConcept" flags="ng" index="226Gpr">
         <property id="2277423264798199360" name="isInlined" index="226Go$" />
       </concept>
+      <concept id="3604003506923204504" name="com.mbeddr.cpp.base.structure.NamespaceDeclaration" flags="ng" index="dq960" />
       <concept id="7240228573260630076" name="com.mbeddr.cpp.base.structure.ConstructorVoidType" flags="ng" index="2dFNQU" />
       <concept id="7844497894798008401" name="com.mbeddr.cpp.base.structure.ClassConstructorSignature" flags="ng" index="2gom4k">
         <property id="6088872510303555204" name="is_destructor" index="3BMcJd" />
@@ -382,6 +383,10 @@
         </node>
       </node>
     </node>
+    <node concept="2NXPZ9" id="3UJ18qjr0Y3" role="N3F5h">
+      <property role="TrG5h" value="empty_1527686545203_3" />
+    </node>
+    <node concept="dq960" id="3UJ18qjr15B" role="N3F5h" />
     <node concept="2NXPZ9" id="45rBLTDXEWp" role="N3F5h">
       <property role="TrG5h" value="empty_1526547438983_6" />
     </node>

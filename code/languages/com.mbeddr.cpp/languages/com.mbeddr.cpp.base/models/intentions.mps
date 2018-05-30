@@ -111,7 +111,7 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="6gFj6grWxqS">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="SwitchToMethodCall" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wnzg:383ZxwZrBkp" resolve="NamespaceAttributeRef" />
@@ -192,7 +192,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="6gFj6gsaGUT">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="SwitchToAttributeRef" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wnzg:383ZxwZrBky" resolve="NamespaceMethodCall" />
@@ -273,7 +273,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="6gFj6gsz60t">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="SwitchToUsingMethodDecFromAtt" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wnzg:1$h5d7v1dEb" resolve="UsingNamespaceAttributeDeclaration" />
@@ -354,7 +354,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="6gFj6gszabp">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="SwitchToUsingAttributeDecFromMeth" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wnzg:1rolTiuOPQt" resolve="UsingNamespaceMethodDeclaration" />
@@ -435,7 +435,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7RFM8R0kqQ0">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="SwitchToUsingNamespaceFromAtt" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wnzg:1$h5d7v1dEb" resolve="UsingNamespaceAttributeDeclaration" />
@@ -516,7 +516,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7RFM8R0kv8D">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="SwitchToUsingNamespaceFromMeth" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wnzg:1rolTiuOPQt" resolve="UsingNamespaceMethodDeclaration" />
@@ -597,7 +597,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7RFM8R0k_86">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="SwitchToUsingAttributeDecFromFull" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wnzg:1$h5d7wdNkU" resolve="UsingGeneralNamespaceDeclaration" />
@@ -678,7 +678,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7RFM8R0kISK">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="SwitchToUsingMethodDecFromFull" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="wnzg:1$h5d7wdNkU" resolve="UsingGeneralNamespaceDeclaration" />

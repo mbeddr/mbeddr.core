@@ -682,7 +682,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="383ZxwZuAl6">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="wnzg:383ZxwZrBky" resolve="NamespaceMethodCall" />
     <node concept="3EZMnI" id="383ZxwZuAl8" role="2wV5jI">
       <node concept="3EZMnI" id="dx81$Jcs1n" role="3EZMnx">
@@ -864,12 +864,12 @@
     </node>
   </node>
   <node concept="24kQdi" id="6gFj6gpBJFr">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="wnzg:6gFj6gpBJFg" resolve="GlobalUsingGeneralNamespaceDeclaration" />
     <node concept="3EZMnI" id="6gFj6gpBKdZ" role="2wV5jI">
       <node concept="3F0ifn" id="6gFj6gpBKe0" role="3EZMnx">
         <property role="3F0ifm" value="using namespace" />
-        <ref role="1k5W1q" node="1rolTiuXHGi" resolve="NSU" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="1HlG4h" id="6gFj6gpBKe1" role="3EZMnx">
         <node concept="1HfYo3" id="6gFj6gpBKe2" role="1HlULh">
@@ -977,7 +977,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7fNEwq_6ZK4">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="wnzg:7fNEwq_6ZJn" resolve="NamespaceClassInstanceAttributeRef" />
     <node concept="3EZMnI" id="7fNEwq_6ZK7" role="2wV5jI">
       <node concept="1iCGBv" id="7fNEwq_6ZKh" role="3EZMnx">
@@ -1026,7 +1026,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="383ZxwZsUB4">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="wnzg:383ZxwZrBkp" resolve="NamespaceAttributeRef" />
     <node concept="3EZMnI" id="383ZxwZsUB6" role="2wV5jI">
       <node concept="3EZMnI" id="r2pGcfQ$VP" role="3EZMnx">
@@ -1140,12 +1140,12 @@
     </node>
   </node>
   <node concept="24kQdi" id="1$h5d7wdNl6">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="wnzg:1$h5d7wdNkU" resolve="UsingGeneralNamespaceDeclaration" />
     <node concept="3EZMnI" id="1$h5d7wdNlc" role="2wV5jI">
       <node concept="3F0ifn" id="1$h5d7wdNlF" role="3EZMnx">
         <property role="3F0ifm" value="using namespace" />
-        <ref role="1k5W1q" node="1rolTiuXHGi" resolve="NSU" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="1HlG4h" id="1$h5d7wKGpU" role="3EZMnx">
         <node concept="1HfYo3" id="1$h5d7wKGpW" role="1HlULh">
@@ -1236,12 +1236,12 @@
     </node>
   </node>
   <node concept="24kQdi" id="1$h5d7v1dER">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="wnzg:1$h5d7v1dEb" resolve="UsingNamespaceAttributeDeclaration" />
     <node concept="3EZMnI" id="1$h5d7v1emW" role="2wV5jI">
       <node concept="3F0ifn" id="1$h5d7v1emX" role="3EZMnx">
         <property role="3F0ifm" value="using" />
-        <ref role="1k5W1q" node="1rolTiuXHGi" resolve="NSU" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="1HlG4h" id="1$h5d7v1emY" role="3EZMnx">
         <node concept="1HfYo3" id="1$h5d7v1emZ" role="1HlULh">
@@ -1370,7 +1370,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="383ZxwZsUhv">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="wnzg:383ZxwZqQYo" resolve="NamespaceDeclaration" />
     <node concept="3EZMnI" id="383ZxwZsUhx" role="2wV5jI">
       <node concept="3EZMnI" id="383ZxwZsUhF" role="3EZMnx">
@@ -1379,7 +1379,7 @@
         </node>
         <node concept="3F0ifn" id="383ZxwZsUhT" role="3EZMnx">
           <property role="3F0ifm" value="namespace" />
-          <ref role="1k5W1q" node="383ZxwZsUkR" resolve="NS" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
         </node>
         <node concept="3F0A7n" id="383ZxwZsUi2" role="3EZMnx">
           <property role="1cu_pB" value="0" />
@@ -1417,12 +1417,12 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RFM8R0xwrp">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="wnzg:7RFM8R0xwre" resolve="GlobalUsingNamespaceAttributeDeclaration" />
     <node concept="3EZMnI" id="7RFM8R0xwrx" role="2wV5jI">
       <node concept="3F0ifn" id="7RFM8R0xwry" role="3EZMnx">
         <property role="3F0ifm" value="using" />
-        <ref role="1k5W1q" node="1rolTiuXHGi" resolve="NSU" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="1HlG4h" id="7RFM8R0xwrz" role="3EZMnx">
         <node concept="1HfYo3" id="7RFM8R0xwr$" role="1HlULh">
@@ -1531,7 +1531,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7fNEwqBx$79">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="wnzg:7fNEwqBx$6S" resolve="NamespaceClassInstanceMethodCall" />
     <node concept="3EZMnI" id="7fNEwqBx_4A" role="2wV5jI">
       <node concept="1iCGBv" id="7fNEwqBx_4U" role="3EZMnx">
@@ -1648,7 +1648,7 @@
     </node>
   </node>
   <node concept="V5hpn" id="383ZxwZsUkN">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="NamespaceImplementation" />
     <node concept="14StLt" id="383ZxwZsUkR" role="V601i">
       <property role="TrG5h" value="NS" />
@@ -1674,7 +1674,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RFM8R3Me2l">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="wnzg:7RFM8R3Me1y" resolve="NamespaceClassInstance" />
     <node concept="3EZMnI" id="7RFM8R3Me2r" role="2wV5jI">
       <node concept="1HlG4h" id="7RFM8R40pvP" role="3EZMnx">
@@ -1764,12 +1764,12 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RFM8R0Rm5A">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="wnzg:7RFM8R0Rm5q" resolve="GlobalUsingNamespaceMethodDeclaration" />
     <node concept="3EZMnI" id="7RFM8R0Rm67" role="2wV5jI">
       <node concept="3F0ifn" id="7RFM8R0Rm68" role="3EZMnx">
         <property role="3F0ifm" value="using" />
-        <ref role="1k5W1q" node="1rolTiuXHGi" resolve="NSU" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="1HlG4h" id="7RFM8R0Rm69" role="3EZMnx">
         <node concept="1HfYo3" id="7RFM8R0Rm6a" role="1HlULh">
@@ -1878,12 +1878,12 @@
     </node>
   </node>
   <node concept="24kQdi" id="1rolTiuOPR0">
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="wnzg:1rolTiuOPQt" resolve="UsingNamespaceMethodDeclaration" />
     <node concept="3EZMnI" id="1rolTiuOPR2" role="2wV5jI">
       <node concept="3F0ifn" id="1rolTiuOPRc" role="3EZMnx">
         <property role="3F0ifm" value="using" />
-        <ref role="1k5W1q" node="1rolTiuXHGi" resolve="NSU" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="1HlG4h" id="1rolTiuWJKc" role="3EZMnx">
         <node concept="1HfYo3" id="1rolTiuWJKe" role="1HlULh">

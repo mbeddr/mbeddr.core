@@ -300,7 +300,7 @@
   </node>
   <node concept="1TIwiD" id="6gFj6gpBJFg">
     <property role="EcuMT" value="7217946820601641680" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="GlobalUsingGeneralNamespaceDeclaration" />
     <property role="34LRSv" value="using" />
     <property role="R4oN_" value="Using namespace &lt;...&gt;" />
@@ -318,7 +318,7 @@
   </node>
   <node concept="1TIwiD" id="7RFM8R0xwre">
     <property role="EcuMT" value="9073566385413949134" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="GlobalUsingNamespaceAttributeDeclaration" />
     <property role="34LRSv" value="using" />
     <property role="R4oN_" value="Using a namespace attribute" />
@@ -343,7 +343,7 @@
   </node>
   <node concept="1TIwiD" id="7RFM8R0Rm5q">
     <property role="EcuMT" value="9073566385419673946" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="GlobalUsingNamespaceMethodDeclaration" />
     <property role="34LRSv" value="using" />
     <property role="R4oN_" value="Using a namespace method" />
@@ -368,7 +368,7 @@
   </node>
   <node concept="PlHQZ" id="383ZxwZsgd5">
     <property role="EcuMT" value="3604003506923569989" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="INamedNamespaceMemberDeclaration" />
     <node concept="PrWs8" id="383ZxwZsgd6" role="PrDN$">
       <ref role="PrY4T" node="383ZxwZsgd4" resolve="INamespaceMemberDeclaration" />
@@ -379,12 +379,12 @@
   </node>
   <node concept="PlHQZ" id="383ZxwZsgd4">
     <property role="EcuMT" value="3604003506923569988" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="INamespaceMemberDeclaration" />
   </node>
   <node concept="1TIwiD" id="383ZxwZrBkp">
     <property role="EcuMT" value="3604003506923402521" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="NamespaceAttributeRef" />
     <property role="34LRSv" value="::" />
     <property role="R4oN_" value="Call a namespace attribute" />
@@ -409,7 +409,7 @@
   </node>
   <node concept="1TIwiD" id="7RFM8R3Me1y">
     <property role="EcuMT" value="9073566385468661858" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="NamespaceClassInstance" />
     <property role="34LRSv" value="class instance" />
     <property role="R4oN_" value="Create instance of namespace class" />
@@ -430,7 +430,7 @@
   </node>
   <node concept="1TIwiD" id="7fNEwq_6ZJn">
     <property role="EcuMT" value="8355208679219002327" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="NamespaceClassInstanceAttributeRef" />
     <property role="R4oN_" value="Refer to namespace class attribute" />
     <property role="34LRSv" value="." />
@@ -452,7 +452,7 @@
   </node>
   <node concept="1TIwiD" id="7fNEwqBx$6S">
     <property role="EcuMT" value="8355208679259521464" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="NamespaceClassInstanceMethodCall" />
     <property role="34LRSv" value="." />
     <property role="R4oN_" value="Refer to namespace class method" />
@@ -487,7 +487,7 @@
     <property role="TrG5h" value="NamespaceDeclaration" />
     <property role="34LRSv" value="namespace" />
     <property role="R4oN_" value="New namespace" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="383ZxwZrBkm" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -508,7 +508,7 @@
   </node>
   <node concept="1TIwiD" id="383ZxwZrBky">
     <property role="EcuMT" value="3604003506923402530" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="NamespaceMethodCall" />
     <property role="34LRSv" value="::" />
     <property role="R4oN_" value="Call a namespace method" />
@@ -543,7 +543,7 @@
   </node>
   <node concept="1TIwiD" id="1$h5d7wdNkU">
     <property role="EcuMT" value="1806247817194714426" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="UsingGeneralNamespaceDeclaration" />
     <property role="34LRSv" value="using" />
     <property role="R4oN_" value="Using namespace &lt;...&gt;" />
@@ -561,7 +561,7 @@
   </node>
   <node concept="1TIwiD" id="1$h5d7v1dEb">
     <property role="EcuMT" value="1806247817174637195" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="UsingNamespaceAttributeDeclaration" />
     <property role="34LRSv" value="using" />
     <property role="R4oN_" value="Using a namespace attribute" />
@@ -586,7 +586,7 @@
   </node>
   <node concept="1TIwiD" id="1rolTiuOPQt">
     <property role="EcuMT" value="1646161959635344797" />
-    <property role="3GE5qa" value="Namespace" />
+    <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="UsingNamespaceMethodDeclaration" />
     <property role="34LRSv" value="using" />
     <property role="R4oN_" value="Using a namespace method" />
