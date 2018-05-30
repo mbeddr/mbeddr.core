@@ -673,21 +673,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="5eDFAXBRNV4" role="3cqZAp">
-          <node concept="3clFbS" id="5eDFAXBRNV6" role="3clFbx">
-            <node concept="lc7rE" id="5eDFAXBROVP" role="3cqZAp">
-              <node concept="la8eA" id="5eDFAXBROWf" role="lcghm">
-                <property role="lacIc" value="extern " />
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="5eDFAXBROtb" role="3clFbw">
-            <node concept="117lpO" id="5eDFAXBROdg" role="2Oq$k0" />
-            <node concept="3TrcHB" id="5eDFAXBRORe" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:5eDFAXBRENo" resolve="isExtern" />
-            </node>
-          </node>
-        </node>
         <node concept="lc7rE" id="3v5DuFDt$Zt" role="3cqZAp">
           <node concept="l9hG8" id="3v5DuFDt$ZR" role="lcghm">
             <node concept="2OqwBi" id="3v5DuFDt_c5" role="lb14g">
