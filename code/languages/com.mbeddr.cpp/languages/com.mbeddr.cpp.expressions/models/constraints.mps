@@ -229,7 +229,7 @@
                       <property role="3SKdUp" value="Data attributes on the class" />
                     </node>
                   </node>
-                  <node concept="3clFbF" id="6oRbCP68lXO" role="3cqZAp">
+                  <node concept="3clFbF" id="ZKpU3CiKRm" role="3cqZAp">
                     <node concept="2OqwBi" id="6oRbCP68lXP" role="3clFbG">
                       <node concept="37vLTw" id="6oRbCP68lXQ" role="2Oq$k0">
                         <ref role="3cqZAo" node="6oRbCP67NZ0" resolve="compScope" />
@@ -237,8 +237,8 @@
                       <node concept="liA8E" id="6oRbCP68lXR" role="2OqNvi">
                         <ref role="37wK5l" to="o8zo:7ipADkTevN6" resolve="addScope" />
                         <node concept="2YIFZM" id="6oRbCP68lXS" role="37wK5m">
-                          <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
                           <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                          <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
                           <node concept="2OqwBi" id="6oRbCP68lXT" role="37wK5m">
                             <node concept="2OqwBi" id="6oRbCP68lXU" role="2Oq$k0">
                               <node concept="2GrUjf" id="6oRbCP68lXV" role="2Oq$k0">
@@ -258,26 +258,26 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6oRbCP682SV" role="3cqZAp">
-                <node concept="2OqwBi" id="6oRbCP6839J" role="3clFbG">
-                  <node concept="37vLTw" id="6oRbCP682ST" role="2Oq$k0">
+              <node concept="3clFbF" id="2QDt3lywL7R" role="3cqZAp">
+                <node concept="2OqwBi" id="2QDt3lywL7S" role="3clFbG">
+                  <node concept="37vLTw" id="2QDt3lywL7T" role="2Oq$k0">
                     <ref role="3cqZAo" node="6oRbCP67NZ0" resolve="compScope" />
                   </node>
-                  <node concept="liA8E" id="6oRbCP683_D" role="2OqNvi">
+                  <node concept="liA8E" id="2QDt3lywL7U" role="2OqNvi">
                     <ref role="37wK5l" to="o8zo:7ipADkTevN6" resolve="addScope" />
-                    <node concept="2YIFZM" id="6oRbCP684rg" role="37wK5m">
-                      <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+                    <node concept="2YIFZM" id="2QDt3lywL7V" role="37wK5m">
                       <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-                      <node concept="2OqwBi" id="6oRbCP686ib" role="37wK5m">
-                        <node concept="2OqwBi" id="6oRbCP6854z" role="2Oq$k0">
-                          <node concept="Jnkvi" id="6oRbCP684KT" role="2Oq$k0">
+                      <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+                      <node concept="2OqwBi" id="2QDt3lywL7W" role="37wK5m">
+                        <node concept="2OqwBi" id="2QDt3lywL7X" role="2Oq$k0">
+                          <node concept="Jnkvi" id="2QDt3lywL7Y" role="2Oq$k0">
                             <ref role="1M0zk5" node="3v5DuFDzaPT" resolve="ct" />
                           </node>
-                          <node concept="3TrEf2" id="6oRbCP685Ea" role="2OqNvi">
+                          <node concept="3TrEf2" id="2QDt3lywL7Z" role="2OqNvi">
                             <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="6oRbCP687u1" role="2OqNvi">
+                        <node concept="2qgKlT" id="2QDt3lywL80" role="2OqNvi">
                           <ref role="37wK5l" to="kntn:3v5DuFDzdW8" resolve="allPublicDataMembers" />
                         </node>
                       </node>
@@ -382,7 +382,7 @@
                       <property role="3SKdUp" value=" child class methods" />
                     </node>
                   </node>
-                  <node concept="3clFbF" id="6oRbCP68FiQ" role="3cqZAp">
+                  <node concept="3clFbF" id="2QDt3lywJb$" role="3cqZAp">
                     <node concept="2OqwBi" id="6oRbCP68Fvp" role="3clFbG">
                       <node concept="37vLTw" id="6oRbCP68FiP" role="2Oq$k0">
                         <ref role="3cqZAo" node="6oRbCP68B3_" resolve="compScope" />
@@ -416,7 +416,7 @@
                   <property role="3SKdUp" value="this class's methods" />
                 </node>
               </node>
-              <node concept="3clFbF" id="6oRbCP68Ons" role="3cqZAp">
+              <node concept="3clFbF" id="ZKpU3CheMJ" role="3cqZAp">
                 <node concept="2OqwBi" id="6oRbCP68OAt" role="3clFbG">
                   <node concept="37vLTw" id="6oRbCP68Onq" role="2Oq$k0">
                     <ref role="3cqZAo" node="6oRbCP68B3_" resolve="compScope" />
@@ -424,8 +424,8 @@
                   <node concept="liA8E" id="6oRbCP68OPl" role="2OqNvi">
                     <ref role="37wK5l" to="o8zo:7ipADkTevN6" resolve="addScope" />
                     <node concept="2YIFZM" id="3v5DuFDzM5O" role="37wK5m">
-                      <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
                       <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+                      <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
                       <node concept="2OqwBi" id="3v5DuFDzM5P" role="37wK5m">
                         <node concept="2OqwBi" id="3v5DuFDzM5Q" role="2Oq$k0">
                           <node concept="Jnkvi" id="3v5DuFDzM5R" role="2Oq$k0">
@@ -443,8 +443,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs6" id="3v5DuFDzM5N" role="3cqZAp">
-                <node concept="37vLTw" id="6oRbCP68O4g" role="3cqZAk">
+              <node concept="3cpWs6" id="ZKpU3ChfHS" role="3cqZAp">
+                <node concept="37vLTw" id="ZKpU3Chg9w" role="3cqZAk">
                   <ref role="3cqZAo" node="6oRbCP68B3_" resolve="compScope" />
                 </node>
               </node>

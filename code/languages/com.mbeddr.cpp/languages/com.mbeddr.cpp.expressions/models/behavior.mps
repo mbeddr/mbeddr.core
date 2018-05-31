@@ -55,6 +55,9 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
+    <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1226359078165" name="jetbrains.mps.lang.smodel.structure.LinkRefExpression" flags="nn" index="28GBK8">
         <reference id="1226359078166" name="conceptDeclaration" index="28GBKb" />
@@ -197,17 +200,10 @@
       <ref role="13i0hy" to="qd6m:7$$5Stoo8Y$" resolve="getReturnType" />
       <node concept="3Tm1VV" id="gWE$qahjZr" role="1B3o_S" />
       <node concept="3clFbS" id="gWE$qahjZu" role="3clF47">
-        <node concept="3clFbF" id="gWE$qahnRZ" role="3cqZAp">
-          <node concept="2OqwBi" id="gWE$qahoSZ" role="3clFbG">
-            <node concept="2OqwBi" id="gWE$qaho16" role="2Oq$k0">
-              <node concept="13iPFW" id="gWE$qahnRY" role="2Oq$k0" />
-              <node concept="3TrEf2" id="gWE$qahoqA" role="2OqNvi">
-                <ref role="3Tt5mk" to="3d25:4o2nsMgBIqZ" resolve="method" />
-              </node>
-            </node>
-            <node concept="3TrEf2" id="gWE$qahpvF" role="2OqNvi">
-              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
-            </node>
+        <node concept="3clFbF" id="2QDt3lyzU8F" role="3cqZAp">
+          <node concept="2OqwBi" id="2QDt3lyzUiq" role="3clFbG">
+            <node concept="13iPFW" id="2QDt3lyzU8E" role="2Oq$k0" />
+            <node concept="3JvlWi" id="2QDt3lyzUw_" role="2OqNvi" />
           </node>
         </node>
       </node>
