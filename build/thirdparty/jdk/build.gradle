@@ -1,7 +1,7 @@
 import de.undercouch.gradle.tasks.download.Download
 
 group 'com.jetbrains.jdk'
-version '8u152b1024.8'
+version '8u152b1136.39'
 
 for (platform in ['osx', 'windows', 'linux']) {
     String capitalizedPlatform = platform.capitalize()
