@@ -8,6 +8,7 @@
   <imports>
     <import index="wlyv" ref="r:a0a28ed3-d146-47eb-a19a-e026ce786b29(com.mbeddr.cpp.modules.structure)" implicit="true" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -30,9 +31,11 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
+      <concept id="6702802731807424858" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAnAncestor" flags="in" index="9SQb8" />
       <concept id="4303308395523096213" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="ng" index="2DD5aU" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807532730" name="canBeAncestor" index="9SGkC" />
         <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
       </concept>
     </language>
@@ -56,6 +59,22 @@
               <node concept="3O6GUB" id="3OWNtRXl7_P" role="2OqNvi">
                 <node concept="chp4Y" id="3OWNtRXl7_Q" role="3QVz_e">
                   <ref role="cht4Q" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9SQb8" id="ZKpU3ByEDn" role="9SGkC">
+      <node concept="3clFbS" id="ZKpU3ByEDo" role="2VODD2">
+        <node concept="3clFbF" id="ZKpU3ByEKI" role="3cqZAp">
+          <node concept="3fqX7Q" id="ZKpU3ByEKG" role="3clFbG">
+            <node concept="2OqwBi" id="ZKpU3ByFdL" role="3fr31v">
+              <node concept="2DD5aU" id="ZKpU3ByEVS" role="2Oq$k0" />
+              <node concept="3O6GUB" id="ZKpU3ByFDj" role="2OqNvi">
+                <node concept="chp4Y" id="ZKpU3ByFQC" role="3QVz_e">
+                  <ref role="cht4Q" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
                 </node>
               </node>
             </node>
