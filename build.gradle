@@ -5,7 +5,7 @@ ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/
 
 //MPS versions
 ext.mpsMajor = "2018.1"
-ext.mpsBuild = "2018.1.4"
+ext.mpsBuild = "2018.1"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
