@@ -87,6 +87,7 @@
       <concept id="2277423264798199359" name="com.mbeddr.cpp.base.structure.IInlineFlagConcept" flags="ng" index="226Gpr">
         <property id="2277423264798199360" name="isInlined" index="226Go$" />
       </concept>
+      <concept id="3604003506923204504" name="com.mbeddr.cpp.base.structure.NamespaceDeclaration" flags="ng" index="dq960" />
       <concept id="7240228573262412204" name="com.mbeddr.cpp.base.structure.LocalClassVariableDeclaration" flags="ng" index="2dywKE">
         <reference id="7240228573263980490" name="constructor" index="2esx9c" />
         <child id="7240228573265829198" name="constructor_arg_actuals" index="2enIz8" />
@@ -396,6 +397,10 @@
         </node>
       </node>
     </node>
+    <node concept="2NXPZ9" id="3UJ18qjr0Y3" role="N3F5h">
+      <property role="TrG5h" value="empty_1527686545203_3" />
+    </node>
+    <node concept="dq960" id="3UJ18qjr15B" role="N3F5h" />
     <node concept="2NXPZ9" id="45rBLTDXEWp" role="N3F5h">
       <property role="TrG5h" value="empty_1526547438983_6" />
     </node>

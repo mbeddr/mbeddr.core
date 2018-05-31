@@ -154,6 +154,7 @@
       <concept id="1174657487114" name="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" flags="nn" index="1Z2H0r">
         <child id="1174657509053" name="term" index="1Z2MuG" />
       </concept>
+      <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
         <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
@@ -1581,6 +1582,117 @@
     <node concept="1YaCAy" id="5eDFAXBGiPD" role="1YuTPh">
       <property role="TrG5h" value="attributeDeclaration" />
       <ref role="1YaFvo" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="383ZxwZuZXy">
+    <property role="TrG5h" value="typeof_NamespaceMethodCall" />
+    <property role="3GE5qa" value="namespace" />
+    <node concept="3clFbS" id="383ZxwZuZXz" role="18ibNy">
+      <node concept="1Z5TYs" id="383ZxwZv0jk" role="3cqZAp">
+        <node concept="mw_s8" id="383ZxwZv0jI" role="1ZfhKB">
+          <node concept="2OqwBi" id="383ZxwZv3GJ" role="mwGJk">
+            <node concept="2OqwBi" id="383ZxwZv1DG" role="2Oq$k0">
+              <node concept="2OqwBi" id="383ZxwZv0yO" role="2Oq$k0">
+                <node concept="1YBJjd" id="383ZxwZv0jG" role="2Oq$k0">
+                  <ref role="1YBMHb" node="383ZxwZuZX_" resolve="nsMC" />
+                </node>
+                <node concept="3TrEf2" id="383ZxwZv0Vg" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:383ZxwZrBkI" resolve="method" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="383ZxwZv2Xw" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+              </node>
+            </node>
+            <node concept="1$rogu" id="383ZxwZv44G" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="383ZxwZv0jn" role="1ZfhK$">
+          <node concept="1Z2H0r" id="383ZxwZuZXG" role="mwGJk">
+            <node concept="1YBJjd" id="383ZxwZuZXZ" role="1Z2MuG">
+              <ref role="1YBMHb" node="383ZxwZuZX_" resolve="nsMC" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="383ZxwZuZX_" role="1YuTPh">
+      <property role="TrG5h" value="nsMC" />
+      <ref role="1YaFvo" to="wnzg:383ZxwZrBky" resolve="NamespaceMethodCall" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="7fNEwq_kdh2">
+    <property role="TrG5h" value="typeof_NamespaceClassInstanceRef" />
+    <property role="3GE5qa" value="namespace" />
+    <node concept="3clFbS" id="7fNEwq_kdh3" role="18ibNy">
+      <node concept="1Z5TYs" id="7fNEwq_kdtk" role="3cqZAp">
+        <node concept="mw_s8" id="7fNEwq_kdtI" role="1ZfhKB">
+          <node concept="2OqwBi" id="7fNEwq_ki2q" role="mwGJk">
+            <node concept="2OqwBi" id="7fNEwq_kgxY" role="2Oq$k0">
+              <node concept="2OqwBi" id="7fNEwq_kdHv" role="2Oq$k0">
+                <node concept="1YBJjd" id="7fNEwq_kdtG" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7fNEwq_kdh5" resolve="nsCIRef" />
+                </node>
+                <node concept="3TrEf2" id="7fNEwq_kfWJ" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:7fNEwq_6ZLT" resolve="class_attribute" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="7fNEwq_khme" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+              </node>
+            </node>
+            <node concept="1$rogu" id="7fNEwq_kipC" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="7fNEwq_kdtn" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7fNEwq_kdh9" role="mwGJk">
+            <node concept="1YBJjd" id="7fNEwq_kdm8" role="1Z2MuG">
+              <ref role="1YBMHb" node="7fNEwq_kdh5" resolve="nsCIRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7fNEwq_kdh5" role="1YuTPh">
+      <property role="TrG5h" value="nsCIRef" />
+      <ref role="1YaFvo" to="wnzg:7fNEwq_6ZJn" resolve="NamespaceClassInstanceAttributeRef" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="383ZxwZuziJ">
+    <property role="TrG5h" value="typeof_NamespaceAttributeRef" />
+    <property role="3GE5qa" value="namespace" />
+    <node concept="3clFbS" id="383ZxwZuziK" role="18ibNy">
+      <node concept="1Z5TYs" id="383ZxwZuzva" role="3cqZAp">
+        <node concept="mw_s8" id="383ZxwZuzv$" role="1ZfhKB">
+          <node concept="2OqwBi" id="383ZxwZu_X1" role="mwGJk">
+            <node concept="2OqwBi" id="383ZxwZu_0$" role="2Oq$k0">
+              <node concept="2OqwBi" id="383ZxwZuzHS" role="2Oq$k0">
+                <node concept="1YBJjd" id="383ZxwZuzvy" role="2Oq$k0">
+                  <ref role="1YBMHb" node="383ZxwZuziM" resolve="nsAR" />
+                </node>
+                <node concept="3TrEf2" id="383ZxwZu$qh" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:383ZxwZrBkt" resolve="attribute" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="383ZxwZu_ql" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+              </node>
+            </node>
+            <node concept="1$rogu" id="383ZxwZuAjw" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="383ZxwZuzvd" role="1ZfhK$">
+          <node concept="1Z2H0r" id="383ZxwZuzj8" role="mwGJk">
+            <node concept="1YBJjd" id="383ZxwZuzkX" role="1Z2MuG">
+              <ref role="1YBMHb" node="383ZxwZuziM" resolve="nsAR" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="383ZxwZuziM" role="1YuTPh">
+      <property role="TrG5h" value="nsAR" />
+      <ref role="1YaFvo" to="wnzg:383ZxwZrBkp" resolve="NamespaceAttributeRef" />
     </node>
   </node>
 </model>
