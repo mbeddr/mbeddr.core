@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:35c69821-58fc-4d27-a863-facebccabcf0(test.ts.com.mbeddr.cpp.simple_classes@tests)">
+<model ref="r:35c69821-58fc-4d27-a863-facebccabcf0(test.ts.com.mbeddr.cpp.scope@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
@@ -84,7 +84,6 @@
         <reference id="4511589886097466674" name="parentClass" index="FysoF" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
-        <property id="5478191656157682870" name="static" index="gNYVZ" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="5044697665789423998" name="com.mbeddr.cpp.base.structure.INamedClassMemberDeclaration" flags="ng" index="3mBaMM">
@@ -579,7 +578,6 @@
           <property role="TrG5h" value="Adder" />
           <node concept="3mB1cK" id="6oRbCP68kRM" role="3mBdys">
             <property role="1wg9_F" value="public" />
-            <property role="gNYVZ" value="false" />
             <property role="TrG5h" value="increment" />
             <node concept="3XIRFW" id="6oRbCP68kRO" role="3XIRFX">
               <node concept="2BFjQ_" id="6oRbCP68kSN" role="3XIRFZ">
@@ -606,7 +604,6 @@
           <node concept="3u$6M4" id="688xTXtQiOd" role="3mBdys" />
           <node concept="3mB1cK" id="688xTXtQiNN" role="3mBdys">
             <property role="1wg9_F" value="private" />
-            <property role="gNYVZ" value="false" />
             <property role="TrG5h" value="incrementByTwo" />
             <node concept="26Vqph" id="688xTXtQiPE" role="2C2TGm">
               <property role="2caQfQ" value="false" />
@@ -649,7 +646,6 @@
           </node>
           <node concept="3mB1cK" id="29I8DMSfSEQ" role="3mBdys">
             <property role="1wg9_F" value="public" />
-            <property role="gNYVZ" value="false" />
             <property role="TrG5h" value="someFunction" />
             <node concept="26Vqph" id="29I8DMSfSFj" role="2C2TGm">
               <property role="2caQfQ" value="false" />
@@ -808,7 +804,6 @@
       <property role="TrG5h" value="Subtractor" />
       <node concept="3mB1cK" id="29I8DMSfS4T" role="3mBdys">
         <property role="1wg9_F" value="public" />
-        <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="decrement" />
         <node concept="26Vqph" id="29I8DMSfS56" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -834,7 +829,6 @@
       <node concept="3u$6M4" id="688xTXtQizE" role="3mBdys" />
       <node concept="3mB1cK" id="688xTXtQi$$" role="3mBdys">
         <property role="1wg9_F" value="private" />
-        <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="decrementByTwo" />
         <node concept="26Vqph" id="688xTXtQi_l" role="2C2TGm">
           <property role="2caQfQ" value="false" />
