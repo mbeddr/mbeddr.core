@@ -10,6 +10,9 @@
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
+      <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
+        <child id="7763322639126652758" name="baseType" index="2umbIo" />
+      </concept>
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
@@ -59,6 +62,10 @@
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
+    <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
+      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
+      <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
+    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -80,7 +87,10 @@
       <concept id="2277423264798199359" name="com.mbeddr.cpp.base.structure.IInlineFlagConcept" flags="ng" index="226Gpr">
         <property id="2277423264798199360" name="isInlined" index="226Go$" />
       </concept>
-      <concept id="3604003506923204504" name="com.mbeddr.cpp.base.structure.NamespaceDeclaration" flags="ng" index="dq960" />
+      <concept id="7240228573262412204" name="com.mbeddr.cpp.base.structure.LocalClassVariableDeclaration" flags="ng" index="2dywKE">
+        <reference id="7240228573263980490" name="constructor" index="2esx9c" />
+        <child id="7240228573265829198" name="constructor_arg_actuals" index="2enIz8" />
+      </concept>
       <concept id="7240228573260630076" name="com.mbeddr.cpp.base.structure.ConstructorVoidType" flags="ng" index="2dFNQU" />
       <concept id="7844497894798008401" name="com.mbeddr.cpp.base.structure.ClassConstructorSignature" flags="ng" index="2gom4k">
         <property id="6088872510303555204" name="is_destructor" index="3BMcJd" />
@@ -139,6 +149,9 @@
       </concept>
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
+      </concept>
+      <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
+        <child id="4185783222026475860" name="body" index="3XIRFY" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
@@ -383,12 +396,8 @@
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="3UJ18qjr0Y3" role="N3F5h">
-      <property role="TrG5h" value="empty_1527686545203_3" />
-    </node>
-    <node concept="dq960" id="3UJ18qjr15B" role="N3F5h" />
-    <node concept="2NXPZ9" id="45rBLTDXEWp" role="N3F5h">
-      <property role="TrG5h" value="empty_1526547438983_6" />
+    <node concept="2NXPZ9" id="2POwV1ob7Yn" role="N3F5h">
+      <property role="TrG5h" value="empty_1527750170367_2" />
     </node>
     <node concept="c0Qz5" id="3v5DuFDvJ1D" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -1001,6 +1010,54 @@
         <node concept="2dFNQU" id="7wcjSRtzLD9" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6_kdBKMTkBX" role="N3F5h">
+      <property role="TrG5h" value="empty_1527673083315_1" />
+    </node>
+    <node concept="N3Fnx" id="6_kdBKMTkGL" role="N3F5h">
+      <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="6_kdBKMTkGN" role="3XIRFY">
+        <node concept="2dywKE" id="6_kdBKMTkKW" role="3XIRFZ">
+          <property role="TrG5h" value="hoi" />
+          <ref role="2esx9c" node="7wcjSRttVPm" resolve="ClassName" />
+          <node concept="3mBfEi" id="6_kdBKMTkKU" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="3mBfEM" node="7wcjSRttVMY" resolve="ClassName" />
+          </node>
+          <node concept="3TlMh9" id="6_kdBKMTkQ0" role="2enIz8">
+            <property role="2hmy$m" value="32" />
+          </node>
+        </node>
+        <node concept="2BFjQ_" id="6_kdBKMTkGV" role="3XIRFZ">
+          <node concept="3TlMh9" id="6_kdBKMTkGW" role="2BFjQA">
+            <property role="2hmy$m" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="26Vqph" id="6_kdBKMTkGP" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="6_kdBKMTkGQ" role="1UOdpc">
+        <property role="TrG5h" value="argc" />
+        <node concept="26Vqph" id="6_kdBKMTkGR" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="6_kdBKMTkGS" role="1UOdpc">
+        <property role="TrG5h" value="argv" />
+        <node concept="3J0A42" id="6_kdBKMTkGT" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="Pu267" id="6_kdBKMTkGU" role="2umbIo">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
         </node>
       </node>
     </node>
