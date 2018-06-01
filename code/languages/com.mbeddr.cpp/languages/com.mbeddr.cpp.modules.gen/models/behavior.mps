@@ -13,6 +13,7 @@
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" implicit="true" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -532,6 +533,26 @@
             <node concept="X8dFx" id="4KyQ_QhBEO_" role="2OqNvi">
               <node concept="BsUDl" id="4KyQ_QhBG0Q" role="25WWJ7">
                 <ref role="37wK5l" node="4KyQ_QhB97R" resolve="getNewInitializer" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3LE5RBQ_bLA">
+    <ref role="13h7C2" to="pmno:3LE5RBQ$srP" resolve="GenOperatorDeclaration" />
+    <node concept="13hLZK" id="3LE5RBQ_bLB" role="13h7CW">
+      <node concept="3clFbS" id="3LE5RBQ_bLC" role="2VODD2">
+        <node concept="3clFbF" id="3LE5RBQ_bLM" role="3cqZAp">
+          <node concept="37vLTI" id="3LE5RBQ_e0w" role="3clFbG">
+            <node concept="Xl_RD" id="3LE5RBQ_e5P" role="37vLTx">
+              <property role="Xl_RC" value="genOperatorDec" />
+            </node>
+            <node concept="2OqwBi" id="3LE5RBQ_c76" role="37vLTJ">
+              <node concept="13iPFW" id="3LE5RBQ_bLL" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3LE5RBQ_cSX" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>

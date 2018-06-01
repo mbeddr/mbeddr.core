@@ -86,6 +86,7 @@
         <reference id="4511589886097466674" name="parentClass" index="FysoF" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
+        <property id="5478191656157682870" name="static" index="gNYVZ" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="5044697665789423998" name="com.mbeddr.cpp.base.structure.INamedClassMemberDeclaration" flags="ng" index="3mBaMM">
@@ -190,6 +191,7 @@
           <node concept="3mB1cK" id="6oRbCP68kRM" role="3mBdys">
             <property role="1wg9_F" value="public" />
             <property role="TrG5h" value="publicMethodPublicClass" />
+            <property role="gNYVZ" value="false" />
             <node concept="3XIRFW" id="6oRbCP68kRO" role="3XIRFX" />
             <node concept="19Rifw" id="1gzloVU$YOL" role="2C2TGm">
               <property role="2caQfQ" value="false" />
@@ -199,6 +201,7 @@
           <node concept="3mB1cK" id="688xTXtQiNN" role="3mBdys">
             <property role="1wg9_F" value="protected" />
             <property role="TrG5h" value="protectedMethodPublicClass" />
+            <property role="gNYVZ" value="false" />
             <node concept="19Rifw" id="1gzloVU$YUC" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
@@ -513,17 +516,17 @@
           <node concept="3XIRFW" id="1gzloVU$ZDI" role="3XIRFY">
             <node concept="2dywKE" id="1gzloVU_0mD" role="3XIRFZ">
               <property role="TrG5h" value="baseClass" />
-              <node concept="3mBfEi" id="1gzloVU_0mB" role="2C2TGm">
-                <property role="2caQfQ" value="false" />
-                <property role="2c7vTL" value="false" />
-                <ref role="3mBfEM" node="1gzloVU$ZfR" resolve="BaseClass" />
-              </node>
               <node concept="7CXmI" id="6ejQpbw4eyi" role="lGtFl">
                 <node concept="29bkU" id="6ejQpbw4eEa" role="7EUXB">
                   <node concept="2PQEqo" id="6ejQpbw4eEb" role="3lydCh">
                     <ref role="39XzEq" to="g7jk:2xmTzC2LYc4" />
                   </node>
                 </node>
+              </node>
+              <node concept="3mBfEi" id="1gzloVU_0mB" role="2C2TGm">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="3mBfEM" node="1gzloVU$ZfR" resolve="BaseClass" />
               </node>
             </node>
             <node concept="3XISUE" id="1gzloVU_0yR" role="3XIRFZ" />
