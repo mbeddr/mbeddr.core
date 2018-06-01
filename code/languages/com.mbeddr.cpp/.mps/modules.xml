@@ -12,7 +12,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.expressions/com.mbeddr.cpp.expressions.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.modules.gen/com.mbeddr.cpp.modules.gen.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.modules/com.mbeddr.cpp.modules.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.operator_overload/com.mbeddr.cpp.operator_overload.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.operator_overload/com.mbeddr.cpp.operator_overload.mpl" folder="lang/experimental" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.com.mbeddr.cpp/test.ex.com.mbeddr.cpp.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.com.mbeddr.cpp/test.ts.com.mbeddr.cpp.msd" folder="tests" />
     </projectModules>
