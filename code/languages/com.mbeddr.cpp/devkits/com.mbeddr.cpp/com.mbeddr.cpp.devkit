@@ -7,6 +7,7 @@
   <exported-language name="6e81d0c1-347c-43fc-99ef-bdd47021c2b7(com.mbeddr.cpp.buildconfig)" />
   <exported-language name="2e15e1a4-8998-4f06-86b2-8d184a179e8e(com.mbeddr.cpp.exceptions)" />
   <exported-language name="7308c66b-3b31-4952-bf56-0f3405fab5be(com.mbeddr.cpp.operator_overload)" />
+  <exported-language name="5e6018dc-dc26-4070-9526-663fdbfe4c10(com.mbeddr.cpp.templates)" />
   <extendedDevKits>
     <extendedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</extendedDevKit>
   </extendedDevKits>
