@@ -12,6 +12,7 @@
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="zhp8" ref="r:66d213c1-a12b-4017-8dd5-0423703c30a9(com.mbeddr.cpp.operator_overload.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
@@ -291,8 +292,8 @@
           <node concept="l9hG8" id="3LE5RBQ$xXA" role="lcghm">
             <node concept="2OqwBi" id="3LE5RBQ$ysQ" role="lb14g">
               <node concept="117lpO" id="3LE5RBQ$ya1" role="2Oq$k0" />
-              <node concept="3TrcHB" id="3LE5RBQ$zr0" role="2OqNvi">
-                <ref role="3TsBF5" to="wnzg:3LE5RBQoIf8" resolve="operator" />
+              <node concept="3TrcHB" id="6FnHX$GP6I$" role="2OqNvi">
+                <ref role="3TsBF5" to="zhp8:7bt9OVZg7LQ" resolve="operator" />
               </node>
             </node>
           </node>
@@ -319,8 +320,8 @@
           <node concept="l9hG8" id="3LE5RBQ$F_E" role="lcghm">
             <node concept="2OqwBi" id="3LE5RBQ$FTh" role="lb14g">
               <node concept="117lpO" id="3LE5RBQ$FAs" role="2Oq$k0" />
-              <node concept="3TrEf2" id="3LE5RBQ$GoP" role="2OqNvi">
-                <ref role="3Tt5mk" to="wnzg:3LE5RBPSwl7" resolve="body" />
+              <node concept="3TrEf2" id="6FnHX$GP7qm" role="2OqNvi">
+                <ref role="3Tt5mk" to="zhp8:7bt9OVZg8N_" resolve="body" />
               </node>
             </node>
           </node>

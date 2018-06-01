@@ -8,6 +8,7 @@
   <imports>
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="zhp8" ref="r:66d213c1-a12b-4017-8dd5-0423703c30a9(com.mbeddr.cpp.operator_overload.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -90,7 +91,7 @@
     <property role="EcuMT" value="4353317802402236149" />
     <property role="TrG5h" value="GenOperatorDeclaration" />
     <property role="34LRSv" value="gen operator declaration" />
-    <ref role="1TJDcQ" to="wnzg:3LE5RBPQ$rY" resolve="OperatorOverloadDeclaration" />
+    <ref role="1TJDcQ" to="zhp8:7bt9OVZfWbc" resolve="OperatorOverloadDeclaration" />
     <node concept="1TJgyj" id="3LE5RBQ$ttT" role="1TKVEi">
       <property role="IQ2ns" value="4353317802402240377" />
       <property role="20lmBu" value="reference" />

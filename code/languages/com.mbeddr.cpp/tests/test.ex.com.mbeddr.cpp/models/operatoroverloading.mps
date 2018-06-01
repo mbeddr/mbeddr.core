@@ -71,11 +71,10 @@
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
       <concept id="7240228573262412204" name="com.mbeddr.cpp.base.structure.LocalClassVariableDeclaration" flags="ng" index="2dywKE" />
-      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualisableConcept" flags="ng" index="hL25U">
+      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualFlagConcept" flags="ng" index="hL25U">
         <property id="3188920472788366141" name="isVirtual" index="hL25V" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
-        <property id="5478191656157682870" name="static" index="gNYVZ" />
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="5044697665789421259" name="com.mbeddr.cpp.base.structure.AttributeDeclaration" flags="ng" index="3mBbG7">
@@ -112,6 +111,9 @@
       </concept>
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
+      <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
+      </concept>
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
         <child id="842732463503928104" name="testStrategy" index="3GpDut" />
       </concept>
@@ -186,7 +188,6 @@
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="SomeClass" />
       <node concept="3mB1cK" id="6KmaLbE81K_" role="3mBdys">
-        <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="setFalse" />
         <property role="hL25V" value="false" />
         <property role="1wg9_F" value="public" />
@@ -232,7 +233,6 @@
       <node concept="3u$6M4" id="1uKPZVP4CE3" role="3mBdys" />
       <node concept="3mB1cK" id="1uKPZVP4CU3" role="3mBdys">
         <property role="1wg9_F" value="public" />
-        <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="takesSomeClass" />
         <node concept="19RgSI" id="1uKPZVP4Dti" role="1UOdpc">
           <property role="TrG5h" value="param" />
@@ -488,7 +488,6 @@
       <node concept="3u$6M4" id="3LE5RBQCJYY" role="3mBdys" />
       <node concept="3mB1cK" id="3LE5RBQCK1K" role="3mBdys">
         <property role="1wg9_F" value="private" />
-        <property role="gNYVZ" value="false" />
         <property role="TrG5h" value="dancesWithOperators" />
         <property role="hL25V" value="false" />
         <node concept="19Rifw" id="3LE5RBQCK3k" role="2C2TGm">
@@ -659,8 +658,9 @@
     <node concept="2NXPZ9" id="6KmaLbE81LD" role="N3F5h">
       <property role="TrG5h" value="empty_1527145164400_2" />
     </node>
-    <node concept="2NXPZ9" id="6KmaLbE81Py" role="N3F5h">
-      <property role="TrG5h" value="empty_1527145184048_4" />
+    <node concept="lIfQi" id="6FnHX$H9m0i" role="N3F5h">
+      <property role="3HjyOP" value="true" />
+      <property role="TrG5h" value="Entrypoint" />
     </node>
     <node concept="2NXPZ9" id="6KmaLbE8280" role="N3F5h">
       <property role="TrG5h" value="empty_1527145195583_6" />
@@ -685,9 +685,6 @@
       <ref role="3oK8_y" node="3v5DuFDkAwn" resolve="portable" />
       <node concept="2v9HqM" id="7wcjSRtanT1" role="2eOfOg">
         <ref role="2v9HqP" node="6KmaLbE81Ky" resolve="OperatorOverloading" />
-      </node>
-      <node concept="2v9HqM" id="3CCyXivG8gq" role="2eOfOg">
-        <ref role="2v9HqP" node="3CCyXivFP3G" resolve="OverloadingDemo" />
       </node>
       <node concept="2v9HqM" id="3v5DuFDttij" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
