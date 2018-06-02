@@ -14,7 +14,6 @@
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="dylp" ref="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)" />
-    <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" implicit="true" />
     <import index="kntn" ref="r:4090021e-0c8f-4cca-ab3f-590afb43a745(com.mbeddr.cpp.base.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -1091,7 +1090,7 @@
               <node concept="2OqwBi" id="7fNEwq_Voii" role="2Oq$k0">
                 <node concept="117lpO" id="7fNEwq_Vo5J" role="2Oq$k0" />
                 <node concept="3TrEf2" id="7fNEwq_VozO" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:7fNEwq_6ZJT" resolve="class_instance" />
+                  <ref role="3Tt5mk" to="wnzg:7fNEwq_6ZJT" resolve="classInstance" />
                 </node>
               </node>
               <node concept="3TrcHB" id="7fNEwq_Vpyd" role="2OqNvi">
@@ -1107,7 +1106,7 @@
               <node concept="2OqwBi" id="7fNEwq_Vqjy" role="2Oq$k0">
                 <node concept="117lpO" id="7fNEwq_Vq7b" role="2Oq$k0" />
                 <node concept="3TrEf2" id="7fNEwq_VqWG" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:7fNEwq_6ZLT" resolve="class_attribute" />
+                  <ref role="3Tt5mk" to="wnzg:7fNEwq_6ZLT" resolve="classAttribute" />
                 </node>
               </node>
               <node concept="3TrcHB" id="7fNEwq_VrUP" role="2OqNvi">
@@ -1770,7 +1769,7 @@
               <node concept="2OqwBi" id="7fNEwqBypTa" role="2Oq$k0">
                 <node concept="117lpO" id="7fNEwqBypTb" role="2Oq$k0" />
                 <node concept="3TrEf2" id="7fNEwqBypTc" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6T" resolve="class_instance" />
+                  <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6T" resolve="classInstance" />
                 </node>
               </node>
               <node concept="3TrcHB" id="7fNEwqBypTd" role="2OqNvi">
@@ -1786,7 +1785,7 @@
               <node concept="2OqwBi" id="7fNEwqByo63" role="2Oq$k0">
                 <node concept="117lpO" id="7fNEwqByo64" role="2Oq$k0" />
                 <node concept="3TrEf2" id="7fNEwqByoxc" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="class_method" />
+                  <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="classMethod" />
                 </node>
               </node>
               <node concept="3TrcHB" id="7fNEwqBypfM" role="2OqNvi">

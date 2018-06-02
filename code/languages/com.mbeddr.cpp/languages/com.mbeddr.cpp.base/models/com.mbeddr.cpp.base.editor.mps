@@ -589,7 +589,7 @@
     <ref role="1XX52x" to="wnzg:2Ai0Gt9WczV" resolve="MethodPrototype" />
     <node concept="3EZMnI" id="3v5DuFDrgcR" role="2wV5jI">
       <node concept="3F0A7n" id="6ddXmWe6Wbq" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+        <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
       </node>
       <node concept="3F0A7n" id="6ddXmWe6WbN" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
@@ -948,7 +948,7 @@
   <node concept="PKFIW" id="2L1k$oXm7Pq">
     <property role="TrG5h" value="VirtualFlag" />
     <property role="3GE5qa" value="flag" />
-    <ref role="1XX52x" to="wnzg:2L1k$oXxncW" resolve="IVirtualisableConcept" />
+    <ref role="1XX52x" to="wnzg:2L1k$oXxncW" resolve="IVirtualFlagConcept" />
     <node concept="1kHk_G" id="2LwGNVbhV8I" role="2wV5jI">
       <property role="ZjSer" value="virtual" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
@@ -1576,11 +1576,11 @@
   <node concept="PKFIW" id="1TorPL4sJdQ">
     <property role="TrG5h" value="PureFlag" />
     <property role="3GE5qa" value="flag" />
-    <ref role="1XX52x" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualisable" />
+    <ref role="1XX52x" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
     <node concept="1kHk_G" id="1TorPL4sJdR" role="2wV5jI">
       <property role="ZjSer" value="pure" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="pure" />
+      <ref role="1NtTu8" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
     </node>
   </node>
   <node concept="PKFIW" id="5eDFAXBRQic">
@@ -2236,7 +2236,7 @@
     <ref role="1XX52x" to="wnzg:7fNEwq_6ZJn" resolve="NamespaceClassInstanceAttributeRef" />
     <node concept="3EZMnI" id="7fNEwq_6ZK7" role="2wV5jI">
       <node concept="1iCGBv" id="7fNEwq_6ZKh" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:7fNEwq_6ZJT" resolve="class_instance" />
+        <ref role="1NtTu8" to="wnzg:7fNEwq_6ZJT" resolve="classInstance" />
         <node concept="1sVBvm" id="7fNEwq_6ZKj" role="1sWHZn">
           <node concept="3F0A7n" id="7fNEwqABAzs" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -2254,7 +2254,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="7fNEwq_6ZM9" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:7fNEwq_6ZLT" resolve="class_attribute" />
+        <ref role="1NtTu8" to="wnzg:7fNEwq_6ZLT" resolve="classAttribute" />
         <node concept="1sVBvm" id="7fNEwq_6ZMb" role="1sWHZn">
           <node concept="3F0A7n" id="7fNEwq_6ZMt" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -2268,7 +2268,7 @@
                 <node concept="2OqwBi" id="7fNEwq_xo1s" role="2Oq$k0">
                   <node concept="pncrf" id="7fNEwq_xnFs" role="2Oq$k0" />
                   <node concept="3TrEf2" id="7fNEwq_xoH2" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:7fNEwq_6ZJT" resolve="class_instance" />
+                    <ref role="3Tt5mk" to="wnzg:7fNEwq_6ZJT" resolve="classInstance" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="7fNEwq_xqxX" role="2OqNvi" />
@@ -2790,7 +2790,7 @@
     <ref role="1XX52x" to="wnzg:7fNEwqBx$6S" resolve="NamespaceClassInstanceMethodCall" />
     <node concept="3EZMnI" id="7fNEwqBx_4A" role="2wV5jI">
       <node concept="1iCGBv" id="7fNEwqBx_4U" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:7fNEwqBx$6T" resolve="class_instance" />
+        <ref role="1NtTu8" to="wnzg:7fNEwqBx$6T" resolve="classInstance" />
         <node concept="1sVBvm" id="7fNEwqBx_4V" role="1sWHZn">
           <node concept="3F0A7n" id="7fNEwqBx_4W" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -2808,7 +2808,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="7fNEwqBx_5e" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:7fNEwqBx$6W" resolve="class_method" />
+        <ref role="1NtTu8" to="wnzg:7fNEwqBx$6W" resolve="classMethod" />
         <node concept="1sVBvm" id="7fNEwqBx_5f" role="1sWHZn">
           <node concept="3F0A7n" id="7fNEwqBx_5g" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -2822,7 +2822,7 @@
                 <node concept="2OqwBi" id="7fNEwqBx_5l" role="2Oq$k0">
                   <node concept="pncrf" id="7fNEwqBx_5m" role="2Oq$k0" />
                   <node concept="3TrEf2" id="7fNEwqBC0Vo" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6T" resolve="class_instance" />
+                    <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6T" resolve="classInstance" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="7fNEwqBx_5o" role="2OqNvi" />
@@ -2840,7 +2840,7 @@
                 <node concept="2OqwBi" id="7fNEwqBx_5u" role="2Oq$k0">
                   <node concept="pncrf" id="7fNEwqBx_5v" role="2Oq$k0" />
                   <node concept="3TrEf2" id="7fNEwqBC0cc" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="class_method" />
+                    <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="classMethod" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="7fNEwqBx_5x" role="2OqNvi" />
@@ -2865,7 +2865,7 @@
                 <node concept="2OqwBi" id="7fNEwqBx_5E" role="2Oq$k0">
                   <node concept="pncrf" id="7fNEwqBx_5F" role="2Oq$k0" />
                   <node concept="3TrEf2" id="7fNEwqBC1J9" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="class_method" />
+                    <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="classMethod" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="7fNEwqBx_5H" role="2OqNvi" />
@@ -2884,7 +2884,7 @@
                 <node concept="2OqwBi" id="7fNEwqBx_5O" role="2Oq$k0">
                   <node concept="pncrf" id="7fNEwqBx_5P" role="2Oq$k0" />
                   <node concept="3TrEf2" id="7fNEwqBC2yU" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="class_method" />
+                    <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="classMethod" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="7fNEwqBx_5R" role="2OqNvi" />

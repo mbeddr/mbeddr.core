@@ -18,11 +18,8 @@
     <import index="go54" ref="r:a7e7800a-15b6-4c02-ae4d-6b40a48c7370(com.mbeddr.core.statements.typesystem)" />
     <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="k8ev" ref="r:f39afe13-666a-48f2-9d7c-2f9366f78fe5(jetbrains.mps.typesystemEngine.checker)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="kntn" ref="r:4090021e-0c8f-4cca-ab3f-590afb43a745(com.mbeddr.cpp.base.behavior)" />
-    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="p3tm" ref="r:7b158038-abbe-4e11-b171-d5a959b4e91a(com.mbeddr.core.modules.typesystem)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
@@ -290,7 +287,7 @@
           <node concept="2OqwBi" id="4K6s$_sI2q$" role="33vP2m">
             <node concept="2OqwBi" id="4K6s$_sI1GO" role="2Oq$k0">
               <node concept="1YBJjd" id="4K6s$_sI1$0" role="2Oq$k0">
-                <ref role="1YBMHb" node="4K6s$_rq5Gi" />
+                <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
               </node>
               <node concept="3TrEf2" id="4K6s$_sI200" role="2OqNvi">
                 <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
@@ -314,7 +311,7 @@
           </node>
           <node concept="2OqwBi" id="4K6s$_sI$_Y" role="33vP2m">
             <node concept="1YBJjd" id="4K6s$_sI$ta" role="2Oq$k0">
-              <ref role="1YBMHb" node="4K6s$_rq5Gi" />
+              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
             </node>
             <node concept="2Xjw5R" id="4K6s$_sI_14" role="2OqNvi">
               <node concept="1xMEDy" id="4K6s$_sI_16" role="1xVPHs">
@@ -1541,7 +1538,7 @@
                   <ref role="1YBMHb" node="7fNEwq_kdh5" resolve="nsCIRef" />
                 </node>
                 <node concept="3TrEf2" id="7fNEwq_kfWJ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:7fNEwq_6ZLT" resolve="class_attribute" />
+                  <ref role="3Tt5mk" to="wnzg:7fNEwq_6ZLT" resolve="classAttribute" />
                 </node>
               </node>
               <node concept="3TrEf2" id="7fNEwq_khme" role="2OqNvi">

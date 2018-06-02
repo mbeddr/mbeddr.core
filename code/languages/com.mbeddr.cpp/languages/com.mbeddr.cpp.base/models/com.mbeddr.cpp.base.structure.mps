@@ -178,7 +178,7 @@
     <node concept="1TJgyi" id="2Ai0Gt9ODIG" role="1TKVEl">
       <property role="IQ2nx" value="2995459757115087788" />
       <property role="TrG5h" value="visibility" />
-      <ref role="AX2Wp" node="2Ai0Gt9ODIr" />
+      <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
     </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBIrb">
@@ -717,14 +717,14 @@
     <node concept="1TJgyj" id="7fNEwq_6ZJT" role="1TKVEi">
       <property role="IQ2ns" value="8355208679219002361" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="class_instance" />
+      <property role="20kJfa" value="classInstance" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7RFM8R3Me1y" resolve="NamespaceClassInstance" />
     </node>
     <node concept="1TJgyj" id="7fNEwq_6ZLT" role="1TKVEi">
       <property role="IQ2ns" value="8355208679219002489" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="class_attribute" />
+      <property role="20kJfa" value="classAttribute" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
     </node>
@@ -756,14 +756,14 @@
     <node concept="1TJgyj" id="7fNEwqBx$6T" role="1TKVEi">
       <property role="IQ2ns" value="8355208679259521465" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="class_instance" />
+      <property role="20kJfa" value="classInstance" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7RFM8R3Me1y" resolve="NamespaceClassInstance" />
     </node>
     <node concept="1TJgyj" id="7fNEwqBx$6W" role="1TKVEi">
       <property role="IQ2ns" value="8355208679259521468" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="class_method" />
+      <property role="20kJfa" value="classMethod" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgB$VW" resolve="MethodDeclaration" />
     </node>

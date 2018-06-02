@@ -7,7 +7,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="oaar" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#b92f861d-0184-446d-b88b-6dcf0e070241(jetbrains.mps.lang.project.modules/module.com.mbeddr.mpsutil.intentions@project_stub)" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" implicit="true" />
   </imports>
   <registry>

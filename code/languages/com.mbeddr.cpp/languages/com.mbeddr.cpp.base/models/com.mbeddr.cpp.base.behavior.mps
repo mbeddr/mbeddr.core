@@ -26,16 +26,10 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="g7jk" ref="r:e06e24a5-d0fa-4f76-9dee-2042532d92a1(com.mbeddr.cpp.base.typesystem)" />
     <import index="zhp8" ref="r:66d213c1-a12b-4017-8dd5-0423703c30a9(com.mbeddr.cpp.operator_overload.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
-    <import index="strd" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.typesystem.checking(MPS.Editor/)" />
-    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
     <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
     <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" />
@@ -8858,7 +8852,7 @@
                 <node concept="2OqwBi" id="7fNEwq_qWRZ" role="2Oq$k0">
                   <node concept="13iPFW" id="7fNEwq_qW_y" role="2Oq$k0" />
                   <node concept="3TrEf2" id="7fNEwq_qXrY" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:7fNEwq_6ZJT" resolve="class_instance" />
+                    <ref role="3Tt5mk" to="wnzg:7fNEwq_6ZJT" resolve="classInstance" />
                   </node>
                 </node>
                 <node concept="3TrEf2" id="7fNEwq_qZ5v" role="2OqNvi">
@@ -8938,7 +8932,7 @@
                 <node concept="2OqwBi" id="7fNEwqBxD2B" role="2Oq$k0">
                   <node concept="13iPFW" id="7fNEwqBxD2C" role="2Oq$k0" />
                   <node concept="3TrEf2" id="7fNEwqBxD2D" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6T" resolve="class_instance" />
+                    <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6T" resolve="classInstance" />
                   </node>
                 </node>
                 <node concept="3TrEf2" id="7fNEwqBxD2E" role="2OqNvi">
@@ -9004,7 +8998,7 @@
             <node concept="2OqwBi" id="7fNEwqByfSp" role="2Oq$k0">
               <node concept="13iPFW" id="7fNEwqByfDm" role="2Oq$k0" />
               <node concept="3TrEf2" id="7fNEwqBygkb" role="2OqNvi">
-                <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="class_method" />
+                <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="classMethod" />
               </node>
             </node>
             <node concept="3Tsc0h" id="7fNEwqByi2x" role="2OqNvi">
@@ -9028,7 +9022,7 @@
             <node concept="2OqwBi" id="7fNEwqByiNj" role="2Oq$k0">
               <node concept="13iPFW" id="7fNEwqByiAr" role="2Oq$k0" />
               <node concept="3TrEf2" id="7fNEwqByjf5" role="2OqNvi">
-                <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="class_method" />
+                <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="classMethod" />
               </node>
             </node>
             <node concept="3TrEf2" id="7fNEwqBykWX" role="2OqNvi">
@@ -9049,7 +9043,7 @@
           <node concept="2OqwBi" id="7fNEwqBylFo" role="3clFbG">
             <node concept="13iPFW" id="7fNEwqBylsl" role="2Oq$k0" />
             <node concept="3TrEf2" id="7fNEwqBym7a" role="2OqNvi">
-              <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="class_method" />
+              <ref role="3Tt5mk" to="wnzg:7fNEwqBx$6W" resolve="classMethod" />
             </node>
           </node>
         </node>

@@ -8,13 +8,8 @@
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
-    <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="1yyn" ref="r:64e0a2a9-7957-424b-8102-a5e8a7a73035(com.mbeddr.cpp.templates.structure)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="kntn" ref="r:4090021e-0c8f-4cca-ab3f-590afb43a745(com.mbeddr.cpp.base.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -741,7 +736,7 @@
     <property role="3GE5qa" value="namespace" />
     <ref role="1M2myG" to="wnzg:7fNEwq_6ZJn" resolve="NamespaceClassInstanceAttributeRef" />
     <node concept="1N5Pfh" id="7fNEwq_6ZMx" role="1Mr941">
-      <ref role="1N5Vy1" to="wnzg:7fNEwq_6ZLT" resolve="class_attribute" />
+      <ref role="1N5Vy1" to="wnzg:7fNEwq_6ZLT" resolve="classAttribute" />
       <node concept="3dgokm" id="7fNEwq_6ZMB" role="1N6uqs">
         <node concept="3clFbS" id="7fNEwq_6ZMD" role="2VODD2">
           <node concept="3clFbF" id="7fNEwq_r2Gq" role="3cqZAp">
@@ -1131,7 +1126,7 @@
     <property role="3GE5qa" value="namespace" />
     <ref role="1M2myG" to="wnzg:7fNEwqBx$6S" resolve="NamespaceClassInstanceMethodCall" />
     <node concept="1N5Pfh" id="7fNEwqBxCee" role="1Mr941">
-      <ref role="1N5Vy1" to="wnzg:7fNEwqBx$6W" resolve="class_method" />
+      <ref role="1N5Vy1" to="wnzg:7fNEwqBx$6W" resolve="classMethod" />
       <node concept="3dgokm" id="7fNEwqBxCey" role="1N6uqs">
         <node concept="3clFbS" id="7fNEwqBxCe$" role="2VODD2">
           <node concept="3clFbF" id="7fNEwqBxCtm" role="3cqZAp">
