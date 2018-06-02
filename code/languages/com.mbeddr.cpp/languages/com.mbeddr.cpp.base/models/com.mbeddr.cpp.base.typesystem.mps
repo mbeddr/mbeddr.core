@@ -1278,7 +1278,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="2L1k$oXFjdZ">
-    <property role="TrG5h" value="check_IPureVirtualisable" />
+    <property role="TrG5h" value="check_IPureVirtualFlag" />
     <property role="3GE5qa" value="flag" />
     <node concept="3clFbS" id="2L1k$oXFje0" role="18ibNy">
       <node concept="3clFbJ" id="2L1k$oXFjlp" role="3cqZAp">
