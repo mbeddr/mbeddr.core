@@ -1389,6 +1389,37 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="3JyuKTwh_sL" role="3cqZAp" />
+      <node concept="3clFbJ" id="3JyuKTwh_x6" role="3cqZAp">
+        <node concept="3clFbS" id="3JyuKTwh_x8" role="3clFbx">
+          <node concept="a7r0C" id="3JyuKTwhEZG" role="3cqZAp">
+            <node concept="Xl_RD" id="3JyuKTwhEZH" role="a7wSD">
+              <property role="Xl_RC" value="constExpr already implicitely inlines" />
+            </node>
+            <node concept="1YBJjd" id="3JyuKTwhF1S" role="2OEOjV">
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="3JyuKTwhCFA" role="3clFbw">
+          <node concept="2OqwBi" id="3JyuKTwhDvC" role="3uHU7w">
+            <node concept="1YBJjd" id="3JyuKTwhCUk" role="2Oq$k0">
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="3JyuKTwhE_g" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1Yr26itwsT0" resolve="isInlined" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3JyuKTwhA2_" role="3uHU7B">
+            <node concept="1YBJjd" id="3JyuKTwh_zx" role="2Oq$k0">
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="3JyuKTwhBYT" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:5eDFAXBRQhK" resolve="isConstExpr" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3clFbH" id="5eDFAXB$S1T" role="3cqZAp" />
       <node concept="3clFbJ" id="5eDFAXB$Ser" role="3cqZAp">
         <node concept="3clFbS" id="5eDFAXB$Set" role="3clFbx">
@@ -1606,7 +1637,7 @@
         <node concept="3clFbS" id="5eDFAXBRSsI" role="3clFbx">
           <node concept="a7r0C" id="5eDFAXBRVB6" role="3cqZAp">
             <node concept="Xl_RD" id="5eDFAXBRVBu" role="a7wSD">
-              <property role="Xl_RC" value="ConstExpr already implicitely inlines" />
+              <property role="Xl_RC" value="constExpr already implicitely inlines" />
             </node>
             <node concept="1YBJjd" id="5eDFAXBRVE6" role="2OEOjV">
               <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
