@@ -1051,9 +1051,14 @@
       <node concept="1iCGBv" id="7DDmkza$63" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:7DDmkza$5N" resolve="identity" />
         <node concept="1sVBvm" id="7DDmkza$65" role="1sWHZn">
-          <node concept="3F0A7n" id="7DDmkza$6f" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="1iCGBv" id="phuaKKO95m" role="2wV5jI">
+            <ref role="1NtTu8" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+            <node concept="1sVBvm" id="phuaKKO95n" role="1sWHZn">
+              <node concept="3F0A7n" id="phuaKKO95_" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
