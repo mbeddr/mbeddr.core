@@ -1004,66 +1004,14 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3fD_lX7L3Ad">
-    <property role="EcuMT" value="3740685201966381453" />
-    <property role="TrG5h" value="AutoDeclaration" />
-    <property role="R4oN_" value="a variable with type auto" />
+  <node concept="1TIwiD" id="6FZQsHt7RdA">
+    <property role="EcuMT" value="7710120554545509222" />
+    <property role="TrG5h" value="AutoType" />
     <property role="34LRSv" value="auto" />
-    <ref role="1TJDcQ" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
-    <node concept="PrWs8" id="2O2YBLCk51z" role="PzmwI">
-      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCktFw" role="PzmwI">
-      <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCrtmb" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCyL0P" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:52l0VUuN5O_" resolve="ICanBeStoredInRegister" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCyMmv" role="PzmwI">
-      <ref role="PrY4T" to="x27k:2ofiXe_tTHX" resolve="ICanMangleNames" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCz0g5" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCz2sD" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCz2ta" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:6o2p2Z0DOCt" resolve="IAllowsIncompleteTypes" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCz2tJ" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:xAR9nWuwcY" resolve="IHasPrefixes" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCz2uo" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCC3CC" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:7oI7FI6oqPw" resolve="IInitializationContext" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCCydq" role="PzmwI">
-      <ref role="PrY4T" to="c4fa:4Ixybz5aK1O" resolve="IValueLike" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCOCCq" role="PzmwI">
-      <ref role="PrY4T" to="x27k:5Oog2UbPmsI" resolve="IExternable" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLCOCDj" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLEbGCQ" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2by6456Kf3p" resolve="IMappableType" />
-    </node>
-    <node concept="PrWs8" id="2O2YBLFafz1" role="PzmwI">
+    <property role="R4oN_" value="auto" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="6FZQsHu28zs" role="PzmwI">
       <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
-    </node>
-    <node concept="1TJgyj" id="2O2YBLDq81u" role="1TKVEi">
-      <property role="IQ2ns" value="3243430093911523422" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="initialize" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
 </model>
