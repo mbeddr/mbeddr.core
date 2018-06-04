@@ -9,10 +9,10 @@
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/javax.servlet-3.0.0.v201112011016.jar" />
-    <stubModelEntry path="${module}/lib/jetty-all-8.1.14.v20131031.jar" />
     <stubModelEntry path="${module}/lib/slf4j-api-1.7.10.jar" />
     <stubModelEntry path="${module}/lib/slf4j-log4j12-1.7.10.jar" />
+    <stubModelEntry path="${module}/lib/javax.servlet-api-3.1.0.jar" />
+    <stubModelEntry path="${module}/lib/jetty-all-9.4.8.v20171121-uber.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -38,6 +38,7 @@
     <language slang="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" version="2" />
     <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="8" />
+    <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>

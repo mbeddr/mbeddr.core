@@ -227,7 +227,7 @@
         <child id="5934114435582613364" name="body" index="3vcmbn" />
       </concept>
       <concept id="5934114435583058812" name="com.mbeddr.mpsutil.interpreter.structure.AbstractEvaluator" flags="ng" index="3va1rv">
-        <property id="8845772667389641968" name="cache" index="2TnfIJ" />
+        <property id="8845772667389641968" name="cacheValues" index="2TnfIJ" />
         <child id="5934114435583235459" name="constraints" index="3vbI0w" />
         <child id="5934114435584084790" name="evaluator" index="3vQZUl" />
       </concept>
@@ -774,6 +774,30 @@
                     <node concept="3cmrfG" id="44jZT9phOOv" role="33vP2m">
                       <property role="3cmrfH" value="1" />
                     </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6_YWcPtUWh6" role="3cqZAp">
+                  <node concept="2OqwBi" id="6_YWcPtUWh3" role="3clFbG">
+                    <node concept="10M0yZ" id="6_YWcPtUWh4" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    </node>
+                    <node concept="liA8E" id="6_YWcPtUWh5" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(int):void" resolve="println" />
+                      <node concept="37vLTw" id="6_YWcPtUWhO" role="37wK5m">
+                        <ref role="3cqZAo" node="44jZT9phOO1" resolve="a" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6_YWcPtUWna" role="3cqZAp">
+                  <node concept="3SKdUq" id="6_YWcPtUWnc" role="3SKWNk">
+                    <property role="3SKdUp" value="line above is just to ensure there's reference to 'a' and therefore " />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6_YWcPtUWon" role="3cqZAp">
+                  <node concept="3SKdUq" id="6_YWcPtUWop" role="3SKWNk">
+                    <property role="3SKdUp" value="no 'unused local variable warning', the one we don't care about here" />
                   </node>
                 </node>
               </node>
@@ -1902,6 +1926,45 @@
                             </node>
                           </node>
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6_YWcPtUBN7" role="3cqZAp">
+                  <node concept="3SKdUq" id="6_YWcPtUBN9" role="3SKWNk">
+                    <property role="3SKdUp" value="Next line is just to suppress warnings from check_UnusedLocalVariableDeclaration." />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6_YWcPtUM_Z" role="3cqZAp">
+                  <node concept="3SKdUq" id="6_YWcPtUMA1" role="3SKWNk">
+                    <property role="3SKdUp" value="I don't want to add extra 'check warning' on variable declaration as it makes statement awkward and hard to read," />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6_YWcPtUMJ5" role="3cqZAp">
+                  <node concept="3SKdUq" id="6_YWcPtUMJ7" role="3SKWNk">
+                    <property role="3SKdUp" value="and I don't know any better way to denote we'd like to ignore certain nodes." />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6_YWcPtUAXg" role="3cqZAp">
+                  <node concept="2OqwBi" id="6_YWcPtUAXd" role="3clFbG">
+                    <node concept="10M0yZ" id="6_YWcPtUAXe" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    </node>
+                    <node concept="liA8E" id="6_YWcPtUAXf" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.printf(java.lang.String,java.lang.Object...):java.io.PrintStream" resolve="printf" />
+                      <node concept="Xl_RD" id="6_YWcPtUB5I" role="37wK5m" />
+                      <node concept="37vLTw" id="6_YWcPtUB8x" role="37wK5m">
+                        <ref role="3cqZAo" node="44jZT9pAZ1g" resolve="c" />
+                      </node>
+                      <node concept="37vLTw" id="6_YWcPtUBau" role="37wK5m">
+                        <ref role="3cqZAo" node="44jZT9pATPv" resolve="n" />
+                      </node>
+                      <node concept="37vLTw" id="6_YWcPtUBc6" role="37wK5m">
+                        <ref role="3cqZAo" node="44jZT9pAMuR" resolve="m" />
+                      </node>
+                      <node concept="37vLTw" id="6_YWcPtUBGK" role="37wK5m">
+                        <ref role="3cqZAo" node="44jZT9pBBRX" resolve="i" />
                       </node>
                     </node>
                   </node>

@@ -5885,6 +5885,33 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbJ" id="3Br2b_5lIYO" role="3cqZAp">
+              <node concept="3clFbS" id="3Br2b_5lIYQ" role="3clFbx">
+                <node concept="3clFbF" id="3Br2b_5lMTG" role="3cqZAp">
+                  <node concept="37vLTI" id="3Br2b_5lNsc" role="3clFbG">
+                    <node concept="3b6qkQ" id="3Br2b_5lNQU" role="37vLTx">
+                      <property role="$nhwW" value="0.0" />
+                    </node>
+                    <node concept="37vLTw" id="3Br2b_5lMTE" role="37vLTJ">
+                      <ref role="3cqZAo" node="7GMtHW6t7N$" resolve="opacity" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="3Br2b_5migR" role="3clFbw">
+                <node concept="3cmrfG" id="3Br2b_5mi_H" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="2OqwBi" id="3Br2b_5mgBs" role="3uHU7B">
+                  <node concept="37vLTw" id="3Br2b_5mg5y" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7GMtHW6scdR" resolve="event" />
+                  </node>
+                  <node concept="liA8E" id="3Br2b_5mhsp" role="2OqNvi">
+                    <ref role="37wK5l" to="hyam:~InputEvent.getModifiers():int" resolve="getModifiers" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="7GMtHW6t6Ge" role="3cqZAp">
               <node concept="2OqwBi" id="7GMtHW6t6Uf" role="3clFbG">
                 <node concept="2GrUjf" id="7GMtHW6t6Gc" role="2Oq$k0">

@@ -82,6 +82,11 @@
       <property role="IQ2nx" value="8224407690718723337" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="4AuGfbNSWr4" role="1TKVEl">
+      <property role="IQ2nx" value="5304871968609388228" />
+      <property role="TrG5h" value="inverted" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="RbLMy6aM8Q" role="PzmwI">
       <ref role="PrY4T" node="6oKG1kMyAVO" resolve="IActionGeneratingCell" />
     </node>
@@ -1014,6 +1019,13 @@
     <property role="TrG5h" value="Parameter_OriginalText" />
     <property role="34LRSv" value="originalText" />
     <property role="EcuMT" value="7463174232466930070" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="2c4RKQNz44w">
+    <property role="EcuMT" value="2523386941174202656" />
+    <property role="3GE5qa" value="cells" />
+    <property role="TrG5h" value="FlagCell_SubstituteCondition_parentNode" />
+    <property role="34LRSv" value="parentNode" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>

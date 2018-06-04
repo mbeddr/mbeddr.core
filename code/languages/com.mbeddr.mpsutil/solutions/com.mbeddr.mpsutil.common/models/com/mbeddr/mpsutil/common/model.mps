@@ -126,7 +126,6 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -358,11 +357,8 @@
                 </node>
                 <node concept="v3k3i" id="2pogikRHVDv" role="2OqNvi">
                   <node concept="25Kdxt" id="2pogikRHWnY" role="v3oSu">
-                    <node concept="2OqwBi" id="sufbFKPSb9" role="25KhWn">
-                      <node concept="37vLTw" id="2pogikRHWnZ" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5GUwywcughM" resolve="conceptToFind" />
-                      </node>
-                      <node concept="1rGIog" id="sufbFKPSpC" role="2OqNvi" />
+                    <node concept="37vLTw" id="2pogikRHWnZ" role="25KhWn">
+                      <ref role="3cqZAo" node="5GUwywcughM" resolve="conceptToFind" />
                     </node>
                   </node>
                 </node>
@@ -477,11 +473,8 @@
                 </node>
                 <node concept="1mIQ4w" id="5GUwywcuwou" role="2OqNvi">
                   <node concept="25Kdxt" id="5GUwywcuwpH" role="cj9EA">
-                    <node concept="2OqwBi" id="22k4x3w$m7T" role="25KhWn">
-                      <node concept="37vLTw" id="5GUwywcuCG0" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5GUwywcuzx6" resolve="conceptToFind" />
-                      </node>
-                      <node concept="1rGIog" id="22k4x3w$mjt" role="2OqNvi" />
+                    <node concept="37vLTw" id="5GUwywcuCG0" role="25KhWn">
+                      <ref role="3cqZAo" node="5GUwywcuzx6" resolve="conceptToFind" />
                     </node>
                   </node>
                 </node>

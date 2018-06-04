@@ -11,11 +11,11 @@
             </Library>
           </value>
         </entry>
-        <entry key="sl-all">
+        <entry key="mps.extensions">
           <value>
             <Library>
-              <option name="name" value="sl-all" />
-              <option name="path" value="${mbeddr.github.core.home}/code/plugins/sl-all" />
+              <option name="name" value="mps.extensions" />
+              <option name="path" value="${mbeddr.github.core.home}/artifacts/de.itemis.mps.extensions" />
             </Library>
           </value>
         </entry>

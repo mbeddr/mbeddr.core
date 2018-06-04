@@ -858,6 +858,27 @@
         <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
     </node>
+    <node concept="2tJIrI" id="5nMUAz4WCfd" role="jymVt" />
+    <node concept="3clFb_" id="5nMUAz4WDKA" role="jymVt">
+      <property role="TrG5h" value="getPreferredFocusedComponent" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="2AHcQZ" id="5nMUAz4WDKB" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="5nMUAz4WDKC" role="3clF47">
+        <node concept="3cpWs6" id="5nMUAz4WDKD" role="3cqZAp">
+          <node concept="1rXfSq" id="5nMUAz4WOcc" role="3cqZAk">
+            <ref role="37wK5l" node="72neNfy7reN" resolve="getTree" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5nMUAz4WDKF" role="1B3o_S" />
+      <node concept="3uibUv" id="5nMUAz4WDKG" role="3clF45">
+        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5nMUAz4WCYc" role="jymVt" />
     <node concept="2tJIrI" id="72neNfy7prp" role="jymVt" />
     <node concept="3clFb_" id="72neNfy7reN" role="jymVt">
       <property role="TrG5h" value="getTree" />
@@ -3197,23 +3218,24 @@
       <node concept="3Tm1VV" id="2Nt6procffD" role="1B3o_S" />
       <node concept="3clFbS" id="2Nt6procffE" role="3clF47">
         <node concept="XkiVB" id="2Nt6procffF" role="3cqZAp">
-          <ref role="37wK5l" to="xr52:~SModelTreeNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SModel,java.lang.String,boolean,org.jetbrains.mps.util.Condition,int)" resolve="SModelTreeNode" />
+          <ref role="37wK5l" to="xr52:~SModelTreeNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SModel,jetbrains.mps.ide.ui.tree.TreeNodeTextSource)" resolve="SModelTreeNode" />
           <node concept="37vLTw" id="2Nt6procffG" role="37wK5m">
             <ref role="3cqZAo" node="2Nt6procffL" resolve="modelDescriptor" />
           </node>
-          <node concept="37vLTw" id="2Nt6procffH" role="37wK5m">
-            <ref role="3cqZAo" node="2Nt6procffN" resolve="label" />
-          </node>
-          <node concept="37vLTw" id="2Nt6procgoM" role="37wK5m">
-            <ref role="3cqZAo" node="2Nt6procg4G" resolve="showLongName" />
-          </node>
-          <node concept="2ShNRf" id="6yXTMcUd_VF" role="37wK5m">
-            <node concept="HV5vD" id="6yXTMcUdA$k" role="2ShVmc">
-              <ref role="HV5vE" node="6yXTMcUde6W" resolve="InvalidSNodeCondition" />
+          <node concept="3K4zz7" id="4cZcoof1uhE" role="37wK5m">
+            <node concept="2ShNRf" id="4cZcoof1uU8" role="3K4E3e">
+              <node concept="HV5vD" id="4cZcoof1Lrx" role="2ShVmc">
+                <ref role="HV5vE" to="xr52:~SModelTreeNode$LongModelNameText" resolve="SModelTreeNode.LongModelNameText" />
+              </node>
             </node>
-          </node>
-          <node concept="37vLTw" id="2Nt6procffK" role="37wK5m">
-            <ref role="3cqZAo" node="2Nt6procffS" resolve="countNamePart" />
+            <node concept="2ShNRf" id="4cZcoof1N2p" role="3K4GZi">
+              <node concept="HV5vD" id="4cZcoof1Sl$" role="2ShVmc">
+                <ref role="HV5vE" to="xr52:~SModelTreeNode$ShortModelNameText" resolve="SModelTreeNode.ShortModelNameText" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2Nt6procgoM" role="3K4Cdx">
+              <ref role="3cqZAo" node="2Nt6procg4G" resolve="showLongName" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="6yXTMcUd_JU" role="3cqZAp">
@@ -3234,7 +3256,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2Nt6procffN" role="3clF46">
-        <property role="TrG5h" value="label" />
+        <property role="TrG5h" value="label_UNUSED" />
         <node concept="17QB3L" id="2Nt6procffO" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="2Nt6procg4G" role="3clF46">
@@ -3248,7 +3270,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2Nt6procffS" role="3clF46">
-        <property role="TrG5h" value="countNamePart" />
+        <property role="TrG5h" value="countNamePart_UNUSED" />
         <node concept="10Oyi0" id="2Nt6procffT" role="1tU5fm" />
       </node>
     </node>
@@ -3572,7 +3594,7 @@
                           <ref role="37wK5l" to="7e8u:~MPSTreeNode.getTree():jetbrains.mps.ide.ui.tree.MPSTree" resolve="getTree" />
                         </node>
                         <node concept="liA8E" id="6yXTMcUetc9" role="2OqNvi">
-                          <ref role="37wK5l" to="dxuu:~JTree.getModel():javax.swing.tree.TreeModel" resolve="getModel" />
+                          <ref role="37wK5l" to="7e8u:~MPSTree.getModel():javax.swing.tree.DefaultTreeModel" resolve="getModel" />
                         </node>
                       </node>
                       <node concept="3uibUv" id="6yXTMcUetca" role="10QFUM">
@@ -3836,7 +3858,7 @@
                       <ref role="37wK5l" to="7e8u:~MPSTreeNode.getTree():jetbrains.mps.ide.ui.tree.MPSTree" resolve="getTree" />
                     </node>
                     <node concept="liA8E" id="6yXTMcUetdL" role="2OqNvi">
-                      <ref role="37wK5l" to="dxuu:~JTree.getModel():javax.swing.tree.TreeModel" resolve="getModel" />
+                      <ref role="37wK5l" to="7e8u:~MPSTree.getModel():javax.swing.tree.DefaultTreeModel" resolve="getModel" />
                     </node>
                   </node>
                   <node concept="3uibUv" id="6yXTMcUetdM" role="10QFUM">
@@ -5258,25 +5280,17 @@
                       <node concept="37vLTw" id="2Nt6pro9jmr" role="37wK5m">
                         <ref role="3cqZAo" node="2Nt6pro9jmi" resolve="rootModelDescriptor" />
                       </node>
-                      <node concept="2YIFZM" id="2Nt6pro9jrV" role="37wK5m">
-                        <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-                        <ref role="37wK5l" to="18ew:~NameUtil.namespaceFromLongName(java.lang.String):java.lang.String" resolve="namespaceFromLongName" />
-                        <node concept="2YIFZM" id="2Nt6pro9jrY" role="37wK5m">
-                          <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-                          <ref role="37wK5l" to="w1kc:~SModelStereotype.withoutStereotype(java.lang.String):java.lang.String" resolve="withoutStereotype" />
-                          <node concept="2OqwBi" id="2Nt6pro9jmu" role="37wK5m">
-                            <node concept="2OqwBi" id="2Nt6pro9js2" role="2Oq$k0">
-                              <node concept="37vLTw" id="2Nt6pro9js1" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2Nt6pro9jmi" resolve="rootModelDescriptor" />
-                              </node>
-                              <node concept="liA8E" id="2Nt6pro9js3" role="2OqNvi">
-                                <ref role="37wK5l" to="mhbf:~SModel.getReference():org.jetbrains.mps.openapi.model.SModelReference" resolve="getReference" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="2Nt6pro9jmw" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SModelReference.getModelName():java.lang.String" resolve="getModelName" />
-                            </node>
+                      <node concept="2OqwBi" id="7AkySkb7C_" role="37wK5m">
+                        <node concept="2OqwBi" id="2Nt6pro9jmu" role="2Oq$k0">
+                          <node concept="37vLTw" id="2Nt6pro9js1" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2Nt6pro9jmi" resolve="rootModelDescriptor" />
                           </node>
+                          <node concept="liA8E" id="2Nt6pro9jmw" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="7AkySkb88q" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SModelName.getNamespace():java.lang.String" resolve="getNamespace" />
                         </node>
                       </node>
                     </node>

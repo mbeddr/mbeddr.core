@@ -11,7 +11,7 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="def0c586-0b96-457b-823f-8a6dc4de654c(org.iets3.core.json.sandbox)" version="0" />
+    <module reference="def0c586-0b96-457b-823f-8a6dc4de654c(com.mbeddr.mpsutil.json.sandbox)" version="0" />
   </dependencyVersions>
 </solution>
 

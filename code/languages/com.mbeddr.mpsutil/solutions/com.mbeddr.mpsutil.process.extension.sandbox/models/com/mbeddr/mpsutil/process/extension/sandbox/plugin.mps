@@ -69,7 +69,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -85,18 +84,11 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
-      </concept>
     </language>
     <language id="306d7456-29e2-4ea3-9c46-e7b830b08481" name="com.mbeddr.mpsutil.process">
       <concept id="6632769160448859561" name="com.mbeddr.mpsutil.process.structure.MainPanelArg" flags="ng" index="29H0B1" />
       <concept id="8081644025962062833" name="com.mbeddr.mpsutil.process.structure.StepPrivateData" flags="ng" index="CxUut" />
       <concept id="8081644025963170966" name="com.mbeddr.mpsutil.process.structure.StepMemberReference" flags="ng" index="C_CzU" />
-      <concept id="8081644025964609311" name="com.mbeddr.mpsutil.process.structure.StepRefExpression" flags="ng" index="CSfHN">
-        <reference id="8081644025964621849" name="step" index="CSbhP" />
-      </concept>
       <concept id="4724180912012713611" name="com.mbeddr.mpsutil.process.structure.CreateComponentFunction" flags="ig" index="UJns9" />
       <concept id="4724180912012648918" name="com.mbeddr.mpsutil.process.structure.Step" flags="ng" index="UJ$xk">
         <property id="4671234082065499041" name="titel" index="2WTsO4" />
@@ -234,18 +226,8 @@
                 </node>
                 <node concept="liA8E" id="7YSjiE87idT" role="2OqNvi">
                   <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
-                  <node concept="3cpWs3" id="7YSjiE87isy" role="37wK5m">
-                    <node concept="2OqwBi" id="7YSjiE8b06L" role="3uHU7w">
-                      <node concept="CSfHN" id="7YSjiE8b023" role="2Oq$k0">
-                        <ref role="CSbhP" to="uis2:1J_CuVjhhsn" resolve="test" />
-                      </node>
-                      <node concept="C_CzU" id="7YSjiE8b0ev" role="2OqNvi">
-                        <ref role="2WH_rO" to="uis2:1J_CuVjhGwM" resolve="enteredName" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="7YSjiE87ieM" role="3uHU7B">
-                      <property role="Xl_RC" value="Hello " />
-                    </node>
+                  <node concept="Xl_RD" id="7YSjiE87ieM" role="37wK5m">
+                    <property role="Xl_RC" value="Hello " />
                   </node>
                 </node>
               </node>

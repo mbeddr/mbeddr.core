@@ -55,7 +55,6 @@
     <import index="d3cl" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.make.script(MPS.Core/)" />
     <import index="vqh0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.make(MPS.Core/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
-    <import index="m0f7" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.resources(MPS.Core/)" />
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
     <import index="mcvh" ref="r:4032b78d-911f-4395-b88c-ccb50cb24300(jetbrains.mps.debugger.java.api.settings)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
@@ -1718,7 +1717,7 @@
               <property role="TrG5h" value="isBreakpointSupport" />
               <node concept="10P_77" id="VC7RuZUIBb" role="1tU5fm" />
               <node concept="2OqwBi" id="VC7RuZUIBg" role="33vP2m">
-                <node concept="3KmjVe" id="hODJYSBgtY" role="2Oq$k0" />
+                <node concept="3KmjVe" id="2mzdNw4fBcn" role="2Oq$k0" />
                 <node concept="2Zo12i" id="VC7RuZUIBi" role="2OqNvi">
                   <node concept="chp4Y" id="VC7RuZUIBj" role="2Zo12j">
                     <ref role="cht4Q" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
@@ -11036,17 +11035,14 @@
                     <node concept="2OqwBi" id="4k8klQzATA3" role="37wK5m">
                       <node concept="2ShNRf" id="4k8klQzATA4" role="2Oq$k0">
                         <node concept="1pGfFk" id="4k8klQzATA5" role="2ShVmc">
-                          <ref role="37wK5l" to="m0f7:~ModelsToResources.&lt;init&gt;(java.lang.Iterable)" resolve="ModelsToResources" />
+                          <ref role="37wK5l" to="fn29:6zsZmIC0WqK" resolve="ModelsToResources" />
                           <node concept="37vLTw" id="4k8klQzATF2" role="37wK5m">
                             <ref role="3cqZAo" node="4k8klQzATAZ" resolve="modelDescriptors" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="4k8klQzATAb" role="2OqNvi">
-                        <ref role="37wK5l" to="m0f7:~ModelsToResources.resources(boolean):java.lang.Iterable" resolve="resources" />
-                        <node concept="3clFbT" id="4k8klQzATAc" role="37wK5m">
-                          <property role="3clFbU" value="false" />
-                        </node>
+                        <ref role="37wK5l" to="fn29:713BH0S$TAn" resolve="resources" />
                       </node>
                     </node>
                   </node>
@@ -13616,8 +13612,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="47xghtTLh_t" role="2OqNvi">
-                  <ref role="37wK5l" to="fn29:6gLh390ElAV" resolve="resources" />
-                  <node concept="3clFbT" id="47xghtTLh_u" role="37wK5m" />
+                  <ref role="37wK5l" to="fn29:713BH0S$TAn" resolve="resources" />
                 </node>
               </node>
             </node>

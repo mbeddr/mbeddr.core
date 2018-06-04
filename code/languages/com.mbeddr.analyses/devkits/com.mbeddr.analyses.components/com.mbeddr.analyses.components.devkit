@@ -11,7 +11,6 @@
     <exported-solution>603a3466-f1f4-442a-b544-048f481ec3bb(com.mbeddr.analyses.cbmc.components.rt)</exported-solution>
     <exported-solution>397da8bd-bcff-4d80-87cb-c4eaba8e2cb2(com.mbeddr.analyses.cbmc.pluginSolution)</exported-solution>
     <exported-solution>9506d0a9-4e49-4605-b51a-d3aeb0070ba3(com.mbeddr.analyses.cbmc.core.rt)</exported-solution>
-    <exported-solution>13c63209-1eb7-491d-accf-3ba493379657(com.mbeddr.analyses.cbmc.components.pluginSolution)</exported-solution>
     <exported-solution>a3733d9d-fa94-4706-bdd4-596b968eba8e(com.mbeddr.analyses.cbmc.rt)</exported-solution>
   </exported-solutions>
 </dev-kit>

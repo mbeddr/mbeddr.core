@@ -25,6 +25,9 @@
     <import index="jtst" ref="r:94684e53-e178-4b85-9402-d0df7f2c7994(com.mbeddr.core.util.plugin)" />
     <import index="pmum" ref="r:be293a79-c9de-44c7-848a-150147010751(com.mbeddr.core.statements.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="xxlk" ref="r:e88b9cc0-93c9-4fa2-bb83-758d8dd56fb7(com.mbeddr.core.expressions.interpreter.plugin)" />
+    <import index="h40l" ref="r:ac210026-ad43-4bdd-8d39-e09ff89cd7f1(com.mbeddr.core.statements.interpreter.plugin)" />
+    <import index="dpzy" ref="r:7b666de7-002f-4492-b5bd-942c41bb2387(com.mbeddr.core.util.interpreter.plugin)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -394,7 +397,7 @@
                     <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
                     <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
                     <node concept="3B5_sB" id="4TNdqI4as5l" role="37wK5m">
-                      <ref role="3B5MYn" to="rcia:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
+                      <ref role="3B5MYn" to="xxlk:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
                     </node>
                   </node>
                 </node>
@@ -428,21 +431,21 @@
                         <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
                         <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
                         <node concept="3B5_sB" id="4TNdqI4aEjM" role="37wK5m">
-                          <ref role="3B5MYn" to="rcia:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
+                          <ref role="3B5MYn" to="xxlk:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
                         </node>
                       </node>
                       <node concept="2YIFZM" id="4TNdqI4aEo3" role="37wK5m">
                         <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
                         <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
                         <node concept="3B5_sB" id="4TNdqI4aEo4" role="37wK5m">
-                          <ref role="3B5MYn" to="jtst:3VM1o5wb$BS" resolve="CExtInterpreter" />
+                          <ref role="3B5MYn" to="dpzy:3VM1o5wb$BS" resolve="CExtInterpreter" />
                         </node>
                       </node>
                       <node concept="2YIFZM" id="4TNdqI4aH0r" role="37wK5m">
                         <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
                         <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
                         <node concept="3B5_sB" id="4TNdqI4aH0s" role="37wK5m">
-                          <ref role="3B5MYn" to="pmum:3VM1o5wbxvn" resolve="CStatementInterpreter" />
+                          <ref role="3B5MYn" to="h40l:3VM1o5wbxvn" resolve="CStatementInterpreter" />
                         </node>
                       </node>
                     </node>
@@ -471,7 +474,7 @@
               <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
               <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
               <node concept="3B5_sB" id="4TNdqI4aHWz" role="37wK5m">
-                <ref role="3B5MYn" to="rcia:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
+                <ref role="3B5MYn" to="xxlk:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
               </node>
             </node>
           </node>
@@ -560,7 +563,7 @@
               <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
               <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
               <node concept="3B5_sB" id="4TNdqI4aI9e" role="37wK5m">
-                <ref role="3B5MYn" to="rcia:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
+                <ref role="3B5MYn" to="xxlk:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
               </node>
             </node>
           </node>
