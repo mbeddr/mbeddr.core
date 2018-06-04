@@ -23,14 +23,26 @@
         <child id="7254843406768606787" name="condition" index="1_amZB" />
       </concept>
       <concept id="7254843406768606755" name="com.mbeddr.core.statements.structure.ForVarDecl" flags="ng" index="1_amY7" />
+      <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
+        <child id="8624890525768479139" name="textblock" index="3SJzmv" />
+      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
+      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
@@ -73,6 +85,9 @@
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
@@ -640,6 +655,17 @@
     <node concept="3mBW2U" id="nbE_$_7VLV" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="Adder" />
+      <node concept="3mBbG7" id="5uvgyTl3NrB" role="3mBdys">
+        <property role="1wg9_F" value="public" />
+        <property role="TrG5h" value="pubfield" />
+        <node concept="26Vqph" id="5uvgyTl3Nud" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3TlMh9" id="5uvgyTl3Nu_" role="3XIe9v">
+          <property role="2hmy$m" value="5" />
+        </node>
+      </node>
       <node concept="3mB1cK" id="1Yr26iuhgnr" role="3mBdys">
         <property role="TrG5h" value="increment" />
         <property role="1wg9_F" value="public" />
@@ -649,7 +675,7 @@
         </node>
         <node concept="19RgSI" id="1Yr26iuhgnU" role="1UOdpc">
           <property role="TrG5h" value="value" />
-          <node concept="26Vqph" id="1Yr26iuhgnT" role="2C2TGm">
+          <node concept="26Vqph" id="5uvgyTlnHvn" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
@@ -671,6 +697,21 @@
     <node concept="3mBW2U" id="nbE_$_7VLG" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="Calculator" />
+      <node concept="3mB1cK" id="5uvgyTkQGzW" role="3mBdys">
+        <property role="1wg9_F" value="public" />
+        <property role="TrG5h" value="other" />
+        <node concept="26Vqph" id="5uvgyTkQGBa" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3XIRFW" id="5uvgyTkQGBp" role="3XIRFX">
+          <node concept="2BFjQ_" id="5uvgyTkQGBH" role="3XIRFZ">
+            <node concept="3TlMh9" id="5uvgyTkQGBO" role="2BFjQA">
+              <property role="2hmy$m" value="5" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3mB1cK" id="1Yr26iuhgzj" role="3mBdys">
         <property role="TrG5h" value="increment20" />
         <property role="1wg9_F" value="public" />
@@ -800,6 +841,37 @@
           <property role="2c7vTL" value="false" />
         </node>
         <node concept="3XIRFW" id="5uvgyTkmfMq" role="3XIRFX">
+          <node concept="1_9egQ" id="5uvgyTlaglO" role="3XIRFZ">
+            <node concept="3uHcMF" id="5uvgyTlodYX" role="1_9egR">
+              <ref role="3uHcMG" node="5uvgyTl3NrB" resolve="pubfield" />
+            </node>
+          </node>
+          <node concept="1QiMYF" id="5uvgyTl3NZl" role="3XIRFZ">
+            <node concept="OjmMv" id="5uvgyTl3NZn" role="3SJzmv">
+              <node concept="19SGf9" id="5uvgyTl3NZo" role="OjmMu">
+                <node concept="19SUe$" id="5uvgyTl3NZp" role="19SJt6">
+                  <property role="19SUeA" value="From grandparent" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1_9egQ" id="5uvgyTl3pcP" role="3XIRFZ">
+            <node concept="3uHhno" id="5uvgyTl3pcN" role="1_9egR">
+              <ref role="3uHhlH" node="1Yr26iuhgnr" resolve="increment" />
+              <node concept="3TlMh9" id="5uvgyTl3NWm" role="3O_q_j">
+                <property role="2hmy$m" value="4" />
+              </node>
+            </node>
+          </node>
+          <node concept="1QiMYF" id="5uvgyTl3O1W" role="3XIRFZ">
+            <node concept="OjmMv" id="5uvgyTl3O1Y" role="3SJzmv">
+              <node concept="19SGf9" id="5uvgyTl3O1Z" role="OjmMu">
+                <node concept="19SUe$" id="5uvgyTl3O20" role="19SJt6">
+                  <property role="19SUeA" value="From parent" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="1_9egQ" id="5uvgyTkmEaY" role="3XIRFZ">
             <node concept="3uHhno" id="5uvgyTkmEaW" role="1_9egR">
               <ref role="3uHhlH" node="1Yr26iuhgzj" resolve="increment20" />
@@ -838,6 +910,14 @@
             <ref role="3mBfEM" node="nbE_$_7VLG" resolve="Calculator" />
           </node>
         </node>
+        <node concept="2dywKE" id="5uvgyTlaqE$" role="3XIRFZ">
+          <property role="TrG5h" value="other_calculator" />
+          <node concept="3mBfEi" id="5uvgyTlaqEy" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="3mBfEM" node="5uvgyTkmf_z" resolve="MegaCalc" />
+          </node>
+        </node>
         <node concept="3XIRlf" id="29I8DMSfTOU" role="3XIRFZ">
           <property role="TrG5h" value="someInt" />
           <node concept="26Vqph" id="29I8DMSfTOS" role="2C2TGm">
@@ -861,6 +941,55 @@
             </node>
           </node>
         </node>
+        <node concept="1QiMYF" id="5uvgyTlhj6D" role="3XIRFZ">
+          <node concept="OjmMv" id="5uvgyTlhj6F" role="3SJzmv">
+            <node concept="19SGf9" id="5uvgyTlhj6G" role="OjmMu">
+              <node concept="19SUe$" id="5uvgyTlhj6H" role="19SJt6">
+                <property role="19SUeA" value="Grandparent field" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="5uvgyTlhiKv" role="3XIRFZ">
+          <node concept="2qmXGp" id="5uvgyTlhiLo" role="1_9egR">
+            <node concept="3mBk1D" id="5uvgyTlhiLO" role="1ESnxz">
+              <ref role="3mBk1B" node="5uvgyTl3NrB" resolve="pubfield" />
+            </node>
+            <node concept="3ZVu4v" id="5uvgyTlhiKt" role="1_9fRO">
+              <ref role="3ZVs_2" node="5uvgyTlaqE$" resolve="other_calculator" />
+            </node>
+          </node>
+        </node>
+        <node concept="1QiMYF" id="5uvgyTlhksb" role="3XIRFZ">
+          <node concept="OjmMv" id="5uvgyTlhksd" role="3SJzmv">
+            <node concept="19SGf9" id="5uvgyTlhkse" role="OjmMu">
+              <node concept="19SUe$" id="5uvgyTlhksf" role="19SJt6">
+                <property role="19SUeA" value="Grandparent method" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="5uvgyTlhktA" role="3XIRFZ">
+          <node concept="2qmXGp" id="5uvgyTlnz3D" role="1_9egR">
+            <node concept="3mBbHP" id="5uvgyTlnz4l" role="1ESnxz">
+              <ref role="3mBbHN" node="1Yr26iuhgnr" resolve="increment" />
+            </node>
+            <node concept="3ZVu4v" id="5uvgyTlhkt$" role="1_9fRO">
+              <ref role="3ZVs_2" node="5uvgyTlaqE$" resolve="other_calculator" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="5uvgyTlnztm" role="3XIRFZ">
+          <node concept="2qmXGp" id="5uvgyTlnzv3" role="1_9egR">
+            <node concept="3mBbHP" id="5uvgyTlnG6X" role="1ESnxz">
+              <ref role="3mBbHN" node="5uvgyTkmfLR" resolve="someMethod" />
+            </node>
+            <node concept="3ZVu4v" id="5uvgyTlnztk" role="1_9fRO">
+              <ref role="3ZVs_2" node="5uvgyTlaqE$" resolve="other_calculator" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XISUE" id="5uvgyTlnywn" role="3XIRFZ" />
         <node concept="2N2KuS" id="29I8DMSfTRw" role="3XIRFZ">
           <node concept="3TlMh9" id="29I8DMSfTSi" role="2N2GHh">
             <property role="2hmy$m" value="1" />
@@ -873,8 +1002,8 @@
           <node concept="2qmXGp" id="29I8DMSfUfg" role="1_9egR">
             <node concept="3mBbHP" id="29I8DMSfUud" role="1ESnxz">
               <ref role="3mBbHN" node="1Yr26iuhgzj" resolve="increment20" />
-              <node concept="3ZVu4v" id="29I8DMSfUAc" role="3mBtou">
-                <ref role="3ZVs_2" node="29I8DMSfTOU" resolve="someInt" />
+              <node concept="3TlMh9" id="5uvgyTlnHIh" role="3mBtou">
+                <property role="2hmy$m" value="24" />
               </node>
             </node>
             <node concept="3ZVu4v" id="29I8DMSfUeD" role="1_9fRO">
