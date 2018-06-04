@@ -26,9 +26,12 @@
     <language slang="l:2693fc71-9b0e-4b05-ab13-f57227d675f2:com.mbeddr.core.util" version="0" />
     <language slang="l:8c081446-e4ba-48b7-a7e0-3db40e2c3439:com.mbeddr.cpp.base" version="0" />
     <language slang="l:6e81d0c1-347c-43fc-99ef-bdd47021c2b7:com.mbeddr.cpp.buildconfig" version="0" />
+    <language slang="l:2e15e1a4-8998-4f06-86b2-8d184a179e8e:com.mbeddr.cpp.exceptions" version="0" />
     <language slang="l:b341759a-c721-4072-90cf-328bb2724684:com.mbeddr.cpp.expressions" version="0" />
     <language slang="l:dd4979e3-3be6-46b3-9e1e-c36309e30758:com.mbeddr.cpp.modules" version="0" />
     <language slang="l:236f3e56-2360-4657-9b9d-0cb84f56784d:com.mbeddr.cpp.modules.gen" version="0" />
+    <language slang="l:7308c66b-3b31-4952-bf56-0f3405fab5be:com.mbeddr.cpp.operator_overload" version="0" />
+    <language slang="l:5e6018dc-dc26-4070-9526-663fdbfe4c10:com.mbeddr.cpp.templates" version="0" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
     <language slang="l:a482b416-d0c9-473f-8f67-725ed642b3f3:com.mbeddr.mpsutil.breadcrumb" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
