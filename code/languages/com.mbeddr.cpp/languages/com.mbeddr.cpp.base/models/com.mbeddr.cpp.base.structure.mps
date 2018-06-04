@@ -138,9 +138,6 @@
     <node concept="PrWs8" id="3UJ18qjqSjv" role="PzmwI">
       <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlagConcept" />
     </node>
-    <node concept="PrWs8" id="3UJ18qjqSkl" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBC$A7" resolve="IConstFlagConcept" />
-    </node>
     <node concept="PrWs8" id="3UJ18qjqSjS" role="PzmwI">
       <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
     </node>
@@ -207,9 +204,6 @@
     </node>
     <node concept="PrWs8" id="7DDmkyVqQX" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
-    </node>
-    <node concept="PrWs8" id="5eDFAXBCDaF" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBC$A7" resolve="IConstFlagConcept" />
     </node>
     <node concept="PrWs8" id="5eDFAXBCDcW" role="PzmwI">
       <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlagConcept" />
@@ -303,9 +297,6 @@
     </node>
     <node concept="PrWs8" id="5C47DuoDR$z" role="PzmwI">
       <ref role="PrY4T" to="vs0r:1S6A2cmQVtM" resolve="ICallable" />
-    </node>
-    <node concept="PrWs8" id="3LE5RBQ6qAL" role="PzmwI">
-      <ref role="PrY4T" node="3LE5RBQ6qAj" resolve="IAmInlineable" />
     </node>
   </node>
   <node concept="1TIwiD" id="3UsoL$l5qkL">
@@ -545,6 +536,11 @@
     <property role="TrG5h" value="ConstructorInitializedConstructor" />
     <property role="R4oN_" value="Base constructor calls like ConstructorA(int32 a) : ConstructorB(a)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1rV7RaSNWqj" role="1TKVEl">
+      <property role="IQ2nx" value="1655951865576146579" />
+      <property role="TrG5h" value="real_name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="7DDmkza$5K" role="PzmwI">
       <ref role="PrY4T" node="3n$8_Xbpg8r" resolve="IAmConstructorInitializable" />
     </node>
@@ -565,11 +561,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
-    <node concept="1TJgyi" id="1rV7RaSNWqj" role="1TKVEl">
-      <property role="IQ2nx" value="1655951865576146579" />
-      <property role="TrG5h" value="real_name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3OWNtRXmIPi">
     <property role="EcuMT" value="4412628088238304594" />
@@ -588,16 +579,6 @@
     <node concept="1TJgyi" id="2L1k$oXDqK2" role="1TKVEl">
       <property role="IQ2nx" value="3188920472790477826" />
       <property role="TrG5h" value="isPureVirtual" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="3LE5RBQ6qAj">
-    <property role="EcuMT" value="4353317802394364307" />
-    <property role="3GE5qa" value="method" />
-    <property role="TrG5h" value="IAmInlineable" />
-    <node concept="1TJgyi" id="3LE5RBQ6qAk" role="1TKVEl">
-      <property role="IQ2nx" value="4353317802394364308" />
-      <property role="TrG5h" value="inline" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -927,16 +908,6 @@
     <node concept="1TJgyi" id="1Yr26itwx8v" role="1TKVEl">
       <property role="IQ2nx" value="2277423264798216735" />
       <property role="TrG5h" value="isStatic" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="5eDFAXBC$A7">
-    <property role="EcuMT" value="6028541369715411335" />
-    <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IConstFlagConcept" />
-    <node concept="1TJgyi" id="5eDFAXBC$A8" role="1TKVEl">
-      <property role="IQ2nx" value="6028541369715411336" />
-      <property role="TrG5h" value="isConstant" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
