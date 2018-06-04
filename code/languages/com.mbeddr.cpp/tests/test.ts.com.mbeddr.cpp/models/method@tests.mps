@@ -76,6 +76,9 @@
       <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualFlagConcept" flags="ng" index="hL25U">
         <property id="3188920472788366141" name="isVirtual" index="hL25V" />
       </concept>
+      <concept id="3188920472790477822" name="com.mbeddr.cpp.base.structure.IPureVirtualFlagConcept" flags="ng" index="hTfAS">
+        <property id="3188920472790477826" name="isPureVirtual" index="hTfT4" />
+      </concept>
       <concept id="6028541369715364763" name="com.mbeddr.cpp.base.structure.IVolatileFlagConcept" flags="ng" index="O23RO">
         <property id="6028541369715364764" name="isVolatile" index="O23RN" />
       </concept>
@@ -94,6 +97,7 @@
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
+      <concept id="4018800670853679470" name="com.mbeddr.cpp.base.structure.EmptyClassContent" flags="ng" index="3u$6M4" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
@@ -162,6 +166,21 @@
         <node concept="3mBW2U" id="1gzloVU_9IW" role="N3F5h">
           <property role="2OOxQR" value="false" />
           <property role="TrG5h" value="SomeClass" />
+          <node concept="3mB1cK" id="48nd0xvgHE" role="3mBdys">
+            <property role="1wg9_F" value="private" />
+            <property role="TrG5h" value="nonVirtual" />
+            <node concept="19Rifw" id="48nd0xvgJ4" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="7CXmI" id="48nd0xvgJZ" role="lGtFl">
+              <node concept="1TM$A" id="48nd0xvgKz" role="7EUXB">
+                <node concept="2PYRI3" id="48nd0xvgK$" role="3lydEf">
+                  <ref role="39XzEq" to="g7jk:2L1k$oXL3xp" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3mB1cK" id="48nd0xcJv4" role="3mBdys">
             <property role="1wg9_F" value="private" />
             <property role="TrG5h" value="virtualConstexprMethod" />
@@ -246,6 +265,24 @@
             <node concept="3XIRFW" id="48nd0xpZkE" role="3XIRFX" />
             <node concept="7CXmI" id="48nd0xuNB1" role="lGtFl">
               <node concept="1TM$A" id="48nd0xuNB2" role="7EUXB" />
+            </node>
+          </node>
+          <node concept="3u$6M4" id="48nd0xvgvz" role="3mBdys" />
+          <node concept="3mB1cK" id="48nd0xvgBP" role="3mBdys">
+            <property role="1wg9_F" value="private" />
+            <property role="TrG5h" value="pureNoVirtualMethod" />
+            <property role="hTfT4" value="true" />
+            <node concept="19Rifw" id="48nd0xvgD3" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="3XIRFW" id="48nd0xvgDC" role="3XIRFX" />
+            <node concept="7CXmI" id="48nd0xvgFE" role="lGtFl">
+              <node concept="1TM$A" id="48nd0xvgG9" role="7EUXB">
+                <node concept="2PYRI3" id="48nd0xvgGa" role="3lydEf">
+                  <ref role="39XzEq" to="g7jk:2L1k$oXFkHn" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

@@ -71,7 +71,12 @@
       <concept id="6028541369719415919" name="com.mbeddr.cpp.base.structure.IConstExprFlagConcept" flags="ng" index="OtGC0">
         <property id="6028541369719415920" name="isConstExpr" index="OtGCv" />
       </concept>
-      <concept id="5044697665789421259" name="com.mbeddr.cpp.base.structure.AttributeDeclaration" flags="ng" index="3mBbG7" />
+      <concept id="5044697665789421259" name="com.mbeddr.cpp.base.structure.AttributeDeclaration" flags="ng" index="3mBbG7">
+        <child id="4185783222026502647" name="init" index="3XIe9u" />
+      </concept>
+      <concept id="5044697665789421253" name="com.mbeddr.cpp.base.structure.IClassMemberDeclaration" flags="ng" index="3mBbG9">
+        <property id="2995459757115087788" name="visibility" index="1wg9_F" />
+      </concept>
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
@@ -112,6 +117,9 @@
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
+      <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
+        <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
@@ -119,6 +127,7 @@
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
       </concept>
+      <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
   </registry>
   <node concept="2XOHcx" id="3v5DuFDz1EB">
@@ -161,11 +170,9 @@
                   <ref role="39XzEq" to="g7jk:5eDFAXBRVB6" />
                 </node>
               </node>
-              <node concept="1TM$A" id="48nd0xuYYY" role="7EUXB">
-                <node concept="2PYRI3" id="48nd0xuYYZ" role="3lydEf">
-                  <ref role="39XzEq" to="g7jk:15T8UHynAms" />
-                </node>
-              </node>
+            </node>
+            <node concept="3TlMh9" id="48nd0xvg3Y" role="3XIe9u">
+              <property role="2hmy$m" value="0" />
             </node>
           </node>
           <node concept="3mBbG7" id="48nd0xuZck" role="3mBdys">
@@ -187,21 +194,27 @@
           <node concept="3u$6M4" id="48nd0xuZe2" role="3mBdys" />
           <node concept="3mBbG7" id="48nd0xuZeU" role="3mBdys">
             <property role="TrG5h" value="constAttribute" />
+            <property role="OtGCv" value="true" />
             <node concept="26Vqph" id="48nd0xuZfx" role="2C2TGm">
               <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="true" />
+              <property role="2c7vTL" value="false" />
             </node>
             <node concept="7CXmI" id="48nd0xuZg6" role="lGtFl">
-              <node concept="1TM$A" id="48nd0xuZg7" role="7EUXB" />
+              <node concept="1TM$A" id="48nd0xuZg7" role="7EUXB">
+                <node concept="2PYRI3" id="48nd0xvfz4" role="3lydEf">
+                  <ref role="39XzEq" to="g7jk:15T8UHynAms" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3u$6M4" id="48nd0xuZgj" role="3mBdys" />
           <node concept="3mBbG7" id="48nd0xuZiE" role="3mBdys">
             <property role="TrG5h" value="constexprAttribute" />
-            <property role="OtGCv" value="true" />
+            <property role="OtGCv" value="false" />
+            <property role="1wg9_F" value="private" />
             <node concept="26Vqph" id="48nd0xuZjr" role="2C2TGm">
               <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
+              <property role="2c7vTL" value="true" />
             </node>
             <node concept="7CXmI" id="48nd0xuZlJ" role="lGtFl">
               <node concept="1TM$A" id="48nd0xuZm4" role="7EUXB">
