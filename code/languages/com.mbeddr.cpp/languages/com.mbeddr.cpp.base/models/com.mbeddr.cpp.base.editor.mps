@@ -376,11 +376,17 @@
       <node concept="PMmxH" id="1Yr26itUKV_" role="3EZMnx">
         <ref role="PMmxG" node="1Yr26itwx8V" resolve="StaticFlag" />
       </node>
+      <node concept="PMmxH" id="48nd0xjKK$" role="3EZMnx">
+        <ref role="PMmxG" node="5eDFAXBCpeS" resolve="VolatileFlag" />
+      </node>
       <node concept="PMmxH" id="1Yr26itUKV5" role="3EZMnx">
         <ref role="PMmxG" node="1Yr26itwsTs" resolve="InlineFlag" />
       </node>
       <node concept="PMmxH" id="6ddXmWeaxpU" role="3EZMnx">
         <ref role="PMmxG" node="1TorPL4sJdQ" resolve="PureFlag" />
+      </node>
+      <node concept="PMmxH" id="48nd0xcL$l" role="3EZMnx">
+        <ref role="PMmxG" node="5eDFAXBRQic" resolve="ConstExprFlag" />
       </node>
       <node concept="PMmxH" id="2L1k$oXn3Ob" role="3EZMnx">
         <ref role="PMmxG" node="2L1k$oXm7Pq" resolve="VirtualFlag" />
@@ -1590,16 +1596,6 @@
     <node concept="1kHk_G" id="5eDFAXBRQie" role="2wV5jI">
       <property role="ZjSer" value="constexpr" />
       <ref role="1NtTu8" to="wnzg:5eDFAXBRQhK" resolve="isConstExpr" />
-      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-    </node>
-  </node>
-  <node concept="PKFIW" id="5eDFAXBC$A$">
-    <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="ConstFlag" />
-    <ref role="1XX52x" to="wnzg:5eDFAXBC$A7" resolve="IConstFlagConcept" />
-    <node concept="1kHk_G" id="5eDFAXBC$AA" role="2wV5jI">
-      <property role="ZjSer" value="const" />
-      <ref role="1NtTu8" to="wnzg:5eDFAXBC$A8" resolve="isConstant" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
