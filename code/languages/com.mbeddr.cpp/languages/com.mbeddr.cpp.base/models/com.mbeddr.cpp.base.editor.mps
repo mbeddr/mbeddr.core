@@ -558,9 +558,6 @@
       <node concept="3F1sOY" id="3v5DuFDsWjm" role="3EZMnx">
         <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
       </node>
-      <node concept="PMmxH" id="5eDFAXBCDbH" role="3EZMnx">
-        <ref role="PMmxG" node="5eDFAXBC$A$" resolve="ConstFlag" />
-      </node>
       <node concept="PMmxH" id="5eDFAXBCDda" role="3EZMnx">
         <ref role="PMmxG" node="5eDFAXBCpeS" resolve="VolatileFlag" />
       </node>
