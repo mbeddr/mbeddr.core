@@ -542,9 +542,6 @@
     <node concept="PrWs8" id="7DDmkzciFn" role="PzmwI">
       <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
     </node>
-    <node concept="PrWs8" id="T6qFshzkFm" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyj" id="7DDmkza$5N" role="1TKVEi">
       <property role="IQ2ns" value="137823117411762547" />
       <property role="20lmBu" value="reference" />
