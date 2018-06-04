@@ -108,6 +108,7 @@
       </concept>
       <concept id="137823117410394117" name="com.mbeddr.cpp.base.structure.ConstructorInitializedConstructor" flags="ng" index="yZclw">
         <reference id="137823117411762547" name="identity" index="yKYgm" />
+        <child id="137823117411762663" name="actual_arguments" index="yKYi2" />
       </concept>
       <concept id="137823117407795547" name="com.mbeddr.cpp.base.structure.ConstructorInitializedAttribute" flags="ng" index="z11KY">
         <reference id="137823117409445459" name="identity" index="yVOcQ" />
@@ -914,6 +915,24 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+      <node concept="2gom5y" id="T6qFshze8D" role="3mBdys">
+        <property role="3BMcJd" value="false" />
+        <property role="1wg9_F" value="public" />
+        <property role="TrG5h" value="ParentClass" />
+        <ref role="2gom41" node="6KmaLbDZm15" resolve="ParentClass" />
+        <node concept="19RgSI" id="T6qFshzebJ" role="1UOdpc">
+          <property role="TrG5h" value="x" />
+          <node concept="26Vqqz" id="T6qFshzebH" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+        <node concept="3XIRFW" id="T6qFshze8E" role="1IVm9U" />
+        <node concept="2dFNQU" id="T6qFshze8F" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
       <node concept="3mBbG7" id="7wcjSRttVKQ" role="3mBdys">
         <property role="TrG5h" value="parentY" />
         <property role="1wg9_F" value="protected" />
@@ -997,8 +1016,12 @@
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="yZclw" id="6FnHX$H9n$K" role="1YC0t0">
-          <ref role="yKYgm" node="7wcjSRttVKs" resolve="ParentClass" />
+        <node concept="yZclw" id="T6qFshzTGJ" role="1YC0t0">
+          <property role="TrG5h" value="ClassName" />
+          <ref role="yKYgm" node="T6qFshze8D" resolve="ParentClass" />
+          <node concept="3TlMh9" id="T6qFshzTHd" role="yKYi2">
+            <property role="2hmy$m" value="23" />
+          </node>
         </node>
       </node>
       <node concept="2gom5y" id="7wcjSRtzLD7" role="3mBdys">
