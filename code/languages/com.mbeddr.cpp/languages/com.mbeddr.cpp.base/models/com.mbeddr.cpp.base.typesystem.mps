@@ -51,6 +51,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -140,6 +141,7 @@
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
+        <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
       </concept>
       <concept id="1176543928247" name="jetbrains.mps.lang.typesystem.structure.IsSubtypeExpression" flags="nn" index="3JuTUA">
@@ -167,6 +169,12 @@
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -1263,17 +1271,82 @@
     <property role="TrG5h" value="check_ConstructorInitializedConstructor" />
     <property role="3GE5qa" value="method.constructor" />
     <node concept="3clFbS" id="4KyQ_QhNKFZ" role="18ibNy">
-      <node concept="a7r0C" id="4KyQ_QhNKG5" role="3cqZAp">
-        <node concept="Xl_RD" id="4KyQ_QhNKGq" role="a7wSD">
-          <property role="Xl_RC" value="TODO: TextGen does not generate the constructor name on initialized lists." />
+      <node concept="2xdQw9" id="1rV7RaURZFU" role="3cqZAp">
+        <property role="2xdLsb" value="info" />
+        <node concept="3cpWs3" id="1rV7RaUS0zq" role="9lYJi">
+          <node concept="2OqwBi" id="1rV7RaUS0Kv" role="3uHU7w">
+            <node concept="1YBJjd" id="1rV7RaUS0z_" role="2Oq$k0">
+              <ref role="1YBMHb" node="4KyQ_QhNKG1" resolve="cic" />
+            </node>
+            <node concept="3TrcHB" id="1rV7RaUS10L" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1rV7RaSNWqj" resolve="real_name" />
+            </node>
+          </node>
+          <node concept="Xl_RD" id="1rV7RaURZFW" role="3uHU7B">
+            <property role="Xl_RC" value="cic rn " />
+          </node>
         </node>
-        <node concept="1YBJjd" id="4KyQ_QhNKIc" role="2OEOjV">
-          <ref role="1YBMHb" node="4KyQ_QhNKG1" resolve="constructorInitializedConstructor" />
+      </node>
+      <node concept="3clFbJ" id="1rV7RaURpzx" role="3cqZAp">
+        <node concept="3clFbS" id="1rV7RaURpzz" role="3clFbx">
+          <node concept="2MkqsV" id="1rV7RaURv2m" role="3cqZAp">
+            <node concept="Xl_RD" id="1rV7RaURv2C" role="2MkJ7o">
+              <property role="Xl_RC" value="real_name empty" />
+            </node>
+            <node concept="1YBJjd" id="1rV7RaURv39" role="2OEOjV">
+              <ref role="1YBMHb" node="4KyQ_QhNKG1" resolve="cic" />
+            </node>
+            <node concept="3Cnw8n" id="1rV7RaURveF" role="2OEOjU">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="1rV7RaURv92" resolve="fix_cic_real_name" />
+            </node>
+          </node>
+        </node>
+        <node concept="22lmx$" id="1rV7RaUSu61" role="3clFbw">
+          <node concept="3y3z36" id="1rV7RaUSvsF" role="3uHU7w">
+            <node concept="2OqwBi" id="1rV7RaUSz4x" role="3uHU7w">
+              <node concept="2OqwBi" id="1rV7RaUSwXl" role="2Oq$k0">
+                <node concept="2OqwBi" id="1rV7RaUSvUH" role="2Oq$k0">
+                  <node concept="1YBJjd" id="1rV7RaUSv_O" role="2Oq$k0">
+                    <ref role="1YBMHb" node="4KyQ_QhNKG1" resolve="cic" />
+                  </node>
+                  <node concept="3TrEf2" id="1rV7RaUSwd3" role="2OqNvi">
+                    <ref role="3Tt5mk" to="wnzg:7DDmkza$5N" resolve="identity" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="1rV7RaUSxNU" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="1rV7RaUS$y3" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1rV7RaUSupN" role="3uHU7B">
+              <node concept="1YBJjd" id="1rV7RaUSufc" role="2Oq$k0">
+                <ref role="1YBMHb" node="4KyQ_QhNKG1" resolve="cic" />
+              </node>
+              <node concept="3TrcHB" id="1rV7RaUSuG3" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:1rV7RaSNWqj" resolve="real_name" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="1rV7RaUScwv" role="3uHU7B">
+            <node concept="2OqwBi" id="1rV7RaUSacX" role="3uHU7B">
+              <node concept="1YBJjd" id="1rV7RaUS9WC" role="2Oq$k0">
+                <ref role="1YBMHb" node="4KyQ_QhNKG1" resolve="cic" />
+              </node>
+              <node concept="3TrcHB" id="1rV7RaUSauS" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:1rV7RaSNWqj" resolve="real_name" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="1rV7RaUScwM" role="3uHU7w" />
+          </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="4KyQ_QhNKG1" role="1YuTPh">
-      <property role="TrG5h" value="constructorInitializedConstructor" />
+      <property role="TrG5h" value="cic" />
       <ref role="1YaFvo" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
     </node>
   </node>
@@ -1744,6 +1817,69 @@
     <node concept="1YaCAy" id="5eDFAXBGiPD" role="1YuTPh">
       <property role="TrG5h" value="attributeDeclaration" />
       <ref role="1YaFvo" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="1rV7RaURv4x">
+    <property role="TrG5h" value="fix_" />
+    <node concept="Q5ZZ6" id="1rV7RaURv4y" role="Q6x$H">
+      <node concept="3clFbS" id="1rV7RaURv4z" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="1rV7RaURv92">
+    <property role="3GE5qa" value="method.constructor" />
+    <property role="TrG5h" value="fix_cic_real_name" />
+    <node concept="Q5ZZ6" id="1rV7RaURv93" role="Q6x$H">
+      <node concept="3clFbS" id="1rV7RaURv94" role="2VODD2">
+        <node concept="3SKdUt" id="1rV7RaUSrZW" role="3cqZAp">
+          <node concept="3SKdUq" id="1rV7RaUSrZY" role="3SKWNk">
+            <property role="3SKdUp" value="This forces the real_name attribute to be fixed for textgen." />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1rV7RaURwuf" role="3cqZAp">
+          <node concept="3cpWsn" id="1rV7RaURwui" role="3cpWs9">
+            <property role="TrG5h" value="asCIC" />
+            <node concept="3Tqbb2" id="1rV7RaURwue" role="1tU5fm">
+              <ref role="ehGHo" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
+            </node>
+            <node concept="1PxgMI" id="1rV7RaURx0N" role="33vP2m">
+              <node concept="chp4Y" id="1rV7RaURx1x" role="3oSUPX">
+                <ref role="cht4Q" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
+              </node>
+              <node concept="Q6c8r" id="1rV7RaURwwj" role="1m5AlR" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1rV7RaURx3R" role="3cqZAp">
+          <node concept="37vLTI" id="1rV7RaURyB9" role="3clFbG">
+            <node concept="2OqwBi" id="1rV7RaUR_IA" role="37vLTx">
+              <node concept="2OqwBi" id="1rV7RaURzHT" role="2Oq$k0">
+                <node concept="2OqwBi" id="1rV7RaURyR8" role="2Oq$k0">
+                  <node concept="37vLTw" id="1rV7RaURyEa" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1rV7RaURwui" resolve="asCIC" />
+                  </node>
+                  <node concept="3TrEf2" id="1rV7RaURz5z" role="2OqNvi">
+                    <ref role="3Tt5mk" to="wnzg:7DDmkza$5N" resolve="identity" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="1rV7RaUR$wB" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="1rV7RaURAuG" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1rV7RaURxes" role="37vLTJ">
+              <node concept="37vLTw" id="1rV7RaURx3P" role="2Oq$k0">
+                <ref role="3cqZAo" node="1rV7RaURwui" resolve="asCIC" />
+              </node>
+              <node concept="3TrcHB" id="1rV7RaURxqx" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:1rV7RaSNWqj" resolve="real_name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

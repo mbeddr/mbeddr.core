@@ -107,6 +107,7 @@
         <property id="3188920472790477826" name="isPureVirtual" index="hTfT4" />
       </concept>
       <concept id="137823117410394117" name="com.mbeddr.cpp.base.structure.ConstructorInitializedConstructor" flags="ng" index="yZclw">
+        <property id="1655951865576146579" name="real_name" index="2IddBx" />
         <reference id="137823117411762547" name="identity" index="yKYgm" />
       </concept>
       <concept id="137823117407795547" name="com.mbeddr.cpp.base.structure.ConstructorInitializedAttribute" flags="ng" index="z11KY">
@@ -997,7 +998,8 @@
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="yZclw" id="phuaKKqwUj" role="1YC0t0">
+        <node concept="yZclw" id="1rV7RaUSl2v" role="1YC0t0">
+          <property role="2IddBx" value="ParentClass" />
           <ref role="yKYgm" node="7wcjSRttVKs" resolve="ParentClass" />
         </node>
       </node>
