@@ -782,6 +782,43 @@
         <ref role="FysoF" node="45rBLTDXFnO" resolve="Subtractor" />
       </node>
     </node>
+    <node concept="2NXPZ9" id="5uvgyTkmfwB" role="N3F5h">
+      <property role="TrG5h" value="empty_1528116575061_1" />
+    </node>
+    <node concept="3mBW2U" id="5uvgyTkmf_z" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="MegaCalc" />
+      <node concept="FysoC" id="5uvgyTkmfLO" role="Fysvh">
+        <property role="FysoG" value="public" />
+        <ref role="FysoF" node="nbE_$_7VLG" resolve="Calculator" />
+      </node>
+      <node concept="3mB1cK" id="5uvgyTkmfLR" role="3mBdys">
+        <property role="1wg9_F" value="public" />
+        <property role="TrG5h" value="someMethod" />
+        <node concept="26Vqph" id="5uvgyTkmfMb" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="3XIRFW" id="5uvgyTkmfMq" role="3XIRFX">
+          <node concept="1_9egQ" id="5uvgyTkmEaY" role="3XIRFZ">
+            <node concept="3uHhno" id="5uvgyTkmEaW" role="1_9egR">
+              <ref role="3uHhlH" node="1Yr26iuhgzj" resolve="increment20" />
+              <node concept="3TlMh9" id="5uvgyTkmEcK" role="3O_q_j">
+                <property role="2hmy$m" value="5" />
+              </node>
+            </node>
+          </node>
+          <node concept="2BFjQ_" id="5uvgyTkmfQ_" role="3XIRFZ">
+            <node concept="3uHhno" id="5uvgyTkmfNB" role="2BFjQA">
+              <ref role="3uHhlH" node="1Yr26iuhgzj" resolve="increment20" />
+              <node concept="3TlMh9" id="5uvgyTkmfNZ" role="3O_q_j">
+                <property role="2hmy$m" value="35" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2NXPZ9" id="29I8DMSfRHD" role="N3F5h">
       <property role="TrG5h" value="empty_1527060747727_5" />
     </node>
