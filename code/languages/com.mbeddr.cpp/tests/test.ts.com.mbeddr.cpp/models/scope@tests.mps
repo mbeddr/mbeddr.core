@@ -185,7 +185,7 @@
       <node concept="1whW_1" id="688xTXtQgr3" role="1qenE9">
         <property role="TrG5h" value="InheritanceModifiers" />
         <node concept="3mBW2U" id="nbE_$_7VLV" role="N3F5h">
-          <property role="2OOxQR" value="true" />
+          <property role="2OOxQR" value="false" />
           <property role="TrG5h" value="PublicParentClass" />
           <node concept="3mB1cK" id="6oRbCP68kRM" role="3mBdys">
             <property role="TrG5h" value="publicMethodPublicClass" />
@@ -218,7 +218,7 @@
           <property role="TrG5h" value="empty_1527758345400_1" />
         </node>
         <node concept="3mBW2U" id="1gzloVU$Z1P" role="N3F5h">
-          <property role="2OOxQR" value="true" />
+          <property role="2OOxQR" value="false" />
           <property role="TrG5h" value="ProtectedParentClass" />
           <node concept="3mB1cK" id="1gzloVU$Z1Q" role="3mBdys">
             <property role="TrG5h" value="publicMethodProtectedClass" />
@@ -251,7 +251,7 @@
           <property role="TrG5h" value="empty_1527758368451_3" />
         </node>
         <node concept="3mBW2U" id="1gzloVU$Z8s" role="N3F5h">
-          <property role="2OOxQR" value="true" />
+          <property role="2OOxQR" value="false" />
           <property role="TrG5h" value="PrivateParentClass" />
           <node concept="3mB1cK" id="1gzloVU$Z8t" role="3mBdys">
             <property role="TrG5h" value="publicMethodPrivateClass" />
@@ -284,7 +284,7 @@
           <property role="TrG5h" value="empty_1527758379091_5" />
         </node>
         <node concept="3mBW2U" id="1gzloVU$ZfR" role="N3F5h">
-          <property role="2OOxQR" value="true" />
+          <property role="2OOxQR" value="false" />
           <property role="TrG5h" value="BaseClass" />
           <node concept="FysoC" id="1gzloVU$Zij" role="Fysvh">
             <ref role="FysoF" node="1gzloVU$Z8s" resolve="PrivateParentClass" />
@@ -394,7 +394,7 @@
           <property role="TrG5h" value="empty_1527761241089_14" />
         </node>
         <node concept="3mBW2U" id="1gzloVU_6If" role="N3F5h">
-          <property role="2OOxQR" value="true" />
+          <property role="2OOxQR" value="false" />
           <property role="TrG5h" value="BaseBaseClass" />
           <node concept="FysoC" id="1gzloVU_6LQ" role="Fysvh">
             <property role="FysoG" value="public" />
@@ -690,7 +690,7 @@
       <node concept="1whW_1" id="1gzloVU_9IV" role="1qenE9">
         <property role="TrG5h" value="AccessModifiers" />
         <node concept="3mBW2U" id="1gzloVU_9IW" role="N3F5h">
-          <property role="2OOxQR" value="true" />
+          <property role="2OOxQR" value="false" />
           <property role="TrG5h" value="SomeClass" />
           <node concept="3mBbG7" id="1gzloVU_9IX" role="3mBdys">
             <property role="TrG5h" value="publicAttribute" />

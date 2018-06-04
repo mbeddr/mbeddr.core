@@ -2,12 +2,12 @@
 <model ref="r:a6defc8b-c4d9-46c9-a221-6d68fa6905e1(com.mbeddr.cpp.base.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
-    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="b4f35ed8-45af-4efa-abe4-00ac26956e69" name="com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
+    <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="b4f35ed8-45af-4efa-abe4-00ac26956e69" name="com.mbeddr.mpsutil.grammarcells.runtimelang" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -361,11 +361,17 @@
       <node concept="PMmxH" id="1Yr26itUKV_" role="3EZMnx">
         <ref role="PMmxG" node="1Yr26itwx8V" resolve="StaticFlag" />
       </node>
+      <node concept="PMmxH" id="48nd0xjKK$" role="3EZMnx">
+        <ref role="PMmxG" node="5eDFAXBCpeS" resolve="VolatileFlag" />
+      </node>
       <node concept="PMmxH" id="1Yr26itUKV5" role="3EZMnx">
         <ref role="PMmxG" node="1Yr26itwsTs" resolve="InlineFlag" />
       </node>
       <node concept="PMmxH" id="6ddXmWeaxpU" role="3EZMnx">
         <ref role="PMmxG" node="1TorPL4sJdQ" resolve="PureFlag" />
+      </node>
+      <node concept="PMmxH" id="48nd0xcL$l" role="3EZMnx">
+        <ref role="PMmxG" node="5eDFAXBRQic" resolve="ConstExprFlag" />
       </node>
       <node concept="PMmxH" id="2L1k$oXn3Ob" role="3EZMnx">
         <ref role="PMmxG" node="2L1k$oXm7Pq" resolve="VirtualFlag" />
@@ -536,9 +542,6 @@
       <node concept="l2Vlx" id="4o2nsMgBJ4g" role="2iSdaV" />
       <node concept="3F1sOY" id="3v5DuFDsWjm" role="3EZMnx">
         <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
-      </node>
-      <node concept="PMmxH" id="5eDFAXBCDbH" role="3EZMnx">
-        <ref role="PMmxG" node="5eDFAXBC$A$" resolve="ConstFlag" />
       </node>
       <node concept="PMmxH" id="5eDFAXBCDda" role="3EZMnx">
         <ref role="PMmxG" node="5eDFAXBCpeS" resolve="VolatileFlag" />
@@ -1036,9 +1039,14 @@
       <node concept="1iCGBv" id="7DDmkza$63" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:7DDmkza$5N" resolve="identity" />
         <node concept="1sVBvm" id="7DDmkza$65" role="1sWHZn">
-          <node concept="3F0A7n" id="7DDmkza$6f" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="1iCGBv" id="phuaKKO95m" role="2wV5jI">
+            <ref role="1NtTu8" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+            <node concept="1sVBvm" id="phuaKKO95n" role="1sWHZn">
+              <node concept="3F0A7n" id="phuaKKO95_" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1575,16 +1583,6 @@
     <node concept="1kHk_G" id="5eDFAXBRQie" role="2wV5jI">
       <property role="ZjSer" value="constexpr" />
       <ref role="1NtTu8" to="wnzg:5eDFAXBRQhK" resolve="isConstExpr" />
-      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-    </node>
-  </node>
-  <node concept="PKFIW" id="5eDFAXBC$A$">
-    <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="ConstFlag" />
-    <ref role="1XX52x" to="wnzg:5eDFAXBC$A7" resolve="IConstFlagConcept" />
-    <node concept="1kHk_G" id="5eDFAXBC$AA" role="2wV5jI">
-      <property role="ZjSer" value="const" />
-      <ref role="1NtTu8" to="wnzg:5eDFAXBC$A8" resolve="isConstant" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>

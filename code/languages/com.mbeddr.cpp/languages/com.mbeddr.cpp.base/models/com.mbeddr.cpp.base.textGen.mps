@@ -596,21 +596,6 @@
     <ref role="WuzLi" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
     <node concept="11bSqf" id="3v5DuFDt$Z8" role="11c4hB">
       <node concept="3clFbS" id="3v5DuFDt$Z9" role="2VODD2">
-        <node concept="3clFbJ" id="5eDFAXBK5ll" role="3cqZAp">
-          <node concept="3clFbS" id="5eDFAXBK5ln" role="3clFbx">
-            <node concept="lc7rE" id="5eDFAXBK6AU" role="3cqZAp">
-              <node concept="la8eA" id="5eDFAXBK6Bk" role="lcghm">
-                <property role="lacIc" value="const " />
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="5eDFAXBK5OY" role="3clFbw">
-            <node concept="117lpO" id="5eDFAXBK5An" role="2Oq$k0" />
-            <node concept="3TrcHB" id="5eDFAXBK6yH" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:5eDFAXBC$A8" resolve="isConstant" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="5eDFAXBK6T4" role="3cqZAp">
           <node concept="3clFbS" id="5eDFAXBK6T6" role="3clFbx">
             <node concept="lc7rE" id="5eDFAXBK7Ov" role="3cqZAp">
@@ -1342,20 +1327,10 @@
         </node>
         <node concept="lc7rE" id="4KyQ_QhDpkP" role="3cqZAp">
           <node concept="l9hG8" id="4KyQ_QhDplf" role="lcghm">
-            <node concept="2OqwBi" id="4KyQ_QhO0WW" role="lb14g">
-              <node concept="2OqwBi" id="4KyQ_QhNXkL" role="2Oq$k0">
-                <node concept="2OqwBi" id="4KyQ_QhNyr9" role="2Oq$k0">
-                  <node concept="117lpO" id="4KyQ_QhNyi9" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="4KyQ_QhNyB_" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:7DDmkza$5N" resolve="identity" />
-                  </node>
-                </node>
-                <node concept="3TrEf2" id="4KyQ_QhO00Y" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="4KyQ_QhOp44" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            <node concept="2OqwBi" id="1rV7RaSOxTW" role="lb14g">
+              <node concept="117lpO" id="1rV7RaSOxK5" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1rV7RaSOygs" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:1rV7RaSNWqj" resolve="real_name" />
               </node>
             </node>
           </node>
