@@ -262,6 +262,14 @@
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
+      <concept id="4874944647490522665" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationCell2_IsApplicable" flags="ig" index="1eYwpX" />
+      <concept id="4874944647490524676" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationCell2_Execute" flags="ig" index="1eYxTg" />
+      <concept id="4874944647490471126" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationCell2" flags="ng" index="1eYWM2">
+        <child id="4874944647490523335" name="matchingText" index="1eYxyj" />
+        <child id="4874944647490523330" name="isApplicable" index="1eYxym" />
+        <child id="4874944647490524677" name="execute" index="1eYxTh" />
+      </concept>
+      <concept id="4874944647490471525" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationCell2_MatchingText" flags="ig" index="1eYWSL" />
       <concept id="484443907672824414" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SubstituteCondition" flags="ig" index="3gMsPO" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
@@ -2987,6 +2995,81 @@
     <node concept="PMmxH" id="29cSqvdRCT$" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6OyCGy3FHs_">
+    <ref role="1XX52x" to="wnzg:6OyCGy3FHs3" resolve="GlobalVarDecCPP" />
+    <node concept="3EZMnI" id="6OyCGy3FHsB" role="2wV5jI">
+      <node concept="PMmxH" id="6OyCGy3FHsL" role="3EZMnx">
+        <ref role="PMmxG" to="cl6c:5Oog2UbP_dB" resolve="preventNameManglingFlag" />
+      </node>
+      <node concept="3EZMnI" id="6OyCGy3FHsT" role="3EZMnx">
+        <node concept="VPM3Z" id="6OyCGy3FHsV" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="PMmxH" id="6OyCGy3FHta" role="3EZMnx">
+          <ref role="PMmxG" to="j4gk:xAR9nWuwd2" resolve="IHasPrefixesComponent" />
+        </node>
+        <node concept="PMmxH" id="6OyCGy3FHti" role="3EZMnx">
+          <ref role="PMmxG" to="cl6c:5Oog2UbPmsM" resolve="externFlag" />
+        </node>
+        <node concept="PMmxH" id="6OyCGy3FHtu" role="3EZMnx">
+          <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+        </node>
+        <node concept="PMmxH" id="6OyCGy3FHtI" role="3EZMnx">
+          <ref role="PMmxG" node="1Yr26itwx8V" resolve="StaticFlag" />
+        </node>
+        <node concept="PMmxH" id="6OyCGy3FHu2" role="3EZMnx">
+          <ref role="PMmxG" to="j4gk:52l0VUuN8lr" resolve="IStoreInRegisterComponent" />
+        </node>
+        <node concept="3F1sOY" id="6OyCGy3FHuq" role="3EZMnx">
+          <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
+        </node>
+        <node concept="3EYTF0" id="6OyCGy3FHJf" role="3EZMnx" />
+        <node concept="3F0A7n" id="6OyCGy3FHuR" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="1eYWM2" id="6OyCGy3FHvo" role="3EZMnx">
+          <node concept="1eYwpX" id="6OyCGy3FHvq" role="1eYxym">
+            <node concept="3clFbS" id="6OyCGy3FHvs" role="2VODD2" />
+          </node>
+          <node concept="1eYWSL" id="6OyCGy3FHvu" role="1eYxyj">
+            <node concept="3clFbS" id="6OyCGy3FHvw" role="2VODD2" />
+          </node>
+          <node concept="1eYxTg" id="6OyCGy3FHvy" role="1eYxTh">
+            <node concept="3clFbS" id="6OyCGy3FHv$" role="2VODD2" />
+          </node>
+        </node>
+        <node concept="_tjkj" id="6OyCGy3FHFY" role="3EZMnx">
+          <node concept="3EZMnI" id="6OyCGy3FHGI" role="_tjki">
+            <node concept="3F0ifn" id="6OyCGy3FHGV" role="3EZMnx">
+              <property role="3F0ifm" value="=" />
+            </node>
+            <node concept="3F1sOY" id="6OyCGy3FHH4" role="3EZMnx">
+              <ref role="1NtTu8" to="x27k:2pPw_DEjkM9" resolve="init" />
+            </node>
+            <node concept="l2Vlx" id="6OyCGy3FHGL" role="2iSdaV" />
+            <node concept="VPM3Z" id="6OyCGy3FHGM" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="6OyCGy3FHI1" role="3EZMnx">
+          <property role="3F0ifm" value=";" />
+        </node>
+        <node concept="l2Vlx" id="6OyCGy3FHsY" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="6OyCGy3FHsE" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="6OyCGy3FHWP">
+    <property role="TrG5h" value="AccessStatic" />
+    <ref role="1XX52x" to="wnzg:6OyCGy3FHIT" resolve="IAccessStaticClassVariable" />
+    <node concept="3EZMnI" id="6OyCGy3FHWR" role="2wV5jI">
+      <node concept="3F1sOY" id="6OyCGy3FHX1" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:6OyCGy3FHIX" resolve="className" />
+      </node>
+      <node concept="l2Vlx" id="6OyCGy3FHWU" role="2iSdaV" />
     </node>
   </node>
 </model>

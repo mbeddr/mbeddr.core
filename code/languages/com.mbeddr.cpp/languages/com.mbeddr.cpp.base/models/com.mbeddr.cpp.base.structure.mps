@@ -990,5 +990,35 @@
       <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6OyCGy3FHs3">
+    <property role="EcuMT" value="7864026881428739843" />
+    <property role="TrG5h" value="GlobalVarDecCPP" />
+    <property role="34LRSv" value="=" />
+    <ref role="1TJDcQ" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+    <node concept="PrWs8" id="6OyCGy3FHs4" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="6OyCGy3FHsc" role="PzmwI">
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
+    </node>
+    <node concept="PrWs8" id="6OyCGy3FHJ7" role="PzmwI">
+      <ref role="PrY4T" node="6OyCGy3FHIT" resolve="IAccessStaticClassVariable" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6OyCGy3FHIT">
+    <property role="EcuMT" value="7864026881428741049" />
+    <property role="TrG5h" value="IAccessStaticClassVariable" />
+    <node concept="1TJgyi" id="6OyCGy3FHIU" role="1TKVEl">
+      <property role="IQ2nx" value="7864026881428741050" />
+      <property role="TrG5h" value="accessStatic" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="6OyCGy3FHIX" role="1TKVEi">
+      <property role="IQ2ns" value="7864026881428741053" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="className" />
+      <ref role="20lvS9" node="4o2nsMgBEtu" resolve="ClassType" />
+    </node>
+  </node>
 </model>
 
