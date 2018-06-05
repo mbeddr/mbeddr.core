@@ -417,6 +417,9 @@
     <node concept="PrWs8" id="1D2kn99oQ0S" role="PzmwI">
       <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
     </node>
+    <node concept="PrWs8" id="1D2kn9asHjj" role="PzmwI">
+      <ref role="PrY4T" node="1D2kn9asHi2" resolve="IExplicitFlagConcept" />
+    </node>
     <node concept="PrWs8" id="6ddXmWdS2eK" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
@@ -991,6 +994,16 @@
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="PrWs8" id="6FZQsHu28zs" role="PzmwI">
       <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1D2kn9asHi2">
+    <property role="EcuMT" value="1892164344766190722" />
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="IExplicitFlagConcept" />
+    <node concept="1TJgyi" id="1D2kn9asHiy" role="1TKVEl">
+      <property role="IQ2nx" value="1892164344766190754" />
+      <property role="TrG5h" value="isExplicit" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
