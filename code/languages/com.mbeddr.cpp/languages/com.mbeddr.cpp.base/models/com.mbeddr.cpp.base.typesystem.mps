@@ -2448,5 +2448,35 @@
       </node>
     </node>
   </node>
+  <node concept="1YbPZF" id="6WSa0so1FHD">
+    <property role="TrG5h" value="typeof_NewDeclaration" />
+    <node concept="3clFbS" id="6WSa0so1FHE" role="18ibNy">
+      <node concept="2xdQw9" id="6WSa0so1FHK" role="3cqZAp">
+        <property role="2xdLsb" value="info" />
+        <node concept="3cpWs3" id="6WSa0so1Gzk" role="9lYJi">
+          <node concept="2OqwBi" id="6WSa0sof2SW" role="3uHU7w">
+            <node concept="2OqwBi" id="6WSa0so1GNF" role="2Oq$k0">
+              <node concept="1YBJjd" id="6WSa0so1Gzv" role="2Oq$k0">
+                <ref role="1YBMHb" node="6WSa0so1FHG" resolve="nd" />
+              </node>
+              <node concept="3TrEf2" id="6WSa0sof2mt" role="2OqNvi">
+                <ref role="3Tt5mk" to="wnzg:6WSa0so1IOP" resolve="typeOrConstructor" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="6WSa0sof37y" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+            </node>
+          </node>
+          <node concept="Xl_RD" id="6WSa0so1FHM" role="3uHU7B">
+            <property role="Xl_RC" value="nd.typeOrConstructor.type = " />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6WSa0so1FHG" role="1YuTPh">
+      <property role="TrG5h" value="nd" />
+      <ref role="1YaFvo" to="wnzg:6WSa0snOgvZ" resolve="NewDeclaration" />
+    </node>
+  </node>
 </model>
 
