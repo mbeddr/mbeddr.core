@@ -2898,5 +2898,38 @@
       <node concept="l2Vlx" id="6WSa0snOgwu" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="b637l21BUB">
+    <ref role="1XX52x" to="wnzg:4KCRVMvtEXq" resolve="NewObjectInitializer" />
+    <node concept="3EZMnI" id="b637l21BZ5" role="2wV5jI">
+      <node concept="1iCGBv" id="b637l21BZ6" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:4KCRVMvtPxJ" resolve="identity" />
+        <node concept="1sVBvm" id="b637l21BZ7" role="1sWHZn">
+          <node concept="1iCGBv" id="b637l21BZ8" role="2wV5jI">
+            <ref role="1NtTu8" to="wnzg:6NtgknWJ214" resolve="parentClass" />
+            <node concept="1sVBvm" id="b637l21BZ9" role="1sWHZn">
+              <node concept="3F0A7n" id="b637l21BZa" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="b637l21BZb" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+      </node>
+      <node concept="3F2HdR" id="b637l21BZc" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="wnzg:4KCRVMvtPxG" resolve="actuals" />
+        <node concept="l2Vlx" id="b637l21BZd" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="b637l21BZe" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+      </node>
+      <node concept="l2Vlx" id="b637l21BZf" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

@@ -1025,5 +1025,27 @@
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4KCRVMvtEXq">
+    <property role="EcuMT" value="5487882147173150554" />
+    <property role="TrG5h" value="NewObjectInitializer" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    <node concept="1TJgyj" id="4KCRVMvtPxG" role="1TKVEi">
+      <property role="IQ2ns" value="5487882147173193836" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actuals" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="4KCRVMvtPvK" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
+    </node>
+    <node concept="1TJgyj" id="4KCRVMvtPxJ" role="1TKVEi">
+      <property role="IQ2ns" value="5487882147173193839" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="identity" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+    </node>
+  </node>
 </model>
 
