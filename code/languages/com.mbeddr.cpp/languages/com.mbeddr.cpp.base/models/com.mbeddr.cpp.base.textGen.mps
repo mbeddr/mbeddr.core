@@ -1942,17 +1942,5 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="6FZQsHt$4Ly">
-    <ref role="WuzLi" to="wnzg:6FZQsHt7RdA" resolve="AutoType" />
-    <node concept="11bSqf" id="6FZQsHt$4Lz" role="11c4hB">
-      <node concept="3clFbS" id="6FZQsHt$4L$" role="2VODD2">
-        <node concept="lc7rE" id="6FZQsHt$4LR" role="3cqZAp">
-          <node concept="la8eA" id="6FZQsHt$4Mf" role="lcghm">
-            <property role="lacIc" value="auto" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
 </model>
 
