@@ -64,6 +64,9 @@
       </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
+      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlagConcept" flags="ng" index="226hDU">
+        <property id="2277423264798216735" name="isStatic" index="226hDV" />
+      </concept>
       <concept id="7240228573262412204" name="com.mbeddr.cpp.base.structure.LocalClassVariableDeclaration" flags="ng" index="2dywKE" />
       <concept id="7710120554545509222" name="com.mbeddr.cpp.base.structure.AutoType" flags="ng" index="RSaEH" />
       <concept id="5044697665789421259" name="com.mbeddr.cpp.base.structure.AttributeDeclaration" flags="ng" index="3mBbG7">
@@ -219,14 +222,15 @@
     <node concept="3mBW2U" id="6FZQsHt$4Ud" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="AutoContainer" />
-      <node concept="3mBbG7" id="6FZQsHt$4Y3" role="3mBdys">
+      <node concept="3mBbG7" id="7WruJM_Sek7" role="3mBdys">
         <property role="TrG5h" value="hoi" />
         <property role="1wg9_F" value="public" />
-        <node concept="RSaEH" id="6FZQsHt$4Ye" role="2C2TGm">
+        <property role="226hDV" value="true" />
+        <node concept="RSaEH" id="7WruJM_Sekq" role="2C2TGm">
           <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
+          <property role="2c7vTL" value="true" />
         </node>
-        <node concept="3TlMh9" id="6FZQsHuIELw" role="3XIe9v">
+        <node concept="3TlMh9" id="7WruJM_SekM" role="3XIe9v">
           <property role="2hmy$m" value="1" />
         </node>
       </node>
@@ -291,18 +295,18 @@
             <ref role="3mBfEM" node="6FZQsHt$4Ud" resolve="AutoContainer" />
           </node>
         </node>
-        <node concept="1_9egQ" id="6FZQsHuICi3" role="3XIRFZ">
-          <node concept="3pqW6w" id="6FZQsHuTtpL" role="1_9egR">
-            <node concept="3TlMh9" id="6FZQsHuTtt0" role="3TlMhJ">
-              <property role="2hmy$m" value="1" />
-            </node>
-            <node concept="2qmXGp" id="6FZQsHv7U95" role="3TlMhI">
-              <node concept="3mBk1D" id="6FZQsHv7U9T" role="1ESnxz">
-                <ref role="3mBk1B" node="6FZQsHt$4Y3" resolve="hoi" />
+        <node concept="1_9egQ" id="7WruJMA1MHe" role="3XIRFZ">
+          <node concept="3pqW6w" id="7WruJMA1MKC" role="1_9egR">
+            <node concept="2qmXGp" id="7WruJMA1MOe" role="3TlMhJ">
+              <node concept="3mBk1D" id="7WruJMA1MQ7" role="1ESnxz">
+                <ref role="3mBk1B" node="7WruJM_Sek7" resolve="hoi" />
               </node>
-              <node concept="3ZVu4v" id="6FZQsHuICi1" role="1_9fRO">
+              <node concept="3ZVu4v" id="7WruJMA1MM_" role="1_9fRO">
                 <ref role="3ZVs_2" node="6FZQsHuIC8R" resolve="autoContainer" />
               </node>
+            </node>
+            <node concept="3ZVu4v" id="7WruJMA1MHc" role="3TlMhI">
+              <ref role="3ZVs_2" node="6FZQsHu26Kh" resolve="hoi" />
             </node>
           </node>
         </node>

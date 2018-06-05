@@ -1957,6 +1957,48 @@
           <node concept="1mfA1w" id="6FZQsHtSTJy" role="2OqNvi" />
         </node>
         <node concept="3clFbS" id="6FZQsHtSSM$" role="Jncv$">
+          <node concept="3clFbJ" id="7WruJM_t5fs" role="3cqZAp">
+            <node concept="3clFbS" id="7WruJM_t5fu" role="3clFbx">
+              <node concept="2MkqsV" id="7WruJM_tfhi" role="3cqZAp">
+                <node concept="Xl_RD" id="7WruJM_tfhx" role="2MkJ7o">
+                  <property role="Xl_RC" value="Auto type can only be used in static const attributes." />
+                </node>
+                <node concept="2OqwBi" id="7WruJM_tfuL" role="2OEOjV">
+                  <node concept="1YBJjd" id="7WruJM_tfhO" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6FZQsHtqxSM" resolve="autoType" />
+                  </node>
+                  <node concept="1mfA1w" id="7WruJM_tfPd" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="22lmx$" id="7WruJM_teWT" role="3clFbw">
+              <node concept="3fqX7Q" id="7WruJM_Sea4" role="3uHU7B">
+                <node concept="2OqwBi" id="7WruJM_Sea6" role="3fr31v">
+                  <node concept="2OqwBi" id="7WruJM_Sea7" role="2Oq$k0">
+                    <node concept="Jnkvi" id="7WruJM_Sea8" role="2Oq$k0">
+                      <ref role="1M0zk5" node="6FZQsHtSSMA" resolve="dec" />
+                    </node>
+                    <node concept="3TrEf2" id="7WruJM_Sea9" role="2OqNvi">
+                      <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="7WruJM_Seaa" role="2OqNvi">
+                    <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="7WruJM_tf8t" role="3uHU7w">
+                <node concept="2OqwBi" id="7WruJM_tf8v" role="3fr31v">
+                  <node concept="Jnkvi" id="7WruJM_tf8w" role="2Oq$k0">
+                    <ref role="1M0zk5" node="6FZQsHtSSMA" resolve="dec" />
+                  </node>
+                  <node concept="3TrcHB" id="7WruJM_tf8x" role="2OqNvi">
+                    <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="6FZQsHuIDrc" role="3cqZAp">
             <node concept="37vLTI" id="6FZQsHuIDAh" role="3clFbG">
               <node concept="2OqwBi" id="6FZQsHuIDX6" role="37vLTx">
