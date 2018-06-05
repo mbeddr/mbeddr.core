@@ -79,11 +79,11 @@
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
-      <concept id="5044697665789423998" name="com.mbeddr.cpp.base.structure.INamedClassMemberDeclaration" flags="ng" index="3mBaMM">
-        <property id="2995459757115087788" name="visibility" index="1wg9_F" />
-      </concept>
       <concept id="5044697665789421259" name="com.mbeddr.cpp.base.structure.AttributeDeclaration" flags="ng" index="3mBbG7">
         <child id="4185783222026502647" name="init" index="3XIe9v" />
+      </concept>
+      <concept id="5044697665789421253" name="com.mbeddr.cpp.base.structure.IClassMemberDeclaration" flags="ng" index="3mBbG9">
+        <property id="2995459757115087788" name="visibility" index="1wg9_F" />
       </concept>
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
         <child id="5044697665789396304" name="members" index="3mBdys" />
@@ -184,7 +184,7 @@
         <property role="TrG5h" value="staticField" />
         <property role="226hDV" value="true" />
         <property role="O2YvB" value="false" />
-        <property role="1wg9_F" value="private" />
+        <property role="1wg9_F" value="public" />
         <node concept="26Vqph" id="5eDFAXBt0Ga" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
@@ -233,9 +233,9 @@
       </node>
       <node concept="3u$6M4" id="5eDFAXBNIOA" role="3mBdys" />
       <node concept="3mB1cK" id="1Yr26iukrNB" role="3mBdys">
-        <property role="1wg9_F" value="private" />
         <property role="TrG5h" value="inlinedMethod" />
         <property role="226Go$" value="true" />
+        <property role="1wg9_F" value="private" />
         <node concept="26Vqph" id="1Yr26iukrNM" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
@@ -250,7 +250,6 @@
       </node>
       <node concept="3u$6M4" id="1Yr26iukrWG" role="3mBdys" />
       <node concept="3mB1cK" id="1Yr26iukrYm" role="3mBdys">
-        <property role="1wg9_F" value="private" />
         <property role="TrG5h" value="staticMethod" />
         <property role="226hDV" value="true" />
         <property role="hL25V" value="false" />
@@ -279,7 +278,6 @@
       </node>
       <node concept="3u$6M4" id="1Yr26iuks3z" role="3mBdys" />
       <node concept="3mB1cK" id="1Yr26iuks6b" role="3mBdys">
-        <property role="1wg9_F" value="private" />
         <property role="TrG5h" value="staticInlinedMethod" />
         <property role="226hDV" value="true" />
         <property role="226Go$" value="true" />

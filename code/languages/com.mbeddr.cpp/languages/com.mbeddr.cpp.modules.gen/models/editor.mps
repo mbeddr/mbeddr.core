@@ -2,8 +2,8 @@
 <model ref="r:00ad4221-5ace-4191-9eff-771e6580df32(com.mbeddr.cpp.modules.gen.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -27,6 +27,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -139,7 +140,7 @@
       <node concept="3EZMnI" id="2Ai0GtaeC12" role="3EZMnx">
         <node concept="2iRfu4" id="2Ai0GtaeC13" role="2iSdaV" />
         <node concept="3F0A7n" id="2Ai0Gtaf57l" role="3EZMnx">
-          <ref role="1NtTu8" to="pmno:2Ai0GtaeC0o" resolve="visibility" />
+          <ref role="1NtTu8" to="wnzg:2Ai0Gt9ODIG" resolve="visibility" />
         </node>
         <node concept="3F0ifn" id="2Ai0GtaeC1x" role="3EZMnx">
           <property role="3F0ifm" value=":" />
@@ -193,6 +194,25 @@
         <ref role="PMmxG" to="gkp7:6NtgknWJ3yn" resolve="constructorSignature" />
       </node>
       <node concept="2iRfu4" id="27HW4imTxe_" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3LE5RBQ_Nom">
+    <ref role="1XX52x" to="pmno:3LE5RBQ$srP" resolve="GenOperatorDeclaration" />
+    <node concept="3EZMnI" id="3LE5RBQ_Noo" role="2wV5jI">
+      <node concept="1iCGBv" id="3LE5RBQ_NoA" role="3EZMnx">
+        <ref role="1NtTu8" to="pmno:3LE5RBQ$ttT" resolve="cls" />
+        <node concept="1sVBvm" id="3LE5RBQ_NoC" role="1sWHZn">
+          <node concept="3F0A7n" id="3LE5RBQ_NoQ" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3LE5RBQ_Np3" role="3EZMnx">
+        <property role="3F0ifm" value="::" />
+      </node>
+      <node concept="B$lHz" id="3LE5RBQ_NsC" role="3EZMnx" />
+      <node concept="l2Vlx" id="3LE5RBQ_Nor" role="2iSdaV" />
     </node>
   </node>
 </model>

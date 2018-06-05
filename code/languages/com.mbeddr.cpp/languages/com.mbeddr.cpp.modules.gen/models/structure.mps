@@ -8,6 +8,7 @@
   <imports>
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="zhp8" ref="r:66d213c1-a12b-4017-8dd5-0423703c30a9(com.mbeddr.cpp.operator_overload.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -16,7 +17,6 @@
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
-        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -25,10 +25,6 @@
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
-      </concept>
-      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
-        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
-        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -71,11 +67,6 @@
     <property role="TrG5h" value="ClassVisibilitySection" />
     <property role="34LRSv" value="visibility_section" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="2Ai0GtaeC0o" role="1TKVEl">
-      <property role="IQ2nx" value="2995459757121896472" />
-      <property role="TrG5h" value="visibility" />
-      <ref role="AX2Wp" to="wnzg:2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
-    </node>
     <node concept="1TJgyj" id="2Ai0GtaeAMy" role="1TKVEi">
       <property role="IQ2ns" value="2995459757121891490" />
       <property role="20lmBu" value="aggregation" />
@@ -93,6 +84,22 @@
     <property role="34LRSv" value="gen constructor prototype" />
     <ref role="1TJDcQ" to="wnzg:6NtgknWJ21h" resolve="ClassConstructorSignature" />
     <node concept="PrWs8" id="4KyQ_Qh$YaF" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3LE5RBQ$srP">
+    <property role="EcuMT" value="4353317802402236149" />
+    <property role="TrG5h" value="GenOperatorDeclaration" />
+    <property role="34LRSv" value="gen operator declaration" />
+    <ref role="1TJDcQ" to="zhp8:7bt9OVZfWbc" resolve="OperatorOverloadDeclaration" />
+    <node concept="1TJgyj" id="3LE5RBQ$ttT" role="1TKVEi">
+      <property role="IQ2ns" value="4353317802402240377" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="cls" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    </node>
+    <node concept="PrWs8" id="3LE5RBQ_bLz" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
   </node>

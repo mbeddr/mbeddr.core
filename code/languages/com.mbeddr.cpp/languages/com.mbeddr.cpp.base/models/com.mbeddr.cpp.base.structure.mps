@@ -10,10 +10,13 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
+    <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
+    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" implicit="true" />
+    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -77,6 +80,15 @@
     <property role="R4oN_" value="a class" />
     <property role="3GE5qa" value="class" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4o2nsMgB$iI" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="1rolTivmV0V" role="PzmwI">
+      <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7fNEwqA1QXR" role="PzmwI">
+      <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
+    </node>
     <node concept="1TJgyj" id="4o2nsMgBClg" role="1TKVEi">
       <property role="IQ2ns" value="5044697665789396304" />
       <property role="20lmBu" value="aggregation" />
@@ -111,6 +123,24 @@
     <property role="R4oN_" value="a method" />
     <property role="3GE5qa" value="method" />
     <ref role="1TJDcQ" node="3v5DuFDqYGC" resolve="MethodSignature" />
+    <node concept="PrWs8" id="1rolTiuExQl" role="PzmwI">
+      <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="1rolTiuExQu" role="PzmwI">
+      <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="3UJ18qjqSiT" role="PzmwI">
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
+    </node>
+    <node concept="PrWs8" id="3UJ18qjqSja" role="PzmwI">
+      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineFlagConcept" />
+    </node>
+    <node concept="PrWs8" id="3UJ18qjqSjv" role="PzmwI">
+      <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlagConcept" />
+    </node>
+    <node concept="PrWs8" id="3UJ18qjqSjS" role="PzmwI">
+      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
+    </node>
     <node concept="1TJgyj" id="3CmSUB7Fp_k" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
@@ -118,30 +148,15 @@
       <property role="IQ2ns" value="4185783222026475860" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
-    <node concept="PrWs8" id="3v5DuFDl4c1" role="PzmwI">
-      <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
-    </node>
-    <node concept="PrWs8" id="2L1k$oXDqK5" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
-    </node>
-    <node concept="PrWs8" id="1Yr26itUKUw" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineFlagConcept" />
-    </node>
-    <node concept="PrWs8" id="15T8UHynjIu" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlagConcept" />
-    </node>
-    <node concept="PrWs8" id="15T8UHynkMK" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBC$A7" resolve="IConstFlagConcept" />
-    </node>
-    <node concept="PrWs8" id="15T8UHysf1I" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBEtu">
     <property role="EcuMT" value="5044697665789405022" />
     <property role="TrG5h" value="ClassType" />
     <property role="3GE5qa" value="class" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
+    <node concept="PrWs8" id="6nKEiAiyM9j" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:4ZVDCZCa$xx" resolve="IOrdered" />
+    </node>
     <node concept="1TJgyj" id="4o2nsMgBEtY" role="1TKVEi">
       <property role="IQ2ns" value="5044697665789405054" />
       <property role="20lmBu" value="reference" />
@@ -157,6 +172,11 @@
     <node concept="PrWs8" id="5eDFAXBm97W" role="PrDN$">
       <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
     </node>
+    <node concept="1TJgyi" id="2Ai0Gt9ODIG" role="1TKVEl">
+      <property role="IQ2nx" value="2995459757115087788" />
+      <property role="TrG5h" value="visibility" />
+      <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBIrb">
     <property role="EcuMT" value="5044697665789421259" />
@@ -167,10 +187,14 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="init" />
       <property role="IQ2ns" value="4185783222026502647" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="4o2nsMgBJ6a" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="1rolTiuExQ9" role="PzmwI">
+      <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
     </node>
     <node concept="PrWs8" id="3v5DuFDm5p5" role="PzmwI">
       <ref role="PrY4T" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
@@ -180,9 +204,6 @@
     </node>
     <node concept="PrWs8" id="7DDmkyVqQX" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
-    </node>
-    <node concept="PrWs8" id="5eDFAXBCDaF" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBC$A7" resolve="IConstFlagConcept" />
     </node>
     <node concept="PrWs8" id="5eDFAXBCDcW" role="PzmwI">
       <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlagConcept" />
@@ -204,11 +225,6 @@
     <property role="EcuMT" value="5044697665789423998" />
     <property role="TrG5h" value="INamedClassMemberDeclaration" />
     <property role="3GE5qa" value="class" />
-    <node concept="1TJgyi" id="2Ai0Gt9ODIG" role="1TKVEl">
-      <property role="IQ2nx" value="2995459757115087788" />
-      <property role="TrG5h" value="visibility" />
-      <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
-    </node>
     <node concept="PrWs8" id="4o2nsMgBJ5Z" role="PrDN$">
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
@@ -398,18 +414,19 @@
     <node concept="PrWs8" id="3OTimPpGcj0" role="PzmwI">
       <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
     </node>
+    <node concept="PrWs8" id="1D2kn99oQ0S" role="PzmwI">
+      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
+    </node>
+    <node concept="PrWs8" id="1D2kn9asHjj" role="PzmwI">
+      <ref role="PrY4T" node="1D2kn9asHi2" resolve="IExplicitFlagConcept" />
+    </node>
     <node concept="PrWs8" id="6ddXmWdS2eK" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
-    </node>
-    <node concept="1TJgyi" id="6NtgknWJ211" role="1TKVEl">
-      <property role="IQ2nx" value="7844497894798008385" />
-      <property role="TrG5h" value="visibility" />
-      <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
     </node>
     <node concept="1TJgyj" id="6NtgknWJ214" role="1TKVEi">
       <property role="IQ2ns" value="7844497894798008388" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="parent_class" />
+      <property role="20kJfa" value="parentClass" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
     </node>
@@ -476,7 +493,7 @@
     </node>
     <node concept="1TJgyi" id="5i01kANicU4" role="1TKVEl">
       <property role="IQ2nx" value="6088872510303555204" />
-      <property role="TrG5h" value="is_destructor" />
+      <property role="TrG5h" value="isDestructor" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -525,6 +542,11 @@
     <property role="TrG5h" value="ConstructorInitializedConstructor" />
     <property role="R4oN_" value="Base constructor calls like ConstructorA(int32 a) : ConstructorB(a)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1rV7RaSNWqj" role="1TKVEl">
+      <property role="IQ2nx" value="1655951865576146579" />
+      <property role="TrG5h" value="real_name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="7DDmkza$5K" role="PzmwI">
       <ref role="PrY4T" node="3n$8_Xbpg8r" resolve="IAmConstructorInitializable" />
     </node>
@@ -566,6 +588,139 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6gFj6gpBJFg">
+    <property role="EcuMT" value="7217946820601641680" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="GlobalUsingGeneralNamespaceDeclaration" />
+    <property role="34LRSv" value="using" />
+    <property role="R4oN_" value="Using namespace &lt;...&gt;" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6gFj6gpBJF$" role="1TKVEi">
+      <property role="IQ2ns" value="7217946820601641700" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="namespace" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="383ZxwZqQYo" resolve="NamespaceDeclaration" />
+    </node>
+    <node concept="PrWs8" id="6gFj6gpBJFh" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1rolTiuOPQt">
+    <property role="EcuMT" value="1646161959635344797" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="UsingNamespaceMethodDeclaration" />
+    <property role="34LRSv" value="using" />
+    <property role="R4oN_" value="Using a namespace method" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="1rolTiuRvvJ" role="1TKVEi">
+      <property role="IQ2ns" value="1646161959636039663" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="namespace" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="383ZxwZqQYo" resolve="NamespaceDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="1rolTiuOPRl" role="1TKVEi">
+      <property role="IQ2ns" value="1646161959635344853" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="method" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgB$VW" resolve="MethodDeclaration" />
+    </node>
+    <node concept="PrWs8" id="1rolTivilg$" role="PzmwI">
+      <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5eDFAXBS4m7">
+    <property role="EcuMT" value="6028541369719473543" />
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="IThreadLocalFlag" />
+    <node concept="1TJgyi" id="5eDFAXBS4m8" role="1TKVEl">
+      <property role="IQ2nx" value="6028541369719473544" />
+      <property role="TrG5h" value="isThreadLocal" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29cSqvcoIWH">
+    <property role="EcuMT" value="2471598406324383533" />
+    <property role="TrG5h" value="NullPointerType" />
+    <property role="34LRSv" value="std::nullptr_t" />
+    <property role="R4oN_" value="Null pointer type" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+    <node concept="PrWs8" id="29cSqvdKNcz" role="PzmwI">
+      <ref role="PrY4T" to="yq40:4$HG0yY9G70" resolve="INullableType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29cSqvcoIWG">
+    <property role="EcuMT" value="2471598406324383532" />
+    <property role="TrG5h" value="NullPointerLiteral" />
+    <property role="34LRSv" value="nullptr" />
+    <property role="R4oN_" value="Null pointer literal" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrDq" resolve="Literal" />
+  </node>
+  <node concept="1TIwiD" id="7RFM8R0xwre">
+    <property role="EcuMT" value="9073566385413949134" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="GlobalUsingNamespaceAttributeDeclaration" />
+    <property role="34LRSv" value="using" />
+    <property role="R4oN_" value="Using a namespace attribute" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7RFM8R0xwrf" role="1TKVEi">
+      <property role="IQ2ns" value="9073566385413949135" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="namespace" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="383ZxwZqQYo" resolve="NamespaceDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="7RFM8R0xwrs" role="1TKVEi">
+      <property role="IQ2ns" value="9073566385413949148" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="attribute" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7RFM8R0xwrg" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="383ZxwZsgd4">
+    <property role="EcuMT" value="3604003506923569988" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="INamespaceMemberDeclaration" />
+  </node>
+  <node concept="PlHQZ" id="383ZxwZsgd5">
+    <property role="EcuMT" value="3604003506923569989" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="INamedNamespaceMemberDeclaration" />
+    <node concept="PrWs8" id="383ZxwZsgd6" role="PrDN$">
+      <ref role="PrY4T" node="383ZxwZsgd4" resolve="INamespaceMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="383ZxwZsgde" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7fNEwq_6ZJn">
+    <property role="EcuMT" value="8355208679219002327" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="NamespaceClassInstanceAttributeRef" />
+    <property role="R4oN_" value="Refer to namespace class attribute" />
+    <property role="34LRSv" value="." />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="7fNEwq_6ZJT" role="1TKVEi">
+      <property role="IQ2ns" value="8355208679219002361" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="classInstance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7RFM8R3Me1y" resolve="NamespaceClassInstance" />
+    </node>
+    <node concept="1TJgyj" id="7fNEwq_6ZLT" role="1TKVEi">
+      <property role="IQ2ns" value="8355208679219002489" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="classAttribute" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
+    </node>
+  </node>
   <node concept="PlHQZ" id="1Yr26itwsSZ">
     <property role="EcuMT" value="2277423264798199359" />
     <property role="3GE5qa" value="flag" />
@@ -573,6 +728,182 @@
     <node concept="1TJgyi" id="1Yr26itwsT0" role="1TKVEl">
       <property role="IQ2nx" value="2277423264798199360" />
       <property role="TrG5h" value="isInlined" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7fNEwqBx$6S">
+    <property role="EcuMT" value="8355208679259521464" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="NamespaceClassInstanceMethodCall" />
+    <property role="34LRSv" value="." />
+    <property role="R4oN_" value="Refer to namespace class method" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="7fNEwqBxBea" role="1TKVEi">
+      <property role="IQ2ns" value="8355208679259534218" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actuals" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7fNEwqBx$6T" role="1TKVEi">
+      <property role="IQ2ns" value="8355208679259521465" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="classInstance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7RFM8R3Me1y" resolve="NamespaceClassInstance" />
+    </node>
+    <node concept="1TJgyj" id="7fNEwqBx$6W" role="1TKVEi">
+      <property role="IQ2ns" value="8355208679259521468" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="classMethod" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgB$VW" resolve="MethodDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7fNEwqBxBek" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7RFM8R3Me1y">
+    <property role="EcuMT" value="9073566385468661858" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="NamespaceClassInstance" />
+    <property role="34LRSv" value="class instance" />
+    <property role="R4oN_" value="Create instance of namespace class" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="7RFM8R3Me1P" role="PzmwI">
+      <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7RFM8R3Me22" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="1TJgyj" id="7RFM8R3Me2a" role="1TKVEi">
+      <property role="IQ2ns" value="9073566385468661898" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="class" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1$h5d7wdNkU">
+    <property role="EcuMT" value="1806247817194714426" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="UsingGeneralNamespaceDeclaration" />
+    <property role="34LRSv" value="using" />
+    <property role="R4oN_" value="Using namespace &lt;...&gt;" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="1$h5d7wk3lQ" role="1TKVEi">
+      <property role="IQ2ns" value="1806247817196352886" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="namespace" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="383ZxwZqQYo" resolve="NamespaceDeclaration" />
+    </node>
+    <node concept="PrWs8" id="1$h5d7wl4VS" role="PzmwI">
+      <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5eDFAXBRENn">
+    <property role="EcuMT" value="6028541369719368919" />
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="IExternFlagConcept" />
+    <node concept="1TJgyi" id="5eDFAXBRENo" role="1TKVEl">
+      <property role="IQ2nx" value="6028541369719368920" />
+      <property role="TrG5h" value="isExtern" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1$h5d7v1dEb">
+    <property role="EcuMT" value="1806247817174637195" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="UsingNamespaceAttributeDeclaration" />
+    <property role="34LRSv" value="using" />
+    <property role="R4oN_" value="Using a namespace attribute" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="1$h5d7v1dEc" role="PzmwI">
+      <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="1$h5d7v1dEf" role="1TKVEi">
+      <property role="IQ2ns" value="1806247817174637199" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="namespace" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="383ZxwZqQYo" resolve="NamespaceDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="1$h5d7v1dEp" role="1TKVEi">
+      <property role="IQ2ns" value="1806247817174637209" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="attribute" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="383ZxwZrBky">
+    <property role="EcuMT" value="3604003506923402530" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="NamespaceMethodCall" />
+    <property role="34LRSv" value="::" />
+    <property role="R4oN_" value="Call a namespace method" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="383ZxwZrBkz" role="PzmwI">
+      <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
+    </node>
+    <node concept="PrWs8" id="1rolTiuGgp_" role="PzmwI">
+      <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="383ZxwZrBkA" role="1TKVEi">
+      <property role="IQ2ns" value="3604003506923402534" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actuals" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="383ZxwZrBkD" role="1TKVEi">
+      <property role="IQ2ns" value="3604003506923402537" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="namespace" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="383ZxwZqQYo" resolve="NamespaceDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="383ZxwZrBkI" role="1TKVEi">
+      <property role="IQ2ns" value="3604003506923402542" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="method" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgB$VW" resolve="MethodDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7RFM8R0Rm5q">
+    <property role="EcuMT" value="9073566385419673946" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="GlobalUsingNamespaceMethodDeclaration" />
+    <property role="34LRSv" value="using" />
+    <property role="R4oN_" value="Using a namespace method" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7RFM8R0Rm5r" role="1TKVEi">
+      <property role="IQ2ns" value="9073566385419673947" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="namespace" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="383ZxwZqQYo" resolve="NamespaceDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="7RFM8R0Rm5s" role="1TKVEi">
+      <property role="IQ2ns" value="9073566385419673948" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="method" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgB$VW" resolve="MethodDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7RFM8R0Rm5t" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="15T8UHynq3H">
+    <property role="EcuMT" value="1259076789823447277" />
+    <property role="3GE5qa" value="flag" />
+    <property role="TrG5h" value="IMutableFlagConcept" />
+    <node concept="1TJgyi" id="15T8UHynq3I" role="1TKVEl">
+      <property role="IQ2nx" value="1259076789823447278" />
+      <property role="TrG5h" value="isMutable" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -586,34 +917,53 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
-  <node concept="PlHQZ" id="5eDFAXBCper">
-    <property role="EcuMT" value="6028541369715364763" />
-    <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IVolatileFlagConcept" />
-    <node concept="1TJgyi" id="5eDFAXBCpes" role="1TKVEl">
-      <property role="IQ2nx" value="6028541369715364764" />
-      <property role="TrG5h" value="isVolatile" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+  <node concept="1TIwiD" id="383ZxwZqQYo">
+    <property role="EcuMT" value="3604003506923204504" />
+    <property role="TrG5h" value="NamespaceDeclaration" />
+    <property role="34LRSv" value="namespace" />
+    <property role="R4oN_" value="New namespace" />
+    <property role="3GE5qa" value="namespace" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="383ZxwZrBkm" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="383ZxwZsgdB" role="PzmwI">
+      <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="1Grcmddq$9_" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:6mfXVgRsmwb" resolve="IVoidTypeContainer" />
+    </node>
+    <node concept="1TJgyj" id="383ZxwZsUja" role="1TKVEi">
+      <property role="IQ2ns" value="3604003506923742410" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="383ZxwZsgd4" resolve="INamespaceMemberDeclaration" />
     </node>
   </node>
-  <node concept="PlHQZ" id="5eDFAXBC$A7">
-    <property role="EcuMT" value="6028541369715411335" />
-    <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IConstFlagConcept" />
-    <node concept="1TJgyi" id="5eDFAXBC$A8" role="1TKVEl">
-      <property role="IQ2nx" value="6028541369715411336" />
-      <property role="TrG5h" value="isConstant" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+  <node concept="1TIwiD" id="383ZxwZrBkp">
+    <property role="EcuMT" value="3604003506923402521" />
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="NamespaceAttributeRef" />
+    <property role="34LRSv" value="::" />
+    <property role="R4oN_" value="Call a namespace attribute" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="383ZxwZrBkq" role="1TKVEi">
+      <property role="IQ2ns" value="3604003506923402522" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="namespace" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="383ZxwZqQYo" resolve="NamespaceDeclaration" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="5eDFAXBRENn">
-    <property role="EcuMT" value="6028541369719368919" />
-    <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IExternFlagConcept" />
-    <node concept="1TJgyi" id="5eDFAXBRENo" role="1TKVEl">
-      <property role="IQ2nx" value="6028541369719368920" />
-      <property role="TrG5h" value="isExtern" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    <node concept="1TJgyj" id="383ZxwZrBkt" role="1TKVEi">
+      <property role="IQ2ns" value="3604003506923402525" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="attribute" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
+    </node>
+    <node concept="PrWs8" id="1rolTiuGebY" role="PzmwI">
+      <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
     </node>
   </node>
   <node concept="PlHQZ" id="5eDFAXBRQhJ">
@@ -626,23 +976,33 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
-  <node concept="PlHQZ" id="5eDFAXBS4m7">
-    <property role="EcuMT" value="6028541369719473543" />
+  <node concept="PlHQZ" id="5eDFAXBCper">
+    <property role="EcuMT" value="6028541369715364763" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IThreadLocalFlag" />
-    <node concept="1TJgyi" id="5eDFAXBS4m8" role="1TKVEl">
-      <property role="IQ2nx" value="6028541369719473544" />
-      <property role="TrG5h" value="isThreadLocal" />
+    <property role="TrG5h" value="IVolatileFlagConcept" />
+    <node concept="1TJgyi" id="5eDFAXBCpes" role="1TKVEl">
+      <property role="IQ2nx" value="6028541369715364764" />
+      <property role="TrG5h" value="isVolatile" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
-  <node concept="PlHQZ" id="15T8UHynq3H">
-    <property role="EcuMT" value="1259076789823447277" />
+  <node concept="1TIwiD" id="6FZQsHt7RdA">
+    <property role="EcuMT" value="7710120554545509222" />
+    <property role="TrG5h" value="AutoType" />
+    <property role="34LRSv" value="auto" />
+    <property role="R4oN_" value="auto" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="6FZQsHu28zs" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1D2kn9asHi2">
+    <property role="EcuMT" value="1892164344766190722" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IMutableFlagConcept" />
-    <node concept="1TJgyi" id="15T8UHynq3I" role="1TKVEl">
-      <property role="IQ2nx" value="1259076789823447278" />
-      <property role="TrG5h" value="isMutable" />
+    <property role="TrG5h" value="IExplicitFlagConcept" />
+    <node concept="1TJgyi" id="1D2kn9asHiy" role="1TKVEl">
+      <property role="IQ2nx" value="1892164344766190754" />
+      <property role="TrG5h" value="isExplicit" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>

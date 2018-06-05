@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:d2f0aea7-9c00-481b-87a1-40bee3c4efec(com.mbeddr.cpp.base.actions)">
+<model ref="r:58e41aa3-726f-4241-9dda-8560dd8a7245(com.mbeddr.cpp.base.actions)">
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
@@ -129,7 +129,7 @@
                   <node concept="2OqwBi" id="6ddXmWdFbHt" role="37vLTJ">
                     <node concept="1r4Lsj" id="6ddXmWdFbvN" role="2Oq$k0" />
                     <node concept="3TrEf2" id="6ddXmWdFc3y" role="2OqNvi">
-                      <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                      <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parentClass" />
                     </node>
                   </node>
                 </node>
@@ -169,7 +169,7 @@
                     <node concept="2OqwBi" id="27HW4imXc_g" role="37vLTJ">
                       <node concept="1r4Lsj" id="27HW4imXcgO" role="2Oq$k0" />
                       <node concept="3TrEf2" id="27HW4imXdaX" role="2OqNvi">
-                        <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                        <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parentClass" />
                       </node>
                     </node>
                   </node>
@@ -189,7 +189,7 @@
                 <node concept="2OqwBi" id="6hUtorDLW8B" role="2Oq$k0">
                   <node concept="1r4Lsj" id="6hUtorDLVJW" role="2Oq$k0" />
                   <node concept="3TrEf2" id="6hUtorDLWMA" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                    <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parentClass" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="6hUtorDLYej" role="2OqNvi">
@@ -205,6 +205,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="37WvkG" id="phuaKKj7Se" role="37WGs$">
+      <ref role="37XkoT" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
+      <node concept="37Y9Zx" id="phuaKKj7Sf" role="37ZfLb">
+        <node concept="3clFbS" id="phuaKKj7Sg" role="2VODD2" />
       </node>
     </node>
   </node>
