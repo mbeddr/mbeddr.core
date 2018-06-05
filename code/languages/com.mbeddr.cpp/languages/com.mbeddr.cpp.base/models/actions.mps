@@ -207,12 +207,6 @@
         </node>
       </node>
     </node>
-    <node concept="37WvkG" id="phuaKKj7Se" role="37WGs$">
-      <ref role="37XkoT" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
-      <node concept="37Y9Zx" id="phuaKKj7Sf" role="37ZfLb">
-        <node concept="3clFbS" id="phuaKKj7Sg" role="2VODD2" />
-      </node>
-    </node>
   </node>
 </model>
 
