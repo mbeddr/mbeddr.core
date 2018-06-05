@@ -54,9 +54,22 @@
         <property id="2277423264798216735" name="isStatic" index="226hDV" />
       </concept>
       <concept id="7710120554545509222" name="com.mbeddr.cpp.base.structure.AutoType" flags="ng" index="RSaEH" />
-      <concept id="5044697665789421259" name="com.mbeddr.cpp.base.structure.AttributeDeclaration" flags="ng" index="3mBbG7" />
+      <concept id="5044697665789421259" name="com.mbeddr.cpp.base.structure.AttributeDeclaration" flags="ng" index="3mBbG7">
+        <child id="4185783222026502647" name="init" index="3XIe9u" />
+      </concept>
+      <concept id="5044697665789421253" name="com.mbeddr.cpp.base.structure.IClassMemberDeclaration" flags="ng" index="3mBbG9">
+        <property id="2995459757115087788" name="visibility" index="1wg9_F" />
+      </concept>
+      <concept id="5044697665789405022" name="com.mbeddr.cpp.base.structure.ClassType" flags="ng" index="3mBfEi">
+        <reference id="5044697665789405054" name="clazz" index="3mBfEM" />
+      </concept>
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
         <child id="5044697665789396304" name="members" index="3mBdys" />
+      </concept>
+      <concept id="7864026881428739843" name="com.mbeddr.cpp.base.structure.GlobalVarDecCPP" flags="ng" index="3Iz7nb" />
+      <concept id="7864026881428741049" name="com.mbeddr.cpp.base.structure.IAccessStaticClassVariable" flags="ng" index="3Iz7_L">
+        <property id="7864026881428741050" name="accessStatic" index="3Iz7_M" />
+        <child id="7864026881428741053" name="className" index="3Iz7_P" />
       </concept>
       <concept id="7864026881429356528" name="com.mbeddr.cpp.base.structure.StaticVar" flags="ng" index="3IADOS" />
     </language>
@@ -87,6 +100,7 @@
       <concept id="2995459757115296646" name="com.mbeddr.cpp.modules.structure.CPPImplementationModule" flags="ng" index="1whW_1" />
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
@@ -172,10 +186,40 @@
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="testClass" />
       <node concept="3mBbG7" id="6OyCGy49Weg" role="3mBdys">
-        <node concept="3TlMgo" id="6OyCGy49Wei" role="2C2TGm">
+        <property role="1wg9_F" value="private" />
+        <property role="226hDV" value="true" />
+        <property role="TrG5h" value="test3" />
+        <node concept="26Vqph" id="6OyCGy4u2KX" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
+        <node concept="3TlMh9" id="6OyCGy4u2Lo" role="3XIe9u">
+          <property role="2hmy$m" value="1" />
+        </node>
+      </node>
+      <node concept="3mBbG7" id="6OyCGy4u2NO" role="3mBdys">
+        <property role="226hDV" value="true" />
+        <property role="TrG5h" value="test4" />
+        <node concept="26Vqph" id="6OyCGy4u2Of" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6OyCGy4u2LL" role="N3F5h">
+      <property role="TrG5h" value="empty_1528192257953_1" />
+    </node>
+    <node concept="3Iz7nb" id="6OyCGy4u2WD" role="N3F5h">
+      <property role="3Iz7_M" value="true" />
+      <property role="TrG5h" value="test3" />
+      <node concept="26Vqph" id="6OyCGy4u2ZE" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3mBfEi" id="6OyCGy4u2ZU" role="3Iz7_P">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+        <ref role="3mBfEM" node="6OyCGy49WcS" resolve="testClass" />
       </node>
     </node>
   </node>

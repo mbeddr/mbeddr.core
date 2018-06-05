@@ -220,6 +220,9 @@
     <node concept="PrWs8" id="15T8UHynq6K" role="PzmwI">
       <ref role="PrY4T" node="15T8UHynq3H" resolve="IMutableFlagConcept" />
     </node>
+    <node concept="PrWs8" id="6OyCGy4g52Y" role="PzmwI">
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4o2nsMgBJ5Y">
     <property role="EcuMT" value="5044697665789423998" />
