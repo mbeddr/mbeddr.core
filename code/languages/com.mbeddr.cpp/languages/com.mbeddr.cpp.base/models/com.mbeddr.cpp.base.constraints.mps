@@ -1421,5 +1421,38 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1yn8PkxYBnq">
+    <property role="3GE5qa" value="class" />
+    <ref role="1M2myG" to="wnzg:1yn8PkxYuRh" resolve="InnerClassType" />
+    <node concept="1N5Pfh" id="1yn8PkxYBnr" role="1Mr941">
+      <ref role="1N5Vy1" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+      <node concept="3dgokm" id="1yn8PkxYBww" role="1N6uqs">
+        <node concept="3clFbS" id="1yn8PkxYBwy" role="2VODD2">
+          <node concept="3clFbF" id="1yn8PkxYBz$" role="3cqZAp">
+            <node concept="2YIFZM" id="1yn8PkxYBKC" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="1yn8PkxYFaH" role="37wK5m">
+                <node concept="2OqwBi" id="1yn8PkxYD$2" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1yn8PkxYC7M" role="2Oq$k0">
+                    <node concept="3kakTB" id="1yn8PkxYBPu" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1yn8PkxYCRB" role="2OqNvi">
+                      <ref role="3Tt5mk" to="wnzg:1yn8PkxYuRi" resolve="outerclassType" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="1yn8PkxYEmP" role="2OqNvi">
+                    <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1yn8PkxZrA1" role="2OqNvi">
+                  <ref role="37wK5l" to="kntn:1yn8PkxZfdx" resolve="allPublicClassMembers" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
