@@ -93,11 +93,11 @@
     <ref role="1XX52x" to="zhp8:7bt9OVZfWbc" resolve="OperatorOverloadDeclaration" />
     <node concept="3EZMnI" id="3LE5RBPSwkt" role="2wV5jI">
       <node concept="PMmxH" id="3LE5RBPSwl0" role="3EZMnx">
-        <ref role="PMmxG" to="gkp7:59MAV0yaZn2" resolve="VisibilityFlag" />
+        <ref role="PMmxG" to="gkp7:59MAV0yaZn2" resolve="AccessModifier" />
       </node>
       <node concept="1kHk_G" id="3LE5RBQ6qh4" role="3EZMnx">
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-        <ref role="1NtTu8" to="wnzg:3LE5RBQ6qAk" resolve="inline" />
+        <ref role="1NtTu8" to="wnzg:1Yr26itwsT0" resolve="isInlined" />
       </node>
       <node concept="PMmxH" id="3LE5RBQoSTw" role="3EZMnx">
         <ref role="PMmxG" node="7bt9OVZg7dU" resolve="operatorOverloadSignature" />
