@@ -142,6 +142,9 @@
       <concept id="6028541369719415919" name="com.mbeddr.cpp.base.structure.IConstExprFlagConcept" flags="ng" index="OtGC0">
         <property id="6028541369719415920" name="isConstExpr" index="OtGCv" />
       </concept>
+      <concept id="1771923826942799313" name="com.mbeddr.cpp.base.structure.InnerClassType" flags="ng" index="TrGU4">
+        <child id="1771923826942799314" name="outerclassType" index="TrGU7" />
+      </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
@@ -1646,6 +1649,19 @@
           <property role="2OOxQR" value="true" />
           <property role="TrG5h" value="C" />
           <property role="1wg9_F" value="public" />
+          <node concept="3mBbG7" id="2PCjd49tvkR" role="3mBdys">
+            <property role="TrG5h" value="b" />
+            <node concept="TrGU4" id="2PCjd49tLr2" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <ref role="3mBfEM" node="1yn8Pkyc1Au" resolve="B" />
+              <node concept="3mBfEi" id="2PCjd49tLqQ" role="TrGU7">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="3mBfEM" node="1yn8Pkyc1xp" resolve="A" />
+              </node>
+            </node>
+          </node>
           <node concept="3mBW2U" id="1yn8Pkyc1AK" role="3mBdys">
             <property role="2OOxQR" value="true" />
             <property role="TrG5h" value="D" />
@@ -1744,8 +1760,15 @@
         <property role="TrG5h" value="privateInner" />
       </node>
     </node>
-    <node concept="2NXPZ9" id="1yn8PkySbCp" role="N3F5h">
-      <property role="TrG5h" value="empty_1528198543504_1" />
+    <node concept="3mBW2U" id="2PCjd49toyC" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="1wg9_F" value="public" />
+      <property role="TrG5h" value="Outer" />
+      <node concept="3mBW2U" id="2PCjd49toDX" role="3mBdys">
+        <property role="2OOxQR" value="true" />
+        <property role="1wg9_F" value="public" />
+        <property role="TrG5h" value="Inner" />
+      </node>
     </node>
     <node concept="2NXPZ9" id="1yn8PkySbD8" role="N3F5h">
       <property role="TrG5h" value="empty_1528198543623_2" />
