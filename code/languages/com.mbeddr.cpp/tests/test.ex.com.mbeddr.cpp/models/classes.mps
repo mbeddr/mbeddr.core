@@ -1673,6 +1673,37 @@
           <property role="2OOxQR" value="true" />
           <property role="TrG5h" value="S" />
           <property role="1wg9_F" value="public" />
+          <node concept="3BZPaE" id="1yn8PkzRpUf" role="3mBdys">
+            <property role="2OOxQR" value="true" />
+            <property role="1wg9_F" value="public" />
+            <property role="TrG5h" value="templateClass" />
+            <node concept="3V$TgL" id="1yn8PkzRpUM" role="3Cz$97">
+              <property role="TrG5h" value="T" />
+            </node>
+            <node concept="3mBW2U" id="1yn8PkzRpUQ" role="3mBdys">
+              <property role="2OOxQR" value="true" />
+              <property role="1wg9_F" value="public" />
+              <property role="TrG5h" value="insideTemplate" />
+            </node>
+            <node concept="3BZPaE" id="1yn8PkzRpV8" role="3mBdys">
+              <property role="2OOxQR" value="true" />
+              <property role="1wg9_F" value="public" />
+              <property role="TrG5h" value="templateClassInsideTemplate" />
+              <node concept="3V$TgL" id="1yn8PkzRpVh" role="3Cz$97">
+                <property role="TrG5h" value="D" />
+              </node>
+              <node concept="3mBbG7" id="1yn8PkzRpVl" role="3mBdys">
+                <property role="TrG5h" value="insideInnerTemplate" />
+                <node concept="26Vqph" id="1yn8PkzRpVw" role="2C2TGm">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                </node>
+                <node concept="3TlMh9" id="1yn8PkzRpWc" role="3XIe9v">
+                  <property role="2hmy$m" value="4" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3mBW2U" id="1yn8Pkyc1BJ" role="3mBdys">
             <property role="2OOxQR" value="true" />
             <property role="TrG5h" value="T" />
