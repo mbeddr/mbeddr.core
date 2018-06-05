@@ -1004,30 +1004,32 @@
     <node concept="PrWs8" id="6OyCGy3FHsc" role="PzmwI">
       <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
     </node>
-    <node concept="PrWs8" id="6OyCGy3FHJ7" role="PzmwI">
-      <ref role="PrY4T" node="6OyCGy3FHIT" resolve="IAccessStaticClassVariable" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="6OyCGy3FHIT">
-    <property role="EcuMT" value="7864026881428741049" />
-    <property role="TrG5h" value="IAccessStaticClassVariable" />
-    <node concept="1TJgyi" id="6OyCGy3FHIU" role="1TKVEl">
-      <property role="IQ2nx" value="7864026881428741050" />
-      <property role="TrG5h" value="accessStatic" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyj" id="6OyCGy3FHIX" role="1TKVEi">
-      <property role="IQ2ns" value="7864026881428741053" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="className" />
-      <ref role="20lvS9" node="4o2nsMgBEtu" resolve="ClassType" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6OyCGy3I3ZK">
     <property role="EcuMT" value="7864026881429356528" />
     <property role="TrG5h" value="StaticVar" />
     <property role="34LRSv" value="static" />
     <ref role="1TJDcQ" node="6OyCGy3FHs3" resolve="GlobalVarDecCPP" />
+  </node>
+  <node concept="1TIwiD" id="6OyCGy9cOMO">
+    <property role="EcuMT" value="7864026881521306804" />
+    <property role="TrG5h" value="ClassStaticVarRef" />
+    <property role="34LRSv" value="::" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="6OyCGy9cOMP" role="1TKVEi">
+      <property role="IQ2ns" value="7864026881521306805" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="clazz" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="6OyCGy9cOMS" role="1TKVEi">
+      <property role="IQ2ns" value="7864026881521306808" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="attribute" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
+    </node>
   </node>
 </model>
 
