@@ -106,9 +106,6 @@
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styleClass" index="V601i" />
       </concept>
-      <concept id="1214320119173" name="jetbrains.mps.lang.editor.structure.SideTransformAnchorTagStyleClassItem" flags="ln" index="2V7CMv">
-        <property id="1214320119174" name="tag" index="2V7CMs" />
-      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -3420,9 +3417,6 @@
         <ref role="1NtTu8" to="tpee:gfVsUgY" resolve="classifier" />
         <node concept="1sVBvm" id="yGThnK7s6l" role="1sWHZn">
           <node concept="3SHvHV" id="5iECrHfg5YP" role="2wV5jI">
-            <node concept="2V7CMv" id="1o6G0snj8eP" role="3F10Kt">
-              <property role="2V7CMs" value="ext_1_RTransform" />
-            </node>
             <node concept="1NMggl" id="3Q2hMLtMjEG" role="2N1_XE">
               <node concept="3clFbS" id="3Q2hMLtMjEH" role="2VODD2">
                 <node concept="3cpWs8" id="3Q2hMLtMjEI" role="3cqZAp">
