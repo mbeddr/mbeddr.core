@@ -259,8 +259,8 @@
     <property role="34LRSv" value="operator" />
     <property role="R4oN_" value="Overload an operator" />
     <ref role="1TJDcQ" node="7bt9OVZfWbd" resolve="OperatorOverloadSignature" />
-    <node concept="PrWs8" id="7bt9OVZg6Vf" role="PzmwI">
-      <ref role="PrY4T" to="wnzg:3LE5RBQ6qAj" resolve="IAmInlineable" />
+    <node concept="PrWs8" id="3p40HKhxgfI" role="PzmwI">
+      <ref role="PrY4T" to="wnzg:1Yr26itwsSZ" resolve="IInlineFlagConcept" />
     </node>
     <node concept="1TJgyj" id="7bt9OVZg8N_" role="1TKVEi">
       <property role="IQ2ns" value="8276814910420192485" />
