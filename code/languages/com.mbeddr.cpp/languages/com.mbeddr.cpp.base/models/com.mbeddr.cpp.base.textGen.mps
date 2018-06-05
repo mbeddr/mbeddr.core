@@ -2,7 +2,7 @@
 <model ref="r:0777b219-94ea-49d2-8175-d5f018f3e7f9(com.mbeddr.cpp.base.textGen)">
   <persistence version="9" />
   <languages>
-    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="-1" />
+    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="1" />
     <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
@@ -390,10 +390,10 @@
             </node>
           </node>
           <node concept="2OqwBi" id="2Ai0Gt9Wzei" role="3clFbw">
+            <node concept="17RvpY" id="1yn8PkzoxZq" role="2OqNvi" />
             <node concept="37vLTw" id="2Ai0Gt9WyXg" role="2Oq$k0">
               <ref role="3cqZAo" node="2Ai0Gt9WxLU" resolve="typePrefix" />
             </node>
-            <node concept="17RvpY" id="1yn8PkzoxZq" role="2OqNvi" />
           </node>
         </node>
         <node concept="lc7rE" id="3CmSUB7FmNA" role="3cqZAp">
@@ -1923,18 +1923,6 @@
           </node>
           <node concept="la8eA" id="7DDmkz5yVz" role="lcghm">
             <property role="lacIc" value=")" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="WtQ9Q" id="6FZQsHt$4Ly">
-    <ref role="WuzLi" to="wnzg:6FZQsHt7RdA" resolve="AutoType" />
-    <node concept="11bSqf" id="6FZQsHt$4Lz" role="11c4hB">
-      <node concept="3clFbS" id="6FZQsHt$4L$" role="2VODD2">
-        <node concept="lc7rE" id="6FZQsHt$4LR" role="3cqZAp">
-          <node concept="la8eA" id="6FZQsHt$4Mf" role="lcghm">
-            <property role="lacIc" value="auto" />
           </node>
         </node>
       </node>
