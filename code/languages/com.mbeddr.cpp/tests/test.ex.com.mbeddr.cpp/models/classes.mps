@@ -1074,13 +1074,6 @@
   </node>
   <node concept="1whW_1" id="2yiFVcKEIWv">
     <property role="TrG5h" value="This" />
-    <node concept="3mBW2U" id="2yiFVcKEJQS" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="House" />
-    </node>
-    <node concept="2NXPZ9" id="2yiFVcKEJPR" role="N3F5h">
-      <property role="TrG5h" value="empty_1528110742008_5" />
-    </node>
     <node concept="3mBW2U" id="2yiFVcKEJMS" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="Person" />
