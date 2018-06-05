@@ -1020,5 +1020,11 @@
       <ref role="20lvS9" node="4o2nsMgBEtu" resolve="ClassType" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6OyCGy3I3ZK">
+    <property role="EcuMT" value="7864026881429356528" />
+    <property role="TrG5h" value="StaticVar" />
+    <property role="34LRSv" value="static" />
+    <ref role="1TJDcQ" node="6OyCGy3FHs3" resolve="GlobalVarDecCPP" />
+  </node>
 </model>
 

@@ -816,5 +816,61 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="6OyCGy3HYco">
+    <property role="TrG5h" value="ToggleAccessStatic" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="wnzg:6OyCGy3FHIT" resolve="IAccessStaticClassVariable" />
+    <node concept="2S6ZIM" id="6OyCGy3HYcp" role="2ZfVej">
+      <node concept="3clFbS" id="6OyCGy3HYcq" role="2VODD2">
+        <node concept="3clFbF" id="6OyCGy3HYl_" role="3cqZAp">
+          <node concept="3K4zz7" id="6OyCGy3HZr8" role="3clFbG">
+            <node concept="Xl_RD" id="6OyCGy3HZ_Y" role="3K4E3e">
+              <property role="Xl_RC" value="Convert back to regular variable declaration" />
+            </node>
+            <node concept="Xl_RD" id="6OyCGy3I0$L" role="3K4GZi">
+              <property role="Xl_RC" value="Access a static class variable" />
+            </node>
+            <node concept="2OqwBi" id="6OyCGy3HYyz" role="3K4Cdx">
+              <node concept="2Sf5sV" id="6OyCGy3HYl$" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6OyCGy3HYLU" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:6OyCGy3FHIU" resolve="accessStatic" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6OyCGy3HYcr" role="2ZfgGD">
+      <node concept="3clFbS" id="6OyCGy3HYcs" role="2VODD2">
+        <node concept="3clFbF" id="6OyCGy3I2wE" role="3cqZAp">
+          <node concept="37vLTI" id="6OyCGy3I3dU" role="3clFbG">
+            <node concept="3fqX7Q" id="6OyCGy3I3jU" role="37vLTx">
+              <node concept="2OqwBi" id="6OyCGy3I3Ak" role="3fr31v">
+                <node concept="2Sf5sV" id="6OyCGy3I3tl" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6OyCGy3I3MK" role="2OqNvi">
+                  <ref role="3TsBF5" to="wnzg:6OyCGy3FHIU" resolve="accessStatic" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6OyCGy3I2BI" role="37vLTJ">
+              <node concept="2Sf5sV" id="6OyCGy3I2wD" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6OyCGy3I2Kw" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:6OyCGy3FHIU" resolve="accessStatic" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="6OyCGy3I23u" role="2ZfVeh">
+      <node concept="3clFbS" id="6OyCGy3I23v" role="2VODD2">
+        <node concept="3clFbF" id="6OyCGy3I2lB" role="3cqZAp">
+          <node concept="3clFbT" id="6OyCGy3I2lA" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
