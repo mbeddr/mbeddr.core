@@ -129,7 +129,7 @@
                   <node concept="2OqwBi" id="6ddXmWdFbHt" role="37vLTJ">
                     <node concept="1r4Lsj" id="6ddXmWdFbvN" role="2Oq$k0" />
                     <node concept="3TrEf2" id="6ddXmWdFc3y" role="2OqNvi">
-                      <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                      <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parentClass" />
                     </node>
                   </node>
                 </node>
@@ -169,7 +169,7 @@
                     <node concept="2OqwBi" id="27HW4imXc_g" role="37vLTJ">
                       <node concept="1r4Lsj" id="27HW4imXcgO" role="2Oq$k0" />
                       <node concept="3TrEf2" id="27HW4imXdaX" role="2OqNvi">
-                        <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                        <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parentClass" />
                       </node>
                     </node>
                   </node>
@@ -189,7 +189,7 @@
                 <node concept="2OqwBi" id="6hUtorDLW8B" role="2Oq$k0">
                   <node concept="1r4Lsj" id="6hUtorDLVJW" role="2Oq$k0" />
                   <node concept="3TrEf2" id="6hUtorDLWMA" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                    <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parentClass" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="6hUtorDLYej" role="2OqNvi">

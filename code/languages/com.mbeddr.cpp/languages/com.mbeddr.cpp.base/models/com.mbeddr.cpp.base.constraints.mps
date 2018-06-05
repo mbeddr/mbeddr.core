@@ -623,7 +623,7 @@
                                     <ref role="3cqZAo" node="7DDmkzaCVK" resolve="it" />
                                   </node>
                                   <node concept="3TrcHB" id="5i01kANoHaG" role="2OqNvi">
-                                    <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="is_destructor" />
+                                    <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="isDestructor" />
                                   </node>
                                 </node>
                               </node>

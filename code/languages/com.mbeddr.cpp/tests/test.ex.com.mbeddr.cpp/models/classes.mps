@@ -114,12 +114,12 @@
       </concept>
       <concept id="7240228573260630076" name="com.mbeddr.cpp.base.structure.ConstructorVoidType" flags="ng" index="2dFNQU" />
       <concept id="7844497894798008401" name="com.mbeddr.cpp.base.structure.ClassConstructorSignature" flags="ng" index="2gom4k">
-        <property id="6088872510303555204" name="is_destructor" index="3BMcJd" />
+        <property id="6088872510303555204" name="isDestructor" index="3BMcJd" />
         <child id="7155645240280389397" name="body" index="1IVm9U" />
         <child id="3883266571380204831" name="initializers" index="1YC0t0" />
       </concept>
       <concept id="7844497894798008359" name="com.mbeddr.cpp.base.structure.ClassConstructorDeclaration" flags="ng" index="2gom5y">
-        <reference id="7844497894798008388" name="parent_class" index="2gom41" />
+        <reference id="7844497894798008388" name="parentClass" index="2gom41" />
       </concept>
       <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualFlagConcept" flags="ng" index="hL25U">
         <property id="3188920472788366141" name="isVirtual" index="hL25V" />
@@ -138,6 +138,9 @@
       <concept id="4511589886097466673" name="com.mbeddr.cpp.base.structure.InheritanceInstance" flags="ng" index="FysoC">
         <property id="4511589886097466677" name="visibility" index="FysoG" />
         <reference id="4511589886097466674" name="parentClass" index="FysoF" />
+      </concept>
+      <concept id="6028541369719415919" name="com.mbeddr.cpp.base.structure.IConstExprFlagConcept" flags="ng" index="OtGC0">
+        <property id="6028541369719415920" name="isConstExpr" index="OtGCv" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
@@ -1192,6 +1195,8 @@
         <property role="3BMcJd" value="false" />
         <property role="TrG5h" value="ClassName" />
         <property role="1wg9_F" value="public" />
+        <property role="hL25V" value="false" />
+        <property role="OtGCv" value="false" />
         <ref role="2gom41" node="7wcjSRttVMY" resolve="ClassName" />
         <node concept="3XIRFW" id="7wcjSRtzLBm" role="1IVm9U" />
         <node concept="2dFNQU" id="7wcjSRtzLBn" role="2C2TGm">
@@ -1207,6 +1212,9 @@
         <property role="3BMcJd" value="true" />
         <property role="TrG5h" value="ClassName" />
         <property role="1wg9_F" value="public" />
+        <property role="hL25V" value="false" />
+        <property role="hTfT4" value="false" />
+        <property role="OtGCv" value="false" />
         <ref role="2gom41" node="7wcjSRttVMY" resolve="ClassName" />
         <node concept="3XIRFW" id="7wcjSRtzLD8" role="1IVm9U" />
         <node concept="2dFNQU" id="7wcjSRtzLD9" role="2C2TGm">
