@@ -35,6 +35,7 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="3738029991950788349" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Named" flags="ng" index="Q6S24" />
+      <concept id="615427434521884870" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Subconcepts" flags="ng" index="2VfDsV" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -42,6 +43,7 @@
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -149,6 +151,12 @@
         <node concept="3F0ifn" id="4o2nsMgBVJt" role="2czzBI">
           <property role="3F0ifm" value="" />
         </node>
+        <node concept="11L4FC" id="76fdl5jb2ar" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="76fdl5jb2bQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="4o2nsMgBOWH" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -180,6 +188,12 @@
         <node concept="2iRfu4" id="3v5DuFDsb1z" role="2czzBx" />
         <node concept="3F0ifn" id="3v5DuFDsb1$" role="2czzBI">
           <property role="3F0ifm" value="" />
+        </node>
+        <node concept="11L4FC" id="1Ft79nE5v$B" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="1Ft79nE5vA2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="3v5DuFDsb1_" role="3EZMnx">
@@ -269,6 +283,7 @@
         <ref role="2kkw0f" node="gWE$qahwTB" resolve="InternalMethodCall_SmartReference" />
       </node>
     </node>
+    <node concept="2VfDsV" id="1CWIc7F3gas" role="3ft7WO" />
   </node>
   <node concept="24kQdi" id="4smL_2COfy5">
     <ref role="1XX52x" to="3d25:2yiFVcKEErD" resolve="This" />

@@ -11,6 +11,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" implicit="true" />
+    <import index="3d25" ref="r:b51ed3f8-f18c-4b51-8a93-f4ee7f6adf9a(com.mbeddr.cpp.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -261,6 +262,31 @@
     </node>
     <node concept="PrWs8" id="327D75Ee9bS" role="PzmwI">
       <ref role="PrY4T" node="ZKpU3Bvynz" resolve="ITemplate" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="76fdl5j7ss8">
+    <property role="EcuMT" value="8182817671358564104" />
+    <property role="TrG5h" value="TemplateMethodDeclaration" />
+    <property role="34LRSv" value="template" />
+    <ref role="1TJDcQ" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
+    <node concept="PrWs8" id="76fdl5j7ss9" role="PzmwI">
+      <ref role="PrY4T" node="ZKpU3Bvynz" resolve="ITemplate" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="76fdl5j8d3I">
+    <property role="EcuMT" value="8182817671358763246" />
+    <property role="TrG5h" value="TemplateQualifiedMethodCall" />
+    <ref role="1TJDcQ" to="3d25:4o2nsMgBIqT" resolve="QualifiedMethodCall" />
+    <node concept="PrWs8" id="76fdl5j8d3J" role="PzmwI">
+      <ref role="PrY4T" node="ZKpU3C47B6" resolve="ITemplateImpl" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="76fdl5jefk0">
+    <property role="EcuMT" value="8182817671360345344" />
+    <property role="TrG5h" value="TemplateInternalMethodCall" />
+    <ref role="1TJDcQ" to="3d25:3v5DuFDsb0M" resolve="InternalMethodCall" />
+    <node concept="PrWs8" id="76fdl5jefk1" role="PzmwI">
+      <ref role="PrY4T" node="ZKpU3C47B6" resolve="ITemplateImpl" />
     </node>
   </node>
 </model>
