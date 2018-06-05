@@ -395,6 +395,25 @@
         </node>
         <node concept="PMmxH" id="2Ai0GtabcT_" role="3EZMnx">
           <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
+          <node concept="pkWqt" id="1yn8PkylkMW" role="pqm2j">
+            <node concept="3clFbS" id="1yn8PkylkMX" role="2VODD2">
+              <node concept="3clFbF" id="1yn8PkylkUk" role="3cqZAp">
+                <node concept="2OqwBi" id="1yn8PkylpQC" role="3clFbG">
+                  <node concept="2OqwBi" id="1yn8PkylohH" role="2Oq$k0">
+                    <node concept="pncrf" id="1yn8PkylnRz" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="1yn8Pkylp7r" role="2OqNvi">
+                      <node concept="1xMEDy" id="1yn8Pkylp7t" role="1xVPHs">
+                        <node concept="chp4Y" id="1yn8PkylpnP" role="ri$Ld">
+                          <ref role="cht4Q" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="1yn8PkylroT" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="4o2nsMgBCm5" role="3EZMnx">
           <property role="3F0ifm" value="class" />
