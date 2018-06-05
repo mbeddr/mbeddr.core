@@ -236,6 +236,7 @@
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -2632,6 +2633,46 @@
     <node concept="1YaCAy" id="3p40HKhxJwY" role="1YuTPh">
       <property role="TrG5h" value="ii" />
       <ref role="1YaFvo" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3p40HKhGUqA">
+    <property role="TrG5h" value="check_IAmConstructorInitializable" />
+    <property role="3GE5qa" value="method.constructor" />
+    <node concept="3clFbS" id="3p40HKhGUqB" role="18ibNy">
+      <node concept="3clFbJ" id="3p40HKhGUqK" role="3cqZAp">
+        <node concept="2OqwBi" id="3p40HKhGVeA" role="3clFbw">
+          <node concept="2OqwBi" id="3p40HKhGUzC" role="2Oq$k0">
+            <node concept="1YBJjd" id="3p40HKhGUqZ" role="2Oq$k0">
+              <ref role="1YBMHb" node="3p40HKhGUqD" resolve="iaci" />
+            </node>
+            <node concept="2Xjw5R" id="3p40HKhGUG2" role="2OqNvi">
+              <node concept="1xMEDy" id="3p40HKhGUG4" role="1xVPHs">
+                <node concept="chp4Y" id="3p40HKhGUI4" role="ri$Ld">
+                  <ref role="cht4Q" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+                </node>
+              </node>
+              <node concept="1xIGOp" id="3p40HKhGUOc" role="1xVPHs" />
+            </node>
+          </node>
+          <node concept="3TrcHB" id="3p40HKhGVY7" role="2OqNvi">
+            <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="is_destructor" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="3p40HKhGUqM" role="3clFbx">
+          <node concept="2MkqsV" id="3p40HKhGW2X" role="3cqZAp">
+            <node concept="Xl_RD" id="3p40HKhGW3c" role="2MkJ7o">
+              <property role="Xl_RC" value="Initializers are not allowed on destructors" />
+            </node>
+            <node concept="1YBJjd" id="3p40HKhGW3A" role="2OEOjV">
+              <ref role="1YBMHb" node="3p40HKhGUqD" resolve="iaci" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3p40HKhGUqD" role="1YuTPh">
+      <property role="TrG5h" value="iaci" />
+      <ref role="1YaFvo" to="wnzg:3n$8_Xbpg8r" resolve="IAmConstructorInitializable" />
     </node>
   </node>
 </model>
