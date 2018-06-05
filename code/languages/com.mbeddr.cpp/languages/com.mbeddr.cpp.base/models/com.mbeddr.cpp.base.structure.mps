@@ -1006,5 +1006,18 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1yn8PkxYuRh">
+    <property role="EcuMT" value="1771923826942799313" />
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="InnerClassType" />
+    <ref role="1TJDcQ" node="4o2nsMgBEtu" resolve="ClassType" />
+    <node concept="1TJgyj" id="1yn8PkxYuRi" role="1TKVEi">
+      <property role="IQ2ns" value="1771923826942799314" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="outerclassType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBEtu" resolve="ClassType" />
+    </node>
+  </node>
 </model>
 
