@@ -415,6 +415,9 @@
             </node>
           </node>
         </node>
+        <node concept="PMmxH" id="1yn8Pkyope0" role="3EZMnx">
+          <ref role="PMmxG" node="59MAV0yaZn2" resolve="AccessModifier" />
+        </node>
         <node concept="3F0ifn" id="4o2nsMgBCm5" role="3EZMnx">
           <property role="3F0ifm" value="class" />
           <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
@@ -2911,8 +2914,12 @@
       </node>
       <node concept="3F0ifn" id="1yn8PkxYwQb" role="3EZMnx">
         <property role="3F0ifm" value="::" />
-        <node concept="11L4FC" id="1yn8PkxYwQm" role="3F10Kt" />
-        <node concept="11LMrY" id="1yn8PkxYwQx" role="3F10Kt" />
+        <node concept="11L4FC" id="1yn8PkxYwQm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="1yn8PkxYwQx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="1iCGBv" id="1yn8PkxYwQW" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
