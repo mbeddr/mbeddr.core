@@ -1022,14 +1022,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="typeOrConstructor" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6WSa0so1IOL" resolve="INewDeclaration" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="6WSa0so1IOL">
-    <property role="EcuMT" value="8014199547838786865" />
-    <property role="TrG5h" value="INewDeclaration" />
-    <node concept="PrWs8" id="6WSa0so1IOM" role="PrDN$">
-      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
   </node>
 </model>
