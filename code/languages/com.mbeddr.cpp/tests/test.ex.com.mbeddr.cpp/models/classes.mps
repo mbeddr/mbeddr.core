@@ -134,7 +134,6 @@
         <reference id="137823117409445459" name="identity" index="yVOcQ" />
         <child id="137823117409121665" name="init" index="yU53$" />
       </concept>
-      <concept id="3910253520675037444" name="com.mbeddr.cpp.base.structure.ArrayAttributeInitExpression" flags="ng" index="BMAfo" />
       <concept id="4511589886097466673" name="com.mbeddr.cpp.base.structure.InheritanceInstance" flags="ng" index="FysoC">
         <property id="4511589886097466677" name="visibility" index="FysoG" />
         <reference id="4511589886097466674" name="parentClass" index="FysoF" />
@@ -202,6 +201,7 @@
       <concept id="842732463503928106" name="com.mbeddr.core.unittest.structure.NoTestIsolationStrategy" flags="ng" index="3GpDuv" />
     </language>
     <language id="b341759a-c721-4072-90cf-328bb2724684" name="com.mbeddr.cpp.expressions">
+      <concept id="3910253520676052396" name="com.mbeddr.cpp.expressions.structure.ArrayAttributeInitExpression" flags="ng" index="BQtXK" />
       <concept id="5044697665789421241" name="com.mbeddr.cpp.expressions.structure.QualifiedMethodCall" flags="ng" index="3mBbHP">
         <reference id="5044697665789421247" name="method" index="3mBbHN" />
         <child id="5044697665789463506" name="actuals" index="3mBtou" />
@@ -344,20 +344,20 @@
             <property role="2hmy$m" value="5" />
           </node>
         </node>
-        <node concept="BMAfo" id="3p40HKh_2s6" role="3XIe9v">
-          <node concept="3TlMh9" id="3p40HKh_2sB" role="3o3WLE">
+        <node concept="BQtXK" id="3p40HKhGvs3" role="3XIe9v">
+          <node concept="3TlMh9" id="3p40HKhGvsy" role="3o3WLE">
             <property role="2hmy$m" value="1" />
           </node>
-          <node concept="3TlMh9" id="3p40HKh_2tt" role="3o3WLE">
+          <node concept="3TlMh9" id="3p40HKhGvtm" role="3o3WLE">
             <property role="2hmy$m" value="2" />
           </node>
-          <node concept="3TlMh9" id="3p40HKh_2un" role="3o3WLE">
+          <node concept="3TlMh9" id="3p40HKhGvue" role="3o3WLE">
             <property role="2hmy$m" value="3" />
           </node>
-          <node concept="3TlMh9" id="3p40HKh_2vl" role="3o3WLE">
+          <node concept="3TlMh9" id="3p40HKhGvva" role="3o3WLE">
             <property role="2hmy$m" value="4" />
           </node>
-          <node concept="3TlMh9" id="3p40HKh_2wn" role="3o3WLE">
+          <node concept="3TlMh9" id="3p40HKhGvwa" role="3o3WLE">
             <property role="2hmy$m" value="5" />
           </node>
         </node>
@@ -403,7 +403,7 @@
               <node concept="3TlMh9" id="3p40HKhzs_L" role="3o3WLE">
                 <property role="2hmy$m" value="1" />
               </node>
-              <node concept="3TlMh9" id="3p40HKhzsBV" role="3o3WLE">
+              <node concept="3TlMh9" id="3p40HKhDekV" role="3o3WLE">
                 <property role="2hmy$m" value="2" />
               </node>
               <node concept="3TlMh9" id="3p40HKhzsEh" role="3o3WLE">

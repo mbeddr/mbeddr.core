@@ -14,7 +14,6 @@
     <import index="kntn" ref="r:4090021e-0c8f-4cca-ab3f-590afb43a745(com.mbeddr.cpp.base.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
-    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1416,50 +1415,6 @@
                     <ref role="cht4Q" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="3p40HKhzA45">
-    <property role="3GE5qa" value="class" />
-    <ref role="1M2myG" to="wnzg:3p40HKhzA44" resolve="ArrayAttributeInitExpression" />
-    <node concept="9S07l" id="3p40HKhzA46" role="9Vyp8">
-      <node concept="3clFbS" id="3p40HKhzA47" role="2VODD2">
-        <node concept="3cpWs8" id="3p40HKh$64e" role="3cqZAp">
-          <node concept="3cpWsn" id="3p40HKh$64h" role="3cpWs9">
-            <property role="TrG5h" value="attrDec" />
-            <node concept="3Tqbb2" id="3p40HKh$64c" role="1tU5fm">
-              <ref role="ehGHo" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
-            </node>
-            <node concept="2OqwBi" id="3p40HKh$7_d" role="33vP2m">
-              <node concept="nLn13" id="3p40HKh$S9T" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="3p40HKh$8zb" role="2OqNvi">
-                <node concept="1xMEDy" id="3p40HKh$8zd" role="1xVPHs">
-                  <node concept="chp4Y" id="3p40HKh$8Oc" role="ri$Ld">
-                    <ref role="cht4Q" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="3p40HKh$953" role="1xVPHs" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="3p40HKh$9lo" role="3cqZAp">
-          <node concept="2OqwBi" id="3p40HKh$fDQ" role="3cqZAk">
-            <node concept="2OqwBi" id="3p40HKh$azy" role="2Oq$k0">
-              <node concept="37vLTw" id="3p40HKh$9_K" role="2Oq$k0">
-                <ref role="3cqZAo" node="3p40HKh$64h" resolve="attrDec" />
-              </node>
-              <node concept="3TrEf2" id="3p40HKh$ctm" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
-              </node>
-            </node>
-            <node concept="1mIQ4w" id="3p40HKh$g81" role="2OqNvi">
-              <node concept="chp4Y" id="3p40HKh$gLm" role="cj9EA">
-                <ref role="cht4Q" to="yq40:4VhroexOKM1" resolve="ArrayType" />
               </node>
             </node>
           </node>
