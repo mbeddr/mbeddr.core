@@ -1811,7 +1811,7 @@
                           <ref role="3cqZAo" node="5i01kANlwib" resolve="it" />
                         </node>
                         <node concept="3TrcHB" id="5i01kANly3Q" role="2OqNvi">
-                          <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="is_destructor" />
+                          <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="isDestructor" />
                         </node>
                       </node>
                     </node>
@@ -1900,7 +1900,7 @@
                                     <ref role="3cqZAo" node="3n$8_Xbf3X0" resolve="it" />
                                   </node>
                                   <node concept="3TrcHB" id="5i01kANlvts" role="2OqNvi">
-                                    <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="is_destructor" />
+                                    <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="isDestructor" />
                                   </node>
                                 </node>
                               </node>
@@ -2392,7 +2392,7 @@
             <node concept="2OqwBi" id="5i01kANidHO" role="37vLTJ">
               <node concept="13iPFW" id="5i01kANidm3" role="2Oq$k0" />
               <node concept="3TrcHB" id="5i01kANiet$" role="2OqNvi">
-                <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="is_destructor" />
+                <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="isDestructor" />
               </node>
             </node>
           </node>
