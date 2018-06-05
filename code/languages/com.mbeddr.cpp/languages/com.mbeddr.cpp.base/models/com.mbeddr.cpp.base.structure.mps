@@ -990,5 +990,12 @@
       <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3p40HKhzA44">
+    <property role="EcuMT" value="3910253520675037444" />
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="ArrayAttributeInitExpression" />
+    <property role="34LRSv" value="{" />
+    <ref role="1TJDcQ" to="c4fa:7FkLcyyQKyx" resolve="InitExpression" />
+  </node>
 </model>
 
