@@ -9404,5 +9404,31 @@
       <node concept="3clFbS" id="6FZQsHtgKqM" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="1yn8Pky5xFJ">
+    <property role="3GE5qa" value="class" />
+    <ref role="13h7C2" to="wnzg:1yn8PkxYuRh" resolve="InnerClassType" />
+    <node concept="13i0hz" id="1yn8Pky5xFU" role="13h7CS">
+      <property role="TrG5h" value="getDeclaration" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="qd6m:59zzgFRcVlN" resolve="getDeclaration" />
+      <node concept="3clFbS" id="1yn8Pky5xFX" role="3clF47">
+        <node concept="3clFbF" id="1yn8Pky5xPO" role="3cqZAp">
+          <node concept="2OqwBi" id="1yn8Pky5ybA" role="3clFbG">
+            <node concept="13iPFW" id="1yn8Pky5xVF" role="2Oq$k0" />
+            <node concept="3TrEf2" id="1yn8Pky5yDo" role="2OqNvi">
+              <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1yn8Pky5xMB" role="3clF45">
+        <ref role="ehGHo" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+      </node>
+      <node concept="3Tm1VV" id="1yn8Pky5xMC" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="1yn8Pky5xFK" role="13h7CW">
+      <node concept="3clFbS" id="1yn8Pky5xFL" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
