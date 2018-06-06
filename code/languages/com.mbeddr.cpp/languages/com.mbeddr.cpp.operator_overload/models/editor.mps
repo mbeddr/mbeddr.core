@@ -49,9 +49,6 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
-    <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
-      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -95,9 +92,11 @@
       <node concept="PMmxH" id="3LE5RBPSwl0" role="3EZMnx">
         <ref role="PMmxG" to="gkp7:59MAV0yaZn2" resolve="AccessModifier" />
       </node>
-      <node concept="1kHk_G" id="3LE5RBQ6qh4" role="3EZMnx">
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-        <ref role="1NtTu8" to="wnzg:1Yr26itwsT0" resolve="isInlined" />
+      <node concept="PMmxH" id="1D2kn9asXWn" role="3EZMnx">
+        <ref role="PMmxG" to="gkp7:1D2kn9asHis" resolve="ExplicitFlag" />
+      </node>
+      <node concept="PMmxH" id="1D2kn9asXV_" role="3EZMnx">
+        <ref role="PMmxG" to="gkp7:1Yr26itwsTs" resolve="InlineFlag" />
       </node>
       <node concept="PMmxH" id="3LE5RBQoSTw" role="3EZMnx">
         <ref role="PMmxG" node="7bt9OVZg7dU" resolve="operatorOverloadSignature" />

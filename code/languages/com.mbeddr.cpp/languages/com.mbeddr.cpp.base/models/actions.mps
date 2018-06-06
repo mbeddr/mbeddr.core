@@ -2,7 +2,7 @@
 <model ref="r:58e41aa3-726f-4241-9dda-8560dd8a7245(com.mbeddr.cpp.base.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -129,7 +129,7 @@
                   <node concept="2OqwBi" id="6ddXmWdFbHt" role="37vLTJ">
                     <node concept="1r4Lsj" id="6ddXmWdFbvN" role="2Oq$k0" />
                     <node concept="3TrEf2" id="6ddXmWdFc3y" role="2OqNvi">
-                      <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                      <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parentClass" />
                     </node>
                   </node>
                 </node>
@@ -169,7 +169,7 @@
                     <node concept="2OqwBi" id="27HW4imXc_g" role="37vLTJ">
                       <node concept="1r4Lsj" id="27HW4imXcgO" role="2Oq$k0" />
                       <node concept="3TrEf2" id="27HW4imXdaX" role="2OqNvi">
-                        <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                        <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parentClass" />
                       </node>
                     </node>
                   </node>
@@ -189,7 +189,7 @@
                 <node concept="2OqwBi" id="6hUtorDLW8B" role="2Oq$k0">
                   <node concept="1r4Lsj" id="6hUtorDLVJW" role="2Oq$k0" />
                   <node concept="3TrEf2" id="6hUtorDLWMA" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parent_class" />
+                    <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parentClass" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="6hUtorDLYej" role="2OqNvi">
