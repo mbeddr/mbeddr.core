@@ -59,6 +59,12 @@
 	<property name="com.mbeddr.core.ex-tests-build-file.name" value="build-ex-tests.xml" />  
 	<property name="com.mbeddr.core.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />  
 
+	<!-- com.mbeddr.cpp -->  
+	<property name="com.mbeddr.cpp.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.cpp" /> 
+	<property name="com.mbeddr.cpp.ts-tests-build-file.name" value="build-cpp-ts-tests.xml" />  
+	<property name="com.mbeddr.cpp.ex-tests-build-file.name" value="build-cpp-ex-tests.xml" /> 
+	<property name="com.mbeddr.cpp.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cpp" />  
+		
 	<!-- com.mbeddr.doc -->  
 	<property name="com.mbeddr.doc.build-file.location" value="${mbeddr.scripts.base-path}/com.mbeddr.doc" />    
 	<property name="com.mbeddr.doc.working-dir" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc" />  
@@ -158,6 +164,12 @@
 		<ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${clean-plugins.task}" />
 		<ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${clean-generated-code.task}" />
 
+		<ant antfile="${com.mbeddr.cpp.ex-tests-build-file.name}" dir="${com.mbeddr.cpp.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.cpp.ex-tests-build-file.name}" dir="${com.mbeddr.cpp.build-file.location}" target="${clean-generated-code.task}" />
+
+		<ant antfile="${com.mbeddr.cpp.ts-tests-build-file.name}" dir="${com.mbeddr.cpp.build-file.location}" target="${clean-plugins.task}" />
+		<ant antfile="${com.mbeddr.cpp.ts-tests-build-file.name}" dir="${com.mbeddr.cpp.build-file.location}" target="${clean-generated-code.task}" />
+		
 		<ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-plugins.task}" />
 		<ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${clean-generated-code.task}" />	  
 
@@ -283,6 +295,7 @@
 		<antcall target="test-platform" /> 
 		<antcall target="test-debugger" />
 		<antcall target="test-core" /> 
+		<antcall target="test-cpp" /> 
 		<antcall target="test-performance" />
 		<antcall target="test-cc" />
 		<antcall target="test-ext" />
@@ -305,6 +318,7 @@
 	<target name="run-ex-tests">
 		<antcall target="test-core-ex-aLibrary-run" />
 		<antcall target="test-core-ex-run" />
+		<antcall target="test-cpp-ex-run" />
 		<antcall target="test-ext-ex-run" />
 		<antcall target="test-cc-ex-run" />
 	</target> 
@@ -395,6 +409,30 @@
 		<ant antfile="${com.mbeddr.core.ts-tests-build-file.name}" dir="${com.mbeddr.core.build-file.location}" target="${run-tests.task}" />
 	</target>
 
+	
+	<target name="test-cpp">
+		<antcall target="test-cpp-ts"/>
+		<antcall target="test-cpp-ex-generate"/>
+		<antcall target="test-cpp-ex-run" />
+	</target>
+	
+	<target name="test-cpp-ts">
+		<ant antfile="${com.mbeddr.cpp.ts-tests-build-file.name}" dir="${com.mbeddr.cpp.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.cpp.ts-tests-build-file.name}" dir="${com.mbeddr.cpp.build-file.location}" target="${build-plugin.task}" />	  
+		<ant antfile="${com.mbeddr.cpp.ts-tests-build-file.name}" dir="${com.mbeddr.cpp.build-file.location}" target="${run-tests.task}" />
+	</target>
+	
+	<target name="test-cpp-ex-generate">
+		<ant antfile="${com.mbeddr.cpp.ex-tests-build-file.name}" dir="${com.mbeddr.cpp.build-file.location}" target="${generate-code.task}" />
+		<ant antfile="${com.mbeddr.cpp.ex-tests-build-file.name}" dir="${com.mbeddr.cpp.build-file.location}" target="${build-plugin.task}" />
+	</target>
+	
+	<target name="test-cpp-ex-run">
+		<antcall target="make-tests">
+			<param name="make-tests.dir" value="${com.mbeddr.cpp.working-dir}"/>
+		</antcall>
+	</target>
+	
 	<target name="test-platform">	  
 		<ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${generate-code.task}" />
 		<ant antfile="${com.mbeddr.platform.test-build-file.name}" dir="${com.mbeddr.platform.build-file.location}" target="${build-plugin.task}" />	  
