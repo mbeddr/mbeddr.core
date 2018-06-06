@@ -189,12 +189,12 @@
         <property role="TrG5h" value="staticField" />
         <property role="226hDV" value="true" />
         <property role="1wg9_F" value="public" />
+        <node concept="3uHhno" id="7j9KGYMPDrF" role="3XIe9v">
+          <ref role="3uHhlH" node="1Yr26iukrNB" resolve="inlinedMethod" />
+        </node>
         <node concept="26Vqph" id="5eDFAXBt0Ga" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="3uHhno" id="7j9KGYMPDrF" role="3XIe9v">
-          <ref role="3uHhlH" node="1Yr26iukrNB" resolve="inlinedMethod" />
         </node>
       </node>
       <node concept="3u$6M4" id="5eDFAXBt0Ao" role="3mBdys" />
