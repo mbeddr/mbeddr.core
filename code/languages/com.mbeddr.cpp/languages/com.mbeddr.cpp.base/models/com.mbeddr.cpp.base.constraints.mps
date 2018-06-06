@@ -137,12 +137,6 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -1444,15 +1438,6 @@
       <ref role="1N5Vy1" to="wnzg:4KCRVMvtPxJ" resolve="identity" />
       <node concept="3dgokm" id="b637l2b9eL" role="1N6uqs">
         <node concept="3clFbS" id="b637l2b9eN" role="2VODD2">
-          <node concept="2xdQw9" id="b637l2b9hM" role="3cqZAp">
-            <property role="2xdLsb" value="info" />
-            <node concept="3cpWs3" id="b637l2bafV" role="9lYJi">
-              <node concept="2rP1CM" id="b637l2baje" role="3uHU7w" />
-              <node concept="Xl_RD" id="b637l2b9hO" role="3uHU7B">
-                <property role="Xl_RC" value="Context node " />
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="b637l2blq2" role="3cqZAp">
             <node concept="3cpWsn" id="b637l2blq5" role="3cpWs9">
               <property role="TrG5h" value="pClass" />
@@ -1474,17 +1459,6 @@
                 <node concept="2qgKlT" id="b637l2bnPS" role="2OqNvi">
                   <ref role="37wK5l" to="kntn:6hUtorEt37D" resolve="getClassType" />
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2xdQw9" id="b637l2bCoE" role="3cqZAp">
-            <property role="2xdLsb" value="info" />
-            <node concept="3cpWs3" id="b637l2bEvJ" role="9lYJi">
-              <node concept="37vLTw" id="b637l2bEV4" role="3uHU7w">
-                <ref role="3cqZAo" node="b637l2blq5" resolve="pClass" />
-              </node>
-              <node concept="Xl_RD" id="b637l2bCoG" role="3uHU7B">
-                <property role="Xl_RC" value="pClass " />
               </node>
             </node>
           </node>
