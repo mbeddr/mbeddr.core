@@ -946,16 +946,29 @@
     <property role="3GE5qa" value="class" />
     <node concept="3clFbS" id="6hUtorEaE9B" role="18ibNy">
       <node concept="3clFbJ" id="2xmTzC2LUoJ" role="3cqZAp">
-        <node concept="2OqwBi" id="2xmTzC2LWL2" role="3clFbw">
-          <node concept="2OqwBi" id="2xmTzC2LUQj" role="2Oq$k0">
-            <node concept="1YBJjd" id="2xmTzC2LUp1" role="2Oq$k0">
-              <ref role="1YBMHb" node="6hUtorEaE9D" resolve="lcvd" />
+        <node concept="1Wc70l" id="72UYQRW0mIs" role="3clFbw">
+          <node concept="2OqwBi" id="72UYQRW0pEy" role="3uHU7w">
+            <node concept="2OqwBi" id="72UYQRW0nue" role="2Oq$k0">
+              <node concept="1YBJjd" id="72UYQRW0mV9" role="2Oq$k0">
+                <ref role="1YBMHb" node="6hUtorEaE9D" resolve="lcvd" />
+              </node>
+              <node concept="3TrEf2" id="72UYQRW0otO" role="2OqNvi">
+                <ref role="3Tt5mk" to="c4fa:3CmSUB7Fw7R" resolve="init" />
+              </node>
             </node>
-            <node concept="3TrEf2" id="2xmTzC2LV$U" role="2OqNvi">
-              <ref role="3Tt5mk" to="wnzg:6hUtorE26va" resolve="constructor" />
-            </node>
+            <node concept="3w_OXm" id="72UYQRW0qb3" role="2OqNvi" />
           </node>
-          <node concept="3w_OXm" id="2xmTzC2LY6z" role="2OqNvi" />
+          <node concept="2OqwBi" id="2xmTzC2LWL2" role="3uHU7B">
+            <node concept="2OqwBi" id="2xmTzC2LUQj" role="2Oq$k0">
+              <node concept="1YBJjd" id="2xmTzC2LUp1" role="2Oq$k0">
+                <ref role="1YBMHb" node="6hUtorEaE9D" resolve="lcvd" />
+              </node>
+              <node concept="3TrEf2" id="2xmTzC2LV$U" role="2OqNvi">
+                <ref role="3Tt5mk" to="wnzg:6hUtorE26va" resolve="constructor" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2xmTzC2LY6z" role="2OqNvi" />
+          </node>
         </node>
         <node concept="3clFbS" id="2xmTzC2LUoL" role="3clFbx">
           <node concept="a7r0C" id="2xmTzC2LYc4" role="3cqZAp">
@@ -2611,6 +2624,86 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="72UYQRWvwJl">
+    <property role="TrG5h" value="check_DeleteDecleration" />
+    <property role="3GE5qa" value="class" />
+    <node concept="3clFbS" id="72UYQRWvwJm" role="18ibNy">
+      <node concept="3clFbJ" id="72UYQRWvzhx" role="3cqZAp">
+        <node concept="3clFbS" id="72UYQRWvzhz" role="3clFbx">
+          <node concept="2MkqsV" id="72UYQRWv_X7" role="3cqZAp">
+            <node concept="3cpWs3" id="72UYQRW$9h4" role="2MkJ7o">
+              <node concept="3cpWs3" id="72UYQRW$8ic" role="3uHU7B">
+                <node concept="3cpWs3" id="72UYQRW$51g" role="3uHU7B">
+                  <node concept="3cpWs3" id="72UYQRWzEjv" role="3uHU7B">
+                    <node concept="3cpWs3" id="72UYQRW$0R1" role="3uHU7B">
+                      <node concept="Xl_RD" id="72UYQRWzYDL" role="3uHU7B">
+                        <property role="Xl_RC" value="The type of " />
+                      </node>
+                      <node concept="2OqwBi" id="72UYQRWzEMw" role="3uHU7w">
+                        <node concept="3TrEf2" id="72UYQRWzFmV" role="2OqNvi">
+                          <ref role="3Tt5mk" to="wnzg:72UYQRW0DPK" resolve="varRef" />
+                        </node>
+                        <node concept="1YBJjd" id="72UYQRW$167" role="2Oq$k0">
+                          <ref role="1YBMHb" node="72UYQRWvwJo" resolve="dd" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="72UYQRW$3JQ" role="3uHU7w">
+                      <property role="Xl_RC" value=" ( " />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="72UYQRW$71B" role="3uHU7w">
+                    <node concept="2OqwBi" id="72UYQRW$5C4" role="2Oq$k0">
+                      <node concept="1YBJjd" id="72UYQRW$5gk" role="2Oq$k0">
+                        <ref role="1YBMHb" node="72UYQRWvwJo" resolve="dd" />
+                      </node>
+                      <node concept="3TrEf2" id="72UYQRW$6gZ" role="2OqNvi">
+                        <ref role="3Tt5mk" to="wnzg:72UYQRW0DPK" resolve="varRef" />
+                      </node>
+                    </node>
+                    <node concept="3JvlWi" id="72UYQRW$7$j" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="72UYQRW$8y6" role="3uHU7w">
+                  <property role="Xl_RC" value=")" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="72UYQRWv_Xp" role="3uHU7w">
+                <property role="Xl_RC" value=" is not a pointer; only variables of type pointer can be deleted." />
+              </node>
+            </node>
+            <node concept="1YBJjd" id="72UYQRWv_XN" role="2OEOjV">
+              <ref role="1YBMHb" node="72UYQRWvwJo" resolve="dd" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="72UYQRWwako" role="3clFbw">
+          <node concept="2OqwBi" id="72UYQRWwakq" role="3fr31v">
+            <node concept="2OqwBi" id="72UYQRWwakr" role="2Oq$k0">
+              <node concept="2OqwBi" id="72UYQRWwaks" role="2Oq$k0">
+                <node concept="1YBJjd" id="72UYQRWwakt" role="2Oq$k0">
+                  <ref role="1YBMHb" node="72UYQRWvwJo" resolve="dd" />
+                </node>
+                <node concept="3TrEf2" id="72UYQRWwaku" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:72UYQRW0DPK" resolve="varRef" />
+                </node>
+              </node>
+              <node concept="3JvlWi" id="72UYQRWwakv" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="72UYQRWwakw" role="2OqNvi">
+              <node concept="chp4Y" id="72UYQRWwakx" role="cj9EA">
+                <ref role="cht4Q" to="yq40:fwMInzpHoK" resolve="PointerType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="72UYQRWvwJo" role="1YuTPh">
+      <property role="TrG5h" value="dd" />
+      <ref role="1YaFvo" to="wnzg:3EDDOqDY7x5" resolve="DeleteDecleration" />
     </node>
   </node>
 </model>

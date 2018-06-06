@@ -318,19 +318,6 @@
       <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3EDDOqDY7xe">
-    <property role="EcuMT" value="4227093647205103694" />
-    <property role="TrG5h" value="DeleteArrayDecleration" />
-    <property role="34LRSv" value="delete []" />
-    <property role="3GE5qa" value="class" />
-    <property role="R4oN_" value="delete keyword" />
-    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-    <node concept="1TJgyi" id="3EDDOqDY7xf" role="1TKVEl">
-      <property role="IQ2nx" value="4227093647205103695" />
-      <property role="TrG5h" value="expression" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3EDDOqDY7x5">
     <property role="EcuMT" value="4227093647205103685" />
     <property role="TrG5h" value="DeleteDecleration" />
@@ -338,10 +325,17 @@
     <property role="3GE5qa" value="class" />
     <property role="R4oN_" value="delete keyword for arrays" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-    <node concept="1TJgyi" id="3EDDOqDY7xa" role="1TKVEl">
-      <property role="IQ2nx" value="4227093647205103690" />
-      <property role="TrG5h" value="expression" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyj" id="72UYQRW0DPK" role="1TKVEi">
+      <property role="IQ2ns" value="8123081327714147696" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="varRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:1OcdQnyStpU" resolve="LocalVarRef" />
+    </node>
+    <node concept="1TJgyi" id="72UYQRWwqOq" role="1TKVEl">
+      <property role="IQ2nx" value="8123081327722474778" />
+      <property role="TrG5h" value="brackets" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="PlHQZ" id="2L1k$oXxncW">
