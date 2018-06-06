@@ -233,6 +233,7 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -1088,6 +1089,137 @@
     <property role="TrG5h" value="check_ClassConstructor" />
     <property role="3GE5qa" value="method.constructor" />
     <node concept="3clFbS" id="6ddXmWdG7ba" role="18ibNy">
+      <node concept="3cpWs8" id="3Mwr0rV_Cll" role="3cqZAp">
+        <node concept="3cpWsn" id="3Mwr0rV_Clm" role="3cpWs9">
+          <property role="TrG5h" value="ancestorClass" />
+          <node concept="3Tqbb2" id="3Mwr0rV_Cln" role="1tU5fm">
+            <ref role="ehGHo" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
+          </node>
+          <node concept="2OqwBi" id="3Mwr0rV_DA0" role="33vP2m">
+            <node concept="1YBJjd" id="3Mwr0rV_Daf" role="2Oq$k0">
+              <ref role="1YBMHb" node="6ddXmWdG7bc" resolve="classConstructor" />
+            </node>
+            <node concept="2Xjw5R" id="3Mwr0rV_E_B" role="2OqNvi">
+              <node concept="1xMEDy" id="3Mwr0rV_E_D" role="1xVPHs">
+                <node concept="chp4Y" id="3Mwr0rVBxnu" role="ri$Ld">
+                  <ref role="cht4Q" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="3Mwr0rVBxrC" role="3cqZAp">
+        <node concept="3clFbS" id="3Mwr0rVBxrE" role="3clFbx">
+          <node concept="2MkqsV" id="3Mwr0rVBCoU" role="3cqZAp">
+            <node concept="3cpWs3" id="3Mwr0rVBDeA" role="2MkJ7o">
+              <node concept="2OqwBi" id="3Mwr0rVBD_R" role="3uHU7w">
+                <node concept="37vLTw" id="3Mwr0rVBDeW" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3Mwr0rV_Clm" resolve="ancestorClass" />
+                </node>
+                <node concept="3TrcHB" id="3Mwr0rVBEKn" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="3Mwr0rVBCpc" role="3uHU7B">
+                <property role="Xl_RC" value="Can't have a constructor for a class other than " />
+              </node>
+            </node>
+            <node concept="1YBJjd" id="3Mwr0rVBETv" role="2OEOjV">
+              <ref role="1YBMHb" node="6ddXmWdG7bc" resolve="classConstructor" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="3Mwr0rVIMEV" role="3clFbw">
+          <node concept="3fqX7Q" id="3Mwr0rVIQ5J" role="3uHU7w">
+            <node concept="2OqwBi" id="3Mwr0rVIQ5L" role="3fr31v">
+              <node concept="1YBJjd" id="3Mwr0rVIQ5M" role="2Oq$k0">
+                <ref role="1YBMHb" node="6ddXmWdG7bc" resolve="classConstructor" />
+              </node>
+              <node concept="3TrcHB" id="3Mwr0rVIQ5N" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="isDestructor" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="3Mwr0rVBAhp" role="3uHU7B">
+            <node concept="3y3z36" id="3Mwr0rVB$LQ" role="3uHU7B">
+              <node concept="2OqwBi" id="3Mwr0rVBxTg" role="3uHU7B">
+                <node concept="1YBJjd" id="3Mwr0rVBxtz" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6ddXmWdG7bc" resolve="classConstructor" />
+                </node>
+                <node concept="3TrEf2" id="3Mwr0rVBzDk" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parentClass" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3Mwr0rVB_1v" role="3uHU7w">
+                <ref role="3cqZAo" node="3Mwr0rV_Clm" resolve="ancestorClass" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3Mwr0rVBAXM" role="3uHU7w">
+              <node concept="37vLTw" id="3Mwr0rVBAxq" role="2Oq$k0">
+                <ref role="3cqZAo" node="3Mwr0rV_Clm" resolve="ancestorClass" />
+              </node>
+              <node concept="3x8VRR" id="3Mwr0rVBCe9" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="3Mwr0rVIGg5" role="3cqZAp" />
+      <node concept="3clFbJ" id="3Mwr0rVIGkx" role="3cqZAp">
+        <node concept="3clFbS" id="3Mwr0rVIGky" role="3clFbx">
+          <node concept="2MkqsV" id="3Mwr0rVIGkz" role="3cqZAp">
+            <node concept="3cpWs3" id="3Mwr0rVIGk$" role="2MkJ7o">
+              <node concept="2OqwBi" id="3Mwr0rVIGk_" role="3uHU7w">
+                <node concept="37vLTw" id="3Mwr0rVIGkA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3Mwr0rV_Clm" resolve="ancestorClass" />
+                </node>
+                <node concept="3TrcHB" id="3Mwr0rVIGkB" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="3Mwr0rVIGkC" role="3uHU7B">
+                <property role="Xl_RC" value="Can't have a destructor for a class other than " />
+              </node>
+            </node>
+            <node concept="1YBJjd" id="3Mwr0rVIGkD" role="2OEOjV">
+              <ref role="1YBMHb" node="6ddXmWdG7bc" resolve="classConstructor" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="3Mwr0rVIHMI" role="3clFbw">
+          <node concept="2OqwBi" id="3Mwr0rVIJMT" role="3uHU7w">
+            <node concept="1YBJjd" id="3Mwr0rVIJcu" role="2Oq$k0">
+              <ref role="1YBMHb" node="6ddXmWdG7bc" resolve="classConstructor" />
+            </node>
+            <node concept="3TrcHB" id="3Mwr0rVIKXc" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="isDestructor" />
+            </node>
+          </node>
+          <node concept="1Wc70l" id="3Mwr0rVIGkE" role="3uHU7B">
+            <node concept="3y3z36" id="3Mwr0rVIGkI" role="3uHU7B">
+              <node concept="2OqwBi" id="3Mwr0rVIGkJ" role="3uHU7B">
+                <node concept="1YBJjd" id="3Mwr0rVIGkK" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6ddXmWdG7bc" resolve="classConstructor" />
+                </node>
+                <node concept="3TrEf2" id="3Mwr0rVIGkL" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parentClass" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="3Mwr0rVIGkM" role="3uHU7w">
+                <ref role="3cqZAo" node="3Mwr0rV_Clm" resolve="ancestorClass" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3Mwr0rVIGkF" role="3uHU7w">
+              <node concept="37vLTw" id="3Mwr0rVIGkG" role="2Oq$k0">
+                <ref role="3cqZAo" node="3Mwr0rV_Clm" resolve="ancestorClass" />
+              </node>
+              <node concept="3x8VRR" id="3Mwr0rVIGkH" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="3Mwr0rVIGii" role="3cqZAp" />
+      <node concept="3clFbH" id="3Mwr0rV_CjG" role="3cqZAp" />
       <node concept="3clFbJ" id="5i01kANs1kc" role="3cqZAp">
         <node concept="3clFbS" id="5i01kANs1ke" role="3clFbx">
           <node concept="2MkqsV" id="5i01kANshiJ" role="3cqZAp">
