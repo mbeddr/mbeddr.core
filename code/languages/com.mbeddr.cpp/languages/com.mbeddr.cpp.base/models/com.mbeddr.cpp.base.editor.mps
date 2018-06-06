@@ -138,6 +138,7 @@
       <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -1182,8 +1183,8 @@
         </node>
       </node>
       <node concept="1iCGBv" id="6ddXmWdAFQT" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:6NtgknWJ214" resolve="parent_class" />
         <ref role="1ERwB7" node="7j9KGYKZMY5" resolve="PreventAutocompleteOnConstructorName" />
+        <ref role="1NtTu8" to="wnzg:6NtgknWJ214" resolve="parent_class" />
         <node concept="1sVBvm" id="6ddXmWdAFQV" role="1sWHZn">
           <node concept="3F0A7n" id="6ddXmWdAFR9" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -2911,25 +2912,6 @@
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
-  <node concept="1h_SRR" id="7j9KGYKZMY5">
-    <property role="3GE5qa" value="method.constructor" />
-    <property role="TrG5h" value="PreventAutocompleteOnConstructorName" />
-    <ref role="1h_SK9" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
-    <node concept="1hA7zw" id="7j9KGYKZMY6" role="1h_SK8">
-      <property role="1hAc7j" value="complete_action_id" />
-      <property role="1hHO97" value="Do nothing" />
-      <node concept="1hAIg9" id="7j9KGYKZMY7" role="1hA7z_">
-        <node concept="3clFbS" id="7j9KGYKZMY8" role="2VODD2" />
-      </node>
-    </node>
-    <node concept="1hA7zw" id="7j9KGYKZMYn" role="1h_SK8">
-      <property role="1hAc7j" value="complete_smart_action_id" />
-      <property role="1hHO97" value="Do nothing" />
-      <node concept="1hAIg9" id="7j9KGYKZMYo" role="1hA7z_">
-        <node concept="3clFbS" id="7j9KGYKZMYp" role="2VODD2" />
-      </node>
-    </node>
-  </node>
   <node concept="PKFIW" id="1D2kn9asHis">
     <property role="3GE5qa" value="flag" />
     <property role="TrG5h" value="ExplicitFlag" />
@@ -3252,6 +3234,74 @@
         </node>
       </node>
       <node concept="l2Vlx" id="6OyCGy9tq1Q" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="7j9KGYKZMY5">
+    <property role="3GE5qa" value="method.constructor" />
+    <property role="TrG5h" value="PreventAutocompleteOnConstructorName" />
+    <ref role="1h_SK9" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+    <node concept="1hA7zw" id="7j9KGYKZMY6" role="1h_SK8">
+      <property role="1hAc7j" value="complete_action_id" />
+      <property role="1hHO97" value="Do nothing" />
+      <node concept="1hAIg9" id="7j9KGYKZMY7" role="1hA7z_">
+        <node concept="3clFbS" id="7j9KGYKZMY8" role="2VODD2" />
+      </node>
+    </node>
+    <node concept="1hA7zw" id="7j9KGYKZMYn" role="1h_SK8">
+      <property role="1hAc7j" value="complete_smart_action_id" />
+      <property role="1hHO97" value="Do nothing" />
+      <node concept="1hAIg9" id="7j9KGYKZMYo" role="1hA7z_">
+        <node concept="3clFbS" id="7j9KGYKZMYp" role="2VODD2" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="b637l21BUB">
+    <ref role="1XX52x" to="wnzg:4KCRVMvtEXq" resolve="NewObjectInitializer" />
+    <node concept="3EZMnI" id="b637l21BZ5" role="2wV5jI">
+      <node concept="1iCGBv" id="b637l21BZ6" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:4KCRVMvtPxJ" resolve="identity" />
+        <node concept="1sVBvm" id="b637l21BZ7" role="1sWHZn">
+          <node concept="1iCGBv" id="b637l21BZ8" role="2wV5jI">
+            <ref role="1NtTu8" to="wnzg:6NtgknWJ214" resolve="parentClass" />
+            <node concept="1sVBvm" id="b637l21BZ9" role="1sWHZn">
+              <node concept="3F0A7n" id="b637l21BZa" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="b637l21BZb" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+      </node>
+      <node concept="3F2HdR" id="b637l21BZc" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="wnzg:4KCRVMvtPxG" resolve="actuals" />
+        <node concept="l2Vlx" id="b637l21BZd" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="b637l21BZe" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+      </node>
+      <node concept="l2Vlx" id="b637l21BZf" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6WSa0snOgwh">
+    <ref role="1XX52x" to="wnzg:6WSa0snOgvZ" resolve="NewDeclaration" />
+    <node concept="3EZMnI" id="6WSa0snOgwr" role="2wV5jI">
+      <node concept="3F0ifn" id="6WSa0snOgwt" role="3EZMnx">
+        <property role="3F0ifm" value="new" />
+      </node>
+      <node concept="1kHk_G" id="6WSa0snOgxa" role="3EZMnx">
+        <property role="1$x2rV" value="(std::nothrow)" />
+        <ref role="1NtTu8" to="wnzg:6WSa0snOgw0" resolve="no_throw" />
+      </node>
+      <node concept="3F1sOY" id="6WSa0sofgq0" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:6WSa0so1IOP" resolve="typeOrConstructor" />
+      </node>
+      <node concept="l2Vlx" id="6WSa0snOgwu" role="2iSdaV" />
     </node>
   </node>
 </model>
