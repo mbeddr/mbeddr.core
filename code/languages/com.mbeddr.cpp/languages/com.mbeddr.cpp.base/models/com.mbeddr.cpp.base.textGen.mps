@@ -773,7 +773,7 @@
   </node>
   <node concept="WtQ9Q" id="O6qFYdpBjt">
     <property role="3GE5qa" value="class" />
-    <ref role="WuzLi" to="wnzg:3EDDOqDY7xe" resolve="DeleteArrayDecleration" />
+    <ref role="WuzLi" to="wnzg:3EDDOqDY7xe" resolve="DeleteArrayDeclaration" />
     <node concept="11bSqf" id="O6qFYdpBju" role="11c4hB">
       <node concept="3clFbS" id="O6qFYdpBjv" role="2VODD2">
         <node concept="lc7rE" id="O6qFYdpBjM" role="3cqZAp">
@@ -806,7 +806,7 @@
   </node>
   <node concept="WtQ9Q" id="O6qFYdpAsQ">
     <property role="3GE5qa" value="class" />
-    <ref role="WuzLi" to="wnzg:3EDDOqDY7x5" resolve="DeleteDecleration" />
+    <ref role="WuzLi" to="wnzg:3EDDOqDY7x5" resolve="DeleteDeclaration" />
     <node concept="11bSqf" id="O6qFYdpAsR" role="11c4hB">
       <node concept="3clFbS" id="O6qFYdpAsS" role="2VODD2">
         <node concept="lc7rE" id="O6qFYdpAtb" role="3cqZAp">

@@ -961,7 +961,7 @@
   </node>
   <node concept="24kQdi" id="3EDDOqDY7yv">
     <property role="3GE5qa" value="class" />
-    <ref role="1XX52x" to="wnzg:3EDDOqDY7xe" resolve="DeleteArrayDecleration" />
+    <ref role="1XX52x" to="wnzg:3EDDOqDY7xe" resolve="DeleteArrayDeclaration" />
     <node concept="3EZMnI" id="3EDDOqDY7yx" role="2wV5jI">
       <node concept="3F0ifn" id="3EDDOqDY7yI" role="3EZMnx">
         <property role="3F0ifm" value="delete" />
@@ -984,7 +984,7 @@
   </node>
   <node concept="24kQdi" id="3EDDOqDY7xr">
     <property role="3GE5qa" value="class" />
-    <ref role="1XX52x" to="wnzg:3EDDOqDY7x5" resolve="DeleteDecleration" />
+    <ref role="1XX52x" to="wnzg:3EDDOqDY7x5" resolve="DeleteDeclaration" />
     <node concept="3EZMnI" id="3EDDOqDY7xt" role="2wV5jI">
       <node concept="3F0ifn" id="3EDDOqDY7xE" role="3EZMnx">
         <property role="3F0ifm" value="delete" />
