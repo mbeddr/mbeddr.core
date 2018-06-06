@@ -22,6 +22,7 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
+      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
@@ -83,6 +84,9 @@
       </concept>
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
+      </concept>
+      <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
+        <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
     </language>
@@ -433,6 +437,9 @@
       <property role="TrG5h" value="Exceptions" />
       <property role="iO3LB" value="true" />
       <ref role="3oK8_y" node="3v5DuFDkAwn" resolve="portable" />
+      <node concept="2v9HqM" id="6OyCGyaM_pO" role="2eOfOg">
+        <ref role="2v9HqP" node="6OyCGyaM_pD" resolve="Try_Catch" />
+      </node>
       <node concept="2v9HqM" id="4WhfN3ojRGp" role="2eOfOg">
         <ref role="2v9HqP" node="4WhfN3ocL2A" resolve="Exception" />
       </node>
@@ -448,6 +455,20 @@
     </node>
     <node concept="12mU2y" id="3v5DuFDtti8" role="2Q9xDr">
       <node concept="3GpDuv" id="3v5DuFDttiu" role="3GpDut" />
+    </node>
+  </node>
+  <node concept="1whW_1" id="6OyCGyaM_pD">
+    <property role="TrG5h" value="Try_Catch" />
+    <node concept="N3Fnx" id="6OyCGyaM_sB" role="N3F5h">
+      <property role="TrG5h" value="test" />
+      <property role="2OOxQR" value="false" />
+      <node concept="3XIRFW" id="6OyCGyaM_sD" role="3XIRFX">
+        <node concept="3XISUE" id="6OyCGyaM_sE" role="3XIRFZ" />
+      </node>
+      <node concept="19Rifw" id="6OyCGyaM_rD" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
     </node>
   </node>
 </model>
