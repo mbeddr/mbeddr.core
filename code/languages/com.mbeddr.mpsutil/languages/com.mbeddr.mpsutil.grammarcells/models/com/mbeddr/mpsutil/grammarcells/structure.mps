@@ -9,8 +9,8 @@
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="878o" ref="r:46fddec3-0db9-4b86-8274-957463dd4499(com.mbeddr.mpsutil.grammarcells.runtimelang.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpdg" ref="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="tpdg" ref="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -110,17 +110,6 @@
       <ref role="PrY4T" to="tpck:8AYOKVCAP5" resolve="IStubForAnotherConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6oKG1kMxHGY">
-    <property role="TrG5h" value="SubstituteActionsGenerator" />
-    <property role="34LRSv" value="generated" />
-    <property role="3GE5qa" value="actionsAspect" />
-    <property role="EcuMT" value="7363578995839261502" />
-    <ref role="1TJDcQ" to="tpdg:gbFOIBE" resolve="NodeSubstituteActionsBuilder" />
-    <node concept="PrWs8" id="6B579NFvMSg" role="PzmwI">
-      <ref role="PrY4T" node="6B579NFvMS6" resolve="IActionGenerationProxy" />
-    </node>
-    <node concept="asaX9" id="1YKLYyyXiFo" role="lGtFl" />
-  </node>
   <node concept="1TIwiD" id="6oKG1kMyo9t">
     <property role="3GE5qa" value="cells" />
     <property role="TrG5h" value="WrapperCell" />
@@ -202,24 +191,6 @@
     <node concept="PrWs8" id="6B579NFwlpj" role="PrDN$">
       <ref role="PrY4T" node="6B579NFwlpi" resolve="ICheckActionsModel" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="RbLMy691TW">
-    <property role="TrG5h" value="SideTransformGenerator" />
-    <property role="34LRSv" value="generated" />
-    <property role="3GE5qa" value="actionsAspect" />
-    <property role="EcuMT" value="994107119628459644" />
-    <ref role="1TJDcQ" to="tpdg:gzUNGri" resolve="SideTransformHintSubstituteActionsBuilder" />
-    <node concept="1TJgyj" id="6B579NFbsQh" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="removals" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="7621529404680555921" />
-      <ref role="20lvS9" node="6B579NFbsu2" resolve="GeneratedSideTransformRemovals" />
-    </node>
-    <node concept="PrWs8" id="6B579NFvMSa" role="PzmwI">
-      <ref role="PrY4T" node="6B579NFvMS6" resolve="IActionGenerationProxy" />
-    </node>
-    <node concept="asaX9" id="1YKLYyyXiFk" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="4qdNcHzYfBo">
     <property role="3GE5qa" value="cells" />
@@ -826,25 +797,6 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="9045197572108401800" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6B579NFbsu2">
-    <property role="3GE5qa" value="actionsAspect" />
-    <property role="TrG5h" value="GeneratedSideTransformRemovals" />
-    <property role="34LRSv" value="removals" />
-    <property role="EcuMT" value="7621529404680554370" />
-    <ref role="1TJDcQ" to="tpdg:hrdQSR_" resolve="RemoveSTByConditionPart" />
-    <node concept="PrWs8" id="6B579NFvMSm" role="PzmwI">
-      <ref role="PrY4T" node="6B579NFvMS6" resolve="IActionGenerationProxy" />
-    </node>
-    <node concept="asaX9" id="1YKLYyyXiFg" role="lGtFl" />
-  </node>
-  <node concept="PlHQZ" id="6B579NFvMS6">
-    <property role="3GE5qa" value="actionsAspect" />
-    <property role="TrG5h" value="IActionGenerationProxy" />
-    <property role="EcuMT" value="7621529404685889030" />
-    <node concept="PrWs8" id="6B579NFwzYe" role="PrDN$">
-      <ref role="PrY4T" node="6B579NFwlpi" resolve="ICheckActionsModel" />
     </node>
   </node>
   <node concept="PlHQZ" id="6B579NFwlpi">
