@@ -233,7 +233,6 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
-      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -1089,75 +1088,6 @@
     <property role="TrG5h" value="check_ClassConstructor" />
     <property role="3GE5qa" value="method.constructor" />
     <node concept="3clFbS" id="6ddXmWdG7ba" role="18ibNy">
-      <node concept="3cpWs8" id="6ddXmWdG9lV" role="3cqZAp">
-        <node concept="3cpWsn" id="6ddXmWdG9lY" role="3cpWs9">
-          <property role="TrG5h" value="ancestorClass" />
-          <node concept="3Tqbb2" id="6ddXmWdG9lT" role="1tU5fm">
-            <ref role="ehGHo" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
-          </node>
-          <node concept="2OqwBi" id="6ddXmWdG9Bv" role="33vP2m">
-            <node concept="1YBJjd" id="6ddXmWdG9mR" role="2Oq$k0">
-              <ref role="1YBMHb" node="6ddXmWdG7bc" resolve="classConstructor" />
-            </node>
-            <node concept="2Xjw5R" id="6ddXmWdGa16" role="2OqNvi">
-              <node concept="1xMEDy" id="6ddXmWdGa18" role="1xVPHs">
-                <node concept="chp4Y" id="6ddXmWdGa3s" role="ri$Ld">
-                  <ref role="cht4Q" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbJ" id="6ddXmWdG7bg" role="3cqZAp">
-        <node concept="1Wc70l" id="27HW4imZBwt" role="3clFbw">
-          <node concept="2OqwBi" id="27HW4imZC0c" role="3uHU7w">
-            <node concept="37vLTw" id="27HW4imZBHM" role="2Oq$k0">
-              <ref role="3cqZAo" node="6ddXmWdG9lY" resolve="ancestorClass" />
-            </node>
-            <node concept="3x8VRR" id="27HW4imZCtK" role="2OqNvi" />
-          </node>
-          <node concept="3y3z36" id="6ddXmWdG8q5" role="3uHU7B">
-            <node concept="2OqwBi" id="6ddXmWdG7s3" role="3uHU7B">
-              <node concept="1YBJjd" id="6ddXmWdG7bv" role="2Oq$k0">
-                <ref role="1YBMHb" node="6ddXmWdG7bc" resolve="classConstructor" />
-              </node>
-              <node concept="3TrEf2" id="6ddXmWdG7M6" role="2OqNvi">
-                <ref role="3Tt5mk" to="wnzg:6NtgknWJ214" resolve="parentClass" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="6ddXmWdGakc" role="3uHU7w">
-              <ref role="3cqZAo" node="6ddXmWdG9lY" resolve="ancestorClass" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="6ddXmWdG7bi" role="3clFbx">
-          <node concept="2MkqsV" id="6ddXmWdG9k7" role="3cqZAp">
-            <node concept="3cpWs3" id="5i01kANsiC8" role="2MkJ7o">
-              <node concept="Xl_RD" id="5i01kANsiY9" role="3uHU7w">
-                <property role="Xl_RC" value="." />
-              </node>
-              <node concept="3cpWs3" id="6ddXmWdGbcs" role="3uHU7B">
-                <node concept="Xl_RD" id="6ddXmWdG9km" role="3uHU7B">
-                  <property role="Xl_RC" value="Can't have a constructor for a class other than " />
-                </node>
-                <node concept="2OqwBi" id="6ddXmWdGbzb" role="3uHU7w">
-                  <node concept="37vLTw" id="6ddXmWdGbcM" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6ddXmWdG9lY" resolve="ancestorClass" />
-                  </node>
-                  <node concept="3TrcHB" id="6ddXmWdGbWc" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1YBJjd" id="6ddXmWdGeT9" role="2OEOjV">
-              <ref role="1YBMHb" node="6ddXmWdG7bc" resolve="classConstructor" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="5i01kANs12L" role="3cqZAp" />
       <node concept="3clFbJ" id="5i01kANs1kc" role="3cqZAp">
         <node concept="3clFbS" id="5i01kANs1ke" role="3clFbx">
           <node concept="2MkqsV" id="5i01kANshiJ" role="3cqZAp">
