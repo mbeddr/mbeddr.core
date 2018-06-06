@@ -73,9 +73,6 @@
       <concept id="6028541369715364763" name="com.mbeddr.cpp.base.structure.IVolatileFlagConcept" flags="ng" index="O23RO">
         <property id="6028541369715364764" name="isVolatile" index="O23RN" />
       </concept>
-      <concept id="6028541369715411335" name="com.mbeddr.cpp.base.structure.IConstFlagConcept" flags="ng" index="O2YvC">
-        <property id="6028541369715411336" name="isConstant" index="O2YvB" />
-      </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
@@ -180,29 +177,28 @@
     <node concept="3mBW2U" id="1Yr26iukrN$" role="N3F5h">
       <property role="2OOxQR" value="false" />
       <property role="TrG5h" value="SomeClass" />
-      <node concept="3mBbG7" id="5eDFAXBt0Dc" role="3mBdys">
-        <property role="TrG5h" value="staticField" />
-        <property role="226hDV" value="true" />
-        <property role="O2YvB" value="false" />
+      <node concept="3u$6M4" id="72UYQRXZOKS" role="3mBdys" />
+      <node concept="3mBbG7" id="72UYQRXZOVH" role="3mBdys">
         <property role="1wg9_F" value="public" />
-        <node concept="26Vqph" id="5eDFAXBt0Ga" role="2C2TGm">
+        <property role="226hDV" value="true" />
+        <property role="TrG5h" value="staticField" />
+        <node concept="26Vqph" id="72UYQRXZOZ_" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="3TlMh9" id="5eDFAXBt0GE" role="3XIe9v">
+        <node concept="3TlMh9" id="72UYQRXZP0d" role="3XIe9v">
           <property role="2hmy$m" value="0" />
         </node>
       </node>
       <node concept="3u$6M4" id="5eDFAXBt0Ao" role="3mBdys" />
-      <node concept="3mBbG7" id="5eDFAXBNIRy" role="3mBdys">
+      <node concept="3mBbG7" id="72UYQRXZO_2" role="3mBdys">
         <property role="TrG5h" value="constField" />
-        <property role="O2YvB" value="true" />
         <property role="1wg9_F" value="public" />
-        <node concept="26Vqph" id="5eDFAXBNIUC" role="2C2TGm">
+        <node concept="26Vqph" id="72UYQRXZOCN" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="3TlMh9" id="5eDFAXBNIV$" role="3XIe9v">
+        <node concept="3TlMh9" id="72UYQRXZODk" role="3XIe9v">
           <property role="2hmy$m" value="0" />
         </node>
       </node>
@@ -218,16 +214,14 @@
           <property role="2hmy$m" value="0" />
         </node>
       </node>
-      <node concept="3u$6M4" id="5eDFAXBNJ4o" role="3mBdys" />
-      <node concept="3mBbG7" id="5eDFAXBNJ8A" role="3mBdys">
+      <node concept="3u$6M4" id="72UYQRXZOcq" role="3mBdys" />
+      <node concept="3mBbG7" id="72UYQRXZOjA" role="3mBdys">
         <property role="TrG5h" value="constVolatileField" />
-        <property role="O2YvB" value="true" />
-        <property role="O23RN" value="true" />
-        <node concept="26Vqph" id="5eDFAXBNJc1" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
+        <node concept="26Vqph" id="72UYQRXZOnn" role="2C2TGm">
+          <property role="2caQfQ" value="true" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="3TlMh9" id="5eDFAXBNJcA" role="3XIe9v">
+        <node concept="3TlMh9" id="72UYQRXZOoq" role="3XIe9v">
           <property role="2hmy$m" value="0" />
         </node>
       </node>

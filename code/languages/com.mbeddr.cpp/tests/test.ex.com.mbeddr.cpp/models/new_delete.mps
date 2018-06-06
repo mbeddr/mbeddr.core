@@ -122,6 +122,7 @@
       </concept>
       <concept id="4018800670853679470" name="com.mbeddr.cpp.base.structure.EmptyClassContent" flags="ng" index="3u$6M4" />
       <concept id="8014199547835254783" name="com.mbeddr.cpp.base.structure.NewDeclaration" flags="ng" index="1SUiZS">
+        <property id="8014199547835254784" name="no_throw" index="1SUi07" />
         <child id="8014199547838786869" name="typeOrConstructor" index="1RfGkM" />
       </concept>
     </language>
@@ -344,6 +345,7 @@
             </node>
           </node>
           <node concept="1SUiZS" id="6WSa0sojVR5" role="3XIe9u">
+            <property role="1SUi07" value="true" />
             <node concept="3J0A42" id="72UYQRWzAWG" role="1RfGkM">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />

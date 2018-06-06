@@ -323,7 +323,7 @@
     <property role="TrG5h" value="DeleteDecleration" />
     <property role="34LRSv" value="delete" />
     <property role="3GE5qa" value="class" />
-    <property role="R4oN_" value="delete keyword for arrays" />
+    <property role="R4oN_" value="Delete an object made by the 'new' keyword (must be a pointer)." />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="72UYQRW0DPK" role="1TKVEi">
       <property role="IQ2ns" value="8123081327714147696" />
@@ -1004,7 +1004,7 @@
     <property role="EcuMT" value="8014199547835254783" />
     <property role="TrG5h" value="NewDeclaration" />
     <property role="34LRSv" value="new" />
-    <property role="R4oN_" value="Allocate memory for a new object" />
+    <property role="R4oN_" value="Allocate memory for a new object." />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyi" id="6WSa0snOgw0" role="1TKVEl">
       <property role="IQ2nx" value="8014199547835254784" />
