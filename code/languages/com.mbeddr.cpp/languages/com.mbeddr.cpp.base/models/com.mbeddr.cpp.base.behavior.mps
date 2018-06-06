@@ -234,9 +234,6 @@
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
     </language>
-    <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
         <child id="1204834868751" name="expression" index="25KhWn" />
@@ -3183,11 +3180,8 @@
       <node concept="3clFbS" id="b637l2bQkB" role="3clF47">
         <node concept="Jncv_" id="b637l2bQSm" role="3cqZAp">
           <ref role="JncvD" to="yq40:fwMInzpHoK" resolve="PointerType" />
-          <node concept="2OqwBi" id="b637l2bRP2" role="JncvB">
-            <node concept="37vLTw" id="b637l2bQSS" role="2Oq$k0">
-              <ref role="3cqZAo" node="b637l2bQOy" resolve="toUnwrap" />
-            </node>
-            <node concept="3JvlWi" id="b637l2bS96" role="2OqNvi" />
+          <node concept="37vLTw" id="b637l2bQSS" role="JncvB">
+            <ref role="3cqZAo" node="b637l2bQOy" resolve="toUnwrap" />
           </node>
           <node concept="3clFbS" id="b637l2bQSo" role="Jncv$">
             <node concept="3cpWs6" id="b637l2bSdt" role="3cqZAp">
