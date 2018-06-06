@@ -1872,12 +1872,6 @@
                   </node>
                 </node>
                 <node concept="3clFbS" id="7j9KGYMNVb8" role="3clFbx">
-                  <node concept="2xdQw9" id="7j9KGYMOyMo" role="3cqZAp">
-                    <property role="2xdLsb" value="info" />
-                    <node concept="Xl_RD" id="7j9KGYMOyMq" role="9lYJi">
-                      <property role="Xl_RC" value="c" />
-                    </node>
-                  </node>
                   <node concept="2MkqsV" id="7j9KGYMO2sP" role="3cqZAp">
                     <node concept="3cpWs3" id="7j9KGYMOb2k" role="2MkJ7o">
                       <node concept="Xl_RD" id="7j9KGYMObyb" role="3uHU7w">
