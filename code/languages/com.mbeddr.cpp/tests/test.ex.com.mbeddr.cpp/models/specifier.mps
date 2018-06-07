@@ -73,8 +73,8 @@
       <concept id="6028541369715364763" name="com.mbeddr.cpp.base.structure.IVolatileFlagConcept" flags="ng" index="O23RO">
         <property id="6028541369715364764" name="isVolatile" index="O23RN" />
       </concept>
-      <concept id="6028541369715411335" name="com.mbeddr.cpp.base.structure.IConstFlagConcept" flags="ng" index="O2YvC">
-        <property id="6028541369715411336" name="isConstant" index="O2YvB" />
+      <concept id="6028541369719415919" name="com.mbeddr.cpp.base.structure.IConstExprFlagConcept" flags="ng" index="OtGC0">
+        <property id="6028541369719415920" name="isConstExpr" index="OtGCv" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
@@ -183,7 +183,6 @@
       <node concept="3mBbG7" id="5eDFAXBt0Dc" role="3mBdys">
         <property role="TrG5h" value="staticField" />
         <property role="226hDV" value="true" />
-        <property role="O2YvB" value="false" />
         <property role="1wg9_F" value="public" />
         <node concept="26Vqph" id="5eDFAXBt0Ga" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -196,8 +195,8 @@
       <node concept="3u$6M4" id="5eDFAXBt0Ao" role="3mBdys" />
       <node concept="3mBbG7" id="5eDFAXBNIRy" role="3mBdys">
         <property role="TrG5h" value="constField" />
-        <property role="O2YvB" value="true" />
         <property role="1wg9_F" value="public" />
+        <property role="OtGCv" value="true" />
         <node concept="26Vqph" id="5eDFAXBNIUC" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
@@ -221,7 +220,6 @@
       <node concept="3u$6M4" id="5eDFAXBNJ4o" role="3mBdys" />
       <node concept="3mBbG7" id="5eDFAXBNJ8A" role="3mBdys">
         <property role="TrG5h" value="constVolatileField" />
-        <property role="O2YvB" value="true" />
         <property role="O23RN" value="true" />
         <node concept="26Vqph" id="5eDFAXBNJc1" role="2C2TGm">
           <property role="2caQfQ" value="false" />

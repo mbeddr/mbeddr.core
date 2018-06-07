@@ -67,7 +67,7 @@
       <property role="IQ2ns" value="5697404482618949366" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="catches" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="4WhfN3oe7VM" resolve="CatchBlock" />
     </node>
   </node>

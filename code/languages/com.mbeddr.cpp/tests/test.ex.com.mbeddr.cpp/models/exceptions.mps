@@ -85,9 +85,6 @@
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
       </concept>
-      <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
-        <child id="4185783222026475860" name="body" index="3XIRFX" />
-      </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
@@ -124,6 +121,7 @@
       <concept id="5697404482618569873" name="com.mbeddr.cpp.exceptions.structure.ThrowStatement" flags="ng" index="2n8SIx">
         <child id="5697404482618569974" name="value" index="2n8SJ6" />
       </concept>
+      <concept id="5697404482618949467" name="com.mbeddr.cpp.exceptions.structure.ICatchable" flags="ng" index="2nak1F" />
       <concept id="5697404482618949468" name="com.mbeddr.cpp.exceptions.structure.DefaultCatch" flags="ng" index="2nak1G" />
       <concept id="5697404482618949361" name="com.mbeddr.cpp.exceptions.structure.TryCatchStatement" flags="ng" index="2nak71">
         <child id="5697404482618949363" name="body" index="2nak73" />
@@ -459,15 +457,35 @@
   </node>
   <node concept="1whW_1" id="6OyCGyaM_pD">
     <property role="TrG5h" value="Try_Catch" />
-    <node concept="N3Fnx" id="6OyCGyaM_sB" role="N3F5h">
+    <node concept="c0Qz5" id="5w6Oa20kk0Q" role="N3F5h">
+      <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="test" />
-      <property role="2OOxQR" value="false" />
-      <node concept="3XIRFW" id="6OyCGyaM_sD" role="3XIRFX">
-        <node concept="3XISUE" id="6OyCGyaM_sE" role="3XIRFZ" />
-      </node>
-      <node concept="19Rifw" id="6OyCGyaM_rD" role="2C2TGm">
+      <node concept="19Rifw" id="5w6Oa20kk0R" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="yiv0b$MhDX" role="c0Qz3">
+        <node concept="3XISUE" id="yiv0bA01Wr" role="3XIRFZ" />
+        <node concept="3XISUE" id="yiv0bA01WC" role="3XIRFZ" />
+        <node concept="2nak71" id="yiv0bC_d_I" role="3XIRFZ">
+          <node concept="3XIRFW" id="yiv0bC_d_J" role="2nak73" />
+          <node concept="2nak72" id="yiv0bC_d_K" role="2nak76">
+            <node concept="2nak1F" id="yiv0bC_d_L" role="2nak1m" />
+            <node concept="3XIRFW" id="yiv0bC_d_M" role="2nak1p" />
+          </node>
+        </node>
+        <node concept="3XISUE" id="yiv0bC_6KI" role="3XIRFZ" />
+        <node concept="3XISUE" id="yiv0bC_6KP" role="3XIRFZ" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="5w6Oa22m0Hu" role="N3F5h">
+      <property role="TrG5h" value="empty_1528284220800_6" />
+    </node>
+    <node concept="lIfQi" id="5w6Oa20kk0D" role="N3F5h">
+      <property role="3HjyOP" value="true" />
+      <property role="TrG5h" value="main" />
+      <node concept="3cM6IN" id="5w6Oa20kk1f" role="lIfQt">
+        <ref role="3cM6IK" node="5w6Oa20kk0Q" resolve="test" />
       </node>
     </node>
   </node>
