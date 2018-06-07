@@ -108,6 +108,7 @@
       <concept id="5487882147173150554" name="com.mbeddr.cpp.base.structure.NewObjectInitializer" flags="ng" index="3jnB3A">
         <reference id="5487882147173193839" name="identity" index="3jnSvj" />
         <child id="5487882147173193836" name="actuals" index="3jnSvg" />
+        <child id="9083970262000480030" name="classType" index="1QO97d" />
       </concept>
       <concept id="5044697665789421259" name="com.mbeddr.cpp.base.structure.AttributeDeclaration" flags="ng" index="3mBbG7" />
       <concept id="5044697665789421253" name="com.mbeddr.cpp.base.structure.IClassMemberDeclaration" flags="ng" index="3mBbG9">
@@ -600,6 +601,11 @@
               <ref role="3jnSvj" node="b637l2bBF9" resolve="newDeleteClass1" />
               <node concept="3TlMh9" id="72UYQRW_6$H" role="3jnSvg">
                 <property role="2hmy$m" value="50" />
+              </node>
+              <node concept="3mBfEi" id="4V1wcObgnlL" role="1QO97d">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="3mBfEM" node="6WSa0so1DYi" resolve="NewDeleteClass1" />
               </node>
             </node>
           </node>
