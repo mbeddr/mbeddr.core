@@ -2249,7 +2249,44 @@
   <node concept="WtQ9Q" id="72UYQRWDfh5">
     <ref role="WuzLi" to="wnzg:4KCRVMvtEXq" resolve="NewObjectInitializer" />
     <node concept="11bSqf" id="72UYQRWDfh6" role="11c4hB">
-      <node concept="3clFbS" id="72UYQRWDfh7" role="2VODD2" />
+      <node concept="3clFbS" id="72UYQRWDfh7" role="2VODD2">
+        <node concept="lc7rE" id="7SgJHc9HE7G" role="3cqZAp">
+          <node concept="l9hG8" id="7SgJHc9HE86" role="lcghm">
+            <node concept="2OqwBi" id="7SgJHc9HFVv" role="lb14g">
+              <node concept="2OqwBi" id="7SgJHc9HF13" role="2Oq$k0">
+                <node concept="2OqwBi" id="7SgJHc9HEl_" role="2Oq$k0">
+                  <node concept="117lpO" id="7SgJHc9HE90" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7SgJHc9HE_G" role="2OqNvi">
+                    <ref role="3Tt5mk" to="wnzg:7SgJHc8K2Wu" resolve="classType" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="7SgJHc9HFlW" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="7SgJHc9HG$v" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="7SgJHc9HGUg" role="lcghm">
+            <property role="lacIc" value="(" />
+          </node>
+          <node concept="l9S2W" id="7SgJHc9HHgj" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value="," />
+            <node concept="2OqwBi" id="7SgJHc9HH$b" role="lbANJ">
+              <node concept="117lpO" id="7SgJHc9HHrq" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="7SgJHc9HHNy" role="2OqNvi">
+                <ref role="3TtcxE" to="wnzg:4KCRVMvtPxG" resolve="actuals" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="7SgJHc9HQWJ" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
