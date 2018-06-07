@@ -1033,6 +1033,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="7SgJHc8K2Wu" role="1TKVEi">
+      <property role="IQ2ns" value="9083970262000480030" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="classType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBEtu" resolve="ClassType" />
+    </node>
     <node concept="PrWs8" id="4KCRVMvtPvK" role="PzmwI">
       <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
     </node>
