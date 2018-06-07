@@ -9,6 +9,10 @@
     <import index="1s42" ref="r:d482a2e6-b3ef-4c45-883b-cf624a56b653(com.mbeddr.core.pointers.behavior)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
+    <import index="p3tm" ref="r:7b158038-abbe-4e11-b171-d5a959b4e91a(com.mbeddr.core.modules.typesystem)" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="g7jk" ref="r:e06e24a5-d0fa-4f76-9dee-2042532d92a1(com.mbeddr.cpp.base.typesystem)" />
     <import index="3d25" ref="r:b51ed3f8-f18c-4b51-8a93-f4ee7f6adf9a(com.mbeddr.cpp.expressions.structure)" implicit="true" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" implicit="true" />
     <import index="kntn" ref="r:4090021e-0c8f-4cca-ab3f-590afb43a745(com.mbeddr.cpp.base.behavior)" implicit="true" />
@@ -619,6 +623,19 @@
             <node concept="3TrEf2" id="327D75EIz_g" role="2OqNvi">
               <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="4V1wcOaI6sK" role="3cqZAp" />
+      <node concept="3clFbF" id="4V1wcOaJ2hU" role="3cqZAp">
+        <node concept="2YIFZM" id="4V1wcOaJ3pc" role="3clFbG">
+          <ref role="37wK5l" to="g7jk:4V1wcOaIyub" resolve="checkICallLike" />
+          <ref role="1Pybhc" to="g7jk:4V1wcOaIyss" resolve="ICallLikeTypechecker" />
+          <node concept="1YBJjd" id="4V1wcOaJ3ps" role="37wK5m">
+            <ref role="1YBMHb" node="3v5DuFDvslF" resolve="qmc" />
+          </node>
+          <node concept="3clFbT" id="4V1wcOaL3du" role="37wK5m">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
