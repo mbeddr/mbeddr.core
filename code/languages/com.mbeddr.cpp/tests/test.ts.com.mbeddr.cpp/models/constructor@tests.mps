@@ -13,6 +13,7 @@
   <imports>
     <import index="ux7" ref="r:7a7d22ce-1d67-4772-b659-fbcc3b235afb(com.mbeddr.cpp.__spreferences.PlatformTemplates)" />
     <import index="g7jk" ref="r:e06e24a5-d0fa-4f76-9dee-2042532d92a1(com.mbeddr.cpp.base.typesystem)" />
+    <import index="p3tm" ref="r:7b158038-abbe-4e11-b171-d5a959b4e91a(com.mbeddr.core.modules.typesystem)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -67,7 +68,10 @@
       </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
-      <concept id="7240228573262412204" name="com.mbeddr.cpp.base.structure.LocalClassVariableDeclaration" flags="ng" index="2dywKE" />
+      <concept id="7240228573262412204" name="com.mbeddr.cpp.base.structure.LocalClassVariableDeclaration" flags="ng" index="2dywKE">
+        <reference id="7240228573263980490" name="constructor" index="2esx9c" />
+        <child id="7240228573265829198" name="constructor_arg_actuals" index="2enIz8" />
+      </concept>
       <concept id="7240228573260630076" name="com.mbeddr.cpp.base.structure.ConstructorVoidType" flags="ng" index="2dFNQU" />
       <concept id="7844497894798008401" name="com.mbeddr.cpp.base.structure.ClassConstructorSignature" flags="ng" index="2gom4k">
         <property id="6088872510303555204" name="isDestructor" index="3BMcJd" />
@@ -131,6 +135,9 @@
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
+      <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
+        <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
@@ -139,6 +146,7 @@
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
       </concept>
+      <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
   </registry>
   <node concept="2v9HqL" id="7pg8HYlqyX2">
@@ -336,6 +344,25 @@
                 <node concept="29bkU" id="3Mwr0rVIG6_" role="7EUXB">
                   <node concept="2PQEqo" id="3Mwr0rVIG6A" role="3lydCh">
                     <ref role="39XzEq" to="g7jk:2xmTzC2LYc4" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2dywKE" id="4V1wcOaMh2A" role="3XIRFZ">
+              <property role="TrG5h" value="aCInstanceWithBadParams" />
+              <ref role="2esx9c" node="3Mwr0rVIFLh" resolve="ParentClass" />
+              <node concept="3TlMh9" id="4V1wcOaMh4i" role="2enIz8">
+                <property role="2hmy$m" value="325" />
+              </node>
+              <node concept="3mBfEi" id="4V1wcOaMh2$" role="2C2TGm">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="3mBfEM" node="1D2kn9aDpmy" resolve="aC" />
+              </node>
+              <node concept="7CXmI" id="4V1wcOaMh5V" role="lGtFl">
+                <node concept="1TM$A" id="4V1wcOaMh5W" role="7EUXB">
+                  <node concept="2PYRI3" id="4V1wcOaMYgu" role="3lydEf">
+                    <ref role="39XzEq" to="p3tm:AeX2DkMYms" />
                   </node>
                 </node>
               </node>
