@@ -63,6 +63,8 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="py4t" ref="r:4e973dcf-7005-4515-8904-9c030ef293d4(de.itemis.mps.mouselistener.runtime)" />
     <import index="emqf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellProviders(MPS.Editor/)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -9715,10 +9717,25 @@
                   <ref role="37wK5l" node="1U2fVW5y9sy" resolve="getDecider" />
                   <node concept="2OqwBi" id="1U2fVW5yqmj" role="37wK5m">
                     <node concept="2OqwBi" id="1U2fVW5yqmk" role="2Oq$k0">
-                      <node concept="2OqwBi" id="1U2fVW5yqml" role="2Oq$k0">
-                        <node concept="1Q80Hx" id="1U2fVW5yqmm" role="2Oq$k0" />
-                        <node concept="liA8E" id="1U2fVW5yqmn" role="2OqNvi">
-                          <ref role="37wK5l" to="cj4x:~EditorContext.getCellFactory():jetbrains.mps.openapi.editor.cells.EditorCellFactory" resolve="getCellFactory" />
+                      <node concept="2OqwBi" id="5uI1b_i7jBF" role="2Oq$k0">
+                        <node concept="2OqwBi" id="5uI1b_i7iqq" role="2Oq$k0">
+                          <node concept="2OqwBi" id="5uI1b_i7gNA" role="2Oq$k0">
+                            <node concept="2OqwBi" id="1U2fVW5yqml" role="2Oq$k0">
+                              <node concept="1Q80Hx" id="1U2fVW5yqmm" role="2Oq$k0" />
+                              <node concept="liA8E" id="5uI1b_i7gp$" role="2OqNvi">
+                                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="5uI1b_i7hrt" role="2OqNvi">
+                              <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater():jetbrains.mps.openapi.editor.update.Updater" resolve="getUpdater" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="5uI1b_i7jbZ" role="2OqNvi">
+                            <ref role="37wK5l" to="22ra:~Updater.getCurrentUpdateSession():jetbrains.mps.openapi.editor.update.UpdateSession" resolve="getCurrentUpdateSession" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="5uI1b_i7klI" role="2OqNvi">
+                          <ref role="37wK5l" to="22ra:~UpdateSession.getCellFactory():jetbrains.mps.openapi.editor.cells.EditorCellFactory" resolve="getCellFactory" />
                         </node>
                       </node>
                       <node concept="liA8E" id="1U2fVW5yqmo" role="2OqNvi">
@@ -11058,15 +11075,14 @@
                 <node concept="37vLTw" id="26B0wrG1agL" role="37vLTJ">
                   <ref role="3cqZAo" node="26B0wrG18iW" resolve="childCell" />
                 </node>
-                <node concept="2OqwBi" id="26B0wrG0Zqt" role="37vLTx">
-                  <node concept="37vLTw" id="26B0wrG12bp" role="2Oq$k0">
+                <node concept="2YIFZM" id="5uI1b_i7xrs" role="37vLTx">
+                  <ref role="37wK5l" to="18ew:~IterableUtil.get(java.lang.Iterable,int):java.lang.Object" resolve="get" />
+                  <ref role="1Pybhc" to="18ew:~IterableUtil" resolve="IterableUtil" />
+                  <node concept="37vLTw" id="5uI1b_i7xyk" role="37wK5m">
                     <ref role="3cqZAo" node="3_8b9975Bv4" resolve="childCollection" />
                   </node>
-                  <node concept="liA8E" id="26B0wrG0Zqy" role="2OqNvi">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Collection.getCellAt(int):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getCellAt" />
-                    <node concept="3cmrfG" id="26B0wrG0Zqz" role="37wK5m">
-                      <property role="3cmrfH" value="1" />
-                    </node>
+                  <node concept="3cmrfG" id="5uI1b_i7xUa" role="37wK5m">
+                    <property role="3cmrfH" value="1" />
                   </node>
                 </node>
               </node>

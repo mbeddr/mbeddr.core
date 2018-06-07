@@ -106,6 +106,7 @@
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P">
         <reference id="1182955020723" name="classConcept" index="1HBi2w" />
       </concept>
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
@@ -413,6 +414,12 @@
       <node concept="3cqZAl" id="1LnB5xduXIa" role="3clF45" />
       <node concept="3Tm1VV" id="1LnB5xduXIb" role="1B3o_S" />
       <node concept="3clFbS" id="1LnB5xduXIc" role="3clF47">
+        <node concept="XkiVB" id="6$SBfHyzeNV" role="3cqZAp">
+          <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
+          <node concept="37vLTw" id="6$SBfHyzeXo" role="37wK5m">
+            <ref role="3cqZAo" node="1LnB5xduXIv" resolve="node" />
+          </node>
+        </node>
         <node concept="3clFbF" id="1LnB5xduXId" role="3cqZAp">
           <node concept="37vLTI" id="1LnB5xduXIe" role="3clFbG">
             <node concept="37vLTw" id="1LnB5xduXIf" role="37vLTx">
@@ -473,6 +480,12 @@
       <node concept="3cqZAl" id="6Ce4x7KQbw3" role="3clF45" />
       <node concept="3Tm1VV" id="6Ce4x7KQbw4" role="1B3o_S" />
       <node concept="3clFbS" id="6Ce4x7KQbw5" role="3clF47">
+        <node concept="XkiVB" id="6$SBfHyzf5e" role="3cqZAp">
+          <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
+          <node concept="37vLTw" id="6$SBfHyzf5f" role="37wK5m">
+            <ref role="3cqZAo" node="6Ce4x7KQbwo" resolve="node" />
+          </node>
+        </node>
         <node concept="3clFbF" id="6Ce4x7KQbw6" role="3cqZAp">
           <node concept="37vLTI" id="6Ce4x7KQbw7" role="3clFbG">
             <node concept="37vLTw" id="6Ce4x7KQbw8" role="37vLTx">
@@ -549,6 +562,12 @@
       <node concept="3cqZAl" id="4lA4bzwmp55" role="3clF45" />
       <node concept="3Tm1VV" id="4lA4bzwmp56" role="1B3o_S" />
       <node concept="3clFbS" id="4lA4bzwmp57" role="3clF47">
+        <node concept="XkiVB" id="6$SBfHyzfv1" role="3cqZAp">
+          <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
+          <node concept="37vLTw" id="6$SBfHyzfv2" role="37wK5m">
+            <ref role="3cqZAo" node="4lA4bzwmp5w" resolve="node" />
+          </node>
+        </node>
         <node concept="3clFbF" id="4lA4bzwmp58" role="3cqZAp">
           <node concept="37vLTI" id="4lA4bzwmp59" role="3clFbG">
             <node concept="37vLTw" id="4lA4bzwmp5a" role="37vLTx">

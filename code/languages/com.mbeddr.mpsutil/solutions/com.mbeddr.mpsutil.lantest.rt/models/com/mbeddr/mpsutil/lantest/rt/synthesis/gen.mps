@@ -1362,8 +1362,8 @@
         </node>
         <node concept="3clFbF" id="2RMHhGkQ$58" role="3cqZAp">
           <node concept="2YIFZM" id="7zX9aIUx1Gc" role="3clFbG">
-            <ref role="37wK5l" to="6if8:~ValidationUtil.validateSingleNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.util.Processor):boolean" resolve="validateSingleNode" />
             <ref role="1Pybhc" to="6if8:~ValidationUtil" resolve="ValidationUtil" />
+            <ref role="37wK5l" to="6if8:~ValidationUtil.validateSingleNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.util.Processor):void" resolve="validateSingleNode" />
             <node concept="37vLTw" id="7zX9aIUx1Gf" role="37wK5m">
               <ref role="3cqZAo" node="4m$eX95upom" resolve="aNode" />
             </node>
