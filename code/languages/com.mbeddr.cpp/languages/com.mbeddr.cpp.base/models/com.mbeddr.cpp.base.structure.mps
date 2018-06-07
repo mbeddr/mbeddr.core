@@ -2,7 +2,7 @@
 <model ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -328,17 +328,17 @@
     <property role="3GE5qa" value="class" />
     <property role="R4oN_" value="Delete an object made by the 'new' keyword (must be a pointer)." />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-    <node concept="1TJgyi" id="72UYQRWwqOq" role="1TKVEl">
-      <property role="IQ2nx" value="8123081327722474778" />
-      <property role="TrG5h" value="brackets" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyj" id="72UYQRW0DPK" role="1TKVEi">
       <property role="IQ2ns" value="8123081327714147696" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="varRef" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="c4fa:1OcdQnyStpU" resolve="LocalVarRef" />
+    </node>
+    <node concept="1TJgyi" id="72UYQRWwqOq" role="1TKVEl">
+      <property role="IQ2nx" value="8123081327722474778" />
+      <property role="TrG5h" value="brackets" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="PlHQZ" id="2L1k$oXxncW">
@@ -993,6 +993,44 @@
       <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6OyCGy3I3ZK">
+    <property role="EcuMT" value="7864026881429356528" />
+    <property role="TrG5h" value="StaticVar" />
+    <property role="34LRSv" value="static" />
+    <ref role="1TJDcQ" node="6OyCGy3FHs3" resolve="GlobalVarDecCPP" />
+  </node>
+  <node concept="1TIwiD" id="6OyCGy3FHs3">
+    <property role="EcuMT" value="7864026881428739843" />
+    <property role="TrG5h" value="GlobalVarDecCPP" />
+    <property role="34LRSv" value="=" />
+    <ref role="1TJDcQ" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+    <node concept="PrWs8" id="6OyCGy3FHs4" role="PzmwI">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="6OyCGy3FHsc" role="PzmwI">
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6OyCGy9cOMO">
+    <property role="EcuMT" value="7864026881521306804" />
+    <property role="TrG5h" value="ClassStaticVarRef" />
+    <property role="34LRSv" value="::" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="6OyCGy9cOMP" role="1TKVEi">
+      <property role="IQ2ns" value="7864026881521306805" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="clazz" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="6OyCGy9cOMS" role="1TKVEi">
+      <property role="IQ2ns" value="7864026881521306808" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="attribute" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
+    </node>
+  </node>
   <node concept="PlHQZ" id="1D2kn9asHi2">
     <property role="EcuMT" value="1892164344766190722" />
     <property role="3GE5qa" value="flag" />
@@ -1051,43 +1089,18 @@
       <ref role="20lvS9" node="6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6OyCGy9cOMO">
-    <property role="EcuMT" value="7864026881521306804" />
-    <property role="TrG5h" value="ClassStaticVarRef" />
-    <property role="34LRSv" value="::" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="6OyCGy9cOMP" role="1TKVEi">
-      <property role="IQ2ns" value="7864026881521306805" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="clazz" />
+  <node concept="1TIwiD" id="1yn8PkxYuRh">
+    <property role="EcuMT" value="1771923826942799313" />
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="InnerClassType" />
+    <ref role="1TJDcQ" node="4o2nsMgBEtu" resolve="ClassType" />
+    <node concept="1TJgyj" id="1yn8PkxYuRi" role="1TKVEi">
+      <property role="IQ2ns" value="1771923826942799314" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="outerclassType" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+      <ref role="20lvS9" node="4o2nsMgBEtu" resolve="ClassType" />
     </node>
-    <node concept="1TJgyj" id="6OyCGy9cOMS" role="1TKVEi">
-      <property role="IQ2ns" value="7864026881521306808" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="attribute" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6OyCGy3FHs3">
-    <property role="EcuMT" value="7864026881428739843" />
-    <property role="TrG5h" value="GlobalVarDecCPP" />
-    <property role="34LRSv" value="=" />
-    <ref role="1TJDcQ" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
-    <node concept="PrWs8" id="6OyCGy3FHs4" role="PzmwI">
-      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-    </node>
-    <node concept="PrWs8" id="6OyCGy3FHsc" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6OyCGy3I3ZK">
-    <property role="EcuMT" value="7864026881429356528" />
-    <property role="TrG5h" value="StaticVar" />
-    <property role="34LRSv" value="static" />
-    <ref role="1TJDcQ" node="6OyCGy3FHs3" resolve="GlobalVarDecCPP" />
   </node>
 </model>
 
