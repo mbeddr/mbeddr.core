@@ -97,7 +97,7 @@
       <concept id="7844497894798008359" name="com.mbeddr.cpp.base.structure.ClassConstructorDeclaration" flags="ng" index="2gom5y">
         <reference id="7844497894798008388" name="parentClass" index="2gom41" />
       </concept>
-      <concept id="4227093647205103685" name="com.mbeddr.cpp.base.structure.DeleteDecleration" flags="ng" index="2jktW3">
+      <concept id="4227093647205103685" name="com.mbeddr.cpp.base.structure.DeleteDeclaration" flags="ng" index="2jktW3">
         <property id="8123081327722474778" name="brackets" index="2cePpR" />
         <child id="8123081327714147696" name="varRef" index="2cI6ot" />
       </concept>
