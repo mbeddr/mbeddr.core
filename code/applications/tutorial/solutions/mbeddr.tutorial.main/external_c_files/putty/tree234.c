@@ -31,8 +31,6 @@
 
 #include "tree234.h"
 
-#define TEST TRUE
-
 #ifdef TEST
 #define LOG(x) (printf x)
 #define snew(type) ((type *)malloc(sizeof(type)))
@@ -1418,7 +1416,8 @@ int findtest(void)
     }
 }
 
-/*int main(void)
+/*
+int main(void)
 {
     int in[NSTR];
     int i, j, k;
@@ -1463,7 +1462,7 @@ int findtest(void)
      * completeness we'll use it to tear down our unsorted tree
      * once we've built it.
      */
- /*   tree = newtree234(NULL);
+   /* tree = newtree234(NULL);
     cmp = NULL;
     verify();
     for (i = 0; i < 1000; i++) {

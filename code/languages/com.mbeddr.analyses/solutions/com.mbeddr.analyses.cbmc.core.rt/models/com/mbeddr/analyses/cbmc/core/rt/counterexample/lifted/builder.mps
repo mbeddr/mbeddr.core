@@ -34,7 +34,6 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="prhr" ref="r:1c730a17-6aff-4949-afa0-f86001c1cb51(com.mbeddr.analyses.cbmc.core.rt.utils)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -261,9 +260,6 @@
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
-    </language>
-    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
-      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -3354,25 +3350,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5A4xqPJUCTd" role="3cqZAp">
-          <node concept="1rXfSq" id="5A4xqPJUCTb" role="3clFbG">
-            <ref role="37wK5l" to="8ear:2yoYFV_JgMf" resolve="debug" />
-            <node concept="3cpWs3" id="5A4xqPJUG9u" role="37wK5m">
-              <node concept="2OqwBi" id="5A4xqPJUGuY" role="3uHU7w">
-                <node concept="37vLTw" id="5A4xqPJUGj2" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3x0R1LIQ8cO" resolve="originalNode" />
-                </node>
-                <node concept="2yIwOk" id="5A4xqPJUGIk" role="2OqNvi" />
-              </node>
-              <node concept="Xl_RD" id="5A4xqPJUEmU" role="3uHU7B">
-                <property role="Xl_RC" value="original node concept: " />
-              </node>
-            </node>
-            <node concept="37vLTw" id="5A4xqPJUNIy" role="37wK5m">
-              <ref role="3cqZAo" node="5A4xqPJULZR" resolve="DEBUG" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="5A4xqPJUBVA" role="3cqZAp" />
         <node concept="3clFbJ" id="3Ig572KVaH_" role="3cqZAp">
           <node concept="3clFbC" id="3Ig572KVeEZ" role="3clFbw">
@@ -3389,21 +3366,8 @@
                 <node concept="3VsKOn" id="3Ig572KVntT" role="37wK5m">
                   <ref role="3VsUkX" node="3x0R1LIQ8cB" resolve="FunctionCallsLifterCore" />
                 </node>
-                <node concept="3cpWs3" id="3Ig572KVntU" role="37wK5m">
-                  <node concept="2EnYce" id="3Ig572KVntV" role="3uHU7w">
-                    <node concept="2OqwBi" id="79i$vAY7Dd7" role="2Oq$k0">
-                      <node concept="2yIwOk" id="79i$vAY7Dd8" role="2OqNvi" />
-                      <node concept="37vLTw" id="3Ig572KVntX" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3x0R1LIQ8cO" resolve="originalNode" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="79i$vAY7Dd9" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="3Ig572KVnu0" role="3uHU7B">
-                    <property role="Xl_RC" value="originalNode has an unexpected type: " />
-                  </node>
+                <node concept="Xl_RD" id="3Ig572KVnu0" role="37wK5m">
+                  <property role="Xl_RC" value="originalNode not found" />
                 </node>
               </node>
             </node>
@@ -3419,6 +3383,25 @@
                   <ref role="3cqZAo" node="3x0R1LIQ8cO" resolve="originalNode" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5A4xqPJUCTd" role="3cqZAp">
+          <node concept="1rXfSq" id="5A4xqPJUCTb" role="3clFbG">
+            <ref role="37wK5l" to="8ear:2yoYFV_JgMf" resolve="debug" />
+            <node concept="3cpWs3" id="5A4xqPJUG9u" role="37wK5m">
+              <node concept="2OqwBi" id="5A4xqPJUGuY" role="3uHU7w">
+                <node concept="37vLTw" id="5A4xqPJUGj2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3x0R1LIQ8cO" resolve="originalNode" />
+                </node>
+                <node concept="2yIwOk" id="5A4xqPJUGIk" role="2OqNvi" />
+              </node>
+              <node concept="Xl_RD" id="5A4xqPJUEmU" role="3uHU7B">
+                <property role="Xl_RC" value="original node concept: " />
+              </node>
+            </node>
+            <node concept="37vLTw" id="5A4xqPJUNIy" role="37wK5m">
+              <ref role="3cqZAo" node="5A4xqPJULZR" resolve="DEBUG" />
             </node>
           </node>
         </node>

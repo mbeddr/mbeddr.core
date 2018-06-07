@@ -1768,6 +1768,7 @@
         <property role="3F0ifm" value="debug options:" />
       </node>
       <node concept="3F0A7n" id="2nSRgleEPDD" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="51wr:2nSRgleEPDx" resolve="debugOptions" />
       </node>
       <node concept="l2Vlx" id="2nSRgleEPDA" role="2iSdaV" />
