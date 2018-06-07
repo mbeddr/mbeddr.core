@@ -2802,5 +2802,127 @@
       <ref role="1YaFvo" to="wnzg:7RFM8R0xwre" resolve="GlobalUsingNamespaceAttributeDeclaration" />
     </node>
   </node>
+  <node concept="18kY7G" id="7G1ZeMQsojd">
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="check_GlobalUsingNamespaceMethodDeclaration" />
+    <node concept="3clFbS" id="7G1ZeMQsoje" role="18ibNy">
+      <node concept="3clFbJ" id="7G1ZeMQsomQ" role="3cqZAp">
+        <node concept="1Wc70l" id="7G1ZeMQssbU" role="3clFbw">
+          <node concept="3y3z36" id="7G1ZeMQswKx" role="3uHU7w">
+            <node concept="2OqwBi" id="7G1ZeMQsxhO" role="3uHU7w">
+              <node concept="1YBJjd" id="7G1ZeMQswVG" role="2Oq$k0">
+                <ref role="1YBMHb" node="7G1ZeMQsojw" resolve="guNSmd" />
+              </node>
+              <node concept="3TrEf2" id="7G1ZeMQsxMs" role="2OqNvi">
+                <ref role="3Tt5mk" to="wnzg:7RFM8R0Rm5r" resolve="namespace" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7G1ZeMQsul4" role="3uHU7B">
+              <node concept="2OqwBi" id="7G1ZeMQssLd" role="2Oq$k0">
+                <node concept="1YBJjd" id="7G1ZeMQssxg" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7G1ZeMQsojw" resolve="guNSmd" />
+                </node>
+                <node concept="3TrEf2" id="7G1ZeMQsthE" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:7RFM8R0Rm5s" resolve="method" />
+                </node>
+              </node>
+              <node concept="2Xjw5R" id="7G1ZeMQsvli" role="2OqNvi">
+                <node concept="1xMEDy" id="7G1ZeMQsvlk" role="1xVPHs">
+                  <node concept="chp4Y" id="7G1ZeMQsvwt" role="ri$Ld">
+                    <ref role="cht4Q" to="wnzg:383ZxwZqQYo" resolve="NamespaceDeclaration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7G1ZeMQspSs" role="3uHU7B">
+            <node concept="2OqwBi" id="7G1ZeMQsoDB" role="2Oq$k0">
+              <node concept="1YBJjd" id="7G1ZeMQson5" role="2Oq$k0">
+                <ref role="1YBMHb" node="7G1ZeMQsojw" resolve="guNSmd" />
+              </node>
+              <node concept="3TrEf2" id="7G1ZeMQsp0W" role="2OqNvi">
+                <ref role="3Tt5mk" to="wnzg:7RFM8R0Rm5s" resolve="method" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7G1ZeMQsqMA" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7G1ZeMQsomS" role="3clFbx">
+          <node concept="3cpWs8" id="7G1ZeMQsy2J" role="3cqZAp">
+            <node concept="3cpWsn" id="7G1ZeMQsy2M" role="3cpWs9">
+              <property role="TrG5h" value="usingWithOrigin" />
+              <node concept="10P_77" id="7G1ZeMQsy2I" role="1tU5fm" />
+              <node concept="3clFbT" id="7G1ZeMQsy5O" role="33vP2m">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="2Gpval" id="7G1ZeMQsyrU" role="3cqZAp">
+            <node concept="2GrKxI" id="7G1ZeMQsyrW" role="2Gsz3X">
+              <property role="TrG5h" value="namespaceUsingDecs" />
+            </node>
+            <node concept="2OqwBi" id="7G1ZeMQsEeI" role="2GsD0m">
+              <node concept="1YBJjd" id="7G1ZeMQsy$S" role="2Oq$k0">
+                <ref role="1YBMHb" node="7G1ZeMQsojw" resolve="guNSmd" />
+              </node>
+              <node concept="2qgKlT" id="7G1ZeMQvqvV" role="2OqNvi">
+                <ref role="37wK5l" to="kntn:7G1ZeMQtk2K" resolve="usedMethsForCheck" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="7G1ZeMQsys0" role="2LFqv$">
+              <node concept="3clFbJ" id="7G1ZeMQsysE" role="3cqZAp">
+                <node concept="3clFbC" id="7G1ZeMQsBBY" role="3clFbw">
+                  <node concept="2GrUjf" id="7G1ZeMQsBZ$" role="3uHU7w">
+                    <ref role="2Gs0qQ" node="7G1ZeMQsyrW" resolve="namespaceUsingDecs" />
+                  </node>
+                  <node concept="2OqwBi" id="7G1ZeMQs_Ei" role="3uHU7B">
+                    <node concept="1YBJjd" id="7G1ZeMQs_qw" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7G1ZeMQsojw" resolve="guNSmd" />
+                    </node>
+                    <node concept="3TrEf2" id="7G1ZeMQsANy" role="2OqNvi">
+                      <ref role="3Tt5mk" to="wnzg:7RFM8R0Rm5s" resolve="method" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="7G1ZeMQsysG" role="3clFbx">
+                  <node concept="3clFbF" id="7G1ZeMQsDrF" role="3cqZAp">
+                    <node concept="37vLTI" id="7G1ZeMQsDYz" role="3clFbG">
+                      <node concept="3clFbT" id="7G1ZeMQsDYR" role="37vLTx">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                      <node concept="37vLTw" id="7G1ZeMQsDrE" role="37vLTJ">
+                        <ref role="3cqZAo" node="7G1ZeMQsy2M" resolve="usingWithOrigin" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="7G1ZeMQsybW" role="3cqZAp">
+            <node concept="3clFbS" id="7G1ZeMQsybY" role="3clFbx">
+              <node concept="2MkqsV" id="7G1ZeMQsyiq" role="3cqZAp">
+                <node concept="Xl_RD" id="7G1ZeMQsyln" role="2MkJ7o">
+                  <property role="Xl_RC" value="Method does not exist within given namespace" />
+                </node>
+                <node concept="1YBJjd" id="7G1ZeMQsylS" role="2OEOjV">
+                  <ref role="1YBMHb" node="7G1ZeMQsojw" resolve="guNSmd" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="7G1ZeMQsyft" role="3clFbw">
+              <node concept="37vLTw" id="7G1ZeMQsyfv" role="3fr31v">
+                <ref role="3cqZAo" node="7G1ZeMQsy2M" resolve="usingWithOrigin" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7G1ZeMQsojw" role="1YuTPh">
+      <property role="TrG5h" value="guNSmd" />
+      <ref role="1YaFvo" to="wnzg:7RFM8R0Rm5q" resolve="GlobalUsingNamespaceMethodDeclaration" />
+    </node>
+  </node>
 </model>
 
