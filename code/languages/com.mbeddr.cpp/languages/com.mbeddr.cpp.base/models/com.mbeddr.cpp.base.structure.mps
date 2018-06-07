@@ -154,9 +154,6 @@
     <property role="TrG5h" value="ClassType" />
     <property role="3GE5qa" value="class" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
-    <node concept="PrWs8" id="6nKEiAiyM9j" role="PzmwI">
-      <ref role="PrY4T" to="mj1l:4ZVDCZCa$xx" resolve="IOrdered" />
-    </node>
     <node concept="1TJgyj" id="4o2nsMgBEtY" role="1TKVEi">
       <property role="IQ2ns" value="5044697665789405054" />
       <property role="20lmBu" value="reference" />

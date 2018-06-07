@@ -245,12 +245,6 @@
       </concept>
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -3483,22 +3477,6 @@
               </node>
             </node>
             <node concept="3clFbS" id="3p40HKhxP2B" role="2LFqv$">
-              <node concept="2xdQw9" id="3p40HKhyKw4" role="3cqZAp">
-                <property role="2xdLsb" value="info" />
-                <node concept="3cpWs3" id="3p40HKhyLm7" role="9lYJi">
-                  <node concept="2OqwBi" id="3p40HKhyLGE" role="3uHU7w">
-                    <node concept="2GrUjf" id="3p40HKhyLmi" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="3p40HKhxP2x" resolve="meth" />
-                    </node>
-                    <node concept="3TrcHB" id="3p40HKhyNau" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="3p40HKhyKw6" role="3uHU7B">
-                    <property role="Xl_RC" value="meth name " />
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbJ" id="3p40HKhy6ZO" role="3cqZAp">
                 <node concept="2OqwBi" id="3p40HKhy7RW" role="3clFbw">
                   <node concept="37vLTw" id="3p40HKhy703" role="2Oq$k0">
