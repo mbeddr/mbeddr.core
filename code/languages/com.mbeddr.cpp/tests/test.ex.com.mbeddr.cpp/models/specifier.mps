@@ -201,6 +201,7 @@
       <node concept="3mBbG7" id="5eDFAXBNIRy" role="3mBdys">
         <property role="TrG5h" value="constField" />
         <property role="1wg9_F" value="public" />
+        <property role="OtGCv" value="true" />
         <node concept="26Vqph" id="5eDFAXBNIUC" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="true" />

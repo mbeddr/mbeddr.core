@@ -81,6 +81,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -138,6 +139,14 @@
                 </node>
                 <node concept="2GrUjf" id="4WhfN3oofGm" role="2OEOjV">
                   <ref role="2Gs0qQ" node="4WhfN3ooe_t" resolve="catchBlock" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="5w6Oa205J6t" role="3cqZAp">
+                <node concept="2OqwBi" id="5w6Oa205K0p" role="3clFbG">
+                  <node concept="2GrUjf" id="5w6Oa205J6r" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="4WhfN3ooe_t" resolve="catchBlock" />
+                  </node>
+                  <node concept="1PgB_6" id="5w6Oa205KiP" role="2OqNvi" />
                 </node>
               </node>
             </node>
