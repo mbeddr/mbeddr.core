@@ -12,6 +12,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="wlyv" ref="r:a0a28ed3-d146-47eb-a19a-e026ce786b29(com.mbeddr.cpp.modules.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -198,48 +199,148 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="29cSqveijqR" role="3cqZAp">
-          <node concept="3cpWsn" id="29cSqveijqU" role="3cpWs9">
-            <property role="TrG5h" value="genStdHeaderImport" />
-            <node concept="3Tqbb2" id="29cSqveijqP" role="1tU5fm">
-              <ref role="ehGHo" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+        <node concept="3clFbH" id="4k76AKYlh8I" role="3cqZAp" />
+        <node concept="3cpWs8" id="4k76AKYlhzd" role="3cqZAp">
+          <node concept="3cpWsn" id="4k76AKYlhze" role="3cpWs9">
+            <property role="TrG5h" value="cppDefTypes" />
+            <node concept="_YKpA" id="4k76AKYlhzf" role="1tU5fm">
+              <node concept="3bZ5Sz" id="4k76AKYlhzg" role="_ZDj9" />
             </node>
-            <node concept="2ShNRf" id="29cSqveikDL" role="33vP2m">
-              <node concept="3zrR0B" id="29cSqveikDJ" role="2ShVmc">
-                <node concept="3Tqbb2" id="29cSqveikDK" role="3zrR0E">
+            <node concept="2ShNRf" id="4k76AKYlhzh" role="33vP2m">
+              <node concept="Tc6Ow" id="4k76AKYlhzi" role="2ShVmc">
+                <node concept="3bZ5Sz" id="4k76AKYlhzj" role="HW$YZ" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4k76AKYlkTy" role="3cqZAp" />
+        <node concept="3clFbF" id="4k76AKYlljT" role="3cqZAp">
+          <node concept="2OqwBi" id="4k76AKYlmhl" role="3clFbG">
+            <node concept="37vLTw" id="4k76AKYlljR" role="2Oq$k0">
+              <ref role="3cqZAo" node="4k76AKYlhze" resolve="cppDefTypes" />
+            </node>
+            <node concept="TSZUe" id="4k76AKYln4P" role="2OqNvi">
+              <node concept="35c_gC" id="4k76AKYln8U" role="25WWJ7">
+                <ref role="35c_gD" to="mj1l:7FZLineUJnk" resolve="SizeT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4k76AKYlnDg" role="3cqZAp">
+          <node concept="2OqwBi" id="4k76AKYloB2" role="3clFbG">
+            <node concept="37vLTw" id="4k76AKYlnDe" role="2Oq$k0">
+              <ref role="3cqZAo" node="4k76AKYlhze" resolve="cppDefTypes" />
+            </node>
+            <node concept="TSZUe" id="4k76AKYlpqL" role="2OqNvi">
+              <node concept="35c_gC" id="4k76AKYlpuP" role="25WWJ7">
+                <ref role="35c_gD" to="mj1l:5f3TY1$JAfm" resolve="PtrDiffT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4k76AKYlpYp" role="3cqZAp">
+          <node concept="2OqwBi" id="4k76AKYlqPY" role="3clFbG">
+            <node concept="37vLTw" id="4k76AKYlpYn" role="2Oq$k0">
+              <ref role="3cqZAo" node="4k76AKYlhze" resolve="cppDefTypes" />
+            </node>
+            <node concept="TSZUe" id="4k76AKYlrKx" role="2OqNvi">
+              <node concept="35c_gC" id="4k76AKYlrOk" role="25WWJ7">
+                <ref role="35c_gD" to="wnzg:29cSqvcoIWH" resolve="NullPointerType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4k76AKYlslG" role="3cqZAp">
+          <node concept="2OqwBi" id="4k76AKYltch" role="3clFbG">
+            <node concept="37vLTw" id="4k76AKYlslE" role="2Oq$k0">
+              <ref role="3cqZAo" node="4k76AKYlhze" resolve="cppDefTypes" />
+            </node>
+            <node concept="TSZUe" id="4k76AKYlu6O" role="2OqNvi">
+              <node concept="35c_gC" id="4k76AKYlucC" role="25WWJ7">
+                <ref role="35c_gD" to="tpee:f_0Pron" resolve="ByteType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4k76AKYlhQS" role="3cqZAp" />
+        <node concept="3clFbJ" id="4k76AKYliLs" role="3cqZAp">
+          <node concept="3clFbS" id="4k76AKYliLt" role="3clFbx">
+            <node concept="3cpWs8" id="4k76AKYliLu" role="3cqZAp">
+              <node concept="3cpWsn" id="4k76AKYliLv" role="3cpWs9">
+                <property role="TrG5h" value="stdHeaderImportDef" />
+                <node concept="3Tqbb2" id="4k76AKYliLw" role="1tU5fm">
                   <ref role="ehGHo" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+                </node>
+                <node concept="2ShNRf" id="4k76AKYliLx" role="33vP2m">
+                  <node concept="3zrR0B" id="4k76AKYliLy" role="2ShVmc">
+                    <node concept="3Tqbb2" id="4k76AKYliLz" role="3zrR0E">
+                      <ref role="ehGHo" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4k76AKYliL$" role="3cqZAp">
+              <node concept="37vLTI" id="4k76AKYliL_" role="3clFbG">
+                <node concept="Xl_RD" id="4k76AKYliLA" role="37vLTx">
+                  <property role="Xl_RC" value="&lt;cstddef&gt;" />
+                </node>
+                <node concept="2OqwBi" id="4k76AKYliLB" role="37vLTJ">
+                  <node concept="37vLTw" id="4k76AKYliLC" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4k76AKYliLv" resolve="stdHeaderImportDef" />
+                  </node>
+                  <node concept="3TrcHB" id="4k76AKYliLD" role="2OqNvi">
+                    <ref role="3TsBF5" to="x27k:3kEjc_WIKGg" resolve="headerFileName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4k76AKYliLE" role="3cqZAp">
+              <node concept="2OqwBi" id="4k76AKYliLF" role="3clFbG">
+                <node concept="37vLTw" id="4k76AKYliLG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="29cSqveikNz" resolve="imports" />
+                </node>
+                <node concept="TSZUe" id="4k76AKYliLH" role="2OqNvi">
+                  <node concept="37vLTw" id="4k76AKYliLI" role="25WWJ7">
+                    <ref role="3cqZAo" node="4k76AKYliLv" resolve="stdHeaderImportDef" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4k76AKYliLJ" role="3clFbw">
+            <node concept="2OqwBi" id="4k76AKYliLK" role="2Oq$k0">
+              <node concept="13iPFW" id="4k76AKYliLL" role="2Oq$k0" />
+              <node concept="2Rf3mk" id="4k76AKYliLM" role="2OqNvi" />
+            </node>
+            <node concept="2HwmR7" id="4k76AKYliLN" role="2OqNvi">
+              <node concept="1bVj0M" id="4k76AKYliLO" role="23t8la">
+                <node concept="3clFbS" id="4k76AKYliLP" role="1bW5cS">
+                  <node concept="3clFbF" id="4k76AKYliLQ" role="3cqZAp">
+                    <node concept="2OqwBi" id="4k76AKYliLR" role="3clFbG">
+                      <node concept="37vLTw" id="4k76AKYljfm" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4k76AKYlhze" resolve="cppDefTypes" />
+                      </node>
+                      <node concept="3JPx81" id="4k76AKYliLT" role="2OqNvi">
+                        <node concept="2OqwBi" id="4k76AKYliLU" role="25WWJ7">
+                          <node concept="37vLTw" id="4k76AKYliLV" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4k76AKYliLX" resolve="it" />
+                          </node>
+                          <node concept="2yIwOk" id="4k76AKYliLW" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="4k76AKYliLX" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="4k76AKYliLY" role="1tU5fm" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="29cSqveirjj" role="3cqZAp">
-          <node concept="37vLTI" id="29cSqveiszU" role="3clFbG">
-            <node concept="Xl_RD" id="29cSqveisJe" role="37vLTx">
-              <property role="Xl_RC" value="&lt;cstddef&gt;" />
-            </node>
-            <node concept="2OqwBi" id="29cSqveirJd" role="37vLTJ">
-              <node concept="37vLTw" id="29cSqveirjh" role="2Oq$k0">
-                <ref role="3cqZAo" node="29cSqveijqU" resolve="genStdHeaderImport" />
-              </node>
-              <node concept="3TrcHB" id="7G1ZeMQiAwo" role="2OqNvi">
-                <ref role="3TsBF5" to="x27k:3kEjc_WIKGg" resolve="headerFileName" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="29cSqveil3S" role="3cqZAp">
-          <node concept="2OqwBi" id="29cSqveilgy" role="3clFbG">
-            <node concept="37vLTw" id="29cSqveil3Q" role="2Oq$k0">
-              <ref role="3cqZAo" node="29cSqveikNz" resolve="imports" />
-            </node>
-            <node concept="TSZUe" id="29cSqveipyL" role="2OqNvi">
-              <node concept="37vLTw" id="29cSqveipBt" role="25WWJ7">
-                <ref role="3cqZAo" node="29cSqveijqU" resolve="genStdHeaderImport" />
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbH" id="4k76AKYlhcJ" role="3cqZAp" />
         <node concept="3cpWs8" id="4k76AKYkzHL" role="3cqZAp">
           <node concept="3cpWsn" id="4k76AKYkzHO" role="3cpWs9">
             <property role="TrG5h" value="cppIntTypes" />
