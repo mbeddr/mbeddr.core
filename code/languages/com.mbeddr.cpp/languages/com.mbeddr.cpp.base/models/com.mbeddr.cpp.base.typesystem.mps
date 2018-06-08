@@ -293,12 +293,6 @@
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
       <concept id="1174663239020" name="jetbrains.mps.lang.typesystem.structure.CreateGreaterThanInequationStatement" flags="nn" index="1ZoDhX" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -4709,64 +4703,6 @@
         <node concept="3clFbS" id="8CgsWncaeR" role="nvhr_">
           <node concept="3clFbJ" id="8CgsWnbnxV" role="3cqZAp">
             <node concept="3clFbS" id="8CgsWnbnxX" role="3clFbx">
-              <node concept="2xdQw9" id="8CgsWnbqnA" role="3cqZAp">
-                <property role="2xdLsb" value="info" />
-                <node concept="3cpWs3" id="8CgsWnbrd9" role="9lYJi">
-                  <node concept="1YBJjd" id="8CgsWnbrdz" role="3uHU7w">
-                    <ref role="1YBMHb" node="8CgsWnasIo" resolve="ad" />
-                  </node>
-                  <node concept="Xl_RD" id="8CgsWnbqnC" role="3uHU7B">
-                    <property role="Xl_RC" value="ad" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2xdQw9" id="8CgsWnbriF" role="3cqZAp">
-                <property role="2xdLsb" value="info" />
-                <node concept="3cpWs3" id="8CgsWnbr_q" role="9lYJi">
-                  <node concept="2OqwBi" id="8CgsWnbrWi" role="3uHU7w">
-                    <node concept="1YBJjd" id="8CgsWnbr_O" role="2Oq$k0">
-                      <ref role="1YBMHb" node="8CgsWnasIo" resolve="ad" />
-                    </node>
-                    <node concept="3TrEf2" id="8CgsWnbsBm" role="2OqNvi">
-                      <ref role="3Tt5mk" to="wnzg:3CmSUB7Fw7R" resolve="init" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="8CgsWnbriH" role="3uHU7B">
-                    <property role="Xl_RC" value="ad.init" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2xdQw9" id="8CgsWnbsQb" role="3cqZAp">
-                <property role="2xdLsb" value="info" />
-                <node concept="3cpWs3" id="8CgsWnbt8M" role="9lYJi">
-                  <node concept="1Z2H0r" id="8CgsWnbt9c" role="3uHU7w">
-                    <node concept="1YBJjd" id="8CgsWnbtdW" role="1Z2MuG">
-                      <ref role="1YBMHb" node="8CgsWnasIo" resolve="ad" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="8CgsWnbsQd" role="3uHU7B">
-                    <property role="Xl_RC" value="typoef(ad)" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2xdQw9" id="8CgsWnbtkt" role="3cqZAp">
-                <property role="2xdLsb" value="info" />
-                <node concept="3cpWs3" id="8CgsWnbubI" role="9lYJi">
-                  <node concept="1Z2H0r" id="8CgsWnbuc8" role="3uHU7w">
-                    <node concept="2OqwBi" id="8CgsWnbuCp" role="1Z2MuG">
-                      <node concept="1YBJjd" id="8CgsWnbugS" role="2Oq$k0">
-                        <ref role="1YBMHb" node="8CgsWnasIo" resolve="ad" />
-                      </node>
-                      <node concept="3TrEf2" id="8CgsWnbvkm" role="2OqNvi">
-                        <ref role="3Tt5mk" to="wnzg:3CmSUB7Fw7R" resolve="init" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="8CgsWnbtkv" role="3uHU7B">
-                    <property role="Xl_RC" value="typeof(ad.init)" />
-                  </node>
-                </node>
-              </node>
               <node concept="1ZoDhX" id="8CgsWncZc_" role="3cqZAp">
                 <property role="3wDh2S" value="false" />
                 <node concept="mw_s8" id="8CgsWncZcB" role="1ZfhK$">
