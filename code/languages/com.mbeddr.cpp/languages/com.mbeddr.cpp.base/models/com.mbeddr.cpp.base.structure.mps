@@ -1105,5 +1105,87 @@
     <property role="EcuMT" value="8479367613886292001" />
     <property role="TrG5h" value="IUsageRequiresStdImport" />
   </node>
+  <node concept="1TIwiD" id="4WhfN3oe7VM">
+    <property role="EcuMT" value="5697404482618949362" />
+    <property role="TrG5h" value="CatchBlock" />
+    <property role="34LRSv" value="catch" />
+    <property role="3GE5qa" value="errorhandling" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4WhfN3oe7XA" role="1TKVEi">
+      <property role="IQ2ns" value="5697404482618949478" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="catch" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4WhfN3oe7Xr" resolve="ICatchable" />
+    </node>
+    <node concept="1TJgyj" id="4WhfN3oe7XD" role="1TKVEi">
+      <property role="IQ2ns" value="5697404482618949481" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="4WhfN3ogHef" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4WhfN3oe7Xs">
+    <property role="EcuMT" value="5697404482618949468" />
+    <property role="TrG5h" value="DefaultCatch" />
+    <property role="34LRSv" value="..." />
+    <property role="3GE5qa" value="errorhandling" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4WhfN3oe7Xt" role="PzmwI">
+      <ref role="PrY4T" node="4WhfN3oe7Xr" resolve="ICatchable" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4WhfN3oe7Xr">
+    <property role="EcuMT" value="5697404482618949467" />
+    <property role="TrG5h" value="ICatchable" />
+    <property role="3GE5qa" value="errorhandling" />
+  </node>
+  <node concept="1TIwiD" id="4WhfN3ocFih">
+    <property role="EcuMT" value="5697404482618569873" />
+    <property role="TrG5h" value="ThrowStatement" />
+    <property role="34LRSv" value="throw" />
+    <property role="3GE5qa" value="errorhandling" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="4WhfN3ocFjQ" role="1TKVEi">
+      <property role="IQ2ns" value="5697404482618569974" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4WhfN3oe7VL">
+    <property role="EcuMT" value="5697404482618949361" />
+    <property role="TrG5h" value="TryCatchStatement" />
+    <property role="34LRSv" value="try" />
+    <property role="3GE5qa" value="errorhandling" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="1TJgyj" id="4WhfN3oe7VN" role="1TKVEi">
+      <property role="IQ2ns" value="5697404482618949363" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="1TJgyj" id="4WhfN3oe7VQ" role="1TKVEi">
+      <property role="IQ2ns" value="5697404482618949366" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="catches" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="4WhfN3oe7VM" resolve="CatchBlock" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4WhfN3oefOo">
+    <property role="EcuMT" value="5697404482618981656" />
+    <property role="TrG5h" value="TypeCatch" />
+    <property role="3GE5qa" value="errorhandling" />
+    <ref role="1TJDcQ" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+    <node concept="PrWs8" id="4WhfN3oefOp" role="PzmwI">
+      <ref role="PrY4T" node="4WhfN3oe7Xr" resolve="ICatchable" />
+    </node>
+  </node>
 </model>
 
