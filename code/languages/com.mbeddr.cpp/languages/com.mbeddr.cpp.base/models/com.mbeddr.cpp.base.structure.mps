@@ -1055,6 +1055,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="7mGKYHhDf8Q" role="PzmwI">
+      <ref role="PrY4T" node="7mGKYHhDe0x" resolve="IUsageRequiresStdImport" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4KCRVMvtEXq">
     <property role="EcuMT" value="5487882147173150554" />
@@ -1097,6 +1100,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBEtu" resolve="ClassType" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="7mGKYHhDe0x">
+    <property role="EcuMT" value="8479367613886292001" />
+    <property role="TrG5h" value="IUsageRequiresStdImport" />
   </node>
 </model>
 

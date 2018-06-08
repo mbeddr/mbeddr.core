@@ -200,7 +200,7 @@
   </registry>
   <node concept="2v9HqL" id="6WSa0snB9yR">
     <node concept="2AWWZL" id="6WSa0snB9yS" role="2AWWZH">
-      <property role="2AWWZJ" value="gcc" />
+      <property role="2AWWZJ" value="g++" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
       <property role="1FkSt$" value="-g" />
@@ -224,7 +224,7 @@
       <node concept="3GpDuv" id="6WSa0snB9zr" role="3GpDut" />
     </node>
     <node concept="2eOfOl" id="6WSa0snB9zv" role="2ePNbc">
-      <property role="iO3LB" value="false" />
+      <property role="iO3LB" value="true" />
       <property role="TrG5h" value="New_Delete_Tests" />
       <ref role="3oK8_y" node="6WSa0snAr4W" resolve="portable" />
       <node concept="2v9HqM" id="6WSa0snB9z$" role="2eOfOg">
@@ -366,7 +366,7 @@
             <ref role="3ZVs_2" node="6WSa0sojs2t" resolve="newDeleteInt2" />
           </node>
         </node>
-        <node concept="3XISUE" id="72UYQRW$U3W" role="3XIRFZ" />
+        <node concept="3XISUE" id="7mGKYHhNH2K" role="3XIRFZ" />
         <node concept="3XIRlf" id="72UYQRW$UeX" role="3XIRFZ">
           <property role="TrG5h" value="ndc1" />
           <node concept="3mBfEi" id="72UYQRW$UeV" role="2C2TGm">
