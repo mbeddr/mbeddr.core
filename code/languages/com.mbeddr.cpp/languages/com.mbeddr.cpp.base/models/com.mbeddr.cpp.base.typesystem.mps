@@ -1214,7 +1214,7 @@
   </node>
   <node concept="18kY7G" id="6ddXmWdG7b9">
     <property role="TrG5h" value="check_ClassConstructor" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <node concept="3clFbS" id="6ddXmWdG7ba" role="18ibNy">
       <node concept="3cpWs8" id="3Mwr0rV_Cll" role="3cqZAp">
         <node concept="3cpWsn" id="3Mwr0rV_Clm" role="3cpWs9">
@@ -1455,7 +1455,7 @@
   </node>
   <node concept="1YbPZF" id="7DDmkz3qBq">
     <property role="TrG5h" value="typeof_ConstructorInitializedAttribute" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <node concept="3clFbS" id="7DDmkz3qBr" role="18ibNy">
       <node concept="3cpWs8" id="6_kdBKN7EXJ" role="3cqZAp">
         <node concept="3cpWsn" id="6_kdBKN7_xO" role="3cpWs9">
@@ -1556,7 +1556,7 @@
   </node>
   <node concept="18kY7G" id="4KyQ_QhNKFY">
     <property role="TrG5h" value="check_ConstructorInitializedConstructor" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <node concept="3clFbS" id="4KyQ_QhNKFZ" role="18ibNy">
       <node concept="3clFbJ" id="1rV7RaURpzx" role="3cqZAp">
         <node concept="3clFbS" id="1rV7RaURpzz" role="3clFbx">
@@ -2858,7 +2858,7 @@
   </node>
   <node concept="18kY7G" id="3p40HKhGUqA">
     <property role="TrG5h" value="check_IAmConstructorInitializable" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <node concept="3clFbS" id="3p40HKhGUqB" role="18ibNy">
       <node concept="3clFbJ" id="3p40HKhGUqK" role="3cqZAp">
         <node concept="2OqwBi" id="3p40HKhGVeA" role="3clFbw">

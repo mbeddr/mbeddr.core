@@ -418,7 +418,7 @@
     <ref role="1M2myG" to="wnzg:6hUtorE0jsx" resolve="IClassTyped" />
   </node>
   <node concept="1M2fIO" id="7DDmkyXkvJ">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="1M2myG" to="wnzg:7DDmkyVr_r" resolve="ConstructorInitializedAttribute" />
     <node concept="1N5Pfh" id="7DDmkz1IpA" role="1Mr941">
       <ref role="1N5Vy1" to="wnzg:7DDmkz1Ipj" resolve="identity" />
@@ -531,7 +531,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7DDmkza$8D">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="1M2myG" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
     <node concept="1N5Pfh" id="7DDmkza$8E" role="1Mr941">
       <ref role="1N5Vy1" to="wnzg:7DDmkza$5N" resolve="identity" />

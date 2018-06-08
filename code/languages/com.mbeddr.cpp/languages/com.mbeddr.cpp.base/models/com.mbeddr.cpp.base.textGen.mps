@@ -1367,7 +1367,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="6hUtorDPkwX">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="WuzLi" to="wnzg:6hUtorDPkwW" resolve="ConstructorVoidType" />
     <node concept="11bSqf" id="6hUtorDPkwY" role="11c4hB">
       <node concept="3clFbS" id="6hUtorDPkwZ" role="2VODD2">
@@ -1380,7 +1380,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="4KyQ_QhDpke">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="WuzLi" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
     <node concept="11bSqf" id="4KyQ_QhDpkf" role="11c4hB">
       <node concept="3clFbS" id="4KyQ_QhDpkg" role="2VODD2">
@@ -1839,7 +1839,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="6ddXmWdNsw1">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="WuzLi" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
     <node concept="11bSqf" id="6ddXmWdNsw2" role="11c4hB">
       <node concept="3clFbS" id="6ddXmWdNsw3" role="2VODD2">
@@ -1975,7 +1975,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="7DDmkz5meI">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="WuzLi" to="wnzg:7DDmkyVr_r" resolve="ConstructorInitializedAttribute" />
     <node concept="11bSqf" id="7DDmkz5meJ" role="11c4hB">
       <node concept="3clFbS" id="7DDmkz5meK" role="2VODD2">

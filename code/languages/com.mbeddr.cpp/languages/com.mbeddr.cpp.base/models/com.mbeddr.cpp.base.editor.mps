@@ -1111,7 +1111,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7DDmkyVrAx">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="1XX52x" to="wnzg:7DDmkyVr_r" resolve="ConstructorInitializedAttribute" />
     <node concept="3EZMnI" id="7DDmkz0vlt" role="2wV5jI">
       <node concept="1iCGBv" id="7DDmkz1IuF" role="3EZMnx">
@@ -1141,7 +1141,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7DDmkza$5I">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="1XX52x" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
     <node concept="3EZMnI" id="7DDmkza$5T" role="2wV5jI">
       <node concept="1iCGBv" id="7DDmkza$63" role="3EZMnx">
@@ -1227,7 +1227,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6NtgknWJ21f">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="1XX52x" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
     <node concept="3EZMnI" id="6NtgknWJ3xP" role="2wV5jI">
       <node concept="3F0A7n" id="6NtgknWJ3xZ" role="3EZMnx">
@@ -1336,7 +1336,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="6NtgknWJ3yn">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="constructorSignature" />
     <ref role="1XX52x" to="wnzg:6NtgknWJ21h" resolve="ClassConstructorSignature" />
     <node concept="3EZMnI" id="6NtgknWJ3yP" role="2wV5jI">
@@ -3515,7 +3515,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="7j9KGYKZMY5">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="PreventAutocompleteOnConstructorName" />
     <ref role="1h_SK9" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
     <node concept="1hA7zw" id="7j9KGYKZMY6" role="1h_SK8">

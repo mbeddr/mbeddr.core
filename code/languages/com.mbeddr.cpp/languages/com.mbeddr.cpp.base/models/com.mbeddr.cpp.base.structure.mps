@@ -388,7 +388,7 @@
   <node concept="1TIwiD" id="6NtgknWJ20B">
     <property role="EcuMT" value="7844497894798008359" />
     <property role="TrG5h" value="ClassConstructorDeclaration" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="34LRSv" value="constructor" />
     <property role="R4oN_" value="A class constructor" />
     <ref role="1TJDcQ" node="6NtgknWJ21h" resolve="ClassConstructorSignature" />
@@ -426,7 +426,7 @@
   </node>
   <node concept="PlHQZ" id="3n$8_Xbpg8r">
     <property role="EcuMT" value="3883266571382358555" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="IAmConstructorInitializable" />
     <node concept="t5JxF" id="3n$8_Xbpga3" role="lGtFl">
       <property role="t5JxN" value="This interface is responsible for things that can come after a : on a constructor implementation." />
@@ -434,7 +434,7 @@
   </node>
   <node concept="1TIwiD" id="6NtgknWJ21h">
     <property role="EcuMT" value="7844497894798008401" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="ClassConstructorSignature" />
     <property role="R4oN_" value="very similar to the normal method signature, but has some quirks because it isn't named (all constructors have the same name)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -492,14 +492,14 @@
   </node>
   <node concept="1TIwiD" id="6hUtorDPkwW">
     <property role="EcuMT" value="7240228573260630076" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="ConstructorVoidType" />
     <property role="R4oN_" value="empty declaration of VoidType" />
     <ref role="1TJDcQ" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
   </node>
   <node concept="1TIwiD" id="7DDmkyVr_r">
     <property role="EcuMT" value="137823117407795547" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="ConstructorInitializedAttribute" />
     <property role="R4oN_" value="ClassConstructor() : attribute(value)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -531,7 +531,7 @@
   </node>
   <node concept="1TIwiD" id="7DDmkz5m05">
     <property role="EcuMT" value="137823117410394117" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="ConstructorInitializedConstructor" />
     <property role="R4oN_" value="Base constructor calls like ConstructorA(int32 a) : ConstructorB(a)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />

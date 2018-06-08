@@ -3047,7 +3047,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6ddXmWdEGr3">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="13h7C2" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
     <node concept="13hLZK" id="6ddXmWdEGr4" role="13h7CW">
       <node concept="3clFbS" id="6ddXmWdEGr5" role="2VODD2">
@@ -3330,7 +3330,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6ddXmWdIoFl">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="13h7C2" to="wnzg:6NtgknWJ21h" resolve="ClassConstructorSignature" />
     <node concept="13hLZK" id="6ddXmWdIoFm" role="13h7CW">
       <node concept="3clFbS" id="6ddXmWdIoFn" role="2VODD2" />
@@ -3917,14 +3917,14 @@
     </node>
   </node>
   <node concept="13h7C7" id="7DDmkz3ngd">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="13h7C2" to="wnzg:7DDmkyVr_r" resolve="ConstructorInitializedAttribute" />
     <node concept="13hLZK" id="7DDmkz3nge" role="13h7CW">
       <node concept="3clFbS" id="7DDmkz3ngf" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="7DDmkzciF4">
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <ref role="13h7C2" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
     <node concept="13hLZK" id="7DDmkzciF5" role="13h7CW">
       <node concept="3clFbS" id="7DDmkzciF6" role="2VODD2" />
