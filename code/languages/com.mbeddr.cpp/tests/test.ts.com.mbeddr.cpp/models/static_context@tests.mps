@@ -9,7 +9,6 @@
     <devkit ref="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" />
   </languages>
   <imports>
-    <import index="vbi9" ref="8c081446-e4ba-48b7-a7e0-3db40e2c3439/i:f010101(com.mbeddr.cpp.base/com.mbeddr.cpp.base@descriptor)" />
     <import index="g7jk" ref="r:e06e24a5-d0fa-4f76-9dee-2042532d92a1(com.mbeddr.cpp.base.typesystem)" />
   </imports>
   <registry>
