@@ -2,7 +2,7 @@
 <model ref="r:b51ed3f8-f18c-4b51-8a93-f4ee7f6adf9a(com.mbeddr.cpp.expressions.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -17,6 +17,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -119,6 +120,13 @@
     <node concept="PrWs8" id="3v5DuFDsm_2" role="PzmwI">
       <ref role="PrY4T" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3p40HKhBtQG">
+    <property role="EcuMT" value="3910253520676052396" />
+    <property role="TrG5h" value="ArrayAttributeInitExpression" />
+    <property role="R4oN_" value="An init expression for arrays ( = {1,2,3} ) as class members." />
+    <property role="34LRSv" value="{" />
+    <ref role="1TJDcQ" to="c4fa:7FkLcyyQKyx" resolve="InitExpression" />
   </node>
   <node concept="1TIwiD" id="2yiFVcKEErD">
     <property role="EcuMT" value="2923592292267370217" />

@@ -2,7 +2,7 @@
 <model ref="r:58e41aa3-726f-4241-9dda-8560dd8a7245(com.mbeddr.cpp.base.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -205,12 +205,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="37WvkG" id="phuaKKj7Se" role="37WGs$">
-      <ref role="37XkoT" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
-      <node concept="37Y9Zx" id="phuaKKj7Sf" role="37ZfLb">
-        <node concept="3clFbS" id="phuaKKj7Sg" role="2VODD2" />
       </node>
     </node>
   </node>

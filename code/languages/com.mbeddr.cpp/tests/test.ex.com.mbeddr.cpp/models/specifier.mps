@@ -111,6 +111,11 @@
       </concept>
       <concept id="842732463503928106" name="com.mbeddr.core.unittest.structure.NoTestIsolationStrategy" flags="ng" index="3GpDuv" />
     </language>
+    <language id="b341759a-c721-4072-90cf-328bb2724684" name="com.mbeddr.cpp.expressions">
+      <concept id="4018800670855442482" name="com.mbeddr.cpp.expressions.structure.InternalMethodCall" flags="ng" index="3uHhno">
+        <reference id="4018800670855442567" name="method" index="3uHhlH" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -184,12 +189,12 @@
         <property role="TrG5h" value="staticField" />
         <property role="226hDV" value="true" />
         <property role="1wg9_F" value="public" />
+        <node concept="3uHhno" id="7j9KGYMPDrF" role="3XIe9v">
+          <ref role="3uHhlH" node="1Yr26iukrNB" resolve="inlinedMethod" />
+        </node>
         <node concept="26Vqph" id="5eDFAXBt0Ga" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="3TlMh9" id="5eDFAXBt0GE" role="3XIe9v">
-          <property role="2hmy$m" value="0" />
         </node>
       </node>
       <node concept="3u$6M4" id="5eDFAXBt0Ao" role="3mBdys" />
@@ -199,7 +204,7 @@
         <property role="OtGCv" value="true" />
         <node concept="26Vqph" id="5eDFAXBNIUC" role="2C2TGm">
           <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
+          <property role="2c7vTL" value="true" />
         </node>
         <node concept="3TlMh9" id="5eDFAXBNIV$" role="3XIe9v">
           <property role="2hmy$m" value="0" />
@@ -223,7 +228,7 @@
         <property role="O23RN" value="true" />
         <node concept="26Vqph" id="5eDFAXBNJc1" role="2C2TGm">
           <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
+          <property role="2c7vTL" value="true" />
         </node>
         <node concept="3TlMh9" id="5eDFAXBNJcA" role="3XIe9v">
           <property role="2hmy$m" value="0" />
@@ -232,8 +237,9 @@
       <node concept="3u$6M4" id="5eDFAXBNIOA" role="3mBdys" />
       <node concept="3mB1cK" id="1Yr26iukrNB" role="3mBdys">
         <property role="TrG5h" value="inlinedMethod" />
-        <property role="226Go$" value="true" />
+        <property role="226Go$" value="false" />
         <property role="1wg9_F" value="private" />
+        <property role="OtGCv" value="true" />
         <node concept="26Vqph" id="1Yr26iukrNM" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
