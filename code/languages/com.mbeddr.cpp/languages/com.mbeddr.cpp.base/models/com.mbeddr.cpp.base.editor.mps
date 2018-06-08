@@ -24,7 +24,6 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
     <import index="vrqd" ref="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" />
-    <import index="gkp7" ref="r:a6defc8b-c4d9-46c9-a221-6d68fa6905e1(com.mbeddr.cpp.base.editor)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -633,7 +632,6 @@
       <node concept="PMmxH" id="5eDFAXBm98u" role="3EZMnx">
         <ref role="PMmxG" node="1Yr26itwx8V" resolve="StaticFlag" />
       </node>
-      <node concept="l2Vlx" id="4o2nsMgBJ4g" role="2iSdaV" />
       <node concept="1kIj98" id="8CgsWmd256" role="3EZMnx">
         <node concept="3desf3" id="8CgsWmPe0i" role="3desfC">
           <ref role="3desfc" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
@@ -667,6 +665,7 @@
           </node>
         </node>
       </node>
+      <node concept="l2Vlx" id="4o2nsMgBJ4g" role="2iSdaV" />
       <node concept="PMmxH" id="5eDFAXBCDda" role="3EZMnx">
         <ref role="PMmxG" node="5eDFAXBCpeS" resolve="VolatileFlag" />
       </node>

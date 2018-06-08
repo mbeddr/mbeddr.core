@@ -81,9 +81,6 @@
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
-      <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
-        <reference id="747084250476878887" name="chunk" index="3GEb4d" />
-      </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
       <concept id="7240228573262412204" name="com.mbeddr.cpp.base.structure.LocalClassVariableDeclaration" flags="ng" index="2dywKE">
@@ -92,11 +89,11 @@
       </concept>
       <concept id="7240228573260630076" name="com.mbeddr.cpp.base.structure.ConstructorVoidType" flags="ng" index="2dFNQU" />
       <concept id="7844497894798008401" name="com.mbeddr.cpp.base.structure.ClassConstructorSignature" flags="ng" index="2gom4k">
-        <property id="6088872510303555204" name="is_destructor" index="3BMcJd" />
+        <property id="6088872510303555204" name="isDestructor" index="3BMcJd" />
         <child id="7155645240280389397" name="body" index="1IVm9U" />
       </concept>
       <concept id="7844497894798008359" name="com.mbeddr.cpp.base.structure.ClassConstructorDeclaration" flags="ng" index="2gom5y">
-        <reference id="7844497894798008388" name="parent_class" index="2gom41" />
+        <reference id="7844497894798008388" name="parentClass" index="2gom41" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
@@ -123,7 +120,6 @@
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
-        <child id="1317894735999304826" name="imports" index="2OODSX" />
       </concept>
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
@@ -516,9 +512,6 @@
         <ref role="3cM6IK" node="29cSqvdUcQK" resolve="NullPointerTC3" />
       </node>
     </node>
-    <node concept="3GEVxB" id="29cSqveibuD" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
-    </node>
   </node>
   <node concept="2v9HqL" id="29cSqvdU9M2">
     <node concept="2eOfOl" id="4o2nsMgBpPF" role="2ePNbc">
@@ -527,9 +520,6 @@
       <ref role="3oK8_y" node="3v5DuFDkAwn" resolve="portable" />
       <node concept="2v9HqM" id="29cSqvdU9MM" role="2eOfOg">
         <ref role="2v9HqP" node="29cSqvdU9M0" resolve="NullPointer" />
-      </node>
-      <node concept="2v9HqM" id="29cSqvedsNV" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="3v5DuFDtvd1" role="2Q9xDr">
