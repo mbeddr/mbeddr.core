@@ -2,8 +2,8 @@
 <model ref="r:e06e24a5-d0fa-4f76-9dee-2042532d92a1(com.mbeddr.cpp.base.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
     <devkit ref="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" />
   </languages>
@@ -308,6 +308,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -320,6 +321,9 @@
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
+      </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -4695,6 +4699,76 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="4V1wcOaIyst" role="1B3o_S" />
+  </node>
+  <node concept="18kY7G" id="6zyIeiaAPTc">
+    <property role="3GE5qa" value="namespace" />
+    <property role="TrG5h" value="check_NamespaceDeclaration" />
+    <node concept="3clFbS" id="6zyIeiaAPTd" role="18ibNy">
+      <node concept="2Gpval" id="6zyIeiaAPTI" role="3cqZAp">
+        <node concept="2GrKxI" id="6zyIeiaAPTJ" role="2Gsz3X">
+          <property role="TrG5h" value="namespaceDec" />
+        </node>
+        <node concept="2OqwBi" id="6zyIeiaARix" role="2GsD0m">
+          <node concept="2OqwBi" id="6zyIeiaAQep" role="2Oq$k0">
+            <node concept="1YBJjd" id="6zyIeiaAPVY" role="2Oq$k0">
+              <ref role="1YBMHb" node="6zyIeiaAPTf" resolve="nsD" />
+            </node>
+            <node concept="I4A8Y" id="6zyIeiaAQET" role="2OqNvi" />
+          </node>
+          <node concept="2SmgA7" id="6zyIeiaARsB" role="2OqNvi">
+            <node concept="chp4Y" id="6zyIeiaARwy" role="1dBWTz">
+              <ref role="cht4Q" to="wnzg:383ZxwZqQYo" resolve="NamespaceDeclaration" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6zyIeiaAPTL" role="2LFqv$">
+          <node concept="3clFbJ" id="6zyIeiaAR_y" role="3cqZAp">
+            <node concept="1Wc70l" id="6zyIeiaBolE" role="3clFbw">
+              <node concept="3y3z36" id="6zyIeiaBp2c" role="3uHU7w">
+                <node concept="1YBJjd" id="6zyIeiaBpff" role="3uHU7w">
+                  <ref role="1YBMHb" node="6zyIeiaAPTf" resolve="nsD" />
+                </node>
+                <node concept="2GrUjf" id="6zyIeiaBozd" role="3uHU7B">
+                  <ref role="2Gs0qQ" node="6zyIeiaAPTJ" resolve="namespaceDec" />
+                </node>
+              </node>
+              <node concept="3clFbC" id="6zyIeiaATbp" role="3uHU7B">
+                <node concept="2OqwBi" id="6zyIeiaARS0" role="3uHU7B">
+                  <node concept="2GrUjf" id="6zyIeiaAR_L" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="6zyIeiaAPTJ" resolve="namespaceDec" />
+                  </node>
+                  <node concept="3TrcHB" id="6zyIeiaASp4" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6zyIeiaATTV" role="3uHU7w">
+                  <node concept="1YBJjd" id="6zyIeiaATnY" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6zyIeiaAPTf" resolve="nsD" />
+                  </node>
+                  <node concept="3TrcHB" id="6zyIeiaAUyx" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6zyIeiaAR_$" role="3clFbx">
+              <node concept="a7r0C" id="6zyIeiaAZZV" role="3cqZAp">
+                <node concept="Xl_RD" id="6zyIeiaAZZX" role="a7wSD">
+                  <property role="Xl_RC" value="Duplicate name can make variables ambiguous" />
+                </node>
+                <node concept="1YBJjd" id="6zyIeiaAZZY" role="2OEOjV">
+                  <ref role="1YBMHb" node="6zyIeiaAPTf" resolve="nsD" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6zyIeiaAPTf" role="1YuTPh">
+      <property role="TrG5h" value="nsD" />
+      <ref role="1YaFvo" to="wnzg:383ZxwZqQYo" resolve="NamespaceDeclaration" />
+    </node>
   </node>
   <node concept="1YbPZF" id="8CgsWnasIl">
     <property role="TrG5h" value="typeof_AttributeDeclaration" />
