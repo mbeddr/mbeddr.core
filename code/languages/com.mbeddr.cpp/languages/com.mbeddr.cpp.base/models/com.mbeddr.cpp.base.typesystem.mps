@@ -1822,6 +1822,42 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="7mGKYHhk$HL" role="3cqZAp" />
+      <node concept="3clFbJ" id="7mGKYHhk$M6" role="3cqZAp">
+        <node concept="3clFbS" id="7mGKYHhk$M8" role="3clFbx">
+          <node concept="2MkqsV" id="7mGKYHhkF9y" role="3cqZAp">
+            <node concept="Xl_RD" id="7mGKYHhkF9O" role="2MkJ7o">
+              <property role="Xl_RC" value="Static member can't be const" />
+            </node>
+            <node concept="1YBJjd" id="7mGKYHhkFa7" role="2OEOjV">
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="7mGKYHhkAKf" role="3clFbw">
+          <node concept="2OqwBi" id="7mGKYHhkEpY" role="3uHU7w">
+            <node concept="2OqwBi" id="7mGKYHhkBx5" role="2Oq$k0">
+              <node concept="1YBJjd" id="7mGKYHhkAYu" role="2Oq$k0">
+                <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+              </node>
+              <node concept="3TrEf2" id="7mGKYHhkDmD" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="7mGKYHhkESQ" role="2OqNvi">
+              <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7mGKYHhk_i1" role="3uHU7B">
+            <node concept="1YBJjd" id="7mGKYHhk$Ox" role="2Oq$k0">
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="7mGKYHhkA9B" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="2L1k$oXKZ8O" role="1YuTPh">
       <property role="TrG5h" value="methodDeclaration" />
@@ -1997,12 +2033,27 @@
             <node concept="3w_OXm" id="15T8UHynz0O" role="2OqNvi" />
           </node>
           <node concept="1eOMI4" id="15T8UHyscrJ" role="3uHU7B">
-            <node concept="2OqwBi" id="15T8UHynzCN" role="1eOMHV">
-              <node concept="1YBJjd" id="15T8UHynzgZ" role="2Oq$k0">
-                <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
+            <node concept="22lmx$" id="7mGKYHhjIwN" role="1eOMHV">
+              <node concept="2OqwBi" id="7mGKYHhjLjn" role="3uHU7w">
+                <node concept="2OqwBi" id="7mGKYHhjJ3w" role="2Oq$k0">
+                  <node concept="1YBJjd" id="7mGKYHhjIHs" role="2Oq$k0">
+                    <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
+                  </node>
+                  <node concept="3TrEf2" id="7mGKYHhjKnK" role="2OqNvi">
+                    <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="7mGKYHhjLKD" role="2OqNvi">
+                  <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
+                </node>
               </node>
-              <node concept="3TrcHB" id="15T8UHyn$IH" role="2OqNvi">
-                <ref role="3TsBF5" to="wnzg:5eDFAXBRQhK" resolve="isConstExpr" />
+              <node concept="2OqwBi" id="15T8UHynzCN" role="3uHU7B">
+                <node concept="1YBJjd" id="15T8UHynzgZ" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5eDFAXBGiPD" resolve="attributeDeclaration" />
+                </node>
+                <node concept="3TrcHB" id="15T8UHyn$IH" role="2OqNvi">
+                  <ref role="3TsBF5" to="wnzg:5eDFAXBRQhK" resolve="isConstExpr" />
+                </node>
               </node>
             </node>
           </node>
@@ -3626,7 +3677,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="72UYQRWvwJl">
-    <property role="TrG5h" value="check_DeleteDecleration" />
+    <property role="TrG5h" value="check_DeleteDeclaration" />
     <property role="3GE5qa" value="class" />
     <node concept="3clFbS" id="72UYQRWvwJm" role="18ibNy">
       <node concept="3clFbJ" id="72UYQRWvzhx" role="3cqZAp">
