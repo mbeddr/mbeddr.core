@@ -794,12 +794,6 @@
       <node concept="2v9HqM" id="3UJ18qjr4L7" role="2eOfOg">
         <ref role="2v9HqP" node="3UJ18qjr4K_" resolve="Namespace" />
       </node>
-      <node concept="2v9HqM" id="3v5DuFDttij" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
-      </node>
-      <node concept="2v9HqM" id="3v5DuFDttik" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
-      </node>
     </node>
     <node concept="2Q9Fgs" id="3v5DuFDtvd1" role="2Q9xDr">
       <node concept="2Q9FjX" id="3v5DuFDtvd2" role="2Q9FjI" />

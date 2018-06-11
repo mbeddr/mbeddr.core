@@ -309,12 +309,6 @@
       <node concept="2v9HqM" id="2_lkiVk5JE3" role="2eOfOg">
         <ref role="2v9HqP" node="2_lkiVj_DvU" resolve="Templates" />
       </node>
-      <node concept="2v9HqM" id="3v5DuFDttij" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
-      </node>
-      <node concept="2v9HqM" id="3v5DuFDttik" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
-      </node>
     </node>
     <node concept="2Q9Fgs" id="3v5DuFDtvd1" role="2Q9xDr">
       <node concept="2Q9FjX" id="3v5DuFDtvd2" role="2Q9FjI" />
@@ -1181,7 +1175,7 @@
           <node concept="2qmXGp" id="1CWIc7F69Gy" role="3XIe9u">
             <node concept="yFYmZ" id="1CWIc7F69Hw" role="1ESnxz">
               <ref role="3mBbHN" node="76fdl5j8cq7" resolve="foobar" />
-              <node concept="3TlMh9" id="1CWIc7F69P_" role="3mBtou">
+              <node concept="3TlMh9" id="6Rfiwa9QF_K" role="3mBtou">
                 <property role="2hmy$m" value="1" />
               </node>
               <node concept="3TlMhK" id="1CWIc7F69Sy" role="3mBtou" />
