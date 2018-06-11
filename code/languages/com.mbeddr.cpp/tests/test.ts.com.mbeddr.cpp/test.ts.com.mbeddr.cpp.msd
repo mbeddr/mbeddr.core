@@ -12,6 +12,8 @@
     <dependency reexport="false">8c081446-e4ba-48b7-a7e0-3db40e2c3439(com.mbeddr.cpp.base)</dependency>
     <dependency reexport="false">~_PreferencesModule#com.mbeddr.core.__spreferences.PlatformTemplates(com.mbeddr.core.__spreferences.PlatformTemplates)</dependency>
     <dependency reexport="false">dd4979e3-3be6-46b3-9e1e-c36309e30758(com.mbeddr.cpp.modules)</dependency>
+    <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
+    <dependency reexport="false">5e6018dc-dc26-4070-9526-663fdbfe4c10(com.mbeddr.cpp.templates)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
@@ -84,7 +86,9 @@
     <module reference="efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)" version="1" />
     <module reference="~_PreferencesModule#com.mbeddr.cpp.__spreferences.PlatformTemplates(com.mbeddr.cpp.__spreferences.PlatformTemplates)" version="0" />
     <module reference="8c081446-e4ba-48b7-a7e0-3db40e2c3439(com.mbeddr.cpp.base)" version="0" />
+    <module reference="b341759a-c721-4072-90cf-328bb2724684(com.mbeddr.cpp.expressions)" version="0" />
     <module reference="dd4979e3-3be6-46b3-9e1e-c36309e30758(com.mbeddr.cpp.modules)" version="0" />
+    <module reference="5e6018dc-dc26-4070-9526-663fdbfe4c10(com.mbeddr.cpp.templates)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
     <module reference="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />

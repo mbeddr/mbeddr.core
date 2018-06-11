@@ -133,6 +133,10 @@
       <concept id="4018800670853679470" name="com.mbeddr.cpp.base.structure.EmptyClassContent" flags="ng" index="3u$6M4" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="8551646674110395547" name="com.mbeddr.core.modules.structure.FunctionRefType" flags="ng" index="pFrBc">
+        <child id="8551646674110395549" name="argTypes" index="pFrBa" />
+        <child id="8551646674110395548" name="returnType" index="pFrBb" />
+      </concept>
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
@@ -902,6 +906,35 @@
                 <property role="2c7vTL" value="false" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="6ODoR9yLrpz" role="N3F5h">
+      <property role="TrG5h" value="empty_1528446263211_1" />
+    </node>
+    <node concept="N3Fnx" id="6ODoR9yLrVd" role="N3F5h">
+      <property role="TrG5h" value="testje" />
+      <property role="2OOxQR" value="false" />
+      <node concept="3XIRFW" id="6ODoR9yLrVf" role="3XIRFY">
+        <node concept="3XISUE" id="6ODoR9yLrVg" role="3XIRFZ" />
+      </node>
+      <node concept="19Rifw" id="6ODoR9yLrJN" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="6ODoR9yLs6E" role="1UOdpc">
+        <property role="TrG5h" value="foo" />
+        <node concept="pFrBc" id="6ODoR9yLs6C" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <node concept="26Vqph" id="6ODoR9yLs7w" role="pFrBb">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="26Vqph" id="6ODoR9yLs77" role="pFrBa">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
           </node>
         </node>
       </node>
