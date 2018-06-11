@@ -8,6 +8,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.cpp/com.mbeddr.cpp.devkit" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.base/com.mbeddr.cpp.base.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.buildconfig/com.mbeddr.cpp.buildconfig.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.exceptions/com.mbeddr.cpp.exceptions.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.expressions/com.mbeddr.cpp.expressions.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.modules.gen/com.mbeddr.cpp.modules.gen.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.cpp.modules/com.mbeddr.cpp.modules.mpl" folder="lang" />
