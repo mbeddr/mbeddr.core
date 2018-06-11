@@ -139,18 +139,6 @@
       <concept id="2277423264798199359" name="com.mbeddr.cpp.base.structure.IInlineFlagConcept" flags="ng" index="226Gpr">
         <property id="2277423264798199360" name="isInlined" index="226Go$" />
       </concept>
-      <concept id="5697404482618569873" name="com.mbeddr.cpp.base.structure.ThrowStatement" flags="ng" index="2n8SIx">
-        <child id="5697404482618569974" name="value" index="2n8SJ6" />
-      </concept>
-      <concept id="5697404482618949468" name="com.mbeddr.cpp.base.structure.DefaultCatch" flags="ng" index="2nak1G" />
-      <concept id="5697404482618949361" name="com.mbeddr.cpp.base.structure.TryCatchStatement" flags="ng" index="2nak71">
-        <child id="5697404482618949363" name="body" index="2nak73" />
-        <child id="5697404482618949366" name="catches" index="2nak76" />
-      </concept>
-      <concept id="5697404482618949362" name="com.mbeddr.cpp.base.structure.CatchBlock" flags="ng" index="2nak72">
-        <child id="5697404482618949478" name="catch" index="2nak1m" />
-        <child id="5697404482618949481" name="body" index="2nak1p" />
-      </concept>
       <concept id="7710120554545509222" name="com.mbeddr.cpp.base.structure.AutoType" flags="ng" index="RSaEH" />
       <concept id="5044697665789421259" name="com.mbeddr.cpp.base.structure.AttributeDeclaration" flags="ng" index="3mBbG7" />
       <concept id="5044697665789421253" name="com.mbeddr.cpp.base.structure.IClassMemberDeclaration" flags="ng" index="3mBbG9">
@@ -199,8 +187,17 @@
       </concept>
     </language>
     <language id="2e15e1a4-8998-4f06-86b2-8d184a179e8e" name="com.mbeddr.cpp.exceptions">
-      <concept id="5697404482618569873" name="com.mbeddr.cpp.exceptions.structure.ThrowStatement" flags="ng" index="2n8SIy">
-        <child id="5697404482618569974" name="value" index="2n8SJ7" />
+      <concept id="5697404482618569873" name="com.mbeddr.cpp.exceptions.structure.ThrowStatement" flags="ng" index="2n8SIx">
+        <child id="5697404482618569974" name="value" index="2n8SJ6" />
+      </concept>
+      <concept id="5697404482618949468" name="com.mbeddr.cpp.exceptions.structure.DefaultCatch" flags="ng" index="2nak1G" />
+      <concept id="5697404482618949361" name="com.mbeddr.cpp.exceptions.structure.TryCatchStatement" flags="ng" index="2nak71">
+        <child id="5697404482618949363" name="body" index="2nak73" />
+        <child id="5697404482618949366" name="catches" index="2nak76" />
+      </concept>
+      <concept id="5697404482618949362" name="com.mbeddr.cpp.exceptions.structure.CatchBlock" flags="ng" index="2nak72">
+        <child id="5697404482618949478" name="catch" index="2nak1m" />
+        <child id="5697404482618949481" name="body" index="2nak1p" />
       </concept>
     </language>
     <language id="dd4979e3-3be6-46b3-9e1e-c36309e30758" name="com.mbeddr.cpp.modules">
@@ -362,25 +359,16 @@
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="3XIRFW" id="6Rfiwa9$hD0" role="c0Qz3">
-        <node concept="3XISUE" id="6Rfiwa9$hD2" role="3XIRFZ" />
-        <node concept="2nak71" id="6Rfiwa9$hCU" role="3XIRFZ">
-          <node concept="3XIRFW" id="6Rfiwa9$hCV" role="2nak73">
-            <node concept="2n8SIx" id="6Rfiwa9$ird" role="3XIRFZ">
-              <node concept="PhEJO" id="6Rfiwa9$irj" role="2n8SJ6">
-                <property role="PhEJT" value="some_dangerous_thing" />
-              </node>
-            </node>
-          </node>
-          <node concept="2nak72" id="6Rfiwa9$hCX" role="2nak76">
-            <node concept="2nak1G" id="6Rfiwa9$iqp" role="2nak1m" />
-            <node concept="3XIRFW" id="6Rfiwa9$hCZ" role="2nak1p">
-              <node concept="3XISUE" id="6Rfiwa9$i2m" role="3XIRFZ" />
-            </node>
+        <node concept="2nak71" id="1uhlT4tJ0ui" role="3XIRFZ">
+          <node concept="3XIRFW" id="1uhlT4tJ0uk" role="2nak73" />
+          <node concept="2nak72" id="1uhlT4tJ0um" role="2nak76">
+            <node concept="2nak1G" id="1uhlT4tJ0wh" role="2nak1m" />
+            <node concept="3XIRFW" id="1uhlT4tJ0up" role="2nak1p" />
           </node>
         </node>
         <node concept="3XISUE" id="6Rfiwa9$hHw" role="3XIRFZ" />
-        <node concept="2n8SIy" id="6Rfiwa9$hIn" role="3XIRFZ">
-          <node concept="PhEJO" id="6Rfiwa9$iqv" role="2n8SJ7">
+        <node concept="2n8SIx" id="6Rfiwa9$hIn" role="3XIRFZ">
+          <node concept="PhEJO" id="6Rfiwa9$iqv" role="2n8SJ6">
             <property role="PhEJT" value="someValue" />
           </node>
         </node>
