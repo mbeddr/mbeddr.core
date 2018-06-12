@@ -150,6 +150,7 @@
       <concept id="1771923826942799313" name="com.mbeddr.cpp.base.structure.InnerClassType" flags="ng" index="TrGU4">
         <child id="1771923826942799314" name="outerclassType" index="TrGU7" />
       </concept>
+      <concept id="4362269716971787562" name="com.mbeddr.cpp.base.structure.ClassComment" flags="ng" index="321v0r" />
       <concept id="5487882147173150554" name="com.mbeddr.cpp.base.structure.NewObjectInitializer" flags="ng" index="3jnB3A">
         <reference id="5487882147173193839" name="identity" index="3jnSvj" />
         <child id="5487882147173193836" name="actuals" index="3jnSvg" />
@@ -1740,6 +1741,29 @@
           </node>
         </node>
       </node>
+      <node concept="3u$6M4" id="3M9Tj7Yz5Dj" role="3mBdys" />
+      <node concept="321v0r" id="3M9Tj7Yz5EY" role="3mBdys">
+        <node concept="OjmMv" id="3M9Tj7Yz5F0" role="3SJzmv">
+          <node concept="19SGf9" id="3M9Tj7Yz5F1" role="OjmMu">
+            <node concept="19SUe$" id="3M9Tj7Yz5F2" role="19SJt6">
+              <property role="19SUeA" value="Class should be able to be referenced directly if it's in the scope, or via the outer class" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3mBbG7" id="3M9Tj7Yz5BH" role="3mBdys">
+        <property role="TrG5h" value="outerInner" />
+        <node concept="TrGU4" id="3M9Tj7Yz5Cu" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="3mBfEM" node="2j_NnBniVCX" resolve="Inner" />
+          <node concept="3mBfEi" id="3M9Tj7Yz5BF" role="TrGU7">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="3mBfEM" node="1yn8Pkyc1xp" resolve="Outer" />
+          </node>
+        </node>
+      </node>
       <node concept="3mBbG7" id="2j_NnBniVHu" role="3mBdys">
         <property role="TrG5h" value="inner" />
         <node concept="3mBfEi" id="2j_NnBniVHs" role="2C2TGm">
@@ -1751,7 +1775,7 @@
       <node concept="3mB1cK" id="2j_NnBnwWFo" role="3mBdys">
         <property role="1wg9_F" value="public" />
         <property role="TrG5h" value="getInnerValue" />
-        <node concept="3TlMh2" id="2j_NnBnwWFm" role="2C2TGm">
+        <node concept="3TlMh2" id="3M9Tj7Yz5QB" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
