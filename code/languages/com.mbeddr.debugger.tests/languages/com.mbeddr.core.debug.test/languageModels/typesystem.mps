@@ -8,7 +8,8 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -216,7 +217,7 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
-      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
@@ -3033,20 +3034,6 @@
             <node concept="3clFbS" id="3uCwkM8uQ6L" role="2LFqv$">
               <node concept="3clFbJ" id="3uCwkM8uQ6M" role="3cqZAp">
                 <node concept="3clFbS" id="3uCwkM8uQ6N" role="3clFbx">
-                  <node concept="3clFbF" id="3uCwkM8NveT" role="3cqZAp">
-                    <node concept="2OqwBi" id="3uCwkM8NveQ" role="3clFbG">
-                      <node concept="10M0yZ" id="3uCwkM8NveR" role="2Oq$k0">
-                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                      </node>
-                      <node concept="liA8E" id="3uCwkM8NveS" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println():void" resolve="println" />
-                        <node concept="Xl_RD" id="3uCwkM8Nvfl" role="37wK5m">
-                          <property role="Xl_RC" value="bla" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="2MkqsV" id="3uCwkM8uQ6O" role="3cqZAp">
                     <node concept="1YBJjd" id="3uCwkM8vGUf" role="2OEOjV">
                       <ref role="1YBMHb" node="3uCwkM8uH$C" resolve="lsd" />

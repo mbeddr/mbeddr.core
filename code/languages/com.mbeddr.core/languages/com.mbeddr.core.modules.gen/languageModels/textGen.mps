@@ -43,6 +43,9 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -299,24 +302,36 @@
           <node concept="l8MVK" id="19a6$uAADPl" role="lcghm" />
           <node concept="l8MVK" id="19a6$uAADPm" role="lcghm" />
         </node>
-        <node concept="lc7rE" id="7hH70_hucO$" role="3cqZAp">
-          <node concept="la8eA" id="7hH70_hud9V" role="lcghm">
-            <property role="lacIc" value="#ifdef __cplusplus" />
+        <node concept="3clFbJ" id="6_ukAvn6TEr" role="3cqZAp">
+          <node concept="3clFbS" id="6_ukAvn6TEt" role="3clFbx">
+            <node concept="lc7rE" id="6_ukAvpYf69" role="3cqZAp">
+              <node concept="la8eA" id="6_ukAvpYf6a" role="lcghm">
+                <property role="lacIc" value="#ifdef __cplusplus" />
+              </node>
+              <node concept="l8MVK" id="6_ukAvpYf6b" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="6_ukAvn6Vd4" role="3cqZAp">
+              <node concept="la8eA" id="6_ukAvn6Vd5" role="lcghm">
+                <property role="lacIc" value="extern &quot;C&quot; {" />
+              </node>
+              <node concept="l8MVK" id="6_ukAvn6Vd6" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="6_ukAvpYf7s" role="3cqZAp">
+              <node concept="la8eA" id="6_ukAvpYf7t" role="lcghm">
+                <property role="lacIc" value="#endif" />
+              </node>
+              <node concept="l8MVK" id="6_ukAvpYf7u" role="lcghm" />
+              <node concept="l8MVK" id="6_ukAvpYf7v" role="lcghm" />
+            </node>
           </node>
-          <node concept="l8MVK" id="7hH70_hueUv" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="7hH70_hudKt" role="3cqZAp">
-          <node concept="la8eA" id="7hH70_hufbz" role="lcghm">
-            <property role="lacIc" value="extern &quot;C&quot; {" />
+          <node concept="3fqX7Q" id="6_ukAvoe3Jx" role="3clFbw">
+            <node concept="2OqwBi" id="6_ukAvoe3Jz" role="3fr31v">
+              <node concept="117lpO" id="6_ukAvoe3J$" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6_ukAvoe3J_" role="2OqNvi">
+                <ref role="3TsBF5" to="d0vh:6_ukAvn6QMA" resolve="isCPP" />
+              </node>
+            </node>
           </node>
-          <node concept="l8MVK" id="7hH70_hufIk" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="7hH70_hugmk" role="3cqZAp">
-          <node concept="la8eA" id="7hH70_hugJ2" role="lcghm">
-            <property role="lacIc" value="#endif" />
-          </node>
-          <node concept="l8MVK" id="7hH70_hujF_" role="lcghm" />
-          <node concept="l8MVK" id="7hH70_hukdH" role="lcghm" />
         </node>
         <node concept="2Gpval" id="1x_Jrt9Ni66" role="3cqZAp">
           <node concept="2GrKxI" id="1x_Jrt9Ni67" role="2Gsz3X">
@@ -342,25 +357,37 @@
           </node>
         </node>
         <node concept="3clFbH" id="7hH70_huj54" role="3cqZAp" />
-        <node concept="lc7rE" id="7hH70_huiJ2" role="3cqZAp">
-          <node concept="l8MVK" id="7hH70_hukJQ" role="lcghm" />
-          <node concept="la8eA" id="7hH70_huiJ3" role="lcghm">
-            <property role="lacIc" value="#ifdef __cplusplus" />
+        <node concept="3clFbJ" id="6_ukAvn6W9l" role="3cqZAp">
+          <node concept="3clFbS" id="6_ukAvn6W9n" role="3clFbx">
+            <node concept="lc7rE" id="6_ukAvpYg0h" role="3cqZAp">
+              <node concept="l8MVK" id="6_ukAvpYg0i" role="lcghm" />
+              <node concept="la8eA" id="6_ukAvpYg0j" role="lcghm">
+                <property role="lacIc" value="#ifdef __cplusplus" />
+              </node>
+              <node concept="l8MVK" id="6_ukAvpYg0k" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="6_ukAvn6XPE" role="3cqZAp">
+              <node concept="la8eA" id="6_ukAvn6XPF" role="lcghm">
+                <property role="lacIc" value="} /* extern &quot;C&quot; */" />
+              </node>
+              <node concept="l8MVK" id="6_ukAvn6XPG" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="6_ukAvpYg1U" role="3cqZAp">
+              <node concept="la8eA" id="6_ukAvpYg1V" role="lcghm">
+                <property role="lacIc" value="#endif" />
+              </node>
+              <node concept="l8MVK" id="6_ukAvpYg1W" role="lcghm" />
+              <node concept="l8MVK" id="6_ukAvpYg1X" role="lcghm" />
+            </node>
           </node>
-          <node concept="l8MVK" id="7hH70_huiJ4" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="7hH70_huiJ5" role="3cqZAp">
-          <node concept="la8eA" id="7hH70_huiJ6" role="lcghm">
-            <property role="lacIc" value="} /* extern &quot;C&quot; */" />
+          <node concept="3fqX7Q" id="6_ukAvoe43y" role="3clFbw">
+            <node concept="2OqwBi" id="6_ukAvoe43$" role="3fr31v">
+              <node concept="117lpO" id="6_ukAvoe43_" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6_ukAvoe43A" role="2OqNvi">
+                <ref role="3TsBF5" to="d0vh:6_ukAvn6QMA" resolve="isCPP" />
+              </node>
+            </node>
           </node>
-          <node concept="l8MVK" id="7hH70_huiJ7" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="7hH70_huiJ8" role="3cqZAp">
-          <node concept="la8eA" id="7hH70_huiJ9" role="lcghm">
-            <property role="lacIc" value="#endif" />
-          </node>
-          <node concept="l8MVK" id="7hH70_huli6" role="lcghm" />
-          <node concept="l8MVK" id="7hH70_hulOe" role="lcghm" />
         </node>
         <node concept="3clFbH" id="7hH70_huim4" role="3cqZAp" />
         <node concept="lc7rE" id="5ak6HMA0GKG" role="3cqZAp">

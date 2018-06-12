@@ -138,6 +138,11 @@
     <property role="R4oN_" value="module encapsulating implementation code" />
     <property role="EcuMT" value="6437088627575722830" />
     <ref role="1TJDcQ" node="5_l8w1EmTcX" resolve="Module" />
+    <node concept="1TJgyi" id="6_ukAvncR$l" role="1TKVEl">
+      <property role="IQ2nx" value="7592596627738818837" />
+      <property role="TrG5h" value="isCPP" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1QGGSu" id="1N5Tah$AJo0" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/implementationmodule.png" />
     </node>

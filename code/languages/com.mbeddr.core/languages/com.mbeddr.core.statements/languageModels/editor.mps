@@ -23,6 +23,7 @@
     <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="wcxw" ref="r:b9f36c08-4a75-4513-9277-a390d3426e0f(jetbrains.mps.editor.runtime.impl.cellActions)" />
+    <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -555,7 +556,7 @@
         <node concept="3F1sOY" id="3CmSUB7FprJ" role="1kIj9b">
           <property role="1cu_pB" value="2" />
           <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
-          <ref role="1ERwB7" node="2VzPqUCsXOi" resolve="makeAssignmentFromLVD" />
+          <ref role="1ERwB7" node="2VzPqUCsXOi" resolve="makeAssignmentFromLVDs" />
           <node concept="pkWqt" id="3CmSUB7Fp$1" role="cStSX">
             <node concept="3clFbS" id="3CmSUB7Fp$2" role="2VODD2">
               <node concept="3clFbF" id="3CmSUB7Fp$3" role="3cqZAp">
@@ -2157,7 +2158,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="2VzPqUCsXOi">
-    <property role="TrG5h" value="makeAssignmentFromLVD" />
+    <property role="TrG5h" value="makeAssignmentFromLVDs" />
     <ref role="1h_SK9" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
     <node concept="1hA7zw" id="2VzPqUCsXOj" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
