@@ -138,7 +138,7 @@
   </registry>
   <node concept="2v9HqL" id="4k76AKYlYMf">
     <node concept="2AWWZL" id="4k76AKYlYY6" role="2AWWZH">
-      <property role="2AWWZJ" value="gcc" />
+      <property role="2AWWZJ" value="g++" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3r8Kxs" value="make" />
       <property role="2AWWZI" value="-std=c99" />
@@ -168,12 +168,6 @@
       <ref role="3oK8_y" node="4k76AKYlB0n" resolve="portable" />
       <node concept="2v9HqM" id="4k76AKYlYZj" role="2eOfOg">
         <ref role="2v9HqP" node="4k76AKYlYZh" resolve="Enum" />
-      </node>
-      <node concept="2v9HqM" id="3v5DuFDttij" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
-      </node>
-      <node concept="2v9HqM" id="3v5DuFDttik" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
     </node>
   </node>

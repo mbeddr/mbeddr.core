@@ -125,6 +125,7 @@
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
       <concept id="4018800670853679470" name="com.mbeddr.cpp.base.structure.EmptyClassContent" flags="ng" index="3u$6M4" />
+      <concept id="2471598406324383532" name="com.mbeddr.cpp.base.structure.NullPointerLiteral" flags="ng" index="3IbwUb" />
       <concept id="8014199547835254783" name="com.mbeddr.cpp.base.structure.NewDeclaration" flags="ng" index="1SUiZS">
         <property id="8014199547835254784" name="no_throw" index="1SUi07" />
         <child id="8014199547838786869" name="typeOrConstructor" index="1RfGkM" />
@@ -159,6 +160,12 @@
         <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
+      <concept id="7755897872837031762" name="com.mbeddr.core.unittest.structure.StructuredBinOpAssertStatement" flags="ng" index="2N2GHn">
+        <child id="7755897872837031765" name="actual" index="2N2GHg" />
+        <child id="7755897872837031764" name="expected" index="2N2GHh" />
+      </concept>
+      <concept id="7755897872837082045" name="com.mbeddr.core.unittest.structure.AssertEquals" flags="ng" index="2N2KuS" />
+      <concept id="7755897872837262967" name="com.mbeddr.core.unittest.structure.AssertNotEquals" flags="ng" index="2N3$9M" />
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
         <child id="842732463503928104" name="testStrategy" index="3GpDut" />
       </concept>
@@ -449,6 +456,17 @@
             </node>
           </node>
         </node>
+        <node concept="3XISUE" id="6Rfiwa9JWkv" role="3XIRFZ" />
+        <node concept="2N2KuS" id="6Rfiwa9JVM_" role="3XIRFZ">
+          <node concept="3TlMh9" id="6Rfiwa9JVR0" role="2N2GHh">
+            <property role="2hmy$m" value="500" />
+          </node>
+          <node concept="3wxyx2" id="6Rfiwa9JWee" role="2N2GHg">
+            <node concept="3ZVu4v" id="6Rfiwa9JVQx" role="1_9fRO">
+              <ref role="3ZVs_2" node="72UYQRW$Yrj" resolve="ndc1Int" />
+            </node>
+          </node>
+        </node>
         <node concept="2jktW3" id="72UYQRW_0$2" role="3XIRFZ">
           <node concept="3ZVu4v" id="72UYQRW_0AC" role="2cI6ot">
             <ref role="3ZVs_2" node="72UYQRW$Yrj" resolve="ndc1Int" />
@@ -482,19 +500,6 @@
             </node>
           </node>
         </node>
-        <node concept="1_9egQ" id="72UYQRW_2cW" role="3XIRFZ">
-          <node concept="3pqW6w" id="72UYQRW_2fy" role="1_9egR">
-            <node concept="1SUiZS" id="72UYQRW_2h1" role="3TlMhJ">
-              <node concept="26Vqpk" id="72UYQRW_2jT" role="1RfGkM">
-                <property role="2caQfQ" value="false" />
-                <property role="2c7vTL" value="false" />
-              </node>
-            </node>
-            <node concept="3ZVu4v" id="72UYQRW_2cU" role="3TlMhI">
-              <ref role="3ZVs_2" node="72UYQRW_1M6" resolve="ndc2Int" />
-            </node>
-          </node>
-        </node>
         <node concept="1_9egQ" id="72UYQRW_2rp" role="3XIRFZ">
           <node concept="3pqW6w" id="72UYQRW_2rq" role="1_9egR">
             <node concept="3wxyx2" id="72UYQRW_2rr" role="3TlMhI">
@@ -503,7 +508,17 @@
               </node>
             </node>
             <node concept="3TlMh9" id="72UYQRW_2vW" role="3TlMhJ">
-              <property role="2hmy$m" value="500" />
+              <property role="2hmy$m" value="700" />
+            </node>
+          </node>
+        </node>
+        <node concept="2N2KuS" id="6Rfiwa9JW_c" role="3XIRFZ">
+          <node concept="3TlMh9" id="6Rfiwa9JWDx" role="2N2GHh">
+            <property role="2hmy$m" value="600" />
+          </node>
+          <node concept="3wxyx2" id="6Rfiwa9JWCG" role="2N2GHg">
+            <node concept="3ZVu4v" id="6Rfiwa9JWD8" role="1_9fRO">
+              <ref role="3ZVs_2" node="72UYQRW_1M6" resolve="ndc2Int" />
             </node>
           </node>
         </node>
@@ -551,6 +566,12 @@
             <node concept="3ZVu4v" id="72UYQRW_9mO" role="3TlMhI">
               <ref role="3ZVs_2" node="72UYQRW_920" resolve="ndc2_2Int" />
             </node>
+          </node>
+        </node>
+        <node concept="2N3$9M" id="6Rfiwa9JWNl" role="3XIRFZ">
+          <node concept="3IbwUb" id="6Rfiwa9JWRx" role="2N2GHh" />
+          <node concept="3ZVu4v" id="6Rfiwa9JWRh" role="2N2GHg">
+            <ref role="3ZVs_2" node="72UYQRW_920" resolve="ndc2_2Int" />
           </node>
         </node>
         <node concept="2jktW3" id="72UYQRW_9AO" role="3XIRFZ">
