@@ -5099,6 +5099,58 @@
     <property role="TrG5h" value="check_ClassType" />
     <property role="3GE5qa" value="class" />
     <node concept="3clFbS" id="2j_NnBnvkp7" role="18ibNy">
+      <node concept="3clFbJ" id="2j_NnBnvmHd" role="3cqZAp">
+        <node concept="1Wc70l" id="32KsbhT11I7" role="3clFbw">
+          <node concept="2OqwBi" id="32KsbhT14iH" role="3uHU7w">
+            <node concept="2OqwBi" id="32KsbhT12ty" role="2Oq$k0">
+              <node concept="1YBJjd" id="32KsbhT127V" role="2Oq$k0">
+                <ref role="1YBMHb" node="2j_NnBnvkp9" resolve="classType" />
+              </node>
+              <node concept="2Xjw5R" id="32KsbhT138G" role="2OqNvi">
+                <node concept="1xMEDy" id="32KsbhT138I" role="1xVPHs">
+                  <node concept="chp4Y" id="32KsbhT13zo" role="ri$Ld">
+                    <ref role="cht4Q" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="32KsbhT15gA" role="2OqNvi" />
+          </node>
+          <node concept="3clFbC" id="2j_NnBnvpsV" role="3uHU7B">
+            <node concept="2OqwBi" id="2j_NnBnvmUO" role="3uHU7B">
+              <node concept="1YBJjd" id="2j_NnBnvmHp" role="2Oq$k0">
+                <ref role="1YBMHb" node="2j_NnBnvkp9" resolve="classType" />
+              </node>
+              <node concept="2Xjw5R" id="2j_NnBnvndc" role="2OqNvi">
+                <node concept="1xMEDy" id="2j_NnBnvnde" role="1xVPHs">
+                  <node concept="chp4Y" id="2j_NnBnvnfd" role="ri$Ld">
+                    <ref role="cht4Q" to="wnzg:4o2nsMgBpPQ" resolve="ClassDeclaration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2j_NnBnvpRh" role="3uHU7w">
+              <node concept="1YBJjd" id="2j_NnBnvp_V" role="2Oq$k0">
+                <ref role="1YBMHb" node="2j_NnBnvkp9" resolve="classType" />
+              </node>
+              <node concept="3TrEf2" id="2j_NnBnvqh$" role="2OqNvi">
+                <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="2j_NnBnvmHf" role="3clFbx">
+          <node concept="2MkqsV" id="2j_NnBnvqsc" role="3cqZAp">
+            <node concept="Xl_RD" id="2j_NnBnvqso" role="2MkJ7o">
+              <property role="Xl_RC" value="Can't have instance of class inside itself" />
+            </node>
+            <node concept="1YBJjd" id="2j_NnBnvqsL" role="2OEOjV">
+              <ref role="1YBMHb" node="2j_NnBnvkp9" resolve="classType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="32KsbhT0XQl" role="3cqZAp" />
       <node concept="3clFbJ" id="2j_NnBnxFcB" role="3cqZAp">
         <node concept="3clFbS" id="2j_NnBnxFcD" role="3clFbx">
           <node concept="3clFbJ" id="2j_NnBnyvu3" role="3cqZAp">
