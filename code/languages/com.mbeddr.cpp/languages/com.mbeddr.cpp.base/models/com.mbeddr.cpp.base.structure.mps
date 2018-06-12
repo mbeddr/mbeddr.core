@@ -1105,5 +1105,15 @@
     <property role="EcuMT" value="8479367613886292001" />
     <property role="TrG5h" value="IUsageRequiresStdImport" />
   </node>
+  <node concept="1TIwiD" id="3M9Tj7Yz1kE">
+    <property role="EcuMT" value="4362269716971787562" />
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="ClassComment" />
+    <property role="34LRSv" value="//" />
+    <ref role="1TJDcQ" to="c4fa:1teBndx1rbo" resolve="CommentStatement" />
+    <node concept="PrWs8" id="3M9Tj7Yz1kI" role="PzmwI">
+      <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
+    </node>
+  </node>
 </model>
 
