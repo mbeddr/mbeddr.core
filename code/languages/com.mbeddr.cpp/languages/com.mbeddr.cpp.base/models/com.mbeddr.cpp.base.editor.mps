@@ -620,6 +620,9 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="32KsbhSR3xr" role="3EZMnx">
+        <ref role="PMmxG" node="5eDFAXBS4m$" resolve="ThreadLocalFlag" />
+      </node>
       <node concept="PMmxH" id="5eDFAXBRQjs" role="3EZMnx">
         <ref role="PMmxG" node="5eDFAXBRQic" resolve="ConstExprFlag" />
       </node>
@@ -1645,6 +1648,7 @@
     <node concept="1kHk_G" id="5eDFAXBS4mA" role="2wV5jI">
       <property role="ZjSer" value="thread_local" />
       <ref role="1NtTu8" to="wnzg:5eDFAXBS4m8" resolve="isThreadLocal" />
+      <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
   <node concept="PKFIW" id="5eDFAXBCpeS">
