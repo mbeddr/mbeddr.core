@@ -5,9 +5,7 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
-  <accessoryModels>
-    <model modelUID="r:dd2e92fc-5572-49ce-87fe-bc4a00055424(com.mbeddr.cpp.templates.models)" />
-  </accessoryModels>
+  <accessoryModels />
   <generators>
     <generator alias="main" namespace="com.mbeddr.cpp.templates#01" uuid="5fc3964b-426c-4c8b-871a-2b6c0113c664">
       <models>
@@ -181,7 +179,6 @@
   <extendedLanguages>
     <extendedLanguage>8c081446-e4ba-48b7-a7e0-3db40e2c3439(com.mbeddr.cpp.base)</extendedLanguage>
     <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>
-    <extendedLanguage>a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</extendedLanguage>
     <extendedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</extendedLanguage>
     <extendedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</extendedLanguage>
     <extendedLanguage>b341759a-c721-4072-90cf-328bb2724684(com.mbeddr.cpp.expressions)</extendedLanguage>

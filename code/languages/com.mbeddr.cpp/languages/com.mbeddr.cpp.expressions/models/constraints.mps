@@ -11,6 +11,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
+    <import index="zhp8" ref="r:66d213c1-a12b-4017-8dd5-0423703c30a9(com.mbeddr.cpp.operator_overload.structure)" />
     <import index="3d25" ref="r:b51ed3f8-f18c-4b51-8a93-f4ee7f6adf9a(com.mbeddr.cpp.expressions.structure)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
     <import index="kntn" ref="r:4090021e-0c8f-4cca-ab3f-590afb43a745(com.mbeddr.cpp.base.behavior)" implicit="true" />
@@ -388,11 +389,11 @@
             <node concept="3clFbS" id="7j9KGYMnEUu" role="Jncv$">
               <node concept="3clFbF" id="7j9KGYMnJPS" role="3cqZAp">
                 <node concept="37vLTI" id="7j9KGYMnKFm" role="3clFbG">
-                  <node concept="2OqwBi" id="6ODoR9z0Lsr" role="37vLTx">
+                  <node concept="2OqwBi" id="7iR9kVygBQv" role="37vLTx">
                     <node concept="Jnkvi" id="7j9KGYMnKYx" role="2Oq$k0">
                       <ref role="1M0zk5" node="7j9KGYMnEUw" resolve="pt" />
                     </node>
-                    <node concept="3TrEf2" id="6ODoR9z0MvF" role="2OqNvi">
+                    <node concept="3TrEf2" id="7iR9kVygCID" role="2OqNvi">
                       <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" resolve="baseType" />
                     </node>
                   </node>
@@ -877,34 +878,49 @@
     <node concept="9S07l" id="4smL_2CORWK" role="9Vyp8">
       <node concept="3clFbS" id="4smL_2CORWL" role="2VODD2">
         <node concept="3clFbJ" id="4smL_2CSbl0" role="3cqZAp">
-          <node concept="1Wc70l" id="4smL_2CSumd" role="3clFbw">
-            <node concept="2OqwBi" id="4smL_2CScPc" role="3uHU7B">
-              <node concept="2OqwBi" id="4smL_2CSbFF" role="2Oq$k0">
-                <node concept="nLn13" id="4smL_2CSbsr" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="4smL_2CSbXn" role="2OqNvi">
-                  <node concept="1xMEDy" id="4smL_2CSbXp" role="1xVPHs">
-                    <node concept="chp4Y" id="4smL_2CSc6t" role="ri$Ld">
-                      <ref role="cht4Q" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+          <node concept="1Wc70l" id="6Rfiwa9LlDw" role="3clFbw">
+            <node concept="2OqwBi" id="6Rfiwa9Lnmc" role="3uHU7w">
+              <node concept="2OqwBi" id="6Rfiwa9Lmcj" role="2Oq$k0">
+                <node concept="nLn13" id="6Rfiwa9LlZZ" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="6Rfiwa9Lmm4" role="2OqNvi">
+                  <node concept="1xMEDy" id="6Rfiwa9Lmm6" role="1xVPHs">
+                    <node concept="chp4Y" id="6Rfiwa9LmDX" role="ri$Ld">
+                      <ref role="cht4Q" to="zhp8:7bt9OVZfWbc" resolve="OperatorOverloadDeclaration" />
                     </node>
                   </node>
-                  <node concept="1xIGOp" id="4smL_2CScjF" role="1xVPHs" />
                 </node>
               </node>
-              <node concept="3w_OXm" id="4smL_2CSefL" role="2OqNvi" />
+              <node concept="3w_OXm" id="6Rfiwa9LnXW" role="2OqNvi" />
             </node>
-            <node concept="2OqwBi" id="4smL_2CSsgb" role="3uHU7w">
-              <node concept="2OqwBi" id="4smL_2CSqsg" role="2Oq$k0">
-                <node concept="nLn13" id="4smL_2CSq0W" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="4smL_2CSqIG" role="2OqNvi">
-                  <node concept="1xMEDy" id="4smL_2CSqII" role="1xVPHs">
-                    <node concept="chp4Y" id="4smL_2CSqXC" role="ri$Ld">
-                      <ref role="cht4Q" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
+            <node concept="1Wc70l" id="4smL_2CSumd" role="3uHU7B">
+              <node concept="2OqwBi" id="4smL_2CScPc" role="3uHU7B">
+                <node concept="2OqwBi" id="4smL_2CSbFF" role="2Oq$k0">
+                  <node concept="nLn13" id="4smL_2CSbsr" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="4smL_2CSbXn" role="2OqNvi">
+                    <node concept="1xMEDy" id="4smL_2CSbXp" role="1xVPHs">
+                      <node concept="chp4Y" id="4smL_2CSc6t" role="ri$Ld">
+                        <ref role="cht4Q" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+                      </node>
                     </node>
+                    <node concept="1xIGOp" id="4smL_2CScjF" role="1xVPHs" />
                   </node>
-                  <node concept="1xIGOp" id="4smL_2CSrzT" role="1xVPHs" />
                 </node>
+                <node concept="3w_OXm" id="4smL_2CSefL" role="2OqNvi" />
               </node>
-              <node concept="3w_OXm" id="4smL_2CSu2L" role="2OqNvi" />
+              <node concept="2OqwBi" id="4smL_2CSsgb" role="3uHU7w">
+                <node concept="2OqwBi" id="4smL_2CSqsg" role="2Oq$k0">
+                  <node concept="nLn13" id="4smL_2CSq0W" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="4smL_2CSqIG" role="2OqNvi">
+                    <node concept="1xMEDy" id="4smL_2CSqII" role="1xVPHs">
+                      <node concept="chp4Y" id="4smL_2CSqXC" role="ri$Ld">
+                        <ref role="cht4Q" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="4smL_2CSrzT" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="3w_OXm" id="4smL_2CSu2L" role="2OqNvi" />
+              </node>
             </node>
           </node>
           <node concept="3clFbS" id="4smL_2CSbl2" role="3clFbx">

@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base" version="0" />
+    <engage id="236f3e56-2360-4657-9b9d-0cb84f56784d" name="com.mbeddr.cpp.modules.gen" />
     <devkit ref="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" />
   </languages>
   <imports>
@@ -142,7 +143,6 @@
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
-      <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
@@ -158,16 +158,10 @@
   <node concept="2v9HqL" id="3fD_lX7EkLh">
     <node concept="2eOfOl" id="4o2nsMgBpPF" role="2ePNbc">
       <property role="iO3LB" value="true" />
-      <property role="TrG5h" value="ex" />
+      <property role="TrG5h" value="Auto_Tests" />
       <ref role="3oK8_y" node="3v5DuFDkAwn" resolve="portable" />
       <node concept="2v9HqM" id="2O2YBLCmwFd" role="2eOfOg">
         <ref role="2v9HqP" node="2O2YBLCmwEn" resolve="Auto" />
-      </node>
-      <node concept="2v9HqM" id="3v5DuFDttij" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
-      </node>
-      <node concept="2v9HqM" id="3v5DuFDttik" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="3v5DuFDtvd1" role="2Q9xDr">
@@ -199,15 +193,15 @@
   <node concept="1whW_1" id="2O2YBLCmwEn">
     <property role="TrG5h" value="Auto" />
     <node concept="1S7NMz" id="5GVBePMaMQ9" role="N3F5h">
-      <property role="TrG5h" value="testBool" />
-      <node concept="3TlMgk" id="5GVBePMaMQ7" role="2C2TGm">
+      <property role="TrG5h" value="globalShouldBeBool" />
+      <node concept="RSaEH" id="6Rfiwa9eT8c" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="3TlMhK" id="5GVBePMaMRb" role="1cecVj" />
     </node>
     <node concept="1S7NMz" id="6FZQsHtzJAJ" role="N3F5h">
-      <property role="TrG5h" value="wassup" />
+      <property role="TrG5h" value="globalShouldBeInt" />
       <node concept="RSaEH" id="6FZQsHtzJAH" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
@@ -223,7 +217,7 @@
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="AutoContainer" />
       <node concept="3mBbG7" id="7WruJM_Sek7" role="3mBdys">
-        <property role="TrG5h" value="hoi" />
+        <property role="TrG5h" value="shouldBeInt" />
         <property role="1wg9_F" value="public" />
         <property role="226hDV" value="true" />
         <node concept="RSaEH" id="7WruJM_Sekq" role="2C2TGm">
@@ -251,14 +245,14 @@
     </node>
     <node concept="c0Qz5" id="5GVBePMaMPc" role="N3F5h">
       <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="test1" />
+      <property role="TrG5h" value="test_auto" />
       <node concept="19Rifw" id="5GVBePMaMPd" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="3XIRFW" id="5GVBePMaMPf" role="c0Qz3">
         <node concept="3XIRlf" id="6FZQsHtzK2B" role="3XIRFZ">
-          <property role="TrG5h" value="hey" />
+          <property role="TrG5h" value="integer" />
           <node concept="RSaEH" id="6FZQsHtzK2A" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
@@ -268,22 +262,22 @@
           </node>
         </node>
         <node concept="3XIRlf" id="6FZQsHu26Kh" role="3XIRFZ">
-          <property role="TrG5h" value="hoi" />
+          <property role="TrG5h" value="assignsToAuto" />
           <node concept="26Vqph" id="6FZQsHu26Kf" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3ZVu4v" id="6FZQsHuveZ7" role="3XIe9u">
-            <ref role="3ZVs_2" node="6FZQsHtzK2B" resolve="hey" />
+            <ref role="3ZVs_2" node="6FZQsHtzK2B" resolve="integer" />
           </node>
         </node>
         <node concept="1_9egQ" id="6FZQsHuvf1w" role="3XIRFZ">
           <node concept="3pqW6w" id="6FZQsHv7TZi" role="1_9egR">
             <node concept="1S7827" id="6FZQsHv7U1U" role="3TlMhJ">
-              <ref role="1S7826" node="6FZQsHtzJAJ" resolve="wassup" />
+              <ref role="1S7826" node="6FZQsHtzJAJ" resolve="globalShouldBeInt" />
             </node>
             <node concept="3ZVu4v" id="6FZQsHuvf1u" role="3TlMhI">
-              <ref role="3ZVs_2" node="6FZQsHtzK2B" resolve="hey" />
+              <ref role="3ZVs_2" node="6FZQsHtzK2B" resolve="integer" />
             </node>
           </node>
         </node>
@@ -299,14 +293,14 @@
           <node concept="3pqW6w" id="7WruJMA1MKC" role="1_9egR">
             <node concept="2qmXGp" id="7WruJMA1MOe" role="3TlMhJ">
               <node concept="3mBk1D" id="7WruJMA1MQ7" role="1ESnxz">
-                <ref role="3mBk1B" node="7WruJM_Sek7" resolve="hoi" />
+                <ref role="3mBk1B" node="7WruJM_Sek7" resolve="shouldBeInt" />
               </node>
               <node concept="3ZVu4v" id="7WruJMA1MM_" role="1_9fRO">
                 <ref role="3ZVs_2" node="6FZQsHuIC8R" resolve="autoContainer" />
               </node>
             </node>
             <node concept="3ZVu4v" id="7WruJMA1MHc" role="3TlMhI">
-              <ref role="3ZVs_2" node="6FZQsHu26Kh" resolve="hoi" />
+              <ref role="3ZVs_2" node="6FZQsHu26Kh" resolve="assignsToAuto" />
             </node>
           </node>
         </node>
@@ -319,7 +313,7 @@
       <property role="3HjyOP" value="true" />
       <property role="TrG5h" value="main" />
       <node concept="3cM6IN" id="5GVBePMaMSB" role="lIfQt">
-        <ref role="3cM6IK" node="5GVBePMaMPc" resolve="test1" />
+        <ref role="3cM6IK" node="5GVBePMaMPc" resolve="test_auto" />
       </node>
     </node>
   </node>

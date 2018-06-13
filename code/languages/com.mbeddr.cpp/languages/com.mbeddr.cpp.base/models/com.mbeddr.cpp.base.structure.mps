@@ -10,13 +10,12 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
-    <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
+    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
+    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" implicit="true" />
-    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -389,7 +388,7 @@
   <node concept="1TIwiD" id="6NtgknWJ20B">
     <property role="EcuMT" value="7844497894798008359" />
     <property role="TrG5h" value="ClassConstructorDeclaration" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="34LRSv" value="constructor" />
     <property role="R4oN_" value="A class constructor" />
     <ref role="1TJDcQ" node="6NtgknWJ21h" resolve="ClassConstructorSignature" />
@@ -427,7 +426,7 @@
   </node>
   <node concept="PlHQZ" id="3n$8_Xbpg8r">
     <property role="EcuMT" value="3883266571382358555" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="IAmConstructorInitializable" />
     <node concept="t5JxF" id="3n$8_Xbpga3" role="lGtFl">
       <property role="t5JxN" value="This interface is responsible for things that can come after a : on a constructor implementation." />
@@ -435,7 +434,7 @@
   </node>
   <node concept="1TIwiD" id="6NtgknWJ21h">
     <property role="EcuMT" value="7844497894798008401" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="ClassConstructorSignature" />
     <property role="R4oN_" value="very similar to the normal method signature, but has some quirks because it isn't named (all constructors have the same name)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -493,14 +492,14 @@
   </node>
   <node concept="1TIwiD" id="6hUtorDPkwW">
     <property role="EcuMT" value="7240228573260630076" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="ConstructorVoidType" />
     <property role="R4oN_" value="empty declaration of VoidType" />
     <ref role="1TJDcQ" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
   </node>
   <node concept="1TIwiD" id="7DDmkyVr_r">
     <property role="EcuMT" value="137823117407795547" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="ConstructorInitializedAttribute" />
     <property role="R4oN_" value="ClassConstructor() : attribute(value)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -532,7 +531,7 @@
   </node>
   <node concept="1TIwiD" id="7DDmkz5m05">
     <property role="EcuMT" value="137823117410394117" />
-    <property role="3GE5qa" value="method.constructor" />
+    <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="ConstructorInitializedConstructor" />
     <property role="R4oN_" value="Base constructor calls like ConstructorA(int32 a) : ConstructorB(a)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1056,6 +1055,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="7mGKYHhDf8Q" role="PzmwI">
+      <ref role="PrY4T" node="7mGKYHhDe0x" resolve="IUsageRequiresStdImport" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4KCRVMvtEXq">
     <property role="EcuMT" value="5487882147173150554" />
@@ -1098,6 +1100,41 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBEtu" resolve="ClassType" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="7mGKYHhDe0x">
+    <property role="EcuMT" value="8479367613886292001" />
+    <property role="TrG5h" value="IUsageRequiresStdImport" />
+  </node>
+  <node concept="1TIwiD" id="3M9Tj7Yz1kE">
+    <property role="EcuMT" value="4362269716971787562" />
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="ClassComment" />
+    <property role="34LRSv" value="//" />
+    <ref role="1TJDcQ" to="c4fa:1teBndx1rbo" resolve="CommentStatement" />
+    <node concept="PrWs8" id="3M9Tj7Yz1kI" role="PzmwI">
+      <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="hYHfWq_jIb">
+    <property role="EcuMT" value="323895230972902283" />
+    <property role="TrG5h" value="Char16_tType" />
+    <property role="34LRSv" value="char16_t" />
+    <property role="R4oN_" value="C++ char16_t type" />
+    <ref role="1TJDcQ" to="mj1l:4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="hYHfWqSH0p">
+    <property role="EcuMT" value="323895230977986585" />
+    <property role="TrG5h" value="Char32_tType" />
+    <property role="34LRSv" value="char32_t" />
+    <property role="R4oN_" value="C++ char32_t type" />
+    <ref role="1TJDcQ" to="mj1l:1spqZOskJPs" resolve="CharType" />
+  </node>
+  <node concept="1TIwiD" id="hYHfWqSH2p">
+    <property role="EcuMT" value="323895230977986713" />
+    <property role="TrG5h" value="WChar_tType" />
+    <property role="34LRSv" value="wchar_t" />
+    <property role="R4oN_" value="C++ wchar_t type" />
+    <ref role="1TJDcQ" to="mj1l:1spqZOskJPs" resolve="CharType" />
   </node>
 </model>
 

@@ -13,7 +13,6 @@
   </languages>
   <imports>
     <import index="g7jk" ref="r:e06e24a5-d0fa-4f76-9dee-2042532d92a1(com.mbeddr.cpp.base.typesystem)" />
-    <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
     <import index="ux7" ref="r:7a7d22ce-1d67-4772-b659-fbcc3b235afb(com.mbeddr.cpp.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
@@ -263,8 +262,12 @@
               <property role="2c7vTL" value="true" />
             </node>
             <node concept="3XIRFW" id="48nd0xpZkE" role="3XIRFX" />
-            <node concept="7CXmI" id="48nd0xuNB1" role="lGtFl">
-              <node concept="1TM$A" id="48nd0xuNB2" role="7EUXB" />
+            <node concept="7CXmI" id="7mGKYHhlxof" role="lGtFl">
+              <node concept="1TM$A" id="7mGKYHhlxoN" role="7EUXB">
+                <node concept="2PYRI3" id="7mGKYHhlxoO" role="3lydEf">
+                  <ref role="39XzEq" to="g7jk:7mGKYHhkF9y" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3u$6M4" id="48nd0xvgvz" role="3mBdys" />
@@ -289,9 +292,9 @@
         <node concept="2NXPZ9" id="1gzloVU_9Jc" role="N3F5h">
           <property role="TrG5h" value="empty_1504854840309_9" />
         </node>
-        <node concept="7CXmI" id="1gzloVU_9JM" role="lGtFl">
-          <node concept="7OXhh" id="6ejQpbvYgeB" role="7EUXB" />
-        </node>
+      </node>
+      <node concept="7CXmI" id="32KsbhSQBHk" role="lGtFl">
+        <node concept="7OXhh" id="32KsbhSQBHs" role="7EUXB" />
       </node>
     </node>
   </node>

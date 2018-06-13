@@ -9,7 +9,6 @@
     <devkit ref="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" />
   </languages>
   <imports>
-    <import index="vbi9" ref="8c081446-e4ba-48b7-a7e0-3db40e2c3439/i:f010101(com.mbeddr.cpp.base/com.mbeddr.cpp.base@descriptor)" />
     <import index="g7jk" ref="r:e06e24a5-d0fa-4f76-9dee-2042532d92a1(com.mbeddr.cpp.base.typesystem)" />
   </imports>
   <registry>
@@ -205,9 +204,9 @@
         <node concept="2NXPZ9" id="7j9KGYMR9xT" role="N3F5h">
           <property role="TrG5h" value="empty_1528275076168_1" />
         </node>
-        <node concept="7CXmI" id="1gzloVU_9JM" role="lGtFl">
-          <node concept="7OXhh" id="6ejQpbvYgeB" role="7EUXB" />
-        </node>
+      </node>
+      <node concept="7CXmI" id="32KsbhSQEaS" role="lGtFl">
+        <node concept="7OXhh" id="32KsbhSQEco" role="7EUXB" />
       </node>
     </node>
   </node>

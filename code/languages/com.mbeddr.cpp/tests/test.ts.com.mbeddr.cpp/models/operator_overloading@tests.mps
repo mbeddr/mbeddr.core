@@ -22,6 +22,7 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -91,7 +92,17 @@
       </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
-      <concept id="7240228573262412204" name="com.mbeddr.cpp.base.structure.LocalClassVariableDeclaration" flags="ng" index="2dywKE" />
+      <concept id="7240228573262412204" name="com.mbeddr.cpp.base.structure.LocalClassVariableDeclaration" flags="ng" index="2dywKE">
+        <reference id="7240228573263980490" name="constructor" index="2esx9c" />
+      </concept>
+      <concept id="7240228573260630076" name="com.mbeddr.cpp.base.structure.ConstructorVoidType" flags="ng" index="2dFNQU" />
+      <concept id="7844497894798008401" name="com.mbeddr.cpp.base.structure.ClassConstructorSignature" flags="ng" index="2gom4k">
+        <property id="6088872510303555204" name="isDestructor" index="3BMcJd" />
+        <child id="7155645240280389397" name="body" index="1IVm9U" />
+      </concept>
+      <concept id="7844497894798008359" name="com.mbeddr.cpp.base.structure.ClassConstructorDeclaration" flags="ng" index="2gom5y">
+        <reference id="7844497894798008388" name="parentClass" index="2gom41" />
+      </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
@@ -228,6 +239,17 @@
         <node concept="3mBW2U" id="7SgJHc9swAT" role="N3F5h">
           <property role="2OOxQR" value="true" />
           <property role="TrG5h" value="OverloadOperators" />
+          <node concept="2gom5y" id="32KsbhSQye6" role="3mBdys">
+            <property role="3BMcJd" value="false" />
+            <property role="1wg9_F" value="public" />
+            <property role="TrG5h" value="OverloadOperators" />
+            <ref role="2gom41" node="7SgJHc9swAT" resolve="OverloadOperators" />
+            <node concept="3XIRFW" id="32KsbhSQye7" role="1IVm9U" />
+            <node concept="2dFNQU" id="32KsbhSQye8" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
           <node concept="2dSIm2" id="7SgJHc9sAK1" role="3mBdys">
             <property role="TrG5h" value="operator" />
             <property role="1wg9_F" value="public" />
@@ -456,6 +478,7 @@
           <node concept="3XIRFW" id="7SgJHc9swB9" role="3XIRFY">
             <node concept="2dywKE" id="7SgJHc9szXm" role="3XIRFZ">
               <property role="TrG5h" value="a" />
+              <ref role="2esx9c" node="32KsbhSQye6" resolve="OverloadOperators" />
               <node concept="3mBfEi" id="7SgJHc9szXn" role="2C2TGm">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
@@ -464,6 +487,7 @@
             </node>
             <node concept="2dywKE" id="7SgJHc9szUG" role="3XIRFZ">
               <property role="TrG5h" value="b" />
+              <ref role="2esx9c" node="32KsbhSQye6" resolve="OverloadOperators" />
               <node concept="3mBfEi" id="7SgJHc9szUE" role="2C2TGm">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
@@ -645,6 +669,9 @@
             <property role="2c7vTL" value="false" />
           </node>
         </node>
+      </node>
+      <node concept="7CXmI" id="32KsbhSQyrs" role="lGtFl">
+        <node concept="7OXhh" id="32KsbhSQyr$" role="7EUXB" />
       </node>
     </node>
   </node>

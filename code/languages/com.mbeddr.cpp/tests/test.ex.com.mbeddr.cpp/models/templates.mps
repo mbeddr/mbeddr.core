@@ -6,8 +6,8 @@
     <devkit ref="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" />
   </languages>
   <imports>
-    <import index="ys0m" ref="r:9e71b142-f269-4237-8701-257cbfe7c45f(test.ex.com.mbeddr.cpp.exceptions)" />
     <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
+    <import index="ys0m" ref="r:9e71b142-f269-4237-8701-257cbfe7c45f(test.ex.com.mbeddr.cpp.exceptions)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -313,12 +313,6 @@
       <ref role="3oK8_y" node="3v5DuFDkAwn" resolve="portable" />
       <node concept="2v9HqM" id="2_lkiVk5JE3" role="2eOfOg">
         <ref role="2v9HqP" node="2_lkiVj_DvU" resolve="Templates" />
-      </node>
-      <node concept="2v9HqM" id="3v5DuFDttij" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
-      </node>
-      <node concept="2v9HqM" id="3v5DuFDttik" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="3v5DuFDtvd1" role="2Q9xDr">
@@ -1215,7 +1209,7 @@
           <node concept="2qmXGp" id="1CWIc7F69Gy" role="3XIe9u">
             <node concept="yFYmZ" id="1CWIc7F69Hw" role="1ESnxz">
               <ref role="3mBbHN" node="76fdl5j8cq7" resolve="foobar" />
-              <node concept="3TlMh9" id="1CWIc7F69P_" role="3mBtou">
+              <node concept="3TlMh9" id="6Rfiwa9QF_K" role="3mBtou">
                 <property role="2hmy$m" value="1" />
               </node>
               <node concept="3TlMhK" id="1CWIc7F69Sy" role="3mBtou" />
