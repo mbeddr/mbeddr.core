@@ -436,9 +436,6 @@
       <property role="TrG5h" value="Exceptions" />
       <property role="iO3LB" value="true" />
       <ref role="3oK8_y" node="3v5DuFDkAwn" resolve="portable" />
-      <node concept="2v9HqM" id="6OyCGyaM_pO" role="2eOfOg">
-        <ref role="2v9HqP" node="6OyCGyaM_pD" resolve="Try_Catch" />
-      </node>
       <node concept="2v9HqM" id="4WhfN3ojRGp" role="2eOfOg">
         <ref role="2v9HqP" node="4WhfN3ocL2A" resolve="Exception" />
       </node>
