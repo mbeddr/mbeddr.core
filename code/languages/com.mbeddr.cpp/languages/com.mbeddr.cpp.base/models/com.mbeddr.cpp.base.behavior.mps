@@ -12915,5 +12915,54 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="hYHfWrRl7J">
+    <ref role="13h7C2" to="wnzg:hYHfWq_jIb" resolve="Char16_tType" />
+    <node concept="13i0hz" id="4XMHJL4Gf_f" role="13h7CS">
+      <property role="TrG5h" value="getPrintfFormatString" />
+      <ref role="13i0hy" to="ywuz:4XMHJL4FDjg" resolve="getPrintfFormatString" />
+      <node concept="3clFbS" id="4XMHJL4Gf_i" role="3clF47">
+        <node concept="3clFbF" id="4XMHJL4Gf_l" role="3cqZAp">
+          <node concept="Xl_RD" id="4XMHJL4Gf_m" role="3clFbG">
+            <property role="Xl_RC" value="%c" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4XMHJL4Gf_j" role="3clF45" />
+      <node concept="3Tm1VV" id="4XMHJL4Gf_k" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="41gwt5bLjbn" role="13h7CS">
+      <property role="TrG5h" value="getUsedBytes" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ywuz:61lw97FtLtJ" resolve="getUsedBytes" />
+      <node concept="3Tm1VV" id="41gwt5bLjbo" role="1B3o_S" />
+      <node concept="3clFbS" id="41gwt5bLjbr" role="3clF47">
+        <node concept="3clFbF" id="hYHfWrRmuR" role="3cqZAp">
+          <node concept="3cmrfG" id="hYHfWrRmuQ" role="3clFbG">
+            <property role="3cmrfH" value="2" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="41gwt5bLjbs" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6h7l0fOJv0h" role="13h7CS">
+      <property role="TrG5h" value="canBeUsedInSwitch" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ywuz:1z9MsBsVqFS" resolve="canBeUsedInSwitch" />
+      <node concept="3Tm1VV" id="6h7l0fOJv0i" role="1B3o_S" />
+      <node concept="3clFbS" id="6h7l0fOJv0n" role="3clF47">
+        <node concept="3clFbF" id="6h7l0fOJwtC" role="3cqZAp">
+          <node concept="3clFbT" id="6h7l0fOJwtB" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="6h7l0fOJv0o" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="hYHfWrRl7K" role="13h7CW">
+      <node concept="3clFbS" id="hYHfWrRl7L" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
