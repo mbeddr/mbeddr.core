@@ -6612,6 +6612,42 @@
             <node concept="Xl_RD" id="1VsJb22xp3r" role="2BsfMF">
               <property role="Xl_RC" value="private" />
             </node>
+            <node concept="Xl_RD" id="1VsJb22y_Lu" role="2BsfMF">
+              <property role="Xl_RC" value="and" />
+            </node>
+            <node concept="Xl_RD" id="1VsJb22y_Zf" role="2BsfMF">
+              <property role="Xl_RC" value="and_eq" />
+            </node>
+            <node concept="Xl_RD" id="1VsJb22yB1_" role="2BsfMF">
+              <property role="Xl_RC" value="mutable" />
+            </node>
+            <node concept="Xl_RD" id="1VsJb22yB_0" role="2BsfMF">
+              <property role="Xl_RC" value="template" />
+            </node>
+            <node concept="Xl_RD" id="1VsJb22yBNN" role="2BsfMF">
+              <property role="Xl_RC" value="typename" />
+            </node>
+            <node concept="Xl_RD" id="1VsJb22yC2W" role="2BsfMF">
+              <property role="Xl_RC" value="virtual" />
+            </node>
+            <node concept="Xl_RD" id="1VsJb22yCir" role="2BsfMF">
+              <property role="Xl_RC" value="not" />
+            </node>
+            <node concept="Xl_RD" id="1VsJb22yCyg" role="2BsfMF">
+              <property role="Xl_RC" value="or" />
+            </node>
+            <node concept="Xl_RD" id="1VsJb22yCHt" role="2BsfMF">
+              <property role="Xl_RC" value="or_eq" />
+            </node>
+            <node concept="Xl_RD" id="1VsJb22yCXY" role="2BsfMF">
+              <property role="Xl_RC" value="bitand" />
+            </node>
+            <node concept="Xl_RD" id="1VsJb22yDeP" role="2BsfMF">
+              <property role="Xl_RC" value="bitor" />
+            </node>
+            <node concept="Xl_RD" id="1VsJb22yDqM" role="2BsfMF">
+              <property role="Xl_RC" value="typedef" />
+            </node>
           </node>
         </node>
       </node>
