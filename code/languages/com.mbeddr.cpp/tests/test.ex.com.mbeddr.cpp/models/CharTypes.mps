@@ -111,7 +111,6 @@
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
       </concept>
-      <concept id="8860443239512128108" name="com.mbeddr.core.expressions.structure.IntType" flags="ng" index="3TlMh2" />
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
   </registry>
@@ -205,21 +204,11 @@
     <node concept="2NXPZ9" id="3VWY4WXtGOk" role="N3F5h">
       <property role="TrG5h" value="empty_1528968458096_1" />
     </node>
-    <node concept="3Iz7nb" id="3VWY4WXusDN" role="N3F5h">
-      <property role="TrG5h" value="test" />
-      <node concept="3TlMh2" id="3VWY4WXusDL" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="3TlMh9" id="3VWY4WXv0Kw" role="1cecVj">
-        <property role="2hmy$m" value="1" />
-      </node>
+    <node concept="2NXPZ9" id="3VWY4WZBBaL" role="N3F5h">
+      <property role="TrG5h" value="empty_1528976599426_1" />
     </node>
-    <node concept="2NXPZ9" id="3VWY4WXv7ax" role="N3F5h">
-      <property role="TrG5h" value="empty_1528975379323_4" />
-    </node>
-    <node concept="2NXPZ9" id="3VWY4WW2OrH" role="N3F5h">
-      <property role="TrG5h" value="empty_1528959365768_2" />
+    <node concept="2NXPZ9" id="3VWY4WZQQLG" role="N3F5h">
+      <property role="TrG5h" value="empty_1528976765682_1" />
     </node>
     <node concept="lIfQi" id="hYHfWqSGOw" role="N3F5h">
       <property role="3HjyOP" value="true" />
