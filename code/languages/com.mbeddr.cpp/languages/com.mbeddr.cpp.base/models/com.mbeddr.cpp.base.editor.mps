@@ -1159,13 +1159,13 @@
     <property role="3GE5qa" value="constructor" />
     <ref role="1XX52x" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
     <node concept="3EZMnI" id="7DDmkza$5T" role="2wV5jI">
-      <node concept="1iCGBv" id="7DDmkza$63" role="3EZMnx">
+      <node concept="1iCGBv" id="7e1_xL5cVIH" role="3EZMnx">
         <ref role="1NtTu8" to="wnzg:7DDmkza$5N" resolve="identity" />
-        <node concept="1sVBvm" id="7DDmkza$65" role="1sWHZn">
-          <node concept="1iCGBv" id="phuaKKO95m" role="2wV5jI">
+        <node concept="1sVBvm" id="7e1_xL5cVIJ" role="1sWHZn">
+          <node concept="1iCGBv" id="7e1_xL5cVJ1" role="2wV5jI">
             <ref role="1NtTu8" to="wnzg:6NtgknWJ214" resolve="parentClass" />
-            <node concept="1sVBvm" id="phuaKKO95n" role="1sWHZn">
-              <node concept="3F0A7n" id="phuaKKO95_" role="2wV5jI">
+            <node concept="1sVBvm" id="7e1_xL5cVJ3" role="1sWHZn">
+              <node concept="3F0A7n" id="7e1_xL5cVJd" role="2wV5jI">
                 <property role="1Intyy" value="true" />
                 <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
               </node>
@@ -1334,21 +1334,6 @@
     <node concept="1hA7zw" id="6hUtorEg0J$" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
       <property role="1hHO97" value="Removes the current selected class constructor selection" />
-      <node concept="1hAIg9" id="6hUtorEg0J_" role="1hA7z_">
-        <node concept="3clFbS" id="6hUtorEg0JA" role="2VODD2">
-          <node concept="3clFbF" id="6hUtorEg11v" role="3cqZAp">
-            <node concept="37vLTI" id="6hUtorEg3zG" role="3clFbG">
-              <node concept="10Nm6u" id="6hUtorEg3$g" role="37vLTx" />
-              <node concept="2OqwBi" id="6hUtorEg1tV" role="37vLTJ">
-                <node concept="0IXxy" id="6hUtorEg11u" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6hUtorEg2mV" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:6hUtorE26va" resolve="constructor" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="jK8Ss" id="c7Kd0eKWr0" role="jK8aL">
         <node concept="3clFbS" id="c7Kd0eKWr1" role="2VODD2">
           <node concept="3clFbF" id="c7Kd0eKWr2" role="3cqZAp">
@@ -1360,6 +1345,21 @@
                 </node>
               </node>
               <node concept="3x8VRR" id="c7Kd0eKWr7" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1hAIg9" id="6hUtorEg0J_" role="1hA7z_">
+        <node concept="3clFbS" id="6hUtorEg0JA" role="2VODD2">
+          <node concept="3clFbF" id="6hUtorEg11v" role="3cqZAp">
+            <node concept="37vLTI" id="6hUtorEg3zG" role="3clFbG">
+              <node concept="10Nm6u" id="6hUtorEg3$g" role="37vLTx" />
+              <node concept="2OqwBi" id="6hUtorEg1tV" role="37vLTJ">
+                <node concept="0IXxy" id="6hUtorEg11u" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6hUtorEg2mV" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:6hUtorE26va" resolve="constructor" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1564,8 +1564,8 @@
               <node concept="3F2HdR" id="6hUtorE9cJd" role="3EZMnx">
                 <property role="2czwfO" value="," />
                 <property role="1cu_pB" value="1" />
-                <ref role="1NtTu8" to="wnzg:6hUtorE99Pe" resolve="constructorArgActuals" />
                 <ref role="1ERwB7" node="6hUtorEdeMU" resolve="DeleteCurrentConstructorSelection" />
+                <ref role="1NtTu8" to="wnzg:6hUtorE99Pe" resolve="constructorArgActuals" />
               </node>
               <node concept="3F0ifn" id="6hUtorEaE8M" role="3EZMnx">
                 <property role="3F0ifm" value=")" />
