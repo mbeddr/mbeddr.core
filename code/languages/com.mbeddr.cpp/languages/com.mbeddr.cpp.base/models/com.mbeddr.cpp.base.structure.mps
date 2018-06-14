@@ -129,16 +129,16 @@
       <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
     </node>
     <node concept="PrWs8" id="3UJ18qjqSiT" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlag" />
     </node>
     <node concept="PrWs8" id="3UJ18qjqSja" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineFlagConcept" />
+      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineFlag" />
     </node>
     <node concept="PrWs8" id="3UJ18qjqSjv" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlagConcept" />
+      <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlag" />
     </node>
     <node concept="PrWs8" id="3UJ18qjqSjS" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
+      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlag" />
     </node>
     <node concept="1TJgyj" id="3CmSUB7Fp_k" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -166,7 +166,7 @@
     <property role="TrG5h" value="IClassMemberDeclaration" />
     <property role="3GE5qa" value="class" />
     <node concept="PrWs8" id="5eDFAXBm97W" role="PrDN$">
-      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlag" />
     </node>
     <node concept="1TJgyi" id="2Ai0Gt9ODIG" role="1TKVEl">
       <property role="IQ2nx" value="2995459757115087788" />
@@ -205,22 +205,22 @@
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
     <node concept="PrWs8" id="5eDFAXBCDcW" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlagConcept" />
+      <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlag" />
     </node>
     <node concept="PrWs8" id="5eDFAXBRI2X" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineFlagConcept" />
+      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineFlag" />
     </node>
     <node concept="PrWs8" id="5eDFAXBRQi_" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
+      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlag" />
     </node>
     <node concept="PrWs8" id="5eDFAXBS4mZ" role="PzmwI">
       <ref role="PrY4T" node="5eDFAXBS4m7" resolve="IThreadLocalFlag" />
     </node>
     <node concept="PrWs8" id="15T8UHynq6K" role="PzmwI">
-      <ref role="PrY4T" node="15T8UHynq3H" resolve="IMutableFlagConcept" />
+      <ref role="PrY4T" node="15T8UHynq3H" resolve="IMutableFlag" />
     </node>
     <node concept="PrWs8" id="6OyCGy4g52Y" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlag" />
     </node>
   </node>
   <node concept="PlHQZ" id="4o2nsMgBJ5Y">
@@ -261,10 +261,10 @@
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
     <node concept="PrWs8" id="2L1k$oXNUaR" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlag" />
     </node>
     <node concept="PrWs8" id="1Yr26iur2wG" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlag" />
     </node>
   </node>
   <node concept="1TIwiD" id="3v5DuFDls_I">
@@ -351,7 +351,7 @@
   </node>
   <node concept="PlHQZ" id="2L1k$oXxncW">
     <property role="EcuMT" value="3188920472788366140" />
-    <property role="TrG5h" value="IVirtualFlagConcept" />
+    <property role="TrG5h" value="IVirtualFlag" />
     <property role="3GE5qa" value="flag" />
     <node concept="1TJgyi" id="2L1k$oXxncX" role="1TKVEl">
       <property role="IQ2nx" value="3188920472788366141" />
@@ -417,16 +417,16 @@
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
     <node concept="PrWs8" id="6NtgknWJ20V" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualFlagConcept" />
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualFlag" />
     </node>
     <node concept="PrWs8" id="3OTimPpGcj0" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlag" />
     </node>
     <node concept="PrWs8" id="1D2kn99oQ0S" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
+      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlag" />
     </node>
     <node concept="PrWs8" id="1D2kn9asHjj" role="PzmwI">
-      <ref role="PrY4T" node="1D2kn9asHi2" resolve="IExplicitFlagConcept" />
+      <ref role="PrY4T" node="1D2kn9asHi2" resolve="IExplicitFlag" />
     </node>
     <node concept="PrWs8" id="6ddXmWdS2eK" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
@@ -597,10 +597,10 @@
   </node>
   <node concept="PlHQZ" id="2L1k$oXDqJY">
     <property role="EcuMT" value="3188920472790477822" />
-    <property role="TrG5h" value="IPureVirtualFlagConcept" />
+    <property role="TrG5h" value="IPureVirtualFlag" />
     <property role="3GE5qa" value="flag" />
     <node concept="PrWs8" id="2L1k$oXDqJZ" role="PrDN$">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualFlagConcept" />
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualFlag" />
     </node>
     <node concept="1TJgyi" id="2L1k$oXDqK2" role="1TKVEl">
       <property role="IQ2nx" value="3188920472790477826" />
@@ -744,7 +744,7 @@
   <node concept="PlHQZ" id="1Yr26itwsSZ">
     <property role="EcuMT" value="2277423264798199359" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IInlineFlagConcept" />
+    <property role="TrG5h" value="IInlineFlag" />
     <node concept="1TJgyi" id="1Yr26itwsT0" role="1TKVEl">
       <property role="IQ2nx" value="2277423264798199360" />
       <property role="TrG5h" value="isInlined" />
@@ -825,7 +825,7 @@
   <node concept="PlHQZ" id="5eDFAXBRENn">
     <property role="EcuMT" value="6028541369719368919" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IExternFlagConcept" />
+    <property role="TrG5h" value="IExternFlag" />
     <node concept="1TJgyi" id="5eDFAXBRENo" role="1TKVEl">
       <property role="IQ2nx" value="6028541369719368920" />
       <property role="TrG5h" value="isExtern" />
@@ -920,7 +920,7 @@
   <node concept="PlHQZ" id="15T8UHynq3H">
     <property role="EcuMT" value="1259076789823447277" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IMutableFlagConcept" />
+    <property role="TrG5h" value="IMutableFlag" />
     <node concept="1TJgyi" id="15T8UHynq3I" role="1TKVEl">
       <property role="IQ2nx" value="1259076789823447278" />
       <property role="TrG5h" value="isMutable" />
@@ -930,7 +930,7 @@
   <node concept="PlHQZ" id="1Yr26itwx8u">
     <property role="EcuMT" value="2277423264798216734" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IStaticFlagConcept" />
+    <property role="TrG5h" value="IStaticFlag" />
     <node concept="1TJgyi" id="1Yr26itwx8v" role="1TKVEl">
       <property role="IQ2nx" value="2277423264798216735" />
       <property role="TrG5h" value="isStatic" />
@@ -989,7 +989,7 @@
   <node concept="PlHQZ" id="5eDFAXBRQhJ">
     <property role="EcuMT" value="6028541369719415919" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IConstExprFlagConcept" />
+    <property role="TrG5h" value="IConstExprFlag" />
     <node concept="1TJgyi" id="5eDFAXBRQhK" role="1TKVEl">
       <property role="IQ2nx" value="6028541369719415920" />
       <property role="TrG5h" value="isConstExpr" />
@@ -999,7 +999,7 @@
   <node concept="PlHQZ" id="5eDFAXBCper">
     <property role="EcuMT" value="6028541369715364763" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IVolatileFlagConcept" />
+    <property role="TrG5h" value="IVolatileFlag" />
     <node concept="1TJgyi" id="5eDFAXBCpes" role="1TKVEl">
       <property role="IQ2nx" value="6028541369715364764" />
       <property role="TrG5h" value="isVolatile" />
@@ -1031,7 +1031,7 @@
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
     <node concept="PrWs8" id="6OyCGy3FHsc" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlag" />
     </node>
     <node concept="PrWs8" id="3VWY4WVNoY5" role="PzmwI">
       <ref role="PrY4T" node="5eDFAXBS4m7" resolve="IThreadLocalFlag" />
@@ -1060,7 +1060,7 @@
   <node concept="PlHQZ" id="1D2kn9asHi2">
     <property role="EcuMT" value="1892164344766190722" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IExplicitFlagConcept" />
+    <property role="TrG5h" value="IExplicitFlag" />
     <node concept="1TJgyi" id="1D2kn9asHiy" role="1TKVEl">
       <property role="IQ2nx" value="1892164344766190754" />
       <property role="TrG5h" value="isExplicit" />

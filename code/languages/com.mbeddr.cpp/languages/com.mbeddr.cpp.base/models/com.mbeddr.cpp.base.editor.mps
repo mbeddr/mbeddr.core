@@ -1078,7 +1078,7 @@
   <node concept="PKFIW" id="2L1k$oXm7Pq">
     <property role="TrG5h" value="VirtualFlag" />
     <property role="3GE5qa" value="flag" />
-    <ref role="1XX52x" to="wnzg:2L1k$oXxncW" resolve="IVirtualFlagConcept" />
+    <ref role="1XX52x" to="wnzg:2L1k$oXxncW" resolve="IVirtualFlag" />
     <node concept="1kHk_G" id="2LwGNVbhV8I" role="2wV5jI">
       <property role="ZjSer" value="virtual" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
@@ -1612,7 +1612,7 @@
   <node concept="PKFIW" id="1TorPL4sJdQ">
     <property role="TrG5h" value="PureFlag" />
     <property role="3GE5qa" value="flag" />
-    <ref role="1XX52x" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
+    <ref role="1XX52x" to="wnzg:2L1k$oXDqJY" resolve="IPureVirtualFlag" />
     <node concept="1kHk_G" id="1TorPL4sJdR" role="2wV5jI">
       <property role="ZjSer" value="pure" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
@@ -1622,7 +1622,7 @@
   <node concept="PKFIW" id="5eDFAXBRQic">
     <property role="3GE5qa" value="flag" />
     <property role="TrG5h" value="ConstExprFlag" />
-    <ref role="1XX52x" to="wnzg:5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
+    <ref role="1XX52x" to="wnzg:5eDFAXBRQhJ" resolve="IConstExprFlag" />
     <node concept="1kHk_G" id="5eDFAXBRQie" role="2wV5jI">
       <property role="ZjSer" value="constexpr" />
       <ref role="1NtTu8" to="wnzg:5eDFAXBRQhK" resolve="isConstExpr" />
@@ -1632,7 +1632,7 @@
   <node concept="PKFIW" id="5eDFAXBRENO">
     <property role="3GE5qa" value="flag" />
     <property role="TrG5h" value="ExternFlag" />
-    <ref role="1XX52x" to="wnzg:5eDFAXBRENn" resolve="IExternFlagConcept" />
+    <ref role="1XX52x" to="wnzg:5eDFAXBRENn" resolve="IExternFlag" />
     <node concept="1kHk_G" id="5eDFAXBRENQ" role="2wV5jI">
       <property role="ZjSer" value="extern" />
       <ref role="1NtTu8" to="wnzg:5eDFAXBRENo" resolve="isExtern" />
@@ -1642,7 +1642,7 @@
   <node concept="PKFIW" id="1Yr26itwsTs">
     <property role="3GE5qa" value="flag" />
     <property role="TrG5h" value="InlineFlag" />
-    <ref role="1XX52x" to="wnzg:1Yr26itwsSZ" resolve="IInlineFlagConcept" />
+    <ref role="1XX52x" to="wnzg:1Yr26itwsSZ" resolve="IInlineFlag" />
     <node concept="1kHk_G" id="1Yr26itwsTu" role="2wV5jI">
       <property role="ZjSer" value="inline" />
       <ref role="1NtTu8" to="wnzg:1Yr26itwsT0" resolve="isInlined" />
@@ -1652,7 +1652,7 @@
   <node concept="PKFIW" id="15T8UHynq4a">
     <property role="3GE5qa" value="flag" />
     <property role="TrG5h" value="MutableFlag" />
-    <ref role="1XX52x" to="wnzg:15T8UHynq3H" resolve="IMutableFlagConcept" />
+    <ref role="1XX52x" to="wnzg:15T8UHynq3H" resolve="IMutableFlag" />
     <node concept="1kHk_G" id="15T8UHynq5E" role="2wV5jI">
       <property role="ZjSer" value="mutable" />
       <ref role="1NtTu8" to="wnzg:15T8UHynq3I" resolve="isMutable" />
@@ -1662,7 +1662,7 @@
   <node concept="PKFIW" id="1Yr26itwx8V">
     <property role="3GE5qa" value="flag" />
     <property role="TrG5h" value="StaticFlag" />
-    <ref role="1XX52x" to="wnzg:1Yr26itwx8u" resolve="IStaticFlagConcept" />
+    <ref role="1XX52x" to="wnzg:1Yr26itwx8u" resolve="IStaticFlag" />
     <node concept="1kHk_G" id="1Yr26itwx8X" role="2wV5jI">
       <property role="ZjSer" value="static" />
       <ref role="1NtTu8" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
@@ -1682,7 +1682,7 @@
   <node concept="PKFIW" id="5eDFAXBCpeS">
     <property role="3GE5qa" value="flag" />
     <property role="TrG5h" value="VolatileFlag" />
-    <ref role="1XX52x" to="wnzg:5eDFAXBCper" resolve="IVolatileFlagConcept" />
+    <ref role="1XX52x" to="wnzg:5eDFAXBCper" resolve="IVolatileFlag" />
     <node concept="1kHk_G" id="5eDFAXBCpeU" role="2wV5jI">
       <property role="ZjSer" value="volatile" />
       <ref role="1NtTu8" to="wnzg:5eDFAXBCpes" resolve="isVolatile" />
@@ -3357,7 +3357,7 @@
   <node concept="PKFIW" id="1D2kn9asHis">
     <property role="3GE5qa" value="flag" />
     <property role="TrG5h" value="ExplicitFlag" />
-    <ref role="1XX52x" to="wnzg:1D2kn9asHi2" resolve="IExplicitFlagConcept" />
+    <ref role="1XX52x" to="wnzg:1D2kn9asHi2" resolve="IExplicitFlag" />
     <node concept="1kHk_G" id="1D2kn9asHiu" role="2wV5jI">
       <property role="ZjSer" value="explicit" />
       <ref role="1NtTu8" to="wnzg:1D2kn9asHiy" resolve="isExplicit" />

@@ -115,7 +115,7 @@
     <property role="TrG5h" value="ToggleVirtual" />
     <property role="2ZfUl0" value="true" />
     <property role="3GE5qa" value="flag" />
-    <ref role="2ZfgGC" to="wnzg:2L1k$oXxncW" resolve="IVirtualFlagConcept" />
+    <ref role="2ZfgGC" to="wnzg:2L1k$oXxncW" resolve="IVirtualFlag" />
     <node concept="2S6ZIM" id="2L1k$oXnM2_" role="2ZfVej">
       <node concept="3clFbS" id="2L1k$oXnM2A" role="2VODD2">
         <node concept="3clFbF" id="2L1k$oXnMc1" role="3cqZAp">
@@ -820,7 +820,7 @@
     <property role="TrG5h" value="ToggleStatic" />
     <property role="2ZfUl0" value="true" />
     <property role="3GE5qa" value="flag" />
-    <ref role="2ZfgGC" to="wnzg:1Yr26itwx8u" resolve="IStaticFlagConcept" />
+    <ref role="2ZfgGC" to="wnzg:1Yr26itwx8u" resolve="IStaticFlag" />
     <node concept="2S6ZIM" id="6OyCGy4Gdhy" role="2ZfVej">
       <node concept="3clFbS" id="6OyCGy4Gdhz" role="2VODD2">
         <node concept="3clFbF" id="6OyCGy4GdQK" role="3cqZAp">
@@ -877,7 +877,7 @@
     <property role="3GE5qa" value="flag" />
     <property role="TrG5h" value="ToggleConst" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="wnzg:5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
+    <ref role="2ZfgGC" to="wnzg:5eDFAXBRQhJ" resolve="IConstExprFlag" />
     <node concept="2S6ZIM" id="5w6Oa1XRT5e" role="2ZfVej">
       <node concept="3clFbS" id="5w6Oa1XRT5f" role="2VODD2">
         <node concept="3clFbF" id="5w6Oa1XRTIK" role="3cqZAp">
