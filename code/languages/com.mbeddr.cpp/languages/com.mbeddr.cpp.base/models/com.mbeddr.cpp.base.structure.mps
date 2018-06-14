@@ -266,6 +266,9 @@
     <node concept="PrWs8" id="1Yr26iur2wG" role="PzmwI">
       <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlag" />
     </node>
+    <node concept="t5JxF" id="c7Kd0g7O8Y" role="lGtFl">
+      <property role="t5JxN" value="A method without a body." />
+    </node>
   </node>
   <node concept="1TIwiD" id="3v5DuFDls_I">
     <property role="EcuMT" value="4018800670853679470" />
@@ -707,6 +710,9 @@
     <property role="EcuMT" value="3604003506923569988" />
     <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="INamespaceMemberDeclaration" />
+    <node concept="t5JxF" id="c7Kd0gpDHv" role="lGtFl">
+      <property role="t5JxN" value="Interface that joins things that can reside inside of a namespace at the top level." />
+    </node>
   </node>
   <node concept="PlHQZ" id="383ZxwZsgd5">
     <property role="EcuMT" value="3604003506923569989" />

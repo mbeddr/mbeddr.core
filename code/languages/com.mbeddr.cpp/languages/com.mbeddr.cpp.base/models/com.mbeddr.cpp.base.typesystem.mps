@@ -5007,7 +5007,7 @@
             <node concept="3clFbS" id="6zyIeiaAR_$" role="3clFbx">
               <node concept="a7r0C" id="6zyIeiaAZZV" role="3cqZAp">
                 <node concept="Xl_RD" id="6zyIeiaAZZX" role="a7wSD">
-                  <property role="Xl_RC" value="Duplicate name can make variables ambiguous" />
+                  <property role="Xl_RC" value="Duplicate names can make variables ambiguous" />
                 </node>
                 <node concept="1YBJjd" id="6zyIeiaAZZY" role="2OEOjV">
                   <ref role="1YBMHb" node="6zyIeiaAPTf" resolve="nsD" />

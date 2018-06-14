@@ -339,6 +339,11 @@
     <ref role="WuzLi" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
     <node concept="11bSqf" id="4o2nsMgC2aq" role="11c4hB">
       <node concept="3clFbS" id="4o2nsMgC2ar" role="2VODD2">
+        <node concept="3SKdUt" id="c7Kd0g7NRV" role="3cqZAp">
+          <node concept="3SKdUq" id="c7Kd0g7NRX" role="3SKWNk">
+            <property role="3SKdUp" value="Generates everything except the braces and what's inside of them." />
+          </node>
+        </node>
         <node concept="lc7rE" id="2Ai0Gt9WtIi" role="3cqZAp">
           <node concept="1bDJIP" id="2Ai0Gt9WtRV" role="lcghm">
             <ref role="1rvKf6" node="2Ai0Gt9WlKT" resolve="generateMethodPrototype" />
