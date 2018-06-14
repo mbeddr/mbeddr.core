@@ -14,14 +14,6 @@
         <property id="5806551411806985511" name="storeInRegister" index="3emlUp" />
       </concept>
     </language>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
-        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
-      </concept>
-    </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
@@ -58,15 +50,12 @@
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
-        <child id="8375407818529178007" name="text" index="OjmMu" />
-      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
-      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlagConcept" flags="ng" index="226hDU">
+      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlag" flags="ng" index="226hDU">
         <property id="2277423264798216735" name="isStatic" index="226hDV" />
       </concept>
       <concept id="323895230977986713" name="com.mbeddr.cpp.base.structure.WChar_tType" flags="ng" index="uB6hA" />
@@ -78,9 +67,6 @@
       <concept id="7864026881428739843" name="com.mbeddr.cpp.base.structure.GlobalVarDecCPP" flags="ng" index="3Iz7nb" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
-      <concept id="1028666136487545270" name="com.mbeddr.core.modules.structure.CommentModuleContent" flags="ng" index="2B_Gvg">
-        <child id="1028666136487550078" name="text" index="2B_H8o" />
-      </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
       </concept>
@@ -218,20 +204,11 @@
     <node concept="2NXPZ9" id="3VWY4WXtGOk" role="N3F5h">
       <property role="TrG5h" value="empty_1528968458096_1" />
     </node>
-    <node concept="2B_Gvg" id="2iCeJy6hSjN" role="N3F5h">
-      <node concept="OjmMv" id="2iCeJy6hSjP" role="2B_H8o">
-        <node concept="19SGf9" id="2iCeJy6hSjS" role="OjmMu">
-          <node concept="19SUe$" id="2iCeJy6hSjT" role="19SJt6">
-            <property role="19SUeA" value="Clipboard: int test = 1;" />
-          </node>
-        </node>
-      </node>
+    <node concept="2NXPZ9" id="37oCUgL8atc" role="N3F5h">
+      <property role="TrG5h" value="empty_1528987034384_1" />
     </node>
-    <node concept="2NXPZ9" id="2iCeJy6hSjU" role="N3F5h">
-      <property role="TrG5h" value="empty_1528982884420_2" />
-    </node>
-    <node concept="2NXPZ9" id="2iCeJy63oyL" role="N3F5h">
-      <property role="TrG5h" value="empty_1528982816284_4" />
+    <node concept="2NXPZ9" id="37oCUgL8aSB" role="N3F5h">
+      <property role="TrG5h" value="empty_1528987055519_3" />
     </node>
     <node concept="lIfQi" id="hYHfWqSGOw" role="N3F5h">
       <property role="3HjyOP" value="true" />
