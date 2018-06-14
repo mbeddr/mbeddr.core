@@ -3056,6 +3056,9 @@
         <node concept="PMmxH" id="6OyCGy3FHti" role="3EZMnx">
           <ref role="PMmxG" to="cl6c:5Oog2UbPmsM" resolve="externFlag" />
         </node>
+        <node concept="PMmxH" id="3VWY4WW2NDG" role="3EZMnx">
+          <ref role="PMmxG" node="5eDFAXBS4m$" resolve="ThreadLocalFlag" />
+        </node>
         <node concept="PMmxH" id="6OyCGy3FHtu" role="3EZMnx">
           <ref role="PMmxG" to="cl6c:7RiewQ_k17G" resolve="exportedFlag" />
           <node concept="pkWqt" id="6OyCGy3FWsn" role="pqm2j">
@@ -3412,11 +3415,11 @@
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7SgJHc8q8GP" role="37vLTJ">
-                  <node concept="37vLTw" id="6ODoR9yiGpN" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7SgJHc7MXpX" resolve="replacement" />
-                  </node>
                   <node concept="3TrEf2" id="6ODoR9yiGeW" role="2OqNvi">
                     <ref role="3Tt5mk" to="wnzg:7SgJHc8K2Wu" resolve="classType" />
+                  </node>
+                  <node concept="37vLTw" id="6ODoR9yiGpN" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7SgJHc7MXpX" resolve="replacement" />
                   </node>
                 </node>
               </node>

@@ -5219,6 +5219,48 @@
   <node concept="18kY7G" id="hYHfWv9gS9">
     <property role="TrG5h" value="check_GlobalVarDecCPP" />
     <node concept="3clFbS" id="hYHfWv9gSa" role="18ibNy">
+      <node concept="3SKdUt" id="3VWY4WWAsXd" role="3cqZAp">
+        <node concept="3SKdUq" id="3VWY4WWAsXf" role="3SKWNk">
+          <property role="3SKdUp" value="Give error if thread local and register" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="3VWY4WWhIv9" role="3cqZAp">
+        <node concept="3clFbS" id="3VWY4WWhIvb" role="3clFbx">
+          <node concept="3clFbJ" id="3VWY4WWhNYm" role="3cqZAp">
+            <node concept="3clFbS" id="3VWY4WWhNYo" role="3clFbx">
+              <node concept="2MkqsV" id="6T3uXzTgSVA" role="3cqZAp">
+                <node concept="Xl_RD" id="6T3uXzTgSVM" role="2MkJ7o">
+                  <property role="Xl_RC" value="Must not be thread local and register" />
+                </node>
+                <node concept="1YBJjd" id="3VWY4WWhRrp" role="2OEOjV">
+                  <ref role="1YBMHb" node="hYHfWv9gSc" resolve="vardec" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3VWY4WWhOr_" role="3clFbw">
+              <node concept="1YBJjd" id="3VWY4WWhNYD" role="2Oq$k0">
+                <ref role="1YBMHb" node="hYHfWv9gSc" resolve="vardec" />
+              </node>
+              <node concept="3TrcHB" id="3VWY4WWhQSN" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:5eDFAXBS4m8" resolve="isThreadLocal" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="3VWY4WWhKsO" role="3clFbw">
+          <node concept="1YBJjd" id="3VWY4WWhJZS" role="2Oq$k0">
+            <ref role="1YBMHb" node="hYHfWv9gSc" resolve="vardec" />
+          </node>
+          <node concept="3TrcHB" id="3VWY4WWhNT5" role="2OqNvi">
+            <ref role="3TsBF5" to="c4fa:52l0VUuN5OB" resolve="storeInRegister" />
+          </node>
+        </node>
+      </node>
+      <node concept="3SKdUt" id="3VWY4WWAvZ7" role="3cqZAp">
+        <node concept="3SKdUq" id="3VWY4WWAvZ9" role="3SKWNk">
+          <property role="3SKdUp" value="Give error if char16 type uses more than 16 bits" />
+        </node>
+      </node>
       <node concept="3clFbJ" id="hYHfWv9gSg" role="3cqZAp">
         <node concept="2OqwBi" id="hYHfWv9jaO" role="3clFbw">
           <node concept="2OqwBi" id="hYHfWv9hkS" role="2Oq$k0">
@@ -5626,6 +5668,11 @@
         </node>
         <node concept="3eNFk2" id="hYHfWxq6RC" role="3eNLev">
           <node concept="3clFbS" id="hYHfWxq6RD" role="3eOfB_">
+            <node concept="3SKdUt" id="3VWY4WWA_KJ" role="3cqZAp">
+              <node concept="3SKdUq" id="3VWY4WWA_KL" role="3SKWNk">
+                <property role="3SKdUp" value="Give error if char32 type uses more than 32 bits" />
+              </node>
+            </node>
             <node concept="3cpWs8" id="hYHfWxqa4A" role="3cqZAp">
               <node concept="3cpWsn" id="hYHfWxqa4D" role="3cpWs9">
                 <property role="TrG5h" value="init" />
@@ -6266,6 +6313,11 @@
         </node>
         <node concept="3eNFk2" id="hYHfWxuxml" role="3eNLev">
           <node concept="3clFbS" id="hYHfWxuxmm" role="3eOfB_">
+            <node concept="3SKdUt" id="3VWY4WWABGP" role="3cqZAp">
+              <node concept="3SKdUq" id="3VWY4WWABGR" role="3SKWNk">
+                <property role="3SKdUp" value="Give warning if wide char uses more than 8 bits" />
+              </node>
+            </node>
             <node concept="3cpWs8" id="hYHfWyav0P" role="3cqZAp">
               <node concept="3cpWsn" id="hYHfWyav0Q" role="3cpWs9">
                 <property role="TrG5h" value="init" />
