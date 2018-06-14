@@ -9,6 +9,11 @@
     <import index="tpd8" ref="r:00000000-0000-4000-0000-011c895902b0(jetbrains.mps.lang.typesystem.editor)" />
   </imports>
   <registry>
+    <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
+      <concept id="5806551411806985509" name="com.mbeddr.core.statements.structure.ICanBeStoredInRegister" flags="ng" index="3emlUr">
+        <property id="5806551411806985511" name="storeInRegister" index="3emlUp" />
+      </concept>
+    </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <reference id="2504745233808502246" name="target" index="3oK8_y" />
@@ -50,16 +55,29 @@
       </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
+      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlagConcept" flags="ng" index="226hDU">
+        <property id="2277423264798216735" name="isStatic" index="226hDV" />
+      </concept>
       <concept id="323895230977986713" name="com.mbeddr.cpp.base.structure.WChar_tType" flags="ng" index="uB6hA" />
       <concept id="323895230977986585" name="com.mbeddr.cpp.base.structure.Char32_tType" flags="ng" index="uB6jA" />
       <concept id="323895230972902283" name="com.mbeddr.cpp.base.structure.Char16_tType" flags="ng" index="uUSXO" />
+      <concept id="6028541369719473543" name="com.mbeddr.cpp.base.structure.IThreadLocalFlag" flags="ng" index="OiuJC">
+        <property id="6028541369719473544" name="isThreadLocal" index="OiuJB" />
+      </concept>
       <concept id="7864026881428739843" name="com.mbeddr.cpp.base.structure.GlobalVarDecCPP" flags="ng" index="3Iz7nb" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
       </concept>
+      <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
+        <property id="1317894735999272944" name="exported" index="2OOxQR" />
+        <property id="6708182213627106114" name="preventNameMangling" index="3mNxdG" />
+      </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
+      <concept id="6708182213627045678" name="com.mbeddr.core.modules.structure.IExternable" flags="ng" index="3mNis0">
+        <property id="6708182213627045681" name="extern" index="3mNisv" />
+      </concept>
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz">
         <child id="2771264470558526601" name="init" index="1cecVj" />
       </concept>
@@ -169,6 +187,12 @@
     </node>
     <node concept="3Iz7nb" id="hYHfWybxcv" role="N3F5h">
       <property role="TrG5h" value="testWChar_2" />
+      <property role="226hDV" value="false" />
+      <property role="3mNisv" value="false" />
+      <property role="2OOxQR" value="false" />
+      <property role="3emlUp" value="false" />
+      <property role="3mNxdG" value="false" />
+      <property role="OiuJB" value="false" />
       <node concept="uB6hA" id="hYHfWybxct" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
@@ -177,8 +201,11 @@
         <property role="2hmy$m" value="255" />
       </node>
     </node>
-    <node concept="2NXPZ9" id="hYHfWrbov0" role="N3F5h">
-      <property role="TrG5h" value="empty_1528874258167_7" />
+    <node concept="2NXPZ9" id="6rvQsg8ZJna" role="N3F5h">
+      <property role="TrG5h" value="empty_1528891587975_3" />
+    </node>
+    <node concept="2NXPZ9" id="3VWY4WW2OrH" role="N3F5h">
+      <property role="TrG5h" value="empty_1528959365768_2" />
     </node>
     <node concept="lIfQi" id="hYHfWqSGOw" role="N3F5h">
       <property role="3HjyOP" value="true" />
