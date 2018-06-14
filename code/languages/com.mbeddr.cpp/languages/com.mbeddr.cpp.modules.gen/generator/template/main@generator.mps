@@ -214,7 +214,7 @@
         <property id="2995459757115087788" name="visibility" index="1wg9_G" />
       </concept>
       <concept id="5044697665789405022" name="com.mbeddr.cpp.base.structure.ClassType" flags="ng" index="3mBfEi">
-        <reference id="5044697665789405054" name="clazz" index="3mBfEM" />
+        <reference id="5044697665789405054" name="class" index="3mBfEM" />
       </concept>
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
         <child id="4511589886097466568" name="ancestors" index="Fysvh" />
@@ -396,7 +396,7 @@
           <ref role="3mBfEM" node="2Ai0Gta7ex0" resolve="Class" />
           <node concept="1ZhdrF" id="2Ai0Gta8$Y2" role="lGtFl">
             <property role="P3scX" value="8c081446-e4ba-48b7-a7e0-3db40e2c3439/5044697665789405022/5044697665789405054" />
-            <property role="2qtEX8" value="clazz" />
+            <property role="2qtEX8" value="class" />
             <node concept="3$xsQk" id="2Ai0Gta8$Y3" role="3$ytzL">
               <node concept="3clFbS" id="2Ai0Gta8$Y4" role="2VODD2">
                 <node concept="3clFbF" id="2Ai0Gta8$Zw" role="3cqZAp">
@@ -406,8 +406,8 @@
                       <ref role="1iwH77" node="2Ai0Gt9X68v" resolve="class2Prototype" />
                       <node concept="2OqwBi" id="2Ai0Gta8_Nk" role="1iwH7V">
                         <node concept="30H73N" id="2Ai0Gta8_z_" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="2Ai0Gta8A75" role="2OqNvi">
-                          <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                        <node concept="3TrEf2" id="c7Kd0ek7gg" role="2OqNvi">
+                          <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                         </node>
                       </node>
                     </node>
@@ -426,7 +426,7 @@
                 <node concept="2OqwBi" id="2Ai0Gtaavhn" role="2Oq$k0">
                   <node concept="30H73N" id="2Ai0Gtaav0p" role="2Oq$k0" />
                   <node concept="3TrEf2" id="2Ai0GtaavSM" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                    <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                   </node>
                 </node>
                 <node concept="2Xjw5R" id="2Ai0GtaaxtQ" role="2OqNvi">
@@ -451,7 +451,7 @@
           <property role="2c7vTL" value="false" />
           <node concept="1ZhdrF" id="1yn8PkyMbJJ" role="lGtFl">
             <property role="P3scX" value="8c081446-e4ba-48b7-a7e0-3db40e2c3439/5044697665789405022/5044697665789405054" />
-            <property role="2qtEX8" value="clazz" />
+            <property role="2qtEX8" value="class" />
             <node concept="3$xsQk" id="1yn8PkyMbJK" role="3$ytzL">
               <node concept="3clFbS" id="1yn8PkyMbJL" role="2VODD2">
                 <node concept="3clFbF" id="1yn8PkyMbLi" role="3cqZAp">
@@ -461,8 +461,8 @@
                       <ref role="1iwH77" node="2Ai0Gt9X68v" resolve="class2Prototype" />
                       <node concept="2OqwBi" id="1yn8PkyMbLn" role="1iwH7V">
                         <node concept="30H73N" id="1yn8PkyMbLo" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="1yn8PkyMbLp" role="2OqNvi">
-                          <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                        <node concept="3TrEf2" id="c7Kd0ek6TF" role="2OqNvi">
+                          <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                         </node>
                       </node>
                     </node>
@@ -499,7 +499,7 @@
                 <node concept="2OqwBi" id="1yn8PkyMcRd" role="2Oq$k0">
                   <node concept="30H73N" id="1yn8PkyMcRe" role="2Oq$k0" />
                   <node concept="3TrEf2" id="1yn8PkyMcRf" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                    <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                   </node>
                 </node>
                 <node concept="2Xjw5R" id="1yn8PkyMcRg" role="2OqNvi">
@@ -544,7 +544,7 @@
           </node>
           <node concept="1ZhdrF" id="5HgCzLvNLL_" role="lGtFl">
             <property role="P3scX" value="8c081446-e4ba-48b7-a7e0-3db40e2c3439/5044697665789405022/5044697665789405054" />
-            <property role="2qtEX8" value="clazz" />
+            <property role="2qtEX8" value="class" />
             <node concept="3$xsQk" id="5HgCzLvNLLA" role="3$ytzL">
               <node concept="3clFbS" id="5HgCzLvNLLB" role="2VODD2">
                 <node concept="3clFbF" id="5HgCzLvNLXS" role="3cqZAp">
@@ -554,8 +554,8 @@
                       <ref role="1iwH77" node="2Ai0Gt9X68v" resolve="class2Prototype" />
                       <node concept="2OqwBi" id="5HgCzLvNO4L" role="1iwH7V">
                         <node concept="30H73N" id="5HgCzLvNNG5" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="5HgCzLvNOG3" role="2OqNvi">
-                          <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                        <node concept="3TrEf2" id="c7Kd0ek6xh" role="2OqNvi">
+                          <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                         </node>
                       </node>
                     </node>
@@ -574,7 +574,7 @@
                 <node concept="2OqwBi" id="5HgCzLvNL4l" role="2Oq$k0">
                   <node concept="30H73N" id="5HgCzLvNL4m" role="2Oq$k0" />
                   <node concept="3TrEf2" id="5HgCzLvNL4n" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                    <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                   </node>
                 </node>
                 <node concept="2Xjw5R" id="5HgCzLvNL4o" role="2OqNvi">

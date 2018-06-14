@@ -156,7 +156,7 @@
     <node concept="1TJgyj" id="4o2nsMgBEtY" role="1TKVEi">
       <property role="IQ2ns" value="5044697665789405054" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="clazz" />
+      <property role="20kJfa" value="class" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
     </node>
@@ -172,6 +172,9 @@
       <property role="IQ2nx" value="2995459757115087788" />
       <property role="TrG5h" value="visibility" />
       <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
+    </node>
+    <node concept="t5JxF" id="c7Kd0eKO3b" role="lGtFl">
+      <property role="t5JxN" value="Interface that joins all top-level members classes can contain" />
     </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBIrb">
@@ -272,6 +275,9 @@
     <node concept="PrWs8" id="3v5DuFDls_J" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
+    <node concept="t5JxF" id="c7Kd0eKO35" role="lGtFl">
+      <property role="t5JxN" value="This represents newlines in a class at the top level." />
+    </node>
   </node>
   <node concept="1TIwiD" id="3v5DuFDqYGC">
     <property role="EcuMT" value="4018800670855129896" />
@@ -310,6 +316,9 @@
       <property role="20kJfa" value="parentClass" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+      <node concept="t5JxF" id="c7Kd0eKQPr" role="lGtFl">
+        <property role="t5JxN" value="The class that this instance is representing inheritance from" />
+      </node>
     </node>
     <node concept="1TJgyi" id="3UsoL$l5qkP" role="1TKVEl">
       <property role="IQ2nx" value="4511589886097466677" />
@@ -335,6 +344,9 @@
       <property role="IQ2nx" value="8123081327722474778" />
       <property role="TrG5h" value="brackets" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="c7Kd0eKNJ$" role="lGtFl">
+        <property role="t5JxN" value="True if deleting an array" />
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="2L1k$oXxncW">
@@ -380,9 +392,12 @@
     <node concept="1TJgyj" id="6hUtorE99Pe" role="1TKVEi">
       <property role="IQ2ns" value="7240228573265829198" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="constructor_arg_actuals" />
+      <property role="20kJfa" value="constructorArgActuals" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="t5JxF" id="c7Kd0eKW7o" role="lGtFl">
+      <property role="t5JxN" value="A LocalVariableDeclaration that has a constructor on it for class instantiation." />
     </node>
   </node>
   <node concept="1TIwiD" id="6NtgknWJ20B">
@@ -567,6 +582,9 @@
     <property role="TrG5h" value="StructStub" />
     <property role="34LRSv" value="struct" />
     <ref role="1TJDcQ" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    <node concept="t5JxF" id="c7Kd0eL8Rd" role="lGtFl">
+      <property role="t5JxN" value="Remaps the &quot;struct&quot; keyword to just create a class instead, since they are the same except for default visibility." />
+    </node>
   </node>
   <node concept="PlHQZ" id="2L1k$oXDqJY">
     <property role="EcuMT" value="3188920472790477822" />
@@ -1099,9 +1117,12 @@
     <node concept="1TJgyj" id="1yn8PkxYuRi" role="1TKVEi">
       <property role="IQ2ns" value="1771923826942799314" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="outerclassType" />
+      <property role="20kJfa" value="outerClassType" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBEtu" resolve="ClassType" />
+    </node>
+    <node concept="t5JxF" id="c7Kd0eKW3_" role="lGtFl">
+      <property role="t5JxN" value="The type of a class that is nested inside of another class" />
     </node>
   </node>
   <node concept="PlHQZ" id="7mGKYHhDe0x">

@@ -40,9 +40,6 @@
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="6516520003787916624" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Condition" flags="ig" index="27VH4U" />
-      <concept id="7429591467341004871" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Group" flags="ng" index="aenpk">
-        <child id="7429591467341004877" name="condition" index="aenpu" />
-      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
@@ -112,7 +109,6 @@
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
       </concept>
-      <concept id="7342352913006985500" name="jetbrains.mps.lang.editor.structure.TransformationLocation_Completion" flags="ng" index="3eGOoe" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -169,7 +165,6 @@
       <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
-      <concept id="7985135009827365938" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Placeholder" flags="ng" index="1IAO7e" />
       <concept id="5624877018226904808" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Named" flags="ng" index="3ICXOK" />
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
@@ -612,7 +607,7 @@
     <property role="3GE5qa" value="class" />
     <ref role="1XX52x" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
     <node concept="1iCGBv" id="4o2nsMgBEuj" role="2wV5jI">
-      <ref role="1NtTu8" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+      <ref role="1NtTu8" to="wnzg:4o2nsMgBEtY" resolve="class" />
       <node concept="A1WHr" id="6oRbCP61u9n" role="3vIgyS">
         <ref role="2ZyFGn" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
       </node>
@@ -967,19 +962,6 @@
   <node concept="IW6AY" id="6e$PORhMQc$">
     <property role="3GE5qa" value="class" />
     <ref role="aqKnT" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
-    <node concept="1Qtc8_" id="6e$PORhMQc_" role="IW6Ez">
-      <node concept="3eGOoe" id="6e$PORhMQcF" role="1Qtc8$" />
-      <node concept="aenpk" id="6e$PORhMQcJ" role="1Qtc8A">
-        <node concept="27VH4U" id="6e$PORhMQcM" role="aenpu">
-          <node concept="3clFbS" id="6e$PORhMQcN" role="2VODD2">
-            <node concept="3cpWs6" id="6e$PORhO5wx" role="3cqZAp">
-              <node concept="3clFbT" id="6e$PORhO5Jb" role="3cqZAk" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1IAO7e" id="6e$PORhO_jI" role="1Qtc8A" />
-    </node>
     <node concept="1Qtc8_" id="1N32NMNSrbD" role="IW6Ez">
       <node concept="IWgqT" id="1N32NMNSrcd" role="1Qtc8A">
         <node concept="1hCUdq" id="1N32NMNSrcf" role="1hCUd6">
@@ -993,6 +975,11 @@
         </node>
         <node concept="IWg2L" id="1N32NMNSrcj" role="IWgqQ">
           <node concept="3clFbS" id="1N32NMNSrcl" role="2VODD2">
+            <node concept="3SKdUt" id="c7Kd0eKRM9" role="3cqZAp">
+              <node concept="3SKdUq" id="c7Kd0eKRMb" role="3SKWNk">
+                <property role="3SKdUp" value="Tranform this instance into a templated version" />
+              </node>
+            </node>
             <node concept="3cpWs8" id="1N32NMNSs9r" role="3cqZAp">
               <node concept="3cpWsn" id="1N32NMNSs9u" role="3cpWs9">
                 <property role="TrG5h" value="templated" />
@@ -1006,6 +993,11 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="c7Kd0eKRUC" role="3cqZAp">
+              <node concept="3SKdUq" id="c7Kd0eKRUE" role="3SKWNk">
+                <property role="3SKdUp" value="Keep the class and visibility" />
               </node>
             </node>
             <node concept="3clFbF" id="1N32NMNSsdM" role="3cqZAp">
@@ -1341,6 +1333,7 @@
     </node>
     <node concept="1hA7zw" id="6hUtorEg0J$" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hHO97" value="Removes the current selected class constructor selection" />
       <node concept="1hAIg9" id="6hUtorEg0J_" role="1hA7z_">
         <node concept="3clFbS" id="6hUtorEg0JA" role="2VODD2">
           <node concept="3clFbF" id="6hUtorEg11v" role="3cqZAp">
@@ -1352,6 +1345,21 @@
                   <ref role="3Tt5mk" to="wnzg:6hUtorE26va" resolve="constructor" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="jK8Ss" id="c7Kd0eKWr0" role="jK8aL">
+        <node concept="3clFbS" id="c7Kd0eKWr1" role="2VODD2">
+          <node concept="3clFbF" id="c7Kd0eKWr2" role="3cqZAp">
+            <node concept="2OqwBi" id="c7Kd0eKWr3" role="3clFbG">
+              <node concept="2OqwBi" id="c7Kd0eKWr4" role="2Oq$k0">
+                <node concept="0IXxy" id="c7Kd0eKWr5" role="2Oq$k0" />
+                <node concept="3TrEf2" id="c7Kd0eKWr6" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wnzg:6hUtorE26va" resolve="constructor" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="c7Kd0eKWr7" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -1556,7 +1564,7 @@
               <node concept="3F2HdR" id="6hUtorE9cJd" role="3EZMnx">
                 <property role="2czwfO" value="," />
                 <property role="1cu_pB" value="1" />
-                <ref role="1NtTu8" to="wnzg:6hUtorE99Pe" resolve="constructor_arg_actuals" />
+                <ref role="1NtTu8" to="wnzg:6hUtorE99Pe" resolve="constructorArgActuals" />
                 <ref role="1ERwB7" node="6hUtorEdeMU" resolve="DeleteCurrentConstructorSelection" />
               </node>
               <node concept="3F0ifn" id="6hUtorEaE8M" role="3EZMnx">
@@ -3680,7 +3688,7 @@
     <node concept="3EZMnI" id="1yn8PkxYwP_" role="2wV5jI">
       <node concept="1kIj98" id="1yn8PkxYwPM" role="3EZMnx">
         <node concept="3F1sOY" id="1yn8PkxYwPW" role="1kIj9b">
-          <ref role="1NtTu8" to="wnzg:1yn8PkxYuRi" resolve="outerclassType" />
+          <ref role="1NtTu8" to="wnzg:1yn8PkxYuRi" resolve="outerClassType" />
         </node>
       </node>
       <node concept="3F0ifn" id="1yn8PkxYwQb" role="3EZMnx">
@@ -3693,7 +3701,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="1yn8PkxYwQW" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+        <ref role="1NtTu8" to="wnzg:4o2nsMgBEtY" resolve="class" />
         <node concept="1sVBvm" id="1yn8PkxYwQY" role="1sWHZn">
           <node concept="3F0A7n" id="1yn8PkxYwRq" role="2wV5jI">
             <property role="1Intyy" value="true" />

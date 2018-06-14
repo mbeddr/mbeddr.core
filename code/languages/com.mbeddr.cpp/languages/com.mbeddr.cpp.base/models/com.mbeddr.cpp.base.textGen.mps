@@ -225,7 +225,7 @@
               <node concept="2OqwBi" id="4o2nsMgBYtX" role="2Oq$k0">
                 <node concept="117lpO" id="4o2nsMgBYlm" role="2Oq$k0" />
                 <node concept="3TrEf2" id="4o2nsMgBYSL" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                  <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                 </node>
               </node>
               <node concept="3TrcHB" id="4o2nsMgBZVW" role="2OqNvi">
@@ -829,12 +829,10 @@
     <ref role="WuzLi" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
     <node concept="11bSqf" id="3UsoL$lb1lO" role="11c4hB">
       <node concept="3clFbS" id="3UsoL$lb1lP" role="2VODD2">
-        <node concept="lc7rE" id="3OWNtRXFoA8" role="3cqZAp">
-          <node concept="la8eA" id="3OWNtRXFoGN" role="lcghm">
+        <node concept="lc7rE" id="3UsoL$lb1m8" role="3cqZAp">
+          <node concept="la8eA" id="c7Kd0eKVNu" role="lcghm">
             <property role="lacIc" value=" " />
           </node>
-        </node>
-        <node concept="lc7rE" id="3UsoL$lb1m8" role="3cqZAp">
           <node concept="l9hG8" id="3UsoL$lb1mw" role="lcghm">
             <node concept="2OqwBi" id="3UsoL$lb1vH" role="lb14g">
               <node concept="117lpO" id="3UsoL$lb1nq" role="2Oq$k0" />
@@ -1059,6 +1057,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="c7Kd0eL5dW" role="3cqZAp" />
         <node concept="3clFbJ" id="71J$BslqK0h" role="3cqZAp">
           <node concept="3clFbS" id="71J$BslqK0i" role="3clFbx">
             <node concept="lc7rE" id="71J$BslqK0j" role="3cqZAp">
@@ -1075,6 +1074,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="29BUUxcttpm" role="3cqZAp" />
+        <node concept="3SKdUt" id="c7Kd0eL63u" role="3cqZAp">
+          <node concept="3SKdUq" id="c7Kd0eL63w" role="3SKWNk">
+            <property role="3SKdUp" value="This calls core to generate the type with a valid name" />
+          </node>
+        </node>
         <node concept="lc7rE" id="29BUUxcttXR" role="3cqZAp">
           <node concept="1bDJIP" id="29BUUxctvag" role="lcghm">
             <ref role="1rvKf6" to="dylp:29BUUxcsbzt" resolve="genTypeWithName" />
@@ -1099,6 +1103,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="17yeYAhYlv0" role="3cqZAp" />
+        <node concept="3SKdUt" id="c7Kd0eL7xM" role="3cqZAp">
+          <node concept="3SKdUq" id="c7Kd0eL7xO" role="3SKWNk">
+            <property role="3SKdUp" value="Only generate the constructor text if a constructor is selected" />
+          </node>
+        </node>
         <node concept="3clFbJ" id="17yeYAhYm1P" role="3cqZAp">
           <node concept="3clFbS" id="17yeYAhYm1R" role="3clFbx">
             <node concept="lc7rE" id="17yeYAhY$5C" role="3cqZAp">
@@ -1113,7 +1122,7 @@
                 <node concept="2OqwBi" id="17yeYAhYJ3Y" role="lbANJ">
                   <node concept="117lpO" id="17yeYAhYIKr" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="17yeYAhYJKv" role="2OqNvi">
-                    <ref role="3TtcxE" to="wnzg:6hUtorE99Pe" resolve="constructor_arg_actuals" />
+                    <ref role="3TtcxE" to="wnzg:6hUtorE99Pe" resolve="constructorArgActuals" />
                   </node>
                 </node>
               </node>
@@ -1132,7 +1141,7 @@
               <node concept="2OqwBi" id="17yeYAhYmGq" role="2Oq$k0">
                 <node concept="117lpO" id="17yeYAhYmjw" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="17yeYAhYnzQ" role="2OqNvi">
-                  <ref role="3TtcxE" to="wnzg:6hUtorE99Pe" resolve="constructor_arg_actuals" />
+                  <ref role="3TtcxE" to="wnzg:6hUtorE99Pe" resolve="constructorArgActuals" />
                 </node>
               </node>
               <node concept="liA8E" id="17yeYAhYvGG" role="2OqNvi">
@@ -1142,6 +1151,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="29BUUxctyaz" role="3cqZAp" />
+        <node concept="3SKdUt" id="c7Kd0eL8qz" role="3cqZAp">
+          <node concept="3SKdUq" id="c7Kd0eL8q_" role="3SKWNk">
+            <property role="3SKdUp" value="Everything after the equals sign" />
+          </node>
+        </node>
         <node concept="3clFbJ" id="1OcdQnyTWJa" role="3cqZAp">
           <node concept="3clFbS" id="1OcdQnyTWJb" role="3clFbx">
             <node concept="lc7rE" id="1OcdQnyTWJo" role="3cqZAp">
@@ -2474,7 +2488,7 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="7SgJHc9HFlW" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                  <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                 </node>
               </node>
               <node concept="3TrcHB" id="7SgJHc9HG$v" role="2OqNvi">
@@ -2512,7 +2526,7 @@
             <node concept="2OqwBi" id="8CgsWn3C8g" role="lb14g">
               <node concept="117lpO" id="8CgsWn3BVs" role="2Oq$k0" />
               <node concept="3TrEf2" id="8CgsWn3CE6" role="2OqNvi">
-                <ref role="3Tt5mk" to="wnzg:1yn8PkxYuRi" resolve="outerclassType" />
+                <ref role="3Tt5mk" to="wnzg:1yn8PkxYuRi" resolve="outerClassType" />
               </node>
             </node>
           </node>
@@ -2524,7 +2538,7 @@
               <node concept="2OqwBi" id="8CgsWn3Dop" role="2Oq$k0">
                 <node concept="117lpO" id="8CgsWn3DbB" role="2Oq$k0" />
                 <node concept="3TrEf2" id="8CgsWn3DDV" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                  <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                 </node>
               </node>
               <node concept="3TrcHB" id="8CgsWn3GfM" role="2OqNvi">
