@@ -1363,6 +1363,11 @@
           </node>
         </node>
       </node>
+      <node concept="3SKdUt" id="c7Kd0fksBY" role="3cqZAp">
+        <node concept="3SKdUq" id="c7Kd0fksC0" role="3SKWNk">
+          <property role="3SKdUp" value="Name is wrong for constructor" />
+        </node>
+      </node>
       <node concept="3clFbJ" id="3Mwr0rVBxrC" role="3cqZAp">
         <node concept="3clFbS" id="3Mwr0rVBxrE" role="3clFbx">
           <node concept="2MkqsV" id="3Mwr0rVBCoU" role="3cqZAp">
@@ -1419,6 +1424,11 @@
         </node>
       </node>
       <node concept="3clFbH" id="3Mwr0rVIGg5" role="3cqZAp" />
+      <node concept="3SKdUt" id="c7Kd0fksMK" role="3cqZAp">
+        <node concept="3SKdUq" id="c7Kd0fksMM" role="3SKWNk">
+          <property role="3SKdUp" value="Name is wrong for destructor" />
+        </node>
+      </node>
       <node concept="3clFbJ" id="3Mwr0rVIGkx" role="3cqZAp">
         <node concept="3clFbS" id="3Mwr0rVIGky" role="3clFbx">
           <node concept="2MkqsV" id="3Mwr0rVIGkz" role="3cqZAp">
@@ -1574,6 +1584,11 @@
         </node>
       </node>
       <node concept="3clFbH" id="nGa9qSYtOz" role="3cqZAp" />
+      <node concept="3SKdUt" id="c7Kd0fkt9h" role="3cqZAp">
+        <node concept="3SKdUq" id="c7Kd0fkt9j" role="3SKWNk">
+          <property role="3SKdUp" value="Checks if the base class has a constructor that must be called by this constructor and is not." />
+        </node>
+      </node>
       <node concept="3clFbJ" id="nGa9qSYtUK" role="3cqZAp">
         <node concept="3clFbS" id="nGa9qSYtUM" role="3clFbx">
           <node concept="2Gpval" id="nGa9qSYwQ2" role="3cqZAp">
@@ -3138,6 +3153,11 @@
     <property role="TrG5h" value="check_IAmConstructorInitializable" />
     <property role="3GE5qa" value="constructor" />
     <node concept="3clFbS" id="3p40HKhGUqB" role="18ibNy">
+      <node concept="3SKdUt" id="c7Kd0fkvV9" role="3cqZAp">
+        <node concept="3SKdUq" id="c7Kd0fkvVb" role="3SKWNk">
+          <property role="3SKdUp" value="Error if used on a destructors instead of a constructor" />
+        </node>
+      </node>
       <node concept="3clFbJ" id="3p40HKhGUqK" role="3cqZAp">
         <node concept="2OqwBi" id="3p40HKhGVeA" role="3clFbw">
           <node concept="2OqwBi" id="3p40HKhGUzC" role="2Oq$k0">

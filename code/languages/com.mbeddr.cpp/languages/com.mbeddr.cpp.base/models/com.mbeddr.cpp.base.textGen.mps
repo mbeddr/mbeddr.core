@@ -1858,6 +1858,11 @@
     <ref role="WuzLi" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
     <node concept="11bSqf" id="6ddXmWdNsw2" role="11c4hB">
       <node concept="3clFbS" id="6ddXmWdNsw3" role="2VODD2">
+        <node concept="3SKdUt" id="c7Kd0fkt$u" role="3cqZAp">
+          <node concept="3SKdUq" id="c7Kd0fkt$w" role="3SKWNk">
+            <property role="3SKdUp" value="This generates everythin except the brackets and what's inside of them." />
+          </node>
+        </node>
         <node concept="lc7rE" id="6ddXmWdPBIB" role="3cqZAp">
           <node concept="1bDJIP" id="6ddXmWdPBRL" role="lcghm">
             <ref role="1rvKf6" node="6ddXmWdP_nH" resolve="generateConstructorPrototype" />

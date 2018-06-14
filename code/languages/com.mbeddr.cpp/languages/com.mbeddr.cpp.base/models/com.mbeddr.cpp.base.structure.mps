@@ -437,6 +437,9 @@
       <property role="20kJfa" value="parentClass" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+      <node concept="t5JxF" id="c7Kd0fkpIE" role="lGtFl">
+        <property role="t5JxN" value="This is used for naming and maintaining the correct name if the class name changes" />
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="3n$8_Xbpg8r">
@@ -444,7 +447,7 @@
     <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="IAmConstructorInitializable" />
     <node concept="t5JxF" id="3n$8_Xbpga3" role="lGtFl">
-      <property role="t5JxN" value="This interface is responsible for things that can come after a : on a constructor implementation." />
+      <property role="t5JxN" value="This interface is joins things that can come after a : on a constructor implementation." />
     </node>
   </node>
   <node concept="1TIwiD" id="6NtgknWJ21h">
@@ -493,6 +496,9 @@
       <property role="20kJfa" value="initializers" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3n$8_Xbpg8r" resolve="IAmConstructorInitializable" />
+      <node concept="t5JxF" id="c7Kd0fku7Y" role="lGtFl">
+        <property role="t5JxN" value="The list of things that come after the colon" />
+      </node>
     </node>
     <node concept="1TJgyi" id="6ddXmWdALYA" role="1TKVEl">
       <property role="IQ2nx" value="7155645240280031142" />
@@ -511,6 +517,9 @@
     <property role="TrG5h" value="ConstructorVoidType" />
     <property role="R4oN_" value="empty declaration of VoidType" />
     <ref role="1TJDcQ" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
+    <node concept="t5JxF" id="c7Kd0fkw6U" role="lGtFl">
+      <property role="t5JxN" value="This is used since constructors implement IFunctionLike. This is identical to VoidType but textgens to empty string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7DDmkyVr_r">
     <property role="EcuMT" value="137823117407795547" />

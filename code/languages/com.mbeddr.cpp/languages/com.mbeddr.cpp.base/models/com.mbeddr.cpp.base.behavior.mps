@@ -2985,6 +2985,11 @@
     <ref role="13h7C2" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
     <node concept="13hLZK" id="6ddXmWdEGr4" role="13h7CW">
       <node concept="3clFbS" id="6ddXmWdEGr5" role="2VODD2">
+        <node concept="3SKdUt" id="c7Kd0fkpM$" role="3cqZAp">
+          <node concept="3SKdUq" id="c7Kd0fkpMA" role="3SKWNk">
+            <property role="3SKdUp" value="Create empty statement list, the correct type, and set some defaults" />
+          </node>
+        </node>
         <node concept="3clFbF" id="6ddXmWdEIdY" role="3cqZAp">
           <node concept="37vLTI" id="6ddXmWdEWfh" role="3clFbG">
             <node concept="2ShNRf" id="6ddXmWdEWmL" role="37vLTx">
@@ -3098,6 +3103,11 @@
       <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
       <node concept="3Tm1VV" id="6hUtorE59FE" role="1B3o_S" />
       <node concept="3clFbS" id="6hUtorE59FF" role="3clF47">
+        <node concept="3SKdUt" id="c7Kd0fkr8E" role="3cqZAp">
+          <node concept="3SKdUq" id="c7Kd0fkr8G" role="3SKWNk">
+            <property role="3SKdUp" value="Make things look pretty in the autocomplete menu so you can tell one constructor from another." />
+          </node>
+        </node>
         <node concept="3cpWs8" id="6hUtorE5zF8" role="3cqZAp">
           <node concept="3cpWsn" id="6hUtorE5zFb" role="3cpWs9">
             <property role="TrG5h" value="presentation" />
@@ -3407,6 +3417,11 @@
       <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
       <node concept="3Tm1VV" id="6hUtorEjy6N" role="1B3o_S" />
       <node concept="3clFbS" id="6hUtorEjy6O" role="3clF47">
+        <node concept="3SKdUt" id="c7Kd0fkvfp" role="3cqZAp">
+          <node concept="3SKdUq" id="c7Kd0fkvfr" role="3SKWNk">
+            <property role="3SKdUp" value="See ClassConstructorDeclaration::getPresentation for info on this." />
+          </node>
+        </node>
         <node concept="3cpWs8" id="6hUtorEjy6P" role="3cqZAp">
           <node concept="3cpWsn" id="6hUtorEjy6Q" role="3cpWs9">
             <property role="TrG5h" value="presentation" />
