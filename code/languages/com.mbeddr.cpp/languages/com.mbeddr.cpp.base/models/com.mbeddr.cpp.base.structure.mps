@@ -129,16 +129,16 @@
       <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
     </node>
     <node concept="PrWs8" id="3UJ18qjqSiT" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlag" />
     </node>
     <node concept="PrWs8" id="3UJ18qjqSja" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineFlagConcept" />
+      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineFlag" />
     </node>
     <node concept="PrWs8" id="3UJ18qjqSjv" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlagConcept" />
+      <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlag" />
     </node>
     <node concept="PrWs8" id="3UJ18qjqSjS" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
+      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlag" />
     </node>
     <node concept="1TJgyj" id="3CmSUB7Fp_k" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -156,7 +156,7 @@
     <node concept="1TJgyj" id="4o2nsMgBEtY" role="1TKVEi">
       <property role="IQ2ns" value="5044697665789405054" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="clazz" />
+      <property role="20kJfa" value="class" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
     </node>
@@ -166,12 +166,15 @@
     <property role="TrG5h" value="IClassMemberDeclaration" />
     <property role="3GE5qa" value="class" />
     <node concept="PrWs8" id="5eDFAXBm97W" role="PrDN$">
-      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlag" />
     </node>
     <node concept="1TJgyi" id="2Ai0Gt9ODIG" role="1TKVEl">
       <property role="IQ2nx" value="2995459757115087788" />
       <property role="TrG5h" value="visibility" />
       <ref role="AX2Wp" node="2Ai0Gt9ODIr" resolve="EClassMemberVisibility" />
+    </node>
+    <node concept="t5JxF" id="c7Kd0eKO3b" role="lGtFl">
+      <property role="t5JxN" value="Interface that joins all top-level members classes can contain" />
     </node>
   </node>
   <node concept="1TIwiD" id="4o2nsMgBIrb">
@@ -202,22 +205,22 @@
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
     <node concept="PrWs8" id="5eDFAXBCDcW" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlagConcept" />
+      <ref role="PrY4T" node="5eDFAXBCper" resolve="IVolatileFlag" />
     </node>
     <node concept="PrWs8" id="5eDFAXBRI2X" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineFlagConcept" />
+      <ref role="PrY4T" node="1Yr26itwsSZ" resolve="IInlineFlag" />
     </node>
     <node concept="PrWs8" id="5eDFAXBRQi_" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
+      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlag" />
     </node>
     <node concept="PrWs8" id="5eDFAXBS4mZ" role="PzmwI">
       <ref role="PrY4T" node="5eDFAXBS4m7" resolve="IThreadLocalFlag" />
     </node>
     <node concept="PrWs8" id="15T8UHynq6K" role="PzmwI">
-      <ref role="PrY4T" node="15T8UHynq3H" resolve="IMutableFlagConcept" />
+      <ref role="PrY4T" node="15T8UHynq3H" resolve="IMutableFlag" />
     </node>
     <node concept="PrWs8" id="6OyCGy4g52Y" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlag" />
     </node>
   </node>
   <node concept="PlHQZ" id="4o2nsMgBJ5Y">
@@ -258,10 +261,13 @@
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
     <node concept="PrWs8" id="2L1k$oXNUaR" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlag" />
     </node>
     <node concept="PrWs8" id="1Yr26iur2wG" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlag" />
+    </node>
+    <node concept="t5JxF" id="c7Kd0g7O8Y" role="lGtFl">
+      <property role="t5JxN" value="A method without a body." />
     </node>
   </node>
   <node concept="1TIwiD" id="3v5DuFDls_I">
@@ -271,6 +277,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3v5DuFDls_J" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
+    </node>
+    <node concept="t5JxF" id="c7Kd0eKO35" role="lGtFl">
+      <property role="t5JxN" value="This represents newlines in a class at the top level." />
     </node>
   </node>
   <node concept="1TIwiD" id="3v5DuFDqYGC">
@@ -310,6 +319,9 @@
       <property role="20kJfa" value="parentClass" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+      <node concept="t5JxF" id="c7Kd0eKQPr" role="lGtFl">
+        <property role="t5JxN" value="The class that this instance is representing inheritance from" />
+      </node>
     </node>
     <node concept="1TJgyi" id="3UsoL$l5qkP" role="1TKVEl">
       <property role="IQ2nx" value="4511589886097466677" />
@@ -335,11 +347,14 @@
       <property role="IQ2nx" value="8123081327722474778" />
       <property role="TrG5h" value="brackets" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="c7Kd0eKNJ$" role="lGtFl">
+        <property role="t5JxN" value="True if deleting an array" />
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="2L1k$oXxncW">
     <property role="EcuMT" value="3188920472788366140" />
-    <property role="TrG5h" value="IVirtualFlagConcept" />
+    <property role="TrG5h" value="IVirtualFlag" />
     <property role="3GE5qa" value="flag" />
     <node concept="1TJgyi" id="2L1k$oXxncX" role="1TKVEl">
       <property role="IQ2nx" value="3188920472788366141" />
@@ -380,9 +395,12 @@
     <node concept="1TJgyj" id="6hUtorE99Pe" role="1TKVEi">
       <property role="IQ2ns" value="7240228573265829198" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="constructor_arg_actuals" />
+      <property role="20kJfa" value="constructorArgActuals" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="t5JxF" id="c7Kd0eKW7o" role="lGtFl">
+      <property role="t5JxN" value="A LocalVariableDeclaration that has a constructor on it for class instantiation." />
     </node>
   </node>
   <node concept="1TIwiD" id="6NtgknWJ20B">
@@ -402,16 +420,16 @@
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
     <node concept="PrWs8" id="6NtgknWJ20V" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualFlagConcept" />
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualFlag" />
     </node>
     <node concept="PrWs8" id="3OTimPpGcj0" role="PzmwI">
-      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlagConcept" />
+      <ref role="PrY4T" node="2L1k$oXDqJY" resolve="IPureVirtualFlag" />
     </node>
     <node concept="PrWs8" id="1D2kn99oQ0S" role="PzmwI">
-      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlagConcept" />
+      <ref role="PrY4T" node="5eDFAXBRQhJ" resolve="IConstExprFlag" />
     </node>
     <node concept="PrWs8" id="1D2kn9asHjj" role="PzmwI">
-      <ref role="PrY4T" node="1D2kn9asHi2" resolve="IExplicitFlagConcept" />
+      <ref role="PrY4T" node="1D2kn9asHi2" resolve="IExplicitFlag" />
     </node>
     <node concept="PrWs8" id="6ddXmWdS2eK" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
@@ -422,6 +440,9 @@
       <property role="20kJfa" value="parentClass" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+      <node concept="t5JxF" id="c7Kd0fkpIE" role="lGtFl">
+        <property role="t5JxN" value="This is used for naming and maintaining the correct name if the class name changes" />
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="3n$8_Xbpg8r">
@@ -429,7 +450,7 @@
     <property role="3GE5qa" value="constructor" />
     <property role="TrG5h" value="IAmConstructorInitializable" />
     <node concept="t5JxF" id="3n$8_Xbpga3" role="lGtFl">
-      <property role="t5JxN" value="This interface is responsible for things that can come after a : on a constructor implementation." />
+      <property role="t5JxN" value="This interface is joins things that can come after a : on a constructor implementation." />
     </node>
   </node>
   <node concept="1TIwiD" id="6NtgknWJ21h">
@@ -478,6 +499,9 @@
       <property role="20kJfa" value="initializers" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3n$8_Xbpg8r" resolve="IAmConstructorInitializable" />
+      <node concept="t5JxF" id="c7Kd0fku7Y" role="lGtFl">
+        <property role="t5JxN" value="The list of things that come after the colon" />
+      </node>
     </node>
     <node concept="1TJgyi" id="6ddXmWdALYA" role="1TKVEl">
       <property role="IQ2nx" value="7155645240280031142" />
@@ -496,6 +520,9 @@
     <property role="TrG5h" value="ConstructorVoidType" />
     <property role="R4oN_" value="empty declaration of VoidType" />
     <ref role="1TJDcQ" to="mj1l:6Q7bJ$$mwOp" resolve="VoidType" />
+    <node concept="t5JxF" id="c7Kd0fkw6U" role="lGtFl">
+      <property role="t5JxN" value="This is used since constructors implement IFunctionLike. This is identical to VoidType but textgens to empty string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7DDmkyVr_r">
     <property role="EcuMT" value="137823117407795547" />
@@ -567,13 +594,16 @@
     <property role="TrG5h" value="StructStub" />
     <property role="34LRSv" value="struct" />
     <ref role="1TJDcQ" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
+    <node concept="t5JxF" id="c7Kd0eL8Rd" role="lGtFl">
+      <property role="t5JxN" value="Remaps the &quot;struct&quot; keyword to just create a class instead, since they are the same except for default visibility." />
+    </node>
   </node>
   <node concept="PlHQZ" id="2L1k$oXDqJY">
     <property role="EcuMT" value="3188920472790477822" />
-    <property role="TrG5h" value="IPureVirtualFlagConcept" />
+    <property role="TrG5h" value="IPureVirtualFlag" />
     <property role="3GE5qa" value="flag" />
     <node concept="PrWs8" id="2L1k$oXDqJZ" role="PrDN$">
-      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualFlagConcept" />
+      <ref role="PrY4T" node="2L1k$oXxncW" resolve="IVirtualFlag" />
     </node>
     <node concept="1TJgyi" id="2L1k$oXDqK2" role="1TKVEl">
       <property role="IQ2nx" value="3188920472790477826" />
@@ -680,6 +710,9 @@
     <property role="EcuMT" value="3604003506923569988" />
     <property role="3GE5qa" value="namespace" />
     <property role="TrG5h" value="INamespaceMemberDeclaration" />
+    <node concept="t5JxF" id="c7Kd0gpDHv" role="lGtFl">
+      <property role="t5JxN" value="Interface that joins things that can reside inside of a namespace at the top level." />
+    </node>
   </node>
   <node concept="PlHQZ" id="383ZxwZsgd5">
     <property role="EcuMT" value="3604003506923569989" />
@@ -717,7 +750,7 @@
   <node concept="PlHQZ" id="1Yr26itwsSZ">
     <property role="EcuMT" value="2277423264798199359" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IInlineFlagConcept" />
+    <property role="TrG5h" value="IInlineFlag" />
     <node concept="1TJgyi" id="1Yr26itwsT0" role="1TKVEl">
       <property role="IQ2nx" value="2277423264798199360" />
       <property role="TrG5h" value="isInlined" />
@@ -798,7 +831,7 @@
   <node concept="PlHQZ" id="5eDFAXBRENn">
     <property role="EcuMT" value="6028541369719368919" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IExternFlagConcept" />
+    <property role="TrG5h" value="IExternFlag" />
     <node concept="1TJgyi" id="5eDFAXBRENo" role="1TKVEl">
       <property role="IQ2nx" value="6028541369719368920" />
       <property role="TrG5h" value="isExtern" />
@@ -893,7 +926,7 @@
   <node concept="PlHQZ" id="15T8UHynq3H">
     <property role="EcuMT" value="1259076789823447277" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IMutableFlagConcept" />
+    <property role="TrG5h" value="IMutableFlag" />
     <node concept="1TJgyi" id="15T8UHynq3I" role="1TKVEl">
       <property role="IQ2nx" value="1259076789823447278" />
       <property role="TrG5h" value="isMutable" />
@@ -903,7 +936,7 @@
   <node concept="PlHQZ" id="1Yr26itwx8u">
     <property role="EcuMT" value="2277423264798216734" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IStaticFlagConcept" />
+    <property role="TrG5h" value="IStaticFlag" />
     <node concept="1TJgyi" id="1Yr26itwx8v" role="1TKVEl">
       <property role="IQ2nx" value="2277423264798216735" />
       <property role="TrG5h" value="isStatic" />
@@ -962,7 +995,7 @@
   <node concept="PlHQZ" id="5eDFAXBRQhJ">
     <property role="EcuMT" value="6028541369719415919" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IConstExprFlagConcept" />
+    <property role="TrG5h" value="IConstExprFlag" />
     <node concept="1TJgyi" id="5eDFAXBRQhK" role="1TKVEl">
       <property role="IQ2nx" value="6028541369719415920" />
       <property role="TrG5h" value="isConstExpr" />
@@ -972,7 +1005,7 @@
   <node concept="PlHQZ" id="5eDFAXBCper">
     <property role="EcuMT" value="6028541369715364763" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IVolatileFlagConcept" />
+    <property role="TrG5h" value="IVolatileFlag" />
     <node concept="1TJgyi" id="5eDFAXBCpes" role="1TKVEl">
       <property role="IQ2nx" value="6028541369715364764" />
       <property role="TrG5h" value="isVolatile" />
@@ -1004,7 +1037,7 @@
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
     <node concept="PrWs8" id="6OyCGy3FHsc" role="PzmwI">
-      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
+      <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlag" />
     </node>
     <node concept="PrWs8" id="3VWY4WVNoY5" role="PzmwI">
       <ref role="PrY4T" node="5eDFAXBS4m7" resolve="IThreadLocalFlag" />
@@ -1033,7 +1066,7 @@
   <node concept="PlHQZ" id="1D2kn9asHi2">
     <property role="EcuMT" value="1892164344766190722" />
     <property role="3GE5qa" value="flag" />
-    <property role="TrG5h" value="IExplicitFlagConcept" />
+    <property role="TrG5h" value="IExplicitFlag" />
     <node concept="1TJgyi" id="1D2kn9asHiy" role="1TKVEl">
       <property role="IQ2nx" value="1892164344766190754" />
       <property role="TrG5h" value="isExplicit" />
@@ -1099,9 +1132,12 @@
     <node concept="1TJgyj" id="1yn8PkxYuRi" role="1TKVEi">
       <property role="IQ2ns" value="1771923826942799314" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="outerclassType" />
+      <property role="20kJfa" value="outerClassType" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBEtu" resolve="ClassType" />
+    </node>
+    <node concept="t5JxF" id="c7Kd0eKW3_" role="lGtFl">
+      <property role="t5JxN" value="The type of a class that is nested inside of another class" />
     </node>
   </node>
   <node concept="PlHQZ" id="7mGKYHhDe0x">
