@@ -77,6 +77,9 @@
         <child id="4996299911448018407" name="value" index="0uH6F" />
       </concept>
       <concept id="4996299911447711435" name="com.mbeddr.cpp.base.structure.StaticCast" flags="ng" index="0vAa7" />
+      <concept id="4996299911457692359" name="com.mbeddr.cpp.base.structure.ConstCast" flags="ng" index="0_zqb" />
+      <concept id="4996299911454674440" name="com.mbeddr.cpp.base.structure.ReinterpretCast" flags="ng" index="0L294" />
+      <concept id="4996299911456233357" name="com.mbeddr.cpp.base.structure.DynamicCast" flags="ng" index="0Z7J1" />
       <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlagConcept" flags="ng" index="226hDU">
         <property id="2277423264798216735" name="isStatic" index="226hDV" />
       </concept>
@@ -142,9 +145,14 @@
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
+      <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
+      </concept>
+      <concept id="8860443239512128052" name="com.mbeddr.core.expressions.structure.BinaryExpression" flags="ng" index="3TlMgq">
+        <child id="8860443239512128064" name="left" index="3TlMhI" />
+        <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
@@ -355,6 +363,22 @@
             </node>
           </node>
         </node>
+        <node concept="1_9egQ" id="4lmr4L5ITV2" role="3XIRFZ">
+          <node concept="0Z7J1" id="4lmr4L5ITUW" role="1_9egR">
+            <node concept="3wxxNl" id="4lmr4L5ITVF" role="0uH6d">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <node concept="3mBfEi" id="4lmr4L5ITVA" role="2umbIo">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="3mBfEM" node="4lmr4L5swT$" resolve="ThirdClass" />
+              </node>
+            </node>
+            <node concept="3ZVu4v" id="4lmr4L5ITXj" role="0uH6F">
+              <ref role="3ZVs_2" node="4lmr4L5g4Jt" resolve="other_class" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2NXPZ9" id="4lmr4L5$zWr" role="N3F5h">
@@ -368,30 +392,11 @@
         <property role="2c7vTL" value="false" />
       </node>
       <node concept="3XIRFW" id="4lmr4L5$$aH" role="c0Qz3">
-        <node concept="2dywKE" id="4lmr4L5$$aI" role="3XIRFZ">
-          <property role="TrG5h" value="other_class" />
-          <node concept="3wxxNl" id="4lmr4L5$$aJ" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-            <node concept="3mBfEi" id="4lmr4L5$$aK" role="2umbIo">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-              <ref role="3mBfEM" node="4lmr4L5g4GN" resolve="OtherClass" />
-            </node>
-          </node>
-          <node concept="1SUiZS" id="4lmr4L5$$aL" role="3XIe9u">
-            <node concept="3mBfEi" id="4lmr4L5$$aM" role="1RfGkM">
-              <property role="2caQfQ" value="false" />
-              <property role="2c7vTL" value="false" />
-              <ref role="3mBfEM" node="4lmr4L5g4GN" resolve="OtherClass" />
-            </node>
-          </node>
-        </node>
         <node concept="2dywKE" id="4lmr4L5$$aN" role="3XIRFZ">
           <property role="TrG5h" value="third_class" />
           <node concept="3wxxNl" id="4lmr4L5$$aO" role="2C2TGm">
             <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
+            <property role="2c7vTL" value="true" />
             <node concept="3mBfEi" id="4lmr4L5$$aP" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
@@ -403,6 +408,22 @@
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
               <ref role="3mBfEM" node="4lmr4L5swT$" resolve="ThirdClass" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_9egQ" id="4lmr4L5PM2l" role="3XIRFZ">
+          <node concept="0_zqb" id="4lmr4L5PM2f" role="1_9egR">
+            <node concept="3wxxNl" id="4lmr4L5PM2Z" role="0uH6d">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <node concept="3mBfEi" id="4lmr4L5PM2U" role="2umbIo">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <ref role="3mBfEM" node="4lmr4L5swT$" resolve="ThirdClass" />
+              </node>
+            </node>
+            <node concept="3ZVu4v" id="4lmr4L5PM3Z" role="0uH6F">
+              <ref role="3ZVs_2" node="4lmr4L5$$aN" resolve="third_class" />
             </node>
           </node>
         </node>
@@ -457,6 +478,27 @@
             </node>
           </node>
         </node>
+        <node concept="1_9egQ" id="4lmr4L5IUfa" role="3XIRFZ">
+          <node concept="3pqW6w" id="4lmr4L5IUjs" role="1_9egR">
+            <node concept="3ZVu4v" id="4lmr4L5IUf8" role="3TlMhI">
+              <ref role="3ZVs_2" node="4lmr4L5$$iK" resolve="other_class" />
+            </node>
+            <node concept="0L294" id="4lmr4L5IU93" role="3TlMhJ">
+              <node concept="3wxxNl" id="4lmr4L5IU9M" role="0uH6d">
+                <property role="2caQfQ" value="false" />
+                <property role="2c7vTL" value="false" />
+                <node concept="3mBfEi" id="4lmr4L5IU9H" role="2umbIo">
+                  <property role="2caQfQ" value="false" />
+                  <property role="2c7vTL" value="false" />
+                  <ref role="3mBfEM" node="4lmr4L5g4GN" resolve="OtherClass" />
+                </node>
+              </node>
+              <node concept="3ZVu4v" id="4lmr4L5IUaJ" role="0uH6F">
+                <ref role="3ZVs_2" node="4lmr4L5$$iP" resolve="third_class" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2NXPZ9" id="4lmr4L5$$g6" role="N3F5h">
@@ -476,6 +518,15 @@
       <property role="TrG5h" value="main" />
       <node concept="3cM6IN" id="4lmr4L5$z$I" role="lIfQt">
         <ref role="3cM6IK" node="4lmr4L5g4Ip" resolve="test_dynamic_casting" />
+      </node>
+      <node concept="3cM6IN" id="4lmr4L5IU7t" role="lIfQt">
+        <ref role="3cM6IK" node="4lmr4L5$$aF" resolve="test_const_casting" />
+      </node>
+      <node concept="3cM6IN" id="4lmr4L5IU7E" role="lIfQt">
+        <ref role="3cM6IK" node="4lmr4L5$$iH" resolve="test_reinterpret_casting" />
+      </node>
+      <node concept="3cM6IN" id="4lmr4L5IU7V" role="lIfQt">
+        <ref role="3cM6IK" node="4lmr4L5$z$Q" resolve="test_static_casting" />
       </node>
     </node>
     <node concept="2NXPZ9" id="4lmr4L5g4zG" role="N3F5h">

@@ -3644,5 +3644,19 @@
       <ref role="PMmxG" node="4lmr4L5bbIq" resolve="CastEditorComponent" />
     </node>
   </node>
+  <node concept="24kQdi" id="4lmr4L5Exup">
+    <property role="3GE5qa" value="cast" />
+    <ref role="1XX52x" to="wnzg:4lmr4L5Exud" resolve="DynamicCast" />
+    <node concept="PMmxH" id="4lmr4L5Exur" role="2wV5jI">
+      <ref role="PMmxG" node="4lmr4L5bbIq" resolve="CastEditorComponent" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4lmr4L5K5Fj">
+    <property role="3GE5qa" value="cast" />
+    <ref role="1XX52x" to="wnzg:4lmr4L5K5F7" resolve="ConstCast" />
+    <node concept="PMmxH" id="4lmr4L5K5Fl" role="2wV5jI">
+      <ref role="PMmxG" node="4lmr4L5bbIq" resolve="CastEditorComponent" />
+    </node>
+  </node>
 </model>
 

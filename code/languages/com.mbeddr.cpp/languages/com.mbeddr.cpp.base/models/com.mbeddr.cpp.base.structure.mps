@@ -1177,5 +1177,27 @@
       <ref role="PrY4T" node="4lmr4L5bbIs" resolve="ICPPCast" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4lmr4L5Exud">
+    <property role="EcuMT" value="4996299911456233357" />
+    <property role="3GE5qa" value="cast" />
+    <property role="TrG5h" value="DynamicCast" />
+    <property role="34LRSv" value="dynamic_cast" />
+    <property role="R4oN_" value="dynamic_cast&lt;PointerA*&gt;(pointerB*)" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="4lmr4L5Exue" role="PzmwI">
+      <ref role="PrY4T" node="4lmr4L5bbIs" resolve="ICPPCast" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4lmr4L5K5F7">
+    <property role="EcuMT" value="4996299911457692359" />
+    <property role="3GE5qa" value="cast" />
+    <property role="TrG5h" value="ConstCast" />
+    <property role="34LRSv" value="const_cast" />
+    <property role="R4oN_" value="const_cast&lt;type&gt;(value)" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="4lmr4L5K5F8" role="PzmwI">
+      <ref role="PrY4T" node="4lmr4L5bbIs" resolve="ICPPCast" />
+    </node>
+  </node>
 </model>
 
