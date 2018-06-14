@@ -885,21 +885,6 @@
         </node>
         <node concept="IWg2L" id="3UsoL$l5JGd" role="IWgqQ">
           <node concept="3clFbS" id="3UsoL$l5JGf" role="2VODD2">
-            <node concept="3cpWs8" id="3UsoL$l60V9" role="3cqZAp">
-              <node concept="3cpWsn" id="3UsoL$l60Vc" role="3cpWs9">
-                <property role="TrG5h" value="blank_inheritance" />
-                <node concept="3Tqbb2" id="3UsoL$l60V8" role="1tU5fm">
-                  <ref role="ehGHo" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
-                </node>
-                <node concept="2ShNRf" id="3UsoL$l60Wf" role="33vP2m">
-                  <node concept="3zrR0B" id="3UsoL$l610$" role="2ShVmc">
-                    <node concept="3Tqbb2" id="3UsoL$l610A" role="3zrR0E">
-                      <ref role="ehGHo" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="3UsoL$l611_" role="3cqZAp">
               <node concept="2OqwBi" id="3UsoL$l646x" role="3clFbG">
                 <node concept="2OqwBi" id="3UsoL$l61iY" role="2Oq$k0">
@@ -909,8 +894,12 @@
                   </node>
                 </node>
                 <node concept="TSZUe" id="3UsoL$l67zU" role="2OqNvi">
-                  <node concept="37vLTw" id="3UsoL$l67JV" role="25WWJ7">
-                    <ref role="3cqZAo" node="3UsoL$l60Vc" resolve="blank_inheritance" />
+                  <node concept="2ShNRf" id="c7Kd0cGqEn" role="25WWJ7">
+                    <node concept="3zrR0B" id="c7Kd0cGrYz" role="2ShVmc">
+                      <node concept="3Tqbb2" id="c7Kd0cGrY_" role="3zrR0E">
+                        <ref role="ehGHo" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
