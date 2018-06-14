@@ -14,9 +14,11 @@
     <import index="uaom" ref="r:00838eaa-3253-4491-82f7-437f360206d2(com.mbeddr.cpp.templates.behavior)" />
     <import index="kntn" ref="r:4090021e-0c8f-4cca-ab3f-590afb43a745(com.mbeddr.cpp.base.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -101,6 +103,8 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
+      <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
@@ -114,6 +118,7 @@
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
@@ -144,6 +149,9 @@
       <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
         <child id="1146171026732" name="value" index="3t7uKA" />
@@ -420,7 +428,7 @@
     <ref role="1M2myG" to="wnzg:6hUtorE0jsx" resolve="IClassTyped" />
   </node>
   <node concept="1M2fIO" id="7DDmkyXkvJ">
-    <property role="3GE5qa" value="constructor" />
+    <property role="3GE5qa" value="method.constructor" />
     <ref role="1M2myG" to="wnzg:7DDmkyVr_r" resolve="ConstructorInitializedAttribute" />
     <node concept="1N5Pfh" id="7DDmkz1IpA" role="1Mr941">
       <ref role="1N5Vy1" to="wnzg:7DDmkz1Ipj" resolve="identity" />
@@ -533,7 +541,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7DDmkza$8D">
-    <property role="3GE5qa" value="constructor" />
+    <property role="3GE5qa" value="method.constructor" />
     <ref role="1M2myG" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
     <node concept="1N5Pfh" id="7DDmkza$8E" role="1Mr941">
       <ref role="1N5Vy1" to="wnzg:7DDmkza$5N" resolve="identity" />
@@ -1387,6 +1395,40 @@
   </node>
   <node concept="1M2fIO" id="6FZQsHt$aAc">
     <ref role="1M2myG" to="wnzg:6FZQsHt7RdA" resolve="AutoType" />
+    <node concept="9S07l" id="6FZQsHt$aAd" role="9Vyp8">
+      <node concept="3clFbS" id="6FZQsHt$aAe" role="2VODD2">
+        <node concept="3clFbF" id="6FZQsHt$aHz" role="3cqZAp">
+          <node concept="22lmx$" id="6FZQsHt$isI" role="3clFbG">
+            <node concept="2OqwBi" id="6FZQsHt$j7d" role="3uHU7w">
+              <node concept="nLn13" id="6FZQsHt$iL1" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="6FZQsHt$jzA" role="2OqNvi">
+                <node concept="chp4Y" id="6FZQsHt$jUU" role="cj9EA">
+                  <ref role="cht4Q" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
+                </node>
+              </node>
+            </node>
+            <node concept="22lmx$" id="6FZQsHt$e2C" role="3uHU7B">
+              <node concept="2OqwBi" id="6FZQsHt$aTh" role="3uHU7B">
+                <node concept="nLn13" id="6FZQsHt$aHy" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="6FZQsHt$b60" role="2OqNvi">
+                  <node concept="chp4Y" id="6FZQsHt$biJ" role="cj9EA">
+                    <ref role="cht4Q" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6FZQsHt$ex7" role="3uHU7w">
+                <node concept="nLn13" id="6FZQsHt$egG" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="6FZQsHt$eWK" role="2OqNvi">
+                  <node concept="chp4Y" id="6FZQsHt$feh" role="cj9EA">
+                    <ref role="cht4Q" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="6OyCGy9cOMX">
     <ref role="1M2myG" to="wnzg:6OyCGy9cOMO" resolve="ClassStaticVarRef" />
@@ -1650,4 +1692,5 @@
     </node>
   </node>
 </model>
+
 

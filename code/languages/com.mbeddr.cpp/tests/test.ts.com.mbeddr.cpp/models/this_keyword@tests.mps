@@ -10,14 +10,15 @@
   </languages>
   <imports>
     <import index="g7jk" ref="r:e06e24a5-d0fa-4f76-9dee-2042532d92a1(com.mbeddr.cpp.base.typesystem)" />
+    <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
+      <concept id="428590876651279930" name="jetbrains.mps.lang.test.structure.NodeTypeSystemErrorCheckOperation" flags="ng" index="2DdRWr" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -142,17 +143,17 @@
               <node concept="3XIRFW" id="2A9472yQZ6k" role="1IVm9U">
                 <node concept="1_9egQ" id="2A9472yQZ8A" role="3XIRFZ">
                   <node concept="3pqW6w" id="2A9472yQZhS" role="1_9egR">
-                    <node concept="3ZUYvv" id="2A9472yQZiG" role="3TlMhJ">
+                    <node concept="3ZUYvv" id="2A9472yR52Y" role="3TlMhJ">
                       <ref role="3ZUYvu" node="2A9472yQZ6y" resolve="c" />
+                      <node concept="7CXmI" id="2A9472yR59$" role="lGtFl">
+                        <node concept="2DdRWr" id="2A9472yR5ai" role="7EUXB" />
+                      </node>
                     </node>
                     <node concept="2qmXGp" id="2A9472yQZ9d" role="3TlMhI">
                       <node concept="3mBk1D" id="2A9472yQZ9_" role="1ESnxz">
                         <ref role="3mBk1B" node="2A9472yQZ7_" resolve="a" />
                       </node>
                       <node concept="oe0_q" id="2A9472yQZ8$" role="1_9fRO" />
-                    </node>
-                    <node concept="7CXmI" id="2A9472yQZod" role="lGtFl">
-                      <node concept="1TM$A" id="2A9472yQZoe" role="7EUXB" />
                     </node>
                   </node>
                 </node>

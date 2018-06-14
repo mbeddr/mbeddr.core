@@ -885,21 +885,6 @@
         </node>
         <node concept="IWg2L" id="3UsoL$l5JGd" role="IWgqQ">
           <node concept="3clFbS" id="3UsoL$l5JGf" role="2VODD2">
-            <node concept="3cpWs8" id="3UsoL$l60V9" role="3cqZAp">
-              <node concept="3cpWsn" id="3UsoL$l60Vc" role="3cpWs9">
-                <property role="TrG5h" value="blank_inheritance" />
-                <node concept="3Tqbb2" id="3UsoL$l60V8" role="1tU5fm">
-                  <ref role="ehGHo" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
-                </node>
-                <node concept="2ShNRf" id="3UsoL$l60Wf" role="33vP2m">
-                  <node concept="3zrR0B" id="3UsoL$l610$" role="2ShVmc">
-                    <node concept="3Tqbb2" id="3UsoL$l610A" role="3zrR0E">
-                      <ref role="ehGHo" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="3UsoL$l611_" role="3cqZAp">
               <node concept="2OqwBi" id="3UsoL$l646x" role="3clFbG">
                 <node concept="2OqwBi" id="3UsoL$l61iY" role="2Oq$k0">
@@ -909,8 +894,12 @@
                   </node>
                 </node>
                 <node concept="TSZUe" id="3UsoL$l67zU" role="2OqNvi">
-                  <node concept="37vLTw" id="3UsoL$l67JV" role="25WWJ7">
-                    <ref role="3cqZAo" node="3UsoL$l60Vc" resolve="blank_inheritance" />
+                  <node concept="2ShNRf" id="c7Kd0cGqEn" role="25WWJ7">
+                    <node concept="3zrR0B" id="c7Kd0cGrYz" role="2ShVmc">
+                      <node concept="3Tqbb2" id="c7Kd0cGrY_" role="3zrR0E">
+                        <ref role="ehGHo" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -3713,6 +3702,64 @@
         </node>
       </node>
       <node concept="2iRfu4" id="1yn8PkxYwPC" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4lmr4L5K5Fj">
+    <property role="3GE5qa" value="cast" />
+    <ref role="1XX52x" to="wnzg:4lmr4L5K5F7" resolve="ConstCast" />
+    <node concept="PMmxH" id="4lmr4L5K5Fl" role="2wV5jI">
+      <ref role="PMmxG" node="4lmr4L5bbIq" resolve="CastEditorComponent" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4lmr4L5AaIc">
+    <property role="3GE5qa" value="cast" />
+    <ref role="1XX52x" to="wnzg:4lmr4L5$$S8" resolve="ReinterpretCast" />
+    <node concept="PMmxH" id="4lmr4L5AaIe" role="2wV5jI">
+      <ref role="PMmxG" node="4lmr4L5bbIq" resolve="CastEditorComponent" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4lmr4L5Exup">
+    <property role="3GE5qa" value="cast" />
+    <ref role="1XX52x" to="wnzg:4lmr4L5Exud" resolve="DynamicCast" />
+    <node concept="PMmxH" id="4lmr4L5Exur" role="2wV5jI">
+      <ref role="PMmxG" node="4lmr4L5bbIq" resolve="CastEditorComponent" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="4lmr4L5bbIq">
+    <property role="3GE5qa" value="cast" />
+    <property role="TrG5h" value="CastEditorComponent" />
+    <ref role="1XX52x" to="wnzg:4lmr4L5bbIs" resolve="ICPPCast" />
+    <node concept="3EZMnI" id="4lmr4L5bbIB" role="2wV5jI">
+      <node concept="PMmxH" id="4lmr4L5bbIL" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="l2Vlx" id="4lmr4L5bbIE" role="2iSdaV" />
+      <node concept="3F0ifn" id="4lmr4L5bbQO" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+      </node>
+      <node concept="3F1sOY" id="4lmr4L5bbR4" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:4lmr4L5bbR1" resolve="type" />
+      </node>
+      <node concept="3F0ifn" id="4lmr4L5bbRl" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;(" />
+        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+      </node>
+      <node concept="3F1sOY" id="4lmr4L5bbSa" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:4lmr4L5bbRB" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="4lmr4L5bbSz" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4lmr4L5g5p_">
+    <property role="3GE5qa" value="cast" />
+    <ref role="1XX52x" to="wnzg:4lmr4L5a0Vb" resolve="StaticCast" />
+    <node concept="PMmxH" id="4lmr4L5g5pN" role="2wV5jI">
+      <ref role="PMmxG" node="4lmr4L5bbIq" resolve="CastEditorComponent" />
     </node>
   </node>
 </model>
