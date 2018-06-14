@@ -1006,6 +1006,9 @@
     <node concept="PrWs8" id="6OyCGy3FHsc" role="PzmwI">
       <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlagConcept" />
     </node>
+    <node concept="PrWs8" id="3VWY4WVNoY5" role="PzmwI">
+      <ref role="PrY4T" node="5eDFAXBS4m7" resolve="IThreadLocalFlag" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6OyCGy9cOMO">
     <property role="EcuMT" value="7864026881521306804" />
@@ -1114,6 +1117,27 @@
     <node concept="PrWs8" id="3M9Tj7Yz1kI" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="hYHfWq_jIb">
+    <property role="EcuMT" value="323895230972902283" />
+    <property role="TrG5h" value="Char16_tType" />
+    <property role="34LRSv" value="char16_t" />
+    <property role="R4oN_" value="C++ char16_t type" />
+    <ref role="1TJDcQ" to="mj1l:4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="hYHfWqSH0p">
+    <property role="EcuMT" value="323895230977986585" />
+    <property role="TrG5h" value="Char32_tType" />
+    <property role="34LRSv" value="char32_t" />
+    <property role="R4oN_" value="C++ char32_t type" />
+    <ref role="1TJDcQ" to="mj1l:1spqZOskJPs" resolve="CharType" />
+  </node>
+  <node concept="1TIwiD" id="hYHfWqSH2p">
+    <property role="EcuMT" value="323895230977986713" />
+    <property role="TrG5h" value="WChar_tType" />
+    <property role="34LRSv" value="wchar_t" />
+    <property role="R4oN_" value="C++ wchar_t type" />
+    <ref role="1TJDcQ" to="mj1l:1spqZOskJPs" resolve="CharType" />
   </node>
 </model>
 

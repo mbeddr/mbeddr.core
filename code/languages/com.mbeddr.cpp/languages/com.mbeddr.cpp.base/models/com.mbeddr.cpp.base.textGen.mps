@@ -2535,5 +2535,41 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="hYHfWq_jIc">
+    <ref role="WuzLi" to="wnzg:hYHfWq_jIb" resolve="Char16_tType" />
+    <node concept="11bSqf" id="hYHfWq_jId" role="11c4hB">
+      <node concept="3clFbS" id="hYHfWq_jIe" role="2VODD2">
+        <node concept="lc7rE" id="hYHfWq_jIx" role="3cqZAp">
+          <node concept="la8eA" id="hYHfWq_jIT" role="lcghm">
+            <property role="lacIc" value="char16_t" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="hYHfWqSH0q">
+    <ref role="WuzLi" to="wnzg:hYHfWqSH0p" resolve="Char32_tType" />
+    <node concept="11bSqf" id="hYHfWqSH0r" role="11c4hB">
+      <node concept="3clFbS" id="hYHfWqSH0s" role="2VODD2">
+        <node concept="lc7rE" id="hYHfWqSH0J" role="3cqZAp">
+          <node concept="la8eA" id="hYHfWqSH17" role="lcghm">
+            <property role="lacIc" value="char32_t" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="hYHfWqSH2q">
+    <ref role="WuzLi" to="wnzg:hYHfWqSH2p" resolve="WChar_tType" />
+    <node concept="11bSqf" id="hYHfWqSH2r" role="11c4hB">
+      <node concept="3clFbS" id="hYHfWqSH2s" role="2VODD2">
+        <node concept="lc7rE" id="hYHfWqSNxq" role="3cqZAp">
+          <node concept="la8eA" id="hYHfWqSNxM" role="lcghm">
+            <property role="lacIc" value="wchar_t" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
