@@ -5666,16 +5666,10 @@
             <ref role="3bR37D" node="7uZw0yZ43K1" resolve="com.mbeddr.core.debug" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3fwl5YKVQWF" role="3bR37C">
-          <node concept="3bR9La" id="3fwl5YKVQWG" role="1SiIV1">
+        <node concept="1SiIV0" id="5PbGypeFoVO" role="3bR37C">
+          <node concept="3bR9La" id="5PbGypeFoVP" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="3fwl5YKVGxe" resolve="com.mbeddr.cpp.operator_overload" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3fwl5YKWpi0" role="3bR37C">
-          <node concept="3bR9La" id="3fwl5YKWpi1" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="3fwl5YKWdlr" resolve="com.mbeddr.cpp.templates" />
+            <ref role="3bR37D" to="ffeo:7gdoTYdo$et" resolve="jetbrains.mps.debugger.api.api" />
           </node>
         </node>
       </node>

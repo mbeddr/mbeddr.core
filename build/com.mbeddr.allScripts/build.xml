@@ -3,8 +3,8 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.allScripts.build" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.allScripts.build" />
-  <property name="artifacts.root" location="" />
-  <property name="mps.home" location="${basedir}/../../../../../.." />
+  <property name="artifacts.root" location="${basedir}/../../artifacts" />
+  <property name="mps.home" location="${basedir}/../../../../MPS/MPS-2017.1.2.app/Contents" />
   <property name="mbeddr.github.core.home" location="${basedir}/../.." />
   <property name="artifacts.sl-all" location="${artifacts.root}/de.itemis.mps.extensions" />
   <property name="mbeddr.build" location="${mbeddr.github.core.home}/code/languages/com.mbeddr.build" />
@@ -211,6 +211,35 @@
       </fileset>
       <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.build/com.mbeddr.core.tests.build.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.core.tests.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.cpp.tests.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.cpp.tests.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.cpp.tests.build.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.cpp.tests.build" type="solution" uuid="04ae2f7a-0c1f-41eb-b335-969d72c24973">
+        <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="com.mbeddr.cpp.tests.build-src.jar" descriptor="com.mbeddr.cpp.tests.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.cpp.tests.build.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.cpp.tests.build" />
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cpp.tests.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.cpp.tests.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.cpp.tests.build-models">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cpp.tests.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.tests/com.mbeddr.cpp.tests.build-src.jar" duplicate="preserve">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cpp.tests.build/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.cpp.tests.build/com.mbeddr.cpp.tests.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.cpp.tests.build-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.core.tests.performance.build.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.core.tests.performance.build.jar/META-INF" />
@@ -568,7 +597,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.allScripts, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.platform, java.compile.jetbrains.mps.minimal, java.compile.com.mbeddr.rcp, java.compile.com.mbeddr.build, java.compile.com.mbeddr.xmodel.build" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.allScripts, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.cpp.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.platform, java.compile.jetbrains.mps.minimal, java.compile.com.mbeddr.rcp, java.compile.com.mbeddr.build, java.compile.com.mbeddr.xmodel.build" />
   
   <target name="processResources" />
   
@@ -691,6 +720,7 @@
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.cc.tests.dev.build/com.mbeddr.cc.tests.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.build/com.mbeddr.core.tests.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.core.tests.performance.build/com.mbeddr.core.tests.performance.build.msd" />
+        <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.cpp.tests.build/com.mbeddr.cpp.tests.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger-test.build.dev.build/com.mbeddr.debugger-test.build.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.debugger.tests.dev.build/com.mbeddr.debugger.tests.dev.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.ext.build/build.msd" />
@@ -793,6 +823,27 @@
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.core.tests.build">
       <fileset dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/source_gen">
+        <include name="**/*.info" />
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="java.compile.com.mbeddr.cpp.tests.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform">
+    <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.cpp.tests.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.cpp.tests.build" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.cpp.tests.build" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.build}/solutions/com.mbeddr.cpp.tests.build/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.cpp.tests.build">
+      <fileset dir="${mbeddr.build}/solutions/com.mbeddr.cpp.tests.build/source_gen">
         <include name="**/*.info" />
       </fileset>
     </copy>
@@ -1051,6 +1102,7 @@
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.cc.tests.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.core.tests.performance.build/source_gen" />
+    <delete dir="${mbeddr.build}/solutions/com.mbeddr.cpp.tests.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.debugger-test.build.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.debugger.tests.dev.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.ext.build/source_gen" />
