@@ -12,6 +12,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -34,6 +37,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -50,6 +56,9 @@
       <property role="20kJfa" value="value" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="t5JxF" id="7POJCjgfTZl" role="lGtFl">
+      <property role="t5JxN" value="The statement that throws an exception (throw &lt;value&gt;)" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4WhfN3oe7VL">
     <property role="EcuMT" value="5697404482618949361" />
@@ -62,6 +71,9 @@
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+      <node concept="t5JxF" id="7POJCjgfTD5" role="lGtFl">
+        <property role="t5JxN" value="The body of the try{} section" />
+      </node>
     </node>
     <node concept="1TJgyj" id="4WhfN3oe7VQ" role="1TKVEi">
       <property role="IQ2ns" value="5697404482618949366" />
@@ -69,6 +81,9 @@
       <property role="20kJfa" value="catches" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="4WhfN3oe7VM" resolve="CatchBlock" />
+      <node concept="t5JxF" id="7POJCjgfTCU" role="lGtFl">
+        <property role="t5JxN" value="The catch(){} blocks" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="4WhfN3oe7VM">
@@ -82,6 +97,9 @@
       <property role="20kJfa" value="catch" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4WhfN3oe7Xr" resolve="ICatchable" />
+      <node concept="t5JxF" id="7POJCjg$4$M" role="lGtFl">
+        <property role="t5JxN" value="The expression inside of the catch" />
+      </node>
     </node>
     <node concept="1TJgyj" id="4WhfN3oe7XD" role="1TKVEi">
       <property role="IQ2ns" value="5697404482618949481" />
@@ -89,14 +107,23 @@
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+      <node concept="t5JxF" id="7POJCjg$4$P" role="lGtFl">
+        <property role="t5JxN" value="The executable part of the catch" />
+      </node>
     </node>
     <node concept="PrWs8" id="4WhfN3ogHef" role="PzmwI">
       <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+    </node>
+    <node concept="t5JxF" id="7POJCjg$4$J" role="lGtFl">
+      <property role="t5JxN" value="The catch block that comes after a try block (or another catch block)" />
     </node>
   </node>
   <node concept="PlHQZ" id="4WhfN3oe7Xr">
     <property role="EcuMT" value="5697404482618949467" />
     <property role="TrG5h" value="ICatchable" />
+    <node concept="t5JxF" id="7POJCjg$4$A" role="lGtFl">
+      <property role="t5JxN" value="Interface that joins the concepts that can be put inside of a catch expression (catch(ICatchable))" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4WhfN3oe7Xs">
     <property role="EcuMT" value="5697404482618949468" />
@@ -106,6 +133,9 @@
     <node concept="PrWs8" id="4WhfN3oe7Xt" role="PzmwI">
       <ref role="PrY4T" node="4WhfN3oe7Xr" resolve="ICatchable" />
     </node>
+    <node concept="t5JxF" id="7POJCjg$4$D" role="lGtFl">
+      <property role="t5JxN" value="Catches all exceptions (catch(...))" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4WhfN3oefOo">
     <property role="EcuMT" value="5697404482618981656" />
@@ -113,6 +143,9 @@
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
     <node concept="PrWs8" id="4WhfN3oefOp" role="PzmwI">
       <ref role="PrY4T" node="4WhfN3oe7Xr" resolve="ICatchable" />
+    </node>
+    <node concept="t5JxF" id="7POJCjgfTCO" role="lGtFl">
+      <property role="t5JxN" value="A typed catch expression (like catch(int8 exception_no))" />
     </node>
   </node>
 </model>

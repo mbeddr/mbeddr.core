@@ -758,6 +758,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
     </node>
+    <node concept="PrWs8" id="61rdzRiP3dD" role="PzmwI">
+      <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1Yr26itwsSZ">
     <property role="EcuMT" value="2277423264798199359" />
@@ -800,6 +803,9 @@
     <node concept="PrWs8" id="7fNEwqBxBek" role="PzmwI">
       <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
     </node>
+    <node concept="PrWs8" id="61rdzRiP6uf" role="PzmwI">
+      <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7RFM8R3Me1y">
     <property role="EcuMT" value="9073566385468661858" />
@@ -810,6 +816,9 @@
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="PrWs8" id="7RFM8R3Me1P" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBJ5Y" resolve="INamedClassMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="61rdzRj61i7" role="PzmwI">
+      <ref role="PrY4T" node="383ZxwZsgd5" resolve="INamedNamespaceMemberDeclaration" />
     </node>
     <node concept="PrWs8" id="7RFM8R3Me22" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
@@ -1192,12 +1201,15 @@
   </node>
   <node concept="1TIwiD" id="3M9Tj7Yz1kE">
     <property role="EcuMT" value="4362269716971787562" />
-    <property role="3GE5qa" value="class" />
-    <property role="TrG5h" value="ClassComment" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="GeneralComment" />
     <property role="34LRSv" value="//" />
     <ref role="1TJDcQ" to="c4fa:1teBndx1rbo" resolve="CommentStatement" />
     <node concept="PrWs8" id="3M9Tj7Yz1kI" role="PzmwI">
       <ref role="PrY4T" node="4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7POJCjgR0nr" role="PzmwI">
+      <ref role="PrY4T" node="383ZxwZsgd4" resolve="INamespaceMemberDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="hYHfWq_jIb">

@@ -261,6 +261,11 @@
           </node>
         </node>
       </node>
+      <node concept="3SKdUt" id="7POJCjgR9Tl" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCjgR9Tn" role="3SKWNk">
+          <property role="3SKdUp" value="Resolve template types if applicable" />
+        </node>
+      </node>
       <node concept="2Gpval" id="1iZHTjWGZKU" role="3cqZAp">
         <node concept="2GrKxI" id="1iZHTjWGZKV" role="2Gsz3X">
           <property role="TrG5h" value="ancestor" />
@@ -308,6 +313,7 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="7POJCjgRa3p" role="3cqZAp" />
       <node concept="1Z5TYs" id="1iZHTjWGDNP" role="3cqZAp">
         <node concept="mw_s8" id="1iZHTjWGDUt" role="1ZfhKB">
           <node concept="37vLTw" id="1iZHTjWGDUr" role="mwGJk">
@@ -367,6 +373,12 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="7POJCjgR7yh" role="3cqZAp" />
+          <node concept="3SKdUt" id="7POJCjgR7qM" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjgR7qO" role="3SKWNk">
+              <property role="3SKdUp" value="Get the underlying type if pointer" />
+            </node>
+          </node>
           <node concept="Jncv_" id="1X$JbatVvlB" role="3cqZAp">
             <ref role="JncvD" to="yq40:fwMInzpHoK" resolve="PointerType" />
             <node concept="37vLTw" id="1X$JbatVxa0" role="JncvB">
@@ -392,6 +404,12 @@
             <node concept="JncvC" id="1X$JbatVvlH" role="JncvA">
               <property role="TrG5h" value="pointer" />
               <node concept="2jxLKc" id="1X$JbatVvlI" role="1tU5fm" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="7POJCjgR7DK" role="3cqZAp" />
+          <node concept="3SKdUt" id="7POJCjgR7SO" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjgR7SQ" role="3SKWNk">
+              <property role="3SKdUp" value="Assign the type to the template resolved type if it's a class" />
             </node>
           </node>
           <node concept="3clFbJ" id="327D75EHate" role="3cqZAp">
@@ -528,6 +546,11 @@
       </node>
       <node concept="nvevp" id="327D75EIz$F" role="3cqZAp">
         <node concept="3clFbS" id="327D75EIz$G" role="nvhr_">
+          <node concept="3SKdUt" id="7POJCjgRmrD" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjgRmrF" role="3SKWNk">
+              <property role="3SKdUp" value="Resolve template if applicable" />
+            </node>
+          </node>
           <node concept="3clFbJ" id="327D75EIz$H" role="3cqZAp">
             <node concept="3clFbS" id="327D75EIz$I" role="3clFbx">
               <node concept="1Z5TYs" id="1CWIc7F4JsY" role="3cqZAp">
@@ -629,6 +652,17 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="7POJCjgRkFq" role="3cqZAp" />
+      <node concept="3SKdUt" id="7POJCjgRkJe" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCjgRkJg" role="3SKWNk">
+          <property role="3SKdUp" value="Type check the arguments." />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7POJCjgRllR" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCjgRllT" role="3SKWNk">
+          <property role="3SKdUp" value="Arg 2 is false here because this is not an initializer" />
+        </node>
+      </node>
       <node concept="3clFbF" id="4V1wcOaJ2hU" role="3cqZAp">
         <node concept="2YIFZM" id="4V1wcOaJ3pc" role="3clFbG">
           <ref role="1Pybhc" to="g7jk:4V1wcOaIyss" resolve="ICallLikeTypechecker" />
@@ -641,7 +675,6 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="4V1wcOaI6sK" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="3v5DuFDvslF" role="1YuTPh">
       <property role="TrG5h" value="qmc" />
@@ -682,6 +715,11 @@
             </node>
             <node concept="1$rogu" id="1iZHTjWGyc2" role="2OqNvi" />
           </node>
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7POJCjgRemX" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCjgRemZ" role="3SKWNk">
+          <property role="3SKdUp" value="Resolve template type if necessary" />
         </node>
       </node>
       <node concept="2Gpval" id="1iZHTjWGTSa" role="3cqZAp">
@@ -731,6 +769,12 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="7POJCjgReNY" role="3cqZAp" />
+      <node concept="3SKdUt" id="7POJCjgRfIi" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCjgRfIk" role="3SKWNk">
+          <property role="3SKdUp" value="Change the type using the virtual implementation" />
+        </node>
+      </node>
       <node concept="1Z5TYs" id="1iZHTjWGzMG" role="3cqZAp">
         <node concept="mw_s8" id="1iZHTjWGzTk" role="1ZfhKB">
           <node concept="2OqwBi" id="1CWIc7F4Flp" role="mwGJk">
@@ -751,6 +795,17 @@
               <ref role="1YBMHb" node="1iZHTjWGvvL" resolve="imc" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="7POJCjgRaEg" role="3cqZAp" />
+      <node concept="3SKdUt" id="7POJCjgRbhs" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCjgRbhu" role="3SKWNk">
+          <property role="3SKdUp" value="Type check and count the arguments" />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7POJCjgRbJM" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCjgRbJO" role="3SKWNk">
+          <property role="3SKdUp" value="False because this is not an initializer" />
         </node>
       </node>
       <node concept="3clFbF" id="7e1_xL4FKUJ" role="3cqZAp">
@@ -786,6 +841,11 @@
       <node concept="3SKdUt" id="3p40HKhBx4J" role="3cqZAp">
         <node concept="3SKdUq" id="3p40HKhBx4L" role="3SKWNk">
           <property role="3SKdUp" value="Just overriding mbeddr.core" />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7POJCjgR3uw" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCjgR3uy" role="3SKWNk">
+          <property role="3SKdUp" value="For some reason the typechecking in core does nothing here." />
         </node>
       </node>
       <node concept="3clFbF" id="3p40HKhBx51" role="3cqZAp">
@@ -965,7 +1025,7 @@
                       <node concept="3cpWs3" id="3p40HKhESRK" role="3uHU7B">
                         <node concept="3cpWs3" id="3p40HKhESRL" role="3uHU7B">
                           <node concept="Xl_RD" id="3p40HKhESRM" role="3uHU7B">
-                            <property role="Xl_RC" value="Elements must be of type " />
+                            <property role="Xl_RC" value="elements must be of type " />
                           </node>
                           <node concept="2OqwBi" id="3p40HKhESRN" role="3uHU7w">
                             <node concept="37vLTw" id="3p40HKhESRO" role="2Oq$k0">
@@ -1047,7 +1107,7 @@
                     <node concept="3cpWs3" id="3p40HKhDkzg" role="3uHU7B">
                       <node concept="3cpWs3" id="3p40HKhBKCm" role="3uHU7B">
                         <node concept="Xl_RD" id="3p40HKhBJNv" role="3uHU7B">
-                          <property role="Xl_RC" value="Elements must be of type " />
+                          <property role="Xl_RC" value="elements must be of type " />
                         </node>
                         <node concept="2OqwBi" id="3p40HKhBKVX" role="3uHU7w">
                           <node concept="37vLTw" id="3p40HKhBKCG" role="2Oq$k0">
