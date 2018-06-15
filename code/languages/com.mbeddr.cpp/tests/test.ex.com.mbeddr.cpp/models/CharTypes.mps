@@ -219,39 +219,58 @@
     <node concept="2NXPZ9" id="3VWY4WXtGOk" role="N3F5h">
       <property role="TrG5h" value="empty_1528968458096_1" />
     </node>
-    <node concept="2B_Gvg" id="1tzB3lw66ZA" role="N3F5h">
-      <node concept="OjmMv" id="1tzB3lw66ZC" role="2B_H8o">
-        <node concept="19SGf9" id="1tzB3lw66ZF" role="OjmMu">
-          <node concept="19SUe$" id="1tzB3lw66ZG" role="19SJt6">
-            <property role="19SUeA" value="C++ code from clipboard: &#10;static int test = 10;&#10;thread_local int test2 = 2;" />
+    <node concept="2B_Gvg" id="1tzB3lwzNn1" role="N3F5h">
+      <node concept="OjmMv" id="1tzB3lwzNn3" role="2B_H8o">
+        <node concept="19SGf9" id="1tzB3lwzNn6" role="OjmMu">
+          <node concept="19SUe$" id="1tzB3lwzNn7" role="19SJt6">
+            <property role="19SUeA" value="C++ code from clipboard: &#10;static int test = 10;&#10;thread_local int test2 = 2;&#10;int test3;&#10;extern static int test4 = 123456789;" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="3Iz7nb" id="1tzB3lw66ZI" role="N3F5h">
+    <node concept="3Iz7nb" id="1tzB3lwzNn9" role="N3F5h">
       <property role="TrG5h" value="test" />
       <property role="226hDV" value="true" />
-      <node concept="3TlMh2" id="1tzB3lw66ZJ" role="2C2TGm">
+      <node concept="3TlMh2" id="1tzB3lwzNna" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
-      <node concept="3TlMh9" id="1tzB3lw66ZK" role="1cecVj">
+      <node concept="3TlMh9" id="1tzB3lwzNnb" role="1cecVj">
         <property role="2hmy$m" value="10" />
       </node>
     </node>
-    <node concept="3Iz7nb" id="1tzB3lw66ZM" role="N3F5h">
+    <node concept="3Iz7nb" id="1tzB3lwzNnd" role="N3F5h">
       <property role="TrG5h" value="test2" />
       <property role="OiuJB" value="true" />
-      <node concept="3TlMh2" id="1tzB3lw66ZN" role="2C2TGm">
+      <node concept="3TlMh2" id="1tzB3lwzNne" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
-      <node concept="3TlMh9" id="1tzB3lw66ZO" role="1cecVj">
+      <node concept="3TlMh9" id="1tzB3lwzNnf" role="1cecVj">
         <property role="2hmy$m" value="2" />
       </node>
     </node>
-    <node concept="2NXPZ9" id="1tzB3lw66ZP" role="N3F5h">
-      <property role="TrG5h" value="empty_1529040963058_8" />
+    <node concept="3Iz7nb" id="1tzB3lwzNnh" role="N3F5h">
+      <property role="TrG5h" value="test3" />
+      <node concept="3TlMh2" id="1tzB3lwzNni" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="3Iz7nb" id="1tzB3lwzNnk" role="N3F5h">
+      <property role="TrG5h" value="test4" />
+      <property role="3mNisv" value="true" />
+      <property role="226hDV" value="true" />
+      <node concept="3TlMh2" id="1tzB3lwzNnl" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3TlMh9" id="1tzB3lwzNnm" role="1cecVj">
+        <property role="2hmy$m" value="123456789" />
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="1tzB3lwzNnn" role="N3F5h">
+      <property role="TrG5h" value="empty_1529043306281_5" />
     </node>
     <node concept="2NXPZ9" id="1tzB3lw66SP" role="N3F5h">
       <property role="TrG5h" value="empty_1529040944734_5" />
