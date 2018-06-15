@@ -57,6 +57,10 @@
       </concept>
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
+      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
+        <property id="6113173064526131578" name="value" index="PhEJT" />
+      </concept>
+      <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42">
         <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
       </concept>
@@ -135,7 +139,6 @@
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
       </concept>
-      <concept id="8860443239512128108" name="com.mbeddr.core.expressions.structure.IntType" flags="ng" index="3TlMh2" />
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
   </registry>
@@ -229,102 +232,39 @@
     <node concept="2NXPZ9" id="3VWY4WXtGOk" role="N3F5h">
       <property role="TrG5h" value="empty_1528968458096_1" />
     </node>
-    <node concept="2B_Gvg" id="1tzB3lBJ0Tn" role="N3F5h">
-      <node concept="OjmMv" id="1tzB3lBJ0Tp" role="2B_H8o">
-        <node concept="19SGf9" id="1tzB3lBJ0Ts" role="OjmMu">
-          <node concept="19SUe$" id="1tzB3lBJ0Tt" role="19SJt6">
-            <property role="19SUeA" value="C++ code from clipboard: &#10;int[] intArrayTest = {1, 2};&#10;int[3] intArrayTest2 = {1, 2, 3};&#10;int intArrayTest3 [] = {1};&#10;int intArrayTest4 [2] = {0, 1};" />
+    <node concept="2B_Gvg" id="346D2AYA_1V" role="N3F5h">
+      <node concept="OjmMv" id="346D2AYA_1X" role="2B_H8o">
+        <node concept="19SGf9" id="346D2AYA_20" role="OjmMu">
+          <node concept="19SUe$" id="346D2AYA_21" role="19SJt6">
+            <property role="19SUeA" value="C++ code from clipboard: &#10;string[1] stringArrayTest = {&quot;test&quot;};" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="3Iz7nb" id="1tzB3lBJ0Tv" role="N3F5h">
-      <property role="TrG5h" value="intArrayTest" />
-      <node concept="3J0A42" id="1tzB3lBJ0Tw" role="2C2TGm">
+    <node concept="3Iz7nb" id="346D2AYA_23" role="N3F5h">
+      <property role="TrG5h" value="stringArrayTest" />
+      <node concept="3J0A42" id="346D2AYA_24" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <node concept="3TlMh2" id="1tzB3lBJ0Tx" role="2umbIo">
+        <node concept="Pu267" id="346D2AYA_25" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-      </node>
-      <node concept="3o3WLD" id="1tzB3lBJ0Ty" role="1cecVj">
-        <node concept="3TlMh9" id="1tzB3lBJ0Tz" role="3o3WLE">
-          <property role="2hmy$m" value="1" />
-        </node>
-        <node concept="3TlMh9" id="1tzB3lBJ0T$" role="3o3WLE">
-          <property role="2hmy$m" value="2" />
-        </node>
-      </node>
-    </node>
-    <node concept="3Iz7nb" id="1tzB3lBJ0TA" role="N3F5h">
-      <property role="TrG5h" value="intArrayTest2" />
-      <node concept="3J0A42" id="1tzB3lBJ0TB" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-        <node concept="3TlMh2" id="1tzB3lBJ0TC" role="2umbIo">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="3TlMh9" id="1tzB3lBJ0TD" role="1YbSNA">
-          <property role="2hmy$m" value="3" />
-        </node>
-      </node>
-      <node concept="3o3WLD" id="1tzB3lBJ0TE" role="1cecVj">
-        <node concept="3TlMh9" id="1tzB3lBJ0TF" role="3o3WLE">
-          <property role="2hmy$m" value="1" />
-        </node>
-        <node concept="3TlMh9" id="1tzB3lBJ0TG" role="3o3WLE">
-          <property role="2hmy$m" value="2" />
-        </node>
-        <node concept="3TlMh9" id="1tzB3lBJ0TH" role="3o3WLE">
-          <property role="2hmy$m" value="3" />
-        </node>
-      </node>
-    </node>
-    <node concept="3Iz7nb" id="1tzB3lBJ0TJ" role="N3F5h">
-      <property role="TrG5h" value="intArrayTest3" />
-      <node concept="3J0A42" id="1tzB3lBJ0TK" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-        <node concept="3TlMh2" id="1tzB3lBJ0TL" role="2umbIo">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="3o3WLD" id="1tzB3lBJ0TM" role="1cecVj">
-        <node concept="3TlMh9" id="1tzB3lBJ0TN" role="3o3WLE">
+        <node concept="3TlMh9" id="346D2AYA_26" role="1YbSNA">
           <property role="2hmy$m" value="1" />
         </node>
       </node>
-    </node>
-    <node concept="3Iz7nb" id="1tzB3lBJ0TP" role="N3F5h">
-      <property role="TrG5h" value="intArrayTest4" />
-      <node concept="3J0A42" id="1tzB3lBJ0TQ" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-        <node concept="3TlMh2" id="1tzB3lBJ0TR" role="2umbIo">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-        <node concept="3TlMh9" id="1tzB3lBJ0TS" role="1YbSNA">
-          <property role="2hmy$m" value="2" />
-        </node>
-      </node>
-      <node concept="3o3WLD" id="1tzB3lBJ0TT" role="1cecVj">
-        <node concept="3TlMh9" id="1tzB3lBJ0TU" role="3o3WLE">
-          <property role="2hmy$m" value="0" />
-        </node>
-        <node concept="3TlMh9" id="1tzB3lBJ0TV" role="3o3WLE">
-          <property role="2hmy$m" value="1" />
+      <node concept="3o3WLD" id="346D2AYA_27" role="1cecVj">
+        <node concept="PhEJO" id="346D2AYA_28" role="3o3WLE">
+          <property role="PhEJT" value="test" />
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="1tzB3lBJ0TW" role="N3F5h">
-      <property role="TrG5h" value="empty_1529058838479_5" />
+    <node concept="2NXPZ9" id="346D2AYA_29" role="N3F5h">
+      <property role="TrG5h" value="empty_1529061529998_2" />
     </node>
-    <node concept="2NXPZ9" id="1tzB3lBcuVk" role="N3F5h">
-      <property role="TrG5h" value="empty_1529058229566_3" />
+    <node concept="2NXPZ9" id="1tzB3lCRb5r" role="N3F5h">
+      <property role="TrG5h" value="empty_1529060766676_67" />
     </node>
     <node concept="lIfQi" id="hYHfWqSGOw" role="N3F5h">
       <property role="3HjyOP" value="true" />
