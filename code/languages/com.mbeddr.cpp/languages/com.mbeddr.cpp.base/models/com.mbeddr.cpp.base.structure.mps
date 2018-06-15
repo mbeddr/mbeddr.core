@@ -181,6 +181,7 @@
     <property role="EcuMT" value="5044697665789421259" />
     <property role="TrG5h" value="AttributeDeclaration" />
     <property role="34LRSv" value="field" />
+    <property role="R4oN_" value="public &lt;type&gt; &lt;name&gt; = &lt;init&gt;" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3CmSUB7Fw7R" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -221,6 +222,9 @@
     </node>
     <node concept="PrWs8" id="6OyCGy4g52Y" role="PzmwI">
       <ref role="PrY4T" node="1Yr26itwx8u" resolve="IStaticFlag" />
+    </node>
+    <node concept="t5JxF" id="7POJCje6ZWs" role="lGtFl">
+      <property role="t5JxN" value="Fields on classes (they have visibility)" />
     </node>
   </node>
   <node concept="PlHQZ" id="4o2nsMgBJ5Y">
@@ -669,9 +673,13 @@
     <property role="TrG5h" value="NullPointerType" />
     <property role="34LRSv" value="std::nullptr_t" />
     <property role="R4oN_" value="Null pointer type" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="PrWs8" id="29cSqvdKNcz" role="PzmwI">
       <ref role="PrY4T" to="yq40:4$HG0yY9G70" resolve="INullableType" />
+    </node>
+    <node concept="PrWs8" id="7POJCje79OY" role="PzmwI">
+      <ref role="PrY4T" node="7mGKYHhDe0x" resolve="IUsageRequiresStdImport" />
     </node>
   </node>
   <node concept="1TIwiD" id="29cSqvcoIWG">
@@ -679,7 +687,11 @@
     <property role="TrG5h" value="NullPointerLiteral" />
     <property role="34LRSv" value="nullptr" />
     <property role="R4oN_" value="Null pointer literal" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrDq" resolve="Literal" />
+    <node concept="t5JxF" id="7POJCje7Nxg" role="lGtFl">
+      <property role="t5JxN" value="This is the actual literal &quot;nullptr&quot;, as opposed to the type &quot;std::nullptr_t&quot;. This literal has that type." />
+    </node>
   </node>
   <node concept="1TIwiD" id="7RFM8R0xwre">
     <property role="EcuMT" value="9073566385413949134" />
@@ -1017,9 +1029,13 @@
     <property role="TrG5h" value="AutoType" />
     <property role="34LRSv" value="auto" />
     <property role="R4oN_" value="auto" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="PrWs8" id="6FZQsHu28zs" role="PzmwI">
       <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
+    </node>
+    <node concept="t5JxF" id="7POJCje72nA" role="lGtFl">
+      <property role="t5JxN" value="Let's the compiler resolve the type at compile time (you still get MPS type inference)" />
     </node>
   </node>
   <node concept="1TIwiD" id="6OyCGy3I3ZK">
@@ -1159,6 +1175,7 @@
     <property role="TrG5h" value="Char16_tType" />
     <property role="34LRSv" value="char16_t" />
     <property role="R4oN_" value="C++ char16_t type" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" to="mj1l:4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
   </node>
   <node concept="1TIwiD" id="hYHfWqSH0p">
@@ -1166,14 +1183,19 @@
     <property role="TrG5h" value="Char32_tType" />
     <property role="34LRSv" value="char32_t" />
     <property role="R4oN_" value="C++ char32_t type" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" to="mj1l:1spqZOskJPs" resolve="CharType" />
   </node>
   <node concept="1TIwiD" id="hYHfWqSH2p">
     <property role="EcuMT" value="323895230977986713" />
     <property role="TrG5h" value="WChar_tType" />
     <property role="34LRSv" value="wchar_t" />
-    <property role="R4oN_" value="C++ wchar_t type" />
+    <property role="R4oN_" value="C++ wide character type" />
+    <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" to="mj1l:1spqZOskJPs" resolve="CharType" />
+    <node concept="t5JxF" id="7POJCje7Nxm" role="lGtFl">
+      <property role="t5JxN" value="The bit count of this is not known to MPS as it is compiler specific." />
+    </node>
   </node>
   <node concept="1TIwiD" id="4lmr4L5$$S8">
     <property role="EcuMT" value="4996299911454674440" />

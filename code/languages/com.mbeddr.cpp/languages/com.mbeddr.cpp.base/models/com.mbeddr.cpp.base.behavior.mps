@@ -9855,12 +9855,6 @@
       <node concept="3clFbS" id="7fNEwqBx$7e" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="6FZQsHtgKqK">
-    <ref role="13h7C2" to="wnzg:6FZQsHt7RdA" resolve="AutoType" />
-    <node concept="13hLZK" id="6FZQsHtgKqL" role="13h7CW">
-      <node concept="3clFbS" id="6FZQsHtgKqM" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="6OyCGy3GPxS">
     <ref role="13h7C2" to="wnzg:6OyCGy3FHs3" resolve="GlobalVarDecCPP" />
     <node concept="13hLZK" id="6OyCGy3GPxT" role="13h7CW">
@@ -12807,6 +12801,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="hYHfWrRl7J">
+    <property role="3GE5qa" value="type" />
     <ref role="13h7C2" to="wnzg:hYHfWq_jIb" resolve="Char16_tType" />
     <node concept="13i0hz" id="4XMHJL4Gf_f" role="13h7CS">
       <property role="TrG5h" value="getPrintfFormatString" />
@@ -12853,6 +12848,94 @@
     </node>
     <node concept="13hLZK" id="hYHfWrRl7K" role="13h7CW">
       <node concept="3clFbS" id="hYHfWrRl7L" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7POJCje79P4">
+    <property role="3GE5qa" value="type" />
+    <ref role="13h7C2" to="wnzg:29cSqvcoIWH" resolve="NullPointerType" />
+    <node concept="13hLZK" id="7POJCje79P5" role="13h7CW">
+      <node concept="3clFbS" id="7POJCje79P6" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7POJCje79Pf" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getRequiredImports" />
+      <ref role="13i0hy" node="7mGKYHhDe0H" resolve="getRequiredImports" />
+      <node concept="3Tm1VV" id="7POJCje79Pg" role="1B3o_S" />
+      <node concept="3clFbS" id="7POJCje79Pj" role="3clF47">
+        <node concept="3cpWs8" id="7POJCje79V_" role="3cqZAp">
+          <node concept="3cpWsn" id="7POJCje79VC" role="3cpWs9">
+            <property role="TrG5h" value="cstddefImport" />
+            <node concept="3Tqbb2" id="7POJCje79V$" role="1tU5fm">
+              <ref role="ehGHo" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+            </node>
+            <node concept="2ShNRf" id="7POJCje79WN" role="33vP2m">
+              <node concept="3zrR0B" id="7POJCje79WL" role="2ShVmc">
+                <node concept="3Tqbb2" id="7POJCje79WM" role="3zrR0E">
+                  <ref role="ehGHo" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7POJCje7a3k" role="3cqZAp">
+          <node concept="37vLTI" id="7POJCje7bco" role="3clFbG">
+            <node concept="Xl_RD" id="7POJCje7bji" role="37vLTx">
+              <property role="Xl_RC" value="&lt;cstddef&gt;" />
+            </node>
+            <node concept="2OqwBi" id="7POJCje7adX" role="37vLTJ">
+              <node concept="37vLTw" id="7POJCje7a3i" role="2Oq$k0">
+                <ref role="3cqZAo" node="7POJCje79VC" resolve="cstddefImport" />
+              </node>
+              <node concept="3TrcHB" id="7POJCje7au0" role="2OqNvi">
+                <ref role="3TsBF5" to="x27k:3kEjc_WIKGg" resolve="headerFileName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7POJCje7_T2" role="3cqZAp">
+          <node concept="3cpWsn" id="7POJCje7_T5" role="3cpWs9">
+            <property role="TrG5h" value="returnable" />
+            <node concept="2I9FWS" id="7POJCje7_T0" role="1tU5fm">
+              <ref role="2I9WkF" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+            </node>
+            <node concept="2ShNRf" id="7POJCje7Ce7" role="33vP2m">
+              <node concept="2T8Vx0" id="7POJCje7Ce5" role="2ShVmc">
+                <node concept="2I9FWS" id="7POJCje7Ce6" role="2T96Bj">
+                  <ref role="2I9WkF" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7POJCje7Dg4" role="3cqZAp">
+          <node concept="2OqwBi" id="7POJCje7Fws" role="3clFbG">
+            <node concept="37vLTw" id="7POJCje7Dg2" role="2Oq$k0">
+              <ref role="3cqZAo" node="7POJCje7_T5" resolve="returnable" />
+            </node>
+            <node concept="TSZUe" id="7POJCje7Lcd" role="2OqNvi">
+              <node concept="37vLTw" id="7POJCje7LP5" role="25WWJ7">
+                <ref role="3cqZAo" node="7POJCje79VC" resolve="cstddefImport" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7POJCje7bPo" role="3cqZAp">
+          <node concept="37vLTw" id="7POJCje7Mz3" role="3cqZAk">
+            <ref role="3cqZAo" node="7POJCje7_T5" resolve="returnable" />
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="7POJCje79Pk" role="3clF45">
+        <ref role="2I9WkF" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+      </node>
+      <node concept="P$JXv" id="7POJCje7NtD" role="lGtFl">
+        <node concept="TZ5HA" id="7POJCje7NtE" role="TZ5H$">
+          <node concept="1dT_AC" id="7POJCje7NtF" role="1dT_Ay">
+            <property role="1dT_AB" value="cstddef is required for the use of std::nullptr_t. This ensures it textgens to the file." />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
