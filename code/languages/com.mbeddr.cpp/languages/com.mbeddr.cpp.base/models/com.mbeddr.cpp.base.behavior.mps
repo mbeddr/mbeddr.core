@@ -2,16 +2,16 @@
 <model ref="r:4090021e-0c8f-4cca-ab3f-590afb43a745(com.mbeddr.cpp.base.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="fe9d76d7-5809-45c9-ae28-a40915b4d6ff" name="jetbrains.mps.lang.checkedName" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
-    <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="fe9d76d7-5809-45c9-ae28-a40915b4d6ff" name="jetbrains.mps.lang.checkedName" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="-1" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
+    <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -205,6 +205,9 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
       <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
         <reference id="6832197706140518108" name="param" index="zr_51" />
@@ -3338,7 +3341,16 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6ddXmWdIsiB" role="3cqZAp" />
+        <node concept="3SKdUt" id="7POJCjfn9ms" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfn9mu" role="3SKWNk">
+            <property role="3SKdUp" value="This just does a cast of the arguments. Sometimes this cast fails but it" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7POJCjfnatJ" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfnatL" role="3SKWNk">
+            <property role="3SKdUp" value="does not matter because the type can still be successfully checked." />
+          </node>
+        </node>
         <node concept="2Gpval" id="6ddXmWdItSP" role="3cqZAp">
           <node concept="2GrKxI" id="6ddXmWdItSR" role="2Gsz3X">
             <property role="TrG5h" value="arg" />
@@ -9856,7 +9868,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6OyCGy3I43h">
-    <ref role="13h7C2" to="wnzg:6OyCGy3I3ZK" resolve="StaticVar" />
+    <ref role="13h7C2" to="wnzg:6OyCGy3I3ZK" resolve="StaticGlobalVarDec" />
     <node concept="13hLZK" id="6OyCGy3I43i" role="13h7CW">
       <node concept="3clFbS" id="6OyCGy3I43j" role="2VODD2">
         <node concept="3clFbF" id="6OyCGy3I46p" role="3cqZAp">
@@ -9969,6 +9981,11 @@
                   </node>
                   <node concept="1$rogu" id="b637l21mgk" role="2OqNvi" />
                 </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="7POJCjf3ydS" role="3cqZAp">
+              <node concept="3SKdUq" id="7POJCjf3ydU" role="3SKWNk">
+                <property role="3SKdUp" value="In the event a template class is being instantiated, we need to resolve the types first." />
               </node>
             </node>
             <node concept="3clFbF" id="b637l21mgv" role="3cqZAp">
@@ -12694,6 +12711,11 @@
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getRequiredImports" />
+      <node concept="P$JXv" id="7POJCjf3jYq" role="lGtFl">
+        <node concept="x79VA" id="7POJCjf3jYt" role="3nqlJM">
+          <property role="x79VB" value="A list of the imports, with &quot;&quot;/&lt;&gt; that should be imported wherever this concept is used." />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="7mGKYHhDe0I" role="1B3o_S" />
       <node concept="2I9FWS" id="7mGKYHhDe6T" role="3clF45">
         <ref role="2I9WkF" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
@@ -12716,6 +12738,11 @@
       <ref role="13i0hy" node="7mGKYHhDe0H" resolve="getRequiredImports" />
       <node concept="3Tm1VV" id="7mGKYHhDf9b" role="1B3o_S" />
       <node concept="3clFbS" id="7mGKYHhDf9e" role="3clF47">
+        <node concept="3SKdUt" id="7POJCjf3tyv" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjf3tyx" role="3SKWNk">
+            <property role="3SKdUp" value="If nothrow is included we need the &lt;new&gt; header." />
+          </node>
+        </node>
         <node concept="3cpWs8" id="7mGKYHhDgJs" role="3cqZAp">
           <node concept="3cpWsn" id="7mGKYHhDgJv" role="3cpWs9">
             <property role="TrG5h" value="result" />

@@ -234,6 +234,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -3327,7 +3328,7 @@
     <ref role="1XX52x" to="wnzg:6OyCGy9cOMO" resolve="ClassStaticVarRef" />
     <node concept="3EZMnI" id="6OyCGy9tq1N" role="2wV5jI">
       <node concept="1iCGBv" id="6OyCGy9tq1X" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:6OyCGy9cOMP" resolve="clazz" />
+        <ref role="1NtTu8" to="wnzg:6OyCGy9cOMP" resolve="class" />
         <node concept="1sVBvm" id="6OyCGy9tq1Z" role="1sWHZn">
           <node concept="3F0A7n" id="6OyCGy9tq29" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -3382,6 +3383,11 @@
         </node>
         <node concept="IWg2L" id="7SgJHc7IP$c" role="IWgqQ">
           <node concept="3clFbS" id="7SgJHc7IP$e" role="2VODD2">
+            <node concept="3SKdUt" id="7POJCjf3oJ7" role="3cqZAp">
+              <node concept="3SKdUq" id="7POJCjf3oJ9" role="3SKWNk">
+                <property role="3SKdUp" value="Transform the normal class type or template class type into a constructor version." />
+              </node>
+            </node>
             <node concept="3cpWs8" id="7SgJHc7MXpU" role="3cqZAp">
               <node concept="3cpWsn" id="7SgJHc7MXpX" role="3cpWs9">
                 <property role="TrG5h" value="replacement" />
@@ -3395,6 +3401,12 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="7POJCjf3t3f" role="3cqZAp" />
+            <node concept="3SKdUt" id="7POJCjf3smO" role="3cqZAp">
+              <node concept="3SKdUq" id="7POJCjf3smQ" role="3SKWNk">
+                <property role="3SKdUp" value="This case is safe since we know its classtype already due to the `can execute` block." />
               </node>
             </node>
             <node concept="3clFbF" id="7SgJHc8q8uP" role="3cqZAp">
@@ -3421,6 +3433,12 @@
                     <ref role="3cqZAo" node="7SgJHc7MXpX" resolve="replacement" />
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="7POJCjf3sSx" role="3cqZAp" />
+            <node concept="3SKdUt" id="7POJCjf3sGa" role="3cqZAp">
+              <node concept="3SKdUq" id="7POJCjf3sGc" role="3SKWNk">
+                <property role="3SKdUp" value="Special case for templates" />
               </node>
             </node>
             <node concept="Jncv_" id="6ODoR9yLE4T" role="3cqZAp">
@@ -3640,7 +3658,13 @@
       <property role="1hAc7j" value="complete_action_id" />
       <property role="1hHO97" value="Do nothing" />
       <node concept="1hAIg9" id="7j9KGYKZMY7" role="1hA7z_">
-        <node concept="3clFbS" id="7j9KGYKZMY8" role="2VODD2" />
+        <node concept="3clFbS" id="7j9KGYKZMY8" role="2VODD2">
+          <node concept="3SKdUt" id="7POJCjfn9ji" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjfn9jj" role="3SKWNk">
+              <property role="3SKdUp" value="Prevents people from changing the name of a constructor" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1hA7zw" id="7j9KGYKZMYn" role="1h_SK8">

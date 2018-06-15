@@ -2241,7 +2241,7 @@
               <node concept="2OqwBi" id="6OyCGyafvz9" role="2Oq$k0">
                 <node concept="117lpO" id="6OyCGyafvmA" role="2Oq$k0" />
                 <node concept="3TrEf2" id="6OyCGyafvOF" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:6OyCGy9cOMP" resolve="clazz" />
+                  <ref role="3Tt5mk" to="wnzg:6OyCGy9cOMP" resolve="class" />
                 </node>
               </node>
               <node concept="2qgKlT" id="6OyCGyafx2h" role="2OqNvi">
@@ -2312,6 +2312,16 @@
               <node concept="3clFbS" id="7mGKYHhBpwF" role="3clFbx">
                 <node concept="3clFbJ" id="7mGKYHhBYjg" role="3cqZAp">
                   <node concept="3clFbS" id="7mGKYHhBYji" role="3clFbx">
+                    <node concept="3SKdUt" id="7POJCjf3uAc" role="3cqZAp">
+                      <node concept="3SKdUq" id="7POJCjf3uAe" role="3SKWNk">
+                        <property role="3SKdUp" value="Special textgen is required for primitive integral types that use bit count and _t," />
+                      </node>
+                    </node>
+                    <node concept="3SKdUt" id="7POJCjf3uQx" role="3cqZAp">
+                      <node concept="3SKdUq" id="7POJCjf3uQz" role="3SKWNk">
+                        <property role="3SKdUp" value="as they textgen incorrectly in C++ as contrasted with mbeddr core." />
+                      </node>
+                    </node>
                     <node concept="lc7rE" id="7mGKYHhC30$" role="3cqZAp">
                       <node concept="l9hG8" id="7mGKYHhC30_" role="lcghm">
                         <node concept="2OqwBi" id="7mGKYHhCByC" role="lb14g">
@@ -2376,6 +2386,16 @@
                   </node>
                   <node concept="9aQIb" id="7mGKYHhC0IP" role="9aQIa">
                     <node concept="3clFbS" id="7mGKYHhC0IQ" role="9aQI4">
+                      <node concept="3SKdUt" id="7POJCjf3vd2" role="3cqZAp">
+                        <node concept="3SKdUq" id="7POJCjf3vd4" role="3SKWNk">
+                          <property role="3SKdUp" value="This is the case where it's not already a literal in the braces but it is something we can" />
+                        </node>
+                      </node>
+                      <node concept="3SKdUt" id="7POJCjf3vEU" role="3cqZAp">
+                        <node concept="3SKdUq" id="7POJCjf3vEW" role="3SKWNk">
+                          <property role="3SKdUp" value="evaluate and convert to one." />
+                        </node>
+                      </node>
                       <node concept="lc7rE" id="7mGKYHhBNJD" role="3cqZAp">
                         <node concept="l9hG8" id="7mGKYHhBNMZ" role="lcghm">
                           <node concept="2OqwBi" id="7mGKYHhCCWn" role="lb14g">
@@ -2446,6 +2466,11 @@
               </node>
               <node concept="9aQIb" id="7mGKYHhB$KY" role="9aQIa">
                 <node concept="3clFbS" id="7mGKYHhB$KZ" role="9aQI4">
+                  <node concept="3SKdUt" id="7POJCjf3w0Y" role="3cqZAp">
+                    <node concept="3SKdUq" id="7POJCjf3w10" role="3SKWNk">
+                      <property role="3SKdUp" value="We can't evaluate it, just put it in as-is." />
+                    </node>
+                  </node>
                   <node concept="lc7rE" id="7mGKYHhBAkW" role="3cqZAp">
                     <node concept="l9hG8" id="7mGKYHhBAlk" role="lcghm">
                       <node concept="2OqwBi" id="7mGKYHhBDc5" role="lb14g">
@@ -2470,7 +2495,7 @@
         <node concept="3clFbH" id="7mGKYHhCfNo" role="3cqZAp" />
         <node concept="3SKdUt" id="7mGKYHhCgW0" role="3cqZAp">
           <node concept="3SKdUq" id="7mGKYHhCgW2" role="3SKWNk">
-            <property role="3SKdUp" value="No else on ifInstanceOf..." />
+            <property role="3SKdUp" value="No else on ifInstanceOf...would be nice *cough* MPS DEVS *cough*" />
           </node>
         </node>
         <node concept="3clFbJ" id="7mGKYHhCbzj" role="3cqZAp">
