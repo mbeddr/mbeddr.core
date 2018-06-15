@@ -3025,7 +3025,7 @@
   </node>
   <node concept="24kQdi" id="29cSqvcoIY4">
     <property role="3GE5qa" value="type" />
-    <ref role="1XX52x" to="wnzg:29cSqvcoIWH" resolve="NullPointerType" />
+    <ref role="1XX52x" to="wnzg:29cSqvcoIWH" resolve="Nullptr_tType" />
     <node concept="PMmxH" id="29cSqvdRCTs" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
@@ -3033,7 +3033,7 @@
   </node>
   <node concept="24kQdi" id="29cSqvcoIYs">
     <property role="3GE5qa" value="type" />
-    <ref role="1XX52x" to="wnzg:29cSqvcoIWG" resolve="NullPointerLiteral" />
+    <ref role="1XX52x" to="wnzg:29cSqvcoIWG" resolve="NullptrLiteral" />
     <node concept="PMmxH" id="29cSqvdRCT$" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />

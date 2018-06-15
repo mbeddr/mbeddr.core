@@ -1530,7 +1530,7 @@
   </node>
   <node concept="WtQ9Q" id="29cSqvdUjKq">
     <property role="3GE5qa" value="type" />
-    <ref role="WuzLi" to="wnzg:29cSqvcoIWG" resolve="NullPointerLiteral" />
+    <ref role="WuzLi" to="wnzg:29cSqvcoIWG" resolve="NullptrLiteral" />
     <node concept="11bSqf" id="29cSqvdUjKr" role="11c4hB">
       <node concept="3clFbS" id="29cSqvdUjKs" role="2VODD2">
         <node concept="lc7rE" id="29cSqvdUjKJ" role="3cqZAp">
@@ -1543,7 +1543,7 @@
   </node>
   <node concept="WtQ9Q" id="29cSqvdUjFp">
     <property role="3GE5qa" value="type" />
-    <ref role="WuzLi" to="wnzg:29cSqvcoIWH" resolve="NullPointerType" />
+    <ref role="WuzLi" to="wnzg:29cSqvcoIWH" resolve="Nullptr_tType" />
     <node concept="11bSqf" id="29cSqvdUjFq" role="11c4hB">
       <node concept="3clFbS" id="29cSqvdUjFr" role="2VODD2">
         <node concept="lc7rE" id="29cSqvdUjFI" role="3cqZAp">

@@ -670,7 +670,7 @@
   </node>
   <node concept="1TIwiD" id="29cSqvcoIWH">
     <property role="EcuMT" value="2471598406324383533" />
-    <property role="TrG5h" value="NullPointerType" />
+    <property role="TrG5h" value="Nullptr_tType" />
     <property role="34LRSv" value="std::nullptr_t" />
     <property role="R4oN_" value="Null pointer type" />
     <property role="3GE5qa" value="type" />
@@ -684,7 +684,7 @@
   </node>
   <node concept="1TIwiD" id="29cSqvcoIWG">
     <property role="EcuMT" value="2471598406324383532" />
-    <property role="TrG5h" value="NullPointerLiteral" />
+    <property role="TrG5h" value="NullptrLiteral" />
     <property role="34LRSv" value="nullptr" />
     <property role="R4oN_" value="Null pointer literal" />
     <property role="3GE5qa" value="type" />

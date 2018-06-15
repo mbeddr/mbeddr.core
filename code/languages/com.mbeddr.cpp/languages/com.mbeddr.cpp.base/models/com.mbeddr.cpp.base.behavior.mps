@@ -12852,7 +12852,7 @@
   </node>
   <node concept="13h7C7" id="7POJCje79P4">
     <property role="3GE5qa" value="type" />
-    <ref role="13h7C2" to="wnzg:29cSqvcoIWH" resolve="NullPointerType" />
+    <ref role="13h7C2" to="wnzg:29cSqvcoIWH" resolve="Nullptr_tType" />
     <node concept="13hLZK" id="7POJCje79P5" role="13h7CW">
       <node concept="3clFbS" id="7POJCje79P6" role="2VODD2" />
     </node>
