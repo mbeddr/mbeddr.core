@@ -2,16 +2,16 @@
 <model ref="r:4090021e-0c8f-4cca-ab3f-590afb43a745(com.mbeddr.cpp.base.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="fe9d76d7-5809-45c9-ae28-a40915b4d6ff" name="jetbrains.mps.lang.checkedName" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="-1" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
-    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="fe9d76d7-5809-45c9-ae28-a40915b4d6ff" name="jetbrains.mps.lang.checkedName" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -464,13 +464,6 @@
     </node>
     <node concept="13i0hz" id="6hUtorE1Q2G" role="13h7CS">
       <property role="TrG5h" value="getPublicClassTypeConstructors" />
-      <node concept="P$JXv" id="c7Kd0d3a3E" role="lGtFl">
-        <node concept="TZ5HA" id="c7Kd0d3a3F" role="TZ5H$">
-          <node concept="1dT_AC" id="c7Kd0d3a3G" role="1dT_Ay">
-            <property role="1dT_AB" value="Retrieves a list of all public constructor's in the class of the class of this ClassType" />
-          </node>
-        </node>
-      </node>
       <node concept="3Tm1VV" id="6hUtorE1Q2H" role="1B3o_S" />
       <node concept="3clFbS" id="6hUtorE1Q2J" role="3clF47">
         <node concept="3cpWs6" id="6hUtorE26d7" role="3cqZAp">
@@ -526,6 +519,13 @@
       <node concept="A3Dl8" id="6hUtorE25xh" role="3clF45">
         <node concept="3Tqbb2" id="6hUtorE25NI" role="A3Ik2">
           <ref role="ehGHo" to="wnzg:6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="c7Kd0d3a3E" role="lGtFl">
+        <node concept="TZ5HA" id="c7Kd0d3a3F" role="TZ5H$">
+          <node concept="1dT_AC" id="c7Kd0d3a3G" role="1dT_Ay">
+            <property role="1dT_AB" value="Retrieves a list of all public constructor's in the class of the class of this ClassType" />
+          </node>
         </node>
       </node>
     </node>
@@ -796,13 +796,6 @@
     </node>
     <node concept="13i0hz" id="7WruJM_aurq" role="13h7CS">
       <property role="TrG5h" value="allInternallyAccessibleFields" />
-      <node concept="P$JXv" id="c7Kd0dxf5v" role="lGtFl">
-        <node concept="TZ5HA" id="c7Kd0dxf5w" role="TZ5H$">
-          <node concept="1dT_AC" id="c7Kd0dxf5x" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns all of the fields that are visible inside of this class" />
-          </node>
-        </node>
-      </node>
       <node concept="3Tm1VV" id="7WruJM_aurr" role="1B3o_S" />
       <node concept="A3Dl8" id="7WruJM_aurs" role="3clF45">
         <node concept="3Tqbb2" id="7WruJM_aurt" role="A3Ik2">
@@ -879,6 +872,13 @@
         <node concept="3cpWs6" id="7WruJM_aurV" role="3cqZAp">
           <node concept="37vLTw" id="7WruJM_aurW" role="3cqZAk">
             <ref role="3cqZAo" node="7WruJM_aurw" resolve="res" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="c7Kd0dxf5v" role="lGtFl">
+        <node concept="TZ5HA" id="c7Kd0dxf5w" role="TZ5H$">
+          <node concept="1dT_AC" id="c7Kd0dxf5x" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns all of the fields that are visible inside of this class" />
           </node>
         </node>
       </node>
@@ -1099,13 +1099,6 @@
     </node>
     <node concept="13i0hz" id="6oRbCP690yv" role="13h7CS">
       <property role="TrG5h" value="allHeritableDataMembers" />
-      <node concept="P$JXv" id="c7Kd0dx7fZ" role="lGtFl">
-        <node concept="TZ5HA" id="c7Kd0dx7g0" role="TZ5H$">
-          <node concept="1dT_AC" id="c7Kd0dx7g1" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns a list of the data members that can be inherited from this class" />
-          </node>
-        </node>
-      </node>
       <node concept="3Tm1VV" id="6oRbCP690yw" role="1B3o_S" />
       <node concept="A3Dl8" id="6oRbCP691SI" role="3clF45">
         <node concept="3Tqbb2" id="6oRbCP691SX" role="A3Ik2">
@@ -1239,6 +1232,13 @@
         <node concept="3cpWs6" id="5uvgyTl3MgF" role="3cqZAp">
           <node concept="37vLTw" id="5uvgyTl3MC9" role="3cqZAk">
             <ref role="3cqZAo" node="5uvgyTl3$Lz" resolve="heritableAttributes" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="c7Kd0dx7fZ" role="lGtFl">
+        <node concept="TZ5HA" id="c7Kd0dx7g0" role="TZ5H$">
+          <node concept="1dT_AC" id="c7Kd0dx7g1" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a list of the data members that can be inherited from this class" />
           </node>
         </node>
       </node>
@@ -2162,13 +2162,6 @@
     <node concept="13i0hz" id="2yiFVcKzYCg" role="13h7CS">
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getType" />
-      <node concept="P$JXv" id="c7Kd0dwbXr" role="lGtFl">
-        <node concept="TZ5HA" id="c7Kd0dwk6z" role="TZ5H$">
-          <node concept="1dT_AC" id="c7Kd0dwk6$" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns a newly created instance of this class's type." />
-          </node>
-        </node>
-      </node>
       <node concept="3Tm1VV" id="2yiFVcKzYCh" role="1B3o_S" />
       <node concept="3Tqbb2" id="2yiFVcK$63D" role="3clF45">
         <ref role="ehGHo" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
@@ -2205,6 +2198,13 @@
         <node concept="3cpWs6" id="2yiFVcK$dw_" role="3cqZAp">
           <node concept="37vLTw" id="2yiFVcK$d$$" role="3cqZAk">
             <ref role="3cqZAo" node="2yiFVcK$7Pv" resolve="classTypeNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="c7Kd0dwbXr" role="lGtFl">
+        <node concept="TZ5HA" id="c7Kd0dwk6z" role="TZ5H$">
+          <node concept="1dT_AC" id="c7Kd0dwk6$" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a newly created instance of this class's type." />
           </node>
         </node>
       </node>
@@ -3566,13 +3566,6 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="getClassType" />
-      <node concept="P$JXv" id="c7Kd0eKQDw" role="lGtFl">
-        <node concept="TZ5HA" id="c7Kd0eKQDx" role="TZ5H$">
-          <node concept="1dT_AC" id="c7Kd0eKQDy" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the base class type of this object, even if it is behind many pointers." />
-          </node>
-        </node>
-      </node>
       <node concept="3Tm1VV" id="6hUtorEt37E" role="1B3o_S" />
       <node concept="3Tqbb2" id="6hUtorEt38h" role="3clF45">
         <ref role="ehGHo" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
@@ -3606,23 +3599,18 @@
           </node>
         </node>
       </node>
+      <node concept="P$JXv" id="c7Kd0eKQDw" role="lGtFl">
+        <node concept="TZ5HA" id="c7Kd0eKQDx" role="TZ5H$">
+          <node concept="1dT_AC" id="c7Kd0eKQDy" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the base class type of this object, even if it is behind many pointers." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="b637l2bQk$" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="unwrapPointer" />
-      <node concept="P$JXv" id="c7Kd0eKQmI" role="lGtFl">
-        <node concept="TZ5HA" id="c7Kd0eKQmJ" role="TZ5H$">
-          <node concept="1dT_AC" id="c7Kd0eKQmK" role="1dT_Ay">
-            <property role="1dT_AB" value="Recursively finds the base type of a pointer. Example:" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="c7Kd0eKQww" role="TZ5H$">
-          <node concept="1dT_AC" id="c7Kd0eKQwx" role="1dT_Ay">
-            <property role="1dT_AB" value="If you have a heavily nested pointer int*****, this returns int." />
-          </node>
-        </node>
-      </node>
       <node concept="3Tm6S6" id="b637l2bQBx" role="1B3o_S" />
       <node concept="3Tqbb2" id="b637l2bQHH" role="3clF45">
         <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
@@ -3663,6 +3651,18 @@
         <property role="TrG5h" value="toUnwrap" />
         <node concept="3Tqbb2" id="b637l2bQOx" role="1tU5fm">
           <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="c7Kd0eKQmI" role="lGtFl">
+        <node concept="TZ5HA" id="c7Kd0eKQmJ" role="TZ5H$">
+          <node concept="1dT_AC" id="c7Kd0eKQmK" role="1dT_Ay">
+            <property role="1dT_AB" value="Recursively finds the base type of a pointer. Example:" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="c7Kd0eKQww" role="TZ5H$">
+          <node concept="1dT_AC" id="c7Kd0eKQwx" role="1dT_Ay">
+            <property role="1dT_AB" value="If you have a heavily nested pointer int*****, this returns int." />
+          </node>
         </node>
       </node>
     </node>
@@ -9573,13 +9573,6 @@
     <node concept="13i0hz" id="2QDt3lz1dfq" role="13h7CS">
       <property role="TrG5h" value="getType" />
       <property role="13i0it" value="true" />
-      <node concept="P$JXv" id="c7Kd0eKT6p" role="lGtFl">
-        <node concept="TZ5HA" id="c7Kd0eKT6q" role="TZ5H$">
-          <node concept="1dT_AC" id="c7Kd0eKT6r" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the type of the parent class" />
-          </node>
-        </node>
-      </node>
       <node concept="3Tm1VV" id="2QDt3lz1dfr" role="1B3o_S" />
       <node concept="3Tqbb2" id="2QDt3lz1dfI" role="3clF45">
         <ref role="ehGHo" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
@@ -9621,6 +9614,13 @@
         <node concept="3cpWs6" id="2QDt3lz1hRf" role="3cqZAp">
           <node concept="37vLTw" id="2QDt3lz1hWA" role="3cqZAk">
             <ref role="3cqZAo" node="2QDt3lz1dgu" resolve="res" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="c7Kd0eKT6p" role="lGtFl">
+        <node concept="TZ5HA" id="c7Kd0eKT6q" role="TZ5H$">
+          <node concept="1dT_AC" id="c7Kd0eKT6r" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the type of the parent class" />
           </node>
         </node>
       </node>
@@ -9853,12 +9853,6 @@
     </node>
     <node concept="13hLZK" id="7fNEwqBx$7d" role="13h7CW">
       <node concept="3clFbS" id="7fNEwqBx$7e" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="6FZQsHtgKqK">
-    <ref role="13h7C2" to="wnzg:6FZQsHt7RdA" resolve="AutoType" />
-    <node concept="13hLZK" id="6FZQsHtgKqL" role="13h7CW">
-      <node concept="3clFbS" id="6FZQsHtgKqM" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="6OyCGy3I43h">
@@ -12797,6 +12791,94 @@
       </node>
       <node concept="2I9FWS" id="7mGKYHhDf9f" role="3clF45">
         <ref role="2I9WkF" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7POJCje79P4">
+    <property role="3GE5qa" value="type" />
+    <ref role="13h7C2" to="wnzg:29cSqvcoIWH" resolve="Nullptr_tType" />
+    <node concept="13hLZK" id="7POJCje79P5" role="13h7CW">
+      <node concept="3clFbS" id="7POJCje79P6" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7POJCje79Pf" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getRequiredImports" />
+      <ref role="13i0hy" node="7mGKYHhDe0H" resolve="getRequiredImports" />
+      <node concept="3Tm1VV" id="7POJCje79Pg" role="1B3o_S" />
+      <node concept="3clFbS" id="7POJCje79Pj" role="3clF47">
+        <node concept="3cpWs8" id="7POJCje79V_" role="3cqZAp">
+          <node concept="3cpWsn" id="7POJCje79VC" role="3cpWs9">
+            <property role="TrG5h" value="cstddefImport" />
+            <node concept="3Tqbb2" id="7POJCje79V$" role="1tU5fm">
+              <ref role="ehGHo" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+            </node>
+            <node concept="2ShNRf" id="7POJCje79WN" role="33vP2m">
+              <node concept="3zrR0B" id="7POJCje79WL" role="2ShVmc">
+                <node concept="3Tqbb2" id="7POJCje79WM" role="3zrR0E">
+                  <ref role="ehGHo" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7POJCje7a3k" role="3cqZAp">
+          <node concept="37vLTI" id="7POJCje7bco" role="3clFbG">
+            <node concept="Xl_RD" id="7POJCje7bji" role="37vLTx">
+              <property role="Xl_RC" value="&lt;cstddef&gt;" />
+            </node>
+            <node concept="2OqwBi" id="7POJCje7adX" role="37vLTJ">
+              <node concept="37vLTw" id="7POJCje7a3i" role="2Oq$k0">
+                <ref role="3cqZAo" node="7POJCje79VC" resolve="cstddefImport" />
+              </node>
+              <node concept="3TrcHB" id="7POJCje7au0" role="2OqNvi">
+                <ref role="3TsBF5" to="x27k:3kEjc_WIKGg" resolve="headerFileName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7POJCje7_T2" role="3cqZAp">
+          <node concept="3cpWsn" id="7POJCje7_T5" role="3cpWs9">
+            <property role="TrG5h" value="returnable" />
+            <node concept="2I9FWS" id="7POJCje7_T0" role="1tU5fm">
+              <ref role="2I9WkF" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+            </node>
+            <node concept="2ShNRf" id="7POJCje7Ce7" role="33vP2m">
+              <node concept="2T8Vx0" id="7POJCje7Ce5" role="2ShVmc">
+                <node concept="2I9FWS" id="7POJCje7Ce6" role="2T96Bj">
+                  <ref role="2I9WkF" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7POJCje7Dg4" role="3cqZAp">
+          <node concept="2OqwBi" id="7POJCje7Fws" role="3clFbG">
+            <node concept="37vLTw" id="7POJCje7Dg2" role="2Oq$k0">
+              <ref role="3cqZAo" node="7POJCje7_T5" resolve="returnable" />
+            </node>
+            <node concept="TSZUe" id="7POJCje7Lcd" role="2OqNvi">
+              <node concept="37vLTw" id="7POJCje7LP5" role="25WWJ7">
+                <ref role="3cqZAo" node="7POJCje79VC" resolve="cstddefImport" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7POJCje7bPo" role="3cqZAp">
+          <node concept="37vLTw" id="7POJCje7Mz3" role="3cqZAk">
+            <ref role="3cqZAo" node="7POJCje7_T5" resolve="returnable" />
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="7POJCje79Pk" role="3clF45">
+        <ref role="2I9WkF" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
+      </node>
+      <node concept="P$JXv" id="7POJCje7NtD" role="lGtFl">
+        <node concept="TZ5HA" id="7POJCje7NtE" role="TZ5H$">
+          <node concept="1dT_AC" id="7POJCje7NtF" role="1dT_Ay">
+            <property role="1dT_AB" value="cstddef is required for the use of std::nullptr_t. This ensures it textgens to the file." />
+          </node>
+        </node>
       </node>
     </node>
   </node>

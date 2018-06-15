@@ -2275,6 +2275,11 @@
   <node concept="18kY7G" id="5eDFAXBGiPA">
     <property role="TrG5h" value="check_AttributeDeclaration" />
     <node concept="3clFbS" id="5eDFAXBGiPB" role="18ibNy">
+      <node concept="3SKdUt" id="7POJCje70Ih" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCje70Ij" role="3SKWNk">
+          <property role="3SKdUp" value="constexpr + inline" />
+        </node>
+      </node>
       <node concept="3clFbJ" id="5eDFAXBRSsG" role="3cqZAp">
         <node concept="3clFbS" id="5eDFAXBRSsI" role="3clFbx">
           <node concept="a7r0C" id="5eDFAXBRVB6" role="3cqZAp">
@@ -2306,6 +2311,11 @@
         </node>
       </node>
       <node concept="3clFbH" id="15T8UHynqKC" role="3cqZAp" />
+      <node concept="3SKdUt" id="7POJCje70NN" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCje70NP" role="3SKWNk">
+          <property role="3SKdUp" value="constexpr/const without initializer" />
+        </node>
+      </node>
       <node concept="3clFbJ" id="15T8UHynuYg" role="3cqZAp">
         <node concept="3clFbS" id="15T8UHynuYi" role="3clFbx">
           <node concept="2MkqsV" id="15T8UHynAms" role="3cqZAp">
@@ -2483,6 +2493,7 @@
   </node>
   <node concept="1YbPZF" id="6FZQsHtqxSJ">
     <property role="TrG5h" value="typeof_AutoType" />
+    <property role="3GE5qa" value="type" />
     <node concept="3clFbS" id="6FZQsHtqxSK" role="18ibNy">
       <node concept="3cpWs8" id="6FZQsHtSGUj" role="3cqZAp">
         <node concept="3cpWsn" id="6FZQsHtSGUm" role="3cpWs9">
@@ -2500,6 +2511,17 @@
           <node concept="3clFbT" id="8CgsWn8S0f" role="33vP2m">
             <property role="3clFbU" value="false" />
           </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="7POJCje793G" role="3cqZAp" />
+      <node concept="3SKdUt" id="7POJCje79k4" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCje79k6" role="3SKWNk">
+          <property role="3SKdUp" value="Just check the type of the parent concept and grab the relevant init expression" />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7POJCje79Gx" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCje79Gz" role="3SKWNk">
+          <property role="3SKdUp" value="TODO: Clean this up if possible. The first two cases are exactly the same except for the concept name." />
         </node>
       </node>
       <node concept="Jncv_" id="6FZQsHtSH47" role="3cqZAp">
@@ -2664,8 +2686,14 @@
           <node concept="2jxLKc" id="6FZQsHtSSMB" role="1tU5fm" />
         </node>
       </node>
+      <node concept="3clFbH" id="7POJCje73fv" role="3cqZAp" />
       <node concept="3clFbJ" id="8CgsWn8Uaq" role="3cqZAp">
         <node concept="3clFbS" id="8CgsWn8Uas" role="3clFbx">
+          <node concept="3SKdUt" id="7POJCje78MC" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCje78ME" role="3SKWNk">
+              <property role="3SKdUp" value="Show a descriptive error if the parent is not allowed (there is also a constraint for this)" />
+            </node>
+          </node>
           <node concept="2MkqsV" id="8CgsWn8WpR" role="3cqZAp">
             <node concept="Xl_RD" id="8CgsWn8WpS" role="2MkJ7o">
               <property role="Xl_RC" value="Auto type can only be used in a variable declaration" />
@@ -2688,6 +2716,11 @@
             </node>
           </node>
           <node concept="3clFbS" id="8CgsWn8Uj3" role="3eOfB_">
+            <node concept="3SKdUt" id="7POJCje793r" role="3cqZAp">
+              <node concept="3SKdUq" id="7POJCje793t" role="3SKWNk">
+                <property role="3SKdUp" value="Also error if they dont assign anything." />
+              </node>
+            </node>
             <node concept="2MkqsV" id="6FZQsHtT3uB" role="3cqZAp">
               <node concept="Xl_RD" id="6FZQsHtT3uT" role="2MkJ7o">
                 <property role="Xl_RC" value="Variable declaration with auto type must have initializer." />
@@ -5026,6 +5059,11 @@
   <node concept="1YbPZF" id="8CgsWnasIl">
     <property role="TrG5h" value="typeof_AttributeDeclaration" />
     <node concept="3clFbS" id="8CgsWnasIm" role="18ibNy">
+      <node concept="3SKdUt" id="7POJCje708L" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCje708N" role="3SKWNk">
+          <property role="3SKdUp" value="Wait for the right side of the assignment to be resolvable and set type accordingly" />
+        </node>
+      </node>
       <node concept="nvevp" id="8CgsWncaeP" role="3cqZAp">
         <node concept="3clFbS" id="8CgsWncaeR" role="nvhr_">
           <node concept="3clFbJ" id="8CgsWnbnxV" role="3cqZAp">

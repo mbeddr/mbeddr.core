@@ -682,6 +682,11 @@
             <property role="3SKdUp" value="Arrays are a special case as they come from core and don't generate correctly." />
           </node>
         </node>
+        <node concept="3SKdUt" id="7POJCje71Ts" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCje71Tu" role="3SKWNk">
+            <property role="3SKdUp" value="This also happens in other cases." />
+          </node>
+        </node>
         <node concept="3clFbJ" id="3p40HKh_bYz" role="3cqZAp">
           <node concept="3clFbS" id="3p40HKh_bY_" role="3clFbx">
             <node concept="lc7rE" id="3p40HKh_f01" role="3cqZAp">
@@ -1524,7 +1529,8 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="29cSqvdUjKq">
-    <ref role="WuzLi" to="wnzg:29cSqvcoIWG" resolve="NullPointerLiteral" />
+    <property role="3GE5qa" value="type" />
+    <ref role="WuzLi" to="wnzg:29cSqvcoIWG" resolve="NullptrLiteral" />
     <node concept="11bSqf" id="29cSqvdUjKr" role="11c4hB">
       <node concept="3clFbS" id="29cSqvdUjKs" role="2VODD2">
         <node concept="lc7rE" id="29cSqvdUjKJ" role="3cqZAp">
@@ -1536,7 +1542,8 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="29cSqvdUjFp">
-    <ref role="WuzLi" to="wnzg:29cSqvcoIWH" resolve="NullPointerType" />
+    <property role="3GE5qa" value="type" />
+    <ref role="WuzLi" to="wnzg:29cSqvcoIWH" resolve="Nullptr_tType" />
     <node concept="11bSqf" id="29cSqvdUjFq" role="11c4hB">
       <node concept="3clFbS" id="29cSqvdUjFr" role="2VODD2">
         <node concept="lc7rE" id="29cSqvdUjFI" role="3cqZAp">
@@ -2576,6 +2583,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="hYHfWq_jIc">
+    <property role="3GE5qa" value="type" />
     <ref role="WuzLi" to="wnzg:hYHfWq_jIb" resolve="Char16_tType" />
     <node concept="11bSqf" id="hYHfWq_jId" role="11c4hB">
       <node concept="3clFbS" id="hYHfWq_jIe" role="2VODD2">
@@ -2588,6 +2596,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="hYHfWqSH0q">
+    <property role="3GE5qa" value="type" />
     <ref role="WuzLi" to="wnzg:hYHfWqSH0p" resolve="Char32_tType" />
     <node concept="11bSqf" id="hYHfWqSH0r" role="11c4hB">
       <node concept="3clFbS" id="hYHfWqSH0s" role="2VODD2">
@@ -2600,6 +2609,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="hYHfWqSH2q">
+    <property role="3GE5qa" value="type" />
     <ref role="WuzLi" to="wnzg:hYHfWqSH2p" resolve="WChar_tType" />
     <node concept="11bSqf" id="hYHfWqSH2r" role="11c4hB">
       <node concept="3clFbS" id="hYHfWqSH2s" role="2VODD2">

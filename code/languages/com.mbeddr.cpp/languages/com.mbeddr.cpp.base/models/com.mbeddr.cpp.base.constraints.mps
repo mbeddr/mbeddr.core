@@ -1346,9 +1346,15 @@
     </node>
   </node>
   <node concept="1M2fIO" id="6FZQsHt$aAc">
+    <property role="3GE5qa" value="type" />
     <ref role="1M2myG" to="wnzg:6FZQsHt7RdA" resolve="AutoType" />
     <node concept="9S07l" id="6FZQsHt$aAd" role="9Vyp8">
       <node concept="3clFbS" id="6FZQsHt$aAe" role="2VODD2">
+        <node concept="3SKdUt" id="7POJCje72K$" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCje72KA" role="3SKWNk">
+            <property role="3SKdUp" value="Auto is only supported in declarations in this implementation" />
+          </node>
+        </node>
         <node concept="3clFbF" id="6FZQsHt$aHz" role="3cqZAp">
           <node concept="22lmx$" id="6FZQsHt$isI" role="3clFbG">
             <node concept="2OqwBi" id="6FZQsHt$j7d" role="3uHU7w">

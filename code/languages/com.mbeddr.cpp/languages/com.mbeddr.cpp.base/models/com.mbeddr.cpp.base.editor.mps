@@ -1682,7 +1682,7 @@
   <node concept="PKFIW" id="5eDFAXBCpeS">
     <property role="3GE5qa" value="flag" />
     <property role="TrG5h" value="VolatileFlag" />
-    <ref role="1XX52x" to="wnzg:5eDFAXBCper" resolve="IVolatileFlagsh" />
+    <ref role="1XX52x" to="wnzg:5eDFAXBCper" resolve="IVolatileFlag" />
     <node concept="1kHk_G" id="5eDFAXBCpeU" role="2wV5jI">
       <property role="ZjSer" value="volatile" />
       <ref role="1NtTu8" to="wnzg:5eDFAXBCpes" resolve="isVolatile" />
@@ -3024,14 +3024,16 @@
     </node>
   </node>
   <node concept="24kQdi" id="29cSqvcoIY4">
-    <ref role="1XX52x" to="wnzg:29cSqvcoIWH" resolve="NullPointerType" />
+    <property role="3GE5qa" value="type" />
+    <ref role="1XX52x" to="wnzg:29cSqvcoIWH" resolve="Nullptr_tType" />
     <node concept="PMmxH" id="29cSqvdRCTs" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
     </node>
   </node>
   <node concept="24kQdi" id="29cSqvcoIYs">
-    <ref role="1XX52x" to="wnzg:29cSqvcoIWG" resolve="NullPointerLiteral" />
+    <property role="3GE5qa" value="type" />
+    <ref role="1XX52x" to="wnzg:29cSqvcoIWG" resolve="NullptrLiteral" />
     <node concept="PMmxH" id="29cSqvdRCT$" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
