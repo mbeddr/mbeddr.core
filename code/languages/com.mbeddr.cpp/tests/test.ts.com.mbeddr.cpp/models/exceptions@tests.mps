@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:754f2fac-9183-4396-8917-e296a320a8ed(test.ts.com.mbeddr.cpp.try_catch@tests)">
+<model ref="r:754f2fac-9183-4396-8917-e296a320a8ed(test.ts.com.mbeddr.cpp.exceptions@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
