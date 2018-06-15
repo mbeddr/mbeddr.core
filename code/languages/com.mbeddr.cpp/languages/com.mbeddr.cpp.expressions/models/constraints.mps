@@ -221,6 +221,11 @@
             </node>
           </node>
           <node concept="3clFbH" id="4Mb2ywH99Se" role="3cqZAp" />
+          <node concept="3SKdUt" id="7POJCjgR6pA" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjgR6pC" role="3SKWNk">
+              <property role="3SKdUp" value="Unwrap the first layer of the pointer if applicable" />
+            </node>
+          </node>
           <node concept="Jncv_" id="7j9KGYM_xHO" role="3cqZAp">
             <ref role="JncvD" to="yq40:fwMInzpHoK" resolve="PointerType" />
             <node concept="37vLTw" id="7j9KGYM_xYN" role="JncvB">
@@ -249,6 +254,11 @@
             </node>
           </node>
           <node concept="3clFbH" id="4Mb2ywH8EYa" role="3cqZAp" />
+          <node concept="3SKdUt" id="7POJCjgR5nd" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjgR5nf" role="3SKWNk">
+              <property role="3SKdUp" value="Get the scope depending on if we are in a class or not" />
+            </node>
+          </node>
           <node concept="Jncv_" id="7j9KGYM_$63" role="3cqZAp">
             <ref role="JncvD" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
             <node concept="37vLTw" id="7j9KGYM_$nm" role="JncvB">
@@ -271,7 +281,7 @@
                                 <ref role="1M0zk5" node="7j9KGYM_$69" resolve="ct" />
                               </node>
                               <node concept="3TrEf2" id="4Mb2ywH7X39" role="2OqNvi">
-                                <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                                <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                               </node>
                             </node>
                             <node concept="37vLTw" id="4Mb2ywH7U5n" role="3uHU7B">
@@ -298,7 +308,7 @@
                             <ref role="1M0zk5" node="7j9KGYM_$69" resolve="ct" />
                           </node>
                           <node concept="3TrEf2" id="7j9KGYM_G7L" role="2OqNvi">
-                            <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                            <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                           </node>
                         </node>
                         <node concept="2qgKlT" id="7j9KGYM_IgI" role="2OqNvi">
@@ -320,7 +330,7 @@
                               <ref role="1M0zk5" node="7j9KGYM_$69" resolve="ct" />
                             </node>
                             <node concept="3TrEf2" id="7j9KGYM_ILw" role="2OqNvi">
-                              <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                              <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="7j9KGYM_KKm" role="2OqNvi">
@@ -339,6 +349,11 @@
             </node>
           </node>
           <node concept="3clFbH" id="7j9KGYM_Mbg" role="3cqZAp" />
+          <node concept="3SKdUt" id="7POJCjgR60r" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjgR60t" role="3SKWNk">
+              <property role="3SKdUp" value="Dummy return, we should never get here unless the syntax tree is invalid" />
+            </node>
+          </node>
           <node concept="3cpWs6" id="3v5DuFDzsdy" role="3cqZAp">
             <node concept="2ShNRf" id="3v5DuFDzt9m" role="3cqZAk">
               <node concept="1pGfFk" id="3v5DuFDztul" role="2ShVmc">
@@ -381,6 +396,12 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="7POJCjgRhCZ" role="3cqZAp" />
+          <node concept="3SKdUt" id="7POJCjgRitc" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjgRite" role="3SKWNk">
+              <property role="3SKdUp" value="Unwrap the pointer if applicable" />
+            </node>
+          </node>
           <node concept="Jncv_" id="7j9KGYMnEUq" role="3cqZAp">
             <ref role="JncvD" to="yq40:fwMInzpHoK" resolve="PointerType" />
             <node concept="37vLTw" id="7j9KGYMnFhP" role="JncvB">
@@ -409,6 +430,11 @@
             </node>
           </node>
           <node concept="3clFbH" id="7j9KGYMnLi$" role="3cqZAp" />
+          <node concept="3SKdUt" id="7POJCjgRjlx" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjgRjlz" role="3SKWNk">
+              <property role="3SKdUp" value="Get the methods we can access depending on if we are in a class" />
+            </node>
+          </node>
           <node concept="Jncv_" id="7j9KGYMnM1i" role="3cqZAp">
             <ref role="JncvD" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
             <node concept="37vLTw" id="7j9KGYMnMp5" role="JncvB">
@@ -431,7 +457,7 @@
                                 <ref role="1M0zk5" node="7j9KGYMnM1o" resolve="ct" />
                               </node>
                               <node concept="3TrEf2" id="7j9KGYMnW9Z" role="2OqNvi">
-                                <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                                <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                               </node>
                             </node>
                             <node concept="37vLTw" id="7j9KGYMnThO" role="3uHU7B">
@@ -459,7 +485,7 @@
                               <ref role="1M0zk5" node="7j9KGYMnM1o" resolve="ct" />
                             </node>
                             <node concept="3TrEf2" id="7j9KGYMnZ8W" role="2OqNvi">
-                              <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                              <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="7j9KGYMo1E6" role="2OqNvi">
@@ -507,7 +533,7 @@
                                 <ref role="1M0zk5" node="7j9KGYMnM1o" resolve="ct" />
                               </node>
                               <node concept="3TrEf2" id="7j9KGYMob9O" role="2OqNvi">
-                                <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                                <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                               </node>
                             </node>
                             <node concept="2qgKlT" id="7j9KGYModcz" role="2OqNvi">
@@ -551,6 +577,11 @@
             </node>
           </node>
           <node concept="3clFbH" id="1uKPZVPH$j$" role="3cqZAp" />
+          <node concept="3SKdUt" id="7POJCjgRjZb" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjgRjZd" role="3SKWNk">
+              <property role="3SKdUp" value="Dummy return. Execution shouldn't get here unless the syntax tree is invalid." />
+            </node>
+          </node>
           <node concept="3cpWs6" id="7j9KGYMol4G" role="3cqZAp">
             <node concept="2ShNRf" id="7j9KGYMol9N" role="3cqZAk">
               <node concept="1pGfFk" id="7j9KGYMolWA" role="2ShVmc">
@@ -768,6 +799,11 @@
               </node>
             </node>
           </node>
+          <node concept="3SKdUt" id="7POJCjgR8Ig" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjgR8Ii" role="3SKWNk">
+              <property role="3SKdUp" value="Return early if we aren't in a class - this is internal only" />
+            </node>
+          </node>
           <node concept="3clFbJ" id="6oRbCP69Z2u" role="3cqZAp">
             <node concept="3clFbS" id="6oRbCP69Z2w" role="3clFbx">
               <node concept="3cpWs6" id="6oRbCP6a05O" role="3cqZAp">
@@ -797,6 +833,11 @@
                   <ref role="37wK5l" to="o8zo:7ipADkTevLv" resolve="CompositeScope" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7POJCjgR8op" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjgR8or" role="3SKWNk">
+              <property role="3SKdUp" value="Build a scope from all accessible references of the parents" />
             </node>
           </node>
           <node concept="2Gpval" id="6oRbCP6a1yW" role="3cqZAp">
@@ -842,6 +883,11 @@
             </node>
           </node>
           <node concept="3clFbH" id="6oRbCP6a1mN" role="3cqZAp" />
+          <node concept="3SKdUt" id="7POJCjgR98G" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjgR98I" role="3SKWNk">
+              <property role="3SKdUp" value="Add this class's data members too" />
+            </node>
+          </node>
           <node concept="3clFbF" id="6oRbCP6a5V6" role="3cqZAp">
             <node concept="2OqwBi" id="6oRbCP6a6aj" role="3clFbG">
               <node concept="37vLTw" id="6oRbCP6a5V4" role="2Oq$k0">
@@ -943,6 +989,11 @@
     <ref role="1M2myG" to="3d25:3p40HKhBtQG" resolve="ArrayAttributeInitExpression" />
     <node concept="9S07l" id="3p40HKhBuaC" role="9Vyp8">
       <node concept="3clFbS" id="3p40HKhBuaD" role="2VODD2">
+        <node concept="3SKdUt" id="7POJCjgR2XM" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjgR2XO" role="3SKWNk">
+            <property role="3SKdUp" value="Only allow it on attributes of the array type" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="3p40HKh$64e" role="3cqZAp">
           <node concept="3cpWsn" id="3p40HKh$64h" role="3cpWs9">
             <property role="TrG5h" value="attrDec" />

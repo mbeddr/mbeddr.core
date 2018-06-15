@@ -766,6 +766,9 @@
       <node concept="3cM6IN" id="7SgJHc9Iar5" role="lIfQt">
         <ref role="3cM6IK" node="4Mb2ywHWU4q" resolve="poly_external" />
       </node>
+      <node concept="3cM6IN" id="7POJCjgRnQX" role="lIfQt">
+        <ref role="3cM6IK" node="72UYQRWMsqO" resolve="constructorTC1" />
+      </node>
     </node>
     <node concept="2NXPZ9" id="3OWNtRXpWBc" role="N3F5h">
       <property role="TrG5h" value="empty_1526980563744_98" />
@@ -2141,14 +2144,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="1whW_1" id="32KsbhSQHtv">
-    <property role="TrG5h" value="ConstructorA" />
-    <node concept="3mBW2U" id="32KsbhSQJtH" role="N3F5h">
-      <property role="2OOxQR" value="true" />
-      <property role="1wg9_F" value="public" />
-      <property role="TrG5h" value="ClassName" />
     </node>
   </node>
 </model>
