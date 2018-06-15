@@ -1245,10 +1245,7 @@
     <property role="TrG5h" value="ReinterpretCast" />
     <property role="R4oN_" value="reinterpret_cast&lt;PointerA*&gt;(pointerB*)" />
     <property role="34LRSv" value="reinterpret_cast" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="PrWs8" id="4lmr4L5$$S9" role="PzmwI">
-      <ref role="PrY4T" node="4lmr4L5bbIs" resolve="ICPPCast" />
-    </node>
+    <ref role="1TJDcQ" node="3e4PW874nO8" resolve="ICPPCast" />
   </node>
   <node concept="1TIwiD" id="4lmr4L5K5F7">
     <property role="EcuMT" value="4996299911457692359" />
@@ -1256,38 +1253,7 @@
     <property role="TrG5h" value="ConstCast" />
     <property role="34LRSv" value="const_cast" />
     <property role="R4oN_" value="const_cast&lt;type&gt;(value)" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="PrWs8" id="4lmr4L5K5F8" role="PzmwI">
-      <ref role="PrY4T" node="4lmr4L5bbIs" resolve="ICPPCast" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="4lmr4L5bbIs">
-    <property role="EcuMT" value="4996299911448017820" />
-    <property role="3GE5qa" value="cast" />
-    <property role="TrG5h" value="ICPPCast" />
-    <node concept="1TJgyj" id="4lmr4L5bbR1" role="1TKVEi">
-      <property role="IQ2ns" value="4996299911448018369" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
-      <node concept="t5JxF" id="7POJCjfmbSD" role="lGtFl">
-        <property role="t5JxN" value="The type inside of the &lt; and &gt;" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="4lmr4L5bbRB" role="1TKVEi">
-      <property role="IQ2ns" value="4996299911448018407" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-      <node concept="t5JxF" id="7POJCjfmbSG" role="lGtFl">
-        <property role="t5JxN" value="The expression being casted inside ( and )" />
-      </node>
-    </node>
-    <node concept="t5JxF" id="c7Kd0cGmDh" role="lGtFl">
-      <property role="t5JxN" value="Interface that joins all cpp casting types (static, dynamic, const, reinterpret) under a single editor and typecheck" />
-    </node>
+    <ref role="1TJDcQ" node="3e4PW874nO8" resolve="ICPPCast" />
   </node>
   <node concept="1TIwiD" id="4lmr4L5Exud">
     <property role="EcuMT" value="4996299911456233357" />
@@ -1295,10 +1261,7 @@
     <property role="TrG5h" value="DynamicCast" />
     <property role="34LRSv" value="dynamic_cast" />
     <property role="R4oN_" value="dynamic_cast&lt;PointerA*&gt;(pointerB*)" />
-    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="PrWs8" id="4lmr4L5Exue" role="PzmwI">
-      <ref role="PrY4T" node="4lmr4L5bbIs" resolve="ICPPCast" />
-    </node>
+    <ref role="1TJDcQ" node="3e4PW874nO8" resolve="ICPPCast" />
   </node>
   <node concept="1TIwiD" id="4lmr4L5a0Vb">
     <property role="EcuMT" value="4996299911447711435" />
@@ -1306,9 +1269,36 @@
     <property role="3GE5qa" value="cast" />
     <property role="R4oN_" value="static_cast&lt;type&gt;(value)" />
     <property role="34LRSv" value="static_cast" />
+    <ref role="1TJDcQ" node="3e4PW874nO8" resolve="ICPPCast" />
+  </node>
+  <node concept="1TIwiD" id="3e4PW874nO8">
+    <property role="EcuMT" value="3712329221202345224" />
+    <property role="3GE5qa" value="cast" />
+    <property role="TrG5h" value="ICPPCast" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="PrWs8" id="4lmr4L5bbIt" role="PzmwI">
-      <ref role="PrY4T" node="4lmr4L5bbIs" resolve="ICPPCast" />
+    <node concept="1TJgyj" id="3e4PW874nOt" role="1TKVEi">
+      <property role="IQ2ns" value="3712329221202345245" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      <node concept="t5JxF" id="3e4PW874nOu" role="lGtFl">
+        <property role="t5JxN" value="The type inside of the &lt; and &gt;" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="3e4PW874nOc" role="1TKVEi">
+      <property role="IQ2ns" value="3712329221202345228" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="t5JxF" id="3e4PW874nOd" role="lGtFl">
+        <property role="t5JxN" value="The expression being casted inside ( and )" />
+      </node>
+    </node>
+    <node concept="t5JxF" id="3e4PW874nOB" role="lGtFl">
+      <property role="t5JxN" value="Interface that joins all cpp casting types (static, dynamic, const, reinterpret) under a single editor and typecheck" />
     </node>
   </node>
 </model>

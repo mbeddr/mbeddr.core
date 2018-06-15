@@ -80,7 +80,7 @@
       <concept id="4996299911457692359" name="com.mbeddr.cpp.base.structure.ConstCast" flags="ng" index="0_zqb" />
       <concept id="4996299911454674440" name="com.mbeddr.cpp.base.structure.ReinterpretCast" flags="ng" index="0L294" />
       <concept id="4996299911456233357" name="com.mbeddr.cpp.base.structure.DynamicCast" flags="ng" index="0Z7J1" />
-      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlagConcept" flags="ng" index="226hDU">
+      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlag" flags="ng" index="226hDU">
         <property id="2277423264798216735" name="isStatic" index="226hDV" />
       </concept>
       <concept id="7240228573262412204" name="com.mbeddr.cpp.base.structure.LocalClassVariableDeclaration" flags="ng" index="2dywKE" />
@@ -92,7 +92,7 @@
         <property id="2995459757115087788" name="visibility" index="1wg9_F" />
       </concept>
       <concept id="5044697665789405022" name="com.mbeddr.cpp.base.structure.ClassType" flags="ng" index="3mBfEi">
-        <reference id="5044697665789405054" name="clazz" index="3mBfEM" />
+        <reference id="5044697665789405054" name="class" index="3mBfEM" />
       </concept>
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
         <child id="4511589886097466568" name="ancestors" index="Fysvh" />
