@@ -193,6 +193,12 @@
             <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3fwl5YKVpr7" role="3bR37C">
+          <node concept="3bR9La" id="3fwl5YKVpr8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:4FIECQpNI7n" resolve="com.mbeddr.cpp.base" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="398rNT" id="7eF9rfAuuoT" role="1l3spd">
@@ -390,6 +396,18 @@
         </node>
         <node concept="3bR9La" id="4O5goBat6zS" role="3bR37C">
           <ref role="3bR37D" to="al5i:5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
+        </node>
+        <node concept="1SiIV0" id="3fwl5YKVps3" role="3bR37C">
+          <node concept="3bR9La" id="3fwl5YKVps4" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3fwl5YKVps5" role="3bR37C">
+          <node concept="3bR9La" id="3fwl5YKVps6" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:4FIECQpNI7n" resolve="com.mbeddr.cpp.base" />
+          </node>
         </node>
       </node>
     </node>
