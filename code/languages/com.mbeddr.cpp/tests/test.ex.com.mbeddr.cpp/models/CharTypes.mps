@@ -6,7 +6,6 @@
   </languages>
   <imports>
     <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
-    <import index="tpd8" ref="r:00000000-0000-4000-0000-011c895902b0(jetbrains.mps.lang.typesystem.editor)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -230,99 +229,99 @@
     <node concept="2NXPZ9" id="3VWY4WXtGOk" role="N3F5h">
       <property role="TrG5h" value="empty_1528968458096_1" />
     </node>
-    <node concept="2B_Gvg" id="1tzB3lBrj4G" role="N3F5h">
-      <node concept="OjmMv" id="1tzB3lBrj4I" role="2B_H8o">
-        <node concept="19SGf9" id="1tzB3lBrj4L" role="OjmMu">
-          <node concept="19SUe$" id="1tzB3lBrj4M" role="19SJt6">
+    <node concept="2B_Gvg" id="1tzB3lBJ0Tn" role="N3F5h">
+      <node concept="OjmMv" id="1tzB3lBJ0Tp" role="2B_H8o">
+        <node concept="19SGf9" id="1tzB3lBJ0Ts" role="OjmMu">
+          <node concept="19SUe$" id="1tzB3lBJ0Tt" role="19SJt6">
             <property role="19SUeA" value="C++ code from clipboard: &#10;int[] intArrayTest = {1, 2};&#10;int[3] intArrayTest2 = {1, 2, 3};&#10;int intArrayTest3 [] = {1};&#10;int intArrayTest4 [2] = {0, 1};" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="3Iz7nb" id="1tzB3lBrj4O" role="N3F5h">
+    <node concept="3Iz7nb" id="1tzB3lBJ0Tv" role="N3F5h">
       <property role="TrG5h" value="intArrayTest" />
-      <node concept="3J0A42" id="1tzB3lBrj4P" role="2C2TGm">
+      <node concept="3J0A42" id="1tzB3lBJ0Tw" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <node concept="3TlMh2" id="1tzB3lBrj4Q" role="2umbIo">
+        <node concept="3TlMh2" id="1tzB3lBJ0Tx" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node concept="3o3WLD" id="1tzB3lBrj4R" role="1cecVj">
-        <node concept="3TlMh9" id="1tzB3lBrj4S" role="3o3WLE">
+      <node concept="3o3WLD" id="1tzB3lBJ0Ty" role="1cecVj">
+        <node concept="3TlMh9" id="1tzB3lBJ0Tz" role="3o3WLE">
           <property role="2hmy$m" value="1" />
         </node>
-        <node concept="3TlMh9" id="1tzB3lBrj4T" role="3o3WLE">
+        <node concept="3TlMh9" id="1tzB3lBJ0T$" role="3o3WLE">
           <property role="2hmy$m" value="2" />
         </node>
       </node>
     </node>
-    <node concept="3Iz7nb" id="1tzB3lBrj4V" role="N3F5h">
+    <node concept="3Iz7nb" id="1tzB3lBJ0TA" role="N3F5h">
       <property role="TrG5h" value="intArrayTest2" />
-      <node concept="3J0A42" id="1tzB3lBrj4W" role="2C2TGm">
+      <node concept="3J0A42" id="1tzB3lBJ0TB" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <node concept="3TlMh2" id="1tzB3lBrj4X" role="2umbIo">
+        <node concept="3TlMh2" id="1tzB3lBJ0TC" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="3TlMh9" id="1tzB3lBrj4Y" role="1YbSNA">
+        <node concept="3TlMh9" id="1tzB3lBJ0TD" role="1YbSNA">
           <property role="2hmy$m" value="3" />
         </node>
       </node>
-      <node concept="3o3WLD" id="1tzB3lBrj4Z" role="1cecVj">
-        <node concept="3TlMh9" id="1tzB3lBrj50" role="3o3WLE">
+      <node concept="3o3WLD" id="1tzB3lBJ0TE" role="1cecVj">
+        <node concept="3TlMh9" id="1tzB3lBJ0TF" role="3o3WLE">
           <property role="2hmy$m" value="1" />
         </node>
-        <node concept="3TlMh9" id="1tzB3lBrj51" role="3o3WLE">
+        <node concept="3TlMh9" id="1tzB3lBJ0TG" role="3o3WLE">
           <property role="2hmy$m" value="2" />
         </node>
-        <node concept="3TlMh9" id="1tzB3lBrj52" role="3o3WLE">
+        <node concept="3TlMh9" id="1tzB3lBJ0TH" role="3o3WLE">
           <property role="2hmy$m" value="3" />
         </node>
       </node>
     </node>
-    <node concept="3Iz7nb" id="1tzB3lBrj54" role="N3F5h">
+    <node concept="3Iz7nb" id="1tzB3lBJ0TJ" role="N3F5h">
       <property role="TrG5h" value="intArrayTest3" />
-      <node concept="3J0A42" id="1tzB3lBrj55" role="2C2TGm">
+      <node concept="3J0A42" id="1tzB3lBJ0TK" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <node concept="3TlMh2" id="1tzB3lBrj56" role="2umbIo">
+        <node concept="3TlMh2" id="1tzB3lBJ0TL" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node concept="3o3WLD" id="1tzB3lBrj57" role="1cecVj">
-        <node concept="3TlMh9" id="1tzB3lBrj58" role="3o3WLE">
+      <node concept="3o3WLD" id="1tzB3lBJ0TM" role="1cecVj">
+        <node concept="3TlMh9" id="1tzB3lBJ0TN" role="3o3WLE">
           <property role="2hmy$m" value="1" />
         </node>
       </node>
     </node>
-    <node concept="3Iz7nb" id="1tzB3lBrj5a" role="N3F5h">
+    <node concept="3Iz7nb" id="1tzB3lBJ0TP" role="N3F5h">
       <property role="TrG5h" value="intArrayTest4" />
-      <node concept="3J0A42" id="1tzB3lBrj5b" role="2C2TGm">
+      <node concept="3J0A42" id="1tzB3lBJ0TQ" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <node concept="3TlMh2" id="1tzB3lBrj5c" role="2umbIo">
+        <node concept="3TlMh2" id="1tzB3lBJ0TR" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="3TlMh9" id="1tzB3lBrj5d" role="1YbSNA">
+        <node concept="3TlMh9" id="1tzB3lBJ0TS" role="1YbSNA">
           <property role="2hmy$m" value="2" />
         </node>
       </node>
-      <node concept="3o3WLD" id="1tzB3lBrj5e" role="1cecVj">
-        <node concept="3TlMh9" id="1tzB3lBrj5f" role="3o3WLE">
+      <node concept="3o3WLD" id="1tzB3lBJ0TT" role="1cecVj">
+        <node concept="3TlMh9" id="1tzB3lBJ0TU" role="3o3WLE">
           <property role="2hmy$m" value="0" />
         </node>
-        <node concept="3TlMh9" id="1tzB3lBrj5g" role="3o3WLE">
+        <node concept="3TlMh9" id="1tzB3lBJ0TV" role="3o3WLE">
           <property role="2hmy$m" value="1" />
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="1tzB3lBrj5h" role="N3F5h">
-      <property role="TrG5h" value="empty_1529058462618_12" />
+    <node concept="2NXPZ9" id="1tzB3lBJ0TW" role="N3F5h">
+      <property role="TrG5h" value="empty_1529058838479_5" />
     </node>
     <node concept="2NXPZ9" id="1tzB3lBcuVk" role="N3F5h">
       <property role="TrG5h" value="empty_1529058229566_3" />

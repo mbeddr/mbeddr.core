@@ -7,7 +7,6 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="u5dg" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.xtext(com.mbeddr.mpsutil.ecore.stubs/)" />
     <import index="gkp7" ref="r:a6defc8b-c4d9-46c9-a221-6d68fa6905e1(com.mbeddr.cpp.base.editor)" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="pmno" ref="r:fb787694-3ba8-4e1e-89dc-c410426eb36e(com.mbeddr.cpp.modules.gen.structure)" implicit="true" />
@@ -180,7 +179,7 @@
               <node concept="2OqwBi" id="5i01kANsRzI" role="3clFbG">
                 <node concept="pncrf" id="5i01kANsR7l" role="2Oq$k0" />
                 <node concept="3TrcHB" id="5i01kANsSvc" role="2OqNvi">
-                  <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="is_destructor" />
+                  <ref role="3TsBF5" to="wnzg:5i01kANicU4" resolve="isDestructor" />
                 </node>
               </node>
             </node>
