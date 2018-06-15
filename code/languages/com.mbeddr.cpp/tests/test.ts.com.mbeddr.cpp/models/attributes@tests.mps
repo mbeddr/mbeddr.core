@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0821b5df-5186-4d32-86be-e735d6efc559(test.ts.com.mbeddr.cpp.attribute@tests)">
+<model ref="r:0821b5df-5186-4d32-86be-e735d6efc559(test.ts.com.mbeddr.cpp.attributes@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />

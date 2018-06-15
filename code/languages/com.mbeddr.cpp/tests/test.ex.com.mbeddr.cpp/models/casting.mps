@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
-    <import index="s390" ref="r:c7950158-6cef-4f64-956c-820859f3e040(test.ex.com.mbeddr.cpp.classes)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -159,7 +158,7 @@
   </registry>
   <node concept="2v9HqL" id="4lmr4L5g4zo">
     <node concept="2eOfOl" id="4lmr4L5g4zp" role="2ePNbc">
-      <property role="TrG5h" value="Casting" />
+      <property role="TrG5h" value="casting" />
       <property role="iO3LB" value="true" />
       <ref role="3oK8_y" node="4lmr4L5g4zy" resolve="portable" />
       <node concept="2v9HqM" id="4lmr4L5g4zt" role="2eOfOg">
