@@ -1040,9 +1040,12 @@
   </node>
   <node concept="1TIwiD" id="6OyCGy3I3ZK">
     <property role="EcuMT" value="7864026881429356528" />
-    <property role="TrG5h" value="StaticVar" />
+    <property role="TrG5h" value="StaticGlobalVarDec" />
     <property role="34LRSv" value="static" />
     <ref role="1TJDcQ" node="6OyCGy3FHs3" resolve="GlobalVarDecCPP" />
+    <node concept="t5JxF" id="7POJCjf3_ms" role="lGtFl">
+      <property role="t5JxN" value="Simply allows you to type &quot;static&quot; as the beginning of a global variable and have it work as expected." />
+    </node>
   </node>
   <node concept="1TIwiD" id="6OyCGy3FHs3">
     <property role="EcuMT" value="7864026881428739843" />
@@ -1105,6 +1108,9 @@
       <property role="IQ2nx" value="8014199547835254784" />
       <property role="TrG5h" value="no_throw" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="7POJCjf3lXh" role="lGtFl">
+        <property role="t5JxN" value="True if there should be a std::nothrow in the declaration" />
+      </node>
     </node>
     <node concept="1TJgyj" id="6WSa0so1IOP" role="1TKVEi">
       <property role="IQ2ns" value="8014199547838786869" />
@@ -1112,6 +1118,9 @@
       <property role="20kJfa" value="typeOrConstructor" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      <node concept="t5JxF" id="7POJCjf3lXe" role="lGtFl">
+        <property role="t5JxN" value="Represents either a normal type or a class type with its constructor (= new ClassType(arg1, arg2))" />
+      </node>
     </node>
     <node concept="PrWs8" id="7mGKYHhDf8Q" role="PzmwI">
       <ref role="PrY4T" node="7mGKYHhDe0x" resolve="IUsageRequiresStdImport" />
@@ -1127,6 +1136,9 @@
       <property role="20kJfa" value="actuals" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="t5JxF" id="7POJCjf3wd4" role="lGtFl">
+        <property role="t5JxN" value="The arguments in the constructor" />
+      </node>
     </node>
     <node concept="1TJgyj" id="7SgJHc8K2Wu" role="1TKVEi">
       <property role="IQ2ns" value="9083970262000480030" />
@@ -1134,6 +1146,9 @@
       <property role="20kJfa" value="classType" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBEtu" resolve="ClassType" />
+      <node concept="t5JxF" id="7POJCjf3wd7" role="lGtFl">
+        <property role="t5JxN" value="The type of the class in the constructor" />
+      </node>
     </node>
     <node concept="PrWs8" id="4KCRVMvtPvK" role="PzmwI">
       <ref role="PrY4T" to="x27k:6WGVxckB05U" resolve="ICallLike" />
@@ -1144,6 +1159,12 @@
       <property role="20kJfa" value="identity" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6NtgknWJ20B" resolve="ClassConstructorDeclaration" />
+      <node concept="t5JxF" id="7POJCjf3wdd" role="lGtFl">
+        <property role="t5JxN" value="The constructor this initializer is calling" />
+      </node>
+    </node>
+    <node concept="t5JxF" id="7POJCjf3wda" role="lGtFl">
+      <property role="t5JxN" value="The new declaration for class objects (= new ClassType(args)) as opposed to normal types (= new ClassType)" />
     </node>
   </node>
   <node concept="1TIwiD" id="1yn8PkxYuRh">
@@ -1165,6 +1186,9 @@
   <node concept="PlHQZ" id="7mGKYHhDe0x">
     <property role="EcuMT" value="8479367613886292001" />
     <property role="TrG5h" value="IUsageRequiresStdImport" />
+    <node concept="t5JxF" id="7POJCjf3jYn" role="lGtFl">
+      <property role="t5JxN" value="Interface that concepts which need imports from the standard library implement. It allows textgen to automatically include them." />
+    </node>
   </node>
   <node concept="1TIwiD" id="3M9Tj7Yz1kE">
     <property role="EcuMT" value="4362269716971787562" />

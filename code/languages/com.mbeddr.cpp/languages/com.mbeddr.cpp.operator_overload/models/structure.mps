@@ -7,9 +7,9 @@
   </languages>
   <imports>
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -260,10 +260,10 @@
     <property role="R4oN_" value="Overload an operator" />
     <ref role="1TJDcQ" node="7bt9OVZfWbd" resolve="OperatorOverloadSignature" />
     <node concept="PrWs8" id="3p40HKhxgfI" role="PzmwI">
-      <ref role="PrY4T" to="wnzg:1Yr26itwsSZ" resolve="IInlineFlagConcept" />
+      <ref role="PrY4T" to="wnzg:1Yr26itwsSZ" resolve="IInlineFlag" />
     </node>
     <node concept="PrWs8" id="1D2kn9asXWh" role="PzmwI">
-      <ref role="PrY4T" to="wnzg:1D2kn9asHi2" resolve="IExplicitFlagConcept" />
+      <ref role="PrY4T" to="wnzg:1D2kn9asHi2" resolve="IExplicitFlag" />
     </node>
     <node concept="1TJgyj" id="7bt9OVZg8N_" role="1TKVEi">
       <property role="IQ2ns" value="8276814910420192485" />

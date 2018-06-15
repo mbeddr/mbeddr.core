@@ -1487,7 +1487,11 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="7SgJHc8Shqg" role="3cqZAp" />
+          <node concept="3SKdUt" id="7POJCjf3wdm" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjf3wdo" role="3SKWNk">
+              <property role="3SKdUp" value="Grabs all available constructors from the relevant class." />
+            </node>
+          </node>
           <node concept="3cpWs6" id="4Mb2ywHX4bg" role="3cqZAp">
             <node concept="2YIFZM" id="7SgJHc7HHel" role="3cqZAk">
               <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
@@ -1541,6 +1545,11 @@
     </node>
     <node concept="9S07l" id="6ODoR9y2Qd1" role="9Vyp8">
       <node concept="3clFbS" id="6ODoR9y2Qd2" role="2VODD2">
+        <node concept="3SKdUt" id="7POJCjf3x_B" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjf3x_D" role="3SKWNk">
+            <property role="3SKdUp" value="Don't allow this outside of a declaration" />
+          </node>
+        </node>
         <node concept="3clFbF" id="6ODoR9y2QkD" role="3cqZAp">
           <node concept="2OqwBi" id="6ODoR9y2Qwn" role="3clFbG">
             <node concept="nLn13" id="6ODoR9y2QkC" role="2Oq$k0" />

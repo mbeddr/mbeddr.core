@@ -234,6 +234,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -3382,6 +3383,11 @@
         </node>
         <node concept="IWg2L" id="7SgJHc7IP$c" role="IWgqQ">
           <node concept="3clFbS" id="7SgJHc7IP$e" role="2VODD2">
+            <node concept="3SKdUt" id="7POJCjf3oJ7" role="3cqZAp">
+              <node concept="3SKdUq" id="7POJCjf3oJ9" role="3SKWNk">
+                <property role="3SKdUp" value="Transform the normal class type or template class type into a constructor version." />
+              </node>
+            </node>
             <node concept="3cpWs8" id="7SgJHc7MXpU" role="3cqZAp">
               <node concept="3cpWsn" id="7SgJHc7MXpX" role="3cpWs9">
                 <property role="TrG5h" value="replacement" />
@@ -3395,6 +3401,12 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="7POJCjf3t3f" role="3cqZAp" />
+            <node concept="3SKdUt" id="7POJCjf3smO" role="3cqZAp">
+              <node concept="3SKdUq" id="7POJCjf3smQ" role="3SKWNk">
+                <property role="3SKdUp" value="This case is safe since we know its classtype already due to the `can execute` block." />
               </node>
             </node>
             <node concept="3clFbF" id="7SgJHc8q8uP" role="3cqZAp">
@@ -3421,6 +3433,12 @@
                     <ref role="3cqZAo" node="7SgJHc7MXpX" resolve="replacement" />
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="7POJCjf3sSx" role="3cqZAp" />
+            <node concept="3SKdUt" id="7POJCjf3sGa" role="3cqZAp">
+              <node concept="3SKdUq" id="7POJCjf3sGc" role="3SKWNk">
+                <property role="3SKdUp" value="Special case for templates" />
               </node>
             </node>
             <node concept="Jncv_" id="6ODoR9yLE4T" role="3cqZAp">

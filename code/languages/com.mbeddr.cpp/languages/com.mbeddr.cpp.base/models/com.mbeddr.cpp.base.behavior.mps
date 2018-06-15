@@ -205,6 +205,9 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
       <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
         <reference id="6832197706140518108" name="param" index="zr_51" />
@@ -9856,7 +9859,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6OyCGy3I43h">
-    <ref role="13h7C2" to="wnzg:6OyCGy3I3ZK" resolve="StaticVar" />
+    <ref role="13h7C2" to="wnzg:6OyCGy3I3ZK" resolve="StaticGlobalVarDec" />
     <node concept="13hLZK" id="6OyCGy3I43i" role="13h7CW">
       <node concept="3clFbS" id="6OyCGy3I43j" role="2VODD2">
         <node concept="3clFbF" id="6OyCGy3I46p" role="3cqZAp">
@@ -9969,6 +9972,11 @@
                   </node>
                   <node concept="1$rogu" id="b637l21mgk" role="2OqNvi" />
                 </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="7POJCjf3ydS" role="3cqZAp">
+              <node concept="3SKdUq" id="7POJCjf3ydU" role="3SKWNk">
+                <property role="3SKdUp" value="In the event a template class is being instantiated, we need to resolve the types first." />
               </node>
             </node>
             <node concept="3clFbF" id="b637l21mgv" role="3cqZAp">
@@ -12699,6 +12707,11 @@
         <ref role="2I9WkF" to="x27k:3kEjc_WIKGf" resolve="StdHeaderImport" />
       </node>
       <node concept="3clFbS" id="7mGKYHhDe0K" role="3clF47" />
+      <node concept="P$JXv" id="7POJCjf3jYq" role="lGtFl">
+        <node concept="x79VA" id="7POJCjf3jYt" role="3nqlJM">
+          <property role="x79VB" value="A list of the imports, with &quot;&quot;/&lt;&gt; that should be imported wherever this concept is used." />
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="7mGKYHhDe0z" role="13h7CW">
       <node concept="3clFbS" id="7mGKYHhDe0$" role="2VODD2" />
@@ -12716,6 +12729,11 @@
       <ref role="13i0hy" node="7mGKYHhDe0H" resolve="getRequiredImports" />
       <node concept="3Tm1VV" id="7mGKYHhDf9b" role="1B3o_S" />
       <node concept="3clFbS" id="7mGKYHhDf9e" role="3clF47">
+        <node concept="3SKdUt" id="7POJCjf3tyv" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjf3tyx" role="3SKWNk">
+            <property role="3SKdUp" value="If nothrow is included we need the &lt;new&gt; header." />
+          </node>
+        </node>
         <node concept="3cpWs8" id="7mGKYHhDgJs" role="3cqZAp">
           <node concept="3cpWsn" id="7mGKYHhDgJv" role="3cpWs9">
             <property role="TrG5h" value="result" />
