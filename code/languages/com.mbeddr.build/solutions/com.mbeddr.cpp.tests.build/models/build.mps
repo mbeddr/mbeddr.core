@@ -389,7 +389,7 @@
             <node concept="2Ry0Ak" id="7dfuMW5yInA" role="2Ry0An">
               <property role="2Ry0Am" value="test.ts.com.mbeddr.cpp" />
               <node concept="2Ry0Ak" id="2zzTeYjwDxN" role="2Ry0An">
-                <property role="2Ry0Am" value="test.ts.com.mbeddr.cpp.msd" />
+                <property role="2Ry0Am" value="testts.com.mbeddr.cpp.msd" />
               </node>
             </node>
           </node>
@@ -407,6 +407,18 @@
           <node concept="3bR9La" id="3fwl5YKVps6" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:4FIECQpNI7n" resolve="com.mbeddr.cpp.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3fwl5YKWsUp" role="3bR37C">
+          <node concept="3bR9La" id="3fwl5YKWsUq" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:3fwl5YKWdlr" resolve="com.mbeddr.cpp.templates" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3fwl5YKWsUr" role="3bR37C">
+          <node concept="3bR9La" id="3fwl5YKWsUs" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:3fwl5YKVX2I" resolve="com.mbeddr.cpp.exceptions" />
           </node>
         </node>
       </node>
