@@ -376,6 +376,11 @@
       <property role="TrG5h" value="generateMethodPrototype" />
       <node concept="3cqZAl" id="2Ai0Gt9WlKU" role="3clF45" />
       <node concept="3clFbS" id="2Ai0Gt9WlKV" role="3clF47">
+        <node concept="3SKdUt" id="7POJCjfXc4q" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfXc4s" role="3SKWNk">
+            <property role="3SKdUp" value="Generates the signature of a method without it's body." />
+          </node>
+        </node>
         <node concept="3cpWs8" id="2Ai0Gt9Wpix" role="3cqZAp">
           <node concept="3cpWsn" id="2Ai0Gt9Wpi$" role="3cpWs9">
             <property role="TrG5h" value="sig" />
@@ -403,12 +408,11 @@
               </node>
             </node>
           </node>
-        </node>
-        <node concept="lc7rE" id="3CmSUB7FmN$" role="3cqZAp">
-          <node concept="la8eA" id="3CmSUB7FmN_" role="lcghm">
+          <node concept="la8eA" id="7POJCjfXbMh" role="lcghm">
             <property role="lacIc" value=" " />
           </node>
         </node>
+        <node concept="3clFbH" id="7POJCjfXbOD" role="3cqZAp" />
         <node concept="3clFbJ" id="2Ai0Gt9WyzG" role="3cqZAp">
           <node concept="3clFbS" id="2Ai0Gt9WyzI" role="3clFbx">
             <node concept="lc7rE" id="2Ai0Gt9WzDE" role="3cqZAp">
@@ -429,6 +433,7 @@
             <node concept="17RvpY" id="2Ai0Gt9WzDj" role="2OqNvi" />
           </node>
         </node>
+        <node concept="3clFbH" id="7POJCjfXbQy" role="3cqZAp" />
         <node concept="lc7rE" id="3CmSUB7FmNA" role="3cqZAp">
           <node concept="l9hG8" id="3CmSUB7FmNB" role="lcghm">
             <node concept="2OqwBi" id="3CmSUB7FmNC" role="lb14g">
@@ -440,12 +445,11 @@
               </node>
             </node>
           </node>
-        </node>
-        <node concept="lc7rE" id="3CmSUB7FmNF" role="3cqZAp">
-          <node concept="la8eA" id="3CmSUB7FmNG" role="lcghm">
+          <node concept="la8eA" id="7POJCjfXbSN" role="lcghm">
             <property role="lacIc" value="(" />
           </node>
         </node>
+        <node concept="3clFbH" id="7POJCjfXbVd" role="3cqZAp" />
         <node concept="3clFbJ" id="5RKwIwrkI6P" role="3cqZAp">
           <node concept="3clFbS" id="5RKwIwrkI6Q" role="3clFbx">
             <node concept="lc7rE" id="1rolTivWhAp" role="3cqZAp">
@@ -527,6 +531,11 @@
       <property role="TrG5h" value="generateVisibilityInfo" />
       <node concept="3cqZAl" id="2Ai0GtaeCGK" role="3clF45" />
       <node concept="3clFbS" id="2Ai0GtaeCGL" role="3clF47">
+        <node concept="3SKdUt" id="7POJCjfXc6I" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfXc6K" role="3SKWNk">
+            <property role="3SKdUp" value="Generates the visbility parts in a class (public:/private:/protected:)" />
+          </node>
+        </node>
         <node concept="lc7rE" id="2Ai0GtaeCM8" role="3cqZAp">
           <node concept="l9hG8" id="2Ai0GtaeDGZ" role="lcghm">
             <node concept="37vLTw" id="2Ai0GtaeDHK" role="lb14g">
@@ -564,6 +573,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="7POJCjfXbsS" role="3cqZAp" />
         <node concept="3clFbJ" id="1Yr26iuHnLn" role="3cqZAp">
           <node concept="3clFbS" id="1Yr26iuHnLp" role="3clFbx">
             <node concept="lc7rE" id="1Yr26iuvAG2" role="3cqZAp">
@@ -579,6 +589,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="7POJCjfXbzR" role="3cqZAp" />
         <node concept="lc7rE" id="2Ai0Gt9WtTA" role="3cqZAp">
           <node concept="1bDJIP" id="2Ai0Gt9WtTY" role="lcghm">
             <ref role="1rvKf6" node="2Ai0Gt9WlKT" resolve="generateMethodPrototype" />
@@ -603,6 +614,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="7POJCjfXbES" role="3cqZAp" />
         <node concept="lc7rE" id="2L1k$oXWg8T" role="3cqZAp">
           <node concept="la8eA" id="2L1k$oXWgeL" role="lcghm">
             <property role="lacIc" value=";" />
@@ -887,6 +899,11 @@
     <ref role="WuzLi" to="wnzg:383ZxwZrBky" resolve="NamespaceMethodCall" />
     <node concept="11bSqf" id="1rolTiuDuhz" role="11c4hB">
       <node concept="3clFbS" id="1rolTiuDuh$" role="2VODD2">
+        <node concept="3SKdUt" id="7POJCjfXhky" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfXhk$" role="3SKWNk">
+            <property role="3SKdUp" value="Derive the correct presentation and print it" />
+          </node>
+        </node>
         <node concept="3clFbJ" id="r2pGcfd2Js" role="3cqZAp">
           <node concept="3clFbS" id="r2pGcfd2Ju" role="3clFbx">
             <node concept="lc7rE" id="r2pGcfeL97" role="3cqZAp">
@@ -938,6 +955,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7POJCjfXj4c" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfXj4e" role="3SKWNk">
+            <property role="3SKdUp" value="Now print the actual method details" />
           </node>
         </node>
         <node concept="lc7rE" id="dx81$JxJEx" role="3cqZAp">
@@ -1254,6 +1276,11 @@
       <property role="TrG5h" value="generateConstructorPrototype" />
       <node concept="3cqZAl" id="6ddXmWdP_nI" role="3clF45" />
       <node concept="3clFbS" id="6ddXmWdP_nJ" role="3clF47">
+        <node concept="3SKdUt" id="7POJCjfXq75" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfXq77" role="3SKWNk">
+            <property role="3SKdUp" value="Generates the signature of the constructor, including it's initializers, without the body." />
+          </node>
+        </node>
         <node concept="3cpWs8" id="6ddXmWdP_oB" role="3cqZAp">
           <node concept="3cpWsn" id="6ddXmWdP_oE" role="3cpWs9">
             <property role="TrG5h" value="sig" />
@@ -1270,6 +1297,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="7POJCjfXpIJ" role="3cqZAp" />
         <node concept="3clFbJ" id="5HgCzLwxJGF" role="3cqZAp">
           <node concept="3clFbS" id="5HgCzLwxJGH" role="3clFbx">
             <node concept="lc7rE" id="6ddXmWdPACC" role="3cqZAp">
@@ -1299,6 +1327,7 @@
             <node concept="3w_OXm" id="5HgCzLwxMel" role="2OqNvi" />
           </node>
         </node>
+        <node concept="3clFbH" id="7POJCjfXpKw" role="3cqZAp" />
         <node concept="3clFbJ" id="5i01kANswlx" role="3cqZAp">
           <node concept="3clFbS" id="5i01kANswlz" role="3clFbx">
             <node concept="lc7rE" id="5i01kANsx_A" role="3cqZAp">
@@ -1316,14 +1345,13 @@
             </node>
           </node>
         </node>
-        <node concept="lc7rE" id="5i01kANhJdO" role="3cqZAp">
-          <node concept="l9hG8" id="5i01kANhJkz" role="lcghm">
-            <node concept="37vLTw" id="5i01kANhJlm" role="lb14g">
+        <node concept="3clFbH" id="7POJCjfXq1p" role="3cqZAp" />
+        <node concept="lc7rE" id="6ddXmWdPAHY" role="3cqZAp">
+          <node concept="l9hG8" id="7POJCjfXpWb" role="lcghm">
+            <node concept="37vLTw" id="7POJCjfXpXa" role="lb14g">
               <ref role="3cqZAo" node="6ddXmWdPAB7" resolve="className" />
             </node>
           </node>
-        </node>
-        <node concept="lc7rE" id="6ddXmWdPAHY" role="3cqZAp">
           <node concept="la8eA" id="6ddXmWdPAID" role="lcghm">
             <property role="lacIc" value="(" />
           </node>
@@ -1343,6 +1371,7 @@
             <property role="lacIc" value=")" />
           </node>
         </node>
+        <node concept="3clFbH" id="7POJCjfXpXC" role="3cqZAp" />
         <node concept="3clFbJ" id="7DDmkz5z$e" role="3cqZAp">
           <node concept="3clFbS" id="7DDmkz5z$g" role="3clFbx">
             <node concept="lc7rE" id="7DDmkz5Bvi" role="3cqZAp">
@@ -1377,7 +1406,6 @@
             <node concept="3GX2aA" id="7DDmkz5Bq6" role="2OqNvi" />
           </node>
         </node>
-        <node concept="3clFbH" id="7DDmkza5jz" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="6ddXmWdP_q9" role="3clF46">
         <property role="TrG5h" value="node" />
@@ -1409,16 +1437,6 @@
     <ref role="WuzLi" to="wnzg:7DDmkz5m05" resolve="ConstructorInitializedConstructor" />
     <node concept="11bSqf" id="4KyQ_QhDpkf" role="11c4hB">
       <node concept="3clFbS" id="4KyQ_QhDpkg" role="2VODD2">
-        <node concept="3SKdUt" id="4KyQ_QhOZ0S" role="3cqZAp">
-          <node concept="3SKdUq" id="4KyQ_QhOZ0U" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: The following line doesn't print the name for some reason." />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="4KyQ_QhOZqM" role="3cqZAp">
-          <node concept="3SKdUq" id="4KyQ_QhOZqO" role="3SKWNk">
-            <property role="3SKdUp" value="Not sure why this isn't working, I've tried many alternatives." />
-          </node>
-        </node>
         <node concept="lc7rE" id="4KyQ_QhDpkP" role="3cqZAp">
           <node concept="l9hG8" id="4KyQ_QhDplf" role="lcghm">
             <node concept="2OqwBi" id="1rV7RaSOxTW" role="lb14g">
@@ -1457,6 +1475,11 @@
     <ref role="WuzLi" to="wnzg:383ZxwZrBkp" resolve="NamespaceAttributeRef" />
     <node concept="11bSqf" id="1rolTiuDlXX" role="11c4hB">
       <node concept="3clFbS" id="1rolTiuDlXY" role="2VODD2">
+        <node concept="3SKdUt" id="7POJCjfXl4D" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfXl4F" role="3SKWNk">
+            <property role="3SKdUp" value="Get the correct presentation and print it." />
+          </node>
+        </node>
         <node concept="3clFbJ" id="r2pGcfOfQF" role="3cqZAp">
           <node concept="3clFbS" id="r2pGcfOfQG" role="3clFbx">
             <node concept="lc7rE" id="r2pGcfOfQH" role="3cqZAp">
@@ -1805,6 +1828,11 @@
     <ref role="WuzLi" to="wnzg:7RFM8R3Me1y" resolve="NamespaceClassInstance" />
     <node concept="11bSqf" id="7fNEwq_I8Jy" role="11c4hB">
       <node concept="3clFbS" id="7fNEwq_I8Jz" role="2VODD2">
+        <node concept="3SKdUt" id="7POJCjfXjXT" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfXjXV" role="3SKWNk">
+            <property role="3SKdUp" value="Prints the ancestors (a::b::c) and so on, then the class name" />
+          </node>
+        </node>
         <node concept="lc7rE" id="7fNEwq_I8JQ" role="3cqZAp">
           <node concept="l9hG8" id="7fNEwq_I8Ke" role="lcghm">
             <node concept="2OqwBi" id="7fNEwq_I92U" role="lb14g">
@@ -2156,6 +2184,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="7POJCjfXomy" role="3cqZAp" />
         <node concept="3clFbJ" id="6OyCGy3HNM8" role="3cqZAp">
           <node concept="3clFbS" id="6OyCGy3HNMa" role="3clFbx">
             <node concept="lc7rE" id="6OyCGy3HR9M" role="3cqZAp">
@@ -2182,11 +2211,13 @@
             <node concept="3x8VRR" id="6OyCGy3HR0J" role="2OqNvi" />
           </node>
         </node>
+        <node concept="3clFbH" id="7POJCjfXoLX" role="3cqZAp" />
         <node concept="lc7rE" id="6OyCGy3HSUi" role="3cqZAp">
           <node concept="la8eA" id="6OyCGy3HTp4" role="lcghm">
             <property role="lacIc" value=";" />
           </node>
         </node>
+        <node concept="3clFbH" id="7POJCjfXpdq" role="3cqZAp" />
         <node concept="2Gpval" id="6OyCGy3HU8b" role="3cqZAp">
           <node concept="2GrKxI" id="6OyCGy3HU8d" role="2Gsz3X">
             <property role="TrG5h" value="p" />
