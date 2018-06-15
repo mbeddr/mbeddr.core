@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6ef63d51-2e35-4ffd-80c1-93194fab0d0f(test.ex.com.mbeddr.cpp.new_delete)">
+<model ref="r:6ef63d51-2e35-4ffd-80c1-93194fab0d0f(test.ex.com.mbeddr.cpp.dynamicmemory)">
   <persistence version="9" />
   <languages>
     <engage id="236f3e56-2360-4657-9b9d-0cb84f56784d" name="com.mbeddr.cpp.modules.gen" />
@@ -247,12 +247,12 @@
       <property role="TrG5h" value="New_Delete_Tests" />
       <ref role="3oK8_y" node="6WSa0snAr4W" resolve="portable" />
       <node concept="2v9HqM" id="6WSa0snB9z$" role="2eOfOg">
-        <ref role="2v9HqP" node="6WSa0snB9zy" resolve="New_Delete" />
+        <ref role="2v9HqP" node="6WSa0snB9zy" resolve="NewDelete" />
       </node>
     </node>
   </node>
   <node concept="1whW_1" id="6WSa0snB9zy">
-    <property role="TrG5h" value="New_Delete" />
+    <property role="TrG5h" value="NewDelete" />
     <node concept="BTY7A" id="7iR9kVyg$wu" role="N3F5h">
       <property role="TrG5h" value="SomeMacro" />
       <node concept="BUhyo" id="7iR9kVyg$$M" role="BTY7U">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:1a1db370-da0d-45f6-99b5-c31d325a1744(test.ts.com.mbeddr.cpp.newdelete@tests)">
+<model ref="r:1a1db370-da0d-45f6-99b5-c31d325a1744(test.ts.com.mbeddr.cpp.dynamicmemory@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
