@@ -26,7 +26,6 @@
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
-    <import index="zhp8" ref="r:66d213c1-a12b-4017-8dd5-0423703c30a9(com.mbeddr.cpp.operator_overload.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -6712,9 +6711,6 @@
             <node concept="Xl_RD" id="1VsJb22wjFX" role="2BsfMF">
               <property role="Xl_RC" value="delete" />
             </node>
-            <node concept="Xl_RD" id="1VsJb22wjHu" role="2BsfMF">
-              <property role="Xl_RC" value="operator" />
-            </node>
             <node concept="Xl_RD" id="1VsJb22xmw$" role="2BsfMF">
               <property role="Xl_RC" value="try" />
             </node>
@@ -6773,34 +6769,20 @@
         </node>
       </node>
       <node concept="3clFbJ" id="1VsJb22wjAK" role="3cqZAp">
-        <node concept="1Wc70l" id="4lmr4L5a4yE" role="3clFbw">
-          <node concept="3fqX7Q" id="4lmr4L5a4FO" role="3uHU7w">
-            <node concept="2OqwBi" id="4lmr4L5a4Ra" role="3fr31v">
-              <node concept="1YBJjd" id="4lmr4L5a4FU" role="2Oq$k0">
+        <node concept="2OqwBi" id="1VsJb22wqdM" role="3clFbw">
+          <node concept="2OqwBi" id="1VsJb22wjY7" role="2Oq$k0">
+            <node concept="37vLTw" id="1VsJb22wjKB" role="2Oq$k0">
+              <ref role="3cqZAo" node="1VsJb22wjBj" resolve="keywords" />
+            </node>
+            <node concept="39bAoz" id="1VsJb22wp9J" role="2OqNvi" />
+          </node>
+          <node concept="3JPx81" id="1VsJb22wqB7" role="2OqNvi">
+            <node concept="2OqwBi" id="1VsJb22wqM_" role="25WWJ7">
+              <node concept="1YBJjd" id="1VsJb22wqBA" role="2Oq$k0">
                 <ref role="1YBMHb" node="1VsJb22wjAv" resolve="iinc" />
               </node>
-              <node concept="1mIQ4w" id="4lmr4L5a5bn" role="2OqNvi">
-                <node concept="chp4Y" id="4lmr4L5ag5W" role="cj9EA">
-                  <ref role="cht4Q" to="zhp8:7bt9OVZfWbc" resolve="OperatorOverloadDeclaration" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="1VsJb22wqdM" role="3uHU7B">
-            <node concept="2OqwBi" id="1VsJb22wjY7" role="2Oq$k0">
-              <node concept="37vLTw" id="1VsJb22wjKB" role="2Oq$k0">
-                <ref role="3cqZAo" node="1VsJb22wjBj" resolve="keywords" />
-              </node>
-              <node concept="39bAoz" id="1VsJb22wp9J" role="2OqNvi" />
-            </node>
-            <node concept="3JPx81" id="1VsJb22wqB7" role="2OqNvi">
-              <node concept="2OqwBi" id="1VsJb22wqM_" role="25WWJ7">
-                <node concept="1YBJjd" id="1VsJb22wqBA" role="2Oq$k0">
-                  <ref role="1YBMHb" node="1VsJb22wjAv" resolve="iinc" />
-                </node>
-                <node concept="3TrcHB" id="1VsJb22wraa" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                </node>
+              <node concept="3TrcHB" id="1VsJb22wraa" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>

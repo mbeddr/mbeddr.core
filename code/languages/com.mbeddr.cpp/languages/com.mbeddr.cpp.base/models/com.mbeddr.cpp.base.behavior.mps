@@ -28,7 +28,6 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
-    <import index="zhp8" ref="r:66d213c1-a12b-4017-8dd5-0423703c30a9(com.mbeddr.cpp.operator_overload.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
@@ -267,6 +266,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -291,6 +291,7 @@
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="6973815483243445083" name="jetbrains.mps.lang.smodel.structure.EnumMemberValueRefExpression" flags="nn" index="3f7Wdw">
         <reference id="6973815483243565416" name="member" index="3f7u_j" />
         <reference id="6973815483243564601" name="enum" index="3f7vo2" />
@@ -771,35 +772,58 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="3tvQSYc0pRk" role="13h7CS">
-      <property role="TrG5h" value="getOverloadedOperatorDeclarations" />
-      <node concept="3Tm1VV" id="3tvQSYc0pRl" role="1B3o_S" />
-      <node concept="3clFbS" id="3tvQSYc0pRn" role="3clF47">
-        <node concept="3clFbF" id="3tvQSYc0Hxd" role="3cqZAp">
-          <node concept="2OqwBi" id="3tvQSYc0KaI" role="3clFbG">
-            <node concept="2OqwBi" id="3tvQSYc0HNu" role="2Oq$k0">
-              <node concept="13iPFW" id="3tvQSYc0Hxc" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="3tvQSYc0Ikg" role="2OqNvi">
+    <node concept="13i0hz" id="45faY2xVFak" role="13h7CS">
+      <property role="TrG5h" value="membersOfConcept" />
+      <node concept="3Tm1VV" id="45faY2xVFal" role="1B3o_S" />
+      <node concept="A3Dl8" id="45faY2xVHUD" role="3clF45">
+        <node concept="3Tqbb2" id="45faY2xVI0K" role="A3Ik2" />
+      </node>
+      <node concept="3clFbS" id="45faY2xVFan" role="3clF47">
+        <node concept="3clFbF" id="45faY2xVI9p" role="3cqZAp">
+          <node concept="2OqwBi" id="45faY2xVKy$" role="3clFbG">
+            <node concept="2OqwBi" id="45faY2xVIvW" role="2Oq$k0">
+              <node concept="13iPFW" id="45faY2xVI9o" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="45faY2xVJex" role="2OqNvi">
                 <ref role="3TtcxE" to="wnzg:4o2nsMgBClg" resolve="members" />
               </node>
             </node>
-            <node concept="v3k3i" id="3tvQSYc0LDe" role="2OqNvi">
-              <node concept="chp4Y" id="7bt9OVZnYFD" role="v3oSu">
-                <ref role="cht4Q" to="zhp8:7bt9OVZfWbc" resolve="OperatorOverloadDeclaration" />
+            <node concept="3zZkjj" id="45faY2xVZpq" role="2OqNvi">
+              <node concept="1bVj0M" id="45faY2xVZps" role="23t8la">
+                <node concept="3clFbS" id="45faY2xVZpt" role="1bW5cS">
+                  <node concept="3clFbF" id="45faY2xVZ$y" role="3cqZAp">
+                    <node concept="2OqwBi" id="45faY2xW0eU" role="3clFbG">
+                      <node concept="2OqwBi" id="45faY2xVZL8" role="2Oq$k0">
+                        <node concept="37vLTw" id="45faY2xVZ$x" role="2Oq$k0">
+                          <ref role="3cqZAo" node="45faY2xVZpu" resolve="it" />
+                        </node>
+                        <node concept="2yIwOk" id="45faY2xW00E" role="2OqNvi" />
+                      </node>
+                      <node concept="liA8E" id="45faY2xW0AJ" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                        <node concept="37vLTw" id="45faY2xW0Lc" role="37wK5m">
+                          <ref role="3cqZAo" node="45faY2xVN4t" resolve="concept" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="45faY2xVZpu" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="45faY2xVZpv" role="1tU5fm" />
+                </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="A3Dl8" id="3tvQSYc0LUc" role="3clF45">
-        <node concept="3Tqbb2" id="3tvQSYc0M2D" role="A3Ik2">
-          <ref role="ehGHo" to="zhp8:7bt9OVZfWbc" resolve="OperatorOverloadDeclaration" />
-        </node>
+      <node concept="37vLTG" id="45faY2xVN4t" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="45faY2xW1eh" role="1tU5fm" />
       </node>
-      <node concept="P$JXv" id="3tvQSYc0Mco" role="lGtFl">
-        <node concept="TZ5HA" id="3tvQSYc0Mcp" role="TZ5H$">
-          <node concept="1dT_AC" id="3tvQSYc0Mcq" role="1dT_Ay">
-            <property role="1dT_AB" value="Gets all of the overloaded operators of the given visibility" />
+      <node concept="P$JXv" id="45faY2y8UBZ" role="lGtFl">
+        <node concept="TZ5HA" id="45faY2y8UC0" role="TZ5H$">
+          <node concept="1dT_AC" id="45faY2y8UC1" role="1dT_Ay">
+            <property role="1dT_AB" value="Retrieves all direct members of the class of a given concept." />
           </node>
         </node>
       </node>

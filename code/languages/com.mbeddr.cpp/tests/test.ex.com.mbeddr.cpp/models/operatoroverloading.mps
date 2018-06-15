@@ -71,7 +71,7 @@
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
       <concept id="7240228573262412204" name="com.mbeddr.cpp.base.structure.LocalClassVariableDeclaration" flags="ng" index="2dywKE" />
-      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualFlagConcept" flags="ng" index="hL25U">
+      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualFlag" flags="ng" index="hL25U">
         <property id="3188920472788366141" name="isVirtual" index="hL25V" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
@@ -84,7 +84,7 @@
         <property id="2995459757115087788" name="visibility" index="1wg9_F" />
       </concept>
       <concept id="5044697665789405022" name="com.mbeddr.cpp.base.structure.ClassType" flags="ng" index="3mBfEi">
-        <reference id="5044697665789405054" name="clazz" index="3mBfEM" />
+        <reference id="5044697665789405054" name="class" index="3mBfEM" />
       </concept>
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
         <child id="5044697665789396304" name="members" index="3mBdys" />
@@ -778,8 +778,8 @@
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="6KmaLbE81LD" role="N3F5h">
-      <property role="TrG5h" value="empty_1527145164400_2" />
+    <node concept="2NXPZ9" id="45faY2yuvi2" role="N3F5h">
+      <property role="TrG5h" value="empty_1529062019477_1" />
     </node>
     <node concept="lIfQi" id="6FnHX$H9m0i" role="N3F5h">
       <property role="3HjyOP" value="true" />
