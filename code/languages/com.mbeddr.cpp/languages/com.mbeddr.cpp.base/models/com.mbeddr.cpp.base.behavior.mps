@@ -9855,12 +9855,6 @@
       <node concept="3clFbS" id="7fNEwqBx$7e" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="6OyCGy3GPxS">
-    <ref role="13h7C2" to="wnzg:6OyCGy3FHs3" resolve="GlobalVarDecCPP" />
-    <node concept="13hLZK" id="6OyCGy3GPxT" role="13h7CW">
-      <node concept="3clFbS" id="6OyCGy3GPxU" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="6OyCGy3I43h">
     <ref role="13h7C2" to="wnzg:6OyCGy3I3ZK" resolve="StaticVar" />
     <node concept="13hLZK" id="6OyCGy3I43i" role="13h7CW">

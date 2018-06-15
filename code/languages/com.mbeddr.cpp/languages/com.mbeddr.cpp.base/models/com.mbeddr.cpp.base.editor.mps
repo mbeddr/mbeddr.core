@@ -3327,7 +3327,7 @@
     <ref role="1XX52x" to="wnzg:6OyCGy9cOMO" resolve="ClassStaticVarRef" />
     <node concept="3EZMnI" id="6OyCGy9tq1N" role="2wV5jI">
       <node concept="1iCGBv" id="6OyCGy9tq1X" role="3EZMnx">
-        <ref role="1NtTu8" to="wnzg:6OyCGy9cOMP" resolve="clazz" />
+        <ref role="1NtTu8" to="wnzg:6OyCGy9cOMP" resolve="class" />
         <node concept="1sVBvm" id="6OyCGy9tq1Z" role="1sWHZn">
           <node concept="3F0A7n" id="6OyCGy9tq29" role="2wV5jI">
             <property role="1Intyy" value="true" />

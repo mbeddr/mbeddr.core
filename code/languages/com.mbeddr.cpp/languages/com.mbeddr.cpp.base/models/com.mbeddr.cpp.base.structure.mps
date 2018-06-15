@@ -1058,6 +1058,9 @@
     <node concept="PrWs8" id="3VWY4WVNoY5" role="PzmwI">
       <ref role="PrY4T" node="5eDFAXBS4m7" resolve="IThreadLocalFlag" />
     </node>
+    <node concept="t5JxF" id="7POJCjeKIL9" role="lGtFl">
+      <property role="t5JxN" value="Variable declarations that aren't top-level class attributes or local variables" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6OyCGy9cOMO">
     <property role="EcuMT" value="7864026881521306804" />
@@ -1067,7 +1070,7 @@
     <node concept="1TJgyj" id="6OyCGy9cOMP" role="1TKVEi">
       <property role="IQ2ns" value="7864026881521306805" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="clazz" />
+      <property role="20kJfa" value="class" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBpPQ" resolve="ClassDeclaration" />
     </node>
@@ -1077,6 +1080,9 @@
       <property role="20kJfa" value="attribute" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
+    </node>
+    <node concept="t5JxF" id="7POJCjeKIEh" role="lGtFl">
+      <property role="t5JxN" value="For accessing static members of classes with ClassName::member" />
     </node>
   </node>
   <node concept="PlHQZ" id="1D2kn9asHi2">

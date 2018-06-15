@@ -2226,7 +2226,7 @@
               <node concept="2OqwBi" id="6OyCGyafvz9" role="2Oq$k0">
                 <node concept="117lpO" id="6OyCGyafvmA" role="2Oq$k0" />
                 <node concept="3TrEf2" id="6OyCGyafvOF" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:6OyCGy9cOMP" resolve="clazz" />
+                  <ref role="3Tt5mk" to="wnzg:6OyCGy9cOMP" resolve="class" />
                 </node>
               </node>
               <node concept="2qgKlT" id="6OyCGyafx2h" role="2OqNvi">

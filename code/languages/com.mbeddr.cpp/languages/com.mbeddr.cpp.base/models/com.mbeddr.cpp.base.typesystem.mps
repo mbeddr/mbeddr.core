@@ -3144,6 +3144,11 @@
   <node concept="1YbPZF" id="6OyCGy9cZbG">
     <property role="TrG5h" value="typeof_ClassStaticVarRef" />
     <node concept="3clFbS" id="6OyCGy9cZbH" role="18ibNy">
+      <node concept="3SKdUt" id="7POJCjeKIKz" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCjeKIK_" role="3SKWNk">
+          <property role="3SKdUp" value="Type of the reference should match the type of the declaration." />
+        </node>
+      </node>
       <node concept="nvevp" id="6OyCGy9cZbN" role="3cqZAp">
         <node concept="3clFbS" id="6OyCGy9cZbO" role="nvhr_">
           <node concept="1Z5TYs" id="6OyCGy9d1mr" role="3cqZAp">
@@ -5356,6 +5361,11 @@
       <node concept="3SKdUt" id="3VWY4WWAvZ7" role="3cqZAp">
         <node concept="3SKdUq" id="3VWY4WWAvZ9" role="3SKWNk">
           <property role="3SKdUp" value="Give error if char16 type uses more than 16 bits" />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7POJCjeKOD3" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCjeKOD5" role="3SKWNk">
+          <property role="3SKdUp" value=" TODO: Make this use Integer.parseInt" />
         </node>
       </node>
       <node concept="3clFbJ" id="hYHfWv9gSg" role="3cqZAp">
