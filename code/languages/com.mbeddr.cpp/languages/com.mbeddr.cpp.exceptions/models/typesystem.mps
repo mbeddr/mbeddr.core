@@ -134,7 +134,7 @@
             <node concept="3clFbS" id="4WhfN3oofEh" role="3clFbx">
               <node concept="2MkqsV" id="4WhfN3oofEB" role="3cqZAp">
                 <node concept="Xl_RD" id="4WhfN3oofEQ" role="2MkJ7o">
-                  <property role="Xl_RC" value="Catch block after catch all is redundant." />
+                  <property role="Xl_RC" value="catch block after catch-all is redundant" />
                 </node>
                 <node concept="2GrUjf" id="4WhfN3oofGm" role="2OEOjV">
                   <ref role="2Gs0qQ" node="4WhfN3ooe_t" resolve="catchBlock" />
