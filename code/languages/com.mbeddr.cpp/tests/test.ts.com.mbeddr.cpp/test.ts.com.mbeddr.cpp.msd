@@ -7,9 +7,6 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">~_PreferencesModule#com.mbeddr.cpp.__spreferences.PlatformTemplates(com.mbeddr.cpp.__spreferences.PlatformTemplates)</dependency>
-    <dependency reexport="false">bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)</dependency>
-    <dependency reexport="false">d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</dependency>
     <dependency reexport="false">8c081446-e4ba-48b7-a7e0-3db40e2c3439(com.mbeddr.cpp.base)</dependency>
     <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
     <dependency reexport="false">2e15e1a4-8998-4f06-86b2-8d184a179e8e(com.mbeddr.cpp.exceptions)</dependency>
@@ -75,7 +72,6 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="3" />
     <module reference="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" version="0" />
     <module reference="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" version="0" />
@@ -83,8 +79,6 @@
     <module reference="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" version="0" />
     <module reference="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" version="0" />
     <module reference="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" version="0" />
-    <module reference="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" version="0" />
-    <module reference="~_PreferencesModule#com.mbeddr.cpp.__spreferences.PlatformTemplates(com.mbeddr.cpp.__spreferences.PlatformTemplates)" version="0" />
     <module reference="8c081446-e4ba-48b7-a7e0-3db40e2c3439(com.mbeddr.cpp.base)" version="0" />
     <module reference="2e15e1a4-8998-4f06-86b2-8d184a179e8e(com.mbeddr.cpp.exceptions)" version="0" />
     <module reference="b341759a-c721-4072-90cf-328bb2724684(com.mbeddr.cpp.expressions)" version="0" />
