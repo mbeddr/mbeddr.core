@@ -4006,7 +4006,7 @@
   </node>
   <node concept="18kY7G" id="72UYQRWvwJl">
     <property role="TrG5h" value="check_DeleteDeclaration" />
-    <property role="3GE5qa" value="class" />
+    <property role="3GE5qa" value="" />
     <node concept="3clFbS" id="72UYQRWvwJm" role="18ibNy">
       <node concept="3clFbJ" id="72UYQRWvzhx" role="3cqZAp">
         <node concept="3clFbS" id="72UYQRWvzhz" role="3clFbx">

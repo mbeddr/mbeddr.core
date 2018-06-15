@@ -956,7 +956,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3EDDOqDY7xr">
-    <property role="3GE5qa" value="class" />
+    <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="wnzg:3EDDOqDY7x5" resolve="DeleteDeclaration" />
     <node concept="3EZMnI" id="3EDDOqDY7xt" role="2wV5jI">
       <node concept="3F0ifn" id="72UYQRW0DPT" role="3EZMnx">
@@ -3557,24 +3557,8 @@
         <property role="ZjSer" value="(std::nothrow)" />
         <ref role="1NtTu8" to="wnzg:6WSa0snOgw0" resolve="no_throw" />
       </node>
-      <node concept="3EZMnI" id="7SgJHc84QTd" role="3EZMnx">
-        <node concept="VPM3Z" id="7SgJHc84QTf" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="3F1sOY" id="6WSa0sofgq0" role="3EZMnx">
-          <ref role="1NtTu8" to="wnzg:6WSa0so1IOP" resolve="typeOrConstructor" />
-        </node>
-        <node concept="l2Vlx" id="7SgJHc84QTi" role="2iSdaV" />
-        <node concept="A1WHu" id="7SgJHc84QTA" role="3vIgyS">
-          <ref role="A1WHt" node="7SgJHc7IPzO" resolve="NewDeclaration_TypeToConstructor" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7SgJHc8fuYL" role="3EZMnx">
-        <property role="3F0ifm" value=" " />
-        <ref role="1k5W1q" node="7DDmkz49ic" resolve="Scrunched" />
-        <node concept="A1WHu" id="7SgJHc8fuZ3" role="3vIgyS">
-          <ref role="A1WHt" node="7SgJHc7IPzO" resolve="NewDeclaration_TypeToConstructor" />
-        </node>
+      <node concept="3F1sOY" id="6WSa0sofgq0" role="3EZMnx">
+        <ref role="1NtTu8" to="wnzg:6WSa0so1IOP" resolve="typeOrConstructor" />
       </node>
       <node concept="l2Vlx" id="6WSa0snOgwu" role="2iSdaV" />
     </node>

@@ -804,7 +804,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="O6qFYdpAsQ">
-    <property role="3GE5qa" value="class" />
+    <property role="3GE5qa" value="" />
     <ref role="WuzLi" to="wnzg:3EDDOqDY7x5" resolve="DeleteDeclaration" />
     <node concept="11bSqf" id="O6qFYdpAsR" role="11c4hB">
       <node concept="3clFbS" id="O6qFYdpAsS" role="2VODD2">

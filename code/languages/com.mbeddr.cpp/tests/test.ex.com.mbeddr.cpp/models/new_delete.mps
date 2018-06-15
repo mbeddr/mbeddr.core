@@ -118,14 +118,14 @@
         <property id="2995459757115087788" name="visibility" index="1wg9_F" />
       </concept>
       <concept id="5044697665789405022" name="com.mbeddr.cpp.base.structure.ClassType" flags="ng" index="3mBfEi">
-        <reference id="5044697665789405054" name="clazz" index="3mBfEM" />
+        <reference id="5044697665789405054" name="class" index="3mBfEM" />
       </concept>
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
         <child id="4511589886097466568" name="ancestors" index="Fysvh" />
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
       <concept id="4018800670853679470" name="com.mbeddr.cpp.base.structure.EmptyClassContent" flags="ng" index="3u$6M4" />
-      <concept id="2471598406324383532" name="com.mbeddr.cpp.base.structure.NullPointerLiteral" flags="ng" index="3IbwUb" />
+      <concept id="2471598406324383532" name="com.mbeddr.cpp.base.structure.NullptrLiteral" flags="ng" index="3IbwUb" />
       <concept id="8014199547835254783" name="com.mbeddr.cpp.base.structure.NewDeclaration" flags="ng" index="1SUiZS">
         <property id="8014199547835254784" name="no_throw" index="1SUi07" />
         <child id="8014199547838786869" name="typeOrConstructor" index="1RfGkM" />
@@ -436,8 +436,8 @@
             <node concept="3ZVu4v" id="72UYQRW$Y_e" role="3TlMhI">
               <ref role="3ZVs_2" node="72UYQRW$Yrj" resolve="ndc1Int" />
             </node>
-            <node concept="1SUiZS" id="72UYQRW$YFF" role="3TlMhJ">
-              <node concept="26Vqpq" id="72UYQRW$YJC" role="1RfGkM">
+            <node concept="1SUiZS" id="3e4PW88CC7z" role="3TlMhJ">
+              <node concept="26Vqpq" id="3e4PW88CCar" role="1RfGkM">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
               </node>

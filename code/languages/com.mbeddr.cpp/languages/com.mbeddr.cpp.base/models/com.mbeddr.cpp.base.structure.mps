@@ -337,7 +337,7 @@
     <property role="EcuMT" value="4227093647205103685" />
     <property role="TrG5h" value="DeleteDeclaration" />
     <property role="34LRSv" value="delete" />
-    <property role="3GE5qa" value="class" />
+    <property role="3GE5qa" value="" />
     <property role="R4oN_" value="Delete an object made by the 'new' keyword (must be a pointer)." />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1TJgyj" id="72UYQRW0DPK" role="1TKVEi">
