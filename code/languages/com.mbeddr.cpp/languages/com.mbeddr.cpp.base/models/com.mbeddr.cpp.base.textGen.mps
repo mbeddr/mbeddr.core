@@ -2177,6 +2177,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="1tzB3lvPwgd" role="3cqZAp">
+          <node concept="3clFbS" id="1tzB3lvPwgf" role="3clFbx">
+            <node concept="lc7rE" id="1tzB3lvPya7" role="3cqZAp">
+              <node concept="la8eA" id="1tzB3lvPyax" role="lcghm">
+                <property role="lacIc" value="thread_local " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1tzB3lvPx6R" role="3clFbw">
+            <node concept="117lpO" id="1tzB3lvPwFS" role="2Oq$k0" />
+            <node concept="3TrcHB" id="1tzB3lvPy3Z" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:5eDFAXBS4m8" resolve="isThreadLocal" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="6OyCGy3HuZk" role="3cqZAp">
           <node concept="3clFbS" id="6OyCGy3HuZm" role="3clFbx">
             <node concept="lc7rE" id="6OyCGy3HxuX" role="3cqZAp">
