@@ -3658,7 +3658,13 @@
       <property role="1hAc7j" value="complete_action_id" />
       <property role="1hHO97" value="Do nothing" />
       <node concept="1hAIg9" id="7j9KGYKZMY7" role="1hA7z_">
-        <node concept="3clFbS" id="7j9KGYKZMY8" role="2VODD2" />
+        <node concept="3clFbS" id="7j9KGYKZMY8" role="2VODD2">
+          <node concept="3SKdUt" id="7POJCjfn9ji" role="3cqZAp">
+            <node concept="3SKdUq" id="7POJCjfn9jj" role="3SKWNk">
+              <property role="3SKdUp" value="Prevents people from changing the name of a constructor" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1hA7zw" id="7j9KGYKZMYn" role="1h_SK8">

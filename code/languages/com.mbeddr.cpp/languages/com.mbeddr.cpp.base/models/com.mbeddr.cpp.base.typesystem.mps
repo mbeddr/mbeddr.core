@@ -1967,7 +1967,7 @@
               <property role="Xl_RC" value="Non-pure virtual method must have a body" />
             </node>
             <node concept="1YBJjd" id="2L1k$oXL3xV" role="2OEOjV">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="md" />
             </node>
           </node>
         </node>
@@ -1975,7 +1975,7 @@
           <node concept="3fqX7Q" id="2L1k$oXLZpd" role="3uHU7w">
             <node concept="2OqwBi" id="2L1k$oXLZUQ" role="3fr31v">
               <node concept="1YBJjd" id="2L1k$oXLZtN" role="2Oq$k0">
-                <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+                <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="md" />
               </node>
               <node concept="3TrcHB" id="2L1k$oXM0Ew" role="2OqNvi">
                 <ref role="3TsBF5" to="wnzg:2L1k$oXDqK2" resolve="isPureVirtual" />
@@ -1985,7 +1985,7 @@
           <node concept="2OqwBi" id="2L1k$oXL2T$" role="3uHU7B">
             <node concept="2OqwBi" id="2L1k$oXL1lF" role="2Oq$k0">
               <node concept="1YBJjd" id="2L1k$oXL0WV" role="2Oq$k0">
-                <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+                <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="md" />
               </node>
               <node concept="3TrEf2" id="2L1k$oXL1V$" role="2OqNvi">
                 <ref role="3Tt5mk" to="wnzg:3CmSUB7Fp_k" resolve="body" />
@@ -2003,14 +2003,14 @@
               <property role="Xl_RC" value="Constant expression member can't be virtual" />
             </node>
             <node concept="1YBJjd" id="15T8UHysjGt" role="2OEOjV">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="md" />
             </node>
           </node>
         </node>
         <node concept="1Wc70l" id="15T8UHyshOL" role="3clFbw">
           <node concept="2OqwBi" id="15T8UHysi$D" role="3uHU7w">
             <node concept="1YBJjd" id="15T8UHysi2j" role="2Oq$k0">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="md" />
             </node>
             <node concept="3TrcHB" id="15T8UHysjv5" role="2OqNvi">
               <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
@@ -2018,7 +2018,7 @@
           </node>
           <node concept="2OqwBi" id="15T8UHysdo0" role="3uHU7B">
             <node concept="1YBJjd" id="15T8UHyscWb" role="2Oq$k0">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="md" />
             </node>
             <node concept="3TrcHB" id="15T8UHysfME" role="2OqNvi">
               <ref role="3TsBF5" to="wnzg:5eDFAXBRQhK" resolve="isConstExpr" />
@@ -2034,14 +2034,14 @@
               <property role="Xl_RC" value="constExpr already implicitely inlines" />
             </node>
             <node concept="1YBJjd" id="3JyuKTwhF1S" role="2OEOjV">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="md" />
             </node>
           </node>
         </node>
         <node concept="1Wc70l" id="3JyuKTwhCFA" role="3clFbw">
           <node concept="2OqwBi" id="3JyuKTwhDvC" role="3uHU7w">
             <node concept="1YBJjd" id="3JyuKTwhCUk" role="2Oq$k0">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="md" />
             </node>
             <node concept="3TrcHB" id="3JyuKTwhE_g" role="2OqNvi">
               <ref role="3TsBF5" to="wnzg:1Yr26itwsT0" resolve="isInlined" />
@@ -2049,7 +2049,7 @@
           </node>
           <node concept="2OqwBi" id="3JyuKTwhA2_" role="3uHU7B">
             <node concept="1YBJjd" id="3JyuKTwh_zx" role="2Oq$k0">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
+              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="md" />
             </node>
             <node concept="3TrcHB" id="3JyuKTwhBYT" role="2OqNvi">
               <ref role="3TsBF5" to="wnzg:5eDFAXBRQhK" resolve="isConstExpr" />
@@ -2058,106 +2058,9 @@
         </node>
       </node>
       <node concept="3clFbH" id="5eDFAXB$S1T" role="3cqZAp" />
-      <node concept="3clFbJ" id="5eDFAXB$Ser" role="3cqZAp">
-        <node concept="3clFbS" id="5eDFAXB$Set" role="3clFbx">
-          <node concept="2MkqsV" id="5eDFAXB$VOf" role="3cqZAp">
-            <node concept="Xl_RD" id="5eDFAXB$VOx" role="2MkJ7o">
-              <property role="Xl_RC" value="Static member can't be virtual" />
-            </node>
-            <node concept="1YBJjd" id="5eDFAXB$VP9" role="2OEOjV">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
-            </node>
-          </node>
-        </node>
-        <node concept="1Wc70l" id="15T8UHyn90M" role="3clFbw">
-          <node concept="2OqwBi" id="5eDFAXB$SHU" role="3uHU7w">
-            <node concept="1YBJjd" id="5eDFAXB$Sfe" role="2Oq$k0">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
-            </node>
-            <node concept="3TrcHB" id="5eDFAXB$Ty1" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="5eDFAXB$UO2" role="3uHU7B">
-            <node concept="1YBJjd" id="5eDFAXB$UpA" role="2Oq$k0">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
-            </node>
-            <node concept="3TrcHB" id="5eDFAXB$VCo" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="15T8UHyn9hs" role="3cqZAp" />
-      <node concept="3clFbJ" id="15T8UHyn9jl" role="3cqZAp">
-        <node concept="3clFbS" id="15T8UHyn9jn" role="3clFbx">
-          <node concept="2MkqsV" id="15T8UHynk$U" role="3cqZAp">
-            <node concept="Xl_RD" id="15T8UHynk$V" role="2MkJ7o">
-              <property role="Xl_RC" value="Static member can't be volatile" />
-            </node>
-            <node concept="1YBJjd" id="15T8UHynk$W" role="2OEOjV">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
-            </node>
-          </node>
-        </node>
-        <node concept="1Wc70l" id="15T8UHyndfy" role="3clFbw">
-          <node concept="2OqwBi" id="15T8UHyndUu" role="3uHU7w">
-            <node concept="1YBJjd" id="15T8UHyndr5" role="2Oq$k0">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
-            </node>
-            <node concept="3TrcHB" id="15T8UHynkrc" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:5eDFAXBCpes" resolve="isVolatile" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="15T8UHyn9IN" role="3uHU7B">
-            <node concept="1YBJjd" id="15T8UHyn9ky" role="2Oq$k0">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
-            </node>
-            <node concept="3TrcHB" id="15T8UHynbaW" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="7mGKYHhk$HL" role="3cqZAp" />
-      <node concept="3clFbJ" id="7mGKYHhk$M6" role="3cqZAp">
-        <node concept="3clFbS" id="7mGKYHhk$M8" role="3clFbx">
-          <node concept="2MkqsV" id="7mGKYHhkF9y" role="3cqZAp">
-            <node concept="Xl_RD" id="7mGKYHhkF9O" role="2MkJ7o">
-              <property role="Xl_RC" value="Static member can't be const" />
-            </node>
-            <node concept="1YBJjd" id="7mGKYHhkFa7" role="2OEOjV">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
-            </node>
-          </node>
-        </node>
-        <node concept="1Wc70l" id="7mGKYHhkAKf" role="3clFbw">
-          <node concept="2OqwBi" id="7mGKYHhkEpY" role="3uHU7w">
-            <node concept="2OqwBi" id="7mGKYHhkBx5" role="2Oq$k0">
-              <node concept="1YBJjd" id="7mGKYHhkAYu" role="2Oq$k0">
-                <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
-              </node>
-              <node concept="3TrEf2" id="7mGKYHhkDmD" role="2OqNvi">
-                <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
-              </node>
-            </node>
-            <node concept="3TrcHB" id="7mGKYHhkESQ" role="2OqNvi">
-              <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="7mGKYHhk_i1" role="3uHU7B">
-            <node concept="1YBJjd" id="7mGKYHhk$Ox" role="2Oq$k0">
-              <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="methodDeclaration" />
-            </node>
-            <node concept="3TrcHB" id="7mGKYHhkA9B" role="2OqNvi">
-              <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="1YaCAy" id="2L1k$oXKZ8O" role="1YuTPh">
-      <property role="TrG5h" value="methodDeclaration" />
+      <property role="TrG5h" value="md" />
       <ref role="1YaFvo" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
     </node>
   </node>
@@ -4017,6 +3920,75 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="7POJCjfnaPd" role="3cqZAp" />
+          <node concept="3clFbJ" id="5eDFAXB$Ser" role="3cqZAp">
+            <node concept="3clFbS" id="5eDFAXB$Set" role="3clFbx">
+              <node concept="2MkqsV" id="5eDFAXB$VOf" role="3cqZAp">
+                <node concept="Xl_RD" id="5eDFAXB$VOx" role="2MkJ7o">
+                  <property role="Xl_RC" value="Static member can't be virtual" />
+                </node>
+                <node concept="1YBJjd" id="7POJCjfndfH" role="2OEOjV">
+                  <ref role="1YBMHb" node="7j9KGYMMNZI" resolve="md" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5eDFAXB$SHU" role="3clFbw">
+              <node concept="1YBJjd" id="7POJCjfnd59" role="2Oq$k0">
+                <ref role="1YBMHb" node="7j9KGYMMNZI" resolve="md" />
+              </node>
+              <node concept="3TrcHB" id="5eDFAXB$Ty1" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:2L1k$oXxncX" resolve="isVirtual" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="15T8UHyn9hs" role="3cqZAp" />
+          <node concept="3clFbJ" id="15T8UHyn9jl" role="3cqZAp">
+            <node concept="3clFbS" id="15T8UHyn9jn" role="3clFbx">
+              <node concept="2MkqsV" id="15T8UHynk$U" role="3cqZAp">
+                <node concept="Xl_RD" id="15T8UHynk$V" role="2MkJ7o">
+                  <property role="Xl_RC" value="Static member can't be volatile" />
+                </node>
+                <node concept="1YBJjd" id="7POJCjfndJg" role="2OEOjV">
+                  <ref role="1YBMHb" node="7j9KGYMMNZI" resolve="md" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="15T8UHyndUu" role="3clFbw">
+              <node concept="1YBJjd" id="7POJCjfndqi" role="2Oq$k0">
+                <ref role="1YBMHb" node="7j9KGYMMNZI" resolve="md" />
+              </node>
+              <node concept="3TrcHB" id="15T8UHynkrc" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:5eDFAXBCpes" resolve="isVolatile" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="7mGKYHhk$HL" role="3cqZAp" />
+          <node concept="3clFbJ" id="7mGKYHhk$M6" role="3cqZAp">
+            <node concept="3clFbS" id="7mGKYHhk$M8" role="3clFbx">
+              <node concept="2MkqsV" id="7mGKYHhkF9y" role="3cqZAp">
+                <node concept="Xl_RD" id="7mGKYHhkF9O" role="2MkJ7o">
+                  <property role="Xl_RC" value="Static member can't be const" />
+                </node>
+                <node concept="1YBJjd" id="7POJCjfndTJ" role="2OEOjV">
+                  <ref role="1YBMHb" node="7j9KGYMMNZI" resolve="md" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7mGKYHhkEpY" role="3clFbw">
+              <node concept="2OqwBi" id="7mGKYHhkBx5" role="2Oq$k0">
+                <node concept="1YBJjd" id="7POJCjfnd$M" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7j9KGYMMNZI" resolve="md" />
+                </node>
+                <node concept="3TrEf2" id="7mGKYHhkDmD" role="2OqNvi">
+                  <ref role="3Tt5mk" to="mj1l:hEaDaGor64" resolve="type" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="7mGKYHhkESQ" role="2OqNvi">
+                <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="7POJCjfnboS" role="3cqZAp" />
         </node>
       </node>
     </node>
@@ -6910,6 +6882,16 @@
     <property role="TrG5h" value="typeof_ICPPCast" />
     <property role="3GE5qa" value="cast" />
     <node concept="3clFbS" id="4lmr4L5krcE" role="18ibNy">
+      <node concept="3SKdUt" id="7POJCjfmbRi" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCjfmbRk" role="3SKWNk">
+          <property role="3SKdUp" value="This is overridden in some cases but this is the base case." />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7POJCjfmbS0" role="3cqZAp">
+        <node concept="3SKdUq" id="7POJCjfmbS2" role="3SKWNk">
+          <property role="3SKdUp" value="The cast expression is equal to the type you're casting to." />
+        </node>
+      </node>
       <node concept="1Z5TYs" id="4lmr4L5krkz" role="3cqZAp">
         <node concept="mw_s8" id="4lmr4L5krkX" role="1ZfhKB">
           <node concept="2OqwBi" id="4lmr4L5krsT" role="mwGJk">

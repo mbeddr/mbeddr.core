@@ -3341,7 +3341,16 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6ddXmWdIsiB" role="3cqZAp" />
+        <node concept="3SKdUt" id="7POJCjfn9ms" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfn9mu" role="3SKWNk">
+            <property role="3SKdUp" value="This just does a cast of the arguments. Sometimes this cast fails but it" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="7POJCjfnatJ" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfnatL" role="3SKWNk">
+            <property role="3SKdUp" value="does not matter because the type can still be successfully checked." />
+          </node>
+        </node>
         <node concept="2Gpval" id="6ddXmWdItSP" role="3cqZAp">
           <node concept="2GrKxI" id="6ddXmWdItSR" role="2Gsz3X">
             <property role="TrG5h" value="arg" />

@@ -1259,6 +1259,9 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      <node concept="t5JxF" id="7POJCjfmbSD" role="lGtFl">
+        <property role="t5JxN" value="The type inside of the &lt; and &gt;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="4lmr4L5bbRB" role="1TKVEi">
       <property role="IQ2ns" value="4996299911448018407" />
@@ -1266,6 +1269,9 @@
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      <node concept="t5JxF" id="7POJCjfmbSG" role="lGtFl">
+        <property role="t5JxN" value="The expression being casted inside ( and )" />
+      </node>
     </node>
     <node concept="t5JxF" id="c7Kd0cGmDh" role="lGtFl">
       <property role="t5JxN" value="Interface that joins all cpp casting types (static, dynamic, const, reinterpret) under a single editor and typecheck" />
