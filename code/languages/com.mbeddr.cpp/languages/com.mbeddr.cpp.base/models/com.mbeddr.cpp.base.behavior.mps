@@ -12672,6 +12672,11 @@
       <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
       <node concept="3Tm1VV" id="1yn8PkzoS_p" role="1B3o_S" />
       <node concept="3clFbS" id="1yn8PkzoS_w" role="3clF47">
+        <node concept="3SKdUt" id="7POJCjfCrDX" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfCrDZ" role="3SKWNk">
+            <property role="3SKdUp" value="A::B" />
+          </node>
+        </node>
         <node concept="3clFbF" id="1yn8PkzoWkT" role="3cqZAp">
           <node concept="3cpWs3" id="1yn8Pkzp4J6" role="3clFbG">
             <node concept="2OqwBi" id="1yn8Pkzp6_V" role="3uHU7w">
@@ -12912,6 +12917,12 @@
                 <ref role="3TsBF5" to="x27k:3kEjc_WIKGg" resolve="headerFileName" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7POJCjfCsWZ" role="3cqZAp" />
+        <node concept="3SKdUt" id="7POJCjfCt53" role="3cqZAp">
+          <node concept="3SKdUq" id="7POJCjfCt55" role="3SKWNk">
+            <property role="3SKdUp" value="Add it to a single-element list to satisfy virtual signature" />
           </node>
         </node>
         <node concept="3cpWs8" id="7POJCje7_T2" role="3cqZAp">
