@@ -9,9 +9,6 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="wnzg" ref="r:24646c42-f8e0-499c-b639-679cfa170a2e(com.mbeddr.cpp.base.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="1yyn" ref="r:64e0a2a9-7957-424b-8102-a5e8a7a73035(com.mbeddr.cpp.templates.structure)" />
-    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="uaom" ref="r:00838eaa-3253-4491-82f7-437f360206d2(com.mbeddr.cpp.templates.behavior)" />
     <import index="kntn" ref="r:4090021e-0c8f-4cca-ab3f-590afb43a745(com.mbeddr.cpp.base.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
@@ -1650,16 +1647,17 @@
                   <node concept="1bVj0M" id="6ODoR9xNN7e" role="23t8la">
                     <node concept="3clFbS" id="6ODoR9xNN7f" role="1bW5cS">
                       <node concept="3clFbF" id="6ODoR9xNNkd" role="3cqZAp">
-                        <node concept="3fqX7Q" id="6ODoR9xNOkL" role="3clFbG">
-                          <node concept="2OqwBi" id="6ODoR9xNOKM" role="3fr31v">
-                            <node concept="37vLTw" id="6ODoR9xNOkU" role="2Oq$k0">
+                        <node concept="2OqwBi" id="7POJCjhkTqn" role="3clFbG">
+                          <node concept="2OqwBi" id="7POJCjharS7" role="2Oq$k0">
+                            <node concept="37vLTw" id="7POJCjharsf" role="2Oq$k0">
                               <ref role="3cqZAo" node="6ODoR9xNN7g" resolve="it" />
                             </node>
-                            <node concept="1mIQ4w" id="6ODoR9xNQSF" role="2OqNvi">
-                              <node concept="chp4Y" id="6ODoR9xNRah" role="cj9EA">
-                                <ref role="cht4Q" to="1yyn:ZKpU3C3Nka" resolve="TemplateClassDeclaration" />
-                              </node>
+                            <node concept="2qgKlT" id="7POJCjhkT7q" role="2OqNvi">
+                              <ref role="37wK5l" to="kntn:2yiFVcKzYCg" resolve="getType" />
                             </node>
+                          </node>
+                          <node concept="2qgKlT" id="7POJCjhvfCf" role="2OqNvi">
+                            <ref role="37wK5l" to="kntn:7POJCjhallK" resolve="shouldDefaultScope" />
                           </node>
                         </node>
                       </node>
