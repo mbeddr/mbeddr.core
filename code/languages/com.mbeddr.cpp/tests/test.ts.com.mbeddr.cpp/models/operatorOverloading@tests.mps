@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c3746bc6-a37f-425d-aa06-0fca51eac470(test.ts.com.mbeddr.cpp.operator_overloading@tests)">
+<model ref="r:c3746bc6-a37f-425d-aa06-0fca51eac470(test.ts.com.mbeddr.cpp.operatorOverloading@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
