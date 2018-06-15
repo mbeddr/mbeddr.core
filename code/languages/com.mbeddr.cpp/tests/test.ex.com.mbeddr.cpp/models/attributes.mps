@@ -5,9 +5,7 @@
     <engage id="236f3e56-2360-4657-9b9d-0cb84f56784d" name="com.mbeddr.cpp.modules.gen" />
     <devkit ref="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" />
   </languages>
-  <imports>
-    <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
-  </imports>
+  <imports />
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
@@ -141,7 +139,7 @@
     </language>
   </registry>
   <node concept="1whW_1" id="4lmr4L5g4z$">
-    <property role="TrG5h" value="ClassAttributes" />
+    <property role="TrG5h" value="ClassAttribute" />
     <node concept="3mBW2U" id="3e4PW88DTsT" role="N3F5h">
       <property role="2OOxQR" value="false" />
       <property role="1wg9_F" value="public" />
@@ -268,7 +266,7 @@
       <property role="iO3LB" value="true" />
       <ref role="3oK8_y" node="4lmr4L5g4zy" resolve="portable" />
       <node concept="2v9HqM" id="4lmr4L5g4zt" role="2eOfOg">
-        <ref role="2v9HqP" node="4lmr4L5g4z$" resolve="ClassAttributes" />
+        <ref role="2v9HqP" node="4lmr4L5g4z$" resolve="ClassAttribute" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="4lmr4L5g4zq" role="2Q9xDr">

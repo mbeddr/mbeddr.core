@@ -2,13 +2,10 @@
 <model ref="r:079e0c6d-7e48-40c4-8831-c5ca33bf7f20(test.ex.com.mbeddr.cpp.typeInference)">
   <persistence version="9" />
   <languages>
-    <use id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base" version="0" />
     <engage id="236f3e56-2360-4657-9b9d-0cb84f56784d" name="com.mbeddr.cpp.modules.gen" />
     <devkit ref="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" />
   </languages>
-  <imports>
-    <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
-  </imports>
+  <imports />
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
@@ -158,7 +155,7 @@
   <node concept="2v9HqL" id="3fD_lX7EkLh">
     <node concept="2eOfOl" id="4o2nsMgBpPF" role="2ePNbc">
       <property role="iO3LB" value="true" />
-      <property role="TrG5h" value="Auto_Tests" />
+      <property role="TrG5h" value="typeInference" />
       <ref role="3oK8_y" node="3v5DuFDkAwn" resolve="portable" />
       <node concept="2v9HqM" id="2O2YBLCmwFd" role="2eOfOg">
         <ref role="2v9HqP" node="2O2YBLCmwEn" resolve="Auto" />

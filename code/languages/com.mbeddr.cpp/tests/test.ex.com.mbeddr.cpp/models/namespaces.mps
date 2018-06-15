@@ -810,7 +810,7 @@
   </node>
   <node concept="2v9HqL" id="3UJ18qjr4KB">
     <node concept="2eOfOl" id="4o2nsMgBpPF" role="2ePNbc">
-      <property role="TrG5h" value="Namespaces" />
+      <property role="TrG5h" value="namespaceds" />
       <property role="iO3LB" value="true" />
       <ref role="3oK8_y" node="3UJ18qjqZ$7" resolve="portable" />
       <node concept="2v9HqM" id="3UJ18qjr4L7" role="2eOfOg">
