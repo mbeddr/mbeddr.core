@@ -18,6 +18,9 @@
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
       </concept>
+      <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
+        <child id="8624890525768479139" name="textblock" index="3SJzmv" />
+      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
         <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
@@ -27,6 +30,14 @@
       <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
@@ -65,12 +76,15 @@
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ng" index="2Q9xDo">
         <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
       </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
-      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlagConcept" flags="ng" index="226hDU">
+      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlag" flags="ng" index="226hDU">
         <property id="2277423264798216735" name="isStatic" index="226hDV" />
       </concept>
       <concept id="1646161959635344797" name="com.mbeddr.cpp.base.structure.UsingNamespaceMethodDeclaration" flags="ng" index="282KC9">
@@ -97,6 +111,7 @@
         <reference id="9073566385413949135" name="namespace" index="2XrsT2" />
         <reference id="9073566385413949148" name="attribute" index="2XrsTh" />
       </concept>
+      <concept id="4362269716971787562" name="com.mbeddr.cpp.base.structure.GeneralComment" flags="ng" index="321v0r" />
       <concept id="1806247817174637195" name="com.mbeddr.cpp.base.structure.UsingNamespaceAttributeDeclaration" flags="ng" index="365sTq">
         <reference id="1806247817174637209" name="attribute" index="365sT8" />
         <reference id="1806247817174637199" name="namespace" index="365sTu" />
@@ -195,6 +210,15 @@
     <property role="TrG5h" value="Namespace" />
     <node concept="dq960" id="3UJ18qjr4Rs" role="N3F5h">
       <property role="TrG5h" value="A" />
+      <node concept="321v0r" id="7POJCjgR2tU" role="ds5Fi">
+        <node concept="OjmMv" id="7POJCjgR2tW" role="3SJzmv">
+          <node concept="19SGf9" id="7POJCjgR2tX" role="OjmMu">
+            <node concept="19SUe$" id="7POJCjgR2tY" role="19SJt6">
+              <property role="19SUeA" value="Namespace comment" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3mBbG7" id="mwDIXxb$5T" role="ds5Fi">
         <property role="TrG5h" value="aInt" />
         <property role="226hDV" value="false" />

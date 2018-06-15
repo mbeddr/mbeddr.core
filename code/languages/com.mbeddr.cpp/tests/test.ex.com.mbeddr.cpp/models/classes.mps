@@ -106,15 +106,15 @@
       </concept>
     </language>
     <language id="8c081446-e4ba-48b7-a7e0-3db40e2c3439" name="com.mbeddr.cpp.base">
-      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlagConcept" flags="ng" index="226hDU">
+      <concept id="2277423264798216734" name="com.mbeddr.cpp.base.structure.IStaticFlag" flags="ng" index="226hDU">
         <property id="2277423264798216735" name="isStatic" index="226hDV" />
       </concept>
-      <concept id="2277423264798199359" name="com.mbeddr.cpp.base.structure.IInlineFlagConcept" flags="ng" index="226Gpr">
+      <concept id="2277423264798199359" name="com.mbeddr.cpp.base.structure.IInlineFlag" flags="ng" index="226Gpr">
         <property id="2277423264798199360" name="isInlined" index="226Go$" />
       </concept>
       <concept id="7240228573262412204" name="com.mbeddr.cpp.base.structure.LocalClassVariableDeclaration" flags="ng" index="2dywKE">
         <reference id="7240228573263980490" name="constructor" index="2esx9c" />
-        <child id="7240228573265829198" name="constructor_arg_actuals" index="2enIz8" />
+        <child id="7240228573265829198" name="constructorArgActuals" index="2enIz8" />
       </concept>
       <concept id="7240228573260630076" name="com.mbeddr.cpp.base.structure.ConstructorVoidType" flags="ng" index="2dFNQU" />
       <concept id="7844497894798008401" name="com.mbeddr.cpp.base.structure.ClassConstructorSignature" flags="ng" index="2gom4k">
@@ -125,10 +125,10 @@
       <concept id="7844497894798008359" name="com.mbeddr.cpp.base.structure.ClassConstructorDeclaration" flags="ng" index="2gom5y">
         <reference id="7844497894798008388" name="parentClass" index="2gom41" />
       </concept>
-      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualFlagConcept" flags="ng" index="hL25U">
+      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualFlag" flags="ng" index="hL25U">
         <property id="3188920472788366141" name="isVirtual" index="hL25V" />
       </concept>
-      <concept id="3188920472790477822" name="com.mbeddr.cpp.base.structure.IPureVirtualFlagConcept" flags="ng" index="hTfAS">
+      <concept id="3188920472790477822" name="com.mbeddr.cpp.base.structure.IPureVirtualFlag" flags="ng" index="hTfAS">
         <property id="3188920472790477826" name="isPureVirtual" index="hTfT4" />
       </concept>
       <concept id="137823117410394117" name="com.mbeddr.cpp.base.structure.ConstructorInitializedConstructor" flags="ng" index="yZclw">
@@ -144,13 +144,13 @@
         <property id="4511589886097466677" name="visibility" index="FysoG" />
         <reference id="4511589886097466674" name="parentClass" index="FysoF" />
       </concept>
-      <concept id="6028541369719415919" name="com.mbeddr.cpp.base.structure.IConstExprFlagConcept" flags="ng" index="OtGC0">
+      <concept id="6028541369719415919" name="com.mbeddr.cpp.base.structure.IConstExprFlag" flags="ng" index="OtGC0">
         <property id="6028541369719415920" name="isConstExpr" index="OtGCv" />
       </concept>
       <concept id="1771923826942799313" name="com.mbeddr.cpp.base.structure.InnerClassType" flags="ng" index="TrGU4">
-        <child id="1771923826942799314" name="outerclassType" index="TrGU7" />
+        <child id="1771923826942799314" name="outerClassType" index="TrGU7" />
       </concept>
-      <concept id="4362269716971787562" name="com.mbeddr.cpp.base.structure.ClassComment" flags="ng" index="321v0r" />
+      <concept id="4362269716971787562" name="com.mbeddr.cpp.base.structure.GeneralComment" flags="ng" index="321v0r" />
       <concept id="5487882147173150554" name="com.mbeddr.cpp.base.structure.NewObjectInitializer" flags="ng" index="3jnB3A">
         <reference id="5487882147173193839" name="identity" index="3jnSvj" />
         <child id="5487882147173193836" name="actuals" index="3jnSvg" />
@@ -166,7 +166,7 @@
         <property id="2995459757115087788" name="visibility" index="1wg9_F" />
       </concept>
       <concept id="5044697665789405022" name="com.mbeddr.cpp.base.structure.ClassType" flags="ng" index="3mBfEi">
-        <reference id="5044697665789405054" name="clazz" index="3mBfEM" />
+        <reference id="5044697665789405054" name="class" index="3mBfEM" />
       </concept>
       <concept id="5044697665789336950" name="com.mbeddr.cpp.base.structure.ClassDeclaration" flags="ng" index="3mBW2U">
         <child id="4511589886097466568" name="ancestors" index="Fysvh" />
@@ -361,7 +361,15 @@
     <node concept="3mBW2U" id="2Ai0Gt9Qxgo" role="N3F5h">
       <property role="TrG5h" value="Counter" />
       <property role="2OOxQR" value="false" />
-      <node concept="3u$6M4" id="nbE_$_7VlV" role="3mBdys" />
+      <node concept="321v0r" id="7POJCjgR2AY" role="3mBdys">
+        <node concept="OjmMv" id="7POJCjgR2B0" role="3SJzmv">
+          <node concept="19SGf9" id="7POJCjgR2B1" role="OjmMu">
+            <node concept="19SUe$" id="7POJCjgR2B2" role="19SJt6">
+              <property role="19SUeA" value="Class comment" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3mBbG7" id="3v5DuFDqjul" role="3mBdys">
         <property role="TrG5h" value="value" />
         <property role="226hDV" value="false" />
