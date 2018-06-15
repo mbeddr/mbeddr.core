@@ -5,7 +5,6 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
-    <devkit ref="bdd1ab49-ce55-4bff-86d1-5394fa0aa930(com.mbeddr.cpp)" />
   </languages>
   <imports>
     <import index="wlyv" ref="r:a0a28ed3-d146-47eb-a19a-e026ce786b29(com.mbeddr.cpp.modules.structure)" />
@@ -29,7 +28,6 @@
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
     <import index="zhp8" ref="r:66d213c1-a12b-4017-8dd5-0423703c30a9(com.mbeddr.cpp.operator_overload.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
-    <import index="1yyn" ref="r:64e0a2a9-7957-424b-8102-a5e8a7a73035(com.mbeddr.cpp.templates.structure)" implicit="true" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
@@ -316,6 +314,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -355,6 +354,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
       </concept>
@@ -662,7 +664,7 @@
         <node concept="3clFbS" id="1N32NMNTKO$" role="3clFbx">
           <node concept="2MkqsV" id="1N32NMNTZA1" role="3cqZAp">
             <node concept="Xl_RD" id="1N32NMNTZAj" role="2MkJ7o">
-              <property role="Xl_RC" value="template class type without template specifiers" />
+              <property role="Xl_RC" value="template class type without template specifiers (alt+enter to fix)" />
             </node>
             <node concept="1YBJjd" id="1N32NMNTZAO" role="2OEOjV">
               <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
@@ -670,82 +672,34 @@
           </node>
         </node>
         <node concept="1Wc70l" id="1N32NMNTTlx" role="3clFbw">
-          <node concept="2OqwBi" id="1N32NMNTWE1" role="3uHU7w">
-            <node concept="2OqwBi" id="1N32NMNTUOw" role="2Oq$k0">
-              <node concept="1YBJjd" id="1N32NMNTU0X" role="2Oq$k0">
+          <node concept="2OqwBi" id="45faY2umDeO" role="3uHU7w">
+            <node concept="2OqwBi" id="45faY2umDeP" role="2Oq$k0">
+              <node concept="1YBJjd" id="45faY2umDeQ" role="2Oq$k0">
                 <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
               </node>
-              <node concept="3TrEf2" id="1N32NMNTVAj" role="2OqNvi">
+              <node concept="3TrEf2" id="45faY2umDeR" role="2OqNvi">
                 <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
               </node>
             </node>
-            <node concept="1mIQ4w" id="1N32NMNTYbg" role="2OqNvi">
-              <node concept="chp4Y" id="1N32NMNTYQw" role="cj9EA">
-                <ref role="cht4Q" to="1yyn:ZKpU3C3Nka" resolve="TemplateClassDeclaration" />
-              </node>
+            <node concept="2qgKlT" id="45faY2ux2V_" role="2OqNvi">
+              <ref role="37wK5l" to="kntn:45faY2u7tAw" resolve="canTemplateTransform" />
             </node>
           </node>
-          <node concept="3fqX7Q" id="1N32NMNTPbi" role="3uHU7B">
-            <node concept="2OqwBi" id="1N32NMNTPXK" role="3fr31v">
-              <node concept="1YBJjd" id="1N32NMNTPbj" role="2Oq$k0">
+          <node concept="2OqwBi" id="45faY2umyBT" role="3uHU7B">
+            <node concept="2OqwBi" id="45faY2umxlf" role="2Oq$k0">
+              <node concept="1YBJjd" id="45faY2umwID" role="2Oq$k0">
                 <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
               </node>
-              <node concept="1mIQ4w" id="1N32NMNTQP1" role="2OqNvi">
-                <node concept="chp4Y" id="1N32NMNTRv6" role="cj9EA">
-                  <ref role="cht4Q" to="1yyn:ZKpU3C47B6" resolve="ITemplateImpl" />
-                </node>
+              <node concept="2yIwOk" id="45faY2umxVJ" role="2OqNvi" />
+            </node>
+            <node concept="3O6GUB" id="45faY2umzlC" role="2OqNvi">
+              <node concept="chp4Y" id="45faY2um$93" role="3QVz_e">
+                <ref role="cht4Q" to="wnzg:3UsoL$l5qkL" resolve="InheritanceInstance" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="3SKdUt" id="c7Kd0eKUyf" role="3cqZAp">
-        <node concept="3SKdUq" id="c7Kd0eKUyh" role="3SKWNk">
-          <property role="3SKdUp" value="Error if this instance has template types but should not" />
-        </node>
-      </node>
-      <node concept="3clFbJ" id="1N32NMNTZWE" role="3cqZAp">
-        <node concept="3clFbS" id="1N32NMNTZWF" role="3clFbx">
-          <node concept="2MkqsV" id="1N32NMNTZWG" role="3cqZAp">
-            <node concept="Xl_RD" id="1N32NMNTZWH" role="2MkJ7o">
-              <property role="Xl_RC" value="non-template class type with template specifiers" />
-            </node>
-            <node concept="1YBJjd" id="1N32NMNTZWI" role="2OEOjV">
-              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
-            </node>
-          </node>
-        </node>
-        <node concept="1Wc70l" id="1N32NMNTZWJ" role="3clFbw">
-          <node concept="3fqX7Q" id="1N32NMNU1k4" role="3uHU7w">
-            <node concept="2OqwBi" id="1N32NMNU1k6" role="3fr31v">
-              <node concept="2OqwBi" id="1N32NMNU1k7" role="2Oq$k0">
-                <node concept="1YBJjd" id="1N32NMNU1k8" role="2Oq$k0">
-                  <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
-                </node>
-                <node concept="3TrEf2" id="1N32NMNU1k9" role="2OqNvi">
-                  <ref role="3Tt5mk" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
-                </node>
-              </node>
-              <node concept="1mIQ4w" id="1N32NMNU1ka" role="2OqNvi">
-                <node concept="chp4Y" id="1N32NMNU1kb" role="cj9EA">
-                  <ref role="cht4Q" to="1yyn:ZKpU3C3Nka" resolve="TemplateClassDeclaration" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="1N32NMNTZWR" role="3uHU7B">
-            <node concept="1YBJjd" id="1N32NMNTZWS" role="2Oq$k0">
-              <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
-            </node>
-            <node concept="1mIQ4w" id="1N32NMNTZWT" role="2OqNvi">
-              <node concept="chp4Y" id="1N32NMNTZWU" role="cj9EA">
-                <ref role="cht4Q" to="1yyn:ZKpU3C47B6" resolve="ITemplateImpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="1N32NMNTZBi" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="4K6s$_rq5Gi" role="1YuTPh">
       <property role="TrG5h" value="inheritanceInstance" />
@@ -3317,6 +3271,9 @@
           <node concept="3clFbT" id="4V1wcOaL4_Z" role="37wK5m">
             <property role="3clFbU" value="true" />
           </node>
+          <node concept="3clFbT" id="45faY2vaqg5" role="37wK5m">
+            <property role="3clFbU" value="false" />
+          </node>
         </node>
       </node>
       <node concept="3clFbH" id="7POJCjf3$sB" role="3cqZAp" />
@@ -4734,18 +4691,8 @@
                       <node concept="3clFbJ" id="4V1wcOaIIdV" role="3cqZAp">
                         <node concept="1Wc70l" id="6Rfiwa9QHTR" role="3clFbw">
                           <node concept="3fqX7Q" id="6Rfiwa9QHYC" role="3uHU7w">
-                            <node concept="2OqwBi" id="6Rfiwa9QIZf" role="3fr31v">
-                              <node concept="2OqwBi" id="6Rfiwa9QIdA" role="2Oq$k0">
-                                <node concept="37vLTw" id="6Rfiwa9QHYV" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="4V1wcOaIIdO" resolve="actual" />
-                                </node>
-                                <node concept="1mfA1w" id="6Rfiwa9QIzY" role="2OqNvi" />
-                              </node>
-                              <node concept="1mIQ4w" id="6Rfiwa9QJaz" role="2OqNvi">
-                                <node concept="chp4Y" id="6Rfiwa9QJgm" role="cj9EA">
-                                  <ref role="cht4Q" to="1yyn:76fdl5j8d3I" resolve="TemplateQualifiedMethodCall" />
-                                </node>
-                              </node>
+                            <node concept="37vLTw" id="45faY2vaq0Q" role="3fr31v">
+                              <ref role="3cqZAo" node="45faY2vaoZR" resolve="isTemplateCall" />
                             </node>
                           </node>
                           <node concept="3fqX7Q" id="4V1wcOaIIe5" role="3uHU7B">
@@ -5000,6 +4947,11 @@
         <property role="3TUv4t" value="true" />
         <node concept="10P_77" id="4V1wcOaL2mf" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="45faY2vaoZR" role="3clF46">
+        <property role="3TUv4t" value="true" />
+        <property role="TrG5h" value="isTemplateCall" />
+        <node concept="10P_77" id="45faY2vapTm" role="1tU5fm" />
+      </node>
       <node concept="2AHcQZ" id="4V1wcOaIywP" role="2AJF6D">
         <ref role="2AI5Lk" to="tpd5:hq1Hpmb" resolve="InferenceMethod" />
       </node>
@@ -5039,6 +4991,12 @@
           <property role="TUZQ4" value="True if this is a new declaration" />
           <node concept="zr_55" id="4V1wcOaL4ul" role="zr_5Q">
             <ref role="zr_51" node="4V1wcOaL1tE" resolve="isInitializer" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="45faY2vapVa" role="3nqlJM">
+          <property role="TUZQ4" value="True if this is a TemplateQualifiedMethodCall" />
+          <node concept="zr_55" id="45faY2vapVL" role="zr_5Q">
+            <ref role="zr_51" node="45faY2vaoZR" resolve="isTemplateCall" />
           </node>
         </node>
       </node>

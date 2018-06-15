@@ -603,6 +603,68 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="7POJCjhallK" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="shouldDefaultScope" />
+      <node concept="3Tm1VV" id="7POJCjhallL" role="1B3o_S" />
+      <node concept="10P_77" id="7POJCjhalPe" role="3clF45" />
+      <node concept="3clFbS" id="7POJCjhallN" role="3clF47">
+        <node concept="3clFbF" id="7POJCjham3_" role="3cqZAp">
+          <node concept="3clFbT" id="7POJCjham3$" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="7POJCjhlse5" role="lGtFl">
+        <node concept="TZ5HA" id="7POJCjhlse6" role="TZ5H$">
+          <node concept="1dT_AC" id="7POJCjhlse7" role="1dT_Ay">
+            <property role="1dT_AB" value="Set this to true if a child of this concept should not be included in the default scopes." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="45faY2ux76K" role="13h7CS">
+      <property role="TrG5h" value="getReplacementType" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="45faY2ux76L" role="1B3o_S" />
+      <node concept="3Tqbb2" id="45faY2ux7wk" role="3clF45">
+        <ref role="ehGHo" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
+      </node>
+      <node concept="3clFbS" id="45faY2ux76N" role="3clF47">
+        <node concept="3clFbF" id="45faY2ux956" role="3cqZAp">
+          <node concept="2OqwBi" id="45faY2ux9iF" role="3clFbG">
+            <node concept="37vLTw" id="45faY2ux951" role="2Oq$k0">
+              <ref role="3cqZAo" node="45faY2ux8ZD" resolve="from" />
+            </node>
+            <node concept="1$rogu" id="45faY2ux9Eo" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="45faY2ux7xC" role="lGtFl">
+        <node concept="TZ5HA" id="45faY2ux7xD" role="TZ5H$">
+          <node concept="1dT_AC" id="45faY2ux7xE" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a node which can replace this one. Used for transformation menus to decouple dependent langauges" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="45faY2ux90w" role="TZ5H$">
+          <node concept="1dT_AC" id="45faY2ux90x" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="45faY2ux90W" role="3nqlJM">
+          <property role="TUZQ4" value="the node to replace" />
+          <node concept="zr_55" id="45faY2ux91k" role="zr_5Q">
+            <ref role="zr_51" node="45faY2ux8ZD" resolve="from" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="45faY2ux8ZD" role="3clF46">
+        <property role="TrG5h" value="from" />
+        <node concept="3Tqbb2" id="45faY2ux8ZC" role="1tU5fm">
+          <ref role="ehGHo" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="4o2nsMgBFbE">
     <property role="3GE5qa" value="class" />
@@ -2621,6 +2683,26 @@
       </node>
       <node concept="A3Dl8" id="3v5DuFDl4Mq" role="3clF45">
         <node concept="3Tqbb2" id="3v5DuFDl4Mr" role="A3Ik2" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="45faY2u7tAw" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="canTemplateTransform" />
+      <node concept="3Tm1VV" id="45faY2u7tAx" role="1B3o_S" />
+      <node concept="10P_77" id="45faY2u7ysi" role="3clF45" />
+      <node concept="3clFbS" id="45faY2u7tAz" role="3clF47">
+        <node concept="3clFbF" id="45faY2u7AqL" role="3cqZAp">
+          <node concept="3clFbT" id="45faY2u7AqK" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="45faY2u7ysQ" role="lGtFl">
+        <node concept="TZ5HA" id="45faY2u7ysR" role="TZ5H$">
+          <node concept="1dT_AC" id="45faY2u7ysS" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if you can use a right-transformation to template this type." />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -8402,7 +8484,7 @@
               </node>
             </node>
             <node concept="BsUDl" id="r2pGcfOeC9" role="33vP2m">
-              <ref role="37wK5l" node="r2pGcfLSmw" />
+              <ref role="37wK5l" node="r2pGcfLSmw" resolve="getFunctionStatements" />
             </node>
           </node>
         </node>
@@ -8411,7 +8493,7 @@
             <property role="TrG5h" value="statement" />
           </node>
           <node concept="37vLTw" id="r2pGcfNSqM" role="2GsD0m">
-            <ref role="3cqZAo" node="r2pGcfNSqG" />
+            <ref role="3cqZAo" node="r2pGcfNSqG" resolve="statements" />
           </node>
           <node concept="3clFbS" id="r2pGcfNSqN" role="2LFqv$">
             <node concept="2Gpval" id="r2pGcfNSqY" role="3cqZAp">
@@ -8437,7 +8519,7 @@
                     <node concept="3eOVzh" id="r2pGcfNSr9" role="3uHU7w">
                       <node concept="2OqwBi" id="r2pGcfNSra" role="3uHU7w">
                         <node concept="37vLTw" id="r2pGcfNSrb" role="2Oq$k0">
-                          <ref role="3cqZAo" node="r2pGcfNSqG" />
+                          <ref role="3cqZAo" node="r2pGcfNSqG" resolve="statements" />
                         </node>
                         <node concept="2WmjW8" id="r2pGcfNSrc" role="2OqNvi">
                           <node concept="2OqwBi" id="r2pGcfNSrd" role="25WWJ7">
@@ -8455,7 +8537,7 @@
                       </node>
                       <node concept="2OqwBi" id="r2pGcfNSrj" role="3uHU7B">
                         <node concept="37vLTw" id="r2pGcfNSrk" role="2Oq$k0">
-                          <ref role="3cqZAo" node="r2pGcfNSqG" />
+                          <ref role="3cqZAo" node="r2pGcfNSqG" resolve="statements" />
                         </node>
                         <node concept="2WmjW8" id="r2pGcfNSrl" role="2OqNvi">
                           <node concept="2OqwBi" id="r2pGcfNSrm" role="25WWJ7">
@@ -8548,7 +8630,7 @@
                     <node concept="3eOVzh" id="6gFj6gtc1hl" role="3uHU7w">
                       <node concept="2OqwBi" id="6gFj6gtc1hm" role="3uHU7B">
                         <node concept="37vLTw" id="6gFj6gtc1hn" role="2Oq$k0">
-                          <ref role="3cqZAo" node="r2pGcfNSqG" />
+                          <ref role="3cqZAo" node="r2pGcfNSqG" resolve="statements" />
                         </node>
                         <node concept="2WmjW8" id="6gFj6gtc1ho" role="2OqNvi">
                           <node concept="2GrUjf" id="6gFj6gtc1hp" role="25WWJ7">
@@ -8558,7 +8640,7 @@
                       </node>
                       <node concept="2OqwBi" id="6gFj6gtc1hq" role="3uHU7w">
                         <node concept="37vLTw" id="6gFj6gtc1hr" role="2Oq$k0">
-                          <ref role="3cqZAo" node="r2pGcfNSqG" />
+                          <ref role="3cqZAo" node="r2pGcfNSqG" resolve="statements" />
                         </node>
                         <node concept="2WmjW8" id="6gFj6gtc1hs" role="2OqNvi">
                           <node concept="2OqwBi" id="6gFj6gtc1ht" role="25WWJ7">
