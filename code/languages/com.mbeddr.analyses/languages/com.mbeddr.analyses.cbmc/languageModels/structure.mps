@@ -475,6 +475,13 @@
       <property role="IQ2ns" value="3246959727582077262" />
       <ref role="20lvS9" to="68mc:5lKnBeAtNw8" resolve="AbstractPicker" />
     </node>
+    <node concept="1TJgyj" id="3RgbR_cgshG" role="1TKVEi">
+      <property role="IQ2ns" value="4454112229486347372" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="includeDirectories" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="68mc:5lKnBeAtNw8" resolve="AbstractPicker" />
+    </node>
     <node concept="1TJgyj" id="1$MI$rgzQuS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="singleLoopsUnwindings" />

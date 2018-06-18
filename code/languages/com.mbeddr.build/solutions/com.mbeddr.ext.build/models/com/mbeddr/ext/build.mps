@@ -1022,6 +1022,12 @@
             <ref role="3bR37D" to="p6ld:ZmkllFPpkT" resolve="com.mbeddr.ext.components.units" />
           </node>
         </node>
+        <node concept="1SiIV0" id="27dKu0Hyd1F" role="3bR37C">
+          <node concept="3bR9La" id="27dKu0Hyd1G" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43JW" resolve="com.mbeddr.core.util" />
+          </node>
+        </node>
         <node concept="398BVA" id="7Vt15sLW_os" role="3LF7KH">
           <ref role="398BVh" node="7Vt15sLW_nb" resolve="mbeddr.ext" />
           <node concept="2Ry0Ak" id="7Vt15sLW_ot" role="iGT6I">
@@ -1048,12 +1054,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="27dKu0Hyd1F" role="3bR37C">
-          <node concept="3bR9La" id="27dKu0Hyd1G" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:7uZw0yZ43JW" resolve="com.mbeddr.core.util" />
           </node>
         </node>
       </node>
@@ -1128,6 +1128,12 @@
             <ref role="3bR37D" to="p6ld:yklW1G3HMa" resolve="com.mbeddr.ext.units" />
           </node>
         </node>
+        <node concept="1SiIV0" id="27dKu0Hyd2h" role="3bR37C">
+          <node concept="3bR9La" id="27dKu0Hyd2i" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
+          </node>
+        </node>
         <node concept="3rtmxn" id="3xFG3bj5bVy" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5bVz" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5bV$" role="3LXTna">
@@ -1142,12 +1148,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="27dKu0Hyd2h" role="3bR37C">
-          <node concept="3bR9La" id="27dKu0Hyd2i" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
           </node>
         </node>
       </node>

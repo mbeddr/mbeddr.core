@@ -61,7 +61,7 @@
     <node concept="1TJgyj" id="3Ts5Ln3NdYJ" role="1TKVEi">
       <property role="IQ2ns" value="4493491910455648175" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tempModel" />
+      <property role="20kJfa" value="temporaryModel" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
     </node>

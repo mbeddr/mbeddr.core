@@ -92,14 +92,14 @@
   <node concept="24kQdi" id="30nlpkLb$Zv">
     <ref role="1XX52x" to="fowb:30nlpkLb$Zl" resolve="SpecificConcepts" />
     <node concept="3F0ifn" id="30nlpkLb$Zx" role="2wV5jI">
-      <property role="3F0ifm" value="concecpts_chooser_testing" />
+      <property role="3F0ifm" value="concepts_chooser_testing" />
     </node>
   </node>
   <node concept="24kQdi" id="52eR6w5Pjou">
     <ref role="1XX52x" to="fowb:52eR6w5Pjok" resolve="RandomImplementationModuleFromSolution" />
     <node concept="3EZMnI" id="52eR6w5Pjow" role="2wV5jI">
       <node concept="3F0ifn" id="52eR6w5Pjox" role="3EZMnx">
-        <property role="3F0ifm" value="random from" />
+        <property role="3F0ifm" value="random implementation module from" />
       </node>
       <node concept="3F1sOY" id="52eR6w5Pjoy" role="3EZMnx">
         <ref role="1NtTu8" to="fowb:52eR6w5Pjol" resolve="module" />

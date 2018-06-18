@@ -149,7 +149,7 @@
             <node concept="3cpWsn" id="2lop6rSga6k" role="3cpWs9">
               <property role="TrG5h" value="scope" />
               <node concept="2I9FWS" id="2lop6rSga6l" role="1tU5fm">
-                <ref role="2I9WkF" to="gfdq:5aWlhTu2ZzL" resolve="LanguageRegexReference" />
+                <ref role="2I9WkF" to="gfdq:5aWlhTu2ZzL" resolve="InterestingLanguages" />
               </node>
               <node concept="2OqwBi" id="2lop6rSga6m" role="33vP2m">
                 <node concept="2OqwBi" id="2lop6rSga6n" role="2Oq$k0">
