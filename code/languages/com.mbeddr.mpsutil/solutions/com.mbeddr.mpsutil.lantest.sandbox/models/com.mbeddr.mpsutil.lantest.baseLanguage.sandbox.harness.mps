@@ -9,9 +9,24 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="0617b2ed-f9cf-44b7-b91d-b3a8e60bae7f" name="com.mbeddr.mpsutil.lantest.baselang" version="-1" />
   </languages>
-  <imports />
+  <imports>
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+  </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
@@ -21,8 +36,27 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
       </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -83,41 +117,41 @@
     </language>
   </registry>
   <node concept="13Gd1p" id="6fGXG$6dmgU">
-    <property role="13GOwg" value="3" />
-    <property role="13Gz9I" value="100" />
+    <property role="13GOwg" value="5" />
+    <property role="13Gz9I" value="10000" />
     <property role="TrG5h" value="config" />
     <property role="1s6Q3N" value="2" />
-    <property role="20wqWe" value="1" />
+    <property role="20wqWe" value="3" />
     <property role="3zPyIB" value="true" />
     <property role="3zPyIU" value="true" />
     <property role="3zPyLd" value="true" />
     <property role="2$dOGW" value="d:\temp\lantest_log\" />
     <node concept="BaHAS" id="6fGXG$6dmgV" role="1saM0L">
-      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.assertions.sandbox.res" />
+      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.res" />
       <property role="BaGAP" value="" />
     </node>
     <node concept="1emTa" id="6fGXG$6dmjf" role="1emjp" />
     <node concept="BaHAS" id="6fGXG$6dmgZ" role="1llUH_">
-      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.assertions.sandbox.temp" />
+      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.temp" />
       <property role="BaGAP" value="" />
     </node>
     <node concept="1$QBG2" id="3cUcim$dilZ" role="1$QBHO" />
     <node concept="3XUKX$" id="3Ts5Ln3IakA" role="3CPbyU">
       <node concept="BaHAS" id="3Ts5Ln3Mpq4" role="3XAc6P">
-        <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.assertions.sandbox.buggy_classes" />
+        <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.buggy_classes" />
         <property role="BaGAP" value="" />
       </node>
       <node concept="BaHAS" id="3Ts5Ln3Mpqj" role="3XAc6O">
-        <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.assertions.sandbox.res" />
+        <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.harness" />
         <property role="BaGAP" value="" />
       </node>
       <node concept="BaHAS" id="3Ts5Ln3NpTN" role="3X$cyU">
-        <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.assertions.sandbox.temp" />
+        <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.temp" />
         <property role="BaGAP" value="" />
       </node>
     </node>
     <node concept="BaHAS" id="5upaw7gLyQU" role="1zXyiG">
-      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.assertions.sandbox.buggy_classes" />
+      <property role="BaHAW" value="com.mbeddr.mpsutil.lantest.baseLanguage.sandbox.buggy_classes" />
       <property role="BaGAP" value="" />
     </node>
     <node concept="fhwn3" id="4saLLt23Vzi" role="fhwmk">
@@ -137,6 +171,28 @@
       <property role="TrG5h" value="a" />
       <property role="3TUv4t" value="false" />
       <node concept="10Oyi0" id="3Ts5Ln3HLuo" role="1tU5fm" />
+    </node>
+    <node concept="2tJIrI" id="15I9rXSLZP1" role="jymVt" />
+    <node concept="3clFb_" id="15I9rXSLZPt" role="jymVt">
+      <property role="TrG5h" value="foo" />
+      <node concept="3cqZAl" id="15I9rXSLZPv" role="3clF45" />
+      <node concept="3Tm1VV" id="15I9rXSLZPw" role="1B3o_S" />
+      <node concept="3clFbS" id="15I9rXSLZPx" role="3clF47">
+        <node concept="3clFbF" id="15I9rXSLZQC" role="3cqZAp">
+          <node concept="2OqwBi" id="15I9rXSLZQ_" role="3clFbG">
+            <node concept="10M0yZ" id="15I9rXSLZQA" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="15I9rXSLZQB" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="15I9rXSLZS2" role="37wK5m">
+                <property role="Xl_RC" value="fds" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="3Ts5Ln3HLtE" role="1B3o_S" />
   </node>
