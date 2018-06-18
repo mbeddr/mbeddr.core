@@ -642,6 +642,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="RW4ostvOHk" role="3cqZAp">
+          <node concept="3clFbS" id="RW4ostvOHm" role="3clFbx">
+            <node concept="lc7rE" id="RW4ostvQ5E" role="3cqZAp">
+              <node concept="la8eA" id="RW4ostvQ64" role="lcghm">
+                <property role="lacIc" value="thread_local " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="RW4ostvPpy" role="3clFbw">
+            <node concept="117lpO" id="RW4ostvP71" role="2Oq$k0" />
+            <node concept="3TrcHB" id="RW4ostvQ1e" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:5eDFAXBS4m8" resolve="isThreadLocal" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="5eDFAXBRRf0" role="3cqZAp">
           <node concept="3clFbS" id="5eDFAXBRRf2" role="3clFbx">
             <node concept="lc7rE" id="5eDFAXBRSj2" role="3cqZAp">
@@ -672,7 +687,21 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5eDFAXBRQBj" role="3cqZAp" />
+        <node concept="3clFbJ" id="RW4ostvQ$N" role="3cqZAp">
+          <node concept="3clFbS" id="RW4ostvQ$P" role="3clFbx">
+            <node concept="lc7rE" id="RW4ostvRXx" role="3cqZAp">
+              <node concept="la8eA" id="RW4ostvRXV" role="lcghm">
+                <property role="lacIc" value="mutable " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="RW4ostvRhp" role="3clFbw">
+            <node concept="117lpO" id="RW4ostvQYS" role="2Oq$k0" />
+            <node concept="3TrcHB" id="RW4ostvRT5" role="2OqNvi">
+              <ref role="3TsBF5" to="wnzg:15T8UHynq3I" resolve="isMutable" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="5eDFAXBthOh" role="3cqZAp">
           <node concept="3clFbS" id="5eDFAXBthOj" role="3clFbx">
             <node concept="lc7rE" id="5eDFAXBtiDY" role="3cqZAp">
