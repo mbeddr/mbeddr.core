@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6ef63d51-2e35-4ffd-80c1-93194fab0d0f(test.ex.com.mbeddr.cpp.dynamicmemory)">
+<model ref="r:6ef63d51-2e35-4ffd-80c1-93194fab0d0f(test.ex.com.mbeddr.cpp.dynamicMemory)">
   <persistence version="9" />
   <languages>
     <engage id="236f3e56-2360-4657-9b9d-0cb84f56784d" name="com.mbeddr.cpp.modules.gen" />

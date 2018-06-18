@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0fbd4d2c-821f-474c-8dec-d68ef0e355ac(test.ex.com.mbeddr.cpp.operatoroverloading)">
+<model ref="r:0fbd4d2c-821f-474c-8dec-d68ef0e355ac(test.ex.com.mbeddr.cpp.operatorOverloading)">
   <persistence version="9" />
   <languages>
     <engage id="236f3e56-2360-4657-9b9d-0cb84f56784d" name="com.mbeddr.cpp.modules.gen" />
@@ -839,5 +839,4 @@
     </node>
   </node>
 </model>
-
 
