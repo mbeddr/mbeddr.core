@@ -4791,7 +4791,7 @@
                   <ref role="3cqZAo" node="heOoiHw" resolve="editorContext" />
                 </node>
                 <node concept="3nyPlj" id="3Km1Pf7cimE" role="37wK5m">
-                  <ref role="37wK5l" to="p9jd:~RefNodeListHandler.getElementRole():java.lang.String" resolve="getElementRole" />
+                  <ref role="37wK5l" to="emqf:~AbstractCellListHandler.getElementRole():java.lang.String" resolve="getElementRole" />
                 </node>
               </node>
             </node>
@@ -5019,7 +5019,7 @@
                   <ref role="3cqZAo" node="8dI1zL4mCv" resolve="emptyCell" />
                 </node>
                 <node concept="3nyPlj" id="8dI1zL4mCR" role="37vLTx">
-                  <ref role="37wK5l" to="p9jd:~RefNodeListHandler.createEmptyCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="createEmptyCell" />
+                  <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createEmptyCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="createEmptyCell" />
                 </node>
               </node>
               <node concept="1W57fq" id="8dI1zL4mCT" role="lGtFl">

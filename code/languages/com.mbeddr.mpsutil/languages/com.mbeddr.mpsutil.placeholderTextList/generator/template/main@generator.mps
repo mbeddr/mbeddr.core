@@ -1827,7 +1827,7 @@
                   <ref role="3cqZAo" node="XrrhtvD5$H" resolve="emptyCell" />
                 </node>
                 <node concept="3nyPlj" id="XrrhtvD5_6" role="37vLTx">
-                  <ref role="37wK5l" to="p9jd:~RefNodeListHandler.createEmptyCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="createEmptyCell" />
+                  <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createEmptyCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="createEmptyCell" />
                 </node>
               </node>
               <node concept="1W57fq" id="XrrhtvD5_8" role="lGtFl">
