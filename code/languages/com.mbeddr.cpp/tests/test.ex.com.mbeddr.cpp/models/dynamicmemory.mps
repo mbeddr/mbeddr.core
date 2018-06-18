@@ -65,9 +65,6 @@
       </concept>
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
-      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
-        <property id="6113173064526131578" name="value" index="PhEJT" />
-      </concept>
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
       <concept id="279446265608463015" name="com.mbeddr.core.pointers.structure.DerefExpr" flags="ng" index="3wxyx2" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42">
@@ -132,11 +129,6 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
-      <concept id="6021475212425916971" name="com.mbeddr.core.modules.structure.GlobalConstantFunctionDeclaration" flags="ng" index="BTY7A">
-        <child id="8655966904682451042" name="content" index="2_0FLF" />
-        <child id="6021475212425916983" name="arguments" index="BTY7U" />
-      </concept>
-      <concept id="6021475212426054485" name="com.mbeddr.core.modules.structure.GlobalConstantFunctionArgument" flags="ng" index="BUhyo" />
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
@@ -147,9 +139,6 @@
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
-      <concept id="7308356872494660981" name="com.mbeddr.core.modules.structure.GlobalConstantFuntionArgumentRef" flags="ng" index="39I4aJ">
-        <reference id="7308356872494660982" name="arg" index="39I4aG" />
-      </concept>
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
     </language>
     <language id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest">
@@ -200,7 +189,6 @@
       <concept id="4620120465980402700" name="com.mbeddr.core.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
-      <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
@@ -253,24 +241,6 @@
   </node>
   <node concept="1whW_1" id="6WSa0snB9zy">
     <property role="TrG5h" value="NewDelete" />
-    <node concept="BTY7A" id="7iR9kVyg$wu" role="N3F5h">
-      <property role="TrG5h" value="SomeMacro" />
-      <node concept="BUhyo" id="7iR9kVyg$$M" role="BTY7U">
-        <property role="TrG5h" value="asdf" />
-        <node concept="26Vqpk" id="7iR9kVyg$$N" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="2BOciq" id="7iR9kVyg$_$" role="2_0FLF">
-        <node concept="PhEJO" id="7iR9kVyg$AS" role="3TlMhJ">
-          <property role="PhEJT" value=" " />
-        </node>
-        <node concept="39I4aJ" id="7iR9kVyg$_c" role="3TlMhI">
-          <ref role="39I4aG" node="7iR9kVyg$$M" resolve="asdf" />
-        </node>
-      </node>
-    </node>
     <node concept="3mBW2U" id="6WSa0so1DYi" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="NewDeleteClass1" />
