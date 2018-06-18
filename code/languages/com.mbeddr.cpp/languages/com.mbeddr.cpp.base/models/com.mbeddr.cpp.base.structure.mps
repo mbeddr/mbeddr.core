@@ -1211,6 +1211,9 @@
     <node concept="PrWs8" id="7POJCjgR0nr" role="PzmwI">
       <ref role="PrY4T" node="383ZxwZsgd4" resolve="INamespaceMemberDeclaration" />
     </node>
+    <node concept="t5JxF" id="5xziqK$PuJ2" role="lGtFl">
+      <property role="t5JxN" value="Comments that can be top level elements in classes and namespaces." />
+    </node>
   </node>
   <node concept="1TIwiD" id="hYHfWq_jIb">
     <property role="EcuMT" value="323895230972902283" />
