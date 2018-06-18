@@ -551,6 +551,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4o2nsMgBIrb" resolve="AttributeDeclaration" />
     </node>
+    <node concept="t5JxF" id="5xziqK_904B" role="lGtFl">
+      <property role="t5JxN" value="Concept that handles initializing class attributes before the constructor gets called" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6hUtorE0jsx">
     <property role="EcuMT" value="7240228573263509281" />
@@ -590,6 +593,9 @@
       <property role="20kJfa" value="actual_arguments" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="t5JxF" id="5xziqK_904$" role="lGtFl">
+      <property role="t5JxN" value="Concept that handles calls to the base class constructors" />
     </node>
   </node>
   <node concept="1TIwiD" id="3OWNtRXmIPi">
