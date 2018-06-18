@@ -6507,7 +6507,7 @@
               <node concept="3clFbS" id="hYHfWyav0v" role="3clFbx">
                 <node concept="a7r0C" id="hYHfWya$bN" role="3cqZAp">
                   <node concept="Xl_RD" id="hYHfWyaB2L" role="a7wSD">
-                    <property role="Xl_RC" value="assigned value more than 8 bits wide; some c+ compilers may give errors" />
+                    <property role="Xl_RC" value="assigned value more than 8 bits wide; some c++ compilers may give errors" />
                   </node>
                   <node concept="2OqwBi" id="hYHfWya$Dd" role="2OEOjV">
                     <node concept="1YBJjd" id="hYHfWya$c8" role="2Oq$k0">
@@ -6540,7 +6540,7 @@
                   <node concept="3clFbS" id="hYHfWyaExI" role="3clFbx">
                     <node concept="a7r0C" id="7POJCjfE2ku" role="3cqZAp">
                       <node concept="Xl_RD" id="7POJCjfE2kv" role="a7wSD">
-                        <property role="Xl_RC" value="assigned value more than 8 bits wide; some c+ compilers may give errors" />
+                        <property role="Xl_RC" value="assigned value more than 8 bits wide; some c++ compilers may give errors" />
                       </node>
                       <node concept="2OqwBi" id="7POJCjfE2kw" role="2OEOjV">
                         <node concept="1YBJjd" id="7POJCjfE2kx" role="2Oq$k0">

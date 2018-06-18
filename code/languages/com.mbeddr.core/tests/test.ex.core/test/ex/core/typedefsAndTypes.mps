@@ -154,6 +154,7 @@
       <concept id="1664480272136214700" name="com.mbeddr.core.expressions.structure.CharLiteral" flags="ng" index="biBdh">
         <property id="1664480272136214701" name="value" index="biBdg" />
       </concept>
+      <concept id="1664480272136207708" name="com.mbeddr.core.expressions.structure.CharType" flags="ng" index="biTqx" />
       <concept id="8864856114140038681" name="com.mbeddr.core.expressions.structure.DoubleType" flags="ng" index="2fgwQN" />
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
@@ -458,7 +459,12 @@
           </node>
           <node concept="26Vqpk" id="4qazcyJOfkF" role="2C2TGm" />
         </node>
-        <node concept="3XISUE" id="7lNBHBNC6EX" role="3XIRFZ" />
+        <node concept="3XIRlf" id="JgdYHupj2i" role="3XIRFZ">
+          <node concept="biTqx" id="JgdYHupj2g" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
       </node>
       <node concept="19Rifw" id="4WTYg$PSMqO" role="2C2TGm" />
     </node>

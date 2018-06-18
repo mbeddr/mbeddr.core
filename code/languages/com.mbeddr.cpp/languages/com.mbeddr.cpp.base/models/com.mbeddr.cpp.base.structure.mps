@@ -1227,7 +1227,7 @@
     <property role="34LRSv" value="char16_t" />
     <property role="R4oN_" value="C++ char16_t type" />
     <property role="3GE5qa" value="type" />
-    <ref role="1TJDcQ" to="mj1l:4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <ref role="1TJDcQ" to="mj1l:1spqZOskJPs" resolve="CharType" />
   </node>
   <node concept="1TIwiD" id="hYHfWqSH0p">
     <property role="EcuMT" value="323895230977986585" />
