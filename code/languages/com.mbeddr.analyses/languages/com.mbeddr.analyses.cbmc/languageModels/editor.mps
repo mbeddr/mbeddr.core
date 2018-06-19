@@ -7861,7 +7861,7 @@
     <node concept="3EZMnI" id="2OfxaHaxQop" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="3F0ifn" id="3YHIg3ZGVRu" role="AHCbl">
-        <property role="3F0ifm" value="Included Directories ..." />
+        <property role="3F0ifm" value="External files and included directories ..." />
         <node concept="VechU" id="3YHIg3ZGVUx" role="3F10Kt">
           <property role="Vb096" value="darkGray" />
         </node>
@@ -7893,6 +7893,12 @@
           <node concept="VPM3Z" id="5tDzxi6S15Q" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
+          <node concept="3F0ifn" id="3Fpnb3kHXNP" role="2czzBI">
+            <property role="3F0ifm" value="press enter to add new files ..." />
+            <node concept="VechU" id="3Fpnb3kHXZd" role="3F10Kt">
+              <property role="Vb096" value="lightGray" />
+            </node>
+          </node>
         </node>
         <node concept="2iRfu4" id="2OfxaHaxQoF" role="2iSdaV" />
       </node>
@@ -7912,7 +7918,7 @@
                 <node concept="2ShNRf" id="3RgbR_cgsi7" role="3clFbG">
                   <node concept="3zrR0B" id="3RgbR_cgsi8" role="2ShVmc">
                     <node concept="3Tqbb2" id="3RgbR_cgsi9" role="3zrR0E">
-                      <ref role="ehGHo" to="68mc:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+                      <ref role="ehGHo" to="68mc:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
                     </node>
                   </node>
                 </node>
@@ -7922,6 +7928,12 @@
           <node concept="2iRkQZ" id="3RgbR_cgsia" role="2czzBx" />
           <node concept="VPM3Z" id="3RgbR_cgsib" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="3Fpnb3kHXZr" role="2czzBI">
+            <property role="3F0ifm" value="press enter to add new directories ..." />
+            <node concept="VechU" id="3Fpnb3kHXZz" role="3F10Kt">
+              <property role="Vb096" value="lightGray" />
+            </node>
           </node>
         </node>
         <node concept="2iRfu4" id="3RgbR_cgsic" role="2iSdaV" />
