@@ -319,7 +319,7 @@
                 <node concept="3clFbS" id="2_lkiVk4Bbq" role="3clFbx">
                   <node concept="2MkqsV" id="2_lkiVk4Ik0" role="3cqZAp">
                     <node concept="Xl_RD" id="2_lkiVk4Ik9" role="2MkJ7o">
-                      <property role="Xl_RC" value="Duplicate type name" />
+                      <property role="Xl_RC" value="duplicate type name" />
                     </node>
                     <node concept="1YBJjd" id="2_lkiVk4IkJ" role="2OEOjV">
                       <ref role="1YBMHb" node="2_lkiVk4ye1" resolve="templateTypeDef" />
@@ -448,8 +448,14 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="3J_5hL3KMZl" role="3cqZAp" />
           <node concept="3clFbJ" id="1iZHTjWROBn" role="3cqZAp">
             <node concept="3clFbS" id="1iZHTjWROBp" role="3clFbx">
+              <node concept="3SKdUt" id="3J_5hL3KNE2" role="3cqZAp">
+                <node concept="3SKdUq" id="3J_5hL3KNE4" role="3SKWNk">
+                  <property role="3SKdUp" value="Argument exists, grab it so it can be type checked" />
+                </node>
+              </node>
               <node concept="3clFbF" id="1iZHTjWRZR7" role="3cqZAp">
                 <node concept="37vLTI" id="1iZHTjWRZYa" role="3clFbG">
                   <node concept="2OqwBi" id="1iZHTjWS1hl" role="37vLTx">
@@ -481,6 +487,11 @@
             </node>
             <node concept="3eNFk2" id="1iZHTjWS5s0" role="3eNLev">
               <node concept="3clFbS" id="1iZHTjWS5s2" role="3eOfB_">
+                <node concept="3SKdUt" id="3J_5hL3KNKy" role="3cqZAp">
+                  <node concept="3SKdUq" id="3J_5hL3KNK$" role="3SKWNk">
+                    <property role="3SKdUp" value="If it has a default, grab that instead" />
+                  </node>
+                </node>
                 <node concept="3clFbF" id="1iZHTjWSciL" role="3cqZAp">
                   <node concept="37vLTI" id="1iZHTjWScyg" role="3clFbG">
                     <node concept="2OqwBi" id="1iZHTjWScZ8" role="37vLTx">
@@ -515,6 +526,11 @@
             </node>
             <node concept="9aQIb" id="1iZHTjWS5yQ" role="9aQIa">
               <node concept="3clFbS" id="1iZHTjWS5yR" role="9aQI4">
+                <node concept="3SKdUt" id="3J_5hL3KNDw" role="3cqZAp">
+                  <node concept="3SKdUq" id="3J_5hL3KNDy" role="3SKWNk">
+                    <property role="3SKdUp" value="Wrong number of arguments." />
+                  </node>
+                </node>
                 <node concept="3clFbF" id="1iZHTjWS5Dx" role="3cqZAp">
                   <node concept="37vLTI" id="1iZHTjWS5V5" role="3clFbG">
                     <node concept="3clFbT" id="1iZHTjWS5Vp" role="37vLTx">
@@ -529,6 +545,12 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="3J_5hL3KMLo" role="3cqZAp" />
+          <node concept="3SKdUt" id="3J_5hL3KNS4" role="3cqZAp">
+            <node concept="3SKdUq" id="3J_5hL3KNS6" role="3SKWNk">
+              <property role="3SKdUp" value="If its not a type, error out" />
+            </node>
+          </node>
           <node concept="Jncv_" id="1iZHTjWOP9J" role="3cqZAp">
             <ref role="JncvD" to="1yyn:2_lkiViLGkv" resolve="TemplateTypeDef" />
             <node concept="37vLTw" id="1iZHTjWSbfJ" role="JncvB">
@@ -539,7 +561,7 @@
                 <node concept="3clFbS" id="1iZHTjWOP9Q" role="3clFbx">
                   <node concept="2MkqsV" id="1iZHTjWOP9R" role="3cqZAp">
                     <node concept="Xl_RD" id="1iZHTjWOP9S" role="2MkJ7o">
-                      <property role="Xl_RC" value="Argument must be a type." />
+                      <property role="Xl_RC" value="argument must be a type" />
                     </node>
                     <node concept="2OqwBi" id="1iZHTjWOP9T" role="2OEOjV">
                       <node concept="37vLTw" id="1iZHTjWOP9U" role="2Oq$k0">
@@ -572,6 +594,12 @@
               <node concept="2jxLKc" id="1iZHTjWOPa6" role="1tU5fm" />
             </node>
           </node>
+          <node concept="3clFbH" id="3J_5hL3KM5J" role="3cqZAp" />
+          <node concept="3SKdUt" id="3J_5hL3KO9W" role="3cqZAp">
+            <node concept="3SKdUq" id="3J_5hL3KO9Y" role="3SKWNk">
+              <property role="3SKdUp" value="If it's a value parameter and the argument isn't, error out" />
+            </node>
+          </node>
           <node concept="Jncv_" id="1iZHTjWOPa7" role="3cqZAp">
             <ref role="JncvD" to="1yyn:1iZHTjWMvf4" resolve="TemplateValueParam" />
             <node concept="37vLTw" id="1iZHTjWSdda" role="JncvB">
@@ -594,7 +622,7 @@
                 <node concept="3clFbS" id="1iZHTjWOPam" role="3clFbx">
                   <node concept="2MkqsV" id="1iZHTjWOPan" role="3cqZAp">
                     <node concept="Xl_RD" id="1iZHTjWOPao" role="2MkJ7o">
-                      <property role="Xl_RC" value="Argument must be a value." />
+                      <property role="Xl_RC" value="argument must be a value" />
                     </node>
                     <node concept="2OqwBi" id="1iZHTjWOPap" role="2OEOjV">
                       <node concept="37vLTw" id="1iZHTjWOPaq" role="2Oq$k0">
@@ -697,11 +725,16 @@
         </node>
       </node>
       <node concept="3clFbH" id="1iZHTjWRfUg" role="3cqZAp" />
+      <node concept="3SKdUt" id="3J_5hL3KORg" role="3cqZAp">
+        <node concept="3SKdUq" id="3J_5hL3KORi" role="3SKWNk">
+          <property role="3SKdUp" value="If wrong number of arguments, error out" />
+        </node>
+      </node>
       <node concept="3clFbJ" id="1iZHTjWRgMt" role="3cqZAp">
         <node concept="3clFbS" id="1iZHTjWRgMv" role="3clFbx">
           <node concept="2MkqsV" id="1iZHTjWRheX" role="3cqZAp">
             <node concept="Xl_RD" id="1iZHTjWRhff" role="2MkJ7o">
-              <property role="Xl_RC" value="Too few template arguments provided." />
+              <property role="Xl_RC" value="too few template arguments provided" />
             </node>
             <node concept="1YBJjd" id="1iZHTjWRhfR" role="2OEOjV">
               <ref role="1YBMHb" node="1iZHTjWOOCJ" resolve="iti" />
@@ -729,7 +762,7 @@
           <node concept="3clFbS" id="1iZHTjWRhgW" role="3eOfB_">
             <node concept="2MkqsV" id="1iZHTjWRqGv" role="3cqZAp">
               <node concept="Xl_RD" id="1iZHTjWRqGI" role="2MkJ7o">
-                <property role="Xl_RC" value="Too many template arguments provieded." />
+                <property role="Xl_RC" value="too many template arguments provieded" />
               </node>
               <node concept="1YBJjd" id="1iZHTjWRqI9" role="2OEOjV">
                 <ref role="1YBMHb" node="1iZHTjWOOCJ" resolve="iti" />
@@ -788,9 +821,14 @@
                   </node>
                 </node>
                 <node concept="3clFbS" id="1iZHTjWTv6u" role="3clFbx">
+                  <node concept="3SKdUt" id="3J_5hL3KfUT" role="3cqZAp">
+                    <node concept="3SKdUq" id="3J_5hL3KfUV" role="3SKWNk">
+                      <property role="3SKdUp" value="Defaults must come last." />
+                    </node>
+                  </node>
                   <node concept="2MkqsV" id="1iZHTjWTvH8" role="3cqZAp">
                     <node concept="Xl_RD" id="1iZHTjWTvHn" role="2MkJ7o">
-                      <property role="Xl_RC" value="Param without default appearing after param with default." />
+                      <property role="Xl_RC" value="param without default appearing after param with default" />
                     </node>
                     <node concept="2GrUjf" id="1iZHTjWTvIk" role="2OEOjV">
                       <ref role="2Gs0qQ" node="1iZHTjWTuLK" resolve="param" />
@@ -813,6 +851,11 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="1iZHTjWTvJ$" role="3clFbx">
+                    <node concept="3SKdUt" id="3J_5hL3KfTz" role="3cqZAp">
+                      <node concept="3SKdUq" id="3J_5hL3KfT_" role="3SKWNk">
+                        <property role="3SKdUp" value="There's a default value, let the next iteration know" />
+                      </node>
+                    </node>
                     <node concept="3clFbF" id="1iZHTjWTw8H" role="3cqZAp">
                       <node concept="37vLTI" id="1iZHTjWTwF_" role="3clFbG">
                         <node concept="3clFbT" id="1iZHTjWTwFT" role="37vLTx">
@@ -834,6 +877,11 @@
               <ref role="2Gs0qQ" node="1iZHTjWTuLK" resolve="param" />
             </node>
             <node concept="3clFbS" id="1iZHTjWTwO3" role="Jncv$">
+              <node concept="3SKdUt" id="3J_5hL3KfUf" role="3cqZAp">
+                <node concept="3SKdUq" id="3J_5hL3KfUh" role="3SKWNk">
+                  <property role="3SKdUp" value="Make sure we are a subtype of the specified type" />
+                </node>
+              </node>
               <node concept="1ZobV4" id="1iZHTjWTyf_" role="3cqZAp">
                 <property role="3wDh2S" value="true" />
                 <node concept="mw_s8" id="1iZHTjWTyfA" role="1ZfhK$">
@@ -888,7 +936,7 @@
     <node concept="3clFbS" id="327D75Ee9ca" role="18ibNy">
       <node concept="2MkqsV" id="327D75Ee9cg" role="3cqZAp">
         <node concept="Xl_RD" id="327D75Ee9cv" role="2MkJ7o">
-          <property role="Xl_RC" value="Leftover template stub." />
+          <property role="Xl_RC" value="leftover template stub" />
         </node>
         <node concept="1YBJjd" id="327D75Ee9d0" role="2OEOjV">
           <ref role="1YBMHb" node="327D75Ee9cc" resolve="templateStub" />

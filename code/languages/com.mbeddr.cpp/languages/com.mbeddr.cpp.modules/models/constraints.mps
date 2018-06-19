@@ -2,7 +2,7 @@
 <model ref="r:5be407cf-e0e1-4d2f-bd26-b6f516468e59(com.mbeddr.cpp.modules.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -37,6 +37,12 @@
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -81,6 +87,11 @@
     </node>
     <node concept="9SLcT" id="3OWNtRXl5Qm" role="9SGkU">
       <node concept="3clFbS" id="3OWNtRXl5Qn" role="2VODD2">
+        <node concept="3SKdUt" id="3J_5hL3JF37" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3JF39" role="3SKWNk">
+            <property role="3SKdUp" value="Prevent structs from existing inside of it since we only allows classes." />
+          </node>
+        </node>
         <node concept="3clFbF" id="3OWNtRXl5XG" role="3cqZAp">
           <node concept="3fqX7Q" id="3OWNtRXl7_L" role="3clFbG">
             <node concept="2OqwBi" id="3OWNtRXl7_N" role="3fr31v">
