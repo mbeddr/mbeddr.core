@@ -860,7 +860,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="4K6s$_sNy5E">
-    <property role="TrG5h" value="StaticClassMethodCallRule" />
+    <property role="TrG5h" value="check_StaticClassMethodCallRule" />
     <property role="3GE5qa" value="method" />
     <node concept="3clFbS" id="4K6s$_sNy5F" role="18ibNy">
       <node concept="3SKdUt" id="4K6s$_sN_dW" role="3cqZAp">
@@ -2091,7 +2091,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="7fNEwq_kdh2">
-    <property role="TrG5h" value="typeof_NamespaceClassInstanceRef" />
+    <property role="TrG5h" value="typeof_NamespaceClassInstanceAttributeRef" />
     <property role="3GE5qa" value="namespace" />
     <node concept="3clFbS" id="7fNEwq_kdh3" role="18ibNy">
       <node concept="1Z5TYs" id="7fNEwq_kdtk" role="3cqZAp">
@@ -6507,7 +6507,7 @@
               <node concept="3clFbS" id="hYHfWyav0v" role="3clFbx">
                 <node concept="a7r0C" id="hYHfWya$bN" role="3cqZAp">
                   <node concept="Xl_RD" id="hYHfWyaB2L" role="a7wSD">
-                    <property role="Xl_RC" value="assigned value more than 8 bits wide; some c+ compilers may give errors" />
+                    <property role="Xl_RC" value="assigned value more than 8 bits wide; some c++ compilers may give errors" />
                   </node>
                   <node concept="2OqwBi" id="hYHfWya$Dd" role="2OEOjV">
                     <node concept="1YBJjd" id="hYHfWya$c8" role="2Oq$k0">
@@ -6540,7 +6540,7 @@
                   <node concept="3clFbS" id="hYHfWyaExI" role="3clFbx">
                     <node concept="a7r0C" id="7POJCjfE2ku" role="3cqZAp">
                       <node concept="Xl_RD" id="7POJCjfE2kv" role="a7wSD">
-                        <property role="Xl_RC" value="assigned value more than 8 bits wide; some c+ compilers may give errors" />
+                        <property role="Xl_RC" value="assigned value more than 8 bits wide; some c++ compilers may give errors" />
                       </node>
                       <node concept="2OqwBi" id="7POJCjfE2kw" role="2OEOjV">
                         <node concept="1YBJjd" id="7POJCjfE2kx" role="2Oq$k0">
