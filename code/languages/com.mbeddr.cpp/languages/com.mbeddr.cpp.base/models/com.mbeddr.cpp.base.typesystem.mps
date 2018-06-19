@@ -559,7 +559,7 @@
               <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
             </node>
             <node concept="Xl_RD" id="4K6s$_rqajb" role="2MkJ7o">
-              <property role="Xl_RC" value="you can't extend a class from another module if it is not exported" />
+              <property role="Xl_RC" value="you can't extend an unexported class from another module" />
             </node>
           </node>
         </node>

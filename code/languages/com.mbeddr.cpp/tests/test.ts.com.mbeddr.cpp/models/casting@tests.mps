@@ -15,11 +15,15 @@
     <import index="g7jk" ref="r:e06e24a5-d0fa-4f76-9dee-2042532d92a1(com.mbeddr.cpp.base.typesystem)" />
     <import index="wxye" ref="r:cec599e3-51d2-48a7-af31-989e3cbd593c(jetbrains.mps.lang.core.typesystem)" />
     <import index="ux7" ref="r:7a7d22ce-1d67-4772-b659-fbcc3b235afb(com.mbeddr.cpp.__spreferences.PlatformTemplates)" implicit="true" />
+    <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
         <child id="8489045168660938517" name="errorRef" index="3lydEf" />
+      </concept>
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU">
+        <child id="8489045168660938635" name="warningRef" index="3lydCh" />
       </concept>
       <concept id="1215526290564" name="jetbrains.mps.lang.test.structure.NodeTypeCheckOperation" flags="ng" index="30Omv">
         <child id="1215526393912" name="type" index="31d$z" />
@@ -27,10 +31,10 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
-      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
+      <concept id="4531408400486526326" name="jetbrains.mps.lang.test.structure.WarningStatementReference" flags="ng" index="2PQEqo" />
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
@@ -464,6 +468,13 @@
                   <property role="2c7vTL" value="false" />
                 </node>
               </node>
+              <node concept="7CXmI" id="2cA2PdZmIEM" role="lGtFl">
+                <node concept="29bkU" id="2cA2PdZmIEN" role="7EUXB">
+                  <node concept="2PQEqo" id="2cA2PdZmIFr" role="3lydCh">
+                    <ref role="39XzEq" to="n7pc:67hg1wLxep7" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="1QiMYF" id="4lmr4L5PLWk" role="3XIRFZ">
               <node concept="OjmMv" id="4lmr4L5PLWm" role="3SJzmv">
@@ -522,9 +533,7 @@
           <property role="TrG5h" value="empty_1504854840309_9" />
         </node>
       </node>
-      <node concept="7CXmI" id="4lmr4L5mZQT" role="lGtFl">
-        <node concept="7OXhh" id="4lmr4L5mZQW" role="7EUXB" />
-      </node>
+      <node concept="7CXmI" id="4lmr4L5mZQT" role="lGtFl" />
     </node>
   </node>
 </model>
