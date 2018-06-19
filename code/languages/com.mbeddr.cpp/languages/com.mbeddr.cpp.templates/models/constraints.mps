@@ -382,6 +382,11 @@
       <ref role="1N5Vy1" to="x27k:5ak6HMA0red" resolve="function" />
       <node concept="3dgokm" id="ZKpU3ByddK" role="1N6uqs">
         <node concept="3clFbS" id="ZKpU3ByddL" role="2VODD2">
+          <node concept="3SKdUt" id="3J_5hL44u3k" role="3cqZAp">
+            <node concept="3SKdUq" id="3J_5hL44u3m" role="3SKWNk">
+              <property role="3SKdUp" value="Disallow template functions." />
+            </node>
+          </node>
           <node concept="3clFbF" id="5CkU_dHifTM" role="3cqZAp">
             <node concept="2YIFZM" id="ZKpU3BydxK" role="3clFbG">
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
