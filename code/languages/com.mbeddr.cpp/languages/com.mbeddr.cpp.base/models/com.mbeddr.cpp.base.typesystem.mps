@@ -2408,11 +2408,6 @@
           <property role="3SKdUp" value="Just check the type of the parent concept and grab the relevant init expression" />
         </node>
       </node>
-      <node concept="3SKdUt" id="7POJCje79Gx" role="3cqZAp">
-        <node concept="3SKdUq" id="7POJCje79Gz" role="3SKWNk">
-          <property role="3SKdUp" value="TODO: Clean this up if possible. The first two cases are exactly the same except for the concept name." />
-        </node>
-      </node>
       <node concept="Jncv_" id="6FZQsHtSH47" role="3cqZAp">
         <ref role="JncvD" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
         <node concept="2OqwBi" id="6FZQsHtSHlA" role="JncvB">
