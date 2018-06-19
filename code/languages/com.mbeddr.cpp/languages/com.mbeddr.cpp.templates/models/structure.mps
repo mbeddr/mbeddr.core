@@ -132,6 +132,9 @@
     <property role="EcuMT" value="1148531845756408680" />
     <property role="TrG5h" value="RegularFunctionCall" />
     <ref role="1TJDcQ" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
+    <node concept="t5JxF" id="3J_5hL44tIo" role="lGtFl">
+      <property role="t5JxN" value="Normal functions calls with constraint that prevents template functions from being called using the mbeddr.core FunctionCall" />
+    </node>
   </node>
   <node concept="1TIwiD" id="ZKpU3C3Nka">
     <property role="EcuMT" value="1148531845765215498" />
