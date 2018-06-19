@@ -5672,6 +5672,12 @@
             <ref role="3bR37D" to="ffeo:7gdoTYdo$et" resolve="jetbrains.mps.debugger.api.api" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3J_5hL5v9Rv" role="3bR37C">
+          <node concept="3bR9La" id="3J_5hL5v9Rw" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2W1GNPBwUiB" resolve="com.mbeddr.core.expressions.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4FIECQpNT2_" role="2G$12L">
         <property role="BnDLt" value="true" />
