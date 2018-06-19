@@ -438,11 +438,5 @@
       </node>
     </node>
   </node>
-  <node concept="13h7C7" id="4smL_2CRWm4">
-    <ref role="13h7C2" to="3d25:2yiFVcKEErD" resolve="This" />
-    <node concept="13hLZK" id="4smL_2CRWm5" role="13h7CW">
-      <node concept="3clFbS" id="4smL_2CRWm6" role="2VODD2" />
-    </node>
-  </node>
 </model>
 

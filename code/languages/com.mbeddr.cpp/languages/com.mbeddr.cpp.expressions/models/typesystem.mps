@@ -411,13 +411,13 @@
             </node>
           </node>
           <node concept="3clFbH" id="7POJCjgR7DK" role="3cqZAp" />
-          <node concept="3SKdUt" id="7POJCjgR7SO" role="3cqZAp">
-            <node concept="3SKdUq" id="7POJCjgR7SQ" role="3SKWNk">
-              <property role="3SKdUp" value="Assign the type to the template resolved type if it's a class" />
-            </node>
-          </node>
           <node concept="3clFbJ" id="327D75EHate" role="3cqZAp">
             <node concept="3clFbS" id="327D75EHatg" role="3clFbx">
+              <node concept="3SKdUt" id="7POJCjgR7SO" role="3cqZAp">
+                <node concept="3SKdUq" id="7POJCjgR7SQ" role="3SKWNk">
+                  <property role="3SKdUp" value="Assign the type to the template resolved type if it's a class" />
+                </node>
+              </node>
               <node concept="1Z5TYs" id="6FZQsHtIn7F" role="3cqZAp">
                 <node concept="mw_s8" id="6FZQsHtInfB" role="1ZfhKB">
                   <node concept="1Z2H0r" id="6FZQsHtInfz" role="mwGJk">
@@ -460,6 +460,11 @@
             </node>
             <node concept="9aQIb" id="327D75EIioy" role="9aQIa">
               <node concept="3clFbS" id="327D75EIioz" role="9aQI4">
+                <node concept="3SKdUt" id="3J_5hL3JEP7" role="3cqZAp">
+                  <node concept="3SKdUq" id="3J_5hL3JEP8" role="3SKWNk">
+                    <property role="3SKdUp" value="Assign the type to the attribute otherwise" />
+                  </node>
+                </node>
                 <node concept="1Z5TYs" id="327D75EIiZj" role="3cqZAp">
                   <node concept="mw_s8" id="327D75EIiZH" role="1ZfhKB">
                     <node concept="1Z2H0r" id="6FZQsHtIm1x" role="mwGJk">
