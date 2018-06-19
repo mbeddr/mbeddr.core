@@ -26,7 +26,6 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
-      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
@@ -293,9 +292,7 @@
           <property role="TrG5h" value="empty_1504854840309_9" />
         </node>
       </node>
-      <node concept="7CXmI" id="32KsbhSQBHk" role="lGtFl">
-        <node concept="7OXhh" id="32KsbhSQBHs" role="7EUXB" />
-      </node>
+      <node concept="7CXmI" id="32KsbhSQBHk" role="lGtFl" />
     </node>
   </node>
 </model>

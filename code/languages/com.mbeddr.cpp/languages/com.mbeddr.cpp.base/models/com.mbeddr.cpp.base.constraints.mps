@@ -11,11 +11,9 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="kntn" ref="r:4090021e-0c8f-4cca-ab3f-590afb43a745(com.mbeddr.cpp.base.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -1354,45 +1352,6 @@
   <node concept="1M2fIO" id="6FZQsHt$aAc">
     <property role="3GE5qa" value="type" />
     <ref role="1M2myG" to="wnzg:6FZQsHt7RdA" resolve="AutoType" />
-    <node concept="9S07l" id="6FZQsHt$aAd" role="9Vyp8">
-      <node concept="3clFbS" id="6FZQsHt$aAe" role="2VODD2">
-        <node concept="3SKdUt" id="7POJCje72K$" role="3cqZAp">
-          <node concept="3SKdUq" id="7POJCje72KA" role="3SKWNk">
-            <property role="3SKdUp" value="Auto is only supported in declarations in this implementation" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="6FZQsHt$aHz" role="3cqZAp">
-          <node concept="22lmx$" id="6FZQsHt$isI" role="3clFbG">
-            <node concept="2OqwBi" id="6FZQsHt$j7d" role="3uHU7w">
-              <node concept="nLn13" id="6FZQsHt$iL1" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="6FZQsHt$jzA" role="2OqNvi">
-                <node concept="chp4Y" id="6FZQsHt$jUU" role="cj9EA">
-                  <ref role="cht4Q" to="wnzg:4o2nsMgBIrb" resolve="AttributeDeclaration" />
-                </node>
-              </node>
-            </node>
-            <node concept="22lmx$" id="6FZQsHt$e2C" role="3uHU7B">
-              <node concept="2OqwBi" id="6FZQsHt$aTh" role="3uHU7B">
-                <node concept="nLn13" id="6FZQsHt$aHy" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="6FZQsHt$b60" role="2OqNvi">
-                  <node concept="chp4Y" id="6FZQsHt$biJ" role="cj9EA">
-                    <ref role="cht4Q" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="6FZQsHt$ex7" role="3uHU7w">
-                <node concept="nLn13" id="6FZQsHt$egG" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="6FZQsHt$eWK" role="2OqNvi">
-                  <node concept="chp4Y" id="6FZQsHt$feh" role="cj9EA">
-                    <ref role="cht4Q" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="6OyCGy9cOMX">
     <ref role="1M2myG" to="wnzg:6OyCGy9cOMO" resolve="ClassStaticVarRef" />

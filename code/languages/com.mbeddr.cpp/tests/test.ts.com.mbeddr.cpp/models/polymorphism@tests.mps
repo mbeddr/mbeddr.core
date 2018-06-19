@@ -16,6 +16,7 @@
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU" />
       <concept id="1215526290564" name="jetbrains.mps.lang.test.structure.NodeTypeCheckOperation" flags="ng" index="30Omv">
         <child id="1215526393912" name="type" index="31d$z" />
       </concept>
@@ -593,6 +594,9 @@
                   <node concept="1TM$A" id="7SgJHc8UkNM" role="7EUXB" />
                 </node>
               </node>
+              <node concept="7CXmI" id="2cA2PdZns3p" role="lGtFl">
+                <node concept="29bkU" id="2cA2PdZns3q" role="7EUXB" />
+              </node>
             </node>
             <node concept="2dywKE" id="7SgJHc8Umcn" role="3XIRFZ">
               <property role="TrG5h" value="broken2" />
@@ -622,6 +626,9 @@
                 <node concept="7CXmI" id="7SgJHc8Un5s" role="lGtFl">
                   <node concept="1TM$A" id="7SgJHc8Un5t" role="7EUXB" />
                 </node>
+              </node>
+              <node concept="7CXmI" id="2cA2PdZnsuf" role="lGtFl">
+                <node concept="29bkU" id="2cA2PdZnsug" role="7EUXB" />
               </node>
             </node>
           </node>

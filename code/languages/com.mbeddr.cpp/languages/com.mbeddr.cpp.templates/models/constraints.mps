@@ -205,7 +205,7 @@
         <node concept="3clFbS" id="2_lkiVk3eZl" role="2VODD2">
           <node concept="3cpWs8" id="2_lkiVk3xcE" role="3cqZAp">
             <node concept="3cpWsn" id="2_lkiVk3xcF" role="3cpWs9">
-              <property role="TrG5h" value="res" />
+              <property role="TrG5h" value="cScope" />
               <node concept="3uibUv" id="2_lkiVk3zsw" role="1tU5fm">
                 <ref role="3uigEE" to="o8zo:7ipADkTevLt" resolve="CompositeScope" />
               </node>
@@ -216,6 +216,12 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="3J_5hL3LcKV" role="3cqZAp" />
+          <node concept="3SKdUt" id="3J_5hL3LePP" role="3cqZAp">
+            <node concept="3SKdUq" id="3J_5hL3LePR" role="3SKWNk">
+              <property role="3SKdUp" value="Scope for this node" />
+            </node>
+          </node>
           <node concept="Jncv_" id="ZKpU3Bx9MA" role="3cqZAp">
             <ref role="JncvD" to="1yyn:ZKpU3Bvynz" resolve="ITemplate" />
             <node concept="2rP1CM" id="ZKpU3Bx9Xk" role="JncvB" />
@@ -223,7 +229,7 @@
               <node concept="3clFbF" id="ZKpU3Bxaqn" role="3cqZAp">
                 <node concept="2OqwBi" id="ZKpU3BxaBj" role="3clFbG">
                   <node concept="37vLTw" id="ZKpU3Bxaqm" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2_lkiVk3xcF" resolve="res" />
+                    <ref role="3cqZAo" node="2_lkiVk3xcF" resolve="cScope" />
                   </node>
                   <node concept="liA8E" id="ZKpU3Bxb2i" role="2OqNvi">
                     <ref role="37wK5l" to="o8zo:7ipADkTevN6" resolve="addScope" />
@@ -255,6 +261,12 @@
               <node concept="2jxLKc" id="ZKpU3Bx9MH" role="1tU5fm" />
             </node>
           </node>
+          <node concept="3clFbH" id="3J_5hL3Ldms" role="3cqZAp" />
+          <node concept="3SKdUt" id="3J_5hL3Lf5l" role="3cqZAp">
+            <node concept="3SKdUq" id="3J_5hL3Lf5n" role="3SKWNk">
+              <property role="3SKdUp" value="Scope for ancestors that also implement templates and are visible" />
+            </node>
+          </node>
           <node concept="2Gpval" id="2_lkiVk3qdA" role="3cqZAp">
             <node concept="2GrKxI" id="2_lkiVk3qdC" role="2Gsz3X">
               <property role="TrG5h" value="template" />
@@ -274,7 +286,7 @@
               <node concept="3clFbF" id="ZKpU3BvXw1" role="3cqZAp">
                 <node concept="2OqwBi" id="ZKpU3BvXGj" role="3clFbG">
                   <node concept="37vLTw" id="ZKpU3BvXvZ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2_lkiVk3xcF" resolve="res" />
+                    <ref role="3cqZAo" node="2_lkiVk3xcF" resolve="cScope" />
                   </node>
                   <node concept="liA8E" id="ZKpU3BvXXe" role="2OqNvi">
                     <ref role="37wK5l" to="o8zo:7ipADkTevN6" resolve="addScope" />
@@ -302,9 +314,10 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="3J_5hL3LdTk" role="3cqZAp" />
           <node concept="3cpWs6" id="ZKpU3BwNGx" role="3cqZAp">
             <node concept="37vLTw" id="ZKpU3BwNI4" role="3cqZAk">
-              <ref role="3cqZAo" node="2_lkiVk3xcF" resolve="res" />
+              <ref role="3cqZAo" node="2_lkiVk3xcF" resolve="cScope" />
             </node>
           </node>
         </node>
@@ -346,6 +359,11 @@
       </node>
       <node concept="3k9gUc" id="327D75EbVdY" role="3kmjI7">
         <node concept="3clFbS" id="327D75EbVdZ" role="2VODD2">
+          <node concept="3SKdUt" id="3J_5hL3KWdN" role="3cqZAp">
+            <node concept="3SKdUq" id="3J_5hL3KWdP" role="3SKWNk">
+              <property role="3SKdUp" value="Fills in the defaults" />
+            </node>
+          </node>
           <node concept="3clFbF" id="327D75Ec1Pq" role="3cqZAp">
             <node concept="2OqwBi" id="327D75EtSah" role="3clFbG">
               <node concept="3kakTB" id="327D75Ec1Pp" role="2Oq$k0" />
@@ -358,15 +376,17 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="ZKpU3BxpRY">
-    <ref role="1M2myG" to="1yyn:2_lkiVjZerV" resolve="TemplateFunction" />
-  </node>
   <node concept="1M2fIO" id="ZKpU3ByddD">
     <ref role="1M2myG" to="1yyn:ZKpU3ByddC" resolve="RegularFunctionCall" />
     <node concept="1N5Pfh" id="ZKpU3ByddE" role="1Mr941">
       <ref role="1N5Vy1" to="x27k:5ak6HMA0red" resolve="function" />
       <node concept="3dgokm" id="ZKpU3ByddK" role="1N6uqs">
         <node concept="3clFbS" id="ZKpU3ByddL" role="2VODD2">
+          <node concept="3SKdUt" id="3J_5hL44u3k" role="3cqZAp">
+            <node concept="3SKdUq" id="3J_5hL44u3m" role="3SKWNk">
+              <property role="3SKdUp" value="Disallow template functions." />
+            </node>
+          </node>
           <node concept="3clFbF" id="5CkU_dHifTM" role="3cqZAp">
             <node concept="2YIFZM" id="ZKpU3BydxK" role="3clFbG">
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
@@ -447,7 +467,7 @@
   <node concept="1M2fIO" id="ZKpU3C50EU">
     <ref role="1M2myG" to="1yyn:ZKpU3C47B5" resolve="TemplateClassType" />
     <node concept="1N5Pfh" id="ZKpU3C50EV" role="1Mr941">
-      <ref role="1N5Vy1" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+      <ref role="1N5Vy1" to="wnzg:4o2nsMgBEtY" resolve="class" />
       <node concept="3dgokm" id="ZKpU3C50EY" role="1N6uqs">
         <node concept="3clFbS" id="ZKpU3C50EZ" role="2VODD2">
           <node concept="3clFbF" id="ZKpU3C51uD" role="3cqZAp">
@@ -479,6 +499,11 @@
       </node>
       <node concept="3k9gUc" id="327D75EdqAk" role="3kmjI7">
         <node concept="3clFbS" id="327D75EdqAl" role="2VODD2">
+          <node concept="3SKdUt" id="3J_5hL3KT2h" role="3cqZAp">
+            <node concept="3SKdUq" id="3J_5hL3KT2j" role="3SKWNk">
+              <property role="3SKdUp" value="Fills the defaults" />
+            </node>
+          </node>
           <node concept="3clFbF" id="327D75EdqGd" role="3cqZAp">
             <node concept="2OqwBi" id="327D75EdqS_" role="3clFbG">
               <node concept="3kakTB" id="327D75EdqGc" role="2Oq$k0" />
@@ -499,7 +524,7 @@
         <node concept="3clFbS" id="327D75E88SP" role="2VODD2">
           <node concept="3cpWs8" id="327D75E88SQ" role="3cqZAp">
             <node concept="3cpWsn" id="327D75E88SR" role="3cpWs9">
-              <property role="TrG5h" value="res" />
+              <property role="TrG5h" value="cScope" />
               <node concept="3uibUv" id="327D75E88SS" role="1tU5fm">
                 <ref role="3uigEE" to="o8zo:7ipADkTevLt" resolve="CompositeScope" />
               </node>
@@ -510,6 +535,12 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="3J_5hL3Lg8g" role="3cqZAp" />
+          <node concept="3SKdUt" id="3J_5hL3LgRe" role="3cqZAp">
+            <node concept="3SKdUq" id="3J_5hL3LgRg" role="3SKWNk">
+              <property role="3SKdUp" value="This nodes' template scope" />
+            </node>
+          </node>
           <node concept="Jncv_" id="327D75E88SV" role="3cqZAp">
             <ref role="JncvD" to="1yyn:ZKpU3Bvynz" resolve="ITemplate" />
             <node concept="2rP1CM" id="327D75E88SW" role="JncvB" />
@@ -517,7 +548,7 @@
               <node concept="3clFbF" id="327D75E88SY" role="3cqZAp">
                 <node concept="2OqwBi" id="327D75E88SZ" role="3clFbG">
                   <node concept="37vLTw" id="327D75E88T0" role="2Oq$k0">
-                    <ref role="3cqZAo" node="327D75E88SR" resolve="res" />
+                    <ref role="3cqZAo" node="327D75E88SR" resolve="cScope" />
                   </node>
                   <node concept="liA8E" id="327D75E88T1" role="2OqNvi">
                     <ref role="37wK5l" to="o8zo:7ipADkTevN6" resolve="addScope" />
@@ -549,6 +580,12 @@
               <node concept="2jxLKc" id="327D75E88T7" role="1tU5fm" />
             </node>
           </node>
+          <node concept="3clFbH" id="3J_5hL3Lfma" role="3cqZAp" />
+          <node concept="3SKdUt" id="3J_5hL3LhhK" role="3cqZAp">
+            <node concept="3SKdUq" id="3J_5hL3LhhM" role="3SKWNk">
+              <property role="3SKdUp" value="The template ancestors that are visible" />
+            </node>
+          </node>
           <node concept="2Gpval" id="327D75E88T8" role="3cqZAp">
             <node concept="2GrKxI" id="327D75E88T9" role="2Gsz3X">
               <property role="TrG5h" value="template" />
@@ -568,7 +605,7 @@
               <node concept="3clFbF" id="327D75E88Th" role="3cqZAp">
                 <node concept="2OqwBi" id="327D75E88Ti" role="3clFbG">
                   <node concept="37vLTw" id="327D75E88Tj" role="2Oq$k0">
-                    <ref role="3cqZAo" node="327D75E88SR" resolve="res" />
+                    <ref role="3cqZAo" node="327D75E88SR" resolve="cScope" />
                   </node>
                   <node concept="liA8E" id="327D75E88Tk" role="2OqNvi">
                     <ref role="37wK5l" to="o8zo:7ipADkTevN6" resolve="addScope" />
@@ -596,17 +633,15 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="3J_5hL3LfVR" role="3cqZAp" />
           <node concept="3cpWs6" id="327D75E88Tp" role="3cqZAp">
             <node concept="37vLTw" id="327D75E88Tq" role="3cqZAk">
-              <ref role="3cqZAo" node="327D75E88SR" resolve="res" />
+              <ref role="3cqZAo" node="327D75E88SR" resolve="cScope" />
             </node>
           </node>
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1M2fIO" id="327D75E9JMV">
-    <ref role="1M2myG" to="1yyn:ZKpU3C47B6" resolve="ITemplateImpl" />
   </node>
   <node concept="1M2fIO" id="327D75EdrjT">
     <ref role="1M2myG" to="1yyn:1N32NMNMKsa" resolve="TemplateInheritanceInstance" />
@@ -614,6 +649,11 @@
       <ref role="1N5Vy1" to="wnzg:3UsoL$l5qkM" resolve="parentClass" />
       <node concept="3k9gUc" id="327D75EdrjX" role="3kmjI7">
         <node concept="3clFbS" id="327D75EdrjY" role="2VODD2">
+          <node concept="3SKdUt" id="3J_5hL3KWz8" role="3cqZAp">
+            <node concept="3SKdUq" id="3J_5hL3KWza" role="3SKWNk">
+              <property role="3SKdUp" value="fills the defaults" />
+            </node>
+          </node>
           <node concept="3clFbF" id="327D75Edrkc" role="3cqZAp">
             <node concept="2OqwBi" id="327D75EdrsK" role="3clFbG">
               <node concept="3kakTB" id="327D75Edrkb" role="2Oq$k0" />
@@ -691,6 +731,11 @@
             </node>
           </node>
           <node concept="3clFbH" id="1uKPZVPH$j$" role="3cqZAp" />
+          <node concept="3SKdUt" id="3J_5hL3LbTE" role="3cqZAp">
+            <node concept="3SKdUq" id="3J_5hL3LbTG" role="3SKWNk">
+              <property role="3SKdUp" value="Checks whether we need to get what's accessible internally or externally." />
+            </node>
+          </node>
           <node concept="Jncv_" id="1X$JbatTV3J" role="3cqZAp">
             <ref role="JncvD" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
             <node concept="37vLTw" id="1X$JbatTV3K" role="JncvB">
@@ -715,7 +760,7 @@
                               <ref role="1M0zk5" node="1X$JbatTV3M" resolve="ct" />
                             </node>
                             <node concept="3TrEf2" id="7WruJM$X0KR" role="2OqNvi">
-                              <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                              <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="7WruJM_aHG4" role="2OqNvi">
@@ -761,7 +806,7 @@
                                 <ref role="1M0zk5" node="1X$JbatTV3M" resolve="ct" />
                               </node>
                               <node concept="3TrEf2" id="7WruJM$X0L0" role="2OqNvi">
-                                <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                                <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                               </node>
                             </node>
                             <node concept="2qgKlT" id="7WruJM$X4q0" role="2OqNvi">
@@ -813,7 +858,7 @@
                                 <ref role="1M0zk5" node="1X$JbatTV3M" resolve="ct" />
                               </node>
                               <node concept="3TrEf2" id="7WruJM_9Faw" role="2OqNvi">
-                                <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="clazz" />
+                                <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
                               </node>
                             </node>
                           </node>

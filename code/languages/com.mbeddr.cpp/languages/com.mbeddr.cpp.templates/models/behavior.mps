@@ -6,6 +6,7 @@
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -161,9 +162,39 @@
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
         <property id="1200397540847" name="charConstant" index="1XhdNS" />
+      </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -211,6 +242,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -437,12 +471,6 @@
       <node concept="17QB3L" id="40WVvpgMF6U" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="ZKpU3ByU7V">
-    <ref role="13h7C2" to="1yyn:ZKpU3Bvynz" resolve="ITemplate" />
-    <node concept="13hLZK" id="ZKpU3ByU7W" role="13h7CW">
-      <node concept="3clFbS" id="ZKpU3ByU7X" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="ZKpU3C47BZ">
     <ref role="13h7C2" to="1yyn:ZKpU3C47B6" resolve="ITemplateImpl" />
     <node concept="13i0hz" id="ZKpU3C47Ca" role="13h7CS">
@@ -478,13 +506,25 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="327D75E9NhL" role="3cqZAp">
-          <node concept="3cpWsn" id="327D75E9NhO" role="3cpWs9">
+        <node concept="3clFbH" id="3J_5hL3KnfS" role="3cqZAp" />
+        <node concept="3SKdUt" id="3J_5hL3Ky6A" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3Ky6C" role="3SKWNk">
+            <property role="3SKdUp" value="This i does need to be outside of the for loop declaration" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3J_5hL3KrGn" role="3cqZAp">
+          <node concept="3cpWsn" id="3J_5hL3KrGq" role="3cpWs9">
             <property role="TrG5h" value="i" />
-            <node concept="10Oyi0" id="327D75E9NhJ" role="1tU5fm" />
-            <node concept="3cmrfG" id="327D75E9Nkw" role="33vP2m">
+            <node concept="10Oyi0" id="3J_5hL3KrGl" role="1tU5fm" />
+            <node concept="3cmrfG" id="3J_5hL3KsgN" role="33vP2m">
               <property role="3cmrfH" value="0" />
             </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3J_5hL3KyGz" role="3cqZAp" />
+        <node concept="3SKdUt" id="3J_5hL3Kono" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3Konq" role="3SKWNk">
+            <property role="3SKdUp" value="Iterate over params" />
           </node>
         </node>
         <node concept="1Dw8fO" id="327D75E9Nnd" role="3cqZAp">
@@ -501,7 +541,7 @@
                   </node>
                   <node concept="34jXtK" id="327D75Ea0tD" role="2OqNvi">
                     <node concept="37vLTw" id="327D75Ea0uI" role="25WWJ7">
-                      <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+                      <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
                     </node>
                   </node>
                 </node>
@@ -509,6 +549,11 @@
             </node>
             <node concept="3clFbJ" id="327D75Ea0wd" role="3cqZAp">
               <node concept="3clFbS" id="327D75Ea0wf" role="3clFbx">
+                <node concept="3SKdUt" id="3J_5hL3Kpjy" role="3cqZAp">
+                  <node concept="3SKdUq" id="3J_5hL3Kpj$" role="3SKWNk">
+                    <property role="3SKdUp" value="Check for default and break if it has one" />
+                  </node>
+                </node>
                 <node concept="3zACq4" id="327D75Ea0V0" role="3cqZAp" />
               </node>
               <node concept="2OqwBi" id="327D75Ea0Dt" role="3clFbw">
@@ -533,6 +578,16 @@
                   </node>
                 </node>
                 <node concept="3clFbS" id="327D75EaciM" role="3eOfB_">
+                  <node concept="3SKdUt" id="3J_5hL3Kql_" role="3cqZAp">
+                    <node concept="3SKdUq" id="3J_5hL3KqlB" role="3SKWNk">
+                      <property role="3SKdUp" value="Check for typedef, and if it is, skip it if it's type is a TypeTemplateArg" />
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="3J_5hL3KqRn" role="3cqZAp">
+                    <node concept="3SKdUq" id="3J_5hL3KqRp" role="3SKWNk">
+                      <property role="3SKdUp" value="Otherwise remove the type and insert a new one" />
+                    </node>
+                  </node>
                   <node concept="3clFbJ" id="327D75EacJy" role="3cqZAp">
                     <node concept="3clFbS" id="327D75EacJ$" role="3clFbx">
                       <node concept="3clFbJ" id="327D75Eav7d" role="3cqZAp">
@@ -546,7 +601,7 @@
                             </node>
                             <node concept="34jXtK" id="327D75EayJ9" role="2OqNvi">
                               <node concept="37vLTw" id="327D75EayNA" role="25WWJ7">
-                                <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+                                <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
                               </node>
                             </node>
                           </node>
@@ -572,7 +627,7 @@
                                 <node concept="liA8E" id="327D75EaBlk" role="2OqNvi">
                                   <ref role="37wK5l" to="33ny:~List.remove(int):java.lang.Object" resolve="remove" />
                                   <node concept="37vLTw" id="327D75EaBsa" role="37wK5m">
-                                    <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+                                    <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
                                   </node>
                                 </node>
                               </node>
@@ -583,7 +638,7 @@
                     </node>
                     <node concept="3eOVzh" id="327D75EajPJ" role="3clFbw">
                       <node concept="37vLTw" id="327D75Eainl" role="3uHU7B">
-                        <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+                        <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
                       </node>
                       <node concept="2OqwBi" id="327D75EamaX" role="3uHU7w">
                         <node concept="2OqwBi" id="327D75EakfR" role="2Oq$k0">
@@ -606,7 +661,7 @@
                       </node>
                       <node concept="1sK_Qi" id="327D75EaEny" role="2OqNvi">
                         <node concept="37vLTw" id="327D75EaEsb" role="1sKJu8">
-                          <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+                          <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
                         </node>
                         <node concept="2ShNRf" id="327D75EaG1y" role="1sKFgg">
                           <node concept="3zrR0B" id="327D75EaGbD" role="2ShVmc">
@@ -632,6 +687,11 @@
                   </node>
                 </node>
                 <node concept="3clFbS" id="327D75EaH5f" role="3eOfB_">
+                  <node concept="3SKdUt" id="3J_5hL3K$7q" role="3cqZAp">
+                    <node concept="3SKdUq" id="3J_5hL3K$7s" role="3SKWNk">
+                      <property role="3SKdUp" value="Very similar to above, this time for value parameters instead of typedefs" />
+                    </node>
+                  </node>
                   <node concept="3clFbJ" id="327D75EaH5g" role="3cqZAp">
                     <node concept="3clFbS" id="327D75EaH5h" role="3clFbx">
                       <node concept="3clFbJ" id="327D75EaH5i" role="3cqZAp">
@@ -645,7 +705,7 @@
                             </node>
                             <node concept="34jXtK" id="327D75EaH5o" role="2OqNvi">
                               <node concept="37vLTw" id="327D75EaH5p" role="25WWJ7">
-                                <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+                                <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
                               </node>
                             </node>
                           </node>
@@ -671,7 +731,7 @@
                                 <node concept="liA8E" id="327D75EaH5_" role="2OqNvi">
                                   <ref role="37wK5l" to="33ny:~List.remove(int):java.lang.Object" resolve="remove" />
                                   <node concept="37vLTw" id="327D75EaH5A" role="37wK5m">
-                                    <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+                                    <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
                                   </node>
                                 </node>
                               </node>
@@ -682,7 +742,7 @@
                     </node>
                     <node concept="3eOVzh" id="327D75EaH5B" role="3clFbw">
                       <node concept="37vLTw" id="327D75EaH5C" role="3uHU7B">
-                        <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+                        <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
                       </node>
                       <node concept="2OqwBi" id="327D75EaH5D" role="3uHU7w">
                         <node concept="2OqwBi" id="327D75EaH5E" role="2Oq$k0">
@@ -705,7 +765,7 @@
                       </node>
                       <node concept="1sK_Qi" id="327D75EaH5N" role="2OqNvi">
                         <node concept="37vLTw" id="327D75EaH5O" role="1sKJu8">
-                          <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+                          <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
                         </node>
                         <node concept="2ShNRf" id="327D75EaH5P" role="1sKFgg">
                           <node concept="3zrR0B" id="327D75EaH5Q" role="2ShVmc">
@@ -730,13 +790,18 @@
               <node concept="34oBXx" id="327D75E9RYX" role="2OqNvi" />
             </node>
             <node concept="37vLTw" id="327D75E9NrU" role="3uHU7B">
-              <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+              <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
             </node>
           </node>
           <node concept="3uNrnE" id="327D75E9SPV" role="1Dwrff">
             <node concept="37vLTw" id="327D75E9SPX" role="2$L3a6">
-              <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+              <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
             </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3J_5hL3K$W_" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3K$WB" role="3SKWNk">
+            <property role="3SKdUp" value="Remove items until we are at the same size of i" />
           </node>
         </node>
         <node concept="2$JKZl" id="327D75Ea17X" role="3cqZAp">
@@ -752,7 +817,7 @@
                 <node concept="liA8E" id="327D75Eabj1" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~List.remove(int):java.lang.Object" resolve="remove" />
                   <node concept="37vLTw" id="327D75EabpQ" role="37wK5m">
-                    <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+                    <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
                   </node>
                 </node>
               </node>
@@ -760,7 +825,7 @@
           </node>
           <node concept="3eOSWO" id="327D75Ea65u" role="2$JKZa">
             <node concept="37vLTw" id="327D75Ea6jC" role="3uHU7w">
-              <ref role="3cqZAo" node="327D75E9NhO" resolve="i" />
+              <ref role="3cqZAo" node="3J_5hL3KrGq" resolve="i" />
             </node>
             <node concept="2OqwBi" id="327D75Ea3eI" role="3uHU7B">
               <node concept="2OqwBi" id="327D75Ea1zU" role="2Oq$k0">
@@ -774,6 +839,13 @@
           </node>
         </node>
       </node>
+      <node concept="P$JXv" id="3J_5hL3K_wV" role="lGtFl">
+        <node concept="TZ5HA" id="3J_5hL3K_wW" role="TZ5H$">
+          <node concept="1dT_AC" id="3J_5hL3K_wX" role="1dT_Ay">
+            <property role="1dT_AB" value="Automatically fills in values, counts, and types in template calls." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="ZKpU3C4blC" role="13h7CS">
       <property role="TrG5h" value="resolveType" />
@@ -782,12 +854,22 @@
         <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
       </node>
       <node concept="3clFbS" id="ZKpU3C4blF" role="3clF47">
+        <node concept="3SKdUt" id="3J_5hL3KBSk" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3KBSm" role="3SKWNk">
+            <property role="3SKdUp" value="If we are referencing a template type" />
+          </node>
+        </node>
         <node concept="Jncv_" id="2QDt3lyC5XO" role="3cqZAp">
           <ref role="JncvD" to="1yyn:2_lkiVk2Aqm" resolve="TemplateTypeRef" />
           <node concept="37vLTw" id="2QDt3lyC6k2" role="JncvB">
             <ref role="3cqZAo" node="ZKpU3C4bmD" resolve="type" />
           </node>
           <node concept="3clFbS" id="2QDt3lyC5XS" role="Jncv$">
+            <node concept="3SKdUt" id="3J_5hL3KCYo" role="3cqZAp">
+              <node concept="3SKdUq" id="3J_5hL3KCYq" role="3SKWNk">
+                <property role="3SKdUp" value="Get a list of the arguments and the parameters" />
+              </node>
+            </node>
             <node concept="3cpWs8" id="2QDt3lyC6H9" role="3cqZAp">
               <node concept="3cpWsn" id="2QDt3lyC6Hc" role="3cpWs9">
                 <property role="TrG5h" value="params" />
@@ -824,10 +906,25 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="3J_5hL3KE16" role="3cqZAp">
+              <node concept="3SKdUq" id="3J_5hL3KE18" role="3SKWNk">
+                <property role="3SKdUp" value="Iterate over the parameters" />
+              </node>
+            </node>
             <node concept="1Dw8fO" id="2QDt3lyC6Mu" role="3cqZAp">
               <node concept="3clFbS" id="2QDt3lyC6Mv" role="2LFqv$">
                 <node concept="3clFbJ" id="327D75ED2qm" role="3cqZAp">
                   <node concept="3clFbS" id="327D75ED2qo" role="3clFbx">
+                    <node concept="3SKdUt" id="3J_5hL3KF2e" role="3cqZAp">
+                      <node concept="3SKdUq" id="3J_5hL3KF2g" role="3SKWNk">
+                        <property role="3SKdUp" value="Check for it being both a typedef and a template arg" />
+                      </node>
+                    </node>
+                    <node concept="3SKdUt" id="3J_5hL3KFz0" role="3cqZAp">
+                      <node concept="3SKdUq" id="3J_5hL3KFz2" role="3SKWNk">
+                        <property role="3SKdUp" value="If it is, just break out with the correct type" />
+                      </node>
+                    </node>
                     <node concept="Jncv_" id="2C_gXOWP0Ec" role="3cqZAp">
                       <ref role="JncvD" to="1yyn:2_lkiViLGkv" resolve="TemplateTypeDef" />
                       <node concept="2OqwBi" id="2C_gXOWP2De" role="JncvB">
@@ -910,6 +1007,11 @@
                   </node>
                   <node concept="9aQIb" id="327D75EDcRA" role="9aQIa">
                     <node concept="3clFbS" id="327D75EDcRB" role="9aQI4">
+                      <node concept="3SKdUt" id="3J_5hL3KG3k" role="3cqZAp">
+                        <node concept="3SKdUq" id="3J_5hL3KG3m" role="3SKWNk">
+                          <property role="3SKdUp" value="Return the type of the default if one is included" />
+                        </node>
+                      </node>
                       <node concept="Jncv_" id="327D75EDdg0" role="3cqZAp">
                         <ref role="JncvD" to="1yyn:1iZHTjWSdj2" resolve="TemplateTypeDefWithDefault" />
                         <node concept="2OqwBi" id="327D75EDePU" role="JncvB">
@@ -977,6 +1079,12 @@
             <node concept="2jxLKc" id="2QDt3lyC5XV" role="1tU5fm" />
           </node>
         </node>
+        <node concept="3clFbH" id="3J_5hL3KAIW" role="3cqZAp" />
+        <node concept="3SKdUt" id="3J_5hL3KGUi" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3KGUk" role="3SKWNk">
+            <property role="3SKdUp" value="For pointers, just unwrap them and return a pointer with the given base type" />
+          </node>
+        </node>
         <node concept="Jncv_" id="1iZHTjWHirO" role="3cqZAp">
           <ref role="JncvD" to="yq40:fwMInzpHoK" resolve="PointerType" />
           <node concept="37vLTw" id="1iZHTjWHiO3" role="JncvB">
@@ -1035,6 +1143,12 @@
             <node concept="2jxLKc" id="1iZHTjWHirV" role="1tU5fm" />
           </node>
         </node>
+        <node concept="3clFbH" id="3J_5hL3KAD3" role="3cqZAp" />
+        <node concept="3SKdUt" id="3J_5hL3KI4$" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3KI4A" role="3SKWNk">
+            <property role="3SKdUp" value="For classes" />
+          </node>
+        </node>
         <node concept="Jncv_" id="1iZHTjWHsxr" role="3cqZAp">
           <ref role="JncvD" to="1yyn:ZKpU3C47B5" resolve="TemplateClassType" />
           <node concept="37vLTw" id="1iZHTjWHt2o" role="JncvB">
@@ -1054,6 +1168,11 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="3J_5hL3KJaM" role="3cqZAp">
+              <node concept="3SKdUq" id="3J_5hL3KJaO" role="3SKWNk">
+                <property role="3SKdUp" value="Create a new class and copy over the same reference" />
               </node>
             </node>
             <node concept="3clFbF" id="1iZHTjWHJwF" role="3cqZAp">
@@ -1087,6 +1206,12 @@
                   </node>
                 </node>
                 <node concept="2Kehj3" id="327D75EpvCG" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="3J_5hL3KJFR" role="3cqZAp" />
+            <node concept="3SKdUt" id="3J_5hL3KKfj" role="3cqZAp">
+              <node concept="3SKdUq" id="3J_5hL3KKfl" role="3SKWNk">
+                <property role="3SKdUp" value="Resolve each template argument and copy it over to the new template class" />
               </node>
             </node>
             <node concept="2Gpval" id="1iZHTjWKPfW" role="3cqZAp">
@@ -1217,6 +1342,12 @@
             <node concept="2jxLKc" id="1iZHTjWHsxy" role="1tU5fm" />
           </node>
         </node>
+        <node concept="3clFbH" id="3J_5hL3KLwk" role="3cqZAp" />
+        <node concept="3SKdUt" id="3J_5hL3KKUT" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3KKUV" role="3SKWNk">
+            <property role="3SKdUp" value="If we get here, no templates are there. Just return what was given" />
+          </node>
+        </node>
         <node concept="3cpWs6" id="ZKpU3C4bmB" role="3cqZAp">
           <node concept="37vLTw" id="ZKpU3C4bmC" role="3cqZAk">
             <ref role="3cqZAo" node="ZKpU3C4bmD" resolve="type" />
@@ -1228,6 +1359,22 @@
         <property role="3TUv4t" value="false" />
         <node concept="3Tqbb2" id="ZKpU3C4bmE" role="1tU5fm">
           <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="3J_5hL3KA0x" role="lGtFl">
+        <node concept="TZ5HA" id="3J_5hL3KA0y" role="TZ5H$">
+          <node concept="1dT_AC" id="3J_5hL3KA0z" role="1dT_Ay">
+            <property role="1dT_AB" value="Resolves the type of a template implementation" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="3J_5hL3KA0$" role="3nqlJM">
+          <property role="TUZQ4" value="the template type" />
+          <node concept="zr_55" id="3J_5hL3KA0A" role="zr_5Q">
+            <ref role="zr_51" node="ZKpU3C4bmD" resolve="type" />
+          </node>
+        </node>
+        <node concept="x79VA" id="3J_5hL3KA0B" role="3nqlJM">
+          <property role="x79VB" value="the resolved type" />
         </node>
       </node>
     </node>
@@ -1304,6 +1451,11 @@
       <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
       <node concept="3Tm1VV" id="2C_gXOWN3Ls" role="1B3o_S" />
       <node concept="3clFbS" id="2C_gXOWN3Lz" role="3clF47">
+        <node concept="3SKdUt" id="3J_5hL3KVn_" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3KVnB" role="3SKWNk">
+            <property role="3SKdUp" value="Gets a presentation that contains the templated types instead of just the normal class name." />
+          </node>
+        </node>
         <node concept="3cpWs8" id="2C_gXOWN4jG" role="3cqZAp">
           <node concept="3cpWsn" id="2C_gXOWN4jH" role="3cpWs9">
             <property role="TrG5h" value="builder" />
@@ -1453,6 +1605,11 @@
       <ref role="13i0hy" to="kntn:7POJCjhallK" resolve="shouldDefaultScope" />
       <node concept="3Tm1VV" id="45faY2u7g0f" role="1B3o_S" />
       <node concept="3clFbS" id="45faY2u7g0n" role="3clF47">
+        <node concept="3SKdUt" id="3J_5hL3KVK2" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3KVK4" role="3SKWNk">
+            <property role="3SKdUp" value="Templates does its own scoping" />
+          </node>
+        </node>
         <node concept="3clFbF" id="45faY2u7gnI" role="3cqZAp">
           <node concept="3clFbT" id="45faY2u7gnH" role="3clFbG" />
         </node>
@@ -1519,6 +1676,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3J_5hL3L6ms" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3L6mu" role="3SKWNk">
+            <property role="3SKdUp" value="Simply re-add the types manually." />
           </node>
         </node>
         <node concept="3clFbF" id="6ODoR9yLLCP" role="3cqZAp">
@@ -1660,6 +1822,11 @@
                 <ref role="3Tt5mk" to="wnzg:4o2nsMgBEtY" resolve="class" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3J_5hL3KZ0i" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3KZ0k" role="3SKWNk">
+            <property role="3SKdUp" value="Simply re-add the types as copies and return the new node" />
           </node>
         </node>
         <node concept="3clFbF" id="327D75Eqj2t" role="3cqZAp">
@@ -2220,6 +2387,12 @@
             <node concept="2Kehj3" id="1AWeiMKNOw9" role="2OqNvi" />
           </node>
         </node>
+        <node concept="3clFbH" id="3J_5hL3KRXy" role="3cqZAp" />
+        <node concept="3SKdUt" id="3J_5hL3KSe0" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3KSe2" role="3SKWNk">
+            <property role="3SKdUp" value="Check each template type" />
+          </node>
+        </node>
         <node concept="2Gpval" id="1AWeiMKMWjA" role="3cqZAp">
           <node concept="2GrKxI" id="1AWeiMKMWjC" role="2Gsz3X">
             <property role="TrG5h" value="type" />
@@ -2231,6 +2404,11 @@
             </node>
           </node>
           <node concept="3clFbS" id="1AWeiMKMWjG" role="2LFqv$">
+            <node concept="3SKdUt" id="3J_5hL3KSuQ" role="3cqZAp">
+              <node concept="3SKdUq" id="3J_5hL3KSuS" role="3SKWNk">
+                <property role="3SKdUp" value="Resolve typedefs, adding them to the type node" />
+              </node>
+            </node>
             <node concept="Jncv_" id="1AWeiMKMXt9" role="3cqZAp">
               <ref role="JncvD" to="1yyn:2_lkiViLGkv" resolve="TemplateTypeDef" />
               <node concept="2GrUjf" id="1AWeiMKMXtH" role="JncvB">
@@ -2321,6 +2499,12 @@
                 <node concept="2jxLKc" id="1AWeiMKMXtd" role="1tU5fm" />
               </node>
             </node>
+            <node concept="3clFbH" id="3J_5hL3KPre" role="3cqZAp" />
+            <node concept="3SKdUt" id="3J_5hL3KS$S" role="3cqZAp">
+              <node concept="3SKdUq" id="3J_5hL3KS$U" role="3SKWNk">
+                <property role="3SKdUp" value="Resolve values, adding them to the type node" />
+              </node>
+            </node>
             <node concept="Jncv_" id="1AWeiMKNbuD" role="3cqZAp">
               <ref role="JncvD" to="1yyn:1iZHTjWMvf4" resolve="TemplateValueParam" />
               <node concept="2GrUjf" id="1AWeiMKNbw$" role="JncvB">
@@ -2367,6 +2551,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="3J_5hL3KRJA" role="3cqZAp" />
         <node concept="3cpWs6" id="2yiFVcK$gsr" role="3cqZAp">
           <node concept="37vLTw" id="2yiFVcK$gwv" role="3cqZAk">
             <ref role="3cqZAo" node="2yiFVcK$eeN" resolve="classTypeNode" />
@@ -2375,6 +2560,13 @@
       </node>
       <node concept="3Tqbb2" id="2yiFVcK$dNn" role="3clF45">
         <ref role="ehGHo" to="wnzg:4o2nsMgBEtu" resolve="ClassType" />
+      </node>
+      <node concept="P$JXv" id="3J_5hL3KSBX" role="lGtFl">
+        <node concept="TZ5HA" id="3J_5hL3KSBY" role="TZ5H$">
+          <node concept="1dT_AC" id="3J_5hL3KSBZ" role="1dT_Ay">
+            <property role="1dT_AB" value="See ClassDeclaration#getType" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="45faY2u7Ay2" role="13h7CS">

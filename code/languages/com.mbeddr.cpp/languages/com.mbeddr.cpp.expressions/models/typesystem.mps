@@ -193,6 +193,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -204,6 +205,9 @@
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -407,13 +411,13 @@
             </node>
           </node>
           <node concept="3clFbH" id="7POJCjgR7DK" role="3cqZAp" />
-          <node concept="3SKdUt" id="7POJCjgR7SO" role="3cqZAp">
-            <node concept="3SKdUq" id="7POJCjgR7SQ" role="3SKWNk">
-              <property role="3SKdUp" value="Assign the type to the template resolved type if it's a class" />
-            </node>
-          </node>
           <node concept="3clFbJ" id="327D75EHate" role="3cqZAp">
             <node concept="3clFbS" id="327D75EHatg" role="3clFbx">
+              <node concept="3SKdUt" id="7POJCjgR7SO" role="3cqZAp">
+                <node concept="3SKdUq" id="7POJCjgR7SQ" role="3SKWNk">
+                  <property role="3SKdUp" value="Assign the type to the template resolved type if it's a class" />
+                </node>
+              </node>
               <node concept="1Z5TYs" id="6FZQsHtIn7F" role="3cqZAp">
                 <node concept="mw_s8" id="6FZQsHtInfB" role="1ZfhKB">
                   <node concept="1Z2H0r" id="6FZQsHtInfz" role="mwGJk">
@@ -456,6 +460,11 @@
             </node>
             <node concept="9aQIb" id="327D75EIioy" role="9aQIa">
               <node concept="3clFbS" id="327D75EIioz" role="9aQI4">
+                <node concept="3SKdUt" id="3J_5hL3JEP7" role="3cqZAp">
+                  <node concept="3SKdUq" id="3J_5hL3JEP8" role="3SKWNk">
+                    <property role="3SKdUp" value="Assign the type to the attribute otherwise" />
+                  </node>
+                </node>
                 <node concept="1Z5TYs" id="327D75EIiZj" role="3cqZAp">
                   <node concept="mw_s8" id="327D75EIiZH" role="1ZfhKB">
                     <node concept="1Z2H0r" id="6FZQsHtIm1x" role="mwGJk">
@@ -1328,6 +1337,70 @@
     </node>
     <node concept="1YaCAy" id="4smL_2COOug" role="1YuTPh">
       <property role="TrG5h" value="thisnode" />
+      <ref role="1YaFvo" to="3d25:2yiFVcKEErD" resolve="This" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2w1tz7c4I6Z">
+    <property role="TrG5h" value="check_This" />
+    <node concept="3clFbS" id="2w1tz7c4I70" role="18ibNy">
+      <node concept="3clFbJ" id="2w1tz7c4I7f" role="3cqZAp">
+        <node concept="2OqwBi" id="2w1tz7c4Jdn" role="3clFbw">
+          <node concept="2OqwBi" id="2w1tz7c4IlG" role="2Oq$k0">
+            <node concept="1YBJjd" id="2w1tz7c4I7u" role="2Oq$k0">
+              <ref role="1YBMHb" node="2w1tz7c4I72" resolve="thisPtr" />
+            </node>
+            <node concept="2Xjw5R" id="2w1tz7c4IBf" role="2OqNvi">
+              <node concept="1xMEDy" id="2w1tz7c4IBh" role="1xVPHs">
+                <node concept="chp4Y" id="2w1tz7c4IDo" role="ri$Ld">
+                  <ref role="cht4Q" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
+                </node>
+              </node>
+              <node concept="1xIGOp" id="2w1tz7c4IJv" role="1xVPHs" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="2w1tz7c4KGI" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="2w1tz7c4I7h" role="3clFbx">
+          <node concept="3SKdUt" id="2w1tz7c4LoD" role="3cqZAp">
+            <node concept="3SKdUq" id="2w1tz7c4LoE" role="3SKWNk">
+              <property role="3SKdUp" value="Error if in static context" />
+            </node>
+          </node>
+          <node concept="3clFbJ" id="2w1tz7c4LoR" role="3cqZAp">
+            <node concept="3clFbS" id="2w1tz7c4LoT" role="3clFbx">
+              <node concept="2MkqsV" id="2w1tz7c4NrJ" role="3cqZAp">
+                <node concept="Xl_RD" id="2w1tz7c4NYf" role="2MkJ7o">
+                  <property role="Xl_RC" value="can't use 'this' in static context" />
+                </node>
+                <node concept="1YBJjd" id="2w1tz7c4NOQ" role="2OEOjV">
+                  <ref role="1YBMHb" node="2w1tz7c4I72" resolve="thisPtr" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2w1tz7c4M_0" role="3clFbw">
+              <node concept="2OqwBi" id="2w1tz7c4LBs" role="2Oq$k0">
+                <node concept="1YBJjd" id="2w1tz7c4Lpe" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2w1tz7c4I72" resolve="thisPtr" />
+                </node>
+                <node concept="2Xjw5R" id="2w1tz7c4LT8" role="2OqNvi">
+                  <node concept="1xMEDy" id="2w1tz7c4LTa" role="1xVPHs">
+                    <node concept="chp4Y" id="2w1tz7c4M11" role="ri$Ld">
+                      <ref role="cht4Q" to="wnzg:4o2nsMgB$VW" resolve="MethodDeclaration" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="2w1tz7c4M78" role="1xVPHs" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="2w1tz7c4Nlx" role="2OqNvi">
+                <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2w1tz7c4I72" role="1YuTPh">
+      <property role="TrG5h" value="thisPtr" />
       <ref role="1YaFvo" to="3d25:2yiFVcKEErD" resolve="This" />
     </node>
   </node>

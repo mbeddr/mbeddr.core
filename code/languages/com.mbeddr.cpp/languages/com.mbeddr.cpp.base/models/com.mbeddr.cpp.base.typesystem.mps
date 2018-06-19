@@ -559,7 +559,7 @@
               <ref role="1YBMHb" node="4K6s$_rq5Gi" resolve="inheritanceInstance" />
             </node>
             <node concept="Xl_RD" id="4K6s$_rqajb" role="2MkJ7o">
-              <property role="Xl_RC" value="you can't extend a class from another module if it is not exported" />
+              <property role="Xl_RC" value="you can't extend an unexported class from another module" />
             </node>
           </node>
         </node>
@@ -860,7 +860,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="4K6s$_sNy5E">
-    <property role="TrG5h" value="StaticClassMethodCallRule" />
+    <property role="TrG5h" value="check_StaticClassMethodCallRule" />
     <property role="3GE5qa" value="method" />
     <node concept="3clFbS" id="4K6s$_sNy5F" role="18ibNy">
       <node concept="3SKdUt" id="4K6s$_sN_dW" role="3cqZAp">
@@ -2091,7 +2091,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="7fNEwq_kdh2">
-    <property role="TrG5h" value="typeof_NamespaceClassInstanceRef" />
+    <property role="TrG5h" value="typeof_NamespaceClassInstanceAttributeRef" />
     <property role="3GE5qa" value="namespace" />
     <node concept="3clFbS" id="7fNEwq_kdh3" role="18ibNy">
       <node concept="1Z5TYs" id="7fNEwq_kdtk" role="3cqZAp">
