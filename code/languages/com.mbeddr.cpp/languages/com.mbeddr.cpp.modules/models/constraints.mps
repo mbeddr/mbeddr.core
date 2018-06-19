@@ -2,7 +2,7 @@
 <model ref="r:5be407cf-e0e1-4d2f-bd26-b6f516468e59(com.mbeddr.cpp.modules.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -34,12 +34,17 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
@@ -104,12 +109,24 @@
     <node concept="9SQb8" id="ZKpU3ByEDn" role="9SGkC">
       <node concept="3clFbS" id="ZKpU3ByEDo" role="2VODD2">
         <node concept="3clFbF" id="ZKpU3ByEKI" role="3cqZAp">
-          <node concept="3fqX7Q" id="ZKpU3ByEKG" role="3clFbG">
-            <node concept="2OqwBi" id="ZKpU3ByFdL" role="3fr31v">
-              <node concept="2DD5aU" id="ZKpU3ByEVS" role="2Oq$k0" />
-              <node concept="3O6GUB" id="ZKpU3ByFDj" role="2OqNvi">
-                <node concept="chp4Y" id="ZKpU3ByFQC" role="3QVz_e">
-                  <ref role="cht4Q" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
+          <node concept="1Wc70l" id="5QEDVnwvdBH" role="3clFbG">
+            <node concept="3fqX7Q" id="ZKpU3ByEKG" role="3uHU7B">
+              <node concept="2OqwBi" id="ZKpU3ByFdL" role="3fr31v">
+                <node concept="2DD5aU" id="ZKpU3ByEVS" role="2Oq$k0" />
+                <node concept="3O6GUB" id="ZKpU3ByFDj" role="2OqNvi">
+                  <node concept="chp4Y" id="ZKpU3ByFQC" role="3QVz_e">
+                    <ref role="cht4Q" to="x27k:5ak6HMA0rec" resolve="FunctionCall" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="5QEDVnvRdvP" role="3uHU7w">
+              <node concept="2OqwBi" id="5QEDVnvRe4M" role="3fr31v">
+                <node concept="2DD5aU" id="5QEDVnvRdHb" role="2Oq$k0" />
+                <node concept="3O6GUB" id="5QEDVnvReyy" role="2OqNvi">
+                  <node concept="chp4Y" id="5QEDVnvReK6" role="3QVz_e">
+                    <ref role="cht4Q" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+                  </node>
                 </node>
               </node>
             </node>

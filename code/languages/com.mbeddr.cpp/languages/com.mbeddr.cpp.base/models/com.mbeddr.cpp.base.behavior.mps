@@ -10271,26 +10271,6 @@
       <node concept="3clFbS" id="7fNEwqBx$7e" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="6OyCGy3I43h">
-    <ref role="13h7C2" to="wnzg:6OyCGy3I3ZK" resolve="StaticGlobalVarDec" />
-    <node concept="13hLZK" id="6OyCGy3I43i" role="13h7CW">
-      <node concept="3clFbS" id="6OyCGy3I43j" role="2VODD2">
-        <node concept="3clFbF" id="6OyCGy3I46p" role="3cqZAp">
-          <node concept="37vLTI" id="6OyCGy3I7Vx" role="3clFbG">
-            <node concept="3clFbT" id="6OyCGy3I84R" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="6OyCGy3I4v9" role="37vLTJ">
-              <node concept="13iPFW" id="6OyCGy3I46o" role="2Oq$k0" />
-              <node concept="3TrcHB" id="6OyCGy3I6wB" role="2OqNvi">
-                <ref role="3TsBF5" to="wnzg:1Yr26itwx8v" resolve="isStatic" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="13h7C7" id="4KCRVMvtPvN">
     <ref role="13h7C2" to="wnzg:4KCRVMvtEXq" resolve="NewObjectInitializer" />
     <node concept="13hLZK" id="4KCRVMvtPvO" role="13h7CW">
