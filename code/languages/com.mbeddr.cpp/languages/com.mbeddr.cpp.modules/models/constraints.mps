@@ -34,6 +34,12 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
@@ -76,6 +82,11 @@
     </node>
     <node concept="9SLcT" id="3OWNtRXl5Qm" role="9SGkU">
       <node concept="3clFbS" id="3OWNtRXl5Qn" role="2VODD2">
+        <node concept="3SKdUt" id="3J_5hL3JF37" role="3cqZAp">
+          <node concept="3SKdUq" id="3J_5hL3JF39" role="3SKWNk">
+            <property role="3SKdUp" value="Prevent structs from existing inside of it since we only allows classes." />
+          </node>
+        </node>
         <node concept="3clFbF" id="3OWNtRXl5XG" role="3cqZAp">
           <node concept="3fqX7Q" id="3OWNtRXl7_L" role="3clFbG">
             <node concept="2OqwBi" id="3OWNtRXl7_N" role="3fr31v">

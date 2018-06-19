@@ -82,6 +82,11 @@
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
+      <concept id="3693790620639876318" name="com.mbeddr.mpsutil.blutil.structure.BLDoc" flags="ng" index="2aEySx">
+        <child id="3693790620639876319" name="text" index="2aEySw" />
+      </concept>
+    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
@@ -92,6 +97,14 @@
       </concept>
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -188,7 +201,7 @@
         <child id="7155645240280389397" name="body" index="1IVm9U" />
         <child id="3883266571380204831" name="initializers" index="1YC0t0" />
       </concept>
-      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualFlagConcept" flags="ng" index="hL25U">
+      <concept id="3188920472788366140" name="com.mbeddr.cpp.base.structure.IVirtualFlag" flags="ng" index="hL25U">
         <property id="3188920472788366141" name="isVirtual" index="hL25V" />
       </concept>
       <concept id="137823117410394117" name="com.mbeddr.cpp.base.structure.ConstructorInitializedConstructor" flags="ng" index="yZclw">
@@ -201,7 +214,7 @@
         <reference id="4511589886097466674" name="parentClass" index="FysoF" />
       </concept>
       <concept id="1771923826942799313" name="com.mbeddr.cpp.base.structure.InnerClassType" flags="ng" index="TrGU4">
-        <child id="1771923826942799314" name="outerclassType" index="TrGU7" />
+        <child id="1771923826942799314" name="outerClassType" index="TrGU7" />
       </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
@@ -480,7 +493,7 @@
                   <node concept="3clFbF" id="1yn8PkyMcmT" role="3cqZAp">
                     <node concept="2OqwBi" id="1yn8PkyMcmO" role="3clFbG">
                       <node concept="3TrEf2" id="1yn8PkyMcmR" role="2OqNvi">
-                        <ref role="3Tt5mk" to="wnzg:1yn8PkxYuRi" resolve="outerclassType" />
+                        <ref role="3Tt5mk" to="wnzg:1yn8PkxYuRi" resolve="outerClassType" />
                       </node>
                       <node concept="30H73N" id="1yn8PkyMcmS" role="2Oq$k0" />
                     </node>
@@ -1588,6 +1601,13 @@
       <ref role="30HIoZ" to="wlyv:2Ai0Gt9PsI6" resolve="CPPImplementationModule" />
       <ref role="3lhOvi" node="2Ai0GtaaFnn" resolve="map_CPPImplementationModule2ImplementationModule" />
     </node>
+    <node concept="2aEySx" id="3J_5hL3KaK6" role="lGtFl">
+      <node concept="19SGf9" id="3J_5hL3KaK7" role="2aEySw">
+        <node concept="19SUe$" id="3J_5hL3KaK8" role="19SJt6">
+          <property role="19SUeA" value="Reduces several concepts to generatable templates" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1whppz" id="2Ai0GtaaFnn">
     <property role="TrG5h" value="map_CPPImplementationModule2ImplementationModule" />
@@ -2479,6 +2499,13 @@
     </node>
     <node concept="n94m4" id="2Ai0GtaaFno" role="lGtFl">
       <ref role="n9lRv" to="wlyv:2Ai0Gt9PsI6" resolve="CPPImplementationModule" />
+      <node concept="2aEySx" id="3J_5hL3KaQz" role="lGtFl">
+        <node concept="19SGf9" id="3J_5hL3KaQ$" role="2aEySw">
+          <node concept="19SUe$" id="3J_5hL3KaQ_" role="19SJt6">
+            <property role="19SUeA" value="This is the actual generation module" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="17Uvod" id="2Ai0GtaaG7c" role="lGtFl">
       <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -4687,6 +4714,13 @@
         <ref role="2sdACS" node="2Ai0Gt9X68v" resolve="class2Prototype" />
       </node>
     </node>
+    <node concept="2aEySx" id="3J_5hL3JZj9" role="lGtFl">
+      <node concept="19SGf9" id="3J_5hL3JZja" role="2aEySw">
+        <node concept="19SUe$" id="3J_5hL3JZjb" role="19SJt6">
+          <property role="19SUeA" value="Handles normal classes with other classes/template classes nested inside of them." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13MO4I" id="1yn8PkyOfZN">
     <property role="TrG5h" value="TemplateClassRecursion" />
@@ -5352,6 +5386,13 @@
         </node>
       </node>
     </node>
+    <node concept="2aEySx" id="3J_5hL3K9x_" role="lGtFl">
+      <node concept="19SGf9" id="3J_5hL3K9xA" role="2aEySw">
+        <node concept="19SUe$" id="3J_5hL3K9xB" role="19SJt6">
+          <property role="19SUeA" value="Handles template class generation with nested classes/template classes inside" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13MO4I" id="1yn8Pkz3zGs">
     <property role="TrG5h" value="ClassInTemplateRecursion" />
@@ -5964,6 +6005,13 @@
       </node>
       <node concept="raruj" id="1yn8Pkz3P5R" role="lGtFl">
         <ref role="2sdACS" node="2Ai0Gt9X68v" resolve="class2Prototype" />
+      </node>
+    </node>
+    <node concept="2aEySx" id="3J_5hL3JUAj" role="lGtFl">
+      <node concept="19SGf9" id="3J_5hL3JUAk" role="2aEySw">
+        <node concept="19SUe$" id="3J_5hL3JUAl" role="19SJt6">
+          <property role="19SUeA" value="Handles generating nested classes inside of template classes" />
+        </node>
       </node>
     </node>
   </node>

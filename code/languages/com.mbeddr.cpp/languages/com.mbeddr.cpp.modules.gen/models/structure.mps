@@ -13,6 +13,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -35,6 +38,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -45,6 +51,9 @@
     <property role="TrG5h" value="GenModuleCpp" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+    <node concept="t5JxF" id="3J_5hL3JMZ7" role="lGtFl">
+      <property role="t5JxN" value="CPP Implementation Modules in the generator. Used for headers." />
+    </node>
   </node>
   <node concept="1TIwiD" id="2Ai0Gt9Wx2A">
     <property role="EcuMT" value="2995459757117149350" />
@@ -60,6 +69,9 @@
     </node>
     <node concept="PrWs8" id="2Ai0Gt9X9Vr" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="t5JxF" id="3J_5hL3JMZ4" role="lGtFl">
+      <property role="t5JxN" value="Signatures for methods in the generator. Used for headers." />
     </node>
   </node>
   <node concept="1TIwiD" id="2Ai0GtaeAMs">
@@ -77,6 +89,9 @@
     <node concept="PrWs8" id="2Ai0GtaeAMt" role="PzmwI">
       <ref role="PrY4T" to="wnzg:4o2nsMgBIr5" resolve="IClassMemberDeclaration" />
     </node>
+    <node concept="t5JxF" id="3J_5hL3JMWy" role="lGtFl">
+      <property role="t5JxN" value="The &quot;public:&quot;/&quot;private:&quot;/&quot;protected&quot; lines of a class in the header" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7DDmkzf7zb">
     <property role="EcuMT" value="137823117412956363" />
@@ -85,6 +100,9 @@
     <ref role="1TJDcQ" to="wnzg:6NtgknWJ21h" resolve="ClassConstructorSignature" />
     <node concept="PrWs8" id="4KyQ_Qh$YaF" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="t5JxF" id="3J_5hL3JMZ1" role="lGtFl">
+      <property role="t5JxN" value="Prototype for constructors in the generator. Used for headers." />
     </node>
   </node>
   <node concept="1TIwiD" id="3LE5RBQ$srP">
@@ -101,6 +119,9 @@
     </node>
     <node concept="PrWs8" id="3LE5RBQ_bLz" role="PzmwI">
       <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="t5JxF" id="3J_5hL3JMZa" role="lGtFl">
+      <property role="t5JxN" value="Operator overloading declarations in the generator. Used for headers." />
     </node>
   </node>
 </model>
