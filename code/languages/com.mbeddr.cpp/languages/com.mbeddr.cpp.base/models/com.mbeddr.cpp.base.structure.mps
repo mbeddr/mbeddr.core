@@ -1057,6 +1057,7 @@
     <property role="EcuMT" value="7864026881429356528" />
     <property role="TrG5h" value="StaticGlobalVarDec" />
     <property role="34LRSv" value="static" />
+    <property role="R4oN_" value="Static global variable declaration" />
     <ref role="1TJDcQ" node="6OyCGy3FHs3" resolve="GlobalVarDecCPP" />
     <node concept="t5JxF" id="7POJCjf3_ms" role="lGtFl">
       <property role="t5JxN" value="Simply allows you to type &quot;static&quot; as the beginning of a global variable and have it work as expected." />
