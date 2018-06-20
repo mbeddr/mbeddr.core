@@ -6357,5 +6357,46 @@
       <ref role="1YaFvo" to="wnzg:cx3$dxZGVV" resolve="ClassStaticMethodRef" />
     </node>
   </node>
+  <node concept="1YbPZF" id="3L3ootSapff">
+    <property role="TrG5h" value="typeof_ClassStaticRef" />
+    <node concept="3clFbS" id="3L3ootSapfg" role="18ibNy">
+      <node concept="nvevp" id="3L3ootSapfm" role="3cqZAp">
+        <node concept="3clFbS" id="3L3ootSapfn" role="nvhr_">
+          <node concept="1Z5TYs" id="3L3ootSaqhM" role="3cqZAp">
+            <node concept="mw_s8" id="3L3ootSaqic" role="1ZfhKB">
+              <node concept="2X3wrD" id="3L3ootSaqia" role="mwGJk">
+                <ref role="2X3Bk0" node="3L3ootSapfp" resolve="targetType" />
+              </node>
+            </node>
+            <node concept="mw_s8" id="3L3ootSaqhP" role="1ZfhK$">
+              <node concept="1Z2H0r" id="3L3ootSapMZ" role="mwGJk">
+                <node concept="1YBJjd" id="3L3ootSapOO" role="1Z2MuG">
+                  <ref role="1YBMHb" node="3L3ootSapfi" resolve="classStaticRef" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Z2H0r" id="3L3ootSapgd" role="nvjzm">
+          <node concept="2OqwBi" id="3L3ootSapsU" role="1Z2MuG">
+            <node concept="1YBJjd" id="3L3ootSapgF" role="2Oq$k0">
+              <ref role="1YBMHb" node="3L3ootSapfi" resolve="classStaticRef" />
+            </node>
+            <node concept="3TrEf2" id="3L3ootSapIJ" role="2OqNvi">
+              <ref role="3Tt5mk" to="wnzg:3L3ootRECAp" resolve="target" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X1qdy" id="3L3ootSapfp" role="2X0Ygz">
+          <property role="TrG5h" value="targetType" />
+          <node concept="2jxLKc" id="3L3ootSapfq" role="1tU5fm" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3L3ootSapfi" role="1YuTPh">
+      <property role="TrG5h" value="classStaticRef" />
+      <ref role="1YaFvo" to="wnzg:3L3ootRECAk" resolve="ClassStaticRef" />
+    </node>
+  </node>
 </model>
 
