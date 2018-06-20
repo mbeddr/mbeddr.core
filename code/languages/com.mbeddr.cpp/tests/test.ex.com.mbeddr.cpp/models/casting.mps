@@ -222,6 +222,7 @@
       <property role="1wg9_F" value="public" />
       <property role="TrG5h" value="ThirdClass" />
       <node concept="FysoC" id="4lmr4L5sx1G" role="Fysvh">
+        <property role="FysoG" value="public" />
         <ref role="FysoF" node="4lmr4L5g4Fy" resolve="SomeClass" />
       </node>
     </node>
