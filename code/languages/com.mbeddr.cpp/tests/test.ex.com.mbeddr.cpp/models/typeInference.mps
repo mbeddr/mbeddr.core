@@ -153,7 +153,6 @@
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
-      <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
     </language>
   </registry>
   <node concept="2v9HqL" id="3fD_lX7EkLh">
@@ -193,26 +192,18 @@
   </node>
   <node concept="1whW_1" id="2O2YBLCmwEn">
     <property role="TrG5h" value="Auto" />
-    <node concept="3Iz7nb" id="cx3$dxZErN" role="N3F5h">
-      <property role="TrG5h" value="globalShouldBeBool" />
-      <node concept="RSaEH" id="cx3$dxZErL" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="3TlMhK" id="cx3$dxZEty" role="1cecVj" />
-    </node>
-    <node concept="3Iz7nb" id="cx3$dxZEyG" role="N3F5h">
+    <node concept="3Iz7nb" id="2QzMXD3sZMe" role="N3F5h">
       <property role="TrG5h" value="globalShouldBeInt" />
-      <node concept="RSaEH" id="cx3$dxZEyE" role="2C2TGm">
+      <node concept="RSaEH" id="2QzMXD3sZMc" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
-      <node concept="3TlMh9" id="cx3$dxZE$J" role="1cecVj">
+      <node concept="3TlMh9" id="2QzMXD3sZOR" role="1cecVj">
         <property role="2hmy$m" value="1" />
       </node>
     </node>
-    <node concept="2NXPZ9" id="6FZQsHt$4M_" role="N3F5h">
-      <property role="TrG5h" value="empty_1528114673362_1" />
+    <node concept="2NXPZ9" id="2QzMXD3sZGP" role="N3F5h">
+      <property role="TrG5h" value="empty_1529479510880_3" />
     </node>
     <node concept="3mBW2U" id="6FZQsHt$4Ud" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -274,8 +265,8 @@
         </node>
         <node concept="1_9egQ" id="6FZQsHuvf1w" role="3XIRFZ">
           <node concept="3pqW6w" id="6FZQsHv7TZi" role="1_9egR">
-            <node concept="1S7827" id="cx3$dxZEC$" role="3TlMhJ">
-              <ref role="1S7826" node="cx3$dxZEyG" resolve="globalShouldBeInt" />
+            <node concept="1S7827" id="2QzMXD3sZXW" role="3TlMhJ">
+              <ref role="1S7826" node="2QzMXD3sZMe" resolve="globalShouldBeInt" />
             </node>
             <node concept="3ZVu4v" id="6FZQsHuvf1u" role="3TlMhI">
               <ref role="3ZVs_2" node="6FZQsHtzK2B" resolve="integer" />

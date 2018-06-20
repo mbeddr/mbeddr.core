@@ -2327,7 +2327,7 @@
                     <ref role="1YBMHb" node="3qdsM6yQr4p" resolve="arbitraryMemeberRef" />
                   </node>
                   <node concept="3TrEf2" id="2GzcfKRGcRA" role="2OqNvi">
-                    <ref role="3Tt5mk" to="c4fa:2GzcfKRG0oO" resolve="dummyType" />
+                    <ref role="3Tt5mk" to="clbe:2GzcfKRG0oO" resolve="dummyType" />
                   </node>
                 </node>
                 <node concept="1$rogu" id="2GzcfKRGbsw" role="2OqNvi" />
@@ -2349,7 +2349,7 @@
               <ref role="1YBMHb" node="3qdsM6yQr4p" resolve="arbitraryMemeberRef" />
             </node>
             <node concept="3TrEf2" id="2GzcfKRGdiQ" role="2OqNvi">
-              <ref role="3Tt5mk" to="c4fa:2GzcfKRG0oO" resolve="dummyType" />
+              <ref role="3Tt5mk" to="clbe:2GzcfKRG0oO" resolve="dummyType" />
             </node>
           </node>
         </node>
