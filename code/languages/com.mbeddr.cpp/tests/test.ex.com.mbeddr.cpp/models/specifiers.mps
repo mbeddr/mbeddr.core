@@ -71,6 +71,10 @@
       <concept id="6028541369719415919" name="com.mbeddr.cpp.base.structure.IConstExprFlag" flags="ng" index="OtGC0">
         <property id="6028541369719415920" name="isConstExpr" index="OtGCv" />
       </concept>
+      <concept id="4342421700171434388" name="com.mbeddr.cpp.base.structure.ClassStaticRef" flags="ng" index="1bUuwj">
+        <reference id="4342421700171434390" name="class" index="1bUuwh" />
+        <child id="4342421700171434393" name="target" index="1bUuwu" />
+      </concept>
       <concept id="5044697665789382396" name="com.mbeddr.cpp.base.structure.MethodDeclaration" flags="ng" index="3mB1cK">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
@@ -87,6 +91,9 @@
         <child id="5044697665789396304" name="members" index="3mBdys" />
       </concept>
       <concept id="4018800670853679470" name="com.mbeddr.cpp.base.structure.EmptyClassContent" flags="ng" index="3u$6M4" />
+      <concept id="225477138914922235" name="com.mbeddr.cpp.base.structure.ClassStaticMethodRef" flags="ng" index="1yRW2S">
+        <reference id="225477138914922240" name="method" index="1yRW53" />
+      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -382,12 +389,10 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
-          <node concept="2qmXGp" id="1GY6W8WMii$" role="3XIe9u">
-            <node concept="3mBbHP" id="1GY6W8WMizL" role="1ESnxz">
-              <ref role="3mBbHN" node="1GY6W8WMbyQ" resolve="staticMethod" />
-            </node>
-            <node concept="3ZVu4v" id="1GY6W8WMiil" role="1_9fRO">
-              <ref role="3ZVs_2" node="1GY6W8WMdxS" resolve="anInstance" />
+          <node concept="1bUuwj" id="3L3ootTKkeo" role="3XIe9u">
+            <ref role="1bUuwh" node="1GY6W8WMbiA" resolve="SomeClass" />
+            <node concept="1yRW2S" id="3L3ootTKkeI" role="1bUuwu">
+              <ref role="1yRW53" node="1GY6W8WMbyQ" resolve="staticMethod" />
             </node>
           </node>
         </node>
@@ -397,15 +402,14 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
-          <node concept="2qmXGp" id="1GY6W8WMl6F" role="3XIe9u">
-            <node concept="3mBbHP" id="1GY6W8WMln2" role="1ESnxz">
-              <ref role="3mBbHN" node="1GY6W8WMb$e" resolve="staticInlinedMethod" />
-            </node>
-            <node concept="3ZVu4v" id="1GY6W8WMkQr" role="1_9fRO">
-              <ref role="3ZVs_2" node="1GY6W8WMdxS" resolve="anInstance" />
+          <node concept="1bUuwj" id="3L3ootTKkfR" role="3XIe9u">
+            <ref role="1bUuwh" node="1GY6W8WMbiA" resolve="SomeClass" />
+            <node concept="1yRW2S" id="3L3ootTKkgd" role="1bUuwu">
+              <ref role="1yRW53" node="1GY6W8WMb$e" resolve="staticInlinedMethod" />
             </node>
           </node>
         </node>
+        <node concept="3XISUE" id="3L3ootRECs3" role="3XIRFZ" />
         <node concept="3XISUE" id="1GY6W8WMlnl" role="3XIRFZ" />
         <node concept="2N2KuS" id="1GY6W8WMnEL" role="3XIRFZ">
           <node concept="3TlMh9" id="1GY6W8WMocn" role="2N2GHh">
