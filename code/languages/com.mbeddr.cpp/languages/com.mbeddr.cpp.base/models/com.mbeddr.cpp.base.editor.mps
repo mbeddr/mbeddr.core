@@ -1359,7 +1359,7 @@
           <node concept="3clFbS" id="7AYxXU4oU8a" role="2VODD2">
             <node concept="3clFbF" id="7AYxXU4oUNC" role="3cqZAp">
               <node concept="Xl_RD" id="7AYxXU4oUNB" role="3clFbG">
-                <property role="Xl_RC" value=" with constructor" />
+                <property role="Xl_RC" value="variable with constructor" />
               </node>
             </node>
           </node>
