@@ -4343,6 +4343,56 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="7a3sL$G2BbO" role="3cqZAp">
+          <node concept="3clFbS" id="7a3sL$G2BbQ" role="3clFbx">
+            <node concept="3clFbJ" id="7a3sL$G2Dj_" role="3cqZAp">
+              <node concept="3clFbS" id="7a3sL$G2DjB" role="3clFbx">
+                <node concept="3clFbF" id="7a3sL$G2GkT" role="3cqZAp">
+                  <node concept="2OqwBi" id="7a3sL$G2GA8" role="3clFbG">
+                    <node concept="37vLTw" id="7a3sL$G2GkR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6x5UxX36BT_" resolve="sb" />
+                    </node>
+                    <node concept="liA8E" id="7a3sL$G2He8" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                      <node concept="Xl_RD" id="7a3sL$G2HjM" role="37wK5m">
+                        <property role="Xl_RC" value="dir=\&quot;back\&quot;," />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="7a3sL$G2FHB" role="3clFbw">
+                <node concept="Rm8GO" id="7a3sL$G2G4h" role="3uHU7w">
+                  <ref role="Rm8GQ" to="u99y:~EdgeStyle$EArrowOrientation.Opposite" resolve="Opposite" />
+                  <ref role="1Px2BO" to="u99y:~EdgeStyle$EArrowOrientation" resolve="EdgeStyle.EArrowOrientation" />
+                </node>
+                <node concept="2OqwBi" id="7a3sL$G2DCq" role="3uHU7B">
+                  <node concept="1eOMI4" id="7a3sL$G2Dsw" role="2Oq$k0">
+                    <node concept="10QFUN" id="7a3sL$G2Dst" role="1eOMHV">
+                      <node concept="3uibUv" id="7a3sL$G2Dsy" role="10QFUM">
+                        <ref role="3uigEE" to="u99y:~EdgeStyle" resolve="EdgeStyle" />
+                      </node>
+                      <node concept="37vLTw" id="7a3sL$G2Dsz" role="10QFUP">
+                        <ref role="3cqZAo" node="6x5UxX36$0A" resolve="style" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7a3sL$G2DRI" role="2OqNvi">
+                    <ref role="37wK5l" to="u99y:~EdgeStyle.getArrowOrientation():de.itemis.graphing.model.style.EdgeStyle$EArrowOrientation" resolve="getArrowOrientation" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ZW3vV" id="7a3sL$G2BLQ" role="3clFbw">
+            <node concept="3uibUv" id="7a3sL$G2CaS" role="2ZW6by">
+              <ref role="3uigEE" to="u99y:~EdgeStyle" resolve="EdgeStyle" />
+            </node>
+            <node concept="37vLTw" id="7a3sL$G2Bq3" role="2ZW6bz">
+              <ref role="3cqZAo" node="6x5UxX36$0A" resolve="style" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="6x5UxX37hWO" role="3cqZAp">
           <node concept="2OqwBi" id="6x5UxX37ihh" role="3clFbG">
             <node concept="37vLTw" id="6x5UxX37hWN" role="2Oq$k0">
