@@ -12461,5 +12461,85 @@
       <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
     </node>
   </node>
+  <node concept="24kQdi" id="1q0W02ZIK0B">
+    <property role="3GE5qa" value="words" />
+    <ref role="1XX52x" to="2c95:1q0W02ZIK0$" resolve="InformationRequiredWord" />
+    <node concept="3EZMnI" id="1q0W02ZIK0C" role="2wV5jI">
+      <node concept="l2Vlx" id="1q0W02ZIK0D" role="2iSdaV" />
+      <node concept="3F0ifn" id="1q0W02ZIK0E" role="3EZMnx">
+        <property role="3F0ifm" value="\info required" />
+        <node concept="11LMrY" id="1q0W02ZIK0F" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Veino" id="1q0W02ZIK0G" role="3F10Kt">
+          <property role="Vb096" value="yellow" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1q0W02ZIK0H" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11L4FC" id="1q0W02ZIK0I" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="1q0W02ZIK0J" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="1q0W02ZIK0K" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
+        <node concept="Veino" id="1q0W02ZIK0L" role="3F10Kt">
+          <property role="Vb096" value="yellow" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1q0W02ZIK0M" role="3EZMnx">
+        <ref role="1NtTu8" to="2c95:1q0W02ZIK0A" resolve="text" />
+        <node concept="Veino" id="1q0W02ZIK0N" role="3F10Kt">
+          <property role="Vb096" value="yellow" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1q0W02ZIK0O" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="1q0W02ZIK0P" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="1q0W02ZIK0Q" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="1q0W02ZIK0R" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
+        <node concept="Veino" id="1q0W02ZIK0S" role="3F10Kt">
+          <property role="Vb096" value="yellow" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1q0W02ZIK0T">
+    <property role="3GE5qa" value="words" />
+    <ref role="1XX52x" to="2c95:1q0W02ZIK0$" resolve="InformationRequiredWord" />
+    <node concept="3EZMnI" id="1q0W02ZIK0U" role="2wV5jI">
+      <node concept="3F0ifn" id="1q0W02ZIK0V" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F0ifn" id="1q0W02ZIK0W" role="3EZMnx">
+        <property role="3F0ifm" value="INFO REQUIRED:" />
+        <node concept="11L4FC" id="1q0W02ZIK0X" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1q0W02ZIK0Y" role="2iSdaV" />
+      <node concept="3F1sOY" id="1q0W02ZIK0Z" role="3EZMnx">
+        <ref role="1NtTu8" to="2c95:1q0W02ZIK0A" resolve="text" />
+      </node>
+      <node concept="3F0ifn" id="1q0W02ZIK10" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="1q0W02ZIK11" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="2aJ2om" id="1q0W02ZIK12" role="CpUAK">
+      <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
+    </node>
+  </node>
 </model>
 

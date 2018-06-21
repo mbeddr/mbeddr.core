@@ -1762,5 +1762,22 @@
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1q0W02ZIK0$">
+    <property role="EcuMT" value="1621559751860748324" />
+    <property role="3GE5qa" value="words" />
+    <property role="TrG5h" value="InformationRequiredWord" />
+    <property role="34LRSv" value="\info required" />
+    <ref role="1TJDcQ" node="2TZO3DbvhAy" resolve="DocumentWord" />
+    <node concept="PrWs8" id="1q0W02ZIK0_" role="PzmwI">
+      <ref role="PrY4T" node="627_yy3SjeX" resolve="IQAReview" />
+    </node>
+    <node concept="1TJgyj" id="1q0W02ZIK0A" role="1TKVEi">
+      <property role="IQ2ns" value="1621559751860748326" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+  </node>
 </model>
 
