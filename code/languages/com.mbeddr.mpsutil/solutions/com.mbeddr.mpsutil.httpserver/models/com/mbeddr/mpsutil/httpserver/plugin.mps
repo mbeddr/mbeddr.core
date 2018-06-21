@@ -23,6 +23,7 @@
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="ky10" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/java:org.eclipse.jetty.servlet(com.mbeddr.mpsutil.httpsupport.rt/)" />
     <import index="6sky" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/java:org.eclipse.jetty.util.component(com.mbeddr.mpsutil.httpsupport.rt/)" />
+    <import index="gzvg" ref="r:57c6e005-9b69-4d41-a9d6-190f5964c5d7(com.mbeddr.mpsutil.httpserver.plugin)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
   </imports>
   <registry>

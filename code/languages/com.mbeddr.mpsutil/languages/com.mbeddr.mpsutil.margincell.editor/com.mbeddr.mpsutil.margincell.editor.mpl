@@ -20,7 +20,6 @@
         <dependency reexport="false">9ea6119e-d73d-42a8-8d7b-e60e0d7b845d(com.mbeddr.mpsutil.margincell.runtime)</dependency>
         <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
         <dependency reexport="false">9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)</dependency>
-        <dependency reexport="false">2bdcefec-ba49-4b32-ab50-ebc7a41d5090(jetbrains.mps.lang.smodel#1139186730696)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:e33ff641-cba8-4703-98f4-59e63936d940:com.mbeddr.mpsutil.margincell.editor" version="0" />
