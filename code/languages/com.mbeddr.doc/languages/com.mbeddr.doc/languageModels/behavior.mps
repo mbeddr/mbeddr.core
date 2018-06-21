@@ -7932,7 +7932,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1q0W02ZGH2e">
-    <property role="3GE5qa" value="words" />
+    <property role="3GE5qa" value="words.structuredComment" />
     <ref role="13h7C2" to="2c95:1q0W02ZGGTg" resolve="FixMeWord" />
     <node concept="13hLZK" id="1q0W02ZGH2f" role="13h7CW">
       <node concept="3clFbS" id="1q0W02ZGH2g" role="2VODD2">
@@ -7974,7 +7974,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1q0W02ZIK13">
-    <property role="3GE5qa" value="words" />
+    <property role="3GE5qa" value="words.structuredComment" />
     <ref role="13h7C2" to="2c95:1q0W02ZIK0$" resolve="InformationRequiredWord" />
     <node concept="13hLZK" id="1q0W02ZIK14" role="13h7CW">
       <node concept="3clFbS" id="1q0W02ZIK15" role="2VODD2">
