@@ -4875,6 +4875,12 @@
               <ref role="3bR37D" to="ffeo:7YI57w6K08j" resolve="jetbrains.mps.baseLanguage#1129914002933" />
             </node>
           </node>
+          <node concept="1SiIV0" id="2QzMXD4kcS6" role="3bR37C">
+            <node concept="3bR9La" id="2QzMXD4kcS7" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1E1JtD" id="bGV79BrjCR" role="2G$12L">
@@ -8086,6 +8092,12 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
             </node>
           </node>
+          <node concept="1SiIV0" id="2QzMXD4kd3w" role="3bR37C">
+            <node concept="3bR9La" id="2QzMXD4kd3x" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L5O" resolve="jetbrains.mps.lang.extension" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="5GUwywcVawd" role="3bR37C">
           <node concept="3bR9La" id="5GUwywcVawe" role="1SiIV1">
@@ -10126,6 +10138,12 @@
           <node concept="1SiIV0" id="gUS73Y1W87" role="3bR37C">
             <node concept="3bR9La" id="gUS73Y1W86" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:7YI57w6K0iE" resolve="jetbrains.mps.lang.editor#1129914002149" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2QzMXD4kddP" role="3bR37C">
+            <node concept="3bR9La" id="2QzMXD4kddQ" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7YI57w6K0rx" resolve="jetbrains.mps.lang.smodel#1139186730696" />
             </node>
           </node>
         </node>
@@ -13184,6 +13202,12 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
             </node>
           </node>
+          <node concept="1SiIV0" id="2QzMXD4kdnY" role="3bR37C">
+            <node concept="3bR9La" id="2QzMXD4kdnZ" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:2Qa9MYMHrcB" resolve="jetbrains.mps.editorlang.runtime" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="4lwBYGqDsSZ" role="3bR37C">
           <node concept="3bR9La" id="4lwBYGqDsT0" role="1SiIV1">
@@ -13218,6 +13242,12 @@
           <node concept="3bR9La" id="1GvnUgobaoN" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2QzMXD4kdnW" role="3bR37C">
+          <node concept="3bR9La" id="2QzMXD4kdnX" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4j" resolve="jetbrains.mps.lang.actions" />
           </node>
         </node>
       </node>
@@ -14153,6 +14183,12 @@
             <node concept="3bR9La" id="1WjrBsNH3p7" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="3n7FoehtTB8" resolve="com.mbeddr.mpsutil.ccmenu#3441511210711546263" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2QzMXD4kdqU" role="3bR37C">
+            <node concept="3bR9La" id="2QzMXD4kdqV" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
             </node>
           </node>
         </node>
@@ -15376,7 +15412,7 @@
         <node concept="1SiIV0" id="2avgMTl5sBK" role="3bR37C">
           <node concept="3bR9La" id="2avgMTl5sBL" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.slisson.mps.all.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
       </node>
