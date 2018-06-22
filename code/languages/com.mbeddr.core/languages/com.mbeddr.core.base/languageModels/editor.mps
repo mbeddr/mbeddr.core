@@ -11274,9 +11274,9 @@
                   </node>
                   <node concept="liA8E" id="4QhMqW2TvhI" role="2OqNvi">
                     <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
-                    <node concept="10M0yZ" id="4QhMqW2TvhJ" role="37wK5m">
+                    <node concept="10M0yZ" id="5HHTCV_siNo" role="37wK5m">
+                      <ref role="3cqZAo" to="z60i:~Color.LIGHT_GRAY" resolve="LIGHT_GRAY" />
                       <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="z60i:~Color.GRAY" resolve="GRAY" />
                     </node>
                   </node>
                 </node>
@@ -11726,16 +11726,6 @@
                 </node>
               </node>
               <node concept="3clFbH" id="3VQE5sB9imx" role="3cqZAp" />
-              <node concept="3cpWs8" id="3VQE5sB9j1C" role="3cqZAp">
-                <node concept="3cpWsn" id="3VQE5sB9j1F" role="3cpWs9">
-                  <property role="TrG5h" value="symbolHeight" />
-                  <node concept="10P55v" id="3VQE5sB9j1A" role="1tU5fm" />
-                  <node concept="3b6qkQ" id="3VQE5sB9jFA" role="33vP2m">
-                    <property role="$nhwW" value="28.2" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="3VQE5sACRy1" role="3cqZAp" />
               <node concept="3cpWs8" id="3VQE5sArNWX" role="3cqZAp">
                 <node concept="3cpWsn" id="3VQE5sArNWW" role="3cpWs9">
                   <property role="3TUv4t" value="false" />
@@ -12375,7 +12365,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="5Sid1vHCK6D" role="3cqZAp" />
             </node>
             <node concept="1rXfSq" id="1F0U9H74lb9" role="3clFbw">
               <ref role="37wK5l" node="4QhMqW2T_0a" resolve="shouldPaintBracket" />
