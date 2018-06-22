@@ -113,6 +113,9 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
+      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
+        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
+      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -1490,6 +1493,14 @@
     <node concept="3EZMnI" id="5HHTCV_lsg1" role="2wV5jI">
       <node concept="3F0ifn" id="5HHTCV_sHKo" role="3EZMnx">
         <property role="3F0ifm" value="" />
+        <node concept="VPxyj" id="5HHTCVAc0Gx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="OXEIz" id="5HHTCVAdjlM" role="P5bDN">
+          <node concept="UkePV" id="5HHTCVAdjlQ" role="OY2wv">
+            <ref role="Ul1FP" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+          </node>
+        </node>
       </node>
       <node concept="gc7cB" id="5HHTCV_iMrJ" role="3EZMnx">
         <node concept="3VJUX4" id="5HHTCV_iMrM" role="3YsKMw">
