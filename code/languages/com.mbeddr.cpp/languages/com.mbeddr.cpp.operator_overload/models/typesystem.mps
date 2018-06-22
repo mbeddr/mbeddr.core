@@ -33,6 +33,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
@@ -380,12 +381,12 @@
     <node concept="3clFbS" id="7bt9OVZgcz7" role="18ibNy">
       <node concept="3cpWs8" id="3LE5RBQ60b7" role="3cqZAp">
         <node concept="3cpWsn" id="3LE5RBQ60ba" role="3cpWs9">
-          <property role="TrG5h" value="arg_count" />
+          <property role="TrG5h" value="argCount" />
           <node concept="10Oyi0" id="3LE5RBQ60b5" role="1tU5fm" />
           <node concept="2OqwBi" id="3LE5RBQ5U$s" role="33vP2m">
             <node concept="2OqwBi" id="3LE5RBQ5QbE" role="2Oq$k0">
               <node concept="1YBJjd" id="3LE5RBQ5PRY" role="2Oq$k0">
-                <ref role="1YBMHb" node="7bt9OVZgcz9" resolve="operatorOverloadDeclaration" />
+                <ref role="1YBMHb" node="7bt9OVZgcz9" resolve="ood" />
               </node>
               <node concept="3Tsc0h" id="3LE5RBQ5QBH" role="2OqNvi">
                 <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" resolve="arguments" />
@@ -395,28 +396,167 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="4_gQp$X1KH" role="3cqZAp" />
+      <node concept="3cpWs8" id="4_gQp$WIZA" role="3cqZAp">
+        <node concept="3cpWsn" id="4_gQp$WIZ$" role="3cpWs9">
+          <property role="3TUv4t" value="true" />
+          <property role="TrG5h" value="operatorAsStr" />
+          <node concept="17QB3L" id="4_gQp$WJ1h" role="1tU5fm" />
+          <node concept="2OqwBi" id="4_gQp$WLxi" role="33vP2m">
+            <node concept="2OqwBi" id="4_gQp$WJR2" role="2Oq$k0">
+              <node concept="1YBJjd" id="4_gQp$WJwc" role="2Oq$k0">
+                <ref role="1YBMHb" node="7bt9OVZgcz9" resolve="ood" />
+              </node>
+              <node concept="3TrcHB" id="4_gQp$WKIl" role="2OqNvi">
+                <ref role="3TsBF5" to="zhp8:7bt9OVZg7LQ" resolve="operator" />
+              </node>
+            </node>
+            <node concept="liA8E" id="4_gQp$WM5K" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.toString():java.lang.String" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="4_gQp$X2id" role="3cqZAp" />
+      <node concept="3SKdUt" id="4_gQp$WkyM" role="3cqZAp">
+        <node concept="3SKdUq" id="4_gQp$WkyO" role="3SKWNk">
+          <property role="3SKdUp" value="The operator overloads that don't take any arguments" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="4_gQp$Wlh$" role="3cqZAp">
+        <node concept="3clFbS" id="4_gQp$WlhA" role="3clFbx">
+          <node concept="2MkqsV" id="4_gQp$WYYS" role="3cqZAp">
+            <node concept="3cpWs3" id="4_gQp$WZwD" role="2MkJ7o">
+              <node concept="37vLTw" id="4_gQp$WZwZ" role="3uHU7w">
+                <ref role="3cqZAo" node="4_gQp$WIZ$" resolve="operatorAsStr" />
+              </node>
+              <node concept="Xl_RD" id="4_gQp$WYZa" role="3uHU7B">
+                <property role="Xl_RC" value="can't have more than 1 argument for operator " />
+              </node>
+            </node>
+            <node concept="1YBJjd" id="4_gQp$WZ_p" role="2OEOjV">
+              <ref role="1YBMHb" node="7bt9OVZgcz9" resolve="ood" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="4_gQp$WVNi" role="3clFbw">
+          <node concept="3eOSWO" id="4_gQp$WYIK" role="3uHU7w">
+            <node concept="37vLTw" id="4_gQp$WWzu" role="3uHU7B">
+              <ref role="3cqZAo" node="3LE5RBQ60ba" resolve="argCount" />
+            </node>
+            <node concept="3cmrfG" id="4_gQp$X3Uv" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+          </node>
+          <node concept="1eOMI4" id="4_gQp$WULX" role="3uHU7B">
+            <node concept="22lmx$" id="4_gQp$WPbe" role="1eOMHV">
+              <node concept="2OqwBi" id="4_gQp$WQ3q" role="3uHU7w">
+                <node concept="37vLTw" id="4_gQp$WPHH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4_gQp$WIZ$" resolve="operatorAsStr" />
+                </node>
+                <node concept="liA8E" id="4_gQp$WQqN" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="4_gQp$WRKk" role="37wK5m">
+                    <property role="Xl_RC" value="++" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4_gQp$WSgk" role="3uHU7B">
+                <node concept="37vLTw" id="4_gQp$WNo3" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4_gQp$WIZ$" resolve="operatorAsStr" />
+                </node>
+                <node concept="liA8E" id="4_gQp$WSJ1" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="4_gQp$WT4j" role="37wK5m">
+                    <property role="Xl_RC" value="--" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="4_gQp$X4hn" role="3cqZAp" />
+      <node concept="3SKdUt" id="4_gQp$X9TS" role="3cqZAp">
+        <node concept="3SKdUq" id="4_gQp$X9TU" role="3SKWNk">
+          <property role="3SKdUp" value="Special case for ~ operator and ! operator" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="4_gQp$X4OF" role="3cqZAp">
+        <node concept="3clFbS" id="4_gQp$X4OH" role="3clFbx">
+          <node concept="2MkqsV" id="4_gQp$X9bD" role="3cqZAp">
+            <node concept="3cpWs3" id="4_gQp$X9bE" role="2MkJ7o">
+              <node concept="37vLTw" id="4_gQp$X9bF" role="3uHU7w">
+                <ref role="3cqZAo" node="4_gQp$WIZ$" resolve="operatorAsStr" />
+              </node>
+              <node concept="Xl_RD" id="4_gQp$X9bG" role="3uHU7B">
+                <property role="Xl_RC" value="can't have more than argument for operator " />
+              </node>
+            </node>
+            <node concept="1YBJjd" id="4_gQp$X9bH" role="2OEOjV">
+              <ref role="1YBMHb" node="7bt9OVZgcz9" resolve="ood" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="4_gQp$X7O1" role="3clFbw">
+          <node concept="3eOSWO" id="4_gQp$X8Y_" role="3uHU7w">
+            <node concept="3cmrfG" id="4_gQp$X8YC" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="37vLTw" id="4_gQp$X89M" role="3uHU7B">
+              <ref role="3cqZAo" node="3LE5RBQ60ba" resolve="argCount" />
+            </node>
+          </node>
+          <node concept="1eOMI4" id="4_gQp$XaZ7" role="3uHU7B">
+            <node concept="1Wc70l" id="4_gQp$XbfY" role="1eOMHV">
+              <node concept="2OqwBi" id="4_gQp$XbWY" role="3uHU7B">
+                <node concept="37vLTw" id="4_gQp$Xbx1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4_gQp$WIZ$" resolve="operatorAsStr" />
+                </node>
+                <node concept="liA8E" id="4_gQp$Xcip" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="4_gQp$XcJJ" role="37wK5m">
+                    <property role="Xl_RC" value="!" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4_gQp$X5OW" role="3uHU7w">
+                <node concept="37vLTw" id="4_gQp$X5vw" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4_gQp$WIZ$" resolve="operatorAsStr" />
+                </node>
+                <node concept="liA8E" id="4_gQp$X6ij" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="4_gQp$X6nK" role="37wK5m">
+                    <property role="Xl_RC" value="~" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="3LE5RBQ5PRJ" role="3cqZAp">
-        <node concept="3eOSWO" id="3LE5RBQ5YMa" role="3clFbw">
+        <node concept="2d3UOw" id="4_gQp$XcVO" role="3clFbw">
+          <node concept="37vLTw" id="3LE5RBQ60lE" role="3uHU7B">
+            <ref role="3cqZAo" node="3LE5RBQ60ba" resolve="argCount" />
+          </node>
           <node concept="3cmrfG" id="3LE5RBQ5YRT" role="3uHU7w">
             <property role="3cmrfH" value="2" />
-          </node>
-          <node concept="37vLTw" id="3LE5RBQ60lE" role="3uHU7B">
-            <ref role="3cqZAo" node="3LE5RBQ60ba" resolve="arg_count" />
           </node>
         </node>
         <node concept="3clFbS" id="3LE5RBQ5PRL" role="3clFbx">
           <node concept="2MkqsV" id="3LE5RBQ5Z2k" role="3cqZAp">
             <node concept="1YBJjd" id="3LE5RBQ60IS" role="2OEOjV">
-              <ref role="1YBMHb" node="7bt9OVZgcz9" resolve="operatorOverloadDeclaration" />
+              <ref role="1YBMHb" node="7bt9OVZgcz9" resolve="ood" />
             </node>
             <node concept="2YIFZM" id="3LE5RBQ5Z3G" role="2MkJ7o">
               <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
               <node concept="Xl_RD" id="3LE5RBQ5Z83" role="37wK5m">
-                <property role="Xl_RC" value="Expected a maximum of 2 arguments, got %s" />
+                <property role="Xl_RC" value="expected a maximum of 1 argument, got %s" />
               </node>
               <node concept="37vLTw" id="3LE5RBQ60r5" role="37wK5m">
-                <ref role="3cqZAo" node="3LE5RBQ60ba" resolve="arg_count" />
+                <ref role="3cqZAo" node="3LE5RBQ60ba" resolve="argCount" />
               </node>
             </node>
           </node>
@@ -424,7 +564,7 @@
       </node>
     </node>
     <node concept="1YaCAy" id="7bt9OVZgcz9" role="1YuTPh">
-      <property role="TrG5h" value="operatorOverloadDeclaration" />
+      <property role="TrG5h" value="ood" />
       <ref role="1YaFvo" to="zhp8:7bt9OVZfWbc" resolve="OperatorOverloadDeclaration" />
     </node>
   </node>
