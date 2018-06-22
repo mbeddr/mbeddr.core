@@ -13,6 +13,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
@@ -51,6 +54,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -271,6 +277,9 @@
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    </node>
+    <node concept="t5JxF" id="4_gQp$LDWZ" role="lGtFl">
+      <property role="t5JxN" value="Declarations to overload operators. Note: The use of operators relies on checking rules that MPS doesn't always compile correctly. As such, it may be necessary to rebuild the operator_overload language many times in order for the rules to be checked." />
     </node>
   </node>
   <node concept="1TIwiD" id="7bt9OVZfWbd">
