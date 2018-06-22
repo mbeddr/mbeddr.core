@@ -1829,6 +1829,11 @@
     <node concept="PrWs8" id="l3$K9zOTzy" role="PzmwI">
       <ref role="PrY4T" node="l3$K9zOTz5" resolve="IWordInViewer" />
     </node>
+    <node concept="1TJgyi" id="l3$K9$tC3M" role="1TKVEl">
+      <property role="IQ2nx" value="379308432113959154" />
+      <property role="TrG5h" value="confidenceLevel" />
+      <ref role="AX2Wp" to="tpc2:i2E8K1n" resolve="_FloatOrInteger_String" />
+    </node>
   </node>
   <node concept="PlHQZ" id="l3$K9zOTz5">
     <property role="EcuMT" value="379308432103282885" />

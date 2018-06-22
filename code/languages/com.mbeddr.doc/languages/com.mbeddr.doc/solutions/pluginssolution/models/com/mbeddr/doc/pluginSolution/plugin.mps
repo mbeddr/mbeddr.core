@@ -3354,8 +3354,8 @@
   <node concept="sE7Ow" id="1q0W02ZUiO8">
     <property role="3GE5qa" value="words" />
     <property role="TrG5h" value="WordsViewerAction" />
-    <property role="2uzpH1" value="Words ..." />
-    <property role="1WHSii" value="Words" />
+    <property role="2uzpH1" value="Comment Tags ..." />
+    <property role="1WHSii" value="Comment Tags" />
     <node concept="1DS2jV" id="l3$K9zT0GY" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -4497,7 +4497,7 @@
   <node concept="sEfby" id="1q0W02ZUiBK">
     <property role="TrG5h" value="WordsViewerTool" />
     <property role="3GE5qa" value="words" />
-    <property role="2XNbzY" value="Words" />
+    <property role="2XNbzY" value="Comment Tags" />
     <node concept="2UmK3q" id="1q0W02ZUiBL" role="2Um5zG">
       <node concept="3clFbS" id="1q0W02ZUiBM" role="2VODD2">
         <node concept="3cpWs6" id="1q0W02ZUPW8" role="3cqZAp">
