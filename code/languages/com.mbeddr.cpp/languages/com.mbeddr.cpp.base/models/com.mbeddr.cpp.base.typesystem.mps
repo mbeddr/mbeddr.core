@@ -1928,7 +1928,7 @@
         <node concept="3clFbS" id="2L1k$oXFjlr" role="3clFbx">
           <node concept="2MkqsV" id="2L1k$oXFkHn" role="3cqZAp">
             <node concept="Xl_RD" id="2L1k$oXFkHA" role="2MkJ7o">
-              <property role="Xl_RC" value="mon-virtual method must not be pure" />
+              <property role="Xl_RC" value="non-virtual method must not be pure" />
             </node>
             <node concept="1YBJjd" id="2L1k$oXFkHT" role="2OEOjV">
               <ref role="1YBMHb" node="2L1k$oXFje2" resolve="iPureVirtualisable" />
@@ -1950,7 +1950,7 @@
         <node concept="3clFbS" id="2L1k$oXKZ8U" role="3clFbx">
           <node concept="2MkqsV" id="2L1k$oXL3xp" role="3cqZAp">
             <node concept="Xl_RD" id="2L1k$oXL3xC" role="2MkJ7o">
-              <property role="Xl_RC" value="Non-pure virtual method must have a body" />
+              <property role="Xl_RC" value="non-pure virtual method must have a body" />
             </node>
             <node concept="1YBJjd" id="2L1k$oXL3xV" role="2OEOjV">
               <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="md" />
@@ -1986,7 +1986,7 @@
         <node concept="3clFbS" id="15T8UHyscUc" role="3clFbx">
           <node concept="2MkqsV" id="15T8UHysjGr" role="3cqZAp">
             <node concept="Xl_RD" id="15T8UHysjGs" role="2MkJ7o">
-              <property role="Xl_RC" value="Constant expression member can't be virtual" />
+              <property role="Xl_RC" value="constexpr member can't be virtual" />
             </node>
             <node concept="1YBJjd" id="15T8UHysjGt" role="2OEOjV">
               <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="md" />
@@ -2017,7 +2017,7 @@
         <node concept="3clFbS" id="3JyuKTwh_x8" role="3clFbx">
           <node concept="a7r0C" id="3JyuKTwhEZG" role="3cqZAp">
             <node concept="Xl_RD" id="3JyuKTwhEZH" role="a7wSD">
-              <property role="Xl_RC" value="constExpr already implicitely inlines" />
+              <property role="Xl_RC" value="constexpr already implicitely inlines" />
             </node>
             <node concept="1YBJjd" id="3JyuKTwhF1S" role="2OEOjV">
               <ref role="1YBMHb" node="2L1k$oXKZ8O" resolve="md" />
