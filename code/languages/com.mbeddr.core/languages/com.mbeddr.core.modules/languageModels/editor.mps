@@ -1429,10 +1429,6 @@
       <node concept="PMmxH" id="xAR9nWvFbO" role="3EZMnx">
         <ref role="PMmxG" to="j4gk:xAR9nWuwd2" resolve="IHasPrefixesComponent" />
       </node>
-      <node concept="1kHk_G" id="7K_2cV$Golz" role="3EZMnx">
-        <ref role="1NtTu8" to="x27k:4VhroexNCwp" resolve="inline" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      </node>
       <node concept="PMmxH" id="5Oog2UbPmtt" role="3EZMnx">
         <ref role="PMmxG" node="5Oog2UbPmsM" resolve="externFlag" />
       </node>
@@ -1459,6 +1455,10 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="1kHk_G" id="7K_2cV$Golz" role="3EZMnx">
+        <ref role="1NtTu8" to="x27k:4VhroexNCwp" resolve="inline" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="3F1sOY" id="6Q7bJ$$mLHO" role="3EZMnx">
         <ref role="1NtTu8" to="mj1l:hEaDaGor64" resolve="type" />
