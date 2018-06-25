@@ -2935,6 +2935,46 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbJ" id="7zWY1U_zgpp" role="3cqZAp">
+                <node concept="3clFbS" id="7zWY1U_zgpr" role="3clFbx">
+                  <node concept="3clFbF" id="7zWY1U_zjvS" role="3cqZAp">
+                    <node concept="2OqwBi" id="7zWY1U_zkfW" role="3clFbG">
+                      <node concept="37vLTw" id="7zWY1U_zjvQ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3aDyPAXMM3B" resolve="my_logger" />
+                      </node>
+                      <node concept="liA8E" id="7zWY1U_zkV1" role="2OqNvi">
+                        <ref role="37wK5l" to="wwqx:~Logger.warning(java.lang.String):void" resolve="warning" />
+                        <node concept="Xl_RD" id="7zWY1U_zlhW" role="37wK5m">
+                          <property role="Xl_RC" value="--cover and --unwinding-assertions are not allowed together by CBMC. Ignoring --unwinding-assertions." />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="7zWY1U_zmNJ" role="3cqZAp">
+                    <node concept="37vLTI" id="7zWY1U_znTI" role="3clFbG">
+                      <node concept="3clFbT" id="7zWY1U_zo72" role="37vLTx">
+                        <property role="3clFbU" value="false" />
+                      </node>
+                      <node concept="2OqwBi" id="7zWY1U_zn7R" role="37vLTJ">
+                        <node concept="37vLTw" id="7zWY1U_zmNH" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3x0R1LJ5CpQ" resolve="config" />
+                        </node>
+                        <node concept="2S8uIT" id="7zWY1U_znzx" role="2OqNvi">
+                          <ref role="2S8YL0" to="tzyt:tGR6edUFun" resolve="generateUnwindingAssertions" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="7zWY1U_zihX" role="3clFbw">
+                  <node concept="37vLTw" id="7zWY1U_zhXw" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3x0R1LJ5CpQ" resolve="config" />
+                  </node>
+                  <node concept="2S8uIT" id="7zWY1U_zj1C" role="2OqNvi">
+                    <ref role="2S8YL0" to="tzyt:tGR6edUFun" resolve="generateUnwindingAssertions" />
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="3x0R1LJ5Cq8" role="3cqZAp">
                 <node concept="2OqwBi" id="3x0R1LJ5Cq9" role="3clFbG">
                   <node concept="37vLTw" id="3x0R1LJ5Cqa" role="2Oq$k0">
