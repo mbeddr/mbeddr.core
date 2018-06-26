@@ -15994,7 +15994,7 @@
           <property role="TrG5h" value="empty_1448026694189_20" />
         </node>
         <node concept="1S7NMz" id="1$baREjP58k" role="N3F5h">
-          <property role="TrG5h" value="stringWithMissingTerminatingDoubleQuoteCharacter" />
+          <property role="TrG5h" value="stringWithBackslashCharacterAtEndOfLine" />
           <node concept="12rfTQ" id="1$baREjP58i" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
@@ -16014,7 +16014,7 @@
           </node>
         </node>
         <node concept="1S7NMz" id="1$baREjQs55" role="N3F5h">
-          <property role="TrG5h" value="stringWithInvalidEscapeSequence" />
+          <property role="TrG5h" value="stringWithUnknownEscapeSequence" />
           <node concept="12rfTQ" id="1$baREjQs56" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
@@ -16034,7 +16034,7 @@
           </node>
         </node>
         <node concept="1S7NMz" id="1qdWvqeuMJ9" role="N3F5h">
-          <property role="TrG5h" value="stringWithValidEscapeSequence" />
+          <property role="TrG5h" value="stringWithValidEscapeSequences" />
           <node concept="Pu267" id="1qdWvqeuPjM" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
@@ -16044,7 +16044,7 @@
           </node>
         </node>
         <node concept="1S7NMz" id="1$baREjTFbE" role="N3F5h">
-          <property role="TrG5h" value="stringWithIncompleteHexadecimalNumber" />
+          <property role="TrG5h" value="stringWithInvalidHexEncodedCharacter" />
           <node concept="12rfTQ" id="1$baREjTFbF" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
@@ -16053,7 +16053,7 @@
             </node>
           </node>
           <node concept="PhEJO" id="1$baREjTFbH" role="1cecVj">
-            <property role="PhEJT" value="ab\xe" />
+            <property role="PhEJT" value="ab\xy" />
             <node concept="7CXmI" id="3n5vksRVFBR" role="lGtFl">
               <node concept="1TM$A" id="1zouAvzSjKb" role="7EUXB">
                 <node concept="2PYRI3" id="1zouAvzSjKc" role="3lydEf">
@@ -16064,7 +16064,7 @@
           </node>
         </node>
         <node concept="1S7NMz" id="1$baREjU43N" role="N3F5h">
-          <property role="TrG5h" value="stringWithIncompleteHexadecimalNumberAtLineEnd" />
+          <property role="TrG5h" value="stringWithInvalidHexEncodedCharacterAtEndOfLine" />
           <node concept="12rfTQ" id="1$baREjU43O" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
