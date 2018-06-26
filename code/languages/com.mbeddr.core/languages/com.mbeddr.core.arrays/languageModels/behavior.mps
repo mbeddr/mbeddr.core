@@ -8,6 +8,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -30,6 +31,8 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="bt5b" ref="r:10548ca1-8094-4342-a65a-87d986241875(com.mbeddr.core.pointers.utils)" />
     <import index="iq8l" ref="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)" />
+    <import index="hzzn" ref="r:bd926a45-d72f-48d2-9b35-f5586f5ff2bc(com.mbeddr.core.pointers.constraints)" />
+    <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -61,6 +64,7 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -83,6 +87,10 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -107,7 +115,9 @@
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
@@ -177,6 +187,9 @@
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
         <child id="1212687122400" name="typeParameter" index="1pMfVU" />
       </concept>
+      <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
@@ -205,19 +218,20 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -4078,88 +4092,87 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1$baREjN_Kl" role="3cqZAp" />
-            <node concept="3SKdUt" id="1$baREjN_sL" role="3cqZAp">
-              <node concept="3SKdUq" id="1$baREjN_sM" role="3SKWNk">
-                <property role="3SKdUp" value="Substitute special characters" />
+            <node concept="3clFbF" id="42GghS3yA_s" role="3cqZAp">
+              <node concept="37vLTI" id="42GghS3zYXi" role="3clFbG">
+                <node concept="37vLTw" id="42GghS3zZgJ" role="37vLTJ">
+                  <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                </node>
+                <node concept="2OqwBi" id="42GghS3yBPm" role="37vLTx">
+                  <node concept="2OqwBi" id="42GghS3yB2D" role="2Oq$k0">
+                    <node concept="10M0yZ" id="42GghS3$eDE" role="2Oq$k0">
+                      <ref role="3cqZAo" node="42GghS3yzJT" resolve="SPECIAL_CHARACTER" />
+                      <ref role="1PxDUh" node="42GghS3wqHB" resolve="StringLiteralHelper" />
+                    </node>
+                    <node concept="liA8E" id="42GghS3yBC8" role="2OqNvi">
+                      <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                      <node concept="37vLTw" id="42GghS3yBDi" role="37wK5m">
+                        <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="42GghS3yCcd" role="2OqNvi">
+                    <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="42GghS3yCn2" role="37wK5m">
+                      <property role="Xl_RC" value="z" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1$baREjN$xe" role="3cqZAp">
-              <node concept="37vLTI" id="1$baREjN$xf" role="3clFbG">
-                <node concept="2OqwBi" id="1$baREjN$xg" role="37vLTx">
-                  <node concept="37vLTw" id="1$baREjN$xh" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-                  </node>
-                  <node concept="liA8E" id="1$baREjN$xi" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
-                    <node concept="Xl_RD" id="1$baREjN$BK" role="37wK5m">
-                      <property role="Xl_RC" value="\\\\[abfnrtv\\\\'\&quot;\\?]" />
+            <node concept="3clFbF" id="42GghS3yCAS" role="3cqZAp">
+              <node concept="37vLTI" id="42GghS3zZlt" role="3clFbG">
+                <node concept="37vLTw" id="42GghS3zZCU" role="37vLTJ">
+                  <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                </node>
+                <node concept="2OqwBi" id="42GghS3yCAT" role="37vLTx">
+                  <node concept="2OqwBi" id="42GghS3yCAU" role="2Oq$k0">
+                    <node concept="10M0yZ" id="42GghS3$eDF" role="2Oq$k0">
+                      <ref role="3cqZAo" node="42GghS3y$rf" resolve="OCT_ENCODED_CHARACTER" />
+                      <ref role="1PxDUh" node="42GghS3wqHB" resolve="StringLiteralHelper" />
                     </node>
-                    <node concept="Xl_RD" id="1$baREjN$BL" role="37wK5m">
+                    <node concept="liA8E" id="42GghS3yCAW" role="2OqNvi">
+                      <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                      <node concept="37vLTw" id="42GghS3yCAX" role="37wK5m">
+                        <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="42GghS3yCAY" role="2OqNvi">
+                    <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="42GghS3yCAZ" role="37wK5m">
+                      <property role="Xl_RC" value="o" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="42GghS3zdlr" role="3cqZAp">
+              <node concept="37vLTI" id="42GghS3zZHC" role="3clFbG">
+                <node concept="37vLTw" id="42GghS3$015" role="37vLTJ">
+                  <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                </node>
+                <node concept="2OqwBi" id="42GghS3zdls" role="37vLTx">
+                  <node concept="2OqwBi" id="42GghS3zdlt" role="2Oq$k0">
+                    <node concept="10M0yZ" id="42GghS3$eDG" role="2Oq$k0">
+                      <ref role="3cqZAo" node="42GghS3y$vk" resolve="HEX_ENCODED_CHARACTER" />
+                      <ref role="1PxDUh" node="42GghS3wqHB" resolve="StringLiteralHelper" />
+                    </node>
+                    <node concept="liA8E" id="42GghS3zdlv" role="2OqNvi">
+                      <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                      <node concept="37vLTw" id="42GghS3zdlw" role="37wK5m">
+                        <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="42GghS3zdlx" role="2OqNvi">
+                    <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="42GghS3zdly" role="37wK5m">
                       <property role="Xl_RC" value="x" />
                     </node>
                   </node>
                 </node>
-                <node concept="37vLTw" id="1$baREjN$xl" role="37vLTJ">
-                  <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-                </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1$baREjN_Ax" role="3cqZAp" />
-            <node concept="3SKdUt" id="1$baREjN_fw" role="3cqZAp">
-              <node concept="3SKdUq" id="1$baREjN_ke" role="3SKWNk">
-                <property role="3SKdUp" value="Substitute octal numbers" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="1$baREjNyF$" role="3cqZAp">
-              <node concept="37vLTI" id="1$baREjNyM6" role="3clFbG">
-                <node concept="2OqwBi" id="1$baREjNz6G" role="37vLTx">
-                  <node concept="37vLTw" id="1$baREjNz4_" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-                  </node>
-                  <node concept="liA8E" id="1$baREjNzif" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
-                    <node concept="Xl_RD" id="1$baREjNziX" role="37wK5m">
-                      <property role="Xl_RC" value="\\\\\\d+" />
-                    </node>
-                    <node concept="Xl_RD" id="1$baREjNzxC" role="37wK5m">
-                      <property role="Xl_RC" value="n" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTw" id="1$baREjNyFy" role="37vLTJ">
-                  <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="1$baREjN_Fq" role="3cqZAp" />
-            <node concept="3SKdUt" id="1$baREjN_kj" role="3cqZAp">
-              <node concept="3SKdUq" id="1$baREjN_kk" role="3SKWNk">
-                <property role="3SKdUp" value="Substitute hexadecimal numbers" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="1$baREjNzQB" role="3cqZAp">
-              <node concept="37vLTI" id="1$baREjN$5L" role="3clFbG">
-                <node concept="2OqwBi" id="1$baREjN$b2" role="37vLTx">
-                  <node concept="37vLTw" id="1$baREjN$8v" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-                  </node>
-                  <node concept="liA8E" id="1$baREjN$n1" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
-                    <node concept="Xl_RD" id="1$baREjN$pq" role="37wK5m">
-                      <property role="Xl_RC" value="\\\\x\\d+" />
-                    </node>
-                    <node concept="Xl_RD" id="1$baREjN$pr" role="37wK5m">
-                      <property role="Xl_RC" value="n" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTw" id="1$baREjNzQ_" role="37vLTJ">
-                  <ref role="3cqZAo" node="1$baREjNy81" resolve="actualLengthSubstitute" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="1$baREjN_Pi" role="3cqZAp" />
             <node concept="3cpWs6" id="1$baREjNzGt" role="3cqZAp">
               <node concept="2OqwBi" id="1$baREjN$Sw" role="3cqZAk">
                 <node concept="37vLTw" id="1$baREjNzNa" role="2Oq$k0">
@@ -4188,13 +4201,6 @@
         </node>
       </node>
       <node concept="10Oyi0" id="4FYctDz1ugj" role="3clF45" />
-      <node concept="P$JXv" id="1$baREjN0fa" role="lGtFl">
-        <node concept="TZ5HA" id="1$baREjN0fb" role="TZ5H$">
-          <node concept="1dT_AC" id="1$baREjN0fc" role="1dT_Ay">
-            <property role="1dT_AB" value="See https://en.wikipedia.org/wiki/Escape_sequences_in_C#Table_of_escape_sequences for details." />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="13i0hz" id="J0Y$7B64qW" role="13h7CS">
       <property role="TrG5h" value="getSize" />
@@ -5048,6 +5054,299 @@
   </node>
   <node concept="B7EJo" id="FOUz5rTQYs">
     <property role="B7ECZ" value="true" />
+  </node>
+  <node concept="312cEu" id="42GghS3wqHB">
+    <property role="3GE5qa" value="literals" />
+    <property role="TrG5h" value="StringLiteralHelper" />
+    <node concept="2tJIrI" id="4WB_OvyPhTd" role="jymVt" />
+    <node concept="Wx3nA" id="4WB_OvyPicZ" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="SPECIAL_CHARACTER_SUBSTITUTES" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="4WB_OvyPi3m" role="1B3o_S" />
+      <node concept="17QB3L" id="4WB_OvyPicQ" role="1tU5fm" />
+      <node concept="Xl_RD" id="4WB_OvyPimv" role="33vP2m">
+        <property role="Xl_RC" value="abfnrtv\\\\'\&quot;\\?" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4WB_OvyPio2" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="OCT_ENCODED_CHARACTER_DIGIT" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="4WB_OvyPio3" role="1B3o_S" />
+      <node concept="17QB3L" id="4WB_OvyPio4" role="1tU5fm" />
+      <node concept="Xl_RD" id="4WB_OvyPio5" role="33vP2m">
+        <property role="Xl_RC" value="\\d" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4WB_OvyPiHK" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="HEX_ENCODED_CHARACTER_PREFX" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="4WB_OvyPiHL" role="1B3o_S" />
+      <node concept="17QB3L" id="4WB_OvyPiHM" role="1tU5fm" />
+      <node concept="Xl_RD" id="4WB_OvyPiHN" role="33vP2m">
+        <property role="Xl_RC" value="x" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="2_xtqg$y0le" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="HEX_ENCODED_CHARACTER_DIGITS" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="2_xtqg$y0lf" role="1B3o_S" />
+      <node concept="17QB3L" id="2_xtqg$y0lg" role="1tU5fm" />
+      <node concept="Xl_RD" id="2_xtqg$y0lh" role="33vP2m">
+        <property role="Xl_RC" value="\\dABCDEFabcdef" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="42GghS3yzKM" role="jymVt" />
+    <node concept="Wx3nA" id="42GghS3yzJT" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="SPECIAL_CHARACTER" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="42GghS3yzJU" role="1B3o_S" />
+      <node concept="3uibUv" id="42GghS3yzJV" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="42GghS3yzJW" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="3cpWs3" id="4WB_OvyPoNv" role="37wK5m">
+          <node concept="Xl_RD" id="4WB_OvyPoSK" role="3uHU7w">
+            <property role="Xl_RC" value="]" />
+          </node>
+          <node concept="3cpWs3" id="4WB_OvyPiyi" role="3uHU7B">
+            <node concept="Xl_RD" id="4WB_OvyPiyo" role="3uHU7B">
+              <property role="Xl_RC" value="\\\\[" />
+            </node>
+            <node concept="37vLTw" id="4WB_OvyPiBW" role="3uHU7w">
+              <ref role="3cqZAo" node="4WB_OvyPicZ" resolve="SPECIAL_CHARACTER_SUBSTITUTES" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="42GghS3y$rf" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="OCT_ENCODED_CHARACTER" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="42GghS3y$rg" role="1B3o_S" />
+      <node concept="3uibUv" id="42GghS3y$rh" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="42GghS3y$ri" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="3cpWs3" id="4WB_OvyPkcx" role="37wK5m">
+          <node concept="Xl_RD" id="4WB_OvyPk7F" role="3uHU7w">
+            <property role="Xl_RC" value="{1,3}" />
+          </node>
+          <node concept="3cpWs3" id="4WB_OvyPk7z" role="3uHU7B">
+            <node concept="Xl_RD" id="4WB_OvyPk7D" role="3uHU7B">
+              <property role="Xl_RC" value="\\\\" />
+            </node>
+            <node concept="37vLTw" id="4WB_OvyPkhN" role="3uHU7w">
+              <ref role="3cqZAo" node="4WB_OvyPio2" resolve="OCT_ENCODED_CHARACTER_DIGIT" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="42GghS3y$vk" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="HEX_ENCODED_CHARACTER" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="42GghS3y$vl" role="1B3o_S" />
+      <node concept="3uibUv" id="42GghS3y$vm" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="42GghS3y$vn" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="3cpWs3" id="2_xtqg$y0JE" role="37wK5m">
+          <node concept="3cpWs3" id="2_xtqg$y1sj" role="3uHU7B">
+            <node concept="37vLTw" id="2_xtqg$y1xE" role="3uHU7w">
+              <ref role="3cqZAo" node="2_xtqg$y0le" resolve="HEX_ENCODED_CHARACTER_DIGITS" />
+            </node>
+            <node concept="3cpWs3" id="4WB_OvyPkmD" role="3uHU7B">
+              <node concept="3cpWs3" id="4WB_OvyPkwg" role="3uHU7B">
+                <node concept="37vLTw" id="4WB_OvyPkxc" role="3uHU7w">
+                  <ref role="3cqZAo" node="4WB_OvyPiHK" resolve="HEX_ENCODED_CHARACTER_PREFX" />
+                </node>
+                <node concept="Xl_RD" id="4WB_OvyPkmJ" role="3uHU7B">
+                  <property role="Xl_RC" value="\\\\" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="2_xtqg$y0JK" role="3uHU7w">
+                <property role="Xl_RC" value="[" />
+              </node>
+            </node>
+          </node>
+          <node concept="Xl_RD" id="2_xtqg$y0JM" role="3uHU7w">
+            <property role="Xl_RC" value="]{1,2}" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="42GghS3wqIw" role="jymVt" />
+    <node concept="Wx3nA" id="2_xtqg$XTLn" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="ESCAPED_QUOTE" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2_xtqg$XTLo" role="1B3o_S" />
+      <node concept="3uibUv" id="2_xtqg$XTLp" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="2_xtqg$XTLq" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="Xl_RD" id="2_xtqg$XTLu" role="37wK5m">
+          <property role="Xl_RC" value="(\\\\)(\&quot;)" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="2_xtqg$XVgA" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="ESCAPED_BACKSLASH" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2_xtqg$XVgB" role="1B3o_S" />
+      <node concept="3uibUv" id="2_xtqg$XVgC" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="2_xtqg$XVgD" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="Xl_RD" id="2_xtqg$XVgE" role="37wK5m">
+          <property role="Xl_RC" value="(\\\\)(\\\\)" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2_xtqg$XV6s" role="jymVt" />
+    <node concept="Wx3nA" id="42GghS3wqIO" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="UNESCAPED_QUOTE" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="42GghS3wqIl" role="1B3o_S" />
+      <node concept="3uibUv" id="42GghS3wvDA" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="42GghS3wvGL" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="Xl_RD" id="42GghS3wvHD" role="37wK5m">
+          <property role="Xl_RC" value="(^\&quot;|(?&lt;!\\\\)\&quot;)" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4WB_OvyNRkD" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="UNESCAPED_TRAILING_BACKSLASH" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="4WB_OvyNRkE" role="1B3o_S" />
+      <node concept="3uibUv" id="4WB_OvyNRkF" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="1$baREjQhDL" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="Xl_RD" id="1$baREjPt2I" role="37wK5m">
+          <property role="Xl_RC" value="(?&lt;!\\\\)\\\\$" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4WB_OvyPkA2" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="UNKNOWN_ESCAPE_SEQUENCE" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="4WB_OvyPkA3" role="1B3o_S" />
+      <node concept="3uibUv" id="4WB_OvyPkA4" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="4WB_OvyPkA5" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="3cpWs3" id="4WB_OvyPpXf" role="37wK5m">
+          <node concept="Xl_RD" id="4WB_OvyPq3a" role="3uHU7w">
+            <property role="Xl_RC" value="]" />
+          </node>
+          <node concept="3cpWs3" id="4WB_OvyPnyt" role="3uHU7B">
+            <node concept="3cpWs3" id="4WB_OvyPmXA" role="3uHU7B">
+              <node concept="3cpWs3" id="4WB_OvyPmWF" role="3uHU7B">
+                <node concept="Xl_RD" id="4WB_OvyPkA6" role="3uHU7B">
+                  <property role="Xl_RC" value="(?&lt;!\\\\)\\\\[^" />
+                </node>
+                <node concept="37vLTw" id="4WB_OvyPnzE" role="3uHU7w">
+                  <ref role="3cqZAo" node="4WB_OvyPicZ" resolve="SPECIAL_CHARACTER_SUBSTITUTES" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="4WB_OvyPpgF" role="3uHU7w">
+                <ref role="3cqZAo" node="4WB_OvyPio2" resolve="OCT_ENCODED_CHARACTER_DIGIT" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="4WB_OvyPplH" role="3uHU7w">
+              <ref role="3cqZAo" node="4WB_OvyPiHK" resolve="HEX_ENCODED_CHARACTER_PREFX" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="2_xtqg$xYO3" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="INVALID_HEX_ENCODED_CHARACTER" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2_xtqg$xYO4" role="1B3o_S" />
+      <node concept="3uibUv" id="2_xtqg$xYO5" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="2_xtqg$xYO6" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="3cpWs3" id="2_xtqg$xYO7" role="37wK5m">
+          <node concept="Xl_RD" id="2_xtqg$xYO8" role="3uHU7w">
+            <property role="Xl_RC" value="]|$)" />
+          </node>
+          <node concept="3cpWs3" id="2_xtqg$xYO9" role="3uHU7B">
+            <node concept="3cpWs3" id="2_xtqg$xYOa" role="3uHU7B">
+              <node concept="3cpWs3" id="2_xtqg$xYOb" role="3uHU7B">
+                <node concept="Xl_RD" id="2_xtqg$xYOc" role="3uHU7B">
+                  <property role="Xl_RC" value="(?&lt;!\\\\)\\\\" />
+                </node>
+                <node concept="37vLTw" id="2_xtqg$y0g0" role="3uHU7w">
+                  <ref role="3cqZAo" node="4WB_OvyPiHK" resolve="HEX_ENCODED_CHARACTER_PREFX" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="2_xtqg$y1KT" role="3uHU7w">
+                <property role="Xl_RC" value="([^" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2_xtqg$y20i" role="3uHU7w">
+              <ref role="3cqZAo" node="2_xtqg$y0le" resolve="HEX_ENCODED_CHARACTER_DIGITS" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="42GghS3wqHC" role="1B3o_S" />
+    <node concept="3UR2Jj" id="42GghS3y$Ja" role="lGtFl">
+      <node concept="TZ5HA" id="42GghS3y$Jb" role="TZ5H$">
+        <node concept="1dT_AC" id="42GghS3y$Jc" role="1dT_Ay">
+          <property role="1dT_AB" value="See https://en.wikipedia.org/wiki/Escape_sequences_in_C#Table_of_escape_sequences for details." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
