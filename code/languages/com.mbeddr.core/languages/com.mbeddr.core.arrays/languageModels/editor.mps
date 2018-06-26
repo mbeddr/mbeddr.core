@@ -17,10 +17,15 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="bt5b" ref="r:10548ca1-8094-4342-a65a-87d986241875(com.mbeddr.core.pointers.utils)" />
+    <import index="dp1x" ref="r:84719e1a-99f6-4297-90ba-8ad2a947fa4a(jetbrains.mps.ide.datatransfer)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="1s42" ref="r:d482a2e6-b3ef-4c45-883b-cf624a56b653(com.mbeddr.core.pointers.behavior)" />
+    <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
+    <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
+    <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -42,6 +47,7 @@
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
+      <concept id="6516520003787916624" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Condition" flags="ig" index="27VH4U" />
       <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
@@ -50,6 +56,7 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="8954657570917870539" name="jetbrains.mps.lang.editor.structure.TransformationLocation_ContextAssistant" flags="ng" index="2j_NTm" />
       <concept id="6089045305654894366" name="jetbrains.mps.lang.editor.structure.SubstituteMenuReference_Default" flags="ng" index="2kknPJ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -77,6 +84,7 @@
       <concept id="1638911550608571617" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Default" flags="ng" index="IW6AY" />
       <concept id="1638911550608610798" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Execute" flags="ig" index="IWg2L" />
       <concept id="1638911550608610278" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Action" flags="ng" index="IWgqT">
+        <child id="6202297022026447496" name="canExecuteFunction" index="2jiSrf" />
         <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
@@ -91,6 +99,7 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ng" index="2Z_bC8">
         <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
       </concept>
@@ -103,6 +112,7 @@
       <concept id="8998492695583129991" name="jetbrains.mps.lang.editor.structure.SubstituteFeature_CanSubstitute" flags="ng" index="16NL3D">
         <child id="8998492695583129992" name="query" index="16NL3A" />
       </concept>
+      <concept id="3360401466585705291" name="jetbrains.mps.lang.editor.structure.CellModel_ContextAssistant" flags="ng" index="18a60v" />
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
       </concept>
@@ -256,6 +266,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -1024,6 +1035,14 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="18a60v" id="2_xtqg$MxM8" role="3EZMnx">
+          <node concept="VPM3Z" id="2_xtqg$MxMa" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="11L4FC" id="2_xtqg$MxMm" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
         <node concept="l2Vlx" id="5jmmCdx$f6u" role="2iSdaV" />
       </node>
     </node>
@@ -1532,6 +1551,269 @@
                     <property role="Xl_RC" value="null" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="IW6AY" id="2_xtqg$$Vkr">
+    <property role="3GE5qa" value="literals" />
+    <ref role="aqKnT" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
+    <node concept="1Qtc8_" id="2_xtqg$$Vks" role="IW6Ez">
+      <node concept="2j_NTm" id="2_xtqg$$Vkw" role="1Qtc8$" />
+      <node concept="IWgqT" id="2_xtqg$W$2T" role="1Qtc8A">
+        <node concept="1hCUdq" id="2_xtqg$W$2V" role="1hCUd6">
+          <node concept="3clFbS" id="2_xtqg$W$2X" role="2VODD2">
+            <node concept="3clFbF" id="2_xtqg$W$g$" role="3cqZAp">
+              <node concept="Xl_RD" id="2_xtqg$W$gz" role="3clFbG">
+                <property role="Xl_RC" value="Smart copy" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="2_xtqg$W$2Z" role="IWgqQ">
+          <node concept="3clFbS" id="2_xtqg$W$31" role="2VODD2">
+            <node concept="3cpWs8" id="2_xtqg$WNko" role="3cqZAp">
+              <node concept="3cpWsn" id="2_xtqg$WNkp" role="3cpWs9">
+                <property role="TrG5h" value="valueToCopy" />
+                <node concept="17QB3L" id="2_xtqg$WNkl" role="1tU5fm" />
+                <node concept="2OqwBi" id="2_xtqg$WNkq" role="33vP2m">
+                  <node concept="7Obwk" id="2_xtqg$WNkr" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="2_xtqg$WNks" role="2OqNvi">
+                    <ref role="3TsBF5" to="yq40:5jmmCdx$f5U" resolve="value" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="42GghS3yA_s" role="3cqZAp">
+              <node concept="37vLTI" id="42GghS3zYXi" role="3clFbG">
+                <node concept="37vLTw" id="2_xtqg$XEO$" role="37vLTJ">
+                  <ref role="3cqZAo" node="2_xtqg$WNkp" resolve="valueToCopy" />
+                </node>
+                <node concept="2OqwBi" id="42GghS3yBPm" role="37vLTx">
+                  <node concept="2OqwBi" id="42GghS3yB2D" role="2Oq$k0">
+                    <node concept="10M0yZ" id="2_xtqg$XXu6" role="2Oq$k0">
+                      <ref role="3cqZAo" to="1s42:2_xtqg$XTLn" resolve="ESCAPED_QUOTE" />
+                      <ref role="1PxDUh" to="1s42:42GghS3wqHB" resolve="StringLiteralHelper" />
+                    </node>
+                    <node concept="liA8E" id="42GghS3yBC8" role="2OqNvi">
+                      <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                      <node concept="37vLTw" id="2_xtqg$XF0r" role="37wK5m">
+                        <ref role="3cqZAo" node="2_xtqg$WNkp" resolve="valueToCopy" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="42GghS3yCcd" role="2OqNvi">
+                    <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="42GghS3yCn2" role="37wK5m">
+                      <property role="Xl_RC" value="$2" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="42GghS3yCAS" role="3cqZAp">
+              <node concept="37vLTI" id="42GghS3zZlt" role="3clFbG">
+                <node concept="37vLTw" id="2_xtqg$XFK8" role="37vLTJ">
+                  <ref role="3cqZAo" node="2_xtqg$WNkp" resolve="valueToCopy" />
+                </node>
+                <node concept="2OqwBi" id="42GghS3yCAT" role="37vLTx">
+                  <node concept="2OqwBi" id="42GghS3yCAU" role="2Oq$k0">
+                    <node concept="10M0yZ" id="2_xtqg$XXMA" role="2Oq$k0">
+                      <ref role="3cqZAo" to="1s42:2_xtqg$XVgA" resolve="ESCAPED_BACKSLASH" />
+                      <ref role="1PxDUh" to="1s42:42GghS3wqHB" resolve="StringLiteralHelper" />
+                    </node>
+                    <node concept="liA8E" id="42GghS3yCAW" role="2OqNvi">
+                      <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                      <node concept="37vLTw" id="2_xtqg$XG7N" role="37wK5m">
+                        <ref role="3cqZAo" node="2_xtqg$WNkp" resolve="valueToCopy" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="42GghS3yCAY" role="2OqNvi">
+                    <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="42GghS3yCAZ" role="37wK5m">
+                      <property role="Xl_RC" value="$2" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2_xtqg$WAA3" role="3cqZAp">
+              <node concept="2OqwBi" id="3x42ltMQFGk" role="3clFbG">
+                <node concept="2YIFZM" id="3x42ltMQFG7" role="2Oq$k0">
+                  <ref role="37wK5l" to="ddhc:~CopyPasteManagerEx.getInstanceEx():com.intellij.ide.CopyPasteManagerEx" resolve="getInstanceEx" />
+                  <ref role="1Pybhc" to="ddhc:~CopyPasteManagerEx" resolve="CopyPasteManagerEx" />
+                </node>
+                <node concept="liA8E" id="3x42ltMQFGq" role="2OqNvi">
+                  <ref role="37wK5l" to="ddhc:~CopyPasteManagerEx.setContents(java.awt.datatransfer.Transferable):void" resolve="setContents" />
+                  <node concept="2ShNRf" id="3x42ltMQFGr" role="37wK5m">
+                    <node concept="1pGfFk" id="3x42ltMQHdC" role="2ShVmc">
+                      <ref role="37wK5l" to="kt01:~StringSelection.&lt;init&gt;(java.lang.String)" resolve="StringSelection" />
+                      <node concept="37vLTw" id="2_xtqg$WOiB" role="37wK5m">
+                        <ref role="3cqZAo" node="2_xtqg$WNkp" resolve="valueToCopy" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="IWgqT" id="2_xtqg$$Vkz" role="1Qtc8A">
+        <node concept="1hCUdq" id="2_xtqg$$Vk$" role="1hCUd6">
+          <node concept="3clFbS" id="2_xtqg$$Vk_" role="2VODD2">
+            <node concept="3clFbF" id="2_xtqg$$Vtn" role="3cqZAp">
+              <node concept="Xl_RD" id="2_xtqg$$Vtm" role="3clFbG">
+                <property role="Xl_RC" value="Smart paste" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="2_xtqg$$VkA" role="IWgqQ">
+          <node concept="3clFbS" id="2_xtqg$$VkB" role="2VODD2">
+            <node concept="3cpWs8" id="2_xtqg$CQga" role="3cqZAp">
+              <node concept="3cpWsn" id="2_xtqg$CQgb" role="3cpWs9">
+                <property role="TrG5h" value="valueToPaste" />
+                <node concept="17QB3L" id="2_xtqg$CQkN" role="1tU5fm" />
+                <node concept="2YIFZM" id="2_xtqg$CQgc" role="33vP2m">
+                  <ref role="37wK5l" to="dp1x:5tGs5KqKj9m" resolve="getStringFromClipboard" />
+                  <ref role="1Pybhc" to="dp1x:5tGs5KqKj8I" resolve="TextPasteUtil" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2_xtqg$CQN_" role="3cqZAp">
+              <node concept="37vLTI" id="2_xtqg$CRyH" role="3clFbG">
+                <node concept="2OqwBi" id="2_xtqg$CT4R" role="37vLTx">
+                  <node concept="2OqwBi" id="2_xtqg$XPji" role="2Oq$k0">
+                    <node concept="10M0yZ" id="2_xtqg$XPjj" role="2Oq$k0">
+                      <ref role="3cqZAo" to="1s42:42GghS3wqIO" resolve="UNESCAPED_QUOTE" />
+                      <ref role="1PxDUh" to="1s42:42GghS3wqHB" resolve="StringLiteralHelper" />
+                    </node>
+                    <node concept="liA8E" id="2_xtqg$XPjk" role="2OqNvi">
+                      <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                      <node concept="37vLTw" id="2_xtqg$XPjl" role="37wK5m">
+                        <ref role="3cqZAo" node="2_xtqg$CQgb" resolve="valueToPaste" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2_xtqg$CTpx" role="2OqNvi">
+                    <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="2_xtqg$CTAS" role="37wK5m">
+                      <property role="Xl_RC" value="\\\\$0" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2_xtqg$CQNz" role="37vLTJ">
+                  <ref role="3cqZAo" node="2_xtqg$CQgb" resolve="valueToPaste" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2_xtqg$HI8o" role="3cqZAp">
+              <node concept="37vLTI" id="2_xtqg$HI8p" role="3clFbG">
+                <node concept="2OqwBi" id="2_xtqg$HI8q" role="37vLTx">
+                  <node concept="liA8E" id="2_xtqg$HI8s" role="2OqNvi">
+                    <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="2_xtqg$HI8t" role="37wK5m">
+                      <property role="Xl_RC" value="\\\\$0" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="2_xtqg$HJq7" role="2Oq$k0">
+                    <node concept="10M0yZ" id="2_xtqg$HJq8" role="2Oq$k0">
+                      <ref role="3cqZAo" to="1s42:4WB_OvyNRkD" resolve="UNESCAPED_TRAILING_BACKSLASH" />
+                      <ref role="1PxDUh" to="1s42:42GghS3wqHB" resolve="StringLiteralHelper" />
+                    </node>
+                    <node concept="liA8E" id="2_xtqg$HJq9" role="2OqNvi">
+                      <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                      <node concept="37vLTw" id="2_xtqg$HJqa" role="37wK5m">
+                        <ref role="3cqZAo" node="2_xtqg$CQgb" resolve="valueToPaste" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2_xtqg$HI8u" role="37vLTJ">
+                  <ref role="3cqZAo" node="2_xtqg$CQgb" resolve="valueToPaste" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2_xtqg$HJPt" role="3cqZAp">
+              <node concept="37vLTI" id="2_xtqg$HJPu" role="3clFbG">
+                <node concept="2OqwBi" id="2_xtqg$HJPv" role="37vLTx">
+                  <node concept="liA8E" id="2_xtqg$HJPx" role="2OqNvi">
+                    <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="2_xtqg$HJPy" role="37wK5m">
+                      <property role="Xl_RC" value="\\\\$0" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="2_xtqg$HJPB" role="2Oq$k0">
+                    <node concept="10M0yZ" id="2_xtqg$HKp4" role="2Oq$k0">
+                      <ref role="3cqZAo" to="1s42:4WB_OvyPkA2" resolve="UNKNOWN_ESCAPE_SEQUENCE" />
+                      <ref role="1PxDUh" to="1s42:42GghS3wqHB" resolve="StringLiteralHelper" />
+                    </node>
+                    <node concept="liA8E" id="2_xtqg$HJPD" role="2OqNvi">
+                      <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                      <node concept="37vLTw" id="2_xtqg$HJPE" role="37wK5m">
+                        <ref role="3cqZAo" node="2_xtqg$CQgb" resolve="valueToPaste" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2_xtqg$HJPz" role="37vLTJ">
+                  <ref role="3cqZAo" node="2_xtqg$CQgb" resolve="valueToPaste" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2_xtqg$HJOp" role="3cqZAp">
+              <node concept="37vLTI" id="2_xtqg$HJOq" role="3clFbG">
+                <node concept="2OqwBi" id="2_xtqg$HJOr" role="37vLTx">
+                  <node concept="liA8E" id="2_xtqg$HJOt" role="2OqNvi">
+                    <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="2_xtqg$HJOu" role="37wK5m">
+                      <property role="Xl_RC" value="\\\\$0" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="2_xtqg$HJOz" role="2Oq$k0">
+                    <node concept="10M0yZ" id="2_xtqg$HLRm" role="2Oq$k0">
+                      <ref role="3cqZAo" to="1s42:2_xtqg$xYO3" resolve="INVALID_HEX_ENCODED_CHARACTER" />
+                      <ref role="1PxDUh" to="1s42:42GghS3wqHB" resolve="StringLiteralHelper" />
+                    </node>
+                    <node concept="liA8E" id="2_xtqg$HJO_" role="2OqNvi">
+                      <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                      <node concept="37vLTw" id="2_xtqg$HJOA" role="37wK5m">
+                        <ref role="3cqZAo" node="2_xtqg$CQgb" resolve="valueToPaste" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2_xtqg$HJOv" role="37vLTJ">
+                  <ref role="3cqZAo" node="2_xtqg$CQgb" resolve="valueToPaste" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2_xtqg$$VIP" role="3cqZAp">
+              <node concept="37vLTI" id="2_xtqg$$X8s" role="3clFbG">
+                <node concept="2OqwBi" id="2_xtqg$$VWt" role="37vLTJ">
+                  <node concept="7Obwk" id="2_xtqg$$VIO" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="2_xtqg$$Wmn" role="2OqNvi">
+                    <ref role="3TsBF5" to="yq40:5jmmCdx$f5U" resolve="value" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2_xtqg$CQgd" role="37vLTx">
+                  <ref role="3cqZAo" node="2_xtqg$CQgb" resolve="valueToPaste" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="27VH4U" id="2_xtqg$BD9d" role="2jiSrf">
+          <node concept="3clFbS" id="2_xtqg$BD9e" role="2VODD2">
+            <node concept="3clFbF" id="2_xtqg$BDjZ" role="3cqZAp">
+              <node concept="2YIFZM" id="2_xtqg$BDry" role="3clFbG">
+                <ref role="37wK5l" to="dp1x:5tGs5KqKj8O" resolve="hasStringInClipboard" />
+                <ref role="1Pybhc" to="dp1x:5tGs5KqKj8I" resolve="TextPasteUtil" />
               </node>
             </node>
           </node>
