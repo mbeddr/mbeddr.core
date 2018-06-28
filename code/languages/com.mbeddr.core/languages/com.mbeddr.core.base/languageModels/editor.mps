@@ -655,12 +655,6 @@
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
         <child id="1204834868751" name="expression" index="25KhWn" />
@@ -11404,27 +11398,6 @@
         <node concept="3clFbH" id="4QhMqW3m4jF" role="3cqZAp" />
         <node concept="3clFbJ" id="4QhMqW3m4sa" role="3cqZAp">
           <node concept="3clFbS" id="4QhMqW3m4sd" role="3clFbx">
-            <node concept="34ab3g" id="4QhMqW3o3Fy" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="3cpWs3" id="4QhMqW3o5QB" role="34bqiv">
-                <node concept="37vLTw" id="4QhMqW3o5X9" role="3uHU7w">
-                  <ref role="3cqZAo" node="4QhMqW3k5MM" resolve="containingBigCell" />
-                </node>
-                <node concept="3cpWs3" id="4QhMqW3o4J2" role="3uHU7B">
-                  <node concept="3cpWs3" id="4QhMqW3o4BB" role="3uHU7B">
-                    <node concept="Xl_RD" id="4QhMqW3o3F$" role="3uHU7B">
-                      <property role="Xl_RC" value="selectedCell: " />
-                    </node>
-                    <node concept="37vLTw" id="4QhMqW3o4Co" role="3uHU7w">
-                      <ref role="3cqZAo" node="4QhMqW2YsIu" resolve="selectedCell" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="4QhMqW3o4J9" role="3uHU7w">
-                    <property role="Xl_RC" value=" containingBigCell: " />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs6" id="4QhMqW3m4Kr" role="3cqZAp">
               <node concept="3clFbT" id="4QhMqW3m4TM" role="3cqZAk">
                 <property role="3clFbU" value="false" />
