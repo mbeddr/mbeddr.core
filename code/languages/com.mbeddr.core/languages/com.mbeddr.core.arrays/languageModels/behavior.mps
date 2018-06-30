@@ -95,6 +95,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -132,6 +133,8 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
+        <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -189,6 +192,9 @@
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -5230,6 +5236,57 @@
         </node>
       </node>
     </node>
+    <node concept="Wx3nA" id="7muiiBO$hBR" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="ESCAPED_HORIZONTAL_TAB" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7muiiBO$hBS" role="1B3o_S" />
+      <node concept="3uibUv" id="7muiiBO$hBT" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="7muiiBO$hBU" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="Xl_RD" id="7muiiBO$hBV" role="37wK5m">
+          <property role="Xl_RC" value="\\\\t" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7muiiBO$idS" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="ESCAPED_LINE_SEPARATOR" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7muiiBO$idT" role="1B3o_S" />
+      <node concept="3uibUv" id="7muiiBO$idU" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="7muiiBO$idV" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="Xl_RD" id="7muiiBO$idW" role="37wK5m">
+          <property role="Xl_RC" value="(\\\\r)?\\\\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7muiiBOI0md" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="REPEATED_SPACES" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7muiiBOI0me" role="1B3o_S" />
+      <node concept="3uibUv" id="7muiiBOI0mf" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="7muiiBOI0mg" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="Xl_RD" id="7muiiBOI0mh" role="37wK5m">
+          <property role="Xl_RC" value=" {2,}" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="2_xtqg$XV6s" role="jymVt" />
     <node concept="Wx3nA" id="42GghS3wqIO" role="jymVt">
       <property role="2dlcS1" value="false" />
@@ -5262,6 +5319,57 @@
         <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
         <node concept="Xl_RD" id="1$baREjPt2I" role="37wK5m">
           <property role="Xl_RC" value="(?&lt;!\\\\)\\\\$" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7muiiBO$gzE" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="UNESCAPED_HORIZONTAL_TAB" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7muiiBO$gzF" role="1B3o_S" />
+      <node concept="3uibUv" id="7muiiBO$gzG" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="7muiiBO$gzH" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="Xl_RD" id="7muiiBO$gzI" role="37wK5m">
+          <property role="Xl_RC" value="\\t" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7muiiBO$fxo" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="UNESCAPED_LINE_SEPARATOR" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7muiiBO$f4g" role="1B3o_S" />
+      <node concept="3uibUv" id="7muiiBO$fxe" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="7muiiBO$g1q" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="Xl_RD" id="7muiiBO$g1V" role="37wK5m">
+          <property role="Xl_RC" value="\\R" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7muiiBO$g4h" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="UNESCAPED_TRAILING_LINE_SEPARATOR" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7muiiBO$g4i" role="1B3o_S" />
+      <node concept="3uibUv" id="7muiiBO$g4j" role="1tU5fm">
+        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+      </node>
+      <node concept="2YIFZM" id="7muiiBO$g4k" role="33vP2m">
+        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
+        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+        <node concept="Xl_RD" id="7muiiBO$g4l" role="37wK5m">
+          <property role="Xl_RC" value="\\R$" />
         </node>
       </node>
     </node>
@@ -5346,6 +5454,451 @@
           <property role="1dT_AB" value="See https://en.wikipedia.org/wiki/Escape_sequences_in_C#Table_of_escape_sequences for details." />
         </node>
       </node>
+    </node>
+    <node concept="2tJIrI" id="7muiiBOJ7wq" role="jymVt" />
+    <node concept="2YIFZL" id="2Fy8PSu2$5O" role="jymVt">
+      <property role="TrG5h" value="unescape" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2Fy8PSu2$5Q" role="3clF47">
+        <node concept="3SKdUt" id="7muiiBO$zP9" role="3cqZAp">
+          <node concept="3SKdUq" id="7muiiBO$zPb" role="3SKWNk">
+            <property role="3SKdUp" value="Unescape quotes and backslashes" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Fy8PSu2_I1" role="3cqZAp">
+          <node concept="37vLTI" id="2Fy8PSu2_I2" role="3clFbG">
+            <node concept="37vLTw" id="2Fy8PSu2AWC" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2$5T" resolve="text" />
+            </node>
+            <node concept="2OqwBi" id="2Fy8PSu2_I3" role="37vLTx">
+              <node concept="2OqwBi" id="2Fy8PSu2_I4" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2_Id" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2_xtqg$XTLn" resolve="ESCAPED_QUOTE" />
+                </node>
+                <node concept="liA8E" id="2Fy8PSu2_I5" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2B4W" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2$5T" resolve="text" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="2Fy8PSu2_I6" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="2Fy8PSu2_I7" role="37wK5m">
+                  <property role="Xl_RC" value="$2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Fy8PSu2_If" role="3cqZAp">
+          <node concept="37vLTI" id="2Fy8PSu2_Ig" role="3clFbG">
+            <node concept="37vLTw" id="2Fy8PSu2BqP" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2$5T" resolve="text" />
+            </node>
+            <node concept="2OqwBi" id="2Fy8PSu2_Ih" role="37vLTx">
+              <node concept="2OqwBi" id="2Fy8PSu2_Ii" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2_Ir" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2_xtqg$XVgA" resolve="ESCAPED_BACKSLASH" />
+                </node>
+                <node concept="liA8E" id="2Fy8PSu2_Ij" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2BfU" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2$5T" resolve="text" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="2Fy8PSu2_Ik" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="2Fy8PSu2_Il" role="37wK5m">
+                  <property role="Xl_RC" value="$2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7muiiBO$zoa" role="3cqZAp" />
+        <node concept="3SKdUt" id="7muiiBO$$Xa" role="3cqZAp">
+          <node concept="3SKdUq" id="7muiiBO$$Xb" role="3SKWNk">
+            <property role="3SKdUp" value="Translate horizontal tabs and line breaks" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7muiiBO$_k3" role="3cqZAp">
+          <node concept="37vLTI" id="7muiiBO$_k4" role="3clFbG">
+            <node concept="37vLTw" id="2Fy8PSu2Bz6" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2$5T" resolve="text" />
+            </node>
+            <node concept="2OqwBi" id="7muiiBO$_k6" role="37vLTx">
+              <node concept="2OqwBi" id="7muiiBO$_k7" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2_Iy" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7muiiBO$hBR" resolve="ESCAPED_HORIZONTAL_TAB" />
+                </node>
+                <node concept="liA8E" id="7muiiBO$_k9" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2BPK" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2$5T" resolve="text" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="7muiiBO$_kb" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="7muiiBO$_kc" role="37wK5m">
+                  <property role="Xl_RC" value="\t" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7muiiBO$_FT" role="3cqZAp">
+          <node concept="37vLTI" id="7muiiBO$_FU" role="3clFbG">
+            <node concept="37vLTw" id="2Fy8PSu2BFn" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2$5T" resolve="text" />
+            </node>
+            <node concept="2OqwBi" id="7muiiBO$_FW" role="37vLTx">
+              <node concept="2OqwBi" id="7muiiBO$_FX" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2_ID" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7muiiBO$idS" resolve="ESCAPED_LINE_SEPARATOR" />
+                </node>
+                <node concept="liA8E" id="7muiiBO$_FZ" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2C0J" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2$5T" resolve="text" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="7muiiBO$_G1" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="2YIFZM" id="7muiiBO$YZz" role="37wK5m">
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                  <ref role="37wK5l" to="wyt6:~System.lineSeparator():java.lang.String" resolve="lineSeparator" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2Fy8PSu2Cp5" role="3cqZAp">
+          <node concept="37vLTw" id="2Fy8PSu2CqW" role="3cqZAk">
+            <ref role="3cqZAo" node="2Fy8PSu2$5T" resolve="text" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2Fy8PSu2$5S" role="3clF45" />
+      <node concept="37vLTG" id="2Fy8PSu2$5T" role="3clF46">
+        <property role="TrG5h" value="text" />
+        <node concept="17QB3L" id="2Fy8PSu2$5U" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="2Fy8PSu2$5R" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2Fy8PSu28AC" role="jymVt" />
+    <node concept="2YIFZL" id="2Fy8PSu2ws1" role="jymVt">
+      <property role="TrG5h" value="escape" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2Fy8PSu2ws3" role="3clF47">
+        <node concept="3SKdUt" id="2Fy8PSu2ws4" role="3cqZAp">
+          <node concept="3SKdUq" id="2Fy8PSu2ws5" role="3SKWNk">
+            <property role="3SKdUp" value="Translate horizontal tabs and line breaks" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Fy8PSu2ws6" role="3cqZAp">
+          <node concept="37vLTI" id="2Fy8PSu2ws7" role="3clFbG">
+            <node concept="2OqwBi" id="2Fy8PSu2ws8" role="37vLTx">
+              <node concept="2OqwBi" id="2Fy8PSu2ws9" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2wsa" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7muiiBO$g4h" resolve="UNESCAPED_TRAILING_LINE_SEPARATOR" />
+                </node>
+                <node concept="liA8E" id="2Fy8PSu2wsb" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2wsc" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="2Fy8PSu2wsd" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceFirst(java.lang.String):java.lang.String" resolve="replaceFirst" />
+                <node concept="Xl_RD" id="2Fy8PSu2wse" role="37wK5m">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="2Fy8PSu2wsf" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Fy8PSu2wsg" role="3cqZAp">
+          <node concept="37vLTI" id="2Fy8PSu2wsh" role="3clFbG">
+            <node concept="2OqwBi" id="2Fy8PSu2wsi" role="37vLTx">
+              <node concept="2OqwBi" id="2Fy8PSu2wsj" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2wsk" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7muiiBO$fxo" resolve="UNESCAPED_LINE_SEPARATOR" />
+                </node>
+                <node concept="liA8E" id="2Fy8PSu2wsl" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2wsm" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="2Fy8PSu2wsn" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="2Fy8PSu2wso" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\n" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="2Fy8PSu2wsp" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Fy8PSu2wsq" role="3cqZAp">
+          <node concept="37vLTI" id="2Fy8PSu2wsr" role="3clFbG">
+            <node concept="2OqwBi" id="2Fy8PSu2wss" role="37vLTx">
+              <node concept="2OqwBi" id="2Fy8PSu2wst" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2wsu" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7muiiBO$gzE" resolve="UNESCAPED_HORIZONTAL_TAB" />
+                </node>
+                <node concept="liA8E" id="2Fy8PSu2wsv" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2wsw" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="2Fy8PSu2wsx" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="2Fy8PSu2wsy" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\t" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="2Fy8PSu2wsz" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2Fy8PSu2ws$" role="3cqZAp" />
+        <node concept="3SKdUt" id="2Fy8PSu2ws_" role="3cqZAp">
+          <node concept="3SKdUq" id="2Fy8PSu2wsA" role="3SKWNk">
+            <property role="3SKdUp" value="Escape quotes and backslashes" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Fy8PSu2wsB" role="3cqZAp">
+          <node concept="37vLTI" id="2Fy8PSu2wsC" role="3clFbG">
+            <node concept="2OqwBi" id="2Fy8PSu2wsD" role="37vLTx">
+              <node concept="2OqwBi" id="2Fy8PSu2wsE" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2wsF" role="2Oq$k0">
+                  <ref role="3cqZAo" node="42GghS3wqIO" resolve="UNESCAPED_QUOTE" />
+                </node>
+                <node concept="liA8E" id="2Fy8PSu2wsG" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2wsH" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="2Fy8PSu2wsI" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="2Fy8PSu2wsJ" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\$0" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="2Fy8PSu2wsK" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Fy8PSu2wsL" role="3cqZAp">
+          <node concept="37vLTI" id="2Fy8PSu2wsM" role="3clFbG">
+            <node concept="2OqwBi" id="2Fy8PSu2wsN" role="37vLTx">
+              <node concept="liA8E" id="2Fy8PSu2wsO" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="2Fy8PSu2wsP" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\$0" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2Fy8PSu2wsQ" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2wsR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4WB_OvyNRkD" resolve="UNESCAPED_TRAILING_BACKSLASH" />
+                </node>
+                <node concept="liA8E" id="2Fy8PSu2wsS" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2wsT" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="2Fy8PSu2wsU" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Fy8PSu2wsV" role="3cqZAp">
+          <node concept="37vLTI" id="2Fy8PSu2wsW" role="3clFbG">
+            <node concept="2OqwBi" id="2Fy8PSu2wsX" role="37vLTx">
+              <node concept="liA8E" id="2Fy8PSu2wsY" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="2Fy8PSu2wsZ" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\$0" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2Fy8PSu2wt0" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2wt1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4WB_OvyPkA2" resolve="UNKNOWN_ESCAPE_SEQUENCE" />
+                </node>
+                <node concept="liA8E" id="2Fy8PSu2wt2" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2wt3" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="2Fy8PSu2wt4" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Fy8PSu2wt5" role="3cqZAp">
+          <node concept="37vLTI" id="2Fy8PSu2wt6" role="3clFbG">
+            <node concept="2OqwBi" id="2Fy8PSu2wt7" role="37vLTx">
+              <node concept="liA8E" id="2Fy8PSu2wt8" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="2Fy8PSu2wt9" role="37wK5m">
+                  <property role="Xl_RC" value="\\\\$0" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2Fy8PSu2wta" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2wtb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2_xtqg$xYO3" resolve="INVALID_HEX_ENCODED_CHARACTER" />
+                </node>
+                <node concept="liA8E" id="2Fy8PSu2wtc" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2wtd" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="2Fy8PSu2wte" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2Fy8PSu2wtf" role="3cqZAp">
+          <node concept="37vLTw" id="2Fy8PSu2wtg" role="3cqZAk">
+            <ref role="3cqZAo" node="2Fy8PSu2wtj" resolve="text" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2Fy8PSu2wti" role="3clF45" />
+      <node concept="37vLTG" id="2Fy8PSu2wtj" role="3clF46">
+        <property role="TrG5h" value="text" />
+        <node concept="17QB3L" id="2Fy8PSu2wtk" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="2Fy8PSu2wth" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2Fy8PSu29eV" role="jymVt" />
+    <node concept="2YIFZL" id="2Fy8PSu2gGg" role="jymVt">
+      <property role="TrG5h" value="stripFormatting" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2Fy8PSu2gGi" role="3clF47">
+        <node concept="3clFbF" id="2Fy8PSu2gGj" role="3cqZAp">
+          <node concept="37vLTI" id="2Fy8PSu2gGk" role="3clFbG">
+            <node concept="37vLTw" id="2Fy8PSu2gGl" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2gGP" resolve="text" />
+            </node>
+            <node concept="2OqwBi" id="2Fy8PSu2gGm" role="37vLTx">
+              <node concept="2OqwBi" id="2Fy8PSu2gGn" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2gGo" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7muiiBO$hBR" resolve="ESCAPED_HORIZONTAL_TAB" />
+                </node>
+                <node concept="liA8E" id="2Fy8PSu2gGp" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2gGq" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2gGP" resolve="text" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="2Fy8PSu2gGr" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="2Fy8PSu2gGs" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Fy8PSu2gGt" role="3cqZAp">
+          <node concept="37vLTI" id="2Fy8PSu2gGu" role="3clFbG">
+            <node concept="37vLTw" id="2Fy8PSu2gGv" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2gGP" resolve="text" />
+            </node>
+            <node concept="2OqwBi" id="2Fy8PSu2gGw" role="37vLTx">
+              <node concept="2OqwBi" id="2Fy8PSu2gGx" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2gGy" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7muiiBO$idS" resolve="ESCAPED_LINE_SEPARATOR" />
+                </node>
+                <node concept="liA8E" id="2Fy8PSu2gGz" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2gG$" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2gGP" resolve="text" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="2Fy8PSu2gG_" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="2Fy8PSu2gGA" role="37wK5m">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Fy8PSu2gGB" role="3cqZAp">
+          <node concept="37vLTI" id="2Fy8PSu2gGC" role="3clFbG">
+            <node concept="37vLTw" id="2Fy8PSu2gGD" role="37vLTJ">
+              <ref role="3cqZAo" node="2Fy8PSu2gGP" resolve="text" />
+            </node>
+            <node concept="2OqwBi" id="2Fy8PSu2gGE" role="37vLTx">
+              <node concept="2OqwBi" id="2Fy8PSu2gGF" role="2Oq$k0">
+                <node concept="37vLTw" id="2Fy8PSu2gGG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7muiiBOI0md" resolve="REPEATED_SPACES" />
+                </node>
+                <node concept="liA8E" id="2Fy8PSu2gGH" role="2OqNvi">
+                  <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                  <node concept="37vLTw" id="2Fy8PSu2gGI" role="37wK5m">
+                    <ref role="3cqZAo" node="2Fy8PSu2gGP" resolve="text" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="2Fy8PSu2gGJ" role="2OqNvi">
+                <ref role="37wK5l" to="ni5j:~Matcher.replaceAll(java.lang.String):java.lang.String" resolve="replaceAll" />
+                <node concept="Xl_RD" id="2Fy8PSu2gGK" role="37wK5m">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2Fy8PSu2gGL" role="3cqZAp">
+          <node concept="37vLTw" id="2Fy8PSu2gGM" role="3cqZAk">
+            <ref role="3cqZAo" node="2Fy8PSu2gGP" resolve="text" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2Fy8PSu2gGO" role="3clF45" />
+      <node concept="37vLTG" id="2Fy8PSu2gGP" role="3clF46">
+        <property role="TrG5h" value="text" />
+        <node concept="17QB3L" id="2Fy8PSu2gGQ" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="2Fy8PSu2gGN" role="1B3o_S" />
     </node>
   </node>
 </model>
