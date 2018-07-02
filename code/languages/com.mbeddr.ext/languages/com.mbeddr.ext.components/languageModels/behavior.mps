@@ -640,6 +640,93 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="4YmSJdK70C" role="13h7CS">
+      <property role="TrG5h" value="createNameFromInterface" />
+      <node concept="3Tm1VV" id="4YmSJdK70D" role="1B3o_S" />
+      <node concept="17QB3L" id="4YmSJdK8_C" role="3clF45" />
+      <node concept="3clFbS" id="4YmSJdK70F" role="3clF47">
+        <node concept="3SKdUt" id="1le6iVSYcy2" role="3cqZAp">
+          <node concept="3SKdUq" id="1le6iVSYcy3" role="3SKWNk">
+            <property role="3SKdUp" value="Prevent interface names being prefixed with 'I' to produce 'i'-prefixed port names" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4YmSJdK9BR" role="3cqZAp">
+          <node concept="3cpWsn" id="4YmSJdK9BU" role="3cpWs9">
+            <property role="TrG5h" value="name" />
+            <node concept="17QB3L" id="4YmSJdK9BP" role="1tU5fm" />
+            <node concept="2OqwBi" id="4YmSJdKajv" role="33vP2m">
+              <node concept="2OqwBi" id="4YmSJdKnYs" role="2Oq$k0">
+                <node concept="37vLTw" id="4YmSJdK9KJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4YmSJdK8Ak" resolve="interfaze" />
+                </node>
+                <node concept="3TrcHB" id="4YmSJdKp9E" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4YmSJdKak7" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replaceFirst(java.lang.String,java.lang.String):java.lang.String" resolve="replaceFirst" />
+                <node concept="Xl_RD" id="4YmSJdKak8" role="37wK5m">
+                  <property role="Xl_RC" value="^I([A-Z])" />
+                </node>
+                <node concept="Xl_RD" id="4YmSJdKak9" role="37wK5m">
+                  <property role="Xl_RC" value="$1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1le6iVSYcya" role="3cqZAp">
+          <node concept="37vLTI" id="1le6iVSYcyb" role="3clFbG">
+            <node concept="3cpWs3" id="1le6iVSYcyc" role="37vLTx">
+              <node concept="2OqwBi" id="1le6iVSYcyd" role="3uHU7w">
+                <node concept="37vLTw" id="4YmSJdKcIo" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4YmSJdK9BU" resolve="name" />
+                </node>
+                <node concept="liA8E" id="1le6iVSYcyf" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                  <node concept="3cmrfG" id="1le6iVSYcyg" role="37wK5m">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1le6iVSYcyh" role="3uHU7B">
+                <node concept="2OqwBi" id="1le6iVSYcyi" role="2Oq$k0">
+                  <node concept="37vLTw" id="4YmSJdKcBp" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4YmSJdK9BU" resolve="name" />
+                  </node>
+                  <node concept="liA8E" id="1le6iVSYcyk" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <node concept="3cmrfG" id="1le6iVSYcyl" role="37wK5m">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                    <node concept="3cmrfG" id="1le6iVSYcym" role="37wK5m">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="1le6iVSYcyn" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="4YmSJdKcpn" role="37vLTJ">
+              <ref role="3cqZAo" node="4YmSJdK9BU" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4YmSJdKddy" role="3cqZAp">
+          <node concept="37vLTw" id="4YmSJdKddw" role="3clFbG">
+            <ref role="3cqZAo" node="4YmSJdK9BU" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4YmSJdK8Ak" role="3clF46">
+        <property role="TrG5h" value="interfaze" />
+        <node concept="3Tqbb2" id="4YmSJdKmtU" role="1tU5fm">
+          <ref role="ehGHo" to="v7ag:3TmmsQkC_PR" resolve="Interface" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="6brBMefVI3Q" role="13h7CS">
       <property role="TrG5h" value="getConceptToBeCounted" />
       <ref role="13i0hy" to="hwgx:6brBMefSzRs" resolve="getConceptToBeCounted" />
