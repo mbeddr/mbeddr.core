@@ -17,6 +17,7 @@ public class Main {
 
         File langDir = new File("/Users/berndkolb/mps/_mps173/mbeddr/mbeddr.core/code/languages");
         File pluginsDir = new File("/Users/berndkolb/mps/_mps173/mbeddr/mbeddr.core/code/plugins");
+        File testsDir = new File("/Users/berndkolb/mps/_mps173/mbeddr/mbeddr.core/code/tests");
 
         BufferedWriter w = new BufferedWriter(new FileWriter(modulesXml));
 
@@ -28,6 +29,7 @@ public class Main {
 
         traverse(langDir, w);
         traverse(pluginsDir, w);
+        traverse(testsDir, w);
 
 
         w.write("    </projectModules>\n" +

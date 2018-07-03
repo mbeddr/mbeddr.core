@@ -663,11 +663,11 @@
             <node concept="lc7rE" id="29BUUxcvSE7" role="3cqZAp">
               <node concept="l9hG8" id="29BUUxcvSE8" role="lcghm">
                 <node concept="2OqwBi" id="29BUUxcvSE9" role="lb14g">
+                  <node concept="2qgKlT" id="2DouzknTJEa" role="2OqNvi">
+                    <ref role="37wK5l" to="2rho:2DouzknPPyL" resolve="getGenType" />
+                  </node>
                   <node concept="37vLTw" id="29BUUxcvSEa" role="2Oq$k0">
                     <ref role="3cqZAo" node="29BUUxcvSE1" resolve="bitType" />
-                  </node>
-                  <node concept="2qgKlT" id="29BUUxcvSEb" role="2OqNvi">
-                    <ref role="37wK5l" to="2rho:5nhrDHCiU60" resolve="getBaseType" />
                   </node>
                 </node>
               </node>

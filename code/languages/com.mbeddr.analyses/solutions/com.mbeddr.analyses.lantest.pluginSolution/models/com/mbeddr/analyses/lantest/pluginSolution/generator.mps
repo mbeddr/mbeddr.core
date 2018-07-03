@@ -2,12 +2,12 @@
 <model ref="r:5e05eafc-88ae-40cc-84b6-10bb3c5fe753(com.mbeddr.analyses.lantest.pluginSolution.generator)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
   </languages>
   <imports>
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
@@ -200,6 +200,7 @@
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -566,12 +567,22 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="26HFG8DMjW_" role="3cqZAp">
-          <node concept="2OqwBi" id="26HFG8DMjYG" role="3clFbG">
-            <node concept="37vLTw" id="26HFG8DMjW$" role="2Oq$k0">
+        <node concept="3clFbJ" id="2GezJFKDe2D" role="3cqZAp">
+          <node concept="3clFbS" id="2GezJFKDe2F" role="3clFbx">
+            <node concept="3clFbF" id="26HFG8DMjW_" role="3cqZAp">
+              <node concept="2OqwBi" id="26HFG8DMjYG" role="3clFbG">
+                <node concept="37vLTw" id="26HFG8DMjW$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5oO2AcZz1TK" resolve="moduleRef" />
+                </node>
+                <node concept="3YRAZt" id="26HFG8DMk8g" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2GezJFKDeBF" role="3clFbw">
+            <node concept="37vLTw" id="2GezJFKDek8" role="2Oq$k0">
               <ref role="3cqZAo" node="5oO2AcZz1TK" resolve="moduleRef" />
             </node>
-            <node concept="3YRAZt" id="26HFG8DMk8g" role="2OqNvi" />
+            <node concept="3x8VRR" id="2GezJFKDf3W" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbJ" id="2qXH_3iSQRT" role="3cqZAp">

@@ -16,14 +16,22 @@ if (project.skipResolveMps) {
     }
 }
 
-task resolve_extensions(type: Copy) {
-    dependsOn configurations.mpsExtensions
-    from {
-        configurations.mpsExtensions.resolve().collect { zipTree(it) }
+if (project.hasProperty('mpsExtensionsZip')) {
+    task resolve_extensions(type: Copy) {
+        from {
+            zipTree(project.property('mpsExtensionsZip'))
+        }
+        into artifactsDir
     }
-    into artifactsDir
+} else {
+    task resolve_extensions(type: Copy) {
+        dependsOn configurations.mpsExtensions
+        from {
+            configurations.mpsExtensions.resolve().collect { zipTree(it) }
+        }
+        into artifactsDir
+    }
 }
-
 
 task build_allScripts(type: BuildLanguages, dependsOn: [resolve_mps, resolve_extensions]) {
     script rootProject.file('build/com.mbeddr.allScripts/build.xml')

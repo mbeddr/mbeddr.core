@@ -1744,5 +1744,13 @@
     <property role="EcuMT" value="4767670499384707405" />
     <property role="TrG5h" value="IAncestorRelevantNode" />
   </node>
+  <node concept="1TIwiD" id="3dCMHw1DXUY">
+    <property role="EcuMT" value="3704433722601758398" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="DerivedPrimitiveType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
+  </node>
 </model>
 

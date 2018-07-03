@@ -3,9 +3,9 @@ import de.itemis.mps.gradle.GitBasedVersioning
 ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 
-
-ext.mpsMajor = "2017.3"
-ext.mpsBuild = "2017.3.6"
+//MPS versions
+ext.mpsMajor = "2018.1"
+ext.mpsBuild = "2018.1.5"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
@@ -72,4 +72,3 @@ task wrapper(type: Wrapper) {
     gradleVersion '4.4.1'
     distributionType 'all'
 }
-

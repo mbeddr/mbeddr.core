@@ -10,8 +10,8 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
   </languages>
   <imports>
     <import index="rgba" ref="fa1d9f5d-d5ce-44c5-94ac-ba5f1a1fba8e/java:org.easymock(test.debugger.core/)" />
@@ -1401,9 +1401,9 @@
                   <node concept="37vLTw" id="2pJszzmZcSq" role="2XxRq1">
                     <ref role="3cqZAo" node="2pJszzmZcQM" resolve="debugListenerMock" />
                   </node>
-                  <node concept="2YIFZM" id="6L3DaT6YgSB" role="2XxRq1">
+                  <node concept="2YIFZM" id="z4vv_opx0n" role="2XxRq1">
+                    <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService():com.google.common.util.concurrent.ListeningExecutorService" resolve="newDirectExecutorService" />
                     <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
-                    <ref role="37wK5l" to="wyx4:~MoreExecutors.sameThreadExecutor():com.google.common.util.concurrent.ListeningExecutorService" resolve="sameThreadExecutor" />
                   </node>
                   <node concept="37vLTw" id="5HxjapvQZKC" role="2XxRq1">
                     <ref role="3cqZAo" node="6L3DaT6Xc5P" resolve="TIMEOUT" />
@@ -1930,8 +1930,8 @@
                   <node concept="37vLTw" id="2pJszzmZzIh" role="2XxRq1">
                     <ref role="3cqZAo" node="2pJszzmZzI7" resolve="debugListenerMock" />
                   </node>
-                  <node concept="2YIFZM" id="6L3DaT6YgSk" role="2XxRq1">
-                    <ref role="37wK5l" to="wyx4:~MoreExecutors.sameThreadExecutor():com.google.common.util.concurrent.ListeningExecutorService" resolve="sameThreadExecutor" />
+                  <node concept="2YIFZM" id="z4vv_opx0O" role="2XxRq1">
+                    <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService():com.google.common.util.concurrent.ListeningExecutorService" resolve="newDirectExecutorService" />
                     <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
                   </node>
                   <node concept="37vLTw" id="5HxjapvQZjP" role="2XxRq1">
@@ -6250,9 +6250,9 @@
                           </node>
                           <node concept="liA8E" id="1OGsPyH$U1D" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object):void" resolve="toInstance" />
-                            <node concept="2YIFZM" id="6L3DaT6YgD8" role="37wK5m">
+                            <node concept="2YIFZM" id="z4vv_opfr9" role="37wK5m">
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService():com.google.common.util.concurrent.ListeningExecutorService" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.sameThreadExecutor():com.google.common.util.concurrent.ListeningExecutorService" resolve="sameThreadExecutor" />
                             </node>
                           </node>
                         </node>
@@ -7483,9 +7483,9 @@
                           </node>
                           <node concept="liA8E" id="1OGsPyH_21I" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object):void" resolve="toInstance" />
-                            <node concept="2YIFZM" id="6L3DaT6YgGw" role="37wK5m">
+                            <node concept="2YIFZM" id="z4vv_opj6a" role="37wK5m">
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService():com.google.common.util.concurrent.ListeningExecutorService" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.sameThreadExecutor():com.google.common.util.concurrent.ListeningExecutorService" resolve="sameThreadExecutor" />
                             </node>
                           </node>
                         </node>
@@ -8651,9 +8651,9 @@
                           </node>
                           <node concept="liA8E" id="6L3DaT6YgHf" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object):void" resolve="toInstance" />
-                            <node concept="2YIFZM" id="6L3DaT6YgHg" role="37wK5m">
+                            <node concept="2YIFZM" id="z4vv_opjYb" role="37wK5m">
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService():com.google.common.util.concurrent.ListeningExecutorService" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.sameThreadExecutor():com.google.common.util.concurrent.ListeningExecutorService" resolve="sameThreadExecutor" />
                             </node>
                           </node>
                         </node>
@@ -9580,9 +9580,9 @@
                           </node>
                           <node concept="liA8E" id="6L3DaT6YgHP" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object):void" resolve="toInstance" />
-                            <node concept="2YIFZM" id="6L3DaT6YgHQ" role="37wK5m">
+                            <node concept="2YIFZM" id="z4vv_opms4" role="37wK5m">
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService():com.google.common.util.concurrent.ListeningExecutorService" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.sameThreadExecutor():com.google.common.util.concurrent.ListeningExecutorService" resolve="sameThreadExecutor" />
                             </node>
                           </node>
                         </node>
@@ -10225,9 +10225,9 @@
                           </node>
                           <node concept="liA8E" id="6L3DaT6YgIN" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object):void" resolve="toInstance" />
-                            <node concept="2YIFZM" id="6L3DaT6YgIO" role="37wK5m">
+                            <node concept="2YIFZM" id="z4vv_opnHu" role="37wK5m">
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService():com.google.common.util.concurrent.ListeningExecutorService" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.sameThreadExecutor():com.google.common.util.concurrent.ListeningExecutorService" resolve="sameThreadExecutor" />
                             </node>
                           </node>
                         </node>
@@ -11572,8 +11572,8 @@
                           </node>
                           <node concept="liA8E" id="6L3DaT6YgJB" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object):void" resolve="toInstance" />
-                            <node concept="2YIFZM" id="6L3DaT6YgJC" role="37wK5m">
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.sameThreadExecutor():com.google.common.util.concurrent.ListeningExecutorService" resolve="sameThreadExecutor" />
+                            <node concept="2YIFZM" id="z4vv_opoUa" role="37wK5m">
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService():com.google.common.util.concurrent.ListeningExecutorService" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
                             </node>
                           </node>
@@ -12459,9 +12459,9 @@
                           </node>
                           <node concept="liA8E" id="6L3DaT6YgLo" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object):void" resolve="toInstance" />
-                            <node concept="2YIFZM" id="6L3DaT6YgLp" role="37wK5m">
+                            <node concept="2YIFZM" id="z4vv_opqLB" role="37wK5m">
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService():com.google.common.util.concurrent.ListeningExecutorService" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.sameThreadExecutor():com.google.common.util.concurrent.ListeningExecutorService" resolve="sameThreadExecutor" />
                             </node>
                           </node>
                         </node>
@@ -14070,8 +14070,8 @@
                           </node>
                           <node concept="liA8E" id="6L3DaT6YgON" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object):void" resolve="toInstance" />
-                            <node concept="2YIFZM" id="6L3DaT6YgOO" role="37wK5m">
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.sameThreadExecutor():com.google.common.util.concurrent.ListeningExecutorService" resolve="sameThreadExecutor" />
+                            <node concept="2YIFZM" id="z4vv_opy4J" role="37wK5m">
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService():com.google.common.util.concurrent.ListeningExecutorService" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
                             </node>
                           </node>
@@ -14980,9 +14980,9 @@
                           </node>
                           <node concept="liA8E" id="6L3DaT6YgNe" role="2OqNvi">
                             <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object):void" resolve="toInstance" />
-                            <node concept="2YIFZM" id="6L3DaT6YgNf" role="37wK5m">
+                            <node concept="2YIFZM" id="z4vv_opzy_" role="37wK5m">
+                              <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService():com.google.common.util.concurrent.ListeningExecutorService" resolve="newDirectExecutorService" />
                               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
-                              <ref role="37wK5l" to="wyx4:~MoreExecutors.sameThreadExecutor():com.google.common.util.concurrent.ListeningExecutorService" resolve="sameThreadExecutor" />
                             </node>
                           </node>
                         </node>
@@ -44943,9 +44943,9 @@
                             </node>
                             <node concept="liA8E" id="6ZadL_R4DoW" role="2OqNvi">
                               <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object):void" resolve="toInstance" />
-                              <node concept="2YIFZM" id="29so9VbMK9E" role="37wK5m">
+                              <node concept="2YIFZM" id="z4vv_opvsG" role="37wK5m">
+                                <ref role="37wK5l" to="wyx4:~MoreExecutors.newDirectExecutorService():com.google.common.util.concurrent.ListeningExecutorService" resolve="newDirectExecutorService" />
                                 <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
-                                <ref role="37wK5l" to="wyx4:~MoreExecutors.sameThreadExecutor():com.google.common.util.concurrent.ListeningExecutorService" resolve="sameThreadExecutor" />
                               </node>
                             </node>
                           </node>

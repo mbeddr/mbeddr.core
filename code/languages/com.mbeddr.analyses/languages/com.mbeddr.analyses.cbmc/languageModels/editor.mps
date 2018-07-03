@@ -7861,7 +7861,7 @@
     <node concept="3EZMnI" id="2OfxaHaxQop" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="3F0ifn" id="3YHIg3ZGVRu" role="AHCbl">
-        <property role="3F0ifm" value="External Files ..." />
+        <property role="3F0ifm" value="Included Directories ..." />
         <node concept="VechU" id="3YHIg3ZGVUx" role="3F10Kt">
           <property role="Vb096" value="darkGray" />
         </node>
@@ -7895,6 +7895,36 @@
           </node>
         </node>
         <node concept="2iRfu4" id="2OfxaHaxQoF" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="3RgbR_cgsid" role="3EZMnx">
+        <property role="3F0ifm" value="Include Directories" />
+      </node>
+      <node concept="3EZMnI" id="3RgbR_cgsi0" role="3EZMnx">
+        <node concept="VPM3Z" id="3RgbR_cgsi1" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="3RgbR_cgsi2" role="3EZMnx" />
+        <node concept="3F2HdR" id="3RgbR_cgsi3" role="3EZMnx">
+          <ref role="1NtTu8" to="q5q6:3RgbR_cgshG" resolve="includeDirectories" />
+          <node concept="4$FPG" id="3RgbR_cgsi4" role="4_6I_">
+            <node concept="3clFbS" id="3RgbR_cgsi5" role="2VODD2">
+              <node concept="3clFbF" id="3RgbR_cgsi6" role="3cqZAp">
+                <node concept="2ShNRf" id="3RgbR_cgsi7" role="3clFbG">
+                  <node concept="3zrR0B" id="3RgbR_cgsi8" role="2ShVmc">
+                    <node concept="3Tqbb2" id="3RgbR_cgsi9" role="3zrR0E">
+                      <ref role="ehGHo" to="68mc:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2iRkQZ" id="3RgbR_cgsia" role="2czzBx" />
+          <node concept="VPM3Z" id="3RgbR_cgsib" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="3RgbR_cgsic" role="2iSdaV" />
       </node>
       <node concept="2EHx9g" id="2OfxaHaxQoG" role="2iSdaV" />
       <node concept="pkWqt" id="2OfxaHaxQoH" role="pqm2j">
@@ -8000,6 +8030,20 @@
         </node>
         <node concept="l2Vlx" id="5tDzxi6RrF2" role="2iSdaV" />
       </node>
+      <node concept="3EZMnI" id="3RgbR_cgszX" role="3EZMnx">
+        <node concept="VPM3Z" id="3RgbR_cgszY" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="3RgbR_cgszZ" role="3EZMnx">
+          <property role="3F0ifm" value="included directories" />
+        </node>
+        <node concept="3F0ifn" id="3RgbR_cgs$0" role="3EZMnx">
+          <property role="3F0ifm" value="- a set of directories to be included by CBMC (uses CBMC option -I) " />
+          <node concept="Vb9p2" id="3RgbR_cgs$1" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="3RgbR_cgs$2" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="3RgbR_cgsxk" role="3EZMnx" />
     </node>
   </node>
   <node concept="PKFIW" id="5tDzxi6RrTa">

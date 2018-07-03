@@ -10,7 +10,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="2" />
   </languages>
@@ -3480,13 +3480,10 @@
       <node concept="3clFbH" id="qT5MFmrCwm" role="3cqZAp" />
     </node>
     <node concept="3XIRFW" id="qT5MFmrEgP" role="LiRBU">
-      <node concept="3XISUE" id="qT5MFmrEh0" role="3XIRFZ">
-        <node concept="LIFWc" id="qT5MFmrEhy" role="lGtFl">
-          <property role="ZRATv" value="true" />
-          <property role="OXtK3" value="true" />
-          <property role="p6zMq" value="0" />
-          <property role="p6zMs" value="0" />
-          <property role="LIFWd" value="Constant_7h2wce_a" />
+      <node concept="3XISUE" id="1JtUyr0HbIK" role="3XIRFZ">
+        <node concept="LIFWc" id="1JtUyr0HbJb" role="lGtFl">
+          <property role="LIFWa" value="0" />
+          <property role="LIFWd" value="Collection_7h2wce_a" />
         </node>
       </node>
     </node>
@@ -3503,13 +3500,10 @@
   <node concept="LiM7Y" id="qT5MFmTsCy">
     <property role="TrG5h" value="LVD_CreatePointerVar" />
     <node concept="3XIRFW" id="qT5MFmTsCz" role="LiRBU">
-      <node concept="3XISUE" id="qT5MFmTsDh" role="3XIRFZ">
-        <node concept="LIFWc" id="qT5MFmTsDG" role="lGtFl">
-          <property role="ZRATv" value="true" />
-          <property role="OXtK3" value="true" />
-          <property role="p6zMq" value="0" />
-          <property role="p6zMs" value="0" />
-          <property role="LIFWd" value="Constant_7h2wce_a" />
+      <node concept="3XISUE" id="1JtUyr0HfiU" role="3XIRFZ">
+        <node concept="LIFWc" id="1JtUyr0Hfjy" role="lGtFl">
+          <property role="LIFWa" value="0" />
+          <property role="LIFWd" value="Collection_7h2wce_a" />
         </node>
       </node>
     </node>
@@ -3535,13 +3529,10 @@
   <node concept="LiM7Y" id="qT5MFmUDiC">
     <property role="TrG5h" value="LVD_CreateArrayVar" />
     <node concept="3XIRFW" id="qT5MFmUDiD" role="LiRBU">
-      <node concept="3XISUE" id="qT5MFmUDiE" role="3XIRFZ">
-        <node concept="LIFWc" id="qT5MFmUDiF" role="lGtFl">
-          <property role="ZRATv" value="true" />
-          <property role="OXtK3" value="true" />
-          <property role="p6zMq" value="0" />
-          <property role="p6zMs" value="0" />
-          <property role="LIFWd" value="Constant_7h2wce_a" />
+      <node concept="3XISUE" id="1JtUyr0H4hz" role="3XIRFZ">
+        <node concept="LIFWc" id="1JtUyr0H4iG" role="lGtFl">
+          <property role="LIFWa" value="0" />
+          <property role="LIFWd" value="Collection_7h2wce_a" />
         </node>
       </node>
     </node>

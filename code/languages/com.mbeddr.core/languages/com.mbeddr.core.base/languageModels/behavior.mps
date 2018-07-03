@@ -11675,14 +11675,6 @@
             <ref role="3cqZAo" node="aUl3uPCrVI" resolve="repository" />
           </node>
         </node>
-        <node concept="3clFbF" id="1yFmGPnITlZ" role="3cqZAp">
-          <node concept="1rXfSq" id="1yFmGPnITm0" role="3clFbG">
-            <ref role="37wK5l" to="exr9:~EditorComponent.setNoVirtualFile(boolean):void" resolve="setNoVirtualFile" />
-            <node concept="3clFbT" id="1yFmGPnITm1" role="37wK5m">
-              <property role="3clFbU" value="true" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="1yFmGPnITm2" role="3cqZAp">
           <node concept="1rXfSq" id="1yFmGPnITm3" role="3clFbG">
             <ref role="37wK5l" to="exr9:~EditorComponent.editNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="editNode" />

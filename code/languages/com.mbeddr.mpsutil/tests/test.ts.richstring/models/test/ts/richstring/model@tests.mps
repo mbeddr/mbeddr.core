@@ -6,20 +6,28 @@
     <use id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
   </languages>
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU">
+        <child id="8489045168660938635" name="warningRef" index="3lydCh" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
+      </concept>
+      <concept id="4531408400486526326" name="jetbrains.mps.lang.test.structure.WarningStatementReference" flags="ng" index="2PQEqo" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -5469,6 +5477,13 @@
           <node concept="3uibUv" id="4gGXGcM2Ug2" role="1tU5fm">
             <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
+          <node concept="7CXmI" id="79255UwOg74" role="lGtFl">
+            <node concept="29bkU" id="79255UwOgFl" role="7EUXB">
+              <node concept="2PQEqo" id="79255UwOgFm" role="3lydCh">
+                <ref role="39XzEq" to="tpeh:6$QDgVJ44yR" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="312cEg" id="7hVsScEn2mk" role="jymVt">
           <property role="34CwA1" value="false" />
@@ -5537,6 +5552,13 @@
               </node>
             </node>
           </node>
+          <node concept="7CXmI" id="79255UwOiXN" role="lGtFl">
+            <node concept="29bkU" id="79255UwOjy4" role="7EUXB">
+              <node concept="2PQEqo" id="79255UwOjy5" role="3lydCh">
+                <ref role="39XzEq" to="tpeh:6$QDgVJ44yr" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="312cEg" id="4gGXGcM2NpJ" role="jymVt">
           <property role="34CwA1" value="false" />
@@ -5554,6 +5576,13 @@
               </node>
               <node concept="Xl_RD" id="4gGXGcM2QxH" role="3uHU7w">
                 <property role="Xl_RC" value="heute haben wir den " />
+              </node>
+            </node>
+          </node>
+          <node concept="7CXmI" id="79255UwOkb1" role="lGtFl">
+            <node concept="29bkU" id="79255UwOkJi" role="7EUXB">
+              <node concept="2PQEqo" id="79255UwOkJj" role="3lydCh">
+                <ref role="39XzEq" to="tpeh:6$QDgVJ44yr" />
               </node>
             </node>
           </node>
