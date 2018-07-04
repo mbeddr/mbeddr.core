@@ -11,14 +11,13 @@
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" />
     <import index="udin" ref="r:fe8ee6c8-7e5c-4efd-b608-c5ea6827be30(com.mbeddr.mpsutil.graphstream.runtime.plugin)" />
     <import index="5svn" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="dsms" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.example(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="upej" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="2yw0" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="7vlr" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.interaction(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="j4ux" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.demo(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="upej" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
+    <import index="mf8e" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.jgraphx(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
-    <import index="7vlr" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.interaction(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="60v7" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.example.handlers(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="thhq" ref="r:f4b2cfe1-da62-4992-a88f-cc8c90918a31(com.mbeddr.mpsutil.graphstream.example.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -37,6 +36,10 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
@@ -55,6 +58,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -77,6 +81,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -106,7 +111,9 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
+        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
+      </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -115,6 +122,7 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -128,9 +136,6 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
-        <child id="1151688676805" name="elementType" index="_ZDj9" />
-      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -179,6 +184,9 @@
           <node concept="2ShNRf" id="4iv9KfRs3XS" role="3cqZAk">
             <node concept="1pGfFk" id="6x5UxX331_t" role="2ShVmc">
               <ref role="37wK5l" node="7PLVYgqIBl5" resolve="ExampleGraphingInformation" />
+              <node concept="37vLTw" id="1wY88QDJHNR" role="37wK5m">
+                <ref role="3cqZAo" node="1wY88QDJDDn" resolve="project" />
+              </node>
             </node>
           </node>
         </node>
@@ -186,6 +194,12 @@
       <node concept="37vLTG" id="4DzE9lEv6af" role="3clF46">
         <property role="TrG5h" value="viewID" />
         <node concept="17QB3L" id="izXu77MRXD" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1wY88QDJDDn" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="1wY88QDJDDo" role="1tU5fm">
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        </node>
       </node>
       <node concept="3uibUv" id="50Rn4r1HiAN" role="3clF45">
         <ref role="3uigEE" to="udin:50Rn4r1HbyJ" resolve="IGraphingInformation" />
@@ -203,30 +217,104 @@
       <node concept="3Tm6S6" id="4G2jA20frbg" role="1B3o_S" />
       <node concept="3uibUv" id="4G2jA20frvb" role="1tU5fm">
         <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
+        <node concept="3uibUv" id="4buoDFRgBhl" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
       </node>
-      <node concept="2ShNRf" id="4G2jA20frW5" role="33vP2m">
-        <node concept="1pGfFk" id="4G2jA20f_ce" role="2ShVmc">
-          <ref role="37wK5l" to="5svn:~Graph.&lt;init&gt;()" resolve="Graph" />
+      <node concept="2YIFZM" id="5fSzYI3_cNE" role="33vP2m">
+        <ref role="37wK5l" to="j4ux:~ExampleGraph.getExampleGraph():de.itemis.graphing.model.Graph" resolve="getExampleGraph" />
+        <ref role="1Pybhc" to="j4ux:~ExampleGraph" resolve="ExampleGraph" />
+      </node>
+    </node>
+    <node concept="312cEg" id="4buoDFRelZQ" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="_viewManager" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="4buoDFRelse" role="1B3o_S" />
+      <node concept="3uibUv" id="4buoDFRelQW" role="1tU5fm">
+        <ref role="3uigEE" to="upej:~IViewManager" resolve="IViewManager" />
+        <node concept="3uibUv" id="4buoDFRgz2P" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4G2jA20fqdY" role="jymVt" />
     <node concept="3clFbW" id="7PLVYgqIBl5" role="jymVt">
+      <node concept="37vLTG" id="1wY88QDIsPR" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="1wY88QDIsPS" role="1tU5fm">
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        </node>
+      </node>
       <node concept="3cqZAl" id="7PLVYgqIBl7" role="3clF45" />
       <node concept="3Tm1VV" id="7PLVYgqIBl8" role="1B3o_S" />
       <node concept="3clFbS" id="7PLVYgqIBl9" role="3clF47">
-        <node concept="3clFbF" id="7PLVYgqIBvH" role="3cqZAp">
-          <node concept="2YIFZM" id="7PLVYgqIBvI" role="3clFbG">
-            <ref role="1Pybhc" to="dsms:~ExampleGraph" resolve="ExampleGraph" />
-            <ref role="37wK5l" to="dsms:~ExampleGraph.fillExampleGraph(de.itemis.graphing.model.Graph):void" resolve="fillExampleGraph" />
-            <node concept="37vLTw" id="6x5UxX31AFr" role="37wK5m">
-              <ref role="3cqZAo" node="4G2jA20fr_F" resolve="_graph" />
+        <node concept="XkiVB" id="1wY88QDJBxS" role="3cqZAp">
+          <ref role="37wK5l" to="udin:1wY88QDIpWh" resolve="GraphingInformationBase" />
+          <node concept="37vLTw" id="1wY88QDJCfx" role="37wK5m">
+            <ref role="3cqZAo" node="1wY88QDIsPR" resolve="project" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="4buoDFRevTp" role="3cqZAp">
+          <node concept="37vLTI" id="4buoDFRevTr" role="3clFbG">
+            <node concept="2ShNRf" id="4buoDFRemqk" role="37vLTx">
+              <node concept="1pGfFk" id="4buoDFRemql" role="2ShVmc">
+                <ref role="37wK5l" to="mf8e:~JGraphXViewManager.&lt;init&gt;(de.itemis.graphing.model.Graph)" resolve="JGraphXViewManager" />
+                <node concept="37vLTw" id="4buoDFReneo" role="37wK5m">
+                  <ref role="3cqZAo" node="4G2jA20fr_F" resolve="_graph" />
+                </node>
+                <node concept="3uibUv" id="4buoDFRgzTU" role="1pMfVU">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="4buoDFRewgN" role="37vLTJ">
+              <ref role="3cqZAo" node="4buoDFRelZQ" resolve="_viewManager" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4buoDFRemqn" role="3cqZAp">
+          <node concept="2OqwBi" id="4buoDFRemqo" role="3clFbG">
+            <node concept="37vLTw" id="4buoDFRewRK" role="2Oq$k0">
+              <ref role="3cqZAo" node="4buoDFRelZQ" resolve="_viewManager" />
+            </node>
+            <node concept="liA8E" id="4buoDFRemqq" role="2OqNvi">
+              <ref role="37wK5l" to="upej:~IViewManager.registerHandler(de.itemis.graphing.view.interaction.IInteractionHandler):void" resolve="registerHandler" />
+              <node concept="2ShNRf" id="4buoDFRemqr" role="37wK5m">
+                <node concept="1pGfFk" id="4buoDFRemqs" role="2ShVmc">
+                  <ref role="37wK5l" to="7vlr:~HighlightLinksClickHandler.&lt;init&gt;()" resolve="HighlightLinksClickHandler" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4G2jA20f_AB" role="jymVt" />
+    <node concept="3clFb_" id="22tXClfBfrM" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getViewManager" />
+      <node concept="3Tm1VV" id="22tXClfBfrO" role="1B3o_S" />
+      <node concept="3uibUv" id="22tXClfBfrP" role="3clF45">
+        <ref role="3uigEE" to="upej:~IViewManager" resolve="IViewManager" />
+        <node concept="3uibUv" id="4buoDFRg_0c" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="22tXClfBfrU" role="3clF47">
+        <node concept="3cpWs6" id="22tXClfBx1S" role="3cqZAp">
+          <node concept="37vLTw" id="4buoDFRepnX" role="3cqZAk">
+            <ref role="3cqZAo" node="4buoDFRelZQ" resolve="_viewManager" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="22tXClfBfrV" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="22tXClfBffr" role="jymVt" />
     <node concept="3clFb_" id="4G2jA20f_TD" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getGraph" />
@@ -236,6 +324,9 @@
       <node concept="3Tm1VV" id="4G2jA20f_TF" role="1B3o_S" />
       <node concept="3uibUv" id="4G2jA20f_TG" role="3clF45">
         <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
+        <node concept="3uibUv" id="4buoDFRgA7j" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
       </node>
       <node concept="3clFbS" id="4G2jA20f_TI" role="3clF47">
         <node concept="3cpWs6" id="4G2jA20fArz" role="3cqZAp">
@@ -249,49 +340,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4iv9KfRtLky" role="jymVt" />
-    <node concept="3clFb_" id="50Rn4r1Fjsp" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getInteractionHandlers" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3Tm1VV" id="50Rn4r1Fjsr" role="1B3o_S" />
-      <node concept="_YKpA" id="50Rn4r1FkA3" role="3clF45">
-        <node concept="3uibUv" id="1V72FUbxZiQ" role="_ZDj9">
-          <ref role="3uigEE" to="7vlr:~IInteractionHandler" resolve="IInteractionHandler" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="50Rn4r1Fjsu" role="3clF47">
-        <node concept="3cpWs6" id="50Rn4r1Fn4j" role="3cqZAp">
-          <node concept="2ShNRf" id="50Rn4r1Fn5S" role="3cqZAk">
-            <node concept="2Jqq0_" id="50Rn4r1Fn5T" role="2ShVmc">
-              <node concept="3uibUv" id="1V72FUby4hd" role="HW$YZ">
-                <ref role="3uigEE" to="7vlr:~IInteractionHandler" resolve="IInteractionHandler" />
-              </node>
-              <node concept="2ShNRf" id="50Rn4r1Fn5X" role="HW$Y0">
-                <node concept="1pGfFk" id="50Rn4r1Fn5Y" role="2ShVmc">
-                  <ref role="37wK5l" to="7vlr:~HighlightLinksClickHandler.&lt;init&gt;()" resolve="HighlightLinksClickHandler" />
-                </node>
-              </node>
-              <node concept="2ShNRf" id="1V72FUbzOu$" role="HW$Y0">
-                <node concept="1pGfFk" id="1V72FUbzP_j" role="2ShVmc">
-                  <ref role="37wK5l" to="60v7:~ShowLabelTooltipHoverHandler.&lt;init&gt;()" resolve="ShowLabelTooltipHoverHandler" />
-                </node>
-              </node>
-              <node concept="2ShNRf" id="1V72FUbzQgu" role="HW$Y0">
-                <node concept="1pGfFk" id="1V72FUbzR77" role="2ShVmc">
-                  <ref role="37wK5l" to="60v7:~ShowButtonsExampleHoverHandler.&lt;init&gt;()" resolve="ShowButtonsExampleHoverHandler" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="50Rn4r1Fjsv" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="50Rn4r1MAZT" role="jymVt" />
     <node concept="3clFb_" id="4iv9KfRtLlc" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="2aFKle" value="false" />
@@ -316,46 +364,18 @@
       <property role="TrG5h" value="refresh" />
       <node concept="3Tm1VV" id="5zrVLV_TS8N" role="1B3o_S" />
       <node concept="3cqZAl" id="5zrVLV_TS8O" role="3clF45" />
-      <node concept="3clFbS" id="5zrVLV_TS8P" role="3clF47">
-        <node concept="3clFbF" id="7PLVYgqIC6n" role="3cqZAp">
-          <node concept="2OqwBi" id="7PLVYgqICrl" role="3clFbG">
-            <node concept="37vLTw" id="7PLVYgqIC6m" role="2Oq$k0">
-              <ref role="3cqZAo" node="4G2jA20fr_F" resolve="_graph" />
-            </node>
-            <node concept="liA8E" id="7PLVYgqICF4" role="2OqNvi">
-              <ref role="37wK5l" to="5svn:~Graph.clear():void" resolve="clear" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7PLVYgqIDfh" role="3cqZAp">
-          <node concept="2YIFZM" id="7PLVYgqIDfi" role="3clFbG">
-            <ref role="1Pybhc" to="dsms:~ExampleGraph" resolve="ExampleGraph" />
-            <ref role="37wK5l" to="dsms:~ExampleGraph.fillExampleGraph(de.itemis.graphing.model.Graph):void" resolve="fillExampleGraph" />
-            <node concept="37vLTw" id="7PLVYgqIDfj" role="37wK5m">
-              <ref role="3cqZAo" node="4G2jA20fr_F" resolve="_graph" />
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="5zrVLV_TS8P" role="3clF47" />
       <node concept="2AHcQZ" id="5zrVLV_TS8Q" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="4iv9KfRtLlj" role="jymVt" />
     <node concept="3Tm1VV" id="4iv9KfRtLiM" role="1B3o_S" />
-    <node concept="3clFb_" id="1UCHB4chrgH" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="toolCreated" />
-      <node concept="3Tm1VV" id="1UCHB4chrgJ" role="1B3o_S" />
-      <node concept="3cqZAl" id="1UCHB4chrgK" role="3clF45" />
-      <node concept="3clFbS" id="1UCHB4chrgL" role="3clF47" />
-      <node concept="2AHcQZ" id="1UCHB4chrgM" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
     <node concept="3uibUv" id="6x5UxX31zhI" role="1zkMxy">
       <ref role="3uigEE" to="udin:6x5UxX31gpG" resolve="GraphingInformationBase" />
+      <node concept="3uibUv" id="4buoDFRgwqR" role="11_B2D">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
     </node>
   </node>
 </model>
