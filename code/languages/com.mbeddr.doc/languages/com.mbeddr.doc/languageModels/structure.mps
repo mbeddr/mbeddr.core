@@ -1832,7 +1832,7 @@
     <node concept="1TJgyi" id="l3$K9$tC3M" role="1TKVEl">
       <property role="IQ2nx" value="379308432113959154" />
       <property role="TrG5h" value="confidenceLevel" />
-      <ref role="AX2Wp" to="tpc2:i2E8K1n" resolve="_FloatOrInteger_String" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="PlHQZ" id="l3$K9zOTz5">

@@ -423,17 +423,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1828,29 +1820,16 @@
     </node>
     <node concept="tnohg" id="627_yy3hjzJ" role="tncku">
       <node concept="3clFbS" id="627_yy3hjzK" role="2VODD2">
-        <node concept="1X3_iC" id="l3$K9zTlTz" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="627_yy3irp5" role="8Wnug">
-            <node concept="3cpWsn" id="627_yy3irp6" role="3cpWs9">
-              <property role="TrG5h" value="p" />
-              <node concept="3uibUv" id="627_yy3irp2" role="1tU5fm">
-                <ref role="3uigEE" to="w1kc:~SNodePointer" resolve="SNodePointer" />
-              </node>
-              <node concept="10M0yZ" id="627_yy3irp7" role="33vP2m">
-                <ref role="1PxDUh" to="d244:627_yy3filz" resolve="CodeReferenceStore" />
-                <ref role="3cqZAo" to="d244:627_yy3flYy" resolve="copiedCode" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="l3$K9zTmvu" role="3cqZAp">
-          <node concept="3cpWsn" id="l3$K9zTmvv" role="3cpWs9">
+        <node concept="3cpWs8" id="627_yy3irp5" role="3cqZAp">
+          <node concept="3cpWsn" id="627_yy3irp6" role="3cpWs9">
             <property role="TrG5h" value="p" />
-            <node concept="3uibUv" id="l3$K9zTmvw" role="1tU5fm">
+            <node concept="3uibUv" id="627_yy3irp2" role="1tU5fm">
               <ref role="3uigEE" to="w1kc:~SNodePointer" resolve="SNodePointer" />
             </node>
-            <node concept="10Nm6u" id="l3$K9zTmEu" role="33vP2m" />
+            <node concept="10M0yZ" id="627_yy3irp7" role="33vP2m">
+              <ref role="1PxDUh" to="d244:627_yy3filz" resolve="CodeReferenceStore" />
+              <ref role="3cqZAo" to="d244:627_yy3flYy" resolve="copiedCode" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="627_yy3isY9" role="3cqZAp">
@@ -1876,7 +1855,7 @@
             </node>
             <node concept="2OqwBi" id="627_yy3j1cR" role="33vP2m">
               <node concept="37vLTw" id="627_yy3j1cS" role="2Oq$k0">
-                <ref role="3cqZAo" node="l3$K9zTmvv" resolve="p" />
+                <ref role="3cqZAo" node="627_yy3irp6" resolve="p" />
               </node>
               <node concept="liA8E" id="627_yy3j1cT" role="2OqNvi">
                 <ref role="37wK5l" to="w1kc:~SNodePointer.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
@@ -1959,29 +1938,16 @@
     </node>
     <node concept="tnohg" id="4KbglN$U7bp" role="tncku">
       <node concept="3clFbS" id="4KbglN$U7bq" role="2VODD2">
-        <node concept="1X3_iC" id="l3$K9zToIu" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="4KbglN$U7br" role="8Wnug">
-            <node concept="3cpWsn" id="4KbglN$U7bs" role="3cpWs9">
-              <property role="TrG5h" value="p" />
-              <node concept="3uibUv" id="4KbglN$U7bt" role="1tU5fm">
-                <ref role="3uigEE" to="w1kc:~SNodePointer" resolve="SNodePointer" />
-              </node>
-              <node concept="10M0yZ" id="4KbglN$U7bu" role="33vP2m">
-                <ref role="1PxDUh" to="d244:627_yy3filz" resolve="CodeReferenceStore" />
-                <ref role="3cqZAo" to="d244:627_yy3flYy" resolve="copiedCode" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="l3$K9zTop7" role="3cqZAp">
-          <node concept="3cpWsn" id="l3$K9zTop8" role="3cpWs9">
+        <node concept="3cpWs8" id="4KbglN$U7br" role="3cqZAp">
+          <node concept="3cpWsn" id="4KbglN$U7bs" role="3cpWs9">
             <property role="TrG5h" value="p" />
-            <node concept="3uibUv" id="l3$K9zTop9" role="1tU5fm">
+            <node concept="3uibUv" id="4KbglN$U7bt" role="1tU5fm">
               <ref role="3uigEE" to="w1kc:~SNodePointer" resolve="SNodePointer" />
             </node>
-            <node concept="10Nm6u" id="l3$K9zToEb" role="33vP2m" />
+            <node concept="10M0yZ" id="4KbglN$U7bu" role="33vP2m">
+              <ref role="1PxDUh" to="d244:627_yy3filz" resolve="CodeReferenceStore" />
+              <ref role="3cqZAo" to="d244:627_yy3flYy" resolve="copiedCode" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="4KbglN$U7bv" role="3cqZAp">
@@ -1992,7 +1958,7 @@
             </node>
             <node concept="2OqwBi" id="4KbglN$U7by" role="33vP2m">
               <node concept="37vLTw" id="4KbglN$U7bz" role="2Oq$k0">
-                <ref role="3cqZAo" node="l3$K9zTop8" resolve="p" />
+                <ref role="3cqZAo" node="4KbglN$U7bs" resolve="p" />
               </node>
               <node concept="liA8E" id="4KbglN$U7b$" role="2OqNvi">
                 <ref role="37wK5l" to="w1kc:~SNodePointer.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
@@ -2161,29 +2127,16 @@
     </node>
     <node concept="tnohg" id="4KbglN$W6r0" role="tncku">
       <node concept="3clFbS" id="4KbglN$W6r1" role="2VODD2">
-        <node concept="1X3_iC" id="l3$K9zTiHZ" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="4KbglN$W6r2" role="8Wnug">
-            <node concept="3cpWsn" id="4KbglN$W6r3" role="3cpWs9">
-              <property role="TrG5h" value="p" />
-              <node concept="3uibUv" id="4KbglN$W6r4" role="1tU5fm">
-                <ref role="3uigEE" to="w1kc:~SNodePointer" resolve="SNodePointer" />
-              </node>
-              <node concept="10M0yZ" id="4KbglN$W6r5" role="33vP2m">
-                <ref role="1PxDUh" to="d244:627_yy3filz" resolve="CodeReferenceStore" />
-                <ref role="3cqZAo" to="d244:627_yy3flYy" resolve="copiedCode" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="l3$K9zTk58" role="3cqZAp">
-          <node concept="3cpWsn" id="l3$K9zTk59" role="3cpWs9">
+        <node concept="3cpWs8" id="4KbglN$W6r2" role="3cqZAp">
+          <node concept="3cpWsn" id="4KbglN$W6r3" role="3cpWs9">
             <property role="TrG5h" value="p" />
-            <node concept="3uibUv" id="l3$K9zTk5a" role="1tU5fm">
+            <node concept="3uibUv" id="4KbglN$W6r4" role="1tU5fm">
               <ref role="3uigEE" to="w1kc:~SNodePointer" resolve="SNodePointer" />
             </node>
-            <node concept="10Nm6u" id="l3$K9zTkwu" role="33vP2m" />
+            <node concept="10M0yZ" id="4KbglN$W6r5" role="33vP2m">
+              <ref role="1PxDUh" to="d244:627_yy3filz" resolve="CodeReferenceStore" />
+              <ref role="3cqZAo" to="d244:627_yy3flYy" resolve="copiedCode" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="4KbglN$W6r6" role="3cqZAp">
@@ -2194,7 +2147,7 @@
             </node>
             <node concept="2OqwBi" id="4KbglN$W6r9" role="33vP2m">
               <node concept="37vLTw" id="4KbglN$W6ra" role="2Oq$k0">
-                <ref role="3cqZAo" node="l3$K9zTk59" resolve="p" />
+                <ref role="3cqZAo" node="4KbglN$W6r3" resolve="p" />
               </node>
               <node concept="liA8E" id="4KbglN$W6rb" role="2OqNvi">
                 <ref role="37wK5l" to="w1kc:~SNodePointer.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />

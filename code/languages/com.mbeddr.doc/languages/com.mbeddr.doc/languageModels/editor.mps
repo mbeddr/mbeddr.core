@@ -12461,14 +12461,17 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0A7n" id="l3$K9$tC43" role="3EZMnx">
+      <node concept="3F0A7n" id="71_TlYvGLzu" role="3EZMnx">
         <ref role="1NtTu8" to="2c95:l3$K9$tC3M" resolve="confidenceLevel" />
-        <node concept="11LMrY" id="l3$K9$z_G6" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
       <node concept="3F0ifn" id="l3$K9$xCAO" role="3EZMnx">
         <property role="3F0ifm" value="%" />
+        <node concept="11L4FC" id="71_TlYvK$lS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="71_TlYvK$m3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F1sOY" id="1q0W02ZOs$7" role="3EZMnx">
         <ref role="1NtTu8" to="2c95:1q0W02ZOszX" resolve="text" />
