@@ -465,7 +465,7 @@
       <property role="2l50Mm" value="false" />
       <property role="2lUGe1" value="true" />
       <property role="2lUGdP" value="false" />
-      <property role="2lUGbD" value="18" />
+      <property role="2lUGbD" value="16" />
       <ref role="3V$Cn$" node="oxt36$aePE" resolve="analysisDepth18" />
     </node>
     <node concept="1nvAUJ" id="oxt36$adhO" role="3V$2$K">
