@@ -56,6 +56,10 @@
       <concept id="1201385106094" name="jetbrains.mps.baseLanguage.structure.PropertyReference" flags="nn" index="2S8uIT">
         <reference id="1201385237847" name="property" index="2S8YL0" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
+      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -468,7 +472,17 @@
   <node concept="312cEu" id="54VWoniifyz">
     <property role="TrG5h" value="CBMCLiftedResult" />
     <property role="1sVAO0" value="false" />
-    <node concept="2tJIrI" id="TJrbINbLH9" role="jymVt" />
+    <node concept="Wx3nA" id="23JWu_D0zna" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="DEFAULT_USER_FRIENDLY_NAME" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="23JWu_D0xnu" role="1B3o_S" />
+      <node concept="17QB3L" id="23JWu_D0zch" role="1tU5fm" />
+      <node concept="Xl_RD" id="6ks7ICTqzAu" role="33vP2m">
+        <property role="Xl_RC" value="generic lifted result" />
+      </node>
+    </node>
     <node concept="312cEg" id="6izRX531Zt1" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -503,8 +517,8 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="6ks7ICTqy2a" role="1B3o_S" />
       <node concept="17QB3L" id="6ks7ICTqyxT" role="1tU5fm" />
-      <node concept="Xl_RD" id="6ks7ICTqzAu" role="33vP2m">
-        <property role="Xl_RC" value="generic lifted result" />
+      <node concept="37vLTw" id="23JWu_D0_en" role="33vP2m">
+        <ref role="3cqZAo" node="23JWu_D0zna" resolve="DEFAULT_USER_FRIENDLY_NAME" />
       </node>
     </node>
     <node concept="312cEg" id="6ks7ICUjvQD" role="jymVt">
