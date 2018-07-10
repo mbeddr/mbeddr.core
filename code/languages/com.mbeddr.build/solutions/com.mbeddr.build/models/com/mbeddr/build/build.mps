@@ -10576,6 +10576,12 @@
             <ref role="3bR37D" node="7PyP3ULoXRG" resolve="com.mbeddr.analyses.cbmc.documentation" />
           </node>
         </node>
+        <node concept="1SiIV0" id="66Stj0Myq3A" role="3bR37C">
+          <node concept="3bR9La" id="66Stj0Myq3B" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4gFRqcy1Vdg" role="2G$12L">
         <property role="BnDLt" value="true" />
