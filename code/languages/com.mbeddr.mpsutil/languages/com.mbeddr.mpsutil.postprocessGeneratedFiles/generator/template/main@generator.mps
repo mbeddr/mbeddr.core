@@ -195,8 +195,12 @@
       <node concept="gft3U" id="5pm8$ZewJ0Z" role="1lVwrX">
         <node concept="1bVj0M" id="5pm8$ZewJ15" role="gfFT$">
           <node concept="37vLTG" id="5pm8$ZewJ1r" role="1bW2Oz">
-            <property role="TrG5h" value="node" />
+            <property role="TrG5h" value="lastTransientNode" />
             <node concept="3Tqbb2" id="5pm8$ZewJ1O" role="1tU5fm" />
+          </node>
+          <node concept="37vLTG" id="5esl0$tYRJ0" role="1bW2Oz">
+            <property role="TrG5h" value="originalNode" />
+            <node concept="3Tqbb2" id="5esl0$tYRVt" role="1tU5fm" />
           </node>
           <node concept="37vLTG" id="5pm8$ZewJ2x" role="1bW2Oz">
             <property role="TrG5h" value="path" />

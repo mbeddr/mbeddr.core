@@ -138,7 +138,7 @@
                 <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
               </node>
               <node concept="35c_gC" id="1zqEQG3WoGj" role="HW$Y0">
-                <ref role="35c_gD" to="veld:5pm8$ZevwY2" resolve="FilePostprocessorParameter_node" />
+                <ref role="35c_gD" to="veld:5pm8$ZevwY2" resolve="FilePostprocessorParameter_lastTransientNode" />
               </node>
               <node concept="35c_gC" id="1zqEQG3WoGk" role="HW$Y0">
                 <ref role="35c_gD" to="veld:5pm8$Zevx5L" resolve="FilePostprocessorParameter_path" />
@@ -155,7 +155,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5pm8$ZevwYN">
-    <ref role="13h7C2" to="veld:5pm8$ZevwY2" resolve="FilePostprocessorParameter_node" />
+    <ref role="13h7C2" to="veld:5pm8$ZevwY2" resolve="FilePostprocessorParameter_lastTransientNode" />
     <node concept="13hLZK" id="5pm8$ZevwYO" role="13h7CW">
       <node concept="3clFbS" id="5pm8$ZevwYP" role="2VODD2" />
     </node>
@@ -214,6 +214,35 @@
       <node concept="3Tqbb2" id="5pm8$Zevx6G" role="3clF45">
         <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5esl0$tYQIn">
+    <ref role="13h7C2" to="veld:5esl0$tYQIm" resolve="FilePostprocessorParameter_originalNode" />
+    <node concept="13i0hz" id="5esl0$tYQIy" role="13h7CS">
+      <property role="TrG5h" value="getType" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:27DJnJtIQ9C" resolve="getType" />
+      <node concept="3Tm1VV" id="5esl0$tYQIz" role="1B3o_S" />
+      <node concept="3clFbS" id="5esl0$tYQI$" role="3clF47">
+        <node concept="3clFbF" id="5esl0$tYQI_" role="3cqZAp">
+          <node concept="2pJPEk" id="5esl0$tYQIA" role="3clFbG">
+            <node concept="2pJPED" id="5esl0$tYQIB" role="2pJPEn">
+              <ref role="2pJxaS" to="tp25:gzTqbfa" resolve="SNodeType" />
+              <node concept="2pIpSj" id="5esl0$tYQIC" role="2pJxcM">
+                <ref role="2pIpSl" to="tp25:g$ehGDh" resolve="concept" />
+                <node concept="10Nm6u" id="5esl0$tYQID" role="2pJxcZ" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5esl0$tYQIE" role="3clF45">
+        <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="5esl0$tYQIo" role="13h7CW">
+      <node concept="3clFbS" id="5esl0$tYQIp" role="2VODD2" />
     </node>
   </node>
 </model>

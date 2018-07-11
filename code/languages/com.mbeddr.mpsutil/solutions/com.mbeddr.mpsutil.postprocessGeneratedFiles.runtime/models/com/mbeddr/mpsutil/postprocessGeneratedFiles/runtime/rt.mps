@@ -18,6 +18,7 @@
     <import index="ao3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.text(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
+    <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -180,6 +181,7 @@
         <node concept="8X2XB" id="5pm8$ZezzOP" role="1tU5fm">
           <node concept="1ajhzC" id="5pm8$ZewLeo" role="8Xvag">
             <node concept="3Tqbb2" id="5pm8$ZewLub" role="1ajw0F" />
+            <node concept="3Tqbb2" id="5esl0$tYUsf" role="1ajw0F" />
             <node concept="3uibUv" id="5pm8$ZewLIi" role="1ajw0F">
               <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
             </node>
@@ -197,6 +199,7 @@
       <node concept="10Q1$e" id="5pm8$Zez$bs" role="1tU5fm">
         <node concept="1ajhzC" id="5pm8$Zez$bu" role="10Q1$1">
           <node concept="3Tqbb2" id="5pm8$Zez$bv" role="1ajw0F" />
+          <node concept="3Tqbb2" id="5esl0$tYYyM" role="1ajw0F" />
           <node concept="3uibUv" id="5pm8$Zez$bw" role="1ajw0F">
             <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
           </node>
@@ -316,6 +319,34 @@
                           <property role="TrG5h" value="postprocessor" />
                         </node>
                         <node concept="3clFbS" id="5pm8$ZewMEa" role="2LFqv$">
+                          <node concept="3cpWs8" id="5esl0$tYX70" role="3cqZAp">
+                            <node concept="3cpWsn" id="5esl0$tYX71" role="3cpWs9">
+                              <property role="TrG5h" value="inputNode" />
+                              <node concept="3uibUv" id="5esl0$tYX5B" role="1tU5fm">
+                                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+                              </node>
+                              <node concept="2YIFZM" id="5esl0$tYX72" role="33vP2m">
+                                <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="getInputNode" />
+                                <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
+                                <node concept="37vLTw" id="5esl0$tYX73" role="37wK5m">
+                                  <ref role="3cqZAo" node="5pm8$ZewfRx" resolve="node" />
+                                </node>
+                                <node concept="2OqwBi" id="5esl0$tYX74" role="37wK5m">
+                                  <node concept="2OqwBi" id="5esl0$tYX75" role="2Oq$k0">
+                                    <node concept="37vLTw" id="5esl0$tYX76" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="5pm8$Zez4i$" resolve="textGenResult" />
+                                    </node>
+                                    <node concept="liA8E" id="5esl0$tYX77" role="2OqNvi">
+                                      <ref role="37wK5l" to="ao3:~TextGenResult.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="5esl0$tYX78" role="2OqNvi">
+                                    <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3clFbF" id="5pm8$ZewNcU" role="3cqZAp">
                             <node concept="2OqwBi" id="5pm8$ZewNlv" role="3clFbG">
                               <node concept="2GrUjf" id="5pm8$ZewNcT" role="2Oq$k0">
@@ -324,6 +355,9 @@
                               <node concept="1Bd96e" id="5pm8$ZewNwG" role="2OqNvi">
                                 <node concept="37vLTw" id="5pm8$ZewNQG" role="1BdPVh">
                                   <ref role="3cqZAo" node="5pm8$ZewfRx" resolve="node" />
+                                </node>
+                                <node concept="37vLTw" id="5esl0$tYYhN" role="1BdPVh">
+                                  <ref role="3cqZAo" node="5esl0$tYX71" resolve="inputNode" />
                                 </node>
                                 <node concept="37vLTw" id="5pm8$ZewO3E" role="1BdPVh">
                                   <ref role="3cqZAo" node="5pm8$Zewis0" resolve="path" />
